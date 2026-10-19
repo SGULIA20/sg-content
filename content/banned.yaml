@@ -1,0 +1,62 @@
+# Phrases that stop a piece (spec §6.3, §6.4). Matching is case-insensitive, whole phrase, Latin and Devanagari.
+politics:
+  - modi
+  - मोदी
+  - rahul gandhi
+  - राहुल गांधी
+  - amit shah
+  - kejriwal
+  - yogi adityanath
+  - mamata
+  - bjp
+  - भाजपा
+  - congress party
+  - कांग्रेस
+  - aap party
+  - "vote "
+  - chunav
+  - चुनाव
+  - sarkar giri
+  - opposition
+  - pakistan
+  - पाकिस्तान
+communal:
+  - hindu vs muslim
+  - musalman
+  - मुसलमान
+  - dharm yudh
+  - jihad
+  - kafir
+  - conversion
+  - dharm parivartan
+  - mandir masjid
+  - मंदिर मस्जिद
+advice:
+  - kharid lo
+  - खरीद लो
+  - kharido
+  - bech do
+  - बेच दो
+  - becho
+  - target price
+  - guaranteed
+  - pakka return
+  - पक्का रिटर्न
+  - 100% safe
+  - multibagger
+  - stock tip
+  - sure shot
+  - double ho jayega
+  - risk free
+myth_forbidden:
+  - science proves god
+  - science ne sabit kiya bhagwan
+  - andhvishwas
+  - अंधविश्वास
+  - bhagwan nahi hai
+  - भगवान नहीं है
+  - jhooth hai
+  - fake hai
+  - dusre dharm
+  - better than islam
+  - better than christianity
