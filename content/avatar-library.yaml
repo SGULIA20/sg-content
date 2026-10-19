@@ -1,0 +1,100 @@
+# The founder's likeness, generated once per pose from the studio photos in assets/reference/ (spec §5). Each pose sends 3 references.
+# Reference guide: 01 front neutral, 02 three-quarter smile, 03 front slight smile, 04 profile left, 05 profile right, 06 front wide eyes,
+# 07 looking down smile, 08 head tilt smile, 09 laughing, 10 shocked, 11 shouting, 12 thinking hand on chin, 13 big grin, 14 rubbing eye,
+# 15 full body standing, 16 back view, 17 waving, 18 jumping, 19 sitting cross-legged, 20 walking profile, 21 pointing at camera, 22 arms wide.
+explaining_front:
+  prompt: half-body, facing camera, open palm gesture as if explaining a point, calm confident expression
+  refs: [founder-01.jpg, founder-03.jpg, founder-15.jpg]
+explaining_right:
+  prompt: half-body, turned slightly to the right, gesturing toward an unseen chart on the right, engaged expression
+  refs: [founder-02.jpg, founder-03.jpg, founder-21.jpg]
+surprised:
+  prompt: head and shoulders, eyebrows raised, mouth slightly open in surprise, looking at camera
+  refs: [founder-10.jpg, founder-06.jpg, founder-01.jpg]
+shocked_big:
+  prompt: head and shoulders, wide eyes and open mouth, hands on cheeks, exaggerated shock
+  refs: [founder-10.jpg, founder-11.jpg, founder-06.jpg]
+thinking:
+  prompt: head and shoulders, index finger on chin, eyes up and to the side, thoughtful
+  refs: [founder-12.jpg, founder-01.jpg, founder-03.jpg]
+pointing_right:
+  prompt: half-body, pointing to the right with the right hand, confident smile, looking at camera
+  refs: [founder-21.jpg, founder-13.jpg, founder-15.jpg]
+pointing_down:
+  prompt: half-body, pointing down toward the bottom of the frame, slight smile, looking at camera
+  refs: [founder-21.jpg, founder-03.jpg, founder-15.jpg]
+pointing_up:
+  prompt: half-body, pointing up with the right index finger, eyebrows raised, looking at camera
+  refs: [founder-21.jpg, founder-06.jpg, founder-15.jpg]
+end_smile:
+  prompt: head and shoulders, warm friendly smile, looking straight at camera, as if saying goodbye
+  refs: [founder-13.jpg, founder-03.jpg, founder-01.jpg]
+waving:
+  prompt: half-body, waving with the right hand, big smile
+  refs: [founder-17.jpg, founder-13.jpg, founder-15.jpg]
+chapter_turn:
+  prompt: three-quarter view, looking off to the left as if turning a page, calm expression, arms folded
+  refs: [founder-02.jpg, founder-04.jpg, founder-15.jpg]
+serious_front:
+  prompt: head and shoulders, serious concerned expression, straight at camera, slight frown
+  refs: [founder-01.jpg, founder-06.jpg, founder-14.jpg]
+worried:
+  prompt: head and shoulders, rubbing forehead with one hand, worried expression
+  refs: [founder-14.jpg, founder-12.jpg, founder-01.jpg]
+relieved:
+  prompt: head and shoulders, eyes closed, relaxed smile, hand on chest, relieved
+  refs: [founder-07.jpg, founder-03.jpg, founder-13.jpg]
+laughing:
+  prompt: head and shoulders, laughing with head slightly back
+  refs: [founder-09.jpg, founder-13.jpg, founder-02.jpg]
+counting_fingers:
+  prompt: half-body, holding up three fingers of the right hand, explaining expression
+  refs: [founder-21.jpg, founder-03.jpg, founder-15.jpg]
+holding_phone:
+  prompt: half-body, looking at a smartphone in the right hand, mild surprise
+  refs: [founder-07.jpg, founder-06.jpg, founder-15.jpg]
+holding_notebook:
+  prompt: half-body, holding an open notebook and a pen, explaining a calculation
+  refs: [founder-03.jpg, founder-01.jpg, founder-15.jpg]
+arms_crossed:
+  prompt: half-body, arms crossed, confident slight smile, straight at camera
+  refs: [founder-01.jpg, founder-15.jpg, founder-03.jpg]
+shrug:
+  prompt: half-body, shrugging with both palms up, puzzled expression
+  refs: [founder-12.jpg, founder-22.jpg, founder-15.jpg]
+thumbs_up:
+  prompt: half-body, right thumb up, big grin
+  refs: [founder-13.jpg, founder-17.jpg, founder-15.jpg]
+whisper:
+  prompt: head and shoulders, hand cupped beside the mouth as if sharing a secret, sly smile
+  refs: [founder-08.jpg, founder-02.jpg, founder-13.jpg]
+looking_left_profile:
+  prompt: profile view facing left, calm, as if looking at a distant monument
+  refs: [founder-04.jpg, founder-20.jpg, founder-01.jpg]
+looking_right_profile:
+  prompt: profile view facing right, calm, as if reading a sign
+  refs: [founder-05.jpg, founder-20.jpg, founder-01.jpg]
+walking_right:
+  prompt: full body, walking to the right across the frame, relaxed
+  refs: [founder-20.jpg, founder-15.jpg, founder-05.jpg]
+standing_full:
+  prompt: full body, standing straight, hands relaxed at sides, neutral friendly face
+  refs: [founder-15.jpg, founder-01.jpg, founder-03.jpg]
+sitting_cross_legged:
+  prompt: full body, sitting cross-legged on the floor, relaxed smile
+  refs: [founder-19.jpg, founder-13.jpg, founder-15.jpg]
+celebrating:
+  prompt: full body, both arms raised in celebration, big smile
+  refs: [founder-18.jpg, founder-22.jpg, founder-13.jpg]
+facepalm:
+  prompt: head and shoulders, palm over the face, exasperated
+  refs: [founder-14.jpg, founder-12.jpg, founder-01.jpg]
+nodding_agree:
+  prompt: head and shoulders, slight nod captured mid-motion, approving smile
+  refs: [founder-03.jpg, founder-07.jpg, founder-13.jpg]
+reading_document:
+  prompt: half-body, reading a printed document held in both hands, focused
+  refs: [founder-07.jpg, founder-12.jpg, founder-15.jpg]
+back_view:
+  prompt: full body from behind, looking at a wide landscape ahead
+  refs: [founder-16.jpg, founder-15.jpg, founder-20.jpg]
