@@ -32,7 +32,7 @@ def _user_message(piece: Piece, sheet: dict, library: list, hashtags: dict) -> s
         "FACT_SHEET": sheet,
         "CLAIMS_LIBRARY": [{"text": e.get("text"), "number": e.get("number"), "unit": e.get("unit"), "source": e.get("source_url")} for e in library],
         "ALLOWED_HASHTAGS": hashtags.get(piece.channel, {}),
-    }, ensure_ascii=False, indent=1)
+    }, ensure_ascii=False, indent=1, default=str)
 
 
 def _read_spend(path: Path) -> dict:

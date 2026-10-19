@@ -36,6 +36,12 @@ class Deps:
     voice_id: str = ""
 
 
+def _jsonable(d: dict) -> dict:
+    """Topic dicts may carry datetimes from the feed parser; records and prompts want strings."""
+    from datetime import date, datetime
+    return {k: (v.isoformat() if isinstance(v, (datetime, date)) else v) for k, v in d.items()}
+
+
 def _used(root: Path) -> tuple:
     """(links/topic ids used in the last 30 days, prior script texts for the originality check)."""
     links, ids, prior = set(), set(), []
@@ -125,7 +131,7 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False) -> 
         if not topic:
             pieces.save(pieces.transition(piece, "failed-topic", "no usable topic (for a mythology Short: its long is not made yet)"), root)
             return piece
-        piece.topic = {**topic, "target_minutes": LONG_TARGET_MINUTES.get(piece.channel) if piece.kind == "long" else None}
+        piece.topic = {**_jsonable(topic), "target_minutes": LONG_TARGET_MINUTES.get(piece.channel) if piece.kind == "long" else None}
         used.add(topic.get("link") or topic.get("id"))
         if topic.get("long_scenes"):
             piece.facts = topic["long_facts"]

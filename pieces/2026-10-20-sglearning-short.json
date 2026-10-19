@@ -1,0 +1,124 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 50000.0,
+   "quote": "1 50,000 1 09:30 AM to 10:00 AM October 22, 2026 (Thursday)",
+   "source_date": "2026-10-19",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63833",
+   "text": "The Reserve Bank of India decided to conduct an overnight Variable Rate Repo auction for a notified amount of 50,000 crore INR on October 21, 2026.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "official",
+   "number": 1.0,
+   "quote": "1 50,000 1 09:30 AM to 10:00 AM October 22, 2026 (Thursday)",
+   "source_date": "2026-10-19",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63833",
+   "text": "The tenor of the overnight Variable Rate Repo auction scheduled by the central bank is 1 day.",
+   "unit": "day"
+  },
+  {
+   "label": "reported",
+   "number": 100000.0,
+   "quote": "On Monday, the RBI announced a Rs 1-lakh-crore variable rate repo (VRR) auction for the first time since late July after the weighted average call rate (WACR) at 5.67% on Monday, or 17 basis points higher than the repo rate of 5.50%.",
+   "source_date": "2026-10-19",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/finance/rbi-injects-rs-1-lakh-crore-as-liquidity-tightens-before-festive-season/articleshow/135055968.cms",
+   "text": "The Reserve Bank of India announced a 1 lakh crore INR variable rate repo auction on Monday to ease banking liquidity ahead of the festive season.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "reported",
+   "number": 5.67,
+   "quote": "On Monday, the RBI announced a Rs 1-lakh-crore variable rate repo (VRR) auction for the first time since late July after the weighted average call rate (WACR) at 5.67% on Monday, or 17 basis points higher than the repo rate of 5.50%.",
+   "source_date": "2026-10-19",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/finance/rbi-injects-rs-1-lakh-crore-as-liquidity-tightens-before-festive-season/articleshow/135055968.cms",
+   "text": "The weighted average call rate climbed to 5.67 percent, exceeding the policy repo rate.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 1.99,
+   "quote": "RBI's VRR operation attracted bids of Rs 1.50 lakh crore while the banking system liquidity stood at a surplus of Rs 1.99 lakh crore as of October 16.",
+   "source_date": "2026-10-19",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/finance/rbi-injects-rs-1-lakh-crore-as-liquidity-tightens-before-festive-season/articleshow/135055968.cms",
+   "text": "Surplus liquidity across the banking system stood at 1.99 lakh crore INR as of October 16, 2026.",
+   "unit": "lakh crore INR"
+  },
+  {
+   "label": "reported",
+   "number": 5.5,
+   "quote": "The Reserve Bank of India's Monetary Policy Committee (MPC) raised the repo rate by 25 basis points on 7 October, from 5.25% to 5.5% (100 basis points make up one percentage point).",
+   "source_date": "2026-10-12",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/wealth/borrow/rbi-repo-rate-hike-how-home-loan-borrowers-can-reduce-emi-and-interest-burden/articleshow/134847230.cms",
+   "text": "The Reserve Bank of India raised the benchmark repo rate by 25 basis points from 5.25 percent to 5.50 percent in its October policy decision.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 68.2,
+   "quote": "RBI data shows 68.2% of floating-rate loans are externally benchmarked.",
+   "source_date": "2026-10-12",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/wealth/borrow/rbi-repo-rate-hike-how-home-loan-borrowers-can-reduce-emi-and-interest-burden/articleshow/134847230.cms",
+   "text": "External benchmark lending rates are linked to 68.2 percent of outstanding floating-rate loans, allowing policy rate changes to swiftly transmit to retail borrowers.",
+   "unit": "pct"
+  },
+  {
+   "label": "analyst-view",
+   "number": 852.0,
+   "quote": "Monga estimates that a 25-basis-point increase would raise the monthly equated monthly instalment (EMI) on a ₹50 lakh home loan with a 30-year tenure by ₹852 at a public sector bank, from ₹34,109 to ₹34,961.",
+   "source_date": "2026-10-13",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/money/personal-finance/have-a-50-lakh-home-loan-check-how-much-your-emi-could-rise-after-the-rbi-rate-hike-11728816762312.html",
+   "text": "A 25-basis-point increase in the benchmark repo rate is estimated to raise the monthly EMI on a 50 lakh INR 30-year home loan at a public sector bank by 852 INR.",
+   "unit": "INR"
+  },
+  {
+   "label": "analyst-view",
+   "number": 867.0,
+   "quote": "At a private bank, the EMI would rise by ₹867, from ₹35,821 to ₹36,688.",
+   "source_date": "2026-10-13",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/money/personal-finance/have-a-50-lakh-home-loan-check-how-much-your-emi-could-rise-after-the-rbi-rate-hike-11728816762312.html",
+   "text": "At a private sector bank, the monthly EMI on a 50 lakh INR 30-year home loan is projected to rise by 867 INR following the rate increase.",
+   "unit": "INR"
+  },
+  {
+   "label": "analyst-view",
+   "number": 75.0,
+   "quote": "“We expect cumulative rate hikes by the central bank to the tune of another 50-75 bps over the next few months.",
+   "source_date": "2026-10-12",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/wealth/borrow/rbi-repo-rate-hike-how-home-loan-borrowers-can-reduce-emi-and-interest-burden/articleshow/134847230.cms",
+   "text": "Economists project cumulative policy rate hikes of another 50 to 75 basis points by the central bank over the coming months.",
+   "unit": "bps"
+  }
+ ],
+ "id": "2026-10-20-sglearning-short",
+ "ids": {},
+ "kind": "short",
+ "publish_day": "2026-10-20",
+ "reasons": [],
+ "script": null,
+ "status": "researched",
+ "timings": [],
+ "topic": {
+  "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63833",
+  "published": "2026-10-19T19:05:00+00:00",
+  "rank": 5,
+  "source": "RBI Press Releases",
+  "summary": "      On a review of current and evolving liquidity conditions in the near term, it has been decided to conduct a Variable Rate Repo (VRR) auction on Wednesday, October 21, 2026, as under:                         Sl. No.          Notified Amount(&#8377; crore)          Tenor          (day)          Window Timing          Date of Reversal                          1          50,000          1          09:30 AM to 10:00 AM          October 22, 2026          (Thursday)                    2. The operational guidelines for the auction will be same as given in Reserve Bank&rsquo;s Press Release 2021-2022/1572 dated January 20, 2022.      Ajit Prasad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Deputy General Manager        (Communications)&nbsp;&nbsp;&nbsp;&nbsp;      Press Release: 2026-2027/1355             ",
+  "target_minutes": null,
+  "title": "RBI to conduct Overnight Variable Rate Repo (VRR) auction under LAF on October 21, 2026"
+ },
+ "updated": "2026-10-19T22:13:37+00:00",
+ "writer": ""
+}

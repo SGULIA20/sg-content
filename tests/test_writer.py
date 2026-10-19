@@ -111,3 +111,11 @@ def test_prompt_files_exist_and_carry_rules():
     sys_text = writer.system_prompt("sglearning")
     assert DISCLAIMER in sys_text and "digits" in sys_text.lower()
     assert "scripture" in writer.system_prompt("arthvan")
+
+
+def test_user_message_serialises_datetime_in_topic(tmp_path):
+    from datetime import datetime, timezone
+    p = _piece(); p.topic["published"] = datetime(2026, 10, 20, 3, 45, tzinfo=timezone.utc)
+    fm = FakeMessages(text=json.dumps(good_script()))
+    out = writer.write(p, {"facts": []}, [], {}, formula="F", client=fake_client(fm), spend=tmp_path / "s.json")
+    assert out["writer"] == "claude" and "2026-10-20T03:45:00+00:00" in fm.calls[0]["messages"][0]["content"]
