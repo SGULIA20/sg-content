@@ -1,0 +1,9 @@
+[project]
+name = "sg-content"
+version = "0.1.0"
+description = "Automated Hinglish finance-news and mythology-with-evidence videos for Learning with SG and SG-MYTH-WORLD"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+markers = ["slow: needs ffmpeg, Chromium or the network"]
+testpaths = ["tests"]

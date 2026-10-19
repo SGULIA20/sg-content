@@ -1,0 +1,25 @@
+from engine import config
+
+
+def test_channels_have_two_keys():
+    assert set(config.CHANNELS) == {"sglearning", "arthvan"}
+
+
+def test_arthvan_short_days_are_mon_wed_fri():
+    assert config.CHANNELS["arthvan"].short_days == {0, 2, 4}
+
+
+def test_sglearning_shorts_every_day_and_long_on_sunday():
+    ch = config.CHANNELS["sglearning"]
+    assert ch.short_days == {0, 1, 2, 3, 4, 5, 6}
+    assert ch.long_day == 6
+
+
+def test_budgets_match_spec():
+    assert config.BUDGETS == {"voice_requests_per_day": 80, "image_inr_per_day": 150, "claude_usd_per_day": 1.0}
+
+
+def test_video_sizes():
+    assert config.VIDEO["short"] == (1080, 1920)
+    assert config.VIDEO["long"] == (1920, 1080)
+    assert config.VIDEO["fps"] == 30
