@@ -46,8 +46,24 @@ def fact_sheet(topic: dict, channel: str, *, key: str | None = None, ask=gemini.
     body = {"contents": [{"parts": [{"text": _prompt(channel, topic, today, root)}]}],
             "tools": [{"google_search": {}}],
             "generationConfig": {"temperature": 0, "maxOutputTokens": 8000}}      # no JSON mode: with google_search it returns an empty candidate
-    response = ask(MODEL, body, key)
-    return clean(_parse(gemini.text(response)), channel, today, news=(channel == "sglearning" and bool(topic.get("link"))))
+    raw = gemini.text(ask(MODEL, body, key))
+    try:
+        sheet = _parse(raw)
+    except (ValueError, ResearchError):
+        sheet = _repair(raw, key, ask)
+    return clean(sheet, channel, today, news=(channel == "sglearning" and bool(topic.get("link"))))
+
+
+def _repair(raw: str, key, ask) -> dict:
+    """A grounded reply that is not valid JSON is converted by a plain JSON-mode call; every URL and number must survive."""
+    if not (raw or "").strip():
+        raise ResearchError("empty reply from the research model")
+    prompt = ("Convert the research notes below into valid JSON with exactly this shape and nothing else: "
+              '{"facts": [{"text": str, "number": number or null, "unit": str, "source_url": str, "source_name": str, "source_date": "YYYY-MM-DD", '
+              '"quote": str, "label": str}], "summary": str}. Keep every fact, URL, date and number unchanged; fix only the syntax.\n\nNOTES:\n' + raw)
+    body = {"contents": [{"parts": [{"text": prompt}]}],
+            "generationConfig": {"temperature": 0, "responseMimeType": "application/json", "maxOutputTokens": 8000}}
+    return _parse(gemini.text(ask(MODEL, body, key)))
 
 
 def _date(s) -> date | None:

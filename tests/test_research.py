@@ -94,3 +94,18 @@ def test_fact_sheet_extracts_json_from_prose():
 def test_fact_sheet_empty_reply_raises_research_error():
     with pytest.raises(research.ResearchError):
         research.fact_sheet({"title": "t", "link": "u", "summary": ""}, "sglearning", key="k", ask=lambda m, b, k: {"candidates": [{}]}, today=TODAY)
+
+
+def test_fact_sheet_repairs_broken_json_with_second_call():
+    calls = []
+
+    def fake_ask(model, body, key):
+        calls.append(body)
+        if len(calls) == 1:
+            return {"candidates": [{"content": {"parts": [{"text": '{"facts": [{"text": "Brent crossed $100", "number": 100.0 "unit": "USD"}], "summary": "s"}'}]}}]}
+        return {"candidates": [{"content": {"parts": [{"text": json.dumps({"facts": [fact()], "summary": "s"})}]}}]}
+
+    sheet = research.fact_sheet({"title": "t", "link": "u", "summary": ""}, "sglearning", key="k", ask=fake_ask, today=TODAY)
+    assert len(sheet["facts"]) == 1 and len(calls) == 2
+    assert "tools" not in calls[1] and calls[1]["generationConfig"]["responseMimeType"] == "application/json"
+    assert "Brent crossed" in calls[1]["contents"][0]["parts"][0]["text"]
