@@ -48,7 +48,7 @@ def test_fact_sheet_uses_grounding_tool_and_json():
     sheet = research.fact_sheet(topic, "sglearning", key="k", ask=fake_ask, today=TODAY)
     assert seen["model"] == "gemini-3.8-flash"
     assert seen["body"]["tools"] == [{"google_search": {}}]
-    assert seen["body"]["generationConfig"]["responseMimeType"] == "application/json"
+    assert "responseMimeType" not in seen["body"]["generationConfig"]          # JSON mode + grounding returns an empty candidate
     assert seen["body"]["generationConfig"]["temperature"] == 0
     assert "Crude oil crosses $100" in seen["body"]["contents"][0]["parts"][0]["text"]
     assert sheet["facts"][0]["number"] == 100.0
@@ -82,3 +82,15 @@ def test_gemini_generate_raises_after_three_failures(monkeypatch):
 def test_gemini_text_helper_extracts_first_text():
     r = {"candidates": [{"content": {"parts": [{"text": "hello"}]}}]}
     assert gemini.text(r) == "hello"
+
+
+def test_fact_sheet_extracts_json_from_prose():
+    def fake_ask(model, body, key):
+        return {"candidates": [{"content": {"parts": [{"text": "Here is the sheet:\n" + json.dumps({"facts": [fact()], "summary": "s"}) + "\nDone."}]}}]}
+    sheet = research.fact_sheet({"title": "t", "link": "u", "summary": ""}, "sglearning", key="k", ask=fake_ask, today=TODAY)
+    assert len(sheet["facts"]) == 1
+
+
+def test_fact_sheet_empty_reply_raises_research_error():
+    with pytest.raises(research.ResearchError):
+        research.fact_sheet({"title": "t", "link": "u", "summary": ""}, "sglearning", key="k", ask=lambda m, b, k: {"candidates": [{}]}, today=TODAY)

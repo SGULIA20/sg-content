@@ -63,3 +63,10 @@ def test_bank_has_forty_topics_with_three_hooks():
 
 def test_feeds_list_names_seven_sources():
     assert len(topics.FEEDS) >= 7 and all(url.startswith("https://") for _n, url, _r in topics.FEEDS)
+
+
+def test_pick_ignores_items_without_household_angle():
+    items = [{"title": "RBI to conduct Overnight Variable Rate Repo auction under LAF", "link": "https://x/1", "summary": "", "published": NOW, "source": "RBI", "rank": 5},
+             {"title": "Petrol price cut by Rs 2 a litre from tonight", "link": "https://x/2", "summary": "", "published": NOW, "source": "ET", "rank": 3}]
+    assert topics.pick_finance(items, set(), NOW)["link"] == "https://x/2"
+    assert topics.pick_finance(items[:1], set(), NOW) is None

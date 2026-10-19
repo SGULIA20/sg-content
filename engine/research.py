@@ -14,6 +14,10 @@ NEWS_MAX_AGE_DAYS = 7
 FENCE = re.compile(r"^```(?:json)?\s*|\s*```$", re.MULTILINE)
 
 
+class ResearchError(Exception):
+    pass
+
+
 def _prompt(channel: str, topic: dict, today: date, root: Path = CONTENT_DIR) -> str:
     name = "research-finance.txt" if channel == "sglearning" else "research-myth.txt"
     tpl = (Path(root) / "prompts" / name).read_text()
@@ -24,8 +28,16 @@ def _prompt(channel: str, topic: dict, today: date, root: Path = CONTENT_DIR) ->
 
 
 def _parse(raw: str) -> dict:
-    raw = FENCE.sub("", raw.strip())
-    data = json.loads(raw)
+    raw = FENCE.sub("", (raw or "").strip())
+    if not raw:
+        raise ResearchError("empty reply from the research model")
+    try:
+        data = json.loads(raw)
+    except ValueError:
+        start, end = raw.find("{"), raw.rfind("}")          # the model wrapped the JSON in prose
+        if start < 0 or end <= start:
+            raise ResearchError("no JSON object in the research reply: " + raw[:120])
+        data = json.loads(raw[start:end + 1])
     return {"facts": list(data.get("facts") or []), "summary": str(data.get("summary") or "")}
 
 
@@ -33,7 +45,7 @@ def fact_sheet(topic: dict, channel: str, *, key: str | None = None, ask=gemini.
     today = today or date.today()
     body = {"contents": [{"parts": [{"text": _prompt(channel, topic, today, root)}]}],
             "tools": [{"google_search": {}}],
-            "generationConfig": {"temperature": 0, "responseMimeType": "application/json", "maxOutputTokens": 8000}}
+            "generationConfig": {"temperature": 0, "maxOutputTokens": 8000}}      # no JSON mode: with google_search it returns an empty candidate
     response = ask(MODEL, body, key)
     return clean(_parse(gemini.text(response)), channel, today, news=(channel == "sglearning" and bool(topic.get("link"))))
 

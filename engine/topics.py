@@ -20,8 +20,10 @@ FEEDS = [
     ("SEBI Press", "https://www.sebi.gov.in/sebirss.xml", 5),
     ("PIB Finance", "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3", 4),
 ]
-HOUSEHOLD = ["emi", "petrol", "diesel", "tax", "salary", "sip", "price", "prices", "inflation", "loan", "fd", "epf",
-             "pension", "gold", "rupee", "gst", "mutual fund", "upi", "bank", "deposit", "insurance", "home loan", "rent"]
+HOUSEHOLD = ["emi", "petrol", "diesel", "tax", "salary", "sip", "price", "prices", "inflation", "loan", "fd ", "epf",
+             "pension", "gold", "rupee", "gst", "mutual fund", "upi", "deposit", "insurance", "home loan", "rent", "repo rate",
+             "interest rate", "fuel", "crude", "oil", "sensex", "nifty", "market", "stock", "share", "profit", "results", "ipo",
+             "crore", "lakh", "jobs", "layoff", "income", "subsidy", "scam", "fraud", "fine", "penalty"]
 NUMBER = re.compile(r"\d|lakh|crore|%|\$")
 BANNED_TOPIC = ["modi", "rahul gandhi", "bjp", "congress", "election", "rally", "pakistan", "minister", "parliament",
                 "opposition", "cm ", "pm "]
@@ -85,6 +87,11 @@ def fetch_all(fetch=None) -> list:
     return out
 
 
+def household(item: dict) -> bool:
+    blob = f"{item.get('title', '')} {item.get('summary', '')}".lower()
+    return any(k in blob for k in HOUSEHOLD)
+
+
 def score(item: dict) -> int:
     blob = f"{item.get('title', '')} {item.get('summary', '')}".lower()
     if any(b in blob for b in BANNED_TOPIC):
@@ -99,7 +106,7 @@ def score(item: dict) -> int:
 
 def pick_finance(items: list, used_links: set, now: datetime) -> dict | None:
     fresh = [i for i in items if i.get("published") and now - i["published"] <= timedelta(hours=FRESH_HOURS)
-             and i["link"] not in used_links and score(i) > 0]
+             and i["link"] not in used_links and score(i) > 0 and household(i)]
     if not fresh:
         return None
     return max(fresh, key=lambda i: (score(i), i["published"]))
