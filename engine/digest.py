@@ -18,7 +18,14 @@ def _json(path: Path) -> dict:
 
 
 def _touched_today(p, day: date) -> bool:
-    return (p.updated or "")[:10] == day.isoformat()
+    """`updated` is UTC; the founder's day is IST."""
+    if not p.updated:
+        return False
+    try:
+        from datetime import datetime
+        return slots.ist(datetime.fromisoformat(p.updated)).date() == day
+    except ValueError:
+        return p.updated[:10] == day.isoformat()
 
 
 def buffer_days(root: Path, today: date, horizon: int = 14) -> dict:

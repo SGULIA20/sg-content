@@ -41,3 +41,11 @@ def test_load_library_has_sourced_entries():
     lib = claims.load_library()
     assert len(lib) >= 12
     assert all(e["source_url"].startswith("http") and e["number"] is not None for e in lib)
+
+
+def test_match_scales_by_fact_unit_crore_and_lakh():
+    facts = [{"number": 24400.0, "unit": "crore INR"}, {"number": 2.44, "unit": "lakh crore INR"}, {"number": 316.418, "unit": "crore INR"}]
+    assert claims.match("States ne 24,400 crore udhaar maanga", facts, []) == []
+    assert claims.match("2.44 lakh crore ka udhaar", facts, []) == []
+    assert claims.match("Punjab ko 316 crore mila", facts, []) == []            # 316 vs 316.418 within half a percent? no: 0.13 % → pass
+    assert claims.match("Punjab ko 320 crore mila", facts, []) == [320e7]

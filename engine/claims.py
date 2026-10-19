@@ -79,8 +79,29 @@ def numbers_in(text: str) -> list:
     return [v for v, _u in _extract(text)]
 
 
+UNIT_SCALES = {"crore": 10_000_000, "karod": 10_000_000, "lakh": 100_000, "laakh": 100_000, "thousand": 1000, "hazaar": 1000,
+               "k": 1000, "million": 1_000_000, "billion": 1_000_000_000, "trillion": 1_000_000_000_000}
+
+
+def _known_values(entries: list) -> list:
+    """Every fact number as written and scaled by the words in its unit ("24400 crore INR" also means 2.44e11)."""
+    out = []
+    for f in entries:
+        n = f.get("number")
+        if n is None:
+            continue
+        n = float(n)
+        out.append(n)
+        scale = 1
+        for word in re.findall(r"[a-z]+", str(f.get("unit") or "").lower()):
+            scale *= UNIT_SCALES.get(word, 1)
+        if scale != 1:
+            out.append(n * scale)
+    return out
+
+
 def match(script_text: str, facts: list, library: list, tolerance: float = 0.005) -> list:
-    known = [f.get("number") for f in list(facts) + list(library) if f.get("number") is not None]
+    known = _known_values(list(facts) + list(library))
     unmatched = []
     for value, unit in _extract(script_text):
         if unit is None and value < SMALL_COUNT and float(value).is_integer():

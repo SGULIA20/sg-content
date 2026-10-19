@@ -3,122 +3,258 @@
  "facts": [
   {
    "label": "official",
-   "number": 50000.0,
-   "quote": "1 50,000 1 09:30 AM to 10:00 AM October 22, 2026 (Thursday)",
+   "number": 24400.0,
+   "quote": "Total 24400 23016.418",
    "source_date": "2026-10-19",
    "source_name": "RBI",
-   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63833",
-   "text": "The Reserve Bank of India decided to conduct an overnight Variable Rate Repo auction for a notified amount of 50,000 crore INR on October 21, 2026.",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63828",
+   "text": "State governments and union territories offered to raise a total of 24400.0 crore INR through the Reserve Bank of India's debt auction.",
    "unit": "crore INR"
   },
   {
    "label": "official",
-   "number": 1.0,
-   "quote": "1 50,000 1 09:30 AM to 10:00 AM October 22, 2026 (Thursday)",
+   "number": 23016.418,
+   "quote": "Total 24400 23016.418",
    "source_date": "2026-10-19",
    "source_name": "RBI",
-   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63833",
-   "text": "The tenor of the overnight Variable Rate Repo auction scheduled by the central bank is 1 day.",
-   "unit": "day"
-  },
-  {
-   "label": "reported",
-   "number": 100000.0,
-   "quote": "On Monday, the RBI announced a Rs 1-lakh-crore variable rate repo (VRR) auction for the first time since late July after the weighted average call rate (WACR) at 5.67% on Monday, or 17 basis points higher than the repo rate of 5.50%.",
-   "source_date": "2026-10-19",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/news/economy/finance/rbi-injects-rs-1-lakh-crore-as-liquidity-tightens-before-festive-season/articleshow/135055968.cms",
-   "text": "The Reserve Bank of India announced a 1 lakh crore INR variable rate repo auction on Monday to ease banking liquidity ahead of the festive season.",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63828",
+   "text": "The Reserve Bank of India accepted bids totaling 23016.418 crore INR out of the total amount offered in the state government securities auction.",
    "unit": "crore INR"
   },
   {
-   "label": "reported",
-   "number": 5.67,
-   "quote": "On Monday, the RBI announced a Rs 1-lakh-crore variable rate repo (VRR) auction for the first time since late July after the weighted average call rate (WACR) at 5.67% on Monday, or 17 basis points higher than the repo rate of 5.50%.",
+   "label": "official",
+   "number": 1000.0,
+   "quote": "Andhra Pradesh has not accepted any amount in Re-issue of 7.68% Andhra Pradesh SGS 2051, issued on July 29, 2026.",
    "source_date": "2026-10-19",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/news/economy/finance/rbi-injects-rs-1-lakh-crore-as-liquidity-tightens-before-festive-season/articleshow/135055968.cms",
-   "text": "The weighted average call rate climbed to 5.67 percent, exceeding the policy repo rate.",
-   "unit": "pct"
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63828",
+   "text": "Andhra Pradesh rejected all market bids, accepting zero funds against the notified 1000.0 crore INR for the re-issue of its 2051 state development loan.",
+   "unit": "crore INR"
   },
   {
-   "label": "reported",
-   "number": 1.99,
-   "quote": "RBI's VRR operation attracted bids of Rs 1.50 lakh crore while the banking system liquidity stood at a surplus of Rs 1.99 lakh crore as of October 16.",
+   "label": "official",
+   "number": 316.418,
+   "quote": "Punjab has accepted partial amount of ₹316.418 crore in Re-issue of 7.75% Punjab SGS 2035, issued on September 09, 2026.",
    "source_date": "2026-10-19",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/news/economy/finance/rbi-injects-rs-1-lakh-crore-as-liquidity-tightens-before-festive-season/articleshow/135055968.cms",
-   "text": "Surplus liquidity across the banking system stood at 1.99 lakh crore INR as of October 16, 2026.",
-   "unit": "lakh crore INR"
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63828",
+   "text": "Punjab accepted a partial allotment of 316.418 crore INR against a notified borrowing of 700 crore INR for its 2035 state securities.",
+   "unit": "crore INR"
   },
   {
-   "label": "reported",
-   "number": 5.5,
-   "quote": "The Reserve Bank of India's Monetary Policy Committee (MPC) raised the repo rate by 25 basis points on 7 October, from 5.25% to 5.5% (100 basis points make up one percentage point).",
-   "source_date": "2026-10-12",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/wealth/borrow/rbi-repo-rate-hike-how-home-loan-borrowers-can-reduce-emi-and-interest-burden/articleshow/134847230.cms",
-   "text": "The Reserve Bank of India raised the benchmark repo rate by 25 basis points from 5.25 percent to 5.50 percent in its October policy decision.",
+   "label": "official",
+   "number": 8.237,
+   "quote": "1500 1500 94.18/8.2370 Re-issue of 7.66% Madhya Pradesh SGS 2048, issued on August 19, 2026",
+   "source_date": "2026-10-19",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63828",
+   "text": "The highest cut-off yield in the auction reached 8.237 pct for Madhya Pradesh's re-issued 22-year paper maturing in 2048.",
    "unit": "pct"
   },
   {
    "label": "official",
-   "number": 68.2,
-   "quote": "RBI data shows 68.2% of floating-rate loans are externally benchmarked.",
-   "source_date": "2026-10-12",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/wealth/borrow/rbi-repo-rate-hike-how-home-loan-borrowers-can-reduce-emi-and-interest-burden/articleshow/134847230.cms",
-   "text": "External benchmark lending rates are linked to 68.2 percent of outstanding floating-rate loans, allowing policy rate changes to swiftly transmit to retail borrowers.",
+   "number": 7.77,
+   "quote": "5. Madhya Pradesh 1000 1000 7.77 04",
+   "source_date": "2026-10-19",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63828",
+   "text": "The lowest cut-off yield of the auction stood at 7.77 pct for the 4-year paper issued by Madhya Pradesh.",
    "unit": "pct"
   },
   {
-   "label": "analyst-view",
-   "number": 852.0,
-   "quote": "Monga estimates that a 25-basis-point increase would raise the monthly equated monthly instalment (EMI) on a ₹50 lakh home loan with a 30-year tenure by ₹852 at a public sector bank, from ₹34,109 to ₹34,961.",
-   "source_date": "2026-10-13",
-   "source_name": "Mint",
-   "source_url": "https://www.livemint.com/money/personal-finance/have-a-50-lakh-home-loan-check-how-much-your-emi-could-rise-after-the-rbi-rate-hike-11728816762312.html",
-   "text": "A 25-basis-point increase in the benchmark repo rate is estimated to raise the monthly EMI on a 50 lakh INR 30-year home loan at a public sector bank by 852 INR.",
-   "unit": "INR"
-  },
-  {
-   "label": "analyst-view",
-   "number": 867.0,
-   "quote": "At a private bank, the EMI would rise by ₹867, from ₹35,821 to ₹36,688.",
-   "source_date": "2026-10-13",
-   "source_name": "Mint",
-   "source_url": "https://www.livemint.com/money/personal-finance/have-a-50-lakh-home-loan-check-how-much-your-emi-could-rise-after-the-rbi-rate-hike-11728816762312.html",
-   "text": "At a private sector bank, the monthly EMI on a 50 lakh INR 30-year home loan is projected to rise by 867 INR following the rate increase.",
-   "unit": "INR"
-  },
-  {
-   "label": "analyst-view",
-   "number": 75.0,
-   "quote": "“We expect cumulative rate hikes by the central bank to the tune of another 50-75 bps over the next few months.",
-   "source_date": "2026-10-12",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/wealth/borrow/rbi-repo-rate-hike-how-home-loan-borrowers-can-reduce-emi-and-interest-burden/articleshow/134847230.cms",
-   "text": "Economists project cumulative policy rate hikes of another 50 to 75 basis points by the central bank over the coming months.",
-   "unit": "bps"
+   "label": "official",
+   "number": 2500.0,
+   "quote": "2500 2500 95.71/8.1845 Re-issue of 7.79% Maharashtra SGS 2054, issued on April 22, 2026",
+   "source_date": "2026-10-19",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63828",
+   "text": "Maharashtra raised 2500.0 crore INR in its ultra-long 28-year tranche maturing in 2054 at a cut-off yield of 8.1845 pct.",
+   "unit": "crore INR"
   }
  ],
  "id": "2026-10-20-sglearning-short",
  "ids": {},
  "kind": "short",
  "publish_day": "2026-10-20",
- "reasons": [],
- "script": null,
- "status": "researched",
+ "reasons": [
+  "try 1: length: 172 words, allowed 110-170; numbers without a source: 2.44e+11, 2.44e+11, 1628, 8.1121e+11, 2.3016e+11, 3.16e+09, 5.5",
+  "try 2: numbers without a source: 2e+10, 2e+10, 2e+10, 2.19194e+10, 4.058e+10",
+  "try 3: numbers without a source: 2.44e+11, 2.44e+11, 1e+10"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "States ne ek din mein 24,400 crore udhaar maanga.\nLamba paisa 8.237 percent par mila, aur Andhra Pradesh ne 1,000 crore ki bids thukra di.\nIska seedha asar EMI aur FD rates par pad sakta hai.\nAapka paisa abhi kahan hai, FD ya debt fund?\nYeh investment advice nahi hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#RBI",
+     "#EMI",
+     "#PersonalFinanceIndia",
+     "#HinglishFinance",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "States ne ek din mein 24,400 crore udhaar maanga, lamba paisa 8.237 percent par mila. EMI par dabaav, FD ko sahara. Aapka paisa abhi kahan hai, FD ya debt fund? #PaiseKiKhabar #Finance"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "States ne ek din mein 24,400 crore udhaar maanga, aur lamba paisa 8.237 percent par mila. Jab sarkar mehenga udhaar leti hai, to home loan EMI par dabaav aa sakta hai. FD rates ko thoda sahara mil sakta hai, isliye yeh khabar aapki jeb se judi hai.",
+    "tags": [
+     "RBI",
+     "state bonds",
+     "SDL auction",
+     "bond yield",
+     "EMI",
+     "home loan",
+     "FD rates",
+     "Hinglish finance",
+     "Learning with SG",
+     "paise ki khabar"
+    ],
+    "title": "Sarkar ka 24,400 crore udhaar, aapki EMI mehngi?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "₹24,400 cr",
+    "line": "States ne itna udhaar maanga",
+    "source": "RBI"
+   },
+   {
+    "big_number": "8.237%",
+    "line": "Sabse oonchi cut-off yield, Madhya Pradesh 2048 bond",
+    "source": "RBI"
+   },
+   {
+    "big_number": "₹1,000 cr",
+    "line": "Andhra Pradesh ne zero accept kiya",
+    "source": "RBI"
+   },
+   {
+    "big_number": "7.77%",
+    "line": "Sabse kam yield, 4 saal ka paper",
+    "source": "RBI"
+   }
+  ],
+  "carousel": true,
+  "end_question": "Aapka paisa abhi kahan hai, FD ya debt fund? Comment mein bas ek word likhiye.",
+  "hook": "States ne ek din mein 24,400 crore udhaar maanga. Aapki EMI se iska kya rishta hai?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "official",
+    "visual": {
+     "card": null,
+     "prompt": "surprised",
+     "type": "avatar"
+    },
+    "vo": "States ne ek din mein 24,400 crore udhaar maanga. Aapki EMI se iska kya rishta hai?"
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "official",
+    "visual": {
+     "card": {
+      "big_number": "8.237%",
+      "line": "Sabse oonchi cut-off yield, Madhya Pradesh 2048 bond",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "RBI ki auction mein states ne bonds bech kar paisa uthaya. Sabse lamba udhaar 8.237 percent byaaj par mila."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "official",
+    "visual": {
+     "card": {
+      "big_number": "₹1,000 cr",
+      "line": "Andhra Pradesh ne zero accept kiya",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Aur Andhra Pradesh ne 1,000 crore ki bids hi thukra di. Ek rupaya bhi accept nahi kiya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A government official at a wooden desk pushing back a stack of bond papers, warm office light, painted illustration, no text",
+     "type": "art"
+    },
+    "vo": "Kyun? Bazaar zyada byaaj maang raha tha. State ko woh rate mehenga laga, to mana kar diya."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "official",
+    "visual": {
+     "card": {
+      "big_number": "7.77%",
+      "line": "Sabse kam yield, 4 saal ka paper",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Seedha rule hai, jitna lamba udhaar, utna zyada byaaj. 4 saal ka paper 7.77 percent par gaya, lambe wale kaafi upar."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "explaining_front",
+     "type": "avatar"
+    },
+    "vo": "Aapke liye matlab? Jab sarkar mehenga udhaar leti hai, to sasta loan milna mushkil hota hai. Home loan EMI par dabaav aa sakta hai. FD rates ko thoda sahara mil sakta hai. Tulna ke liye, PPF abhi 7.1 percent deta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A calm Indian family at a dining table reviewing papers with a cup of tea, soft evening light, painted illustration, no text",
+     "type": "art"
+    },
+    "vo": "Yeh investment advice nahi hai. Koi bhi faisla apne advisor se pooch kar lijiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Two jars on a shelf, one labeled by shape as a bank vault, one as a growing plant, minimal painted style, no text",
+     "type": "art"
+    },
+    "vo": "Aapka paisa abhi kahan hai, FD ya debt fund? Comment mein bas ek word likhiye."
+   }
+  ]
+ },
+ "status": "rejected",
  "timings": [],
  "topic": {
-  "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63833",
-  "published": "2026-10-19T19:05:00+00:00",
+  "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63828",
+  "published": "2026-10-19T14:50:00+00:00",
   "rank": 5,
   "source": "RBI Press Releases",
-  "summary": "      On a review of current and evolving liquidity conditions in the near term, it has been decided to conduct a Variable Rate Repo (VRR) auction on Wednesday, October 21, 2026, as under:                         Sl. No.          Notified Amount(&#8377; crore)          Tenor          (day)          Window Timing          Date of Reversal                          1          50,000          1          09:30 AM to 10:00 AM          October 22, 2026          (Thursday)                    2. The operational guidelines for the auction will be same as given in Reserve Bank&rsquo;s Press Release 2021-2022/1572 dated January 20, 2022.      Ajit Prasad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Deputy General Manager        (Communications)&nbsp;&nbsp;&nbsp;&nbsp;      Press Release: 2026-2027/1355             ",
+  "summary": "            Sr. No    State/UT    Amount to be raised      (&#8377; Crore)    Amount Accepted      (&#8377; Crore)    Cut off Price (&#8377;)/       Yield (%)    Tenor       (Year)        1.    Andhra Pradesh*    1000     -    -    Re-issue of 7.68% Andhra Pradesh SGS 2051, issued on July 29, 2026         2.    Goa    200     200     97.84/8.1004    Re-issue of 7.80% Goa SGS 2037, issued on September 16, 2026         3.    Gujarat    1000     1000    99.98/7.9627    Re-issue of 7.96% Gujarat SGS 2035, issued on October 14, 2026         1000     1000     8.06    12         4.    Jammu and Kashmir    800     800     95.82/8.1980    Re-issue of 7.75% Jammu and Kashmir SGS 2044, issued on September 09, 2026         5.    Madhya Pradesh    1000     1000    7.77    04        2000     2000    95.80/8.1393    Re-issue of 7.58% Madhya Pradesh SGS 2038, issued on July 22, 2026        1500     1500    94.18/8.2370    Re-issue of 7.66% Madhya Pradesh SGS 2048, issued on August 19, 2026        6.    Maharashtra    1500     1500    97.61/7.9794    Re-issue of 7.55% Maharashtra SGS 2034, issued on April 22, 2026        2000     2000    8.14    15         2000     2000    96.32/8.1688    Re-issue of 7.77% Maharashtra SGS 2044, issued on April 22, 2026        2500     2500    95.71/8.1845    Re-issue of 7.79% Maharashtra SGS 2054, issued on April 22, 2026        7.    Meghalaya    100     100     99.45/8.1488    Re-issue of 8.08% Meghalaya SGS 2039, issued on October 07, 2026        8.    Punjab#    700     316.418     97.74/8.1097    Re-issue of 7.75% Punjab SGS 2035, issued on September 09, 2026        800     800     95.01/8.2002    Re-issue of 7.65% Punjab SGS 2043, issued on August 12, 2026        9.    Rajasthan    1000     1000    8.04    10        1500     1500    8.23    16        1000     1000     98.69/8.1768    Re-issue of 8.06% Rajasthan SGS 2057, issued on April 08, 2026        10.    Telangana     1000     1000    95.16/8.1466    Re-issue of 7.53% Telangana SGS 2039, issued on July 01, 2026        1000     1000    94.49/8.1864    Re-issue of 7.65% Telangana SGS 2049, issued on July 01, 2026        11.    Tripura    300     300     8.03    08         500     500     8.19    24         &nbsp;    Total     24400      23016.418     &nbsp;    &nbsp;        *Andhra Pradesh has not accepted any amount in Re-issue of 7.68% Andhra Pradesh SGS 2051, issued on July 29, 2026.      #Punjab has accepted partial amount of &#8377;316.418 crore in Re-issue of 7.75% Punjab SGS 2035, issued on September 09, 2026          Ajit Prasad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Deputy General Manager  (Communications)&nbsp;&nbsp;&nbsp;&nbsp; Press Release: 2026-2027/1350   ",
   "target_minutes": null,
-  "title": "RBI to conduct Overnight Variable Rate Repo (VRR) auction under LAF on October 21, 2026"
+  "title": "Result of Yield/Price Based Auction of State Government Securities"
  },
- "updated": "2026-10-19T22:13:37+00:00",
- "writer": ""
+ "updated": "2026-10-19T22:20:16+00:00",
+ "writer": "claude"
 }

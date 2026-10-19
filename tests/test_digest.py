@@ -55,3 +55,10 @@ def test_status_line(tmp_path):
     _seed(tmp_path)
     line = digest.status_line(tmp_path, date(2026, 10, 20))
     assert "sglearning" in line and "arthvan" in line and "running" in line
+
+
+def test_summary_uses_ist_day_for_pieces_updated_late_utc(tmp_path):
+    p = pieces.Piece(id="2026-10-20-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 10, 20))
+    p.status = "rejected"; p.reasons = ["length: 172 words"]; p.updated = "2026-10-19T22:30:00+00:00"      # 04:00 IST on 20 Oct
+    pieces.save(p, tmp_path)
+    assert "rejected 1" in digest.run_summary(tmp_path, date(2026, 10, 20))
