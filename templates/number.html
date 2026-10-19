@@ -1,0 +1,14 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Dev;src:url({{FONTS}}/NotoSansDevanagari.ttf)}
+@font-face{font-family:Inter;src:url({{FONTS}}/Inter.ttf)}
+html,body{margin:0;padding:0;background:#0B0F1A}
+#root{position:relative;width:{{W}}px;height:{{H}}px;overflow:hidden;background:radial-gradient(ellipse at 50% 35%,#15213B 0,#0B0F1A 70%);font-family:Inter,Dev,sans-serif;color:#F4F6FB;text-align:center}
+.big{position:absolute;left:40px;right:40px;top:30%;font-weight:900;font-size:260px;line-height:1;color:#FFD166;letter-spacing:-6px;text-shadow:0 10px 0 #000}
+.line{position:absolute;left:80px;right:80px;top:56%;font-weight:700;font-size:72px;line-height:1.2}
+.src{position:absolute;left:0;right:0;bottom:140px;font-weight:600;font-size:40px;color:#9AA4BF}
+.src:before{content:"Source: "}
+</style></head><body><div id="root">
+<div class="big">{{big_number}}</div>
+<div class="line">{{line}}</div>
+<div class="src">{{source}}</div>
+</div></body></html>

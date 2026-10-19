@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Dev;src:url({{FONTS}}/NotoSansDevanagari.ttf)}
+@font-face{font-family:Inter;src:url({{FONTS}}/Inter.ttf)}
+html,body{margin:0;padding:0;background:#0B0F1A}
+#root{position:relative;width:{{W}}px;height:{{H}}px;overflow:hidden;background:#0B0F1A;font-family:Inter,Dev,sans-serif;color:#F4F6FB;text-align:center}
+.avatar{position:absolute;left:50%;top:6%;transform:translateX(-50%);height:40%;border-radius:32px;object-fit:cover}
+.q{position:absolute;left:70px;right:70px;top:50%;font-weight:800;font-size:84px;line-height:1.15;color:#FFD166}
+.cta{position:absolute;left:0;right:0;top:74%;font-weight:700;font-size:48px}
+.h{position:absolute;left:0;right:0;bottom:110px;font-weight:600;font-size:40px;color:#9AA4BF}
+</style></head><body><div id="root">
+<img class="avatar" src="{{avatar_path}}" onerror="this.style.display='none'">
+<div class="q">{{question}}</div>
+<div class="cta">Comment mein likhiye &nbsp;·&nbsp; Subscribe</div>
+<div class="h">{{handle}}</div>
+</div></body></html>

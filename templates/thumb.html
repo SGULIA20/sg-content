@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Dev;src:url({{FONTS}}/NotoSansDevanagari.ttf)}
+@font-face{font-family:Inter;src:url({{FONTS}}/Inter.ttf)}
+html,body{margin:0;padding:0;background:#0B0F1A}
+#root{position:relative;width:{{W}}px;height:{{H}}px;overflow:hidden;background:linear-gradient(100deg,#0B0F1A 0,#15213B 100%);font-family:Inter,Dev,sans-serif;color:#F4F6FB}
+.avatar{position:absolute;right:-20px;bottom:0;height:104%;object-fit:cover}
+.words{position:absolute;left:50px;top:50px;width:62%;display:flex;flex-direction:column;gap:6px}
+.w{font-weight:900;font-size:124px;line-height:1;color:#FFD166;text-shadow:0 8px 0 #000;letter-spacing:-3px}
+.w:nth-child(2){color:#fff}.w:nth-child(3){color:#FF4D4D}
+.num{position:absolute;left:50px;bottom:50px;font-weight:900;font-size:110px;color:#fff;background:#FF4D4D;padding:0 30px;border-radius:20px;line-height:1.3}
+</style></head><body><div id="root">
+<img class="avatar" src="{{avatar_path}}" onerror="this.style.display='none'">
+<div class="words">{{words}}</div>
+<div class="num">{{number}}</div>
+</div></body></html>
