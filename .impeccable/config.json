@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "templates/caption.html"
+        ],
+        "createdAt": "2026-10-19T21:40:19.159Z",
+        "reason": "Claude: caption overlay on video, white text with black outline and shadow; page background is transparent by design"
+      }
+    ]
+  }
+}

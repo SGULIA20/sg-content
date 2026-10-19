@@ -71,3 +71,10 @@ def test_slide_and_label_and_source_sizes(tmp_path):
 def test_unknown_kind_raises(tmp_path):
     with pytest.raises(KeyError):
         cards.render("banner", {}, tmp_path / "x.png", (10, 10))
+
+
+def test_caption_card_is_transparent_png(tmp_path):
+    out = cards.render("caption", {"text": "Crude ₹100 के पार, teen cheezein badalti hain"}, tmp_path / "c.png", (1080, 300))
+    data = out.read_bytes()
+    assert _png_size(out) == (1080, 300)
+    assert data[25] == 6                                        # colour type 6 = RGBA, transparent background kept

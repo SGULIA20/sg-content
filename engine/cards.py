@@ -6,7 +6,8 @@ from pathlib import Path
 
 from .config import ASSETS_DIR, TEMPLATES_DIR
 
-KINDS = {"hook", "number", "source", "label", "end", "thumb", "slide"}
+KINDS = {"hook", "number", "source", "label", "end", "thumb", "slide", "caption"}
+TRANSPARENT = {"label", "caption"}
 BG = "#0B0F1A"
 _PW = None
 _BROWSER = None
@@ -65,7 +66,7 @@ def render(kind: str, data: dict, out: Path, size: tuple, templates: Path = TEMP
         page.goto(tmp.as_uri())
         page.wait_for_function("document.fonts.ready.then(() => true)")
         page.screenshot(path=str(out), clip={"x": 0, "y": 0, "width": size[0], "height": size[1]},
-                        omit_background=(kind == "label"))
+                        omit_background=(kind in TRANSPARENT))
         page.close()
     finally:
         tmp.unlink(missing_ok=True)
