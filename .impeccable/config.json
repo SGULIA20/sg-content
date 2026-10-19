@@ -11,6 +11,12 @@
         ],
         "createdAt": "2026-10-19T21:40:19.159Z",
         "reason": "Claude: caption overlay on video, white text with black outline and shadow; page background is transparent by design"
+      },
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-10-19T22:29:56.912Z",
+        "reason": "Claude: video cards, not a website; Inter carries the numerals next to Noto Sans Devanagari for Hindi, chosen for legibility at phone size"
       }
     ]
   }
