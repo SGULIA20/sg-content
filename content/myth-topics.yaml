@@ -1,0 +1,249 @@
+# SG-MYTH-WORLD topic bank: "Sabut ke saath" (spec §B). One long documentary per topic, three Shorts from its three hooks.
+# allowed_sources: where the research step may take facts from (plus the scriptures named). Every claim is labelled
+# scripture / archaeology / disputed / legend on screen. No communal content, no debunking of faith.
+- id: dwarka-underwater
+  title_hi: Samundar ke neeche Dwarka
+  place: Dwarka, Gujarat
+  hooks: ["Samundar ke neeche 3,000 saal purani deewarein?", "NIO ke goton ne Dwarka ke paas kya nikala?", "Kya yeh wahi Dwarka hai jo Mahabharat mein doobi?"]
+  allowed_sources: [nio.res.in, asi.nic.in, en.wikipedia.org, Mahabharata (Mausala Parva), Harivamsa]
+  notes: Marine archaeology by NIO (1980s-2000s), dating disputes; keep the scripture story separate from the finds.
+- id: ram-setu
+  title_hi: Ram Setu, satellite se kya dikhta hai
+  place: Rameswaram to Mannar
+  hooks: ["NASA ki tasveer mein 48 km lambi line kya hai?", "Ram Setu ke patthar paani par tairte hain?", "Geologists Ram Setu ko kya kehte hain?"]
+  allowed_sources: [isro.gov.in, nasa.gov, gsi.gov.in, en.wikipedia.org, Valmiki Ramayana (Yuddha Kanda)]
+  notes: Adam's Bridge geology (shoals, coral, sand), carbon dating claims and counter-claims; label disputed where science disagrees.
+- id: kurukshetra-chakravyuh
+  title_hi: Kurukshetra ka Chakravyuh naksha
+  place: Kurukshetra, Haryana
+  hooks: ["Pattharon par bana yeh naksha 5,000 saal purana hai?", "Abhimanyu ka Chakravyuh asli mein kaisa tha?", "Kurukshetra ki mitti mein kya mila?"]
+  allowed_sources: [asi.nic.in, haryanatourism.gov.in, en.wikipedia.org, Mahabharata (Drona Parva)]
+  notes: Distinguish the modern map at the Jyotisar area from excavation evidence; label legend where it is folklore.
+- id: hastinapur-today
+  title_hi: Hastinapur aaj
+  place: Hastinapur, Uttar Pradesh
+  hooks: ["Hastinapur mein ASI ko 1952 mein kya mila?", "Painted Grey Ware ka Mahabharat se kya rishta?", "Ganga ki baadh ne Hastinapur ko kab doboya?"]
+  allowed_sources: [asi.nic.in, en.wikipedia.org, B. B. Lal excavation reports, Mahabharata (Adi Parva)]
+  notes: B. B. Lal 1951-52 dig, PGW culture, flood layer vs the Purana flood story.
+- id: kailash-mystery
+  title_hi: Kailash parvat par koi kyon nahi chadha
+  place: Mount Kailash, Tibet
+  hooks: ["6,638 metre ka pahad jis par aaj tak koi nahi chadha?", "Kailash ke chaar nadiyon ka raaz", "Kailash parikrama 52 km, kitne din?"]
+  allowed_sources: [en.wikipedia.org, Shiva Purana, Skanda Purana, official Kailash Mansarovar Yatra site kmy.gov.in]
+  notes: No climbing is a permit and faith matter, not a physical impossibility; say so plainly.
+- id: jagannath-secrets
+  title_hi: Jagannath mandir ke 7 rahasya
+  place: Puri, Odisha
+  hooks: ["Jhanda hamesha hawa ke ulte kyon udta hai?", "Mandir ki parchhai kyon nahi dikhti?", "Sudarshan chakra har disha se ek jaisa?"]
+  allowed_sources: [shreejagannatha.in, en.wikipedia.org, Skanda Purana (Utkala Khanda), IMD data]
+  notes: Give the physical explanations (wind, geometry) with the legend side by side; wonder, not debunking.
+- id: kedarnath-2013
+  title_hi: Kedarnath 2013, mandir kaise bacha
+  place: Kedarnath, Uttarakhand
+  hooks: ["2013 ki baadh mein ek patthar ne mandir kaise bachaya?", "Kedarnath 400 saal barf ke neeche tha?", "Kedarnath ka mandir kisne banwaya?"]
+  allowed_sources: [gsi.gov.in, wihg.res.in, en.wikipedia.org, Skanda Purana (Kedara Khanda), NDMA reports]
+  notes: Wadia Institute study on glacial burial (1300-1900 CE); the 'Bhim Shila' boulder; label legend for the Pandava story.
+- id: saraswati-river
+  title_hi: Saraswati nadi kahan gayi
+  place: Haryana-Rajasthan-Gujarat
+  hooks: ["Rigveda ki nadi aaj kahan hai?", "ISRO ki tasveeron mein sookhi nadi ki lakeer", "Ghaggar-Hakra ko Saraswati kehna sahi hai?"]
+  allowed_sources: [isro.gov.in, cgwb.gov.in, en.wikipedia.org, Rigveda (Nadistuti sukta)]
+  notes: Palaeochannels, tectonics, monsoon shift; the identification is disputed among scholars.
+- id: rakhigarhi-dna
+  title_hi: Rakhigarhi ka DNA
+  place: Rakhigarhi, Haryana
+  hooks: ["4,500 saal purani haddiyon ka DNA kya bolta hai?", "Harappa ke log kaun the?", "Rakhigarhi Mohenjo-daro se bada?"]
+  allowed_sources: [asi.nic.in, cell.com (Shinde et al. 2019), en.wikipedia.org]
+  notes: One genome, careful about population claims; label disputed where interpretations differ.
+- id: mahabharata-date
+  title_hi: Mahabharat kab hua, taaron se hisaab
+  place: Kurukshetra
+  hooks: ["Mahabharat ki tareekh taaron se nikali ja sakti hai?", "3102 BCE ya 1500 BCE?", "Ek grahan jo yuddh se pehle hua"]
+  allowed_sources: [en.wikipedia.org, Mahabharata (Bhishma Parva astronomy verses), ASI PGW dating, Aihole inscription]
+  notes: Present astronomy claims as disputed; archaeology gives a later range; do not pick a winner.
+- id: ayodhya-excavation
+  title_hi: Ayodhya ki khudai mein kya mila
+  place: Ayodhya, Uttar Pradesh
+  hooks: ["2003 ki khudai mein 50 khambon ke nishaan?", "ASI report ne kya kaha aur kya nahi?", "Ayodhya ki sabse purani parat kitni purani?"]
+  allowed_sources: [asi.nic.in, Supreme Court of India judgment 2019 (sci.gov.in), en.wikipedia.org]
+  notes: Stick to the ASI report and the court's summary of it; no community framing, no politics.
+- id: ashwatthama-alive
+  title_hi: Ashwatthama zinda hai?
+  place: Asirgarh, Madhya Pradesh
+  hooks: ["Asirgarh ke mandir mein roz kaun phool chadhata hai?", "Ashwatthama ko amar shraap kyon mila?", "Ek doctor ka dawa: maine Ashwatthama ko dekha"]
+  allowed_sources: [en.wikipedia.org, Mahabharata (Sauptika Parva), mptourism.com]
+  notes: Legend lane; label every sighting story as legend; the curse is scripture.
+- id: lepakshi-hanging-pillar
+  title_hi: Lepakshi ka latakta khamba
+  place: Lepakshi, Andhra Pradesh
+  hooks: ["Ek khamba jo zameen ko chhoota nahi?", "Lepakshi ke 70 khambon ka raaz", "Angrez engineer ne khambe ko hilaya?"]
+  allowed_sources: [asi.nic.in, aptourism.gov.in, en.wikipedia.org]
+  notes: Vijayanagara engineering; explain the likely construction method; the British story is legend.
+- id: konark-magnet
+  title_hi: Konark ka chumbak
+  place: Konark, Odisha
+  hooks: ["Konark mandir ke upar 52 ton ka chumbak tha?", "Jahaaz Konark ke paas kyon bhatakte the?", "Surya mandir ka pahiya ghadi hai?"]
+  allowed_sources: [asi.nic.in, en.wikipedia.org, odishatourism.gov.in, UNESCO whc.unesco.org]
+  notes: Magnet story is disputed/legend; the sundial wheel is documented.
+- id: brihadeeswara-shadow
+  title_hi: Tanjore ke mandir ki parchhai
+  place: Thanjavur, Tamil Nadu
+  hooks: ["80 ton ka patthar 66 metre upar kaise gaya?", "Mandir ki parchhai dopahar mein kahan jaati hai?", "1,000 saal mein ek bhi daraar nahi?"]
+  allowed_sources: [asi.nic.in, en.wikipedia.org, UNESCO whc.unesco.org, Thanjavur inscriptions]
+  notes: Chola engineering (ramp theories), shadow claim is a partial truth; explain geometry.
+- id: kailasa-ellora
+  title_hi: Ellora ka Kailasa mandir, upar se neeche
+  place: Ellora, Maharashtra
+  hooks: ["Ek hi chattan se 2 lakh ton patthar hataya gaya?", "Mandir upar se neeche kyon banaya?", "Kailasa 18 saal mein ya 200 saal mein?"]
+  allowed_sources: [asi.nic.in, en.wikipedia.org, UNESCO whc.unesco.org]
+  notes: Rashtrakuta period; the '18 years' claim is legend; volumes are estimates.
+- id: hampi-musical-pillars
+  title_hi: Hampi ke sangeet khambe
+  place: Hampi, Karnataka
+  hooks: ["Patthar ke khambe se sa-re-ga-ma?", "Angrezon ne khambe kaat kar kya dhoondha?", "Hampi 500 saal pehle duniya ka doosra sabse bada sheher?"]
+  allowed_sources: [asi.nic.in, en.wikipedia.org, UNESCO whc.unesco.org, Domingo Paes travelogue]
+  notes: Vittala temple acoustics; the cutting story needs a label; population claims are from travellers.
+- id: lonar-crater
+  title_hi: Lonar, ulka se bani jheel
+  place: Lonar, Maharashtra
+  hooks: ["Ek ulka ne 50,000 saal pehle yeh jheel banayi?", "Lonar ka paani gulabi kyon hua?", "Jheel ke kinare Daitya Sudan mandir ki kahani"]
+  allowed_sources: [gsi.gov.in, en.wikipedia.org, Skanda Purana (Lonar Mahatmya)]
+  notes: Science is solid here; the demon story is scripture/legend.
+- id: shani-shingnapur
+  title_hi: Shani Shingnapur, bina darwaze ka gaon
+  place: Shani Shingnapur, Maharashtra
+  hooks: ["Is gaon mein ghar ke darwaze kyon nahi?", "Bank ki shakha bhi bina lock ke?", "Chori hui to kya hua?"]
+  allowed_sources: [en.wikipedia.org, maharashtratourism.gov.in, news reports with dates]
+  notes: Legend lane plus documented modern facts (UCO Bank branch 2011); report thefts honestly.
+- id: karni-mata-rats
+  title_hi: Karni Mata, 25,000 chuhon ka mandir
+  place: Deshnoke, Rajasthan
+  hooks: ["25,000 chuhe aur ek bhi bimari nahi?", "Safed chuha dikha to kya hota hai?", "Chuhe mandir ke bahar kyon nahi jaate?"]
+  allowed_sources: [en.wikipedia.org, tourism.rajasthan.gov.in]
+  notes: Give the hygiene question an honest answer (no verified study either way) and label it.
+- id: mehandipur-balaji
+  title_hi: Mehandipur Balaji ka sach
+  place: Dausa, Rajasthan
+  hooks: ["Yahan prasad ghar kyon nahi le jaate?", "Bhoot utaarne ka mandir?", "Doctors is mandir ke baare mein kya kehte hain?"]
+  allowed_sources: [en.wikipedia.org, Indian Journal of Psychiatry studies on temple healing]
+  notes: Respect faith; mention mental-health research neutrally; no mocking.
+- id: dholavira-water
+  title_hi: Dholavira, 4,500 saal purana paani ka system
+  place: Dholavira, Gujarat
+  hooks: ["Registan mein 16 reservoir, 4,500 saal pehle?", "Duniya ka sabse purana signboard?", "Dholavira ko UNESCO ne kyon chuna?"]
+  allowed_sources: [asi.nic.in, UNESCO whc.unesco.org, en.wikipedia.org]
+  notes: Pure archaeology lane.
+- id: sanchi-stupa
+  title_hi: Sanchi, Ashok ka stupa
+  place: Sanchi, Madhya Pradesh
+  hooks: ["2,300 saal purana stupa jise angrezon ne phir se joda?", "Ashok ne yahan kya chhupaya?", "Sanchi ke darwazon par kaun si kahaniyan?"]
+  allowed_sources: [asi.nic.in, UNESCO whc.unesco.org, en.wikipedia.org]
+  notes: Buddhist heritage; archaeology lane.
+- id: nalanda-library
+  title_hi: Nalanda ki library 3 mahine tak jali
+  place: Nalanda, Bihar
+  hooks: ["9 manzil ki library, 90 lakh kitaabein?", "Nalanda ko kisne jalaya, kitne din jali?", "Khudai mein kya bacha?"]
+  allowed_sources: [asi.nic.in, en.wikipedia.org, Xuanzang (Hiuen Tsang) records, UNESCO whc.unesco.org]
+  notes: The '3 months' and '9 million books' are from later sources; label disputed; no communal angle on the destruction.
+- id: iron-pillar-delhi
+  title_hi: Delhi ka loha jo 1,600 saal se zang nahi khaya
+  place: Mehrauli, Delhi
+  hooks: ["1,600 saal, 6 ton loha, zero zang?", "IIT Kanpur ne is lohe mein kya paya?", "Yeh khamba Delhi kaise aaya?"]
+  allowed_sources: [asi.nic.in, en.wikipedia.org, IIT Kanpur (R. Balasubramaniam) papers]
+  notes: Science explains it (phosphorus, misawite layer); say so with the inscription history.
+- id: chand-baori
+  title_hi: Chand Baori, 3,500 seedhiyon ka kuan
+  place: Abhaneri, Rajasthan
+  hooks: ["13 manzil neeche, 3,500 seedhiyan, 1,200 saal purana?", "Ek raat mein bhoot ne banaya?", "Paani 5 degree thanda kaise?"]
+  allowed_sources: [asi.nic.in, tourism.rajasthan.gov.in, en.wikipedia.org]
+  notes: Stepwell engineering; the one-night story is legend.
+- id: chausath-yogini
+  title_hi: Chausath Yogini aur Sansad ka design
+  place: Morena, Madhya Pradesh
+  hooks: ["Kya Parliament ka design is mandir se aaya?", "64 yoginiyon ka gol mandir", "Tantra ka vigyan ya kahani?"]
+  allowed_sources: [asi.nic.in, en.wikipedia.org]
+  notes: The Parliament link is disputed (no documentary proof); label it.
+- id: bhimbetka
+  title_hi: Bhimbetka, 30,000 saal purani painting
+  place: Raisen, Madhya Pradesh
+  hooks: ["30,000 saal purani painting aaj bhi rangin?", "Bhim yahan baithe the? Naam ka raaz", "Duniya ki sabse purani jaanwar ki tasveer?"]
+  allowed_sources: [asi.nic.in, UNESCO whc.unesco.org, en.wikipedia.org]
+  notes: Archaeology lane; the Bhima name is legend.
+- id: vijay-stambh
+  title_hi: Chittor ka Vijay Stambh
+  place: Chittorgarh, Rajasthan
+  hooks: ["9 manzil, 157 seedhiyan, 1448 mein?", "Rani Padmini ki asli kahani kya hai?", "Jauhar ka itihaas, sabut ke saath"]
+  allowed_sources: [asi.nic.in, en.wikipedia.org, Padmavat (Jayasi) as literature]
+  notes: Separate chronicle from epic poem; label; no communal framing of sieges.
+- id: hanuman-garhi-and-anjaneri
+  title_hi: Hanuman ka janm sthan, kaun sa sach?
+  place: Anjaneri / Hampi / Tirumala
+  hooks: ["Hanuman ka janm kahan hua: 3 dawe, 1 sach?", "Kishkindha Hampi hi hai?", "Tirumala ka dawa kya hai?"]
+  allowed_sources: [en.wikipedia.org, Valmiki Ramayana (Kishkindha Kanda), TTD statement 2021]
+  notes: Present all three claims as disputed; scripture for the birth story.
+- id: ravana-lanka-location
+  title_hi: Ravan ki Lanka kahan thi
+  place: Sri Lanka / disputed
+  hooks: ["Lanka Sri Lanka hi thi ya kahin aur?", "Sigiriya Ravan ka mahal?", "Ashok Vatika aaj kahan?"]
+  allowed_sources: [en.wikipedia.org, Valmiki Ramayana (Sundara Kanda), srilanka.travel (Ramayana trail)]
+  notes: Everything location-wise is disputed or legend; scripture for the story.
+- id: parashurama-kerala
+  title_hi: Parashuram ne Kerala samundar se nikala?
+  place: Konkan-Kerala coast
+  hooks: ["Ek pharse se 600 km zameen?", "Geology Kerala ke tat ke baare mein kya kehti hai?", "Konkan se Kanyakumari tak ek hi kahani"]
+  allowed_sources: [gsi.gov.in, en.wikipedia.org, Skanda Purana, Kerala Mahatmya]
+  notes: Scripture/legend vs coastal geology (sea-level change); both told, both labelled.
+- id: mahabalipuram-seven-pagodas
+  title_hi: Mahabalipuram ke 7 mandir, 6 samundar mein?
+  place: Mahabalipuram, Tamil Nadu
+  hooks: ["2004 sunami ne samundar se kya bahar nikala?", "7 pagoda ki kahani 1,300 saal purani?", "Goton ko samundar mein kya mila?"]
+  allowed_sources: [asi.nic.in, nio.res.in, UNESCO whc.unesco.org, en.wikipedia.org]
+  notes: Post-tsunami finds are documented; the seven-pagoda count is legend.
+- id: poompuhar
+  title_hi: Poompuhar, Tamil Atlantis
+  place: Poompuhar, Tamil Nadu
+  hooks: ["Sangam kaal ka sheher samundar mein?", "NIO ko Poompuhar ke paas kya mila?", "Kumari Kandam: kahani ya itihaas?"]
+  allowed_sources: [nio.res.in, en.wikipedia.org, Silappatikaram (Sangam literature)]
+  notes: Kumari Kandam is legend; the offshore structures are archaeology with dating disputes.
+- id: kumbhalgarh-wall
+  title_hi: Kumbhalgarh, 36 km ki deewar
+  place: Kumbhalgarh, Rajasthan
+  hooks: ["China ke baad duniya ki sabse lambi deewar India mein?", "Deewar itni chaudi ki 8 ghode saath chalein?", "Ek sant ki bali ki kahani"]
+  allowed_sources: [asi.nic.in, UNESCO whc.unesco.org, en.wikipedia.org]
+  notes: Length figures vary (36-38 km); the sacrifice story is legend.
+- id: bateshwar-temples
+  title_hi: Bateshwar, 200 mandir jo dakuon ne bachaye
+  place: Morena, Madhya Pradesh
+  hooks: ["ASI ne dakuon ki madad se mandir kaise jode?", "1,300 saal purane 200 mandir ek pahadi par?", "Nirbhay Gujjar aur ASI ka samjhauta"]
+  allowed_sources: [asi.nic.in, en.wikipedia.org, news reports with dates (K. K. Muhammed)]
+  notes: Documented modern story; good evidence lane.
+- id: unakoti
+  title_hi: Unakoti, ek karod se ek kam moortiyan
+  place: Unakoti, Tripura
+  hooks: ["Pahad par 99,99,999 moortiyan?", "Ek raat mein sab patthar ban gaye?", "Kisne banaya, koi nahi jaanta"]
+  allowed_sources: [asi.nic.in, tripuratourism.gov.in, en.wikipedia.org]
+  notes: The count is legend; the carvings are archaeology (7th-9th c.).
+- id: keeladi
+  title_hi: Keeladi, Tamil sabhyata 2,600 saal purani
+  place: Keeladi, Tamil Nadu
+  hooks: ["Vaigai ke kinare 2,600 saal purana sheher?", "Keeladi ke bartan par likhe akshar", "Keeladi ki khudai par vivaad kyon?"]
+  allowed_sources: [tnarch.gov.in, asi.nic.in, en.wikipedia.org]
+  notes: Dates and interpretations are disputed between agencies; label carefully, no regional politics.
+- id: sinauli-chariots
+  title_hi: Sinauli ke rath
+  place: Baghpat, Uttar Pradesh
+  hooks: ["4,000 saal purane rath India mein mile?", "Mahabharat ke rath aise the?", "Sinauli ke yodhaon ki kabrein"]
+  allowed_sources: [asi.nic.in, en.wikipedia.org]
+  notes: Chariot vs cart debate is disputed; the Mahabharata link is legend unless a source says otherwise.
+- id: adichanallur
+  title_hi: Adichanallur ki 3,000 saal purani kabrein
+  place: Thoothukudi, Tamil Nadu
+  hooks: ["Mitti ke ghadon mein 3,000 saal purane insaan?", "Angrez ne 1876 mein yahan se kya le gaya?", "Adichanallur ka loha duniya ka sabse purana?"]
+  allowed_sources: [asi.nic.in, tnarch.gov.in, en.wikipedia.org]
+  notes: Archaeology lane; Berlin museum artefacts documented.
+- id: tirupati-facts
+  title_hi: Tirupati, duniya ka sabse ameer mandir
+  place: Tirumala, Andhra Pradesh
+  hooks: ["Roz 1 lakh log, kitna daan?", "Balaji ki moorti par asli baal?", "Hundi ka paisa kahan jaata hai?"]
+  allowed_sources: [tirumala.org (TTD), en.wikipedia.org, Varaha Purana, Bhavishyottara Purana]
+  notes: Use TTD's own numbers with dates; the hair story is legend.
