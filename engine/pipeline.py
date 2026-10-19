@@ -6,7 +6,7 @@ from datetime import date
 from pathlib import Path
 from typing import Callable
 
-from . import art, assemble, buffer, cards, claims, lint, pieces, qa, research, slots, topics, voice, writer, youtube
+from . import art, assemble, buffer, cards, claims, gemini, lint, pieces, qa, research, secrets, slots, topics, voice, writer, youtube
 from .config import CHANNELS, ROOT, VIDEO
 from .pieces import Piece
 
@@ -137,8 +137,15 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False) -> 
             piece.facts = topic["long_facts"]
             sheet = {"facts": piece.facts, "summary": "", "long_scenes": topic["long_scenes"], "hook": topic["hook"]}
         else:
-            sheet = deps.research(topic, piece.channel)
+            try:
+                sheet = deps.research(topic, piece.channel)
+            except (research.ResearchError, gemini.GeminiError) as e:
+                pieces.save(pieces.transition(piece, "failed-research", f"try {attempt + 1}: {secrets.scrub(str(e))[:200]}"), root)
+                continue
             piece.facts = sheet.get("facts", [])
+            if not piece.facts:
+                pieces.save(pieces.transition(piece, "failed-research", f"try {attempt + 1}: no sourced facts survived the checks"), root)
+                continue
         pieces.save(pieces.transition(piece, "researched"), root)
         written = deps.write(piece, sheet, deps.library, deps.hashtags)
         piece.script, piece.writer = written["script"], written["writer"]
@@ -223,7 +230,7 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
         youtube.set_thumbnail(token, vid, thumb)
         return vid
 
-    return Deps(topic=topic_fn, research=research.fact_sheet, write=writer.write, say=voice.say, paint=art.paint, avatar=art.avatar,
+    return Deps(topic=topic_fn, research=lambda topic, ch: research.verify_urls(research.fact_sheet(topic, ch)), write=writer.write, say=voice.say, paint=art.paint, avatar=art.avatar,
                 render_card=cards.render, build=assemble.build, qa=qa.report, upload=upload_fn,
                 lint=lambda piece, prior: lint.check_script(piece, banned, prior) + lint.check_captions(piece, hashtags),
                 claims_check=lambda piece: claims.match(lint.script_text(piece), piece.facts, library),

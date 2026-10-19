@@ -109,3 +109,29 @@ def test_fact_sheet_repairs_broken_json_with_second_call():
     assert len(sheet["facts"]) == 1 and len(calls) == 2
     assert "tools" not in calls[1] and calls[1]["generationConfig"]["responseMimeType"] == "application/json"
     assert "Brent crossed" in calls[1]["contents"][0]["parts"][0]["text"]
+
+
+def test_fact_sheet_retries_once_on_empty_reply():
+    calls = []
+
+    def fake_ask(model, body, key):
+        calls.append(body)
+        if len(calls) == 1:
+            return {"candidates": [{"content": {"parts": []}, "finishReason": "MAX_TOKENS"}]}
+        return {"candidates": [{"content": {"parts": [{"text": json.dumps({"facts": [fact()], "summary": "s"})}]}}]}
+
+    sheet = research.fact_sheet({"title": "t", "link": "u", "summary": ""}, "sglearning", key="k", ask=fake_ask, today=TODAY)
+    assert len(sheet["facts"]) == 1 and len(calls) == 2 and calls[0]["generationConfig"]["maxOutputTokens"] >= 16000
+
+
+def test_verify_urls_drops_unreachable_sources():
+    sheet = {"facts": [fact(source_url="https://ok.example/a"), fact(source_url="https://dead.example/b"), fact(source_url="https://ok.example/a")], "summary": "s"}
+    seen = []
+
+    def fetch(url):
+        seen.append(url)
+        return 200 if "ok.example" in url else 404
+
+    out = research.verify_urls(sheet, fetch=fetch)
+    assert [f["source_url"] for f in out["facts"]] == ["https://ok.example/a", "https://ok.example/a"]
+    assert seen == ["https://ok.example/a", "https://dead.example/b"]                 # each URL checked once

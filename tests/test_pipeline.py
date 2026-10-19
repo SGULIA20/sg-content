@@ -150,3 +150,29 @@ def test_make_voice_api_error_marks_failed_voice(tmp_path):
     d, calls = deps(tmp_path, say=say_fn)
     p = pipeline.make(_piece(), d, tmp_path)
     assert p.status == "failed-voice" and "429" in p.reasons[-1]
+
+
+def test_make_research_error_parks_piece_and_tries_next_topic(tmp_path):
+    from engine import research
+    n = {"calls": 0}
+
+    def research_fn(topic, channel):
+        n["calls"] += 1
+        if n["calls"] == 1:
+            raise research.ResearchError("empty reply")
+        return {"facts": FACTS, "summary": "s"}
+
+    d, calls = deps(tmp_path, research=research_fn)
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert n["calls"] == 2 and p.status == "uploaded" and any("empty reply" in r for r in p.reasons)
+
+
+def test_make_all_research_fails_marks_failed_research(tmp_path):
+    from engine import gemini
+
+    def research_fn(topic, channel):
+        raise gemini.GeminiError("503 busy")
+
+    d, calls = deps(tmp_path, research=research_fn)
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert p.status == "failed-research" and calls["write"] == 0
