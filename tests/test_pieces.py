@@ -44,3 +44,11 @@ def test_list_all_sorted_by_id(tmp_path):
     b.id, b.publish_day = "2026-10-19-arthvan-long", date(2026, 10, 19)
     pieces.save(a, root=tmp_path); pieces.save(b, root=tmp_path)
     assert [p.id for p in pieces.list_all(root=tmp_path)] == [b.id, a.id]
+
+
+def test_save_serialises_datetimes_in_topic(tmp_path):
+    from datetime import datetime, timezone
+    p = _piece()
+    p.topic = {"title": "x", "published": datetime(2026, 10, 20, 3, 45, tzinfo=timezone.utc)}
+    pieces.save(p, root=tmp_path)
+    assert pieces.load(p.id, root=tmp_path).topic["published"] == "2026-10-20T03:45:00+00:00"

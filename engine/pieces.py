@@ -31,10 +31,16 @@ def _dir(root: Path) -> Path:
     return Path(root) / "pieces"
 
 
+def _default(o):
+    if isinstance(o, (datetime, date)):
+        return o.isoformat()
+    raise TypeError(f"not serialisable: {type(o).__name__}")
+
+
 def _to_json(p: Piece) -> str:
     d = asdict(p)
     d["publish_day"] = p.publish_day.isoformat()
-    return json.dumps(d, ensure_ascii=False, sort_keys=True, indent=1)
+    return json.dumps(d, ensure_ascii=False, sort_keys=True, indent=1, default=_default)
 
 
 def save(p: Piece, root: Path = ROOT) -> Path:
