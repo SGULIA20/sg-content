@@ -1,0 +1,136 @@
+import json
+from datetime import date
+from pathlib import Path
+
+import pytest
+
+from engine import pieces, pipeline, voice
+from tests.test_writer import good_script
+
+FACTS = [{"text": "Brent crossed $100", "number": 100.0, "unit": "USD", "source_url": "https://e/a", "source_name": "ET", "source_date": "2026-10-19", "quote": "q", "label": "reported"},
+         {"text": "India imports 88% of crude", "number": 88.0, "unit": "pct", "source_url": "https://e/b", "source_name": "PPAC", "source_date": "2026-10-19", "quote": "q", "label": "official"}]
+TOPIC = {"title": "Crude oil crosses $100", "link": "https://e/a", "summary": "s", "published": None, "source": "ET"}
+
+
+def deps(tmp_path, **over):
+    calls = {"research": 0, "write": 0, "say": 0, "paint": 0, "build": 0, "qa": 0, "upload": 0, "topics": 0}
+
+    def topic_fn(piece, used):
+        calls["topics"] += 1
+        return dict(TOPIC, link=f"https://e/{calls['topics']}")
+
+    def research_fn(topic, channel):
+        calls["research"] += 1; return {"facts": FACTS, "summary": "s"}
+
+    def write_fn(piece, sheet, library, hashtags):
+        calls["write"] += 1; return {"script": good_script(), "writer": "claude", "note": ""}
+
+    def say_fn(text, voice_id, out_wav):
+        calls["say"] += 1
+        import wave
+        Path(out_wav).parent.mkdir(parents=True, exist_ok=True)
+        with wave.open(str(out_wav), "wb") as w:
+            w.setnchannels(1); w.setsampwidth(2); w.setframerate(24000); w.writeframes(b"\x00\x00" * 24000)
+        return 1.0
+
+    def paint_fn(prompt, out, **kw):
+        calls["paint"] += 1; Path(out).parent.mkdir(parents=True, exist_ok=True); Path(out).write_bytes(b"png"); return Path(out)
+
+    def card_fn(kind, data, out, size):
+        Path(out).parent.mkdir(parents=True, exist_ok=True); Path(out).write_bytes(b"png"); return Path(out)
+
+    def build_fn(piece, lines, visuals, size, out_dir, **kw):
+        calls["build"] += 1; piece.timings = [float(i) for i in range(len(lines))]
+        out = Path(out_dir) / ("reel.mp4" if piece.kind == "short" else "long.mp4"); out.write_bytes(b"mp4"); return out
+
+    def qa_fn(path, kind, voiced_seconds, caption_cues, **kw):
+        calls["qa"] += 1; return []
+
+    def upload_fn(piece, video, thumb):
+        calls["upload"] += 1; return "yt123"
+
+    d = pipeline.Deps(topic=topic_fn, research=research_fn, write=write_fn, say=say_fn, paint=paint_fn, avatar=lambda pose: Path(tmp_path / f"{pose}.png"),
+                      render_card=card_fn, build=build_fn, qa=qa_fn, upload=upload_fn, lint=lambda piece, prior: [],
+                      claims_check=lambda piece: [], commons=lambda q, out: None)
+    for k, v in over.items():
+        setattr(d, k, v)
+    return d, calls
+
+
+def _piece(kind="short", channel="sglearning", day=date(2026, 10, 20)):
+    return pieces.Piece(id=f"{day.isoformat()}-{channel}-{kind}", channel=channel, kind=kind, publish_day=day)
+
+
+def test_make_runs_all_steps_and_uploads(tmp_path):
+    d, calls = deps(tmp_path)
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert p.status == "uploaded" and p.ids["yt_id"] == "yt123" and p.writer == "claude"
+    assert calls == {"research": 1, "write": 1, "say": 3, "paint": 1, "build": 1, "qa": 1, "upload": 1, "topics": 1}
+    assert (tmp_path / "out" / p.id / "reel.mp4").exists() and (tmp_path / "out" / p.id / "story.mp4").exists()
+    assert pieces.load(p.id, tmp_path).status == "uploaded"
+
+
+def test_make_rejected_script_tries_next_topic_up_to_three(tmp_path):
+    d, calls = deps(tmp_path, lint=lambda piece, prior: ["advice: kharid lo"])
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert p.status == "rejected" and calls["topics"] == 3 and calls["say"] == 0
+    assert any("advice" in r for r in p.reasons)
+
+
+def test_make_number_without_source_rejects(tmp_path):
+    d, calls = deps(tmp_path, claims_check=lambda piece: [12.0])
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert p.status == "rejected" and any("12" in r for r in p.reasons)
+
+
+def test_make_voice_budget_marks_failed_voice_and_returns(tmp_path):
+    def say_fn(text, voice_id, out_wav):
+        raise voice.VoiceBudget("cap")
+    d, calls = deps(tmp_path, say=say_fn)
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert p.status == "failed-voice" and calls["build"] == 0 and pieces.load(p.id, tmp_path).status == "failed-voice"
+
+
+def test_make_qa_failure_is_not_uploaded(tmp_path):
+    d, calls = deps(tmp_path, qa=lambda *a, **k: ["loudness: -22 LUFS"])
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert p.status == "qa_failed" and calls["upload"] == 0
+
+
+def test_dry_run_never_calls_upload(tmp_path):
+    d, calls = deps(tmp_path)
+    p = pipeline.make(_piece(), d, tmp_path, dry_run=True)
+    assert p.status == "assembled" and calls["upload"] == 0
+
+
+def test_make_is_idempotent_for_uploaded_piece(tmp_path):
+    d, calls = deps(tmp_path)
+    p = _piece(); p.status = "uploaded"; p.ids["yt_id"] = "x"; pieces.save(p, tmp_path)
+    pipeline.make(p, d, tmp_path)
+    assert calls["write"] == 0
+
+
+def test_myth_short_reuses_long_scenes(tmp_path):
+    long_p = _piece("long", "arthvan", date(2026, 10, 17))
+    s = good_script(); s["scenes"] = s["scenes"] * 4                         # 12 scenes
+    long_p.script = s; long_p.facts = FACTS; long_p.status = "uploaded"; long_p.topic = {"id": "dwarka-underwater", "hooks": ["h1", "h2", "h3"]}
+    pieces.save(long_p, tmp_path)
+    d, calls = deps(tmp_path)
+    p = pipeline.make(_piece("short", "arthvan", date(2026, 10, 21)), d, tmp_path)
+    assert calls["research"] == 0 and calls["write"] == 1                   # no new research; the writer cuts the Short from the long's scenes
+    assert p.topic["from_long"] == "2026-10-17-arthvan-long" and p.status == "uploaded"
+
+
+def test_myth_short_without_long_fails_cleanly(tmp_path):
+    d, calls = deps(tmp_path)
+    p = pipeline.make(_piece("short", "arthvan", date(2026, 10, 21)), d, tmp_path)
+    assert p.status == "failed-topic" and calls["write"] == 0
+
+
+def test_myth_short_teases_next_long_when_previous_missing(tmp_path):
+    long_p = _piece("long", "arthvan", date(2026, 10, 24))
+    long_p.script = good_script(); long_p.facts = FACTS; long_p.status = "uploaded"; long_p.topic = {"id": "dwarka-underwater", "hooks": ["h1", "h2", "h3"]}
+    pieces.save(long_p, tmp_path)
+    d, calls = deps(tmp_path)
+    p = pipeline.make(_piece("short", "arthvan", date(2026, 10, 21)), d, tmp_path)
+    assert p.topic["from_long"] == "2026-10-24-arthvan-long" and p.status == "uploaded"
