@@ -22,7 +22,7 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
         with:
@@ -33,17 +33,17 @@ jobs:
           cache: pip
       - name: Install Python packages
         run: pip install -r requirements.txt
-      - name: Pick the channel for this slot
+      - name: Pick the channel for this slot (from the schedule that fired, not the clock)
         id: slot
         run: |
           if [ -n "${{ github.event.inputs.channel }}" ]; then echo "channel=${{ github.event.inputs.channel }}" >> "$GITHUB_OUTPUT"
-          elif [ "$(date -u +%H)" = "07" ]; then echo "channel=sglearning" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "30 7 * * *" ]; then echo "channel=sglearning" >> "$GITHUB_OUTPUT"
           else echo "channel=arthvan" >> "$GITHUB_OUTPUT"; fi
       - name: Git identity
         run: |
           git config user.name "sg-content-bot"
           git config user.email "sg-content-bot@users.noreply.github.com"
-      - name: Post what is due
+      - name: Post what is due (each posted piece is committed and pushed at once)
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
@@ -53,6 +53,9 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python -m engine.publish --channel ${{ steps.slot.outputs.channel }}
       - name: Commit piece records and logs
+        if: always()
         run: |
-          git add -A pieces logs || true
-          git diff --cached --quiet || (git commit -m "publish: $(date -u +%Y-%m-%dT%H:%M) [skip ci]" && git push)
+          git add -f -A pieces logs || true
+          git diff --cached --quiet || git commit -m "publish: $(date -u +%Y-%m-%dT%H:%M) [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main

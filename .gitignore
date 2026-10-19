@@ -1,5 +1,4 @@
 .env
-out/
 cache/
 __pycache__/
 *.pyc
@@ -7,3 +6,17 @@ __pycache__/
 .superpowers/
 .playwright/
 .DS_Store
+assets/avatar/.cache/
+# out/<id>/: only what Instagram and Threads fetch stays in git (reel.mp4, story.mp4, thumb.jpg, slide*.jpg, captions.ass); intermediates do not
+out/**/vo/
+out/**/cues/
+out/**/photos/
+out/**/scene*.mp4
+out/**/scenes.txt
+out/**/voice.wav
+out/**/long.mp4
+out/**/visual*.png
+out/**/source*.png
+out/**/credit-*.png
+out/**/label-*.png
+out/**/*.html

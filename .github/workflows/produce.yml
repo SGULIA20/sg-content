@@ -10,6 +10,10 @@ on:
         description: 'render only, no upload'
         type: boolean
         default: false
+      unlisted:
+        description: 'first day: upload unlisted, skip Instagram and Threads'
+        type: boolean
+        default: false
       max:
         description: 'pieces to make this run'
         default: '3'
@@ -33,6 +37,12 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
+      - name: Restore the voice and picture caches
+        uses: actions/cache@v4
+        with:
+          path: cache
+          key: sg-cache-${{ github.run_id }}
+          restore-keys: sg-cache-
       - name: Install ffmpeg and fonts
         run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-core
       - name: Install Python packages
@@ -45,7 +55,7 @@ jobs:
         run: |
           git config user.name "sg-content-bot"
           git config user.email "sg-content-bot@users.noreply.github.com"
-      - name: Make what the buffer needs
+      - name: Make what the buffer needs (each finished piece is committed and pushed at once)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -55,16 +65,19 @@ jobs:
           YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          UNLISTED_DAY1: ${{ github.event.inputs.unlisted == 'true' && '1' || '' }}
         run: |
           ARGS="--max ${{ github.event.inputs.max || '3' }}"
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           python -m engine.produce $ARGS
-      - name: Prune old media and record the commit the Shorts live at
+      - name: Prune media older than 14 days
+        if: always()
         run: python scripts/prune_out.py --days 14
-      - name: Commit pieces, media and logs
+      - name: Commit anything still uncommitted (pieces, media, logs) and push
+        if: always()
         run: |
-          git add -A pieces out logs content/voice.json || true
-          git diff --cached --quiet || git commit -m "produce: $(date -u +%Y-%m-%d) [skip ci]"
-          git push
-          python scripts/prune_out.py --record-sha "$(git rev-parse HEAD)"
-          git add -A pieces && (git diff --cached --quiet || (git commit -m "produce: record media sha [skip ci]" && git push))
+          git add -f -A pieces out logs || true
+          [ -f content/voice.json ] && git add content/voice.json || true
+          git diff --cached --quiet || git commit -m "produce: $(date -u +%Y-%m-%dT%H:%M) [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main

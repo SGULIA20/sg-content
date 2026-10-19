@@ -43,3 +43,44 @@ def test_docs_secrets_lists_every_secret():
     doc = (ROOT / "docs" / "secrets.md").read_text()
     for name in KNOWN - {"GITHUB_TOKEN"}:
         assert name in doc, name
+
+
+def test_produce_commit_step_always_runs_and_pulls_before_push():
+    text = (ROOT / ".github" / "workflows" / "produce.yml").read_text()
+    data = yaml.safe_load(text)
+    steps = data["jobs"]["produce"]["steps"]
+    commit = next(s for s in steps if "Commit" in s.get("name", ""))
+    assert commit.get("if") == "always()"
+    assert "git pull --rebase" in commit["run"] and "git add -f" in commit["run"]
+    assert "content/voice.json" not in commit["run"] or "[ -f content/voice.json ]" in commit["run"]
+    assert any("actions/cache" in s.get("uses", "") for s in steps)
+
+
+def test_gitignore_keeps_published_short_files():
+    ignore = (ROOT / ".gitignore").read_text().splitlines()
+    assert "out/" not in ignore and "out/**/vo/" in ignore and "out/**/scene*.mp4" in ignore and "out/**/long.mp4" in ignore
+    assert "assets/avatar/.cache/" in ignore
+
+
+def test_publish_picks_channel_from_schedule_not_clock():
+    text = (ROOT / ".github" / "workflows" / "publish.yml").read_text()
+    assert "github.event.schedule" in text and "date -u +%H" not in text
+    assert yaml.safe_load(text)["jobs"]["publish"]["timeout-minutes"] >= 60
+    commit = next(s for s in yaml.safe_load(text)["jobs"]["publish"]["steps"] if "Commit" in s.get("name", ""))
+    assert commit.get("if") == "always()" and "git pull --rebase" in commit["run"]
+
+
+def test_gitsync_records_out_sha_after_commit(tmp_path):
+    import subprocess
+    from datetime import date
+    from engine import gitsync, pieces
+    subprocess.run(["git", "init", "-q", "-b", "main", str(tmp_path)], check=True)
+    subprocess.run(["git", "-C", str(tmp_path), "config", "user.email", "t@t"], check=True)
+    subprocess.run(["git", "-C", str(tmp_path), "config", "user.name", "t"], check=True)
+    p = pieces.Piece(id="2026-10-20-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 10, 20))
+    p.status = "uploaded"; p.ids = {"yt_id": "y"}; pieces.save(p, tmp_path)
+    (tmp_path / "out" / p.id).mkdir(parents=True); (tmp_path / "out" / p.id / "reel.mp4").write_bytes(b"mp4")
+    sha = gitsync.commit(tmp_path, "test", push=False)
+    assert sha and pieces.load(p.id, tmp_path).ids["out_sha"] == sha
+    assert gitsync.commit(tmp_path, "again", push=False) == ""                # the sha record was committed inside the first call; nothing left dirty
+    assert subprocess.run(["git", "-C", str(tmp_path), "status", "--porcelain"], capture_output=True, text=True).stdout == ""

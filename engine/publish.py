@@ -9,7 +9,7 @@ import traceback
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from . import digest, instagram, pieces, slots, telegram, threads
+from . import digest, gitsync, instagram, pieces, slots, telegram, threads
 from .config import ROOT
 from .instagram import InstagramError
 from .threads import ThreadsError
@@ -58,6 +58,7 @@ def run(root: Path = ROOT, channel: str = "sglearning", now_utc: datetime | None
         except InstagramError as e:
             problems.append(f"{piece.id}: instagram: {e}")
             pieces.transition(piece, piece.status, f"instagram: {str(e)[:200]}"); pieces.save(piece, root)
+            gitsync.safe_commit(root, f"publish: {piece.id} partial")
             continue
         if not piece.ids.get("threads_id"):
             try:
@@ -73,6 +74,7 @@ def run(root: Path = ROOT, channel: str = "sglearning", now_utc: datetime | None
         if all(piece.ids.get(k) for k in PLATFORM_IDS):
             pieces.save(pieces.transition(piece, "posted"), root)
             posted.append(piece.id)
+        gitsync.safe_commit(root, f"publish: {piece.id} {piece.status}")
     text = f"SG Content publish {channel} {slots.ist(now_utc).strftime('%Y-%m-%d %H:%M')} IST: posted {len(posted)}"
     for pid in posted:
         text += f"\n  + {pid}"

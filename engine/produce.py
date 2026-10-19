@@ -11,7 +11,7 @@ import traceback
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-from . import buffer, digest, pieces, pipeline, slots, telegram
+from . import buffer, digest, gitsync, pieces, pipeline, slots, telegram
 from .config import ROOT
 
 MAX_DEFAULT = 3
@@ -48,6 +48,7 @@ def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFA
             print(f"making {pid}", flush=True)
             piece = pipeline.make(piece, deps, root, dry_run=dry_run)
             made.append((pid, piece.status))
+            gitsync.safe_commit(root, f"produce: {pid} {piece.status}")
             print(f"  -> {piece.status}" + (f": {piece.reasons[-1]}" if piece.reasons else ""), flush=True)
             if piece.status in ("failed-voice", "failed-art"):
                 stopped = piece.status
