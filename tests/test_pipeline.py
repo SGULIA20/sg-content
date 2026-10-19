@@ -134,3 +134,19 @@ def test_myth_short_teases_next_long_when_previous_missing(tmp_path):
     d, calls = deps(tmp_path)
     p = pipeline.make(_piece("short", "arthvan", date(2026, 10, 21)), d, tmp_path)
     assert p.topic["from_long"] == "2026-10-24-arthvan-long" and p.status == "uploaded"
+
+
+def test_make_resumes_from_written_script_without_rewriting(tmp_path):
+    d, calls = deps(tmp_path)
+    p = _piece(); p.script = good_script(); p.facts = FACTS; p.topic = dict(TOPIC); p.status = "failed-voice"; p.writer = "claude"
+    pieces.save(p, tmp_path)
+    q = pipeline.make(p, d, tmp_path)
+    assert calls["research"] == 0 and calls["write"] == 0 and calls["say"] == 3 and q.status == "uploaded"
+
+
+def test_make_voice_api_error_marks_failed_voice(tmp_path):
+    def say_fn(text, voice_id, out_wav):
+        raise voice.VoiceError("429 quota")
+    d, calls = deps(tmp_path, say=say_fn)
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert p.status == "failed-voice" and "429" in p.reasons[-1]

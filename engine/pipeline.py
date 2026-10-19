@@ -11,6 +11,7 @@ from .config import CHANNELS, ROOT, VIDEO
 from .pieces import Piece
 
 TOPIC_TRIES = 3
+RESUMABLE = {"written", "voiced", "drawn", "assembled", "failed-voice", "failed-art", "qa_failed"}
 HANDLE = "@sanjeev_gulia"
 LONG_TARGET_MINUTES = {"sglearning": 15, "arthvan": 20}
 
@@ -117,9 +118,9 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False) -> 
     size = VIDEO[piece.kind]
     out_dir = Path(root) / "out" / piece.id
     out_dir.mkdir(parents=True, exist_ok=True)
-    # 1-4: topic → research → write → gates, up to three topics
-    script = None
-    for attempt in range(TOPIC_TRIES):
+    # 1-4: topic → research → write → gates, up to three topics (skipped when an accepted script already exists: resume)
+    script = piece.script if (piece.script and piece.status in RESUMABLE) else None
+    for attempt in range(TOPIC_TRIES if script is None else 0):
         topic = _pick_topic(piece, deps, root, used)
         if not topic:
             pieces.save(pieces.transition(piece, "failed-topic", "no usable topic (for a mythology Short: its long is not made yet)"), root)
@@ -153,7 +154,7 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False) -> 
         for i, scene in enumerate(script["scenes"]):
             wav = out_dir / "vo" / f"vo{i:02d}.wav"
             lines.append((wav, deps.say(scene["vo"], deps.voice_id, wav)))
-    except voice.VoiceBudget as e:
+    except voice.VoiceError as e:                            # the daily cap, a quota refusal or a dead key: keep the script, retry next run
         pieces.save(pieces.transition(piece, "failed-voice", str(e)), root)
         return piece
     pieces.save(pieces.transition(piece, "voiced"), root)
@@ -163,7 +164,7 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False) -> 
         strip = _source_strip(piece, deps, out_dir, size)
         chips = _label_chips(piece, deps, out_dir)
         thumb = _thumb(piece, deps, out_dir)
-    except art.ImageBudget as e:
+    except art.ImageError as e:
         pieces.save(pieces.transition(piece, "failed-art", str(e)), root)
         return piece
     pieces.save(pieces.transition(piece, "drawn"), root)
