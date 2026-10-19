@@ -4,7 +4,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 from . import pieces, slots, telegram
-from .config import BUDGETS, CHANNELS, ROOT
+from .config import BUDGETS, CHANNELS, ROOT, today_ist
 
 BUFFER_ALERT_DAYS = 2
 TOKEN_ALERT_DAYS = 7
@@ -89,7 +89,7 @@ def alerts(root: Path, day: date) -> list:
 
 
 def status_line(root: Path = ROOT, day: date | None = None) -> str:
-    day = day or date.today()
+    day = day or today_ist()
     buf = buffer_days(root, day)
     state = "paused" if telegram.paused(root) else "running"
     return f"{state}; buffer " + ", ".join(f"{ch} {n}d" for ch, n in buf.items())

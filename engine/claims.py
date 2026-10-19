@@ -8,7 +8,7 @@ from pathlib import Path
 
 import yaml
 
-from .config import CONTENT_DIR
+from .config import CONTENT_DIR, today_ist
 
 UNITS = {
     "ek": 1, "do": 2, "teen": 3, "chaar": 4, "char": 4, "paanch": 5, "panch": 5, "chhe": 6, "che": 6, "chah": 6,
@@ -116,5 +116,5 @@ def match(script_text: str, facts: list, library: list, tolerance: float = 0.005
 
 def load_library(root: Path = CONTENT_DIR, today: date | None = None) -> list:
     entries = yaml.safe_load((Path(root) / "claims.yaml").read_text()) or []
-    today = today or date.today()
+    today = today or today_ist()
     return [e for e in entries if not e.get("valid_until") or date.fromisoformat(str(e["valid_until"])) >= today]

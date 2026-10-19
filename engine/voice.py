@@ -12,7 +12,7 @@ from datetime import date
 from pathlib import Path
 
 from . import gemini, secrets
-from .config import BUDGETS, CACHE_DIR, CONTENT_DIR, LOGS_DIR
+from .config import BUDGETS, CACHE_DIR, CONTENT_DIR, LOGS_DIR, today_ist
 
 MODEL = "gemini-3.8-flash-tts"
 VOICES_URL = "https://generativelanguage.googleapis.com/v1beta/voices"
@@ -55,7 +55,7 @@ def enrol(ref_wav: Path, consent_wav: Path, *, key: str | None = None, display_n
 
 
 def requests_today(budget: Path = BUDGET_FILE, today: date | None = None) -> int:
-    today = today or date.today()
+    today = today or today_ist()
     try:
         return int(json.loads(Path(budget).read_text()).get(today.isoformat(), 0))
     except (FileNotFoundError, ValueError):
@@ -90,7 +90,7 @@ def _audio_from(response: dict) -> bytes | None:
 def say(text: str, voice_id: str, out_wav: Path, *, key: str | None = None, cache_dir: Path = CACHE_DIR / "voice",
         budget: Path = BUDGET_FILE, post=gemini._post, style: str = STYLE, today: date | None = None) -> float:
     """Synthesizes one line into out_wav (24 kHz mono 16-bit) and returns its length in seconds. Cached by voice, style and text."""
-    today = today or date.today()
+    today = today or today_ist()
     out_wav = Path(out_wav)
     cache_dir = Path(cache_dir)
     cache_dir.mkdir(parents=True, exist_ok=True)
@@ -134,7 +134,7 @@ def main(argv=None) -> int:
     if a.enrol:
         vid = enrol(Path(a.enrol[0]), Path(a.enrol[1]), display_name=a.name)
         existing = json.loads(VOICE_FILE.read_text()) if VOICE_FILE.exists() else {}
-        data = {"default": vid, "fallback": existing.get("default") or DEFAULT_IDS[0], "created": date.today().isoformat(), "name": a.name}
+        data = {"default": vid, "fallback": existing.get("default") or DEFAULT_IDS[0], "created": today_ist().isoformat(), "name": a.name}
         VOICE_FILE.parent.mkdir(parents=True, exist_ok=True)
         VOICE_FILE.write_text(json.dumps(data, indent=1) + "\n")
         print(f"voice {vid} written to {VOICE_FILE}")

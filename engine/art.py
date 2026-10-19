@@ -16,7 +16,7 @@ from pathlib import Path
 import yaml
 
 from . import gemini, secrets
-from .config import ASSETS_DIR, BUDGETS, CACHE_DIR, CONTENT_DIR, LOGS_DIR
+from .config import ASSETS_DIR, BUDGETS, CACHE_DIR, CONTENT_DIR, LOGS_DIR, today_ist
 
 MODEL = "gemini-3.1-flash-lite-image"
 INR_PER_IMAGE = {"gemini-3.1-flash-lite-image": 3.0, "gemini-3.1-flash-image": 6.0, "gemini-2.5-flash-image": 3.5}
@@ -43,7 +43,7 @@ def _read(path: Path) -> dict:
 
 
 def spent_today(spend: Path = SPEND_FILE, today: date | None = None) -> float:
-    today = today or date.today()
+    today = today or today_ist()
     return float(_read(spend).get(today.isoformat(), {}).get("inr", 0.0))
 
 
@@ -67,7 +67,7 @@ def _image_from(response: dict) -> bytes | None:
 def paint(prompt: str, out: Path, *, refs: list = (), key: str | None = None, model: str = MODEL, aspect: str = "9:16",
           cache_dir: Path = CACHE_DIR / "art", spend: Path = SPEND_FILE, post=gemini._post, today: date | None = None) -> Path:
     """One picture into `out`. Cached by model, prompt, aspect and reference file names; about ₹3 a call."""
-    today = today or date.today()
+    today = today or today_ist()
     out, cache_dir = Path(out), Path(cache_dir)
     cache_dir.mkdir(parents=True, exist_ok=True)
     tag = hashlib.sha1(f"{model}|{aspect}|{prompt}|{'|'.join(Path(r).name for r in refs)}".encode()).hexdigest()

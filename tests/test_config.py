@@ -23,3 +23,9 @@ def test_video_sizes():
     assert config.VIDEO["short"] == (1080, 1920)
     assert config.VIDEO["long"] == (1920, 1080)
     assert config.VIDEO["fps"] == 30
+
+
+def test_today_ist_crosses_date_line():
+    from datetime import datetime, timezone, date
+    assert config.today_ist(datetime(2026, 10, 19, 22, 30, tzinfo=timezone.utc)) == date(2026, 10, 20)
+    assert config.today_ist(datetime(2026, 10, 19, 12, 0, tzinfo=timezone.utc)) == date(2026, 10, 19)

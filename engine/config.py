@@ -1,5 +1,6 @@
 """Channels, slots, budgets and paths for the SG Content pipeline (spec §1, §3, §6.10)."""
 from dataclasses import dataclass, field
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -49,3 +50,14 @@ CACHE_DIR = ROOT / "cache"
 CONTENT_DIR = ROOT / "content"
 ASSETS_DIR = ROOT / "assets"
 TEMPLATES_DIR = ROOT / "templates"
+
+
+IST = timezone(timedelta(hours=5, minutes=30), name="IST")
+
+
+def today_ist(now: datetime | None = None) -> date:
+    """The founder's calendar day: every daily meter and digest keys on IST, not the machine's clock."""
+    now = now or datetime.now(timezone.utc)
+    if now.tzinfo is None:
+        now = now.replace(tzinfo=timezone.utc)
+    return now.astimezone(IST).date()

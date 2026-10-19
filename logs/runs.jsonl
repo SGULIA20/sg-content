@@ -3,3 +3,4 @@
 {"day": "2026-10-20", "at": "2026-10-19T22:10:56+00:00", "ok": false, "dry_run": true, "made": [["run", "crashed: TypeError: Object of type datetime is not JSON serializable"]], "stopped": ""}
 {"day": "2026-10-20", "at": "2026-10-19T22:13:38+00:00", "ok": false, "dry_run": true, "made": [["run", "crashed: TypeError: Object of type datetime is not JSON serializable"]], "stopped": ""}
 {"day": "2026-10-20", "at": "2026-10-19T22:20:16+00:00", "ok": true, "dry_run": true, "made": [["2026-10-20-sglearning-short", "rejected"]], "stopped": ""}
+{"day": "2026-10-20", "at": "2026-10-19T22:24:12+00:00", "ok": true, "dry_run": true, "made": [["2026-10-20-sglearning-short", "failed-voice"]], "stopped": "failed-voice"}
