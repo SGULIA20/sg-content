@@ -1,0 +1,108 @@
+# Standing facts the scripts may use without a fresh news source (spec §3 step 2, §6.1).
+# Every entry needs number, unit, source_url, source_date. valid_until drops the entry from the library after that day,
+# so a changed rate must be re-sourced from the news. Seeded 19 Oct 2026; VERIFY each URL and value before first production run.
+- id: it-new-regime-rebate
+  text: "New-regime income tax: no tax on income up to Rs 12 lakh (Section 87A rebate), FY 2025-26 onward"
+  number: 1200000
+  unit: INR
+  source_url: https://incometaxindia.gov.in/Pages/tax-information-services.aspx
+  source_date: 2025-02-01
+  valid_until: 2027-03-31
+- id: it-standard-deduction-new
+  text: "Standard deduction for salaried, new regime, Rs 75,000"
+  number: 75000
+  unit: INR
+  source_url: https://incometaxindia.gov.in/Pages/tax-information-services.aspx
+  source_date: 2024-07-23
+  valid_until: 2027-03-31
+- id: it-top-slab-new
+  text: "New-regime top slab 30 % above Rs 24 lakh"
+  number: 30
+  unit: pct
+  source_url: https://incometaxindia.gov.in/Pages/tax-information-services.aspx
+  source_date: 2025-02-01
+  valid_until: 2027-03-31
+- id: it-80c-limit
+  text: "Section 80C deduction limit (old regime) Rs 1,50,000"
+  number: 150000
+  unit: INR
+  source_url: https://incometaxindia.gov.in/Pages/deductions-and-exemptions.aspx
+  source_date: 2014-07-10
+  valid_until: 2027-03-31
+- id: ltcg-equity-rate
+  text: "Long-term capital gains on listed equity taxed at 12.5 %"
+  number: 12.5
+  unit: pct
+  source_url: https://incometaxindia.gov.in/Pages/capital-gains.aspx
+  source_date: 2024-07-23
+  valid_until: 2027-03-31
+- id: ltcg-equity-exemption
+  text: "LTCG on equity exempt up to Rs 1.25 lakh a year"
+  number: 125000
+  unit: INR
+  source_url: https://incometaxindia.gov.in/Pages/capital-gains.aspx
+  source_date: 2024-07-23
+  valid_until: 2027-03-31
+- id: stcg-equity-rate
+  text: "Short-term capital gains on listed equity taxed at 20 %"
+  number: 20
+  unit: pct
+  source_url: https://incometaxindia.gov.in/Pages/capital-gains.aspx
+  source_date: 2024-07-23
+  valid_until: 2027-03-31
+- id: gst-standard-rate
+  text: "GST standard rate 18 % (two-rate structure 5 % and 18 % from 22 Sep 2025)"
+  number: 18
+  unit: pct
+  source_url: https://www.gst.gov.in/
+  source_date: 2025-09-22
+  valid_until: 2027-03-31
+- id: gst-merit-rate
+  text: "GST merit rate 5 %"
+  number: 5
+  unit: pct
+  source_url: https://www.gst.gov.in/
+  source_date: 2025-09-22
+  valid_until: 2027-03-31
+- id: epf-interest
+  text: "EPF interest rate 8.25 % for FY 2024-25"
+  number: 8.25
+  unit: pct
+  source_url: https://www.epfindia.gov.in/
+  source_date: 2025-02-28
+  valid_until: 2026-12-31
+- id: ppf-interest
+  text: "PPF interest rate 7.1 % a year"
+  number: 7.1
+  unit: pct
+  source_url: https://www.nsiindia.gov.in/
+  source_date: 2025-10-01
+  valid_until: 2026-12-31
+- id: dicgc-cover
+  text: "Bank deposit insurance cover Rs 5 lakh per depositor per bank (DICGC)"
+  number: 500000
+  unit: INR
+  source_url: https://www.dicgc.org.in/
+  source_date: 2020-02-04
+  valid_until: 2027-12-31
+- id: crude-import-share
+  text: "India imports about 88 % of the crude oil it uses (PPAC, FY 2024-25)"
+  number: 88
+  unit: pct
+  source_url: https://ppac.gov.in/
+  source_date: 2025-04-30
+  valid_until: 2026-12-31
+- id: sgb-interest
+  text: "Sovereign Gold Bond pays 2.5 % a year interest"
+  number: 2.5
+  unit: pct
+  source_url: https://www.rbi.org.in/
+  source_date: 2023-12-01
+  valid_until: 2027-12-31
+- id: rbi-repo-rate
+  text: "RBI repo rate (VERIFY on the day; expires same day so news must source it)"
+  number: 5.25
+  unit: pct
+  source_url: https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx
+  source_date: 2025-12-05
+  valid_until: 2026-10-19
