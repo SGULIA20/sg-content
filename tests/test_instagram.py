@@ -102,3 +102,7 @@ def test_wait_polls_until_finished():
 def test_wait_gives_up_with_error():
     with pytest.raises(instagram.InstagramError):
         instagram._wait("c1", "t", "reel", sleep=lambda s: None, call=lambda *a, **k: {"status_code": "IN_PROGRESS"}, max_polls=2, poll_s=0)
+
+
+def test_api_host_matches_instagram_login_tokens():
+    assert instagram.API.startswith("https://graph.instagram.com/")

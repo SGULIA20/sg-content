@@ -89,3 +89,17 @@ def test_access_token_uses_channel_refresh_token():
 
     env = {"YT_CLIENT_ID": "cid", "YT_CLIENT_SECRET": "sec", "YT_ARTHVAN_REFRESH_TOKEN": "rt-a", "YT_SGLEARNING_REFRESH_TOKEN": "rt-s"}
     assert youtube.access_token("arthvan", env, post=post) == "at" and seen["refresh_token"] == "rt-a"
+
+
+def test_description_hashtags_come_from_allowed_list_not_tags():
+    p = _piece(); p.script["captions"]["youtube"]["tags"] = ["bjp", "modi"]
+    d = youtube.metadata(p, datetime(2026, 10, 20, 14, 30, tzinfo=timezone.utc), {})["snippet"]["description"]
+    assert "#bjp" not in d and "#Finance" in d
+
+
+def test_go_public_updates_privacy():
+    seen = []
+    def call(method, url, token, json_body=None, data=None, headers=None):
+        seen.append((method, url, json_body)); return 200, {}, {"id": "v1"}
+    assert youtube.go_public("tok", "v1", call=call) is True
+    assert seen[0][0] == "PUT" and seen[0][2]["status"]["privacyStatus"] == "public" and seen[0][2]["id"] == "v1"

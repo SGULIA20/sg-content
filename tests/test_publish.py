@@ -72,3 +72,14 @@ def test_threads_failure_leaves_piece_uploaded_with_reason(tmp_path):
 def test_threads_text_uses_caption_builder(tmp_path):
     p = _seed(tmp_path, "2026-10-20-sglearning-short", "sglearning", "short", date(2026, 10, 20))
     assert publish.threads_text(p) == "t\n\n#A #B"
+
+
+def test_due_retries_recent_days_with_missing_ids(tmp_path):
+    _seed(tmp_path, "2026-10-18-sglearning-short", "sglearning", "short", date(2026, 10, 18), ids={"ig_reel_id": "r"})
+    _seed(tmp_path, "2026-10-10-sglearning-short", "sglearning", "short", date(2026, 10, 10))
+    assert [p.id for p in publish.due(tmp_path, NOW, "sglearning")] == ["2026-10-18-sglearning-short"]
+
+
+def test_due_skips_unlisted_day1_pieces(tmp_path):
+    _seed(tmp_path, "2026-10-20-sglearning-short", "sglearning", "short", date(2026, 10, 20), ids={"unlisted": True})
+    assert publish.due(tmp_path, NOW, "sglearning") == []

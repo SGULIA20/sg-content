@@ -90,17 +90,28 @@ def _visual_for(piece: Piece, i: int, scene: dict, deps: Deps, out_dir: Path, si
         got = deps.commons(v.get("prompt", ""), out_dir / "photos")
         if got:
             piece.topic.setdefault("credits", []).append(got["credit"])
+            scene["credit"] = got["credit"]
             shutil.copy(got["path"], out)
             return out
     aspect = "9:16" if size[1] > size[0] else "16:9"
     return deps.paint(art.style_prompt(piece.channel, v.get("prompt") or piece.script["hook"]), out, aspect=aspect)
 
 
-def _source_strip(piece: Piece, deps: Deps, out_dir: Path, size: tuple) -> Path | None:
+def _source_strips(piece: Piece, deps: Deps, out_dir: Path, size: tuple) -> dict:
+    """One strip per distinct source actually used; keyed by fact index so each scene shows its own source."""
     if piece.channel != "sglearning" or not piece.facts:
-        return None
-    f = piece.facts[0]
-    return deps.render_card("source", {"name": f.get("source_name", "Source"), "date": f.get("source_date", "")}, out_dir / "source.png", (size[0], 120))
+        return {}
+    strips, by_name = {}, {}
+    for sc in piece.script["scenes"]:
+        for i in sc.get("facts_used", []):
+            if i in strips or i >= len(piece.facts):
+                continue
+            f = piece.facts[i]
+            name = f.get("source_name", "Source")
+            if name not in by_name:
+                by_name[name] = deps.render_card("source", {"name": name, "date": f.get("source_date", "")}, out_dir / f"source-{len(by_name)}.png", (size[0], 120))
+            strips[i] = by_name[name]
+    return strips
 
 
 def _label_chips(piece: Piece, deps: Deps, out_dir: Path) -> dict:
@@ -174,8 +185,10 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False) -> 
     # 6-7: pictures and cards
     try:
         visuals = [_visual_for(piece, i, sc, deps, out_dir, size) for i, sc in enumerate(script["scenes"])]
-        strip = _source_strip(piece, deps, out_dir, size)
+        strips = _source_strips(piece, deps, out_dir, size)
         chips = _label_chips(piece, deps, out_dir)
+        credits = {i: deps.render_card("source", {"name": sc["credit"], "date": "photo"}, out_dir / f"credit-{i}.png", (size[0], 120))
+                   for i, sc in enumerate(script["scenes"]) if sc.get("credit")}
         thumb = _thumb(piece, deps, out_dir)
     except art.ImageError as e:
         pieces.save(pieces.transition(piece, "failed-art", str(e)), root)
@@ -184,7 +197,7 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False) -> 
     # 8: assemble
     from . import music
     bed = music.bed("calm" if piece.channel == "sglearning" else "epic", sum(d for _w, d in lines) + 5)
-    video = deps.build(piece, lines, visuals, size, out_dir, music=bed, source_strip=strip, label_chips=chips)
+    video = deps.build(piece, lines, visuals, size, out_dir, music=bed, source_strips=strips, label_chips=chips, credits=credits)
     if piece.kind == "short":
         shutil.copy(video, out_dir / "story.mp4")
         if script.get("carousel"):
@@ -228,10 +241,12 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
         meta = youtube.metadata(piece, slots.publish_at(piece.channel, piece.kind, piece.publish_day), env or os.environ)
         vid = youtube.upload(token, video, meta)
         youtube.set_thumbnail(token, vid, thumb)
+        if (env or os.environ).get("UNLISTED_DAY1") == "1":
+            piece.ids["unlisted"] = True
         return vid
 
     return Deps(topic=topic_fn, research=lambda topic, ch: research.verify_urls(research.fact_sheet(topic, ch)), write=writer.write, say=voice.say, paint=art.paint, avatar=art.avatar,
                 render_card=cards.render, build=assemble.build, qa=qa.report, upload=upload_fn,
                 lint=lambda piece, prior: lint.check_script(piece, banned, prior) + lint.check_captions(piece, hashtags),
-                claims_check=lambda piece: claims.match(lint.script_text(piece), piece.facts, library),
+                claims_check=lambda piece: claims.match(lint.all_text(piece), piece.facts, library),
                 commons=art.commons_photo, library=library, hashtags=hashtags, voice_id=default_voice)

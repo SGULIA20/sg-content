@@ -176,3 +176,40 @@ def test_make_all_research_fails_marks_failed_research(tmp_path):
     d, calls = deps(tmp_path, research=research_fn)
     p = pipeline.make(_piece(), d, tmp_path)
     assert p.status == "failed-research" and calls["write"] == 0
+
+
+def test_produce_keeps_resumable_status(tmp_path, monkeypatch):
+    from engine import produce
+    seen = {}
+    p = _piece(); p.script = good_script(); p.facts = FACTS; p.topic = dict(TOPIC); p.status = "failed-voice"
+    pieces.save(p, tmp_path)
+    d, calls = deps(tmp_path)
+    produce.run(tmp_path, date(2026, 10, 20), max_pieces=1, dry_run=True, only={"sglearning:short"}, deps=d, notify=lambda t: True)
+    assert calls["write"] == 0 and calls["say"] == 3
+
+
+def test_source_strip_follows_each_scenes_fact(tmp_path):
+    d, calls = deps(tmp_path)
+    rendered = []
+    def card_fn(kind, data, out, size):
+        rendered.append((kind, data.get("name"))); Path(out).parent.mkdir(parents=True, exist_ok=True); Path(out).write_bytes(b"png"); return Path(out)
+    d.render_card = card_fn
+    p = _piece(); p.facts = [dict(FACTS[0], source_name="ET"), dict(FACTS[1], source_name="PPAC")]
+    pipeline.make(p, d, tmp_path)
+    assert {n for k, n in rendered if k == "source"} == {"ET", "PPAC"}
+
+
+def test_commons_credit_reaches_description_and_scene(tmp_path):
+    d, calls = deps(tmp_path)
+    def commons(q, out):
+        Path(out).mkdir(parents=True, exist_ok=True); (Path(out) / "x.jpg").write_bytes(b"j")
+        return {"path": Path(out) / "x.jpg", "credit": "Photographer, CC BY-SA 4.0, Wikimedia Commons", "title": "File:x.jpg", "url": "u"}
+    d.commons = commons
+    def write_fn(piece, sheet, library, hashtags):
+        s = good_script(); s["scenes"][2]["visual"] = {"type": "photo", "prompt": "Dwarka", "card": None}; return {"script": s, "writer": "claude", "note": ""}
+    d.write = write_fn
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert p.script["scenes"][2].get("credit", "").startswith("Photographer")
+    from engine import youtube
+    from datetime import datetime, timezone
+    assert "Photos:" in youtube.metadata(p, datetime(2026, 10, 20, 14, 30, tzinfo=timezone.utc), {})["snippet"]["description"]

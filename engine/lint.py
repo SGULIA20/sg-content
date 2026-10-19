@@ -20,9 +20,14 @@ PHONE = re.compile(r"(\+?\d[\d\s\-]{8,}\d)")
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+\.[\w.]+")
 
 
+_BANNED = None
+
+
 def load_lists(root: Path = CONTENT_DIR) -> tuple:
+    global _BANNED
     banned = yaml.safe_load((Path(root) / "banned.yaml").read_text())
     tags = yaml.safe_load((Path(root) / "hashtags.yaml").read_text())
+    _BANNED = banned
     return banned, tags
 
 
@@ -42,14 +47,29 @@ def script_text(piece: Piece) -> str:
     return " ".join([s.get("hook", "")] + [sc.get("vo", "") for sc in s.get("scenes", [])] + [s.get("end_question", "")])
 
 
+def _phrase_re(phrase: str) -> re.Pattern:
+    """Whole-phrase match: 'modi' must not hit 'commodity'. Word characters include Devanagari."""
+    return re.compile(r"(?<![\w\u0900-\u097F])" + re.escape(phrase.strip().lower()) + r"(?![\w\u0900-\u097F])", re.IGNORECASE)
+
+
 def _banned_hits(text: str, banned: dict, sections: list) -> list:
-    low = text.lower()
     out = []
     for section in sections:
         for phrase in banned.get(section, []):
-            if phrase.lower() in low:
+            if _phrase_re(phrase).search(text):
                 out.append(f"{section}: {phrase.strip()}")
     return out
+
+
+def all_text(piece: Piece) -> str:
+    """Everything the audience can read: script, captions, tags, cards (gates run over all of it)."""
+    s = piece.script or {}
+    c = s.get("captions", {})
+    yt, ig, th = c.get("youtube", {}), c.get("instagram", {}), c.get("threads", {})
+    cards = [f"{x.get('big_number', '')} {x.get('line', '')}" for x in s.get("cards", [])]
+    cards += [f"{v['card'].get('big_number', '')} {v['card'].get('line', '')}" for v in (sc.get("visual") or {} for sc in s.get("scenes", [])) if v.get("card")]
+    return " \n ".join([script_text(piece), yt.get("title", ""), yt.get("description", ""), " ".join(yt.get("tags", [])),
+                        ig.get("caption", ""), th.get("text", ""), *cards])
 
 
 def check_script(piece: Piece, banned: dict, prior_scripts: list) -> list:
@@ -89,6 +109,9 @@ def check_captions(piece: Piece, hashtags: dict) -> list:
     c = (piece.script or {}).get("captions", {})
     yt, ig, th = c.get("youtube", {}), c.get("instagram", {}), c.get("threads", {})
     allowed = hashtags.get(piece.channel, {})
+    banned = load_lists()[0] if _BANNED is None else _BANNED
+    public = all_text(piece)[len(script_text(piece)):]
+    reasons += _banned_hits(public, banned, ["politics", "communal", "advice"] + (["myth_forbidden"] if piece.channel == "arthvan" else []))
     if len(yt.get("title", "")) > TITLE_MAX:
         reasons.append(f"title: {len(yt['title'])} chars, max {TITLE_MAX}")
     if len(ig.get("caption", "")) > IG_CAPTION_MAX:

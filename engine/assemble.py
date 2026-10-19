@@ -88,19 +88,27 @@ def cue_pngs(cues: list, size: tuple, out_dir: Path) -> list:
     return out
 
 
-def _overlays_for(piece: Piece, i: int, size: tuple, source_strip: Path | None, label_chips: dict) -> list:
+def _overlays_for(piece: Piece, i: int, size: tuple, source_strips, label_chips: dict, credits: dict | None = None) -> list:
     w, h = size
     scene = piece.script["scenes"][i]
     out = []
-    if piece.channel == "sglearning" and source_strip and scene.get("facts_used"):
-        out.append((source_strip, 0, int(h * 0.64) if h > w else h - 120 - 220))
+    strip_y = int(h * 0.64) if h > w else h - 120 - 220
+    if piece.channel == "sglearning" and source_strips and scene.get("facts_used"):
+        if isinstance(source_strips, dict):
+            strip = next((source_strips[j] for j in scene["facts_used"] if j in source_strips), None)
+        else:
+            strip = source_strips
+        if strip:
+            out.append((strip, 0, strip_y))
+    if credits and i in credits:
+        out.append((credits[i], 0, strip_y))
     if piece.channel == "arthvan" and scene.get("label") in label_chips:
         out.append((label_chips[scene["label"]], w - 400 - 40, 40))
     return out
 
 
 def build(piece: Piece, lines: list, visuals: list, size: tuple, out_dir: Path, music: Path | None = None,
-          source_strip: Path | None = None, label_chips: dict | None = None) -> Path:
+          source_strip: Path | None = None, label_chips: dict | None = None, source_strips: dict | None = None, credits: dict | None = None) -> Path:
     """lines: [(wav, seconds)] and visuals: [png] in scene order. Writes reel.mp4 (short) or long.mp4 into out_dir, sets piece.timings."""
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -115,7 +123,7 @@ def build(piece: Piece, lines: list, visuals: list, size: tuple, out_dir: Path, 
     for i, (img, dur, (wav, d), start, scene) in enumerate(zip(visuals, durations, lines, starts, piece.script["scenes"])):
         cues = captions.split(scene["vo"], d)
         all_cues += captions.offset(cues, start)
-        overlays = _overlays_for(piece, i, size, source_strip, label_chips)
+        overlays = _overlays_for(piece, i, size, source_strips if source_strips is not None else source_strip, label_chips, credits)
         overlays += [(png, 0, band_y, s, e) for png, s, e in cue_pngs(cues, size, out_dir / "cues")]
         clips.append(scene_clip(img, dur, size, out_dir / f"scene{i:02d}.mp4", overlays=overlays))
     (out_dir / "captions.ass").write_text(captions.ass(all_cues, size))            # sidecar for upload or review

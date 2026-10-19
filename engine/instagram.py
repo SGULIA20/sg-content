@@ -13,7 +13,7 @@ from . import pieces, secrets
 from .config import ROOT
 from .pieces import Piece
 
-API = "https://graph.facebook.com/v21.0"
+API = "https://graph.instagram.com/v25.0"          # Instagram API with Instagram Login (same tokens as arthvan-media)
 REFRESH_URL = "https://graph.instagram.com/refresh_access_token"
 DEFAULT_REPO = "SGULIA20/sg-content"
 THUMB_OFFSET_MS = 2000

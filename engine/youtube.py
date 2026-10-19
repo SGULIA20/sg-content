@@ -77,6 +77,14 @@ def _sources(piece: Piece) -> list:
     return lines
 
 
+def _allowed_hashtags(channel: str) -> list:
+    try:
+        from .lint import load_lists
+        return list(load_lists()[1].get(channel, {}).get("youtube", []))[:5]
+    except Exception:
+        return []
+
+
 def metadata(piece: Piece, publish_at_utc: datetime, env=None) -> dict:
     env = {} if env is None else env
     yt = (piece.script or {}).get("captions", {}).get("youtube", {})
@@ -95,7 +103,10 @@ def metadata(piece: Piece, publish_at_utc: datetime, env=None) -> dict:
         parts.append("Sources:\n" + "\n".join(sources))
     if piece.channel == "sglearning":
         parts.append(f"{DISCLAIMER}. Yeh video sirf samjhaane ke liye hai; koi bhi faisla apne advisor se pooch kar lijiye.")
-    parts.append(" ".join(f"#{t.lstrip('#')}" for t in yt.get("tags", [])[:5]))
+    credits = sorted({sc["credit"] for sc in (piece.script or {}).get("scenes", []) if sc.get("credit")})
+    if credits:
+        parts.append("Photos:\n" + "\n".join(credits))
+    parts.append(" ".join(_allowed_hashtags(piece.channel)))
     description = "\n\n".join(p for p in parts if p)
     tags = [t.lstrip("#") for t in yt.get("tags", [])][:MAX_TAGS]
     status = {"privacyStatus": "private", "publishAt": publish_at_utc.strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -125,3 +136,34 @@ def set_thumbnail(token: str, video_id: str, jpg: Path, call=call) -> bool:
         return True
     print(f"thumbnail not set for {video_id} ({status}): {secrets.scrub(json.dumps(body))[:120]}", flush=True)
     return False
+
+
+VIDEOS_URL = "https://www.googleapis.com/youtube/v3/videos?part=status"
+
+
+def go_public(token: str, video_id: str, call=call) -> bool:
+    """Flips a first-day unlisted video to public (videos.update, part=status)."""
+    status, _h, body = call("PUT", VIDEOS_URL, token, json_body={"id": video_id, "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}})
+    return status in (200, 201)
+
+
+def main(argv=None) -> int:
+    import argparse
+    from . import pieces
+    ap = argparse.ArgumentParser(description="python -m engine.youtube --go-public   makes every first-day unlisted video public")
+    ap.add_argument("--go-public", action="store_true")
+    a = ap.parse_args(argv)
+    if not a.go_public:
+        ap.print_help(); return 1
+    done = 0
+    for p in pieces.list_all():
+        if p.ids.get("unlisted") and p.ids.get("yt_id"):
+            if go_public(access_token(p.channel), p.ids["yt_id"]):
+                p.ids.pop("unlisted"); pieces.save(p); done += 1
+    print(f"{done} video(s) made public")
+    return 0
+
+
+if __name__ == "__main__":
+    import sys
+    sys.exit(main())

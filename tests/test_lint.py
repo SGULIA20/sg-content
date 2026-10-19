@@ -129,3 +129,26 @@ def test_load_lists_reads_content_yaml():
     banned, tags = lint.load_lists()
     assert set(banned) >= {"politics", "communal", "advice", "myth_forbidden"}
     assert len(tags["sglearning"]["instagram"]) >= 10 and len(tags["arthvan"]["instagram"]) >= 10
+
+
+def test_banned_matches_whole_words_only():
+    assert not any(r.startswith("politics") for r in lint.check_script(piece_with("Commodity prices badh gaye " + _words(140)), BANNED, []))
+    assert any(r.startswith("politics") for r in lint.check_script(piece_with("Modi ne kaha " + _words(140)), BANNED, []))
+
+
+def test_captions_and_cards_are_checked_for_banned_and_numbers():
+    p = piece_with(_words(140))
+    p.script["captions"]["youtube"]["title"] = "Reliance kharid lo: Modi ka plan"
+    p.script["captions"]["youtube"]["tags"] = ["bjp"]
+    p.script["cards"] = [{"big_number": "₹5 lakh crore", "line": "guaranteed return", "source": "x"}]
+    reasons = lint.check_captions(p, HASHTAGS)
+    assert any(r.startswith("advice") for r in reasons) and any(r.startswith("politics") for r in reasons)
+    assert "₹5 lakh crore" in lint.all_text(p) and "guaranteed return" in lint.all_text(p)
+
+
+def test_real_banned_list_has_no_bare_conversion_and_catches_variants():
+    banned, _ = lint.load_lists()
+    text = "FD conversion rate acha hai, " + _words(140)
+    assert not any(r.startswith("communal") for r in lint.check_script(piece_with(text), banned, []))
+    for bad in ("buy karo", "sell karo", "guarantee hai 20% return", "pakka munafa", "Nirmala Sitharaman"):
+        assert lint.check_script(piece_with(bad + " " + _words(140)), banned, []), bad

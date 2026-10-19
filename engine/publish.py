@@ -6,7 +6,7 @@ import argparse
 import os
 import sys
 import traceback
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from . import digest, instagram, pieces, slots, telegram, threads
@@ -15,6 +15,7 @@ from .instagram import InstagramError
 from .threads import ThreadsError
 
 PLATFORM_IDS = ("ig_reel_id", "ig_story_id", "threads_id")
+RETRY_DAYS = 3
 
 
 def due(root: Path, now_utc: datetime, channel: str) -> list:
@@ -23,8 +24,13 @@ def due(root: Path, now_utc: datetime, channel: str) -> list:
     if not slots.ig_slot_ok(now_ist.replace(tzinfo=None)):
         return []
     out = []
+    today = now_ist.date()
     for p in pieces.list_all(root):
-        if p.channel != channel or p.kind != "short" or p.status != "uploaded" or p.publish_day != now_ist.date():
+        if p.channel != channel or p.kind != "short" or p.status != "uploaded":
+            continue
+        if not (today - timedelta(days=RETRY_DAYS) <= p.publish_day <= today):      # today's slot, or a recent day whose post failed
+            continue
+        if p.ids.get("unlisted"):                                                  # first-day unlisted uploads stay off Instagram and Threads
             continue
         missing = [k for k in PLATFORM_IDS if not p.ids.get(k)]
         if (p.script or {}).get("carousel") and not p.ids.get("ig_post_id"):

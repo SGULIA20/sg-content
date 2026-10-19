@@ -41,7 +41,8 @@ def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFA
             piece = pieces.load(pid, root) or pieces.Piece(id=pid, channel=channel, kind=kind, publish_day=day)
             if piece.status in buffer.DONE:
                 continue
-            piece.status = "planned"
+            if not (piece.script and piece.status in pipeline.RESUMABLE):
+                piece.status = "planned"                                   # a parked piece keeps its script and resumes
             if kind == "long" and long_minutes:
                 pipeline.LONG_TARGET_MINUTES[channel] = long_minutes
             print(f"making {pid}", flush=True)
