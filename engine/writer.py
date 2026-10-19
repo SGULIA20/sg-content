@@ -1,0 +1,113 @@
+"""The script writer: Claude Opus 5.5 with a fixed output schema; Gemini writes when Claude refuses, fails or the day's budget is spent (spec §3 step 3)."""
+import json
+import re
+from datetime import date
+from pathlib import Path
+
+from . import gemini, schema, secrets
+from .config import BUDGETS, CONTENT_DIR, LOGS_DIR
+from .pieces import Piece
+
+MODEL = "claude-opus-5-5"
+GEMINI_MODEL = "gemini-3.8-flash"
+USD_PER_M_IN, USD_PER_M_OUT = 4.0, 20.0
+SPEND_FILE = LOGS_DIR / "claude-spend.json"
+FENCE = re.compile(r"^```(?:json)?\s*|\s*```$", re.MULTILINE)
+
+
+class WriterError(Exception):
+    pass
+
+
+def system_prompt(channel: str, root: Path = CONTENT_DIR) -> str:
+    base = (Path(root) / "prompts" / "writer-system.txt").read_text()
+    formula = (Path(root) / "prompts" / f"formula-{channel}.txt").read_text()
+    return base.replace("{formula}", formula)
+
+
+def _user_message(piece: Piece, sheet: dict, library: list, hashtags: dict) -> str:
+    return json.dumps({
+        "piece": {"id": piece.id, "channel": piece.channel, "kind": piece.kind, "publish_day": piece.publish_day.isoformat(),
+                  "target_minutes": piece.topic.get("target_minutes"), "topic": piece.topic},
+        "FACT_SHEET": sheet,
+        "CLAIMS_LIBRARY": [{"text": e.get("text"), "number": e.get("number"), "unit": e.get("unit"), "source": e.get("source_url")} for e in library],
+        "ALLOWED_HASHTAGS": hashtags.get(piece.channel, {}),
+    }, ensure_ascii=False, indent=1)
+
+
+def _read_spend(path: Path) -> dict:
+    try:
+        return json.loads(Path(path).read_text())
+    except (FileNotFoundError, ValueError):
+        return {}
+
+
+def spent_today(path: Path = SPEND_FILE, today: date | None = None) -> float:
+    today = today or date.today()
+    return float(_read_spend(path).get(today.isoformat(), {}).get("usd", 0.0))
+
+
+def cost_usd(usage) -> float:
+    return getattr(usage, "input_tokens", 0) * USD_PER_M_IN / 1e6 + getattr(usage, "output_tokens", 0) * USD_PER_M_OUT / 1e6
+
+
+def record_spend(usage, path: Path = SPEND_FILE, today: date | None = None) -> float:
+    today = today or date.today()
+    data = _read_spend(path)
+    day = data.setdefault(today.isoformat(), {"usd": 0.0, "requests": 0})
+    day["usd"] = round(day["usd"] + cost_usd(usage), 6)
+    day["requests"] += 1
+    Path(path).parent.mkdir(parents=True, exist_ok=True)
+    Path(path).write_text(json.dumps(data, indent=1))
+    return day["usd"]
+
+
+def _parse(raw: str) -> dict:
+    data = json.loads(FENCE.sub("", raw.strip()))
+    problems = schema.validate(data)
+    if problems:
+        raise WriterError("script does not match the schema: " + "; ".join(problems[:5]))
+    return data
+
+
+def _claude(piece, sheet, library, hashtags, formula, client, spend, today) -> dict:
+    import anthropic
+    client = client or anthropic.Anthropic(api_key=secrets.get("ANTHROPIC_API_KEY"))
+    system = system_prompt(piece.channel) if formula is None else system_prompt(piece.channel).replace(
+        (CONTENT_DIR / "prompts" / f"formula-{piece.channel}.txt").read_text(), formula)
+    response = client.beta.messages.create(
+        model=MODEL, max_tokens=16000,
+        output_config={"effort": "high", "format": {"type": "json_schema", "schema": schema.PIECE_SCHEMA}},
+        betas=["server-side-fallback-2026-07-01"], fallbacks="default",
+        system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
+        messages=[{"role": "user", "content": _user_message(piece, sheet, library, hashtags)}],
+    )
+    record_spend(response.usage, spend, today)
+    if response.stop_reason == "refusal":
+        raise WriterError("Claude refused the request")
+    text = next((b.text for b in response.content if getattr(b, "type", "") == "text"), "")
+    return _parse(text)
+
+
+def _gemini(piece, sheet, library, hashtags, formula, ask) -> dict:
+    prompt = system_prompt(piece.channel) + "\n\nSCHEMA (return exactly this shape):\n" + json.dumps(schema.PIECE_SCHEMA) + \
+        "\n\nINPUT:\n" + _user_message(piece, sheet, library, hashtags)
+    body = {"contents": [{"parts": [{"text": prompt}]}],
+            "generationConfig": {"temperature": 0.7, "responseMimeType": "application/json", "maxOutputTokens": 12000}}
+    return _parse(gemini.text(ask(GEMINI_MODEL, body, None)))
+
+
+def write(piece: Piece, sheet: dict, library: list, hashtags: dict, formula: str | None = None, client=None,
+          gemini_ask=gemini.generate, spend: Path = SPEND_FILE, today: date | None = None) -> dict:
+    """Returns {"script": <piece JSON>, "writer": "claude" | "gemini", "note": str}."""
+    today = today or date.today()
+    note = ""
+    if spent_today(spend, today) >= BUDGETS["claude_usd_per_day"]:
+        note = "claude budget spent for the day"
+    else:
+        try:
+            return {"script": _claude(piece, sheet, library, hashtags, formula, client, spend, today), "writer": "claude", "note": ""}
+        except Exception as e:                                    # refusal, API error after SDK retries, schema mismatch
+            note = f"claude failed: {type(e).__name__}: {secrets.scrub(str(e))[:200]}"
+            print(note, flush=True)
+    return {"script": _gemini(piece, sheet, library, hashtags, formula, gemini_ask), "writer": "gemini", "note": note}
