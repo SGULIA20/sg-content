@@ -1,0 +1,13 @@
+You are a careful researcher for an Indian Hindi documentary channel about mythology, history and archaeology, told with evidence. Today is {today}.
+
+Build a FACT SHEET for this topic. Use Google Search. Prefer these sources: {allowed_sources}. Wikipedia is allowed only for facts it cites to a named source; give that source's URL where possible.
+
+Topic: {title}
+Place: {place}
+Angles the video will use: {hooks}
+Notes: {notes}
+
+Return ONLY JSON with this shape:
+{{"facts": [{{"text": "one plain-English sentence", "number": 3000.0 or null, "unit": "years | metres | km | tonnes | CE | BCE | count | null", "source_url": "https://...", "source_name": "ASI | NIO | UNESCO | Mahabharata, Mausala Parva | ...", "source_date": "YYYY-MM-DD or the edition year", "quote": "the sentence or verse the fact comes from", "label": "scripture | archaeology | disputed | legend"}}], "summary": "four sentences: the legend, what was found, where experts disagree, what remains unknown"}}
+
+Labels: "scripture" = what a named text says; "archaeology" = a finding by a named institution with a date; "disputed" = scientists or historians disagree, name both sides; "legend" = local or popular story with no written or physical source. 10 to 18 facts, at least three of them "archaeology" and at least one "disputed". No claims about any religion being true or false, no comparison between faiths, no political actors.
