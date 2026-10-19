@@ -1,0 +1,58 @@
+name: publish
+
+on:
+  schedule:
+    - cron: '30 7 * * *'      # 13:00 India: Learning with SG Reel + Story + Threads
+    - cron: '0 16 * * 1,3,5'  # 21:30 India Mon/Wed/Fri: SG-MYTH-WORLD Reel + Story + Threads
+  workflow_dispatch:
+    inputs:
+      channel:
+        description: 'which channel slot to run now'
+        type: choice
+        options: [sglearning, arthvan]
+        default: sglearning
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install Python packages
+        run: pip install -r requirements.txt
+      - name: Pick the channel for this slot
+        id: slot
+        run: |
+          if [ -n "${{ github.event.inputs.channel }}" ]; then echo "channel=${{ github.event.inputs.channel }}" >> "$GITHUB_OUTPUT"
+          elif [ "$(date -u +%H)" = "07" ]; then echo "channel=sglearning" >> "$GITHUB_OUTPUT"
+          else echo "channel=arthvan" >> "$GITHUB_OUTPUT"; fi
+      - name: Git identity
+        run: |
+          git config user.name "sg-content-bot"
+          git config user.email "sg-content-bot@users.noreply.github.com"
+      - name: Post what is due
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m engine.publish --channel ${{ steps.slot.outputs.channel }}
+      - name: Commit piece records and logs
+        run: |
+          git add -A pieces logs || true
+          git diff --cached --quiet || (git commit -m "publish: $(date -u +%Y-%m-%dT%H:%M) [skip ci]" && git push)

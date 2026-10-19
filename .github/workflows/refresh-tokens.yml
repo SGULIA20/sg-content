@@ -1,0 +1,37 @@
+name: refresh-tokens
+
+on:
+  schedule:
+    - cron: '0 6 1 * *'   # the 1st of every month: Instagram and Threads long-lived tokens last 60 days
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Git identity
+        run: |
+          git config user.name "sg-content-bot"
+          git config user.email "sg-content-bot@users.noreply.github.com"
+      - name: Refresh and store
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ACTIONS_PAT: ${{ secrets.ACTIONS_PAT }}
+        run: python -m engine.tokens --refresh
+      - run: |
+          git add -A logs || true
+          git diff --cached --quiet || (git commit -m "token expiry dates [skip ci]" && git push)

@@ -1,0 +1,70 @@
+name: produce
+
+on:
+  schedule:
+    - cron: '0 2 * * *'   # 03:00 Lagos, 07:30 India: fill the buffer for the coming days
+    - cron: '0 3 * * *'   # safety net one hour later; the engine never remakes a finished piece
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'render only, no upload'
+        type: boolean
+        default: false
+      max:
+        description: 'pieces to make this run'
+        default: '3'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: produce
+  cancel-in-progress: false
+
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install ffmpeg and fonts
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-core
+      - name: Install Python packages
+        run: pip install -r requirements.txt
+      - name: Install Chromium
+        run: python -m playwright install --with-deps chromium
+      - name: Unit tests
+        run: python -m pytest -q -m "not slow"
+      - name: Git identity
+        run: |
+          git config user.name "sg-content-bot"
+          git config user.email "sg-content-bot@users.noreply.github.com"
+      - name: Make what the buffer needs
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
+          YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          ARGS="--max ${{ github.event.inputs.max || '3' }}"
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          python -m engine.produce $ARGS
+      - name: Prune old media and record the commit the Shorts live at
+        run: python scripts/prune_out.py --days 14
+      - name: Commit pieces, media and logs
+        run: |
+          git add -A pieces out logs content/voice.json || true
+          git diff --cached --quiet || git commit -m "produce: $(date -u +%Y-%m-%d) [skip ci]"
+          git push
+          python scripts/prune_out.py --record-sha "$(git rev-parse HEAD)"
+          git add -A pieces && (git diff --cached --quiet || (git commit -m "produce: record media sha [skip ci]" && git push))
