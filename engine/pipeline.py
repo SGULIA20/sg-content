@@ -207,10 +207,12 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
         return piece
     # 5: voice
     lines = []
+    voice_id = voice.pick(piece.id) if voice.pick else deps.voice_id
+    piece.topic["voice"] = voice_id
     try:
         for i, scene in enumerate(script["scenes"]):
             wav = out_dir / "vo" / f"vo{i:02d}.wav"
-            lines.append((wav, deps.say(scene["vo"], deps.voice_id, wav)))
+            lines.append((wav, deps.say(scene["vo"], voice_id, wav)))
     except voice.VoiceError as e:                            # the daily cap, a quota refusal or a dead key: keep the script, retry next run
         pieces.save(pieces.transition(piece, "failed-voice", str(e)), root)
         return piece

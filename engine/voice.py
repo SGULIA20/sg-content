@@ -39,6 +39,18 @@ def voice_ids(root: Path = CONTENT_DIR) -> tuple:
     return d.get("default", DEFAULT_IDS[0]), d.get("fallback", DEFAULT_IDS[1])
 
 
+def pick(piece_id: str, root: Path = CONTENT_DIR) -> str:
+    """One voice per piece from the pool in content/voice.json, chosen by the piece id so a resumed piece keeps its voice."""
+    path = Path(root) / "voice.json"
+    if not path.exists():
+        return DEFAULT_IDS[0]
+    d = json.loads(path.read_text())
+    pool = [v for v in d.get("pool", []) if v]
+    if not pool:
+        return d.get("default", DEFAULT_IDS[0])
+    return pool[int(hashlib.sha1(piece_id.encode()).hexdigest(), 16) % len(pool)]
+
+
 def _b64(path: Path) -> str:
     return base64.b64encode(Path(path).read_bytes()).decode()
 
@@ -77,6 +89,25 @@ def _seconds(wav: Path) -> float:
         return w.getnframes() / w.getframerate()
 
 
+def _pcm_from(response: dict) -> bytes | None:
+    for c in response.get("candidates", []):
+        for p in (c.get("content") or {}).get("parts", []):
+            blob = p.get("inlineData") or p.get("inline_data")
+            if blob and blob.get("data"):
+                return base64.b64decode(blob["data"])
+    return None
+
+
+def _pcm_to_wav(pcm: bytes | None, rate: int = 24000) -> bytes | None:
+    if not pcm:
+        return None
+    import io
+    buf = io.BytesIO()
+    with wave.open(buf, "wb") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(rate); w.writeframes(pcm)
+    return buf.getvalue()
+
+
 def _audio_from(response: dict) -> bytes | None:
     for step in response.get("steps", []):
         if step.get("type") == "model_output":
@@ -99,16 +130,24 @@ def say(text: str, voice_id: str, out_wav: Path, *, key: str | None = None, cach
         if requests_today(budget, today) >= BUDGETS["voice_requests_per_day"]:
             raise VoiceBudget(f"voice budget of {BUDGETS['voice_requests_per_day']} requests reached for {today}")
         key = key or secrets.get("GEMINI_API_KEY")
-        body = {"model": MODEL,
-                "input": [{"type": "user_input", "content": [{"type": "text", "text": text,
-                                                              "annotations": [{"type": "speech_metadata", "style": style}]}]}],
-                "response_format": {"type": "audio"},
-                "generation_config": {"speech_config": [{"voice": voice_id}]}}
         _count_request(budget, today)
-        status, data = post(SYNTH_URL, body, key)
-        if status != 200:
-            raise VoiceError(f"voice synthesis failed ({status}): {secrets.scrub(str((data.get('error') or {}).get('message', '')))[:300]}")
-        audio = _audio_from(data)
+        if voice_id.startswith("voice"):                                  # a replicated or designed voice: interactions API
+            body = {"model": MODEL,
+                    "input": [{"type": "user_input", "content": [{"type": "text", "text": text,
+                                                                  "annotations": [{"type": "speech_metadata", "style": style}]}]}],
+                    "response_format": {"type": "audio"},
+                    "generation_config": {"speech_config": [{"voice": voice_id}]}}
+            status, data = post(SYNTH_URL, body, key)
+            if status != 200:
+                raise VoiceError(f"voice synthesis failed ({status}): {secrets.scrub(str((data.get('error') or {}).get('message', '')))[:300]}")
+            audio = _audio_from(data)
+        else:                                                              # a prebuilt voice name (Puck, Kore, ...): generateContent, raw PCM back
+            body = {"contents": [{"parts": [{"text": f"{style}: {text}" if style else text}]}],
+                    "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice_id}}}}}
+            status, data = post(f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent", body, key)
+            if status != 200:
+                raise VoiceError(f"voice synthesis failed ({status}): {secrets.scrub(str((data.get('error') or {}).get('message', '')))[:300]}")
+            audio = _pcm_to_wav(_pcm_from(data))
         if not audio:
             raise VoiceError("voice synthesis returned no audio")
         cached.write_bytes(audio)

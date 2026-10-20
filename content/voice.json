@@ -2,5 +2,20 @@
  "default": "voice_q1wbltuvjim6",
  "fallback": "voice_9c6x5lerrbm4",
  "created": "2026-10-20",
- "name": "SG Hinglish v1"
+ "name": "SG Hinglish v1",
+ "pool": [
+  "voice_7o0kddoq6q2z",
+  "voice_g8azc8xcwhlu",
+  "voice_1kn3blc2u13l",
+  "Puck",
+  "Kore"
+ ],
+ "pool_names": {
+  "voice_7o0kddoq6q2z": "A storyteller male",
+  "voice_g8azc8xcwhlu": "B bright female",
+  "voice_1kn3blc2u13l": "C calm documentary male",
+  "Puck": "D Puck",
+  "Kore": "E Kore"
+ },
+ "clone": "voice_q1wbltuvjim6"
 }

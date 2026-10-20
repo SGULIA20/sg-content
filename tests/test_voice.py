@@ -55,13 +55,13 @@ def test_budget_hit_mid_piece_keeps_cache(tmp_path):
     budget = tmp_path / "b.json"
     budget.write_text(json.dumps({"2026-10-20": 79}))
     kw = dict(key="k", cache_dir=tmp_path / "cache", budget=budget, post=fp, today=date(2026, 10, 20))
-    voice.say("line one", "v", tmp_path / "1.wav", **kw)                       # request 80: allowed
+    voice.say("line one", "voice_v", tmp_path / "1.wav", **kw)                       # request 80: allowed
     with pytest.raises(voice.VoiceBudget):
-        voice.say("line two", "v", tmp_path / "2.wav", **kw)                   # request 81: refused before calling
+        voice.say("line two", "voice_v", tmp_path / "2.wav", **kw)                   # request 81: refused before calling
     assert len(fp.calls) == 1 and len(list((tmp_path / "cache").glob("*.wav"))) == 1
     budget.write_text(json.dumps({"2026-10-20": 0}))
-    voice.say("line one", "v", tmp_path / "1.wav", **kw)
-    voice.say("line two", "v", tmp_path / "2.wav", **kw)
+    voice.say("line one", "voice_v", tmp_path / "1.wav", **kw)
+    voice.say("line two", "voice_v", tmp_path / "2.wav", **kw)
     assert len(fp.calls) == 2                                                  # only the uncached line was paid for again
 
 
@@ -83,7 +83,7 @@ def test_lines_voices_every_scene_in_order(tmp_path):
     from engine import pieces
     p = pieces.Piece(id="x", channel="sglearning", kind="short", publish_day=date(2026, 10, 20))
     p.script = {"scenes": [{"vo": "ek"}, {"vo": "do"}, {"vo": "teen"}]}
-    out = voice.lines(p, "v", tmp_path / "vo", key="k", cache_dir=tmp_path / "c", budget=tmp_path / "b.json", post=fp)
+    out = voice.lines(p, "voice_v", tmp_path / "vo", key="k", cache_dir=tmp_path / "c", budget=tmp_path / "b.json", post=fp)
     assert [d for _p, d in out] == [pytest.approx(1.5)] * 3 and [b["input"][0]["content"][0]["text"] for _u, b in fp.calls] == ["ek", "do", "teen"]
 
 
@@ -97,4 +97,25 @@ def test_no_audio_in_response_raises(tmp_path):
     def post(url, body, key):
         return 200, {"steps": [{"type": "model_output", "content": [{"type": "text", "text": "no audio"}]}]}
     with pytest.raises(voice.VoiceError):
-        voice.say("x", "v", tmp_path / "a.wav", key="k", cache_dir=tmp_path / "c", budget=tmp_path / "b.json", post=post)
+        voice.say("x", "voice_v", tmp_path / "a.wav", key="k", cache_dir=tmp_path / "c", budget=tmp_path / "b.json", post=post)
+
+
+def test_pick_rotates_through_pool_deterministically(tmp_path):
+    (tmp_path / "voice.json").write_text(json.dumps({"default": "voice_a", "fallback": "voice_b", "pool": ["voice_a", "voice_c", "Puck"]}))
+    picks = {voice.pick(f"2026-10-{d:02d}-sglearning-short", tmp_path) for d in range(1, 31)}
+    assert picks == {"voice_a", "voice_c", "Puck"}
+    assert voice.pick("2026-10-21-sglearning-short", tmp_path) == voice.pick("2026-10-21-sglearning-short", tmp_path)
+    (tmp_path / "voice.json").write_text(json.dumps({"default": "voice_a", "fallback": "voice_b"}))
+    assert voice.pick("x", tmp_path) == "voice_a"                              # no pool: the default
+
+
+def test_say_uses_prebuilt_voice_names_through_generate_content(tmp_path):
+    seen = {}
+    def post(url, body, key):
+        seen["url"], seen["body"] = url, body
+        import base64
+        pcm = b"\x00\x00" * 24000                                             # one second of silence, raw 16-bit 24 kHz
+        return 200, {"candidates": [{"content": {"parts": [{"inlineData": {"mimeType": "audio/L16;rate=24000", "data": base64.b64encode(pcm).decode()}}]}}]}
+    d = voice.say("Namaste.", "Puck", tmp_path / "a.wav", key="k", cache_dir=tmp_path / "c", budget=tmp_path / "b.json", post=post)
+    assert seen["url"].endswith(":generateContent") and seen["body"]["generationConfig"]["speechConfig"]["voiceConfig"]["prebuiltVoiceConfig"]["voiceName"] == "Puck"
+    assert d == pytest.approx(1.0, abs=0.05)

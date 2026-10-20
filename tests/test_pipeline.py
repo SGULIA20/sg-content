@@ -365,3 +365,19 @@ def test_story_pieces_skip_the_freeze_check(tmp_path):
     d.story_build = lambda piece, lines, panels, size, out_dir: (setattr(piece, "timings", [0.0] * len(panels)), Path(out_dir, "reel.mp4").write_bytes(b"m"), Path(out_dir, "reel.mp4"))[-1]
     pipeline.make(_piece(), d, tmp_path)
     assert seen.get("check_freeze") is False and seen.get("story") is True
+
+
+def test_make_picks_voice_from_pool_per_piece(tmp_path, monkeypatch):
+    from engine import voice
+    monkeypatch.setattr(voice, "pick", lambda pid, root=None: "voice_pool_" + pid[-5:])
+    heard = []
+    def say_fn(text, voice_id, out_wav):
+        heard.append(voice_id)
+        import wave
+        Path(out_wav).parent.mkdir(parents=True, exist_ok=True)
+        with wave.open(str(out_wav), "wb") as w:
+            w.setnchannels(1); w.setsampwidth(2); w.setframerate(24000); w.writeframes(b"\x00\x00" * 24000)
+        return 1.0
+    d, calls = deps(tmp_path, say=say_fn)
+    pipeline.make(_piece("long"), d, tmp_path)
+    assert heard and set(heard) == {"voice_pool_-long"}
