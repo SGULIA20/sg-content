@@ -46,7 +46,7 @@ def record_out_sha(root: Path, sha: str) -> list:
 
 def enabled(env=None) -> bool:
     env = os.environ if env is None else env
-    return env.get("SG_COMMIT_EACH") == "1" or env.get("GITHUB_ACTIONS") == "true"
+    return env.get("SG_COMMIT_EACH") == "1" or env.get("SG_PUSH_FROM_MAC") == "1" or env.get("GITHUB_ACTIONS") == "true"
 
 
 def commit(root: Path = ROOT, message: str = "sg-content: progress", push: bool = True) -> str:

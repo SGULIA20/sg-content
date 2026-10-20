@@ -355,3 +355,13 @@ def test_fixable_rejects_revise_same_topic(tmp_path):
     d, calls = deps(tmp_path, lint=lint_fn)
     p = pipeline.make(_piece(), d, tmp_path)
     assert p.status == "uploaded" and calls["topics"] == 1 and calls["write"] == 2
+
+
+def test_story_pieces_skip_the_freeze_check(tmp_path):
+    seen = {}
+    def qa_fn(path, kind, voiced_seconds, caption_cues, **kw):
+        seen.update(kw); return []
+    d, calls = deps(tmp_path, qa=qa_fn)
+    d.story_build = lambda piece, lines, panels, size, out_dir: (setattr(piece, "timings", [0.0] * len(panels)), Path(out_dir, "reel.mp4").write_bytes(b"m"), Path(out_dir, "reel.mp4"))[-1]
+    pipeline.make(_piece(), d, tmp_path)
+    assert seen.get("check_freeze") is False and seen.get("story") is True

@@ -84,3 +84,9 @@ def test_gitsync_records_out_sha_after_commit(tmp_path):
     assert sha and pieces.load(p.id, tmp_path).ids["out_sha"] == sha
     assert gitsync.commit(tmp_path, "again", push=False) == ""                # the sha record was committed inside the first call; nothing left dirty
     assert subprocess.run(["git", "-C", str(tmp_path), "status", "--porcelain"], capture_output=True, text=True).stdout == ""
+
+
+def test_gitsync_enabled_by_either_flag():
+    from engine import gitsync
+    assert gitsync.enabled({"SG_PUSH_FROM_MAC": "1"}) and gitsync.enabled({"SG_COMMIT_EACH": "1"}) and gitsync.enabled({"GITHUB_ACTIONS": "true"})
+    assert not gitsync.enabled({})
