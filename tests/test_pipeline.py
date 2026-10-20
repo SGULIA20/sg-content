@@ -277,3 +277,18 @@ def test_produce_leaves_fresh_pack_alone(tmp_path):
     produce.run(tmp_path, date(2026, 10, 20), max_pieces=1, dry_run=True, only={"sglearning:short"}, deps=d, notify=lambda t: True,
                 now_utc=datetime(2026, 10, 20, 3, 0, tzinfo=timezone.utc))
     assert calls["say"] == 0 and pieces.load(p.id, tmp_path).status == "awaiting-clips"
+
+
+def test_avatar_scenes_use_cartoon_clips_when_enabled(tmp_path):
+    d, calls = deps(tmp_path)
+    made = []
+    def cartoon_fn(wav, seconds, size, out, mood):
+        made.append(mood); Path(out).parent.mkdir(parents=True, exist_ok=True); Path(out).write_bytes(b"mp4"); return Path(out)
+    d.cartoon = cartoon_fn
+    seen = {}
+    def build_fn(piece, lines, visuals, size, out_dir, **kw):
+        seen["visuals"] = [Path(v).suffix for v in visuals]; piece.timings = [0.0, 1.0, 2.0]
+        out = Path(out_dir) / "reel.mp4"; out.write_bytes(b"mp4"); return out
+    d.build = build_fn
+    pipeline.make(_piece(), d, tmp_path)
+    assert made == ["explaining_front"] and seen["visuals"][0] == ".mp4"            # the hook scene (avatar) became a talking-head clip

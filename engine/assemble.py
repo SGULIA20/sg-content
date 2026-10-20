@@ -33,9 +33,13 @@ def scene_clip(image: Path, seconds: float, size: tuple, out: Path, zoom: float 
     overlays: (png, x, y) burned for the whole clip, or (png, x, y, start, end) shown only between those seconds."""
     w, h = size
     frames = max(1, int(round(seconds * FPS)))
-    chain = (f"[0:v]scale={w * 2}:{h * 2}:force_original_aspect_ratio=increase,crop={w * 2}:{h * 2},"
-             f"zoompan=z='min(zoom+{ZOOM_PER_FRAME},{zoom})':d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={w}x{h}:fps={FPS}[base]")
-    inputs = ["-loop", "1", "-i", str(image)]
+    if str(image).lower().endswith((".mp4", ".mov", ".webm")):          # an already-animated scene (talking head, founder clip): no push-in
+        chain = f"[0:v]scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},fps={FPS},tpad=stop_mode=clone:stop_duration=5[base]"
+        inputs = ["-i", str(image)]
+    else:
+        chain = (f"[0:v]scale={w * 2}:{h * 2}:force_original_aspect_ratio=increase,crop={w * 2}:{h * 2},"
+                 f"zoompan=z='min(zoom+{ZOOM_PER_FRAME},{zoom})':d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={w}x{h}:fps={FPS}[base]")
+        inputs = ["-loop", "1", "-i", str(image)]
     last = "[base]"
     for i, ov in enumerate(overlays, start=1):
         png, x, y = ov[0], ov[1], ov[2]

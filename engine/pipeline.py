@@ -6,7 +6,7 @@ from datetime import date
 from pathlib import Path
 from typing import Callable
 
-from . import art, assemble, buffer, cards, claims, gemini, lint, pieces, qa, research, secrets, slots, topics, voice, writer, youtube
+from . import art, assemble, buffer, cards, cartoon, claims, gemini, lint, pieces, qa, research, secrets, slots, topics, voice, writer, youtube
 from .config import CHANNELS, ROOT, VIDEO
 from .pieces import Piece
 
@@ -36,6 +36,7 @@ class Deps:
     voice_id: str = ""
     pack: Callable = None        # (piece) -> parts, for the Gemini presenter-clip path
     pack_send: Callable = None   # (piece, text) -> Path
+    cartoon: Callable = None     # (wav, seconds, size, out, mood) -> mp4: code-animated cartoon presenter for avatar scenes
 
 
 def _jsonable(d: dict) -> dict:
@@ -74,10 +75,13 @@ def _pick_topic(piece: Piece, deps: Deps, root: Path, used: set) -> dict | None:
     return deps.topic(piece, used)
 
 
-def _visual_for(piece: Piece, i: int, scene: dict, deps: Deps, out_dir: Path, size: tuple) -> Path:
+def _visual_for(piece: Piece, i: int, scene: dict, deps: Deps, out_dir: Path, size: tuple, line=None) -> Path:
     v = scene.get("visual") or {}
     kind = v.get("type", "art")
     out = out_dir / f"visual{i:02d}.png"
+    if kind == "avatar" and deps.cartoon and line is not None:
+        wav, seconds = line
+        return deps.cartoon(wav, seconds + assemble.PAD_S, size, out_dir / f"visual{i:02d}.mp4", v.get("prompt") or "explaining_front")
     if kind == "avatar":
         src = deps.avatar(v.get("prompt") or "explaining_front")
         if i == 0:
@@ -200,7 +204,7 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
     pieces.save(pieces.transition(piece, "voiced"), root)
     # 6-7: pictures and cards
     try:
-        visuals = [_visual_for(piece, i, sc, deps, out_dir, size) for i, sc in enumerate(script["scenes"])]
+        visuals = [_visual_for(piece, i, sc, deps, out_dir, size, line=lines[i]) for i, sc in enumerate(script["scenes"])]
         strips = _source_strips(piece, deps, out_dir, size)
         chips = _label_chips(piece, deps, out_dir)
         credits = {i: deps.render_card("source", {"name": sc["credit"], "date": "photo"}, out_dir / f"credit-{i}.png", (size[0], 120))
@@ -265,4 +269,5 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
                 render_card=cards.render, build=assemble.build, qa=qa.report, upload=upload_fn,
                 lint=lambda piece, prior: lint.check_script(piece, banned, prior) + lint.check_captions(piece, hashtags),
                 claims_check=lambda piece: claims.match(lint.all_text(piece), piece.facts, library),
-                commons=art.commons_photo, library=library, hashtags=hashtags, voice_id=default_voice)
+                commons=art.commons_photo, library=library, hashtags=hashtags, voice_id=default_voice,
+                cartoon=cartoon.talking_head_clip)
