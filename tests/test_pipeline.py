@@ -345,3 +345,13 @@ def test_myth_story_short_is_standalone_and_panels_carry_labels(tmp_path, monkey
     d.write = write_fn
     p = pipeline.make(_piece("short", "arthvan", date(2026, 10, 21)), d, tmp_path)
     assert p.status == "uploaded" and calls["research"] == 1 and built == ["arthvan"] and "from_long" not in p.topic
+
+
+def test_fixable_rejects_revise_same_topic(tmp_path):
+    n = {"lint": 0}
+    def lint_fn(piece, prior):
+        n["lint"] += 1
+        return ["label: scene 11 has no evidence label", "length: 238 words, allowed 150-230"] if n["lint"] == 1 else []
+    d, calls = deps(tmp_path, lint=lint_fn)
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert p.status == "uploaded" and calls["topics"] == 1 and calls["write"] == 2

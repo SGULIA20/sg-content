@@ -107,49 +107,52 @@
  "kind": "short",
  "publish_day": "2026-10-21",
  "reasons": [
-  "try 1: label: scene 11 has no evidence label; length: 238 words, allowed 150-230"
+  "try 1: label: scene 11 has no evidence label; length: 238 words, allowed 150-230",
+  "try 2: label: scene 11 has no evidence label; length: 231 words, allowed 150-230"
  ],
  "script": {
   "captions": {
    "instagram": {
-    "caption": "Kya Krishna ki Dwarka sach mein samundar ke neeche hai?\nNIO ke goton ko 12 metre tak gehrai mein tarashe pathar aur langar mile.\nPar experts dating par aaj bhi ek raay nahi.\nAapko kya lagta hai, Krishna ki nagri ya purana bandargah?",
+    "caption": "Samundar ke neeche Dwarka? 😱\nHarivamsa kehta hai, Krishna ki Dwarka samundar mein doob gayi.\nNIO aur ASI ke goton ko wahan patthar ki deewarein aur langar mile, par umar par experts bante hue hain.\nAapko kya lagta hai, Krishna ki Dwarka ya purana bandargah?",
     "hashtags": [
      "#SabutKeSaath",
      "#Dwarka",
      "#Mahabharat",
      "#Archaeology",
+     "#IndianHistory",
      "#AncientIndia",
-     "#Itihaas",
+     "#Mythology",
      "#SGMythWorld"
     ]
    },
    "threads": {
-    "text": "Dwarka ke samundar mein tarashe pathar, langar aur jetty ke nishaan mile. S.R. Rao ne inhe bahut purana maana, baad ke NIO researchers ne madhyakaal ka bandargah. Aapko kya lagta hai, neeche Krishna ki nagri hai ya purana bandargah? #SabutKeSaath #Mythology"
+    "text": "Dwarka ke paas samundar ke neeche patthar ki deewarein, khambe aur langar mile. Ek expert ne ise Bronze Age ka bandargah maana, doosre ne madhyakaal ki jetty. Aapko kya lagta hai, yeh Krishna ki Dwarka hai ya purana bandargah? #SabutKeSaath #Mythology"
    },
    "youtube": {
     "chapters": [],
-    "description": "Dwarka ke samundar mein goton ko tarashe pathar, langar aur jetty ke nishaan mile. Par kya yeh Mahabharat wali Dwarka hai, ya baad ka ek bandargah? Experts aaj bhi bante hue hain, sabut ke saath poori kahani dekhiye.",
+    "description": "Samundar ke neeche patthar ki deewarein, khambe aur langar, kya yeh Krishna ki Dwarka hai? NIO aur ASI ke goton ne Dwarka ke paas kya paaya, aur experts iski umar par kyun bante hue hain, sabut ke saath dekhiye.",
     "tags": [
      "Dwarka",
+     "Dwarka underwater",
      "Mahabharat",
      "Krishna",
-     "marine archaeology",
+     "Harivamsa",
      "NIO",
-     "SR Rao",
-     "underwater city",
-     "Bet Dwarka",
+     "ASI",
+     "marine archaeology",
+     "Gomati",
      "Gujarat",
-     "ancient India",
-     "itihaas",
-     "mythology"
+     "Indian history",
+     "mythology",
+     "sabut ke saath"
     ],
-    "title": "Samundar mein 12 metre neeche Krishna ki Dwarka?"
+    "title": "Samundar mein 12 metre neeche Dwarka ki deewarein?"
    }
   },
   "cards": [],
   "carousel": false,
-  "end_question": "Aapko kya lagta hai, neeche Krishna ki nagri hai ya purana bandargah?",
-  "hook": "Kya Krishna ki Dwarka sach mein samundar ke neeche hai?",
+  "end_question": "Aapko kya lagta hai, neeche Krishna ki Dwarka hai, ya purana bandargah? Comment mein batayiye.",
+  "hook": "Kya samundar ke neeche Krishna ki Dwarka chhupi hai?",
   "scenes": [
    {
     "facts_used": [
@@ -158,34 +161,46 @@
     "label": "scripture",
     "visual": {
      "card": null,
-     "prompt": "Ancient golden coastal city at dusk as giant ocean waves crash over its walls and flood the streets, a line of townspeople with bundles walking away inland in the foreground, dramatic stormy sky, painterly illustrated panel, no text",
+     "prompt": "Hand-drawn doodle panel: a vast ancient coastal city rising from the receding sea at dawn, a divine figure seen far away from behind on a cliff, waves pulling back, sense of wonder, warm golden light, no text",
      "type": "art"
     },
-    "vo": "Kya Krishna ki Dwarka sach mein samundar ke neeche hai? Mausala Parva kehta hai, samundar ne seema tod di, aur shehar doob gaya."
+    "vo": "Kya samundar ke neeche Krishna ki Dwarka chhupi hai? Harivamsa kehta hai, Krishna ne samundar se zameen lekar Dwarka basayi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Hand-drawn doodle panel: a fortified golden city with tall ramparts and moats beside the ocean, huge waves rolling over its walls at dusk, dramatic sky, tiny people on the walls watching, no text",
+     "type": "art"
+    },
+    "vo": "Unchi deewarein, gehri khaaiyan, samundar kinare rajdhani. Mahabharat kehta hai, Krishna ke jaane ke baad, samundar use nigal gaya."
    },
    {
     "facts_used": [
      1
     ],
-    "label": "scripture",
+    "label": "archaeology",
     "visual": {
      "card": null,
-     "prompt": "A divine figure seen from behind at a great distance standing on a shore as the sea gently recedes, revealing land where a fortified seaside city with towers and ramparts rises, golden morning light, mythic illustrated panel, no text",
+     "prompt": "Hand-drawn doodle panel: a small research boat off the Gujarat coast, divers in old-style scuba gear jumping into murky green sea, a temple spire visible on the distant shore, curious mood, no text",
      "type": "art"
     },
-    "vo": "Harivamsa kehta hai, Krishna ne yeh zameen samundar se maangi thi. Wahan kile wala shehar basa, Dvaravati."
+    "vo": "Phir 1983 mein, NIO yaani National Institute of Oceanography ke gotakhor Dwarka ke paas utre."
    },
    {
     "facts_used": [
-     2
+     1
     ],
     "label": "archaeology",
     "visual": {
      "card": null,
-     "prompt": "1980s research institute room in Goa with scientists in shirts studying sea charts, diving gear and old maps of the Gujarat coast on the table, warm tube light, illustrated panel, no text, no logos",
+     "prompt": "Hand-drawn doodle panel: underwater scene, a diver with a torch revealing large cut stone blocks, a fallen pillar and a rounded bastion-like wall covered in sea growth, fish swimming, blue-green light rays, no text",
      "type": "art"
     },
-    "vo": "1981 mein National Institute of Oceanography, yaani NIO, ne ek centre banaya. Kaam tha marine archaeology, yaani paani ke neeche itihaas dhoondhna."
+    "vo": "12 metre tak gehre paani mein patthar ke bade blocks mile. Deewar jaise hisse, khambe, aur burj yaani kile ke gol mod."
    },
    {
     "facts_used": [
@@ -195,22 +210,10 @@
     "label": "archaeology",
     "visual": {
      "card": null,
-     "prompt": "A small research boat on choppy grey-green Arabian Sea off a temple town coast, divers in wetsuits rolling backward into the water, an older archaeologist in a hat watching from the deck, illustrated panel, no text",
+     "prompt": "Hand-drawn doodle panel: a row of heavy triangular stone anchors with holes lying on the seabed, inset of circular stone foundations exposed on a tidal shore at a creek mouth, an archaeologist measuring with a tape, no text",
      "type": "art"
     },
-    "vo": "Goton ne Dwarka aur Bet Dwarka ka samundar khangala. Aguvai ki archaeologist S.R. Rao ne."
-   },
-   {
-    "facts_used": [
-     3
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Underwater scene in murky blue-green water, a diver with a torch revealing neatly cut stone blocks, a rounded stone bastion shape and a long stone platform on the seabed, sunlight rays from above, mysterious mood, illustrated panel, no text",
-     "type": "art"
-    },
-    "vo": "12 metre tak ki gehrai mein tarashe pathar mile. Gol burj jaise dhaanche, aur jetty yaani naav ka chabutra."
+    "vo": "Patthar ke langar bhi mile, jinse purane jahaz rukte the. Gomati khaadi ke muhane par gol patthar ke dhanche dikhe."
    },
    {
     "facts_used": [
@@ -220,86 +223,89 @@
     "label": "archaeology",
     "visual": {
      "card": null,
-     "prompt": "Split panel: on the left, triangular stone anchors with holes scattered on a sandy seabed with a diver measuring them; on the right, a small carved square seal and copper objects laid on a cloth at an island dig site, illustrated, no text",
+     "prompt": "Hand-drawn doodle panel: archaeologists walking on a wet rocky shore at low tide, one kneeling beside a weathered stone sculpture half buried in sand, another photographing a stone anchor, evening light, no text",
      "type": "art"
     },
-    "vo": "Tali par pathar ke bahut saare langar mile. Bet Dwarka dweep se Sindhu ghati jaisi muhar aur taambe ki cheezein niklin."
-   },
-   {
-    "facts_used": [
-     8
-    ],
-    "label": "disputed",
-    "visual": {
-     "card": null,
-     "prompt": "Two generations of researchers in a lab, an older archaeologist pointing confidently at a stone block, younger scientists with magnifying glass and notebooks re-examining a stone anchor, thoughtful mood, illustrated panel, no text",
-     "type": "art"
-    },
-    "vo": "S.R. Rao ne in pattharon ko Sindhu ghati ke aakhri daur jitna purana maana. Baad mein NIO ke A.S. Gaur ki team ne langar dobara jaanche."
-   },
-   {
-    "facts_used": [
-     8
-    ],
-    "label": "disputed",
-    "visual": {
-     "card": null,
-     "prompt": "Imagined medieval busy harbour on the Gujarat coast with wooden sailing ships dropping stone anchors, traders unloading goods, seen as a faded vision over the modern sea, illustrated panel, no text",
-     "type": "art"
-    },
-    "vo": "Gaur ki team boli, yeh langar Sindhu ghati kaal ke nahi. Yeh baad ke, madhyakaal tak ke bandargah ke nishaan lagte hain."
-   },
-   {
-    "facts_used": [
-     9,
-     10
-    ],
-    "label": "disputed",
-    "visual": {
-     "card": null,
-     "prompt": "Underwater stone ridge shown twice side by side: one half imagined as a fortified city wall with bastions, the other half as worn natural beach rock, a diver floating between them, question-like mysterious mood, illustrated, no text",
-     "type": "art"
-    },
-    "vo": "Rao ko yeh shehar ki kilebandi lagi, doosre experts ko jetty ya prakritik chattanein. Inhe Mahabharat ki Dwarka se jodna, abhi sabit nahi hua."
-   },
-   {
-    "facts_used": [
-     11
-    ],
-    "label": "legend",
-    "visual": {
-     "card": null,
-     "prompt": "A grandmother telling a story to children on a moonlit Saurashtra beach, above the waves a dreamy glowing image of golden palace towers standing intact on the ocean floor, soft magical mood, illustrated panel, no text",
-     "type": "art"
-    },
-    "vo": "Lok-katha kehti hai, sone ka shehar neeche jyon ka tyon khada hai. Iska koi sabut nahi mila."
+    "vo": "Phir ASI yaani Archaeological Survey of India ki underwater team aayi. Low tide mein murtiyan aur langar mile."
    },
    {
     "facts_used": [
      6
     ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Hand-drawn doodle panel: an older marine archaeologist at a desk with pottery shards and sketches of an ancient port with bronze-age ships, lamp light, thoughtful mood, no text",
+     "type": "art"
+    },
+    "vo": "Par yeh kitna purana hai? S. R. Rao ne ise Bronze Age, yaani kaanse ke yug ka bandargah maana."
+   },
+   {
+    "facts_used": [
+     6,
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Hand-drawn doodle panel: a younger researcher comparing anchor drawings on a board, beside it a sketch of a simple stone jetty with wooden sailing ships tied up, split mood of debate, no text",
+     "type": "art"
+    },
+    "vo": "Lekin NIO ke A. S. Gaur ne inhe itihasik aur madhyakaal ka bataya. Shayad yeh jetty thi, yaani jahaz lagane ka ghaat."
+   },
+   {
+    "facts_used": [
+     7,
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Hand-drawn doodle panel: split scene, left a giant flood wave over a city as an imagined idea, right slow waves eroding stone blocks over time with a rising sea line drawn on cliffs, balanced neutral mood, no text",
+     "type": "art"
+    },
+    "vo": "Kuch log bhayanak baadh kehte hain. NIO ki studies kehti hain, samundar pehle neeche tha, lehron ne patthar kaate."
+   },
+   {
+    "facts_used": [
+     6,
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Hand-drawn doodle panel: cross-section of the seabed showing layers of different ports stacked over time, old ships of different eras fading into each other, a big question-like swirl of water, mysterious mood, no text",
+     "type": "art"
+    },
+    "vo": "Twist yeh hai, shayad yahan sadiyon tak bandargah bante aur doobte rahe. Kaun si Dwarka Krishna ki thi, koi saabit nahi kar paya."
+   },
+   {
+    "facts_used": [
+     3,
+     4
+    ],
     "label": "archaeology",
     "visual": {
      "card": null,
-     "prompt": "Tall carved stone temple spire with flags beside the sea at sunrise, pilgrims walking toward it, in the foreground an excavation trench showing layered soil and old walls, peaceful mood, illustrated panel, no text",
+     "prompt": "Hand-drawn doodle panel: a pilgrim family standing on the Gomati ghat at Dwarka at sunset, temple spire with flag behind them, low tide revealing old stones in the water, peaceful wonder, no text",
      "type": "art"
     },
-    "vo": "Aaj aap Dwarkadhish mandir ja sakte hain. Uske paas ASI ko kai daur ki bastiyan mili."
+    "vo": "Aaj aap Gomati ke kinare khade ho sakte hain. Low tide mein patthar dekhiye, aur sochiye, neeche kya hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "Calm sea at twilight off the Gujarat coast, faint outlines of submerged stones visible under clear water, a lone narrator figure in a kurta standing on the shore looking out, contemplative mood, illustrated panel, no text",
+     "prompt": "Hand-drawn doodle panel: a narrator figure sitting on rocks by the Dwarka shore looking out at the sea, the faint outline of a submerged city beneath the waves, calm inviting mood, no text",
      "type": "art"
     },
-    "vo": "Aapko kya lagta hai, neeche Krishna ki nagri hai ya purana bandargah?"
+    "vo": "Aapko kya lagta hai, neeche Krishna ki Dwarka hai, ya purana bandargah? Comment mein batayiye."
    }
   ],
-  "title": "Samundar ke neeche *Dwarka* ka sach? 😱"
+  "title": "Samundar ke neeche *Dwarka*? 😱"
  },
- "status": "researched",
+ "status": "rejected",
  "timings": [],
  "topic": {
   "allowed_sources": [
@@ -320,6 +326,6 @@
   "target_minutes": null,
   "title_hi": "Samundar ke neeche Dwarka"
  },
- "updated": "2026-10-20T19:37:10+00:00",
+ "updated": "2026-10-20T19:38:33+00:00",
  "writer": "claude"
 }

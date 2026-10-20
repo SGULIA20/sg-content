@@ -82,7 +82,7 @@ def check_script(piece: Piece, banned: dict, prior_scripts: list) -> list:
     if piece.channel == "arthvan":
         reasons += _banned_hits(text, banned, ["myth_forbidden"])
         for i, sc in enumerate(scenes):
-            if sc.get("label") not in MYTH_LABELS:
+            if sc.get("label") not in MYTH_LABELS and sc.get("facts_used"):      # a scene that states a fact must say what kind of evidence it is
                 reasons.append(f"label: scene {i} has no evidence label")
     if piece.channel == "sglearning" and piece.kind == "short" and DISCLAIMER.lower() not in text.lower():
         reasons.append("disclaimer: finance script must speak the disclaimer line")

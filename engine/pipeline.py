@@ -191,7 +191,8 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
             break
         pieces.transition(piece, "rejected", f"try {attempt + 1}: " + "; ".join(reasons))
         pieces.save(piece, root)
-        revise = reasons[0] if all(r.startswith("length") for r in reasons) else None
+        fixable = ("length", "label", "card", "hashtags", "disclaimer", "title", "threads", "instagram")
+        revise = "; ".join(reasons) if all(r.startswith(fixable) for r in reasons) else None      # formatting misses: same topic, trimmed draft
     if script is None:
         return piece
     pieces.save(pieces.transition(piece, "written"), root)

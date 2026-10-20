@@ -180,3 +180,11 @@ def test_story_shorts_allow_longer_scripts():
     assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(120)), BANNED, []))
     p2 = piece_with(_words(200), channel="arthvan"); p2.script["scenes"][0]["label"] = "legend"
     assert not any(r.startswith("length") for r in lint.check_script(p2, BANNED, []))      # mythology Shorts are stories too
+
+
+def test_myth_scene_without_facts_may_skip_label():
+    p = piece_with(_words(200), channel="arthvan", label="archaeology")
+    p.script["scenes"].append({"vo": "Aapko kya lagta hai?", "visual": {"type": "art", "prompt": "x"}, "facts_used": [], "label": None})
+    assert not any(r.startswith("label") for r in lint.check_script(p, BANNED, []))
+    p.script["scenes"].append({"vo": "36 metre neeche deewar.", "visual": {"type": "art", "prompt": "x"}, "facts_used": [0], "label": None})
+    assert any(r.startswith("label") for r in lint.check_script(p, BANNED, []))
