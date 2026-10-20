@@ -39,7 +39,7 @@ def piece_with(vo: str, channel="sglearning", kind="short", scenes=None, label="
 
 
 def test_clean_finance_script_passes():
-    p = piece_with(_words(120) + " " + DISCLAIMER)
+    p = piece_with(_words(180) + " " + DISCLAIMER)
     assert lint.check_script(p, BANNED, []) == []
 
 
@@ -72,9 +72,10 @@ def test_near_duplicate_script_fails():
 
 
 def test_short_word_count_bounds():
-    assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(80)), BANNED, []))
-    assert not any(r.startswith("length") for r in lint.check_script(piece_with(_words(120)), BANNED, []))
-    assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(150)), BANNED, []))
+    # non-story Shorts (mythology) keep the 90-135 rule
+    assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(80), channel="arthvan"), BANNED, []))
+    assert not any(r.startswith("length") for r in lint.check_script(piece_with(_words(120), channel="arthvan"), BANNED, []))
+    assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(150), channel="arthvan"), BANNED, []))
 
 
 def test_long_word_count_uses_target_minutes():
@@ -157,8 +158,8 @@ def test_real_banned_list_has_no_bare_conversion_and_catches_variants():
 def test_short_word_bounds_fit_59_seconds_of_hinglish():
     # measured 20 Oct 2026: the clone speaks Hinglish at about 2.5 words a second; 59 s minus pads leaves room for ~135 words
     assert lint.SHORT_WORDS == (90, 135)
-    assert not any(r.startswith("length") for r in lint.check_script(piece_with(_words(120)), BANNED, []))
-    assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(150)), BANNED, []))
+    assert not any(r.startswith("length") for r in lint.check_script(piece_with(_words(120), channel="arthvan"), BANNED, []))
+    assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(150), channel="arthvan"), BANNED, []))
 
 
 def test_card_big_number_must_be_short():
@@ -167,3 +168,11 @@ def test_card_big_number_must_be_short():
     assert any(r.startswith("card") for r in lint.check_captions(p, HASHTAGS))
     p.script["cards"] = [{"big_number": "₹1.5 lakh cr", "line": "x", "source": "RBI"}]
     assert not any(r.startswith("card") for r in lint.check_captions(p, HASHTAGS))
+
+
+def test_story_shorts_allow_longer_scripts():
+    p = piece_with(_words(200))                                               # sglearning short = story format
+    assert not any(r.startswith("length") for r in lint.check_script(p, BANNED, []))
+    assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(120)), BANNED, []))
+    p2 = piece_with(_words(120), channel="arthvan"); p2.script["scenes"][0]["label"] = "legend"
+    assert not any(r.startswith("length") for r in lint.check_script(p2, BANNED, []))

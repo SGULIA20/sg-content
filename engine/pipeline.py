@@ -11,11 +11,9 @@ from .config import CHANNELS, ROOT, VIDEO
 from .pieces import Piece
 
 TOPIC_TRIES = 3
-STORY_FORMAT = {("sglearning", "short")}      # illustrated money stories (founder, 20 Oct 2026); longs keep cards + presenter
-
-
 def is_story(piece: Piece) -> bool:
-    return (piece.channel, piece.kind) in STORY_FORMAT
+    from .config import is_story as _is
+    return _is(piece.channel, piece.kind)
 RESUMABLE = {"written", "voiced", "drawn", "assembled", "failed-voice", "failed-art", "qa_failed"}
 HANDLE = "@sanjeev_gulia"
 LONG_TARGET_MINUTES = {"sglearning": 15, "arthvan": 20}
@@ -247,7 +245,7 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
     for (wav, d), start, sc in zip(lines, piece.timings, script["scenes"]):
         cues += _captions.offset(_captions.split(sc["vo"], d), start)
     target = (piece.topic.get("target_minutes") or 0) * 60 or None
-    problems = deps.qa(video, piece.kind, sum(d for _w, d in lines), cues, target_seconds=target)
+    problems = deps.qa(video, piece.kind, sum(d for _w, d in lines), cues, target_seconds=target, story=is_story(piece))
     if problems:
         pieces.save(pieces.transition(piece, "qa_failed", "; ".join(problems)), root)
         return piece

@@ -68,12 +68,12 @@ def test_chapters_from_timings():
 
 def test_fit_speeds_voice_when_short_runs_long(tmp_path):
     lines = [(_tone(tmp_path / f"v{i}.wav", 8.0), 8.0) for i in range(8)]          # 64 s of voice + pads: over 59 s
-    fitted, factor = assemble.fit_short(lines, tmp_path / "fit")
+    fitted, factor = assemble.fit_short(lines, tmp_path / "fit", limit=59.0)
     assert 1.0 < factor <= assemble.FIT_MAX
     total = sum(d for _w, d in fitted) + len(fitted) * assemble.PAD_S
     assert total <= 59.0 + 0.5
     lines2 = [(_tone(tmp_path / f"s{i}.wav", 4.0), 4.0) for i in range(5)]
-    assert assemble.fit_short(lines2, tmp_path / "fit2")[1] == 1.0
+    assert assemble.fit_short(lines2, tmp_path / "fit2", limit=59.0)[1] == 1.0
 
 
 def test_source_strip_sits_at_top_and_skips_avatar_scenes():

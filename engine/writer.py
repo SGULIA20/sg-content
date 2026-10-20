@@ -12,7 +12,7 @@ MODEL = "claude-opus-5-5"
 GEMINI_MODEL = "gemini-3.8-flash"
 USD_PER_M_IN, USD_PER_M_OUT = 4.0, 20.0
 SPEND_FILE = LOGS_DIR / "claude-spend.json"
-WRITER_FOR = {"short": "gemini", "long": "claude"}      # Shorts on the free tier model; longs on Claude
+WRITER_FOR = {"short": "claude", "long": "claude"}      # Claude writes everything; Gemini only as the fallback (founder, 20 Oct: the free model wrote weak stories)
 FENCE = re.compile(r"^```(?:json)?\s*|\s*```$", re.MULTILINE)
 
 

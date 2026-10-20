@@ -6,7 +6,7 @@ import subprocess
 from pathlib import Path
 
 from . import assemble, captions, cards, music
-from .config import VIDEO
+from .config import STORY_MAX_S, VIDEO
 
 FPS = VIDEO["fps"]
 TOP, PANEL, BOTTOM = 0.17, 0.66, 0.17
@@ -55,6 +55,10 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     band_h = int(h * TOP)
     title = (piece.script or {}).get("title") or (piece.script or {}).get("hook", "")
     title_png = cards.render("storytitle", {"title_html": title_html(title), "handle": HANDLE}, out_dir / "title.png", (w, band_h))
+    if piece.kind == "short":
+        lines, factor = assemble.fit_short(lines, out_dir / "vo-fit", limit=STORY_MAX_S)
+        if factor > 1.0:
+            print(f"voice sped up {factor}x to fit the story under {STORY_MAX_S:.0f} s", flush=True)
     voice_wav = out_dir / "voice.wav"
     starts = assemble._voice_track(lines, voice_wav)
     piece.timings = starts

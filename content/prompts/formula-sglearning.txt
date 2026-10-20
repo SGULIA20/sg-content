@@ -4,13 +4,14 @@ STORY FIRST. The plot is the money situation or the news item itself: what happe
 
 SUPPORTING CAST (drawn the same in every reel; use a name in `visual.prompt` only when the story needs that kind of person): SG (early forties, beard, striped shirt: the voice of reason, use sparingly), WIFE (runs the house budget), BETA (boy, 10) and BETI (girl, 6) for a child's question, PAPA (kurta, FD receipts, 'safe hai'), MUMMY (saree, chai, worried), BHAI (hoodie, phone, follows tips), BEHEN (office wear, sceptical), BANK UNCLE (behind a counter), SHOPKEEPER (kirana counter). Otherwise describe an unnamed person ('a young man at a petrol pump').
 
-STRUCTURE of a Short (7 to 9 scenes, 90-135 words of voice in total):
-1. `title`: the hook on the top band, 5 to 8 words, Hinglish, ONE keyword wrapped in *stars* for the yellow highlight, one emoji at the end. Examples: "Papa ne 20 saal *FD* mein rakha… 💔", "Bro ne *no-cost EMI* liya 💀", "Shaadi ka budget, *kiska* paisa? 🕊️".
-2. Scene 1: a relatable moment from the news or the money situation, told as a concrete moment anyone would recognise. Start inside the moment, no preamble.
-3. Scenes 2-4: what they did and why it felt right (the mistake everyone makes).
-4. Scene 5-6: the twist: the one line that changes how you see it (the narrator's voice, or a supporting character if the scene needs one). Use at most TWO numbers in the whole story, both from the fact sheet or the claims library, said the way a person says them ("lagbhag 7 crore", "20 saal", "7 percent").
-5. Scene 7: what the viewer should do or notice, in one plain line. Finance reels end with "Yeh investment advice nahi hai" spoken once.
+STRUCTURE of a Short story (60-90 seconds; 10 to 13 scenes; 150-230 words of voice in total; one scene = one drawn panel = one spoken beat):
+1. `title`: the hook on the top band, 5 to 8 words, Hinglish, ONE keyword wrapped in *stars* for the yellow highlight, one emoji at the end.
+2. Scenes 1-2 SETUP: a concrete moment anyone recognises, where it happens, who is there, what they believe. Start inside the moment, no preamble.
+3. Scenes 3-5 THE CHOICE: what they did and WHY it felt right. Say the reasoning out loud; the viewer must understand the logic before it is broken.
+4. Scenes 6-8 WHAT REALLY HAPPENED: the cost, in plain words, with at most TWO numbers in the whole story, both from the fact sheet or the claims library, said the way a person says them ("lagbhag 7 percent", "20 saal"). Explain every term in one plain line the first time it appears ("real return yaani mehngai kaat kar jo bacha").
+5. Scenes 9-10 THE TWIST: the one line that changes how you see it, then one line on what the viewer can do or notice. Finance reels speak "Yeh investment advice nahi hai" once here.
 6. Last scene: `end_question`, one easy question in a word or two.
+Do not compress: a story that skips the why reads as a shortcut. If a beat needs two sentences, use two scenes.
 
 VISUALS: every scene is `visual.type` "art". `visual.prompt` is an English description of one drawn panel: who is in it (cast names), where, what they are doing, the emotion, time of day. No text in the picture. `card` is always null; numbers live in the spoken line and the caption, never on a card.
 

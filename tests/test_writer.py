@@ -140,13 +140,13 @@ def test_schema_has_title_and_story_scripts_validate():
     assert "title" in schema.PIECE_SCHEMA["required"]
 
 
-def test_shorts_use_gemini_writer_longs_use_claude(tmp_path):
+def test_claude_writes_shorts_and_longs(tmp_path):
     fm = FakeMessages(text=json.dumps(good_script()))
     g_calls = []
     g = lambda model, body, key=None: g_calls.append(model) or {"candidates": [{"content": {"parts": [{"text": json.dumps(good_script())}]}}]}
     p = _piece()
     out = writer.write(p, {"facts": []}, [], {}, formula="F", client=fake_client(fm), gemini_ask=g, spend=tmp_path / "s.json")
-    assert out["writer"] == "gemini" and fm.calls == []                      # Shorts: free Gemini writer
+    assert out["writer"] == "claude" and len(fm.calls) == 1                  # Claude writes Shorts too (founder, 20 Oct)
     p.kind = "long"
     out = writer.write(p, {"facts": []}, [], {}, formula="F", client=fake_client(fm), gemini_ask=g, spend=tmp_path / "s.json")
     assert out["writer"] == "claude"

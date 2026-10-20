@@ -5,6 +5,7 @@ import subprocess
 from pathlib import Path
 
 SHORT_RANGE = (40.0, 59.0)
+STORY_RANGE = (40.0, 95.0)
 LONG_TOLERANCE = 0.20
 LUFS_TARGET, LUFS_TOL = -16.0, 1.5
 FREEZE_MAX_S = 3.0
@@ -48,13 +49,13 @@ def black_start(path: Path, window: float = BLACK_WINDOW_S) -> bool:
 
 
 def report(path: Path, kind: str, voiced_seconds: float, caption_cues: list, target_seconds: float | None = None,
-           check_freeze: bool = True) -> list:
+           check_freeze: bool = True, story: bool = False) -> list:
     """Empty list = pass. Each reason starts with its gate name."""
     reasons = []
     info = probe(path)
     dur = info["duration"]
     if kind == "short":
-        lo, hi = SHORT_RANGE
+        lo, hi = STORY_RANGE if story else SHORT_RANGE
     else:
         target = target_seconds or dur
         lo, hi = target * (1 - LONG_TOLERANCE), target * (1 + LONG_TOLERANCE)

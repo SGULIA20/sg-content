@@ -1,0 +1,160 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 7.05,
+   "quote": "Eligible senior citizens can earn up to 7.05% p.a. on 5-year to 10-year deposits under the SBI WeCare scheme.",
+   "source_date": "2026-08-15",
+   "source_name": "GoldenPi",
+   "source_url": "https://goldenpi.com/blog/fixed-deposits/sbi-fd-interest-rates/",
+   "text": "Eligible senior citizens can secure an interest rate of up to 7.05 percent per annum on SBI deposits maturing in five to ten years under the WeCare scheme.",
+   "unit": "pct"
+  }
+ ],
+ "id": "preview-fd-story",
+ "ids": {},
+ "kind": "short",
+ "publish_day": "2026-10-21",
+ "reasons": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Papa ghar aate hi dining table par nayi FD receipt rakh dete hain.\n\nBank FD safe zaroor lagti hai, lekin tax aur mehangai ke baad aapki purchasing power par kya asar padta hai?\n\nYeh investment advice nahi hai.\n\nAapke ghar mein FD par kisko sabse zyada bharosa hai?",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#PersonalFinanceIndia",
+     "#IncomeTax",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Papa ghar aate hi dining table par nayi FD receipt rakh dete hain. Par tax aur mehangai ke baad sach mein kitna bachta hai? Aapke ghar mein FD par kisko sabse zyada bharosa hai? #PaiseKiKhabar #Finance"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Papa ghar aate hi dining table par nayi FD receipt rakh dete hain.\n\nBank FD safe zaroor lagti hai, par tax aur inflation ke baad asal munafa kitna bachta hai? Jaaniye real returns ka sach.",
+    "tags": [
+     "Fixed Deposit",
+     "FD Returns",
+     "Personal Finance India",
+     "SBI FD",
+     "Tax on FD",
+     "Inflation",
+     "Savings"
+    ],
+    "title": "FD mein 7.05% byaaj milkar bhi nuksan kyun?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Aapke ghar mein FD par kisko sabse zyada bharosa hai?",
+  "hook": "Papa ghar aate hi dining table par nayi FD receipt rakh dete hain.",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "Relatable opening",
+    "visual": {
+     "card": null,
+     "prompt": "PAPA wearing a light cotton kurta placing a paper fixed deposit receipt on a wooden dining table, looking proud and relaxed, warm daytime lighting.",
+     "type": "art"
+    },
+    "vo": "Papa ghar aate hi dining table par nayi FD receipt rakh dete hain."
+   },
+   {
+    "facts_used": [],
+    "label": "The traditional mindset",
+    "visual": {
+     "card": null,
+     "prompt": "PAPA smiling warmly while sitting on a wooden chair with folded hands, feeling completely secure, afternoon light.",
+     "type": "art"
+    },
+    "vo": "Chehre par sukoon tha, bole bank mein paisa hamesha bilkul safe rehta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Cultural context",
+    "visual": {
+     "card": null,
+     "prompt": "An open vintage steel almirah locker revealing neatly stacked passbooks and fixed deposit certificates, soft indoor lighting.",
+     "type": "art"
+    },
+    "vo": "Humare parivaaron mein saalon se savings ka matlab sirf FD receipt hi raha hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "The rate",
+    "visual": {
+     "card": null,
+     "prompt": "BANK UNCLE behind a public bank counter stamping an official document and handing it over to PAPA, friendly daytime atmosphere.",
+     "type": "art"
+    },
+    "vo": "Bank uncle ne unhe senior citizen scheme mein 7.05 percent ka byaaj diya."
+   },
+   {
+    "facts_used": [],
+    "label": "The question",
+    "visual": {
+     "card": null,
+     "prompt": "A warm cup of chai on a side table next to a grocery bill and loose coins, quiet morning mood.",
+     "type": "art"
+    },
+    "vo": "Par tax aur badhti mehangai ke baad, haath mein kya bacha?"
+   },
+   {
+    "facts_used": [],
+    "label": "The twist",
+    "visual": {
+     "card": null,
+     "prompt": "A small ice cube melting slowly on a steel plate, representing shrinking value over time, clean artistic composition.",
+     "type": "art"
+    },
+    "vo": "Tax katne ke baad, aapke paise ki khareedne ki taqat ghatt jati hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Advice & disclaimer",
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt and beard standing by a bookshelf, explaining calmly with an open hand gesture.",
+     "type": "art"
+    },
+    "vo": "Doosre options par dhyan dena bhi zaroori hai. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "End question",
+    "visual": {
+     "card": null,
+     "prompt": "PAPA and MUMMY sitting on a living room sofa discussing over tea, thoughtful expressions, cozy evening.",
+     "type": "art"
+    },
+    "vo": "Aapke ghar mein FD par kisko sabse zyada bharosa hai?"
+   }
+  ],
+  "title": "Papa ne bank mein *FD* karayi 🏦"
+ },
+ "status": "assembled",
+ "timings": [
+  0.0,
+  4.61,
+  9.86,
+  15.19,
+  21.6,
+  25.97,
+  31.06,
+  36.23
+ ],
+ "topic": {
+  "link": "",
+  "source": "evergreen",
+  "summary": "Evergreen: bank FD interest rates today, CPI inflation now, and the real return a household keeps after tax.",
+  "target_minutes": null,
+  "title": "Fixed deposit returns vs inflation in India: what a saver actually keeps (October 2026)"
+ },
+ "updated": "2026-10-20T19:09:41+00:00",
+ "writer": "gemini"
+}
