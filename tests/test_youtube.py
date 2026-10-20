@@ -103,3 +103,12 @@ def test_go_public_updates_privacy():
         seen.append((method, url, json_body)); return 200, {}, {"id": "v1"}
     assert youtube.go_public("tok", "v1", call=call) is True
     assert seen[0][0] == "PUT" and seen[0][2]["status"]["privacyStatus"] == "public" and seen[0][2]["id"] == "v1"
+
+
+def test_unlisted_kinds_upload_unlisted_without_publish_at(monkeypatch):
+    from engine import config
+    monkeypatch.setattr(config, "UNLISTED_KINDS", {"long"})
+    meta = youtube.metadata(_piece("long"), datetime(2026, 10, 25, 13, 30, tzinfo=timezone.utc), {})
+    assert meta["status"]["privacyStatus"] == "unlisted" and "publishAt" not in meta["status"]
+    meta = youtube.metadata(_piece(), datetime(2026, 10, 20, 14, 30, tzinfo=timezone.utc), {})
+    assert meta["status"]["privacyStatus"] == "private"

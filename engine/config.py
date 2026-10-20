@@ -74,3 +74,5 @@ STORY_WORDS = (150, 230)                      # a 60-90 s story at the clone's ~
 STORY_MAX_S = 95.0                            # YouTube Shorts and Reels allow up to 3 minutes; stories stop at about 90 s
 
 ENABLED_KINDS = {"short", "long"}             # longs twice a week per channel (founder, 20 Oct 2026)
+
+UNLISTED_KINDS = {"long"}                     # the first longs go up unlisted for the founder's check; `python -m engine.youtube --go-public` releases them

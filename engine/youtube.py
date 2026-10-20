@@ -111,7 +111,8 @@ def metadata(piece: Piece, publish_at_utc: datetime, env=None) -> dict:
     tags = [t.lstrip("#") for t in yt.get("tags", [])][:MAX_TAGS]
     status = {"privacyStatus": "private", "publishAt": publish_at_utc.strftime("%Y-%m-%dT%H:%M:%SZ"),
               "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}
-    if env.get("UNLISTED_DAY1") == "1":
+    from . import config
+    if env.get("UNLISTED_DAY1") == "1" or piece.kind in config.UNLISTED_KINDS:
         status = {"privacyStatus": "unlisted", "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}
     return {"snippet": {"title": title, "description": description[:5000], "tags": tags, "categoryId": CHANNELS[piece.channel].youtube_category,
                         "defaultLanguage": "hi", "defaultAudioLanguage": "hi"},

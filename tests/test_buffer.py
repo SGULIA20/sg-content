@@ -7,15 +7,13 @@ def _ready(root, pid, ch, kind, day, status="uploaded"):
     p = pieces.Piece(id=pid, channel=ch, kind=kind, publish_day=day); p.status = status; pieces.save(p, root)
 
 
-def test_needed_orders_longs_first_then_shorts(tmp_path, monkeypatch):
+def test_needed_orders_todays_shorts_then_one_long(tmp_path, monkeypatch):
     from engine import config
     monkeypatch.setattr(config, "ENABLED_KINDS", {"short", "long"})
-    need = buffer.needed(tmp_path, date(2026, 10, 19))             # Monday
-    assert need[0] == (date(2026, 10, 20), "arthvan", "long")        # longs first, earliest first
-    kinds = [k for _d, _c, k in need]
-    n = kinds.count("long")
-    assert n >= 4 and kinds[:n] == ["long"] * n and all(k == "short" for k in kinds[n:])
-    assert (date(2026, 10, 19), "sglearning", "short") in need and (date(2026, 10, 19), "arthvan", "short") in need
+    need = buffer.needed(tmp_path, date(2026, 10, 19))             # Monday: no long due today or tomorrow? arthvan long is Tue 20
+    assert need[0] == (date(2026, 10, 19), "arthvan", "short") and need[1] == (date(2026, 10, 19), "sglearning", "short")
+    assert need[2] == (date(2026, 10, 20), "arthvan", "long")          # then the earliest long, then tomorrow's Shorts
+    assert {k for _d, _c, k in need} == {"short", "long"}
 
 
 def test_needed_skips_uploaded_and_posted(tmp_path):
@@ -53,3 +51,12 @@ def test_needed_skips_kinds_not_enabled(tmp_path, monkeypatch):
     monkeypatch.setattr(config, "ENABLED_KINDS", {"short"})
     need = buffer.needed(tmp_path, date(2026, 10, 19))
     assert need and all(k == "short" for _d, _c, k in need)
+
+
+def test_needed_puts_imminent_shorts_before_longs_and_one_long_per_batch(tmp_path, monkeypatch):
+    from engine import config
+    monkeypatch.setattr(config, "ENABLED_KINDS", {"short", "long"})
+    need = buffer.needed(tmp_path, date(2026, 10, 21))              # Wednesday: both channels have a Short today, sglearning has a long today
+    assert need[0] == (date(2026, 10, 21), "arthvan", "short") and need[1] == (date(2026, 10, 21), "sglearning", "short")
+    assert need[2] == (date(2026, 10, 21), "sglearning", "long")
+    assert need[3][2] == "short"                                      # the next long waits behind the next day's Shorts

@@ -33,4 +33,15 @@ def needed(root: Path = ROOT, today_ist: date | None = None, horizon_short: int 
         for day in slots.publish_dates(ch, "short", today_ist, horizon_short):
             if slots.piece_id(day, ch, "short") not in done:
                 shorts.append((day, ch, "short"))
-    return [x for x in sorted(longs) + sorted(shorts) if x[2] in config.ENABLED_KINDS]
+    longs, shorts = sorted(longs), sorted(shorts)
+    # order: the Shorts due today or tomorrow, then one long, then the rest day by day (a long eats most of the daily voice quota)
+    soon = [x for x in shorts if (x[0] - today_ist).days <= 0]        # today's Shorts first (tomorrow's come in tomorrow's run)
+    later = [x for x in shorts if (x[0] - today_ist).days > 0]
+    ordered = soon + longs[:1]
+    rest_longs = longs[1:]
+    for x in later:
+        ordered.append(x)
+        if rest_longs and (x[0] - today_ist).days % 2 == 0:
+            ordered.append(rest_longs.pop(0))
+    ordered += rest_longs
+    return [x for x in ordered if x[2] in config.ENABLED_KINDS]

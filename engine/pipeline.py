@@ -277,7 +277,8 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
         meta = youtube.metadata(piece, slots.publish_at(piece.channel, piece.kind, piece.publish_day), env or os.environ)
         vid = youtube.upload(token, video, meta)
         youtube.set_thumbnail(token, vid, thumb)
-        if (env or os.environ).get("UNLISTED_DAY1") == "1":
+        from . import config as _cfg
+        if (env or os.environ).get("UNLISTED_DAY1") == "1" or piece.kind in _cfg.UNLISTED_KINDS:
             piece.ids["unlisted"] = True
         return vid
 
