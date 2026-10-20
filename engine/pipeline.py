@@ -136,29 +136,34 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False) -> 
     out_dir.mkdir(parents=True, exist_ok=True)
     # 1-4: topic → research → write → gates, up to three topics (skipped when an accepted script already exists: resume)
     script = piece.script if (piece.script and piece.status in RESUMABLE) else None
+    sheet, revise = None, None
     for attempt in range(TOPIC_TRIES if script is None else 0):
-        topic = _pick_topic(piece, deps, root, used)
-        if not topic:
-            pieces.save(pieces.transition(piece, "failed-topic", "no usable topic (for a mythology Short: its long is not made yet)"), root)
-            return piece
-        piece.topic = {**_jsonable(topic), "target_minutes": LONG_TARGET_MINUTES.get(piece.channel) if piece.kind == "long" else None}
-        used.add(topic.get("link") or topic.get("id"))
-        if topic.get("long_scenes"):
-            piece.facts = topic["long_facts"]
-            sheet = {"facts": piece.facts, "summary": "", "long_scenes": topic["long_scenes"], "hook": topic["hook"]}
+        if revise is None:                                             # a fresh topic (a length-only miss keeps the topic and asks for a trim)
+            topic = _pick_topic(piece, deps, root, used)
+            if not topic:
+                pieces.save(pieces.transition(piece, "failed-topic", "no usable topic (for a mythology Short: its long is not made yet)"), root)
+                return piece
+            piece.topic = {**_jsonable(topic), "target_minutes": LONG_TARGET_MINUTES.get(piece.channel) if piece.kind == "long" else None}
+            used.add(topic.get("link") or topic.get("id"))
+            if topic.get("long_scenes"):
+                piece.facts = topic["long_facts"]
+                sheet = {"facts": piece.facts, "summary": "", "long_scenes": topic["long_scenes"], "hook": topic["hook"]}
+            else:
+                try:
+                    sheet = deps.research(topic, piece.channel)
+                except (research.ResearchError, gemini.GeminiError) as e:
+                    pieces.save(pieces.transition(piece, "failed-research", f"try {attempt + 1}: {secrets.scrub(str(e))[:200]}"), root)
+                    continue
+                piece.facts = sheet.get("facts", [])
+                if not piece.facts:
+                    pieces.save(pieces.transition(piece, "failed-research", f"try {attempt + 1}: no sourced facts survived the checks"), root)
+                    continue
+            pieces.save(pieces.transition(piece, "researched"), root)
         else:
-            try:
-                sheet = deps.research(topic, piece.channel)
-            except (research.ResearchError, gemini.GeminiError) as e:
-                pieces.save(pieces.transition(piece, "failed-research", f"try {attempt + 1}: {secrets.scrub(str(e))[:200]}"), root)
-                continue
-            piece.facts = sheet.get("facts", [])
-            if not piece.facts:
-                pieces.save(pieces.transition(piece, "failed-research", f"try {attempt + 1}: no sourced facts survived the checks"), root)
-                continue
-        pieces.save(pieces.transition(piece, "researched"), root)
+            piece.topic["revise"] = revise
         written = deps.write(piece, sheet, deps.library, deps.hashtags)
         piece.script, piece.writer = written["script"], written["writer"]
+        piece.topic.pop("revise", None)
         reasons = deps.lint(piece, prior)
         unmatched = deps.claims_check(piece)
         if unmatched:
@@ -168,6 +173,7 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False) -> 
             break
         pieces.transition(piece, "rejected", f"try {attempt + 1}: " + "; ".join(reasons))
         pieces.save(piece, root)
+        revise = reasons[0] if all(r.startswith("length") for r in reasons) else None
     if script is None:
         return piece
     pieces.save(pieces.transition(piece, "written"), root)

@@ -119,3 +119,10 @@ def test_user_message_serialises_datetime_in_topic(tmp_path):
     fm = FakeMessages(text=json.dumps(good_script()))
     out = writer.write(p, {"facts": []}, [], {}, formula="F", client=fake_client(fm), spend=tmp_path / "s.json")
     assert out["writer"] == "claude" and "2026-10-20T03:45:00+00:00" in fm.calls[0]["messages"][0]["content"]
+
+
+def test_revise_note_reaches_the_prompt(tmp_path):
+    p = _piece(); p.topic["revise"] = "length: 150 words, allowed 90-135"
+    fm = FakeMessages(text=json.dumps(good_script()))
+    writer.write(p, {"facts": []}, [], {}, formula="F", client=fake_client(fm), spend=tmp_path / "s.json")
+    assert "REVISION" in fm.calls[0]["messages"][0]["content"] and "150 words" in fm.calls[0]["messages"][0]["content"]

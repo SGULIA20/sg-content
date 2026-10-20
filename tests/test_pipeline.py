@@ -226,3 +226,21 @@ def test_mid_scene_avatar_uses_avatar_card(tmp_path):
     d.write = write_fn
     pipeline.make(_piece(), d, tmp_path)
     assert kinds[:2] == ["hook", "avatar"]
+
+
+def test_length_only_reject_asks_writer_to_revise_same_topic(tmp_path):
+    n = {"lint": 0}
+
+    def lint_fn(piece, prior):
+        n["lint"] += 1
+        return ["length: 150 words, allowed 90-135"] if n["lint"] == 1 else []
+
+    seen = []
+
+    def write_fn(piece, sheet, library, hashtags):
+        seen.append(dict(piece.topic)); return {"script": good_script(), "writer": "claude", "note": ""}
+
+    d, calls = deps(tmp_path, lint=lint_fn, write=write_fn)
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert p.status == "uploaded" and calls["topics"] == 1 and calls["research"] == 1 and len(seen) == 2
+    assert "revise" not in seen[0] and "150 words" in seen[1]["revise"]

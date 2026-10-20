@@ -3,42 +3,62 @@
  "facts": [
   {
    "label": "official",
-   "number": 50000.0,
-   "quote": "Sl. No. Notified Amount(₹ crore) Tenor (day) Window Timing Date of Reversal 1 50,000 1 09:30 AM to 10:00 AM October 22, 2026 (Thursday)",
-   "source_date": "2026-10-19",
+   "number": 20000.0,
+   "quote": "Government of India announces the conversion/switch of its securities through auction for an aggregate amount of ₹20,000 crore (face value).",
+   "source_date": "2026-10-14",
    "source_name": "RBI",
-   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63833",
-   "text": "The Reserve Bank of India announced an overnight Variable Rate Repo auction with a notified amount of 50,000 crore rupees to be conducted on October 21, 2026.",
+   "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63806",
+   "text": "The Reserve Bank of India conducted a conversion and switch auction of Government of India securities for an aggregate notified amount of 20,000 crore INR.",
    "unit": "crore INR"
   },
   {
    "label": "official",
-   "number": 1.0,
-   "quote": "Sl. No. Notified Amount(₹ crore) Tenor (day) Window Timing Date of Reversal 1 50,000 1 09:30 AM to 10:00 AM October 22, 2026 (Thursday)",
+   "number": 2000.0,
+   "quote": "Total amount of source security accepted (Face value, in ₹ crore) 2,000.000 3,000.000 1,925.000 2,377.180 0 2,000.000",
    "source_date": "2026-10-19",
    "source_name": "RBI",
-   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63833",
-   "text": "The tenor for the central bank's liquidity infusion operation is 1 day.",
-   "unit": "day"
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63829",
+   "text": "The RBI accepted 2,000.000 crore INR of the short-term source security 8.26% GS 2027 in the switch auction.",
+   "unit": "crore INR"
   },
   {
-   "label": "reported",
-   "number": 8.15,
-   "quote": "Effective 15 October 2026, the State Bank of India increased its External Benchmark Linked Lending Rate (EBLR) from 7.90% to 8.15%, plus the credit risk premium (CRP) and benchmark spread (BSP).",
-   "source_date": "2026-10-17",
-   "source_name": "Mint",
-   "source_url": "https://www.livemint.com/money/personal-finance/home-loan-alert-sbi-pnb-and-4-other-banks-revise-lending-rates-how-borrowers-may-be-affected-11792208843566.html",
-   "text": "State Bank of India increased its External Benchmark Linked Lending Rate to 8.15 percent effective October 15, 2026, raising loan costs for retail borrowers.",
+   "label": "official",
+   "number": 7.8391,
+   "quote": "Cut-off price (₹) / yield (%) for destination security 92.32/7.8391 100.15/7.3867 98.38/7.4311 95.44/7.3598 NA 101.08/7.3590",
+   "source_date": "2026-10-19",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63829",
+   "text": "The cut-off yield for the ultra-long destination security 7.19% GS 2060 was determined at 7.8391 percent.",
    "unit": "pct"
   },
   {
-   "label": "reported",
-   "number": 7.75,
-   "quote": "Its Repo Linked Lending Rate (RLLR) rose from 7.50% to 7.75%, plus CRP.",
-   "source_date": "2026-10-17",
-   "source_name": "Mint",
-   "source_url": "https://www.livemint.com/money/personal-finance/home-loan-alert-sbi-pnb-and-4-other-banks-revise-lending-rates-how-borrowers-may-be-affected-11792208843566.html",
-   "text": "State Bank of India revised its Repo Linked Lending Rate upward to 7.75 percent.",
+   "label": "official",
+   "number": 3014.193,
+   "quote": "Total amount of destination security issued (Face value, in ₹ crore) 2,191.941 3,014.193 1,968.890 2,509.916 0 1,966.176",
+   "source_date": "2026-10-19",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63829",
+   "text": "The central bank issued 3,014.193 crore INR in destination bond 7.41% GS 2036 against accepted bids from market participants.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "official",
+   "number": 0.0,
+   "quote": "i. No. of offers received 2 34 12 18 0 14",
+   "source_date": "2026-10-19",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63829",
+   "text": "The conversion offer for the 6.03% GS 2029 paper into 7.50% GS 2034 drew zero offers from primary dealers and financial institutions.",
+   "unit": "offers"
+  },
+  {
+   "label": "official",
+   "number": 7.3867,
+   "quote": "Cut-off price (₹) / yield (%) for destination security 92.32/7.8391 100.15/7.3867 98.38/7.4311 95.44/7.3598 NA 101.08/7.3590",
+   "source_date": "2026-10-19",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63829",
+   "text": "The conversion auction set the cut-off yield for the destination security 7.41% GS 2036 at 7.3867 percent.",
    "unit": "pct"
   }
  ],
@@ -47,213 +67,186 @@
  "kind": "short",
  "publish_day": "2026-10-20",
  "reasons": [
-  "try 1: length: 172 words, allowed 110-170; numbers without a source: 2.44e+11, 2.44e+11, 1628, 8.1121e+11, 2.3016e+11, 3.16e+09, 5.5",
-  "try 2: numbers without a source: 2e+10, 2e+10, 2e+10, 2.19194e+10, 4.058e+10",
-  "try 3: numbers without a source: 2.44e+11, 2.44e+11, 1e+10",
-  "voice synthesis failed (429): Rate limit exceeded for model gemini-3.8-flash-tts (limit: 100 requests per day on Tier 1). Please retry in 8h35m47s or upgrade your tier at https://ai.dev/rate-limit.",
-  "duration: 70.2s, allowed 40-59s"
+  "try 1: length: 147 words, allowed 90-135",
+  "try 2: length: 138 words, allowed 90-135; numbers without a source: 1628, 1e+10, 7e+09, 1e+10, 1e+10, 1628, 1e+07, 1e+10, 1628, 1e+07, 1e+10",
+  "try 3: length: 144 words, allowed 90-135"
  ],
  "script": {
   "captions": {
    "instagram": {
-    "caption": "RBI kal banks ko 50,000 crore dega, sirf 1 din ke liye.\nYeh rate cut nahi, sirf liquidity ka chhota injection hai.\nSBI ka EBLR 8.15 percent aur RLLR 7.75 percent ho chuka hai.\nKya is saal aapki EMI badhi hai? Haan ya na likhiye.\nYeh investment advice nahi hai.",
+    "caption": "Sarkar ne 20,000 crore ka karz aage khiska diya.\nLambe bond par yield 7.8391 percent, byaaj ooncha hai.\nEMI jaldi kam hone ki umeed kam, FD ko faayda.\nAapka paisa FD mein hai ya SIP mein?\nYeh investment advice nahi hai.",
     "hashtags": [
      "#PaiseKiKhabar",
      "#SeedhiBaat",
      "#RBI",
      "#EMI",
+     "#SIP",
      "#PersonalFinanceIndia",
-     "#HinglishFinance",
      "#LearningWithSG"
     ]
    },
    "threads": {
-    "text": "RBI kal banks ko 50,000 crore dega, sirf 1 din ke liye. Rate cut nahi, bas liquidity. Kya is saal aapki EMI badhi hai? Haan ya na batao. #PaiseKiKhabar #Finance"
+    "text": "Sarkar ne 20,000 crore ka karz lambe bonds mein shift kiya, yield 7.8391 percent tak. EMI jaldi sasti nahi, FD ko faayda. Aapka paisa FD mein hai ya SIP mein? #PaiseKiKhabar #Finance"
    },
    "youtube": {
-    "chapters": [
-     "00:00 RBI ka 50,000 crore auction",
-     "00:00 Yeh kyun ho raha hai",
-     "00:00 Aapki EMI par matlab"
-    ],
-    "description": "RBI kal banks ko 50,000 crore dega, sirf 1 din ke liye. Yeh liquidity ka chhota injection hai, rate cut nahi. SBI ka EBLR 8.15 percent aur RLLR 7.75 percent hai, isliye apni EMI ek baar check kariye.",
+    "chapters": [],
+    "description": "Sarkar ne 20,000 crore ke chhote bonds ko lambe bonds se badal diya. Yield 7.8391 percent tak gaya, yaani byaaj abhi ooncha hai. Iska seedha matlab: home loan EMI jaldi sasti hone ki umeed kam, par FD aur debt funds ko faayda.",
     "tags": [
      "RBI",
-     "repo auction",
-     "VRR",
-     "liquidity",
+     "switch auction",
+     "government bonds",
+     "bond yield",
      "EMI",
      "home loan",
-     "SBI EBLR",
-     "RLLR",
-     "personal finance",
-     "Hindi finance"
+     "FD",
+     "debt fund",
+     "paise ki khabar",
+     "Hinglish finance"
     ],
-    "title": "Sirf 1 din ke liye 50,000 crore? RBI ka plan"
+    "title": "Sarkar ne 20,000 crore ka karz kyun khiskaya?"
    }
   },
   "cards": [
    {
-    "big_number": "₹50,000 crore",
-    "line": "Overnight VRR auction, Wednesday",
+    "big_number": "₹20,000 crore",
+    "line": "Chhote sarkari bonds ki jagah lambe bonds",
     "source": "RBI"
    },
    {
-    "big_number": "1 din",
-    "line": "Tenor: Thursday ko paisa wapas RBI ke paas",
+    "big_number": "7.8391%",
+    "line": "Sabse lambe bond ka cut-off yield",
     "source": "RBI"
    },
    {
-    "big_number": "8.15%",
-    "line": "SBI ka naya EBLR",
-    "source": "Mint"
+    "big_number": "7.3867%",
+    "line": "Doosre destination bond ka cut-off yield",
+    "source": "RBI"
    },
    {
-    "big_number": "7.75%",
-    "line": "SBI ka naya RLLR",
-    "source": "Mint"
+    "big_number": "0",
+    "line": "Ek conversion offer par aaye offers",
+    "source": "RBI"
    }
   ],
   "carousel": true,
-  "end_question": "Kya is saal aapki EMI badhi hai? Comments mein bas haan ya na likhiye.",
-  "hook": "RBI kal banks ko 50,000 crore dega, sirf 1 din ke liye. Kyun?",
+  "end_question": "Aap batao, aapka paisa FD mein hai ya SIP mein? Ek word mein likho.",
+  "hook": "Sarkar ne 20,000 crore ka karz aage khiska diya. Aapki EMI par asar hoga?",
   "scenes": [
    {
     "facts_used": [
-     0,
-     1
+     0
     ],
-    "label": "official",
+    "label": "Hook",
     "visual": {
      "card": null,
      "prompt": "surprised",
      "type": "avatar"
     },
-    "vo": "RBI kal banks ko 50,000 crore dega, sirf 1 din ke liye. Kyun?"
+    "vo": "Sarkar ne 20,000 crore ka karz aage khiska diya. Aapki EMI par asar hoga?"
    },
    {
     "facts_used": [
      0
     ],
-    "label": "official",
+    "label": "Kya hua",
     "visual": {
      "card": {
-      "big_number": "₹50,000 crore",
-      "line": "Overnight VRR auction, Wednesday",
+      "big_number": "₹20,000 crore",
+      "line": "Chhote sarkari bonds ki jagah lambe bonds",
       "source": "RBI"
      },
-     "prompt": "RBI overnight VRR auction notified amount",
+     "prompt": "",
      "type": "card"
     },
-    "vo": "Wednesday ko RBI ek Variable Rate Repo auction karega. Notified amount hai 50,000 crore rupaye."
-   },
-   {
-    "facts_used": [
-     1
-    ],
-    "label": "official",
-    "visual": {
-     "card": {
-      "big_number": "1 din",
-      "line": "Tenor: Thursday ko paisa wapas RBI ke paas",
-      "source": "RBI"
-     },
-     "prompt": "Tenor of the repo auction",
-     "type": "card"
-    },
-    "vo": "Tenor sirf 1 din ka hai. Thursday ko yeh paisa wapas RBI ke paas jayega."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "Painted scene of a busy Indian bank branch at morning, empty cash trays and a clock showing early hours, warm muted tones, no text, no real people",
-     "type": "art"
-    },
-    "vo": "Kabhi kabhi banks ke paas roz ka cash tight ho jata hai. Tab overnight udhaar ki dar upar bhaagne lagti hai."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "Painted illustration of water flowing from a large reservoir into many small channels feeding a city, calm evening light, no text, no real people",
-     "type": "art"
-    },
-    "vo": "RBI auction se thoda cash system mein daalta hai, taaki rates shant rahein. Yeh liquidity ka chhota injection hai, rate cut nahi."
+    "vo": "RBI ne switch auction kiya. Chhote bonds wapas liye, badle mein lambe bonds diye. Kul amount tha 20,000 crore."
    },
    {
     "facts_used": [
      2
     ],
-    "label": "reported",
+    "label": "Kya hua",
     "visual": {
      "card": {
-      "big_number": "8.15%",
-      "line": "SBI ka naya EBLR",
-      "source": "Mint"
+      "big_number": "7.8391%",
+      "line": "Sabse lambe bond ka cut-off yield",
+      "source": "RBI"
      },
-     "prompt": "SBI EBLR revised",
+     "prompt": "",
      "type": "card"
     },
-    "vo": "Par loan ki dar pehle hi badh chuki hai. SBI ne apna EBLR 8.15 percent kar diya hai."
+    "vo": "Sabse lambe bond par cut-off yield aaya 7.8391 percent. Lamba udhaar, aur ooncha byaaj."
    },
    {
     "facts_used": [
-     3
+     5
     ],
-    "label": "reported",
+    "label": "Kya hua",
+    "visual": {
+     "card": {
+      "big_number": "7.3867%",
+      "line": "Doosre destination bond ka cut-off yield",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Doosre bond par yield raha 7.3867 percent. Byaaj har taraf ooncha hi hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "Kyun hua",
+    "visual": {
+     "card": null,
+     "prompt": "A large old-fashioned ledger book on a wooden desk with a calendar whose pages are being pushed forward, warm muted lighting, no text",
+     "type": "art"
+    },
+    "vo": "Kyun kiya? Sarkar paas ka repayment bojh aage khiskana chahti hai. Ek offer par to 0 offers aaye."
+   },
+   {
+    "facts_used": [],
+    "label": "Aapke liye matlab",
     "visual": {
      "card": null,
      "prompt": "explaining_front",
      "type": "avatar"
     },
-    "vo": "Aapke liye matlab? SBI ka RLLR bhi ab 7.75 percent hai. Home loan repo se juda hai, to agli EMI check kariye. Yeh auction aapki EMI turant kam nahi karega."
+    "vo": "Aapke liye matlab? Sarkari yield ooncha, to banks ka paisa mehenga. Home loan EMI jaldi ghatne ki umeed kam. Par FD aur debt funds ko faayda. Tulna ke liye, PPF 7.1 percent deta hai."
    },
    {
     "facts_used": [],
-    "label": null,
+    "label": "Disclaimer",
     "visual": {
      "card": null,
-     "prompt": "Painted scene of a calm Indian family at a dining table reviewing papers with a cup of tea, soft daylight, no text, no real people",
+     "prompt": "A calm Indian family sitting at a dining table reviewing papers with a cup of tea, soft evening light, painted style, no text",
      "type": "art"
     },
-    "vo": "Yeh investment advice nahi hai. Loan ya FD ka faisla apne advisor se pooch kar lijiye."
+    "vo": "Yeh investment advice nahi hai. Faisla apne advisor se pooch kar lijiye."
    },
    {
     "facts_used": [],
-    "label": null,
+    "label": "Sawaal",
     "visual": {
      "card": null,
-     "prompt": "Painted illustration of a house key resting on a calendar beside a small diya-lit window, gentle warm colours, no text, no real people",
+     "prompt": "Two glass jars on a table, one filled with coins and one with a growing small plant, bright clean background, painted style, no text",
      "type": "art"
     },
-    "vo": "Kya is saal aapki EMI badhi hai? Comments mein bas haan ya na likhiye."
+    "vo": "Aap batao, aapka paisa FD mein hai ya SIP mein? Ek word mein likho."
    }
   ]
  },
- "status": "qa_failed",
- "timings": [
-  0.0,
-  6.57,
-  14.22,
-  19.43,
-  26.44,
-  35.89,
-  44.14,
-  58.27,
-  64.48
- ],
+ "status": "rejected",
+ "timings": [],
  "topic": {
-  "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63833",
-  "published": "2026-10-19T19:05:00+00:00",
+  "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63829",
+  "published": "2026-10-19T15:50:00+00:00",
   "rank": 5,
   "source": "RBI Press Releases",
-  "summary": "      On a review of current and evolving liquidity conditions in the near term, it has been decided to conduct a Variable Rate Repo (VRR) auction on Wednesday, October 21, 2026, as under:                         Sl. No.          Notified Amount(&#8377; crore)          Tenor          (day)          Window Timing          Date of Reversal                          1          50,000          1          09:30 AM to 10:00 AM          October 22, 2026          (Thursday)                    2. The operational guidelines for the auction will be same as given in Reserve Bank&rsquo;s Press Release 2021-2022/1572 dated January 20, 2022.      Ajit Prasad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Deputy General Manager        (Communications)&nbsp;&nbsp;&nbsp;&nbsp;      Press Release: 2026-2027/1355             ",
+  "summary": "                    A.        Source Security        8.26% GS 2027         7.17% GS 2028        7.06% GS 2028        7.26% GS 2029        6.03% GS 2029         6.79% GS 2029                     B.        Notified Amount (in &#8377; crore)        2,000         3,000         3,000         4,000         4,000        4,000                    Destination Security        7.19% GS 2060         7.41% GS 2036        7.23% GS 2039        6.64% GS 2035        7.50% GS 2034         7.57% GS 2033                     C.        i. No. of offers received        2         34         12         18        0        14                    ii. Total amount of Source Security offered (Face value, in &#8377; crore)        2,003.098         4,058.000        3,425.000        2,378.180        0.000        2,185.000                    iii. No. of offers accepted        1        18        11        17        0        7                    iv. Total amount of source security accepted (Face value, in &#8377; crore)        2,000.000         3,000.000         1,925.000         2,377.180         0        2,000.000                    v. Total amount of destination security issued (Face value, in &#8377; crore)        2,191.941         3,014.193         1,968.890         2,509.916         0        1,966.176                    vi. Cut-off price (&#8377;) / yield (%) for destination security         92.32/7.8391        100.15/7.3867        98.38/7.4311        95.44/7.3598        NA        101.08/7.3590          Ajit Prasad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Deputy General Manager    (Communications)&nbsp;&nbsp;&nbsp;&nbsp;Press Release: 2026-2027/1351  ",
   "target_minutes": null,
-  "title": "RBI to conduct Overnight Variable Rate Repo (VRR) auction under LAF on October 21, 2026"
+  "title": "Result: Conversion/Switch Auction of Government of India Securities"
  },
- "updated": "2026-10-20T05:32:01+00:00",
+ "updated": "2026-10-20T05:41:53+00:00",
  "writer": "claude"
 }
