@@ -88,7 +88,7 @@ def set_paused(flag: bool, root: Path = ROOT) -> None:
         f.unlink()
 
 
-def poll_commands(env=None, state: Path = ROOT / "logs" / "tg-offset.json", get=_get, post=_post, root: Path = ROOT, status_fn=None) -> list:
+def poll_commands(env=None, state: Path = ROOT / "logs" / "tg-offset.json", get=_get, post=_post, root: Path = ROOT, status_fn=None, handler=None) -> list:
     """Reads new messages from the founder's chat and applies /pause, /resume, /status. Returns the commands handled."""
     token, chat = _config(env)
     if not token:
@@ -115,6 +115,11 @@ def poll_commands(env=None, state: Path = ROOT / "logs" / "tg-offset.json", get=
             handled.append("/status")
             line = status_fn() if status_fn else ("paused" if paused(root) else "running")
             post(API.format(token=token, method="sendMessage"), {"chat_id": chat, "text": secrets.scrub(line)})
+        elif handler and msg.get("text"):
+            reply = handler(msg["text"].strip())
+            if reply:
+                handled.append(msg["text"].strip())
+                post(API.format(token=token, method="sendMessage"), {"chat_id": chat, "text": secrets.scrub(reply)[:4000]})
     Path(state).parent.mkdir(parents=True, exist_ok=True)
     Path(state).write_text(json.dumps({"offset": last}))
     return handled
