@@ -106,3 +106,12 @@ def test_wait_gives_up_with_error():
 
 def test_api_host_matches_instagram_login_tokens():
     assert instagram.API.startswith("https://graph.instagram.com/")
+
+
+def test_reel_gets_cover_url_when_cover_exists(tmp_path):
+    fc = FakeCall()
+    p = _piece()
+    (tmp_path / "out" / p.id).mkdir(parents=True); (tmp_path / "out" / p.id / "cover.jpg").write_bytes(b"j")
+    instagram.publish_piece(p, {"IG_ACCESS_TOKEN": "t", "IG_USER_ID": "u", "GITHUB_REPOSITORY": "r"}, call=fc, sleep=lambda s: None, root=tmp_path)
+    reel = next(c for c in fc.calls if c[2].get("media_type") == "REELS")
+    assert reel[2]["cover_url"].endswith("/cover.jpg")

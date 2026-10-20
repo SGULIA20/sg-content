@@ -137,11 +137,14 @@ def _label_chips(piece: Piece, deps: Deps, out_dir: Path) -> dict:
 
 
 def _thumb(piece: Piece, deps: Deps, out_dir: Path) -> Path:
+    """A drawn reaction panel with two or three shock words (engine.thumbs); Shorts also get a 9:16 cover for Instagram."""
+    from . import thumbs
+    if is_story(piece):
+        return thumbs.make(piece, out_dir, paint=deps.paint, render=deps.render_card, cast_refs=deps.cast_refs or (lambda s: []))["thumb"]
     title = piece.script["captions"]["youtube"]["title"]
     words = [w for w in title.replace("?", "? ").split() if w][:4]
     number = next((c["big_number"] for c in piece.script.get("cards", []) if c.get("big_number")), "")
-    picture = out_dir / "visual00.png" if (is_story(piece) and (out_dir / "visual00.png").exists()) else deps.avatar("surprised")
-    return deps.render_card("thumb", {"words": words[:3], "number": number, "avatar_path": picture}, out_dir / "thumb.jpg", (1280, 720))
+    return deps.render_card("thumb", {"words": words[:3], "number": number, "avatar_path": deps.avatar("surprised")}, out_dir / "thumb.jpg", (1280, 720))
 
 
 def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pack_mode: bool = False) -> Piece:

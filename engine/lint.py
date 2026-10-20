@@ -16,6 +16,7 @@ AVATAR_MAX_SHARE = 0.25
 SIMILARITY_MAX = 0.6
 TITLE_MAX, IG_CAPTION_MAX, THREADS_MAX = 60, 2200, 500
 IG_TAGS = (5, 8)
+SHARE = re.compile(r"\b(share|bhejo|bhej do|tag karo|forward)\b", re.I)
 BIG_NUMBER_MAX = 12
 PHONE = re.compile(r"(\+?\d[\d\s\-]{8,}\d)")
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+\.[\w.]+")
@@ -119,6 +120,8 @@ def check_captions(piece: Piece, hashtags: dict) -> list:
         reasons.append("instagram: caption too long")
     if piece.channel == "sglearning" and DISCLAIMER.lower() not in ig.get("caption", "").lower():
         reasons.append("disclaimer: Instagram caption must carry the disclaimer")
+    if not SHARE.search(ig.get("caption", "")):
+        reasons.append("share: Instagram caption needs one share line (share karo / bhejo) naming who to send it to")
     tags = ig.get("hashtags", [])
     if not IG_TAGS[0] <= len(tags) <= IG_TAGS[1]:
         reasons.append(f"hashtags: {len(tags)} Instagram tags, need {IG_TAGS[0]}-{IG_TAGS[1]}")

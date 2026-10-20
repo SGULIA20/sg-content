@@ -21,15 +21,18 @@ sglearning:
     - "#IncomeTax"
     - "#GST"
     - "#LearningWithSG"
-  youtube:
+  youtube:                     # first three show above the title (Shorts drop #Shorts for longs); 15 max or YouTube ignores all
     - "#Shorts"
-    - "#Finance"
-    - "#Hindi"
-    - "#StockMarket"
-    - "#India"
+    - "#PaiseKiKhabar"
+    - "#MoneyTipsHindi"
+    - "#PersonalFinanceIndia"
+    - "#HinglishFinance"
+    - "#FinanceHindi"
+    - "#StockMarketIndia"
+    - "#LearningWithSG"
   threads:
     - "#PaiseKiKhabar"
-    - "#Finance"
+    - "#MoneyTipsHindi"
 arthvan:
   instagram:
     - "#SabutKeSaath"
@@ -51,10 +54,13 @@ arthvan:
     - "#SGMythWorld"
   youtube:
     - "#Shorts"
-    - "#Mythology"
-    - "#Hindi"
-    - "#History"
-    - "#India"
+    - "#SabutKeSaath"
+    - "#IndianHistory"
+    - "#HinduMythology"
+    - "#Mahabharat"
+    - "#Ramayan"
+    - "#AncientIndia"
+    - "#SGMythWorld"
   threads:
     - "#SabutKeSaath"
-    - "#Mythology"
+    - "#IndianHistory"

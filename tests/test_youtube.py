@@ -112,3 +112,10 @@ def test_unlisted_kinds_upload_unlisted_without_publish_at(monkeypatch):
     assert meta["status"]["privacyStatus"] == "unlisted" and "publishAt" not in meta["status"]
     meta = youtube.metadata(_piece(), datetime(2026, 10, 20, 14, 30, tzinfo=timezone.utc), {})
     assert meta["status"]["privacyStatus"] == "private"
+
+
+def test_description_has_three_hashtags_first_and_cta():
+    p = _piece()
+    d = youtube.metadata(p, datetime(2026, 10, 20, 14, 30, tzinfo=timezone.utc), {})["snippet"]["description"]
+    paras = d.split("\n\n")
+    assert paras[0].startswith("Crude 100 dollar") and paras[1].count("#") == 3 and "Subscribe" in d and d.count("#") <= 15

@@ -21,9 +21,10 @@ def good_script():
         "end_question": "Aapko kya lagta hai?",
         "cards": [{"big_number": "88%", "line": "tel import", "source": "PPAC"}],
         "captions": {"youtube": {"title": "Oil 100 dollar: EMI par asar?", "description": "d", "tags": ["oil"], "chapters": []},
-                     "instagram": {"caption": "Oil 100 dollar. " + DISCLAIMER, "hashtags": ["#PaiseKiKhabar", "#SeedhiBaat", "#CrudeOil", "#EMI", "#RBI"]},
+                     "instagram": {"caption": "Oil 100 dollar. " + DISCLAIMER + " Share karo us dost ko jo petrol daily bharta hai.", "hashtags": ["#PaiseKiKhabar", "#SeedhiBaat", "#CrudeOil", "#EMI", "#RBI"]},
                      "threads": {"text": "Oil 100 dollar?"}},
         "carousel": False,
+        "thumbnail": {"words": ["100 DOLLAR", "EMI?"], "scene": "PAPA stares at the petrol pump meter, eyes wide, mouth open"},
     }
 
 

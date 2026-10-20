@@ -15,7 +15,7 @@ SCENE = {"type": "object", "additionalProperties": False, "required": ["vo", "vi
 
 PIECE_SCHEMA = {
     "type": "object", "additionalProperties": False,
-    "required": ["title", "hook", "scenes", "end_question", "cards", "captions", "carousel"],
+    "required": ["title", "hook", "scenes", "end_question", "cards", "captions", "carousel", "thumbnail"],
     "properties": {
         "title": {"type": "string"},
         "hook": {"type": "string"},
@@ -33,6 +33,9 @@ PIECE_SCHEMA = {
                          "threads": {"type": "object", "additionalProperties": False, "required": ["text"],
                                      "properties": {"text": {"type": "string"}}}}},
         "carousel": {"type": "boolean"},
+        "thumbnail": {"type": "object", "additionalProperties": False, "required": ["words", "scene"],
+                      "properties": {"words": {"type": "array", "items": {"type": "string"}, "minItems": 1, "maxItems": 3},
+                                     "scene": {"type": "string"}}},
     },
 }
 

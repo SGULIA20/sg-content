@@ -31,7 +31,7 @@ def piece_with(vo: str, channel="sglearning", kind="short", scenes=None, label="
         "end_question": "Aapko kya lagta hai?",
         "cards": [],
         "captions": {"youtube": {"title": "Oil 100 dollar hua to?", "description": "x", "tags": ["a"], "chapters": []},
-                     "instagram": {"caption": f"Oil 100 dollar. {DISCLAIMER}", "hashtags": HASHTAGS["sglearning"]["instagram"][:6]},
+                     "instagram": {"caption": f"Oil 100 dollar. {DISCLAIMER} Share karo us dost ko jo petrol daily bharta hai.", "hashtags": HASHTAGS["sglearning"]["instagram"][:6]},
                      "threads": {"text": "Oil 100 dollar?"}},
         "carousel": False,
     }
@@ -188,3 +188,11 @@ def test_myth_scene_without_facts_may_skip_label():
     assert not any(r.startswith("label") for r in lint.check_script(p, BANNED, []))
     p.script["scenes"].append({"vo": "36 metre neeche deewar.", "visual": {"type": "art", "prompt": "x"}, "facts_used": [0], "label": None})
     assert any(r.startswith("label") for r in lint.check_script(p, BANNED, []))
+
+
+def test_captions_need_share_line_and_three_youtube_hashtags():
+    p = piece_with(_words(180))
+    p.script["captions"]["instagram"]["caption"] = f"Oil 100 dollar. {DISCLAIMER}"
+    assert any(r.startswith("share") for r in lint.check_captions(p, HASHTAGS))
+    p.script["captions"]["instagram"]["caption"] = f"Oil 100 dollar. {DISCLAIMER} Share karo us dost ko jo abhi bhi FD mein paisa rakhta hai."
+    assert not any(r.startswith("share") for r in lint.check_captions(p, HASHTAGS))

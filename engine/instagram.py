@@ -82,9 +82,12 @@ def publish_piece(piece: Piece, env=None, call=call, sleep=time.sleep, root: Pat
     done = []
     try:
         if not piece.ids.get("ig_reel_id"):
-            piece.ids["ig_reel_id"] = _create_and_publish(ig_id, token, {
-                "media_type": "REELS", "video_url": media_url(piece, "reel.mp4", repo), "caption": caption,
-                "share_to_feed": "true", "thumb_offset": str(THUMB_OFFSET_MS)}, "reel", call, sleep)
+            params = {"media_type": "REELS", "video_url": media_url(piece, "reel.mp4", repo), "caption": caption, "share_to_feed": "true"}
+            if (Path(root) / "out" / piece.id / "cover.jpg").exists():
+                params["cover_url"] = media_url(piece, "cover.jpg", repo)       # the drawn reaction cover, same as the YouTube thumbnail
+            else:
+                params["thumb_offset"] = str(THUMB_OFFSET_MS)
+            piece.ids["ig_reel_id"] = _create_and_publish(ig_id, token, params, "reel", call, sleep)
             pieces.save(piece, root); done.append("reel")
         if not piece.ids.get("ig_story_id"):
             piece.ids["ig_story_id"] = _create_and_publish(ig_id, token, {

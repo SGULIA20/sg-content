@@ -25,10 +25,12 @@ SAFETY (a script that breaks these is thrown away)
 - Never a phone number, email or personal data.
 
 CAPTIONS
-- youtube.title: under 60 characters, a question or contradiction, Hindi words first, one number where possible. For Shorts the pipeline adds " #Shorts".
+- youtube.title: under 50 characters, the most searched words in the first 3 words, a question or contradiction, one number where possible. For Shorts the pipeline adds " #Shorts". The title and the thumbnail words must say DIFFERENT things (title = the question, thumbnail = the shock).
 - youtube.description: hook line, two sentences of so-what, then the pipeline appends Sources and the disclaimer. youtube.tags: 5 to 15 plain words.
 - instagram.caption: hook line, 2-3 lines, the question; for finance include the exact disclaimer sentence. instagram.hashtags: 5 to 8 from the ALLOWED HASHTAGS list only.
 - threads.text: under 400 characters, hook + question + 2 hashtags.
+- instagram.caption and youtube.description must end with one share line naming WHO to send it to, e.g. "Share karo us dost ko jo abhi bhi FD mein paisa rakhta hai" / "Us bhai ko bhejo jo kehta hai yeh sab kahani hai". Make it specific to the story.
+- thumbnail.words: 2 or 3 words (each under 14 characters) that go on the thumbnail picture in big letters: a number plus a shock word ("7%", "GAYAB"), NOT words already in the title. thumbnail.scene: one English sentence describing the most emotional moment of the story as a close-up on ONE face (name the cast member) with ONE key object, e.g. "PAPA stares at a melting ice cube on a steel plate, eyes wide, mouth open".
 - carousel: true only when the piece has at least 3 number cards worth reading as slides; otherwise false.
 
 Return only the JSON object that matches the schema. No prose before or after.

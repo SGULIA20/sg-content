@@ -77,12 +77,20 @@ def _sources(piece: Piece) -> list:
     return lines
 
 
-def _allowed_hashtags(channel: str) -> list:
+LEAD_HASHTAGS, MAX_HASHTAGS = 3, 15                        # YouTube shows the first three above the title; more than 15 and it ignores all
+SUBSCRIBE = {"sglearning": "Subscribe karo: har hafte paise ki ek nayi kahani, seedhi baat mein.",
+             "arthvan": "Subscribe karo: har hafte itihaas aur mythology ki ek nayi kahani, sabut ke saath."}
+
+
+def _allowed_hashtags(channel: str, kind: str = "short") -> list:
     try:
         from .lint import load_lists
-        return list(load_lists()[1].get(channel, {}).get("youtube", []))[:5]
+        tags = list(load_lists()[1].get(channel, {}).get("youtube", []))
     except Exception:
         return []
+    if kind != "short":
+        tags = [t for t in tags if t.lower() != "#shorts"]
+    return tags[:MAX_HASHTAGS]
 
 
 def metadata(piece: Piece, publish_at_utc: datetime, env=None) -> dict:
@@ -93,7 +101,8 @@ def metadata(piece: Piece, publish_at_utc: datetime, env=None) -> dict:
         title = title[: MAX_TITLE - len(SHORTS_SUFFIX)].rstrip() + SHORTS_SUFFIX
     else:
         title = title[:MAX_TITLE].rstrip()
-    parts = [(piece.script or {}).get("hook", "").strip(), yt.get("description", "").strip()]
+    hashtags = _allowed_hashtags(piece.channel, piece.kind)
+    parts = [(piece.script or {}).get("hook", "").strip(), " ".join(hashtags[:LEAD_HASHTAGS]), yt.get("description", "").strip()]
     if piece.kind == "long":
         chapters = assemble.chapters(piece)
         if chapters:
@@ -106,7 +115,8 @@ def metadata(piece: Piece, publish_at_utc: datetime, env=None) -> dict:
     credits = sorted({sc["credit"] for sc in (piece.script or {}).get("scenes", []) if sc.get("credit")})
     if credits:
         parts.append("Photos:\n" + "\n".join(credits))
-    parts.append(" ".join(_allowed_hashtags(piece.channel)))
+    parts.append(SUBSCRIBE.get(piece.channel, ""))
+    parts.append(" ".join(hashtags[LEAD_HASHTAGS:]))
     description = "\n\n".join(p for p in parts if p)
     tags = [t.lstrip("#") for t in yt.get("tags", [])][:MAX_TAGS]
     status = {"privacyStatus": "private", "publishAt": publish_at_utc.strftime("%Y-%m-%dT%H:%M:%SZ"),
