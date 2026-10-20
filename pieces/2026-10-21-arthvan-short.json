@@ -78,7 +78,8 @@
  "publish_day": "2026-10-21",
  "reasons": [
   "try 1: length: 232 words, allowed 150-230",
-  "image budget of ₹150 reached for 2026-10-21"
+  "image budget of ₹150 reached for 2026-10-21",
+  "frozen: 5.6s without motion"
  ],
  "script": {
   "captions": {
@@ -278,8 +279,22 @@
   ],
   "title": "Ram Setu, *satellite* mein kya dikhta? 🤯"
  },
- "status": "failed-art",
- "timings": [],
+ "status": "qa_failed",
+ "timings": [
+  0.0,
+  18.835,
+  24.286,
+  30.082,
+  36.271,
+  43.223,
+  55.566,
+  61.888,
+  67.03,
+  73.115,
+  78.395,
+  85.016,
+  89.869
+ ],
  "topic": {
   "allowed_sources": [
    "isro.gov.in",
@@ -299,6 +314,6 @@
   "target_minutes": null,
   "title_hi": "Ram Setu, satellite se kya dikhta hai"
  },
- "updated": "2026-10-20T19:47:50+00:00",
+ "updated": "2026-10-20T19:50:07+00:00",
  "writer": "claude"
 }
