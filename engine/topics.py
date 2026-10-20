@@ -27,6 +27,9 @@ HOUSEHOLD = ["emi", "petrol", "diesel", "tax", "salary", "sip", "price", "prices
 NUMBER = re.compile(r"\d|lakh|crore|%|\$")
 BANNED_TOPIC = ["modi", "rahul gandhi", "bjp", "congress", "election", "rally", "pakistan", "minister", "parliament",
                 "opposition", "cm ", "pm "]
+# market plumbing nobody at home needs: auctions, operations notices, securities results. Never a Short on its own.
+PLUMBING = ["variable rate repo", "vrr", "money market operations", "auction", "government securities", "state government securities",
+            "treasury bill", "t-bill", "laf", "omo ", "switch auction", "conversion/switch", "sdl", "g-sec", "under laf"]
 FRESH_HOURS = 24
 NS = {"atom": "http://www.w3.org/2005/Atom"}
 
@@ -96,6 +99,8 @@ def score(item: dict) -> int:
     blob = f"{item.get('title', '')} {item.get('summary', '')}".lower()
     if any(b in blob for b in BANNED_TOPIC):
         return -10
+    if any(p in blob for p in PLUMBING):
+        return -5
     s = item.get("rank", 0)
     if NUMBER.search(blob):
         s += 3

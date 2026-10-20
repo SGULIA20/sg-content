@@ -70,3 +70,11 @@ def test_pick_ignores_items_without_household_angle():
              {"title": "Petrol price cut by Rs 2 a litre from tonight", "link": "https://x/2", "summary": "", "published": NOW, "source": "ET", "rank": 3}]
     assert topics.pick_finance(items, set(), NOW)["link"] == "https://x/2"
     assert topics.pick_finance(items[:1], set(), NOW) is None
+
+
+def test_pick_pushes_rbi_plumbing_below_household_news():
+    rbi = {"title": "Result of the 7-day Variable Rate Repo (VRR) auction held on October 19, 2026", "link": "https://x/1", "summary": "", "published": NOW, "source": "RBI", "rank": 5}
+    mmo = {"title": "Money Market Operations as on October 16, 2026", "link": "https://x/2", "summary": "", "published": NOW, "source": "RBI", "rank": 5}
+    ipo = {"title": "Jio Platforms IPO draws Rs 8,110 crore in anchor investor bids; LIC among investors", "link": "https://x/3", "summary": "", "published": NOW, "source": "Mint", "rank": 3}
+    assert topics.pick_finance([rbi, mmo, ipo], set(), NOW)["link"] == "https://x/3"
+    assert topics.pick_finance([rbi, mmo], set(), NOW) is None

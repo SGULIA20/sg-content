@@ -8,3 +8,4 @@
 {"day": "2026-10-20", "at": "2026-10-20T05:32:01+00:00", "ok": true, "dry_run": true, "made": [["2026-10-20-sglearning-short", "qa_failed"]], "stopped": ""}
 {"day": "2026-10-20", "at": "2026-10-20T05:41:53+00:00", "ok": true, "dry_run": true, "made": [["2026-10-20-sglearning-short", "rejected"]], "stopped": ""}
 {"day": "2026-10-20", "at": "2026-10-20T05:47:15+00:00", "ok": true, "dry_run": true, "made": [["2026-10-20-sglearning-short", "assembled"]], "stopped": ""}
+{"day": "2026-10-20", "at": "2026-10-20T05:55:55+00:00", "ok": true, "dry_run": true, "made": [["2026-10-24-arthvan-long", "rejected"]], "stopped": ""}
