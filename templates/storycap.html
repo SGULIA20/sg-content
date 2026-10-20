@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Dev;src:url({{FONTS}}/NotoSansDevanagari.ttf)}
+html,body{margin:0;padding:0;background:#000}
+#root{position:relative;width:{{W}}px;height:{{H}}px;overflow:hidden;background:#000;color:#fff;display:flex;align-items:center;justify-content:center;padding:0 70px;box-sizing:border-box;text-align:center}
+.cap{font-family:Georgia,"Times New Roman",Dev,serif;font-style:italic;font-weight:700;font-size:54px;line-height:1.25}
+</style></head><body><div id="root"><div class="cap">{{text}}</div></div>
+<script>const t=document.querySelector(".cap");let fs=54;while(t.scrollHeight>{{H}}-16&&fs>34){fs-=3;t.style.fontSize=fs+"px"}</script>
+</body></html>

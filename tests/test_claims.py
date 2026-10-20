@@ -49,3 +49,10 @@ def test_match_scales_by_fact_unit_crore_and_lakh():
     assert claims.match("2.44 lakh crore ka udhaar", facts, []) == []
     assert claims.match("Punjab ko 316 crore mila", facts, []) == []            # 316 vs 316.418 within half a percent? no: 0.13 % → pass
     assert claims.match("Punjab ko 320 crore mila", facts, []) == [320e7]
+
+
+def test_rounded_numbers_pass_when_the_script_says_about():
+    facts = [{"number": 7.247, "unit": "crore shares"}, {"number": 5.54, "unit": "pct"}]
+    assert claims.match("lagbhag 7 crore shares diye", facts, []) == []
+    assert claims.match("mehngai karib 5.5 percent", facts, []) == []
+    assert claims.match("7 crore shares diye", facts, []) == [7e7]                 # no 'about' word: exact match still required

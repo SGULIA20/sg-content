@@ -1,13 +1,19 @@
-Channel: Learning with SG. Niche: "Paise ki khabar, seedhi baat" (money news explained for salaried and small-business Indians).
+Channel: Learning with SG. Format for SHORTS: an ILLUSTRATED MONEY STORY (like the "doodle story" reels: black title band on top, one drawn panel per scene, the narration as a caption below). No presenter on camera; the narrator is SG's voice.
 
-SHORT (45-60 s), structure in order:
-1. Hook (avatar scene): the shocking number or the question, in one line. Example shape: "Crude 100 dollar ke paar. Aapki EMI par asar hoga?"
-2. What happened: 2 scenes, each with one number from the fact sheet (card or art).
-3. Why it happened: 1-2 scenes, plain cause and effect.
-4. "Aapke liye matlab" (avatar scene): what changes for a household: EMI, petrol, prices, salary, tax, SIP. One or two concrete numbers.
-5. The disclaimer scene: "Yeh investment advice nahi hai" and one calm line like "faisla apne advisor se pooch kar".
-6. End question (avatar or art): one easy question people can answer in a word.
+STORY FIRST. The plot is the money situation or the news item itself: what happened, what people did, what it cost them, the twist. Every story must be ORIGINAL to that topic; never retell a story you have told before, never make the reel about the characters. Characters are supporting figures only, used when a scene needs a person to show the moment. Many scenes need no named character at all (a bill on a table, a petrol pump, a phone screen, a queue, a shop counter, a crowd).
 
-LONG (12-18 min), structure: hook (0-15 s) → "aaj teen sawaal" (3 questions you will answer) → chapters, one per question, each with a story, a number card and a "so what" → the twist or the mistake people make → the one line for the comments → next-video tease. Titles are "mistakes / traps / how it really works" lists built from the week's news, for example "Oil 100 dollar hua to aapki EMI, petrol aur SIP par kya hoga: 7 asar".
+SUPPORTING CAST (drawn the same in every reel; use a name in `visual.prompt` only when the story needs that kind of person): SG (early forties, beard, striped shirt: the voice of reason, use sparingly), WIFE (runs the house budget), BETA (boy, 10) and BETI (girl, 6) for a child's question, PAPA (kurta, FD receipts, 'safe hai'), MUMMY (saree, chai, worried), BHAI (hoodie, phone, follows tips), BEHEN (office wear, sceptical), BANK UNCLE (behind a counter), SHOPKEEPER (kirana counter). Otherwise describe an unnamed person ('a young man at a petrol pump').
 
-Tone: calm, confident, a friend who reads the annual report so you do not have to. Numbers first, adjectives last. Always show the source name on a card when a number is on screen (the pipeline draws it from facts_used).
+STRUCTURE of a Short (7 to 9 scenes, 90-135 words of voice in total):
+1. `title`: the hook on the top band, 5 to 8 words, Hinglish, ONE keyword wrapped in *stars* for the yellow highlight, one emoji at the end. Examples: "Papa ne 20 saal *FD* mein rakha… 💔", "Bro ne *no-cost EMI* liya 💀", "Shaadi ka budget, *kiska* paisa? 🕊️".
+2. Scene 1: a relatable moment from the news or the money situation, told as a concrete moment anyone would recognise. Start inside the moment, no preamble.
+3. Scenes 2-4: what they did and why it felt right (the mistake everyone makes).
+4. Scene 5-6: the twist: the one line that changes how you see it (the narrator's voice, or a supporting character if the scene needs one). Use at most TWO numbers in the whole story, both from the fact sheet or the claims library, said the way a person says them ("lagbhag 7 crore", "20 saal", "7 percent").
+5. Scene 7: what the viewer should do or notice, in one plain line. Finance reels end with "Yeh investment advice nahi hai" spoken once.
+6. Last scene: `end_question`, one easy question in a word or two.
+
+VISUALS: every scene is `visual.type` "art". `visual.prompt` is an English description of one drawn panel: who is in it (cast names), where, what they are doing, the emotion, time of day. No text in the picture. `card` is always null; numbers live in the spoken line and the caption, never on a card.
+
+LONG videos (12-18 min) keep the earlier formula: "mistakes / traps / how it really works" chapters with number cards, SG's avatar at chapter turns is allowed.
+
+Tone: a friend telling a story at the dinner table, not a lecture. Every term a layman would not know gets one plain line ("repo rate yaani RBI ka byaaj banks ke liye"). Hinglish, "tum/aap" as fits the story, numbers in digits.

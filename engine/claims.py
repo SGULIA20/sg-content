@@ -100,18 +100,38 @@ def _known_values(entries: list) -> list:
     return out
 
 
+ABOUT = re.compile(r"\b(lagbhag|karib|kareeb|takreeban|taqreeban|approx|about|around|roughly|se zyada|se kam|se upar|se neeche|लगभग|करीब)\b", re.IGNORECASE)
+ROUND_TOL = 0.10
+
+
+def _about_positions(text: str) -> list:
+    return [m.end() for m in ABOUT.finditer(text)]
+
+
 def match(script_text: str, facts: list, library: list, tolerance: float = 0.005) -> list:
     known = _known_values(list(facts) + list(library))
     unmatched = []
-    for value, unit in _extract(script_text):
+    abouts = _about_positions(script_text)
+    for value, unit, pos in _extract_with_pos(script_text):
+        tol = ROUND_TOL if any(0 <= pos - a <= 25 for a in abouts) else tolerance      # "lagbhag 7 crore": 10 % slack within 25 chars of the word
         if unit is None and value < SMALL_COUNT and float(value).is_integer():
             continue                                  # counters: teen cheezein, do baatein
         if unit is None and YEAR_RANGE[0] <= value <= YEAR_RANGE[1] and float(value).is_integer():
             continue                                  # a year, not a claim
-        if any(abs(value - k) <= tolerance * max(abs(k), 1) for k in known):
+        if any(abs(value - k) <= tol * max(abs(k), 1) for k in known):
             continue
         unmatched.append(value)
     return unmatched
+
+
+def _extract_with_pos(text: str) -> list:
+    """(value, unit, char position of the first token of the number) by re-running the extractor per token span."""
+    out, values = [], _extract(text)
+    positions = [m.start() for m in TOKEN.finditer(text.translate(DEVANAGARI_DIGITS).replace("₹", " "))
+                 if m.group(0)[0].isdigit() or m.group(0).lower() in UNITS or m.group(0).lower() in SCALES]
+    for i, (v, u) in enumerate(values):
+        out.append((v, u, positions[i] if i < len(positions) else 0))
+    return out
 
 
 def load_library(root: Path = CONTENT_DIR, today: date | None = None) -> list:

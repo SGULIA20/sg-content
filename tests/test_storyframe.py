@@ -1,0 +1,52 @@
+import json
+import subprocess
+from datetime import date
+from pathlib import Path
+
+import pytest
+
+from engine import pieces, storyframe, cast
+
+pytestmark = pytest.mark.slow
+
+
+def _png(path, w, h, colour):
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", f"color=c={colour}:s={w}x{h}", "-frames:v", "1", str(path)], check=True)
+    return path
+
+
+def _tone(path, seconds, rate=24000):
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", f"sine=frequency=440:sample_rate={rate}", "-t", str(seconds), "-ac", "1", "-sample_fmt", "s16", str(path)], check=True)
+    return path
+
+
+def _probe(path):
+    out = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height:format=duration", "-of", "json", str(path)], capture_output=True, text=True, check=True).stdout
+    d = json.loads(out)
+    return d["streams"][0]["width"], d["streams"][0]["height"], float(d["format"]["duration"])
+
+
+def test_story_build_frames_panels_with_title_and_captions(tmp_path):
+    p = pieces.Piece(id="2026-10-21-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 10, 21))
+    p.script = {"title": "Papa ne 20 saal *FD* mein rakha… 💔", "hook": "h",
+                "scenes": [{"vo": "Mummy boli, beta bank hi safe hai.", "visual": {"type": "art", "prompt": "x", "card": None}, "facts_used": [], "label": "reported"},
+                           {"vo": "7 percent mila, mehngai 6.", "visual": {"type": "art", "prompt": "y", "card": None}, "facts_used": [0], "label": "reported"}],
+                "end_question": "q", "cards": [], "captions": {"youtube": {"title": "t", "description": "d", "tags": [], "chapters": []}}, "carousel": False}
+    p.facts = [{"source_name": "RBI", "source_date": "2026-10-19"}]
+    lines = [(_tone(tmp_path / "v0.wav", 1.6), 1.6), (_tone(tmp_path / "v1.wav", 1.4), 1.4)]
+    panels = [_png(tmp_path / "p0.png", 1080, 1350, "orange"), _png(tmp_path / "p1.png", 1080, 1350, "teal")]
+    out = storyframe.build(p, lines, panels, (1080, 1920), tmp_path / "out")
+    w, h, dur = _probe(out)
+    assert (w, h) == (1080, 1920) and out.name == "reel.mp4" and 3.5 < dur < 4.5
+    assert (tmp_path / "out" / "title.png").exists() and p.timings[0] == 0.0
+
+
+def test_title_markup_turns_stars_into_keyword_span():
+    assert storyframe.title_html("Papa ne 20 saal *FD* mein rakha") == 'Papa ne 20 saal <span class="k">FD</span> mein rakha'
+    assert storyframe.title_html("no stars & <b>") == "no stars &amp; &lt;b&gt;"
+
+
+def test_cast_sheet_lists_sg_and_family():
+    members = cast.load()
+    assert {"sg", "wife", "beta", "beti", "papa", "mummy", "bhai", "behen"} <= set(members)
+    assert members["sg"]["refs"] and all((cast.ASSETS_DIR / "reference" / r).exists() for r in members["sg"]["refs"])

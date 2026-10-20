@@ -6,7 +6,7 @@ from pathlib import Path
 
 from .config import ASSETS_DIR, TEMPLATES_DIR
 
-KINDS = {"hook", "number", "source", "label", "end", "thumb", "slide", "caption", "avatar"}
+KINDS = {"hook", "number", "source", "label", "end", "thumb", "slide", "caption", "avatar", "story", "storytitle", "storycap"}
 TRANSPARENT = {"label", "caption"}
 BG = "#0B0F1A"
 _PW = None
@@ -44,6 +44,8 @@ def _fill(template: str, data: dict, size: tuple) -> str:
             val = ""
         elif key.endswith("_path"):
             val = Path(val).resolve().as_uri()
+        elif key.endswith("_html"):
+            val = str(val)                                   # already-safe markup from the caller (storyframe.title_html escapes text)
         else:
             val = html.escape(str(val))
         out = out.replace("{{" + key + "}}", val)

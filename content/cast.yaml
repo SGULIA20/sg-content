@@ -1,0 +1,44 @@
+# The recurring drawn cast of the money stories: the founder's own family as doodle characters (founder, 20 Oct 2026).
+# Each member is drawn once into assets/cast/<name>.png in the doodle style and passed as a reference to every panel that names them.
+# refs = photos in assets/reference/ (adults only; the image model refuses photos of children, so the kids are drawn from their description).
+# Put family photos in Desktop/SG-Content-Project/Reference/ as wife-01.jpg, papa-01.jpg, mummy-01.jpg, bhai-01.jpg, behen-01.jpg (two or three each).
+sg:
+  description: "SG, the narrator and the family's money guy, early forties, short black wavy hair, short dark beard, light blue and white pin-striped shirt with sleeves rolled, calm knowing smile"
+  refs: [founder-01.jpg, founder-02.jpg, founder-13.jpg]
+  role: "the one who explains, with a smile"
+wife:
+  description: "SG's wife, late thirties, shoulder-length black hair, kurti, practical and quick, the one who actually runs the house budget"
+  refs: []
+  role: "the sharp question"
+beta:
+  description: "SG's son, about 10, school uniform or a cricket t-shirt, curious, always asking why"
+  refs: []
+  role: "the innocent question that exposes the truth"
+beti:
+  description: "SG's daughter, about 6, two pigtails, frock, holding a piggy bank or a toy"
+  refs: []
+  role: "the piggy bank"
+papa:
+  description: "SG's father, late sixties, grey moustache, white kurta, reading glasses on the nose, newspaper or FD receipts in hand"
+  refs: []
+  role: "safe hai wisdom"
+mummy:
+  description: "SG's mother, mid sixties, cotton saree, hair in a bun, warm but worried face, steel chai glass in hand"
+  refs: []
+  role: "tradition and worry"
+bhai:
+  description: "SG's younger brother, mid thirties, clean shaven, hoodie and jeans, phone in hand, the trader who follows tips"
+  refs: []
+  role: "the one who makes the mistake we all make"
+behen:
+  description: "SG's sister, early thirties, ponytail, office wear, laptop bag, organised and sceptical"
+  refs: []
+  role: "the planner"
+bank_uncle:
+  description: "a bank manager, fifties, tie, glasses, patient smile, behind a counter with a wall clock"
+  refs: []
+  role: "the institution"
+shopkeeper:
+  description: "a kirana shopkeeper, forties, vest and checked shirt, calculator and a ledger on the counter"
+  refs: []
+  role: "everyday prices"

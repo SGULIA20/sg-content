@@ -12,6 +12,7 @@ MODEL = "claude-opus-5-5"
 GEMINI_MODEL = "gemini-3.8-flash"
 USD_PER_M_IN, USD_PER_M_OUT = 4.0, 20.0
 SPEND_FILE = LOGS_DIR / "claude-spend.json"
+WRITER_FOR = {"short": "gemini", "long": "claude"}      # Shorts on the free tier model; longs on Claude
 FENCE = re.compile(r"^```(?:json)?\s*|\s*```$", re.MULTILINE)
 
 
@@ -104,7 +105,9 @@ def write(piece: Piece, sheet: dict, library: list, hashtags: dict, formula: str
     """Returns {"script": <piece JSON>, "writer": "claude" | "gemini", "note": str}."""
     today = today or today_ist()
     note = ""
-    if spent_today(spend, today) >= BUDGETS["claude_usd_per_day"]:
+    if WRITER_FOR.get(piece.kind) == "gemini":
+        note = "shorts are written by the free Gemini model (founder, 20 Oct 2026)"
+    elif spent_today(spend, today) >= BUDGETS["claude_usd_per_day"]:
         note = "claude budget spent for the day"
     else:
         try:

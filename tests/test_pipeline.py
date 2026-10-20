@@ -63,10 +63,10 @@ def _piece(kind="short", channel="sglearning", day=date(2026, 10, 20)):
 
 def test_make_runs_all_steps_and_uploads(tmp_path):
     d, calls = deps(tmp_path)
-    p = pipeline.make(_piece(), d, tmp_path)
+    p = pipeline.make(_piece("long"), d, tmp_path)
     assert p.status == "uploaded" and p.ids["yt_id"] == "yt123" and p.writer == "claude"
     assert calls == {"research": 1, "write": 1, "say": 3, "paint": 1, "build": 1, "qa": 1, "upload": 1, "topics": 1}
-    assert (tmp_path / "out" / p.id / "reel.mp4").exists() and (tmp_path / "out" / p.id / "story.mp4").exists()
+    assert (tmp_path / "out" / p.id / "long.mp4").exists()
     assert pieces.load(p.id, tmp_path).status == "uploaded"
 
 
@@ -194,7 +194,7 @@ def test_source_strip_follows_each_scenes_fact(tmp_path):
     def card_fn(kind, data, out, size):
         rendered.append((kind, data.get("name"))); Path(out).parent.mkdir(parents=True, exist_ok=True); Path(out).write_bytes(b"png"); return Path(out)
     d.render_card = card_fn
-    p = _piece(); p.facts = [dict(FACTS[0], source_name="ET"), dict(FACTS[1], source_name="PPAC")]
+    p = _piece("long"); p.facts = [dict(FACTS[0], source_name="ET"), dict(FACTS[1], source_name="PPAC")]
     pipeline.make(p, d, tmp_path)
     assert {n for k, n in rendered if k == "source"} == {"ET", "PPAC"}
 
@@ -208,7 +208,7 @@ def test_commons_credit_reaches_description_and_scene(tmp_path):
     def write_fn(piece, sheet, library, hashtags):
         s = good_script(); s["scenes"][2]["visual"] = {"type": "photo", "prompt": "Dwarka", "card": None}; return {"script": s, "writer": "claude", "note": ""}
     d.write = write_fn
-    p = pipeline.make(_piece(), d, tmp_path)
+    p = pipeline.make(_piece("long"), d, tmp_path)
     assert p.script["scenes"][2].get("credit", "").startswith("Photographer")
     from engine import youtube
     from datetime import datetime, timezone
@@ -224,7 +224,7 @@ def test_mid_scene_avatar_uses_avatar_card(tmp_path):
     def write_fn(piece, sheet, library, hashtags):
         s = good_script(); s["scenes"][1]["visual"] = {"type": "avatar", "prompt": "thinking", "card": None}; return {"script": s, "writer": "claude", "note": ""}
     d.write = write_fn
-    pipeline.make(_piece(), d, tmp_path)
+    pipeline.make(_piece("long"), d, tmp_path)
     assert kinds[:2] == ["hook", "avatar"]
 
 
@@ -290,5 +290,26 @@ def test_avatar_scenes_use_cartoon_clips_when_enabled(tmp_path):
         seen["visuals"] = [Path(v).suffix for v in visuals]; piece.timings = [0.0, 1.0, 2.0]
         out = Path(out_dir) / "reel.mp4"; out.write_bytes(b"mp4"); return out
     d.build = build_fn
-    pipeline.make(_piece(), d, tmp_path)
+    pipeline.make(_piece("long"), d, tmp_path)
     assert made == ["explaining_front"] and seen["visuals"][0] == ".mp4"            # the hook scene (avatar) became a talking-head clip
+
+
+def test_story_format_uses_panels_cast_refs_and_storyframe(tmp_path):
+    d, calls = deps(tmp_path)
+    painted, refs_seen, built = [], [], []
+    def paint_fn(prompt, out, **kw):
+        painted.append(kw.get("aspect")); refs_seen.append([Path(r).name for r in kw.get("refs", [])])
+        Path(out).parent.mkdir(parents=True, exist_ok=True); Path(out).write_bytes(b"png"); return Path(out)
+    def story_build(piece, lines, panels, size, out_dir):
+        built.append(len(panels)); piece.timings = [0.0] * len(panels); out = Path(out_dir) / "reel.mp4"; out.write_bytes(b"mp4"); return out
+    d.paint = paint_fn; d.story_build = story_build
+    d.cast_refs = lambda prompt: [Path("/cast/sg.png")] if "SG" in prompt else []
+    def write_fn(piece, sheet, library, hashtags):
+        s = good_script(); s["title"] = "Papa ne 20 saal *FD* mein rakha 💔"
+        for sc in s["scenes"]:
+            sc["visual"] = {"type": "art", "prompt": "SG and PAPA at the dining table", "card": None}
+        return {"script": s, "writer": "gemini", "note": ""}
+    d.write = write_fn
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert p.status == "uploaded" and built == [3] and calls["build"] == 0
+    assert painted == ["4:5"] * 3 and refs_seen[0] == ["sg.png"]

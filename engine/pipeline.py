@@ -6,11 +6,16 @@ from datetime import date
 from pathlib import Path
 from typing import Callable
 
-from . import art, assemble, buffer, cards, cartoon, claims, gemini, lint, pieces, qa, research, secrets, slots, topics, voice, writer, youtube
+from . import art, assemble, buffer, cards, cartoon, cast, claims, gemini, lint, pieces, qa, research, secrets, slots, storyframe, topics, voice, writer, youtube
 from .config import CHANNELS, ROOT, VIDEO
 from .pieces import Piece
 
 TOPIC_TRIES = 3
+STORY_FORMAT = {("sglearning", "short")}      # illustrated money stories (founder, 20 Oct 2026); longs keep cards + presenter
+
+
+def is_story(piece: Piece) -> bool:
+    return (piece.channel, piece.kind) in STORY_FORMAT
 RESUMABLE = {"written", "voiced", "drawn", "assembled", "failed-voice", "failed-art", "qa_failed"}
 HANDLE = "@sanjeev_gulia"
 LONG_TARGET_MINUTES = {"sglearning": 15, "arthvan": 20}
@@ -37,6 +42,8 @@ class Deps:
     pack: Callable = None        # (piece) -> parts, for the Gemini presenter-clip path
     pack_send: Callable = None   # (piece, text) -> Path
     cartoon: Callable = None     # (wav, seconds, size, out, mood) -> mp4: code-animated cartoon presenter for avatar scenes
+    story_build: Callable = None # (piece, lines, panels, size, out_dir) -> mp4: illustrated-story frame (title band, panel, caption band)
+    cast_refs: Callable = None   # (prompt) -> reference PNGs of the cast members the panel names
 
 
 def _jsonable(d: dict) -> dict:
@@ -79,6 +86,8 @@ def _visual_for(piece: Piece, i: int, scene: dict, deps: Deps, out_dir: Path, si
     v = scene.get("visual") or {}
     kind = v.get("type", "art")
     out = out_dir / f"visual{i:02d}.png"
+    if is_story(piece):
+        kind = "art"
     if kind == "avatar" and deps.cartoon and line is not None:
         wav, seconds = line
         return deps.cartoon(wav, seconds + assemble.PAD_S, size, out_dir / f"visual{i:02d}.mp4", v.get("prompt") or "explaining_front")
@@ -98,6 +107,10 @@ def _visual_for(piece: Piece, i: int, scene: dict, deps: Deps, out_dir: Path, si
             scene["credit"] = got["credit"]
             shutil.copy(got["path"], out)
             return out
+    if is_story(piece):
+        prompt = v.get("prompt") or piece.script["hook"]
+        refs = deps.cast_refs(prompt) if deps.cast_refs else []
+        return deps.paint(art.style_prompt(piece.channel, prompt), out, aspect="4:5", refs=refs)
     aspect = "9:16" if size[1] > size[0] else "16:9"
     return deps.paint(art.style_prompt(piece.channel, v.get("prompt") or piece.script["hook"]), out, aspect=aspect)
 
@@ -129,7 +142,8 @@ def _thumb(piece: Piece, deps: Deps, out_dir: Path) -> Path:
     title = piece.script["captions"]["youtube"]["title"]
     words = [w for w in title.replace("?", "? ").split() if w][:4]
     number = next((c["big_number"] for c in piece.script.get("cards", []) if c.get("big_number")), "")
-    return deps.render_card("thumb", {"words": words[:3], "number": number, "avatar_path": deps.avatar("surprised")}, out_dir / "thumb.jpg", (1280, 720))
+    picture = out_dir / "visual00.png" if (is_story(piece) and (out_dir / "visual00.png").exists()) else deps.avatar("surprised")
+    return deps.render_card("thumb", {"words": words[:3], "number": number, "avatar_path": picture}, out_dir / "thumb.jpg", (1280, 720))
 
 
 def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pack_mode: bool = False) -> Piece:
@@ -217,7 +231,10 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
     # 8: assemble
     from . import music
     bed = music.bed("calm" if piece.channel == "sglearning" else "epic", sum(d for _w, d in lines) + 5)
-    video = deps.build(piece, lines, visuals, size, out_dir, music=bed, source_strips=strips, label_chips=chips, credits=credits)
+    if is_story(piece) and deps.story_build:
+        video = deps.story_build(piece, lines, visuals, size, out_dir)
+    else:
+        video = deps.build(piece, lines, visuals, size, out_dir, music=bed, source_strips=strips, label_chips=chips, credits=credits)
     if piece.kind == "short":
         shutil.copy(video, out_dir / "story.mp4")
         if script.get("carousel"):
@@ -270,4 +287,4 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
                 lint=lambda piece, prior: lint.check_script(piece, banned, prior) + lint.check_captions(piece, hashtags),
                 claims_check=lambda piece: claims.match(lint.all_text(piece), piece.facts, library),
                 commons=art.commons_photo, library=library, hashtags=hashtags, voice_id=default_voice,
-                cartoon=cartoon.talking_head_clip)
+                cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for)

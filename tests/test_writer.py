@@ -11,6 +11,7 @@ DISCLAIMER = "Yeh investment advice nahi hai"
 
 def good_script():
     return {
+        "title": "Crude *100 dollar* ke paar 💥",
         "hook": "Crude oil 100 dollar ke paar. Aapki EMI par asar?",
         "scenes": [
             {"vo": "Crude oil 100 dollar ke paar gaya.", "visual": {"type": "avatar", "prompt": "explaining_front", "card": None}, "facts_used": [0], "label": "reported"},
@@ -50,7 +51,8 @@ def fake_client(messages):
 
 def test_request_uses_opus_schema_and_fallbacks(tmp_path):
     fm = FakeMessages(text=json.dumps(good_script()))
-    out = writer.write(_piece(), {"facts": [], "summary": ""}, [], {}, formula="FORMULA", client=fake_client(fm), spend=tmp_path / "s.json")
+    p = _piece(); p.kind = "long"
+    out = writer.write(p, {"facts": [], "summary": ""}, [], {}, formula="FORMULA", client=fake_client(fm), spend=tmp_path / "s.json")
     kw = fm.calls[0]
     assert kw["model"] == "claude-opus-5-5"
     assert kw["output_config"]["format"] == {"type": "json_schema", "schema": schema.PIECE_SCHEMA}
@@ -63,7 +65,8 @@ def test_request_uses_opus_schema_and_fallbacks(tmp_path):
 def test_refusal_falls_back_to_gemini_and_marks_writer(tmp_path):
     fm = FakeMessages(text="", stop_reason="refusal")
     g = lambda model, body, key=None: {"candidates": [{"content": {"parts": [{"text": json.dumps(good_script())}]}}]}
-    out = writer.write(_piece(), {"facts": []}, [], {}, formula="F", client=fake_client(fm), gemini_ask=g, spend=tmp_path / "s.json")
+    p = _piece(); p.kind = "long"
+    out = writer.write(p, {"facts": []}, [], {}, formula="F", client=fake_client(fm), gemini_ask=g, spend=tmp_path / "s.json")
     assert out["writer"] == "gemini" and out["script"]["carousel"] is False
 
 
@@ -74,13 +77,15 @@ def test_api_error_falls_back_to_gemini(tmp_path):
     exc = anthropic.APIStatusError("boom", response=resp, body=None)
     fm = FakeMessages(raise_exc=exc)
     g = lambda model, body, key=None: {"candidates": [{"content": {"parts": [{"text": json.dumps(good_script())}]}}]}
-    out = writer.write(_piece(), {"facts": []}, [], {}, formula="F", client=fake_client(fm), gemini_ask=g, spend=tmp_path / "s.json")
+    p = _piece(); p.kind = "long"
+    out = writer.write(p, {"facts": []}, [], {}, formula="F", client=fake_client(fm), gemini_ask=g, spend=tmp_path / "s.json")
     assert out["writer"] == "gemini"
 
 
 def test_cost_recorded_per_day(tmp_path):
     fm = FakeMessages(text=json.dumps(good_script()))
-    writer.write(_piece(), {"facts": []}, [], {}, formula="F", client=fake_client(fm), spend=tmp_path / "s.json", today=date(2026, 10, 20))
+    p = _piece(); p.kind = "long"
+    writer.write(p, {"facts": []}, [], {}, formula="F", client=fake_client(fm), spend=tmp_path / "s.json", today=date(2026, 10, 20))
     spent = json.loads((tmp_path / "s.json").read_text())
     assert spent["2026-10-20"]["usd"] == pytest.approx(5000 * 4 / 1e6 + 1500 * 20 / 1e6)
     assert writer.spent_today(tmp_path / "s.json", date(2026, 10, 20)) == pytest.approx(0.05)
@@ -90,7 +95,8 @@ def test_budget_blocks_claude_and_uses_gemini(tmp_path):
     (tmp_path / "s.json").write_text(json.dumps({"2026-10-20": {"usd": 1.0, "requests": 9}}))
     fm = FakeMessages(text=json.dumps(good_script()))
     g = lambda model, body, key=None: {"candidates": [{"content": {"parts": [{"text": json.dumps(good_script())}]}}]}
-    out = writer.write(_piece(), {"facts": []}, [], {}, formula="F", client=fake_client(fm), gemini_ask=g, spend=tmp_path / "s.json", today=date(2026, 10, 20))
+    p = _piece(); p.kind = "long"
+    out = writer.write(p, {"facts": []}, [], {}, formula="F", client=fake_client(fm), gemini_ask=g, spend=tmp_path / "s.json", today=date(2026, 10, 20))
     assert fm.calls == [] and out["writer"] == "gemini"
 
 
@@ -115,14 +121,32 @@ def test_prompt_files_exist_and_carry_rules():
 
 def test_user_message_serialises_datetime_in_topic(tmp_path):
     from datetime import datetime, timezone
-    p = _piece(); p.topic["published"] = datetime(2026, 10, 20, 3, 45, tzinfo=timezone.utc)
+    p = _piece(); p.kind = "long"; p.topic["published"] = datetime(2026, 10, 20, 3, 45, tzinfo=timezone.utc)
     fm = FakeMessages(text=json.dumps(good_script()))
     out = writer.write(p, {"facts": []}, [], {}, formula="F", client=fake_client(fm), spend=tmp_path / "s.json")
     assert out["writer"] == "claude" and "2026-10-20T03:45:00+00:00" in fm.calls[0]["messages"][0]["content"]
 
 
 def test_revise_note_reaches_the_prompt(tmp_path):
-    p = _piece(); p.topic["revise"] = "length: 150 words, allowed 90-135"
+    p = _piece(); p.kind = "long"; p.topic["revise"] = "length: 150 words, allowed 90-135"
     fm = FakeMessages(text=json.dumps(good_script()))
     writer.write(p, {"facts": []}, [], {}, formula="F", client=fake_client(fm), spend=tmp_path / "s.json")
     assert "REVISION" in fm.calls[0]["messages"][0]["content"] and "150 words" in fm.calls[0]["messages"][0]["content"]
+
+
+def test_schema_has_title_and_story_scripts_validate():
+    s = good_script(); s["title"] = "Papa ne 20 saal *FD* mein rakha… 💔"
+    assert schema.validate(s) == []
+    assert "title" in schema.PIECE_SCHEMA["required"]
+
+
+def test_shorts_use_gemini_writer_longs_use_claude(tmp_path):
+    fm = FakeMessages(text=json.dumps(good_script()))
+    g_calls = []
+    g = lambda model, body, key=None: g_calls.append(model) or {"candidates": [{"content": {"parts": [{"text": json.dumps(good_script())}]}}]}
+    p = _piece()
+    out = writer.write(p, {"facts": []}, [], {}, formula="F", client=fake_client(fm), gemini_ask=g, spend=tmp_path / "s.json")
+    assert out["writer"] == "gemini" and fm.calls == []                      # Shorts: free Gemini writer
+    p.kind = "long"
+    out = writer.write(p, {"facts": []}, [], {}, formula="F", client=fake_client(fm), gemini_ask=g, spend=tmp_path / "s.json")
+    assert out["writer"] == "claude"

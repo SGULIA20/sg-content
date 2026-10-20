@@ -15,8 +15,9 @@ SCENE = {"type": "object", "additionalProperties": False, "required": ["vo", "vi
 
 PIECE_SCHEMA = {
     "type": "object", "additionalProperties": False,
-    "required": ["hook", "scenes", "end_question", "cards", "captions", "carousel"],
+    "required": ["title", "hook", "scenes", "end_question", "cards", "captions", "carousel"],
     "properties": {
+        "title": {"type": "string"},
         "hook": {"type": "string"},
         "scenes": {"type": "array", "items": SCENE},
         "end_question": {"type": "string"},
