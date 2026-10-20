@@ -74,6 +74,19 @@ def srt(cue_list: list) -> str:
     return "\n".join(f"{i}\n{_ts(s)} --> {_ts(e)}\n{text}\n" for i, (s, e, text) in enumerate(cue_list, 1))
 
 
+def _array(text: str):
+    """The first JSON array in a reply (models sometimes wrap it in a fence or a sentence)."""
+    dec = json.JSONDecoder()
+    for m in re.finditer(r"\[", text):
+        try:
+            got, _end = dec.raw_decode(text[m.start():])
+        except json.JSONDecodeError:
+            continue
+        if isinstance(got, list):
+            return got
+    return None
+
+
 def translate(lines: list, lang: str, client=None, model: str = MODEL) -> list:
     """Translates the cue texts in order (same count) into one language; Hinglish stays natural, numbers and names unchanged."""
     import anthropic
@@ -91,11 +104,9 @@ def translate(lines: list, lang: str, client=None, model: str = MODEL) -> list:
         r = client.messages.create(model=model, max_tokens=8000, system=system,
                                    messages=[{"role": "user", "content": json.dumps(batch, ensure_ascii=False)}])
         text = "".join(getattr(b, "text", "") for b in r.content)
-        m = re.search(r"\[.*\]", text, re.S)
-        try:
-            got = json.loads(m.group(0) if m else text)
-        except json.JSONDecodeError:
-            raise SubtitleError(f"{lang}: translation was not a JSON array")
+        got = _array(text)
+        if got is None:
+            raise SubtitleError(f"{lang}: translation was not a JSON array: {text[:120]!r}")
         if len(got) != len(batch):
             raise SubtitleError(f"{lang}: {len(got)} translations for {len(batch)} lines")
         out += [str(g) for g in got]
