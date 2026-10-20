@@ -16,7 +16,7 @@ def is_story(piece: Piece) -> bool:
     return _is(piece.channel, piece.kind)
 RESUMABLE = {"written", "voiced", "drawn", "assembled", "failed-voice", "failed-art", "qa_failed"}
 HANDLE = "@sanjeev_gulia"
-LONG_TARGET_MINUTES = {"sglearning": 15, "arthvan": 20}
+LONG_TARGET_MINUTES = {"sglearning": 12, "arthvan": 14}
 
 
 @dataclass

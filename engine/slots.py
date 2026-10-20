@@ -24,7 +24,7 @@ def publish_dates(channel: str, kind: str, start: date, days: int) -> list:
         d = start + timedelta(days=i)
         if kind == "short" and d.weekday() in ch.short_days:
             out.append(d)
-        elif kind == "long" and d.weekday() == ch.long_day:
+        elif kind == "long" and d.weekday() in ch.long_days:
             out.append(d)
     return out
 

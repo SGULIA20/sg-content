@@ -9,10 +9,10 @@ def test_arthvan_short_days_are_mon_wed_fri():
     assert config.CHANNELS["arthvan"].short_days == {0, 2, 4}
 
 
-def test_sglearning_shorts_every_day_and_long_on_sunday():
+def test_sglearning_shorts_every_day_and_longs_wed_sun():
     ch = config.CHANNELS["sglearning"]
     assert ch.short_days == {0, 1, 2, 3, 4, 5, 6}
-    assert ch.long_day == 6
+    assert ch.long_days == {2, 6}
 
 
 def test_budgets_match_spec():

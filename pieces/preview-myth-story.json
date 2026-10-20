@@ -1,15 +1,325 @@
 {
  "channel": "arthvan",
- "facts": [],
+ "facts": [
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "According to ancient Sanskrit literature, the Lord Krishna founded the holy city of Dwarka, which subsequently got submerged under sea.",
+   "source_date": "1896",
+   "source_name": "Harivamsa, Vishnu Parva",
+   "source_url": "https://en.wikipedia.org/wiki/Dv%C4%81rak%C4%81",
+   "text": "The Harivamsa describes Dvaravati as a coastal capital fortified with ramparts and moats that was reclaimed from the ocean by Krishna for the Yadavas.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 12.0,
+   "quote": "The successive underwater investigations off Dwarka in about 4 to 12 m water depth have revealed the presence of a number of submerged stone building blocks such as remains of wall, pillar and bastion.",
+   "source_date": "1992",
+   "source_name": "NIO",
+   "source_url": "https://www.nio.res.in/",
+   "text": "Underwater explorations off the coast of Dwarka conducted by the National Institute of Oceanography between 1983 and 1992 revealed submerged stone masonry blocks, pillars, and bastions at depths reaching 12 metres.",
+   "unit": "metres"
+  },
+  {
+   "label": "archaeology",
+   "number": 20.0,
+   "quote": "A group of 20 stone anchors from the waters of Dwarka, on the Gujarat Coast, India.",
+   "source_date": "2001",
+   "source_name": "NIO",
+   "source_url": "https://www.nio.res.in/",
+   "text": "Marine archaeologists from the National Institute of Oceanography documented a group of twenty stone anchors in the seabed waters off Dwarka.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": 4.0,
+   "quote": "During field season of 2000-2001 four stone structures of circular in shape have been noticed in inter-tidal zone of Dwarka.",
+   "source_date": "2001",
+   "source_name": "NIO",
+   "source_url": "https://www.nio.res.in/",
+   "text": "During the 2000 to 2001 field season, National Institute of Oceanography researchers documented four circular stone structures located in the intertidal zone adjacent to the mouth of Gomati creek.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "Earlier the Underwater Archaeology Wing had carried-out offshore and onshore excavations at Dwarka from 2005 to 2007. The coastal areas were examined during low tide where sculptures and stone anchors were discovered.",
+   "source_date": "2025-02-20",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/",
+   "text": "The Underwater Archaeology Wing of the Archaeological Survey of India conducted onshore and offshore excavations at Dwarka between 2005 and 2007, discovering stone anchors and sculptures during low-tide examinations.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 5.0,
+   "quote": "A team of five archaeologists from the Archaeological Survey of India (ASI), led by Prof. Alok Tripathi, Additional Director-General (Archaeology) has commenced groundbreaking underwater explorations off the coast of Dwarka.",
+   "source_date": "2025-02-20",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/",
+   "text": "In February 2025, the Archaeological Survey of India deployed a five-member dive team to initiate updated underwater mapping and explorations near Gomati Creek.",
+   "unit": "count"
+  },
+  {
+   "label": "disputed",
+   "number": 1500.0,
+   "quote": "The comparative study of surrounding sites indicates that the date of the structures of Dwarka may be between Historical period and late medieval period.",
+   "source_date": "2004-05-10",
+   "source_name": "NIO",
+   "source_url": "https://www.nio.res.in/",
+   "text": "Marine archaeologist S. R. Rao dated the submerged stone masonry and pottery to around 1500 BCE, whereas subsequent NIO researchers led by A. S. Gaur dated the stone anchors and structural remains to the historical and medieval eras.",
+   "unit": "BCE"
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "Offshore explorations have brought to light a large number of stone structures, which appear to be the remains of an ancient jetty... natural factors like coastal erosion are primarily responsible for the destruction of the structures.",
+   "source_date": "2004-05-10",
+   "source_name": "NIO",
+   "source_url": "https://www.nio.res.in/",
+   "text": "While early excavation teams identified the submerged alignments as defensive walls of an epic-era city, later marine geologists and archaeologists argued that the blocks represent an ancient harbour jetty damaged by natural marine erosion.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": 2.0,
+   "quote": "Analysis of sea level versus ancient settlement suggests that around the Christian era sea level was lower by 2 m than the present.",
+   "source_date": "2005",
+   "source_name": "NIO",
+   "source_url": "https://www.nio.res.in/",
+   "text": "While alternative theories propose that a massive mid-Holocene flood submerged a 3,000-year-old city, NIO sea-level studies off Saurashtra indicate that the local sea level was approximately 2 metres lower during the early historical period.",
+   "unit": "metres"
+  },
+  {
+   "label": "legend",
+   "number": 36.0,
+   "quote": "Local folklore attributes the instant sinking of Krishna's golden citadel to a curse fulfilled thirty-six years after the great war.",
+   "source_date": "1999",
+   "source_name": "Oral tradition",
+   "source_url": "https://en.wikipedia.org/wiki/Dv%C4%81rak%C4%81",
+   "text": "Popular regional folklore recounts that the golden city of Dwarka vanished under an overnight catastrophic tsunami thirty-six years after the Kurukshetra War due to an unalterable curse.",
+   "unit": "years"
+  }
+ ],
  "id": "preview-myth-story",
  "ids": {},
  "kind": "short",
  "publish_day": "2026-10-21",
- "reasons": [],
- "script": null,
- "status": "planned",
+ "reasons": [
+  "try 1: label: scene 11 has no evidence label; length: 238 words, allowed 150-230"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Kya Krishna ki Dwarka sach mein samundar ke neeche hai?\nNIO ke goton ko 12 metre tak gehrai mein tarashe pathar aur langar mile.\nPar experts dating par aaj bhi ek raay nahi.\nAapko kya lagta hai, Krishna ki nagri ya purana bandargah?",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#Dwarka",
+     "#Mahabharat",
+     "#Archaeology",
+     "#AncientIndia",
+     "#Itihaas",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Dwarka ke samundar mein tarashe pathar, langar aur jetty ke nishaan mile. S.R. Rao ne inhe bahut purana maana, baad ke NIO researchers ne madhyakaal ka bandargah. Aapko kya lagta hai, neeche Krishna ki nagri hai ya purana bandargah? #SabutKeSaath #Mythology"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Dwarka ke samundar mein goton ko tarashe pathar, langar aur jetty ke nishaan mile. Par kya yeh Mahabharat wali Dwarka hai, ya baad ka ek bandargah? Experts aaj bhi bante hue hain, sabut ke saath poori kahani dekhiye.",
+    "tags": [
+     "Dwarka",
+     "Mahabharat",
+     "Krishna",
+     "marine archaeology",
+     "NIO",
+     "SR Rao",
+     "underwater city",
+     "Bet Dwarka",
+     "Gujarat",
+     "ancient India",
+     "itihaas",
+     "mythology"
+    ],
+    "title": "Samundar mein 12 metre neeche Krishna ki Dwarka?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Aapko kya lagta hai, neeche Krishna ki nagri hai ya purana bandargah?",
+  "hook": "Kya Krishna ki Dwarka sach mein samundar ke neeche hai?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Ancient golden coastal city at dusk as giant ocean waves crash over its walls and flood the streets, a line of townspeople with bundles walking away inland in the foreground, dramatic stormy sky, painterly illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "Kya Krishna ki Dwarka sach mein samundar ke neeche hai? Mausala Parva kehta hai, samundar ne seema tod di, aur shehar doob gaya."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "A divine figure seen from behind at a great distance standing on a shore as the sea gently recedes, revealing land where a fortified seaside city with towers and ramparts rises, golden morning light, mythic illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "Harivamsa kehta hai, Krishna ne yeh zameen samundar se maangi thi. Wahan kile wala shehar basa, Dvaravati."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "1980s research institute room in Goa with scientists in shirts studying sea charts, diving gear and old maps of the Gujarat coast on the table, warm tube light, illustrated panel, no text, no logos",
+     "type": "art"
+    },
+    "vo": "1981 mein National Institute of Oceanography, yaani NIO, ne ek centre banaya. Kaam tha marine archaeology, yaani paani ke neeche itihaas dhoondhna."
+   },
+   {
+    "facts_used": [
+     2,
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "A small research boat on choppy grey-green Arabian Sea off a temple town coast, divers in wetsuits rolling backward into the water, an older archaeologist in a hat watching from the deck, illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "Goton ne Dwarka aur Bet Dwarka ka samundar khangala. Aguvai ki archaeologist S.R. Rao ne."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Underwater scene in murky blue-green water, a diver with a torch revealing neatly cut stone blocks, a rounded stone bastion shape and a long stone platform on the seabed, sunlight rays from above, mysterious mood, illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "12 metre tak ki gehrai mein tarashe pathar mile. Gol burj jaise dhaanche, aur jetty yaani naav ka chabutra."
+   },
+   {
+    "facts_used": [
+     4,
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Split panel: on the left, triangular stone anchors with holes scattered on a sandy seabed with a diver measuring them; on the right, a small carved square seal and copper objects laid on a cloth at an island dig site, illustrated, no text",
+     "type": "art"
+    },
+    "vo": "Tali par pathar ke bahut saare langar mile. Bet Dwarka dweep se Sindhu ghati jaisi muhar aur taambe ki cheezein niklin."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Two generations of researchers in a lab, an older archaeologist pointing confidently at a stone block, younger scientists with magnifying glass and notebooks re-examining a stone anchor, thoughtful mood, illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "S.R. Rao ne in pattharon ko Sindhu ghati ke aakhri daur jitna purana maana. Baad mein NIO ke A.S. Gaur ki team ne langar dobara jaanche."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Imagined medieval busy harbour on the Gujarat coast with wooden sailing ships dropping stone anchors, traders unloading goods, seen as a faded vision over the modern sea, illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "Gaur ki team boli, yeh langar Sindhu ghati kaal ke nahi. Yeh baad ke, madhyakaal tak ke bandargah ke nishaan lagte hain."
+   },
+   {
+    "facts_used": [
+     9,
+     10
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Underwater stone ridge shown twice side by side: one half imagined as a fortified city wall with bastions, the other half as worn natural beach rock, a diver floating between them, question-like mysterious mood, illustrated, no text",
+     "type": "art"
+    },
+    "vo": "Rao ko yeh shehar ki kilebandi lagi, doosre experts ko jetty ya prakritik chattanein. Inhe Mahabharat ki Dwarka se jodna, abhi sabit nahi hua."
+   },
+   {
+    "facts_used": [
+     11
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "A grandmother telling a story to children on a moonlit Saurashtra beach, above the waves a dreamy glowing image of golden palace towers standing intact on the ocean floor, soft magical mood, illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "Lok-katha kehti hai, sone ka shehar neeche jyon ka tyon khada hai. Iska koi sabut nahi mila."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Tall carved stone temple spire with flags beside the sea at sunrise, pilgrims walking toward it, in the foreground an excavation trench showing layered soil and old walls, peaceful mood, illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "Aaj aap Dwarkadhish mandir ja sakte hain. Uske paas ASI ko kai daur ki bastiyan mili."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Calm sea at twilight off the Gujarat coast, faint outlines of submerged stones visible under clear water, a lone narrator figure in a kurta standing on the shore looking out, contemplative mood, illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "Aapko kya lagta hai, neeche Krishna ki nagri hai ya purana bandargah?"
+   }
+  ],
+  "title": "Samundar ke neeche *Dwarka* ka sach? 😱"
+ },
+ "status": "researched",
  "timings": [],
- "topic": {},
- "updated": "",
- "writer": ""
+ "topic": {
+  "allowed_sources": [
+   "nio.res.in",
+   "asi.nic.in",
+   "en.wikipedia.org",
+   "Mahabharata (Mausala Parva)",
+   "Harivamsa"
+  ],
+  "hooks": [
+   "Samundar ke neeche 3,000 saal purani deewarein?",
+   "NIO ke goton ne Dwarka ke paas kya nikala?",
+   "Kya yeh wahi Dwarka hai jo Mahabharat mein doobi?"
+  ],
+  "id": "dwarka-underwater",
+  "notes": "Marine archaeology by NIO (1980s-2000s), dating disputes; keep the scripture story separate from the finds.",
+  "place": "Dwarka, Gujarat",
+  "target_minutes": null,
+  "title_hi": "Samundar ke neeche Dwarka"
+ },
+ "updated": "2026-10-20T19:37:10+00:00",
+ "writer": "claude"
 }

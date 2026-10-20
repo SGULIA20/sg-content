@@ -56,3 +56,9 @@ def test_rounded_numbers_pass_when_the_script_says_about():
     assert claims.match("lagbhag 7 crore shares diye", facts, []) == []
     assert claims.match("mehngai karib 5.5 percent", facts, []) == []
     assert claims.match("7 crore shares diye", facts, []) == [7e7]                 # no 'about' word: exact match still required
+
+
+def test_years_with_era_words_are_not_claims():
+    assert claims.match("Mahabharat 3102 BCE mein hua, kuch kehte hain 1500 BC", facts=[], library=[]) == []
+    assert claims.match("yeh 1200 ईसा पूर्व ki baat hai, mandir 1010 CE mein bana", facts=[], library=[]) == []
+    assert claims.match("36 metre neeche deewar mili", facts=[], library=[]) == [36.0]

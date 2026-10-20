@@ -11,15 +11,13 @@ DONE = {"uploaded", "posted"}
 
 def long_for_short(channel: str, day: date) -> str:
     """The long whose scenes a mythology Short is cut from: the most recent long publish day at or before the Short's day."""
-    long_day = CHANNELS[channel].long_day
-    back = (day.weekday() - long_day) % 7 or 7            # strictly before: a Short never cuts from a long published the same day
+    back = min(((day.weekday() - ld) % 7 or 7) for ld in CHANNELS[channel].long_days)   # most recent long strictly before the Short's day
     return slots.piece_id(day - timedelta(days=back), channel, "long")
 
 
 def next_long_for_short(channel: str, day: date) -> str:
     """The long published after the Short's day (used as a teaser source when the previous long does not exist yet, e.g. launch week)."""
-    long_day = CHANNELS[channel].long_day
-    ahead = (long_day - day.weekday()) % 7 or 7
+    ahead = min(((ld - day.weekday()) % 7 or 7) for ld in CHANNELS[channel].long_days)
     return slots.piece_id(day + timedelta(days=ahead), channel, "long")
 
 

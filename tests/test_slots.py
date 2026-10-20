@@ -21,12 +21,12 @@ def test_sglearning_shorts_every_day():
     assert len(slots.publish_dates("sglearning", "short", date(2026, 10, 19), 7)) == 7
 
 
-def test_sglearning_long_is_sunday():
-    assert slots.publish_dates("sglearning", "long", date(2026, 10, 19), 7) == [date(2026, 10, 25)]
+def test_sglearning_long_includes_sunday():
+    assert date(2026, 10, 25) in slots.publish_dates("sglearning", "long", date(2026, 10, 19), 7)
 
 
-def test_arthvan_long_is_saturday():
-    assert slots.publish_dates("arthvan", "long", date(2026, 10, 19), 7) == [date(2026, 10, 24)]
+def test_arthvan_long_includes_saturday():
+    assert date(2026, 10, 24) in slots.publish_dates("arthvan", "long", date(2026, 10, 19), 7)
 
 
 def test_piece_id_format():
@@ -43,3 +43,9 @@ def test_ig_slot_blocks_app_job_window():
 def test_publish_at_for_piece_kind():
     assert slots.publish_at("sglearning", "short", date(2026, 10, 20)) == datetime(2026, 10, 20, 14, 30, tzinfo=timezone.utc)
     assert slots.publish_at("arthvan", "long", date(2026, 10, 24)) == datetime(2026, 10, 24, 13, 30, tzinfo=timezone.utc)
+
+
+def test_two_long_days_per_channel():
+    # sglearning: Wednesday and Sunday; arthvan: Tuesday and Saturday (founder, 20 Oct 2026)
+    assert slots.publish_dates("sglearning", "long", date(2026, 10, 19), 7) == [date(2026, 10, 21), date(2026, 10, 25)]
+    assert slots.publish_dates("arthvan", "long", date(2026, 10, 19), 7) == [date(2026, 10, 20), date(2026, 10, 24)]

@@ -102,6 +102,7 @@ def _known_values(entries: list) -> list:
 
 ABOUT = re.compile(r"\b(lagbhag|karib|kareeb|takreeban|taqreeban|approx|about|around|roughly|se zyada|se kam|se upar|se neeche|लगभग|करीब)\b", re.IGNORECASE)
 ROUND_TOL = 0.10
+ERA = re.compile(r"\b(BCE|BC|CE|AD|ईसा पूर्व|ईस्वी|isa poorv|isvi)\b", re.IGNORECASE)
 
 
 def _about_positions(text: str) -> list:
@@ -112,7 +113,10 @@ def match(script_text: str, facts: list, library: list, tolerance: float = 0.005
     known = _known_values(list(facts) + list(library))
     unmatched = []
     abouts = _about_positions(script_text)
+    eras = [m.start() for m in ERA.finditer(script_text)]
     for value, unit, pos in _extract_with_pos(script_text):
+        if unit is None and float(value).is_integer() and 1 <= value <= 3500 and any(0 <= e - pos <= 14 for e in eras):
+            continue                                  # "3102 BCE", "1010 CE", "1200 ईसा पूर्व": a date, not a claim
         tol = ROUND_TOL if any(0 <= pos - a <= 25 for a in abouts) else tolerance      # "lagbhag 7 crore": 10 % slack within 25 chars of the word
         if unit is None and value < SMALL_COUNT and float(value).is_integer():
             continue                                  # counters: teen cheezein, do baatein

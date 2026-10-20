@@ -61,7 +61,9 @@ def _piece(kind="short", channel="sglearning", day=date(2026, 10, 20)):
     return pieces.Piece(id=f"{day.isoformat()}-{channel}-{kind}", channel=channel, kind=kind, publish_day=day)
 
 
-def test_make_runs_all_steps_and_uploads(tmp_path):
+def test_make_runs_all_steps_and_uploads(tmp_path, monkeypatch):
+    from engine import config
+    monkeypatch.setattr(config, "STORY_FORMAT", {("sglearning", "short"), ("arthvan", "short")})   # presenter-era long path
     d, calls = deps(tmp_path)
     p = pipeline.make(_piece("long"), d, tmp_path)
     assert p.status == "uploaded" and p.ids["yt_id"] == "yt123" and p.writer == "claude"
@@ -113,14 +115,14 @@ def test_make_is_idempotent_for_uploaded_piece(tmp_path):
 def test_myth_short_reuses_long_scenes(tmp_path, monkeypatch):
     from engine import config
     monkeypatch.setattr(config, "STORY_FORMAT", {("sglearning", "short")})
-    long_p = _piece("long", "arthvan", date(2026, 10, 17))
+    long_p = _piece("long", "arthvan", date(2026, 10, 20))
     s = good_script(); s["scenes"] = s["scenes"] * 4                         # 12 scenes
     long_p.script = s; long_p.facts = FACTS; long_p.status = "uploaded"; long_p.topic = {"id": "dwarka-underwater", "hooks": ["h1", "h2", "h3"]}
     pieces.save(long_p, tmp_path)
     d, calls = deps(tmp_path)
     p = pipeline.make(_piece("short", "arthvan", date(2026, 10, 21)), d, tmp_path)
     assert calls["research"] == 0 and calls["write"] == 1                   # no new research; the writer cuts the Short from the long's scenes
-    assert p.topic["from_long"] == "2026-10-17-arthvan-long" and p.status == "uploaded"
+    assert p.topic["from_long"] == "2026-10-20-arthvan-long" and p.status == "uploaded"
 
 
 def test_myth_short_without_long_fails_cleanly(tmp_path, monkeypatch):
@@ -194,7 +196,9 @@ def test_produce_keeps_resumable_status(tmp_path, monkeypatch):
     assert calls["write"] == 0 and calls["say"] == 3
 
 
-def test_source_strip_follows_each_scenes_fact(tmp_path):
+def test_source_strip_follows_each_scenes_fact(tmp_path, monkeypatch):
+    from engine import config
+    monkeypatch.setattr(config, "STORY_FORMAT", {("sglearning", "short"), ("arthvan", "short")})   # presenter-era long path
     d, calls = deps(tmp_path)
     rendered = []
     def card_fn(kind, data, out, size):
@@ -205,7 +209,9 @@ def test_source_strip_follows_each_scenes_fact(tmp_path):
     assert {n for k, n in rendered if k == "source"} == {"ET", "PPAC"}
 
 
-def test_commons_credit_reaches_description_and_scene(tmp_path):
+def test_commons_credit_reaches_description_and_scene(tmp_path, monkeypatch):
+    from engine import config
+    monkeypatch.setattr(config, "STORY_FORMAT", {("sglearning", "short"), ("arthvan", "short")})   # presenter-era long path
     d, calls = deps(tmp_path)
     def commons(q, out):
         Path(out).mkdir(parents=True, exist_ok=True); (Path(out) / "x.jpg").write_bytes(b"j")
@@ -221,7 +227,9 @@ def test_commons_credit_reaches_description_and_scene(tmp_path):
     assert "Photos:" in youtube.metadata(p, datetime(2026, 10, 20, 14, 30, tzinfo=timezone.utc), {})["snippet"]["description"]
 
 
-def test_mid_scene_avatar_uses_avatar_card(tmp_path):
+def test_mid_scene_avatar_uses_avatar_card(tmp_path, monkeypatch):
+    from engine import config
+    monkeypatch.setattr(config, "STORY_FORMAT", {("sglearning", "short"), ("arthvan", "short")})   # presenter-era long path
     d, calls = deps(tmp_path)
     kinds = []
     def card_fn(kind, data, out, size):
@@ -285,7 +293,9 @@ def test_produce_leaves_fresh_pack_alone(tmp_path):
     assert calls["say"] == 0 and pieces.load(p.id, tmp_path).status == "awaiting-clips"
 
 
-def test_avatar_scenes_use_cartoon_clips_when_enabled(tmp_path):
+def test_avatar_scenes_use_cartoon_clips_when_enabled(tmp_path, monkeypatch):
+    from engine import config
+    monkeypatch.setattr(config, "STORY_FORMAT", {("sglearning", "short"), ("arthvan", "short")})   # presenter-era long path
     d, calls = deps(tmp_path)
     made = []
     def cartoon_fn(wav, seconds, size, out, mood):

@@ -11,9 +11,10 @@ def test_needed_orders_longs_first_then_shorts(tmp_path, monkeypatch):
     from engine import config
     monkeypatch.setattr(config, "ENABLED_KINDS", {"short", "long"})
     need = buffer.needed(tmp_path, date(2026, 10, 19))             # Monday
-    assert need[0] == (date(2026, 10, 24), "arthvan", "long")        # longs are planned up to horizon_short + horizon_long days ahead
+    assert need[0] == (date(2026, 10, 20), "arthvan", "long")        # longs first, earliest first
     kinds = [k for _d, _c, k in need]
-    assert kinds[:2] == ["long", "long"] and all(k == "short" for k in kinds[2:])
+    n = kinds.count("long")
+    assert n >= 4 and kinds[:n] == ["long"] * n and all(k == "short" for k in kinds[n:])
     assert (date(2026, 10, 19), "sglearning", "short") in need and (date(2026, 10, 19), "arthvan", "short") in need
 
 
@@ -37,13 +38,13 @@ def test_horizons_seven_days_shorts_and_long_within_window(tmp_path, monkeypatch
     need = buffer.needed(tmp_path, date(2026, 10, 19), horizon_short=7, horizon_long=10)
     days = sorted({d for d, _c, k in need if k == "short"})
     assert days[0] == date(2026, 10, 19) and days[-1] == date(2026, 10, 25)
-    assert (date(2026, 10, 25), "sglearning", "long") in need and (date(2026, 10, 24), "arthvan", "long") in need
+    assert (date(2026, 10, 25), "sglearning", "long") in need and (date(2026, 10, 24), "arthvan", "long") in need and (date(2026, 10, 21), "sglearning", "long") in need
 
 
 def test_myth_short_needs_its_long(tmp_path):
     # the arthvan Short on Wed 21 Oct belongs to the long of Sat 17 Oct (the week's long is the previous Saturday's)
-    assert buffer.long_for_short("arthvan", date(2026, 10, 21)) == "2026-10-17-arthvan-long"
-    assert buffer.long_for_short("arthvan", date(2026, 10, 24)) == "2026-10-17-arthvan-long"
+    assert buffer.long_for_short("arthvan", date(2026, 10, 21)) == "2026-10-20-arthvan-long"     # Tuesday's long
+    assert buffer.long_for_short("arthvan", date(2026, 10, 24)) == "2026-10-20-arthvan-long"     # strictly before Saturday's
     assert buffer.long_for_short("arthvan", date(2026, 10, 25)) == "2026-10-24-arthvan-long"
 
 

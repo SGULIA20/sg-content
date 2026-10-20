@@ -61,3 +61,16 @@ def test_story_build_overlays_label_chip_for_mythology(tmp_path):
     panels = [_png(tmp_path / "p0.png", 1080, 1350, "orange")]
     out = storyframe.build(p, lines, panels, (1080, 1920), tmp_path / "out")
     assert out.exists() and (tmp_path / "out" / "label-archaeology.png").exists()
+
+
+def test_story_build_landscape_long(tmp_path):
+    p = pieces.Piece(id="2026-10-21-sglearning-long", channel="sglearning", kind="long", publish_day=date(2026, 10, 21))
+    p.script = {"title": "FD ka *sach* 💔", "hook": "h",
+                "scenes": [{"vo": "Pehla adhyay.", "visual": {"type": "art", "prompt": "x", "card": None}, "facts_used": [], "label": "reported"},
+                           {"vo": "Doosra adhyay.", "visual": {"type": "art", "prompt": "y", "card": None}, "facts_used": [], "label": "reported"}],
+                "end_question": "q", "cards": [], "captions": {"youtube": {"title": "t", "description": "d", "tags": [], "chapters": ["00:00 Ek", "00:00 Do"]}}, "carousel": False}
+    lines = [(_tone(tmp_path / "v0.wav", 1.5), 1.5), (_tone(tmp_path / "v1.wav", 1.5), 1.5)]
+    panels = [_png(tmp_path / "p0.png", 1920, 1080, "orange"), _png(tmp_path / "p1.png", 1920, 1080, "teal")]
+    out = storyframe.build(p, lines, panels, (1920, 1080), tmp_path / "out")
+    w, h, dur = _probe(out)
+    assert (w, h) == (1920, 1080) and out.name == "long.mp4" and 3.4 < dur < 4.4
