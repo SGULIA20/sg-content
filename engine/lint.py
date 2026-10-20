@@ -16,6 +16,7 @@ AVATAR_MAX_SHARE = 0.25
 SIMILARITY_MAX = 0.6
 TITLE_MAX, IG_CAPTION_MAX, THREADS_MAX = 60, 2200, 500
 IG_TAGS = (5, 8)
+BIG_NUMBER_MAX = 12
 PHONE = re.compile(r"(\+?\d[\d\s\-]{8,}\d)")
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+\.[\w.]+")
 
@@ -126,6 +127,11 @@ def check_captions(piece: Piece, hashtags: dict) -> list:
         reasons.append(f"hashtags: not in the allowed list: {', '.join(unknown)}")
     if len(th.get("text", "")) > THREADS_MAX:
         reasons.append(f"threads: {len(th['text'])} chars, max {THREADS_MAX}")
+    s = piece.script or {}
+    bigs = [c.get("big_number", "") for c in s.get("cards", [])] + [(sc.get("visual") or {}).get("card", {}).get("big_number", "") for sc in s.get("scenes", []) if (sc.get("visual") or {}).get("card")]
+    for b in bigs:
+        if len(b) > BIG_NUMBER_MAX:
+            reasons.append(f"card: big_number '{b}' is {len(b)} characters, max {BIG_NUMBER_MAX}")
     for name, blob in (("youtube", yt.get("description", "") + yt.get("title", "")), ("instagram", ig.get("caption", "")), ("threads", th.get("text", ""))):
         if PHONE.search(blob) or EMAIL.search(blob):
             reasons.append(f"pii: phone number or email in {name} text")

@@ -1,0 +1,39 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.22,Default,,0,0,0,,RBI kal banks ko 50,000 crore
+Dialogue: 0,0:00:02.22,0:00:03.49,Default,,0,0,0,,de raha hai,
+Dialogue: 0,0:00:03.49,0:00:05.08,Default,,0,0,0,,sirf 1 din ke liye.
+Dialogue: 0,0:00:05.53,0:00:07.75,Default,,0,0,0,,Yaani banks ko overnight udhaar,
+Dialogue: 0,0:00:07.75,0:00:09.97,Default,,0,0,0,,jo agle hi din wapas aayega.
+Dialogue: 0,0:00:10.42,0:00:14.08,Default,,0,0,0,,Pichhle auction mein banks ne 1,50,735
+Dialogue: 0,0:00:14.08,0:00:15.91,Default,,0,0,0,,crore maange.
+Dialogue: 0,0:00:15.91,0:00:18.66,Default,,0,0,0,,RBI ne diye 1,00,014 crore.
+Dialogue: 0,0:00:19.11,0:00:19.79,Default,,0,0,0,,Wajah?
+Dialogue: 0,0:00:19.79,0:00:22.16,Default,,0,0,0,,Tyohaar mein cash ki demand,
+Dialogue: 0,0:00:22.16,0:00:24.20,Default,,0,0,0,,upar se tax payments.
+Dialogue: 0,0:00:24.20,0:00:26.23,Default,,0,0,0,,Banks ke paas cash tight hai.
+Dialogue: 0,0:00:26.68,0:00:30.25,Default,,0,0,0,,Isliye pichhle auction ka cut-off rate
+Dialogue: 0,0:00:30.25,0:00:31.88,Default,,0,0,0,,5.51 percent tak gaya.
+Dialogue: 0,0:00:32.33,0:00:33.38,Default,,0,0,0,,Aapke liye matlab?
+Dialogue: 0,0:00:33.38,0:00:35.90,Default,,0,0,0,,Floating home loan EMI zyada-tar repo
+Dialogue: 0,0:00:35.90,0:00:37.58,Default,,0,0,0,,rate se judi hoti hai,
+Dialogue: 0,0:00:37.58,0:00:38.83,Default,,0,0,0,,is auction se nahi.
+Dialogue: 0,0:00:38.83,0:00:41.14,Default,,0,0,0,,Yeh paisa short-term rates ko achanak
+Dialogue: 0,0:00:41.14,0:00:42.61,Default,,0,0,0,,uchhalne se rokta hai.
+Dialogue: 0,0:00:43.06,0:00:45.39,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:45.39,0:00:47.73,Default,,0,0,0,,Koi bhi faisla apne advisor se
+Dialogue: 0,0:00:47.73,0:00:48.66,Default,,0,0,0,,pooch kar lijiye.
+Dialogue: 0,0:00:49.11,0:00:51.44,Default,,0,0,0,,Is tyohaar shopping cash se ki
+Dialogue: 0,0:00:51.44,0:00:52.61,Default,,0,0,0,,ya UPI se?
+Dialogue: 0,0:00:52.61,0:00:54.07,Default,,0,0,0,,Comment mein bataiye.

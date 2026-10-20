@@ -159,3 +159,11 @@ def test_short_word_bounds_fit_59_seconds_of_hinglish():
     assert lint.SHORT_WORDS == (90, 135)
     assert not any(r.startswith("length") for r in lint.check_script(piece_with(_words(120)), BANNED, []))
     assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(150)), BANNED, []))
+
+
+def test_card_big_number_must_be_short():
+    p = piece_with(_words(120))
+    p.script["cards"] = [{"big_number": "₹1,50,735 cr maange", "line": "x", "source": "RBI"}]
+    assert any(r.startswith("card") for r in lint.check_captions(p, HASHTAGS))
+    p.script["cards"] = [{"big_number": "₹1.5 lakh cr", "line": "x", "source": "RBI"}]
+    assert not any(r.startswith("card") for r in lint.check_captions(p, HASHTAGS))
