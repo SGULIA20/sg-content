@@ -73,7 +73,9 @@
   }
  ],
  "id": "2026-10-21-arthvan-short",
- "ids": {},
+ "ids": {
+  "yt_id": "4IhWAOI9RkY"
+ },
  "kind": "short",
  "publish_day": "2026-10-21",
  "reasons": [
@@ -279,7 +281,7 @@
   ],
   "title": "Ram Setu, *satellite* mein kya dikhta? 🤯"
  },
- "status": "qa_failed",
+ "status": "uploaded",
  "timings": [
   0.0,
   18.835,
@@ -314,6 +316,6 @@
   "target_minutes": null,
   "title_hi": "Ram Setu, satellite se kya dikhta hai"
  },
- "updated": "2026-10-20T19:50:07+00:00",
+ "updated": "2026-10-20T20:00:45+00:00",
  "writer": "claude"
 }
