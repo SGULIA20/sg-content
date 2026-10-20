@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Dev;src:url({{FONTS}}/NotoSansDevanagari.ttf)}
+@font-face{font-family:Inter;src:url({{FONTS}}/Inter.ttf)}
+html,body{margin:0;padding:0;background:#000}
+#root{position:relative;width:{{W}}px;height:{{H}}px;overflow:hidden;background:#000;font-family:Inter,Dev,sans-serif;color:#fff;text-align:center}
+.wrap{position:absolute;left:8%;right:8%;top:50%;transform:translateY(-50%)}
+.play{display:inline-block;width:0;height:0;border-left:70px solid #FFD166;border-top:42px solid transparent;border-bottom:42px solid transparent;margin-bottom:26px}
+.ch{font-weight:900;font-size:96px;line-height:1.05;letter-spacing:-2px;color:#FFD166;text-transform:uppercase}
+.tag{margin-top:18px;font-family:Georgia,"Times New Roman",Dev,serif;font-style:italic;font-weight:700;font-size:48px;color:#F4F6FB}
+.cta{margin-top:54px;font-weight:800;font-size:46px;color:#fff}
+.cta b{background:#E53935;color:#fff;padding:10px 26px;border-radius:14px;margin-right:16px}
+.q{margin-top:44px;font-weight:600;font-size:40px;line-height:1.3;color:#D7DCEA}
+.h{position:absolute;left:0;right:0;bottom:7%;font-weight:600;font-size:36px;color:#9AA4BF}
+</style></head><body><div id="root">
+<div class="wrap">
+  <div class="play"></div>
+  <div class="ch">{{channel}}</div>
+  <div class="tag">{{tagline}}</div>
+  <div class="cta"><b>SUBSCRIBE</b> aur share karo</div>
+  <div class="q">{{question}}</div>
+</div>
+<div class="h">Instagram · Threads &nbsp;{{handle}}</div>
+<script>
+const W={{W}},H={{H}};
+if(W>H){document.querySelector(".ch").style.fontSize="110px";document.querySelector(".tag").style.fontSize="44px";document.querySelector(".q").style.fontSize="36px"}
+const ch=document.querySelector(".ch");let fs=parseInt(getComputedStyle(ch).fontSize);while(ch.scrollWidth>W*0.86&&fs>56){fs-=6;ch.style.fontSize=fs+"px"}
+</script>
+</div></body></html>

@@ -6,11 +6,28 @@ import subprocess
 from pathlib import Path
 
 from . import assemble, captions, cards, lint, music
-from .config import STORY_MAX_S, VIDEO
+from .config import CHANNELS, STORY_MAX_S, VIDEO
 
 FPS = VIDEO["fps"]
 TOP, PANEL, BOTTOM = 0.17, 0.66, 0.17
 HANDLE = "@sanjeev_gulia"
+END_S = 3.0                                                  # branded end card: channel name, tagline, subscribe, the question
+
+
+def brand(channel: str) -> dict:
+    """What every frame and the end card say about the channel (the founder: name the channel like the app Reels name the app)."""
+    ch = CHANNELS[channel]
+    return {"channel": ch.display_name, "tagline": ch.niche, "handle": HANDLE}
+
+
+def end_card(piece, size: tuple, out_dir: Path) -> Path:
+    """A still end card held for END_S seconds, same bands and colours as the story."""
+    w, h = size
+    png = cards.render("storyend", {**brand(piece.channel), "question": (piece.script or {}).get("end_question", "")}, Path(out_dir) / "end.png", size)
+    out = Path(out_dir) / "end.mp4"
+    _run(["-loop", "1", "-framerate", str(FPS), "-i", str(png), "-t", f"{END_S:.2f}", "-vf", f"scale={w}:{h},format=yuv420p",
+          "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", str(FPS), str(out)])
+    return out
 
 
 def title_html(title: str) -> str:
@@ -59,9 +76,9 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     w, h = size
     band_h = int(h * TOP)
     title = (piece.script or {}).get("title") or (piece.script or {}).get("hook", "")
-    title_png = cards.render("storytitle", {"title_html": title_html(title), "handle": HANDLE}, out_dir / "title.png", (w, band_h))
+    title_png = cards.render("storytitle", {"title_html": title_html(title), **brand(piece.channel)}, out_dir / "title.png", (w, band_h))
     if piece.kind == "short":
-        lines, factor = assemble.fit_short(lines, out_dir / "vo-fit", limit=STORY_MAX_S)
+        lines, factor = assemble.fit_short(lines, out_dir / "vo-fit", limit=STORY_MAX_S - END_S)
         if factor > 1.0:
             print(f"voice sped up {factor}x to fit the story under {STORY_MAX_S:.0f} s", flush=True)
     voice_wav = out_dir / "voice.wav"
@@ -86,14 +103,15 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
                 cards.render("label", {"label": scene_d["label"]}, chip, (400, 90))
         clips.append(scene(panel, dur, size, out_dir / f"scene{i:02d}.mp4", title_png, overlays, chip=chip))
     (out_dir / "captions.ass").write_text(captions.ass(all_cues, size))
+    clips.append(end_card(piece, size, out_dir))
     concat = out_dir / "scenes.txt"
     concat.write_text("".join(f"file '{c.resolve()}'\n" for c in clips))
-    total = sum(durations)
+    total = sum(durations) + END_S
     bed = music.bed("light", total + 5)
     out = out_dir / ("reel.mp4" if piece.kind == "short" else "long.mp4")
     _run(["-f", "concat", "-safe", "0", "-i", str(concat), "-i", str(voice_wav), "-stream_loop", "-1", "-i", str(bed),
           "-filter_complex", (f"[1:a]aresample=48000,loudnorm=I={assemble.VOICE_LUFS}:TP=-1.5:LRA=11[v];"
                               f"[2:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS,afade=t=out:st={max(0.0, total - 2):.2f}:d=2,"
-                              f"loudnorm=I={assemble.MUSIC_LUFS}:TP=-6:LRA=7[m];[v][m]amix=inputs=2:duration=first:normalize=0,loudnorm=I={assemble.MIX_LUFS}:TP=-1.5:LRA=11[aout]"),
+                              f"loudnorm=I={assemble.MUSIC_LUFS}:TP=-6:LRA=7[m];[v][m]amix=inputs=2:duration=longest:normalize=0,loudnorm=I={assemble.MIX_LUFS}:TP=-1.5:LRA=11[aout]"),
           "-map", "0:v", "-map", "[aout]", "-t", f"{total:.3f}", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", str(out)])
     return out

@@ -37,8 +37,13 @@ def test_story_build_frames_panels_with_title_and_captions(tmp_path):
     panels = [_png(tmp_path / "p0.png", 1080, 1350, "orange"), _png(tmp_path / "p1.png", 1080, 1350, "teal")]
     out = storyframe.build(p, lines, panels, (1080, 1920), tmp_path / "out")
     w, h, dur = _probe(out)
-    assert (w, h) == (1080, 1920) and out.name == "reel.mp4" and 3.5 < dur < 4.5
-    assert (tmp_path / "out" / "title.png").exists() and p.timings[0] == 0.0
+    assert (w, h) == (1080, 1920) and out.name == "reel.mp4" and 6.5 < dur < 7.5          # two lines + the 3 s branded end card
+    assert (tmp_path / "out" / "title.png").exists() and (tmp_path / "out" / "end.png").exists() and p.timings[0] == 0.0
+
+
+def test_brand_names_the_channel_on_every_piece():
+    assert storyframe.brand("sglearning") == {"channel": "Learning with SG", "tagline": "Paise ki khabar, seedhi baat", "handle": "@sanjeev_gulia"}
+    assert storyframe.brand("arthvan")["channel"] == "SG-MYTH-WORLD"
 
 
 def test_title_markup_turns_stars_into_keyword_span():
@@ -73,4 +78,4 @@ def test_story_build_landscape_long(tmp_path):
     panels = [_png(tmp_path / "p0.png", 1920, 1080, "orange"), _png(tmp_path / "p1.png", 1920, 1080, "teal")]
     out = storyframe.build(p, lines, panels, (1920, 1080), tmp_path / "out")
     w, h, dur = _probe(out)
-    assert (w, h) == (1920, 1080) and out.name == "long.mp4" and 3.4 < dur < 4.4
+    assert (w, h) == (1920, 1080) and out.name == "long.mp4" and 6.4 < dur < 7.4
