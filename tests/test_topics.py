@@ -78,3 +78,15 @@ def test_pick_pushes_rbi_plumbing_below_household_news():
     ipo = {"title": "Jio Platforms IPO draws Rs 8,110 crore in anchor investor bids; LIC among investors", "link": "https://x/3", "summary": "", "published": NOW, "source": "Mint", "rank": 3}
     assert topics.pick_finance([rbi, mmo, ipo], set(), NOW)["link"] == "https://x/3"
     assert topics.pick_finance([rbi, mmo], set(), NOW) is None
+
+
+def test_long_bank_rotates_in_order(tmp_path):
+    (tmp_path / "long-topics.yaml").write_text("- id: a\n  title: A\n  summary: s\n  hooks: [h]\n- id: b\n  title: B\n  summary: s\n  hooks: [h]\n")
+    assert topics.next_long_finance(tmp_path, set())["id"] == "a"
+    assert topics.next_long_finance(tmp_path, {"a"})["id"] == "b"
+    assert topics.next_long_finance(tmp_path, {"a", "b"})["id"] == "a"
+
+
+def test_real_long_bank_has_ten_sourced_topics():
+    bank = topics.load_long_bank()
+    assert len(bank) >= 10 and all(t["id"] and t["title"] and t["summary"] and len(t["hooks"]) == 3 for t in bank)

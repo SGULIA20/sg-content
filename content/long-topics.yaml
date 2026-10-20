@@ -1,0 +1,43 @@
+# Learning with SG: evergreen topics for the twice-weekly 12-minute illustrated money documentaries (Wed + Sun).
+# Used in order, each once, then the rotation restarts. Shorts keep coming from the news feeds; longs come from here because a
+# 12-minute story needs a subject people search for all year, not a headline. Every number still comes from the research step with a source.
+- id: home-loan-double
+  title: "50 lakh ka ghar, 1 crore ka bill: 20 saal ki EMI mein bank kitna kamata hai"
+  summary: "A family buys a flat on a 20-year home loan; the amortisation schedule shows interest front-loaded, the total paid roughly double the price, and what prepaying one extra EMI a year does. Explain EMI, principal, interest, prepayment, floating rate."
+  hooks: ["50 lakh ka ghar, 1 crore kyun dete ho?", "Pehli 5 saal ki EMI mein ghar ka kitna hissa aapka hua?", "Saal mein ek extra EMI se kitne saal bachte hain?"]
+- id: fd-vs-inflation
+  title: "Papa ki FD 20 saal mein kyun chhoti ho gayi: mehngai ka chhupa tax"
+  summary: "Fixed deposit interest vs inflation over two decades; real return, tax on FD interest, why the 'safe' choice quietly shrinks; where it still makes sense (emergency fund, short goals)."
+  hooks: ["7% byaaj, phir bhi paisa kam kaise hua?", "FD par tax kab kat-ta hai?", "Emergency fund kahan rakhein?"]
+- id: credit-card-minimum-due
+  title: "Credit card ka 'minimum due' button: 40,000 ka bill 4 saal kaise chalta hai"
+  summary: "What happens when a cardholder pays only the minimum due: the interest-free period ends, interest of 36-42% a year compounds on the whole balance, late fees; how long a bill takes to clear paying minimum only; how to escape (pay in full, convert to EMI, balance transfer)."
+  hooks: ["Minimum due bharne par kitna byaaj lagta hai?", "Bill 4 saal kyun nahi khatam hota?", "Card ka byaaj loan se zyada kyun?"]
+- id: sip-rupee-cost
+  title: "500 rupaye mahine ki SIP: 20 saal mein kya bana, aur kya nahi bana"
+  summary: "How a monthly SIP in a mutual fund works, rupee cost averaging, the difference between returns in a good decade and a flat one, expense ratio, why stopping in a crash hurts; honest ranges, no promises."
+  hooks: ["500 ki SIP se kya hoga?", "Market girne par SIP band karna sahi hai?", "Expense ratio kya khata hai?"]
+- id: gold-vs-paper-gold
+  title: "Mummy ka sona vs sovereign gold bond: kaun sa gold sach mein kamata hai"
+  summary: "Physical gold (making charges, purity, locker), gold ETFs and sovereign gold bonds compared over a decade: costs, 2.5% SGB interest, tax at maturity, when jewellery is a purchase not an investment."
+  hooks: ["Gehne par making charge kitna jaata hai?", "Gold bond par 2.5% extra kaise milta hai?", "Locker ka kharcha kaun ginta hai?"]
+- id: health-insurance-claim
+  title: "Hospital ke bill par 'claim reject': health insurance ka chhota print"
+  summary: "A family's hospital claim gets cut: room-rent limits, waiting periods, sub-limits, pre-existing disease rules, co-pay; how to read a policy, cashless vs reimbursement, why an employer policy alone is not enough."
+  hooks: ["Room rent limit se poora claim kat-ta hai?", "Waiting period mein kya nahi milta?", "Office ka insurance kaafi hai?"]
+- id: upi-fraud-anatomy
+  title: "UPI par 'refund' ka call: ek fraud ki poori kahani, step by step"
+  summary: "How common UPI and OTP frauds work (collect requests, screen-share apps, fake customer care), what the money trail looks like, the RBI zero-liability rules and the 1930 helpline, what to do in the first hour."
+  hooks: ["Refund lene ke liye PIN kyun maanga?", "Paisa gaya toh 1930 par kya hota hai?", "Bank kab paisa wapas deta hai?"]
+- id: income-tax-regimes
+  title: "Purana ya naya tax regime: 10 lakh salary par kaun sa jeb bachaata hai"
+  summary: "The two income tax regimes explained with one salaried family: slabs, standard deduction, 80C/HRA under the old regime, when each wins, how to switch; numbers from the current Finance Act."
+  hooks: ["Naya regime sabke liye sasta hai?", "80C ab kaam ka hai ya nahi?", "HRA kab kaam aata hai?"]
+- id: emergency-fund-six-months
+  title: "Naukri gayi, EMI nahi ruki: 6 mahine ka emergency fund kaise banta hai"
+  summary: "Why six months of expenses in a liquid place matters, where to keep it (savings, sweep FD, liquid fund), how a family builds it in a year, what not to touch it for."
+  hooks: ["Emergency fund kitna hona chahiye?", "Savings account mein rakhna galat hai?", "Pehle loan chukayein ya fund banayein?"]
+- id: car-loan-vs-cash
+  title: "10 lakh ki gaadi: loan par lein ya cash, aur 5 saal mein asli kharcha kya"
+  summary: "Total cost of car ownership: loan interest, depreciation, insurance, fuel, service; the loan-vs-cash decision with opportunity cost, why a used car can be the smarter maths for many families."
+  hooks: ["Gaadi 5 saal mein kitni sasti ho jaati hai?", "Car loan ka byaaj kitna dete hain?", "Cash hai toh bhi loan lena sahi hai?"]

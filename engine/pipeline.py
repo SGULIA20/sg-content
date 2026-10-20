@@ -42,6 +42,7 @@ class Deps:
     cartoon: Callable = None     # (wav, seconds, size, out, mood) -> mp4: code-animated cartoon presenter for avatar scenes
     story_build: Callable = None # (piece, lines, panels, size, out_dir) -> mp4: illustrated-story frame (title band, panel, caption band)
     cast_refs: Callable = None   # (prompt) -> reference PNGs of the cast members the panel names
+    subtitles: Callable = None   # (piece, out_dir, video) -> writes SRTs and adds YouTube caption tracks (longs)
 
 
 def _jsonable(d: dict) -> dict:
@@ -262,6 +263,12 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
     # 10: upload, scheduled
     piece.ids["yt_id"] = deps.upload(piece, video, thumb)
     pieces.save(pieces.transition(piece, "uploaded"), root)
+    if piece.kind == "long" and deps.subtitles:
+        try:
+            deps.subtitles(piece, out_dir, video)                    # caption tracks are a bonus: never fail an uploaded piece over them
+        except Exception as e:
+            print(f"subtitles skipped for {piece.id}: {secrets.scrub(str(e))[:200]}", flush=True)
+        pieces.save(piece, root)
     return piece
 
 
@@ -273,6 +280,8 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
 
     def topic_fn(piece, used):
         if piece.channel == "sglearning":
+            if piece.kind == "long":
+                return topics.next_long_finance(root / "content", used)
             from datetime import datetime, timezone
             return topics.pick_finance(topics.fetch_all(), used, datetime.now(timezone.utc))
         return topics.next_myth(root / "content", used)
@@ -288,9 +297,15 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
             piece.ids["unlisted"] = True
         return vid
 
+    def subtitles_fn(piece, out_dir, video):
+        import os
+        from . import subtitles
+        paths = subtitles.write_all(piece, out_dir, duration=qa.probe(video).get("duration"))
+        subtitles.upload_all(youtube.access_token(piece.channel, env or os.environ), piece, paths)
+
     return Deps(topic=topic_fn, research=lambda topic, ch: research.verify_urls(research.fact_sheet(topic, ch)), write=writer.write, say=voice.say, paint=art.paint, avatar=art.avatar,
                 render_card=cards.render, build=assemble.build, qa=qa.report, upload=upload_fn,
                 lint=lambda piece, prior: lint.check_script(piece, banned, prior) + lint.check_captions(piece, hashtags),
                 claims_check=lambda piece: claims.match(lint.all_text(piece), piece.facts, library),
                 commons=art.commons_photo, library=library, hashtags=hashtags, voice_id=default_voice,
-                cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for)
+                cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for, subtitles=subtitles_fn)

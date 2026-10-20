@@ -75,4 +75,4 @@ STORY_MAX_S = 95.0                            # YouTube Shorts and Reels allow u
 
 ENABLED_KINDS = {"short", "long"}             # longs twice a week per channel (founder, 20 Oct 2026)
 
-UNLISTED_KINDS = {"long"}                     # the first longs go up unlisted for the founder's check; `python -m engine.youtube --go-public` releases them
+UNLISTED_KINDS = set()                        # founder 21 Oct 2026: longs go public on schedule like Shorts (`python -m engine.youtube --go-public` still releases any unlisted ones)

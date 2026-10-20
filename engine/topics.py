@@ -121,6 +121,19 @@ def load_myth_bank(root: Path = CONTENT_DIR) -> list:
     return yaml.safe_load((Path(root) / "myth-topics.yaml").read_text()) or []
 
 
+def load_long_bank(root: Path = CONTENT_DIR) -> list:
+    return yaml.safe_load((Path(root) / "long-topics.yaml").read_text()) or []
+
+
+def next_long_finance(root: Path, used_ids: set) -> dict:
+    """Evergreen subject for a 12-minute finance documentary: the bank in order, each once, then the rotation restarts."""
+    bank = load_long_bank(root)
+    for t in bank:
+        if t["id"] not in used_ids:
+            return t
+    return bank[0]
+
+
 def next_myth(root: Path, used_ids: set) -> dict:
     bank = load_myth_bank(root)
     for t in bank:
