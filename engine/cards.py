@@ -6,7 +6,7 @@ from pathlib import Path
 
 from .config import ASSETS_DIR, TEMPLATES_DIR
 
-KINDS = {"hook", "number", "source", "label", "end", "thumb", "slide", "caption", "avatar", "story", "storytitle", "storycap", "thumb2", "storyend", "logo"}
+KINDS = {"hook", "number", "source", "label", "end", "thumb", "slide", "caption", "avatar", "story", "storytitle", "storycap", "thumb2", "storyend", "logo", "banner"}
 TRANSPARENT = {"label", "caption", "logo"}
 BG = "#0B0F1A"
 _PW = None

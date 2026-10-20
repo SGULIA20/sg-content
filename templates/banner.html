@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Inter;src:url({{FONTS}}/Inter.ttf)}
+html,body{margin:0;padding:0;background:#0B0F1A}
+#root{position:relative;width:{{W}}px;height:{{H}}px;overflow:hidden;background:#0B0F1A;font-family:Inter,sans-serif;color:#fff}
+.safe{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:1546px;height:423px;display:flex;align-items:center;justify-content:center;gap:48px}
+.logo{width:300px;height:300px}
+.text{text-align:left}
+.ch{font-weight:900;font-size:120px;line-height:1;letter-spacing:-3px;color:#FFD166;text-transform:uppercase}
+.tag{margin-top:16px;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:700;font-size:52px;color:#F4F6FB}
+.sched{margin-top:18px;font-weight:700;font-size:34px;letter-spacing:1px;color:#9AA4BF;text-transform:uppercase}
+.band{position:absolute;left:0;right:0;height:14px;background:#FFD166}
+</style></head><body><div id="root">
+<div class="band" style="top:0"></div><div class="band" style="bottom:0"></div>
+<div class="safe"><img class="logo" src="{{logo_path}}"><div class="text"><div class="ch">{{channel}}</div><div class="tag">{{tagline}}</div><div class="sched">{{schedule}}</div></div></div>
+</div></body></html>
