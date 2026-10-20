@@ -5,7 +5,7 @@ from datetime import date
 from pathlib import Path
 
 from . import gemini, schema, secrets
-from .config import BUDGETS, CONTENT_DIR, LOGS_DIR, today_ist
+from .config import BUDGETS, CONTENT_DIR, LOGS_DIR, today_ist, today_pacific
 from .pieces import Piece
 
 MODEL = "claude-opus-5-5"
@@ -46,7 +46,7 @@ def _read_spend(path: Path) -> dict:
 
 
 def spent_today(path: Path = SPEND_FILE, today: date | None = None) -> float:
-    today = today or today_ist()
+    today = today or today_pacific()
     return float(_read_spend(path).get(today.isoformat(), {}).get("usd", 0.0))
 
 
@@ -55,7 +55,7 @@ def cost_usd(usage) -> float:
 
 
 def record_spend(usage, path: Path = SPEND_FILE, today: date | None = None) -> float:
-    today = today or today_ist()
+    today = today or today_pacific()
     data = _read_spend(path)
     day = data.setdefault(today.isoformat(), {"usd": 0.0, "requests": 0})
     day["usd"] = round(day["usd"] + cost_usd(usage), 6)
@@ -103,7 +103,7 @@ def _gemini(piece, sheet, library, hashtags, formula, ask) -> dict:
 def write(piece: Piece, sheet: dict, library: list, hashtags: dict, formula: str | None = None, client=None,
           gemini_ask=gemini.generate, spend: Path = SPEND_FILE, today: date | None = None) -> dict:
     """Returns {"script": <piece JSON>, "writer": "claude" | "gemini", "note": str}."""
-    today = today or today_ist()
+    today = today or today_pacific()
     note = ""
     if WRITER_FOR.get(piece.kind) == "gemini":
         note = "shorts are written by the free Gemini model (founder, 20 Oct 2026)"

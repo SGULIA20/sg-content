@@ -4,7 +4,6 @@ on:
   schedule:
     - cron: '5 7 * * *'   # 08:05 Lagos, 12:35 India: right after Gemini's daily voice quota resets (midnight Pacific = 07:00 UTC)
     - cron: '0 9 * * *'   # safety net; the engine never remakes a finished piece
-    - cron: '0 2 * * *'   # early run uses whatever voice budget is left from the previous quota day
   workflow_dispatch:
     inputs:
       dry_run:
