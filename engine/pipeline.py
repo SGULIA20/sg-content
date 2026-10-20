@@ -34,6 +34,8 @@ class Deps:
     library: list = field(default_factory=list)
     hashtags: dict = field(default_factory=dict)
     voice_id: str = ""
+    pack: Callable = None        # (piece) -> parts, for the Gemini presenter-clip path
+    pack_send: Callable = None   # (piece, text) -> Path
 
 
 def _jsonable(d: dict) -> dict:
@@ -126,7 +128,7 @@ def _thumb(piece: Piece, deps: Deps, out_dir: Path) -> Path:
     return deps.render_card("thumb", {"words": words[:3], "number": number, "avatar_path": deps.avatar("surprised")}, out_dir / "thumb.jpg", (1280, 720))
 
 
-def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False) -> Piece:
+def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pack_mode: bool = False) -> Piece:
     """Runs the pipeline for one piece and records every transition. Returns the piece in its final state for this run."""
     if piece.status in buffer.DONE:
         return piece
@@ -177,6 +179,15 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False) -> 
     if script is None:
         return piece
     pieces.save(pieces.transition(piece, "written"), root)
+    if pack_mode:                                                  # Gemini presenter clips: stop here, send the pack, wait for the founder's clips
+        from . import promptpack
+        parts = (deps.pack or promptpack.write)(piece)
+        piece.topic["pack"] = parts
+        text = promptpack.render(piece, parts)
+        (deps.pack_send or promptpack.send)(piece, text)
+        if piece.status != "awaiting-clips":
+            pieces.save(pieces.transition(piece, "awaiting-clips"), root)
+        return piece
     # 5: voice
     lines = []
     try:

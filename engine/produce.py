@@ -8,7 +8,7 @@ import json
 import os
 import sys
 import traceback
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from . import buffer, digest, gitsync, pieces, pipeline, slots, telegram
@@ -24,9 +24,15 @@ def _log_run(root: Path, record: dict) -> None:
         f.write(json.dumps(record, ensure_ascii=False) + "\n")
 
 
+FALLBACK_HOURS = 3           # a pack still waiting for clips this close to its slot is rendered the automatic way
+PACK_STATUSES = ("awaiting-clips", "awaiting-confirm")
+
+
 def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFAULT, dry_run: bool = False, only: set | None = None,
-        long_minutes: int | None = None, deps: pipeline.Deps | None = None, notify=telegram.send) -> int:
-    today = today or slots.ist(datetime.now(timezone.utc)).date()
+        long_minutes: int | None = None, deps: pipeline.Deps | None = None, notify=telegram.send, mode: str = "auto",
+        now_utc: datetime | None = None) -> int:
+    now_utc = now_utc or datetime.now(timezone.utc)
+    today = today or slots.ist(now_utc).date()
     if telegram.paused(root):
         print("paused: nothing made", flush=True)
         return 0
@@ -41,12 +47,18 @@ def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFA
             piece = pieces.load(pid, root) or pieces.Piece(id=pid, channel=channel, kind=kind, publish_day=day)
             if piece.status in buffer.DONE:
                 continue
+            if piece.status in PACK_STATUSES:
+                deadline = slots.publish_at(channel, kind, day) - timedelta(hours=FALLBACK_HOURS)
+                if mode == "pack" or now_utc < deadline:
+                    continue                                               # the founder's clips may still come
+                pieces.transition(piece, "written", f"pack cancelled: no clips {FALLBACK_HOURS} h before the slot; rendered the automatic way")
+                notify(f"{pid}: pack cancelled, rendering the automatic version instead")
             if not (piece.script and piece.status in pipeline.RESUMABLE):
                 piece.status = "planned"                                   # a parked piece keeps its script and resumes
             if kind == "long" and long_minutes:
                 pipeline.LONG_TARGET_MINUTES[channel] = long_minutes
             print(f"making {pid}", flush=True)
-            piece = pipeline.make(piece, deps, root, dry_run=dry_run)
+            piece = pipeline.make(piece, deps, root, dry_run=dry_run, pack_mode=(mode == "pack"))
             made.append((pid, piece.status))
             gitsync.safe_commit(root, f"produce: {pid} {piece.status}")
             print(f"  -> {piece.status}" + (f": {piece.reasons[-1]}" if piece.reasons else ""), flush=True)
@@ -80,10 +92,11 @@ def main(argv=None) -> int:
     ap.add_argument("--only", help="comma list of channel:kind to make, e.g. sglearning:short,arthvan:long")
     ap.add_argument("--long-minutes", type=int, help="override the long video target (for a quick test render)")
     ap.add_argument("--date", help="IST date YYYY-MM-DD (default today)")
+    ap.add_argument("--mode", choices=["auto", "pack"], default="auto", help="pack = write the script and send the Gemini prompt pack, no render")
     a = ap.parse_args(argv)
     telegram.poll_commands(status_fn=lambda: digest.status_line(ROOT))
     return run(ROOT, date.fromisoformat(a.date) if a.date else None, a.max, a.dry_run,
-               set(a.only.split(",")) if a.only else None, a.long_minutes)
+               set(a.only.split(",")) if a.only else None, a.long_minutes, mode=a.mode)
 
 
 if __name__ == "__main__":

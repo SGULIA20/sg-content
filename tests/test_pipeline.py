@@ -244,3 +244,36 @@ def test_length_only_reject_asks_writer_to_revise_same_topic(tmp_path):
     p = pipeline.make(_piece(), d, tmp_path)
     assert p.status == "uploaded" and calls["topics"] == 1 and calls["research"] == 1 and len(seen) == 2
     assert "revise" not in seen[0] and "150 words" in seen[1]["revise"]
+
+
+def test_pack_mode_stops_after_script_and_sends_pack(tmp_path):
+    d, calls = deps(tmp_path)
+    sent = []
+    d.pack = lambda piece: sent.append(piece.id) or [{"part": 1, "scene": 0, "narration": "n", "prompt": "p"}]
+    d.pack_send = lambda piece, text: sent.append(("sent", piece.id)) or Path(tmp_path / "pack.txt")
+    p = pipeline.make(_piece(), d, tmp_path, pack_mode=True)
+    assert calls["say"] == 0 and calls["build"] == 0 and p.topic["pack"][0]["narration"] == "n" and ("sent", p.id) in sent
+
+
+def test_produce_fallback_renders_stale_pack_near_slot(tmp_path):
+    from datetime import datetime, timezone
+    from engine import produce
+    p = _piece(); p.script = good_script(); p.facts = FACTS; p.topic = dict(TOPIC, pack=[{"part": 1, "scene": 0, "narration": "n", "prompt": "p"}])
+    p.status = "awaiting-clips"; pieces.save(p, tmp_path)
+    d, calls = deps(tmp_path)
+    # 20:00 IST slot on 20 Oct = 14:30 UTC; now = 12:00 UTC is within the 3-hour fallback window
+    produce.run(tmp_path, date(2026, 10, 20), max_pieces=1, dry_run=True, only={"sglearning:short"}, deps=d, notify=lambda t: True,
+                now_utc=datetime(2026, 10, 20, 12, 0, tzinfo=timezone.utc))
+    q = pieces.load(p.id, tmp_path)
+    assert calls["say"] == 3 and q.status == "assembled" and "pack cancelled" in q.reasons[-1]
+
+
+def test_produce_leaves_fresh_pack_alone(tmp_path):
+    from datetime import datetime, timezone
+    from engine import produce
+    p = _piece(); p.script = good_script(); p.facts = FACTS; p.topic = dict(TOPIC, pack=[{"part": 1, "scene": 0, "narration": "n", "prompt": "p"}])
+    p.status = "awaiting-clips"; pieces.save(p, tmp_path)
+    d, calls = deps(tmp_path)
+    produce.run(tmp_path, date(2026, 10, 20), max_pieces=1, dry_run=True, only={"sglearning:short"}, deps=d, notify=lambda t: True,
+                now_utc=datetime(2026, 10, 20, 3, 0, tzinfo=timezone.utc))
+    assert calls["say"] == 0 and pieces.load(p.id, tmp_path).status == "awaiting-clips"

@@ -67,6 +67,15 @@ def file_clips(piece, clips: list, inbox_dir: Path = INBOX) -> int:
     return n
 
 
+def _reject(part: Path) -> Path:
+    """A clip that failed its check or was redone is kept under rejected/, never deleted (it is the founder's file)."""
+    rej = part.parent / "rejected"
+    rej.mkdir(exist_ok=True)
+    target = rej / f"{part.stem}-{datetime.now(timezone.utc).strftime('%H%M%S')}.mp4"
+    part.rename(target)
+    return target
+
+
 def transcribe(clip: Path) -> str:
     """Gemini transcription of a clip's speech (Hinglish), via a temp WAV."""
     import base64
@@ -157,7 +166,7 @@ def tick(root: Path = ROOT, downloads: Path = DOWNLOADS, inbox_dir: Path = INBOX
         for n in sorted(set(have_parts(piece, inbox_dir)) - before):
             problems = check_clip(Path(inbox_dir) / piece.id / f"part{n:02d}.mp4", parts[n]["narration"], transcribe, similarity)
             if problems:
-                (Path(inbox_dir) / piece.id / f"part{n:02d}.mp4").unlink()
+                _reject(Path(inbox_dir) / piece.id / f"part{n:02d}.mp4")
                 msg = f"{piece.id} part {n}: " + "; ".join(problems) + f"\nPlease regenerate part {n} (redo {piece.id} {n} is implied; the next clip you drop fills it)."
                 notify(msg); sent.append(msg)
         have = have_parts(piece, inbox_dir)
@@ -193,7 +202,8 @@ def command(text: str, root: Path = ROOT, inbox_dir: Path = INBOX, build=None, q
         return f"swapped parts {a} and {b} of {pid}"
     if verb == "redo" and len(words) == 3:
         n = int(words[2])
-        (d / f"part{n:02d}.mp4").unlink(missing_ok=True)
+        if (d / f"part{n:02d}.mp4").exists():
+            _reject(d / f"part{n:02d}.mp4")
         pieces.save(pieces.transition(piece, "awaiting-clips", f"redo part {n}"), root)
         return f"waiting for a new part {n} of {pid}; drop it in Downloads"
     if verb == "ok":

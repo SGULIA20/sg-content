@@ -75,7 +75,8 @@ def test_tick_flags_bad_part_and_keeps_waiting(tmp_path):
                transcribe=lambda c: "wrong words entirely", notify=lambda t: sent.append(t) or True, send_file=lambda f, c: True)
     q = pieces.load(p.id, tmp_path)
     assert q.status == "awaiting-clips" and any("redo" in s for s in sent)
-    assert not (tmp_path / "Inbox" / p.id / "part01.mp4").exists()                    # a bad part is removed so the next clip replaces it
+    assert not (tmp_path / "Inbox" / p.id / "part01.mp4").exists()                    # a bad part is moved aside so the next clip replaces it
+    assert list((tmp_path / "Inbox" / p.id / "rejected").glob("part01-*.mp4"))
 
 
 def test_commands_swap_and_redo(tmp_path):
