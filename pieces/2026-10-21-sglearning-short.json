@@ -73,13 +73,12 @@
   }
  ],
  "id": "2026-10-21-sglearning-short",
- "ids": {
-  "out_sha": "86272eb8cfa340437e50fbc6fe2227c611a9d562",
-  "yt_id": "E9lJOkOWQsw"
- },
+ "ids": {},
  "kind": "short",
  "publish_day": "2026-10-21",
- "reasons": [],
+ "reasons": [
+  "re-voiced from the pool (founder, 21 Oct)"
+ ],
  "script": {
   "captions": {
    "instagram": {
@@ -245,7 +244,7 @@
   ],
   "title": "Dividend ka *free* paisa sach mein free? 🤔"
  },
- "status": "uploaded",
+ "status": "written",
  "timings": [
   0.0,
   4.25,
@@ -269,6 +268,6 @@
   "target_minutes": null,
   "title": "Dividend, stock split, buyback: Last chance to buy today - VRL Logistics, JSW Dulux, Angel One shares"
  },
- "updated": "2026-10-20T19:56:42+00:00",
+ "updated": "2026-10-20T20:20:21+00:00",
  "writer": "claude"
 }

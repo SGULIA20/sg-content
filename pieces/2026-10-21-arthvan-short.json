@@ -74,15 +74,15 @@
  ],
  "id": "2026-10-21-arthvan-short",
  "ids": {
-  "out_sha": "31dbcbc2921915bb1a4ff5855ef0c9f87c4f7093",
-  "yt_id": "4IhWAOI9RkY"
+  "yt_id": "WvzlsYrVBQo"
  },
  "kind": "short",
  "publish_day": "2026-10-21",
  "reasons": [
   "try 1: length: 232 words, allowed 150-230",
   "image budget of ₹150 reached for 2026-10-21",
-  "frozen: 5.6s without motion"
+  "frozen: 5.6s without motion",
+  "re-voiced from the pool (founder, 21 Oct)"
  ],
  "script": {
   "captions": {
@@ -285,18 +285,18 @@
  "status": "uploaded",
  "timings": [
   0.0,
-  18.835,
-  24.286,
-  30.082,
-  36.271,
-  43.223,
-  55.566,
-  61.888,
-  67.03,
-  73.115,
-  78.395,
-  85.016,
-  89.869
+  9.57,
+  15.74,
+  21.35,
+  28.84,
+  36.41,
+  48.9,
+  56.07,
+  61.44,
+  67.81,
+  73.7,
+  81.23,
+  85.92
  ],
  "topic": {
   "allowed_sources": [
@@ -315,8 +315,9 @@
   "notes": "Adam's Bridge geology (shoals, coral, sand), carbon dating claims and counter-claims; label disputed where science disagrees.",
   "place": "Rameswaram to Mannar",
   "target_minutes": null,
-  "title_hi": "Ram Setu, satellite se kya dikhta hai"
+  "title_hi": "Ram Setu, satellite se kya dikhta hai",
+  "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-20T20:00:45+00:00",
+ "updated": "2026-10-20T20:22:37+00:00",
  "writer": "claude"
 }
