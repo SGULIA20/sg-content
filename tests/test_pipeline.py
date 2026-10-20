@@ -213,3 +213,16 @@ def test_commons_credit_reaches_description_and_scene(tmp_path):
     from engine import youtube
     from datetime import datetime, timezone
     assert "Photos:" in youtube.metadata(p, datetime(2026, 10, 20, 14, 30, tzinfo=timezone.utc), {})["snippet"]["description"]
+
+
+def test_mid_scene_avatar_uses_avatar_card(tmp_path):
+    d, calls = deps(tmp_path)
+    kinds = []
+    def card_fn(kind, data, out, size):
+        kinds.append(kind); Path(out).parent.mkdir(parents=True, exist_ok=True); Path(out).write_bytes(b"png"); return Path(out)
+    d.render_card = card_fn
+    def write_fn(piece, sheet, library, hashtags):
+        s = good_script(); s["scenes"][1]["visual"] = {"type": "avatar", "prompt": "thinking", "card": None}; return {"script": s, "writer": "claude", "note": ""}
+    d.write = write_fn
+    pipeline.make(_piece(), d, tmp_path)
+    assert kinds[:2] == ["hook", "avatar"]

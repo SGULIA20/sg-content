@@ -1,4 +1,5 @@
 import struct
+from pathlib import Path
 import zlib
 
 import pytest
@@ -78,3 +79,8 @@ def test_caption_card_is_transparent_png(tmp_path):
     data = out.read_bytes()
     assert _png_size(out) == (1080, 300)
     assert data[25] == 6                                        # colour type 6 = RGBA, transparent background kept
+
+
+def test_avatar_card_is_full_frame(tmp_path):
+    out = cards.render("avatar", {"avatar_path": str((Path(__file__).resolve().parent.parent / "assets" / "reference" / "founder-01.jpg"))}, tmp_path / "a.png", (1080, 1920))
+    assert _png_size(out) == (1080, 1920)

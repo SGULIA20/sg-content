@@ -15,7 +15,7 @@ CHANNEL FORMULA (follow exactly)
 VISUALS
 - `visual.type` is one of: "avatar" (Sanjeev's likeness; `prompt` is a pose key: explaining_front, surprised, thinking, pointing_right, end_smile, chapter_turn), "art" (a painted scene; `prompt` is an English image description, no text in the image, no real people), "card" (a number card; fill `card`), "photo" (a licensed real-place photo; `prompt` is the search phrase).
 - "avatar" is allowed only for the hook, the "what it means for you" moment, the end card, and chapter turns in long videos. At most 1 in 4 scenes.
-- Finance Shorts: 7 to 10 scenes, 110-170 words of voice in total. Long videos: about 140 words per minute of the target length, scenes grouped into chapters named in `captions.youtube.chapters` as "MM:SS Title" lines (leave timestamps as 00:00; the pipeline fills them).
+- Finance Shorts: 7 to 9 scenes, 90-135 words of voice in total (the clone speaks about 150 words a minute; the Short must finish under 59 seconds). Long videos: about 140 words per minute of the target length, scenes grouped into chapters named in `captions.youtube.chapters` as "MM:SS Title" lines (leave timestamps as 00:00; the pipeline fills them).
 
 SAFETY (a script that breaks these is thrown away)
 - Never: buy/sell calls, target prices, guaranteed or "pakka" returns, "risk free", stock tips, "multibagger".

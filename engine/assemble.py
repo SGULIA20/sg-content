@@ -18,6 +18,8 @@ PAD_S = 0.45                       # silence after each line
 ZOOM_PER_FRAME = 0.0006
 ZOOM_MAX = 1.08
 VOICE_LUFS, MUSIC_LUFS, MIX_LUFS = -16, -30, -16
+SHORT_MAX_S = 59.0
+FIT_MAX = 1.18                     # at most 18 % faster speech to land a Short under 59 s
 FONTS_DIR = ASSETS_DIR / "fonts"
 
 
@@ -65,6 +67,24 @@ def _voice_track(lines: list, out_wav: Path, pad: float = PAD_S) -> list:
     return starts
 
 
+def fit_short(lines: list, work_dir: Path, limit: float = SHORT_MAX_S, pad: float = PAD_S) -> tuple:
+    """If voice + pads exceed the Short limit, speed every line by one factor (atempo, same pitch), up to FIT_MAX. Returns (lines, factor)."""
+    total = sum(d for _w, d in lines) + pad * len(lines)
+    if total <= limit:
+        return lines, 1.0
+    factor = min(FIT_MAX, (sum(d for _w, d in lines)) / max(0.1, limit - pad * len(lines)))
+    factor = round(factor + 0.005, 2)
+    work_dir = Path(work_dir)
+    work_dir.mkdir(parents=True, exist_ok=True)
+    out = []
+    for wav, _d in lines:
+        fast = work_dir / Path(wav).name
+        _run(["-i", str(wav), "-filter:a", f"atempo={factor}", str(fast)])
+        with wave.open(str(fast)) as w:
+            out.append((fast, w.getnframes() / w.getframerate()))
+    return out, factor
+
+
 def caption_band(size: tuple) -> tuple:
     """(height, y) of the caption band for this frame size."""
     w, h = size
@@ -92,7 +112,9 @@ def _overlays_for(piece: Piece, i: int, size: tuple, source_strips, label_chips:
     w, h = size
     scene = piece.script["scenes"][i]
     out = []
-    strip_y = int(h * 0.64) if h > w else h - 120 - 220
+    strip_y = 40                                               # top edge: never collides with card text or the caption band
+    if (scene.get("visual") or {}).get("type") == "avatar":
+        source_strips, credits = None, None                    # presenter cards carry their own layout
     if piece.channel == "sglearning" and source_strips and scene.get("facts_used"):
         if isinstance(source_strips, dict):
             strip = next((source_strips[j] for j in scene["facts_used"] if j in source_strips), None)
@@ -114,6 +136,10 @@ def build(piece: Piece, lines: list, visuals: list, size: tuple, out_dir: Path, 
     out_dir.mkdir(parents=True, exist_ok=True)
     label_chips = label_chips or {}
     assert len(lines) == len(visuals) == len(piece.script["scenes"]), "one voice line and one visual per scene"
+    if piece.kind == "short":
+        lines, factor = fit_short(lines, out_dir / "vo-fit")
+        if factor > 1.0:
+            print(f"voice sped up {factor}x to fit the Short", flush=True)
     voice_wav = out_dir / "voice.wav"
     starts = _voice_track(lines, voice_wav)
     piece.timings = starts

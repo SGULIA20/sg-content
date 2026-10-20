@@ -1,5 +1,6 @@
 import json
 import subprocess
+from pathlib import Path
 import wave
 from datetime import date
 
@@ -63,3 +64,21 @@ def test_chapters_from_timings():
     p.script = {"captions": {"youtube": {"chapters": ["00:00 Hook", "00:00 Sabut", "00:00 Vivaad"]}}, "scenes": [{"vo": "a"}] * 6}
     p.timings = [0.0, 30.0, 61.0, 95.0, 130.0, 170.0]
     assert assemble.chapters(p) == ["00:00 Hook", "01:01 Sabut", "02:10 Vivaad"]
+
+
+def test_fit_speeds_voice_when_short_runs_long(tmp_path):
+    lines = [(_tone(tmp_path / f"v{i}.wav", 8.0), 8.0) for i in range(8)]          # 64 s of voice + pads: over 59 s
+    fitted, factor = assemble.fit_short(lines, tmp_path / "fit")
+    assert 1.0 < factor <= assemble.FIT_MAX
+    total = sum(d for _w, d in fitted) + len(fitted) * assemble.PAD_S
+    assert total <= 59.0 + 0.5
+    lines2 = [(_tone(tmp_path / f"s{i}.wav", 4.0), 4.0) for i in range(5)]
+    assert assemble.fit_short(lines2, tmp_path / "fit2")[1] == 1.0
+
+
+def test_source_strip_sits_at_top_and_skips_avatar_scenes():
+    p = pieces.Piece(id="x", channel="sglearning", kind="short", publish_day=date(2026, 10, 20))
+    p.script = {"scenes": [{"vo": "a", "visual": {"type": "avatar"}, "facts_used": [0]}, {"vo": "b", "visual": {"type": "card"}, "facts_used": [0]}]}
+    strips = {0: Path("/tmp/strip.png")}
+    assert assemble._overlays_for(p, 0, (1080, 1920), strips, {}) == []
+    assert assemble._overlays_for(p, 1, (1080, 1920), strips, {}) == [(Path("/tmp/strip.png"), 0, 40)]

@@ -17,7 +17,8 @@ def test_send_posts_to_chat_and_scrubs_secrets():
     assert "supersecrettoken1" not in seen["body"]["text"]
 
 
-def test_send_returns_false_without_config():
+def test_send_returns_false_without_config(tmp_path, monkeypatch):
+    monkeypatch.setattr(secrets, "DOTENV", tmp_path / "no.env")          # the real .env on this machine must not leak into the test
     assert telegram.send("x", {}, post=lambda u, b: {"ok": True}) is False
 
 

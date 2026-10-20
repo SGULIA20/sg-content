@@ -39,27 +39,27 @@ def piece_with(vo: str, channel="sglearning", kind="short", scenes=None, label="
 
 
 def test_clean_finance_script_passes():
-    p = piece_with(_words(140) + " " + DISCLAIMER)
+    p = piece_with(_words(120) + " " + DISCLAIMER)
     assert lint.check_script(p, BANNED, []) == []
 
 
 def test_blocks_buy_call():
-    reasons = lint.check_script(piece_with("Reliance kharid lo abhi " + _words(140)), BANNED, [])
+    reasons = lint.check_script(piece_with("Reliance kharid lo abhi " + _words(120)), BANNED, [])
     assert any(r.startswith("advice") for r in reasons)
 
 
 def test_blocks_politician_name():
-    reasons = lint.check_script(piece_with("Modi ji ne kaha " + _words(140)), BANNED, [])
+    reasons = lint.check_script(piece_with("Modi ji ne kaha " + _words(120)), BANNED, [])
     assert any(r.startswith("politics") for r in reasons)
 
 
 def test_myth_claim_without_label_fails():
-    p = piece_with(_words(140), channel="arthvan", label=None)
+    p = piece_with(_words(120), channel="arthvan", label=None)
     assert any(r.startswith("label") for r in lint.check_script(p, BANNED, []))
 
 
 def test_myth_forbidden_phrase_fails():
-    p = piece_with("science proves god " + _words(140), channel="arthvan", label="legend")
+    p = piece_with("science proves god " + _words(120), channel="arthvan", label="legend")
     assert any(r.startswith("myth_forbidden") for r in lint.check_script(p, BANNED, []))
 
 
@@ -72,9 +72,9 @@ def test_near_duplicate_script_fails():
 
 
 def test_short_word_count_bounds():
-    assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(100)), BANNED, []))
-    assert not any(r.startswith("length") for r in lint.check_script(piece_with(_words(140)), BANNED, []))
-    assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(180)), BANNED, []))
+    assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(80)), BANNED, []))
+    assert not any(r.startswith("length") for r in lint.check_script(piece_with(_words(120)), BANNED, []))
+    assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(150)), BANNED, []))
 
 
 def test_long_word_count_uses_target_minutes():
@@ -93,7 +93,7 @@ def test_avatar_share_cap():
 
 
 def test_finance_caption_needs_disclaimer_and_5_to_8_tags():
-    p = piece_with(_words(140))
+    p = piece_with(_words(120))
     assert lint.check_captions(p, HASHTAGS) == []
     p.script["captions"]["instagram"]["caption"] = "Oil 100 dollar."
     assert any(r.startswith("disclaimer") for r in lint.check_captions(p, HASHTAGS))
@@ -103,13 +103,13 @@ def test_finance_caption_needs_disclaimer_and_5_to_8_tags():
 
 
 def test_caption_rejects_unknown_hashtag():
-    p = piece_with(_words(140))
+    p = piece_with(_words(120))
     p.script["captions"]["instagram"]["hashtags"] = HASHTAGS["sglearning"]["instagram"][:5] + ["#GetRichQuick"]
     assert any(r.startswith("hashtags") for r in lint.check_captions(p, HASHTAGS))
 
 
 def test_caption_rejects_phone_or_email():
-    p = piece_with(_words(140))
+    p = piece_with(_words(120))
     p.script["captions"]["instagram"]["caption"] = f"Call +91 98765 43210. {DISCLAIMER}"
     assert any(r.startswith("pii") for r in lint.check_captions(p, HASHTAGS))
     p.script["captions"]["threads"]["text"] = "mail me at sg@example.com"
@@ -117,7 +117,7 @@ def test_caption_rejects_phone_or_email():
 
 
 def test_caption_limits():
-    p = piece_with(_words(140))
+    p = piece_with(_words(120))
     p.script["captions"]["youtube"]["title"] = "x" * 61
     assert any(r.startswith("title") for r in lint.check_captions(p, HASHTAGS))
     p.script["captions"]["youtube"]["title"] = "ok"
@@ -132,12 +132,12 @@ def test_load_lists_reads_content_yaml():
 
 
 def test_banned_matches_whole_words_only():
-    assert not any(r.startswith("politics") for r in lint.check_script(piece_with("Commodity prices badh gaye " + _words(140)), BANNED, []))
-    assert any(r.startswith("politics") for r in lint.check_script(piece_with("Modi ne kaha " + _words(140)), BANNED, []))
+    assert not any(r.startswith("politics") for r in lint.check_script(piece_with("Commodity prices badh gaye " + _words(120)), BANNED, []))
+    assert any(r.startswith("politics") for r in lint.check_script(piece_with("Modi ne kaha " + _words(120)), BANNED, []))
 
 
 def test_captions_and_cards_are_checked_for_banned_and_numbers():
-    p = piece_with(_words(140))
+    p = piece_with(_words(120))
     p.script["captions"]["youtube"]["title"] = "Reliance kharid lo: Modi ka plan"
     p.script["captions"]["youtube"]["tags"] = ["bjp"]
     p.script["cards"] = [{"big_number": "₹5 lakh crore", "line": "guaranteed return", "source": "x"}]
@@ -148,7 +148,14 @@ def test_captions_and_cards_are_checked_for_banned_and_numbers():
 
 def test_real_banned_list_has_no_bare_conversion_and_catches_variants():
     banned, _ = lint.load_lists()
-    text = "FD conversion rate acha hai, " + _words(140)
+    text = "FD conversion rate acha hai, " + _words(120)
     assert not any(r.startswith("communal") for r in lint.check_script(piece_with(text), banned, []))
     for bad in ("buy karo", "sell karo", "guarantee hai 20% return", "pakka munafa", "Nirmala Sitharaman"):
-        assert lint.check_script(piece_with(bad + " " + _words(140)), banned, []), bad
+        assert lint.check_script(piece_with(bad + " " + _words(120)), banned, []), bad
+
+
+def test_short_word_bounds_fit_59_seconds_of_hinglish():
+    # measured 20 Oct 2026: the clone speaks Hinglish at about 2.5 words a second; 59 s minus pads leaves room for ~135 words
+    assert lint.SHORT_WORDS == (90, 135)
+    assert not any(r.startswith("length") for r in lint.check_script(piece_with(_words(120)), BANNED, []))
+    assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(150)), BANNED, []))

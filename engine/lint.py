@@ -10,7 +10,7 @@ from .pieces import Piece
 DISCLAIMER = "Yeh investment advice nahi hai"
 MYTH_LABELS = {"scripture", "archaeology", "disputed", "legend"}
 FINANCE_LABELS = {"reported", "official", "analyst-view"}
-SHORT_WORDS = (110, 170)
+SHORT_WORDS = (90, 135)          # measured 20 Oct 2026: the clone speaks Hinglish at ~2.5 words/s; 135 words + pads ≈ 58 s
 LONG_WORDS_PER_MIN = 140
 AVATAR_MAX_SHARE = 0.25
 SIMILARITY_MAX = 0.6

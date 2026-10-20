@@ -28,9 +28,9 @@ def _read_dotenv(path: Path) -> dict:
     return out
 
 
-def get(name: str, env: Mapping | None = None, dotenv: Path = DOTENV) -> str:
+def get(name: str, env: Mapping | None = None, dotenv: Path | None = None) -> str:
     env = os.environ if env is None else env
-    value = env.get(name) or _read_dotenv(dotenv).get(name)
+    value = env.get(name) or _read_dotenv(DOTENV if dotenv is None else dotenv).get(name)
     if not value:
         raise MissingSecret(name)
     remember(value)

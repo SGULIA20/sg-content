@@ -82,8 +82,7 @@ def _visual_for(piece: Piece, i: int, scene: dict, deps: Deps, out_dir: Path, si
             return deps.render_card("hook", {"line": piece.script["hook"], "avatar_path": src}, out, size)
         if i == len(piece.script["scenes"]) - 1:
             return deps.render_card("end", {"question": piece.script["end_question"], "handle": HANDLE, "avatar_path": src}, out, size)
-        shutil.copy(src, out)
-        return out
+        return deps.render_card("avatar", {"avatar_path": src}, out, size)
     if kind == "card" and v.get("card"):
         return deps.render_card("number", v["card"], out, size)
     if kind == "photo":
