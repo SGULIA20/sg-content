@@ -36,7 +36,7 @@ CHANNELS = {
         youtube_category="27"),
 }
 
-BUDGETS = {"voice_requests_per_day": 80, "image_inr_per_day": 150, "claude_usd_per_day": 1.0}
+BUDGETS = {"voice_requests_per_day": 80, "image_inr_per_day": 400, "claude_usd_per_day": 3.0}   # raised 21 Oct 2026 for the launch weeks (two channels, longs, panel library still filling)
 
 VIDEO = {"short": (1080, 1920), "long": (1920, 1080), "fps": 30}
 

@@ -1,0 +1,65 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.32,Default,,0,0,0,,Mahabharat ke Mausala Parva mein,
+Dialogue: 0,0:00:02.32,0:00:04.22,Default,,0,0,0,,samundar ne apni hadd tod di.
+Dialogue: 0,0:00:04.22,0:00:06.13,Default,,0,0,0,,Arjun logon ko lekar nikle,
+Dialogue: 0,0:00:06.13,0:00:08.03,Default,,0,0,0,,aur Dwarka paani mein samaa gayi.
+Dialogue: 0,0:00:08.48,0:00:10.02,Default,,0,0,0,,Harivamsa kehta hai,
+Dialogue: 0,0:00:10.02,0:00:12.43,Default,,0,0,0,,yeh shehar samundar se maangi zameen
+Dialogue: 0,0:00:12.43,0:00:13.31,Default,,0,0,0,,par bana tha.
+Dialogue: 0,0:00:13.31,0:00:15.72,Default,,0,0,0,,Krishna ke kehne par Vishvakarma ne
+Dialogue: 0,0:00:15.72,0:00:16.60,Default,,0,0,0,,ise basaaya.
+Dialogue: 0,0:00:17.05,0:00:20.30,Default,,0,0,0,,National Institute of Oceanography ke gotakhor
+Dialogue: 0,0:00:20.30,0:00:21.63,Default,,0,0,0,,vaigyanik neeche utre.
+Dialogue: 0,0:00:21.63,0:00:23.35,Default,,0,0,0,,Yaani marine archaeology,
+Dialogue: 0,0:00:23.35,0:00:25.26,Default,,0,0,0,,paani ke neeche itihaas ki khoj.
+Dialogue: 0,0:00:25.71,0:00:28.18,Default,,0,0,0,,Bet Dwarka dweep par mili Harappa
+Dialogue: 0,0:00:28.18,0:00:30.41,Default,,0,0,0,,jaisi seal aur taambe ki cheezein.
+Dialogue: 0,0:00:30.86,0:00:33.21,Default,,0,0,0,,Paani mein mile patthar ke langar,
+Dialogue: 0,0:00:33.21,0:00:35.10,Default,,0,0,0,,jinse naav roki jaati thi.
+Dialogue: 0,0:00:35.10,0:00:37.92,Default,,0,0,0,,Yaani Dwarka kabhi bada bandargah tha.
+Dialogue: 0,0:00:38.37,0:00:40.99,Default,,0,0,0,,Saal 2007 mein ASI ki underwater
+Dialogue: 0,0:00:40.99,0:00:42.20,Default,,0,0,0,,team bhi neeche utri.
+Dialogue: 0,0:00:42.20,0:00:42.80,Default,,0,0,0,,Maqsad tha,
+Dialogue: 0,0:00:42.80,0:00:44.82,Default,,0,0,0,,doobi gol deewaron ki umar ka
+Dialogue: 0,0:00:44.82,0:00:45.22,Default,,0,0,0,,sabut.
+Dialogue: 0,0:00:45.67,0:00:48.20,Default,,0,0,0,,Par yahin se kahani ulajhti hai.
+Dialogue: 0,0:00:48.20,0:00:49.35,Default,,0,0,0,,Archaeologist S.R.
+Dialogue: 0,0:00:49.35,0:00:52.11,Default,,0,0,0,,Rao ne pattharon ko lagbhag 1500
+Dialogue: 0,0:00:52.11,0:00:53.03,Default,,0,0,0,,BCE ka bataya.
+Dialogue: 0,0:00:53.48,0:00:55.49,Default,,0,0,0,,Baad ke NIO experts kehte hain,
+Dialogue: 0,0:00:55.49,0:00:57.25,Default,,0,0,0,,langar kaafi baad ke hain.
+Dialogue: 0,0:00:57.25,0:00:59.26,Default,,0,0,0,,Deewarein kile ki nahin,
+Dialogue: 0,0:00:59.26,0:01:00.27,Default,,0,0,0,,jetty ki hain,
+Dialogue: 0,0:01:00.27,0:01:02.03,Default,,0,0,0,,yaani naav ka chabutra.
+Dialogue: 0,0:01:02.48,0:01:04.95,Default,,0,0,0,,Kuch kehte hain shehar achanak tsunami
+Dialogue: 0,0:01:04.95,0:01:05.57,Default,,0,0,0,,se dooba,
+Dialogue: 0,0:01:05.57,0:01:06.81,Default,,0,0,0,,yaani vishaal lehar.
+Dialogue: 0,0:01:06.81,0:01:08.04,Default,,0,0,0,,Geologists kehte hain,
+Dialogue: 0,0:01:08.04,0:01:09.90,Default,,0,0,0,,samundar dheere dheere chadha,
+Dialogue: 0,0:01:09.90,0:01:11.14,Default,,0,0,0,,kinara katta gaya.
+Dialogue: 0,0:01:11.59,0:01:13.02,Default,,0,0,0,,Daadi-naani kehti hain,
+Dialogue: 0,0:01:13.02,0:01:14.86,Default,,0,0,0,,neeche sone ke mahal aaj bhi
+Dialogue: 0,0:01:14.86,0:01:15.47,Default,,0,0,0,,khade hain.
+Dialogue: 0,0:01:15.47,0:01:17.10,Default,,0,0,0,,Iska sabut nahin mila,
+Dialogue: 0,0:01:17.10,0:01:18.53,Default,,0,0,0,,par kahani zinda hai.
+Dialogue: 0,0:01:18.98,0:01:19.74,Default,,0,0,0,,Twist yeh hai,
+Dialogue: 0,0:01:19.74,0:01:22.26,Default,,0,0,0,,mandir ke neeche ASI ko shehar
+Dialogue: 0,0:01:22.26,0:01:23.52,Default,,0,0,0,,ke kai daur mile.
+Dialogue: 0,0:01:23.52,0:01:25.79,Default,,0,0,0,,Aaj aap Dwarkadhish mandir aur Bet
+Dialogue: 0,0:01:25.79,0:01:27.31,Default,,0,0,0,,Dwarka dekh sakte hain.
+Dialogue: 0,0:01:27.75,0:01:28.92,Default,,0,0,0,,Aapko kya lagta hai,
+Dialogue: 0,0:01:28.92,0:01:31.83,Default,,0,0,0,,Mahabharat wali Dwarka ya purana bandargah?
+Dialogue: 0,0:01:31.83,0:01:33.97,Default,,0,0,0,,Apna jawab neeche comment mein zaroor
+Dialogue: 0,0:01:33.97,0:01:34.35,Default,,0,0,0,,likhiye.

@@ -298,8 +298,21 @@
   ],
   "title": "Samundar ke neeche *Dwarka* ka sabut? 😱"
  },
- "status": "written",
- "timings": [],
+ "status": "assembled",
+ "timings": [
+  0.0,
+  8.478,
+  17.051,
+  25.708,
+  30.86,
+  38.37,
+  45.674,
+  53.48,
+  62.476,
+  71.587,
+  78.982,
+  87.754
+ ],
  "topic": {
   "allowed_sources": [
    "nio.res.in",
@@ -319,6 +332,6 @@
   "target_minutes": null,
   "title_hi": "Samundar ke neeche Dwarka"
  },
- "updated": "2026-10-20T19:41:05+00:00",
+ "updated": "2026-10-20T19:44:10+00:00",
  "writer": "claude"
 }
