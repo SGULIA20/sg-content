@@ -27,7 +27,7 @@ CHANNELS = {
     "sglearning": Channel(
         key="sglearning", youtube_env_token="YT_SGLEARNING_REFRESH_TOKEN", display_name="Learning with SG",
         niche="Paise ki khabar, seedhi baat", short_days=frozenset({MON, TUE, WED, THU, FRI, SAT, SUN}), long_days=frozenset({WED, SUN}),
-        short_publish_ist="20:00", long_publish_ist="19:00", ig_slot_ist="13:00", hashtags_key="sglearning",
+        short_publish_ist="20:00", long_publish_ist="19:00", ig_slot_ist="14:00", hashtags_key="sglearning",
         youtube_category="22"),
     "arthvan": Channel(
         key="arthvan", youtube_env_token="YT_ARTHVAN_REFRESH_TOKEN", display_name="SG-MYTH-WORLD",
@@ -53,6 +53,13 @@ TEMPLATES_DIR = ROOT / "templates"
 
 
 IST = timezone(timedelta(hours=5, minutes=30), name="IST")
+
+
+def today_pacific(now: datetime | None = None) -> date:
+    """Gemini API daily quotas (the 100 TTS requests) reset at midnight US Pacific, so the voice counter is keyed by that day."""
+    from zoneinfo import ZoneInfo
+    now = now or datetime.now(timezone.utc)
+    return now.astimezone(ZoneInfo("America/Los_Angeles")).date()
 
 
 def today_ist(now: datetime | None = None) -> date:

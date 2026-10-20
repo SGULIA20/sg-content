@@ -12,7 +12,7 @@ from datetime import date
 from pathlib import Path
 
 from . import gemini, secrets
-from .config import BUDGETS, CACHE_DIR, CONTENT_DIR, LOGS_DIR, today_ist
+from .config import BUDGETS, CACHE_DIR, CONTENT_DIR, LOGS_DIR, today_ist, today_pacific
 
 MODEL = "gemini-3.8-flash-tts"
 VOICES_URL = "https://generativelanguage.googleapis.com/v1beta/voices"
@@ -67,7 +67,7 @@ def enrol(ref_wav: Path, consent_wav: Path, *, key: str | None = None, display_n
 
 
 def requests_today(budget: Path = BUDGET_FILE, today: date | None = None) -> int:
-    today = today or today_ist()
+    today = today or today_pacific()
     try:
         return int(json.loads(Path(budget).read_text()).get(today.isoformat(), 0))
     except (FileNotFoundError, ValueError):
@@ -121,7 +121,7 @@ def _audio_from(response: dict) -> bytes | None:
 def say(text: str, voice_id: str, out_wav: Path, *, key: str | None = None, cache_dir: Path = CACHE_DIR / "voice",
         budget: Path = BUDGET_FILE, post=gemini._post, style: str = STYLE, today: date | None = None) -> float:
     """Synthesizes one line into out_wav (24 kHz mono 16-bit) and returns its length in seconds. Cached by voice, style and text."""
-    today = today or today_ist()
+    today = today or today_pacific()
     out_wav = Path(out_wav)
     cache_dir = Path(cache_dir)
     cache_dir.mkdir(parents=True, exist_ok=True)

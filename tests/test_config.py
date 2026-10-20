@@ -29,3 +29,10 @@ def test_today_ist_crosses_date_line():
     from datetime import datetime, timezone, date
     assert config.today_ist(datetime(2026, 10, 19, 22, 30, tzinfo=timezone.utc)) == date(2026, 10, 20)
     assert config.today_ist(datetime(2026, 10, 19, 12, 0, tzinfo=timezone.utc)) == date(2026, 10, 19)
+
+
+def test_today_pacific_follows_the_gemini_quota_window():
+    from datetime import datetime, timezone
+    from engine.config import today_pacific
+    assert today_pacific(datetime(2026, 10, 21, 6, 59, tzinfo=timezone.utc)).isoformat() == "2026-10-20"   # 23:59 PDT the day before
+    assert today_pacific(datetime(2026, 10, 21, 7, 1, tzinfo=timezone.utc)).isoformat() == "2026-10-21"

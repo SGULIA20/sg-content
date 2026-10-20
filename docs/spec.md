@@ -82,8 +82,8 @@ Local: `~/sg-content` with `.env` (gitignored). Cloud: GitHub Actions secrets wi
 ### Schedules (all cron in UTC; IST = UTC+5:30; Lagos = UTC+1)
 | Workflow | When | Does |
 |---|---|---|
-| produce.yml | 02:00 UTC daily (+ 03:00 safety) | fills the buffer: Shorts to 7 days ahead, long ≥ 3 days ahead; max 3 pieces per run; 120-min timeout; commits `pieces/`, `out/`, `logs/` |
-| publish.yml | 07:30 UTC (13:00 IST): finance Reel + Story + Threads; 16:00 UTC (21:30 IST): mythology Reel + Story + Threads on Mon/Wed/Fri | Instagram and Threads cannot be scheduled by API, so this run posts at the slot. YouTube needs nothing here (scheduled at upload) |
+| produce.yml | 07:05 UTC daily (+ 03:00 safety) | fills the buffer: Shorts to 7 days ahead, long ≥ 3 days ahead; max 3 pieces per run; 120-min timeout; commits `pieces/`, `out/`, `logs/` |
+| publish.yml | 08:30 UTC (14:00 IST): finance Reel + Story + Threads; 16:00 UTC (21:30 IST): mythology Reel + Story + Threads on Mon/Wed/Fri | Instagram and Threads cannot be scheduled by API, so this run posts at the slot. YouTube needs nothing here (scheduled at upload) |
 | weekly-report.yml | Monday 05:00 UTC | YouTube Analytics + Instagram insights for the last 7 days → Telegram, and `logs/weekly.json` |
 | refresh-tokens.yml | 1st of the month | Instagram and Threads long-lived token refresh (60-day tokens) |
 
