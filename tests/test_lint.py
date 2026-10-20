@@ -71,7 +71,9 @@ def test_near_duplicate_script_fails():
     assert lint.similarity("a b c", "d e f") == 0.0
 
 
-def test_short_word_count_bounds():
+def test_short_word_count_bounds(monkeypatch):
+    from engine import config
+    monkeypatch.setattr(config, "STORY_FORMAT", set())      # the 90-135 rule applies to non-story Shorts
     # non-story Shorts (mythology) keep the 90-135 rule
     assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(80), channel="arthvan"), BANNED, []))
     assert not any(r.startswith("length") for r in lint.check_script(piece_with(_words(120), channel="arthvan"), BANNED, []))
@@ -155,7 +157,9 @@ def test_real_banned_list_has_no_bare_conversion_and_catches_variants():
         assert lint.check_script(piece_with(bad + " " + _words(120)), banned, []), bad
 
 
-def test_short_word_bounds_fit_59_seconds_of_hinglish():
+def test_short_word_bounds_fit_59_seconds_of_hinglish(monkeypatch):
+    from engine import config
+    monkeypatch.setattr(config, "STORY_FORMAT", set())      # the 90-135 rule applies to non-story Shorts
     # measured 20 Oct 2026: the clone speaks Hinglish at about 2.5 words a second; 59 s minus pads leaves room for ~135 words
     assert lint.SHORT_WORDS == (90, 135)
     assert not any(r.startswith("length") for r in lint.check_script(piece_with(_words(120), channel="arthvan"), BANNED, []))
@@ -174,5 +178,5 @@ def test_story_shorts_allow_longer_scripts():
     p = piece_with(_words(200))                                               # sglearning short = story format
     assert not any(r.startswith("length") for r in lint.check_script(p, BANNED, []))
     assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(120)), BANNED, []))
-    p2 = piece_with(_words(120), channel="arthvan"); p2.script["scenes"][0]["label"] = "legend"
-    assert not any(r.startswith("length") for r in lint.check_script(p2, BANNED, []))
+    p2 = piece_with(_words(200), channel="arthvan"); p2.script["scenes"][0]["label"] = "legend"
+    assert not any(r.startswith("length") for r in lint.check_script(p2, BANNED, []))      # mythology Shorts are stories too

@@ -3,13 +3,83 @@
  "facts": [
   {
    "label": "reported",
-   "number": 7.05,
-   "quote": "Eligible senior citizens can earn up to 7.05% p.a. on 5-year to 10-year deposits under the SBI WeCare scheme.",
-   "source_date": "2026-08-15",
-   "source_name": "GoldenPi",
-   "source_url": "https://goldenpi.com/blog/fixed-deposits/sbi-fd-interest-rates/",
-   "text": "Eligible senior citizens can secure an interest rate of up to 7.05 percent per annum on SBI deposits maturing in five to ten years under the WeCare scheme.",
+   "number": 5.54,
+   "quote": "The headline inflation rate in India rose to 5.54% in September 2026 from 4.83% in the previous month, the highest since October 2024 and ahead of market expectations of 5.4%.",
+   "source_date": "2026-10-12",
+   "source_name": "Trading Economics",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHypuI9cqSDiiItJd-54vjAfWdpiXGetCGaZXbtls692x1YQeH1UBH-ywQkvPCgnFQ-f0YjHGeFpI4qsLe6mIXfkywkyf9BVWalNMq3DHjtcbnaLfCmu5DzjYptFJcDECAh8P-zIcI=",
+   "text": "India's headline retail inflation rose to 5.54% in September 2026, reaching its highest level since late 2024.",
    "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 7.74,
+   "quote": "Year-on-year inflation rate based on All India Consumer Food Price Index (CFPI) for the month of September, 2026 over September, 2025 is 7.74% (Provisional).",
+   "source_date": "2026-10-12",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAUvu0Q4m12ACjoCTvRcEO0_5ClKMnHRgwfde2ZNkD1C5ijIH0ccEyGO6J0WRV_-R59wOxGJl_pHwHP6x6gUvuPb0sE15o1sCvR6K-1oiS90WboJ6Vjm25auH3GqkVQxVsE8J546UMoC-0icRI5WUZGuA6W5v3YxP6dWMaBSMl",
+   "text": "Household food prices surged as annual consumer food price inflation reached 7.74% in September 2026.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 5.5,
+   "quote": "The Reserve Bank of India (RBI) raised its key repo rate by 25 bps to 5.50%, marking the first hike since February 2023, at its October meeting amid a weakening rupee and following interest rate hikes by some central banks, including the Fed.",
+   "source_date": "2026-10-15",
+   "source_name": "Trading Economics",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuhlanBVlwdanB505-H_XHvDkLTJXo5hmr2tSp6bu8GFST7dwaNs8Px5H8rUo9Ukbhg5e2Ly25kLHdtFLIXQVIZDMQlnVS5NjVPpkBEPgdaDEGx2M57ic97Ik-20FxjuVpaLEynGk=",
+   "text": "The Reserve Bank of India raised its benchmark repo rate by 25 basis points to 5.50% at its October monetary policy meeting.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 6.25,
+   "quote": "1 year to less than 2 years. 6.25%.",
+   "source_date": "2026-10-18",
+   "source_name": "SBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDdAwGtUboeLx876KuZzzVvmTePgVhcUbpmd1jYzpOzTOsu57EbUQ-ZWvwPGK7MBRFtls0X6W8TvekLwLR4DHVavg_vv2pghwCB_0uR7XWNKRlzA_P-3P70u6bedrTlRh_XcZ7zEgQNmSWP1SlowO6iJd3e9yyC9VsApHwIQDd480tPFvYCHW3kfj_RBoq8Qcg51eumPagjDYGkjsWCrSuChTsY8_v5N5UDkeicEQUGC5-V4O4BSavR9zfiBA=",
+   "text": "State Bank of India offers a card interest rate of 6.25% per annum on domestic retail term deposits of 1 year to less than 2 years.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 6.45,
+   "quote": "The interest rate of specific tenor scheme of \"Amrit Vrishti\"(444 days) has also been revised from 6.60% to 6.45% wef 15-Dec-2025.",
+   "source_date": "2026-10-19",
+   "source_name": "SBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGZx0k0RekJ4I_LXprSbfa9PgXUqUZCdiVha6yTgsOuh8F9of1pwIKZctE95x2nVVppK5aWGM2e2Ouo8oFlYG-gE_DC2yhMd5FYxrTEHmAM1xTlfcDDzsyIgRHcE5ZV1qRnlvKh6kC_-5-3_EujEq1CZGfyKCbJabKuFtbv2rPcGtuM5S7UebC",
+   "text": "State Bank of India offers a peak interest rate of 6.45% per annum for its special 444-day Amrit Vrishti retail fixed deposit scheme.",
+   "unit": "pct"
+  },
+  {
+   "label": "analyst-view",
+   "number": 4.97,
+   "quote": "If you're in the 30% tax bracket, that 7.1% return drops to roughly 4.97% post-tax.",
+   "source_date": "2026-10-06",
+   "source_name": "GoPocket Blog",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENY-BEUDzwR6wBVPnetdV6vKlPs6wDMgz-v7cCEaK352OLzEVG4E9skkqi0m_oryWSP1XnJ0_C8x4yYbMkuh80TzPlvbV0viaKaWS6rlzigZhlcAZ6_Cl5MLRm1tpqOXEiPNBLmj098o0JzxyAwK8FxIYeHW3OGgr1ayVaAUWb",
+   "text": "For a taxpayer in the 30% income-tax slab, an advertised 7.1% fixed deposit interest rate falls to a net post-tax return of 4.97%.",
+   "unit": "pct"
+  },
+  {
+   "label": "analyst-view",
+   "number": -0.03,
+   "quote": "30% slab, 7.1%, 4.97%, 5%, -0.03%.",
+   "source_date": "2026-10-06",
+   "source_name": "GoPocket Blog",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENY-BEUDzwR6wBVPnetdV6vKlPs6wDMgz-v7cCEaK352OLzEVG4E9skkqi0m_oryWSP1XnJ0_C8x4yYbMkuh80TzPlvbV0viaKaWS6rlzigZhlcAZ6_Cl5MLRm1tpqOXEiPNBLmj098o0JzxyAwK8FxIYeHW3OGgr1ayVaAUWb",
+   "text": "After adjusting for an estimated 5% inflation rate, a 7.1% fixed deposit held in the 30% tax bracket delivers a negative real return of -0.03%.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 5.0,
+   "quote": "Bank deposits in India are insured by the DICGC up to ₹5 lakh per depositor per bank, covering principal and interest together.",
+   "source_date": "2026-08-11",
+   "source_name": "MoneyGrad",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDYU0Y9YxMw-Q8SnC7EJKwDbKQdyFiXVw8v4K6YsCkGxuRqXNYuPpLEI7-WvrTVtFP4KcvgYwke8pgcos030oDnTx0u_FVGr6N8hDTiXp593sQz_DIkFpHoAdDWWjsFzPKavjMYjigBThvrVXMNrNI9A==",
+   "text": "Depositor balances in Indian commercial banks are protected by the Deposit Insurance and Credit Guarantee Corporation up to a cap of 5 lakh rupees per depositor per bank.",
+   "unit": "lakh INR"
   }
  ],
  "id": "preview-fd-story",
@@ -20,133 +90,207 @@
  "script": {
   "captions": {
    "instagram": {
-    "caption": "Papa ghar aate hi dining table par nayi FD receipt rakh dete hain.\n\nBank FD safe zaroor lagti hai, lekin tax aur mehangai ke baad aapki purchasing power par kya asar padta hai?\n\nYeh investment advice nahi hai.\n\nAapke ghar mein FD par kisko sabse zyada bharosa hai?",
+    "caption": "FD safe hai, par paisa bacha kya? 🤔\nSaal bhar ki FD par 6.25 percent byaaj, aur September mein mehngai 5.54 percent.\nUs byaaj par tax bhi lagta hai, toh real return lagbhag kuch nahi.\nAapki FD mehngai se aage hai ya peeche?\nYeh investment advice nahi hai.",
     "hashtags": [
      "#PaiseKiKhabar",
      "#SeedhiBaat",
      "#PersonalFinanceIndia",
+     "#MoneyTipsHindi",
+     "#HinglishFinance",
      "#IncomeTax",
      "#LearningWithSG"
     ]
    },
    "threads": {
-    "text": "Papa ghar aate hi dining table par nayi FD receipt rakh dete hain. Par tax aur mehangai ke baad sach mein kitna bachta hai? Aapke ghar mein FD par kisko sabse zyada bharosa hai? #PaiseKiKhabar #Finance"
+    "text": "FD par 6.25 percent byaaj, mehngai 5.54 percent, upar se tax. FD rupaye ko bachati hai, uski khareedne ki taakat ko nahi. Aapki FD mehngai se aage hai ya peeche? Yeh investment advice nahi hai. #PaiseKiKhabar #Finance"
    },
    "youtube": {
     "chapters": [],
-    "description": "Papa ghar aate hi dining table par nayi FD receipt rakh dete hain.\n\nBank FD safe zaroor lagti hai, par tax aur inflation ke baad asal munafa kitna bachta hai? Jaaniye real returns ka sach.",
+    "description": "FD safe hai, par kya aapka paisa sach mein badh raha hai? Mehngai aur income tax kaatne ke baad FD ka real return bahut kam reh jaata hai, unche slab mein kabhi minus bhi. Apni FD ka byaaj tax ke baad mehngai se milaakar dekhiye.",
     "tags": [
-     "Fixed Deposit",
-     "FD Returns",
-     "Personal Finance India",
+     "FD",
+     "fixed deposit",
+     "mehngai",
+     "inflation",
+     "real return",
+     "income tax",
      "SBI FD",
-     "Tax on FD",
-     "Inflation",
-     "Savings"
+     "personal finance",
+     "Hinglish finance",
+     "Learning with SG",
+     "savings"
     ],
-    "title": "FD mein 7.05% byaaj milkar bhi nuksan kyun?"
+    "title": "FD par 6.25%, mehngai 5.54%: bacha kya?"
    }
   },
   "cards": [],
   "carousel": false,
-  "end_question": "Aapke ghar mein FD par kisko sabse zyada bharosa hai?",
-  "hook": "Papa ghar aate hi dining table par nayi FD receipt rakh dete hain.",
+  "end_question": "Aapki FD mehngai se aage hai ya peeche? Comment mein likhiye.",
+  "hook": "Papa bank se laute, haath mein nayi FD ki raseed, chehre par sukoon.",
   "scenes": [
    {
     "facts_used": [],
-    "label": "Relatable opening",
+    "label": "SETUP",
     "visual": {
      "card": null,
-     "prompt": "PAPA wearing a light cotton kurta placing a paper fixed deposit receipt on a wooden dining table, looking proud and relaxed, warm daytime lighting.",
+     "prompt": "PAPA in a kurta walking into the living room in the late morning, holding a fresh fixed deposit receipt, calm satisfied smile, sunlight through the window",
      "type": "art"
     },
-    "vo": "Papa ghar aate hi dining table par nayi FD receipt rakh dete hain."
+    "vo": "Papa bank se laute, haath mein nayi FD ki raseed, chehre par sukoon."
    },
    {
     "facts_used": [],
-    "label": "The traditional mindset",
+    "label": "SETUP",
     "visual": {
      "card": null,
-     "prompt": "PAPA smiling warmly while sitting on a wooden chair with folded hands, feeling completely secure, afternoon light.",
+     "prompt": "PAPA sitting on a sofa, neatly filing a stack of FD receipts into an old folder, confident proud expression, MUMMY in the background with chai",
      "type": "art"
     },
-    "vo": "Chehre par sukoon tha, bole bank mein paisa hamesha bilkul safe rehta hai."
+    "vo": "Unka mantra seedha hai, FD safe hai, paisa kabhi nahi doobta."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "THE CHOICE",
+    "visual": {
+     "card": null,
+     "prompt": "BANK UNCLE behind a bank counter explaining to PAPA, pointing at a form, PAPA nodding happily, busy branch in the daytime",
+     "type": "art"
+    },
+    "vo": "Bank Uncle ne bataya, saal bhar ki FD par 6.25 percent byaaj milega."
    },
    {
     "facts_used": [],
-    "label": "Cultural context",
+    "label": "THE CHOICE",
     "visual": {
      "card": null,
-     "prompt": "An open vintage steel almirah locker revealing neatly stacked passbooks and fixed deposit certificates, soft indoor lighting.",
+     "prompt": "PAPA leaning back in a chair with eyes closed, relaxed and content, a thought bubble showing a small pile of coins growing taller, evening light",
      "type": "art"
     },
-    "vo": "Humare parivaaron mein saalon se savings ka matlab sirf FD receipt hi raha hai."
+    "vo": "Papa ne socha, paisa har saal badhega, aur tension bilkul nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "THE CHOICE",
+    "visual": {
+     "card": null,
+     "prompt": "Close-up of an open bank passbook on a wooden table next to reading glasses and a cup of chai, warm lamp light, feeling of quiet progress",
+     "type": "art"
+    },
+    "vo": "Passbook mein number badhta hai, toh lagta hai hum aage badh rahe hain."
+   },
+   {
+    "facts_used": [],
+    "label": "WHAT REALLY HAPPENED",
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY in a saree at the kitchen table in the evening, holding a long grocery bill, worried frown, bags of vegetables and dal beside her",
+     "type": "art"
+    },
+    "vo": "Usi shaam Mummy kirane ka bill dekh rahi thi, sab kuch mehnga."
    },
    {
     "facts_used": [
      0
     ],
-    "label": "The rate",
+    "label": "WHAT REALLY HAPPENED",
     "visual": {
      "card": null,
-     "prompt": "BANK UNCLE behind a public bank counter stamping an official document and handing it over to PAPA, friendly daytime atmosphere.",
+     "prompt": "A crowded vegetable market at dusk, a shopper looking shocked at the price being told by a vendor, tomatoes and onions piled high",
      "type": "art"
     },
-    "vo": "Bank uncle ne unhe senior citizen scheme mein 7.05 percent ka byaaj diya."
+    "vo": "Mehngai yaani daam kitne badhe, September mein yeh 5.54 percent thi."
+   },
+   {
+    "facts_used": [
+     3,
+     0
+    ],
+    "label": "WHAT REALLY HAPPENED",
+    "visual": {
+     "card": null,
+     "prompt": "A balance scale on a table, one side holding a small bag of coins labelled by colour only, the other side holding a basket of groceries, almost level, dim evening light",
+     "type": "art"
+    },
+    "vo": "Byaaj aur mehngai ka farak dekhiye, bas zara sa bachta hai."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "WHAT REALLY HAPPENED",
+    "visual": {
+     "card": null,
+     "prompt": "A hand taking a few coins away from a small pile of interest coins on a table, PAPA watching with a puzzled face, night time",
+     "type": "art"
+    },
+    "vo": "Phir us byaaj par aapke slab ke hisaab se income tax lagta hai."
+   },
+   {
+    "facts_used": [
+     5,
+     6
+    ],
+    "label": "THE TWIST",
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN in office wear sitting with PAPA at the dining table, gently explaining with a notebook and pen, PAPA listening carefully, warm night light",
+     "type": "art"
+    },
+    "vo": "Real return yaani mehngai aur tax kaat kar jo sach mein bacha."
+   },
+   {
+    "facts_used": [
+     5,
+     6
+    ],
+    "label": "THE TWIST",
+    "visual": {
+     "card": null,
+     "prompt": "PAPA staring at his FD receipt in disbelief, the coin pile in front of him now tiny, BEHEN beside him with a sympathetic look, late night",
+     "type": "art"
+    },
+    "vo": "Unche tax slab waalon ke liye yeh lagbhag kuch nahi, kabhi minus mein."
    },
    {
     "facts_used": [],
-    "label": "The question",
+    "label": "THE TWIST",
     "visual": {
      "card": null,
-     "prompt": "A warm cup of chai on a side table next to a grocery bill and loose coins, quiet morning mood.",
+     "prompt": "SG in a striped shirt sitting with PAPA on the balcony at sunrise, calmly pointing at a grocery bag and an FD receipt side by side, PAPA thoughtful and nodding",
      "type": "art"
     },
-    "vo": "Par tax aur badhti mehangai ke baad, haath mein kya bacha?"
+    "vo": "FD aapke rupaye ko bachati hai, rupaye ki khareedne ki taakat ko nahi. Apni FD ka byaaj, tax ke baad, mehngai se milaakar dekhiye. Yeh investment advice nahi hai."
    },
    {
     "facts_used": [],
-    "label": "The twist",
+    "label": "END",
     "visual": {
      "card": null,
-     "prompt": "A small ice cube melting slowly on a steel plate, representing shrinking value over time, clean artistic composition.",
+     "prompt": "The whole family around the dining table in the morning, PAPA holding FD receipts, MUMMY with the grocery bill, BETI looking up curiously, friendly warm mood",
      "type": "art"
     },
-    "vo": "Tax katne ke baad, aapke paise ki khareedne ki taqat ghatt jati hai."
-   },
-   {
-    "facts_used": [],
-    "label": "Advice & disclaimer",
-    "visual": {
-     "card": null,
-     "prompt": "SG in a striped shirt and beard standing by a bookshelf, explaining calmly with an open hand gesture.",
-     "type": "art"
-    },
-    "vo": "Doosre options par dhyan dena bhi zaroori hai. Yeh investment advice nahi hai."
-   },
-   {
-    "facts_used": [],
-    "label": "End question",
-    "visual": {
-     "card": null,
-     "prompt": "PAPA and MUMMY sitting on a living room sofa discussing over tea, thoughtful expressions, cozy evening.",
-     "type": "art"
-    },
-    "vo": "Aapke ghar mein FD par kisko sabse zyada bharosa hai?"
+    "vo": "Aapki FD mehngai se aage hai ya peeche? Comment mein likhiye."
    }
   ],
-  "title": "Papa ne bank mein *FD* karayi 🏦"
+  "title": "FD *safe* hai, par paisa bacha kya? 🤔"
  },
  "status": "assembled",
  "timings": [
   0.0,
-  4.61,
-  9.86,
-  15.19,
-  21.6,
-  25.97,
-  31.06,
-  36.23
+  6.53,
+  11.7,
+  17.27,
+  22.44,
+  26.81,
+  32.42,
+  38.91,
+  43.84,
+  48.17,
+  54.02,
+  59.19,
+  71.56
  ],
  "topic": {
   "link": "",
@@ -155,6 +299,6 @@
   "target_minutes": null,
   "title": "Fixed deposit returns vs inflation in India: what a saver actually keeps (October 2026)"
  },
- "updated": "2026-10-20T19:09:41+00:00",
- "writer": "gemini"
+ "updated": "2026-10-20T19:24:08+00:00",
+ "writer": "claude"
 }

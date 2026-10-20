@@ -63,7 +63,7 @@ def today_ist(now: datetime | None = None) -> date:
     return now.astimezone(IST).date()
 
 
-STORY_FORMAT = {("sglearning", "short")}      # illustrated money stories (founder, 20 Oct 2026); longs keep cards + presenter
+STORY_FORMAT = {("sglearning", "short"), ("arthvan", "short")}      # illustrated stories on both channels (founder, 20 Oct 2026); longs keep cards + presenter
 
 
 def is_story(channel: str, kind: str) -> bool:

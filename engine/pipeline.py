@@ -64,7 +64,7 @@ def _used(root: Path) -> tuple:
 
 
 def _pick_topic(piece: Piece, deps: Deps, root: Path, used: set) -> dict | None:
-    if piece.channel == "arthvan" and piece.kind == "short":
+    if piece.channel == "arthvan" and piece.kind == "short" and not is_story(piece):
         long_id = buffer.long_for_short(piece.channel, piece.publish_day)
         long_p = pieces.load(long_id, root)
         if not long_p or not long_p.script:                       # launch week: tease the coming long instead

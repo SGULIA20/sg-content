@@ -1,9 +1,16 @@
-Channel: SG-MYTH-WORLD. Niche: "Sabut ke saath" (Indian mythology, history and archaeology, told as a mystery with evidence).
+Channel: SG-MYTH-WORLD. Niche: "Sabut ke saath" (Indian mythology, history and archaeology, told as a mystery with evidence). Hindi/Hinglish.
 
-Every scene carries a `label`: "scripture" (what a named text says), "archaeology" (a named institution found it, with a date), "disputed" (experts disagree; say who says what), "legend" (a popular story with no source). The label is shown on screen, so be honest with it. Wonder, never mockery. Never say a faith is true or false, never compare religions.
+Every scene carries a `label`: "scripture" (what a named text says), "archaeology" (a named institution found it, with a date), "disputed" (experts disagree; say who says what), "legend" (a popular story with no source). The label is shown on the panel, so be honest with it. Wonder, never mockery. Never say a faith is true or false, never compare religions, no politics.
 
-LONG (15-25 min) structure: cold open with the single most surprising piece of evidence (avatar hook, 10-15 s) → the legend as the scripture tells it (3-4 scenes, label scripture) → "lekin sabut kya kehta hai" chapter: the finds, one per scene, each with place, institution, year and a number (label archaeology) → "yahan vigyan sehmat nahi" chapter (label disputed, both sides named) → what remains unknown → the one question for the comments → tease the next place. Chapters named in captions.youtube.chapters. A pattern change every 60-90 s: new picture, number card, map.
+SHORTS are ILLUSTRATED STORIES (black title band, one drawn panel per scene, the narration as a caption): 60-90 seconds, 10 to 13 scenes, 150-230 words of voice. STORY FIRST: the plot is the place, the find or the question itself. Characters appear only when a scene needs a person (a diver, an archaeologist, a pilgrim, a grandmother telling the tale), described without names; SG may appear once as the narrator figure if the scene needs him.
+1. `title`: 5 to 8 words, Hinglish, ONE keyword in *stars*, one emoji at the end (😱 or 🤯 at most once). Examples: "Samundar ke neeche *Dwarka*? 😱", "Ram Setu, *NASA* ki tasveer 🤯".
+2. Scenes 1-2 THE LEGEND as the scripture tells it (label scripture), as a scene people can picture.
+3. Scenes 3-6 THE SEARCH: who went looking, when, what they found, with place, institution and year (label archaeology). At most TWO numbers in the whole story, both from the fact sheet, said the way a person says them ("lagbhag 3,000 saal", "36 metre neeche").
+4. Scenes 7-9 THE DOUBT: where scientists or historians disagree, both sides named (label disputed), and what remains unknown.
+5. Scenes 10-11 THE TWIST and what the viewer can see or visit today.
+6. Last scene: `end_question`, one easy question.
+Explain every term in one plain line the first time ("carbon dating yaani cheez kitni purani hai, uska vigyan se hisaab").
 
-SHORTS (30-50 s), three per week, each built on ONE evidence hook from the long video: hook line with the number or the photo ("Yeh naksha 5,000 saal purana hai?"), two scenes of evidence with labels, one scene of the doubt, end question. Titles may carry one 😱 or 🤯.
+LONG videos (15-25 min): the full documentary: cold open with the single most surprising piece of evidence (avatar hook), the legend chapter (scripture), the finds chapter (archaeology), the disagreement chapter (disputed), what remains unknown, the question, the next-place tease. Chapters named in captions.youtube.chapters. Number cards allowed in longs.
 
-Visuals: "art" scenes are painted in a consistent documentary style (ancient India, warm light, no deities' faces in close-up, no text); "photo" scenes are licensed real-site photos; number cards for dates, depths, distances; the avatar only at the hook, chapter turns and the end.
+VISUALS: for Shorts every scene is `visual.type` "art" with `card` null; `visual.prompt` describes one drawn panel (place, time, people without names, the find, the mood). Deities from behind, at a distance or as a statue or painting in the scene, never in close-up. No text in the picture, no logos.

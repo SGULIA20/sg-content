@@ -110,7 +110,9 @@ def test_make_is_idempotent_for_uploaded_piece(tmp_path):
     assert calls["write"] == 0
 
 
-def test_myth_short_reuses_long_scenes(tmp_path):
+def test_myth_short_reuses_long_scenes(tmp_path, monkeypatch):
+    from engine import config
+    monkeypatch.setattr(config, "STORY_FORMAT", {("sglearning", "short")})
     long_p = _piece("long", "arthvan", date(2026, 10, 17))
     s = good_script(); s["scenes"] = s["scenes"] * 4                         # 12 scenes
     long_p.script = s; long_p.facts = FACTS; long_p.status = "uploaded"; long_p.topic = {"id": "dwarka-underwater", "hooks": ["h1", "h2", "h3"]}
@@ -121,13 +123,17 @@ def test_myth_short_reuses_long_scenes(tmp_path):
     assert p.topic["from_long"] == "2026-10-17-arthvan-long" and p.status == "uploaded"
 
 
-def test_myth_short_without_long_fails_cleanly(tmp_path):
+def test_myth_short_without_long_fails_cleanly(tmp_path, monkeypatch):
+    from engine import config
+    monkeypatch.setattr(config, "STORY_FORMAT", {("sglearning", "short")})
     d, calls = deps(tmp_path)
     p = pipeline.make(_piece("short", "arthvan", date(2026, 10, 21)), d, tmp_path)
     assert p.status == "failed-topic" and calls["write"] == 0
 
 
-def test_myth_short_teases_next_long_when_previous_missing(tmp_path):
+def test_myth_short_teases_next_long_when_previous_missing(tmp_path, monkeypatch):
+    from engine import config
+    monkeypatch.setattr(config, "STORY_FORMAT", {("sglearning", "short")})
     long_p = _piece("long", "arthvan", date(2026, 10, 24))
     long_p.script = good_script(); long_p.facts = FACTS; long_p.status = "uploaded"; long_p.topic = {"id": "dwarka-underwater", "hooks": ["h1", "h2", "h3"]}
     pieces.save(long_p, tmp_path)
@@ -313,3 +319,19 @@ def test_story_format_uses_panels_cast_refs_and_storyframe(tmp_path):
     p = pipeline.make(_piece(), d, tmp_path)
     assert p.status == "uploaded" and built == [3] and calls["build"] == 0
     assert painted == ["4:5"] * 3 and refs_seen[0] == ["sg.png"]
+
+
+def test_myth_story_short_is_standalone_and_panels_carry_labels(tmp_path, monkeypatch):
+    from engine import config
+    monkeypatch.setattr(config, "STORY_FORMAT", {("sglearning", "short"), ("arthvan", "short")})
+    d, calls = deps(tmp_path)
+    built = []
+    d.story_build = lambda piece, lines, panels, size, out_dir: (built.append(piece.channel), setattr(piece, "timings", [0.0] * len(panels)), Path(out_dir, "reel.mp4").write_bytes(b"m"), Path(out_dir, "reel.mp4"))[-1]
+    def write_fn(piece, sheet, library, hashtags):
+        s = good_script(); s["title"] = "Samundar ke neeche *Dwarka*? 😱"
+        for sc in s["scenes"]:
+            sc["visual"] = {"type": "art", "prompt": "divers near stone walls", "card": None}; sc["label"] = "archaeology"
+        return {"script": s, "writer": "claude", "note": ""}
+    d.write = write_fn
+    p = pipeline.make(_piece("short", "arthvan", date(2026, 10, 21)), d, tmp_path)
+    assert p.status == "uploaded" and calls["research"] == 1 and built == ["arthvan"] and "from_long" not in p.topic

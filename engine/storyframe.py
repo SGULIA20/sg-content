@@ -5,7 +5,7 @@ import re
 import subprocess
 from pathlib import Path
 
-from . import assemble, captions, cards, music
+from . import assemble, captions, cards, lint, music
 from .config import STORY_MAX_S, VIDEO
 
 FPS = VIDEO["fps"]
@@ -26,8 +26,8 @@ def _run(args: list) -> None:
     subprocess.run(["ffmpeg", "-v", "error", "-y", *args], check=True)
 
 
-def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, cue_overlays: list) -> Path:
-    """Panel with push-in in the middle band, black bands top and bottom, title band and caption cues overlaid."""
+def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, cue_overlays: list, chip: Path | None = None) -> Path:
+    """Panel with push-in in the middle band, black bands top and bottom, title band, optional evidence chip, caption cues overlaid."""
     w, h = size
     ph = int(h * PANEL)
     py = int(h * TOP)
@@ -37,7 +37,12 @@ def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, 
              f"pad={w}:{h}:0:{py}:black[base];[base][1:v]overlay=0:0:shortest=1[t]")
     inputs = ["-loop", "1", "-i", str(panel), "-loop", "1", "-i", str(title_png)]
     last = "[t]"
-    for k, (png, x, y, s, e) in enumerate(cue_overlays, start=2):
+    k0 = 2
+    if chip is not None:
+        inputs += ["-loop", "1", "-i", str(chip)]
+        chain += f";[t][2:v]overlay={w - 400 - 30}:{py + 30}:shortest=1[c]"
+        last, k0 = "[c]", 3
+    for k, (png, x, y, s, e) in enumerate(cue_overlays, start=k0):
         inputs += ["-loop", "1", "-i", str(png)]
         chain += f";{last}[{k}:v]overlay={x}:{y}:shortest=1:enable='between(t,{s:.3f},{e:.3f})'[o{k}]"
         last = f"[o{k}]"
@@ -74,7 +79,12 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
             if not png.exists():
                 cards.render("storycap", {"text": text}, png, (w, band_h))
             overlays.append((png, 0, bottom_y, s, e))
-        clips.append(scene(panel, dur, size, out_dir / f"scene{i:02d}.mp4", title_png, overlays))
+        chip = None
+        if piece.channel == "arthvan" and scene_d.get("label") in lint.MYTH_LABELS:
+            chip = out_dir / f"label-{scene_d['label']}.png"
+            if not chip.exists():
+                cards.render("label", {"label": scene_d["label"]}, chip, (400, 90))
+        clips.append(scene(panel, dur, size, out_dir / f"scene{i:02d}.mp4", title_png, overlays, chip=chip))
     (out_dir / "captions.ass").write_text(captions.ass(all_cues, size))
     concat = out_dir / "scenes.txt"
     concat.write_text("".join(f"file '{c.resolve()}'\n" for c in clips))
