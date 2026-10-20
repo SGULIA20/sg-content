@@ -1,0 +1,13 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Inter;src:url({{FONTS}}/Inter.ttf)}
+html,body{margin:0;padding:0;background:transparent}
+#root{position:relative;width:{{W}}px;height:{{H}}px;overflow:hidden;background:transparent;font-family:Inter,sans-serif}
+.disc{position:absolute;inset:6%;border-radius:50%;background:#0B0F1A;border:{{ring}}px solid #FFD166;box-shadow:0 0 0 {{shadow}}px rgba(0,0,0,.55);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center}
+.top{font-weight:900;font-size:{{top_px}}px;line-height:1;letter-spacing:-2px}
+.bottom{margin-top:5%;font-weight:800;font-size:{{bottom_px}}px;line-height:1;letter-spacing:2px;color:#FFD166;text-transform:uppercase}
+</style></head><body><div id="root">
+<div class="disc"><div class="top">{{top}}</div><div class="bottom">{{bottom}}</div></div>
+</div>
+<script>const d=document.querySelector(".disc"),b=document.querySelector(".bottom");let fs=parseInt(getComputedStyle(b).fontSize);
+while(b.scrollWidth>d.clientWidth*0.72&&fs>8){fs-=1;b.style.fontSize=fs+"px"}</script>
+</body></html>

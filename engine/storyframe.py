@@ -12,6 +12,19 @@ FPS = VIDEO["fps"]
 TOP, PANEL, BOTTOM = 0.17, 0.66, 0.17
 HANDLE = "@sanjeev_gulia"
 END_S = 3.0                                                  # branded end card: channel name, tagline, subscribe, the question
+LOGO_PX = 150                                                # round channel badge in the panel's bottom-right corner, every frame
+LOGO_TEXT = {"sglearning": ("SG", "Learning"), "arthvan": ("SG", "Myth World")}
+LOGO_DIR = Path(__file__).resolve().parent.parent / "assets" / "logo"
+
+
+def logo(channel: str, px: int = LOGO_PX, out_dir: Path | None = None) -> Path:
+    """The channel's round monogram badge as a transparent PNG (drawn in code: the YouTube avatars are photos, not marks)."""
+    top, bottom = LOGO_TEXT[channel]
+    out = Path(out_dir or LOGO_DIR) / f"{channel}-{px}.png"
+    if not out.exists():
+        cards.render("logo", {"top": top, "bottom": bottom, "ring": max(3, px // 30), "shadow": max(2, px // 50),
+                              "top_px": int(px * 0.40), "bottom_px": int(px * 0.11)}, out, (px, px))
+    return out
 
 
 def brand(channel: str) -> dict:
@@ -23,7 +36,8 @@ def brand(channel: str) -> dict:
 def end_card(piece, size: tuple, out_dir: Path) -> Path:
     """A still end card held for END_S seconds, same bands and colours as the story."""
     w, h = size
-    png = cards.render("storyend", {**brand(piece.channel), "question": (piece.script or {}).get("end_question", "")}, Path(out_dir) / "end.png", size)
+    png = cards.render("storyend", {**brand(piece.channel), "question": (piece.script or {}).get("end_question", ""), "logo_path": logo(piece.channel, 320)},
+                       Path(out_dir) / "end.png", size)
     out = Path(out_dir) / "end.mp4"
     _run(["-loop", "1", "-framerate", str(FPS), "-i", str(png), "-t", f"{END_S:.2f}", "-vf", f"scale={w}:{h},format=yuv420p",
           "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", str(FPS), str(out)])
@@ -43,7 +57,8 @@ def _run(args: list) -> None:
     subprocess.run(["ffmpeg", "-v", "error", "-y", *args], check=True)
 
 
-def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, cue_overlays: list, chip: Path | None = None) -> Path:
+def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, cue_overlays: list, chip: Path | None = None,
+          logo_png: Path | None = None) -> Path:
     """Panel with push-in in the middle band, black bands top and bottom, title band, optional evidence chip, caption cues overlaid."""
     w, h = size
     ph = int(h * PANEL)
@@ -53,12 +68,13 @@ def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, 
              f"zoompan=z='min(zoom+{assemble.ZOOM_PER_FRAME},{assemble.ZOOM_MAX})':d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={w}x{ph}:fps={FPS},"
              f"pad={w}:{h}:0:{py}:black[base];[base][1:v]overlay=0:0:shortest=1[t]")
     inputs = ["-loop", "1", "-i", str(panel), "-loop", "1", "-i", str(title_png)]
-    last = "[t]"
-    k0 = 2
-    if chip is not None:
-        inputs += ["-loop", "1", "-i", str(chip)]
-        chain += f";[t][2:v]overlay={w - 400 - 30}:{py + 30}:shortest=1[c]"
-        last, k0 = "[c]", 3
+    last, k0 = "[t]", 2
+    for extra, x, y in ((chip, w - 400 - 30, py + 30), (logo_png, w - LOGO_PX - 26, py + ph - LOGO_PX - 26)):
+        if extra is None:
+            continue
+        inputs += ["-loop", "1", "-i", str(extra)]
+        chain += f";{last}[{k0}:v]overlay={x}:{y}:shortest=1[x{k0}]"
+        last, k0 = f"[x{k0}]", k0 + 1
     for k, (png, x, y, s, e) in enumerate(cue_overlays, start=k0):
         inputs += ["-loop", "1", "-i", str(png)]
         chain += f";{last}[{k}:v]overlay={x}:{y}:shortest=1:enable='between(t,{s:.3f},{e:.3f})'[o{k}]"
@@ -87,6 +103,7 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     durations = [d + assemble.PAD_S for _w, d in lines]
     clips, all_cues = [], []
     bottom_y = h - band_h
+    badge = logo(piece.channel)
     for i, (panel, dur, (wav, d), start, scene_d) in enumerate(zip(panels, durations, lines, starts, piece.script["scenes"])):
         cues = captions.split(scene_d["vo"], d)
         all_cues += captions.offset(cues, start)
@@ -101,7 +118,7 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
             chip = out_dir / f"label-{scene_d['label']}.png"
             if not chip.exists():
                 cards.render("label", {"label": scene_d["label"]}, chip, (400, 90))
-        clips.append(scene(panel, dur, size, out_dir / f"scene{i:02d}.mp4", title_png, overlays, chip=chip))
+        clips.append(scene(panel, dur, size, out_dir / f"scene{i:02d}.mp4", title_png, overlays, chip=chip, logo_png=badge))
     (out_dir / "captions.ass").write_text(captions.ass(all_cues, size))
     clips.append(end_card(piece, size, out_dir))
     concat = out_dir / "scenes.txt"

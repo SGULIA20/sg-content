@@ -79,3 +79,13 @@ def test_story_build_landscape_long(tmp_path):
     out = storyframe.build(p, lines, panels, (1920, 1080), tmp_path / "out")
     w, h, dur = _probe(out)
     assert (w, h) == (1920, 1080) and out.name == "long.mp4" and 6.4 < dur < 7.4
+
+
+def test_logo_badge_is_drawn_once_per_channel_and_transparent(tmp_path):
+    a = storyframe.logo("sglearning", 150, tmp_path)
+    b = storyframe.logo("sglearning", 150, tmp_path)
+    assert a == b == tmp_path / "sglearning-150.png" and a.stat().st_size > 1000
+    import zlib, struct
+    data = a.read_bytes()
+    assert data[:8] == b"\x89PNG\r\n\x1a\n" and struct.unpack(">B", data[25:26])[0] in (6,)      # colour type 6 = RGBA, so corners stay see-through
+    assert storyframe.logo("arthvan", 150, tmp_path).exists()
