@@ -8,6 +8,9 @@ import pytest
 
 from engine import cartoon
 
+needs_art = pytest.mark.skipif(not (cartoon.CARTOON_DIR / "founder_suit_head_neutral.png").exists(),
+                               reason="cartoon artwork lives only on the Mac (assets/cartoon is not in git)")
+
 
 def _wav(path, pattern, rate=24000):
     """pattern: list of (seconds, loud: bool)."""
@@ -32,12 +35,14 @@ def test_mouth_envelope_opens_on_sound_and_closes_in_silence(tmp_path):
     assert {"a", "b"} & set(states)                                        # both open frames are used
 
 
+@needs_art
 def test_poses_known_and_default():
     assert cartoon.pose_for("explaining_front") == "explaining_right" and cartoon.pose_for("unknown_pose") == "front_neutral"
     assert cartoon.head_frames("suit")["closed"].exists() and cartoon.head_frames("suit")["a"].exists()
 
 
 @pytest.mark.slow
+@needs_art
 def test_talking_head_clip_matches_voice_length(tmp_path):
     wav = _wav(tmp_path / "v.wav", [(0.3, False), (1.2, True), (0.3, False)])
     out = cartoon.talking_head_clip(wav, 1.8 + 0.45, (1080, 1920), tmp_path / "th.mp4", mood="explaining_front")
