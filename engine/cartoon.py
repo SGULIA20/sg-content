@@ -92,12 +92,12 @@ def talking_head_clip(wav: Path, seconds: float, size: tuple, out: Path, mood: s
     states = mouth_envelope(wav)
     total = max(1, int(round(seconds * FPS)))
     states += ["closed"] * max(0, total - len(states))
-    heads = {k: _load_rgba(p, int(h * (0.42 if portrait else 0.62))) for k, p in head_frames(outfit).items()}
+    heads = {k: _load_rgba(p, int(h * (0.46 if portrait else 0.62))) for k, p in head_frames(outfit).items()}
     pose_png = CARTOON_DIR / f"founder_{outfit}_{pose_for(mood, f'founder_{outfit}')}.png"
-    body = _load_rgba(pose_png, int(h * (0.34 if portrait else 0.5))) if pose_png.exists() else None
+    body = _load_rgba(pose_png, int(h * 0.5)) if (pose_png.exists() and not portrait) else None   # landscape only: on a phone the head alone reads better
     bg = _gradient(size)
     hw, hh = heads["closed"].shape[1], heads["closed"].shape[0]
-    head_x, head_y = (w - hw) // 2, int(h * (0.06 if portrait else 0.04))
+    head_x, head_y = (w - hw) // 2, int(h * (0.12 if portrait else 0.04))
     out = Path(out)
     out.parent.mkdir(parents=True, exist_ok=True)
     proc = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{w}x{h}", "-r", str(FPS), "-i", "-",
