@@ -72,3 +72,5 @@ def is_story(channel: str, kind: str) -> bool:
 
 STORY_WORDS = (150, 230)                      # a 60-90 s story at the clone's ~2.5 words/s
 STORY_MAX_S = 95.0                            # YouTube Shorts and Reels allow up to 3 minutes; stories stop at about 90 s
+
+ENABLED_KINDS = {"short"}                     # longs join once their path is validated with the founder (20 Oct 2026)

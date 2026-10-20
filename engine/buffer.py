@@ -3,6 +3,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 from . import pieces, slots
+from . import config
 from .config import CHANNELS, ROOT
 
 DONE = {"uploaded", "posted"}
@@ -34,4 +35,4 @@ def needed(root: Path = ROOT, today_ist: date | None = None, horizon_short: int 
         for day in slots.publish_dates(ch, "short", today_ist, horizon_short):
             if slots.piece_id(day, ch, "short") not in done:
                 shorts.append((day, ch, "short"))
-    return sorted(longs) + sorted(shorts)
+    return [x for x in sorted(longs) + sorted(shorts) if x[2] in config.ENABLED_KINDS]
