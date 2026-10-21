@@ -2,8 +2,8 @@ name: publish
 
 on:
   schedule:
-    - cron: '30 8 * * *'      # 14:00 India: Learning with SG Reel + Story + Threads (after the 07:05 UTC produce run)
-    - cron: '0 16 * * 1,3,5'  # 21:30 India Mon/Wed/Fri: SG-MYTH-WORLD Reel + Story + Threads
+    - cron: '30 8 * * *'      # 14:00 India: Learning with SG Reel + Story + Threads + LinkedIn (after the 07:05 UTC produce run)
+    - cron: '0 16 * * 1,3,5'  # 21:30 India Mon/Wed/Fri: SG-MYTH-WORLD Reel + Story + Threads + LinkedIn
   workflow_dispatch:
     inputs:
       channel:
@@ -53,6 +53,8 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          LINKEDIN_PERSON_URN: ${{ secrets.LINKEDIN_PERSON_URN }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SG_COMMAND_KEY: ${{ secrets.SG_COMMAND_KEY }}
