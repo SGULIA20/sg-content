@@ -71,7 +71,7 @@ def test_slide_and_label_and_source_sizes(tmp_path):
 
 def test_unknown_kind_raises(tmp_path):
     with pytest.raises(KeyError):
-        cards.render("banner", {}, tmp_path / "x.png", (10, 10))
+        cards.render("no-such-card", {}, tmp_path / "x.png", (10, 10))     # "banner" became a real card on 20 Oct
 
 
 def test_caption_card_is_transparent_png(tmp_path):
