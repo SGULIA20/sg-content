@@ -11,7 +11,7 @@ import traceback
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from . import buffer, digest, gitsync, pieces, pipeline, slots, telegram
+from . import buffer, digest, gitsync, pieces, pipeline, secrets, slots, telegram
 from .config import ROOT
 
 MAX_DEFAULT = 3
@@ -58,7 +58,16 @@ def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFA
             if kind == "long" and long_minutes:
                 pipeline.LONG_TARGET_MINUTES[channel] = long_minutes
             print(f"making {pid}", flush=True)
-            piece = pipeline.make(piece, deps, root, dry_run=dry_run, pack_mode=(mode == "pack"))
+            try:
+                piece = pipeline.make(piece, deps, root, dry_run=dry_run, pack_mode=(mode == "pack"))
+            except Exception as e:                          # one piece's surprise never stops the others (21 Oct crash)
+                ok = False
+                traceback.print_exc()
+                reason = f"crashed: {type(e).__name__}: {secrets.scrub(str(e))[:200]}"
+                pieces.save(pieces.transition(piece, "failed-crash", reason), root)
+                made.append((pid, reason))
+                gitsync.safe_commit(root, f"produce: {pid} failed-crash")
+                continue
             made.append((pid, piece.status))
             gitsync.safe_commit(root, f"produce: {pid} {piece.status}")
             print(f"  -> {piece.status}" + (f": {piece.reasons[-1]}" if piece.reasons else ""), flush=True)
@@ -78,7 +87,7 @@ def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFA
     if alerts:
         text += "\nALERTS:\n" + "\n".join("  ! " + a for a in alerts)
     if not ok:
-        text += "\nRUN CRASHED: " + made[-1][1]
+        text += "\nCRASHED (the other pieces carried on): " + "; ".join(f"{a} {b}" for a, b in made if str(b).startswith("crashed"))
     if not dry_run or os.environ.get("NOTIFY_DRY_RUN") == "1":
         notify(text)
     print(text, flush=True)

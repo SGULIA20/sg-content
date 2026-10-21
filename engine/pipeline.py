@@ -183,7 +183,13 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
             pieces.save(pieces.transition(piece, "researched"), root)
         else:
             piece.topic["revise"] = revise
-        written = deps.write(piece, sheet, deps.library, deps.hashtags)
+        try:
+            written = deps.write(piece, sheet, deps.library, deps.hashtags)
+        except writer.WriterError as e:
+            pieces.save(pieces.transition(piece, "failed-write", secrets.scrub(str(e))[:300]), root)
+            return piece
+        if written.get("note", "").startswith("claude failed"):
+            piece.reasons.append(written["note"][:300])
         piece.script, piece.writer = written["script"], written["writer"]
         piece.topic.pop("revise", None)
         reasons = deps.lint(piece, prior)

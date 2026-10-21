@@ -13,6 +13,8 @@ GEMINI_MODEL = "gemini-3.8-flash"
 USD_PER_M_IN, USD_PER_M_OUT = 4.0, 20.0
 SPEND_FILE = LOGS_DIR / "claude-spend.json"
 WRITER_FOR = {"short": "claude", "long": "claude"}      # Claude writes everything; Gemini only as the fallback (founder, 20 Oct: the free model wrote weak stories)
+MAX_TOKENS = 64000
+GEMINI_MAX_TOKENS = 32000
 FENCE = re.compile(r"^```(?:json)?\s*|\s*```$", re.MULTILINE)
 
 
@@ -66,7 +68,10 @@ def record_spend(usage, path: Path = SPEND_FILE, today: date | None = None) -> f
 
 
 def _parse(raw: str) -> dict:
-    data = json.loads(FENCE.sub("", raw.strip()))
+    try:
+        data = json.loads(FENCE.sub("", (raw or "").strip()))
+    except ValueError as e:                                       # cut-off or malformed reply: a failed piece, never a crashed run
+        raise WriterError(f"script reply is not valid JSON ({e}); {len(raw or '')} characters received") from e
     problems = schema.validate(data)
     if problems:
         raise WriterError("script does not match the schema: " + "; ".join(problems[:5]))
@@ -78,16 +83,19 @@ def _claude(piece, sheet, library, hashtags, formula, client, spend, today) -> d
     client = client or anthropic.Anthropic(api_key=secrets.get("ANTHROPIC_API_KEY"))
     system = system_prompt(piece.channel) if formula is None else system_prompt(piece.channel).replace(
         (CONTENT_DIR / "prompts" / f"formula-{piece.channel}.txt").read_text(), formula)
-    response = client.beta.messages.create(
-        model=MODEL, max_tokens=16000,
-        output_config={"effort": "high", "format": {"type": "json_schema", "schema": schema.PIECE_SCHEMA}},
+    with client.beta.messages.stream(                              # streamed: a 12-14 minute long needs more than 16k tokens
+        model=MODEL, max_tokens=MAX_TOKENS,
+        output_config={"effort": "high", "format": {"type": "json_schema", "schema": schema.api_schema(schema.PIECE_SCHEMA)}},
         betas=["server-side-fallback-2026-07-01"], fallbacks="default",
         system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
         messages=[{"role": "user", "content": _user_message(piece, sheet, library, hashtags)}],
-    )
+    ) as stream:
+        response = stream.get_final_message()
     record_spend(response.usage, spend, today)
     if response.stop_reason == "refusal":
         raise WriterError("Claude refused the request")
+    if response.stop_reason == "max_tokens":
+        raise WriterError(f"Claude's script was cut off at {MAX_TOKENS} tokens")
     text = next((b.text for b in response.content if getattr(b, "type", "") == "text"), "")
     return _parse(text)
 
@@ -96,7 +104,7 @@ def _gemini(piece, sheet, library, hashtags, formula, ask) -> dict:
     prompt = system_prompt(piece.channel) + "\n\nSCHEMA (return exactly this shape):\n" + json.dumps(schema.PIECE_SCHEMA) + \
         "\n\nINPUT:\n" + _user_message(piece, sheet, library, hashtags)
     body = {"contents": [{"parts": [{"text": prompt}]}],
-            "generationConfig": {"temperature": 0.7, "responseMimeType": "application/json", "maxOutputTokens": 12000}}
+            "generationConfig": {"temperature": 0.7, "responseMimeType": "application/json", "maxOutputTokens": GEMINI_MAX_TOKENS}}
     return _parse(gemini.text(ask(GEMINI_MODEL, body, None)))
 
 
@@ -115,4 +123,7 @@ def write(piece: Piece, sheet: dict, library: list, hashtags: dict, formula: str
         except Exception as e:                                    # refusal, API error after SDK retries, schema mismatch
             note = f"claude failed: {type(e).__name__}: {secrets.scrub(str(e))[:200]}"
             print(note, flush=True)
-    return {"script": _gemini(piece, sheet, library, hashtags, formula, gemini_ask), "writer": "gemini", "note": note}
+    try:
+        return {"script": _gemini(piece, sheet, library, hashtags, formula, gemini_ask), "writer": "gemini", "note": note}
+    except Exception as e:                                        # both writers failed: the caller records it on the piece
+        raise WriterError(f"{note + '; ' if note else ''}gemini failed: {type(e).__name__}: {secrets.scrub(str(e))[:200]}") from e

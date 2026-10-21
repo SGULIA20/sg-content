@@ -6,7 +6,9 @@ import argparse
 import base64
 import hashlib
 import json
+import re
 import sys
+import time
 import wave
 from datetime import date
 from pathlib import Path
@@ -21,6 +23,10 @@ STYLE = "clear, warm, natural Hindi explainer voice, medium pace"
 VOICE_FILE = CONTENT_DIR / "voice.json"
 BUDGET_FILE = LOGS_DIR / "voice-budget.json"
 DEFAULT_IDS = ("voice_9c6x5lerrbm4", "voice_7w9h8qkiqz03")      # created 19 Oct 2026 in the founder's first Gemini project
+MIN_GAP_S = 6.5            # Tier 1 allows 10 requests a minute; one line every 6.5 s stays under it (21 Oct 2026: a 429 mid-Short)
+RATE_RETRIES = 2           # a 429 waits the time Google names (at most RATE_WAIT_MAX_S) and tries again
+RATE_WAIT_MAX_S = 65
+_last_request = [0.0]
 
 
 class VoiceError(Exception):
@@ -119,7 +125,8 @@ def _audio_from(response: dict) -> bytes | None:
 
 
 def say(text: str, voice_id: str, out_wav: Path, *, key: str | None = None, cache_dir: Path = CACHE_DIR / "voice",
-        budget: Path = BUDGET_FILE, post=gemini._post, style: str = STYLE, today: date | None = None) -> float:
+        budget: Path = BUDGET_FILE, post=gemini._post, style: str = STYLE, today: date | None = None,
+        sleep=time.sleep, clock=time.monotonic) -> float:
     """Synthesizes one line into out_wav (24 kHz mono 16-bit) and returns its length in seconds. Cached by voice, style and text."""
     today = today or today_pacific()
     out_wav = Path(out_wav)
@@ -130,24 +137,32 @@ def say(text: str, voice_id: str, out_wav: Path, *, key: str | None = None, cach
         if requests_today(budget, today) >= BUDGETS["voice_requests_per_day"]:
             raise VoiceBudget(f"voice budget of {BUDGETS['voice_requests_per_day']} requests reached for {today}")
         key = key or secrets.get("GEMINI_API_KEY")
-        _count_request(budget, today)
         if voice_id.startswith("voice"):                                  # a replicated or designed voice: interactions API
+            url = SYNTH_URL
             body = {"model": MODEL,
                     "input": [{"type": "user_input", "content": [{"type": "text", "text": text,
                                                                   "annotations": [{"type": "speech_metadata", "style": style}]}]}],
                     "response_format": {"type": "audio"},
                     "generation_config": {"speech_config": [{"voice": voice_id}]}}
-            status, data = post(SYNTH_URL, body, key)
-            if status != 200:
-                raise VoiceError(f"voice synthesis failed ({status}): {secrets.scrub(str((data.get('error') or {}).get('message', '')))[:300]}")
-            audio = _audio_from(data)
         else:                                                              # a prebuilt voice name (Puck, Kore, ...): generateContent, raw PCM back
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
             body = {"contents": [{"parts": [{"text": f"{style}: {text}" if style else text}]}],
                     "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice_id}}}}}
-            status, data = post(f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent", body, key)
-            if status != 200:
-                raise VoiceError(f"voice synthesis failed ({status}): {secrets.scrub(str((data.get('error') or {}).get('message', '')))[:300]}")
-            audio = _pcm_to_wav(_pcm_from(data))
+        for attempt in range(RATE_RETRIES + 1):
+            wait = _last_request[0] + MIN_GAP_S - clock()
+            if wait > 0:
+                sleep(wait)
+            _last_request[0] = clock()
+            status, data = post(url, body, key)
+            if status != 429 or attempt == RATE_RETRIES:
+                break
+            m = re.search(r"retry in (\d+(?:\.\d+)?)\s*s", str((data.get("error") or {}).get("message", "")))
+            sleep(min(float(m.group(1)) + 1 if m else 60, RATE_WAIT_MAX_S))
+        if status != 429:
+            _count_request(budget, today)                                  # a rate-limited (429) request never reached the model
+        if status != 200:
+            raise VoiceError(f"voice synthesis failed ({status}): {secrets.scrub(str((data.get('error') or {}).get('message', '')))[:300]}")
+        audio = _audio_from(data) if url == SYNTH_URL else _pcm_to_wav(_pcm_from(data))
         if not audio:
             raise VoiceError("voice synthesis returned no audio")
         cached.write_bytes(audio)
