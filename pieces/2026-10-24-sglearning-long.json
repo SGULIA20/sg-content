@@ -1,0 +1,552 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 50.0,
+   "quote": "Credit card issuers offer interest-free credit periods ranging from 20 to 50 days.",
+   "source_date": "2024-01-17",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/wealth/spend/et-explainer-how-to-avoid-falling-into-a-credit-card-trap/articleshow/106915124.cms",
+   "text": "Credit card issuers offer an interest-free credit grace period ranging between 20 and 50 days when statements are paid in full.",
+   "unit": "days"
+  }
+ ],
+ "id": "2026-10-24-sglearning-long",
+ "ids": {
+  "captions": {
+   "en": "AUieDaYEUmrXtl8ethLWk4f78HYbl9PuMRgN9yGHma6wDzc8isqDkAYM",
+   "gu": "AUieDab2JJmYrb18F3QqEB5vBz5ib2HhrQnzIcaKCmvLb63iL93583wluj3AgXO88l3PXt30q2o",
+   "hi": "AUieDaaf3uN2VMXQfrm040uWquVHfqoYjhy41qqjQk5BCrSNiOHtoXKIicQ8YQ31zdB5YTc",
+   "mr": "AUieDaYWjzazLOiqTHPbQyWsadY3y9P9O0jDhVAmDukfE60vYMbVr-i_kDtg4YE6Y2c",
+   "ta": "AUieDaYCPFlHAfEfEwBPxGpplsdiCl1OCiMqGNGFi-3AEMOZc6HhkmUiqEj1tk7eu4Y"
+  },
+  "yt_id": "_kdpdg3EygM"
+ },
+ "kind": "long",
+ "publish_day": "2026-10-24",
+ "reasons": [
+  "try 1: advice: guarantee; numbers without a source: 7, 3.86e+06, 7, 7, 7, 7, 8.5"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Minimum due bhara, phir bhi karz badh gaya? 💳\nMinimum due bharte hi muft udhaar ka samay khatam, aur byaaj poore bill par.\nByaaj par byaaj, upar se GST, aur bill saalon tak chalta hai.\nAapne kabhi sirf minimum due bhara hai? Yeh investment advice nahi hai.\nUs dost ko bhejo jo har mahine sirf minimum due bharta hai.",
+    "hashtags": [
+     "#LearningWithSG",
+     "#PaiseKiKhabar",
+     "#MoneyTipsHindi",
+     "#PersonalFinanceIndia",
+     "#HinglishFinance",
+     "#SeedhiBaat",
+     "#EMI",
+     "#GST"
+    ]
+   },
+   "threads": {
+    "text": "Credit card ka minimum due bhara, phir bhi bill badhta gaya. Kyunki minimum due bill bharna nahi hai, bas byaaj ka meter chalu rakhna hai. Aapne kabhi sirf minimum due bhara hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Cold open: Minimum due ka jaal",
+     "00:00 Minimum due button asal mein kya karta hai",
+     "00:00 Byaaj par byaaj, aur upar se GST",
+     "00:00 Bill saalon kyun chalta hai",
+     "00:00 Galti aur bahar nikalne ka raasta"
+    ],
+    "description": "Minimum due bharne se bill nahi bharta, sirf byaaj ka meter chalu hota hai. Is kahani mein dekhiye kaise muft udhaar ka samay khatam hota hai, poore bill par byaaj aur upar se GST lagta hai, aur bill saalon tak chalta hai. Saath mein bahar nikalne ke seedhe raaste: poora bill, EMI, balance transfer. Us dost ko bhejo jo har mahine sirf minimum due bharta hai.",
+    "tags": [
+     "credit card",
+     "minimum due",
+     "credit card interest",
+     "credit card bill",
+     "GST on credit card",
+     "credit score",
+     "balance transfer",
+     "credit card EMI",
+     "personal finance hindi",
+     "Learning with SG",
+     "Hinglish finance"
+    ],
+    "title": "Credit Card Minimum Due: bill khatam kyun nahi?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Aapne kabhi sirf minimum due bhara hai? Haan ya na?",
+  "hook": "Bhai ne bill bharne ka button dabaya, aur karz phir bhi badh gaya.",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "Cold open: Minimum due ka jaal",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in a hoodie lying in bed at night, face lit by his phone screen, relaxed half smile, a faint glowing taxi-meter shape floating in the dark room behind him",
+     "type": "art"
+    },
+    "vo": "Bhai ne bill bharne ka button dabaya, aur karz phir bhi badh gaya. Button ka naam tha minimum due. Usne socha, aaj ka kaam ho gaya. Asal mein usi raat ek meter chalu ho gaya. Woh meter mahine dar mahine chalta raha, bilkul chupchaap."
+   },
+   {
+    "facts_used": [],
+    "label": "Cold open: Minimum due ka jaal",
+    "visual": {
+     "card": null,
+     "prompt": "Close view over BHAI's shoulder of a phone app screen with a red header and buttons, his thumb pressing the smaller button, dim bedroom at night, no readable text",
+     "type": "art"
+    },
+    "vo": "Der raat, Bhai bistar par phone dekh raha hai. Card ki app khuli hai, upar laal rang mein bill. Neeche button hain, total due aur minimum due. Minimum due wala amount bahut chhota dikhta hai. Bhai muskura kar wahi dabata hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Cold open: Minimum due ka jaal",
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN in office wear holding a printed card statement at the dining table, eyebrows raised, BHAI beside her shrugging confidently, evening light",
+     "type": "art"
+    },
+    "vo": "Kuch mahine baad Behen uska statement dekhti hai. Naya kharcha toh usne kiya hi nahi. Phir bhi bill pehle se bada hai. Behen poochti hai, tune paisa bhara tha na? Bhai kehta hai, haan, har mahine, time par."
+   },
+   {
+    "facts_used": [],
+    "label": "Cold open: Minimum due ka jaal",
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt standing beside a large drawn question mark, calm and friendly, gesturing toward the viewer, warm studio-like illustrated background",
+     "type": "art"
+    },
+    "vo": "Toh yahan kuch sawaal uthte hain. Minimum due bharne par asal mein hota kya hai? Bill saalon tak khatam kyun nahi hota? Aur card ka byaaj baaki loans se itna bhaari kyun? Aaj inhe kahani ke saath, seedhi bhasha mein samjhenge."
+   },
+   {
+    "facts_used": [],
+    "label": "Cold open: Minimum due ka jaal",
+    "visual": {
+     "card": null,
+     "prompt": "A busy Indian electronics shop during a festive sale, string lights, families carrying boxed TVs and fridges, a card machine on the counter, cheerful evening crowd",
+     "type": "art"
+    },
+    "vo": "Aur end mein bahar nikalne ka raasta bhi dekhenge. Kyunki yeh jaal sirf Bhai ka nahi hai. Festive sale ka season hai, phone, TV, fridge, sab card par aa raha hai. Isliye yeh kahani shayad aapke ghar ki bhi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Minimum due button asal mein kya karta hai",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI on a sofa scrolling a shopping app, eyes shining at a shiny new phone on screen, his old cracked phone lying beside him, afternoon light",
+     "type": "art"
+    },
+    "vo": "Shuru se shuru karte hain. Festive sale chal rahi thi. Bhai ka purana phone slow ho gaya tha. Online naya phone dikha, bada discount, upar se card offer. Usne socha, abhi le leta hoon, paisa baad mein de dunga."
+   },
+   {
+    "facts_used": [],
+    "label": "Minimum due button asal mein kya karta hai",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated flow: a shopkeeper receiving money from a bank building, a hand with a card in the middle, an envelope flying toward a small house, simple doodle style",
+     "type": "art"
+    },
+    "vo": "Yahan tak sab theek tha. Credit card asal mein bank ka udhaar hai. Aap aaj kharchte ho, bank dukaandaar ko paisa deta hai. Mahine ke end mein bank statement bhejta hai. Statement yaani poore mahine ke kharche ka hisaab."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Minimum due button asal mein kya karta hai",
+    "visual": {
+     "card": null,
+     "prompt": "A wall calendar with a long stretch of days shaded in soft green, a smiling piggy bank resting below it, bright morning room",
+     "type": "art"
+    },
+    "vo": "Ab ek badhiya cheez samjhiye. Agar poora bill time par bhar do, toh koi byaaj nahi. Isse interest-free period kehte hain, yaani muft udhaar ka samay. Card companies yeh samay 20 se 50 din tak deti hain."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Minimum due button asal mein kya karta hai",
+    "visual": {
+     "card": null,
+     "prompt": "A large golden key lying on a credit card on a wooden table, soft spotlight, everything else blurred",
+     "type": "art"
+    },
+    "vo": "Socho, bank aapko lagbhag 50 din tak muft paisa de raha hai. Na byaaj, na koi fees. Bas shart hai, poora bill time par bharna hai. Yeh shart hi poore khel ki chaabi hai, isko yaad rakhiyega."
+   },
+   {
+    "facts_used": [],
+    "label": "Minimum due button asal mein kya karta hai",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI sitting on the edge of his bed holding his phone in one hand and a rent receipt in the other, worried frown, late evening",
+     "type": "art"
+    },
+    "vo": "Phir statement aaya. Bill phone ki keemat jitna tha. Salary aane mein abhi der thi, aur ghar ka kiraaya bhi dena tha. App ne ek aasaan raasta dikhaya, minimum due. Bill ka bas chhota sa hissa."
+   },
+   {
+    "facts_used": [],
+    "label": "Minimum due button asal mein kya karta hai",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI relieved, exhaling with a hand on his chest, a friendly-looking bank building drawn in a thought bubble above him, night",
+     "type": "art"
+    },
+    "vo": "Minimum due yaani woh chhoti rakam, jo bhar do toh bank defaulter nahi bolega. Late fees nahi lagegi, account chalta rahega. Bhai ko laga, bank khud yeh option de raha hai. Toh zaroor safe hoga."
+   },
+   {
+    "facts_used": [],
+    "label": "Minimum due button asal mein kya karta hai",
+    "visual": {
+     "card": null,
+     "prompt": "PAPA in a kurta holding a file of FD receipts, wagging a finger kindly, BHAI nodding beside him in the living room, afternoon",
+     "type": "art"
+    },
+    "vo": "Aur logic samajh bhi aata hai. Papa hamesha kehte the, kist time par bharo, record achha rahega. Bhai ne socha, minimum bhi toh time par bhar raha hoon. Baaki paisa agle mahine de dunga. Isme galat kya hai?"
+   },
+   {
+    "facts_used": [],
+    "label": "Minimum due button asal mein kya karta hai",
+    "visual": {
+     "card": null,
+     "prompt": "A phone screen with tiny fine print at the bottom under a magnifying glass, a small shadowy figure hiding in the fine print, dark moody lighting",
+     "type": "art"
+    },
+    "vo": "Galat woh hai jo app bada karke nahi likhti. Jaise hi poora bill nahi bhara, muft udhaar ka samay khatam. Sirf baaki paise par nahi, poore bill par byaaj lagta hai. Aur aksar kharidaari ke din se hi."
+   },
+   {
+    "facts_used": [],
+    "label": "Minimum due button asal mein kya karta hai",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI swiping his card at a kirana counter while a small red meter ticks up behind him unseen, SHOPKEEPER smiling, daytime",
+     "type": "art"
+    },
+    "vo": "Matlab Bhai ne jo socha tha, ulta hua. Usne socha tha, baaki rakam par thoda byaaj lagega. Asal mein naye kharche par bhi muft samay nahi milta. Jab tak purana bill saaf nahi, har nayi swipe par seedha byaaj."
+   },
+   {
+    "facts_used": [],
+    "label": "Byaaj par byaaj, aur upar se GST",
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt turning a big page in an illustrated book, thoughtful expression, warm lamp light",
+     "type": "art"
+    },
+    "vo": "Ab agla sawaal. Card ka byaaj itna bhaari kyun hai? Iske liye pehle Papa ki PPF wali soch samajhte hain. Kyunki wahi hamara normal hai, jis se hum har byaaj ko naapte hain."
+   },
+   {
+    "facts_used": [],
+    "label": "Byaaj par byaaj, aur upar se GST",
+    "visual": {
+     "card": null,
+     "prompt": "PAPA proudly opening a steel almirah and holding up a passbook, MUMMY in a saree smiling with a cup of chai behind him, soft morning light",
+     "type": "art"
+    },
+    "vo": "Papa ki almari mein PPF ki passbook hai. PPF par lagbhag 7.1 percent saal ka byaaj milta hai. Papa ise achha return maante hain. Ab ulta socho. Card par aap byaaj lete nahi, dete ho."
+   },
+   {
+    "facts_used": [],
+    "label": "Byaaj par byaaj, aur upar se GST",
+    "visual": {
+     "card": null,
+     "prompt": "A balance scale: on one side a small passbook, on the other a heavy glowing credit card pulling the scale down hard, plain background",
+     "type": "art"
+    },
+    "vo": "Aur card ka byaaj PPF wale byaaj se kai guna hota hai. Statement mein yeh mahine ke hisaab se likha hota hai. Mahine ka chhota sa percent, sunne mein halka lagta hai. Saal bhar jodo toh aankh khul jaati hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Byaaj par byaaj, aur upar se GST",
+    "visual": {
+     "card": null,
+     "prompt": "A paper bill drawn like a balloon slowly inflating with each passing month on a calendar behind it, BHAI watching nervously",
+     "type": "art"
+    },
+    "vo": "Upar se yeh byaaj compounding wala hai. Compounding yaani byaaj par bhi byaaj. Is mahine jo byaaj laga, woh agle mahine bill mein jud gaya. Agle mahine byaaj us bade bill par lagega. Bill har mahine thoda phool jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Byaaj par byaaj, aur upar se GST",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI scooping water out of a steel bucket with a small lota while a tap above keeps pouring water in, tired face, bathroom corner",
+     "type": "art"
+    },
+    "vo": "Socho karz ek balti hai, jise aap khaali karna chahte ho. Aap har mahine ek lota paani nikaalte ho. Par upar se nal khula hai, byaaj ka nal. Jitna nikaalo, utna wapas aa jaata hai. Balti kabhi khaali nahi hoti."
+   },
+   {
+    "facts_used": [],
+    "label": "Byaaj par byaaj, aur upar se GST",
+    "visual": {
+     "card": null,
+     "prompt": "A stack of coins labelled only by colour, a second smaller stack placed on top by a hand, layered like a tower, simple illustrated style",
+     "type": "art"
+    },
+    "vo": "Aur abhi kahani khatam nahi hui. Byaaj aur fees par sarkar GST bhi leti hai. GST yaani services par lagne wala tax. Card ke byaaj aur fees par yeh 18 percent hai. Yaani byaaj ke upar bhi tax."
+   },
+   {
+    "facts_used": [],
+    "label": "Byaaj par byaaj, aur upar se GST",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI holding a long printed statement that unrolls to the floor, squinting at it under a table lamp, night",
+     "type": "art"
+    },
+    "vo": "Ab Bhai ke statement ki lines padhiye. Finance charges, yaani byaaj. Uske neeche GST. Kabhi late fees, uspar phir GST. Bhai ko laga tha woh phone ki keemat chuka raha hai. Asal mein woh byaaj aur tax chuka raha tha."
+   },
+   {
+    "facts_used": [],
+    "label": "Byaaj par byaaj, aur upar se GST",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI looking at his phone with a shocked face at the office desk, a wall clock behind him, colleagues blurred, late afternoon",
+     "type": "art"
+    },
+    "vo": "Phir ek mahine salary der se aayi. Minimum due bhi miss ho gaya. Ab late fees lagi, uspar GST laga, aur byaaj toh chal hi raha tha. Thodi si der ne bill aur bada kar diya."
+   },
+   {
+    "facts_used": [],
+    "label": "Byaaj par byaaj, aur upar se GST",
+    "visual": {
+     "card": null,
+     "prompt": "BANK UNCLE behind a counter peering at a report card through his glasses, frowning slightly, BHAI waiting nervously on the other side",
+     "type": "art"
+    },
+    "vo": "Aur ek cheez chupchaap hoti hai. Late payment aapke credit score mein record ho jaata hai. Credit score yaani aapki udhaar wali report card. Kal ko home loan ya car loan lena ho, toh bank yahi dekhta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Bill saalon kyun chalta hai",
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt holding a coin up to the light, curious expression, simple chalkboard-style background",
+     "type": "art"
+    },
+    "vo": "Ab sabse bada sawaal. Bhai har mahine paisa bhar raha hai. Phir bhi bill khatam kyun nahi hota? Iska jawaab chhupa hai is baat mein, ki aapka bhara hua paisa jaata kahan hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Bill saalon kyun chalta hai",
+    "visual": {
+     "card": null,
+     "prompt": "A small pile of coins being sliced like a cake, most slices taken by hands from a bank window, only a thin slice left on the plate",
+     "type": "art"
+    },
+    "vo": "Jab aap minimum due bharte ho, bank pehle apna hissa kaatata hai. Pehle tax, phir fees, phir byaaj. Jo bachta hai, wahi asli udhaar se kam hota hai. Asli udhaar ko principal kehte hain, yaani jo aapne asal mein kharcha tha."
+   },
+   {
+    "facts_used": [],
+    "label": "Bill saalon kyun chalta hai",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI running hard on a treadmill, sweating, a credit card bill pinned on the wall in front of him that never gets closer, gym at night",
+     "type": "art"
+    },
+    "vo": "Minimum due chhota hai, aur byaaj ka hissa bada. Toh principal mein har mahine bas thoda farak padta hai. Jaise aap treadmill par daud rahe ho. Paseena poora aa raha hai, par jagah wahi ki wahi."
+   },
+   {
+    "facts_used": [],
+    "label": "Bill saalon kyun chalta hai",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI frozen in shock holding a statement, a long road stretching into the distance drawn behind him, dusk sky",
+     "type": "art"
+    },
+    "vo": "Kuch banks statement mein yeh bhi batate hain, ki sirf minimum bharoge toh bill kab khatam hoga. Bhai ne woh line pehli baar dhyan se padhi. Jawaab mahino mein nahi tha. Jawaab saalon mein tha."
+   },
+   {
+    "facts_used": [],
+    "label": "Bill saalon kyun chalta hai",
+    "visual": {
+     "card": null,
+     "prompt": "An old dusty phone in a drawer next to a fresh unpaid bill on top of it, cobwebs, gloomy light",
+     "type": "art"
+    },
+    "vo": "Socho, ek phone jo kuch saal mein purana ho jaayega. Uska karz shayad usse bhi lamba chalega. Naya phone aa jaayega, aur purane phone ki kist abhi bhi chal rahi hogi. Yahi hai minimum due ka asli jaal."
+   },
+   {
+    "facts_used": [],
+    "label": "Bill saalon kyun chalta hai",
+    "visual": {
+     "card": null,
+     "prompt": "A pile of envelopes, a medicine strip, a wedding gift envelope stacked on a table, BHAI's hand adding his card on top, evening",
+     "type": "art"
+    },
+    "vo": "Aur is beech zindagi rukti nahi. Agle mahine Mummy ki dawai, school ki fees, shaadi ka shagun. Thoda aur card par chala gaya. Purane bill par naya bill chadh gaya. Ab minimum due bhi bada dikhne laga."
+   },
+   {
+    "facts_used": [],
+    "label": "Bill saalon kyun chalta hai",
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY in a saree placing a cup of chai, worried eyes on BHAI who looks down at the floor, kitchen doorway, evening light",
+     "type": "art"
+    },
+    "vo": "Mummy ne chai rakhte hue poocha, beta, har mahine paisa kahan ja raha hai? Bhai ke paas jawaab nahi tha. Salary aati thi, aur pehle hafte mein card mein chali jaati thi. Bachat dheere dheere khatam ho gayi."
+   },
+   {
+    "facts_used": [],
+    "label": "Bill saalon kyun chalta hai",
+    "visual": {
+     "card": null,
+     "prompt": "Paper money flying out of an open window like birds, an empty piggy bank on the sill, BHAI reaching out too late, windy afternoon",
+     "type": "art"
+    },
+    "vo": "Yahi sabse badi keemat hai. Byaaj sirf bank ko nahi ja raha. Woh aapki bachat kha raha hai. Jo paisa SIP mein ja sakta tha, emergency fund ban sakta tha, woh har mahine byaaj mein ud raha hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Galti aur bahar nikalne ka raasta",
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt sitting across from BHAI at a dining table, calmly explaining with open hands, BHAI listening closely, warm lamp light",
+     "type": "art"
+    },
+    "vo": "Toh galti kahan hui? Galti phone kharidna nahi thi. Galti thi minimum due ko bill bharna samajhna. Minimum due bill bharna nahi hai. Woh bas bank ko batana hai, ki main abhi bhaaga nahi hoon."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Galti aur bahar nikalne ka raasta",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI pressing a large green button on his phone with a confident smile, the red meter in the background switching off, morning light",
+     "type": "art"
+    },
+    "vo": "Ab bahar kaise niklein? Sabse seedha raasta, poora bill bharo, har baar. Card utna hi chalao, jitna mahine ke end tak chuka sako. Tab woh 50 din tak ka muft udhaar sach mein aapke kaam aata hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Galti aur bahar nikalne ka raasta",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI talking to BANK UNCLE at a counter, BANK UNCLE drawing a neat staircase on paper, both looking hopeful, daytime bank branch",
+     "type": "art"
+    },
+    "vo": "Agar bill bada hai aur ek saath nahi bhar sakte, toh use EMI mein badlo. Bank se baat karo, ya app mein option dhoondo. EMI yaani fixed kist, fixed samay. Byaaj aksar kam, aur end kab hoga, pehle se pata."
+   },
+   {
+    "facts_used": [],
+    "label": "Galti aur bahar nikalne ka raasta",
+    "visual": {
+     "card": null,
+     "prompt": "A heavy sack being carried across a narrow bridge from one cliff to another, a small sign-less warning triangle beside the bridge, BEHEN watching sceptically",
+     "type": "art"
+    },
+    "vo": "Ek aur raasta hai balance transfer. Yaani purana bill kisi aur card par shift karna, jahan kuch samay kam byaaj ho. Iski fees aur sharten dhyan se padho. Warna ek jaal se nikal kar naye jaal mein pahunch jaoge."
+   },
+   {
+    "facts_used": [],
+    "label": "Galti aur bahar nikalne ka raasta",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI cutting a long chain with big scissors, the chain attached to a credit card, relieved expression, bright daylight",
+     "type": "art"
+    },
+    "vo": "Ya phir personal loan lekar card ka poora bill ek saath chuka do. Personal loan ka byaaj bhi kam nahi hota, par aksar card se halka padta hai. Aur loan ke baad card ko phir se bharna shuru mat karo."
+   },
+   {
+    "facts_used": [],
+    "label": "Galti aur bahar nikalne ka raasta",
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN in office wear setting up something on her phone with a calm smile, a neat planner on her desk, morning sun through the window",
+     "type": "art"
+    },
+    "vo": "Ek chhoti si aadat bhi kaam aati hai. Card ka auto-debit poore bill par lagao, minimum par nahi. Behen yahi karti hai, uska card suvidha hai, karz nahi. Yeh investment advice nahi hai, bas hisaab ki seedhi baat hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Galti aur bahar nikalne ka raasta",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI standing at a fork in a road at sunrise, one path dark and looping, the other straight and bright, he steps toward the bright one",
+     "type": "art"
+    },
+    "vo": "Kahani ka nichod yeh hai. Minimum due ek suvidha hai, raasta nahi. Woh aaj ki pareshani se bachata hai, par kal ka bill bada kar deta hai. Jis din poora bill bharna mushkil lage, raasta badlo, button nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "Galti aur bahar nikalne ka raasta",
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt holding a gift box with a question mark ribbon, playful raised eyebrow, festive lights in the background",
+     "type": "art"
+    },
+    "vo": "Agli video mein ek aur jaal kholenge, jo is festive season mein har jagah dikhta hai. No cost EMI. Kya woh sach mein no cost hota hai? Tab tak apna card statement dhyan se padhiye, khaaskar chhote akshar."
+   },
+   {
+    "facts_used": [],
+    "label": "Galti aur bahar nikalne ka raasta",
+    "visual": {
+     "card": null,
+     "prompt": "The whole family, PAPA, MUMMY, BHAI and BEHEN, gathered on a sofa looking at one phone together and smiling, warm evening light",
+     "type": "art"
+    },
+    "vo": "Ab aap batao, comments mein seedha jawaab. Aapne kabhi sirf minimum due bhara hai? Haan ya na, bas itna likh do. Kisi ki aisi kahani pata ho, toh woh bhi likhna, doosron ke kaam aayegi."
+   }
+  ],
+  "thumbnail": {
+   "scene": "BHAI stares at his phone glowing with a long credit card statement late at night, eyes wide, mouth open",
+   "words": [
+    "50 DIN",
+    "GAYAB"
+   ]
+  },
+  "title": "*Minimum due* bhara, phir bhi karz badha 💳"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  14.93,
+  35.82,
+  50.39,
+  64.96,
+  77.89,
+  92.3,
+  106.43,
+  118.44,
+  131.49,
+  145.38,
+  157.51,
+  169.8,
+  182.13,
+  200.46,
+  211.03,
+  231.36,
+  244.29,
+  258.7,
+  274.87,
+  289.84,
+  307.17,
+  319.58,
+  333.19,
+  345.0,
+  359.05,
+  370.42,
+  383.31,
+  397.44,
+  412.37,
+  426.06,
+  438.59,
+  451.24,
+  464.01,
+  477.34,
+  497.51,
+  509.96,
+  523.57,
+  538.02,
+  552.91
+ ],
+ "topic": {
+  "hooks": [
+   "Minimum due bharne par kitna byaaj lagta hai?",
+   "Bill 4 saal kyun nahi khatam hota?",
+   "Card ka byaaj loan se zyada kyun?"
+  ],
+  "id": "credit-card-minimum-due",
+  "summary": "What happens when a cardholder pays only the minimum due: the interest-free period ends, interest of 36-42% a year compounds on the whole balance, late fees; how long a bill takes to clear paying minimum only; how to escape (pay in full, convert to EMI, balance transfer).",
+  "target_minutes": 12,
+  "title": "Credit card ka 'minimum due' button: 40,000 ka bill 4 saal kaise chalta hai",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-10-21T23:16:40+00:00",
+ "writer": "claude"
+}
