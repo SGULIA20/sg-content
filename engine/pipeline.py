@@ -1,5 +1,6 @@
 """One piece from topic to scheduled upload, every step behind an injectable function (spec §3 steps 1-10, §7)."""
 import json
+import re
 import shutil
 from dataclasses import dataclass, field
 from datetime import date
@@ -7,13 +8,14 @@ from pathlib import Path
 from typing import Callable
 
 from . import art, assemble, buffer, cards, cartoon, cast, claims, gemini, lint, pieces, qa, research, secrets, slots, storyframe, topics, voice, writer, youtube
-from .config import CHANNELS, ROOT, VIDEO
+from .config import CHANNELS, ROOT, STORY_WORDS, VIDEO
 from .pieces import Piece
 
 TOPIC_TRIES = 3
 def is_story(piece: Piece) -> bool:
     from .config import is_story as _is
     return _is(piece.channel, piece.kind)
+QA_TOO_LONG = re.compile(r"duration: ([\d.]+)s, allowed [\d.]+-([\d.]+)s")
 RESUMABLE = {"written", "voiced", "drawn", "assembled", "failed-voice", "failed-art", "qa_failed"}
 HANDLE = "@sanjeev_gulia"
 LONG_TARGET_MINUTES = {"sglearning": 12, "arthvan": 14}
@@ -159,6 +161,12 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
     # 1-4: topic → research → write → gates, up to three topics (skipped when an accepted script already exists: resume)
     script = piece.script if (piece.script and piece.status in RESUMABLE) else None
     sheet, revise = None, None
+    carried = piece.topic.pop("rewrite", None) if script is None else None
+    if carried and (piece.topic.get("title") or piece.topic.get("long_scenes")):
+        sheet = {"facts": piece.facts, "summary": ""}             # a video that came out too long: same topic, shorter script
+        if piece.topic.get("long_scenes"):
+            sheet.update(long_scenes=piece.topic["long_scenes"], hook=piece.topic.get("hook"))
+        revise = carried
     for attempt in range(TOPIC_TRIES if script is None else 0):
         if revise is None:                                             # a fresh topic (a length-only miss keeps the topic and asks for a trim)
             topic = _pick_topic(piece, deps, root, used)
@@ -201,7 +209,8 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
             break
         pieces.transition(piece, "rejected", f"try {attempt + 1}: " + "; ".join(reasons))
         pieces.save(piece, root)
-        fixable = ("length", "label", "card", "hashtags", "disclaimer", "title", "threads", "instagram")
+        fixable = ("length", "label", "card", "hashtags", "disclaimer", "title", "threads", "instagram",
+                   "numbers without a source")                     # same topic: drop those numbers or use the fact sheet's
         revise = "; ".join(reasons) if all(r.startswith(fixable) for r in reasons) else None      # formatting misses: same topic, trimmed draft
     if script is None:
         return piece
@@ -261,6 +270,15 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
     problems = deps.qa(video, piece.kind, sum(d for _w, d in lines), cues, target_seconds=target, story=is_story(piece),
                        check_freeze=not is_story(piece))                 # a story panel's slow push-in is calm by design, not a frozen frame
     if problems:
+        too_long = next((m for m in map(QA_TOO_LONG.match, problems) if m and float(m.group(1)) > float(m.group(2))), None)
+        if too_long:                                                   # the same script and cached voice would fail again forever:
+            dur, hi = float(too_long.group(1)), float(too_long.group(2))     # rewrite shorter, scaled to how fast this voice spoke
+            words = sum(len(sc["vo"].split()) for sc in script["scenes"])
+            lo_words = (STORY_WORDS if is_story(piece) else lint.SHORT_WORDS)[0]
+            cap = max(lo_words, int(words * (hi * 0.9) / dur))
+            piece.topic["rewrite"] = (f"length: the voiced video ran {dur:.0f}s, the limit is {hi:.0f}s; "
+                                      f"rewrite the same story in at most {cap} words of voice in total")
+            piece.script = None
         pieces.save(pieces.transition(piece, "qa_failed", "; ".join(problems)), root)
         return piece
     if dry_run:
@@ -312,6 +330,7 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
     return Deps(topic=topic_fn, research=lambda topic, ch: research.verify_urls(research.fact_sheet(topic, ch)), write=writer.write, say=voice.say, paint=art.paint, avatar=art.avatar,
                 render_card=cards.render, build=assemble.build, qa=qa.report, upload=upload_fn,
                 lint=lambda piece, prior: lint.check_script(piece, banned, prior) + lint.check_captions(piece, hashtags),
-                claims_check=lambda piece: claims.match(lint.all_text(piece), piece.facts, library),
+                claims_check=lambda piece: claims.match(lint.all_text(piece), piece.facts, library,
+                                                        context=(piece.topic.get("title"), piece.topic.get("title_hi"))),
                 commons=art.commons_photo, library=library, hashtags=hashtags, voice_id=default_voice,
                 cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for, subtitles=subtitles_fn)

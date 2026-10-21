@@ -417,3 +417,33 @@ def test_one_crashing_piece_never_stops_the_run(tmp_path, monkeypatch):
     code = produce.run(tmp_path, date(2026, 10, 20), max_pieces=2, dry_run=True, only={"sglearning:short"}, deps=d, notify=texts.append)
     assert code == 1 and len(order) == 2                                   # the second piece was still made
     assert pieces.load(order[0], tmp_path).status == "failed-crash"
+
+
+def test_unsourced_numbers_get_a_rewrite_on_the_same_topic(tmp_path):
+    seen = []
+
+    def write_fn(piece, sheet, library, hashtags):
+        seen.append(piece.topic.get("revise"))
+        return {"script": good_script(), "writer": "claude", "note": ""}
+    checks = iter([[11.0], []])
+    d, calls = deps(tmp_path, write=write_fn, claims_check=lambda piece: next(checks))
+    p = pipeline.make(_piece(), d, tmp_path, dry_run=True)
+    assert calls["topics"] == 1 and calls["research"] == 1                 # no new topic, no new research
+    assert seen[0] is None and "numbers without a source: 11" in seen[1]
+    assert p.status == "assembled"
+
+
+def test_too_long_video_is_rewritten_shorter_not_retried_forever(tmp_path):
+    d, calls = deps(tmp_path, qa=lambda path, kind, voiced, cues, **kw: ["duration: 113.2s, allowed 40-95s"])
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert p.status == "qa_failed" and p.script is None and "at most" in p.topic["rewrite"]
+    notes = []
+
+    def write_fn(piece, sheet, library, hashtags):
+        notes.append(piece.topic.get("revise"))
+        return {"script": good_script(), "writer": "claude", "note": ""}
+    d2, calls2 = deps(tmp_path, write=write_fn)
+    p.status = "planned"                                                     # what produce does for a piece without a script
+    p = pipeline.make(p, d2, tmp_path, dry_run=True)
+    assert calls2["topics"] == 0 and calls2["research"] == 0                 # same topic, same facts
+    assert notes[0].startswith("length: the voiced video ran 113s") and p.status == "assembled"
