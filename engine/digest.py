@@ -6,7 +6,7 @@ from pathlib import Path
 from . import pieces, slots, telegram
 from .config import BUDGETS, CHANNELS, ROOT, today_ist
 
-BUFFER_ALERT_DAYS = 2
+BUFFER_ALERT_DAYS = 4                 # founder, 21 Oct 2026: always keep 4-5 days in hand; below 4 is an alert
 TOKEN_ALERT_DAYS = 7
 
 

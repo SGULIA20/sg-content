@@ -146,7 +146,7 @@ Total about ₹2,000-2,500 a month, inside the Plan-v4 estimate. Requests per da
 - Comment replies (no automated replies; the weekly report lists top comments for the founder).
 - Languages other than Hindi/Hinglish; multi-language audio tracks.
 - Changing the app Shorts routing in arthvan-media (separate repo, separate yes).
-- Facebook, LinkedIn, WhatsApp.
+- Facebook, WhatsApp. (LinkedIn is now in scope: see docs/decisions.md.)
 
 ## 11. Founder actions before build
 1. Anthropic API key with prepaid credits (console.anthropic.com → Billing → add $20; → API keys → create "sg-content"). Save as `~/Desktop/SG-Content-Project/keys/anthropic.key` (one line).

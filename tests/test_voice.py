@@ -119,3 +119,28 @@ def test_say_uses_prebuilt_voice_names_through_generate_content(tmp_path):
     d = voice.say("Namaste.", "Puck", tmp_path / "a.wav", key="k", cache_dir=tmp_path / "c", budget=tmp_path / "b.json", post=post)
     assert seen["url"].endswith(":generateContent") and seen["body"]["generationConfig"]["speechConfig"]["voiceConfig"]["prebuiltVoiceConfig"]["voiceName"] == "Puck"
     assert d == pytest.approx(1.0, abs=0.05)
+
+
+def test_rate_limit_waits_and_retries_without_spending_budget(tmp_path):
+    calls, slept = [], []
+    ok = FakePost()
+
+    def post(url, body, key):
+        calls.append(url)
+        if len(calls) == 1:
+            return 429, {"error": {"message": "Rate limit exceeded. Please retry in 58s or upgrade your tier."}}
+        return ok(url, body, key)
+    d = voice.say("Ek line.", "voice_x", tmp_path / "a.wav", key="k", cache_dir=tmp_path / "c", budget=tmp_path / "b.json",
+                  post=post, today=date(2026, 10, 21), sleep=slept.append)
+    assert d == pytest.approx(1.5) and len(calls) == 2 and slept == [59.0]
+    assert voice.requests_today(tmp_path / "b.json", date(2026, 10, 21)) == 1          # the refused request is not counted
+
+
+def test_lines_are_paced_under_ten_a_minute(tmp_path, monkeypatch):
+    monkeypatch.setattr(voice, "MIN_GAP_S", 6.5)
+    now = [100.0]; slept = []
+    sleep = lambda s: (slept.append(round(s, 1)), now.__setitem__(0, now[0] + s))
+    kw = dict(key="k", cache_dir=tmp_path / "c", budget=tmp_path / "b.json", post=FakePost(), today=date(2026, 10, 21), sleep=sleep, clock=lambda: now[0])
+    voice.say("one", "voice_x", tmp_path / "1.wav", **kw)
+    voice.say("two", "voice_x", tmp_path / "2.wav", **kw)
+    assert slept == [6.5]

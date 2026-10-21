@@ -38,12 +38,27 @@ class FakeMessages:
     def __init__(self, text=None, stop_reason="end_turn", raise_exc=None):
         self.text, self.stop_reason, self.raise_exc, self.calls = text, stop_reason, raise_exc, []
 
-    def create(self, **kw):
+    def stream(self, **kw):
         self.calls.append(kw)
         if self.raise_exc:
             raise self.raise_exc
-        return SimpleNamespace(stop_reason=self.stop_reason, content=[SimpleNamespace(type="text", text=self.text or "")],
-                               usage=SimpleNamespace(input_tokens=5000, output_tokens=1500))
+        msg = SimpleNamespace(stop_reason=self.stop_reason, content=[SimpleNamespace(type="text", text=self.text or "")],
+                              usage=SimpleNamespace(input_tokens=5000, output_tokens=1500))
+        return FakeStream(msg)
+
+
+class FakeStream:
+    def __init__(self, msg):
+        self.msg = msg
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *a):
+        return False
+
+    def get_final_message(self):
+        return self.msg
 
 
 def fake_client(messages):
@@ -56,7 +71,8 @@ def test_request_uses_opus_schema_and_fallbacks(tmp_path):
     out = writer.write(p, {"facts": [], "summary": ""}, [], {}, formula="FORMULA", client=fake_client(fm), spend=tmp_path / "s.json")
     kw = fm.calls[0]
     assert kw["model"] == "claude-opus-5-5"
-    assert kw["output_config"]["format"] == {"type": "json_schema", "schema": schema.PIECE_SCHEMA}
+    assert kw["output_config"]["format"] == {"type": "json_schema", "schema": schema.api_schema(schema.PIECE_SCHEMA)}
+    assert kw["max_tokens"] >= 64000
     assert kw["output_config"]["effort"] == "high"
     assert kw["betas"] == ["server-side-fallback-2026-07-01"] and kw["fallbacks"] == "default"
     assert kw["system"][0]["cache_control"] == {"type": "ephemeral"} and "FORMULA" in kw["system"][0]["text"]
@@ -151,3 +167,43 @@ def test_claude_writes_shorts_and_longs(tmp_path):
     p.kind = "long"
     out = writer.write(p, {"facts": []}, [], {}, formula="F", client=fake_client(fm), gemini_ask=g, spend=tmp_path / "s.json")
     assert out["writer"] == "claude"
+
+
+def _keys(sch):
+    if isinstance(sch, dict):
+        for k, v in sch.items():
+            yield k, v
+            if k == "properties":
+                for pv in v.values():
+                    yield from _keys(pv)
+            else:
+                yield from _keys(v)
+    elif isinstance(sch, list):
+        for s in sch:
+            yield from _keys(s)
+
+
+def test_schema_sent_to_claude_has_no_keyword_the_api_rejects():
+    """21 Oct 2026: maxItems in the thumbnail words made every Claude call a 400 and Gemini wrote everything."""
+    sent = schema.api_schema(schema.PIECE_SCHEMA)
+    bad = [(k, v) for k, v in _keys(sent) if k in schema.UNSUPPORTED or (k == "minItems" and v not in (0, 1))]
+    assert bad == []
+    assert schema.validate({**good_script(), "thumbnail": {"words": ["A", "B", "C", "D"], "scene": "x"}}) != []   # still enforced locally
+
+
+def test_cut_off_gemini_reply_is_a_writer_error_not_a_crash(tmp_path):
+    fm = FakeMessages(raise_exc=RuntimeError("claude down"))
+    full = json.dumps(good_script()); cut = full[:len(full) // 2]       # a reply cut off mid-string, as on 21 Oct
+    g = lambda model, body, key=None: {"candidates": [{"content": {"parts": [{"text": cut}]}}]}
+    p = _piece(); p.kind = "long"
+    with pytest.raises(writer.WriterError) as e:
+        writer.write(p, {"facts": []}, [], {}, formula="F", client=fake_client(fm), gemini_ask=g, spend=tmp_path / "s.json")
+    assert "claude failed" in str(e.value) and "gemini failed" in str(e.value)
+
+
+def test_claude_cut_off_at_max_tokens_falls_back(tmp_path):
+    fm = FakeMessages(text=json.dumps(good_script())[:500], stop_reason="max_tokens")
+    g = lambda model, body, key=None: {"candidates": [{"content": {"parts": [{"text": json.dumps(good_script())}]}}]}
+    p = _piece(); p.kind = "long"
+    out = writer.write(p, {"facts": []}, [], {}, formula="F", client=fake_client(fm), gemini_ask=g, spend=tmp_path / "s.json")
+    assert out["writer"] == "gemini" and "cut off" in out["note"]

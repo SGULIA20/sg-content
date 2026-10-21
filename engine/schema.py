@@ -39,6 +39,26 @@ PIECE_SCHEMA = {
     },
 }
 
+# Claude structured outputs reject these JSON-Schema keywords (a 400 for the whole request, 21 Oct 2026: maxItems);
+# api_schema() drops them from what is sent and validate() still enforces them here.
+UNSUPPORTED = {"maxItems", "minLength", "maxLength", "minimum", "maximum", "exclusiveMinimum", "exclusiveMaximum",
+               "multipleOf", "pattern", "uniqueItems", "minProperties", "maxProperties"}
+
+
+def api_schema(sch):
+    """A copy of the schema that Claude's output_config.format accepts: unsupported keywords removed, minItems kept only as 0 or 1."""
+    if isinstance(sch, list):
+        return [api_schema(s) for s in sch]
+    if not isinstance(sch, dict):
+        return sch
+    out = {}
+    for k, v in sch.items():
+        if k in UNSUPPORTED or (k == "minItems" and v not in (0, 1)):
+            continue
+        out[k] = {pk: api_schema(pv) for pk, pv in v.items()} if k == "properties" else api_schema(v)
+    return out
+
+
 _TYPES = {"object": dict, "array": list, "string": str, "integer": int, "boolean": bool, "null": type(None)}
 
 
@@ -64,6 +84,8 @@ def validate(obj, sch: dict = PIECE_SCHEMA, path: str = "$") -> list:
             elif not sch.get("additionalProperties", True):
                 errors.append(f"{path}.{key}: unexpected key")
     if t == "array":
+        if len(obj) < sch.get("minItems", 0) or len(obj) > sch.get("maxItems", len(obj)):
+            errors.append(f"{path}: {len(obj)} items, allowed {sch.get('minItems', 0)}-{sch.get('maxItems', 'any')}")
         for i, item in enumerate(obj):
             errors += validate(item, sch["items"], f"{path}[{i}]")
     return errors

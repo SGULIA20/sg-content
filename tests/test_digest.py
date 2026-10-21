@@ -36,10 +36,12 @@ def test_buffer_days_per_channel(tmp_path):
     assert b["sglearning"] == 2 and b["arthvan"] == 1            # arthvan: Wed 21 Oct short ready; Fri 23 not
 
 
-def test_alert_when_buffer_under_two_days(tmp_path):
+def test_alert_when_buffer_under_four_days(tmp_path, monkeypatch):
     _seed(tmp_path)
     alerts = digest.alerts(tmp_path, date(2026, 10, 20))
-    assert any("arthvan" in a and "buffer" in a for a in alerts)
+    assert any("arthvan" in a and "buffer" in a for a in alerts) and any("sglearning" in a and "buffer" in a for a in alerts)   # 1 and 2 days < 4
+    monkeypatch.setattr(digest, "BUFFER_ALERT_DAYS", 2)
+    alerts = digest.alerts(tmp_path, date(2026, 10, 20))
     assert not any("sglearning" in a and "buffer" in a for a in alerts)
 
 

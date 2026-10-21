@@ -381,3 +381,39 @@ def test_make_picks_voice_from_pool_per_piece(tmp_path, monkeypatch):
     d, calls = deps(tmp_path, say=say_fn)
     pipeline.make(_piece("long"), d, tmp_path)
     assert heard and set(heard) == {"voice_pool_-long"}
+
+
+def test_writer_failure_marks_the_piece_instead_of_crashing(tmp_path):
+    from engine import writer
+
+    def boom(piece, sheet, library, hashtags):
+        raise writer.WriterError("claude failed: 400; gemini failed: JSONDecodeError")
+    d, calls = deps(tmp_path, write=boom)
+    p = pipeline.make(_piece("long"), d, tmp_path)
+    assert p.status == "failed-write" and "gemini failed" in p.reasons[-1] and calls["say"] == 0
+
+
+def test_claude_fallback_is_recorded_on_the_piece(tmp_path):
+    d, calls = deps(tmp_path, write=lambda piece, sheet, library, hashtags: {"script": good_script(), "writer": "gemini", "note": "claude failed: BadRequestError: 400"})
+    p = pipeline.make(_piece(), d, tmp_path, dry_run=True)
+    assert p.writer == "gemini" and any(r.startswith("claude failed") for r in p.reasons)
+
+
+def test_one_crashing_piece_never_stops_the_run(tmp_path, monkeypatch):
+    """21 Oct 2026: the long's crash ended the run; the pieces after it were never tried."""
+    from engine import produce
+    order = []
+    real = pipeline.make
+
+    def make(piece, deps_, root, **kw):
+        order.append(piece.id)
+        if len(order) == 1:
+            raise ValueError("unexpected")
+        return real(piece, deps_, root, **kw)
+    monkeypatch.setattr(pipeline, "make", make)
+    monkeypatch.setattr(produce.gitsync, "safe_commit", lambda root, msg: "")
+    d, calls = deps(tmp_path)
+    texts = []
+    code = produce.run(tmp_path, date(2026, 10, 20), max_pieces=2, dry_run=True, only={"sglearning:short"}, deps=d, notify=texts.append)
+    assert code == 1 and len(order) == 2                                   # the second piece was still made
+    assert pieces.load(order[0], tmp_path).status == "failed-crash"
