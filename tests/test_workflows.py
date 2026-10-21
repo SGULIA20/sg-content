@@ -93,3 +93,10 @@ def test_gitsync_enabled_by_either_flag():
     from engine import gitsync
     assert gitsync.enabled({"SG_PUSH_FROM_MAC": "1"}) and gitsync.enabled({"SG_COMMIT_EACH": "1"}) and gitsync.enabled({"GITHUB_ACTIONS": "true"})
     assert not gitsync.enabled({})
+
+
+def test_evening_scorecard_is_sent_before_seven_pm_lagos():
+    data = yaml.safe_load((ROOT / ".github" / "workflows" / "evening.yml").read_text())
+    crons = [s["cron"] for s in (data.get(True) or data.get("on"))["schedule"]]
+    assert crons == ["35 17 * * *", "55 17 * * *"]                                    # 18:35 and 18:55 WAT; founder wants it by 19:00 WAT
+    assert "engine.evening --send" in " ".join(s.get("run", "") for s in data["jobs"]["evening"]["steps"])
