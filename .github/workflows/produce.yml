@@ -17,6 +17,9 @@ on:
       max:
         description: 'pieces to make this run'
         default: '3'
+      only:
+        description: 'channel:kind list, e.g. sglearning:short (blank = everything the buffer needs)'
+        default: ''
 
 permissions:
   contents: write
@@ -55,6 +58,10 @@ jobs:
         run: |
           git config user.name "sg-content-bot"
           git config user.email "sg-content-bot@users.noreply.github.com"
+      - name: Tell the control room this run started
+        env:
+          SG_COMMAND_KEY: ${{ secrets.SG_COMMAND_KEY }}
+        run: python -m engine.command_center --report produce-start
       - name: Make what the buffer needs (each finished piece is committed and pushed at once)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -65,14 +72,22 @@ jobs:
           YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SG_COMMAND_KEY: ${{ secrets.SG_COMMAND_KEY }}
+          ONLY: ${{ github.event.inputs.only }}
           UNLISTED_DAY1: ${{ github.event.inputs.unlisted == 'true' && '1' || '' }}
         run: |
           ARGS="--max ${{ github.event.inputs.max || '3' }}"
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          if [ -n "$ONLY" ]; then ARGS="$ARGS --only $ONLY"; fi
           python -m engine.produce $ARGS
       - name: Prune media older than 14 days
         if: always()
         run: python scripts/prune_out.py --days 14
+      - name: Tell the control room how it went
+        if: always()
+        env:
+          SG_COMMAND_KEY: ${{ secrets.SG_COMMAND_KEY }}
+        run: python -m engine.command_center --report produce-end
       - name: Commit anything still uncommitted (pieces, media, logs) and push
         if: always()
         run: |

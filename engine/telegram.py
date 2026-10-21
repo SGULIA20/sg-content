@@ -76,10 +76,14 @@ def pause_file(root: Path = ROOT) -> Path:
 
 
 def paused(root: Path = ROOT) -> bool:
-    return pause_file(root).exists()
+    """Paused from Telegram (logs/pause.json) or from the control page (engine.command_center)."""
+    from . import command_center
+    return pause_file(root).exists() or command_center.remote_paused(root)
 
 
 def set_paused(flag: bool, root: Path = ROOT) -> None:
+    from . import command_center
+    command_center.set_remote_paused(flag, root)
     f = pause_file(root)
     if flag:
         f.parent.mkdir(parents=True, exist_ok=True)
