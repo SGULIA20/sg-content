@@ -1,0 +1,57 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.84,Default,,0,0,0,,Kurukshetra ke pattharon par Abhimanyu ke
+Dialogue: 0,0:00:02.84,0:00:04.06,Default,,0,0,0,,Chakravyuh ka naksha?
+Dialogue: 0,0:00:04.06,0:00:05.48,Default,,0,0,0,,Drona Parva kehta hai,
+Dialogue: 0,0:00:05.48,0:00:07.92,Default,,0,0,0,,Dronacharya ne Kaurav sena gol ghere
+Dialogue: 0,0:00:07.92,0:00:08.53,Default,,0,0,0,,mein sajayi.
+Dialogue: 0,0:00:08.98,0:00:11.83,Default,,0,0,0,,Yeh patthar ka maze nahi,
+Dialogue: 0,0:00:11.83,0:00:13.61,Default,,0,0,0,,ghoomti sena thi.
+Dialogue: 0,0:00:13.61,0:00:17.52,Default,,0,0,0,,Abhimanyu andar jaana jaanta tha,
+Dialogue: 0,0:00:17.52,0:00:20.02,Default,,0,0,0,,bahar nikalna nahi.
+Dialogue: 0,0:00:20.47,0:00:25.73,Default,,0,0,0,,ASI yaani Archaeological Survey of India,
+Dialogue: 0,0:00:25.73,0:00:28.36,Default,,0,0,0,,sarkari khudai sanstha,
+Dialogue: 0,0:00:28.36,0:00:30.99,Default,,0,0,0,,Bhagwanpura pahunchi.
+Dialogue: 0,0:00:31.44,0:00:33.46,Default,,0,0,0,,Mitti mein Harappa ke aakhri daur
+Dialogue: 0,0:00:33.46,0:00:34.48,Default,,0,0,0,,ke nishaan mile.
+Dialogue: 0,0:00:34.48,0:00:35.89,Default,,0,0,0,,Saath mein Painted Grey Ware,
+Dialogue: 0,0:00:35.89,0:00:38.53,Default,,0,0,0,,yaani kaale design wale saleti bartan.
+Dialogue: 0,0:00:38.98,0:00:43.18,Default,,0,0,0,,Amin gaon ke Abhimanyu-khera teele se
+Dialogue: 0,0:00:43.18,0:00:46.42,Default,,0,0,0,,Brahmi lipi wali mohar mili.
+Dialogue: 0,0:00:46.87,0:00:50.08,Default,,0,0,0,,Par pattharon par khuda Chakravyuh ka
+Dialogue: 0,0:00:50.08,0:00:53.01,Default,,0,0,0,,koi purana naksha nahi mila.
+Dialogue: 0,0:00:53.01,0:00:56.23,Default,,0,0,0,,Jyotisar ka zameen wala naksha aaj
+Dialogue: 0,0:00:56.23,0:00:57.40,Default,,0,0,0,,ka banaya hai.
+Dialogue: 0,0:00:57.85,0:00:58.92,Default,,0,0,0,,Yuddh hua kab?
+Dialogue: 0,0:00:58.92,0:01:05.00,Default,,0,0,0,,Parampara aur khagol-ganana ise 3102 BCE
+Dialogue: 0,0:01:05.00,0:01:06.43,Default,,0,0,0,,ka maante hain.
+Dialogue: 0,0:01:06.88,0:01:08.24,Default,,0,0,0,,Puratatvavid B.B.
+Dialogue: 0,0:01:08.24,0:01:10.30,Default,,0,0,0,,Lal yuddh ko lagbhag 800 BCE
+Dialogue: 0,0:01:10.30,0:01:11.44,Default,,0,0,0,,ka bataate hain.
+Dialogue: 0,0:01:11.44,0:01:13.03,Default,,0,0,0,,Har paksh ke apne tark hain.
+Dialogue: 0,0:01:13.48,0:01:16.27,Default,,0,0,0,,Kuch vidwan Chakravyuh ko asli yuddh
+Dialogue: 0,0:01:16.27,0:01:17.66,Default,,0,0,0,,ki chaal maante hain.
+Dialogue: 0,0:01:17.66,0:01:18.77,Default,,0,0,0,,Kuch kehte hain,
+Dialogue: 0,0:01:18.77,0:01:22.11,Default,,0,0,0,,yeh Arthashastra jaise yuddh-granthon se aaya.
+Dialogue: 0,0:01:22.11,0:01:26.01,Default,,0,0,0,,Arthashastra yaani rajneeti ka purana granth.
+Dialogue: 0,0:01:26.46,0:01:27.15,Default,,0,0,0,,Twist yeh,
+Dialogue: 0,0:01:27.15,0:01:30.96,Default,,0,0,0,,Amin ke log teele ko Abhimanyu
+Dialogue: 0,0:01:30.96,0:01:33.04,Default,,0,0,0,,ka maidan kehte hain.
+Dialogue: 0,0:01:33.04,0:01:34.77,Default,,0,0,0,,Yeh lok-katha hai,
+Dialogue: 0,0:01:34.77,0:01:36.85,Default,,0,0,0,,likha sabut nahi.
+Dialogue: 0,0:01:37.30,0:01:42.09,Default,,0,0,0,,Aap Jyotisar aur Amin ka teela
+Dialogue: 0,0:01:42.09,0:01:44.97,Default,,0,0,0,,aaj bhi dekh sakte hain.
+Dialogue: 0,0:01:45.42,0:01:47.91,Default,,0,0,0,,Aapke hisaab se Chakravyuh asli chaal
+Dialogue: 0,0:01:47.91,0:01:48.13,Default,,0,0,0,,thi,
+Dialogue: 0,0:01:48.13,0:01:49.71,Default,,0,0,0,,ya kavi ki kalpana?
