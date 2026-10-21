@@ -7,7 +7,7 @@ from datetime import date
 from pathlib import Path
 from typing import Callable
 
-from . import art, assemble, buffer, cards, cartoon, cast, claims, gemini, lint, pieces, qa, research, secrets, slots, storyframe, topics, voice, voicebatch, writer, youtube
+from . import art, artbatch, assemble, buffer, cards, cartoon, cast, claims, gemini, lint, pieces, qa, research, secrets, slots, storyframe, topics, voice, voicebatch, writer, youtube
 from .config import CHANNELS, ROOT, STORY_WORDS, VIDEO
 from .pieces import Piece
 
@@ -16,7 +16,7 @@ def is_story(piece: Piece) -> bool:
     from .config import is_story as _is
     return _is(piece.channel, piece.kind)
 QA_TOO_LONG = re.compile(r"duration: ([\d.]+)s, allowed [\d.]+-([\d.]+)s")
-RESUMABLE = {"written", "voicing", "voiced", "drawn", "assembled", "failed-voice", "failed-art", "qa_failed"}
+RESUMABLE = {"written", "voicing", "voiced", "painting", "drawn", "assembled", "failed-voice", "failed-art", "qa_failed"}
 HANDLE = "@sanjeev_gulia"
 LONG_TARGET_MINUTES = {"sglearning": 12, "arthvan": 14}
 
@@ -47,6 +47,7 @@ class Deps:
     subtitles: Callable = None   # (piece, out_dir, video) -> writes SRTs and adds YouTube caption tracks (longs)
     voice_lines: Callable = None # (texts, voice_id, out_dir) -> [(wav, seconds)]: batched synthesis (several scenes per request)
     voice_batch: Callable = None # (piece, texts, voice_id) -> "ready" | "voicing": Gemini Batch API fills the voice cache (half price, no daily cap)
+    art_batch: Callable = None   # (piece, jobs) -> "ready" | "painting": Gemini Batch API fills the picture cache at half price
 
 
 def _jsonable(d: dict) -> dict:
@@ -139,6 +140,20 @@ def _label_chips(piece: Piece, deps: Deps, out_dir: Path) -> dict:
     if piece.channel != "arthvan":
         return {}
     return {lab: deps.render_card("label", {"label": lab}, out_dir / f"label-{lab}.png", (400, 90)) for lab in lint.MYTH_LABELS}
+
+
+def picture_jobs(piece: Piece, deps: Deps) -> list:
+    """[(prompt, refs, aspect)] for every drawn panel of a story piece plus its thumbnail reaction, exactly as the per-scene calls build them."""
+    from . import thumbs
+    jobs = []
+    for sc in (piece.script or {}).get("scenes", []):
+        prompt = (sc.get("visual") or {}).get("prompt") or piece.script["hook"]
+        refs = deps.cast_refs(prompt) if deps.cast_refs else []
+        jobs.append((art.style_prompt(piece.channel, prompt), list(refs), "4:5"))
+    scene = thumbs.scene_for(piece)
+    refs = deps.cast_refs(scene) if deps.cast_refs else []
+    jobs.append((art.style_prompt(piece.channel, thumbs.REACTION.format(scene=scene)), list(refs), "9:16" if piece.kind == "short" else "16:9"))
+    return jobs
 
 
 def _thumb(piece: Piece, deps: Deps, out_dir: Path) -> Path:
@@ -248,8 +263,17 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
         pieces.save(pieces.transition(piece, "failed-voice", str(e)), root)
         return piece
     pieces.save(pieces.transition(piece, "voiced"), root)
-    # 6-7: pictures and cards
+    # 6-7: pictures and cards (every panel and the thumbnail go out as one half-price batch job first; the per-scene calls then hit the cache)
     try:
+        if deps.art_batch and is_story(piece):
+            try:
+                if deps.art_batch(piece, picture_jobs(piece, deps)) == "painting":
+                    pieces.save(pieces.transition(piece, "painting", "picture job still running; the next run collects it"), root)
+                    return piece
+            except art.ImageBudget:
+                raise
+            except Exception as e:                       # the batch path is an optimisation: paint one by one instead
+                print(f"picture batch unavailable ({secrets.scrub(str(e))[:120]}); painting one by one", flush=True)
         visuals = [_visual_for(piece, i, sc, deps, out_dir, size, line=lines[i]) for i, sc in enumerate(script["scenes"])]
         strips = _source_strips(piece, deps, out_dir, size)
         chips = _label_chips(piece, deps, out_dir)
@@ -347,6 +371,7 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
                                                         context=(piece.topic.get("title"), piece.topic.get("title_hi"))),
                 commons=art.commons_photo, library=library, hashtags=hashtags, voice_id=default_voice,
                 cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for, subtitles=subtitles_fn,
-                voice_batch=lambda piece, texts, vid: voicebatch.voice_piece(piece, texts, vid))
+                voice_batch=lambda piece, texts, vid: voicebatch.voice_piece(piece, texts, vid),
+                art_batch=lambda piece, jobs: artbatch.paint_piece(piece, jobs))
     # voice.batched (several scenes per TTS request) stays unwired: on 22 Oct 2026 the model's paragraph pauses were not distinct enough
     # to cut on, and the transcript check sent every group back to line-by-line. Wire it in once the cut is reliable.

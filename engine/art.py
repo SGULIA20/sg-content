@@ -47,6 +47,15 @@ def spent_today(spend: Path = SPEND_FILE, today: date | None = None) -> float:
     return float(_read(spend).get(today.isoformat(), {}).get("inr", 0.0))
 
 
+def spent_month(spend: Path = SPEND_FILE, today: date | None = None) -> float:
+    today = today or today_pacific()
+    return float(sum(v.get("inr", 0.0) for k, v in _read(spend).items() if k.startswith(today.strftime("%Y-%m"))))
+
+
+def cache_tag(prompt: str, refs: list, aspect: str, model: str = MODEL) -> str:
+    return hashlib.sha1(f"{model}|{aspect}|{prompt}|{'|'.join(Path(r).name for r in refs)}".encode()).hexdigest()
+
+
 def _record(spend: Path, today: date, inr: float) -> None:
     data = _read(spend)
     day = data.setdefault(today.isoformat(), {"inr": 0.0, "requests": 0})
@@ -70,11 +79,13 @@ def paint(prompt: str, out: Path, *, refs: list = (), key: str | None = None, mo
     today = today or today_pacific()
     out, cache_dir = Path(out), Path(cache_dir)
     cache_dir.mkdir(parents=True, exist_ok=True)
-    tag = hashlib.sha1(f"{model}|{aspect}|{prompt}|{'|'.join(Path(r).name for r in refs)}".encode()).hexdigest()
+    tag = cache_tag(prompt, refs, aspect, model)
     cached = cache_dir / f"{tag}.png"
     if not cached.exists():
         if spent_today(spend, today) >= BUDGETS["image_inr_per_day"]:
             raise ImageBudget(f"image budget of ₹{BUDGETS['image_inr_per_day']} reached for {today}")
+        if spent_month(spend, today) >= BUDGETS["image_inr_per_month"]:
+            raise ImageBudget(f"monthly picture ceiling of ₹{BUDGETS['image_inr_per_month']} reached ({today.strftime('%B')})")
         key = key or secrets.get("GEMINI_API_KEY")
         parts = [{"inlineData": {"mimeType": MIME.get(Path(r).suffix.lower(), "image/png"), "data": base64.b64encode(Path(r).read_bytes()).decode()}} for r in refs]
         parts.append({"text": prompt})

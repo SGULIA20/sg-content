@@ -52,6 +52,11 @@ def spent_today(path: Path = SPEND_FILE, today: date | None = None) -> float:
     return float(_read_spend(path).get(today.isoformat(), {}).get("usd", 0.0))
 
 
+def spent_month(path: Path = SPEND_FILE, today: date | None = None) -> float:
+    today = today or today_pacific()
+    return float(sum(v.get("usd", 0.0) for k, v in _read_spend(path).items() if k.startswith(today.strftime("%Y-%m"))))
+
+
 def cost_usd(usage) -> float:
     return getattr(usage, "input_tokens", 0) * USD_PER_M_IN / 1e6 + getattr(usage, "output_tokens", 0) * USD_PER_M_OUT / 1e6
 
@@ -115,6 +120,8 @@ def write(piece: Piece, sheet: dict, library: list, hashtags: dict, formula: str
     note = ""
     if WRITER_FOR.get(piece.kind) == "gemini":
         note = "shorts are written by the free Gemini model (founder, 20 Oct 2026)"
+    elif spent_month(spend, today) >= BUDGETS["claude_usd_per_month"]:
+        note = f"Claude's monthly ceiling of ${BUDGETS['claude_usd_per_month']:.0f} is reached; Gemini writes until next month"
     elif spent_today(spend, today) >= BUDGETS["claude_usd_per_day"]:
         note = "claude budget spent for the day"
     else:
