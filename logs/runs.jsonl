@@ -15,3 +15,4 @@
 {"day": "2026-10-21", "at": "2026-10-20T20:00:49+00:00", "ok": true, "dry_run": false, "made": [["2026-10-21-arthvan-short", "uploaded"]], "stopped": ""}
 {"day": "2026-10-21", "at": "2026-10-20T20:59:33+00:00", "ok": true, "dry_run": false, "made": [["2026-10-21-sglearning-short", "failed-voice"]], "stopped": "failed-voice"}
 {"day": "2026-10-21", "at": "2026-10-21T12:55:04+00:00", "ok": true, "dry_run": false, "made": [["2026-10-21-sglearning-short", "failed-voice"]], "stopped": "failed-voice"}
+{"day": "2026-10-21", "at": "2026-10-21T14:18:16+00:00", "ok": false, "dry_run": false, "made": [["2026-10-21-sglearning-short", "uploaded"], ["run", "crashed: JSONDecodeError: Unterminated string starting at: line 29 column 19 (char 1418)"]], "stopped": ""}

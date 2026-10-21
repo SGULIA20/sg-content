@@ -1,0 +1,126 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 1.04,
+   "quote": "Loan amount: Rs 50 lakh. EMI: Rs 43,390 per month. Total repayment: Around Rs 1.04 crore.",
+   "source_date": "2026-07-06",
+   "source_name": "ET",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdOdIFw-1smJc8VCYFO-q-90BUc8_nHzcKVzPXNXrFfEu0o35oJTtXdWSceM5g1tfRjFk7ssxVV1tmUX0328TxcGMIkQDZp_o02JycHjHw5prs4Diwo7ZtAos7a6KmNr9-anTB7eQD6vHeVgv5yb5_Q0CSqCsj2pICPo22ZIJWraVJAeIXWXvFHXW_Z8ihZ16ilyCRPrbnSR6sopunSEWPjnmexU8pBsflyoPPXkHUjkbQ-pNZapCLVDDq0seR3l3ulOWDQLlH4sKWM4gSgufWZqd3oyg=",
+   "text": "A borrower taking a 20-year home loan of Rs 50 lakh at an interest rate of 8.5 percent incurs a total repayment of around Rs 1.04 crore.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "reported",
+   "number": 54.0,
+   "quote": "Total interest paid: Around Rs 54 lakh.",
+   "source_date": "2026-07-06",
+   "source_name": "ET",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdOdIFw-1smJc8VCYFO-q-90BUc8_nHzcKVzPXNXrFfEu0o35oJTtXdWSceM5g1tfRjFk7ssxVV1tmUX0328TxcGMIkQDZp_o02JycHjHw5prs4Diwo7ZtAos7a6KmNr9-anTB7eQD6vHeVgv5yb5_Q0CSqCsj2pICPo22ZIJWraVJAeIXWXvFHXW_Z8ihZ16ilyCRPrbnSR6sopunSEWPjnmexU8pBsflyoPPXkHUjkbQ-pNZapCLVDDq0seR3l3ulOWDQLlH4sKWM4gSgufWZqd3oyg=",
+   "text": "Total interest paid on a 20-year Rs 50 lakh home loan at an 8.5 percent interest rate reaches around Rs 54 lakh, surpassing the borrowed principal.",
+   "unit": "lakh INR"
+  },
+  {
+   "label": "analyst-view",
+   "number": 70.0,
+   "quote": "He pointed out that during the first five years, nearly 70% of every rupee paid through the EMI goes towards interest rather than reducing the principal.",
+   "source_date": "2026-07-06",
+   "source_name": "ET",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdOdIFw-1smJc8VCYFO-q-90BUc8_nHzcKVzPXNXrFfEu0o35oJTtXdWSceM5g1tfRjFk7ssxVV1tmUX0328TxcGMIkQDZp_o02JycHjHw5prs4Diwo7ZtAos7a6KmNr9-anTB7eQD6vHeVgv5yb5_Q0CSqCsj2pICPo22ZIJWraVJAeIXWXvFHXW_Z8ihZ16ilyCRPrbnSR6sopunSEWPjnmexU8pBsflyoPPXkHUjkbQ-pNZapCLVDDq0seR3l3ulOWDQLlH4sKWM4gSgufWZqd3oyg=",
+   "text": "During the first five years of a standard home loan, nearly 70 percent of every rupee paid via EMI goes toward interest rather than principal repayment.",
+   "unit": "pct"
+  },
+  {
+   "label": "analyst-view",
+   "number": 15.0,
+   "quote": "Kaushik explained that paying one additional EMI annually can effectively reduce a 20-year loan to 15 years, because the extra instalment is applied entirely toward the principal.",
+   "source_date": "2026-03-17",
+   "source_name": "ET",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfCaC_UlQt2ZijnpgXV5HDAGzT9Sfy5mAlRufqUMc5uUHiAXStF8gDzFspu5N9EFb6S4UVctHuGmSmvINcNZae2YO2p3Ize_szg30d7bR8MPFN-mDG7VgWfVFq_31DguIP9zh5cQj9BYn4DQhLF8l_ISNtpqR7NLes2ienj5SmkogecxwWMV4pL4Hwmab8u7PBuexF44mKxd7ixAA7T6sy9mTID5_vrbwqlMuSsIeXPXs0rq23pIj_HWbj2BVcyLQjV11OHPB-JKhKkJYlWAUmBpoL4arwOg==",
+   "text": "Paying one additional equated monthly instalment per year can shorten a 20-year home loan tenure to 15 years by directing the extra payment straight to the principal.",
+   "unit": "years"
+  },
+  {
+   "label": "analyst-view",
+   "number": 5.0,
+   "quote": "He also emphasised that gradually increasing EMIs by around 5% each year in line with salary growth can shorten a 20-year mortgage to roughly 12 years, saving nearly Rs 30 lakh on a Rs 50 lakh loan at 9% interest.",
+   "source_date": "2026-03-17",
+   "source_name": "ET",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfCaC_UlQt2ZijnpgXV5HDAGzT9Sfy5mAlRufqUMc5uUHiAXStF8gDzFspu5N9EFb6S4UVctHuGmSmvINcNZae2YO2p3Ize_szg30d7bR8MPFN-mDG7VgWfVFq_31DguIP9zh5cQj9BYn4DQhLF8l_ISNtpqR7NLes2ienj5SmkogecxwWMV4pL4Hwmab8u7PBuexF44mKxd7ixAA7T6sy9mTID5_vrbwqlMuSsIeXPXs0rq23pIj_HWbj2BVcyLQjV11OHPB-JKhKkJYlWAUmBpoL4arwOg==",
+   "text": "Increasing home loan EMIs by 5 percent each year in tandem with salary hikes can compress a 20-year repayment schedule to approximately 12 years.",
+   "unit": "pct"
+  },
+  {
+   "label": "analyst-view",
+   "number": 30.0,
+   "quote": "He also emphasised that gradually increasing EMIs by around 5% each year in line with salary growth can shorten a 20-year mortgage to roughly 12 years, saving nearly Rs 30 lakh on a Rs 50 lakh loan at 9% interest.",
+   "source_date": "2026-03-17",
+   "source_name": "ET",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfCaC_UlQt2ZijnpgXV5HDAGzT9Sfy5mAlRufqUMc5uUHiAXStF8gDzFspu5N9EFb6S4UVctHuGmSmvINcNZae2YO2p3Ize_szg30d7bR8MPFN-mDG7VgWfVFq_31DguIP9zh5cQj9BYn4DQhLF8l_ISNtpqR7NLes2ienj5SmkogecxwWMV4pL4Hwmab8u7PBuexF44mKxd7ixAA7T6sy9mTID5_vrbwqlMuSsIeXPXs0rq23pIj_HWbj2BVcyLQjV11OHPB-JKhKkJYlWAUmBpoL4arwOg==",
+   "text": "Stepping up EMIs by 5 percent annually on a Rs 50 lakh loan at a 9 percent interest rate saves nearly Rs 30 lakh in cumulative interest payments.",
+   "unit": "lakh INR"
+  },
+  {
+   "label": "reported",
+   "number": 795.0,
+   "quote": "If the interest rate rises from 8.5% to 8.75%, the monthly EMI would increase from ₹43,391 to ₹44,186, an additional ₹795 a month, according to calculations provided by Tata.",
+   "source_date": "2026-10-19",
+   "source_name": "Mint",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeGZn7H4g1E3Q5XxMafOT2b_7Rt1qToE9j4DirghF0BXE3IWHntBuIPfY8o7NJHqKnwduH39nnXfj1KzuGV5TVrHucnVrIMSrBtp2FteMezt1XWIDNMWLYUsK-QYWrrSAGfOS0JdCn_fr0NsgqxaATWGcOUIo-RUIfsRSs-0LI9uBByMN90Yd_Dawf51ZehHNDGzSdq6-b-K1lJuVPa5hzjS2QsgD4jfoompkihOpABCL0b2h42_i4E7tTPVi8ImI2wwlvPHKwezCfquwKjNLQ8Oo8F5AyjEmywHpJEnt0a6EoUw==",
+   "text": "A 25-basis-point increase in home loan interest rates from 8.5 percent to 8.75 percent lifts the monthly EMI on a 20-year Rs 50 lakh loan by Rs 795.",
+   "unit": "INR"
+  },
+  {
+   "label": "reported",
+   "number": 56.05,
+   "quote": "The increase in the interest rate would also raise the total interest payable over the loan tenure from approximately ₹54.14 lakh to ₹56.05 lakh, assuming the revised EMI is paid over the original 20-year period.",
+   "source_date": "2026-10-19",
+   "source_name": "Mint",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeGZn7H4g1E3Q5XxMafOT2b_7Rt1qToE9j4DirghF0BXE3IWHntBuIPfY8o7NJHqKnwduH39nnXfj1KzuGV5TVrHucnVrIMSrBtp2FteMezt1XWIDNMWLYUsK-QYWrrSAGfOS0JdCn_fr0NsgqxaATWGcOUIo-RUIfsRSs-0LI9uBByMN90Yd_Dawf51ZehHNDGzSdq6-b-K1lJuVPa5hzjS2QsgD4jfoompkihOpABCL0b2h42_i4E7tTPVi8ImI2wwlvPHKwezCfquwKjNLQ8Oo8F5AyjEmywHpJEnt0a6EoUw==",
+   "text": "A rate reset from 8.5 percent to 8.75 percent raises the total interest payable over a 20-year Rs 50 lakh loan tenure from approximately Rs 54.14 lakh to Rs 56.05 lakh.",
+   "unit": "lakh INR"
+  },
+  {
+   "label": "official",
+   "number": 0.0,
+   "quote": "For all loans granted for purposes other than business to individuals, with or without co-obligant(s), an RE shall not levy pre-payment charges;",
+   "source_date": "2025-07-02",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFwakeJ2vtxueAGUTiditlVWF2io3R1pVwFpa0x06KrIz01BvWsgsQQI3Cy_J8bXbI7oKKZTPjAARWebqF6hrlZe8DNXL0edeOuPdRo2Pj8Hy4kpV0E1bQiWh3iiFXPIO-echwPRiJ9pCjMfnTZiyRIGvs",
+   "text": "The Reserve Bank of India mandates that regulated entities are barred from levying prepayment charges on floating-rate loans sanctioned to individuals for non-business purposes.",
+   "unit": "INR"
+  },
+  {
+   "label": "reported",
+   "number": 2.0,
+   "quote": "For home loan borrowers, this includes the Rs.2 lakh deduction under Section 24(b) on interest paid and Rs.1.5 lakh of principal paid, which earlier brought down the cost of borrowing.",
+   "source_date": "2025-06-23",
+   "source_name": "ET",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEIHO67CHdqSXJ-23Re_-_IVYUlt8zMuFwvpYqkvGtCxbv4uZLP2YyKpGeA5G-3nj_xfaK8oOXx39iqtLVKqwq2ZAQ2DCu5oJQ7PZzxQjn7IwZJfQqaPzKV-qZd8YlxFQUGz9Cr8UrqXfh5kv9IsatAKggXBkHnaE86G87bsBkX_Y-qjXdcKABoI-4qHQ8IPp8weaVcqP0ekFD7jcsrtI1eXIVPIqAodvXi6xF9aqRINthymPyCqciCyx1HY8S54bOOXMVWJ5jLaGf3rr734Sg9oaTx",
+   "text": "Under the old tax regime, home loan borrowers were eligible for an income tax deduction of up to Rs 2 lakh on interest paid under Section 24(b).",
+   "unit": "lakh INR"
+  }
+ ],
+ "id": "2026-10-21-sglearning-long",
+ "ids": {},
+ "kind": "long",
+ "publish_day": "2026-10-21",
+ "reasons": [],
+ "script": null,
+ "status": "researched",
+ "timings": [],
+ "topic": {
+  "hooks": [
+   "50 lakh ka ghar, 1 crore kyun dete ho?",
+   "Pehli 5 saal ki EMI mein ghar ka kitna hissa aapka hua?",
+   "Saal mein ek extra EMI se kitne saal bachte hain?"
+  ],
+  "id": "home-loan-double",
+  "summary": "A family buys a flat on a 20-year home loan; the amortisation schedule shows interest front-loaded, the total paid roughly double the price, and what prepaying one extra EMI a year does. Explain EMI, principal, interest, prepayment, floating rate.",
+  "target_minutes": 12,
+  "title": "50 lakh ka ghar, 1 crore ka bill: 20 saal ki EMI mein bank kitna kamata hai"
+ },
+ "updated": "2026-10-21T14:16:28+00:00",
+ "writer": ""
+}
