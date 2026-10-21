@@ -27,7 +27,7 @@ def test_workflows_parse_and_name_only_known_secrets():
 def test_produce_schedule_and_guards():
     data = yaml.safe_load((ROOT / ".github" / "workflows" / "produce.yml").read_text())
     crons = [s["cron"] for s in data[True]["schedule"]] if True in data else [s["cron"] for s in data["on"]["schedule"]]
-    assert "5 7 * * *" in crons and "0 9 * * *" in crons              # right after the Gemini quota reset at 07:00 UTC
+    assert "5 7 * * *" in crons and "35 7 * * *" in crons and "0 9 * * *" in crons     # several chances after the 07:00 UTC quota reset
     job = data["jobs"]["produce"]
     assert job["timeout-minutes"] == 120 and data["concurrency"]["group"] == "produce"
     steps = " ".join(s.get("run", "") for s in job["steps"])
@@ -37,7 +37,9 @@ def test_produce_schedule_and_guards():
 def test_publish_crons_match_slots():
     data = yaml.safe_load((ROOT / ".github" / "workflows" / "publish.yml").read_text())
     crons = [s["cron"] for s in (data.get(True) or data.get("on"))["schedule"]]
-    assert "30 8 * * *" in crons and "0 16 * * 1,3,5" in crons
+    assert "30 8 * * *" in crons and "30 9 * * *" in crons and "0 16 * * 1,3,5" in crons and "0 17 * * 1,3,5" in crons
+    pick = next(s["run"] for s in data["jobs"]["publish"]["steps"] if s.get("id") == "slot")
+    assert '"30 9 * * *"' in pick and '"30 10 * * *"' in pick                                   # every finance slot maps to sglearning
 
 
 def test_docs_secrets_lists_every_secret():

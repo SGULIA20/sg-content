@@ -3,7 +3,10 @@ name: publish
 on:
   schedule:
     - cron: '30 8 * * *'      # 14:00 India: Learning with SG Reel + Story + Threads + LinkedIn (after the 07:05 UTC produce run)
+    - cron: '30 9 * * *'      # second chance an hour later (the engine never posts a piece twice)
+    - cron: '30 10 * * *'
     - cron: '0 16 * * 1,3,5'  # 21:30 India Mon/Wed/Fri: SG-MYTH-WORLD Reel + Story + Threads + LinkedIn
+    - cron: '0 17 * * 1,3,5'  # second chance
   workflow_dispatch:
     inputs:
       channel:
@@ -37,7 +40,7 @@ jobs:
         id: slot
         run: |
           if [ -n "${{ github.event.inputs.channel }}" ]; then echo "channel=${{ github.event.inputs.channel }}" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event.schedule }}" = "30 8 * * *" ]; then echo "channel=sglearning" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "30 8 * * *" ] || [ "${{ github.event.schedule }}" = "30 9 * * *" ] || [ "${{ github.event.schedule }}" = "30 10 * * *" ]; then echo "channel=sglearning" >> "$GITHUB_OUTPUT"
           else echo "channel=arthvan" >> "$GITHUB_OUTPUT"; fi
       - name: Git identity
         run: |
