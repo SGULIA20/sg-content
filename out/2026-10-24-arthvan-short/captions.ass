@@ -1,0 +1,63 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:03.68,Default,,0,0,0,,Kya Kurukshetra ke pattharon par Chakravyuh
+Dialogue: 0,0:00:03.68,0:00:06.22,Default,,0,0,0,,ka 5,000 saal purana naksha hai?
+Dialogue: 0,0:00:06.22,0:00:06.79,Default,,0,0,0,,Chaliye,
+Dialogue: 0,0:00:06.79,0:00:08.20,Default,,0,0,0,,sabut dhoondte hain.
+Dialogue: 0,0:00:08.65,0:00:10.94,Default,,0,0,0,,Drona Parva kehta hai,
+Dialogue: 0,0:00:10.94,0:00:12.57,Default,,0,0,0,,yudh ka 13va din tha.
+Dialogue: 0,0:00:12.57,0:00:16.17,Default,,0,0,0,,Dronacharya ne Kaurav sena ko gol
+Dialogue: 0,0:00:16.17,0:00:17.81,Default,,0,0,0,,ghere mein sajaaya.
+Dialogue: 0,0:00:17.81,0:00:19.77,Default,,0,0,0,,Yahi Chakravyuh tha,
+Dialogue: 0,0:00:19.77,0:00:21.73,Default,,0,0,0,,ghoomta hua sainik jaal.
+Dialogue: 0,0:00:22.18,0:00:26.91,Default,,0,0,0,,Abhimanyu andar ghusna jaante the,
+Dialogue: 0,0:00:26.91,0:00:29.92,Default,,0,0,0,,bahar nikalna nahi.
+Dialogue: 0,0:00:29.92,0:00:34.65,Default,,0,0,0,,Jayadratha ne peeche ka raasta roka,
+Dialogue: 0,0:00:34.65,0:00:37.66,Default,,0,0,0,,aur woh akele ghir gaye.
+Dialogue: 0,0:00:38.11,0:00:40.77,Default,,0,0,0,,Kurukshetra ke paas Amin gaon ka
+Dialogue: 0,0:00:40.77,0:00:42.10,Default,,0,0,0,,purana teela.
+Dialogue: 0,0:00:42.10,0:00:44.77,Default,,0,0,0,,Archaeological Survey of India,
+Dialogue: 0,0:00:44.77,0:00:45.83,Default,,0,0,0,,yaani ASI,
+Dialogue: 0,0:00:45.83,0:00:47.43,Default,,0,0,0,,ne yahan khudaai ki.
+Dialogue: 0,0:00:47.88,0:00:51.04,Default,,0,0,0,,Nikle Painted Grey Ware ke tukde,
+Dialogue: 0,0:00:51.04,0:00:54.51,Default,,0,0,0,,yaani loha yug ke saleti bartan,
+Dialogue: 0,0:00:54.51,0:00:56.40,Default,,0,0,0,,kaale design wale.
+Dialogue: 0,0:00:56.85,0:00:59.41,Default,,0,0,0,,Saath mein eenton ki deewarein,
+Dialogue: 0,0:00:59.41,0:01:01.97,Default,,0,0,0,,aur baad ke Shunga rajvansh ke
+Dialogue: 0,0:01:01.97,0:01:04.21,Default,,0,0,0,,patthar ke khambe mile.
+Dialogue: 0,0:01:04.66,0:01:07.02,Default,,0,0,0,,Par patthar ka Chakravyuh naksha?
+Dialogue: 0,0:01:07.02,0:01:08.07,Default,,0,0,0,,Nahi mila.
+Dialogue: 0,0:01:08.07,0:01:12.26,Default,,0,0,0,,Viral tasveerein Karnataka ke Halebidu mandir
+Dialogue: 0,0:01:12.26,0:01:13.57,Default,,0,0,0,,ki nakkashi hain,
+Dialogue: 0,0:01:13.57,0:01:14.62,Default,,0,0,0,,ya naye park ki.
+Dialogue: 0,0:01:15.07,0:01:19.02,Default,,0,0,0,,Kuch vidwaan kehte hain,
+Dialogue: 0,0:01:19.02,0:01:24.30,Default,,0,0,0,,Painted Grey Ware ka daur hi
+Dialogue: 0,0:01:24.30,0:01:28.91,Default,,0,0,0,,Mahabharat ka daur hai.
+Dialogue: 0,0:01:29.36,0:01:32.00,Default,,0,0,0,,Zyada archaeologist kehte hain,
+Dialogue: 0,0:01:32.00,0:01:34.92,Default,,0,0,0,,yahan rozmarra ki basti mili.
+Dialogue: 0,0:01:34.92,0:01:37.85,Default,,0,0,0,,Yudh ka seedha sabut nahi mila.
+Dialogue: 0,0:01:37.85,0:01:41.66,Default,,0,0,0,,Chakravyuh asli yudh-neeti tha ya kahani,
+Dialogue: 0,0:01:41.66,0:01:43.12,Default,,0,0,0,,koi nahi jaanta.
+Dialogue: 0,0:01:43.57,0:01:44.58,Default,,0,0,0,,Aur twist yeh hai,
+Dialogue: 0,0:01:44.58,0:01:46.59,Default,,0,0,0,,kahani aaj bhi zinda hai.
+Dialogue: 0,0:01:46.59,0:01:50.12,Default,,0,0,0,,Abhimanyupur ke bachche galiyon mein Chakravyuh
+Dialogue: 0,0:01:50.12,0:01:52.64,Default,,0,0,0,,banane aur todne ka khel khelte
+Dialogue: 0,0:01:52.64,0:01:52.89,Default,,0,0,0,,hain.
+Dialogue: 0,0:01:53.34,0:01:56.01,Default,,0,0,0,,Jyotisar mein aaj patthar ka ghumavdaar
+Dialogue: 0,0:01:56.01,0:01:57.47,Default,,0,0,0,,Chakravyuh dikhta hai.
+Dialogue: 0,0:01:57.47,0:01:59.41,Default,,0,0,0,,Par yeh naya tourism design hai,
+Dialogue: 0,0:01:59.41,0:02:00.62,Default,,0,0,0,,purana nahi.
+Dialogue: 0,0:02:01.07,0:02:04.88,Default,,0,0,0,,Aapko Abhimanyu ki kahani pehli baar
+Dialogue: 0,0:02:04.88,0:02:06.34,Default,,0,0,0,,kisne sunaayi thi,
+Dialogue: 0,0:02:06.34,0:02:08.39,Default,,0,0,0,,Dadi ne ya Nani ne?
