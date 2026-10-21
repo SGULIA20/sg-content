@@ -14,3 +14,4 @@
 {"day": "2026-10-21", "at": "2026-10-20T19:56:42+00:00", "ok": true, "dry_run": false, "made": [["2026-10-21-arthvan-short", "qa_failed"], ["2026-10-21-sglearning-short", "uploaded"]], "stopped": ""}
 {"day": "2026-10-21", "at": "2026-10-20T20:00:49+00:00", "ok": true, "dry_run": false, "made": [["2026-10-21-arthvan-short", "uploaded"]], "stopped": ""}
 {"day": "2026-10-21", "at": "2026-10-20T20:59:33+00:00", "ok": true, "dry_run": false, "made": [["2026-10-21-sglearning-short", "failed-voice"]], "stopped": "failed-voice"}
+{"day": "2026-10-21", "at": "2026-10-21T12:55:04+00:00", "ok": true, "dry_run": false, "made": [["2026-10-21-sglearning-short", "failed-voice"]], "stopped": "failed-voice"}
