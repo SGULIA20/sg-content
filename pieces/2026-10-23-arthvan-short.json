@@ -88,205 +88,10 @@
  "publish_day": "2026-10-23",
  "reasons": [
   "try 1: length: 235 words, allowed 150-230",
+  "duration: 113.2s, allowed 40-95s",
   "duration: 113.2s, allowed 40-95s"
  ],
- "script": {
-  "captions": {
-   "instagram": {
-    "caption": "Kurukshetra ke pattharon par Chakravyuh ka naksha? 🤯\nDrona Parva mein Chakravyuh ghoomti sena thi, patthar ka maze nahi.\nASI ko Bhagwanpura aur Amin mein bartan aur mohar mili, par koi purana naksha nahi. Jyotisar wala naksha aaj ka hai.\nAapke hisaab se Chakravyuh asli chaal thi, ya kavi ki kalpana?\nUs dost ko bhejo jo har viral naksha sach maan leta hai.",
-    "hashtags": [
-     "#SabutKeSaath",
-     "#Mahabharat",
-     "#Kurukshetra",
-     "#Archaeology",
-     "#IndianHistory",
-     "#AncientIndia"
-    ]
-   },
-   "threads": {
-    "text": "Kurukshetra ke pattharon par Chakravyuh ka naksha? ASI ki khudai mein purane bartan aur mohar mili, par pattharon par khuda koi purana naksha nahi. Jyotisar wala naksha aaj ka hai. Aapke hisaab se Chakravyuh asli chaal thi, ya kavi ki kalpana? #SabutKeSaath #IndianHistory"
-   },
-   "youtube": {
-    "chapters": [],
-    "description": "Kurukshetra ke pattharon par Abhimanyu ke Chakravyuh ka naksha, sach ya kahani? ASI ki khudai mein purane bartan aur Brahmi lipi wali mohar mili, par pattharon par khuda koi purana naksha nahi. Yuddh kab hua, is par vidwan aaj bhi bate hue hain. Us dost ko bhejo jo har viral naksha sach maan leta hai.",
-    "tags": [
-     "Chakravyuh",
-     "Kurukshetra",
-     "Abhimanyu",
-     "Mahabharat",
-     "Drona Parva",
-     "ASI",
-     "Jyotisar",
-     "Amin",
-     "Bhagwanpura",
-     "Painted Grey Ware",
-     "Indian history",
-     "archaeology"
-    ],
-    "title": "Chakravyuh naksha: 3102 BCE ka sach?"
-   }
-  },
-  "cards": [],
-  "carousel": false,
-  "end_question": "Aapke hisaab se Chakravyuh asli chaal thi, ya kavi ki kalpana?",
-  "hook": "Kurukshetra ke pattharon par Abhimanyu ke Chakravyuh ka naksha?",
-  "scenes": [
-   {
-    "facts_used": [
-     3
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Doodle-style illustrated panel: a vast ancient battlefield at dawn, an elderly bearded general seen from behind on a chariot, raising his arm as thousands of soldiers form giant circular rings, dust in the air, epic and tense mood, no text",
-     "type": "art"
-    },
-    "vo": "Kurukshetra ke pattharon par Abhimanyu ke Chakravyuh ka naksha? Drona Parva kehta hai, Dronacharya ne Kaurav sena gol ghere mein sajayi."
-   },
-   {
-    "facts_used": [
-     4,
-     5
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Doodle-style illustrated panel, aerial view: rotating concentric rings of chariots, war elephants, horsemen and foot soldiers; a lone young warrior on a chariot charging into the outer ring, the rings closing behind him, dramatic mood, no text",
-     "type": "art"
-    },
-    "vo": "Yeh patthar ka maze nahi, ghoomti sena thi. Abhimanyu andar jaana jaanta tha, bahar nikalna nahi."
-   },
-   {
-    "facts_used": [
-     1
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Doodle-style illustrated panel: an excavation site in flat Haryana farmland, archaeologists in hats with measuring tapes and grid strings over a dug trench, a jeep parked nearby, curious villagers watching, hopeful mood, no text",
-     "type": "art"
-    },
-    "vo": "ASI yaani Archaeological Survey of India, sarkari khudai sanstha, Bhagwanpura pahunchi."
-   },
-   {
-    "facts_used": [
-     1
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Doodle-style illustrated panel: cross-section of a trench wall showing layered soil, an archaeologist's gloved hand lifting a grey pottery shard with thin black painted lines, brushes and labelled bags beside, careful discovery mood, no text",
-     "type": "art"
-    },
-    "vo": "Mitti mein Harappa ke aakhri daur ke nishaan mile. Saath mein Painted Grey Ware, yaani kaale design wale saleti bartan."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Doodle-style illustrated panel: a large grassy ancient mound beside a village, a woman archaeologist kneeling and holding up a small reddish terracotta seal with faint carved script marks, sunlight on it, wonder mood, no readable text",
-     "type": "art"
-    },
-    "vo": "Amin gaon ke Abhimanyu-khera teele se Brahmi lipi wali mohar mili."
-   },
-   {
-    "facts_used": [
-     2
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Doodle-style illustrated panel: a modern circular labyrinth pattern laid in fresh paving stones in a park near a big old banyan tree, tourists walking on it, an archaeologist with a notebook shaking his head gently, clear honest mood, no text",
-     "type": "art"
-    },
-    "vo": "Par pattharon par khuda Chakravyuh ka koi purana naksha nahi mila. Jyotisar ka zameen wala naksha aaj ka banaya hai."
-   },
-   {
-    "facts_used": [
-     6
-    ],
-    "label": "disputed",
-    "visual": {
-     "card": null,
-     "prompt": "Doodle-style illustrated panel: an old astronomer-scholar under a starry night sky, pointing at planets and constellations, palm-leaf manuscripts and a brass astrolabe beside him, mysterious mood, no text",
-     "type": "art"
-    },
-    "vo": "Yuddh hua kab? Parampara aur khagol-ganana ise 3102 BCE ka maante hain."
-   },
-   {
-    "facts_used": [
-     6
-    ],
-    "label": "disputed",
-    "visual": {
-     "card": null,
-     "prompt": "Doodle-style illustrated panel: an elderly archaeologist with glasses at a wooden desk comparing grey pottery shards under a lamp, a calendar scroll on one side and the starry sky drawing on the other, split-screen debate mood, no text",
-     "type": "art"
-    },
-    "vo": "Puratatvavid B.B. Lal yuddh ko lagbhag 800 BCE ka bataate hain. Har paksh ke apne tark hain."
-   },
-   {
-    "facts_used": [
-     7
-    ],
-    "label": "disputed",
-    "visual": {
-     "card": null,
-     "prompt": "Doodle-style illustrated panel: two scholars at a long table, one tracing troop movements on a sand-table battlefield, the other reading an old palm-leaf strategy manual, thoughtful disagreement mood, no text",
-     "type": "art"
-    },
-    "vo": "Kuch vidwan Chakravyuh ko asli yuddh ki chaal maante hain. Kuch kehte hain, yeh Arthashastra jaise yuddh-granthon se aaya. Arthashastra yaani rajneeti ka purana granth."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": "legend",
-    "visual": {
-     "card": null,
-     "prompt": "Doodle-style illustrated panel: evening at the village mound, a grandmother sitting on a charpai telling a story to wide-eyed children, the dark mound behind them under an orange sky, warm nostalgic mood, no text",
-     "type": "art"
-    },
-    "vo": "Twist yeh, Amin ke log teele ko Abhimanyu ka maidan kehte hain. Yeh lok-katha hai, likha sabut nahi."
-   },
-   {
-    "facts_used": [
-     0,
-     2
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Doodle-style illustrated panel: a pilgrim family with a backpack walking on a path toward the old banyan tree at Jyotisar, a sacred pond nearby, the distant grassy mound on the horizon, peaceful inviting mood, no text",
-     "type": "art"
-    },
-    "vo": "Aap Jyotisar aur Amin ka teela aaj bhi dekh sakte hain."
-   },
-   {
-    "facts_used": [
-     7
-    ],
-    "label": "disputed",
-    "visual": {
-     "card": null,
-     "prompt": "Doodle-style illustrated panel: a narrator figure in a simple kurta standing at the edge of a misty battlefield, looking at faint ghostly circular troop rings in the sky, curious questioning mood, no text",
-     "type": "art"
-    },
-    "vo": "Aapke hisaab se Chakravyuh asli chaal thi, ya kavi ki kalpana?"
-   }
-  ],
-  "thumbnail": {
-   "scene": "The ARCHAEOLOGIST stares wide-eyed at a small reddish terracotta seal in her gloved palm, mouth slightly open, dusty trench blurred behind her",
-   "words": [
-    "800 BCE?",
-    "SABUT GAYAB"
-   ]
-  },
-  "title": "Kurukshetra ka *Chakravyuh* naksha asli? 🤯"
- },
+ "script": null,
  "status": "qa_failed",
  "timings": [
   0.0,
@@ -317,10 +122,11 @@
   "id": "kurukshetra-chakravyuh",
   "notes": "Distinguish the modern map at the Jyotisar area from excavation evidence; label legend where it is folklore.",
   "place": "Kurukshetra, Haryana",
+  "rewrite": "length: the voiced video ran 113s, the limit is 95s; rewrite the same story in at most 150 words of voice in total",
   "target_minutes": null,
   "title_hi": "Kurukshetra ka Chakravyuh naksha",
   "voice": "Puck"
  },
- "updated": "2026-10-21T16:18:30+00:00",
+ "updated": "2026-10-21T16:39:20+00:00",
  "writer": "claude"
 }
