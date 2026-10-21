@@ -7,7 +7,7 @@ from datetime import date
 from pathlib import Path
 from typing import Callable
 
-from . import art, assemble, buffer, cards, cartoon, cast, claims, gemini, lint, pieces, qa, research, secrets, slots, storyframe, topics, voice, writer, youtube
+from . import art, assemble, buffer, cards, cartoon, cast, claims, gemini, lint, pieces, qa, research, secrets, slots, storyframe, topics, voice, voicebatch, writer, youtube
 from .config import CHANNELS, ROOT, STORY_WORDS, VIDEO
 from .pieces import Piece
 
@@ -16,7 +16,7 @@ def is_story(piece: Piece) -> bool:
     from .config import is_story as _is
     return _is(piece.channel, piece.kind)
 QA_TOO_LONG = re.compile(r"duration: ([\d.]+)s, allowed [\d.]+-([\d.]+)s")
-RESUMABLE = {"written", "voiced", "drawn", "assembled", "failed-voice", "failed-art", "qa_failed"}
+RESUMABLE = {"written", "voicing", "voiced", "drawn", "assembled", "failed-voice", "failed-art", "qa_failed"}
 HANDLE = "@sanjeev_gulia"
 LONG_TARGET_MINUTES = {"sglearning": 12, "arthvan": 14}
 
@@ -46,6 +46,7 @@ class Deps:
     cast_refs: Callable = None   # (prompt) -> reference PNGs of the cast members the panel names
     subtitles: Callable = None   # (piece, out_dir, video) -> writes SRTs and adds YouTube caption tracks (longs)
     voice_lines: Callable = None # (texts, voice_id, out_dir) -> [(wav, seconds)]: batched synthesis (several scenes per request)
+    voice_batch: Callable = None # (piece, texts, voice_id) -> "ready" | "voicing": Gemini Batch API fills the voice cache (half price, no daily cap)
 
 
 def _jsonable(d: dict) -> dict:
@@ -230,6 +231,13 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
     voice_id = voice.pick(piece.id) if voice.pick else deps.voice_id
     piece.topic["voice"] = voice_id
     try:
+        if deps.voice_batch:
+            try:
+                if deps.voice_batch(piece, [sc["vo"] for sc in script["scenes"]], voice_id) == "voicing":
+                    pieces.save(pieces.transition(piece, "voicing", "voice job still running; the next run collects it"), root)
+                    return piece
+            except Exception as e:                       # the batch path is an optimisation: fall back to the synchronous lines
+                print(f"voice batch unavailable ({secrets.scrub(str(e))[:120]}); voicing line by line", flush=True)
         if deps.voice_lines:
             lines = deps.voice_lines([sc["vo"] for sc in script["scenes"]], voice_id, out_dir / "vo")
         else:
@@ -338,6 +346,7 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
                 claims_check=lambda piece: claims.match(lint.all_text(piece), piece.facts, library,
                                                         context=(piece.topic.get("title"), piece.topic.get("title_hi"))),
                 commons=art.commons_photo, library=library, hashtags=hashtags, voice_id=default_voice,
-                cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for, subtitles=subtitles_fn)
+                cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for, subtitles=subtitles_fn,
+                voice_batch=lambda piece, texts, vid: voicebatch.voice_piece(piece, texts, vid))
     # voice.batched (several scenes per TTS request) stays unwired: on 22 Oct 2026 the model's paragraph pauses were not distinct enough
     # to cut on, and the transcript check sent every group back to line-by-line. Wire it in once the cut is reliable.

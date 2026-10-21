@@ -124,6 +124,14 @@ def _audio_from(response: dict) -> bytes | None:
     return base64.b64decode(out["data"]) if out.get("data") else None
 
 
+def cache_path(text: str, voice_id: str, cache_dir: Path = CACHE_DIR / "voice", style: str = STYLE) -> Path:
+    """Where a line's audio lives once made (by say() or by a batch job). Prebuilt voices get no style text; "plain" also retires the
+    WAVs from before 22 Oct 2026 that spoke the style note aloud."""
+    key_style = style if voice_id.startswith("voice") else "plain"
+    Path(cache_dir).mkdir(parents=True, exist_ok=True)
+    return Path(cache_dir) / (hashlib.sha1(f"{voice_id}|{key_style}|{text}".encode()).hexdigest() + ".wav")
+
+
 def say(text: str, voice_id: str, out_wav: Path, *, key: str | None = None, cache_dir: Path = CACHE_DIR / "voice",
         budget: Path = BUDGET_FILE, post=gemini._post, style: str = STYLE, today: date | None = None,
         sleep=time.sleep, clock=time.monotonic) -> float:
@@ -132,8 +140,7 @@ def say(text: str, voice_id: str, out_wav: Path, *, key: str | None = None, cach
     out_wav = Path(out_wav)
     cache_dir = Path(cache_dir)
     cache_dir.mkdir(parents=True, exist_ok=True)
-    key_style = style if voice_id.startswith("voice") else "plain"          # prebuilt voices get no style text; "plain" also retires the WAVs that spoke it
-    cached = cache_dir / (hashlib.sha1(f"{voice_id}|{key_style}|{text}".encode()).hexdigest() + ".wav")
+    cached = cache_path(text, voice_id, cache_dir, style)
     if not cached.exists():
         if requests_today(budget, today) >= BUDGETS["voice_requests_per_day"]:
             raise VoiceBudget(f"voice budget of {BUDGETS['voice_requests_per_day']} requests reached for {today}")
