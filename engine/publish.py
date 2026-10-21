@@ -61,11 +61,10 @@ def run(root: Path = ROOT, channel: str = "sglearning", now_utc: datetime | None
     for piece in due(root, now_utc, channel, env):
         try:
             piece = ig_publish(piece, env)
-        except InstagramError as e:
+        except InstagramError as e:                     # Threads still goes out; the next run retries what Instagram missed
             problems.append(f"{piece.id}: instagram: {e}")
             pieces.transition(piece, piece.status, f"instagram: {str(e)[:200]}"); pieces.save(piece, root)
             gitsync.safe_commit(root, f"publish: {piece.id} partial")
-            continue
         if not piece.ids.get("threads_id"):
             try:
                 from . import secrets

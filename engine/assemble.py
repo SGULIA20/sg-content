@@ -176,6 +176,25 @@ def build(piece: Piece, lines: list, visuals: list, size: tuple, out_dir: Path, 
     return out
 
 
+STORY_MAX_S = 59.0          # Instagram refuses a Story video over 60 s (21 Oct 2026: the 70 s Learning with SG Story failed)
+
+
+def story_cut(video: Path, out: Path, max_s: float = STORY_MAX_S) -> Path:
+    """The Instagram Story copy of a Short: the same file when it fits, else its first max_s seconds with a 1 s fade out."""
+    try:
+        dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(video)],
+                                   capture_output=True, text=True, check=True).stdout.strip())
+    except (subprocess.CalledProcessError, ValueError, OSError):
+        dur = 0.0                                             # unreadable here (a test stub): keep the plain copy
+    if dur <= max_s:
+        out.write_bytes(Path(video).read_bytes())
+        return out
+    _run(["-i", str(video), "-t", f"{max_s}", "-vf", f"fade=t=out:st={max_s - 1}:d=1", "-af", f"afade=t=out:st={max_s - 1}:d=1",
+          "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k",
+          "-movflags", "+faststart", str(out)])
+    return out
+
+
 def _mmss(sec: float) -> str:
     sec = int(round(sec))
     return f"{sec // 60:02d}:{sec % 60:02d}"

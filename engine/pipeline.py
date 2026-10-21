@@ -256,7 +256,7 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
     else:
         video = deps.build(piece, lines, visuals, size, out_dir, music=bed, source_strips=strips, label_chips=chips, credits=credits)
     if piece.kind == "short":
-        shutil.copy(video, out_dir / "story.mp4")
+        assemble.story_cut(video, out_dir / "story.mp4")
         if script.get("carousel"):
             for j, card in enumerate(script.get("cards", []), start=1):
                 deps.render_card("slide", card, out_dir / f"slide{j:02d}.jpg", (1080, 1350))

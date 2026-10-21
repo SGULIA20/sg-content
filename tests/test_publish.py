@@ -157,3 +157,19 @@ def test_existing_linkedin_id_is_never_posted_again(tmp_path):
     publish.run(tmp_path, "sglearning", NOW, LI_ENV, ig_publish=_ig_ok(tmp_path), threads_post=lambda *a: "th1",
                 linkedin_post=lambda *a: li.append(a) or "x", notify=lambda t: True)
     assert li == []
+
+
+def test_instagram_failure_still_posts_threads(tmp_path):
+    """21 Oct 2026: the Story failed and the loop skipped Threads, so neither went out."""
+    p = _seed(tmp_path, "2026-10-20-sglearning-short", "sglearning", "short", date(2026, 10, 20))
+
+    def ig_publish(piece, env):
+        from engine.instagram import PartialPublish
+        piece.ids["ig_reel_id"] = "r1"; pieces.save(piece, tmp_path)
+        raise PartialPublish("story container failed with status ERROR (already live: ['reel'])")
+
+    th = []
+    code = publish.run(tmp_path, "sglearning", NOW, ENV, ig_publish=ig_publish, threads_post=lambda *a: th.append(a) or "th1", notify=lambda t: True)
+    q = pieces.load(p.id, tmp_path)
+    assert code == 0 and th and q.ids["threads_id"] == "th1" and q.ids["ig_reel_id"] == "r1"
+    assert q.status == "uploaded"                                    # the Story is still missing: the next run retries it
