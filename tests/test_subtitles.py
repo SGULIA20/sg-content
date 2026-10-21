@@ -72,3 +72,9 @@ def test_upload_all_skips_done_tracks_and_records_ids(tmp_path):
         uploaded.append(data); return 200, {}, {"id": f"cap{len(uploaded)}"}
     done = subtitles.upload_all("tok", p, {"en": tmp_path / "en.srt", "hi": tmp_path / "hi.srt"}, call=call)
     assert done == {"en": "old", "hi": "cap1"} and p.ids["captions"] == done and len(uploaded) == 1
+
+
+def test_default_tracks_stay_inside_the_youtube_quota(tmp_path):
+    calls = []
+    subtitles.write_all(_piece(), tmp_path, duration=22.0, translate_fn=lambda lines, lang: calls.append(lang) or lines)
+    assert calls == ["hi", "en", "gu", "mr", "ta"]                                   # 5 × 400 units; nine would break a long day

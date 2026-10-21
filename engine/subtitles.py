@@ -15,6 +15,8 @@ from .pieces import Piece
 LANGS = {"hi": "Hindi (Devanagari script)", "en": "English", "gu": "Gujarati", "mr": "Marathi", "ta": "Tamil", "te": "Telugu",
          "bn": "Bengali", "kn": "Kannada", "ml": "Malayalam"}
 NAMES = {"hi": "हिन्दी", "en": "English", "gu": "ગુજરાતી", "mr": "मराठी", "ta": "தமிழ்", "te": "తెలుగు", "bn": "বাংলা", "kn": "ಕನ್ನಡ", "ml": "മലയാളം"}
+DEFAULT_LANGS = ["hi", "en", "gu", "mr", "ta"]     # YouTube API quota: 400 units per track, 10,000 a day shared with the app poster; nine tracks on a
+                                                   # long day would pass 10,000 and the app Reel's upload would fail. Five tracks keep a long day at ~8,550.
 MODEL = "claude-sonnet-5-5"
 WORDS_PER_CUE = 11
 SPEAK_RATE = 2.5                                             # words per second, used only when the clip length is unknown
@@ -121,7 +123,7 @@ def write_all(piece: Piece, out_dir: Path, langs=None, duration: float | None = 
     texts = [t for _s, _e, t in base]
     (subs / "hi-Latn.srt").write_text(srt(base), encoding="utf-8")
     paths = {}
-    for lang in (langs or list(LANGS)):
+    for lang in (langs or DEFAULT_LANGS):
         path = subs / f"{lang}.srt"
         if not path.exists():
             got = translate_fn(texts, lang, client) if translate_fn is translate else translate_fn(texts, lang)
