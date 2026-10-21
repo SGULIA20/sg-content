@@ -74,6 +74,7 @@
  ],
  "id": "2026-10-21-sglearning-short",
  "ids": {
+  "ig_reel_id": "18073936877773339",
   "out_sha": "c1239fb2360ca0b2421bb9ab49bc2f873df04125",
   "yt_id": "1oq8a5RJzTw"
  },
@@ -83,7 +84,8 @@
   "re-voiced from the pool (founder, 21 Oct)",
   "voice budget of 80 requests reached for 2026-10-21",
   "voice budget of 80 requests reached for 2026-10-21",
-  "voice synthesis failed (429): Rate limit exceeded for model gemini-3.8-flash-tts (limit: 10 requests per minute on Tier 1). Please retry in 58s or upgrade your tier at https://ai.dev/rate-limit."
+  "voice synthesis failed (429): Rate limit exceeded for model gemini-3.8-flash-tts (limit: 10 requests per minute on Tier 1). Please retry in 58s or upgrade your tier at https://ai.dev/rate-limit.",
+  "instagram: 2026-10-21-sglearning-short: story container failed with status ERROR (already live: ['reel'])"
  ],
  "script": {
   "captions": {
@@ -275,6 +277,6 @@
   "title": "Dividend, stock split, buyback: Last chance to buy today - VRL Logistics, JSW Dulux, Angel One shares",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-21T14:15:11+00:00",
+ "updated": "2026-10-21T16:30:05+00:00",
  "writer": "claude"
 }
