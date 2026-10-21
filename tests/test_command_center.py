@@ -64,3 +64,44 @@ def test_snapshot_lists_pieces_runs_spend_and_scrubs(tmp_path, monkeypatch):
 
 def test_live_only_for_the_project_root(tmp_path):
     assert command_center._live(ROOT) is True and command_center._live(tmp_path) is False
+
+
+def test_telegram_setup_sends_token_on_and_nothing_off(tmp_path, monkeypatch):
+    _no_dotenv(tmp_path, monkeypatch)
+    seen = []
+    call = lambda m, r, k, b=None: seen.append((r, b)) or {"webhook": b.get("on")}
+    env = {"SG_COMMAND_KEY": "k" * 32, "TELEGRAM_BOT_TOKEN": "123:abc", "TELEGRAM_CHAT_ID": "42"}
+    assert command_center.telegram_setup(True, env, call=call) == {"webhook": True}
+    assert seen[-1] == ("telegram-setup", {"on": True, "token": "123:abc", "chat_id": "42"})
+    command_center.telegram_setup(False, env, call=call)
+    assert seen[-1] == ("telegram-setup", {"on": False})
+    assert command_center.telegram_setup(True, {}, call=call) is None                  # no key: nothing sent
+
+
+def test_mac_inbox_reads_the_control_room_when_the_webhook_is_on(tmp_path, monkeypatch):
+    _no_dotenv(tmp_path, monkeypatch)
+    monkeypatch.setattr(command_center, "telegram_inbox", lambda root: ["ok 2026-10-22-sglearning-short"])
+    env = {"TELEGRAM_BOT_TOKEN": "t", "TELEGRAM_CHAT_ID": "42"}
+    sent = []
+    got = telegram.poll_commands(env, state=tmp_path / "off.json", get=lambda u: (_ for _ in ()).throw(AssertionError("getUpdates called")),
+                                 post=lambda u, b: sent.append(b) or {"ok": True}, root=tmp_path, handler=lambda text: "filed " + text)
+    assert got == ["ok 2026-10-22-sglearning-short"] and sent[0]["text"] == "filed ok 2026-10-22-sglearning-short"
+
+
+def test_webhook_off_falls_back_to_get_updates(tmp_path, monkeypatch):
+    _no_dotenv(tmp_path, monkeypatch)
+    monkeypatch.setattr(command_center, "telegram_inbox", lambda root: None)
+    env = {"TELEGRAM_BOT_TOKEN": "t", "TELEGRAM_CHAT_ID": "42"}
+    updates = {"result": [{"update_id": 1, "message": {"chat": {"id": 42}, "text": "/pause"}}]}
+    got = telegram.poll_commands(env, state=tmp_path / "off.json", get=lambda u: updates, post=lambda u, b: {"ok": True}, root=tmp_path,
+                                 handler=lambda text: None)
+    assert got == ["/pause"]
+
+
+def test_inbox_is_none_without_key_or_off(tmp_path, monkeypatch):
+    _no_dotenv(tmp_path, monkeypatch)
+    monkeypatch.setattr(command_center, "_live", lambda root: True)
+    env = {"SG_COMMAND_KEY": "k" * 32}
+    assert command_center.telegram_inbox(tmp_path, {}, call=lambda *a: {"webhook": True, "messages": ["x"]}) is None
+    assert command_center.telegram_inbox(tmp_path, env, call=lambda *a: {"webhook": False, "messages": []}) is None
+    assert command_center.telegram_inbox(tmp_path, env, call=lambda *a: {"webhook": True, "messages": ["a", "b"]}) == ["a", "b"]

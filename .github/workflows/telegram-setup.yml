@@ -1,0 +1,32 @@
+name: telegram-setup
+
+# Switches the bot's control-room buttons on (its webhook points at the sg-command function, so the buttons work
+# without the Mac) or off (back to getUpdates polling). Run it by hand once SG_COMMAND_KEY is in GitHub secrets
+# and in the Mac's .env (the Mac inbox then reads clip confirmations from the control room).
+on:
+  workflow_dispatch:
+    inputs:
+      state:
+        description: 'buttons on or off'
+        type: choice
+        options: ['on', 'off']
+        default: 'on'
+
+jobs:
+  telegram:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install Python packages
+        run: pip install -r requirements.txt
+      - name: Switch the buttons
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SG_COMMAND_KEY: ${{ secrets.SG_COMMAND_KEY }}
+        run: python -m engine.command_center --telegram ${{ github.event.inputs.state }}

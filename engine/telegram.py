@@ -97,6 +97,17 @@ def poll_commands(env=None, state: Path = ROOT / "logs" / "tg-offset.json", get=
     token, chat = _config(env)
     if not token:
         return []
+    if handler:                                                            # with the control-room webhook on, the bot's own commands
+        from . import command_center                                       # and buttons are answered there; what is left comes from its inbox
+        queued = command_center.telegram_inbox(root)
+        if queued is not None:
+            handled = []
+            for text in queued:
+                reply = handler(text.strip())
+                if reply:
+                    handled.append(text.strip())
+                    post(API.format(token=token, method="sendMessage"), {"chat_id": chat, "text": secrets.scrub(reply)[:4000]})
+            return handled
     try:
         offset = int(json.loads(Path(state).read_text()).get("offset", 0))
     except (FileNotFoundError, ValueError):

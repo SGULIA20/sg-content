@@ -2,6 +2,7 @@
 
 python -m engine.command_center --report produce-start    one status snapshot (the workflows call this at start and end)
 python -m engine.command_center --paused                  prints the shared pause flag
+python -m engine.command_center --telegram on|off         switches the bot's buttons on (webhook to the control room) or back off
 
 Best effort everywhere: no key, no network or a slow reply never stops or breaks a run. The pause flag is cached in
 logs/remote-pause.json so a run that cannot reach the control room still obeys the last answer it got.
@@ -84,6 +85,33 @@ def set_remote_paused(flag: bool, root: Path = ROOT, env=None, call=_call) -> No
         call("POST", "pause", key, {"paused": flag})
 
 
+def telegram_setup(on: bool, env=None, call=_call) -> dict | None:
+    """On: hands the bot token and chat id to the control room, which keeps them in Vault and points the bot's webhook at
+    itself (buttons work without the Mac). Off: removes the webhook, so getUpdates polling works again as before."""
+    key = _key(env)
+    if not key:
+        return None
+    body = {"on": False}
+    if on:
+        try:
+            body = {"on": True, "token": secrets.get("TELEGRAM_BOT_TOKEN", env), "chat_id": secrets.get("TELEGRAM_CHAT_ID", env)}
+        except secrets.MissingSecret:
+            return None
+    return call("POST", "telegram-setup", key, body)
+
+
+def telegram_inbox(root: Path = ROOT, env=None, call=_call) -> list | None:
+    """With the webhook on, the messages the bot got that are not control-room commands (clip confirmations for the
+    Mac inbox), oldest first, each handed out once. None when the webhook is off or the control room is unreachable."""
+    key = _key(env)
+    if not key or not _live(root):
+        return None
+    out = call("POST", "telegram-inbox", key, {})
+    if not out or not out.get("webhook"):
+        return None
+    return [str(m) for m in out.get("messages", [])]
+
+
 def _json(path: Path):
     try:
         return json.loads(Path(path).read_text())
@@ -141,7 +169,12 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--report", metavar="PHASE", help="send one status snapshot, e.g. produce-start, publish-end")
     ap.add_argument("--paused", action="store_true", help="print the shared pause flag")
+    ap.add_argument("--telegram", choices=["on", "off"], help="switch the bot's control-room buttons on or off")
     a = ap.parse_args(argv)
+    if a.telegram:
+        out = telegram_setup(a.telegram == "on")
+        print(f"telegram buttons: {out}" if out else "telegram buttons: not changed (no SG_COMMAND_KEY, no bot token, or unreachable)")
+        return 0 if out and "error" not in out else 1
     if a.report:
         print("reported" if report(ROOT, a.report) else "not reported (no key or unreachable)")
     if a.paused:
