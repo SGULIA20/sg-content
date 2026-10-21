@@ -109,7 +109,7 @@ def test_cost_recorded_per_day(tmp_path):
 
 
 def test_budget_blocks_claude_and_uses_gemini(tmp_path):
-    (tmp_path / "s.json").write_text(json.dumps({"2026-10-20": {"usd": 6.0, "requests": 9}}))
+    (tmp_path / "s.json").write_text(json.dumps({"2026-10-20": {"usd": 10.0, "requests": 9}}))
     fm = FakeMessages(text=json.dumps(good_script()))
     g = lambda model, body, key=None: {"candidates": [{"content": {"parts": [{"text": json.dumps(good_script())}]}}]}
     p = _piece(); p.kind = "long"

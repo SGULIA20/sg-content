@@ -31,7 +31,7 @@ concurrency:
 jobs:
   produce:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 300          # batch lanes wait on jobs; a run may make 6-8 pieces (each piece is committed as it finishes)
     steps:
       - uses: actions/checkout@v4
         with:
@@ -70,7 +70,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           UNLISTED_DAY1: ${{ github.event.inputs.unlisted == 'true' && '1' || '' }}
         run: |
-          ARGS="--max ${{ github.event.inputs.max || '3' }}"
+          ARGS="--max ${{ github.event.inputs.max || '6' }}"
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           python -m engine.produce $ARGS
       - name: Prune media older than 14 days

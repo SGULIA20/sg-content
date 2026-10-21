@@ -29,7 +29,7 @@ def test_produce_schedule_and_guards():
     crons = [s["cron"] for s in data[True]["schedule"]] if True in data else [s["cron"] for s in data["on"]["schedule"]]
     assert "13 7 * * *" in crons and "43 7 * * *" in crons and "13 9 * * *" in crons     # several chances after the 07:00 UTC quota reset
     job = data["jobs"]["produce"]
-    assert job["timeout-minutes"] == 120 and data["concurrency"]["group"] == "produce"
+    assert job["timeout-minutes"] == 300 and data["concurrency"]["group"] == "produce"
     steps = " ".join(s.get("run", "") for s in job["steps"])
     assert "python -m pytest -q -m \"not slow\"" in steps and "python -m engine.produce" in steps and "prune_out.py" in steps
 

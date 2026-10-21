@@ -62,7 +62,7 @@ def test_paint_piece_parks_when_the_job_outlives_the_wait_and_resumes_the_same_j
 
 def test_paint_piece_respects_the_daily_and_monthly_ceilings(tmp_path):
     spend = tmp_path / "s.json"
-    spend.write_text(json.dumps({"2026-10-22": {"inr": 449.0, "requests": 1}}))
+    spend.write_text(json.dumps({"2026-10-22": {"inr": 899.0, "requests": 1}}))
     with pytest.raises(art.ImageBudget):
         artbatch.paint_piece(_piece(), [("p", [], "4:5")], key="k", cache_dir=tmp_path / "c", spend=spend, today=date(2026, 10, 22), post=lambda *a: (500, {}))
     spend.write_text(json.dumps({f"2026-10-{d:02d}": {"inr": 300.0, "requests": 1} for d in range(1, 21)}))        # ₹6,000 this month already
