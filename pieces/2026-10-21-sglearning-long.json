@@ -2,125 +2,624 @@
  "channel": "sglearning",
  "facts": [
   {
-   "label": "reported",
-   "number": 1.04,
-   "quote": "Loan amount: Rs 50 lakh. EMI: Rs 43,390 per month. Total repayment: Around Rs 1.04 crore.",
-   "source_date": "2026-07-06",
-   "source_name": "ET",
-   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdOdIFw-1smJc8VCYFO-q-90BUc8_nHzcKVzPXNXrFfEu0o35oJTtXdWSceM5g1tfRjFk7ssxVV1tmUX0328TxcGMIkQDZp_o02JycHjHw5prs4Diwo7ZtAos7a6KmNr9-anTB7eQD6vHeVgv5yb5_Q0CSqCsj2pICPo22ZIJWraVJAeIXWXvFHXW_Z8ihZ16ilyCRPrbnSR6sopunSEWPjnmexU8pBsflyoPPXkHUjkbQ-pNZapCLVDDq0seR3l3ulOWDQLlH4sKWM4gSgufWZqd3oyg=",
-   "text": "A borrower taking a 20-year home loan of Rs 50 lakh at an interest rate of 8.5 percent incurs a total repayment of around Rs 1.04 crore.",
-   "unit": "crore INR"
+   "label": "official",
+   "number": 120000.0,
+   "quote": "... would have been ₹60,000, ₹1,20,000, and ₹1,80,000, respectively.",
+   "source_date": "2026-10-14",
+   "source_name": "Tata Mutual Fund",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8sCMrV7gzVxIe2GO309s3qkrd7U6je_T0FcCykIKLYiap0XN2y0Oyt1sYjd7-ohffL4v4Ky16BvED0LuvxrtiSL9o9awRoQcm7RR1jJsU9hu2wRS0biTa0eFL59ES5EneIgmKhWfG9M_WiS9gS6RMjD2zeii7yaTXcr8iTMhnq0CKHNOQmfd-MAR-des0QNDQzw==",
+   "text": "Investing 500 rupees per month over a 20-year horizon amounts to a total cumulative principal contribution of 1.20 lakh rupees.",
+   "unit": "INR"
   },
   {
-   "label": "reported",
-   "number": 54.0,
-   "quote": "Total interest paid: Around Rs 54 lakh.",
-   "source_date": "2026-07-06",
-   "source_name": "ET",
-   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdOdIFw-1smJc8VCYFO-q-90BUc8_nHzcKVzPXNXrFfEu0o35oJTtXdWSceM5g1tfRjFk7ssxVV1tmUX0328TxcGMIkQDZp_o02JycHjHw5prs4Diwo7ZtAos7a6KmNr9-anTB7eQD6vHeVgv5yb5_Q0CSqCsj2pICPo22ZIJWraVJAeIXWXvFHXW_Z8ihZ16ilyCRPrbnSR6sopunSEWPjnmexU8pBsflyoPPXkHUjkbQ-pNZapCLVDDq0seR3l3ulOWDQLlH4sKWM4gSgufWZqd3oyg=",
-   "text": "Total interest paid on a 20-year Rs 50 lakh home loan at an 8.5 percent interest rate reaches around Rs 54 lakh, surpassing the borrowed principal.",
+   "label": "official",
+   "number": 4.3,
+   "quote": "At an assumed 11% annual return, these amounts could have potentially grown to approximately ₹1.05 lakhs, ₹4.30 lakhs, and ₹14 lakhs, respectively.",
+   "source_date": "2026-10-14",
+   "source_name": "Tata Mutual Fund",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8sCMrV7gzVxIe2GO309s3qkrd7U6je_T0FcCykIKLYiap0XN2y0Oyt1sYjd7-ohffL4v4Ky16BvED0LuvxrtiSL9o9awRoQcm7RR1jJsU9hu2wRS0biTa0eFL59ES5EneIgmKhWfG9M_WiS9gS6RMjD2zeii7yaTXcr8iTMhnq0CKHNOQmfd-MAR-des0QNDQzw==",
+   "text": "Under an illustrative 11 percent annual return, a 500-rupee monthly SIP over 20 years yields an estimated corpus of approximately 4.30 lakh rupees.",
    "unit": "lakh INR"
   },
   {
-   "label": "analyst-view",
-   "number": 70.0,
-   "quote": "He pointed out that during the first five years, nearly 70% of every rupee paid through the EMI goes towards interest rather than reducing the principal.",
-   "source_date": "2026-07-06",
+   "label": "reported",
+   "number": 87.3,
+   "quote": "According to a report by DSP Mutual Fund, a Rs 10,000 monthly SIP maintained for 20 years would have generated a terminal corpus of Rs 87.3 lakh, based on the Nifty 50 TRI for the period from September 2006 to August 2026.",
+   "source_date": "2026-09-07",
    "source_name": "ET",
-   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdOdIFw-1smJc8VCYFO-q-90BUc8_nHzcKVzPXNXrFfEu0o35oJTtXdWSceM5g1tfRjFk7ssxVV1tmUX0328TxcGMIkQDZp_o02JycHjHw5prs4Diwo7ZtAos7a6KmNr9-anTB7eQD6vHeVgv5yb5_Q0CSqCsj2pICPo22ZIJWraVJAeIXWXvFHXW_Z8ihZ16ilyCRPrbnSR6sopunSEWPjnmexU8pBsflyoPPXkHUjkbQ-pNZapCLVDDq0seR3l3ulOWDQLlH4sKWM4gSgufWZqd3oyg=",
-   "text": "During the first five years of a standard home loan, nearly 70 percent of every rupee paid via EMI goes toward interest rather than principal repayment.",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjPtKQ8a_tHmueENyp0gxveYurwBb8MgeEhW4uzcYxr5hhZTQWzd9OMZCtXEzDyPGB0k9-umj_jOEXJm43cC-7F_4bVHy8GQf-Mf7EVRo9J3ecWCbnOHiRmBt8sJ2spP85u0xBP3e1ZNYGMTu0apBSb3iIU1Z458adH55UrWpOYuIDGBlWlxSe1cqRhX5kg_SI2AHnqol20iF8pjTOJ9fvr4Q6G43bX8JsXrlfBLOyEB4vy_WH5G7RUntQ6J5udTDjmDU0TfP2IUfir6x3U5SgQL7AesAXOWEyI1k0gms9f0PFJVAEbns=",
+   "text": "A fixed monthly SIP of 10,000 rupees maintained for 20 years generated a terminal corpus of 87.3 lakh rupees in the Nifty 50 TRI between September 2006 and August 2026.",
+   "unit": "lakh INR"
+  },
+  {
+   "label": "reported",
+   "number": 25.0,
+   "quote": "Over the past 20 years, two-year annualised SIP returns in the Nifty 500 TRI have fallen below 5% on more than 25% of occasions.",
+   "source_date": "2026-09-07",
+   "source_name": "Mint",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXEF38gl9U-aW7rAKKAmJasucZzJ4ZlgiljByIa60eMUSFXgWa0DXbzFUN5kh0kDxhFhHJFgDFcWpaSsR6i2ve9am15oppIey7t4myWSFSxNo156fsiaIKisluVQrS2fa4gaDr6uwsCnxg8lJCazf326S4w--FS73Jpny5VL_keL7Ys6DoNt5gzqbGMLq23-23pgg4YQyy0lYOaju14puZn2C8X2eeg-KOKgKOU4-2sF1B47OsGLYk7gKJ_sNn9pnB6Fin7v3n4ayElAQopocfNH_vr4p7MM7xkHb-r2pLPxOZWQE244c=",
+   "text": "Over the past 20 years, two-year annualized SIP returns in the Nifty 500 TRI dropped below 5 percent in more than 25 percent of examined rolling periods.",
    "unit": "pct"
   },
   {
-   "label": "analyst-view",
-   "number": 15.0,
-   "quote": "Kaushik explained that paying one additional EMI annually can effectively reduce a 20-year loan to 15 years, because the extra instalment is applied entirely toward the principal.",
-   "source_date": "2026-03-17",
+   "label": "reported",
+   "number": 69.0,
+   "quote": "In fact, nearly 69% delivered double-digit annualised returns.",
+   "source_date": "2026-09-07",
+   "source_name": "Mint",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXEF38gl9U-aW7rAKKAmJasucZzJ4ZlgiljByIa60eMUSFXgWa0DXbzFUN5kh0kDxhFhHJFgDFcWpaSsR6i2ve9am15oppIey7t4myWSFSxNo156fsiaIKisluVQrS2fa4gaDr6uwsCnxg8lJCazf326S4w--FS73Jpny5VL_keL7Ys6DoNt5gzqbGMLq23-23pgg4YQyy0lYOaju14puZn2C8X2eeg-KOKgKOU4-2sF1B47OsGLYk7gKJ_sNn9pnB6Fin7v3n4ayElAQopocfNH_vr4p7MM7xkHb-r2pLPxOZWQE244c=",
+   "text": "Nearly 69 percent of five-year SIPs that delivered negative returns during their first two years rebounded into double-digit annualized returns after five years.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 1.12,
+   "quote": "The average diversified equity fund's direct plan has an annualised expense ratio of around 1.12%, compared with 2.07% for the regular plan.",
+   "source_date": "2026-08-10",
    "source_name": "ET",
-   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfCaC_UlQt2ZijnpgXV5HDAGzT9Sfy5mAlRufqUMc5uUHiAXStF8gDzFspu5N9EFb6S4UVctHuGmSmvINcNZae2YO2p3Ize_szg30d7bR8MPFN-mDG7VgWfVFq_31DguIP9zh5cQj9BYn4DQhLF8l_ISNtpqR7NLes2ienj5SmkogecxwWMV4pL4Hwmab8u7PBuexF44mKxd7ixAA7T6sy9mTID5_vrbwqlMuSsIeXPXs0rq23pIj_HWbj2BVcyLQjV11OHPB-JKhKkJYlWAUmBpoL4arwOg==",
-   "text": "Paying one additional equated monthly instalment per year can shorten a 20-year home loan tenure to 15 years by directing the extra payment straight to the principal.",
-   "unit": "years"
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZm0YjIAtgncOtX-TXXgnShGWBFM4O_7CZiwmFMfacAR9b0YeBr4DB4gTvGSOIfVSS1k5ndfFHRwxo59x4-fmf7ODW1G9_n46OrhYHVtLlDFw9zQ20vdeyy_HMbTxKJ2jTvbwNkyCkVxxfPhSZlPDnYQ1OcCJKWjYJjhuV5Mv-wUr-SYKjy9mN6zrOxJ6MLsj-BBAel5T4CKTnt8i-ImbwwHfsvwM9dNaDrCUWlt3VewdNBByJu_ef6Ob7l8qNlZa5ag==",
+   "text": "The average direct plan for a diversified equity fund charged an annualized expense ratio of 1.12 percent versus 2.07 percent for the regular plan.",
+   "unit": "pct"
   },
   {
    "label": "analyst-view",
    "number": 5.0,
-   "quote": "He also emphasised that gradually increasing EMIs by around 5% each year in line with salary growth can shorten a 20-year mortgage to roughly 12 years, saving nearly Rs 30 lakh on a Rs 50 lakh loan at 9% interest.",
-   "source_date": "2026-03-17",
-   "source_name": "ET",
-   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfCaC_UlQt2ZijnpgXV5HDAGzT9Sfy5mAlRufqUMc5uUHiAXStF8gDzFspu5N9EFb6S4UVctHuGmSmvINcNZae2YO2p3Ize_szg30d7bR8MPFN-mDG7VgWfVFq_31DguIP9zh5cQj9BYn4DQhLF8l_ISNtpqR7NLes2ienj5SmkogecxwWMV4pL4Hwmab8u7PBuexF44mKxd7ixAA7T6sy9mTID5_vrbwqlMuSsIeXPXs0rq23pIj_HWbj2BVcyLQjV11OHPB-JKhKkJYlWAUmBpoL4arwOg==",
-   "text": "Increasing home loan EMIs by 5 percent each year in tandem with salary hikes can compress a 20-year repayment schedule to approximately 12 years.",
-   "unit": "pct"
-  },
-  {
-   "label": "analyst-view",
-   "number": 30.0,
-   "quote": "He also emphasised that gradually increasing EMIs by around 5% each year in line with salary growth can shorten a 20-year mortgage to roughly 12 years, saving nearly Rs 30 lakh on a Rs 50 lakh loan at 9% interest.",
-   "source_date": "2026-03-17",
-   "source_name": "ET",
-   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfCaC_UlQt2ZijnpgXV5HDAGzT9Sfy5mAlRufqUMc5uUHiAXStF8gDzFspu5N9EFb6S4UVctHuGmSmvINcNZae2YO2p3Ize_szg30d7bR8MPFN-mDG7VgWfVFq_31DguIP9zh5cQj9BYn4DQhLF8l_ISNtpqR7NLes2ienj5SmkogecxwWMV4pL4Hwmab8u7PBuexF44mKxd7ixAA7T6sy9mTID5_vrbwqlMuSsIeXPXs0rq23pIj_HWbj2BVcyLQjV11OHPB-JKhKkJYlWAUmBpoL4arwOg==",
-   "text": "Stepping up EMIs by 5 percent annually on a Rs 50 lakh loan at a 9 percent interest rate saves nearly Rs 30 lakh in cumulative interest payments.",
-   "unit": "lakh INR"
-  },
-  {
-   "label": "reported",
-   "number": 795.0,
-   "quote": "If the interest rate rises from 8.5% to 8.75%, the monthly EMI would increase from ₹43,391 to ₹44,186, an additional ₹795 a month, according to calculations provided by Tata.",
-   "source_date": "2026-10-19",
+   "quote": "A small difference of 1% can, therefore, create wealth of around ₹5 lakh after 20 years.",
+   "source_date": "2026-10-14",
    "source_name": "Mint",
-   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeGZn7H4g1E3Q5XxMafOT2b_7Rt1qToE9j4DirghF0BXE3IWHntBuIPfY8o7NJHqKnwduH39nnXfj1KzuGV5TVrHucnVrIMSrBtp2FteMezt1XWIDNMWLYUsK-QYWrrSAGfOS0JdCn_fr0NsgqxaATWGcOUIo-RUIfsRSs-0LI9uBByMN90Yd_Dawf51ZehHNDGzSdq6-b-K1lJuVPa5hzjS2QsgD4jfoompkihOpABCL0b2h42_i4E7tTPVi8ImI2wwlvPHKwezCfquwKjNLQ8Oo8F5AyjEmywHpJEnt0a6EoUw==",
-   "text": "A 25-basis-point increase in home loan interest rates from 8.5 percent to 8.75 percent lifts the monthly EMI on a 20-year Rs 50 lakh loan by Rs 795.",
-   "unit": "INR"
-  },
-  {
-   "label": "reported",
-   "number": 56.05,
-   "quote": "The increase in the interest rate would also raise the total interest payable over the loan tenure from approximately ₹54.14 lakh to ₹56.05 lakh, assuming the revised EMI is paid over the original 20-year period.",
-   "source_date": "2026-10-19",
-   "source_name": "Mint",
-   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeGZn7H4g1E3Q5XxMafOT2b_7Rt1qToE9j4DirghF0BXE3IWHntBuIPfY8o7NJHqKnwduH39nnXfj1KzuGV5TVrHucnVrIMSrBtp2FteMezt1XWIDNMWLYUsK-QYWrrSAGfOS0JdCn_fr0NsgqxaATWGcOUIo-RUIfsRSs-0LI9uBByMN90Yd_Dawf51ZehHNDGzSdq6-b-K1lJuVPa5hzjS2QsgD4jfoompkihOpABCL0b2h42_i4E7tTPVi8ImI2wwlvPHKwezCfquwKjNLQ8Oo8F5AyjEmywHpJEnt0a6EoUw==",
-   "text": "A rate reset from 8.5 percent to 8.75 percent raises the total interest payable over a 20-year Rs 50 lakh loan tenure from approximately Rs 54.14 lakh to Rs 56.05 lakh.",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8gkD7YWKhf8MrCu5RRqs7jqr1MUZRikK7jC9Fu4zzarAAwimGHsXtGIp8LBhrVX8dOr4saCy5AvCfJ3WxckamWctSVBJd7t7EXw4rzdv8swkqslworXsa6Rtk6p8V6wvd11ruBTc8uAjtnhhrFh5maGlPPMoP5NEgrnUp0EI5rFBtMm6GmHPvNw6Q-u8I5AH6OUkTzb7GrNVqNx4_l5VVTgk=",
+   "text": "A one percentage point difference in annual expense ratios on a 5 lakh rupee investment compounded over 20 years can create a wealth difference of approximately 5 lakh rupees.",
    "unit": "lakh INR"
   },
   {
    "label": "official",
-   "number": 0.0,
-   "quote": "For all loans granted for purposes other than business to individuals, with or without co-obligant(s), an RE shall not levy pre-payment charges;",
-   "source_date": "2025-07-02",
-   "source_name": "RBI",
-   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFwakeJ2vtxueAGUTiditlVWF2io3R1pVwFpa0x06KrIz01BvWsgsQQI3Cy_J8bXbI7oKKZTPjAARWebqF6hrlZe8DNXL0edeOuPdRo2Pj8Hy4kpV0E1bQiWh3iiFXPIO-echwPRiJ9pCjMfnTZiyRIGvs",
-   "text": "The Reserve Bank of India mandates that regulated entities are barred from levying prepayment charges on floating-rate loans sanctioned to individuals for non-business purposes.",
-   "unit": "INR"
+   "number": 32490.0,
+   "quote": "SIP contributions stood at ₹32,490 crore, with 10.06 crore contributing SIP accounts during the month, reflecting continued investor participation in systematic investing.",
+   "source_date": "2026-10-12",
+   "source_name": "ET",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1HEpRESbmz4zOvYqh1LJknk9fZ3y_-DgHneuZDgltQ00Y7w34psglbWtpCs6x7McqxRN3mltCU-16iGCTyDQ_OEtUT_0t3qNyokBEFt-NZNPOVs3bkIpyF0nectMq-Ur-xs40pBBFiJVlBBReoUuNAWkr1x8oUT1M7D16XmfiLHApQOY5sAUJ4-LjEAL8EoPd0g70oPg3IjfnmDlnhH1D6le5QEhdH9g3yyjACSfyfDKQC2hawH8BICpj5ljVxg==",
+   "text": "Monthly SIP contributions into Indian mutual funds reached a record 32,490 crore rupees in September 2026.",
+   "unit": "crore INR"
   },
   {
-   "label": "reported",
-   "number": 2.0,
-   "quote": "For home loan borrowers, this includes the Rs.2 lakh deduction under Section 24(b) on interest paid and Rs.1.5 lakh of principal paid, which earlier brought down the cost of borrowing.",
-   "source_date": "2025-06-23",
+   "label": "official",
+   "number": 41.0,
+   "quote": "According to AMFI (Association of Mutual Funds of India, the mutual fund industry's trade body), 41% of assets in direct plans are redeemed within the first year, and only 20% remain invested for over three years, compared with 32% in regular plans.",
+   "source_date": "2026-08-10",
    "source_name": "ET",
-   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEIHO67CHdqSXJ-23Re_-_IVYUlt8zMuFwvpYqkvGtCxbv4uZLP2YyKpGeA5G-3nj_xfaK8oOXx39iqtLVKqwq2ZAQ2DCu5oJQ7PZzxQjn7IwZJfQqaPzKV-qZd8YlxFQUGz9Cr8UrqXfh5kv9IsatAKggXBkHnaE86G87bsBkX_Y-qjXdcKABoI-4qHQ8IPp8weaVcqP0ekFD7jcsrtI1eXIVPIqAodvXi6xF9aqRINthymPyCqciCyx1HY8S54bOOXMVWJ5jLaGf3rr734Sg9oaTx",
-   "text": "Under the old tax regime, home loan borrowers were eligible for an income tax deduction of up to Rs 2 lakh on interest paid under Section 24(b).",
-   "unit": "lakh INR"
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZm0YjIAtgncOtX-TXXgnShGWBFM4O_7CZiwmFMfacAR9b0YeBr4DB4gTvGSOIfVSS1k5ndfFHRwxo59x4-fmf7ODW1G9_n46OrhYHVtLlDFw9zQ20vdeyy_HMbTxKJ2jTvbwNkyCkVxxfPhSZlPDnYQ1OcCJKWjYJjhuV5Mv-wUr-SYKjy9mN6zrOxJ6MLsj-BBAel5T4CKTnt8i-ImbwwHfsvwM9dNaDrCUWlt3VewdNBByJu_ef6Ob7l8qNlZa5ag==",
+   "text": "AMFI data shows that 41 percent of assets in direct mutual fund plans are redeemed by individual investors within their first year.",
+   "unit": "pct"
   }
  ],
  "id": "2026-10-21-sglearning-long",
  "ids": {},
  "kind": "long",
  "publish_day": "2026-10-21",
- "reasons": [],
- "script": null,
- "status": "researched",
+ "reasons": [
+  "try 1: numbers without a source: 10000, 6, 10000",
+  "try 2: numbers without a source: 1e+07",
+  "try 3: numbers without a source: 500, 500, 500, 500, 500, 11, 500, 11, 50, 10000, 50, 50, 500, 500, 500, 500, 2.07, 1, 1, 1, 1, 500, 500, 500, 500, 500, 500, 11, 10000, 50, 2.07"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "500 ki SIP se 20 saal mein kya banega? 🤔\nPapa bole FD safe hai, Bhai bola SIP chalegi.\nPhir market gira, aur asli imtihaan shuru hua.\nExpense ratio ka chupa kharcha bhi dekha aapne?\nAapki SIP chal rahi hai, haan ya na?\nYeh investment advice nahi hai.\nShare karo us bhai ko jo market girte hi SIP band karne ki sochta hai.",
+    "hashtags": [
+     "#SIP",
+     "#MutualFunds",
+     "#LearningWithSG",
+     "#PersonalFinanceIndia",
+     "#HinglishFinance",
+     "#MoneyTipsHindi",
+     "#SeedhiBaat"
+    ]
+   },
+   "threads": {
+    "text": "500 rupaye ki SIP, 20 saal: kya sach mein kuch banta hai? Aur market gire toh band karein ya chalne dein? Aap kya karte ho? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 500 ki SIP: ghar ki behes",
+     "00:00 Sawaal 1: 20 saal mein kya banega?",
+     "00:00 Sawaal 2: Market gire toh band karein?",
+     "00:00 Sawaal 3: Expense ratio kya khata hai?",
+     "00:00 Sabse badi galti aur kya karein"
+    ],
+    "description": "500 rupaye ki SIP se 20 saal mein kya banta hai, aur kya nahi? Ek ghar ki kahani mein samjhiye rupee cost averaging, market girne par SIP band karne ki galti, aur expense ratio ka chupa kharcha. Saare numbers reports se hain, andaze hain, wade nahi. Share karo us bhai ko jo market girte hi SIP band karne ki sochta hai.",
+    "tags": [
+     "SIP",
+     "mutual fund",
+     "500 SIP",
+     "rupee cost averaging",
+     "expense ratio",
+     "direct plan",
+     "regular plan",
+     "SIP band karein",
+     "compounding",
+     "Hinglish finance",
+     "Learning with SG",
+     "personal finance India"
+    ],
+    "title": "SIP 500 rupaye: 20 saal mein kitna banega?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "₹4.30 lakh",
+    "line": "500 ki SIP, 20 saal, maana hua 11% saalana return (andaza, wada nahi)",
+    "source": "Tata Mutual Fund"
+   },
+   {
+    "big_number": "₹87.3 lakh",
+    "line": "10,000 ki mahina SIP, Nifty 50 TRI, Sep 2006 se Aug 2026",
+    "source": "ET / DSP Mutual Fund"
+   },
+   {
+    "big_number": "69%",
+    "line": "Shuru ke 2 saal nuksaan wali 5 saal ki SIPs ne baad mein double-digit return diya",
+    "source": "Mint"
+   },
+   {
+    "big_number": "2.07%",
+    "line": "Regular plan ka average expense ratio; direct plan mein lagbhag 1.12%",
+    "source": "ET"
+   },
+   {
+    "big_number": "41%",
+    "line": "Direct plans ka paisa jo pehle saal mein hi nikaal liya jaata hai",
+    "source": "ET / AMFI"
+   }
+  ],
+  "carousel": true,
+  "end_question": "Aapki SIP chal rahi hai, haan ya na?",
+  "hook": "500 rupaye mahine ki SIP se, 20 saal mein sach mein kya banta hai?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "500 ki SIP: ghar ki behes",
+    "visual": {
+     "card": null,
+     "prompt": "Night, family dinner table in a middle-class Indian home; BHAI in a hoodie proudly places his phone on the table, PAPA in kurta laughing, MUMMY in saree setting down chai cups looking worried, BEHEN in office wear raising an eyebrow, warm yellow tube light",
+     "type": "art"
+    },
+    "vo": "Raat ke khane par Bhai ne phone table par rakha. Bola, maine SIP shuru ki hai, 500 rupaye mahine ki. Papa hanse, 500 se kya hoga beta? Mummy ne chai rakhi aur chup ho gayi. Behen ne bas itna poocha, kitne saal ke liye?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Close view of PAPA counting on his fingers at the dinner table, FD receipts peeking from his kurta pocket, BHAI looking slightly less confident, plates half eaten, night",
+     "type": "art"
+    },
+    "vo": "Bhai ne seena taan kar kaha, 20 saal ke liye. Papa ne ungliyon par hisaab lagaya. 500 mahina, 20 saal, matlab 1.20 lakh rupaye jeb se. Itna toh FD mein bhi badh jaata, Papa bole. Table par achanak sannata chha gaya."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Wide illustrated view of a city at dusk, hundreds of apartment windows glowing, in many windows tiny people tapping phones, small streams of coins flowing from windows toward a large distant building, no text",
+     "type": "art"
+    },
+    "vo": "Yahi sawaal aaj bahut se gharon mein chal raha hai. September 2026 mein India walon ne SIP mein 32,490 crore rupaye daale. Yeh ab tak ka sabse bada mahina tha. Matlab Bhai akela nahi hai. Par bheed ke saath chalna, samajh nahi kehlata."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG, early forties, beard, striped shirt, sits at the edge of the same dinner table as narrator, calmly raising a hand while the family listens in soft focus behind him, evening",
+     "type": "art"
+    },
+    "vo": "Toh aaj is ghar ki kahani se 3 sawaal samjhenge. Sawaal 1: 500 ki SIP se 20 saal mein kya banta hai? Aur sach bolein toh, kya nahi banta, woh bhi dekhenge. Kyunki adhoori kahani sabse mehngi padti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI holding his glowing phone in the dark living room, the screen light on his curious face, PAPA and BEHEN silhouetted behind him, night, no text on screen",
+     "type": "art"
+    },
+    "vo": "Sawaal 2: market gire toh SIP band karna sahi hai ya galat? Aur aakhri sawaal: expense ratio naam ki cheez chupke se kitna kha jaati hai? Sabke jawab isi ghar ke andar milenge, Bhai ke phone mein."
+   },
+   {
+    "facts_used": [],
+    "label": "Sawaal 1: 20 saal mein kya banega?",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated concept panel: many small hands from different people dropping coins into one big clay pot, a calm fund manager in a shirt sorting coins into baskets labelled only with company logos shapes, bright daylight, no text",
+     "type": "art"
+    },
+    "vo": "Pehle samjho SIP hai kya. SIP yaani Systematic Investment Plan. Har mahine tay din par, bank se tay paisa katta hai. Woh paisa mutual fund mein jaata hai. Mutual fund yaani bahut logon ka paisa ikattha, jise fund manager shares mein lagata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Morning, BHAI brushing teeth while glancing at his phone buzzing on the bathroom shelf, small illustrated sweet box beside it with one barfi piece lifted out, sunlight through a window",
+     "type": "art"
+    },
+    "vo": "Agle mahine subah Bhai ke phone par message aaya, paisa kat gaya. Badle mein use units mile. Unit yaani fund ka chhota sa hissa, jaise mithai ke dibbe mein se barfi ka tukda. Us unit ka daam roz badalta hai, market ke saath."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Split panel: on the left a tall stack of coins buys a few small boxes on a high shelf, on the right the same stack buys many boxes on a low shelf, BHAI watching both sides with a thoughtful smile",
+     "type": "art"
+    },
+    "vo": "Ab yahan aata hai asli khel, rupee cost averaging. Matlab, har mahine paisa wahi, par daam alag. Market mehnga ho toh kam units milti hain. Market sasta ho toh wahi paisa zyada units le aata hai. Aapko kuch karna nahi padta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SHOPKEEPER at a mandi in the morning, handing the same small bundle of cash to an onion seller, a big sack of onions on one side and a smaller sack on the other, busy market, cheerful mood",
+     "type": "art"
+    },
+    "vo": "Isko aise samjho. SHOPKEEPER har hafte tay paise ka pyaaz kharidta hai. Pyaaz sasta, toh bori bhar jaati hai. Pyaaz mehnga, toh thoda kam aata hai. Saal ke ant mein uska average daam apne aap theek ho jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI lying on his bed in the afternoon, arms behind his head, relaxed and smiling, his phone resting on his chest, a calendar on the wall with small tick marks, no text",
+     "type": "art"
+    },
+    "vo": "Bhai ko yahi baat sabse achhi lagi. Market kab upar jaayega, kab neeche, yeh koi nahi jaanta. SIP mein yeh jaanna zaroori hi nahi. Bas har mahine chalte raho, average apna kaam karega. Logic seedha tha, aur sahi bhi tha."
+   },
+   {
+    "facts_used": [
+     1,
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA at the dining table with reading glasses, looking at a printout and leaning forward in surprise, BHAI beside him pointing at the paper, chai steaming, late morning light, no readable text",
+     "type": "art"
+    },
+    "vo": "Ab Papa wala sawaal, 20 saal baad kitna? Tata Mutual Fund ne hisaab dikhaya hai. Agar saalana return 11 percent maan lo, toh 500 ki SIP lagbhag 4.30 lakh ban sakti hai. Jeb se gaye the sirf 1.20 lakh."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated snowball rolling down a long gentle hill, tiny at the top and huge at the bottom, BETA and BETI chasing it laughing, bright winter afternoon",
+     "type": "art"
+    },
+    "vo": "Yeh fark kahan se aaya? Compounding se. Compounding yaani return par bhi return milna, byaaj par byaaj. Shuru ke saalon mein kuch khaas dikhta nahi. Aakhri saalon mein paisa tezi se badhta hai, jaise baraf ka gola dhalaan par."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN standing by a window holding the same printout, frowning sceptically, outside the window a winding mountain road climbing up and down, evening light",
+     "type": "art"
+    },
+    "vo": "Par dhyaan do, 11 percent sirf maana hua number hai. Yeh andaza hai, wada nahi. Kisi saal market zyada dega, kisi saal kuch nahi. Asli zindagi mein return seedhi line mein nahi chalta. Woh pahadi raaste jaisa chalta hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "An old wall calendar with pages flying off in a whirl, a small sapling in a pot slowly growing into a tall tree across the panel, soft golden light, no text",
+     "type": "art"
+    },
+    "vo": "Toh asli data kya kehta hai? DSP Mutual Fund ki report ke hisaab se, Nifty 50 mein 10,000 ki mahina SIP, September 2006 se August 2026 tak chali. 20 saal baad yeh lagbhag 87.3 lakh bani."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A large woven basket filled with small colourful company-shaped blocks, a hand dropping a few coins back into it, SG standing beside it with a cautious expression, neutral studio-like background",
+     "type": "art"
+    },
+    "vo": "Nifty 50 yaani desh ki 50 badi companies ka basket. TRI yaani dividend bhi wapas jod kar hisaab. Is daur mein market ne achhe saal bhi dekhe, bure bhi. Par agle 20 saal bhi aise hi honge, yeh koi nahi keh sakta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI standing in front of a dream bubble showing a house and a car fading away, while in his hand a small seedling glows warmly, gentle dusk light",
+     "type": "art"
+    },
+    "vo": "Toh 500 ki SIP se kya nahi banega? Ghar, gaadi ya poora retirement, akele 500 se nahi. Par 500 se aadat banti hai. Aur woh aadat badhti hai, jab salary badhti hai. Asli taaqat raqam mein nahi, aadat mein hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "Sawaal 2: Market gire toh band karein?",
+    "visual": {
+     "card": null,
+     "prompt": "Early morning, BHAI sitting on the edge of his bed, phone screen glowing red on his shocked face, hair messy, curtains half open, cold blue light, no text on screen",
+     "type": "art"
+    },
+    "vo": "Ab kahani ka sabse mushkil hissa. Bhai ki SIP ko 2 saal ho gaye the. Subah usne phone khola, toh portfolio laal tha. Jitna daala tha, usse kam dikh raha tha. Uske haath halke se kaanpne lage."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Breakfast scene, PAPA wagging a finger with FD receipts in hand, MUMMY in saree holding a chai cup with a worried face, BHAI looking at his phone with chat bubbles shapes floating, morning",
+     "type": "art"
+    },
+    "vo": "Papa ne kaha, maine pehle hi bola tha, FD safe hai. Mummy boli, beta band kar de, nuksaan aur badhega. Bhai ke dost ne WhatsApp par likha, sab nikal rahe hain. Sabki baat mein dar tha, data nahi tha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI pacing in his room, thumb hovering over his phone, a thought bubble showing him stepping off a falling escalator and stepping back on a rising one, tense afternoon light",
+     "type": "art"
+    },
+    "vo": "Bhai ko band karna samajhdaari lagi. Uska logic tha, pehle market ko girne do. Jab sambhal jaaye, tab wapas aaunga. Nuksaan wahin ruk jaayega, aur paisa bach jaayega. Sunne mein bilkul theek lagta hai, hai na?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SHOPKEEPER grinning at the mandi, happily filling a big sack with cheap onions, other customers walking away nervously, bright morning",
+     "type": "art"
+    },
+    "vo": "Par yahan baat ulti hai. Girta market hi woh waqt hai, jab SIP sasti units kharidti hai. Yaad hai pyaaz wala shopkeeper? Sasta pyaaz dekh kar woh dukaan band nahi karta. Woh khushi se bori bharta hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated hilly road seen from above with many dips and climbs, small cars driving through the dips steadily, SG standing at a viewpoint calmly pointing at the road, late afternoon",
+     "type": "art"
+    },
+    "vo": "Aur yeh girna anokha bhi nahi. Mint ki report kehti hai, pichhle 20 saal mein Nifty 500 TRI mein, 2 saal ka saalana SIP return 5 percent se neeche gaya. Aisa 25 percent se zyada baar hua."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A wilted plant in a pot slowly turning green and blooming across the panel, BHAI watching it in surprise, light changing from grey dawn to warm sunshine",
+     "type": "art"
+    },
+    "vo": "Ab asli twist suno. Jin 5 saal ki SIP ne shuru ke 2 saal mein nuksaan dikhaya, unka kya hua? Lagbhag 69 percent ne 5 saal poore hone par double-digit saalana return diya. Double-digit yaani return dahai mein."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Two illustrated people on a stalled train: one stays seated calmly with a book, the other jumps off onto the platform just as the train starts moving again, dusk station lights",
+     "type": "art"
+    },
+    "vo": "Matlab jo log bure 2 saal mein ruke rahe, unhe sasti units ka fayda mila. Jo beech mein band karke nikle, unka kaagaz ka nuksaan asli nuksaan ban gaya. Unhone neeche becha, aur upar ki chadhai miss kar di."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN in office wear gently taking the phone from BHAI's hand in the hallway, BHAI looking relieved, evening light from a doorway",
+     "type": "art"
+    },
+    "vo": "Behen ne Bhai ka phone liya aur kaha, ruk. Yeh paisa tujhe agle hafte toh nahi chahiye na? Bhai ne sar hilaya, nahi. Toh phir dar kis baat ka? SIP chalne de, Behen boli. Bhai ne phone jeb mein rakh liya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE arranging two separate steel boxes on a kitchen shelf, one marked only with a red cross symbol for emergency, the other with a small sapling drawing, calm night kitchen",
+     "type": "art"
+    },
+    "vo": "Haan, shart bhi hai. Jo paisa jaldi chahiye, woh SIP mein nahi hona chahiye. Emergency ka paisa alag rakho, bank mein ya FD mein. Tabhi gire market mein bhi aap SIP chala paoge, bina raat ki neend khoye."
+   },
+   {
+    "facts_used": [],
+    "label": "Sawaal 3: Expense ratio kya khata hai?",
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN at her office desk with a laptop, turning to BHAI on a video call on her phone, BHAI shrugging in his hoodie, afternoon office light, no readable text",
+     "type": "art"
+    },
+    "vo": "Kuch mahine baad Behen ne apni SIP ka statement dekha. Usne Bhai se poocha, tera plan direct hai ya regular? Bhai ne kandhe uchkaaye. Plan toh plan hai, isme kya fark? Yahi sawaal lagbhag sab poochte hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A glass jar full of coins with a tiny tap at the bottom slowly dripping coins out, a small office and a manager figure drawn faintly inside the dripping stream, quiet evening",
+     "type": "art"
+    },
+    "vo": "Expense ratio yaani fund chalane ki saalana fees. Fund manager, office, distributor, sabka kharcha isi se nikalta hai. Yeh aapke bill mein alag se nahi aata. Chupchaap fund ki value se kat jaata hai, roz thoda thoda."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Two identical roads leading to the same big building, on one road a friendly agent in a tie walks beside a customer, on the other a customer walks alone, sunny day",
+     "type": "art"
+    },
+    "vo": "Regular plan yaani jo aap kisi agent ya distributor ke zariye lete ho. Direct plan yaani seedha fund house se, bina beech wale ke. Fund wahi, manager wahi, shares bhi wahi. Bas fees alag hai, aur wahi asli baat hai."
+   },
+   {
+    "facts_used": [
+     5,
+     6
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Two identical tea cups side by side on a counter, one with a slightly bigger chip missing from its rim, BEHEN leaning in to compare them with narrowed eyes, daylight",
+     "type": "art"
+    },
+    "vo": "Kitni alag? ET ki report ke mutabik, diversified equity fund ka average direct plan lagbhag 1.12 percent leta hai. Regular plan lagbhag 2.07 percent leta hai. Matlab har saal lagbhag 1 percent ka fark."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI laughing at a roadside tea stall holding a small coin between two fingers, the chaiwala smiling, BEHEN beside him not laughing, evening street",
+     "type": "art"
+    },
+    "vo": "Bhai hansa, 1 percent? Itna toh chillar hai. Uski baat samajh bhi aati hai. 1 percent sunne mein chai ki tapri ka hisaab lagta hai. Par yeh fees har saal lagti hai, aur poore jama paise par lagti hai."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Two money plants growing in identical pots over time, one tall and full, the other noticeably shorter with leaves being nibbled by a tiny unseen insect, soft morning light",
+     "type": "art"
+    },
+    "vo": "Ab Mint ka hisaab dekho. 5 lakh rupaye 20 saal ke liye lagao. Sirf 1 percent kam fees se, aakhir mein lagbhag 5 lakh rupaye ka fark ban sakta hai. Jitna lagaya, utna hi sirf fees ke fark mein."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI on the rooftop staring wide-eyed at a water tank with a tiny leak dripping steadily, a puddle below, late afternoon sun",
+     "type": "art"
+    },
+    "vo": "Bhai ka muh khula reh gaya. Jo cheez dikhti nahi, wahi sabse zyada khaati hai. Jaise paani ki tanki mein chhota sa ched. Roz thoda tapakta hai, kisi ko pata nahi chalta. Saal baad tanki khaali milti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A kind middle-aged advisor sitting with PAPA at a small table, calmly explaining with open hands, PAPA nodding, warm home light in the evening",
+     "type": "art"
+    },
+    "vo": "Par seedhi baat, regular plan galat nahi hai. Achha agent salah deta hai, haath pakadta hai, gire market mein rokta hai. Uski fees isi kaam ki hai. Sawaal bas yeh hai, kya aapko woh madad chahiye ya nahi?"
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "Sabse badi galti aur kya karein",
+    "visual": {
+     "card": null,
+     "prompt": "A crowd of young people walking out of a garden gate early, while a few stay sitting under a newly planted tree, SG watching from the side with a concerned look, overcast day",
+     "type": "art"
+    },
+    "vo": "Ab sabse badi galti ki baat. Direct plan sasta hai, par usme khatra bhi chhupa hai. AMFI yaani mutual fund industry ki sanstha. Uske data ke hisaab se, direct plans ka 41 percent paisa pehle saal mein hi nikal jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Close-up of a young man's thumb pressing hard on a phone screen, a small seedling being pulled out of soil in the background by the same hand, dim night light, no text",
+     "type": "art"
+    },
+    "vo": "Socho, sasti fees toh bacha li, par time hi nahi diya. Na koi agent rokne wala, na koi samjhane wala. Market gira, app khola, button dabaya, paisa bahar. Compounding ko shuru hone ka mauka hi nahi mila."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE and SG at the kitchen table with a household budget notebook and a calculator, planning calmly, chai cups between them, soft evening light, no readable text",
+     "type": "art"
+    },
+    "vo": "Toh aap kya kar sakte ho? Pehle emergency ka paisa alag rakho. Phir SIP ki raqam itni rakho, jo har mahine aaraam se nikle. Chhoti raqam bhi chalegi. Shuru karna zaroori hai, badi raqam se shuru karna nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI sitting calmly on his balcony at sunset, phone face down beside him, looking at the horizon with a small confident smile, a potted plant growing next to him",
+     "type": "art"
+    },
+    "vo": "Salary badhe, toh SIP bhi thodi badhao. Apne fund ka expense ratio dekho, direct aur regular ka fark samjho. Market gire, toh pehle yeh kahani yaad karo, phir faisla lo. Goal yaad rakho, din ka bhaav nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The same family dinner table at night, now relaxed: PAPA with his FD receipts smiling, BHAI showing his phone, BEHEN and MUMMY laughing, BETA and BETI peeking in, warm cosy light",
+     "type": "art"
+    },
+    "vo": "Aaj us ghar mein Bhai ki SIP chal rahi hai. Papa ab bhi FD ke saath hain, aur woh bhi theek hai. Fark bas itna hai, ab sab samajhte hain ki kya ho raha hai. Yeh investment advice nahi hai. Apne goal ke hisaab se socho, ya qualified advisor se poocho."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG standing at the doorway of the family home at night, turning back toward the viewer with a friendly smile and a raised hand, family blurred and warm in the background",
+     "type": "art"
+    },
+    "vo": "Agli video mein baat karenge, SIP ka paisa nikaalte waqt tax kaise lagta hai. Woh kahani bhi isi ghar se niklegi. Par pehle comment mein bataiye, bas ek shabd mein. Aapki SIP chal rahi hai, haan ya na?"
+   }
+  ],
+  "thumbnail": {
+   "scene": "BHAI stares at his phone glowing red in the dark, thumb hovering over the screen, eyes wide and sweat on his forehead",
+   "words": [
+    "41%",
+    "BHAAG GAYE"
+   ]
+  },
+  "title": "500 ki SIP ka *sach*: 20 saal 📈"
+ },
+ "status": "rejected",
  "timings": [],
  "topic": {
   "hooks": [
-   "50 lakh ka ghar, 1 crore kyun dete ho?",
-   "Pehli 5 saal ki EMI mein ghar ka kitna hissa aapka hua?",
-   "Saal mein ek extra EMI se kitne saal bachte hain?"
+   "500 ki SIP se kya hoga?",
+   "Market girne par SIP band karna sahi hai?",
+   "Expense ratio kya khata hai?"
   ],
-  "id": "home-loan-double",
-  "summary": "A family buys a flat on a 20-year home loan; the amortisation schedule shows interest front-loaded, the total paid roughly double the price, and what prepaying one extra EMI a year does. Explain EMI, principal, interest, prepayment, floating rate.",
+  "id": "sip-rupee-cost",
+  "summary": "How a monthly SIP in a mutual fund works, rupee cost averaging, the difference between returns in a good decade and a flat one, expense ratio, why stopping in a crash hurts; honest ranges, no promises.",
   "target_minutes": 12,
-  "title": "50 lakh ka ghar, 1 crore ka bill: 20 saal ki EMI mein bank kitna kamata hai"
+  "title": "500 rupaye mahine ki SIP: 20 saal mein kya bana, aur kya nahi bana"
  },
- "updated": "2026-10-21T14:16:28+00:00",
- "writer": ""
+ "updated": "2026-10-21T16:04:52+00:00",
+ "writer": "claude"
 }
