@@ -338,5 +338,6 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
                 claims_check=lambda piece: claims.match(lint.all_text(piece), piece.facts, library,
                                                         context=(piece.topic.get("title"), piece.topic.get("title_hi"))),
                 commons=art.commons_photo, library=library, hashtags=hashtags, voice_id=default_voice,
-                cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for, subtitles=subtitles_fn,
-                voice_lines=lambda texts, vid, out_dir: voice.batched(texts, vid, out_dir))
+                cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for, subtitles=subtitles_fn)
+    # voice.batched (several scenes per TTS request) stays unwired: on 22 Oct 2026 the model's paragraph pauses were not distinct enough
+    # to cut on, and the transcript check sent every group back to line-by-line. Wire it in once the cut is reliable.
