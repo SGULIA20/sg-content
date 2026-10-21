@@ -28,7 +28,7 @@ const ws=[...document.querySelectorAll(".w")],box=document.querySelector(".words
 let fs=Math.floor(H>W?W*0.15:H*0.26);
 const fit=()=>ws.forEach(w=>{w.style.fontSize=fs+"px"});
 fit();
-const limit=H>W?W*0.92:W*0.56;
+const limit=H>W?W*0.92:W*0.44;   // landscape: words stay inside the dark left column, never over the face
 const tall=()=>ws.reduce((a,w)=>a+w.offsetHeight,0)>H*0.9;
 while(fs>60&&(Math.max(...ws.map(w=>w.offsetWidth))>limit||tall())){fs-=6;fit()}
 </script>
