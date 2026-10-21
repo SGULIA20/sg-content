@@ -17,6 +17,7 @@ def is_story(piece: Piece) -> bool:
     return _is(piece.channel, piece.kind)
 QA_TOO_LONG = re.compile(r"duration: ([\d.]+)s, allowed [\d.]+-([\d.]+)s")
 RESUMABLE = {"written", "voicing", "voiced", "painting", "drawn", "assembled", "failed-voice", "failed-art", "qa_failed"}
+PARKED_WRITE = "writing"      # the draft is cooking in Claude's batch lane; topic, facts and the research sheet stay on the piece
 HANDLE = "@sanjeev_gulia"
 LONG_TARGET_MINUTES = {"sglearning": 12, "arthvan": 14}
 
@@ -178,6 +179,10 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
     # 1-4: topic → research → write → gates, up to three topics (skipped when an accepted script already exists: resume)
     script = piece.script if (piece.script and piece.status in RESUMABLE) else None
     sheet, revise = None, None
+    resume_write = piece.status == PARKED_WRITE and bool(piece.topic.get("sheet"))
+    if resume_write:                                                   # the draft is cooking in Claude's batch lane: same topic, same sheet
+        script, sheet, revise = None, piece.topic["sheet"], piece.topic.get("revise")
+        piece.facts = sheet.get("facts", piece.facts)
     carried = piece.topic.pop("rewrite", None) if script is None else None
     if carried and (piece.topic.get("title") or piece.topic.get("long_scenes")):
         sheet = {"facts": piece.facts, "summary": ""}             # a video that came out too long: same topic, shorter script
@@ -185,7 +190,9 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
             sheet.update(long_scenes=piece.topic["long_scenes"], hook=piece.topic.get("hook"))
         revise = carried
     for attempt in range(TOPIC_TRIES if script is None else 0):
-        if revise is None:                                             # a fresh topic (a length-only miss keeps the topic and asks for a trim)
+        if resume_write and attempt == 0:
+            pass                                                       # just collect (or re-ask for) the draft
+        elif revise is None:                                           # a fresh topic (a length-only miss keeps the topic and asks for a trim)
             topic = _pick_topic(piece, deps, root, used)
             if not topic:
                 pieces.save(pieces.transition(piece, "failed-topic", "no usable topic (for a mythology Short: its long is not made yet)"), root)
@@ -213,6 +220,11 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
         except writer.WriterError as e:
             pieces.save(pieces.transition(piece, "failed-write", secrets.scrub(str(e))[:300]), root)
             return piece
+        if written.get("state") == "writing":
+            piece.topic["sheet"] = _jsonable(sheet)
+            pieces.save(pieces.transition(piece, PARKED_WRITE, "draft cooking in Claude's batch lane; the next run collects it"), root)
+            return piece
+        piece.topic.pop("sheet", None)
         if written.get("note", "").startswith("claude failed"):
             piece.reasons.append(written["note"][:300])
         piece.script, piece.writer = written["script"], written["writer"]
@@ -364,7 +376,9 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
         paths = subtitles.write_all(piece, out_dir, duration=qa.probe(video).get("duration"))
         subtitles.upload_all(youtube.access_token(piece.channel, env or os.environ), piece, paths)
 
-    return Deps(topic=topic_fn, research=lambda topic, ch: research.verify_urls(research.fact_sheet(topic, ch)), write=writer.write, say=voice.say, paint=art.paint, avatar=art.avatar,
+    from . import writebatch
+    return Deps(topic=topic_fn, research=lambda topic, ch: research.verify_urls(research.fact_sheet(topic, ch)),
+                write=lambda piece, sheet, lib, tags: writer.write(piece, sheet, lib, tags, batch_fn=writebatch.write_piece), say=voice.say, paint=art.paint, avatar=art.avatar,
                 render_card=cards.render, build=assemble.build, qa=qa.report, upload=upload_fn,
                 lint=lambda piece, prior: lint.check_script(piece, banned, prior) + lint.check_captions(piece, hashtags),
                 claims_check=lambda piece: claims.match(lint.all_text(piece), piece.facts, library,

@@ -447,3 +447,17 @@ def test_too_long_video_is_rewritten_shorter_not_retried_forever(tmp_path):
     p = pipeline.make(p, d2, tmp_path, dry_run=True)
     assert calls2["topics"] == 0 and calls2["research"] == 0                 # same topic, same facts
     assert notes[0].startswith("length: the voiced video ran 113s") and p.status == "assembled"
+
+
+def test_a_draft_cooking_in_claudes_batch_lane_parks_the_piece_and_the_next_run_collects_it(tmp_path):
+    d, calls = deps(tmp_path)
+    states = iter([{"script": None, "writer": "claude", "note": "", "state": "writing"}, {"script": good_script(), "writer": "claude", "note": "", "state": "ready"}])
+    seen = []
+    def write_fn(piece, sheet, library, hashtags):
+        calls["write"] += 1; seen.append(sheet); return next(states)
+    d.write = write_fn
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert p.status == "writing" and p.topic["sheet"]["facts"] == FACTS and calls["research"] == 1 and calls["say"] == 0
+    p = pipeline.make(pieces.load(p.id, tmp_path), d, tmp_path)
+    assert p.status == "uploaded" and calls["research"] == 1 and calls["write"] == 2            # no new research: the stored sheet was reused
+    assert seen[1]["facts"] == FACTS and "sheet" not in p.topic
