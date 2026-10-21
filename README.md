@@ -1,6 +1,6 @@
 # sg-content
 
-Automated Hinglish videos for two YouTube channels (Learning with SG: money news explained; SG-MYTH-WORLD: mythology and history with evidence), plus Instagram Reels, Stories and Threads. Fully automatic with checks, no per-post approval. Design: `docs/spec.md`. Plan: `docs/superpowers/plans/`. Settled founder decisions: `docs/decisions.md` (read before asking).
+Automated Hinglish videos for two YouTube channels (Learning with SG: money news explained; SG-MYTH-WORLD: mythology and history with evidence), plus Instagram Reels, Stories, Threads and the founder's LinkedIn profile (optional; `python -m engine.linkedin --auth`). Fully automatic with checks, no per-post approval. Design: `docs/spec.md`. Plan: `docs/superpowers/plans/`. Settled founder decisions: `docs/decisions.md` (read before asking).
 
 ## Run locally
 ```

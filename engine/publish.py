@@ -1,4 +1,4 @@
-"""Post what is due in this slot to Instagram and Threads (YouTube is scheduled at upload time) (spec §3 step 11, §7).
+"""Post what is due in this slot to Instagram, Threads and (when configured) LinkedIn (YouTube is scheduled at upload time) (spec §3 step 11, §7).
 
 python -m engine.publish --channel sglearning|arthvan
 """
@@ -9,7 +9,7 @@ import traceback
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from . import digest, gitsync, instagram, pieces, slots, telegram, threads
+from . import digest, gitsync, instagram, linkedin, pieces, slots, telegram, threads
 from .config import ROOT
 from .instagram import InstagramError
 from .threads import ThreadsError
@@ -18,7 +18,12 @@ PLATFORM_IDS = ("ig_reel_id", "ig_story_id", "threads_id")
 RETRY_DAYS = 3
 
 
-def due(root: Path, now_utc: datetime, channel: str) -> list:
+def required(env=None) -> tuple:
+    """Platform ids a Short needs before it is `posted`; LinkedIn only once its secrets exist."""
+    return PLATFORM_IDS + (("linkedin_id",) if linkedin.configured(env) else ())
+
+
+def due(root: Path, now_utc: datetime, channel: str, env=None) -> list:
     """Uploaded Shorts of this channel publishing today (IST) with some platform id still missing, outside the app job's window."""
     now_ist = slots.ist(now_utc)
     if not slots.ig_slot_ok(now_ist.replace(tzinfo=None)):
@@ -32,7 +37,7 @@ def due(root: Path, now_utc: datetime, channel: str) -> list:
             continue
         if p.ids.get("unlisted"):                                                  # first-day unlisted uploads stay off Instagram and Threads
             continue
-        missing = [k for k in PLATFORM_IDS if not p.ids.get(k)]
+        missing = [k for k in required(env) if not p.ids.get(k)]
         if (p.script or {}).get("carousel") and not p.ids.get("ig_post_id"):
             missing.append("ig_post_id")
         if missing:
@@ -45,14 +50,15 @@ def threads_text(piece) -> str:
 
 
 def run(root: Path = ROOT, channel: str = "sglearning", now_utc: datetime | None = None, env=None,
-        ig_publish=instagram.publish_piece, threads_post=threads.post_video, notify=telegram.send) -> int:
+        ig_publish=instagram.publish_piece, threads_post=threads.post_video, linkedin_post=linkedin.post_video, notify=telegram.send) -> int:
     now_utc = now_utc or datetime.now(timezone.utc)
     env = os.environ if env is None else env
     if telegram.paused(root):
         print("paused: nothing posted", flush=True)
         return 0
     posted, problems = [], []
-    for piece in due(root, now_utc, channel):
+    need = required(env)
+    for piece in due(root, now_utc, channel, env):
         try:
             piece = ig_publish(piece, env)
         except InstagramError as e:
@@ -71,7 +77,18 @@ def run(root: Path = ROOT, channel: str = "sglearning", now_utc: datetime | None
                 problems.append(f"{piece.id}: threads: {e}")
                 pieces.transition(piece, piece.status, f"threads: {str(e)[:200]}"); pieces.save(piece, root)
                 continue
-        if all(piece.ids.get(k) for k in PLATFORM_IDS):
+        if "linkedin_id" in need and not piece.ids.get("linkedin_id"):
+            try:
+                from . import secrets
+                piece.ids["linkedin_id"] = linkedin_post(secrets.get("LINKEDIN_PERSON_URN", env), secrets.get("LINKEDIN_ACCESS_TOKEN", env),
+                                                         Path(root) / "out" / piece.id / "reel.mp4", linkedin.text_for(piece), linkedin.title_for(piece))
+                pieces.save(piece, root)
+            except Exception as e:                                                  # recorded like Threads; the next run retries LinkedIn only
+                problems.append(f"{piece.id}: linkedin: {e}")
+                pieces.transition(piece, piece.status, f"linkedin: {str(e)[:200]}"); pieces.save(piece, root)
+                gitsync.safe_commit(root, f"publish: {piece.id} partial")
+                continue
+        if all(piece.ids.get(k) for k in need):
             pieces.save(pieces.transition(piece, "posted"), root)
             posted.append(piece.id)
         gitsync.safe_commit(root, f"publish: {piece.id} {piece.status}")

@@ -77,14 +77,16 @@ def alerts(root: Path, day: date) -> list:
         if len(runs) >= 2 and not runs[-1].get("ok", True) and not runs[-2].get("ok", True):
             out.append("two consecutive runs failed; see logs/runs.jsonl")
     tokens = _json(Path(root) / "logs" / "tokens.json")
-    for key, name in (("instagram_expires", "Instagram token"), ("threads_expires", "Threads token")):
+    for key, name, fix in (("instagram_expires", "Instagram token", "run the refresh workflow or re-authorise"),
+                           ("threads_expires", "Threads token", "run the refresh workflow or re-authorise"),
+                           ("linkedin_expires", "LinkedIn token", "run `python -m engine.linkedin --auth` and update the LinkedIn secrets")):
         if tokens.get(key):
             try:
                 left = (date.fromisoformat(tokens[key]) - day).days
             except ValueError:
                 continue
             if left <= TOKEN_ALERT_DAYS:
-                out.append(f"{name} expires in {left} day(s): run the refresh workflow or re-authorise")
+                out.append(f"{name} expires in {left} day(s): {fix}")
     return out
 
 
