@@ -11,47 +11,50 @@ Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H800000
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.00,0:00:02.84,Default,,0,0,0,,Kurukshetra ke pattharon par Abhimanyu ke
-Dialogue: 0,0:00:02.84,0:00:04.06,Default,,0,0,0,,Chakravyuh ka naksha?
-Dialogue: 0,0:00:04.06,0:00:05.48,Default,,0,0,0,,Drona Parva kehta hai,
-Dialogue: 0,0:00:05.48,0:00:07.92,Default,,0,0,0,,Dronacharya ne Kaurav sena gol ghere
-Dialogue: 0,0:00:07.92,0:00:08.53,Default,,0,0,0,,mein sajayi.
-Dialogue: 0,0:00:08.98,0:00:11.83,Default,,0,0,0,,Yeh patthar ka maze nahi,
-Dialogue: 0,0:00:11.83,0:00:13.61,Default,,0,0,0,,ghoomti sena thi.
-Dialogue: 0,0:00:13.61,0:00:17.52,Default,,0,0,0,,Abhimanyu andar jaana jaanta tha,
-Dialogue: 0,0:00:17.52,0:00:20.02,Default,,0,0,0,,bahar nikalna nahi.
-Dialogue: 0,0:00:20.47,0:00:25.73,Default,,0,0,0,,ASI yaani Archaeological Survey of India,
-Dialogue: 0,0:00:25.73,0:00:28.36,Default,,0,0,0,,sarkari khudai sanstha,
-Dialogue: 0,0:00:28.36,0:00:30.99,Default,,0,0,0,,Bhagwanpura pahunchi.
-Dialogue: 0,0:00:31.44,0:00:33.46,Default,,0,0,0,,Mitti mein Harappa ke aakhri daur
-Dialogue: 0,0:00:33.46,0:00:34.48,Default,,0,0,0,,ke nishaan mile.
-Dialogue: 0,0:00:34.48,0:00:35.89,Default,,0,0,0,,Saath mein Painted Grey Ware,
-Dialogue: 0,0:00:35.89,0:00:38.53,Default,,0,0,0,,yaani kaale design wale saleti bartan.
-Dialogue: 0,0:00:38.98,0:00:43.18,Default,,0,0,0,,Amin gaon ke Abhimanyu-khera teele se
-Dialogue: 0,0:00:43.18,0:00:46.42,Default,,0,0,0,,Brahmi lipi wali mohar mili.
-Dialogue: 0,0:00:46.87,0:00:50.08,Default,,0,0,0,,Par pattharon par khuda Chakravyuh ka
-Dialogue: 0,0:00:50.08,0:00:53.01,Default,,0,0,0,,koi purana naksha nahi mila.
-Dialogue: 0,0:00:53.01,0:00:56.23,Default,,0,0,0,,Jyotisar ka zameen wala naksha aaj
-Dialogue: 0,0:00:56.23,0:00:57.40,Default,,0,0,0,,ka banaya hai.
-Dialogue: 0,0:00:57.85,0:00:58.92,Default,,0,0,0,,Yuddh hua kab?
-Dialogue: 0,0:00:58.92,0:01:05.00,Default,,0,0,0,,Parampara aur khagol-ganana ise 3102 BCE
-Dialogue: 0,0:01:05.00,0:01:06.43,Default,,0,0,0,,ka maante hain.
-Dialogue: 0,0:01:06.88,0:01:08.24,Default,,0,0,0,,Puratatvavid B.B.
-Dialogue: 0,0:01:08.24,0:01:10.30,Default,,0,0,0,,Lal yuddh ko lagbhag 800 BCE
-Dialogue: 0,0:01:10.30,0:01:11.44,Default,,0,0,0,,ka bataate hain.
-Dialogue: 0,0:01:11.44,0:01:13.03,Default,,0,0,0,,Har paksh ke apne tark hain.
-Dialogue: 0,0:01:13.48,0:01:16.27,Default,,0,0,0,,Kuch vidwan Chakravyuh ko asli yuddh
-Dialogue: 0,0:01:16.27,0:01:17.66,Default,,0,0,0,,ki chaal maante hain.
-Dialogue: 0,0:01:17.66,0:01:18.77,Default,,0,0,0,,Kuch kehte hain,
-Dialogue: 0,0:01:18.77,0:01:22.11,Default,,0,0,0,,yeh Arthashastra jaise yuddh-granthon se aaya.
-Dialogue: 0,0:01:22.11,0:01:26.01,Default,,0,0,0,,Arthashastra yaani rajneeti ka purana granth.
-Dialogue: 0,0:01:26.46,0:01:27.15,Default,,0,0,0,,Twist yeh,
-Dialogue: 0,0:01:27.15,0:01:30.96,Default,,0,0,0,,Amin ke log teele ko Abhimanyu
-Dialogue: 0,0:01:30.96,0:01:33.04,Default,,0,0,0,,ka maidan kehte hain.
-Dialogue: 0,0:01:33.04,0:01:34.77,Default,,0,0,0,,Yeh lok-katha hai,
-Dialogue: 0,0:01:34.77,0:01:36.85,Default,,0,0,0,,likha sabut nahi.
-Dialogue: 0,0:01:37.30,0:01:42.09,Default,,0,0,0,,Aap Jyotisar aur Amin ka teela
-Dialogue: 0,0:01:42.09,0:01:44.97,Default,,0,0,0,,aaj bhi dekh sakte hain.
-Dialogue: 0,0:01:45.42,0:01:47.91,Default,,0,0,0,,Aapke hisaab se Chakravyuh asli chaal
-Dialogue: 0,0:01:47.91,0:01:48.13,Default,,0,0,0,,thi,
-Dialogue: 0,0:01:48.13,0:01:49.71,Default,,0,0,0,,ya kavi ki kalpana?
+Dialogue: 0,0:00:00.00,0:00:02.57,Default,,0,0,0,,Ek patthar ne Kedarnath mandir ko
+Dialogue: 0,0:00:02.57,0:00:03.59,Default,,0,0,0,,kaise bachaya?
+Dialogue: 0,0:00:03.59,0:00:06.16,Default,,0,0,0,,Skanda Purana Kedar ko Shiv ka
+Dialogue: 0,0:00:06.16,0:00:07.44,Default,,0,0,0,,dham batata hai.
+Dialogue: 0,0:00:07.89,0:00:09.42,Default,,0,0,0,,Lok katha kehti hai,
+Dialogue: 0,0:00:09.42,0:00:11.98,Default,,0,0,0,,Pandav yahan Shiv ki kripa maangne
+Dialogue: 0,0:00:11.98,0:00:12.49,Default,,0,0,0,,aaye the.
+Dialogue: 0,0:00:12.94,0:00:16.43,Default,,0,0,0,,June 2013 mein Chorabari se baadh
+Dialogue: 0,0:00:16.43,0:00:16.70,Default,,0,0,0,,aayi,
+Dialogue: 0,0:00:16.70,0:00:18.58,Default,,0,0,0,,keechad aur patthar lekar.
+Dialogue: 0,0:00:19.03,0:00:22.31,Default,,0,0,0,,ASI yaani Archaeological Survey of India
+Dialogue: 0,0:00:22.31,0:00:23.02,Default,,0,0,0,,ne jaanch ki.
+Dialogue: 0,0:00:23.02,0:00:24.66,Default,,0,0,0,,Aas paas ke ghar aur Ishaan
+Dialogue: 0,0:00:24.66,0:00:25.59,Default,,0,0,0,,mandir beh gaye.
+Dialogue: 0,0:00:25.59,0:00:27.94,Default,,0,0,0,,Par mandir ka andar wala kamra
+Dialogue: 0,0:00:27.94,0:00:29.11,Default,,0,0,0,,salamat raha.
+Dialogue: 0,0:00:29.56,0:00:32.52,Default,,0,0,0,,Geological Survey of India ne dekha,
+Dialogue: 0,0:00:32.52,0:00:34.74,Default,,0,0,0,,ek vishaal boulder mandir ke theek
+Dialogue: 0,0:00:34.74,0:00:35.73,Default,,0,0,0,,peeche ruka.
+Dialogue: 0,0:00:35.73,0:00:38.19,Default,,0,0,0,,Usne malbe ko dono taraf baant
+Dialogue: 0,0:00:38.19,0:00:38.44,Default,,0,0,0,,diya.
+Dialogue: 0,0:00:38.89,0:00:40.80,Default,,0,0,0,,Patthar bina masale ke,
+Dialogue: 0,0:00:40.80,0:00:42.71,Default,,0,0,0,,lohe ke clamp se jode gaye
+Dialogue: 0,0:00:42.71,0:00:42.95,Default,,0,0,0,,the.
+Dialogue: 0,0:00:42.95,0:00:45.10,Default,,0,0,0,,ASI is dhaanche ko lagbhag saal
+Dialogue: 0,0:00:45.10,0:00:47.01,Default,,0,0,0,,1050 ka maanta hai.
+Dialogue: 0,0:00:47.46,0:00:53.37,Default,,0,0,0,,Par banwaya kisne?
+Dialogue: 0,0:00:53.37,0:01:06.36,Default,,0,0,0,,Kuch Adi Shankaracharya kehte hain,
+Dialogue: 0,0:01:06.36,0:01:11.09,Default,,0,0,0,,kuch Raja Bhoj,
+Dialogue: 0,0:01:11.09,0:01:18.18,Default,,0,0,0,,kuch Katyuri raaja.
+Dialogue: 0,0:01:18.63,0:01:21.53,Default,,0,0,0,,Wadia Institute ko deewaron par glacier
+Dialogue: 0,0:01:21.53,0:01:22.86,Default,,0,0,0,,ki kharonchein mili,
+Dialogue: 0,0:01:22.86,0:01:24.87,Default,,0,0,0,,yaani barf ki nadi ke nishaan.
+Dialogue: 0,0:01:25.32,0:01:27.71,Default,,0,0,0,,Kuch kehte hain mandir sadiyon barf
+Dialogue: 0,0:01:27.71,0:01:29.03,Default,,0,0,0,,mein dabaa raha.
+Dialogue: 0,0:01:29.03,0:01:30.36,Default,,0,0,0,,Doosre kehte hain,
+Dialogue: 0,0:01:30.36,0:01:32.48,Default,,0,0,0,,glacier ne sirf kinara chhua.
+Dialogue: 0,0:01:32.93,0:01:36.46,Default,,0,0,0,,Pehla mandir kab bana,
+Dialogue: 0,0:01:36.46,0:01:40.49,Default,,0,0,0,,aur boulder wahin kyun ruka,
+Dialogue: 0,0:01:40.49,0:01:43.01,Default,,0,0,0,,koi nahi jaanta.
+Dialogue: 0,0:01:43.46,0:01:45.35,Default,,0,0,0,,Aaj log ise Bhim Shila kehte
+Dialogue: 0,0:01:45.35,0:01:45.56,Default,,0,0,0,,hain.
+Dialogue: 0,0:01:45.56,0:01:47.46,Default,,0,0,0,,Mandir ke peeche aap ise khud
+Dialogue: 0,0:01:47.46,0:01:48.30,Default,,0,0,0,,dekh sakte hain.
+Dialogue: 0,0:01:48.75,0:01:50.28,Default,,0,0,0,,Aapko kya lagta hai,
+Dialogue: 0,0:01:50.28,0:01:53.33,Default,,0,0,0,,mandir patthar ne bachaya ya kaarigari
+Dialogue: 0,0:01:53.33,0:01:53.59,Default,,0,0,0,,ne?
