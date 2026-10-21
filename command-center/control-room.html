@@ -93,6 +93,17 @@ textarea { min-height: 84px; resize: vertical }
 .next div { border: 1px dashed var(--line); border-radius: 8px; padding: 10px 12px; font-size: 13px }
 .next b { display: block; font: 700 15px/1.3 var(--f-display) }
 a { color: var(--accent) }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px }
+.tile { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; display: grid; gap: 2px; min-width: 0 }
+.tile b { font: 700 22px/1.1 var(--f-display); font-variant-numeric: tabular-nums; overflow-wrap: anywhere }
+.tile span { font-size: 12px; color: var(--muted) }
+h3.sub { font: 600 13px/1.2 var(--f-display); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 4px 0 0 }
+.flag { border-top: 1px solid var(--line); padding-top: 10px; display: grid; gap: 6px }
+.flag q { quotes: none; font-size: 14px; overflow-wrap: anywhere; display: block; background: var(--bg); border-radius: 6px; padding: 8px 10px }
+.flag .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center }
+.setup { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px }
+.setup li { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: start; font-size: 14px }
+.setup li span { min-width: 0; overflow-wrap: anywhere }
 @media (prefers-reduced-motion: no-preference) { .bar i { transition: width .4s ease } }
 </style>
 
@@ -166,19 +177,31 @@ a { color: var(--accent) }
     </section>
   </div>
 
-  <section class="panel" aria-labelledby="h-next">
-    <h2 id="h-next">Joining this room next</h2>
-    <div class="next">
-      <div><b>ScoreMyBiz</b>Signups, payments and support tickets, with buttons for its reports.</div>
-      <div><b>Waypoint</b>Users and comments waiting for moderation, approve or reject from here.</div>
-      <div><b>LinkedIn</b>Each Short goes to your profile as a native video with a short post.</div>
-    </div>
+  <div class="cols">
+    <section class="panel" aria-labelledby="h-smb">
+      <h2 id="h-smb">ScoreMyBiz</h2>
+      <div id="smb" class="tiles"><p class="small muted" style="margin:0">Loading…</p></div>
+      <button id="smb-report" type="button">Email me the CEO report now</button>
+      <div id="smb-slot"></div>
+    </section>
+    <section class="panel" aria-labelledby="h-wp">
+      <h2 id="h-wp">Waypoint</h2>
+      <div id="wp-numbers" class="tiles"></div>
+      <h3 class="sub">Waiting for review</h3>
+      <div id="wp-queue"><p class="small muted" style="margin:0">Loading…</p></div>
+    </section>
+  </div>
+
+  <section class="panel" aria-labelledby="h-setup">
+    <h2 id="h-setup">Setup</h2>
+    <ul id="setup" class="setup"></ul>
   </section>
 </div>
 
 <script>
 (() => {
   const PROJECT = "xiidltxcsetevaverqkx";
+  const WAYPOINT = "zoyopcfnglpcnlraokob";
   const REPO = "https://github.com/SGULIA20/sg-content";
   const CH = { sglearning: "Learning with SG", arthvan: "SG-MYTH-WORLD" };
   const CAPS = { voice: 80, images: 250, claude: 3.0 };
@@ -221,8 +244,8 @@ a { color: var(--accent) }
     return JSON.parse(m ? m[1] : text);
   }
 
-  async function sql(query) {
-    const res = await mcp.callTool("Supabase", "execute_sql", { project_id: PROJECT, query }, { cache: false });
+  async function sql(query, project) {
+    const res = await mcp.callTool("Supabase", "execute_sql", { project_id: project || PROJECT, query }, { cache: false });
     return rowsFrom(res);
   }
 
@@ -233,7 +256,32 @@ a { color: var(--accent) }
     'snapshot', (select payload from command.status where source = 'sg-content' and key = 'snapshot'),
     'snapshot_at', (select updated_at from command.status where source = 'sg-content' and key = 'snapshot'),
     'commands', (select coalesce(json_agg(c order by c.id desc), '[]'::json) from (select id, created_at, action, args, requested_via, state, result from command.commands order by id desc limit 12) c),
-    'events', (select coalesce(json_agg(e order by e.id desc), '[]'::json) from (select id, at, source, kind, message from command.events where kind not like 'command.%' order by id desc limit 8) e)
+    'events', (select coalesce(json_agg(e order by e.id desc), '[]'::json) from (select id, at, source, kind, message from command.events where kind not like 'command.%' order by id desc limit 8) e),
+    'telegram', (select value from command.control where key = 'telegram.webhook'),
+    'smb', command.smb_numbers()
+  ) as data`;
+
+  // Waypoint lives in its own Supabase project. Read-only here: numbers (no user content) and the moderation queue.
+  const WP_READ = `with ex as (select value as id from public.app_settings where key in ('founder_user_id', 'guide_user_id')),
+    log as (select distinct user_id, created_at::date as d from public.access_log where user_id::text not in (select id from ex)),
+    first as (select user_id, min(d) as d0 from log group by 1)
+  select json_build_object(
+    'wau', (select count(distinct user_id) from log where d > current_date - 7),
+    'mau', (select count(distinct user_id) from log where d > current_date - 30),
+    'new_7d', (select count(*) from first where d0 > current_date - 7),
+    'posts_7d', (select count(*) from public.posts where created_at > now() - interval '7 days'),
+    'comments_7d', (select count(*) from public.post_comments where created_at > now() - interval '7 days'),
+    'queue', (select coalesce(json_agg(q order by q.created_at desc), '[]'::json) from (
+      select f.post_id as id, f.category, f.severity, f.reason, f.action, f.created_at,
+        case when c.id is not null then 'comment' when r.id is not null then 'reply' when p.id is not null then 'post' else 'gone' end as kind,
+        left(coalesce(c.text, r.text, p.text, p.poll_question, ''), 400) as text,
+        case when c.id is not null then c.status when r.id is not null then r.status
+             when p.id is not null then (case when p.report_count >= 1000000 then 'hidden' else 'active' end) else 'gone' end as state
+      from public.moderation_flags f
+      left join public.post_comments c on c.id = f.post_id
+      left join public.post_replies r on r.id = f.post_id
+      left join public.posts p on p.id = f.post_id
+      where not f.reviewed order by f.created_at desc limit 15) q)
   ) as data`;
 
   async function load() {
@@ -244,9 +292,17 @@ a { color: var(--accent) }
       data = rows[0] && rows[0].data;
       banner("");
       render();
+      loadWaypoint();
     } catch (e) {
       banner(connectorCopy(e), true);
     } finally { $("refresh").disabled = false; }
+  }
+
+  let wp = null, wpError = null;
+  async function loadWaypoint() {
+    try { wp = (await sql(WP_READ, WAYPOINT))[0].data; wpError = null; }
+    catch (e) { wp = null; wpError = e; }
+    renderWaypoint(); renderSetup();
   }
 
   // ---- derived state ----
@@ -327,7 +383,55 @@ a { color: var(--accent) }
     ].sort((a, b) => String(b.at).localeCompare(String(a.at))).slice(0, 14);
     $("log").innerHTML = items.length ? items.map((i) => `<li><time>${esc(when(i.at))}</time><span>${esc(i.text)} <span class="muted">· ${esc(i.via)}</span></span></li>`).join("")
       : `<li style="grid-template-columns:1fr"><span class="muted">No activity yet.</span></li>`;
+    renderSmb(d.smb); renderSetup();
     if (s.github_run) $("log").insertAdjacentHTML("beforeend", `<li style="grid-template-columns:1fr"><a href="${esc(s.github_run)}" target="_blank" rel="noopener">Open the last GitHub run</a></li>`);
+  }
+
+  const tile = (v, label) => `<div class="tile"><b>${esc(v ?? "–")}</b><span>${esc(label)}</span></div>`;
+
+  function renderSmb(n) {
+    if (!n) { $("smb").innerHTML = `<p class="small muted" style="margin:0">No numbers yet.</p>`; return; }
+    const u = n.users || {}, money = Object.entries(n.money_7d || {});
+    const bad = (n.jobs || []).filter((j) => j.status !== "ok").map((j) => j.name);
+    $("smb").innerHTML = tile(u.total, "users") + tile(u.paid, "paying") + tile(u.trial, "on trial") +
+      tile(u.new_7d, `new in 7 days (week before ${u.new_prev_7d ?? "–"})`) + tile(u.active_7d, "active in 7 days") +
+      tile(money.length ? money.map(([c, v]) => `${c} ${v.gross}`).join(" · ") : "0", "payments, 7 days") +
+      tile(n.support ? n.support.open : null, "support tickets open") +
+      tile(bad.length ? bad.length + " failing" : "all ok", bad.length ? bad.join(", ") : `${(n.jobs || []).length} scheduled jobs`);
+  }
+
+  function renderWaypoint() {
+    if (!wp) {
+      const why = wpError && (wpError.code === "tool_error" || wpError.code === "not_in_manifest")
+        ? "Your Supabase connector can't see Waypoint's project yet. In claude.ai Settings → Connectors → Supabase, reconnect and allow Waypoint's organisation, then Refresh."
+        : connectorCopy(wpError);
+      $("wp-numbers").innerHTML = ""; $("wp-queue").innerHTML = `<div class="notice">${esc(why)}</div>`; return;
+    }
+    $("wp-numbers").innerHTML = tile(wp.wau, "active this week") + tile(wp.mau, "active this month") + tile(wp.new_7d, "new in 7 days") +
+      tile(wp.posts_7d, "posts, 7 days") + tile(wp.comments_7d, "comments, 7 days");
+    const q = wp.queue || [];
+    $("wp-queue").innerHTML = q.length ? q.map((f) => `
+      <div class="flag">
+        <div class="row"><span class="chip ${f.state === "hidden" ? "bad" : "warn"}">${esc(f.kind)} · ${esc(f.state)}</span>
+          <span class="small muted">${esc(f.category)} ${esc(f.severity)}/5 · ${esc(when(f.created_at))}</span></div>
+        ${f.text ? `<q>${esc(f.text)}</q>` : ""}
+        ${f.reason ? `<p class="reason">${esc(f.reason)}</p>` : ""}
+      </div>`).join("") + `<p class="small muted" style="margin:0">Hide and restore buttons are off until you approve changing Waypoint's live data from this page.</p>`
+      : `<p class="small muted" style="margin:0">Nothing waiting. The app's own moderation is keeping up.</p>`;
+  }
+
+  function renderSetup() {
+    const d = data || {}, s = d.snapshot || {};
+    const items = [
+      [s.phase && s.phase !== "seeded-by-claude", "Pipeline reports here after each run", "Add GitHub secret SG_COMMAND_KEY (Supabase → Vault → sg_command_ingest) and merge PR #1."],
+      [(d.commands || []).some((c) => ["stop", "retry", "run_produce", "run_publish"].includes(c.action) && c.state === "done"), "Buttons can start and stop GitHub runs", "Add GITHUB_TOKEN in Supabase → Edge Functions → Secrets. Shows as done after the first successful button."],
+      [d.telegram === true, "Telegram buttons", "After the two steps above and SG_COMMAND_KEY in the Mac's .env: GitHub → Actions → telegram-setup → Run (on)."],
+      [!!wp, "Waypoint panel", "Reconnect the Supabase connector with Waypoint's organisation allowed."],
+      [(d.commands || []).some((c) => c.action === "smb_ceo_report" && c.state === "done"), "ScoreMyBiz CEO report button", "Needs the ScoreMyBiz change (waiting for your yes) and Netlify env COMMAND_KEY set to the same value as SG_COMMAND_KEY."],
+      [(s.pieces || []).some((p) => p.linkedin_id), "LinkedIn posting", "Create the LinkedIn app, run python -m engine.linkedin --auth on the Mac, add the two GitHub secrets, merge the linkedin branch."],
+    ];
+    $("setup").innerHTML = items.map(([ok, what, how]) =>
+      `<li><span class="chip ${ok ? "ok" : "warn"}">${ok ? "done" : "to do"}</span><span><b>${esc(what)}</b>${ok ? "" : `<br><span class="muted small">${esc(how)}</span>`}</span></li>`).join("");
   }
 
   // ---- commands ----
@@ -343,13 +447,14 @@ a { color: var(--accent) }
         return { max, dry_run: args.dry_run === true, ...(only.length ? { only: only.join(",") } : {}) };
       }
       case "run_publish": if (!(args.channel in CH)) throw new Error("Unknown channel."); return { channel: args.channel };
+      case "smb_ceo_report": return {};
       default: throw new Error("That action is not allowed from this page.");
     }
   }
 
   const LABEL = {
     pause: () => "Pause the pipeline", resume: () => "Resume the pipeline", stop: () => "Cancel every running GitHub job",
-    retry: (a) => `Retry ${a.piece_id}`, run_publish: (a) => `Post what is due for ${CH[a.channel]}`,
+    retry: (a) => `Retry ${a.piece_id}`, smb_ceo_report: () => "Build the ScoreMyBiz CEO report and email it to you", run_publish: (a) => `Post what is due for ${CH[a.channel]}`,
     run_produce: (a) => `Make ${a.only || "everything due"}, up to ${a.max}${a.dry_run ? ", dry run" : ""}`,
   };
 
@@ -368,7 +473,8 @@ a { color: var(--accent) }
     busy = true;
     slot.innerHTML = `<div class="notice">Sending: ${esc(LABEL[action](clean))}…</div>`;
     try {
-      const q = `insert into command.commands (action, args, requested_via, note) values (${lit(action)}, ${lit(JSON.stringify(clean))}::jsonb, 'page', ${note ? lit(String(note).slice(0, 300)) : "null"}) returning id`;
+      const target = action === "smb_ceo_report" ? "scoremybiz" : "sg-content";
+      const q = `insert into command.commands (target, action, args, requested_via, note) values (${lit(target)}, ${lit(action)}, ${lit(JSON.stringify(clean))}::jsonb, 'page', ${note ? lit(String(note).slice(0, 300)) : "null"}) returning id`;
       const id = Number((await sql(q))[0].id);
       let row = null;
       for (let i = 0; i < 8; i++) {
@@ -400,6 +506,7 @@ Allowed actions and args:
 - retry {"piece_id": one id from the state below that is not uploaded/posted}
 - run_produce {"only": "" or comma list from sglearning:short, sglearning:long, arthvan:short, arthvan:long, "max": 1-3, "dry_run": true|false}
 - run_publish {"channel": "sglearning" | "arthvan"} : post Reel + Story + Threads that are due
+- smb_ceo_report {} : build the ScoreMyBiz CEO report and email it to the founder
 - none {} : the instruction is a question or cannot be done with these actions; answer it in "reply" from the state, and say plainly if it needs code changes.
 Current state: ${JSON.stringify(state).slice(0, 6000)}
 Instruction (Hindi, Hinglish or English): ${JSON.stringify(text)}
@@ -433,6 +540,7 @@ Reply with only JSON: {"action": "...", "args": {...}, "summary": "one short sen
       return askConfirm(tgt, LABEL.run_produce(validate("run_produce", a)), () => send("run_produce", a, tgt));
     }
     if (t.id === "ask-go") return interpret();
+    if (t.id === "smb-report") return askConfirm($("smb-slot"), LABEL.smb_ceo_report(), () => send("smb_ceo_report", {}, $("smb-slot")));
     if (t.dataset.retry) {
       const tgt = t.closest(".piece"); let s2 = tgt.querySelector(".slot");
       if (!s2) { s2 = document.createElement("div"); s2.className = "slot"; tgt.append(s2); }
