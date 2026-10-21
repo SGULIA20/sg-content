@@ -4,8 +4,8 @@ name: evening
 # after the last posting slot of the day (everything is due by 18:00 WAT). Saved to logs/evening-latest.txt for the app poster's bot.
 on:
   schedule:
-    - cron: '35 17 * * *'   # 18:35 Lagos (23:05 India): the card is due by 19:00 Lagos
-    - cron: '55 17 * * *'   # second chance (the engine sends once per day)
+    - cron: '38 17 * * *'   # 18:35 Lagos (23:05 India): the card is due by 19:00 Lagos
+    - cron: '56 17 * * *'   # second chance (the engine sends once per day)
   workflow_dispatch:
 
 permissions:

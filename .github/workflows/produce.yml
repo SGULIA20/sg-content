@@ -2,11 +2,11 @@ name: produce
 
 on:
   schedule:
-    - cron: '5 7 * * *'   # 08:05 Lagos, 12:35 India: right after Gemini's daily voice quota resets (midnight Pacific = 07:00 UTC)
-    - cron: '35 7 * * *'  # GitHub fired the 07:05 slot seven hours late on 21 Oct 2026: several chances, the engine never remakes a finished piece
-    - cron: '5 8 * * *'
-    - cron: '0 9 * * *'   # safety net
-    - cron: '35 13 * * *' # afternoon catch-up: finishes what failed earlier and keeps filling the 4-5 day buffer
+    - cron: '13 7 * * *'   # 08:05 Lagos, 12:35 India: right after Gemini's daily voice quota resets (midnight Pacific = 07:00 UTC)
+    - cron: '43 7 * * *'  # GitHub fired the 07:05 slot seven hours late on 21 Oct 2026: several chances, the engine never remakes a finished piece
+    - cron: '13 8 * * *'
+    - cron: '13 9 * * *'   # safety net
+    - cron: '43 13 * * *' # afternoon catch-up: finishes what failed earlier and keeps filling the 4-5 day buffer
   workflow_dispatch:
     inputs:
       dry_run:

@@ -27,7 +27,7 @@ def test_workflows_parse_and_name_only_known_secrets():
 def test_produce_schedule_and_guards():
     data = yaml.safe_load((ROOT / ".github" / "workflows" / "produce.yml").read_text())
     crons = [s["cron"] for s in data[True]["schedule"]] if True in data else [s["cron"] for s in data["on"]["schedule"]]
-    assert "5 7 * * *" in crons and "35 7 * * *" in crons and "0 9 * * *" in crons     # several chances after the 07:00 UTC quota reset
+    assert "13 7 * * *" in crons and "43 7 * * *" in crons and "13 9 * * *" in crons     # several chances after the 07:00 UTC quota reset
     job = data["jobs"]["produce"]
     assert job["timeout-minutes"] == 120 and data["concurrency"]["group"] == "produce"
     steps = " ".join(s.get("run", "") for s in job["steps"])
@@ -37,9 +37,9 @@ def test_produce_schedule_and_guards():
 def test_publish_crons_match_slots():
     data = yaml.safe_load((ROOT / ".github" / "workflows" / "publish.yml").read_text())
     crons = [s["cron"] for s in (data.get(True) or data.get("on"))["schedule"]]
-    assert "30 8 * * *" in crons and "30 9 * * *" in crons and "0 16 * * *" in crons and "0 17 * * *" in crons
+    assert "33 8 * * *" in crons and "33 9 * * *" in crons and "3 16 * * *" in crons and "3 17 * * *" in crons
     pick = next(s["run"] for s in data["jobs"]["publish"]["steps"] if s.get("id") == "slot")
-    assert '"30 9 * * *"' in pick and '"30 10 * * *"' in pick                                   # every finance slot maps to sglearning
+    assert '"33 9 * * *"' in pick and '"33 10 * * *"' in pick                                   # every finance slot maps to sglearning
 
 
 def test_docs_secrets_lists_every_secret():
@@ -98,5 +98,5 @@ def test_gitsync_enabled_by_either_flag():
 def test_evening_scorecard_is_sent_before_seven_pm_lagos():
     data = yaml.safe_load((ROOT / ".github" / "workflows" / "evening.yml").read_text())
     crons = [s["cron"] for s in (data.get(True) or data.get("on"))["schedule"]]
-    assert crons == ["35 17 * * *", "55 17 * * *"]                                    # 18:35 and 18:55 WAT; founder wants it by 19:00 WAT
+    assert crons == ["38 17 * * *", "56 17 * * *"]                                    # 18:35 and 18:55 WAT; founder wants it by 19:00 WAT
     assert "engine.evening --send" in " ".join(s.get("run", "") for s in data["jobs"]["evening"]["steps"])
