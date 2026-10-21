@@ -1,0 +1,56 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.08,Default,,0,0,0,,Raat ko Bhai ka phone chamka,
+Dialogue: 0,0:00:02.08,0:00:02.60,Default,,0,0,0,,news thi,
+Dialogue: 0,0:00:02.60,0:00:05.20,Default,,0,0,0,,Zerodha par ab US stocks milenge.
+Dialogue: 0,0:00:05.65,0:00:06.85,Default,,0,0,0,,Bhai uchhal pada,
+Dialogue: 0,0:00:06.85,0:00:07.33,Default,,0,0,0,,bola,
+Dialogue: 0,0:00:07.33,0:00:08.05,Default,,0,0,0,,ab Nvidia,
+Dialogue: 0,0:00:08.05,0:00:08.53,Default,,0,0,0,,Tesla,
+Dialogue: 0,0:00:08.53,0:00:09.25,Default,,0,0,0,,Amazon,
+Dialogue: 0,0:00:09.25,0:00:11.17,Default,,0,0,0,,sab phone se khareedunga.
+Dialogue: 0,0:00:11.62,0:00:12.95,Default,,0,0,0,,Uska logic seedha tha,
+Dialogue: 0,0:00:12.95,0:00:14.85,Default,,0,0,0,,yeh companies duniya chalati hain,
+Dialogue: 0,0:00:14.85,0:00:16.18,Default,,0,0,0,,toh paisa bhi badhega.
+Dialogue: 0,0:00:16.63,0:00:18.18,Default,,0,0,0,,Share mehnga ho toh kya,
+Dialogue: 0,0:00:18.18,0:00:20.17,Default,,0,0,0,,1 dollar se bhi tukda khareed
+Dialogue: 0,0:00:20.17,0:00:20.83,Default,,0,0,0,,sakte ho.
+Dialogue: 0,0:00:21.28,0:00:23.97,Default,,0,0,0,,Fractional share yaani poore share ka
+Dialogue: 0,0:00:23.97,0:00:25.09,Default,,0,0,0,,chhota sa hissa,
+Dialogue: 0,0:00:25.09,0:00:26.88,Default,,0,0,0,,jaise pizza ka ek slice.
+Dialogue: 0,0:00:27.33,0:00:29.87,Default,,0,0,0,,Subah nashte par Behen ne poocha,
+Dialogue: 0,0:00:29.87,0:00:32.66,Default,,0,0,0,,rupaya wahan dollar banega kaise?
+Dialogue: 0,0:00:32.66,0:00:33.17,Default,,0,0,0,,Bhai chup.
+Dialogue: 0,0:00:33.62,0:00:35.86,Default,,0,0,0,,Aapke rupaye pehle dollar bante hain,
+Dialogue: 0,0:00:35.86,0:00:37.89,Default,,0,0,0,,aur bank conversion par apna margin
+Dialogue: 0,0:00:37.89,0:00:38.50,Default,,0,0,0,,rakhta hai.
+Dialogue: 0,0:00:38.95,0:00:41.01,Default,,0,0,0,,Har order par brokerage bhi lagti
+Dialogue: 0,0:00:41.01,0:00:41.20,Default,,0,0,0,,hai,
+Dialogue: 0,0:00:41.20,0:00:43.07,Default,,0,0,0,,chhote order par yeh hissa bada
+Dialogue: 0,0:00:43.07,0:00:43.63,Default,,0,0,0,,lagta hai.
+Dialogue: 0,0:00:44.08,0:00:45.51,Default,,0,0,0,,Aur bada amount bheja,
+Dialogue: 0,0:00:45.51,0:00:47.34,Default,,0,0,0,,toh ek limit ke upar 20
+Dialogue: 0,0:00:47.34,0:00:48.56,Default,,0,0,0,,percent TCS katta hai.
+Dialogue: 0,0:00:49.01,0:00:51.01,Default,,0,0,0,,TCS yaani bhejte waqt hi kata
+Dialogue: 0,0:00:51.01,0:00:51.45,Default,,0,0,0,,hua tax,
+Dialogue: 0,0:00:51.45,0:00:53.23,Default,,0,0,0,,jo baad mein return mein adjust
+Dialogue: 0,0:00:53.23,0:00:53.89,Default,,0,0,0,,hota hai.
+Dialogue: 0,0:00:54.34,0:00:55.09,Default,,0,0,0,,Twist yeh hai,
+Dialogue: 0,0:00:55.09,0:00:57.34,Default,,0,0,0,,US stock khareedna aasaan hua hai,
+Dialogue: 0,0:00:57.34,0:00:58.34,Default,,0,0,0,,sasta nahi.
+Dialogue: 0,0:00:58.34,0:01:00.35,Default,,0,0,0,,Pehle poora kharcha jodo,
+Dialogue: 0,0:01:00.35,0:01:01.60,Default,,0,0,0,,phir button dabao.
+Dialogue: 0,0:01:01.60,0:01:04.10,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:01:04.55,0:01:07.07,Default,,0,0,0,,Aap US stocks mein paisa daaloge,
+Dialogue: 0,0:01:07.07,0:01:07.91,Default,,0,0,0,,haan ya na?
