@@ -11,44 +11,44 @@ Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H800000
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.00,0:00:01.27,Default,,0,0,0,,Subah chai ke saath,
-Dialogue: 0,0:00:01.27,0:00:03.80,Default,,0,0,0,,Bhai ke phone par headline chamki.
-Dialogue: 0,0:00:04.25,0:00:06.26,Default,,0,0,0,,Tips Music har share par 6.50
-Dialogue: 0,0:00:06.26,0:00:08.53,Default,,0,0,0,,rupaye dividend de rahi hai.
-Dialogue: 0,0:00:08.53,0:00:11.05,Default,,0,0,0,,Dividend yaani profit ka hissa,
-Dialogue: 0,0:00:11.05,0:00:12.81,Default,,0,0,0,,seedha shareholders ko.
-Dialogue: 0,0:00:13.26,0:00:14.38,Default,,0,0,0,,Bhai ne socha,
-Dialogue: 0,0:00:14.38,0:00:15.78,Default,,0,0,0,,aaj share le lo,
-Dialogue: 0,0:00:15.78,0:00:17.46,Default,,0,0,0,,kal free paisa bank mein.
-Dialogue: 0,0:00:17.91,0:00:19.49,Default,,0,0,0,,Uska logic simple tha.
-Dialogue: 0,0:00:19.49,0:00:21.98,Default,,0,0,0,,Record date se pehle share demat
-Dialogue: 0,0:00:21.98,0:00:22.43,Default,,0,0,0,,mein ho,
-Dialogue: 0,0:00:22.43,0:00:23.79,Default,,0,0,0,,toh paisa milega.
-Dialogue: 0,0:00:24.24,0:00:26.25,Default,,0,0,0,,Record date yaani woh din jab
-Dialogue: 0,0:00:26.25,0:00:28.04,Default,,0,0,0,,company list banati hai,
-Dialogue: 0,0:00:28.04,0:00:29.60,Default,,0,0,0,,kisko paisa dena hai.
-Dialogue: 0,0:00:30.05,0:00:30.97,Default,,0,0,0,,Mummy boli,
-Dialogue: 0,0:00:30.97,0:00:32.13,Default,,0,0,0,,itna aasaan hai,
-Dialogue: 0,0:00:32.13,0:00:34.21,Default,,0,0,0,,toh sab yahi kyun nahi karte?
-Dialogue: 0,0:00:34.66,0:00:36.37,Default,,0,0,0,,Agle din market khula,
-Dialogue: 0,0:00:36.37,0:00:39.05,Default,,0,0,0,,aur share ka price lagbhag dividend
-Dialogue: 0,0:00:39.05,0:00:40.02,Default,,0,0,0,,jitna gir gaya.
-Dialogue: 0,0:00:40.47,0:00:42.47,Default,,0,0,0,,Ise ex-dividend kehte hain,
-Dialogue: 0,0:00:42.47,0:00:44.90,Default,,0,0,0,,yaani ab share bina dividend ke
-Dialogue: 0,0:00:44.90,0:00:45.79,Default,,0,0,0,,bik raha hai.
-Dialogue: 0,0:00:46.24,0:00:46.97,Default,,0,0,0,,Phir aaya tax.
-Dialogue: 0,0:00:46.97,0:00:49.91,Default,,0,0,0,,Dividend aapki income mein judta hai,
-Dialogue: 0,0:00:49.91,0:00:51.13,Default,,0,0,0,,slab ke hisaab se.
-Dialogue: 0,0:00:51.13,0:00:53.09,Default,,0,0,0,,Upar ke slab mein yeh 30
-Dialogue: 0,0:00:53.09,0:00:54.56,Default,,0,0,0,,percent tak jaata hai.
-Dialogue: 0,0:00:55.01,0:00:57.38,Default,,0,0,0,,Matlab paisa share ki keemat se
-Dialogue: 0,0:00:57.38,0:00:57.85,Default,,0,0,0,,nikla,
-Dialogue: 0,0:00:57.85,0:00:59.28,Default,,0,0,0,,aur aapke bank mein aaya.
-Dialogue: 0,0:00:59.28,0:01:00.46,Default,,0,0,0,,Bas jagah badli,
-Dialogue: 0,0:01:00.46,0:01:01.41,Default,,0,0,0,,aur tax alag.
-Dialogue: 0,0:01:01.86,0:01:03.55,Default,,0,0,0,,Date ke peeche mat bhaago,
-Dialogue: 0,0:01:03.55,0:01:05.46,Default,,0,0,0,,company ka business samjho.
-Dialogue: 0,0:01:05.46,0:01:07.58,Default,,0,0,0,,Yeh investment advice nahi hai.
-Dialogue: 0,0:01:08.03,0:01:10.83,Default,,0,0,0,,Aapne kabhi dividend ke liye share
-Dialogue: 0,0:01:10.83,0:01:11.34,Default,,0,0,0,,liya hai?
-Dialogue: 0,0:01:11.34,0:01:12.11,Default,,0,0,0,,Haan ya na?
+Dialogue: 0,0:00:00.00,0:00:01.20,Default,,0,0,0,,Subah chai ke saath,
+Dialogue: 0,0:00:01.20,0:00:03.60,Default,,0,0,0,,Bhai ke phone par headline chamki.
+Dialogue: 0,0:00:04.05,0:00:05.82,Default,,0,0,0,,Tips Music har share par 6.50
+Dialogue: 0,0:00:05.82,0:00:07.81,Default,,0,0,0,,rupaye dividend de rahi hai.
+Dialogue: 0,0:00:07.81,0:00:10.02,Default,,0,0,0,,Dividend yaani profit ka hissa,
+Dialogue: 0,0:00:10.02,0:00:11.57,Default,,0,0,0,,seedha shareholders ko.
+Dialogue: 0,0:00:12.02,0:00:13.17,Default,,0,0,0,,Bhai ne socha,
+Dialogue: 0,0:00:13.17,0:00:14.61,Default,,0,0,0,,aaj share le lo,
+Dialogue: 0,0:00:14.61,0:00:16.34,Default,,0,0,0,,kal free paisa bank mein.
+Dialogue: 0,0:00:16.79,0:00:18.19,Default,,0,0,0,,Uska logic simple tha.
+Dialogue: 0,0:00:18.19,0:00:20.39,Default,,0,0,0,,Record date se pehle share demat
+Dialogue: 0,0:00:20.39,0:00:20.79,Default,,0,0,0,,mein ho,
+Dialogue: 0,0:00:20.79,0:00:21.99,Default,,0,0,0,,toh paisa milega.
+Dialogue: 0,0:00:22.44,0:00:24.29,Default,,0,0,0,,Record date yaani woh din jab
+Dialogue: 0,0:00:24.29,0:00:25.93,Default,,0,0,0,,company list banati hai,
+Dialogue: 0,0:00:25.93,0:00:27.36,Default,,0,0,0,,kisko paisa dena hai.
+Dialogue: 0,0:00:27.81,0:00:28.66,Default,,0,0,0,,Mummy boli,
+Dialogue: 0,0:00:28.66,0:00:29.73,Default,,0,0,0,,itna aasaan hai,
+Dialogue: 0,0:00:29.73,0:00:31.65,Default,,0,0,0,,toh sab yahi kyun nahi karte?
+Dialogue: 0,0:00:32.10,0:00:33.56,Default,,0,0,0,,Agle din market khula,
+Dialogue: 0,0:00:33.56,0:00:35.86,Default,,0,0,0,,aur share ka price lagbhag dividend
+Dialogue: 0,0:00:35.86,0:00:36.70,Default,,0,0,0,,jitna gir gaya.
+Dialogue: 0,0:00:37.15,0:00:38.77,Default,,0,0,0,,Ise ex-dividend kehte hain,
+Dialogue: 0,0:00:38.77,0:00:40.75,Default,,0,0,0,,yaani ab share bina dividend ke
+Dialogue: 0,0:00:40.75,0:00:41.47,Default,,0,0,0,,bik raha hai.
+Dialogue: 0,0:00:41.92,0:00:42.60,Default,,0,0,0,,Phir aaya tax.
+Dialogue: 0,0:00:42.60,0:00:45.34,Default,,0,0,0,,Dividend aapki income mein judta hai,
+Dialogue: 0,0:00:45.34,0:00:46.48,Default,,0,0,0,,slab ke hisaab se.
+Dialogue: 0,0:00:46.48,0:00:48.31,Default,,0,0,0,,Upar ke slab mein yeh 30
+Dialogue: 0,0:00:48.31,0:00:49.68,Default,,0,0,0,,percent tak jaata hai.
+Dialogue: 0,0:00:50.13,0:00:52.59,Default,,0,0,0,,Matlab paisa share ki keemat se
+Dialogue: 0,0:00:52.59,0:00:53.08,Default,,0,0,0,,nikla,
+Dialogue: 0,0:00:53.08,0:00:54.56,Default,,0,0,0,,aur aapke bank mein aaya.
+Dialogue: 0,0:00:54.56,0:00:55.79,Default,,0,0,0,,Bas jagah badli,
+Dialogue: 0,0:00:55.79,0:00:56.77,Default,,0,0,0,,aur tax alag.
+Dialogue: 0,0:00:57.22,0:00:58.67,Default,,0,0,0,,Date ke peeche mat bhaago,
+Dialogue: 0,0:00:58.67,0:01:00.29,Default,,0,0,0,,company ka business samjho.
+Dialogue: 0,0:01:00.29,0:01:02.10,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:01:02.55,0:01:05.22,Default,,0,0,0,,Aapne kabhi dividend ke liye share
+Dialogue: 0,0:01:05.22,0:01:05.70,Default,,0,0,0,,liya hai?
+Dialogue: 0,0:01:05.70,0:01:06.43,Default,,0,0,0,,Haan ya na?
