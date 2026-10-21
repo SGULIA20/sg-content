@@ -44,16 +44,18 @@ def buffer_days(root: Path, today: date, horizon: int = 14) -> dict:
     return out
 
 
-def run_summary(root: Path, day: date) -> str:
+def run_summary(root: Path, day: date, qday: date | None = None) -> str:
     rows = pieces.list_all(root)
     today = [p for p in rows if _touched_today(p, day)]
     made = [p for p in today if p.status in ("uploaded", "posted")]
     rejected = [p for p in today if p.status == "rejected"]
     failed = [p for p in today if p.status.startswith("failed-") or p.status == "qa_failed"]
     posted = [p for p in today if p.status == "posted"]
-    voice = int(_json(Path(root) / "logs" / "voice-budget.json").get(day.isoformat(), 0))
-    inr = float(_json(Path(root) / "logs" / "image-spend.json").get(day.isoformat(), {}).get("inr", 0))
-    usd = float(_json(Path(root) / "logs" / "claude-spend.json").get(day.isoformat(), {}).get("usd", 0))
+    from .config import today_pacific
+    qday = (qday or today_pacific()).isoformat()                         # the meters are keyed by Google's quota day, not the India date
+    voice = int(_json(Path(root) / "logs" / "voice-budget.json").get(qday, 0))
+    inr = float(_json(Path(root) / "logs" / "image-spend.json").get(qday, {}).get("inr", 0))
+    usd = float(_json(Path(root) / "logs" / "claude-spend.json").get(qday, {}).get("usd", 0))
     buf = buffer_days(root, day)
     lines = [f"SG Content {day.isoformat()}: made {len(made)}, rejected {len(rejected)}, failed {len(failed)}, posted {len(posted)}"]
     for p in made:

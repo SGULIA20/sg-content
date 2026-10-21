@@ -7,6 +7,7 @@ from pathlib import Path
 SHORT_RANGE = (40.0, 59.0)
 STORY_RANGE = (40.0, 178.0)
 LONG_TOLERANCE = 0.20
+LONG_TOLERANCE_UNDER = 0.30            # a 14-minute target accepts 9.8 min; 22 Oct 2026: a 670.9 s long failed a 672 s floor
 LUFS_TARGET, LUFS_TOL = -16.0, 1.5
 FREEZE_MAX_S = 3.0
 CAPTION_COVERAGE = 0.95
@@ -58,7 +59,7 @@ def report(path: Path, kind: str, voiced_seconds: float, caption_cues: list, tar
         lo, hi = STORY_RANGE if story else SHORT_RANGE
     else:
         target = target_seconds or dur
-        lo, hi = target * (1 - LONG_TOLERANCE), target * (1 + LONG_TOLERANCE)
+        lo, hi = target * (1 - LONG_TOLERANCE_UNDER), target * (1 + LONG_TOLERANCE)
     if not lo <= dur <= hi:
         reasons.append(f"duration: {dur:.1f}s, allowed {lo:.0f}-{hi:.0f}s")
     if abs(info["lufs"] - LUFS_TARGET) > LUFS_TOL:

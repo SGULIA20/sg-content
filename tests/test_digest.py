@@ -25,7 +25,7 @@ def _seed(root):
 
 def test_summary_counts_pieces_by_status(tmp_path):
     _seed(tmp_path)
-    text = digest.run_summary(tmp_path, date(2026, 10, 20))
+    text = digest.run_summary(tmp_path, date(2026, 10, 20), qday=date(2026, 10, 20))
     assert "made 4" in text and "rejected 1" in text and "advice: kharid lo" in text
     assert "voice 23/80 requests + 0 batch lines" in text and "₹27" in text and "$0.31" in text
 

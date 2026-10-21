@@ -32,10 +32,11 @@ def test_submit_builds_one_request_per_line_with_the_right_voice_config():
     assert voicebatch.submit(["ek", "do"], "voice_7o0kddoq6q2z", "piece-1", key="k", post=post) == "batches/abc"
     reqs = seen["body"]["batch"]["input_config"]["requests"]["requests"]
     assert seen["url"].endswith("gemini-3.8-flash-tts:batchGenerateContent") and len(reqs) == 2
-    assert reqs[0]["request"]["contents"][0]["parts"][0]["text"] == "ek"
+    assert reqs[0]["request"]["contents"][0]["parts"][0]["text"] == voicebatch.TONE + "ek"          # designed voice: tone note rides along
     assert reqs[0]["request"]["generationConfig"]["speechConfig"]["voiceConfig"] == {"voice": "voice_7o0kddoq6q2z"}
     voicebatch.submit(["ek"], "Kore", "p", key="k", post=post)
-    assert seen["body"]["batch"]["input_config"]["requests"]["requests"][0]["request"]["generationConfig"]["speechConfig"]["voiceConfig"] == {"prebuiltVoiceConfig": {"voiceName": "Kore"}}
+    r = seen["body"]["batch"]["input_config"]["requests"]["requests"][0]["request"]
+    assert r["generationConfig"]["speechConfig"]["voiceConfig"] == {"prebuiltVoiceConfig": {"voiceName": "Kore"}} and r["contents"][0]["parts"][0]["text"] == "ek"
 
 
 def test_voice_piece_waits_collects_into_the_cache_and_say_then_costs_nothing(tmp_path):
