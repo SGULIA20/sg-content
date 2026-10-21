@@ -21,7 +21,7 @@ def next_long_for_short(channel: str, day: date) -> str:
     return slots.piece_id(day + timedelta(days=ahead), channel, "long")
 
 
-def needed(root: Path = ROOT, today_ist: date | None = None, horizon_short: int = 7, horizon_long: int = 3) -> list:
+def needed(root: Path = ROOT, today_ist: date | None = None, horizon_short: int = 7, horizon_long: int = 14) -> list:   # 7 Shorts and ~4 longs per channel ahead (founder, 22 Oct 2026)
     """[(publish_day, channel, kind)] not yet uploaded, longs first (by date), then Shorts (by date, then channel)."""
     today_ist = today_ist or date.today()
     done = {p.id for p in pieces.list_all(root) if p.status in DONE}

@@ -176,11 +176,12 @@ def build(piece: Piece, lines: list, visuals: list, size: tuple, out_dir: Path, 
     return out
 
 
-STORY_MAX_S = 59.0          # Instagram refuses a Story video over 60 s (21 Oct 2026: the 70 s Learning with SG Story failed)
+STORY_MAX_S = 60.0          # Instagram refuses a Story video over 60 s
 
 
-def story_cut(video: Path, out: Path, max_s: float = STORY_MAX_S) -> Path:
-    """The Instagram Story copy of a Short: the same file when it fits, else its first max_s seconds with a 1 s fade out."""
+def story_copy(video: Path, out: Path, max_s: float = STORY_MAX_S) -> Path | None:
+    """The Instagram Story copy of a Short when it fits in 60 s; None (and no file) when it is longer. Founder, 22 Oct 2026: never trim a
+    story to fit; a Reel that runs over 60 s keeps its full length and that day has no Story."""
     try:
         dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(video)],
                                    capture_output=True, text=True, check=True).stdout.strip())
@@ -189,10 +190,8 @@ def story_cut(video: Path, out: Path, max_s: float = STORY_MAX_S) -> Path:
     if dur <= max_s:
         out.write_bytes(Path(video).read_bytes())
         return out
-    _run(["-i", str(video), "-t", f"{max_s}", "-vf", f"fade=t=out:st={max_s - 1}:d=1", "-af", f"afade=t=out:st={max_s - 1}:d=1",
-          "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k",
-          "-movflags", "+faststart", str(out)])
-    return out
+    Path(out).unlink(missing_ok=True)
+    return None
 
 
 def _mmss(sec: float) -> str:

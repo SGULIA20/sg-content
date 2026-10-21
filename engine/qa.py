@@ -5,7 +5,7 @@ import subprocess
 from pathlib import Path
 
 SHORT_RANGE = (40.0, 59.0)
-STORY_RANGE = (40.0, 95.0)
+STORY_RANGE = (40.0, 178.0)
 LONG_TOLERANCE = 0.20
 LUFS_TARGET, LUFS_TOL = -16.0, 1.5
 FREEZE_MAX_S = 3.0

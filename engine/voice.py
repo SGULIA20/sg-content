@@ -199,3 +199,85 @@ def main(argv=None) -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
+
+# ---- batched synthesis: a few scenes per request (Google allows 100 requests a day), split back into one WAV per scene ----
+GROUP = 4                   # scenes per request: a Short becomes 3-4 requests instead of 13, a long about 10 instead of 40
+JOIN = "\n\n"               # a paragraph break makes the model pause between scenes; the pause is where the audio is cut
+MIN_SILENCE_S = 0.28
+FRAME_S = 0.02
+
+
+def _silences(pcm, rate: int, min_s: float = MIN_SILENCE_S) -> list:
+    """[(start, end)] of quiet stretches at least min_s long, by 20 ms RMS frames against a floor relative to the loud parts."""
+    import numpy as np
+    n = int(rate * FRAME_S)
+    if len(pcm) < n * 5:
+        return []
+    frames = pcm[: len(pcm) // n * n].astype(np.float32).reshape(-1, n)
+    rms = np.sqrt((frames ** 2).mean(axis=1))
+    floor = max(120.0, float(np.percentile(rms, 90)) * 0.06)
+    quiet = rms < floor
+    out, start = [], None
+    for i, q in enumerate(list(quiet) + [False]):
+        if q and start is None:
+            start = i
+        elif not q and start is not None:
+            if (i - start) * FRAME_S >= min_s:
+                out.append((start * FRAME_S, i * FRAME_S))
+            start = None
+    return out
+
+
+def split_group(wav: Path, texts: list, outs: list) -> list | None:
+    """Cuts one group WAV into len(texts) scene WAVs at the pauses nearest each scene's word-share boundary.
+    Returns [(path, seconds)] or None when the pauses do not line up (the caller then voices that group line by line)."""
+    import numpy as np
+    with wave.open(str(wav)) as w:
+        rate, pcm = w.getframerate(), np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16)
+    total = len(pcm) / rate
+    if len(texts) == 1:
+        cuts = []
+    else:
+        words = [max(1, len(t.split())) for t in texts]
+        targets = [total * sum(words[:i + 1]) / sum(words) for i in range(len(texts) - 1)]
+        mids = [(s + e) / 2 for s, e in _silences(pcm, rate)]
+        tol = max(1.2, 0.35 * total / len(texts))
+        cuts, used = [], -1.0
+        for t in targets:
+            near = [m for m in mids if m > used + 0.5 and abs(m - t) <= tol]
+            if not near:
+                return None
+            c = min(near, key=lambda m: abs(m - t))
+            cuts.append(c); used = c
+    bounds = [0.0] + cuts + [total]
+    out = []
+    for i, (a, b) in enumerate(zip(bounds, bounds[1:])):
+        seg = pcm[int(a * rate): int(b * rate)]
+        p = Path(outs[i]); p.parent.mkdir(parents=True, exist_ok=True)
+        with wave.open(str(p), "wb") as w:
+            w.setnchannels(1); w.setsampwidth(2); w.setframerate(rate); w.writeframes(seg.tobytes())
+        out.append((p, round(len(seg) / rate, 3)))
+    return out
+
+
+def batched(texts: list, voice_id: str, out_dir: Path, say_fn=None, group: int = GROUP, **kw) -> list:
+    """One WAV per scene, in order, using one request per `group` scenes; a group whose pauses cannot be matched falls back to a request per line."""
+    say_fn = say_fn or say
+    out_dir = Path(out_dir)
+    result = []
+    for g in range(0, len(texts), group):
+        chunk = texts[g:g + group]
+        outs = [out_dir / f"vo{g + i:02d}.wav" for i in range(len(chunk))]
+        if len(chunk) == 1:
+            result.append((outs[0], say_fn(chunk[0], voice_id, outs[0], **kw)))
+            continue
+        gw = out_dir / "groups" / f"g{g:02d}.wav"
+        gw.parent.mkdir(parents=True, exist_ok=True)
+        say_fn(JOIN.join(chunk), voice_id, gw, **kw)
+        parts = split_group(gw, chunk, outs)
+        if parts is None:
+            print(f"voice: group {g // group} pauses did not line up; voicing its {len(chunk)} lines one by one", flush=True)
+            parts = [(o, say_fn(t, voice_id, o, **kw)) for t, o in zip(chunk, outs)]
+        result += parts
+    return result

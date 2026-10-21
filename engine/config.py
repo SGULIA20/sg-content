@@ -36,7 +36,7 @@ CHANNELS = {
         youtube_category="27"),
 }
 
-BUDGETS = {"voice_requests_per_day": 80, "image_inr_per_day": 250, "claude_usd_per_day": 3.0}   # ceilings, not targets: a normal day is 2 Shorts + 1 long ≈ ₹190 of pictures (21 Oct 2026)
+BUDGETS = {"voice_requests_per_day": 80, "image_inr_per_day": 450, "claude_usd_per_day": 6.0}   # raised 22 Oct 2026 to build the 7-day / 4-long buffer; a steady day is ≈ ₹160 + $1   # ceilings, not targets: a normal day is 2 Shorts + 1 long ≈ ₹190 of pictures (21 Oct 2026)
 
 VIDEO = {"short": (1080, 1920), "long": (1920, 1080), "fps": 30}
 
@@ -78,7 +78,7 @@ def is_story(channel: str, kind: str) -> bool:
 
 
 STORY_WORDS = (150, 230)                      # a 60-90 s story at the clone's ~2.5 words/s
-STORY_MAX_S = 95.0                            # YouTube Shorts and Reels allow up to 3 minutes; stories stop at about 90 s
+STORY_MAX_S = 178.0                           # YouTube Shorts allow up to 3 minutes; the writer aims for 60-90 s but nothing is ever cut or sped up (founder, 22 Oct 2026)
 
 ENABLED_KINDS = {"short", "long"}             # longs twice a week per channel (founder, 20 Oct 2026)
 

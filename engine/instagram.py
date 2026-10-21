@@ -89,6 +89,10 @@ def publish_piece(piece: Piece, env=None, call=call, sleep=time.sleep, root: Pat
                 params["thumb_offset"] = str(THUMB_OFFSET_MS)
             piece.ids["ig_reel_id"] = _create_and_publish(ig_id, token, params, "reel", call, sleep)
             pieces.save(piece, root); done.append("reel")
+        out_dir = Path(root) / "out" / piece.id
+        if not piece.ids.get("ig_story_id") and out_dir.exists() and not (out_dir / "story.mp4").exists():
+            piece.ids["ig_story_id"] = "skipped: Reel over 60 s"             # founder, 22 Oct 2026: no trimmed Story; the Reel keeps its full length
+            pieces.save(piece, root)
         if not piece.ids.get("ig_story_id"):
             piece.ids["ig_story_id"] = _create_and_publish(ig_id, token, {
                 "media_type": "STORIES", "video_url": media_url(piece, "story.mp4", repo)}, "story", call, sleep)

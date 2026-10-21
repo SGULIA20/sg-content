@@ -45,6 +45,7 @@ class Deps:
     story_build: Callable = None # (piece, lines, panels, size, out_dir) -> mp4: illustrated-story frame (title band, panel, caption band)
     cast_refs: Callable = None   # (prompt) -> reference PNGs of the cast members the panel names
     subtitles: Callable = None   # (piece, out_dir, video) -> writes SRTs and adds YouTube caption tracks (longs)
+    voice_lines: Callable = None # (texts, voice_id, out_dir) -> [(wav, seconds)]: batched synthesis (several scenes per request)
 
 
 def _jsonable(d: dict) -> dict:
@@ -229,9 +230,12 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
     voice_id = voice.pick(piece.id) if voice.pick else deps.voice_id
     piece.topic["voice"] = voice_id
     try:
-        for i, scene in enumerate(script["scenes"]):
-            wav = out_dir / "vo" / f"vo{i:02d}.wav"
-            lines.append((wav, deps.say(scene["vo"], voice_id, wav)))
+        if deps.voice_lines:
+            lines = deps.voice_lines([sc["vo"] for sc in script["scenes"]], voice_id, out_dir / "vo")
+        else:
+            for i, scene in enumerate(script["scenes"]):
+                wav = out_dir / "vo" / f"vo{i:02d}.wav"
+                lines.append((wav, deps.say(scene["vo"], voice_id, wav)))
     except voice.VoiceError as e:                            # the daily cap, a quota refusal or a dead key: keep the script, retry next run
         pieces.save(pieces.transition(piece, "failed-voice", str(e)), root)
         return piece
@@ -256,7 +260,8 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
     else:
         video = deps.build(piece, lines, visuals, size, out_dir, music=bed, source_strips=strips, label_chips=chips, credits=credits)
     if piece.kind == "short":
-        assemble.story_cut(video, out_dir / "story.mp4")
+        if assemble.story_copy(video, out_dir / "story.mp4") is None:          # founder, 22 Oct 2026: never trim; a Reel over 60 s simply has no Story
+            piece.ids["ig_story_id"] = "skipped: Reel over 60 s"
         if script.get("carousel"):
             for j, card in enumerate(script.get("cards", []), start=1):
                 deps.render_card("slide", card, out_dir / f"slide{j:02d}.jpg", (1080, 1350))
@@ -333,4 +338,5 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
                 claims_check=lambda piece: claims.match(lint.all_text(piece), piece.facts, library,
                                                         context=(piece.topic.get("title"), piece.topic.get("title_hi"))),
                 commons=art.commons_photo, library=library, hashtags=hashtags, voice_id=default_voice,
-                cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for, subtitles=subtitles_fn)
+                cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for, subtitles=subtitles_fn,
+                voice_lines=lambda texts, vid, out_dir: voice.batched(texts, vid, out_dir))

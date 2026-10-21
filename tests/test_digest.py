@@ -39,7 +39,8 @@ def test_buffer_days_per_channel(tmp_path):
 def test_alert_when_buffer_under_four_days(tmp_path, monkeypatch):
     _seed(tmp_path)
     alerts = digest.alerts(tmp_path, date(2026, 10, 20))
-    assert any("arthvan" in a and "buffer" in a for a in alerts) and any("sglearning" in a and "buffer" in a for a in alerts)   # 0 and 2 days < 4
+    assert any("arthvan" in a and "buffer" in a for a in alerts) and any("sglearning" in a and "buffer" in a for a in alerts)   # 0 and 2 days < 7
+    assert any("long video" in a for a in alerts)                                                                                # fewer than 4 longs ready
     monkeypatch.setattr(digest, "BUFFER_ALERT_DAYS", 2)
     alerts = digest.alerts(tmp_path, date(2026, 10, 20))
     assert not any("sglearning" in a and "buffer" in a for a in alerts)

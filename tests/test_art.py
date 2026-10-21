@@ -40,9 +40,9 @@ def test_paint_sends_references_inline(tmp_path):
 def test_image_budget_stops_at_cap(tmp_path):
     fp = FakePost()
     spend = tmp_path / "s.json"
-    spend.write_text(json.dumps({"2026-10-20": {"inr": 248.5, "requests": 83}}))
+    spend.write_text(json.dumps({"2026-10-20": {"inr": 448.5, "requests": 150}}))
     kw = dict(key="k", cache_dir=tmp_path / "c", spend=spend, post=fp, today=date(2026, 10, 20))
-    art.paint("p1", tmp_path / "1.png", **kw)                         # 248.5 + 3 allowed (was under the cap before)
+    art.paint("p1", tmp_path / "1.png", **kw)                         # 448.5 + 3 allowed (was under the cap before)
     with pytest.raises(art.ImageBudget):
         art.paint("p2", tmp_path / "2.png", **kw)
     assert len(fp.calls) == 1

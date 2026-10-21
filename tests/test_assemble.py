@@ -84,13 +84,10 @@ def test_source_strip_sits_at_top_and_skips_avatar_scenes():
     assert assemble._overlays_for(p, 1, (1080, 1920), strips, {}) == [(Path("/tmp/strip.png"), 0, 40)]
 
 
-def test_story_cut_keeps_short_videos_and_trims_long_ones(tmp_path):
+def test_story_copy_keeps_short_videos_and_skips_long_ones(tmp_path):
     src = tmp_path / "v.mp4"
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "color=c=blue:s=64x64:d=3", "-f", "lavfi", "-i", "sine=d=3",
                     "-shortest", "-pix_fmt", "yuv420p", str(src)], check=True)
-    same = assemble.story_cut(src, tmp_path / "s1.mp4", max_s=5)
+    same = assemble.story_copy(src, tmp_path / "s1.mp4", max_s=5)
     assert same.read_bytes() == src.read_bytes()
-    cut = assemble.story_cut(src, tmp_path / "s2.mp4", max_s=2)
-    dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(cut)],
-                               capture_output=True, text=True).stdout)
-    assert 1.8 <= dur <= 2.2
+    assert assemble.story_copy(src, tmp_path / "s2.mp4", max_s=2) is None and not (tmp_path / "s2.mp4").exists()   # never trimmed (founder, 22 Oct 2026)

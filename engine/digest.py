@@ -6,7 +6,8 @@ from pathlib import Path
 from . import pieces, slots, telegram
 from .config import BUDGETS, CHANNELS, ROOT, today_ist
 
-BUFFER_ALERT_DAYS = 4                 # founder, 21 Oct 2026: always keep 4-5 days in hand; below 4 is an alert
+BUFFER_ALERT_DAYS = 7                 # founder, 22 Oct 2026: seven days of Shorts in hand, always
+LONG_ALERT_COUNT = 4                  # and four finished longs per channel
 TOKEN_ALERT_DAYS = 7
 
 
@@ -66,11 +67,20 @@ def run_summary(root: Path, day: date) -> str:
     return "\n".join(lines)
 
 
+def longs_ready(root: Path, today: date, horizon: int = 35) -> dict:
+    """Per channel: finished longs (uploaded or posted) among the upcoming long slots."""
+    ready = {p.id for p in pieces.list_all(root) if p.status in ("uploaded", "posted")}
+    return {ch: sum(1 for d in slots.publish_dates(ch, "long", today, horizon) if slots.piece_id(d, ch, "long") in ready) for ch in CHANNELS}
+
+
 def alerts(root: Path, day: date) -> list:
     out = []
     for ch, n in buffer_days(root, day).items():
         if n < BUFFER_ALERT_DAYS:
-            out.append(f"{ch}: buffer is {n} day(s); the next Short slot has nothing ready")
+            out.append(f"{ch}: Shorts buffer is {n} day(s), target {BUFFER_ALERT_DAYS}")
+    for ch, n in longs_ready(root, day).items():
+        if n < LONG_ALERT_COUNT:
+            out.append(f"{ch}: {n} long video(s) ready, target {LONG_ALERT_COUNT}")
     runs_path = Path(root) / "logs" / "runs.jsonl"
     if runs_path.exists():
         runs = [json.loads(l) for l in runs_path.read_text().splitlines() if l.strip()]

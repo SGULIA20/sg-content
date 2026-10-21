@@ -144,3 +144,48 @@ def test_lines_are_paced_under_ten_a_minute(tmp_path, monkeypatch):
     voice.say("one", "voice_x", tmp_path / "1.wav", **kw)
     voice.say("two", "voice_x", tmp_path / "2.wav", **kw)
     assert slept == [6.5]
+
+
+def _speech_like(path, parts, rate=24000, gap=0.6):
+    """Loud noisy bursts (one per text) separated by `gap` seconds of silence, like narration with paragraph pauses."""
+    import numpy as np
+    rng = np.random.default_rng(1)
+    chunks = []
+    for secs in parts:
+        chunks.append((rng.normal(0, 6000, int(secs * rate))).astype(np.int16))
+        chunks.append(np.zeros(int(gap * rate), dtype=np.int16))
+    pcm = np.concatenate(chunks[:-1])
+    with wave.open(str(path), "wb") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(rate); w.writeframes(pcm.tobytes())
+    return path
+
+
+def test_split_group_cuts_at_the_pauses_nearest_each_scenes_word_share(tmp_path):
+    texts = ["one two three four five six", "seven eight nine ten eleven twelve", "thirteen fourteen fifteen sixteen seventeen eighteen"]
+    g = _speech_like(tmp_path / "g.wav", [2.0, 2.0, 2.0])
+    parts = voice.split_group(g, texts, [tmp_path / f"s{i}.wav" for i in range(3)])
+    assert parts and [p.name for p, _d in parts] == ["s0.wav", "s1.wav", "s2.wav"]
+    assert all(1.9 <= d <= 2.9 for _p, d in parts) and abs(sum(d for _p, d in parts) - 7.2) < 0.05
+
+
+def test_split_group_gives_up_when_pauses_do_not_match(tmp_path):
+    g = _speech_like(tmp_path / "g.wav", [6.0])                                   # one burst, no pause at all
+    assert voice.split_group(g, ["a b c", "d e f"], [tmp_path / "x.wav", tmp_path / "y.wav"]) is None
+
+
+def test_batched_uses_one_request_per_group_and_falls_back_per_line(tmp_path):
+    calls = []
+    def fake_say(text, vid, out, **kw):
+        calls.append(text)
+        n = text.count(voice.JOIN) + 1
+        _speech_like(out, [1.0] * n) if n > 1 or "solo" in text else _speech_like(out, [1.0], gap=0)
+        return 1.0 * n
+    texts = ["a a a", "b b b", "c c c", "d d d", "e e e"]
+    out = voice.batched(texts, "Puck", tmp_path / "vo", say_fn=fake_say, group=4)
+    assert len(out) == 5 and [p.name for p, _d in out] == [f"vo{i:02d}.wav" for i in range(5)]
+    assert len(calls) == 2 and calls[0] == voice.JOIN.join(texts[:4]) and calls[1] == "e e e"      # 2 requests instead of 5
+    calls.clear()
+    def no_pause_say(text, vid, out, **kw):
+        calls.append(text); _speech_like(out, [1.0], gap=0); return 1.0                                  # the group came back without pauses
+    out = voice.batched(["p p", "q q"], "Puck", tmp_path / "vo2", say_fn=no_pause_say, group=4)
+    assert len(out) == 2 and calls == [voice.JOIN.join(["p p", "q q"]), "p p", "q q"]                     # fallback: the lines one by one

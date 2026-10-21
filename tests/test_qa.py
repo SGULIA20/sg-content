@@ -51,7 +51,7 @@ def test_probe_reads_duration_and_loudness(tmp_path):
     assert info["duration"] == pytest.approx(10.0, abs=0.2) and -18.5 <= info["lufs"] <= -13.5 and info["decode_errors"] == 0
 
 
-def test_story_shorts_may_run_to_95_seconds(tmp_path):
+def test_story_shorts_may_run_to_three_minutes(tmp_path):
     clip = _clip(tmp_path / "s.mp4", 80)
     assert not any(r.startswith("duration") for r in qa.report(clip, "short", voiced_seconds=78, caption_cues=[(0, 78, "x")], check_freeze=False, story=True))
     assert any(r.startswith("duration") for r in qa.report(clip, "short", voiced_seconds=78, caption_cues=[(0, 78, "x")], check_freeze=False))

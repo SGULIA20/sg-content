@@ -78,7 +78,11 @@ def _channel_rows(day: date, now: datetime, root: Path) -> list:
         if day.weekday() in ch.short_days:
             p = pieces.load(slots.piece_id(day, key, "short"), root)
             ids = p.ids if p else {}
-            ig = OK if ids.get("ig_reel_id") and ids.get("ig_story_id") else ("🔴 Reel only" if ids.get("ig_reel_id") else ("🔴 Story only" if ids.get("ig_story_id") else NO))
+            story = ids.get("ig_story_id") or ""
+            if ids.get("ig_reel_id") and story.startswith("skipped"):
+                ig = "✅ Reel (no Story: over 60 s)"
+            else:
+                ig = OK if ids.get("ig_reel_id") and story else ("🔴 Reel only" if ids.get("ig_reel_id") else ("🔴 Story only" if story else NO))
             rows.append((f"{label} Short", {"YouTube": _yt_cell(p, now), "Instagram": ig,
                                             "Threads": OK if ids.get("threads_id") else NO, "LinkedIn": OK if ids.get("linkedin_id") else NO}))
     return rows
