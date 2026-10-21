@@ -12,21 +12,20 @@ def test_ist_converts_from_utc():
     assert slots.ist(datetime(2026, 10, 19, 19, 30, tzinfo=timezone.utc)).date() == date(2026, 10, 20)
 
 
-def test_arthvan_shorts_only_mon_wed_fri():
-    days = slots.publish_dates("arthvan", "short", date(2026, 10, 19), 7)   # Monday 19 Oct 2026
-    assert [d.isoformat() for d in days] == ["2026-10-19", "2026-10-21", "2026-10-23"]
+def test_arthvan_shorts_every_day():
+    assert len(slots.publish_dates("arthvan", "short", date(2026, 10, 19), 7)) == 7      # founder's table, 21 Oct 2026
 
 
 def test_sglearning_shorts_every_day():
     assert len(slots.publish_dates("sglearning", "short", date(2026, 10, 19), 7)) == 7
 
 
-def test_sglearning_long_includes_sunday():
-    assert date(2026, 10, 25) in slots.publish_dates("sglearning", "long", date(2026, 10, 19), 7)
+def test_sglearning_long_includes_saturday():
+    assert date(2026, 10, 24) in slots.publish_dates("sglearning", "long", date(2026, 10, 19), 7)
 
 
-def test_arthvan_long_includes_saturday():
-    assert date(2026, 10, 24) in slots.publish_dates("arthvan", "long", date(2026, 10, 19), 7)
+def test_arthvan_long_includes_sunday():
+    assert date(2026, 10, 25) in slots.publish_dates("arthvan", "long", date(2026, 10, 19), 7)
 
 
 def test_piece_id_format():
@@ -46,6 +45,6 @@ def test_publish_at_for_piece_kind():
 
 
 def test_two_long_days_per_channel():
-    # sglearning: Wednesday and Sunday; arthvan: Tuesday and Saturday (founder, 20 Oct 2026)
-    assert slots.publish_dates("sglearning", "long", date(2026, 10, 19), 7) == [date(2026, 10, 21), date(2026, 10, 25)]
-    assert slots.publish_dates("arthvan", "long", date(2026, 10, 19), 7) == [date(2026, 10, 20), date(2026, 10, 24)]
+    # sglearning: Wednesday and Saturday; arthvan: Thursday and Sunday (founder's table, 21 Oct 2026)
+    assert slots.publish_dates("sglearning", "long", date(2026, 10, 19), 7) == [date(2026, 10, 21), date(2026, 10, 24)]
+    assert slots.publish_dates("arthvan", "long", date(2026, 10, 19), 7) == [date(2026, 10, 22), date(2026, 10, 25)]

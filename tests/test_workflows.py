@@ -37,7 +37,7 @@ def test_produce_schedule_and_guards():
 def test_publish_crons_match_slots():
     data = yaml.safe_load((ROOT / ".github" / "workflows" / "publish.yml").read_text())
     crons = [s["cron"] for s in (data.get(True) or data.get("on"))["schedule"]]
-    assert "30 8 * * *" in crons and "30 9 * * *" in crons and "0 16 * * 1,3,5" in crons and "0 17 * * 1,3,5" in crons
+    assert "30 8 * * *" in crons and "30 9 * * *" in crons and "0 16 * * *" in crons and "0 17 * * *" in crons
     pick = next(s["run"] for s in data["jobs"]["publish"]["steps"] if s.get("id") == "slot")
     assert '"30 9 * * *"' in pick and '"30 10 * * *"' in pick                                   # every finance slot maps to sglearning
 

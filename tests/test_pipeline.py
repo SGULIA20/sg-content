@@ -115,14 +115,14 @@ def test_make_is_idempotent_for_uploaded_piece(tmp_path):
 def test_myth_short_reuses_long_scenes(tmp_path, monkeypatch):
     from engine import config
     monkeypatch.setattr(config, "STORY_FORMAT", {("sglearning", "short")})
-    long_p = _piece("long", "arthvan", date(2026, 10, 20))
+    long_p = _piece("long", "arthvan", date(2026, 10, 18))
     s = good_script(); s["scenes"] = s["scenes"] * 4                         # 12 scenes
     long_p.script = s; long_p.facts = FACTS; long_p.status = "uploaded"; long_p.topic = {"id": "dwarka-underwater", "hooks": ["h1", "h2", "h3"]}
     pieces.save(long_p, tmp_path)
     d, calls = deps(tmp_path)
     p = pipeline.make(_piece("short", "arthvan", date(2026, 10, 21)), d, tmp_path)
     assert calls["research"] == 0 and calls["write"] == 1                   # no new research; the writer cuts the Short from the long's scenes
-    assert p.topic["from_long"] == "2026-10-20-arthvan-long" and p.status == "uploaded"
+    assert p.topic["from_long"] == "2026-10-18-arthvan-long" and p.status == "uploaded"
 
 
 def test_myth_short_without_long_fails_cleanly(tmp_path, monkeypatch):
@@ -136,12 +136,12 @@ def test_myth_short_without_long_fails_cleanly(tmp_path, monkeypatch):
 def test_myth_short_teases_next_long_when_previous_missing(tmp_path, monkeypatch):
     from engine import config
     monkeypatch.setattr(config, "STORY_FORMAT", {("sglearning", "short")})
-    long_p = _piece("long", "arthvan", date(2026, 10, 24))
+    long_p = _piece("long", "arthvan", date(2026, 10, 22))
     long_p.script = good_script(); long_p.facts = FACTS; long_p.status = "uploaded"; long_p.topic = {"id": "dwarka-underwater", "hooks": ["h1", "h2", "h3"]}
     pieces.save(long_p, tmp_path)
     d, calls = deps(tmp_path)
     p = pipeline.make(_piece("short", "arthvan", date(2026, 10, 21)), d, tmp_path)
-    assert p.topic["from_long"] == "2026-10-24-arthvan-long" and p.status == "uploaded"
+    assert p.topic["from_long"] == "2026-10-22-arthvan-long" and p.status == "uploaded"
 
 
 def test_make_resumes_from_written_script_without_rewriting(tmp_path):

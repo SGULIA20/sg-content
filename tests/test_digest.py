@@ -33,13 +33,13 @@ def test_summary_counts_pieces_by_status(tmp_path):
 def test_buffer_days_per_channel(tmp_path):
     _seed(tmp_path)
     b = digest.buffer_days(tmp_path, date(2026, 10, 20))
-    assert b["sglearning"] == 2 and b["arthvan"] == 1            # arthvan: Wed 21 Oct short ready; Fri 23 not
+    assert b["sglearning"] == 2 and b["arthvan"] == 0            # arthvan Shorts are daily now: Tue 20 Oct is not ready, so the run of ready days is 0
 
 
 def test_alert_when_buffer_under_four_days(tmp_path, monkeypatch):
     _seed(tmp_path)
     alerts = digest.alerts(tmp_path, date(2026, 10, 20))
-    assert any("arthvan" in a and "buffer" in a for a in alerts) and any("sglearning" in a and "buffer" in a for a in alerts)   # 1 and 2 days < 4
+    assert any("arthvan" in a and "buffer" in a for a in alerts) and any("sglearning" in a and "buffer" in a for a in alerts)   # 0 and 2 days < 4
     monkeypatch.setattr(digest, "BUFFER_ALERT_DAYS", 2)
     alerts = digest.alerts(tmp_path, date(2026, 10, 20))
     assert not any("sglearning" in a and "buffer" in a for a in alerts)

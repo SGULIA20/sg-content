@@ -1,0 +1,43 @@
+name: evening
+
+# The founder's evening scorecard: his table with every cell marked Posted or NOT POSTED, on Telegram at about 23:20 India,
+# after the last posting slot of the day. Saved to logs/evening-latest.txt so the app poster's bot relays the same text.
+on:
+  schedule:
+    - cron: '50 17 * * *'   # 23:20 India
+    - cron: '20 18 * * *'   # second chance (the engine sends once per day)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: evening
+  cancel-in-progress: false
+
+jobs:
+  evening:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Build and send the scorecard
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m engine.evening --send
+      - name: Save the card for the app poster's bot
+        if: always()
+        run: |
+          git config user.name "sg-content-bot"
+          git config user.email "sg-content-bot@users.noreply.github.com"
+          git add -f logs/evening-latest.txt logs/evening.json || true
+          git diff --cached --quiet || git commit -m "evening: $(date -u +%Y-%m-%d) [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main

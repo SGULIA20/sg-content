@@ -5,8 +5,8 @@ on:
     - cron: '30 8 * * *'      # 14:00 India: Learning with SG Reel + Story + Threads + LinkedIn (after the 07:05 UTC produce run)
     - cron: '30 9 * * *'      # second chance an hour later (the engine never posts a piece twice)
     - cron: '30 10 * * *'
-    - cron: '0 16 * * 1,3,5'  # 21:30 India Mon/Wed/Fri: SG-MYTH-WORLD Reel + Story + Threads + LinkedIn
-    - cron: '0 17 * * 1,3,5'  # second chance
+    - cron: '0 16 * * *'      # 21:30 India daily: SG-MYTH-WORLD Reel + Story + Threads + LinkedIn (founder's table, 21 Oct 2026)
+    - cron: '0 17 * * *'      # second chance
   workflow_dispatch:
     inputs:
       channel:
