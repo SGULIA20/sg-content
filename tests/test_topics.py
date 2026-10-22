@@ -90,3 +90,8 @@ def test_long_bank_rotates_in_order(tmp_path):
 def test_real_long_bank_has_ten_sourced_topics():
     bank = topics.load_long_bank()
     assert len(bank) >= 10 and all(t["id"] and t["title"] and t["summary"] and len(t["hooks"]) == 3 for t in bank)
+
+
+def test_stock_tip_headlines_are_never_topics():
+    for title in ("Stocks in news: Reliance, Eternal, Alkem Labs", "5 stocks to buy today", "Top picks for Diwali"):
+        assert topics.score({"title": title, "summary": "market", "published": None}) < 0

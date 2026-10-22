@@ -6,7 +6,7 @@ from pathlib import Path
 
 SHORT_RANGE = (40.0, 59.0)
 STORY_RANGE = (40.0, 178.0)
-LONG_TOLERANCE = 0.20
+LONG_TOLERANCE = 0.30                  # a 12-minute target accepts 15.6 min: a story told in full beats a story cut to length (22 Oct 2026)
 LONG_TOLERANCE_UNDER = 0.30            # a 14-minute target accepts 9.8 min; 22 Oct 2026: a 670.9 s long failed a 672 s floor
 LUFS_TARGET, LUFS_TOL = -16.0, 1.5
 FREEZE_MAX_S = 3.0

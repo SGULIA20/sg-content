@@ -26,7 +26,10 @@ HOUSEHOLD = ["emi", "petrol", "diesel", "tax", "salary", "sip", "price", "prices
              "crore", "lakh", "jobs", "layoff", "income", "subsidy", "scam", "fraud", "fine", "penalty"]
 NUMBER = re.compile(r"\d|lakh|crore|%|\$")
 BANNED_TOPIC = ["modi", "rahul gandhi", "bjp", "congress", "election", "rally", "pakistan", "minister", "parliament",
-                "opposition", "cm ", "pm "]
+                "opposition", "cm ", "pm ",
+                # stock-tip headlines: the writer can only turn them into tips, which the gate rejects (22 Oct 2026: three wasted drafts)
+                "stocks in news", "stocks to buy", "stocks to watch", "top picks", "buy or sell", "target price", "multibagger",
+                "stock recommendations", "hot stocks", "stocks in focus", "shares to buy"]
 # market plumbing nobody at home needs: auctions, operations notices, securities results. Never a Short on its own.
 PLUMBING = ["variable rate repo", "vrr", "money market operations", "auction", "government securities", "state government securities",
             "treasury bill", "t-bill", "laf", "omo ", "switch auction", "conversion/switch", "sdl", "g-sec", "under laf"]
