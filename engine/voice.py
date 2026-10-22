@@ -303,6 +303,7 @@ def verified_lines(texts: list, voice_id: str, out_dir: Path, say_fn=None, trans
                    tries: int = 2, **kw) -> list:
     """One WAV per scene, each checked by transcript; a line heard twice or cut short is re-synthesised (cache dropped), up to `tries`."""
     say_fn = say_fn or say
+    Path(out_dir).mkdir(parents=True, exist_ok=True)
     out = []
     for i, text in enumerate(texts):
         wav = Path(out_dir) / f"vo{i:02d}.wav"
