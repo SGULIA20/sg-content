@@ -115,3 +115,19 @@ def test_reel_gets_cover_url_when_cover_exists(tmp_path):
     instagram.publish_piece(p, {"IG_ACCESS_TOKEN": "t", "IG_USER_ID": "u", "GITHUB_REPOSITORY": "r"}, call=fc, sleep=lambda s: None, root=tmp_path)
     reel = next(c for c in fc.calls if c[2].get("media_type") == "REELS")
     assert reel[2]["cover_url"].endswith("/cover.jpg")
+
+
+def test_media_url_falls_back_to_the_branch_when_the_recorded_commit_does_not_serve_the_file():
+    class R:
+        def __init__(self, status): self.status = status
+        def __enter__(self): return self
+        def __exit__(self, *a): return False
+    p = _piece()
+    seen = []
+    def head(req):
+        seen.append(req.full_url); return R(200 if "/main/" in req.full_url else 404)
+    url = instagram.resolved_media_url(p, "reel.mp4", "o/r", head=head)
+    assert url == "https://raw.githubusercontent.com/o/r/main/out/2026-10-20-sglearning-short/reel.mp4" and len(seen) == 2
+    assert instagram.resolved_media_url(p, "reel.mp4", "o/r", head=lambda req: R(200)) == "https://raw.githubusercontent.com/o/r/abc123/out/2026-10-20-sglearning-short/reel.mp4"
+    with pytest.raises(instagram.InstagramError):
+        instagram.resolved_media_url(p, "reel.mp4", "o/r", head=lambda req: R(404))

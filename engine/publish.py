@@ -52,7 +52,7 @@ def threads_text(piece) -> str:
 
 
 def run(root: Path = ROOT, channel: str = "sglearning", now_utc: datetime | None = None, env=None,
-        ig_publish=instagram.publish_piece, threads_post=threads.post_video, linkedin_post=linkedin.post_video, notify=telegram.send) -> int:
+        ig_publish=instagram.publish_piece, threads_post=threads.post_video, linkedin_post=linkedin.post_video, notify=telegram.send, check_media: bool = False) -> int:
     now_utc = now_utc or datetime.now(timezone.utc)
     env = os.environ if env is None else env
     if telegram.paused(root):
@@ -62,7 +62,7 @@ def run(root: Path = ROOT, channel: str = "sglearning", now_utc: datetime | None
     need = required(env)
     for piece in due(root, now_utc, channel, env):
         try:
-            piece = ig_publish(piece, env)
+            piece = ig_publish(piece, env, check_media=True) if check_media else ig_publish(piece, env)
         except InstagramError as e:                     # Threads still goes out; the next run retries what Instagram missed
             problems.append(f"{piece.id}: instagram: {e}")
             pieces.transition(piece, piece.status, f"instagram: {str(e)[:200]}"); pieces.save(piece, root)
@@ -72,7 +72,7 @@ def run(root: Path = ROOT, channel: str = "sglearning", now_utc: datetime | None
                 from . import secrets
                 repo = env.get("GITHUB_REPOSITORY") or instagram.DEFAULT_REPO
                 piece.ids["threads_id"] = threads_post(secrets.get("THREADS_USER_ID", env), secrets.get("THREADS_ACCESS_TOKEN", env),
-                                                       instagram.media_url(piece, "reel.mp4", repo), threads_text(piece))
+                                                       (instagram.resolved_media_url if check_media else instagram.media_url)(piece, "reel.mp4", repo), threads_text(piece))
                 pieces.save(piece, root)
             except (ThreadsError, Exception) as e:
                 problems.append(f"{piece.id}: threads: {e}")
@@ -112,7 +112,7 @@ def main(argv=None) -> int:
     a = ap.parse_args(argv)
     telegram.poll_commands(status_fn=lambda: digest.status_line(ROOT))
     try:
-        return run(ROOT, a.channel)
+        return run(ROOT, a.channel, check_media=True)               # production: every media URL is verified on GitHub first
     except Exception as e:
         traceback.print_exc()
         telegram.send(f"publish {a.channel} crashed: {type(e).__name__}: {str(e)[:200]}")

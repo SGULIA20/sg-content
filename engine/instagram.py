@@ -55,11 +55,34 @@ def _wait(cid: str, token: str, label: str, sleep=time.sleep, call=call, max_pol
     raise InstagramError(f"{label} container never finished")
 
 
+def _serves(url: str, head=None) -> bool:
+    try:
+        req = urllib.request.Request(url, method="HEAD")
+        with (head or (lambda r: urllib.request.urlopen(r, timeout=20, context=secrets.ssl_context())))(req) as r:
+            return r.status == 200
+    except Exception:
+        return False
+
+
 def media_url(piece: Piece, name: str, repo: str) -> str:
     sha = piece.ids.get("out_sha")
     if not sha:
         raise InstagramError(f"{piece.id} has no out_sha: the Short was not committed yet, so Instagram cannot fetch it")
     return f"https://raw.githubusercontent.com/{repo}/{sha}/out/{piece.id}/{name}"
+
+
+def resolved_media_url(piece: Piece, name: str, repo: str, head=None) -> str:
+    """media_url, checked: the recorded commit first; if GitHub does not serve the file there (a rebased commit, 22 Oct 2026),
+    the branch head, where the file lives for two weeks."""
+    url = media_url(piece, name, repo)
+    sha = piece.ids["out_sha"]
+    if _serves(url, head):
+        return url
+    alt = f"https://raw.githubusercontent.com/{repo}/main/out/{piece.id}/{name}"
+    if _serves(alt, head):
+        print(f"{piece.id}: {name} is not at {sha[:8]}; using the branch head", flush=True)
+        return alt
+    raise InstagramError(f"{piece.id}: {name} is served neither at {sha[:8]} nor on main")
 
 
 def caption_text(piece: Piece) -> str:
@@ -73,11 +96,13 @@ def _create_and_publish(ig_id: str, token: str, params: dict, label: str, call, 
     return call("POST", f"/{ig_id}/media_publish", token, {"creation_id": cid})["id"]
 
 
-def publish_piece(piece: Piece, env=None, call=call, sleep=time.sleep, root: Path = ROOT) -> Piece:
-    """Posts whatever is still missing for this piece: Reel, Story, then the carousel if the script asked for one."""
+def publish_piece(piece: Piece, env=None, call=call, sleep=time.sleep, root: Path = ROOT, check_media: bool = False) -> Piece:
+    """Posts whatever is still missing for this piece: Reel, Story, then the carousel if the script asked for one.
+    check_media=True (production) verifies each media URL on GitHub first and falls back to the branch head."""
     token = secrets.get("IG_ACCESS_TOKEN", env)
     ig_id = secrets.get("IG_USER_ID", env)
     repo = (env or {}).get("GITHUB_REPOSITORY") or DEFAULT_REPO
+    media_url = resolved_media_url if check_media else globals()["media_url"]
     caption = caption_text(piece)
     done = []
     try:
