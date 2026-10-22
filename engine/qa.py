@@ -60,12 +60,19 @@ def narration_intact(path: Path, speech_end: float, window: float = 0.9) -> bool
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(path), "-vn", "-ac", "1", "-ar", "16000", "-af", "highpass=f=150", str(wav)], check=True)
         with wave.open(str(wav)) as w:
             rate, pcm = w.getframerate(), np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32)
-    def rms(a, b):
-        seg = pcm[int(max(0, a) * rate): int(b * rate)]
-        return float(np.sqrt((seg ** 2).mean())) if len(seg) else 0.0
-    last = rms(speech_end - window, speech_end)
-    after = rms(speech_end + 0.6, speech_end + 0.6 + window)
-    return last > 300 and last > 1.6 * max(after, 1.0)
+    def peak(a, b, step=0.3):
+        """The loudest 0.3 s inside [a, b]: a line's own trailing silence must not count against it."""
+        best = 0.0
+        t = max(0.0, a)
+        while t + step <= b:
+            seg = pcm[int(t * rate): int((t + step) * rate)]
+            if len(seg):
+                best = max(best, float(np.sqrt((seg ** 2).mean())))
+            t += step / 2
+        return best
+    last = peak(speech_end - 2.5, speech_end)                   # the last words of the last line (22 Oct 2026: a 14 s line ends with ~0.5 s of silence)
+    after = peak(speech_end + 0.5, speech_end + 1.5 + window)    # music only, under the end card
+    return last > 400 and last > 2.0 * max(after, 1.0)
 
 
 def report(path: Path, kind: str, voiced_seconds: float, caption_cues: list, target_seconds: float | None = None,
