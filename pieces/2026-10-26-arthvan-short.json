@@ -84,14 +84,13 @@
  ],
  "id": "2026-10-26-arthvan-short",
  "ids": {
-  "ig_story_id": "skipped: Reel over 60 s",
-  "out_sha": "028cd1688834415991c47f0545b064e25ea9fe1e",
-  "yt_id": "yKAAqbgMMPo"
+  "ig_story_id": "skipped: Reel over 60 s"
  },
  "kind": "short",
  "publish_day": "2026-10-26",
  "reasons": [
-  "try 1: length: 293 words, allowed 150-230"
+  "try 1: length: 293 words, allowed 150-230",
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
  ],
  "script": {
   "captions": {
@@ -298,7 +297,7 @@
   },
   "title": "Mahabharat kab hua? *Taaron* ka sabut 🤯"
  },
- "status": "uploaded",
+ "status": "written",
  "timings": [
   0.0,
   8.33,
@@ -333,6 +332,6 @@
   "title_hi": "Mahabharat kab hua, taaron se hisaab",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-10-22T01:18:31+00:00",
+ "updated": "2026-10-22T07:24:45+00:00",
  "writer": "claude"
 }

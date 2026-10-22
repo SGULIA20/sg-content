@@ -23,13 +23,12 @@
   }
  ],
  "id": "2026-11-01-arthvan-long",
- "ids": {
-  "yt_id": "XR-TWeCqpjg"
- },
+ "ids": {},
  "kind": "long",
  "publish_day": "2026-11-01",
  "reasons": [
-  "try 1: numbers without a source: 70, 16, 70, 70, 70, 70, 70, 16, 70, 16"
+  "try 1: numbers without a source: 70, 16, 70, 70, 70, 70, 70, 16, 70, 16",
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
  ],
  "script": {
   "captions": {
@@ -504,7 +503,7 @@
   },
   "title": "Lepakshi ka *latakta* khamba, raaz kya hai? 🤯"
  },
- "status": "uploaded",
+ "status": "written",
  "timings": [
   0.0,
   15.73,
@@ -565,6 +564,6 @@
   "title_hi": "Lepakshi ka latakta khamba",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-22T04:19:42+00:00",
+ "updated": "2026-10-22T07:25:10+00:00",
  "writer": "claude"
 }

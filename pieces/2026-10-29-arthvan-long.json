@@ -73,20 +73,12 @@
   }
  ],
  "id": "2026-10-29-arthvan-long",
- "ids": {
-  "captions": {
-   "en": "AUieDaabxAzf7ntLeCbilMfz84EGODd59f8tecokG_bHvUQT2qHCvlOK",
-   "gu": "AUieDaYP6rMaS2xPudXoU6euvv99eQv_1-AU4kDe3BK47n1uEh84pjSviovdaQQrcyKzIn62trI",
-   "hi": "AUieDaYaXTyiJ4MOcpV7r3hlFC9oRdvAg5bYGH2qO3QPMKtdYXhdrR-soTGph_wnm3D0OuA",
-   "mr": "AUieDaZHNYQo1u9Ptd7wszYAu1olmpi4YldVzmiuzuKc_gChe7M6q1JYjgOpeEz0FOs",
-   "ta": "AUieDaZZHKl-DLBBaeDrmDswLiF1C4vFOdrHhodegmHU3yYPfkA3yQzNYzmWNT02dgQ"
-  },
-  "yt_id": "CTt4H8VomTo"
- },
+ "ids": {},
  "kind": "long",
  "publish_day": "2026-10-29",
  "reasons": [
-  "try 1: numbers without a source: 1000, 11, 11"
+  "try 1: numbers without a source: 1000, 11, 11",
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
  ],
  "script": {
   "captions": {
@@ -680,7 +672,7 @@
   },
   "title": "*Ayodhya* ki mitti ne kya bataya? 🤯"
  },
- "status": "uploaded",
+ "status": "written",
  "timings": [
   0.0,
   18.53,
@@ -741,6 +733,6 @@
   "title_hi": "Ayodhya ki khudai mein kya mila",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-22T01:50:02+00:00",
+ "updated": "2026-10-22T07:25:03+00:00",
  "writer": "claude"
 }

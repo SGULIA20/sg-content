@@ -54,14 +54,13 @@
  ],
  "id": "2026-10-27-sglearning-short",
  "ids": {
-  "ig_story_id": "skipped: Reel over 60 s",
-  "out_sha": "1240b854db90a321a46dfe422ab671ffd2f9394c",
-  "yt_id": "-QboXkQBUEo"
+  "ig_story_id": "skipped: Reel over 60 s"
  },
  "kind": "short",
  "publish_day": "2026-10-27",
  "reasons": [
-  "try 1: length: 118 words, allowed 150-230"
+  "try 1: length: 118 words, allowed 150-230",
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
  ],
  "script": {
   "captions": {
@@ -238,7 +237,7 @@
   },
   "title": "Subah *hara*, shaam ko paisa gaayab 📉"
  },
- "status": "uploaded",
+ "status": "written",
  "timings": [
   0.0,
   12.53,
@@ -263,6 +262,6 @@
   "title": "Sensex weekly expiry today prediction: Can bulls stage comeback despite crude oil shock? Key levels traders should watch",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-10-22T04:35:40+00:00",
+ "updated": "2026-10-22T07:24:56+00:00",
  "writer": "claude"
 }

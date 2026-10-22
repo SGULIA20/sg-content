@@ -144,14 +144,13 @@
  ],
  "id": "2026-10-27-arthvan-short",
  "ids": {
-  "ig_story_id": "skipped: Reel over 60 s",
-  "out_sha": "e2cbc9d91cb4f847050c9eeb239d7439596f83a3",
-  "yt_id": "IZW9oaCMalg"
+  "ig_story_id": "skipped: Reel over 60 s"
  },
  "kind": "short",
  "publish_day": "2026-10-27",
  "reasons": [
-  "try 1: length: 264 words, allowed 150-230"
+  "try 1: length: 264 words, allowed 150-230",
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
  ],
  "script": {
   "captions": {
@@ -358,7 +357,7 @@
   },
   "title": "Ashwatthama aaj bhi *zinda* hai? 😱"
  },
- "status": "uploaded",
+ "status": "written",
  "timings": [
   0.0,
   17.49,
@@ -391,6 +390,6 @@
   "title_hi": "Ashwatthama zinda hai?",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-10-22T03:49:28+00:00",
+ "updated": "2026-10-22T07:24:53+00:00",
  "writer": "claude"
 }

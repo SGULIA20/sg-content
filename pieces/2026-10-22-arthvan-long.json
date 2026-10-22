@@ -63,21 +63,13 @@
   }
  ],
  "id": "2026-10-22-arthvan-long",
- "ids": {
-  "captions": {
-   "en": "AUieDaYMRLTDr2Lqna-rxLR_zQ_Y805JfjC4YnAvKjWsEAV14ismtaP9",
-   "gu": "AUieDaY0EdZcMJ6wEEgU4XkN_srm1ZC_Wwu4iByg8Ip0Mi4CPjxDJlFl2HAVOx4norxncU5Uxu4",
-   "hi": "AUieDabUWQxad926LiKedL9XGj14E_jBjcoOPrCLDIQ_zaV2BaZByaviZrgP8eb16fxRUaM",
-   "mr": "AUieDabUZbAhPmfbiiJQK1IrDTzPJLBYfWwaVLmeTLu_4uweantiAYl6SC0PLtZkgoU",
-   "ta": "AUieDaappT31KZ1oISOnSJS7rgKAHESW-PAVVT7_Z8rZCb49NrYw7HdMZQ-36dYVW4s"
-  },
-  "yt_id": "dpyPJSRZ1nE"
- },
+ "ids": {},
  "kind": "long",
  "publish_day": "2026-10-22",
  "reasons": [
   "try 1: numbers without a source: 12, 12, 12",
-  "duration: 670.9s, allowed 672-1008s"
+  "duration: 670.9s, allowed 672-1008s",
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
  ],
  "script": {
   "captions": {
@@ -614,7 +606,7 @@
   },
   "title": "Jagannath ka *jhanda* hawa ke ulta kyon? 🤯"
  },
- "status": "uploaded",
+ "status": "written",
  "timings": [
   0.0,
   17.01,
@@ -675,6 +667,6 @@
   "title_hi": "Jagannath mandir ke 7 rahasya",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-21T22:10:05+00:00",
+ "updated": "2026-10-22T07:24:02+00:00",
  "writer": "claude"
 }

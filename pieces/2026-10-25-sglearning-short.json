@@ -14,9 +14,7 @@
  ],
  "id": "2026-10-25-sglearning-short",
  "ids": {
-  "ig_story_id": "skipped: Reel over 60 s",
-  "out_sha": "feec9289d98b9363fc99987e1c4127da1cfe310e",
-  "yt_id": "3w-yIP47rgc"
+  "ig_story_id": "skipped: Reel over 60 s"
  },
  "kind": "short",
  "publish_day": "2026-10-25",
@@ -24,7 +22,8 @@
   "try 1: length: 130 words, allowed 150-230; advice: stock tip",
   "try 2: advice: stock tip; length: 128 words, allowed 150-230; advice: stock tip",
   "try 3: numbers without a source: 92, 27, 27",
-  "try 1: length: 145 words, allowed 150-230; numbers without a source: 22.3"
+  "try 1: length: 145 words, allowed 150-230; numbers without a source: 22.3",
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
  ],
  "script": {
   "captions": {
@@ -209,7 +208,7 @@
   },
   "title": "Aapki *SIP* se kisne kamaya profit? 💸"
  },
- "status": "uploaded",
+ "status": "written",
  "timings": [
   0.0,
   5.13,
@@ -235,6 +234,6 @@
   "title": "Q2 results 2026 today, schedule: Swiggy, Adani Energy, HPCL 53 more firms to declare quarterly earnings; Oct 22 Tue list",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-22T03:34:10+00:00",
+ "updated": "2026-10-22T07:24:41+00:00",
  "writer": "claude"
 }

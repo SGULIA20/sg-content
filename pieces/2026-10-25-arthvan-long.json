@@ -83,19 +83,12 @@
   }
  ],
  "id": "2026-10-25-arthvan-long",
- "ids": {
-  "captions": {
-   "en": "AUieDaZsY7PX5SmclQWzImSktGQh2nYlbAZ86u6Rqw02LwH3tWQloAIX",
-   "gu": "AUieDaZviu1MQG5SsNpebYMQpORXWFrK_PBQF4yM0Hw5FmdBSUDS0oI2SkkFXCgmkmAJrWhb8k0",
-   "hi": "AUieDaZaF8inevXrTqukn97iDqq0D7s5cm4qQHyLtZGwlqST5vKToNW0kJIdoRjYKUowJa0",
-   "mr": "AUieDaYONfA0o_PIZCK8u1mq8oLS55cuoulKvpLd5ClGbnKCbUbJHoR_laJGKmO085Y",
-   "ta": "AUieDabHjjmauFew3-4b0UwqbiTlJaU3a8mWi4e3jYbDtdASdbwahb0GG1_x4Z9USss"
-  },
-  "yt_id": "i8Bg1YfC4Vg"
- },
+ "ids": {},
  "kind": "long",
  "publish_day": "2026-10-25",
- "reasons": [],
+ "reasons": [
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
+ ],
  "script": {
   "captions": {
    "instagram": {
@@ -649,7 +642,7 @@
   },
   "title": "Registaan ke neeche *Saraswati* ki lakeer? 🤯"
  },
- "status": "uploaded",
+ "status": "written",
  "timings": [
   0.0,
   16.69,
@@ -710,6 +703,6 @@
   "title_hi": "Saraswati nadi kahan gayi",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-21T23:54:27+00:00",
+ "updated": "2026-10-22T07:24:34+00:00",
  "writer": "claude"
 }

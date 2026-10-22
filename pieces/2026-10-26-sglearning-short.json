@@ -74,15 +74,14 @@
  ],
  "id": "2026-10-26-sglearning-short",
  "ids": {
-  "ig_story_id": "skipped: Reel over 60 s",
-  "out_sha": "dc9ed1f97e43492ea6e4903fe0eb081923e56ef5",
-  "yt_id": "DiTWCmrw9UI"
+  "ig_story_id": "skipped: Reel over 60 s"
  },
  "kind": "short",
  "publish_day": "2026-10-26",
  "reasons": [
   "try 1: advice: kharido; length: 128 words, allowed 150-230; advice: kharido",
-  "try 2: no sourced facts survived the checks"
+  "try 2: no sourced facts survived the checks",
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
  ],
  "script": {
   "captions": {
@@ -258,7 +257,7 @@
   },
   "title": "Subah ki *tezi*, shaam ka nuksaan 📉"
  },
- "status": "uploaded",
+ "status": "written",
  "timings": [
   0.0,
   37.77,
@@ -283,6 +282,6 @@
   "title": "Stock market outlook today, 22 Oct: Sensex, Nifty prediction - DJIA, S&amp;P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-22T02:11:36+00:00",
+ "updated": "2026-10-22T07:24:49+00:00",
  "writer": "claude"
 }

@@ -73,13 +73,12 @@
   }
  ],
  "id": "2026-10-22-sglearning-short",
- "ids": {
-  "out_sha": "016ddf867c2bca4802275ad0b0066462bbf32af1",
-  "yt_id": "TOu8dHvFcbM"
- },
+ "ids": {},
  "kind": "short",
  "publish_day": "2026-10-22",
- "reasons": [],
+ "reasons": [
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
+ ],
  "script": {
   "captions": {
    "instagram": {
@@ -256,7 +255,7 @@
   },
   "title": "US stock *aasaan* hua, sasta nahi 💸"
  },
- "status": "uploaded",
+ "status": "written",
  "timings": [
   0.0,
   5.65,
@@ -281,6 +280,6 @@
   "title": "Zerodha launches US stock investing: How to invest in Tesla, Amazon, SpaceX, Meta, Micron, Nvidia and AMD — explained",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-10-21T16:10:45+00:00",
+ "updated": "2026-10-22T07:24:09+00:00",
  "writer": "claude"
 }

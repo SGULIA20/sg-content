@@ -13,20 +13,12 @@
   }
  ],
  "id": "2026-10-24-sglearning-long",
- "ids": {
-  "captions": {
-   "en": "AUieDaYEUmrXtl8ethLWk4f78HYbl9PuMRgN9yGHma6wDzc8isqDkAYM",
-   "gu": "AUieDab2JJmYrb18F3QqEB5vBz5ib2HhrQnzIcaKCmvLb63iL93583wluj3AgXO88l3PXt30q2o",
-   "hi": "AUieDaaf3uN2VMXQfrm040uWquVHfqoYjhy41qqjQk5BCrSNiOHtoXKIicQ8YQ31zdB5YTc",
-   "mr": "AUieDaYWjzazLOiqTHPbQyWsadY3y9P9O0jDhVAmDukfE60vYMbVr-i_kDtg4YE6Y2c",
-   "ta": "AUieDaYCPFlHAfEfEwBPxGpplsdiCl1OCiMqGNGFi-3AEMOZc6HhkmUiqEj1tk7eu4Y"
-  },
-  "yt_id": "_kdpdg3EygM"
- },
+ "ids": {},
  "kind": "long",
  "publish_day": "2026-10-24",
  "reasons": [
-  "try 1: advice: guarantee; numbers without a source: 7, 3.86e+06, 7, 7, 7, 7, 8.5"
+  "try 1: advice: guarantee; numbers without a source: 7, 3.86e+06, 7, 7, 7, 7, 8.5",
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
  ],
  "script": {
   "captions": {
@@ -492,7 +484,7 @@
   },
   "title": "*Minimum due* bhara, phir bhi karz badha 💳"
  },
- "status": "uploaded",
+ "status": "written",
  "timings": [
   0.0,
   14.93,
@@ -547,6 +539,6 @@
   "title": "Credit card ka 'minimum due' button: 40,000 ka bill 4 saal kaise chalta hai",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-21T23:16:40+00:00",
+ "updated": "2026-10-22T07:24:27+00:00",
  "writer": "claude"
 }

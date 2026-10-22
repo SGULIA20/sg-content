@@ -94,14 +94,13 @@
  ],
  "id": "2026-10-22-arthvan-short",
  "ids": {
-  "ig_story_id": "skipped: Reel over 60 s",
-  "out_sha": "f76f9f648150a84208a8034b7f75d2d2fc4edff3",
-  "yt_id": "pkuFr5OPSbc"
+  "ig_story_id": "skipped: Reel over 60 s"
  },
  "kind": "short",
  "publish_day": "2026-10-22",
  "reasons": [
-  "try 1: length: 244 words, allowed 150-230"
+  "try 1: length: 244 words, allowed 150-230",
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
  ],
  "script": {
   "captions": {
@@ -297,7 +296,7 @@
   },
   "title": "Kailash par koi *kyon* nahi chadha? 🤯"
  },
- "status": "uploaded",
+ "status": "written",
  "timings": [
   0.0,
   9.93,
@@ -331,6 +330,6 @@
   "title_hi": "Kailash parvat par koi kyon nahi chadha",
   "voice": "Kore"
  },
- "updated": "2026-10-21T21:18:19+00:00",
+ "updated": "2026-10-22T07:24:06+00:00",
  "writer": "claude"
 }

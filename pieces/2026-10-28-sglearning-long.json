@@ -13,13 +13,12 @@
   }
  ],
  "id": "2026-10-28-sglearning-long",
- "ids": {
-  "yt_id": "g5PxUznTdLc"
- },
+ "ids": {},
  "kind": "long",
  "publish_day": "2026-10-28",
  "reasons": [
-  "duration: 897.2s, allowed 504-864s"
+  "duration: 897.2s, allowed 504-864s",
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
  ],
  "script": {
   "captions": {
@@ -449,7 +448,7 @@
   },
   "title": "Papa ki FD *chhoti* kyun ho gayi? 📉"
  },
- "status": "uploaded",
+ "status": "written",
  "timings": [
   0.0,
   26.69,
@@ -499,6 +498,6 @@
   "title": "Papa ki FD 20 saal mein kyun chhoti ho gayi: mehngai ka chhupa tax",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-22T03:16:54+00:00",
+ "updated": "2026-10-22T07:24:59+00:00",
  "writer": "claude"
 }

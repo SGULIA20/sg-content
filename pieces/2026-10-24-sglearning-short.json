@@ -84,13 +84,13 @@
  ],
  "id": "2026-10-24-sglearning-short",
  "ids": {
-  "ig_story_id": "skipped: Reel over 60 s",
-  "out_sha": "da5b3940ac8ca992bc8409fe13382636a2472846",
-  "yt_id": "E4sv8AzGTMo"
+  "ig_story_id": "skipped: Reel over 60 s"
  },
  "kind": "short",
  "publish_day": "2026-10-24",
- "reasons": [],
+ "reasons": [
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
+ ],
  "script": {
   "captions": {
    "instagram": {
@@ -264,7 +264,7 @@
   },
   "title": "Factory daudi, par *petrol* sasta kyun nahi? ⛽"
  },
- "status": "uploaded",
+ "status": "written",
  "timings": [
   0.0,
   15.41,
@@ -288,6 +288,6 @@
   "title": "Core output grows at series high of 7.9% in Sept",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-21T23:30:45+00:00",
+ "updated": "2026-10-22T07:24:31+00:00",
  "writer": "claude"
 }

@@ -64,13 +64,13 @@
  ],
  "id": "2026-10-24-arthvan-short",
  "ids": {
-  "ig_story_id": "skipped: Reel over 60 s",
-  "out_sha": "780e0b3d54a1e5f86a82fb0f44c07261635450ef",
-  "yt_id": "u_7RykngXKM"
+  "ig_story_id": "skipped: Reel over 60 s"
  },
  "kind": "short",
  "publish_day": "2026-10-24",
- "reasons": [],
+ "reasons": [
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
+ ],
  "script": {
   "captions": {
    "instagram": {
@@ -264,7 +264,7 @@
   },
   "title": "Kurukshetra mein *Chakravyuh* ka asli naksha? 🤯"
  },
- "status": "uploaded",
+ "status": "written",
  "timings": [
   0.0,
   8.65,
@@ -298,6 +298,6 @@
   "title_hi": "Kurukshetra ka Chakravyuh naksha",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-21T22:51:01+00:00",
+ "updated": "2026-10-22T07:24:23+00:00",
  "writer": "claude"
 }

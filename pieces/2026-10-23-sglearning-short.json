@@ -94,13 +94,13 @@
  ],
  "id": "2026-10-23-sglearning-short",
  "ids": {
-  "ig_story_id": "skipped: Reel over 60 s",
-  "out_sha": "eb27ddfb4b9cdccd6356694e3de81a69f7c24981",
-  "yt_id": "76uPSuHAcys"
+  "ig_story_id": "skipped: Reel over 60 s"
  },
  "kind": "short",
  "publish_day": "2026-10-23",
- "reasons": [],
+ "reasons": [
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
+ ],
  "script": {
   "captions": {
    "instagram": {
@@ -278,7 +278,7 @@
   },
   "title": "Kamai badhi, phir bhi *cash* minus? 😮"
  },
- "status": "uploaded",
+ "status": "written",
  "timings": [
   0.0,
   7.69,
@@ -302,6 +302,6 @@
   "title": "Meta raises AI spending forecast to $145 billion, plans new share issue; Q3 revenue beats estimates",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-21T22:39:57+00:00",
+ "updated": "2026-10-22T07:24:18+00:00",
  "writer": "claude"
 }
