@@ -3,156 +3,219 @@
  "facts": [
   {
    "label": "official",
-   "number": 1.0,
-   "quote": "In a Master Circular on Health Insurance Products, the regulator said that insurers must decide on cashless authorization requests within one hour and final authorization on discharge from hospital within three hours of request from the hospital.",
-   "source_date": "2024-05-29",
-   "source_name": "Deccan Chronicle",
-   "source_url": "https://www.deccanchronicle.com/business/in-a-major-relief-to-policyholders-irdai-asks-insurers-to-settle-cashless-claims-in-3-hours-896478",
-   "text": "The IRDAI master circular mandates that health insurers decide on cashless pre-authorization requests within 1 hour of receipt.",
-   "unit": "hours"
-  },
-  {
-   "label": "official",
    "number": 3.0,
-   "quote": "The regulator further said that if there is any delay beyond three hours, the additional amount if any charged by the hospital shall be borne by the insurer from the shareholder's fund.",
-   "source_date": "2024-05-29",
-   "source_name": "Deccan Chronicle",
-   "source_url": "https://www.deccanchronicle.com/business/in-a-major-relief-to-policyholders-irdai-asks-insurers-to-settle-cashless-claims-in-3-hours-896478",
-   "text": "Insurers must approve final hospital discharge authorisations within 3 hours, after which extra hospital charges are borne from shareholder funds.",
-   "unit": "hours"
+   "quote": "Third party breach where the deficiency lies neither with the bank nor with the customer but lies elsewhere in the system, and the customer notifies the bank within three working days of receiving the communication from the bank regarding the unauthorised transaction.",
+   "source_date": "2017-07-06",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11040",
+   "text": "Under Reserve Bank of India rules, a bank customer has zero liability for an electronic banking loss if a third-party breach is reported within three working days of receiving the transaction alert.",
+   "unit": "working days"
   },
   {
    "label": "official",
-   "number": 5000.0,
-   "quote": "An insurer is liable to pay Rs 5000 per day to the policyholder in case ombudsman awards are not implemented within 30 days.",
-   "source_date": "2024-05-29",
-   "source_name": "Deccan Chronicle",
-   "source_url": "https://www.deccanchronicle.com/business/in-a-major-relief-to-policyholders-irdai-asks-insurers-to-settle-cashless-claims-in-3-hours-896478",
-   "text": "An insurer must pay 5,000 rupees per day to the policyholder if an insurance ombudsman award is not implemented within 30 days.",
-   "unit": "INR/day"
+   "number": 10.0,
+   "quote": "On being notified by the customer, the bank shall credit (shadow reversal) the amount involved in the unauthorised electronic transaction to the customer's account within 10 working days from the date of such notification by the customer",
+   "source_date": "2017-07-06",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11040",
+   "text": "The Reserve Bank of India mandates banks to credit a shadow reversal of an unauthorized transaction amount back to the customer's account within ten working days of notification.",
+   "unit": "working days"
   },
   {
    "label": "official",
-   "number": 43.4,
-   "quote": "Out-of-Pocket Expenditure (OOPE) as a share of Total Health Expenditure declined from 64.2% to 43.4%.",
-   "source_date": "2026-05-27",
+   "number": 10000.0,
+   "quote": "All other SB accounts • Pre-paid Payment Instruments and Gift Cards • Current/ Cash Credit/ Overdraft Accounts of MSMEs • Current Accounts/ Cash Credit/ Overdraft Accounts of Individuals with annual average balance (during 365 days preceding the incidence of fraud)/ limit up to Rs.25 lakh • Credit cards with limit up to Rs.5 lakh, 10,000.",
+   "source_date": "2017-07-06",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11040",
+   "text": "If a customer delays reporting a third-party breach by four to seven working days, the maximum customer liability on an individual savings account is capped at 10,000 rupees to prevent total depletion of household savings.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 7130.0,
+   "quote": "Till 31.10.2025, financial amount of more than Rs. 7,130 Crore has been saved in more than 23.02 lakh complaints.",
+   "source_date": "2025-12-17",
    "source_name": "PIB",
-   "source_url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2021658",
-   "text": "Out-of-pocket expenditure borne directly by households accounts for 43.4 percent of India's total health expenditure.",
+   "source_url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2074360",
+   "text": "The Citizen Financial Cyber Fraud Reporting and Management System behind the 1930 helpline saved over 7,130 crore rupees from reaching fraudsters across more than 23.02 lakh complaints up to October 31, 2025.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "reported",
+   "number": 3.24,
+   "quote": "India's national cybercrime helpline 1930 recorded a massive surge in 2025, logging nearly 3.24 crore calls, almost one every second, highlighting a sharp rise in online fraud and scams, officials said.",
+   "source_date": "2026-04-12",
+   "source_name": "The New Indian Express",
+   "source_url": "https://www.newindianexpress.com/nation/2026/Apr/12/cybercrime-helpline-1930-logs-324-crore-calls-in-2025-nearly-one-every-second",
+   "text": "India's national cybercrime helpline 1930 logged approximately 3.24 crore calls in 2025 amid an escalating volume of payment scams and fake customer care calls.",
+   "unit": "crore calls"
+  },
+  {
+   "label": "reported",
+   "number": 93195.0,
+   "quote": "Just over half of Indians have lost money to online scams, with the average loss pegged at Rs 93,195, according to a survey.",
+   "source_date": "2026-02-06",
+   "source_name": "Business Standard",
+   "source_url": "https://www.business-standard.com/finance/news/nearly-51-people-report-losing-money-to-online-scam-shows-survey-126020601449_1.html",
+   "text": "A nationwide consumer cybersecurity survey found that Indian victims of online payment fraud suffered an average loss of 93,195 rupees, equaling multiple months of household discretionary budget.",
+   "unit": "INR"
+  },
+  {
+   "label": "reported",
+   "number": 72.0,
+   "quote": "72% of digital financial fraud victims recovered none of their lost money, a 2026 policing report found.",
+   "source_date": "2026-09-25",
+   "source_name": "Maktoob Media",
+   "source_url": "https://maktoobmedia.com/india/72-of-digital-financial-fraud-victims-recovered-none-of-their-money-27-paid-police-bribes-to-register-complaints-report/",
+   "text": "An independent empirical policing study showed that 72 percent of digital financial fraud victims were unable to recover any of their defrauded money or household salary savings.",
    "unit": "pct"
   }
  ],
  "id": "2026-11-04-sglearning-long",
  "ids": {
-  "write_batch": {
-   "id": "msgbatch_01S1ikrPMesGgvFCMdWNS7iW",
-   "key": "9a7e003c11cdaa9c",
-   "tries": 1
-  }
+  "yt_id": "YUOc-8BMlTA"
  },
  "kind": "long",
  "publish_day": "2026-11-04",
  "reasons": [
   "try 1: advice: becho; numbers without a source: 1e+08, 11, 50, 50, 50, 50, 11, 50",
-  "draft cooking in Claude's batch lane; the next run collects it"
+  "draft cooking in Claude's batch lane; the next run collects it",
+  "try 1: no sourced facts survived the checks"
  ],
  "script": {
   "captions": {
    "instagram": {
-    "caption": "500 ki SIP par Papa hase the. 20 saal ka hisaab dekh kar chup ho gaye.\nRupee cost averaging, flat saal, crash ki ghabrahat aur expense ratio, sab ek kahani mein.\nAapne kabhi market girne par SIP roki hai?\nYeh investment advice nahi hai.\nShare karo us dost ko jo kehta hai 500 se kya hoga.",
+    "caption": "Refund lene ke liye PIN kabhi nahi lagta. 📱\nPhir bhi ek 'customer care' call aur khaata khaali.\nRBI ke niyam kehte hain, alert ke 3 kaam ke din mein report karo, aur 1930 par turant call karo.\nAapke paas kabhi aisa refund call aaya hai? Haan ya na?\nYeh investment advice nahi hai.\nShare karo us Mummy-Papa ko jo internet par pehla customer care number dekh kar call kar dete hain.",
     "hashtags": [
-     "#SIP",
-     "#MutualFunds",
-     "#LearningWithSG",
+     "#PaiseKiKhabar",
      "#SeedhiBaat",
-     "#PersonalFinanceIndia",
      "#MoneyTipsHindi",
-     "#Nifty"
+     "#HinglishFinance",
+     "#PersonalFinanceIndia",
+     "#RBI",
+     "#LearningWithSG"
     ]
    },
    "threads": {
-    "text": "500 ki SIP par sab haste hain. Par 20 saal ka asli khel rupee cost averaging, crash mein tike rehna aur chupke se katne wala expense ratio hai. Aapne kabhi market girne par SIP roki hai? #PaiseKiKhabar #MoneyTipsHindi"
+    "text": "Refund lene ke liye PIN kabhi nahi lagta. Phir bhi ek 'customer care' call aur khaata khaali. Paisa gaya toh pehle ghante mein 1930 par call, aur bank ko 3 kaam ke din ke andar report. Aapke paas kabhi aisa refund call aaya hai? #PaiseKiKhabar #MoneyTipsHindi"
    },
    "youtube": {
     "chapters": [
-     "00:00 500 se kya hoga?",
-     "00:00 20 saal ka hisaab",
-     "00:00 Achha dashak, flat dashak",
-     "00:00 Crash aur chhupa kharcha",
-     "00:00 Tax, galti aur aage kya"
+     "00:00 Ek call, ek refund",
+     "00:00 Refund ke liye PIN kyun?",
+     "00:00 Paisa kahan gaya, 1930 par kya hota hai",
+     "00:00 Bank kab paisa wapas deta hai",
+     "00:00 Galti aur pehla ghanta"
     ],
-    "description": "500 rupaye mahine ki SIP par Papa hase the, 20 saal baad kya hua? Is video mein rupee cost averaging, achhe aur flat dashak, crash mein SIP rokne ki galti, expense ratio aur tax ko seedhi kahani mein samjhaya hai. Koi vaada nahi, sirf asli hisaab aur honest andaaza. Share karo us dost ko jo market girte hi SIP band karne ki sochta hai.",
+    "description": "Refund lene ke liye kabhi PIN nahi lagta, phir bhi log roz daal dete hain. Is video mein ek 'refund' call ki poori kahani hai: collect request, screen share app, fake customer care, aur paisa mule accounts mein kaise bhaagta hai. Saath mein RBI ke zero liability niyam, 1930 helpline, aur pehle ghante mein kya karna hai. Share karo us Mummy-Papa ko jo har 'customer care' call par bharosa kar lete hain.",
     "tags": [
-     "SIP",
-     "mutual fund",
-     "500 SIP",
-     "rupee cost averaging",
-     "expense ratio",
-     "Nifty 50",
-     "LTCG tax",
-     "compounding",
-     "SIP band karein",
-     "personal finance India",
-     "Hinglish finance",
-     "Learning with SG"
+     "UPI fraud",
+     "refund scam",
+     "1930 helpline",
+     "cyber fraud",
+     "RBI zero liability",
+     "UPI PIN",
+     "collect request",
+     "screen share scam",
+     "fake customer care",
+     "online fraud Hindi",
+     "bank refund rules",
+     "personal finance India"
     ],
-    "title": "500 ki SIP 20 saal mein kitni banti hai?"
+    "title": "UPI Refund Fraud: PIN kyun maanga? 1930 kab?"
    }
   },
   "cards": [
    {
-    "big_number": "₹1.2 lakh",
-    "line": "500 rupaye mahina, 20 saal mein kul jama principal",
-    "source": "Tata Mutual Fund"
+    "big_number": "3 din",
+    "line": "Alert ke 3 kaam ke din mein report karo, zero liability ka haq bachao",
+    "source": "RBI"
    },
    {
-    "big_number": "₹4.30 lakh",
-    "line": "11% saalana maan kar 20 saal ka andaaza, vaada nahi",
-    "source": "Tata Mutual Fund"
+    "big_number": "10 din",
+    "line": "Bank ko 10 kaam ke din mein shadow reversal credit karna hota hai",
+    "source": "RBI"
    },
    {
-    "big_number": "12.44%",
-    "line": "Nifty 50 TRI ka saalana return, February 2026 tak ke 20 saal",
-    "source": "PrimeInvestor"
-   },
-   {
-    "big_number": "0.9%",
-    "line": "Index funds aur ETF ke expense ratio ki base seema",
-    "source": "Business Today"
-   },
-   {
-    "big_number": "₹1.25 lakh",
-    "line": "Har saal itna LTCG tax free, upar 12.5% tax",
+    "big_number": "₹7,130 cr",
+    "line": "1930 system ne itna paisa fraudsters tak pahunchne se bachaya",
     "source": "PIB"
+   },
+   {
+    "big_number": "₹93,195",
+    "line": "Online fraud mein average nuksaan, ek survey ke mutabik",
+    "source": "Business Standard"
+   },
+   {
+    "big_number": "72%",
+    "line": "Digital fraud ke shikaar jinhe koi paisa wapas nahi mila",
+    "source": "Maktoob Media"
    }
   ],
   "carousel": true,
-  "end_question": "Aapne kabhi market girne par SIP roki hai? Haan ya na?",
-  "hook": "500 rupaye mahine ki SIP se 20 saal mein kya banega?",
+  "end_question": "Aapke paas kabhi aisa refund wala call aaya hai? Haan ya na?",
+  "hook": "Refund lene ke liye kabhi PIN nahi lagta, phir bhi log roz PIN daal dete hain.",
   "scenes": [
    {
-    "facts_used": [
-     0
-    ],
-    "label": "500 se kya hoga?",
+    "facts_used": [],
+    "label": "Ek call, ek refund",
     "visual": {
      "card": null,
-     "prompt": "Night, a middle-class Indian dining table, BHAI in a hoodie looking at a glowing phone notification, PAPA in a kurta laughing and waving an FD receipt, MUMMY in a saree pouring chai, warm yellow light",
+     "prompt": "MUMMY in a saree sits on a living room sofa in the evening, holding a phone to her ear, a cup of chai on the side table, her face hopeful but slightly unsure, warm lamp light",
      "type": "art"
     },
-    "vo": "500 rupaye mahine ki SIP se 20 saal mein kya banega? Yahi sawaal Papa ne dinner table par Bhai se poocha, aur thodi hasi bhi udaayi. Bhai ke phone par abhi message aaya tha, SIP debited. Papa ne apni FD ki receipt hilaayi aur bole, beta, safe toh yeh hai."
+    "vo": "Refund lene ke liye kabhi PIN nahi lagta. Phir bhi log roz PIN daal dete hain. Aur kuch hi pal mein khaata khaali ho jaata hai. Aaj ek aisi hi shaam ki kahani, step by step. Taaki agli baar yeh call aapke ghar aaye, toh aap usse pehchaan lo."
    },
    {
-    "facts_used": [
-     0
-    ],
+    "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "Close view of BHAI at the dinner table, shoulders dropped, staring at his phone with a confused, embarrassed face, PAPA blurred in the background smiling",
+     "prompt": "Close view of MUMMY at a dining table, scrolling her phone with one finger, a returned mixer grinder box beside her, evening light from the window, focused expression",
      "type": "art"
     },
-    "vo": "Bhai chup ho gaya. Use khud nahi pata tha ki 500 se kya hoga. Bas office mein sabne kaha tha, SIP shuru kar do. Aur yahi baat sabse khatarnak hai, jab hum kuch karte hain, bina samjhe ki kyun kar rahe hain."
+    "vo": "Shaam ka waqt hai. Mummy ne online mixer grinder lauta diya tha. Refund abhi tak nahi aaya. Woh phone par search karti hain, company ka customer care number. Sabse upar ek number dikhta hai. Mummy bina soche, turant usi number par call laga deti hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Split panel: on the left MUMMY relieved on the phone at home; on the right an unnamed man in a dim cramped room with a headset, smiling slyly, several phones on his desk, night",
+     "type": "art"
+    },
+    "vo": "Udhar se ek bahut tameez wala aadmi bolta hai. Ma'am, aapka refund atka hua hai, hum abhi bhej dete hain. Aawaz mein jaldi hai, par izzat bhi hai. Mummy ko lagta hai, chalo, aakhir koi toh sun raha hai. Aur yahin se jaal shuru hota hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY holding the phone away from her ear, looking at the screen with a puzzled frown, her thumb hovering, the caller's urgency shown by her tense shoulders, evening",
+     "type": "art"
+    },
+    "vo": "Woh kehta hai, aapke UPI app par ek request aayegi. Usko approve kar dijiye, aur PIN daal dijiye. Refund seedha khaate mein aa jayega. Mummy ko thoda ajeeb lagta hai. Par aadmi baar baar bolta hai, ma'am jaldi kariye, warna refund cancel ho jayega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY frozen on the sofa staring at her phone, face pale, mouth open, the chai cup tipped over on the table, lamp casting a harsh shadow, evening",
+     "type": "art"
+    },
+    "vo": "Mummy PIN daal deti hain. Screen par hara tick aata hai. Woh khush hoti hain, chalo ho gaya. Phir phone bajta hai, ek SMS aata hai. Khaate se paisa gaya hai, aaya nahi. Mummy ka chehra safed pad jaata hai. Haath kaanpne lagte hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BETA, a 10-year-old boy with a school bag, stands at the doorway looking worried at MUMMY, who clutches the phone with both hands, tears forming, evening",
+     "type": "art"
+    },
+    "vo": "Aadmi ab bhi line par hai. Kehta hai, ma'am galti se debit ho gaya, main nayi request bhejta hoon, paisa wapas aa jayega. Yeh doosra hamla hai. Ghabrahat mein insaan wahi karta hai jo usse kaha jaye. Tabhi Beta kamre mein aakar poochta hai, Mummy, kya hua?"
    },
    {
     "facts_used": [
@@ -161,189 +224,90 @@
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A wide drawn view of an Indian city at dusk with thousands of tiny glowing coins rising from apartment windows and flowing like a river towards a big building, sense of scale and wonder",
+     "prompt": "A kitchen shelf with an old steel savings tin lying open and empty, a family photo beside it, MUMMY's hand resting on the tin, dim night light, sad mood",
      "type": "art"
     },
-    "vo": "Lekin Bhai akela nahi hai. AMFI yaani mutual fund companies ki sanstha, uske hisaab se September 2026 mein sirf SIP se 32,490 crore rupaye aaye. Sirf usi mahine mein. Socho, itna paisa chhote chhote installments mein, chupchaap market mein ja raha hai."
-   },
-   {
-    "facts_used": [
-     6
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A crowded Indian neighbourhood street seen from above, many small homes with lit windows, in each window a young person holding a phone and an older person looking doubtful, evening",
-     "type": "art"
-    },
-    "vo": "Aur yeh paisa kuch ameeron ka nahi hai. Usi mahine 10 crore se zyada SIP accounts mein paisa gaya. Matlab har gali, har mohalle mein koi Bhai hai, jiska paisa kata, aur jiske ghar mein koi Papa poochh raha hai, isse kya hoga?"
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "SG, early forties, beard, striped shirt, standing beside the dinner table as narrator, one hand raised as if counting questions, the family looking up at him curiously, warm light",
-     "type": "art"
-    },
-    "vo": "Toh aaj hum isi dinner table ke sawaalon ka jawab dhoondhenge. 500 ki SIP se 20 saal mein asal mein kya banta hai? Market gire toh SIP band karna sahi hai ya galat? Aur expense ratio naam ki cheez chupke se aapka kitna khaati hai?"
+    "vo": "Aisi kahaniyan chhoti nahi hoti. Ek survey ke mutabik, online fraud mein logon ka average nuksaan lagbhag 93,195 rupaye raha. Yaani kai mahine ka ghar ka kharcha, sirf ek call mein. Aur sabse dukh ki baat, yeh paisa aksar saalon ki mehnat ki bachat hota hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A friendly drawn diagram-like scene: many small hands dropping coins into a big common pot, a team of people in office clothes carefully placing the coins into baskets of company buildings, soft daylight",
+     "prompt": "SG, early forties, beard, striped shirt, stands beside a big drawn notebook with three large question marks, gesturing calmly towards the viewer, soft studio light",
      "type": "art"
     },
-    "vo": "Par pehle basic baat. SIP yaani Systematic Investment Plan. Matlab har mahine tay tareekh par, tay rakam, aapke bank se kat kar mutual fund mein chali jaati hai. Mutual fund yaani bahut saare logon ka paisa ikattha, jise expert team shares ya bonds mein lagaati hai."
+    "vo": "Toh aaj ke sawaal yeh hain. Pehla, refund lene ke liye PIN kyun maanga gaya? Doosra, paisa jaane ke baad helpline par kya hota hai? Teesra, bank kab paisa wapas deta hai? Aur aakhir mein, pehle ghante mein aapko kya karna hai, taaki nuksaan kam ho."
+   },
+   {
+    "facts_used": [],
+    "label": "Refund ke liye PIN kyun?",
+    "visual": {
+     "card": null,
+     "prompt": "SG at a whiteboard drawing a simple arrow from one phone to another, a lock icon only on the sending side, explaining with a friendly smile, daytime",
+     "type": "art"
+    },
+    "vo": "Pehle ek seedhi baat samajh lijiye. UPI PIN sirf paisa bhejne ke liye hota hai. Paisa lene ke liye kabhi PIN nahi lagta. Jab koi aapko paisa bhejta hai, aapko kuch nahi karna padta. Paisa bas aa jaata hai, jaise dost bhejta hai toh aata hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "BHAI relaxing on a sofa on a Sunday afternoon, phone face down beside him, playing a video game, carefree expression, sunlight through the window",
+     "prompt": "A large drawn phone screen held in MUMMY's hand, showing a payment request popup with a big button, a shadowy hand on the other side pulling coins out through the screen, no readable text",
      "type": "art"
     },
-    "vo": "Aapko roz market dekhna nahi padta. Na yeh sochna padta hai ki aaj kharidoon ya kal. Bhai ke liye yahi sabse badi suvidha thi. Salary aayi, SIP kati, baaki mahina normal. Isiliye usne kabhi sawaal hi nahi kiya ki andar ho kya raha hai."
-   },
-   {
-    "facts_used": [],
-    "label": "20 saal ka hisaab",
-    "visual": {
-     "card": null,
-     "prompt": "SG as narrator walking with BHAI towards a small kirana shop in a busy lane, SG pointing at a crate of red tomatoes, morning light",
-     "type": "art"
-    },
-    "vo": "Chaliye, ab hisaab samajhte hain. Aur iske liye Bhai ko kiraane ki dukaan par le chalte hain. Kyunki SIP ka sabse bada raaz, rupee cost averaging, wahan tamatar ke daam mein chhupa hai. Haan, tamatar."
+    "vo": "Ab woh request kya thi? Usse collect request kehte hain. Collect request yaani saamne wala aapse paisa maang raha hai. Screen par pay likha hota hai, saath mein amount. Fraudster ise refund bol kar bhejta hai. Aap approve karte ho, PIN daalte ho, aur paisa aapka chala jaata hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "SHOPKEEPER at a kirana counter weighing tomatoes on a scale, puzzled raised eyebrow, BHAI handing over the same folded notes calmly, a small bag of tomatoes on one side and a big bag on the other",
+     "prompt": "MUMMY nodding trustingly on the phone, a thought bubble above her showing a refund envelope arriving, while behind her a shadowy figure listens, evening",
      "type": "art"
     },
-    "vo": "Maan lo Bhai har hafte tamatar par tay paisa kharch karta hai. Kilo tay nahi, paisa tay. Jab tamatar mehnga hota hai, usi paise mein kam aate hain. Jab sasta hota hai, zyada aate hain. Shopkeeper hairaan hai, yeh ladka kabhi kilo nahi poochta."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A drawn panel of a seesaw: on one side a rising price arrow, on the other side small glowing unit coins piling up more when the arrow goes down, BHAI watching with growing understanding",
-     "type": "art"
-    },
-    "vo": "SIP bilkul aise hi kaam karti hai. Mutual fund mein aap units kharidte ho. Unit yaani fund ka chhota sa hissa, jiska daam roz badalta hai, isko NAV kehte hain. Market upar, toh 500 mein kam units. Market neeche, toh 500 mein zyada units."
+    "vo": "Toh Mummy ne galti kyun ki? Kyunki unke dimaag mein pehle se refund ka intezaar tha. Jo aap sunna chahte ho, fraudster wahi bolta hai. Mummy ne khud order ki baat batayi, usne bas usko dohraaya. Sab kuch sach jaisa laga. Isliye shak ki jagah bharosa aaya."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "BHAI sitting at a desk at night, drawing a wavy line on a notebook and placing coins along its dips, a lamp lighting his face, a small smile of realisation",
+     "prompt": "An unnamed elderly man at home holding a phone, while a giant eye peers through his phone screen from the other side, a key floating from his hand into the screen, night",
      "type": "art"
     },
-    "vo": "Isko kehte hain rupee cost averaging. Yaani lambe samay mein aapki unit ki average keemat apne aap sambhal jaati hai, kyunki girte market mein aapne zyada units utha li. Aapko andaaza lagana hi nahi pada ki sasta kab hai."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "PAPA at the dinner table stacking small bundles of notes into a neat tower, counting with his finger, serious focused face, BHAI watching",
-     "type": "art"
-    },
-    "vo": "Ab asli sawaal. 500 rupaye mahina, 20 saal tak. Aapki jeb se kul kitna gaya? Tata Mutual Fund ke hisaab se seedha 1.2 lakh rupaye. Yeh aapka apna paisa hai, jise principal kehte hain. Isme abhi koi kamaai nahi judi."
-   },
-   {
-    "facts_used": [
-     0,
-     1
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "The tower of notes on the table magically growing taller like a plant, glowing softly, PAPA leaning back in surprise, MUMMY covering her mouth with a hand",
-     "type": "art"
-    },
-    "vo": "Ab Tata Mutual Fund ka hi illustration dekhiye. Agar saalana return lagbhag 11 percent maan lein, toh yeh paisa 20 saal mein lagbhag 4.30 lakh ban sakta hai. Dhyan dijiye, maan lein. Yeh andaaza hai, vaada nahi."
+    "vo": "Doosra tareeka hai screen share wala app. Fraudster kehta hai, ma'am ek app download kar lijiye, main help karunga. Woh app aapki poori screen usko dikha deta hai. Aap jo bhi type karo, OTP, PIN, password, sab woh dekhta hai. Bina taala tode, chaabi aapne khud de di."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "PAPA wearing reading glasses, pressing buttons on an old calculator, frowning in disbelief, a snowball rolling down a hill growing bigger drawn faintly behind him",
+     "prompt": "BANK UNCLE behind his counter raising a hand in a firm stop gesture, shaking his head kindly, a poster-free clean bank interior, daytime",
      "type": "art"
     },
-    "vo": "Papa ne calculator uthaya. Unhe yakeen nahi hua ki paisa itna kaise badha. Yahi compounding hai, yaani kamaai par kamaai. Shuru ke saalon mein dheere, aakhri saalon mein tezi se. Sabse zyada badhat aakhri hisse mein hi dikhti hai."
-   },
-   {
-    "facts_used": [
-     1
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "BEHEN in office wear, arms crossed, one eyebrow raised, sceptical half-smile, pointing at the growing note tower, BHAI looking slightly worried",
-     "type": "art"
-    },
-    "vo": "Lekin Behen ne turant pakda. Usne kaha, 11 percent har saal kaun dega? Market toh aisa seedha nahi chalta. Aur yeh sawaal bilkul sahi hai. Asli zindagi mein return seedhi line nahi hota, wahan achhe saal bhi aate hain, aur bure bhi."
-   },
-   {
-    "facts_used": [
-     3
-    ],
-    "label": "Achha dashak, flat dashak",
-    "visual": {
-     "card": null,
-     "prompt": "SG as narrator opening a big old book whose pages show a long winding mountain road, BEHEN peeking over his shoulder, soft library light",
-     "type": "art"
-    },
-    "vo": "Behen ke sawaal ka jawab history mein hai. Toh chaliye, dekhte hain market ne pichhle saalon mein asal mein kya kiya. Aur yahan naya shabd aayega, Nifty 50 TRI. Ghabraiye mat, yeh utna mushkil nahi jitna sunne mein lagta hai."
-   },
-   {
-    "facts_used": [
-     3
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A giant friendly thermometer standing among tall company buildings, small coins dropping from the buildings back into the thermometer, BHAI and BEHEN looking up at it",
-     "type": "art"
-    },
-    "vo": "Nifty 50 yaani desh ki 50 badi companies ka index, market ka thermometer jo batata hai sab kaisa chal raha hai. TRI yaani Total Return Index, jisme companies ka diya dividend bhi wapas jod diya jaata hai. Yaani poori kamaai ka hisaab."
-   },
-   {
-    "facts_used": [
-     3
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "BEHEN reading a report on her laptop at night, her sceptical face slowly softening into thoughtfulness, a mountain-road line drawn rising gently on the wall behind",
-     "type": "art"
-    },
-    "vo": "PrimeInvestor ke hisaab se, February 2026 tak ke 20 saal mein Nifty 50 TRI ne saalana lagbhag 12.44 percent diya. Matlab Tata wala andaaza hawa mein nahi tha. History usse milti julti hai. Par yahan bhi likha hai, pichhla return aage bhi mile, zaroori nahi."
+    "vo": "OTP yaani woh chhota code jo bank SMS par bhejta hai, sirf aapke liye. Bank kabhi phone par OTP nahi maangta. Koi asli customer care aapse app download nahi karwata. Agar koi kahe, toh samajh lo, line ke us paar customer care nahi baitha hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A split drawn landscape: on the left a steep green hill with a happy runner sprinting up, on the right a long flat dusty road with a tired walker, same sky above",
+     "prompt": "BHAI in a hoodie scrolling search results on his phone, one result glowing suspiciously red among normal ones, his face lit by the screen, late evening",
      "type": "art"
     },
-    "vo": "Par is average ke andar kahani chhupi hai. Kuch dashak aise aate hain jab market tez bhaagta hai, aur lagta hai paisa ped par ugta hai. Aur kuch aise aate hain jab saalon tak market wahin ka wahin rehta hai. Isko flat dashak samjhiye."
+    "vo": "Teesra tareeka hai fake customer care number. Fraudster internet par apne number daal dete hain, badi companies ke naam se. Kabhi review mein, kabhi kisi page par. Log jaldi mein jo pehla number dikhe, wahi uthate hain. Asli number hamesha company ki official app ya website se lijiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A drawn ticking wall clock looming over MUMMY as she hurries with her phone, sweat on her forehead, the room tilted to show panic, evening",
+     "type": "art"
+    },
+    "vo": "In sab mein ek cheez common hai, jaldi. Ma'am abhi kariye, warna refund cancel. Sir, aapka khaata band ho jayega. Jaldi isliye, kyunki sochne ka waqt mila toh aap pakad loge. Jahan bhi koi aapko daudaaye, wahin ruk jaana sabse samajhdari hai."
    },
    {
     "facts_used": [
@@ -352,20 +316,114 @@
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A long winding road drawn across a wide valley, with storm clouds over some stretches, flat plains in others, and sunny climbs in between, a small figure walking all the way",
+     "prompt": "A wide aerial view of a city at night with countless tiny glowing phones in windows, lines of light flowing towards one central building, sense of huge scale",
      "type": "art"
     },
-    "vo": "Value Research ne January 2000 se January 2026 tak, yaani 26 saal ka hisaab dekha. Poore daur ka saalana return lagbhag 11.4 percent nikla. Aur is daur mein crash bhi aaye, mandi bhi aayi, aur lambe flat saal bhi."
+    "vo": "Aur yeh akeli Mummy ki kahani nahi hai. Pichhle saal desh ki cyber fraud helpline par lagbhag 3.24 crore calls aayin. Yaani lagbhag har second koi na koi call. Fake refund, fake customer care, fake KYC, sab isi line mein shaamil hain."
+   },
+   {
+    "facts_used": [],
+    "label": "Paisa kahan gaya, 1930 par kya hota hai",
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN in office wear, bag still on her shoulder, kneels beside a crying MUMMY on the sofa, holding the phone, determined expression, BETA watching, night",
+     "type": "art"
+    },
+    "vo": "Ab doosra sawaal. Paisa gaya toh gaya kahan? Yahin Behen ghar aati hai. Woh Mummy ka phone dekhti hai, SMS padhti hai. Aur sabse pehle ek baat kehti hai. Rona baad mein, abhi call karo. Is waqt har minute keemti hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "BHAI slumped on his bed looking at a flat line on his phone screen, bored and frustrated, PAPA walking past the door holding FD receipts with a smug smile",
+     "prompt": "A drawn map of glowing bank buildings connected by lines, a stream of coins splitting again and again into thinner streams, shadowy hands at each building, dark background",
      "type": "art"
     },
-    "vo": "Ab socho, agar Bhai ne SIP aise waqt shuru ki jab market flat chal raha hai. Saal pe saal statement dekhta hai, paisa wahin ka wahin. Woh sochta hai, yeh sab bekaar hai. Papa ki FD toh kam se kam badh rahi hai."
+    "vo": "Pehle samjho, paisa ek jagah ruk kar nahi baithta. Fraudster ka paisa mule accounts mein jaata hai. Mule account yaani kisi aur ke naam ka khaata, jo kiraye par liya gaya. Wahan se kuch hi minute mein paisa aage, aur aage, kai khaaton mein bant jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE in a kitchen looking at a bucket of water spilled across the floor, the water spreading into many thin streams towards the corners, daylight",
+     "type": "art"
+    },
+    "vo": "Socho jaise paani ki balti zameen par gir gayi. Shuru mein paani ek jagah hai, sametna aasaan hai. Thodi der mein woh har taraf phail jaata hai. Fraud ka paisa bhi bilkul aisa hi hai. Jitni jaldi pakdo, utna zyada bachta hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN on the phone speaking clearly, MUMMY beside her holding a notebook, BETA holding a torch, a calm focused family moment at night",
+     "type": "art"
+    },
+    "vo": "Isliye Behen turant 1930 milaati hai. 1930 desh ki cyber fraud helpline hai. Aap yahan call karke fraud ki shikayat darj karte ho. Shikayat sarkari cybercrime portal par online bhi ho sakti hai. Call par woh aapse transaction ki poori details maangte hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Close-up of BEHEN's hands taking screenshots on MUMMY's phone, a notepad with scribbles beside it, focused lamp light, night",
+     "type": "art"
+    },
+    "vo": "Details kya chahiye? Transaction ka reference number, kis UPI ID par paisa gaya, kab gaya, kitna gaya. Mummy ke phone mein sab tha, kyunki unhone kuch delete nahi kiya. Isliye screenshot lijiye, SMS sambhaal kar rakhiye. Yahi aapka sabse bada saboot hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A drawn bank vault door slamming shut on a stream of coins mid-flow, the coins frozen in ice crystals, a relieved glow, dark background",
+     "type": "art"
+    },
+    "vo": "Phir hota kya hai? Shikayat ek system mein jaati hai, jo banks aur payment companies se juda hai. Jis khaate mein paisa gaya, wahan alert pahunchta hai. Agar paisa abhi wahin pada hai, toh use rok diya jaata hai. Ise freeze kehte hain, yaani khaata ruk gaya."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA in a kurta holding his FD receipts close to his chest, smiling with relief, a row of other families behind him also relieved, warm morning light",
+     "type": "art"
+    },
+    "vo": "Yeh system tab kaam karta hai, jab log jaldi aate hain. Sarkari aankdon ke mutabik, is system ne 7,130 crore rupaye se zyada ko fraudsters tak pahunchne se bachaya. Socho, yeh paisa kisi Mummy, kisi Papa ki bachat thi, jo waqt par call se bach gayi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN writing a complaint reference on a sticky note and pasting it on the fridge, MUMMY watching with tired but hopeful eyes, late night",
+     "type": "art"
+    },
+    "vo": "Par dhyan rahe, freeze ka matlab paisa turant wapas nahi. Ruka hua paisa wapas aane mein process lagta hai, kabhi police ke zariye, kabhi court ke order se. Shikayat ka number sambhaal kar rakhiye. Aur apne bank ko bhi alag se batana mat bhooliye. Wahi agla sawaal hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Bank kab paisa wapas deta hai",
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY and BEHEN at a bank counter, BANK UNCLE behind it listening carefully, MUMMY looking down ashamed, BEHEN holding papers, morning light through bank windows",
+     "type": "art"
+    },
+    "vo": "Teesra sawaal. Bank kab paisa wapas deta hai? Usi raat Behen bank ki official app se fraud report karti hai. Agle din dono bank jaati hain. Bank Uncle counter ke peeche baithe hain. Mummy dheere se kehti hain, galti meri thi. Par yahan ek niyam hai, jo kam log jaante hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG standing beside a drawn balance scale, one side holding a bank building, the other a small family figure, explaining with an open palm, soft daylight",
+     "type": "art"
+    },
+    "vo": "RBI ke niyam batate hain, unauthorised electronic transaction mein customer ki zimmedari kitni hogi. Unauthorised yaani aisa transaction jo aapne khud nahi chaha. Agar galti bank ki hai, toh customer ki zimmedari zero. Agar galti kahin aur system mein hai, toh bhi zero, par ek shart par."
    },
    {
     "facts_used": [
@@ -374,277 +432,190 @@
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A drawn treasure chest quietly filling with small glowing unit coins during a grey rainy season, then the sun breaking through and the coins shining brightly, BHAI smiling",
+     "prompt": "A drawn wall calendar with a few days circled and Sundays shaded out, MUMMY pointing at it while BEHEN nods, inside the bank, daytime",
      "type": "art"
     },
-    "vo": "Lekin yahi flat saal SIP waale ke liye chhupa tohfa hain. Kyunki un saalon mein uske 500 rupaye har mahine sasti units kharid rahe hain. Jab baad mein achha daur aata hai, toh yahi sasti units sabse zyada kamaati hain."
+    "vo": "Shart yeh hai, bank ka alert milne ke 3 kaam ke din ke andar aapne bank ko bata diya. Kaam ke din yaani working days, chhutti ke din nahi gine jaate. Isko zero liability kehte hain, yaani nuksaan ki zimmedari aap par nahi aati."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "SG sitting at the dinner table with BEHEN and BHAI, drawing a zigzag line on a paper napkin, calm explaining expression, chai cups on the table",
+     "prompt": "BANK UNCLE gently explaining across the counter, MUMMY listening with a heavy face, BEHEN's hand on her shoulder, quiet bank interior, late morning",
      "type": "art"
     },
-    "vo": "Isliye 20 saal ka koi bhi andaaza, chahe kitna bhi achha lage, seedhi line nahi hai. Yeh achhe aur bure saalon ka mila jula nateeja hai. Aur pichhla return aage bhi milega, yeh koi nahi keh sakta. Bas itna samajh aata hai ki tike rehne waalon ko average milta hai."
-   },
-   {
-    "facts_used": [],
-    "label": "Crash aur chhupa kharcha",
-    "visual": {
-     "card": null,
-     "prompt": "SG as narrator standing in a dim living room, serious face, behind him a stormy window with lightning, the family silhouettes tense on the sofa",
-     "type": "art"
-    },
-    "vo": "Ab sabse dardnaak hissa. Woh din jab market girta hai, aur ghar ka mahaul badal jaata hai. Yahi woh moment hai jahan sabse zyada log galti karte hain, aur us galti ka bill saalon baad aata hai."
+    "vo": "Ab ek imaandar baat. Agar aapne khud PIN daala, ya OTP diya, toh bank keh sakta hai galti aapki thi. Aise mein zero liability ka fayda milna mushkil hai. Report karne tak ka nuksaan aksar customer ko hi uthana padta hai. Isliye report jaldi karna zaroori hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "Late night, BHAI sitting on the edge of his bed lit only by his phone showing a sharp red falling graph, a TV in the background flashing red, his face pale and anxious",
+     "prompt": "A drawn shield appearing in front of MUMMY's phone the moment she taps report, shadowy hands bouncing off it, bright hopeful colours",
      "type": "art"
     },
-    "vo": "Raat ka waqt hai. Bhai ka phone baar baar baj raha hai. News channel chilla raha hai, market dhadaam. Bhai app kholta hai, aur uski SIP laal rang mein dikh rahi hai. Jitna daala tha, ab usse kam dikh raha hai."
+    "vo": "Toh report se fayda kya? Report karte hi, us waqt ke baad hone wala har nuksaan bank ki zimmedari ban jaata hai. Matlab agar fraudster ne baad mein aur paisa nikala, toh woh bank bharega. Isliye pehle bank ko batao, phir baaki sochna."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A faint ghost-like stack of coins appearing inside a drawn passbook, slowly becoming solid, PAPA peering at it through his glasses, daytime",
+     "type": "art"
+    },
+    "vo": "Aur jab galti aapki nahi hai, toh ek aur niyam hai. Bank ko shikayat milne ke 10 kaam ke din ke andar paisa aapke khaate mein credit karna hota hai. Ise shadow reversal kehte hain, yaani paisa khaate mein dikhta hai, jab tak jaanch poori nahi hoti."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "MUMMY in a saree holding BHAI's arm with a worried face, PAPA nodding firmly beside her, BHAI's thumb hovering over his phone, night, tense kitchen light",
+     "prompt": "BANK UNCLE handing a stamped receipt to MUMMY across the counter, MUMMY holding it with both hands like something precious, BEHEN smiling slightly, daytime",
      "type": "art"
     },
-    "vo": "Mummy ghabra jaati hain. Kehti hain, beta band kar de, jo bacha hai nikaal le. Papa bhi haan mein haan milaate hain. Unke hisaab se yeh bilkul samajhdari hai. Aag lagi hai, toh ghar se bahar niklo."
+    "vo": "Bank Uncle Mummy ko complaint ki receipt dete hain, reference number ke saath. Yeh kaagaz bahut kaam ka hai. Agar bank time par jawab na de, toh aap bank ke grievance desk aur phir RBI ombudsman tak ja sakte ho. Ombudsman yaani RBI ka shikayat sunne wala adhikari."
+   },
+   {
+    "facts_used": [],
+    "label": "Galti aur pehla ghanta",
+    "visual": {
+     "card": null,
+     "prompt": "SG as narrator at a chapter turn, standing next to a drawn figure of a person hiding their face behind a phone, SG's expression gentle and serious, soft light",
+     "type": "art"
+    },
+    "vo": "Ab woh galti jo sabse zyada log karte hain. Fraud ke baad sharam. Mummy ka pehla khayal tha, kisi ko batana nahi, log kya kahenge. Bahut log isi sharam mein din nikaal dete hain. Aur har guzarta din, paisa aur door chala jaata hai."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A long empty queue rope at a police station counter at dusk, a single unnamed man sitting on a bench holding a crumpled paper, looking defeated",
+     "type": "art"
+    },
+    "vo": "Der ka nuksaan kitna bada hai? Ek policing study ke mutabik, digital fraud ke 72 percent shikaar logon ko apna koi bhi paisa wapas nahi mila. Wajah kai hoti hain. Par der se shikayat ka seedha matlab hai, paisa pakadne se pehle hi bikhar gaya."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA at home looking at a calendar on the wall with a worried frown, his FD receipts on the table, the pages of the calendar fluttering away, evening",
+     "type": "art"
+    },
+    "vo": "Bank ke niyam mein bhi der ki keemat hai. Agar galti kahin aur system mein thi, par aapne report mein thodi der kar di, toh savings account par aapki zimmedari 10,000 rupaye tak ho sakti hai. Usse bhi zyada der hui, toh faisla bank ki policy par."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "Close-up of BHAI's finger about to press a button on his phone, sweat on his forehead, a small drawn boat sinking in his imagination above his head",
+     "prompt": "SG pointing at a drawn checklist with three big tick boxes and simple icons of a phone, a bank, and a camera, confident expression, bright daylight",
      "type": "art"
     },
-    "vo": "Aur sach kahein toh yeh dar galat nahi lagta. Insaan ka dimaag nuksaan ko kamaai se zyada mehsoos karta hai. Laal rang dekhte hi lagta hai ki aur ruke toh sab doob jaayega. Isliye Bhai SIP rokne ka button dabaane hi wala hai."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A shop with a big festive sale decoration and shelves full of goods, BHAI running out of the door while other calm shoppers fill their bags, SHOPKEEPER looking confused",
-     "type": "art"
-    },
-    "vo": "Lekin ab rupee cost averaging yaad kijiye. Market gira matlab units sasti ho gayi. Yahi toh woh waqt hai jab 500 rupaye sabse zyada units kharidte hain. SIP band karna matlab sale shuru hote hi dukaan se bhaag jaana."
+    "vo": "Toh pehle ghante mein kya karna hai? Pehla, turant cyber fraud helpline par call karo, ya cybercrime portal par shikayat. Doosra, apne bank ko official app ya helpline se batao, aur UPI band karwao. Teesra, screenshot, SMS, UPI ID, sab sambhaal ke rakho."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "BHAI standing at the bottom of a hill holding a few coins, looking up regretfully at people at the top in sunshine, he is starting the climb again alone",
+     "prompt": "MUMMY confidently ending a call with a firm thumb on the red button, chin up, a fresh cup of chai beside her, morning sunlight",
      "type": "art"
     },
-    "vo": "Aur jo nikal gaya, woh aksar tab wapas aata hai jab market phir se upar ja chuka hota hai. Yaani usne sasta becha, aur baad mein mehnga khareeda. Crash ne nahi, ghabrahat ne us nuksaan ko asli bana diya."
-   },
-   {
-    "facts_used": [
-     9
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A tiny sneaky mouse quietly nibbling at the corner of BHAI's jar of coins at night while the whole family sleeps, moonlight through the window",
-     "type": "art"
-    },
-    "vo": "Ab doosra chor, jo shor nahi karta. Expense ratio. Yaani fund ko chalane ka saalana kharcha, jo aapke paise mein se hi, percent mein, chupchaap katta rehta hai. Aapko alag se bill nahi aata, isliye kisi ko dikhta bhi nahi."
-   },
-   {
-    "facts_used": [
-     9
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "BEHEN at a desk comparing two jars of coins with a magnifying glass, one jar with a small nibbled corner, one with a bigger bite, focused curious face, daylight",
-     "type": "art"
-    },
-    "vo": "Is kharche ki seema tay hai. Business Today ke hisaab se index funds aur ETF ke liye base seema ab 0.9 percent hai. Index fund yaani jo bas Nifty jaisa index copy karta hai, isliye usme kharcha aam taur par kam hota hai."
-   },
-   {
-    "facts_used": [
-     9
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "The snowball from earlier rolling downhill but with small pieces chipping off at every turn, BEHEN pointing at the chips, BHAI's eyes widening",
-     "type": "art"
-    },
-    "vo": "Ab 0.9 percent chhota lagta hai. Par yeh har saal, poore jama paise par katta hai, 20 saal tak. Aur jo kata, uspe aage ki compounding bhi gayi. Isliye fund chunte waqt return ke saath expense ratio bhi dekhiye, yeh dabe paon aapka hissa khaata hai."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": "Tax, galti aur aage kya",
-    "visual": {
-     "card": null,
-     "prompt": "An older, slightly grey BHAI years later standing at a bank counter, BANK UNCLE smiling behind the counter, SG as narrator standing at the side with a knowing look",
-     "type": "art"
-    },
-    "vo": "Ab maan lo Bhai ne himmat rakhi, SIP chalti rahi, aur 20 saal baad paisa nikaalne ka waqt aaya. Kya poora paisa uska? Yahan aata hai tax, aur iske bina koi bhi hisaab adhoora hai."
-   },
-   {
-    "facts_used": [
-     7
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "BANK UNCLE behind the counter drawing a line on a paper with a pencil, explaining patiently, older BHAI listening closely, bright afternoon bank interior",
-     "type": "art"
-    },
-    "vo": "Equity mutual fund ko saal bhar se zyada rakh kar becho, toh jo munafa hota hai use long term capital gain kehte hain, yaani LTCG. PIB ke hisaab se har financial year mein 1.25 lakh rupaye tak ka LTCG tax free hai."
-   },
-   {
-    "facts_used": [
-     8
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "Older BHAI at home dividing coins into several small labelled-looking pouches without text, placing them on a calendar-like wooden shelf, calm planning face",
-     "type": "art"
-    },
-    "vo": "Usse upar ke munafe par 12.5 percent tax lagta hai. Isi wajah se samajhdar log aakhri saal mein saara paisa achanak nahi nikaalte. Zaroorat ke hisaab se thoda thoda nikaalte hain, taaki har saal ki chhoot ka faayda mile."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "SG facing a mirror in which his reflection is a nervous young man reaching for a stop button, SG gently shaking his head, soft evening light",
-     "type": "art"
-    },
-    "vo": "Toh sabse badi galti kya hai? 500 ko chhota samajhna nahi. Galti hai, flat saalon mein bore ho kar ruk jaana, crash mein ghabra kar nikal jaana, aur kharche ko kabhi na dekhna. SIP ka dushman market nahi, hamari aadat hai."
+    "vo": "Aur aage ke liye chhote niyam. Paisa lene ke liye kabhi PIN nahi. Customer care ka number sirf official app ya website se. Koi app download karne ko kahe, toh call kaat do. Aur jo jaldi machaaye, uske liye ek hi jawab, main khud bank aa jaungi."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "BHAI and BEHEN sitting together on a balcony with chai, calmly reading a statement on a tablet, the city glowing at sunset behind them, relaxed confident mood",
+     "prompt": "MUMMY teaching BETI, a 6-year-old girl, and BETA at the dining table, holding up a phone and wagging a finger playfully, the family laughing, warm evening light",
      "type": "art"
     },
-    "vo": "Toh kya kar sakte hain? Shuru karke bhool jaane ke bajaye, har saal statement dekhiye, ghabraane ke liye nahi, samajhne ke liye. Expense ratio dekhiye. Aur jab salary badhe, SIP bhi thodi badhaiye. Yeh investment advice nahi hai, bas samajhne ka tareeka hai."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A drawn balance scale on the dinner table with a small brave heart, a tiny mouse and a cloud on it, SG resting his hand beside it thoughtfully",
-     "type": "art"
-    },
-    "vo": "Aur haan, 20 saal ka nateeja koi tay number nahi hai. Andaaza yahi kehta hai ki aapka jama principal kai guna ho sakta hai. Par asal number teen cheezon par nahi, bas aapki himmat, kharche aur market ke mood par tika hai."
+    "vo": "Mummy ki kahani ka ant? Shikayat jaldi hui, receipt haath mein hai, jaanch chal rahi hai. Paisa wapas aayega ya nahi, abhi pata nahi. Par Mummy ab ghar ki sabse badi guard hain. Yeh investment advice nahi hai. Bas apne paise ki hifaazat ki seedhi baat hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "Night at the same dinner table, PAPA holding BHAI's phone close to his face with curious wide eyes, FD receipt loosely in his other hand, BHAI grinning, MUMMY smiling with chai",
+     "prompt": "SG smiling warmly at the viewer, holding a phone in one hand and a credit card bill peeking from his shirt pocket as a teaser, soft studio light",
      "type": "art"
     },
-    "vo": "Dinner table par wapas chalte hain. Papa ab bhi FD ki receipt pakde hain, par is baar woh hans nahi rahe. Woh Bhai ka phone le kar dekh rahe hain, aur dheere se poochte hain, beta, yeh SIP kaise shuru karte hain?"
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "SG standing by the dinner table turning towards the viewer with a warm smile, the family in the background chatting, an FD receipt and a phone lying side by side on the table",
-     "type": "art"
-    },
-    "vo": "Ab aapse sawaal. Aapne kabhi market girne par SIP roki hai? Haan ya na, comments mein likhiye. Aur agle video mein baat karenge FD aur PPF ki, ki jo safe lagta hai, woh mehngai ke baad asal mein kitna bachata hai."
+    "vo": "Ab aapse ek sawaal. Aapke paas kabhi aisa refund wala call aaya hai? Comment mein bas haan ya na likhiye. Agli video mein baat karenge credit card ke un charges ki, jo bill mein chupke se aa jaate hain. Tab tak, PIN sirf bhejne ke liye."
    }
   ],
   "thumbnail": {
-   "scene": "PAPA stares wide-eyed at BHAI's phone held close to his face, an FD receipt slipping from his other hand, mouth half open",
+   "scene": "MUMMY stares at her glowing phone screen, eyes wide with shock, one hand over her mouth",
    "words": [
-    "₹4.30 LAKH",
-    "SACH?"
+    "₹93,195",
+    "GAYAB"
    ]
   },
-  "title": "500 ki *SIP*, 20 saal baad kya? 💰"
+  "title": "Refund ke liye *PIN* kyun maanga? 📱"
  },
- "status": "writing",
- "timings": [],
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  19.73,
+  37.22,
+  54.79,
+  72.32,
+  91.65,
+  111.46,
+  134.59,
+  154.76,
+  172.37,
+  195.1,
+  213.23,
+  236.68,
+  257.01,
+  276.66,
+  295.67,
+  315.64,
+  335.25,
+  354.22,
+  370.55,
+  390.56,
+  410.53,
+  430.42,
+  452.47,
+  471.64,
+  493.13,
+  513.9,
+  532.43,
+  549.96,
+  566.89,
+  584.9,
+  604.87,
+  622.52,
+  642.09,
+  661.62,
+  683.99,
+  701.0,
+  722.17
+ ],
  "topic": {
   "hooks": [
-   "Room rent limit se poora claim kat-ta hai?",
-   "Waiting period mein kya nahi milta?",
-   "Office ka insurance kaafi hai?"
+   "Refund lene ke liye PIN kyun maanga?",
+   "Paisa gaya toh 1930 par kya hota hai?",
+   "Bank kab paisa wapas deta hai?"
   ],
-  "id": "health-insurance-claim",
-  "sheet": {
-   "facts": [
-    {
-     "label": "official",
-     "number": 1.0,
-     "quote": "In a Master Circular on Health Insurance Products, the regulator said that insurers must decide on cashless authorization requests within one hour and final authorization on discharge from hospital within three hours of request from the hospital.",
-     "source_date": "2024-05-29",
-     "source_name": "Deccan Chronicle",
-     "source_url": "https://www.deccanchronicle.com/business/in-a-major-relief-to-policyholders-irdai-asks-insurers-to-settle-cashless-claims-in-3-hours-896478",
-     "text": "The IRDAI master circular mandates that health insurers decide on cashless pre-authorization requests within 1 hour of receipt.",
-     "unit": "hours"
-    },
-    {
-     "label": "official",
-     "number": 3.0,
-     "quote": "The regulator further said that if there is any delay beyond three hours, the additional amount if any charged by the hospital shall be borne by the insurer from the shareholder's fund.",
-     "source_date": "2024-05-29",
-     "source_name": "Deccan Chronicle",
-     "source_url": "https://www.deccanchronicle.com/business/in-a-major-relief-to-policyholders-irdai-asks-insurers-to-settle-cashless-claims-in-3-hours-896478",
-     "text": "Insurers must approve final hospital discharge authorisations within 3 hours, after which extra hospital charges are borne from shareholder funds.",
-     "unit": "hours"
-    },
-    {
-     "label": "official",
-     "number": 5000.0,
-     "quote": "An insurer is liable to pay Rs 5000 per day to the policyholder in case ombudsman awards are not implemented within 30 days.",
-     "source_date": "2024-05-29",
-     "source_name": "Deccan Chronicle",
-     "source_url": "https://www.deccanchronicle.com/business/in-a-major-relief-to-policyholders-irdai-asks-insurers-to-settle-cashless-claims-in-3-hours-896478",
-     "text": "An insurer must pay 5,000 rupees per day to the policyholder if an insurance ombudsman award is not implemented within 30 days.",
-     "unit": "INR/day"
-    },
-    {
-     "label": "official",
-     "number": 43.4,
-     "quote": "Out-of-Pocket Expenditure (OOPE) as a share of Total Health Expenditure declined from 64.2% to 43.4%.",
-     "source_date": "2026-05-27",
-     "source_name": "PIB",
-     "source_url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2021658",
-     "text": "Out-of-pocket expenditure borne directly by households accounts for 43.4 percent of India's total health expenditure.",
-     "unit": "pct"
-    }
-   ],
-   "summary": "Unexpected claim deductions and rejections often stem from hidden policy fine print like room-rent caps, proportionate deductions, and disease-specific waiting periods. Relying solely on basic employer group cover leaves salaried households vulnerable during job transitions or catastrophic illnesses. Because out-of-pocket medical expenses account for over 43 percent of total health spending, an inadequate claim payout can instantly derail monthly household budgets, emergency funds, and long-term mutual fund SIPs."
-  },
-  "summary": "A family's hospital claim gets cut: room-rent limits, waiting periods, sub-limits, pre-existing disease rules, co-pay; how to read a policy, cashless vs reimbursement, why an employer policy alone is not enough.",
+  "id": "upi-fraud-anatomy",
+  "summary": "How common UPI and OTP frauds work (collect requests, screen-share apps, fake customer care), what the money trail looks like, the RBI zero-liability rules and the 1930 helpline, what to do in the first hour.",
   "target_minutes": 12,
-  "title": "Hospital ke bill par 'claim reject': health insurance ka chhota print"
+  "title": "UPI par 'refund' ka call: ek fraud ki poori kahani, step by step",
+  "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-22T16:41:16+00:00",
+ "updated": "2026-10-22T18:47:48+00:00",
  "writer": "claude"
 }

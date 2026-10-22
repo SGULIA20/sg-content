@@ -1,0 +1,425 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,86,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.63,Default,,0,0,0,,Refund lene ke liye kabhi PIN
+Dialogue: 0,0:00:02.63,0:00:03.80,Default,,0,0,0,,nahi lagta.
+Dialogue: 0,0:00:03.80,0:00:05.55,Default,,0,0,0,,Phir bhi log roz PIN daal
+Dialogue: 0,0:00:05.55,0:00:06.43,Default,,0,0,0,,dete hain.
+Dialogue: 0,0:00:06.43,0:00:08.47,Default,,0,0,0,,Aur kuch hi pal mein khaata
+Dialogue: 0,0:00:08.47,0:00:10.22,Default,,0,0,0,,khaali ho jaata hai.
+Dialogue: 0,0:00:10.22,0:00:12.27,Default,,0,0,0,,Aaj ek aisi hi shaam ki
+Dialogue: 0,0:00:12.27,0:00:13.14,Default,,0,0,0,,kahani,
+Dialogue: 0,0:00:13.14,0:00:14.02,Default,,0,0,0,,step by step.
+Dialogue: 0,0:00:14.02,0:00:16.65,Default,,0,0,0,,Taaki agli baar yeh call aapke
+Dialogue: 0,0:00:16.65,0:00:17.23,Default,,0,0,0,,ghar aaye,
+Dialogue: 0,0:00:17.23,0:00:19.28,Default,,0,0,0,,toh aap usse pehchaan lo.
+Dialogue: 0,0:00:19.73,0:00:20.65,Default,,0,0,0,,Shaam ka waqt hai.
+Dialogue: 0,0:00:20.65,0:00:23.41,Default,,0,0,0,,Mummy ne online mixer grinder lauta
+Dialogue: 0,0:00:23.41,0:00:23.88,Default,,0,0,0,,diya tha.
+Dialogue: 0,0:00:23.88,0:00:25.72,Default,,0,0,0,,Refund abhi tak nahi aaya.
+Dialogue: 0,0:00:25.72,0:00:27.56,Default,,0,0,0,,Woh phone par search karti hain,
+Dialogue: 0,0:00:27.56,0:00:30.09,Default,,0,0,0,,company ka customer care number.
+Dialogue: 0,0:00:30.09,0:00:32.40,Default,,0,0,0,,Sabse upar ek number dikhta hai.
+Dialogue: 0,0:00:32.40,0:00:33.78,Default,,0,0,0,,Mummy bina soche,
+Dialogue: 0,0:00:33.78,0:00:36.08,Default,,0,0,0,,turant usi number par call laga
+Dialogue: 0,0:00:36.08,0:00:36.77,Default,,0,0,0,,deti hain.
+Dialogue: 0,0:00:37.22,0:00:39.70,Default,,0,0,0,,Udhar se ek bahut tameez wala
+Dialogue: 0,0:00:39.70,0:00:40.94,Default,,0,0,0,,aadmi bolta hai.
+Dialogue: 0,0:00:40.94,0:00:41.44,Default,,0,0,0,,Ma'am,
+Dialogue: 0,0:00:41.44,0:00:43.42,Default,,0,0,0,,aapka refund atka hua hai,
+Dialogue: 0,0:00:43.42,0:00:45.16,Default,,0,0,0,,hum abhi bhej dete hain.
+Dialogue: 0,0:00:45.16,0:00:46.65,Default,,0,0,0,,Aawaz mein jaldi hai,
+Dialogue: 0,0:00:46.65,0:00:47.89,Default,,0,0,0,,par izzat bhi hai.
+Dialogue: 0,0:00:47.89,0:00:49.38,Default,,0,0,0,,Mummy ko lagta hai,
+Dialogue: 0,0:00:49.38,0:00:49.87,Default,,0,0,0,,chalo,
+Dialogue: 0,0:00:49.87,0:00:51.86,Default,,0,0,0,,aakhir koi toh sun raha hai.
+Dialogue: 0,0:00:51.86,0:00:54.09,Default,,0,0,0,,Aur yahin se jaal shuru hota
+Dialogue: 0,0:00:54.09,0:00:54.34,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:54.79,0:00:55.75,Default,,0,0,0,,Woh kehta hai,
+Dialogue: 0,0:00:55.75,0:00:57.92,Default,,0,0,0,,aapke UPI app par ek request
+Dialogue: 0,0:00:57.92,0:00:58.40,Default,,0,0,0,,aayegi.
+Dialogue: 0,0:00:58.40,0:01:00.32,Default,,0,0,0,,Usko approve kar dijiye,
+Dialogue: 0,0:01:00.32,0:01:01.53,Default,,0,0,0,,aur PIN daal dijiye.
+Dialogue: 0,0:01:01.53,0:01:03.93,Default,,0,0,0,,Refund seedha khaate mein aa jayega.
+Dialogue: 0,0:01:03.93,0:01:06.34,Default,,0,0,0,,Mummy ko thoda ajeeb lagta hai.
+Dialogue: 0,0:01:06.34,0:01:08.26,Default,,0,0,0,,Par aadmi baar baar bolta hai,
+Dialogue: 0,0:01:08.26,0:01:09.70,Default,,0,0,0,,ma'am jaldi kariye,
+Dialogue: 0,0:01:09.70,0:01:11.87,Default,,0,0,0,,warna refund cancel ho jayega.
+Dialogue: 0,0:01:12.32,0:01:14.45,Default,,0,0,0,,Mummy PIN daal deti hain.
+Dialogue: 0,0:01:14.45,0:01:16.89,Default,,0,0,0,,Screen par hara tick aata hai.
+Dialogue: 0,0:01:16.89,0:01:18.41,Default,,0,0,0,,Woh khush hoti hain,
+Dialogue: 0,0:01:18.41,0:01:19.63,Default,,0,0,0,,chalo ho gaya.
+Dialogue: 0,0:01:19.63,0:01:21.45,Default,,0,0,0,,Phir phone bajta hai,
+Dialogue: 0,0:01:21.45,0:01:22.98,Default,,0,0,0,,ek SMS aata hai.
+Dialogue: 0,0:01:22.98,0:01:25.11,Default,,0,0,0,,Khaate se paisa gaya hai,
+Dialogue: 0,0:01:25.11,0:01:26.02,Default,,0,0,0,,aaya nahi.
+Dialogue: 0,0:01:26.02,0:01:29.07,Default,,0,0,0,,Mummy ka chehra safed pad jaata
+Dialogue: 0,0:01:29.07,0:01:29.37,Default,,0,0,0,,hai.
+Dialogue: 0,0:01:29.37,0:01:31.20,Default,,0,0,0,,Haath kaanpne lagte hain.
+Dialogue: 0,0:01:31.65,0:01:33.77,Default,,0,0,0,,Aadmi ab bhi line par hai.
+Dialogue: 0,0:01:33.77,0:01:34.57,Default,,0,0,0,,Kehta hai,
+Dialogue: 0,0:01:34.57,0:01:36.95,Default,,0,0,0,,ma'am galti se debit ho gaya,
+Dialogue: 0,0:01:36.95,0:01:38.81,Default,,0,0,0,,main nayi request bhejta hoon,
+Dialogue: 0,0:01:38.81,0:01:40.67,Default,,0,0,0,,paisa wapas aa jayega.
+Dialogue: 0,0:01:40.67,0:01:42.26,Default,,0,0,0,,Yeh doosra hamla hai.
+Dialogue: 0,0:01:42.26,0:01:45.17,Default,,0,0,0,,Ghabrahat mein insaan wahi karta hai
+Dialogue: 0,0:01:45.17,0:01:46.77,Default,,0,0,0,,jo usse kaha jaye.
+Dialogue: 0,0:01:46.77,0:01:49.68,Default,,0,0,0,,Tabhi Beta kamre mein aakar poochta
+Dialogue: 0,0:01:49.68,0:01:49.95,Default,,0,0,0,,hai,
+Dialogue: 0,0:01:49.95,0:01:50.48,Default,,0,0,0,,Mummy,
+Dialogue: 0,0:01:50.48,0:01:51.01,Default,,0,0,0,,kya hua?
+Dialogue: 0,0:01:51.46,0:01:54.74,Default,,0,0,0,,Aisi kahaniyan chhoti nahi hoti.
+Dialogue: 0,0:01:54.74,0:01:56.83,Default,,0,0,0,,Ek survey ke mutabik,
+Dialogue: 0,0:01:56.83,0:02:00.41,Default,,0,0,0,,online fraud mein logon ka average
+Dialogue: 0,0:02:00.41,0:02:03.10,Default,,0,0,0,,nuksaan lagbhag 93,195 rupaye raha.
+Dialogue: 0,0:02:03.10,0:02:05.78,Default,,0,0,0,,Yaani kai mahine ka ghar ka
+Dialogue: 0,0:02:05.78,0:02:06.38,Default,,0,0,0,,kharcha,
+Dialogue: 0,0:02:06.38,0:02:07.58,Default,,0,0,0,,sirf ek call mein.
+Dialogue: 0,0:02:07.58,0:02:09.37,Default,,0,0,0,,Aur sabse dukh ki baat,
+Dialogue: 0,0:02:09.37,0:02:12.35,Default,,0,0,0,,yeh paisa aksar saalon ki mehnat
+Dialogue: 0,0:02:12.35,0:02:14.14,Default,,0,0,0,,ki bachat hota hai.
+Dialogue: 0,0:02:14.59,0:02:16.62,Default,,0,0,0,,Toh aaj ke sawaal yeh hain.
+Dialogue: 0,0:02:16.62,0:02:17.20,Default,,0,0,0,,Pehla,
+Dialogue: 0,0:02:17.20,0:02:19.52,Default,,0,0,0,,refund lene ke liye PIN kyun
+Dialogue: 0,0:02:19.52,0:02:20.39,Default,,0,0,0,,maanga gaya?
+Dialogue: 0,0:02:20.39,0:02:20.97,Default,,0,0,0,,Doosra,
+Dialogue: 0,0:02:20.97,0:02:23.87,Default,,0,0,0,,paisa jaane ke baad helpline par
+Dialogue: 0,0:02:23.87,0:02:25.03,Default,,0,0,0,,kya hota hai?
+Dialogue: 0,0:02:25.03,0:02:25.61,Default,,0,0,0,,Teesra,
+Dialogue: 0,0:02:25.61,0:02:28.22,Default,,0,0,0,,bank kab paisa wapas deta hai?
+Dialogue: 0,0:02:28.22,0:02:29.38,Default,,0,0,0,,Aur aakhir mein,
+Dialogue: 0,0:02:29.38,0:02:32.28,Default,,0,0,0,,pehle ghante mein aapko kya karna
+Dialogue: 0,0:02:32.28,0:02:32.57,Default,,0,0,0,,hai,
+Dialogue: 0,0:02:32.57,0:02:34.31,Default,,0,0,0,,taaki nuksaan kam ho.
+Dialogue: 0,0:02:34.76,0:02:37.18,Default,,0,0,0,,Pehle ek seedhi baat samajh lijiye.
+Dialogue: 0,0:02:37.18,0:02:39.35,Default,,0,0,0,,UPI PIN sirf paisa bhejne ke
+Dialogue: 0,0:02:39.35,0:02:40.32,Default,,0,0,0,,liye hota hai.
+Dialogue: 0,0:02:40.32,0:02:42.49,Default,,0,0,0,,Paisa lene ke liye kabhi PIN
+Dialogue: 0,0:02:42.49,0:02:43.46,Default,,0,0,0,,nahi lagta.
+Dialogue: 0,0:02:43.46,0:02:45.64,Default,,0,0,0,,Jab koi aapko paisa bhejta hai,
+Dialogue: 0,0:02:45.64,0:02:47.81,Default,,0,0,0,,aapko kuch nahi karna padta.
+Dialogue: 0,0:02:47.81,0:02:49.50,Default,,0,0,0,,Paisa bas aa jaata hai,
+Dialogue: 0,0:02:49.50,0:02:51.68,Default,,0,0,0,,jaise dost bhejta hai toh aata
+Dialogue: 0,0:02:51.68,0:02:51.92,Default,,0,0,0,,hai.
+Dialogue: 0,0:02:52.37,0:02:54.11,Default,,0,0,0,,Ab woh request kya thi?
+Dialogue: 0,0:02:54.11,0:02:56.71,Default,,0,0,0,,Usse collect request kehte hain.
+Dialogue: 0,0:02:56.71,0:03:00.18,Default,,0,0,0,,Collect request yaani saamne wala aapse
+Dialogue: 0,0:03:00.18,0:03:01.92,Default,,0,0,0,,paisa maang raha hai.
+Dialogue: 0,0:03:01.92,0:03:04.23,Default,,0,0,0,,Screen par pay likha hota hai,
+Dialogue: 0,0:03:04.23,0:03:05.39,Default,,0,0,0,,saath mein amount.
+Dialogue: 0,0:03:05.39,0:03:08.28,Default,,0,0,0,,Fraudster ise refund bol kar bhejta
+Dialogue: 0,0:03:08.28,0:03:08.57,Default,,0,0,0,,hai.
+Dialogue: 0,0:03:08.57,0:03:10.60,Default,,0,0,0,,Aap approve karte ho,
+Dialogue: 0,0:03:10.60,0:03:11.76,Default,,0,0,0,,PIN daalte ho,
+Dialogue: 0,0:03:11.76,0:03:14.65,Default,,0,0,0,,aur paisa aapka chala jaata hai.
+Dialogue: 0,0:03:15.10,0:03:17.04,Default,,0,0,0,,Toh Mummy ne galti kyun ki?
+Dialogue: 0,0:03:17.04,0:03:19.46,Default,,0,0,0,,Kyunki unke dimaag mein pehle se
+Dialogue: 0,0:03:19.46,0:03:21.16,Default,,0,0,0,,refund ka intezaar tha.
+Dialogue: 0,0:03:21.16,0:03:22.85,Default,,0,0,0,,Jo aap sunna chahte ho,
+Dialogue: 0,0:03:22.85,0:03:24.54,Default,,0,0,0,,fraudster wahi bolta hai.
+Dialogue: 0,0:03:24.54,0:03:26.48,Default,,0,0,0,,Mummy ne khud order ki baat
+Dialogue: 0,0:03:26.48,0:03:26.97,Default,,0,0,0,,batayi,
+Dialogue: 0,0:03:26.97,0:03:28.66,Default,,0,0,0,,usne bas usko dohraaya.
+Dialogue: 0,0:03:28.66,0:03:30.36,Default,,0,0,0,,Sab kuch sach jaisa laga.
+Dialogue: 0,0:03:30.36,0:03:32.78,Default,,0,0,0,,Isliye shak ki jagah bharosa aaya.
+Dialogue: 0,0:03:33.23,0:03:36.65,Default,,0,0,0,,Doosra tareeka hai screen share wala
+Dialogue: 0,0:03:36.65,0:03:36.96,Default,,0,0,0,,app.
+Dialogue: 0,0:03:36.96,0:03:38.51,Default,,0,0,0,,Fraudster kehta hai,
+Dialogue: 0,0:03:38.51,0:03:41.31,Default,,0,0,0,,ma'am ek app download kar lijiye,
+Dialogue: 0,0:03:41.31,0:03:42.87,Default,,0,0,0,,main help karunga.
+Dialogue: 0,0:03:42.87,0:03:45.66,Default,,0,0,0,,Woh app aapki poori screen usko
+Dialogue: 0,0:03:45.66,0:03:47.22,Default,,0,0,0,,dikha deta hai.
+Dialogue: 0,0:03:47.22,0:03:49.39,Default,,0,0,0,,Aap jo bhi type karo,
+Dialogue: 0,0:03:49.39,0:03:49.70,Default,,0,0,0,,OTP,
+Dialogue: 0,0:03:49.70,0:03:50.01,Default,,0,0,0,,PIN,
+Dialogue: 0,0:03:50.01,0:03:50.63,Default,,0,0,0,,password,
+Dialogue: 0,0:03:50.63,0:03:52.19,Default,,0,0,0,,sab woh dekhta hai.
+Dialogue: 0,0:03:52.19,0:03:54.05,Default,,0,0,0,,Bina taala tode,
+Dialogue: 0,0:03:54.05,0:03:56.23,Default,,0,0,0,,chaabi aapne khud de di.
+Dialogue: 0,0:03:56.68,0:03:59.16,Default,,0,0,0,,OTP yaani woh chhota code jo
+Dialogue: 0,0:03:59.16,0:04:00.82,Default,,0,0,0,,bank SMS par bhejta hai,
+Dialogue: 0,0:04:00.82,0:04:01.93,Default,,0,0,0,,sirf aapke liye.
+Dialogue: 0,0:04:01.93,0:04:04.41,Default,,0,0,0,,Bank kabhi phone par OTP nahi
+Dialogue: 0,0:04:04.41,0:04:04.96,Default,,0,0,0,,maangta.
+Dialogue: 0,0:04:04.96,0:04:08.00,Default,,0,0,0,,Koi asli customer care aapse app
+Dialogue: 0,0:04:08.00,0:04:09.93,Default,,0,0,0,,download nahi karwata.
+Dialogue: 0,0:04:09.93,0:04:11.31,Default,,0,0,0,,Agar koi kahe,
+Dialogue: 0,0:04:11.31,0:04:12.42,Default,,0,0,0,,toh samajh lo,
+Dialogue: 0,0:04:12.42,0:04:15.18,Default,,0,0,0,,line ke us paar customer care
+Dialogue: 0,0:04:15.18,0:04:16.56,Default,,0,0,0,,nahi baitha hai.
+Dialogue: 0,0:04:17.01,0:04:19.85,Default,,0,0,0,,Teesra tareeka hai fake customer care
+Dialogue: 0,0:04:19.85,0:04:20.28,Default,,0,0,0,,number.
+Dialogue: 0,0:04:20.28,0:04:22.68,Default,,0,0,0,,Fraudster internet par apne number daal
+Dialogue: 0,0:04:22.68,0:04:23.34,Default,,0,0,0,,dete hain,
+Dialogue: 0,0:04:23.34,0:04:25.08,Default,,0,0,0,,badi companies ke naam se.
+Dialogue: 0,0:04:25.08,0:04:26.17,Default,,0,0,0,,Kabhi review mein,
+Dialogue: 0,0:04:26.17,0:04:27.70,Default,,0,0,0,,kabhi kisi page par.
+Dialogue: 0,0:04:27.70,0:04:29.67,Default,,0,0,0,,Log jaldi mein jo pehla number
+Dialogue: 0,0:04:29.67,0:04:30.10,Default,,0,0,0,,dikhe,
+Dialogue: 0,0:04:30.10,0:04:31.41,Default,,0,0,0,,wahi uthate hain.
+Dialogue: 0,0:04:31.41,0:04:34.46,Default,,0,0,0,,Asli number hamesha company ki official
+Dialogue: 0,0:04:34.46,0:04:36.21,Default,,0,0,0,,app ya website se lijiye.
+Dialogue: 0,0:04:36.66,0:04:38.54,Default,,0,0,0,,In sab mein ek cheez common
+Dialogue: 0,0:04:38.54,0:04:38.81,Default,,0,0,0,,hai,
+Dialogue: 0,0:04:38.81,0:04:39.35,Default,,0,0,0,,jaldi.
+Dialogue: 0,0:04:39.35,0:04:40.96,Default,,0,0,0,,Ma'am abhi kariye,
+Dialogue: 0,0:04:40.96,0:04:42.58,Default,,0,0,0,,warna refund cancel.
+Dialogue: 0,0:04:42.58,0:04:42.85,Default,,0,0,0,,Sir,
+Dialogue: 0,0:04:42.85,0:04:45.00,Default,,0,0,0,,aapka khaata band ho jayega.
+Dialogue: 0,0:04:45.00,0:04:46.07,Default,,0,0,0,,Jaldi isliye,
+Dialogue: 0,0:04:46.07,0:04:48.50,Default,,0,0,0,,kyunki sochne ka waqt mila toh
+Dialogue: 0,0:04:48.50,0:04:49.84,Default,,0,0,0,,aap pakad loge.
+Dialogue: 0,0:04:49.84,0:04:51.99,Default,,0,0,0,,Jahan bhi koi aapko daudaaye,
+Dialogue: 0,0:04:51.99,0:04:55.22,Default,,0,0,0,,wahin ruk jaana sabse samajhdari hai.
+Dialogue: 0,0:04:55.67,0:04:58.88,Default,,0,0,0,,Aur yeh akeli Mummy ki kahani
+Dialogue: 0,0:04:58.88,0:04:59.75,Default,,0,0,0,,nahi hai.
+Dialogue: 0,0:04:59.75,0:05:02.08,Default,,0,0,0,,Pichhle saal desh ki cyber fraud
+Dialogue: 0,0:05:02.08,0:05:04.99,Default,,0,0,0,,helpline par lagbhag 3.24 crore calls
+Dialogue: 0,0:05:04.99,0:05:05.28,Default,,0,0,0,,aayin.
+Dialogue: 0,0:05:05.28,0:05:07.91,Default,,0,0,0,,Yaani lagbhag har second koi na
+Dialogue: 0,0:05:07.91,0:05:08.49,Default,,0,0,0,,koi call.
+Dialogue: 0,0:05:08.49,0:05:09.65,Default,,0,0,0,,Fake refund,
+Dialogue: 0,0:05:09.65,0:05:11.69,Default,,0,0,0,,fake customer care,
+Dialogue: 0,0:05:11.69,0:05:12.57,Default,,0,0,0,,fake KYC,
+Dialogue: 0,0:05:12.57,0:05:15.19,Default,,0,0,0,,sab isi line mein shaamil hain.
+Dialogue: 0,0:05:15.64,0:05:17.21,Default,,0,0,0,,Ab doosra sawaal.
+Dialogue: 0,0:05:17.21,0:05:19.41,Default,,0,0,0,,Paisa gaya toh gaya kahan?
+Dialogue: 0,0:05:19.41,0:05:21.92,Default,,0,0,0,,Yahin Behen ghar aati hai.
+Dialogue: 0,0:05:21.92,0:05:24.75,Default,,0,0,0,,Woh Mummy ka phone dekhti hai,
+Dialogue: 0,0:05:24.75,0:05:26.00,Default,,0,0,0,,SMS padhti hai.
+Dialogue: 0,0:05:26.00,0:05:28.83,Default,,0,0,0,,Aur sabse pehle ek baat kehti
+Dialogue: 0,0:05:28.83,0:05:29.15,Default,,0,0,0,,hai.
+Dialogue: 0,0:05:29.15,0:05:30.40,Default,,0,0,0,,Rona baad mein,
+Dialogue: 0,0:05:30.40,0:05:31.97,Default,,0,0,0,,abhi call karo.
+Dialogue: 0,0:05:31.97,0:05:34.80,Default,,0,0,0,,Is waqt har minute keemti hai.
+Dialogue: 0,0:05:35.25,0:05:36.28,Default,,0,0,0,,Pehle samjho,
+Dialogue: 0,0:05:36.28,0:05:38.59,Default,,0,0,0,,paisa ek jagah ruk kar nahi
+Dialogue: 0,0:05:38.59,0:05:39.11,Default,,0,0,0,,baithta.
+Dialogue: 0,0:05:39.11,0:05:41.68,Default,,0,0,0,,Fraudster ka paisa mule accounts mein
+Dialogue: 0,0:05:41.68,0:05:42.45,Default,,0,0,0,,jaata hai.
+Dialogue: 0,0:05:42.45,0:05:45.02,Default,,0,0,0,,Mule account yaani kisi aur ke
+Dialogue: 0,0:05:45.02,0:05:46.05,Default,,0,0,0,,naam ka khaata,
+Dialogue: 0,0:05:46.05,0:05:47.60,Default,,0,0,0,,jo kiraye par liya gaya.
+Dialogue: 0,0:05:47.60,0:05:49.91,Default,,0,0,0,,Wahan se kuch hi minute mein
+Dialogue: 0,0:05:49.91,0:05:50.94,Default,,0,0,0,,paisa aage,
+Dialogue: 0,0:05:50.94,0:05:51.71,Default,,0,0,0,,aur aage,
+Dialogue: 0,0:05:51.71,0:05:53.77,Default,,0,0,0,,kai khaaton mein bant jaata hai.
+Dialogue: 0,0:05:54.22,0:05:56.91,Default,,0,0,0,,Socho jaise paani ki balti zameen
+Dialogue: 0,0:05:56.91,0:05:57.64,Default,,0,0,0,,par gir gayi.
+Dialogue: 0,0:05:57.64,0:05:59.84,Default,,0,0,0,,Shuru mein paani ek jagah hai,
+Dialogue: 0,0:05:59.84,0:06:01.31,Default,,0,0,0,,sametna aasaan hai.
+Dialogue: 0,0:06:01.31,0:06:03.26,Default,,0,0,0,,Thodi der mein woh har taraf
+Dialogue: 0,0:06:03.26,0:06:04.24,Default,,0,0,0,,phail jaata hai.
+Dialogue: 0,0:06:04.24,0:06:06.44,Default,,0,0,0,,Fraud ka paisa bhi bilkul aisa
+Dialogue: 0,0:06:06.44,0:06:06.92,Default,,0,0,0,,hi hai.
+Dialogue: 0,0:06:06.92,0:06:08.39,Default,,0,0,0,,Jitni jaldi pakdo,
+Dialogue: 0,0:06:08.39,0:06:10.10,Default,,0,0,0,,utna zyada bachta hai.
+Dialogue: 0,0:06:10.55,0:06:14.11,Default,,0,0,0,,Isliye Behen turant 1930 milaati hai.
+Dialogue: 0,0:06:14.11,0:06:17.15,Default,,0,0,0,,1930 desh ki cyber fraud helpline
+Dialogue: 0,0:06:17.15,0:06:17.41,Default,,0,0,0,,hai.
+Dialogue: 0,0:06:17.41,0:06:19.44,Default,,0,0,0,,Aap yahan call karke fraud ki
+Dialogue: 0,0:06:19.44,0:06:20.96,Default,,0,0,0,,shikayat darj karte ho.
+Dialogue: 0,0:06:20.96,0:06:24.77,Default,,0,0,0,,Shikayat sarkari cybercrime portal par online
+Dialogue: 0,0:06:24.77,0:06:26.05,Default,,0,0,0,,bhi ho sakti hai.
+Dialogue: 0,0:06:26.05,0:06:28.33,Default,,0,0,0,,Call par woh aapse transaction ki
+Dialogue: 0,0:06:28.33,0:06:30.11,Default,,0,0,0,,poori details maangte hain.
+Dialogue: 0,0:06:30.56,0:06:31.94,Default,,0,0,0,,Details kya chahiye?
+Dialogue: 0,0:06:31.94,0:06:34.68,Default,,0,0,0,,Transaction ka reference number,
+Dialogue: 0,0:06:34.68,0:06:36.88,Default,,0,0,0,,kis UPI ID par paisa gaya,
+Dialogue: 0,0:06:36.88,0:06:37.43,Default,,0,0,0,,kab gaya,
+Dialogue: 0,0:06:37.43,0:06:38.26,Default,,0,0,0,,kitna gaya.
+Dialogue: 0,0:06:38.26,0:06:40.46,Default,,0,0,0,,Mummy ke phone mein sab tha,
+Dialogue: 0,0:06:40.46,0:06:43.76,Default,,0,0,0,,kyunki unhone kuch delete nahi kiya.
+Dialogue: 0,0:06:43.76,0:06:45.41,Default,,0,0,0,,Isliye screenshot lijiye,
+Dialogue: 0,0:06:45.41,0:06:47.06,Default,,0,0,0,,SMS sambhaal kar rakhiye.
+Dialogue: 0,0:06:47.06,0:06:50.08,Default,,0,0,0,,Yahi aapka sabse bada saboot hai.
+Dialogue: 0,0:06:50.53,0:06:51.86,Default,,0,0,0,,Phir hota kya hai?
+Dialogue: 0,0:06:51.86,0:06:54.26,Default,,0,0,0,,Shikayat ek system mein jaati hai,
+Dialogue: 0,0:06:54.26,0:06:56.65,Default,,0,0,0,,jo banks aur payment companies se
+Dialogue: 0,0:06:56.65,0:06:57.45,Default,,0,0,0,,juda hai.
+Dialogue: 0,0:06:57.45,0:06:59.32,Default,,0,0,0,,Jis khaate mein paisa gaya,
+Dialogue: 0,0:06:59.32,0:07:01.45,Default,,0,0,0,,wahan alert pahunchta hai.
+Dialogue: 0,0:07:01.45,0:07:04.38,Default,,0,0,0,,Agar paisa abhi wahin pada hai,
+Dialogue: 0,0:07:04.38,0:07:06.51,Default,,0,0,0,,toh use rok diya jaata hai.
+Dialogue: 0,0:07:06.51,0:07:08.37,Default,,0,0,0,,Ise freeze kehte hain,
+Dialogue: 0,0:07:08.37,0:07:09.97,Default,,0,0,0,,yaani khaata ruk gaya.
+Dialogue: 0,0:07:10.42,0:07:12.89,Default,,0,0,0,,Yeh system tab kaam karta hai,
+Dialogue: 0,0:07:12.89,0:07:15.05,Default,,0,0,0,,jab log jaldi aate hain.
+Dialogue: 0,0:07:15.05,0:07:17.83,Default,,0,0,0,,Sarkari aankdon ke mutabik,
+Dialogue: 0,0:07:17.83,0:07:20.60,Default,,0,0,0,,is system ne 7,130 crore rupaye
+Dialogue: 0,0:07:20.60,0:07:23.69,Default,,0,0,0,,se zyada ko fraudsters tak pahunchne
+Dialogue: 0,0:07:23.69,0:07:24.61,Default,,0,0,0,,se bachaya.
+Dialogue: 0,0:07:24.61,0:07:25.23,Default,,0,0,0,,Socho,
+Dialogue: 0,0:07:25.23,0:07:27.39,Default,,0,0,0,,yeh paisa kisi Mummy,
+Dialogue: 0,0:07:27.39,0:07:29.86,Default,,0,0,0,,kisi Papa ki bachat thi,
+Dialogue: 0,0:07:29.86,0:07:31.71,Default,,0,0,0,,jo waqt par call se bach
+Dialogue: 0,0:07:31.71,0:07:32.02,Default,,0,0,0,,gayi.
+Dialogue: 0,0:07:32.47,0:07:33.42,Default,,0,0,0,,Par dhyan rahe,
+Dialogue: 0,0:07:33.42,0:07:36.02,Default,,0,0,0,,freeze ka matlab paisa turant wapas
+Dialogue: 0,0:07:36.02,0:07:36.50,Default,,0,0,0,,nahi.
+Dialogue: 0,0:07:36.50,0:07:38.87,Default,,0,0,0,,Ruka hua paisa wapas aane mein
+Dialogue: 0,0:07:38.87,0:07:40.05,Default,,0,0,0,,process lagta hai,
+Dialogue: 0,0:07:40.05,0:07:41.95,Default,,0,0,0,,kabhi police ke zariye,
+Dialogue: 0,0:07:41.95,0:07:43.61,Default,,0,0,0,,kabhi court ke order se.
+Dialogue: 0,0:07:43.61,0:07:45.98,Default,,0,0,0,,Shikayat ka number sambhaal kar rakhiye.
+Dialogue: 0,0:07:45.98,0:07:47.87,Default,,0,0,0,,Aur apne bank ko bhi alag
+Dialogue: 0,0:07:47.87,0:07:49.53,Default,,0,0,0,,se batana mat bhooliye.
+Dialogue: 0,0:07:49.53,0:07:51.19,Default,,0,0,0,,Wahi agla sawaal hai.
+Dialogue: 0,0:07:51.64,0:07:52.75,Default,,0,0,0,,Teesra sawaal.
+Dialogue: 0,0:07:52.75,0:07:55.24,Default,,0,0,0,,Bank kab paisa wapas deta hai?
+Dialogue: 0,0:07:55.24,0:07:58.01,Default,,0,0,0,,Usi raat Behen bank ki official
+Dialogue: 0,0:07:58.01,0:08:00.22,Default,,0,0,0,,app se fraud report karti hai.
+Dialogue: 0,0:08:00.22,0:08:02.71,Default,,0,0,0,,Agle din dono bank jaati hain.
+Dialogue: 0,0:08:02.71,0:08:05.48,Default,,0,0,0,,Bank Uncle counter ke peeche baithe
+Dialogue: 0,0:08:05.48,0:08:05.76,Default,,0,0,0,,hain.
+Dialogue: 0,0:08:05.76,0:08:07.97,Default,,0,0,0,,Mummy dheere se kehti hain,
+Dialogue: 0,0:08:07.97,0:08:09.36,Default,,0,0,0,,galti meri thi.
+Dialogue: 0,0:08:09.36,0:08:11.02,Default,,0,0,0,,Par yahan ek niyam hai,
+Dialogue: 0,0:08:11.02,0:08:12.68,Default,,0,0,0,,jo kam log jaante hain.
+Dialogue: 0,0:08:13.13,0:08:14.73,Default,,0,0,0,,RBI ke niyam batate hain,
+Dialogue: 0,0:08:14.73,0:08:18.61,Default,,0,0,0,,unauthorised electronic transaction mein customer ki
+Dialogue: 0,0:08:18.61,0:08:20.44,Default,,0,0,0,,zimmedari kitni hogi.
+Dialogue: 0,0:08:20.44,0:08:23.86,Default,,0,0,0,,Unauthorised yaani aisa transaction jo aapne
+Dialogue: 0,0:08:23.86,0:08:25.00,Default,,0,0,0,,khud nahi chaha.
+Dialogue: 0,0:08:25.00,0:08:26.60,Default,,0,0,0,,Agar galti bank ki hai,
+Dialogue: 0,0:08:26.60,0:08:29.11,Default,,0,0,0,,toh customer ki zimmedari zero.
+Dialogue: 0,0:08:29.11,0:08:31.39,Default,,0,0,0,,Agar galti kahin aur system mein
+Dialogue: 0,0:08:31.39,0:08:31.62,Default,,0,0,0,,hai,
+Dialogue: 0,0:08:31.62,0:08:32.54,Default,,0,0,0,,toh bhi zero,
+Dialogue: 0,0:08:32.54,0:08:33.45,Default,,0,0,0,,par ek shart par.
+Dialogue: 0,0:08:33.90,0:08:34.70,Default,,0,0,0,,Shart yeh hai,
+Dialogue: 0,0:08:34.70,0:08:36.83,Default,,0,0,0,,bank ka alert milne ke 3
+Dialogue: 0,0:08:36.83,0:08:38.95,Default,,0,0,0,,kaam ke din ke andar aapne
+Dialogue: 0,0:08:38.95,0:08:40.28,Default,,0,0,0,,bank ko bata diya.
+Dialogue: 0,0:08:40.28,0:08:42.41,Default,,0,0,0,,Kaam ke din yaani working days,
+Dialogue: 0,0:08:42.41,0:08:45.07,Default,,0,0,0,,chhutti ke din nahi gine jaate.
+Dialogue: 0,0:08:45.07,0:08:47.99,Default,,0,0,0,,Isko zero liability kehte hain,
+Dialogue: 0,0:08:47.99,0:08:50.92,Default,,0,0,0,,yaani nuksaan ki zimmedari aap par
+Dialogue: 0,0:08:50.92,0:08:51.98,Default,,0,0,0,,nahi aati.
+Dialogue: 0,0:08:52.43,0:08:53.74,Default,,0,0,0,,Ab ek imaandar baat.
+Dialogue: 0,0:08:53.74,0:08:55.50,Default,,0,0,0,,Agar aapne khud PIN daala,
+Dialogue: 0,0:08:55.50,0:08:56.15,Default,,0,0,0,,ya OTP diya,
+Dialogue: 0,0:08:56.15,0:08:57.90,Default,,0,0,0,,toh bank keh sakta hai galti
+Dialogue: 0,0:08:57.90,0:08:58.56,Default,,0,0,0,,aapki thi.
+Dialogue: 0,0:08:58.56,0:09:01.19,Default,,0,0,0,,Aise mein zero liability ka fayda
+Dialogue: 0,0:09:01.19,0:09:02.28,Default,,0,0,0,,milna mushkil hai.
+Dialogue: 0,0:09:02.28,0:09:04.47,Default,,0,0,0,,Report karne tak ka nuksaan aksar
+Dialogue: 0,0:09:04.47,0:09:06.88,Default,,0,0,0,,customer ko hi uthana padta hai.
+Dialogue: 0,0:09:06.88,0:09:09.51,Default,,0,0,0,,Isliye report jaldi karna zaroori hai.
+Dialogue: 0,0:09:09.96,0:09:11.68,Default,,0,0,0,,Toh report se fayda kya?
+Dialogue: 0,0:09:11.68,0:09:12.91,Default,,0,0,0,,Report karte hi,
+Dialogue: 0,0:09:12.91,0:09:14.88,Default,,0,0,0,,us waqt ke baad hone wala
+Dialogue: 0,0:09:14.88,0:09:17.34,Default,,0,0,0,,har nuksaan bank ki zimmedari ban
+Dialogue: 0,0:09:17.34,0:09:18.08,Default,,0,0,0,,jaata hai.
+Dialogue: 0,0:09:18.08,0:09:20.29,Default,,0,0,0,,Matlab agar fraudster ne baad mein
+Dialogue: 0,0:09:20.29,0:09:21.77,Default,,0,0,0,,aur paisa nikala,
+Dialogue: 0,0:09:21.77,0:09:23.24,Default,,0,0,0,,toh woh bank bharega.
+Dialogue: 0,0:09:23.24,0:09:25.21,Default,,0,0,0,,Isliye pehle bank ko batao,
+Dialogue: 0,0:09:25.21,0:09:26.44,Default,,0,0,0,,phir baaki sochna.
+Dialogue: 0,0:09:26.89,0:09:29.09,Default,,0,0,0,,Aur jab galti aapki nahi hai,
+Dialogue: 0,0:09:29.09,0:09:30.30,Default,,0,0,0,,toh ek aur niyam hai.
+Dialogue: 0,0:09:30.30,0:09:32.50,Default,,0,0,0,,Bank ko shikayat milne ke 10
+Dialogue: 0,0:09:32.50,0:09:34.45,Default,,0,0,0,,kaam ke din ke andar paisa
+Dialogue: 0,0:09:34.45,0:09:37.13,Default,,0,0,0,,aapke khaate mein credit karna hota
+Dialogue: 0,0:09:37.13,0:09:37.38,Default,,0,0,0,,hai.
+Dialogue: 0,0:09:37.38,0:09:39.82,Default,,0,0,0,,Ise shadow reversal kehte hain,
+Dialogue: 0,0:09:39.82,0:09:42.25,Default,,0,0,0,,yaani paisa khaate mein dikhta hai,
+Dialogue: 0,0:09:42.25,0:09:44.45,Default,,0,0,0,,jab tak jaanch poori nahi hoti.
+Dialogue: 0,0:09:44.90,0:09:47.21,Default,,0,0,0,,Bank Uncle Mummy ko complaint ki
+Dialogue: 0,0:09:47.21,0:09:48.50,Default,,0,0,0,,receipt dete hain,
+Dialogue: 0,0:09:48.50,0:09:50.55,Default,,0,0,0,,reference number ke saath.
+Dialogue: 0,0:09:50.55,0:09:52.61,Default,,0,0,0,,Yeh kaagaz bahut kaam ka hai.
+Dialogue: 0,0:09:52.61,0:09:54.92,Default,,0,0,0,,Agar bank time par jawab na
+Dialogue: 0,0:09:54.92,0:09:55.17,Default,,0,0,0,,de,
+Dialogue: 0,0:09:55.17,0:09:57.23,Default,,0,0,0,,toh aap bank ke grievance desk
+Dialogue: 0,0:09:57.23,0:09:59.28,Default,,0,0,0,,aur phir RBI ombudsman tak ja
+Dialogue: 0,0:09:59.28,0:10:00.05,Default,,0,0,0,,sakte ho.
+Dialogue: 0,0:10:00.05,0:10:02.88,Default,,0,0,0,,Ombudsman yaani RBI ka shikayat sunne
+Dialogue: 0,0:10:02.88,0:10:04.42,Default,,0,0,0,,wala adhikari.
+Dialogue: 0,0:10:04.87,0:10:07.18,Default,,0,0,0,,Ab woh galti jo sabse zyada
+Dialogue: 0,0:10:07.18,0:10:08.21,Default,,0,0,0,,log karte hain.
+Dialogue: 0,0:10:08.21,0:10:09.49,Default,,0,0,0,,Fraud ke baad sharam.
+Dialogue: 0,0:10:09.49,0:10:11.29,Default,,0,0,0,,Mummy ka pehla khayal tha,
+Dialogue: 0,0:10:11.29,0:10:13.34,Default,,0,0,0,,kisi ko batana nahi,
+Dialogue: 0,0:10:13.34,0:10:14.62,Default,,0,0,0,,log kya kahenge.
+Dialogue: 0,0:10:14.62,0:10:16.94,Default,,0,0,0,,Bahut log isi sharam mein din
+Dialogue: 0,0:10:16.94,0:10:18.22,Default,,0,0,0,,nikaal dete hain.
+Dialogue: 0,0:10:18.22,0:10:19.76,Default,,0,0,0,,Aur har guzarta din,
+Dialogue: 0,0:10:19.76,0:10:22.07,Default,,0,0,0,,paisa aur door chala jaata hai.
+Dialogue: 0,0:10:22.52,0:10:24.85,Default,,0,0,0,,Der ka nuksaan kitna bada hai?
+Dialogue: 0,0:10:24.85,0:10:27.43,Default,,0,0,0,,Ek policing study ke mutabik,
+Dialogue: 0,0:10:27.43,0:10:30.27,Default,,0,0,0,,digital fraud ke 72 percent shikaar
+Dialogue: 0,0:10:30.27,0:10:32.60,Default,,0,0,0,,logon ko apna koi bhi paisa
+Dialogue: 0,0:10:32.60,0:10:34.15,Default,,0,0,0,,wapas nahi mila.
+Dialogue: 0,0:10:34.15,0:10:35.70,Default,,0,0,0,,Wajah kai hoti hain.
+Dialogue: 0,0:10:35.70,0:10:37.76,Default,,0,0,0,,Par der se shikayat ka seedha
+Dialogue: 0,0:10:37.76,0:10:38.54,Default,,0,0,0,,matlab hai,
+Dialogue: 0,0:10:38.54,0:10:41.38,Default,,0,0,0,,paisa pakadne se pehle hi bikhar
+Dialogue: 0,0:10:41.38,0:10:41.64,Default,,0,0,0,,gaya.
+Dialogue: 0,0:10:42.09,0:10:43.77,Default,,0,0,0,,Bank ke niyam mein bhi der
+Dialogue: 0,0:10:43.77,0:10:44.90,Default,,0,0,0,,ki keemat hai.
+Dialogue: 0,0:10:44.90,0:10:47.70,Default,,0,0,0,,Agar galti kahin aur system mein
+Dialogue: 0,0:10:47.70,0:10:47.98,Default,,0,0,0,,thi,
+Dialogue: 0,0:10:47.98,0:10:50.51,Default,,0,0,0,,par aapne report mein thodi der
+Dialogue: 0,0:10:50.51,0:10:51.07,Default,,0,0,0,,kar di,
+Dialogue: 0,0:10:51.07,0:10:54.44,Default,,0,0,0,,toh savings account par aapki zimmedari
+Dialogue: 0,0:10:54.44,0:10:56.68,Default,,0,0,0,,10,000 rupaye tak ho sakti hai.
+Dialogue: 0,0:10:56.68,0:10:58.64,Default,,0,0,0,,Usse bhi zyada der hui,
+Dialogue: 0,0:10:58.64,0:11:01.17,Default,,0,0,0,,toh faisla bank ki policy par.
+Dialogue: 0,0:11:01.62,0:11:04.40,Default,,0,0,0,,Toh pehle ghante mein kya karna
+Dialogue: 0,0:11:04.40,0:11:04.71,Default,,0,0,0,,hai?
+Dialogue: 0,0:11:04.71,0:11:05.33,Default,,0,0,0,,Pehla,
+Dialogue: 0,0:11:05.33,0:11:08.41,Default,,0,0,0,,turant cyber fraud helpline par call
+Dialogue: 0,0:11:08.41,0:11:09.03,Default,,0,0,0,,karo,
+Dialogue: 0,0:11:09.03,0:11:12.12,Default,,0,0,0,,ya cybercrime portal par shikayat.
+Dialogue: 0,0:11:12.12,0:11:12.73,Default,,0,0,0,,Doosra,
+Dialogue: 0,0:11:12.73,0:11:15.51,Default,,0,0,0,,apne bank ko official app ya
+Dialogue: 0,0:11:15.51,0:11:17.37,Default,,0,0,0,,helpline se batao,
+Dialogue: 0,0:11:17.37,0:11:19.22,Default,,0,0,0,,aur UPI band karwao.
+Dialogue: 0,0:11:19.22,0:11:19.84,Default,,0,0,0,,Teesra,
+Dialogue: 0,0:11:19.84,0:11:20.45,Default,,0,0,0,,screenshot,
+Dialogue: 0,0:11:20.45,0:11:20.76,Default,,0,0,0,,SMS,
+Dialogue: 0,0:11:20.76,0:11:21.69,Default,,0,0,0,,UPI ID,
+Dialogue: 0,0:11:21.69,0:11:23.54,Default,,0,0,0,,sab sambhaal ke rakho.
+Dialogue: 0,0:11:23.99,0:11:25.91,Default,,0,0,0,,Aur aage ke liye chhote niyam.
+Dialogue: 0,0:11:25.91,0:11:28.07,Default,,0,0,0,,Paisa lene ke liye kabhi PIN
+Dialogue: 0,0:11:28.07,0:11:28.55,Default,,0,0,0,,nahi.
+Dialogue: 0,0:11:28.55,0:11:31.43,Default,,0,0,0,,Customer care ka number sirf official
+Dialogue: 0,0:11:31.43,0:11:32.87,Default,,0,0,0,,app ya website se.
+Dialogue: 0,0:11:32.87,0:11:35.03,Default,,0,0,0,,Koi app download karne ko kahe,
+Dialogue: 0,0:11:35.03,0:11:35.99,Default,,0,0,0,,toh call kaat do.
+Dialogue: 0,0:11:35.99,0:11:37.43,Default,,0,0,0,,Aur jo jaldi machaaye,
+Dialogue: 0,0:11:37.43,0:11:39.11,Default,,0,0,0,,uske liye ek hi jawab,
+Dialogue: 0,0:11:39.11,0:11:40.55,Default,,0,0,0,,main khud bank aa jaungi.
+Dialogue: 0,0:11:41.00,0:11:43.24,Default,,0,0,0,,Mummy ki kahani ka ant?
+Dialogue: 0,0:11:43.24,0:11:44.64,Default,,0,0,0,,Shikayat jaldi hui,
+Dialogue: 0,0:11:44.64,0:11:46.04,Default,,0,0,0,,receipt haath mein hai,
+Dialogue: 0,0:11:46.04,0:11:47.44,Default,,0,0,0,,jaanch chal rahi hai.
+Dialogue: 0,0:11:47.44,0:11:49.96,Default,,0,0,0,,Paisa wapas aayega ya nahi,
+Dialogue: 0,0:11:49.96,0:11:51.64,Default,,0,0,0,,abhi pata nahi.
+Dialogue: 0,0:11:51.64,0:11:53.88,Default,,0,0,0,,Par Mummy ab ghar ki sabse
+Dialogue: 0,0:11:53.88,0:11:55.00,Default,,0,0,0,,badi guard hain.
+Dialogue: 0,0:11:55.00,0:11:57.80,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:11:57.80,0:12:00.60,Default,,0,0,0,,Bas apne paise ki hifaazat ki
+Dialogue: 0,0:12:00.60,0:12:01.72,Default,,0,0,0,,seedhi baat hai.
+Dialogue: 0,0:12:02.17,0:12:03.73,Default,,0,0,0,,Ab aapse ek sawaal.
+Dialogue: 0,0:12:03.73,0:12:06.58,Default,,0,0,0,,Aapke paas kabhi aisa refund wala
+Dialogue: 0,0:12:06.58,0:12:07.36,Default,,0,0,0,,call aaya hai?
+Dialogue: 0,0:12:07.36,0:12:09.17,Default,,0,0,0,,Comment mein bas haan ya na
+Dialogue: 0,0:12:09.17,0:12:09.69,Default,,0,0,0,,likhiye.
+Dialogue: 0,0:12:09.69,0:12:12.54,Default,,0,0,0,,Agli video mein baat karenge credit
+Dialogue: 0,0:12:12.54,0:12:14.10,Default,,0,0,0,,card ke un charges ki,
+Dialogue: 0,0:12:14.10,0:12:15.92,Default,,0,0,0,,jo bill mein chupke se aa
+Dialogue: 0,0:12:15.92,0:12:16.70,Default,,0,0,0,,jaate hain.
+Dialogue: 0,0:12:16.70,0:12:17.21,Default,,0,0,0,,Tab tak,
+Dialogue: 0,0:12:17.21,0:12:18.77,Default,,0,0,0,,PIN sirf bhejne ke liye.
