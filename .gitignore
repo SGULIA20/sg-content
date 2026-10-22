@@ -22,3 +22,7 @@ out/**/label-*.png
 out/**/*.html
 out/**/vo-fit/
 assets/cartoon/
+
+# Play Console read-only service account key (founder, 22 Oct 2026): never committed
+play-reader-key.json
+*-key.json
