@@ -11,47 +11,47 @@ Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H800000
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.00,0:00:07.11,Default,,0,0,0,,Budhvaar subah,
-Dialogue: 0,0:00:07.11,0:00:24.88,Default,,0,0,0,,office canteen mein Bhai ka phone
-Dialogue: 0,0:00:24.88,0:00:37.32,Default,,0,0,0,,lagataar baj raha hai.
-Dialogue: 0,0:00:37.77,0:00:41.24,Default,,0,0,0,,Group mein message aaya,
-Dialogue: 0,0:00:41.24,0:00:44.71,Default,,0,0,0,,Sensex udd raha hai,
-Dialogue: 0,0:00:44.71,0:00:47.03,Default,,0,0,0,,abhi ghuso.
-Dialogue: 0,0:00:47.03,0:00:53.39,Default,,0,0,0,,Sensex yaani desh ki badi companies
-Dialogue: 0,0:00:53.39,0:00:55.13,Default,,0,0,0,,ka score.
-Dialogue: 0,0:00:55.58,0:01:01.94,Default,,0,0,0,,Din ke beech Sensex lagbhag 829
-Dialogue: 0,0:01:01.94,0:01:06.40,Default,,0,0,0,,points upar chala gaya tha.
-Dialogue: 0,0:01:06.40,0:01:09.58,Default,,0,0,0,,Har screen hari thi.
-Dialogue: 0,0:01:10.03,0:01:11.00,Default,,0,0,0,,Bhai ne socha,
-Dialogue: 0,0:01:11.00,0:01:12.45,Default,,0,0,0,,sab khareed rahe hain,
-Dialogue: 0,0:01:12.45,0:01:14.15,Default,,0,0,0,,toh main peeche kyun rahun.
-Dialogue: 0,0:01:14.60,0:01:18.02,Default,,0,0,0,,Logic seedha tha,
-Dialogue: 0,0:01:18.02,0:01:22.80,Default,,0,0,0,,jo upar ja raha hai,
-Dialogue: 0,0:01:22.80,0:01:26.89,Default,,0,0,0,,woh aur upar jayega.
-Dialogue: 0,0:01:26.89,0:01:32.36,Default,,0,0,0,,Lunch mein jaldi se order daal
-Dialogue: 0,0:01:32.36,0:01:33.04,Default,,0,0,0,,diya.
-Dialogue: 0,0:01:33.49,0:01:35.30,Default,,0,0,0,,Behen ne poocha,
-Dialogue: 0,0:01:35.30,0:01:36.39,Default,,0,0,0,,badha kyun?
-Dialogue: 0,0:01:36.39,0:01:37.47,Default,,0,0,0,,Bhai bola,
-Dialogue: 0,0:01:37.47,0:01:38.92,Default,,0,0,0,,wajah chhodo,
-Dialogue: 0,0:01:38.92,0:01:40.73,Default,,0,0,0,,bas tezi dekho.
-Dialogue: 0,0:01:41.18,0:01:45.07,Default,,0,0,0,,Dopahar ke baad market palatne laga.
-Dialogue: 0,0:01:45.07,0:01:47.98,Default,,0,0,0,,Ek ek karke saari tezi gayab.
-Dialogue: 0,0:01:48.43,0:01:51.94,Default,,0,0,0,,Shaam ko Sensex 143 points neeche
-Dialogue: 0,0:01:51.94,0:01:52.64,Default,,0,0,0,,band hua.
-Dialogue: 0,0:01:52.64,0:01:54.05,Default,,0,0,0,,Upar nahi,
-Dialogue: 0,0:01:54.05,0:01:54.75,Default,,0,0,0,,neeche.
-Dialogue: 0,0:01:55.20,0:01:57.71,Default,,0,0,0,,Bhai ne sabse oonche daam par
-Dialogue: 0,0:01:57.71,0:01:58.96,Default,,0,0,0,,entry li thi.
-Dialogue: 0,0:01:58.96,0:02:00.84,Default,,0,0,0,,Ab uski screen laal thi.
-Dialogue: 0,0:02:01.29,0:02:03.38,Default,,0,0,0,,Twist yeh hai,
-Dialogue: 0,0:02:03.38,0:02:08.95,Default,,0,0,0,,ek din ki tezi sirf khabar
-Dialogue: 0,0:02:08.95,0:02:09.65,Default,,0,0,0,,hai,
-Dialogue: 0,0:02:09.65,0:02:11.74,Default,,0,0,0,,plan nahi.
-Dialogue: 0,0:02:11.74,0:02:18.01,Default,,0,0,0,,Market din bhar mood badalta hai.
-Dialogue: 0,0:02:18.46,0:02:20.06,Default,,0,0,0,,Group ka shor nahi,
-Dialogue: 0,0:02:20.06,0:02:22.30,Default,,0,0,0,,apna goal dekh kar chalo.
-Dialogue: 0,0:02:22.30,0:02:25.50,Default,,0,0,0,,Yeh investment advice nahi hai.
-Dialogue: 0,0:02:25.95,0:02:29.33,Default,,0,0,0,,Aapne kabhi tezi dekh kar jaldi
-Dialogue: 0,0:02:29.33,0:02:31.02,Default,,0,0,0,,mein khareeda hai?
-Dialogue: 0,0:02:31.02,0:02:32.03,Default,,0,0,0,,Haan ya na?
+Dialogue: 0,0:00:00.00,0:00:00.79,Default,,0,0,0,,Budhvaar subah,
+Dialogue: 0,0:00:00.79,0:00:02.77,Default,,0,0,0,,office canteen mein Bhai ka phone
+Dialogue: 0,0:00:02.77,0:00:04.16,Default,,0,0,0,,lagataar baj raha hai.
+Dialogue: 0,0:00:04.61,0:00:06.10,Default,,0,0,0,,Group mein message aaya,
+Dialogue: 0,0:00:06.10,0:00:07.59,Default,,0,0,0,,Sensex udd raha hai,
+Dialogue: 0,0:00:07.59,0:00:08.58,Default,,0,0,0,,abhi ghuso.
+Dialogue: 0,0:00:08.58,0:00:11.31,Default,,0,0,0,,Sensex yaani desh ki badi companies
+Dialogue: 0,0:00:11.31,0:00:12.05,Default,,0,0,0,,ka score.
+Dialogue: 0,0:00:12.50,0:00:15.34,Default,,0,0,0,,Din ke beech Sensex lagbhag 829
+Dialogue: 0,0:00:15.34,0:00:17.32,Default,,0,0,0,,points upar chala gaya tha.
+Dialogue: 0,0:00:17.32,0:00:18.74,Default,,0,0,0,,Har screen hari thi.
+Dialogue: 0,0:00:19.19,0:00:20.22,Default,,0,0,0,,Bhai ne socha,
+Dialogue: 0,0:00:20.22,0:00:21.75,Default,,0,0,0,,sab khareed rahe hain,
+Dialogue: 0,0:00:21.75,0:00:23.55,Default,,0,0,0,,toh main peeche kyun rahun.
+Dialogue: 0,0:00:24.00,0:00:25.27,Default,,0,0,0,,Logic seedha tha,
+Dialogue: 0,0:00:25.27,0:00:27.04,Default,,0,0,0,,jo upar ja raha hai,
+Dialogue: 0,0:00:27.04,0:00:28.56,Default,,0,0,0,,woh aur upar jayega.
+Dialogue: 0,0:00:28.56,0:00:30.59,Default,,0,0,0,,Lunch mein jaldi se order daal
+Dialogue: 0,0:00:30.59,0:00:30.84,Default,,0,0,0,,diya.
+Dialogue: 0,0:00:31.29,0:00:32.84,Default,,0,0,0,,Behen ne poocha,
+Dialogue: 0,0:00:32.84,0:00:33.77,Default,,0,0,0,,badha kyun?
+Dialogue: 0,0:00:33.77,0:00:34.70,Default,,0,0,0,,Bhai bola,
+Dialogue: 0,0:00:34.70,0:00:35.94,Default,,0,0,0,,wajah chhodo,
+Dialogue: 0,0:00:35.94,0:00:37.49,Default,,0,0,0,,bas tezi dekho.
+Dialogue: 0,0:00:37.94,0:00:41.12,Default,,0,0,0,,Dopahar ke baad market palatne laga.
+Dialogue: 0,0:00:41.12,0:00:43.50,Default,,0,0,0,,Ek ek karke saari tezi gayab.
+Dialogue: 0,0:00:43.95,0:00:47.35,Default,,0,0,0,,Shaam ko Sensex 143 points neeche
+Dialogue: 0,0:00:47.35,0:00:48.03,Default,,0,0,0,,band hua.
+Dialogue: 0,0:00:48.03,0:00:49.39,Default,,0,0,0,,Upar nahi,
+Dialogue: 0,0:00:49.39,0:00:50.07,Default,,0,0,0,,neeche.
+Dialogue: 0,0:00:50.52,0:00:52.76,Default,,0,0,0,,Bhai ne sabse oonche daam par
+Dialogue: 0,0:00:52.76,0:00:53.88,Default,,0,0,0,,entry li thi.
+Dialogue: 0,0:00:53.88,0:00:55.56,Default,,0,0,0,,Ab uski screen laal thi.
+Dialogue: 0,0:00:56.01,0:00:57.01,Default,,0,0,0,,Twist yeh hai,
+Dialogue: 0,0:00:57.01,0:00:59.68,Default,,0,0,0,,ek din ki tezi sirf khabar
+Dialogue: 0,0:00:59.68,0:01:00.01,Default,,0,0,0,,hai,
+Dialogue: 0,0:01:00.01,0:01:01.01,Default,,0,0,0,,plan nahi.
+Dialogue: 0,0:01:01.01,0:01:04.01,Default,,0,0,0,,Market din bhar mood badalta hai.
+Dialogue: 0,0:01:04.46,0:01:05.76,Default,,0,0,0,,Group ka shor nahi,
+Dialogue: 0,0:01:05.76,0:01:07.58,Default,,0,0,0,,apna goal dekh kar chalo.
+Dialogue: 0,0:01:07.58,0:01:10.18,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:01:10.63,0:01:13.63,Default,,0,0,0,,Aapne kabhi tezi dekh kar jaldi
+Dialogue: 0,0:01:13.63,0:01:15.13,Default,,0,0,0,,mein khareeda hai?
+Dialogue: 0,0:01:15.13,0:01:16.03,Default,,0,0,0,,Haan ya na?

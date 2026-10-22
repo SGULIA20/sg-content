@@ -74,7 +74,8 @@
  ],
  "id": "2026-10-26-sglearning-short",
  "ids": {
-  "ig_story_id": "skipped: Reel over 60 s"
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "i5JBwClZWpU"
  },
  "kind": "short",
  "publish_day": "2026-10-26",
@@ -257,20 +258,20 @@
   },
   "title": "Subah ki *tezi*, shaam ka nuksaan 📉"
  },
- "status": "written",
+ "status": "uploaded",
  "timings": [
   0.0,
-  37.77,
-  55.58,
-  70.03,
-  74.6,
-  93.49,
-  101.18,
-  108.43,
-  115.2,
-  121.29,
-  138.46,
-  145.95
+  4.61,
+  12.5,
+  19.19,
+  24.0,
+  31.29,
+  37.94,
+  43.95,
+  50.52,
+  56.01,
+  64.46,
+  70.63
  ],
  "topic": {
   "link": "https://www.livemint.com/market/stock-market-news/stock-market-outlook-today-21-oct-sensex-nifty-prediction-djia-s-p-nasdaq-gift-nifty-kospi-nikkei-taiwan-11792629655970.html",
@@ -282,6 +283,6 @@
   "title": "Stock market outlook today, 22 Oct: Sensex, Nifty prediction - DJIA, S&amp;P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-22T07:24:49+00:00",
+ "updated": "2026-10-22T16:22:53+00:00",
  "writer": "claude"
 }
