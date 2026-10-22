@@ -144,7 +144,8 @@
  ],
  "id": "2026-10-27-arthvan-short",
  "ids": {
-  "ig_story_id": "skipped: Reel over 60 s"
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "GXSA0399l2Q"
  },
  "kind": "short",
  "publish_day": "2026-10-27",
@@ -357,20 +358,20 @@
   },
   "title": "Ashwatthama aaj bhi *zinda* hai? 😱"
  },
- "status": "written",
+ "status": "uploaded",
  "timings": [
   0.0,
-  17.49,
-  26.26,
-  34.87,
-  41.84,
-  50.01,
-  57.26,
-  70.35,
-  77.16,
-  88.21,
-  97.62,
-  104.91
+  9.21,
+  17.66,
+  26.55,
+  32.88,
+  40.77,
+  48.02,
+  54.11,
+  60.72,
+  65.81,
+  75.9,
+  82.31
  ],
  "topic": {
   "allowed_sources": [
@@ -390,6 +391,6 @@
   "title_hi": "Ashwatthama zinda hai?",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-10-22T07:24:53+00:00",
+ "updated": "2026-10-22T16:47:02+00:00",
  "writer": "claude"
 }
