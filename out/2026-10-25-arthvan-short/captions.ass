@@ -1,0 +1,57 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.05,Default,,0,0,0,,Haryana ke ek gaon ke neeche,
+Dialogue: 0,0:00:02.05,0:00:04.10,Default,,0,0,0,,kya poora shehar so raha hai?
+Dialogue: 0,0:00:04.10,0:00:07.29,Default,,0,0,0,,Sanskrit parampara is jagah ko Sarasvati
+Dialogue: 0,0:00:07.29,0:00:09.80,Default,,0,0,0,,aur Drishadvati nadiyon se jodti hai.
+Dialogue: 0,0:00:10.25,0:00:13.12,Default,,0,0,0,,Gaon ke buzurg kehte the,
+Dialogue: 0,0:00:13.12,0:00:18.02,Default,,0,0,0,,in teelon mein Mahabharat ke zamane
+Dialogue: 0,0:00:18.02,0:00:20.89,Default,,0,0,0,,ka khazana chhupa hai.
+Dialogue: 0,0:00:21.34,0:00:22.71,Default,,0,0,0,,Phir archaeologist aaye,
+Dialogue: 0,0:00:22.71,0:00:25.68,Default,,0,0,0,,yaani mitti khodkar itihaas padhne wale.
+Dialogue: 0,0:00:25.68,0:00:27.97,Default,,0,0,0,,Neeche Harappa ka shehar nikla,
+Dialogue: 0,0:00:27.97,0:00:30.94,Default,,0,0,0,,Sindhu ghati ki purani shehri sabhyata.
+Dialogue: 0,0:00:31.39,0:00:33.48,Default,,0,0,0,,Vasant Shinde ki team ne kaha,
+Dialogue: 0,0:00:33.48,0:00:36.26,Default,,0,0,0,,Rakhigarhi 350 hectare ka hai,
+Dialogue: 0,0:00:36.26,0:00:38.35,Default,,0,0,0,,Mohenjo-daro se bhi bada.
+Dialogue: 0,0:00:38.80,0:00:41.01,Default,,0,0,0,,Kabristan mein ek aurat ka kankaal
+Dialogue: 0,0:00:41.01,0:00:41.45,Default,,0,0,0,,mila.
+Dialogue: 0,0:00:41.45,0:00:43.44,Default,,0,0,0,,Scientists ne uska DNA nikala,
+Dialogue: 0,0:00:43.44,0:00:45.87,Default,,0,0,0,,yaani sharir ka code jo purvajon
+Dialogue: 0,0:00:45.87,0:00:47.64,Default,,0,0,0,,ki kahani batata hai.
+Dialogue: 0,0:00:48.09,0:00:50.21,Default,,0,0,0,,Cell journal ki report kehti hai,
+Dialogue: 0,0:00:50.21,0:00:53.04,Default,,0,0,0,,usmein purane Irani aur South Asian
+Dialogue: 0,0:00:53.04,0:00:54.45,Default,,0,0,0,,shikariyon ka mel tha.
+Dialogue: 0,0:00:54.90,0:00:59.37,Default,,0,0,0,,Steppe ka nishaan nahi mila,
+Dialogue: 0,0:00:59.37,0:01:03.84,Default,,0,0,0,,yaani Central Asia ke ghaas ke
+Dialogue: 0,0:01:03.84,0:01:07.82,Default,,0,0,0,,maidan wale pashupalak.
+Dialogue: 0,0:01:08.27,0:01:09.53,Default,,0,0,0,,Kuch experts kehte hain,
+Dialogue: 0,0:01:09.53,0:01:12.25,Default,,0,0,0,,isse Steppe migration theory kamzor hoti
+Dialogue: 0,0:01:12.25,0:01:12.46,Default,,0,0,0,,hai.
+Dialogue: 0,0:01:12.46,0:01:13.51,Default,,0,0,0,,Doosre kehte hain,
+Dialogue: 0,0:01:13.51,0:01:15.19,Default,,0,0,0,,woh log Harappa ke baad aaye.
+Dialogue: 0,0:01:15.64,0:01:17.79,Default,,0,0,0,,Size par bhi sawaal hai.
+Dialogue: 0,0:01:17.79,0:01:20.56,Default,,0,0,0,,Kya saare teele ek shehar the,
+Dialogue: 0,0:01:20.56,0:01:22.40,Default,,0,0,0,,ya alag alag gaon?
+Dialogue: 0,0:01:22.85,0:01:23.64,Default,,0,0,0,,Twist yeh hai,
+Dialogue: 0,0:01:23.64,0:01:26.01,Default,,0,0,0,,poori bahas sirf ek kankaal par
+Dialogue: 0,0:01:26.01,0:01:26.81,Default,,0,0,0,,khadi hai.
+Dialogue: 0,0:01:26.81,0:01:28.65,Default,,0,0,0,,Baaki aabadi kaun thi,
+Dialogue: 0,0:01:28.65,0:01:29.97,Default,,0,0,0,,koi nahi jaanta.
+Dialogue: 0,0:01:30.42,0:01:32.72,Default,,0,0,0,,Aaj bhi aap Rakhigarhi jaakar woh
+Dialogue: 0,0:01:32.72,0:01:34.33,Default,,0,0,0,,teele khet ke beech khud dekh
+Dialogue: 0,0:01:34.33,0:01:35.02,Default,,0,0,0,,sakte hain.
+Dialogue: 0,0:01:35.47,0:01:36.81,Default,,0,0,0,,Aapko kya lagta hai,
+Dialogue: 0,0:01:36.81,0:01:38.81,Default,,0,0,0,,teelon ke neeche aur kya chhupa
+Dialogue: 0,0:01:38.81,0:01:39.03,Default,,0,0,0,,hai?

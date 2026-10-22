@@ -1,0 +1,246 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "disputed",
+   "number": 350.0,
+   "quote": "With the discovery of two additional mounds, the total area of the Rakhigarhi site will be 350 hectares... Mohenjo-daro, which was earlier thought to be the biggest Harappan-era site, is only about 300 hectares in size... what we are yet to figure out though, is whether this entire area was occupied simultaneously, or gradually brought under occupation.",
+   "source_date": "2014-03-27",
+   "source_name": "en.wikipedia.org",
+   "source_url": "https://en.wikipedia.org/wiki/Rakhigarhi",
+   "text": "While excavators led by Vasant Shinde argue that newly identified outlying mounds expand Rakhigarhi to 350 hectares, making it larger than Mohenjo-daro, other archaeologists question whether all mounds formed a single continuous settlement or separate contemporary villages.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "Villagers in Rakhi Shahpur and Rakhi Khas have long shared folklore of ancient buried kingdoms and mythological eras lying undisturbed beneath their agricultural mounds.",
+   "source_date": "2019",
+   "source_name": "en.wikipedia.org",
+   "source_url": "https://en.wikipedia.org/wiki/Rakhigarhi",
+   "text": "Local oral lore around the villages of Rakhi Khas and Rakhi Shahpur long maintained that the towering unexcavated earth mounds hid enchanted kingdoms and treasures from the mythological Mahabharata era.",
+   "unit": null
+  }
+ ],
+ "id": "2026-10-25-arthvan-short",
+ "ids": {
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "14UfDNd-iLs"
+ },
+ "kind": "short",
+ "publish_day": "2026-10-25",
+ "reasons": [
+  "try 1: numbers without a source: 4500, 4500"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Haryana ke gaon ke neeche ek Harappa ka shehar so raha tha.\nWahan mili ek aurat ke DNA ne experts ko do hisson mein baant diya.\nAur poori bahas sirf ek kankaal par tiki hai.\nAapko kya lagta hai, teelon ke neeche aur kya chhupa hai?\nUs dost ko bhejo jo Rakhigarhi ko sirf ek gaon samajhta hai.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#Archaeology",
+     "#AncientIndia",
+     "#IndianHistory",
+     "#Itihaas",
+     "#Rahasya",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Rakhigarhi ki ek aurat ka DNA, aur experts mein badi bahas. Steppe ka nishaan nahi mila, par yeh sab sirf ek kankaal par tika hai. Aapko kya lagta hai, teelon ke neeche aur kya chhupa hai? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Haryana ke teelon ke neeche mili ek aurat ne Harappa ki kahani badal di. Uske DNA mein Steppe ka nishaan nahi mila, aur experts aaj bhi bahas kar rahe hain. Par yeh sab sirf ek kankaal par tika hai, baaki shehar abhi bhi rahasya hai. Us dost ko bhejo jo Rakhigarhi ko sirf ek gaon samajhta hai.",
+    "tags": [
+     "Rakhigarhi",
+     "Harappa",
+     "DNA",
+     "Indus Valley",
+     "Haryana",
+     "archaeology",
+     "Steppe",
+     "Mohenjo-daro",
+     "ancient India",
+     "Sindhu ghati"
+    ],
+    "title": "Rakhigarhi DNA: Harappa ke log kaun the?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Aapko kya lagta hai, teelon ke neeche aur kya chhupa hai?",
+  "hook": "Haryana ke ek gaon ke neeche, kya poora shehar so raha hai?",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style illustrated panel: twilight over flat Haryana farmland, tall grassy earth mounds, a faint glowing outline of an ancient river flowing beside them, mysterious calm mood, no text",
+     "type": "art"
+    },
+    "vo": "Haryana ke ek gaon ke neeche, kya poora shehar so raha hai? Sanskrit parampara is jagah ko Sarasvati aur Drishadvati nadiyon se jodti hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: an old village grandmother sitting on a charpai under a neem tree, children listening wide-eyed, tall earth mounds in the background with a dreamy hint of buried treasure, warm evening light, no text",
+     "type": "art"
+    },
+    "vo": "Gaon ke buzurg kehte the, in teelon mein Mahabharat ke zamane ka khazana chhupa hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: archaeologists in hats digging neat square trenches on a mound, ancient baked-brick walls and lanes emerging from the soil, villagers watching from the edge, bright daylight, no text",
+     "type": "art"
+    },
+    "vo": "Phir archaeologist aaye, yaani mitti khodkar itihaas padhne wale. Neeche Harappa ka shehar nikla, Sindhu ghati ki purani shehri sabhyata."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: an archaeologist seen from behind standing on a high mound, looking over many scattered mounds stretching across green fields to the horizon, sense of vast scale, no text",
+     "type": "art"
+    },
+    "vo": "Vasant Shinde ki team ne kaha, Rakhigarhi 350 hectare ka hai, Mohenjo-daro se bhi bada."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: an ancient grave in the dust with a carefully exposed skeleton and clay pots beside it, a scientist in gloves and mask taking a tiny bone sample, a glowing DNA spiral drawn above, quiet reverent mood, no text",
+     "type": "art"
+    },
+    "vo": "Kabristan mein ek aurat ka kankaal mila. Scientists ne uska DNA nikala, yaani sharir ka code jo purvajon ki kahani batata hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: a lab bench with a test tube, two drawn streams of ancient hunter-gatherers, one coming from western mountains and one from South Asian forests, merging into a single DNA strand, no text",
+     "type": "art"
+    },
+    "vo": "Cell journal ki report kehti hai, usmein purane Irani aur South Asian shikariyon ka mel tha."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: wide grassy Central Asian steppe with herders and horses far away, faded and greyed out as if missing, a DNA strand in the foreground with an empty gap, no text",
+     "type": "art"
+    },
+    "vo": "Steppe ka nishaan nahi mila, yaani Central Asia ke ghaas ke maidan wale pashupalak."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: two groups of scholars at a long table on opposite sides, one pointing at a map of ancient migration arrows, the other pointing at a later timeline, lively debate mood, no text",
+     "type": "art"
+    },
+    "vo": "Kuch experts kehte hain, isse Steppe migration theory kamzor hoti hai. Doosre kehte hain, woh log Harappa ke baad aaye."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: aerial view of several separate mounds in farmland, dotted lines trying to join them into one city outline, a question-like empty space between them, no text",
+     "type": "art"
+    },
+    "vo": "Size par bhi sawaal hai. Kya saare teele ek shehar the, ya alag alag gaon?"
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: a single small skeleton under a spotlight, behind it a huge crowd of faint shadowy ancient city people whose faces are blank, mysterious mood, no text",
+     "type": "art"
+    },
+    "vo": "Twist yeh hai, poori bahas sirf ek kankaal par khadi hai. Baaki aabadi kaun thi, koi nahi jaanta."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: a present-day visitor walking on a dirt path between mustard fields toward tall ancient mounds, village houses nearby, golden morning light, no text",
+     "type": "art"
+    },
+    "vo": "Aaj bhi aap Rakhigarhi jaakar woh teele khet ke beech khud dekh sakte hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: cutaway view of a mound showing layers of soil with hidden pots, walls and dark unexplored spaces below, a narrator figure standing on top looking down curiously, no text",
+     "type": "art"
+    },
+    "vo": "Aapko kya lagta hai, teelon ke neeche aur kya chhupa hai?"
+   }
+  ],
+  "thumbnail": {
+   "scene": "The ARCHAEOLOGIST kneels in a dusty trench, gently lifting an ancient skull into the light, eyes wide in awe, mouth slightly open",
+   "words": [
+    "350",
+    "LOST CITY"
+   ]
+  },
+  "title": "Rakhigarhi ki aurat ka *DNA* kya bolta hai? 🤯"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  10.25,
+  21.34,
+  31.39,
+  38.8,
+  48.09,
+  54.9,
+  68.27,
+  75.64,
+  82.85,
+  90.42,
+  95.47
+ ],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "cell.com (Shinde et al. 2019)",
+   "en.wikipedia.org"
+  ],
+  "hooks": [
+   "4,500 saal purani haddiyon ka DNA kya bolta hai?",
+   "Harappa ke log kaun the?",
+   "Rakhigarhi Mohenjo-daro se bada?"
+  ],
+  "id": "rakhigarhi-dna",
+  "notes": "One genome, careful about population claims; label disputed where interpretations differ.",
+  "place": "Rakhigarhi, Haryana",
+  "target_minutes": null,
+  "title_hi": "Rakhigarhi ka DNA",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-10-22T00:15:54+00:00",
+ "writer": "claude"
+}
