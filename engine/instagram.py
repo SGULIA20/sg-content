@@ -86,8 +86,11 @@ def resolved_media_url(piece: Piece, name: str, repo: str, head=None) -> str:
 
 
 def caption_text(piece: Piece) -> str:
+    from .config import YOUTUBE_URLS
     ig = (piece.script or {}).get("captions", {}).get("instagram", {})
-    return (ig.get("caption", "").strip() + "\n\n" + " ".join(ig.get("hashtags", []))).strip()
+    link = YOUTUBE_URLS.get(piece.channel)
+    parts = [ig.get("caption", "").strip()] + ([f"▶ Poori videos YouTube par: {link}"] if link else []) + [" ".join(ig.get("hashtags", []))]
+    return "\n\n".join(p for p in parts if p).strip()
 
 
 def _create_and_publish(ig_id: str, token: str, params: dict, label: str, call, sleep) -> str:

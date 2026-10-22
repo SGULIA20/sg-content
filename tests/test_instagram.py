@@ -131,3 +131,9 @@ def test_media_url_falls_back_to_the_branch_when_the_recorded_commit_does_not_se
     assert instagram.resolved_media_url(p, "reel.mp4", "o/r", head=lambda req: R(200)) == "https://raw.githubusercontent.com/o/r/abc123/out/2026-10-20-sglearning-short/reel.mp4"
     with pytest.raises(instagram.InstagramError):
         instagram.resolved_media_url(p, "reel.mp4", "o/r", head=lambda req: R(404))
+
+
+def test_caption_carries_the_channels_youtube_link_before_the_hashtags():
+    cap = instagram.caption_text(_piece())
+    assert "https://www.youtube.com/@sanjeev_gulia?sub_confirmation=1" in cap and cap.rstrip().endswith("#RBI")
+    assert cap.index("youtube.com") < cap.index("#PaiseKiKhabar")

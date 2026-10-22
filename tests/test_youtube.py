@@ -119,3 +119,8 @@ def test_description_has_three_hashtags_first_and_cta():
     d = youtube.metadata(p, datetime(2026, 10, 20, 14, 30, tzinfo=timezone.utc), {})["snippet"]["description"]
     paras = d.split("\n\n")
     assert paras[0].startswith("Crude 100 dollar") and paras[1].count("#") == 3 and "Subscribe" in d and d.count("#") <= 15
+
+
+def test_description_links_both_channels():
+    d = youtube.metadata(_piece(), datetime(2026, 10, 20, 14, 30, tzinfo=timezone.utc), {})["snippet"]["description"]
+    assert "youtube.com/@sanjeev_gulia" in d and "youtube.com/@sgmythworld" in d and d.count("#") <= 15

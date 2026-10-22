@@ -48,7 +48,7 @@ def due(root: Path, now_utc: datetime, channel: str, env=None) -> list:
 
 
 def threads_text(piece) -> str:
-    return threads.text_for((piece.script or {}).get("captions", {}).get("threads", {}))
+    return threads.text_for((piece.script or {}).get("captions", {}).get("threads", {}), config.YOUTUBE_URLS.get(piece.channel, ""))
 
 
 def run(root: Path = ROOT, channel: str = "sglearning", now_utc: datetime | None = None, env=None,

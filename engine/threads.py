@@ -44,10 +44,12 @@ def _wait(cid: str, token: str, label: str, sleep, call, max_polls: int, poll_s:
     raise ThreadsError(f"{label} container never finished")
 
 
-def text_for(threads_caption: dict) -> str:
+def text_for(threads_caption: dict, link: str = "") -> str:
     text = (threads_caption or {}).get("text", "").strip()
     tags = " ".join((threads_caption or {}).get("hashtags", [])[:2])
-    return f"{text}\n\n{tags}".strip() if tags else text
+    out = f"{text}\n\n{tags}".strip() if tags else text
+    with_link = f"{out}\n\n▶ {link}" if link else out
+    return with_link if len(with_link) <= 500 else out                         # Threads allows 500 characters: the link goes only when it fits
 
 
 def post_video(uid: str, token: str, video_url: str, text: str, call=call, sleep=time.sleep, max_polls: int = 60, poll_s: float = 10) -> str:

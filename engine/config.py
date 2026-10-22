@@ -23,6 +23,10 @@ class Channel:
     youtube_category: str
 
 
+YOUTUBE_URLS = {"sglearning": "https://www.youtube.com/@sanjeev_gulia?sub_confirmation=1",       # opens the subscribe prompt (founder, 22 Oct 2026)
+                "arthvan": "https://www.youtube.com/@sgmythworld?sub_confirmation=1"}
+
+
 CHANNELS = {
     "sglearning": Channel(
         key="sglearning", youtube_env_token="YT_SGLEARNING_REFRESH_TOKEN", display_name="Learning with SG",

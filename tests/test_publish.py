@@ -80,7 +80,7 @@ def test_threads_failure_leaves_piece_uploaded_with_reason(tmp_path):
 
 def test_threads_text_uses_caption_builder(tmp_path):
     p = _seed(tmp_path, "2026-10-20-sglearning-short", "sglearning", "short", date(2026, 10, 20))
-    assert publish.threads_text(p) == "t\n\n#A #B"
+    assert publish.threads_text(p) == "t\n\n#A #B\n\n▶ https://www.youtube.com/@sanjeev_gulia?sub_confirmation=1"
 
 
 def test_due_retries_recent_days_with_missing_ids(tmp_path):
@@ -198,3 +198,11 @@ def test_linkedin_video_is_off_by_default_and_never_owed(tmp_path):
     env = {"LINKEDIN_ACCESS_TOKEN": "t", "LINKEDIN_PERSON_URN": "urn:li:person:x"}
     assert config.LINKEDIN_VIDEOS is False and "linkedin_id" not in publish.required(env)
     assert publish.due(tmp_path, datetime(2026, 10, 22, 9, 30, tzinfo=timezone.utc), "sglearning", env) == []
+
+
+def test_threads_text_gets_the_channel_link_only_when_it_fits():
+    from engine import threads
+    short = threads.text_for({"text": "Oil 100?", "hashtags": ["#A"]}, "https://youtu.be/x")
+    assert short.endswith("▶ https://youtu.be/x")
+    long_text = "x" * 470
+    assert "youtu.be" not in threads.text_for({"text": long_text}, "https://youtu.be/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")

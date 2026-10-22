@@ -116,6 +116,8 @@ def metadata(piece: Piece, publish_at_utc: datetime, env=None) -> dict:
     if credits:
         parts.append("Photos:\n" + "\n".join(credits))
     parts.append(SUBSCRIBE.get(piece.channel, ""))
+    from .config import YOUTUBE_URLS
+    parts.append("Learning with SG (paise ki kahaniyan): " + YOUTUBE_URLS["sglearning"] + "\nSG-MYTH-WORLD (itihaas aur mythology, sabut ke saath): " + YOUTUBE_URLS["arthvan"])
     parts.append(" ".join(hashtags[LEAD_HASHTAGS:]))
     description = "\n\n".join(p for p in parts if p)
     tags = [t.lstrip("#") for t in yt.get("tags", [])][:MAX_TAGS]
