@@ -1,0 +1,83 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 5.9,
+   "quote": "In July 2026, the weighted average rate on fresh rupee term deposits at scheduled commercial banks was 5.9%1.",
+   "source_date": "2026-09-07",
+   "source_name": "Grip Invest",
+   "source_url": "https://gripinvest.in/blog/are-fd-interest-rates-beating-inflation-in-india/",
+   "text": "Scheduled commercial banks offered a weighted average rate of 5.9 percent on fresh rupee term deposits in July 2026.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-10-28-sglearning-long",
+ "ids": {},
+ "kind": "long",
+ "publish_day": "2026-10-28",
+ "reasons": [
+  "duration: 897.2s, allowed 504-864s"
+ ],
+ "script": null,
+ "status": "qa_failed",
+ "timings": [
+  0.0,
+  26.61,
+  43.5,
+  70.03,
+  86.04,
+  111.53,
+  137.74,
+  164.35,
+  184.36,
+  203.05,
+  222.14,
+  238.43,
+  263.96,
+  288.61,
+  309.66,
+  334.35,
+  349.36,
+  374.29,
+  400.66,
+  427.59,
+  448.8,
+  472.85,
+  499.22,
+  518.15,
+  541.72,
+  557.97,
+  582.42,
+  598.27,
+  615.4,
+  634.69,
+  650.14,
+  673.35,
+  691.24,
+  706.45,
+  726.7,
+  746.27,
+  772.4,
+  790.61,
+  814.22,
+  833.31,
+  854.88,
+  876.73
+ ],
+ "topic": {
+  "hooks": [
+   "7% byaaj, phir bhi paisa kam kaise hua?",
+   "FD par tax kab kat-ta hai?",
+   "Emergency fund kahan rakhein?"
+  ],
+  "id": "fd-vs-inflation",
+  "rewrite": "length: the voiced video ran 897s, the limit is 864s; rewrite the same story in at most 1489 words of voice in total",
+  "summary": "Fixed deposit interest vs inflation over two decades; real return, tax on FD interest, why the 'safe' choice quietly shrinks; where it still makes sense (emergency fund, short goals).",
+  "target_minutes": 12,
+  "title": "Papa ki FD 20 saal mein kyun chhoti ho gayi: mehngai ka chhupa tax",
+  "voice": "voice_1kn3blc2u13l"
+ },
+ "updated": "2026-10-22T00:49:43+00:00",
+ "writer": "claude"
+}
