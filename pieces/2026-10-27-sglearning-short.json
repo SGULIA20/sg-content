@@ -1,0 +1,267 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 73709.69,
+   "quote": "SENSEX closed at 73,709.69, down 143.21 points, after opening at 74,337.93 and touching an intraday high of 74,682.19 and a low of 73,229.45.",
+   "source_date": "2026-10-22",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/sensex-weekly-expiry-today-prediction-can-bulls-stage-comeback-despite-crude-oil-shock-key-levels-traders-should-watch-11792641111907.html",
+   "text": "The BSE Sensex closed down 143.21 points to settle at 73,709.69 ahead of the weekly derivatives expiry session.",
+   "unit": "index points"
+  },
+  {
+   "label": "reported",
+   "number": 74682.19,
+   "quote": "SENSEX closed at 73,709.69, down 143.21 points, after opening at 74,337.93 and touching an intraday high of 74,682.19 and a low of 73,229.45.",
+   "source_date": "2026-10-22",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/sensex-weekly-expiry-today-prediction-can-bulls-stage-comeback-despite-crude-oil-shock-key-levels-traders-should-watch-11792641111907.html",
+   "text": "During the previous trading session, the Sensex had surged to an intraday high of 74,682.19 before aggressive afternoon selling erased the gains.",
+   "unit": "index points"
+  },
+  {
+   "label": "analyst-view",
+   "number": 74500.0,
+   "quote": "On the upside, a sustained move above 74,500 may improve sentiment and open the door for a recovery.",
+   "source_date": "2026-10-22",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/sensex-weekly-expiry-today-prediction-can-bulls-stage-comeback-despite-crude-oil-shock-key-levels-traders-should-watch-11792641111907.html",
+   "text": "Technical analysts noted that a decisive breakout above the 74,500 resistance level is required to rebuild bullish momentum in the Sensex.",
+   "unit": "index points"
+  },
+  {
+   "label": "analyst-view",
+   "number": 73500.0,
+   "quote": "Sustaining above 73,500 will be important to preserve near-term stability, while a break below the 73,200 could invite further weakness.",
+   "source_date": "2026-10-22",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/sensex-weekly-expiry-today-prediction-can-bulls-stage-comeback-despite-crude-oil-shock-key-levels-traders-should-watch-11792641111907.html",
+   "text": "Market strategists pointed out that the 73,500 mark represents vital immediate support necessary to prevent deeper structural weakness.",
+   "unit": "index points"
+  },
+  {
+   "label": "reported",
+   "number": 22682.0,
+   "quote": "Gift Nifty was trading around the 22,682 level, down nearly 46.50 points or 0.20% from the Nifty futures' previous close, indicating a negative opening for the Indian stock market indices.",
+   "source_date": "2026-10-22",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/sensex-weekly-expiry-today-prediction-can-bulls-stage-comeback-despite-crude-oil-shock-key-levels-traders-should-watch-11792641111907.html",
+   "text": "GIFT Nifty futures traded lower at 22,682, signaling early morning weakness across Indian equities.",
+   "unit": "index points"
+  }
+ ],
+ "id": "2026-10-27-sglearning-short",
+ "ids": {
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "-QboXkQBUEo"
+ },
+ "kind": "short",
+ "publish_day": "2026-10-27",
+ "reasons": [
+  "try 1: length: 118 words, allowed 150-230"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Subah hara, shaam ko paisa gaayab 📉\nExpiry ke din Sensex upar gaya, phir saari badhat mit gayi.\nWajah chart nahi, mehenga crude oil tha. India apna lagbhag 88 percent crude bahar se mangata hai.\nAapne kabhi expiry ke din trade kiya?\nYeh investment advice nahi hai.\nUs bhai ko bhejo jo expiry ke din WhatsApp tip par trade karta hai.",
+    "hashtags": [
+     "#Sensex",
+     "#CrudeOil",
+     "#StockMarketIndia",
+     "#SIP",
+     "#PaiseKiKhabar",
+     "#HinglishFinance",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Subah screen hari, shaam ko paisa gaayab. Expiry ke din Sensex ki saari badhat mit gayi, aur wajah thi mehenga crude oil. Aapne kabhi expiry ke din trade kiya? Haan ya naa? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Subah market hara tha, shaam tak saari badhat gaayab. Expiry ke din jo tez chadhta hai, woh utni hi tezi se gir bhi sakta hai. Asli wajah chart nahi, door baitha mehenga crude oil tha. Us bhai ko bhejo jo expiry ke din WhatsApp tip par trade karta hai.",
+    "tags": [
+     "sensex",
+     "expiry",
+     "crude oil",
+     "stock market",
+     "nifty",
+     "share market hindi",
+     "sip",
+     "emi",
+     "middle east",
+     "hinglish finance",
+     "learning with sg"
+    ],
+    "title": "Sensex 74,682 se neeche kyun gira? Crude ka sach"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Aapne kabhi expiry ke din trade kiya? Haan ya naa?",
+  "hook": "Subah subah, Bhai ki screen par sab hara hi hara tha.",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in his hoodie sitting on a bed in the early morning, holding his phone close, the screen glowing green, an excited grin on his face, morning light through the window",
+     "type": "art"
+    },
+    "vo": "Subah subah, Bhai ki screen par sab hara hi hara tha. Group mein message aaya, market wapas aa gaya."
+   },
+   {
+    "facts_used": [],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "A wall calendar with one day circled in red marker, a ticking wall clock beside it, a busy blurred feeling of speed, morning",
+     "type": "art"
+    },
+    "vo": "Aaj expiry thi. Expiry yaani hafte ke saudon ka aakhri din, jab sab kuch tez chalta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI waving away a folded newspaper showing an oil barrel drawing, confident smirk, sipping tea at a small table, morning",
+     "type": "art"
+    },
+    "vo": "Bhai ne socha, crude ki khabar purani ho gayi, market ne use bhula diya."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI leaning forward over his phone, a rising arrow drawn above his head like a rocket, eyes shining with excitement, late morning",
+     "type": "art"
+    },
+    "vo": "Kuch ghanton mein Sensex lagbhag 74,682 tak chadh gaya. Bhai ko laga, ab toh rukega nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI taking a small stack of savings notes out of a tin box and tapping his phone, determined face, other people on phones in thought bubbles around him",
+     "type": "art"
+    },
+    "vo": "Usne apni chhoti bachat se ek tez saudaa le liya. Sab upar ja rahe hain, main kyun peeche rahun?"
+   },
+   {
+    "facts_used": [],
+    "label": "what happened",
+    "visual": {
+     "card": null,
+     "prompt": "A crowd of unnamed people all pressing buttons on their phones at once, worried faces, a falling arrow sweeping over them, harsh afternoon light",
+     "type": "art"
+    },
+    "vo": "Phir aayi dopahar ki bikwali. Bikwali yaani log ek saath bechne lage."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "what happened",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI slumped on the bed in the evening, phone screen glowing red in his hand, empty tin box beside him, shocked and silent",
+     "type": "art"
+    },
+    "vo": "Shaam tak saari badhat gaayab. Sensex neeche band hua, aur Bhai ka paisa doob gaya."
+   },
+   {
+    "facts_used": [],
+    "label": "what happened",
+    "visual": {
+     "card": null,
+     "prompt": "A giant oil barrel on a ship far away at sea under a stormy sky, its dark shadow stretching across a map toward a small Indian town, dusk",
+     "type": "art"
+    },
+    "vo": "Wajah koi chart nahi thi. Wajah thi Middle East ka tension, aur mehenga hota crude oil."
+   },
+   {
+    "facts_used": [],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "Oil tankers lined up at an Indian port at night, a glowing pipeline running from the ships into a city skyline, dramatic orange glow",
+     "type": "art"
+    },
+    "vo": "Twist yeh hai, India apna lagbhag 88 percent crude bahar se mangata hai. Toh crude ki aag, seedhe hamare market tak pahunchti hai."
+   },
+   {
+    "facts_used": [],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "WIFE at the dining table at night with a petrol bill, a vegetable bag and a home loan letter spread out, frowning while doing sums on a notepad",
+     "type": "art"
+    },
+    "vo": "Aur yahi crude petrol, sabzi aur EMI ka hisaab badal sakta hai. Mehenga tel, toh byaaj cut bhi der se."
+   },
+   {
+    "facts_used": [],
+    "label": "what you can do",
+    "visual": {
+     "card": null,
+     "prompt": "SG in his striped shirt sitting calmly beside BHAI on a balcony at night, gently turning BHAI's phone face down, a small steady plant growing in a pot beside them",
+     "type": "art"
+    },
+    "vo": "Agar aap SIP wale hain, toh roz ka hara laal aapki kahani nahi hai. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "question",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI looking straight out of the panel with a sheepish half smile, scratching his head, phone in the other hand, soft night light",
+     "type": "art"
+    },
+    "vo": "Aapne kabhi expiry ke din trade kiya? Haan ya naa?"
+   }
+  ],
+  "thumbnail": {
+   "scene": "BHAI in his hoodie stares at his phone glowing red in his hand, eyes wide, mouth open",
+   "words": [
+    "88%",
+    "TRAP"
+   ]
+  },
+  "title": "Subah *hara*, shaam ko paisa gaayab 📉"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  12.53,
+  18.5,
+  29.75,
+  37.6,
+  49.93,
+  56.06,
+  68.99,
+  82.16,
+  91.33,
+  105.26,
+  112.03
+ ],
+ "topic": {
+  "link": "https://www.livemint.com/market/stock-market-news/sensex-weekly-expiry-today-prediction-can-bulls-stage-comeback-despite-crude-oil-shock-key-levels-traders-should-watch-11792641111907.html",
+  "published": "2026-10-22T04:16:15+00:00",
+  "rank": 3,
+  "source": "Mint Markets",
+  "summary": "The Sensex and Nifty opened lower as rising crude prices, Middle East tensions and weak Asian markets heightened investor concerns. Analysts expect the Sensex to remain range-bound, with support at 73,200–73,500 and resistance at 74,300–74,500.&amp;nbsp;",
+  "target_minutes": null,
+  "title": "Sensex weekly expiry today prediction: Can bulls stage comeback despite crude oil shock? Key levels traders should watch",
+  "voice": "voice_g8azc8xcwhlu"
+ },
+ "updated": "2026-10-22T04:35:40+00:00",
+ "writer": "claude"
+}
