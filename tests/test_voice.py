@@ -1,3 +1,4 @@
+from pathlib import Path
 import base64
 import io
 import json
@@ -204,3 +205,19 @@ def test_batched_falls_back_when_a_segment_does_not_read_back(tmp_path):
         calls.append(text); n = text.count(voice.JOIN) + 1; _speech_like(out, [1.0] * n); return float(n)
     out = voice.batched(["a a a", "b b b"], "Puck", tmp_path / "vo", say_fn=fake_say, verify=lambda wav, text: "b" not in text)
     assert len(out) == 2 and calls == [voice.JOIN.join(["a a a", "b b b"]), "a a a", "b b b"]
+
+
+def test_line_ok_flags_double_and_cut_lines():
+    text = "ek do teen chaar paanch chhe saat aath"
+    assert voice.line_ok(Path("x.wav"), text, transcribe_fn=lambda w: "ek do teen chaar paanch chhe saat aath")[0]
+    assert not voice.line_ok(Path("x.wav"), text, transcribe_fn=lambda w: "ek do teen chaar paanch chhe saat aath ek do teen chaar paanch chhe saat aath")[0]
+    assert not voice.line_ok(Path("x.wav"), text, transcribe_fn=lambda w: "ek do teen")[0]
+
+
+def test_verified_lines_resynthesises_a_line_heard_twice(tmp_path):
+    made = []
+    def fake_say(text, vid, out, cache_dir=None, **kw):
+        made.append(text); Path(out).write_bytes(b"w"); return 1.0
+    heard = iter(["a b c d e", "a b c d e a b c d e", "a b c d e"])            # line 2 comes back doubled once, then clean
+    out = voice.verified_lines(["a b c d e", "a b c d e!"], "voice_x", tmp_path / "vo", say_fn=fake_say, transcribe_fn=lambda w: next(heard), cache_dir=tmp_path / "c")
+    assert len(out) == 2 and made == ["a b c d e", "a b c d e!", "a b c d e!"]

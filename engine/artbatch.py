@@ -48,10 +48,11 @@ def upload_ref(path: Path, key: str, opener=None) -> str:
 def submit(jobs: list, label: str, key: str, model: str = art.MODEL, post=gemini._post, upload=upload_ref) -> str:
     """jobs: [(prompt, refs, aspect)] -> batch name."""
     reqs = []
-    for prompt, refs, aspect in jobs:
+    for n, (prompt, refs, aspect) in enumerate(jobs):
         parts = [{"fileData": {"mimeType": art.MIME.get(Path(r).suffix.lower(), "image/png"), "fileUri": upload(Path(r), key)}} for r in refs]
         parts.append({"text": prompt})
-        reqs.append({"request": {"contents": [{"parts": parts}], "generationConfig": {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": aspect}}}})
+        reqs.append({"request": {"contents": [{"parts": parts}], "generationConfig": {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": aspect}}},
+                     "metadata": {"key": f"P{n}"}})
     body = {"batch": {"display_name": label[:60], "input_config": {"requests": {"requests": reqs}}}}
     status, data = post(BATCH_URL.format(model=model), body, key)
     if status != 200 or not data.get("name"):
@@ -89,9 +90,10 @@ def _png(blob: dict) -> bytes:
 def collect(data: dict, tags: list, cache_dir: Path, spend: Path, today, model: str = art.MODEL) -> list:
     """Writes every returned picture into the art cache under its tag; returns the indexes that came back without one."""
     rows = ((data.get("response") or {}).get("inlinedResponses") or {}).get("inlinedResponses") or []
+    by_key = {(r.get("metadata") or {}).get("key"): r for r in rows}
     missing, got = [], 0
     for i, tag in enumerate(tags):
-        row = rows[i] if i < len(rows) else {}
+        row = by_key.get(f"P{i}") or (rows[i] if i < len(rows) and None in by_key else {})
         parts = (((row.get("response") or {}).get("candidates") or [{}])[0].get("content") or {}).get("parts") or []
         blob = next((p.get("inlineData") or p.get("inline_data") for p in parts if p.get("inlineData") or p.get("inline_data")), None)
         if not blob:

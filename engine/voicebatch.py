@@ -30,7 +30,7 @@ def _speech(voice_id: str) -> dict:
 def submit(texts: list, voice_id: str, label: str, key: str | None = None, post=gemini._post) -> str:
     """Starts one job with every line; returns its name (batches/...)."""
     key = key or secrets.get("GEMINI_API_KEY")
-    reqs = [{"request": {"contents": [{"parts": [{"text": t}]}], "generationConfig": _speech(voice_id)}} for t in texts]
+    reqs = [{"request": {"contents": [{"parts": [{"text": t}]}], "generationConfig": _speech(voice_id)}, "metadata": {"key": f"L{i}"}} for i, t in enumerate(texts)]
     body = {"batch": {"display_name": label[:60], "input_config": {"requests": {"requests": reqs}}}}
     status, data = post(BATCH_URL, body, key)
     if status != 200 or not data.get("name"):
@@ -59,9 +59,10 @@ def poll(name: str, key: str | None = None, get=None) -> tuple:
 def collect(data: dict, texts: list, voice_id: str, cache_dir: Path = CACHE_DIR / "voice") -> list:
     """Writes every line's audio into the voice cache; returns the indexes that came back without audio."""
     rows = ((data.get("response") or {}).get("inlinedResponses") or {}).get("inlinedResponses") or []
+    by_key = {(r.get("metadata") or {}).get("key"): r for r in rows}
     missing = []
     for i, text in enumerate(texts):
-        row = rows[i] if i < len(rows) else {}
+        row = by_key.get(f"L{i}") or (rows[i] if i < len(rows) and not by_key.get(f"L{i}") and None in by_key else {})
         parts = (((row.get("response") or {}).get("candidates") or [{}])[0].get("content") or {}).get("parts") or []
         blob = next((p["inlineData"] for p in parts if p.get("inlineData")), None)
         if not blob:

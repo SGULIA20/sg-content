@@ -49,6 +49,7 @@ class Deps:
     voice_lines: Callable = None # (texts, voice_id, out_dir) -> [(wav, seconds)]: batched synthesis (several scenes per request)
     voice_batch: Callable = None # (piece, texts, voice_id) -> "ready" | "voicing": Gemini Batch API fills the voice cache (half price, no daily cap)
     art_batch: Callable = None   # (piece, jobs) -> "ready" | "painting": Gemini Batch API fills the picture cache at half price
+    voice_check: Callable = None # (wav) -> transcript: every voiced line is read back and re-made if spoken twice or cut short
 
 
 def _jsonable(d: dict) -> dict:
@@ -267,6 +268,8 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
                 print(f"voice batch unavailable ({secrets.scrub(str(e))[:120]}); voicing line by line", flush=True)
         if deps.voice_lines:
             lines = deps.voice_lines([sc["vo"] for sc in script["scenes"]], voice_id, out_dir / "vo")
+        elif deps.voice_check:
+            lines = voice.verified_lines([sc["vo"] for sc in script["scenes"]], voice_id, out_dir / "vo", say_fn=deps.say, transcribe_fn=deps.voice_check)
         else:
             for i, scene in enumerate(script["scenes"]):
                 wav = out_dir / "vo" / f"vo{i:02d}.wav"
@@ -387,6 +390,6 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
                 commons=art.commons_photo, library=library, hashtags=hashtags, voice_id=default_voice,
                 cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for, subtitles=subtitles_fn,
                 voice_batch=lambda piece, texts, vid: voicebatch.voice_piece(piece, texts, vid),
-                art_batch=lambda piece, jobs: artbatch.paint_piece(piece, jobs))
+                art_batch=lambda piece, jobs: artbatch.paint_piece(piece, jobs), voice_check=voice.transcribe)
     # voice.batched (several scenes per TTS request) stays unwired: on 22 Oct 2026 the model's paragraph pauses were not distinct enough
     # to cut on, and the transcript check sent every group back to line-by-line. Wire it in once the cut is reliable.

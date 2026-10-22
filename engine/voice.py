@@ -291,6 +291,34 @@ def segment_matches(heard: str, text: str, edge: int = 2) -> bool:
     return head_ok and tail_ok and abs(len(h) - len(t)) <= max(3, len(t) // 3)
 
 
+def line_ok(wav: Path, text: str, transcribe_fn=None) -> tuple:
+    """(ok, heard): the audio says the line once, in full. Twice the words = spoken twice; well under = cut off (22 Oct 2026: both seen)."""
+    heard = (transcribe_fn or transcribe)(wav)
+    n_h, n_t = len(_norm_words(heard)), max(1, len(_norm_words(text)))
+    ratio = n_h / n_t
+    return (0.6 <= ratio <= 1.45), heard
+
+
+def verified_lines(texts: list, voice_id: str, out_dir: Path, say_fn=None, transcribe_fn=None, cache_dir: Path = CACHE_DIR / "voice",
+                   tries: int = 2, **kw) -> list:
+    """One WAV per scene, each checked by transcript; a line heard twice or cut short is re-synthesised (cache dropped), up to `tries`."""
+    say_fn = say_fn or say
+    out = []
+    for i, text in enumerate(texts):
+        wav = Path(out_dir) / f"vo{i:02d}.wav"
+        for attempt in range(tries + 1):
+            d = say_fn(text, voice_id, wav, cache_dir=cache_dir, **kw)
+            ok, heard = line_ok(wav, text, transcribe_fn)
+            if ok or attempt == tries:
+                if not ok:
+                    print(f"voice: line {i} still off after {tries} retries ({len(_norm_words(heard))} words heard for {len(_norm_words(text))}); kept", flush=True)
+                out.append((wav, d))
+                break
+            print(f"voice: line {i} heard as {len(_norm_words(heard))} words for {len(_norm_words(text))} written; re-synthesising", flush=True)
+            cache_path(text, voice_id, cache_dir).unlink(missing_ok=True)
+    return out
+
+
 def batched(texts: list, voice_id: str, out_dir: Path, say_fn=None, group: int = GROUP, verify=None, **kw) -> list:
     """One WAV per scene, in order, using one request per `group` scenes. Each cut segment is transcribed and checked against its scene;
     a group whose pauses cannot be matched, or whose segments do not read back right, falls back to a request per line."""
