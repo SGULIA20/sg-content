@@ -9,7 +9,7 @@ import traceback
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from . import digest, gitsync, instagram, linkedin, pieces, slots, telegram, threads
+from . import config, digest, gitsync, instagram, linkedin, pieces, slots, telegram, threads
 from .config import ROOT
 from .instagram import InstagramError
 from .threads import ThreadsError
@@ -20,7 +20,7 @@ RETRY_DAYS = 3
 
 def required(env=None) -> tuple:
     """Platform ids a Short needs before it is `posted`; LinkedIn only once its secrets exist."""
-    return PLATFORM_IDS + (("linkedin_id",) if linkedin.configured(env) else ())
+    return PLATFORM_IDS + (("linkedin_id",) if (config.LINKEDIN_VIDEOS and linkedin.configured(env)) else ())
 
 
 def due(root: Path, now_utc: datetime, channel: str, env=None) -> list:

@@ -2,7 +2,7 @@ from datetime import date, datetime, timezone
 
 import pytest
 
-from engine import pieces, publish, secrets, telegram
+from engine import config, pieces, publish, secrets, telegram
 
 ENV = {"IG_ACCESS_TOKEN": "t", "IG_USER_ID": "u", "THREADS_ACCESS_TOKEN": "tt", "THREADS_USER_ID": "tu", "GITHUB_REPOSITORY": "r"}
 NOW = datetime(2026, 10, 20, 7, 30, tzinfo=timezone.utc)          # 13:00 IST on 20 Oct
@@ -113,7 +113,8 @@ def test_linkedin_skipped_when_unconfigured(tmp_path):
     assert li == [] and q.status == "posted" and "linkedin_id" not in q.ids
 
 
-def test_linkedin_posts_reel_file_with_text(tmp_path):
+def test_linkedin_posts_reel_file_with_text(tmp_path, monkeypatch):
+    monkeypatch.setattr(config, "LINKEDIN_VIDEOS", True)               # the capability stays tested; production runs with it off (founder, 22 Oct 2026)
     p = _seed(tmp_path, "2026-10-20-sglearning-short", "sglearning", "short", date(2026, 10, 20))
     li = []
     publish.run(tmp_path, "sglearning", NOW, LI_ENV, ig_publish=_ig_ok(tmp_path), threads_post=lambda *a: "th1",
@@ -125,7 +126,8 @@ def test_linkedin_posts_reel_file_with_text(tmp_path):
     assert "youtu.be/y" in text and title == p.id                       # the seed has no YouTube title, so the piece id stands in
 
 
-def test_linkedin_failure_recorded_then_retried_without_reposting(tmp_path):
+def test_linkedin_failure_recorded_then_retried_without_reposting(tmp_path, monkeypatch):
+    monkeypatch.setattr(config, "LINKEDIN_VIDEOS", True)               # the capability stays tested; production runs with it off (founder, 22 Oct 2026)
     p = _seed(tmp_path, "2026-10-20-sglearning-short", "sglearning", "short", date(2026, 10, 20))
     ig, th = _ig_ok(tmp_path), []
 
@@ -175,7 +177,8 @@ def test_instagram_failure_still_posts_threads(tmp_path):
     assert q.status == "uploaded"                                    # the Story is still missing: the next run retries it
 
 
-def test_a_posted_short_is_due_again_when_a_newly_configured_platform_is_missing(tmp_path):
+def test_a_posted_short_is_due_again_when_a_newly_configured_platform_is_missing(tmp_path, monkeypatch):
+    monkeypatch.setattr(config, "LINKEDIN_VIDEOS", True)               # the capability stays tested; production runs with it off (founder, 22 Oct 2026)
     from datetime import datetime, timezone
     (tmp_path / "pieces").mkdir()
     p = pieces.Piece(id="2026-10-22-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 10, 22))
@@ -185,3 +188,13 @@ def test_a_posted_short_is_due_again_when_a_newly_configured_platform_is_missing
     assert publish.due(tmp_path, now, "sglearning", {}) == []                                           # nothing owed without LinkedIn keys
     env = {"LINKEDIN_ACCESS_TOKEN": "t", "LINKEDIN_PERSON_URN": "urn:li:person:x"}
     assert [q.id for q in publish.due(tmp_path, now, "sglearning", env)] == [p.id]                        # LinkedIn owed once its keys exist
+
+
+def test_linkedin_video_is_off_by_default_and_never_owed(tmp_path):
+    (tmp_path / "pieces").mkdir()
+    p = pieces.Piece(id="2026-10-22-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 10, 22))
+    p.status = "posted"; p.ids = {"yt_id": "y", "ig_reel_id": "r", "ig_story_id": "s", "threads_id": "t", "out_sha": "abc"}
+    pieces.save(p, tmp_path)
+    env = {"LINKEDIN_ACCESS_TOKEN": "t", "LINKEDIN_PERSON_URN": "urn:li:person:x"}
+    assert config.LINKEDIN_VIDEOS is False and "linkedin_id" not in publish.required(env)
+    assert publish.due(tmp_path, datetime(2026, 10, 22, 9, 30, tzinfo=timezone.utc), "sglearning", env) == []

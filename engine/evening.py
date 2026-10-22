@@ -14,6 +14,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from . import pieces, secrets, slots, telegram
+from . import config
 from .config import CHANNELS, ROOT, today_ist
 
 APP_LOG_URL = "https://raw.githubusercontent.com/SGULIA20/arthvan-media/main/logs/posts.jsonl"
@@ -86,8 +87,10 @@ def _channel_rows(day: date, now: datetime, root: Path) -> list:
                 ig = "✅ Reel (no Story: over 60 s)"
             else:
                 ig = OK if story else "🔴 Reel only"
-            rows.append((f"{label} Short", {"YouTube": _yt_cell(p, now), "Instagram": ig,
-                                            "Threads": OK if ids.get("threads_id") else NO, "LinkedIn": OK if ids.get("linkedin_id") else NO}))
+            cells = {"YouTube": _yt_cell(p, now), "Instagram": ig, "Threads": OK if ids.get("threads_id") else NO}
+            if config.LINKEDIN_VIDEOS:
+                cells["LinkedIn"] = OK if ids.get("linkedin_id") else NO
+            rows.append((f"{label} Short", cells))
     return rows
 
 
@@ -111,14 +114,14 @@ def tomorrow_plan(day: date) -> str:
     t = day + timedelta(days=1)
     app = APP_NAMES[app_for(t)]
     rows = [("04:37", "LinkedIn", "your daily post"),
-            (_wat(CHANNELS["sglearning"].ig_slot_ist), "Instagram + Threads + LinkedIn", "Learning with SG Reel and Story")]
+            (_wat(CHANNELS["sglearning"].ig_slot_ist), "Instagram + Threads", "Learning with SG Reel and Story")]
     for key, label in (("sglearning", "Learning with SG"), ("arthvan", "SG-MYTH-WORLD")):
         ch = CHANNELS[key]
         if t.weekday() in ch.long_days:
             rows.append((_wat(ch.long_publish_ist), "YouTube", f"{label} long video"))
     rows.append((_wat(CHANNELS["sglearning"].short_publish_ist), "YouTube", "Shorts on both channels"))
-    rows.append(("15:37", "Instagram + Threads + LinkedIn + YouTube", f"{app} set (Reel, post, Story)"))
-    rows.append((_wat(CHANNELS["arthvan"].ig_slot_ist), "Instagram + Threads + LinkedIn", "SG-MYTH-WORLD Reel and Story"))
+    rows.append(("15:37", "Instagram + Threads + YouTube, LinkedIn slides on slide days", f"{app} set (Reel, post, Story)"))
+    rows.append((_wat(CHANNELS["arthvan"].ig_slot_ist), "Instagram + Threads", "SG-MYTH-WORLD Reel and Story"))
     rows.sort()
     return "\n".join([f"📅 Tomorrow {t.strftime('%a %d %b')} (Lagos time)"] + [f"   {hh}  {what}: {where}" for hh, where, what in rows])
 

@@ -83,4 +83,5 @@ STORY_MAX_S = 178.0                           # YouTube Shorts allow up to 3 min
 
 ENABLED_KINDS = {"short", "long"}             # longs twice a week per channel (founder, 20 Oct 2026)
 
+LINKEDIN_VIDEOS = False                       # founder, 22 Oct 2026: LinkedIn gets picture posts only; no Short or Reel video goes there from this repo
 UNLISTED_KINDS = set()                        # founder 21 Oct 2026: longs go public on schedule like Shorts (`python -m engine.youtube --go-public` still releases any unlisted ones)
