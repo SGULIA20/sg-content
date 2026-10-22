@@ -11,50 +11,50 @@ Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H800000
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.00,0:00:00.59,Default,,0,0,0,,Kailash,
-Dialogue: 0,0:00:00.59,0:00:02.67,Default,,0,0,0,,woh pahad jis par aaj tak
-Dialogue: 0,0:00:02.67,0:00:04.15,Default,,0,0,0,,koi nahi chadha.
-Dialogue: 0,0:00:04.15,0:00:04.44,Default,,0,0,0,,Kyon?
-Dialogue: 0,0:00:04.44,0:00:07.11,Default,,0,0,0,,Shiva Purana mein yeh Shiv ji
-Dialogue: 0,0:00:07.11,0:00:09.48,Default,,0,0,0,,aur Parvati ji ka ghar hai.
-Dialogue: 0,0:00:09.93,0:00:12.22,Default,,0,0,0,,Skanda Purana kehta hai,
-Dialogue: 0,0:00:12.22,0:00:15.09,Default,,0,0,0,,iske darshan se paap aise mitte
-Dialogue: 0,0:00:15.09,0:00:15.38,Default,,0,0,0,,hain,
-Dialogue: 0,0:00:15.38,0:00:16.81,Default,,0,0,0,,jaise dhoop mein os.
-Dialogue: 0,0:00:17.26,0:00:18.16,Default,,0,0,0,,Ab sabut.
-Dialogue: 0,0:00:18.16,0:00:21.15,Default,,0,0,0,,Kailash ke paas Ngari ilaake mein,
-Dialogue: 0,0:00:21.15,0:00:24.14,Default,,0,0,0,,1997 mein khudai shuru hui.
-Dialogue: 0,0:00:24.59,0:00:26.95,Default,,0,0,0,,Team thi Sichuan University aur Tibet
-Dialogue: 0,0:00:26.95,0:00:28.91,Default,,0,0,0,,ke Bureau of Cultural Relics ki.
-Dialogue: 0,0:00:29.36,0:00:32.43,Default,,0,0,0,,Piyang-Donggar mein bahut saari gufaayein mili,
-Dialogue: 0,0:00:32.43,0:00:34.48,Default,,0,0,0,,jinmein kabhi log rehte the.
-Dialogue: 0,0:00:34.93,0:00:37.02,Default,,0,0,0,,Deewaron par Buddhist murals,
-Dialogue: 0,0:00:37.02,0:00:39.64,Default,,0,0,0,,yaani purani rangeen tasveerein,
-Dialogue: 0,0:00:39.64,0:00:41.21,Default,,0,0,0,,aur kabrein bhi mili.
-Dialogue: 0,0:00:41.66,0:00:43.31,Default,,0,0,0,,Kahaniyan kehti hain,
-Dialogue: 0,0:00:43.31,0:00:45.52,Default,,0,0,0,,koi anjaan shakti rokti hai.
-Dialogue: 0,0:00:45.52,0:00:48.55,Default,,0,0,0,,Par mountaineer Reinhold Messner kehte hain,
-Dialogue: 0,0:00:48.55,0:00:51.04,Default,,0,0,0,,6,638 metre ka yeh pahad chadha
-Dialogue: 0,0:00:51.04,0:00:52.14,Default,,0,0,0,,ja sakta hai.
-Dialogue: 0,0:00:52.59,0:00:54.28,Default,,0,0,0,,Parampara kehti hai,
-Dialogue: 0,0:00:54.28,0:00:54.77,Default,,0,0,0,,Indus,
-Dialogue: 0,0:00:54.77,0:00:55.25,Default,,0,0,0,,Sutlej,
-Dialogue: 0,0:00:55.25,0:00:58.63,Default,,0,0,0,,Brahmaputra aur Karnali Kailash se nikalti
-Dialogue: 0,0:00:58.63,0:00:58.88,Default,,0,0,0,,hain.
-Dialogue: 0,0:00:58.88,0:01:01.05,Default,,0,0,0,,Paani ke vaigyanik kehte hain,
-Dialogue: 0,0:01:01.05,0:01:03.47,Default,,0,0,0,,inke glacier alag ghaatiyon mein hain.
-Dialogue: 0,0:01:03.92,0:01:06.17,Default,,0,0,0,,Kuch lekhak ise insaan ka banaya
-Dialogue: 0,0:01:06.17,0:01:07.52,Default,,0,0,0,,pyramid kehte hain.
-Dialogue: 0,0:01:07.52,0:01:09.77,Default,,0,0,0,,Chattanon ke vaigyanik kehte hain,
-Dialogue: 0,0:01:09.77,0:01:10.89,Default,,0,0,0,,yeh kudrati hai,
-Dialogue: 0,0:01:10.89,0:01:12.24,Default,,0,0,0,,glaciers ki taraashi.
-Dialogue: 0,0:01:12.69,0:01:14.71,Default,,0,0,0,,Tibet ki kahani kehti hai,
-Dialogue: 0,0:01:14.71,0:01:17.84,Default,,0,0,0,,yogi Milarepa subah ki kiran pakadkar
-Dialogue: 0,0:01:17.84,0:01:19.41,Default,,0,0,0,,choti tak pahunche the.
-Dialogue: 0,0:01:19.86,0:01:21.28,Default,,0,0,0,,Asli baat seedhi hai,
-Dialogue: 0,0:01:21.28,0:01:23.63,Default,,0,0,0,,chadhne ki permit hi nahi milti,
-Dialogue: 0,0:01:23.63,0:01:25.05,Default,,0,0,0,,shraddha ke samman mein.
-Dialogue: 0,0:01:25.05,0:01:27.41,Default,,0,0,0,,Aap aaj parikrama kar sakte hain,
-Dialogue: 0,0:01:27.41,0:01:29.06,Default,,0,0,0,,pahad ke ird-gird paidal.
-Dialogue: 0,0:01:29.51,0:01:32.83,Default,,0,0,0,,Aap Kailash ki parikrama karna chahoge?
-Dialogue: 0,0:01:32.83,0:01:34.87,Default,,0,0,0,,Comment mein haan ya na likho.
+Dialogue: 0,0:00:00.00,0:00:00.71,Default,,0,0,0,,Kailash,
+Dialogue: 0,0:00:00.71,0:00:03.18,Default,,0,0,0,,woh pahad jis par aaj tak
+Dialogue: 0,0:00:03.18,0:00:04.95,Default,,0,0,0,,koi nahi chadha.
+Dialogue: 0,0:00:04.95,0:00:05.31,Default,,0,0,0,,Kyon?
+Dialogue: 0,0:00:05.31,0:00:08.49,Default,,0,0,0,,Shiva Purana mein yeh Shiv ji
+Dialogue: 0,0:00:08.49,0:00:11.32,Default,,0,0,0,,aur Parvati ji ka ghar hai.
+Dialogue: 0,0:00:11.77,0:00:14.37,Default,,0,0,0,,Skanda Purana kehta hai,
+Dialogue: 0,0:00:14.37,0:00:17.62,Default,,0,0,0,,iske darshan se paap aise mitte
+Dialogue: 0,0:00:17.62,0:00:17.95,Default,,0,0,0,,hain,
+Dialogue: 0,0:00:17.95,0:00:19.57,Default,,0,0,0,,jaise dhoop mein os.
+Dialogue: 0,0:00:20.02,0:00:21.04,Default,,0,0,0,,Ab sabut.
+Dialogue: 0,0:00:21.04,0:00:24.45,Default,,0,0,0,,Kailash ke paas Ngari ilaake mein,
+Dialogue: 0,0:00:24.45,0:00:27.86,Default,,0,0,0,,1997 mein khudai shuru hui.
+Dialogue: 0,0:00:28.31,0:00:31.50,Default,,0,0,0,,Team thi Sichuan University aur Tibet
+Dialogue: 0,0:00:31.50,0:00:34.15,Default,,0,0,0,,ke Bureau of Cultural Relics ki.
+Dialogue: 0,0:00:34.60,0:00:37.94,Default,,0,0,0,,Piyang-Donggar mein bahut saari gufaayein mili,
+Dialogue: 0,0:00:37.94,0:00:40.16,Default,,0,0,0,,jinmein kabhi log rehte the.
+Dialogue: 0,0:00:40.61,0:00:43.41,Default,,0,0,0,,Deewaron par Buddhist murals,
+Dialogue: 0,0:00:43.41,0:00:46.91,Default,,0,0,0,,yaani purani rangeen tasveerein,
+Dialogue: 0,0:00:46.91,0:00:49.01,Default,,0,0,0,,aur kabrein bhi mili.
+Dialogue: 0,0:00:49.46,0:00:51.46,Default,,0,0,0,,Kahaniyan kehti hain,
+Dialogue: 0,0:00:51.46,0:00:54.13,Default,,0,0,0,,koi anjaan shakti rokti hai.
+Dialogue: 0,0:00:54.13,0:00:57.80,Default,,0,0,0,,Par mountaineer Reinhold Messner kehte hain,
+Dialogue: 0,0:00:57.80,0:01:00.80,Default,,0,0,0,,6,638 metre ka yeh pahad chadha
+Dialogue: 0,0:01:00.80,0:01:02.14,Default,,0,0,0,,ja sakta hai.
+Dialogue: 0,0:01:02.59,0:01:04.77,Default,,0,0,0,,Parampara kehti hai,
+Dialogue: 0,0:01:04.77,0:01:05.39,Default,,0,0,0,,Indus,
+Dialogue: 0,0:01:05.39,0:01:06.01,Default,,0,0,0,,Sutlej,
+Dialogue: 0,0:01:06.01,0:01:10.37,Default,,0,0,0,,Brahmaputra aur Karnali Kailash se nikalti
+Dialogue: 0,0:01:10.37,0:01:10.68,Default,,0,0,0,,hain.
+Dialogue: 0,0:01:10.68,0:01:13.48,Default,,0,0,0,,Paani ke vaigyanik kehte hain,
+Dialogue: 0,0:01:13.48,0:01:16.59,Default,,0,0,0,,inke glacier alag ghaatiyon mein hain.
+Dialogue: 0,0:01:17.04,0:01:19.73,Default,,0,0,0,,Kuch lekhak ise insaan ka banaya
+Dialogue: 0,0:01:19.73,0:01:21.35,Default,,0,0,0,,pyramid kehte hain.
+Dialogue: 0,0:01:21.35,0:01:24.04,Default,,0,0,0,,Chattanon ke vaigyanik kehte hain,
+Dialogue: 0,0:01:24.04,0:01:25.39,Default,,0,0,0,,yeh kudrati hai,
+Dialogue: 0,0:01:25.39,0:01:27.00,Default,,0,0,0,,glaciers ki taraashi.
+Dialogue: 0,0:01:27.45,0:01:29.53,Default,,0,0,0,,Tibet ki kahani kehti hai,
+Dialogue: 0,0:01:29.53,0:01:32.75,Default,,0,0,0,,yogi Milarepa subah ki kiran pakadkar
+Dialogue: 0,0:01:32.75,0:01:34.37,Default,,0,0,0,,choti tak pahunche the.
+Dialogue: 0,0:01:34.82,0:01:36.59,Default,,0,0,0,,Asli baat seedhi hai,
+Dialogue: 0,0:01:36.59,0:01:39.55,Default,,0,0,0,,chadhne ki permit hi nahi milti,
+Dialogue: 0,0:01:39.55,0:01:41.32,Default,,0,0,0,,shraddha ke samman mein.
+Dialogue: 0,0:01:41.32,0:01:44.27,Default,,0,0,0,,Aap aaj parikrama kar sakte hain,
+Dialogue: 0,0:01:44.27,0:01:46.34,Default,,0,0,0,,pahad ke ird-gird paidal.
+Dialogue: 0,0:01:46.79,0:01:50.31,Default,,0,0,0,,Aap Kailash ki parikrama karna chahoge?
+Dialogue: 0,0:01:50.31,0:01:52.47,Default,,0,0,0,,Comment mein haan ya na likho.

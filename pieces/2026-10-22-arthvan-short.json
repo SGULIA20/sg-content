@@ -94,7 +94,8 @@
  ],
  "id": "2026-10-22-arthvan-short",
  "ids": {
-  "ig_story_id": "skipped: Reel over 60 s"
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "Nm8DImn35mM"
  },
  "kind": "short",
  "publish_day": "2026-10-22",
@@ -296,20 +297,20 @@
   },
   "title": "Kailash par koi *kyon* nahi chadha? 🤯"
  },
- "status": "written",
+ "status": "uploaded",
  "timings": [
   0.0,
-  9.93,
-  17.26,
-  24.59,
-  29.36,
-  34.93,
-  41.66,
-  52.59,
-  63.92,
-  72.69,
-  79.86,
-  89.51
+  11.77,
+  20.02,
+  28.31,
+  34.6,
+  40.61,
+  49.46,
+  62.59,
+  77.04,
+  87.45,
+  94.82,
+  106.79
  ],
  "topic": {
   "allowed_sources": [
@@ -328,8 +329,8 @@
   "place": "Mount Kailash, Tibet",
   "target_minutes": null,
   "title_hi": "Kailash parvat par koi kyon nahi chadha",
-  "voice": "Kore"
+  "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-22T07:24:06+00:00",
+ "updated": "2026-10-22T07:31:54+00:00",
  "writer": "claude"
 }
