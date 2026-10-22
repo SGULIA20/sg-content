@@ -1,0 +1,286 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "legend",
+   "number": 52.0,
+   "quote": "There is a lodestone at the top of the temple was said to be a massive 52 ton magnet. According to legend, the statue of the Sun God inside the temple was built of a material with iron content and was said to be floating in air, without any physical support...",
+   "source_date": "2026",
+   "source_name": "Odisha Tourism / Popular Folklore",
+   "source_url": "https://odishatourism.gov.in",
+   "text": "A popular maritime folklore alleges that a colossal 52-tonne lodestone magnet was installed atop the Konark temple tower, suspending the central iron-bearing idol in mid-air.",
+   "unit": "tonnes"
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "To save their trade and their ships, the Portuguese sailors destroyed the temple and took away the lodestone.",
+   "source_date": "1908",
+   "source_name": "Bengal District Gazetteers: Puri",
+   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+   "text": "According to regional tales, Portuguese trading vessels had their magnetic compasses disoriented and were pulled onto shallow reefs until mariners raided the temple and hauled the apex magnet away.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 10.0,
+   "quote": "Supported by iron beams, the architraves were of chlorite and had their front faces sculptured.",
+   "source_date": "1968",
+   "source_name": "Archaeological Survey of India (Debala Mitra)",
+   "source_url": "https://asi.nic.in",
+   "text": "Archaeological analysis shows that medieval builders supported the corbelled stone ceilings of the porch with forged wrought-iron beams extending up to 10 metres in length.",
+   "unit": "metres"
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "There are various explanations offered regarding what led to the collapse of the rekha deul or sanctuary at Konarak... while numerous legends have been fabricated or greatly embellished.",
+   "source_date": "2003",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "Official archaeological excavation and structural survey records maintain that no physical evidence, lodestone fragments, or epigraphical proof of any summit magnet have ever been discovered at the site.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 1903.0,
+   "quote": "Bourdillon, ordered the temple to be sealed and filled with sand to prevent the collapse of the Jagamohana. The Mukhasala and Nata Mandir were repaired by 1905.",
+   "source_date": "1905",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "In 1903 CE, British colonial administrators sealed all entryways and packed the interior of the surviving Jagamohana hall with sand to arrest structural collapse.",
+   "unit": "CE"
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "Some of the theories include the subsidence of the foundation, a shock of earthquake or lightning, raising doubt if the temple was ever completed. It appears that the structure disintegrated gradually, the beginning of the decay initiated by the desecration of the temple.",
+   "source_date": "2005",
+   "source_name": "Archaeological Survey of India / K. S. Behera",
+   "source_url": "https://asi.nic.in",
+   "text": "Structural engineers and historians disagree on whether the sanctum tower collapsed because of engineering failure and foundation subsidence on soft sand, or due to external military invasions and natural cyclones.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 1676.0,
+   "quote": "This temple was called the 'Black Pagoda' in European sailor accounts as early as 1676 because it looked like a great tiered tower which appeared black.",
+   "source_date": "1911",
+   "source_name": "The Diaries of Sir Streynsham Master",
+   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+   "text": "European navigation logs applied the term Black Pagoda to the dark silhouette of the Konark temple tower as early as 1676 CE to distinguish it from the white-plastered Jagannath temple at Puri.",
+   "unit": "CE"
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "Konark temple was initially built on the sea bank but now the sea has receded... European sailors referred to it as the 'Black Pagoda' due to its dark colour and its magnetic power that drew ships into the shore and caused shipwrecks.",
+   "source_date": "1908",
+   "source_name": "Bengal District Gazetteers: Puri / Marine Hydrography",
+   "source_url": "https://asi.nic.in",
+   "text": "Maritime legends attribute historical shipwrecks off the Konark coast to magnetic pull, whereas hydrographers demonstrate that coastal shoals, shallow sandbanks, and shifting currents caused vessel groundings.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 8.0,
+   "quote": "The 12 wheels reflect the 12 months of the year, while the 8 spokes represent the day's eight prahars... The spokes of the wheel form a sundial, and the shadow cast by these wheels aids in calculating the exact time of day.",
+   "source_date": "2026",
+   "source_name": "Odisha Tourism",
+   "source_url": "https://odishatourism.gov.in",
+   "text": "Each sundial wheel features 8 major spokes that divide daytime hours into traditional three-hour intervals known as prahars.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": 3.0,
+   "quote": "Each wheel has eight spokes - each representing a Prahar. 1 prahar is 3 hours. Each prahar has 60 dots each representing 3 minutes time span.",
+   "source_date": "2024",
+   "source_name": "Odisha Tourism / ASI Documentation",
+   "source_url": "https://odishatourism.gov.in",
+   "text": "Carved relief beads on the rims of the wheels permit astronomical time-telling accurate to increments of roughly 3 minutes.",
+   "unit": "count"
+  },
+  {
+   "label": "scripture",
+   "number": 12.0,
+   "quote": "According to the scriptures, Samba, the son of Krishna, was cursed with leprosy... Samba underwent penance for 12 years in Mitravana near the shores of Chandrabhaga.",
+   "source_date": "c. 800-1100 CE",
+   "source_name": "Samba Purana, Bhavishya Purana",
+   "source_url": "https://en.wikipedia.org/wiki/Samba_Purana",
+   "text": "Puranic scriptures relate that Krishna's son Samba performed severe penance for 12 years in the solar forest of Mitravana along the Chandrabhaga river to obtain healing from a debilitating affliction.",
+   "unit": "years"
+  },
+  {
+   "label": "legend",
+   "number": 1200.0,
+   "quote": "King Narasimhadeva I... built this temple, with the help of 1200 artisans within a period of 12 years... The tragic sacrifice of the 12-year-old boy Dharmapada.",
+   "source_date": "1989",
+   "source_name": "Temple Legends of Orissa",
+   "source_url": "https://odishatourism.gov.in",
+   "text": "A celebrated Odia legend recounts that the twelve-year-old prodigy Dharmapada leapt into the sea from the temple spire to shield 1200 craftsmen from royal punishment.",
+   "unit": "count"
+  }
+ ],
+ "id": "2026-10-28-arthvan-short",
+ "ids": {
+  "write_batch": {
+   "id": "msgbatch_01EsFz2Qhxnsj1WmBdHVHG6g",
+   "key": "236e078c403d54a0",
+   "tries": 1
+  }
+ },
+ "kind": "short",
+ "publish_day": "2026-10-28",
+ "reasons": [
+  "draft cooking in Claude's batch lane; the next run collects it"
+ ],
+ "script": null,
+ "status": "writing",
+ "timings": [],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "en.wikipedia.org",
+   "odishatourism.gov.in",
+   "UNESCO whc.unesco.org"
+  ],
+  "hooks": [
+   "Konark mandir ke upar 52 ton ka chumbak tha?",
+   "Jahaaz Konark ke paas kyon bhatakte the?",
+   "Surya mandir ka pahiya ghadi hai?"
+  ],
+  "id": "konark-magnet",
+  "notes": "Magnet story is disputed/legend; the sundial wheel is documented.",
+  "place": "Konark, Odisha",
+  "sheet": {
+   "facts": [
+    {
+     "label": "legend",
+     "number": 52.0,
+     "quote": "There is a lodestone at the top of the temple was said to be a massive 52 ton magnet. According to legend, the statue of the Sun God inside the temple was built of a material with iron content and was said to be floating in air, without any physical support...",
+     "source_date": "2026",
+     "source_name": "Odisha Tourism / Popular Folklore",
+     "source_url": "https://odishatourism.gov.in",
+     "text": "A popular maritime folklore alleges that a colossal 52-tonne lodestone magnet was installed atop the Konark temple tower, suspending the central iron-bearing idol in mid-air.",
+     "unit": "tonnes"
+    },
+    {
+     "label": "legend",
+     "number": null,
+     "quote": "To save their trade and their ships, the Portuguese sailors destroyed the temple and took away the lodestone.",
+     "source_date": "1908",
+     "source_name": "Bengal District Gazetteers: Puri",
+     "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+     "text": "According to regional tales, Portuguese trading vessels had their magnetic compasses disoriented and were pulled onto shallow reefs until mariners raided the temple and hauled the apex magnet away.",
+     "unit": null
+    },
+    {
+     "label": "archaeology",
+     "number": 10.0,
+     "quote": "Supported by iron beams, the architraves were of chlorite and had their front faces sculptured.",
+     "source_date": "1968",
+     "source_name": "Archaeological Survey of India (Debala Mitra)",
+     "source_url": "https://asi.nic.in",
+     "text": "Archaeological analysis shows that medieval builders supported the corbelled stone ceilings of the porch with forged wrought-iron beams extending up to 10 metres in length.",
+     "unit": "metres"
+    },
+    {
+     "label": "archaeology",
+     "number": null,
+     "quote": "There are various explanations offered regarding what led to the collapse of the rekha deul or sanctuary at Konarak... while numerous legends have been fabricated or greatly embellished.",
+     "source_date": "2003",
+     "source_name": "Archaeological Survey of India",
+     "source_url": "https://asi.nic.in",
+     "text": "Official archaeological excavation and structural survey records maintain that no physical evidence, lodestone fragments, or epigraphical proof of any summit magnet have ever been discovered at the site.",
+     "unit": null
+    },
+    {
+     "label": "archaeology",
+     "number": 1903.0,
+     "quote": "Bourdillon, ordered the temple to be sealed and filled with sand to prevent the collapse of the Jagamohana. The Mukhasala and Nata Mandir were repaired by 1905.",
+     "source_date": "1905",
+     "source_name": "Archaeological Survey of India",
+     "source_url": "https://asi.nic.in",
+     "text": "In 1903 CE, British colonial administrators sealed all entryways and packed the interior of the surviving Jagamohana hall with sand to arrest structural collapse.",
+     "unit": "CE"
+    },
+    {
+     "label": "disputed",
+     "number": null,
+     "quote": "Some of the theories include the subsidence of the foundation, a shock of earthquake or lightning, raising doubt if the temple was ever completed. It appears that the structure disintegrated gradually, the beginning of the decay initiated by the desecration of the temple.",
+     "source_date": "2005",
+     "source_name": "Archaeological Survey of India / K. S. Behera",
+     "source_url": "https://asi.nic.in",
+     "text": "Structural engineers and historians disagree on whether the sanctum tower collapsed because of engineering failure and foundation subsidence on soft sand, or due to external military invasions and natural cyclones.",
+     "unit": null
+    },
+    {
+     "label": "archaeology",
+     "number": 1676.0,
+     "quote": "This temple was called the 'Black Pagoda' in European sailor accounts as early as 1676 because it looked like a great tiered tower which appeared black.",
+     "source_date": "1911",
+     "source_name": "The Diaries of Sir Streynsham Master",
+     "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+     "text": "European navigation logs applied the term Black Pagoda to the dark silhouette of the Konark temple tower as early as 1676 CE to distinguish it from the white-plastered Jagannath temple at Puri.",
+     "unit": "CE"
+    },
+    {
+     "label": "disputed",
+     "number": null,
+     "quote": "Konark temple was initially built on the sea bank but now the sea has receded... European sailors referred to it as the 'Black Pagoda' due to its dark colour and its magnetic power that drew ships into the shore and caused shipwrecks.",
+     "source_date": "1908",
+     "source_name": "Bengal District Gazetteers: Puri / Marine Hydrography",
+     "source_url": "https://asi.nic.in",
+     "text": "Maritime legends attribute historical shipwrecks off the Konark coast to magnetic pull, whereas hydrographers demonstrate that coastal shoals, shallow sandbanks, and shifting currents caused vessel groundings.",
+     "unit": null
+    },
+    {
+     "label": "archaeology",
+     "number": 8.0,
+     "quote": "The 12 wheels reflect the 12 months of the year, while the 8 spokes represent the day's eight prahars... The spokes of the wheel form a sundial, and the shadow cast by these wheels aids in calculating the exact time of day.",
+     "source_date": "2026",
+     "source_name": "Odisha Tourism",
+     "source_url": "https://odishatourism.gov.in",
+     "text": "Each sundial wheel features 8 major spokes that divide daytime hours into traditional three-hour intervals known as prahars.",
+     "unit": "count"
+    },
+    {
+     "label": "archaeology",
+     "number": 3.0,
+     "quote": "Each wheel has eight spokes - each representing a Prahar. 1 prahar is 3 hours. Each prahar has 60 dots each representing 3 minutes time span.",
+     "source_date": "2024",
+     "source_name": "Odisha Tourism / ASI Documentation",
+     "source_url": "https://odishatourism.gov.in",
+     "text": "Carved relief beads on the rims of the wheels permit astronomical time-telling accurate to increments of roughly 3 minutes.",
+     "unit": "count"
+    },
+    {
+     "label": "scripture",
+     "number": 12.0,
+     "quote": "According to the scriptures, Samba, the son of Krishna, was cursed with leprosy... Samba underwent penance for 12 years in Mitravana near the shores of Chandrabhaga.",
+     "source_date": "c. 800-1100 CE",
+     "source_name": "Samba Purana, Bhavishya Purana",
+     "source_url": "https://en.wikipedia.org/wiki/Samba_Purana",
+     "text": "Puranic scriptures relate that Krishna's son Samba performed severe penance for 12 years in the solar forest of Mitravana along the Chandrabhaga river to obtain healing from a debilitating affliction.",
+     "unit": "years"
+    },
+    {
+     "label": "legend",
+     "number": 1200.0,
+     "quote": "King Narasimhadeva I... built this temple, with the help of 1200 artisans within a period of 12 years... The tragic sacrifice of the 12-year-old boy Dharmapada.",
+     "source_date": "1989",
+     "source_name": "Temple Legends of Orissa",
+     "source_url": "https://odishatourism.gov.in",
+     "text": "A celebrated Odia legend recounts that the twelve-year-old prodigy Dharmapada leapt into the sea from the temple spire to shield 1200 craftsmen from royal punishment.",
+     "unit": "count"
+    }
+   ],
+   "summary": "Popular legend claims the Konark Sun Temple once housed a 52-tonne summit magnet that held a floating solar idol in suspension and pulled passing European merchant ships to their destruction. Archaeological excavations revealed massive forged wrought-iron beams supporting the corbelled ceilings and 24 monumental chariot wheels functioning as astronomical sundials, but discovered no trace of a giant summit lodestone. Scholars and engineers remain divided over whether the main sanctuary tower fell due to structural subsidence on shifting coastal sandbanks or collapsed as a consequence of medieval raids and severe cyclonic storms. It remains unknown whether historical mariners were misled by the temple's dark coastal silhouette amid treacherous underwater shallows, or if localized iron content in the stone gave rise to magnetic folklore."
+  },
+  "target_minutes": null,
+  "title_hi": "Konark ka chumbak"
+ },
+ "updated": "2026-10-22T19:08:28+00:00",
+ "writer": ""
+}
