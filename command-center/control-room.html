@@ -138,6 +138,17 @@ h3.sub { font: 600 13px/1.2 var(--f-display); letter-spacing: .08em; text-transf
     <p class="small muted" style="margin:0">Pause stops new runs from making or posting anything. Stop cancels a run that is going right now. Telegram /pause and /resume do the same thing.</p>
   </section>
 
+  <div class="cols">
+    <section class="panel" aria-labelledby="h-live">
+      <h2 id="h-live">Running now</h2>
+      <ul id="live" class="log"><li style="grid-template-columns:1fr"><span class="muted">Loading…</span></li></ul>
+    </section>
+    <section class="panel" aria-labelledby="h-apps">
+      <h2 id="h-apps">ScoreMyBiz &amp; Waypoint posts today</h2>
+      <div id="apps"><p class="small muted" style="margin:0">Loading…</p></div>
+    </section>
+  </div>
+
   <section class="panel" aria-labelledby="h-attn">
     <h2 id="h-attn">Needs attention</h2>
     <ul id="alerts" class="alerts"><li><span class="muted">Loading…</span></li></ul>
@@ -219,7 +230,7 @@ h3.sub { font: 600 13px/1.2 var(--f-display); letter-spacing: .08em; text-transf
   const ONLY_OK = ["sglearning:short", "sglearning:long", "arthvan:short", "arthvan:long"];
   const DONE = ["uploaded", "posted"];
   const $ = (id) => document.getElementById(id);
-  let mcp = null, sample = null, data = null, busy = false;
+  let mcp = null, sample = null, data = null, busy = false, lastLoad = 0;
 
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const lit = (s) => "'" + String(s).replace(/\u0000/g, "").replace(/'/g, "''") + "'";
@@ -284,6 +295,8 @@ h3.sub { font: 600 13px/1.2 var(--f-display); letter-spacing: .08em; text-transf
     'commands', (select coalesce(json_agg(c order by c.id desc), '[]'::json) from (select id, created_at, action, args, requested_via, state, result from command.commands order by id desc limit 12) c),
     'events', (select coalesce(json_agg(e order by e.id desc), '[]'::json) from (select id, at, source, kind, message from command.events where kind not like 'command.%' order by id desc limit 8) e),
     'telegram', (select value from command.control where key = 'telegram.webhook'),
+    'live', (select payload from command.status where source = 'github' and key = 'runs'),
+    'apps', (select payload from command.status where source = 'arthvan-media' and key = 'today'),
     'smb', command.smb_numbers()
   ) as data`;
 
@@ -314,7 +327,11 @@ h3.sub { font: 600 13px/1.2 var(--f-display); letter-spacing: .08em; text-transf
     if (!mcp) return;
     $("refresh").disabled = true;
     try {
+      let asked = "fresh";
+      try { asked = (await sql("select command.refresh() as r"))[0].r; } catch (_) {}
+      if (asked === "requested") await new Promise((r) => setTimeout(r, 6000));     // GitHub answers in a few seconds
       const rows = await sql(READ);
+      lastLoad = Date.now();
       data = rows[0] && rows[0].data;
       banner(""); showConn("");
       render();
@@ -366,7 +383,7 @@ h3.sub { font: 600 13px/1.2 var(--f-display); letter-spacing: .08em; text-transf
     const paused = d.paused === true;
     const st = $("state"); st.className = "pill" + (paused ? " paused" : ""); st.textContent = paused ? "Paused" : "Running";
     $("btn-pause").textContent = paused ? "Resume" : "Pause";
-    $("updated").textContent = d.snapshot_at ? "Pipeline report " + when(d.snapshot_at) : "No report yet";
+    tick();
 
     const al = alertsFrom(d);
     $("alerts").innerHTML = al.length ? al.map((a) => `<li class="${a.bad ? "bad" : ""}"><span>${esc(a.text)}</span></li>`).join("")
@@ -410,8 +427,41 @@ h3.sub { font: 600 13px/1.2 var(--f-display); letter-spacing: .08em; text-transf
     ].sort((a, b) => String(b.at).localeCompare(String(a.at))).slice(0, 14);
     $("log").innerHTML = items.length ? items.map((i) => `<li><time>${esc(when(i.at))}</time><span>${esc(i.text)} <span class="muted">· ${esc(i.via)}</span></span></li>`).join("")
       : `<li style="grid-template-columns:1fr"><span class="muted">No activity yet.</span></li>`;
-    renderSmb(d.smb); renderSetup();
+    renderSmb(d.smb); renderSetup(); renderLive(d.live); renderApps(d.apps);
     if (s.github_run) $("log").insertAdjacentHTML("beforeend", `<li style="grid-template-columns:1fr"><a href="${esc(s.github_run)}" target="_blank" rel="noopener">Open the last GitHub run</a></li>`);
+  }
+
+  const RUN_NAME = { produce: "Make videos", publish: "Post", tests: "Tests", "daily-post": "App Reel (ScoreMyBiz / Waypoint)",
+    "linkedin-personal": "LinkedIn post", "telegram-commands": "Telegram check", "refresh-tokens": "Token refresh", "weekly-report": "Weekly report",
+    "telegram-setup": "Telegram setup", status: "Status card" };
+  const mins = (a, b) => Math.max(0, Math.round((new Date(b || Date.now()) - new Date(a)) / 60000));
+
+  function renderLive(live) {
+    if (!live) { $("live").innerHTML = `<li style="grid-template-columns:1fr"><span class="muted">Waiting for the first live read…</span></li>`; return; }
+    const all = [...(live["sg-content"] || []).map((r) => ({ ...r, repo: "videos" })), ...(live["arthvan-media"] || []).map((r) => ({ ...r, repo: "apps" }))]
+      .filter((r) => r.name !== "tests" || r.status !== "completed" || r.conclusion !== "success");
+    const now = all.filter((r) => r.status !== "completed");
+    const done = all.filter((r) => r.status === "completed").sort((a, b) => String(b.updated_at).localeCompare(String(a.updated_at))).slice(0, 6);
+    const row = (r) => {
+      const name = RUN_NAME[r.name] || r.name;
+      const st = r.status !== "completed" ? `<span class="chip warn">${r.status === "queued" ? "waiting" : "running " + mins(r.started_at) + " min"}</span>`
+        : `<span class="chip ${r.conclusion === "success" ? "ok" : r.conclusion === "cancelled" || r.conclusion === "skipped" ? "" : "bad"}">${esc(r.conclusion)}</span>`;
+      return `<li><time>${esc(when(r.status === "completed" ? r.updated_at : r.started_at))}</time><span>${st} <a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(name)}</a> <span class="muted">· ${r.repo}${r.event === "schedule" ? " · on schedule" : r.event === "workflow_dispatch" ? " · started by hand" : ""}</span></span></li>`;
+    };
+    $("live").innerHTML = (now.length ? now.map(row).join("") : `<li style="grid-template-columns:1fr"><span class="muted">Nothing running right now.</span></li>`) +
+      (done.length ? `<li style="grid-template-columns:1fr"><span class="small muted">Recently finished</span></li>` + done.map(row).join("") : "") +
+      ((live.errors || []).length ? `<li style="grid-template-columns:1fr"><span class="small" style="color:var(--bad)">${esc(live.errors.join(" · "))}</span></li>` : "");
+  }
+
+  const CHANNEL_LABEL = { "waypoint reel": "Instagram Reel + Story", "scoremybiz reel": "Instagram Reel + Story", whatsapp: "WhatsApp", telegram: "Telegram",
+    "youtube:sglearning": "YouTube (Learning with SG)", "youtube:arthvan": "YouTube (SG-MYTH-WORLD)", threads: "Threads", linkedin: "LinkedIn page",
+    linkedin_personal: "LinkedIn (you)", facebook: "Facebook" };
+  function renderApps(a) {
+    if (!a) { $("apps").innerHTML = `<p class="small muted" style="margin:0">Waiting for the first live read…</p>`; return; }
+    const posts = (a.posts || []).filter((p) => p.status !== "publishing" || !(a.posts || []).some((q) => q.channel === p.channel && q.status === "published"));
+    $("apps").innerHTML = `<p style="margin:0">Today's Reel: <b>${esc(a.item || "none planned")}</b></p>` +
+      (posts.length ? `<ul class="log">${posts.map((p) => `<li><span class="chip ${p.status === "published" ? "ok" : p.status === "failed" ? "bad" : "warn"}">${esc(p.status)}</span><span>${esc(CHANNEL_LABEL[p.channel] || p.channel)} <span class="muted">· ${esc(p.item)}</span></span></li>`).join("")}</ul>`
+        : `<p class="small muted" style="margin:0">Nothing posted yet today. The app Reel is due from 15:37 WAT.</p>`);
   }
 
   const tile = (v, label) => `<div class="tile"><b>${esc(v ?? "–")}</b><span>${esc(label)}</span></div>`;
@@ -447,10 +497,17 @@ h3.sub { font: 600 13px/1.2 var(--f-display); letter-spacing: .08em; text-transf
       : `<p class="small muted" style="margin:0">Nothing waiting. The app's own moderation is keeping up.</p>`;
   }
 
+  function tick() {
+    if (!lastLoad) return;
+    const s = Math.round((Date.now() - lastLoad) / 1000);
+    $("updated").textContent = `Live · updated ${s < 5 ? "just now" : s + " s ago"}`;
+  }
+
   function renderSetup() {
     const d = data || {}, s = d.snapshot || {};
     const items = [
-      [s.phase && s.phase !== "seeded-by-claude", "Pipeline reports here after each run", "Add GitHub secret SG_COMMAND_KEY (Supabase → Vault → sg_command_ingest) and merge PR #1."],
+      [!!d.live, "Live status from GitHub", "Reload this page."],
+      [s.phase && !["seeded-by-claude", "live from GitHub"].includes(s.phase), "Runs report here as they happen, and obey Pause", "Add GitHub secret SG_COMMAND_KEY (Supabase → Vault → sg_command_ingest) and merge PR #1."],
       [(d.commands || []).some((c) => ["stop", "retry", "run_produce", "run_publish"].includes(c.action) && c.state === "done"), "Buttons can start and stop GitHub runs", "Add GITHUB_TOKEN in Supabase → Edge Functions → Secrets. Shows as done after the first successful button."],
       [d.telegram === true, "Telegram buttons", "After the two steps above and SG_COMMAND_KEY in the Mac's .env: GitHub → Actions → telegram-setup → Run (on)."],
       [!!wp, "Waypoint panel", "Reconnect the Supabase connector with Waypoint's organisation allowed."],
@@ -615,7 +672,9 @@ Reply with only JSON: {"action": "...", "args": {...}, "summary": "one short sen
     if (!mcp) { showConn("This view can't reach your connectors. Open the link in Chrome or Safari at claude.ai, signed in as the owner (the Claude phone app may not allow it yet).", "mcp=null"); return; }
     if (!sample) $("ask-go").disabled = true;
     await connect();
-    setInterval(() => { if (document.visibilityState === "visible" && !busy) load(); }, 120000);
+    setInterval(() => { if (document.visibilityState === "visible" && !busy) load(); }, 30000);
+    setInterval(tick, 1000);
+    document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && Date.now() - lastLoad > 30000) load(); });
   })();
 })();
 </script>

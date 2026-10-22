@@ -6,6 +6,7 @@
 //   POST /telegram         the bot's webhook (x-telegram-bot-api-secret-token = Vault telegram_webhook_secret)
 //   POST /telegram-setup   {token, chat_id, on}: store the bot in Vault and switch the webhook on or off (x-sg-key)
 //   POST /telegram-inbox   messages that are not commands, for the Mac inbox (x-sg-key); answers {webhook, messages}
+//   POST /refresh          live status from the public sg-content and arthvan-media repos (x-hook-secret; command.refresh())
 // Only the actions below exist; anything else is rejected and recorded.
 import postgres from "npm:postgres@3.4.5";
 
@@ -156,6 +157,95 @@ async function hook(req: Request): Promise<Response> {
   const { id } = await req.json();
   const out = await run(Number(id));
   return json({ ok: out.state === "done" || out.state === "skipped", ...out });
+}
+
+// ---------- live status from GitHub ----------
+const API = "https://api.github.com";
+const DAY_MS = 86400e3;
+type Cache = Record<string, { etag: string | null; body: unknown }>;
+
+// Conditional requests: an unchanged answer is a 304, which GitHub does not count against the hourly limit.
+async function ghGet(url: string, cache: Cache, opts: { sha?: boolean; slim?: (b: any) => unknown } = {}) {
+  const headers: Record<string, string> = { accept: opts.sha ? "application/vnd.github.sha" : "application/vnd.github+json",
+    "user-agent": "sg-command", "x-github-api-version": "2022-11-28" };
+  const token = Deno.env.get("GITHUB_TOKEN");
+  if (token) headers.authorization = `Bearer ${token}`;
+  const hit = cache[url];
+  if (hit?.etag) headers["if-none-match"] = hit.etag;
+  const res = await fetch(url, { headers });
+  if (res.status === 304 && hit) return { changed: false, body: hit.body as any };
+  if (!res.ok) throw new Error(`GitHub ${res.status}${res.headers.get("x-ratelimit-remaining") === "0" ? ": hourly limit reached" : ""}`);
+  const raw = opts.sha ? (await res.text()).trim() : await res.json();
+  const body = opts.slim ? opts.slim(raw) : raw;
+  cache[url] = { etag: res.headers.get("etag"), body };
+  return { changed: true, body: body as any };
+}
+
+async function rawFile(repo: string, sha: string, path: string, json = true): Promise<any> {
+  const res = await fetch(`https://raw.githubusercontent.com/SGULIA20/${repo}/${sha}/${path}`);
+  if (!res.ok) return null;
+  return json ? res.json().catch(() => null) : res.text();
+}
+
+const slimRuns = (b: any) => (b.workflow_runs ?? []).map((w: any) => ({ id: w.id, name: w.name, status: w.status, conclusion: w.conclusion,
+  event: w.event, created_at: w.created_at, started_at: w.run_started_at, updated_at: w.updated_at, url: w.html_url }));
+const lastKeys = (d: any, n = 3) => (d && typeof d === "object") ? Object.fromEntries(Object.keys(d).sort().slice(-n).map((k) => [k, d[k]])) : {};
+
+async function sgSnapshot(sha: string) {
+  const list = await ghGet(`${API}/repos/SGULIA20/sg-content/contents/pieces?ref=${sha}`, {},       // once per new commit: not worth caching
+    { slim: (b: any) => (Array.isArray(b) ? b : []).map((f: any) => f.name) });
+  const today = new Date(Date.now() + 5.5 * 3600e3);                       // IST, the pipeline's calendar
+  const from = new Date(today.getTime() - 3 * DAY_MS).toISOString().slice(0, 10), to = new Date(today.getTime() + 14 * DAY_MS).toISOString().slice(0, 10);
+  const names = (list.body as string[]).filter((n) => /^\d{4}-\d{2}-\d{2}-/.test(n) && n.slice(0, 10) >= from && n.slice(0, 10) <= to);
+  const pieces = (await Promise.all(names.map((n) => rawFile("sg-content", sha, `pieces/${n}`)))).filter(Boolean).map((p: any) => ({
+    id: p.id, channel: p.channel, kind: p.kind, status: p.status, publish_day: p.publish_day,
+    reasons: (p.reasons ?? []).slice(-3).map((r: string) => String(r).slice(0, 240)), yt_id: p.ids?.yt_id ?? "", updated: p.updated ?? "",
+    linkedin_id: p.ids?.linkedin_id ?? "" })).sort((a: any, b: any) => (a.id < b.id ? 1 : -1));
+  const runsText = (await rawFile("sg-content", sha, "logs/runs.jsonl", false)) ?? "";
+  const runs = runsText.trim().split("\n").slice(-12).map((l: string) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean).reverse();
+  const [voice, claude, images] = await Promise.all(["voice-budget", "claude-spend", "image-spend"].map((f) => rawFile("sg-content", sha, `logs/${f}.json`)));
+  return { phase: "live from GitHub", at: new Date().toISOString(), sha, today_ist: today.toISOString().slice(0, 10), github_run: "",
+    pieces, runs, spend: { voice_requests: lastKeys(voice), claude: lastKeys(claude), images: lastKeys(images) } };
+}
+
+async function appsToday(sha: string) {
+  const lagos = new Date(Date.now() + 3600e3).toISOString().slice(0, 10);
+  const [log, schedule] = await Promise.all([rawFile("arthvan-media", sha, "logs/posts.jsonl", false), rawFile("arthvan-media", sha, "content/schedule.json")]);
+  const posts = String(log ?? "").trim().split("\n").map((l) => { try { return JSON.parse(l); } catch { return null; } })
+    .filter((x: any) => x && x.date === lagos)
+    .map((x: any) => ({ channel: x.channel ?? (x.app ? `${x.app} reel` : "?"), item: x.item, status: x.status, at: x.at ?? "", app: x.app ?? "" }));
+  const s = schedule && typeof schedule === "object" ? schedule : {};
+  const item = (s.days ?? s.schedule ?? s)[lagos] ?? null;
+  return { date: lagos, item: typeof item === "string" ? item : item ? JSON.stringify(item).slice(0, 80) : null, posts };
+}
+
+async function refresh(): Promise<Response> {
+  const cache: Cache = ((await sql`select value from command.control where key = 'github.cache'`)[0]?.value ?? {}) as Cache;
+  const live: Record<string, unknown> = { at: new Date().toISOString(), errors: [] as string[], token: !!Deno.env.get("GITHUB_TOKEN") };
+  const errors = live.errors as string[];
+  for (const repo of ["sg-content", "arthvan-media"]) {
+    try { live[repo] = (await ghGet(`${API}/repos/SGULIA20/${repo}/actions/runs?per_page=8`, cache, { slim: slimRuns })).body; }
+    catch (e) { errors.push(`${repo} runs: ${(e as Error).message}`); }
+  }
+  try {
+    const sha = await ghGet(`${API}/repos/SGULIA20/sg-content/commits/main`, cache, { sha: true });
+    const cur = (await sql`select payload->>'sha' as sha from command.status where source = 'sg-content' and key = 'snapshot'`)[0]?.sha;
+    if (sha.changed || cur !== sha.body) {
+      const snap = await sgSnapshot(String(sha.body));
+      await sql`insert into command.status (source, key, payload) values ('sg-content', 'snapshot', ${sql.json(snap as postgres.JSONValue)})
+                on conflict (source, key) do update set payload = excluded.payload, updated_at = now()`;
+    }
+  } catch (e) { errors.push(`sg-content files: ${(e as Error).message}`); }
+  try {
+    const sha = await ghGet(`${API}/repos/SGULIA20/arthvan-media/commits/main`, cache, { sha: true });
+    const today = await appsToday(String(sha.body));
+    await sql`insert into command.status (source, key, payload) values ('arthvan-media', 'today', ${sql.json(today as postgres.JSONValue)})
+              on conflict (source, key) do update set payload = excluded.payload, updated_at = now()`;
+  } catch (e) { errors.push(`arthvan-media files: ${(e as Error).message}`); }
+  await sql`insert into command.status (source, key, payload) values ('github', 'runs', ${sql.json(live as postgres.JSONValue)})
+            on conflict (source, key) do update set payload = excluded.payload, updated_at = now()`;
+  await sql`update command.control set value = ${sql.json(cache as postgres.JSONValue)}, updated_at = now() where key = 'github.cache'`;
+  return json({ ok: errors.length === 0, errors });
 }
 
 // ---------- Telegram ----------
@@ -325,6 +415,10 @@ Deno.serve(async (req) => {
   const route = new URL(req.url).pathname.split("/").filter(Boolean).pop() ?? "";
   try {
     if (route === "hook" && req.method === "POST") return await hook(req);
+    if (route === "refresh" && req.method === "POST") {
+      if (!same(req.headers.get("x-hook-secret") ?? "", await vault("sg_command_hook"))) return json({ error: "forbidden" }, 403);
+      return await refresh();
+    }
     if (route === "telegram" && req.method === "POST") return await telegramWebhook(req);
     if (route === "control" && req.method === "GET") return await pipeline(req, route);
     if (["ingest", "pause", "telegram-setup", "telegram-inbox"].includes(route) && req.method === "POST") return await pipeline(req, route);
