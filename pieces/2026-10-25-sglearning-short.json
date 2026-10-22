@@ -2,308 +2,238 @@
  "channel": "sglearning",
  "facts": [
   {
-   "label": "reported",
-   "number": 22811.35,
-   "quote": "The Nifty 50 declined 77.60 points, or 0.34%, to close at 22,811.35.",
-   "source_date": "2026-10-22",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-in-news-reliance-industries-eternal-alkem-labs-bel-hpcl-swiggy-and-gmdc/articleshow/135102947.cms",
-   "text": "The Nifty 50 declined by 77.60 points, or 0.34%, to settle at 22,811.35 on Wednesday as banking stocks faced selling pressure.",
-   "unit": "index points"
-  },
-  {
    "label": "analyst-view",
-   "number": 22700.0,
-   "quote": "According to Hariselvan Radhakrishnan, founder and CEO of HST Wealth, the 22,900–23,000 zone is likely to act as resistance, while 22,700 remains the immediate support for the index.",
-   "source_date": "2026-10-22",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-in-news-reliance-industries-eternal-alkem-labs-bel-hpcl-swiggy-and-gmdc/articleshow/135102947.cms",
-   "text": "Technical analysis places immediate market support for the Nifty 50 index at 22,700 points.",
-   "unit": "index points"
-  },
-  {
-   "label": "reported",
-   "number": 12000.0,
-   "quote": "Reliance Industries said ICRA has reaffirmed its credit ratings of [ICRA]AAA (Stable) on its non-convertible debenture programme worth Rs 12,000 crore and assigned the same rating to bank loan facilities worth Rs 50,000 crore.",
-   "source_date": "2026-10-22",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-in-news-reliance-industries-eternal-alkem-labs-bel-hpcl-swiggy-and-gmdc/articleshow/135102947.cms",
-   "text": "ICRA reaffirmed its AAA rating on Reliance Industries' non-convertible debenture programme of Rs 12,000 crore.",
-   "unit": "crore INR"
-  },
-  {
-   "label": "reported",
-   "number": 125.0,
-   "quote": "Eternal, the parent company of Zomato and Blinkit, reported a 92.3% year-on-year increase in consolidated net profit to Rs 125 crore for the second quarter of FY27, compared with Rs 65 crore a year earlier.",
-   "source_date": "2026-10-22",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-in-news-reliance-industries-eternal-alkem-labs-bel-hpcl-swiggy-and-gmdc/articleshow/135102947.cms",
-   "text": "Zomato and Blinkit parent company Eternal recorded a 92.3% year-on-year jump in consolidated net profit to Rs 125 crore for Q2 FY27.",
-   "unit": "crore INR"
-  },
-  {
-   "label": "reported",
-   "number": 24138.0,
-   "quote": "Revenue from operations surged 77.6% to Rs 24,138 crore from Rs 13,590 crore in the year-ago quarter.",
-   "source_date": "2026-10-22",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-in-news-reliance-industries-eternal-alkem-labs-bel-hpcl-swiggy-and-gmdc/articleshow/135102947.cms",
-   "text": "Eternal's quarterly revenue from operations expanded by 77.6% year-on-year to reach Rs 24,138 crore.",
-   "unit": "crore INR"
-  },
-  {
-   "label": "reported",
-   "number": 770.0,
-   "quote": "The Ministry of Defence has signed a Rs 770 crore contract with Bharat Electronics (BEL) for the supply of improved low-level light-weight radar (LLLR-I) systems to the Indian Army.",
-   "source_date": "2026-10-22",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-in-news-reliance-industries-eternal-alkem-labs-bel-hpcl-swiggy-and-gmdc/articleshow/135102947.cms",
-   "text": "Bharat Electronics secured a contract valued at Rs 770 crore from the Ministry of Defence to deliver radar systems to the Indian Army.",
-   "unit": "crore INR"
-  },
-  {
-   "label": "reported",
-   "number": 5550.0,
-   "quote": "The company has set the floor price at Rs 5,550 per equity share.",
-   "source_date": "2026-10-22",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-in-news-reliance-industries-eternal-alkem-labs-bel-hpcl-swiggy-and-gmdc/articleshow/135102947.cms",
-   "text": "Persistent Systems fixed the floor price for its equity qualified institutional placement at Rs 5,550 per share.",
-   "unit": "INR"
-  },
-  {
-   "label": "reported",
-   "number": 223.55,
-   "quote": "Gujarat Mineral Development Corporation (GMDC) has presented a dividend cheque of Rs 223.55 crore to the Gujarat government, representing the state's share of the company's final dividend for FY26.",
-   "source_date": "2026-10-22",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-in-news-reliance-industries-eternal-alkem-labs-bel-hpcl-swiggy-and-gmdc/articleshow/135102947.cms",
-   "text": "Gujarat Mineral Development Corporation delivered a dividend payment of Rs 223.55 crore to the Gujarat state government as its final FY26 payout.",
-   "unit": "crore INR"
+   "number": 4.22,
+   "quote": "Nippon Life India Asset Management Ltd. is expected to report a 22.3% on-year rise in consolidated net profit to INR 4.22 billion for the September quarter, according to the average of estimates from 15 brokerages.",
+   "source_date": "2026-10-21",
+   "source_name": "Informist",
+   "source_url": "https://www.informistmedia.com/earnings-outlook-nippon-life-q2-net-profit-seen-rising-22-on-year/",
+   "text": "Nippon Life India Asset Management, which oversees mutual fund investments and SIPs for millions of household savers, is estimated to report a quarterly net profit of 4.22 billion INR.",
+   "unit": "billion INR"
   }
  ],
  "id": "2026-10-25-sglearning-short",
- "ids": {},
+ "ids": {
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "3w-yIP47rgc"
+ },
  "kind": "short",
  "publish_day": "2026-10-25",
  "reasons": [
   "try 1: length: 130 words, allowed 150-230; advice: stock tip",
   "try 2: advice: stock tip; length: 128 words, allowed 150-230; advice: stock tip",
-  "try 3: numbers without a source: 92, 27, 27"
+  "try 3: numbers without a source: 92, 27, 27",
+  "try 1: length: 145 words, allowed 150-230; numbers without a source: 22.3"
  ],
  "script": {
   "captions": {
    "instagram": {
-    "caption": "Profit uchhla, par bacha kitna? 🍔\nEternal ki bikri 24,138 crore, aur kharche kaat kar bacha 125 crore.\nHeadline percent dikhati hai, asli kahani rupaye sunaate hain.\nAap sirf headline padhte ho, ya poora number?\nYeh investment advice nahi hai.\nUs bhai ko bhejo jo raat ko biryani order karte karte share ke sapne dekhta hai.",
+    "caption": "Aapki SIP se kisne profit kamaya? 💸\nResults day pe ek fund house ka net profit lagbhag 4.22 billion rupaye estimate hai.\nYeh kamai aati hai expense ratio se, jo market upar ho ya neeche, kat-ta rehta hai.\nAapko apne fund ka expense ratio pata hai?\nYeh investment advice nahi hai.\nUs bhai ko bhejo jo kehta hai results sirf traders ke liye hote hain.",
     "hashtags": [
+     "#SIP",
+     "#MutualFunds",
      "#PaiseKiKhabar",
      "#SeedhiBaat",
-     "#StockMarketIndia",
-     "#ShareMarket",
-     "#HinglishFinance",
-     "#InvestingIndia",
+     "#PersonalFinanceIndia",
      "#LearningWithSG"
     ]
    },
    "threads": {
-    "text": "Headline boli profit mein zabardast uchhaal. Par Eternal ki bikri 24,138 crore thi, aur bacha sirf 125 crore. Percent aur rupaye ki kahani alag hoti hai. Aap sirf headline padhte ho, ya poora number? #PaiseKiKhabar #MoneyTipsHindi"
+    "text": "Results day sirf traders ka nahi. Ek fund house ka quarterly profit lagbhag 4.22 billion rupaye estimate hai, aur fees aapki SIP se kat-ti hai, market upar ho ya neeche. Aapko apne fund ka expense ratio pata hai? #PaiseKiKhabar #MoneyTipsHindi"
    },
    "youtube": {
     "chapters": [],
-    "description": "Headline ne kaha profit uchhla, par bikri ke saamne bacha kitna? Eternal, yaani Zomato aur Blinkit wali company, ki kul bikri aur asli bachat ka farq is kahani mein dekhiye. Percent ki headline aur rupaye ki sachchai mein bada fark hota hai. Us bhai ko bhejo jo headline padh kar hi share ke sapne dekhne lagta hai.",
+    "description": "Results day sirf traders ka khel nahi hai, aapki SIP bhi is kahani mein hai. Ek fund house ka quarterly net profit lagbhag 4.22 billion rupaye estimate hai, aur woh paisa aap jaise SIP walon ki fees se banta hai. Expense ratio yaani fund se har saal chupchap kati fees, market upar ho ya neeche. Us bhai ko bhejo jo kehta hai results sirf traders ke liye hote hain.",
     "tags": [
-     "Zomato",
-     "Eternal",
-     "Eternal results",
-     "Q2 results",
-     "profit vs revenue",
-     "share market Hindi",
-     "stock market basics",
-     "Blinkit",
+     "SIP",
+     "mutual fund",
+     "expense ratio",
+     "AMC",
+     "quarterly results",
+     "Nippon Life India AMC",
+     "results day",
+     "personal finance",
      "Hinglish finance",
-     "Learning with SG",
-     "paise ki khabar"
+     "Learning with SG"
     ],
-    "title": "Zomato profit 92% up, par bacha kitna?"
+    "title": "SIP fees: AMC ka 4.22 billion profit kaise?"
    }
   },
-  "cards": [
-   {
-    "big_number": "₹24,138 cr",
-    "line": "Eternal ki kul bikri (revenue), Q2 FY27",
-    "source": "ET, 22 Oct 2026"
-   },
-   {
-    "big_number": "₹125 cr",
-    "line": "Saare kharche kaat kar bacha profit, Q2 FY27",
-    "source": "ET, 22 Oct 2026"
-   }
-  ],
+  "cards": [],
   "carousel": false,
-  "end_question": "Aap sirf headline padhte ho, ya poora number? Comment mein batao.",
-  "hook": "Aadhi raat ko, Bhai ne phir se biryani order ki.",
+  "end_question": "Aapko apne fund ka expense ratio pata hai? Haan ya nahi, comment kariye.",
+  "hook": "Results ka din hai, aur Bhai ke phone par notification bajta hai.",
   "scenes": [
    {
     "facts_used": [],
-    "label": null,
+    "label": "setup",
     "visual": {
      "card": null,
-     "prompt": "BHAI in his hoodie slouched on a sofa at midnight, phone glowing in his hand, a food delivery bag hanging on the door handle, dim living room, relaxed and happy",
+     "prompt": "Morning in a small Indian living room, BHAI in a hoodie lounging on a sofa, his phone lighting up with a news alert, relaxed and half-interested, sunlight through the window",
      "type": "art"
     },
-    "vo": "Aadhi raat ko, Bhai ne phir se biryani order ki."
+    "vo": "Results ka din hai, aur Bhai ke phone par notification bajta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "Close view of a phone screen held in a hand showing a long scrolling list of company logos as abstract colourful tiles, a busy market news feel, no readable text",
+     "type": "art"
+    },
+    "vo": "Swiggy, HPCL, Colgate, sab aaj apna quarterly profit batayenge."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI tosses his phone onto the sofa cushion with a shrug and a confident smirk, MUMMY in a saree in the background holding a cup of chai, casual morning mood",
+     "type": "art"
+    },
+    "vo": "Bhai kehta hai, yeh traders ka khel hai. Main share nahi kharidta, main toh bas har mahine SIP karta hoon."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI leaning back with hands behind his head, a thought bubble showing a piggy bank dropping coins into a big glass jar labelled only with a coin symbol, carefree expression",
+     "type": "art"
+    },
+    "vo": "SIP yaani har mahine fixed paisa mutual fund mein. Fund manager sambhalega, mujhe results se kya."
    },
    {
     "facts_used": [
-     3
+     0
     ],
-    "label": "reported",
+    "label": "what happened",
     "visual": {
      "card": null,
-     "prompt": "Close view of BHAI's face lit by a phone screen, a news notification popping up, his eyebrows raised in excitement, night",
+     "prompt": "A tall glass office building of a fund house at midday, people in office wear walking in, a giant glowing jar of coins visible through the glass lobby, slightly ominous tone",
      "type": "art"
     },
-    "vo": "Order hote hi phone pe headline chamki, profit mein zabardast uchhaal."
+    "vo": "Lekin usi list mein ek naam aur tha, Nippon Life India AMC."
+   },
+   {
+    "facts_used": [],
+    "label": "what happened",
+    "visual": {
+     "card": null,
+     "prompt": "Inside a fund house office, rows of desks with screens showing rising and falling lines, a stream of small coins flowing in from many tiny houses drawn along the wall, busy daytime",
+     "type": "art"
+    },
+    "vo": "AMC yaani asset management company, woh company jo aapke SIP ka paisa chalati hai."
    },
    {
     "facts_used": [
-     3
+     0
     ],
-    "label": "reported",
+    "label": "what happened",
     "visual": {
      "card": null,
-     "prompt": "A busy city street at night with delivery riders on scooters carrying food bags and grocery bags, shops glowing, rain-wet road",
+     "prompt": "A group of analysts around a conference table looking at a huge stack of currency bundles growing on the table, impressed faces, evening light through office blinds",
      "type": "art"
     },
-    "vo": "Company thi Eternal, yaani Zomato aur Blinkit wali company."
+    "vo": "Analysts ka andaaza hai, is quarter uska net profit lagbhag 4.22 billion rupaye rahega."
    },
    {
     "facts_used": [],
-    "label": null,
+    "label": "what happened",
     "visual": {
      "card": null,
-     "prompt": "BHAI grinning confidently on the sofa, imagining a thought bubble of many apartment windows each with a delivery bag at the door, night",
+     "prompt": "A long winding queue of ordinary Indian people, a teacher, a delivery rider, a young office worker, each dropping a coin into one giant funnel leading to the fund house building, afternoon",
      "type": "art"
     },
-    "vo": "Bhai muskuraya, main roz order karta hoon, poora sheher karta hai."
+    "vo": "Yeh paisa aata kahan se hai? Aapke jaise lakhon SIP walon se."
    },
    {
     "facts_used": [],
-    "label": null,
+    "label": "what happened",
     "visual": {
      "card": null,
-     "prompt": "BHAI leaning forward with his phone, a dreamy look, imagining a rising arrow made of food boxes climbing into the sky, playful doodle style",
+     "prompt": "A tiny pair of scissors quietly snipping a thin slice off a tall stack of coins inside a glass jar, BHAI's jar on a shelf at home, unnoticed, soft night light",
      "type": "art"
     },
-    "vo": "Toh company paisa chhaap rahi hogi, share bhi bhaagega hi."
+    "vo": "Har fund har saal ek chhoti fees kaat-ta hai, jise expense ratio kehte hain. Yeh fees fund ki value se chupchap kat jaati hai, koi bill nahi aata."
    },
    {
     "facts_used": [],
-    "label": null,
+    "label": "twist",
     "visual": {
      "card": null,
-     "prompt": "BEHEN in office wear standing at the doorway with a laptop bag, arms crossed, sceptical half smile, BHAI showing her his phone, late night",
+     "prompt": "Split panel: on the left a market line going up with sunshine, on the right a line going down with rain, in both halves the same small scissors snipping coins from a jar",
      "type": "art"
     },
-    "vo": "Usne Behen ko bataya, Behen ne bas ek sawaal poocha."
+    "vo": "Ab twist suniye. Market upar jaaye ya neeche, yeh fees har haal mein kat-ti hai."
    },
    {
     "facts_used": [],
-    "label": null,
+    "label": "twist",
     "visual": {
      "card": null,
-     "prompt": "BEHEN pointing at the phone screen with one finger, calm and curious, BHAI looking puzzled, warm lamp light in the room",
+     "prompt": "BHAI sitting up straight on the sofa at night, phone in hand, eyes wide in realisation, his face lit by the phone screen, chai cup gone cold beside him",
      "type": "art"
     },
-    "vo": "Bikri kitni hui, aur haath mein bacha kitna, yeh dekha?"
-   },
-   {
-    "facts_used": [
-     4
-    ],
-    "label": "reported",
-    "visual": {
-     "card": null,
-     "prompt": "A giant mountain of food delivery bags and grocery bags piled high under a night sky, tiny delivery riders around its base, sense of huge scale",
-     "type": "art"
-    },
-    "vo": "Revenue yaani company ki kul bikri, is baar 24,138 crore rupaye."
-   },
-   {
-    "facts_used": [
-     3
-    ],
-    "label": "reported",
-    "visual": {
-     "card": null,
-     "prompt": "The same mountain of bags now shown beside one small single delivery bag on a table, a spotlight on the small bag, BHAI staring at it in surprise",
-     "type": "art"
-    },
-    "vo": "Profit yaani saare kharche kaat kar jo bacha, sirf 125 crore."
+    "vo": "Matlab fund house ki kamai zyadatar aapke paise ke size se aati hai, return se nahi."
    },
    {
     "facts_used": [],
-    "label": null,
+    "label": "what to do",
     "visual": {
      "card": null,
-     "prompt": "A large warehouse at night with workers packing orders, delivery riders leaving, a shop owner receiving rent, money flowing out in many directions, busy and tiring",
+     "prompt": "SG in a striped shirt sitting beside BHAI at the dining table, calmly pointing at BHAI's phone, BHAI nodding and paying attention, warm evening light",
      "type": "art"
     },
-    "vo": "Delivery wale, discount, godaam, kiraya, sab kuch isi bikri se nikla."
-   },
-   {
-    "facts_used": [
-     3
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A tiny seedling next to a slightly taller seedling on a windowsill, a magnifying glass making the small growth look enormous, BEHEN holding the glass and smiling",
-     "type": "art"
-    },
-    "vo": "Twist yeh hai, percent ki uchhaal tab badi lagti hai, jab shuruaat chhoti ho."
+    "vo": "Toh aaj apne fund ka expense ratio dekhiye. Yeh investment advice nahi hai."
    },
    {
     "facts_used": [],
-    "label": null,
+    "label": "end question",
     "visual": {
      "card": null,
-     "prompt": "SG in a striped shirt sitting with BHAI at a dining table, calmly sketching two boxes on a notepad, BHAI nodding thoughtfully, warm late night light",
+     "prompt": "BHAI looking straight at the viewer with a curious half smile, holding up his phone, cozy living room at night, inviting mood",
      "type": "art"
     },
-    "vo": "Headline percent dikhati hai, asli kahani rupaye sunaate hain. Agli baar bikri aur bachat, dono saath dekhna. Yeh investment advice nahi hai."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "BHAI putting his phone down on the sofa armrest, looking straight ahead with a thoughtful smile, empty biryani box beside him, night",
-     "type": "art"
-    },
-    "vo": "Aap sirf headline padhte ho, ya poora number? Comment mein batao."
+    "vo": "Aapko apne fund ka expense ratio pata hai? Haan ya nahi, comment kariye."
    }
   ],
   "thumbnail": {
-   "scene": "BHAI stares at his glowing phone in the dark, eyes wide and mouth open, a half-eaten biryani box on his lap",
+   "scene": "BHAI stares wide-eyed at his phone at night while tiny scissors snip coins from a glass jar beside him",
    "words": [
-    "₹125 CR",
-    "BAS ITNA?"
+    "HIDDEN",
+    "FEES"
    ]
   },
-  "title": "Profit uchhla, par *bacha* kitna? 🍔"
+  "title": "Aapki *SIP* se kisne kamaya profit? 💸"
  },
- "status": "rejected",
- "timings": [],
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  5.13,
+  11.94,
+  18.91,
+  26.32,
+  31.65,
+  38.82,
+  45.47,
+  51.32,
+  60.85,
+  67.54,
+  73.79,
+  83.64
+ ],
  "topic": {
-  "link": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-in-news-reliance-industries-eternal-alkem-labs-bel-hpcl-swiggy-and-gmdc/articleshow/135102947.cms",
-  "published": "2026-10-22T00:30:00+00:00",
+  "link": "https://www.livemint.com/market/stock-market-news/q2-results-2026-today-schedule-swiggy-adani-energy-hpcl-53-more-firms-to-declare-quarterly-earnings-oct-22-tue-list-11792636869326.html",
+  "published": "2026-10-22T03:18:04+00:00",
   "rank": 3,
-  "source": "ET Markets",
-  "summary": "Indian markets witnessed a downturn on Wednesday, prompted by significant selling in banking stocks. After showing initial promise, the Nifty 50 index dropped by 77.60 points to close at 22,811.35. Reliance Industries celebrated a reaffirmation from ICRA concerning its non-convertible debenture program, valued at Rs 12,000 crore. Eternal also reported impressive year-on-year growth in Q2 revenue and net profits.",
+  "source": "Mint Markets",
+  "summary": "Q2 results 2026 today, schedule: Key companies set to declare their quarterly earnings today include Swiggy, Adani Energy Solutions, Hindustan Petroleum Corporation, Adani Total Gas, Colgate Palmolive (India).",
   "target_minutes": null,
-  "title": "Stocks in news: Reliance Industries, Eternal, Alkem Labs, BEL, HPCL, Swiggy and GMDC"
+  "title": "Q2 results 2026 today, schedule: Swiggy, Adani Energy, HPCL 53 more firms to declare quarterly earnings; Oct 22 Tue list",
+  "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-22T01:04:08+00:00",
+ "updated": "2026-10-22T03:34:10+00:00",
  "writer": "claude"
 }
