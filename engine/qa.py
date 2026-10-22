@@ -70,7 +70,7 @@ def narration_intact(path: Path, speech_end: float, window: float = 0.9) -> bool
                 best = max(best, float(np.sqrt((seg ** 2).mean())))
             t += step / 2
         return best
-    last = peak(speech_end - 2.5, speech_end)                   # the last words of the last line (22 Oct 2026: a 14 s line ends with ~0.5 s of silence)
+    last = peak(speech_end - 1.5, speech_end)                   # the last word of the last line (TTS lines end with ~0.5 s of silence; a 2 s cut still fails)
     after = peak(speech_end + 0.5, speech_end + 1.5 + window)    # music only, under the end card
     return last > 400 and last > 2.0 * max(after, 1.0)
 

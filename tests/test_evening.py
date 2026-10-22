@@ -65,3 +65,11 @@ def test_tomorrow_plan_lists_times_in_lagos_time():
     assert "14:30  Learning with SG long video: YouTube" in plan and "15:30  Shorts on both channels: YouTube" in plan
     assert "15:37  Waypoint set" in plan or "15:37  ScoreMyBiz set" in plan and "17:00  SG-MYTH-WORLD Reel and Story" in plan
     assert "SG-MYTH-WORLD long video" not in plan
+
+
+def test_a_skipped_story_with_no_reel_yet_is_simply_not_posted(tmp_path):
+    day = date(2026, 10, 22)
+    (tmp_path / "pieces").mkdir()
+    _piece(tmp_path, "2026-10-22-arthvan-short", "arthvan", "short", day, yt_id="b", ig_story_id="skipped: Reel over 60 s")
+    text = evening.build(day, datetime(2026, 10, 22, 18, 0, tzinfo=timezone.utc), tmp_path, [])
+    assert "SG-MYTH Short\n   YouTube: ✅ Posted\n   Instagram: 🔴 NOT POSTED" in text
