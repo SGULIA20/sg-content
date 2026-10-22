@@ -32,9 +32,9 @@ def test_scorecard_marks_each_cell_posted_or_not(tmp_path):
     _piece(tmp_path, "2026-10-22-arthvan-long", "arthvan", "long", day, yt_id="c")
     late = datetime(2026, 10, 22, 18, 0, tzinfo=timezone.utc)                # 23:30 IST, after every slot
     text = evening.build(day, late, tmp_path, APP_LOG)
-    assert text.startswith("📋 Evening status Thu 22 Oct 2026 — 3 NOT POSTED 🔴")
+    assert text.startswith("📋 Evening status Thu 22 Oct 2026 — 2 NOT POSTED 🔴")
     assert "ScoreMyBiz Reel\n   YouTube: ✅ Posted\n   Instagram: ✅ Posted" in text
-    assert "ScoreMyBiz Post\n   Instagram: ✅ Posted\n   Threads: ✅ Posted\n   LinkedIn: 🔴 NOT POSTED" in text   # yesterday's LinkedIn does not count
+    assert "ScoreMyBiz Post\n   Instagram: ✅ Posted\n   Threads: ✅ Posted\n   LinkedIn" not in text                   # nothing from the apps goes to LinkedIn
     assert "SG-LEARNING Short\n   YouTube: ✅ Posted\n   Instagram: ✅ Posted\n   Threads: ✅ Posted\n   LinkedIn" not in text      # no videos on LinkedIn (founder, 22 Oct 2026)
     assert "SG-MYTH Short\n   YouTube: ✅ Posted\n   Instagram: 🔴 Reel only\n   Threads: 🔴 NOT POSTED" in text
     assert "SG-MYTH long video\n   YouTube: ✅ Posted" in text and "SG-LEARNING long video" not in text

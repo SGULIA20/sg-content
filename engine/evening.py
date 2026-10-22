@@ -58,7 +58,7 @@ def _app_rows(day: date, log: list) -> list:
     name = APP_NAMES[app]
     cell = lambda ok: OK if ok else NO
     return [(f"{name} Reel", {"YouTube": cell(APP_YT[app] in chan), "Instagram": cell(bool(insta.get("reel")))}),
-            (f"{name} Post", {"Instagram": cell(bool(insta.get("post"))), "Threads": cell("threads" in chan), "LinkedIn": cell("linkedin" in chan)}),
+            (f"{name} Post", {"Instagram": cell(bool(insta.get("post"))), "Threads": cell("threads" in chan)}),             # no LinkedIn: founder, 22 Oct 2026
             (f"{name} Story", {"Instagram": cell(bool(insta.get("story")))})]
 
 
@@ -120,7 +120,7 @@ def tomorrow_plan(day: date) -> str:
         if t.weekday() in ch.long_days:
             rows.append((_wat(ch.long_publish_ist), "YouTube", f"{label} long video"))
     rows.append((_wat(CHANNELS["sglearning"].short_publish_ist), "YouTube", "Shorts on both channels"))
-    rows.append(("15:37", "Instagram + Threads + YouTube, LinkedIn slides on slide days", f"{app} set (Reel, post, Story)"))
+    rows.append(("15:37", "Instagram + Threads + YouTube", f"{app} set (Reel, post, Story)"))
     rows.append((_wat(CHANNELS["arthvan"].ig_slot_ist), "Instagram + Threads", "SG-MYTH-WORLD Reel and Story"))
     rows.sort()
     return "\n".join([f"📅 Tomorrow {t.strftime('%a %d %b')} (Lagos time)"] + [f"   {hh}  {what}: {where}" for hh, where, what in rows])
