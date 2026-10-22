@@ -173,3 +173,15 @@ def test_instagram_failure_still_posts_threads(tmp_path):
     q = pieces.load(p.id, tmp_path)
     assert code == 0 and th and q.ids["threads_id"] == "th1" and q.ids["ig_reel_id"] == "r1"
     assert q.status == "uploaded"                                    # the Story is still missing: the next run retries it
+
+
+def test_a_posted_short_is_due_again_when_a_newly_configured_platform_is_missing(tmp_path):
+    from datetime import datetime, timezone
+    (tmp_path / "pieces").mkdir()
+    p = pieces.Piece(id="2026-10-22-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 10, 22))
+    p.status = "posted"; p.ids = {"yt_id": "y", "ig_reel_id": "r", "ig_story_id": "s", "threads_id": "t", "out_sha": "abc"}
+    pieces.save(p, tmp_path)
+    now = datetime(2026, 10, 22, 9, 30, tzinfo=timezone.utc)
+    assert publish.due(tmp_path, now, "sglearning", {}) == []                                           # nothing owed without LinkedIn keys
+    env = {"LINKEDIN_ACCESS_TOKEN": "t", "LINKEDIN_PERSON_URN": "urn:li:person:x"}
+    assert [q.id for q in publish.due(tmp_path, now, "sglearning", env)] == [p.id]                        # LinkedIn owed once its keys exist

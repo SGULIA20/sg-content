@@ -31,8 +31,10 @@ def due(root: Path, now_utc: datetime, channel: str, env=None) -> list:
     out = []
     today = now_ist.date()
     for p in pieces.list_all(root):
-        if p.channel != channel or p.kind != "short" or p.status != "uploaded":
+        if p.channel != channel or p.kind != "short" or p.status not in ("uploaded", "posted"):
             continue
+        if p.status == "posted" and not all(p.ids.get(k) for k in PLATFORM_IDS):             # "posted" counts only when it earned it; then a
+            continue                                                                        # platform configured later (LinkedIn, 22 Oct) is still owed
         if not (today - timedelta(days=RETRY_DAYS) <= p.publish_day <= today):      # today's slot, or a recent day whose post failed
             continue
         if p.ids.get("unlisted"):                                                  # first-day unlisted uploads stay off Instagram and Threads
