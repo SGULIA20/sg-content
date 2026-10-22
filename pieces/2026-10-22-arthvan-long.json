@@ -63,7 +63,16 @@
   }
  ],
  "id": "2026-10-22-arthvan-long",
- "ids": {},
+ "ids": {
+  "captions": {
+   "en": "AUieDaa56xKoOqfD5y0GIm3Tf37ol5jnyPohA09hKucaOo2sfPUAqHsD",
+   "gu": "AUieDaY-pVPzs0pZl88BvSkQGgpSH0JmQa27Mr_RYc8Abtd4DqWzNqbGjVZujTngMCUca7E5pV8",
+   "hi": "AUieDaZ33pckGAg-uwMbn1uWhIm6brz-CEJbpXZO4hLyNRETqp31IzN4BphHfBuyilYfz8E",
+   "mr": "AUieDaZMquMhTyK_nxsZoDW-KV2Hwg1ICKZGQra87pkS0Wl8hkPo-Ic67oCjZuqq1t8",
+   "ta": "AUieDaYC3KUkk8z-wrW3xDJaS9Jq0BWNzIcNuvKUCcPtlzGLry_adSEsE3mOt6Psfso"
+  },
+  "yt_id": "6SsYUMyyO-4"
+ },
  "kind": "long",
  "publish_day": "2026-10-22",
  "reasons": [
@@ -607,7 +616,7 @@
   },
   "title": "Jagannath ka *jhanda* hawa ke ulta kyon? 🤯"
  },
- "status": "qa_failed",
+ "status": "uploaded",
  "timings": [
   0.0,
   16.85,
@@ -623,31 +632,31 @@
   167.71,
   184.6,
   200.21,
-  217.74,
-  232.59,
-  246.52,
-  262.41,
-  278.14,
-  293.51,
-  308.08,
-  321.77,
-  337.9,
-  353.03,
-  369.76,
-  385.41,
-  399.98,
-  415.39,
-  431.04,
-  444.25,
-  460.22,
-  476.71,
-  493.0,
-  509.97,
-  527.5,
-  542.43,
-  557.08,
-  572.77,
-  586.66
+  218.42,
+  233.27,
+  247.2,
+  263.09,
+  278.82,
+  294.19,
+  308.76,
+  322.45,
+  338.58,
+  353.71,
+  370.44,
+  386.09,
+  400.66,
+  416.07,
+  431.72,
+  444.93,
+  460.9,
+  477.39,
+  493.68,
+  510.65,
+  528.18,
+  543.11,
+  557.76,
+  573.45,
+  587.34
  ],
  "topic": {
   "allowed_sources": [
@@ -668,6 +677,6 @@
   "title_hi": "Jagannath mandir ke 7 rahasya",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-22T07:57:41+00:00",
+ "updated": "2026-10-22T08:34:25+00:00",
  "writer": "claude"
 }
