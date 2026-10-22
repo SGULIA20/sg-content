@@ -70,7 +70,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           UNLISTED_DAY1: ${{ github.event.inputs.unlisted == 'true' && '1' || '' }}
         run: |
-          ARGS="--max ${{ github.event.inputs.max || '6' }}"
+          ARGS="--max ${{ github.event.inputs.max || '4' }}"
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           python -m engine.produce $ARGS
       - name: Prune media older than 14 days
