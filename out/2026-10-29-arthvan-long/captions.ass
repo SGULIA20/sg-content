@@ -11,401 +11,401 @@ Style: Default,Noto Sans Devanagari,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H800000
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.00,0:00:02.58,Default,,0,0,0,,Ayodhya ki zameen ke sabse neeche,
-Dialogue: 0,0:00:02.58,0:00:04.39,Default,,0,0,0,,ek mutthi koyla mila.
-Dialogue: 0,0:00:04.39,0:00:06.71,Default,,0,0,0,,Us koyle ne ek tareekh batayi,
-Dialogue: 0,0:00:06.71,0:00:07.75,Default,,0,0,0,,910 BCE.
-Dialogue: 0,0:00:07.75,0:00:10.59,Default,,0,0,0,,Yaani Isa se 910 saal pehle
-Dialogue: 0,0:00:10.59,0:00:10.85,Default,,0,0,0,,bhi,
-Dialogue: 0,0:00:10.85,0:00:12.40,Default,,0,0,0,,yahaan log rehte the,
-Dialogue: 0,0:00:12.40,0:00:13.95,Default,,0,0,0,,chulha jalate the.
-Dialogue: 0,0:00:13.95,0:00:16.53,Default,,0,0,0,,Yeh kisi kahani ki baat nahi,
-Dialogue: 0,0:00:16.53,0:00:18.08,Default,,0,0,0,,yeh lab ki report hai.
-Dialogue: 0,0:00:18.53,0:00:21.47,Default,,0,0,0,,Yeh report Archaeological Survey of India
-Dialogue: 0,0:00:21.47,0:00:21.92,Default,,0,0,0,,ki hai,
-Dialogue: 0,0:00:21.92,0:00:22.83,Default,,0,0,0,,yaani ASI.
-Dialogue: 0,0:00:22.83,0:00:25.09,Default,,0,0,0,,ASI desh ki sarkari sanstha hai,
-Dialogue: 0,0:00:25.09,0:00:27.58,Default,,0,0,0,,jo purani jagahon ki khudai aur
-Dialogue: 0,0:00:27.58,0:00:28.71,Default,,0,0,0,,dekhbhaal karti hai.
-Dialogue: 0,0:00:28.71,0:00:30.75,Default,,0,0,0,,Lekin us report mein sirf koyla
-Dialogue: 0,0:00:30.75,0:00:31.43,Default,,0,0,0,,nahi tha.
-Dialogue: 0,0:00:31.43,0:00:33.24,Default,,0,0,0,,Kuch baaton par aaj tak vidwan
-Dialogue: 0,0:00:33.24,0:00:34.37,Default,,0,0,0,,bahas karte hain.
-Dialogue: 0,0:00:34.82,0:00:37.15,Default,,0,0,0,,Zameen ke neeche ek badi imarat
-Dialogue: 0,0:00:37.15,0:00:38.21,Default,,0,0,0,,ki neev bhi mili.
-Dialogue: 0,0:00:38.21,0:00:39.06,Default,,0,0,0,,Kuch ne kaha,
-Dialogue: 0,0:00:39.06,0:00:41.18,Default,,0,0,0,,yeh khambon wala ek vishal bhawan
-Dialogue: 0,0:00:41.18,0:00:41.39,Default,,0,0,0,,tha.
-Dialogue: 0,0:00:41.39,0:00:42.24,Default,,0,0,0,,Kuch ne kaha,
-Dialogue: 0,0:00:42.24,0:00:44.36,Default,,0,0,0,,yeh alag alag zamane ke farsh
-Dialogue: 0,0:00:44.36,0:00:45.20,Default,,0,0,0,,ke tukde hain.
-Dialogue: 0,0:00:45.20,0:00:47.32,Default,,0,0,0,,Dono taraf padhe likhe log hain,
-Dialogue: 0,0:00:47.32,0:00:49.02,Default,,0,0,0,,aur dono ke paas daleel hai.
-Dialogue: 0,0:00:49.47,0:00:50.84,Default,,0,0,0,,Sabut ke saath chalte hain,
-Dialogue: 0,0:00:50.84,0:00:52.60,Default,,0,0,0,,aur shuruaat karte hain granthon se.
-Dialogue: 0,0:00:52.60,0:00:54.56,Default,,0,0,0,,Pehle dekhte hain ki purane granth
-Dialogue: 0,0:00:54.56,0:00:56.32,Default,,0,0,0,,Ayodhya ko kaise dikhate hain.
-Dialogue: 0,0:00:56.32,0:00:58.47,Default,,0,0,0,,Kyunki khudai ka matlab tabhi samajh
-Dialogue: 0,0:00:58.47,0:00:59.06,Default,,0,0,0,,aata hai.
-Dialogue: 0,0:00:59.06,0:01:00.62,Default,,0,0,0,,Jab pata ho ki log zameen
-Dialogue: 0,0:01:00.62,0:01:02.19,Default,,0,0,0,,ke neeche dhoondh kya rahe the.
-Dialogue: 0,0:01:02.64,0:01:05.23,Default,,0,0,0,,Valmiki Ramayana ka pehla hissa hai
-Dialogue: 0,0:01:05.23,0:01:06.10,Default,,0,0,0,,Balakanda.
-Dialogue: 0,0:01:06.10,0:01:08.69,Default,,0,0,0,,Usme Ayodhya ek kile wali rajdhani
-Dialogue: 0,0:01:08.69,0:01:08.91,Default,,0,0,0,,hai,
-Dialogue: 0,0:01:08.91,0:01:10.64,Default,,0,0,0,,Saryu nadi ke kinare.
-Dialogue: 0,0:01:10.64,0:01:12.58,Default,,0,0,0,,Majboot deewaron se ghiri hui,
-Dialogue: 0,0:01:12.58,0:01:14.53,Default,,0,0,0,,ek surakshit aur sundar nagar.
-Dialogue: 0,0:01:14.53,0:01:16.04,Default,,0,0,0,,Ramayana ke mutabik,
-Dialogue: 0,0:01:16.04,0:01:17.98,Default,,0,0,0,,is nagar ko Manu ne basaya
-Dialogue: 0,0:01:17.98,0:01:18.20,Default,,0,0,0,,tha.
-Dialogue: 0,0:01:18.65,0:01:19.75,Default,,0,0,0,,Aur uska aakaar?
-Dialogue: 0,0:01:19.75,0:01:22.40,Default,,0,0,0,,Balakanda ke hisaab se Ayodhya 12
-Dialogue: 0,0:01:22.40,0:01:23.72,Default,,0,0,0,,yojana lambi thi.
-Dialogue: 0,0:01:23.72,0:01:26.81,Default,,0,0,0,,Yojana yaani purane zamane mein doori
-Dialogue: 0,0:01:26.81,0:01:27.91,Default,,0,0,0,,naapne ki ikai.
-Dialogue: 0,0:01:27.91,0:01:30.34,Default,,0,0,0,,Aaj ke kilometre mein iska hisaab
-Dialogue: 0,0:01:30.34,0:01:32.54,Default,,0,0,0,,vidwan alag alag lagate hain.
-Dialogue: 0,0:01:32.54,0:01:33.64,Default,,0,0,0,,Par sandesh saaf hai,
-Dialogue: 0,0:01:33.64,0:01:35.63,Default,,0,0,0,,yeh ek vishal nagar ki tasveer
-Dialogue: 0,0:01:35.63,0:01:35.85,Default,,0,0,0,,hai.
-Dialogue: 0,0:01:36.30,0:01:38.12,Default,,0,0,0,,Phir aata hai Skanda Purana,
-Dialogue: 0,0:01:38.12,0:01:40.35,Default,,0,0,0,,jiska ek hissa hai Ayodhya Mahatmya.
-Dialogue: 0,0:01:40.35,0:01:42.78,Default,,0,0,0,,Mahatmya yaani kisi teerth ki mahima
-Dialogue: 0,0:01:42.78,0:01:45.01,Default,,0,0,0,,aur uska naksha batane wala granth.
-Dialogue: 0,0:01:45.01,0:01:47.44,Default,,0,0,0,,Isme Ayodhya ki pavitra jagahon ka
-Dialogue: 0,0:01:47.44,0:01:48.86,Default,,0,0,0,,poora bhugol likha hai.
-Dialogue: 0,0:01:48.86,0:01:50.08,Default,,0,0,0,,Kaun sa sthaan kahaan hai,
-Dialogue: 0,0:01:50.08,0:01:51.70,Default,,0,0,0,,kaun sa ashram kis disha mein.
-Dialogue: 0,0:01:52.15,0:01:54.43,Default,,0,0,0,,Isi granth mein Janmasthan ki jagah
-Dialogue: 0,0:01:54.43,0:01:56.26,Default,,0,0,0,,bhi dishaon se batayi gayi hai.
-Dialogue: 0,0:01:56.26,0:01:58.32,Default,,0,0,0,,Woh Vighneshwar ke poorab mein hai,
-Dialogue: 0,0:01:58.32,0:02:00.14,Default,,0,0,0,,aur Vashishtha ke uttar mein.
-Dialogue: 0,0:02:00.14,0:02:02.20,Default,,0,0,0,,Saath hi Lomash rishi ke ashram
-Dialogue: 0,0:02:02.20,0:02:03.11,Default,,0,0,0,,ke pashchim mein.
-Dialogue: 0,0:02:03.11,0:02:05.40,Default,,0,0,0,,Yaani granth ek tarah ka purana
-Dialogue: 0,0:02:05.40,0:02:06.54,Default,,0,0,0,,naksha deta hai,
-Dialogue: 0,0:02:06.54,0:02:07.91,Default,,0,0,0,,bina kisi map ke.
-Dialogue: 0,0:02:08.36,0:02:09.65,Default,,0,0,0,,Granthon ke alawa,
-Dialogue: 0,0:02:09.65,0:02:12.00,Default,,0,0,0,,logon ki zubaani kahaniyan bhi hain.
-Dialogue: 0,0:02:12.00,0:02:14.78,Default,,0,0,0,,Faizabad ke purane District Gazetteer mein
-Dialogue: 0,0:02:14.78,0:02:16.50,Default,,0,0,0,,aisi ek kahani darj hai.
-Dialogue: 0,0:02:16.50,0:02:18.85,Default,,0,0,0,,Gazetteer yaani ek sarkari kitaab,
-Dialogue: 0,0:02:18.85,0:02:21.21,Default,,0,0,0,,jisme kisi zile ka itihaas aur
-Dialogue: 0,0:02:21.21,0:02:22.28,Default,,0,0,0,,haal likha jaata.
-Dialogue: 0,0:02:22.28,0:02:23.56,Default,,0,0,0,,Kahani kehti hai,
-Dialogue: 0,0:02:23.56,0:02:26.56,Default,,0,0,0,,Raja Vikramaditya ne Ayodhya ko dobara
-Dialogue: 0,0:02:26.56,0:02:27.20,Default,,0,0,0,,basaya tha.
-Dialogue: 0,0:02:27.65,0:02:30.23,Default,,0,0,0,,Aur unhone ek shaandaar mandir banwaya,
-Dialogue: 0,0:02:30.23,0:02:31.87,Default,,0,0,0,,84 khambon par khada.
-Dialogue: 0,0:02:31.87,0:02:33.75,Default,,0,0,0,,Khambe kaale patthar ke the,
-Dialogue: 0,0:02:33.75,0:02:35.86,Default,,0,0,0,,jise log kasauti kehte the.
-Dialogue: 0,0:02:35.86,0:02:36.56,Default,,0,0,0,,Dhyaan dijiye,
-Dialogue: 0,0:02:36.56,0:02:37.50,Default,,0,0,0,,yeh legend hai,
-Dialogue: 0,0:02:37.50,0:02:39.61,Default,,0,0,0,,kisi granth ya khudai ka sabut
-Dialogue: 0,0:02:39.61,0:02:40.08,Default,,0,0,0,,nahi.
-Dialogue: 0,0:02:40.08,0:02:42.43,Default,,0,0,0,,Par aisi kahaniyon ne logon ki
-Dialogue: 0,0:02:42.43,0:02:44.77,Default,,0,0,0,,jigyasa hamesha zinda rakhi.
-Dialogue: 0,0:02:45.22,0:02:48.60,Default,,0,0,0,,Ab kahani granthon se nikal kar
-Dialogue: 0,0:02:48.60,0:02:50.96,Default,,0,0,0,,mitti mein utarti hai.
-Dialogue: 0,0:02:50.96,0:02:51.63,Default,,0,0,0,,Saal 2003,
-Dialogue: 0,0:02:51.63,0:02:54.67,Default,,0,0,0,,aur Ayodhya mein shuru hoti hai
-Dialogue: 0,0:02:54.67,0:02:56.36,Default,,0,0,0,,ek badi khudai.
-Dialogue: 0,0:02:56.36,0:02:59.40,Default,,0,0,0,,Is khudai par bahut logon ki
-Dialogue: 0,0:02:59.40,0:03:00.41,Default,,0,0,0,,nazar thi.
-Dialogue: 0,0:03:00.41,0:03:02.10,Default,,0,0,0,,Chaliye dekhte hain,
-Dialogue: 0,0:03:02.10,0:03:03.79,Default,,0,0,0,,ASI ne kya kiya,
-Dialogue: 0,0:03:03.79,0:03:05.14,Default,,0,0,0,,aur kaise kiya.
-Dialogue: 0,0:03:05.59,0:03:06.83,Default,,0,0,0,,March se August tak,
-Dialogue: 0,0:03:06.83,0:03:08.82,Default,,0,0,0,,ASI ki team ne yahaan kaam
-Dialogue: 0,0:03:08.82,0:03:09.07,Default,,0,0,0,,kiya.
-Dialogue: 0,0:03:09.07,0:03:11.56,Default,,0,0,0,,Yeh khudai apni marzi se nahi
-Dialogue: 0,0:03:11.56,0:03:12.56,Default,,0,0,0,,ho rahi thi.
-Dialogue: 0,0:03:12.56,0:03:15.04,Default,,0,0,0,,Allahabad High Court ki Lucknow bench
-Dialogue: 0,0:03:15.04,0:03:16.79,Default,,0,0,0,,ne iska aadesh diya tha.
-Dialogue: 0,0:03:16.79,0:03:18.53,Default,,0,0,0,,Isliye har kadam dhyaan se,
-Dialogue: 0,0:03:18.53,0:03:19.03,Default,,0,0,0,,likh kar,
-Dialogue: 0,0:03:19.03,0:03:20.27,Default,,0,0,0,,uthaya jaana tha.
-Dialogue: 0,0:03:20.72,0:03:22.60,Default,,0,0,0,,Khudai se pehle ek aur jaanch
-Dialogue: 0,0:03:22.60,0:03:23.07,Default,,0,0,0,,hui thi,
-Dialogue: 0,0:03:23.07,0:03:25.19,Default,,0,0,0,,Ground Penetrating Radar survey.
-Dialogue: 0,0:03:25.19,0:03:27.55,Default,,0,0,0,,Yaani zameen ke andar radar bhej
-Dialogue: 0,0:03:27.55,0:03:27.78,Default,,0,0,0,,kar,
-Dialogue: 0,0:03:27.78,0:03:28.72,Default,,0,0,0,,bina khode,
-Dialogue: 0,0:03:28.72,0:03:30.84,Default,,0,0,0,,chhupi cheezon ki tasveer lena.
-Dialogue: 0,0:03:30.84,0:03:33.19,Default,,0,0,0,,Radar ne kuch jagah ajeeb nishaan
-Dialogue: 0,0:03:33.19,0:03:33.67,Default,,0,0,0,,dikhaye,
-Dialogue: 0,0:03:33.67,0:03:35.78,Default,,0,0,0,,jinhe anomaly kehte hain.
-Dialogue: 0,0:03:35.78,0:03:38.37,Default,,0,0,0,,ASI ko inhi nishaanon ki sachchai
-Dialogue: 0,0:03:38.37,0:03:39.08,Default,,0,0,0,,jaanchni thi.
-Dialogue: 0,0:03:39.53,0:03:41.96,Default,,0,0,0,,Iske liye ASI ne 82 trench
-Dialogue: 0,0:03:41.96,0:03:42.50,Default,,0,0,0,,khode.
-Dialogue: 0,0:03:42.50,0:03:45.20,Default,,0,0,0,,Trench yaani khudai ka chaukor gaddha,
-Dialogue: 0,0:03:45.20,0:03:48.16,Default,,0,0,0,,jisme mitti parat dar parat hatai
-Dialogue: 0,0:03:48.16,0:03:48.97,Default,,0,0,0,,jaati hai.
-Dialogue: 0,0:03:48.97,0:03:51.13,Default,,0,0,0,,Har trench ek khidki jaisi thi,
-Dialogue: 0,0:03:51.13,0:03:52.75,Default,,0,0,0,,ateet mein jhaankne ki.
-Dialogue: 0,0:03:52.75,0:03:54.64,Default,,0,0,0,,Aur har khidki ne kuch na
-Dialogue: 0,0:03:54.64,0:03:55.45,Default,,0,0,0,,kuch dikhaya.
-Dialogue: 0,0:03:55.90,0:03:57.97,Default,,0,0,0,,Khudai mein mitti ki parten sabse
-Dialogue: 0,0:03:57.97,0:03:59.62,Default,,0,0,0,,zaroori sabut hoti hain.
-Dialogue: 0,0:03:59.62,0:04:00.86,Default,,0,0,0,,Parat yaani stratum,
-Dialogue: 0,0:04:00.86,0:04:02.30,Default,,0,0,0,,mitti ki woh tah jo ek
-Dialogue: 0,0:04:02.30,0:04:03.75,Default,,0,0,0,,zamane mein jamti hai.
-Dialogue: 0,0:04:03.75,0:04:06.02,Default,,0,0,0,,Sabse neeche sabse purani parat,
-Dialogue: 0,0:04:06.02,0:04:06.85,Default,,0,0,0,,aur upar nayi.
-Dialogue: 0,0:04:06.85,0:04:08.71,Default,,0,0,0,,Jaise ek ke upar ek rakhe
-Dialogue: 0,0:04:08.71,0:04:09.12,Default,,0,0,0,,akhbaar,
-Dialogue: 0,0:04:09.12,0:04:10.98,Default,,0,0,0,,neeche wala sabse purana.
-Dialogue: 0,0:04:11.43,0:04:13.09,Default,,0,0,0,,Team mein archaeologist the,
-Dialogue: 0,0:04:13.09,0:04:13.81,Default,,0,0,0,,mazdoor the,
-Dialogue: 0,0:04:13.81,0:04:16.90,Default,,0,0,0,,aur nigraani karne wale adhikari bhi.
-Dialogue: 0,0:04:16.90,0:04:19.04,Default,,0,0,0,,Mitti ki tokriyan chhaani jaati,
-Dialogue: 0,0:04:19.04,0:04:21.65,Default,,0,0,0,,aur nikle tukde alag rakhe jaate.
-Dialogue: 0,0:04:21.65,0:04:22.84,Default,,0,0,0,,Har cheez ki photo,
-Dialogue: 0,0:04:22.84,0:04:24.75,Default,,0,0,0,,naksha aur gehrai darj hoti.
-Dialogue: 0,0:04:24.75,0:04:26.89,Default,,0,0,0,,Kyunki is khudai ka har panna
-Dialogue: 0,0:04:26.89,0:04:28.55,Default,,0,0,0,,baad mein jaancha jaana tha.
-Dialogue: 0,0:04:29.00,0:04:30.89,Default,,0,0,0,,Ab aate hain asli sawaal par,
-Dialogue: 0,0:04:30.89,0:04:32.14,Default,,0,0,0,,mitti ne kya bataya.
-Dialogue: 0,0:04:32.14,0:04:34.45,Default,,0,0,0,,Shuruaat sabse neeche wali parat se
-Dialogue: 0,0:04:34.45,0:04:35.08,Default,,0,0,0,,karte hain.
-Dialogue: 0,0:04:35.08,0:04:37.38,Default,,0,0,0,,Kyunki wahi batati hai ki yahaan
-Dialogue: 0,0:04:37.38,0:04:39.06,Default,,0,0,0,,insaan sabse pehle kab aaye.
-Dialogue: 0,0:04:39.06,0:04:41.57,Default,,0,0,0,,Khudai ki kahani hamesha neeche se
-Dialogue: 0,0:04:41.57,0:04:43.04,Default,,0,0,0,,upar padhi jaati hai.
-Dialogue: 0,0:04:43.49,0:04:46.09,Default,,0,0,0,,ASI ne sabse purani parat ko
-Dialogue: 0,0:04:46.09,0:04:46.56,Default,,0,0,0,,naam diya,
-Dialogue: 0,0:04:46.56,0:04:47.27,Default,,0,0,0,,Period I.
-Dialogue: 0,0:04:47.27,0:04:49.39,Default,,0,0,0,,Is parat mein mile khaas bartan,
-Dialogue: 0,0:04:49.39,0:04:51.28,Default,,0,0,0,,Northern Black Polished Ware.
-Dialogue: 0,0:04:51.28,0:04:52.22,Default,,0,0,0,,Yaani kaale,
-Dialogue: 0,0:04:52.22,0:04:52.93,Default,,0,0,0,,chamakdaar,
-Dialogue: 0,0:04:52.93,0:04:53.87,Default,,0,0,0,,patle bartan,
-Dialogue: 0,0:04:53.87,0:04:56.00,Default,,0,0,0,,jo prachin Bharat ke shehron ki
-Dialogue: 0,0:04:56.00,0:04:57.65,Default,,0,0,0,,pehchaan maane jaate hain.
-Dialogue: 0,0:04:57.65,0:05:00.01,Default,,0,0,0,,ASI ke mutabik yahi log is
-Dialogue: 0,0:05:00.01,0:05:02.37,Default,,0,0,0,,jagah ke pehle basne wale the.
-Dialogue: 0,0:05:02.82,0:05:05.00,Default,,0,0,0,,Isi parat se mitti ki murtiyan
-Dialogue: 0,0:05:05.00,0:05:05.66,Default,,0,0,0,,bhi mili,
-Dialogue: 0,0:05:05.66,0:05:07.62,Default,,0,0,0,,jinhe terracotta kehte hain.
-Dialogue: 0,0:05:07.62,0:05:09.81,Default,,0,0,0,,Yaani pakaayi hui mitti se bani
-Dialogue: 0,0:05:09.81,0:05:10.90,Default,,0,0,0,,chhoti aakritiyan.
-Dialogue: 0,0:05:10.90,0:05:12.65,Default,,0,0,0,,Saath mein kaanch ke manke mile,
-Dialogue: 0,0:05:12.65,0:05:14.83,Default,,0,0,0,,jo shaayad gehne mein pirote jaate
-Dialogue: 0,0:05:14.83,0:05:15.05,Default,,0,0,0,,the.
-Dialogue: 0,0:05:15.05,0:05:17.01,Default,,0,0,0,,Har cheez batati hai ki yahaan
-Dialogue: 0,0:05:17.01,0:05:17.89,Default,,0,0,0,,ek basti thi,
-Dialogue: 0,0:05:17.89,0:05:18.98,Default,,0,0,0,,sirf padaav nahi.
-Dialogue: 0,0:05:19.43,0:05:21.42,Default,,0,0,0,,Aur phir mili ek gol mohar,
-Dialogue: 0,0:05:21.42,0:05:22.91,Default,,0,0,0,,jis par kuch likha tha.
-Dialogue: 0,0:05:22.91,0:05:25.39,Default,,0,0,0,,Likhawat thi Ashokan Brahmi mein.
-Dialogue: 0,0:05:25.39,0:05:28.37,Default,,0,0,0,,Brahmi yaani Bharat ki sabse purani
-Dialogue: 0,0:05:28.37,0:05:30.85,Default,,0,0,0,,padhi ja sakne wali lipiyon mein
-Dialogue: 0,0:05:30.85,0:05:31.35,Default,,0,0,0,,se ek.
-Dialogue: 0,0:05:31.35,0:05:33.83,Default,,0,0,0,,Wahi lipi jo Samrat Ashok ke
-Dialogue: 0,0:05:33.83,0:05:35.82,Default,,0,0,0,,shilalekhon par milti hai.
-Dialogue: 0,0:05:35.82,0:05:37.31,Default,,0,0,0,,Ek chhoti si mohar,
-Dialogue: 0,0:05:37.31,0:05:38.55,Default,,0,0,0,,par bada sawaal,
-Dialogue: 0,0:05:38.55,0:05:41.03,Default,,0,0,0,,isse kisne istemaal kiya hoga?
-Dialogue: 0,0:05:41.48,0:05:42.83,Default,,0,0,0,,Ab us koyle ki baat,
-Dialogue: 0,0:05:42.83,0:05:45.07,Default,,0,0,0,,jisse humne video shuru kiya tha.
-Dialogue: 0,0:05:45.07,0:05:47.10,Default,,0,0,0,,Period I ki parat se koyle
-Dialogue: 0,0:05:47.10,0:05:48.67,Default,,0,0,0,,ke tukde nikale gaye.
-Dialogue: 0,0:05:48.67,0:05:50.92,Default,,0,0,0,,Phir unki radiocarbon dating hui.
-Dialogue: 0,0:05:50.92,0:05:53.61,Default,,0,0,0,,Radiocarbon dating yaani vigyan se yeh
-Dialogue: 0,0:05:53.61,0:05:54.06,Default,,0,0,0,,hisaab,
-Dialogue: 0,0:05:54.06,0:05:56.31,Default,,0,0,0,,ki koi jaivik cheez kitni purani
-Dialogue: 0,0:05:56.31,0:05:56.53,Default,,0,0,0,,hai.
-Dialogue: 0,0:05:56.53,0:05:58.78,Default,,0,0,0,,Jaivik yaani jo kabhi zinda thi,
-Dialogue: 0,0:05:58.78,0:05:59.68,Default,,0,0,0,,jaise lakdi.
-Dialogue: 0,0:06:00.13,0:06:01.00,Default,,0,0,0,,Nateeja aaya,
-Dialogue: 0,0:06:01.00,0:06:02.54,Default,,0,0,0,,910 BCE ke aaspaas.
-Dialogue: 0,0:06:02.54,0:06:04.72,Default,,0,0,0,,Ek doosra namoona bhi isi daur
-Dialogue: 0,0:06:04.72,0:06:05.81,Default,,0,0,0,,ke kareeb nikla.
-Dialogue: 0,0:06:05.81,0:06:08.22,Default,,0,0,0,,Matlab bahut purane zamane mein,
-Dialogue: 0,0:06:08.22,0:06:09.53,Default,,0,0,0,,Ashok se bhi pehle,
-Dialogue: 0,0:06:09.53,0:06:10.84,Default,,0,0,0,,yahaan log rehte the.
-Dialogue: 0,0:06:10.84,0:06:12.81,Default,,0,0,0,,Report khud maanti hai ki aisi
-Dialogue: 0,0:06:12.81,0:06:13.69,Default,,0,0,0,,tareekhon mein,
-Dialogue: 0,0:06:13.69,0:06:15.87,Default,,0,0,0,,kuch upar neeche ki gunjaish rehti
-Dialogue: 0,0:06:15.87,0:06:16.09,Default,,0,0,0,,hai.
-Dialogue: 0,0:06:16.54,0:06:18.64,Default,,0,0,0,,Ab upar ki parton ki taraf
-Dialogue: 0,0:06:18.64,0:06:19.33,Default,,0,0,0,,chalte hain,
-Dialogue: 0,0:06:19.33,0:06:20.27,Default,,0,0,0,,madhyakaal mein.
-Dialogue: 0,0:06:20.27,0:06:23.06,Default,,0,0,0,,Madhyakaal yaani prachin aur aadhunik ke
-Dialogue: 0,0:06:23.06,0:06:24.23,Default,,0,0,0,,beech ka lamba daur.
-Dialogue: 0,0:06:24.23,0:06:26.56,Default,,0,0,0,,Yahaan ASI ko kuch aisa mila,
-Dialogue: 0,0:06:26.56,0:06:29.12,Default,,0,0,0,,jisne sabse zyada charcha bator li.
-Dialogue: 0,0:06:29.12,0:06:31.68,Default,,0,0,0,,Zameen ke neeche ek badi imarat
-Dialogue: 0,0:06:31.68,0:06:32.38,Default,,0,0,0,,ke nishaan.
-Dialogue: 0,0:06:32.83,0:06:35.44,Default,,0,0,0,,ASI ke mutabik yeh imarat lagbhag
-Dialogue: 0,0:06:35.44,0:06:36.96,Default,,0,0,0,,50 metre lambi thi.
-Dialogue: 0,0:06:36.96,0:06:39.13,Default,,0,0,0,,Uski disha thi uttar se dakshin.
-Dialogue: 0,0:06:39.13,0:06:41.73,Default,,0,0,0,,Report ne ise shuruaati madhyakaal ka
-Dialogue: 0,0:06:41.73,0:06:42.17,Default,,0,0,0,,bataya.
-Dialogue: 0,0:06:42.17,0:06:42.60,Default,,0,0,0,,Matlab,
-Dialogue: 0,0:06:42.60,0:06:44.77,Default,,0,0,0,,kisi bahut bade dhaanche ki neev,
-Dialogue: 0,0:06:44.77,0:06:46.51,Default,,0,0,0,,jo kabhi yahaan khada tha.
-Dialogue: 0,0:06:46.96,0:06:49.34,Default,,0,0,0,,Report mein is imarat se jude
-Dialogue: 0,0:06:49.34,0:06:51.25,Default,,0,0,0,,kai khambon ke aadhar bhi darj
-Dialogue: 0,0:06:51.25,0:06:51.49,Default,,0,0,0,,hue.
-Dialogue: 0,0:06:51.49,0:06:54.11,Default,,0,0,0,,Khambe ka aadhar yaani woh chabootra,
-Dialogue: 0,0:06:54.11,0:06:55.78,Default,,0,0,0,,jis par khamba tikta hai.
-Dialogue: 0,0:06:55.78,0:06:57.21,Default,,0,0,0,,ASI ka kehna tha,
-Dialogue: 0,0:06:57.21,0:06:59.59,Default,,0,0,0,,yeh aadhar ek bade khambon wale
-Dialogue: 0,0:06:59.59,0:07:00.31,Default,,0,0,0,,hall ke the.
-Dialogue: 0,0:07:00.31,0:07:02.93,Default,,0,0,0,,Yaani kabhi yahaan khambon par tika
-Dialogue: 0,0:07:02.93,0:07:04.36,Default,,0,0,0,,ek vishal bhawan tha.
-Dialogue: 0,0:07:04.81,0:07:07.57,Default,,0,0,0,,Yahin se kahani seedhi nahi rehti.
-Dialogue: 0,0:07:07.57,0:07:08.94,Default,,0,0,0,,ASI ki report aayi,
-Dialogue: 0,0:07:08.94,0:07:10.78,Default,,0,0,0,,aur uske saath sawaal bhi aaye.
-Dialogue: 0,0:07:10.78,0:07:13.54,Default,,0,0,0,,Kuch swatantra archaeologists ne report ko
-Dialogue: 0,0:07:13.54,0:07:14.46,Default,,0,0,0,,dhyaan se padha.
-Dialogue: 0,0:07:14.46,0:07:16.75,Default,,0,0,0,,Swatantra yaani jo is khudai ki
-Dialogue: 0,0:07:16.75,0:07:17.90,Default,,0,0,0,,team mein nahi the.
-Dialogue: 0,0:07:17.90,0:07:20.43,Default,,0,0,0,,Aur unhone ek alag tasveer saamne
-Dialogue: 0,0:07:20.43,0:07:20.89,Default,,0,0,0,,rakhi.
-Dialogue: 0,0:07:21.34,0:07:22.47,Default,,0,0,0,,Unka kehna tha,
-Dialogue: 0,0:07:22.47,0:07:24.74,Default,,0,0,0,,jinhe khambon ke aadhar kaha gaya,
-Dialogue: 0,0:07:24.74,0:07:26.33,Default,,0,0,0,,woh asal mein kuch aur hain.
-Dialogue: 0,0:07:26.33,0:07:28.37,Default,,0,0,0,,Unke hisaab se yeh eenton ke
-Dialogue: 0,0:07:28.37,0:07:29.51,Default,,0,0,0,,farsh ke tukde the.
-Dialogue: 0,0:07:29.51,0:07:31.55,Default,,0,0,0,,Aur yeh tukde ek hi zamane
-Dialogue: 0,0:07:31.55,0:07:32.23,Default,,0,0,0,,ke nahi,
-Dialogue: 0,0:07:32.23,0:07:33.82,Default,,0,0,0,,alag alag daur ke the.
-Dialogue: 0,0:07:33.82,0:07:35.86,Default,,0,0,0,,Yaani alag samay ki parten,
-Dialogue: 0,0:07:35.86,0:07:37.22,Default,,0,0,0,,ek saath dikh rahi thi.
-Dialogue: 0,0:07:37.67,0:07:39.52,Default,,0,0,0,,Is daleel ka matlab bada hai.
-Dialogue: 0,0:07:39.52,0:07:41.57,Default,,0,0,0,,Agar aadhar alag alag daur ke
-Dialogue: 0,0:07:41.57,0:07:41.78,Default,,0,0,0,,hain,
-Dialogue: 0,0:07:41.78,0:07:43.21,Default,,0,0,0,,toh woh ek hall ke nahi
-Dialogue: 0,0:07:43.21,0:07:43.83,Default,,0,0,0,,ho sakte.
-Dialogue: 0,0:07:43.83,0:07:45.88,Default,,0,0,0,,Phir woh bojh uthane wale khambe
-Dialogue: 0,0:07:45.88,0:07:46.29,Default,,0,0,0,,nahi,
-Dialogue: 0,0:07:46.29,0:07:47.52,Default,,0,0,0,,bas farsh ke hisse hain.
-Dialogue: 0,0:07:47.52,0:07:49.58,Default,,0,0,0,,Is nazariye mein ek vishal khambon
-Dialogue: 0,0:07:49.58,0:07:51.63,Default,,0,0,0,,wala bhawan saabit nahi hota.
-Dialogue: 0,0:07:52.08,0:07:54.39,Default,,0,0,0,,Doosri taraf ASI apni report par
-Dialogue: 0,0:07:54.39,0:07:55.02,Default,,0,0,0,,kayam rahi.
-Dialogue: 0,0:07:55.02,0:07:56.91,Default,,0,0,0,,Uske hisaab se neev ki lambai,
-Dialogue: 0,0:07:56.91,0:07:58.59,Default,,0,0,0,,disha aur bacha hua dhaancha,
-Dialogue: 0,0:07:58.59,0:08:00.89,Default,,0,0,0,,ek bade nirmaan ki taraf ishaara
-Dialogue: 0,0:08:00.89,0:08:01.52,Default,,0,0,0,,karte hain.
-Dialogue: 0,0:08:01.52,0:08:03.83,Default,,0,0,0,,Dono taraf trained archaeologists hain.
-Dialogue: 0,0:08:03.83,0:08:05.51,Default,,0,0,0,,Aur dono ek hi mitti ko
-Dialogue: 0,0:08:05.51,0:08:07.40,Default,,0,0,0,,alag nazar se padh rahe hain.
-Dialogue: 0,0:08:07.85,0:08:11.51,Default,,0,0,0,,Puratatva mein aisa aksar hota hai.
-Dialogue: 0,0:08:11.51,0:08:15.77,Default,,0,0,0,,Puratatva yaani mitti mein dabe sabuton
-Dialogue: 0,0:08:15.77,0:08:18.21,Default,,0,0,0,,se ateet padhne ka vigyan.
-Dialogue: 0,0:08:18.21,0:08:20.34,Default,,0,0,0,,Mitti khud nahi bolti,
-Dialogue: 0,0:08:20.34,0:08:22.48,Default,,0,0,0,,use padhna padta hai.
-Dialogue: 0,0:08:22.48,0:08:24.91,Default,,0,0,0,,Ek eent ka tukda kisi ke
-Dialogue: 0,0:08:24.91,0:08:26.13,Default,,0,0,0,,liye aadhar hai,
-Dialogue: 0,0:08:26.13,0:08:27.65,Default,,0,0,0,,kisi ke liye farsh.
-Dialogue: 0,0:08:27.65,0:08:30.09,Default,,0,0,0,,Isiliye report ke baad bhi,
-Dialogue: 0,0:08:30.09,0:08:32.53,Default,,0,0,0,,bahas khatam nahi hoti.
-Dialogue: 0,0:08:32.98,0:08:33.84,Default,,0,0,0,,Ab woh hissa,
-Dialogue: 0,0:08:33.84,0:08:35.78,Default,,0,0,0,,jo aksar khabron mein chhoot jaata
-Dialogue: 0,0:08:35.78,0:08:36.00,Default,,0,0,0,,hai.
-Dialogue: 0,0:08:36.00,0:08:36.65,Default,,0,0,0,,Woh sawaal,
-Dialogue: 0,0:08:36.65,0:08:38.59,Default,,0,0,0,,jiska jawab khudai ke paas bhi
-Dialogue: 0,0:08:38.59,0:08:39.23,Default,,0,0,0,,saaf nahi.
-Dialogue: 0,0:08:39.23,0:08:40.74,Default,,0,0,0,,Imaandaar kahani mein,
-Dialogue: 0,0:08:40.74,0:08:42.90,Default,,0,0,0,,'pata nahi' bhi ek jawab hota
-Dialogue: 0,0:08:42.90,0:08:43.11,Default,,0,0,0,,hai.
-Dialogue: 0,0:08:43.11,0:08:44.84,Default,,0,0,0,,Aur sabut ke saath chalne ka
-Dialogue: 0,0:08:44.84,0:08:45.27,Default,,0,0,0,,matlab,
-Dialogue: 0,0:08:45.27,0:08:46.78,Default,,0,0,0,,use bhi seedha kehna.
-Dialogue: 0,0:08:47.23,0:08:49.91,Default,,0,0,0,,Maan lijiye wahaan ek badi madhyakaaleen
-Dialogue: 0,0:08:49.91,0:08:50.80,Default,,0,0,0,,imarat thi.
-Dialogue: 0,0:08:50.80,0:08:52.14,Default,,0,0,0,,Toh sawaal uthta hai,
-Dialogue: 0,0:08:52.14,0:08:53.48,Default,,0,0,0,,woh khatam kaise hui?
-Dialogue: 0,0:08:53.48,0:08:55.27,Default,,0,0,0,,Kya samay ke saath woh dheere
-Dialogue: 0,0:08:55.27,0:08:56.83,Default,,0,0,0,,dheere khandahar bani?
-Dialogue: 0,0:08:56.83,0:08:58.62,Default,,0,0,0,,Ya use jaan boojh kar giraaya
-Dialogue: 0,0:08:58.62,0:08:58.84,Default,,0,0,0,,gaya?
-Dialogue: 0,0:08:58.84,0:09:00.85,Default,,0,0,0,,Khudai ke sabut is sawaal ko
-Dialogue: 0,0:09:00.85,0:09:02.19,Default,,0,0,0,,saaf hal nahi karte.
-Dialogue: 0,0:09:02.64,0:09:04.85,Default,,0,0,0,,Us imarat aur baad ke nirmaan
-Dialogue: 0,0:09:04.85,0:09:05.34,Default,,0,0,0,,ke beech,
-Dialogue: 0,0:09:05.34,0:09:07.05,Default,,0,0,0,,kai sadiyon ka faasla hai.
-Dialogue: 0,0:09:07.05,0:09:09.26,Default,,0,0,0,,Itne lambe samay mein baarish,
-Dialogue: 0,0:09:09.26,0:09:10.00,Default,,0,0,0,,baadh aur waqt,
-Dialogue: 0,0:09:10.00,0:09:11.71,Default,,0,0,0,,sab apna kaam karte hain.
-Dialogue: 0,0:09:11.71,0:09:14.16,Default,,0,0,0,,Mitti mein girne ki tareekh likhi
-Dialogue: 0,0:09:14.16,0:09:15.14,Default,,0,0,0,,nahi hoti.
-Dialogue: 0,0:09:15.14,0:09:17.60,Default,,0,0,0,,Isiliye yeh sawaal aaj bhi khula
-Dialogue: 0,0:09:17.60,0:09:17.84,Default,,0,0,0,,hai.
-Dialogue: 0,0:09:18.29,0:09:19.82,Default,,0,0,0,,Aur bhi sawaal baaki hain.
-Dialogue: 0,0:09:19.82,0:09:22.45,Default,,0,0,0,,Sabse purani basti kitni badi thi?
-Dialogue: 0,0:09:22.45,0:09:23.55,Default,,0,0,0,,Mohar kiski thi,
-Dialogue: 0,0:09:23.55,0:09:25.52,Default,,0,0,0,,aur uska maalik kya karta tha?
-Dialogue: 0,0:09:25.52,0:09:27.49,Default,,0,0,0,,Granthon ki Ayodhya aur mitti ki
-Dialogue: 0,0:09:27.49,0:09:27.93,Default,,0,0,0,,Ayodhya,
-Dialogue: 0,0:09:27.93,0:09:29.03,Default,,0,0,0,,kahaan milti hain,
-Dialogue: 0,0:09:29.03,0:09:29.90,Default,,0,0,0,,kahaan alag?
-Dialogue: 0,0:09:29.90,0:09:31.65,Default,,0,0,0,,In par aage ki research hi
-Dialogue: 0,0:09:31.65,0:09:32.97,Default,,0,0,0,,roshni daal sakti hai.
-Dialogue: 0,0:09:33.42,0:09:34.63,Default,,0,0,0,,Aaj aap Ayodhya jaayein,
-Dialogue: 0,0:09:34.63,0:09:36.58,Default,,0,0,0,,toh shuruaat Saryu ke ghaat se
-Dialogue: 0,0:09:36.58,0:09:37.06,Default,,0,0,0,,kijiye.
-Dialogue: 0,0:09:37.06,0:09:39.98,Default,,0,0,0,,Wahi nadi jiska zikr Balakanda mein
-Dialogue: 0,0:09:39.98,0:09:40.22,Default,,0,0,0,,hai.
-Dialogue: 0,0:09:40.22,0:09:41.92,Default,,0,0,0,,Shaam ki aarti mein ghaat diyon
-Dialogue: 0,0:09:41.92,0:09:43.13,Default,,0,0,0,,se bhar jaate hain.
-Dialogue: 0,0:09:43.13,0:09:44.83,Default,,0,0,0,,Granth ki nadi aur aaj ki
-Dialogue: 0,0:09:44.83,0:09:45.32,Default,,0,0,0,,nadi,
-Dialogue: 0,0:09:45.32,0:09:47.02,Default,,0,0,0,,ek hi naam se behti hai.
-Dialogue: 0,0:09:47.47,0:09:50.10,Default,,0,0,0,,Purane shehar ki galiyon mein ghoomiye,
-Dialogue: 0,0:09:50.10,0:09:51.54,Default,,0,0,0,,mandir aur ghaat dekhiye.
-Dialogue: 0,0:09:51.54,0:09:52.98,Default,,0,0,0,,Jahaan khudai hui thi,
-Dialogue: 0,0:09:52.98,0:09:54.89,Default,,0,0,0,,woh jagah aaj pooja ka sthaan
-Dialogue: 0,0:09:54.89,0:09:55.13,Default,,0,0,0,,hai.
-Dialogue: 0,0:09:55.13,0:09:57.29,Default,,0,0,0,,Roz shraddhalu wahaan aate hain.
-Dialogue: 0,0:09:57.29,0:09:59.44,Default,,0,0,0,,Aur jo sabut khud padhna chahte
-Dialogue: 0,0:09:59.44,0:09:59.68,Default,,0,0,0,,hain,
-Dialogue: 0,0:09:59.68,0:10:02.55,Default,,0,0,0,,woh ASI ki website asi.nic.in se
-Dialogue: 0,0:10:02.55,0:10:03.99,Default,,0,0,0,,shuruaat kar sakte hain.
-Dialogue: 0,0:10:04.44,0:10:06.74,Default,,0,0,0,,Agar aap kisi museum mein kaale
-Dialogue: 0,0:10:06.74,0:10:08.58,Default,,0,0,0,,chamakdaar NBPW bartan dekhein,
-Dialogue: 0,0:10:08.58,0:10:09.27,Default,,0,0,0,,toh rukiye.
-Dialogue: 0,0:10:09.27,0:10:10.65,Default,,0,0,0,,Unhe dhyaan se dekhiye.
-Dialogue: 0,0:10:10.65,0:10:12.73,Default,,0,0,0,,Yahi woh bartan hain jo Ayodhya
-Dialogue: 0,0:10:12.73,0:10:15.26,Default,,0,0,0,,ki sabse purani parat mein mile.
-Dialogue: 0,0:10:15.26,0:10:16.64,Default,,0,0,0,,Ek chhota sa tukda,
-Dialogue: 0,0:10:16.64,0:10:18.48,Default,,0,0,0,,aur bahut lambi kahani.
-Dialogue: 0,0:10:18.93,0:10:20.41,Default,,0,0,0,,Toh hisaab kya bana?
-Dialogue: 0,0:10:20.41,0:10:21.39,Default,,0,0,0,,Granth ek vishal,
-Dialogue: 0,0:10:21.39,0:10:23.86,Default,,0,0,0,,kile wali Ayodhya dikhate hain.
-Dialogue: 0,0:10:23.86,0:10:26.56,Default,,0,0,0,,Mitti batati hai ki yahaan bahut
-Dialogue: 0,0:10:26.56,0:10:28.04,Default,,0,0,0,,pehle log base the,
-Dialogue: 0,0:10:28.04,0:10:28.78,Default,,0,0,0,,aur bartan,
-Dialogue: 0,0:10:28.78,0:10:29.27,Default,,0,0,0,,manke,
-Dialogue: 0,0:10:29.27,0:10:30.26,Default,,0,0,0,,mohar chhod gaye.
-Dialogue: 0,0:10:30.26,0:10:32.47,Default,,0,0,0,,Beech ki ek badi imarat par,
-Dialogue: 0,0:10:32.47,0:10:34.44,Default,,0,0,0,,vidwan aaj bhi do raay rakhte
-Dialogue: 0,0:10:34.44,0:10:34.69,Default,,0,0,0,,hain.
-Dialogue: 0,0:10:35.14,0:10:37.59,Default,,0,0,0,,Aur sabse bada sawaal yeh hai.
-Dialogue: 0,0:10:37.59,0:10:40.04,Default,,0,0,0,,Kya granth aur mitti kabhi poori
-Dialogue: 0,0:10:40.04,0:10:42.76,Default,,0,0,0,,tarah ek hi kahani sunayenge?
-Dialogue: 0,0:10:42.76,0:10:44.12,Default,,0,0,0,,Shaayad naye tareeke,
-Dialogue: 0,0:10:44.12,0:10:44.94,Default,,0,0,0,,nayi research,
-Dialogue: 0,0:10:44.94,0:10:46.57,Default,,0,0,0,,kuch aur parten kholein.
-Dialogue: 0,0:10:46.57,0:10:47.12,Default,,0,0,0,,Tab tak,
-Dialogue: 0,0:10:47.12,0:10:49.84,Default,,0,0,0,,jo pakka hai use pakka kahiye,
-Dialogue: 0,0:10:49.84,0:10:51.20,Default,,0,0,0,,aur jo khula hai,
-Dialogue: 0,0:10:51.20,0:10:53.38,Default,,0,0,0,,use khula rehne dijiye.
-Dialogue: 0,0:10:53.83,0:10:56.39,Default,,0,0,0,,Agli baar hum chalenge samundar ki
-Dialogue: 0,0:10:56.39,0:10:56.86,Default,,0,0,0,,taraf,
-Dialogue: 0,0:10:56.86,0:10:57.32,Default,,0,0,0,,Dwarka.
-Dialogue: 0,0:10:57.32,0:10:59.88,Default,,0,0,0,,Kehte hain Krishna ki nagari paani
-Dialogue: 0,0:10:59.88,0:11:01.04,Default,,0,0,0,,mein sama gayi thi.
-Dialogue: 0,0:11:01.04,0:11:03.37,Default,,0,0,0,,Wahaan gotakhoron ne kya dekha,
-Dialogue: 0,0:11:03.37,0:11:05.00,Default,,0,0,0,,aur vigyan kya kehta hai?
-Dialogue: 0,0:11:05.00,0:11:06.16,Default,,0,0,0,,Par usse pehle,
-Dialogue: 0,0:11:06.16,0:11:07.33,Default,,0,0,0,,comment mein bataiye.
-Dialogue: 0,0:11:07.33,0:11:09.42,Default,,0,0,0,,Aapko sabse hairaan kis cheez ne
-Dialogue: 0,0:11:09.42,0:11:09.65,Default,,0,0,0,,kiya,
-Dialogue: 0,0:11:09.65,0:11:11.28,Default,,0,0,0,,910 BCE ka koyla,
-Dialogue: 0,0:11:11.28,0:11:12.91,Default,,0,0,0,,ya Brahmi wali mohar?
+Dialogue: 0,0:00:00.00,0:00:02.46,Default,,0,0,0,,Ayodhya ki zameen ke sabse neeche,
+Dialogue: 0,0:00:02.46,0:00:04.19,Default,,0,0,0,,ek mutthi koyla mila.
+Dialogue: 0,0:00:04.19,0:00:06.40,Default,,0,0,0,,Us koyle ne ek tareekh batayi,
+Dialogue: 0,0:00:06.40,0:00:07.39,Default,,0,0,0,,910 BCE.
+Dialogue: 0,0:00:07.39,0:00:10.10,Default,,0,0,0,,Yaani Isa se 910 saal pehle
+Dialogue: 0,0:00:10.10,0:00:10.34,Default,,0,0,0,,bhi,
+Dialogue: 0,0:00:10.34,0:00:11.82,Default,,0,0,0,,yahaan log rehte the,
+Dialogue: 0,0:00:11.82,0:00:13.30,Default,,0,0,0,,chulha jalate the.
+Dialogue: 0,0:00:13.30,0:00:15.76,Default,,0,0,0,,Yeh kisi kahani ki baat nahi,
+Dialogue: 0,0:00:15.76,0:00:17.24,Default,,0,0,0,,yeh lab ki report hai.
+Dialogue: 0,0:00:17.69,0:00:20.49,Default,,0,0,0,,Yeh report Archaeological Survey of India
+Dialogue: 0,0:00:20.49,0:00:20.92,Default,,0,0,0,,ki hai,
+Dialogue: 0,0:00:20.92,0:00:21.78,Default,,0,0,0,,yaani ASI.
+Dialogue: 0,0:00:21.78,0:00:23.94,Default,,0,0,0,,ASI desh ki sarkari sanstha hai,
+Dialogue: 0,0:00:23.94,0:00:26.31,Default,,0,0,0,,jo purani jagahon ki khudai aur
+Dialogue: 0,0:00:26.31,0:00:27.38,Default,,0,0,0,,dekhbhaal karti hai.
+Dialogue: 0,0:00:27.38,0:00:29.32,Default,,0,0,0,,Lekin us report mein sirf koyla
+Dialogue: 0,0:00:29.32,0:00:29.97,Default,,0,0,0,,nahi tha.
+Dialogue: 0,0:00:29.97,0:00:31.69,Default,,0,0,0,,Kuch baaton par aaj tak vidwan
+Dialogue: 0,0:00:31.69,0:00:32.77,Default,,0,0,0,,bahas karte hain.
+Dialogue: 0,0:00:33.22,0:00:35.56,Default,,0,0,0,,Zameen ke neeche ek badi imarat
+Dialogue: 0,0:00:35.56,0:00:36.62,Default,,0,0,0,,ki neev bhi mili.
+Dialogue: 0,0:00:36.62,0:00:37.47,Default,,0,0,0,,Kuch ne kaha,
+Dialogue: 0,0:00:37.47,0:00:39.60,Default,,0,0,0,,yeh khambon wala ek vishal bhawan
+Dialogue: 0,0:00:39.60,0:00:39.81,Default,,0,0,0,,tha.
+Dialogue: 0,0:00:39.81,0:00:40.66,Default,,0,0,0,,Kuch ne kaha,
+Dialogue: 0,0:00:40.66,0:00:42.78,Default,,0,0,0,,yeh alag alag zamane ke farsh
+Dialogue: 0,0:00:42.78,0:00:43.63,Default,,0,0,0,,ke tukde hain.
+Dialogue: 0,0:00:43.63,0:00:45.76,Default,,0,0,0,,Dono taraf padhe likhe log hain,
+Dialogue: 0,0:00:45.76,0:00:47.46,Default,,0,0,0,,aur dono ke paas daleel hai.
+Dialogue: 0,0:00:47.91,0:00:49.19,Default,,0,0,0,,Sabut ke saath chalte hain,
+Dialogue: 0,0:00:49.19,0:00:50.83,Default,,0,0,0,,aur shuruaat karte hain granthon se.
+Dialogue: 0,0:00:50.83,0:00:52.66,Default,,0,0,0,,Pehle dekhte hain ki purane granth
+Dialogue: 0,0:00:52.66,0:00:54.31,Default,,0,0,0,,Ayodhya ko kaise dikhate hain.
+Dialogue: 0,0:00:54.31,0:00:56.32,Default,,0,0,0,,Kyunki khudai ka matlab tabhi samajh
+Dialogue: 0,0:00:56.32,0:00:56.87,Default,,0,0,0,,aata hai.
+Dialogue: 0,0:00:56.87,0:00:58.33,Default,,0,0,0,,Jab pata ho ki log zameen
+Dialogue: 0,0:00:58.33,0:00:59.79,Default,,0,0,0,,ke neeche dhoondh kya rahe the.
+Dialogue: 0,0:01:00.24,0:01:02.79,Default,,0,0,0,,Valmiki Ramayana ka pehla hissa hai
+Dialogue: 0,0:01:02.79,0:01:03.64,Default,,0,0,0,,Balakanda.
+Dialogue: 0,0:01:03.64,0:01:06.18,Default,,0,0,0,,Usme Ayodhya ek kile wali rajdhani
+Dialogue: 0,0:01:06.18,0:01:06.39,Default,,0,0,0,,hai,
+Dialogue: 0,0:01:06.39,0:01:08.09,Default,,0,0,0,,Saryu nadi ke kinare.
+Dialogue: 0,0:01:08.09,0:01:10.00,Default,,0,0,0,,Majboot deewaron se ghiri hui,
+Dialogue: 0,0:01:10.00,0:01:11.91,Default,,0,0,0,,ek surakshit aur sundar nagar.
+Dialogue: 0,0:01:11.91,0:01:13.40,Default,,0,0,0,,Ramayana ke mutabik,
+Dialogue: 0,0:01:13.40,0:01:15.31,Default,,0,0,0,,is nagar ko Manu ne basaya
+Dialogue: 0,0:01:15.31,0:01:15.52,Default,,0,0,0,,tha.
+Dialogue: 0,0:01:15.97,0:01:17.10,Default,,0,0,0,,Aur uska aakaar?
+Dialogue: 0,0:01:17.10,0:01:19.81,Default,,0,0,0,,Balakanda ke hisaab se Ayodhya 12
+Dialogue: 0,0:01:19.81,0:01:21.17,Default,,0,0,0,,yojana lambi thi.
+Dialogue: 0,0:01:21.17,0:01:24.34,Default,,0,0,0,,Yojana yaani purane zamane mein doori
+Dialogue: 0,0:01:24.34,0:01:25.47,Default,,0,0,0,,naapne ki ikai.
+Dialogue: 0,0:01:25.47,0:01:27.96,Default,,0,0,0,,Aaj ke kilometre mein iska hisaab
+Dialogue: 0,0:01:27.96,0:01:30.22,Default,,0,0,0,,vidwan alag alag lagate hain.
+Dialogue: 0,0:01:30.22,0:01:31.35,Default,,0,0,0,,Par sandesh saaf hai,
+Dialogue: 0,0:01:31.35,0:01:33.38,Default,,0,0,0,,yeh ek vishal nagar ki tasveer
+Dialogue: 0,0:01:33.38,0:01:33.61,Default,,0,0,0,,hai.
+Dialogue: 0,0:01:34.06,0:01:35.77,Default,,0,0,0,,Phir aata hai Skanda Purana,
+Dialogue: 0,0:01:35.77,0:01:37.85,Default,,0,0,0,,jiska ek hissa hai Ayodhya Mahatmya.
+Dialogue: 0,0:01:37.85,0:01:40.12,Default,,0,0,0,,Mahatmya yaani kisi teerth ki mahima
+Dialogue: 0,0:01:40.12,0:01:42.21,Default,,0,0,0,,aur uska naksha batane wala granth.
+Dialogue: 0,0:01:42.21,0:01:44.48,Default,,0,0,0,,Isme Ayodhya ki pavitra jagahon ka
+Dialogue: 0,0:01:44.48,0:01:45.81,Default,,0,0,0,,poora bhugol likha hai.
+Dialogue: 0,0:01:45.81,0:01:46.94,Default,,0,0,0,,Kaun sa sthaan kahaan hai,
+Dialogue: 0,0:01:46.94,0:01:48.46,Default,,0,0,0,,kaun sa ashram kis disha mein.
+Dialogue: 0,0:01:48.91,0:01:50.97,Default,,0,0,0,,Isi granth mein Janmasthan ki jagah
+Dialogue: 0,0:01:50.97,0:01:52.61,Default,,0,0,0,,bhi dishaon se batayi gayi hai.
+Dialogue: 0,0:01:52.61,0:01:54.47,Default,,0,0,0,,Woh Vighneshwar ke poorab mein hai,
+Dialogue: 0,0:01:54.47,0:01:56.11,Default,,0,0,0,,aur Vashishtha ke uttar mein.
+Dialogue: 0,0:01:56.11,0:01:57.97,Default,,0,0,0,,Saath hi Lomash rishi ke ashram
+Dialogue: 0,0:01:57.97,0:01:58.79,Default,,0,0,0,,ke pashchim mein.
+Dialogue: 0,0:01:58.79,0:02:00.85,Default,,0,0,0,,Yaani granth ek tarah ka purana
+Dialogue: 0,0:02:00.85,0:02:01.88,Default,,0,0,0,,naksha deta hai,
+Dialogue: 0,0:02:01.88,0:02:03.11,Default,,0,0,0,,bina kisi map ke.
+Dialogue: 0,0:02:03.56,0:02:04.78,Default,,0,0,0,,Granthon ke alawa,
+Dialogue: 0,0:02:04.78,0:02:07.01,Default,,0,0,0,,logon ki zubaani kahaniyan bhi hain.
+Dialogue: 0,0:02:07.01,0:02:09.64,Default,,0,0,0,,Faizabad ke purane District Gazetteer mein
+Dialogue: 0,0:02:09.64,0:02:11.26,Default,,0,0,0,,aisi ek kahani darj hai.
+Dialogue: 0,0:02:11.26,0:02:13.49,Default,,0,0,0,,Gazetteer yaani ek sarkari kitaab,
+Dialogue: 0,0:02:13.49,0:02:15.72,Default,,0,0,0,,jisme kisi zile ka itihaas aur
+Dialogue: 0,0:02:15.72,0:02:16.74,Default,,0,0,0,,haal likha jaata.
+Dialogue: 0,0:02:16.74,0:02:17.95,Default,,0,0,0,,Kahani kehti hai,
+Dialogue: 0,0:02:17.95,0:02:20.79,Default,,0,0,0,,Raja Vikramaditya ne Ayodhya ko dobara
+Dialogue: 0,0:02:20.79,0:02:21.40,Default,,0,0,0,,basaya tha.
+Dialogue: 0,0:02:21.85,0:02:24.42,Default,,0,0,0,,Aur unhone ek shaandaar mandir banwaya,
+Dialogue: 0,0:02:24.42,0:02:26.05,Default,,0,0,0,,84 khambon par khada.
+Dialogue: 0,0:02:26.05,0:02:27.92,Default,,0,0,0,,Khambe kaale patthar ke the,
+Dialogue: 0,0:02:27.92,0:02:30.02,Default,,0,0,0,,jise log kasauti kehte the.
+Dialogue: 0,0:02:30.02,0:02:30.72,Default,,0,0,0,,Dhyaan dijiye,
+Dialogue: 0,0:02:30.72,0:02:31.65,Default,,0,0,0,,yeh legend hai,
+Dialogue: 0,0:02:31.65,0:02:33.75,Default,,0,0,0,,kisi granth ya khudai ka sabut
+Dialogue: 0,0:02:33.75,0:02:34.22,Default,,0,0,0,,nahi.
+Dialogue: 0,0:02:34.22,0:02:36.56,Default,,0,0,0,,Par aisi kahaniyon ne logon ki
+Dialogue: 0,0:02:36.56,0:02:38.89,Default,,0,0,0,,jigyasa hamesha zinda rakhi.
+Dialogue: 0,0:02:39.34,0:02:41.48,Default,,0,0,0,,Ab kahani granthon se nikal kar
+Dialogue: 0,0:02:41.48,0:02:42.97,Default,,0,0,0,,mitti mein utarti hai.
+Dialogue: 0,0:02:42.97,0:02:43.40,Default,,0,0,0,,Saal 2003,
+Dialogue: 0,0:02:43.40,0:02:45.32,Default,,0,0,0,,aur Ayodhya mein shuru hoti hai
+Dialogue: 0,0:02:45.32,0:02:46.39,Default,,0,0,0,,ek badi khudai.
+Dialogue: 0,0:02:46.39,0:02:48.31,Default,,0,0,0,,Is khudai par bahut logon ki
+Dialogue: 0,0:02:48.31,0:02:48.95,Default,,0,0,0,,nazar thi.
+Dialogue: 0,0:02:48.95,0:02:50.02,Default,,0,0,0,,Chaliye dekhte hain,
+Dialogue: 0,0:02:50.02,0:02:51.09,Default,,0,0,0,,ASI ne kya kiya,
+Dialogue: 0,0:02:51.09,0:02:51.94,Default,,0,0,0,,aur kaise kiya.
+Dialogue: 0,0:02:52.39,0:02:53.57,Default,,0,0,0,,March se August tak,
+Dialogue: 0,0:02:53.57,0:02:55.47,Default,,0,0,0,,ASI ki team ne yahaan kaam
+Dialogue: 0,0:02:55.47,0:02:55.70,Default,,0,0,0,,kiya.
+Dialogue: 0,0:02:55.70,0:02:58.07,Default,,0,0,0,,Yeh khudai apni marzi se nahi
+Dialogue: 0,0:02:58.07,0:02:59.01,Default,,0,0,0,,ho rahi thi.
+Dialogue: 0,0:02:59.01,0:03:01.38,Default,,0,0,0,,Allahabad High Court ki Lucknow bench
+Dialogue: 0,0:03:01.38,0:03:03.04,Default,,0,0,0,,ne iska aadesh diya tha.
+Dialogue: 0,0:03:03.04,0:03:04.69,Default,,0,0,0,,Isliye har kadam dhyaan se,
+Dialogue: 0,0:03:04.69,0:03:05.17,Default,,0,0,0,,likh kar,
+Dialogue: 0,0:03:05.17,0:03:06.35,Default,,0,0,0,,uthaya jaana tha.
+Dialogue: 0,0:03:06.80,0:03:08.38,Default,,0,0,0,,Khudai se pehle ek aur jaanch
+Dialogue: 0,0:03:08.38,0:03:08.77,Default,,0,0,0,,hui thi,
+Dialogue: 0,0:03:08.77,0:03:10.54,Default,,0,0,0,,Ground Penetrating Radar survey.
+Dialogue: 0,0:03:10.54,0:03:12.51,Default,,0,0,0,,Yaani zameen ke andar radar bhej
+Dialogue: 0,0:03:12.51,0:03:12.71,Default,,0,0,0,,kar,
+Dialogue: 0,0:03:12.71,0:03:13.50,Default,,0,0,0,,bina khode,
+Dialogue: 0,0:03:13.50,0:03:15.27,Default,,0,0,0,,chhupi cheezon ki tasveer lena.
+Dialogue: 0,0:03:15.27,0:03:17.24,Default,,0,0,0,,Radar ne kuch jagah ajeeb nishaan
+Dialogue: 0,0:03:17.24,0:03:17.63,Default,,0,0,0,,dikhaye,
+Dialogue: 0,0:03:17.63,0:03:19.40,Default,,0,0,0,,jinhe anomaly kehte hain.
+Dialogue: 0,0:03:19.40,0:03:21.57,Default,,0,0,0,,ASI ko inhi nishaanon ki sachchai
+Dialogue: 0,0:03:21.57,0:03:22.16,Default,,0,0,0,,jaanchni thi.
+Dialogue: 0,0:03:22.61,0:03:24.81,Default,,0,0,0,,Iske liye ASI ne 82 trench
+Dialogue: 0,0:03:24.81,0:03:25.30,Default,,0,0,0,,khode.
+Dialogue: 0,0:03:25.30,0:03:27.75,Default,,0,0,0,,Trench yaani khudai ka chaukor gaddha,
+Dialogue: 0,0:03:27.75,0:03:30.44,Default,,0,0,0,,jisme mitti parat dar parat hatai
+Dialogue: 0,0:03:30.44,0:03:31.18,Default,,0,0,0,,jaati hai.
+Dialogue: 0,0:03:31.18,0:03:33.13,Default,,0,0,0,,Har trench ek khidki jaisi thi,
+Dialogue: 0,0:03:33.13,0:03:34.60,Default,,0,0,0,,ateet mein jhaankne ki.
+Dialogue: 0,0:03:34.60,0:03:36.32,Default,,0,0,0,,Aur har khidki ne kuch na
+Dialogue: 0,0:03:36.32,0:03:37.05,Default,,0,0,0,,kuch dikhaya.
+Dialogue: 0,0:03:37.50,0:03:39.45,Default,,0,0,0,,Khudai mein mitti ki parten sabse
+Dialogue: 0,0:03:39.45,0:03:41.01,Default,,0,0,0,,zaroori sabut hoti hain.
+Dialogue: 0,0:03:41.01,0:03:42.18,Default,,0,0,0,,Parat yaani stratum,
+Dialogue: 0,0:03:42.18,0:03:43.55,Default,,0,0,0,,mitti ki woh tah jo ek
+Dialogue: 0,0:03:43.55,0:03:44.91,Default,,0,0,0,,zamane mein jamti hai.
+Dialogue: 0,0:03:44.91,0:03:47.06,Default,,0,0,0,,Sabse neeche sabse purani parat,
+Dialogue: 0,0:03:47.06,0:03:47.84,Default,,0,0,0,,aur upar nayi.
+Dialogue: 0,0:03:47.84,0:03:49.59,Default,,0,0,0,,Jaise ek ke upar ek rakhe
+Dialogue: 0,0:03:49.59,0:03:49.98,Default,,0,0,0,,akhbaar,
+Dialogue: 0,0:03:49.98,0:03:51.74,Default,,0,0,0,,neeche wala sabse purana.
+Dialogue: 0,0:03:52.19,0:03:53.68,Default,,0,0,0,,Team mein archaeologist the,
+Dialogue: 0,0:03:53.68,0:03:54.31,Default,,0,0,0,,mazdoor the,
+Dialogue: 0,0:03:54.31,0:03:57.07,Default,,0,0,0,,aur nigraani karne wale adhikari bhi.
+Dialogue: 0,0:03:57.07,0:03:58.98,Default,,0,0,0,,Mitti ki tokriyan chhaani jaati,
+Dialogue: 0,0:03:58.98,0:04:01.32,Default,,0,0,0,,aur nikle tukde alag rakhe jaate.
+Dialogue: 0,0:04:01.32,0:04:02.38,Default,,0,0,0,,Har cheez ki photo,
+Dialogue: 0,0:04:02.38,0:04:04.07,Default,,0,0,0,,naksha aur gehrai darj hoti.
+Dialogue: 0,0:04:04.07,0:04:05.98,Default,,0,0,0,,Kyunki is khudai ka har panna
+Dialogue: 0,0:04:05.98,0:04:07.47,Default,,0,0,0,,baad mein jaancha jaana tha.
+Dialogue: 0,0:04:07.92,0:04:09.76,Default,,0,0,0,,Ab aate hain asli sawaal par,
+Dialogue: 0,0:04:09.76,0:04:10.99,Default,,0,0,0,,mitti ne kya bataya.
+Dialogue: 0,0:04:10.99,0:04:13.24,Default,,0,0,0,,Shuruaat sabse neeche wali parat se
+Dialogue: 0,0:04:13.24,0:04:13.86,Default,,0,0,0,,karte hain.
+Dialogue: 0,0:04:13.86,0:04:16.11,Default,,0,0,0,,Kyunki wahi batati hai ki yahaan
+Dialogue: 0,0:04:16.11,0:04:17.75,Default,,0,0,0,,insaan sabse pehle kab aaye.
+Dialogue: 0,0:04:17.75,0:04:20.21,Default,,0,0,0,,Khudai ki kahani hamesha neeche se
+Dialogue: 0,0:04:20.21,0:04:21.64,Default,,0,0,0,,upar padhi jaati hai.
+Dialogue: 0,0:04:22.09,0:04:24.59,Default,,0,0,0,,ASI ne sabse purani parat ko
+Dialogue: 0,0:04:24.59,0:04:25.05,Default,,0,0,0,,naam diya,
+Dialogue: 0,0:04:25.05,0:04:25.73,Default,,0,0,0,,Period I.
+Dialogue: 0,0:04:25.73,0:04:27.78,Default,,0,0,0,,Is parat mein mile khaas bartan,
+Dialogue: 0,0:04:27.78,0:04:29.60,Default,,0,0,0,,Northern Black Polished Ware.
+Dialogue: 0,0:04:29.60,0:04:30.51,Default,,0,0,0,,Yaani kaale,
+Dialogue: 0,0:04:30.51,0:04:31.19,Default,,0,0,0,,chamakdaar,
+Dialogue: 0,0:04:31.19,0:04:32.10,Default,,0,0,0,,patle bartan,
+Dialogue: 0,0:04:32.10,0:04:34.15,Default,,0,0,0,,jo prachin Bharat ke shehron ki
+Dialogue: 0,0:04:34.15,0:04:35.74,Default,,0,0,0,,pehchaan maane jaate hain.
+Dialogue: 0,0:04:35.74,0:04:38.01,Default,,0,0,0,,ASI ke mutabik yahi log is
+Dialogue: 0,0:04:38.01,0:04:40.29,Default,,0,0,0,,jagah ke pehle basne wale the.
+Dialogue: 0,0:04:40.74,0:04:42.74,Default,,0,0,0,,Isi parat se mitti ki murtiyan
+Dialogue: 0,0:04:42.74,0:04:43.34,Default,,0,0,0,,bhi mili,
+Dialogue: 0,0:04:43.34,0:04:45.14,Default,,0,0,0,,jinhe terracotta kehte hain.
+Dialogue: 0,0:04:45.14,0:04:47.14,Default,,0,0,0,,Yaani pakaayi hui mitti se bani
+Dialogue: 0,0:04:47.14,0:04:48.14,Default,,0,0,0,,chhoti aakritiyan.
+Dialogue: 0,0:04:48.14,0:04:49.74,Default,,0,0,0,,Saath mein kaanch ke manke mile,
+Dialogue: 0,0:04:49.74,0:04:51.74,Default,,0,0,0,,jo shaayad gehne mein pirote jaate
+Dialogue: 0,0:04:51.74,0:04:51.94,Default,,0,0,0,,the.
+Dialogue: 0,0:04:51.94,0:04:53.74,Default,,0,0,0,,Har cheez batati hai ki yahaan
+Dialogue: 0,0:04:53.74,0:04:54.54,Default,,0,0,0,,ek basti thi,
+Dialogue: 0,0:04:54.54,0:04:55.54,Default,,0,0,0,,sirf padaav nahi.
+Dialogue: 0,0:04:55.99,0:04:57.81,Default,,0,0,0,,Aur phir mili ek gol mohar,
+Dialogue: 0,0:04:57.81,0:04:59.18,Default,,0,0,0,,jis par kuch likha tha.
+Dialogue: 0,0:04:59.18,0:05:01.45,Default,,0,0,0,,Likhawat thi Ashokan Brahmi mein.
+Dialogue: 0,0:05:01.45,0:05:04.18,Default,,0,0,0,,Brahmi yaani Bharat ki sabse purani
+Dialogue: 0,0:05:04.18,0:05:06.46,Default,,0,0,0,,padhi ja sakne wali lipiyon mein
+Dialogue: 0,0:05:06.46,0:05:06.91,Default,,0,0,0,,se ek.
+Dialogue: 0,0:05:06.91,0:05:09.19,Default,,0,0,0,,Wahi lipi jo Samrat Ashok ke
+Dialogue: 0,0:05:09.19,0:05:11.01,Default,,0,0,0,,shilalekhon par milti hai.
+Dialogue: 0,0:05:11.01,0:05:12.38,Default,,0,0,0,,Ek chhoti si mohar,
+Dialogue: 0,0:05:12.38,0:05:13.51,Default,,0,0,0,,par bada sawaal,
+Dialogue: 0,0:05:13.51,0:05:15.79,Default,,0,0,0,,isse kisne istemaal kiya hoga?
+Dialogue: 0,0:05:16.24,0:05:17.52,Default,,0,0,0,,Ab us koyle ki baat,
+Dialogue: 0,0:05:17.52,0:05:19.66,Default,,0,0,0,,jisse humne video shuru kiya tha.
+Dialogue: 0,0:05:19.66,0:05:21.59,Default,,0,0,0,,Period I ki parat se koyle
+Dialogue: 0,0:05:21.59,0:05:23.08,Default,,0,0,0,,ke tukde nikale gaye.
+Dialogue: 0,0:05:23.08,0:05:25.22,Default,,0,0,0,,Phir unki radiocarbon dating hui.
+Dialogue: 0,0:05:25.22,0:05:27.79,Default,,0,0,0,,Radiocarbon dating yaani vigyan se yeh
+Dialogue: 0,0:05:27.79,0:05:28.21,Default,,0,0,0,,hisaab,
+Dialogue: 0,0:05:28.21,0:05:30.35,Default,,0,0,0,,ki koi jaivik cheez kitni purani
+Dialogue: 0,0:05:30.35,0:05:30.57,Default,,0,0,0,,hai.
+Dialogue: 0,0:05:30.57,0:05:32.70,Default,,0,0,0,,Jaivik yaani jo kabhi zinda thi,
+Dialogue: 0,0:05:32.70,0:05:33.56,Default,,0,0,0,,jaise lakdi.
+Dialogue: 0,0:05:34.01,0:05:34.86,Default,,0,0,0,,Nateeja aaya,
+Dialogue: 0,0:05:34.86,0:05:36.35,Default,,0,0,0,,910 BCE ke aaspaas.
+Dialogue: 0,0:05:36.35,0:05:38.48,Default,,0,0,0,,Ek doosra namoona bhi isi daur
+Dialogue: 0,0:05:38.48,0:05:39.54,Default,,0,0,0,,ke kareeb nikla.
+Dialogue: 0,0:05:39.54,0:05:41.88,Default,,0,0,0,,Matlab bahut purane zamane mein,
+Dialogue: 0,0:05:41.88,0:05:43.15,Default,,0,0,0,,Ashok se bhi pehle,
+Dialogue: 0,0:05:43.15,0:05:44.43,Default,,0,0,0,,yahaan log rehte the.
+Dialogue: 0,0:05:44.43,0:05:46.34,Default,,0,0,0,,Report khud maanti hai ki aisi
+Dialogue: 0,0:05:46.34,0:05:47.19,Default,,0,0,0,,tareekhon mein,
+Dialogue: 0,0:05:47.19,0:05:49.32,Default,,0,0,0,,kuch upar neeche ki gunjaish rehti
+Dialogue: 0,0:05:49.32,0:05:49.53,Default,,0,0,0,,hai.
+Dialogue: 0,0:05:49.98,0:05:51.71,Default,,0,0,0,,Ab upar ki parton ki taraf
+Dialogue: 0,0:05:51.71,0:05:52.28,Default,,0,0,0,,chalte hain,
+Dialogue: 0,0:05:52.28,0:05:53.05,Default,,0,0,0,,madhyakaal mein.
+Dialogue: 0,0:05:53.05,0:05:55.35,Default,,0,0,0,,Madhyakaal yaani prachin aur aadhunik ke
+Dialogue: 0,0:05:55.35,0:05:56.31,Default,,0,0,0,,beech ka lamba daur.
+Dialogue: 0,0:05:56.31,0:05:58.23,Default,,0,0,0,,Yahaan ASI ko kuch aisa mila,
+Dialogue: 0,0:05:58.23,0:06:00.33,Default,,0,0,0,,jisne sabse zyada charcha bator li.
+Dialogue: 0,0:06:00.33,0:06:02.44,Default,,0,0,0,,Zameen ke neeche ek badi imarat
+Dialogue: 0,0:06:02.44,0:06:03.02,Default,,0,0,0,,ke nishaan.
+Dialogue: 0,0:06:03.47,0:06:06.17,Default,,0,0,0,,ASI ke mutabik yeh imarat lagbhag
+Dialogue: 0,0:06:06.17,0:06:07.74,Default,,0,0,0,,50 metre lambi thi.
+Dialogue: 0,0:06:07.74,0:06:09.99,Default,,0,0,0,,Uski disha thi uttar se dakshin.
+Dialogue: 0,0:06:09.99,0:06:12.69,Default,,0,0,0,,Report ne ise shuruaati madhyakaal ka
+Dialogue: 0,0:06:12.69,0:06:13.13,Default,,0,0,0,,bataya.
+Dialogue: 0,0:06:13.13,0:06:13.58,Default,,0,0,0,,Matlab,
+Dialogue: 0,0:06:13.58,0:06:15.83,Default,,0,0,0,,kisi bahut bade dhaanche ki neev,
+Dialogue: 0,0:06:15.83,0:06:17.63,Default,,0,0,0,,jo kabhi yahaan khada tha.
+Dialogue: 0,0:06:18.08,0:06:19.89,Default,,0,0,0,,Report mein is imarat se jude
+Dialogue: 0,0:06:19.89,0:06:21.35,Default,,0,0,0,,kai khambon ke aadhar bhi darj
+Dialogue: 0,0:06:21.35,0:06:21.53,Default,,0,0,0,,hue.
+Dialogue: 0,0:06:21.53,0:06:23.52,Default,,0,0,0,,Khambe ka aadhar yaani woh chabootra,
+Dialogue: 0,0:06:23.52,0:06:24.79,Default,,0,0,0,,jis par khamba tikta hai.
+Dialogue: 0,0:06:24.79,0:06:25.88,Default,,0,0,0,,ASI ka kehna tha,
+Dialogue: 0,0:06:25.88,0:06:27.69,Default,,0,0,0,,yeh aadhar ek bade khambon wale
+Dialogue: 0,0:06:27.69,0:06:28.24,Default,,0,0,0,,hall ke the.
+Dialogue: 0,0:06:28.24,0:06:30.23,Default,,0,0,0,,Yaani kabhi yahaan khambon par tika
+Dialogue: 0,0:06:30.23,0:06:31.32,Default,,0,0,0,,ek vishal bhawan tha.
+Dialogue: 0,0:06:31.77,0:06:34.46,Default,,0,0,0,,Yahin se kahani seedhi nahi rehti.
+Dialogue: 0,0:06:34.46,0:06:35.81,Default,,0,0,0,,ASI ki report aayi,
+Dialogue: 0,0:06:35.81,0:06:37.61,Default,,0,0,0,,aur uske saath sawaal bhi aaye.
+Dialogue: 0,0:06:37.61,0:06:40.30,Default,,0,0,0,,Kuch swatantra archaeologists ne report ko
+Dialogue: 0,0:06:40.30,0:06:41.20,Default,,0,0,0,,dhyaan se padha.
+Dialogue: 0,0:06:41.20,0:06:43.45,Default,,0,0,0,,Swatantra yaani jo is khudai ki
+Dialogue: 0,0:06:43.45,0:06:44.57,Default,,0,0,0,,team mein nahi the.
+Dialogue: 0,0:06:44.57,0:06:47.04,Default,,0,0,0,,Aur unhone ek alag tasveer saamne
+Dialogue: 0,0:06:47.04,0:06:47.49,Default,,0,0,0,,rakhi.
+Dialogue: 0,0:06:47.94,0:06:49.11,Default,,0,0,0,,Unka kehna tha,
+Dialogue: 0,0:06:49.11,0:06:51.45,Default,,0,0,0,,jinhe khambon ke aadhar kaha gaya,
+Dialogue: 0,0:06:51.45,0:06:53.09,Default,,0,0,0,,woh asal mein kuch aur hain.
+Dialogue: 0,0:06:53.09,0:06:55.20,Default,,0,0,0,,Unke hisaab se yeh eenton ke
+Dialogue: 0,0:06:55.20,0:06:56.37,Default,,0,0,0,,farsh ke tukde the.
+Dialogue: 0,0:06:56.37,0:06:58.48,Default,,0,0,0,,Aur yeh tukde ek hi zamane
+Dialogue: 0,0:06:58.48,0:06:59.19,Default,,0,0,0,,ke nahi,
+Dialogue: 0,0:06:59.19,0:07:00.83,Default,,0,0,0,,alag alag daur ke the.
+Dialogue: 0,0:07:00.83,0:07:02.93,Default,,0,0,0,,Yaani alag samay ki parten,
+Dialogue: 0,0:07:02.93,0:07:04.34,Default,,0,0,0,,ek saath dikh rahi thi.
+Dialogue: 0,0:07:04.79,0:07:06.56,Default,,0,0,0,,Is daleel ka matlab bada hai.
+Dialogue: 0,0:07:06.56,0:07:08.53,Default,,0,0,0,,Agar aadhar alag alag daur ke
+Dialogue: 0,0:07:08.53,0:07:08.73,Default,,0,0,0,,hain,
+Dialogue: 0,0:07:08.73,0:07:10.11,Default,,0,0,0,,toh woh ek hall ke nahi
+Dialogue: 0,0:07:10.11,0:07:10.70,Default,,0,0,0,,ho sakte.
+Dialogue: 0,0:07:10.70,0:07:12.67,Default,,0,0,0,,Phir woh bojh uthane wale khambe
+Dialogue: 0,0:07:12.67,0:07:13.07,Default,,0,0,0,,nahi,
+Dialogue: 0,0:07:13.07,0:07:14.25,Default,,0,0,0,,bas farsh ke hisse hain.
+Dialogue: 0,0:07:14.25,0:07:16.22,Default,,0,0,0,,Is nazariye mein ek vishal khambon
+Dialogue: 0,0:07:16.22,0:07:18.19,Default,,0,0,0,,wala bhawan saabit nahi hota.
+Dialogue: 0,0:07:18.64,0:07:20.80,Default,,0,0,0,,Doosri taraf ASI apni report par
+Dialogue: 0,0:07:20.80,0:07:21.39,Default,,0,0,0,,kayam rahi.
+Dialogue: 0,0:07:21.39,0:07:23.16,Default,,0,0,0,,Uske hisaab se neev ki lambai,
+Dialogue: 0,0:07:23.16,0:07:24.74,Default,,0,0,0,,disha aur bacha hua dhaancha,
+Dialogue: 0,0:07:24.74,0:07:26.90,Default,,0,0,0,,ek bade nirmaan ki taraf ishaara
+Dialogue: 0,0:07:26.90,0:07:27.49,Default,,0,0,0,,karte hain.
+Dialogue: 0,0:07:27.49,0:07:29.66,Default,,0,0,0,,Dono taraf trained archaeologists hain.
+Dialogue: 0,0:07:29.66,0:07:31.23,Default,,0,0,0,,Aur dono ek hi mitti ko
+Dialogue: 0,0:07:31.23,0:07:33.00,Default,,0,0,0,,alag nazar se padh rahe hain.
+Dialogue: 0,0:07:33.45,0:07:36.14,Default,,0,0,0,,Puratatva mein aisa aksar hota hai.
+Dialogue: 0,0:07:36.14,0:07:39.28,Default,,0,0,0,,Puratatva yaani mitti mein dabe sabuton
+Dialogue: 0,0:07:39.28,0:07:41.07,Default,,0,0,0,,se ateet padhne ka vigyan.
+Dialogue: 0,0:07:41.07,0:07:42.64,Default,,0,0,0,,Mitti khud nahi bolti,
+Dialogue: 0,0:07:42.64,0:07:44.21,Default,,0,0,0,,use padhna padta hai.
+Dialogue: 0,0:07:44.21,0:07:46.00,Default,,0,0,0,,Ek eent ka tukda kisi ke
+Dialogue: 0,0:07:46.00,0:07:46.90,Default,,0,0,0,,liye aadhar hai,
+Dialogue: 0,0:07:46.90,0:07:48.02,Default,,0,0,0,,kisi ke liye farsh.
+Dialogue: 0,0:07:48.02,0:07:49.82,Default,,0,0,0,,Isiliye report ke baad bhi,
+Dialogue: 0,0:07:49.82,0:07:51.61,Default,,0,0,0,,bahas khatam nahi hoti.
+Dialogue: 0,0:07:52.06,0:07:52.88,Default,,0,0,0,,Ab woh hissa,
+Dialogue: 0,0:07:52.88,0:07:54.71,Default,,0,0,0,,jo aksar khabron mein chhoot jaata
+Dialogue: 0,0:07:54.71,0:07:54.91,Default,,0,0,0,,hai.
+Dialogue: 0,0:07:54.91,0:07:55.52,Default,,0,0,0,,Woh sawaal,
+Dialogue: 0,0:07:55.52,0:07:57.36,Default,,0,0,0,,jiska jawab khudai ke paas bhi
+Dialogue: 0,0:07:57.36,0:07:57.97,Default,,0,0,0,,saaf nahi.
+Dialogue: 0,0:07:57.97,0:07:59.39,Default,,0,0,0,,Imaandaar kahani mein,
+Dialogue: 0,0:07:59.39,0:08:01.43,Default,,0,0,0,,'pata nahi' bhi ek jawab hota
+Dialogue: 0,0:08:01.43,0:08:01.64,Default,,0,0,0,,hai.
+Dialogue: 0,0:08:01.64,0:08:03.27,Default,,0,0,0,,Aur sabut ke saath chalne ka
+Dialogue: 0,0:08:03.27,0:08:03.67,Default,,0,0,0,,matlab,
+Dialogue: 0,0:08:03.67,0:08:05.10,Default,,0,0,0,,use bhi seedha kehna.
+Dialogue: 0,0:08:05.55,0:08:08.26,Default,,0,0,0,,Maan lijiye wahaan ek badi madhyakaaleen
+Dialogue: 0,0:08:08.26,0:08:09.17,Default,,0,0,0,,imarat thi.
+Dialogue: 0,0:08:09.17,0:08:10.53,Default,,0,0,0,,Toh sawaal uthta hai,
+Dialogue: 0,0:08:10.53,0:08:11.89,Default,,0,0,0,,woh khatam kaise hui?
+Dialogue: 0,0:08:11.89,0:08:13.70,Default,,0,0,0,,Kya samay ke saath woh dheere
+Dialogue: 0,0:08:13.70,0:08:15.28,Default,,0,0,0,,dheere khandahar bani?
+Dialogue: 0,0:08:15.28,0:08:17.09,Default,,0,0,0,,Ya use jaan boojh kar giraaya
+Dialogue: 0,0:08:17.09,0:08:17.32,Default,,0,0,0,,gaya?
+Dialogue: 0,0:08:17.32,0:08:19.35,Default,,0,0,0,,Khudai ke sabut is sawaal ko
+Dialogue: 0,0:08:19.35,0:08:20.71,Default,,0,0,0,,saaf hal nahi karte.
+Dialogue: 0,0:08:21.16,0:08:23.07,Default,,0,0,0,,Us imarat aur baad ke nirmaan
+Dialogue: 0,0:08:23.07,0:08:23.50,Default,,0,0,0,,ke beech,
+Dialogue: 0,0:08:23.50,0:08:24.98,Default,,0,0,0,,kai sadiyon ka faasla hai.
+Dialogue: 0,0:08:24.98,0:08:26.89,Default,,0,0,0,,Itne lambe samay mein baarish,
+Dialogue: 0,0:08:26.89,0:08:27.53,Default,,0,0,0,,baadh aur waqt,
+Dialogue: 0,0:08:27.53,0:08:29.01,Default,,0,0,0,,sab apna kaam karte hain.
+Dialogue: 0,0:08:29.01,0:08:31.14,Default,,0,0,0,,Mitti mein girne ki tareekh likhi
+Dialogue: 0,0:08:31.14,0:08:31.99,Default,,0,0,0,,nahi hoti.
+Dialogue: 0,0:08:31.99,0:08:34.11,Default,,0,0,0,,Isiliye yeh sawaal aaj bhi khula
+Dialogue: 0,0:08:34.11,0:08:34.32,Default,,0,0,0,,hai.
+Dialogue: 0,0:08:34.77,0:08:36.29,Default,,0,0,0,,Aur bhi sawaal baaki hain.
+Dialogue: 0,0:08:36.29,0:08:38.89,Default,,0,0,0,,Sabse purani basti kitni badi thi?
+Dialogue: 0,0:08:38.89,0:08:39.97,Default,,0,0,0,,Mohar kiski thi,
+Dialogue: 0,0:08:39.97,0:08:41.92,Default,,0,0,0,,aur uska maalik kya karta tha?
+Dialogue: 0,0:08:41.92,0:08:43.87,Default,,0,0,0,,Granthon ki Ayodhya aur mitti ki
+Dialogue: 0,0:08:43.87,0:08:44.31,Default,,0,0,0,,Ayodhya,
+Dialogue: 0,0:08:44.31,0:08:45.39,Default,,0,0,0,,kahaan milti hain,
+Dialogue: 0,0:08:45.39,0:08:46.26,Default,,0,0,0,,kahaan alag?
+Dialogue: 0,0:08:46.26,0:08:47.99,Default,,0,0,0,,In par aage ki research hi
+Dialogue: 0,0:08:47.99,0:08:49.29,Default,,0,0,0,,roshni daal sakti hai.
+Dialogue: 0,0:08:49.74,0:08:50.98,Default,,0,0,0,,Aaj aap Ayodhya jaayein,
+Dialogue: 0,0:08:50.98,0:08:52.96,Default,,0,0,0,,toh shuruaat Saryu ke ghaat se
+Dialogue: 0,0:08:52.96,0:08:53.46,Default,,0,0,0,,kijiye.
+Dialogue: 0,0:08:53.46,0:08:56.43,Default,,0,0,0,,Wahi nadi jiska zikr Balakanda mein
+Dialogue: 0,0:08:56.43,0:08:56.68,Default,,0,0,0,,hai.
+Dialogue: 0,0:08:56.68,0:08:58.41,Default,,0,0,0,,Shaam ki aarti mein ghaat diyon
+Dialogue: 0,0:08:58.41,0:08:59.65,Default,,0,0,0,,se bhar jaate hain.
+Dialogue: 0,0:08:59.65,0:09:01.39,Default,,0,0,0,,Granth ki nadi aur aaj ki
+Dialogue: 0,0:09:01.39,0:09:01.88,Default,,0,0,0,,nadi,
+Dialogue: 0,0:09:01.88,0:09:03.62,Default,,0,0,0,,ek hi naam se behti hai.
+Dialogue: 0,0:09:04.07,0:09:06.52,Default,,0,0,0,,Purane shehar ki galiyon mein ghoomiye,
+Dialogue: 0,0:09:06.52,0:09:07.85,Default,,0,0,0,,mandir aur ghaat dekhiye.
+Dialogue: 0,0:09:07.85,0:09:09.19,Default,,0,0,0,,Jahaan khudai hui thi,
+Dialogue: 0,0:09:09.19,0:09:10.97,Default,,0,0,0,,woh jagah aaj pooja ka sthaan
+Dialogue: 0,0:09:10.97,0:09:11.19,Default,,0,0,0,,hai.
+Dialogue: 0,0:09:11.19,0:09:13.20,Default,,0,0,0,,Roz shraddhalu wahaan aate hain.
+Dialogue: 0,0:09:13.20,0:09:15.20,Default,,0,0,0,,Aur jo sabut khud padhna chahte
+Dialogue: 0,0:09:15.20,0:09:15.42,Default,,0,0,0,,hain,
+Dialogue: 0,0:09:15.42,0:09:18.09,Default,,0,0,0,,woh ASI ki website asi.nic.in se
+Dialogue: 0,0:09:18.09,0:09:19.43,Default,,0,0,0,,shuruaat kar sakte hain.
+Dialogue: 0,0:09:19.88,0:09:22.26,Default,,0,0,0,,Agar aap kisi museum mein kaale
+Dialogue: 0,0:09:22.26,0:09:24.16,Default,,0,0,0,,chamakdaar NBPW bartan dekhein,
+Dialogue: 0,0:09:24.16,0:09:24.88,Default,,0,0,0,,toh rukiye.
+Dialogue: 0,0:09:24.88,0:09:26.31,Default,,0,0,0,,Unhe dhyaan se dekhiye.
+Dialogue: 0,0:09:26.31,0:09:28.45,Default,,0,0,0,,Yahi woh bartan hain jo Ayodhya
+Dialogue: 0,0:09:28.45,0:09:31.07,Default,,0,0,0,,ki sabse purani parat mein mile.
+Dialogue: 0,0:09:31.07,0:09:32.50,Default,,0,0,0,,Ek chhota sa tukda,
+Dialogue: 0,0:09:32.50,0:09:34.40,Default,,0,0,0,,aur bahut lambi kahani.
+Dialogue: 0,0:09:34.85,0:09:36.31,Default,,0,0,0,,Toh hisaab kya bana?
+Dialogue: 0,0:09:36.31,0:09:37.28,Default,,0,0,0,,Granth ek vishal,
+Dialogue: 0,0:09:37.28,0:09:39.71,Default,,0,0,0,,kile wali Ayodhya dikhate hain.
+Dialogue: 0,0:09:39.71,0:09:42.39,Default,,0,0,0,,Mitti batati hai ki yahaan bahut
+Dialogue: 0,0:09:42.39,0:09:43.85,Default,,0,0,0,,pehle log base the,
+Dialogue: 0,0:09:43.85,0:09:44.58,Default,,0,0,0,,aur bartan,
+Dialogue: 0,0:09:44.58,0:09:45.06,Default,,0,0,0,,manke,
+Dialogue: 0,0:09:45.06,0:09:46.03,Default,,0,0,0,,mohar chhod gaye.
+Dialogue: 0,0:09:46.03,0:09:48.22,Default,,0,0,0,,Beech ki ek badi imarat par,
+Dialogue: 0,0:09:48.22,0:09:50.17,Default,,0,0,0,,vidwan aaj bhi do raay rakhte
+Dialogue: 0,0:09:50.17,0:09:50.41,Default,,0,0,0,,hain.
+Dialogue: 0,0:09:50.86,0:09:53.03,Default,,0,0,0,,Aur sabse bada sawaal yeh hai.
+Dialogue: 0,0:09:53.03,0:09:55.20,Default,,0,0,0,,Kya granth aur mitti kabhi poori
+Dialogue: 0,0:09:55.20,0:09:57.61,Default,,0,0,0,,tarah ek hi kahani sunayenge?
+Dialogue: 0,0:09:57.61,0:09:58.82,Default,,0,0,0,,Shaayad naye tareeke,
+Dialogue: 0,0:09:58.82,0:09:59.54,Default,,0,0,0,,nayi research,
+Dialogue: 0,0:09:59.54,0:10:00.99,Default,,0,0,0,,kuch aur parten kholein.
+Dialogue: 0,0:10:00.99,0:10:01.47,Default,,0,0,0,,Tab tak,
+Dialogue: 0,0:10:01.47,0:10:03.88,Default,,0,0,0,,jo pakka hai use pakka kahiye,
+Dialogue: 0,0:10:03.88,0:10:05.09,Default,,0,0,0,,aur jo khula hai,
+Dialogue: 0,0:10:05.09,0:10:07.02,Default,,0,0,0,,use khula rehne dijiye.
+Dialogue: 0,0:10:07.47,0:10:09.92,Default,,0,0,0,,Agli baar hum chalenge samundar ki
+Dialogue: 0,0:10:09.92,0:10:10.36,Default,,0,0,0,,taraf,
+Dialogue: 0,0:10:10.36,0:10:10.81,Default,,0,0,0,,Dwarka.
+Dialogue: 0,0:10:10.81,0:10:13.25,Default,,0,0,0,,Kehte hain Krishna ki nagari paani
+Dialogue: 0,0:10:13.25,0:10:14.37,Default,,0,0,0,,mein sama gayi thi.
+Dialogue: 0,0:10:14.37,0:10:16.59,Default,,0,0,0,,Wahaan gotakhoron ne kya dekha,
+Dialogue: 0,0:10:16.59,0:10:18.15,Default,,0,0,0,,aur vigyan kya kehta hai?
+Dialogue: 0,0:10:18.15,0:10:19.26,Default,,0,0,0,,Par usse pehle,
+Dialogue: 0,0:10:19.26,0:10:20.37,Default,,0,0,0,,comment mein bataiye.
+Dialogue: 0,0:10:20.37,0:10:22.37,Default,,0,0,0,,Aapko sabse hairaan kis cheez ne
+Dialogue: 0,0:10:22.37,0:10:22.60,Default,,0,0,0,,kiya,
+Dialogue: 0,0:10:22.60,0:10:24.15,Default,,0,0,0,,910 BCE ka koyla,
+Dialogue: 0,0:10:24.15,0:10:25.71,Default,,0,0,0,,ya Brahmi wali mohar?
