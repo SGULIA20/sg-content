@@ -84,7 +84,8 @@
  ],
  "id": "2026-10-24-sglearning-short",
  "ids": {
-  "ig_story_id": "skipped: Reel over 60 s"
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "f6Q8M7vFtkY"
  },
  "kind": "short",
  "publish_day": "2026-10-24",
@@ -264,19 +265,19 @@
   },
   "title": "Factory daudi, par *petrol* sasta kyun nahi? ⛽"
  },
- "status": "written",
+ "status": "uploaded",
  "timings": [
   0.0,
-  15.41,
-  30.06,
-  37.99,
-  44.44,
-  51.25,
-  59.86,
-  70.43,
-  77.2,
-  84.05,
-  93.22
+  7.37,
+  20.22,
+  26.71,
+  32.32,
+  39.81,
+  47.78,
+  58.51,
+  64.76,
+  73.69,
+  83.82
  ],
  "topic": {
   "link": "https://economictimes.indiatimes.com/news/economy/indicators/core-output-grows-at-series-high-of-7-9-in-sept/articleshow/135100149.cms",
@@ -288,6 +289,6 @@
   "title": "Core output grows at series high of 7.9% in Sept",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-22T07:24:31+00:00",
+ "updated": "2026-10-22T14:03:18+00:00",
  "writer": "claude"
 }

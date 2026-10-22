@@ -11,50 +11,50 @@ Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H800000
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.00,0:00:03.94,Default,,0,0,0,,Raat ke 9 baje,
-Dialogue: 0,0:00:03.94,0:00:07.87,Default,,0,0,0,,TV pe khabar aayi:
-Dialogue: 0,0:00:07.87,0:00:14.96,Default,,0,0,0,,core sector 7.9 percent badha.
-Dialogue: 0,0:00:15.41,0:00:19.41,Default,,0,0,0,,Core sector yaani desh ki bunyadi
-Dialogue: 0,0:00:19.41,0:00:20.51,Default,,0,0,0,,industries,
-Dialogue: 0,0:00:20.51,0:00:21.60,Default,,0,0,0,,jaise coal,
-Dialogue: 0,0:00:21.60,0:00:22.33,Default,,0,0,0,,bijli,
-Dialogue: 0,0:00:22.33,0:00:22.69,Default,,0,0,0,,steel,
-Dialogue: 0,0:00:22.69,0:00:23.42,Default,,0,0,0,,cement.
-Dialogue: 0,0:00:23.42,0:00:26.33,Default,,0,0,0,,Papa ne chai ka cup rakha,
-Dialogue: 0,0:00:26.33,0:00:27.43,Default,,0,0,0,,aur bole,
-Dialogue: 0,0:00:27.43,0:00:29.61,Default,,0,0,0,,ab sab sasta hoga.
-Dialogue: 0,0:00:30.06,0:00:33.05,Default,,0,0,0,,Unka logic bilkul seedha aur saaf
-Dialogue: 0,0:00:33.05,0:00:33.35,Default,,0,0,0,,tha.
-Dialogue: 0,0:00:33.35,0:00:35.15,Default,,0,0,0,,Zyada maal banega,
-Dialogue: 0,0:00:35.15,0:00:37.54,Default,,0,0,0,,toh dukaan pe daam girega.
-Dialogue: 0,0:00:37.99,0:00:40.39,Default,,0,0,0,,BHAI ne turant phone uthaya.
-Dialogue: 0,0:00:40.39,0:00:40.99,Default,,0,0,0,,Bola,
-Dialogue: 0,0:00:40.99,0:00:43.99,Default,,0,0,0,,petrol bhi ab sasta hi milega.
-Dialogue: 0,0:00:44.44,0:00:46.64,Default,,0,0,0,,Sunne mein baat sahi lagti hai.
-Dialogue: 0,0:00:46.64,0:00:47.62,Default,,0,0,0,,Supply badhe,
-Dialogue: 0,0:00:47.62,0:00:48.84,Default,,0,0,0,,toh keemat ghate,
-Dialogue: 0,0:00:48.84,0:00:50.80,Default,,0,0,0,,yahi toh school mein padha tha.
-Dialogue: 0,0:00:51.25,0:00:53.72,Default,,0,0,0,,Par khabar ka doosra hissa kisi
-Dialogue: 0,0:00:53.72,0:00:54.96,Default,,0,0,0,,ne nahi suna.
-Dialogue: 0,0:00:54.96,0:00:56.44,Default,,0,0,0,,Coal aur bijli badhe,
-Dialogue: 0,0:00:56.44,0:00:58.17,Default,,0,0,0,,par desh ka crude aur gas
-Dialogue: 0,0:00:58.17,0:00:59.41,Default,,0,0,0,,production gira.
-Dialogue: 0,0:00:59.86,0:01:01.83,Default,,0,0,0,,Crude yaani kachcha tel,
-Dialogue: 0,0:01:01.83,0:01:04.64,Default,,0,0,0,,jisse petrol aur diesel bante hain.
-Dialogue: 0,0:01:04.64,0:01:08.01,Default,,0,0,0,,Bharat apna lagbhag 88 percent crude
-Dialogue: 0,0:01:08.01,0:01:09.98,Default,,0,0,0,,bahar se mangata hai.
-Dialogue: 0,0:01:10.43,0:01:13.18,Default,,0,0,0,,Matlab petrol ka daam hamare coal
-Dialogue: 0,0:01:13.18,0:01:14.00,Default,,0,0,0,,se nahi,
-Dialogue: 0,0:01:14.00,0:01:16.47,Default,,0,0,0,,duniya ke bazaar se tay hota
-Dialogue: 0,0:01:16.47,0:01:16.75,Default,,0,0,0,,hai.
-Dialogue: 0,0:01:17.20,0:01:19.60,Default,,0,0,0,,Growth ka matlab factory mein kaam
-Dialogue: 0,0:01:19.60,0:01:20.67,Default,,0,0,0,,aur naukri hai,
-Dialogue: 0,0:01:20.67,0:01:23.60,Default,,0,0,0,,har cheez sasta hona zaroori nahi.
-Dialogue: 0,0:01:24.05,0:01:26.16,Default,,0,0,0,,Agli baar headline suno,
-Dialogue: 0,0:01:26.16,0:01:26.96,Default,,0,0,0,,toh poochho:
-Dialogue: 0,0:01:26.96,0:01:28.28,Default,,0,0,0,,kaun si cheez badhi,
-Dialogue: 0,0:01:28.28,0:01:30.13,Default,,0,0,0,,aur meri jeb ki kaun si?
-Dialogue: 0,0:01:30.13,0:01:32.77,Default,,0,0,0,,Yeh investment advice nahi hai.
-Dialogue: 0,0:01:33.22,0:01:39.92,Default,,0,0,0,,Aapke ghar mein sabse zyada kharcha
-Dialogue: 0,0:01:39.92,0:01:43.93,Default,,0,0,0,,kis cheez pe badha hai?
-Dialogue: 0,0:01:43.93,0:01:48.62,Default,,0,0,0,,Comment mein ek shabd likho.
+Dialogue: 0,0:00:00.00,0:00:01.82,Default,,0,0,0,,Raat ke 9 baje,
+Dialogue: 0,0:00:01.82,0:00:03.64,Default,,0,0,0,,TV pe khabar aayi:
+Dialogue: 0,0:00:03.64,0:00:06.92,Default,,0,0,0,,core sector 7.9 percent badha.
+Dialogue: 0,0:00:07.37,0:00:10.87,Default,,0,0,0,,Core sector yaani desh ki bunyadi
+Dialogue: 0,0:00:10.87,0:00:11.82,Default,,0,0,0,,industries,
+Dialogue: 0,0:00:11.82,0:00:12.78,Default,,0,0,0,,jaise coal,
+Dialogue: 0,0:00:12.78,0:00:13.41,Default,,0,0,0,,bijli,
+Dialogue: 0,0:00:13.41,0:00:13.73,Default,,0,0,0,,steel,
+Dialogue: 0,0:00:13.73,0:00:14.37,Default,,0,0,0,,cement.
+Dialogue: 0,0:00:14.37,0:00:16.91,Default,,0,0,0,,Papa ne chai ka cup rakha,
+Dialogue: 0,0:00:16.91,0:00:17.86,Default,,0,0,0,,aur bole,
+Dialogue: 0,0:00:17.86,0:00:19.77,Default,,0,0,0,,ab sab sasta hoga.
+Dialogue: 0,0:00:20.22,0:00:22.64,Default,,0,0,0,,Unka logic bilkul seedha aur saaf
+Dialogue: 0,0:00:22.64,0:00:22.88,Default,,0,0,0,,tha.
+Dialogue: 0,0:00:22.88,0:00:24.33,Default,,0,0,0,,Zyada maal banega,
+Dialogue: 0,0:00:24.33,0:00:26.26,Default,,0,0,0,,toh dukaan pe daam girega.
+Dialogue: 0,0:00:26.71,0:00:28.77,Default,,0,0,0,,BHAI ne turant phone uthaya.
+Dialogue: 0,0:00:28.77,0:00:29.29,Default,,0,0,0,,Bola,
+Dialogue: 0,0:00:29.29,0:00:31.87,Default,,0,0,0,,petrol bhi ab sasta hi milega.
+Dialogue: 0,0:00:32.32,0:00:34.76,Default,,0,0,0,,Sunne mein baat sahi lagti hai.
+Dialogue: 0,0:00:34.76,0:00:35.84,Default,,0,0,0,,Supply badhe,
+Dialogue: 0,0:00:35.84,0:00:37.19,Default,,0,0,0,,toh keemat ghate,
+Dialogue: 0,0:00:37.19,0:00:39.36,Default,,0,0,0,,yahi toh school mein padha tha.
+Dialogue: 0,0:00:39.81,0:00:42.09,Default,,0,0,0,,Par khabar ka doosra hissa kisi
+Dialogue: 0,0:00:42.09,0:00:43.23,Default,,0,0,0,,ne nahi suna.
+Dialogue: 0,0:00:43.23,0:00:44.59,Default,,0,0,0,,Coal aur bijli badhe,
+Dialogue: 0,0:00:44.59,0:00:46.19,Default,,0,0,0,,par desh ka crude aur gas
+Dialogue: 0,0:00:46.19,0:00:47.33,Default,,0,0,0,,production gira.
+Dialogue: 0,0:00:47.78,0:00:49.78,Default,,0,0,0,,Crude yaani kachcha tel,
+Dialogue: 0,0:00:49.78,0:00:52.63,Default,,0,0,0,,jisse petrol aur diesel bante hain.
+Dialogue: 0,0:00:52.63,0:00:56.06,Default,,0,0,0,,Bharat apna lagbhag 88 percent crude
+Dialogue: 0,0:00:56.06,0:00:58.06,Default,,0,0,0,,bahar se mangata hai.
+Dialogue: 0,0:00:58.51,0:01:01.03,Default,,0,0,0,,Matlab petrol ka daam hamare coal
+Dialogue: 0,0:01:01.03,0:01:01.79,Default,,0,0,0,,se nahi,
+Dialogue: 0,0:01:01.79,0:01:04.06,Default,,0,0,0,,duniya ke bazaar se tay hota
+Dialogue: 0,0:01:04.06,0:01:04.31,Default,,0,0,0,,hai.
+Dialogue: 0,0:01:04.76,0:01:07.94,Default,,0,0,0,,Growth ka matlab factory mein kaam
+Dialogue: 0,0:01:07.94,0:01:09.35,Default,,0,0,0,,aur naukri hai,
+Dialogue: 0,0:01:09.35,0:01:13.24,Default,,0,0,0,,har cheez sasta hona zaroori nahi.
+Dialogue: 0,0:01:13.69,0:01:16.04,Default,,0,0,0,,Agli baar headline suno,
+Dialogue: 0,0:01:16.04,0:01:16.92,Default,,0,0,0,,toh poochho:
+Dialogue: 0,0:01:16.92,0:01:18.38,Default,,0,0,0,,kaun si cheez badhi,
+Dialogue: 0,0:01:18.38,0:01:20.44,Default,,0,0,0,,aur meri jeb ki kaun si?
+Dialogue: 0,0:01:20.44,0:01:23.37,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:01:23.82,0:01:26.27,Default,,0,0,0,,Aapke ghar mein sabse zyada kharcha
+Dialogue: 0,0:01:26.27,0:01:27.74,Default,,0,0,0,,kis cheez pe badha hai?
+Dialogue: 0,0:01:27.74,0:01:29.46,Default,,0,0,0,,Comment mein ek shabd likho.
