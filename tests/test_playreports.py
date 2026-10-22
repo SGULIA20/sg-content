@@ -35,3 +35,28 @@ def test_token_request_is_a_signed_jwt_for_the_reader_account(tmp_path, monkeypa
         seen["body"] = req.data.decode(); return R()
     assert pr.access_token(pr.SCOPE_STORAGE, kf, post=post) == "tok123"
     assert "grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer" in seen["body"] and seen["body"].count(".") >= 2
+
+
+def test_gates_text_shows_waypoint_progress_open_checks_and_focus_markets():
+    data = {"waypoint": {"installs": [{"Date": "2026-10-20", "Active Device Installs": "37"}],
+                         "countries": [{"Country": "IN", "Daily Device Installs": "9"}, {"Country": "ID", "Daily Device Installs": "4"}, {"Country": "BR", "Daily Device Installs": "1"}]},
+            "scoremybiz": {"installs": [], "countries": [{"Country": "IN", "Daily Device Installs": "6"}]}}
+    gates = {"waypoint_plus": {"active_installs": 1000, "manual": {"ios_approved": False, "anonymity_gap_fixed": True}}, "focus_markets_per_app": 2}
+    text = pr.gates_text(data, gates)
+    assert "active installs 37 of 1000; 1 checks open: ios approved" in text
+    assert "Focus markets for waypoint: IN (9 installs), ID (4 installs)" in text and "Focus markets for scoremybiz: IN (6 installs)" in text
+
+
+def test_weekly_report_is_quiet_while_access_is_closed(tmp_path, monkeypatch, capsys):
+    monkeypatch.setattr(pr, "STATE", tmp_path / "growth.json")
+    monkeypatch.setattr(pr, "access_token", lambda scope: "tok")
+    def blocked(tok, **kw):
+        raise pr.PlayError("HTTP 403 no access")
+    monkeypatch.setattr(pr, "weekly_text", blocked)
+    assert pr.main(["--weekly", "--send"]) == 0 and "not readable yet" in capsys.readouterr().out and not (tmp_path / "growth.json").exists()
+
+
+def test_key_can_come_from_the_base64_environment_variable(tmp_path, monkeypatch):
+    import base64, json
+    monkeypatch.setenv("PLAY_READER_KEY_B64", base64.b64encode(json.dumps({"client_email": "a@b", "private_key": "k"}).encode()).decode())
+    assert pr._load_key(tmp_path / "missing.json")["client_email"] == "a@b"

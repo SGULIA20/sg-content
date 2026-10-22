@@ -100,3 +100,10 @@ def test_evening_scorecard_is_sent_before_seven_pm_lagos():
     crons = [s["cron"] for s in (data.get(True) or data.get("on"))["schedule"]]
     assert crons == ["3 20 * * *", "23 20 * * *"]                                     # 21:03 and 21:23 WAT (founder, 22 Oct 2026: 9 pm)
     assert "engine.evening --send" in " ".join(s.get("run", "") for s in data["jobs"]["evening"]["steps"])
+
+
+def test_growth_report_runs_weekly_on_monday_morning_lagos():
+    data = yaml.safe_load((ROOT / ".github" / "workflows" / "growth.yml").read_text())
+    crons = [s["cron"] for s in (data.get(True) or data.get("on"))["schedule"]]
+    assert crons == ["13 8 * * 1", "43 9 * * 1"]
+    assert "engine.playreports --weekly --send" in " ".join(s.get("run", "") for s in data["jobs"]["growth"]["steps"])

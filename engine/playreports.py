@@ -8,6 +8,7 @@ Its key file is ~/sg-content/play-reader-key.json (git-ignored). No third-party 
 """
 import base64
 import csv
+import os
 import io
 import json
 import subprocess
@@ -50,8 +51,19 @@ def _sign(message: bytes, private_key_pem: str) -> bytes:
         Path(path).unlink(missing_ok=True)
 
 
+def _load_key(key_file: Path) -> dict:
+    """The key file on the Mac, or PLAY_READER_KEY_B64 (the same file, base64) in the cloud."""
+    if Path(key_file).exists():
+        return json.loads(Path(key_file).read_text())
+    b64 = os.environ.get("PLAY_READER_KEY_B64", "")
+    if not b64:
+        raise PlayError("no Play reader key: neither play-reader-key.json nor PLAY_READER_KEY_B64 is present")
+    secrets.remember(b64)
+    return json.loads(base64.b64decode(b64))
+
+
 def access_token(scope: str, key_file: Path = KEY_FILE, post=None) -> str:
-    key = json.loads(Path(key_file).read_text())
+    key = _load_key(key_file)
     now = int(time.time())
     head = _b64(json.dumps({"alg": "RS256", "typ": "JWT"}).encode())
     claims = _b64(json.dumps({"iss": key["client_email"], "scope": scope, "aud": TOKEN_URL, "iat": now, "exp": now + 3000}).encode())
@@ -161,22 +173,85 @@ def _latest_files(objs: list, pkg: str, kind: str, suffix: str, months: int = 2)
     return sorted(want)[-months:]
 
 
-def fetch_summary(tok: str, bucket: str = BUCKETS[1]) -> str:
+def fetch_rows(tok: str, bucket: str = BUCKETS[1]) -> dict:
     objs = list_objects(bucket, "stats/", tok)
-    out = ["Google Play, last 28 days (read-only reports)"]
+    data = {}
     for app, pkg in APPS.items():
-        def rows(kind, suffix):
+        def rows(kind, suffix, pkg=pkg):
             r = []
             for name in _latest_files(objs, pkg, kind, suffix):
                 r += read_csv(bucket, name, tok)
             return r
-        out.append(summarise(app, rows("installs", "_overview.csv"), rows("installs", "_country.csv"), rows("ratings", "_overview.csv"),
-                             rows("store_performance", "_overview.csv") or rows("store_performance", "_country.csv")))
-    return "\n\n".join(out)
+        data[app] = {"installs": rows("installs", "_overview.csv"), "countries": rows("installs", "_country.csv"), "ratings": rows("ratings", "_overview.csv"),
+                     "store": rows("store_performance", "_overview.csv") or rows("store_performance", "_country.csv")}
+    return data
+
+
+def summary_text(data: dict) -> str:
+    return "Google Play, last 28 days (read-only reports)\n\n" + "\n\n".join(
+        summarise(app, d["installs"], d["countries"], d["ratings"], d["store"]) for app, d in data.items())
+
+
+def fetch_summary(tok: str, bucket: str = BUCKETS[1]) -> str:
+    return summary_text(fetch_rows(tok, bucket))
+
+
+def gates_text(data: dict, gates: dict) -> str:
+    """Where Waypoint stands against the founder's phase gates, and which two countries lead for each app."""
+    lines = []
+    wp = gates.get("waypoint_plus", {})
+    inst = sorted(data.get("waypoint", {}).get("installs", []), key=lambda r: _col(r, "Date"))
+    active = _num(_col(inst[-1], "Active Device Installs")) if inst else 0
+    need = _num(wp.get("active_installs", 0))
+    open_checks = [k for k, v in (wp.get("manual") or {}).items() if not v]
+    lines.append(f"Waypoint Plus gate: active installs {active:.0f} of {need:.0f}; {len(open_checks)} checks open"
+                 + (": " + ", ".join(k.replace("_", " ") for k in open_checks) if open_checks else ""))
+    top_n = int(gates.get("focus_markets_per_app", 2))
+    for app, d in data.items():
+        by = {}
+        for r in d.get("countries", []):
+            by[_col(r, "Country") or "?"] = by.get(_col(r, "Country") or "?", 0) + _num(_col(r, "Daily Device Installs"))
+        lead = sorted(((v, c) for c, v in by.items() if v > 0), reverse=True)[:top_n]
+        if lead:
+            lines.append(f"Focus markets for {app}: " + ", ".join(f"{c} ({v:.0f} installs)" for v, c in lead))
+    return "\n".join(lines)
+
+
+def weekly_text(tok: str, gates_path: Path = ROOT / "content" / "growth-gates.yaml") -> str:
+    import yaml
+    data = fetch_rows(tok)
+    gates = yaml.safe_load(Path(gates_path).read_text()) if Path(gates_path).exists() else {}
+    return summary_text(data) + "\n\n" + gates_text(data, gates)
+
+
+STATE = ROOT / "logs" / "growth.json"
+
+
+def _week(today=None) -> str:
+    from datetime import date
+    y, w, _d = (today or date.today()).isocalendar()
+    return f"{y}-W{w:02d}"
 
 
 def main(argv=None) -> int:
     argv = sys.argv[1:] if argv is None else argv
+    if "--weekly" in argv:
+        from . import telegram
+        week = _week()
+        done = json.loads(STATE.read_text()) if STATE.exists() else {}
+        if done.get("sent") == week and "--force" not in argv:
+            print(f"{week}: already sent")
+            return 0
+        try:
+            text = weekly_text(access_token(SCOPE_STORAGE))
+        except PlayError as e:                           # access not open yet: stay quiet, try again next slot
+            print(f"Play reports not readable yet: {str(e)[:160]}")
+            return 0
+        print(text)
+        if "--send" in argv and telegram.send(text):
+            STATE.parent.mkdir(parents=True, exist_ok=True)
+            STATE.write_text(json.dumps({"sent": week}))
+        return 0
     tok = access_token(SCOPE_STORAGE)
     if "--summary" in argv:
         from . import telegram
