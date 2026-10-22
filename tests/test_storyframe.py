@@ -39,6 +39,8 @@ def test_story_build_frames_panels_with_title_and_captions(tmp_path):
     w, h, dur = _probe(out)
     assert (w, h) == (1080, 1920) and out.name == "reel.mp4" and 6.5 < dur < 7.5          # two lines + the 3 s branded end card
     assert (tmp_path / "out" / "title.png").exists() and (tmp_path / "out" / "end.png").exists() and p.timings[0] == 0.0
+    from engine import qa
+    assert qa.narration_intact(out, speech_end=p.timings[-1] + 1.4)                    # the last line is still audible to its end
 
 
 def test_brand_names_the_channel_on_every_piece():

@@ -19,7 +19,7 @@ from .config import BUDGETS, CACHE_DIR, CONTENT_DIR, LOGS_DIR, today_ist, today_
 MODEL = "gemini-3.8-flash-tts"
 VOICES_URL = "https://generativelanguage.googleapis.com/v1beta/voices"
 SYNTH_URL = "https://generativelanguage.googleapis.com/v1beta/interactions"
-STYLE = "clear, warm, natural Hindi explainer voice, medium pace"
+STYLE = "warm, expressive storyteller, natural pace, clear Hinglish"   # v2 (22 Oct 2026): also retires the cached lines that spoke a tone note
 VOICE_FILE = CONTENT_DIR / "voice.json"
 BUDGET_FILE = LOGS_DIR / "voice-budget.json"
 DEFAULT_IDS = ("voice_9c6x5lerrbm4", "voice_7w9h8qkiqz03")      # created 19 Oct 2026 in the founder's first Gemini project

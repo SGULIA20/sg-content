@@ -316,8 +316,9 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
     for (wav, d), start, sc in zip(lines, piece.timings, script["scenes"]):
         cues += _captions.offset(_captions.split(sc["vo"], d), start)
     target = (piece.topic.get("target_minutes") or 0) * 60 or None
+    speech_end = (piece.timings[-1] + lines[-1][1]) if piece.timings and lines else None       # where the last narrated word should end
     problems = deps.qa(video, piece.kind, sum(d for _w, d in lines), cues, target_seconds=target, story=is_story(piece),
-                       check_freeze=not is_story(piece))                 # a story panel's slow push-in is calm by design, not a frozen frame
+                       check_freeze=not is_story(piece), speech_end=speech_end)                 # a story panel's slow push-in is calm by design, not a frozen frame
     if problems:
         too_long = next((m for m in map(QA_TOO_LONG.match, problems) if m and float(m.group(1)) > float(m.group(2))), None)
         if too_long:                                                   # the same script and cached voice would fail again forever:

@@ -15,7 +15,7 @@ GET_URL = "https://generativelanguage.googleapis.com/v1beta/{name}"
 WAIT_S = 600                 # how long one run waits for a job before parking the piece
 POLL_S = 20
 LEDGER = LOGS_DIR / "voice-batch.jsonl"
-TONE = "Narrate like a warm, expressive storyteller telling the tale to friends, natural pace, clear Hinglish: "   # designed voices only
+TONE = ""   # 22 Oct 2026: a tone note in the text was read aloud by one designed voice; the batch lane sends the line and nothing else
 
 
 class BatchError(Exception):
@@ -30,8 +30,7 @@ def _speech(voice_id: str) -> dict:
 def submit(texts: list, voice_id: str, label: str, key: str | None = None, post=gemini._post) -> str:
     """Starts one job with every line; returns its name (batches/...)."""
     key = key or secrets.get("GEMINI_API_KEY")
-    spoken = (lambda t: TONE + t) if voice_id.startswith("voice") else (lambda t: t)       # Google voices read a note aloud; designed ones do not
-    reqs = [{"request": {"contents": [{"parts": [{"text": spoken(t)}]}], "generationConfig": _speech(voice_id)}} for t in texts]
+    reqs = [{"request": {"contents": [{"parts": [{"text": t}]}], "generationConfig": _speech(voice_id)}} for t in texts]
     body = {"batch": {"display_name": label[:60], "input_config": {"requests": {"requests": reqs}}}}
     status, data = post(BATCH_URL, body, key)
     if status != 200 or not data.get("name"):

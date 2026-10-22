@@ -49,11 +49,32 @@ def black_start(path: Path, window: float = BLACK_WINDOW_S) -> bool:
     return "black_start" in out
 
 
+def narration_intact(path: Path, speech_end: float, window: float = 0.9) -> bool:
+    """True when the final file still carries voice-level energy in the last `window` seconds of narration (22 Oct 2026: every video lost
+    its last words in the mix). Compares the last second of speech against the second after it, which holds music only."""
+    import wave
+    import numpy as np
+    import tempfile
+    with tempfile.TemporaryDirectory() as td:
+        wav = Path(td) / "a.wav"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(path), "-vn", "-ac", "1", "-ar", "16000", "-af", "highpass=f=150", str(wav)], check=True)
+        with wave.open(str(wav)) as w:
+            rate, pcm = w.getframerate(), np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32)
+    def rms(a, b):
+        seg = pcm[int(max(0, a) * rate): int(b * rate)]
+        return float(np.sqrt((seg ** 2).mean())) if len(seg) else 0.0
+    last = rms(speech_end - window, speech_end)
+    after = rms(speech_end + 0.6, speech_end + 0.6 + window)
+    return last > 300 and last > 1.6 * max(after, 1.0)
+
+
 def report(path: Path, kind: str, voiced_seconds: float, caption_cues: list, target_seconds: float | None = None,
-           check_freeze: bool = True, story: bool = False) -> list:
+           check_freeze: bool = True, story: bool = False, speech_end: float | None = None) -> list:
     """Empty list = pass. Each reason starts with its gate name."""
     reasons = []
     info = probe(path)
+    if speech_end and not narration_intact(path, speech_end):
+        reasons.append(f"narration: the last line is cut or inaudible before {speech_end:.1f}s")
     dur = info["duration"]
     if kind == "short":
         lo, hi = STORY_RANGE if story else SHORT_RANGE

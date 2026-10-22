@@ -55,3 +55,24 @@ def test_story_shorts_may_run_to_three_minutes(tmp_path):
     clip = _clip(tmp_path / "s.mp4", 80)
     assert not any(r.startswith("duration") for r in qa.report(clip, "short", voiced_seconds=78, caption_cues=[(0, 78, "x")], check_freeze=False, story=True))
     assert any(r.startswith("duration") for r in qa.report(clip, "short", voiced_seconds=78, caption_cues=[(0, 78, "x")], check_freeze=False))
+
+
+def _noise_video(path, speech_until, total, rate=16000):
+    """A clip whose audio is voice-like noise until `speech_until`, then quiet music-like hum to `total`."""
+    import numpy as np, wave, subprocess
+    rng = np.random.default_rng(3)
+    n_sp, n_rest = int(speech_until * rate), int((total - speech_until) * rate)
+    pcm = np.concatenate([rng.normal(0, 5000, n_sp), 400 * np.sin(2 * np.pi * 220 * np.arange(n_rest) / rate)]).astype(np.int16)
+    wav = path.with_suffix(".wav")
+    with wave.open(str(wav), "wb") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(rate); w.writeframes(pcm.tobytes())
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", f"color=c=black:s=64x64:d={total}", "-i", str(wav), "-shortest", "-pix_fmt", "yuv420p", "-c:a", "aac", str(path)], check=True)
+    return path
+
+
+def test_narration_intact_gate_catches_a_clipped_ending(tmp_path):
+    good = _noise_video(tmp_path / "good.mp4", speech_until=6.0, total=9.0)
+    assert qa.narration_intact(good, speech_end=6.0)
+    cut = _noise_video(tmp_path / "cut.mp4", speech_until=4.0, total=9.0)          # narration stops 2 s before it should
+    assert not qa.narration_intact(cut, speech_end=6.0)
+    assert any(r.startswith("narration") for r in qa.report(cut, "short", voiced_seconds=6, caption_cues=[(0, 6, "x")], check_freeze=False, story=True, speech_end=6.0))
