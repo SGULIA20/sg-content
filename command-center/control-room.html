@@ -118,6 +118,16 @@ h3.sub { font: 600 13px/1.2 var(--f-display); letter-spacing: .08em; text-transf
 
   <div id="banner" class="notice" hidden></div>
 
+  <section id="conn" class="panel" hidden aria-labelledby="h-conn">
+    <h2 id="h-conn">Not connected</h2>
+    <p id="conn-why" style="margin:0"></p>
+    <p id="conn-tech" class="small muted mono" style="margin:0;overflow-wrap:anywhere"></p>
+    <div class="switches">
+      <button id="conn-allow" class="primary" type="button">Allow access and retry</button>
+      <button id="conn-manage" type="button">Open permissions</button>
+    </div>
+  </section>
+
   <section class="panel" aria-labelledby="h-switch">
     <h2 id="h-switch">Pipeline</h2>
     <div class="switches">
@@ -225,7 +235,9 @@ h3.sub { font: 600 13px/1.2 var(--f-display); letter-spacing: .08em; text-transf
       case "not_in_manifest": case "approval_required": case "consent_required": return "This page needs your OK to use Supabase. Reload and allow it when claude.ai asks.";
       case "blocked_by_policy": return "Your organisation blocks this Supabase tool for this page.";
       case "server_unavailable": return "Supabase did not answer just now. Try Refresh in a minute.";
-      case "tool_error": return "The database refused the request: " + String(e.message || "").slice(0, 200);
+      case "tool_error": return "The database refused the request. If it mentions permission or project, reconnect Supabase in claude.ai Settings → Connectors.";
+      case "unreadable": return "Connected, but the answer came back in an unexpected format. Send Claude the details line below.";
+      case "not_granted": case "capability_disabled": case "capability_removed": return "This view can't use your connectors. Open the page in a web browser at claude.ai (Chrome or Safari), signed in.";
       default: return "Could not reach the control room (" + (e && e.code || "unknown") + "). Try Refresh.";
     }
   }
@@ -233,15 +245,29 @@ h3.sub { font: 600 13px/1.2 var(--f-display); letter-spacing: .08em; text-transf
   function rowsFrom(res) {
     let p = res && res.payload, text = null;
     if (Array.isArray(p)) return p;
-    if (typeof p === "string") text = p;
-    else if (p && typeof p.result === "string") text = p.result;
+    if (p && typeof p === "object") {
+      for (const k of ["rows", "data", "result"]) if (Array.isArray(p[k])) return p[k];
+      if (typeof p.result === "string") text = p.result;
+    } else if (typeof p === "string") text = p;
     if (text === null) {
       const b = (res && res.content || []).find((c) => c.type === "text");
       text = b ? b.text : "";
       try { const j = JSON.parse(text); if (Array.isArray(j)) return j; if (j && typeof j.result === "string") text = j.result; } catch (_) {}
     }
     const m = text.match(/<untrusted-data-[^>]*>\s*([\s\S]*?)\s*<\/untrusted-data-[^>]*>/);
-    return JSON.parse(m ? m[1] : text);
+    const body = m ? m[1] : text;
+    try { return JSON.parse(body); } catch (_) {}
+    const a = body.indexOf("["), z = body.lastIndexOf("]");
+    try { if (a >= 0 && z > a) return JSON.parse(body.slice(a, z + 1)); } catch (_) {}
+    throw { code: "unreadable", message: "The database answered in a shape this page could not read: " + String(body).slice(0, 160) };
+  }
+
+  function showConn(why, tech) {
+    $("conn").hidden = !why;
+    if (!why) return;
+    $("conn-why").textContent = why;
+    $("conn-tech").textContent = tech ? "Details for Claude: " + tech : "";
+    const st = $("state"); st.className = "pill off"; st.textContent = "Not connected";
   }
 
   async function sql(query, project) {
@@ -290,11 +316,12 @@ h3.sub { font: 600 13px/1.2 var(--f-display); letter-spacing: .08em; text-transf
     try {
       const rows = await sql(READ);
       data = rows[0] && rows[0].data;
-      banner("");
+      banner(""); showConn("");
       render();
       loadWaypoint();
     } catch (e) {
-      banner(connectorCopy(e), true);
+      banner("");
+      showConn(connectorCopy(e), `${(e && (e.code || e.name)) || "error"}: ${String((e && e.message) || e).slice(0, 220)}`);
     } finally { $("refresh").disabled = false; }
   }
 
@@ -559,13 +586,35 @@ Reply with only JSON: {"action": "...", "args": {...}, "summary": "one short sen
   try { const d = localStorage.getItem("sg-ask-draft"); if (d) $("ask").value = d; } catch (_) {}
   $("ask").addEventListener("input", () => { try { localStorage.setItem("sg-ask-draft", $("ask").value); } catch (_) {} });
 
+  let perms = null;
+  async function connect() {
+    if (!mcp) { showConn("This view can't reach your connectors. Open the link in Chrome or Safari at claude.ai, signed in as the owner (the Claude phone app may not allow it yet).", "mcp=null"); return; }
+    await load();
+  }
+  document.addEventListener("click", async (ev) => {
+    const b = ev.target.closest("button"); if (!b) return;
+    if (b.id === "conn-allow") {
+      b.disabled = true;
+      try { if (perms) await perms.request(["mcp:Supabase", "sample"]); } catch (_) {}
+      b.disabled = false; return connect();
+    }
+    if (b.id === "conn-manage") {
+      try { if (perms) { await perms.manage(); return connect(); } } catch (_) {}
+      $("conn-tech").textContent = "Use the page's menu (top right) → Permissions, switch Supabase on, then tap Allow access and retry.";
+    }
+  });
+
   (async () => {
     const api = window.claude;
-    if (!api || !api.use) { banner("Open this page on claude.ai, signed in, so it can reach your Supabase connector. Telegram /pause and /resume still work.", true); $("state").textContent = "Offline"; return; }
-    [mcp, sample] = await Promise.all([api.use("mcp"), api.use("sample")]);
-    if (!mcp) { banner("This view can't reach your connectors. Open the page on claude.ai signed in as the owner. Telegram /pause and /resume still work.", true); $("state").textContent = "Offline"; return; }
+    if (!api || !api.use) { showConn("Open this link on claude.ai, signed in, so the page can reach your Supabase connector. Telegram /pause and /resume still work.", "window.claude missing"); return; }
+    [mcp, sample, perms] = await Promise.all([api.use("mcp"), api.use("sample"), api.use("permissions")]);
+    if (perms) {
+      const s = await perms.state("mcp:Supabase").catch(() => "unavailable");
+      if (s === "denied") { showConn("Supabase access was turned off for this page. Tap Open permissions and switch Supabase on.", "mcp:Supabase=denied"); return; }
+    }
+    if (!mcp) { showConn("This view can't reach your connectors. Open the link in Chrome or Safari at claude.ai, signed in as the owner (the Claude phone app may not allow it yet).", "mcp=null"); return; }
     if (!sample) $("ask-go").disabled = true;
-    await load();
+    await connect();
     setInterval(() => { if (document.visibilityState === "visible" && !busy) load(); }, 120000);
   })();
 })();
