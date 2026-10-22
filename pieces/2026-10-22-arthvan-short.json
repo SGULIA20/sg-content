@@ -103,7 +103,8 @@
  "reasons": [
   "try 1: length: 244 words, allowed 150-230",
   "remake: clipped ending / repeated line / tone note (22 Oct 2026)",
-  "instagram: 2026-10-22-arthvan-short: reel container failed with status ERROR (already live: nothing)"
+  "instagram: 2026-10-22-arthvan-short: reel container failed with status ERROR (already live: nothing)",
+  "threads: video container failed: UNKNOWN"
  ],
  "script": {
   "captions": {
@@ -333,6 +334,6 @@
   "title_hi": "Kailash parvat par koi kyon nahi chadha",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-22T16:23:44+00:00",
+ "updated": "2026-10-22T16:23:57+00:00",
  "writer": "claude"
 }
