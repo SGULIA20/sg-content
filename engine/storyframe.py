@@ -13,6 +13,7 @@ TOP, PANEL, BOTTOM = 0.17, 0.66, 0.17
 HANDLE = "@sanjeev_gulia"
 END_S = 3.0                                                  # branded end card: channel name, tagline, subscribe, the question
 LOGO_PX = 150                                                # round channel badge in the panel's bottom-right corner, every frame
+WATERMARK_ALPHA = 0.10                                       # the same badge, large and faint, in the centre of every panel: a crop cannot remove it
 LOGO_TEXT = {"sglearning": ("SG", "Learning"), "arthvan": ("SG", "Myth World")}
 LOGO_DIR = Path(__file__).resolve().parent.parent / "assets" / "logo"
 
@@ -58,7 +59,7 @@ def _run(args: list) -> None:
 
 
 def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, cue_overlays: list, chip: Path | None = None,
-          logo_png: Path | None = None) -> Path:
+          logo_png: Path | None = None, watermark_png: Path | None = None) -> Path:
     """Panel with push-in in the middle band, black bands top and bottom, title band, optional evidence chip, caption cues overlaid."""
     w, h = size
     ph = int(h * PANEL)
@@ -69,6 +70,12 @@ def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, 
              f"pad={w}:{h}:0:{py}:black[base];[base][1:v]overlay=0:0:shortest=1[t]")
     inputs = ["-loop", "1", "-i", str(panel), "-loop", "1", "-i", str(title_png)]
     last, k0 = "[t]", 2
+    if watermark_png is not None:
+        wm = int(min(w, ph) * 0.34)
+        inputs += ["-loop", "1", "-i", str(watermark_png)]
+        chain += (f";[{k0}:v]scale={wm}:{wm},format=rgba,colorchannelmixer=aa={WATERMARK_ALPHA}[wm];"
+                  f"{last}[wm]overlay={(w - wm) // 2}:{py + (ph - wm) // 2}:shortest=1[x{k0}]")
+        last, k0 = f"[x{k0}]", k0 + 1
     for extra, x, y in ((chip, w - 400 - 30, py + 30), (logo_png, w - LOGO_PX - 26, py + ph - LOGO_PX - 26)):
         if extra is None:
             continue
@@ -101,6 +108,7 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     clips, all_cues = [], []
     bottom_y = h - band_h
     badge = logo(piece.channel)
+    big_badge = logo(piece.channel, 600)
     for i, (panel, dur, (wav, d), start, scene_d) in enumerate(zip(panels, durations, lines, starts, piece.script["scenes"])):
         cues = captions.split(scene_d["vo"], d)
         all_cues += captions.offset(cues, start)
@@ -115,7 +123,7 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
             chip = out_dir / f"label-{scene_d['label']}.png"
             if not chip.exists():
                 cards.render("label", {"label": scene_d["label"]}, chip, (400, 90))
-        clips.append(scene(panel, dur, size, out_dir / f"scene{i:02d}.mp4", title_png, overlays, chip=chip, logo_png=badge))
+        clips.append(scene(panel, dur, size, out_dir / f"scene{i:02d}.mp4", title_png, overlays, chip=chip, logo_png=badge, watermark_png=big_badge))
     (out_dir / "captions.ass").write_text(captions.ass(all_cues, size))
     clips.append(end_card(piece, size, out_dir))
     concat = out_dir / "scenes.txt"

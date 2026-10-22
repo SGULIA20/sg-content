@@ -38,7 +38,7 @@ def test_scorecard_marks_each_cell_posted_or_not(tmp_path):
     assert "SG-LEARNING Short\n   YouTube: ✅ Posted\n   Instagram: ✅ Posted\n   Threads: ✅ Posted\n   LinkedIn: ✅ Posted" in text
     assert "SG-MYTH Short\n   YouTube: ✅ Posted\n   Instagram: 🔴 Reel only\n   Threads: 🔴 NOT POSTED" in text
     assert "SG-MYTH long video\n   YouTube: ✅ Posted" in text and "SG-LEARNING long video" not in text
-    assert text.endswith("LinkedIn daily post\n   LinkedIn: ✅ Posted")
+    assert "LinkedIn daily post\n   LinkedIn: ✅ Posted" in text and "📅 Tomorrow Fri 23 Oct (Lagos time)" in text
 
 
 def test_scheduled_youtube_before_its_time_is_not_called_missing(tmp_path):
@@ -47,7 +47,8 @@ def test_scheduled_youtube_before_its_time_is_not_called_missing(tmp_path):
     _piece(tmp_path, "2026-10-22-sglearning-short", "sglearning", "short", day, yt_id="a")
     early = datetime(2026, 10, 22, 10, 0, tzinfo=timezone.utc)
     text = evening.build(day, early, tmp_path, [])
-    assert "SG-LEARNING Short\n   YouTube: ⏳ scheduled" in text and "Waypoint" not in text and "ScoreMyBiz Reel\n   YouTube: 🔴 NOT POSTED" in text
+    status = text.split("📅 Tomorrow")[0]
+    assert "SG-LEARNING Short\n   YouTube: ⏳ scheduled" in status and "Waypoint" not in status and "ScoreMyBiz Reel\n   YouTube: 🔴 NOT POSTED" in status
 
 
 def test_unreadable_app_log_gives_an_empty_list(monkeypatch):
@@ -55,3 +56,12 @@ def test_unreadable_app_log_gives_an_empty_list(monkeypatch):
         raise OSError("offline")
     monkeypatch.setattr(evening.urllib.request, "urlopen", boom)
     assert evening.fetch_app_log() == []
+
+
+def test_tomorrow_plan_lists_times_in_lagos_time():
+    plan = evening.tomorrow_plan(date(2026, 10, 23))                               # tomorrow = Saturday 24 Oct: Learning with SG long day
+    assert plan.startswith("📅 Tomorrow Sat 24 Oct (Lagos time)")
+    assert "04:37  your daily post: LinkedIn" in plan and "09:30  Learning with SG Reel and Story" in plan
+    assert "14:30  Learning with SG long video: YouTube" in plan and "15:30  Shorts on both channels: YouTube" in plan
+    assert "15:37  Waypoint set" in plan or "15:37  ScoreMyBiz set" in plan and "17:00  SG-MYTH-WORLD Reel and Story" in plan
+    assert "SG-MYTH-WORLD long video" not in plan

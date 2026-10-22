@@ -93,6 +93,33 @@ def _personal_row(day: date, log: list) -> tuple:
     return ("LinkedIn daily post", {"LinkedIn": OK if done else NO})
 
 
+WAT = timezone(timedelta(hours=1))
+
+
+def _wat(hhmm_ist: str) -> str:
+    """An India clock time as Lagos time (IST is 4 h 30 min ahead of WAT)."""
+    h, m = (int(x) for x in hhmm_ist.split(":"))
+    t = (h * 60 + m - 270) % (24 * 60)
+    return f"{t // 60:02d}:{t % 60:02d}"
+
+
+def tomorrow_plan(day: date) -> str:
+    """What goes out tomorrow and when, in Lagos time (founder, 22 Oct 2026: a 21:00 WAT note on both bots)."""
+    t = day + timedelta(days=1)
+    app = APP_NAMES[app_for(t)]
+    rows = [("04:37", "LinkedIn", "your daily post"),
+            (_wat(CHANNELS["sglearning"].ig_slot_ist), "Instagram + Threads + LinkedIn", "Learning with SG Reel and Story")]
+    for key, label in (("sglearning", "Learning with SG"), ("arthvan", "SG-MYTH-WORLD")):
+        ch = CHANNELS[key]
+        if t.weekday() in ch.long_days:
+            rows.append((_wat(ch.long_publish_ist), "YouTube", f"{label} long video"))
+    rows.append((_wat(CHANNELS["sglearning"].short_publish_ist), "YouTube", "Shorts on both channels"))
+    rows.append(("15:37", "Instagram + Threads + LinkedIn + YouTube", f"{app} set (Reel, post, Story)"))
+    rows.append((_wat(CHANNELS["arthvan"].ig_slot_ist), "Instagram + Threads + LinkedIn", "SG-MYTH-WORLD Reel and Story"))
+    rows.sort()
+    return "\n".join([f"📅 Tomorrow {t.strftime('%a %d %b')} (Lagos time)"] + [f"   {hh}  {what}: {where}" for hh, where, what in rows])
+
+
 def build(day: date | None = None, now: datetime | None = None, root: Path = ROOT, log: list | None = None) -> str:
     day = day or today_ist()
     now = now or datetime.now(timezone.utc)
@@ -104,6 +131,7 @@ def build(day: date | None = None, now: datetime | None = None, root: Path = ROO
     for name, cells in rows:
         lines.append(name)
         lines += [f"   {k}: {v}" for k, v in cells.items()]
+    lines += ["", tomorrow_plan(day)]
     return "\n".join(lines)
 
 
