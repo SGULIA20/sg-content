@@ -84,7 +84,8 @@
  ],
  "id": "2026-10-23-arthvan-short",
  "ids": {
-  "ig_story_id": "skipped: Reel over 60 s"
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "miAOjHnEulQ"
  },
  "kind": "short",
  "publish_day": "2026-10-23",
@@ -284,20 +285,20 @@
   },
   "title": "Kedarnath ko bachane wala *patthar* 🤯"
  },
- "status": "written",
+ "status": "uploaded",
  "timings": [
   0.0,
-  7.89,
-  12.94,
-  19.03,
-  29.56,
-  38.89,
-  47.46,
-  78.63,
-  85.32,
-  92.93,
-  103.46,
-  108.75
+  6.81,
+  11.06,
+  17.67,
+  28.76,
+  36.33,
+  44.62,
+  51.43,
+  57.76,
+  63.89,
+  68.66,
+  73.87
  ],
  "topic": {
   "allowed_sources": [
@@ -319,6 +320,6 @@
   "title_hi": "Kedarnath 2013, mandir kaise bacha",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-22T07:24:14+00:00",
+ "updated": "2026-10-22T13:21:31+00:00",
  "writer": "claude"
 }
