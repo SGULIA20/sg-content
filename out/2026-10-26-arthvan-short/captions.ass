@@ -1,0 +1,58 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.89,Default,,0,0,0,,Kya Mahabharat ki tareekh taaron mein
+Dialogue: 0,0:00:02.89,0:00:03.68,Default,,0,0,0,,likhi hai?
+Dialogue: 0,0:00:03.68,0:00:05.52,Default,,0,0,0,,Bhishma Parva kehta hai,
+Dialogue: 0,0:00:05.52,0:00:07.88,Default,,0,0,0,,yuddh se pehle aasmaan bechain tha.
+Dialogue: 0,0:00:08.33,0:00:10.37,Default,,0,0,0,,Suraj aur chaand dono par grahan
+Dialogue: 0,0:00:10.37,0:00:10.82,Default,,0,0,0,,laga,
+Dialogue: 0,0:00:10.82,0:00:12.63,Default,,0,0,0,,kuch hi dinon ke faasle par.
+Dialogue: 0,0:00:12.63,0:00:14.67,Default,,0,0,0,,Graha ajeeb jagah khade the,
+Dialogue: 0,0:00:14.67,0:00:16.25,Default,,0,0,0,,jaise koi chetavani.
+Dialogue: 0,0:00:16.70,0:00:19.82,Default,,0,0,0,,Pichhli sadi mein Archaeological Survey of
+Dialogue: 0,0:00:19.82,0:00:22.46,Default,,0,0,0,,India ne Hastinapur mein khudai ki.
+Dialogue: 0,0:00:22.91,0:00:24.60,Default,,0,0,0,,Mile Painted Grey Ware,
+Dialogue: 0,0:00:24.60,0:00:27.02,Default,,0,0,0,,yaani sleti bartan jin par kaale
+Dialogue: 0,0:00:27.02,0:00:28.71,Default,,0,0,0,,rang se design bane hain.
+Dialogue: 0,0:00:29.16,0:00:31.80,Default,,0,0,0,,Basti ki parten lagbhag 1100 BCE
+Dialogue: 0,0:00:31.80,0:00:32.68,Default,,0,0,0,,ki maani gayin,
+Dialogue: 0,0:00:32.68,0:00:34.44,Default,,0,0,0,,BCE yaani Isa se pehle.
+Dialogue: 0,0:00:34.89,0:00:39.16,Default,,0,0,0,,Kurukshetra ke paas Raja Karna Ka
+Dialogue: 0,0:00:39.16,0:00:43.05,Default,,0,0,0,,Tila par bhi yahi bartan nikle.
+Dialogue: 0,0:00:43.50,0:00:46.82,Default,,0,0,0,,Paramparik ganana yuddh ko Kali Yuga
+Dialogue: 0,0:00:46.82,0:00:47.59,Default,,0,0,0,,ki shuruaat,
+Dialogue: 0,0:00:47.59,0:00:50.14,Default,,0,0,0,,3102 BCE ke paas rakhti hai.
+Dialogue: 0,0:00:50.59,0:00:53.07,Default,,0,0,0,,Archaeo-astronomer,
+Dialogue: 0,0:00:53.07,0:00:58.04,Default,,0,0,0,,yaani taaron se itihaas naapne wale,
+Dialogue: 0,0:00:58.04,0:01:02.17,Default,,0,0,0,,computer se bhi lagbhag wahi daur
+Dialogue: 0,0:01:02.17,0:01:03.83,Default,,0,0,0,,nikaalte hain.
+Dialogue: 0,0:01:04.28,0:01:08.86,Default,,0,0,0,,Lekin doosre astronomer kehte hain,
+Dialogue: 0,0:01:08.86,0:01:14.27,Default,,0,0,0,,aise grahan jode Kurukshetra par sainkdon
+Dialogue: 0,0:01:14.27,0:01:15.52,Default,,0,0,0,,baar dikhe.
+Dialogue: 0,0:01:15.97,0:01:17.59,Default,,0,0,0,,Archaeologist kehte hain,
+Dialogue: 0,0:01:17.59,0:01:19.91,Default,,0,0,0,,lohe wali parten kaafi baad ki
+Dialogue: 0,0:01:19.91,0:01:20.15,Default,,0,0,0,,hain.
+Dialogue: 0,0:01:20.15,0:01:22.00,Default,,0,0,0,,Yoddhaon ke naam wala koi lekh
+Dialogue: 0,0:01:22.00,0:01:22.93,Default,,0,0,0,,nahi mila.
+Dialogue: 0,0:01:23.38,0:01:24.72,Default,,0,0,0,,Twist yeh hai,
+Dialogue: 0,0:01:24.72,0:01:30.50,Default,,0,0,0,,Aihole ke Meguti mandir ka shilalekh,
+Dialogue: 0,0:01:30.50,0:01:34.06,Default,,0,0,0,,yaani pathar par khuda lekh,
+Dialogue: 0,0:01:34.06,0:01:37.62,Default,,0,0,0,,yuddh se beete saal ginta hai.
+Dialogue: 0,0:01:38.07,0:01:41.00,Default,,0,0,0,,Aaj Kurukshetra ke Jyotisar mein purana
+Dialogue: 0,0:01:41.00,0:01:42.13,Default,,0,0,0,,bargad khada hai.
+Dialogue: 0,0:01:42.13,0:01:43.03,Default,,0,0,0,,Log maante hain,
+Dialogue: 0,0:01:43.03,0:01:44.83,Default,,0,0,0,,yahin Gita kahi gayi thi.
+Dialogue: 0,0:01:45.28,0:01:47.80,Default,,0,0,0,,Aapke hisaab se jawab kahan chhupa
+Dialogue: 0,0:01:47.80,0:01:48.03,Default,,0,0,0,,hai,
+Dialogue: 0,0:01:48.03,0:01:49.64,Default,,0,0,0,,taaron mein ya mitti mein?
