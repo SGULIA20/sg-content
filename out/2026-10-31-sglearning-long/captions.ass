@@ -1,0 +1,422 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,86,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:03.73,Default,,0,0,0,,Mummy ne apne shaadi ke kangan
+Dialogue: 0,0:00:03.73,0:00:07.08,Default,,0,0,0,,jeweller ke counter par rakhe.
+Dialogue: 0,0:00:07.08,0:00:08.57,Default,,0,0,0,,Unhe laga,
+Dialogue: 0,0:00:08.57,0:00:12.30,Default,,0,0,0,,itne saal mein sona kitna mehnga
+Dialogue: 0,0:00:12.30,0:00:13.05,Default,,0,0,0,,ho gaya.
+Dialogue: 0,0:00:13.05,0:00:16.40,Default,,0,0,0,,Aaj toh achha paisa milega.
+Dialogue: 0,0:00:16.40,0:00:19.39,Default,,0,0,0,,Jeweller ne kangan tole,
+Dialogue: 0,0:00:19.39,0:00:21.62,Default,,0,0,0,,calculator chalaya,
+Dialogue: 0,0:00:21.62,0:00:24.98,Default,,0,0,0,,aur muskura kar rakam batayi.
+Dialogue: 0,0:00:24.98,0:00:27.96,Default,,0,0,0,,Mummy ka chehra utar gaya.
+Dialogue: 0,0:00:28.41,0:00:29.87,Default,,0,0,0,,Rakam kam nahi thi,
+Dialogue: 0,0:00:29.87,0:00:31.82,Default,,0,0,0,,par umeed se bahut kam thi.
+Dialogue: 0,0:00:31.82,0:00:33.27,Default,,0,0,0,,Jeweller ne kaha,
+Dialogue: 0,0:00:33.27,0:00:34.01,Default,,0,0,0,,behenji,
+Dialogue: 0,0:00:34.01,0:00:36.68,Default,,0,0,0,,design ka paisa wapas nahi milta.
+Dialogue: 0,0:00:36.68,0:00:38.38,Default,,0,0,0,,Main sirf sona tolta hoon,
+Dialogue: 0,0:00:38.38,0:00:40.33,Default,,0,0,0,,woh bhi purity check karke.
+Dialogue: 0,0:00:40.33,0:00:41.30,Default,,0,0,0,,Mummy boli,
+Dialogue: 0,0:00:41.30,0:00:43.49,Default,,0,0,0,,kharidte waqt toh design ka bhi
+Dialogue: 0,0:00:43.49,0:00:44.95,Default,,0,0,0,,poora paisa diya tha.
+Dialogue: 0,0:00:44.95,0:00:46.41,Default,,0,0,0,,Jeweller chup raha.
+Dialogue: 0,0:00:46.86,0:00:49.06,Default,,0,0,0,,Ghar aakar Mummy ne Papa ko
+Dialogue: 0,0:00:49.06,0:00:49.80,Default,,0,0,0,,sab bataya.
+Dialogue: 0,0:00:49.80,0:00:50.77,Default,,0,0,0,,Papa bole,
+Dialogue: 0,0:00:50.77,0:00:53.22,Default,,0,0,0,,sona kabhi dhokha nahi deta,
+Dialogue: 0,0:00:53.22,0:00:54.44,Default,,0,0,0,,yeh toh safe hai.
+Dialogue: 0,0:00:54.44,0:00:56.89,Default,,0,0,0,,Behen ne phone se nazar uthayi
+Dialogue: 0,0:00:56.89,0:00:57.62,Default,,0,0,0,,aur poocha,
+Dialogue: 0,0:00:57.62,0:00:58.11,Default,,0,0,0,,Papa,
+Dialogue: 0,0:00:58.11,0:00:59.34,Default,,0,0,0,,safe aur kamaai,
+Dialogue: 0,0:00:59.34,0:01:01.05,Default,,0,0,0,,kya dono same baat hain?
+Dialogue: 0,0:01:01.05,0:01:03.49,Default,,0,0,0,,Kamre mein thodi der sannata chha
+Dialogue: 0,0:01:03.49,0:01:03.74,Default,,0,0,0,,gaya.
+Dialogue: 0,0:01:04.19,0:01:08.62,Default,,0,0,0,,Yeh kahani lagbhag har Indian ghar
+Dialogue: 0,0:01:08.62,0:01:09.51,Default,,0,0,0,,ki hai.
+Dialogue: 0,0:01:09.51,0:01:13.94,Default,,0,0,0,,Hum sone ko suraksha maante hain,
+Dialogue: 0,0:01:13.94,0:01:16.16,Default,,0,0,0,,aur sahi bhi hai,
+Dialogue: 0,0:01:16.16,0:01:19.70,Default,,0,0,0,,mushkil waqt mein kaam aata hai.
+Dialogue: 0,0:01:19.70,0:01:23.25,Default,,0,0,0,,Par asli sawaal yeh hai ki
+Dialogue: 0,0:01:23.25,0:01:27.23,Default,,0,0,0,,kaun sa sona sach mein kamata
+Dialogue: 0,0:01:27.23,0:01:27.68,Default,,0,0,0,,hai.
+Dialogue: 0,0:01:27.68,0:01:28.56,Default,,0,0,0,,Gehna,
+Dialogue: 0,0:01:28.56,0:01:29.45,Default,,0,0,0,,gold ETF,
+Dialogue: 0,0:01:29.45,0:01:32.11,Default,,0,0,0,,ya sovereign gold bond?
+Dialogue: 0,0:01:32.56,0:01:34.44,Default,,0,0,0,,Aaj ke sawaal seedhe hain.
+Dialogue: 0,0:01:34.44,0:01:34.98,Default,,0,0,0,,Pehla,
+Dialogue: 0,0:01:34.98,0:01:37.93,Default,,0,0,0,,gehne par making charge kahan chala
+Dialogue: 0,0:01:37.93,0:01:38.73,Default,,0,0,0,,jaata hai?
+Dialogue: 0,0:01:38.73,0:01:39.27,Default,,0,0,0,,Doosra,
+Dialogue: 0,0:01:39.27,0:01:41.69,Default,,0,0,0,,locker ka kharcha kaun ginta hai?
+Dialogue: 0,0:01:41.69,0:01:42.22,Default,,0,0,0,,Teesra,
+Dialogue: 0,0:01:42.22,0:01:44.37,Default,,0,0,0,,gold bond par 2.5 percent extra
+Dialogue: 0,0:01:44.37,0:01:45.72,Default,,0,0,0,,kaise milta hai?
+Dialogue: 0,0:01:45.72,0:01:46.79,Default,,0,0,0,,Aur aakhir mein,
+Dialogue: 0,0:01:46.79,0:01:48.94,Default,,0,0,0,,gehna kab kharidari hai,
+Dialogue: 0,0:01:48.94,0:01:50.28,Default,,0,0,0,,aur kab investment.
+Dialogue: 0,0:01:50.73,0:01:52.73,Default,,0,0,0,,Chalo peeche chalte hain,
+Dialogue: 0,0:01:52.73,0:01:55.31,Default,,0,0,0,,us din jab kangan khareede gaye
+Dialogue: 0,0:01:55.31,0:01:55.59,Default,,0,0,0,,the.
+Dialogue: 0,0:01:55.59,0:01:57.31,Default,,0,0,0,,Shaadi ki taiyaari thi,
+Dialogue: 0,0:01:57.31,0:01:58.74,Default,,0,0,0,,ghar mein raunak thi.
+Dialogue: 0,0:01:58.74,0:02:01.89,Default,,0,0,0,,Papa aur Mummy jeweller ki dukaan
+Dialogue: 0,0:02:01.89,0:02:03.03,Default,,0,0,0,,par baithe the.
+Dialogue: 0,0:02:03.03,0:02:05.61,Default,,0,0,0,,Saamne trays mein chamakte kangan,
+Dialogue: 0,0:02:05.61,0:02:06.75,Default,,0,0,0,,haar aur jhumke.
+Dialogue: 0,0:02:06.75,0:02:09.04,Default,,0,0,0,,Har cheez par price tag laga
+Dialogue: 0,0:02:09.04,0:02:09.33,Default,,0,0,0,,tha.
+Dialogue: 0,0:02:09.78,0:02:11.61,Default,,0,0,0,,Jeweller ne bill banaya,
+Dialogue: 0,0:02:11.61,0:02:13.44,Default,,0,0,0,,toh usme kai line thi.
+Dialogue: 0,0:02:13.44,0:02:13.97,Default,,0,0,0,,Pehli,
+Dialogue: 0,0:02:13.97,0:02:16.06,Default,,0,0,0,,sone ka wazan aur us din
+Dialogue: 0,0:02:16.06,0:02:16.58,Default,,0,0,0,,ka bhaav.
+Dialogue: 0,0:02:16.58,0:02:17.11,Default,,0,0,0,,Doosri,
+Dialogue: 0,0:02:17.11,0:02:18.15,Default,,0,0,0,,making charge.
+Dialogue: 0,0:02:18.15,0:02:19.46,Default,,0,0,0,,Phir upar se GST.
+Dialogue: 0,0:02:19.46,0:02:22.08,Default,,0,0,0,,Papa ne sirf neeche likha total
+Dialogue: 0,0:02:22.08,0:02:22.60,Default,,0,0,0,,dekha,
+Dialogue: 0,0:02:22.60,0:02:24.96,Default,,0,0,0,,aur bina sawaal kiye paise de
+Dialogue: 0,0:02:24.96,0:02:25.22,Default,,0,0,0,,diye.
+Dialogue: 0,0:02:25.67,0:02:30.31,Default,,0,0,0,,Making charge yaani gehna banane ki
+Dialogue: 0,0:02:30.31,0:02:31.47,Default,,0,0,0,,mazdoori,
+Dialogue: 0,0:02:31.47,0:02:34.95,Default,,0,0,0,,karigar ki mehnat ka paisa.
+Dialogue: 0,0:02:34.95,0:02:37.26,Default,,0,0,0,,Sona toh sona hai,
+Dialogue: 0,0:02:37.26,0:02:39.97,Default,,0,0,0,,par kangan ki nakkashi,
+Dialogue: 0,0:02:39.97,0:02:41.52,Default,,0,0,0,,haar ki jaali,
+Dialogue: 0,0:02:41.52,0:02:43.84,Default,,0,0,0,,yeh sab haath ka kaam hai.
+Dialogue: 0,0:02:43.84,0:02:46.15,Default,,0,0,0,,Jitna baareek design,
+Dialogue: 0,0:02:46.15,0:02:49.25,Default,,0,0,0,,utna zyada making charge.
+Dialogue: 0,0:02:49.25,0:02:52.72,Default,,0,0,0,,Aur yeh paisa sone mein nahi,
+Dialogue: 0,0:02:52.72,0:02:54.27,Default,,0,0,0,,design mein gaya.
+Dialogue: 0,0:02:54.72,0:02:57.29,Default,,0,0,0,,Ab yahan woh baat aati hai
+Dialogue: 0,0:02:57.29,0:02:59.54,Default,,0,0,0,,jo koi nahi batata.
+Dialogue: 0,0:02:59.54,0:03:02.44,Default,,0,0,0,,Jab aap gehna bechne jaate ho,
+Dialogue: 0,0:03:02.44,0:03:05.98,Default,,0,0,0,,jeweller sirf sone ka wazan dekhta
+Dialogue: 0,0:03:05.98,0:03:06.30,Default,,0,0,0,,hai.
+Dialogue: 0,0:03:06.30,0:03:09.84,Default,,0,0,0,,Making charge ka paisa wapas nahi
+Dialogue: 0,0:03:09.84,0:03:10.48,Default,,0,0,0,,aata.
+Dialogue: 0,0:03:10.48,0:03:13.70,Default,,0,0,0,,Upar se purane gehne par kuch
+Dialogue: 0,0:03:13.70,0:03:16.27,Default,,0,0,0,,katauti bhi ho sakti hai,
+Dialogue: 0,0:03:16.27,0:03:18.20,Default,,0,0,0,,purity ke naam par.
+Dialogue: 0,0:03:18.65,0:03:20.20,Default,,0,0,0,,Matlab samjho.
+Dialogue: 0,0:03:20.20,0:03:23.67,Default,,0,0,0,,Jis din aapne gehna khareeda,
+Dialogue: 0,0:03:23.67,0:03:27.93,Default,,0,0,0,,usi din aapka kuch paisa hamesha
+Dialogue: 0,0:03:27.93,0:03:29.86,Default,,0,0,0,,ke liye chala gaya.
+Dialogue: 0,0:03:29.86,0:03:32.56,Default,,0,0,0,,Sone ka bhaav badhega,
+Dialogue: 0,0:03:32.56,0:03:36.81,Default,,0,0,0,,tab jaakar pehle woh nuksaan bharega.
+Dialogue: 0,0:03:36.81,0:03:40.68,Default,,0,0,0,,Uske baad hi asli kamaai shuru
+Dialogue: 0,0:03:40.68,0:03:41.45,Default,,0,0,0,,hogi.
+Dialogue: 0,0:03:41.45,0:03:45.32,Default,,0,0,0,,Yaani gehne ki race peeche se
+Dialogue: 0,0:03:45.32,0:03:47.25,Default,,0,0,0,,shuru hoti hai.
+Dialogue: 0,0:03:47.70,0:03:49.53,Default,,0,0,0,,GST ka bhi yahi haal hai.
+Dialogue: 0,0:03:49.53,0:03:52.41,Default,,0,0,0,,Kharidte waqt aapne sone aur making
+Dialogue: 0,0:03:52.41,0:03:52.93,Default,,0,0,0,,charge,
+Dialogue: 0,0:03:52.93,0:03:54.24,Default,,0,0,0,,dono par GST diya.
+Dialogue: 0,0:03:54.24,0:03:56.85,Default,,0,0,0,,Bechte waqt jeweller woh GST aapko
+Dialogue: 0,0:03:56.85,0:03:58.42,Default,,0,0,0,,wapas nahi deta.
+Dialogue: 0,0:03:58.42,0:04:00.25,Default,,0,0,0,,Woh bhi seedha kharcha hai.
+Dialogue: 0,0:04:00.25,0:04:02.08,Default,,0,0,0,,Bill mein chhota dikhta hai,
+Dialogue: 0,0:04:02.08,0:04:04.44,Default,,0,0,0,,par saalon baad hisaab mein bada
+Dialogue: 0,0:04:04.44,0:04:05.22,Default,,0,0,0,,lagta hai.
+Dialogue: 0,0:04:05.67,0:04:08.14,Default,,0,0,0,,Toh kya gehna khareedna galat hai?
+Dialogue: 0,0:04:08.14,0:04:09.13,Default,,0,0,0,,Bilkul nahi.
+Dialogue: 0,0:04:09.13,0:04:11.36,Default,,0,0,0,,Beti ki shaadi mein Mummy ke
+Dialogue: 0,0:04:11.36,0:04:13.34,Default,,0,0,0,,kangan ki jo chamak hogi,
+Dialogue: 0,0:04:13.34,0:04:16.80,Default,,0,0,0,,uski keemat calculator se nahi nikalti.
+Dialogue: 0,0:04:16.80,0:04:17.79,Default,,0,0,0,,Woh khushi hai,
+Dialogue: 0,0:04:17.79,0:04:18.28,Default,,0,0,0,,yaad hai,
+Dialogue: 0,0:04:18.28,0:04:19.52,Default,,0,0,0,,parampara hai.
+Dialogue: 0,0:04:19.52,0:04:21.74,Default,,0,0,0,,Bas use investment mat bolo.
+Dialogue: 0,0:04:21.74,0:04:23.23,Default,,0,0,0,,Woh kharidari hai,
+Dialogue: 0,0:04:23.23,0:04:24.71,Default,,0,0,0,,nayi saree ki tarah.
+Dialogue: 0,0:04:25.16,0:04:27.22,Default,,0,0,0,,Ab doosra sawaal.
+Dialogue: 0,0:04:27.22,0:04:30.51,Default,,0,0,0,,Shaadi ke baad gehna ghar mein
+Dialogue: 0,0:04:30.51,0:04:34.63,Default,,0,0,0,,rakhna Papa ko theek nahi laga.
+Dialogue: 0,0:04:34.63,0:04:36.69,Default,,0,0,0,,Chori ka darr tha,
+Dialogue: 0,0:04:36.69,0:04:40.40,Default,,0,0,0,,mehmaan aate jaate rehte the.
+Dialogue: 0,0:04:40.40,0:04:43.29,Default,,0,0,0,,Toh Papa bank pahunche,
+Dialogue: 0,0:04:43.29,0:04:46.99,Default,,0,0,0,,aur Bank Uncle se locker maanga.
+Dialogue: 0,0:04:46.99,0:04:49.88,Default,,0,0,0,,Bank Uncle ne form diya aur
+Dialogue: 0,0:04:49.88,0:04:52.76,Default,,0,0,0,,saalana kiraya bataya.
+Dialogue: 0,0:04:53.21,0:04:55.45,Default,,0,0,0,,Bade shehar ki SBI branch mein
+Dialogue: 0,0:04:55.45,0:04:58.26,Default,,0,0,0,,chhote locker ka kiraya lagbhag 2,000
+Dialogue: 0,0:04:58.26,0:04:59.66,Default,,0,0,0,,rupaye saal ka hai.
+Dialogue: 0,0:04:59.66,0:05:01.91,Default,,0,0,0,,Aur yeh 2,000 bhi poora nahi,
+Dialogue: 0,0:05:01.91,0:05:03.59,Default,,0,0,0,,upar se GST alag.
+Dialogue: 0,0:05:03.59,0:05:04.72,Default,,0,0,0,,Papa bole,
+Dialogue: 0,0:05:04.72,0:05:05.84,Default,,0,0,0,,bas itna sa?
+Dialogue: 0,0:05:05.84,0:05:06.96,Default,,0,0,0,,Chalo theek hai.
+Dialogue: 0,0:05:06.96,0:05:09.21,Default,,0,0,0,,Aur woh kiraya har saal chupchaap
+Dialogue: 0,0:05:09.21,0:05:11.17,Default,,0,0,0,,account se katne laga.
+Dialogue: 0,0:05:11.62,0:05:14.06,Default,,0,0,0,,Locker par GST 18 percent lagta
+Dialogue: 0,0:05:14.06,0:05:14.31,Default,,0,0,0,,hai,
+Dialogue: 0,0:05:14.31,0:05:16.50,Default,,0,0,0,,kyunki yeh bank ki service hai.
+Dialogue: 0,0:05:16.50,0:05:18.70,Default,,0,0,0,,Yaani 2,000 ka kiraya asal mein
+Dialogue: 0,0:05:18.70,0:05:20.16,Default,,0,0,0,,usse zyada pada.
+Dialogue: 0,0:05:20.16,0:05:22.61,Default,,0,0,0,,Papa ne kabhi socha nahi ki
+Dialogue: 0,0:05:22.61,0:05:24.80,Default,,0,0,0,,yeh kharcha bhi sone ke hisaab
+Dialogue: 0,0:05:24.80,0:05:26.02,Default,,0,0,0,,mein judna chahiye.
+Dialogue: 0,0:05:26.02,0:05:27.00,Default,,0,0,0,,Sach kahun toh,
+Dialogue: 0,0:05:27.00,0:05:28.22,Default,,0,0,0,,koi nahi sochta.
+Dialogue: 0,0:05:28.67,0:05:32.19,Default,,0,0,0,,Yeh kharcha chhota lagta hai,
+Dialogue: 0,0:05:32.19,0:05:34.82,Default,,0,0,0,,isliye chhup jaata hai.
+Dialogue: 0,0:05:34.82,0:05:37.90,Default,,0,0,0,,Par yeh har saal aata hai,
+Dialogue: 0,0:05:37.90,0:05:41.85,Default,,0,0,0,,chahe sone ka bhaav badhe ya
+Dialogue: 0,0:05:41.85,0:05:42.73,Default,,0,0,0,,gire.
+Dialogue: 0,0:05:42.73,0:05:46.25,Default,,0,0,0,,Jitne saal gehna locker mein,
+Dialogue: 0,0:05:46.25,0:05:48.44,Default,,0,0,0,,utne saal kiraya.
+Dialogue: 0,0:05:48.44,0:05:51.96,Default,,0,0,0,,Aur locker ki chaabi ke saath
+Dialogue: 0,0:05:51.96,0:05:55.91,Default,,0,0,0,,aata hai bank jaane ka time,
+Dialogue: 0,0:05:55.91,0:05:57.67,Default,,0,0,0,,line aur form.
+Dialogue: 0,0:05:58.12,0:05:59.47,Default,,0,0,0,,Ab socho,
+Dialogue: 0,0:05:59.47,0:06:03.50,Default,,0,0,0,,kai saal baad Mummy kangan bechti
+Dialogue: 0,0:06:03.50,0:06:03.95,Default,,0,0,0,,hain.
+Dialogue: 0,0:06:03.95,0:06:07.99,Default,,0,0,0,,Unhe sone ka bhaav dikhta hai,
+Dialogue: 0,0:06:07.99,0:06:09.33,Default,,0,0,0,,badha hua.
+Dialogue: 0,0:06:09.33,0:06:11.58,Default,,0,0,0,,Par making charge,
+Dialogue: 0,0:06:11.58,0:06:12.03,Default,,0,0,0,,GST,
+Dialogue: 0,0:06:12.03,0:06:14.27,Default,,0,0,0,,locker ka kiraya,
+Dialogue: 0,0:06:14.27,0:06:17.86,Default,,0,0,0,,aur bechte waqt ki katauti,
+Dialogue: 0,0:06:17.86,0:06:19.65,Default,,0,0,0,,yeh sab ghatao.
+Dialogue: 0,0:06:19.65,0:06:23.69,Default,,0,0,0,,Tab pata chalta hai ki gehne
+Dialogue: 0,0:06:23.69,0:06:27.28,Default,,0,0,0,,ne asal mein kitna kamaya.
+Dialogue: 0,0:06:27.73,0:06:31.37,Default,,0,0,0,,Bhai ne phone nikala aur bola,
+Dialogue: 0,0:06:31.37,0:06:34.29,Default,,0,0,0,,sona toh har saal badhta hai,
+Dialogue: 0,0:06:34.29,0:06:35.74,Default,,0,0,0,,problem kya hai?
+Dialogue: 0,0:06:35.74,0:06:38.29,Default,,0,0,0,,Behen ne turant kaha,
+Dialogue: 0,0:06:38.29,0:06:40.48,Default,,0,0,0,,har saal nahi badhta,
+Dialogue: 0,0:06:40.48,0:06:42.66,Default,,0,0,0,,kabhi girta bhi hai.
+Dialogue: 0,0:06:42.66,0:06:44.12,Default,,0,0,0,,Aur bhaav badhe,
+Dialogue: 0,0:06:44.12,0:06:47.03,Default,,0,0,0,,toh bhi kamaai alag cheez hai.
+Dialogue: 0,0:06:47.03,0:06:50.31,Default,,0,0,0,,Kamaai woh hai jo saare kharche
+Dialogue: 0,0:06:50.31,0:06:52.13,Default,,0,0,0,,ke baad haath mein aaye.
+Dialogue: 0,0:06:52.58,0:06:54.71,Default,,0,0,0,,Ab teesra sawaal,
+Dialogue: 0,0:06:54.71,0:06:58.12,Default,,0,0,0,,jahan kahani mein twist hai.
+Dialogue: 0,0:06:58.12,0:07:01.95,Default,,0,0,0,,Kya aisa sona ho sakta hai
+Dialogue: 0,0:07:01.95,0:07:05.36,Default,,0,0,0,,jisme making charge na ho,
+Dialogue: 0,0:07:05.36,0:07:07.06,Default,,0,0,0,,locker na ho,
+Dialogue: 0,0:07:07.06,0:07:10.47,Default,,0,0,0,,aur upar se byaaj bhi mile?
+Dialogue: 0,0:07:10.47,0:07:10.89,Default,,0,0,0,,Haan,
+Dialogue: 0,0:07:10.89,0:07:14.30,Default,,0,0,0,,isko kehte hain paper gold.
+Dialogue: 0,0:07:14.30,0:07:18.13,Default,,0,0,0,,Yaani sona jo kaagaz ya screen
+Dialogue: 0,0:07:18.13,0:07:18.99,Default,,0,0,0,,par hai,
+Dialogue: 0,0:07:18.99,0:07:21.54,Default,,0,0,0,,almari mein nahi.
+Dialogue: 0,0:07:21.99,0:07:24.49,Default,,0,0,0,,Pehla roop hai sovereign gold bond,
+Dialogue: 0,0:07:24.49,0:07:25.60,Default,,0,0,0,,chhota naam SGB.
+Dialogue: 0,0:07:25.60,0:07:27.83,Default,,0,0,0,,Yeh sarkar ki taraf se RBI
+Dialogue: 0,0:07:27.83,0:07:29.22,Default,,0,0,0,,jaari karta hai.
+Dialogue: 0,0:07:29.22,0:07:31.44,Default,,0,0,0,,RBI yaani desh ka central bank,
+Dialogue: 0,0:07:31.44,0:07:33.11,Default,,0,0,0,,jo banks ka bhi bank hai.
+Dialogue: 0,0:07:33.11,0:07:35.34,Default,,0,0,0,,Aap sona nahi khareedte,
+Dialogue: 0,0:07:35.34,0:07:37.84,Default,,0,0,0,,sone ke grams ke barabar bond
+Dialogue: 0,0:07:37.84,0:07:38.95,Default,,0,0,0,,khareedte ho.
+Dialogue: 0,0:07:39.40,0:07:42.39,Default,,0,0,0,,Is bond ki keemat sone ke
+Dialogue: 0,0:07:42.39,0:07:44.64,Default,,0,0,0,,bhaav ke saath chalti hai.
+Dialogue: 0,0:07:44.64,0:07:46.51,Default,,0,0,0,,Sona mehnga hua,
+Dialogue: 0,0:07:46.51,0:07:48.38,Default,,0,0,0,,toh bond bhi mehnga.
+Dialogue: 0,0:07:48.38,0:07:50.26,Default,,0,0,0,,Sona sasta hua,
+Dialogue: 0,0:07:50.26,0:07:52.13,Default,,0,0,0,,toh bond bhi sasta.
+Dialogue: 0,0:07:52.13,0:07:55.50,Default,,0,0,0,,Yaani sone ka risk wahi hai
+Dialogue: 0,0:07:55.50,0:07:57.37,Default,,0,0,0,,jo gehne mein hai.
+Dialogue: 0,0:07:57.37,0:07:59.24,Default,,0,0,0,,Bas making charge,
+Dialogue: 0,0:07:59.24,0:08:03.36,Default,,0,0,0,,locker aur purity ki tension nahi.
+Dialogue: 0,0:08:03.81,0:08:05.44,Default,,0,0,0,,Ab asli twist.
+Dialogue: 0,0:08:05.44,0:08:08.30,Default,,0,0,0,,Sone ke bhaav ke upar,
+Dialogue: 0,0:08:08.30,0:08:11.57,Default,,0,0,0,,SGB har saal 2.5 percent fixed
+Dialogue: 0,0:08:11.57,0:08:13.20,Default,,0,0,0,,byaaj deta hai.
+Dialogue: 0,0:08:13.20,0:08:17.29,Default,,0,0,0,,Yeh byaaj aapki shuruaati rakam par
+Dialogue: 0,0:08:17.29,0:08:18.51,Default,,0,0,0,,milta hai,
+Dialogue: 0,0:08:18.51,0:08:22.59,Default,,0,0,0,,yaani jitne ka bond khareeda tha,
+Dialogue: 0,0:08:22.59,0:08:23.41,Default,,0,0,0,,us par.
+Dialogue: 0,0:08:23.41,0:08:27.09,Default,,0,0,0,,Gehna aapko byaaj nahi deta.
+Dialogue: 0,0:08:27.09,0:08:30.76,Default,,0,0,0,,Woh sirf locker mein baitha rehta
+Dialogue: 0,0:08:30.76,0:08:31.17,Default,,0,0,0,,hai.
+Dialogue: 0,0:08:31.62,0:08:33.03,Default,,0,0,0,,Is tarah samjho.
+Dialogue: 0,0:08:33.03,0:08:35.57,Default,,0,0,0,,Mummy ke kangan locker mein so
+Dialogue: 0,0:08:35.57,0:08:36.42,Default,,0,0,0,,rahe hain,
+Dialogue: 0,0:08:36.42,0:08:38.40,Default,,0,0,0,,aur kiraya maang rahe hain.
+Dialogue: 0,0:08:38.40,0:08:41.22,Default,,0,0,0,,Bond wala sona bhi chupchaap baitha
+Dialogue: 0,0:08:41.22,0:08:41.50,Default,,0,0,0,,hai,
+Dialogue: 0,0:08:41.50,0:08:43.48,Default,,0,0,0,,par har saal 2.5 percent byaaj
+Dialogue: 0,0:08:43.48,0:08:44.61,Default,,0,0,0,,de raha hai.
+Dialogue: 0,0:08:44.61,0:08:47.15,Default,,0,0,0,,Sona dono jagah same hai.
+Dialogue: 0,0:08:47.15,0:08:49.69,Default,,0,0,0,,Par gehna kharcha karwata hai,
+Dialogue: 0,0:08:49.69,0:08:51.10,Default,,0,0,0,,bond kamata hai.
+Dialogue: 0,0:08:51.55,0:08:52.67,Default,,0,0,0,,Par shart bhi hai,
+Dialogue: 0,0:08:52.67,0:08:54.34,Default,,0,0,0,,aur woh dhyaan se suno.
+Dialogue: 0,0:08:54.34,0:08:56.58,Default,,0,0,0,,Yeh bond lambe samay ke liye
+Dialogue: 0,0:08:56.58,0:08:56.86,Default,,0,0,0,,hai.
+Dialogue: 0,0:08:56.86,0:08:59.09,Default,,0,0,0,,RBI ke through bond jaldi todna,
+Dialogue: 0,0:08:59.09,0:09:01.61,Default,,0,0,0,,yaani premature redemption,
+Dialogue: 0,0:09:01.61,0:09:03.84,Default,,0,0,0,,5 saal poore hone ke baad
+Dialogue: 0,0:09:03.84,0:09:04.96,Default,,0,0,0,,hi hota hai.
+Dialogue: 0,0:09:04.96,0:09:06.91,Default,,0,0,0,,Aur woh bhi sirf byaaj milne
+Dialogue: 0,0:09:06.91,0:09:08.31,Default,,0,0,0,,wali tareekh par.
+Dialogue: 0,0:09:08.76,0:09:09.77,Default,,0,0,0,,Iska matlab,
+Dialogue: 0,0:09:09.77,0:09:12.29,Default,,0,0,0,,jo paisa aapko agle saal shaadi
+Dialogue: 0,0:09:12.29,0:09:13.81,Default,,0,0,0,,ya ghar ke liye chahiye,
+Dialogue: 0,0:09:13.81,0:09:15.58,Default,,0,0,0,,woh SGB ke liye nahi hai.
+Dialogue: 0,0:09:15.58,0:09:17.34,Default,,0,0,0,,Yeh bond un paison ke liye
+Dialogue: 0,0:09:17.34,0:09:19.11,Default,,0,0,0,,hai jo aap saalon tak bhool
+Dialogue: 0,0:09:19.11,0:09:19.87,Default,,0,0,0,,sakte ho.
+Dialogue: 0,0:09:19.87,0:09:22.39,Default,,0,0,0,,Stock exchange par bechne ka raasta
+Dialogue: 0,0:09:22.39,0:09:22.89,Default,,0,0,0,,bhi hai,
+Dialogue: 0,0:09:22.89,0:09:26.17,Default,,0,0,0,,par wahan sahi khareedar milna zaroori
+Dialogue: 0,0:09:26.17,0:09:26.68,Default,,0,0,0,,nahi.
+Dialogue: 0,0:09:27.13,0:09:27.57,Default,,0,0,0,,Aur tax?
+Dialogue: 0,0:09:27.57,0:09:29.78,Default,,0,0,0,,Yeh byaaj aapki income mein judta
+Dialogue: 0,0:09:29.78,0:09:30.00,Default,,0,0,0,,hai,
+Dialogue: 0,0:09:30.00,0:09:31.54,Default,,0,0,0,,aur us par aapke slab ke
+Dialogue: 0,0:09:31.54,0:09:33.09,Default,,0,0,0,,hisaab se tax lagta hai.
+Dialogue: 0,0:09:33.09,0:09:34.63,Default,,0,0,0,,Lekin maturity par,
+Dialogue: 0,0:09:34.63,0:09:37.06,Default,,0,0,0,,yaani bond ki poori avadhi khatam
+Dialogue: 0,0:09:37.06,0:09:37.73,Default,,0,0,0,,hone par,
+Dialogue: 0,0:09:37.73,0:09:40.82,Default,,0,0,0,,original khareedne wale ko capital gains
+Dialogue: 0,0:09:40.82,0:09:42.58,Default,,0,0,0,,par tax nahi dena padta.
+Dialogue: 0,0:09:42.58,0:09:44.79,Default,,0,0,0,,Capital gains yaani bechne par hua
+Dialogue: 0,0:09:44.79,0:09:45.45,Default,,0,0,0,,munafa.
+Dialogue: 0,0:09:45.90,0:09:47.07,Default,,0,0,0,,Bhai bola,
+Dialogue: 0,0:09:47.07,0:09:49.79,Default,,0,0,0,,toh kal hi le leta hoon.
+Dialogue: 0,0:09:49.79,0:09:51.74,Default,,0,0,0,,Behen ne roka.
+Dialogue: 0,0:09:51.74,0:09:54.86,Default,,0,0,0,,Naye SGB issue har waqt nahi
+Dialogue: 0,0:09:54.86,0:09:55.63,Default,,0,0,0,,aate,
+Dialogue: 0,0:09:55.63,0:09:58.75,Default,,0,0,0,,pehle RBI ki site par check
+Dialogue: 0,0:09:58.75,0:09:59.53,Default,,0,0,0,,karo.
+Dialogue: 0,0:09:59.53,0:10:04.20,Default,,0,0,0,,Aur exchange se purana bond khareeda,
+Dialogue: 0,0:10:04.20,0:10:07.32,Default,,0,0,0,,toh tax chhoot ke rules alag
+Dialogue: 0,0:10:07.32,0:10:08.88,Default,,0,0,0,,ho sakte hain.
+Dialogue: 0,0:10:08.88,0:10:12.38,Default,,0,0,0,,Bina samjhe tip par mat kudo.
+Dialogue: 0,0:10:12.83,0:10:15.12,Default,,0,0,0,,Doosra roop hai gold ETF.
+Dialogue: 0,0:10:15.12,0:10:18.56,Default,,0,0,0,,ETF yaani exchange traded fund,
+Dialogue: 0,0:10:18.56,0:10:21.99,Default,,0,0,0,,jo stock exchange par share ki
+Dialogue: 0,0:10:21.99,0:10:25.81,Default,,0,0,0,,tarah khareeda becha jaata hai.
+Dialogue: 0,0:10:25.81,0:10:29.62,Default,,0,0,0,,Har unit ke peeche asli sona
+Dialogue: 0,0:10:29.62,0:10:31.53,Default,,0,0,0,,rakha hota hai.
+Dialogue: 0,0:10:31.53,0:10:34.97,Default,,0,0,0,,Iske liye demat account chahiye,
+Dialogue: 0,0:10:34.97,0:10:39.55,Default,,0,0,0,,yaani shares rakhne ka digital khata.
+Dialogue: 0,0:10:40.00,0:10:42.27,Default,,0,0,0,,Gold ETF mein bhi making charge
+Dialogue: 0,0:10:42.27,0:10:42.84,Default,,0,0,0,,nahi,
+Dialogue: 0,0:10:42.84,0:10:43.98,Default,,0,0,0,,locker nahi,
+Dialogue: 0,0:10:43.98,0:10:46.25,Default,,0,0,0,,purity ki fikar nahi.
+Dialogue: 0,0:10:46.25,0:10:47.39,Default,,0,0,0,,Aur bechna ho,
+Dialogue: 0,0:10:47.39,0:10:49.67,Default,,0,0,0,,toh market khula ho tab bech
+Dialogue: 0,0:10:49.67,0:10:50.52,Default,,0,0,0,,sakte ho.
+Dialogue: 0,0:10:50.52,0:10:52.23,Default,,0,0,0,,Par byaaj nahi milta,
+Dialogue: 0,0:10:52.23,0:10:55.07,Default,,0,0,0,,aur fund ka chhota saalana kharcha
+Dialogue: 0,0:10:55.07,0:10:55.92,Default,,0,0,0,,katta hai.
+Dialogue: 0,0:10:55.92,0:10:58.76,Default,,0,0,0,,Isko expense ratio kehte hain,
+Dialogue: 0,0:10:58.76,0:11:01.04,Default,,0,0,0,,yaani fund chalane ki fees.
+Dialogue: 0,0:11:01.49,0:11:04.24,Default,,0,0,0,,Ab sab ko saath rakh kar
+Dialogue: 0,0:11:04.24,0:11:05.16,Default,,0,0,0,,dekho.
+Dialogue: 0,0:11:05.16,0:11:06.08,Default,,0,0,0,,Gehna:
+Dialogue: 0,0:11:06.08,0:11:08.83,Default,,0,0,0,,pehenne ki khushi,
+Dialogue: 0,0:11:08.83,0:11:11.12,Default,,0,0,0,,par making charge,
+Dialogue: 0,0:11:11.12,0:11:14.33,Default,,0,0,0,,GST aur locker ka kharcha.
+Dialogue: 0,0:11:14.33,0:11:15.25,Default,,0,0,0,,Gold ETF:
+Dialogue: 0,0:11:15.25,0:11:17.09,Default,,0,0,0,,aasaan bechna,
+Dialogue: 0,0:11:17.09,0:11:18.46,Default,,0,0,0,,chhoti fees,
+Dialogue: 0,0:11:18.46,0:11:20.30,Default,,0,0,0,,koi byaaj nahi.
+Dialogue: 0,0:11:20.30,0:11:20.76,Default,,0,0,0,,SGB:
+Dialogue: 0,0:11:20.76,0:11:22.59,Default,,0,0,0,,byaaj milta hai,
+Dialogue: 0,0:11:22.59,0:11:25.80,Default,,0,0,0,,maturity par tax chhoot,
+Dialogue: 0,0:11:25.80,0:11:29.93,Default,,0,0,0,,par paisa lamba atakta hai.
+Dialogue: 0,0:11:30.38,0:11:33.69,Default,,0,0,0,,Ab woh galti jo lagbhag har
+Dialogue: 0,0:11:33.69,0:11:35.35,Default,,0,0,0,,ghar karta hai.
+Dialogue: 0,0:11:35.35,0:11:37.00,Default,,0,0,0,,Hum kehte hain,
+Dialogue: 0,0:11:37.00,0:11:39.90,Default,,0,0,0,,sone ne bahut kamaya,
+Dialogue: 0,0:11:39.90,0:11:43.21,Default,,0,0,0,,bhaav dekho kahan pahunch gaya.
+Dialogue: 0,0:11:43.21,0:11:46.11,Default,,0,0,0,,Par hum sirf bhaav ginte hain.
+Dialogue: 0,0:11:46.11,0:11:47.76,Default,,0,0,0,,Making charge,
+Dialogue: 0,0:11:47.76,0:11:48.18,Default,,0,0,0,,GST,
+Dialogue: 0,0:11:48.18,0:11:49.01,Default,,0,0,0,,locker,
+Dialogue: 0,0:11:49.01,0:11:52.73,Default,,0,0,0,,aur bechte waqt ki katauti koi
+Dialogue: 0,0:11:52.73,0:11:54.39,Default,,0,0,0,,nahi ginta.
+Dialogue: 0,0:11:54.39,0:11:56.04,Default,,0,0,0,,Aadha hisaab,
+Dialogue: 0,0:11:56.04,0:11:57.70,Default,,0,0,0,,poori khushi.
+Dialogue: 0,0:11:58.15,0:11:59.22,Default,,0,0,0,,Doosri galti,
+Dialogue: 0,0:11:59.22,0:12:02.16,Default,,0,0,0,,gehne ko emergency fund samajhna.
+Dialogue: 0,0:12:02.16,0:12:04.57,Default,,0,0,0,,Mushkil waqt mein Mummy ka kangan
+Dialogue: 0,0:12:04.57,0:12:05.11,Default,,0,0,0,,bechna,
+Dialogue: 0,0:12:05.11,0:12:07.25,Default,,0,0,0,,mann par bhi bhaari padta hai.
+Dialogue: 0,0:12:07.25,0:12:09.39,Default,,0,0,0,,Aur tab jeweller ki shart par
+Dialogue: 0,0:12:09.39,0:12:10.73,Default,,0,0,0,,bechna padta hai.
+Dialogue: 0,0:12:10.73,0:12:13.67,Default,,0,0,0,,Emergency ke liye woh paisa chahiye
+Dialogue: 0,0:12:13.67,0:12:15.01,Default,,0,0,0,,jo turant mile,
+Dialogue: 0,0:12:15.01,0:12:16.35,Default,,0,0,0,,bina nuksaan ke.
+Dialogue: 0,0:12:16.80,0:12:17.89,Default,,0,0,0,,Toh karein kya?
+Dialogue: 0,0:12:17.89,0:12:18.71,Default,,0,0,0,,Pehli baat,
+Dialogue: 0,0:12:18.71,0:12:20.63,Default,,0,0,0,,gehne ko gehna samjho.
+Dialogue: 0,0:12:20.63,0:12:22.27,Default,,0,0,0,,Pehenne ke liye lo,
+Dialogue: 0,0:12:22.27,0:12:23.63,Default,,0,0,0,,khushi ke liye lo.
+Dialogue: 0,0:12:23.63,0:12:25.55,Default,,0,0,0,,Hallmark wala gehna lo,
+Dialogue: 0,0:12:25.55,0:12:27.46,Default,,0,0,0,,aur bill sambhal kar rakho.
+Dialogue: 0,0:12:27.46,0:12:29.65,Default,,0,0,0,,Making charge par mol bhaav bhi
+Dialogue: 0,0:12:29.65,0:12:30.47,Default,,0,0,0,,hota hai.
+Dialogue: 0,0:12:30.47,0:12:33.75,Default,,0,0,0,,Bechne se pehle alag alag jewellers
+Dialogue: 0,0:12:33.75,0:12:34.84,Default,,0,0,0,,se bhaav poochho.
+Dialogue: 0,0:12:35.29,0:12:36.38,Default,,0,0,0,,Doosri baat,
+Dialogue: 0,0:12:36.38,0:12:40.01,Default,,0,0,0,,agar sona bachat ke liye chahiye,
+Dialogue: 0,0:12:40.01,0:12:42.91,Default,,0,0,0,,toh paper gold ke baare mein
+Dialogue: 0,0:12:42.91,0:12:43.63,Default,,0,0,0,,padho.
+Dialogue: 0,0:12:43.63,0:12:46.17,Default,,0,0,0,,Lambe samay ke liye SGB,
+Dialogue: 0,0:12:46.17,0:12:49.80,Default,,0,0,0,,aur jaldi zaroorat ho sakti hai
+Dialogue: 0,0:12:49.80,0:12:50.89,Default,,0,0,0,,toh gold ETF.
+Dialogue: 0,0:12:50.89,0:12:52.71,Default,,0,0,0,,Dono ke rules,
+Dialogue: 0,0:12:52.71,0:12:55.25,Default,,0,0,0,,tax aur kharche khud samjho.
+Dialogue: 0,0:12:55.25,0:12:58.51,Default,,0,0,0,,Zaroorat ho toh apne CA ya
+Dialogue: 0,0:12:58.51,0:13:01.05,Default,,0,0,0,,adviser se baat karo.
+Dialogue: 0,0:13:01.50,0:13:02.23,Default,,0,0,0,,Teesri baat,
+Dialogue: 0,0:13:02.23,0:13:04.66,Default,,0,0,0,,saari bachat sone mein mat daalo.
+Dialogue: 0,0:13:04.66,0:13:06.85,Default,,0,0,0,,Sona mushkil waqt ka saathi hai,
+Dialogue: 0,0:13:06.85,0:13:08.79,Default,,0,0,0,,par uska bhaav girta bhi hai,
+Dialogue: 0,0:13:08.79,0:13:10.98,Default,,0,0,0,,saalon tak ruka bhi reh sakta
+Dialogue: 0,0:13:10.98,0:13:11.22,Default,,0,0,0,,hai.
+Dialogue: 0,0:13:11.22,0:13:12.19,Default,,0,0,0,,Thoda sona,
+Dialogue: 0,0:13:12.19,0:13:14.13,Default,,0,0,0,,baaki alag alag jagah.
+Dialogue: 0,0:13:14.13,0:13:16.56,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:13:16.56,0:13:18.02,Default,,0,0,0,,Sirf samajh ki baat hai.
+Dialogue: 0,0:13:18.47,0:13:20.45,Default,,0,0,0,,Kahani ke aakhir mein,
+Dialogue: 0,0:13:20.45,0:13:22.99,Default,,0,0,0,,Mummy ne kangan nahi beche.
+Dialogue: 0,0:13:22.99,0:13:24.40,Default,,0,0,0,,Unhone kaha,
+Dialogue: 0,0:13:24.40,0:13:26.66,Default,,0,0,0,,yeh toh Beti ki shaadi mein
+Dialogue: 0,0:13:26.66,0:13:27.22,Default,,0,0,0,,jaayenge.
+Dialogue: 0,0:13:27.22,0:13:29.48,Default,,0,0,0,,Par agli baar bachat ke liye
+Dialogue: 0,0:13:29.48,0:13:30.89,Default,,0,0,0,,sona lena hua,
+Dialogue: 0,0:13:30.89,0:13:32.87,Default,,0,0,0,,toh Behen ke saath baith kar
+Dialogue: 0,0:13:32.87,0:13:34.57,Default,,0,0,0,,paper gold samjhengi.
+Dialogue: 0,0:13:34.57,0:13:35.98,Default,,0,0,0,,Kangan pyaar ke liye,
+Dialogue: 0,0:13:35.98,0:13:37.39,Default,,0,0,0,,bond kamaai ke liye.
+Dialogue: 0,0:13:37.84,0:13:39.39,Default,,0,0,0,,Ab aapse sawaal.
+Dialogue: 0,0:13:39.39,0:13:41.86,Default,,0,0,0,,Aapke ghar mein sona kis roop
+Dialogue: 0,0:13:41.86,0:13:42.48,Default,,0,0,0,,mein hai:
+Dialogue: 0,0:13:42.48,0:13:43.10,Default,,0,0,0,,gehna,
+Dialogue: 0,0:13:43.10,0:13:43.41,Default,,0,0,0,,coin,
+Dialogue: 0,0:13:43.41,0:13:44.33,Default,,0,0,0,,ETF ya bond?
+Dialogue: 0,0:13:44.33,0:13:46.81,Default,,0,0,0,,Comment mein bas woh shabd likho.
+Dialogue: 0,0:13:46.81,0:13:48.35,Default,,0,0,0,,Aur yeh bhi batao,
+Dialogue: 0,0:13:48.35,0:13:51.14,Default,,0,0,0,,kya kabhi kisi ne aapke ghar
+Dialogue: 0,0:13:51.14,0:13:53.92,Default,,0,0,0,,mein locker ka kiraya gina hai?
+Dialogue: 0,0:13:54.37,0:13:56.98,Default,,0,0,0,,Agle video mein Papa ki FD
+Dialogue: 0,0:13:56.98,0:13:58.15,Default,,0,0,0,,ki baari hai.
+Dialogue: 0,0:13:58.15,0:13:59.89,Default,,0,0,0,,FD safe lagti hai,
+Dialogue: 0,0:13:59.89,0:14:02.21,Default,,0,0,0,,par mehngai kaat kar asal mein
+Dialogue: 0,0:14:02.21,0:14:03.67,Default,,0,0,0,,kitna bachta hai?
+Dialogue: 0,0:14:03.67,0:14:06.28,Default,,0,0,0,,Woh kahani bhi isi tarah,
+Dialogue: 0,0:14:06.28,0:14:07.73,Default,,0,0,0,,ghar ke andar se.
+Dialogue: 0,0:14:07.73,0:14:08.31,Default,,0,0,0,,Tab tak,
+Dialogue: 0,0:14:08.31,0:14:10.64,Default,,0,0,0,,apne gehne ka bill dhoondh kar
+Dialogue: 0,0:14:10.64,0:14:11.22,Default,,0,0,0,,rakho,
+Dialogue: 0,0:14:11.22,0:14:12.09,Default,,0,0,0,,kaam aayega.

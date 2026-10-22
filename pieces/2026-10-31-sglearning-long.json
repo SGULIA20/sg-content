@@ -1,0 +1,567 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 2.5,
+   "quote": "SGBs still offer 2.5% annual interest, no GST, no making charges, and zero storage risk—advantages physical gold simply cannot match.",
+   "source_date": "2026-03-30",
+   "source_name": "The Economic Times",
+   "source_url": "https://economictimes.indiatimes.com/wealth/invest/buying-gold-in-2026-do-sovereign-gold-bonds-still-beat-physical-gold-after-tax-changes/slideshow/129893377.cms",
+   "text": "Sovereign Gold Bonds offer investors an assured fixed annual interest rate of 2.5% on the initial investment value.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 5.0,
+   "quote": "However, premature redemption through the RBI is permitted after completion of the fifth year, and the redemption takes place on an interest-payment date.",
+   "source_date": "2026-07-08",
+   "source_name": "GoldenPi",
+   "source_url": "https://goldenpi.com/news/bonds/sgb-redemption-tax-rules-latest-rbi-guidelines/",
+   "text": "Investors can exercise a premature redemption option on Sovereign Gold Bonds after completing 5 years.",
+   "unit": "years"
+  },
+  {
+   "label": "official",
+   "number": 2000.0,
+   "quote": "TYPE, URBAN AND METRO : SMALL, Rs 2000+GST.",
+   "source_date": "2025-05-19",
+   "source_name": "The Economic Times",
+   "source_url": "https://economictimes.indiatimes.com/wealth/save/private-vs-public-bank-locker-charges-2025-who-is-offering-lockers-at-lowest-rental/articleshow/121257404.cms",
+   "text": "Annual safe deposit locker rent for a small locker in urban and metro branches of State Bank of India is 2000 INR plus GST.",
+   "unit": "INR"
+  }
+ ],
+ "id": "2026-10-31-sglearning-long",
+ "ids": {
+  "captions": {
+   "hi": "AUieDaYebEpIc6qIT-NbtQrV3FpkRzGq3DEI6nv0CjAs2n2h7fiTDREa5-uY2I36iv8xZqU"
+  },
+  "yt_id": "dwD7byaCjPc"
+ },
+ "kind": "long",
+ "publish_day": "2026-10-31",
+ "reasons": [
+  "try 1: advice: guarantee"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Bhaav badha, phir bhi kangan bechne par paisa kam kyun mila? 💰\nMaking charge wapas nahi aata, locker ka kiraya har saal katta hai. SGB par 2.5% byaaj alag se milta hai.\nAapke ghar mein sona kis roop mein hai: gehna, ETF ya bond?\nYeh investment advice nahi hai.\nShare karo us dost ko jo har tyohaar par bachat ke naam par gehna khareedta hai.",
+    "hashtags": [
+     "#LearningWithSG",
+     "#PaiseKiKhabar",
+     "#MoneyTipsHindi",
+     "#PersonalFinanceIndia",
+     "#HinglishFinance",
+     "#SeedhiBaat",
+     "#RBI",
+     "#GST"
+    ]
+   },
+   "threads": {
+    "text": "Mummy ke kangan ka bhaav badha, par bechne par making charge gayab, locker ka kiraya alag. Gold bond 2.5% byaaj deta hai, gehna kuch nahi. Aapke ghar mein sona kis roop mein hai: gehna, ETF ya bond? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Mummy ke kangan ki keemat",
+     "00:00 Making charge: jo wapas nahi aata",
+     "00:00 Locker ka chhupa kharcha",
+     "00:00 Gold bond ka 2.5% aur ETF",
+     "00:00 Galti aur sahi tareeka"
+    ],
+    "description": "Mummy ke kangan ka bhaav badha, phir bhi bechne par haath mein kam kyun aaya? Gehne mein making charge, GST aur locker ka kiraya chupchaap kamaai kha jaate hain. Sovereign gold bond aur gold ETF ka hisaab alag hai, aur yeh video wahi farak ghar ki kahani se samjhata hai. Share karo us dost ko jo kehta hai gehna hi sabse achha investment hai.",
+    "tags": [
+     "sovereign gold bond",
+     "SGB",
+     "gold ETF",
+     "gold jewellery",
+     "making charge",
+     "bank locker charges",
+     "paper gold",
+     "gold investment Hindi",
+     "Hinglish finance",
+     "Learning with SG"
+    ],
+    "title": "Gold Bond vs Gehna: 2.5% extra kaun deta?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "2.5%",
+    "line": "SGB par har saal fixed byaaj, shuruaati rakam par",
+    "source": "The Economic Times"
+   },
+   {
+    "big_number": "5 saal",
+    "line": "Iske baad hi RBI se SGB ka premature redemption",
+    "source": "GoldenPi"
+   },
+   {
+    "big_number": "₹2,000",
+    "line": "SBI metro branch, chhota locker, saalana kiraya + GST",
+    "source": "The Economic Times"
+   }
+  ],
+  "carousel": true,
+  "end_question": "Aapke ghar mein sona kis roop mein hai: gehna, coin, ETF ya bond?",
+  "hook": "Mummy ke kangan ka bhaav badha, phir bhi haath mein kam kyun aaya?",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "Mummy ke kangan ki keemat",
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY in a saree at a jewellery shop counter, a jeweller weighing her old gold bangles on a small digital scale, her hopeful face turning disappointed, warm evening shop lights",
+     "type": "art"
+    },
+    "vo": "Mummy ne apne shaadi ke kangan jeweller ke counter par rakhe. Unhe laga, itne saal mein sona kitna mehnga ho gaya. Aaj toh achha paisa milega. Jeweller ne kangan tole, calculator chalaya, aur muskura kar rakam batayi. Mummy ka chehra utar gaya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Close view across the counter: the jeweller rubbing a bangle on a touchstone, MUMMY leaning forward confused and hurt, glass display cases glowing behind",
+     "type": "art"
+    },
+    "vo": "Rakam kam nahi thi, par umeed se bahut kam thi. Jeweller ne kaha, behenji, design ka paisa wapas nahi milta. Main sirf sona tolta hoon, woh bhi purity check karke. Mummy boli, kharidte waqt toh design ka bhi poora paisa diya tha. Jeweller chup raha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Family living room at night, PAPA in a kurta on the sofa looking confident, MUMMY holding a cup of chai looking worried, BEHEN in office wear raising an eyebrow from her phone",
+     "type": "art"
+    },
+    "vo": "Ghar aakar Mummy ne Papa ko sab bataya. Papa bole, sona kabhi dhokha nahi deta, yeh toh safe hai. Behen ne phone se nazar uthayi aur poocha, Papa, safe aur kamaai, kya dono same baat hain? Kamre mein thodi der sannata chha gaya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG, early forties with a beard and striped shirt, standing as the narrator beside three floating images: a gold bangle, a phone screen with a chart, and a paper certificate, calm daylight",
+     "type": "art"
+    },
+    "vo": "Yeh kahani lagbhag har Indian ghar ki hai. Hum sone ko suraksha maante hain, aur sahi bhi hai, mushkil waqt mein kaam aata hai. Par asli sawaal yeh hai ki kaun sa sona sach mein kamata hai. Gehna, gold ETF, ya sovereign gold bond?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG counting on his fingers while thinking, behind him a dim bank locker door, a jeweller's scale and a stack of paper bonds drawn like question marks, soft studio light",
+     "type": "art"
+    },
+    "vo": "Aaj ke sawaal seedhe hain. Pehla, gehne par making charge kahan chala jaata hai? Doosra, locker ka kharcha kaun ginta hai? Teesra, gold bond par 2.5 percent extra kaise milta hai? Aur aakhir mein, gehna kab kharidari hai, aur kab investment."
+   },
+   {
+    "facts_used": [],
+    "label": "Making charge: jo wapas nahi aata",
+    "visual": {
+     "card": null,
+     "prompt": "Flashback panel in warm sepia tones: a younger PAPA and MUMMY seated at a busy jewellery shop, trays of shining bangles, necklaces and earrings in front of them, festive marigold decorations, excited faces",
+     "type": "art"
+    },
+    "vo": "Chalo peeche chalte hain, us din jab kangan khareede gaye the. Shaadi ki taiyaari thi, ghar mein raunak thi. Papa aur Mummy jeweller ki dukaan par baithe the. Saamne trays mein chamakte kangan, haar aur jhumke. Har cheez par price tag laga tha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Young PAPA looking only at the bottom of a long handwritten bill, the jeweller smiling, MUMMY admiring a bangle on her wrist, flashback sepia tones",
+     "type": "art"
+    },
+    "vo": "Jeweller ne bill banaya, toh usme kai line thi. Pehli, sone ka wazan aur us din ka bhaav. Doosri, making charge. Phir upar se GST. Papa ne sirf neeche likha total dekha, aur bina sawaal kiye paise de diye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A craftsman in a small workshop carving fine patterns into a gold bangle with tiny tools, a lamp glowing over his hands, focused expression, late afternoon",
+     "type": "art"
+    },
+    "vo": "Making charge yaani gehna banane ki mazdoori, karigar ki mehnat ka paisa. Sona toh sona hai, par kangan ki nakkashi, haar ki jaali, yeh sab haath ka kaam hai. Jitna baareek design, utna zyada making charge. Aur yeh paisa sone mein nahi, design mein gaya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Split panel: on one side the craftsman's delicate design work, on the other the same bangle on a plain weighing scale with the design fading away like smoke, dramatic contrast",
+     "type": "art"
+    },
+    "vo": "Ab yahan woh baat aati hai jo koi nahi batata. Jab aap gehna bechne jaate ho, jeweller sirf sone ka wazan dekhta hai. Making charge ka paisa wapas nahi aata. Upar se purane gehne par kuch katauti bhi ho sakti hai, purity ke naam par."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A running track where a gold bangle character starts far behind the starting line while other runners are already at the line, a crowd watching, bright daytime",
+     "type": "art"
+    },
+    "vo": "Matlab samjho. Jis din aapne gehna khareeda, usi din aapka kuch paisa hamesha ke liye chala gaya. Sone ka bhaav badhega, tab jaakar pehle woh nuksaan bharega. Uske baad hi asli kamaai shuru hogi. Yaani gehne ki race peeche se shuru hoti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "An old jewellery bill lying on a steel table next to a calculator, a hand pointing at a small line on it, the shadow of that line stretching long and large across the table, night lamp light",
+     "type": "art"
+    },
+    "vo": "GST ka bhi yahi haal hai. Kharidte waqt aapne sone aur making charge, dono par GST diya. Bechte waqt jeweller woh GST aapko wapas nahi deta. Woh bhi seedha kharcha hai. Bill mein chhota dikhta hai, par saalon baad hisaab mein bada lagta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY gently sliding her gold bangles onto a grown-up BETI's wrists before a wedding, both smiling with teary eyes, flowers and soft festive lights",
+     "type": "art"
+    },
+    "vo": "Toh kya gehna khareedna galat hai? Bilkul nahi. Beti ki shaadi mein Mummy ke kangan ki jo chamak hogi, uski keemat calculator se nahi nikalti. Woh khushi hai, yaad hai, parampara hai. Bas use investment mat bolo. Woh kharidari hai, nayi saree ki tarah."
+   },
+   {
+    "facts_used": [],
+    "label": "Locker ka chhupa kharcha",
+    "visual": {
+     "card": null,
+     "prompt": "PAPA in a kurta at a bank counter, BANK UNCLE behind the counter handing him a form, rows of steel locker doors visible in the back, morning light",
+     "type": "art"
+    },
+    "vo": "Ab doosra sawaal. Shaadi ke baad gehna ghar mein rakhna Papa ko theek nahi laga. Chori ka darr tha, mehmaan aate jaate rehte the. Toh Papa bank pahunche, aur Bank Uncle se locker maanga. Bank Uncle ne form diya aur saalana kiraya bataya."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA shrugging casually at the bank counter while BANK UNCLE stamps a paper, a small steel locker key on the counter between them",
+     "type": "art"
+    },
+    "vo": "Bade shehar ki SBI branch mein chhote locker ka kiraya lagbhag 2,000 rupaye saal ka hai. Aur yeh 2,000 bhi poora nahi, upar se GST alag. Papa bole, bas itna sa? Chalo theek hai. Aur woh kiraya har saal chupchaap account se katne laga."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA reading a bank passbook at home under a tube light, a small debit entry circled faintly, his face slightly puzzled, MUMMY passing by with chai",
+     "type": "art"
+    },
+    "vo": "Locker par GST 18 percent lagta hai, kyunki yeh bank ki service hai. Yaani 2,000 ka kiraya asal mein usse zyada pada. Papa ne kabhi socha nahi ki yeh kharcha bhi sone ke hisaab mein judna chahiye. Sach kahun toh, koi nahi sochta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A calendar wall with pages flying off over the years, each page dropping a coin into a bank locker slot, PAPA waiting in a long bank queue in the foreground",
+     "type": "art"
+    },
+    "vo": "Yeh kharcha chhota lagta hai, isliye chhup jaata hai. Par yeh har saal aata hai, chahe sone ka bhaav badhe ya gire. Jitne saal gehna locker mein, utne saal kiraya. Aur locker ki chaabi ke saath aata hai bank jaane ka time, line aur form."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY at the dining table with a notebook, crossing out items one by one while a pile of coins in front of her shrinks, worried evening light",
+     "type": "art"
+    },
+    "vo": "Ab socho, kai saal baad Mummy kangan bechti hain. Unhe sone ka bhaav dikhta hai, badha hua. Par making charge, GST, locker ka kiraya, aur bechte waqt ki katauti, yeh sab ghatao. Tab pata chalta hai ki gehne ne asal mein kitna kamaya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in a hoodie confidently showing a rising chart on his phone, BEHEN in office wear calmly pointing at a notebook full of subtracted costs, living room at night",
+     "type": "art"
+    },
+    "vo": "Bhai ne phone nikala aur bola, sona toh har saal badhta hai, problem kya hai? Behen ne turant kaha, har saal nahi badhta, kabhi girta bhi hai. Aur bhaav badhe, toh bhi kamaai alag cheez hai. Kamaai woh hai jo saare kharche ke baad haath mein aaye."
+   },
+   {
+    "facts_used": [],
+    "label": "Gold bond ka 2.5% aur ETF",
+    "visual": {
+     "card": null,
+     "prompt": "SG as narrator turning a page, behind him a glowing gold bar dissolving into a paper certificate and a phone screen, curious expression, bright study room",
+     "type": "art"
+    },
+    "vo": "Ab teesra sawaal, jahan kahani mein twist hai. Kya aisa sona ho sakta hai jisme making charge na ho, locker na ho, aur upar se byaaj bhi mile? Haan, isko kehte hain paper gold. Yaani sona jo kaagaz ya screen par hai, almari mein nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A grand central bank building in morning light, a hand receiving an official-looking bond certificate, a balance scale with gold on one side and paper on the other",
+     "type": "art"
+    },
+    "vo": "Pehla roop hai sovereign gold bond, chhota naam SGB. Yeh sarkar ki taraf se RBI jaari karta hai. RBI yaani desh ka central bank, jo banks ka bhi bank hai. Aap sona nahi khareedte, sone ke grams ke barabar bond khareedte ho."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A seesaw with a gold bangle on one end and a bond certificate on the other, both rising and falling together in a playground, calm afternoon",
+     "type": "art"
+    },
+    "vo": "Is bond ki keemat sone ke bhaav ke saath chalti hai. Sona mehnga hua, toh bond bhi mehnga. Sona sasta hua, toh bond bhi sasta. Yaani sone ka risk wahi hai jo gehne mein hai. Bas making charge, locker aur purity ki tension nahi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A bond certificate on a table with small coins gently dropping out of it into a jar, next to a closed locker box gathering dust, morning light",
+     "type": "art"
+    },
+    "vo": "Ab asli twist. Sone ke bhaav ke upar, SGB har saal 2.5 percent fixed byaaj deta hai. Yeh byaaj aapki shuruaati rakam par milta hai, yaani jitne ka bond khareeda tha, us par. Gehna aapko byaaj nahi deta. Woh sirf locker mein baitha rehta hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Whimsical split panel: sleeping gold bangles in a dark locker holding out a hand for rent, and a cheerful bond certificate handing out coins, contrasting cool and warm light",
+     "type": "art"
+    },
+    "vo": "Is tarah samjho. Mummy ke kangan locker mein so rahe hain, aur kiraya maang rahe hain. Bond wala sona bhi chupchaap baitha hai, par har saal 2.5 percent byaaj de raha hai. Sona dono jagah same hai. Par gehna kharcha karwata hai, bond kamata hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A bond certificate locked inside a clear glass box with a slow hourglass on top, PAPA looking at it patiently, quiet evening",
+     "type": "art"
+    },
+    "vo": "Par shart bhi hai, aur woh dhyaan se suno. Yeh bond lambe samay ke liye hai. RBI ke through bond jaldi todna, yaani premature redemption, 5 saal poore hone ke baad hi hota hai. Aur woh bhi sirf byaaj milne wali tareekh par."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE at the kitchen table sorting cash into two envelopes, one near a wedding card and house keys, the other set aside on a high shelf, thoughtful afternoon",
+     "type": "art"
+    },
+    "vo": "Iska matlab, jo paisa aapko agle saal shaadi ya ghar ke liye chahiye, woh SGB ke liye nahi hai. Yeh bond un paison ke liye hai jo aap saalon tak bhool sakte ho. Stock exchange par bechne ka raasta bhi hai, par wahan sahi khareedar milna zaroori nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN explaining with a pen on a notebook to PAPA, a drawing of a bond with a finish line at its end, tax forms on the side, warm table lamp",
+     "type": "art"
+    },
+    "vo": "Aur tax? Yeh byaaj aapki income mein judta hai, aur us par aapke slab ke hisaab se tax lagta hai. Lekin maturity par, yaani bond ki poori avadhi khatam hone par, original khareedne wale ko capital gains par tax nahi dena padta. Capital gains yaani bechne par hua munafa."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI excitedly about to tap a button on his phone, BEHEN putting her hand over the screen with a firm calm look, living room evening",
+     "type": "art"
+    },
+    "vo": "Bhai bola, toh kal hi le leta hoon. Behen ne roka. Naye SGB issue har waqt nahi aate, pehle RBI ki site par check karo. Aur exchange se purana bond khareeda, toh tax chhoot ke rules alag ho sakte hain. Bina samjhe tip par mat kudo."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A phone screen showing a simple trading app with a gold icon, behind it a secure vault with neatly stacked gold bars, a young man holding the phone at a cafe",
+     "type": "art"
+    },
+    "vo": "Doosra roop hai gold ETF. ETF yaani exchange traded fund, jo stock exchange par share ki tarah khareeda becha jaata hai. Har unit ke peeche asli sona rakha hota hai. Iske liye demat account chahiye, yaani shares rakhne ka digital khata."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A tiny coin being snipped off by small scissors from a stack of gold units, while a market building's doors are open in the background, daytime",
+     "type": "art"
+    },
+    "vo": "Gold ETF mein bhi making charge nahi, locker nahi, purity ki fikar nahi. Aur bechna ho, toh market khula ho tab bech sakte ho. Par byaaj nahi milta, aur fund ka chhota saalana kharcha katta hai. Isko expense ratio kehte hain, yaani fund chalane ki fees."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Three doors side by side in a hallway: one with a jewellery box, one with a phone, one with a paper bond, the family standing in front deciding, soft daylight",
+     "type": "art"
+    },
+    "vo": "Ab sab ko saath rakh kar dekho. Gehna: pehenne ki khushi, par making charge, GST aur locker ka kharcha. Gold ETF: aasaan bechna, chhoti fees, koi byaaj nahi. SGB: byaaj milta hai, maturity par tax chhoot, par paisa lamba atakta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Galti aur sahi tareeka",
+    "visual": {
+     "card": null,
+     "prompt": "SG as narrator at a chapter turn, holding up half of a torn paper ledger, a puzzled crowd of relatives behind him at a family gathering",
+     "type": "art"
+    },
+    "vo": "Ab woh galti jo lagbhag har ghar karta hai. Hum kehte hain, sone ne bahut kamaya, bhaav dekho kahan pahunch gaya. Par hum sirf bhaav ginte hain. Making charge, GST, locker, aur bechte waqt ki katauti koi nahi ginta. Aadha hisaab, poori khushi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY at night holding a bangle tightly in both hands near a hospital bill on the table, eyes heavy with hesitation, dim light",
+     "type": "art"
+    },
+    "vo": "Doosri galti, gehne ko emergency fund samajhna. Mushkil waqt mein Mummy ka kangan bechna, mann par bhi bhaari padta hai. Aur tab jeweller ki shart par bechna padta hai. Emergency ke liye woh paisa chahiye jo turant mile, bina nuksaan ke."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE at a jewellery counter inspecting a hallmark stamp with a small magnifier, calmly bargaining with the jeweller, a neat bill folder in her bag, daytime",
+     "type": "art"
+    },
+    "vo": "Toh karein kya? Pehli baat, gehne ko gehna samjho. Pehenne ke liye lo, khushi ke liye lo. Hallmark wala gehna lo, aur bill sambhal kar rakho. Making charge par mol bhaav bhi hota hai. Bechne se pehle alag alag jewellers se bhaav poochho."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN and PAPA sitting together at a laptop reading, PAPA nodding slowly with reading glasses on, papers spread on the table, afternoon light",
+     "type": "art"
+    },
+    "vo": "Doosri baat, agar sona bachat ke liye chahiye, toh paper gold ke baare mein padho. Lambe samay ke liye SGB, aur jaldi zaroorat ho sakti hai toh gold ETF. Dono ke rules, tax aur kharche khud samjho. Zaroorat ho toh apne CA ya adviser se baat karo."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A row of different jars on a shelf, only one holding gold, the others holding coins and papers, SG placing them carefully, calm morning light",
+     "type": "art"
+    },
+    "vo": "Teesri baat, saari bachat sone mein mat daalo. Sona mushkil waqt ka saathi hai, par uska bhaav girta bhi hai, saalon tak ruka bhi reh sakta hai. Thoda sona, baaki alag alag jagah. Yeh investment advice nahi hai. Sirf samajh ki baat hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY placing the bangles back into a velvet box with a soft smile, little BETI watching beside her, BEHEN nearby holding a notebook, warm evening light",
+     "type": "art"
+    },
+    "vo": "Kahani ke aakhir mein, Mummy ne kangan nahi beche. Unhone kaha, yeh toh Beti ki shaadi mein jaayenge. Par agli baar bachat ke liye sona lena hua, toh Behen ke saath baith kar paper gold samjhengi. Kangan pyaar ke liye, bond kamaai ke liye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG smiling at the viewer, behind him a cozy family table with a jewellery box, a phone and a bond certificate, inviting warm light",
+     "type": "art"
+    },
+    "vo": "Ab aapse sawaal. Aapke ghar mein sona kis roop mein hai: gehna, coin, ETF ya bond? Comment mein bas woh shabd likho. Aur yeh bhi batao, kya kabhi kisi ne aapke ghar mein locker ka kiraya gina hai?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA in a kurta proudly holding a bundle of FD receipts, a small question mark shadow on the wall behind him, SG peeking in from the doorway with a smile, evening",
+     "type": "art"
+    },
+    "vo": "Agle video mein Papa ki FD ki baari hai. FD safe lagti hai, par mehngai kaat kar asal mein kitna bachta hai? Woh kahani bhi isi tarah, ghar ke andar se. Tab tak, apne gehne ka bill dhoondh kar rakho, kaam aayega."
+   }
+  ],
+  "thumbnail": {
+   "scene": "MUMMY stares at her gold bangles on a jeweller's weighing scale, eyes wide, mouth slightly open",
+   "words": [
+    "₹2,000",
+    "GAYAB"
+   ]
+  },
+  "title": "Mummy ka *sona* ya gold bond, kaun kamata? 💰"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  28.41,
+  46.86,
+  64.19,
+  92.56,
+  110.73,
+  129.78,
+  145.67,
+  174.72,
+  198.65,
+  227.7,
+  245.67,
+  265.16,
+  293.21,
+  311.62,
+  328.67,
+  358.12,
+  387.73,
+  412.58,
+  441.99,
+  459.4,
+  483.81,
+  511.62,
+  531.55,
+  548.76,
+  567.13,
+  585.9,
+  612.83,
+  640.0,
+  661.49,
+  690.38,
+  718.15,
+  736.8,
+  755.29,
+  781.5,
+  798.47,
+  817.84,
+  834.37
+ ],
+ "topic": {
+  "hooks": [
+   "Gehne par making charge kitna jaata hai?",
+   "Gold bond par 2.5% extra kaise milta hai?",
+   "Locker ka kharcha kaun ginta hai?"
+  ],
+  "id": "gold-vs-paper-gold",
+  "summary": "Physical gold (making charges, purity, locker), gold ETFs and sovereign gold bonds compared over a decade: costs, 2.5% SGB interest, tax at maturity, when jewellery is a purchase not an investment.",
+  "target_minutes": 12,
+  "title": "Mummy ka sona vs sovereign gold bond: kaun sa gold sach mein kamata hai",
+  "voice": "voice_1kn3blc2u13l"
+ },
+ "updated": "2026-10-22T02:43:31+00:00",
+ "writer": "claude"
+}
