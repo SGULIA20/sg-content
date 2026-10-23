@@ -339,6 +339,7 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
         return piece
     # 10: upload, scheduled
     piece.ids["yt_id"] = deps.upload(piece, video, thumb)
+    piece.topic["look"] = art.look(piece.channel)                     # which picture style this piece was drawn in (weekly report)
     pieces.save(pieces.transition(piece, "uploaded"), root)
     if piece.kind == "long" and deps.subtitles:
         try:

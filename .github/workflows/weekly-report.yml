@@ -36,6 +36,18 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python -m engine.report
+      - name: What's working (report only, founder 23 Oct 2026)
+        continue-on-error: true            # an extra report never fails the weekly one
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
+          YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m engine.whatworks --send
       - run: |
           git add -A logs || true
           git diff --cached --quiet || (git commit -m "weekly report [skip ci]" && git push)

@@ -101,6 +101,15 @@ def paint(prompt: str, out: Path, *, refs: list = (), key: str | None = None, mo
     return out
 
 
+LOOKS = (("claymation", "claymation"), ("indian comic", "indian-comic"), ("doodle", "doodle"))
+
+
+def look(channel: str, root: Path = CONTENT_DIR) -> str:
+    """Short name of the channel's current picture style, stamped on each piece so the weekly report can compare looks."""
+    style = (Path(root) / "prompts" / f"style-{channel}.txt").read_text().lower()
+    return next((name for word, name in LOOKS if word in style), "other")
+
+
 def style_prompt(channel: str, scene_prompt: str, root: Path = CONTENT_DIR) -> str:
     style = (Path(root) / "prompts" / f"style-{channel}.txt").read_text().strip()
     return f"{scene_prompt.strip()}. {style}"
