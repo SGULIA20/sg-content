@@ -1,0 +1,35 @@
+{
+ "channel": "arthvan",
+ "facts": [],
+ "id": "2026-11-08-arthvan-long",
+ "ids": {},
+ "kind": "long",
+ "publish_day": "2026-11-08",
+ "reasons": [
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+ ],
+ "script": null,
+ "status": "failed-research",
+ "timings": [],
+ "topic": {
+  "allowed_sources": [
+   "en.wikipedia.org",
+   "maharashtratourism.gov.in",
+   "news reports with dates"
+  ],
+  "hooks": [
+   "Is gaon mein ghar ke darwaze kyon nahi?",
+   "Bank ki shakha bhi bina lock ke?",
+   "Chori hui to kya hua?"
+  ],
+  "id": "shani-shingnapur",
+  "notes": "Legend lane plus documented modern facts (UCO Bank branch 2011); report thefts honestly.",
+  "place": "Shani Shingnapur, Maharashtra",
+  "target_minutes": 14,
+  "title_hi": "Shani Shingnapur, bina darwaze ka gaon"
+ },
+ "updated": "2026-10-23T14:01:30+00:00",
+ "writer": ""
+}
