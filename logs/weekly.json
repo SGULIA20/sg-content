@@ -1,0 +1,16 @@
+{
+ "start": "2026-10-16",
+ "end": "2026-10-22",
+ "data": {
+  "sglearning": {
+   "error": "analytics 403: {\"error\": \"{\\n  \\\"error\\\": {\\n    \\\"code\\\": 403,\\n    \\\"message\\\": \\\"YouTube Analytics API has not been u",
+   "ig": {
+    "reach": 4523,
+    "followers": 17581
+   }
+  },
+  "arthvan": {
+   "error": "analytics 403: {\"error\": \"{\\n  \\\"error\\\": {\\n    \\\"code\\\": 403,\\n    \\\"message\\\": \\\"YouTube Analytics API has not been u"
+  }
+ }
+}
