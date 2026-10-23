@@ -141,9 +141,17 @@ def build(day: date | None = None, now: datetime | None = None, root: Path = ROO
     return "\n".join(lines)
 
 
+def card_day(now: datetime | None = None) -> date:
+    """The day the 9 pm card reports: the founder's day in Lagos. The card goes out at 21:03 WAT, which is already 01:33 the next day in
+    India, so keying on India's date (as before 23 Oct 2026) reported tomorrow's empty slots as NOT POSTED."""
+    from zoneinfo import ZoneInfo
+    now = now or datetime.now(timezone.utc)
+    return now.astimezone(ZoneInfo("Africa/Lagos")).date()
+
+
 def main(argv=None) -> int:
     argv = sys.argv[1:] if argv is None else argv
-    day = today_ist()
+    day = card_day()
     text = build(day)
     print(text)
     if "--send" not in argv:

@@ -37,6 +37,9 @@ def due(root: Path, now_utc: datetime, channel: str, env=None) -> list:
             continue                                                                        # platform configured later (LinkedIn, 22 Oct) is still owed
         if not (today - timedelta(days=RETRY_DAYS) <= p.publish_day <= today):      # today's slot, or a recent day whose post failed
             continue
+        if p.publish_day == today and now_ist.replace(tzinfo=None) < _slot_opens(p.channel, today):
+            continue                                                                # 22 Oct 2026: a run that GitHub delayed past India's midnight
+                                                                                    # posted the next day's Short about 20 hours early
         if p.ids.get("unlisted"):                                                  # first-day unlisted uploads stay off Instagram and Threads
             continue
         missing = [k for k in required(env) if not p.ids.get(k)]
@@ -45,6 +48,15 @@ def due(root: Path, now_utc: datetime, channel: str, env=None) -> list:
         if missing:
             out.append(p)
     return out
+
+
+EARLY_MINUTES = 60                 # a run may post today's Short up to an hour before its slot, never earlier
+
+
+def _slot_opens(channel: str, day) -> datetime:
+    """When today's Short of this channel may first go out (IST, naive): its Instagram slot minus EARLY_MINUTES."""
+    h, m = (int(x) for x in config.CHANNELS[channel].ig_slot_ist.split(":"))
+    return datetime(day.year, day.month, day.day, h, m) - timedelta(minutes=EARLY_MINUTES)
 
 
 def threads_text(piece) -> str:

@@ -137,3 +137,15 @@ def test_caption_carries_the_channels_youtube_link_before_the_hashtags():
     cap = instagram.caption_text(_piece())
     assert "https://www.youtube.com/@sanjeev_gulia?sub_confirmation=1" in cap and cap.rstrip().endswith("#RBI")
     assert cap.index("youtube.com") < cap.index("#PaiseKiKhabar")
+
+
+def test_a_story_file_over_60_s_is_skipped_not_retried_forever(tmp_path, monkeypatch):
+    # 21 Oct 2026: a piece made before the no-trim rule had a 91 s story.mp4; Instagram answered ERROR on every run
+    out = tmp_path / "out" / "2026-10-20-sglearning-short"
+    out.mkdir(parents=True)
+    (out / "story.mp4").write_bytes(b"x")
+    monkeypatch.setattr(instagram, "_too_long_for_story", lambda video, max_s=60.0: True)
+    fc = FakeCall()
+    p = instagram.publish_piece(_piece(), {"IG_ACCESS_TOKEN": "t", "IG_USER_ID": "u", "GITHUB_REPOSITORY": "r"}, call=fc, sleep=lambda s: None, root=tmp_path)
+    assert [c[2].get("media_type") for c in fc.calls if c[1].endswith("/media")] == ["REELS"]
+    assert p.ids["ig_story_id"].startswith("skipped")

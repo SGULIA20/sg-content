@@ -73,3 +73,9 @@ def test_a_skipped_story_with_no_reel_yet_is_simply_not_posted(tmp_path):
     _piece(tmp_path, "2026-10-22-arthvan-short", "arthvan", "short", day, yt_id="b", ig_story_id="skipped: Reel over 60 s")
     text = evening.build(day, datetime(2026, 10, 22, 18, 0, tzinfo=timezone.utc), tmp_path, [])
     assert "SG-MYTH Short\n   YouTube: ✅ Posted\n   Instagram: 🔴 NOT POSTED" in text
+
+
+def test_the_9pm_card_reports_the_founders_lagos_day_not_indias_next_day():
+    from datetime import datetime, timezone
+    sent = datetime(2026, 10, 22, 20, 3, tzinfo=timezone.utc)          # 21:03 WAT, already 01:33 on 23 Oct in India
+    assert evening.card_day(sent).isoformat() == "2026-10-22"

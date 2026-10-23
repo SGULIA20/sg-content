@@ -25,6 +25,10 @@ line here (who, date) in the same change. Newest first.
 - **Fully automatic.** The founder never decides what is made or posted on a given day. Topics, scripts, voice, video, upload and posting run on their own; a piece that fails a check is skipped and retried by the next run, never posted. (founder, 21 Oct 2026)
 - **Buffer: never under 4 days, aim for 5+.** The buffer targets 7 days of Shorts and 10 of longs (`engine/buffer.py`); under 4 days is an alert (`digest.BUFFER_ALERT_DAYS`). (founder, 21 Oct 2026)
 - **One failure never stops the rest.** A crash in one piece marks that piece `failed-crash` and the run carries on (`engine/produce.py`). (21 Oct 2026, after the long-video crash)
+- **Instagram Story only when the Short fits in 60 s.** A longer Reel keeps its full length and that day has no Story; a Story is never
+  trimmed. (founder, 22 Oct 2026)
+- **Never early.** A Short goes out at its slot (at most an hour early), even when a GitHub run is late. (23 Oct 2026, after a late run
+  posted the next day's Short 20 hours early)
 - **No duplicates.** A piece is made once per publish slot (`pieces/<day>-<channel>-<kind>.json`); finished pieces are never remade; each platform is posted once per piece (its id is stored before the next platform is tried).
 - Claude writes every script; Gemini is only the fallback, and a fallback is recorded on the piece. (founder, 20 Oct 2026)
 

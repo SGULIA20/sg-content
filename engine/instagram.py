@@ -3,6 +3,7 @@
 Each platform id is written to the piece record as soon as it exists, so a crash between the Reel and the Story never posts the Reel twice.
 """
 import json
+import subprocess
 import time
 import urllib.error
 import urllib.parse
@@ -17,6 +18,18 @@ API = "https://graph.instagram.com/v25.0"          # Instagram API with Instagra
 REFRESH_URL = "https://graph.instagram.com/refresh_access_token"
 DEFAULT_REPO = "SGULIA20/sg-content"
 THUMB_OFFSET_MS = 2000
+STORY_MAX_S = 60.0                 # Instagram refuses a Story video over 60 s
+
+
+def _too_long_for_story(video: Path, max_s: float = STORY_MAX_S) -> bool:
+    """True when the Story file runs over 60 s. Pieces made before 22 Oct 2026 carry a full-length story.mp4 that Instagram rejects
+    (status ERROR) on every run; those get no Story, the same rule as new pieces. An unreadable file (a test stub) counts as fitting."""
+    try:
+        out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(video)],
+                             capture_output=True, text=True, check=True).stdout.strip()
+        return float(out) > max_s
+    except (subprocess.CalledProcessError, ValueError, OSError):
+        return False
 
 
 class InstagramError(Exception):
@@ -118,7 +131,7 @@ def publish_piece(piece: Piece, env=None, call=call, sleep=time.sleep, root: Pat
             piece.ids["ig_reel_id"] = _create_and_publish(ig_id, token, params, "reel", call, sleep)
             pieces.save(piece, root); done.append("reel")
         out_dir = Path(root) / "out" / piece.id
-        if not piece.ids.get("ig_story_id") and out_dir.exists() and not (out_dir / "story.mp4").exists():
+        if not piece.ids.get("ig_story_id") and out_dir.exists() and (not (out_dir / "story.mp4").exists() or _too_long_for_story(out_dir / "story.mp4")):
             piece.ids["ig_story_id"] = "skipped: Reel over 60 s"             # founder, 22 Oct 2026: no trimmed Story; the Reel keeps its full length
             pieces.save(piece, root)
         if not piece.ids.get("ig_story_id"):

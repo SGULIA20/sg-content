@@ -206,3 +206,12 @@ def test_threads_text_gets_the_channel_link_only_when_it_fits():
     assert short.endswith("▶ https://youtu.be/x")
     long_text = "x" * 470
     assert "youtu.be" not in threads.text_for({"text": long_text}, "https://youtu.be/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+
+
+def test_a_late_run_after_indias_midnight_does_not_post_the_new_days_short_early(tmp_path):
+    # 22 Oct 2026: a run GitHub delayed to 01:23 IST posted the 23 Oct SG-MYTH-WORLD Short instead of waiting for its 21:30 IST slot
+    _seed(tmp_path, "2026-10-23-arthvan-short", "arthvan", "short", date(2026, 10, 23))
+    at_0123_ist = datetime(2026, 10, 22, 19, 53, tzinfo=timezone.utc)
+    assert publish.due(tmp_path, at_0123_ist, "arthvan") == []
+    at_2133_ist = datetime(2026, 10, 23, 16, 3, tzinfo=timezone.utc)
+    assert [p.id for p in publish.due(tmp_path, at_2133_ist, "arthvan")] == ["2026-10-23-arthvan-short"]
