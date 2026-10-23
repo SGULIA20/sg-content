@@ -42,3 +42,15 @@ def test_words_fall_back_to_title_keyword_when_missing(tmp_path):
     p = _piece(); p.script.pop("thumbnail")
     words = thumbs.words_for(p)
     assert words and all(len(w) <= 14 for w in words) and len(words) <= 3 and "safe" in " ".join(words).lower()
+
+
+def test_long_videos_get_a_second_thumbnail_with_the_titles_words(tmp_path):
+    from engine import pieces as P
+    piece = P.Piece(id="2026-10-24-sglearning-long", channel="sglearning", kind="long", publish_day=__import__("datetime").date(2026, 10, 24))
+    piece.script = {"hook": "h", "scenes": [], "thumbnail": {"words": ["MINIMUM", "TRAP"], "scene": "s"},
+                    "captions": {"youtube": {"title": "Credit card ka minimum due"}}}
+    renders = []
+    def render(kind, data, out, size):
+        renders.append((Path(out).name, data["words"])); Path(out).write_bytes(b"j"); return Path(out)
+    out = thumbs.make(piece, tmp_path, paint=lambda prompt, out, **kw: Path(out).write_bytes(b"p") or Path(out), render=render, cast_refs=lambda p, **kw: [])
+    assert renders == [("thumb.jpg", ["MINIMUM", "TRAP"]), ("thumb_b.jpg", ["Credit", "card", "ka"])] and "thumb_b" in out

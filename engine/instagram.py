@@ -20,6 +20,7 @@ DEFAULT_REPO = "SGULIA20/sg-content"
 THUMB_OFFSET_MS = 2000
 DM_ASK = {"sglearning": "💬 Comment karein APP: ScoreMyBiz ka link DM mein aayega.",          # engine.commentdm answers these
           "arthvan": "💬 Comment karein APP: Waypoint app ka link DM mein aayega."}
+TRIAL_GRADUATION = "SS_PERFORMANCE"   # Trial Reels: shown to non-followers first; Instagram shares it with followers when it does well
 STORY_MAX_S = 60.0                 # Instagram refuses a Story video over 60 s
 
 
@@ -131,7 +132,15 @@ def publish_piece(piece: Piece, env=None, call=call, sleep=time.sleep, root: Pat
                 params["cover_url"] = media_url(piece, "cover.jpg", repo)       # the drawn reaction cover, same as the YouTube thumbnail
             else:
                 params["thumb_offset"] = str(THUMB_OFFSET_MS)
-            piece.ids["ig_reel_id"] = _create_and_publish(ig_id, token, params, "reel", call, sleep)
+            trial = {k: v for k, v in params.items() if k != "share_to_feed"}
+            trial["trial_params"] = json.dumps({"graduation_strategy": TRIAL_GRADUATION})
+            try:                                                            # Trial Reel first (founder, 23 Oct 2026); a plain Reel if refused
+                piece.ids["ig_reel_id"] = _create_and_publish(ig_id, token, trial, "trial reel", call, sleep)
+                piece.ids["ig_trial"] = TRIAL_GRADUATION
+            except InstagramError as e:
+                print(f"{piece.id}: trial reel refused ({str(e)[:120]}); posting a normal Reel", flush=True)
+                piece.ids["ig_reel_id"] = _create_and_publish(ig_id, token, params, "reel", call, sleep)
+                piece.ids["ig_trial"] = "no: " + str(e)[:80]
             pieces.save(piece, root); done.append("reel")
         out_dir = Path(root) / "out" / piece.id
         if not piece.ids.get("ig_story_id") and out_dir.exists() and (not (out_dir / "story.mp4").exists() or _too_long_for_story(out_dir / "story.mp4")):

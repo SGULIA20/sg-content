@@ -30,6 +30,16 @@ def words_for(piece: Piece) -> list:
     return [w[:MAX_LEN] for w in words][:MAX_WORDS]
 
 
+def words_b(piece: Piece) -> list:
+    """The second thumbnail's words for the click test (founder, 23 Oct 2026): the title's own first words, so the test asks
+    "the writer's punch words or the title's words?". [] when they would be the same as the first thumbnail."""
+    s = piece.script or {}
+    title = (s.get("captions", {}).get("youtube", {}).get("title") or s.get("title") or "")
+    words = [w for w in re.sub(r"[^\w\s₹%]", " ", title).split() if len(w) > 1][:MAX_WORDS]
+    words = [w[:MAX_LEN] for w in words]
+    return words if words and [w.lower() for w in words] != [w.lower() for w in words_for(piece)] else []
+
+
 def scene_for(piece: Piece) -> str:
     s = piece.script or {}
     scene = (s.get("thumbnail") or {}).get("scene")
@@ -53,6 +63,9 @@ def make(piece: Piece, out_dir: Path, paint=art.paint, render=cards.render, cast
     words = words_for(piece)
     focus = "50% 22%" if piece.kind == "short" else "50% 50%"               # a portrait panel cropped to 16:9 keeps the face, not the belly
     out = {"thumb": render("thumb2", {"words": words, "panel_path": panel, "focus": focus}, out_dir / "thumb.jpg", (1280, 720))}
+    alt = words_b(piece) if piece.kind == "long" else []
+    if alt:                                                                   # same panel, other words: no extra picture cost
+        out["thumb_b"] = render("thumb2", {"words": alt, "panel_path": panel, "focus": focus}, out_dir / "thumb_b.jpg", (1280, 720))
     if piece.kind == "short":
         out["cover"] = render("thumb2", {"words": words, "panel_path": panel, "focus": "50% 50%"}, out_dir / "cover.jpg", (1080, 1920))
     return out

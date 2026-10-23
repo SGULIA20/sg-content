@@ -38,6 +38,10 @@ line here (who, date) in the same change. Newest first.
 - Threads video posts carry a topic tag (Personal Finance / Indian Mythology) and one poll under them: "Pehle se pata tha / Aaj pata chala".
 - Instagram captions ask "Comment karein APP"; engine/commentdm.py answers each such comment once by DM with the Play link
   (ScoreMyBiz for Learning with SG, Waypoint for SG-MYTH-WORLD). Needs the messaging permission on the Instagram token.
+- Instagram Reels go out as Trial Reels: shown to non-followers first, shared with followers by Instagram when they do well
+  (graduation SS_PERFORMANCE); a plain Reel when Instagram refuses a trial. (founder, 23 Oct 2026)
+- Long videos run a thumbnail click test: B (same picture, the title's words) two days after going public; the higher click rate
+  stays, A when the numbers are missing or too few (engine/thumbtest.py). (founder, 23 Oct 2026)
 - The weekly "what's working" report is report-only; nothing changes topics or posting on its own without the founder's yes.
 
 ## Reporting
