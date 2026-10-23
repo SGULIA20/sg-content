@@ -39,8 +39,9 @@ line here (who, date) in the same change. Newest first.
 ## Open (not decided yet; ask, don't assume)
 - WhatsApp spend after Meta's 1 Oct 2026 price change: not built. On 23 Oct ScoreMyBiz had sent 32 WhatsApp messages in 30 days,
   far under the 1,000 free a month; build the spend line when sends pass 500 a month.
-- Waypoint crisis help (helplines from chats, comments, check-in; more languages; voice alert): waypoint PR #1, waiting on the
-  founder's yes, an app release and an anonymize-voice deploy.
+- Waypoint crisis help (helplines from chats, comments, check-in; more languages; voice alert): founder said **no** on 23 Oct 2026.
+  Waypoint PR #1 stays unmerged; do not merge or re-propose unless the founder asks.
+- Google Play service account (review replies, crash watch): later, founder's call (23 Oct 2026).
 - Exact clock: built and running in Supabase (command.clock); it starts jobs once `GITHUB_TOKEN` is added to the sg-command function.
 
 ## Control room (phone)
