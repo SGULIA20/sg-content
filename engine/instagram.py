@@ -3,7 +3,6 @@
 Each platform id is written to the piece record as soon as it exists, so a crash between the Reel and the Story never posts the Reel twice.
 """
 import json
-import subprocess
 import time
 import urllib.error
 import urllib.parse
@@ -24,15 +23,30 @@ TRIAL_GRADUATION = "SS_PERFORMANCE"   # Trial Reels: shown to non-followers firs
 STORY_MAX_S = 60.0                 # Instagram refuses a Story video over 60 s
 
 
+def mp4_seconds(video: Path) -> float | None:
+    """Duration from the MP4's own header (moov/mvhd), so no ffprobe is needed: the publish job does not install ffmpeg
+    (23 Oct 2026: the ffprobe check silently passed there). None when the file is not a readable MP4."""
+    import struct
+    try:
+        data = Path(video).read_bytes()
+    except OSError:
+        return None
+    i = data.find(b"mvhd")
+    if i < 4 or i + 32 > len(data):
+        return None
+    version = data[i + 4]
+    if version == 1:
+        scale, dur = struct.unpack(">IQ", data[i + 24:i + 36])
+    else:
+        scale, dur = struct.unpack(">II", data[i + 16:i + 24])
+    return dur / scale if scale else None
+
+
 def _too_long_for_story(video: Path, max_s: float = STORY_MAX_S) -> bool:
     """True when the Story file runs over 60 s. Pieces made before 22 Oct 2026 carry a full-length story.mp4 that Instagram rejects
     (status ERROR) on every run; those get no Story, the same rule as new pieces. An unreadable file (a test stub) counts as fitting."""
-    try:
-        out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(video)],
-                             capture_output=True, text=True, check=True).stdout.strip()
-        return float(out) > max_s
-    except (subprocess.CalledProcessError, ValueError, OSError):
-        return False
+    seconds = mp4_seconds(video)
+    return seconds is not None and seconds > max_s
 
 
 class InstagramError(Exception):
