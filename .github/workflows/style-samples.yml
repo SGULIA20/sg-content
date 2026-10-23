@@ -1,0 +1,36 @@
+name: style-samples
+
+# One-off: draws the same two scenes in several picture styles so the founder can choose a look.
+# The pictures are pushed to the style-samples branch, never to main.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install Python packages
+        run: pip install -r requirements.txt
+      - name: Draw the samples
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/style_samples.py --out out/style-samples
+      - name: Push them to the style-samples branch
+        run: |
+          git config user.name "sg-content-bot"
+          git config user.email "sg-content-bot@users.noreply.github.com"
+          git checkout -b style-samples
+          git add -f out/style-samples/*.png out/style-samples/spend.json
+          git commit -m "style samples $(date -u +%Y-%m-%dT%H:%M) [skip ci]"
+          git push -f origin HEAD:style-samples
