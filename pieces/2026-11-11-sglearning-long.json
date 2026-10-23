@@ -8,6 +8,9 @@
  "reasons": [
   "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
  ],
  "script": null,
@@ -15,15 +18,15 @@
  "timings": [],
  "topic": {
   "hooks": [
-   "Emergency fund kitna hona chahiye?",
-   "Savings account mein rakhna galat hai?",
-   "Pehle loan chukayein ya fund banayein?"
+   "Gaadi 5 saal mein kitni sasti ho jaati hai?",
+   "Car loan ka byaaj kitna dete hain?",
+   "Cash hai toh bhi loan lena sahi hai?"
   ],
-  "id": "emergency-fund-six-months",
-  "summary": "Why six months of expenses in a liquid place matters, where to keep it (savings, sweep FD, liquid fund), how a family builds it in a year, what not to touch it for.",
+  "id": "car-loan-vs-cash",
+  "summary": "Total cost of car ownership: loan interest, depreciation, insurance, fuel, service; the loan-vs-cash decision with opportunity cost, why a used car can be the smarter maths for many families.",
   "target_minutes": 12,
-  "title": "Naukri gayi, EMI nahi ruki: 6 mahine ka emergency fund kaise banta hai"
+  "title": "10 lakh ki gaadi: loan par lein ya cash, aur 5 saal mein asli kharcha kya"
  },
- "updated": "2026-10-23T14:01:34+00:00",
+ "updated": "2026-10-23T14:16:01+00:00",
  "writer": ""
 }
