@@ -1,0 +1,65 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.33,Default,,0,0,0,,Ek poora mandir,
+Dialogue: 0,0:00:01.33,0:00:02.92,Default,,0,0,0,,ek hi pahaad kaat kar,
+Dialogue: 0,0:00:02.92,0:00:04.77,Default,,0,0,0,,upar se neeche bana.
+Dialogue: 0,0:00:04.77,0:00:07.42,Default,,0,0,0,,Katha-Kalpataru granth kehta hai,
+Dialogue: 0,0:00:07.42,0:00:09.28,Default,,0,0,0,,ek raani ne vrat liya tha.
+Dialogue: 0,0:00:09.73,0:00:10.17,Default,,0,0,0,,Shikhar,
+Dialogue: 0,0:00:10.17,0:00:11.71,Default,,0,0,0,,yaani mandir ki choti,
+Dialogue: 0,0:00:11.71,0:00:13.04,Default,,0,0,0,,dikhe tabhi khaana.
+Dialogue: 0,0:00:13.04,0:00:15.69,Default,,0,0,0,,Isliye kaarigar Kokasa ne pahaad ki
+Dialogue: 0,0:00:15.69,0:00:17.45,Default,,0,0,0,,choti se kaatna shuru kiya.
+Dialogue: 0,0:00:17.90,0:00:18.56,Default,,0,0,0,,Ab sabut.
+Dialogue: 0,0:00:18.56,0:00:19.21,Default,,0,0,0,,Ellora,
+Dialogue: 0,0:00:19.21,0:00:21.41,Default,,0,0,0,,Maharashtra ka Kailasa mandir.
+Dialogue: 0,0:00:21.41,0:00:24.47,Default,,0,0,0,,ASI yaani Archaeological Survey of India,
+Dialogue: 0,0:00:24.47,0:00:27.32,Default,,0,0,0,,ise Rashtrakuta raja Krishna se jodti
+Dialogue: 0,0:00:27.32,0:00:27.54,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:27.99,0:00:30.20,Default,,0,0,0,,Unka raaj lagbhag saal 757 mein
+Dialogue: 0,0:00:30.20,0:00:30.87,Default,,0,0,0,,shuru hua.
+Dialogue: 0,0:00:30.87,0:00:32.86,Default,,0,0,0,,Baroda ke taambe ke patr bhi
+Dialogue: 0,0:00:32.86,0:00:35.07,Default,,0,0,0,,is Shiva mandir ko sarahte hain.
+Dialogue: 0,0:00:35.52,0:00:37.80,Default,,0,0,0,,Kaarigaron ne gehri khaaiyan kaat kar
+Dialogue: 0,0:00:37.80,0:00:38.94,Default,,0,0,0,,chattan alag ki.
+Dialogue: 0,0:00:38.94,0:00:41.22,Default,,0,0,0,,Phir upar se neeche chheni chali,
+Dialogue: 0,0:00:41.22,0:00:42.36,Default,,0,0,0,,bina machaan ke.
+Dialogue: 0,0:00:42.81,0:00:43.87,Default,,0,0,0,,Archaeologist M.
+Dialogue: 0,0:00:43.87,0:00:44.08,Default,,0,0,0,,K.
+Dialogue: 0,0:00:44.08,0:00:45.56,Default,,0,0,0,,Dhavalikar ka hisaab,
+Dialogue: 0,0:00:45.56,0:00:47.26,Default,,0,0,0,,mota kaam kuch saalon mein ho
+Dialogue: 0,0:00:47.26,0:00:47.89,Default,,0,0,0,,sakta tha.
+Dialogue: 0,0:00:48.34,0:00:48.88,Default,,0,0,0,,Ab shak.
+Dialogue: 0,0:00:48.88,0:00:49.68,Default,,0,0,0,,Kehte hain,
+Dialogue: 0,0:00:49.68,0:00:51.83,Default,,0,0,0,,2 lakh ton patthar hataya gaya.
+Dialogue: 0,0:00:51.83,0:00:54.51,Default,,0,0,0,,Lekin naye anumaan is aankde par
+Dialogue: 0,0:00:54.51,0:00:55.58,Default,,0,0,0,,ek raay nahi.
+Dialogue: 0,0:00:56.03,0:00:57.33,Default,,0,0,0,,Hermann Goetz kehte the,
+Dialogue: 0,0:00:57.33,0:00:59.07,Default,,0,0,0,,mandir kai sadiyon mein bana.
+Dialogue: 0,0:00:59.07,0:01:00.59,Default,,0,0,0,,Dhavalikar maante the,
+Dialogue: 0,0:01:00.59,0:01:02.55,Default,,0,0,0,,zyada hissa Krishna ke raaj mein.
+Dialogue: 0,0:01:03.00,0:01:05.02,Default,,0,0,0,,Aur sawaal abhi bhi khula hai,
+Dialogue: 0,0:01:05.02,0:01:07.04,Default,,0,0,0,,itna kata patthar gaya kahan?
+Dialogue: 0,0:01:07.49,0:01:07.97,Default,,0,0,0,,Twist yeh,
+Dialogue: 0,0:01:07.97,0:01:10.85,Default,,0,0,0,,Ravana ki Kailash hilaati murti shayad
+Dialogue: 0,0:01:10.85,0:01:11.81,Default,,0,0,0,,baad mein bani.
+Dialogue: 0,0:01:11.81,0:01:14.45,Default,,0,0,0,,Dhavalikar ise baad ka maante hain,
+Dialogue: 0,0:01:14.45,0:01:16.37,Default,,0,0,0,,kuch itihaaskaar shuru ka.
+Dialogue: 0,0:01:16.82,0:01:19.44,Default,,0,0,0,,Aaj aap Ellora jaakar upar chattan
+Dialogue: 0,0:01:19.44,0:01:20.16,Default,,0,0,0,,se jhaankiye.
+Dialogue: 0,0:01:20.16,0:01:22.78,Default,,0,0,0,,Poora mandir aapke pairon ke neeche
+Dialogue: 0,0:01:22.78,0:01:23.50,Default,,0,0,0,,dikhega.
+Dialogue: 0,0:01:23.95,0:01:25.35,Default,,0,0,0,,Aapko kya lagta hai,
+Dialogue: 0,0:01:25.35,0:01:27.46,Default,,0,0,0,,yeh mandir ek raja ne banaya
+Dialogue: 0,0:01:27.46,0:01:28.63,Default,,0,0,0,,ya kai peedhiyon ne?

@@ -2,285 +2,372 @@
  "channel": "arthvan",
  "facts": [
   {
-   "label": "legend",
-   "number": 52.0,
-   "quote": "There is a lodestone at the top of the temple was said to be a massive 52 ton magnet. According to legend, the statue of the Sun God inside the temple was built of a material with iron content and was said to be floating in air, without any physical support...",
-   "source_date": "2026",
-   "source_name": "Odisha Tourism / Popular Folklore",
-   "source_url": "https://odishatourism.gov.in",
-   "text": "A popular maritime folklore alleges that a colossal 52-tonne lodestone magnet was installed atop the Konark temple tower, suspending the central iron-bearing idol in mid-air.",
-   "unit": "tonnes"
-  },
-  {
-   "label": "legend",
-   "number": null,
-   "quote": "To save their trade and their ships, the Portuguese sailors destroyed the temple and took away the lodestone.",
-   "source_date": "1908",
-   "source_name": "Bengal District Gazetteers: Puri",
-   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
-   "text": "According to regional tales, Portuguese trading vessels had their magnetic compasses disoriented and were pulled onto shallow reefs until mariners raided the temple and hauled the apex magnet away.",
-   "unit": null
-  },
-  {
    "label": "archaeology",
-   "number": 10.0,
-   "quote": "Supported by iron beams, the architraves were of chlorite and had their front faces sculptured.",
-   "source_date": "1968",
-   "source_name": "Archaeological Survey of India (Debala Mitra)",
-   "source_url": "https://asi.nic.in",
-   "text": "Archaeological analysis shows that medieval builders supported the corbelled stone ceilings of the porch with forged wrought-iron beams extending up to 10 metres in length.",
-   "unit": "metres"
-  },
-  {
-   "label": "archaeology",
-   "number": null,
-   "quote": "There are various explanations offered regarding what led to the collapse of the rekha deul or sanctuary at Konarak... while numerous legends have been fabricated or greatly embellished.",
-   "source_date": "2003",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://asi.nic.in",
-   "text": "Official archaeological excavation and structural survey records maintain that no physical evidence, lodestone fragments, or epigraphical proof of any summit magnet have ever been discovered at the site.",
-   "unit": null
-  },
-  {
-   "label": "archaeology",
-   "number": 1903.0,
-   "quote": "Bourdillon, ordered the temple to be sealed and filled with sand to prevent the collapse of the Jagamohana. The Mukhasala and Nata Mandir were repaired by 1905.",
-   "source_date": "1905",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://asi.nic.in",
-   "text": "In 1903 CE, British colonial administrators sealed all entryways and packed the interior of the surviving Jagamohana hall with sand to arrest structural collapse.",
+   "number": 757.0,
+   "quote": "The Great Kailasa (Cave 16) is attributed to Krishna I (c. 757-83 A.D.), the successor and uncle of Dantidurga.",
+   "source_date": "2021",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/ellora-caves/",
+   "text": "The Archaeological Survey of India attributes the initial commissioning of the Great Kailasa rock-cut complex to the Rashtrakuta king Krishna I, whose reign commenced around 757 CE.",
    "unit": "CE"
   },
   {
-   "label": "disputed",
-   "number": null,
-   "quote": "Some of the theories include the subsidence of the foundation, a shock of earthquake or lightning, raising doubt if the temple was ever completed. It appears that the structure disintegrated gradually, the beginning of the decay initiated by the desecration of the temple.",
-   "source_date": "2005",
-   "source_name": "Archaeological Survey of India / K. S. Behera",
-   "source_url": "https://asi.nic.in",
-   "text": "Structural engineers and historians disagree on whether the sanctum tower collapsed because of engineering failure and foundation subsidence on soft sand, or due to external military invasions and natural cyclones.",
-   "unit": null
-  },
-  {
-   "label": "archaeology",
-   "number": 1676.0,
-   "quote": "This temple was called the 'Black Pagoda' in European sailor accounts as early as 1676 because it looked like a great tiered tower which appeared black.",
-   "source_date": "1911",
-   "source_name": "The Diaries of Sir Streynsham Master",
-   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
-   "text": "European navigation logs applied the term Black Pagoda to the dark silhouette of the Konark temple tower as early as 1676 CE to distinguish it from the white-plastered Jagannath temple at Puri.",
+   "label": "scripture",
+   "number": 812.0,
+   "quote": "A copper plate grant from Baroda of the period of Karka II (c. 812-13 A.D.) speaks about the greatness of this edifice.",
+   "source_date": "2021",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/ellora-caves/",
+   "text": "The Baroda copper-plate charter of Karkaraja II issued in 812 CE praises a wondrous Shiva temple at Elapura, noting that the chief architect and the gods were astonished by its beauty.",
    "unit": "CE"
-  },
-  {
-   "label": "disputed",
-   "number": null,
-   "quote": "Konark temple was initially built on the sea bank but now the sea has receded... European sailors referred to it as the 'Black Pagoda' due to its dark colour and its magnetic power that drew ships into the shore and caused shipwrecks.",
-   "source_date": "1908",
-   "source_name": "Bengal District Gazetteers: Puri / Marine Hydrography",
-   "source_url": "https://asi.nic.in",
-   "text": "Maritime legends attribute historical shipwrecks off the Konark coast to magnetic pull, whereas hydrographers demonstrate that coastal shoals, shallow sandbanks, and shifting currents caused vessel groundings.",
-   "unit": null
-  },
-  {
-   "label": "archaeology",
-   "number": 8.0,
-   "quote": "The 12 wheels reflect the 12 months of the year, while the 8 spokes represent the day's eight prahars... The spokes of the wheel form a sundial, and the shadow cast by these wheels aids in calculating the exact time of day.",
-   "source_date": "2026",
-   "source_name": "Odisha Tourism",
-   "source_url": "https://odishatourism.gov.in",
-   "text": "Each sundial wheel features 8 major spokes that divide daytime hours into traditional three-hour intervals known as prahars.",
-   "unit": "count"
   },
   {
    "label": "archaeology",
    "number": 3.0,
-   "quote": "Each wheel has eight spokes - each representing a Prahar. 1 prahar is 3 hours. Each prahar has 60 dots each representing 3 minutes time span.",
-   "source_date": "2024",
-   "source_name": "Odisha Tourism / ASI Documentation",
-   "source_url": "https://odishatourism.gov.in",
-   "text": "Carved relief beads on the rims of the wheels permit astronomical time-telling accurate to increments of roughly 3 minutes.",
+   "quote": "The masons began at the top of the cliff and worked downward, cutting three deep trenches into the rock to isolate a huge U-shaped block.",
+   "source_date": "2003",
+   "source_name": "ASI",
+   "source_url": "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora",
+   "text": "Artisans isolated the core block of the Kailasa temple by excavating 3 massive vertical trenches into the sloping cliffside before chiseling details from top to bottom.",
    "unit": "count"
   },
   {
+   "label": "archaeology",
+   "number": null,
+   "quote": "The traditional methods were rigidly followed by the master architect which could not have been achieved by excavating from the front.",
+   "source_date": "2003",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/ellora-caves/",
+   "text": "The subtractive top-to-bottom excavation method allowed stonecutters to work without wooden scaffolding by standing on the living bedrock tiers as they carved downward.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 5.5,
+   "quote": "Dhavalikar calculated that about 250 workers cutting 4 cubic feet per day could do the basic excavation work in about five and a half years.",
+   "source_date": "1982",
+   "source_name": "Deccan College Research Institute",
+   "source_url": "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora",
+   "text": "Archaeologist M. K. Dhavalikar calculated that a crew of 250 stonecutters removing 4 cubic feet of basalt per day could have finished the primary rough quarrying phase within 5.5 years.",
+   "unit": "years"
+  },
+  {
+   "label": "disputed",
+   "number": 200000.0,
+   "quote": "It is estimated that the artists removed 3,000,000 cu ft (85,000 m3) of stone, weighing approximately 200,000 t (220,000 tons), to excavate the temple.",
+   "source_date": "2020",
+   "source_name": "Encyclopaedia Britannica",
+   "source_url": "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora",
+   "text": "While popular literature widely cites that roughly 200,000 tonnes of basalt were quarried to create Cave 16, modern architectural estimates dispute this exact figure and place the excavated mass between 150,000 and 400,000 tonnes based on differing courtyard boundary assumptions.",
+   "unit": "tonnes"
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "M. K. Dhavalikar (1982) analyzed the architecture of the temple, and concluded that the major part of the temple was completed during the reign of Krishna I, although he agreed with Goetz that some other parts of the temple complex can be dated to the later rulers.",
+   "source_date": "1982",
+   "source_name": "Deccan College Research Institute",
+   "source_url": "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora",
+   "text": "While Hermann Goetz argued that the Kailasa complex was sculpted in distinct phases over multiple centuries across different dynasties, M. K. Dhavalikar argued that the core architectural scheme was planned and executed primarily during Krishna I's single reign with only minor later additions.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": 40.0,
+   "quote": "Dhavalikar dated the famous sculpture of Ravana shaking Mount Kailasa to about three or four decades after the main temple, attributing it to later Rashtrakuta patronage.",
+   "source_date": "1982",
+   "source_name": "Deccan College Research Institute",
+   "source_url": "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora",
+   "text": "While some art historians regard the monumental relief of Ravana shaking Mount Kailasa as part of the original 8th-century design, M. K. Dhavalikar dated the sculpture to approximately 40 years after Krishna I's death based on changing stylistic idioms.",
+   "unit": "years"
+  },
+  {
    "label": "scripture",
-   "number": 12.0,
-   "quote": "According to the scriptures, Samba, the son of Krishna, was cursed with leprosy... Samba underwent penance for 12 years in Mitravana near the shores of Chandrabhaga.",
-   "source_date": "c. 800-1100 CE",
-   "source_name": "Samba Purana, Bhavishya Purana",
-   "source_url": "https://en.wikipedia.org/wiki/Samba_Purana",
-   "text": "Puranic scriptures relate that Krishna's son Samba performed severe penance for 12 years in the solar forest of Mitravana along the Chandrabhaga river to obtain healing from a debilitating affliction.",
+   "number": 1470.0,
+   "quote": "According to this legend, the local king suffered from a severe disease. His queen prayed to the god Ghrishneshwar (Shiva) at Elapura to cure her husband. She vowed to construct a temple if her wish was granted, and promised to observe a fast until she could see the shikhara (top) of this temple.",
+   "source_date": "1500",
+   "source_name": "Katha-Kalpataru, Krishna Yajnavalki",
+   "source_url": "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora",
+   "text": "The 16th-century Marathi text Katha-Kalpataru by Krishna Yajnavalki records that Queen Manikavati vowed to observe an unbroken fast until she could see the shikhara of the proposed temple at Elapura.",
+   "unit": "CE"
+  },
+  {
+   "label": "scripture",
+   "number": 1.0,
+   "quote": "Kokasa assured the king that the queen would be able to see the shikhara within a week. He started carving the temple from the top, by excavating downwards.",
+   "source_date": "1500",
+   "source_name": "Katha-Kalpataru, Krishna Yajnavalki",
+   "source_url": "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora",
+   "text": "The Katha-Kalpataru text relates that an architect named Kokasa resolved the queen's crisis by beginning carving at the mountain top, thereby making the temple spire visible within 1 week.",
+   "unit": "count"
+  },
+  {
+   "label": "legend",
+   "number": 18.0,
+   "quote": "According to historians, the temple was built in 18 years using the most basic tools, such as hammers and chisels.",
+   "source_date": "1900",
+   "source_name": "Folk oral tradition",
+   "source_url": "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora",
+   "text": "A pervasive modern folk belief claims that the entire Kailasa temple complex was miraculously carved from the mountain in exactly 18 years using only rudimentary iron chisels and hammers.",
    "unit": "years"
   },
   {
    "label": "legend",
-   "number": 1200.0,
-   "quote": "King Narasimhadeva I... built this temple, with the help of 1200 artisans within a period of 12 years... The tragic sacrifice of the 12-year-old boy Dharmapada.",
-   "source_date": "1989",
-   "source_name": "Temple Legends of Orissa",
-   "source_url": "https://odishatourism.gov.in",
-   "text": "A celebrated Odia legend recounts that the twelve-year-old prodigy Dharmapada leapt into the sea from the temple spire to shield 1200 craftsmen from royal punishment.",
-   "unit": "count"
+   "number": 3.0,
+   "quote": "A local legend claims that the Mughal emperor Aurangzeb attempted to destroy the Kailasa temple, but failed, causing only minor damages.",
+   "source_date": "1900",
+   "source_name": "Local folklore",
+   "source_url": "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora",
+   "text": "A popular regional legend alleges that the Mughal emperor Aurangzeb dispatched over 1,000 workers to destroy the Kailasa temple over 3 full years, but they could only disfigure a handful of statues before giving up.",
+   "unit": "years"
   }
  ],
  "id": "2026-10-28-arthvan-short",
  "ids": {
-  "write_batch": {
-   "id": "msgbatch_01EsFz2Qhxnsj1WmBdHVHG6g",
-   "key": "236e078c403d54a0",
-   "tries": 1
-  }
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "DTVZY3Vg1qw"
  },
  "kind": "short",
  "publish_day": "2026-10-28",
  "reasons": [
-  "draft cooking in Claude's batch lane; the next run collects it"
+  "draft cooking in Claude's batch lane; the next run collects it",
+  "try 1: length: 298 words, allowed 150-230"
  ],
- "script": null,
- "status": "writing",
- "timings": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Ek pahaad, upar se neeche kaata gaya, aur ban gaya Kailasa mandir. 🤯\nGranth kehta hai raani ke vrat ke liye shikhar pehle banaya gaya.\nASI ise raja Krishna ke samay se jodti hai, par kitna patthar hata, is par shak hai.\nAapko kya lagta hai, ek raja ne banaya ya kai peedhiyon ne?\nUs dost ko bhejo jo Ellora trip plan kar raha hai.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#Kailash",
+     "#IndianHistory",
+     "#Archaeology",
+     "#AncientIndia",
+     "#Itihaas",
+     "#Rahasya",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Ellora ka Kailasa mandir ek hi pahaad kaat kar, upar se neeche bana. Par itna kata patthar gaya kahan? Aur yeh ek raja ne banaya ya kai peedhiyon ne? Aapki raay? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Ek hi pahaad, upar se neeche kaata gaya, aur ban gaya Ellora ka Kailasa mandir. ASI ise Rashtrakuta raja Krishna se jodti hai, par patthar kitna hataya gaya aur kitne saal lage, is par experts aaj bhi alag raay rakhte hain. Kahani, sabut aur shak, teeno ek saath. Us dost ko bhejo jo kehta hai Ellora bas purani gufaayein hain.",
+    "tags": [
+     "Kailasa temple",
+     "Ellora",
+     "Ellora caves",
+     "Kailasa mandir",
+     "Rashtrakuta",
+     "Indian history",
+     "archaeology",
+     "ancient India",
+     "rock cut temple",
+     "Maharashtra",
+     "Dhavalikar",
+     "Katha Kalpataru"
+    ],
+    "title": "Kailasa mandir upar se neeche kyon bana?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Aapko kya lagta hai, yeh mandir ek raja ne banaya ya kai peedhiyon ne?",
+  "hook": "Ek poora mandir, ek hi pahaad kaat kar, upar se neeche bana.",
+  "scenes": [
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a vast dark basalt hill in the Deccan at dawn, a giant temple half emerging from the rock top-down, a queen in simple medieval Indian dress praying with folded hands at its edge, misty golden light, mood of wonder",
+     "type": "art"
+    },
+    "vo": "Ek poora mandir, ek hi pahaad kaat kar, upar se neeche bana. Katha-Kalpataru granth kehta hai, ek raani ne vrat liya tha."
+   },
+   {
+    "facts_used": [
+     8,
+     9
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an elderly architect with a long chisel standing on top of a rocky hill, striking the first blow downward, a fasting queen watching from a distance, wind and dust, early medieval India",
+     "type": "art"
+    },
+    "vo": "Shikhar, yaani mandir ki choti, dikhe tabhi khaana. Isliye kaarigar Kokasa ne pahaad ki choti se kaatna shuru kiya."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: wide aerial view of the Kailasa rock-cut temple at Ellora carved inside a cliff, a modern archaeologist with notebook standing at the rim looking down, bright afternoon sun, sense of scale",
+     "type": "art"
+    },
+    "vo": "Ab sabut. Ellora, Maharashtra ka Kailasa mandir. ASI yaani Archaeological Survey of India, ise Rashtrakuta raja Krishna se jodti hai."
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an ancient copper-plate charter tied with a ring lying on a dark cloth in a museum case, faint engraved lines with no readable text, a researcher leaning over it with a magnifying glass, warm lamp light",
+     "type": "art"
+    },
+    "vo": "Unka raaj lagbhag saal 757 mein shuru hua. Baroda ke taambe ke patr bhi is Shiva mandir ko sarahte hain."
+   },
+   {
+    "facts_used": [
+     2,
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: cutaway view of a sloping basalt cliff with deep trenches cut around a huge U-shaped rock block, dozens of stonecutters standing on rock steps chiseling downward, no wooden scaffolding, dust in sunlight",
+     "type": "art"
+    },
+    "vo": "Kaarigaron ne gehri khaaiyan kaat kar chattan alag ki. Phir upar se neeche chheni chali, bina machaan ke."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a 1980s Indian scholar in spectacles at a wooden desk covered with temple sketches and measurement sheets, calculating by hand, a photo of the Ellora cliff pinned on the wall, quiet study room",
+     "type": "art"
+    },
+    "vo": "Archaeologist M. K. Dhavalikar ka hisaab, mota kaam kuch saalon mein ho sakta tha."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an enormous pile of broken basalt rubble beside the half-carved temple, two researchers on either side pointing at different courtyard edges, arguing politely, overcast sky, mood of doubt",
+     "type": "art"
+    },
+    "vo": "Ab shak. Kehte hain, 2 lakh ton patthar hataya gaya. Lekin naye anumaan is aankde par ek raay nahi."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: split scene, on the left a European historian studying temple walls across layered timelines of different eras, on the right an Indian scholar pointing at the main temple as one plan, temple between them",
+     "type": "art"
+    },
+    "vo": "Hermann Goetz kehte the, mandir kai sadiyon mein bana. Dhavalikar maante the, zyada hissa Krishna ke raaj mein."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an empty carved courtyard at dusk, no rubble anywhere, a lone visitor looking around puzzled, long shadows of the temple, mysterious mood",
+     "type": "art"
+    },
+    "vo": "Aur sawaal abhi bhi khula hai, itna kata patthar gaya kahan?"
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: the great stone relief of many-armed Ravana shaking a mountain, seen in deep shadow inside the temple wall, divine figures above shown small and distant as carvings, a scholar's torch beam on the stone",
+     "type": "art"
+    },
+    "vo": "Twist yeh, Ravana ki Kailash hilaati murti shayad baad mein bani. Dhavalikar ise baad ka maante hain, kuch itihaaskaar shuru ka."
+   },
+   {
+    "facts_used": [
+     2,
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a modern pilgrim family standing at the cliff edge above the Kailasa temple, looking down in awe at the whole temple below their feet, green monsoon hills, bright hopeful light",
+     "type": "art"
+    },
+    "vo": "Aaj aap Ellora jaakar upar chattan se jhaankiye. Poora mandir aapke pairon ke neeche dikhega."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a grandmother and a child sitting on temple steps at sunset, the child looking up at the carved towers with a curious face, warm golden light",
+     "type": "art"
+    },
+    "vo": "Aapko kya lagta hai, yeh mandir ek raja ne banaya ya kai peedhiyon ne?"
+   }
+  ],
+  "thumbnail": {
+   "scene": "THE STONECUTTER stares up from the bottom of a deep rock trench at the giant carved temple towering above him, chisel in hand, eyes wide, mouth open",
+   "words": [
+    "2 LAKH TON",
+    "GAYAB"
+   ]
+  },
+  "title": "Ellora ka *Kailasa*, upar se neeche kaise? 🤯"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  9.73,
+  17.9,
+  27.99,
+  35.52,
+  42.81,
+  48.34,
+  56.03,
+  63.0,
+  67.49,
+  76.82,
+  83.95
+ ],
  "topic": {
   "allowed_sources": [
    "asi.nic.in",
    "en.wikipedia.org",
-   "odishatourism.gov.in",
    "UNESCO whc.unesco.org"
   ],
   "hooks": [
-   "Konark mandir ke upar 52 ton ka chumbak tha?",
-   "Jahaaz Konark ke paas kyon bhatakte the?",
-   "Surya mandir ka pahiya ghadi hai?"
+   "Ek hi chattan se 2 lakh ton patthar hataya gaya?",
+   "Mandir upar se neeche kyon banaya?",
+   "Kailasa 18 saal mein ya 200 saal mein?"
   ],
-  "id": "konark-magnet",
-  "notes": "Magnet story is disputed/legend; the sundial wheel is documented.",
-  "place": "Konark, Odisha",
-  "sheet": {
-   "facts": [
-    {
-     "label": "legend",
-     "number": 52.0,
-     "quote": "There is a lodestone at the top of the temple was said to be a massive 52 ton magnet. According to legend, the statue of the Sun God inside the temple was built of a material with iron content and was said to be floating in air, without any physical support...",
-     "source_date": "2026",
-     "source_name": "Odisha Tourism / Popular Folklore",
-     "source_url": "https://odishatourism.gov.in",
-     "text": "A popular maritime folklore alleges that a colossal 52-tonne lodestone magnet was installed atop the Konark temple tower, suspending the central iron-bearing idol in mid-air.",
-     "unit": "tonnes"
-    },
-    {
-     "label": "legend",
-     "number": null,
-     "quote": "To save their trade and their ships, the Portuguese sailors destroyed the temple and took away the lodestone.",
-     "source_date": "1908",
-     "source_name": "Bengal District Gazetteers: Puri",
-     "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
-     "text": "According to regional tales, Portuguese trading vessels had their magnetic compasses disoriented and were pulled onto shallow reefs until mariners raided the temple and hauled the apex magnet away.",
-     "unit": null
-    },
-    {
-     "label": "archaeology",
-     "number": 10.0,
-     "quote": "Supported by iron beams, the architraves were of chlorite and had their front faces sculptured.",
-     "source_date": "1968",
-     "source_name": "Archaeological Survey of India (Debala Mitra)",
-     "source_url": "https://asi.nic.in",
-     "text": "Archaeological analysis shows that medieval builders supported the corbelled stone ceilings of the porch with forged wrought-iron beams extending up to 10 metres in length.",
-     "unit": "metres"
-    },
-    {
-     "label": "archaeology",
-     "number": null,
-     "quote": "There are various explanations offered regarding what led to the collapse of the rekha deul or sanctuary at Konarak... while numerous legends have been fabricated or greatly embellished.",
-     "source_date": "2003",
-     "source_name": "Archaeological Survey of India",
-     "source_url": "https://asi.nic.in",
-     "text": "Official archaeological excavation and structural survey records maintain that no physical evidence, lodestone fragments, or epigraphical proof of any summit magnet have ever been discovered at the site.",
-     "unit": null
-    },
-    {
-     "label": "archaeology",
-     "number": 1903.0,
-     "quote": "Bourdillon, ordered the temple to be sealed and filled with sand to prevent the collapse of the Jagamohana. The Mukhasala and Nata Mandir were repaired by 1905.",
-     "source_date": "1905",
-     "source_name": "Archaeological Survey of India",
-     "source_url": "https://asi.nic.in",
-     "text": "In 1903 CE, British colonial administrators sealed all entryways and packed the interior of the surviving Jagamohana hall with sand to arrest structural collapse.",
-     "unit": "CE"
-    },
-    {
-     "label": "disputed",
-     "number": null,
-     "quote": "Some of the theories include the subsidence of the foundation, a shock of earthquake or lightning, raising doubt if the temple was ever completed. It appears that the structure disintegrated gradually, the beginning of the decay initiated by the desecration of the temple.",
-     "source_date": "2005",
-     "source_name": "Archaeological Survey of India / K. S. Behera",
-     "source_url": "https://asi.nic.in",
-     "text": "Structural engineers and historians disagree on whether the sanctum tower collapsed because of engineering failure and foundation subsidence on soft sand, or due to external military invasions and natural cyclones.",
-     "unit": null
-    },
-    {
-     "label": "archaeology",
-     "number": 1676.0,
-     "quote": "This temple was called the 'Black Pagoda' in European sailor accounts as early as 1676 because it looked like a great tiered tower which appeared black.",
-     "source_date": "1911",
-     "source_name": "The Diaries of Sir Streynsham Master",
-     "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
-     "text": "European navigation logs applied the term Black Pagoda to the dark silhouette of the Konark temple tower as early as 1676 CE to distinguish it from the white-plastered Jagannath temple at Puri.",
-     "unit": "CE"
-    },
-    {
-     "label": "disputed",
-     "number": null,
-     "quote": "Konark temple was initially built on the sea bank but now the sea has receded... European sailors referred to it as the 'Black Pagoda' due to its dark colour and its magnetic power that drew ships into the shore and caused shipwrecks.",
-     "source_date": "1908",
-     "source_name": "Bengal District Gazetteers: Puri / Marine Hydrography",
-     "source_url": "https://asi.nic.in",
-     "text": "Maritime legends attribute historical shipwrecks off the Konark coast to magnetic pull, whereas hydrographers demonstrate that coastal shoals, shallow sandbanks, and shifting currents caused vessel groundings.",
-     "unit": null
-    },
-    {
-     "label": "archaeology",
-     "number": 8.0,
-     "quote": "The 12 wheels reflect the 12 months of the year, while the 8 spokes represent the day's eight prahars... The spokes of the wheel form a sundial, and the shadow cast by these wheels aids in calculating the exact time of day.",
-     "source_date": "2026",
-     "source_name": "Odisha Tourism",
-     "source_url": "https://odishatourism.gov.in",
-     "text": "Each sundial wheel features 8 major spokes that divide daytime hours into traditional three-hour intervals known as prahars.",
-     "unit": "count"
-    },
-    {
-     "label": "archaeology",
-     "number": 3.0,
-     "quote": "Each wheel has eight spokes - each representing a Prahar. 1 prahar is 3 hours. Each prahar has 60 dots each representing 3 minutes time span.",
-     "source_date": "2024",
-     "source_name": "Odisha Tourism / ASI Documentation",
-     "source_url": "https://odishatourism.gov.in",
-     "text": "Carved relief beads on the rims of the wheels permit astronomical time-telling accurate to increments of roughly 3 minutes.",
-     "unit": "count"
-    },
-    {
-     "label": "scripture",
-     "number": 12.0,
-     "quote": "According to the scriptures, Samba, the son of Krishna, was cursed with leprosy... Samba underwent penance for 12 years in Mitravana near the shores of Chandrabhaga.",
-     "source_date": "c. 800-1100 CE",
-     "source_name": "Samba Purana, Bhavishya Purana",
-     "source_url": "https://en.wikipedia.org/wiki/Samba_Purana",
-     "text": "Puranic scriptures relate that Krishna's son Samba performed severe penance for 12 years in the solar forest of Mitravana along the Chandrabhaga river to obtain healing from a debilitating affliction.",
-     "unit": "years"
-    },
-    {
-     "label": "legend",
-     "number": 1200.0,
-     "quote": "King Narasimhadeva I... built this temple, with the help of 1200 artisans within a period of 12 years... The tragic sacrifice of the 12-year-old boy Dharmapada.",
-     "source_date": "1989",
-     "source_name": "Temple Legends of Orissa",
-     "source_url": "https://odishatourism.gov.in",
-     "text": "A celebrated Odia legend recounts that the twelve-year-old prodigy Dharmapada leapt into the sea from the temple spire to shield 1200 craftsmen from royal punishment.",
-     "unit": "count"
-    }
-   ],
-   "summary": "Popular legend claims the Konark Sun Temple once housed a 52-tonne summit magnet that held a floating solar idol in suspension and pulled passing European merchant ships to their destruction. Archaeological excavations revealed massive forged wrought-iron beams supporting the corbelled ceilings and 24 monumental chariot wheels functioning as astronomical sundials, but discovered no trace of a giant summit lodestone. Scholars and engineers remain divided over whether the main sanctuary tower fell due to structural subsidence on shifting coastal sandbanks or collapsed as a consequence of medieval raids and severe cyclonic storms. It remains unknown whether historical mariners were misled by the temple's dark coastal silhouette amid treacherous underwater shallows, or if localized iron content in the stone gave rise to magnetic folklore."
-  },
+  "id": "kailasa-ellora",
+  "look": "indian-comic",
+  "notes": "Rashtrakuta period; the '18 years' claim is legend; volumes are estimates.",
+  "place": "Ellora, Maharashtra",
   "target_minutes": null,
-  "title_hi": "Konark ka chumbak"
+  "title_hi": "Ellora ka Kailasa mandir, upar se neeche",
+  "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-22T19:08:28+00:00",
- "writer": ""
+ "updated": "2026-10-23T13:35:37+00:00",
+ "writer": "claude"
 }
