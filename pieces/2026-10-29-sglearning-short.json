@@ -1,0 +1,27 @@
+{
+ "channel": "sglearning",
+ "facts": [],
+ "id": "2026-10-29-sglearning-short",
+ "ids": {},
+ "kind": "short",
+ "publish_day": "2026-10-29",
+ "reasons": [
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+ ],
+ "script": null,
+ "status": "failed-research",
+ "timings": [],
+ "topic": {
+  "link": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-eyes-30-million-tonnes-fish-output-in-5-years-seafood-exports-of-rs-1-25-lakh-crore/articleshow/135146993.cms",
+  "published": "2026-10-23T13:27:17+00:00",
+  "rank": 3,
+  "source": "ET Economy",
+  "summary": "India has initiated a national action plan for inland small-scale fisheries to increase fish production. The plan aims to achieve a target of 30 million tonnes over the next five years. It will focus on improving livelihoods and sustainability amid climate change challenges. Stakeholder consultations will be conducted to finalise the plan, which covers diverse aquatic ecosystems.",
+  "target_minutes": null,
+  "title": "India eyes 30 million tonnes fish output in 5 years, seafood exports of Rs 1.25 lakh crore"
+ },
+ "updated": "2026-10-23T14:01:48+00:00",
+ "writer": ""
+}
