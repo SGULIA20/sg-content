@@ -1,0 +1,35 @@
+name: draw-cast
+
+# One-off per style change: draws the recurring cast once per channel in that channel's picture style (assets/cast/<channel>/)
+# and commits the drawings to the branch it was started on, so the founder can see them before the new look goes live.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install Python packages
+        run: pip install -r requirements.txt
+      - name: Draw the cast for both channels
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python -m engine.cast --channel sglearning
+          python -m engine.cast --channel arthvan
+      - name: Commit the drawings to this branch
+        run: |
+          git config user.name "sg-content-bot"
+          git config user.email "sg-content-bot@users.noreply.github.com"
+          git add -f assets/cast/sglearning assets/cast/arthvan assets/cast/.cache
+          git diff --cached --quiet || git commit -m "cast drawn in each channel's picture style [skip ci]"
+          git push origin HEAD:${{ github.ref_name }}
