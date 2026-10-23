@@ -51,7 +51,7 @@ line here (who, date) in the same change. Newest first.
   Waypoint PR #1 stays unmerged; do not merge or re-propose unless the founder asks.
 - Google Play service account (review replies, crash watch): later, founder's call (23 Oct 2026).
 - LinkedIn re-login reminder on Telegram: not wanted (founder, 23 Oct 2026). Do not build it.
-- Moving the app Reel production off the Mac: the founder does this himself, starting 23 Oct 2026 evening.
+- Moving the app Reel production off the Mac: the founder takes this on, starting 23 Oct 2026 evening.
 - Exact clock: built and running in Supabase (command.clock); it starts jobs once `GITHUB_TOKEN` is added to the sg-command function.
 
 ## Control room (phone)
