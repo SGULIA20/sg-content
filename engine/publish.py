@@ -64,7 +64,8 @@ def threads_text(piece) -> str:
 
 
 def run(root: Path = ROOT, channel: str = "sglearning", now_utc: datetime | None = None, env=None,
-        ig_publish=instagram.publish_piece, threads_post=threads.post_video, linkedin_post=linkedin.post_video, notify=telegram.send, check_media: bool = False) -> int:
+        ig_publish=instagram.publish_piece, threads_post=threads.post_video, linkedin_post=linkedin.post_video, notify=telegram.send, check_media: bool = False,
+        threads_poll=None, long_links=None) -> int:
     now_utc = now_utc or datetime.now(timezone.utc)
     env = os.environ if env is None else env
     if telegram.paused(root):
@@ -84,12 +85,20 @@ def run(root: Path = ROOT, channel: str = "sglearning", now_utc: datetime | None
                 from . import secrets
                 repo = env.get("GITHUB_REPOSITORY") or instagram.DEFAULT_REPO
                 piece.ids["threads_id"] = threads_post(secrets.get("THREADS_USER_ID", env), secrets.get("THREADS_ACCESS_TOKEN", env),
-                                                       (instagram.resolved_media_url if check_media else instagram.media_url)(piece, "reel.mp4", repo), threads_text(piece))
+                                                       (instagram.resolved_media_url if check_media else instagram.media_url)(piece, "reel.mp4", repo), threads_text(piece),
+                                                       topic_tag=threads.TOPIC_TAGS.get(piece.channel, ""))
                 pieces.save(piece, root)
             except (ThreadsError, Exception) as e:
                 problems.append(f"{piece.id}: threads: {e}")
                 pieces.transition(piece, piece.status, f"threads: {str(e)[:200]}"); pieces.save(piece, root)
                 continue
+        if threads_poll and piece.ids.get("threads_id") and not piece.ids.get("threads_poll_id"):
+            try:                                                            # a bonus: never holds a piece back from "posted"
+                from . import secrets
+                piece.ids["threads_poll_id"] = threads_poll(secrets.get("THREADS_USER_ID", env), secrets.get("THREADS_ACCESS_TOKEN", env), piece.ids["threads_id"])
+            except Exception as e:
+                piece.ids["threads_poll_id"] = f"skipped: {str(e)[:120]}"            # tried once; not retried every run
+            pieces.save(piece, root)
         if "linkedin_id" in need and not piece.ids.get("linkedin_id"):
             try:
                 from . import secrets
@@ -105,6 +114,8 @@ def run(root: Path = ROOT, channel: str = "sglearning", now_utc: datetime | None
             pieces.save(pieces.transition(piece, "posted"), root)
             posted.append(piece.id)
         gitsync.safe_commit(root, f"publish: {piece.id} {piece.status}")
+    if long_links is not None:
+        problems += long_links(root, channel, now_utc, env)                  # each public Short points to the long video (founder, 23 Oct 2026)
     text = f"SG Content publish {channel} {slots.ist(now_utc).strftime('%Y-%m-%d %H:%M')} IST: posted {len(posted)}"
     for pid in posted:
         text += f"\n  + {pid}"
@@ -124,7 +135,8 @@ def main(argv=None) -> int:
     a = ap.parse_args(argv)
     telegram.poll_commands(status_fn=lambda: digest.status_line(ROOT))
     try:
-        return run(ROOT, a.channel, check_media=True)               # production: every media URL is verified on GitHub first
+        from . import ytlink
+        return run(ROOT, a.channel, check_media=True, threads_poll=threads.post_poll, long_links=ytlink.run)   # production: every media URL is verified on GitHub first
     except Exception as e:
         traceback.print_exc()
         telegram.send(f"publish {a.channel} crashed: {type(e).__name__}: {str(e)[:200]}")

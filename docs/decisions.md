@@ -32,6 +32,14 @@ line here (who, date) in the same change. Newest first.
 - **No duplicates.** A piece is made once per publish slot (`pieces/<day>-<channel>-<kind>.json`); finished pieces are never remade; each platform is posted once per piece (its id is stored before the next platform is tried).
 - Claude writes every script; Gemini is only the fallback, and a fallback is recorded on the piece. (founder, 20 Oct 2026)
 
+## Engagement (founder, 23 Oct 2026)
+- Each public Short gets a channel comment and a description line pointing to the channel's newest public long video (engine/ytlink.py).
+  YouTube's API cannot pin a comment; pinning is the founder's optional tap.
+- Threads video posts carry a topic tag (Personal Finance / Indian Mythology) and one poll under them: "Pehle se pata tha / Aaj pata chala".
+- Instagram captions ask "Comment karein APP"; engine/commentdm.py answers each such comment once by DM with the Play link
+  (ScoreMyBiz for Learning with SG, Waypoint for SG-MYTH-WORLD). Needs the messaging permission on the Instagram token.
+- The weekly "what's working" report is report-only; nothing changes topics or posting on its own without the founder's yes.
+
 ## Reporting
 - All times told to the founder are in **WAT (Lagos)**. (founder, 22 Oct 2026)
 - The control room's live status refreshes on its own every 30 seconds. (founder, 22 Oct 2026)

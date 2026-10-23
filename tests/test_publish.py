@@ -57,7 +57,7 @@ def test_posted_when_all_ids_present(tmp_path):
         piece.ids.update({"ig_reel_id": "r1", "ig_story_id": "s1"}); return piece
 
     sent = []
-    code = publish.run(tmp_path, "sglearning", NOW, ENV, ig_publish=ig_publish, threads_post=lambda uid, tok, url, text: "th1", notify=lambda t: sent.append(t) or True)
+    code = publish.run(tmp_path, "sglearning", NOW, ENV, ig_publish=ig_publish, threads_post=lambda uid, tok, url, text, **k: "th1", notify=lambda t: sent.append(t) or True)
     q = pieces.load(p.id, tmp_path)
     assert code == 0 and q.status == "posted" and q.ids["threads_id"] == "th1"
     assert sent and "posted 1" in sent[0]
@@ -107,7 +107,7 @@ def _ig_ok(root):
 def test_linkedin_skipped_when_unconfigured(tmp_path):
     p = _seed(tmp_path, "2026-10-20-sglearning-short", "sglearning", "short", date(2026, 10, 20))
     li = []
-    publish.run(tmp_path, "sglearning", NOW, ENV, ig_publish=_ig_ok(tmp_path), threads_post=lambda *a: "th1",
+    publish.run(tmp_path, "sglearning", NOW, ENV, ig_publish=_ig_ok(tmp_path), threads_post=lambda *a, **k: "th1",
                 linkedin_post=lambda *a: li.append(a) or "x", notify=lambda t: True)
     q = pieces.load(p.id, tmp_path)
     assert li == [] and q.status == "posted" and "linkedin_id" not in q.ids
@@ -117,7 +117,7 @@ def test_linkedin_posts_reel_file_with_text(tmp_path, monkeypatch):
     monkeypatch.setattr(config, "LINKEDIN_VIDEOS", True)               # the capability stays tested; production runs with it off (founder, 22 Oct 2026)
     p = _seed(tmp_path, "2026-10-20-sglearning-short", "sglearning", "short", date(2026, 10, 20))
     li = []
-    publish.run(tmp_path, "sglearning", NOW, LI_ENV, ig_publish=_ig_ok(tmp_path), threads_post=lambda *a: "th1",
+    publish.run(tmp_path, "sglearning", NOW, LI_ENV, ig_publish=_ig_ok(tmp_path), threads_post=lambda *a, **k: "th1",
                 linkedin_post=lambda *a: li.append(a) or "urn:li:share:9", notify=lambda t: True)
     q = pieces.load(p.id, tmp_path)
     assert q.status == "posted" and q.ids["linkedin_id"] == "urn:li:share:9"
@@ -135,13 +135,13 @@ def test_linkedin_failure_recorded_then_retried_without_reposting(tmp_path, monk
         from engine.linkedin import LinkedInError
         raise LinkedInError("HTTP 500: nope")
 
-    publish.run(tmp_path, "sglearning", NOW, LI_ENV, ig_publish=ig, threads_post=lambda *a: th.append(a) or "th1", linkedin_post=bad, notify=lambda t: True)
+    publish.run(tmp_path, "sglearning", NOW, LI_ENV, ig_publish=ig, threads_post=lambda *a, **k: th.append(a) or "th1", linkedin_post=bad, notify=lambda t: True)
     q = pieces.load(p.id, tmp_path)
     assert q.status == "uploaded" and q.ids["threads_id"] == "th1" and "linkedin" in q.reasons[-1] and "linkedin_id" not in q.ids
     assert [x.id for x in publish.due(tmp_path, NOW, "sglearning", LI_ENV)] == [p.id]
     assert publish.due(tmp_path, NOW, "sglearning", ENV) == []                 # without LinkedIn configured nothing is missing
     li = []
-    publish.run(tmp_path, "sglearning", NOW, LI_ENV, ig_publish=ig, threads_post=lambda *a: th.append(a) or "th2",
+    publish.run(tmp_path, "sglearning", NOW, LI_ENV, ig_publish=ig, threads_post=lambda *a, **k: th.append(a) or "th2",
                 linkedin_post=lambda *a: li.append(a) or "urn:li:share:9", notify=lambda t: True)
     q = pieces.load(p.id, tmp_path)
     assert q.status == "posted" and q.ids["linkedin_id"] == "urn:li:share:9" and len(li) == 1
@@ -152,11 +152,11 @@ def test_existing_linkedin_id_is_never_posted_again(tmp_path):
     p = _seed(tmp_path, "2026-10-20-sglearning-short", "sglearning", "short", date(2026, 10, 20),
               ids={"linkedin_id": "urn:li:share:1"})
     li = []
-    publish.run(tmp_path, "sglearning", NOW, LI_ENV, ig_publish=_ig_ok(tmp_path), threads_post=lambda *a: "th1",
+    publish.run(tmp_path, "sglearning", NOW, LI_ENV, ig_publish=_ig_ok(tmp_path), threads_post=lambda *a, **k: "th1",
                 linkedin_post=lambda *a: li.append(a) or "x", notify=lambda t: True)
     q = pieces.load(p.id, tmp_path)
     assert li == [] and q.status == "posted" and q.ids["linkedin_id"] == "urn:li:share:1"
-    publish.run(tmp_path, "sglearning", NOW, LI_ENV, ig_publish=_ig_ok(tmp_path), threads_post=lambda *a: "th1",
+    publish.run(tmp_path, "sglearning", NOW, LI_ENV, ig_publish=_ig_ok(tmp_path), threads_post=lambda *a, **k: "th1",
                 linkedin_post=lambda *a: li.append(a) or "x", notify=lambda t: True)
     assert li == []
 
@@ -171,7 +171,7 @@ def test_instagram_failure_still_posts_threads(tmp_path):
         raise PartialPublish("story container failed with status ERROR (already live: ['reel'])")
 
     th = []
-    code = publish.run(tmp_path, "sglearning", NOW, ENV, ig_publish=ig_publish, threads_post=lambda *a: th.append(a) or "th1", notify=lambda t: True)
+    code = publish.run(tmp_path, "sglearning", NOW, ENV, ig_publish=ig_publish, threads_post=lambda *a, **k: th.append(a) or "th1", notify=lambda t: True)
     q = pieces.load(p.id, tmp_path)
     assert code == 0 and th and q.ids["threads_id"] == "th1" and q.ids["ig_reel_id"] == "r1"
     assert q.status == "uploaded"                                    # the Story is still missing: the next run retries it
