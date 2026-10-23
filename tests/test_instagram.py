@@ -163,3 +163,13 @@ def test_a_refused_trial_reel_falls_back_to_a_normal_reel(tmp_path):
     p = instagram.publish_piece(_piece(), {"IG_ACCESS_TOKEN": "t", "IG_USER_ID": "u", "GITHUB_REPOSITORY": "r"}, call=fc, sleep=lambda s: None, root=tmp_path)
     reel = next(c for c in fc.calls if (c[2] or {}).get("media_type") == "REELS")
     assert reel[2]["share_to_feed"] == "true" and p.ids["ig_reel_id"] and p.ids["ig_trial"].startswith("no")
+
+
+def test_mp4_length_is_read_from_the_file_header_without_ffprobe(tmp_path):
+    import struct
+    mvhd = b"mvhd" + bytes([0, 0, 0, 0]) + struct.pack(">II", 0, 0) + struct.pack(">II", 1000, 91267)   # version 0: timescale, duration
+    f = tmp_path / "story.mp4"
+    f.write_bytes(b"\x00\x00\x00\x20ftypisom" + b"\x00" * 16 + b"\x00\x00\x00\x6cmoov\x00\x00\x00\x64" + mvhd + b"\x00" * 80)
+    assert abs(instagram.mp4_seconds(f) - 91.267) < 0.001 and instagram._too_long_for_story(f)
+    (tmp_path / "stub.mp4").write_bytes(b"x")
+    assert instagram.mp4_seconds(tmp_path / "stub.mp4") is None and not instagram._too_long_for_story(tmp_path / "stub.mp4")
