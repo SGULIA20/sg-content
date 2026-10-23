@@ -127,7 +127,10 @@
  "kind": "short",
  "publish_day": "2026-10-29",
  "reasons": [
-  "crashed: GeminiError: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+  "crashed: GeminiError: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
  ],
  "script": {
   "captions": {
@@ -340,27 +343,24 @@
   },
   "title": "Konark ke upar *chumbak* ya kahani? 🤯"
  },
- "status": "failed-crash",
+ "status": "failed-research",
  "timings": [],
  "topic": {
   "allowed_sources": [
-   "asi.nic.in",
    "en.wikipedia.org",
-   "odishatourism.gov.in",
-   "UNESCO whc.unesco.org"
+   "tourism.rajasthan.gov.in"
   ],
   "hooks": [
-   "Konark mandir ke upar 52 ton ka chumbak tha?",
-   "Jahaaz Konark ke paas kyon bhatakte the?",
-   "Surya mandir ka pahiya ghadi hai?"
+   "25,000 chuhe aur ek bhi bimari nahi?",
+   "Safed chuha dikha to kya hota hai?",
+   "Chuhe mandir ke bahar kyon nahi jaate?"
   ],
-  "id": "konark-magnet",
-  "notes": "Magnet story is disputed/legend; the sundial wheel is documented.",
-  "place": "Konark, Odisha",
+  "id": "karni-mata-rats",
+  "notes": "Give the hygiene question an honest answer (no verified study either way) and label it.",
+  "place": "Deshnoke, Rajasthan",
   "target_minutes": null,
-  "title_hi": "Konark ka chumbak",
-  "voice": "voice_1kn3blc2u13l"
+  "title_hi": "Karni Mata, 25,000 chuhon ka mandir"
  },
- "updated": "2026-10-23T13:58:32+00:00",
+ "updated": "2026-10-23T14:01:32+00:00",
  "writer": "claude"
 }
