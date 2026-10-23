@@ -1,0 +1,562 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 60.0,
+   "quote": "After 60 continuous months, the moratorium prevents contesting claims for non-disclosure or misrepresentation, except established fraud.",
+   "source_date": "2024-06-21",
+   "source_name": "HDFC ERGO",
+   "source_url": "https://www.hdfcergo.com/blogs/health-insurance/waiting-period-in-pre-existing-diseases",
+   "text": "Following 60 continuous months of coverage, an insurer cannot contest a health insurance claim on grounds of non-disclosure or misrepresentation, except in cases of established fraud.",
+   "unit": "months"
+  }
+ ],
+ "id": "2026-11-07-sglearning-long",
+ "ids": {
+  "captions": {
+   "en": "AUieDab8wxG1esegPLhz_fnghPgGB1rH6nL7KuZ8jixmJ7Sxbnkfnost",
+   "gu": "AUieDaZzjQCG-eDTc_1b8lyBh2oa7Jn2YFQIPmP4uehgeX4yflHx8RkcPj14s-mjKM7Go6K8Gi4",
+   "hi": "AUieDaYU4hBJxemvLOWI_AkKLFYinCJkF_3VX__LUVogOmA168EKzkEob3kdo6GJNBJVEY0",
+   "mr": "AUieDaZCWaT0ki9NAywmH6vm8smD66b9G27guOer0lSVV3VwbiN0yeKA5N-1fg0l2Hc",
+   "ta": "AUieDaam8UTanJ3lS4ZxLVALmUD19g-LRvUAJR7iGCW_zYukGvqIYCbOQwk38SO2nk0"
+  },
+  "yt_id": "WxehCuJw-aI"
+ },
+ "kind": "long",
+ "publish_day": "2026-11-07",
+ "reasons": [
+  "try 1: numbers without a source: 11, 11, 11, 11",
+  "try 2: advice: bech do"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Insurance tha, phir bhi bill aapki jeb se? 🏥\nRoom rent limit ka ek faisla poore claim ko kaat sakta hai.\nPurani bimari chhupayi, toh claim reject. Aur naukri gayi, toh office ka cover bhi gaya.\nAapki policy mein room rent limit hai ya nahi?\nYeh investment advice nahi hai.\nShare karo us dost ko jo sirf office ke insurance ke bharose baitha hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#MoneyTipsHindi",
+     "#HinglishFinance",
+     "#PersonalFinanceIndia",
+     "#LearningWithSG",
+     "#IncomeTax"
+    ]
+   },
+   "threads": {
+    "text": "Health insurance tha, premium bhi bhara, phir bhi discharge par bill ka bada hissa khud bharna pada. Wajah: room rent limit aur proportionate deduction. Aapki policy mein room rent limit hai ya nahi? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Discharge counter ka jhatka",
+     "00:00 Room rent ka chhota print",
+     "00:00 Waiting period aur purani bimari",
+     "00:00 Office ka insurance kaafi hai?",
+     "00:00 Galti aur ab kya karein"
+    ],
+    "description": "Insurance tha, premium bhara tha, phir bhi hospital ne bill thama diya. Room rent limit, waiting period, sub-limit aur co-pay jaise chhote print se claim kaise kat-ta hai, ek family ki kahani se samjhiye. Aur jaaniye kyun sirf office ka insurance kaafi nahi hai. Us bhai ko bhejo jo kehta hai office wala insurance hai na, alag policy ki kya zaroorat.",
+    "tags": [
+     "health insurance",
+     "claim reject",
+     "room rent limit",
+     "waiting period",
+     "pre existing disease",
+     "co-pay",
+     "sub-limit",
+     "cashless claim",
+     "reimbursement",
+     "group insurance",
+     "moratorium",
+     "IRDAI",
+     "hinglish finance",
+     "personal finance india"
+    ],
+    "title": "Health Insurance Claim Reject? 60 mahine ka rule"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "60 mahine",
+    "line": "Lagaataar policy ke baad non-disclosure par claim par sawaal nahi, saabit dhokhe ko chhod kar",
+    "source": "HDFC ERGO"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Aapki health policy mein room rent limit hai ya nahi?",
+  "hook": "Aapke paas health insurance hai, phir bhi hospital ka bill aapko khud bharna pad sakta hai.",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "Discharge counter ka jhatka",
+    "visual": {
+     "card": null,
+     "prompt": "Night at a busy Indian hospital discharge counter, BHAI in hoodie holding a thick file, a billing clerk behind the counter looking at a computer screen with an apologetic face, PAPA in a wheelchair behind him smiling weakly, warm tube lights, wide 16:9 panel",
+     "type": "art"
+    },
+    "vo": "Raat ho chuki hai, hospital ka discharge counter. Papa ki surgery theek se ho gayi, sab ke chehre par sukoon hai. Bhai file lekar counter par khada hai. Billing wale bhaiya screen dekhte hain, aur dheere se kehte hain, insurance ne claim ka bada hissa kaat diya hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Hospital corridor at night, BHAI confused holding a printed bill, MUMMY in saree clutching her dupatta with worried eyes, WIFE looking at her phone screen with a tense face, plastic chairs and a water cooler in the background",
+     "type": "art"
+    },
+    "vo": "Bhai ko samajh nahi aata. Policy toh thi, premium har saal time par bhara. Phir yeh kat kaise gaya? Mummy ki aankhon mein chinta hai. Wife phone par account ka balance dekh rahi hai. Jo paisa SIP ke liye rakha tha, ab wahi hospital ko jayega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Long queue of different Indian families at several hospital billing windows, each person holding papers with tired faces, seen from above, late evening light",
+     "type": "art"
+    },
+    "vo": "Yeh kahani sirf is ghar ki nahi hai. Bahut saare insured parivaar discharge ke waqt yahi jhatka khaate hain. Wajah aksar koi dhokha nahi hota. Wajah hoti hai policy ka chhota print, jo humne kabhi padha hi nahi. Aur woh print bilkul saaf likha hota hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG, early forties, beard, striped shirt, sitting at a wooden table with an open insurance policy booklet and a magnifying glass, looking at the viewer calmly, soft lamp light, study room",
+     "type": "art"
+    },
+    "vo": "Toh aaj is chhote print ko line by line khol kar padhte hain. Pehla sawaal, kya room rent ki limit se poora claim kat sakta hai? Doosra sawaal, waiting period mein kya nahi milta? Aur aakhri sawaal, kya office ka insurance kaafi hai?"
+   },
+   {
+    "facts_used": [],
+    "label": "Room rent ka chhota print",
+    "visual": {
+     "card": null,
+     "prompt": "Hospital emergency reception at night, PAPA in kurta holding his chest on a stretcher, BHAI talking to a receptionist, a doctor in a white coat in the background, urgent mood",
+     "type": "art"
+    },
+    "vo": "Chaliye kahani ko peeche le chalte hain. Papa ko seene mein dard hua, raat ko emergency mein le gaye. Doctor ne kaha, admit karna padega, surgery hogi. Reception par sawaal aaya, kaunsa kamra chahiye? General ward, shared room, ya private room?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI confidently pointing towards a bright private hospital room with a sofa and TV, receptionist nodding, MUMMY looking relieved, night",
+     "type": "art"
+    },
+    "vo": "Bhai ne ek second nahi socha. Usne kaha, private room do, Papa ko aaram chahiye. Logic seedha tha. Insurance hai na, bill toh company bharegi. Papa ki sehat par kanjoosi kyun karein? Us waqt yeh faisla pyaar jaisa lagta hai, galti jaisa bilkul nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Close view of an open insurance policy booklet on a hospital bedside table, one page highlighted with a yellow marker, a cup of chai beside it, no readable text, soft morning light",
+     "type": "art"
+    },
+    "vo": "Ab policy ka woh page dekhiye jo kisi ne nahi padha. Usme likha tha room rent limit. Room rent limit yaani company ek din ke kamre ka jitna kiraya maanegi, bas utna hi. Usse mehenga kamra liya, toh fark aap bharoge. Yahan tak baat samajh aati hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A long hospital bill drawn like a scroll unrolling across the floor, scissors cutting several sections of it, BHAI watching in shock, dramatic light",
+     "type": "art"
+    },
+    "vo": "Asli jhatka agla hai, jise kehte hain proportionate deduction. Proportionate deduction yaani kamra jitne guna mehenga, baaki bill bhi usi hisaab se katega. Sirf kiraya nahi, doctor ki fees, nursing, operation theatre ke charges, sab usi anupaat mein kat jaate hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Split panel: a small simple hospital room on the left and a large luxury private room on the right, a balance scale in the middle tilting heavily, BHAI standing confused in between",
+     "type": "art"
+    },
+    "vo": "Kyunki hospital mehenge kamre ke saath har service ka rate bhi badha deta hai. Bade kamre ka patient, bada package. Company kehti hai, humne chhote kamre ka wada kiya tha. Toh hum har cheez chhote kamre ke rate se denge. Isi liye ek kamre ke faisle ne poora bill kha liya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A hospital tray piled with gloves, masks, syringes and cotton rolls, a nurse placing more on it, WIFE watching with raised eyebrows, clinical white light",
+     "type": "art"
+    },
+    "vo": "Phir aaya doosra jhatka, consumables. Consumables yaani gloves, mask, syringe, cotton jaisi cheezein, jo ek baar use hokar fenk di jaati hain. Kai policies inhe cover hi nahi karti. Bill mein inki lambi list hoti hai, aur har line aapki jeb se jaati hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A big umbrella labelled with no text protecting a family, but a small low glass ceiling over one elderly patient with a bandaged knee and eye patch, symbolic illustration, calm colours",
+     "type": "art"
+    },
+    "vo": "Teesra jhatka, sub-limit. Sub-limit yaani kuch khaas ilaaj par company ne alag se ek chhat bana di hai. Jaise motiyabind ka operation, ya ghutne ki surgery. Aapka total cover bada ho sakta hai, par us ilaaj ke liye sirf chhat tak hi paisa milega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA in kurta at a billing counter slowly counting cash from an envelope, BHAI beside him looking guilty, late night, dim light",
+     "type": "art"
+    },
+    "vo": "Aur chautha, co-pay. Co-pay yaani har claim mein ek tay hissa aap khud bharoge, chahe bill kitna bhi ho. Kai policies mein yeh senior citizens ke liye hota hai. Premium thoda kam dikhta hai, isliye log khush hote hain. Par bill ke din yahi hissa bhaari padta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG in striped shirt standing at a hospital reception desk, pointing at a policy booklet and calmly asking a question to the receptionist, daylight",
+     "type": "art"
+    },
+    "vo": "Toh pehle sawaal ka jawab, haan. Ek room rent limit poore claim ko kaat sakti hai. Isliye admit karte waqt hi poochiye, meri policy kaunsa kamra allow karti hai? Kai policies mein room rent limit hoti hi nahi. Apni policy check kijiye, andaza mat lagaiye."
+   },
+   {
+    "facts_used": [],
+    "label": "Waiting period aur purani bimari",
+    "visual": {
+     "card": null,
+     "prompt": "Living room evening, BEHEN in office wear filling a form at the dining table, a smiling insurance agent in a blazer pointing to skip a section, MUMMY in saree sitting nearby with a glucometer on the table",
+     "type": "art"
+    },
+    "vo": "Ab doosra ghar, doosri kahani. Behen ne pichhle saal Mummy ke liye nayi health policy li. Mummy ko sugar hai, BP bhi hai. Form bharte waqt agent ne kaha, chhoti cheezein hain, likhne ki kya zaroorat. Behen ne socha, form jaldi bhar jayega, premium bhi kam aayega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN standing in a hospital corridor holding an opened letter, shocked face, MUMMY on a hospital bed visible through a doorway, afternoon light",
+     "type": "art"
+    },
+    "vo": "Kuch mahine baad Mummy ko hospital jaana pada. Claim gaya, aur wapas aaya ek chitthi ke saath. Claim reject. Wajah likhi thi, pre-existing disease ka waiting period, aur jaankari chhupana. Behen hairaan thi. Policy toh active thi, premium bhi bhara tha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY sitting at a kitchen table with a small box of daily medicines, a BP machine and a glucometer beside her, making chai, gentle morning light",
+     "type": "art"
+    },
+    "vo": "Pehle term samajhiye. Pre-existing disease yaani woh bimari, jo policy lene se pehle hi aapko thi. Jaise sugar, BP, thyroid, ya dil ki koi purani takleef. Company in bimariyon ka kharcha shuru se nahi uthaati. Inke liye ek intezaar ka samay hota hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A long road drawn as a timeline with a closed gate at its start, a family waiting on a bench beside a calendar with pages flying, soft symbolic illustration",
+     "type": "art"
+    },
+    "vo": "Isi intezaar ko kehte hain waiting period. Waiting period yaani policy lene ke baad ka woh samay, jisme kuch claims nahi milte. Ek shuruaati waiting period hota hai, jab accident chhod kar lagbhag kuch nahi milta. Phir kuch khaas bimariyon ka alag waiting period hota hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A government regulator office drawn in a friendly style, an official placing a shorter ruler over a long ruler on a desk, files stacked neatly, daylight",
+     "type": "art"
+    },
+    "vo": "Aur sabse lamba hota hai purani bimariyon ka waiting period. Achhi baat yeh hai ki IRDAI ne iski upar ki seema kam kar di hai. IRDAI yaani insurance companies ka regulator, jo unke niyam banata hai. Phir bhi har policy ka apna samay hota hai, jo uske kaagazon mein likha hota hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Close view of a form on a table with one blank section, BEHEN's hand hesitating with a pen above it, shadow of the agent's hand pushing it to skip, dramatic lighting",
+     "type": "art"
+    },
+    "vo": "Ab Behen wali galti dekhiye. Mummy ki bimari form mein chhupa di gayi thi. Toh waiting period ke baad bhi company keh sakti thi, aapne sach nahi bataya. Non-disclosure yaani form mein koi zaroori baat na batana. Yeh claim reject hone ki sabse aam wajah hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "An insurance claims officer in an office opening an old signed form from a thick file, looking carefully with glasses, BEHEN's photo clipped on the file, quiet office afternoon",
+     "type": "art"
+    },
+    "vo": "Agent ki salah us waqt aasaan lagti hai. Premium kam, form chhota, koi medical test nahi. Par yaad rakhiye, claim ke waqt agent nahi, company aapki file padhti hai. Aur company sabse pehle wahi form kholti hai, jo aapne sign kiya tha."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A strong brick wall drawn around a family home, the family sitting safely inside, a calendar on the wall with many torn pages, warm protective mood",
+     "type": "art"
+    },
+    "vo": "Ab ek bada niyam, jise moratorium kehte hain. Moratorium yaani ek suraksha ki deewar. Lagaataar 60 mahine policy chalne ke baad, company non-disclosure ke naam par claim par sawaal nahi utha sakti. Sirf saabit dhokhe ka case alag hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE marking a date on a wall calendar with a red pen, her phone showing a reminder alarm, kitchen in the morning, focused expression",
+     "type": "art"
+    },
+    "vo": "Is niyam mein ek shabd bahut zaroori hai, lagaataar. Agar beech mein policy toot gayi, renew nahi hui, toh ginti shuru se ho sakti hai. Isliye renewal ki date kabhi miss mat kijiye. Auto debit lagaiye, ya calendar mein reminder rakhiye."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG in striped shirt sitting with BEHEN at a table, gently pointing to a form while she writes honestly, MUMMY smiling in the background, evening lamp light",
+     "type": "art"
+    },
+    "vo": "Toh doosre sawaal ka jawab. Waiting period mein purani bimari aur kuch khaas ilaaj ka claim nahi milta. Aur sach chhupaya, toh waiting ke baad bhi claim atak sakta hai. Isliye form mein har bimari likhiye. 60 mahine ki deewar bhi tabhi kaam aati hai, jab policy lagaataar chale."
+   },
+   {
+    "facts_used": [],
+    "label": "Office ka insurance kaafi hai?",
+    "visual": {
+     "card": null,
+     "prompt": "Modern office, BHAI in hoodie at his desk proudly showing a company health card on his phone to colleagues, bright daytime",
+     "type": "art"
+    },
+    "vo": "Teesri kahani, ek office wali. Bhai ki naukri achhi hai, company ne group health insurance diya hai. Group insurance yaani company ki taraf se sab employees ke liye ek saath li gayi policy. Bhai kehta hai, mujhe alag policy ki kya zaroorat, office wala hai na."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI relaxing on a sofa at home with his feet up, PAPA and MUMMY beside him, everyone content, a TV glowing, Sunday afternoon",
+     "type": "art"
+    },
+    "vo": "Uska logic galat nahi lagta. Premium company bharti hai, pehle din se cover milta hai. Kai group policies mein waiting period bhi nahi hota. Kabhi parents bhi saath mein cover ho jaate hain. Bina kuch kiye sab mil raha hai, toh apna paisa kyun lagayein?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI sitting alone on a staircase outside an office building holding a cardboard box of desk items, staring at his phone, grey evening",
+     "type": "art"
+    },
+    "vo": "Phir ek din office se email aaya, restructuring. Bhai ki naukri chali gayi. Salary band hui, aur saath mein health insurance bhi. Group policy naukri ke saath judi hoti hai. Naukri gayi, toh cover bhi usi ke saath khatam. Aksar lamba notice bhi nahi milta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA lying on a hospital bed, BHAI sitting beside him holding empty pockets turned out, worried face, night window behind",
+     "type": "art"
+    },
+    "vo": "Ab sochiye, usi mahine Papa ko phir hospital jaana pade. Na office ka cover, na apni policy. Aur ab nayi policy lene jaayein, toh Papa ki umar aur bimari dekh kar premium bahut zyada hoga. Upar se waiting period phir se shuru."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A single small blanket being pulled by several family members, PAPA, MUMMY and BETI aged 6, while BHAI watches helplessly, symbolic illustration, cool night colours",
+     "type": "art"
+    },
+    "vo": "Doosri dikkat, cover sab mein bat-ta hai. Office ki policy mein aksar ek hi cover poore parivaar ke liye hota hai. Papa ka bada operation ho gaya, toh saal ka cover wahin khatam. Phir Beti beemar padi, toh uske liye kuch nahi bacha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "An elderly man at his retirement farewell holding a bouquet, colleagues clapping, while an office ID card falls from his pocket, bittersweet afternoon",
+     "type": "art"
+    },
+    "vo": "Aur teesri dikkat, retirement. Jis din aap retire hote ho, office ka insurance bhi retire ho jaata hai. Aur bimari ka sabse zyada khatra usi umar mein hota hai. Us waqt nayi policy lena mehenga bhi hai, aur mushkil bhi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG in striped shirt standing beside BHAI, placing a second umbrella over his head next to a smaller office umbrella, light rain, encouraging smile",
+     "type": "art"
+    },
+    "vo": "Toh teesre sawaal ka jawab, nahi. Office ka insurance ek achha bonus hai, par akela kaafi nahi. Apni ek alag policy honi chahiye, jo naukri badalne par bhi saath chale. Aur jitni jaldi lenge, utni jaldi waiting period aur 60 mahine ki ginti shuru hogi."
+   },
+   {
+    "facts_used": [],
+    "label": "Galti aur ab kya karein",
+    "visual": {
+     "card": null,
+     "prompt": "A man in a shop-like insurance office looking only at the big front cover of a brochure, while the thick middle pages hide in shadow, ironic mood, daylight",
+     "type": "art"
+    },
+    "vo": "Ab sabse badi galti ki baat. Hum policy khareedte waqt sirf premium aur cover dekhte hain. Kitna bharna hai, kitna milega. Par claim kat-ta hai un cheezon se, jo beech mein likhi hoti hain. Room rent, sub-limit, co-pay, waiting period."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE and BEHEN at the dining table at night reading a short policy sheet together, one holding a pen and underlining, chai cups beside them, focused faces",
+     "type": "art"
+    },
+    "vo": "Pehla kaam, Customer Information Sheet padhiye. Customer Information Sheet yaani policy ka chhota saar, jisme saari zaroori shartein ek jagah likhi hoti hain. Har company ko yeh deni hoti hai. Isme room rent, co-pay, sub-limit aur har waiting period dekhiye. Pen lekar padhiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A hospital insurance help desk with a friendly staff member taking a health card from BHAI, a handshake symbol between hospital and insurer drawn subtly, daylight",
+     "type": "art"
+    },
+    "vo": "Doosra kaam, cashless aur reimbursement ka fark samjhiye. Cashless yaani bill seedha company aur hospital ke beech settle hota hai. Yeh network hospital mein hota hai. Network hospital yaani woh hospital, jiska company ke saath tie-up hai. Wahan pehle approval lena padta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA in kurta neatly arranging hospital bills and reports into a plastic file folder on a bed, reading glasses on his nose, afternoon light",
+     "type": "art"
+    },
+    "vo": "Reimbursement yaani pehle aap apni jeb se bill bharo, phir kaagaz dekar company se paisa wapas maango. Isme original bills, reports aur discharge summary sambhaal kar rakhni hoti hai. Ek kaagaz kho gaya, toh claim atak sakta hai. Isliye ek alag file banaiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A family waiting at a hospital discharge lounge looking at a wall clock, a staff member walking towards them with an approval paper, relief starting on faces",
+     "type": "art"
+    },
+    "vo": "Achhi khabar yeh hai ki IRDAI ne cashless discharge ka time tight kar diya hai. Company ko discharge ki approval ghanton mein deni hoti hai, din bhar ka intezaar nahi. Der ho, toh insurance desk se likhit mein poochiye. Shikayat ka raasta bhi hota hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY and PAPA sitting together on a sofa while BHAI fills a health form for them on a laptop, honest and calm mood, evening",
+     "type": "art"
+    },
+    "vo": "Teesra kaam, form mein sach likhiye. Har bimari, har dawai, har purani surgery. Premium thoda badh sakta hai, par claim ke din aapki file saaf rahegi. Aur chautha kaam, office policy ke alawa apni ek policy rakhiye, khaaskar parents ke liye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG in striped shirt at a desk with a calculator and a premium receipt, explaining something to BEHEN, warm study room light",
+     "type": "art"
+    },
+    "vo": "Ek fayda aur hai. Old tax regime mein health insurance premium par tax deduction milta hai, apne aur parents ke liye. Toh premium sirf kharch nahi, thoda tax bhi bachata hai. Apna hisaab apne CA ya tax advisor se zaroor check kijiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE closing a savings piggy bank safely in a cupboard, while the family sits at the dinner table in the background smiling, warm night light",
+     "type": "art"
+    },
+    "vo": "Aur yaad rakhiye, health insurance ka asli kaam hai bimari ke din aapki SIP aur savings ko bachana. Claim kat gaya, toh log udhaar lete hain, ya SIP rok dete hain. Policy sahi ho, toh yeh nahi karna padta. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG in striped shirt holding up an open policy booklet towards the viewer with a curious smile, simple background, friendly mood",
+     "type": "art"
+    },
+    "vo": "Ab aapse ek seedha sawaal. Aapki health policy mein room rent limit hai ya nahi? Bina dekhe jawab mat dena. Policy kholiye, check kijiye, aur comments mein sirf likhiye, haan, nahi, ya pata nahi. Main sab padhunga."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG waving goodbye at the door of a home, the whole family, PAPA, MUMMY, WIFE, BHAI, BEHEN, BETA and BETI, standing behind him, sunset light",
+     "type": "art"
+    },
+    "vo": "Agle video mein baat karenge term insurance ki. Kitna cover chahiye, aur log galat policy kyun khareed lete hain. Tab tak yeh video us insaan ko bhejiye, jiske paas sirf office ka insurance hai. Milte hain agle video mein."
+   }
+  ],
+  "thumbnail": {
+   "scene": "BHAI stares at a long hospital bill at the discharge counter, eyes wide, mouth open.",
+   "words": [
+    "ROOM RENT",
+    "TRAP"
+   ]
+  },
+  "title": "Hospital bill par claim *kat* kyun gaya? 🏥"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  16.73,
+  32.1,
+  47.95,
+  62.8,
+  77.45,
+  93.3,
+  110.43,
+  126.88,
+  143.97,
+  159.98,
+  175.39,
+  191.28,
+  207.21,
+  222.02,
+  238.83,
+  255.0,
+  272.09,
+  289.62,
+  303.79,
+  322.12,
+  336.85,
+  350.66,
+  369.59,
+  384.52,
+  397.73,
+  414.3,
+  428.31,
+  441.96,
+  456.77,
+  474.38,
+  490.43,
+  507.04,
+  523.01,
+  539.5,
+  552.51,
+  569.6,
+  582.33,
+  596.54,
+  611.83
+ ],
+ "topic": {
+  "hooks": [
+   "Room rent limit se poora claim kat-ta hai?",
+   "Waiting period mein kya nahi milta?",
+   "Office ka insurance kaafi hai?"
+  ],
+  "id": "health-insurance-claim",
+  "look": "claymation",
+  "summary": "A family's hospital claim gets cut: room-rent limits, waiting periods, sub-limits, pre-existing disease rules, co-pay; how to read a policy, cashless vs reimbursement, why an employer policy alone is not enough.",
+  "target_minutes": 12,
+  "title": "Hospital ke bill par 'claim reject': health insurance ka chhota print",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-10-23T13:13:52+00:00",
+ "writer": "claude"
+}
