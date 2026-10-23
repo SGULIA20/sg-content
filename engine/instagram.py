@@ -18,6 +18,8 @@ API = "https://graph.instagram.com/v25.0"          # Instagram API with Instagra
 REFRESH_URL = "https://graph.instagram.com/refresh_access_token"
 DEFAULT_REPO = "SGULIA20/sg-content"
 THUMB_OFFSET_MS = 2000
+DM_ASK = {"sglearning": "💬 Comment karein APP: ScoreMyBiz ka link DM mein aayega.",          # engine.commentdm answers these
+          "arthvan": "💬 Comment karein APP: Waypoint app ka link DM mein aayega."}
 STORY_MAX_S = 60.0                 # Instagram refuses a Story video over 60 s
 
 
@@ -102,7 +104,8 @@ def caption_text(piece: Piece) -> str:
     from .config import YOUTUBE_URLS
     ig = (piece.script or {}).get("captions", {}).get("instagram", {})
     link = YOUTUBE_URLS.get(piece.channel)
-    parts = [ig.get("caption", "").strip()] + ([f"▶ Poori videos YouTube par: {link}"] if link else []) + [" ".join(ig.get("hashtags", []))]
+    ask = DM_ASK.get(piece.channel, "")
+    parts = [ig.get("caption", "").strip()] + ([f"▶ Poori videos YouTube par: {link}"] if link else []) + ([ask] if ask else []) + [" ".join(ig.get("hashtags", []))]
     return "\n\n".join(p for p in parts if p).strip()
 
 

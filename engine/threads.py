@@ -52,12 +52,33 @@ def text_for(threads_caption: dict, link: str = "") -> str:
     return with_link if len(with_link) <= 500 else out                         # Threads allows 500 characters: the link goes only when it fits
 
 
-def post_video(uid: str, token: str, video_url: str, text: str, call=call, sleep=time.sleep, max_polls: int = 60, poll_s: float = 10) -> str:
-    """One Reel as a Threads video post (9:16, up to five minutes). The URL must be public."""
+TOPIC_TAGS = {"sglearning": "Personal Finance", "arthvan": "Indian Mythology"}     # Threads topic feeds (founder, 23 Oct 2026)
+POLL_TEXT = "Yeh baat aapko pehle se pata thi?"
+POLL_OPTIONS = {"option_a": "Pehle se pata tha", "option_b": "Aaj pata chala"}     # fits any Short, and tells us what is new to people
+
+
+def post_video(uid: str, token: str, video_url: str, text: str, call=call, sleep=time.sleep, max_polls: int = 60, poll_s: float = 10,
+               topic_tag: str = "") -> str:
+    """One Reel as a Threads video post (9:16, up to five minutes). The URL must be public. A topic tag puts it in that topic's feed."""
     if len(text) > MAX_TEXT:
         raise ThreadsError(f"text is {len(text)} characters, Threads allows {MAX_TEXT}")
-    cid = call("POST", f"/{uid}/threads", token, {"media_type": "VIDEO", "video_url": video_url, "text": text})["id"]
+    params = {"media_type": "VIDEO", "video_url": video_url, "text": text}
+    if topic_tag:
+        params["topic_tag"] = topic_tag
+    cid = call("POST", f"/{uid}/threads", token, params)["id"]
     _wait(cid, token, "video", sleep, call, max_polls, poll_s)
+    return call("POST", f"/{uid}/threads_publish", token, {"creation_id": cid})["id"]
+
+
+def post_poll(uid: str, token: str, parent_id: str, call=call, sleep=time.sleep, max_polls: int = 12, poll_s: float = 5) -> str:
+    """A two-option poll under the video post (a reply); if Threads refuses polls in replies, a quote of the post instead."""
+    import json as _json
+    base = {"media_type": "TEXT", "text": POLL_TEXT, "poll_attachment": _json.dumps(POLL_OPTIONS)}
+    try:
+        cid = call("POST", f"/{uid}/threads", token, {**base, "reply_to_id": parent_id})["id"]
+    except ThreadsError:
+        cid = call("POST", f"/{uid}/threads", token, {**base, "quote_post_id": parent_id})["id"]
+    _wait(cid, token, "poll", sleep, call, max_polls, poll_s)
     return call("POST", f"/{uid}/threads_publish", token, {"creation_id": cid})["id"]
 
 
