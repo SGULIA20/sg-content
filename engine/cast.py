@@ -17,7 +17,8 @@ CAST_DIR = ASSETS_DIR / "cast"
 def cast_dir(channel: str) -> Path:
     return CAST_DIR / channel
 SHEET_PROMPT = ("Character reference sheet, single character, full body facing the camera, neutral stance, plain off-white background. {description}. "
-                "Keep this exact face and clothes so the character is recognisable in every later panel.")
+                "Keep this exact face and clothes so the character is recognisable in every later panel. One single figure only: no extra panels, "
+                "no inset pictures, no turnaround views, no frame or border, no speech bubbles, no signs, no writing anywhere.")
 
 
 def load(path: Path = CAST_FILE) -> dict:
