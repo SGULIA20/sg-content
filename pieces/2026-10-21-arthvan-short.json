@@ -75,6 +75,7 @@
  "id": "2026-10-21-arthvan-short",
  "ids": {
   "ig_reel_id": "18102342599379976",
+  "ig_story_id": "skipped: Reel over 60 s",
   "linkedin_id": "urn:li:ugcPost:7519070955986571264",
   "out_sha": "c0b088068c211d76b3ceca6b971ae8600a1a9eac",
   "threads_id": "17987945841084559",
@@ -292,7 +293,7 @@
   ],
   "title": "Ram Setu, *satellite* mein kya dikhta? 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   9.57,
@@ -328,6 +329,6 @@
   "title_hi": "Ram Setu, satellite se kya dikhta hai",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-23T16:27:34+00:00",
+ "updated": "2026-10-23T16:35:06+00:00",
  "writer": "claude"
 }
