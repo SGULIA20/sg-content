@@ -37,8 +37,11 @@ line here (who, date) in the same change. Newest first.
 - The control room's live status refreshes on its own every 30 seconds. (founder, 22 Oct 2026)
 
 ## Open (not decided yet; ask, don't assume)
-- Waypoint crisis-help gaps (chats, comments, other languages, the voice crisis flag): fix proposed 23 Oct, waiting on the founder's yes.
-- WhatsApp spend after Meta's 1 Oct 2026 price change: spend line proposed, not built.
+- WhatsApp spend after Meta's 1 Oct 2026 price change: not built. On 23 Oct ScoreMyBiz had sent 32 WhatsApp messages in 30 days,
+  far under the 1,000 free a month; build the spend line when sends pass 500 a month.
+- Waypoint crisis help (helplines from chats, comments, check-in; more languages; voice alert): waypoint PR #1, waiting on the
+  founder's yes, an app release and an anonymize-voice deploy.
+- Exact clock: built and running in Supabase (command.clock); it starts jobs once `GITHUB_TOKEN` is added to the sg-command function.
 
 ## Control room (phone)
 - Private claude.ai page plus Telegram as the fallback; buttons for pause, resume, stop, retry, run now, post now, and typed instructions that become one of those actions after a confirm. (founder, 21 Oct 2026)
