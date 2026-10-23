@@ -7,6 +7,7 @@
 //   POST /telegram-setup   {token, chat_id, on}: store the bot in Vault and switch the webhook on or off (x-sg-key)
 //   POST /telegram-inbox   messages that are not commands, for the Mac inbox (x-sg-key); answers {webhook, messages}
 //   POST /refresh          live status from the public sg-content and arthvan-media repos (x-hook-secret; command.refresh())
+//   POST /clock            start the GitHub jobs that are due by Lagos time (x-hook-secret; pg_cron via command.clock_tick())
 // Only the actions below exist; anything else is rejected and recorded.
 import postgres from "npm:postgres@3.4.5";
 
@@ -44,10 +45,10 @@ async function vaultSet(name: string, value: string) {
   else await sql`select vault.create_secret(${value}, ${name})`;
 }
 
-async function gh(method: string, path: string, body?: unknown) {
+async function gh(method: string, path: string, body?: unknown, base = GH) {
   const token = Deno.env.get("GITHUB_TOKEN");
   if (!token) throw new Error("GITHUB_TOKEN is not set on the sg-command function");
-  const res = await fetch(GH + path, {
+  const res = await fetch(base + path, {
     method,
     headers: { authorization: `Bearer ${token}`, accept: "application/vnd.github+json", "x-github-api-version": "2022-11-28" },
     body: body === undefined ? undefined : JSON.stringify(body),
@@ -217,6 +218,38 @@ async function appsToday(sha: string) {
   const s = schedule && typeof schedule === "object" ? schedule : {};
   const item = (s.days ?? s.schedule ?? s)[lagos] ?? null;
   return { date: lagos, item: typeof item === "string" ? item : item ? JSON.stringify(item).slice(0, 80) : null, posts };
+}
+
+// The exact clock: command.clock lists each job and its Lagos minute; command.clock_due() says which are due now.
+const CLOCK_REPOS: Record<string, string> = {
+  "sg-content": "https://api.github.com/repos/SGULIA20/sg-content",
+  "arthvan-media": "https://api.github.com/repos/SGULIA20/arthvan-media",
+};
+
+async function clock(): Promise<Response> {
+  if (!Deno.env.get("GITHUB_TOKEN")) {
+    await sql`update command.control set value = to_jsonb(now() + interval '10 minutes'), updated_at = now(), updated_by = 'clock'
+              where key = 'clock.wait_until'`;
+    return json({ started: [], waiting: "GITHUB_TOKEN is not set" });
+  }
+  const paused = await isPaused();
+  const started: string[] = [];
+  for (const job of await sql`select * from command.clock_due()`) {
+    if (paused && job.repo === "sg-content") continue;                   // paused: no new sg-content runs (the engines also check)
+    const claimed = await sql`update command.clock set last_fired = now()
+                              where id = ${job.id} and last_fired is not distinct from ${job.last_fired} returning id`;
+    if (!claimed.length) continue;                                       // another wake-up already started it
+    const name = `${job.repo} ${job.workflow}`;
+    try {
+      await gh("POST", `/actions/workflows/${job.workflow}/dispatches`, { ref: "main", inputs: job.inputs ?? {} }, CLOCK_REPOS[job.repo]);
+      started.push(name);
+      if (!job.every_min) await event("clock", `started ${name}${job.note ? ` (${job.note})` : ""}`);
+    } catch (e) {
+      await sql`update command.clock set last_fired = ${job.last_fired} where id = ${job.id}`;   // try again next minute
+      await event("error", `clock could not start ${name}: ${String(e).slice(0, 200)}`);
+    }
+  }
+  return json({ started });
 }
 
 async function refresh(): Promise<Response> {
@@ -418,6 +451,10 @@ Deno.serve(async (req) => {
     if (route === "refresh" && req.method === "POST") {
       if (!same(req.headers.get("x-hook-secret") ?? "", await vault("sg_command_hook"))) return json({ error: "forbidden" }, 403);
       return await refresh();
+    }
+    if (route === "clock" && req.method === "POST") {
+      if (!same(req.headers.get("x-hook-secret") ?? "", await vault("sg_command_hook"))) return json({ error: "forbidden" }, 403);
+      return await clock();
     }
     if (route === "telegram" && req.method === "POST") return await telegramWebhook(req);
     if (route === "control" && req.method === "GET") return await pipeline(req, route);
