@@ -115,7 +115,7 @@ def _visual_for(piece: Piece, i: int, scene: dict, deps: Deps, out_dir: Path, si
             return out
     if is_story(piece):
         prompt = v.get("prompt") or piece.script["hook"]
-        refs = deps.cast_refs(prompt) if deps.cast_refs else []
+        refs = deps.cast_refs(prompt, channel=piece.channel) if deps.cast_refs else []
         return deps.paint(art.style_prompt(piece.channel, prompt), out, aspect="4:5", refs=refs)
     aspect = "9:16" if size[1] > size[0] else "16:9"
     return deps.paint(art.style_prompt(piece.channel, v.get("prompt") or piece.script["hook"]), out, aspect=aspect)
@@ -150,10 +150,10 @@ def picture_jobs(piece: Piece, deps: Deps) -> list:
     jobs = []
     for sc in (piece.script or {}).get("scenes", []):
         prompt = (sc.get("visual") or {}).get("prompt") or piece.script["hook"]
-        refs = deps.cast_refs(prompt) if deps.cast_refs else []
+        refs = deps.cast_refs(prompt, channel=piece.channel) if deps.cast_refs else []
         jobs.append((art.style_prompt(piece.channel, prompt), list(refs), "4:5"))
     scene = thumbs.scene_for(piece)
-    refs = deps.cast_refs(scene) if deps.cast_refs else []
+    refs = deps.cast_refs(scene, channel=piece.channel) if deps.cast_refs else []
     jobs.append((art.style_prompt(piece.channel, thumbs.REACTION.format(scene=scene)), list(refs), "9:16" if piece.kind == "short" else "16:9"))
     return jobs
 
@@ -162,7 +162,7 @@ def _thumb(piece: Piece, deps: Deps, out_dir: Path) -> Path:
     """A drawn reaction panel with two or three shock words (engine.thumbs); Shorts also get a 9:16 cover for Instagram."""
     from . import thumbs
     if is_story(piece):
-        return thumbs.make(piece, out_dir, paint=deps.paint, render=deps.render_card, cast_refs=deps.cast_refs or (lambda s: []))["thumb"]
+        return thumbs.make(piece, out_dir, paint=deps.paint, render=deps.render_card, cast_refs=deps.cast_refs or (lambda s, **kw: []))["thumb"]
     title = piece.script["captions"]["youtube"]["title"]
     words = [w for w in title.replace("?", "? ").split() if w][:4]
     number = next((c["big_number"] for c in piece.script.get("cards", []) if c.get("big_number")), "")

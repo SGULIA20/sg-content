@@ -319,7 +319,7 @@ def test_story_format_uses_panels_cast_refs_and_storyframe(tmp_path):
     def story_build(piece, lines, panels, size, out_dir):
         built.append(len(panels)); piece.timings = [0.0] * len(panels); out = Path(out_dir) / "reel.mp4"; out.write_bytes(b"mp4"); return out
     d.paint = paint_fn; d.story_build = story_build
-    d.cast_refs = lambda prompt: [Path("/cast/sg.png")] if "SG" in prompt else []
+    d.cast_refs = lambda prompt, **kw: [Path("/cast/sg.png")] if "SG" in prompt else []
     def write_fn(piece, sheet, library, hashtags):
         s = good_script(); s["title"] = "Papa ne 20 saal *FD* mein rakha 💔"
         for sc in s["scenes"]:

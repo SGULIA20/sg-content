@@ -8,7 +8,7 @@ from . import art, cards, cast
 from .pieces import Piece
 
 REACTION = ("Close-up, {scene}. Exaggerated, genuine emotion on the face: wide eyes, raised eyebrows, mouth open or jaw dropped; one key object "
-            "clearly visible; simple uncluttered background with strong contrast; the face takes most of the frame; same doodle style as the panels; "
+            "clearly visible; simple uncluttered background with strong contrast; the face takes most of the frame; same picture style as the panels; "
             "no text in the picture.")
 MAX_WORDS, MAX_LEN = 3, 14
 
@@ -49,7 +49,7 @@ def make(piece: Piece, out_dir: Path, paint=art.paint, render=cards.render, cast
     scene = scene_for(piece)
     prompt = art.style_prompt(piece.channel, REACTION.format(scene=scene))
     aspect = "9:16" if piece.kind == "short" else "16:9"
-    panel = paint(prompt, out_dir / "reaction.png", aspect=aspect, refs=cast_refs(scene))
+    panel = paint(prompt, out_dir / "reaction.png", aspect=aspect, refs=cast_refs(scene, channel=piece.channel))
     words = words_for(piece)
     focus = "50% 22%" if piece.kind == "short" else "50% 50%"               # a portrait panel cropped to 16:9 keeps the face, not the belly
     out = {"thumb": render("thumb2", {"words": words, "panel_path": panel, "focus": focus}, out_dir / "thumb.jpg", (1280, 720))}

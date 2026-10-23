@@ -1,5 +1,6 @@
-# The recurring drawn cast of the money stories: the founder's own family as doodle characters (founder, 20 Oct 2026).
-# Each member is drawn once into assets/cast/<name>.png in the doodle style and passed as a reference to every panel that names them.
+# The recurring drawn cast of the money stories: the founder's own family as drawn characters (founder, 20 Oct 2026).
+# Each member is drawn once per channel into assets/cast/<channel>/<name>.png in that channel's picture style (founder, 23 Oct 2026:
+# claymation for Learning with SG, Indian comic for SG-MYTH-WORLD) and passed as a reference to every panel that names them.
 # refs = photos in assets/reference/ (adults only; the image model refuses photos of children, so the kids are drawn from their description).
 # Put family photos in Desktop/SG-Content-Project/Reference/ as wife-01.jpg, papa-01.jpg, mummy-01.jpg, bhai-01.jpg, behen-01.jpg (two or three each).
 sg:

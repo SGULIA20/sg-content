@@ -20,7 +20,7 @@ def test_make_paints_a_reaction_panel_and_renders_cover_and_thumb(tmp_path):
         painted.append((prompt, kw.get("aspect"))); Path(out).parent.mkdir(parents=True, exist_ok=True); Path(out).write_bytes(b"png"); return Path(out)
     def render(kind, data, out, size):
         rendered.append((kind, size, data.get("words"))); Path(out).parent.mkdir(parents=True, exist_ok=True); Path(out).write_bytes(b"jpg"); return Path(out)
-    out = thumbs.make(_piece(), tmp_path, paint=paint, render=render, cast_refs=lambda prompt: [])
+    out = thumbs.make(_piece(), tmp_path, paint=paint, render=render, cast_refs=lambda prompt, **kw: [])
     assert "eyes wide" in painted[0][0] and "exaggerated" in painted[0][0].lower() and painted[0][1] == "9:16"
     assert out["thumb"] == tmp_path / "thumb.jpg" and out["cover"] == tmp_path / "cover.jpg"
     kinds = {k: (s, w) for k, s, w in rendered}
@@ -31,10 +31,10 @@ def test_long_thumb_is_16_9_short_cover_is_9_16(tmp_path):
     sizes = []
     def render(kind, data, out, size):
         sizes.append(size); Path(out).write_bytes(b"j"); return Path(out)
-    thumbs.make(_piece("long"), tmp_path, paint=lambda prompt, out, **kw: Path(out).write_bytes(b"p") or Path(out), render=render, cast_refs=lambda p: [])
+    thumbs.make(_piece("long"), tmp_path, paint=lambda prompt, out, **kw: Path(out).write_bytes(b"p") or Path(out), render=render, cast_refs=lambda p, **kw: [])
     assert (1280, 720) in sizes
     sizes.clear()
-    thumbs.make(_piece("short"), tmp_path, paint=lambda prompt, out, **kw: Path(out).write_bytes(b"p") or Path(out), render=render, cast_refs=lambda p: [])
+    thumbs.make(_piece("short"), tmp_path, paint=lambda prompt, out, **kw: Path(out).write_bytes(b"p") or Path(out), render=render, cast_refs=lambda p, **kw: [])
     assert (1080, 1920) in sizes and (1280, 720) in sizes            # Shorts get a vertical cover and a landscape thumb
 
 
