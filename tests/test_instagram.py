@@ -1,3 +1,4 @@
+import json
 from datetime import date
 
 import pytest
@@ -57,7 +58,8 @@ def test_publish_piece_posts_reel_and_story_not_carousel(tmp_path):
     assert kinds == ["REELS", "STORIES"]
     assert p.ids["ig_reel_id"] == "mc1" and p.ids["ig_story_id"] == "mc2" and "ig_post_id" not in p.ids
     reel = next(c for c in fc.calls if c[2].get("media_type") == "REELS")
-    assert reel[2]["video_url"].endswith("/reel.mp4") and reel[2]["share_to_feed"] == "true" and DISCLAIMER in reel[2]["caption"]
+    assert reel[2]["video_url"].endswith("/reel.mp4") and DISCLAIMER in reel[2]["caption"]
+    assert json.loads(reel[2]["trial_params"]) == {"graduation_strategy": "SS_PERFORMANCE"} and "share_to_feed" not in reel[2]   # Trial Reel first
     assert pieces.load(p.id, root=tmp_path).ids["ig_reel_id"] == "mc1"                 # saved after each success
 
 
@@ -149,3 +151,15 @@ def test_a_story_file_over_60_s_is_skipped_not_retried_forever(tmp_path, monkeyp
     p = instagram.publish_piece(_piece(), {"IG_ACCESS_TOKEN": "t", "IG_USER_ID": "u", "GITHUB_REPOSITORY": "r"}, call=fc, sleep=lambda s: None, root=tmp_path)
     assert [c[2].get("media_type") for c in fc.calls if c[1].endswith("/media")] == ["REELS"]
     assert p.ids["ig_story_id"].startswith("skipped")
+
+
+def test_a_refused_trial_reel_falls_back_to_a_normal_reel(tmp_path):
+    class NoTrial(FakeCall):
+        def __call__(self, method, path, token, params=None):
+            if params and params.get("trial_params"):
+                raise instagram.InstagramError("HTTP 400: trial reels not available")
+            return super().__call__(method, path, token, params)
+    fc = NoTrial()
+    p = instagram.publish_piece(_piece(), {"IG_ACCESS_TOKEN": "t", "IG_USER_ID": "u", "GITHUB_REPOSITORY": "r"}, call=fc, sleep=lambda s: None, root=tmp_path)
+    reel = next(c for c in fc.calls if (c[2] or {}).get("media_type") == "REELS")
+    assert reel[2]["share_to_feed"] == "true" and p.ids["ig_reel_id"] and p.ids["ig_trial"].startswith("no")
