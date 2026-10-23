@@ -130,6 +130,9 @@
   "crashed: GeminiError: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
  ],
  "script": {
@@ -348,19 +351,20 @@
  "topic": {
   "allowed_sources": [
    "en.wikipedia.org",
-   "tourism.rajasthan.gov.in"
+   "maharashtratourism.gov.in",
+   "news reports with dates"
   ],
   "hooks": [
-   "25,000 chuhe aur ek bhi bimari nahi?",
-   "Safed chuha dikha to kya hota hai?",
-   "Chuhe mandir ke bahar kyon nahi jaate?"
+   "Is gaon mein ghar ke darwaze kyon nahi?",
+   "Bank ki shakha bhi bina lock ke?",
+   "Chori hui to kya hua?"
   ],
-  "id": "karni-mata-rats",
-  "notes": "Give the hygiene question an honest answer (no verified study either way) and label it.",
-  "place": "Deshnoke, Rajasthan",
+  "id": "shani-shingnapur",
+  "notes": "Legend lane plus documented modern facts (UCO Bank branch 2011); report thefts honestly.",
+  "place": "Shani Shingnapur, Maharashtra",
   "target_minutes": null,
-  "title_hi": "Karni Mata, 25,000 chuhon ka mandir"
+  "title_hi": "Shani Shingnapur, bina darwaze ka gaon"
  },
- "updated": "2026-10-23T14:01:32+00:00",
+ "updated": "2026-10-23T14:15:59+00:00",
  "writer": "claude"
 }
