@@ -3,111 +3,126 @@
  "facts": [
   {
    "label": "archaeology",
-   "number": 26.0,
-   "quote": "It covers an area of nearly 26 sq km and is stated to be enclosed by seven lines of fortifications.",
-   "source_date": "2011",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://asi.nic.in",
-   "text": "The Archaeological Survey of India documented that the monuments of Vijayanagara at Hampi cover an area of nearly 26 square kilometres enclosed by seven lines of fortifications.",
-   "unit": "km"
-  },
-  {
-   "label": "archaeology",
-   "number": 56.0,
-   "quote": "The ASI has introduced QR codes for 10 of the 56 pillars to make the music produced by them available to tourists.",
-   "source_date": "2024",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://asi.nic.in",
-   "text": "The Archaeological Survey of India documented that the Mahamandapa of the Vittala Temple contains 56 carved musical pillars.",
+   "number": 8.0,
+   "quote": "The temple's 24 intricately carved wheels double as ancient sundials, seven stone horses, each symbolizing a color of the rainbow and a day of the week, pull the chariot eastward.",
+   "source_date": "2026-10-24",
+   "source_name": "Odisha Tourism",
+   "source_url": "https://odishatourism.gov.in",
+   "text": "Each carved wheel at Konark contains eight primary spokes that divide the solar day into eight praharas and operate as functional sundials.",
    "unit": "count"
   },
   {
    "label": "archaeology",
-   "number": 3.6,
-   "quote": "The acoustic heart is the great stage, the Mahamandapam, which holds 56 musical pillars, each about 3.6 metres tall.",
-   "source_date": "2024",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://asi.nic.in",
-   "text": "Architectural documentation records that the musical pillars in the Mahamandapa stand at an average height of 3.6 metres.",
-   "unit": "metres"
-  },
-  {
-   "label": "archaeology",
    "number": null,
-   "quote": "The monuments of Vijayanagara city were built between AD 1336-1570, from the times of Harihara-I to Sadasiva Raya.",
-   "source_date": "1986",
-   "source_name": "Archaeological Survey of India",
+   "quote": "Supported by iron beams, the architraves were of chlorite and had their front faces sculptured.",
+   "source_date": "2003",
+   "source_name": "Archaeological Survey of India, Debala Mitra",
    "source_url": "https://asi.nic.in",
-   "text": "Epigraphical and structural surveys by the Archaeological Survey of India show that the Vittala temple complex construction originated during the reign of King Devaraya II in the 15th century.",
+   "text": "Structural surveys by the Archaeological Survey of India documented the extensive use of massive wrought-iron beams and iron dowels to support stone lintels and corbelled roofs.",
    "unit": null
   },
   {
-   "label": "scripture",
-   "number": 1520.0,
-   "quote": "What I saw from thence seemed to me as large as Rome, and very beautiful to the sight; there are many groves of trees within it, in the gardens of the houses, and many conduits of water which flow into the midst of it...",
-   "source_date": "1900",
-   "source_name": "Domingo Paes, Chronica dos reis de Bisnaga (trans. Robert Sewell)",
-   "source_url": "https://en.wikipedia.org/wiki/Domingo_Paes",
-   "text": "Portuguese traveller Domingo Paes recorded around 1520 that the capital of the Vijayanagara Empire appeared as large as Rome when viewed from a surrounding hill.",
+   "label": "archaeology",
+   "number": 1903.0,
+   "quote": "The interior of the jagamohana was filled with sand and sealed in 1903 on the recommendations of the conservation committee to preserve the structure.",
+   "source_date": "2003",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "In 1903, British conservation engineers sealed and filled the interior of the assembly hall with sand to stabilize the threatened structure against collapse.",
    "unit": "CE"
   },
   {
-   "label": "scripture",
-   "number": 100000.0,
-   "quote": "Of the city of Bisnaga they say that there are more than a hundred thousand dwelling-houses in it, all one-storeyed and flat-roofed, to each of which there is a low surrounding wall...",
-   "source_date": "1900",
-   "source_name": "Domingo Paes, Chronica dos reis de Bisnaga (trans. Robert Sewell)",
-   "source_url": "https://en.wikipedia.org/wiki/Domingo_Paes",
-   "text": "Domingo Paes recorded in his 16th-century chronicle that the capital city contained more than 100,000 dwelling houses.",
-   "unit": "count"
+   "label": "legend",
+   "number": 52.0,
+   "quote": "Based on the interaction with the nearby villagers, Sterling (1846) mentioned about a massive lodestone, which was believed to possess magnetic power capable of drawing vessels near the shore.",
+   "source_date": "1825",
+   "source_name": "Andrew Stirling, Asiatic Researches",
+   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+   "text": "Local oral tradition claims that a massive 52-tonne magnetic lodestone was originally installed at the pinnacle of the sanctuary tower.",
+   "unit": "tonnes"
   },
   {
-   "label": "disputed",
-   "number": 500000.0,
-   "quote": "Chandler's calculations of the population of the twenty-five largest cities (updated by Modelski and Morris) list Vijayanagar in 1500 CE at 500,000 inhabitants.",
-   "source_date": "1987",
-   "source_name": "Tertius Chandler, Four Thousand Years of Urban Growth",
-   "source_url": "https://en.wikipedia.org/wiki/Historical_urban_community_sizes",
-   "text": "Historical demographers disagree on whether Vijayanagara reached a population of 500,000 around 1500 CE to make it the second largest city globally after Beijing, with modelers like Tertius Chandler estimating 500,000 residents while regional historians argue spatial and agrarian evidence points to a smaller permanent core.",
-   "unit": "count"
-  },
-  {
-   "label": "disputed",
+   "label": "legend",
    "number": null,
-   "quote": "Well known for centuries, the musical pillars are only now beginning to be studied scientifically to examine whether resonant properties were deliberate architectural choices or structural consequences.",
-   "source_date": "2008-11-01",
-   "source_name": "Physics Today",
-   "source_url": "https://doi.org/10.1063/1.3027978",
-   "text": "Researchers disagree on whether Vijayanagara architects intentionally tuned the shafts as musical lithophones or if their resonant ringing is merely an incidental physical byproduct of carving slender, uniform granite columns.",
+   "quote": "Folklore says it kept the Surya idol suspended in mid-air due to magnetic forces.",
+   "source_date": "1908",
+   "source_name": "Bengal District Gazetteer: Puri",
+   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+   "text": "Folklore asserts that the magnetic loadstone at the top worked with magnetic stones in the floor to suspend the temple's central deity in mid-air.",
    "unit": null
   },
   {
    "label": "legend",
-   "number": 2.0,
-   "quote": "To satisfy their curiosity they cut two of the musical pillars of Vittala Temple to check what existed inside the stone pillars that creates musical notes. However, they found nothing inside the pillars.",
-   "source_date": "2023-05-19",
-   "source_name": "Times of India / Local Oral Tradition",
-   "source_url": "https://timesofindia.indiatimes.com/travel/destinations/musical-pillars-of-hampis-vittala-temple-will-leave-you-stunned/articleshow/100352807.cms",
-   "text": "A persistent local legend claims that British colonial officers cut two pillars in the Vittala Temple to inspect whether hollow sound boxes or musical wires were concealed inside.",
-   "unit": "count"
+   "number": null,
+   "quote": "The magnetic field was believed to disrupt the compasses of passing ships... Portuguese sailors removed the lodestone, causing the temple's main structure to collapse.",
+   "source_date": "1908",
+   "source_name": "Bengal District Gazetteer: Puri",
+   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+   "text": "A popular maritime story claims Portuguese sailors dismantled the crowning lodestone because its magnetic force disrupted their compasses and caused shipwrecks.",
+   "unit": null
   },
   {
-   "label": "legend",
-   "number": 81.0,
-   "quote": "These 3.6 meter high pillars can imitate the sounds of 81 different instruments.",
-   "source_date": "2023-05-19",
-   "source_name": "Local Oral Tradition",
-   "source_url": "https://timesofindia.indiatimes.com/travel/destinations/musical-pillars-of-hampis-vittala-temple-will-leave-you-stunned/articleshow/100352807.cms",
-   "text": "Popular temple lore states that the clusters of colonnettes were sculpted to replicate 81 distinct traditional percussion, string, and wind instruments.",
-   "unit": "count"
+   "label": "disputed",
+   "number": null,
+   "quote": "However, the popular stories that the temple was completely destroyed by a particular invader or that a giant magnet caused its collapse are not firmly established by historical evidence.",
+   "source_date": "1968",
+   "source_name": "Archaeological Survey of India, Debala Mitra",
+   "source_url": "https://asi.nic.in",
+   "text": "Historians dispute the legend that Portuguese removal of a magnet caused the sanctuary to fall, citing natural weathering, foundation weaknesses, and documented structural decay.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "Opinions differ among scholars as to whether the main temple was ever fully completed, with James Fergusson arguing that marshy soil prevented the tower from standing, while others maintain it fell long after completion.",
+   "source_date": "1968",
+   "source_name": "Archaeological Survey of India, Debala Mitra",
+   "source_url": "https://asi.nic.in",
+   "text": "Architectural experts disagree on whether the main tower ever stood fully completed before settling into its sandy foundation or if it collapsed centuries later.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "Samba, cursed with leprosy, did penance at Arkakshetra on the banks of the Chandrabhaga and established a shrine in honour of the Sun god.",
+   "source_date": "1958",
+   "source_name": "Samba Purana",
+   "source_url": "https://en.wikipedia.org/wiki/Samba_Purana",
+   "text": "The Samba Purana states that Krishna's son Samba established a solar sanctuary on the banks of the Chandrabhaga river in Arkakshetra to cure himself of an affliction.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "In a later entry of the Madala Panji is recorded the catastrophe leading to the eventual collapse of the spire... that the kalasha and lotus-finial were no longer in place.",
+   "source_date": "1978",
+   "source_name": "Madala Panji",
+   "source_url": "https://en.wikipedia.org/wiki/Madala_Panji",
+   "text": "The Madala Panji chronicle of the Jagannath Temple records that the Konark spire lost its finial and suffered major structural collapse during the seventeenth century.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "Though the iron beams may lack certain properties like ductility and weldability, the finding is significant as the ancient technique if revived and put to use again may help prevent rusting.",
+   "source_date": "2023-12-18",
+   "source_name": "Archaeological Survey of India / IIT Study",
+   "source_url": "https://asi.nic.in",
+   "text": "Metallurgical research conducted with the Archaeological Survey of India found that the temple's 13th-century forged iron beams developed exceptional rust resistance against coastal sea air.",
+   "unit": null
   }
  ],
  "id": "2026-10-29-arthvan-short",
  "ids": {
+  "budget": {
+   "day": "2026-10-24",
+   "drafts": 1,
+   "research": 1
+  },
   "write_batch": {
-   "id": "msgbatch_01PKbyXPXH4BPuEucwS9NzHn",
-   "key": "7f77bd27f06532fd",
-   "tries": 1
+   "id": "msgbatch_01Byam44Q8LkAVUucVBjyoQQ",
+   "key": "f316cf064579c7f8",
+   "tries": 2
   }
  },
  "kind": "short",
@@ -123,6 +138,7 @@
   "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it"
  ],
  "script": {
@@ -342,125 +358,135 @@
   "allowed_sources": [
    "asi.nic.in",
    "en.wikipedia.org",
-   "UNESCO whc.unesco.org",
-   "Domingo Paes travelogue"
+   "odishatourism.gov.in",
+   "UNESCO whc.unesco.org"
   ],
   "hooks": [
-   "Patthar ke khambe se sa-re-ga-ma?",
-   "Angrezon ne khambe kaat kar kya dhoondha?",
-   "Hampi 500 saal pehle duniya ka doosra sabse bada sheher?"
+   "Konark mandir ke upar 52 ton ka chumbak tha?",
+   "Jahaaz Konark ke paas kyon bhatakte the?",
+   "Surya mandir ka pahiya ghadi hai?"
   ],
-  "id": "hampi-musical-pillars",
-  "notes": "Vittala temple acoustics; the cutting story needs a label; population claims are from travellers.",
-  "place": "Hampi, Karnataka",
+  "id": "konark-magnet",
+  "notes": "Magnet story is disputed/legend; the sundial wheel is documented.",
+  "place": "Konark, Odisha",
   "sheet": {
    "facts": [
     {
      "label": "archaeology",
-     "number": 26.0,
-     "quote": "It covers an area of nearly 26 sq km and is stated to be enclosed by seven lines of fortifications.",
-     "source_date": "2011",
-     "source_name": "Archaeological Survey of India",
-     "source_url": "https://asi.nic.in",
-     "text": "The Archaeological Survey of India documented that the monuments of Vijayanagara at Hampi cover an area of nearly 26 square kilometres enclosed by seven lines of fortifications.",
-     "unit": "km"
-    },
-    {
-     "label": "archaeology",
-     "number": 56.0,
-     "quote": "The ASI has introduced QR codes for 10 of the 56 pillars to make the music produced by them available to tourists.",
-     "source_date": "2024",
-     "source_name": "Archaeological Survey of India",
-     "source_url": "https://asi.nic.in",
-     "text": "The Archaeological Survey of India documented that the Mahamandapa of the Vittala Temple contains 56 carved musical pillars.",
+     "number": 8.0,
+     "quote": "The temple's 24 intricately carved wheels double as ancient sundials, seven stone horses, each symbolizing a color of the rainbow and a day of the week, pull the chariot eastward.",
+     "source_date": "2026-10-24",
+     "source_name": "Odisha Tourism",
+     "source_url": "https://odishatourism.gov.in",
+     "text": "Each carved wheel at Konark contains eight primary spokes that divide the solar day into eight praharas and operate as functional sundials.",
      "unit": "count"
     },
     {
      "label": "archaeology",
-     "number": 3.6,
-     "quote": "The acoustic heart is the great stage, the Mahamandapam, which holds 56 musical pillars, each about 3.6 metres tall.",
-     "source_date": "2024",
-     "source_name": "Archaeological Survey of India",
-     "source_url": "https://asi.nic.in",
-     "text": "Architectural documentation records that the musical pillars in the Mahamandapa stand at an average height of 3.6 metres.",
-     "unit": "metres"
-    },
-    {
-     "label": "archaeology",
      "number": null,
-     "quote": "The monuments of Vijayanagara city were built between AD 1336-1570, from the times of Harihara-I to Sadasiva Raya.",
-     "source_date": "1986",
-     "source_name": "Archaeological Survey of India",
+     "quote": "Supported by iron beams, the architraves were of chlorite and had their front faces sculptured.",
+     "source_date": "2003",
+     "source_name": "Archaeological Survey of India, Debala Mitra",
      "source_url": "https://asi.nic.in",
-     "text": "Epigraphical and structural surveys by the Archaeological Survey of India show that the Vittala temple complex construction originated during the reign of King Devaraya II in the 15th century.",
+     "text": "Structural surveys by the Archaeological Survey of India documented the extensive use of massive wrought-iron beams and iron dowels to support stone lintels and corbelled roofs.",
      "unit": null
     },
     {
-     "label": "scripture",
-     "number": 1520.0,
-     "quote": "What I saw from thence seemed to me as large as Rome, and very beautiful to the sight; there are many groves of trees within it, in the gardens of the houses, and many conduits of water which flow into the midst of it...",
-     "source_date": "1900",
-     "source_name": "Domingo Paes, Chronica dos reis de Bisnaga (trans. Robert Sewell)",
-     "source_url": "https://en.wikipedia.org/wiki/Domingo_Paes",
-     "text": "Portuguese traveller Domingo Paes recorded around 1520 that the capital of the Vijayanagara Empire appeared as large as Rome when viewed from a surrounding hill.",
+     "label": "archaeology",
+     "number": 1903.0,
+     "quote": "The interior of the jagamohana was filled with sand and sealed in 1903 on the recommendations of the conservation committee to preserve the structure.",
+     "source_date": "2003",
+     "source_name": "Archaeological Survey of India",
+     "source_url": "https://asi.nic.in",
+     "text": "In 1903, British conservation engineers sealed and filled the interior of the assembly hall with sand to stabilize the threatened structure against collapse.",
      "unit": "CE"
     },
     {
-     "label": "scripture",
-     "number": 100000.0,
-     "quote": "Of the city of Bisnaga they say that there are more than a hundred thousand dwelling-houses in it, all one-storeyed and flat-roofed, to each of which there is a low surrounding wall...",
-     "source_date": "1900",
-     "source_name": "Domingo Paes, Chronica dos reis de Bisnaga (trans. Robert Sewell)",
-     "source_url": "https://en.wikipedia.org/wiki/Domingo_Paes",
-     "text": "Domingo Paes recorded in his 16th-century chronicle that the capital city contained more than 100,000 dwelling houses.",
-     "unit": "count"
+     "label": "legend",
+     "number": 52.0,
+     "quote": "Based on the interaction with the nearby villagers, Sterling (1846) mentioned about a massive lodestone, which was believed to possess magnetic power capable of drawing vessels near the shore.",
+     "source_date": "1825",
+     "source_name": "Andrew Stirling, Asiatic Researches",
+     "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+     "text": "Local oral tradition claims that a massive 52-tonne magnetic lodestone was originally installed at the pinnacle of the sanctuary tower.",
+     "unit": "tonnes"
     },
     {
-     "label": "disputed",
-     "number": 500000.0,
-     "quote": "Chandler's calculations of the population of the twenty-five largest cities (updated by Modelski and Morris) list Vijayanagar in 1500 CE at 500,000 inhabitants.",
-     "source_date": "1987",
-     "source_name": "Tertius Chandler, Four Thousand Years of Urban Growth",
-     "source_url": "https://en.wikipedia.org/wiki/Historical_urban_community_sizes",
-     "text": "Historical demographers disagree on whether Vijayanagara reached a population of 500,000 around 1500 CE to make it the second largest city globally after Beijing, with modelers like Tertius Chandler estimating 500,000 residents while regional historians argue spatial and agrarian evidence points to a smaller permanent core.",
-     "unit": "count"
-    },
-    {
-     "label": "disputed",
+     "label": "legend",
      "number": null,
-     "quote": "Well known for centuries, the musical pillars are only now beginning to be studied scientifically to examine whether resonant properties were deliberate architectural choices or structural consequences.",
-     "source_date": "2008-11-01",
-     "source_name": "Physics Today",
-     "source_url": "https://doi.org/10.1063/1.3027978",
-     "text": "Researchers disagree on whether Vijayanagara architects intentionally tuned the shafts as musical lithophones or if their resonant ringing is merely an incidental physical byproduct of carving slender, uniform granite columns.",
+     "quote": "Folklore says it kept the Surya idol suspended in mid-air due to magnetic forces.",
+     "source_date": "1908",
+     "source_name": "Bengal District Gazetteer: Puri",
+     "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+     "text": "Folklore asserts that the magnetic loadstone at the top worked with magnetic stones in the floor to suspend the temple's central deity in mid-air.",
      "unit": null
     },
     {
      "label": "legend",
-     "number": 2.0,
-     "quote": "To satisfy their curiosity they cut two of the musical pillars of Vittala Temple to check what existed inside the stone pillars that creates musical notes. However, they found nothing inside the pillars.",
-     "source_date": "2023-05-19",
-     "source_name": "Times of India / Local Oral Tradition",
-     "source_url": "https://timesofindia.indiatimes.com/travel/destinations/musical-pillars-of-hampis-vittala-temple-will-leave-you-stunned/articleshow/100352807.cms",
-     "text": "A persistent local legend claims that British colonial officers cut two pillars in the Vittala Temple to inspect whether hollow sound boxes or musical wires were concealed inside.",
-     "unit": "count"
+     "number": null,
+     "quote": "The magnetic field was believed to disrupt the compasses of passing ships... Portuguese sailors removed the lodestone, causing the temple's main structure to collapse.",
+     "source_date": "1908",
+     "source_name": "Bengal District Gazetteer: Puri",
+     "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+     "text": "A popular maritime story claims Portuguese sailors dismantled the crowning lodestone because its magnetic force disrupted their compasses and caused shipwrecks.",
+     "unit": null
     },
     {
-     "label": "legend",
-     "number": 81.0,
-     "quote": "These 3.6 meter high pillars can imitate the sounds of 81 different instruments.",
-     "source_date": "2023-05-19",
-     "source_name": "Local Oral Tradition",
-     "source_url": "https://timesofindia.indiatimes.com/travel/destinations/musical-pillars-of-hampis-vittala-temple-will-leave-you-stunned/articleshow/100352807.cms",
-     "text": "Popular temple lore states that the clusters of colonnettes were sculpted to replicate 81 distinct traditional percussion, string, and wind instruments.",
-     "unit": "count"
+     "label": "disputed",
+     "number": null,
+     "quote": "However, the popular stories that the temple was completely destroyed by a particular invader or that a giant magnet caused its collapse are not firmly established by historical evidence.",
+     "source_date": "1968",
+     "source_name": "Archaeological Survey of India, Debala Mitra",
+     "source_url": "https://asi.nic.in",
+     "text": "Historians dispute the legend that Portuguese removal of a magnet caused the sanctuary to fall, citing natural weathering, foundation weaknesses, and documented structural decay.",
+     "unit": null
+    },
+    {
+     "label": "disputed",
+     "number": null,
+     "quote": "Opinions differ among scholars as to whether the main temple was ever fully completed, with James Fergusson arguing that marshy soil prevented the tower from standing, while others maintain it fell long after completion.",
+     "source_date": "1968",
+     "source_name": "Archaeological Survey of India, Debala Mitra",
+     "source_url": "https://asi.nic.in",
+     "text": "Architectural experts disagree on whether the main tower ever stood fully completed before settling into its sandy foundation or if it collapsed centuries later.",
+     "unit": null
+    },
+    {
+     "label": "scripture",
+     "number": null,
+     "quote": "Samba, cursed with leprosy, did penance at Arkakshetra on the banks of the Chandrabhaga and established a shrine in honour of the Sun god.",
+     "source_date": "1958",
+     "source_name": "Samba Purana",
+     "source_url": "https://en.wikipedia.org/wiki/Samba_Purana",
+     "text": "The Samba Purana states that Krishna's son Samba established a solar sanctuary on the banks of the Chandrabhaga river in Arkakshetra to cure himself of an affliction.",
+     "unit": null
+    },
+    {
+     "label": "scripture",
+     "number": null,
+     "quote": "In a later entry of the Madala Panji is recorded the catastrophe leading to the eventual collapse of the spire... that the kalasha and lotus-finial were no longer in place.",
+     "source_date": "1978",
+     "source_name": "Madala Panji",
+     "source_url": "https://en.wikipedia.org/wiki/Madala_Panji",
+     "text": "The Madala Panji chronicle of the Jagannath Temple records that the Konark spire lost its finial and suffered major structural collapse during the seventeenth century.",
+     "unit": null
+    },
+    {
+     "label": "archaeology",
+     "number": null,
+     "quote": "Though the iron beams may lack certain properties like ductility and weldability, the finding is significant as the ancient technique if revived and put to use again may help prevent rusting.",
+     "source_date": "2023-12-18",
+     "source_name": "Archaeological Survey of India / IIT Study",
+     "source_url": "https://asi.nic.in",
+     "text": "Metallurgical research conducted with the Archaeological Survey of India found that the temple's 13th-century forged iron beams developed exceptional rust resistance against coastal sea air.",
+     "unit": null
     }
    ],
-   "summary": "Popular legend holds that British authorities sawed open two musical pillars at the Vittala Temple to find the secret hollow mechanism producing the seven notes of Sa-Re-Ga-Ma, only to find solid rock. Modern non-destructive acoustic testing revealed that all 56 pillars are solid monolithic granite whose dimensions produce resonant flexural vibrations resembling bell chimes rather than hollow acoustics. Experts disagree over whether medieval sculptors intentionally engineered these columns to match a musical scale or if the tones are an accidental byproduct of carving slender, uniform stone supports. What remains unknown is whether these ringing lithophones played an active role in liturgical music and dance rituals or why no surviving Vijayanagara manuals explain their construction technique."
+   "summary": "Popular maritime legend claims that a 52-tonne magnetic lodestone sat atop the Konark Sun Temple, causing the central idol to levitate and pulling European ships onto nearby reefs until foreign sailors removed it. Archaeological investigations show no physical evidence of a giant crowning magnet, though builders did use heavy wrought-iron beams in the structure and engineered the 24 base wheels as functional sundials. Historians and engineers disagree on the cause of the main sanctuary tower's collapse, debating whether poor soil bearing capacity, structural overloading, saline weathering of iron ties, or military desecration caused the ruin. It remains unknown whether the colossal vimana was ever fully consecrated to its intended height before catastrophic subsidence occurred."
   },
   "target_minutes": null,
-  "title_hi": "Hampi ke sangeet khambe"
+  "title_hi": "Konark ka chumbak"
  },
- "updated": "2026-10-24T10:04:09+00:00",
+ "updated": "2026-10-24T10:42:58+00:00",
  "writer": "claude"
 }
