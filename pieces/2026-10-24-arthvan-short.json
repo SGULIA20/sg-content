@@ -64,14 +64,18 @@
  ],
  "id": "2026-10-24-arthvan-short",
  "ids": {
+  "ig_reel_id": "18117405940816771",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "out_sha": "57eaea5eca1ca9a9f39568722f0044e9c6cb6737",
-  "yt_id": "kSVxzJmtZcA"
+  "yt_id": "kSVxzJmtZcA",
+  "yt_long_link": "Ugyj73PZNeeEGLwzSQF4AaABAg"
  },
  "kind": "short",
  "publish_day": "2026-10-24",
  "reasons": [
-  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)",
+  "threads: HTTP 500: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":2,\"fbtrace_id\":\"A4dcvendiBpkCmetxWhpKbR\"}}"
  ],
  "script": {
   "captions": {
@@ -300,6 +304,6 @@
   "title_hi": "Kurukshetra ka Chakravyuh naksha",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-22T13:30:21+00:00",
+ "updated": "2026-10-24T16:08:43+00:00",
  "writer": "claude"
 }
