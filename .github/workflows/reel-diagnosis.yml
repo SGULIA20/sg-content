@@ -1,0 +1,80 @@
+# One-off diagnosis (founder, 24 Oct 2026): why Shorts and Reels get few views. Reads numbers only and saves them to
+# logs/diagnosis.json (no secrets). Delete this file once the analysis is done.
+name: reel-diagnosis
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: { python-version: '3.12', cache: pip }
+      - run: pip install -r requirements.txt
+      - name: Collect
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
+          YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: |
+          python - <<'PY'
+          import json, urllib.parse
+          from datetime import date, timedelta
+          from engine import whatworks, youtube, instagram, pieces, secrets
+          from engine.config import ROOT
+          out = {"made": date.today().isoformat(), "channels": {}, "rows": [], "videos": {}, "traffic": {}, "ig": {}}
+          end = date.today(); start = end - timedelta(days=35)
+          try:
+              out["rows"] = whatworks.collect(start, end)
+          except Exception as e:
+              out["rows_error"] = str(e)[:200]
+          A = whatworks.ANALYTICS_URL
+          for ch in ("sglearning", "arthvan"):
+              try:
+                  tok = youtube.access_token(ch)
+                  s, _h, b = youtube.call("GET", "https://www.googleapis.com/youtube/v3/channels?part=statistics,snippet&mine=true", tok)
+                  out["channels"][ch] = (b.get("items") or [{}])[0].get("statistics")
+                  ids = [p.ids["yt_id"] for p in pieces.list_all(ROOT) if p.channel == ch and p.ids.get("yt_id")]
+                  for i in range(0, len(ids), 50):
+                      s, _h, b = youtube.call("GET", "https://www.googleapis.com/youtube/v3/videos?part=statistics,contentDetails,status&id=" + ",".join(ids[i:i+50]), tok)
+                      for v in b.get("items", []):
+                          out["videos"][v["id"]] = {"stats": v.get("statistics"), "duration": v["contentDetails"].get("duration"),
+                                                    "privacy": v["status"].get("privacyStatus"), "publishAt": v["status"].get("publishAt")}
+                  for dims in ("insightTrafficSourceType", "day"):
+                      q = {"ids": "channel==MINE", "startDate": start.isoformat(), "endDate": end.isoformat(), "dimensions": dims,
+                           "metrics": "views,averageViewPercentage,averageViewDuration,subscribersGained"}
+                      s, _h, b = youtube.call("GET", A + "?" + urllib.parse.urlencode(q), tok)
+                      out["traffic"][f"{ch}:{dims}"] = {"status": s, "headers": [c["name"] for c in b.get("columnHeaders", [])], "rows": b.get("rows", []), "error": (b.get("error") or {}).get("message")}
+                  q = {"ids": "channel==MINE", "startDate": start.isoformat(), "endDate": end.isoformat(), "dimensions": "video",
+                       "metrics": "views,engagedViews,averageViewPercentage,averageViewDuration,likes,shares,subscribersGained", "sort": "-views", "maxResults": "200"}
+                  s, _h, b = youtube.call("GET", A + "?" + urllib.parse.urlencode(q), tok)
+                  out["traffic"][f"{ch}:video"] = {"status": s, "headers": [c["name"] for c in b.get("columnHeaders", [])], "rows": b.get("rows", []), "error": (b.get("error") or {}).get("message")}
+              except Exception as e:
+                  out["channels"][ch] = {"error": secrets.scrub(str(e))[:200]}
+          try:
+              tok, uid = secrets.get("IG_ACCESS_TOKEN"), secrets.get("IG_USER_ID")
+              out["ig"]["account"] = instagram.call("GET", f"/{uid}", tok, {"fields": "followers_count,media_count,username"})
+              media = instagram.call("GET", f"/{uid}/media", tok, {"fields": "id,caption,media_product_type,timestamp,like_count,comments_count,permalink", "limit": "60"}).get("data", [])
+              for m in media:
+                  if m.get("media_product_type") == "REELS":
+                      m["insights"] = whatworks.instagram_numbers(m["id"], tok)
+                      m["caption"] = (m.get("caption") or "")[:120]
+              out["ig"]["media"] = media
+          except Exception as e:
+              out["ig"]["error"] = secrets.scrub(str(e))[:200]
+          json.dump(out, open("logs/diagnosis.json", "w"), indent=1, ensure_ascii=False)
+          print("rows", len(out["rows"]), "videos", len(out["videos"]), "ig", len(out["ig"].get("media", [])))
+          PY
+      - name: Save
+        run: |
+          git config user.name "sg-content-bot"
+          git config user.email "sg-content-bot@users.noreply.github.com"
+          git add -f logs/diagnosis.json
+          git commit -m "reel diagnosis numbers [skip ci]"
+          git pull --rebase origin main && git push origin HEAD:main
