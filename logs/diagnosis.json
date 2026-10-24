@@ -1,0 +1,1435 @@
+{
+ "made": "2026-10-24",
+ "channels": {
+  "sglearning": {
+   "error": "'str' object has no attribute 'get'"
+  },
+  "arthvan": {
+   "error": "'str' object has no attribute 'get'"
+  }
+ },
+ "rows": [
+  {
+   "id": "2026-10-21-arthvan-short",
+   "channel": "arthvan",
+   "day": "2026-10-21",
+   "look": "doodle",
+   "title": "Ram Setu: 103 reefs ya kisi ka banaya pul?",
+   "yt_views": 0,
+   "yt_watched_pct": null,
+   "ig_views": 1564,
+   "ig_saves": 1,
+   "ig_skip_rate": 30.1,
+   "th_views": 23,
+   "reach": 1587
+  },
+  {
+   "id": "2026-10-21-sglearning-short",
+   "channel": "sglearning",
+   "day": "2026-10-21",
+   "look": "doodle",
+   "title": "Dividend ka ₹6.50 free hai? Agle din share kyun gira",
+   "yt_views": 0,
+   "yt_watched_pct": null,
+   "ig_views": 1358,
+   "ig_saves": 4,
+   "ig_skip_rate": 34.7,
+   "th_views": 4,
+   "reach": 1362
+  },
+  {
+   "id": "2026-10-22-arthvan-short",
+   "channel": "arthvan",
+   "day": "2026-10-22",
+   "look": "doodle",
+   "title": "Kailash par chadhna mumkin, phir kyon nahi?",
+   "yt_views": 0,
+   "yt_watched_pct": null,
+   "ig_views": 71,
+   "ig_saves": 0,
+   "ig_skip_rate": 60,
+   "th_views": 0,
+   "reach": 71
+  },
+  {
+   "id": "2026-10-22-sglearning-short",
+   "channel": "sglearning",
+   "day": "2026-10-22",
+   "look": "doodle",
+   "title": "US Stocks 1 dollar se? Asli kharcha kya hai",
+   "yt_views": 0,
+   "yt_watched_pct": null,
+   "ig_views": 1449,
+   "ig_saves": 4,
+   "ig_skip_rate": 34.1,
+   "th_views": 5,
+   "reach": 1454
+  },
+  {
+   "id": "2026-10-23-arthvan-short",
+   "channel": "arthvan",
+   "day": "2026-10-23",
+   "look": "doodle",
+   "title": "Kedarnath 2013: Ek patthar ne mandir bachaya?",
+   "yt_views": 0,
+   "yt_watched_pct": null,
+   "ig_views": 337,
+   "ig_saves": 0,
+   "ig_skip_rate": 42.8,
+   "th_views": 0,
+   "reach": 337
+  },
+  {
+   "id": "2026-10-23-sglearning-short",
+   "channel": "sglearning",
+   "day": "2026-10-23",
+   "look": "doodle",
+   "title": "Meta $145B AI kharcha: SIP par kya asar?",
+   "yt_views": 0,
+   "yt_watched_pct": null,
+   "ig_views": 59,
+   "ig_saves": 0,
+   "ig_skip_rate": 57.8,
+   "th_views": 4,
+   "reach": 63
+  },
+  {
+   "id": "2026-10-24-arthvan-short",
+   "channel": "arthvan",
+   "day": "2026-10-24",
+   "look": "doodle",
+   "title": "Chakravyuh ka naksha: 5,000 saal purana?",
+   "yt_views": 0,
+   "yt_watched_pct": null,
+   "ig_views": 115,
+   "ig_saves": 1,
+   "ig_skip_rate": 64.8,
+   "th_views": 0,
+   "reach": 115
+  },
+  {
+   "id": "2026-10-24-sglearning-short",
+   "channel": "sglearning",
+   "day": "2026-10-24",
+   "look": "doodle",
+   "title": "Core sector 7.9% upar, petrol sasta kyun nahi?",
+   "yt_views": 0,
+   "yt_watched_pct": null,
+   "ig_views": 1235,
+   "ig_saves": 2,
+   "ig_skip_rate": 22.2,
+   "th_views": 1,
+   "reach": 1236
+  }
+ ],
+ "videos": {
+  "1oq8a5RJzTw": {
+   "stats": {
+    "viewCount": "24",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT1M10S",
+   "privacy": "public",
+   "publishAt": null
+  },
+  "dbVKWtDhrFY": {
+   "stats": {
+    "viewCount": "26",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT1M13S",
+   "privacy": "public",
+   "publishAt": null
+  },
+  "dvM49ysxU38": {
+   "stats": {
+    "viewCount": "7",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT1M12S",
+   "privacy": "public",
+   "publishAt": null
+  },
+  "wO9L5aUZoQ4": {
+   "stats": {
+    "viewCount": "16",
+    "likeCount": "1",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT8M46S",
+   "privacy": "public",
+   "publishAt": null
+  },
+  "f6Q8M7vFtkY": {
+   "stats": {
+    "viewCount": "1",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "1"
+   },
+   "duration": "PT1M33S",
+   "privacy": "public",
+   "publishAt": null
+  },
+  "iBFNFPp6A0Y": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT1M22S",
+   "privacy": "private",
+   "publishAt": "2026-10-25T14:30:00Z"
+  },
+  "i5JBwClZWpU": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT1M20S",
+   "privacy": "private",
+   "publishAt": "2026-10-26T14:30:00Z"
+  },
+  "wqa4gxdnMlc": {
+   "stats": {
+    "viewCount": "1",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT1M19S",
+   "privacy": "private",
+   "publishAt": "2026-10-27T14:30:00Z"
+  },
+  "4GhXYmvbYI0": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT10M12S",
+   "privacy": "private",
+   "publishAt": "2026-10-28T13:30:00Z"
+  },
+  "60M3A5JBZSQ": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT1M21S",
+   "privacy": "private",
+   "publishAt": "2026-10-28T14:30:00Z"
+  },
+  "sbYf7WtinGw": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT1M7S",
+   "privacy": "private",
+   "publishAt": "2026-10-29T14:30:00Z"
+  },
+  "gmEHuRhLWN8": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT12M11S",
+   "privacy": "private",
+   "publishAt": "2026-10-31T13:30:00Z"
+  },
+  "YUOc-8BMlTA": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT12M23S",
+   "privacy": "private",
+   "publishAt": "2026-11-04T13:30:00Z"
+  },
+  "WxehCuJw-aI": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT10M28S",
+   "privacy": "private",
+   "publishAt": "2026-11-07T13:30:00Z"
+  },
+  "WvzlsYrVBQo": {
+   "stats": {
+    "viewCount": "42",
+    "likeCount": "1",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT1M32S",
+   "privacy": "public",
+   "publishAt": null
+  },
+  "6SsYUMyyO-4": {
+   "stats": {
+    "viewCount": "1",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT10M6S",
+   "privacy": "public",
+   "publishAt": null
+  },
+  "Nm8DImn35mM": {
+   "stats": {
+    "viewCount": "144",
+    "likeCount": "4",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "1"
+   },
+   "duration": "PT1M56S",
+   "privacy": "public",
+   "publishAt": null
+  },
+  "miAOjHnEulQ": {
+   "stats": {
+    "viewCount": "104",
+    "likeCount": "7",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "1"
+   },
+   "duration": "PT1M22S",
+   "privacy": "public",
+   "publishAt": null
+  },
+  "kSVxzJmtZcA": {
+   "stats": {
+    "viewCount": "91",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "1"
+   },
+   "duration": "PT1M57S",
+   "privacy": "public",
+   "publishAt": null
+  },
+  "3s-vr6ZPXxc": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT11M20S",
+   "privacy": "private",
+   "publishAt": "2026-10-25T13:30:00Z"
+  },
+  "uyEz2wcbe0o": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT1M24S",
+   "privacy": "private",
+   "publishAt": "2026-10-25T14:30:00Z"
+  },
+  "5T94w15BxYI": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT1M29S",
+   "privacy": "private",
+   "publishAt": "2026-10-26T14:30:00Z"
+  },
+  "GXSA0399l2Q": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT1M31S",
+   "privacy": "private",
+   "publishAt": "2026-10-27T14:30:00Z"
+  },
+  "DTVZY3Vg1qw": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT1M33S",
+   "privacy": "private",
+   "publishAt": "2026-10-28T14:30:00Z"
+  },
+  "src8dllxEII": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT10M30S",
+   "privacy": "private",
+   "publishAt": "2026-10-29T13:30:00Z"
+  },
+  "BO4vM0ORMAI": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT2M",
+   "privacy": "private",
+   "publishAt": "2026-10-29T14:30:00Z"
+  },
+  "c_jzcPrICBc": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT1M38S",
+   "privacy": "private",
+   "publishAt": "2026-10-30T14:30:00Z"
+  },
+  "blOqODdoAVI": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT9M53S",
+   "privacy": "private",
+   "publishAt": "2026-11-01T13:30:00Z"
+  },
+  "tiWpEGWxpR0": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT13M30S",
+   "privacy": "private",
+   "publishAt": "2026-11-05T13:30:00Z"
+  }
+ },
+ "traffic": {},
+ "ig": {
+  "account": {
+   "followers_count": 17548,
+   "media_count": 53,
+   "username": "sanjeev_gulia",
+   "id": "39082874041358640"
+  },
+  "media": [
+   {
+    "id": "18117405940816771",
+    "caption": "Kurukshetra mein Chakravyuh ka 5,000 saal purana naksha? 🤯\nDrona Parva ki kahani, Amin teele ki khudaai, aur Halebidu ki",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-24T16:07:35+0000",
+    "like_count": 0,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/De4hdZkmAV9/",
+    "insights": {
+     "reach": 104,
+     "views": 115,
+     "saved": 1,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 11928,
+     "reels_skip_rate": 64.8
+    }
+   },
+   {
+    "id": "18150730018503936",
+    "caption": "Papa ko lagta tha dukaan theek chal rahi hai. Phir ek number aaya: 42. Teen mahine baad, 68. 👇\nScoreMyBiz, 30 din muft: ",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-24T14:43:13+0000",
+    "like_count": 5,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/De4X2uAjkjz/",
+    "insights": {
+     "reach": 129,
+     "views": 148,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 9219,
+     "reels_skip_rate": 54.5
+    }
+   },
+   {
+    "id": "18104432204309323",
+    "caption": "Factory daudi, par petrol sasta kyun nahi? ⛽\nCore sector 7.9 percent badha, coal aur bijli ne kamaal kiya.\nPar crude ka ",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-24T09:36:44+0000",
+    "like_count": 13,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/De30y6gj6Kz/",
+    "insights": {
+     "reach": 1147,
+     "views": 1235,
+     "saved": 2,
+     "shares": 1,
+     "ig_reels_avg_watch_time": 17553,
+     "reels_skip_rate": 22.2
+    }
+   },
+   {
+    "id": "18154041679546900",
+    "caption": "Sunita madam ko sab jaante hain. Isliye woh kuch keh nahi paatin. Phir roz ek naya naam mila. 👇\nRoz naya naam, koi pehch",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-23T17:14:35+0000",
+    "like_count": 3,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/De2EYpgD0tk/",
+    "insights": {
+     "reach": 38,
+     "views": 63,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 7816,
+     "reels_skip_rate": 61.5
+    }
+   },
+   {
+    "id": "17998034514037934",
+    "caption": "Kamai badhi, phir bhi cash minus? 😮\nMeta AI par 145 billion dollar tak kharch karegi, aur kai foreign tech funds mein Me",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-23T08:53:09+0000",
+    "like_count": 5,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/De1LAJ6ESyh/",
+    "insights": {
+     "reach": 45,
+     "views": 59,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 6869,
+     "reels_skip_rate": 57.8
+    }
+   },
+   {
+    "id": "18114418787120976",
+    "caption": "Ek patthar ne Kedarnath mandir ko kaise bachaya? 🤯\nBaadh mein ghar aur Ishaan mandir beh gaye, par garbhagriha khada rah",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-22T19:54:39+0000",
+    "like_count": 9,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/Dezx6LIiaFj/",
+    "insights": {
+     "reach": 287,
+     "views": 337,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 17031,
+     "reels_skip_rate": 42.8
+    }
+   },
+   {
+    "id": "18133576991508373",
+    "caption": "Kailash par koi kyon nahi chadha? 🏔️\nPurana kehte hain yeh Shiv ji ka ghar hai.\nMountaineer kehte hain chadhai mumkin ha",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-22T17:52:34+0000",
+    "like_count": 6,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/Dezj55ek3K1/",
+    "insights": {
+     "reach": 55,
+     "views": 71,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 8814,
+     "reels_skip_rate": 60
+    }
+   },
+   {
+    "id": "18102342599379976",
+    "caption": "Ram Setu, satellite se kya dikhta hai? 🤯\nRamayana kehti hai Nala ne 5 din mein setu banaya.\nISRO ne 103 coral patch reef",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-22T16:21:34+0000",
+    "like_count": 38,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DezZgKrkTS-/",
+    "insights": {
+     "reach": 1335,
+     "views": 1564,
+     "saved": 1,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 30929,
+     "reels_skip_rate": 30.1
+    }
+   },
+   {
+    "id": "18027523190922144",
+    "caption": "Papa ke baad dukaan Maa ne sambhali. Hisaab? 'Kal likh loongi.' Phir ek raat se, bas teen number. 👇\nScoreMyBiz, 30 din m",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-22T15:10:12+0000",
+    "like_count": 6,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DezRXZkiYMW/",
+    "insights": {
+     "reach": 133,
+     "views": 164,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 8202,
+     "reels_skip_rate": 56.2
+    }
+   },
+   {
+    "id": "17908782288329239",
+    "caption": "US stock 1 dollar se? Aasaan hai, sasta nahi 💸\nRupaya dollar banta hai, bank margin rakhta hai, har order par brokerage ",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-22T08:43:24+0000",
+    "like_count": 25,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DeylFymDsG0/",
+    "insights": {
+     "reach": 1315,
+     "views": 1449,
+     "saved": 4,
+     "shares": 6,
+     "ig_reels_avg_watch_time": 16774,
+     "reels_skip_rate": 34.1
+    }
+   },
+   {
+    "id": "17872427136643081",
+    "caption": "Aapki woh ek baat kya hai, jo aapne aaj tak kisi se nahi kahi? 👇\nBina naam ke kehne ki ek jagah: Waypoint, link in bio. ",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-21T16:40:58+0000",
+    "like_count": 7,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/Dew22QBEYLj/",
+    "insights": {
+     "reach": 136,
+     "views": 169,
+     "saved": 1,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 6200,
+     "reels_skip_rate": 62.4
+    }
+   },
+   {
+    "id": "18073936877773339",
+    "caption": "Dividend ka paisa sach mein free hai? 🤔\nRecord date se pehle share liya, agle din price lagbhag dividend jitna gir gaya.",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-21T16:29:34+0000",
+    "like_count": 12,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/Dew1qmmjAgT/",
+    "insights": {
+     "reach": 1227,
+     "views": 1358,
+     "saved": 4,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 16437,
+     "reels_skip_rate": 34.7
+    }
+   },
+   {
+    "id": "18497759911105512",
+    "caption": "Aapki dukaan ka hisaab, ek bahi mein hai ya ek jagah? 👇\nScoreMyBiz: sab ek jagah, 30 din free. Link in bio.\n\nFree for 30",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-20T18:25:10+0000",
+    "like_count": 8,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/Deud_5RChUA/",
+    "insights": {
+     "reach": 106,
+     "views": 137,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 4590,
+     "reels_skip_rate": 67.9
+    }
+   },
+   {
+    "id": "18085705619705792",
+    "caption": "His hands are for the wheel, not for typing. Tariq talks instead. The founder tells his story.\n\nFree on Google Play: htt",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-19T14:59:44+0000",
+    "like_count": 5,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DerhxIQlXEV/",
+    "insights": {
+     "reach": 42,
+     "views": 64,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 6092,
+     "reels_skip_rate": 67.5
+    }
+   },
+   {
+    "id": "18172136341457738",
+    "caption": "Meena's shop sold well. On Friday there was still nothing to pay the supplier with. Lumi tells what happened next.\n\nFree",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-18T17:12:39+0000",
+    "like_count": 4,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DepMLN2AfHJ/",
+    "insights": {
+     "reach": 35,
+     "views": 48,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 4015,
+     "reels_skip_rate": 76.3
+    }
+   },
+   {
+    "id": "17992435071061386",
+    "caption": "Everyone she asks has an opinion about her. Neha asks a poll instead. Mira tells her story.\n\nFree on Google Play: https:",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-17T17:13:57+0000",
+    "like_count": 4,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DemniqCjNZl/",
+    "insights": {
+     "reach": 32,
+     "views": 46,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 3805,
+     "reels_skip_rate": 80
+    }
+   },
+   {
+    "id": "17931305433161836",
+    "caption": "What waypoint does- There are things we can’t tell anyone. Not family, not friends, not social media. We worry people wi",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-16T23:33:59+0000",
+    "like_count": 5,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DekFKvdCYGI/",
+    "insights": {
+     "reach": 55,
+     "views": 76,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 6797,
+     "reels_skip_rate": 75.4
+    }
+   },
+   {
+    "id": "18119337589991818",
+    "caption": "Suresh's drawer did not match his shelf. The founder tells how one number a week changed his month end.\n\nFree for 30 day",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-16T17:24:41+0000",
+    "like_count": 6,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DekD-NaAQ1M/",
+    "insights": {
+     "reach": 37,
+     "views": 49,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 5697,
+     "reels_skip_rate": 60.5
+    }
+   },
+   {
+    "id": "18166108075490606",
+    "caption": "Some days need a room to break things in. Imran's takes ninety seconds. The founder tells his story.\n\nFree on Google Pla",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-15T17:24:49+0000",
+    "like_count": 8,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DehfMkijXgC/",
+    "insights": {
+     "reach": 46,
+     "views": 81,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 9350,
+     "reels_skip_rate": 62.5
+    }
+   },
+   {
+    "id": "18123226780712644",
+    "caption": "Nine nights, double the crowd, and no idea what is in the drawer. Lumi tells Bhavini's Navratri in Gujarati.\n\nFree for 3",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-14T17:18:31+0000",
+    "like_count": 6,
+    "comments_count": 1,
+    "permalink": "https://www.instagram.com/reel/Dee5roDjliw/",
+    "insights": {
+     "reach": 66,
+     "views": 112,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 9226,
+     "reels_skip_rate": 50
+    }
+   },
+   {
+    "id": "18149215753566874",
+    "caption": "All day he is fine. At night he isn't. Mira tells Arjun's story.\n\nFree on Google Play: https://play.google.com/store/app",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-13T17:45:05+0000",
+    "like_count": 7,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DecX7bsAA0K/",
+    "insights": {
+     "reach": 46,
+     "views": 80,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 7457,
+     "reels_skip_rate": 78.4
+    }
+   },
+   {
+    "id": "18098952503378498",
+    "caption": "Profit on paper is not cash in hand. Here is the difference, and how to see it in minutes.\n\nFree for 30 days. No credit card.\nGoogle Play: https://play.google.com/store/apps/details?id=com.scoremybiz.app\nLink in bio, or scoremybiz.com\n\nExample figures for illustration. Not financial advice.\n\n#CashFlow #BusinessTips #ScoreMyBiz #SmallBusiness #MSME",
+    "media_product_type": "FEED",
+    "timestamp": "2026-10-12T17:48:04+0000",
+    "like_count": 4,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/p/DeZzbmkGx5M/"
+   },
+   {
+    "id": "18125533082296782",
+    "caption": "A fresh name and avatar every day. Waypoint is free on Google Play.\n\nFree on Google Play: https://play.google.com/store/apps/details?id=com.arthvananalytics.waypoint\nLink in bio.\n\n#Waypoint #NewApp #AndroidApps",
+    "media_product_type": "FEED",
+    "timestamp": "2026-10-11T18:11:14+0000",
+    "like_count": 5,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/p/DeXRR3CmZUP/"
+   },
+   {
+    "id": "18127668601889133",
+    "caption": "Know the health of your business. ScoreMyBiz is on Google Play.\n\nFree for 30 days. No credit card.\nGoogle Play: https://play.google.com/store/apps/details?id=com.scoremybiz.app\nLink in bio, or scoremybiz.com\n\n#ScoreMyBiz #BusinessHealth #SmallBusiness #MSME",
+    "media_product_type": "FEED",
+    "timestamp": "2026-10-10T20:35:30+0000",
+    "like_count": 5,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/p/DeU9D5iH9JJ/"
+   },
+   {
+    "id": "18135805723641690",
+    "caption": "A simple month-end routine for any small business.\n\nFree for 30 days. No credit card.\nGoogle Play: https://play.google.com/store/apps/details?id=com.scoremybiz.app\nLink in bio, or scoremybiz.com\n\n#MonthEnd #BusinessHabits #ScoreMyBiz #SmallBusiness #MSME",
+    "media_product_type": "FEED",
+    "timestamp": "2026-10-10T18:38:14+0000",
+    "like_count": 4,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/p/DeUvp5jiety/"
+   },
+   {
+    "id": "18028639283911565",
+    "caption": "You made money on paper. Where did the cash go?\n\nEnter 8 numbers and see your Business Health Score in 5 minutes. No acc",
+    "media_product_type": "REELS",
+    "timestamp": "2026-10-10T15:58:07+0000",
+    "like_count": 1,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DeUdUHuk2Rh/",
+    "insights": {
+     "reach": 54,
+     "views": 66,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 5131,
+     "reels_skip_rate": 69.1
+    }
+   },
+   {
+    "id": "18055429916735687",
+    "caption": "❓ 6 REASONS — EK SAATH AYE\n\n1️⃣ US FED RATE CUT HOPES KHATAM\nSticky inflation data aayi.\nDollar strong hua — risk assets",
+    "media_product_type": "REELS",
+    "timestamp": "2026-06-07T15:42:25+0000",
+    "like_count": 5345,
+    "comments_count": 346,
+    "permalink": "https://www.instagram.com/reel/DZSjoQkK7Wc/",
+    "insights": {
+     "reach": 333,
+     "views": 125809,
+     "saved": 1,
+     "shares": 272,
+     "ig_reels_avg_watch_time": 20924,
+     "reels_skip_rate": 0.9
+    }
+   },
+   {
+    "id": "17893062030495151",
+    "caption": "FULL BREAKDOWN 👇\n\n🏦 DECISION 1 — RBI REPO RATE\nJune 5, 2026 — RBI MPC meeting.\nRepo rate 5.25% pe UNCHANGED rakha.\nNeutr",
+    "media_product_type": "REELS",
+    "timestamp": "2026-06-06T15:52:38+0000",
+    "like_count": 5370,
+    "comments_count": 334,
+    "permalink": "https://www.instagram.com/reel/DZP_5Ocqj9h/",
+    "insights": {
+     "reach": 315,
+     "views": 129586,
+     "saved": 2,
+     "shares": 270,
+     "ig_reels_avg_watch_time": 20917,
+     "reels_skip_rate": 0.9
+    }
+   },
+   {
+    "id": "18110742079924870",
+    "caption": "Finance ka ek formula hai —\nagar log jitna jaldi samjhein —\nunke liye utna acha hai.\n\nFormula kya hai?\n\nINCOME - INVESTM",
+    "media_product_type": "REELS",
+    "timestamp": "2026-06-05T15:56:45+0000",
+    "like_count": 5484,
+    "comments_count": 333,
+    "permalink": "https://www.instagram.com/reel/DZNb4pvhCI-/",
+    "insights": {
+     "reach": 321,
+     "views": 123615,
+     "saved": 0,
+     "shares": 300,
+     "ig_reels_avg_watch_time": 20884,
+     "reels_skip_rate": 1
+    }
+   },
+   {
+    "id": "17910876936220656",
+    "caption": "LIC agent came home — showed you a policy.\nJo unhone nahi bataya — woh sun lo. 👀\n\nLOSING ₹2 CRORE — WITHOUT KNOWING IT\n\n",
+    "media_product_type": "REELS",
+    "timestamp": "2026-06-04T16:00:08+0000",
+    "like_count": 5447,
+    "comments_count": 149,
+    "permalink": "https://www.instagram.com/reel/DZK3600OtNd/",
+    "insights": {
+     "reach": 344,
+     "views": 126397,
+     "saved": 1,
+     "shares": 293,
+     "ig_reels_avg_watch_time": 20888,
+     "reels_skip_rate": 1.1
+    }
+   },
+   {
+    "id": "18017129396691508",
+    "caption": "Aapne bank mein ₹1 lakh rakha.\nBank ne woh 9 logon ko de diya.\nPhir bhi aapka balance ₹1 lakh dikhta hai. 🤯\n\nYeh fraud n",
+    "media_product_type": "REELS",
+    "timestamp": "2026-06-03T15:30:09+0000",
+    "like_count": 5486,
+    "comments_count": 270,
+    "permalink": "https://www.instagram.com/reel/DZIPuOeu-bP/",
+    "insights": {
+     "reach": 353,
+     "views": 129196,
+     "saved": 1,
+     "shares": 437,
+     "ig_reels_avg_watch_time": 20953,
+     "reels_skip_rate": 0.9
+    }
+   },
+   {
+    "id": "18132739855568291",
+    "caption": "Civic sense sirf aap pe apply nahi hota. 🇮🇳\n\nAgar aap kisi ko galat karte dekho —\naur chup raho —\ntoh aap bhi uss galti ",
+    "media_product_type": "REELS",
+    "timestamp": "2026-06-02T15:30:15+0000",
+    "like_count": 5325,
+    "comments_count": 146,
+    "permalink": "https://www.instagram.com/reel/DZFq6Bcoil5/",
+    "insights": {
+     "reach": 272,
+     "views": 139809,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 20939,
+     "reels_skip_rate": 0.6
+    }
+   },
+   {
+    "id": "18027725153647602",
+    "caption": "Indian media roz Pakistan ki baat karta hai.\nPar actual data mein Pakistan kitna chota hai? 🤯\n\nFigures dekhoge toh khud ",
+    "media_product_type": "REELS",
+    "timestamp": "2026-06-02T02:30:11+0000",
+    "like_count": 5362,
+    "comments_count": 247,
+    "permalink": "https://www.instagram.com/reel/DZERqWLORQ-/",
+    "insights": {
+     "reach": 502,
+     "views": 126778,
+     "saved": 1,
+     "shares": 352,
+     "ig_reels_avg_watch_time": 20956,
+     "reels_skip_rate": 1
+    }
+   },
+   {
+    "id": "18098976830153908",
+    "caption": "Restaurant mein jaana sirf khana nahi —\nit’s a reflection of who you are. 🍽️\n\nEP 01 — Restaurant Etiquette\nJo school mei",
+    "media_product_type": "REELS",
+    "timestamp": "2026-06-01T14:00:08+0000",
+    "like_count": 40,
+    "comments_count": 2,
+    "permalink": "https://www.instagram.com/reel/DZC72LuO_o8/",
+    "insights": {
+     "reach": 305,
+     "views": 186056,
+     "saved": 1,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 25315,
+     "reels_skip_rate": 96.1
+    }
+   },
+   {
+    "id": "17972471099970567",
+    "caption": "Yeh hai meditation ki asli feeling. 🧘\n\nJab aap baithte hain —\nbody still hoti hai.\nPar andar ka insaan?\n\nWoh phone dekh ",
+    "media_product_type": "REELS",
+    "timestamp": "2026-06-01T02:40:09+0000",
+    "like_count": 52,
+    "comments_count": 2,
+    "permalink": "https://www.instagram.com/reel/DZBuAj_O_aJ/",
+    "insights": {
+     "reach": 451,
+     "views": 228445,
+     "saved": 0,
+     "shares": 2,
+     "ig_reels_avg_watch_time": 20990,
+     "reels_skip_rate": 95.8
+    }
+   },
+   {
+    "id": "17967359196118632",
+    "caption": "Friends — seedha dil ki baat. 🙏\n\nAapka jo support hai —\ncomments, shares, messages —\nit honestly never lets me stop lear",
+    "media_product_type": "REELS",
+    "timestamp": "2026-05-31T06:30:10+0000",
+    "like_count": 57,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DY_jf9SO1WP/",
+    "insights": {
+     "reach": 417,
+     "views": 169467,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 16224,
+     "reels_skip_rate": 96.3
+    }
+   },
+   {
+    "id": "17875264923669501",
+    "caption": "Log tumhara resume nahi dekhte pehle —\nwoh tumhari habits dekhte hain. 👀\n\nYeh choti choti cheezein tumhari\npoori image b",
+    "media_product_type": "REELS",
+    "timestamp": "2026-05-30T07:58:52+0000",
+    "like_count": 54,
+    "comments_count": 4,
+    "permalink": "https://www.instagram.com/reel/DY9F7S4qGjT/",
+    "insights": {
+     "reach": 413,
+     "views": 96726,
+     "saved": 0,
+     "shares": 7,
+     "ig_reels_avg_watch_time": 29869,
+     "reels_skip_rate": 87.2
+    }
+   },
+   {
+    "id": "18074639708292526",
+    "caption": "WhatsApp ab free nahi rahega — fully. 😱\n\nMeta ne kal — May 27, 2026 —\nofficially paid subscription launch kar diya.\n\nPoo",
+    "media_product_type": "REELS",
+    "timestamp": "2026-05-29T15:20:18+0000",
+    "like_count": 16,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DY7WkmVI9MU/",
+    "insights": {
+     "reach": 226,
+     "views": 176459,
+     "saved": 1,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 15276,
+     "reels_skip_rate": 99.1
+    }
+   },
+   {
+    "id": "18100145380858633",
+    "caption": "Kya tumhara focus aur energy din mein gir jaati hai? 🤔\n\nResearch ne ek interesting cheez bataayi —\n\nSirf thodi thodi mov",
+    "media_product_type": "REELS",
+    "timestamp": "2026-05-28T15:30:19+0000",
+    "like_count": 46,
+    "comments_count": 2,
+    "permalink": "https://www.instagram.com/reel/DY4y62YoMa4/",
+    "insights": {
+     "reach": 324,
+     "views": 172660,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 13975,
+     "reels_skip_rate": 97
+    }
+   },
+   {
+    "id": "18428833246124385",
+    "caption": "WhatsApp roz use karte ho — par yeh features pata hain? 🤯\n\n2026 mein WhatsApp bilkul badal gaya hai 👇\n\n✅ USERNAME FEATUR",
+    "media_product_type": "REELS",
+    "timestamp": "2026-05-27T15:25:16+0000",
+    "like_count": 19,
+    "comments_count": 6,
+    "permalink": "https://www.instagram.com/reel/DY2NlOuIgSK/",
+    "insights": {
+     "reach": 287,
+     "views": 163384,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 27659,
+     "reels_skip_rate": 95.8
+    }
+   },
+   {
+    "id": "17881765950591343",
+    "caption": "Everyone is buying gold, crypto, stocks.\n\nSmart investors in 2026? Quietly buying WATER. 💧\n\nHere’s why — shocking proof ",
+    "media_product_type": "REELS",
+    "timestamp": "2026-05-26T15:30:19+0000",
+    "like_count": 40,
+    "comments_count": 4,
+    "permalink": "https://www.instagram.com/reel/DYzpW1noQ0i/",
+    "insights": {
+     "reach": 441,
+     "views": 213297,
+     "saved": 1,
+     "shares": 1,
+     "ig_reels_avg_watch_time": 15433,
+     "reels_skip_rate": 96
+    }
+   },
+   {
+    "id": "18084559358573783",
+    "caption": "Modi ji ne 7 din mein kya kar diya? 🤯\n\n5 desh. 50+ global CEOs. $40 billion.\n\n🇦🇪 UAE — $5B investment + energy deals\n🇳🇱 ",
+    "media_product_type": "REELS",
+    "timestamp": "2026-05-25T16:15:08+0000",
+    "like_count": 26911,
+    "comments_count": 8,
+    "permalink": "https://www.instagram.com/reel/DYxJsaFBli_/",
+    "insights": {
+     "reach": 1739,
+     "views": 110586,
+     "saved": 14,
+     "shares": 145,
+     "ig_reels_avg_watch_time": 20970,
+     "reels_skip_rate": 3.8
+    }
+   },
+   {
+    "id": "17867159925553933",
+    "caption": "Roz resolve karta hoon — aaj se badlunga. 😤\n3 din baad? Wahi life.\n\nProblem willpower nahi — system hai. 💡\n\nAtomic Habit",
+    "media_product_type": "REELS",
+    "timestamp": "2026-05-24T15:45:19+0000",
+    "like_count": 53,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DYuhdEXIMEt/",
+    "insights": {
+     "reach": 500,
+     "views": 213363,
+     "saved": 0,
+     "shares": 5,
+     "ig_reels_avg_watch_time": 15344,
+     "reels_skip_rate": 96.7
+    }
+   },
+   {
+    "id": "17929890486296468",
+    "caption": "Mummy kehti hain — sone mein paisa lagao. 💛\n\nWoh galat nahi hain — par tarika galat hai.\n\nPhysical gold ka sach —\nMaking",
+    "media_product_type": "REELS",
+    "timestamp": "2026-05-23T15:45:21+0000",
+    "like_count": 37,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DYr8aAPKQ6w/",
+    "insights": {
+     "reach": 411,
+     "views": 213338,
+     "saved": 1,
+     "shares": 22,
+     "ig_reels_avg_watch_time": 15453,
+     "reels_skip_rate": 97
+    }
+   },
+   {
+    "id": "17945494785193696",
+    "caption": "Budget 2026 change: secondary market SGB buyers now face capital gains tax even at maturity  Mummy kehti hain — sone mein paisa lagao. 💛\n\nWoh galat nahi hain — par tarika galat hai.\n\nPhysical gold ka sach —\nMaking charges: 10–25% 💸\nGST: 3% alag\nLocker rent: ₹3,000–5,000/year\nInterest: ZERO\n\nAur Sovereign Gold Bond?\n✅ Same gold price ka fayda\n✅ 2.5% interest extra — har saal\n✅ 8 saal hold karo — capital gains TAX\n✅ Koi locker nahi, koi theft nahi, koi making charges nahi\n\n2018 mein ₹3,114 mein liya SGB —\naaj ₹15,000+ hai. 382% return. 🔥\n\nWar time mein gold chahiye?\nSmart gold lo — SGB lo.\n\n💾 SAVE karo — Mummy ko dikhao zaroor\n🔁 SHARE karo — koi jewellery kharidne wala ho toh\n\nComment karo 👇\n“GOLD” — agar ghar mein physical gold hai\n“SGB” — agar already smart investor ho 😎\n─────────────────────────────\n#GoldVsSGB #SovereignGoldBond #SGlearning\n#PersonalFinanceIndia #genzfinance",
+    "media_product_type": "FEED",
+    "timestamp": "2026-05-23T15:19:16+0000",
+    "like_count": 19,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/p/DYr5psdiv-6/"
+   },
+   {
+    "id": "18075510737277159",
+    "caption": "Is video ka full breakdown carousel mein hai — profile pe jaake dekho 👆 Save karo woh post bhi 💰. Raise mili. Naya phone",
+    "media_product_type": "REELS",
+    "timestamp": "2026-05-22T12:33:45+0000",
+    "like_count": 60,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DYpBZiTqugS/",
+    "insights": {
+     "reach": 469,
+     "views": 213578,
+     "saved": 1,
+     "shares": 1,
+     "ig_reels_avg_watch_time": 15500,
+     "reels_skip_rate": 95.8
+    }
+   },
+   {
+    "id": "18091814321261503",
+    "caption": "Pehle video dekha? Agar nahi — profile pe Script 10 Reel dekho pehle 🔥 Yeh uska full breakdown hai 👇  Raise mili. Naya phone liya. Zero savings. 😭\n\nYe teri galti nahi — kisi ne system nahi diya.\n\nAaj de raha hoon. Free mein. 👇\n\n50% raise ka invest karo — 3 buckets:\n🛡️ Emergency Fund — 20%\n📈 Nifty 50 SIP — 55% \n🪙 Sovereign Gold Bond — 25%\n\nBaaki 50%? Jee lo. No guilt.\n\n10 saal baad tu woh hoga jo paisa worry nahi karta.\n\nSave karo. Share karo. Shuru karo. 🔥\n─────────────────────────────\n#SGlearning #PersonalFinanceIndia #GenZFinance\n#MoneyTipsHindi #SIPInvesting FinancialFreedom\nHinglishFinance IndianInvestor WealthBuilding",
+    "media_product_type": "FEED",
+    "timestamp": "2026-05-22T12:24:34+0000",
+    "like_count": 7,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/p/DYpA3UvimO6/"
+   },
+   {
+    "id": "17914987953384727",
+    "caption": "FD mein paise rakh ke tu actually GARIB ho raha hai 😳\n\n7% return lagta hai safe —\npar inflation 6% hai.\nReal gain? Sirf ",
+    "media_product_type": "REELS",
+    "timestamp": "2026-05-21T17:01:21+0000",
+    "like_count": 64,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DYm6wZXqh89/",
+    "insights": {
+     "reach": 661,
+     "views": 268049,
+     "saved": 5,
+     "shares": 4,
+     "ig_reels_avg_watch_time": 15165,
+     "reels_skip_rate": 94.9
+    }
+   },
+   {
+    "id": "17930764434250238",
+    "caption": "Mentally still in IIM #reelítfeelit #iimraipur #convocation2025❤️🎓 #memoriesforlife❤️",
+    "media_product_type": "REELS",
+    "timestamp": "2026-04-07T05:28:55+0000",
+    "like_count": 47,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DW0ZRltgdPO/",
+    "insights": {
+     "reach": 571,
+     "views": 1045,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 9407,
+     "reels_skip_rate": 43.5
+    }
+   },
+   {
+    "id": "18072942038631780",
+    "caption": "Just learning #new #kidinai #ai #trend",
+    "media_product_type": "REELS",
+    "timestamp": "2026-03-25T12:16:49+0000",
+    "like_count": 27,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DWTps1ugS2T/",
+    "insights": {
+     "reach": 397,
+     "views": 897,
+     "saved": 1,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 7548,
+     "reels_skip_rate": 40.7
+    }
+   },
+   {
+    "id": "17980206263823588",
+    "caption": "Some people are born to stand out.\nOthers are born to sit still… and still dominate. #RoyalVibes #BlackAndBold #Attitude",
+    "media_product_type": "REELS",
+    "timestamp": "2026-03-23T16:33:20+0000",
+    "like_count": 36,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DWO9bY5Aqn8/",
+    "insights": {
+     "reach": 372,
+     "views": 813,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 5523,
+     "reels_skip_rate": 53.4
+    }
+   },
+   {
+    "id": "18315014998255261",
+    "caption": "Unplanned things #fun #reelítfeelit #trending",
+    "media_product_type": "REELS",
+    "timestamp": "2026-03-20T16:14:18+0000",
+    "like_count": 31,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DWHL3TWgsFN/",
+    "insights": {
+     "reach": 369,
+     "views": 703,
+     "saved": 0,
+     "shares": 1,
+     "ig_reels_avg_watch_time": 5199,
+     "reels_skip_rate": 53
+    }
+   },
+   {
+    "id": "18076113269130580",
+    "caption": "Have a great life. Somewhere else. 😊 #Unbothered #PeaceOfMind #MyPeaceFirst #GoodVibesOnly #ProtectYourEnergy",
+    "media_product_type": "REELS",
+    "timestamp": "2026-03-17T18:13:30+0000",
+    "like_count": 55,
+    "comments_count": 2,
+    "permalink": "https://www.instagram.com/reel/DV_rQBoAgfA/",
+    "insights": {
+     "reach": 368,
+     "views": 623,
+     "saved": 0,
+     "shares": 1,
+     "ig_reels_avg_watch_time": 8730,
+     "reels_skip_rate": 42.1
+    }
+   },
+   {
+    "id": "18100183363746835",
+    "caption": "#musicfever❤️🎶 #oldbollywoodsongs #reelítfeelit #kishorekumarsongs🎼🎶 #trying",
+    "media_product_type": "REELS",
+    "timestamp": "2026-03-17T16:01:32+0000",
+    "like_count": 14,
+    "comments_count": 1,
+    "permalink": "https://www.instagram.com/reel/DV_crjHguW7/",
+    "insights": {
+     "reach": 276,
+     "views": 418,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 3648,
+     "reels_skip_rate": 74.5
+    }
+   },
+   {
+    "id": "17978297996994331",
+    "caption": "Finance guy by day. Reel guy by choice #IntroReel #NewReel #MeetMe #Trending #reelítfeelit",
+    "media_product_type": "REELS",
+    "timestamp": "2026-03-16T06:55:44+0000",
+    "like_count": 32,
+    "comments_count": 3,
+    "permalink": "https://www.instagram.com/reel/DV75qCWAreP/",
+    "insights": {
+     "reach": 377,
+     "views": 731,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 5427,
+     "reels_skip_rate": 57.4
+    }
+   },
+   {
+    "id": "18323106679301665",
+    "caption": "Patti: I quit! 🍂 Tree: k, bye. 🌳😂#Unbothered #FunnyButTrue #GoodRiddance😂​​​​​​​",
+    "media_product_type": "REELS",
+    "timestamp": "2026-03-13T21:54:24+0000",
+    "like_count": 33,
+    "comments_count": 7,
+    "permalink": "https://www.instagram.com/reel/DV1yAbGiuxQ/",
+    "insights": {
+     "reach": 356,
+     "views": 686,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 5762,
+     "reels_skip_rate": 62.9
+    }
+   },
+   {
+    "id": "18098256158316054",
+    "caption": "Same person. Different level.👑🔥 #Confident #Motivated #Unstoppable #BelieveInYourself #winning 💪​​​​​​​​​​​​​​​​",
+    "media_product_type": "REELS",
+    "timestamp": "2026-03-12T21:16:24+0000",
+    "like_count": 55,
+    "comments_count": 3,
+    "permalink": "https://www.instagram.com/reel/DVzJK0MClMb/",
+    "insights": {
+     "reach": 380,
+     "views": 689,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 9890,
+     "reels_skip_rate": 43.5
+    }
+   },
+   {
+    "id": "17861844878744824",
+    "caption": "#skydive #dubai🇦🇪 #lifetime #experience #dream #wishlist",
+    "media_product_type": "REELS",
+    "timestamp": "2022-08-09T22:25:51+0000",
+    "like_count": 187,
+    "comments_count": 3,
+    "permalink": "https://www.instagram.com/reel/ChDi9l7qWeZ/",
+    "insights": {}
+   },
+   {
+    "id": "18108108244245703",
+    "caption": "#cakeonface",
+    "media_product_type": "FEED",
+    "timestamp": "2021-05-23T20:40:55+0000",
+    "like_count": 35,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/p/CPOq7yqLbrW/"
+   },
+   {
+    "id": "17841651724068435",
+    "caption": "Dhinchak......",
+    "media_product_type": "FEED",
+    "timestamp": "2015-06-28T13:38:37+0000",
+    "like_count": 9,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/p/4eYwTrJgyv/"
+   }
+  ]
+ }
+}
