@@ -133,6 +133,7 @@ def test_threads_posts_without_the_topic_tag_when_threads_refuses_it():
     assert "topic_tag" in seen[0] and "topic_tag" not in seen[1]
 
 
-def test_a_secret_pasted_with_a_trailing_newline_is_trimmed():
+def test_a_secret_pasted_with_a_trailing_newline_is_trimmed(monkeypatch):
     from engine import secrets
-    assert secrets.get("SG_COMMAND_KEY", {"SG_COMMAND_KEY": "abc123\n"}) == "abc123"
+    monkeypatch.setattr(secrets, "_KNOWN", set())                    # keep this made-up key out of other tests' secret scrubbing
+    assert secrets.get("SG_COMMAND_KEY", {"SG_COMMAND_KEY": "k3y-only-for-this-test\n"}) == "k3y-only-for-this-test"
