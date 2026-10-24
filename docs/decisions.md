@@ -73,6 +73,17 @@ line here (who, date) in the same change. Newest first.
 - All times told to the founder are in **WAT (Lagos)**. (founder, 22 Oct 2026)
 - The control room's live status refreshes on its own every 30 seconds. (founder, 22 Oct 2026)
 
+## Approved 24 Oct 2026 (founder: "okay yes do"), built one at a time
+- A: each YouTube Short description carries an app line with a tagged Play link (ScoreMyBiz under Learning with SG, Waypoint under
+  SG-MYTH-WORLD). The video itself does not change.
+- B: app ad posts drop from daily to 2-3 a week, each as an Instagram Trial Reel.
+- 10: YouTube comment replies: Claude drafts, Telegram Approve/Skip; after two weeks friendly replies may go automatically.
+- 7: nightly Claude routine reads the newest app crash and opens a fix pull request with a test; never merges.
+- 13: Waypoint ban-appeal review (Claude summary, founder decides) and a weekly spot-check of 20 AI moderation decisions.
+- 12a: ScoreMyBiz payment follow-up WhatsApp with a UPI pay link and "promised to pay on"; deploy only with the founder's yes.
+- Later (founder's call): 8 app releases from the phone, 9 Waypoint Expo upgrade, 12b WhatsApp entry form, 12c partner payouts,
+  11 WhatsApp usernames, the Play service account.
+
 ## Open (not decided yet; ask, don't assume)
 - WhatsApp spend after Meta's 1 Oct 2026 price change: not built. On 23 Oct ScoreMyBiz had sent 32 WhatsApp messages in 30 days,
   far under the 1,000 free a month; build the spend line when sends pass 500 a month.

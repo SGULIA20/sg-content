@@ -93,6 +93,19 @@ def _allowed_hashtags(channel: str, kind: str = "short") -> list:
     return tags[:MAX_HASHTAGS]
 
 
+APP_LINE = {"sglearning": ("scoremybiz", "📱 Dukaan ka hisaab aur business score: ScoreMyBiz app (30 din free)"),
+            "arthvan": ("waypoint", "📱 Waypoint app")}
+
+
+def app_line(piece: Piece) -> str:
+    """The channel's app with a Play link tagged for this video (Play Console then shows installs from YouTube descriptions)."""
+    from urllib.parse import quote
+    from .commentdm import PLAY
+    app, label = APP_LINE[piece.channel]
+    ref = quote(f"utm_source=youtube&utm_medium=description&utm_campaign={piece.id}", safe="")
+    return f"{label}: {PLAY[app]}&referrer={ref}"
+
+
 def metadata(piece: Piece, publish_at_utc: datetime, env=None) -> dict:
     env = {} if env is None else env
     yt = (piece.script or {}).get("captions", {}).get("youtube", {})
@@ -103,6 +116,8 @@ def metadata(piece: Piece, publish_at_utc: datetime, env=None) -> dict:
         title = title[:MAX_TITLE].rstrip()
     hashtags = _allowed_hashtags(piece.channel, piece.kind)
     parts = [(piece.script or {}).get("hook", "").strip(), " ".join(hashtags[:LEAD_HASHTAGS]), yt.get("description", "").strip()]
+    if piece.kind == "short":
+        parts.insert(2, app_line(piece))                                  # founder, 24 Oct 2026: the app rides with the content
     if piece.kind == "long":
         chapters = assemble.chapters(piece)
         if chapters:
