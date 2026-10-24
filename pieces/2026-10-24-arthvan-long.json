@@ -117,7 +117,8 @@
  "kind": "long",
  "publish_day": "2026-10-24",
  "reasons": [
-  "voice budget of 80 requests reached for 2026-10-21"
+  "voice budget of 80 requests reached for 2026-10-21",
+  "off the schedule: a Saturday SG-MYTH-WORLD long from before the 21 Oct schedule (longs Thu + Sun); retired 24 Oct 2026, founder yes"
  ],
  "script": {
   "captions": {
@@ -764,7 +765,7 @@
   },
   "title": "Hastinapur ko *Ganga* le gayi? 🤯"
  },
- "status": "failed-voice",
+ "status": "rejected",
  "timings": [],
  "topic": {
   "allowed_sources": [
@@ -785,6 +786,6 @@
   "title_hi": "Hastinapur aaj",
   "voice": "Kore"
  },
- "updated": "2026-10-21T16:51:44+00:00",
+ "updated": "2026-10-24T16:45:07+00:00",
  "writer": "claude"
 }
