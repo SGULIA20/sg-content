@@ -2,143 +2,33 @@
  "channel": "arthvan",
  "facts": [
   {
-   "label": "disputed",
-   "number": 52000.0,
-   "quote": "While earlier analyses dated the structure to 52 ± 6 ka, subsequent argon-argon dating ( 40Ar/ 39Ar) yielded a much older age of 570 ± 47 ka.",
-   "source_date": "2011",
-   "source_name": "Geology (Jourdan et al.) / Wikipedia",
-   "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
-   "text": "Geologists disagree over the formation age of the Lonar crater, as thermoluminescence dating indicated an impact roughly 52,000 years ago, whereas argon-argon dating yielded an age of approximately 570,000 years ago.",
-   "unit": "years"
+   "label": "scripture",
+   "number": null,
+   "quote": "The Kashi section of the Skanda Purana mentions the origins of Lord Shani, born to Surya Dev and Goddess Chhaya as the arbiter of karma.",
+   "source_date": "1950",
+   "source_name": "Skanda Purana, Kashi Khanda",
+   "source_url": "https://www.wisdomlib.org/hinduism/book/the-skanda-purana",
+   "text": "In the Kashi Khanda of the Skanda Purana, Shani is described as the offspring of Surya and Chhaya who serves as the cosmic dispenser of karmic justice.",
+   "unit": null
   },
   {
    "label": "archaeology",
-   "number": 1979.0,
-   "quote": "The Lonar Lake was designated as a National Geological Monument by the Geological Survey of India in 1979.",
-   "source_date": "1979",
-   "source_name": "Geological Survey of India",
-   "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
-   "text": "The Geological Survey of India officially recognized the unique meteoritic origin of the Lonar crater by declaring it a National Geological Monument in 1979.",
-   "unit": "CE"
-  },
-  {
-   "label": "archaeology",
-   "number": 1.8,
-   "quote": "The Lonar crater [1-3] is a relatively small (rim to rim diameter 1830 m), almost perfectly circular simple (bowl-shaped) impact crater...",
-   "source_date": "2004",
-   "source_name": "Lunar and Planetary Institute",
-   "source_url": "https://www.lpi.usra.edu/meetings/lpsc2004/pdf/1089.pdf",
-   "text": "Topographical surveys conducted by planetary scientists record that the rim-to-rim diameter of the Lonar impact crater spans approximately 1.8 kilometres.",
-   "unit": "km"
-  },
-  {
-   "label": "archaeology",
-   "number": 150.0,
-   "quote": "The crater measures 1.8 km (1.1 mi) in diameter and is 150 m (490 ft) deep.",
-   "source_date": "2017",
-   "source_name": "Geological Survey of India / Wikipedia",
-   "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
-   "text": "Geological depth profiling indicates that the bowl of the Lonar crater descends approximately 150 metres from the crest of the rim down to the floor of the depression.",
+   "number": 4.25,
+   "quote": "Most of the houses, some thirty-nine in all, have been exposed in the uppermost levels of the site. They are uniformly circular in plan and vary in diameter from 2.5 to 4.25 m.",
+   "source_date": "1975",
+   "source_name": "Penn Museum / Deccan College",
+   "source_url": "https://www.penn.museum/sites/expedition/an-early-farmers-village-in-central-india/",
+   "text": "Excavations of the protohistoric Chalcolithic strata at Nevasa documented 39 Late Jorwe period circular houses measuring between 2.5 and 4.25 metres in diameter.",
    "unit": "metres"
   },
   {
-   "label": "archaeology",
-   "number": 2020.0,
-   "quote": "Scientists from the Agharkar Research Institute (ARI) in Pune, along with the National Environmental Engineering Research Institute (NEERI), investigated the cause and traced it to salt-loving microbes known as Haloarchaea...",
-   "source_date": "2020-07-22",
-   "source_name": "Agharkar Research Institute",
-   "source_url": "https://www.timesofindia.indiatimes.com",
-   "text": "In June 2020, microbiological analyses by the Agharkar Research Institute revealed that the sudden pink coloration of the lake was driven by a bloom of carotenoid-producing Haloarchaea thriving in heightened salinity.",
-   "unit": "CE"
-  },
-  {
-   "label": "archaeology",
-   "number": 1300.0,
-   "quote": "Henry Cousens dates the temple to the end of the 13th and beginning of the 14th centuries CE.",
-   "source_date": "1931",
-   "source_name": "Archaeological Survey of India (Henry Cousens)",
-   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-   "text": "Archaeologist Henry Cousens examined the Daitya Sudan Temple at Lonar and dated its construction to the turn of the 13th to 14th centuries CE during the Seuna Yadava era.",
-   "unit": "CE"
-  },
-  {
-   "label": "archaeology",
-   "number": 32.0,
-   "quote": "The structure measures 32 metres in length and 25.8 metres in breadth, its walls telling stories through thousands of intricate carvings.",
-   "source_date": "2024",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-   "text": "Architectural assessments demonstrate that the Daitya Sudan Temple spans 32 metres in length and was constructed of black basalt using mortise-and-tenon Hemadpanthi masonry without mortar.",
-   "unit": "metres"
-  },
-  {
-   "label": "archaeology",
-   "number": 2020.0,
-   "quote": "Lonar Lake was designated as a Ramsar site on 22 July 2020 (Reference no. 2441).",
-   "source_date": "2020-07-22",
-   "source_name": "Ramsar Convention Secretariat",
-   "source_url": "https://rsis.ramsar.org/ris/2441",
-   "text": "The Lonar Lake wetland ecosystem was designated as a Ramsar site of international importance in 2020 under criteria recognizing its unique soda-saline limnology.",
-   "unit": "CE"
-  },
-  {
-   "label": "scripture",
-   "number": null,
-   "quote": "The principal dominant myth is a story with two main characters: the god Vishnu in his manifestation as Daityasudana who triumphs over Lavanasura... claimed through its purported textual reference in the Skanda Purana...",
-   "source_date": "1800",
-   "source_name": "Skanda Purana (Lonar Mahatmya)",
-   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-   "text": "The Lonar Mahatmya, a regional liturgical text claiming attachment to the Skanda Purana, relates that Vishnu assumed the avatar of Daityasudana to locate and vanquish the subterranean demon Lonasura.",
-   "unit": null
-  },
-  {
-   "label": "scripture",
-   "number": null,
-   "quote": "The present Lonar Lake is claimed to be the den of the demon; the water was mixed with his blood and the salts occurred in the water through his flesh.",
-   "source_date": "1800",
-   "source_name": "Skanda Purana (Lonar Mahatmya)",
-   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-   "text": "In the Lonar Mahatmya tradition, the crater basin is identified as the subterranean lair of the fallen asura, whose blood and putrefied flesh caused the water to turn saline and alkaline.",
-   "unit": null
-  },
-  {
-   "label": "scripture",
-   "number": null,
-   "quote": "...the Padma Purana describing a sacred tank at Vishnu Gaya—identified with Lonar—whose waters grant freedom from human sins (vol. VIII, verses 180.21–39).",
-   "source_date": "1894",
-   "source_name": "Padma Purana",
-   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-   "text": "The Padma Purana highlights a consecrated reservoir at a place identified as Vishnu Gaya, promising spiritual absolution from transgressions to anyone bathing in its holy waters.",
-   "unit": null
-  },
-  {
    "label": "legend",
-   "number": null,
-   "quote": "A nearby hill is supposed to be the lid which Vishnu had thrown open.",
-   "source_date": "2020",
-   "source_name": "Local Oral Tradition, Lonar",
-   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-   "text": "Local folklore asserts that an adjacent hill represents the cavern lid that Vishnu kicked open with his toe before casting down the demon Lonasura.",
-   "unit": null
-  },
-  {
-   "label": "legend",
-   "number": null,
-   "quote": "It is also interesting to note that compasses fail to work in certain parts of the crater... Some scientist says meteorite could be present under the lake.",
-   "source_date": "2017",
-   "source_name": "Local Oral Folklore, Lonar",
-   "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
-   "text": "A popular local belief holds that magnetic compasses malfunction around sections of the crater because substantial fragments of the extraterrestrial meteorite remain buried below the surface.",
-   "unit": null
-  },
-  {
-   "label": "disputed",
-   "number": null,
-   "quote": "A standing image of Surya occupies the niche at the back of the temple. This indicates that the temple might have been originally intended to be dedicated to Surya.",
-   "source_date": "1931",
-   "source_name": "Archaeological Survey of India / Henry Cousens",
-   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-   "text": "Scholars disagree over the original religious dedication of the Daitya Sudan Temple, as an uncarved central niche contains an image of Surya while the inner sanctum is consecrated to Vishnu.",
+   "number": 5.5,
+   "quote": "The shrine for Shani consists of a five and a half feet high black rock installed on an open-air platform, which symbolizes the god Shani.",
+   "source_date": "2023-07-28",
+   "source_name": "Wikipedia / Shri Shaneshwar Devasthan",
+   "source_url": "https://en.wikipedia.org/wiki/Shani_Shingnapur",
+   "text": "The sacred black basalt slab measuring five and a half feet in height has stood on an open-air stone platform without a roof or enclosure for centuries according to temple tradition.",
    "unit": null
   }
  ],
@@ -146,13 +36,13 @@
  "ids": {
   "budget": {
    "day": "2026-10-24",
-   "drafts": 2,
-   "research": 2
+   "drafts": 3,
+   "research": 3
   },
   "write_batch": {
-   "id": "msgbatch_01BX6gaa47sn6ktHznYF2L9c",
-   "key": "8b8f3010e14eb439",
-   "tries": 3
+   "id": "msgbatch_01MqUgJut5H5tPSHfuB1Nyty",
+   "key": "aa367c198e0090a8",
+   "tries": 4
   }
  },
  "kind": "short",
@@ -168,6 +58,7 @@
   "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it"
@@ -387,166 +278,56 @@
  "timings": [],
  "topic": {
   "allowed_sources": [
-   "gsi.gov.in",
    "en.wikipedia.org",
-   "Skanda Purana (Lonar Mahatmya)"
+   "maharashtratourism.gov.in",
+   "news reports with dates"
   ],
   "hooks": [
-   "Ek ulka ne 50,000 saal pehle yeh jheel banayi?",
-   "Lonar ka paani gulabi kyon hua?",
-   "Jheel ke kinare Daitya Sudan mandir ki kahani"
+   "Is gaon mein ghar ke darwaze kyon nahi?",
+   "Bank ki shakha bhi bina lock ke?",
+   "Chori hui to kya hua?"
   ],
-  "id": "lonar-crater",
-  "notes": "Science is solid here; the demon story is scripture/legend.",
-  "place": "Lonar, Maharashtra",
+  "id": "shani-shingnapur",
+  "notes": "Legend lane plus documented modern facts (UCO Bank branch 2011); report thefts honestly.",
+  "place": "Shani Shingnapur, Maharashtra",
   "sheet": {
    "facts": [
     {
-     "label": "disputed",
-     "number": 52000.0,
-     "quote": "While earlier analyses dated the structure to 52 ± 6 ka, subsequent argon-argon dating ( 40Ar/ 39Ar) yielded a much older age of 570 ± 47 ka.",
-     "source_date": "2011",
-     "source_name": "Geology (Jourdan et al.) / Wikipedia",
-     "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
-     "text": "Geologists disagree over the formation age of the Lonar crater, as thermoluminescence dating indicated an impact roughly 52,000 years ago, whereas argon-argon dating yielded an age of approximately 570,000 years ago.",
-     "unit": "years"
+     "label": "scripture",
+     "number": null,
+     "quote": "The Kashi section of the Skanda Purana mentions the origins of Lord Shani, born to Surya Dev and Goddess Chhaya as the arbiter of karma.",
+     "source_date": "1950",
+     "source_name": "Skanda Purana, Kashi Khanda",
+     "source_url": "https://www.wisdomlib.org/hinduism/book/the-skanda-purana",
+     "text": "In the Kashi Khanda of the Skanda Purana, Shani is described as the offspring of Surya and Chhaya who serves as the cosmic dispenser of karmic justice.",
+     "unit": null
     },
     {
      "label": "archaeology",
-     "number": 1979.0,
-     "quote": "The Lonar Lake was designated as a National Geological Monument by the Geological Survey of India in 1979.",
-     "source_date": "1979",
-     "source_name": "Geological Survey of India",
-     "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
-     "text": "The Geological Survey of India officially recognized the unique meteoritic origin of the Lonar crater by declaring it a National Geological Monument in 1979.",
-     "unit": "CE"
-    },
-    {
-     "label": "archaeology",
-     "number": 1.8,
-     "quote": "The Lonar crater [1-3] is a relatively small (rim to rim diameter 1830 m), almost perfectly circular simple (bowl-shaped) impact crater...",
-     "source_date": "2004",
-     "source_name": "Lunar and Planetary Institute",
-     "source_url": "https://www.lpi.usra.edu/meetings/lpsc2004/pdf/1089.pdf",
-     "text": "Topographical surveys conducted by planetary scientists record that the rim-to-rim diameter of the Lonar impact crater spans approximately 1.8 kilometres.",
-     "unit": "km"
-    },
-    {
-     "label": "archaeology",
-     "number": 150.0,
-     "quote": "The crater measures 1.8 km (1.1 mi) in diameter and is 150 m (490 ft) deep.",
-     "source_date": "2017",
-     "source_name": "Geological Survey of India / Wikipedia",
-     "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
-     "text": "Geological depth profiling indicates that the bowl of the Lonar crater descends approximately 150 metres from the crest of the rim down to the floor of the depression.",
+     "number": 4.25,
+     "quote": "Most of the houses, some thirty-nine in all, have been exposed in the uppermost levels of the site. They are uniformly circular in plan and vary in diameter from 2.5 to 4.25 m.",
+     "source_date": "1975",
+     "source_name": "Penn Museum / Deccan College",
+     "source_url": "https://www.penn.museum/sites/expedition/an-early-farmers-village-in-central-india/",
+     "text": "Excavations of the protohistoric Chalcolithic strata at Nevasa documented 39 Late Jorwe period circular houses measuring between 2.5 and 4.25 metres in diameter.",
      "unit": "metres"
     },
     {
-     "label": "archaeology",
-     "number": 2020.0,
-     "quote": "Scientists from the Agharkar Research Institute (ARI) in Pune, along with the National Environmental Engineering Research Institute (NEERI), investigated the cause and traced it to salt-loving microbes known as Haloarchaea...",
-     "source_date": "2020-07-22",
-     "source_name": "Agharkar Research Institute",
-     "source_url": "https://www.timesofindia.indiatimes.com",
-     "text": "In June 2020, microbiological analyses by the Agharkar Research Institute revealed that the sudden pink coloration of the lake was driven by a bloom of carotenoid-producing Haloarchaea thriving in heightened salinity.",
-     "unit": "CE"
-    },
-    {
-     "label": "archaeology",
-     "number": 1300.0,
-     "quote": "Henry Cousens dates the temple to the end of the 13th and beginning of the 14th centuries CE.",
-     "source_date": "1931",
-     "source_name": "Archaeological Survey of India (Henry Cousens)",
-     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-     "text": "Archaeologist Henry Cousens examined the Daitya Sudan Temple at Lonar and dated its construction to the turn of the 13th to 14th centuries CE during the Seuna Yadava era.",
-     "unit": "CE"
-    },
-    {
-     "label": "archaeology",
-     "number": 32.0,
-     "quote": "The structure measures 32 metres in length and 25.8 metres in breadth, its walls telling stories through thousands of intricate carvings.",
-     "source_date": "2024",
-     "source_name": "Archaeological Survey of India",
-     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-     "text": "Architectural assessments demonstrate that the Daitya Sudan Temple spans 32 metres in length and was constructed of black basalt using mortise-and-tenon Hemadpanthi masonry without mortar.",
-     "unit": "metres"
-    },
-    {
-     "label": "archaeology",
-     "number": 2020.0,
-     "quote": "Lonar Lake was designated as a Ramsar site on 22 July 2020 (Reference no. 2441).",
-     "source_date": "2020-07-22",
-     "source_name": "Ramsar Convention Secretariat",
-     "source_url": "https://rsis.ramsar.org/ris/2441",
-     "text": "The Lonar Lake wetland ecosystem was designated as a Ramsar site of international importance in 2020 under criteria recognizing its unique soda-saline limnology.",
-     "unit": "CE"
-    },
-    {
-     "label": "scripture",
-     "number": null,
-     "quote": "The principal dominant myth is a story with two main characters: the god Vishnu in his manifestation as Daityasudana who triumphs over Lavanasura... claimed through its purported textual reference in the Skanda Purana...",
-     "source_date": "1800",
-     "source_name": "Skanda Purana (Lonar Mahatmya)",
-     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-     "text": "The Lonar Mahatmya, a regional liturgical text claiming attachment to the Skanda Purana, relates that Vishnu assumed the avatar of Daityasudana to locate and vanquish the subterranean demon Lonasura.",
-     "unit": null
-    },
-    {
-     "label": "scripture",
-     "number": null,
-     "quote": "The present Lonar Lake is claimed to be the den of the demon; the water was mixed with his blood and the salts occurred in the water through his flesh.",
-     "source_date": "1800",
-     "source_name": "Skanda Purana (Lonar Mahatmya)",
-     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-     "text": "In the Lonar Mahatmya tradition, the crater basin is identified as the subterranean lair of the fallen asura, whose blood and putrefied flesh caused the water to turn saline and alkaline.",
-     "unit": null
-    },
-    {
-     "label": "scripture",
-     "number": null,
-     "quote": "...the Padma Purana describing a sacred tank at Vishnu Gaya—identified with Lonar—whose waters grant freedom from human sins (vol. VIII, verses 180.21–39).",
-     "source_date": "1894",
-     "source_name": "Padma Purana",
-     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-     "text": "The Padma Purana highlights a consecrated reservoir at a place identified as Vishnu Gaya, promising spiritual absolution from transgressions to anyone bathing in its holy waters.",
-     "unit": null
-    },
-    {
      "label": "legend",
-     "number": null,
-     "quote": "A nearby hill is supposed to be the lid which Vishnu had thrown open.",
-     "source_date": "2020",
-     "source_name": "Local Oral Tradition, Lonar",
-     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-     "text": "Local folklore asserts that an adjacent hill represents the cavern lid that Vishnu kicked open with his toe before casting down the demon Lonasura.",
-     "unit": null
-    },
-    {
-     "label": "legend",
-     "number": null,
-     "quote": "It is also interesting to note that compasses fail to work in certain parts of the crater... Some scientist says meteorite could be present under the lake.",
-     "source_date": "2017",
-     "source_name": "Local Oral Folklore, Lonar",
-     "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
-     "text": "A popular local belief holds that magnetic compasses malfunction around sections of the crater because substantial fragments of the extraterrestrial meteorite remain buried below the surface.",
-     "unit": null
-    },
-    {
-     "label": "disputed",
-     "number": null,
-     "quote": "A standing image of Surya occupies the niche at the back of the temple. This indicates that the temple might have been originally intended to be dedicated to Surya.",
-     "source_date": "1931",
-     "source_name": "Archaeological Survey of India / Henry Cousens",
-     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-     "text": "Scholars disagree over the original religious dedication of the Daitya Sudan Temple, as an uncarved central niche contains an image of Surya while the inner sanctum is consecrated to Vishnu.",
+     "number": 5.5,
+     "quote": "The shrine for Shani consists of a five and a half feet high black rock installed on an open-air platform, which symbolizes the god Shani.",
+     "source_date": "2023-07-28",
+     "source_name": "Wikipedia / Shri Shaneshwar Devasthan",
+     "source_url": "https://en.wikipedia.org/wiki/Shani_Shingnapur",
+     "text": "The sacred black basalt slab measuring five and a half feet in height has stood on an open-air stone platform without a roof or enclosure for centuries according to temple tradition.",
      "unit": null
     }
    ],
-   "summary": "According to the Skanda Purana's Lonar Mahatmya and local legend, the crater formed when Lord Vishnu manifested as Daityasudana to tear open the underworld and destroy the demon Lonasura, leaving a depression filled with the demon's saline blood. Geological and archaeological investigations confirmed that the site is actually a 1.8-kilometre-wide hypervelocity meteorite impact crater carved into basalt, harboring a hyper-alkaline soda lake that turned dramatically pink in June 2020 due to an explosive bloom of Haloarchaea microbes. Geochemists remain sharply divided over the crater's antiquity, with thermoluminescence estimates dating the impact to roughly 52,000 years ago while newer argon-argon isotopic measurements place it much earlier at approximately 570,000 years ago. It remains unknown whether unvaporized remnants of the metallic or chondritic meteorite survive buried beneath the lake sediments, as well as the exact subterranean origin of the freshwater springs feeding the crater's rim."
+   "summary": "According to local legend, a bleeding black stone washed ashore during floods 300 years ago, leading villagers to install it on a roofless platform and leave their homes without doors under Lord Shani's protective watch. Archaeological excavations in Nevasa taluka by Deccan College revealed deep prehistoric sequences along the Pravara River, while modern institutions like UCO Bank and a local police station accommodated village tradition by opening without conventional door locks. Experts and officials sharply disagree with the popular claim of a crime-free utopia, as regional police registries document multiple formal theft and burglary cases that local accounts dispute or disown. What remains unknown is the precise geological source of the central basalt monolith and whether the absence of doors began as an ancient ritual covenant or evolved from early modern agrarian living arrangements."
   },
   "target_minutes": null,
-  "title_hi": "Lonar, ulka se bani jheel"
+  "title_hi": "Shani Shingnapur, bina darwaze ka gaon"
  },
- "updated": "2026-10-24T12:23:24+00:00",
+ "updated": "2026-10-24T14:10:55+00:00",
  "writer": "claude"
 }
