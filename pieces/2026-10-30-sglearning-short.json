@@ -2,63 +2,94 @@
  "channel": "sglearning",
  "facts": [
   {
-   "label": "reported",
-   "number": 195000.0,
-   "quote": "The MCX silver rate today has decisively slipped below ₹2 lakh per kg and is currently quoting at around ₹1,95,000 per kg, logging an intraday loss of nearly ₹4,500 per kg on Friday.",
-   "source_date": "2026-10-23",
+   "label": "official",
+   "number": 30213.0,
+   "quote": "Reliance Jio IPO: Reliance Jio Platforms' ₹30,213-crore initial public offering has concluded its subscription process, setting the stage for the allotment announcement on October 26, 2026.",
+   "source_date": "2026-10-24",
    "source_name": "Mint",
-   "source_url": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
-   "text": "Domestic silver futures slipped below the critical psychological threshold to trade around 1,95,000 rupees per kilogram on the Multi Commodity Exchange.",
-   "unit": "INR/kg"
+   "source_url": "https://www.livemint.com/market/ipo/reliance-jio-platforms-ipo-gmp-listing-date-and-time-share-price-prediction-for-nse-bse-debut-details-11792848439962.html",
+   "text": "Reliance Jio Platforms raised ₹30,213 crore through its initial public offering ahead of share allotment.",
+   "unit": "crore INR"
   },
   {
    "label": "reported",
-   "number": 53.5,
-   "quote": "Compared with the record high of ₹4,20,048 per kg that the precious metal hit on 29 January 2026 on the MCX, the silver price today is around 53.50% below that record.",
-   "source_date": "2026-10-23",
+   "number": 22.19,
+   "quote": "The overall issue was subscribed 22.19 times by the end of the three-day bidding period.",
+   "source_date": "2026-10-24",
    "source_name": "Mint",
-   "source_url": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
-   "text": "Silver prices in India have plunged 53.50 percent from the record high achieved in late January 2026.",
-   "unit": "pct"
+   "source_url": "https://www.livemint.com/market/ipo/reliance-jio-platforms-ipo-gmp-listing-date-and-time-share-price-prediction-for-nse-bse-debut-details-11792848439962.html",
+   "text": "The overall initial public offering was subscribed 22.19 times across all categories by the end of the three-day bidding window.",
+   "unit": "times"
   },
   {
-   "label": "analyst-view",
-   "number": 240000.0,
-   "quote": "They said that the silver price in India may end at ₹2,40,000 and at $67 per ounce in the international market at the end of December 2026.",
-   "source_date": "2026-10-23",
+   "label": "reported",
+   "number": 70.55,
+   "quote": "The qualified institutional buyers (QIB) portion was subscribed 70.55 times, while the non-institutional investors (NII) category received bids equivalent to 14 times the shares reserved for it.",
+   "source_date": "2026-10-24",
    "source_name": "Mint",
-   "source_url": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
-   "text": "Commodity market experts project that the domestic silver price could conclude December 2026 near 2,40,000 rupees per kilogram.",
+   "source_url": "https://www.livemint.com/market/ipo/reliance-jio-platforms-ipo-gmp-listing-date-and-time-share-price-prediction-for-nse-bse-debut-details-11792848439962.html",
+   "text": "Institutional demand led the offering with the qualified institutional buyers category subscribed 70.55 times.",
+   "unit": "times"
+  },
+  {
+   "label": "reported",
+   "number": 250.0,
+   "quote": "The Jio Platforms IPO's grey market premium stood at ₹250, according to media reports.",
+   "source_date": "2026-10-24",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/ipo/reliance-jio-platforms-ipo-gmp-listing-date-and-time-share-price-prediction-for-nse-bse-debut-details-11792848439962.html",
+   "text": "The grey market premium for Jio Platforms shares stood at ₹250 ahead of the exchange debut.",
    "unit": "INR"
   },
   {
-   "label": "analyst-view",
-   "number": 185000.0,
-   "quote": "However, they said that the silver price in India may offer good returns if someone starts accumulating the precious white metal from ₹1,85,000 and keeps adding on every big dip until it is sustained above ₹1,70,000.",
-   "source_date": "2026-10-23",
+   "label": "official",
+   "number": 27500.0,
+   "quote": "According to the company's red herring prospectus (RHP), ₹27,500 crore from the proceeds will be used to repay borrowings of its wholly owned telecom subsidiary, Reliance Jio Infocomm Ltd (RJIL).",
+   "source_date": "2026-10-24",
    "source_name": "Mint",
-   "source_url": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
-   "text": "Market analysts identify 1,85,000 rupees as an initial accumulation floor for silver during pullbacks as long as prices remain above 1,70,000 rupees.",
+   "source_url": "https://www.livemint.com/market/ipo/reliance-jio-platforms-ipo-gmp-listing-date-and-time-share-price-prediction-for-nse-bse-debut-details-11792848439962.html",
+   "text": "Reliance Jio Platforms earmarked ₹27,500 crore from the issue proceeds to repay debt of its telecom subsidiary.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "official",
+   "number": 54.0,
+   "quote": "The IPO also reserved up to 46,94,836 shares for employees, offered at a discount of ₹54 per share to the issue price.",
+   "source_date": "2026-10-24",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/ipo/reliance-jio-platforms-ipo-gmp-listing-date-and-time-share-price-prediction-for-nse-bse-debut-details-11792848439962.html",
+   "text": "Salaried corporate employees eligible under the employee quota were offered a discount of ₹54 per share against the issue price.",
    "unit": "INR"
+  },
+  {
+   "label": "reported",
+   "number": 25867.0,
+   "quote": "The public offering alone attracted bids worth more than ₹4.9 trillion, excluding the anchor book, and retail demand exceeded ₹25,867 crore, according to stock exchange data.",
+   "source_date": "2026-10-23",
+   "source_name": "Business Standard",
+   "source_url": "https://www.business-standard.com/markets/ipo/jio-platforms-ipo-rides-institutional-demand-to-22-19-times-subscription-126102301552_1.html",
+   "text": "Total retail investor demand generated bids exceeding ₹25,867 crore during the primary offering.",
+   "unit": "crore INR"
   }
  ],
  "id": "2026-10-30-sglearning-short",
  "ids": {
   "budget": {
    "day": "2026-10-24",
-   "drafts": 2,
-   "research": 1
+   "drafts": 3,
+   "research": 2
   },
   "write_batch": {
-   "id": "msgbatch_01GgesAHzFEGEDQJT4bfKShc",
-   "key": "50c49ad5495904e3",
-   "tries": 1
+   "id": "msgbatch_01A4oskQRxN4LhZfpbBh1KXV",
+   "key": "91f30b35623e17d4",
+   "tries": 2
   }
  },
  "kind": "short",
  "publish_day": "2026-10-30",
  "reasons": [
   "try 1: length: 118 words, allowed 150-260",
+  "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it"
  ],
  "script": {
@@ -207,60 +238,89 @@
  "status": "writing",
  "timings": [],
  "topic": {
-  "link": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
-  "published": "2026-10-24T12:05:14+00:00",
+  "link": "https://www.livemint.com/market/ipo/reliance-jio-platforms-ipo-gmp-listing-date-and-time-share-price-prediction-for-nse-bse-debut-details-11792848439962.html",
+  "published": "2026-10-24T13:31:25+00:00",
   "rank": 3,
-  "revise": "length: 118 words, allowed 150-260",
   "sheet": {
    "facts": [
     {
-     "label": "reported",
-     "number": 195000.0,
-     "quote": "The MCX silver rate today has decisively slipped below ₹2 lakh per kg and is currently quoting at around ₹1,95,000 per kg, logging an intraday loss of nearly ₹4,500 per kg on Friday.",
-     "source_date": "2026-10-23",
+     "label": "official",
+     "number": 30213.0,
+     "quote": "Reliance Jio IPO: Reliance Jio Platforms' ₹30,213-crore initial public offering has concluded its subscription process, setting the stage for the allotment announcement on October 26, 2026.",
+     "source_date": "2026-10-24",
      "source_name": "Mint",
-     "source_url": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
-     "text": "Domestic silver futures slipped below the critical psychological threshold to trade around 1,95,000 rupees per kilogram on the Multi Commodity Exchange.",
-     "unit": "INR/kg"
+     "source_url": "https://www.livemint.com/market/ipo/reliance-jio-platforms-ipo-gmp-listing-date-and-time-share-price-prediction-for-nse-bse-debut-details-11792848439962.html",
+     "text": "Reliance Jio Platforms raised ₹30,213 crore through its initial public offering ahead of share allotment.",
+     "unit": "crore INR"
     },
     {
      "label": "reported",
-     "number": 53.5,
-     "quote": "Compared with the record high of ₹4,20,048 per kg that the precious metal hit on 29 January 2026 on the MCX, the silver price today is around 53.50% below that record.",
-     "source_date": "2026-10-23",
+     "number": 22.19,
+     "quote": "The overall issue was subscribed 22.19 times by the end of the three-day bidding period.",
+     "source_date": "2026-10-24",
      "source_name": "Mint",
-     "source_url": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
-     "text": "Silver prices in India have plunged 53.50 percent from the record high achieved in late January 2026.",
-     "unit": "pct"
+     "source_url": "https://www.livemint.com/market/ipo/reliance-jio-platforms-ipo-gmp-listing-date-and-time-share-price-prediction-for-nse-bse-debut-details-11792848439962.html",
+     "text": "The overall initial public offering was subscribed 22.19 times across all categories by the end of the three-day bidding window.",
+     "unit": "times"
     },
     {
-     "label": "analyst-view",
-     "number": 240000.0,
-     "quote": "They said that the silver price in India may end at ₹2,40,000 and at $67 per ounce in the international market at the end of December 2026.",
-     "source_date": "2026-10-23",
+     "label": "reported",
+     "number": 70.55,
+     "quote": "The qualified institutional buyers (QIB) portion was subscribed 70.55 times, while the non-institutional investors (NII) category received bids equivalent to 14 times the shares reserved for it.",
+     "source_date": "2026-10-24",
      "source_name": "Mint",
-     "source_url": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
-     "text": "Commodity market experts project that the domestic silver price could conclude December 2026 near 2,40,000 rupees per kilogram.",
+     "source_url": "https://www.livemint.com/market/ipo/reliance-jio-platforms-ipo-gmp-listing-date-and-time-share-price-prediction-for-nse-bse-debut-details-11792848439962.html",
+     "text": "Institutional demand led the offering with the qualified institutional buyers category subscribed 70.55 times.",
+     "unit": "times"
+    },
+    {
+     "label": "reported",
+     "number": 250.0,
+     "quote": "The Jio Platforms IPO's grey market premium stood at ₹250, according to media reports.",
+     "source_date": "2026-10-24",
+     "source_name": "Mint",
+     "source_url": "https://www.livemint.com/market/ipo/reliance-jio-platforms-ipo-gmp-listing-date-and-time-share-price-prediction-for-nse-bse-debut-details-11792848439962.html",
+     "text": "The grey market premium for Jio Platforms shares stood at ₹250 ahead of the exchange debut.",
      "unit": "INR"
     },
     {
-     "label": "analyst-view",
-     "number": 185000.0,
-     "quote": "However, they said that the silver price in India may offer good returns if someone starts accumulating the precious white metal from ₹1,85,000 and keeps adding on every big dip until it is sustained above ₹1,70,000.",
-     "source_date": "2026-10-23",
+     "label": "official",
+     "number": 27500.0,
+     "quote": "According to the company's red herring prospectus (RHP), ₹27,500 crore from the proceeds will be used to repay borrowings of its wholly owned telecom subsidiary, Reliance Jio Infocomm Ltd (RJIL).",
+     "source_date": "2026-10-24",
      "source_name": "Mint",
-     "source_url": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
-     "text": "Market analysts identify 1,85,000 rupees as an initial accumulation floor for silver during pullbacks as long as prices remain above 1,70,000 rupees.",
+     "source_url": "https://www.livemint.com/market/ipo/reliance-jio-platforms-ipo-gmp-listing-date-and-time-share-price-prediction-for-nse-bse-debut-details-11792848439962.html",
+     "text": "Reliance Jio Platforms earmarked ₹27,500 crore from the issue proceeds to repay debt of its telecom subsidiary.",
+     "unit": "crore INR"
+    },
+    {
+     "label": "official",
+     "number": 54.0,
+     "quote": "The IPO also reserved up to 46,94,836 shares for employees, offered at a discount of ₹54 per share to the issue price.",
+     "source_date": "2026-10-24",
+     "source_name": "Mint",
+     "source_url": "https://www.livemint.com/market/ipo/reliance-jio-platforms-ipo-gmp-listing-date-and-time-share-price-prediction-for-nse-bse-debut-details-11792848439962.html",
+     "text": "Salaried corporate employees eligible under the employee quota were offered a discount of ₹54 per share against the issue price.",
      "unit": "INR"
+    },
+    {
+     "label": "reported",
+     "number": 25867.0,
+     "quote": "The public offering alone attracted bids worth more than ₹4.9 trillion, excluding the anchor book, and retail demand exceeded ₹25,867 crore, according to stock exchange data.",
+     "source_date": "2026-10-23",
+     "source_name": "Business Standard",
+     "source_url": "https://www.business-standard.com/markets/ipo/jio-platforms-ipo-rides-institutional-demand-to-22-19-times-subscription-126102301552_1.html",
+     "text": "Total retail investor demand generated bids exceeding ₹25,867 crore during the primary offering.",
+     "unit": "crore INR"
     }
    ],
-   "summary": "Domestic silver prices have broken below the ₹2 lakh per kilogram mark to an 11-month low, erasing all calendar-year gains and dropping more than 53 percent from January's peak amid higher bond yields and cooling industrial demand. Salaried households face wider economic ripple effects as crude oil trading above $110 per barrel keeps local fuel prices elevated and feeds broad inflationary pressures. With the central bank responding by raising the benchmark repo rate, families must brace for higher borrowing costs that will directly increase home and auto loan EMIs."
+   "summary": "Reliance Jio Platforms completed India's largest public offering of ₹30,213 crore after drawing an overall subscription of 22.19 times, primarily driven by qualified institutional buyers. Salaried households should take note because the issue directly impacts retail portfolios and monthly mutual fund SIP returns, with domestic fund schemes cornering over a third of the anchor book. Furthermore, directing ₹27,500 crore of proceeds to retire telecom debt strengthens the company's balance sheet, which influences future broadband connectivity charges and monthly digital service prices for consumer families."
   },
   "source": "Mint Markets",
-  "summary": "A steep sell-off pushed silver below  ₹2 lakh per kg, wiping out its 2026 gains and leaving prices more than 50% below January’s record. Higher energy costs and rate-hike concerns are weighing on the metal, though analysts see potential support around  ₹1,80,000– ₹1,85,000.",
+  "summary": "Reliance Jio Platforms’ IPO was subscribed 22.19 times, led by 70.55-times demand from qualified institutional buyers. Its grey market premium was reported at  ₹248, suggesting an estimated listing price of  ₹1,367, or a 22.16% gain over the upper price band.&amp;nbsp;",
   "target_minutes": null,
-  "title": "Silver price has broken below  ₹2 lakh for the first time since December 2025: Is this the right time to buy for returns?"
+  "title": "Reliance Jio Platforms IPO GMP, listing date and time, share price prediction for NSE, BSE debut - Details"
  },
- "updated": "2026-10-24T12:37:29+00:00",
+ "updated": "2026-10-24T14:23:07+00:00",
  "writer": "claude"
 }
