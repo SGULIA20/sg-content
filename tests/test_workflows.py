@@ -48,14 +48,13 @@ def test_docs_secrets_lists_every_secret():
         assert name in doc, name
 
 
-def test_produce_commit_step_always_runs_and_pulls_before_push():
+def test_produce_commit_step_always_runs_and_syncs_through_gitsync():
     text = (ROOT / ".github" / "workflows" / "produce.yml").read_text()
     data = yaml.safe_load(text)
     steps = data["jobs"]["produce"]["steps"]
     commit = next(s for s in steps if "Commit" in s.get("name", ""))
     assert commit.get("if") == "always()"
-    assert "git pull --rebase" in commit["run"] and "git add -f" in commit["run"]
-    assert "content/voice.json" not in commit["run"] or "[ -f content/voice.json ]" in commit["run"]
+    assert "engine.gitsync" in commit["run"] and "git pull --rebase" not in commit["run"]        # one sync path that never leaves a stuck rebase (24 Oct 2026)
     assert any("actions/cache" in s.get("uses", "") for s in steps)
 
 
@@ -70,7 +69,7 @@ def test_publish_picks_channel_from_schedule_not_clock():
     assert "github.event.schedule" in text and "date -u +%H" not in text
     assert yaml.safe_load(text)["jobs"]["publish"]["timeout-minutes"] >= 60
     commit = next(s for s in yaml.safe_load(text)["jobs"]["publish"]["steps"] if "Commit" in s.get("name", ""))
-    assert commit.get("if") == "always()" and "git pull --rebase" in commit["run"]
+    assert commit.get("if") == "always()" and "engine.gitsync" in commit["run"] and "pieces logs" in commit["run"]
 
 
 def test_gitsync_records_out_sha_after_commit(tmp_path):
