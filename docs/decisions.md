@@ -80,7 +80,9 @@ line here (who, date) in the same change. Newest first.
 - 10: YouTube comment replies: Claude drafts, Telegram Approve/Skip; after two weeks friendly replies may go automatically.
 - 7: nightly Claude routine reads the newest app crash and opens a fix pull request with a test; never merges.
 - 13: Waypoint ban-appeal review (Claude summary, founder decides) and a weekly spot-check of 20 AI moderation decisions.
-- 12a: ScoreMyBiz payment follow-up WhatsApp with a UPI pay link and "promised to pay on"; deploy only with the founder's yes.
+- 12a: ScoreMyBiz payment follow-up WhatsApp: **left** by the founder (24 Oct 2026, "leave 12a"). Do not build or re-propose it.
+  Found first: the approved due-reminder wording says it "never asks for payment details" and has no UPI (trust and every country),
+  so a pay link would have broken that; the safer form (Already paid / Will pay in 7 days buttons) was offered too.
 - Later (founder's call): 8 app releases from the phone, 9 Waypoint Expo upgrade, 12b WhatsApp entry form, 12c partner payouts,
   11 WhatsApp usernames, the Play service account.
 
