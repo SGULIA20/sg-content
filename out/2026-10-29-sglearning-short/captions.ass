@@ -1,0 +1,54 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.93,Default,,0,0,0,,Bhai ne January mein phone kholke
+Dialogue: 0,0:00:01.93,0:00:02.32,Default,,0,0,0,,kaha,
+Dialogue: 0,0:00:02.32,0:00:04.64,Default,,0,0,0,,ab main America mein invest karunga.
+Dialogue: 0,0:00:05.09,0:00:06.83,Default,,0,0,0,,Reels pe sab yahi bol rahe
+Dialogue: 0,0:00:06.83,0:00:07.05,Default,,0,0,0,,the,
+Dialogue: 0,0:00:07.05,0:00:08.79,Default,,0,0,0,,US stocks mein hi asli paisa
+Dialogue: 0,0:00:08.79,0:00:09.01,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:09.46,0:00:11.09,Default,,0,0,0,,Usne ek bada naam chuna,
+Dialogue: 0,0:00:11.09,0:00:11.91,Default,,0,0,0,,The Trade Desk,
+Dialogue: 0,0:00:11.91,0:00:13.74,Default,,0,0,0,,online ads wali company.
+Dialogue: 0,0:00:14.19,0:00:15.08,Default,,0,0,0,,Logic seedha tha,
+Dialogue: 0,0:00:15.08,0:00:16.68,Default,,0,0,0,,America ki company hai,
+Dialogue: 0,0:00:16.68,0:00:17.92,Default,,0,0,0,,dollar mein kamaati hai,
+Dialogue: 0,0:00:17.92,0:00:18.63,Default,,0,0,0,,toh safe hai.
+Dialogue: 0,0:00:19.08,0:00:20.81,Default,,0,0,0,,Aur upar se app pe button
+Dialogue: 0,0:00:20.81,0:00:21.24,Default,,0,0,0,,dabao,
+Dialogue: 0,0:00:21.24,0:00:22.32,Default,,0,0,0,,share aapke paas,
+Dialogue: 0,0:00:22.32,0:00:23.40,Default,,0,0,0,,koi jhanjhat nahi.
+Dialogue: 0,0:00:23.85,0:00:25.93,Default,,0,0,0,,Phir is saal ke andar hi,
+Dialogue: 0,0:00:25.93,0:00:28.91,Default,,0,0,0,,wahi share 65.75 percent gir chuka
+Dialogue: 0,0:00:28.91,0:00:29.21,Default,,0,0,0,,tha.
+Dialogue: 0,0:00:29.66,0:00:31.03,Default,,0,0,0,,Matlab jitna lagaya,
+Dialogue: 0,0:00:31.03,0:00:33.09,Default,,0,0,0,,uska aadha bhi nahi bacha,
+Dialogue: 0,0:00:33.09,0:00:34.46,Default,,0,0,0,,ek tihaai ke aas paas.
+Dialogue: 0,0:00:34.91,0:00:36.42,Default,,0,0,0,,Woh akela nahi tha,
+Dialogue: 0,0:00:36.42,0:00:38.36,Default,,0,0,0,,kai bade naam aadhe se zyada
+Dialogue: 0,0:00:38.36,0:00:38.79,Default,,0,0,0,,gire.
+Dialogue: 0,0:00:39.24,0:00:41.94,Default,,0,0,0,,Volatility yaani share ka tez upar
+Dialogue: 0,0:00:41.94,0:00:42.78,Default,,0,0,0,,neeche hona,
+Dialogue: 0,0:00:42.78,0:00:44.44,Default,,0,0,0,,woh desh dekh kar nahi aati.
+Dialogue: 0,0:00:44.89,0:00:45.72,Default,,0,0,0,,Twist yeh hai,
+Dialogue: 0,0:00:45.72,0:00:47.67,Default,,0,0,0,,bada naam aur bada desh,
+Dialogue: 0,0:00:47.67,0:00:49.89,Default,,0,0,0,,risk ko chhota nahi karta.
+Dialogue: 0,0:00:50.34,0:00:52.19,Default,,0,0,0,,Bahar paisa bhejne pe tax ke
+Dialogue: 0,0:00:52.19,0:00:53.21,Default,,0,0,0,,niyam bhi alag hain,
+Dialogue: 0,0:00:53.21,0:00:55.06,Default,,0,0,0,,toh poora hisaab pehle samjho.
+Dialogue: 0,0:00:55.51,0:00:57.24,Default,,0,0,0,,Ek basket mein sab ande mat
+Dialogue: 0,0:00:57.24,0:00:57.67,Default,,0,0,0,,rakho.
+Dialogue: 0,0:00:57.67,0:00:59.83,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:01:00.28,0:01:02.65,Default,,0,0,0,,Aapne kabhi US stock kharida hai?
+Dialogue: 0,0:01:02.65,0:01:03.36,Default,,0,0,0,,Haan ya na?

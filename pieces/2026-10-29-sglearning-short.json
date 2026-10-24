@@ -1,8 +1,62 @@
 {
  "channel": "sglearning",
- "facts": [],
+ "facts": [
+  {
+   "label": "reported",
+   "number": 65.75,
+   "quote": "The Trade Desk has emerged as the biggest loser on this list, with shares plunging 65.75% in 2026, from $37.96 at the end of last year to $13.00.",
+   "source_date": "2026-10-24",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/portfolio-killers-10-us-stocks-that-wiped-out-up-to-66-of-investors-wealth-in-2026/slideshow/135167355.cms",
+   "text": "The Trade Desk recorded a 65.75% decline in its share price during 2026, sliding from $37.96 to $13.00.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 62.76,
+   "quote": "Flutter Entertainment has fallen 62.76% in 2026, with shares plunging from $215.04 at the end of last year to $80.09.",
+   "source_date": "2026-10-24",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/portfolio-killers-10-us-stocks-that-wiped-out-up-to-66-of-investors-wealth-in-2026/slideshow/135167355.cms",
+   "text": "Shares of Flutter Entertainment fell 62.76% in 2026, decreasing from $215.04 to $80.09.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 62.72,
+   "quote": "Stellantis has shed 62.72% in 2026, with shares sliding from $10.89 at the end of last year to $4.06.",
+   "source_date": "2026-10-24",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/portfolio-killers-10-us-stocks-that-wiped-out-up-to-66-of-investors-wealth-in-2026/slideshow/135167355.cms",
+   "text": "Automaker Stellantis experienced a 62.72% drop in its stock price during 2026, declining from $10.89 to $4.06.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 61.38,
+   "quote": "AppLovin has plunged 61.38% in 2026, with shares tumbling from $673.82 at the end of last year to $260.25.",
+   "source_date": "2026-10-24",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/portfolio-killers-10-us-stocks-that-wiped-out-up-to-66-of-investors-wealth-in-2026/slideshow/135167355.cms",
+   "text": "AppLovin shares fell 61.38% in 2026, dropping from $673.82 to $260.25.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 52.36,
+   "quote": "Lululemon Athletica has declined 52.36% in 2026, with shares falling from $207.81 at the end of last year to $99.01.",
+   "source_date": "2026-10-24",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/portfolio-killers-10-us-stocks-that-wiped-out-up-to-66-of-investors-wealth-in-2026/slideshow/135167355.cms",
+   "text": "Lululemon Athletica shares declined 52.36% in 2026, dropping to $99.01.",
+   "unit": "pct"
+  }
+ ],
  "id": "2026-10-29-sglearning-short",
- "ids": {},
+ "ids": {
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "sbYf7WtinGw"
+ },
  "kind": "short",
  "publish_day": "2026-10-29",
  "reasons": [
@@ -16,18 +70,224 @@
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
  ],
- "script": null,
- "status": "failed-research",
- "timings": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "America mein invest kiya, aur paisa aadha bhi nahi bacha 😱\nThe Trade Desk ka share is saal 65.75 percent gir gaya.\nBada naam aur bada desh, risk ko chhota nahi karta.\nAapne kabhi US stock kharida hai?\nYeh investment advice nahi hai.\nShare karo us bhai ko jo reels dekh kar US stocks mein paisa daalne wala hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#ShareMarket",
+     "#InvestingIndia",
+     "#PersonalFinanceIndia",
+     "#HinglishFinance",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "America ki badi company, dollar ki kamaai, phir bhi share 65.75 percent gir gaya. Bada naam risk ko chhota nahi karta. Aapne kabhi US stock kharida hai? Yeh investment advice nahi hai. #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "America ki badi company, dollar ki kamaai, phir bhi ek share is saal 65.75 percent gir gaya. Bada naam aur bada desh risk ko chhota nahi karta. Bahar invest karne se pehle volatility aur tax ka poora hisaab samjho. Share karo us bhai ko jo reels dekh kar US stocks mein paisa daalne wala hai.",
+    "tags": [
+     "US stocks",
+     "The Trade Desk",
+     "share market",
+     "investing India",
+     "US stock loss",
+     "global investing",
+     "volatility",
+     "personal finance",
+     "Hinglish finance",
+     "Learning with SG"
+    ],
+    "title": "US Stocks Safe Hain? Bada Naam, Bada Loss"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Aapne kabhi US stock kharida hai? Haan ya na?",
+  "hook": "Bhai ne January mein phone kholke kaha, ab main America mein invest karunga.",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "SETUP",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in his hoodie sits on a sofa at night, holding his phone up excitedly, a confident grin, a small tea cup on the side table, warm living room light",
+     "type": "art"
+    },
+    "vo": "Bhai ne January mein phone kholke kaha, ab main America mein invest karunga."
+   },
+   {
+    "facts_used": [],
+    "label": "SETUP",
+    "visual": {
+     "card": null,
+     "prompt": "Close-up of a phone screen glowing in a dark room, endless reels of young men pointing at rising charts and skyscrapers, BHAI's face lit by the screen, eyes wide with hope",
+     "type": "art"
+    },
+    "vo": "Reels pe sab yahi bol rahe the, US stocks mein hi asli paisa hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "THE CHOICE",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI scrolling a stock app, his thumb hovering over a company logo surrounded by floating digital advertisement banners, a tall American office tower in the background, determined look",
+     "type": "art"
+    },
+    "vo": "Usne ek bada naam chuna, The Trade Desk, online ads wali company."
+   },
+   {
+    "facts_used": [],
+    "label": "THE CHOICE",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI explaining to BEHEN at the dining table, counting points on his fingers, a dollar note and a rupee note side by side on the table, BEHEN in office wear listening with raised eyebrow, evening",
+     "type": "art"
+    },
+    "vo": "Logic seedha tha, America ki company hai, dollar mein kamaati hai, toh safe hai."
+   },
+   {
+    "facts_used": [],
+    "label": "THE CHOICE",
+    "visual": {
+     "card": null,
+     "prompt": "Close-up of BHAI's thumb pressing a big green button on a phone app, tiny confetti animation on screen, his satisfied smile reflected in the glass",
+     "type": "art"
+    },
+    "vo": "Aur upar se app pe button dabao, share aapke paas, koi jhanjhat nahi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "WHAT REALLY HAPPENED",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI frozen on the balcony at dawn, staring at his phone showing a steep red line falling off a cliff, mouth open, cold blue morning light",
+     "type": "art"
+    },
+    "vo": "Phir is saal ke andar hi, wahi share 65.75 percent gir chuka tha."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "WHAT REALLY HAPPENED",
+    "visual": {
+     "card": null,
+     "prompt": "A glass piggy bank on a table, two thirds of the coins visibly vanishing into smoke, only a small pile left at the bottom, BHAI's hand reaching toward it in disbelief",
+     "type": "art"
+    },
+    "vo": "Matlab jitna lagaya, uska aadha bhi nahi bacha, ek tihaai ke aas paas."
+   },
+   {
+    "facts_used": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "label": "WHAT REALLY HAPPENED",
+    "visual": {
+     "card": null,
+     "prompt": "A row of tall glass company towers crumbling like sandcastles under a stormy sky, a gambling chip, a car and a yoga mat tumbling down with them, dramatic dusk",
+     "type": "art"
+    },
+    "vo": "Woh akela nahi tha, kai bade naam aadhe se zyada gire."
+   },
+   {
+    "facts_used": [],
+    "label": "THE TWIST",
+    "visual": {
+     "card": null,
+     "prompt": "SG in his striped shirt sits beside BHAI on the sofa, calmly drawing a zigzag line on a notepad, BHAI watching quietly, soft lamp light",
+     "type": "art"
+    },
+    "vo": "Volatility yaani share ka tez upar neeche hona, woh desh dekh kar nahi aati."
+   },
+   {
+    "facts_used": [],
+    "label": "THE TWIST",
+    "visual": {
+     "card": null,
+     "prompt": "A tiny paper boat with an American flag sail tossed by huge waves next to an equally tossed Indian boat, both rocking the same, stormy sea at night",
+     "type": "art"
+    },
+    "vo": "Twist yeh hai, bada naam aur bada desh, risk ko chhota nahi karta."
+   },
+   {
+    "facts_used": [],
+    "label": "THE TWIST",
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN at a desk with a laptop and a calculator, a paper airplane made of a rupee note flying toward a globe, her expression thoughtful and careful, afternoon light",
+     "type": "art"
+    },
+    "vo": "Bahar paisa bhejne pe tax ke niyam bhi alag hain, toh poora hisaab pehle samjho."
+   },
+   {
+    "facts_used": [],
+    "label": "THE TWIST",
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY in a saree in the kitchen gently spreading eggs across several small baskets, BHAI watching and nodding slowly, warm morning sunlight",
+     "type": "art"
+    },
+    "vo": "Ek basket mein sab ande mat rakho. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "END",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI looks straight out of the panel holding his phone, half smiling half embarrassed, the red chart faded behind him, soft evening light",
+     "type": "art"
+    },
+    "vo": "Aapne kabhi US stock kharida hai? Haan ya na?"
+   }
+  ],
+  "thumbnail": {
+   "scene": "BHAI stares at his phone showing a steep red falling line, eyes wide, mouth open, in cold dawn light",
+   "words": [
+    "65.75%",
+    "GAYAB"
+   ]
+  },
+  "title": "*America* mein invest, paisa aadha gayab 😱"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  5.09,
+  9.46,
+  14.19,
+  19.08,
+  23.85,
+  29.66,
+  34.91,
+  39.24,
+  44.89,
+  50.34,
+  55.51,
+  60.28
+ ],
  "topic": {
-  "link": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-treasury-yields-rise-but-10-year-stays-below-5-as-ai-jitters-persist/articleshow/135151795.cms",
-  "published": "2026-10-23T17:24:04+00:00",
+  "link": "https://economictimes.indiatimes.com/markets/us-stocks/news/portfolio-killers-10-us-stocks-that-wiped-out-up-to-66-of-investors-wealth-in-2026/slideshow/135167355.cms",
+  "look": "claymation",
+  "published": "2026-10-24T09:33:10+00:00",
   "rank": 3,
   "source": "ET Markets",
-  "summary": "US Treasury yields rise after a sharp drop in the previous session, but the benchmark 10 year yield stays below 5% as lingering AI market concerns keep investors cautious. Strong economic activity and sticky inflation remain key factors for bond markets, while expectations of a Federal Reserve rate hike next week weaken further.",
+  "summary": "The Trade Desk has emerged as the biggest loser on this list, with shares plunging 65.75% in 2026, from $37.96 at the end of last year to $13.00. The digital advertising technology company now has a market capitalisation of $6.1 billion.",
   "target_minutes": null,
-  "title": "US Treasury yields rise but 10-year stays below 5% as AI jitters persist"
+  "title": "Portfolio Killers: 10 US stocks that wiped out up to 66% of investors’ wealth in 2026",
+  "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-10-23T18:42:08+00:00",
- "writer": ""
+ "updated": "2026-10-24T10:18:26+00:00",
+ "writer": "claude"
 }
