@@ -15,7 +15,7 @@ from . import commentdm, instagram, pieces, secrets, telegram, whatworks
 from .config import ROOT
 
 STATE = ROOT / "logs" / "reel-tip.json"
-MAX_PER_MONTH = 4                   # Meta Verified reportedly allows 2-6 linked Reels a month, depending on the plan
+MAX_PER_MONTH = 8                   # founder, 24 Oct 2026: their Meta Verified plan shows 8 linked Reels a month
 FRESH = timedelta(days=3)           # a link helps while the Reel is still being shown
 LOOKBACK = timedelta(days=14)
 MIN_VIEWS = 800                     # never spend a link on a Reel few people see

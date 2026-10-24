@@ -27,7 +27,7 @@ def test_the_reel_taking_off_is_tipped_with_its_apps_link_once(tmp_path):
     out, notes, state = _run(tmp_path)
     assert out == "tipped R1" and len(notes) == 1
     assert "https://ig/r1" in notes[0] and "com.arthvananalytics.waypoint" in notes[0] and "utm_medium%3Dreel_link" in notes[0]
-    assert "tip 1 of 4" in notes[0] and state["count"] == 1
+    assert "tip 1 of 8" in notes[0] and state["count"] == 1
     out, notes, _ = _run(tmp_path, state=state)
     assert out == "no Reel stands out today" and notes == []                      # the same Reel is never tipped twice
 
@@ -35,5 +35,5 @@ def test_the_reel_taking_off_is_tipped_with_its_apps_link_once(tmp_path):
 def test_no_tip_when_nothing_stands_out_or_the_month_is_used_up(tmp_path):
     out, notes, _ = _run(tmp_path, views={"R1": 950, "R2": 900, "R3": 1000, "P1": 5})
     assert out == "no Reel stands out today" and notes == []
-    out, notes, _ = _run(tmp_path, state={"month": "2026-10", "tipped": [], "count": 4})
+    out, notes, _ = _run(tmp_path, state={"month": "2026-10", "tipped": [], "count": 8})
     assert out == "monthly tips used" and notes == []

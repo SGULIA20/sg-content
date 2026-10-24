@@ -155,11 +155,12 @@ def card_day(now: datetime | None = None) -> date:
 def main(argv=None) -> int:
     argv = sys.argv[1:] if argv is None else argv
     day = card_day()
+    log = fetch_app_log()
     try:
-        trials = trialcheck.lines()                       # Trial Reels whose 72 hours ended: share by hand if Instagram did not
+        trials = trialcheck.lines(app_log=log)            # Trial Reels whose 72 hours ended: share by hand if Instagram did not
     except Exception as e:
         trials = [f"🧪 Trial Reels: not checked ({secrets.scrub(str(e))[:80]})"]
-    text = build(day, trials=trials)
+    text = build(day, log=log, trials=trials)
     print(text)
     if "--send" not in argv:
         return 0

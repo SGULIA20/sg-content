@@ -44,3 +44,13 @@ def test_card_carries_the_trial_lines_at_the_end(tmp_path):
     text = evening.build(date(2026, 10, 27), NOW, tmp_path, log=[], trials=["🧪 Trial Reels, 72 hours over", "   x"])
     assert text.endswith("🧪 Trial Reels, 72 hours over\n   x")
     assert "Trial" not in evening.build(date(2026, 10, 27), NOW, tmp_path, log=[])
+
+
+def test_app_trial_reels_from_the_app_log_are_listed_too(tmp_path):
+    log = [{"date": "2026-10-24", "app": "waypoint", "status": "published", "reel_trial": "SS_PERFORMANCE", "ids": {"reel": "app1"}},
+           {"date": "2026-10-24", "app": "scoremybiz", "status": "published", "ids": {"reel": "plainapp"}},
+           {"date": "2026-10-24", "app": "scoremybiz", "status": "publishing", "reel_trial": "SS_PERFORMANCE"}]
+    out = trialcheck.lines(NOW, tmp_path, {"IG_ACCESS_TOKEN": "t"}, call=_call({"app1": "2026-10-24T14:44:00+0000"}),
+                           numbers=lambda mid, tok: {"views": 50}, app_log=log)
+    text = "\n".join(out)
+    assert "Waypoint 24 Oct: 50 views" in text and "plainapp" not in text
