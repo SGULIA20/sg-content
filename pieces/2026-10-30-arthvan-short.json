@@ -1,8 +1,97 @@
 {
  "channel": "arthvan",
- "facts": [],
+ "facts": [
+  {
+   "label": "archaeology",
+   "number": 1422.0,
+   "quote": "The existence of the temple is traced at least to 1422–1461.",
+   "source_date": "2011",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "Epigraphical and historical records show that the construction of the Vittala temple began in the 15th century during the reign of King Deva Raya II.",
+   "unit": "CE"
+  },
+  {
+   "label": "legend",
+   "number": 7.0,
+   "quote": "Each main pillar is wrapped with seven minor pillars that each 'play' one of the seven notes in the Indian classical music scale.",
+   "source_date": "2020",
+   "source_name": "Folklore / Oral Tradition",
+   "source_url": "https://en.wikipedia.org/wiki/Vijayanagara",
+   "text": "Popular folklore claims that each cluster features minor colonnettes tuned to reproduce the seven notes of the Indian classical scale known as Sa-Re-Ga-Ma.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": 1565.0,
+   "quote": "The capital was conquered, pillaged and destroyed by sultanate armies in 1565, after which Hampi remained in ruins.",
+   "source_date": "2015",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "Archaeological records document that fractured columns in the temple hall resulted from the 1565 sack of Vijayanagara and structural weathering rather than an official British cutting investigation.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 2008.0,
+   "quote": "Due to concerns over the weakening of the pillars, the ASI restricted access to them.",
+   "source_date": "2008",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "The Archaeological Survey of India prohibited the public from tapping the musical pillars in 2008 to protect the centuries-old granite from structural micro-damage.",
+   "unit": "CE"
+  },
+  {
+   "label": "scripture",
+   "number": 1520.0,
+   "quote": "What I saw from thence seemed to me as large as Rome, and very beautiful to the sight; there are many groves of trees within it... This is the best provided city in the world.",
+   "source_date": "1900",
+   "source_name": "Domingo Paes, Chronica dos reis de Bisnaga (Robert Sewell, A Forgotten Empire)",
+   "source_url": "https://www.gutenberg.org/ebooks/3610",
+   "text": "Portuguese merchant Domingo Paes recorded in his chronicle that Vijayanagara appeared as large as Rome and was the best-provisioned city in the world.",
+   "unit": "CE"
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "The people in this city are countless in number, so much so that I do not wish to write it down for fear it should be thought fabulous.",
+   "source_date": "1900",
+   "source_name": "Domingo Paes, Chronica dos reis de Bisnaga (Robert Sewell, A Forgotten Empire)",
+   "source_url": "https://www.gutenberg.org/ebooks/3610",
+   "text": "Domingo Paes wrote that the human population of Vijayanagara was so vast that he refrained from writing a specific number for fear of being accused of exaggeration.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": 500000.0,
+   "quote": "In India in 1500, Vijayanagar had 500,000 inhabitants... second largest city in the world after Beijing.",
+   "source_date": "1987",
+   "source_name": "Tertius Chandler, Four Thousand Years of Urban Growth",
+   "source_url": "https://en.wikipedia.org/wiki/List_of_largest_cities_throughout_history",
+   "text": "Urban historian Tertius Chandler estimated Vijayanagara's population around 1500 CE at 500,000, ranking it as the world's second-largest city behind Beijing.",
+   "unit": "count"
+  },
+  {
+   "label": "disputed",
+   "number": 250000.0,
+   "quote": "Estimates of the population of the urban core and greater metropolitan region of Vijayanagara vary widely across historical and archaeological literature, ranging between 250,000 and 500,000 residents.",
+   "source_date": "2016",
+   "source_name": "Scientific Data / Historical Urban Population Data: Vijayanagara",
+   "source_url": "https://doi.org/10.1038/sdata.2016.34",
+   "text": "Landscape archaeologists dispute the uniform 500,000 figure, noting that estimates for Vijayanagara's peak population vary between 250,000 and 500,000 depending on how much of the surrounding agrarian hinterland is included.",
+   "unit": "count"
+  }
+ ],
  "id": "2026-10-30-arthvan-short",
- "ids": {},
+ "ids": {
+  "budget": {
+   "day": "2026-10-24",
+   "drafts": 1,
+   "research": 1
+  },
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "c_jzcPrICBc"
+ },
  "kind": "short",
  "publish_day": "2026-10-30",
  "reasons": [
@@ -10,26 +99,226 @@
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
  ],
- "script": null,
- "status": "failed-research",
- "timings": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Patthar ke khambe se sa re ga ma? 🤯\nLok kahani kehti hai Hampi ke khambe bajte hain.\nAngrezon ne kaate? ASI ke records kuch aur kehte hain.\nAapko kya lagta hai, sur jaan-boojh kar bane ya sanyog tha?\nUs dost ko bhejo jo Hampi trip plan kar raha hai aur khambe bajane ki soch raha hai.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#IndianHistory",
+     "#Archaeology",
+     "#AncientIndia",
+     "#Itihaas",
+     "#Rahasya",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Hampi ke Vittala mandir ke khambe sach mein sur gaate hain? Angrezon ne kaate wali kahani ka sabut nahi, toote khambe loot aur mausam ki maar hain. Sur jaan-boojh kar bane ya sanyog tha? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Hampi ke Vittala mandir ke khambe sach mein sur gaate hain? Lok kahani, ASI ke records aur vaigyanik jaanch, teeno ko saath rakh kar dekhiye ki sabut kya kehta hai. Kaarigaron ne sur jaan-boojh kar banaye ya sanyog tha, yeh bahas aaj bhi khuli hai. Us dost ko bhejo jo Hampi trip plan kar raha hai aur khambe bajane ki soch raha hai.",
+    "tags": [
+     "Hampi",
+     "Vittala temple",
+     "musical pillars",
+     "Vijayanagara",
+     "ASI",
+     "Karnataka history",
+     "Indian history",
+     "archaeology",
+     "Sabut ke saath",
+     "ancient India"
+    ],
+    "title": "Hampi ke khambe bajte kyun hain? Angrez ya loot?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Aapko kya lagta hai, sur jaan-boojh kar bane ya sanyog tha? Comment mein likhiye.",
+  "hook": "Kya patthar ke khambe sach mein sur gaa sakte hain?",
+  "scenes": [
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel, early 16th century: a Portuguese merchant in a wide hat stands on a rocky hill at golden hour, looking down at a vast walled city of granite temples, groves and bazaars, writing in a leather journal, mood of awe",
+     "type": "art"
+    },
+    "vo": "Kya patthar ke khambe sur gaa sakte hain? Portuguese vyapari Domingo Paes ne Vijayanagara ko Rome jitna bada likha."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: a grandmother sits with children in the carved granite hall of the Vittala temple at dusk, pointing to slender clustered stone pillars, faint glowing sound waves drawn in the air, warm magical mood",
+     "type": "art"
+    },
+    "vo": "Isi sheher Hampi mein Vittala mandir hai. Lok kahani kehti hai, iske khambe sa re ga ma bajate hain."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: an archaeologist in a khaki shirt studies an old stone inscription beside the temple wall, a notebook and brush in hand, carvings of the Vittala temple behind, calm investigative mood",
+     "type": "art"
+    },
+    "vo": "ASI yaani desh ki puratattva sanstha. Uske records kehte hain, mandir Raja Deva Raya ke zamane mein bana."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel in hazy dreamlike style: colonial-era officers in pith helmets gather around a cracked stone pillar with lanterns, peering inside, shown as a rumour with soft blurred edges, mysterious mood",
+     "type": "art"
+    },
+    "vo": "Phir ek kahani chali, Angrezon ne khambe kaate, andar dhaatu dhoondhne. Iska koi pakka sabut nahi milta."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: smoke over a ruined granite city, broken temple pillars and fallen carved stones in the foreground, a lone archaeologist later measuring a fractured column, somber mood",
+     "type": "art"
+    },
+    "vo": "ASI ke mutabik, 1565 mein sultanate ki fauj ne rajdhani loot li. Toote khambe usi loot aur mausam ki maar hain."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: a scientist in a lab coat presses a small ultrasonic probe against a carved granite pillar, a portable screen glowing beside her showing solid stone, focused scientific mood",
+     "type": "art"
+    },
+    "vo": "Indira Gandhi Centre for Atomic Research ne ultrasonic jaanch ki. Yaani awaaz ki tarangon se patthar ke andar jhaankna. Khambe poori tarah thos granite nikle."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: a medieval stone carver kneels beside a half-carved slender pillar, chisel raised, head tilted as if listening to the stone, warm lamp light, thoughtful mood",
+     "type": "art"
+    },
+    "vo": "Ab sawaal yeh hai. Kuch scholars kehte hain, kaarigaron ne khambe jaan-boojh kar sur mein tune kiye."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: a historian with spectacles compares thick and thin stone pillars, measuring tape stretched between them, a question-mark shaped shadow on the temple floor, puzzled mood",
+     "type": "art"
+    },
+    "vo": "Doosre kehte hain, bas alag motai aur lambai se alag awaaz aati hai. Asli tareeka kya tha, koi nahi jaanta."
+   },
+   {
+    "facts_used": [
+     6,
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: two scholars at a long table covered with old maps of a sprawling medieval city, one pointing to the dense core, the other to the farmland around it, friendly debate mood",
+     "type": "art"
+    },
+    "vo": "Sheher ke size par bhi bahas hai. Historian Tertius Chandler ise Beijing ke baad sabse bada maante the. Landscape archaeologists kehte hain, anumaan bahut alag-alag hain."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: a temple guard gently stops a tourist's hand inches from a carved granite pillar, a simple rope barrier in front of the clustered columns, protective mood",
+     "type": "art"
+    },
+    "vo": "Twist yeh hai, ASI ne 2008 mein khambe thapthapana band kar diya. Taaki purana granite andar se kamzor na ho."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: a pilgrim and a young traveller stand quietly in the pillared hall of the Vittala temple at sunrise, boulder hills of Hampi behind, golden light on silent stone, peaceful wonder",
+     "type": "art"
+    },
+    "vo": "Aaj Hampi jaaiye, Vittala mandir ka mandap apni aankhon se dekhiye. Chup khambe bhi kahani sunaate hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: a narrator figure in a simple kurta sits on the steps of the ruined temple hall at twilight, gesturing toward the carved pillars as if asking a question, inviting mood",
+     "type": "art"
+    },
+    "vo": "Aapko kya lagta hai, sur jaan-boojh kar bane ya sanyog tha? Comment mein likhiye."
+   }
+  ],
+  "thumbnail": {
+   "scene": "The GUIDE presses his ear against a carved granite pillar, eyes wide, mouth open, one finger frozen just above the stone",
+   "words": [
+    "2008",
+    "BANNED"
+   ]
+  },
+  "title": "Patthar ke khambe se *sa-re-ga-ma*? 🤯"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  7.69,
+  14.46,
+  21.71,
+  29.24,
+  38.69,
+  48.9,
+  55.19,
+  63.08,
+  73.29,
+  81.54,
+  89.35
+ ],
  "topic": {
   "allowed_sources": [
+   "asi.nic.in",
    "en.wikipedia.org",
-   "maharashtratourism.gov.in",
-   "news reports with dates"
+   "UNESCO whc.unesco.org",
+   "Domingo Paes travelogue"
   ],
   "hooks": [
-   "Is gaon mein ghar ke darwaze kyon nahi?",
-   "Bank ki shakha bhi bina lock ke?",
-   "Chori hui to kya hua?"
+   "Patthar ke khambe se sa-re-ga-ma?",
+   "Angrezon ne khambe kaat kar kya dhoondha?",
+   "Hampi 500 saal pehle duniya ka doosra sabse bada sheher?"
   ],
-  "id": "shani-shingnapur",
-  "notes": "Legend lane plus documented modern facts (UCO Bank branch 2011); report thefts honestly.",
-  "place": "Shani Shingnapur, Maharashtra",
+  "id": "hampi-musical-pillars",
+  "look": "indian-comic",
+  "notes": "Vittala temple acoustics; the cutting story needs a label; population claims are from travellers.",
+  "place": "Hampi, Karnataka",
   "target_minutes": null,
-  "title_hi": "Shani Shingnapur, bina darwaze ka gaon"
+  "title_hi": "Hampi ke sangeet khambe",
+  "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-10-23T18:42:10+00:00",
- "writer": ""
+ "updated": "2026-10-24T10:55:12+00:00",
+ "writer": "claude"
 }
