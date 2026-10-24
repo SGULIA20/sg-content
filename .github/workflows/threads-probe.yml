@@ -1,0 +1,46 @@
+# One-off diagnosis (24 Oct 2026): which part of the 24 Oct Learning with SG Short Threads refuses. Creates draft containers
+# only; nothing is published (an unpublished container expires on its own). Delete this file once the cause is known.
+name: threads-probe
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1, lfs: false }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12', cache: pip }
+      - run: pip install -r requirements.txt
+      - name: Probe
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+        run: |
+          python - <<'PY'
+          import json, os, time
+          from engine import threads, publish, pieces
+          from engine.config import ROOT
+          uid, tok = os.environ["THREADS_USER_ID"], os.environ["THREADS_ACCESS_TOKEN"]
+          raw = "https://raw.githubusercontent.com/SGULIA20/sg-content/{}/out/{}/reel.mp4"
+          def url(d):
+              p = json.load(open(f"pieces/2026-10-{d}-sglearning-short.json")); return raw.format(p["ids"]["out_sha"], p["id"])
+          text24 = publish.threads_text(pieces.load("2026-10-24-sglearning-short", ROOT))
+          cases = {"A video24 + short text": (url(24), "test"),
+                   "B video23 + text24": (url(23), text24),
+                   "C video24 + text24 without %": (url(24), text24.replace("%", " percent")),
+                   "D video24 + text24": (url(24), text24)}
+          for name, (v, t) in cases.items():
+              try:
+                  cid = threads.call("POST", f"/{uid}/threads", tok, {"media_type": "VIDEO", "video_url": v, "text": t})["id"]
+                  st = {}
+                  for _ in range(18):
+                      st = threads.call("GET", f"/{cid}", tok, {"fields": "status,error_message"})
+                      if st.get("status") in ("FINISHED", "ERROR", "EXPIRED"): break
+                      time.sleep(10)
+                  print(name, "->", st, flush=True)
+              except Exception as e:
+                  print(name, "-> create failed:", str(e)[:200], flush=True)
+          PY
