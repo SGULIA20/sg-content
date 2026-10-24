@@ -8,6 +8,7 @@
 //   POST /telegram-inbox   messages that are not commands, for the Mac inbox (x-sg-key); answers {webhook, messages}
 //   POST /refresh          live status from the public sg-content and arthvan-media repos (x-hook-secret; command.refresh())
 //   POST /clock            start the GitHub jobs that are due by Lagos time (x-hook-secret; pg_cron via command.clock_tick())
+//   POST /replies          YouTube reply drafts in (each to Telegram with Post / Skip), posted ids in; answers {approved} (x-sg-key)
 // Only the actions below exist; anything else is rejected and recorded.
 import postgres from "npm:postgres@3.4.5";
 
@@ -356,6 +357,7 @@ async function queueAndRun(action: string, args: Record<string, unknown>, target
 }
 
 async function onCallback(data: string, chat: string, messageId: number): Promise<void> {
+  if (data.startsWith("reply:")) return void await decideReply(data, chat);
   const reply = async (text: string, keyboard?: unknown[][]) =>
     tg("sendMessage", { chat_id: chat, text, reply_markup: { inline_keyboard: keyboard ?? await menu() } });
   if (data === "status") return void await reply(await statusText());
@@ -435,6 +437,35 @@ async function telegramInbox(): Promise<Response> {
   return json({ webhook: true, messages: rows.sort((a, b) => Number(a.id) - Number(b.id)).map((r) => r.text) });
 }
 
+// ---------- YouTube reply drafts ----------
+async function replies(body: Record<string, any>): Promise<Response> {
+  const chat = await vault("telegram_chat_id");
+  for (const id of (body.posted ?? []).slice(0, 50)) await sql`update command.reply_drafts set state = 'posted', posted_at = now() where id = ${Number(id)}`;
+  for (const id of (body.failed ?? []).slice(0, 50)) await sql`update command.reply_drafts set state = 'failed' where id = ${Number(id)}`;
+  for (const d of (body.new ?? []).slice(0, 20)) {
+    const row = (await sql`insert into command.reply_drafts (channel, comment_id, video_id, author, comment, draft)
+      values (${String(d.channel)}, ${String(d.comment_id)}, ${String(d.video_id ?? "")}, ${String(d.author ?? "").slice(0, 80)},
+              ${String(d.text ?? "").slice(0, 1000)}, ${String(d.draft).slice(0, 500)})
+      on conflict (comment_id) do nothing returning id`)[0];
+    if (!row || !chat) continue;
+    await tg("sendMessage", { chat_id: chat,
+      text: `💬 ${CHANNEL_NAME[String(d.channel)] ?? d.channel} · ${String(d.author ?? "").slice(0, 40)}:\n“${String(d.text ?? "").slice(0, 400)}”\n\nReply draft:\n“${String(d.draft).slice(0, 500)}”`,
+      reply_markup: { inline_keyboard: [[btn("✅ Post reply", `reply:ok:${row.id}`), btn("❌ Skip", `reply:no:${row.id}`)]] } });
+  }
+  const approved = await sql`select id, channel, comment_id, draft from command.reply_drafts where state = 'approved' order by id limit 20`;
+  return json({ approved });
+}
+
+async function decideReply(data: string, chat: string): Promise<void> {
+  const [, verdict, id] = data.split(":");
+  const state = verdict === "ok" ? "approved" : "skipped";
+  const rows = await sql`update command.reply_drafts set state = ${state}, decided_at = now() where id = ${Number(id)} and state = 'pending' returning id`;
+  if (!rows.length) return void await tg("sendMessage", { chat_id: chat, text: "Already decided." });
+  if (state === "skipped") return void await tg("sendMessage", { chat_id: chat, text: "Skipped: no reply." });
+  try { await dispatch("ytreplies.yml", {}); } catch (e) { console.error(e); }       // post it now; otherwise the next run does
+  await tg("sendMessage", { chat_id: chat, text: "Approved: the reply goes up on YouTube within a few minutes." });
+}
+
 async function pipeline(req: Request, route: string): Promise<Response> {
   if (!same(req.headers.get("x-sg-key") ?? "", await vault("sg_command_ingest"))) return json({ error: "forbidden" }, 403);
   if (route === "control") return json({ paused: await isPaused() });
@@ -445,6 +476,7 @@ async function pipeline(req: Request, route: string): Promise<Response> {
   }
   if (route === "telegram-setup") return await telegramSetup(body);
   if (route === "telegram-inbox") return await telegramInbox();
+  if (route === "replies") return await replies(body);
   // ingest
   const source = String(body.source ?? "").slice(0, 40), key = String(body.key ?? "").slice(0, 80);
   if (!source || !key) return json({ error: "source and key are required" }, 400);
@@ -471,7 +503,7 @@ Deno.serve(async (req) => {
     }
     if (route === "telegram" && req.method === "POST") return await telegramWebhook(req);
     if (route === "control" && req.method === "GET") return await pipeline(req, route);
-    if (["ingest", "pause", "telegram-setup", "telegram-inbox"].includes(route) && req.method === "POST") return await pipeline(req, route);
+    if (["ingest", "pause", "telegram-setup", "telegram-inbox", "replies"].includes(route) && req.method === "POST") return await pipeline(req, route);
     return json({ error: "not found" }, 404);
   } catch (e) {
     console.error(e);
