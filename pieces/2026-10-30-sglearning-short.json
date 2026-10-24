@@ -3,82 +3,73 @@
  "facts": [
   {
    "label": "reported",
-   "number": 546.17,
-   "quote": "The markets regulator, on Friday, directed Avadhut Sathe Trading Academy Private Limited (ASTAPL) and its founder to refund ₹546.17 crore collected from participants for providing unregistered investment advisory and research analyst services, along with interest of ₹67.87 crore.",
+   "number": 200.0,
+   "quote": "High dividend, low price: 4 stocks under ₹200 with high yield - IOCL, PTC India, Central Bank, PTL Enterprises",
    "source_date": "2026-10-24",
    "source_name": "Mint",
-   "source_url": "https://www.livemint.com/market/stock-market-news/big-action-who-is-avadhut-sathe-why-sebi-ordered-avadhut-sathe-trading-academy-to-refund-rs-546-cr-what-he-did-11792848745624.html",
-   "text": "SEBI directed Avadhut Sathe Trading Academy and its founder to refund 546.17 crore rupees collected from participants for unregistered advisory and research activities.",
-   "unit": "crore INR"
+   "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
+   "text": "A financial report highlighted four dividend-yielding Indian stocks priced below the ₹200 threshold per share.",
+   "unit": "INR"
   },
   {
    "label": "reported",
-   "number": 11.5,
-   "quote": "SEBI has imposed a total penalty of ₹11.5 crore on the academy, Sathe and Gouri Avadhut Sathe for violations of securities market regulations.",
+   "number": 19.0,
+   "quote": "Indian Oil Corporation, PTC India, Central Bank of India, and PTL Enterprises are highlighted as stocks priced below ₹200 with dividend yields of 5.5%, 19%, 2.53%, and 6.25%, respectively.",
    "source_date": "2026-10-24",
    "source_name": "Mint",
-   "source_url": "https://www.livemint.com/market/stock-market-news/big-action-who-is-avadhut-sathe-why-sebi-ordered-avadhut-sathe-trading-academy-to-refund-rs-546-cr-what-he-did-11792848745624.html",
-   "text": "SEBI imposed aggregate monetary penalties of 11.5 crore rupees on the academy, founder Avadhut Sathe, and director Gouri Sathe.",
-   "unit": "crore INR"
+   "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
+   "text": "PTC India was highlighted as having a dividend yield of 19%.",
+   "unit": "pct"
   },
   {
    "label": "reported",
-   "number": 4.0,
-   "quote": "As per SEBI's 171-page final order, Sathe has been fined ₹4 crore, while Gouri Avadhut Sathe has been penalised ₹1.5 crore.",
+   "number": 6.25,
+   "quote": "Indian Oil Corporation, PTC India, Central Bank of India, and PTL Enterprises are highlighted as stocks priced below ₹200 with dividend yields of 5.5%, 19%, 2.53%, and 6.25%, respectively.",
    "source_date": "2026-10-24",
    "source_name": "Mint",
-   "source_url": "https://www.livemint.com/market/stock-market-news/big-action-who-is-avadhut-sathe-why-sebi-ordered-avadhut-sathe-trading-academy-to-refund-rs-546-cr-what-he-did-11792848745624.html",
-   "text": "Founder Avadhut Sathe was individually fined 4 crore rupees by the capital markets regulator.",
-   "unit": "crore INR"
+   "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
+   "text": "PTL Enterprises was reported to offer a dividend yield of 6.25%.",
+   "unit": "pct"
   },
   {
    "label": "reported",
-   "number": 2.0,
-   "quote": "SEBI has barred the academy and Avadhut Sathe from accessing the securities market for two years, or until they fulfil the direction to initiate all refunds.",
+   "number": 5.5,
+   "quote": "Indian Oil Corporation, PTC India, Central Bank of India, and PTL Enterprises are highlighted as stocks priced below ₹200 with dividend yields of 5.5%, 19%, 2.53%, and 6.25%, respectively.",
    "source_date": "2026-10-24",
    "source_name": "Mint",
-   "source_url": "https://www.livemint.com/market/stock-market-news/big-action-who-is-avadhut-sathe-why-sebi-ordered-avadhut-sathe-trading-academy-to-refund-rs-546-cr-what-he-did-11792848745624.html",
-   "text": "The regulator barred the academy and Avadhut Sathe from accessing securities markets for 2 years or until all refunds are completed.",
-   "unit": "years"
+   "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
+   "text": "Indian Oil Corporation was recorded as having a dividend yield of 5.5%.",
+   "unit": "pct"
   },
   {
    "label": "reported",
-   "number": 5.0,
-   "quote": "The regulator also imposed ₹11.5 crore in penalties and directed refunds within five months.",
+   "number": 2.53,
+   "quote": "Indian Oil Corporation, PTC India, Central Bank of India, and PTL Enterprises are highlighted as stocks priced below ₹200 with dividend yields of 5.5%, 19%, 2.53%, and 6.25%, respectively.",
    "source_date": "2026-10-24",
    "source_name": "Mint",
-   "source_url": "https://www.livemint.com/market/stock-market-news/big-action-who-is-avadhut-sathe-why-sebi-ordered-avadhut-sathe-trading-academy-to-refund-rs-546-cr-what-he-did-11792848745624.html",
-   "text": "SEBI directed the academy and its founder to execute all refunds to eligible course participants within 5 months.",
-   "unit": "months"
-  },
-  {
-   "label": "reported",
-   "number": 601.38,
-   "quote": "Sathe had collected around ₹601.38 crore from course.",
-   "source_date": "2026-10-24",
-   "source_name": "Mint",
-   "source_url": "https://www.livemint.com/market/stock-market-news/big-action-who-is-avadhut-sathe-why-sebi-ordered-avadhut-sathe-trading-academy-to-refund-rs-546-cr-what-he-did-11792848745624.html",
-   "text": "Avadhut Sathe had collected approximately 601.38 crore rupees across courses and training programs from participants since inception.",
-   "unit": "crore INR"
+   "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
+   "text": "Central Bank of India was featured with a dividend yield of 2.53%.",
+   "unit": "pct"
   }
  ],
  "id": "2026-10-30-sglearning-short",
  "ids": {
   "budget": {
    "day": "2026-10-24",
-   "drafts": 4,
-   "research": 3
+   "drafts": 5,
+   "research": 4
   },
   "write_batch": {
-   "id": "msgbatch_01MPKgpcaJPnFMiqrgJj3rp3",
-   "key": "cf2d9de68a278650",
-   "tries": 3
+   "id": "msgbatch_01RgWqvnRm9xZF5QUNw8jqAs",
+   "key": "9cc4e4fb78950d2b",
+   "tries": 4
   }
  },
  "kind": "short",
  "publish_day": "2026-10-30",
  "reasons": [
   "try 1: length: 118 words, allowed 150-260",
+  "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it"
@@ -229,79 +220,69 @@
  "status": "writing",
  "timings": [],
  "topic": {
-  "link": "https://www.livemint.com/market/stock-market-news/big-action-who-is-avadhut-sathe-why-sebi-ordered-avadhut-sathe-trading-academy-to-refund-rs-546-cr-what-he-did-11792848745624.html",
-  "published": "2026-10-24T14:41:07+00:00",
+  "link": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
+  "published": "2026-10-24T16:49:50+00:00",
   "rank": 3,
   "sheet": {
    "facts": [
     {
      "label": "reported",
-     "number": 546.17,
-     "quote": "The markets regulator, on Friday, directed Avadhut Sathe Trading Academy Private Limited (ASTAPL) and its founder to refund ₹546.17 crore collected from participants for providing unregistered investment advisory and research analyst services, along with interest of ₹67.87 crore.",
+     "number": 200.0,
+     "quote": "High dividend, low price: 4 stocks under ₹200 with high yield - IOCL, PTC India, Central Bank, PTL Enterprises",
      "source_date": "2026-10-24",
      "source_name": "Mint",
-     "source_url": "https://www.livemint.com/market/stock-market-news/big-action-who-is-avadhut-sathe-why-sebi-ordered-avadhut-sathe-trading-academy-to-refund-rs-546-cr-what-he-did-11792848745624.html",
-     "text": "SEBI directed Avadhut Sathe Trading Academy and its founder to refund 546.17 crore rupees collected from participants for unregistered advisory and research activities.",
-     "unit": "crore INR"
+     "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
+     "text": "A financial report highlighted four dividend-yielding Indian stocks priced below the ₹200 threshold per share.",
+     "unit": "INR"
     },
     {
      "label": "reported",
-     "number": 11.5,
-     "quote": "SEBI has imposed a total penalty of ₹11.5 crore on the academy, Sathe and Gouri Avadhut Sathe for violations of securities market regulations.",
+     "number": 19.0,
+     "quote": "Indian Oil Corporation, PTC India, Central Bank of India, and PTL Enterprises are highlighted as stocks priced below ₹200 with dividend yields of 5.5%, 19%, 2.53%, and 6.25%, respectively.",
      "source_date": "2026-10-24",
      "source_name": "Mint",
-     "source_url": "https://www.livemint.com/market/stock-market-news/big-action-who-is-avadhut-sathe-why-sebi-ordered-avadhut-sathe-trading-academy-to-refund-rs-546-cr-what-he-did-11792848745624.html",
-     "text": "SEBI imposed aggregate monetary penalties of 11.5 crore rupees on the academy, founder Avadhut Sathe, and director Gouri Sathe.",
-     "unit": "crore INR"
+     "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
+     "text": "PTC India was highlighted as having a dividend yield of 19%.",
+     "unit": "pct"
     },
     {
      "label": "reported",
-     "number": 4.0,
-     "quote": "As per SEBI's 171-page final order, Sathe has been fined ₹4 crore, while Gouri Avadhut Sathe has been penalised ₹1.5 crore.",
+     "number": 6.25,
+     "quote": "Indian Oil Corporation, PTC India, Central Bank of India, and PTL Enterprises are highlighted as stocks priced below ₹200 with dividend yields of 5.5%, 19%, 2.53%, and 6.25%, respectively.",
      "source_date": "2026-10-24",
      "source_name": "Mint",
-     "source_url": "https://www.livemint.com/market/stock-market-news/big-action-who-is-avadhut-sathe-why-sebi-ordered-avadhut-sathe-trading-academy-to-refund-rs-546-cr-what-he-did-11792848745624.html",
-     "text": "Founder Avadhut Sathe was individually fined 4 crore rupees by the capital markets regulator.",
-     "unit": "crore INR"
+     "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
+     "text": "PTL Enterprises was reported to offer a dividend yield of 6.25%.",
+     "unit": "pct"
     },
     {
      "label": "reported",
-     "number": 2.0,
-     "quote": "SEBI has barred the academy and Avadhut Sathe from accessing the securities market for two years, or until they fulfil the direction to initiate all refunds.",
+     "number": 5.5,
+     "quote": "Indian Oil Corporation, PTC India, Central Bank of India, and PTL Enterprises are highlighted as stocks priced below ₹200 with dividend yields of 5.5%, 19%, 2.53%, and 6.25%, respectively.",
      "source_date": "2026-10-24",
      "source_name": "Mint",
-     "source_url": "https://www.livemint.com/market/stock-market-news/big-action-who-is-avadhut-sathe-why-sebi-ordered-avadhut-sathe-trading-academy-to-refund-rs-546-cr-what-he-did-11792848745624.html",
-     "text": "The regulator barred the academy and Avadhut Sathe from accessing securities markets for 2 years or until all refunds are completed.",
-     "unit": "years"
+     "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
+     "text": "Indian Oil Corporation was recorded as having a dividend yield of 5.5%.",
+     "unit": "pct"
     },
     {
      "label": "reported",
-     "number": 5.0,
-     "quote": "The regulator also imposed ₹11.5 crore in penalties and directed refunds within five months.",
+     "number": 2.53,
+     "quote": "Indian Oil Corporation, PTC India, Central Bank of India, and PTL Enterprises are highlighted as stocks priced below ₹200 with dividend yields of 5.5%, 19%, 2.53%, and 6.25%, respectively.",
      "source_date": "2026-10-24",
      "source_name": "Mint",
-     "source_url": "https://www.livemint.com/market/stock-market-news/big-action-who-is-avadhut-sathe-why-sebi-ordered-avadhut-sathe-trading-academy-to-refund-rs-546-cr-what-he-did-11792848745624.html",
-     "text": "SEBI directed the academy and its founder to execute all refunds to eligible course participants within 5 months.",
-     "unit": "months"
-    },
-    {
-     "label": "reported",
-     "number": 601.38,
-     "quote": "Sathe had collected around ₹601.38 crore from course.",
-     "source_date": "2026-10-24",
-     "source_name": "Mint",
-     "source_url": "https://www.livemint.com/market/stock-market-news/big-action-who-is-avadhut-sathe-why-sebi-ordered-avadhut-sathe-trading-academy-to-refund-rs-546-cr-what-he-did-11792848745624.html",
-     "text": "Avadhut Sathe had collected approximately 601.38 crore rupees across courses and training programs from participants since inception.",
-     "unit": "crore INR"
+     "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
+     "text": "Central Bank of India was featured with a dividend yield of 2.53%.",
+     "unit": "pct"
     }
    ],
-   "summary": "SEBI has ordered finfluencer Avadhut Sathe and his academy to refund ₹546.17 crore along with ₹67.87 crore in interest for offering unregistered investment advisory services disguised as stock market education. The regulatory probe revealed that participants were lured using cherry-picked, misleading testimonials of quick trading profits, while in reality the majority suffered net trading losses. For salaried Indian households, this order underscores that speculative trading courses promising to replace monthly salaries or generate easy wealth carry severe financial risks compared to disciplined, long-term avenues like mutual fund SIPs."
+   "summary": "Mint identified four Indian companies trading below ₹200 per share that offer annual dividend yields ranging between 2.53% and 19%. For salaried Indian households, dividend-paying equities can create a secondary cash flow stream alongside monthly salary income. However, households must remember that corporate dividends are fully taxable at individual slab rates and subject to a 10% tax deduction at source, meaning net returns differ significantly from headline yields."
   },
   "source": "Mint Markets",
-  "summary": "SEBI ordered Avadhut Sathe and his trading academy to refund  ₹546.17 crore, plus  ₹67.87 crore in interest, for providing unregistered investment advice and research services. The regulator also imposed  ₹11.5 crore in penalties and directed refunds within five months.",
+  "summary": "Indian Oil Corporation, PTC India, Central Bank of India, and PTL Enterprises are highlighted as stocks priced below  ₹200 with dividend yields of 5.5%, 19%, 2.53%, and 6.25%, respectively. Dividend yield estimates annual dividend income relative to a stock’s market price.",
   "target_minutes": null,
-  "title": "Big action! Who is Avadhut Sathe? Why SEBI ordered Avadhut Sathe Trading Academy to refund  ₹546 cr - What he did?"
+  "title": "High dividend, low price: 4 stocks under  ₹200 with high yield - IOCL, PTC India, Central Bank, PTL Enterprises"
  },
- "updated": "2026-10-24T15:13:25+00:00",
+ "updated": "2026-10-24T17:22:47+00:00",
  "writer": "claude"
 }
