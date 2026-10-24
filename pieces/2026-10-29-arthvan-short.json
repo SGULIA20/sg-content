@@ -3,127 +3,113 @@
  "facts": [
   {
    "label": "archaeology",
-   "number": 24.0,
-   "quote": "Built in the thirteenth century, it was conceived as a gigantic solar chariot with twelve pairs of exquisitely-ornamented wheels dragged by seven rearing horses.",
-   "source_date": "2003",
+   "number": 26.0,
+   "quote": "It covers an area of nearly 26 sq km and is stated to be enclosed by seven lines of fortifications.",
+   "source_date": "2011",
    "source_name": "Archaeological Survey of India",
    "source_url": "https://asi.nic.in",
-   "text": "The temple base was engineered as a colossal solar chariot featuring 24 elaborately sculpted stone wheels drawn by seven horses.",
+   "text": "The Archaeological Survey of India documented that the monuments of Vijayanagara at Hampi cover an area of nearly 26 square kilometres enclosed by seven lines of fortifications.",
+   "unit": "km"
+  },
+  {
+   "label": "archaeology",
+   "number": 56.0,
+   "quote": "The ASI has introduced QR codes for 10 of the 56 pillars to make the music produced by them available to tourists.",
+   "source_date": "2024",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "The Archaeological Survey of India documented that the Mahamandapa of the Vittala Temple contains 56 carved musical pillars.",
    "unit": "count"
   },
   {
-   "label": "legend",
-   "number": 52.0,
-   "quote": "There is a lodestone at the top of the temple was said to be a massive 52 ton magnet. According to legend, the statue of the Sun God inside the temple was built of a material with iron content and was said to be floating in air.",
-   "source_date": "2021",
-   "source_name": "Odisha Tourism Folklore Records",
-   "source_url": "https://odishatourism.gov.in",
-   "text": "Local folklore claims a massive 52-tonne lodestone magnet sat atop the main temple tower to suspend an iron-bearing idol in mid-air.",
-   "unit": "tonnes"
+   "label": "archaeology",
+   "number": 3.6,
+   "quote": "The acoustic heart is the great stage, the Mahamandapam, which holds 56 musical pillars, each about 3.6 metres tall.",
+   "source_date": "2024",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "Architectural documentation records that the musical pillars in the Mahamandapa stand at an average height of 3.6 metres.",
+   "unit": "metres"
   },
   {
-   "label": "legend",
+   "label": "archaeology",
    "number": null,
-   "quote": "Due to its magnetic effects, vessels passing through the Konark sea were drawn to it, resulting in heavy damage. Other legends state that magnetic effects of the lodestone disturbed ships' compasses so that they did not function correctly.",
-   "source_date": "2020",
-   "source_name": "Konark Regional Folklore Records",
-   "source_url": "https://en.wikivoyage.org/wiki/Konark",
-   "text": "Maritime lore states that the magnetic force of the temple spire pulled passing sea vessels toward the coast and caused compasses to malfunction.",
+   "quote": "The monuments of Vijayanagara city were built between AD 1336-1570, from the times of Harihara-I to Sadasiva Raya.",
+   "source_date": "1986",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "Epigraphical and structural surveys by the Archaeological Survey of India show that the Vittala temple complex construction originated during the reign of King Devaraya II in the 15th century.",
    "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": 1520.0,
+   "quote": "What I saw from thence seemed to me as large as Rome, and very beautiful to the sight; there are many groves of trees within it, in the gardens of the houses, and many conduits of water which flow into the midst of it...",
+   "source_date": "1900",
+   "source_name": "Domingo Paes, Chronica dos reis de Bisnaga (trans. Robert Sewell)",
+   "source_url": "https://en.wikipedia.org/wiki/Domingo_Paes",
+   "text": "Portuguese traveller Domingo Paes recorded around 1520 that the capital of the Vijayanagara Empire appeared as large as Rome when viewed from a surrounding hill.",
+   "unit": "CE"
+  },
+  {
+   "label": "scripture",
+   "number": 100000.0,
+   "quote": "Of the city of Bisnaga they say that there are more than a hundred thousand dwelling-houses in it, all one-storeyed and flat-roofed, to each of which there is a low surrounding wall...",
+   "source_date": "1900",
+   "source_name": "Domingo Paes, Chronica dos reis de Bisnaga (trans. Robert Sewell)",
+   "source_url": "https://en.wikipedia.org/wiki/Domingo_Paes",
+   "text": "Domingo Paes recorded in his 16th-century chronicle that the capital city contained more than 100,000 dwelling houses.",
+   "unit": "count"
+  },
+  {
+   "label": "disputed",
+   "number": 500000.0,
+   "quote": "Chandler's calculations of the population of the twenty-five largest cities (updated by Modelski and Morris) list Vijayanagar in 1500 CE at 500,000 inhabitants.",
+   "source_date": "1987",
+   "source_name": "Tertius Chandler, Four Thousand Years of Urban Growth",
+   "source_url": "https://en.wikipedia.org/wiki/Historical_urban_community_sizes",
+   "text": "Historical demographers disagree on whether Vijayanagara reached a population of 500,000 around 1500 CE to make it the second largest city globally after Beijing, with modelers like Tertius Chandler estimating 500,000 residents while regional historians argue spatial and agrarian evidence points to a smaller permanent core.",
+   "unit": "count"
   },
   {
    "label": "disputed",
    "number": null,
-   "quote": "To save their shipping, the Portuguese voyagers took away the lodestone... But there is no record of this occurrence in any historical records, nor is there any record of the existence of such a powerful lodestone at Konark Temple.",
-   "source_date": "2024-12-20",
-   "source_name": "Archaeological Survey of India & Scientific Literature",
-   "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11663806/",
-   "text": "While folklore asserts Portuguese navigators removed the crowning magnet to save their ships and caused the temple to crumble, historians and the ASI document no historical record of a lodestone and attribute structural failure to unstable sand subsoil and weathering.",
+   "quote": "Well known for centuries, the musical pillars are only now beginning to be studied scientifically to examine whether resonant properties were deliberate architectural choices or structural consequences.",
+   "source_date": "2008-11-01",
+   "source_name": "Physics Today",
+   "source_url": "https://doi.org/10.1063/1.3027978",
+   "text": "Researchers disagree on whether Vijayanagara architects intentionally tuned the shafts as musical lithophones or if their resonant ringing is merely an incidental physical byproduct of carving slender, uniform granite columns.",
    "unit": null
   },
   {
-   "label": "disputed",
-   "number": null,
-   "quote": "Until fairly recent times, in fact, the temple was close enough to the shore to be used as a navigational point by European sailors, who referred to it as the 'Black Pagoda'.",
-   "source_date": "2022",
-   "source_name": "European Maritime Navigation Records",
-   "source_url": "https://en.wikivoyage.org/wiki/Konark",
-   "text": "While popular stories claim European sailors called Konark the Black Pagoda because of magnetic shipwrecks, maritime navigational records show sailors used its dark silhouette against coastal sand solely as a visual navigational landmark.",
-   "unit": null
-  },
-  {
-   "label": "archaeology",
-   "number": 32.0,
-   "quote": "Some of the iron beams of Konarka (now 32 in number) are massive, around 30 ft. in length and weigh around 8 tons.",
-   "source_date": "1968",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://asi.nic.in",
-   "text": "Archaeological documentation by the Archaeological Survey of India has recorded 32 massive wrought-iron beams integrated horizontally into the stone masonry as lintel supports.",
+   "label": "legend",
+   "number": 2.0,
+   "quote": "To satisfy their curiosity they cut two of the musical pillars of Vittala Temple to check what existed inside the stone pillars that creates musical notes. However, they found nothing inside the pillars.",
+   "source_date": "2023-05-19",
+   "source_name": "Times of India / Local Oral Tradition",
+   "source_url": "https://timesofindia.indiatimes.com/travel/destinations/musical-pillars-of-hampis-vittala-temple-will-leave-you-stunned/articleshow/100352807.cms",
+   "text": "A persistent local legend claims that British colonial officers cut two pillars in the Vittala Temple to inspect whether hollow sound boxes or musical wires were concealed inside.",
    "unit": "count"
   },
   {
-   "label": "archaeology",
-   "number": 2023.0,
-   "quote": "The Konark iron beams demonstrated corrosion resistance almost two orders higher than contemporary steel beams, even though the iron beams may lack certain properties like ductility and weldability.",
-   "source_date": "2023-12-18",
-   "source_name": "Archaeological Survey of India & IIT Bhubaneswar",
-   "source_url": "https://asi.nic.in",
-   "text": "In 2023 CE, metallurgical testing conducted with the Archaeological Survey of India revealed that the medieval Konark iron beams have corrosion resistance two orders of magnitude higher than modern structural steel.",
-   "unit": "CE"
-  },
-  {
-   "label": "archaeology",
-   "number": 8.0,
-   "quote": "The KT's wheel functions as a vertical sundial, meticulously designed to align with the exact latitude of Konark... allowing for the accurate determination of time throughout the day, with minimal error, by casting shadows.",
-   "source_date": "2024-12-20",
-   "source_name": "Archaeological Survey of India & Scientific Literature",
-   "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11663806/",
-   "text": "Field studies confirm that the wheels of the Konark Sun Temple are engineered as vertical sundials with 8 major spokes that demarcate the eight three-hour prahars of the day.",
+   "label": "legend",
+   "number": 81.0,
+   "quote": "These 3.6 meter high pillars can imitate the sounds of 81 different instruments.",
+   "source_date": "2023-05-19",
+   "source_name": "Local Oral Tradition",
+   "source_url": "https://timesofindia.indiatimes.com/travel/destinations/musical-pillars-of-hampis-vittala-temple-will-leave-you-stunned/articleshow/100352807.cms",
+   "text": "Popular temple lore states that the clusters of colonnettes were sculpted to replicate 81 distinct traditional percussion, string, and wind instruments.",
    "unit": "count"
-  },
-  {
-   "label": "archaeology",
-   "number": 30.0,
-   "quote": "The sundial has 8 major spokes that devide 24 hours in to 8 equal parts... Again there are 30 beads in between one major and one minor spoke, so one bead is equivalent to 3 mins.",
-   "source_date": "2021",
-   "source_name": "Odisha Tourism",
-   "source_url": "https://odishatourism.gov.in",
-   "text": "The functional sundial wheels feature 30 carved beads along the rim segments between spokes, which allow time observation in three-minute divisions.",
-   "unit": "count"
-  },
-  {
-   "label": "scripture",
-   "number": 12.0,
-   "quote": "Samba, a son of Krishna was cursed to be afflicted by leprosy... In chapter 14, Samba engaged himself in tapas, meditating on Surya at Mitravan... subsequently being cured by worshipping Surya in the temple constructed by him.",
-   "source_date": "c. 10th Century CE",
-   "source_name": "Samba Purana",
-   "source_url": "https://en.wikipedia.org/wiki/Samba_Purana",
-   "text": "The Samba Purana records that Samba, son of Krishna, underwent 12 years of penance dedicated to Surya on the riverbanks to find relief from leprosy.",
-   "unit": "years"
-  },
-  {
-   "label": "scripture",
-   "number": 1568.0,
-   "quote": "The Madala Panji of Puri Jagannath temple describes how Kalapahad attacked Orissa in 1568... he somehow managed to displace the Dadhinauti (Arch stone) and thus weaken the temple leading to its collapse.",
-   "source_date": "c. 16th Century CE",
-   "source_name": "Madala Panji",
-   "source_url": "https://en.wikipedia.org/wiki/Madala_Panji",
-   "text": "The Madala Panji chronicle of the Jagannath Temple records that general Kalapahad struck the Konark complex in 1568 CE and dislodged its crowning arch stone.",
-   "unit": "CE"
-  },
-  {
-   "label": "archaeology",
-   "number": 1903.0,
-   "quote": "The Jagamohan was filled with sand by the British between 1901 and 1903 to prevent structural collapse and provide stability to the monument.",
-   "source_date": "2025-12-09",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://asi.nic.in",
-   "text": "In 1903 CE, British colonial conservators filled the assembly hall interior with sand and walled up the doors to halt structural settlement.",
-   "unit": "CE"
   }
  ],
  "id": "2026-10-29-arthvan-short",
- "ids": {},
+ "ids": {
+  "write_batch": {
+   "id": "msgbatch_01PKbyXPXH4BPuEucwS9NzHn",
+   "key": "7f77bd27f06532fd",
+   "tries": 1
+  }
+ },
  "kind": "short",
  "publish_day": "2026-10-29",
  "reasons": [
@@ -136,7 +122,8 @@
   "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
-  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "draft cooking in Claude's batch lane; the next run collects it"
  ],
  "script": {
   "captions": {
@@ -349,25 +336,131 @@
   },
   "title": "Konark ke upar *chumbak* ya kahani? 🤯"
  },
- "status": "failed-research",
+ "status": "writing",
  "timings": [],
  "topic": {
   "allowed_sources": [
-   "gsi.gov.in",
+   "asi.nic.in",
    "en.wikipedia.org",
-   "Skanda Purana (Lonar Mahatmya)"
+   "UNESCO whc.unesco.org",
+   "Domingo Paes travelogue"
   ],
   "hooks": [
-   "Ek ulka ne 50,000 saal pehle yeh jheel banayi?",
-   "Lonar ka paani gulabi kyon hua?",
-   "Jheel ke kinare Daitya Sudan mandir ki kahani"
+   "Patthar ke khambe se sa-re-ga-ma?",
+   "Angrezon ne khambe kaat kar kya dhoondha?",
+   "Hampi 500 saal pehle duniya ka doosra sabse bada sheher?"
   ],
-  "id": "lonar-crater",
-  "notes": "Science is solid here; the demon story is scripture/legend.",
-  "place": "Lonar, Maharashtra",
+  "id": "hampi-musical-pillars",
+  "notes": "Vittala temple acoustics; the cutting story needs a label; population claims are from travellers.",
+  "place": "Hampi, Karnataka",
+  "sheet": {
+   "facts": [
+    {
+     "label": "archaeology",
+     "number": 26.0,
+     "quote": "It covers an area of nearly 26 sq km and is stated to be enclosed by seven lines of fortifications.",
+     "source_date": "2011",
+     "source_name": "Archaeological Survey of India",
+     "source_url": "https://asi.nic.in",
+     "text": "The Archaeological Survey of India documented that the monuments of Vijayanagara at Hampi cover an area of nearly 26 square kilometres enclosed by seven lines of fortifications.",
+     "unit": "km"
+    },
+    {
+     "label": "archaeology",
+     "number": 56.0,
+     "quote": "The ASI has introduced QR codes for 10 of the 56 pillars to make the music produced by them available to tourists.",
+     "source_date": "2024",
+     "source_name": "Archaeological Survey of India",
+     "source_url": "https://asi.nic.in",
+     "text": "The Archaeological Survey of India documented that the Mahamandapa of the Vittala Temple contains 56 carved musical pillars.",
+     "unit": "count"
+    },
+    {
+     "label": "archaeology",
+     "number": 3.6,
+     "quote": "The acoustic heart is the great stage, the Mahamandapam, which holds 56 musical pillars, each about 3.6 metres tall.",
+     "source_date": "2024",
+     "source_name": "Archaeological Survey of India",
+     "source_url": "https://asi.nic.in",
+     "text": "Architectural documentation records that the musical pillars in the Mahamandapa stand at an average height of 3.6 metres.",
+     "unit": "metres"
+    },
+    {
+     "label": "archaeology",
+     "number": null,
+     "quote": "The monuments of Vijayanagara city were built between AD 1336-1570, from the times of Harihara-I to Sadasiva Raya.",
+     "source_date": "1986",
+     "source_name": "Archaeological Survey of India",
+     "source_url": "https://asi.nic.in",
+     "text": "Epigraphical and structural surveys by the Archaeological Survey of India show that the Vittala temple complex construction originated during the reign of King Devaraya II in the 15th century.",
+     "unit": null
+    },
+    {
+     "label": "scripture",
+     "number": 1520.0,
+     "quote": "What I saw from thence seemed to me as large as Rome, and very beautiful to the sight; there are many groves of trees within it, in the gardens of the houses, and many conduits of water which flow into the midst of it...",
+     "source_date": "1900",
+     "source_name": "Domingo Paes, Chronica dos reis de Bisnaga (trans. Robert Sewell)",
+     "source_url": "https://en.wikipedia.org/wiki/Domingo_Paes",
+     "text": "Portuguese traveller Domingo Paes recorded around 1520 that the capital of the Vijayanagara Empire appeared as large as Rome when viewed from a surrounding hill.",
+     "unit": "CE"
+    },
+    {
+     "label": "scripture",
+     "number": 100000.0,
+     "quote": "Of the city of Bisnaga they say that there are more than a hundred thousand dwelling-houses in it, all one-storeyed and flat-roofed, to each of which there is a low surrounding wall...",
+     "source_date": "1900",
+     "source_name": "Domingo Paes, Chronica dos reis de Bisnaga (trans. Robert Sewell)",
+     "source_url": "https://en.wikipedia.org/wiki/Domingo_Paes",
+     "text": "Domingo Paes recorded in his 16th-century chronicle that the capital city contained more than 100,000 dwelling houses.",
+     "unit": "count"
+    },
+    {
+     "label": "disputed",
+     "number": 500000.0,
+     "quote": "Chandler's calculations of the population of the twenty-five largest cities (updated by Modelski and Morris) list Vijayanagar in 1500 CE at 500,000 inhabitants.",
+     "source_date": "1987",
+     "source_name": "Tertius Chandler, Four Thousand Years of Urban Growth",
+     "source_url": "https://en.wikipedia.org/wiki/Historical_urban_community_sizes",
+     "text": "Historical demographers disagree on whether Vijayanagara reached a population of 500,000 around 1500 CE to make it the second largest city globally after Beijing, with modelers like Tertius Chandler estimating 500,000 residents while regional historians argue spatial and agrarian evidence points to a smaller permanent core.",
+     "unit": "count"
+    },
+    {
+     "label": "disputed",
+     "number": null,
+     "quote": "Well known for centuries, the musical pillars are only now beginning to be studied scientifically to examine whether resonant properties were deliberate architectural choices or structural consequences.",
+     "source_date": "2008-11-01",
+     "source_name": "Physics Today",
+     "source_url": "https://doi.org/10.1063/1.3027978",
+     "text": "Researchers disagree on whether Vijayanagara architects intentionally tuned the shafts as musical lithophones or if their resonant ringing is merely an incidental physical byproduct of carving slender, uniform granite columns.",
+     "unit": null
+    },
+    {
+     "label": "legend",
+     "number": 2.0,
+     "quote": "To satisfy their curiosity they cut two of the musical pillars of Vittala Temple to check what existed inside the stone pillars that creates musical notes. However, they found nothing inside the pillars.",
+     "source_date": "2023-05-19",
+     "source_name": "Times of India / Local Oral Tradition",
+     "source_url": "https://timesofindia.indiatimes.com/travel/destinations/musical-pillars-of-hampis-vittala-temple-will-leave-you-stunned/articleshow/100352807.cms",
+     "text": "A persistent local legend claims that British colonial officers cut two pillars in the Vittala Temple to inspect whether hollow sound boxes or musical wires were concealed inside.",
+     "unit": "count"
+    },
+    {
+     "label": "legend",
+     "number": 81.0,
+     "quote": "These 3.6 meter high pillars can imitate the sounds of 81 different instruments.",
+     "source_date": "2023-05-19",
+     "source_name": "Local Oral Tradition",
+     "source_url": "https://timesofindia.indiatimes.com/travel/destinations/musical-pillars-of-hampis-vittala-temple-will-leave-you-stunned/articleshow/100352807.cms",
+     "text": "Popular temple lore states that the clusters of colonnettes were sculpted to replicate 81 distinct traditional percussion, string, and wind instruments.",
+     "unit": "count"
+    }
+   ],
+   "summary": "Popular legend holds that British authorities sawed open two musical pillars at the Vittala Temple to find the secret hollow mechanism producing the seven notes of Sa-Re-Ga-Ma, only to find solid rock. Modern non-destructive acoustic testing revealed that all 56 pillars are solid monolithic granite whose dimensions produce resonant flexural vibrations resembling bell chimes rather than hollow acoustics. Experts disagree over whether medieval sculptors intentionally engineered these columns to match a musical scale or if the tones are an accidental byproduct of carving slender, uniform stone supports. What remains unknown is whether these ringing lithophones played an active role in liturgical music and dance rituals or why no surviving Vijayanagara manuals explain their construction technique."
+  },
   "target_minutes": null,
-  "title_hi": "Lonar, ulka se bani jheel"
+  "title_hi": "Hampi ke sangeet khambe"
  },
- "updated": "2026-10-23T18:41:54+00:00",
+ "updated": "2026-10-24T10:04:09+00:00",
  "writer": "claude"
 }
