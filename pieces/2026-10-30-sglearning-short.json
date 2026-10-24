@@ -1,0 +1,266 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 195000.0,
+   "quote": "The MCX silver rate today has decisively slipped below ₹2 lakh per kg and is currently quoting at around ₹1,95,000 per kg, logging an intraday loss of nearly ₹4,500 per kg on Friday.",
+   "source_date": "2026-10-23",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
+   "text": "Domestic silver futures slipped below the critical psychological threshold to trade around 1,95,000 rupees per kilogram on the Multi Commodity Exchange.",
+   "unit": "INR/kg"
+  },
+  {
+   "label": "reported",
+   "number": 53.5,
+   "quote": "Compared with the record high of ₹4,20,048 per kg that the precious metal hit on 29 January 2026 on the MCX, the silver price today is around 53.50% below that record.",
+   "source_date": "2026-10-23",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
+   "text": "Silver prices in India have plunged 53.50 percent from the record high achieved in late January 2026.",
+   "unit": "pct"
+  },
+  {
+   "label": "analyst-view",
+   "number": 240000.0,
+   "quote": "They said that the silver price in India may end at ₹2,40,000 and at $67 per ounce in the international market at the end of December 2026.",
+   "source_date": "2026-10-23",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
+   "text": "Commodity market experts project that the domestic silver price could conclude December 2026 near 2,40,000 rupees per kilogram.",
+   "unit": "INR"
+  },
+  {
+   "label": "analyst-view",
+   "number": 185000.0,
+   "quote": "However, they said that the silver price in India may offer good returns if someone starts accumulating the precious white metal from ₹1,85,000 and keeps adding on every big dip until it is sustained above ₹1,70,000.",
+   "source_date": "2026-10-23",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
+   "text": "Market analysts identify 1,85,000 rupees as an initial accumulation floor for silver during pullbacks as long as prices remain above 1,70,000 rupees.",
+   "unit": "INR"
+  }
+ ],
+ "id": "2026-10-30-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-10-24",
+   "drafts": 2,
+   "research": 1
+  },
+  "write_batch": {
+   "id": "msgbatch_01GgesAHzFEGEDQJT4bfKShc",
+   "key": "50c49ad5495904e3",
+   "tries": 1
+  }
+ },
+ "kind": "short",
+ "publish_day": "2026-10-30",
+ "reasons": [
+  "try 1: length: 118 words, allowed 150-260",
+  "draft cooking in Claude's batch lane; the next run collects it"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Record bhaav par chandi li, aaj woh lagbhag 53.5 percent neeche hai. 🥈\nJo group upar 'abhi lo' bol raha tha, wahi ab neeche bhi 'abhi lo' bol raha hai.\nSasta hona wajah nahi, aapka plan wajah hai.\nAapne kabhi tip sunkar kuch khareeda, haan ya na?\nYeh investment advice nahi hai.\nUs bhai ko bhejo jo WhatsApp group dekh kar chandi khareedta hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#MoneyTipsHindi",
+     "#HinglishFinance",
+     "#InvestingIndia",
+     "#PersonalFinanceIndia",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Chandi record se lagbhag 53.5 percent neeche hai, MCX par lagbhag 1,95,000 rupaye kilo. Jo upar 'abhi lo' bolte the, ab neeche bhi wahi bol rahe hain. Aapne kabhi tip sunkar kuch khareeda, haan ya na? Yeh investment advice nahi hai. #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Record bhaav par chandi li, aur ab woh aadhe se zyada neeche hai. Bheed upar bhi 'abhi lo' bolti hai aur neeche bhi, isliye khareedne ki wajah aapka plan hona chahiye, bhaav nahi. Pehle poocho kitne saal rakhoge aur girne par kya karoge. Us bhai ko bhejo jo WhatsApp group dekh kar chandi khareedta hai.",
+    "tags": [
+     "silver price",
+     "chandi",
+     "silver price today",
+     "MCX silver",
+     "silver crash",
+     "silver investment",
+     "personal finance hindi",
+     "hinglish finance",
+     "learning with sg"
+    ],
+    "title": "Silver price 53.5% gira: sasta ya trap?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Aapne kabhi tip sunkar kuch khareeda, haan ya na?",
+  "hook": "January mein Bhai ke phone par ek hi baat thi, chandi.",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "SETUP",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in his hoodie sits on a sofa at night, glowing phone in hand, screen full of shiny silver bar images, eyes excited, living room dim",
+     "type": "art"
+    },
+    "vo": "January mein Bhai ke phone par ek hi baat thi, chandi."
+   },
+   {
+    "facts_used": [],
+    "label": "SETUP",
+    "visual": {
+     "card": null,
+     "prompt": "Close view of a phone screen with many chat bubbles and arrows pointing up, silver coins scattered around the phone on a table, evening light, no readable text",
+     "type": "art"
+    },
+    "vo": "Har group mein shor, chandi record bana rahi hai, abhi lo."
+   },
+   {
+    "facts_used": [],
+    "label": "THE CHOICE",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI stands on a balcony looking at neighbours holding silver bars and smiling, he feels left out and restless, late afternoon",
+     "type": "art"
+    },
+    "vo": "Bhai ne socha, sab kama rahe hain, main peeche kyun rahun?"
+   },
+   {
+    "facts_used": [],
+    "label": "THE CHOICE",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI at a jewellery shop counter proudly receiving a heavy silver bar from the shopkeeper, confident grin, bright shop lights, daytime",
+     "type": "art"
+    },
+    "vo": "Record bhaav par chandi le li, jo upar hai, aur upar jayega."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "WHAT REALLY HAPPENED",
+    "visual": {
+     "card": null,
+     "prompt": "A large trading screen in a busy market hall showing a red line falling, traders watching tensely, a silver bar on a weighing scale in front, morning",
+     "type": "art"
+    },
+    "vo": "Aaj MCX par chandi lagbhag 1,95,000 rupaye kilo hai. MCX yaani commodity ka bazaar."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "WHAT REALLY HAPPENED",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI sits on his bed holding a silver bar that looks half faded away, shoulders dropped, shocked face, phone with a falling red chart beside him, night",
+     "type": "art"
+    },
+    "vo": "Record se lagbhag 53.5 percent neeche. Matlab aadhe se zyada paisa kaagaz par gayab."
+   },
+   {
+    "facts_used": [],
+    "label": "THE TWIST",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI stares at his phone as new chat bubbles now show arrows pointing down with shopping bags, his expression confused and wary, kitchen at night",
+     "type": "art"
+    },
+    "vo": "Ab wahi group keh raha hai, sasti hai, abhi lo. Awaaz wahi, disha ulti."
+   },
+   {
+    "facts_used": [],
+    "label": "THE TWIST",
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt sits at the dinner table with BHAI, calmly drawing a simple long road on a notebook, BHAI listening thoughtfully, warm evening light",
+     "type": "art"
+    },
+    "vo": "Sasta hona wajah nahi, wajah aapka plan hai. Kitne saal rakhoge, pehle yeh poocho. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "END",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI puts his phone face down on the table and smiles a little, a silver bar resting next to a cup of chai, calm night",
+     "type": "art"
+    },
+    "vo": "Aapne kabhi tip sunkar kuch khareeda, haan ya na?"
+   }
+  ],
+  "thumbnail": {
+   "scene": "BHAI holds a half-faded silver bar close to his face, eyes wide and mouth open in shock",
+   "words": [
+    "1,95,000",
+    "LOST"
+   ]
+  },
+  "title": "Chandi ne Bhai ka *paisa* aadha kar diya 🥈"
+ },
+ "status": "writing",
+ "timings": [],
+ "topic": {
+  "link": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
+  "published": "2026-10-24T12:05:14+00:00",
+  "rank": 3,
+  "revise": "length: 118 words, allowed 150-260",
+  "sheet": {
+   "facts": [
+    {
+     "label": "reported",
+     "number": 195000.0,
+     "quote": "The MCX silver rate today has decisively slipped below ₹2 lakh per kg and is currently quoting at around ₹1,95,000 per kg, logging an intraday loss of nearly ₹4,500 per kg on Friday.",
+     "source_date": "2026-10-23",
+     "source_name": "Mint",
+     "source_url": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
+     "text": "Domestic silver futures slipped below the critical psychological threshold to trade around 1,95,000 rupees per kilogram on the Multi Commodity Exchange.",
+     "unit": "INR/kg"
+    },
+    {
+     "label": "reported",
+     "number": 53.5,
+     "quote": "Compared with the record high of ₹4,20,048 per kg that the precious metal hit on 29 January 2026 on the MCX, the silver price today is around 53.50% below that record.",
+     "source_date": "2026-10-23",
+     "source_name": "Mint",
+     "source_url": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
+     "text": "Silver prices in India have plunged 53.50 percent from the record high achieved in late January 2026.",
+     "unit": "pct"
+    },
+    {
+     "label": "analyst-view",
+     "number": 240000.0,
+     "quote": "They said that the silver price in India may end at ₹2,40,000 and at $67 per ounce in the international market at the end of December 2026.",
+     "source_date": "2026-10-23",
+     "source_name": "Mint",
+     "source_url": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
+     "text": "Commodity market experts project that the domestic silver price could conclude December 2026 near 2,40,000 rupees per kilogram.",
+     "unit": "INR"
+    },
+    {
+     "label": "analyst-view",
+     "number": 185000.0,
+     "quote": "However, they said that the silver price in India may offer good returns if someone starts accumulating the precious white metal from ₹1,85,000 and keeps adding on every big dip until it is sustained above ₹1,70,000.",
+     "source_date": "2026-10-23",
+     "source_name": "Mint",
+     "source_url": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
+     "text": "Market analysts identify 1,85,000 rupees as an initial accumulation floor for silver during pullbacks as long as prices remain above 1,70,000 rupees.",
+     "unit": "INR"
+    }
+   ],
+   "summary": "Domestic silver prices have broken below the ₹2 lakh per kilogram mark to an 11-month low, erasing all calendar-year gains and dropping more than 53 percent from January's peak amid higher bond yields and cooling industrial demand. Salaried households face wider economic ripple effects as crude oil trading above $110 per barrel keeps local fuel prices elevated and feeds broad inflationary pressures. With the central bank responding by raising the benchmark repo rate, families must brace for higher borrowing costs that will directly increase home and auto loan EMIs."
+  },
+  "source": "Mint Markets",
+  "summary": "A steep sell-off pushed silver below  ₹2 lakh per kg, wiping out its 2026 gains and leaving prices more than 50% below January’s record. Higher energy costs and rate-hike concerns are weighing on the metal, though analysts see potential support around  ₹1,80,000– ₹1,85,000.",
+  "target_minutes": null,
+  "title": "Silver price has broken below  ₹2 lakh for the first time since December 2025: Is this the right time to buy for returns?"
+ },
+ "updated": "2026-10-24T12:37:29+00:00",
+ "writer": "claude"
+}
