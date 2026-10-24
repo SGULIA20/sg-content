@@ -2,10 +2,16 @@
  "made": "2026-10-24",
  "channels": {
   "sglearning": {
-   "error": "'str' object has no attribute 'get'"
+   "viewCount": "18884",
+   "subscriberCount": "53",
+   "hiddenSubscriberCount": false,
+   "videoCount": "75"
   },
   "arthvan": {
-   "error": "'str' object has no attribute 'get'"
+   "viewCount": "881",
+   "subscriberCount": "8",
+   "hiddenSubscriberCount": false,
+   "videoCount": "35"
   }
  },
  "rows": [
@@ -101,11 +107,11 @@
    "title": "Chakravyuh ka naksha: 5,000 saal purana?",
    "yt_views": 0,
    "yt_watched_pct": null,
-   "ig_views": 115,
+   "ig_views": 117,
    "ig_saves": 1,
-   "ig_skip_rate": 64.8,
+   "ig_skip_rate": 63.6,
    "th_views": 0,
-   "reach": 115
+   "reach": 117
   },
   {
    "id": "2026-10-24-sglearning-short",
@@ -161,7 +167,7 @@
   },
   "wO9L5aUZoQ4": {
    "stats": {
-    "viewCount": "16",
+    "viewCount": "3",
     "likeCount": "1",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -341,7 +347,7 @@
   },
   "kSVxzJmtZcA": {
    "stats": {
-    "viewCount": "91",
+    "viewCount": "92",
     "likeCount": "0",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -472,7 +478,44 @@
    "publishAt": "2026-11-05T13:30:00Z"
   }
  },
- "traffic": {},
+ "traffic": {
+  "sglearning:insightTrafficSourceType": {
+   "status": 403,
+   "headers": [],
+   "rows": [],
+   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"YouTube Analytics API has not been used in project 1026407812603 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtubeanalytics.googleapis.com/overview?project=1026407812603 then retry. If you enabled th"
+  },
+  "sglearning:day": {
+   "status": 403,
+   "headers": [],
+   "rows": [],
+   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"YouTube Analytics API has not been used in project 1026407812603 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtubeanalytics.googleapis.com/overview?project=1026407812603 then retry. If you enabled th"
+  },
+  "sglearning:video": {
+   "status": 403,
+   "headers": [],
+   "rows": [],
+   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"YouTube Analytics API has not been used in project 1026407812603 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtubeanalytics.googleapis.com/overview?project=1026407812603 then retry. If you enabled th"
+  },
+  "arthvan:insightTrafficSourceType": {
+   "status": 403,
+   "headers": [],
+   "rows": [],
+   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"YouTube Analytics API has not been used in project 1026407812603 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtubeanalytics.googleapis.com/overview?project=1026407812603 then retry. If you enabled th"
+  },
+  "arthvan:day": {
+   "status": 403,
+   "headers": [],
+   "rows": [],
+   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"YouTube Analytics API has not been used in project 1026407812603 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtubeanalytics.googleapis.com/overview?project=1026407812603 then retry. If you enabled th"
+  },
+  "arthvan:video": {
+   "status": 403,
+   "headers": [],
+   "rows": [],
+   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"YouTube Analytics API has not been used in project 1026407812603 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtubeanalytics.googleapis.com/overview?project=1026407812603 then retry. If you enabled th"
+  }
+ },
  "ig": {
   "account": {
    "followers_count": 17548,
@@ -491,11 +534,11 @@
     "permalink": "https://www.instagram.com/reel/De4hdZkmAV9/",
     "insights": {
      "reach": 104,
-     "views": 115,
+     "views": 117,
      "saved": 1,
      "shares": 0,
      "ig_reels_avg_watch_time": 11928,
-     "reels_skip_rate": 64.8
+     "reels_skip_rate": 63.6
     }
    },
    {
@@ -558,11 +601,11 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/De1LAJ6ESyh/",
     "insights": {
-     "reach": 45,
+     "reach": 46,
      "views": 59,
      "saved": 0,
      "shares": 0,
-     "ig_reels_avg_watch_time": 6869,
+     "ig_reels_avg_watch_time": 6793,
      "reels_skip_rate": 57.8
     }
    },
@@ -1151,7 +1194,7 @@
     "caption": "Modi ji ne 7 din mein kya kar diya? 🤯\n\n5 desh. 50+ global CEOs. $40 billion.\n\n🇦🇪 UAE — $5B investment + energy deals\n🇳🇱 ",
     "media_product_type": "REELS",
     "timestamp": "2026-05-25T16:15:08+0000",
-    "like_count": 26911,
+    "like_count": 26910,
     "comments_count": 8,
     "permalink": "https://www.instagram.com/reel/DYxJsaFBli_/",
     "insights": {
