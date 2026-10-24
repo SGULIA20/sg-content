@@ -1,8 +1,50 @@
 {
  "channel": "sglearning",
- "facts": [],
+ "facts": [
+  {
+   "label": "official",
+   "number": 120000.0,
+   "quote": "Invested Amount: ₹1,20,000.",
+   "source_date": "2026-01-01",
+   "source_name": "Franklin Templeton",
+   "source_url": "https://www.franklintempletonindia.com/investor/tools-and-calculators/sip-calculator",
+   "text": "A continuous monthly SIP contribution of 500 rupees over a 20-year investment horizon results in an aggregate invested capital of 120000 rupees.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 12.5,
+   "quote": "Similarly the rate for these assets for long-term (S. 112A) has increased from 10 to 12.5%.",
+   "source_date": "2024-07-24",
+   "source_name": "PIB",
+   "source_url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2036604",
+   "text": "Long-term capital gains on redemptions of equity-oriented mutual fund units held beyond 12 months are taxed at a flat rate of 12.5 percent.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 1.25,
+   "quote": "The exemption limit of 1 lakh for LTCG on these assets has also increased to 1.25 lakh Rs.",
+   "source_date": "2024-07-24",
+   "source_name": "PIB",
+   "source_url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2036604",
+   "text": "The annual exemption limit for long-term capital gains tax on equity mutual fund investments is set at 1.25 lakh rupees per financial year.",
+   "unit": "lakh INR"
+  }
+ ],
  "id": "2026-11-11-sglearning-long",
- "ids": {},
+ "ids": {
+  "budget": {
+   "day": "2026-10-24",
+   "drafts": 1,
+   "research": 1
+  },
+  "write_batch": {
+   "id": "msgbatch_015jmfMzaBwYwodMy5uw5NV3",
+   "key": "e489a509338c79b9",
+   "tries": 1
+  }
+ },
  "kind": "long",
  "publish_day": "2026-11-11",
  "reasons": [
@@ -11,22 +53,58 @@
   "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
-  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "draft cooking in Claude's batch lane; the next run collects it"
  ],
  "script": null,
- "status": "failed-research",
+ "status": "writing",
  "timings": [],
  "topic": {
   "hooks": [
-   "Gaadi 5 saal mein kitni sasti ho jaati hai?",
-   "Car loan ka byaaj kitna dete hain?",
-   "Cash hai toh bhi loan lena sahi hai?"
+   "500 ki SIP se kya hoga?",
+   "Market girne par SIP band karna sahi hai?",
+   "Expense ratio kya khata hai?"
   ],
-  "id": "car-loan-vs-cash",
-  "summary": "Total cost of car ownership: loan interest, depreciation, insurance, fuel, service; the loan-vs-cash decision with opportunity cost, why a used car can be the smarter maths for many families.",
+  "id": "sip-rupee-cost",
+  "sheet": {
+   "facts": [
+    {
+     "label": "official",
+     "number": 120000.0,
+     "quote": "Invested Amount: ₹1,20,000.",
+     "source_date": "2026-01-01",
+     "source_name": "Franklin Templeton",
+     "source_url": "https://www.franklintempletonindia.com/investor/tools-and-calculators/sip-calculator",
+     "text": "A continuous monthly SIP contribution of 500 rupees over a 20-year investment horizon results in an aggregate invested capital of 120000 rupees.",
+     "unit": "INR"
+    },
+    {
+     "label": "official",
+     "number": 12.5,
+     "quote": "Similarly the rate for these assets for long-term (S. 112A) has increased from 10 to 12.5%.",
+     "source_date": "2024-07-24",
+     "source_name": "PIB",
+     "source_url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2036604",
+     "text": "Long-term capital gains on redemptions of equity-oriented mutual fund units held beyond 12 months are taxed at a flat rate of 12.5 percent.",
+     "unit": "pct"
+    },
+    {
+     "label": "official",
+     "number": 1.25,
+     "quote": "The exemption limit of 1 lakh for LTCG on these assets has also increased to 1.25 lakh Rs.",
+     "source_date": "2024-07-24",
+     "source_name": "PIB",
+     "source_url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2036604",
+     "text": "The annual exemption limit for long-term capital gains tax on equity mutual fund investments is set at 1.25 lakh rupees per financial year.",
+     "unit": "lakh INR"
+    }
+   ],
+   "summary": "Systematic Investment Plans allow salaried households to begin long-term equity investing with outlays as low as ₹500 per month, utilizing rupee-cost averaging across cyclical market movements. Over a 20-year horizon, final wealth accumulation is governed by market compounding, regulatory expense ratios, and the 12.5% long-term capital gains tax threshold above ₹1.25 lakh. For middle-class families, maintaining consistent monthly contributions through crashes rather than discontinuing plans prevents compounding disruptions, though terminal returns remain exposed to broader economic conditions rather than guaranteed figures."
+  },
+  "summary": "How a monthly SIP in a mutual fund works, rupee cost averaging, the difference between returns in a good decade and a flat one, expense ratio, why stopping in a crash hurts; honest ranges, no promises.",
   "target_minutes": 12,
-  "title": "10 lakh ki gaadi: loan par lein ya cash, aur 5 saal mein asli kharcha kya"
+  "title": "500 rupaye mahine ki SIP: 20 saal mein kya bana, aur kya nahi bana"
  },
- "updated": "2026-10-23T14:16:01+00:00",
+ "updated": "2026-10-24T12:48:54+00:00",
  "writer": ""
 }
