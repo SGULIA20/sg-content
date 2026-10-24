@@ -118,3 +118,22 @@ def test_a_missing_messaging_permission_is_reported_once_a_day(tmp_path):
 
 def test_instagram_captions_ask_people_to_comment_app():
     assert "Comment karein APP" in instagram.DM_ASK["sglearning"] and "Waypoint" in instagram.DM_ASK["arthvan"]
+
+
+def test_threads_posts_without_the_topic_tag_when_threads_refuses_it():
+    seen = []
+    def call(method, path, token, params=None):
+        seen.append(dict(params or {}))
+        if path.endswith("/threads") and (params or {}).get("topic_tag"):
+            raise threads.ThreadsError("HTTP 500: unexpected error")
+        if path.endswith("/threads") or path.endswith("/threads_publish"):
+            return {"id": "p"}
+        return {"status": "FINISHED"}
+    assert threads.post_video("u", "t", "https://v", "text", call=call, sleep=lambda s: None, topic_tag="Personal Finance") == "p"
+    assert "topic_tag" in seen[0] and "topic_tag" not in seen[1]
+
+
+def test_a_secret_pasted_with_a_trailing_newline_is_trimmed(monkeypatch):
+    from engine import secrets
+    monkeypatch.setattr(secrets, "_KNOWN", set())                    # keep this made-up key out of other tests' secret scrubbing
+    assert secrets.get("SG_COMMAND_KEY", {"SG_COMMAND_KEY": "k3y-only-for-this-test\n"}) == "k3y-only-for-this-test"
