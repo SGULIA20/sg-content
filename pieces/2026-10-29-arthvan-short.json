@@ -2,113 +2,143 @@
  "channel": "arthvan",
  "facts": [
   {
-   "label": "archaeology",
-   "number": 8.0,
-   "quote": "The temple's 24 intricately carved wheels double as ancient sundials, seven stone horses, each symbolizing a color of the rainbow and a day of the week, pull the chariot eastward.",
-   "source_date": "2026-10-24",
-   "source_name": "Odisha Tourism",
-   "source_url": "https://odishatourism.gov.in",
-   "text": "Each carved wheel at Konark contains eight primary spokes that divide the solar day into eight praharas and operate as functional sundials.",
-   "unit": "count"
+   "label": "disputed",
+   "number": 52000.0,
+   "quote": "While earlier analyses dated the structure to 52 ± 6 ka, subsequent argon-argon dating ( 40Ar/ 39Ar) yielded a much older age of 570 ± 47 ka.",
+   "source_date": "2011",
+   "source_name": "Geology (Jourdan et al.) / Wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
+   "text": "Geologists disagree over the formation age of the Lonar crater, as thermoluminescence dating indicated an impact roughly 52,000 years ago, whereas argon-argon dating yielded an age of approximately 570,000 years ago.",
+   "unit": "years"
   },
   {
    "label": "archaeology",
-   "number": null,
-   "quote": "Supported by iron beams, the architraves were of chlorite and had their front faces sculptured.",
-   "source_date": "2003",
-   "source_name": "Archaeological Survey of India, Debala Mitra",
-   "source_url": "https://asi.nic.in",
-   "text": "Structural surveys by the Archaeological Survey of India documented the extensive use of massive wrought-iron beams and iron dowels to support stone lintels and corbelled roofs.",
-   "unit": null
-  },
-  {
-   "label": "archaeology",
-   "number": 1903.0,
-   "quote": "The interior of the jagamohana was filled with sand and sealed in 1903 on the recommendations of the conservation committee to preserve the structure.",
-   "source_date": "2003",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://asi.nic.in",
-   "text": "In 1903, British conservation engineers sealed and filled the interior of the assembly hall with sand to stabilize the threatened structure against collapse.",
+   "number": 1979.0,
+   "quote": "The Lonar Lake was designated as a National Geological Monument by the Geological Survey of India in 1979.",
+   "source_date": "1979",
+   "source_name": "Geological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
+   "text": "The Geological Survey of India officially recognized the unique meteoritic origin of the Lonar crater by declaring it a National Geological Monument in 1979.",
    "unit": "CE"
   },
   {
-   "label": "legend",
-   "number": 52.0,
-   "quote": "Based on the interaction with the nearby villagers, Sterling (1846) mentioned about a massive lodestone, which was believed to possess magnetic power capable of drawing vessels near the shore.",
-   "source_date": "1825",
-   "source_name": "Andrew Stirling, Asiatic Researches",
-   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
-   "text": "Local oral tradition claims that a massive 52-tonne magnetic lodestone was originally installed at the pinnacle of the sanctuary tower.",
-   "unit": "tonnes"
-  },
-  {
-   "label": "legend",
-   "number": null,
-   "quote": "Folklore says it kept the Surya idol suspended in mid-air due to magnetic forces.",
-   "source_date": "1908",
-   "source_name": "Bengal District Gazetteer: Puri",
-   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
-   "text": "Folklore asserts that the magnetic loadstone at the top worked with magnetic stones in the floor to suspend the temple's central deity in mid-air.",
-   "unit": null
-  },
-  {
-   "label": "legend",
-   "number": null,
-   "quote": "The magnetic field was believed to disrupt the compasses of passing ships... Portuguese sailors removed the lodestone, causing the temple's main structure to collapse.",
-   "source_date": "1908",
-   "source_name": "Bengal District Gazetteer: Puri",
-   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
-   "text": "A popular maritime story claims Portuguese sailors dismantled the crowning lodestone because its magnetic force disrupted their compasses and caused shipwrecks.",
-   "unit": null
-  },
-  {
-   "label": "disputed",
-   "number": null,
-   "quote": "However, the popular stories that the temple was completely destroyed by a particular invader or that a giant magnet caused its collapse are not firmly established by historical evidence.",
-   "source_date": "1968",
-   "source_name": "Archaeological Survey of India, Debala Mitra",
-   "source_url": "https://asi.nic.in",
-   "text": "Historians dispute the legend that Portuguese removal of a magnet caused the sanctuary to fall, citing natural weathering, foundation weaknesses, and documented structural decay.",
-   "unit": null
-  },
-  {
-   "label": "disputed",
-   "number": null,
-   "quote": "Opinions differ among scholars as to whether the main temple was ever fully completed, with James Fergusson arguing that marshy soil prevented the tower from standing, while others maintain it fell long after completion.",
-   "source_date": "1968",
-   "source_name": "Archaeological Survey of India, Debala Mitra",
-   "source_url": "https://asi.nic.in",
-   "text": "Architectural experts disagree on whether the main tower ever stood fully completed before settling into its sandy foundation or if it collapsed centuries later.",
-   "unit": null
-  },
-  {
-   "label": "scripture",
-   "number": null,
-   "quote": "Samba, cursed with leprosy, did penance at Arkakshetra on the banks of the Chandrabhaga and established a shrine in honour of the Sun god.",
-   "source_date": "1958",
-   "source_name": "Samba Purana",
-   "source_url": "https://en.wikipedia.org/wiki/Samba_Purana",
-   "text": "The Samba Purana states that Krishna's son Samba established a solar sanctuary on the banks of the Chandrabhaga river in Arkakshetra to cure himself of an affliction.",
-   "unit": null
-  },
-  {
-   "label": "scripture",
-   "number": null,
-   "quote": "In a later entry of the Madala Panji is recorded the catastrophe leading to the eventual collapse of the spire... that the kalasha and lotus-finial were no longer in place.",
-   "source_date": "1978",
-   "source_name": "Madala Panji",
-   "source_url": "https://en.wikipedia.org/wiki/Madala_Panji",
-   "text": "The Madala Panji chronicle of the Jagannath Temple records that the Konark spire lost its finial and suffered major structural collapse during the seventeenth century.",
-   "unit": null
+   "label": "archaeology",
+   "number": 1.8,
+   "quote": "The Lonar crater [1-3] is a relatively small (rim to rim diameter 1830 m), almost perfectly circular simple (bowl-shaped) impact crater...",
+   "source_date": "2004",
+   "source_name": "Lunar and Planetary Institute",
+   "source_url": "https://www.lpi.usra.edu/meetings/lpsc2004/pdf/1089.pdf",
+   "text": "Topographical surveys conducted by planetary scientists record that the rim-to-rim diameter of the Lonar impact crater spans approximately 1.8 kilometres.",
+   "unit": "km"
   },
   {
    "label": "archaeology",
+   "number": 150.0,
+   "quote": "The crater measures 1.8 km (1.1 mi) in diameter and is 150 m (490 ft) deep.",
+   "source_date": "2017",
+   "source_name": "Geological Survey of India / Wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
+   "text": "Geological depth profiling indicates that the bowl of the Lonar crater descends approximately 150 metres from the crest of the rim down to the floor of the depression.",
+   "unit": "metres"
+  },
+  {
+   "label": "archaeology",
+   "number": 2020.0,
+   "quote": "Scientists from the Agharkar Research Institute (ARI) in Pune, along with the National Environmental Engineering Research Institute (NEERI), investigated the cause and traced it to salt-loving microbes known as Haloarchaea...",
+   "source_date": "2020-07-22",
+   "source_name": "Agharkar Research Institute",
+   "source_url": "https://www.timesofindia.indiatimes.com",
+   "text": "In June 2020, microbiological analyses by the Agharkar Research Institute revealed that the sudden pink coloration of the lake was driven by a bloom of carotenoid-producing Haloarchaea thriving in heightened salinity.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1300.0,
+   "quote": "Henry Cousens dates the temple to the end of the 13th and beginning of the 14th centuries CE.",
+   "source_date": "1931",
+   "source_name": "Archaeological Survey of India (Henry Cousens)",
+   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+   "text": "Archaeologist Henry Cousens examined the Daitya Sudan Temple at Lonar and dated its construction to the turn of the 13th to 14th centuries CE during the Seuna Yadava era.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 32.0,
+   "quote": "The structure measures 32 metres in length and 25.8 metres in breadth, its walls telling stories through thousands of intricate carvings.",
+   "source_date": "2024",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+   "text": "Architectural assessments demonstrate that the Daitya Sudan Temple spans 32 metres in length and was constructed of black basalt using mortise-and-tenon Hemadpanthi masonry without mortar.",
+   "unit": "metres"
+  },
+  {
+   "label": "archaeology",
+   "number": 2020.0,
+   "quote": "Lonar Lake was designated as a Ramsar site on 22 July 2020 (Reference no. 2441).",
+   "source_date": "2020-07-22",
+   "source_name": "Ramsar Convention Secretariat",
+   "source_url": "https://rsis.ramsar.org/ris/2441",
+   "text": "The Lonar Lake wetland ecosystem was designated as a Ramsar site of international importance in 2020 under criteria recognizing its unique soda-saline limnology.",
+   "unit": "CE"
+  },
+  {
+   "label": "scripture",
    "number": null,
-   "quote": "Though the iron beams may lack certain properties like ductility and weldability, the finding is significant as the ancient technique if revived and put to use again may help prevent rusting.",
-   "source_date": "2023-12-18",
-   "source_name": "Archaeological Survey of India / IIT Study",
-   "source_url": "https://asi.nic.in",
-   "text": "Metallurgical research conducted with the Archaeological Survey of India found that the temple's 13th-century forged iron beams developed exceptional rust resistance against coastal sea air.",
+   "quote": "The principal dominant myth is a story with two main characters: the god Vishnu in his manifestation as Daityasudana who triumphs over Lavanasura... claimed through its purported textual reference in the Skanda Purana...",
+   "source_date": "1800",
+   "source_name": "Skanda Purana (Lonar Mahatmya)",
+   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+   "text": "The Lonar Mahatmya, a regional liturgical text claiming attachment to the Skanda Purana, relates that Vishnu assumed the avatar of Daityasudana to locate and vanquish the subterranean demon Lonasura.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "The present Lonar Lake is claimed to be the den of the demon; the water was mixed with his blood and the salts occurred in the water through his flesh.",
+   "source_date": "1800",
+   "source_name": "Skanda Purana (Lonar Mahatmya)",
+   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+   "text": "In the Lonar Mahatmya tradition, the crater basin is identified as the subterranean lair of the fallen asura, whose blood and putrefied flesh caused the water to turn saline and alkaline.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "...the Padma Purana describing a sacred tank at Vishnu Gaya—identified with Lonar—whose waters grant freedom from human sins (vol. VIII, verses 180.21–39).",
+   "source_date": "1894",
+   "source_name": "Padma Purana",
+   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+   "text": "The Padma Purana highlights a consecrated reservoir at a place identified as Vishnu Gaya, promising spiritual absolution from transgressions to anyone bathing in its holy waters.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "A nearby hill is supposed to be the lid which Vishnu had thrown open.",
+   "source_date": "2020",
+   "source_name": "Local Oral Tradition, Lonar",
+   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+   "text": "Local folklore asserts that an adjacent hill represents the cavern lid that Vishnu kicked open with his toe before casting down the demon Lonasura.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "It is also interesting to note that compasses fail to work in certain parts of the crater... Some scientist says meteorite could be present under the lake.",
+   "source_date": "2017",
+   "source_name": "Local Oral Folklore, Lonar",
+   "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
+   "text": "A popular local belief holds that magnetic compasses malfunction around sections of the crater because substantial fragments of the extraterrestrial meteorite remain buried below the surface.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "A standing image of Surya occupies the niche at the back of the temple. This indicates that the temple might have been originally intended to be dedicated to Surya.",
+   "source_date": "1931",
+   "source_name": "Archaeological Survey of India / Henry Cousens",
+   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+   "text": "Scholars disagree over the original religious dedication of the Daitya Sudan Temple, as an uncarved central niche contains an image of Surya while the inner sanctum is consecrated to Vishnu.",
    "unit": null
   }
  ],
@@ -116,13 +146,13 @@
  "ids": {
   "budget": {
    "day": "2026-10-24",
-   "drafts": 1,
-   "research": 1
+   "drafts": 2,
+   "research": 2
   },
   "write_batch": {
-   "id": "msgbatch_01Byam44Q8LkAVUucVBjyoQQ",
-   "key": "f316cf064579c7f8",
-   "tries": 2
+   "id": "msgbatch_01BX6gaa47sn6ktHznYF2L9c",
+   "key": "8b8f3010e14eb439",
+   "tries": 3
   }
  },
  "kind": "short",
@@ -138,6 +168,7 @@
   "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it"
  ],
@@ -356,137 +387,166 @@
  "timings": [],
  "topic": {
   "allowed_sources": [
-   "asi.nic.in",
+   "gsi.gov.in",
    "en.wikipedia.org",
-   "odishatourism.gov.in",
-   "UNESCO whc.unesco.org"
+   "Skanda Purana (Lonar Mahatmya)"
   ],
   "hooks": [
-   "Konark mandir ke upar 52 ton ka chumbak tha?",
-   "Jahaaz Konark ke paas kyon bhatakte the?",
-   "Surya mandir ka pahiya ghadi hai?"
+   "Ek ulka ne 50,000 saal pehle yeh jheel banayi?",
+   "Lonar ka paani gulabi kyon hua?",
+   "Jheel ke kinare Daitya Sudan mandir ki kahani"
   ],
-  "id": "konark-magnet",
-  "notes": "Magnet story is disputed/legend; the sundial wheel is documented.",
-  "place": "Konark, Odisha",
+  "id": "lonar-crater",
+  "notes": "Science is solid here; the demon story is scripture/legend.",
+  "place": "Lonar, Maharashtra",
   "sheet": {
    "facts": [
     {
-     "label": "archaeology",
-     "number": 8.0,
-     "quote": "The temple's 24 intricately carved wheels double as ancient sundials, seven stone horses, each symbolizing a color of the rainbow and a day of the week, pull the chariot eastward.",
-     "source_date": "2026-10-24",
-     "source_name": "Odisha Tourism",
-     "source_url": "https://odishatourism.gov.in",
-     "text": "Each carved wheel at Konark contains eight primary spokes that divide the solar day into eight praharas and operate as functional sundials.",
-     "unit": "count"
+     "label": "disputed",
+     "number": 52000.0,
+     "quote": "While earlier analyses dated the structure to 52 ± 6 ka, subsequent argon-argon dating ( 40Ar/ 39Ar) yielded a much older age of 570 ± 47 ka.",
+     "source_date": "2011",
+     "source_name": "Geology (Jourdan et al.) / Wikipedia",
+     "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
+     "text": "Geologists disagree over the formation age of the Lonar crater, as thermoluminescence dating indicated an impact roughly 52,000 years ago, whereas argon-argon dating yielded an age of approximately 570,000 years ago.",
+     "unit": "years"
     },
     {
      "label": "archaeology",
-     "number": null,
-     "quote": "Supported by iron beams, the architraves were of chlorite and had their front faces sculptured.",
-     "source_date": "2003",
-     "source_name": "Archaeological Survey of India, Debala Mitra",
-     "source_url": "https://asi.nic.in",
-     "text": "Structural surveys by the Archaeological Survey of India documented the extensive use of massive wrought-iron beams and iron dowels to support stone lintels and corbelled roofs.",
-     "unit": null
-    },
-    {
-     "label": "archaeology",
-     "number": 1903.0,
-     "quote": "The interior of the jagamohana was filled with sand and sealed in 1903 on the recommendations of the conservation committee to preserve the structure.",
-     "source_date": "2003",
-     "source_name": "Archaeological Survey of India",
-     "source_url": "https://asi.nic.in",
-     "text": "In 1903, British conservation engineers sealed and filled the interior of the assembly hall with sand to stabilize the threatened structure against collapse.",
+     "number": 1979.0,
+     "quote": "The Lonar Lake was designated as a National Geological Monument by the Geological Survey of India in 1979.",
+     "source_date": "1979",
+     "source_name": "Geological Survey of India",
+     "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
+     "text": "The Geological Survey of India officially recognized the unique meteoritic origin of the Lonar crater by declaring it a National Geological Monument in 1979.",
      "unit": "CE"
     },
     {
-     "label": "legend",
-     "number": 52.0,
-     "quote": "Based on the interaction with the nearby villagers, Sterling (1846) mentioned about a massive lodestone, which was believed to possess magnetic power capable of drawing vessels near the shore.",
-     "source_date": "1825",
-     "source_name": "Andrew Stirling, Asiatic Researches",
-     "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
-     "text": "Local oral tradition claims that a massive 52-tonne magnetic lodestone was originally installed at the pinnacle of the sanctuary tower.",
-     "unit": "tonnes"
-    },
-    {
-     "label": "legend",
-     "number": null,
-     "quote": "Folklore says it kept the Surya idol suspended in mid-air due to magnetic forces.",
-     "source_date": "1908",
-     "source_name": "Bengal District Gazetteer: Puri",
-     "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
-     "text": "Folklore asserts that the magnetic loadstone at the top worked with magnetic stones in the floor to suspend the temple's central deity in mid-air.",
-     "unit": null
-    },
-    {
-     "label": "legend",
-     "number": null,
-     "quote": "The magnetic field was believed to disrupt the compasses of passing ships... Portuguese sailors removed the lodestone, causing the temple's main structure to collapse.",
-     "source_date": "1908",
-     "source_name": "Bengal District Gazetteer: Puri",
-     "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
-     "text": "A popular maritime story claims Portuguese sailors dismantled the crowning lodestone because its magnetic force disrupted their compasses and caused shipwrecks.",
-     "unit": null
-    },
-    {
-     "label": "disputed",
-     "number": null,
-     "quote": "However, the popular stories that the temple was completely destroyed by a particular invader or that a giant magnet caused its collapse are not firmly established by historical evidence.",
-     "source_date": "1968",
-     "source_name": "Archaeological Survey of India, Debala Mitra",
-     "source_url": "https://asi.nic.in",
-     "text": "Historians dispute the legend that Portuguese removal of a magnet caused the sanctuary to fall, citing natural weathering, foundation weaknesses, and documented structural decay.",
-     "unit": null
-    },
-    {
-     "label": "disputed",
-     "number": null,
-     "quote": "Opinions differ among scholars as to whether the main temple was ever fully completed, with James Fergusson arguing that marshy soil prevented the tower from standing, while others maintain it fell long after completion.",
-     "source_date": "1968",
-     "source_name": "Archaeological Survey of India, Debala Mitra",
-     "source_url": "https://asi.nic.in",
-     "text": "Architectural experts disagree on whether the main tower ever stood fully completed before settling into its sandy foundation or if it collapsed centuries later.",
-     "unit": null
-    },
-    {
-     "label": "scripture",
-     "number": null,
-     "quote": "Samba, cursed with leprosy, did penance at Arkakshetra on the banks of the Chandrabhaga and established a shrine in honour of the Sun god.",
-     "source_date": "1958",
-     "source_name": "Samba Purana",
-     "source_url": "https://en.wikipedia.org/wiki/Samba_Purana",
-     "text": "The Samba Purana states that Krishna's son Samba established a solar sanctuary on the banks of the Chandrabhaga river in Arkakshetra to cure himself of an affliction.",
-     "unit": null
-    },
-    {
-     "label": "scripture",
-     "number": null,
-     "quote": "In a later entry of the Madala Panji is recorded the catastrophe leading to the eventual collapse of the spire... that the kalasha and lotus-finial were no longer in place.",
-     "source_date": "1978",
-     "source_name": "Madala Panji",
-     "source_url": "https://en.wikipedia.org/wiki/Madala_Panji",
-     "text": "The Madala Panji chronicle of the Jagannath Temple records that the Konark spire lost its finial and suffered major structural collapse during the seventeenth century.",
-     "unit": null
+     "label": "archaeology",
+     "number": 1.8,
+     "quote": "The Lonar crater [1-3] is a relatively small (rim to rim diameter 1830 m), almost perfectly circular simple (bowl-shaped) impact crater...",
+     "source_date": "2004",
+     "source_name": "Lunar and Planetary Institute",
+     "source_url": "https://www.lpi.usra.edu/meetings/lpsc2004/pdf/1089.pdf",
+     "text": "Topographical surveys conducted by planetary scientists record that the rim-to-rim diameter of the Lonar impact crater spans approximately 1.8 kilometres.",
+     "unit": "km"
     },
     {
      "label": "archaeology",
+     "number": 150.0,
+     "quote": "The crater measures 1.8 km (1.1 mi) in diameter and is 150 m (490 ft) deep.",
+     "source_date": "2017",
+     "source_name": "Geological Survey of India / Wikipedia",
+     "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
+     "text": "Geological depth profiling indicates that the bowl of the Lonar crater descends approximately 150 metres from the crest of the rim down to the floor of the depression.",
+     "unit": "metres"
+    },
+    {
+     "label": "archaeology",
+     "number": 2020.0,
+     "quote": "Scientists from the Agharkar Research Institute (ARI) in Pune, along with the National Environmental Engineering Research Institute (NEERI), investigated the cause and traced it to salt-loving microbes known as Haloarchaea...",
+     "source_date": "2020-07-22",
+     "source_name": "Agharkar Research Institute",
+     "source_url": "https://www.timesofindia.indiatimes.com",
+     "text": "In June 2020, microbiological analyses by the Agharkar Research Institute revealed that the sudden pink coloration of the lake was driven by a bloom of carotenoid-producing Haloarchaea thriving in heightened salinity.",
+     "unit": "CE"
+    },
+    {
+     "label": "archaeology",
+     "number": 1300.0,
+     "quote": "Henry Cousens dates the temple to the end of the 13th and beginning of the 14th centuries CE.",
+     "source_date": "1931",
+     "source_name": "Archaeological Survey of India (Henry Cousens)",
+     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+     "text": "Archaeologist Henry Cousens examined the Daitya Sudan Temple at Lonar and dated its construction to the turn of the 13th to 14th centuries CE during the Seuna Yadava era.",
+     "unit": "CE"
+    },
+    {
+     "label": "archaeology",
+     "number": 32.0,
+     "quote": "The structure measures 32 metres in length and 25.8 metres in breadth, its walls telling stories through thousands of intricate carvings.",
+     "source_date": "2024",
+     "source_name": "Archaeological Survey of India",
+     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+     "text": "Architectural assessments demonstrate that the Daitya Sudan Temple spans 32 metres in length and was constructed of black basalt using mortise-and-tenon Hemadpanthi masonry without mortar.",
+     "unit": "metres"
+    },
+    {
+     "label": "archaeology",
+     "number": 2020.0,
+     "quote": "Lonar Lake was designated as a Ramsar site on 22 July 2020 (Reference no. 2441).",
+     "source_date": "2020-07-22",
+     "source_name": "Ramsar Convention Secretariat",
+     "source_url": "https://rsis.ramsar.org/ris/2441",
+     "text": "The Lonar Lake wetland ecosystem was designated as a Ramsar site of international importance in 2020 under criteria recognizing its unique soda-saline limnology.",
+     "unit": "CE"
+    },
+    {
+     "label": "scripture",
      "number": null,
-     "quote": "Though the iron beams may lack certain properties like ductility and weldability, the finding is significant as the ancient technique if revived and put to use again may help prevent rusting.",
-     "source_date": "2023-12-18",
-     "source_name": "Archaeological Survey of India / IIT Study",
-     "source_url": "https://asi.nic.in",
-     "text": "Metallurgical research conducted with the Archaeological Survey of India found that the temple's 13th-century forged iron beams developed exceptional rust resistance against coastal sea air.",
+     "quote": "The principal dominant myth is a story with two main characters: the god Vishnu in his manifestation as Daityasudana who triumphs over Lavanasura... claimed through its purported textual reference in the Skanda Purana...",
+     "source_date": "1800",
+     "source_name": "Skanda Purana (Lonar Mahatmya)",
+     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+     "text": "The Lonar Mahatmya, a regional liturgical text claiming attachment to the Skanda Purana, relates that Vishnu assumed the avatar of Daityasudana to locate and vanquish the subterranean demon Lonasura.",
+     "unit": null
+    },
+    {
+     "label": "scripture",
+     "number": null,
+     "quote": "The present Lonar Lake is claimed to be the den of the demon; the water was mixed with his blood and the salts occurred in the water through his flesh.",
+     "source_date": "1800",
+     "source_name": "Skanda Purana (Lonar Mahatmya)",
+     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+     "text": "In the Lonar Mahatmya tradition, the crater basin is identified as the subterranean lair of the fallen asura, whose blood and putrefied flesh caused the water to turn saline and alkaline.",
+     "unit": null
+    },
+    {
+     "label": "scripture",
+     "number": null,
+     "quote": "...the Padma Purana describing a sacred tank at Vishnu Gaya—identified with Lonar—whose waters grant freedom from human sins (vol. VIII, verses 180.21–39).",
+     "source_date": "1894",
+     "source_name": "Padma Purana",
+     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+     "text": "The Padma Purana highlights a consecrated reservoir at a place identified as Vishnu Gaya, promising spiritual absolution from transgressions to anyone bathing in its holy waters.",
+     "unit": null
+    },
+    {
+     "label": "legend",
+     "number": null,
+     "quote": "A nearby hill is supposed to be the lid which Vishnu had thrown open.",
+     "source_date": "2020",
+     "source_name": "Local Oral Tradition, Lonar",
+     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+     "text": "Local folklore asserts that an adjacent hill represents the cavern lid that Vishnu kicked open with his toe before casting down the demon Lonasura.",
+     "unit": null
+    },
+    {
+     "label": "legend",
+     "number": null,
+     "quote": "It is also interesting to note that compasses fail to work in certain parts of the crater... Some scientist says meteorite could be present under the lake.",
+     "source_date": "2017",
+     "source_name": "Local Oral Folklore, Lonar",
+     "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
+     "text": "A popular local belief holds that magnetic compasses malfunction around sections of the crater because substantial fragments of the extraterrestrial meteorite remain buried below the surface.",
+     "unit": null
+    },
+    {
+     "label": "disputed",
+     "number": null,
+     "quote": "A standing image of Surya occupies the niche at the back of the temple. This indicates that the temple might have been originally intended to be dedicated to Surya.",
+     "source_date": "1931",
+     "source_name": "Archaeological Survey of India / Henry Cousens",
+     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+     "text": "Scholars disagree over the original religious dedication of the Daitya Sudan Temple, as an uncarved central niche contains an image of Surya while the inner sanctum is consecrated to Vishnu.",
      "unit": null
     }
    ],
-   "summary": "Popular maritime legend claims that a 52-tonne magnetic lodestone sat atop the Konark Sun Temple, causing the central idol to levitate and pulling European ships onto nearby reefs until foreign sailors removed it. Archaeological investigations show no physical evidence of a giant crowning magnet, though builders did use heavy wrought-iron beams in the structure and engineered the 24 base wheels as functional sundials. Historians and engineers disagree on the cause of the main sanctuary tower's collapse, debating whether poor soil bearing capacity, structural overloading, saline weathering of iron ties, or military desecration caused the ruin. It remains unknown whether the colossal vimana was ever fully consecrated to its intended height before catastrophic subsidence occurred."
+   "summary": "According to the Skanda Purana's Lonar Mahatmya and local legend, the crater formed when Lord Vishnu manifested as Daityasudana to tear open the underworld and destroy the demon Lonasura, leaving a depression filled with the demon's saline blood. Geological and archaeological investigations confirmed that the site is actually a 1.8-kilometre-wide hypervelocity meteorite impact crater carved into basalt, harboring a hyper-alkaline soda lake that turned dramatically pink in June 2020 due to an explosive bloom of Haloarchaea microbes. Geochemists remain sharply divided over the crater's antiquity, with thermoluminescence estimates dating the impact to roughly 52,000 years ago while newer argon-argon isotopic measurements place it much earlier at approximately 570,000 years ago. It remains unknown whether unvaporized remnants of the metallic or chondritic meteorite survive buried beneath the lake sediments, as well as the exact subterranean origin of the freshwater springs feeding the crater's rim."
   },
   "target_minutes": null,
-  "title_hi": "Konark ka chumbak"
+  "title_hi": "Lonar, ulka se bani jheel"
  },
- "updated": "2026-10-24T10:42:58+00:00",
+ "updated": "2026-10-24T12:23:24+00:00",
  "writer": "claude"
 }
