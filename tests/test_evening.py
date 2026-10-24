@@ -79,3 +79,11 @@ def test_the_9pm_card_reports_the_founders_lagos_day_not_indias_next_day():
     from datetime import datetime, timezone
     sent = datetime(2026, 10, 22, 20, 3, tzinfo=timezone.utc)          # 21:03 WAT, already 01:33 on 23 Oct in India
     assert evening.card_day(sent).isoformat() == "2026-10-22"
+
+
+def test_a_card_run_after_midnight_in_lagos_still_reports_the_day_that_ended():
+    from datetime import datetime, timezone
+    late = datetime(2026, 10, 24, 23, 30, tzinfo=timezone.utc)         # 00:30 WAT on 25 Oct: a late run, the day that ended is still the 24th
+    assert evening.card_day(late).isoformat() == "2026-10-24"
+    assert evening.card_day(datetime(2026, 10, 25, 3, 59, tzinfo=timezone.utc)).isoformat() == "2026-10-24"   # 04:59 WAT
+    assert evening.card_day(datetime(2026, 10, 25, 4, 0, tzinfo=timezone.utc)).isoformat() == "2026-10-25"    # 05:00 WAT: a new day

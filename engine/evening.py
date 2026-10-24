@@ -143,10 +143,11 @@ def build(day: date | None = None, now: datetime | None = None, root: Path = ROO
 
 def card_day(now: datetime | None = None) -> date:
     """The day the 9 pm card reports: the founder's day in Lagos. The card goes out at 21:03 WAT, which is already 01:33 the next day in
-    India, so keying on India's date (as before 23 Oct 2026) reported tomorrow's empty slots as NOT POSTED."""
+    India, so keying on India's date (as before 23 Oct 2026) reported tomorrow's empty slots as NOT POSTED. A run delayed past midnight WAT
+    still reports the day that just ended: before 05:00 WAT counts as the previous day."""
     from zoneinfo import ZoneInfo
     now = now or datetime.now(timezone.utc)
-    return now.astimezone(ZoneInfo("Africa/Lagos")).date()
+    return (now.astimezone(ZoneInfo("Africa/Lagos")) - timedelta(hours=5)).date()
 
 
 def main(argv=None) -> int:
