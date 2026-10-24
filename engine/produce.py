@@ -81,6 +81,8 @@ def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFA
     _log_run(root, {"day": today.isoformat(), "at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "ok": ok,
                     "dry_run": dry_run, "made": made, "stopped": stopped})
     text = digest.run_summary(root, today)
+    if out_of_credit(root, made):
+        text = CREDIT_ALERT + "\n\n" + text
     if stopped:
         text += f"\nStopped for today: {stopped}. It carries on at the next run."
     alerts = digest.alerts(root, today)
@@ -92,6 +94,22 @@ def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFA
         notify(text)
     print(text, flush=True)
     return 0 if ok else 1
+
+
+CREDIT_ALERT = ("🚨 Gemini credit has run out: no new videos can be made until it is topped up "
+                "(aistudio.google.com → your project → Billing). Posting from the ready stock carries on.")
+CREDIT_SIGNS = ("prepayment credits are depleted", "(402)", "billing account", "insufficient balance")
+
+
+def out_of_credit(root: Path, made: list) -> bool:
+    """True when this run failed because Gemini's prepaid balance is empty (23 Oct 2026: it showed only as failed research)."""
+    texts = [str(b) for _a, b in made]
+    for pid, _status in made:
+        try:
+            texts += pieces.load(pid, root=root).reasons[-1:]
+        except Exception:
+            pass
+    return any(sign in t.lower() for t in texts for sign in CREDIT_SIGNS)
 
 
 def main(argv=None) -> int:
