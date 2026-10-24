@@ -2,9 +2,11 @@ name: produce
 
 on:
   schedule:
-    - cron: '5 7 * * *'   # 08:05 Lagos, 12:35 India: right after Gemini's daily voice quota resets (midnight Pacific = 07:00 UTC)
-    - cron: '0 9 * * *'   # safety net; the engine never remakes a finished piece
-    - cron: '35 13 * * *' # afternoon catch-up: finishes what failed earlier and keeps filling the 4-5 day buffer
+    - cron: '13 7 * * *'   # 08:05 Lagos, 12:35 India: right after Gemini's daily voice quota resets (midnight Pacific = 07:00 UTC)
+    - cron: '43 7 * * *'  # GitHub fired the 07:05 slot seven hours late on 21 Oct 2026: several chances, the engine never remakes a finished piece
+    - cron: '13 8 * * *'
+    - cron: '13 9 * * *'   # safety net
+    - cron: '43 13 * * *' # afternoon catch-up: finishes what failed earlier and keeps filling the 4-5 day buffer
   workflow_dispatch:
     inputs:
       dry_run:
@@ -32,7 +34,7 @@ concurrency:
 jobs:
   produce:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 300          # batch lanes wait on jobs; a run may make 6-8 pieces (each piece is committed as it finishes)
     steps:
       - uses: actions/checkout@v4
         with:
@@ -77,7 +79,7 @@ jobs:
           ONLY: ${{ github.event.inputs.only }}
           UNLISTED_DAY1: ${{ github.event.inputs.unlisted == 'true' && '1' || '' }}
         run: |
-          ARGS="--max ${{ github.event.inputs.max || '3' }}"
+          ARGS="--max ${{ github.event.inputs.max || '4' }}"
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           if [ -n "$ONLY" ]; then ARGS="$ARGS --only $ONLY"; fi
           python -m engine.produce $ARGS

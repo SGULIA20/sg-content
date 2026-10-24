@@ -1,0 +1,512 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 5.9,
+   "quote": "In July 2026, the weighted average rate on fresh rupee term deposits at scheduled commercial banks was 5.9%1.",
+   "source_date": "2026-09-07",
+   "source_name": "Grip Invest",
+   "source_url": "https://gripinvest.in/blog/are-fd-interest-rates-beating-inflation-in-india/",
+   "text": "Scheduled commercial banks offered a weighted average rate of 5.9 percent on fresh rupee term deposits in July 2026.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-10-28-sglearning-long",
+ "ids": {
+  "captions": {
+   "en": "AUieDaZN8oJAPkszGKEm4_ayLOgTxBOInkowYLf2qdG-ihHMWxaFTGFD",
+   "gu": "AUieDaZrZTdco7EVWlP8QjIxJykpMR4-qkGw3QUlE8f789K_jCzqMjgPeoGBn_gLZTqH-OoQPyE",
+   "hi": "AUieDaZHblL6aqGJ11LRfjgDqLuMeGoqRgO1_2AURHzTsi-wG3jBh6tUdppNynXFascS9fI",
+   "mr": "AUieDaZoKFkz5Eqa0c-mSFNeOZREv3ib50J0yftnTbeXKVs890qdglr6xqELAkndYSk",
+   "ta": "AUieDaaYjnhn29f5dgoPAQ88R_pkNijcKns5kkMjPwWo7fxJPIPYcPF7pUwFQZcInII"
+  },
+  "yt_id": "4GhXYmvbYI0"
+ },
+ "kind": "long",
+ "publish_day": "2026-10-28",
+ "reasons": [
+  "duration: 897.2s, allowed 504-864s",
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Papa ki FD badhti rahi, par sabzi ka thaila halka hota gaya. 📉\nByaaj receipt par dikhta hai, mehngai aur tax nahi dikhte.\nReal return yaani mehngai kaat kar jo sach mein bacha.\nAapke ghar ki sabse zyada bachat kahan hai, FD ya kahin aur?\nYeh investment advice nahi hai.\nShare karo us dost ko jiske papa kehte hain FD hi sabse safe hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#MoneyTipsHindi",
+     "#PersonalFinanceIndia",
+     "#HinglishFinance",
+     "#IncomeTax",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Papa ki FD har saal badhi, phir bhi paisa kam kyun chalne laga? Mehngai ek chhupa tax hai, aur FD ka byaaj bhi taxable hai. Aapke ghar ki sabse zyada bachat kahan rakhi hai, FD ya kahin aur? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Papa ki FD ka raaz",
+     "00:00 Byaaj mila, paisa kam kaise?",
+     "00:00 FD par tax kab kat-ta hai?",
+     "00:00 Emergency fund kahan rakhein?",
+     "00:00 Galti aur ab kya karein"
+    ],
+    "description": "Papa ki FD har saal badhi, phir bhi unka paisa kam kyun chalne laga? Is kahani mein samjhiye mehngai ka chhupa tax, FD ke byaaj par tax aur TDS, aur real return ka seedha hisaab. Aur yeh bhi ki emergency fund ke liye FD kahan sach mein kaam aati hai. Share karo us dost ko jiske papa kehte hain FD hi sabse safe hai.",
+    "tags": [
+     "FD",
+     "fixed deposit",
+     "mehngai",
+     "inflation",
+     "real return",
+     "FD tax",
+     "TDS",
+     "emergency fund",
+     "DICGC",
+     "personal finance hindi",
+     "Learning with SG",
+     "paisa"
+    ],
+    "title": "FD par 5.9% byaaj, phir bhi paisa kam kyun?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "5.9%",
+    "line": "Naye FD par banks ka average byaaj, July 2026",
+    "source": "Grip Invest"
+   },
+   {
+    "big_number": "30%",
+    "line": "New regime ka sabse ooncha tax slab",
+    "source": "incometaxindia.gov.in"
+   },
+   {
+    "big_number": "₹5 lakh",
+    "line": "DICGC cover, har depositor, har bank",
+    "source": "dicgc.org.in"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Aapke ghar ki sabse zyada bachat kahan rakhi hai, FD mein ya kahin aur?",
+  "hook": "Papa ki FD har saal badh rahi thi, phir bhi Papa gareeb ho rahe the.",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "Papa ki FD ka raaz",
+    "visual": {
+     "card": null,
+     "prompt": "PAPA in a kurta sits on a bed beside an open steel almirah, holding a thick file of FD receipts, smiling proudly, warm evening lamp light",
+     "type": "art"
+    },
+    "vo": "Papa ki FD har saal badh rahi thi, phir bhi Papa gareeb ho rahe the. Almirah mein receipts ki ek moti file hai. Har receipt par byaaj likha hai. Papa use pyaar se chhoo kar kehte hain, beta, safe hai, kahin nahi jaayega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY in a saree places a thin vegetable bag and a long bill on the dining table, worried face, PAPA behind her taking off his glasses, early evening",
+     "type": "art"
+    },
+    "vo": "Ek shaam Mummy sabzi ka thaila lekar ghar aayi. Thaila halka tha, par bill bhaari tha. Mummy ne kaha, pehle isi paise mein poora hafta aaraam se chalta tha. Ab beech hafte mein hi khatam. Papa ne chashma utaara, aur chup ho gaye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Split panel: on one side a growing stack of FD receipts on a table, on the other a kirana counter where the same money buys a shrinking pile of groceries, a shadowy thief figure lurking between them",
+     "type": "art"
+    },
+    "vo": "Papa ka hisaab bilkul seedha tha. Paisa bank mein hai, har saal byaaj judta hai, toh total badh raha hai. Receipt par number bada hota gaya. Par dukaan par wahi number chhota padta gaya. Yahi is kahani ka chhupa chor hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt stands in the family living room, gesturing calmly towards PAPA, MUMMY and BETA sitting on the sofa, curious faces, soft afternoon light",
+     "type": "art"
+    },
+    "vo": "Toh aaj teen sawaal. Pehla, FD par byaaj milta hai, phir bhi paisa kam kaise hua? Doosra, FD ke byaaj par tax kab aur kitna kat-ta hai? Teesra, emergency ka paisa kahan rakhein? Teeno ka jawaab isi ghar ki kahani mein hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Byaaj mila, paisa kam kaise?",
+    "visual": {
+     "card": null,
+     "prompt": "SG as narrator holds a steel thali full of food, a faint ghost of a smaller thali beside it, thoughtful expression, plain warm background",
+     "type": "art"
+    },
+    "vo": "Pehla sawaal. Byaaj mila, phir bhi paisa kam kaise hua? Iske liye ek shabd samajhna zaroori hai, mehngai. Mehngai yaani cheezon ke daam ka dheere dheere badhna. Aaj jo thali aap khareedte ho, agle saal wahi thali mehngi milegi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A bank counter with BANK UNCLE smiling and handing a fresh FD receipt to PAPA, PAPA nodding happily, bright late morning",
+     "type": "art"
+    },
+    "vo": "Ab FD ka byaaj dekhiye. July 2026 mein banks ne naye FD par average lagbhag 5.9 percent byaaj diya. Yeh baat Grip Invest ki report mein hai. Sunne mein achha lagta hai. Paisa badh raha hai, toh sab theek hai, hai na?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA standing at a medical shop counter looking at a medicine bill, a milk packet and a school fee envelope in his other hand, brow furrowed, daytime",
+     "type": "art"
+    },
+    "vo": "Par asli sawaal yeh hai. Aapka paisa kitna badha, aur aapke kharche kitne badhe? Agar doodh, dawai aur school fees ka kharcha byaaj se tez badhe, toh receipt par number bada hai, par aapki khareedne ki taakat chhoti ho gayi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A man on a treadmill-like escalator running forward while the escalator moves backward, symbolising money running against rising prices, simple doodle style, neutral background",
+     "type": "art"
+    },
+    "vo": "Isi ko kehte hain real return. Real return yaani byaaj mein se mehngai kaat kar jo sach mein bacha. Agar mehngai 5.9 percent se kam hai, toh aap thoda aage ho. Agar zyada hai, toh aap chupchaap peeche ja rahe ho."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BETA, a 10-year-old boy, sits on the floor counting coins from a clay piggy bank, looking up at PAPA with a puzzled question, PAPA laughing awkwardly, afternoon",
+     "type": "art"
+    },
+    "vo": "Ek din Beta ne apni gullak ke sikke gine. Dadaji yaani Papa ne kaha, inhe mat kharcho, bachao. Beta ne poocha, Dadaji, jo toffee pichle saal in sikkon mein aati thi, ab kyun nahi aati? Papa has diye, par sawaal bilkul sahi tha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A rupee note slowly fading at its edges on a wooden table, a small shadow hand quietly snipping a corner, quiet night mood",
+     "type": "art"
+    },
+    "vo": "Mehngai ek chhupa tax hai. Koi form nahi bharta, koi notice nahi aata. Bas har saal aapke rupaye ki keemat thodi ghat jaati hai. FD ka byaaj agar is chor se tez nahi bhaagta, toh paisa safe dikhta hai, par ghat-ta rehta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA alone at night flipping through his FD file under a table lamp, slowly realising something, half confused half sad",
+     "type": "art"
+    },
+    "vo": "Papa ki file mein yeh baat kabhi likhi hi nahi thi. Receipt sirf byaaj batati hai, mehngai nahi batati. Isliye Papa ko laga sab badh raha hai. Asal mein unki FD bas apni jagah khadi rehne ke liye daud rahi thi."
+   },
+   {
+    "facts_used": [],
+    "label": "FD par tax kab kat-ta hai?",
+    "visual": {
+     "card": null,
+     "prompt": "SG as narrator stands beside a drawn staircase where each higher step is darker, pointing at the steps, calm explaining face",
+     "type": "art"
+    },
+    "vo": "Doosra sawaal, aur yahan ek aur chhupa kharcha hai. FD ka byaaj free nahi hota. Woh aapki income mein judta hai. Aur income par tax lagta hai, aapke slab ke hisaab se. Slab yaani income ki seedhi, jitni oonchi, utna zyada tax."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN in office wear sits on the sofa still holding her bag, frowning sceptically at her phone screen, evening light from a window",
+     "type": "art"
+    },
+    "vo": "Behen office se aayi aur phone par FD ki statement kholi. Byaaj credit hua tha, par poora nahi. Usne poocha, yeh kam kyun aaya? Jawaab tha TDS. TDS yaani bank khud aapka tax kaat kar sarkar ko bhej deta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN at a study desk with a laptop and a pile of papers, filing her return late at night, tired but focused",
+     "type": "art"
+    },
+    "vo": "Behen ko laga yahi poora tax hai. Par aisa zaroori nahi. TDS sirf ek advance katauti hai. Aakhri hisaab income tax return mein hota hai. Agar aapka slab ooncha hai, toh return bharte waqt aur tax dena pad sakta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A glass of milk being poured from one jug while a second hand pours some of it away into another cup, symbolising interest split by tax, simple kitchen table scene",
+     "type": "art"
+    },
+    "vo": "Ab sabse oonche slab ki sochiye. New regime mein sabse oonche slab par 30 percent tax hai. Matlab FD ke byaaj ka 30 percent sarkar ke paas. Jo byaaj pehle hi mehngai se lad raha tha, woh aur patla ho gaya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A small pile of coins on a plate with two shadow hands taking from it, one labelled only by a tax-office building silhouette and one by a shopping cart silhouette, dim lighting",
+     "type": "art"
+    },
+    "vo": "Toh FD ka asli hisaab yeh bana. Pehle tax katega, phir mehngai khaayegi. Jo bachega, wahi aapka sach mein kamaya hua paisa hai. Kai logon ke liye yeh bacha hua hissa umeed se kaafi chhota nikalta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA sitting relaxed on a balcony chair with a newspaper and a cup of chai, a light, relieved expression, morning sunlight",
+     "type": "art"
+    },
+    "vo": "Par har kisi par itna tax nahi lagta. Papa retired hain, unki income kam hai. New regime mein 12 lakh tak ki income par, rebate ke baad, tax zero banta hai. Rebate yaani sarkar ki di hui chhoot."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA relaxed on the balcony while a shadowy thief figure still stands quietly behind his chair, ironic mood, morning",
+     "type": "art"
+    },
+    "vo": "Matlab Papa jaise logon ke liye tax ka bojh halka ho sakta hai. Par mehngai ka chor phir bhi wahin khada hai. Tax na lage, toh bhi kharche toh badhte hi hain. Isliye sirf tax mat dekhiye, real return dekhiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN helping PAPA at a laptop on the dining table, pointing at the screen, PAPA surprised and pleased, afternoon",
+     "type": "art"
+    },
+    "vo": "Aur ek kaam ki baat. Agar aapki income chhoot ke andar hai, par bank ne TDS kaat liya, toh woh paisa return bharne par wapas mil sakta hai. Bahut log yeh claim karte hi nahi. Unka paisa yunhi pada rehta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Emergency fund kahan rakhein?",
+    "visual": {
+     "card": null,
+     "prompt": "SG as narrator holding a sturdy steel locker box, reassuring smile, plain warm background",
+     "type": "art"
+    },
+    "vo": "Teesra sawaal. Toh kya FD bekaar hai? Bilkul nahi. Har cheez ka ek kaam hota hai. FD ka kaam paisa badhana kam, paisa sambhaal kar rakhna zyada hai. Aur ek jagah yeh kaam FD bahut achhe se karti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A hospital reception desk at night, a worried young man and MUMMY standing anxiously at the counter, PAPA on a wheelchair in the background",
+     "type": "art"
+    },
+    "vo": "Ek raat Papa ko seene mein dard hua. Hospital mein pehla sawaal tha, deposit kitna jama karoge? Us waqt kisi lambi scheme ka intezaar nahi ho sakta tha. Paisa usi raat chahiye tha, bina kisi deri ke."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE at the kitchen table writing in a small budget diary, a sealed envelope kept aside, focused calm expression, morning light",
+     "type": "art"
+    },
+    "vo": "Isi ko kehte hain emergency fund. Emergency fund yaani woh paisa jo sirf mushkil waqt ke liye rakha ho. Naukri chhoot jaaye, beemari aaye, ya ghar mein achanak kharcha aa jaaye. Is paise ka kaam kamaana nahi, waqt par milna hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The family asleep peacefully at night in a dimly lit home, a small locker on the shelf, calm atmosphere",
+     "type": "art"
+    },
+    "vo": "Yahan FD ya savings account kaam aata hai. Paisa jaldi nikalta hai, daam upar neeche nahi hote. Mehngai thoda khaayegi, maana. Par emergency mein turant paisa milne ki keemat us thode nuksaan se kahin zyada hai. Raat ko neend bhi aati hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A bank building drawn under a large protective umbrella, BANK UNCLE standing at the door, steady and calm, daytime",
+     "type": "art"
+    },
+    "vo": "Aur agar bank hi doob jaaye toh? Yahan DICGC ka naam aata hai. DICGC yaani bank deposits ka insurance dene wali sanstha. Har depositor ke liye, har bank mein, 5 lakh rupaye tak ka cover milta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE sorting passbooks from different banks into neat piles on the bed, confident small smile, afternoon",
+     "type": "art"
+    },
+    "vo": "Isliye Wife ne ghar ka ek simple niyam banaya. Poora emergency paisa ek hi bank mein nahi, zaroorat ho toh alag alag banks mein. Taaki har jagah paisa cover ke andar rahe. Yeh dar nahi hai, bas samajhdaari hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BETI, a 6-year-old girl, in a new school uniform holding WIFE's hand at a school gate, happy morning scene",
+     "type": "art"
+    },
+    "vo": "FD chhote goals ke liye bhi theek baithti hai. Agle saal bachche ki fees, ya kuch mahine baad shaadi ka kharcha. Jab paisa jaldi chahiye, toh upar neeche hone wali jagah ka risk lena samajhdaari nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Galti aur ab kya karein",
+    "visual": {
+     "card": null,
+     "prompt": "SG as narrator standing next to PAPA's almirah full of FD files, gentle but serious expression, evening",
+     "type": "art"
+    },
+    "vo": "Ab woh galti jo Papa ne ki, aur bahut log karte hain. Galti FD lena nahi thi. Galti thi, saari zindagi ki bachat saalon saal sirf FD mein rakhna. Lambe samay ke paise ko bhi emergency jaisa treat karna."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A calendar on the wall with pages flying away, beneath it a jar of coins slowly emptying, MUMMY watching with a worried face, dusk",
+     "type": "art"
+    },
+    "vo": "Lambe samay mein mehngai har saal thoda kaatti hai. Upar se tax bhi. Saal dar saal yeh chhoti katauti judti jaati hai. Aur ek din Mummy poochti hain, paisa kahan gaya? Jawaab hai, chupchaap, dheere dheere."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE and SG at the dining table dividing money into separate labelled-by-colour jars, discussing calmly, warm lamp light",
+     "type": "art"
+    },
+    "vo": "Toh kya karein? Pehla kadam, apni bachat ko kaam ke hisaab se baantiye. Kuch paisa turant chahiye, kuch paisa saalon baad. Dono ko ek hi jagah rakhna, ek hi chaabi se har taala kholne jaisa hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA with a notebook and pen at the table, the FD receipt on one side and a grocery bill on the other, concentrating, evening",
+     "type": "art"
+    },
+    "vo": "Doosra kadam, har saal apna real return khud nikaaliye. Byaaj dekhiye, tax ghataiye, aur ghar ke kharche kitne badhe, yeh sochiye. Agar bacha hua hissa bahut chhota hai, toh kam se kam sawaal zaroor poochiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN explaining something on a notepad to PAPA at a post office style counter, PAPA listening carefully, daytime",
+     "type": "art"
+    },
+    "vo": "Teesra kadam, lambe goals ke liye doosre raaste samajhiye. Jaise PPF, jo sarkari scheme hai aur abhi 7.1 percent saalana byaaj deti hai. Har option ka lock-in, risk aur tax alag hota hai. Pehle samjho, phir socho."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG as narrator sitting at a simple desk, speaking sincerely with hands open, soft neutral background",
+     "type": "art"
+    },
+    "vo": "Yeh investment advice nahi hai. Kahin bhi paisa lagane se pehle apni zaroorat, umar aur risk dekhiye. Zaroorat ho toh kisi qualified advisor se baat kariye. Maqsad sirf itna hai ki aap receipt ke number ke peeche ka sach dekh sako."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA at the table at night with an FD receipt and a vegetable bill side by side, a quiet moment of realisation, MUMMY resting a hand on his shoulder",
+     "type": "art"
+    },
+    "vo": "Us raat Papa ne file kholi, aur pehli baar receipt ke saath sabzi ka bill rakha. Dono ko dekha, aur dheere se bole, safe hona aur badhna, alag cheezein hain. Mujhe yeh pehle kisi ne nahi bataya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG as narrator smiling warmly, holding a cup of chai, inviting gesture, cosy living room",
+     "type": "art"
+    },
+    "vo": "Ab aapse ek aasaan sawaal. Aapke ghar ki sabse zyada bachat kahan rakhi hai, FD mein ya kahin aur? Ek shabd mein comment mein likhiye. Main har jawaab padhta hoon."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY opening a small velvet jewellery box inside the almirah, gold glinting, curious and nostalgic expression, soft evening light",
+     "type": "art"
+    },
+    "vo": "Agli video mein ek aur ghar ki kahani. Sona, jo har maa ki almirah mein kahin na kahin rakha hota hai. Kya woh sach mein mehngai se bachata hai, ya woh bhi ek meethi galatfehmi hai? Milte hain agli kahani mein."
+   }
+  ],
+  "thumbnail": {
+   "scene": "PAPA holds a single FD receipt close to his face under a table lamp at night, eyes wide with shock, mouth slightly open",
+   "words": [
+    "30% TAX",
+    "GAYAB"
+   ]
+  },
+  "title": "Papa ki FD *chhoti* kyun ho gayi? 📉"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  18.65,
+  38.7,
+  55.03,
+  73.52,
+  92.41,
+  111.7,
+  131.35,
+  149.64,
+  169.45,
+  188.3,
+  205.63,
+  225.0,
+  246.17,
+  265.9,
+  282.11,
+  296.16,
+  311.85,
+  329.7,
+  344.15,
+  358.16,
+  373.17,
+  390.9,
+  411.11,
+  426.8,
+  445.41,
+  458.74,
+  475.95,
+  492.8,
+  506.69,
+  524.06,
+  543.15,
+  558.24,
+  577.89,
+  590.38
+ ],
+ "topic": {
+  "hooks": [
+   "7% byaaj, phir bhi paisa kam kaise hua?",
+   "FD par tax kab kat-ta hai?",
+   "Emergency fund kahan rakhein?"
+  ],
+  "id": "fd-vs-inflation",
+  "summary": "Fixed deposit interest vs inflation over two decades; real return, tax on FD interest, why the 'safe' choice quietly shrinks; where it still makes sense (emergency fund, short goals).",
+  "target_minutes": 12,
+  "title": "Papa ki FD 20 saal mein kyun chhoti ho gayi: mehngai ka chhupa tax",
+  "voice": "voice_1kn3blc2u13l"
+ },
+ "updated": "2026-10-22T14:21:07+00:00",
+ "writer": "claude"
+}

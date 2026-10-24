@@ -52,15 +52,20 @@ def spent_today(path: Path = SPEND_FILE, today: date | None = None) -> float:
     return float(_read_spend(path).get(today.isoformat(), {}).get("usd", 0.0))
 
 
+def spent_month(path: Path = SPEND_FILE, today: date | None = None) -> float:
+    today = today or today_pacific()
+    return float(sum(v.get("usd", 0.0) for k, v in _read_spend(path).items() if k.startswith(today.strftime("%Y-%m"))))
+
+
 def cost_usd(usage) -> float:
     return getattr(usage, "input_tokens", 0) * USD_PER_M_IN / 1e6 + getattr(usage, "output_tokens", 0) * USD_PER_M_OUT / 1e6
 
 
-def record_spend(usage, path: Path = SPEND_FILE, today: date | None = None) -> float:
+def record_spend(usage, path: Path = SPEND_FILE, today: date | None = None, factor: float = 1.0) -> float:
     today = today or today_pacific()
     data = _read_spend(path)
     day = data.setdefault(today.isoformat(), {"usd": 0.0, "requests": 0})
-    day["usd"] = round(day["usd"] + cost_usd(usage), 6)
+    day["usd"] = round(day["usd"] + cost_usd(usage) * factor, 6)
     day["requests"] += 1
     Path(path).parent.mkdir(parents=True, exist_ok=True)
     Path(path).write_text(json.dumps(data, indent=1))
@@ -78,17 +83,21 @@ def _parse(raw: str) -> dict:
     return data
 
 
+def claude_params(piece, sheet, library, hashtags, formula=None) -> dict:
+    """The one Opus request both lanes send: the synchronous stream and the half-price batch."""
+    system = system_prompt(piece.channel) if formula is None else system_prompt(piece.channel).replace(
+        (CONTENT_DIR / "prompts" / f"formula-{piece.channel}.txt").read_text(), formula)
+    return {"model": MODEL, "max_tokens": MAX_TOKENS,
+            "output_config": {"effort": "high", "format": {"type": "json_schema", "schema": schema.api_schema(schema.PIECE_SCHEMA)}},
+            "system": [{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
+            "messages": [{"role": "user", "content": _user_message(piece, sheet, library, hashtags)}]}
+
+
 def _claude(piece, sheet, library, hashtags, formula, client, spend, today) -> dict:
     import anthropic
     client = client or anthropic.Anthropic(api_key=secrets.get("ANTHROPIC_API_KEY"))
-    system = system_prompt(piece.channel) if formula is None else system_prompt(piece.channel).replace(
-        (CONTENT_DIR / "prompts" / f"formula-{piece.channel}.txt").read_text(), formula)
     with client.beta.messages.stream(                              # streamed: a 12-14 minute long needs more than 16k tokens
-        model=MODEL, max_tokens=MAX_TOKENS,
-        output_config={"effort": "high", "format": {"type": "json_schema", "schema": schema.api_schema(schema.PIECE_SCHEMA)}},
-        betas=["server-side-fallback-2026-07-01"], fallbacks="default",
-        system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
-        messages=[{"role": "user", "content": _user_message(piece, sheet, library, hashtags)}],
+        **claude_params(piece, sheet, library, hashtags, formula), betas=["server-side-fallback-2026-07-01"], fallbacks="default",
     ) as stream:
         response = stream.get_final_message()
     record_spend(response.usage, spend, today)
@@ -109,15 +118,26 @@ def _gemini(piece, sheet, library, hashtags, formula, ask) -> dict:
 
 
 def write(piece: Piece, sheet: dict, library: list, hashtags: dict, formula: str | None = None, client=None,
-          gemini_ask=gemini.generate, spend: Path = SPEND_FILE, today: date | None = None) -> dict:
-    """Returns {"script": <piece JSON>, "writer": "claude" | "gemini", "note": str}."""
+          gemini_ask=gemini.generate, spend: Path = SPEND_FILE, today: date | None = None, batch_fn=None) -> dict:
+    """Returns {"script": <piece JSON>, "writer": "claude" | "gemini", "note": str}; with a batch lane, {"state": "writing"} while the
+    draft is still cooking (the caller parks the piece and comes back)."""
     today = today or today_pacific()
     note = ""
     if WRITER_FOR.get(piece.kind) == "gemini":
         note = "shorts are written by the free Gemini model (founder, 20 Oct 2026)"
+    elif spent_month(spend, today) >= BUDGETS["claude_usd_per_month"]:
+        note = f"Claude's monthly ceiling of ${BUDGETS['claude_usd_per_month']:.0f} is reached; Gemini writes until next month"
     elif spent_today(spend, today) >= BUDGETS["claude_usd_per_day"]:
         note = "claude budget spent for the day"
     else:
+        if batch_fn is not None:
+            try:
+                state, script = batch_fn(piece, sheet, library, hashtags, formula, client=client, spend=spend, today=today)
+                if state == "writing":
+                    return {"script": None, "writer": "claude", "note": "", "state": "writing"}
+                return {"script": script, "writer": "claude", "note": "", "state": "ready"}
+            except Exception as e:                                # the batch lane is an optimisation: the synchronous request is next
+                print(f"claude batch lane failed ({type(e).__name__}: {secrets.scrub(str(e))[:120]}); writing synchronously", flush=True)
         try:
             return {"script": _claude(piece, sheet, library, hashtags, formula, client, spend, today), "writer": "claude", "note": ""}
         except Exception as e:                                    # refusal, API error after SDK retries, schema mismatch

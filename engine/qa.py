@@ -5,8 +5,9 @@ import subprocess
 from pathlib import Path
 
 SHORT_RANGE = (40.0, 59.0)
-STORY_RANGE = (40.0, 95.0)
-LONG_TOLERANCE = 0.20
+STORY_RANGE = (40.0, 178.0)
+LONG_TOLERANCE = 0.30                  # a 12-minute target accepts 15.6 min: a story told in full beats a story cut to length (22 Oct 2026)
+LONG_TOLERANCE_UNDER = 0.30            # a 14-minute target accepts 9.8 min; 22 Oct 2026: a 670.9 s long failed a 672 s floor
 LUFS_TARGET, LUFS_TOL = -16.0, 1.5
 FREEZE_MAX_S = 3.0
 CAPTION_COVERAGE = 0.95
@@ -48,17 +49,45 @@ def black_start(path: Path, window: float = BLACK_WINDOW_S) -> bool:
     return "black_start" in out
 
 
+def narration_intact(path: Path, speech_end: float, window: float = 0.9) -> bool:
+    """True when the final file still carries voice-level energy in the last `window` seconds of narration (22 Oct 2026: every video lost
+    its last words in the mix). Compares the last second of speech against the second after it, which holds music only."""
+    import wave
+    import numpy as np
+    import tempfile
+    with tempfile.TemporaryDirectory() as td:
+        wav = Path(td) / "a.wav"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(path), "-vn", "-ac", "1", "-ar", "16000", "-af", "highpass=f=150", str(wav)], check=True)
+        with wave.open(str(wav)) as w:
+            rate, pcm = w.getframerate(), np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32)
+    def peak(a, b, step=0.3):
+        """The loudest 0.3 s inside [a, b]: a line's own trailing silence must not count against it."""
+        best = 0.0
+        t = max(0.0, a)
+        while t + step <= b:
+            seg = pcm[int(t * rate): int((t + step) * rate)]
+            if len(seg):
+                best = max(best, float(np.sqrt((seg ** 2).mean())))
+            t += step / 2
+        return best
+    last = peak(speech_end - 1.5, speech_end)                   # the last word of the last line (TTS lines end with ~0.5 s of silence; a 2 s cut still fails)
+    after = peak(speech_end + 0.5, speech_end + 1.5 + window)    # music only, under the end card
+    return last > 400 and last > 2.0 * max(after, 1.0)
+
+
 def report(path: Path, kind: str, voiced_seconds: float, caption_cues: list, target_seconds: float | None = None,
-           check_freeze: bool = True, story: bool = False) -> list:
+           check_freeze: bool = True, story: bool = False, speech_end: float | None = None) -> list:
     """Empty list = pass. Each reason starts with its gate name."""
     reasons = []
     info = probe(path)
+    if speech_end and not narration_intact(path, speech_end):
+        reasons.append(f"narration: the last line is cut or inaudible before {speech_end:.1f}s")
     dur = info["duration"]
     if kind == "short":
         lo, hi = STORY_RANGE if story else SHORT_RANGE
     else:
         target = target_seconds or dur
-        lo, hi = target * (1 - LONG_TOLERANCE), target * (1 + LONG_TOLERANCE)
+        lo, hi = target * (1 - LONG_TOLERANCE_UNDER), target * (1 + LONG_TOLERANCE)
     if not lo <= dur <= hi:
         reasons.append(f"duration: {dur:.1f}s, allowed {lo:.0f}-{hi:.0f}s")
     if abs(info["lufs"] - LUFS_TARGET) > LUFS_TOL:

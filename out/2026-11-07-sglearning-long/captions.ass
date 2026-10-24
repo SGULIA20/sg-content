@@ -1,0 +1,444 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,86,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.11,Default,,0,0,0,,Raat ho chuki hai,
+Dialogue: 0,0:00:01.11,0:00:03.12,Default,,0,0,0,,hospital ka discharge counter.
+Dialogue: 0,0:00:03.12,0:00:05.13,Default,,0,0,0,,Papa ki surgery theek se ho
+Dialogue: 0,0:00:05.13,0:00:05.35,Default,,0,0,0,,gayi,
+Dialogue: 0,0:00:05.35,0:00:07.14,Default,,0,0,0,,sab ke chehre par sukoon hai.
+Dialogue: 0,0:00:07.14,0:00:09.37,Default,,0,0,0,,Bhai file lekar counter par khada
+Dialogue: 0,0:00:09.37,0:00:09.59,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:09.59,0:00:11.60,Default,,0,0,0,,Billing wale bhaiya screen dekhte hain,
+Dialogue: 0,0:00:11.60,0:00:13.16,Default,,0,0,0,,aur dheere se kehte hain,
+Dialogue: 0,0:00:13.16,0:00:15.61,Default,,0,0,0,,insurance ne claim ka bada hissa
+Dialogue: 0,0:00:15.61,0:00:16.28,Default,,0,0,0,,kaat diya hai.
+Dialogue: 0,0:00:16.73,0:00:18.43,Default,,0,0,0,,Bhai ko samajh nahi aata.
+Dialogue: 0,0:00:18.43,0:00:19.50,Default,,0,0,0,,Policy toh thi,
+Dialogue: 0,0:00:19.50,0:00:21.42,Default,,0,0,0,,premium har saal time par bhara.
+Dialogue: 0,0:00:21.42,0:00:22.70,Default,,0,0,0,,Phir yeh kat kaise gaya?
+Dialogue: 0,0:00:22.70,0:00:24.62,Default,,0,0,0,,Mummy ki aankhon mein chinta hai.
+Dialogue: 0,0:00:24.62,0:00:26.96,Default,,0,0,0,,Wife phone par account ka balance
+Dialogue: 0,0:00:26.96,0:00:27.81,Default,,0,0,0,,dekh rahi hai.
+Dialogue: 0,0:00:27.81,0:00:29.52,Default,,0,0,0,,Jo paisa SIP ke liye rakha
+Dialogue: 0,0:00:29.52,0:00:29.73,Default,,0,0,0,,tha,
+Dialogue: 0,0:00:29.73,0:00:31.65,Default,,0,0,0,,ab wahi hospital ko jayega.
+Dialogue: 0,0:00:32.10,0:00:33.70,Default,,0,0,0,,Yeh kahani sirf is ghar ki
+Dialogue: 0,0:00:33.70,0:00:34.30,Default,,0,0,0,,nahi hai.
+Dialogue: 0,0:00:34.30,0:00:37.10,Default,,0,0,0,,Bahut saare insured parivaar discharge ke
+Dialogue: 0,0:00:37.10,0:00:38.70,Default,,0,0,0,,waqt yahi jhatka khaate hain.
+Dialogue: 0,0:00:38.70,0:00:40.90,Default,,0,0,0,,Wajah aksar koi dhokha nahi hota.
+Dialogue: 0,0:00:40.90,0:00:43.10,Default,,0,0,0,,Wajah hoti hai policy ka chhota
+Dialogue: 0,0:00:43.10,0:00:43.30,Default,,0,0,0,,print,
+Dialogue: 0,0:00:43.30,0:00:45.30,Default,,0,0,0,,jo humne kabhi padha hi nahi.
+Dialogue: 0,0:00:45.30,0:00:46.90,Default,,0,0,0,,Aur woh print bilkul saaf likha
+Dialogue: 0,0:00:46.90,0:00:47.50,Default,,0,0,0,,hota hai.
+Dialogue: 0,0:00:47.95,0:00:49.48,Default,,0,0,0,,Toh aaj is chhote print ko
+Dialogue: 0,0:00:49.48,0:00:51.44,Default,,0,0,0,,line by line khol kar padhte
+Dialogue: 0,0:00:51.44,0:00:51.66,Default,,0,0,0,,hain.
+Dialogue: 0,0:00:51.66,0:00:52.53,Default,,0,0,0,,Pehla sawaal,
+Dialogue: 0,0:00:52.53,0:00:54.06,Default,,0,0,0,,kya room rent ki limit se
+Dialogue: 0,0:00:54.06,0:00:55.59,Default,,0,0,0,,poora claim kat sakta hai?
+Dialogue: 0,0:00:55.59,0:00:56.46,Default,,0,0,0,,Doosra sawaal,
+Dialogue: 0,0:00:56.46,0:00:58.64,Default,,0,0,0,,waiting period mein kya nahi milta?
+Dialogue: 0,0:00:58.64,0:00:59.73,Default,,0,0,0,,Aur aakhri sawaal,
+Dialogue: 0,0:00:59.73,0:01:02.35,Default,,0,0,0,,kya office ka insurance kaafi hai?
+Dialogue: 0,0:01:02.80,0:01:05.00,Default,,0,0,0,,Chaliye kahani ko peeche le chalte
+Dialogue: 0,0:01:05.00,0:01:05.20,Default,,0,0,0,,hain.
+Dialogue: 0,0:01:05.20,0:01:06.80,Default,,0,0,0,,Papa ko seene mein dard hua,
+Dialogue: 0,0:01:06.80,0:01:08.60,Default,,0,0,0,,raat ko emergency mein le gaye.
+Dialogue: 0,0:01:08.60,0:01:09.60,Default,,0,0,0,,Doctor ne kaha,
+Dialogue: 0,0:01:09.60,0:01:11.00,Default,,0,0,0,,admit karna padega,
+Dialogue: 0,0:01:11.00,0:01:12.00,Default,,0,0,0,,surgery hogi.
+Dialogue: 0,0:01:12.00,0:01:13.40,Default,,0,0,0,,Reception par sawaal aaya,
+Dialogue: 0,0:01:13.40,0:01:14.60,Default,,0,0,0,,kaunsa kamra chahiye?
+Dialogue: 0,0:01:14.60,0:01:15.40,Default,,0,0,0,,General ward,
+Dialogue: 0,0:01:15.40,0:01:16.00,Default,,0,0,0,,shared room,
+Dialogue: 0,0:01:16.00,0:01:17.00,Default,,0,0,0,,ya private room?
+Dialogue: 0,0:01:17.45,0:01:19.30,Default,,0,0,0,,Bhai ne ek second nahi socha.
+Dialogue: 0,0:01:19.30,0:01:20.12,Default,,0,0,0,,Usne kaha,
+Dialogue: 0,0:01:20.12,0:01:21.15,Default,,0,0,0,,private room do,
+Dialogue: 0,0:01:21.15,0:01:22.58,Default,,0,0,0,,Papa ko aaram chahiye.
+Dialogue: 0,0:01:22.58,0:01:23.61,Default,,0,0,0,,Logic seedha tha.
+Dialogue: 0,0:01:23.61,0:01:24.84,Default,,0,0,0,,Insurance hai na,
+Dialogue: 0,0:01:24.84,0:01:26.48,Default,,0,0,0,,bill toh company bharegi.
+Dialogue: 0,0:01:26.48,0:01:28.54,Default,,0,0,0,,Papa ki sehat par kanjoosi kyun
+Dialogue: 0,0:01:28.54,0:01:28.95,Default,,0,0,0,,karein?
+Dialogue: 0,0:01:28.95,0:01:30.59,Default,,0,0,0,,Us waqt yeh faisla pyaar jaisa
+Dialogue: 0,0:01:30.59,0:01:31.21,Default,,0,0,0,,lagta hai,
+Dialogue: 0,0:01:31.21,0:01:32.85,Default,,0,0,0,,galti jaisa bilkul nahi.
+Dialogue: 0,0:01:33.30,0:01:35.50,Default,,0,0,0,,Ab policy ka woh page dekhiye
+Dialogue: 0,0:01:35.50,0:01:37.25,Default,,0,0,0,,jo kisi ne nahi padha.
+Dialogue: 0,0:01:37.25,0:01:39.23,Default,,0,0,0,,Usme likha tha room rent limit.
+Dialogue: 0,0:01:39.23,0:01:41.42,Default,,0,0,0,,Room rent limit yaani company ek
+Dialogue: 0,0:01:41.42,0:01:43.40,Default,,0,0,0,,din ke kamre ka jitna kiraya
+Dialogue: 0,0:01:43.40,0:01:44.05,Default,,0,0,0,,maanegi,
+Dialogue: 0,0:01:44.05,0:01:44.93,Default,,0,0,0,,bas utna hi.
+Dialogue: 0,0:01:44.93,0:01:46.69,Default,,0,0,0,,Usse mehenga kamra liya,
+Dialogue: 0,0:01:46.69,0:01:48.00,Default,,0,0,0,,toh fark aap bharoge.
+Dialogue: 0,0:01:48.00,0:01:49.98,Default,,0,0,0,,Yahan tak baat samajh aati hai.
+Dialogue: 0,0:01:50.43,0:01:51.80,Default,,0,0,0,,Asli jhatka agla hai,
+Dialogue: 0,0:01:51.80,0:01:54.33,Default,,0,0,0,,jise kehte hain proportionate deduction.
+Dialogue: 0,0:01:54.33,0:01:57.45,Default,,0,0,0,,Proportionate deduction yaani kamra jitne guna
+Dialogue: 0,0:01:57.45,0:01:58.04,Default,,0,0,0,,mehenga,
+Dialogue: 0,0:01:58.04,0:01:59.80,Default,,0,0,0,,baaki bill bhi usi hisaab se
+Dialogue: 0,0:01:59.80,0:02:00.38,Default,,0,0,0,,katega.
+Dialogue: 0,0:02:00.38,0:02:01.36,Default,,0,0,0,,Sirf kiraya nahi,
+Dialogue: 0,0:02:01.36,0:02:02.14,Default,,0,0,0,,doctor ki fees,
+Dialogue: 0,0:02:02.14,0:02:02.53,Default,,0,0,0,,nursing,
+Dialogue: 0,0:02:02.53,0:02:04.28,Default,,0,0,0,,operation theatre ke charges,
+Dialogue: 0,0:02:04.28,0:02:06.23,Default,,0,0,0,,sab usi anupaat mein kat jaate
+Dialogue: 0,0:02:06.23,0:02:06.43,Default,,0,0,0,,hain.
+Dialogue: 0,0:02:06.88,0:02:09.29,Default,,0,0,0,,Kyunki hospital mehenge kamre ke saath
+Dialogue: 0,0:02:09.29,0:02:11.29,Default,,0,0,0,,har service ka rate bhi badha
+Dialogue: 0,0:02:11.29,0:02:11.89,Default,,0,0,0,,deta hai.
+Dialogue: 0,0:02:11.89,0:02:13.29,Default,,0,0,0,,Bade kamre ka patient,
+Dialogue: 0,0:02:13.29,0:02:14.30,Default,,0,0,0,,bada package.
+Dialogue: 0,0:02:14.30,0:02:15.50,Default,,0,0,0,,Company kehti hai,
+Dialogue: 0,0:02:15.50,0:02:17.51,Default,,0,0,0,,humne chhote kamre ka wada kiya
+Dialogue: 0,0:02:17.51,0:02:17.71,Default,,0,0,0,,tha.
+Dialogue: 0,0:02:17.71,0:02:19.31,Default,,0,0,0,,Toh hum har cheez chhote kamre
+Dialogue: 0,0:02:19.31,0:02:20.51,Default,,0,0,0,,ke rate se denge.
+Dialogue: 0,0:02:20.51,0:02:22.32,Default,,0,0,0,,Isi liye ek kamre ke faisle
+Dialogue: 0,0:02:22.32,0:02:23.52,Default,,0,0,0,,ne poora bill kha liya.
+Dialogue: 0,0:02:23.97,0:02:25.23,Default,,0,0,0,,Phir aaya doosra jhatka,
+Dialogue: 0,0:02:25.23,0:02:26.07,Default,,0,0,0,,consumables.
+Dialogue: 0,0:02:26.07,0:02:27.75,Default,,0,0,0,,Consumables yaani gloves,
+Dialogue: 0,0:02:27.75,0:02:27.97,Default,,0,0,0,,mask,
+Dialogue: 0,0:02:27.97,0:02:28.60,Default,,0,0,0,,syringe,
+Dialogue: 0,0:02:28.60,0:02:29.86,Default,,0,0,0,,cotton jaisi cheezein,
+Dialogue: 0,0:02:29.86,0:02:31.54,Default,,0,0,0,,jo ek baar use hokar fenk
+Dialogue: 0,0:02:31.54,0:02:32.38,Default,,0,0,0,,di jaati hain.
+Dialogue: 0,0:02:32.38,0:02:34.69,Default,,0,0,0,,Kai policies inhe cover hi nahi
+Dialogue: 0,0:02:34.69,0:02:35.11,Default,,0,0,0,,karti.
+Dialogue: 0,0:02:35.11,0:02:37.01,Default,,0,0,0,,Bill mein inki lambi list hoti
+Dialogue: 0,0:02:37.01,0:02:37.22,Default,,0,0,0,,hai,
+Dialogue: 0,0:02:37.22,0:02:38.90,Default,,0,0,0,,aur har line aapki jeb se
+Dialogue: 0,0:02:38.90,0:02:39.53,Default,,0,0,0,,jaati hai.
+Dialogue: 0,0:02:39.98,0:02:40.79,Default,,0,0,0,,Teesra jhatka,
+Dialogue: 0,0:02:40.79,0:02:41.40,Default,,0,0,0,,sub-limit.
+Dialogue: 0,0:02:41.40,0:02:43.42,Default,,0,0,0,,Sub-limit yaani kuch khaas ilaaj par
+Dialogue: 0,0:02:43.42,0:02:45.24,Default,,0,0,0,,company ne alag se ek chhat
+Dialogue: 0,0:02:45.24,0:02:46.04,Default,,0,0,0,,bana di hai.
+Dialogue: 0,0:02:46.04,0:02:48.07,Default,,0,0,0,,Jaise motiyabind ka operation,
+Dialogue: 0,0:02:48.07,0:02:49.48,Default,,0,0,0,,ya ghutne ki surgery.
+Dialogue: 0,0:02:49.48,0:02:51.71,Default,,0,0,0,,Aapka total cover bada ho sakta
+Dialogue: 0,0:02:51.71,0:02:51.91,Default,,0,0,0,,hai,
+Dialogue: 0,0:02:51.91,0:02:53.32,Default,,0,0,0,,par us ilaaj ke liye sirf
+Dialogue: 0,0:02:53.32,0:02:54.94,Default,,0,0,0,,chhat tak hi paisa milega.
+Dialogue: 0,0:02:55.39,0:02:56.03,Default,,0,0,0,,Aur chautha,
+Dialogue: 0,0:02:56.03,0:02:56.46,Default,,0,0,0,,co-pay.
+Dialogue: 0,0:02:56.46,0:02:58.18,Default,,0,0,0,,Co-pay yaani har claim mein ek
+Dialogue: 0,0:02:58.18,0:02:59.89,Default,,0,0,0,,tay hissa aap khud bharoge,
+Dialogue: 0,0:02:59.89,0:03:01.39,Default,,0,0,0,,chahe bill kitna bhi ho.
+Dialogue: 0,0:03:01.39,0:03:03.75,Default,,0,0,0,,Kai policies mein yeh senior citizens
+Dialogue: 0,0:03:03.75,0:03:04.83,Default,,0,0,0,,ke liye hota hai.
+Dialogue: 0,0:03:04.83,0:03:06.54,Default,,0,0,0,,Premium thoda kam dikhta hai,
+Dialogue: 0,0:03:06.54,0:03:08.04,Default,,0,0,0,,isliye log khush hote hain.
+Dialogue: 0,0:03:08.04,0:03:09.76,Default,,0,0,0,,Par bill ke din yahi hissa
+Dialogue: 0,0:03:09.76,0:03:10.83,Default,,0,0,0,,bhaari padta hai.
+Dialogue: 0,0:03:11.28,0:03:12.95,Default,,0,0,0,,Toh pehle sawaal ka jawab,
+Dialogue: 0,0:03:12.95,0:03:13.16,Default,,0,0,0,,haan.
+Dialogue: 0,0:03:13.16,0:03:14.84,Default,,0,0,0,,Ek room rent limit poore claim
+Dialogue: 0,0:03:14.84,0:03:15.88,Default,,0,0,0,,ko kaat sakti hai.
+Dialogue: 0,0:03:15.88,0:03:17.97,Default,,0,0,0,,Isliye admit karte waqt hi poochiye,
+Dialogue: 0,0:03:17.97,0:03:20.69,Default,,0,0,0,,meri policy kaunsa kamra allow karti
+Dialogue: 0,0:03:20.69,0:03:20.90,Default,,0,0,0,,hai?
+Dialogue: 0,0:03:20.90,0:03:22.78,Default,,0,0,0,,Kai policies mein room rent limit
+Dialogue: 0,0:03:22.78,0:03:23.83,Default,,0,0,0,,hoti hi nahi.
+Dialogue: 0,0:03:23.83,0:03:25.50,Default,,0,0,0,,Apni policy check kijiye,
+Dialogue: 0,0:03:25.50,0:03:26.76,Default,,0,0,0,,andaza mat lagaiye.
+Dialogue: 0,0:03:27.21,0:03:28.01,Default,,0,0,0,,Ab doosra ghar,
+Dialogue: 0,0:03:28.01,0:03:29.00,Default,,0,0,0,,doosri kahani.
+Dialogue: 0,0:03:29.00,0:03:30.80,Default,,0,0,0,,Behen ne pichhle saal Mummy ke
+Dialogue: 0,0:03:30.80,0:03:32.20,Default,,0,0,0,,liye nayi health policy li.
+Dialogue: 0,0:03:32.20,0:03:33.39,Default,,0,0,0,,Mummy ko sugar hai,
+Dialogue: 0,0:03:33.39,0:03:33.99,Default,,0,0,0,,BP bhi hai.
+Dialogue: 0,0:03:33.99,0:03:35.79,Default,,0,0,0,,Form bharte waqt agent ne kaha,
+Dialogue: 0,0:03:35.79,0:03:36.78,Default,,0,0,0,,chhoti cheezein hain,
+Dialogue: 0,0:03:36.78,0:03:38.18,Default,,0,0,0,,likhne ki kya zaroorat.
+Dialogue: 0,0:03:38.18,0:03:39.18,Default,,0,0,0,,Behen ne socha,
+Dialogue: 0,0:03:39.18,0:03:40.37,Default,,0,0,0,,form jaldi bhar jayega,
+Dialogue: 0,0:03:40.37,0:03:41.57,Default,,0,0,0,,premium bhi kam aayega.
+Dialogue: 0,0:03:42.02,0:03:44.52,Default,,0,0,0,,Kuch mahine baad Mummy ko hospital
+Dialogue: 0,0:03:44.52,0:03:45.43,Default,,0,0,0,,jaana pada.
+Dialogue: 0,0:03:45.43,0:03:45.88,Default,,0,0,0,,Claim gaya,
+Dialogue: 0,0:03:45.88,0:03:47.70,Default,,0,0,0,,aur wapas aaya ek chitthi ke
+Dialogue: 0,0:03:47.70,0:03:47.93,Default,,0,0,0,,saath.
+Dialogue: 0,0:03:47.93,0:03:48.61,Default,,0,0,0,,Claim reject.
+Dialogue: 0,0:03:48.61,0:03:49.75,Default,,0,0,0,,Wajah likhi thi,
+Dialogue: 0,0:03:49.75,0:03:52.47,Default,,0,0,0,,pre-existing disease ka waiting period,
+Dialogue: 0,0:03:52.47,0:03:54.06,Default,,0,0,0,,aur jaankari chhupana.
+Dialogue: 0,0:03:54.06,0:03:55.20,Default,,0,0,0,,Behen hairaan thi.
+Dialogue: 0,0:03:55.20,0:03:57.02,Default,,0,0,0,,Policy toh active thi,
+Dialogue: 0,0:03:57.02,0:03:58.38,Default,,0,0,0,,premium bhi bhara tha.
+Dialogue: 0,0:03:58.83,0:04:00.02,Default,,0,0,0,,Pehle term samajhiye.
+Dialogue: 0,0:04:00.02,0:04:02.61,Default,,0,0,0,,Pre-existing disease yaani woh bimari,
+Dialogue: 0,0:04:02.61,0:04:04.60,Default,,0,0,0,,jo policy lene se pehle hi
+Dialogue: 0,0:04:04.60,0:04:05.20,Default,,0,0,0,,aapko thi.
+Dialogue: 0,0:04:05.20,0:04:05.99,Default,,0,0,0,,Jaise sugar,
+Dialogue: 0,0:04:05.99,0:04:06.19,Default,,0,0,0,,BP,
+Dialogue: 0,0:04:06.19,0:04:06.59,Default,,0,0,0,,thyroid,
+Dialogue: 0,0:04:06.59,0:04:08.38,Default,,0,0,0,,ya dil ki koi purani takleef.
+Dialogue: 0,0:04:08.38,0:04:10.77,Default,,0,0,0,,Company in bimariyon ka kharcha shuru
+Dialogue: 0,0:04:10.77,0:04:11.96,Default,,0,0,0,,se nahi uthaati.
+Dialogue: 0,0:04:11.96,0:04:13.95,Default,,0,0,0,,Inke liye ek intezaar ka samay
+Dialogue: 0,0:04:13.95,0:04:14.55,Default,,0,0,0,,hota hai.
+Dialogue: 0,0:04:15.00,0:04:17.35,Default,,0,0,0,,Isi intezaar ko kehte hain waiting
+Dialogue: 0,0:04:17.35,0:04:17.77,Default,,0,0,0,,period.
+Dialogue: 0,0:04:17.77,0:04:20.33,Default,,0,0,0,,Waiting period yaani policy lene ke
+Dialogue: 0,0:04:20.33,0:04:21.40,Default,,0,0,0,,baad ka woh samay,
+Dialogue: 0,0:04:21.40,0:04:23.11,Default,,0,0,0,,jisme kuch claims nahi milte.
+Dialogue: 0,0:04:23.11,0:04:25.45,Default,,0,0,0,,Ek shuruaati waiting period hota hai,
+Dialogue: 0,0:04:25.45,0:04:27.37,Default,,0,0,0,,jab accident chhod kar lagbhag kuch
+Dialogue: 0,0:04:27.37,0:04:28.23,Default,,0,0,0,,nahi milta.
+Dialogue: 0,0:04:28.23,0:04:30.15,Default,,0,0,0,,Phir kuch khaas bimariyon ka alag
+Dialogue: 0,0:04:30.15,0:04:31.64,Default,,0,0,0,,waiting period hota hai.
+Dialogue: 0,0:04:32.09,0:04:34.20,Default,,0,0,0,,Aur sabse lamba hota hai purani
+Dialogue: 0,0:04:34.20,0:04:35.74,Default,,0,0,0,,bimariyon ka waiting period.
+Dialogue: 0,0:04:35.74,0:04:37.27,Default,,0,0,0,,Achhi baat yeh hai ki IRDAI
+Dialogue: 0,0:04:37.27,0:04:39.00,Default,,0,0,0,,ne iski upar ki seema kam
+Dialogue: 0,0:04:39.00,0:04:39.57,Default,,0,0,0,,kar di hai.
+Dialogue: 0,0:04:39.57,0:04:42.64,Default,,0,0,0,,IRDAI yaani insurance companies ka regulator,
+Dialogue: 0,0:04:42.64,0:04:44.18,Default,,0,0,0,,jo unke niyam banata hai.
+Dialogue: 0,0:04:44.18,0:04:45.91,Default,,0,0,0,,Phir bhi har policy ka apna
+Dialogue: 0,0:04:45.91,0:04:46.87,Default,,0,0,0,,samay hota hai,
+Dialogue: 0,0:04:46.87,0:04:48.98,Default,,0,0,0,,jo uske kaagazon mein likha hota
+Dialogue: 0,0:04:48.98,0:04:49.17,Default,,0,0,0,,hai.
+Dialogue: 0,0:04:49.62,0:04:51.27,Default,,0,0,0,,Ab Behen wali galti dekhiye.
+Dialogue: 0,0:04:51.27,0:04:53.10,Default,,0,0,0,,Mummy ki bimari form mein chhupa
+Dialogue: 0,0:04:53.10,0:04:53.64,Default,,0,0,0,,di gayi thi.
+Dialogue: 0,0:04:53.64,0:04:55.11,Default,,0,0,0,,Toh waiting period ke baad bhi
+Dialogue: 0,0:04:55.11,0:04:56.39,Default,,0,0,0,,company keh sakti thi,
+Dialogue: 0,0:04:56.39,0:04:57.67,Default,,0,0,0,,aapne sach nahi bataya.
+Dialogue: 0,0:04:57.67,0:05:00.05,Default,,0,0,0,,Non-disclosure yaani form mein koi zaroori
+Dialogue: 0,0:05:00.05,0:05:00.96,Default,,0,0,0,,baat na batana.
+Dialogue: 0,0:05:00.96,0:05:02.61,Default,,0,0,0,,Yeh claim reject hone ki sabse
+Dialogue: 0,0:05:02.61,0:05:03.34,Default,,0,0,0,,aam wajah hai.
+Dialogue: 0,0:05:03.79,0:05:06.23,Default,,0,0,0,,Agent ki salah us waqt aasaan
+Dialogue: 0,0:05:06.23,0:05:07.04,Default,,0,0,0,,lagti hai.
+Dialogue: 0,0:05:07.04,0:05:07.85,Default,,0,0,0,,Premium kam,
+Dialogue: 0,0:05:07.85,0:05:08.67,Default,,0,0,0,,form chhota,
+Dialogue: 0,0:05:08.67,0:05:10.56,Default,,0,0,0,,koi medical test nahi.
+Dialogue: 0,0:05:10.56,0:05:11.65,Default,,0,0,0,,Par yaad rakhiye,
+Dialogue: 0,0:05:11.65,0:05:13.54,Default,,0,0,0,,claim ke waqt agent nahi,
+Dialogue: 0,0:05:13.54,0:05:16.25,Default,,0,0,0,,company aapki file padhti hai.
+Dialogue: 0,0:05:16.25,0:05:19.23,Default,,0,0,0,,Aur company sabse pehle wahi form
+Dialogue: 0,0:05:19.23,0:05:20.05,Default,,0,0,0,,kholti hai,
+Dialogue: 0,0:05:20.05,0:05:21.67,Default,,0,0,0,,jo aapne sign kiya tha.
+Dialogue: 0,0:05:22.12,0:05:23.08,Default,,0,0,0,,Ab ek bada niyam,
+Dialogue: 0,0:05:23.08,0:05:24.82,Default,,0,0,0,,jise moratorium kehte hain.
+Dialogue: 0,0:05:24.82,0:05:27.33,Default,,0,0,0,,Moratorium yaani ek suraksha ki deewar.
+Dialogue: 0,0:05:27.33,0:05:30.03,Default,,0,0,0,,Lagaataar 60 mahine policy chalne ke
+Dialogue: 0,0:05:30.03,0:05:30.23,Default,,0,0,0,,baad,
+Dialogue: 0,0:05:30.23,0:05:32.54,Default,,0,0,0,,company non-disclosure ke naam par claim
+Dialogue: 0,0:05:32.54,0:05:34.28,Default,,0,0,0,,par sawaal nahi utha sakti.
+Dialogue: 0,0:05:34.28,0:05:36.21,Default,,0,0,0,,Sirf saabit dhokhe ka case alag
+Dialogue: 0,0:05:36.21,0:05:36.40,Default,,0,0,0,,hai.
+Dialogue: 0,0:05:36.85,0:05:38.23,Default,,0,0,0,,Is niyam mein ek shabd bahut
+Dialogue: 0,0:05:38.23,0:05:39.01,Default,,0,0,0,,zaroori hai,
+Dialogue: 0,0:05:39.01,0:05:39.60,Default,,0,0,0,,lagaataar.
+Dialogue: 0,0:05:39.60,0:05:41.37,Default,,0,0,0,,Agar beech mein policy toot gayi,
+Dialogue: 0,0:05:41.37,0:05:42.35,Default,,0,0,0,,renew nahi hui,
+Dialogue: 0,0:05:42.35,0:05:44.12,Default,,0,0,0,,toh ginti shuru se ho sakti
+Dialogue: 0,0:05:44.12,0:05:44.32,Default,,0,0,0,,hai.
+Dialogue: 0,0:05:44.32,0:05:46.48,Default,,0,0,0,,Isliye renewal ki date kabhi miss
+Dialogue: 0,0:05:46.48,0:05:47.07,Default,,0,0,0,,mat kijiye.
+Dialogue: 0,0:05:47.07,0:05:48.25,Default,,0,0,0,,Auto debit lagaiye,
+Dialogue: 0,0:05:48.25,0:05:50.21,Default,,0,0,0,,ya calendar mein reminder rakhiye.
+Dialogue: 0,0:05:50.66,0:05:52.51,Default,,0,0,0,,Toh doosre sawaal ka jawab.
+Dialogue: 0,0:05:52.51,0:05:55.28,Default,,0,0,0,,Waiting period mein purani bimari aur
+Dialogue: 0,0:05:55.28,0:05:57.13,Default,,0,0,0,,kuch khaas ilaaj ka claim nahi
+Dialogue: 0,0:05:57.13,0:05:57.59,Default,,0,0,0,,milta.
+Dialogue: 0,0:05:57.59,0:05:58.51,Default,,0,0,0,,Aur sach chhupaya,
+Dialogue: 0,0:05:58.51,0:06:00.13,Default,,0,0,0,,toh waiting ke baad bhi claim
+Dialogue: 0,0:06:00.13,0:06:01.29,Default,,0,0,0,,atak sakta hai.
+Dialogue: 0,0:06:01.29,0:06:03.60,Default,,0,0,0,,Isliye form mein har bimari likhiye.
+Dialogue: 0,0:06:03.60,0:06:06.14,Default,,0,0,0,,60 mahine ki deewar bhi tabhi
+Dialogue: 0,0:06:06.14,0:06:07.06,Default,,0,0,0,,kaam aati hai,
+Dialogue: 0,0:06:07.06,0:06:09.14,Default,,0,0,0,,jab policy lagaataar chale.
+Dialogue: 0,0:06:09.59,0:06:10.51,Default,,0,0,0,,Teesri kahani,
+Dialogue: 0,0:06:10.51,0:06:11.61,Default,,0,0,0,,ek office wali.
+Dialogue: 0,0:06:11.61,0:06:12.89,Default,,0,0,0,,Bhai ki naukri achhi hai,
+Dialogue: 0,0:06:12.89,0:06:14.90,Default,,0,0,0,,company ne group health insurance diya
+Dialogue: 0,0:06:14.90,0:06:15.09,Default,,0,0,0,,hai.
+Dialogue: 0,0:06:15.09,0:06:17.47,Default,,0,0,0,,Group insurance yaani company ki taraf
+Dialogue: 0,0:06:17.47,0:06:18.75,Default,,0,0,0,,se sab employees ke liye ek
+Dialogue: 0,0:06:18.75,0:06:19.85,Default,,0,0,0,,saath li gayi policy.
+Dialogue: 0,0:06:19.85,0:06:20.59,Default,,0,0,0,,Bhai kehta hai,
+Dialogue: 0,0:06:20.59,0:06:22.79,Default,,0,0,0,,mujhe alag policy ki kya zaroorat,
+Dialogue: 0,0:06:22.79,0:06:24.07,Default,,0,0,0,,office wala hai na.
+Dialogue: 0,0:06:24.52,0:06:26.29,Default,,0,0,0,,Uska logic galat nahi lagta.
+Dialogue: 0,0:06:26.29,0:06:27.71,Default,,0,0,0,,Premium company bharti hai,
+Dialogue: 0,0:06:27.71,0:06:29.31,Default,,0,0,0,,pehle din se cover milta hai.
+Dialogue: 0,0:06:29.31,0:06:31.08,Default,,0,0,0,,Kai group policies mein waiting period
+Dialogue: 0,0:06:31.08,0:06:31.96,Default,,0,0,0,,bhi nahi hota.
+Dialogue: 0,0:06:31.96,0:06:33.56,Default,,0,0,0,,Kabhi parents bhi saath mein cover
+Dialogue: 0,0:06:33.56,0:06:34.27,Default,,0,0,0,,ho jaate hain.
+Dialogue: 0,0:06:34.27,0:06:35.69,Default,,0,0,0,,Bina kuch kiye sab mil raha
+Dialogue: 0,0:06:35.69,0:06:35.86,Default,,0,0,0,,hai,
+Dialogue: 0,0:06:35.86,0:06:37.28,Default,,0,0,0,,toh apna paisa kyun lagayein?
+Dialogue: 0,0:06:37.73,0:06:39.72,Default,,0,0,0,,Phir ek din office se email
+Dialogue: 0,0:06:39.72,0:06:39.94,Default,,0,0,0,,aaya,
+Dialogue: 0,0:06:39.94,0:06:40.82,Default,,0,0,0,,restructuring.
+Dialogue: 0,0:06:40.82,0:06:42.37,Default,,0,0,0,,Bhai ki naukri chali gayi.
+Dialogue: 0,0:06:42.37,0:06:43.47,Default,,0,0,0,,Salary band hui,
+Dialogue: 0,0:06:43.47,0:06:45.46,Default,,0,0,0,,aur saath mein health insurance bhi.
+Dialogue: 0,0:06:45.46,0:06:47.67,Default,,0,0,0,,Group policy naukri ke saath judi
+Dialogue: 0,0:06:47.67,0:06:48.33,Default,,0,0,0,,hoti hai.
+Dialogue: 0,0:06:48.33,0:06:48.99,Default,,0,0,0,,Naukri gayi,
+Dialogue: 0,0:06:48.99,0:06:50.76,Default,,0,0,0,,toh cover bhi usi ke saath
+Dialogue: 0,0:06:50.76,0:06:51.20,Default,,0,0,0,,khatam.
+Dialogue: 0,0:06:51.20,0:06:53.85,Default,,0,0,0,,Aksar lamba notice bhi nahi milta.
+Dialogue: 0,0:06:54.30,0:06:54.87,Default,,0,0,0,,Ab sochiye,
+Dialogue: 0,0:06:54.87,0:06:57.12,Default,,0,0,0,,usi mahine Papa ko phir hospital
+Dialogue: 0,0:06:57.12,0:06:57.88,Default,,0,0,0,,jaana pade.
+Dialogue: 0,0:06:57.88,0:06:59.20,Default,,0,0,0,,Na office ka cover,
+Dialogue: 0,0:06:59.20,0:07:00.33,Default,,0,0,0,,na apni policy.
+Dialogue: 0,0:07:00.33,0:07:02.02,Default,,0,0,0,,Aur ab nayi policy lene jaayein,
+Dialogue: 0,0:07:02.02,0:07:03.90,Default,,0,0,0,,toh Papa ki umar aur bimari
+Dialogue: 0,0:07:03.90,0:07:05.79,Default,,0,0,0,,dekh kar premium bahut zyada hoga.
+Dialogue: 0,0:07:05.79,0:07:07.48,Default,,0,0,0,,Upar se waiting period phir se
+Dialogue: 0,0:07:07.48,0:07:07.86,Default,,0,0,0,,shuru.
+Dialogue: 0,0:07:08.31,0:07:09.05,Default,,0,0,0,,Doosri dikkat,
+Dialogue: 0,0:07:09.05,0:07:10.36,Default,,0,0,0,,cover sab mein bat-ta hai.
+Dialogue: 0,0:07:10.36,0:07:12.40,Default,,0,0,0,,Office ki policy mein aksar ek
+Dialogue: 0,0:07:12.40,0:07:14.26,Default,,0,0,0,,hi cover poore parivaar ke liye
+Dialogue: 0,0:07:14.26,0:07:14.82,Default,,0,0,0,,hota hai.
+Dialogue: 0,0:07:14.82,0:07:16.86,Default,,0,0,0,,Papa ka bada operation ho gaya,
+Dialogue: 0,0:07:16.86,0:07:18.54,Default,,0,0,0,,toh saal ka cover wahin khatam.
+Dialogue: 0,0:07:18.54,0:07:19.84,Default,,0,0,0,,Phir Beti beemar padi,
+Dialogue: 0,0:07:19.84,0:07:21.51,Default,,0,0,0,,toh uske liye kuch nahi bacha.
+Dialogue: 0,0:07:21.96,0:07:22.99,Default,,0,0,0,,Aur teesri dikkat,
+Dialogue: 0,0:07:22.99,0:07:23.81,Default,,0,0,0,,retirement.
+Dialogue: 0,0:07:23.81,0:07:25.65,Default,,0,0,0,,Jis din aap retire hote ho,
+Dialogue: 0,0:07:25.65,0:07:28.32,Default,,0,0,0,,office ka insurance bhi retire ho
+Dialogue: 0,0:07:28.32,0:07:28.94,Default,,0,0,0,,jaata hai.
+Dialogue: 0,0:07:28.94,0:07:31.19,Default,,0,0,0,,Aur bimari ka sabse zyada khatra
+Dialogue: 0,0:07:31.19,0:07:32.83,Default,,0,0,0,,usi umar mein hota hai.
+Dialogue: 0,0:07:32.83,0:07:35.09,Default,,0,0,0,,Us waqt nayi policy lena mehenga
+Dialogue: 0,0:07:35.09,0:07:35.50,Default,,0,0,0,,bhi hai,
+Dialogue: 0,0:07:35.50,0:07:36.32,Default,,0,0,0,,aur mushkil bhi.
+Dialogue: 0,0:07:36.77,0:07:38.42,Default,,0,0,0,,Toh teesre sawaal ka jawab,
+Dialogue: 0,0:07:38.42,0:07:38.84,Default,,0,0,0,,nahi.
+Dialogue: 0,0:07:38.84,0:07:41.52,Default,,0,0,0,,Office ka insurance ek achha bonus
+Dialogue: 0,0:07:41.52,0:07:41.73,Default,,0,0,0,,hai,
+Dialogue: 0,0:07:41.73,0:07:43.39,Default,,0,0,0,,par akela kaafi nahi.
+Dialogue: 0,0:07:43.39,0:07:45.87,Default,,0,0,0,,Apni ek alag policy honi chahiye,
+Dialogue: 0,0:07:45.87,0:07:47.73,Default,,0,0,0,,jo naukri badalne par bhi saath
+Dialogue: 0,0:07:47.73,0:07:48.14,Default,,0,0,0,,chale.
+Dialogue: 0,0:07:48.14,0:07:49.59,Default,,0,0,0,,Aur jitni jaldi lenge,
+Dialogue: 0,0:07:49.59,0:07:51.86,Default,,0,0,0,,utni jaldi waiting period aur 60
+Dialogue: 0,0:07:51.86,0:07:53.93,Default,,0,0,0,,mahine ki ginti shuru hogi.
+Dialogue: 0,0:07:54.38,0:07:56.57,Default,,0,0,0,,Ab sabse badi galti ki baat.
+Dialogue: 0,0:07:56.57,0:07:59.25,Default,,0,0,0,,Hum policy khareedte waqt sirf premium
+Dialogue: 0,0:07:59.25,0:08:00.72,Default,,0,0,0,,aur cover dekhte hain.
+Dialogue: 0,0:08:00.72,0:08:01.94,Default,,0,0,0,,Kitna bharna hai,
+Dialogue: 0,0:08:01.94,0:08:03.15,Default,,0,0,0,,kitna milega.
+Dialogue: 0,0:08:03.15,0:08:05.11,Default,,0,0,0,,Par claim kat-ta hai un cheezon
+Dialogue: 0,0:08:05.11,0:08:05.35,Default,,0,0,0,,se,
+Dialogue: 0,0:08:05.35,0:08:07.30,Default,,0,0,0,,jo beech mein likhi hoti hain.
+Dialogue: 0,0:08:07.30,0:08:07.79,Default,,0,0,0,,Room rent,
+Dialogue: 0,0:08:07.79,0:08:08.52,Default,,0,0,0,,sub-limit,
+Dialogue: 0,0:08:08.52,0:08:09.00,Default,,0,0,0,,co-pay,
+Dialogue: 0,0:08:09.00,0:08:09.98,Default,,0,0,0,,waiting period.
+Dialogue: 0,0:08:10.43,0:08:11.04,Default,,0,0,0,,Pehla kaam,
+Dialogue: 0,0:08:11.04,0:08:13.06,Default,,0,0,0,,Customer Information Sheet padhiye.
+Dialogue: 0,0:08:13.06,0:08:15.88,Default,,0,0,0,,Customer Information Sheet yaani policy ka
+Dialogue: 0,0:08:15.88,0:08:16.49,Default,,0,0,0,,chhota saar,
+Dialogue: 0,0:08:16.49,0:08:18.91,Default,,0,0,0,,jisme saari zaroori shartein ek jagah
+Dialogue: 0,0:08:18.91,0:08:19.92,Default,,0,0,0,,likhi hoti hain.
+Dialogue: 0,0:08:19.92,0:08:21.94,Default,,0,0,0,,Har company ko yeh deni hoti
+Dialogue: 0,0:08:21.94,0:08:22.15,Default,,0,0,0,,hai.
+Dialogue: 0,0:08:22.15,0:08:22.95,Default,,0,0,0,,Isme room rent,
+Dialogue: 0,0:08:22.95,0:08:23.36,Default,,0,0,0,,co-pay,
+Dialogue: 0,0:08:23.36,0:08:25.58,Default,,0,0,0,,sub-limit aur har waiting period dekhiye.
+Dialogue: 0,0:08:25.58,0:08:26.59,Default,,0,0,0,,Pen lekar padhiye.
+Dialogue: 0,0:08:27.04,0:08:27.64,Default,,0,0,0,,Doosra kaam,
+Dialogue: 0,0:08:27.64,0:08:29.83,Default,,0,0,0,,cashless aur reimbursement ka fark samjhiye.
+Dialogue: 0,0:08:29.83,0:08:32.01,Default,,0,0,0,,Cashless yaani bill seedha company aur
+Dialogue: 0,0:08:32.01,0:08:34.00,Default,,0,0,0,,hospital ke beech settle hota hai.
+Dialogue: 0,0:08:34.00,0:08:35.99,Default,,0,0,0,,Yeh network hospital mein hota hai.
+Dialogue: 0,0:08:35.99,0:08:38.18,Default,,0,0,0,,Network hospital yaani woh hospital,
+Dialogue: 0,0:08:38.18,0:08:40.17,Default,,0,0,0,,jiska company ke saath tie-up hai.
+Dialogue: 0,0:08:40.17,0:08:42.56,Default,,0,0,0,,Wahan pehle approval lena padta hai.
+Dialogue: 0,0:08:43.01,0:08:45.54,Default,,0,0,0,,Reimbursement yaani pehle aap apni jeb
+Dialogue: 0,0:08:45.54,0:08:46.39,Default,,0,0,0,,se bill bharo,
+Dialogue: 0,0:08:46.39,0:08:48.71,Default,,0,0,0,,phir kaagaz dekar company se paisa
+Dialogue: 0,0:08:48.71,0:08:49.55,Default,,0,0,0,,wapas maango.
+Dialogue: 0,0:08:49.55,0:08:51.03,Default,,0,0,0,,Isme original bills,
+Dialogue: 0,0:08:51.03,0:08:53.56,Default,,0,0,0,,reports aur discharge summary sambhaal kar
+Dialogue: 0,0:08:53.56,0:08:54.62,Default,,0,0,0,,rakhni hoti hai.
+Dialogue: 0,0:08:54.62,0:08:55.67,Default,,0,0,0,,Ek kaagaz kho gaya,
+Dialogue: 0,0:08:55.67,0:08:57.15,Default,,0,0,0,,toh claim atak sakta hai.
+Dialogue: 0,0:08:57.15,0:08:59.05,Default,,0,0,0,,Isliye ek alag file banaiye.
+Dialogue: 0,0:08:59.50,0:09:01.07,Default,,0,0,0,,Achhi khabar yeh hai ki IRDAI
+Dialogue: 0,0:09:01.07,0:09:02.81,Default,,0,0,0,,ne cashless discharge ka time tight
+Dialogue: 0,0:09:02.81,0:09:03.34,Default,,0,0,0,,kar diya hai.
+Dialogue: 0,0:09:03.34,0:09:05.61,Default,,0,0,0,,Company ko discharge ki approval ghanton
+Dialogue: 0,0:09:05.61,0:09:06.65,Default,,0,0,0,,mein deni hoti hai,
+Dialogue: 0,0:09:06.65,0:09:08.05,Default,,0,0,0,,din bhar ka intezaar nahi.
+Dialogue: 0,0:09:08.05,0:09:08.40,Default,,0,0,0,,Der ho,
+Dialogue: 0,0:09:08.40,0:09:10.14,Default,,0,0,0,,toh insurance desk se likhit mein
+Dialogue: 0,0:09:10.14,0:09:10.49,Default,,0,0,0,,poochiye.
+Dialogue: 0,0:09:10.49,0:09:12.06,Default,,0,0,0,,Shikayat ka raasta bhi hota hai.
+Dialogue: 0,0:09:12.51,0:09:13.22,Default,,0,0,0,,Teesra kaam,
+Dialogue: 0,0:09:13.22,0:09:14.41,Default,,0,0,0,,form mein sach likhiye.
+Dialogue: 0,0:09:14.41,0:09:15.36,Default,,0,0,0,,Har bimari,
+Dialogue: 0,0:09:15.36,0:09:16.08,Default,,0,0,0,,har dawai,
+Dialogue: 0,0:09:16.08,0:09:17.74,Default,,0,0,0,,har purani surgery.
+Dialogue: 0,0:09:17.74,0:09:19.64,Default,,0,0,0,,Premium thoda badh sakta hai,
+Dialogue: 0,0:09:19.64,0:09:21.54,Default,,0,0,0,,par claim ke din aapki file
+Dialogue: 0,0:09:21.54,0:09:22.49,Default,,0,0,0,,saaf rahegi.
+Dialogue: 0,0:09:22.49,0:09:23.45,Default,,0,0,0,,Aur chautha kaam,
+Dialogue: 0,0:09:23.45,0:09:26.53,Default,,0,0,0,,office policy ke alawa apni ek
+Dialogue: 0,0:09:26.53,0:09:27.72,Default,,0,0,0,,policy rakhiye,
+Dialogue: 0,0:09:27.72,0:09:29.15,Default,,0,0,0,,khaaskar parents ke liye.
+Dialogue: 0,0:09:29.60,0:09:30.53,Default,,0,0,0,,Ek fayda aur hai.
+Dialogue: 0,0:09:30.53,0:09:32.58,Default,,0,0,0,,Old tax regime mein health insurance
+Dialogue: 0,0:09:32.58,0:09:34.44,Default,,0,0,0,,premium par tax deduction milta hai,
+Dialogue: 0,0:09:34.44,0:09:35.74,Default,,0,0,0,,apne aur parents ke liye.
+Dialogue: 0,0:09:35.74,0:09:37.04,Default,,0,0,0,,Toh premium sirf kharch nahi,
+Dialogue: 0,0:09:37.04,0:09:38.53,Default,,0,0,0,,thoda tax bhi bachata hai.
+Dialogue: 0,0:09:38.53,0:09:40.21,Default,,0,0,0,,Apna hisaab apne CA ya tax
+Dialogue: 0,0:09:40.21,0:09:41.88,Default,,0,0,0,,advisor se zaroor check kijiye.
+Dialogue: 0,0:09:42.33,0:09:43.13,Default,,0,0,0,,Aur yaad rakhiye,
+Dialogue: 0,0:09:43.13,0:09:45.12,Default,,0,0,0,,health insurance ka asli kaam hai
+Dialogue: 0,0:09:45.12,0:09:46.92,Default,,0,0,0,,bimari ke din aapki SIP aur
+Dialogue: 0,0:09:46.92,0:09:48.11,Default,,0,0,0,,savings ko bachana.
+Dialogue: 0,0:09:48.11,0:09:48.71,Default,,0,0,0,,Claim kat gaya,
+Dialogue: 0,0:09:48.71,0:09:50.11,Default,,0,0,0,,toh log udhaar lete hain,
+Dialogue: 0,0:09:50.11,0:09:51.30,Default,,0,0,0,,ya SIP rok dete hain.
+Dialogue: 0,0:09:51.30,0:09:52.50,Default,,0,0,0,,Policy sahi ho,
+Dialogue: 0,0:09:52.50,0:09:54.10,Default,,0,0,0,,toh yeh nahi karna padta.
+Dialogue: 0,0:09:54.10,0:09:56.09,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:09:56.54,0:09:58.52,Default,,0,0,0,,Ab aapse ek seedha sawaal.
+Dialogue: 0,0:09:58.52,0:10:00.75,Default,,0,0,0,,Aapki health policy mein room rent
+Dialogue: 0,0:10:00.75,0:10:02.23,Default,,0,0,0,,limit hai ya nahi?
+Dialogue: 0,0:10:02.23,0:10:04.46,Default,,0,0,0,,Bina dekhe jawab mat dena.
+Dialogue: 0,0:10:04.46,0:10:05.69,Default,,0,0,0,,Policy kholiye,
+Dialogue: 0,0:10:05.69,0:10:06.43,Default,,0,0,0,,check kijiye,
+Dialogue: 0,0:10:06.43,0:10:08.16,Default,,0,0,0,,aur comments mein sirf likhiye,
+Dialogue: 0,0:10:08.16,0:10:08.41,Default,,0,0,0,,haan,
+Dialogue: 0,0:10:08.41,0:10:08.91,Default,,0,0,0,,nahi,
+Dialogue: 0,0:10:08.91,0:10:10.14,Default,,0,0,0,,ya pata nahi.
+Dialogue: 0,0:10:10.14,0:10:11.38,Default,,0,0,0,,Main sab padhunga.
+Dialogue: 0,0:10:11.83,0:10:13.62,Default,,0,0,0,,Agle video mein baat karenge term
+Dialogue: 0,0:10:13.62,0:10:14.52,Default,,0,0,0,,insurance ki.
+Dialogue: 0,0:10:14.52,0:10:15.60,Default,,0,0,0,,Kitna cover chahiye,
+Dialogue: 0,0:10:15.60,0:10:17.39,Default,,0,0,0,,aur log galat policy kyun khareed
+Dialogue: 0,0:10:17.39,0:10:17.93,Default,,0,0,0,,lete hain.
+Dialogue: 0,0:10:17.93,0:10:19.37,Default,,0,0,0,,Tab tak yeh video us insaan
+Dialogue: 0,0:10:19.37,0:10:19.90,Default,,0,0,0,,ko bhejiye,
+Dialogue: 0,0:10:19.90,0:10:22.05,Default,,0,0,0,,jiske paas sirf office ka insurance
+Dialogue: 0,0:10:22.05,0:10:22.24,Default,,0,0,0,,hai.
+Dialogue: 0,0:10:22.24,0:10:23.67,Default,,0,0,0,,Milte hain agle video mein.

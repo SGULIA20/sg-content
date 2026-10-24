@@ -1,0 +1,66 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.54,Default,,0,0,0,,Kya Mahabharata ka ek yoddha aaj
+Dialogue: 0,0:00:02.54,0:00:03.46,Default,,0,0,0,,bhi zinda hai?
+Dialogue: 0,0:00:03.46,0:00:05.53,Default,,0,0,0,,Ashwatthama ne Brahmashira,
+Dialogue: 0,0:00:05.53,0:00:06.92,Default,,0,0,0,,yaani divya astra,
+Dialogue: 0,0:00:06.92,0:00:08.76,Default,,0,0,0,,Uttara ke garbh par chalaya.
+Dialogue: 0,0:00:09.21,0:00:11.59,Default,,0,0,0,,Sauptika Parva mein Krishna shraap dete
+Dialogue: 0,0:00:11.59,0:00:11.80,Default,,0,0,0,,hain.
+Dialogue: 0,0:00:11.80,0:00:13.75,Default,,0,0,0,,3,000 saal tak akele bhatkoge.
+Dialogue: 0,0:00:13.75,0:00:16.56,Default,,0,0,0,,Ashwatthama maathe ki mani dekar jungle
+Dialogue: 0,0:00:16.56,0:00:17.21,Default,,0,0,0,,chala gaya.
+Dialogue: 0,0:00:17.66,0:00:19.29,Default,,0,0,0,,Kahaniyan kehti hain,
+Dialogue: 0,0:00:19.29,0:00:20.93,Default,,0,0,0,,woh Asirgarh mein hai.
+Dialogue: 0,0:00:20.93,0:00:23.92,Default,,0,0,0,,Burhanpur ke paas Satpura par khada
+Dialogue: 0,0:00:23.92,0:00:24.47,Default,,0,0,0,,kila,
+Dialogue: 0,0:00:24.47,0:00:26.10,Default,,0,0,0,,Deccan ka darwaza.
+Dialogue: 0,0:00:26.55,0:00:26.94,Default,,0,0,0,,ASI,
+Dialogue: 0,0:00:26.94,0:00:30.08,Default,,0,0,0,,yaani purani imaraton ki sarkari rakhwali,
+Dialogue: 0,0:00:30.08,0:00:32.23,Default,,0,0,0,,poore kile ko rashtriya smarak maanti
+Dialogue: 0,0:00:32.23,0:00:32.43,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:32.88,0:00:35.59,Default,,0,0,0,,Andar ka Mahadeo mandir bhi protected
+Dialogue: 0,0:00:35.59,0:00:35.81,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:35.81,0:00:38.29,Default,,0,0,0,,1978 mein yahan se ek Shivling
+Dialogue: 0,0:00:38.29,0:00:38.97,Default,,0,0,0,,chori hua,
+Dialogue: 0,0:00:38.97,0:00:40.32,Default,,0,0,0,,aaj tak nahi mila.
+Dialogue: 0,0:00:40.77,0:00:41.50,Default,,0,0,0,,Kehte hain,
+Dialogue: 0,0:00:41.50,0:00:43.93,Default,,0,0,0,,Gupteshwar Mahadev par har subah,
+Dialogue: 0,0:00:43.93,0:00:45.87,Default,,0,0,0,,darwaza khulne se pehle,
+Dialogue: 0,0:00:45.87,0:00:47.57,Default,,0,0,0,,taaza laal phool milte hain.
+Dialogue: 0,0:00:48.02,0:00:49.97,Default,,0,0,0,,Par vidvaan ek baat pakadte hain.
+Dialogue: 0,0:00:49.97,0:00:52.14,Default,,0,0,0,,Mahabharata mein shraap 3,000 saal ka
+Dialogue: 0,0:00:52.14,0:00:52.36,Default,,0,0,0,,hai,
+Dialogue: 0,0:00:52.36,0:00:53.66,Default,,0,0,0,,hamesha ka nahi.
+Dialogue: 0,0:00:54.11,0:00:55.38,Default,,0,0,0,,Lok kathayein kehti hain,
+Dialogue: 0,0:00:55.38,0:00:57.08,Default,,0,0,0,,woh Kali Yuga ke ant tak
+Dialogue: 0,0:00:57.08,0:00:57.72,Default,,0,0,0,,rahega.
+Dialogue: 0,0:00:57.72,0:01:00.06,Default,,0,0,0,,Kali Yuga yaani hamara aaj ka
+Dialogue: 0,0:01:00.06,0:01:00.27,Default,,0,0,0,,yug.
+Dialogue: 0,0:01:00.72,0:01:02.78,Default,,0,0,0,,Aur subah ke phool pehli baar
+Dialogue: 0,0:01:02.78,0:01:03.81,Default,,0,0,0,,kisne chadhaye,
+Dialogue: 0,0:01:03.81,0:01:05.36,Default,,0,0,0,,yeh koi nahi jaanta.
+Dialogue: 0,0:01:05.81,0:01:08.52,Default,,0,0,0,,Ek doctor ki kahani bhi hai.
+Dialogue: 0,0:01:08.52,0:01:09.73,Default,,0,0,0,,Lamba mareez,
+Dialogue: 0,0:01:09.73,0:01:11.53,Default,,0,0,0,,maathe par gehra ghaav.
+Dialogue: 0,0:01:11.53,0:01:13.04,Default,,0,0,0,,Mazaak mein poocha,
+Dialogue: 0,0:01:13.04,0:01:14.55,Default,,0,0,0,,Ashwatthama ho?
+Dialogue: 0,0:01:14.55,0:01:15.45,Default,,0,0,0,,Mareez gayab.
+Dialogue: 0,0:01:15.90,0:01:17.96,Default,,0,0,0,,Aaj aap Asirgarh ja sakte hain.
+Dialogue: 0,0:01:17.96,0:01:18.65,Default,,0,0,0,,Diwarein,
+Dialogue: 0,0:01:18.65,0:01:20.94,Default,,0,0,0,,Sat Darwaza aur Mahadeo mandir,
+Dialogue: 0,0:01:20.94,0:01:21.86,Default,,0,0,0,,sab dikhte hain.
+Dialogue: 0,0:01:22.31,0:01:24.98,Default,,0,0,0,,Aapne Ashwatthama ki kahani pehli baar
+Dialogue: 0,0:01:24.98,0:01:26.00,Default,,0,0,0,,kisse suni thi?
+Dialogue: 0,0:01:26.00,0:01:27.03,Default,,0,0,0,,Comment mein batao.

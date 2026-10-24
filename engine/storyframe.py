@@ -13,6 +13,7 @@ TOP, PANEL, BOTTOM = 0.17, 0.66, 0.17
 HANDLE = "@sanjeev_gulia"
 END_S = 3.0                                                  # branded end card: channel name, tagline, subscribe, the question
 LOGO_PX = 150                                                # round channel badge in the panel's bottom-right corner, every frame
+WATERMARK_ALPHA = 0.10                                       # the same badge, large and faint, in the centre of every panel: a crop cannot remove it
 LOGO_TEXT = {"sglearning": ("SG", "Learning"), "arthvan": ("SG", "Myth World")}
 LOGO_DIR = Path(__file__).resolve().parent.parent / "assets" / "logo"
 
@@ -58,7 +59,7 @@ def _run(args: list) -> None:
 
 
 def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, cue_overlays: list, chip: Path | None = None,
-          logo_png: Path | None = None) -> Path:
+          logo_png: Path | None = None, watermark_png: Path | None = None) -> Path:
     """Panel with push-in in the middle band, black bands top and bottom, title band, optional evidence chip, caption cues overlaid."""
     w, h = size
     ph = int(h * PANEL)
@@ -69,6 +70,12 @@ def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, 
              f"pad={w}:{h}:0:{py}:black[base];[base][1:v]overlay=0:0:shortest=1[t]")
     inputs = ["-loop", "1", "-i", str(panel), "-loop", "1", "-i", str(title_png)]
     last, k0 = "[t]", 2
+    if watermark_png is not None:
+        wm = int(min(w, ph) * 0.34)
+        inputs += ["-loop", "1", "-i", str(watermark_png)]
+        chain += (f";[{k0}:v]scale={wm}:{wm},format=rgba,colorchannelmixer=aa={WATERMARK_ALPHA}[wm];"
+                  f"{last}[wm]overlay={(w - wm) // 2}:{py + (ph - wm) // 2}:shortest=1[x{k0}]")
+        last, k0 = f"[x{k0}]", k0 + 1
     for extra, x, y in ((chip, w - 400 - 30, py + 30), (logo_png, w - LOGO_PX - 26, py + ph - LOGO_PX - 26)):
         if extra is None:
             continue
@@ -93,10 +100,7 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     band_h = int(h * TOP)
     title = (piece.script or {}).get("title") or (piece.script or {}).get("hook", "")
     title_png = cards.render("storytitle", {"title_html": title_html(title), **brand(piece.channel)}, out_dir / "title.png", (w, band_h))
-    if piece.kind == "short":
-        lines, factor = assemble.fit_short(lines, out_dir / "vo-fit", limit=STORY_MAX_S - END_S)
-        if factor > 1.0:
-            print(f"voice sped up {factor}x to fit the story under {STORY_MAX_S:.0f} s", flush=True)
+    # founder, 22 Oct 2026: the narration is never sped up or cut to fit; a story takes the time it takes (YouTube Shorts allow 3 minutes)
     voice_wav = out_dir / "voice.wav"
     starts = assemble._voice_track(lines, voice_wav)
     piece.timings = starts
@@ -104,6 +108,7 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     clips, all_cues = [], []
     bottom_y = h - band_h
     badge = logo(piece.channel)
+    big_badge = logo(piece.channel, 600)
     for i, (panel, dur, (wav, d), start, scene_d) in enumerate(zip(panels, durations, lines, starts, piece.script["scenes"])):
         cues = captions.split(scene_d["vo"], d)
         all_cues += captions.offset(cues, start)
@@ -118,7 +123,7 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
             chip = out_dir / f"label-{scene_d['label']}.png"
             if not chip.exists():
                 cards.render("label", {"label": scene_d["label"]}, chip, (400, 90))
-        clips.append(scene(panel, dur, size, out_dir / f"scene{i:02d}.mp4", title_png, overlays, chip=chip, logo_png=badge))
+        clips.append(scene(panel, dur, size, out_dir / f"scene{i:02d}.mp4", title_png, overlays, chip=chip, logo_png=badge, watermark_png=big_badge))
     (out_dir / "captions.ass").write_text(captions.ass(all_cues, size))
     clips.append(end_card(piece, size, out_dir))
     concat = out_dir / "scenes.txt"
@@ -127,8 +132,8 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     bed = music.bed("light", total + 5)
     out = out_dir / ("reel.mp4" if piece.kind == "short" else "long.mp4")
     _run(["-f", "concat", "-safe", "0", "-i", str(concat), "-i", str(voice_wav), "-stream_loop", "-1", "-i", str(bed),
-          "-filter_complex", (f"[1:a]aresample=48000,loudnorm=I={assemble.VOICE_LUFS}:TP=-1.5:LRA=11[v];"
+          "-filter_complex", (f"[1:a]aresample=48000,apad=whole_dur={total:.3f},loudnorm=I={assemble.VOICE_LUFS}:TP=-1.5:LRA=11[v];"
                               f"[2:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS,afade=t=out:st={max(0.0, total - 2):.2f}:d=2,"
-                              f"loudnorm=I={assemble.MUSIC_LUFS}:TP=-6:LRA=7[m];[v][m]amix=inputs=2:duration=longest:normalize=0,loudnorm=I={assemble.MIX_LUFS}:TP=-1.5:LRA=11[aout]"),
+                              f"loudnorm=I={assemble.MUSIC_LUFS}:TP=-6:LRA=7[m];[v][m]amix=inputs=2:duration=longest:normalize=0,apad=whole_dur={total:.3f},loudnorm=I={assemble.MIX_LUFS}:TP=-1.5:LRA=11[aout]"),
           "-map", "0:v", "-map", "[aout]", "-t", f"{total:.3f}", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", str(out)])
     return out

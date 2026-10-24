@@ -1,0 +1,381 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,86,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.05,Default,,0,0,0,,Bhai ne bill bharne ka button
+Dialogue: 0,0:00:02.05,0:00:02.56,Default,,0,0,0,,dabaya,
+Dialogue: 0,0:00:02.56,0:00:04.10,Default,,0,0,0,,aur karz phir bhi badh gaya.
+Dialogue: 0,0:00:04.10,0:00:06.40,Default,,0,0,0,,Button ka naam tha minimum due.
+Dialogue: 0,0:00:06.40,0:00:07.42,Default,,0,0,0,,Usne socha,
+Dialogue: 0,0:00:07.42,0:00:08.70,Default,,0,0,0,,aaj ka kaam ho gaya.
+Dialogue: 0,0:00:08.70,0:00:11.01,Default,,0,0,0,,Asal mein usi raat ek meter
+Dialogue: 0,0:00:11.01,0:00:12.03,Default,,0,0,0,,chalu ho gaya.
+Dialogue: 0,0:00:12.03,0:00:15.10,Default,,0,0,0,,Woh meter mahine dar mahine chalta
+Dialogue: 0,0:00:15.10,0:00:15.62,Default,,0,0,0,,raha,
+Dialogue: 0,0:00:15.62,0:00:16.64,Default,,0,0,0,,bilkul chupchaap.
+Dialogue: 0,0:00:17.09,0:00:17.53,Default,,0,0,0,,Der raat,
+Dialogue: 0,0:00:17.53,0:00:19.53,Default,,0,0,0,,Bhai bistar par phone dekh raha
+Dialogue: 0,0:00:19.53,0:00:19.76,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:19.76,0:00:21.09,Default,,0,0,0,,Card ki app khuli hai,
+Dialogue: 0,0:00:21.09,0:00:22.42,Default,,0,0,0,,upar laal rang mein bill.
+Dialogue: 0,0:00:22.42,0:00:23.53,Default,,0,0,0,,Neeche button hain,
+Dialogue: 0,0:00:23.53,0:00:25.31,Default,,0,0,0,,total due aur minimum due.
+Dialogue: 0,0:00:25.31,0:00:27.98,Default,,0,0,0,,Minimum due wala amount bahut chhota
+Dialogue: 0,0:00:27.98,0:00:28.65,Default,,0,0,0,,dikhta hai.
+Dialogue: 0,0:00:28.65,0:00:31.09,Default,,0,0,0,,Bhai muskura kar wahi dabata hai.
+Dialogue: 0,0:00:31.54,0:00:34.40,Default,,0,0,0,,Kuch mahine baad Behen uska statement
+Dialogue: 0,0:00:34.40,0:00:35.11,Default,,0,0,0,,dekhti hai.
+Dialogue: 0,0:00:35.11,0:00:37.01,Default,,0,0,0,,Naya kharcha toh usne kiya hi
+Dialogue: 0,0:00:37.01,0:00:37.49,Default,,0,0,0,,nahi.
+Dialogue: 0,0:00:37.49,0:00:39.39,Default,,0,0,0,,Phir bhi bill pehle se bada
+Dialogue: 0,0:00:39.39,0:00:39.63,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:39.63,0:00:40.82,Default,,0,0,0,,Behen poochti hai,
+Dialogue: 0,0:00:40.82,0:00:42.72,Default,,0,0,0,,tune paisa bhara tha na?
+Dialogue: 0,0:00:42.72,0:00:43.68,Default,,0,0,0,,Bhai kehta hai,
+Dialogue: 0,0:00:43.68,0:00:43.91,Default,,0,0,0,,haan,
+Dialogue: 0,0:00:43.91,0:00:44.87,Default,,0,0,0,,har mahine,
+Dialogue: 0,0:00:44.87,0:00:45.58,Default,,0,0,0,,time par.
+Dialogue: 0,0:00:46.03,0:00:47.97,Default,,0,0,0,,Toh yahan kuch sawaal uthte hain.
+Dialogue: 0,0:00:47.97,0:00:50.13,Default,,0,0,0,,Minimum due bharne par asal mein
+Dialogue: 0,0:00:50.13,0:00:50.99,Default,,0,0,0,,hota kya hai?
+Dialogue: 0,0:00:50.99,0:00:52.94,Default,,0,0,0,,Bill saalon tak khatam kyun nahi
+Dialogue: 0,0:00:52.94,0:00:53.37,Default,,0,0,0,,hota?
+Dialogue: 0,0:00:53.37,0:00:54.88,Default,,0,0,0,,Aur card ka byaaj baaki loans
+Dialogue: 0,0:00:54.88,0:00:56.18,Default,,0,0,0,,se itna bhaari kyun?
+Dialogue: 0,0:00:56.18,0:00:57.90,Default,,0,0,0,,Aaj inhe kahani ke saath,
+Dialogue: 0,0:00:57.90,0:00:59.63,Default,,0,0,0,,seedhi bhasha mein samjhenge.
+Dialogue: 0,0:01:00.08,0:01:02.01,Default,,0,0,0,,Aur end mein bahar nikalne ka
+Dialogue: 0,0:01:02.01,0:01:03.29,Default,,0,0,0,,raasta bhi dekhenge.
+Dialogue: 0,0:01:03.29,0:01:04.79,Default,,0,0,0,,Kyunki yeh jaal sirf Bhai ka
+Dialogue: 0,0:01:04.79,0:01:05.44,Default,,0,0,0,,nahi hai.
+Dialogue: 0,0:01:05.44,0:01:07.36,Default,,0,0,0,,Festive sale ka season hai,
+Dialogue: 0,0:01:07.36,0:01:07.79,Default,,0,0,0,,phone,
+Dialogue: 0,0:01:07.79,0:01:08.01,Default,,0,0,0,,TV,
+Dialogue: 0,0:01:08.01,0:01:08.44,Default,,0,0,0,,fridge,
+Dialogue: 0,0:01:08.44,0:01:09.94,Default,,0,0,0,,sab card par aa raha hai.
+Dialogue: 0,0:01:09.94,0:01:12.08,Default,,0,0,0,,Isliye yeh kahani shayad aapke ghar
+Dialogue: 0,0:01:12.08,0:01:12.72,Default,,0,0,0,,ki bhi hai.
+Dialogue: 0,0:01:13.17,0:01:14.60,Default,,0,0,0,,Shuru se shuru karte hain.
+Dialogue: 0,0:01:14.60,0:01:16.21,Default,,0,0,0,,Festive sale chal rahi thi.
+Dialogue: 0,0:01:16.21,0:01:17.83,Default,,0,0,0,,Bhai ka purana phone slow ho
+Dialogue: 0,0:01:17.83,0:01:18.18,Default,,0,0,0,,gaya tha.
+Dialogue: 0,0:01:18.18,0:01:19.62,Default,,0,0,0,,Online naya phone dikha,
+Dialogue: 0,0:01:19.62,0:01:20.33,Default,,0,0,0,,bada discount,
+Dialogue: 0,0:01:20.33,0:01:21.41,Default,,0,0,0,,upar se card offer.
+Dialogue: 0,0:01:21.41,0:01:22.12,Default,,0,0,0,,Usne socha,
+Dialogue: 0,0:01:22.12,0:01:23.20,Default,,0,0,0,,abhi le leta hoon,
+Dialogue: 0,0:01:23.20,0:01:24.45,Default,,0,0,0,,paisa baad mein de dunga.
+Dialogue: 0,0:01:24.90,0:01:26.17,Default,,0,0,0,,Yahan tak sab theek tha.
+Dialogue: 0,0:01:26.17,0:01:27.86,Default,,0,0,0,,Credit card asal mein bank ka
+Dialogue: 0,0:01:27.86,0:01:28.49,Default,,0,0,0,,udhaar hai.
+Dialogue: 0,0:01:28.49,0:01:29.55,Default,,0,0,0,,Aap aaj kharchte ho,
+Dialogue: 0,0:01:29.55,0:01:31.66,Default,,0,0,0,,bank dukaandaar ko paisa deta hai.
+Dialogue: 0,0:01:31.66,0:01:33.77,Default,,0,0,0,,Mahine ke end mein bank statement
+Dialogue: 0,0:01:33.77,0:01:34.40,Default,,0,0,0,,bhejta hai.
+Dialogue: 0,0:01:34.40,0:01:37.15,Default,,0,0,0,,Statement yaani poore mahine ke kharche
+Dialogue: 0,0:01:37.15,0:01:37.78,Default,,0,0,0,,ka hisaab.
+Dialogue: 0,0:01:38.23,0:01:39.65,Default,,0,0,0,,Ab ek badhiya cheez samjhiye.
+Dialogue: 0,0:01:39.65,0:01:41.48,Default,,0,0,0,,Agar poora bill time par bhar
+Dialogue: 0,0:01:41.48,0:01:41.69,Default,,0,0,0,,do,
+Dialogue: 0,0:01:41.69,0:01:42.71,Default,,0,0,0,,toh koi byaaj nahi.
+Dialogue: 0,0:01:42.71,0:01:44.94,Default,,0,0,0,,Isse interest-free period kehte hain,
+Dialogue: 0,0:01:44.94,0:01:46.57,Default,,0,0,0,,yaani muft udhaar ka samay.
+Dialogue: 0,0:01:46.57,0:01:48.61,Default,,0,0,0,,Card companies yeh samay 20 se
+Dialogue: 0,0:01:48.61,0:01:50.03,Default,,0,0,0,,50 din tak deti hain.
+Dialogue: 0,0:01:50.48,0:01:50.94,Default,,0,0,0,,Socho,
+Dialogue: 0,0:01:50.94,0:01:52.98,Default,,0,0,0,,bank aapko lagbhag 50 din tak
+Dialogue: 0,0:01:52.98,0:01:54.57,Default,,0,0,0,,muft paisa de raha hai.
+Dialogue: 0,0:01:54.57,0:01:55.03,Default,,0,0,0,,Na byaaj,
+Dialogue: 0,0:01:55.03,0:01:55.71,Default,,0,0,0,,na koi fees.
+Dialogue: 0,0:01:55.71,0:01:56.39,Default,,0,0,0,,Bas shart hai,
+Dialogue: 0,0:01:56.39,0:01:58.44,Default,,0,0,0,,poora bill time par bharna hai.
+Dialogue: 0,0:01:58.44,0:02:00.03,Default,,0,0,0,,Yeh shart hi poore khel ki
+Dialogue: 0,0:02:00.03,0:02:00.72,Default,,0,0,0,,chaabi hai,
+Dialogue: 0,0:02:00.72,0:02:02.08,Default,,0,0,0,,isko yaad rakhiyega.
+Dialogue: 0,0:02:02.53,0:02:03.75,Default,,0,0,0,,Phir statement aaya.
+Dialogue: 0,0:02:03.75,0:02:05.94,Default,,0,0,0,,Bill phone ki keemat jitna tha.
+Dialogue: 0,0:02:05.94,0:02:08.38,Default,,0,0,0,,Salary aane mein abhi der thi,
+Dialogue: 0,0:02:08.38,0:02:10.33,Default,,0,0,0,,aur ghar ka kiraaya bhi dena
+Dialogue: 0,0:02:10.33,0:02:10.57,Default,,0,0,0,,tha.
+Dialogue: 0,0:02:10.57,0:02:12.77,Default,,0,0,0,,App ne ek aasaan raasta dikhaya,
+Dialogue: 0,0:02:12.77,0:02:13.74,Default,,0,0,0,,minimum due.
+Dialogue: 0,0:02:13.74,0:02:15.69,Default,,0,0,0,,Bill ka bas chhota sa hissa.
+Dialogue: 0,0:02:16.14,0:02:18.36,Default,,0,0,0,,Minimum due yaani woh chhoti rakam,
+Dialogue: 0,0:02:18.36,0:02:19.98,Default,,0,0,0,,jo bhar do toh bank defaulter
+Dialogue: 0,0:02:19.98,0:02:20.99,Default,,0,0,0,,nahi bolega.
+Dialogue: 0,0:02:20.99,0:02:22.60,Default,,0,0,0,,Late fees nahi lagegi,
+Dialogue: 0,0:02:22.60,0:02:24.02,Default,,0,0,0,,account chalta rahega.
+Dialogue: 0,0:02:24.02,0:02:24.83,Default,,0,0,0,,Bhai ko laga,
+Dialogue: 0,0:02:24.83,0:02:26.44,Default,,0,0,0,,bank khud yeh option de raha
+Dialogue: 0,0:02:26.44,0:02:26.65,Default,,0,0,0,,hai.
+Dialogue: 0,0:02:26.65,0:02:28.06,Default,,0,0,0,,Toh zaroor safe hoga.
+Dialogue: 0,0:02:28.51,0:02:30.13,Default,,0,0,0,,Aur logic samajh bhi aata hai.
+Dialogue: 0,0:02:30.13,0:02:31.57,Default,,0,0,0,,Papa hamesha kehte the,
+Dialogue: 0,0:02:31.57,0:02:32.65,Default,,0,0,0,,kist time par bharo,
+Dialogue: 0,0:02:32.65,0:02:33.91,Default,,0,0,0,,record achha rahega.
+Dialogue: 0,0:02:33.91,0:02:34.63,Default,,0,0,0,,Bhai ne socha,
+Dialogue: 0,0:02:34.63,0:02:36.25,Default,,0,0,0,,minimum bhi toh time par bhar
+Dialogue: 0,0:02:36.25,0:02:36.79,Default,,0,0,0,,raha hoon.
+Dialogue: 0,0:02:36.79,0:02:38.95,Default,,0,0,0,,Baaki paisa agle mahine de dunga.
+Dialogue: 0,0:02:38.95,0:02:40.03,Default,,0,0,0,,Isme galat kya hai?
+Dialogue: 0,0:02:40.48,0:02:42.16,Default,,0,0,0,,Galat woh hai jo app bada
+Dialogue: 0,0:02:42.16,0:02:43.42,Default,,0,0,0,,karke nahi likhti.
+Dialogue: 0,0:02:43.42,0:02:45.52,Default,,0,0,0,,Jaise hi poora bill nahi bhara,
+Dialogue: 0,0:02:45.52,0:02:47.21,Default,,0,0,0,,muft udhaar ka samay khatam.
+Dialogue: 0,0:02:47.21,0:02:48.89,Default,,0,0,0,,Sirf baaki paise par nahi,
+Dialogue: 0,0:02:48.89,0:02:50.57,Default,,0,0,0,,poore bill par byaaj lagta hai.
+Dialogue: 0,0:02:50.57,0:02:52.67,Default,,0,0,0,,Aur aksar kharidaari ke din se
+Dialogue: 0,0:02:52.67,0:02:52.88,Default,,0,0,0,,hi.
+Dialogue: 0,0:02:53.33,0:02:55.25,Default,,0,0,0,,Matlab Bhai ne jo socha tha,
+Dialogue: 0,0:02:55.25,0:02:55.98,Default,,0,0,0,,ulta hua.
+Dialogue: 0,0:02:55.98,0:02:57.18,Default,,0,0,0,,Usne socha tha,
+Dialogue: 0,0:02:57.18,0:02:59.83,Default,,0,0,0,,baaki rakam par thoda byaaj lagega.
+Dialogue: 0,0:02:59.83,0:03:01.75,Default,,0,0,0,,Asal mein naye kharche par bhi
+Dialogue: 0,0:03:01.75,0:03:03.44,Default,,0,0,0,,muft samay nahi milta.
+Dialogue: 0,0:03:03.44,0:03:05.60,Default,,0,0,0,,Jab tak purana bill saaf nahi,
+Dialogue: 0,0:03:05.60,0:03:07.53,Default,,0,0,0,,har nayi swipe par seedha byaaj.
+Dialogue: 0,0:03:07.98,0:03:09.05,Default,,0,0,0,,Ab agla sawaal.
+Dialogue: 0,0:03:09.05,0:03:10.77,Default,,0,0,0,,Card ka byaaj itna bhaari kyun
+Dialogue: 0,0:03:10.77,0:03:10.99,Default,,0,0,0,,hai?
+Dialogue: 0,0:03:10.99,0:03:12.92,Default,,0,0,0,,Iske liye pehle Papa ki PPF
+Dialogue: 0,0:03:12.92,0:03:14.42,Default,,0,0,0,,wali soch samajhte hain.
+Dialogue: 0,0:03:14.42,0:03:16.57,Default,,0,0,0,,Kyunki wahi hamara normal hai,
+Dialogue: 0,0:03:16.57,0:03:17.86,Default,,0,0,0,,jis se hum har byaaj ko
+Dialogue: 0,0:03:17.86,0:03:18.50,Default,,0,0,0,,naapte hain.
+Dialogue: 0,0:03:18.95,0:03:21.33,Default,,0,0,0,,Papa ki almari mein PPF ki
+Dialogue: 0,0:03:21.33,0:03:22.12,Default,,0,0,0,,passbook hai.
+Dialogue: 0,0:03:22.12,0:03:24.24,Default,,0,0,0,,PPF par lagbhag 7.1 percent saal
+Dialogue: 0,0:03:24.24,0:03:25.56,Default,,0,0,0,,ka byaaj milta hai.
+Dialogue: 0,0:03:25.56,0:03:28.48,Default,,0,0,0,,Papa ise achha return maante hain.
+Dialogue: 0,0:03:28.48,0:03:29.80,Default,,0,0,0,,Ab ulta socho.
+Dialogue: 0,0:03:29.80,0:03:31.92,Default,,0,0,0,,Card par aap byaaj lete nahi,
+Dialogue: 0,0:03:31.92,0:03:32.71,Default,,0,0,0,,dete ho.
+Dialogue: 0,0:03:33.16,0:03:34.61,Default,,0,0,0,,Aur card ka byaaj PPF wale
+Dialogue: 0,0:03:34.61,0:03:36.27,Default,,0,0,0,,byaaj se kai guna hota hai.
+Dialogue: 0,0:03:36.27,0:03:38.55,Default,,0,0,0,,Statement mein yeh mahine ke hisaab
+Dialogue: 0,0:03:38.55,0:03:39.80,Default,,0,0,0,,se likha hota hai.
+Dialogue: 0,0:03:39.80,0:03:41.67,Default,,0,0,0,,Mahine ka chhota sa percent,
+Dialogue: 0,0:03:41.67,0:03:43.32,Default,,0,0,0,,sunne mein halka lagta hai.
+Dialogue: 0,0:03:43.32,0:03:44.78,Default,,0,0,0,,Saal bhar jodo toh aankh khul
+Dialogue: 0,0:03:44.78,0:03:45.40,Default,,0,0,0,,jaati hai.
+Dialogue: 0,0:03:45.85,0:03:47.85,Default,,0,0,0,,Upar se yeh byaaj compounding wala
+Dialogue: 0,0:03:47.85,0:03:48.05,Default,,0,0,0,,hai.
+Dialogue: 0,0:03:48.05,0:03:49.85,Default,,0,0,0,,Compounding yaani byaaj par bhi byaaj.
+Dialogue: 0,0:03:49.85,0:03:51.45,Default,,0,0,0,,Is mahine jo byaaj laga,
+Dialogue: 0,0:03:51.45,0:03:53.25,Default,,0,0,0,,woh agle mahine bill mein jud
+Dialogue: 0,0:03:53.25,0:03:53.45,Default,,0,0,0,,gaya.
+Dialogue: 0,0:03:53.45,0:03:55.45,Default,,0,0,0,,Agle mahine byaaj us bade bill
+Dialogue: 0,0:03:55.45,0:03:56.25,Default,,0,0,0,,par lagega.
+Dialogue: 0,0:03:56.25,0:03:58.25,Default,,0,0,0,,Bill har mahine thoda phool jaata
+Dialogue: 0,0:03:58.25,0:03:58.45,Default,,0,0,0,,hai.
+Dialogue: 0,0:03:58.90,0:04:00.41,Default,,0,0,0,,Socho karz ek balti hai,
+Dialogue: 0,0:04:00.41,0:04:02.57,Default,,0,0,0,,jise aap khaali karna chahte ho.
+Dialogue: 0,0:04:02.57,0:04:04.73,Default,,0,0,0,,Aap har mahine ek lota paani
+Dialogue: 0,0:04:04.73,0:04:05.60,Default,,0,0,0,,nikaalte ho.
+Dialogue: 0,0:04:05.60,0:04:07.32,Default,,0,0,0,,Par upar se nal khula hai,
+Dialogue: 0,0:04:07.32,0:04:07.97,Default,,0,0,0,,byaaj ka nal.
+Dialogue: 0,0:04:07.97,0:04:09.05,Default,,0,0,0,,Jitna nikaalo,
+Dialogue: 0,0:04:09.05,0:04:10.78,Default,,0,0,0,,utna wapas aa jaata hai.
+Dialogue: 0,0:04:10.78,0:04:12.94,Default,,0,0,0,,Balti kabhi khaali nahi hoti.
+Dialogue: 0,0:04:13.39,0:04:15.89,Default,,0,0,0,,Aur abhi kahani khatam nahi hui.
+Dialogue: 0,0:04:15.89,0:04:17.48,Default,,0,0,0,,Byaaj aur fees par sarkar GST
+Dialogue: 0,0:04:17.48,0:04:18.39,Default,,0,0,0,,bhi leti hai.
+Dialogue: 0,0:04:18.39,0:04:20.89,Default,,0,0,0,,GST yaani services par lagne wala
+Dialogue: 0,0:04:20.89,0:04:21.12,Default,,0,0,0,,tax.
+Dialogue: 0,0:04:21.12,0:04:22.49,Default,,0,0,0,,Card ke byaaj aur fees par
+Dialogue: 0,0:04:22.49,0:04:23.85,Default,,0,0,0,,yeh 18 percent hai.
+Dialogue: 0,0:04:23.85,0:04:25.67,Default,,0,0,0,,Yaani byaaj ke upar bhi tax.
+Dialogue: 0,0:04:26.12,0:04:28.29,Default,,0,0,0,,Ab Bhai ke statement ki lines
+Dialogue: 0,0:04:28.29,0:04:28.77,Default,,0,0,0,,padhiye.
+Dialogue: 0,0:04:28.77,0:04:29.98,Default,,0,0,0,,Finance charges,
+Dialogue: 0,0:04:29.98,0:04:30.70,Default,,0,0,0,,yaani byaaj.
+Dialogue: 0,0:04:30.70,0:04:31.91,Default,,0,0,0,,Uske neeche GST.
+Dialogue: 0,0:04:31.91,0:04:33.12,Default,,0,0,0,,Kabhi late fees,
+Dialogue: 0,0:04:33.12,0:04:34.08,Default,,0,0,0,,uspar phir GST.
+Dialogue: 0,0:04:34.08,0:04:36.01,Default,,0,0,0,,Bhai ko laga tha woh phone
+Dialogue: 0,0:04:36.01,0:04:37.94,Default,,0,0,0,,ki keemat chuka raha hai.
+Dialogue: 0,0:04:37.94,0:04:39.63,Default,,0,0,0,,Asal mein woh byaaj aur tax
+Dialogue: 0,0:04:39.63,0:04:40.84,Default,,0,0,0,,chuka raha tha.
+Dialogue: 0,0:04:41.29,0:04:43.45,Default,,0,0,0,,Phir ek mahine salary der se
+Dialogue: 0,0:04:43.45,0:04:43.67,Default,,0,0,0,,aayi.
+Dialogue: 0,0:04:43.67,0:04:45.40,Default,,0,0,0,,Minimum due bhi miss ho gaya.
+Dialogue: 0,0:04:45.40,0:04:46.70,Default,,0,0,0,,Ab late fees lagi,
+Dialogue: 0,0:04:46.70,0:04:47.78,Default,,0,0,0,,uspar GST laga,
+Dialogue: 0,0:04:47.78,0:04:49.29,Default,,0,0,0,,aur byaaj toh chal hi raha
+Dialogue: 0,0:04:49.29,0:04:49.51,Default,,0,0,0,,tha.
+Dialogue: 0,0:04:49.51,0:04:51.02,Default,,0,0,0,,Thodi si der ne bill aur
+Dialogue: 0,0:04:51.02,0:04:51.89,Default,,0,0,0,,bada kar diya.
+Dialogue: 0,0:04:52.34,0:04:53.91,Default,,0,0,0,,Aur ek cheez chupchaap hoti hai.
+Dialogue: 0,0:04:53.91,0:04:56.07,Default,,0,0,0,,Late payment aapke credit score mein
+Dialogue: 0,0:04:56.07,0:04:57.25,Default,,0,0,0,,record ho jaata hai.
+Dialogue: 0,0:04:57.25,0:04:59.61,Default,,0,0,0,,Credit score yaani aapki udhaar wali
+Dialogue: 0,0:04:59.61,0:05:00.20,Default,,0,0,0,,report card.
+Dialogue: 0,0:05:00.20,0:05:01.58,Default,,0,0,0,,Kal ko home loan ya car
+Dialogue: 0,0:05:01.58,0:05:02.36,Default,,0,0,0,,loan lena ho,
+Dialogue: 0,0:05:02.36,0:05:03.74,Default,,0,0,0,,toh bank yahi dekhta hai.
+Dialogue: 0,0:05:04.19,0:05:05.60,Default,,0,0,0,,Ab sabse bada sawaal.
+Dialogue: 0,0:05:05.60,0:05:07.60,Default,,0,0,0,,Bhai har mahine paisa bhar raha
+Dialogue: 0,0:05:07.60,0:05:07.80,Default,,0,0,0,,hai.
+Dialogue: 0,0:05:07.80,0:05:09.41,Default,,0,0,0,,Phir bhi bill khatam kyun nahi
+Dialogue: 0,0:05:09.41,0:05:09.81,Default,,0,0,0,,hota?
+Dialogue: 0,0:05:09.81,0:05:11.62,Default,,0,0,0,,Iska jawaab chhupa hai is baat
+Dialogue: 0,0:05:11.62,0:05:11.82,Default,,0,0,0,,mein,
+Dialogue: 0,0:05:11.82,0:05:13.83,Default,,0,0,0,,ki aapka bhara hua paisa jaata
+Dialogue: 0,0:05:13.83,0:05:14.43,Default,,0,0,0,,kahan hai.
+Dialogue: 0,0:05:14.88,0:05:16.51,Default,,0,0,0,,Jab aap minimum due bharte ho,
+Dialogue: 0,0:05:16.51,0:05:18.50,Default,,0,0,0,,bank pehle apna hissa kaatata hai.
+Dialogue: 0,0:05:18.50,0:05:19.05,Default,,0,0,0,,Pehle tax,
+Dialogue: 0,0:05:19.05,0:05:19.41,Default,,0,0,0,,phir fees,
+Dialogue: 0,0:05:19.41,0:05:19.77,Default,,0,0,0,,phir byaaj.
+Dialogue: 0,0:05:19.77,0:05:20.50,Default,,0,0,0,,Jo bachta hai,
+Dialogue: 0,0:05:20.50,0:05:22.31,Default,,0,0,0,,wahi asli udhaar se kam hota
+Dialogue: 0,0:05:22.31,0:05:22.49,Default,,0,0,0,,hai.
+Dialogue: 0,0:05:22.49,0:05:24.49,Default,,0,0,0,,Asli udhaar ko principal kehte hain,
+Dialogue: 0,0:05:24.49,0:05:26.30,Default,,0,0,0,,yaani jo aapne asal mein kharcha
+Dialogue: 0,0:05:26.30,0:05:26.48,Default,,0,0,0,,tha.
+Dialogue: 0,0:05:26.93,0:05:28.38,Default,,0,0,0,,Minimum due chhota hai,
+Dialogue: 0,0:05:28.38,0:05:29.84,Default,,0,0,0,,aur byaaj ka hissa bada.
+Dialogue: 0,0:05:29.84,0:05:31.91,Default,,0,0,0,,Toh principal mein har mahine bas
+Dialogue: 0,0:05:31.91,0:05:33.37,Default,,0,0,0,,thoda farak padta hai.
+Dialogue: 0,0:05:33.37,0:05:35.23,Default,,0,0,0,,Jaise aap treadmill par daud rahe
+Dialogue: 0,0:05:35.23,0:05:35.44,Default,,0,0,0,,ho.
+Dialogue: 0,0:05:35.44,0:05:37.31,Default,,0,0,0,,Paseena poora aa raha hai,
+Dialogue: 0,0:05:37.31,0:05:38.97,Default,,0,0,0,,par jagah wahi ki wahi.
+Dialogue: 0,0:05:39.42,0:05:41.10,Default,,0,0,0,,Kuch banks statement mein yeh bhi
+Dialogue: 0,0:05:41.10,0:05:41.94,Default,,0,0,0,,batate hain,
+Dialogue: 0,0:05:41.94,0:05:44.05,Default,,0,0,0,,ki sirf minimum bharoge toh bill
+Dialogue: 0,0:05:44.05,0:05:45.10,Default,,0,0,0,,kab khatam hoga.
+Dialogue: 0,0:05:45.10,0:05:46.78,Default,,0,0,0,,Bhai ne woh line pehli baar
+Dialogue: 0,0:05:46.78,0:05:47.62,Default,,0,0,0,,dhyan se padhi.
+Dialogue: 0,0:05:47.62,0:05:49.52,Default,,0,0,0,,Jawaab mahino mein nahi tha.
+Dialogue: 0,0:05:49.52,0:05:50.78,Default,,0,0,0,,Jawaab saalon mein tha.
+Dialogue: 0,0:05:51.23,0:05:51.67,Default,,0,0,0,,Socho,
+Dialogue: 0,0:05:51.67,0:05:53.20,Default,,0,0,0,,ek phone jo kuch saal mein
+Dialogue: 0,0:05:53.20,0:05:54.52,Default,,0,0,0,,purana ho jaayega.
+Dialogue: 0,0:05:54.52,0:05:56.49,Default,,0,0,0,,Uska karz shayad usse bhi lamba
+Dialogue: 0,0:05:56.49,0:05:57.15,Default,,0,0,0,,chalega.
+Dialogue: 0,0:05:57.15,0:05:58.47,Default,,0,0,0,,Naya phone aa jaayega,
+Dialogue: 0,0:05:58.47,0:06:00.66,Default,,0,0,0,,aur purane phone ki kist abhi
+Dialogue: 0,0:06:00.66,0:06:01.98,Default,,0,0,0,,bhi chal rahi hogi.
+Dialogue: 0,0:06:01.98,0:06:04.17,Default,,0,0,0,,Yahi hai minimum due ka asli
+Dialogue: 0,0:06:04.17,0:06:04.39,Default,,0,0,0,,jaal.
+Dialogue: 0,0:06:04.84,0:06:07.35,Default,,0,0,0,,Aur is beech zindagi rukti nahi.
+Dialogue: 0,0:06:07.35,0:06:09.87,Default,,0,0,0,,Agle mahine Mummy ki dawai,
+Dialogue: 0,0:06:09.87,0:06:10.62,Default,,0,0,0,,school ki fees,
+Dialogue: 0,0:06:10.62,0:06:11.87,Default,,0,0,0,,shaadi ka shagun.
+Dialogue: 0,0:06:11.87,0:06:13.88,Default,,0,0,0,,Thoda aur card par chala gaya.
+Dialogue: 0,0:06:13.88,0:06:15.89,Default,,0,0,0,,Purane bill par naya bill chadh
+Dialogue: 0,0:06:15.89,0:06:16.14,Default,,0,0,0,,gaya.
+Dialogue: 0,0:06:16.14,0:06:18.66,Default,,0,0,0,,Ab minimum due bhi bada dikhne
+Dialogue: 0,0:06:18.66,0:06:19.16,Default,,0,0,0,,laga.
+Dialogue: 0,0:06:19.61,0:06:21.67,Default,,0,0,0,,Mummy ne chai rakhte hue poocha,
+Dialogue: 0,0:06:21.67,0:06:22.12,Default,,0,0,0,,beta,
+Dialogue: 0,0:06:22.12,0:06:24.64,Default,,0,0,0,,har mahine paisa kahan ja raha
+Dialogue: 0,0:06:24.64,0:06:24.87,Default,,0,0,0,,hai?
+Dialogue: 0,0:06:24.87,0:06:26.70,Default,,0,0,0,,Bhai ke paas jawaab nahi tha.
+Dialogue: 0,0:06:26.70,0:06:28.07,Default,,0,0,0,,Salary aati thi,
+Dialogue: 0,0:06:28.07,0:06:29.90,Default,,0,0,0,,aur pehle hafte mein card mein
+Dialogue: 0,0:06:29.90,0:06:31.04,Default,,0,0,0,,chali jaati thi.
+Dialogue: 0,0:06:31.04,0:06:33.33,Default,,0,0,0,,Bachat dheere dheere khatam ho gayi.
+Dialogue: 0,0:06:33.78,0:06:35.66,Default,,0,0,0,,Yahi sabse badi keemat hai.
+Dialogue: 0,0:06:35.66,0:06:37.12,Default,,0,0,0,,Byaaj sirf bank ko nahi ja
+Dialogue: 0,0:06:37.12,0:06:37.53,Default,,0,0,0,,raha.
+Dialogue: 0,0:06:37.53,0:06:39.41,Default,,0,0,0,,Woh aapki bachat kha raha hai.
+Dialogue: 0,0:06:39.41,0:06:41.08,Default,,0,0,0,,Jo paisa SIP mein ja sakta
+Dialogue: 0,0:06:41.08,0:06:41.29,Default,,0,0,0,,tha,
+Dialogue: 0,0:06:41.29,0:06:43.17,Default,,0,0,0,,emergency fund ban sakta tha,
+Dialogue: 0,0:06:43.17,0:06:44.83,Default,,0,0,0,,woh har mahine byaaj mein ud
+Dialogue: 0,0:06:44.83,0:06:45.46,Default,,0,0,0,,raha hai.
+Dialogue: 0,0:06:45.91,0:06:47.20,Default,,0,0,0,,Toh galti kahan hui?
+Dialogue: 0,0:06:47.20,0:06:49.35,Default,,0,0,0,,Galti phone kharidna nahi thi.
+Dialogue: 0,0:06:49.35,0:06:51.28,Default,,0,0,0,,Galti thi minimum due ko bill
+Dialogue: 0,0:06:51.28,0:06:52.35,Default,,0,0,0,,bharna samajhna.
+Dialogue: 0,0:06:52.35,0:06:54.50,Default,,0,0,0,,Minimum due bill bharna nahi hai.
+Dialogue: 0,0:06:54.50,0:06:56.22,Default,,0,0,0,,Woh bas bank ko batana hai,
+Dialogue: 0,0:06:56.22,0:06:58.15,Default,,0,0,0,,ki main abhi bhaaga nahi hoon.
+Dialogue: 0,0:06:58.60,0:07:00.21,Default,,0,0,0,,Ab bahar kaise niklein?
+Dialogue: 0,0:07:00.21,0:07:01.59,Default,,0,0,0,,Sabse seedha raasta,
+Dialogue: 0,0:07:01.59,0:07:02.74,Default,,0,0,0,,poora bill bharo,
+Dialogue: 0,0:07:02.74,0:07:03.20,Default,,0,0,0,,har baar.
+Dialogue: 0,0:07:03.20,0:07:04.58,Default,,0,0,0,,Card utna hi chalao,
+Dialogue: 0,0:07:04.58,0:07:06.88,Default,,0,0,0,,jitna mahine ke end tak chuka
+Dialogue: 0,0:07:06.88,0:07:07.34,Default,,0,0,0,,sako.
+Dialogue: 0,0:07:07.34,0:07:08.95,Default,,0,0,0,,Tab woh 50 din tak ka
+Dialogue: 0,0:07:08.95,0:07:10.79,Default,,0,0,0,,muft udhaar sach mein aapke kaam
+Dialogue: 0,0:07:10.79,0:07:11.48,Default,,0,0,0,,aata hai.
+Dialogue: 0,0:07:11.93,0:07:13.71,Default,,0,0,0,,Agar bill bada hai aur ek
+Dialogue: 0,0:07:13.71,0:07:15.04,Default,,0,0,0,,saath nahi bhar sakte,
+Dialogue: 0,0:07:15.04,0:07:16.82,Default,,0,0,0,,toh use EMI mein badlo.
+Dialogue: 0,0:07:16.82,0:07:17.93,Default,,0,0,0,,Bank se baat karo,
+Dialogue: 0,0:07:17.93,0:07:19.49,Default,,0,0,0,,ya app mein option dhoondo.
+Dialogue: 0,0:07:19.49,0:07:21.05,Default,,0,0,0,,EMI yaani fixed kist,
+Dialogue: 0,0:07:21.05,0:07:21.94,Default,,0,0,0,,fixed samay.
+Dialogue: 0,0:07:21.94,0:07:22.83,Default,,0,0,0,,Byaaj aksar kam,
+Dialogue: 0,0:07:22.83,0:07:23.94,Default,,0,0,0,,aur end kab hoga,
+Dialogue: 0,0:07:23.94,0:07:25.05,Default,,0,0,0,,pehle se pata.
+Dialogue: 0,0:07:25.50,0:07:27.81,Default,,0,0,0,,Ek aur raasta hai balance transfer.
+Dialogue: 0,0:07:27.81,0:07:30.12,Default,,0,0,0,,Yaani purana bill kisi aur card
+Dialogue: 0,0:07:30.12,0:07:31.04,Default,,0,0,0,,par shift karna,
+Dialogue: 0,0:07:31.04,0:07:32.89,Default,,0,0,0,,jahan kuch samay kam byaaj ho.
+Dialogue: 0,0:07:32.89,0:07:34.74,Default,,0,0,0,,Iski fees aur sharten dhyan se
+Dialogue: 0,0:07:34.74,0:07:35.20,Default,,0,0,0,,padho.
+Dialogue: 0,0:07:35.20,0:07:37.04,Default,,0,0,0,,Warna ek jaal se nikal kar
+Dialogue: 0,0:07:37.04,0:07:38.66,Default,,0,0,0,,naye jaal mein pahunch jaoge.
+Dialogue: 0,0:07:39.11,0:07:40.98,Default,,0,0,0,,Ya phir personal loan lekar card
+Dialogue: 0,0:07:40.98,0:07:42.65,Default,,0,0,0,,ka poora bill ek saath chuka
+Dialogue: 0,0:07:42.65,0:07:42.85,Default,,0,0,0,,do.
+Dialogue: 0,0:07:42.85,0:07:44.52,Default,,0,0,0,,Personal loan ka byaaj bhi kam
+Dialogue: 0,0:07:44.52,0:07:45.35,Default,,0,0,0,,nahi hota,
+Dialogue: 0,0:07:45.35,0:07:47.22,Default,,0,0,0,,par aksar card se halka padta
+Dialogue: 0,0:07:47.22,0:07:47.43,Default,,0,0,0,,hai.
+Dialogue: 0,0:07:47.43,0:07:48.68,Default,,0,0,0,,Aur loan ke baad card ko
+Dialogue: 0,0:07:48.68,0:07:50.55,Default,,0,0,0,,phir se bharna shuru mat karo.
+Dialogue: 0,0:07:51.00,0:07:52.56,Default,,0,0,0,,Ek chhoti si aadat bhi kaam
+Dialogue: 0,0:07:52.56,0:07:53.15,Default,,0,0,0,,aati hai.
+Dialogue: 0,0:07:53.15,0:07:55.11,Default,,0,0,0,,Card ka auto-debit poore bill par
+Dialogue: 0,0:07:55.11,0:07:55.50,Default,,0,0,0,,lagao,
+Dialogue: 0,0:07:55.50,0:07:56.67,Default,,0,0,0,,minimum par nahi.
+Dialogue: 0,0:07:56.67,0:07:58.04,Default,,0,0,0,,Behen yahi karti hai,
+Dialogue: 0,0:07:58.04,0:07:59.41,Default,,0,0,0,,uska card suvidha hai,
+Dialogue: 0,0:07:59.41,0:07:60.00,Default,,0,0,0,,karz nahi.
+Dialogue: 0,0:07:60.00,0:08:01.95,Default,,0,0,0,,Yeh investment advice nahi hai,
+Dialogue: 0,0:08:01.95,0:08:03.52,Default,,0,0,0,,bas hisaab ki seedhi baat hai.
+Dialogue: 0,0:08:03.97,0:08:05.68,Default,,0,0,0,,Kahani ka nichod yeh hai.
+Dialogue: 0,0:08:05.68,0:08:07.61,Default,,0,0,0,,Minimum due ek suvidha hai,
+Dialogue: 0,0:08:07.61,0:08:08.47,Default,,0,0,0,,raasta nahi.
+Dialogue: 0,0:08:08.47,0:08:10.82,Default,,0,0,0,,Woh aaj ki pareshani se bachata
+Dialogue: 0,0:08:10.82,0:08:11.04,Default,,0,0,0,,hai,
+Dialogue: 0,0:08:11.04,0:08:12.54,Default,,0,0,0,,par kal ka bill bada kar
+Dialogue: 0,0:08:12.54,0:08:13.18,Default,,0,0,0,,deta hai.
+Dialogue: 0,0:08:13.18,0:08:15.11,Default,,0,0,0,,Jis din poora bill bharna mushkil
+Dialogue: 0,0:08:15.11,0:08:15.54,Default,,0,0,0,,lage,
+Dialogue: 0,0:08:15.54,0:08:16.39,Default,,0,0,0,,raasta badlo,
+Dialogue: 0,0:08:16.39,0:08:17.25,Default,,0,0,0,,button nahi.
+Dialogue: 0,0:08:17.70,0:08:19.64,Default,,0,0,0,,Agli video mein ek aur jaal
+Dialogue: 0,0:08:19.64,0:08:20.37,Default,,0,0,0,,kholenge,
+Dialogue: 0,0:08:20.37,0:08:22.56,Default,,0,0,0,,jo is festive season mein har
+Dialogue: 0,0:08:22.56,0:08:23.77,Default,,0,0,0,,jagah dikhta hai.
+Dialogue: 0,0:08:23.77,0:08:24.74,Default,,0,0,0,,No cost EMI.
+Dialogue: 0,0:08:24.74,0:08:26.20,Default,,0,0,0,,Kya woh sach mein no cost
+Dialogue: 0,0:08:26.20,0:08:26.93,Default,,0,0,0,,hota hai?
+Dialogue: 0,0:08:26.93,0:08:29.11,Default,,0,0,0,,Tab tak apna card statement dhyan
+Dialogue: 0,0:08:29.11,0:08:29.84,Default,,0,0,0,,se padhiye,
+Dialogue: 0,0:08:29.84,0:08:31.30,Default,,0,0,0,,khaaskar chhote akshar.
+Dialogue: 0,0:08:31.75,0:08:32.56,Default,,0,0,0,,Ab aap batao,
+Dialogue: 0,0:08:32.56,0:08:33.98,Default,,0,0,0,,comments mein seedha jawaab.
+Dialogue: 0,0:08:33.98,0:08:36.22,Default,,0,0,0,,Aapne kabhi sirf minimum due bhara
+Dialogue: 0,0:08:36.22,0:08:36.42,Default,,0,0,0,,hai?
+Dialogue: 0,0:08:36.42,0:08:37.03,Default,,0,0,0,,Haan ya na,
+Dialogue: 0,0:08:37.03,0:08:38.04,Default,,0,0,0,,bas itna likh do.
+Dialogue: 0,0:08:38.04,0:08:40.28,Default,,0,0,0,,Kisi ki aisi kahani pata ho,
+Dialogue: 0,0:08:40.28,0:08:41.29,Default,,0,0,0,,toh woh bhi likhna,
+Dialogue: 0,0:08:41.29,0:08:42.51,Default,,0,0,0,,doosron ke kaam aayegi.

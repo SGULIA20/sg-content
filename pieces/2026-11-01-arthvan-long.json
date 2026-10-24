@@ -1,0 +1,571 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "According to Skanda Purana, the temple is one of the divyakshetras, an important pilgrimage site of Lord Shiva.",
+   "source_date": "1950",
+   "source_name": "Skanda Purana",
+   "source_url": "https://en.wikipedia.org/wiki/Veerabhadra_Temple,_Lepakshi",
+   "text": "The Skanda Purana identifies the holy geography of Lepakshi as a divyakshetra, designating it as a prominent sacred pilgrimage center dedicated to Shiva.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "Accused of depleting the royal treasury under erroneous counsel, Virupanna, foreseeing his impending fate, resorted to a drastic act of self-sacrifice. Plucking out his own eyes, he cast them against the temple's walls, where they left indelible marks",
+   "source_date": "2023-10-30",
+   "source_name": "Local Folklore",
+   "source_url": "https://en.wikipedia.org/wiki/Veerabhadra_Temple,_Lepakshi",
+   "text": "According to regional folklore, the builder Virupanna plucked out his own eyes and cast them against the temple wall after royal ministers falsely accused him of embezzling treasury funds to build the temple.",
+   "unit": null
+  }
+ ],
+ "id": "2026-11-01-arthvan-long",
+ "ids": {
+  "yt_id": "blOqODdoAVI"
+ },
+ "kind": "long",
+ "publish_day": "2026-11-01",
+ "reasons": [
+  "try 1: numbers without a source: 70, 16, 70, 70, 70, 70, 70, 16, 70, 16",
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Lepakshi ka latakta khamba, asal mein kone se zameen ko chhoota hai.\nVijayanagara ke kaarigaron ne aisi chhat banayi jo bojh saare khambon par baant deti hai.\nAngrez engineer wali kahani? Uska koi pukhta sabut nahi.\nAapko kya lagta hai, iraada tha ya zameen ka asar?\nUs dost ko bhejo jo kehta hai Lepakshi ka khamba hawa mein tairta hai.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#IndianHistory",
+     "#Archaeology",
+     "#AncientIndia",
+     "#Itihaas",
+     "#Rahasya",
+     "#Mythology",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Lepakshi ka latakta khamba poora hawa mein nahi, kone se zameen ko chhoota hai. Chhat ka bojh khambon ke jaal par bant jaata hai. Sawaal: yeh kaarigaron ka iraada tha, ya zameen ke baithne ka asar? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Khamba sach mein hawa mein?",
+     "00:00 Skanda Purana aur Lepakshi ki katha",
+     "00:00 Khambe ki jaanch",
+     "00:00 Patthar ki engineering",
+     "00:00 Jaankaron ki behas",
+     "00:00 Angrez engineer ki kahani",
+     "00:00 Jo abhi tak pata nahi",
+     "00:00 Aaj Lepakshi mein kya dekhein",
+     "00:00 Sawaal aur agla safar: Hampi"
+    ],
+    "description": "Lepakshi ka latakta khamba asal mein zameen ko chhoota hai, bas kone se. Is video mein Skanda Purana ki katha, Virupanna ki lok katha, aur Vijayanagara kaarigaron ki corbelled dry-stone chhat ka vigyan, sab sabut ke saath. Jaankar abhi bhi bante hain ki khamba jaan boojh kar latkaya gaya ya zameen ke baithne se khisak gaya. Us dost ko bhejo jo kehta hai Lepakshi ka khamba hawa mein tairta hai.",
+    "tags": [
+     "Lepakshi",
+     "hanging pillar",
+     "Veerabhadra temple",
+     "Vijayanagara",
+     "Andhra Pradesh",
+     "Skanda Purana",
+     "Virupanna",
+     "ancient engineering",
+     "Indian history",
+     "archaeology",
+     "mandir rahasya",
+     "Sabut ke saath"
+    ],
+    "title": "Lepakshi Hanging Pillar: kya hawa mein hai?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Aapko kya lagta hai, yeh khamba kaarigaron ka iraada tha, ya zameen ke baithne ka asar?",
+  "hook": "Lepakshi ka mashhoor latakta khamba, asal mein poora hawa mein nahi hai.",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: close view of the base of a carved granite pillar inside an old stone temple hall, a thin cloth sliding beneath it, one corner of the pillar barely resting on the floor, warm lamp light, mood of mystery",
+     "type": "art"
+    },
+    "vo": "Lepakshi ka mashhoor latakta khamba, asal mein poora hawa mein nahi hai. Jaanch mein paaya gaya ki iska bas kona zameen ko chhoota hai. Phir bhi log uske neeche se kapda nikaal dete hain. Toh yeh chamatkar hai, galti hai, ya kamaal ki engineering?"
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: wide view of a grand stone temple hall with rows of carved pillars holding a flat stone roof, one pillar slightly lifted from the floor, pilgrims pointing at it in wonder, soft morning light",
+     "type": "art"
+    },
+    "vo": "Andhra Pradesh ke Lepakshi gaon mein Veerabhadra mandir khada hai. Iske khambon wale hall mein, baaki khambe chhat ko sambhaale khade hain. Lekin unke beech yeh khamba alag dikhta hai. Log kehte hain yeh khamba hawa mein latakta hai, jaise kisi ne use upar utha liya ho."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "explaining_front",
+     "type": "avatar"
+    },
+    "vo": "Is video mein hum sabut ke saath chalenge. Shuru mein dekhenge ki granth kya kehta hai. Phir dekhenge jaanch mein kya mila, jaankar kahan alag raay rakhte hain, aur kya abhi tak koi nahi jaanta. Aakhir mein, aap wahan jaakar kya dekh sakte hain."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Kahani shuru hoti hai Skanda Purana se. Purana yaani prachin granth, jismein devtaon, teerthon aur jagahon ki kathayein likhi hain. Is granth mein Lepakshi ka naam aata hai, aur bade aadar ke saath aata hai. Yahin se is jagah ki pavitrata ki neev padti hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: an old palm-leaf manuscript open on a wooden stand beside an oil lamp, behind it a distant hill village with a stone temple, pilgrims walking on a dusty path at dawn, reverent mood",
+     "type": "art"
+    },
+    "vo": "Skanda Purana ke mutabik, Lepakshi divyakshetron mein se hai. Divyakshetra yaani aisi pavitra bhoomi, jahan devta ki khaas upasthiti maani jaati hai. Yeh jagah Bhagwan Shiv ke mahatvapurna teerthon mein gini jaati hai. Isliye yahan sadiyon se shraddhalu aate rahe hain."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: seen from far behind a group of pilgrims with folded hands, a dim inner sanctum with a stone statue lit by small oil lamps at a distance, incense smoke curling, devotional mood",
+     "type": "art"
+    },
+    "vo": "Yeh mandir Veerabhadra ko samarpit hai. Puranon ki kathaon mein Veerabhadra, Shiv ka ugra roop maane jaate hain. Garbhagriha mein door se patthar ki moorti dikhti hai, deep ki roshni mein. Shraddhalu haath jode khade hain, aur hawa mein agarbatti ki khushboo hai."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: a huge wounded eagle-like bird lying on rocky ground at dusk, a robed figure seen from behind kneeling beside it at a distance, golden sky, tender mood",
+     "type": "art"
+    },
+    "vo": "Gaon ke naam ke peeche bhi kahani hai. Lok katha kehti hai, Ramayan mein ghayal Jatayu pakshi yahin gire the. Shri Ram ne kaha, 'Le Pakshi', yaani utho pakshi. Wahi shabd, kehte hain, aage chalkar is gaon ka naam Lepakshi ban gaya."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: a royal court of an old South Indian kingdom, stern ministers pointing accusingly at a worried man in simple clothes standing beside chests of coins, oil lamps, tense mood",
+     "type": "art"
+    },
+    "vo": "Ab aate hain mandir banwane wale Virupanna par. Lok katha ke mutabik, raja ke mantriyon ne un par ilzaam lagaya. Ilzaam tha ki unhone shahi khazane ka paisa mandir par uda diya. Yeh ilzaam, kahani kehti hai, jhootha tha, aur galat salaah par lagaya gaya tha."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: an old stone temple wall at twilight with two faint reddish stains, a grandmother pointing at them while children listen wide-eyed, sombre mood, nothing graphic",
+     "type": "art"
+    },
+    "vo": "Kahani aage kehti hai, sazaa ka andaza lagakar Virupanna ne khud apni aankhein nikaal di. Unhone unhe mandir ki deewar par phenk diya. Aaj bhi deewar par laal se nishaan dikhaye jaate hain. Log inhe Virupanna ki aankhon ke nishaan kehte hain."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab kahani se sabut ki taraf chalte hain. Sawaal seedha hai, kya yeh khamba sach mein hawa mein hai? Iske liye humein khambe ko dhyaan se dekhna hoga. Aur samajhna hoga ki yeh mandir aur iski chhat bani kaise."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: stonemasons of an old South Indian kingdom carving granite blocks with chisels and hammers in an open yard, half-finished pillars around them, dust in sunlight, busy mood",
+     "type": "art"
+    },
+    "vo": "Yeh mandir Vijayanagara samrajya ke daur ka hai. Vijayanagara yaani dakshin Bharat ka bada samrajya, jiski rajdhani Hampi thi. Is samrajya ke kaarigar patthar ke kaam mein mashhoor the. Unke mandir aaj bhi apni barik nakkashi ke liye jaane jaate hain."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: close view of a rough grey granite block being split with wooden wedges by workers, heavy ropes and wooden rollers nearby, hot afternoon, effortful mood",
+     "type": "art"
+    },
+    "vo": "Khamba granite ka bana hai. Granite yaani bahut sakht aur bhaari patthar, jo dakshin Bharat mein khoob milta hai. Is patthar ko kaatna aur tarashna aasan kaam nahi tha. Aur jab patthar itna bhaari ho, toh use hawa mein tikana aur bhi mushkil lagta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: inside a pillared stone hall, pillars carved with dancers and musicians, light falling between them, a few visitors looking up in awe, calm mood",
+     "type": "art"
+    },
+    "vo": "Yeh khamba mandap mein hai. Mandap yaani khambon par tika khula hall, jahan log baithte aur utsav hote. Lepakshi ke is mandap mein bahut saare khambe hain. Khambon par nartakiyon, sangeetkaaron aur devtaon ki nakkashi hai, jo dekhne mein jeevit lagti hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: an archaeologist kneeling on a stone floor with a torch and measuring tape, peering at the base of a carved pillar where one corner barely touches the floor, focused mood",
+     "type": "art"
+    },
+    "vo": "Ab sabse zaroori sabut. Jab khambe ki physical jaanch hui, yaani use paas se naapa aur dekha gaya, toh tasveer badal gayi. Khamba poori tarah hawa mein nahi hai. Iska kona, halka sa, zameen ko chhoota hai. Yahi is raaz ki pehli chaabi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: a pilgrim's hands pulling a thin cloth under a stone pillar, the cloth stopping near one corner where stone meets floor, magnifying-glass style inset of the contact point, curious mood",
+     "type": "art"
+    },
+    "vo": "Socho, jab aap kapda neeche se nikaalte ho, toh woh zyaadatar hisse ke neeche se nikal jaata hai. Isliye lagta hai khamba latak raha hai. Lekin kone par patthar aur zameen ka sampark bana rehta hai. Bhram yahin se paida hota hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: a heritage conservator in a plain uniform gently inspecting temple pillars with a notebook, protective barrier ropes around the hall, respectful mood, no text or logos",
+     "type": "art"
+    },
+    "vo": "Archaeological Survey of India, yaani ASI, desh ke purane smarakon ki dekhbhaal karti hai. Lepakshi ka Veerabhadra mandir bhi ASI ki suraksha mein hai. Isliye khambe ko todna ya hilana aaj mana hai. Jaanch bhi bahut sambhal kar, bina nuksaan ke hoti hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: a simple hand-drawn diagram style scene of a stone pillar with a soft downward arrow of gravity drawn as a glowing line, the pillar corner touching the floor, a child staring in surprise, no text",
+     "type": "art"
+    },
+    "vo": "Toh sabse bada sabut yeh hai ki khamba gravity ko chunauti nahi deta. Gravity yaani woh khinchav, jo har cheez ko zameen ki taraf kheenchta hai. Khamba zameen ko chhoota hai, bas itna kam ki aankh dhokha kha jaati hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: looking up at a heavy stone roof of a temple hall made of layered slabs resting on beams and pillars, an archaeologist pointing upward, thoughtful mood",
+     "type": "art"
+    },
+    "vo": "Ab sawaal aata hai, agar khamba poora bojh nahi uthata, toh chhat kaise tiki hai? Jawab chhat ki banawat mein chhupa hai. Is mandap ki chhat corbelled hai, aur dry-stone tareeke se bani hai. Chaliye in shabdon ko aasan bhasha mein samajhte hain."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style cutaway panel, 16:9: stone layers stepping inward one above another to meet in the middle, soft arrows showing weight flowing sideways to supporting pillars, workers placing a slab with ropes, no text",
+     "type": "art"
+    },
+    "vo": "Corbel yaani patthar ke upar patthar, har parat thodi aage nikal kar rakhna. Aise parat dar parat, patthar beech mein aakar mil jaate hain. Isse chhat ka vazan seedha neeche girne ki bajaye, bagal ke saharon par baant jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: a mason fitting two precisely cut granite blocks together without any mortar, the joint tight and clean, chisel in hand, satisfied mood",
+     "type": "art"
+    },
+    "vo": "Dry-stone yaani patthar jode gaye bina gare ya cement ke. Na choona, na masala, bas patthar ka patthar par sahi baithna. Kaarigar patthar ko itni barikee se tarashte the, ki woh apne vazan se hi aapas mein phans jaate the."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style top-down panel, 16:9: a grid of stone pillars connected by beams like a net, glowing lines spreading the roof weight across all of them, one pillar slightly lifted yet the roof stable, no text",
+     "type": "art"
+    },
+    "vo": "Ab socho, mandap ke saare khambe aapas mein jude jaal ki tarah kaam karte hain. Upar ki chhat in sab par bojh baant deti hai. Isliye kisi khambe ka thoda sa hatna, poori chhat ko nahi girata. Jaal mazboot ho, toh kamzor kadi bhi tiki rehti hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: an old master craftsman sketching a pillar plan with charcoal on a stone slab, apprentices watching, unfinished temple hall behind them, proud mood",
+     "type": "art"
+    },
+    "vo": "Yahi Vijayanagara kaarigaron ki asli kamaal ki baat hai. Unke paas aaj ke computer ya machine nahi the. Phir bhi unhone aisa dhancha banaya jo bojh ko barabar baant de. Latakta khamba isi dhanche ki jhalak hai, jo aaj bhi humein hairan karti hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style sequence-like panel, 16:9: workers using earthen ramps and ropes to lift roof slabs onto standing pillars, wooden scaffolding, oxen pulling a stone, industrious mood",
+     "type": "art"
+    },
+    "vo": "Toh banaya kaise gaya hoga? Sabse sambhavit tareeka yeh hai. Shuru mein khambe khade kiye gaye, phir upar beam aur chhat ke patthar rakhe gaye. Jab chhat poori judi, toh bojh saare jaal mein bant gaya. Tab kisi khambe ka neeche se thoda hatna bhi chhat ko girne nahi deta."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab aata hai sabse dilchasp hissa. Khamba zameen se thoda upar kyon hai? Is par jaankaron ki raay alag alag hai. Aur har paksh ke paas apna tark hai. Chaliye, sabut ke saath dono raayein suniye, bina jaldi faisla kiye."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: a proud stonemason standing beside a pillar he has deliberately left slightly raised, smiling as onlookers gasp, temple hall around them, playful mood",
+     "type": "art"
+    },
+    "vo": "Kuch jaankar kehte hain, yeh jaan boojh kar banaya gaya tha. Kaarigar apni kala dikhana chahte the. Woh batana chahte the ki unki chhat itni mazboot hai, ki khamba bina poore sahare ke bhi tika rahe. Yaani soch samajh kar banaya gaya ajooba."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style cutaway panel, 16:9: underground view beneath a temple floor showing soil slowly sinking unevenly, a pillar base drifting off its pedestal, a historian with a notebook examining it, analytical mood",
+     "type": "art"
+    },
+    "vo": "Baaki jaankar alag baat kehte hain. Unke hisaab se khamba shuru mein poori tarah zameen par tika tha. Phir samay ke saath neeche ki zameen asmaan roop se baith gayi. Ise neev ka baithna kehte hain, yaani zameen ka dheere dheere dabna."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: a temple hall at night with faint wavy lines in the air showing ground tremors, small dust falling from stone joints, a pillar shifting slightly, uneasy mood",
+     "type": "art"
+    },
+    "vo": "Is paksh ke paas aur bhi tark hai. Bhookamp ke halke jhatke, jinhe seismic tremors kehte hain, sadiyon mein kai baar aaye honge. Aise jhatke dheere dheere bhaari pattharon ko bhi hila sakte hain. Shayad isi se khamba apni jagah se sarak gaya."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: two scholars without names sitting on either side of the hanging pillar, one pointing at carvings, the other at the floor, friendly debate, lamp light",
+     "type": "art"
+    },
+    "vo": "Toh sabut wahi hai, par padhne ke tareeke alag hain. Kuch log ise kaarigaron ka iraada maante hain. Kuch ise samay aur zameen ka asar maante hain. Abhi tak koi paksh baaki ko poori tarah galat saabit nahi kar paaya hai."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: a young visitor sitting cross-legged in front of the pillar, chin on hand, thinking deeply, soft shafts of light through the hall, contemplative mood",
+     "type": "art"
+    },
+    "vo": "Aur yahan hum koi faisla nahi sunayenge. Aap khud socho, kya itne nipun kaarigar galti se aisa chhodte? Ya phir sadiyon ki zameen aur jhatkon ne apna khel khela? Har jawab apne aap mein dilchasp hai, aur har jawab kaarigaron ki mehnat dikhata hai."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab woh kahani, jo sabse zyada sunayi jaati hai. Kehte hain angrezon ke zamane mein, koi angrez engineer is raaz ko kholne aaya. Woh jaanna chahta tha ki chhat ko asal mein kaun sambhaal raha hai. Aur usne khambe ko hi pakad liya."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: a colonial-era engineer in a pith helmet and khaki, seen from behind, pushing a temple pillar with workers holding ropes, dust falling from the roof, dramatic mood",
+     "type": "art"
+    },
+    "vo": "Lok katha ke mutabik, usne khambe ko hatane ya hilane ki koshish ki. Khamba apni jagah se khisak gaya, aur tab se thoda tirchha latak raha hai. Kahani kehti hai, chhat hilne lagi aur engineer ne darr kar kaam rok diya."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: an archivist flipping through dusty old files and maps in a dim record room, finding nothing, a faded sketch of the temple on the table, puzzled mood",
+     "type": "art"
+    },
+    "vo": "Lekin dhyan dijiye, is kahani ka koi pukhta sabut nahi mila hai. Kisi engineer ne sach mein khambe ko chheda ya nahi, yeh aaj tak saabit nahi hua. Isliye hum ise legend ke khaane mein rakhte hain, itihaas ke khaane mein nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: the hanging pillar shown alone in a quiet empty hall at dusk, a single beam of light on it, question-like swirl of dust, mysterious mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab baat karte hain un sawaalon ki, jinke jawab abhi bhi adhure hain. Khamba jaan boojh kar latkaya gaya, ya baad mein khisak gaya? Is par aakhri faisla abhi baaki hai. Aur shayad naye sabut aane par hi yeh gutthi suljhegi."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: an engineer with a clipboard studying the roof, soft sideways arrows drawn as glowing lines pushing against pillars, half-finished calculations on chalk slate without readable text",
+     "type": "art"
+    },
+    "vo": "Aur bhi sawaal hai. Is mandap ki chhat bagal ke dhakke ko kitna jhel sakti hai, iska poora hisaab nahi hua. Bagal ka dhakka yaani lateral load, jo bhookamp ya tez hawa se patthar ko side mein dhakelta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: modern researchers placing small sensors gently on old pillars while an elder priest watches calmly, blend of old and new, hopeful mood",
+     "type": "art"
+    },
+    "vo": "Matlab, Vijayanagara ke kaarigaron ne kitni mazbooti haasil ki, yeh abhi tak poori tarah naapa nahi gaya. Shayad aage ki research ise kholegi. Tab tak yeh khamba sawaal bankar khada hai, ya kahein, sawaal bankar latka hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab aapke kaam ki baat. Agar aap Lepakshi jaana chahte hain, toh kya kya dekhein? Yeh gaon Andhra Pradesh mein hai, aur mandir aaj bhi poojit hai. Jaayein, toh shraddha aur mandir ke niyam ka poora dhyan rakhein."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: a family of visitors kneeling by the hanging pillar, a child pulling a cloth underneath while parents smile, other tourists waiting respectfully, cheerful mood",
+     "type": "art"
+    },
+    "vo": "Mandap mein jaakar latakta khamba dekhiye. Log aaj bhi uske neeche se kapda nikaalte hain, aur ise shubh maante hain. Yeh aastha ki parampara hai. Bas dhyan rahe, purane patthar ko dhakka ya nuksaan na pahunche, kyunki yeh dharohar sabki hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: a giant carved granite bull statue in a green open field near a stone temple, tiny visitors beside it for scale, painted temple ceiling inset above, sunny mood",
+     "type": "art"
+    },
+    "vo": "Deewar par Virupanna ki aankhon wale nishaan dhoondhiye. Chhat aur khambon ki rang birangi chitrakari dekhiye. Aur mandir ke paas granite se bani vishal Nandi ki moorti zaroor dekhiye, jo door se hi nazar aati hai."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel, 16:9: the whole pillared hall drawn as a calm wide shot at sunset, the hanging pillar in the centre, gentle glowing lines across the roof showing shared weight, peaceful mood",
+     "type": "art"
+    },
+    "vo": "Toh aakhir mein sabut kya kehta hai? Khamba hawa mein nahi, par lagbhag latakta hai. Chhat ka bojh khambon ke jaal par bant jaata hai. Aur yeh jaan boojh kar tha ya samay ka asar, yeh abhi bhi khula sawaal hai."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "end_smile",
+     "type": "avatar"
+    },
+    "vo": "Ab aapse seedha sawaal. Aapko kya lagta hai, yeh khamba kaarigaron ka iraada tha, ya zameen ke baithne ka asar? Comment mein bataiye. Agli baar hum chalenge Hampi, Vijayanagara ki rajdhani, uske pattharon ke raaz dhoondhne."
+   }
+  ],
+  "thumbnail": {
+   "scene": "The ARCHAEOLOGIST kneels with a torch at the base of the hanging stone pillar, eyes wide, as a thin cloth stops against the one corner touching the floor",
+   "words": [
+    "NOT",
+    "FLOATING"
+   ]
+  },
+  "title": "Lepakshi ka *latakta* khamba, raaz kya hai? 🤯"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  15.65,
+  32.1,
+  45.79,
+  62.2,
+  78.41,
+  94.66,
+  109.03,
+  125.76,
+  140.29,
+  153.46,
+  169.03,
+  184.36,
+  200.33,
+  217.38,
+  231.39,
+  247.32,
+  260.73,
+  275.7,
+  288.03,
+  301.96,
+  317.29,
+  332.58,
+  349.11,
+  363.56,
+  378.49,
+  391.66,
+  405.67,
+  419.96,
+  434.65,
+  450.26,
+  463.95,
+  477.72,
+  490.85,
+  504.18,
+  518.63,
+  532.04,
+  547.97,
+  560.7,
+  574.55
+ ],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "aptourism.gov.in",
+   "en.wikipedia.org"
+  ],
+  "hooks": [
+   "Ek khamba jo zameen ko chhoota nahi?",
+   "Lepakshi ke 70 khambon ka raaz",
+   "Angrez engineer ne khambe ko hilaya?"
+  ],
+  "id": "lepakshi-hanging-pillar",
+  "notes": "Vijayanagara engineering; explain the likely construction method; the British story is legend.",
+  "place": "Lepakshi, Andhra Pradesh",
+  "target_minutes": 14,
+  "title_hi": "Lepakshi ka latakta khamba",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-10-22T16:13:40+00:00",
+ "writer": "claude"
+}

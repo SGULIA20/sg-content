@@ -1,0 +1,621 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 3.0,
+   "quote": "Third party breach where the deficiency lies neither with the bank nor with the customer but lies elsewhere in the system, and the customer notifies the bank within three working days of receiving the communication from the bank regarding the unauthorised transaction.",
+   "source_date": "2017-07-06",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11040",
+   "text": "Under Reserve Bank of India rules, a bank customer has zero liability for an electronic banking loss if a third-party breach is reported within three working days of receiving the transaction alert.",
+   "unit": "working days"
+  },
+  {
+   "label": "official",
+   "number": 10.0,
+   "quote": "On being notified by the customer, the bank shall credit (shadow reversal) the amount involved in the unauthorised electronic transaction to the customer's account within 10 working days from the date of such notification by the customer",
+   "source_date": "2017-07-06",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11040",
+   "text": "The Reserve Bank of India mandates banks to credit a shadow reversal of an unauthorized transaction amount back to the customer's account within ten working days of notification.",
+   "unit": "working days"
+  },
+  {
+   "label": "official",
+   "number": 10000.0,
+   "quote": "All other SB accounts • Pre-paid Payment Instruments and Gift Cards • Current/ Cash Credit/ Overdraft Accounts of MSMEs • Current Accounts/ Cash Credit/ Overdraft Accounts of Individuals with annual average balance (during 365 days preceding the incidence of fraud)/ limit up to Rs.25 lakh • Credit cards with limit up to Rs.5 lakh, 10,000.",
+   "source_date": "2017-07-06",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11040",
+   "text": "If a customer delays reporting a third-party breach by four to seven working days, the maximum customer liability on an individual savings account is capped at 10,000 rupees to prevent total depletion of household savings.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 7130.0,
+   "quote": "Till 31.10.2025, financial amount of more than Rs. 7,130 Crore has been saved in more than 23.02 lakh complaints.",
+   "source_date": "2025-12-17",
+   "source_name": "PIB",
+   "source_url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2074360",
+   "text": "The Citizen Financial Cyber Fraud Reporting and Management System behind the 1930 helpline saved over 7,130 crore rupees from reaching fraudsters across more than 23.02 lakh complaints up to October 31, 2025.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "reported",
+   "number": 3.24,
+   "quote": "India's national cybercrime helpline 1930 recorded a massive surge in 2025, logging nearly 3.24 crore calls, almost one every second, highlighting a sharp rise in online fraud and scams, officials said.",
+   "source_date": "2026-04-12",
+   "source_name": "The New Indian Express",
+   "source_url": "https://www.newindianexpress.com/nation/2026/Apr/12/cybercrime-helpline-1930-logs-324-crore-calls-in-2025-nearly-one-every-second",
+   "text": "India's national cybercrime helpline 1930 logged approximately 3.24 crore calls in 2025 amid an escalating volume of payment scams and fake customer care calls.",
+   "unit": "crore calls"
+  },
+  {
+   "label": "reported",
+   "number": 93195.0,
+   "quote": "Just over half of Indians have lost money to online scams, with the average loss pegged at Rs 93,195, according to a survey.",
+   "source_date": "2026-02-06",
+   "source_name": "Business Standard",
+   "source_url": "https://www.business-standard.com/finance/news/nearly-51-people-report-losing-money-to-online-scam-shows-survey-126020601449_1.html",
+   "text": "A nationwide consumer cybersecurity survey found that Indian victims of online payment fraud suffered an average loss of 93,195 rupees, equaling multiple months of household discretionary budget.",
+   "unit": "INR"
+  },
+  {
+   "label": "reported",
+   "number": 72.0,
+   "quote": "72% of digital financial fraud victims recovered none of their lost money, a 2026 policing report found.",
+   "source_date": "2026-09-25",
+   "source_name": "Maktoob Media",
+   "source_url": "https://maktoobmedia.com/india/72-of-digital-financial-fraud-victims-recovered-none-of-their-money-27-paid-police-bribes-to-register-complaints-report/",
+   "text": "An independent empirical policing study showed that 72 percent of digital financial fraud victims were unable to recover any of their defrauded money or household salary savings.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-04-sglearning-long",
+ "ids": {
+  "yt_id": "YUOc-8BMlTA"
+ },
+ "kind": "long",
+ "publish_day": "2026-11-04",
+ "reasons": [
+  "try 1: advice: becho; numbers without a source: 1e+08, 11, 50, 50, 50, 50, 11, 50",
+  "draft cooking in Claude's batch lane; the next run collects it",
+  "try 1: no sourced facts survived the checks"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Refund lene ke liye PIN kabhi nahi lagta. 📱\nPhir bhi ek 'customer care' call aur khaata khaali.\nRBI ke niyam kehte hain, alert ke 3 kaam ke din mein report karo, aur 1930 par turant call karo.\nAapke paas kabhi aisa refund call aaya hai? Haan ya na?\nYeh investment advice nahi hai.\nShare karo us Mummy-Papa ko jo internet par pehla customer care number dekh kar call kar dete hain.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#MoneyTipsHindi",
+     "#HinglishFinance",
+     "#PersonalFinanceIndia",
+     "#RBI",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Refund lene ke liye PIN kabhi nahi lagta. Phir bhi ek 'customer care' call aur khaata khaali. Paisa gaya toh pehle ghante mein 1930 par call, aur bank ko 3 kaam ke din ke andar report. Aapke paas kabhi aisa refund call aaya hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Ek call, ek refund",
+     "00:00 Refund ke liye PIN kyun?",
+     "00:00 Paisa kahan gaya, 1930 par kya hota hai",
+     "00:00 Bank kab paisa wapas deta hai",
+     "00:00 Galti aur pehla ghanta"
+    ],
+    "description": "Refund lene ke liye kabhi PIN nahi lagta, phir bhi log roz daal dete hain. Is video mein ek 'refund' call ki poori kahani hai: collect request, screen share app, fake customer care, aur paisa mule accounts mein kaise bhaagta hai. Saath mein RBI ke zero liability niyam, 1930 helpline, aur pehle ghante mein kya karna hai. Share karo us Mummy-Papa ko jo har 'customer care' call par bharosa kar lete hain.",
+    "tags": [
+     "UPI fraud",
+     "refund scam",
+     "1930 helpline",
+     "cyber fraud",
+     "RBI zero liability",
+     "UPI PIN",
+     "collect request",
+     "screen share scam",
+     "fake customer care",
+     "online fraud Hindi",
+     "bank refund rules",
+     "personal finance India"
+    ],
+    "title": "UPI Refund Fraud: PIN kyun maanga? 1930 kab?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "3 din",
+    "line": "Alert ke 3 kaam ke din mein report karo, zero liability ka haq bachao",
+    "source": "RBI"
+   },
+   {
+    "big_number": "10 din",
+    "line": "Bank ko 10 kaam ke din mein shadow reversal credit karna hota hai",
+    "source": "RBI"
+   },
+   {
+    "big_number": "₹7,130 cr",
+    "line": "1930 system ne itna paisa fraudsters tak pahunchne se bachaya",
+    "source": "PIB"
+   },
+   {
+    "big_number": "₹93,195",
+    "line": "Online fraud mein average nuksaan, ek survey ke mutabik",
+    "source": "Business Standard"
+   },
+   {
+    "big_number": "72%",
+    "line": "Digital fraud ke shikaar jinhe koi paisa wapas nahi mila",
+    "source": "Maktoob Media"
+   }
+  ],
+  "carousel": true,
+  "end_question": "Aapke paas kabhi aisa refund wala call aaya hai? Haan ya na?",
+  "hook": "Refund lene ke liye kabhi PIN nahi lagta, phir bhi log roz PIN daal dete hain.",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "Ek call, ek refund",
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY in a saree sits on a living room sofa in the evening, holding a phone to her ear, a cup of chai on the side table, her face hopeful but slightly unsure, warm lamp light",
+     "type": "art"
+    },
+    "vo": "Refund lene ke liye kabhi PIN nahi lagta. Phir bhi log roz PIN daal dete hain. Aur kuch hi pal mein khaata khaali ho jaata hai. Aaj ek aisi hi shaam ki kahani, step by step. Taaki agli baar yeh call aapke ghar aaye, toh aap usse pehchaan lo."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Close view of MUMMY at a dining table, scrolling her phone with one finger, a returned mixer grinder box beside her, evening light from the window, focused expression",
+     "type": "art"
+    },
+    "vo": "Shaam ka waqt hai. Mummy ne online mixer grinder lauta diya tha. Refund abhi tak nahi aaya. Woh phone par search karti hain, company ka customer care number. Sabse upar ek number dikhta hai. Mummy bina soche, turant usi number par call laga deti hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Split panel: on the left MUMMY relieved on the phone at home; on the right an unnamed man in a dim cramped room with a headset, smiling slyly, several phones on his desk, night",
+     "type": "art"
+    },
+    "vo": "Udhar se ek bahut tameez wala aadmi bolta hai. Ma'am, aapka refund atka hua hai, hum abhi bhej dete hain. Aawaz mein jaldi hai, par izzat bhi hai. Mummy ko lagta hai, chalo, aakhir koi toh sun raha hai. Aur yahin se jaal shuru hota hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY holding the phone away from her ear, looking at the screen with a puzzled frown, her thumb hovering, the caller's urgency shown by her tense shoulders, evening",
+     "type": "art"
+    },
+    "vo": "Woh kehta hai, aapke UPI app par ek request aayegi. Usko approve kar dijiye, aur PIN daal dijiye. Refund seedha khaate mein aa jayega. Mummy ko thoda ajeeb lagta hai. Par aadmi baar baar bolta hai, ma'am jaldi kariye, warna refund cancel ho jayega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY frozen on the sofa staring at her phone, face pale, mouth open, the chai cup tipped over on the table, lamp casting a harsh shadow, evening",
+     "type": "art"
+    },
+    "vo": "Mummy PIN daal deti hain. Screen par hara tick aata hai. Woh khush hoti hain, chalo ho gaya. Phir phone bajta hai, ek SMS aata hai. Khaate se paisa gaya hai, aaya nahi. Mummy ka chehra safed pad jaata hai. Haath kaanpne lagte hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BETA, a 10-year-old boy with a school bag, stands at the doorway looking worried at MUMMY, who clutches the phone with both hands, tears forming, evening",
+     "type": "art"
+    },
+    "vo": "Aadmi ab bhi line par hai. Kehta hai, ma'am galti se debit ho gaya, main nayi request bhejta hoon, paisa wapas aa jayega. Yeh doosra hamla hai. Ghabrahat mein insaan wahi karta hai jo usse kaha jaye. Tabhi Beta kamre mein aakar poochta hai, Mummy, kya hua?"
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A kitchen shelf with an old steel savings tin lying open and empty, a family photo beside it, MUMMY's hand resting on the tin, dim night light, sad mood",
+     "type": "art"
+    },
+    "vo": "Aisi kahaniyan chhoti nahi hoti. Ek survey ke mutabik, online fraud mein logon ka average nuksaan lagbhag 93,195 rupaye raha. Yaani kai mahine ka ghar ka kharcha, sirf ek call mein. Aur sabse dukh ki baat, yeh paisa aksar saalon ki mehnat ki bachat hota hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG, early forties, beard, striped shirt, stands beside a big drawn notebook with three large question marks, gesturing calmly towards the viewer, soft studio light",
+     "type": "art"
+    },
+    "vo": "Toh aaj ke sawaal yeh hain. Pehla, refund lene ke liye PIN kyun maanga gaya? Doosra, paisa jaane ke baad helpline par kya hota hai? Teesra, bank kab paisa wapas deta hai? Aur aakhir mein, pehle ghante mein aapko kya karna hai, taaki nuksaan kam ho."
+   },
+   {
+    "facts_used": [],
+    "label": "Refund ke liye PIN kyun?",
+    "visual": {
+     "card": null,
+     "prompt": "SG at a whiteboard drawing a simple arrow from one phone to another, a lock icon only on the sending side, explaining with a friendly smile, daytime",
+     "type": "art"
+    },
+    "vo": "Pehle ek seedhi baat samajh lijiye. UPI PIN sirf paisa bhejne ke liye hota hai. Paisa lene ke liye kabhi PIN nahi lagta. Jab koi aapko paisa bhejta hai, aapko kuch nahi karna padta. Paisa bas aa jaata hai, jaise dost bhejta hai toh aata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A large drawn phone screen held in MUMMY's hand, showing a payment request popup with a big button, a shadowy hand on the other side pulling coins out through the screen, no readable text",
+     "type": "art"
+    },
+    "vo": "Ab woh request kya thi? Usse collect request kehte hain. Collect request yaani saamne wala aapse paisa maang raha hai. Screen par pay likha hota hai, saath mein amount. Fraudster ise refund bol kar bhejta hai. Aap approve karte ho, PIN daalte ho, aur paisa aapka chala jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY nodding trustingly on the phone, a thought bubble above her showing a refund envelope arriving, while behind her a shadowy figure listens, evening",
+     "type": "art"
+    },
+    "vo": "Toh Mummy ne galti kyun ki? Kyunki unke dimaag mein pehle se refund ka intezaar tha. Jo aap sunna chahte ho, fraudster wahi bolta hai. Mummy ne khud order ki baat batayi, usne bas usko dohraaya. Sab kuch sach jaisa laga. Isliye shak ki jagah bharosa aaya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "An unnamed elderly man at home holding a phone, while a giant eye peers through his phone screen from the other side, a key floating from his hand into the screen, night",
+     "type": "art"
+    },
+    "vo": "Doosra tareeka hai screen share wala app. Fraudster kehta hai, ma'am ek app download kar lijiye, main help karunga. Woh app aapki poori screen usko dikha deta hai. Aap jo bhi type karo, OTP, PIN, password, sab woh dekhta hai. Bina taala tode, chaabi aapne khud de di."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BANK UNCLE behind his counter raising a hand in a firm stop gesture, shaking his head kindly, a poster-free clean bank interior, daytime",
+     "type": "art"
+    },
+    "vo": "OTP yaani woh chhota code jo bank SMS par bhejta hai, sirf aapke liye. Bank kabhi phone par OTP nahi maangta. Koi asli customer care aapse app download nahi karwata. Agar koi kahe, toh samajh lo, line ke us paar customer care nahi baitha hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in a hoodie scrolling search results on his phone, one result glowing suspiciously red among normal ones, his face lit by the screen, late evening",
+     "type": "art"
+    },
+    "vo": "Teesra tareeka hai fake customer care number. Fraudster internet par apne number daal dete hain, badi companies ke naam se. Kabhi review mein, kabhi kisi page par. Log jaldi mein jo pehla number dikhe, wahi uthate hain. Asli number hamesha company ki official app ya website se lijiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A drawn ticking wall clock looming over MUMMY as she hurries with her phone, sweat on her forehead, the room tilted to show panic, evening",
+     "type": "art"
+    },
+    "vo": "In sab mein ek cheez common hai, jaldi. Ma'am abhi kariye, warna refund cancel. Sir, aapka khaata band ho jayega. Jaldi isliye, kyunki sochne ka waqt mila toh aap pakad loge. Jahan bhi koi aapko daudaaye, wahin ruk jaana sabse samajhdari hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A wide aerial view of a city at night with countless tiny glowing phones in windows, lines of light flowing towards one central building, sense of huge scale",
+     "type": "art"
+    },
+    "vo": "Aur yeh akeli Mummy ki kahani nahi hai. Pichhle saal desh ki cyber fraud helpline par lagbhag 3.24 crore calls aayin. Yaani lagbhag har second koi na koi call. Fake refund, fake customer care, fake KYC, sab isi line mein shaamil hain."
+   },
+   {
+    "facts_used": [],
+    "label": "Paisa kahan gaya, 1930 par kya hota hai",
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN in office wear, bag still on her shoulder, kneels beside a crying MUMMY on the sofa, holding the phone, determined expression, BETA watching, night",
+     "type": "art"
+    },
+    "vo": "Ab doosra sawaal. Paisa gaya toh gaya kahan? Yahin Behen ghar aati hai. Woh Mummy ka phone dekhti hai, SMS padhti hai. Aur sabse pehle ek baat kehti hai. Rona baad mein, abhi call karo. Is waqt har minute keemti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A drawn map of glowing bank buildings connected by lines, a stream of coins splitting again and again into thinner streams, shadowy hands at each building, dark background",
+     "type": "art"
+    },
+    "vo": "Pehle samjho, paisa ek jagah ruk kar nahi baithta. Fraudster ka paisa mule accounts mein jaata hai. Mule account yaani kisi aur ke naam ka khaata, jo kiraye par liya gaya. Wahan se kuch hi minute mein paisa aage, aur aage, kai khaaton mein bant jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE in a kitchen looking at a bucket of water spilled across the floor, the water spreading into many thin streams towards the corners, daylight",
+     "type": "art"
+    },
+    "vo": "Socho jaise paani ki balti zameen par gir gayi. Shuru mein paani ek jagah hai, sametna aasaan hai. Thodi der mein woh har taraf phail jaata hai. Fraud ka paisa bhi bilkul aisa hi hai. Jitni jaldi pakdo, utna zyada bachta hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN on the phone speaking clearly, MUMMY beside her holding a notebook, BETA holding a torch, a calm focused family moment at night",
+     "type": "art"
+    },
+    "vo": "Isliye Behen turant 1930 milaati hai. 1930 desh ki cyber fraud helpline hai. Aap yahan call karke fraud ki shikayat darj karte ho. Shikayat sarkari cybercrime portal par online bhi ho sakti hai. Call par woh aapse transaction ki poori details maangte hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Close-up of BEHEN's hands taking screenshots on MUMMY's phone, a notepad with scribbles beside it, focused lamp light, night",
+     "type": "art"
+    },
+    "vo": "Details kya chahiye? Transaction ka reference number, kis UPI ID par paisa gaya, kab gaya, kitna gaya. Mummy ke phone mein sab tha, kyunki unhone kuch delete nahi kiya. Isliye screenshot lijiye, SMS sambhaal kar rakhiye. Yahi aapka sabse bada saboot hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A drawn bank vault door slamming shut on a stream of coins mid-flow, the coins frozen in ice crystals, a relieved glow, dark background",
+     "type": "art"
+    },
+    "vo": "Phir hota kya hai? Shikayat ek system mein jaati hai, jo banks aur payment companies se juda hai. Jis khaate mein paisa gaya, wahan alert pahunchta hai. Agar paisa abhi wahin pada hai, toh use rok diya jaata hai. Ise freeze kehte hain, yaani khaata ruk gaya."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA in a kurta holding his FD receipts close to his chest, smiling with relief, a row of other families behind him also relieved, warm morning light",
+     "type": "art"
+    },
+    "vo": "Yeh system tab kaam karta hai, jab log jaldi aate hain. Sarkari aankdon ke mutabik, is system ne 7,130 crore rupaye se zyada ko fraudsters tak pahunchne se bachaya. Socho, yeh paisa kisi Mummy, kisi Papa ki bachat thi, jo waqt par call se bach gayi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN writing a complaint reference on a sticky note and pasting it on the fridge, MUMMY watching with tired but hopeful eyes, late night",
+     "type": "art"
+    },
+    "vo": "Par dhyan rahe, freeze ka matlab paisa turant wapas nahi. Ruka hua paisa wapas aane mein process lagta hai, kabhi police ke zariye, kabhi court ke order se. Shikayat ka number sambhaal kar rakhiye. Aur apne bank ko bhi alag se batana mat bhooliye. Wahi agla sawaal hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Bank kab paisa wapas deta hai",
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY and BEHEN at a bank counter, BANK UNCLE behind it listening carefully, MUMMY looking down ashamed, BEHEN holding papers, morning light through bank windows",
+     "type": "art"
+    },
+    "vo": "Teesra sawaal. Bank kab paisa wapas deta hai? Usi raat Behen bank ki official app se fraud report karti hai. Agle din dono bank jaati hain. Bank Uncle counter ke peeche baithe hain. Mummy dheere se kehti hain, galti meri thi. Par yahan ek niyam hai, jo kam log jaante hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG standing beside a drawn balance scale, one side holding a bank building, the other a small family figure, explaining with an open palm, soft daylight",
+     "type": "art"
+    },
+    "vo": "RBI ke niyam batate hain, unauthorised electronic transaction mein customer ki zimmedari kitni hogi. Unauthorised yaani aisa transaction jo aapne khud nahi chaha. Agar galti bank ki hai, toh customer ki zimmedari zero. Agar galti kahin aur system mein hai, toh bhi zero, par ek shart par."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A drawn wall calendar with a few days circled and Sundays shaded out, MUMMY pointing at it while BEHEN nods, inside the bank, daytime",
+     "type": "art"
+    },
+    "vo": "Shart yeh hai, bank ka alert milne ke 3 kaam ke din ke andar aapne bank ko bata diya. Kaam ke din yaani working days, chhutti ke din nahi gine jaate. Isko zero liability kehte hain, yaani nuksaan ki zimmedari aap par nahi aati."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BANK UNCLE gently explaining across the counter, MUMMY listening with a heavy face, BEHEN's hand on her shoulder, quiet bank interior, late morning",
+     "type": "art"
+    },
+    "vo": "Ab ek imaandar baat. Agar aapne khud PIN daala, ya OTP diya, toh bank keh sakta hai galti aapki thi. Aise mein zero liability ka fayda milna mushkil hai. Report karne tak ka nuksaan aksar customer ko hi uthana padta hai. Isliye report jaldi karna zaroori hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A drawn shield appearing in front of MUMMY's phone the moment she taps report, shadowy hands bouncing off it, bright hopeful colours",
+     "type": "art"
+    },
+    "vo": "Toh report se fayda kya? Report karte hi, us waqt ke baad hone wala har nuksaan bank ki zimmedari ban jaata hai. Matlab agar fraudster ne baad mein aur paisa nikala, toh woh bank bharega. Isliye pehle bank ko batao, phir baaki sochna."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A faint ghost-like stack of coins appearing inside a drawn passbook, slowly becoming solid, PAPA peering at it through his glasses, daytime",
+     "type": "art"
+    },
+    "vo": "Aur jab galti aapki nahi hai, toh ek aur niyam hai. Bank ko shikayat milne ke 10 kaam ke din ke andar paisa aapke khaate mein credit karna hota hai. Ise shadow reversal kehte hain, yaani paisa khaate mein dikhta hai, jab tak jaanch poori nahi hoti."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BANK UNCLE handing a stamped receipt to MUMMY across the counter, MUMMY holding it with both hands like something precious, BEHEN smiling slightly, daytime",
+     "type": "art"
+    },
+    "vo": "Bank Uncle Mummy ko complaint ki receipt dete hain, reference number ke saath. Yeh kaagaz bahut kaam ka hai. Agar bank time par jawab na de, toh aap bank ke grievance desk aur phir RBI ombudsman tak ja sakte ho. Ombudsman yaani RBI ka shikayat sunne wala adhikari."
+   },
+   {
+    "facts_used": [],
+    "label": "Galti aur pehla ghanta",
+    "visual": {
+     "card": null,
+     "prompt": "SG as narrator at a chapter turn, standing next to a drawn figure of a person hiding their face behind a phone, SG's expression gentle and serious, soft light",
+     "type": "art"
+    },
+    "vo": "Ab woh galti jo sabse zyada log karte hain. Fraud ke baad sharam. Mummy ka pehla khayal tha, kisi ko batana nahi, log kya kahenge. Bahut log isi sharam mein din nikaal dete hain. Aur har guzarta din, paisa aur door chala jaata hai."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A long empty queue rope at a police station counter at dusk, a single unnamed man sitting on a bench holding a crumpled paper, looking defeated",
+     "type": "art"
+    },
+    "vo": "Der ka nuksaan kitna bada hai? Ek policing study ke mutabik, digital fraud ke 72 percent shikaar logon ko apna koi bhi paisa wapas nahi mila. Wajah kai hoti hain. Par der se shikayat ka seedha matlab hai, paisa pakadne se pehle hi bikhar gaya."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA at home looking at a calendar on the wall with a worried frown, his FD receipts on the table, the pages of the calendar fluttering away, evening",
+     "type": "art"
+    },
+    "vo": "Bank ke niyam mein bhi der ki keemat hai. Agar galti kahin aur system mein thi, par aapne report mein thodi der kar di, toh savings account par aapki zimmedari 10,000 rupaye tak ho sakti hai. Usse bhi zyada der hui, toh faisla bank ki policy par."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG pointing at a drawn checklist with three big tick boxes and simple icons of a phone, a bank, and a camera, confident expression, bright daylight",
+     "type": "art"
+    },
+    "vo": "Toh pehle ghante mein kya karna hai? Pehla, turant cyber fraud helpline par call karo, ya cybercrime portal par shikayat. Doosra, apne bank ko official app ya helpline se batao, aur UPI band karwao. Teesra, screenshot, SMS, UPI ID, sab sambhaal ke rakho."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY confidently ending a call with a firm thumb on the red button, chin up, a fresh cup of chai beside her, morning sunlight",
+     "type": "art"
+    },
+    "vo": "Aur aage ke liye chhote niyam. Paisa lene ke liye kabhi PIN nahi. Customer care ka number sirf official app ya website se. Koi app download karne ko kahe, toh call kaat do. Aur jo jaldi machaaye, uske liye ek hi jawab, main khud bank aa jaungi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY teaching BETI, a 6-year-old girl, and BETA at the dining table, holding up a phone and wagging a finger playfully, the family laughing, warm evening light",
+     "type": "art"
+    },
+    "vo": "Mummy ki kahani ka ant? Shikayat jaldi hui, receipt haath mein hai, jaanch chal rahi hai. Paisa wapas aayega ya nahi, abhi pata nahi. Par Mummy ab ghar ki sabse badi guard hain. Yeh investment advice nahi hai. Bas apne paise ki hifaazat ki seedhi baat hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG smiling warmly at the viewer, holding a phone in one hand and a credit card bill peeking from his shirt pocket as a teaser, soft studio light",
+     "type": "art"
+    },
+    "vo": "Ab aapse ek sawaal. Aapke paas kabhi aisa refund wala call aaya hai? Comment mein bas haan ya na likhiye. Agli video mein baat karenge credit card ke un charges ki, jo bill mein chupke se aa jaate hain. Tab tak, PIN sirf bhejne ke liye."
+   }
+  ],
+  "thumbnail": {
+   "scene": "MUMMY stares at her glowing phone screen, eyes wide with shock, one hand over her mouth",
+   "words": [
+    "₹93,195",
+    "GAYAB"
+   ]
+  },
+  "title": "Refund ke liye *PIN* kyun maanga? 📱"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  19.73,
+  37.22,
+  54.79,
+  72.32,
+  91.65,
+  111.46,
+  134.59,
+  154.76,
+  172.37,
+  195.1,
+  213.23,
+  236.68,
+  257.01,
+  276.66,
+  295.67,
+  315.64,
+  335.25,
+  354.22,
+  370.55,
+  390.56,
+  410.53,
+  430.42,
+  452.47,
+  471.64,
+  493.13,
+  513.9,
+  532.43,
+  549.96,
+  566.89,
+  584.9,
+  604.87,
+  622.52,
+  642.09,
+  661.62,
+  683.99,
+  701.0,
+  722.17
+ ],
+ "topic": {
+  "hooks": [
+   "Refund lene ke liye PIN kyun maanga?",
+   "Paisa gaya toh 1930 par kya hota hai?",
+   "Bank kab paisa wapas deta hai?"
+  ],
+  "id": "upi-fraud-anatomy",
+  "summary": "How common UPI and OTP frauds work (collect requests, screen-share apps, fake customer care), what the money trail looks like, the RBI zero-liability rules and the 1930 helpline, what to do in the first hour.",
+  "target_minutes": 12,
+  "title": "UPI par 'refund' ka call: ek fraud ki poori kahani, step by step",
+  "voice": "voice_1kn3blc2u13l"
+ },
+ "updated": "2026-10-22T18:47:48+00:00",
+ "writer": "claude"
+}

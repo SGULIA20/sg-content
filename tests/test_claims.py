@@ -62,3 +62,10 @@ def test_years_with_era_words_are_not_claims():
     assert claims.match("Mahabharat 3102 BCE mein hua, kuch kehte hain 1500 BC", facts=[], library=[]) == []
     assert claims.match("yeh 1200 ईसा पूर्व ki baat hai, mandir 1010 CE mein bana", facts=[], library=[]) == []
     assert claims.match("36 metre neeche deewar mili", facts=[], library=[]) == [36.0]
+
+
+def test_index_names_and_the_topics_own_number_are_not_claims():
+    """21 Oct 2026: a long on '500 rupaye ki SIP' was rejected three times for '500' and 'Nifty 50'."""
+    text = "Bhai ki 500 rupaye mahine ki SIP. Nifty 50 aur Nifty 500 TRI mein, Sensex 30 bhi. Return 11 percent maan lo."
+    assert claims.match(text, [], [], context=("500 rupaye mahine ki SIP: 20 saal mein kya bana",)) == [11.0]
+    assert 500.0 in claims.match(text, [], [])                     # without the topic, 500 still needs a source

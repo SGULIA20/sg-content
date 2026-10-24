@@ -1,0 +1,594 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "archaeology",
+   "number": 1010.0,
+   "quote": "It was inaugurated by the king himself in his 19th regnal year (AD 1009-10) and named it after himself as Rajesvara Peruvudaiyar.",
+   "source_date": "2023",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/great-living-chola-temples/",
+   "text": "Emperor Rajaraja I completed the construction of the Brihadisvara Temple around 1010 CE after an intensive building campaign.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 80.0,
+   "quote": "The sikhara, a cupolic dome, is octagonal and rests on a single block of granite, a square of 7.8 m weighing 80 tons.",
+   "source_date": "2023",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/great-living-chola-temples/",
+   "text": "Archaeological records document that the octagonal sikhara dome rests on a square granite slab measuring 7.8 metres wide and weighing approximately 80 tonnes.",
+   "unit": "tonnes"
+  }
+ ],
+ "id": "2026-11-05-arthvan-long",
+ "ids": {
+  "yt_id": "tiWpEGWxpR0"
+ },
+ "kind": "long",
+ "publish_day": "2026-11-05",
+ "reasons": [
+  "try 1: numbers without a source: 7.8, 7.8"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Tanjore mandir ki parchhai dopahar mein kahan jaati hai?\nASI kehti hai shikhara ke neeche granite ka bhaari block hai.\nParchhai banti hai, bas apni hi chaudi neev par simat jaati hai.\nAapko kya lagta hai, patthar seedhi dhalaan se gaya ya spiral se?\nUs dost ko bhejo jo kehta hai Tanjore mandir ki parchhai kabhi nahi girti.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#IndianHistory",
+     "#AncientIndia",
+     "#Archaeology",
+     "#Itihaas",
+     "#Rahasya",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Tanjore ke mandir ki parchhai dopahar mein gayab nahi hoti, woh mandir ki apni chaudi neev par simat jaati hai. Par 80 ton ka granite block upar kaise pahuncha, yeh ab bhi rahasya hai. Aapko kya lagta hai, seedhi dhalaan ya spiral? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Parchhai ka daava",
+     "00:00 Kahani jo log sunate hain",
+     "00:00 ASI aur UNESCO ke sabut",
+     "00:00 Parchhai ki geometry",
+     "00:00 Experts ki behas",
+     "00:00 Jo ab bhi rahasya hai",
+     "00:00 Aaj wahan kya dekhein",
+     "00:00 Aapka sawal aur agli jagah"
+    ],
+    "description": "Kya Tanjore ke mandir ki parchhai sach mein dopahar mein gayab ho jaati hai? ASI ke records, UNESCO aur simple geometry se hum har daave ko sabut ke saath parakhte hain. Parchhai ka sach, bhaari shikhara ka rahasya aur ramp par experts ki behas, sab ek jagah. Us dost ko bhejo jo kehta hai Tanjore mandir ki parchhai kabhi zameen par nahi girti.",
+    "tags": [
+     "Brihadeeswara temple",
+     "Tanjore temple",
+     "Thanjavur",
+     "Rajaraja Chola",
+     "Chola architecture",
+     "temple shadow",
+     "Big Temple",
+     "ancient engineering",
+     "Indian history",
+     "archaeology",
+     "ASI",
+     "UNESCO",
+     "Sabut ke saath"
+    ],
+    "title": "Tanjore Mandir: 80 ton patthar upar kaise gaya?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "80 ton",
+    "line": "Shikhara ke neeche granite block ka wazan",
+    "source": "ASI"
+   },
+   {
+    "big_number": "1010 CE",
+    "line": "Rajaraja Chola ne mandir ka udghatan kiya",
+    "source": "ASI"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Aapko kya lagta hai, patthar seedhi dhalaan se upar gaya ya spiral dhalaan se?",
+  "hook": "Kehte hain, Tanjore ke mandir ki parchhai dopahar mein zameen par girti hi nahi.",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "surprised",
+     "type": "avatar"
+    },
+    "vo": "Kehte hain, Tanjore ke mandir ki parchhai dopahar mein zameen par girti hi nahi. Log ise chamatkar kehte hain, kuch log ise sirf kahani. Sach kahin beech mein chhupa hai. Is video mein hum sabut ke saath dekhenge, ki parchhai aakhir jaati kahan hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": {
+      "big_number": "80 ton",
+      "line": "Shikhara ke neeche granite block ka wazan",
+      "source": "ASI"
+     },
+     "prompt": "Number card on a doodle-style granite block at the top of a tall stepped temple tower",
+     "type": "card"
+    },
+    "vo": "Aur parchhai se bhi bada sawal, mandir ke sabse upar rakha patthar. ASI ke records kehte hain, gumbad ke neeche granite ka single block hai. Uska wazan lagbhag 80 ton bataya gaya hai. Na crane thi, na truck, phir yeh upar pahuncha kaise?"
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of an elderly grandmother on a village courtyard floor telling a story to wide-eyed children at dusk, a tall stepped temple tower silhouetted in the distance, warm oil lamp light, no text",
+     "type": "art"
+    },
+    "vo": "Gaon ki dadi aaj bhi bachchon ko yeh kahani sunati hain. Ki raja ne aisa mandir banwaya, jo kabhi jhukta nahi, kabhi tootta nahi. Par dadi ki kahani aur ASI ki report, hamesha same nahi hoti. Isliye har baat par hum saaf label lagayenge."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Har panel par aap chhota sa chip dekhenge. Legend yaani mashhoor kahani, jiska koi likha sabut nahi. Archaeology yaani kisi sanstha ne khud jaakar dekha aur likha. Disputed yaani experts aapas mein sehmat nahi. Chaliye, pehle kahani sunte hain, jaise log sunate aaye hain."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style aerial panel of a wide river spreading into many green channels toward the sea, paddy fields and small villages, soft morning light, ancient South India, no text",
+     "type": "art"
+    },
+    "vo": "Kahani shuru hoti hai Kaveri nadi ke delta se, jahan Chola raja raj karte the. Delta yaani nadi ka woh hissa, jahan woh samundar se milne se pehle phail jaati hai. Yahan ki zameen upjau thi, aur raja ka sapna bahut bada tha."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style cutaway panel of a granite temple showing a dark inner sanctum with a Shivling seen from a distance and a tall stepped pyramid tower rising above it into the sky, no text",
+     "type": "art"
+    },
+    "vo": "ASI ke mutabik is mandir ko Rajaraja Chola ne banwaya. Mandir ke andar Shivling hai, aur upar aasmaan chhoota vimana. Vimana yaani garbhgriha ke upar uthi hui, seedhiyon jaisi oonchi meenar. Garbhgriha yaani mandir ka sabse andar ka kamra, jahan pooja hoti hai."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of a tour guide pointing up at a tall temple tower under a blazing noon sun while a small crowd of tourists looks at the ground in wonder, no text",
+     "type": "art"
+    },
+    "vo": "Ab aati hain woh kahaniyan, jo har guide sunata hai. Sabse mashhoor kahani, dopahar mein is vimana ki parchhai zameen par nahi girti. Log kehte hain, Chola karigar suraj ko bhi maat de gaye. Par is baat ka koi purana likha sabut nahi milta."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of elephants and bullocks hauling a huge square granite block up a long earthen ramp toward an unfinished temple tower, workers with ropes, dusty golden light, no text",
+     "type": "art"
+    },
+    "vo": "Agli kahani, upar wala bhaari patthar bahut lambi mitti ki dhalaan se upar gaya. Kehte hain yeh dhalaan Sarapallam naam ki jagah se shuru hoti thi. Hathi aur bail patthar ko kheenchte rahe, din ke baad din, mahine ke baad mahine."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of a massive granite temple wall standing firm through monsoon rain, harsh sun and a faint shaking ground, shown as a split scene of seasons, no text",
+     "type": "art"
+    },
+    "vo": "Aur aakhri kahani, is mandir mein aaj tak koi daraar nahi aayi. Daraar yaani deewar ya patthar mein padi patli si phatan. Log kehte hain, sadiyon ki baarish, dhoop aur bhookamp bhi ise hila nahi paaye. Yeh baat sunne mein shaandaar lagti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Toh kahaniyan saamne hain, parchhai, dhalaan aur daraar. Ab sawal yeh hai ki inmein kitna sach hai. Iske liye humein kahani sunane walon se hatkar, naapne walon ke paas jaana hoga. Chaliye dekhte hain, ASI aur UNESCO ne kya likha hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": {
+      "big_number": "1010 CE",
+      "line": "Rajaraja Chola ne mandir ka udghatan kiya",
+      "source": "ASI"
+     },
+     "prompt": "Number card over a doodle of a royal inauguration procession in front of a newly finished granite temple",
+     "type": "card"
+    },
+    "vo": "ASI ke records ke mutabik, mandir lagbhag 1010 CE mein poora hua. CE yaani common era, wahi saal ki ginti jo hum calendar mein use karte hain. Raja ne khud iska udghatan kiya, aur ise apne naam par Rajesvara Peruvudaiyar naam diya."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style close panel of an archaeologist with a notebook studying dense ancient carved script running along the base of a granite temple wall, soft side light, no readable text",
+     "type": "art"
+    },
+    "vo": "Yeh baat hum tak pahunchi kaise? Mandir ki deewaron par khude hue shilalekh se. Shilalekh yaani patthar par likhe gaye purane record. Inmein raja ke daan aur mandir ke kaam ka zikr milta hai. Inhe Thanjavur inscriptions kehte hain, patthar ki diary samajh lijiye."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of pilgrims carrying flowers and lamps into a grand granite temple courtyard at sunrise while a conservation worker inspects a pillar nearby, no text, no logos",
+     "type": "art"
+    },
+    "vo": "UNESCO ne is mandir ko Great Living Chola Temples naam ke samooh mein rakha hai. Living yaani aisa mandir jahan aaj bhi roz pooja hoti hai. Matlab yeh band museum nahi, chalta phirta mandir hai. Aur ASI iski dekhrekh karti hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of ancient stone cutters chiselling a large grey granite block, sparks of stone dust flying, a river delta landscape behind them, no text",
+     "type": "art"
+    },
+    "vo": "Ab baat karte hain patthar ki. Poora mandir granite se bana hai, jo bahut sakht patthar hota hai. Granite yaani woh patthar jo aap kitchen slab mein dekhte hain, jise kaatna mushkil hai. Aur yeh bhaari blocks Kaveri delta ke paar laaye gaye the."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style diagram-like panel of an octagonal stone dome sitting on a single flat square granite slab at the very top of a stepped temple tower, blue sky, no text or labels",
+     "type": "art"
+    },
+    "vo": "Vimana ke bilkul upar ek gumbad hai, jise shikhara kehte hain. ASI ke mutabik yeh shikhara octagonal hai, bilkul traffic ke stop sign jaisi shape. Aur yeh gumbad granite ke single, chaukor block par tika hua hai. Chaukor yaani square, barabar bhujaon wala."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel comparing a giant square granite slab to a row of elephants standing beside it at the foot of a towering temple, playful scale drawing, no text",
+     "type": "art"
+    },
+    "vo": "Isi chaukor block ke wazan ko ASI bahut bhaari batati hai, kai hathiyon jitna. Aur ise zameen se uthakar, vimana ki choti tak le jaana tha. Bina kisi motor ke, bina kisi crane ke. Yahi is mandir ka sabse bada engineering sawal hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style exploded-view panel of granite blocks with notches and grooves fitting into each other like toy building bricks, a craftsman fitting the last piece, no text",
+     "type": "art"
+    },
+    "vo": "Ab agli khaas baat, in patthron ke beech mortar nahi hai. Mortar yaani woh gaara jo eenton ko jodta hai. Chola karigaron ne patthar aise kaate, ki woh aapas mein phans kar jud jaayein. Ise interlocking kehte hain, bilkul Lego ke tukdon jaisa."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of a granite temple tower gently swaying during an earthquake with motion lines while its interlocked blocks stay in place, villagers watching calmly, no text",
+     "type": "art"
+    },
+    "vo": "Yahi interlocking mandir ki takat ka raaz maana jaata hai. Bhookamp aata hai, toh patthar thoda hilte hain, par bikharte nahi. Jaise kase hue jodon wali lakdi ki kursi, dhakka sehti hai par girti nahi. Researchers is lachak ko mandir ki lambi umar se jodte hain."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of an inspector with a torch examining weathered granite surfaces of a sturdy ancient temple wall, moss and age marks visible, no text",
+     "type": "art"
+    },
+    "vo": "Toh daraar wali kahani ka kya? Patthar ki har imarat waqt ke saath ghisti hai, yeh vigyan kehta hai. Par is mandir ka dhaancha aaj bhi majboot khada hai, yeh sach hai. Aur kabhi koi daraar nahi, yeh daava kisi report mein aise nahi likha milta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab aate hain sabse mashhoor daave par, parchhai. Is sawal ka jawab kisi kitaab mein nahi, seedhe aasmaan mein hai. Thodi si geometry lagegi, par ghabraiye mat. Main ise utna hi aasaan rakhunga, jitna chhat par khade hokar dhoop dekhna."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of a child standing in a field with straight sun rays and a shadow behind, showing a low sun long shadow and a high sun short shadow side by side, no text",
+     "type": "art"
+    },
+    "vo": "Pehle samjhiye parchhai banti kaise hai. Suraj ki roshni seedhi line mein aati hai. Jo cheez beech mein aaye, uske peeche roshni nahi pahunchti. Wahi andhera hissa parchhai hai. Suraj jitna neeche, parchhai utni lambi. Suraj jitna upar, parchhai utni chhoti."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of a tall stepped temple tower at early morning casting a very long dark shadow across the stone courtyard, pilgrims walking through it, golden light, no text",
+     "type": "art"
+    },
+    "vo": "Subah aur shaam suraj neeche hota hai, toh vimana ki lambi parchhai door tak girti hai. Yeh aap wahan jaakar khud dekh sakte hain. Matlab mandir parchhai banata hai, bilkul baaki imaraton ki tarah. Yahan koi jaadu nahi, seedha suraj ka khel hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of a person standing under a harsh overhead noon sun with a tiny shadow pooled right under their feet, hot white light, no text",
+     "type": "art"
+    },
+    "vo": "Ab dopahar ka samay sochiye. Suraj lagbhag sar ke upar hota hai. Tab har cheez ki parchhai sikud kar uske pairon ke paas aa jaati hai. Jaise dopahar mein aapki parchhai aapke joote ke neeche chhup jaati hai. Mandir ke saath bhi yahi hota hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style side-view panel of a temple tower tapering like a pyramid standing on a broad stepped stone platform much wider than its top, clean sky, no text or labels",
+     "type": "art"
+    },
+    "vo": "Ab twist dekhiye. Vimana seedha zameen se nahi uthta, woh chaudi, seedhiyon wali neev par khada hai. Plinth yaani woh oonchi chaudi platform, jis par imarat tiki hoti hai. Aur vimana upar jaate hue patla hota jaata hai, piramid ki tarah."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel at noon showing a small dark shadow of the temple tower falling only on its own wide stepped base, while a puzzled visitor on the open ground below looks around, no text",
+     "type": "art"
+    },
+    "vo": "Toh dopahar ki chhoti parchhai kahan girti hai? Mandir ki apni chaudi plinth par hi. Zameen tak pahunchne se pehle, woh mandir ke hi patthar par simat jaati hai. Neeche khade aadmi ko lagta hai, parchhai gayab ho gayi. Asal mein woh wahin hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of ancient architects studying a sketch of a tapering tower and the sun's path on a palm leaf, the real temple glowing behind them, no readable text",
+     "type": "art"
+    },
+    "vo": "Isliye parchhai nahi girti, yeh adhoora sach hai. Parchhai banti hai, bas dopahar mein mandir ke bahar dikhayi nahi deti. Aur yeh bhi karigaron ki samajh ka sabut hai, chaudi neev aur patla hota shikhar. Chamatkar nahi, par kamaal zaroor hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of two scholars on a scaffold near the temple top, one pointing at the dome as a single stone, the other tracing possible joints with a finger, cloudy sky, no text",
+     "type": "art"
+    },
+    "vo": "Ab woh sawal, jahan experts khud aapas mein sehmat nahi. Bada sawal, kya upar ka gumbad sach mein single patthar hai? ASI ke shabdon mein, shikhara granite ke single block par tika hai. Par kuch scholars kehte hain, yeh kahani itni seedhi nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style split panel: left side a solid single stone dome, right side the same dome shown as several precisely fitted stone pieces, an engineer shrugging in the middle, no text",
+     "type": "art"
+    },
+    "vo": "Kuch engineers ka maanna hai ki yeh monolith hai. Monolith yaani poora ka poora akela, bina jod ka patthar. Baaki kehte hain, yeh kai patthron ko kaat kar, itni safai se joda gaya ki single dikhta hai. Paas se jaanch kiye bina, faisla mushkil hai."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style wide panel of a very long straight earthen ramp stretching across flat fields to the top of an unfinished temple tower, tiny elephants pulling a block, no text",
+     "type": "art"
+    },
+    "vo": "Ab ramp ka sawal. Ramp yaani dhalaan, jaise building mein wheelchair ke liye dhalwaan raasta. Purani kahani kehti hai, Sarapallam se bahut lambi, seedhi mitti ki dhalaan banayi gayi. Us par hathi aur bail patthar kheench kar upar le gaye."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of an earthen ramp spiralling around an unfinished stepped temple tower like a mountain road, workers and bullocks climbing it, no text",
+     "type": "art"
+    },
+    "vo": "Par kuch scholars aur engineers is seedhi dhalaan par sawal uthate hain. Unka sawal hai, itni lambi dhalaan banti kaise aur baad mein hatti kaise? Isliye kuch log spiral ramp ki baat karte hain. Spiral yaani mandir ke aaspaas ghoomti dhalaan, jaise pahaadi sadak."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of two engineers at a table arguing over clay models, one of a straight ramp and one of a spiral ramp around a temple tower, lamp light, no text",
+     "type": "art"
+    },
+    "vo": "Seedhi dhalaan wale kehte hain, lambi dhalaan halki chadhai deti hai, toh kheenchna aasaan. Spiral wale kehte hain, ghoomti dhalaan kam jagah leti hai, aur mandir ke saath upar uthti hai. Har taraf tark hai. Par kisi ke paas likha hua nakshaa nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of a quiet village lane with an old man pointing far away toward the temple tower on the horizon, telling the ramp story to a traveller, evening light, no text",
+     "type": "art"
+    },
+    "vo": "Aur Sarapallam wali kahani? Yeh naam log aaj bhi lete hain, par iska purana likha record humein nahi mila. Isliye hum ise legend hi kahenge. Ho sakta hai sach ho, ho sakta hai baad mein judi kahani ho. Sabut aane tak, sawal khula hai."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of a giant granite block resting on wooden log rollers at a river bank, a large boat and coiled ropes nearby, misty question-filled atmosphere, no text",
+     "type": "art"
+    },
+    "vo": "Ab sabse bada khalipan. Kaveri delta ke paar bhaari granite kaise laaya gaya? Naav, rassi ya lakdi ke rollers? Rollers yaani lakdi ke gol latthe, jin par bhaari cheez lurhkayi jaati hai. Us samay ke records mein, yeh tareeka likha hi nahi milta."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of a huge ancient construction site seen from above, piles of stone blocks in zones, workers in groups, an empty palm-leaf scroll in the foreground, no text",
+     "type": "art"
+    },
+    "vo": "Kitne mazdoor lage, kaam kis kram mein hua, patthar kahan rakhe gaye, yeh bhi saaf nahi. Ise staging kehte hain, yaani bade kaam ko hisson mein baant kar karna. Itne bade kaam mein yeh planning zaroor hui hogi. Par woh kaagaz abhi tak nahi mila."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "thinking",
+     "type": "avatar"
+    },
+    "vo": "Accountant hone ke naate, mujhe sabse zyada hairani planning par hoti hai. Itna bada kaam, bina computer, bina spreadsheet. Kisi ne toh hisaab rakha hoga, patthar ka, mazdoor ka, khane ka. Woh hisaab mil jaaye, toh bahut bada rahasya khul jaaye."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of a modern family in a sunlit stone courtyard craning their necks to look up at a towering granite temple tower, pigeons flying, no text",
+     "type": "art"
+    },
+    "vo": "Aaj bhi yeh mandir Thanjavur mein khada hai, aur roz pooja hoti hai. Ise log Big Temple ya Periya Kovil bhi kehte hain. Andar jaakar aap vimana ko neeche se dekh sakte hain. Gardan peeche karni padti hai, itna ooncha lagta hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel of a young visitor with a wristwatch comparing the temple's shadow at morning and at noon, standing near an inscribed wall, no readable text",
+     "type": "art"
+    },
+    "vo": "Wahan jaayein toh subah aur dopahar, parchhai khud check kijiye. Subah lambi parchhai dekhiye, dopahar mein use plinth par simatte dekhiye. Deewaron par khude shilalekh bhi dhyan se dekhiye. Yahi woh patthar ki diary hai, jisse humein 1010 wali taareekh mili."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style close panel of a visitor's hand running along a nearly invisible joint between two huge granite blocks in an ancient temple wall, warm afternoon light, no text",
+     "type": "art"
+    },
+    "vo": "Mandir ke aangan mein ghoomiye, aur granite ke jod dhyan se dekhiye. Kai jagah patthar itni safai se jude hain, ki line mushkil se dikhti hai. Yahin aapko samajh aayega, interlocking ka matlab kya hai. Aur shikhara wala sawal bhi aur gehra lagega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "explaining_front",
+     "type": "avatar"
+    },
+    "vo": "Toh hisaab saaf hai. Parchhai banti hai, bas dopahar mein mandir par hi simat jaati hai. Upar ka bhaari patthar sach hai, par woh kaise pahuncha, yeh ab bhi rahasya hai. Aur Sarapallam ki dhalaan ki kahani, abhi tak sirf kahani hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "end_smile",
+     "type": "avatar"
+    },
+    "vo": "Ab aapse sawal. Aapko kya lagta hai, patthar seedhi dhalaan se upar gaya, ya ghoomti dhalaan se? Comments mein bas likhiye, seedhi ya spiral. Agli baar hum chalenge Hampi ke patthar ke rath ki taraf, jahan naya rahasya intezaar kar raha hai."
+   }
+  ],
+  "thumbnail": {
+   "scene": "THE GRANDMOTHER stares up at the towering temple under the noon sun, eyes wide, mouth open, holding a small brass lamp close to her chest",
+   "words": [
+    "1010",
+    "SHADOW",
+    "GAYAB?"
+   ]
+  },
+  "title": "Tanjore mandir ki *parchhai* kahan gayi? 🤯"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  22.05,
+  42.14,
+  63.71,
+  87.0,
+  105.41,
+  127.78,
+  149.31,
+  167.6,
+  191.05,
+  210.66,
+  231.31,
+  252.16,
+  269.77,
+  287.98,
+  311.03,
+  327.72,
+  347.29,
+  369.82,
+  389.91,
+  408.76,
+  426.05,
+  445.02,
+  464.03,
+  484.32,
+  501.97,
+  521.62,
+  541.79,
+  561.72,
+  580.73,
+  602.5,
+  623.07,
+  642.44,
+  664.65,
+  685.78,
+  707.99,
+  726.52,
+  746.57,
+  765.62,
+  786.47
+ ],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "en.wikipedia.org",
+   "UNESCO whc.unesco.org",
+   "Thanjavur inscriptions"
+  ],
+  "hooks": [
+   "80 ton ka patthar 66 metre upar kaise gaya?",
+   "Mandir ki parchhai dopahar mein kahan jaati hai?",
+   "1,000 saal mein ek bhi daraar nahi?"
+  ],
+  "id": "brihadeeswara-shadow",
+  "notes": "Chola engineering (ramp theories), shadow claim is a partial truth; explain geometry.",
+  "place": "Thanjavur, Tamil Nadu",
+  "target_minutes": 14,
+  "title_hi": "Tanjore ke mandir ki parchhai",
+  "voice": "voice_1kn3blc2u13l"
+ },
+ "updated": "2026-10-22T19:46:52+00:00",
+ "writer": "claude"
+}

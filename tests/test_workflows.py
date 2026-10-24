@@ -27,9 +27,9 @@ def test_workflows_parse_and_name_only_known_secrets():
 def test_produce_schedule_and_guards():
     data = yaml.safe_load((ROOT / ".github" / "workflows" / "produce.yml").read_text())
     crons = [s["cron"] for s in data[True]["schedule"]] if True in data else [s["cron"] for s in data["on"]["schedule"]]
-    assert "5 7 * * *" in crons and "0 9 * * *" in crons              # right after the Gemini quota reset at 07:00 UTC
+    assert "13 7 * * *" in crons and "43 7 * * *" in crons and "13 9 * * *" in crons     # several chances after the 07:00 UTC quota reset
     job = data["jobs"]["produce"]
-    assert job["timeout-minutes"] == 120 and data["concurrency"]["group"] == "produce"
+    assert job["timeout-minutes"] == 300 and data["concurrency"]["group"] == "produce"
     steps = " ".join(s.get("run", "") for s in job["steps"])
     assert "python -m pytest -q -m \"not slow\"" in steps and "python -m engine.produce" in steps and "prune_out.py" in steps
 
@@ -37,7 +37,9 @@ def test_produce_schedule_and_guards():
 def test_publish_crons_match_slots():
     data = yaml.safe_load((ROOT / ".github" / "workflows" / "publish.yml").read_text())
     crons = [s["cron"] for s in (data.get(True) or data.get("on"))["schedule"]]
-    assert "30 8 * * *" in crons and "0 16 * * 1,3,5" in crons
+    assert "33 8 * * *" in crons and "33 9 * * *" in crons and "3 16 * * *" in crons and "3 17 * * *" in crons
+    pick = next(s["run"] for s in data["jobs"]["publish"]["steps"] if s.get("id") == "slot")
+    assert '"33 9 * * *"' in pick and '"33 10 * * *"' in pick                                   # every finance slot maps to sglearning
 
 
 def test_docs_secrets_lists_every_secret():
@@ -91,3 +93,17 @@ def test_gitsync_enabled_by_either_flag():
     from engine import gitsync
     assert gitsync.enabled({"SG_PUSH_FROM_MAC": "1"}) and gitsync.enabled({"SG_COMMIT_EACH": "1"}) and gitsync.enabled({"GITHUB_ACTIONS": "true"})
     assert not gitsync.enabled({})
+
+
+def test_evening_scorecard_is_sent_before_seven_pm_lagos():
+    data = yaml.safe_load((ROOT / ".github" / "workflows" / "evening.yml").read_text())
+    crons = [s["cron"] for s in (data.get(True) or data.get("on"))["schedule"]]
+    assert crons == ["3 20 * * *", "23 20 * * *"]                                     # 21:03 and 21:23 WAT (founder, 22 Oct 2026: 9 pm)
+    assert "engine.evening --send" in " ".join(s.get("run", "") for s in data["jobs"]["evening"]["steps"])
+
+
+def test_growth_report_runs_weekly_on_monday_morning_lagos():
+    data = yaml.safe_load((ROOT / ".github" / "workflows" / "growth.yml").read_text())
+    crons = [s["cron"] for s in (data.get(True) or data.get("on"))["schedule"]]
+    assert crons == ["13 8 * * 1", "43 9 * * 1"]
+    assert "engine.playreports --weekly --send" in " ".join(s.get("run", "") for s in data["jobs"]["growth"]["steps"])

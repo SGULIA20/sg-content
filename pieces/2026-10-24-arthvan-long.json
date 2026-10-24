@@ -1,0 +1,790 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "archaeology",
+   "number": 1952.0,
+   "quote": "Accordingly, work was started at Hastinapura in November 1950 and continued till March 1951... resumed at Hastinapura and finally closed in March 1952.",
+   "source_date": "1955",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://ignca.gov.in/Asi_data/87815.pdf",
+   "text": "The Archaeological Survey of India conducted excavations under B. B. Lal at the ancient mound of Hastinapur between 1950 and 1952.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 5.0,
+   "quote": "The excavation revealed that the site was occupied in five different periods, with a break between each.",
+   "source_date": "1955",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://ignca.gov.in/Asi_data/87815.pdf",
+   "text": "Excavations at Hastinapur established an occupational sequence of five distinct cultural periods separated by settlement gaps.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": 1200.0,
+   "quote": "The first occupational slab ranging from Pre 1200 BC represent Ochre-coloured ware (OCW), there is no any structural remains found from this period because the area of excavation is limited.",
+   "source_date": "1955",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://ignca.gov.in/Asi_data/87815.pdf",
+   "text": "Period I at Hastinapur yielded a thin occupation containing Ochre Coloured Pottery dating to before 1200 BCE.",
+   "unit": "BCE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1100.0,
+   "quote": "B.B. Lal, the excavator of this site, gave a time bracket of 1100 BCE and 800 BCE to this pottery based on its stratigraphic position.",
+   "source_date": "1955",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://ignca.gov.in/Asi_data/87815.pdf",
+   "text": "Period II at Hastinapur was defined by the presence of Painted Grey Ware, dated by the excavator between 1100 BCE and 800 BCE.",
+   "unit": "BCE"
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "Mention may also be made of the presence of the horse (Equus caballus) during this Period... In a pit of this Period were found charred grains identified as rice.",
+   "source_date": "1955",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://ignca.gov.in/Asi_data/87815.pdf",
+   "text": "Excavations in Period II uncovered mud-plastered walls, copper tools, charred rice, and bones of the domesticated horse.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 800.0,
+   "quote": "The occupation came to an end because of a heavy flood in the Ganga which washed away a considerable portion of the settlement. Signs of this devastation are left on the mound in the form of an erosional scar.",
+   "source_date": "1955",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://ignca.gov.in/Asi_data/87815.pdf",
+   "text": "The Painted Grey Ware occupation at Hastinapur was brought to an end by a massive flood of the Ganga dated to approximately 800 BCE.",
+   "unit": "BCE"
+  },
+  {
+   "label": "scripture",
+   "number": 5.0,
+   "quote": "Nichakshu, when Hastinapur is washed away by the Ganges, will remove his residence to Kausambi.",
+   "source_date": "1840",
+   "source_name": "Vishnu Purana, Book 4, Chapter 21",
+   "source_url": "https://en.wikipedia.org/wiki/Nicak%E1%B9%A3u",
+   "text": "Puranic dynastic chronicles describe King Nichakshu as the fifth reigning monarch in direct descent from King Parikshit.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "The occurrence of PGW at Kausambi in period 2 also supports the literary tradition that the capital was shifted to Kausambi after the flood.",
+   "source_date": "1955",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://ignca.gov.in/Asi_data/87815.pdf",
+   "text": "Archaeological excavations at Kaushambi confirmed the emergence of a late phase of Painted Grey Ware that followed the timeline of Hastinapur's flood.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "This assessment by Lal ignited debates, which had put this pottery on the pedestal... scholars debate how closely the PGW cultural horizon corresponds to epic descriptions.",
+   "source_date": "2024-01-01",
+   "source_name": "ThePrint / Archaeological Survey of India",
+   "source_url": "https://theprint.in/past-forward/painted-grey-ware-from-bareilly-holds-the-key-to-the-question-did-india-have-a-dark-age/1903657/",
+   "text": "While B. B. Lal argued that Painted Grey Ware represents the material culture of the Mahabharata epic due to its presence at traditional epic sites, skeptical historians argue that simple mud-brick agro-pastoral settlements lack the architectural grandeur of the text and cannot be linked to literary lineages without contemporary inscriptions.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "On the bank of the Budhi Ganga, two places near Hastinapur (Draupadi Ghat and Karna Ghat) reference Mahabharata personages.",
+   "source_date": "2024",
+   "source_name": "Local Oral Tradition",
+   "source_url": "https://en.wikipedia.org/wiki/Hastinapur",
+   "text": "Local oral tradition identifies existing riverside mounds near the old river channel as sacred sites of the Pandavas, including the Pandeshwar temple and Draupadi Ghat.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 8.0,
+   "quote": "At present, the Ganga flows at a distance of about 8 kilometres from the site, but, in ancient times, it flowed much nearer.",
+   "source_date": "1955",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://ignca.gov.in/Asi_data/87815.pdf",
+   "text": "The main stream of the river Ganga currently flows approximately 8 kilometres east of the excavated site at Hastinapur.",
+   "unit": "km"
+  }
+ ],
+ "id": "2026-10-24-arthvan-long",
+ "ids": {},
+ "kind": "long",
+ "publish_day": "2026-10-24",
+ "reasons": [
+  "voice budget of 80 requests reached for 2026-10-21"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Hastinapur ke tile par aaj bhi Ganga ki baadh ka nishaan hai.\nVishnu Puran kehta hai, Ganga ne Hastinapur bahaaya aur rajdhani Kausambi gayi.\nASI ki khudai mein sleti bartan, chawal, ghode ki haddiyan aur baadh ki parat mili.\nPar kya yeh wahi Hastinapur hai? Vidwaan bante hue hain.\nAapko kya lagta hai, granth ki yaad ya sirf sanyog?\nUs bhai ko bhejo jo Hastinapur ke paas rehta hai par tile par kabhi nahi gaya.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#Hastinapur",
+     "#Mahabharat",
+     "#Archaeology",
+     "#IndianHistory",
+     "#AncientIndia",
+     "#Itihaas",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Hastinapur ke tile par Ganga ki baadh ka nishaan mila. Vishnu Puran bhi kehta hai, Ganga ne Hastinapur bahaaya aur rajdhani Kausambi gayi. Par kya mitti wali baadh aur granth wali baadh wahi hai? Aap kya kehte ho, yaad ya sanyog? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Tile par baadh ka nishaan",
+     "00:00 Granth mein Hastinapur",
+     "00:00 ASI ki khudai, 1952",
+     "00:00 Bartan jo samay batate hain",
+     "00:00 Sleti bartan wale log",
+     "00:00 Ganga ki baadh ka sabut",
+     "00:00 Kausambi ka sabut",
+     "00:00 Jhagda kahan hai",
+     "00:00 Jo abhi anjaan hai",
+     "00:00 Aaj Hastinapur mein kya dekhein",
+     "00:00 Sawaal aur agla padav"
+    ],
+    "description": "Hastinapur ke tile par Ganga ki baadh ka nishaan mila, aur Vishnu Puran bhi wahi baadh yaad karta hai. ASI ki khudai ne sleti bartan, chawal aur ghode ki haddiyan nikaali, par kya yeh Mahabharat ka Hastinapur hai? Vidwaan aaj bhi bante hue hain, aur is video mein dono paksh sabut ke saath hain. Us dost ko bhejo jo kehta hai Mahabharat sirf kahani hai, aur us dost ko bhi jo kehta hai sab saabit ho chuka.",
+    "tags": [
+     "Hastinapur",
+     "Mahabharat",
+     "archaeology",
+     "ASI",
+     "BB Lal",
+     "Painted Grey Ware",
+     "Ganga flood",
+     "Kausambi",
+     "Vishnu Puran",
+     "Nichakshu",
+     "Kuru",
+     "Indian history",
+     "Sabut ke saath"
+    ],
+    "title": "Hastinapur Ganga mein dooba? 1952 ki khudai"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "1952",
+    "line": "ASI ki Hastinapur khudai B. B. Lal ki aguvaai mein is saal band hui",
+    "source": "Archaeological Survey of India, Hastinapura report"
+   },
+   {
+    "big_number": "5 daur",
+    "line": "Hastinapur ke tile par alag bastiyaan, har daur ke beech khaali samay",
+    "source": "Archaeological Survey of India, Hastinapura report"
+   },
+   {
+    "big_number": "1100 BCE",
+    "line": "B. B. Lal ke hisaab se Painted Grey Ware daur ki shuruaat",
+    "source": "Archaeological Survey of India, Hastinapura report"
+   },
+   {
+    "big_number": "800 BCE",
+    "line": "Lagbhag is samay Ganga ki baadh ne PGW basti khatam ki",
+    "source": "Archaeological Survey of India, Hastinapura report"
+   },
+   {
+    "big_number": "8 km",
+    "line": "Ganga ki mukhya dhaara aaj tile se itni door behti hai",
+    "source": "Archaeological Survey of India, Hastinapura report"
+   }
+  ],
+  "carousel": true,
+  "end_question": "Hastinapur ki baadh, granth ki yaad hai ya sirf sanyog? Comment mein likhiye: yaad ya sanyog.",
+  "hook": "Hastinapur ke tile par aaj bhi Ganga ki baadh ka nishaan hai, aur Vishnu Puran bhi isi baadh ki baat karta hai.",
+  "scenes": [
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style illustrated panel, 16:9: a wide grassy mound at dusk in the Gangetic plain, a deep curved gash cut into its side by water, layered soil visible like cake slices, a distant thin river glinting, mysterious quiet mood, no text",
+     "type": "art"
+    },
+    "vo": "Hastinapur ke purane tile ne, kuch yaad rakha hai. Mitti mein Ganga ki baadh ka gehra nishaan hai. Archaeologists ise erosional scar kehte hain. Yaani paani ki dhaar ne zameen kaati, aur ghaav chhod gayi. Yeh baadh lagbhag 800 BCE ki maani gayi hai. Aur hairaani ki baat, granth bhi isi baadh ko yaad karte hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "explaining_front",
+     "type": "avatar"
+    },
+    "vo": "BCE yaani aaj ke calendar ki shuruaat se pehle ke saal. Toh sawaal seedha hai. Kya Puran wali baadh aur mitti wali baadh, wahi hai? Kya Mahabharat ka Hastinapur, isi tile ke neeche hai? Is video mein sirf sabut chalega. Granth kya kehta hai, khudai kya kehti hai, aur jhagda kahan hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: a mid-century archaeologist in khaki shirt and sola hat seen from behind, standing on top of a large earthen mound with a notebook, workers with baskets below, river plain stretching out, hopeful morning light, no text",
+     "type": "art"
+    },
+    "vo": "Is tile ko gehraai se sabse pehle ASI ne khoda. ASI yaani Archaeological Survey of India, desh ki sarkari puratatva sanstha. Khudai ki kaman thi B. B. Lal ke haath mein. Unki report ne Hastinapur par charcha hi badal di. Par report se pehle, chaliye granth ke paas chalte hain."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Mahabharat ki shuruaat Adi Parva se hoti hai. Adi Parva yaani Mahabharat ki shuruaati kitab, jahan vansh ki kahani likhi hai. Yahin Hastinapur Kuru vansh ki rajdhani ke roop mein aata hai. Kuru vansh yaani woh raj parivaar, jismein Kaurav aur Pandav dono paida hue."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: an imagined ancient riverside capital seen from far across the Ganga, tall palace walls and flags, boats on the water, tiny figures on the ghats, golden storybook mood, no text",
+     "type": "art"
+    },
+    "vo": "Granth ke Hastinapur mein mahal hain, sabha hai, aur Ganga ka kinara hai. Yahin Pandav aur Kaurav bachpan mein saath pale. Yahin raja ki sabha baithti thi. Kahani mein yeh shehar shaan aur shakti ki pehchaan hai. Aankhen band kijiye, nadi kinare oonche mahal dikhenge."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: an old palm-leaf manuscript bundle open on a wooden stand in a lamp-lit room, a long family-tree style chain of small crowns drawn as decoration beside it, warm candle glow, no readable text",
+     "type": "art"
+    },
+    "vo": "Kahani ka agla hissa Puranon mein milta hai. Puran yaani purane granth, jinmein rajaon ki vanshavali likhi hai. Vishnu Puran Parikshit ke baad ke rajaon ki list deta hai. Parikshit yaani Arjun ke pote, jo Mahabharat yudh ke baad raja bane."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: a king seen from behind on a palace terrace at night, looking at a swollen river rising toward the city walls, lightning in the clouds, ominous mood, no text",
+     "type": "art"
+    },
+    "vo": "Parikshit ke seedhe vansh mein 5ve raja the Nichakshu. Unke samay ke liye Vishnu Puran ajeeb baat kehta hai. Ganga Hastinapur ko baha le jayegi. Aur Nichakshu apni rajdhani Kausambi le jayenge. Granth yeh baat bhavishya ki tarah kehta hai."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: a long line of carts, oxen and people walking away from a flooded city on a muddy road, a royal canopy far ahead, gray rainy light, sad but resolute mood, no text",
+     "type": "art"
+    },
+    "vo": "Is line ka matlab samjhiye. Granth khud keh raha hai, Hastinapur ka ant yudh se nahi hua. Ant hua nadi se, Ganga ki baadh se. Raja ko apna shehar chhodna pada. Aur rajdhani gayi Kausambi, Hastinapur se kaafi door ka shehar."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: close view of an iron spade resting against an earthen mound, an old manuscript bundle lying on a cloth beside it, morning mist, thoughtful mood, no text",
+     "type": "art"
+    },
+    "vo": "Yaad rakhiye, yeh granth ki baat hai. Granth yaadon ko sambhaalte hain, par tareekh nahi likhte. Isliye agla sawaal banta hai. Kya zameen ke andar bhi baadh ka sabut hai? Iska jawab dene ke liye, kisi ko kudaal uthani padi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab chalte hain khudai ki taraf. Khudai yaani zameen ko dhyaan se, parat dar parat kholna. ASI ne B. B. Lal ki aguvaai mein Hastinapur ke tile par kaam shuru kiya. Kaam November mein shuru hua, beech mein ruka, phir dobara chala. Aakhir March 1952 mein band hua."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: 1950s excavation trench on a mound, workers carrying soil in baskets on their heads, an archaeologist measuring a trench wall with a tape, a box camera on a tripod, dusty sunlight, busy mood, no text",
+     "type": "art"
+    },
+    "vo": "Tila yaani mitti ka ooncha dher, jiske neeche purani bastiyaan dabi hoti hain. Hastinapur ka tila nadi ke purane raste ke paas hai. Mazdoor tokriyon mein mitti uthaate the. Archaeologist har parat naapte, likhte, aur tasveerein lete the. Har tukda, kahani ka gawah tha."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: a cut-away view of a trench wall showing distinct colored soil layers, beside it a playful inset of a stack of old newspapers with the oldest at the bottom, explanatory clean style, no text",
+     "type": "art"
+    },
+    "vo": "Yahan kaam aata hai stratigraphy. Stratigraphy yaani mitti ki parton ka hisaab, neeche wali parat sabse purani. Jaise ghar mein akhbaaron ka dher, neeche purana, upar naya. Isi hisaab se Lal ne bastiyon ka kram banaya. Aur nateeja chaunkaane wala tha."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": {
+      "big_number": "5 daur",
+      "line": "Hastinapur ke tile par alag bastiyaan, har daur ke beech khaali samay",
+      "source": "Archaeological Survey of India, Hastinapura report"
+     },
+     "prompt": "Number card over a faded drawing of layered soil",
+     "type": "card"
+    },
+    "vo": "Hastinapur par 5 alag daur mein log base. Aur har daur ke beech, khaali samay tha. Yaani log aaye, rahe, aur chale gaye. Kuch samay baad, naye log aaye. Yeh tila akela shehar nahi, kai bastiyon ki parten hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Lal ki report mein sabse zyada charcha hui, mitti ke bartanon ki. Aap soch rahe honge, bartan se samay kaise pata chalta hai? Seedhi baat. Har zamane ke bartan ka apna design hota hai. Bartan dekhkar, archaeologist parat ki umar ka andaza lagata hai. Bartan purane zamane ki ghadi hain."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: a gloved hand lifting a worn reddish-orange pottery shard from the lowest dark soil layer of a deep trench, orange powder on the fingertips, focused lantern-like light, no text",
+     "type": "art"
+    },
+    "vo": "Sabse neeche wali basti mein mile Ochre Coloured Pottery ke tukde. Ochre Coloured Pottery yaani geru jaise rang ke bartan, jo chhoone par rang chhodte the. Yeh basti patli thi, zyada kuch nahi bacha. Iska samay maana gaya 1200 BCE se bhi pehle ka."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: a small rectangular excavated pit within a vast untouched mound, the dug area highlighted, the rest of the mound in shadow suggesting hidden secrets, contemplative mood, no text",
+     "type": "art"
+    },
+    "vo": "Is daur ki koi imaarat nahi mili. Report saaf kehti hai, khudai ka ilaaka chhota tha. Matlab, imaarat thi hi nahi, aisa nahi keh sakte. Bas itna keh sakte hain, jitna khoda, utne mein nahi mili. Sabut ki zubaan mein yeh farak bahut zaroori hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: a delicate grey pottery bowl painted with black lines and dots, reassembled from fragments on a cloth beside a trench, soft glowing light making it look precious, no text",
+     "type": "art"
+    },
+    "vo": "Khaali samay ke baad, upar ki parat mein naye bartan mile. Painted Grey Ware, chhote mein PGW. Yaani sleti rang ke bartan, jin par kaali lakeeron aur bindiyon ki sajaawat hai. Patli deewar, chikni satah, bade saleeke se bane. Yahi bartan is kahani ke hero hain."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": {
+      "big_number": "1100 BCE",
+      "line": "B. B. Lal ke hisaab se Painted Grey Ware daur ki shuruaat",
+      "source": "Archaeological Survey of India, Hastinapura report"
+     },
+     "prompt": "Number card over a faded drawing of a grey painted bowl",
+     "type": "card"
+    },
+    "vo": "B. B. Lal ne in bartanon ka samay lagbhag 1100 BCE se maana. Yeh andaza unhone parton ki jagah dekhkar lagaya. Yaani neeche kya hai, upar kya hai, us hisaab se. Aur yeh daur tab tak chala, jab tak baadh nahi aayi."
+   },
+   {
+    "facts_used": [
+     3,
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: an archaeologist seen from behind studying a hand-drawn map of north Indian river plains pinned to a tent wall, small grey pot symbols marking several spots, curious mood, no readable text",
+     "type": "art"
+    },
+    "vo": "Lal ne dekha, yahi sleti bartan Mahabharat se jude kai purane sthaanon par bhi milte hain. Yahin se unke mann mein bada sawaal utha. Kya yeh Mahabharat wale logon ke bartan hain? Is sawaal par hum aage aayenge, dono paksh ke saath."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: reconstructed ancient village of mud-plastered huts with thatched roofs beside a wide river, women plastering a wall with mud by hand, smoke from a hearth, calm daily-life mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab dekhte hain, PGW wale log kaise rehte the. Khudai mein unke gharon ki deewarein mili. Deewarein mitti se lipi hui thi, jaise gaon mein aaj bhi lipaai hoti hai. Koi patthar ka bada mahal nahi. Seedhe saade ghar, nadi ke kinare."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: small greenish copper tools laid out on a cloth in the excavation camp, beside them an imagined ancient craftsman's hands shaping glowing metal over a small furnace, warm orange light, no text",
+     "type": "art"
+    },
+    "vo": "Unke paas taambe ke aujaar the. Taamba yaani copper, wahi dhaatu jo aaj bijli ke taar mein lagti hai. Kaatne aur chheelne ke chhote aujaar. Matlab yeh log hunar jaante the. Dhaatu ko pighlaana aur shakal dena, aasaan kaam nahi tha."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: a magnifying glass over a small heap of blackened charred rice grains in a soil pit, a botanist's tweezers nearby, close detailed style, wonder mood, no text",
+     "type": "art"
+    },
+    "vo": "Kisi gaddhe mein mile jale hue anaaj ke daane. Jaanch hui toh pata chala, yeh chawal hai. Socho, itne purane chawal, aaj bhi mitti mein bache hue. Yaani yeh log kheti karte the. Aur chawal unki thaali mein tha."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: animal bones laid in a trench with a horse jaw clearly visible, ghostly sketch of a grazing horse drawn faintly above them, rice fields in the background, curious mood, no text",
+     "type": "art"
+    },
+    "vo": "Sabse dilchasp cheez thi, ghode ki haddiyan. Paaltu ghoda, jise vigyan Equus caballus kehta hai. Yaani yeh log ghode paalte the. Kheti, pashu aur ghoda, yeh kisaanon aur chaarwaahon ke samaaj ki tasveer hai."
+   },
+   {
+    "facts_used": [
+     4,
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style split panel: left side a grand imagined palace hall with pillars, right side a humble mud hut with a grey pot at the door, a dotted line between them, thoughtful contrast mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab is tasveer ko granth ke Hastinapur se milaaiye. Granth mein bhavya mahal aur sabha. Mitti mein lipi hui deewarein aur taambe ke aujaar. Yahin se kahani mein tanaav shuru hota hai. Par usse pehle, dekhte hain is basti ka ant kaise hua."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab aata hai woh pal, jiske liye aap yahan hain. PGW ki basti achaanak khatam hui. Kisi dushman ne nahi kiya. Ganga ne kiya. Khudai mein baadh ke saaf nishaan mile. ASI ki report kehti hai, nadi basti ka bada hissa baha le gayi."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": {
+      "big_number": "800 BCE",
+      "line": "Lagbhag is samay Ganga ki baadh ne PGW basti khatam ki",
+      "source": "Archaeological Survey of India, Hastinapura report"
+     },
+     "prompt": "Number card over a faded drawing of a river cutting into a mound",
+     "type": "card"
+    },
+    "vo": "Yeh baadh lagbhag 800 BCE ki maani gayi. Tile par aaj bhi uska nishaan hai, erosional scar ke roop mein. Yaani paani ki dhaar ne zameen ko jahan kaata, woh ghaav. Jaise nadi ne tile par panja maar diya ho."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: night flood sweeping through a village of mud huts, people seen from behind wading with pots and leading cattle toward higher ground, dark water and rain, dramatic but gentle storybook mood, no text",
+     "type": "art"
+    },
+    "vo": "Us raat ki kalpana kijiye. Nadi ka paani badhta ja raha hai. Log bartan, anaaj aur pashu lekar bhaag rahe hain. Mitti ki deewarein galti ja rahi hain. Yeh kalpana hai, report nahi. Report itna kehti hai, baadh aayi aur basti ujad gayi."
+   },
+   {
+    "facts_used": [
+     10
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": {
+      "big_number": "8 km",
+      "line": "Ganga ki mukhya dhaara aaj tile se itni door behti hai",
+      "source": "Archaeological Survey of India, Hastinapura report"
+     },
+     "prompt": "Number card over a faded map-like drawing of a river far from a mound",
+     "type": "card"
+    },
+    "vo": "Aaj aap Hastinapur jaayein, toh Ganga wahan nahi dikhti. Mukhya dhaara lagbhag 8 kilometre door behti hai. Report kehti hai, purane zamane mein nadi kaafi paas thi. Nadiyaan apna raasta badalti hain. Jo nadi kabhi darwaaze par thi, aaj door chali gayi."
+   },
+   {
+    "facts_used": [
+     5,
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: an old manuscript on the left and a cut-away soil layer with a flood silt band on the right, both drawn on the same river bank with a thread of blue water connecting them, mysterious mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab dono baatein saath rakhiye. Vishnu Puran kehta hai, Ganga ne Hastinapur ko bahaaya. Khudai kehti hai, Ganga ne PGW basti ko bahaaya. Itna milna, sanyog hai ya yaad? Yahi is kahani ka sabse bada sawaal hai."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: excavation at the ruined earthen ramparts of an ancient city on a different river bank, workers sieving soil, grey pottery fragments in a tray, bright afternoon light, no text",
+     "type": "art"
+    },
+    "vo": "Granth kehta hai, raja Kausambi chale gaye. Toh archaeologists ne Kausambi mein bhi dekha. Wahan bhi khudai hui. Aur wahan Painted Grey Ware ka baad wala roop mila. Yaani woh daur, jo Hastinapur ki baadh ke samay ke baad aata hai."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: two grey pottery shards on a desk, one tagged with a drawing of a mound, the other with a drawing of city ramparts, a dotted arrow linking them, a pair of spectacles beside, careful scholarly mood, no text",
+     "type": "art"
+    },
+    "vo": "ASI ki report in dono ko jodti hai. Report ke hisaab se, Kausambi mein PGW milna us parampara ko sahara deta hai, ki baadh ke baad rajdhani wahan gayi. Dhyaan dijiye, sahara deta hai, saabit nahi karta. Sabut ki zubaan mein yeh shabd bahut maayne rakhte hain."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: a faint dotted path drawn across a sketched plain from a flooded mound to a distant walled city, small footprints along it fading out, quiet uncertain mood, no text",
+     "type": "art"
+    },
+    "vo": "Isliye Kausambi is kahani ki zaroori kadi hai. Agar baadh ke baad log wahan gaye, toh mitti mein nishaan hone chahiye. Kuch nishaan mile bhi hain. Par kaun gaya, kis raja ke saath gaya, yeh mitti nahi batati."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab aata hai jhagda. Aur yahan dono taraf ki baat sunni zaroori hai. B. B. Lal ka kehna tha, Painted Grey Ware hi Mahabharat ke zamane ki bhautik sanskriti hai. Bhautik sanskriti yaani log kya banaate, khaate, aur istemaal karte the."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: an archaeologist seen from behind at a lecture podium, pointing to a large drawing of a grey painted pot beside a sketched map of river towns, attentive audience silhouettes, confident mood, no text",
+     "type": "art"
+    },
+    "vo": "Lal ka tark seedha tha. Yeh bartan un jagahon par milte hain, jo Mahabharat se jude maane jaate hain. Hastinapur bhi, aur aise kai aur sthaan bhi. Unke hisaab se yeh sanyog nahi ho sakta. Bartan aur granth, dono usi yaad ki taraf ishaara karte hain."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: a group of historians seen from behind around a table, one holding a simple mud brick and another a sketch of a grand palace, raised eyebrows and debate gestures, lively but respectful mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab sandeh karne wale itihaaskaron ki suniye. Woh kehte hain, yeh mitti ki deewaron wali, kheti aur pashupaalan wali basti hai. Granth mein jo bhavya mahal aur sabha hai, woh yahan nahi dikhti. Isliye dono ko seedha jodna jaldbaazi hai."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: a blank smooth stone slab standing in an empty trench, an archaeologist's brush resting on it, a faint question-mark shaped shadow across the ground, puzzled mood, no text",
+     "type": "art"
+    },
+    "vo": "Unka bada tark hai, abhilekh ka na hona. Abhilekh yaani patthar, dhaatu ya mitti par us zamane ka likha hua. Kisi bartan par kisi raja ka naam nahi mila. Bina likhe sabut ke, vanshavali ko tile se jodna mushkil hai."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: an old-fashioned balance scale on a desk, one pan holding a grey painted pot, the other holding a palm-leaf manuscript, perfectly level, soft lamp light, neutral mood, no text",
+     "type": "art"
+    },
+    "vo": "Toh kaun sahi hai? Seedhi baat, abhi koi faisla nahi. Bartan dikhaate hain, yahan log the, kheti thi, ghode the, aur baadh aayi. Par kya woh log granth ke Kuru the? Is par vidwaan aaj bhi bante hue hain."
+   },
+   {
+    "facts_used": [
+     5,
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: a bird's-eye sketch of a wandering river leaving several faded old channels across a plain, a small mound beside one of them, dreamy mysterious mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab woh baatein, jo kisi ko pakki nahi pata. Kya mitti wali baadh, wahi baadh hai jo Puran mein likhi hai? Ya Ganga ne kai baar raasta badla, aur yaad ne sab ko jod diya? Nadiyaan baar baar kinaare kaatti hain. Granth shayad un sab ka saar ho."
+   },
+   {
+    "facts_used": [
+     2,
+     5
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: cross-section of a mound with a small excavated trench at one edge, and deep below in the dark untouched soil faint ghostly outlines of unknown structures, suspenseful mood, no text",
+     "type": "art"
+    },
+    "vo": "Aur sabse bada khaali panna, mahal kahan hain? Ho sakta hai woh bane hi na hon. Ho sakta hai nadi unhe le gayi ho. Ho sakta hai khudai wahan pahunchi hi na ho. Jitna khoda gaya, utna hi pata hai. Baaki zameen ke neeche intezaar kar raha hai."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: a grandmother seen from the side telling a story to children under a big tree near a grassy mound, village houses behind, warm evening light, tender mood, no text",
+     "type": "art"
+    },
+    "vo": "Agar aap Hastinapur jaayein, toh tila aaj bhi wahan hai. Aas paas ke log kuch jagahon ko Pandavon se jodte hain. Yeh lok parampara hai, yaani peedhi dar peedhi sunaai gayi kahani. Iska khudai wala sabut nahi, par aastha aur yaad gehri hai."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: a small old temple on a riverside mound with steps leading down to a narrow quiet stream, pilgrims seen from behind lighting lamps at the ghat, sunset reflections, peaceful mood, no text",
+     "type": "art"
+    },
+    "vo": "Pandeshwar mandir ko log Pandavon se jodte hain. Budhi Ganga ke kinare Draupadi Ghat aur Karna Ghat hain. Budhi Ganga yaani Ganga ki purani dhaara, jo ab patli reh gayi hai. Shaam ko yahan baithiye, purani nadi ki khamoshi sunaai degi."
+   },
+   {
+    "facts_used": [
+     10,
+     9
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: a lone visitor seen from behind standing on top of a grassy mound, gazing toward a distant silver river on the horizon across green fields, wind in the grass, reflective mood, no text",
+     "type": "art"
+    },
+    "vo": "Aur jab aap tile par khade hon, toh nadi ki taraf dekhiye. Woh door hai, par kabhi yahin thi. Wahi nadi jo granth mein bhi hai, aur mitti mein bhi. Shayad Hastinapur ki asli kahani yahi hai. Shehar aur nadi ka rishta."
+   },
+   {
+    "facts_used": [
+     5,
+     6,
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "thinking",
+     "type": "avatar"
+    },
+    "vo": "Toh tasveer kuch aisi hai. Granth kehta hai, Ganga ne Hastinapur bahaaya. Mitti kehti hai, Ganga ne PGW basti bahaayi. Kuch vidwaan kehte hain, yeh wahi yaad hai. Kuch kehte hain, jodna abhi jaldi hai. Faisla sabut karega, aur sabut abhi adhoora hai."
+   },
+   {
+    "facts_used": [
+     6,
+     7
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Doodle-style panel: high earthen ramparts of an ancient city rising beside a broad river at dawn, a lone traveller with a backpack seen from behind walking toward them, inviting adventurous mood, no text",
+     "type": "art"
+    },
+    "vo": "Agli baar hum chalenge Kausambi. Woh shehar jahan granth ke hisaab se raja Nichakshu pahunche. Wahan ki deewarein, wahan ke bartan, aur wahan ki mitti kya kehti hai. Sab kuch sabut ke saath, aur dono paksh ke saath."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "end_smile",
+     "type": "avatar"
+    },
+    "vo": "Ab aapki baari. Hastinapur ki baadh, granth ki yaad hai ya sirf sanyog? Comment mein bas likhiye, yaad ya sanyog. Aur agar aap kabhi Hastinapur gaye hain, toh bataiye wahan sabse pehle kya dekha."
+   }
+  ],
+  "thumbnail": {
+   "scene": "THE ARCHAEOLOGIST kneels in a muddy trench, eyes wide and mouth open, holding a grey pottery shard painted with black lines while a dark flood-silt band streaks the wall behind",
+   "words": [
+    "800 BCE",
+    "BAH GAYA"
+   ]
+  },
+  "title": "Hastinapur ko *Ganga* le gayi? 🤯"
+ },
+ "status": "failed-voice",
+ "timings": [],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "en.wikipedia.org",
+   "B. B. Lal excavation reports",
+   "Mahabharata (Adi Parva)"
+  ],
+  "hooks": [
+   "Hastinapur mein ASI ko 1952 mein kya mila?",
+   "Painted Grey Ware ka Mahabharat se kya rishta?",
+   "Ganga ki baadh ne Hastinapur ko kab doboya?"
+  ],
+  "id": "hastinapur-today",
+  "notes": "B. B. Lal 1951-52 dig, PGW culture, flood layer vs the Purana flood story.",
+  "place": "Hastinapur, Uttar Pradesh",
+  "target_minutes": 14,
+  "title_hi": "Hastinapur aaj",
+  "voice": "Kore"
+ },
+ "updated": "2026-10-21T16:51:44+00:00",
+ "writer": "claude"
+}

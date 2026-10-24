@@ -1,0 +1,59 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.92,Default,,0,0,0,,Subah subah,
+Dialogue: 0,0:00:00.92,0:00:02.53,Default,,0,0,0,,Bhai ki screen par sab hara
+Dialogue: 0,0:00:02.53,0:00:03.44,Default,,0,0,0,,hi hara tha.
+Dialogue: 0,0:00:03.44,0:00:04.82,Default,,0,0,0,,Group mein message aaya,
+Dialogue: 0,0:00:04.82,0:00:06.20,Default,,0,0,0,,market wapas aa gaya.
+Dialogue: 0,0:00:06.65,0:00:07.74,Default,,0,0,0,,Aaj expiry thi.
+Dialogue: 0,0:00:07.74,0:00:10.12,Default,,0,0,0,,Expiry yaani hafte ke saudon ka
+Dialogue: 0,0:00:10.12,0:00:10.77,Default,,0,0,0,,aakhri din,
+Dialogue: 0,0:00:10.77,0:00:12.29,Default,,0,0,0,,jab sab kuch tez chalta hai.
+Dialogue: 0,0:00:12.74,0:00:13.53,Default,,0,0,0,,Bhai ne socha,
+Dialogue: 0,0:00:13.53,0:00:15.49,Default,,0,0,0,,crude ki khabar purani ho gayi,
+Dialogue: 0,0:00:15.49,0:00:17.06,Default,,0,0,0,,market ne use bhula diya.
+Dialogue: 0,0:00:17.51,0:00:20.16,Default,,0,0,0,,Kuch ghanton mein Sensex lagbhag 74,682
+Dialogue: 0,0:00:20.16,0:00:21.04,Default,,0,0,0,,tak chadh gaya.
+Dialogue: 0,0:00:21.04,0:00:22.21,Default,,0,0,0,,Bhai ko laga,
+Dialogue: 0,0:00:22.21,0:00:24.27,Default,,0,0,0,,ab toh rukega nahi.
+Dialogue: 0,0:00:24.72,0:00:26.71,Default,,0,0,0,,Usne apni chhoti bachat se ek
+Dialogue: 0,0:00:26.71,0:00:27.70,Default,,0,0,0,,tez saudaa le liya.
+Dialogue: 0,0:00:27.70,0:00:29.09,Default,,0,0,0,,Sab upar ja rahe hain,
+Dialogue: 0,0:00:29.09,0:00:30.28,Default,,0,0,0,,main kyun peeche rahun?
+Dialogue: 0,0:00:30.73,0:00:33.06,Default,,0,0,0,,Phir aayi dopahar ki bikwali.
+Dialogue: 0,0:00:33.06,0:00:35.65,Default,,0,0,0,,Bikwali yaani log ek saath bechne
+Dialogue: 0,0:00:35.65,0:00:36.17,Default,,0,0,0,,lage.
+Dialogue: 0,0:00:36.62,0:00:38.50,Default,,0,0,0,,Shaam tak saari badhat gaayab.
+Dialogue: 0,0:00:38.50,0:00:40.10,Default,,0,0,0,,Sensex neeche band hua,
+Dialogue: 0,0:00:40.10,0:00:41.98,Default,,0,0,0,,aur Bhai ka paisa doob gaya.
+Dialogue: 0,0:00:42.43,0:00:44.10,Default,,0,0,0,,Wajah koi chart nahi thi.
+Dialogue: 0,0:00:44.10,0:00:46.24,Default,,0,0,0,,Wajah thi Middle East ka tension,
+Dialogue: 0,0:00:46.24,0:00:48.39,Default,,0,0,0,,aur mehenga hota crude oil.
+Dialogue: 0,0:00:48.84,0:00:49.50,Default,,0,0,0,,Twist yeh hai,
+Dialogue: 0,0:00:49.50,0:00:52.15,Default,,0,0,0,,India apna lagbhag 88 percent crude
+Dialogue: 0,0:00:52.15,0:00:53.69,Default,,0,0,0,,bahar se mangata hai.
+Dialogue: 0,0:00:53.69,0:00:54.79,Default,,0,0,0,,Toh crude ki aag,
+Dialogue: 0,0:00:54.79,0:00:57.44,Default,,0,0,0,,seedhe hamare market tak pahunchti hai.
+Dialogue: 0,0:00:57.89,0:00:59.45,Default,,0,0,0,,Aur yahi crude petrol,
+Dialogue: 0,0:00:59.45,0:01:01.67,Default,,0,0,0,,sabzi aur EMI ka hisaab badal
+Dialogue: 0,0:01:01.67,0:01:02.34,Default,,0,0,0,,sakta hai.
+Dialogue: 0,0:01:02.34,0:01:03.23,Default,,0,0,0,,Mehenga tel,
+Dialogue: 0,0:01:03.23,0:01:04.57,Default,,0,0,0,,toh byaaj cut bhi der se.
+Dialogue: 0,0:01:05.02,0:01:06.46,Default,,0,0,0,,Agar aap SIP wale hain,
+Dialogue: 0,0:01:06.46,0:01:08.10,Default,,0,0,0,,toh roz ka hara laal aapki
+Dialogue: 0,0:01:08.10,0:01:09.33,Default,,0,0,0,,kahani nahi hai.
+Dialogue: 0,0:01:09.33,0:01:11.38,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:01:11.83,0:01:14.09,Default,,0,0,0,,Aapne kabhi expiry ke din trade
+Dialogue: 0,0:01:14.09,0:01:14.29,Default,,0,0,0,,kiya?
+Dialogue: 0,0:01:14.29,0:01:14.91,Default,,0,0,0,,Haan ya naa?

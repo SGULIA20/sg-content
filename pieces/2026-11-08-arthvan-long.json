@@ -1,0 +1,40 @@
+{
+ "channel": "arthvan",
+ "facts": [],
+ "id": "2026-11-08-arthvan-long",
+ "ids": {},
+ "kind": "long",
+ "publish_day": "2026-11-08",
+ "reasons": [
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+ ],
+ "script": null,
+ "status": "failed-research",
+ "timings": [],
+ "topic": {
+  "allowed_sources": [
+   "en.wikipedia.org",
+   "tourism.rajasthan.gov.in"
+  ],
+  "hooks": [
+   "25,000 chuhe aur ek bhi bimari nahi?",
+   "Safed chuha dikha to kya hota hai?",
+   "Chuhe mandir ke bahar kyon nahi jaate?"
+  ],
+  "id": "karni-mata-rats",
+  "notes": "Give the hygiene question an honest answer (no verified study either way) and label it.",
+  "place": "Deshnoke, Rajasthan",
+  "target_minutes": 14,
+  "title_hi": "Karni Mata, 25,000 chuhon ka mandir"
+ },
+ "updated": "2026-10-23T18:41:51+00:00",
+ "writer": ""
+}

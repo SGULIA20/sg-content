@@ -17,6 +17,36 @@ API = "https://graph.instagram.com/v25.0"          # Instagram API with Instagra
 REFRESH_URL = "https://graph.instagram.com/refresh_access_token"
 DEFAULT_REPO = "SGULIA20/sg-content"
 THUMB_OFFSET_MS = 2000
+DM_ASK = {"sglearning": "💬 Comment karein APP: ScoreMyBiz ka link DM mein aayega.",          # engine.commentdm answers these
+          "arthvan": "💬 Comment karein APP: Waypoint app ka link DM mein aayega."}
+TRIAL_GRADUATION = "SS_PERFORMANCE"   # Trial Reels: shown to non-followers first; Instagram shares it with followers when it does well
+STORY_MAX_S = 60.0                 # Instagram refuses a Story video over 60 s
+
+
+def mp4_seconds(video: Path) -> float | None:
+    """Duration from the MP4's own header (moov/mvhd), so no ffprobe is needed: the publish job does not install ffmpeg
+    (23 Oct 2026: the ffprobe check silently passed there). None when the file is not a readable MP4."""
+    import struct
+    try:
+        data = Path(video).read_bytes()
+    except OSError:
+        return None
+    i = data.find(b"mvhd")
+    if i < 4 or i + 32 > len(data):
+        return None
+    version = data[i + 4]
+    if version == 1:
+        scale, dur = struct.unpack(">IQ", data[i + 24:i + 36])
+    else:
+        scale, dur = struct.unpack(">II", data[i + 16:i + 24])
+    return dur / scale if scale else None
+
+
+def _too_long_for_story(video: Path, max_s: float = STORY_MAX_S) -> bool:
+    """True when the Story file runs over 60 s. Pieces made before 22 Oct 2026 carry a full-length story.mp4 that Instagram rejects
+    (status ERROR) on every run; those get no Story, the same rule as new pieces. An unreadable file (a test stub) counts as fitting."""
+    seconds = mp4_seconds(video)
+    return seconds is not None and seconds > max_s
 
 
 class InstagramError(Exception):
@@ -55,6 +85,15 @@ def _wait(cid: str, token: str, label: str, sleep=time.sleep, call=call, max_pol
     raise InstagramError(f"{label} container never finished")
 
 
+def _serves(url: str, head=None) -> bool:
+    try:
+        req = urllib.request.Request(url, method="HEAD")
+        with (head or (lambda r: urllib.request.urlopen(r, timeout=20, context=secrets.ssl_context())))(req) as r:
+            return r.status == 200
+    except Exception:
+        return False
+
+
 def media_url(piece: Piece, name: str, repo: str) -> str:
     sha = piece.ids.get("out_sha")
     if not sha:
@@ -62,9 +101,27 @@ def media_url(piece: Piece, name: str, repo: str) -> str:
     return f"https://raw.githubusercontent.com/{repo}/{sha}/out/{piece.id}/{name}"
 
 
+def resolved_media_url(piece: Piece, name: str, repo: str, head=None) -> str:
+    """media_url, checked: the recorded commit first; if GitHub does not serve the file there (a rebased commit, 22 Oct 2026),
+    the branch head, where the file lives for two weeks."""
+    url = media_url(piece, name, repo)
+    sha = piece.ids["out_sha"]
+    if _serves(url, head):
+        return url
+    alt = f"https://raw.githubusercontent.com/{repo}/main/out/{piece.id}/{name}"
+    if _serves(alt, head):
+        print(f"{piece.id}: {name} is not at {sha[:8]}; using the branch head", flush=True)
+        return alt
+    raise InstagramError(f"{piece.id}: {name} is served neither at {sha[:8]} nor on main")
+
+
 def caption_text(piece: Piece) -> str:
+    from .config import YOUTUBE_URLS
     ig = (piece.script or {}).get("captions", {}).get("instagram", {})
-    return (ig.get("caption", "").strip() + "\n\n" + " ".join(ig.get("hashtags", []))).strip()
+    link = YOUTUBE_URLS.get(piece.channel)
+    ask = DM_ASK.get(piece.channel, "")
+    parts = [ig.get("caption", "").strip()] + ([f"▶ Poori videos YouTube par: {link}"] if link else []) + ([ask] if ask else []) + [" ".join(ig.get("hashtags", []))]
+    return "\n\n".join(p for p in parts if p).strip()
 
 
 def _create_and_publish(ig_id: str, token: str, params: dict, label: str, call, sleep) -> str:
@@ -73,11 +130,13 @@ def _create_and_publish(ig_id: str, token: str, params: dict, label: str, call, 
     return call("POST", f"/{ig_id}/media_publish", token, {"creation_id": cid})["id"]
 
 
-def publish_piece(piece: Piece, env=None, call=call, sleep=time.sleep, root: Path = ROOT) -> Piece:
-    """Posts whatever is still missing for this piece: Reel, Story, then the carousel if the script asked for one."""
+def publish_piece(piece: Piece, env=None, call=call, sleep=time.sleep, root: Path = ROOT, check_media: bool = False) -> Piece:
+    """Posts whatever is still missing for this piece: Reel, Story, then the carousel if the script asked for one.
+    check_media=True (production) verifies each media URL on GitHub first and falls back to the branch head."""
     token = secrets.get("IG_ACCESS_TOKEN", env)
     ig_id = secrets.get("IG_USER_ID", env)
     repo = (env or {}).get("GITHUB_REPOSITORY") or DEFAULT_REPO
+    media_url = resolved_media_url if check_media else globals()["media_url"]
     caption = caption_text(piece)
     done = []
     try:
@@ -87,8 +146,20 @@ def publish_piece(piece: Piece, env=None, call=call, sleep=time.sleep, root: Pat
                 params["cover_url"] = media_url(piece, "cover.jpg", repo)       # the drawn reaction cover, same as the YouTube thumbnail
             else:
                 params["thumb_offset"] = str(THUMB_OFFSET_MS)
-            piece.ids["ig_reel_id"] = _create_and_publish(ig_id, token, params, "reel", call, sleep)
+            trial = {k: v for k, v in params.items() if k != "share_to_feed"}
+            trial["trial_params"] = json.dumps({"graduation_strategy": TRIAL_GRADUATION})
+            try:                                                            # Trial Reel first (founder, 23 Oct 2026); a plain Reel if refused
+                piece.ids["ig_reel_id"] = _create_and_publish(ig_id, token, trial, "trial reel", call, sleep)
+                piece.ids["ig_trial"] = TRIAL_GRADUATION
+            except InstagramError as e:
+                print(f"{piece.id}: trial reel refused ({str(e)[:120]}); posting a normal Reel", flush=True)
+                piece.ids["ig_reel_id"] = _create_and_publish(ig_id, token, params, "reel", call, sleep)
+                piece.ids["ig_trial"] = "no: " + str(e)[:80]
             pieces.save(piece, root); done.append("reel")
+        out_dir = Path(root) / "out" / piece.id
+        if not piece.ids.get("ig_story_id") and out_dir.exists() and (not (out_dir / "story.mp4").exists() or _too_long_for_story(out_dir / "story.mp4")):
+            piece.ids["ig_story_id"] = "skipped: Reel over 60 s"             # founder, 22 Oct 2026: no trimmed Story; the Reel keeps its full length
+            pieces.save(piece, root)
         if not piece.ids.get("ig_story_id"):
             piece.ids["ig_story_id"] = _create_and_publish(ig_id, token, {
                 "media_type": "STORIES", "video_url": media_url(piece, "story.mp4", repo)}, "story", call, sleep)

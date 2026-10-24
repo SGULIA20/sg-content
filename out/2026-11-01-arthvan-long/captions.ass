@@ -1,0 +1,402 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,86,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.39,Default,,0,0,0,,Lepakshi ka mashhoor latakta khamba,
+Dialogue: 0,0:00:02.39,0:00:04.56,Default,,0,0,0,,asal mein poora hawa mein nahi
+Dialogue: 0,0:00:04.56,0:00:04.78,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:04.78,0:00:06.30,Default,,0,0,0,,Jaanch mein paaya gaya ki iska
+Dialogue: 0,0:00:06.30,0:00:08.25,Default,,0,0,0,,bas kona zameen ko chhoota hai.
+Dialogue: 0,0:00:08.25,0:00:09.99,Default,,0,0,0,,Phir bhi log uske neeche se
+Dialogue: 0,0:00:09.99,0:00:11.51,Default,,0,0,0,,kapda nikaal dete hain.
+Dialogue: 0,0:00:11.51,0:00:12.81,Default,,0,0,0,,Toh yeh chamatkar hai,
+Dialogue: 0,0:00:12.81,0:00:13.46,Default,,0,0,0,,galti hai,
+Dialogue: 0,0:00:13.46,0:00:15.20,Default,,0,0,0,,ya kamaal ki engineering?
+Dialogue: 0,0:00:15.65,0:00:17.68,Default,,0,0,0,,Andhra Pradesh ke Lepakshi gaon mein
+Dialogue: 0,0:00:17.68,0:00:19.50,Default,,0,0,0,,Veerabhadra mandir khada hai.
+Dialogue: 0,0:00:19.50,0:00:21.12,Default,,0,0,0,,Iske khambon wale hall mein,
+Dialogue: 0,0:00:21.12,0:00:23.35,Default,,0,0,0,,baaki khambe chhat ko sambhaale khade
+Dialogue: 0,0:00:23.35,0:00:23.55,Default,,0,0,0,,hain.
+Dialogue: 0,0:00:23.55,0:00:25.57,Default,,0,0,0,,Lekin unke beech yeh khamba alag
+Dialogue: 0,0:00:25.57,0:00:26.18,Default,,0,0,0,,dikhta hai.
+Dialogue: 0,0:00:26.18,0:00:28.00,Default,,0,0,0,,Log kehte hain yeh khamba hawa
+Dialogue: 0,0:00:28.00,0:00:29.02,Default,,0,0,0,,mein latakta hai,
+Dialogue: 0,0:00:29.02,0:00:31.25,Default,,0,0,0,,jaise kisi ne use upar utha
+Dialogue: 0,0:00:31.25,0:00:31.65,Default,,0,0,0,,liya ho.
+Dialogue: 0,0:00:32.10,0:00:33.70,Default,,0,0,0,,Is video mein hum sabut ke
+Dialogue: 0,0:00:33.70,0:00:34.51,Default,,0,0,0,,saath chalenge.
+Dialogue: 0,0:00:34.51,0:00:36.31,Default,,0,0,0,,Shuru mein dekhenge ki granth kya
+Dialogue: 0,0:00:36.31,0:00:36.91,Default,,0,0,0,,kehta hai.
+Dialogue: 0,0:00:36.91,0:00:38.72,Default,,0,0,0,,Phir dekhenge jaanch mein kya mila,
+Dialogue: 0,0:00:38.72,0:00:40.73,Default,,0,0,0,,jaankar kahan alag raay rakhte hain,
+Dialogue: 0,0:00:40.73,0:00:42.33,Default,,0,0,0,,aur kya abhi tak koi nahi
+Dialogue: 0,0:00:42.33,0:00:42.73,Default,,0,0,0,,jaanta.
+Dialogue: 0,0:00:42.73,0:00:43.33,Default,,0,0,0,,Aakhir mein,
+Dialogue: 0,0:00:43.33,0:00:45.14,Default,,0,0,0,,aap wahan jaakar kya dekh sakte
+Dialogue: 0,0:00:45.14,0:00:45.34,Default,,0,0,0,,hain.
+Dialogue: 0,0:00:45.79,0:00:48.56,Default,,0,0,0,,Kahani shuru hoti hai Skanda Purana
+Dialogue: 0,0:00:48.56,0:00:48.77,Default,,0,0,0,,se.
+Dialogue: 0,0:00:48.77,0:00:50.47,Default,,0,0,0,,Purana yaani prachin granth,
+Dialogue: 0,0:00:50.47,0:00:51.32,Default,,0,0,0,,jismein devtaon,
+Dialogue: 0,0:00:51.32,0:00:53.66,Default,,0,0,0,,teerthon aur jagahon ki kathayein likhi
+Dialogue: 0,0:00:53.66,0:00:53.88,Default,,0,0,0,,hain.
+Dialogue: 0,0:00:53.88,0:00:55.58,Default,,0,0,0,,Is granth mein Lepakshi ka naam
+Dialogue: 0,0:00:55.58,0:00:56.22,Default,,0,0,0,,aata hai,
+Dialogue: 0,0:00:56.22,0:00:58.13,Default,,0,0,0,,aur bade aadar ke saath aata
+Dialogue: 0,0:00:58.13,0:00:58.34,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:58.34,0:01:00.69,Default,,0,0,0,,Yahin se is jagah ki pavitrata
+Dialogue: 0,0:01:00.69,0:01:01.75,Default,,0,0,0,,ki neev padti hai.
+Dialogue: 0,0:01:02.20,0:01:03.93,Default,,0,0,0,,Skanda Purana ke mutabik,
+Dialogue: 0,0:01:03.93,0:01:05.85,Default,,0,0,0,,Lepakshi divyakshetron mein se hai.
+Dialogue: 0,0:01:05.85,0:01:08.35,Default,,0,0,0,,Divyakshetra yaani aisi pavitra bhoomi,
+Dialogue: 0,0:01:08.35,0:01:10.66,Default,,0,0,0,,jahan devta ki khaas upasthiti maani
+Dialogue: 0,0:01:10.66,0:01:11.23,Default,,0,0,0,,jaati hai.
+Dialogue: 0,0:01:11.23,0:01:13.54,Default,,0,0,0,,Yeh jagah Bhagwan Shiv ke mahatvapurna
+Dialogue: 0,0:01:13.54,0:01:15.08,Default,,0,0,0,,teerthon mein gini jaati hai.
+Dialogue: 0,0:01:15.08,0:01:17.38,Default,,0,0,0,,Isliye yahan sadiyon se shraddhalu aate
+Dialogue: 0,0:01:17.38,0:01:17.96,Default,,0,0,0,,rahe hain.
+Dialogue: 0,0:01:18.41,0:01:20.97,Default,,0,0,0,,Yeh mandir Veerabhadra ko samarpit hai.
+Dialogue: 0,0:01:20.97,0:01:23.32,Default,,0,0,0,,Puranon ki kathaon mein Veerabhadra,
+Dialogue: 0,0:01:23.32,0:01:25.24,Default,,0,0,0,,Shiv ka ugra roop maane jaate
+Dialogue: 0,0:01:25.24,0:01:25.46,Default,,0,0,0,,hain.
+Dialogue: 0,0:01:25.46,0:01:27.59,Default,,0,0,0,,Garbhagriha mein door se patthar ki
+Dialogue: 0,0:01:27.59,0:01:28.66,Default,,0,0,0,,moorti dikhti hai,
+Dialogue: 0,0:01:28.66,0:01:29.73,Default,,0,0,0,,deep ki roshni mein.
+Dialogue: 0,0:01:29.73,0:01:31.65,Default,,0,0,0,,Shraddhalu haath jode khade hain,
+Dialogue: 0,0:01:31.65,0:01:34.00,Default,,0,0,0,,aur hawa mein agarbatti ki khushboo
+Dialogue: 0,0:01:34.00,0:01:34.21,Default,,0,0,0,,hai.
+Dialogue: 0,0:01:34.66,0:01:36.21,Default,,0,0,0,,Gaon ke naam ke peeche bhi
+Dialogue: 0,0:01:36.21,0:01:37.09,Default,,0,0,0,,kahani hai.
+Dialogue: 0,0:01:37.09,0:01:38.42,Default,,0,0,0,,Lok katha kehti hai,
+Dialogue: 0,0:01:38.42,0:01:40.63,Default,,0,0,0,,Ramayan mein ghayal Jatayu pakshi yahin
+Dialogue: 0,0:01:40.63,0:01:41.29,Default,,0,0,0,,gire the.
+Dialogue: 0,0:01:41.29,0:01:42.39,Default,,0,0,0,,Shri Ram ne kaha,
+Dialogue: 0,0:01:42.39,0:01:43.06,Default,,0,0,0,,'Le Pakshi',
+Dialogue: 0,0:01:43.06,0:01:44.38,Default,,0,0,0,,yaani utho pakshi.
+Dialogue: 0,0:01:44.38,0:01:45.05,Default,,0,0,0,,Wahi shabd,
+Dialogue: 0,0:01:45.05,0:01:45.71,Default,,0,0,0,,kehte hain,
+Dialogue: 0,0:01:45.71,0:01:47.47,Default,,0,0,0,,aage chalkar is gaon ka naam
+Dialogue: 0,0:01:47.47,0:01:48.58,Default,,0,0,0,,Lepakshi ban gaya.
+Dialogue: 0,0:01:49.03,0:01:51.33,Default,,0,0,0,,Ab aate hain mandir banwane wale
+Dialogue: 0,0:01:51.33,0:01:52.37,Default,,0,0,0,,Virupanna par.
+Dialogue: 0,0:01:52.37,0:01:53.83,Default,,0,0,0,,Lok katha ke mutabik,
+Dialogue: 0,0:01:53.83,0:01:55.50,Default,,0,0,0,,raja ke mantriyon ne un par
+Dialogue: 0,0:01:55.50,0:01:56.33,Default,,0,0,0,,ilzaam lagaya.
+Dialogue: 0,0:01:56.33,0:01:58.84,Default,,0,0,0,,Ilzaam tha ki unhone shahi khazane
+Dialogue: 0,0:01:58.84,0:02:00.72,Default,,0,0,0,,ka paisa mandir par uda diya.
+Dialogue: 0,0:02:00.72,0:02:01.34,Default,,0,0,0,,Yeh ilzaam,
+Dialogue: 0,0:02:01.34,0:02:02.60,Default,,0,0,0,,kahani kehti hai,
+Dialogue: 0,0:02:02.60,0:02:03.22,Default,,0,0,0,,jhootha tha,
+Dialogue: 0,0:02:03.22,0:02:05.10,Default,,0,0,0,,aur galat salaah par lagaya gaya
+Dialogue: 0,0:02:05.10,0:02:05.31,Default,,0,0,0,,tha.
+Dialogue: 0,0:02:05.76,0:02:07.30,Default,,0,0,0,,Kahani aage kehti hai,
+Dialogue: 0,0:02:07.30,0:02:10.00,Default,,0,0,0,,sazaa ka andaza lagakar Virupanna ne
+Dialogue: 0,0:02:10.00,0:02:11.55,Default,,0,0,0,,khud apni aankhein nikaal di.
+Dialogue: 0,0:02:11.55,0:02:13.67,Default,,0,0,0,,Unhone unhe mandir ki deewar par
+Dialogue: 0,0:02:13.67,0:02:14.05,Default,,0,0,0,,phenk diya.
+Dialogue: 0,0:02:14.05,0:02:15.40,Default,,0,0,0,,Aaj bhi deewar par laal se
+Dialogue: 0,0:02:15.40,0:02:16.75,Default,,0,0,0,,nishaan dikhaye jaate hain.
+Dialogue: 0,0:02:16.75,0:02:18.88,Default,,0,0,0,,Log inhe Virupanna ki aankhon ke
+Dialogue: 0,0:02:18.88,0:02:19.84,Default,,0,0,0,,nishaan kehte hain.
+Dialogue: 0,0:02:20.29,0:02:22.41,Default,,0,0,0,,Ab kahani se sabut ki taraf
+Dialogue: 0,0:02:22.41,0:02:23.05,Default,,0,0,0,,chalte hain.
+Dialogue: 0,0:02:23.05,0:02:24.11,Default,,0,0,0,,Sawaal seedha hai,
+Dialogue: 0,0:02:24.11,0:02:25.80,Default,,0,0,0,,kya yeh khamba sach mein hawa
+Dialogue: 0,0:02:25.80,0:02:26.23,Default,,0,0,0,,mein hai?
+Dialogue: 0,0:02:26.23,0:02:28.13,Default,,0,0,0,,Iske liye humein khambe ko dhyaan
+Dialogue: 0,0:02:28.13,0:02:29.19,Default,,0,0,0,,se dekhna hoga.
+Dialogue: 0,0:02:29.19,0:02:31.31,Default,,0,0,0,,Aur samajhna hoga ki yeh mandir
+Dialogue: 0,0:02:31.31,0:02:33.01,Default,,0,0,0,,aur iski chhat bani kaise.
+Dialogue: 0,0:02:33.46,0:02:36.05,Default,,0,0,0,,Yeh mandir Vijayanagara samrajya ke daur
+Dialogue: 0,0:02:36.05,0:02:36.44,Default,,0,0,0,,ka hai.
+Dialogue: 0,0:02:36.44,0:02:39.23,Default,,0,0,0,,Vijayanagara yaani dakshin Bharat ka bada
+Dialogue: 0,0:02:39.23,0:02:39.83,Default,,0,0,0,,samrajya,
+Dialogue: 0,0:02:39.83,0:02:41.42,Default,,0,0,0,,jiski rajdhani Hampi thi.
+Dialogue: 0,0:02:41.42,0:02:43.61,Default,,0,0,0,,Is samrajya ke kaarigar patthar ke
+Dialogue: 0,0:02:43.61,0:02:44.60,Default,,0,0,0,,kaam mein mashhoor the.
+Dialogue: 0,0:02:44.60,0:02:46.59,Default,,0,0,0,,Unke mandir aaj bhi apni barik
+Dialogue: 0,0:02:46.59,0:02:48.58,Default,,0,0,0,,nakkashi ke liye jaane jaate hain.
+Dialogue: 0,0:02:49.03,0:02:50.87,Default,,0,0,0,,Khamba granite ka bana hai.
+Dialogue: 0,0:02:50.87,0:02:53.11,Default,,0,0,0,,Granite yaani bahut sakht aur bhaari
+Dialogue: 0,0:02:53.11,0:02:53.51,Default,,0,0,0,,patthar,
+Dialogue: 0,0:02:53.51,0:02:55.35,Default,,0,0,0,,jo dakshin Bharat mein khoob milta
+Dialogue: 0,0:02:55.35,0:02:55.55,Default,,0,0,0,,hai.
+Dialogue: 0,0:02:55.55,0:02:57.59,Default,,0,0,0,,Is patthar ko kaatna aur tarashna
+Dialogue: 0,0:02:57.59,0:02:58.81,Default,,0,0,0,,aasan kaam nahi tha.
+Dialogue: 0,0:02:58.81,0:03:00.65,Default,,0,0,0,,Aur jab patthar itna bhaari ho,
+Dialogue: 0,0:03:00.65,0:03:02.69,Default,,0,0,0,,toh use hawa mein tikana aur
+Dialogue: 0,0:03:02.69,0:03:03.91,Default,,0,0,0,,bhi mushkil lagta hai.
+Dialogue: 0,0:03:04.36,0:03:05.89,Default,,0,0,0,,Yeh khamba mandap mein hai.
+Dialogue: 0,0:03:05.89,0:03:08.29,Default,,0,0,0,,Mandap yaani khambon par tika khula
+Dialogue: 0,0:03:08.29,0:03:08.51,Default,,0,0,0,,hall,
+Dialogue: 0,0:03:08.51,0:03:10.70,Default,,0,0,0,,jahan log baithte aur utsav hote.
+Dialogue: 0,0:03:10.70,0:03:12.88,Default,,0,0,0,,Lepakshi ke is mandap mein bahut
+Dialogue: 0,0:03:12.88,0:03:13.98,Default,,0,0,0,,saare khambe hain.
+Dialogue: 0,0:03:13.98,0:03:15.29,Default,,0,0,0,,Khambon par nartakiyon,
+Dialogue: 0,0:03:15.29,0:03:17.91,Default,,0,0,0,,sangeetkaaron aur devtaon ki nakkashi hai,
+Dialogue: 0,0:03:17.91,0:03:19.88,Default,,0,0,0,,jo dekhne mein jeevit lagti hai.
+Dialogue: 0,0:03:20.33,0:03:22.23,Default,,0,0,0,,Ab sabse zaroori sabut.
+Dialogue: 0,0:03:22.23,0:03:24.36,Default,,0,0,0,,Jab khambe ki physical jaanch hui,
+Dialogue: 0,0:03:24.36,0:03:26.50,Default,,0,0,0,,yaani use paas se naapa aur
+Dialogue: 0,0:03:26.50,0:03:27.21,Default,,0,0,0,,dekha gaya,
+Dialogue: 0,0:03:27.21,0:03:28.63,Default,,0,0,0,,toh tasveer badal gayi.
+Dialogue: 0,0:03:28.63,0:03:31.24,Default,,0,0,0,,Khamba poori tarah hawa mein nahi
+Dialogue: 0,0:03:31.24,0:03:31.48,Default,,0,0,0,,hai.
+Dialogue: 0,0:03:31.48,0:03:32.42,Default,,0,0,0,,Iska kona,
+Dialogue: 0,0:03:32.42,0:03:33.14,Default,,0,0,0,,halka sa,
+Dialogue: 0,0:03:33.14,0:03:34.56,Default,,0,0,0,,zameen ko chhoota hai.
+Dialogue: 0,0:03:34.56,0:03:36.69,Default,,0,0,0,,Yahi is raaz ki pehli chaabi
+Dialogue: 0,0:03:36.69,0:03:36.93,Default,,0,0,0,,hai.
+Dialogue: 0,0:03:37.38,0:03:37.78,Default,,0,0,0,,Socho,
+Dialogue: 0,0:03:37.78,0:03:39.77,Default,,0,0,0,,jab aap kapda neeche se nikaalte
+Dialogue: 0,0:03:39.77,0:03:39.97,Default,,0,0,0,,ho,
+Dialogue: 0,0:03:39.97,0:03:41.97,Default,,0,0,0,,toh woh zyaadatar hisse ke neeche
+Dialogue: 0,0:03:41.97,0:03:43.16,Default,,0,0,0,,se nikal jaata hai.
+Dialogue: 0,0:03:43.16,0:03:45.36,Default,,0,0,0,,Isliye lagta hai khamba latak raha
+Dialogue: 0,0:03:45.36,0:03:45.56,Default,,0,0,0,,hai.
+Dialogue: 0,0:03:45.56,0:03:47.55,Default,,0,0,0,,Lekin kone par patthar aur zameen
+Dialogue: 0,0:03:47.55,0:03:49.15,Default,,0,0,0,,ka sampark bana rehta hai.
+Dialogue: 0,0:03:49.15,0:03:50.94,Default,,0,0,0,,Bhram yahin se paida hota hai.
+Dialogue: 0,0:03:51.39,0:03:53.40,Default,,0,0,0,,Archaeological Survey of India,
+Dialogue: 0,0:03:53.40,0:03:54.21,Default,,0,0,0,,yaani ASI,
+Dialogue: 0,0:03:54.21,0:03:56.42,Default,,0,0,0,,desh ke purane smarakon ki dekhbhaal
+Dialogue: 0,0:03:56.42,0:03:57.02,Default,,0,0,0,,karti hai.
+Dialogue: 0,0:03:57.02,0:03:59.63,Default,,0,0,0,,Lepakshi ka Veerabhadra mandir bhi ASI
+Dialogue: 0,0:03:59.63,0:04:00.84,Default,,0,0,0,,ki suraksha mein hai.
+Dialogue: 0,0:04:00.84,0:04:03.05,Default,,0,0,0,,Isliye khambe ko todna ya hilana
+Dialogue: 0,0:04:03.05,0:04:03.85,Default,,0,0,0,,aaj mana hai.
+Dialogue: 0,0:04:03.85,0:04:05.26,Default,,0,0,0,,Jaanch bhi bahut sambhal kar,
+Dialogue: 0,0:04:05.26,0:04:06.87,Default,,0,0,0,,bina nuksaan ke hoti hai.
+Dialogue: 0,0:04:07.32,0:04:09.17,Default,,0,0,0,,Toh sabse bada sabut yeh hai
+Dialogue: 0,0:04:09.17,0:04:11.64,Default,,0,0,0,,ki khamba gravity ko chunauti nahi
+Dialogue: 0,0:04:11.64,0:04:12.05,Default,,0,0,0,,deta.
+Dialogue: 0,0:04:12.05,0:04:13.70,Default,,0,0,0,,Gravity yaani woh khinchav,
+Dialogue: 0,0:04:13.70,0:04:15.14,Default,,0,0,0,,jo har cheez ko zameen ki
+Dialogue: 0,0:04:15.14,0:04:16.17,Default,,0,0,0,,taraf kheenchta hai.
+Dialogue: 0,0:04:16.17,0:04:17.81,Default,,0,0,0,,Khamba zameen ko chhoota hai,
+Dialogue: 0,0:04:17.81,0:04:19.46,Default,,0,0,0,,bas itna kam ki aankh dhokha
+Dialogue: 0,0:04:19.46,0:04:20.28,Default,,0,0,0,,kha jaati hai.
+Dialogue: 0,0:04:20.73,0:04:21.96,Default,,0,0,0,,Ab sawaal aata hai,
+Dialogue: 0,0:04:21.96,0:04:24.41,Default,,0,0,0,,agar khamba poora bojh nahi uthata,
+Dialogue: 0,0:04:24.41,0:04:25.84,Default,,0,0,0,,toh chhat kaise tiki hai?
+Dialogue: 0,0:04:25.84,0:04:27.89,Default,,0,0,0,,Jawab chhat ki banawat mein chhupa
+Dialogue: 0,0:04:27.89,0:04:28.09,Default,,0,0,0,,hai.
+Dialogue: 0,0:04:28.09,0:04:29.93,Default,,0,0,0,,Is mandap ki chhat corbelled hai,
+Dialogue: 0,0:04:29.93,0:04:32.18,Default,,0,0,0,,aur dry-stone tareeke se bani hai.
+Dialogue: 0,0:04:32.18,0:04:34.23,Default,,0,0,0,,Chaliye in shabdon ko aasan bhasha
+Dialogue: 0,0:04:34.23,0:04:35.25,Default,,0,0,0,,mein samajhte hain.
+Dialogue: 0,0:04:35.70,0:04:37.68,Default,,0,0,0,,Corbel yaani patthar ke upar patthar,
+Dialogue: 0,0:04:37.68,0:04:39.48,Default,,0,0,0,,har parat thodi aage nikal kar
+Dialogue: 0,0:04:39.48,0:04:39.84,Default,,0,0,0,,rakhna.
+Dialogue: 0,0:04:39.84,0:04:41.10,Default,,0,0,0,,Aise parat dar parat,
+Dialogue: 0,0:04:41.10,0:04:42.72,Default,,0,0,0,,patthar beech mein aakar mil jaate
+Dialogue: 0,0:04:42.72,0:04:42.90,Default,,0,0,0,,hain.
+Dialogue: 0,0:04:42.90,0:04:44.70,Default,,0,0,0,,Isse chhat ka vazan seedha neeche
+Dialogue: 0,0:04:44.70,0:04:45.60,Default,,0,0,0,,girne ki bajaye,
+Dialogue: 0,0:04:45.60,0:04:47.40,Default,,0,0,0,,bagal ke saharon par baant jaata
+Dialogue: 0,0:04:47.40,0:04:47.58,Default,,0,0,0,,hai.
+Dialogue: 0,0:04:48.03,0:04:50.44,Default,,0,0,0,,Dry-stone yaani patthar jode gaye bina
+Dialogue: 0,0:04:50.44,0:04:51.65,Default,,0,0,0,,gare ya cement ke.
+Dialogue: 0,0:04:51.65,0:04:52.25,Default,,0,0,0,,Na choona,
+Dialogue: 0,0:04:52.25,0:04:53.06,Default,,0,0,0,,na masala,
+Dialogue: 0,0:04:53.06,0:04:54.87,Default,,0,0,0,,bas patthar ka patthar par sahi
+Dialogue: 0,0:04:54.87,0:04:55.27,Default,,0,0,0,,baithna.
+Dialogue: 0,0:04:55.27,0:04:57.69,Default,,0,0,0,,Kaarigar patthar ko itni barikee se
+Dialogue: 0,0:04:57.69,0:04:58.49,Default,,0,0,0,,tarashte the,
+Dialogue: 0,0:04:58.49,0:05:00.10,Default,,0,0,0,,ki woh apne vazan se hi
+Dialogue: 0,0:05:00.10,0:05:01.51,Default,,0,0,0,,aapas mein phans jaate the.
+Dialogue: 0,0:05:01.96,0:05:02.59,Default,,0,0,0,,Ab socho,
+Dialogue: 0,0:05:02.59,0:05:04.69,Default,,0,0,0,,mandap ke saare khambe aapas mein
+Dialogue: 0,0:05:04.69,0:05:06.57,Default,,0,0,0,,jude jaal ki tarah kaam karte
+Dialogue: 0,0:05:06.57,0:05:06.78,Default,,0,0,0,,hain.
+Dialogue: 0,0:05:06.78,0:05:08.25,Default,,0,0,0,,Upar ki chhat in sab par
+Dialogue: 0,0:05:08.25,0:05:09.30,Default,,0,0,0,,bojh baant deti hai.
+Dialogue: 0,0:05:09.30,0:05:11.39,Default,,0,0,0,,Isliye kisi khambe ka thoda sa
+Dialogue: 0,0:05:11.39,0:05:11.81,Default,,0,0,0,,hatna,
+Dialogue: 0,0:05:11.81,0:05:13.70,Default,,0,0,0,,poori chhat ko nahi girata.
+Dialogue: 0,0:05:13.70,0:05:14.54,Default,,0,0,0,,Jaal mazboot ho,
+Dialogue: 0,0:05:14.54,0:05:16.63,Default,,0,0,0,,toh kamzor kadi bhi tiki rehti
+Dialogue: 0,0:05:16.63,0:05:16.84,Default,,0,0,0,,hai.
+Dialogue: 0,0:05:17.29,0:05:20.41,Default,,0,0,0,,Yahi Vijayanagara kaarigaron ki asli kamaal
+Dialogue: 0,0:05:20.41,0:05:21.00,Default,,0,0,0,,ki baat hai.
+Dialogue: 0,0:05:21.00,0:05:22.76,Default,,0,0,0,,Unke paas aaj ke computer ya
+Dialogue: 0,0:05:22.76,0:05:23.93,Default,,0,0,0,,machine nahi the.
+Dialogue: 0,0:05:23.93,0:05:26.08,Default,,0,0,0,,Phir bhi unhone aisa dhancha banaya
+Dialogue: 0,0:05:26.08,0:05:27.64,Default,,0,0,0,,jo bojh ko barabar baant de.
+Dialogue: 0,0:05:27.64,0:05:29.98,Default,,0,0,0,,Latakta khamba isi dhanche ki jhalak
+Dialogue: 0,0:05:29.98,0:05:30.18,Default,,0,0,0,,hai,
+Dialogue: 0,0:05:30.18,0:05:31.94,Default,,0,0,0,,jo aaj bhi humein hairan karti
+Dialogue: 0,0:05:31.94,0:05:32.13,Default,,0,0,0,,hai.
+Dialogue: 0,0:05:32.58,0:05:34.30,Default,,0,0,0,,Toh banaya kaise gaya hoga?
+Dialogue: 0,0:05:34.30,0:05:36.44,Default,,0,0,0,,Sabse sambhavit tareeka yeh hai.
+Dialogue: 0,0:05:36.44,0:05:38.37,Default,,0,0,0,,Shuru mein khambe khade kiye gaye,
+Dialogue: 0,0:05:38.37,0:05:39.87,Default,,0,0,0,,phir upar beam aur chhat ke
+Dialogue: 0,0:05:39.87,0:05:40.94,Default,,0,0,0,,patthar rakhe gaye.
+Dialogue: 0,0:05:40.94,0:05:42.23,Default,,0,0,0,,Jab chhat poori judi,
+Dialogue: 0,0:05:42.23,0:05:43.73,Default,,0,0,0,,toh bojh saare jaal mein bant
+Dialogue: 0,0:05:43.73,0:05:43.94,Default,,0,0,0,,gaya.
+Dialogue: 0,0:05:43.94,0:05:45.87,Default,,0,0,0,,Tab kisi khambe ka neeche se
+Dialogue: 0,0:05:45.87,0:05:47.80,Default,,0,0,0,,thoda hatna bhi chhat ko girne
+Dialogue: 0,0:05:47.80,0:05:48.66,Default,,0,0,0,,nahi deta.
+Dialogue: 0,0:05:49.11,0:05:51.44,Default,,0,0,0,,Ab aata hai sabse dilchasp hissa.
+Dialogue: 0,0:05:51.44,0:05:53.78,Default,,0,0,0,,Khamba zameen se thoda upar kyon
+Dialogue: 0,0:05:53.78,0:05:54.01,Default,,0,0,0,,hai?
+Dialogue: 0,0:05:54.01,0:05:56.11,Default,,0,0,0,,Is par jaankaron ki raay alag
+Dialogue: 0,0:05:56.11,0:05:56.81,Default,,0,0,0,,alag hai.
+Dialogue: 0,0:05:56.81,0:05:58.44,Default,,0,0,0,,Aur har paksh ke paas apna
+Dialogue: 0,0:05:58.44,0:05:58.91,Default,,0,0,0,,tark hai.
+Dialogue: 0,0:05:58.91,0:05:59.38,Default,,0,0,0,,Chaliye,
+Dialogue: 0,0:05:59.38,0:06:01.48,Default,,0,0,0,,sabut ke saath dono raayein suniye,
+Dialogue: 0,0:06:01.48,0:06:03.11,Default,,0,0,0,,bina jaldi faisla kiye.
+Dialogue: 0,0:06:03.56,0:06:04.78,Default,,0,0,0,,Kuch jaankar kehte hain,
+Dialogue: 0,0:06:04.78,0:06:06.21,Default,,0,0,0,,yeh jaan boojh kar banaya gaya
+Dialogue: 0,0:06:06.21,0:06:06.42,Default,,0,0,0,,tha.
+Dialogue: 0,0:06:06.42,0:06:09.07,Default,,0,0,0,,Kaarigar apni kala dikhana chahte the.
+Dialogue: 0,0:06:09.07,0:06:11.11,Default,,0,0,0,,Woh batana chahte the ki unki
+Dialogue: 0,0:06:11.11,0:06:12.33,Default,,0,0,0,,chhat itni mazboot hai,
+Dialogue: 0,0:06:12.33,0:06:14.57,Default,,0,0,0,,ki khamba bina poore sahare ke
+Dialogue: 0,0:06:14.57,0:06:15.59,Default,,0,0,0,,bhi tika rahe.
+Dialogue: 0,0:06:15.59,0:06:17.43,Default,,0,0,0,,Yaani soch samajh kar banaya gaya
+Dialogue: 0,0:06:17.43,0:06:18.04,Default,,0,0,0,,ajooba.
+Dialogue: 0,0:06:18.49,0:06:20.42,Default,,0,0,0,,Baaki jaankar alag baat kehte hain.
+Dialogue: 0,0:06:20.42,0:06:22.35,Default,,0,0,0,,Unke hisaab se khamba shuru mein
+Dialogue: 0,0:06:22.35,0:06:24.27,Default,,0,0,0,,poori tarah zameen par tika tha.
+Dialogue: 0,0:06:24.27,0:06:25.81,Default,,0,0,0,,Phir samay ke saath neeche ki
+Dialogue: 0,0:06:25.81,0:06:27.36,Default,,0,0,0,,zameen asmaan roop se baith gayi.
+Dialogue: 0,0:06:27.36,0:06:29.09,Default,,0,0,0,,Ise neev ka baithna kehte hain,
+Dialogue: 0,0:06:29.09,0:06:31.21,Default,,0,0,0,,yaani zameen ka dheere dheere dabna.
+Dialogue: 0,0:06:31.66,0:06:32.89,Default,,0,0,0,,Is paksh ke paas aur bhi
+Dialogue: 0,0:06:32.89,0:06:33.30,Default,,0,0,0,,tark hai.
+Dialogue: 0,0:06:33.30,0:06:34.74,Default,,0,0,0,,Bhookamp ke halke jhatke,
+Dialogue: 0,0:06:34.74,0:06:36.59,Default,,0,0,0,,jinhe seismic tremors kehte hain,
+Dialogue: 0,0:06:36.59,0:06:38.24,Default,,0,0,0,,sadiyon mein kai baar aaye honge.
+Dialogue: 0,0:06:38.24,0:06:40.90,Default,,0,0,0,,Aise jhatke dheere dheere bhaari pattharon
+Dialogue: 0,0:06:40.90,0:06:42.34,Default,,0,0,0,,ko bhi hila sakte hain.
+Dialogue: 0,0:06:42.34,0:06:44.40,Default,,0,0,0,,Shayad isi se khamba apni jagah
+Dialogue: 0,0:06:44.40,0:06:45.22,Default,,0,0,0,,se sarak gaya.
+Dialogue: 0,0:06:45.67,0:06:46.93,Default,,0,0,0,,Toh sabut wahi hai,
+Dialogue: 0,0:06:46.93,0:06:49.02,Default,,0,0,0,,par padhne ke tareeke alag hain.
+Dialogue: 0,0:06:49.02,0:06:51.54,Default,,0,0,0,,Kuch log ise kaarigaron ka iraada
+Dialogue: 0,0:06:51.54,0:06:52.17,Default,,0,0,0,,maante hain.
+Dialogue: 0,0:06:52.17,0:06:54.06,Default,,0,0,0,,Kuch ise samay aur zameen ka
+Dialogue: 0,0:06:54.06,0:06:55.11,Default,,0,0,0,,asar maante hain.
+Dialogue: 0,0:06:55.11,0:06:56.78,Default,,0,0,0,,Abhi tak koi paksh baaki ko
+Dialogue: 0,0:06:56.78,0:06:59.09,Default,,0,0,0,,poori tarah galat saabit nahi kar
+Dialogue: 0,0:06:59.09,0:06:59.51,Default,,0,0,0,,paaya hai.
+Dialogue: 0,0:06:59.96,0:07:01.74,Default,,0,0,0,,Aur yahan hum koi faisla nahi
+Dialogue: 0,0:07:01.74,0:07:02.33,Default,,0,0,0,,sunayenge.
+Dialogue: 0,0:07:02.33,0:07:03.12,Default,,0,0,0,,Aap khud socho,
+Dialogue: 0,0:07:03.12,0:07:05.30,Default,,0,0,0,,kya itne nipun kaarigar galti se
+Dialogue: 0,0:07:05.30,0:07:06.09,Default,,0,0,0,,aisa chhodte?
+Dialogue: 0,0:07:06.09,0:07:07.67,Default,,0,0,0,,Ya phir sadiyon ki zameen aur
+Dialogue: 0,0:07:07.67,0:07:09.26,Default,,0,0,0,,jhatkon ne apna khel khela?
+Dialogue: 0,0:07:09.26,0:07:11.04,Default,,0,0,0,,Har jawab apne aap mein dilchasp
+Dialogue: 0,0:07:11.04,0:07:11.23,Default,,0,0,0,,hai,
+Dialogue: 0,0:07:11.23,0:07:13.41,Default,,0,0,0,,aur har jawab kaarigaron ki mehnat
+Dialogue: 0,0:07:13.41,0:07:14.20,Default,,0,0,0,,dikhata hai.
+Dialogue: 0,0:07:14.65,0:07:15.80,Default,,0,0,0,,Ab woh kahani,
+Dialogue: 0,0:07:15.80,0:07:18.10,Default,,0,0,0,,jo sabse zyada sunayi jaati hai.
+Dialogue: 0,0:07:18.10,0:07:20.62,Default,,0,0,0,,Kehte hain angrezon ke zamane mein,
+Dialogue: 0,0:07:20.62,0:07:22.69,Default,,0,0,0,,koi angrez engineer is raaz ko
+Dialogue: 0,0:07:22.69,0:07:23.38,Default,,0,0,0,,kholne aaya.
+Dialogue: 0,0:07:23.38,0:07:25.22,Default,,0,0,0,,Woh jaanna chahta tha ki chhat
+Dialogue: 0,0:07:25.22,0:07:27.28,Default,,0,0,0,,ko asal mein kaun sambhaal raha
+Dialogue: 0,0:07:27.28,0:07:27.51,Default,,0,0,0,,hai.
+Dialogue: 0,0:07:27.51,0:07:29.58,Default,,0,0,0,,Aur usne khambe ko hi pakad
+Dialogue: 0,0:07:29.58,0:07:29.81,Default,,0,0,0,,liya.
+Dialogue: 0,0:07:30.26,0:07:31.66,Default,,0,0,0,,Lok katha ke mutabik,
+Dialogue: 0,0:07:31.66,0:07:34.07,Default,,0,0,0,,usne khambe ko hatane ya hilane
+Dialogue: 0,0:07:34.07,0:07:34.87,Default,,0,0,0,,ki koshish ki.
+Dialogue: 0,0:07:34.87,0:07:36.88,Default,,0,0,0,,Khamba apni jagah se khisak gaya,
+Dialogue: 0,0:07:36.88,0:07:38.69,Default,,0,0,0,,aur tab se thoda tirchha latak
+Dialogue: 0,0:07:38.69,0:07:39.29,Default,,0,0,0,,raha hai.
+Dialogue: 0,0:07:39.29,0:07:40.49,Default,,0,0,0,,Kahani kehti hai,
+Dialogue: 0,0:07:40.49,0:07:42.50,Default,,0,0,0,,chhat hilne lagi aur engineer ne
+Dialogue: 0,0:07:42.50,0:07:43.50,Default,,0,0,0,,darr kar kaam rok diya.
+Dialogue: 0,0:07:43.95,0:07:44.94,Default,,0,0,0,,Lekin dhyan dijiye,
+Dialogue: 0,0:07:44.94,0:07:46.93,Default,,0,0,0,,is kahani ka koi pukhta sabut
+Dialogue: 0,0:07:46.93,0:07:47.93,Default,,0,0,0,,nahi mila hai.
+Dialogue: 0,0:07:47.93,0:07:49.91,Default,,0,0,0,,Kisi engineer ne sach mein khambe
+Dialogue: 0,0:07:49.91,0:07:51.11,Default,,0,0,0,,ko chheda ya nahi,
+Dialogue: 0,0:07:51.11,0:07:52.70,Default,,0,0,0,,yeh aaj tak saabit nahi hua.
+Dialogue: 0,0:07:52.70,0:07:54.69,Default,,0,0,0,,Isliye hum ise legend ke khaane
+Dialogue: 0,0:07:54.69,0:07:55.48,Default,,0,0,0,,mein rakhte hain,
+Dialogue: 0,0:07:55.48,0:07:57.27,Default,,0,0,0,,itihaas ke khaane mein nahi.
+Dialogue: 0,0:07:57.72,0:07:59.59,Default,,0,0,0,,Ab baat karte hain un sawaalon
+Dialogue: 0,0:07:59.59,0:07:59.80,Default,,0,0,0,,ki,
+Dialogue: 0,0:07:59.80,0:08:02.08,Default,,0,0,0,,jinke jawab abhi bhi adhure hain.
+Dialogue: 0,0:08:02.08,0:08:03.75,Default,,0,0,0,,Khamba jaan boojh kar latkaya gaya,
+Dialogue: 0,0:08:03.75,0:08:05.00,Default,,0,0,0,,ya baad mein khisak gaya?
+Dialogue: 0,0:08:05.00,0:08:07.07,Default,,0,0,0,,Is par aakhri faisla abhi baaki
+Dialogue: 0,0:08:07.07,0:08:07.28,Default,,0,0,0,,hai.
+Dialogue: 0,0:08:07.28,0:08:08.94,Default,,0,0,0,,Aur shayad naye sabut aane par
+Dialogue: 0,0:08:08.94,0:08:10.40,Default,,0,0,0,,hi yeh gutthi suljhegi.
+Dialogue: 0,0:08:10.85,0:08:11.92,Default,,0,0,0,,Aur bhi sawaal hai.
+Dialogue: 0,0:08:11.92,0:08:13.64,Default,,0,0,0,,Is mandap ki chhat bagal ke
+Dialogue: 0,0:08:13.64,0:08:15.57,Default,,0,0,0,,dhakke ko kitna jhel sakti hai,
+Dialogue: 0,0:08:15.57,0:08:17.50,Default,,0,0,0,,iska poora hisaab nahi hua.
+Dialogue: 0,0:08:17.50,0:08:19.87,Default,,0,0,0,,Bagal ka dhakka yaani lateral load,
+Dialogue: 0,0:08:19.87,0:08:21.58,Default,,0,0,0,,jo bhookamp ya tez hawa se
+Dialogue: 0,0:08:21.58,0:08:23.73,Default,,0,0,0,,patthar ko side mein dhakelta hai.
+Dialogue: 0,0:08:24.18,0:08:24.60,Default,,0,0,0,,Matlab,
+Dialogue: 0,0:08:24.60,0:08:27.94,Default,,0,0,0,,Vijayanagara ke kaarigaron ne kitni mazbooti
+Dialogue: 0,0:08:27.94,0:08:28.57,Default,,0,0,0,,haasil ki,
+Dialogue: 0,0:08:28.57,0:08:30.66,Default,,0,0,0,,yeh abhi tak poori tarah naapa
+Dialogue: 0,0:08:30.66,0:08:31.28,Default,,0,0,0,,nahi gaya.
+Dialogue: 0,0:08:31.28,0:08:33.58,Default,,0,0,0,,Shayad aage ki research ise kholegi.
+Dialogue: 0,0:08:33.58,0:08:35.46,Default,,0,0,0,,Tab tak yeh khamba sawaal bankar
+Dialogue: 0,0:08:35.46,0:08:36.09,Default,,0,0,0,,khada hai,
+Dialogue: 0,0:08:36.09,0:08:36.72,Default,,0,0,0,,ya kahein,
+Dialogue: 0,0:08:36.72,0:08:38.18,Default,,0,0,0,,sawaal bankar latka hai.
+Dialogue: 0,0:08:38.63,0:08:40.10,Default,,0,0,0,,Ab aapke kaam ki baat.
+Dialogue: 0,0:08:40.10,0:08:42.79,Default,,0,0,0,,Agar aap Lepakshi jaana chahte hain,
+Dialogue: 0,0:08:42.79,0:08:44.01,Default,,0,0,0,,toh kya kya dekhein?
+Dialogue: 0,0:08:44.01,0:08:45.97,Default,,0,0,0,,Yeh gaon Andhra Pradesh mein hai,
+Dialogue: 0,0:08:45.97,0:08:47.92,Default,,0,0,0,,aur mandir aaj bhi poojit hai.
+Dialogue: 0,0:08:47.92,0:08:48.17,Default,,0,0,0,,Jaayein,
+Dialogue: 0,0:08:48.17,0:08:50.12,Default,,0,0,0,,toh shraddha aur mandir ke niyam
+Dialogue: 0,0:08:50.12,0:08:51.59,Default,,0,0,0,,ka poora dhyan rakhein.
+Dialogue: 0,0:08:52.04,0:08:54.69,Default,,0,0,0,,Mandap mein jaakar latakta khamba dekhiye.
+Dialogue: 0,0:08:54.69,0:08:56.46,Default,,0,0,0,,Log aaj bhi uske neeche se
+Dialogue: 0,0:08:56.46,0:08:57.79,Default,,0,0,0,,kapda nikaalte hain,
+Dialogue: 0,0:08:57.79,0:08:59.34,Default,,0,0,0,,aur ise shubh maante hain.
+Dialogue: 0,0:08:59.34,0:09:01.33,Default,,0,0,0,,Yeh aastha ki parampara hai.
+Dialogue: 0,0:09:01.33,0:09:02.21,Default,,0,0,0,,Bas dhyan rahe,
+Dialogue: 0,0:09:02.21,0:09:04.64,Default,,0,0,0,,purane patthar ko dhakka ya nuksaan
+Dialogue: 0,0:09:04.64,0:09:05.53,Default,,0,0,0,,na pahunche,
+Dialogue: 0,0:09:05.53,0:09:07.52,Default,,0,0,0,,kyunki yeh dharohar sabki hai.
+Dialogue: 0,0:09:07.97,0:09:10.35,Default,,0,0,0,,Deewar par Virupanna ki aankhon wale
+Dialogue: 0,0:09:10.35,0:09:11.14,Default,,0,0,0,,nishaan dhoondhiye.
+Dialogue: 0,0:09:11.14,0:09:12.92,Default,,0,0,0,,Chhat aur khambon ki rang birangi
+Dialogue: 0,0:09:12.92,0:09:14.11,Default,,0,0,0,,chitrakari dekhiye.
+Dialogue: 0,0:09:14.11,0:09:15.89,Default,,0,0,0,,Aur mandir ke paas granite se
+Dialogue: 0,0:09:15.89,0:09:18.07,Default,,0,0,0,,bani vishal Nandi ki moorti zaroor
+Dialogue: 0,0:09:18.07,0:09:18.47,Default,,0,0,0,,dekhiye,
+Dialogue: 0,0:09:18.47,0:09:20.05,Default,,0,0,0,,jo door se hi nazar aati
+Dialogue: 0,0:09:20.05,0:09:20.25,Default,,0,0,0,,hai.
+Dialogue: 0,0:09:20.70,0:09:22.82,Default,,0,0,0,,Toh aakhir mein sabut kya kehta
+Dialogue: 0,0:09:22.82,0:09:23.05,Default,,0,0,0,,hai?
+Dialogue: 0,0:09:23.05,0:09:24.70,Default,,0,0,0,,Khamba hawa mein nahi,
+Dialogue: 0,0:09:24.70,0:09:26.34,Default,,0,0,0,,par lagbhag latakta hai.
+Dialogue: 0,0:09:26.34,0:09:27.99,Default,,0,0,0,,Chhat ka bojh khambon ke jaal
+Dialogue: 0,0:09:27.99,0:09:29.16,Default,,0,0,0,,par bant jaata hai.
+Dialogue: 0,0:09:29.16,0:09:30.57,Default,,0,0,0,,Aur yeh jaan boojh kar tha
+Dialogue: 0,0:09:30.57,0:09:31.98,Default,,0,0,0,,ya samay ka asar,
+Dialogue: 0,0:09:31.98,0:09:34.10,Default,,0,0,0,,yeh abhi bhi khula sawaal hai.
+Dialogue: 0,0:09:34.55,0:09:36.07,Default,,0,0,0,,Ab aapse seedha sawaal.
+Dialogue: 0,0:09:36.07,0:09:37.38,Default,,0,0,0,,Aapko kya lagta hai,
+Dialogue: 0,0:09:37.38,0:09:39.99,Default,,0,0,0,,yeh khamba kaarigaron ka iraada tha,
+Dialogue: 0,0:09:39.99,0:09:41.95,Default,,0,0,0,,ya zameen ke baithne ka asar?
+Dialogue: 0,0:09:41.95,0:09:43.03,Default,,0,0,0,,Comment mein bataiye.
+Dialogue: 0,0:09:43.03,0:09:44.99,Default,,0,0,0,,Agli baar hum chalenge Hampi,
+Dialogue: 0,0:09:44.99,0:09:46.95,Default,,0,0,0,,Vijayanagara ki rajdhani,
+Dialogue: 0,0:09:46.95,0:09:48.91,Default,,0,0,0,,uske pattharon ke raaz dhoondhne.

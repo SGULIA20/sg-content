@@ -1,0 +1,241 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "analyst-view",
+   "number": 4.22,
+   "quote": "Nippon Life India Asset Management Ltd. is expected to report a 22.3% on-year rise in consolidated net profit to INR 4.22 billion for the September quarter, according to the average of estimates from 15 brokerages.",
+   "source_date": "2026-10-21",
+   "source_name": "Informist",
+   "source_url": "https://www.informistmedia.com/earnings-outlook-nippon-life-q2-net-profit-seen-rising-22-on-year/",
+   "text": "Nippon Life India Asset Management, which oversees mutual fund investments and SIPs for millions of household savers, is estimated to report a quarterly net profit of 4.22 billion INR.",
+   "unit": "billion INR"
+  }
+ ],
+ "id": "2026-10-25-sglearning-short",
+ "ids": {
+  "ig_story_id": "skipped: Reel over 60 s",
+  "out_sha": "1ebc5b3985db993822d616c1350162e946f95940",
+  "yt_id": "iBFNFPp6A0Y"
+ },
+ "kind": "short",
+ "publish_day": "2026-10-25",
+ "reasons": [
+  "try 1: length: 130 words, allowed 150-230; advice: stock tip",
+  "try 2: advice: stock tip; length: 128 words, allowed 150-230; advice: stock tip",
+  "try 3: numbers without a source: 92, 27, 27",
+  "try 1: length: 145 words, allowed 150-230; numbers without a source: 22.3",
+  "remake: clipped ending / repeated line / tone note (22 Oct 2026)"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Aapki SIP se kisne profit kamaya? 💸\nResults day pe ek fund house ka net profit lagbhag 4.22 billion rupaye estimate hai.\nYeh kamai aati hai expense ratio se, jo market upar ho ya neeche, kat-ta rehta hai.\nAapko apne fund ka expense ratio pata hai?\nYeh investment advice nahi hai.\nUs bhai ko bhejo jo kehta hai results sirf traders ke liye hote hain.",
+    "hashtags": [
+     "#SIP",
+     "#MutualFunds",
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#PersonalFinanceIndia",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Results day sirf traders ka nahi. Ek fund house ka quarterly profit lagbhag 4.22 billion rupaye estimate hai, aur fees aapki SIP se kat-ti hai, market upar ho ya neeche. Aapko apne fund ka expense ratio pata hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Results day sirf traders ka khel nahi hai, aapki SIP bhi is kahani mein hai. Ek fund house ka quarterly net profit lagbhag 4.22 billion rupaye estimate hai, aur woh paisa aap jaise SIP walon ki fees se banta hai. Expense ratio yaani fund se har saal chupchap kati fees, market upar ho ya neeche. Us bhai ko bhejo jo kehta hai results sirf traders ke liye hote hain.",
+    "tags": [
+     "SIP",
+     "mutual fund",
+     "expense ratio",
+     "AMC",
+     "quarterly results",
+     "Nippon Life India AMC",
+     "results day",
+     "personal finance",
+     "Hinglish finance",
+     "Learning with SG"
+    ],
+    "title": "SIP fees: AMC ka 4.22 billion profit kaise?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Aapko apne fund ka expense ratio pata hai? Haan ya nahi, comment kariye.",
+  "hook": "Results ka din hai, aur Bhai ke phone par notification bajta hai.",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "Morning in a small Indian living room, BHAI in a hoodie lounging on a sofa, his phone lighting up with a news alert, relaxed and half-interested, sunlight through the window",
+     "type": "art"
+    },
+    "vo": "Results ka din hai, aur Bhai ke phone par notification bajta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "Close view of a phone screen held in a hand showing a long scrolling list of company logos as abstract colourful tiles, a busy market news feel, no readable text",
+     "type": "art"
+    },
+    "vo": "Swiggy, HPCL, Colgate, sab aaj apna quarterly profit batayenge."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI tosses his phone onto the sofa cushion with a shrug and a confident smirk, MUMMY in a saree in the background holding a cup of chai, casual morning mood",
+     "type": "art"
+    },
+    "vo": "Bhai kehta hai, yeh traders ka khel hai. Main share nahi kharidta, main toh bas har mahine SIP karta hoon."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI leaning back with hands behind his head, a thought bubble showing a piggy bank dropping coins into a big glass jar labelled only with a coin symbol, carefree expression",
+     "type": "art"
+    },
+    "vo": "SIP yaani har mahine fixed paisa mutual fund mein. Fund manager sambhalega, mujhe results se kya."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "what happened",
+    "visual": {
+     "card": null,
+     "prompt": "A tall glass office building of a fund house at midday, people in office wear walking in, a giant glowing jar of coins visible through the glass lobby, slightly ominous tone",
+     "type": "art"
+    },
+    "vo": "Lekin usi list mein ek naam aur tha, Nippon Life India AMC."
+   },
+   {
+    "facts_used": [],
+    "label": "what happened",
+    "visual": {
+     "card": null,
+     "prompt": "Inside a fund house office, rows of desks with screens showing rising and falling lines, a stream of small coins flowing in from many tiny houses drawn along the wall, busy daytime",
+     "type": "art"
+    },
+    "vo": "AMC yaani asset management company, woh company jo aapke SIP ka paisa chalati hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "what happened",
+    "visual": {
+     "card": null,
+     "prompt": "A group of analysts around a conference table looking at a huge stack of currency bundles growing on the table, impressed faces, evening light through office blinds",
+     "type": "art"
+    },
+    "vo": "Analysts ka andaaza hai, is quarter uska net profit lagbhag 4.22 billion rupaye rahega."
+   },
+   {
+    "facts_used": [],
+    "label": "what happened",
+    "visual": {
+     "card": null,
+     "prompt": "A long winding queue of ordinary Indian people, a teacher, a delivery rider, a young office worker, each dropping a coin into one giant funnel leading to the fund house building, afternoon",
+     "type": "art"
+    },
+    "vo": "Yeh paisa aata kahan se hai? Aapke jaise lakhon SIP walon se."
+   },
+   {
+    "facts_used": [],
+    "label": "what happened",
+    "visual": {
+     "card": null,
+     "prompt": "A tiny pair of scissors quietly snipping a thin slice off a tall stack of coins inside a glass jar, BHAI's jar on a shelf at home, unnoticed, soft night light",
+     "type": "art"
+    },
+    "vo": "Har fund har saal ek chhoti fees kaat-ta hai, jise expense ratio kehte hain. Yeh fees fund ki value se chupchap kat jaati hai, koi bill nahi aata."
+   },
+   {
+    "facts_used": [],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "Split panel: on the left a market line going up with sunshine, on the right a line going down with rain, in both halves the same small scissors snipping coins from a jar",
+     "type": "art"
+    },
+    "vo": "Ab twist suniye. Market upar jaaye ya neeche, yeh fees har haal mein kat-ti hai."
+   },
+   {
+    "facts_used": [],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI sitting up straight on the sofa at night, phone in hand, eyes wide in realisation, his face lit by the phone screen, chai cup gone cold beside him",
+     "type": "art"
+    },
+    "vo": "Matlab fund house ki kamai zyadatar aapke paise ke size se aati hai, return se nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "what to do",
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt sitting beside BHAI at the dining table, calmly pointing at BHAI's phone, BHAI nodding and paying attention, warm evening light",
+     "type": "art"
+    },
+    "vo": "Toh aaj apne fund ka expense ratio dekhiye. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "end question",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI looking straight at the viewer with a curious half smile, holding up his phone, cozy living room at night, inviting mood",
+     "type": "art"
+    },
+    "vo": "Aapko apne fund ka expense ratio pata hai? Haan ya nahi, comment kariye."
+   }
+  ],
+  "thumbnail": {
+   "scene": "BHAI stares wide-eyed at his phone at night while tiny scissors snip coins from a glass jar beside him",
+   "words": [
+    "HIDDEN",
+    "FEES"
+   ]
+  },
+  "title": "Aapki *SIP* se kisne kamaya profit? 💸"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  4.61,
+  9.78,
+  16.43,
+  23.68,
+  28.69,
+  35.18,
+  41.39,
+  46.64,
+  56.37,
+  62.86,
+  69.03,
+  73.72
+ ],
+ "topic": {
+  "link": "https://www.livemint.com/market/stock-market-news/q2-results-2026-today-schedule-swiggy-adani-energy-hpcl-53-more-firms-to-declare-quarterly-earnings-oct-22-tue-list-11792636869326.html",
+  "published": "2026-10-22T03:18:04+00:00",
+  "rank": 3,
+  "source": "Mint Markets",
+  "summary": "Q2 results 2026 today, schedule: Key companies set to declare their quarterly earnings today include Swiggy, Adani Energy Solutions, Hindustan Petroleum Corporation, Adani Total Gas, Colgate Palmolive (India).",
+  "target_minutes": null,
+  "title": "Q2 results 2026 today, schedule: Swiggy, Adani Energy, HPCL 53 more firms to declare quarterly earnings; Oct 22 Tue list",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-10-22T14:59:46+00:00",
+ "writer": "claude"
+}

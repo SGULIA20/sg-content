@@ -6,7 +6,8 @@ from pathlib import Path
 from . import pieces, slots, telegram
 from .config import BUDGETS, CHANNELS, ROOT, today_ist
 
-BUFFER_ALERT_DAYS = 4                 # founder, 21 Oct 2026: always keep 4-5 days in hand; below 4 is an alert
+BUFFER_ALERT_DAYS = 7                 # founder, 22 Oct 2026: seven days of Shorts in hand, always
+LONG_ALERT_COUNT = 4                  # and four finished longs per channel
 TOKEN_ALERT_DAYS = 7
 
 
@@ -43,16 +44,18 @@ def buffer_days(root: Path, today: date, horizon: int = 14) -> dict:
     return out
 
 
-def run_summary(root: Path, day: date) -> str:
+def run_summary(root: Path, day: date, qday: date | None = None) -> str:
     rows = pieces.list_all(root)
     today = [p for p in rows if _touched_today(p, day)]
     made = [p for p in today if p.status in ("uploaded", "posted")]
     rejected = [p for p in today if p.status == "rejected"]
     failed = [p for p in today if p.status.startswith("failed-") or p.status == "qa_failed"]
     posted = [p for p in today if p.status == "posted"]
-    voice = int(_json(Path(root) / "logs" / "voice-budget.json").get(day.isoformat(), 0))
-    inr = float(_json(Path(root) / "logs" / "image-spend.json").get(day.isoformat(), {}).get("inr", 0))
-    usd = float(_json(Path(root) / "logs" / "claude-spend.json").get(day.isoformat(), {}).get("usd", 0))
+    from .config import today_pacific
+    qday = (qday or today_pacific()).isoformat()                         # the meters are keyed by Google's quota day, not the India date
+    voice = int(_json(Path(root) / "logs" / "voice-budget.json").get(qday, 0))
+    inr = float(_json(Path(root) / "logs" / "image-spend.json").get(qday, {}).get("inr", 0))
+    usd = float(_json(Path(root) / "logs" / "claude-spend.json").get(qday, {}).get("usd", 0))
     buf = buffer_days(root, day)
     lines = [f"SG Content {day.isoformat()}: made {len(made)}, rejected {len(rejected)}, failed {len(failed)}, posted {len(posted)}"]
     for p in made:
@@ -60,17 +63,36 @@ def run_summary(root: Path, day: date) -> str:
     for p in rejected + failed:
         lines.append(f"  - {p.id}: {p.status}: {p.reasons[-1] if p.reasons else ''}")
     lines.append("buffer: " + ", ".join(f"{ch} {n} day{'s' if n != 1 else ''}" for ch, n in buf.items()))
-    lines.append(f"spend: voice {voice}/{BUDGETS['voice_requests_per_day']} requests, images ₹{inr:.0f}, Claude ${usd:.2f}")
+    batch_lines = 0
+    ledger = Path(root) / "logs" / "voice-batch.jsonl"
+    if ledger.exists():
+        for row in ledger.read_text().splitlines():
+            try:
+                r = json.loads(row)
+            except ValueError:
+                continue
+            if r.get("at", "").startswith(day.isoformat()):
+                batch_lines += int(r.get("lines", 0))
+    lines.append(f"spend: voice {voice}/{BUDGETS['voice_requests_per_day']} requests + {batch_lines} batch lines, images ₹{inr:.0f}, Claude ${usd:.2f}")
     if telegram.paused(root):
         lines.append("PAUSED (/resume to continue)")
     return "\n".join(lines)
+
+
+def longs_ready(root: Path, today: date, horizon: int = 35) -> dict:
+    """Per channel: finished longs (uploaded or posted) among the upcoming long slots."""
+    ready = {p.id for p in pieces.list_all(root) if p.status in ("uploaded", "posted")}
+    return {ch: sum(1 for d in slots.publish_dates(ch, "long", today, horizon) if slots.piece_id(d, ch, "long") in ready) for ch in CHANNELS}
 
 
 def alerts(root: Path, day: date) -> list:
     out = []
     for ch, n in buffer_days(root, day).items():
         if n < BUFFER_ALERT_DAYS:
-            out.append(f"{ch}: buffer is {n} day(s); the next Short slot has nothing ready")
+            out.append(f"{ch}: Shorts buffer is {n} day(s), target {BUFFER_ALERT_DAYS}")
+    for ch, n in longs_ready(root, day).items():
+        if n < LONG_ALERT_COUNT:
+            out.append(f"{ch}: {n} long video(s) ready, target {LONG_ALERT_COUNT}")
     runs_path = Path(root) / "logs" / "runs.jsonl"
     if runs_path.exists():
         runs = [json.loads(l) for l in runs_path.read_text().splitlines() if l.strip()]

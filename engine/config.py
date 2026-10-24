@@ -23,20 +23,25 @@ class Channel:
     youtube_category: str
 
 
+YOUTUBE_URLS = {"sglearning": "https://www.youtube.com/@sanjeev_gulia?sub_confirmation=1",       # opens the subscribe prompt (founder, 22 Oct 2026)
+                "arthvan": "https://www.youtube.com/@sgmythworld?sub_confirmation=1"}
+
+
 CHANNELS = {
     "sglearning": Channel(
         key="sglearning", youtube_env_token="YT_SGLEARNING_REFRESH_TOKEN", display_name="Learning with SG",
-        niche="Paise ki khabar, seedhi baat", short_days=frozenset({MON, TUE, WED, THU, FRI, SAT, SUN}), long_days=frozenset({WED, SUN}),
+        niche="Paise ki khabar, seedhi baat", short_days=frozenset({MON, TUE, WED, THU, FRI, SAT, SUN}), long_days=frozenset({WED, SAT}),   # founder's table, 21 Oct 2026
         short_publish_ist="20:00", long_publish_ist="19:00", ig_slot_ist="14:00", hashtags_key="sglearning",
         youtube_category="22"),
     "arthvan": Channel(
         key="arthvan", youtube_env_token="YT_ARTHVAN_REFRESH_TOKEN", display_name="SG-MYTH-WORLD",
-        niche="Sabut ke saath", short_days=frozenset({MON, WED, FRI}), long_days=frozenset({TUE, SAT}),
+        niche="Sabut ke saath", short_days=frozenset({MON, TUE, WED, THU, FRI, SAT, SUN}), long_days=frozenset({THU, SUN}),   # founder's table, 21 Oct 2026: daily Shorts
         short_publish_ist="20:00", long_publish_ist="19:00", ig_slot_ist="21:30", hashtags_key="arthvan",
         youtube_category="27"),
 }
 
-BUDGETS = {"voice_requests_per_day": 80, "image_inr_per_day": 250, "claude_usd_per_day": 3.0}   # ceilings, not targets: a normal day is 2 Shorts + 1 long ≈ ₹190 of pictures (21 Oct 2026)
+BUDGETS = {"voice_requests_per_day": 80, "image_inr_per_day": 900, "claude_usd_per_day": 10.0,     # fill-the-stock rate (22 Oct 2026); back to 450 / 6 once 7 days + 4 longs are in hand
+           "image_inr_per_month": 6000, "claude_usd_per_month": 45.0}      # hard monthly ceilings (founder, 22 Oct 2026): production stops, never the card   # raised 22 Oct 2026 to build the 7-day / 4-long buffer; a steady day is ≈ ₹160 + $1   # ceilings, not targets: a normal day is 2 Shorts + 1 long ≈ ₹190 of pictures (21 Oct 2026)
 
 VIDEO = {"short": (1080, 1920), "long": (1920, 1080), "fps": 30}
 
@@ -78,8 +83,9 @@ def is_story(channel: str, kind: str) -> bool:
 
 
 STORY_WORDS = (150, 230)                      # a 60-90 s story at the clone's ~2.5 words/s
-STORY_MAX_S = 95.0                            # YouTube Shorts and Reels allow up to 3 minutes; stories stop at about 90 s
+STORY_MAX_S = 178.0                           # YouTube Shorts allow up to 3 minutes; the writer aims for 60-90 s but nothing is ever cut or sped up (founder, 22 Oct 2026)
 
 ENABLED_KINDS = {"short", "long"}             # longs twice a week per channel (founder, 20 Oct 2026)
 
+LINKEDIN_VIDEOS = False                       # founder, 22 Oct 2026: LinkedIn gets picture posts only; no Short or Reel video goes there from this repo
 UNLISTED_KINDS = set()                        # founder 21 Oct 2026: longs go public on schedule like Shorts (`python -m engine.youtube --go-public` still releases any unlisted ones)

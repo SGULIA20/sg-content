@@ -1,3 +1,4 @@
+import json
 from datetime import date
 
 import pytest
@@ -57,7 +58,8 @@ def test_publish_piece_posts_reel_and_story_not_carousel(tmp_path):
     assert kinds == ["REELS", "STORIES"]
     assert p.ids["ig_reel_id"] == "mc1" and p.ids["ig_story_id"] == "mc2" and "ig_post_id" not in p.ids
     reel = next(c for c in fc.calls if c[2].get("media_type") == "REELS")
-    assert reel[2]["video_url"].endswith("/reel.mp4") and reel[2]["share_to_feed"] == "true" and DISCLAIMER in reel[2]["caption"]
+    assert reel[2]["video_url"].endswith("/reel.mp4") and DISCLAIMER in reel[2]["caption"]
+    assert json.loads(reel[2]["trial_params"]) == {"graduation_strategy": "SS_PERFORMANCE"} and "share_to_feed" not in reel[2]   # Trial Reel first
     assert pieces.load(p.id, root=tmp_path).ids["ig_reel_id"] == "mc1"                 # saved after each success
 
 
@@ -115,3 +117,59 @@ def test_reel_gets_cover_url_when_cover_exists(tmp_path):
     instagram.publish_piece(p, {"IG_ACCESS_TOKEN": "t", "IG_USER_ID": "u", "GITHUB_REPOSITORY": "r"}, call=fc, sleep=lambda s: None, root=tmp_path)
     reel = next(c for c in fc.calls if c[2].get("media_type") == "REELS")
     assert reel[2]["cover_url"].endswith("/cover.jpg")
+
+
+def test_media_url_falls_back_to_the_branch_when_the_recorded_commit_does_not_serve_the_file():
+    class R:
+        def __init__(self, status): self.status = status
+        def __enter__(self): return self
+        def __exit__(self, *a): return False
+    p = _piece()
+    seen = []
+    def head(req):
+        seen.append(req.full_url); return R(200 if "/main/" in req.full_url else 404)
+    url = instagram.resolved_media_url(p, "reel.mp4", "o/r", head=head)
+    assert url == "https://raw.githubusercontent.com/o/r/main/out/2026-10-20-sglearning-short/reel.mp4" and len(seen) == 2
+    assert instagram.resolved_media_url(p, "reel.mp4", "o/r", head=lambda req: R(200)) == "https://raw.githubusercontent.com/o/r/abc123/out/2026-10-20-sglearning-short/reel.mp4"
+    with pytest.raises(instagram.InstagramError):
+        instagram.resolved_media_url(p, "reel.mp4", "o/r", head=lambda req: R(404))
+
+
+def test_caption_carries_the_channels_youtube_link_before_the_hashtags():
+    cap = instagram.caption_text(_piece())
+    assert "https://www.youtube.com/@sanjeev_gulia?sub_confirmation=1" in cap and cap.rstrip().endswith("#RBI")
+    assert cap.index("youtube.com") < cap.index("#PaiseKiKhabar")
+
+
+def test_a_story_file_over_60_s_is_skipped_not_retried_forever(tmp_path, monkeypatch):
+    # 21 Oct 2026: a piece made before the no-trim rule had a 91 s story.mp4; Instagram answered ERROR on every run
+    out = tmp_path / "out" / "2026-10-20-sglearning-short"
+    out.mkdir(parents=True)
+    (out / "story.mp4").write_bytes(b"x")
+    monkeypatch.setattr(instagram, "_too_long_for_story", lambda video, max_s=60.0: True)
+    fc = FakeCall()
+    p = instagram.publish_piece(_piece(), {"IG_ACCESS_TOKEN": "t", "IG_USER_ID": "u", "GITHUB_REPOSITORY": "r"}, call=fc, sleep=lambda s: None, root=tmp_path)
+    assert [c[2].get("media_type") for c in fc.calls if c[1].endswith("/media")] == ["REELS"]
+    assert p.ids["ig_story_id"].startswith("skipped")
+
+
+def test_a_refused_trial_reel_falls_back_to_a_normal_reel(tmp_path):
+    class NoTrial(FakeCall):
+        def __call__(self, method, path, token, params=None):
+            if params and params.get("trial_params"):
+                raise instagram.InstagramError("HTTP 400: trial reels not available")
+            return super().__call__(method, path, token, params)
+    fc = NoTrial()
+    p = instagram.publish_piece(_piece(), {"IG_ACCESS_TOKEN": "t", "IG_USER_ID": "u", "GITHUB_REPOSITORY": "r"}, call=fc, sleep=lambda s: None, root=tmp_path)
+    reel = next(c for c in fc.calls if (c[2] or {}).get("media_type") == "REELS")
+    assert reel[2]["share_to_feed"] == "true" and p.ids["ig_reel_id"] and p.ids["ig_trial"].startswith("no")
+
+
+def test_mp4_length_is_read_from_the_file_header_without_ffprobe(tmp_path):
+    import struct
+    mvhd = b"mvhd" + bytes([0, 0, 0, 0]) + struct.pack(">II", 0, 0) + struct.pack(">II", 1000, 91267)   # version 0: timescale, duration
+    f = tmp_path / "story.mp4"
+    f.write_bytes(b"\x00\x00\x00\x20ftypisom" + b"\x00" * 16 + b"\x00\x00\x00\x6cmoov\x00\x00\x00\x64" + mvhd + b"\x00" * 80)
+    assert abs(instagram.mp4_seconds(f) - 91.267) < 0.001 and instagram._too_long_for_story(f)
+    (tmp_path / "stub.mp4").write_bytes(b"x")
+    assert instagram.mp4_seconds(tmp_path / "stub.mp4") is None and not instagram._too_long_for_story(tmp_path / "stub.mp4")

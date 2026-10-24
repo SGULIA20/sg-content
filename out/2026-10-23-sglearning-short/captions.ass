@@ -1,0 +1,59 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.05,Default,,0,0,0,,Subah chai ke saath,
+Dialogue: 0,0:00:01.05,0:00:02.73,Default,,0,0,0,,Bhai ke phone par khabar aayi.
+Dialogue: 0,0:00:02.73,0:00:03.78,Default,,0,0,0,,Meta ki kamai,
+Dialogue: 0,0:00:03.78,0:00:05.46,Default,,0,0,0,,Wall Street ki umeed se zyada
+Dialogue: 0,0:00:05.46,0:00:05.88,Default,,0,0,0,,nikli.
+Dialogue: 0,0:00:06.33,0:00:07.64,Default,,0,0,0,,Bhai ki har mahine ek SIP
+Dialogue: 0,0:00:07.64,0:00:08.13,Default,,0,0,0,,jaati hai,
+Dialogue: 0,0:00:08.13,0:00:09.11,Default,,0,0,0,,ek foreign tech fund mein.
+Dialogue: 0,0:00:09.11,0:00:09.76,Default,,0,0,0,,Woh kehta hai,
+Dialogue: 0,0:00:09.76,0:00:11.07,Default,,0,0,0,,duniya ki badi companies,
+Dialogue: 0,0:00:11.07,0:00:12.05,Default,,0,0,0,,mera paisa wahin.
+Dialogue: 0,0:00:12.50,0:00:13.36,Default,,0,0,0,,Usne socha,
+Dialogue: 0,0:00:13.36,0:00:14.44,Default,,0,0,0,,kamai badhi hai,
+Dialogue: 0,0:00:14.44,0:00:15.74,Default,,0,0,0,,toh fund bhi chamkega.
+Dialogue: 0,0:00:16.19,0:00:17.55,Default,,0,0,0,,Logic seedha laga,
+Dialogue: 0,0:00:17.55,0:00:18.69,Default,,0,0,0,,achhi company,
+Dialogue: 0,0:00:18.69,0:00:19.60,Default,,0,0,0,,achha result,
+Dialogue: 0,0:00:19.60,0:00:20.51,Default,,0,0,0,,achha return.
+Dialogue: 0,0:00:20.96,0:00:23.07,Default,,0,0,0,,Isliye usne SIP badhane ka man
+Dialogue: 0,0:00:23.07,0:00:23.71,Default,,0,0,0,,bana liya,
+Dialogue: 0,0:00:23.71,0:00:25.40,Default,,0,0,0,,fund ke andar dekhe bina.
+Dialogue: 0,0:00:25.85,0:00:27.77,Default,,0,0,0,,Par usi khabar mein ek aur
+Dialogue: 0,0:00:27.77,0:00:28.49,Default,,0,0,0,,line thi,
+Dialogue: 0,0:00:28.49,0:00:30.17,Default,,0,0,0,,jo Bhai ne padhi nahi.
+Dialogue: 0,0:00:30.17,0:00:32.33,Default,,0,0,0,,Meta is saal AI par 145
+Dialogue: 0,0:00:32.33,0:00:34.49,Default,,0,0,0,,billion dollar tak kharch karegi.
+Dialogue: 0,0:00:34.94,0:00:36.67,Default,,0,0,0,,Isko capex kehte hain,
+Dialogue: 0,0:00:36.67,0:00:39.38,Default,,0,0,0,,yaani data centre aur machines par
+Dialogue: 0,0:00:39.38,0:00:40.37,Default,,0,0,0,,bada kharcha.
+Dialogue: 0,0:00:40.37,0:00:41.11,Default,,0,0,0,,Aaj kharcha,
+Dialogue: 0,0:00:41.11,0:00:42.10,Default,,0,0,0,,kamai shayad kal.
+Dialogue: 0,0:00:42.55,0:00:44.51,Default,,0,0,0,,Kharcha itna bada ki free cash
+Dialogue: 0,0:00:44.51,0:00:46.04,Default,,0,0,0,,flow minus mein chala gaya.
+Dialogue: 0,0:00:46.04,0:00:48.00,Default,,0,0,0,,Free cash flow yaani saare kharche
+Dialogue: 0,0:00:48.00,0:00:49.31,Default,,0,0,0,,ke baad jo cash bacha.
+Dialogue: 0,0:00:49.76,0:00:51.09,Default,,0,0,0,,Ab twist suniye,
+Dialogue: 0,0:00:51.09,0:00:53.41,Default,,0,0,0,,Bhai ke fund ka 10.38 percent
+Dialogue: 0,0:00:53.41,0:00:55.40,Default,,0,0,0,,hissa sirf Meta hai.
+Dialogue: 0,0:00:55.85,0:00:57.35,Default,,0,0,0,,Matlab Bhai ki SIP bhi is
+Dialogue: 0,0:00:57.35,0:00:58.64,Default,,0,0,0,,AI daav mein shaamil hai.
+Dialogue: 0,0:00:58.64,0:00:59.72,Default,,0,0,0,,Headline nahi,
+Dialogue: 0,0:00:59.72,0:01:01.86,Default,,0,0,0,,fund ke andar ki companies dekhiye.
+Dialogue: 0,0:01:01.86,0:01:04.01,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:01:04.46,0:01:06.36,Default,,0,0,0,,Aapki SIP ke andar kaunsi company
+Dialogue: 0,0:01:06.36,0:01:07.22,Default,,0,0,0,,sabse badi hai,
+Dialogue: 0,0:01:07.22,0:01:07.74,Default,,0,0,0,,pata hai?

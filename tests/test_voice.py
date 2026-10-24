@@ -1,3 +1,4 @@
+from pathlib import Path
 import base64
 import io
 import json
@@ -118,6 +119,7 @@ def test_say_uses_prebuilt_voice_names_through_generate_content(tmp_path):
         return 200, {"candidates": [{"content": {"parts": [{"inlineData": {"mimeType": "audio/L16;rate=24000", "data": base64.b64encode(pcm).decode()}}]}}]}
     d = voice.say("Namaste.", "Puck", tmp_path / "a.wav", key="k", cache_dir=tmp_path / "c", budget=tmp_path / "b.json", post=post)
     assert seen["url"].endswith(":generateContent") and seen["body"]["generationConfig"]["speechConfig"]["voiceConfig"]["prebuiltVoiceConfig"]["voiceName"] == "Puck"
+    assert seen["body"]["contents"][0]["parts"][0]["text"] == "Namaste."          # the style note is never in the spoken text (prebuilt voices read it aloud)
     assert d == pytest.approx(1.0, abs=0.05)
 
 
@@ -144,3 +146,78 @@ def test_lines_are_paced_under_ten_a_minute(tmp_path, monkeypatch):
     voice.say("one", "voice_x", tmp_path / "1.wav", **kw)
     voice.say("two", "voice_x", tmp_path / "2.wav", **kw)
     assert slept == [6.5]
+
+
+def _speech_like(path, parts, rate=24000, gap=0.6):
+    """Loud noisy bursts (one per text) separated by `gap` seconds of silence, like narration with paragraph pauses."""
+    import numpy as np
+    rng = np.random.default_rng(1)
+    chunks = []
+    for secs in parts:
+        chunks.append((rng.normal(0, 6000, int(secs * rate))).astype(np.int16))
+        chunks.append(np.zeros(int(gap * rate), dtype=np.int16))
+    pcm = np.concatenate(chunks[:-1])
+    with wave.open(str(path), "wb") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(rate); w.writeframes(pcm.tobytes())
+    return path
+
+
+def test_split_group_cuts_at_the_pauses_nearest_each_scenes_word_share(tmp_path):
+    texts = ["one two three four five six", "seven eight nine ten eleven twelve", "thirteen fourteen fifteen sixteen seventeen eighteen"]
+    g = _speech_like(tmp_path / "g.wav", [2.0, 2.0, 2.0])
+    parts = voice.split_group(g, texts, [tmp_path / f"s{i}.wav" for i in range(3)])
+    assert parts and [p.name for p, _d in parts] == ["s0.wav", "s1.wav", "s2.wav"]
+    assert all(1.9 <= d <= 2.9 for _p, d in parts) and abs(sum(d for _p, d in parts) - 7.2) < 0.05
+
+
+def test_split_group_gives_up_when_pauses_do_not_match(tmp_path):
+    g = _speech_like(tmp_path / "g.wav", [6.0])                                   # one burst, no pause at all
+    assert voice.split_group(g, ["a b c", "d e f"], [tmp_path / "x.wav", tmp_path / "y.wav"]) is None
+
+
+def test_batched_uses_one_request_per_group_and_falls_back_per_line(tmp_path):
+    calls = []
+    def fake_say(text, vid, out, **kw):
+        calls.append(text)
+        n = text.count(voice.JOIN) + 1
+        _speech_like(out, [1.0] * n) if n > 1 or "solo" in text else _speech_like(out, [1.0], gap=0)
+        return 1.0 * n
+    texts = ["a a a", "b b b", "c c c", "d d d", "e e e"]
+    out = voice.batched(texts, "Puck", tmp_path / "vo", say_fn=fake_say, group=4, verify=False)
+    assert len(out) == 5 and [p.name for p, _d in out] == [f"vo{i:02d}.wav" for i in range(5)]
+    assert len(calls) == 2 and calls[0] == voice.JOIN.join(texts[:4]) and calls[1] == "e e e"      # 2 requests instead of 5
+    calls.clear()
+    def no_pause_say(text, vid, out, **kw):
+        calls.append(text); _speech_like(out, [1.0], gap=0); return 1.0                                  # the group came back without pauses
+    out = voice.batched(["p p", "q q"], "Puck", tmp_path / "vo2", say_fn=no_pause_say, group=4, verify=False)
+    assert len(out) == 2 and calls == [voice.JOIN.join(["p p", "q q"]), "p p", "q q"]                     # fallback: the lines one by one
+
+
+def test_segment_matches_checks_both_edges():
+    assert voice.segment_matches("Raat ko bhai ka phone chamka, news thi Zerodha par ab US stocks milenge.", "Raat ko Bhai ka phone chamka, news thi, Zerodha par ab US stocks milenge.")
+    assert not voice.segment_matches("Bhai uchhal pada bola ab Nvidia Tesla", "Bhai uchhal pada, bola, ab Nvidia, Tesla, Amazon, sab phone se khareedunga.")
+    assert not voice.segment_matches("Amazon, sab phone se khareedunga. Uska logic seedha tha, ye companies duniya chalati hain.", "Uska logic seedha tha, yeh companies duniya chalati hain, toh paisa bhi badhega.")
+
+
+def test_batched_falls_back_when_a_segment_does_not_read_back(tmp_path):
+    calls = []
+    def fake_say(text, vid, out, **kw):
+        calls.append(text); n = text.count(voice.JOIN) + 1; _speech_like(out, [1.0] * n); return float(n)
+    out = voice.batched(["a a a", "b b b"], "Puck", tmp_path / "vo", say_fn=fake_say, verify=lambda wav, text: "b" not in text)
+    assert len(out) == 2 and calls == [voice.JOIN.join(["a a a", "b b b"]), "a a a", "b b b"]
+
+
+def test_line_ok_flags_double_and_cut_lines():
+    text = "ek do teen chaar paanch chhe saat aath"
+    assert voice.line_ok(Path("x.wav"), text, transcribe_fn=lambda w: "ek do teen chaar paanch chhe saat aath")[0]
+    assert not voice.line_ok(Path("x.wav"), text, transcribe_fn=lambda w: "ek do teen chaar paanch chhe saat aath ek do teen chaar paanch chhe saat aath")[0]
+    assert not voice.line_ok(Path("x.wav"), text, transcribe_fn=lambda w: "ek do teen")[0]
+
+
+def test_verified_lines_resynthesises_a_line_heard_twice(tmp_path):
+    made = []
+    def fake_say(text, vid, out, cache_dir=None, **kw):
+        made.append(text); Path(out).write_bytes(b"w"); return 1.0
+    heard = iter(["a b c d e", "a b c d e a b c d e", "a b c d e"])            # line 2 comes back doubled once, then clean
+    out = voice.verified_lines(["a b c d e", "a b c d e!"], "voice_x", tmp_path / "vo", say_fn=fake_say, transcribe_fn=lambda w: next(heard), cache_dir=tmp_path / "c")
+    assert len(out) == 2 and made == ["a b c d e", "a b c d e!", "a b c d e!"]

@@ -109,12 +109,23 @@ def _about_positions(text: str) -> list:
     return [m.end() for m in ABOUT.finditer(text)]
 
 
-def match(script_text: str, facts: list, library: list, tolerance: float = 0.005) -> list:
-    known = _known_values(list(facts) + list(library))
+INDEX_NAME = re.compile(r"\b(nifty(?:\s+(?:next|midcap|smallcap|bank|it|auto|pharma|fmcg|metal|realty|psu bank))?|sensex|bse|s&p)\s*$", re.IGNORECASE)
+
+
+def _index_name_before(text: str, pos: int) -> bool:
+    """"Nifty 50", "Nifty 500 TRI", "BSE 100": the number is part of an index's name, not a claim."""
+    return bool(INDEX_NAME.search(text[max(0, pos - 30):pos]))
+
+
+def match(script_text: str, facts: list, library: list, tolerance: float = 0.005, context: tuple = ()) -> list:
+    """`context`: the topic's own words (its title); a number the topic itself names ("500 rupaye ki SIP") is the subject, not a claim."""
+    known = _known_values(list(facts) + list(library)) + [v for c in context for v in numbers_in(str(c or ""))]
     unmatched = []
     abouts = _about_positions(script_text)
     eras = [m.start() for m in ERA.finditer(script_text)]
     for value, unit, pos in _extract_with_pos(script_text):
+        if _index_name_before(script_text, pos):
+            continue
         if unit is None and float(value).is_integer() and 1 <= value <= 3500 and any(0 <= e - pos <= 14 for e in eras):
             continue                                  # "3102 BCE", "1010 CE", "1200 ईसा पूर्व": a date, not a claim
         tol = ROUND_TOL if any(0 <= pos - a <= 25 for a in abouts) else tolerance      # "lagbhag 7 crore": 10 % slack within 25 chars of the word

@@ -1,0 +1,12 @@
+# Waypoint's growth phases and what must be true before the next one starts (founder, 22 Oct 2026).
+# The weekly growth report (engine/playreports.py --weekly) shows each gate. Tick a manual check by setting it to true.
+waypoint_plus:
+  active_installs: 1000            # Play "active device installs" (a proxy for monthly active devices; the Console home page shows the real figure)
+  manual:
+    listing_claims_fixed: false    # store text, in-app copy and privacy policy say only what the app really does
+    play_rating_and_data_safety: false
+    anonymity_gap_fixed: false     # per-day pseudonyms instead of stable user ids in the public API
+    ios_approved: false
+    legal_check_ai_guidance: false # a lawyer's look at the AI-guidance rules for a paid tier
+  ads: "not planned: ads cut against the anonymity promise; decide only after Plus (founder's call)"
+focus_markets_per_app: 2           # concentrate on this many countries per app until the density test passes

@@ -1,0 +1,313 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 2.0,
+   "quote": "The Bulletin includes two speeches, four articles and current statistics.",
+   "source_date": "2026-10-23",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63859",
+   "text": "The Reserve Bank of India's October 2026 Bulletin release includes 2 speeches addressing macroeconomic and financial system developments.",
+   "unit": "speeches"
+  },
+  {
+   "label": "official",
+   "number": 4.0,
+   "quote": "The Bulletin includes two speeches, four articles and current statistics.",
+   "source_date": "2026-10-23",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63859",
+   "text": "The October 2026 Bulletin features 4 research articles evaluating economic conditions, lending rate transmission, NBFC performance, and state-level economic nowcasting.",
+   "unit": "articles"
+  },
+  {
+   "label": "official",
+   "number": 6.0,
+   "quote": "Double-digit growth in merchandise exports during the first six months of 2026-27 helped in narrowing the trade deficit.",
+   "source_date": "2026-10-23",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63859",
+   "text": "Merchandise exports achieved double-digit expansion over the first 6 months of financial year 2026-27, helping narrow India's trade deficit.",
+   "unit": "months"
+  },
+  {
+   "label": "official",
+   "number": 125.0,
+   "quote": "In response to a cumulative reduction of 125 basis points (bps) in the policy repo rate, the WALR on fresh lending declined by 93 bps, with interest rate effect of 80 bps and composition effect of 13 bps during February 2025 to March 2026.",
+   "source_date": "2026-10-23",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63859",
+   "text": "Between February 2025 and March 2026, the RBI reduced the policy repo rate by a cumulative 125 bps to ease borrowing conditions across the economy.",
+   "unit": "bps"
+  },
+  {
+   "label": "official",
+   "number": 93.0,
+   "quote": "In response to a cumulative reduction of 125 basis points (bps) in the policy repo rate, the WALR on fresh lending declined by 93 bps, with interest rate effect of 80 bps and composition effect of 13 bps during February 2025 to March 2026.",
+   "source_date": "2026-10-23",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63859",
+   "text": "Scheduled commercial banks lowered the weighted average lending rate on fresh loans by 93 bps, softening borrowing costs and EMI commitments for new household loans.",
+   "unit": "bps"
+  },
+  {
+   "label": "official",
+   "number": 80.0,
+   "quote": "In response to a cumulative reduction of 125 basis points (bps) in the policy repo rate, the WALR on fresh lending declined by 93 bps, with interest rate effect of 80 bps and composition effect of 13 bps during February 2025 to March 2026.",
+   "source_date": "2026-10-23",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63859",
+   "text": "Pure interest rate repricing by commercial banks delivered an 80 bps decline in fresh lending rates, driving the majority of EMI relief on new credit.",
+   "unit": "bps"
+  },
+  {
+   "label": "official",
+   "number": 13.0,
+   "quote": "In response to a cumulative reduction of 125 basis points (bps) in the policy repo rate, the WALR on fresh lending declined by 93 bps, with interest rate effect of 80 bps and composition effect of 13 bps during February 2025 to March 2026.",
+   "source_date": "2026-10-23",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63859",
+   "text": "Changes in loan composition across banking institutions and economic sectors contributed 13 bps to the reduction in the aggregate fresh lending rate.",
+   "unit": "bps"
+  },
+  {
+   "label": "official",
+   "number": 3.0,
+   "quote": "The framework is applied to three major states — Maharashtra, Karnataka and Gujarat.",
+   "source_date": "2026-10-23",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63859",
+   "text": "The RBI nowcasting model utilized night-time satellite lights and search behaviour to track economic momentum across 3 major industrialized states.",
+   "unit": "states"
+  }
+ ],
+ "id": "2026-10-28-sglearning-short",
+ "ids": {
+  "ig_story_id": "skipped: Reel over 60 s",
+  "out_sha": "3bd7c4b796f132f1fe72ee645af2b997b0dda1ce",
+  "yt_id": "60M3A5JBZSQ"
+ },
+ "kind": "short",
+ "publish_day": "2026-10-28",
+ "reasons": [
+  "try 1: length: 121 words, allowed 150-230"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "RBI ne byaaj ghataya, par aapka loan utna sasta kyun nahi hua? 🤔\nRBI ke October Bulletin ke hisaab se 125 basis points ke cut par naye loans ka average byaaj sirf 93 basis points gira.\nHeadline nahi, apne loan ka asli rate bank se likh kar maango.\nAapne apna loan rate pichhli baar kab check kiya?\nYeh investment advice nahi hai.\nUs bhai ko bhejo jo naya loan lene se pehle sirf headline padhta hai.",
+    "hashtags": [
+     "#RBI",
+     "#EMI",
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#HinglishFinance",
+     "#PersonalFinanceIndia",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "RBI ne repo rate 125 basis points ghataya, par naye loans ka average byaaj sirf 93 basis points gira. Matlab poori raahat aap tak nahi pahunchi. Aapne apna loan rate pichhli baar kab check kiya? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "RBI ne byaaj ghataya, par kya aapka loan utna hi sasta hua? RBI ke October Bulletin ki study kehti hai ki 125 basis points ke cut par naye loans ka average byaaj sirf 93 basis points gira. Headline nahi, apne loan ka asli rate check karna zaroori hai. Us bhai ko bhejo jo naya loan lene se pehle sirf headline padhta hai.",
+    "tags": [
+     "repo rate",
+     "RBI",
+     "loan rate",
+     "EMI",
+     "home loan",
+     "bike loan",
+     "RBI Bulletin",
+     "basis points",
+     "byaaj",
+     "Hinglish finance",
+     "Learning with SG"
+    ],
+    "title": "Repo Rate cut hua, loan utna sasta kyun nahi?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Aapke loan ka rate pichhli baar kab check kiya tha?",
+  "hook": "RBI ne byaaj ghataya, toh kya aapka loan bhi utna hi sasta hua?",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in his hoodie grinning confidently at his phone, sitting at a home dining table, bright Sunday morning light through the window",
+     "type": "art"
+    },
+    "vo": "RBI ne byaaj ghataya, toh kya aapka loan bhi utna hi sasta hua? Bhai ko poora yakeen tha ki haan."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A middle-class Indian dining table on a Sunday morning, steel cups of chai, BHAI holding up his phone excitedly towards PAPA in a kurta reading a newspaper",
+     "type": "art"
+    },
+    "vo": "Sunday subah, chai ki table par, Bhai phone par headline padh raha tha. Repo rate cut, loan sasta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Simple illustrated scene of a large central bank building handing a bag of money to a smaller bank building, soft daylight, calm explanatory mood",
+     "type": "art"
+    },
+    "vo": "Repo rate yaani woh byaaj, jis par RBI banks ko paisa udhaar deta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI leaning back in his chair, counting on his fingers with a satisfied smile, imagining a bank counter with a smiling BANK UNCLE in a thought bubble",
+     "type": "art"
+    },
+    "vo": "Bhai ka logic seedha tha. RBI banks ko sasta de raha hai, toh bank bhi utna hi sasta dega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI showing a shiny new motorbike picture on his phone, MUMMY in a saree placing a cup of chai beside him with a slightly worried, curious look, morning light",
+     "type": "art"
+    },
+    "vo": "Isliye usne naye bike loan ka plan bana liya. Mummy ne chai rakhte hue pucha, kitna gira?"
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI proudly raising his hand like announcing big news, MUMMY and PAPA listening at the breakfast table, cheerful warm kitchen",
+     "type": "art"
+    },
+    "vo": "Bhai bola, poore 125 basis points. Basis point yaani byaaj ka sabse chhota tukda, jisse rate naapte hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN in office wear sitting on a sofa in the evening, reading a thick report on her laptop with a sceptical raised eyebrow, a lamp glowing beside her",
+     "type": "art"
+    },
+    "vo": "Phir RBI ka October Bulletin aaya. Usmein naye loans ke byaaj par study thi."
+   },
+   {
+    "facts_used": [
+     3,
+     4
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN turning her laptop towards BHAI in the living room at night, BHAI's smile fading into confusion as he leans in to look",
+     "type": "art"
+    },
+    "vo": "Banks ke naye loans ka average byaaj sirf 93 basis points gira, poore 125 nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A long winding road from a big bank building to a small house, little parcels of relief dropping off the road along the way, dusk sky",
+     "type": "art"
+    },
+    "vo": "Yaani RBI ki di hui raahat ka kuch hissa raaste mein hi reh gaya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI sitting alone on the sofa at night, staring at his phone, the excitement gone from his face, a quiet thoughtful mood",
+     "type": "art"
+    },
+    "vo": "Aur twist yeh hai, average gira matlab har loan sasta nahi hua."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A busy bank hall with different queues of borrowers, some much longer than others, BANK UNCLE behind the counter stamping papers, afternoon light",
+     "type": "art"
+    },
+    "vo": "Kuch girawat isliye thi, kyunki banks ne alag tarah ke loans zyada baante."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI standing at a bank counter, politely asking BANK UNCLE for a written loan rate sheet, SG in a striped shirt standing beside him nodding calmly, daytime",
+     "type": "art"
+    },
+    "vo": "Toh headline mat dekho, apne loan ka asli rate bank se likh kar maango. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The family back at the breakfast table, BHAI, BEHEN, MUMMY and PAPA all looking at loan papers together and smiling, warm morning light",
+     "type": "art"
+    },
+    "vo": "Aapke loan ka rate pichhli baar kab check kiya tha? Comments mein batao."
+   }
+  ],
+  "thumbnail": {
+   "scene": "BHAI stares at his phone showing a loan rate, eyes wide, mouth open, at the breakfast table",
+   "words": [
+    "ONLY 93",
+    "GAYAB"
+   ]
+  },
+  "title": "RBI ne byaaj ghataya, par *EMI* utni nahi? 📉"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  7.09,
+  14.34,
+  19.27,
+  25.04,
+  32.13,
+  39.94,
+  45.31,
+  51.4,
+  55.93,
+  61.26,
+  65.87,
+  73.32
+ ],
+ "topic": {
+  "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63859",
+  "look": "claymation",
+  "published": "2026-10-23T17:50:00+00:00",
+  "rank": 5,
+  "source": "RBI Press Releases",
+  "summary": "      Today, the Reserve Bank released the October 2026 issue of its monthly Bulletin. The Bulletin includes two speeches, four articles and current statistics.    The four articles are: I. State of the Economy; II. Transmission to Lending Rates of SCBs: Price versus Composition Effects in WALR; III. Performance of the NBFC Sector: Review for 2025; and IV. Nowcasting State-Level Economic Activity in India with Night-Time Light and Google Trends.    I. State of the Economy    Renewed geopolitical frictions in West Asia and supply chain disruptions have amplified inflationary pressures, prompting major central banks to raise policy rates. Elevated sovereign bond yields in advanced economies (AEs) have also brought into focus concerns about fiscal sustainability and its implications for financial stability. The Indian economy continued to demonstrate strength as evidenced by high-frequency indicators across both industry and services. The headline Consumer Price Index (CPI) inflation edged up in September driven by a broad-based increase in food, fuel, and core components. Double-digit growth in merchandise exports during the first six months of 2026-27 helped in narrowing the trade deficit. FDI, ECB and remittance flows strengthened in August. Strong inflows under the FCNR(B) swap window augmented reserves.    II. Transmission to Lending Rates of SCBs: Price versus Composition Effects in WALR    By Yuvraj Kashyap, Kamal Gupta and Arvind Jha     This article analyses the transmission of monetary policy to the fresh lending rates of scheduled commercial banks by decomposing variations in the weighted average lending rate (WALR) into interest rate effects and compositional effects. Using an index-number based framework on bank and sector level lending rates and loan weights, the study examines the extent to which changes in the aggregate WALR reflect changes in lending rates and shifts in credit composition.    Highlights:                  In response to a cumulative reduction of 125 basis points (bps) in the policy repo rate, the WALR on fresh lending declined by 93 bps, with interest rate effect of 80 bps and composition effect of 13 bps during February 2025 to March 2026.                    The movements in aggregate WALR reflect both repricing of loans and changes in the composition of credit across banks and sectors, highlighting the importance of both effects while assessing monetary policy transmission.              III. Performance of the NBFC Sector: Review for 2025    By Pallavi Pant, Monalisa Poali, Abhyuday Harsh, Brijesh P and Sona Chinngaihlian    This article assesses the performance of the non-banking financial company (NBFC) sector up to end-December 2025. It also provides a bird&rsquo;s-eye-view of India&rsquo;s financial system. Employing a text-mining approach, the article also explores the extent and nature of orientation towards artificial intelligence (AI) by select NBFCs.    Highlights:                  The NBFC sector continued to register double-digit y-o-y credit growth at end-December 2025.                    Share of bank borrowings showed a moderate rise indicating continued concentration in funding profile. Asset quality of the sector has continued to improve in recent years as reflected in consistent decline in NPA ratios.                     Preliminary text-mining analysis shows that NBFCs are increasingly orienting towards AI for customer and financial applications, governance and digital infrastructure, and data analytics.              IV. Nowcasting State-Level Economic Activity in India with Night-Time Light and Google Trends    By Bipul Ghosh, Narendra Singh and Sandhya Kuruganti    Timely measurement of state-level economic activity remains a challenge in India, as official Gross State Value Added (GSVA) data are released annually with a considerable lag. This study demonstrates how alternative data sources, specifically satellite-based night-time lights and digital search behaviour, can be used to generate high-frequency estimates of state-level economic activity. The framework is applied to three major states &mdash; Maharashtra, Karnataka and Gujarat. It shows how combining geospatial and behavioural signals can provide a real-time view of regional economic dynamics and strengthen short-term economic assessment.    Highlights:                  The combined use of night-time lights and Google Trends improves nowcast accuracy of quarterly GSVA growth relative to univariate approach.                    The approach enables near real-time monitoring of state-level economies, improving early detection of turning points and shocks.                     The methodology is scalable and demonstrates the potential of alternative data in supplementing official statistical systems and high-frequency macroeconomic analysis.              The views expressed in the Bulletin articles are those of the authors and do not represent the views of the Reserve Bank of India.    (Brij Raj)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      Chief General Manager    Press Release: 2026-2027/1381  ",
+  "target_minutes": null,
+  "title": "RBI Bulletin – October 2026",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-10-23T13:50:12+00:00",
+ "writer": "claude"
+}

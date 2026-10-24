@@ -1,0 +1,458 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,86,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.60,Default,,0,0,0,,Rigveda ki sabse pavitra nadi aaj
+Dialogue: 0,0:00:02.60,0:00:03.25,Default,,0,0,0,,kahan hai?
+Dialogue: 0,0:00:03.25,0:00:05.21,Default,,0,0,0,,Registaan ke upar se dekho,
+Dialogue: 0,0:00:05.21,0:00:06.51,Default,,0,0,0,,toh sirf ret dikhti hai.
+Dialogue: 0,0:00:06.51,0:00:09.33,Default,,0,0,0,,Lekin ISRO ki satellite tasveeron mein,
+Dialogue: 0,0:00:09.33,0:00:11.50,Default,,0,0,0,,ret ke neeche lakeerein dikhti hain.
+Dialogue: 0,0:00:11.50,0:00:14.10,Default,,0,0,0,,Yeh lakeerein kisi purani nadi ke
+Dialogue: 0,0:00:14.10,0:00:15.62,Default,,0,0,0,,raaste jaisi lagti hain.
+Dialogue: 0,0:00:15.62,0:00:16.05,Default,,0,0,0,,Chaliye,
+Dialogue: 0,0:00:16.05,0:00:18.22,Default,,0,0,0,,sabut ke saath yeh kahani kholte
+Dialogue: 0,0:00:18.22,0:00:18.44,Default,,0,0,0,,hain.
+Dialogue: 0,0:00:18.89,0:00:19.35,Default,,0,0,0,,Socho,
+Dialogue: 0,0:00:19.35,0:00:20.51,Default,,0,0,0,,aap aasmaan mein ho,
+Dialogue: 0,0:00:20.51,0:00:23.30,Default,,0,0,0,,Haryana se Rajasthan aur Gujarat ki
+Dialogue: 0,0:00:23.30,0:00:24.69,Default,,0,0,0,,taraf dekh rahe ho.
+Dialogue: 0,0:00:24.69,0:00:25.62,Default,,0,0,0,,Neeche khet hain,
+Dialogue: 0,0:00:25.62,0:00:26.08,Default,,0,0,0,,gaon hain,
+Dialogue: 0,0:00:26.08,0:00:27.01,Default,,0,0,0,,registaan hai.
+Dialogue: 0,0:00:27.01,0:00:29.10,Default,,0,0,0,,Par satellite ki aankh kuch aur
+Dialogue: 0,0:00:29.10,0:00:30.03,Default,,0,0,0,,pakadti hai.
+Dialogue: 0,0:00:30.03,0:00:32.11,Default,,0,0,0,,Zameen ke neeche dabi nami,
+Dialogue: 0,0:00:32.11,0:00:34.43,Default,,0,0,0,,aur purani ret ki patli patteeyan,
+Dialogue: 0,0:00:34.43,0:00:36.75,Default,,0,0,0,,jaise kisi ne pencil se nadi
+Dialogue: 0,0:00:36.75,0:00:37.45,Default,,0,0,0,,kheench di ho.
+Dialogue: 0,0:00:37.90,0:00:39.68,Default,,0,0,0,,Bahut purane granth kehte hain,
+Dialogue: 0,0:00:39.68,0:00:41.85,Default,,0,0,0,,yahan kabhi badi nadi behti thi.
+Dialogue: 0,0:00:41.85,0:00:43.43,Default,,0,0,0,,Uska naam tha Saraswati.
+Dialogue: 0,0:00:43.43,0:00:46.39,Default,,0,0,0,,Rigveda use pavitra aur shaktishaali kehta
+Dialogue: 0,0:00:46.39,0:00:46.59,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:46.59,0:00:48.37,Default,,0,0,0,,Aur Mahabharata kehta hai,
+Dialogue: 0,0:00:48.37,0:00:50.14,Default,,0,0,0,,woh nadi registaan mein gayab ho
+Dialogue: 0,0:00:50.14,0:00:50.34,Default,,0,0,0,,gayi.
+Dialogue: 0,0:00:50.34,0:00:52.12,Default,,0,0,0,,Toh kya satellite ki lakeer,
+Dialogue: 0,0:00:52.12,0:00:53.50,Default,,0,0,0,,wahi khoyi hui nadi hai?
+Dialogue: 0,0:00:53.95,0:00:55.91,Default,,0,0,0,,Jawab itna seedha nahi hai.
+Dialogue: 0,0:00:55.91,0:00:57.66,Default,,0,0,0,,Vaigyanik bhi bante hue hain,
+Dialogue: 0,0:00:57.66,0:00:58.97,Default,,0,0,0,,aur itihaaskar bhi.
+Dialogue: 0,0:00:58.97,0:01:00.06,Default,,0,0,0,,Kuch kehte hain haan,
+Dialogue: 0,0:01:00.06,0:01:01.59,Default,,0,0,0,,yahi Saraswati hai.
+Dialogue: 0,0:01:01.59,0:01:02.46,Default,,0,0,0,,Kuch kehte hain,
+Dialogue: 0,0:01:02.46,0:01:03.77,Default,,0,0,0,,naam kahin aur se aaya.
+Dialogue: 0,0:01:03.77,0:01:04.86,Default,,0,0,0,,Is video mein granth,
+Dialogue: 0,0:01:04.86,0:01:05.73,Default,,0,0,0,,satellite,
+Dialogue: 0,0:01:05.73,0:01:06.82,Default,,0,0,0,,khudai aur behas,
+Dialogue: 0,0:01:06.82,0:01:08.57,Default,,0,0,0,,sab baari baari dekhenge.
+Dialogue: 0,0:01:08.57,0:01:10.31,Default,,0,0,0,,Har baat ke saath uska label
+Dialogue: 0,0:01:10.31,0:01:10.75,Default,,0,0,0,,hoga.
+Dialogue: 0,0:01:11.20,0:01:12.56,Default,,0,0,0,,Pehle chaliye granth ke paas,
+Dialogue: 0,0:01:12.56,0:01:14.88,Default,,0,0,0,,kyunki kahani wahin se shuru hoti
+Dialogue: 0,0:01:14.88,0:01:15.07,Default,,0,0,0,,hai.
+Dialogue: 0,0:01:15.07,0:01:17.59,Default,,0,0,0,,Rigveda duniya ke sabse purane granthon
+Dialogue: 0,0:01:17.59,0:01:18.75,Default,,0,0,0,,mein gina jata hai.
+Dialogue: 0,0:01:18.75,0:01:20.49,Default,,0,0,0,,Isme nadiyon ki tareef mein kai
+Dialogue: 0,0:01:20.49,0:01:21.07,Default,,0,0,0,,mantra hain.
+Dialogue: 0,0:01:21.07,0:01:22.42,Default,,0,0,0,,Aur isme ek sukta hai,
+Dialogue: 0,0:01:22.42,0:01:24.17,Default,,0,0,0,,jo nadiyon ko naqshe ki tarah
+Dialogue: 0,0:01:24.17,0:01:25.52,Default,,0,0,0,,line mein ginata hai.
+Dialogue: 0,0:01:25.97,0:01:28.07,Default,,0,0,0,,Is sukta ka naam hai Nadistuti
+Dialogue: 0,0:01:28.07,0:01:28.49,Default,,0,0,0,,sukta,
+Dialogue: 0,0:01:28.49,0:01:29.96,Default,,0,0,0,,yaani nadiyon ki stuti,
+Dialogue: 0,0:01:29.96,0:01:31.22,Default,,0,0,0,,unki tareef ka geet.
+Dialogue: 0,0:01:31.22,0:01:33.32,Default,,0,0,0,,Isme nadiyan poorab se paschim ki
+Dialogue: 0,0:01:33.32,0:01:34.58,Default,,0,0,0,,taraf ginayi gayi hain.
+Dialogue: 0,0:01:34.58,0:01:35.42,Default,,0,0,0,,Pehle Ganga,
+Dialogue: 0,0:01:35.42,0:01:36.26,Default,,0,0,0,,phir Yamuna,
+Dialogue: 0,0:01:36.26,0:01:37.31,Default,,0,0,0,,phir Saraswati,
+Dialogue: 0,0:01:37.31,0:01:38.15,Default,,0,0,0,,phir Shutudri,
+Dialogue: 0,0:01:38.15,0:01:40.04,Default,,0,0,0,,jise aaj hum Sutlej kehte hain.
+Dialogue: 0,0:01:40.04,0:01:41.30,Default,,0,0,0,,Matlab Saraswati,
+Dialogue: 0,0:01:41.30,0:01:43.40,Default,,0,0,0,,Yamuna aur Sutlej ke beech kahin
+Dialogue: 0,0:01:43.40,0:01:43.61,Default,,0,0,0,,thi.
+Dialogue: 0,0:01:44.06,0:01:45.41,Default,,0,0,0,,Yeh chhoti baat nahi hai.
+Dialogue: 0,0:01:45.41,0:01:46.96,Default,,0,0,0,,Granth sirf naam nahi le raha,
+Dialogue: 0,0:01:46.96,0:01:48.51,Default,,0,0,0,,jagah bhi bata raha hai.
+Dialogue: 0,0:01:48.51,0:01:49.86,Default,,0,0,0,,Aaj ke naqshe par dekho,
+Dialogue: 0,0:01:49.86,0:01:51.61,Default,,0,0,0,,toh Yamuna aur Sutlej ke beech
+Dialogue: 0,0:01:51.61,0:01:53.54,Default,,0,0,0,,Haryana ka ilaaka aata hai.
+Dialogue: 0,0:01:53.54,0:01:54.89,Default,,0,0,0,,Aur wahi ilaaka hai,
+Dialogue: 0,0:01:54.89,0:01:57.41,Default,,0,0,0,,jahan satellite ko purani nadi ki
+Dialogue: 0,0:01:57.41,0:01:58.57,Default,,0,0,0,,lakeerein dikhti hain.
+Dialogue: 0,0:01:58.57,0:02:00.70,Default,,0,0,0,,Yahin se kahani dilchasp hoti hai.
+Dialogue: 0,0:02:01.15,0:02:03.50,Default,,0,0,0,,Rigveda ka ek aur mantra Saraswati
+Dialogue: 0,0:02:03.50,0:02:05.65,Default,,0,0,0,,ko bahut badi nadi batata hai.
+Dialogue: 0,0:02:05.65,0:02:06.44,Default,,0,0,0,,Woh kehta hai,
+Dialogue: 0,0:02:06.44,0:02:08.78,Default,,0,0,0,,Saraswati pahadon se nikalti hai,
+Dialogue: 0,0:02:08.78,0:02:10.74,Default,,0,0,0,,aur seedhe samundar tak jaati hai.
+Dialogue: 0,0:02:10.74,0:02:12.50,Default,,0,0,0,,Raaste mein woh jeevon ko apne
+Dialogue: 0,0:02:12.50,0:02:14.27,Default,,0,0,0,,doodh jaise paani se paalti hai.
+Dialogue: 0,0:02:14.27,0:02:16.42,Default,,0,0,0,,Yaani yeh koi barsaati naala nahi,
+Dialogue: 0,0:02:16.42,0:02:17.79,Default,,0,0,0,,poori behti nadi thi.
+Dialogue: 0,0:02:18.24,0:02:20.16,Default,,0,0,0,,Ab aate hain Mahabharata par,
+Dialogue: 0,0:02:20.16,0:02:21.69,Default,,0,0,0,,jo baad ka granth maana jata
+Dialogue: 0,0:02:21.69,0:02:21.89,Default,,0,0,0,,hai.
+Dialogue: 0,0:02:21.89,0:02:24.19,Default,,0,0,0,,Iske Shalya Parva mein Saraswati ki
+Dialogue: 0,0:02:24.19,0:02:25.72,Default,,0,0,0,,kahani badal jaati hai.
+Dialogue: 0,0:02:25.72,0:02:28.03,Default,,0,0,0,,Yahan nadi registaan mein pahunchkar sookh
+Dialogue: 0,0:02:28.03,0:02:28.60,Default,,0,0,0,,jaati hai.
+Dialogue: 0,0:02:28.60,0:02:30.52,Default,,0,0,0,,Zameen ke andar samaa jaati hai.
+Dialogue: 0,0:02:30.52,0:02:31.67,Default,,0,0,0,,Jis jagah woh gayab hui,
+Dialogue: 0,0:02:31.67,0:02:33.40,Default,,0,0,0,,us teerth ka naam hai Vinasana.
+Dialogue: 0,0:02:33.85,0:02:35.75,Default,,0,0,0,,Vinasana ka matlab hi hai,
+Dialogue: 0,0:02:35.75,0:02:37.01,Default,,0,0,0,,jahan kuch nasht ho jaye,
+Dialogue: 0,0:02:37.01,0:02:37.64,Default,,0,0,0,,gayab ho jaye.
+Dialogue: 0,0:02:37.64,0:02:39.75,Default,,0,0,0,,Granth mein iski wajah bhi kahani
+Dialogue: 0,0:02:39.75,0:02:41.02,Default,,0,0,0,,ki tarah di gayi hai.
+Dialogue: 0,0:02:41.02,0:02:41.65,Default,,0,0,0,,Toh socho,
+Dialogue: 0,0:02:41.65,0:02:44.60,Default,,0,0,0,,Rigveda mein Saraswati pahad se samundar
+Dialogue: 0,0:02:44.60,0:02:45.44,Default,,0,0,0,,tak behti hai.
+Dialogue: 0,0:02:45.44,0:02:47.55,Default,,0,0,0,,Mahabharata tak aate aate,
+Dialogue: 0,0:02:47.55,0:02:49.45,Default,,0,0,0,,woh registaan mein kho jaati hai.
+Dialogue: 0,0:02:49.45,0:02:50.29,Default,,0,0,0,,Beech mein kya hua?
+Dialogue: 0,0:02:50.74,0:02:51.84,Default,,0,0,0,,Granth ne sawaal diya,
+Dialogue: 0,0:02:51.84,0:02:53.15,Default,,0,0,0,,ab vigyan ki baari.
+Dialogue: 0,0:02:53.15,0:02:55.12,Default,,0,0,0,,Agar sach mein yahan nadi thi,
+Dialogue: 0,0:02:55.12,0:02:57.31,Default,,0,0,0,,toh uske nishaan zameen mein bache
+Dialogue: 0,0:02:57.31,0:02:57.75,Default,,0,0,0,,honge.
+Dialogue: 0,0:02:57.75,0:02:59.06,Default,,0,0,0,,Nadi jab sookhti hai,
+Dialogue: 0,0:02:59.06,0:03:01.03,Default,,0,0,0,,toh apna raasta chhod jaati hai.
+Dialogue: 0,0:03:01.03,0:03:01.25,Default,,0,0,0,,Ret,
+Dialogue: 0,0:03:01.25,0:03:01.69,Default,,0,0,0,,kankad,
+Dialogue: 0,0:03:01.69,0:03:03.22,Default,,0,0,0,,aur neeche dabi nami.
+Dialogue: 0,0:03:03.22,0:03:05.63,Default,,0,0,0,,Inhe dhoondhne ke liye vaigyanikon ne
+Dialogue: 0,0:03:05.63,0:03:06.94,Default,,0,0,0,,aasmaan ki madad li.
+Dialogue: 0,0:03:07.39,0:03:09.71,Default,,0,0,0,,Is tareeke ko remote sensing kehte
+Dialogue: 0,0:03:09.71,0:03:09.90,Default,,0,0,0,,hain,
+Dialogue: 0,0:03:09.90,0:03:10.68,Default,,0,0,0,,yaani door se,
+Dialogue: 0,0:03:10.68,0:03:12.61,Default,,0,0,0,,satellite ki aankh se zameen ko
+Dialogue: 0,0:03:12.61,0:03:13.00,Default,,0,0,0,,padhna.
+Dialogue: 0,0:03:13.00,0:03:15.12,Default,,0,0,0,,Satellite sirf photo nahi kheenchta.
+Dialogue: 0,0:03:15.12,0:03:15.70,Default,,0,0,0,,Woh nami,
+Dialogue: 0,0:03:15.70,0:03:17.25,Default,,0,0,0,,mitti ka rang aur garmi bhi
+Dialogue: 0,0:03:17.25,0:03:18.02,Default,,0,0,0,,pakadta hai.
+Dialogue: 0,0:03:18.02,0:03:19.96,Default,,0,0,0,,Sookhi nadi ka purana raasta,
+Dialogue: 0,0:03:19.96,0:03:21.50,Default,,0,0,0,,aas paas ki zameen se thoda
+Dialogue: 0,0:03:21.50,0:03:22.47,Default,,0,0,0,,alag dikhta hai.
+Dialogue: 0,0:03:22.92,0:03:25.53,Default,,0,0,0,,ISRO ke Regional Remote Sensing Service
+Dialogue: 0,0:03:25.53,0:03:27.59,Default,,0,0,0,,Centre ke vaigyanikon ne yahi kiya.
+Dialogue: 0,0:03:27.59,0:03:30.39,Default,,0,0,0,,Unhone Indian Remote Sensing satellite ke
+Dialogue: 0,0:03:30.39,0:03:32.07,Default,,0,0,0,,Wide Field Sensor ka data liya.
+Dialogue: 0,0:03:32.07,0:03:33.57,Default,,0,0,0,,Aur uttar-paschim Bharat mein,
+Dialogue: 0,0:03:33.57,0:03:35.81,Default,,0,0,0,,zameen ke neeche dabe palaeochannels ka
+Dialogue: 0,0:03:35.81,0:03:36.56,Default,,0,0,0,,naksha banaya.
+Dialogue: 0,0:03:36.56,0:03:38.99,Default,,0,0,0,,Palaeochannel yaani purani nadi ka woh
+Dialogue: 0,0:03:38.99,0:03:39.36,Default,,0,0,0,,raasta,
+Dialogue: 0,0:03:39.36,0:03:40.48,Default,,0,0,0,,jo ab dab chuka hai.
+Dialogue: 0,0:03:40.93,0:03:43.48,Default,,0,0,0,,Is sensor ki resolution thi 188
+Dialogue: 0,0:03:43.48,0:03:43.91,Default,,0,0,0,,metre.
+Dialogue: 0,0:03:43.91,0:03:46.68,Default,,0,0,0,,Resolution yaani tasveer ka sabse chhota
+Dialogue: 0,0:03:46.68,0:03:47.10,Default,,0,0,0,,hissa,
+Dialogue: 0,0:03:47.10,0:03:48.81,Default,,0,0,0,,zameen par kitna bada hai.
+Dialogue: 0,0:03:48.81,0:03:51.15,Default,,0,0,0,,Matlab 188 metre se chhoti cheez
+Dialogue: 0,0:03:51.15,0:03:52.43,Default,,0,0,0,,alag nahi dikhti.
+Dialogue: 0,0:03:52.43,0:03:54.77,Default,,0,0,0,,Lekin nadi ke lambe raaste dekhne
+Dialogue: 0,0:03:54.77,0:03:55.19,Default,,0,0,0,,ke liye,
+Dialogue: 0,0:03:55.19,0:03:56.04,Default,,0,0,0,,yeh kaafi tha.
+Dialogue: 0,0:03:56.04,0:03:57.53,Default,,0,0,0,,Aur tasveeron mein lambi,
+Dialogue: 0,0:03:57.53,0:03:59.45,Default,,0,0,0,,chaudi lakeerein saaf ubhar aayi.
+Dialogue: 0,0:03:59.90,0:04:01.78,Default,,0,0,0,,Par sirf aasmaan se dekhna kaafi
+Dialogue: 0,0:04:01.78,0:04:02.19,Default,,0,0,0,,nahi.
+Dialogue: 0,0:04:02.19,0:04:04.49,Default,,0,0,0,,Zameen par jaakar milana bhi padta
+Dialogue: 0,0:04:04.49,0:04:04.70,Default,,0,0,0,,hai.
+Dialogue: 0,0:04:04.70,0:04:06.78,Default,,0,0,0,,Haryana mein aaj bhi Sarsuti naam
+Dialogue: 0,0:04:06.78,0:04:08.66,Default,,0,0,0,,ki ek chhoti dhaara behti hai.
+Dialogue: 0,0:04:08.66,0:04:09.71,Default,,0,0,0,,Yeh mausami hai,
+Dialogue: 0,0:04:09.71,0:04:11.58,Default,,0,0,0,,yaani sirf baarish ke mausam mein
+Dialogue: 0,0:04:11.58,0:04:12.62,Default,,0,0,0,,paani laati hai.
+Dialogue: 0,0:04:12.62,0:04:13.25,Default,,0,0,0,,Naam suniye,
+Dialogue: 0,0:04:13.25,0:04:13.88,Default,,0,0,0,,Sarsuti,
+Dialogue: 0,0:04:13.88,0:04:16.38,Default,,0,0,0,,Saraswati se kitna milta julta hai.
+Dialogue: 0,0:04:16.83,0:04:18.08,Default,,0,0,0,,Saal 2009 mein,
+Dialogue: 0,0:04:18.08,0:04:20.60,Default,,0,0,0,,ISRO ke vaigyanikon ka adhyayan Journal
+Dialogue: 0,0:04:20.60,0:04:23.11,Default,,0,0,0,,of the Geological Society of India
+Dialogue: 0,0:04:23.11,0:04:23.73,Default,,0,0,0,,mein chhapa.
+Dialogue: 0,0:04:23.73,0:04:26.66,Default,,0,0,0,,Isme satellite tasveerein aur zameeni jaanch,
+Dialogue: 0,0:04:26.66,0:04:27.92,Default,,0,0,0,,dono saath rakhi gayi.
+Dialogue: 0,0:04:27.92,0:04:29.59,Default,,0,0,0,,Nateeja yeh tha ki aaj ki
+Dialogue: 0,0:04:29.59,0:04:30.63,Default,,0,0,0,,Sarsuti dhaara,
+Dialogue: 0,0:04:30.63,0:04:32.73,Default,,0,0,0,,us bade dabe hue nadi network
+Dialogue: 0,0:04:32.73,0:04:33.56,Default,,0,0,0,,se judti hai.
+Dialogue: 0,0:04:33.56,0:04:36.49,Default,,0,0,0,,Usi network ko unhone Vedic Saraswati
+Dialogue: 0,0:04:36.49,0:04:36.91,Default,,0,0,0,,kaha.
+Dialogue: 0,0:04:37.36,0:04:38.92,Default,,0,0,0,,Phir aaya Central Ground Water Board,
+Dialogue: 0,0:04:38.92,0:04:40.68,Default,,0,0,0,,jo desh ke zameeni paani ka
+Dialogue: 0,0:04:40.68,0:04:41.65,Default,,0,0,0,,hisaab rakhta hai.
+Dialogue: 0,0:04:41.65,0:04:43.61,Default,,0,0,0,,Unhone in raaston par drilling ki,
+Dialogue: 0,0:04:43.61,0:04:45.56,Default,,0,0,0,,yaani zameen mein gehre ched karke
+Dialogue: 0,0:04:45.56,0:04:45.95,Default,,0,0,0,,jaancha.
+Dialogue: 0,0:04:45.95,0:04:48.10,Default,,0,0,0,,Neeche gehre meethe paani ke bhandaar
+Dialogue: 0,0:04:48.10,0:04:48.49,Default,,0,0,0,,mile.
+Dialogue: 0,0:04:48.49,0:04:50.05,Default,,0,0,0,,Inhe aquifer kehte hain,
+Dialogue: 0,0:04:50.05,0:04:52.00,Default,,0,0,0,,yaani zameen ke andar paani se
+Dialogue: 0,0:04:52.00,0:04:53.76,Default,,0,0,0,,bhari ret aur patthar ki parat.
+Dialogue: 0,0:04:54.21,0:04:55.38,Default,,0,0,0,,Aur sabse dilchasp baat.
+Dialogue: 0,0:04:55.38,0:04:57.90,Default,,0,0,0,,Is purani nadi ke kinare kinare,
+Dialogue: 0,0:04:57.90,0:05:00.23,Default,,0,0,0,,kai Harappan bastiyon ke khandahar milte
+Dialogue: 0,0:05:00.23,0:05:00.42,Default,,0,0,0,,hain.
+Dialogue: 0,0:05:00.42,0:05:02.75,Default,,0,0,0,,Harappan yaani Sindhu ghaati sabhyata,
+Dialogue: 0,0:05:02.75,0:05:05.27,Default,,0,0,0,,Bharat ki sabse purani shehri sabhyata.
+Dialogue: 0,0:05:05.27,0:05:07.02,Default,,0,0,0,,Log hamesha nadi ke paas hi
+Dialogue: 0,0:05:07.02,0:05:07.80,Default,,0,0,0,,basate hain.
+Dialogue: 0,0:05:07.80,0:05:09.54,Default,,0,0,0,,Toh yeh khandahar batate hain,
+Dialogue: 0,0:05:09.54,0:05:11.29,Default,,0,0,0,,kabhi yahan bharpoor paani tha.
+Dialogue: 0,0:05:11.74,0:05:13.27,Default,,0,0,0,,Toh ab tak ki tasveer kuch
+Dialogue: 0,0:05:13.27,0:05:13.92,Default,,0,0,0,,aisi hai.
+Dialogue: 0,0:05:13.92,0:05:14.80,Default,,0,0,0,,Granth kehte hain,
+Dialogue: 0,0:05:14.80,0:05:17.41,Default,,0,0,0,,Yamuna aur Sutlej ke beech Saraswati
+Dialogue: 0,0:05:17.41,0:05:17.63,Default,,0,0,0,,thi.
+Dialogue: 0,0:05:17.63,0:05:20.47,Default,,0,0,0,,Satellite wahan dabi nadi ke raaste
+Dialogue: 0,0:05:20.47,0:05:21.34,Default,,0,0,0,,dikhata hai.
+Dialogue: 0,0:05:21.34,0:05:23.96,Default,,0,0,0,,Drilling neeche meetha paani dikhati hai.
+Dialogue: 0,0:05:23.96,0:05:26.58,Default,,0,0,0,,Aur kinare par purani bastiyan milti
+Dialogue: 0,0:05:26.58,0:05:26.80,Default,,0,0,0,,hain.
+Dialogue: 0,0:05:26.80,0:05:28.54,Default,,0,0,0,,Lagta hai kahani khatam.
+Dialogue: 0,0:05:28.54,0:05:30.73,Default,,0,0,0,,Par asli behas yahin se shuru
+Dialogue: 0,0:05:30.73,0:05:31.38,Default,,0,0,0,,hoti hai.
+Dialogue: 0,0:05:31.83,0:05:34.22,Default,,0,0,0,,Vigyan mein akela sabut kaafi nahi
+Dialogue: 0,0:05:34.22,0:05:34.62,Default,,0,0,0,,hota.
+Dialogue: 0,0:05:34.62,0:05:36.22,Default,,0,0,0,,Yahan purani nadi thi,
+Dialogue: 0,0:05:36.22,0:05:37.81,Default,,0,0,0,,yeh toh zyaadatar maante hain.
+Dialogue: 0,0:05:37.81,0:05:40.41,Default,,0,0,0,,Par kya yahi Rigveda wali Saraswati
+Dialogue: 0,0:05:40.41,0:05:40.61,Default,,0,0,0,,thi?
+Dialogue: 0,0:05:40.61,0:05:41.40,Default,,0,0,0,,Aur agar thi,
+Dialogue: 0,0:05:41.40,0:05:42.80,Default,,0,0,0,,toh kya woh sach mein pahad
+Dialogue: 0,0:05:42.80,0:05:45.00,Default,,0,0,0,,se samundar tak behti mahaan nadi
+Dialogue: 0,0:05:45.00,0:05:45.19,Default,,0,0,0,,thi?
+Dialogue: 0,0:05:45.19,0:05:46.79,Default,,0,0,0,,Yahan experts bant jaate hain.
+Dialogue: 0,0:05:47.24,0:05:49.07,Default,,0,0,0,,Pehli behas paani ke srot ki
+Dialogue: 0,0:05:49.07,0:05:49.28,Default,,0,0,0,,hai.
+Dialogue: 0,0:05:49.28,0:05:50.71,Default,,0,0,0,,Kuch vaigyanik kehte hain,
+Dialogue: 0,0:05:50.71,0:05:52.74,Default,,0,0,0,,is nadi mein Himalaya ke glacier
+Dialogue: 0,0:05:52.74,0:05:53.97,Default,,0,0,0,,ka paani aata tha.
+Dialogue: 0,0:05:53.97,0:05:56.21,Default,,0,0,0,,Glacier yaani pahadon par jami barf
+Dialogue: 0,0:05:56.21,0:05:56.82,Default,,0,0,0,,ki nadi,
+Dialogue: 0,0:05:56.82,0:05:58.66,Default,,0,0,0,,jo dheere dheere pighalti hai.
+Dialogue: 0,0:05:58.66,0:05:59.68,Default,,0,0,0,,Doosre kehte hain,
+Dialogue: 0,0:05:59.68,0:06:01.71,Default,,0,0,0,,Bronze Age yaani Kaanse ke yug
+Dialogue: 0,0:06:01.71,0:06:01.92,Default,,0,0,0,,mein,
+Dialogue: 0,0:06:01.92,0:06:03.55,Default,,0,0,0,,yeh sirf monsoon ki baarish se
+Dialogue: 0,0:06:03.55,0:06:04.16,Default,,0,0,0,,bharti thi.
+Dialogue: 0,0:06:04.61,0:06:05.23,Default,,0,0,0,,Fark samjhiye.
+Dialogue: 0,0:06:05.23,0:06:07.27,Default,,0,0,0,,Glacier wali nadi garmi mein bhi
+Dialogue: 0,0:06:07.27,0:06:07.89,Default,,0,0,0,,behti hai,
+Dialogue: 0,0:06:07.89,0:06:09.53,Default,,0,0,0,,aasaani se nahi sookhti.
+Dialogue: 0,0:06:09.53,0:06:11.79,Default,,0,0,0,,Baarish wali nadi monsoon mein bharti
+Dialogue: 0,0:06:11.79,0:06:11.99,Default,,0,0,0,,hai,
+Dialogue: 0,0:06:11.99,0:06:13.83,Default,,0,0,0,,aur baaki mausam mein patli ho
+Dialogue: 0,0:06:13.83,0:06:14.45,Default,,0,0,0,,jaati hai.
+Dialogue: 0,0:06:14.45,0:06:15.68,Default,,0,0,0,,Toh sawaal yeh bana,
+Dialogue: 0,0:06:15.68,0:06:17.73,Default,,0,0,0,,Harappan log kis tarah ki nadi
+Dialogue: 0,0:06:17.73,0:06:19.17,Default,,0,0,0,,ke kinare rehte the?
+Dialogue: 0,0:06:19.17,0:06:21.01,Default,,0,0,0,,Iska jawab ek research ne diya.
+Dialogue: 0,0:06:21.46,0:06:24.08,Default,,0,0,0,,Yeh research Nature Communications naam ke
+Dialogue: 0,0:06:24.08,0:06:25.70,Default,,0,0,0,,vaigyanik journal mein chhapi.
+Dialogue: 0,0:06:25.70,0:06:28.32,Default,,0,0,0,,Isme geomorphology ka sahara liya gaya,
+Dialogue: 0,0:06:28.32,0:06:30.74,Default,,0,0,0,,yaani zameen ki banawat padhkar uska
+Dialogue: 0,0:06:30.74,0:06:31.95,Default,,0,0,0,,itihaas samajhna.
+Dialogue: 0,0:06:31.95,0:06:33.17,Default,,0,0,0,,Saath mein dating bhi hui,
+Dialogue: 0,0:06:33.17,0:06:34.98,Default,,0,0,0,,yaani ret kitni purani hai,
+Dialogue: 0,0:06:34.98,0:06:36.39,Default,,0,0,0,,uska vigyan se hisaab.
+Dialogue: 0,0:06:36.39,0:06:38.01,Default,,0,0,0,,Aur pata kiya ki Sutlej is
+Dialogue: 0,0:06:38.01,0:06:39.22,Default,,0,0,0,,raaste se kab hati.
+Dialogue: 0,0:06:39.67,0:06:41.70,Default,,0,0,0,,Nateeja chaunkane wala tha.
+Dialogue: 0,0:06:41.70,0:06:43.74,Default,,0,0,0,,Sutlej lagbhag 8,000 saal pehle tak,
+Dialogue: 0,0:06:43.74,0:06:45.77,Default,,0,0,0,,Ghaggar ke raaste se hat chuki
+Dialogue: 0,0:06:45.77,0:06:45.99,Default,,0,0,0,,thi.
+Dialogue: 0,0:06:45.99,0:06:48.70,Default,,0,0,0,,Yaani Harappan shehar basne se kaafi
+Dialogue: 0,0:06:48.70,0:06:49.15,Default,,0,0,0,,pehle.
+Dialogue: 0,0:06:49.15,0:06:50.74,Default,,0,0,0,,Matlab jab shehar bane,
+Dialogue: 0,0:06:50.74,0:06:52.77,Default,,0,0,0,,tab is raaste mein badi Sutlej
+Dialogue: 0,0:06:52.77,0:06:53.90,Default,,0,0,0,,nahi behti thi.
+Dialogue: 0,0:06:53.90,0:06:56.61,Default,,0,0,0,,Shehar uske chhode hue purane raaste
+Dialogue: 0,0:06:56.61,0:06:57.51,Default,,0,0,0,,par base the.
+Dialogue: 0,0:06:57.96,0:06:59.26,Default,,0,0,0,,Doosri behas naam ki hai.
+Dialogue: 0,0:06:59.26,0:07:00.01,Default,,0,0,0,,Ghaggar-Hakra,
+Dialogue: 0,0:07:00.01,0:07:02.25,Default,,0,0,0,,yaani Haryana se Rajasthan ki taraf
+Dialogue: 0,0:07:02.25,0:07:03.92,Default,,0,0,0,,jaane wali yeh sookhi nadi.
+Dialogue: 0,0:07:03.92,0:07:06.16,Default,,0,0,0,,Kya isi ko Rigveda ne Saraswati
+Dialogue: 0,0:07:06.16,0:07:06.53,Default,,0,0,0,,kaha?
+Dialogue: 0,0:07:06.53,0:07:08.77,Default,,0,0,0,,Itihaaskar Romila Thapar kehti hain,
+Dialogue: 0,0:07:08.77,0:07:10.07,Default,,0,0,0,,yeh pehchaan vivaadit hai,
+Dialogue: 0,0:07:10.07,0:07:12.12,Default,,0,0,0,,yaani pakki nahi maani ja sakti.
+Dialogue: 0,0:07:12.12,0:07:13.80,Default,,0,0,0,,Unke hisaab se is par abhi
+Dialogue: 0,0:07:13.80,0:07:14.92,Default,,0,0,0,,kai sawaal baaki hain.
+Dialogue: 0,0:07:15.37,0:07:18.18,Default,,0,0,0,,Vaigyanik aur lekhak Rajesh Kochhar alag
+Dialogue: 0,0:07:18.18,0:07:19.11,Default,,0,0,0,,baat kehte hain.
+Dialogue: 0,0:07:19.11,0:07:21.45,Default,,0,0,0,,Unki kitaab The Vedic People mein
+Dialogue: 0,0:07:21.45,0:07:21.92,Default,,0,0,0,,tark hai,
+Dialogue: 0,0:07:21.92,0:07:25.20,Default,,0,0,0,,ki shuruaati Saraswati shayad Afghanistan ki
+Dialogue: 0,0:07:25.20,0:07:26.37,Default,,0,0,0,,Helmand nadi thi.
+Dialogue: 0,0:07:26.37,0:07:28.94,Default,,0,0,0,,Wahan ke ilaake ka purana naam
+Dialogue: 0,0:07:28.94,0:07:30.11,Default,,0,0,0,,Haraxvati tha.
+Dialogue: 0,0:07:30.11,0:07:32.21,Default,,0,0,0,,Haraxvati aur Saraswati,
+Dialogue: 0,0:07:32.21,0:07:34.79,Default,,0,0,0,,dono shabd kaafi milte julte sunai
+Dialogue: 0,0:07:34.79,0:07:35.49,Default,,0,0,0,,dete hain.
+Dialogue: 0,0:07:35.94,0:07:37.49,Default,,0,0,0,,Is soch mein ek shabd aata
+Dialogue: 0,0:07:37.49,0:07:37.72,Default,,0,0,0,,hai,
+Dialogue: 0,0:07:37.72,0:07:38.38,Default,,0,0,0,,toponym,
+Dialogue: 0,0:07:38.38,0:07:40.60,Default,,0,0,0,,yaani kisi jagah ya nadi ka
+Dialogue: 0,0:07:40.60,0:07:40.82,Default,,0,0,0,,naam.
+Dialogue: 0,0:07:40.82,0:07:42.60,Default,,0,0,0,,Kochhar ke tark ke hisaab se
+Dialogue: 0,0:07:42.60,0:07:43.93,Default,,0,0,0,,log jab aage badhe,
+Dialogue: 0,0:07:43.93,0:07:45.26,Default,,0,0,0,,toh naam bhi saath le aaye.
+Dialogue: 0,0:07:45.26,0:07:47.04,Default,,0,0,0,,Jaise aaj log naye shehar mein
+Dialogue: 0,0:07:47.04,0:07:49.48,Default,,0,0,0,,purane mohalle ka naam rakh dete
+Dialogue: 0,0:07:49.48,0:07:49.70,Default,,0,0,0,,hain.
+Dialogue: 0,0:07:49.70,0:07:52.15,Default,,0,0,0,,Doosri taraf ISRO ke adhyayan wale
+Dialogue: 0,0:07:52.15,0:07:52.81,Default,,0,0,0,,vaigyanik,
+Dialogue: 0,0:07:52.81,0:07:55.70,Default,,0,0,0,,Ghaggar-Hakra ko hi Saraswati jodte hain.
+Dialogue: 0,0:07:56.15,0:07:57.22,Default,,0,0,0,,Toh kya pata hai,
+Dialogue: 0,0:07:57.22,0:07:58.07,Default,,0,0,0,,aur kya nahi?
+Dialogue: 0,0:07:58.07,0:08:00.41,Default,,0,0,0,,Pata hai ki yahan purani nadi
+Dialogue: 0,0:08:00.41,0:08:01.27,Default,,0,0,0,,ke raaste hain.
+Dialogue: 0,0:08:01.27,0:08:03.40,Default,,0,0,0,,Pata hai ki neeche meetha paani
+Dialogue: 0,0:08:03.40,0:08:03.61,Default,,0,0,0,,hai.
+Dialogue: 0,0:08:03.61,0:08:05.31,Default,,0,0,0,,Lekin yeh nadi theek kab aur
+Dialogue: 0,0:08:05.31,0:08:05.95,Default,,0,0,0,,kyun sookhi,
+Dialogue: 0,0:08:05.95,0:08:08.73,Default,,0,0,0,,iska pakka timeline abhi kisi ke
+Dialogue: 0,0:08:08.73,0:08:09.37,Default,,0,0,0,,paas nahi.
+Dialogue: 0,0:08:09.37,0:08:11.50,Default,,0,0,0,,Kuch bade sawaal abhi bhi khule
+Dialogue: 0,0:08:11.50,0:08:11.71,Default,,0,0,0,,hain.
+Dialogue: 0,0:08:12.16,0:08:13.36,Default,,0,0,0,,Shuruaat tectonics se.
+Dialogue: 0,0:08:13.36,0:08:15.56,Default,,0,0,0,,Tectonics yaani zameen ke neeche ki
+Dialogue: 0,0:08:15.56,0:08:17.56,Default,,0,0,0,,plates ka dheere dheere khisakna.
+Dialogue: 0,0:08:17.56,0:08:19.76,Default,,0,0,0,,Jab zameen thodi upar neeche hoti
+Dialogue: 0,0:08:19.76,0:08:19.96,Default,,0,0,0,,hai,
+Dialogue: 0,0:08:19.96,0:08:22.16,Default,,0,0,0,,toh nadiyan apna raasta badal leti
+Dialogue: 0,0:08:22.16,0:08:22.36,Default,,0,0,0,,hain.
+Dialogue: 0,0:08:22.36,0:08:24.16,Default,,0,0,0,,Kya kisi aisi halchal ne is
+Dialogue: 0,0:08:24.16,0:08:25.96,Default,,0,0,0,,nadi ke paani ko kahin aur
+Dialogue: 0,0:08:25.96,0:08:26.36,Default,,0,0,0,,mod diya?
+Dialogue: 0,0:08:26.36,0:08:28.56,Default,,0,0,0,,Iska theek samay abhi pakka nahi.
+Dialogue: 0,0:08:29.01,0:08:30.61,Default,,0,0,0,,Phir sawaal nadiyon ke mudne ka.
+Dialogue: 0,0:08:30.61,0:08:32.20,Default,,0,0,0,,Sutlej ke hatne par research aa
+Dialogue: 0,0:08:32.20,0:08:32.73,Default,,0,0,0,,chuki hai.
+Dialogue: 0,0:08:32.73,0:08:34.50,Default,,0,0,0,,Lekin Yamuna ka raasta kab aur
+Dialogue: 0,0:08:34.50,0:08:35.21,Default,,0,0,0,,kaise badla,
+Dialogue: 0,0:08:35.21,0:08:36.99,Default,,0,0,0,,yeh abhi poori tarah saaf nahi.
+Dialogue: 0,0:08:36.99,0:08:37.34,Default,,0,0,0,,Socho,
+Dialogue: 0,0:08:37.34,0:08:39.47,Default,,0,0,0,,agar kabhi Sutlej aur Yamuna dono
+Dialogue: 0,0:08:39.47,0:08:40.88,Default,,0,0,0,,is taraf paani deti thi,
+Dialogue: 0,0:08:40.88,0:08:42.30,Default,,0,0,0,,toh yeh sach mein badi nadi
+Dialogue: 0,0:08:42.30,0:08:43.01,Default,,0,0,0,,rahi hogi.
+Dialogue: 0,0:08:43.46,0:08:44.32,Default,,0,0,0,,Aur aakhir mein,
+Dialogue: 0,0:08:44.32,0:08:45.39,Default,,0,0,0,,mausam ka sawaal.
+Dialogue: 0,0:08:45.39,0:08:48.83,Default,,0,0,0,,Aridification yaani kisi ilaake ka dheere
+Dialogue: 0,0:08:48.83,0:08:51.19,Default,,0,0,0,,dheere sookha aur registaan jaisa ho
+Dialogue: 0,0:08:51.19,0:08:51.62,Default,,0,0,0,,jaana.
+Dialogue: 0,0:08:51.62,0:08:52.70,Default,,0,0,0,,Monsoon kamzor hua,
+Dialogue: 0,0:08:52.70,0:08:55.06,Default,,0,0,0,,toh baarish wali nadiyan patli padti
+Dialogue: 0,0:08:55.06,0:08:55.27,Default,,0,0,0,,gayi.
+Dialogue: 0,0:08:55.27,0:08:57.21,Default,,0,0,0,,Kya yahi is nadi ke sookhne
+Dialogue: 0,0:08:57.21,0:08:58.49,Default,,0,0,0,,ki asli wajah thi?
+Dialogue: 0,0:08:58.49,0:08:60.00,Default,,0,0,0,,Ya tectonics aur mausam,
+Dialogue: 0,0:08:60.00,0:09:01.50,Default,,0,0,0,,dono ne milkar yeh kiya?
+Dialogue: 0,0:09:01.95,0:09:03.56,Default,,0,0,0,,Ab sabse practical baat.
+Dialogue: 0,0:09:03.56,0:09:05.86,Default,,0,0,0,,Agar aap yeh kahani khud dekhna
+Dialogue: 0,0:09:05.86,0:09:06.55,Default,,0,0,0,,chahte ho,
+Dialogue: 0,0:09:06.55,0:09:07.70,Default,,0,0,0,,toh kahan jaaoge?
+Dialogue: 0,0:09:07.70,0:09:09.78,Default,,0,0,0,,Achhi khabar yeh hai ki iske
+Dialogue: 0,0:09:09.78,0:09:11.62,Default,,0,0,0,,nishaan aaj bhi zameen par hain.
+Dialogue: 0,0:09:11.62,0:09:13.46,Default,,0,0,0,,Bas aankh thodi dhyaan se kholni
+Dialogue: 0,0:09:13.46,0:09:14.15,Default,,0,0,0,,padegi.
+Dialogue: 0,0:09:14.15,0:09:14.61,Default,,0,0,0,,Chaliye,
+Dialogue: 0,0:09:14.61,0:09:15.99,Default,,0,0,0,,naqshe par chalte hain.
+Dialogue: 0,0:09:16.44,0:09:19.12,Default,,0,0,0,,Haryana mein Sarsuti dhaara ke kinare
+Dialogue: 0,0:09:19.12,0:09:19.53,Default,,0,0,0,,chaliye.
+Dialogue: 0,0:09:19.53,0:09:21.60,Default,,0,0,0,,Monsoon ke baad isme paani dikhta
+Dialogue: 0,0:09:21.60,0:09:21.80,Default,,0,0,0,,hai,
+Dialogue: 0,0:09:21.80,0:09:22.63,Default,,0,0,0,,garmi mein ret.
+Dialogue: 0,0:09:22.63,0:09:24.08,Default,,0,0,0,,Gaon ke log ise aaj bhi
+Dialogue: 0,0:09:24.08,0:09:25.73,Default,,0,0,0,,Saraswati se jodte hain.
+Dialogue: 0,0:09:25.73,0:09:26.96,Default,,0,0,0,,Yahi woh dhaara hai,
+Dialogue: 0,0:09:26.96,0:09:29.23,Default,,0,0,0,,jise ISRO ke adhyayan ne purane
+Dialogue: 0,0:09:29.23,0:09:30.88,Default,,0,0,0,,dabe network se joda tha.
+Dialogue: 0,0:09:30.88,0:09:31.92,Default,,0,0,0,,Chhoti si dhaara,
+Dialogue: 0,0:09:31.92,0:09:33.36,Default,,0,0,0,,lekin kahani badi.
+Dialogue: 0,0:09:33.81,0:09:35.82,Default,,0,0,0,,Phir Rajasthan ki taraf Ghaggar ka
+Dialogue: 0,0:09:35.82,0:09:36.22,Default,,0,0,0,,chauda,
+Dialogue: 0,0:09:36.22,0:09:37.23,Default,,0,0,0,,sookha paat dekhiye.
+Dialogue: 0,0:09:37.23,0:09:39.04,Default,,0,0,0,,Paat yaani nadi ka woh tala,
+Dialogue: 0,0:09:39.04,0:09:40.85,Default,,0,0,0,,jisme kabhi paani behta tha.
+Dialogue: 0,0:09:40.85,0:09:42.65,Default,,0,0,0,,Kai jagah yeh itna chauda hai,
+Dialogue: 0,0:09:42.65,0:09:44.66,Default,,0,0,0,,ki chhoti nadi ka nahi lagta.
+Dialogue: 0,0:09:44.66,0:09:46.67,Default,,0,0,0,,Aas paas Harappan bastiyon ke tile
+Dialogue: 0,0:09:46.67,0:09:47.28,Default,,0,0,0,,milte hain,
+Dialogue: 0,0:09:47.28,0:09:48.88,Default,,0,0,0,,yaani mitti ke unche dher,
+Dialogue: 0,0:09:48.88,0:09:50.09,Default,,0,0,0,,jahan khudai hui hai.
+Dialogue: 0,0:09:50.54,0:09:52.06,Default,,0,0,0,,Aur ab aastha ki jagah,
+Dialogue: 0,0:09:52.06,0:09:53.80,Default,,0,0,0,,Prayagraj ka Triveni Sangam.
+Dialogue: 0,0:09:53.80,0:09:56.19,Default,,0,0,0,,Yahan Ganga aur Yamuna milti hain,
+Dialogue: 0,0:09:56.19,0:09:57.71,Default,,0,0,0,,yeh aankhon se dikhta hai.
+Dialogue: 0,0:09:57.71,0:09:59.45,Default,,0,0,0,,Lok parampara kehti hai,
+Dialogue: 0,0:09:59.45,0:10:01.62,Default,,0,0,0,,Saraswati bhi yahin milti hai,
+Dialogue: 0,0:10:01.62,0:10:03.14,Default,,0,0,0,,lekin zameen ke neeche,
+Dialogue: 0,0:10:03.14,0:10:04.22,Default,,0,0,0,,adrishya roop mein.
+Dialogue: 0,0:10:04.22,0:10:05.09,Default,,0,0,0,,Yeh legend hai,
+Dialogue: 0,0:10:05.09,0:10:06.83,Default,,0,0,0,,iska koi lekhit srot nahi,
+Dialogue: 0,0:10:06.83,0:10:09.00,Default,,0,0,0,,par bahut logon ki gehri aastha
+Dialogue: 0,0:10:09.00,0:10:09.22,Default,,0,0,0,,hai.
+Dialogue: 0,0:10:09.67,0:10:10.29,Default,,0,0,0,,Dhyaan dijiye,
+Dialogue: 0,0:10:10.29,0:10:12.77,Default,,0,0,0,,yeh lok kahani Mahabharata ki baat
+Dialogue: 0,0:10:12.77,0:10:13.60,Default,,0,0,0,,se judti hai.
+Dialogue: 0,0:10:13.60,0:10:14.43,Default,,0,0,0,,Granth kehta hai,
+Dialogue: 0,0:10:14.43,0:10:17.33,Default,,0,0,0,,Saraswati Vinasana mein zameen ke andar
+Dialogue: 0,0:10:17.33,0:10:17.53,Default,,0,0,0,,gayi.
+Dialogue: 0,0:10:17.53,0:10:19.19,Default,,0,0,0,,Lok parampara kehti hai,
+Dialogue: 0,0:10:19.19,0:10:21.26,Default,,0,0,0,,andar hi andar behkar woh Prayagraj
+Dialogue: 0,0:10:21.26,0:10:21.88,Default,,0,0,0,,pahunchi.
+Dialogue: 0,0:10:21.88,0:10:23.74,Default,,0,0,0,,Is baat ka koi vaigyanik sabut
+Dialogue: 0,0:10:23.74,0:10:25.40,Default,,0,0,0,,abhi hamare paas nahi.
+Dialogue: 0,0:10:25.40,0:10:27.05,Default,,0,0,0,,Par sangam par khade hokar,
+Dialogue: 0,0:10:27.05,0:10:28.71,Default,,0,0,0,,log use mehsoos karte hain.
+Dialogue: 0,0:10:29.16,0:10:31.30,Default,,0,0,0,,Toh poori kahani ko saath rakhiye.
+Dialogue: 0,0:10:31.30,0:10:33.23,Default,,0,0,0,,Granth mahaan nadi ki baat karte
+Dialogue: 0,0:10:33.23,0:10:33.44,Default,,0,0,0,,hain.
+Dialogue: 0,0:10:33.44,0:10:36.44,Default,,0,0,0,,Satellite aur drilling dabi purani nadi
+Dialogue: 0,0:10:36.44,0:10:37.29,Default,,0,0,0,,dikhate hain.
+Dialogue: 0,0:10:37.29,0:10:38.36,Default,,0,0,0,,Research kehti hai,
+Dialogue: 0,0:10:38.36,0:10:40.50,Default,,0,0,0,,badi Sutlej shehron se pehle hat
+Dialogue: 0,0:10:40.50,0:10:41.14,Default,,0,0,0,,chuki thi.
+Dialogue: 0,0:10:41.14,0:10:42.86,Default,,0,0,0,,Aur vidvaan naam par bante hain.
+Dialogue: 0,0:10:42.86,0:10:43.50,Default,,0,0,0,,Sabut hain,
+Dialogue: 0,0:10:43.50,0:10:45.64,Default,,0,0,0,,par aakhri jawab abhi baaki hai.
+Dialogue: 0,0:10:46.09,0:10:48.63,Default,,0,0,0,,Agli baar hum chalenge samundar ki
+Dialogue: 0,0:10:48.63,0:10:49.09,Default,,0,0,0,,taraf,
+Dialogue: 0,0:10:49.09,0:10:50.47,Default,,0,0,0,,Gujarat ke tat par.
+Dialogue: 0,0:10:50.47,0:10:52.55,Default,,0,0,0,,Wahan paani ke neeche ek aur
+Dialogue: 0,0:10:52.55,0:10:53.93,Default,,0,0,0,,kahani dabi hai,
+Dialogue: 0,0:10:53.93,0:10:54.62,Default,,0,0,0,,Dwarka ki.
+Dialogue: 0,0:10:54.62,0:10:55.77,Default,,0,0,0,,Granth kya kehte hain,
+Dialogue: 0,0:10:55.77,0:10:56.93,Default,,0,0,0,,gotakhor kya laaye,
+Dialogue: 0,0:10:56.93,0:10:58.54,Default,,0,0,0,,aur experts kya maante hain.
+Dialogue: 0,0:10:58.54,0:10:59.00,Default,,0,0,0,,Sab kuch,
+Dialogue: 0,0:10:59.00,0:10:59.92,Default,,0,0,0,,sabut ke saath,
+Dialogue: 0,0:10:59.92,0:11:01.77,Default,,0,0,0,,aur har baat par uska label.
+Dialogue: 0,0:11:02.22,0:11:03.22,Default,,0,0,0,,Ab sawaal aapse.
+Dialogue: 0,0:11:03.22,0:11:05.61,Default,,0,0,0,,Aapke hisaab se Saraswati ka paani
+Dialogue: 0,0:11:05.61,0:11:06.81,Default,,0,0,0,,kahan se aata tha,
+Dialogue: 0,0:11:06.81,0:11:08.80,Default,,0,0,0,,Himalaya ke glacier se ya monsoon
+Dialogue: 0,0:11:08.80,0:11:09.60,Default,,0,0,0,,ki baarish se?
+Dialogue: 0,0:11:09.60,0:11:10.79,Default,,0,0,0,,Comment mein bas likhiye,
+Dialogue: 0,0:11:10.79,0:11:11.79,Default,,0,0,0,,glacier ya baarish.
+Dialogue: 0,0:11:11.79,0:11:13.39,Default,,0,0,0,,Aur agar aapke gaon ke paas
+Dialogue: 0,0:11:13.39,0:11:14.58,Default,,0,0,0,,koi sookhi nadi hai,
+Dialogue: 0,0:11:14.58,0:11:15.78,Default,,0,0,0,,uska naam bhi batayiye.

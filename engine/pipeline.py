@@ -1,20 +1,23 @@
 """One piece from topic to scheduled upload, every step behind an injectable function (spec §3 steps 1-10, §7)."""
 import json
+import re
 import shutil
 from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
 from typing import Callable
 
-from . import art, assemble, buffer, cards, cartoon, cast, claims, gemini, lint, pieces, qa, research, secrets, slots, storyframe, topics, voice, writer, youtube
-from .config import CHANNELS, ROOT, VIDEO
+from . import art, artbatch, assemble, buffer, cards, cartoon, cast, claims, gemini, lint, pieces, qa, research, secrets, slots, storyframe, topics, voice, voicebatch, writer, youtube
+from .config import CHANNELS, ROOT, STORY_WORDS, VIDEO
 from .pieces import Piece
 
 TOPIC_TRIES = 3
 def is_story(piece: Piece) -> bool:
     from .config import is_story as _is
     return _is(piece.channel, piece.kind)
-RESUMABLE = {"written", "voiced", "drawn", "assembled", "failed-voice", "failed-art", "qa_failed"}
+QA_TOO_LONG = re.compile(r"duration: ([\d.]+)s, allowed [\d.]+-([\d.]+)s")
+RESUMABLE = {"written", "voicing", "voiced", "painting", "drawn", "assembled", "failed-voice", "failed-art", "qa_failed"}
+PARKED_WRITE = "writing"      # the draft is cooking in Claude's batch lane; topic, facts and the research sheet stay on the piece
 HANDLE = "@sanjeev_gulia"
 LONG_TARGET_MINUTES = {"sglearning": 12, "arthvan": 14}
 
@@ -43,6 +46,10 @@ class Deps:
     story_build: Callable = None # (piece, lines, panels, size, out_dir) -> mp4: illustrated-story frame (title band, panel, caption band)
     cast_refs: Callable = None   # (prompt) -> reference PNGs of the cast members the panel names
     subtitles: Callable = None   # (piece, out_dir, video) -> writes SRTs and adds YouTube caption tracks (longs)
+    voice_lines: Callable = None # (texts, voice_id, out_dir) -> [(wav, seconds)]: batched synthesis (several scenes per request)
+    voice_batch: Callable = None # (piece, texts, voice_id) -> "ready" | "voicing": Gemini Batch API fills the voice cache (half price, no daily cap)
+    art_batch: Callable = None   # (piece, jobs) -> "ready" | "painting": Gemini Batch API fills the picture cache at half price
+    voice_check: Callable = None # (wav) -> transcript: every voiced line is read back and re-made if spoken twice or cut short
 
 
 def _jsonable(d: dict) -> dict:
@@ -108,7 +115,7 @@ def _visual_for(piece: Piece, i: int, scene: dict, deps: Deps, out_dir: Path, si
             return out
     if is_story(piece):
         prompt = v.get("prompt") or piece.script["hook"]
-        refs = deps.cast_refs(prompt) if deps.cast_refs else []
+        refs = deps.cast_refs(prompt, channel=piece.channel) if deps.cast_refs else []
         return deps.paint(art.style_prompt(piece.channel, prompt), out, aspect="4:5", refs=refs)
     aspect = "9:16" if size[1] > size[0] else "16:9"
     return deps.paint(art.style_prompt(piece.channel, v.get("prompt") or piece.script["hook"]), out, aspect=aspect)
@@ -137,11 +144,25 @@ def _label_chips(piece: Piece, deps: Deps, out_dir: Path) -> dict:
     return {lab: deps.render_card("label", {"label": lab}, out_dir / f"label-{lab}.png", (400, 90)) for lab in lint.MYTH_LABELS}
 
 
+def picture_jobs(piece: Piece, deps: Deps) -> list:
+    """[(prompt, refs, aspect)] for every drawn panel of a story piece plus its thumbnail reaction, exactly as the per-scene calls build them."""
+    from . import thumbs
+    jobs = []
+    for sc in (piece.script or {}).get("scenes", []):
+        prompt = (sc.get("visual") or {}).get("prompt") or piece.script["hook"]
+        refs = deps.cast_refs(prompt, channel=piece.channel) if deps.cast_refs else []
+        jobs.append((art.style_prompt(piece.channel, prompt), list(refs), "4:5"))
+    scene = thumbs.scene_for(piece)
+    refs = deps.cast_refs(scene, channel=piece.channel) if deps.cast_refs else []
+    jobs.append((art.style_prompt(piece.channel, thumbs.REACTION.format(scene=scene)), list(refs), "9:16" if piece.kind == "short" else "16:9"))
+    return jobs
+
+
 def _thumb(piece: Piece, deps: Deps, out_dir: Path) -> Path:
     """A drawn reaction panel with two or three shock words (engine.thumbs); Shorts also get a 9:16 cover for Instagram."""
     from . import thumbs
     if is_story(piece):
-        return thumbs.make(piece, out_dir, paint=deps.paint, render=deps.render_card, cast_refs=deps.cast_refs or (lambda s: []))["thumb"]
+        return thumbs.make(piece, out_dir, paint=deps.paint, render=deps.render_card, cast_refs=deps.cast_refs or (lambda s, **kw: []))["thumb"]
     title = piece.script["captions"]["youtube"]["title"]
     words = [w for w in title.replace("?", "? ").split() if w][:4]
     number = next((c["big_number"] for c in piece.script.get("cards", []) if c.get("big_number")), "")
@@ -159,8 +180,20 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
     # 1-4: topic → research → write → gates, up to three topics (skipped when an accepted script already exists: resume)
     script = piece.script if (piece.script and piece.status in RESUMABLE) else None
     sheet, revise = None, None
+    resume_write = piece.status == PARKED_WRITE and bool(piece.topic.get("sheet"))
+    if resume_write:                                                   # the draft is cooking in Claude's batch lane: same topic, same sheet
+        script, sheet, revise = None, piece.topic["sheet"], piece.topic.get("revise")
+        piece.facts = sheet.get("facts", piece.facts)
+    carried = piece.topic.pop("rewrite", None) if script is None else None
+    if carried and (piece.topic.get("title") or piece.topic.get("long_scenes")):
+        sheet = {"facts": piece.facts, "summary": ""}             # a video that came out too long: same topic, shorter script
+        if piece.topic.get("long_scenes"):
+            sheet.update(long_scenes=piece.topic["long_scenes"], hook=piece.topic.get("hook"))
+        revise = carried
     for attempt in range(TOPIC_TRIES if script is None else 0):
-        if revise is None:                                             # a fresh topic (a length-only miss keeps the topic and asks for a trim)
+        if resume_write and attempt == 0:
+            pass                                                       # just collect (or re-ask for) the draft
+        elif revise is None:                                           # a fresh topic (a length-only miss keeps the topic and asks for a trim)
             topic = _pick_topic(piece, deps, root, used)
             if not topic:
                 pieces.save(pieces.transition(piece, "failed-topic", "no usable topic (for a mythology Short: its long is not made yet)"), root)
@@ -188,6 +221,11 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
         except writer.WriterError as e:
             pieces.save(pieces.transition(piece, "failed-write", secrets.scrub(str(e))[:300]), root)
             return piece
+        if written.get("state") == "writing":
+            piece.topic["sheet"] = _jsonable(sheet)
+            pieces.save(pieces.transition(piece, PARKED_WRITE, "draft cooking in Claude's batch lane; the next run collects it"), root)
+            return piece
+        piece.topic.pop("sheet", None)
         if written.get("note", "").startswith("claude failed"):
             piece.reasons.append(written["note"][:300])
         piece.script, piece.writer = written["script"], written["writer"]
@@ -201,7 +239,8 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
             break
         pieces.transition(piece, "rejected", f"try {attempt + 1}: " + "; ".join(reasons))
         pieces.save(piece, root)
-        fixable = ("length", "label", "card", "hashtags", "disclaimer", "title", "threads", "instagram")
+        fixable = ("length", "label", "card", "hashtags", "disclaimer", "title", "threads", "instagram",
+                   "numbers without a source")                     # same topic: drop those numbers or use the fact sheet's
         revise = "; ".join(reasons) if all(r.startswith(fixable) for r in reasons) else None      # formatting misses: same topic, trimmed draft
     if script is None:
         return piece
@@ -220,15 +259,36 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
     voice_id = voice.pick(piece.id) if voice.pick else deps.voice_id
     piece.topic["voice"] = voice_id
     try:
-        for i, scene in enumerate(script["scenes"]):
-            wav = out_dir / "vo" / f"vo{i:02d}.wav"
-            lines.append((wav, deps.say(scene["vo"], voice_id, wav)))
+        if deps.voice_batch:
+            try:
+                if deps.voice_batch(piece, [sc["vo"] for sc in script["scenes"]], voice_id) == "voicing":
+                    pieces.save(pieces.transition(piece, "voicing", "voice job still running; the next run collects it"), root)
+                    return piece
+            except Exception as e:                       # the batch path is an optimisation: fall back to the synchronous lines
+                print(f"voice batch unavailable ({secrets.scrub(str(e))[:120]}); voicing line by line", flush=True)
+        if deps.voice_lines:
+            lines = deps.voice_lines([sc["vo"] for sc in script["scenes"]], voice_id, out_dir / "vo")
+        elif deps.voice_check:
+            lines = voice.verified_lines([sc["vo"] for sc in script["scenes"]], voice_id, out_dir / "vo", say_fn=deps.say, transcribe_fn=deps.voice_check)
+        else:
+            for i, scene in enumerate(script["scenes"]):
+                wav = out_dir / "vo" / f"vo{i:02d}.wav"
+                lines.append((wav, deps.say(scene["vo"], voice_id, wav)))
     except voice.VoiceError as e:                            # the daily cap, a quota refusal or a dead key: keep the script, retry next run
         pieces.save(pieces.transition(piece, "failed-voice", str(e)), root)
         return piece
     pieces.save(pieces.transition(piece, "voiced"), root)
-    # 6-7: pictures and cards
+    # 6-7: pictures and cards (every panel and the thumbnail go out as one half-price batch job first; the per-scene calls then hit the cache)
     try:
+        if deps.art_batch and is_story(piece):
+            try:
+                if deps.art_batch(piece, picture_jobs(piece, deps)) == "painting":
+                    pieces.save(pieces.transition(piece, "painting", "picture job still running; the next run collects it"), root)
+                    return piece
+            except art.ImageBudget:
+                raise
+            except Exception as e:                       # the batch path is an optimisation: paint one by one instead
+                print(f"picture batch unavailable ({secrets.scrub(str(e))[:120]}); painting one by one", flush=True)
         visuals = [_visual_for(piece, i, sc, deps, out_dir, size, line=lines[i]) for i, sc in enumerate(script["scenes"])]
         strips = _source_strips(piece, deps, out_dir, size)
         chips = _label_chips(piece, deps, out_dir)
@@ -247,7 +307,8 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
     else:
         video = deps.build(piece, lines, visuals, size, out_dir, music=bed, source_strips=strips, label_chips=chips, credits=credits)
     if piece.kind == "short":
-        shutil.copy(video, out_dir / "story.mp4")
+        if assemble.story_copy(video, out_dir / "story.mp4") is None:          # founder, 22 Oct 2026: never trim; a Reel over 60 s simply has no Story
+            piece.ids["ig_story_id"] = "skipped: Reel over 60 s"
         if script.get("carousel"):
             for j, card in enumerate(script.get("cards", []), start=1):
                 deps.render_card("slide", card, out_dir / f"slide{j:02d}.jpg", (1080, 1350))
@@ -258,9 +319,19 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
     for (wav, d), start, sc in zip(lines, piece.timings, script["scenes"]):
         cues += _captions.offset(_captions.split(sc["vo"], d), start)
     target = (piece.topic.get("target_minutes") or 0) * 60 or None
+    speech_end = (piece.timings[-1] + lines[-1][1]) if piece.timings and lines else None       # where the last narrated word should end
     problems = deps.qa(video, piece.kind, sum(d for _w, d in lines), cues, target_seconds=target, story=is_story(piece),
-                       check_freeze=not is_story(piece))                 # a story panel's slow push-in is calm by design, not a frozen frame
+                       check_freeze=not is_story(piece), speech_end=speech_end)                 # a story panel's slow push-in is calm by design, not a frozen frame
     if problems:
+        too_long = next((m for m in map(QA_TOO_LONG.match, problems) if m and float(m.group(1)) > float(m.group(2))), None)
+        if too_long:                                                   # the same script and cached voice would fail again forever:
+            dur, hi = float(too_long.group(1)), float(too_long.group(2))     # rewrite shorter, scaled to how fast this voice spoke
+            words = sum(len(sc["vo"].split()) for sc in script["scenes"])
+            lo_words = (STORY_WORDS if is_story(piece) else lint.SHORT_WORDS)[0]
+            cap = max(lo_words, int(words * (hi * 0.9) / dur))
+            piece.topic["rewrite"] = (f"length: the voiced video ran {dur:.0f}s, the limit is {hi:.0f}s; "
+                                      f"rewrite the same story in at most {cap} words of voice in total")
+            piece.script = None
         pieces.save(pieces.transition(piece, "qa_failed", "; ".join(problems)), root)
         return piece
     if dry_run:
@@ -268,6 +339,7 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
         return piece
     # 10: upload, scheduled
     piece.ids["yt_id"] = deps.upload(piece, video, thumb)
+    piece.topic["look"] = art.look(piece.channel)                     # which picture style this piece was drawn in (weekly report)
     pieces.save(pieces.transition(piece, "uploaded"), root)
     if piece.kind == "long" and deps.subtitles:
         try:
@@ -309,9 +381,16 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
         paths = subtitles.write_all(piece, out_dir, duration=qa.probe(video).get("duration"))
         subtitles.upload_all(youtube.access_token(piece.channel, env or os.environ), piece, paths)
 
-    return Deps(topic=topic_fn, research=lambda topic, ch: research.verify_urls(research.fact_sheet(topic, ch)), write=writer.write, say=voice.say, paint=art.paint, avatar=art.avatar,
+    from . import writebatch
+    return Deps(topic=topic_fn, research=lambda topic, ch: research.verify_urls(research.fact_sheet(topic, ch)),
+                write=lambda piece, sheet, lib, tags: writer.write(piece, sheet, lib, tags, batch_fn=writebatch.write_piece), say=voice.say, paint=art.paint, avatar=art.avatar,
                 render_card=cards.render, build=assemble.build, qa=qa.report, upload=upload_fn,
                 lint=lambda piece, prior: lint.check_script(piece, banned, prior) + lint.check_captions(piece, hashtags),
-                claims_check=lambda piece: claims.match(lint.all_text(piece), piece.facts, library),
+                claims_check=lambda piece: claims.match(lint.all_text(piece), piece.facts, library,
+                                                        context=(piece.topic.get("title"), piece.topic.get("title_hi"))),
                 commons=art.commons_photo, library=library, hashtags=hashtags, voice_id=default_voice,
-                cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for, subtitles=subtitles_fn)
+                cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for, subtitles=subtitles_fn,
+                voice_batch=lambda piece, texts, vid: voicebatch.voice_piece(piece, texts, vid),
+                art_batch=lambda piece, jobs: artbatch.paint_piece(piece, jobs), voice_check=voice.transcribe)
+    # voice.batched (several scenes per TTS request) stays unwired: on 22 Oct 2026 the model's paragraph pauses were not distinct enough
+    # to cut on, and the transcript check sent every group back to line-by-line. Wire it in once the cut is reliable.

@@ -115,14 +115,14 @@ def test_make_is_idempotent_for_uploaded_piece(tmp_path):
 def test_myth_short_reuses_long_scenes(tmp_path, monkeypatch):
     from engine import config
     monkeypatch.setattr(config, "STORY_FORMAT", {("sglearning", "short")})
-    long_p = _piece("long", "arthvan", date(2026, 10, 20))
+    long_p = _piece("long", "arthvan", date(2026, 10, 18))
     s = good_script(); s["scenes"] = s["scenes"] * 4                         # 12 scenes
     long_p.script = s; long_p.facts = FACTS; long_p.status = "uploaded"; long_p.topic = {"id": "dwarka-underwater", "hooks": ["h1", "h2", "h3"]}
     pieces.save(long_p, tmp_path)
     d, calls = deps(tmp_path)
     p = pipeline.make(_piece("short", "arthvan", date(2026, 10, 21)), d, tmp_path)
     assert calls["research"] == 0 and calls["write"] == 1                   # no new research; the writer cuts the Short from the long's scenes
-    assert p.topic["from_long"] == "2026-10-20-arthvan-long" and p.status == "uploaded"
+    assert p.topic["from_long"] == "2026-10-18-arthvan-long" and p.status == "uploaded"
 
 
 def test_myth_short_without_long_fails_cleanly(tmp_path, monkeypatch):
@@ -136,12 +136,12 @@ def test_myth_short_without_long_fails_cleanly(tmp_path, monkeypatch):
 def test_myth_short_teases_next_long_when_previous_missing(tmp_path, monkeypatch):
     from engine import config
     monkeypatch.setattr(config, "STORY_FORMAT", {("sglearning", "short")})
-    long_p = _piece("long", "arthvan", date(2026, 10, 24))
+    long_p = _piece("long", "arthvan", date(2026, 10, 22))
     long_p.script = good_script(); long_p.facts = FACTS; long_p.status = "uploaded"; long_p.topic = {"id": "dwarka-underwater", "hooks": ["h1", "h2", "h3"]}
     pieces.save(long_p, tmp_path)
     d, calls = deps(tmp_path)
     p = pipeline.make(_piece("short", "arthvan", date(2026, 10, 21)), d, tmp_path)
-    assert p.topic["from_long"] == "2026-10-24-arthvan-long" and p.status == "uploaded"
+    assert p.topic["from_long"] == "2026-10-22-arthvan-long" and p.status == "uploaded"
 
 
 def test_make_resumes_from_written_script_without_rewriting(tmp_path):
@@ -319,7 +319,7 @@ def test_story_format_uses_panels_cast_refs_and_storyframe(tmp_path):
     def story_build(piece, lines, panels, size, out_dir):
         built.append(len(panels)); piece.timings = [0.0] * len(panels); out = Path(out_dir) / "reel.mp4"; out.write_bytes(b"mp4"); return out
     d.paint = paint_fn; d.story_build = story_build
-    d.cast_refs = lambda prompt: [Path("/cast/sg.png")] if "SG" in prompt else []
+    d.cast_refs = lambda prompt, **kw: [Path("/cast/sg.png")] if "SG" in prompt else []
     def write_fn(piece, sheet, library, hashtags):
         s = good_script(); s["title"] = "Papa ne 20 saal *FD* mein rakha 💔"
         for sc in s["scenes"]:
@@ -417,3 +417,47 @@ def test_one_crashing_piece_never_stops_the_run(tmp_path, monkeypatch):
     code = produce.run(tmp_path, date(2026, 10, 20), max_pieces=2, dry_run=True, only={"sglearning:short"}, deps=d, notify=texts.append)
     assert code == 1 and len(order) == 2                                   # the second piece was still made
     assert pieces.load(order[0], tmp_path).status == "failed-crash"
+
+
+def test_unsourced_numbers_get_a_rewrite_on_the_same_topic(tmp_path):
+    seen = []
+
+    def write_fn(piece, sheet, library, hashtags):
+        seen.append(piece.topic.get("revise"))
+        return {"script": good_script(), "writer": "claude", "note": ""}
+    checks = iter([[11.0], []])
+    d, calls = deps(tmp_path, write=write_fn, claims_check=lambda piece: next(checks))
+    p = pipeline.make(_piece(), d, tmp_path, dry_run=True)
+    assert calls["topics"] == 1 and calls["research"] == 1                 # no new topic, no new research
+    assert seen[0] is None and "numbers without a source: 11" in seen[1]
+    assert p.status == "assembled"
+
+
+def test_too_long_video_is_rewritten_shorter_not_retried_forever(tmp_path):
+    d, calls = deps(tmp_path, qa=lambda path, kind, voiced, cues, **kw: ["duration: 113.2s, allowed 40-95s"])
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert p.status == "qa_failed" and p.script is None and "at most" in p.topic["rewrite"]
+    notes = []
+
+    def write_fn(piece, sheet, library, hashtags):
+        notes.append(piece.topic.get("revise"))
+        return {"script": good_script(), "writer": "claude", "note": ""}
+    d2, calls2 = deps(tmp_path, write=write_fn)
+    p.status = "planned"                                                     # what produce does for a piece without a script
+    p = pipeline.make(p, d2, tmp_path, dry_run=True)
+    assert calls2["topics"] == 0 and calls2["research"] == 0                 # same topic, same facts
+    assert notes[0].startswith("length: the voiced video ran 113s") and p.status == "assembled"
+
+
+def test_a_draft_cooking_in_claudes_batch_lane_parks_the_piece_and_the_next_run_collects_it(tmp_path):
+    d, calls = deps(tmp_path)
+    states = iter([{"script": None, "writer": "claude", "note": "", "state": "writing"}, {"script": good_script(), "writer": "claude", "note": "", "state": "ready"}])
+    seen = []
+    def write_fn(piece, sheet, library, hashtags):
+        calls["write"] += 1; seen.append(sheet); return next(states)
+    d.write = write_fn
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert p.status == "writing" and p.topic["sheet"]["facts"] == FACTS and calls["research"] == 1 and calls["say"] == 0
+    p = pipeline.make(pieces.load(p.id, tmp_path), d, tmp_path)
+    assert p.status == "uploaded" and calls["research"] == 1 and calls["write"] == 2            # no new research: the stored sheet was reused
+    assert seen[1]["facts"] == FACTS and "sheet" not in p.topic

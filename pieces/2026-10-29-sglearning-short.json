@@ -1,0 +1,33 @@
+{
+ "channel": "sglearning",
+ "facts": [],
+ "id": "2026-10-29-sglearning-short",
+ "ids": {},
+ "kind": "short",
+ "publish_day": "2026-10-29",
+ "reasons": [
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+ ],
+ "script": null,
+ "status": "failed-research",
+ "timings": [],
+ "topic": {
+  "link": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-treasury-yields-rise-but-10-year-stays-below-5-as-ai-jitters-persist/articleshow/135151795.cms",
+  "published": "2026-10-23T17:24:04+00:00",
+  "rank": 3,
+  "source": "ET Markets",
+  "summary": "US Treasury yields rise after a sharp drop in the previous session, but the benchmark 10 year yield stays below 5% as lingering AI market concerns keep investors cautious. Strong economic activity and sticky inflation remain key factors for bond markets, while expectations of a Federal Reserve rate hike next week weaken further.",
+  "target_minutes": null,
+  "title": "US Treasury yields rise but 10-year stays below 5% as AI jitters persist"
+ },
+ "updated": "2026-10-23T18:42:08+00:00",
+ "writer": ""
+}

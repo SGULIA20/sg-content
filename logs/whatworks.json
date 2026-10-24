@@ -1,0 +1,77 @@
+{
+ "end": "2026-10-22",
+ "week": [
+  {
+   "id": "2026-10-21-arthvan-short",
+   "channel": "arthvan",
+   "day": "2026-10-21",
+   "look": "doodle",
+   "title": "Ram Setu: 103 reefs ya kisi ka banaya pul?",
+   "yt_views": 0,
+   "yt_watched_pct": null,
+   "ig_views": 1540,
+   "ig_saves": 1,
+   "ig_skip_rate": 29.8,
+   "th_views": 21,
+   "reach": 1561
+  },
+  {
+   "id": "2026-10-21-sglearning-short",
+   "channel": "sglearning",
+   "day": "2026-10-21",
+   "look": "doodle",
+   "title": "Dividend ka ₹6.50 free hai? Agle din share kyun gira",
+   "yt_views": 0,
+   "yt_watched_pct": null,
+   "ig_views": 1352,
+   "ig_saves": 4,
+   "ig_skip_rate": 34.5,
+   "th_views": 4,
+   "reach": 1356
+  },
+  {
+   "id": "2026-10-22-arthvan-short",
+   "channel": "arthvan",
+   "day": "2026-10-22",
+   "look": "doodle",
+   "title": "Kailash par chadhna mumkin, phir kyon nahi?",
+   "yt_views": 0,
+   "yt_watched_pct": null,
+   "ig_views": 62,
+   "ig_saves": 0,
+   "ig_skip_rate": 56,
+   "th_views": 0,
+   "reach": 62
+  },
+  {
+   "id": "2026-10-22-sglearning-short",
+   "channel": "sglearning",
+   "day": "2026-10-22",
+   "look": "doodle",
+   "title": "US Stocks 1 dollar se? Asli kharcha kya hai",
+   "yt_views": 0,
+   "yt_watched_pct": null,
+   "ig_views": 1442,
+   "ig_saves": 4,
+   "ig_skip_rate": 34,
+   "th_views": 5,
+   "reach": 1447
+  }
+ ],
+ "looks": {
+  "arthvan": {
+   "doodle": {
+    "shorts": 2,
+    "avg_reach": 812,
+    "avg_watched_pct": null
+   }
+  },
+  "sglearning": {
+   "doodle": {
+    "shorts": 2,
+    "avg_reach": 1402,
+    "avg_watched_pct": null
+   }
+  }
+ }
+}

@@ -1,0 +1,347 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,86,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.02,Default,,0,0,0,,Papa ki FD har saal badh
+Dialogue: 0,0:00:02.02,0:00:02.89,Default,,0,0,0,,rahi thi,
+Dialogue: 0,0:00:02.89,0:00:05.49,Default,,0,0,0,,phir bhi Papa gareeb ho rahe
+Dialogue: 0,0:00:05.49,0:00:05.78,Default,,0,0,0,,the.
+Dialogue: 0,0:00:05.78,0:00:08.67,Default,,0,0,0,,Almirah mein receipts ki ek moti
+Dialogue: 0,0:00:08.67,0:00:09.53,Default,,0,0,0,,file hai.
+Dialogue: 0,0:00:09.53,0:00:11.84,Default,,0,0,0,,Har receipt par byaaj likha hai.
+Dialogue: 0,0:00:11.84,0:00:14.16,Default,,0,0,0,,Papa use pyaar se chhoo kar
+Dialogue: 0,0:00:14.16,0:00:15.02,Default,,0,0,0,,kehte hain,
+Dialogue: 0,0:00:15.02,0:00:15.60,Default,,0,0,0,,beta,
+Dialogue: 0,0:00:15.60,0:00:16.47,Default,,0,0,0,,safe hai,
+Dialogue: 0,0:00:16.47,0:00:18.20,Default,,0,0,0,,kahin nahi jaayega.
+Dialogue: 0,0:00:18.65,0:00:21.36,Default,,0,0,0,,Ek shaam Mummy sabzi ka thaila
+Dialogue: 0,0:00:21.36,0:00:22.57,Default,,0,0,0,,lekar ghar aayi.
+Dialogue: 0,0:00:22.57,0:00:24.08,Default,,0,0,0,,Thaila halka tha,
+Dialogue: 0,0:00:24.08,0:00:25.59,Default,,0,0,0,,par bill bhaari tha.
+Dialogue: 0,0:00:25.59,0:00:27.09,Default,,0,0,0,,Mummy ne kaha,
+Dialogue: 0,0:00:27.09,0:00:30.41,Default,,0,0,0,,pehle isi paise mein poora hafta
+Dialogue: 0,0:00:30.41,0:00:32.22,Default,,0,0,0,,aaraam se chalta tha.
+Dialogue: 0,0:00:32.22,0:00:34.63,Default,,0,0,0,,Ab beech hafte mein hi khatam.
+Dialogue: 0,0:00:34.63,0:00:37.04,Default,,0,0,0,,Papa ne chashma utaara,
+Dialogue: 0,0:00:37.04,0:00:38.25,Default,,0,0,0,,aur chup ho gaye.
+Dialogue: 0,0:00:38.70,0:00:41.26,Default,,0,0,0,,Papa ka hisaab bilkul seedha tha.
+Dialogue: 0,0:00:41.26,0:00:42.54,Default,,0,0,0,,Paisa bank mein hai,
+Dialogue: 0,0:00:42.54,0:00:44.08,Default,,0,0,0,,har saal byaaj judta hai,
+Dialogue: 0,0:00:44.08,0:00:45.87,Default,,0,0,0,,toh total badh raha hai.
+Dialogue: 0,0:00:45.87,0:00:48.43,Default,,0,0,0,,Receipt par number bada hota gaya.
+Dialogue: 0,0:00:48.43,0:00:50.99,Default,,0,0,0,,Par dukaan par wahi number chhota
+Dialogue: 0,0:00:50.99,0:00:51.76,Default,,0,0,0,,padta gaya.
+Dialogue: 0,0:00:51.76,0:00:54.32,Default,,0,0,0,,Yahi is kahani ka chhupa chor
+Dialogue: 0,0:00:54.32,0:00:54.58,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:55.03,0:00:56.48,Default,,0,0,0,,Toh aaj teen sawaal.
+Dialogue: 0,0:00:56.48,0:00:57.07,Default,,0,0,0,,Pehla,
+Dialogue: 0,0:00:57.07,0:00:58.81,Default,,0,0,0,,FD par byaaj milta hai,
+Dialogue: 0,0:00:58.81,0:01:01.14,Default,,0,0,0,,phir bhi paisa kam kaise hua?
+Dialogue: 0,0:01:01.14,0:01:01.72,Default,,0,0,0,,Doosra,
+Dialogue: 0,0:01:01.72,0:01:03.47,Default,,0,0,0,,FD ke byaaj par tax kab
+Dialogue: 0,0:01:03.47,0:01:05.21,Default,,0,0,0,,aur kitna kat-ta hai?
+Dialogue: 0,0:01:05.21,0:01:05.80,Default,,0,0,0,,Teesra,
+Dialogue: 0,0:01:05.80,0:01:09.00,Default,,0,0,0,,emergency ka paisa kahan rakhein?
+Dialogue: 0,0:01:09.00,0:01:11.61,Default,,0,0,0,,Teeno ka jawaab isi ghar ki
+Dialogue: 0,0:01:11.61,0:01:13.07,Default,,0,0,0,,kahani mein hai.
+Dialogue: 0,0:01:13.52,0:01:14.66,Default,,0,0,0,,Pehla sawaal.
+Dialogue: 0,0:01:14.66,0:01:15.51,Default,,0,0,0,,Byaaj mila,
+Dialogue: 0,0:01:15.51,0:01:17.78,Default,,0,0,0,,phir bhi paisa kam kaise hua?
+Dialogue: 0,0:01:17.78,0:01:20.90,Default,,0,0,0,,Iske liye ek shabd samajhna zaroori
+Dialogue: 0,0:01:20.90,0:01:21.18,Default,,0,0,0,,hai,
+Dialogue: 0,0:01:21.18,0:01:21.75,Default,,0,0,0,,mehngai.
+Dialogue: 0,0:01:21.75,0:01:24.30,Default,,0,0,0,,Mehngai yaani cheezon ke daam ka
+Dialogue: 0,0:01:24.30,0:01:26.00,Default,,0,0,0,,dheere dheere badhna.
+Dialogue: 0,0:01:26.00,0:01:28.56,Default,,0,0,0,,Aaj jo thali aap khareedte ho,
+Dialogue: 0,0:01:28.56,0:01:31.96,Default,,0,0,0,,agle saal wahi thali mehngi milegi.
+Dialogue: 0,0:01:32.41,0:01:34.33,Default,,0,0,0,,Ab FD ka byaaj dekhiye.
+Dialogue: 0,0:01:34.33,0:01:37.52,Default,,0,0,0,,July 2026 mein banks ne naye
+Dialogue: 0,0:01:37.52,0:01:41.03,Default,,0,0,0,,FD par average lagbhag 5.9 percent
+Dialogue: 0,0:01:41.03,0:01:41.67,Default,,0,0,0,,byaaj diya.
+Dialogue: 0,0:01:41.67,0:01:44.22,Default,,0,0,0,,Yeh baat Grip Invest ki report
+Dialogue: 0,0:01:44.22,0:01:44.86,Default,,0,0,0,,mein hai.
+Dialogue: 0,0:01:44.86,0:01:47.42,Default,,0,0,0,,Sunne mein achha lagta hai.
+Dialogue: 0,0:01:47.42,0:01:49.33,Default,,0,0,0,,Paisa badh raha hai,
+Dialogue: 0,0:01:49.33,0:01:50.61,Default,,0,0,0,,toh sab theek hai,
+Dialogue: 0,0:01:50.61,0:01:51.25,Default,,0,0,0,,hai na?
+Dialogue: 0,0:01:51.70,0:01:53.87,Default,,0,0,0,,Par asli sawaal yeh hai.
+Dialogue: 0,0:01:53.87,0:01:56.34,Default,,0,0,0,,Aapka paisa kitna badha,
+Dialogue: 0,0:01:56.34,0:01:59.13,Default,,0,0,0,,aur aapke kharche kitne badhe?
+Dialogue: 0,0:01:59.13,0:02:00.06,Default,,0,0,0,,Agar doodh,
+Dialogue: 0,0:02:00.06,0:02:02.54,Default,,0,0,0,,dawai aur school fees ka kharcha
+Dialogue: 0,0:02:02.54,0:02:04.09,Default,,0,0,0,,byaaj se tez badhe,
+Dialogue: 0,0:02:04.09,0:02:06.87,Default,,0,0,0,,toh receipt par number bada hai,
+Dialogue: 0,0:02:06.87,0:02:10.28,Default,,0,0,0,,par aapki khareedne ki taakat chhoti
+Dialogue: 0,0:02:10.28,0:02:10.90,Default,,0,0,0,,ho gayi.
+Dialogue: 0,0:02:11.35,0:02:14.12,Default,,0,0,0,,Isi ko kehte hain real return.
+Dialogue: 0,0:02:14.12,0:02:16.58,Default,,0,0,0,,Real return yaani byaaj mein se
+Dialogue: 0,0:02:16.58,0:02:18.73,Default,,0,0,0,,mehngai kaat kar jo sach mein
+Dialogue: 0,0:02:18.73,0:02:19.35,Default,,0,0,0,,bacha.
+Dialogue: 0,0:02:19.35,0:02:22.12,Default,,0,0,0,,Agar mehngai 5.9 percent se kam
+Dialogue: 0,0:02:22.12,0:02:22.42,Default,,0,0,0,,hai,
+Dialogue: 0,0:02:22.42,0:02:24.58,Default,,0,0,0,,toh aap thoda aage ho.
+Dialogue: 0,0:02:24.58,0:02:26.11,Default,,0,0,0,,Agar zyada hai,
+Dialogue: 0,0:02:26.11,0:02:28.88,Default,,0,0,0,,toh aap chupchaap peeche ja rahe
+Dialogue: 0,0:02:28.88,0:02:29.19,Default,,0,0,0,,ho.
+Dialogue: 0,0:02:29.64,0:02:32.13,Default,,0,0,0,,Ek din Beta ne apni gullak
+Dialogue: 0,0:02:32.13,0:02:33.51,Default,,0,0,0,,ke sikke gine.
+Dialogue: 0,0:02:33.51,0:02:36.28,Default,,0,0,0,,Dadaji yaani Papa ne kaha,
+Dialogue: 0,0:02:36.28,0:02:37.66,Default,,0,0,0,,inhe mat kharcho,
+Dialogue: 0,0:02:37.66,0:02:38.21,Default,,0,0,0,,bachao.
+Dialogue: 0,0:02:38.21,0:02:39.60,Default,,0,0,0,,Beta ne poocha,
+Dialogue: 0,0:02:39.60,0:02:40.43,Default,,0,0,0,,Dadaji,
+Dialogue: 0,0:02:40.43,0:02:42.91,Default,,0,0,0,,jo toffee pichle saal in sikkon
+Dialogue: 0,0:02:42.91,0:02:44.02,Default,,0,0,0,,mein aati thi,
+Dialogue: 0,0:02:44.02,0:02:45.68,Default,,0,0,0,,ab kyun nahi aati?
+Dialogue: 0,0:02:45.68,0:02:46.79,Default,,0,0,0,,Papa has diye,
+Dialogue: 0,0:02:46.79,0:02:49.00,Default,,0,0,0,,par sawaal bilkul sahi tha.
+Dialogue: 0,0:02:49.45,0:02:51.46,Default,,0,0,0,,Mehngai ek chhupa tax hai.
+Dialogue: 0,0:02:51.46,0:02:53.19,Default,,0,0,0,,Koi form nahi bharta,
+Dialogue: 0,0:02:53.19,0:02:55.49,Default,,0,0,0,,koi notice nahi aata.
+Dialogue: 0,0:02:55.49,0:02:57.79,Default,,0,0,0,,Bas har saal aapke rupaye ki
+Dialogue: 0,0:02:57.79,0:03:00.09,Default,,0,0,0,,keemat thodi ghat jaati hai.
+Dialogue: 0,0:03:00.09,0:03:02.10,Default,,0,0,0,,FD ka byaaj agar is chor
+Dialogue: 0,0:03:02.10,0:03:03.82,Default,,0,0,0,,se tez nahi bhaagta,
+Dialogue: 0,0:03:03.82,0:03:06.12,Default,,0,0,0,,toh paisa safe dikhta hai,
+Dialogue: 0,0:03:06.12,0:03:07.85,Default,,0,0,0,,par ghat-ta rehta hai.
+Dialogue: 0,0:03:08.30,0:03:10.41,Default,,0,0,0,,Papa ki file mein yeh baat
+Dialogue: 0,0:03:10.41,0:03:12.52,Default,,0,0,0,,kabhi likhi hi nahi thi.
+Dialogue: 0,0:03:12.52,0:03:14.63,Default,,0,0,0,,Receipt sirf byaaj batati hai,
+Dialogue: 0,0:03:14.63,0:03:16.48,Default,,0,0,0,,mehngai nahi batati.
+Dialogue: 0,0:03:16.48,0:03:18.85,Default,,0,0,0,,Isliye Papa ko laga sab badh
+Dialogue: 0,0:03:18.85,0:03:19.64,Default,,0,0,0,,raha hai.
+Dialogue: 0,0:03:19.64,0:03:22.01,Default,,0,0,0,,Asal mein unki FD bas apni
+Dialogue: 0,0:03:22.01,0:03:24.39,Default,,0,0,0,,jagah khadi rehne ke liye daud
+Dialogue: 0,0:03:24.39,0:03:25.18,Default,,0,0,0,,rahi thi.
+Dialogue: 0,0:03:25.63,0:03:26.78,Default,,0,0,0,,Doosra sawaal,
+Dialogue: 0,0:03:26.78,0:03:29.36,Default,,0,0,0,,aur yahan ek aur chhupa kharcha
+Dialogue: 0,0:03:29.36,0:03:29.64,Default,,0,0,0,,hai.
+Dialogue: 0,0:03:29.64,0:03:31.94,Default,,0,0,0,,FD ka byaaj free nahi hota.
+Dialogue: 0,0:03:31.94,0:03:34.80,Default,,0,0,0,,Woh aapki income mein judta hai.
+Dialogue: 0,0:03:34.80,0:03:37.38,Default,,0,0,0,,Aur income par tax lagta hai,
+Dialogue: 0,0:03:37.38,0:03:39.39,Default,,0,0,0,,aapke slab ke hisaab se.
+Dialogue: 0,0:03:39.39,0:03:41.97,Default,,0,0,0,,Slab yaani income ki seedhi,
+Dialogue: 0,0:03:41.97,0:03:43.12,Default,,0,0,0,,jitni oonchi,
+Dialogue: 0,0:03:43.12,0:03:44.55,Default,,0,0,0,,utna zyada tax.
+Dialogue: 0,0:03:45.00,0:03:48.63,Default,,0,0,0,,Behen office se aayi aur phone
+Dialogue: 0,0:03:48.63,0:03:51.54,Default,,0,0,0,,par FD ki statement kholi.
+Dialogue: 0,0:03:51.54,0:03:53.36,Default,,0,0,0,,Byaaj credit hua tha,
+Dialogue: 0,0:03:53.36,0:03:55.18,Default,,0,0,0,,par poora nahi.
+Dialogue: 0,0:03:55.18,0:03:56.63,Default,,0,0,0,,Usne poocha,
+Dialogue: 0,0:03:56.63,0:03:58.09,Default,,0,0,0,,yeh kam kyun aaya?
+Dialogue: 0,0:03:58.09,0:03:59.54,Default,,0,0,0,,Jawaab tha TDS.
+Dialogue: 0,0:03:59.54,0:04:02.45,Default,,0,0,0,,TDS yaani bank khud aapka tax
+Dialogue: 0,0:04:02.45,0:04:05.36,Default,,0,0,0,,kaat kar sarkar ko bhej deta
+Dialogue: 0,0:04:05.36,0:04:05.72,Default,,0,0,0,,hai.
+Dialogue: 0,0:04:06.17,0:04:09.14,Default,,0,0,0,,Behen ko laga yahi poora tax
+Dialogue: 0,0:04:09.14,0:04:09.43,Default,,0,0,0,,hai.
+Dialogue: 0,0:04:09.43,0:04:11.81,Default,,0,0,0,,Par aisa zaroori nahi.
+Dialogue: 0,0:04:11.81,0:04:14.77,Default,,0,0,0,,TDS sirf ek advance katauti hai.
+Dialogue: 0,0:04:14.77,0:04:18.04,Default,,0,0,0,,Aakhri hisaab income tax return mein
+Dialogue: 0,0:04:18.04,0:04:18.92,Default,,0,0,0,,hota hai.
+Dialogue: 0,0:04:18.92,0:04:21.30,Default,,0,0,0,,Agar aapka slab ooncha hai,
+Dialogue: 0,0:04:21.30,0:04:23.67,Default,,0,0,0,,toh return bharte waqt aur tax
+Dialogue: 0,0:04:23.67,0:04:25.45,Default,,0,0,0,,dena pad sakta hai.
+Dialogue: 0,0:04:25.90,0:04:28.35,Default,,0,0,0,,Ab sabse oonche slab ki sochiye.
+Dialogue: 0,0:04:28.35,0:04:31.06,Default,,0,0,0,,New regime mein sabse oonche slab
+Dialogue: 0,0:04:31.06,0:04:32.96,Default,,0,0,0,,par 30 percent tax hai.
+Dialogue: 0,0:04:32.96,0:04:35.14,Default,,0,0,0,,Matlab FD ke byaaj ka 30
+Dialogue: 0,0:04:35.14,0:04:36.77,Default,,0,0,0,,percent sarkar ke paas.
+Dialogue: 0,0:04:36.77,0:04:38.94,Default,,0,0,0,,Jo byaaj pehle hi mehngai se
+Dialogue: 0,0:04:38.94,0:04:40.03,Default,,0,0,0,,lad raha tha,
+Dialogue: 0,0:04:40.03,0:04:41.66,Default,,0,0,0,,woh aur patla ho gaya.
+Dialogue: 0,0:04:42.11,0:04:43.95,Default,,0,0,0,,Toh FD ka asli hisaab yeh
+Dialogue: 0,0:04:43.95,0:04:44.42,Default,,0,0,0,,bana.
+Dialogue: 0,0:04:44.42,0:04:45.80,Default,,0,0,0,,Pehle tax katega,
+Dialogue: 0,0:04:45.80,0:04:46.95,Default,,0,0,0,,phir mehngai khaayegi.
+Dialogue: 0,0:04:46.95,0:04:47.87,Default,,0,0,0,,Jo bachega,
+Dialogue: 0,0:04:47.87,0:04:49.95,Default,,0,0,0,,wahi aapka sach mein kamaya hua
+Dialogue: 0,0:04:49.95,0:04:50.64,Default,,0,0,0,,paisa hai.
+Dialogue: 0,0:04:50.64,0:04:52.48,Default,,0,0,0,,Kai logon ke liye yeh bacha
+Dialogue: 0,0:04:52.48,0:04:54.79,Default,,0,0,0,,hua hissa umeed se kaafi chhota
+Dialogue: 0,0:04:54.79,0:04:55.71,Default,,0,0,0,,nikalta hai.
+Dialogue: 0,0:04:56.16,0:04:58.16,Default,,0,0,0,,Par har kisi par itna tax
+Dialogue: 0,0:04:58.16,0:04:59.16,Default,,0,0,0,,nahi lagta.
+Dialogue: 0,0:04:59.16,0:05:00.66,Default,,0,0,0,,Papa retired hain,
+Dialogue: 0,0:05:00.66,0:05:02.41,Default,,0,0,0,,unki income kam hai.
+Dialogue: 0,0:05:02.41,0:05:04.65,Default,,0,0,0,,New regime mein 12 lakh tak
+Dialogue: 0,0:05:04.65,0:05:05.90,Default,,0,0,0,,ki income par,
+Dialogue: 0,0:05:05.90,0:05:07.15,Default,,0,0,0,,rebate ke baad,
+Dialogue: 0,0:05:07.15,0:05:08.65,Default,,0,0,0,,tax zero banta hai.
+Dialogue: 0,0:05:08.65,0:05:11.15,Default,,0,0,0,,Rebate yaani sarkar ki di hui
+Dialogue: 0,0:05:11.15,0:05:11.40,Default,,0,0,0,,chhoot.
+Dialogue: 0,0:05:11.85,0:05:14.96,Default,,0,0,0,,Matlab Papa jaise logon ke liye
+Dialogue: 0,0:05:14.96,0:05:17.44,Default,,0,0,0,,tax ka bojh halka ho sakta
+Dialogue: 0,0:05:17.44,0:05:17.75,Default,,0,0,0,,hai.
+Dialogue: 0,0:05:17.75,0:05:19.93,Default,,0,0,0,,Par mehngai ka chor phir bhi
+Dialogue: 0,0:05:19.93,0:05:21.48,Default,,0,0,0,,wahin khada hai.
+Dialogue: 0,0:05:21.48,0:05:22.73,Default,,0,0,0,,Tax na lage,
+Dialogue: 0,0:05:22.73,0:05:25.21,Default,,0,0,0,,toh bhi kharche toh badhte hi
+Dialogue: 0,0:05:25.21,0:05:25.52,Default,,0,0,0,,hain.
+Dialogue: 0,0:05:25.52,0:05:27.70,Default,,0,0,0,,Isliye sirf tax mat dekhiye,
+Dialogue: 0,0:05:27.70,0:05:29.25,Default,,0,0,0,,real return dekhiye.
+Dialogue: 0,0:05:29.70,0:05:30.89,Default,,0,0,0,,Aur ek kaam ki baat.
+Dialogue: 0,0:05:30.89,0:05:33.50,Default,,0,0,0,,Agar aapki income chhoot ke andar
+Dialogue: 0,0:05:33.50,0:05:33.73,Default,,0,0,0,,hai,
+Dialogue: 0,0:05:33.73,0:05:35.16,Default,,0,0,0,,par bank ne TDS kaat liya,
+Dialogue: 0,0:05:35.16,0:05:37.29,Default,,0,0,0,,toh woh paisa return bharne par
+Dialogue: 0,0:05:37.29,0:05:38.72,Default,,0,0,0,,wapas mil sakta hai.
+Dialogue: 0,0:05:38.72,0:05:40.62,Default,,0,0,0,,Bahut log yeh claim karte hi
+Dialogue: 0,0:05:40.62,0:05:41.09,Default,,0,0,0,,nahi.
+Dialogue: 0,0:05:41.09,0:05:43.70,Default,,0,0,0,,Unka paisa yunhi pada rehta hai.
+Dialogue: 0,0:05:44.15,0:05:45.12,Default,,0,0,0,,Teesra sawaal.
+Dialogue: 0,0:05:45.12,0:05:46.57,Default,,0,0,0,,Toh kya FD bekaar hai?
+Dialogue: 0,0:05:46.57,0:05:47.54,Default,,0,0,0,,Bilkul nahi.
+Dialogue: 0,0:05:47.54,0:05:49.24,Default,,0,0,0,,Har cheez ka ek kaam hota
+Dialogue: 0,0:05:49.24,0:05:49.48,Default,,0,0,0,,hai.
+Dialogue: 0,0:05:49.48,0:05:51.66,Default,,0,0,0,,FD ka kaam paisa badhana kam,
+Dialogue: 0,0:05:51.66,0:05:54.08,Default,,0,0,0,,paisa sambhaal kar rakhna zyada hai.
+Dialogue: 0,0:05:54.08,0:05:55.77,Default,,0,0,0,,Aur ek jagah yeh kaam FD
+Dialogue: 0,0:05:55.77,0:05:57.71,Default,,0,0,0,,bahut achhe se karti hai.
+Dialogue: 0,0:05:58.16,0:06:00.04,Default,,0,0,0,,Ek raat Papa ko seene mein
+Dialogue: 0,0:06:00.04,0:06:00.51,Default,,0,0,0,,dard hua.
+Dialogue: 0,0:06:00.51,0:06:02.62,Default,,0,0,0,,Hospital mein pehla sawaal tha,
+Dialogue: 0,0:06:02.62,0:06:04.97,Default,,0,0,0,,deposit kitna jama karoge?
+Dialogue: 0,0:06:04.97,0:06:07.08,Default,,0,0,0,,Us waqt kisi lambi scheme ka
+Dialogue: 0,0:06:07.08,0:06:09.20,Default,,0,0,0,,intezaar nahi ho sakta tha.
+Dialogue: 0,0:06:09.20,0:06:11.08,Default,,0,0,0,,Paisa usi raat chahiye tha,
+Dialogue: 0,0:06:11.08,0:06:12.72,Default,,0,0,0,,bina kisi deri ke.
+Dialogue: 0,0:06:13.17,0:06:16.14,Default,,0,0,0,,Isi ko kehte hain emergency fund.
+Dialogue: 0,0:06:16.14,0:06:19.11,Default,,0,0,0,,Emergency fund yaani woh paisa jo
+Dialogue: 0,0:06:19.11,0:06:21.27,Default,,0,0,0,,sirf mushkil waqt ke liye rakha
+Dialogue: 0,0:06:21.27,0:06:21.54,Default,,0,0,0,,ho.
+Dialogue: 0,0:06:21.54,0:06:22.62,Default,,0,0,0,,Naukri chhoot jaaye,
+Dialogue: 0,0:06:22.62,0:06:23.70,Default,,0,0,0,,beemari aaye,
+Dialogue: 0,0:06:23.70,0:06:26.13,Default,,0,0,0,,ya ghar mein achanak kharcha aa
+Dialogue: 0,0:06:26.13,0:06:26.40,Default,,0,0,0,,jaaye.
+Dialogue: 0,0:06:26.40,0:06:29.10,Default,,0,0,0,,Is paise ka kaam kamaana nahi,
+Dialogue: 0,0:06:29.10,0:06:30.45,Default,,0,0,0,,waqt par milna hai.
+Dialogue: 0,0:06:30.90,0:06:33.44,Default,,0,0,0,,Yahan FD ya savings account kaam
+Dialogue: 0,0:06:33.44,0:06:34.29,Default,,0,0,0,,aata hai.
+Dialogue: 0,0:06:34.29,0:06:36.55,Default,,0,0,0,,Paisa jaldi nikalta hai,
+Dialogue: 0,0:06:36.55,0:06:39.09,Default,,0,0,0,,daam upar neeche nahi hote.
+Dialogue: 0,0:06:39.09,0:06:40.78,Default,,0,0,0,,Mehngai thoda khaayegi,
+Dialogue: 0,0:06:40.78,0:06:41.35,Default,,0,0,0,,maana.
+Dialogue: 0,0:06:41.35,0:06:44.73,Default,,0,0,0,,Par emergency mein turant paisa milne
+Dialogue: 0,0:06:44.73,0:06:47.27,Default,,0,0,0,,ki keemat us thode nuksaan se
+Dialogue: 0,0:06:47.27,0:06:48.68,Default,,0,0,0,,kahin zyada hai.
+Dialogue: 0,0:06:48.68,0:06:50.66,Default,,0,0,0,,Raat ko neend bhi aati hai.
+Dialogue: 0,0:06:51.11,0:06:53.05,Default,,0,0,0,,Aur agar bank hi doob jaaye
+Dialogue: 0,0:06:53.05,0:06:53.33,Default,,0,0,0,,toh?
+Dialogue: 0,0:06:53.33,0:06:55.54,Default,,0,0,0,,Yahan DICGC ka naam aata hai.
+Dialogue: 0,0:06:55.54,0:06:58.87,Default,,0,0,0,,DICGC yaani bank deposits ka insurance
+Dialogue: 0,0:06:58.87,0:07:00.53,Default,,0,0,0,,dene wali sanstha.
+Dialogue: 0,0:07:00.53,0:07:02.47,Default,,0,0,0,,Har depositor ke liye,
+Dialogue: 0,0:07:02.47,0:07:03.30,Default,,0,0,0,,har bank mein,
+Dialogue: 0,0:07:03.30,0:07:05.52,Default,,0,0,0,,5 lakh rupaye tak ka cover
+Dialogue: 0,0:07:05.52,0:07:06.35,Default,,0,0,0,,milta hai.
+Dialogue: 0,0:07:06.80,0:07:09.11,Default,,0,0,0,,Isliye Wife ne ghar ka ek
+Dialogue: 0,0:07:09.11,0:07:10.55,Default,,0,0,0,,simple niyam banaya.
+Dialogue: 0,0:07:10.55,0:07:13.72,Default,,0,0,0,,Poora emergency paisa ek hi bank
+Dialogue: 0,0:07:13.72,0:07:14.58,Default,,0,0,0,,mein nahi,
+Dialogue: 0,0:07:14.58,0:07:17.46,Default,,0,0,0,,zaroorat ho toh alag alag banks
+Dialogue: 0,0:07:17.46,0:07:17.75,Default,,0,0,0,,mein.
+Dialogue: 0,0:07:17.75,0:07:20.64,Default,,0,0,0,,Taaki har jagah paisa cover ke
+Dialogue: 0,0:07:20.64,0:07:21.79,Default,,0,0,0,,andar rahe.
+Dialogue: 0,0:07:21.79,0:07:23.23,Default,,0,0,0,,Yeh dar nahi hai,
+Dialogue: 0,0:07:23.23,0:07:24.96,Default,,0,0,0,,bas samajhdaari hai.
+Dialogue: 0,0:07:25.41,0:07:26.96,Default,,0,0,0,,FD chhote goals ke liye bhi
+Dialogue: 0,0:07:26.96,0:07:27.85,Default,,0,0,0,,theek baithti hai.
+Dialogue: 0,0:07:27.85,0:07:29.41,Default,,0,0,0,,Agle saal bachche ki fees,
+Dialogue: 0,0:07:29.41,0:07:31.41,Default,,0,0,0,,ya kuch mahine baad shaadi ka
+Dialogue: 0,0:07:31.41,0:07:31.85,Default,,0,0,0,,kharcha.
+Dialogue: 0,0:07:31.85,0:07:33.40,Default,,0,0,0,,Jab paisa jaldi chahiye,
+Dialogue: 0,0:07:33.40,0:07:35.85,Default,,0,0,0,,toh upar neeche hone wali jagah
+Dialogue: 0,0:07:35.85,0:07:38.29,Default,,0,0,0,,ka risk lena samajhdaari nahi hai.
+Dialogue: 0,0:07:38.74,0:07:40.94,Default,,0,0,0,,Ab woh galti jo Papa ne
+Dialogue: 0,0:07:40.94,0:07:41.21,Default,,0,0,0,,ki,
+Dialogue: 0,0:07:41.21,0:07:43.14,Default,,0,0,0,,aur bahut log karte hain.
+Dialogue: 0,0:07:43.14,0:07:45.33,Default,,0,0,0,,Galti FD lena nahi thi.
+Dialogue: 0,0:07:45.33,0:07:46.16,Default,,0,0,0,,Galti thi,
+Dialogue: 0,0:07:46.16,0:07:49.18,Default,,0,0,0,,saari zindagi ki bachat saalon saal
+Dialogue: 0,0:07:49.18,0:07:50.55,Default,,0,0,0,,sirf FD mein rakhna.
+Dialogue: 0,0:07:50.55,0:07:53.03,Default,,0,0,0,,Lambe samay ke paise ko bhi
+Dialogue: 0,0:07:53.03,0:07:55.50,Default,,0,0,0,,emergency jaisa treat karna.
+Dialogue: 0,0:07:55.95,0:07:58.63,Default,,0,0,0,,Lambe samay mein mehngai har saal
+Dialogue: 0,0:07:58.63,0:08:00.12,Default,,0,0,0,,thoda kaatti hai.
+Dialogue: 0,0:08:00.12,0:08:01.62,Default,,0,0,0,,Upar se tax bhi.
+Dialogue: 0,0:08:01.62,0:08:04.30,Default,,0,0,0,,Saal dar saal yeh chhoti katauti
+Dialogue: 0,0:08:04.30,0:08:05.79,Default,,0,0,0,,judti jaati hai.
+Dialogue: 0,0:08:05.79,0:08:08.18,Default,,0,0,0,,Aur ek din Mummy poochti hain,
+Dialogue: 0,0:08:08.18,0:08:09.67,Default,,0,0,0,,paisa kahan gaya?
+Dialogue: 0,0:08:09.67,0:08:10.56,Default,,0,0,0,,Jawaab hai,
+Dialogue: 0,0:08:10.56,0:08:11.16,Default,,0,0,0,,chupchaap,
+Dialogue: 0,0:08:11.16,0:08:12.35,Default,,0,0,0,,dheere dheere.
+Dialogue: 0,0:08:12.80,0:08:13.78,Default,,0,0,0,,Toh kya karein?
+Dialogue: 0,0:08:13.78,0:08:14.75,Default,,0,0,0,,Pehla kadam,
+Dialogue: 0,0:08:14.75,0:08:16.95,Default,,0,0,0,,apni bachat ko kaam ke hisaab
+Dialogue: 0,0:08:16.95,0:08:17.69,Default,,0,0,0,,se baantiye.
+Dialogue: 0,0:08:17.69,0:08:19.40,Default,,0,0,0,,Kuch paisa turant chahiye,
+Dialogue: 0,0:08:19.40,0:08:20.86,Default,,0,0,0,,kuch paisa saalon baad.
+Dialogue: 0,0:08:20.86,0:08:23.06,Default,,0,0,0,,Dono ko ek hi jagah rakhna,
+Dialogue: 0,0:08:23.06,0:08:25.02,Default,,0,0,0,,ek hi chaabi se har taala
+Dialogue: 0,0:08:25.02,0:08:26.24,Default,,0,0,0,,kholne jaisa hai.
+Dialogue: 0,0:08:26.69,0:08:27.92,Default,,0,0,0,,Doosra kadam,
+Dialogue: 0,0:08:27.92,0:08:30.38,Default,,0,0,0,,har saal apna real return khud
+Dialogue: 0,0:08:30.38,0:08:31.31,Default,,0,0,0,,nikaaliye.
+Dialogue: 0,0:08:31.31,0:08:32.23,Default,,0,0,0,,Byaaj dekhiye,
+Dialogue: 0,0:08:32.23,0:08:33.15,Default,,0,0,0,,tax ghataiye,
+Dialogue: 0,0:08:33.15,0:08:35.92,Default,,0,0,0,,aur ghar ke kharche kitne badhe,
+Dialogue: 0,0:08:35.92,0:08:36.84,Default,,0,0,0,,yeh sochiye.
+Dialogue: 0,0:08:36.84,0:08:40.23,Default,,0,0,0,,Agar bacha hua hissa bahut chhota
+Dialogue: 0,0:08:40.23,0:08:40.53,Default,,0,0,0,,hai,
+Dialogue: 0,0:08:40.53,0:08:43.00,Default,,0,0,0,,toh kam se kam sawaal zaroor
+Dialogue: 0,0:08:43.00,0:08:43.61,Default,,0,0,0,,poochiye.
+Dialogue: 0,0:08:44.06,0:08:45.30,Default,,0,0,0,,Teesra kadam,
+Dialogue: 0,0:08:45.30,0:08:48.10,Default,,0,0,0,,lambe goals ke liye doosre raaste
+Dialogue: 0,0:08:48.10,0:08:49.03,Default,,0,0,0,,samajhiye.
+Dialogue: 0,0:08:49.03,0:08:49.96,Default,,0,0,0,,Jaise PPF,
+Dialogue: 0,0:08:49.96,0:08:53.07,Default,,0,0,0,,jo sarkari scheme hai aur abhi
+Dialogue: 0,0:08:53.07,0:08:56.18,Default,,0,0,0,,7.1 percent saalana byaaj deti hai.
+Dialogue: 0,0:08:56.18,0:08:58.04,Default,,0,0,0,,Har option ka lock-in,
+Dialogue: 0,0:08:58.04,0:09:00.52,Default,,0,0,0,,risk aur tax alag hota hai.
+Dialogue: 0,0:09:00.52,0:09:01.77,Default,,0,0,0,,Pehle samjho,
+Dialogue: 0,0:09:01.77,0:09:02.70,Default,,0,0,0,,phir socho.
+Dialogue: 0,0:09:03.15,0:09:05.24,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:09:05.24,0:09:07.54,Default,,0,0,0,,Kahin bhi paisa lagane se pehle
+Dialogue: 0,0:09:07.54,0:09:08.59,Default,,0,0,0,,apni zaroorat,
+Dialogue: 0,0:09:08.59,0:09:09.84,Default,,0,0,0,,umar aur risk dekhiye.
+Dialogue: 0,0:09:09.84,0:09:12.56,Default,,0,0,0,,Zaroorat ho toh kisi qualified advisor
+Dialogue: 0,0:09:12.56,0:09:13.40,Default,,0,0,0,,se baat kariye.
+Dialogue: 0,0:09:13.40,0:09:15.07,Default,,0,0,0,,Maqsad sirf itna hai ki aap
+Dialogue: 0,0:09:15.07,0:09:16.95,Default,,0,0,0,,receipt ke number ke peeche ka
+Dialogue: 0,0:09:16.95,0:09:17.79,Default,,0,0,0,,sach dekh sako.
+Dialogue: 0,0:09:18.24,0:09:21.22,Default,,0,0,0,,Us raat Papa ne file kholi,
+Dialogue: 0,0:09:21.22,0:09:23.87,Default,,0,0,0,,aur pehli baar receipt ke saath
+Dialogue: 0,0:09:23.87,0:09:25.85,Default,,0,0,0,,sabzi ka bill rakha.
+Dialogue: 0,0:09:25.85,0:09:27.51,Default,,0,0,0,,Dono ko dekha,
+Dialogue: 0,0:09:27.51,0:09:29.50,Default,,0,0,0,,aur dheere se bole,
+Dialogue: 0,0:09:29.50,0:09:31.81,Default,,0,0,0,,safe hona aur badhna,
+Dialogue: 0,0:09:31.81,0:09:33.47,Default,,0,0,0,,alag cheezein hain.
+Dialogue: 0,0:09:33.47,0:09:36.78,Default,,0,0,0,,Mujhe yeh pehle kisi ne nahi
+Dialogue: 0,0:09:36.78,0:09:37.44,Default,,0,0,0,,bataya.
+Dialogue: 0,0:09:37.89,0:09:40.08,Default,,0,0,0,,Ab aapse ek aasaan sawaal.
+Dialogue: 0,0:09:40.08,0:09:42.82,Default,,0,0,0,,Aapke ghar ki sabse zyada bachat
+Dialogue: 0,0:09:42.82,0:09:44.18,Default,,0,0,0,,kahan rakhi hai,
+Dialogue: 0,0:09:44.18,0:09:45.83,Default,,0,0,0,,FD mein ya kahin aur?
+Dialogue: 0,0:09:45.83,0:09:48.01,Default,,0,0,0,,Ek shabd mein comment mein likhiye.
+Dialogue: 0,0:09:48.01,0:09:49.93,Default,,0,0,0,,Main har jawaab padhta hoon.
+Dialogue: 0,0:09:50.38,0:09:52.56,Default,,0,0,0,,Agli video mein ek aur ghar
+Dialogue: 0,0:09:52.56,0:09:53.66,Default,,0,0,0,,ki kahani.
+Dialogue: 0,0:09:53.66,0:09:54.20,Default,,0,0,0,,Sona,
+Dialogue: 0,0:09:54.20,0:09:56.39,Default,,0,0,0,,jo har maa ki almirah mein
+Dialogue: 0,0:09:56.39,0:09:59.12,Default,,0,0,0,,kahin na kahin rakha hota hai.
+Dialogue: 0,0:09:59.12,0:10:01.03,Default,,0,0,0,,Kya woh sach mein mehngai se
+Dialogue: 0,0:10:01.03,0:10:02.12,Default,,0,0,0,,bachata hai,
+Dialogue: 0,0:10:02.12,0:10:04.85,Default,,0,0,0,,ya woh bhi ek meethi galatfehmi
+Dialogue: 0,0:10:04.85,0:10:05.12,Default,,0,0,0,,hai?
+Dialogue: 0,0:10:05.12,0:10:07.58,Default,,0,0,0,,Milte hain agli kahani mein.

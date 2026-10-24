@@ -54,13 +54,16 @@ def commit(root: Path = ROOT, message: str = "sg-content: progress", push: bool 
     if not _dirty(root):
         return ""
     _git(root, "commit", "-q", "-m", f"{message} [skip ci]")
-    sha = _git(root, "rev-parse", "HEAD")
-    if record_out_sha(root, sha):
-        _git(root, "add", "-A", "pieces")
-        _git(root, "commit", "-q", "-m", "record media sha [skip ci]")
     if push:
         _git(root, "pull", "--rebase", "-q", "origin", "main")
         _git(root, "push", "-q", "origin", "HEAD:main")
+    sha = _git(root, "rev-parse", "HEAD")                      # after the push: a rebase rewrites commits, so only the pushed HEAD is a sha GitHub serves
+    if record_out_sha(root, sha):
+        _git(root, "add", "-A", "pieces")
+        _git(root, "commit", "-q", "-m", "record media sha [skip ci]")
+        if push:
+            _git(root, "pull", "--rebase", "-q", "origin", "main")
+            _git(root, "push", "-q", "origin", "HEAD:main")
     return sha
 
 

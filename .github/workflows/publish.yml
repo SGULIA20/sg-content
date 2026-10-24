@@ -2,8 +2,11 @@ name: publish
 
 on:
   schedule:
-    - cron: '30 8 * * *'      # 14:00 India: Learning with SG Reel + Story + Threads + LinkedIn (after the 07:05 UTC produce run)
-    - cron: '0 16 * * 1,3,5'  # 21:30 India Mon/Wed/Fri: SG-MYTH-WORLD Reel + Story + Threads + LinkedIn
+    - cron: '33 8 * * *'      # 14:00 India: Learning with SG Reel + Story + Threads + LinkedIn (after the 07:05 UTC produce run)
+    - cron: '33 9 * * *'      # second chance an hour later (the engine never posts a piece twice)
+    - cron: '33 10 * * *'
+    - cron: '3 16 * * *'      # 21:30 India daily: SG-MYTH-WORLD Reel + Story + Threads + LinkedIn (founder's table, 21 Oct 2026)
+    - cron: '3 17 * * *'      # second chance
   workflow_dispatch:
     inputs:
       channel:
@@ -37,7 +40,7 @@ jobs:
         id: slot
         run: |
           if [ -n "${{ github.event.inputs.channel }}" ]; then echo "channel=${{ github.event.inputs.channel }}" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event.schedule }}" = "30 8 * * *" ]; then echo "channel=sglearning" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "33 8 * * *" ] || [ "${{ github.event.schedule }}" = "33 9 * * *" ] || [ "${{ github.event.schedule }}" = "33 10 * * *" ]; then echo "channel=sglearning" >> "$GITHUB_OUTPUT"
           else echo "channel=arthvan" >> "$GITHUB_OUTPUT"; fi
       - name: Git identity
         run: |
@@ -53,6 +56,10 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}                    # Short -> long-video links (engine/ytlink.py)
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
+          YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
           LINKEDIN_PERSON_URN: ${{ secrets.LINKEDIN_PERSON_URN }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
