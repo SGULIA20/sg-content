@@ -1,3 +1,4 @@
+import pytest
 import json
 from datetime import date, datetime, timezone
 
@@ -137,3 +138,28 @@ def test_a_secret_pasted_with_a_trailing_newline_is_trimmed(monkeypatch):
     from engine import secrets
     monkeypatch.setattr(secrets, "_KNOWN", set())                    # keep this made-up key out of other tests' secret scrubbing
     assert secrets.get("SG_COMMAND_KEY", {"SG_COMMAND_KEY": "k3y-only-for-this-test\n"}) == "k3y-only-for-this-test"
+
+
+def test_threads_retries_untagged_when_the_tagged_post_fails_at_publish():
+    seen = []
+    def call(method, path, token, params=None):
+        seen.append((path, dict(params or {})))
+        if path.endswith("/threads"):
+            return {"id": "c-tag" if (params or {}).get("topic_tag") else "c-plain"}
+        if path.endswith("/threads_publish"):
+            if params["creation_id"] == "c-tag":
+                raise threads.ThreadsError("HTTP 500: code 2")
+            return {"id": "p"}
+        return {"status": "FINISHED"}
+    assert threads.post_video("u", "t", "https://v", "text", call=call, sleep=lambda s: None, topic_tag="Indian Mythology") == "p"
+    creates = [p for path, p in seen if path.endswith("/threads")]
+    assert "topic_tag" in creates[0] and "topic_tag" not in creates[1]
+
+
+def test_threads_error_names_the_step():
+    def call(method, path, token, params=None):
+        if path.endswith("/threads_publish"):
+            raise threads.ThreadsError("HTTP 500")
+        return {"id": "c"} if path.endswith("/threads") else {"status": "FINISHED"}
+    with pytest.raises(threads.ThreadsError, match="^publish: HTTP 500"):
+        threads.post_video("u", "t", "https://v", "text", call=call, sleep=lambda s: None)
