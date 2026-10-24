@@ -3,46 +3,26 @@
  "facts": [
   {
    "label": "official",
-   "number": 120000.0,
-   "quote": "Invested Amount: ₹1,20,000.",
-   "source_date": "2026-01-01",
-   "source_name": "Franklin Templeton",
-   "source_url": "https://www.franklintempletonindia.com/investor/tools-and-calculators/sip-calculator",
-   "text": "A continuous monthly SIP contribution of 500 rupees over a 20-year investment horizon results in an aggregate invested capital of 120000 rupees.",
-   "unit": "INR"
-  },
-  {
-   "label": "official",
-   "number": 12.5,
-   "quote": "Similarly the rate for these assets for long-term (S. 112A) has increased from 10 to 12.5%.",
-   "source_date": "2024-07-24",
-   "source_name": "PIB",
-   "source_url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2036604",
-   "text": "Long-term capital gains on redemptions of equity-oriented mutual fund units held beyond 12 months are taxed at a flat rate of 12.5 percent.",
-   "unit": "pct"
-  },
-  {
-   "label": "official",
-   "number": 1.25,
-   "quote": "The exemption limit of 1 lakh for LTCG on these assets has also increased to 1.25 lakh Rs.",
-   "source_date": "2024-07-24",
-   "source_name": "PIB",
-   "source_url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2036604",
-   "text": "The annual exemption limit for long-term capital gains tax on equity mutual fund investments is set at 1.25 lakh rupees per financial year.",
-   "unit": "lakh INR"
+   "number": 37.8,
+   "quote": "As at end-March 2023, household financial assets stood at 135.0 per cent of GDP while their financial liabilities were 37.8 per cent of GDP; their net financial wealth was thus placed at 97.2 per cent of GDP.",
+   "source_date": "2024-07-18",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=22687",
+   "text": "As of end-March 2023, the total financial liabilities of Indian households reached 37.8 percent of GDP according to Reserve Bank of India research.",
+   "unit": "pct of GDP"
   }
  ],
  "id": "2026-11-11-sglearning-long",
  "ids": {
   "budget": {
    "day": "2026-10-24",
-   "drafts": 1,
-   "research": 1
+   "drafts": 2,
+   "research": 3
   },
   "write_batch": {
-   "id": "msgbatch_015jmfMzaBwYwodMy5uw5NV3",
-   "key": "e489a509338c79b9",
-   "tries": 1
+   "id": "msgbatch_01UTUJFRC3qB7ieqMR6NrW62",
+   "key": "e1547f0d539296ef",
+   "tries": 2
   }
  },
  "kind": "long",
@@ -54,6 +34,8 @@
   "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "draft cooking in Claude's batch lane; the next run collects it",
+  "try 1: empty reply from the research model",
   "draft cooking in Claude's batch lane; the next run collects it"
  ],
  "script": null,
@@ -61,50 +43,30 @@
  "timings": [],
  "topic": {
   "hooks": [
-   "500 ki SIP se kya hoga?",
-   "Market girne par SIP band karna sahi hai?",
-   "Expense ratio kya khata hai?"
+   "Emergency fund kitna hona chahiye?",
+   "Savings account mein rakhna galat hai?",
+   "Pehle loan chukayein ya fund banayein?"
   ],
-  "id": "sip-rupee-cost",
+  "id": "emergency-fund-six-months",
   "sheet": {
    "facts": [
     {
      "label": "official",
-     "number": 120000.0,
-     "quote": "Invested Amount: ₹1,20,000.",
-     "source_date": "2026-01-01",
-     "source_name": "Franklin Templeton",
-     "source_url": "https://www.franklintempletonindia.com/investor/tools-and-calculators/sip-calculator",
-     "text": "A continuous monthly SIP contribution of 500 rupees over a 20-year investment horizon results in an aggregate invested capital of 120000 rupees.",
-     "unit": "INR"
-    },
-    {
-     "label": "official",
-     "number": 12.5,
-     "quote": "Similarly the rate for these assets for long-term (S. 112A) has increased from 10 to 12.5%.",
-     "source_date": "2024-07-24",
-     "source_name": "PIB",
-     "source_url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2036604",
-     "text": "Long-term capital gains on redemptions of equity-oriented mutual fund units held beyond 12 months are taxed at a flat rate of 12.5 percent.",
-     "unit": "pct"
-    },
-    {
-     "label": "official",
-     "number": 1.25,
-     "quote": "The exemption limit of 1 lakh for LTCG on these assets has also increased to 1.25 lakh Rs.",
-     "source_date": "2024-07-24",
-     "source_name": "PIB",
-     "source_url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2036604",
-     "text": "The annual exemption limit for long-term capital gains tax on equity mutual fund investments is set at 1.25 lakh rupees per financial year.",
-     "unit": "lakh INR"
+     "number": 37.8,
+     "quote": "As at end-March 2023, household financial assets stood at 135.0 per cent of GDP while their financial liabilities were 37.8 per cent of GDP; their net financial wealth was thus placed at 97.2 per cent of GDP.",
+     "source_date": "2024-07-18",
+     "source_name": "RBI",
+     "source_url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=22687",
+     "text": "As of end-March 2023, the total financial liabilities of Indian households reached 37.8 percent of GDP according to Reserve Bank of India research.",
+     "unit": "pct of GDP"
     }
    ],
-   "summary": "Systematic Investment Plans allow salaried households to begin long-term equity investing with outlays as low as ₹500 per month, utilizing rupee-cost averaging across cyclical market movements. Over a 20-year horizon, final wealth accumulation is governed by market compounding, regulatory expense ratios, and the 12.5% long-term capital gains tax threshold above ₹1.25 lakh. For middle-class families, maintaining consistent monthly contributions through crashes rather than discontinuing plans prevents compounding disruptions, though terminal returns remain exposed to broader economic conditions rather than guaranteed figures."
+   "summary": "Sudden job transitions or salary disruptions do not pause contractual financial obligations such as home loan EMIs, rent, and school fees. Financial planning benchmarks indicate that maintaining six months of non-negotiable living expenses—split between sweep-in deposits and liquid mutual funds—acts as a critical safety cushion. For salaried Indian families, setting up an automated emergency allocation protects existing investments from distressed liquidation and prevents reliance on high-cost borrowing during an income shock."
   },
-  "summary": "How a monthly SIP in a mutual fund works, rupee cost averaging, the difference between returns in a good decade and a flat one, expense ratio, why stopping in a crash hurts; honest ranges, no promises.",
+  "summary": "Why six months of expenses in a liquid place matters, where to keep it (savings, sweep FD, liquid fund), how a family builds it in a year, what not to touch it for.",
   "target_minutes": 12,
-  "title": "500 rupaye mahine ki SIP: 20 saal mein kya bana, aur kya nahi bana"
+  "title": "Naukri gayi, EMI nahi ruki: 6 mahine ka emergency fund kaise banta hai"
  },
- "updated": "2026-10-24T12:48:54+00:00",
+ "updated": "2026-10-24T14:36:19+00:00",
  "writer": ""
 }
