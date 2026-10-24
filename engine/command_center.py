@@ -36,12 +36,12 @@ def _live(root: Path) -> bool:
     return Path(root).resolve() == ROOT.resolve()
 
 
-def _call(method: str, route: str, key: str, body: dict | None = None, opener=urllib.request.urlopen) -> dict | None:
+def _call(method: str, route: str, key: str, body: dict | None = None, opener=urllib.request.urlopen, timeout: float | None = None) -> dict | None:
     data = json.dumps(body, ensure_ascii=False, default=str).encode() if body is not None else None
     req = urllib.request.Request(f"{URL}/{route}", data=data, method=method,
                                  headers={"x-sg-key": key, "content-type": "application/json"})
     try:
-        with opener(req, timeout=TIMEOUT, context=secrets.ssl_context()) as r:
+        with opener(req, timeout=timeout or TIMEOUT, context=secrets.ssl_context()) as r:
             return json.loads(r.read())
     except Exception as e:
         print(f"command centre unreachable ({type(e).__name__}); carrying on", flush=True)
@@ -97,7 +97,7 @@ def telegram_setup(on: bool, env=None, call=_call) -> dict | None:
             body = {"on": True, "token": secrets.get("TELEGRAM_BOT_TOKEN", env), "chat_id": secrets.get("TELEGRAM_CHAT_ID", env)}
         except secrets.MissingSecret:
             return None
-    return call("POST", "telegram-setup", key, body)
+    return call("POST", "telegram-setup", key, body, timeout=30)      # setup talks to Telegram three times (24 Oct 2026: 8 s was too short)
 
 
 def telegram_inbox(root: Path = ROOT, env=None, call=_call) -> list | None:
