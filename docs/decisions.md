@@ -93,6 +93,8 @@ line here (who, date) in the same change. Newest first.
 - LinkedIn re-login reminder on Telegram: not wanted (founder, 23 Oct 2026). Do not build it.
 - Moving the app Reel production off the Mac: the founder takes this on, starting 23 Oct 2026 evening.
 - Exact clock: running in Supabase (`command.clock`, function `sg-command`) since 24 Oct 2026 09:39 UTC; `GITHUB_TOKEN` is set. Do not ask the founder for it again.
+  24 Oct 15:00 UTC fix: each job fired only once (last_fired kept microseconds, the function compares milliseconds); the column is now
+  `timestamptz(3)` (migration 20261024_clock_ms.sql). YouTube reply drafts (ytreplies.yml) run every 3 hours from the clock.
 
 ## Control room (phone)
 - One menu for everything (24 Oct 2026): the Telegram buttons (webhook to sg-command) also start the app posts and the LinkedIn
