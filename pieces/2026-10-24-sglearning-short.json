@@ -97,7 +97,8 @@
   "threads: HTTP 500: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":2,\"fbtrace_id\":\"A61aiCRd7Fr5Qrfp70K5Ff7\"}}",
   "threads: HTTP 500: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":2,\"fbtrace_id\":\"AUtY0bDv_h6q42963wjVOKy\"}}",
   "threads: HTTP 500: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":2,\"fbtrace_id\":\"AzizDx5ZnAi9xgGYtxn5Tu1\"}}",
-  "threads: HTTP 500: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":2,\"fbtrace_id\":\"AimWIVYKOLR_mv46mvWqWgd\"}}"
+  "threads: HTTP 500: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":2,\"fbtrace_id\":\"AimWIVYKOLR_mv46mvWqWgd\"}}",
+  "threads: HTTP 500: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":2,\"fbtrace_id\":\"AonO0ENgf2pHT1O2YKse6kK\"}}"
  ],
  "script": {
   "captions": {
@@ -296,6 +297,6 @@
   "title": "Core output grows at series high of 7.9% in Sept",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-24T09:57:57+00:00",
+ "updated": "2026-10-24T12:55:27+00:00",
  "writer": "claude"
 }
