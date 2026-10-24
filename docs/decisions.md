@@ -65,6 +65,7 @@ line here (who, date) in the same change. Newest first.
   (graduation SS_PERFORMANCE); a plain Reel when Instagram refuses a trial. (founder, 23 Oct 2026)
   The 9 pm card lists each Trial Reel once its 72 hours are over (views, likes, comments, shares, saves, link) so the founder can tap
   "Share to followers" by hand when Instagram did not; Meta's API can neither read nor do that step (founder, 24 Oct 2026, option 2).
+  Sharing stays a manual tap: no re-posting the video as a normal Reel, no app automation (founder, 24 Oct 2026, "keep the tap").
 - Long videos run a thumbnail click test: B (same picture, the title's words) two days after going public; the higher click rate
   stays, A when the numbers are missing or too few (engine/thumbtest.py). (founder, 23 Oct 2026)
 - Meta Verified (one month from 23 Oct 2026): Reel links are app-only and few, so engine/reeltip.py sends a daily Telegram tip naming
