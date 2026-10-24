@@ -63,9 +63,12 @@ def post_video(uid: str, token: str, video_url: str, text: str, call=call, sleep
     if len(text) > MAX_TEXT:
         raise ThreadsError(f"text is {len(text)} characters, Threads allows {MAX_TEXT}")
     params = {"media_type": "VIDEO", "video_url": video_url, "text": text}
-    if topic_tag:
-        params["topic_tag"] = topic_tag
-    cid = call("POST", f"/{uid}/threads", token, params)["id"]
+    try:
+        cid = call("POST", f"/{uid}/threads", token, {**params, "topic_tag": topic_tag} if topic_tag else params)["id"]
+    except ThreadsError:
+        if not topic_tag:
+            raise
+        cid = call("POST", f"/{uid}/threads", token, params)["id"]          # 24 Oct 2026: Threads answered 500 twice with the tag; the post matters more
     _wait(cid, token, "video", sleep, call, max_polls, poll_s)
     return call("POST", f"/{uid}/threads_publish", token, {"creation_id": cid})["id"]
 

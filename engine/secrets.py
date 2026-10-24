@@ -30,7 +30,7 @@ def _read_dotenv(path: Path) -> dict:
 
 def get(name: str, env: Mapping | None = None, dotenv: Path | None = None) -> str:
     env = os.environ if env is None else env
-    value = env.get(name) or _read_dotenv(DOTENV if dotenv is None else dotenv).get(name)
+    value = (env.get(name) or _read_dotenv(DOTENV if dotenv is None else dotenv).get(name) or "").strip()   # a pasted secret often ends in a newline (24 Oct 2026)
     if not value:
         raise MissingSecret(name)
     remember(value)
