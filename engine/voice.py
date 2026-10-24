@@ -13,7 +13,7 @@ import wave
 from datetime import date
 from pathlib import Path
 
-from . import gemini, secrets
+from . import costs, gemini, secrets
 from .config import BUDGETS, CACHE_DIR, CONTENT_DIR, LOGS_DIR, today_ist, today_pacific
 
 MODEL = "gemini-3.8-flash-tts"
@@ -81,6 +81,7 @@ def requests_today(budget: Path = BUDGET_FILE, today: date | None = None) -> int
 
 
 def _count_request(budget: Path, today: date) -> None:
+    costs.add(voice=1)
     try:
         data = json.loads(Path(budget).read_text())
     except (FileNotFoundError, ValueError):

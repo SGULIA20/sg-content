@@ -7,7 +7,7 @@ from datetime import date
 from pathlib import Path
 from typing import Callable
 
-from . import art, artbatch, assemble, buffer, cards, cartoon, cast, claims, gemini, lint, pieces, qa, research, secrets, slots, storyframe, topics, voice, voicebatch, writer, youtube
+from . import art, artbatch, assemble, buffer, cards, cartoon, cast, claims, costs, gemini, lint, pieces, qa, research, secrets, slots, storyframe, topics, voice, voicebatch, writer, youtube
 from .config import CHANNELS, ROOT, STORY_WORDS, VIDEO
 from .pieces import Piece
 
@@ -184,6 +184,20 @@ def _allow(piece: Piece, what: str, limit: int) -> bool:
 
 
 def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pack_mode: bool = False) -> Piece:
+    """_make, plus the running cost of the piece (engine/costs.py): kept on the piece in ids["cost"] across runs, re-makes and crashes."""
+    with costs.track() as spent:
+        try:
+            result = _make(piece, deps, root, dry_run, pack_mode)
+        finally:
+            if not dry_run and costs.nonzero(spent):
+                piece.ids["cost"] = costs.merge(piece.ids.get("cost"), spent)
+    if not dry_run and costs.nonzero(spent):
+        result.ids["cost"] = piece.ids["cost"]
+        pieces.save(result, root)
+    return result
+
+
+def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pack_mode: bool = False) -> Piece:
     """Runs the pipeline for one piece and records every transition. Returns the piece in its final state for this run."""
     if piece.status in buffer.DONE:
         return piece

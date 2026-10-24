@@ -7,7 +7,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-from . import gemini, secrets, voice
+from . import costs, gemini, secrets, voice
 from .config import CACHE_DIR, LOGS_DIR
 
 BATCH_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{voice.MODEL}:batchGenerateContent"
@@ -36,6 +36,7 @@ def submit(texts: list, voice_id: str, label: str, key: str | None = None, post=
     if status != 200 or not data.get("name"):
         raise BatchError(f"batch submit failed ({status}): {secrets.scrub(json.dumps(data))[:200]}")
     _log({"at": datetime.now(timezone.utc).isoformat(), "label": label, "name": data["name"], "lines": len(texts), "voice": voice_id})
+    costs.add(voice=len(texts))
     return data["name"]
 
 

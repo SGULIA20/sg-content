@@ -4,13 +4,14 @@ import re
 from datetime import date
 from pathlib import Path
 
-from . import gemini, schema, secrets
+from . import costs, gemini, schema, secrets
 from .config import BUDGETS, CONTENT_DIR, LOGS_DIR, today_ist, today_pacific
 from .pieces import Piece
 
 MODEL = "claude-opus-5-5"
 GEMINI_MODEL = "gemini-3.8-flash"
 USD_PER_M_IN, USD_PER_M_OUT = 4.0, 20.0
+SONNET_VS_OPUS = 0.5       # Sonnet 5.5 is $2 / $10 per million tokens against Opus 5.5's $4 / $20 (checked 24 Oct 2026), so the same meter at half the factor
 SPEND_FILE = LOGS_DIR / "claude-spend.json"
 WRITER_FOR = {"short": "claude", "long": "claude"}      # Claude writes everything; Gemini only as the fallback (founder, 20 Oct: the free model wrote weak stories)
 MAX_TOKENS = 64000
@@ -146,6 +147,7 @@ def cost_usd(usage) -> float:
 
 def record_spend(usage, path: Path = SPEND_FILE, today: date | None = None, factor: float = 1.0) -> float:
     today = today or today_pacific()
+    costs.add(usd=cost_usd(usage) * factor)
     data = _read_spend(path)
     day = data.setdefault(today.isoformat(), {"usd": 0.0, "requests": 0})
     day["usd"] = round(day["usd"] + cost_usd(usage) * factor, 6)

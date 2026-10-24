@@ -5,6 +5,18 @@ phone, cloud) reads this file first and follows it instead of asking again. When
 line here (who, date) in the same change. Newest first.
 
 ## Recent changes and why (newest first)
+- 24 Oct 2026: **Volumes and styles are settled; price them, never re-ask or propose cutting them** (founder: "we already decided this").
+  Learning with SG and SG-MYTH-WORLD: a Short every day on each; longs Wed + Sat (Learning with SG) and Thu + Sun (SG-MYTH-WORLD), set 21 Oct
+  in `engine/config.py`, which is 60 Shorts and 17 longs in a 30-day month. ScoreMyBiz and Waypoint: one app post a day from arthvan-media
+  `content/schedule.json`, with Reels from the queue in `content/production_queue.json` (31 sets, 27 Oct to 9 Dec). Styles: see "Picture style".
+  New Veo clips stop by design when the Google trial credit is finished (`story.film_available`); a day with no Reel gets the graphics set.
+- 24 Oct 2026: cost per piece (founder: "no charges on waste or repetitive tasks"). `engine/costs.py` keeps each piece's running cost in `ids["cost"]`
+  (pictures in rupees, Claude in dollars, voice lines) across runs, re-makes and crashes; the 9 pm alerts name a piece from the last two days that cost
+  more than 3x the median of its kind (needs 5 pieces of that kind). `python -m engine.costs` lists them. Subtitle translation (Sonnet) is now in
+  the Claude meter. Still unmetered: Gemini research and the voice read-back (no verified price; research is capped at 4 calls per piece per day).
+- 24 Oct 2026: 9 pm card day: before 05:00 WAT still counts as the previous day (`evening.card_day`; the app poster's relay uses the same rule).
+- 24 Oct 2026: **Everything already made posts as made, in its old look; everything new is made in the revised styles. Only the pictures change; the
+  way stories and scripts are made does not.** Reusing clips between Reels was tried as a sample and dropped by the founder: do not build it.
 - 24 Oct 2026: cost cuts that do not touch the video (founder, "go ahead"): story word limit is soft up to 260; a draft that fails only on an unsourced
   number, banned wording, a missing label or being too long is PATCHED (only the failing scenes are rewritten, ~$0.03 against ~$0.30 for a full
   draft; tried twice, then a full rewrite); each piece gets at most 6 drafts and 4 research calls per quota day; `scripts/remake.py` needs `--yes`

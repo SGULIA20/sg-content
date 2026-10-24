@@ -89,9 +89,11 @@ def _array(text: str):
     return None
 
 
-def translate(lines: list, lang: str, client=None, model: str = MODEL) -> list:
-    """Translates the cue texts in order (same count) into one language; Hinglish stays natural, numbers and names unchanged."""
+def translate(lines: list, lang: str, client=None, model: str = MODEL, spend=None, today=None) -> list:
+    """Translates the cue texts in order (same count) into one language; Hinglish stays natural, numbers and names unchanged.
+    Every call is counted in the Claude meter (24 Oct 2026: it was not before)."""
     import anthropic
+    from . import writer
     client = client or anthropic.Anthropic(api_key=secrets.get("ANTHROPIC_API_KEY"))
     target = LANGS[lang]
     system = (f"You translate Hinglish (Hindi written in Latin letters, mixed with English) video narration into {target} subtitles. "
@@ -105,6 +107,8 @@ def translate(lines: list, lang: str, client=None, model: str = MODEL) -> list:
         batch = lines[i:i + 40]
         r = client.messages.create(model=model, max_tokens=8000, system=system,
                                    messages=[{"role": "user", "content": json.dumps(batch, ensure_ascii=False)}])
+        if getattr(r, "usage", None) is not None:
+            writer.record_spend(r.usage, spend or writer.SPEND_FILE, today, factor=writer.SONNET_VS_OPUS)
         text = "".join(getattr(b, "text", "") for b in r.content)
         got = _array(text)
         if got is None:

@@ -15,7 +15,7 @@ from pathlib import Path
 
 import yaml
 
-from . import gemini, secrets
+from . import costs, gemini, secrets
 from .config import ASSETS_DIR, BUDGETS, CACHE_DIR, CONTENT_DIR, LOGS_DIR, today_ist, today_pacific
 
 MODEL = "gemini-3.1-flash-lite-image"
@@ -57,6 +57,7 @@ def cache_tag(prompt: str, refs: list, aspect: str, model: str = MODEL) -> str:
 
 
 def _record(spend: Path, today: date, inr: float) -> None:
+    costs.add(inr=inr)
     data = _read(spend)
     day = data.setdefault(today.isoformat(), {"inr": 0.0, "requests": 0})
     day["inr"] = round(day["inr"] + inr, 2); day["requests"] += 1

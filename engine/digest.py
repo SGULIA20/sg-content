@@ -3,7 +3,7 @@ import json
 from datetime import date, timedelta
 from pathlib import Path
 
-from . import pieces, slots, telegram
+from . import costs, pieces, slots, telegram
 from .config import BUDGETS, CHANNELS, ROOT, today_ist
 
 BUFFER_ALERT_DAYS = 7                 # founder, 22 Oct 2026: seven days of Shorts in hand, always
@@ -98,6 +98,7 @@ def alerts(root: Path, day: date) -> list:
         runs = [json.loads(l) for l in runs_path.read_text().splitlines() if l.strip()]
         if len(runs) >= 2 and not runs[-1].get("ok", True) and not runs[-2].get("ok", True):
             out.append("two consecutive runs failed; see logs/runs.jsonl")
+    out += costs.alerts(root, day)
     tokens = _json(Path(root) / "logs" / "tokens.json")
     for key, name, fix in (("instagram_expires", "Instagram token", "run the refresh workflow or re-authorise"),
                            ("threads_expires", "Threads token", "run the refresh workflow or re-authorise"),
