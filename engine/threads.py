@@ -63,14 +63,24 @@ def post_video(uid: str, token: str, video_url: str, text: str, call=call, sleep
     if len(text) > MAX_TEXT:
         raise ThreadsError(f"text is {len(text)} characters, Threads allows {MAX_TEXT}")
     params = {"media_type": "VIDEO", "video_url": video_url, "text": text}
+
+    def attempt(p: dict) -> str:
+        try:
+            cid = call("POST", f"/{uid}/threads", token, p)["id"]
+        except ThreadsError as e:
+            raise ThreadsError(f"create: {e}") from None
+        _wait(cid, token, "video", sleep, call, max_polls, poll_s)
+        try:
+            return call("POST", f"/{uid}/threads_publish", token, {"creation_id": cid})["id"]
+        except ThreadsError as e:
+            raise ThreadsError(f"publish: {e}") from None
+
+    if not topic_tag:
+        return attempt(params)
     try:
-        cid = call("POST", f"/{uid}/threads", token, {**params, "topic_tag": topic_tag} if topic_tag else params)["id"]
-    except ThreadsError:
-        if not topic_tag:
-            raise
-        cid = call("POST", f"/{uid}/threads", token, params)["id"]          # 24 Oct 2026: Threads answered 500 twice with the tag; the post matters more
-    _wait(cid, token, "video", sleep, call, max_polls, poll_s)
-    return call("POST", f"/{uid}/threads_publish", token, {"creation_id": cid})["id"]
+        return attempt({**params, "topic_tag": topic_tag})
+    except ThreadsError:                    # 24 Oct 2026: every tagged post failed with HTTP 500 while untagged drafts of the same
+        return attempt(params)              # video and text were accepted; the whole post is retried untagged, publish step included
 
 
 def post_poll(uid: str, token: str, parent_id: str, call=call, sleep=time.sleep, max_polls: int = 12, poll_s: float = 5) -> str:
