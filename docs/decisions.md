@@ -99,7 +99,9 @@ line here (who, date) in the same change. Newest first.
   `timestamptz(3)` (migration 20261024_clock_ms.sql). YouTube reply drafts (ytreplies.yml) run every 3 hours from the clock.
 - Clock watchdog (founder yes, 24 Oct 2026): Supabase function `sg-watchdog`, pg_cron every 10 minutes. Telegram (once per problem) when a
   clock job is 30 minutes late or a GitHub run of a clock workflow fails; quiet while sg-content is paused. Starts nothing.
-- Threads HTTP 500 code 2 on 24 Oct: Meta-side and transient (drafts of the same video and text were accepted at 15:03 UTC). Not our code.
+- Threads HTTP 500 code 2 on 24 Oct: caused by the topic tag (the publish step failed on tagged posts; untagged drafts were fine). Since
+  PR #14 a failed tagged post is retried whole without the tag; the 24 Oct SG-MYTH-WORLD Short then posted at once. Topic feeds may
+  simply not apply until Threads accepts tags again.
 
 ## Control room (phone)
 - One menu for everything (24 Oct 2026): the Telegram buttons (webhook to sg-command) also start the app posts and the LinkedIn
