@@ -50,13 +50,13 @@ jobs:
                       q = {"ids": "channel==MINE", "startDate": start.isoformat(), "endDate": end.isoformat(), "dimensions": dims,
                            "metrics": "views,averageViewPercentage,averageViewDuration,subscribersGained"}
                       s, _h, b = youtube.call("GET", A + "?" + urllib.parse.urlencode(q), tok)
-                      out["traffic"][f"{ch}:{dims}"] = {"status": s, "headers": [c["name"] for c in b.get("columnHeaders", [])], "rows": b.get("rows", []), "error": (b.get("error") or {}).get("message")}
+                      out["traffic"][f"{ch}:{dims}"] = {"status": s, "headers": [c["name"] for c in b.get("columnHeaders", [])], "rows": b.get("rows", []), "error": str(b.get("error"))[:300]}
                   q = {"ids": "channel==MINE", "startDate": start.isoformat(), "endDate": end.isoformat(), "dimensions": "video",
                        "metrics": "views,engagedViews,averageViewPercentage,averageViewDuration,likes,shares,subscribersGained", "sort": "-views", "maxResults": "200"}
                   s, _h, b = youtube.call("GET", A + "?" + urllib.parse.urlencode(q), tok)
-                  out["traffic"][f"{ch}:video"] = {"status": s, "headers": [c["name"] for c in b.get("columnHeaders", [])], "rows": b.get("rows", []), "error": (b.get("error") or {}).get("message")}
+                  out["traffic"][f"{ch}:video"] = {"status": s, "headers": [c["name"] for c in b.get("columnHeaders", [])], "rows": b.get("rows", []), "error": str(b.get("error"))[:300]}
               except Exception as e:
-                  out["channels"][ch] = {"error": secrets.scrub(str(e))[:200]}
+                  out.setdefault("errors", []).append(f"{ch}: {secrets.scrub(str(e))[:200]}")
           try:
               tok, uid = secrets.get("IG_ACCESS_TOKEN"), secrets.get("IG_USER_ID")
               out["ig"]["account"] = instagram.call("GET", f"/{uid}", tok, {"fields": "followers_count,media_count,username"})
