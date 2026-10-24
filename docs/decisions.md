@@ -25,10 +25,12 @@ line here (who, date) in the same change. Newest first.
 - 22 Oct 2026: Play Console is read by a read-only service account (`play-reports-reader`, key in ~/sg-content/play-reader-key.json, never committed); no
   write rights. `engine/playreports.py --weekly` sends installs, countries, ratings and Waypoint's phase gates (`content/growth-gates.yaml`) every Monday.
 - 23 Oct 2026: one picture style per brand (see "Picture style"); only the pictures change. Founder, after comparing nine styles.
-- 23 Oct 2026: GitHub skipped every morning job; the LinkedIn post and the Learning with SG post were started by hand. Fix waiting on the
-  founder: `GITHUB_TOKEN` in Supabase so the database starts each job at its exact minute (docs/external-scheduler.md).
+- 23 Oct 2026: GitHub skipped every morning job; the LinkedIn post and the Learning with SG post were started by hand. Fix: the Supabase clock
+  starts each job at its exact Lagos minute (docs/external-scheduler.md). **Live since 24 Oct 09:39 UTC**: the founder added `GITHUB_TOKEN`;
+  12 jobs in `command.clock`, pg_cron ticks every minute with no failures, and thumbtest (12:45 WAT) and produce (14:45 WAT) started on the exact minute.
+  A slot missed by the clock is caught up for 3 hours; GitHub's own cron and the Mac triggers stay as backups (engines never post twice).
 - 22 Oct 2026: LinkedIn gets picture posts only (sg-content b67bc3e, arthvan-media 0e1d13f); no app posts on LinkedIn (arthvan-media 75b3a12).
-- 21-22 Oct 2026: control room (claude.ai page + Telegram buttons) on branch `command-center`, PR #1, waiting on the `SG_COMMAND_KEY` secret.
+- 21-22 Oct 2026: control room (claude.ai page + Telegram buttons) on branch `command-center`, PR #1. Run reports already reach `command.events` from the production and publish runs (checked 24 Oct), so `SG_COMMAND_KEY` works.
 
 ## Picture style (founder, 23 Oct 2026)
 - Learning with SG: **claymation**. SG-MYTH-WORLD: **Indian comic (retro)**. ScoreMyBiz ads: **3D animated film**. Waypoint ads: **soft
@@ -79,7 +81,7 @@ line here (who, date) in the same change. Newest first.
 - Google Play service account (review replies, crash watch): later, founder's call (23 Oct 2026).
 - LinkedIn re-login reminder on Telegram: not wanted (founder, 23 Oct 2026). Do not build it.
 - Moving the app Reel production off the Mac: the founder takes this on, starting 23 Oct 2026 evening.
-- Exact clock: built and running in Supabase (command.clock); it starts jobs once `GITHUB_TOKEN` is added to the sg-command function.
+- Exact clock: running in Supabase (`command.clock`, function `sg-command`) since 24 Oct 2026 09:39 UTC; `GITHUB_TOKEN` is set. Do not ask the founder for it again.
 
 ## Control room (phone)
 - Private claude.ai page plus Telegram as the fallback; buttons for pause, resume, stop, retry, run now, post now, and typed instructions that become one of those actions after a confirm. (founder, 21 Oct 2026)
