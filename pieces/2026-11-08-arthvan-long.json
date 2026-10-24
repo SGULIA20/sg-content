@@ -3,76 +3,136 @@
  "facts": [
   {
    "label": "archaeology",
+   "number": 3.0,
+   "quote": "However, these are rare features on the surface of the Earth and only 190 structures are currently known and accepted as confirmed impact structures... out of which three confirmed impact structures are from India (e.g. Lonar, Dhala and Ramgarh craters).",
+   "source_date": "2020",
+   "source_name": "Geological Survey of India",
+   "source_url": "https://www.gsi.gov.in",
+   "text": "The Geological Survey of India recognizes Lonar as one of three confirmed terrestrial meteorite impact craters in India displaying shock metamorphism.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": 1.8,
+   "quote": "The Lonar crater is a relatively small (rim to rim diameter 1830 m), almost perfectly circular simple (bowl-shaped) impact crater centered at 19°58'N and 76°31'E.",
+   "source_date": "2004",
+   "source_name": "Lunar and Planetary Institute",
+   "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
+   "text": "The circular Lonar crater has an average rim-to-rim diameter of approximately 1.8 kilometres.",
+   "unit": "km"
+  },
+  {
+   "label": "archaeology",
+   "number": 150.0,
+   "quote": "The crater measures 1.8 km (1.1 mi) in diameter and is 150 m (490 ft) deep.",
+   "source_date": "1979",
+   "source_name": "Geological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
+   "text": "The depth from the raised rim crest of the crater down to the crater basin floor measures approximately 150 metres.",
+   "unit": "metres"
+  },
+  {
+   "label": "disputed",
+   "number": 52000.0,
+   "quote": "While earlier analyses dated the structure to 52 ± 6 ka, subsequent argon-argon dating (40Ar/39Ar) yielded a much older age of 570 ± 47 ka. However, the 40Ar/39Ar age has been disputed, as inherited argon in the samples may have resulted in an overestimation of the crater's age.",
+   "source_date": "2011-07-01",
+   "source_name": "Geology (Jourdan et al.) / Physical Research Laboratory",
+   "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
+   "text": "The age of the Lonar crater impact is disputed between earlier thermoluminescence dating placing it at roughly 52,000 years ago and subsequent argon-argon geochronology dating it to roughly 570,000 years ago.",
+   "unit": "years"
+  },
+  {
+   "label": "archaeology",
    "number": null,
-   "quote": "These ceilings are supported by three iron beams... joined together with iron cramps and dowels.",
-   "source_date": "1998",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://asi.nic.in",
-   "text": "The Archaeological Survey of India has documented that medieval builders used forged wrought-iron beams and iron cramps to support stone lintels across the temple roof.",
+   "quote": "When the meteor hit, the pressure was so intense it turned regular minerals into maskelynite (a type of glass that only forms under extreme shock pressures from a meteorite collision).",
+   "source_date": "1973-04-20",
+   "source_name": "Science / U.S. Geological Survey",
+   "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
+   "text": "Geological studies established the hypervelocity meteorite impact origin of the crater by detecting maskelynite, a shock-metamorphosed mineral glass formed under extreme kinetic pressures in basalt.",
    "unit": null
   },
   {
    "label": "archaeology",
-   "number": 1903.0,
-   "quote": "The sand filling was done by the British in 1903 to provide stability to the 13th century monument.",
-   "source_date": "2022-09-08",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://asi.nic.in",
-   "text": "In 1903, British colonial authorities sealed the four entrances of the Jagamohana assembly hall and filled its interior with sand to halt structural collapse.",
+   "number": 2020.0,
+   "quote": "Lonar Lake's color shift occurred over the span of a few days. The change is visible in this image pair, acquired on May 25 and June 10 with the Operational Land Imager (OLI) on Landsat 8.",
+   "source_date": "2020-06-19",
+   "source_name": "NASA Earth Observatory",
+   "source_url": "https://earthobservatory.nasa.gov/images/146869/lonar-lake-tries-on-a-rosy-color",
+   "text": "In June 2020 CE, the water of Lonar Lake underwent an unexpected, rapid colour transformation from emerald green to bright pink within a few days.",
    "unit": "CE"
   },
   {
-   "label": "archaeology",
-   "number": 35.0,
-   "quote": "Konark Sun Temple is a 13th-century CE Hindu Sun temple at Konark about 35 kilometres (22 mi) northeast from Puri city on the coastline in Puri district, Odisha, India.",
-   "source_date": "2026-04-24",
-   "source_name": "Wikipedia",
-   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
-   "text": "The temple complex sits about 35 kilometres northeast of Puri along the coast of the Bay of Bengal.",
-   "unit": "km"
-  },
-  {
-   "label": "legend",
-   "number": 52.0,
-   "quote": "There is a lodestone at the top of the temple which is believed to have been a massive 52 ton magnet. According to legend, the statue of the Sun God inside the temple was built of a material with iron content and was said to be floating in air",
-   "source_date": "2019-11-21",
-   "source_name": "OrissaPOST",
-   "source_url": "https://orissapost.com/this-sea-side-indian-temple-could-pull-ships-towards-its-shores/",
-   "text": "Popular folklore claims that a massive 52-tonne lodestone magnet was installed atop the temple tower to keep the central deity idol levitating in mid-air.",
-   "unit": "tonnes"
-  },
-  {
-   "label": "disputed",
+   "label": "scripture",
    "number": null,
-   "quote": "The widely-circulated folk account — that a lodestone or magnetic iron mechanism at the apex was removed by a Portuguese sailor, destabilising the structure — has no archaeological support. ASI investigations favour structural failure over centuries: the deul's massive weight relative to its coastal sandy foundation, possibly compounded by subsidence, seismic activity",
-   "source_date": "2024-12-20",
-   "source_name": "PubMed Central",
-   "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11660424/",
-   "text": "While legend blames the temple tower collapse on the removal of a crowning magnet, structural engineers and archaeologists attribute the ruin to foundation subsidence, earthquakes, and coastal weathering.",
+   "quote": "A localized text, the Lonar Mahatmya (or Virajakshetra Mahatmya), composed in the late 18th or early 19th century, expands the tale in eleven chapters, narrated by Vyasa to Skanda, integrating every feature of the crater into the legend...",
+   "source_date": "1800",
+   "source_name": "Skanda Purana (Lonar Mahatmya)",
+   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+   "text": "The Lonar Mahatmya, a regional sacred text affiliated with the Skanda Purana, identifies the crater as the subterranean lair of the demon Lonasura.",
    "unit": null
   },
   {
    "label": "scripture",
-   "number": 12.0,
-   "quote": "the text consists the narrative of Krishna's son Samba being infected by leprosy after being cursed by sage Durvasa, and subsequently being cured by worshipping Surya in the temple constructed by him in Mitravana on the banks of the Chandrabhaga",
-   "source_date": "2026-04-20",
-   "source_name": "Samba Purana",
-   "source_url": "https://en.wikipedia.org/wiki/Samba_Purana",
-   "text": "The Samba Purana records that Krishna's son Samba suffered from leprosy and was cured after observing 12 years of penance dedicated to Surya on the banks of the Chandrabhaga.",
-   "unit": "years"
+   "number": null,
+   "quote": "Vishnu descended in the form of a handsome youth, discovered the demon's underground dwelling with the help of his sisters, threw open the lid of his subterranean lair, and killed him within the very pit where he had resided.",
+   "source_date": "1800",
+   "source_name": "Skanda Purana (Lonar Mahatmya)",
+   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+   "text": "The Skanda Purana tradition relates that Lord Vishnu incarnated as the youth Daitya Sudan to uncover the demon's underground cave and slay him in his pit.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "The Lonar lake is supposed to be the pit within which the giant had resided, with its water representing his blood. A nearby hill is supposed to be the lid which Vishnu had thrown open.",
+   "source_date": "1909",
+   "source_name": "Lonar Oral Tradition",
+   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+   "text": "Local oral legend maintains that the saline water of Lonar Lake is the demon Lonasura's spilled blood and that a nearby hill represents the subterranean stone lid cast aside by Vishnu.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 1300.0,
+   "quote": "Henry Cousens dates the temple to the end of the 13th and beginning of the 14th centuries CE. He is of the opinion that the construction of the temple was never completed due to invasions of the Delhi Sultanate.",
+   "source_date": "1931",
+   "source_name": "Archaeological Survey of India / Henry Cousens",
+   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+   "text": "The Archaeological Survey of India protects the medieval Daitya Sudan Temple at Lonar, a Hemadpanthi-style star-shaped structure dated by archaeologist Henry Cousens to around 1300 CE.",
+   "unit": "CE"
+  },
+  {
+   "label": "scripture",
+   "number": 1598.0,
+   "quote": "These mountains produce all the requisites for making glass and soap. And here are saltpetre works which yield a considerable revenue to the State, from the duties collected.",
+   "source_date": "1598",
+   "source_name": "Ain-i-Akbari (Abu'l-Fazl)",
+   "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
+   "text": "The Mughal administrative text Ain-i-Akbari recorded in roughly 1598 CE that Lonar was an active mining and industrial site where saltpetre, glass, and soap were manufactured from its waters.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 2020.0,
+   "quote": "Lonar Lake. Buldhana, Maharashtra. Designated 22 July 2020. Reference no. 2441.",
+   "source_date": "2020-07-22",
+   "source_name": "Ramsar Convention Secretariat",
+   "source_url": "https://rsis.ramsar.org/ris/2441",
+   "text": "Lonar Lake was officially recognized as an internationally protected wetland under the Ramsar Convention in 2020 CE.",
+   "unit": "CE"
   }
  ],
  "id": "2026-11-08-arthvan-long",
  "ids": {
   "budget": {
    "day": "2026-10-24",
-   "drafts": 3,
-   "research": 3
+   "drafts": 4,
+   "research": 4
   },
   "write_batch": {
-   "id": "msgbatch_01JnGHAW66vooi7N3JfcpzYo",
-   "key": "a26f62a987fd4fb9",
-   "tries": 4
+   "id": "msgbatch_01NevTYUvS9HF66FBgJQ6aDP",
+   "key": "2ba926b86aee49fb",
+   "tries": 5
   }
  },
  "kind": "long",
@@ -90,6 +150,7 @@
   "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it",
+  "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it"
  ],
  "script": null,
@@ -97,87 +158,146 @@
  "timings": [],
  "topic": {
   "allowed_sources": [
-   "asi.nic.in",
+   "gsi.gov.in",
    "en.wikipedia.org",
-   "odishatourism.gov.in",
-   "UNESCO whc.unesco.org"
+   "Skanda Purana (Lonar Mahatmya)"
   ],
   "hooks": [
-   "Konark mandir ke upar 52 ton ka chumbak tha?",
-   "Jahaaz Konark ke paas kyon bhatakte the?",
-   "Surya mandir ka pahiya ghadi hai?"
+   "Ek ulka ne 50,000 saal pehle yeh jheel banayi?",
+   "Lonar ka paani gulabi kyon hua?",
+   "Jheel ke kinare Daitya Sudan mandir ki kahani"
   ],
-  "id": "konark-magnet",
-  "notes": "Magnet story is disputed/legend; the sundial wheel is documented.",
-  "place": "Konark, Odisha",
+  "id": "lonar-crater",
+  "notes": "Science is solid here; the demon story is scripture/legend.",
+  "place": "Lonar, Maharashtra",
   "sheet": {
    "facts": [
     {
      "label": "archaeology",
+     "number": 3.0,
+     "quote": "However, these are rare features on the surface of the Earth and only 190 structures are currently known and accepted as confirmed impact structures... out of which three confirmed impact structures are from India (e.g. Lonar, Dhala and Ramgarh craters).",
+     "source_date": "2020",
+     "source_name": "Geological Survey of India",
+     "source_url": "https://www.gsi.gov.in",
+     "text": "The Geological Survey of India recognizes Lonar as one of three confirmed terrestrial meteorite impact craters in India displaying shock metamorphism.",
+     "unit": "count"
+    },
+    {
+     "label": "archaeology",
+     "number": 1.8,
+     "quote": "The Lonar crater is a relatively small (rim to rim diameter 1830 m), almost perfectly circular simple (bowl-shaped) impact crater centered at 19°58'N and 76°31'E.",
+     "source_date": "2004",
+     "source_name": "Lunar and Planetary Institute",
+     "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
+     "text": "The circular Lonar crater has an average rim-to-rim diameter of approximately 1.8 kilometres.",
+     "unit": "km"
+    },
+    {
+     "label": "archaeology",
+     "number": 150.0,
+     "quote": "The crater measures 1.8 km (1.1 mi) in diameter and is 150 m (490 ft) deep.",
+     "source_date": "1979",
+     "source_name": "Geological Survey of India",
+     "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
+     "text": "The depth from the raised rim crest of the crater down to the crater basin floor measures approximately 150 metres.",
+     "unit": "metres"
+    },
+    {
+     "label": "disputed",
+     "number": 52000.0,
+     "quote": "While earlier analyses dated the structure to 52 ± 6 ka, subsequent argon-argon dating (40Ar/39Ar) yielded a much older age of 570 ± 47 ka. However, the 40Ar/39Ar age has been disputed, as inherited argon in the samples may have resulted in an overestimation of the crater's age.",
+     "source_date": "2011-07-01",
+     "source_name": "Geology (Jourdan et al.) / Physical Research Laboratory",
+     "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
+     "text": "The age of the Lonar crater impact is disputed between earlier thermoluminescence dating placing it at roughly 52,000 years ago and subsequent argon-argon geochronology dating it to roughly 570,000 years ago.",
+     "unit": "years"
+    },
+    {
+     "label": "archaeology",
      "number": null,
-     "quote": "These ceilings are supported by three iron beams... joined together with iron cramps and dowels.",
-     "source_date": "1998",
-     "source_name": "Archaeological Survey of India",
-     "source_url": "https://asi.nic.in",
-     "text": "The Archaeological Survey of India has documented that medieval builders used forged wrought-iron beams and iron cramps to support stone lintels across the temple roof.",
+     "quote": "When the meteor hit, the pressure was so intense it turned regular minerals into maskelynite (a type of glass that only forms under extreme shock pressures from a meteorite collision).",
+     "source_date": "1973-04-20",
+     "source_name": "Science / U.S. Geological Survey",
+     "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
+     "text": "Geological studies established the hypervelocity meteorite impact origin of the crater by detecting maskelynite, a shock-metamorphosed mineral glass formed under extreme kinetic pressures in basalt.",
      "unit": null
     },
     {
      "label": "archaeology",
-     "number": 1903.0,
-     "quote": "The sand filling was done by the British in 1903 to provide stability to the 13th century monument.",
-     "source_date": "2022-09-08",
-     "source_name": "Archaeological Survey of India",
-     "source_url": "https://asi.nic.in",
-     "text": "In 1903, British colonial authorities sealed the four entrances of the Jagamohana assembly hall and filled its interior with sand to halt structural collapse.",
+     "number": 2020.0,
+     "quote": "Lonar Lake's color shift occurred over the span of a few days. The change is visible in this image pair, acquired on May 25 and June 10 with the Operational Land Imager (OLI) on Landsat 8.",
+     "source_date": "2020-06-19",
+     "source_name": "NASA Earth Observatory",
+     "source_url": "https://earthobservatory.nasa.gov/images/146869/lonar-lake-tries-on-a-rosy-color",
+     "text": "In June 2020 CE, the water of Lonar Lake underwent an unexpected, rapid colour transformation from emerald green to bright pink within a few days.",
      "unit": "CE"
     },
     {
-     "label": "archaeology",
-     "number": 35.0,
-     "quote": "Konark Sun Temple is a 13th-century CE Hindu Sun temple at Konark about 35 kilometres (22 mi) northeast from Puri city on the coastline in Puri district, Odisha, India.",
-     "source_date": "2026-04-24",
-     "source_name": "Wikipedia",
-     "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
-     "text": "The temple complex sits about 35 kilometres northeast of Puri along the coast of the Bay of Bengal.",
-     "unit": "km"
-    },
-    {
-     "label": "legend",
-     "number": 52.0,
-     "quote": "There is a lodestone at the top of the temple which is believed to have been a massive 52 ton magnet. According to legend, the statue of the Sun God inside the temple was built of a material with iron content and was said to be floating in air",
-     "source_date": "2019-11-21",
-     "source_name": "OrissaPOST",
-     "source_url": "https://orissapost.com/this-sea-side-indian-temple-could-pull-ships-towards-its-shores/",
-     "text": "Popular folklore claims that a massive 52-tonne lodestone magnet was installed atop the temple tower to keep the central deity idol levitating in mid-air.",
-     "unit": "tonnes"
-    },
-    {
-     "label": "disputed",
+     "label": "scripture",
      "number": null,
-     "quote": "The widely-circulated folk account — that a lodestone or magnetic iron mechanism at the apex was removed by a Portuguese sailor, destabilising the structure — has no archaeological support. ASI investigations favour structural failure over centuries: the deul's massive weight relative to its coastal sandy foundation, possibly compounded by subsidence, seismic activity",
-     "source_date": "2024-12-20",
-     "source_name": "PubMed Central",
-     "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11660424/",
-     "text": "While legend blames the temple tower collapse on the removal of a crowning magnet, structural engineers and archaeologists attribute the ruin to foundation subsidence, earthquakes, and coastal weathering.",
+     "quote": "A localized text, the Lonar Mahatmya (or Virajakshetra Mahatmya), composed in the late 18th or early 19th century, expands the tale in eleven chapters, narrated by Vyasa to Skanda, integrating every feature of the crater into the legend...",
+     "source_date": "1800",
+     "source_name": "Skanda Purana (Lonar Mahatmya)",
+     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+     "text": "The Lonar Mahatmya, a regional sacred text affiliated with the Skanda Purana, identifies the crater as the subterranean lair of the demon Lonasura.",
      "unit": null
     },
     {
      "label": "scripture",
-     "number": 12.0,
-     "quote": "the text consists the narrative of Krishna's son Samba being infected by leprosy after being cursed by sage Durvasa, and subsequently being cured by worshipping Surya in the temple constructed by him in Mitravana on the banks of the Chandrabhaga",
-     "source_date": "2026-04-20",
-     "source_name": "Samba Purana",
-     "source_url": "https://en.wikipedia.org/wiki/Samba_Purana",
-     "text": "The Samba Purana records that Krishna's son Samba suffered from leprosy and was cured after observing 12 years of penance dedicated to Surya on the banks of the Chandrabhaga.",
-     "unit": "years"
+     "number": null,
+     "quote": "Vishnu descended in the form of a handsome youth, discovered the demon's underground dwelling with the help of his sisters, threw open the lid of his subterranean lair, and killed him within the very pit where he had resided.",
+     "source_date": "1800",
+     "source_name": "Skanda Purana (Lonar Mahatmya)",
+     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+     "text": "The Skanda Purana tradition relates that Lord Vishnu incarnated as the youth Daitya Sudan to uncover the demon's underground cave and slay him in his pit.",
+     "unit": null
+    },
+    {
+     "label": "legend",
+     "number": null,
+     "quote": "The Lonar lake is supposed to be the pit within which the giant had resided, with its water representing his blood. A nearby hill is supposed to be the lid which Vishnu had thrown open.",
+     "source_date": "1909",
+     "source_name": "Lonar Oral Tradition",
+     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+     "text": "Local oral legend maintains that the saline water of Lonar Lake is the demon Lonasura's spilled blood and that a nearby hill represents the subterranean stone lid cast aside by Vishnu.",
+     "unit": null
+    },
+    {
+     "label": "archaeology",
+     "number": 1300.0,
+     "quote": "Henry Cousens dates the temple to the end of the 13th and beginning of the 14th centuries CE. He is of the opinion that the construction of the temple was never completed due to invasions of the Delhi Sultanate.",
+     "source_date": "1931",
+     "source_name": "Archaeological Survey of India / Henry Cousens",
+     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+     "text": "The Archaeological Survey of India protects the medieval Daitya Sudan Temple at Lonar, a Hemadpanthi-style star-shaped structure dated by archaeologist Henry Cousens to around 1300 CE.",
+     "unit": "CE"
+    },
+    {
+     "label": "scripture",
+     "number": 1598.0,
+     "quote": "These mountains produce all the requisites for making glass and soap. And here are saltpetre works which yield a considerable revenue to the State, from the duties collected.",
+     "source_date": "1598",
+     "source_name": "Ain-i-Akbari (Abu'l-Fazl)",
+     "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
+     "text": "The Mughal administrative text Ain-i-Akbari recorded in roughly 1598 CE that Lonar was an active mining and industrial site where saltpetre, glass, and soap were manufactured from its waters.",
+     "unit": "CE"
+    },
+    {
+     "label": "archaeology",
+     "number": 2020.0,
+     "quote": "Lonar Lake. Buldhana, Maharashtra. Designated 22 July 2020. Reference no. 2441.",
+     "source_date": "2020-07-22",
+     "source_name": "Ramsar Convention Secretariat",
+     "source_url": "https://rsis.ramsar.org/ris/2441",
+     "text": "Lonar Lake was officially recognized as an internationally protected wetland under the Ramsar Convention in 2020 CE.",
+     "unit": "CE"
     }
    ],
-   "summary": "Popular legend claims a massive 52-tonne magnet crowned Konark's main spire, suspending the Sun god's idol in mid-air and pulling unwary sailing ships ashore until European sailors hauled it away. Physical investigations have uncovered forged iron reinforcement beams and intricately calibrated sundial wheels, but found no archaeological traces of a giant lodestone or levitation apparatus. Historians and geologists dispute the collapse narrative, pointing instead to unstable coastal sand foundations, seismic activity, cyclonic storms, or medieval invasions rather than magnetic tampering. What remains unknown is the precise architectural design of the missing spire and whether localized iron-bearing sandstone caused any genuine navigational anomalies for early Bay of Bengal mariners."
+   "summary": "According to the Skanda Purana's Lonar Mahatmya and regional folklore, the crater marks the subterranean cave of the demon Lonasura who was vanquished by Lord Vishnu as Daitya Sudan, leaving behind a saline pit representing the demon's spilled blood. Modern geological and microbiological studies have demonstrated that the crater is actually a hypervelocity meteorite impact site formed in Deccan basalt, containing shock-metamorphosed maskelynite as well as Haloarchaea microbes responsible for the lake turning pink in June 2020. Geoscientists disagree sharply over when the impact event took place, debating whether it occurred approximately 52,000 years ago based on thermoluminescence or roughly 570,000 years ago based on argon-argon isotopic dating. It remains unknown whether inherited argon from target volcanic basalts falsely inflated the older dates, and direct physical remnants of the original meteorite impactor have never been located."
   },
   "target_minutes": 14,
-  "title_hi": "Konark ka chumbak"
+  "title_hi": "Lonar, ulka se bani jheel"
  },
- "updated": "2026-10-24T13:58:28+00:00",
+ "updated": "2026-10-24T14:50:21+00:00",
  "writer": ""
 }
