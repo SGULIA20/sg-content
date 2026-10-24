@@ -3,26 +3,76 @@
  "facts": [
   {
    "label": "archaeology",
-   "number": 1956.0,
-   "quote": "The Middle Palaeolithic in India was first identified in 1956 following the flake tool discoveries by H.D. Sankalia at Nevasa on the Pravara riverbank in Maharasthra... ascribed with different names such as Middle Palaeolithic, Middle Stone Age, Series II, Nevasian and Flake culture.",
-   "source_date": "1956",
+   "number": null,
+   "quote": "These ceilings are supported by three iron beams... joined together with iron cramps and dowels.",
+   "source_date": "1998",
    "source_name": "Archaeological Survey of India",
-   "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11349187/",
-   "text": "In 1956, archaeologist H. D. Sankalia identified India's Middle Palaeolithic industry from stratified tool-bearing gravels of the Pravara River at Nevasa, designating it the Nevasian culture.",
+   "source_url": "https://asi.nic.in",
+   "text": "The Archaeological Survey of India has documented that medieval builders used forged wrought-iron beams and iron cramps to support stone lintels across the temple roof.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 1903.0,
+   "quote": "The sand filling was done by the British in 1903 to provide stability to the 13th century monument.",
+   "source_date": "2022-09-08",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "In 1903, British colonial authorities sealed the four entrances of the Jagamohana assembly hall and filled its interior with sand to halt structural collapse.",
    "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 35.0,
+   "quote": "Konark Sun Temple is a 13th-century CE Hindu Sun temple at Konark about 35 kilometres (22 mi) northeast from Puri city on the coastline in Puri district, Odisha, India.",
+   "source_date": "2026-04-24",
+   "source_name": "Wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+   "text": "The temple complex sits about 35 kilometres northeast of Puri along the coast of the Bay of Bengal.",
+   "unit": "km"
+  },
+  {
+   "label": "legend",
+   "number": 52.0,
+   "quote": "There is a lodestone at the top of the temple which is believed to have been a massive 52 ton magnet. According to legend, the statue of the Sun God inside the temple was built of a material with iron content and was said to be floating in air",
+   "source_date": "2019-11-21",
+   "source_name": "OrissaPOST",
+   "source_url": "https://orissapost.com/this-sea-side-indian-temple-could-pull-ships-towards-its-shores/",
+   "text": "Popular folklore claims that a massive 52-tonne lodestone magnet was installed atop the temple tower to keep the central deity idol levitating in mid-air.",
+   "unit": "tonnes"
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "The widely-circulated folk account — that a lodestone or magnetic iron mechanism at the apex was removed by a Portuguese sailor, destabilising the structure — has no archaeological support. ASI investigations favour structural failure over centuries: the deul's massive weight relative to its coastal sandy foundation, possibly compounded by subsidence, seismic activity",
+   "source_date": "2024-12-20",
+   "source_name": "PubMed Central",
+   "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11660424/",
+   "text": "While legend blames the temple tower collapse on the removal of a crowning magnet, structural engineers and archaeologists attribute the ruin to foundation subsidence, earthquakes, and coastal weathering.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": 12.0,
+   "quote": "the text consists the narrative of Krishna's son Samba being infected by leprosy after being cursed by sage Durvasa, and subsequently being cured by worshipping Surya in the temple constructed by him in Mitravana on the banks of the Chandrabhaga",
+   "source_date": "2026-04-20",
+   "source_name": "Samba Purana",
+   "source_url": "https://en.wikipedia.org/wiki/Samba_Purana",
+   "text": "The Samba Purana records that Krishna's son Samba suffered from leprosy and was cured after observing 12 years of penance dedicated to Surya on the banks of the Chandrabhaga.",
+   "unit": "years"
   }
  ],
  "id": "2026-11-08-arthvan-long",
  "ids": {
   "budget": {
    "day": "2026-10-24",
-   "drafts": 2,
-   "research": 2
+   "drafts": 3,
+   "research": 3
   },
   "write_batch": {
-   "id": "msgbatch_01EUQC2A6YwLbNZPqzfoeSjq",
-   "key": "6964cb7c8aeb2a71",
-   "tries": 3
+   "id": "msgbatch_01JnGHAW66vooi7N3JfcpzYo",
+   "key": "a26f62a987fd4fb9",
+   "tries": 4
   }
  },
  "kind": "long",
@@ -39,6 +89,7 @@
   "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it",
+  "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it"
  ],
  "script": null,
@@ -46,36 +97,87 @@
  "timings": [],
  "topic": {
   "allowed_sources": [
+   "asi.nic.in",
    "en.wikipedia.org",
-   "maharashtratourism.gov.in",
-   "news reports with dates"
+   "odishatourism.gov.in",
+   "UNESCO whc.unesco.org"
   ],
   "hooks": [
-   "Is gaon mein ghar ke darwaze kyon nahi?",
-   "Bank ki shakha bhi bina lock ke?",
-   "Chori hui to kya hua?"
+   "Konark mandir ke upar 52 ton ka chumbak tha?",
+   "Jahaaz Konark ke paas kyon bhatakte the?",
+   "Surya mandir ka pahiya ghadi hai?"
   ],
-  "id": "shani-shingnapur",
-  "notes": "Legend lane plus documented modern facts (UCO Bank branch 2011); report thefts honestly.",
-  "place": "Shani Shingnapur, Maharashtra",
+  "id": "konark-magnet",
+  "notes": "Magnet story is disputed/legend; the sundial wheel is documented.",
+  "place": "Konark, Odisha",
   "sheet": {
    "facts": [
     {
      "label": "archaeology",
-     "number": 1956.0,
-     "quote": "The Middle Palaeolithic in India was first identified in 1956 following the flake tool discoveries by H.D. Sankalia at Nevasa on the Pravara riverbank in Maharasthra... ascribed with different names such as Middle Palaeolithic, Middle Stone Age, Series II, Nevasian and Flake culture.",
-     "source_date": "1956",
+     "number": null,
+     "quote": "These ceilings are supported by three iron beams... joined together with iron cramps and dowels.",
+     "source_date": "1998",
      "source_name": "Archaeological Survey of India",
-     "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11349187/",
-     "text": "In 1956, archaeologist H. D. Sankalia identified India's Middle Palaeolithic industry from stratified tool-bearing gravels of the Pravara River at Nevasa, designating it the Nevasian culture.",
+     "source_url": "https://asi.nic.in",
+     "text": "The Archaeological Survey of India has documented that medieval builders used forged wrought-iron beams and iron cramps to support stone lintels across the temple roof.",
+     "unit": null
+    },
+    {
+     "label": "archaeology",
+     "number": 1903.0,
+     "quote": "The sand filling was done by the British in 1903 to provide stability to the 13th century monument.",
+     "source_date": "2022-09-08",
+     "source_name": "Archaeological Survey of India",
+     "source_url": "https://asi.nic.in",
+     "text": "In 1903, British colonial authorities sealed the four entrances of the Jagamohana assembly hall and filled its interior with sand to halt structural collapse.",
      "unit": "CE"
+    },
+    {
+     "label": "archaeology",
+     "number": 35.0,
+     "quote": "Konark Sun Temple is a 13th-century CE Hindu Sun temple at Konark about 35 kilometres (22 mi) northeast from Puri city on the coastline in Puri district, Odisha, India.",
+     "source_date": "2026-04-24",
+     "source_name": "Wikipedia",
+     "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+     "text": "The temple complex sits about 35 kilometres northeast of Puri along the coast of the Bay of Bengal.",
+     "unit": "km"
+    },
+    {
+     "label": "legend",
+     "number": 52.0,
+     "quote": "There is a lodestone at the top of the temple which is believed to have been a massive 52 ton magnet. According to legend, the statue of the Sun God inside the temple was built of a material with iron content and was said to be floating in air",
+     "source_date": "2019-11-21",
+     "source_name": "OrissaPOST",
+     "source_url": "https://orissapost.com/this-sea-side-indian-temple-could-pull-ships-towards-its-shores/",
+     "text": "Popular folklore claims that a massive 52-tonne lodestone magnet was installed atop the temple tower to keep the central deity idol levitating in mid-air.",
+     "unit": "tonnes"
+    },
+    {
+     "label": "disputed",
+     "number": null,
+     "quote": "The widely-circulated folk account — that a lodestone or magnetic iron mechanism at the apex was removed by a Portuguese sailor, destabilising the structure — has no archaeological support. ASI investigations favour structural failure over centuries: the deul's massive weight relative to its coastal sandy foundation, possibly compounded by subsidence, seismic activity",
+     "source_date": "2024-12-20",
+     "source_name": "PubMed Central",
+     "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11660424/",
+     "text": "While legend blames the temple tower collapse on the removal of a crowning magnet, structural engineers and archaeologists attribute the ruin to foundation subsidence, earthquakes, and coastal weathering.",
+     "unit": null
+    },
+    {
+     "label": "scripture",
+     "number": 12.0,
+     "quote": "the text consists the narrative of Krishna's son Samba being infected by leprosy after being cursed by sage Durvasa, and subsequently being cured by worshipping Surya in the temple constructed by him in Mitravana on the banks of the Chandrabhaga",
+     "source_date": "2026-04-20",
+     "source_name": "Samba Purana",
+     "source_url": "https://en.wikipedia.org/wiki/Samba_Purana",
+     "text": "The Samba Purana records that Krishna's son Samba suffered from leprosy and was cured after observing 12 years of penance dedicated to Surya on the banks of the Chandrabhaga.",
+     "unit": "years"
     }
    ],
-   "summary": "Local tradition recounts that a black basalt monolith washed ashore along the Panasnala River centuries ago, and Lord Shani appeared in a dream promising complete protection against theft on condition that the slab remained under the open sky and villagers discarded doors. Archaeological excavations across the surrounding Nevasa basin by Deccan College established extensive prehistoric and early historic occupational horizons, while physical surveys at Shani Shingnapur document an open-air basalt stele alongside modern commercial institutions adapted with concealed security measures. Sociologists and anti-superstition organizations contend that the village's zero-crime claim is a heavily commercialized myth contradicted by police first information reports and hidden electromagnetic locks, whereas traditional residents maintain that faith and fear of karmic retribution effectively deter wrongdoing. It remains historically unverified when the practice of doorless dwellings first began in the village and whether the central monolith originated as a pre-historic aniconic megalith before its integration into regional Shani worship."
+   "summary": "Popular legend claims a massive 52-tonne magnet crowned Konark's main spire, suspending the Sun god's idol in mid-air and pulling unwary sailing ships ashore until European sailors hauled it away. Physical investigations have uncovered forged iron reinforcement beams and intricately calibrated sundial wheels, but found no archaeological traces of a giant lodestone or levitation apparatus. Historians and geologists dispute the collapse narrative, pointing instead to unstable coastal sand foundations, seismic activity, cyclonic storms, or medieval invasions rather than magnetic tampering. What remains unknown is the precise architectural design of the missing spire and whether localized iron-bearing sandstone caused any genuine navigational anomalies for early Bay of Bengal mariners."
   },
   "target_minutes": 14,
-  "title_hi": "Shani Shingnapur, bina darwaze ka gaon"
+  "title_hi": "Konark ka chumbak"
  },
- "updated": "2026-10-24T12:12:10+00:00",
+ "updated": "2026-10-24T13:58:28+00:00",
  "writer": ""
 }
