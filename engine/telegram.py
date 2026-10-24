@@ -76,10 +76,14 @@ def pause_file(root: Path = ROOT) -> Path:
 
 
 def paused(root: Path = ROOT) -> bool:
-    return pause_file(root).exists()
+    """Paused from Telegram (logs/pause.json) or from the control page (engine.command_center)."""
+    from . import command_center
+    return pause_file(root).exists() or command_center.remote_paused(root)
 
 
 def set_paused(flag: bool, root: Path = ROOT) -> None:
+    from . import command_center
+    command_center.set_remote_paused(flag, root)
     f = pause_file(root)
     if flag:
         f.parent.mkdir(parents=True, exist_ok=True)
@@ -93,6 +97,17 @@ def poll_commands(env=None, state: Path = ROOT / "logs" / "tg-offset.json", get=
     token, chat = _config(env)
     if not token:
         return []
+    if handler:                                                            # with the control-room webhook on, the bot's own commands
+        from . import command_center                                       # and buttons are answered there; what is left comes from its inbox
+        queued = command_center.telegram_inbox(root)
+        if queued is not None:
+            handled = []
+            for text in queued:
+                reply = handler(text.strip())
+                if reply:
+                    handled.append(text.strip())
+                    post(API.format(token=token, method="sendMessage"), {"chat_id": chat, "text": secrets.scrub(reply)[:4000]})
+            return handled
     try:
         offset = int(json.loads(Path(state).read_text()).get("offset", 0))
     except (FileNotFoundError, ValueError):

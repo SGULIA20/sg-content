@@ -20,5 +20,6 @@ gh secret set NAME --repo SGULIA20/sg-content < file-with-the-value
 | `TELEGRAM_BOT_TOKEN` | @BotFather token for @Sglearningcontent_bot (this project's own bot) | every workflow |
 | `TELEGRAM_CHAT_ID` | `python -m engine.telegram --find-chat` after messaging the bot once | every workflow |
 | `ACTIONS_PAT` (optional) | a fine-grained GitHub token with "Secrets: write" on this repo; lets refresh-tokens rotate the Instagram/Threads secrets itself | refresh-tokens |
+| `SG_COMMAND_KEY` (optional) | Supabase (ScoreMyBiz project) → Project Settings → Vault → `sg_command_ingest`; lets runs report to the founder's control page and obey its pause button | produce, publish |
 
 Rules: never commit `.env`; never paste a value into a piece, a log or a Telegram message (the engine scrubs known values); when a token is rotated, update the GitHub secret the same day.

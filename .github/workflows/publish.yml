@@ -46,6 +46,10 @@ jobs:
         run: |
           git config user.name "sg-content-bot"
           git config user.email "sg-content-bot@users.noreply.github.com"
+      - name: Tell the control room this run started
+        env:
+          SG_COMMAND_KEY: ${{ secrets.SG_COMMAND_KEY }}
+        run: python -m engine.command_center --report publish-start
       - name: Post what is due (each posted piece is committed and pushed at once)
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
@@ -60,7 +64,13 @@ jobs:
           LINKEDIN_PERSON_URN: ${{ secrets.LINKEDIN_PERSON_URN }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SG_COMMAND_KEY: ${{ secrets.SG_COMMAND_KEY }}
         run: python -m engine.publish --channel ${{ steps.slot.outputs.channel }}
+      - name: Tell the control room how it went
+        if: always()
+        env:
+          SG_COMMAND_KEY: ${{ secrets.SG_COMMAND_KEY }}
+        run: python -m engine.command_center --report publish-end
       - name: Commit piece records and logs
         if: always()
         run: |

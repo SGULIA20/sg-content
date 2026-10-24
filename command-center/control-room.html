@@ -1,0 +1,680 @@
+<title>SG Control Room</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one column of operator panels (status strip, switches, channel desks, ask, log), widening to two columns on a desk screen. */
+:root {
+  --bg: #f3f5f6; --panel: #ffffff; --ink: #14181b; --muted: #5d676e; --line: #dde2e5;
+  --accent: #0e6b6b; --accent-ink: #ffffff; --accent-soft: #e0efee;
+  --ok: #1d7a3e; --ok-soft: #e3f3e8; --warn: #9a5b00; --warn-soft: #fbf0dc; --bad: #b42318; --bad-soft: #fbe6e3;
+  --f-display: "Archivo Narrow", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f1315; --panel: #171c1f; --ink: #e8ecee; --muted: #98a3a9; --line: #2a3236;
+  --accent: #4fb8b3; --accent-ink: #062322; --accent-soft: #15302f;
+  --ok: #5ccf86; --ok-soft: #13291b; --warn: #f0b24f; --warn-soft: #2e2412; --bad: #ff8a7a; --bad-soft: #351a17; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0f1315; --panel: #171c1f; --ink: #e8ecee; --muted: #98a3a9; --line: #2a3236;
+  --accent: #4fb8b3; --accent-ink: #062322; --accent-soft: #15302f;
+  --ok: #5ccf86; --ok-soft: #13291b; --warn: #f0b24f; --warn-soft: #2e2412; --bad: #ff8a7a; --bad-soft: #351a17; color-scheme: dark }
+
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--f-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 40px }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg) }
+.wrap { max-width: 1080px; margin: 0 auto; display: grid; gap: 16px }
+header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 12px 10px;
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap; border-bottom: 1px solid var(--line) }
+h1 { font: 700 22px/1.1 var(--f-display); letter-spacing: .02em; margin: 0; text-transform: uppercase }
+h2 { font: 600 15px/1.2 var(--f-display); letter-spacing: .08em; text-transform: uppercase; margin: 0; color: var(--muted) }
+.grow { flex: 1 }
+.mono { font-family: var(--f-mono); font-size: 13px }
+.muted { color: var(--muted) }
+.small { font-size: 13px }
+.pill { display: inline-flex; align-items: center; gap: 6px; font: 600 13px/1 var(--f-display); letter-spacing: .08em; text-transform: uppercase;
+  padding: 6px 10px; border-radius: 999px; background: var(--ok-soft); color: var(--ok) }
+.pill::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor }
+.pill.paused { background: var(--warn-soft); color: var(--warn) }
+.pill.off { background: var(--line); color: var(--muted) }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 12px; min-width: 0 }
+.cols { display: grid; gap: 16px; grid-template-columns: 1fr }
+@media (min-width: 820px) { .cols { grid-template-columns: 1fr 1fr } }
+button { font: 600 15px/1 var(--f-body); border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+  padding: 12px 14px; min-height: 44px; cursor: pointer }
+button:hover { border-color: var(--accent) }
+button:focus-visible, textarea:focus-visible, select:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px }
+button:disabled { opacity: .5; cursor: default }
+button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent) }
+button.danger { color: var(--bad); border-color: var(--bad) }
+button.quiet { padding: 8px 10px; min-height: 36px; font-size: 13px }
+.switches { display: grid; grid-template-columns: 1fr 1fr; gap: 10px }
+.switches button { min-height: 56px; font-size: 16px }
+.confirm { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; background: var(--warn-soft); color: var(--ink);
+  border-radius: 8px; padding: 10px 12px }
+.confirm p { margin: 0; flex: 1 1 200px }
+.alerts { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none }
+.alerts li { display: grid; grid-template-columns: 6px 1fr; gap: 10px; align-items: stretch }
+.alerts li::before { content: ""; border-radius: 3px; background: var(--warn) }
+.alerts li.bad::before { background: var(--bad) }
+.alerts li span { min-width: 0; overflow-wrap: anywhere }
+.desk { display: grid; gap: 10px }
+.desk header { all: unset; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap }
+.desk h3 { font: 700 18px/1.2 var(--f-display); margin: 0 }
+.piece { border-top: 1px solid var(--line); padding-top: 10px; display: grid; gap: 6px }
+.piece .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap }
+.chip { font: 600 12px/1 var(--f-display); letter-spacing: .06em; text-transform: uppercase; padding: 5px 8px; border-radius: 6px;
+  background: var(--line); color: var(--ink) }
+.chip.ok { background: var(--ok-soft); color: var(--ok) }
+.chip.bad { background: var(--bad-soft); color: var(--bad) }
+.chip.warn { background: var(--warn-soft); color: var(--warn) }
+.reason { margin: 0; font-size: 13px; color: var(--muted); overflow-wrap: anywhere }
+.meters { display: grid; gap: 10px }
+.meter { display: grid; gap: 4px }
+.meter .lbl { display: flex; justify-content: space-between; gap: 8px; font-size: 13px; font-variant-numeric: tabular-nums }
+.bar { height: 8px; border-radius: 4px; background: var(--line); overflow: hidden }
+.bar i { display: block; height: 100%; background: var(--accent) }
+.bar i.warn { background: var(--warn) } .bar i.bad { background: var(--bad) }
+textarea, select, input[type=text] { width: 100%; font: 15px/1.4 var(--f-body); color: var(--ink); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px }
+textarea { min-height: 84px; resize: vertical }
+.formrow { display: grid; gap: 8px; grid-template-columns: 1fr 1fr }
+.check { display: flex; align-items: center; gap: 8px; font-size: 14px }
+.log { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px }
+.log li { display: grid; grid-template-columns: auto 1fr; gap: 4px 10px; font-size: 13px; border-top: 1px solid var(--line); padding-top: 8px }
+.log time { color: var(--muted); font-variant-numeric: tabular-nums; font-family: var(--f-mono); font-size: 12px }
+.log span { min-width: 0; overflow-wrap: anywhere }
+.notice { border-radius: 8px; padding: 12px; background: var(--accent-soft); font-size: 14px }
+.notice.bad { background: var(--bad-soft) }
+.next { display: grid; gap: 8px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) }
+.next div { border: 1px dashed var(--line); border-radius: 8px; padding: 10px 12px; font-size: 13px }
+.next b { display: block; font: 700 15px/1.3 var(--f-display) }
+a { color: var(--accent) }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px }
+.tile { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; display: grid; gap: 2px; min-width: 0 }
+.tile b { font: 700 22px/1.1 var(--f-display); font-variant-numeric: tabular-nums; overflow-wrap: anywhere }
+.tile span { font-size: 12px; color: var(--muted) }
+h3.sub { font: 600 13px/1.2 var(--f-display); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 4px 0 0 }
+.flag { border-top: 1px solid var(--line); padding-top: 10px; display: grid; gap: 6px }
+.flag q { quotes: none; font-size: 14px; overflow-wrap: anywhere; display: block; background: var(--bg); border-radius: 6px; padding: 8px 10px }
+.flag .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center }
+.setup { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px }
+.setup li { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: start; font-size: 14px }
+.setup li span { min-width: 0; overflow-wrap: anywhere }
+@media (prefers-reduced-motion: no-preference) { .bar i { transition: width .4s ease } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>SG Control Room</h1>
+    <span id="state" class="pill off">Connecting</span>
+    <span class="grow"></span>
+    <span id="updated" class="small muted"></span>
+    <button id="refresh" class="quiet" type="button">Refresh</button>
+  </header>
+
+  <div id="banner" class="notice" hidden></div>
+
+  <section id="conn" class="panel" hidden aria-labelledby="h-conn">
+    <h2 id="h-conn">Not connected</h2>
+    <p id="conn-why" style="margin:0"></p>
+    <p id="conn-tech" class="small muted mono" style="margin:0;overflow-wrap:anywhere"></p>
+    <div class="switches">
+      <button id="conn-allow" class="primary" type="button">Allow access and retry</button>
+      <button id="conn-manage" type="button">Open permissions</button>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-switch">
+    <h2 id="h-switch">Pipeline</h2>
+    <div class="switches">
+      <button id="btn-pause" class="primary" type="button">Pause</button>
+      <button id="btn-stop" class="danger" type="button">Stop running jobs</button>
+    </div>
+    <div id="confirm-slot"></div>
+    <p class="small muted" style="margin:0">Pause stops new runs from making or posting anything. Stop cancels a run that is going right now. Telegram /pause and /resume do the same thing.</p>
+  </section>
+
+  <div class="cols">
+    <section class="panel" aria-labelledby="h-live">
+      <h2 id="h-live">Running now</h2>
+      <ul id="live" class="log"><li style="grid-template-columns:1fr"><span class="muted">Loading…</span></li></ul>
+    </section>
+    <section class="panel" aria-labelledby="h-apps">
+      <h2 id="h-apps">ScoreMyBiz &amp; Waypoint posts today</h2>
+      <div id="apps"><p class="small muted" style="margin:0">Loading…</p></div>
+    </section>
+  </div>
+
+  <section class="panel" aria-labelledby="h-attn">
+    <h2 id="h-attn">Needs attention</h2>
+    <ul id="alerts" class="alerts"><li><span class="muted">Loading…</span></li></ul>
+  </section>
+
+  <div class="cols">
+    <section class="panel desk" id="desk-sglearning" aria-label="Learning with SG"></section>
+    <section class="panel desk" id="desk-arthvan" aria-label="SG-MYTH-WORLD"></section>
+  </div>
+
+  <div class="cols">
+    <section class="panel" aria-labelledby="h-ask">
+      <h2 id="h-ask">Tell it what to do</h2>
+      <label for="ask" class="small muted">Plain words are fine, for example "retry today's money short" or "pause everything till tomorrow".</label>
+      <textarea id="ask" placeholder="What should happen?"></textarea>
+      <button id="ask-go" class="primary" type="button">Work out the action</button>
+      <div id="ask-out"></div>
+    </section>
+
+    <section class="panel" aria-labelledby="h-run">
+      <h2 id="h-run">Run now</h2>
+      <div class="formrow">
+        <select id="run-only" aria-label="What to make">
+          <option value="">Everything due</option>
+          <option value="sglearning:short">Learning with SG · Short</option>
+          <option value="sglearning:long">Learning with SG · Long</option>
+          <option value="arthvan:short">SG-MYTH-WORLD · Short</option>
+          <option value="arthvan:long">SG-MYTH-WORLD · Long</option>
+        </select>
+        <select id="run-max" aria-label="How many pieces">
+          <option value="1">1 piece</option><option value="2">2 pieces</option><option value="3" selected>3 pieces</option>
+        </select>
+      </div>
+      <label class="check"><input id="run-dry" type="checkbox"> Dry run (render only, nothing uploaded)</label>
+      <button id="run-go" type="button">Make videos now</button>
+    </section>
+  </div>
+
+  <div class="cols">
+    <section class="panel" aria-labelledby="h-spend">
+      <h2 id="h-spend">Today's spend against the caps</h2>
+      <div id="meters" class="meters"></div>
+    </section>
+    <section class="panel" aria-labelledby="h-log">
+      <h2 id="h-log">What happened</h2>
+      <ul id="log" class="log"></ul>
+    </section>
+  </div>
+
+  <div class="cols">
+    <section class="panel" aria-labelledby="h-smb">
+      <h2 id="h-smb">ScoreMyBiz</h2>
+      <div id="smb" class="tiles"><p class="small muted" style="margin:0">Loading…</p></div>
+      <button id="smb-report" type="button">Email me the CEO report now</button>
+      <div id="smb-slot"></div>
+    </section>
+    <section class="panel" aria-labelledby="h-wp">
+      <h2 id="h-wp">Waypoint</h2>
+      <div id="wp-numbers" class="tiles"></div>
+      <h3 class="sub">Waiting for review</h3>
+      <div id="wp-queue"><p class="small muted" style="margin:0">Loading…</p></div>
+    </section>
+  </div>
+
+  <section class="panel" aria-labelledby="h-setup">
+    <h2 id="h-setup">Setup</h2>
+    <ul id="setup" class="setup"></ul>
+  </section>
+</div>
+
+<script>
+(() => {
+  const PROJECT = "xiidltxcsetevaverqkx";
+  const WAYPOINT = "zoyopcfnglpcnlraokob";
+  const REPO = "https://github.com/SGULIA20/sg-content";
+  const CH = { sglearning: "Learning with SG", arthvan: "SG-MYTH-WORLD" };
+  const CAPS = { voice: 80, images: 250, claude: 3.0 };
+  const PIECE_RE = /^\d{4}-\d{2}-\d{2}-(sglearning|arthvan)-(short|long)$/;
+  const ONLY_OK = ["sglearning:short", "sglearning:long", "arthvan:short", "arthvan:long"];
+  const DONE = ["uploaded", "posted"];
+  const $ = (id) => document.getElementById(id);
+  let mcp = null, sample = null, data = null, busy = false, lastLoad = 0;
+
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const lit = (s) => "'" + String(s).replace(/\u0000/g, "").replace(/'/g, "''") + "'";
+  const when = (iso) => { if (!iso) return ""; const d = new Date(iso); return isNaN(d) ? "" :
+    d.toLocaleString(undefined, { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }); };
+
+  function banner(text, bad) { const b = $("banner"); b.hidden = !text; b.className = "notice" + (bad ? " bad" : ""); b.textContent = text || ""; }
+
+  function connectorCopy(e) {
+    switch (e && e.code) {
+      case "needs_reauth": return "Your Supabase connector needs signing in again: claude.ai Settings → Connectors → Supabase.";
+      case "server_not_connected": case "selection_required": return "Add or choose the Supabase connector in claude.ai Settings → Connectors, then reload.";
+      case "not_in_manifest": case "approval_required": case "consent_required": return "This page needs your OK to use Supabase. Reload and allow it when claude.ai asks.";
+      case "blocked_by_policy": return "Your organisation blocks this Supabase tool for this page.";
+      case "server_unavailable": return "Supabase did not answer just now. Try Refresh in a minute.";
+      case "tool_error": return "The database refused the request. If it mentions permission or project, reconnect Supabase in claude.ai Settings → Connectors.";
+      case "unreadable": return "Connected, but the answer came back in an unexpected format. Send Claude the details line below.";
+      case "not_granted": case "capability_disabled": case "capability_removed": return "This view can't use your connectors. Open the page in a web browser at claude.ai (Chrome or Safari), signed in.";
+      default: return "Could not reach the control room (" + (e && e.code || "unknown") + "). Try Refresh.";
+    }
+  }
+
+  function rowsFrom(res) {
+    let p = res && res.payload, text = null;
+    if (Array.isArray(p)) return p;
+    if (p && typeof p === "object") {
+      for (const k of ["rows", "data", "result"]) if (Array.isArray(p[k])) return p[k];
+      if (typeof p.result === "string") text = p.result;
+    } else if (typeof p === "string") text = p;
+    if (text === null) {
+      const b = (res && res.content || []).find((c) => c.type === "text");
+      text = b ? b.text : "";
+      try { const j = JSON.parse(text); if (Array.isArray(j)) return j; if (j && typeof j.result === "string") text = j.result; } catch (_) {}
+    }
+    const m = text.match(/<untrusted-data-[^>]*>\s*([\s\S]*?)\s*<\/untrusted-data-[^>]*>/);
+    const body = m ? m[1] : text;
+    try { return JSON.parse(body); } catch (_) {}
+    const a = body.indexOf("["), z = body.lastIndexOf("]");
+    try { if (a >= 0 && z > a) return JSON.parse(body.slice(a, z + 1)); } catch (_) {}
+    throw { code: "unreadable", message: "The database answered in a shape this page could not read: " + String(body).slice(0, 160) };
+  }
+
+  function showConn(why, tech) {
+    $("conn").hidden = !why;
+    if (!why) return;
+    $("conn-why").textContent = why;
+    $("conn-tech").textContent = tech ? "Details for Claude: " + tech : "";
+    const st = $("state"); st.className = "pill off"; st.textContent = "Not connected";
+  }
+
+  async function sql(query, project) {
+    const res = await mcp.callTool("Supabase", "execute_sql", { project_id: project || PROJECT, query }, { cache: false });
+    return rowsFrom(res);
+  }
+
+  const READ = `select json_build_object(
+    'paused', (select value from command.control where key = 'sg-content.paused'),
+    'paused_by', (select updated_by from command.control where key = 'sg-content.paused'),
+    'paused_at', (select updated_at from command.control where key = 'sg-content.paused'),
+    'snapshot', (select payload from command.status where source = 'sg-content' and key = 'snapshot'),
+    'snapshot_at', (select updated_at from command.status where source = 'sg-content' and key = 'snapshot'),
+    'commands', (select coalesce(json_agg(c order by c.id desc), '[]'::json) from (select id, created_at, action, args, requested_via, state, result from command.commands order by id desc limit 12) c),
+    'events', (select coalesce(json_agg(e order by e.id desc), '[]'::json) from (select id, at, source, kind, message from command.events where kind not like 'command.%' order by id desc limit 8) e),
+    'telegram', (select value from command.control where key = 'telegram.webhook'),
+    'live', (select payload from command.status where source = 'github' and key = 'runs'),
+    'apps', (select payload from command.status where source = 'arthvan-media' and key = 'today'),
+    'smb', command.smb_numbers()
+  ) as data`;
+
+  // Waypoint lives in its own Supabase project. Read-only here: numbers (no user content) and the moderation queue.
+  const WP_READ = `with ex as (select value as id from public.app_settings where key in ('founder_user_id', 'guide_user_id')),
+    log as (select distinct user_id, created_at::date as d from public.access_log where user_id::text not in (select id from ex)),
+    first as (select user_id, min(d) as d0 from log group by 1)
+  select json_build_object(
+    'wau', (select count(distinct user_id) from log where d > current_date - 7),
+    'mau', (select count(distinct user_id) from log where d > current_date - 30),
+    'new_7d', (select count(*) from first where d0 > current_date - 7),
+    'posts_7d', (select count(*) from public.posts where created_at > now() - interval '7 days'),
+    'comments_7d', (select count(*) from public.post_comments where created_at > now() - interval '7 days'),
+    'queue', (select coalesce(json_agg(q order by q.created_at desc), '[]'::json) from (
+      select f.post_id as id, f.category, f.severity, f.reason, f.action, f.created_at,
+        case when c.id is not null then 'comment' when r.id is not null then 'reply' when p.id is not null then 'post' else 'gone' end as kind,
+        left(coalesce(c.text, r.text, p.text, p.poll_question, ''), 400) as text,
+        case when c.id is not null then c.status when r.id is not null then r.status
+             when p.id is not null then (case when p.report_count >= 1000000 then 'hidden' else 'active' end) else 'gone' end as state
+      from public.moderation_flags f
+      left join public.post_comments c on c.id = f.post_id
+      left join public.post_replies r on r.id = f.post_id
+      left join public.posts p on p.id = f.post_id
+      where not f.reviewed order by f.created_at desc limit 15) q)
+  ) as data`;
+
+  async function load() {
+    if (!mcp) return;
+    $("refresh").disabled = true;
+    try {
+      let asked = "fresh";
+      try { asked = (await sql("select command.refresh() as r"))[0].r; } catch (_) {}
+      if (asked === "requested") await new Promise((r) => setTimeout(r, 6000));     // GitHub answers in a few seconds
+      const rows = await sql(READ);
+      lastLoad = Date.now();
+      data = rows[0] && rows[0].data;
+      banner(""); showConn("");
+      render();
+      loadWaypoint();
+    } catch (e) {
+      banner("");
+      showConn(connectorCopy(e), `${(e && (e.code || e.name)) || "error"}: ${String((e && e.message) || e).slice(0, 220)}`);
+    } finally { $("refresh").disabled = false; }
+  }
+
+  let wp = null, wpError = null;
+  async function loadWaypoint() {
+    try { wp = (await sql(WP_READ, WAYPOINT))[0].data; wpError = null; }
+    catch (e) { wp = null; wpError = e; }
+    renderWaypoint(); renderSetup();
+  }
+
+  // ---- derived state ----
+  function todayKey(map) { const ks = Object.keys(map || {}).sort(); return ks[ks.length - 1]; }
+  function alertsFrom(d) {
+    const out = [], s = d.snapshot || {};
+    const run = (s.runs || [])[0];
+    if (run && !run.ok) {
+      const crash = (run.made || []).find((m) => m[0] === "run");
+      out.push({ bad: true, text: `Last run (${when(run.at)}) crashed${crash ? ": " + crash[1].replace(/^crashed: /, "") : ""}.` });
+    }
+    if (run && run.stopped) out.push({ bad: false, text: `Last run stopped early: ${run.stopped}. It carries on at the next run.` });
+    for (const p of s.pieces || []) {
+      if (p.status.startsWith("failed") || p.status === "qa_failed")
+        out.push({ bad: true, text: `${CH[p.channel] || p.channel} ${p.kind} for ${p.publish_day} is ${p.status}: ${(p.reasons || []).slice(-1)[0] || "no reason recorded"}`, piece: p.id });
+    }
+    const v = s.spend && s.spend.voice_requests, k = todayKey(v);
+    if (k && v[k] >= CAPS.voice) out.push({ bad: false, text: `Voice cap reached for ${k} (${v[k]} of ${CAPS.voice}). New voice lines wait for the reset at 12:30 IST.` });
+    const im = s.spend && s.spend.images, ki = todayKey(im);
+    if (ki && im[ki].inr >= CAPS.images) out.push({ bad: false, text: `Picture budget reached for ${ki} (₹${im[ki].inr} of ₹${CAPS.images}).` });
+    if (d.paused === true) out.unshift({ bad: false, text: `Paused by ${d.paused_by || "someone"} at ${when(d.paused_at)}. Nothing is made or posted until you resume.` });
+    return out;
+  }
+
+  function chipClass(st) {
+    if (DONE.includes(st)) return "ok";
+    if (st.startsWith("failed") || st === "qa_failed" || st === "rejected") return "bad";
+    return "warn";
+  }
+
+  // ---- render ----
+  function render() {
+    const d = data || {}, s = d.snapshot || {};
+    const paused = d.paused === true;
+    const st = $("state"); st.className = "pill" + (paused ? " paused" : ""); st.textContent = paused ? "Paused" : "Running";
+    $("btn-pause").textContent = paused ? "Resume" : "Pause";
+    tick();
+
+    const al = alertsFrom(d);
+    $("alerts").innerHTML = al.length ? al.map((a) => `<li class="${a.bad ? "bad" : ""}"><span>${esc(a.text)}</span></li>`).join("")
+      : `<li style="grid-template-columns:1fr"><span class="muted">Nothing needs you right now.</span></li>`;
+
+    for (const ch of Object.keys(CH)) {
+      const ps = (s.pieces || []).filter((p) => p.channel === ch).slice(0, 4);
+      $("desk-" + ch).innerHTML = `
+        <header><h3>${esc(CH[ch])}</h3><span class="small muted">${ps.length ? "latest pieces" : "no pieces yet"}</span></header>
+        ${ps.map((p) => `
+          <div class="piece">
+            <div class="row">
+              <span class="chip ${chipClass(p.status)}">${esc(p.status)}</span>
+              <span class="mono">${esc(p.kind)} · ${esc(p.publish_day)}</span>
+              ${p.yt_id ? `<a class="small" href="https://youtu.be/${encodeURIComponent(p.yt_id)}" target="_blank" rel="noopener">YouTube</a>` : ""}
+              <span class="grow"></span>
+              ${DONE.includes(p.status) ? "" : `<button class="quiet" type="button" data-retry="${esc(p.id)}">Retry</button>`}
+            </div>
+            ${(p.reasons || []).length ? `<p class="reason">${esc(p.reasons[p.reasons.length - 1])}</p>` : ""}
+          </div>`).join("")}
+        <button type="button" data-publish="${ch}">Post what is due now (Reel, Story, Threads)</button>`;
+    }
+
+    const sp = s.spend || {};
+    const vk = todayKey(sp.voice_requests), ik = todayKey(sp.images), ck = todayKey(sp.claude);
+    const meter = (label, used, cap, fmt, day) => {
+      const pct = Math.min(100, Math.round((used / cap) * 100));
+      const cls = pct >= 100 ? "bad" : pct >= 75 ? "warn" : "";
+      return `<div class="meter"><div class="lbl"><span>${label} <span class="muted">${day ? esc(day) : ""}</span></span><span>${fmt(used)} / ${fmt(cap)}</span></div>
+        <div class="bar" role="img" aria-label="${label} ${pct}% of cap"><i class="${cls}" style="width:${pct}%"></i></div></div>`;
+    };
+    $("meters").innerHTML =
+      meter("Voice lines", vk ? sp.voice_requests[vk] : 0, CAPS.voice, (n) => String(n), vk) +
+      meter("Pictures", ik ? sp.images[ik].inr : 0, CAPS.images, (n) => "₹" + Math.round(n), ik) +
+      meter("Claude scripts", ck ? sp.claude[ck].usd : 0, CAPS.claude, (n) => "$" + Number(n).toFixed(2), ck);
+
+    const items = [
+      ...(d.commands || []).map((c) => ({ at: c.created_at, text: `${c.action}${c.args && Object.keys(c.args).length ? " " + JSON.stringify(c.args) : ""} · ${c.state}${c.result ? ": " + c.result : ""}`, via: c.requested_via })),
+      ...(d.events || []).map((e) => ({ at: e.at, text: e.message, via: e.source })),
+      ...(s.runs || []).slice(0, 5).map((r) => ({ at: r.at, text: `produce ${r.ok ? "ok" : "crashed"}${r.dry_run ? " (dry run)" : ""}: ${(r.made || []).map((m) => m.join(" → ")).join("; ") || "nothing to make"}`, via: "pipeline" })),
+    ].sort((a, b) => String(b.at).localeCompare(String(a.at))).slice(0, 14);
+    $("log").innerHTML = items.length ? items.map((i) => `<li><time>${esc(when(i.at))}</time><span>${esc(i.text)} <span class="muted">· ${esc(i.via)}</span></span></li>`).join("")
+      : `<li style="grid-template-columns:1fr"><span class="muted">No activity yet.</span></li>`;
+    renderSmb(d.smb); renderSetup(); renderLive(d.live); renderApps(d.apps);
+    if (s.github_run) $("log").insertAdjacentHTML("beforeend", `<li style="grid-template-columns:1fr"><a href="${esc(s.github_run)}" target="_blank" rel="noopener">Open the last GitHub run</a></li>`);
+  }
+
+  const RUN_NAME = { produce: "Make videos", publish: "Post", tests: "Tests", "daily-post": "App Reel (ScoreMyBiz / Waypoint)",
+    "linkedin-personal": "LinkedIn post", "telegram-commands": "Telegram check", "refresh-tokens": "Token refresh", "weekly-report": "Weekly report",
+    "telegram-setup": "Telegram setup", status: "Status card" };
+  const mins = (a, b) => Math.max(0, Math.round((new Date(b || Date.now()) - new Date(a)) / 60000));
+
+  function renderLive(live) {
+    if (!live) { $("live").innerHTML = `<li style="grid-template-columns:1fr"><span class="muted">Waiting for the first live read…</span></li>`; return; }
+    const all = [...(live["sg-content"] || []).map((r) => ({ ...r, repo: "videos" })), ...(live["arthvan-media"] || []).map((r) => ({ ...r, repo: "apps" }))]
+      .filter((r) => r.name !== "tests" || r.status !== "completed" || r.conclusion !== "success");
+    const now = all.filter((r) => r.status !== "completed");
+    const done = all.filter((r) => r.status === "completed").sort((a, b) => String(b.updated_at).localeCompare(String(a.updated_at))).slice(0, 6);
+    const row = (r) => {
+      const name = RUN_NAME[r.name] || r.name;
+      const st = r.status !== "completed" ? `<span class="chip warn">${r.status === "queued" ? "waiting" : "running " + mins(r.started_at) + " min"}</span>`
+        : `<span class="chip ${r.conclusion === "success" ? "ok" : r.conclusion === "cancelled" || r.conclusion === "skipped" ? "" : "bad"}">${esc(r.conclusion)}</span>`;
+      return `<li><time>${esc(when(r.status === "completed" ? r.updated_at : r.started_at))}</time><span>${st} <a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(name)}</a> <span class="muted">· ${r.repo}${r.event === "schedule" ? " · on schedule" : r.event === "workflow_dispatch" ? " · started by hand" : ""}</span></span></li>`;
+    };
+    $("live").innerHTML = (now.length ? now.map(row).join("") : `<li style="grid-template-columns:1fr"><span class="muted">Nothing running right now.</span></li>`) +
+      (done.length ? `<li style="grid-template-columns:1fr"><span class="small muted">Recently finished</span></li>` + done.map(row).join("") : "") +
+      ((live.errors || []).length ? `<li style="grid-template-columns:1fr"><span class="small" style="color:var(--bad)">${esc(live.errors.join(" · "))}</span></li>` : "");
+  }
+
+  const CHANNEL_LABEL = { "waypoint reel": "Instagram Reel + Story", "scoremybiz reel": "Instagram Reel + Story", whatsapp: "WhatsApp", telegram: "Telegram",
+    "youtube:sglearning": "YouTube (Learning with SG)", "youtube:arthvan": "YouTube (SG-MYTH-WORLD)", threads: "Threads", linkedin: "LinkedIn page",
+    linkedin_personal: "LinkedIn (you)", facebook: "Facebook" };
+  function renderApps(a) {
+    if (!a) { $("apps").innerHTML = `<p class="small muted" style="margin:0">Waiting for the first live read…</p>`; return; }
+    const posts = (a.posts || []).filter((p) => p.status !== "publishing" || !(a.posts || []).some((q) => q.channel === p.channel && q.status === "published"));
+    $("apps").innerHTML = `<p style="margin:0">Today's Reel: <b>${esc(a.item || "none planned")}</b></p>` +
+      (posts.length ? `<ul class="log">${posts.map((p) => `<li><span class="chip ${p.status === "published" ? "ok" : p.status === "failed" ? "bad" : "warn"}">${esc(p.status)}</span><span>${esc(CHANNEL_LABEL[p.channel] || p.channel)} <span class="muted">· ${esc(p.item)}</span></span></li>`).join("")}</ul>`
+        : `<p class="small muted" style="margin:0">Nothing posted yet today. The app Reel is due from 15:37 WAT.</p>`);
+  }
+
+  const tile = (v, label) => `<div class="tile"><b>${esc(v ?? "–")}</b><span>${esc(label)}</span></div>`;
+
+  function renderSmb(n) {
+    if (!n) { $("smb").innerHTML = `<p class="small muted" style="margin:0">No numbers yet.</p>`; return; }
+    const u = n.users || {}, money = Object.entries(n.money_7d || {});
+    const bad = (n.jobs || []).filter((j) => j.status !== "ok").map((j) => j.name);
+    $("smb").innerHTML = tile(u.total, "users") + tile(u.paid, "paying") + tile(u.trial, "on trial") +
+      tile(u.new_7d, `new in 7 days (week before ${u.new_prev_7d ?? "–"})`) + tile(u.active_7d, "active in 7 days") +
+      tile(money.length ? money.map(([c, v]) => `${c} ${v.gross}`).join(" · ") : "0", "payments, 7 days") +
+      tile(n.support ? n.support.open : null, "support tickets open") +
+      tile(bad.length ? bad.length + " failing" : "all ok", bad.length ? bad.join(", ") : `${(n.jobs || []).length} scheduled jobs`);
+  }
+
+  function renderWaypoint() {
+    if (!wp) {
+      const why = wpError && (wpError.code === "tool_error" || wpError.code === "not_in_manifest")
+        ? "Your Supabase connector can't see Waypoint's project yet. In claude.ai Settings → Connectors → Supabase, reconnect and allow Waypoint's organisation, then Refresh."
+        : connectorCopy(wpError);
+      $("wp-numbers").innerHTML = ""; $("wp-queue").innerHTML = `<div class="notice">${esc(why)}</div>`; return;
+    }
+    $("wp-numbers").innerHTML = tile(wp.wau, "active this week") + tile(wp.mau, "active this month") + tile(wp.new_7d, "new in 7 days") +
+      tile(wp.posts_7d, "posts, 7 days") + tile(wp.comments_7d, "comments, 7 days");
+    const q = wp.queue || [];
+    $("wp-queue").innerHTML = q.length ? q.map((f) => `
+      <div class="flag">
+        <div class="row"><span class="chip ${f.state === "hidden" ? "bad" : "warn"}">${esc(f.kind)} · ${esc(f.state)}</span>
+          <span class="small muted">${esc(f.category)} ${esc(f.severity)}/5 · ${esc(when(f.created_at))}</span></div>
+        ${f.text ? `<q>${esc(f.text)}</q>` : ""}
+        ${f.reason ? `<p class="reason">${esc(f.reason)}</p>` : ""}
+      </div>`).join("") + `<p class="small muted" style="margin:0">Hide and restore buttons are off until you approve changing Waypoint's live data from this page.</p>`
+      : `<p class="small muted" style="margin:0">Nothing waiting. The app's own moderation is keeping up.</p>`;
+  }
+
+  function tick() {
+    if (!lastLoad) return;
+    const s = Math.round((Date.now() - lastLoad) / 1000);
+    $("updated").textContent = `Live · updated ${s < 5 ? "just now" : s + " s ago"}`;
+  }
+
+  function renderSetup() {
+    const d = data || {}, s = d.snapshot || {};
+    const items = [
+      [!!d.live, "Live status from GitHub", "Reload this page."],
+      [s.phase && !["seeded-by-claude", "live from GitHub"].includes(s.phase), "Runs report here as they happen, and obey Pause", "Add GitHub secret SG_COMMAND_KEY (Supabase → Vault → sg_command_ingest) and merge PR #1."],
+      [(d.commands || []).some((c) => ["stop", "retry", "run_produce", "run_publish"].includes(c.action) && c.state === "done"), "Buttons can start and stop GitHub runs", "Add GITHUB_TOKEN in Supabase → Edge Functions → Secrets. Shows as done after the first successful button."],
+      [d.telegram === true, "Telegram buttons", "After the two steps above and SG_COMMAND_KEY in the Mac's .env: GitHub → Actions → telegram-setup → Run (on)."],
+      [!!wp, "Waypoint panel", "Reconnect the Supabase connector with Waypoint's organisation allowed."],
+      [(d.commands || []).some((c) => c.action === "smb_ceo_report" && c.state === "done"), "ScoreMyBiz CEO report button", "Needs the ScoreMyBiz change (waiting for your yes) and Netlify env COMMAND_KEY set to the same value as SG_COMMAND_KEY."],
+      [(s.pieces || []).some((p) => p.linkedin_id), "LinkedIn posting", "Create the LinkedIn app, run python -m engine.linkedin --auth on the Mac, add the two GitHub secrets, merge the linkedin branch."],
+    ];
+    $("setup").innerHTML = items.map(([ok, what, how]) =>
+      `<li><span class="chip ${ok ? "ok" : "warn"}">${ok ? "done" : "to do"}</span><span><b>${esc(what)}</b>${ok ? "" : `<br><span class="muted small">${esc(how)}</span>`}</span></li>`).join("");
+  }
+
+  // ---- commands ----
+  function validate(action, args) {
+    args = args || {};
+    switch (action) {
+      case "pause": case "resume": case "stop": return {};
+      case "retry": if (!PIECE_RE.test(String(args.piece_id))) throw new Error("That piece id is not one I know."); return { piece_id: String(args.piece_id) };
+      case "run_produce": {
+        const max = Number(args.max ?? 3); if (![1, 2, 3].includes(max)) throw new Error("Pieces must be 1 to 3.");
+        const only = String(args.only || "").split(",").map((x) => x.trim()).filter(Boolean);
+        if (only.some((o) => !ONLY_OK.includes(o))) throw new Error("Unknown channel or kind.");
+        return { max, dry_run: args.dry_run === true, ...(only.length ? { only: only.join(",") } : {}) };
+      }
+      case "run_publish": if (!(args.channel in CH)) throw new Error("Unknown channel."); return { channel: args.channel };
+      case "smb_ceo_report": return {};
+      default: throw new Error("That action is not allowed from this page.");
+    }
+  }
+
+  const LABEL = {
+    pause: () => "Pause the pipeline", resume: () => "Resume the pipeline", stop: () => "Cancel every running GitHub job",
+    retry: (a) => `Retry ${a.piece_id}`, smb_ceo_report: () => "Build the ScoreMyBiz CEO report and email it to you", run_publish: (a) => `Post what is due for ${CH[a.channel]}`,
+    run_produce: (a) => `Make ${a.only || "everything due"}, up to ${a.max}${a.dry_run ? ", dry run" : ""}`,
+  };
+
+  function askConfirm(slot, text, onYes) {
+    slot.innerHTML = `<div class="confirm" role="alertdialog" aria-label="Confirm"><p>${esc(text)}?</p>
+      <button class="primary" type="button" data-yes>Yes, do it</button><button type="button" data-no>Cancel</button></div>`;
+    slot.querySelector("[data-yes]").focus();
+    slot.querySelector("[data-no]").onclick = () => { slot.innerHTML = ""; };
+    slot.querySelector("[data-yes]").onclick = () => { slot.innerHTML = ""; onYes(); };
+  }
+
+  async function send(action, args, slot, note) {
+    if (busy) return;
+    let clean;
+    try { clean = validate(action, args); } catch (e) { slot.innerHTML = `<div class="notice bad">${esc(e.message)}</div>`; return; }
+    busy = true;
+    slot.innerHTML = `<div class="notice">Sending: ${esc(LABEL[action](clean))}…</div>`;
+    try {
+      const target = action === "smb_ceo_report" ? "scoremybiz" : "sg-content";
+      const q = `insert into command.commands (target, action, args, requested_via, note) values (${lit(target)}, ${lit(action)}, ${lit(JSON.stringify(clean))}::jsonb, 'page', ${note ? lit(String(note).slice(0, 300)) : "null"}) returning id`;
+      const id = Number((await sql(q))[0].id);
+      let row = null;
+      for (let i = 0; i < 8; i++) {
+        await new Promise((r) => setTimeout(r, 2000));
+        row = (await sql(`select state, result from command.commands where id = ${id}`))[0];
+        if (row && row.state !== "queued" && row.state !== "sent") break;
+      }
+      const ok = row && row.state === "done";
+      slot.innerHTML = `<div class="notice${ok ? "" : " bad"}">${esc(row ? (row.result || row.state) : "Sent. The result will show in the log.")}</div>`;
+    } catch (e) {
+      slot.innerHTML = `<div class="notice bad">${esc(e.code === "server_unavailable" || e.code === "upstream_error"
+        ? "The connection dropped, so I can't tell whether it went through. Check the log before trying again." : connectorCopy(e))}</div>`;
+    } finally { busy = false; load(); }
+  }
+
+  // ---- ask Claude to interpret a typed instruction ----
+  async function interpret() {
+    const text = $("ask").value.trim(), out = $("ask-out");
+    if (!text) { out.innerHTML = `<div class="notice">Type what you want first.</div>`; return; }
+    if (!sample) { out.innerHTML = `<div class="notice bad">Asking Claude isn't available in this view. Use the buttons instead.</div>`; return; }
+    const s = (data && data.snapshot) || {};
+    const state = { paused: data && data.paused === true,
+      pieces: (s.pieces || []).slice(0, 12).map((p) => ({ id: p.id, status: p.status, last_reason: (p.reasons || []).slice(-1)[0] || "" })),
+      last_run: (s.runs || [])[0] || null };
+    const prompt = `You turn a founder's instruction for their automated video pipeline into exactly ONE action. Channels: sglearning = "Learning with SG" (money news), arthvan = "SG-MYTH-WORLD" (mythology). Kinds: short, long.
+Allowed actions and args:
+- pause {} / resume {} : stop or restart all making and posting
+- stop {} : cancel GitHub jobs running right now
+- retry {"piece_id": one id from the state below that is not uploaded/posted}
+- run_produce {"only": "" or comma list from sglearning:short, sglearning:long, arthvan:short, arthvan:long, "max": 1-3, "dry_run": true|false}
+- run_publish {"channel": "sglearning" | "arthvan"} : post Reel + Story + Threads that are due
+- smb_ceo_report {} : build the ScoreMyBiz CEO report and email it to the founder
+- none {} : the instruction is a question or cannot be done with these actions; answer it in "reply" from the state, and say plainly if it needs code changes.
+Current state: ${JSON.stringify(state).slice(0, 6000)}
+Instruction (Hindi, Hinglish or English): ${JSON.stringify(text)}
+Reply with only JSON: {"action": "...", "args": {...}, "summary": "one short sentence of what will happen", "reply": "only for none"}`;
+    $("ask-go").disabled = true; out.innerHTML = `<div class="notice">Thinking…</div>`;
+    try {
+      const r = await sample.json(prompt, { modelTier: "quick", cache: false });
+      if (!r || typeof r !== "object") throw { code: "invalid_json" };
+      if (r.action === "none" || !LABEL[r.action]) { out.innerHTML = `<div class="notice">${esc(r.reply || r.summary || "I couldn't map that to an action.")}</div>`; return; }
+      let clean; try { clean = validate(r.action, r.args); } catch (e) { out.innerHTML = `<div class="notice bad">${esc(e.message)}</div>`; return; }
+      if (r.action === "retry" && !(s.pieces || []).some((p) => p.id === clean.piece_id)) { out.innerHTML = `<div class="notice bad">That piece isn't in the latest report.</div>`; return; }
+      askConfirm(out, (r.summary ? r.summary.replace(/[.?!]\s*$/, "") + ". " : "") + LABEL[r.action](clean), () => send(r.action, clean, out, text));
+    } catch (e) {
+      const c = e && e.code;
+      out.innerHTML = `<div class="notice bad">${esc(c === "not_granted" || c === "sampling_disabled" ? "Asking Claude is turned off for this page. Use the buttons instead."
+        : c === "rate_limited" ? "Too many requests just now. Try again in a minute."
+        : c === "invalid_json" ? "I didn't get a usable answer. Try saying it a different way." : "Claude didn't answer. Try again.")}</div>`;
+    } finally { $("ask-go").disabled = false; }
+  }
+
+  // ---- wiring ----
+  document.addEventListener("click", (ev) => {
+    const t = ev.target.closest("button"); if (!t) return;
+    const slot = $("confirm-slot");
+    if (t.id === "refresh") return load();
+    if (t.id === "btn-pause") { const p = data && data.paused === true; return askConfirm(slot, p ? "Resume the pipeline" : "Pause the pipeline", () => send(p ? "resume" : "pause", {}, slot)); }
+    if (t.id === "btn-stop") return askConfirm(slot, "Cancel every running GitHub job now", () => send("stop", {}, slot));
+    if (t.id === "run-go") {
+      const a = { only: $("run-only").value, max: Number($("run-max").value), dry_run: $("run-dry").checked };
+      const tgt = t.parentElement.querySelector(".slot") || t.insertAdjacentElement("afterend", Object.assign(document.createElement("div"), { className: "slot" }));
+      return askConfirm(tgt, LABEL.run_produce(validate("run_produce", a)), () => send("run_produce", a, tgt));
+    }
+    if (t.id === "ask-go") return interpret();
+    if (t.id === "smb-report") return askConfirm($("smb-slot"), LABEL.smb_ceo_report(), () => send("smb_ceo_report", {}, $("smb-slot")));
+    if (t.dataset.retry) {
+      const tgt = t.closest(".piece"); let s2 = tgt.querySelector(".slot");
+      if (!s2) { s2 = document.createElement("div"); s2.className = "slot"; tgt.append(s2); }
+      return askConfirm(s2, "Retry " + t.dataset.retry, () => send("retry", { piece_id: t.dataset.retry }, s2));
+    }
+    if (t.dataset.publish) {
+      const desk = t.closest(".desk"); let s2 = desk.querySelector(":scope > .slot");
+      if (!s2) { s2 = document.createElement("div"); s2.className = "slot"; desk.append(s2); }
+      return askConfirm(s2, "Post what is due for " + CH[t.dataset.publish], () => send("run_publish", { channel: t.dataset.publish }, s2));
+    }
+  });
+
+  for (const ch of Object.keys(CH)) $("desk-" + ch).innerHTML = `<header><h3>${CH[ch]}</h3></header><p class="small muted">Waiting for the latest report…</p>`;
+  $("meters").innerHTML = `<p class="small muted" style="margin:0">Waiting for the latest report…</p>`;
+  $("log").innerHTML = `<li style="grid-template-columns:1fr"><span class="muted">Waiting for the latest report…</span></li>`;
+  try { const d = localStorage.getItem("sg-ask-draft"); if (d) $("ask").value = d; } catch (_) {}
+  $("ask").addEventListener("input", () => { try { localStorage.setItem("sg-ask-draft", $("ask").value); } catch (_) {} });
+
+  let perms = null;
+  async function connect() {
+    if (!mcp) { showConn("This view can't reach your connectors. Open the link in Chrome or Safari at claude.ai, signed in as the owner (the Claude phone app may not allow it yet).", "mcp=null"); return; }
+    await load();
+  }
+  document.addEventListener("click", async (ev) => {
+    const b = ev.target.closest("button"); if (!b) return;
+    if (b.id === "conn-allow") {
+      b.disabled = true;
+      try { if (perms) await perms.request(["mcp:Supabase", "sample"]); } catch (_) {}
+      b.disabled = false; return connect();
+    }
+    if (b.id === "conn-manage") {
+      try { if (perms) { await perms.manage(); return connect(); } } catch (_) {}
+      $("conn-tech").textContent = "Use the page's menu (top right) → Permissions, switch Supabase on, then tap Allow access and retry.";
+    }
+  });
+
+  (async () => {
+    const api = window.claude;
+    if (!api || !api.use) { showConn("Open this link on claude.ai, signed in, so the page can reach your Supabase connector. Telegram /pause and /resume still work.", "window.claude missing"); return; }
+    [mcp, sample, perms] = await Promise.all([api.use("mcp"), api.use("sample"), api.use("permissions")]);
+    if (perms) {
+      const s = await perms.state("mcp:Supabase").catch(() => "unavailable");
+      if (s === "denied") { showConn("Supabase access was turned off for this page. Tap Open permissions and switch Supabase on.", "mcp:Supabase=denied"); return; }
+    }
+    if (!mcp) { showConn("This view can't reach your connectors. Open the link in Chrome or Safari at claude.ai, signed in as the owner (the Claude phone app may not allow it yet).", "mcp=null"); return; }
+    if (!sample) $("ask-go").disabled = true;
+    await connect();
+    setInterval(() => { if (document.visibilityState === "visible" && !busy) load(); }, 30000);
+    setInterval(tick, 1000);
+    document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && Date.now() - lastLoad > 30000) load(); });
+  })();
+})();
+</script>
