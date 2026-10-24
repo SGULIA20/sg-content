@@ -124,3 +124,13 @@ def test_description_has_three_hashtags_first_and_cta():
 def test_description_links_both_channels():
     d = youtube.metadata(_piece(), datetime(2026, 10, 20, 14, 30, tzinfo=timezone.utc), {})["snippet"]["description"]
     assert "youtube.com/@sanjeev_gulia" in d and "youtube.com/@sgmythworld" in d and d.count("#") <= 15
+
+
+def test_short_descriptions_carry_the_channels_app_with_a_tagged_link():
+    from datetime import datetime, timezone
+    from engine import pieces, youtube
+    for ch, pkg in (("sglearning", "com.scoremybiz.app"), ("arthvan", "com.arthvananalytics.waypoint")):
+        p = pieces.Piece(id=f"2026-10-30-{ch}-short", channel=ch, kind="short", publish_day=__import__("datetime").date(2026, 10, 30))
+        p.script = {"hook": "Hook line", "captions": {"youtube": {"title": "T", "description": "D", "tags": []}}, "scenes": []}
+        desc = youtube.metadata(p, datetime(2026, 10, 30, 14, 30, tzinfo=timezone.utc))["snippet"]["description"]
+        assert desc.split("\n\n")[2].startswith("📱") and pkg in desc and f"utm_campaign%3D2026-10-30-{ch}-short" in desc
