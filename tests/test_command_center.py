@@ -69,7 +69,7 @@ def test_live_only_for_the_project_root(tmp_path):
 def test_telegram_setup_sends_token_on_and_nothing_off(tmp_path, monkeypatch):
     _no_dotenv(tmp_path, monkeypatch)
     seen = []
-    call = lambda m, r, k, b=None: seen.append((r, b)) or {"webhook": b.get("on")}
+    call = lambda m, r, k, b=None, **kw: seen.append((r, b)) or {"webhook": b.get("on")}
     env = {"SG_COMMAND_KEY": "k" * 32, "TELEGRAM_BOT_TOKEN": "123:abc", "TELEGRAM_CHAT_ID": "42"}
     assert command_center.telegram_setup(True, env, call=call) == {"webhook": True}
     assert seen[-1] == ("telegram-setup", {"on": True, "token": "123:abc", "chat_id": "42"})

@@ -84,6 +84,8 @@ line here (who, date) in the same change. Newest first.
 - Exact clock: running in Supabase (`command.clock`, function `sg-command`) since 24 Oct 2026 09:39 UTC; `GITHUB_TOKEN` is set. Do not ask the founder for it again.
 
 ## Control room (phone)
+- One menu for everything (24 Oct 2026): the Telegram buttons (webhook to sg-command) also start the app posts and the LinkedIn
+  post; the clock (command.clock) starts every scheduled job at its Lagos minute.
 - Private claude.ai page plus Telegram as the fallback; buttons for pause, resume, stop, retry, run now, post now, and typed instructions that become one of those actions after a confirm. (founder, 21 Oct 2026)
 - Commands and status live in a walled-off `command` schema inside the ScoreMyBiz Supabase project (free plan, 2-project limit), never in this public repo. (founder, 21 Oct 2026)
 

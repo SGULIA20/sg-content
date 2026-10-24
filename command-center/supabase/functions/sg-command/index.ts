@@ -122,6 +122,12 @@ async function execute(action: string, a: Record<string, unknown>, via: string):
       await dispatch("publish.yml", { channel: String(a.channel) });
       return `Started publish for ${a.channel} (Reel + Story + Threads that are due).`;
     }
+    case "app_post":                                   // ScoreMyBiz / Waypoint posts of the day (never twice: the engine checks)
+      await gh("POST", "/actions/workflows/daily-post.yml/dispatches", { ref: "main", inputs: { mode: "post" } }, CLOCK_REPOS["arthvan-media"]);
+      return "Started today's app posts (ScoreMyBiz / Waypoint). Anything already posted today is skipped.";
+    case "app_linkedin":
+      await gh("POST", "/actions/workflows/linkedin-personal.yml/dispatches", { ref: "main", inputs: { mode: "post" } }, CLOCK_REPOS["arthvan-media"]);
+      return "Started today's LinkedIn post. If it is already out, nothing is posted twice.";
     case "smb_ceo_report": {
       const res = await fetch(SMB_CEO_REPORT, {
         method: "POST",
@@ -299,6 +305,7 @@ async function menu(): Promise<unknown[][]> {
     [btn("🔁 Retry failed", "retrylist"), btn("🛑 Stop running jobs", "stop?")],
     [btn("🎬 Make videos now", "run_produce"), btn("📮 Post due now", "publishlist")],
     [btn("📈 ScoreMyBiz numbers", "smb"), btn("✉️ ScoreMyBiz CEO report", "smb_ceo_report?")],
+    [btn("📱 App posts now", "app_post?"), btn("💼 LinkedIn post now", "app_linkedin?")],
   ];
 }
 
@@ -319,6 +326,8 @@ async function statusText(): Promise<string> {
     const ready = new Set(ps.filter((p: any) => DONE.includes(p.status) && p.publish_day > today).map((p: any) => p.publish_day));
     lines.push(`${CHANNEL_NAME[ch]}: ${ready.size} day(s) ready ahead`);
   }
+  const apps = (await sql`select payload from command.status where source = 'arthvan-media' and key = 'today'`)[0]?.payload as any;
+  if (apps) lines.push(`Apps today: ${(apps.posts ?? []).filter((x: any) => x.status === "published").map((x: any) => x.channel).join(", ") || "nothing posted yet"}`);
   const failed = (s.pieces ?? []).filter((p: any) => p.status.startsWith("failed") || p.status === "qa_failed");
   for (const p of failed.slice(0, 5)) lines.push(`⚠️ ${p.id}: ${p.status}`);
   return lines.join("\n");
@@ -357,6 +366,10 @@ async function onCallback(data: string, chat: string, messageId: number): Promis
   if (data === "smb_ceo_report?") return void await reply("Build the ScoreMyBiz CEO report and email it now?", [[btn("Yes, send it", "smb_ceo_report"), btn("No", "menu")]]);
   if (data === "smb_ceo_report") return void await reply(await queueAndRun("smb_ceo_report", {}, "scoremybiz"));
   if (data === "run_produce") return void await reply(await queueAndRun("run_produce", { max: 3 }));
+  if (data === "app_post?") return void await reply("Post today's ScoreMyBiz / Waypoint app posts now?", [[btn("Yes, post", "app_post"), btn("No", "menu")]]);
+  if (data === "app_post") return void await reply(await queueAndRun("app_post", {}, "arthvan-media"));
+  if (data === "app_linkedin?") return void await reply("Post today's LinkedIn picture post now?", [[btn("Yes, post", "app_linkedin"), btn("No", "menu")]]);
+  if (data === "app_linkedin") return void await reply(await queueAndRun("app_linkedin", {}, "arthvan-media"));
   if (data === "publishlist") return void await reply("Post what is due for which channel?",
     [CHANNELS.map((c) => btn(CHANNEL_NAME[c], `publish:${c}`)), [btn("Back", "menu")]]);
   if (data.startsWith("publish:")) return void await reply(await queueAndRun("run_publish", { channel: data.slice(8) }));
