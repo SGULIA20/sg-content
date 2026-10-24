@@ -13,7 +13,7 @@ import urllib.request
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from . import pieces, secrets, slots, telegram
+from . import pieces, secrets, slots, telegram, trialcheck
 from . import config
 from .config import CHANNELS, ROOT, today_ist
 
@@ -126,7 +126,7 @@ def tomorrow_plan(day: date) -> str:
     return "\n".join([f"📅 Tomorrow {t.strftime('%a %d %b')} (Lagos time)"] + [f"   {hh}  {what}: {where}" for hh, where, what in rows])
 
 
-def build(day: date | None = None, now: datetime | None = None, root: Path = ROOT, log: list | None = None) -> str:
+def build(day: date | None = None, now: datetime | None = None, root: Path = ROOT, log: list | None = None, trials: list | None = None) -> str:
     day = day or today_ist()
     now = now or datetime.now(timezone.utc)
     log = fetch_app_log() if log is None else log
@@ -138,6 +138,8 @@ def build(day: date | None = None, now: datetime | None = None, root: Path = ROO
         lines.append(name)
         lines += [f"   {k}: {v}" for k, v in cells.items()]
     lines += ["", tomorrow_plan(day)]
+    if trials:
+        lines += [""] + trials
     return "\n".join(lines)
 
 
@@ -153,7 +155,11 @@ def card_day(now: datetime | None = None) -> date:
 def main(argv=None) -> int:
     argv = sys.argv[1:] if argv is None else argv
     day = card_day()
-    text = build(day)
+    try:
+        trials = trialcheck.lines()                       # Trial Reels whose 72 hours ended: share by hand if Instagram did not
+    except Exception as e:
+        trials = [f"🧪 Trial Reels: not checked ({secrets.scrub(str(e))[:80]})"]
+    text = build(day, trials=trials)
     print(text)
     if "--send" not in argv:
         return 0

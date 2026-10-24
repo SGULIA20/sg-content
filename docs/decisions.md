@@ -63,6 +63,8 @@ line here (who, date) in the same change. Newest first.
   (ScoreMyBiz for Learning with SG, Waypoint for SG-MYTH-WORLD). Needs the messaging permission on the Instagram token.
 - Instagram Reels go out as Trial Reels: shown to non-followers first, shared with followers by Instagram when they do well
   (graduation SS_PERFORMANCE); a plain Reel when Instagram refuses a trial. (founder, 23 Oct 2026)
+  The 9 pm card lists each Trial Reel once its 72 hours are over (views, likes, comments, shares, saves, link) so the founder can tap
+  "Share to followers" by hand when Instagram did not; Meta's API can neither read nor do that step (founder, 24 Oct 2026, option 2).
 - Long videos run a thumbnail click test: B (same picture, the title's words) two days after going public; the higher click rate
   stays, A when the numbers are missing or too few (engine/thumbtest.py). (founder, 23 Oct 2026)
 - Meta Verified (one month from 23 Oct 2026): Reel links are app-only and few, so engine/reeltip.py sends a daily Telegram tip naming
