@@ -1,0 +1,860 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "scripture",
+   "number": 1598.0,
+   "quote": "These mountains produce all the requisites for making glass and soap. And here are saltpetre works which yield a considerable revenue to the State, from the duties collected.",
+   "source_date": "1598",
+   "source_name": "Ain-i-Akbari by Abu'l-Fazl",
+   "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
+   "text": "The sixteenth-century administrative record Ain-i-Akbari notes that the saline lake at Lonar provided natural chemical salts utilized for manufacturing soap and glass.",
+   "unit": "CE"
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "The Lonar lake is supposed to be the pit within which the giant had resided, with its water representing his blood.",
+   "source_date": "1910",
+   "source_name": "Central Provinces District Gazetteers: Buldhana District",
+   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+   "text": "Local oral folklore asserts that the circular crater lake represents the deep subterranean trench where the demon Lonasura fell, with the salty water representing his putrefied blood.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "A nearby hill is supposed to be the lid which Vishnu had thrown open.",
+   "source_date": "1910",
+   "source_name": "Central Provinces District Gazetteers: Buldhana District",
+   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+   "text": "According to regional folklore, a nearby elevated mound represents the stone lid of the subterranean pit that was cast aside when Vishnu broke into the demon's shelter.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 1897.0,
+   "quote": "Henry Cousens dates the temple to the end of the 13th and beginning of the 14th centuries CE. He is of the opinion that the construction of the temple was never completed due to invasions of the Delhi Sultanate.",
+   "source_date": "1897",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+   "text": "In 1897, archaeologist Henry Cousens of the Archaeological Survey of India documented the Hemadpanthi-style Daitya Sudan Temple at Lonar and dated its construction to the late thirteenth or early fourteenth century CE.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1973.0,
+   "quote": "Coarse breccia containing shatter cones and maskelynite-bearing have been recovered from drill cores beneath the crater floor, providing evidence of shock metamorphism associated with the impact.",
+   "source_date": "1973",
+   "source_name": "Geological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
+   "text": "In 1973, scientists from the Geological Survey of India recovered shock-metamorphosed plagioclase glass known as maskelynite from drill cores beneath the crater, confirming its extraterrestrial impact origin.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1979.0,
+   "quote": "The Lonar Lake was designated as a National Geological Monument by the Geological Survey of India in 1979.",
+   "source_date": "1979",
+   "source_name": "Geological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
+   "text": "The Geological Survey of India designated the Lonar impact structure as a protected National Geological Monument in the year 1979.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 2020.0,
+   "quote": "The dominant population of bacteria, called haloarchaea, was a result of an increase in the water's salinity by 1.5%, and the PH level to nearly 10 from 7.5, a microbial analysis report by the Agharkar Research Institute has concluded.",
+   "source_date": "2020-07-18",
+   "source_name": "Agharkar Research Institute",
+   "source_url": "https://timesofindia.indiatimes.com/city/pune/maharashtra-ari-says-bacteria-tinged-lonar-lakes-surface-pink/articleshow/76997420.cms",
+   "text": "In July 2020, microbial analysis by the Agharkar Research Institute in Pune concluded that the lake turned pink due to a massive growth of haloarchaea microbes producing red-pink carotenoid pigments under high salinity and alkalinity.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 2026.0,
+   "quote": "A sharp rise in the water level of the world-famous Lonar Lake in Maharashtra's Buldhana district has submerged several ancient temples, raising serious concerns over conservation and preservation at the heritage site.",
+   "source_date": "2026-01-15",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
+   "text": "In January 2026, the Archaeological Survey of India observed that an ongoing rise in the water level of Lonar Lake had partially submerged medieval stone temples along the inner crater rim.",
+   "unit": "CE"
+  },
+  {
+   "label": "disputed",
+   "number": 570000.0,
+   "quote": "While earlier analyses dated the structure to 52 ± 6 ka, subsequent argon-argon dating ( 40Ar/ 39Ar) yielded a much older age of 570 ± 47 ka.",
+   "source_date": "2011-07-01",
+   "source_name": "Geology (Geological Society of America)",
+   "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
+   "text": "While thermoluminescence dating originally estimated the crater's impact event to be around 52,000 years old, 40Ar/39Ar radiometric dating published by Fred Jourdan and colleagues in 2011 indicated an age of approximately 570,000 years.",
+   "unit": "years"
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "A standing image of Surya occupies the niche at the back of the temple. This indicates that the temple might have been originally intended to be dedicated to Surya.",
+   "source_date": "1897",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+   "text": "Historians and archaeologists disagree on whether the Daitya Sudan Temple was originally dedicated to Vishnu or to the sun god Surya, because an image of Surya occupies the primary niche on the back of the exterior sanctum.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 1.8,
+   "quote": "The crater measures 1.8 km (1.1 mi) in diameter and is 150 m (490 ft) deep.",
+   "source_date": "2011",
+   "source_name": "Geological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
+   "text": "Geological field surveys show that the meteor crater structure spans an average rim diameter of approximately 1.8 kilometres.",
+   "unit": "km"
+  }
+ ],
+ "id": "2026-11-12-arthvan-long",
+ "ids": {
+  "budget": {
+   "day": "2026-10-24",
+   "drafts": 2,
+   "research": 1
+  },
+  "cost": {
+   "inr": 0.0,
+   "usd": 0.230408,
+   "voice": 0
+  },
+  "write_batch": {
+   "id": "msgbatch_01Ko6H3QCJ6VhoJLzPvQj8sm",
+   "key": "c8837f32d97de245",
+   "tries": 1
+  }
+ },
+ "kind": "long",
+ "publish_day": "2026-11-12",
+ "reasons": [
+  "try 1: numbers without a source: 52000, 52000, 52000",
+  "draft cooking in Claude's batch lane; the next run collects it"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Lonar ki jheel: asur ka gaddha ya aasman se aayi takkar?\nGranth kehta hai yahan Daityasudan ne Lonasura ko haraya.\nGSI ko zameen ke neeche takkar wala kaanch mila.\nAur ab kinare ke purane mandir paani mein doob rahe hain.\nAap Lonar mein pehle kya dekhenge, mandir ya jheel?\nUs bhai ko bhejo jo kehta hai Maharashtra mein dekhne layak kuch purana nahi.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#IndianHistory",
+     "#Mythology",
+     "#Archaeology",
+     "#AncientIndia",
+     "#Rahasya",
+     "#Itihaas",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Lonar ki gol jheel ko log asur ka gaddha kehte hain. GSI ko uske neeche ulka ki takkar wala kaanch mila. Aap Lonar jaayein, toh pehle kya dekhenge, Daitya Sudan mandir ya jheel ka kinara? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Zameen ke neeche ka sabut",
+     "00:00 Lonar Mahatmya ki kahani",
+     "00:00 Akbar ke daftar mein Lonar",
+     "00:00 Daitya Sudan mandir ka rahasya",
+     "00:00 Ulka ka sabut",
+     "00:00 Jheel gulabi kyon hui",
+     "00:00 Umar par vivaad",
+     "00:00 Doobte mandir, ansuljhe sawal",
+     "00:00 Aaj Lonar mein kya dekhein",
+     "00:00 Aapka sawal, agla safar"
+    ],
+    "description": "Lonar ki gol jheel ko log asur ka gaddha kehte hain, par zameen ke neeche ulka ki takkar ka kaanch mila. Is video mein Skanda Purana ki kahani, GSI ke sabut aur jheel ki umar ka vivaad, sab saath mein. Saath hi jaaniye, paani gulabi kyon hua aur kinare ke mandir kyon doob rahe hain. Us dost ko bhejo jo kehta hai Lonar bas ek aam jheel hai.",
+    "tags": [
+     "Lonar",
+     "Lonar Lake",
+     "Lonar crater",
+     "meteor crater India",
+     "Daitya Sudan temple",
+     "Lonasura",
+     "Skanda Purana",
+     "Lonar Mahatmya",
+     "pink lake",
+     "Geological Survey of India",
+     "Buldhana",
+     "Maharashtra history",
+     "Indian archaeology"
+    ],
+    "title": "Lonar Lake: 570,000 saal purana ulka ka gaddha?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "1973",
+    "line": "GSI ko drill core mein maskelynite mila",
+    "source": "Geological Survey of India"
+   },
+   {
+    "big_number": "1.8 km",
+    "line": "Lonar crater ka ghera",
+    "source": "Geological Survey of India"
+   },
+   {
+    "big_number": "52,000 saal",
+    "line": "Thermoluminescence se pehla andaaza",
+    "source": "Geology (Geological Society of America)"
+   },
+   {
+    "big_number": "570,000 saal",
+    "line": "Argon-argon dating ka naya andaaza",
+    "source": "Geology (Geological Society of America)"
+   },
+   {
+    "big_number": "2020",
+    "line": "Jheel gulabi hui, wajah haloarchaea",
+    "source": "Agharkar Research Institute"
+   },
+   {
+    "big_number": "1979",
+    "line": "National Geological Monument ghoshit",
+    "source": "Geological Survey of India"
+   }
+  ],
+  "carousel": true,
+  "end_question": "Aap Lonar jaayein, toh pehle kya dekhenge, Daitya Sudan mandir ya jheel ka kinara?",
+  "hook": "Lonar ki gol jheel ko log asur ka gaddha kehte hain, par zameen ke neeche aasman se aaye jhatke ka kaanch mila.",
+  "scenes": [
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "surprised",
+     "type": "avatar"
+    },
+    "vo": "Maharashtra ki zameen ke neeche, scientists ko ajeeb sa kaanch mila. Aisa kaanch dharti par aam taur par nahi banta. Yeh tab banta hai, jab aasman se koi bhaari cheez takraaye. Jagah thi Lonar, Buldhana district mein. Aur upar hai gol jheel, jise log asur ka gaddha kehte hain."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: geologists in khaki shirts beside a drilling rig on the floor of a round green crater lake, one holding up a long grey rock core glinting with glassy patches, morning haze, sense of discovery",
+     "type": "art"
+    },
+    "vo": "Saal tha 1973. Geological Survey of India, yaani GSI, ki team ne jheel ke farsh mein drill kiya. Drill core yaani zameen ke andar se nikali patthar ki lambi chhad. Us chhad mein maskelynite mila. Yeh woh kaanch hai, jo bhayankar takkar ke dabaav se banta hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: close view of a cut rock sample under a lamp, glassy streaks inside dark basalt, a faint ghost image of a blazing meteor reflected in the polished surface, scientific and eerie mood",
+     "type": "art"
+    },
+    "vo": "Vigyan ise shock metamorphism kehta hai. Matlab, pal bhar ke jhatke mein patthar ka badal jaana. Itna dabaav na jwalamukhi deta hai, na bhookamp. Aisa dabaav sirf ulka ki takkar se aata hai. Ulka yaani antariksh se girta hua patthar ka tukda, jo aag ki tarah chamakta hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Toh sawal seedha hai. Agar yeh gaddha ulka ne banaya, toh asur wali kahani kahan se aayi? Aur kahani itni purani hai, toh logon ne is jagah mein kya dekha tha? Is video mein har daave ko sabut ke saath tolenge. Pehle kahani sunte hain, phir vigyan."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel in old manuscript style: a dark underground cavern beneath fields, a huge shadowy demon figure curled inside, frightened villagers with oil lamps on the surface above, night, ominous mood",
+     "type": "art"
+    },
+    "vo": "Skanda Purana ke Lonar Mahatmya mein is jagah ki kahani milti hai. Mahatmya yaani kisi teerth ki mahima batane wala granth. Kahani ke mutabik, yahan Lonasura naam ka daitya rehta tha. Woh zameen ke neeche, gufa jaisi jagah mein chhupa rehta tha. Aas paas ke gaon uske atyachar se pareshan the."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a divine figure seen from behind at a distance, standing on cracked earth with a glowing discus raised, light bursting from a broken opening in the ground, dust and smoke, heroic mood",
+     "type": "art"
+    },
+    "vo": "Tab Vishnu ne Daityasudan ka roop liya. Daityasudan yaani daityon ka naash karne wala. Granth kehta hai, unhone daitya ki chhupi jagah dhoondh nikali. Zameen ke neeche bhayankar yuddh hua. Aur ant mein Lonasura maara gaya. Isi jeet ki yaad mein yahan mandir bana, aisa log maante hain."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a colonial-era office desk with an open thick district record book, an ink pen, and through the window a distant round lake under a reddish sky, dusty lamp light",
+     "type": "art"
+    },
+    "vo": "Aage ki baat lok kathaon mein hai, granth mein nahi. Buldhana District Gazetteer mein yeh lok katha darj hai. Gazetteer yaani angrez sarkar ki zile wali sarkari kitaab. Usmein likha hai, jheel wahi gaddha hai, jahan daitya rehta tha. Aur jheel ka paani, uska khoon maana jaata hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an elderly village grandmother in a nine-yard saree sitting on a stone step at the rim of a round green lake, children gathered close listening wide-eyed, sunset glow",
+     "type": "art"
+    },
+    "vo": "Isi liye log kehte hain, Lonar ka paani khaara hai. Khaara, jaise khoon mein namak hota hai. Gaon ki daadi aaj bhi bachchon ko yahi kahani sunati hain. Kahani mein dar bhi hai, aur jeet ka garv bhi. Jheel ke kinare khade ho, toh yeh kahani bahut paas lagti hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a low rounded hill covered in dry grass beside a vast circular crater, a pilgrim pointing towards it from a dusty path, clouds casting shadows, mythic mood",
+     "type": "art"
+    },
+    "vo": "Lok katha mein aur bhi nishaan hai. Jheel ke paas ooncha teela hai. Log kehte hain, yeh us gaddhe ka patthar ka dhakkan hai. Vishnu ne daitya ki gufa todi, toh dhakkan utha kar phenk diya. Woh dhakkan aaj bhi wahin pada hai, aisa maana jaata hai."
+   },
+   {
+    "facts_used": [
+     1,
+     2
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab dhyaan dijiye. Kahani mein gol gaddha hai, khaara paani hai, aur paas ka teela hai. Yeh sab cheezein asli hain, aap jaakar dekh sakte hain. Sawal yeh hai, vigyan inhe kaise samjhaata hai? Lekin usse pehle, chaliye Akbar ke zamane ke daftar mein."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a Mughal-era court scribe seated cross-legged writing in a large illuminated ledger, scrolls and inkpots around him, warm candlelight, soft miniature-painting style",
+     "type": "art"
+    },
+    "vo": "Lonar ka zikr sirf kathaon mein nahi, sarkari hisaab mein bhi hai. Ain-i-Akbari, Abu'l-Fazl ki likhi Akbar ke raaj ki badi report hai. Yeh lagbhag 1598 ke aas paas ki hai. Ise samjhiye us zamane ka gazetteer aur budget, saath saath."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: workers at the edge of a shallow salty lake scraping white salt crusts into baskets, small brick kilns and furnaces nearby, heat shimmer, busy medieval workshop",
+     "type": "art"
+    },
+    "vo": "Report kehti hai, yahan kaanch aur sabun banane ka saara saamaan milta hai. Jheel ke khaare paani se prakritik namak nikalta tha. Inhi namak se sabun aur kaanch banta tha. Yahan shora ke kaarkhaane bhi the. Shora yaani saltpetre, ek tarah ka safed khaara namak."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel split in mood: on the left a storyteller by a fire describing a demon, on the right a clerk counting coins beside sacks of salt, the same round lake visible behind both",
+     "type": "art"
+    },
+    "vo": "Aur mazedaar baat, in kaarkhaanon se raaj ko achha khaasa tax milta tha. Matlab, jo paani kahani mein daitya ka khoon tha, woh hisaab mein kamaai ka zariya tha. Jheel wahi, nazariye alag. Kathaakaar ne dar dekha, munshi ne revenue dekha."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a 19th-century surveyor in a pith helmet sketching a carved stone temple in a village square, local helpers holding measuring tapes, bright afternoon light",
+     "type": "art"
+    },
+    "vo": "Ab chalte hain Lonar gaon ke beech, Daitya Sudan mandir. Saal 1897 mein Archaeological Survey of India ke Henry Cousens yahan aaye. ASI yaani desh ki purani imaraton ki dekhbhaal karne wali sanstha. Unhone mandir ko naapa, dekha aur apni report mein darj kiya."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: close view of dark interlocking stone blocks of a medieval temple wall, fine carvings of dancers and floral bands, no mortar visible, warm stone texture",
+     "type": "art"
+    },
+    "vo": "Cousens ke hisaab se mandir Hemadpanthi shaili mein bana hai. Hemadpanthi yaani bina chuune ke, patthar par patthar jod kar banane ka tareeka. Yeh shaili madhya kaal mein Deccan mein khoob chali. Unhone mandir ko madhya kaal ka bataya, aur nakkashi ko bahut bareek kaha."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an unfinished temple roof with rough uncarved stone blocks beside finely carved ones, abandoned chisels on a ledge, quiet dusk mood",
+     "type": "art"
+    },
+    "vo": "Cousens ka aur bhi andaaza tha. Unke mutabik mandir kabhi poora bana hi nahi. Us daur ke yuddhon ki wajah se kaam beech mein ruk gaya. Aaj bhi deewaron par sundar nakkashi dikhti hai. Lekin kuch hisse aise lagte hain, jaise kaarigar adhoore chhod gaye."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: the back wall of a stone temple with a weathered standing sculpture of the sun deity in a central niche, seen from a distance, a curious visitor looking up at it",
+     "type": "art"
+    },
+    "vo": "Yahin pehla vivaad shuru hota hai. Garbhagriha ki pichhli bahari deewar par Surya ki khadi murti hai. Garbhagriha yaani mandir ka sabse andar wala kamra. Pichhli mukhya jagah par aksar wahi devta hote hain, jinke liye mandir socha gaya ho."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: two historians standing before the temple, one pointing to the sun sculpture at the back, the other gesturing to the temple entrance, open notebooks, respectful debate",
+     "type": "art"
+    },
+    "vo": "ASI ki report kehti hai, shayad mandir pehle Surya ke liye socha gaya tha. Doosri taraf, mandir ka naam aur poori parampara Vishnu ke Daityasudan roop se judi hai. Itihaaskaar aur puratatvavid is par sehmat nahi hain. Sach yeh hai, pakka koi nahi jaanta."
+   },
+   {
+    "facts_used": [
+     10
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab kahani se vigyan ki taraf chalte hain. Lonar ko upar se dekhiye, aur gaur kijiye. Yeh lagbhag poora gol hai, jaise kisi ne mitti mein katori dabaa di ho. Nadiyaan aisa gol gaddha nahi banatin. Toh phir yeh kaise bana?"
+   },
+   {
+    "facts_used": [
+     10
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": {
+      "big_number": "1.8 km",
+      "line": "Lonar crater ka ghera, rim se rim tak",
+      "source": "Geological Survey of India"
+     },
+     "prompt": "Aerial drawn view of a near-perfect circular crater with green lake and forested slopes",
+     "type": "card"
+    },
+    "vo": "GSI ke field survey ke mutabik, gaddhe ka ghera lagbhag 1.8 kilometre chauda hai. Crater yaani takkar se bana katori jaisa gaddha. Iske kinare har taraf se uthe hue hain. Andar neeche hari jheel hai, aur dhalaan par ghana jungle."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: layered dark basalt cliffs exposed on the crater wall, a geologist with a hand lens tapping the rock, sunlight raking across the layers",
+     "type": "art"
+    },
+    "vo": "Aur khaas baat yeh hai, Lonar Deccan basalt mein bana hai. Basalt yaani jwalamukhi ke laava se jama hua kaala patthar. Is sakht patthar mein takkar ke nishaan saaf bach jaate hain. Isliye vigyaniko ke liye Lonar khuli kitaab jaisa hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a laboratory table with a broken rock showing cone-shaped striated fracture patterns, a magnifying glass, and a drill core tray, cool fluorescent light",
+     "type": "art"
+    },
+    "vo": "Phir aata hai 1973 ka woh sabut, jisse humne shuruaat ki thi. GSI ke drill cores mein maskelynite ke saath shatter cones bhi mile. Shatter cones yaani patthar mein bane kone jaise dhaariyon wale nishaan. Yeh sirf bahut tez takkar ki lehar se bante hain."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a glowing meteor streaking down over an ancient black lava plain, a blinding flash where it strikes, shockwave rings spreading across the ground, prehistoric landscape with no people",
+     "type": "art"
+    },
+    "vo": "Isse saaf hua ki Lonar ka gaddha bahar se aayi cheez ne banaya. Bahar se yaani dharti ke bahar, antariksh se. Lok katha mein yahan yuddh hua tha, vigyan mein takkar hui thi. Kahani aur vigyan, dono maante hain ki zameen ne bhayankar jhatka jhela."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: villagers and visitors standing on the crater rim staring down at a lake turned bright pink, some shielding eyes, others holding up phones, astonished mood",
+     "type": "art"
+    },
+    "vo": "Ab woh ghatna, jisne poore desh ko chaunka diya. Saal 2020 mein Lonar ka hara paani achanak gulabi dikhne laga. Tasveerein phone par phail gayin, log dekhne chale aaye. Kuch logon ne phir se daitya ke khoon ki baat chhed di."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a scientist in a lab coat holding a glass flask of pink water up to the light, a microscope beside her showing tiny round red cells, clean bright lab",
+     "type": "art"
+    },
+    "vo": "Pune ke Agharkar Research Institute ne paani ke namoone jaanche. July mein unki report aayi. Jawab tha haloarchaea. Haloarchaea yaani bahut namkeen paani mein jeene wale nanhe jeev. Yeh itne chhote hote hain, ki aankh se nahi dikhte."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a magnified dreamlike view of countless tiny pink microbes swirling in salty water, salt crystals floating, glowing rose colours",
+     "type": "art"
+    },
+    "vo": "Yeh jeev carotenoid naam ka rang banate hain. Carotenoid yaani laal aur gulabi rang, jaisa gaajar mein hota hai. Paani mein namak badha, aur khaarapan bhi badha. Khaarapan yaani alkalinity, paani ka sabun jaisa swabhaav. Aise mein in jeevon ki sankhya bahut badh gayi."
+   },
+   {
+    "facts_used": [
+     6,
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a grandmother and a young scientist sitting together on the crater rim looking down at the pink lake, the grandmother gesturing as if telling the old tale, gentle evening light",
+     "type": "art"
+    },
+    "vo": "Dekhiye, kahani kehti thi paani khoon hai. Vigyan ne bataya, gulabi rang nanhe jeevon ka tha. Kahani aur sabut, dono ne logon ko jheel ki taraf kheencha. Lekin is ghatna ne dikhaya, ki yeh jheel kitni naazuk hai."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "thinking",
+     "type": "avatar"
+    },
+    "vo": "Ab sabse bada sawal. Yeh takkar hui kab? Yahan vigyaniko mein bhi raay alag hai. Alag tareeke, alag jawab dete hain. Chaliye dono taraf ki baat seedhe shabdon mein samajhte hain."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": {
+      "big_number": "52,000 saal",
+      "line": "Thermoluminescence se pehla andaaza",
+      "source": "Geology (Geological Society of America)"
+     },
+     "prompt": "Drawn panel of a glowing heated rock sample in a dark lab",
+     "type": "card"
+    },
+    "vo": "Pehle thermoluminescence dating hui. Thermoluminescence yaani patthar ko garam karke nikalti roshni se umar ka hisaab. Is tareeke ne bataya, takkar lagbhag 52,000 saal pehle hui. Lambe samay tak yahi aankda kitaabon aur logon ki zubaan par raha."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": {
+      "big_number": "570,000 saal",
+      "line": "Argon-argon dating ka naya andaaza",
+      "source": "Geology (Geological Society of America)"
+     },
+     "prompt": "Drawn panel of a mass spectrometer and rock grains in a modern lab",
+     "type": "card"
+    },
+    "vo": "Phir Fred Jourdan aur saathiyon ne argon-argon dating ki. Argon-argon yaani patthar mein bachi argon gas se umar ki ghadi padhna. Unka nateeja Geology journal mein chhapa. Umar nikli lagbhag 570,000 saal, pehle se kai guna zyada purani."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: two groups of scientists at opposite ends of a long table covered in rock samples and charts, a large sand timer in the middle, thoughtful tense mood",
+     "type": "art"
+    },
+    "vo": "Toh sahi kaun hai? Jourdan ki team argon wale naye nateeje ko aage rakhti hai. Pehle ke thermoluminescence nateeje ko kai log aaj bhi yaad karte hain. Aakhri faisla abhi baaki hai. Itna saaf hai, gaddha insaan ke likhe itihaas se kahin purana hai."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: medieval stone shrines on the inner crater edge with water lapping halfway up their pillars, green lake stretching behind, overcast sky, worried mood",
+     "type": "art"
+    },
+    "vo": "Ab aaj ki chinta. January 2026 mein ASI ne gambhir baat note ki. Jheel ka paani lagataar badh raha hai. Crater ke andar ke kinare par bane madhya kaal ke patthar ke mandir, paani mein doobne lage hain."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a lone pilgrim standing at the top of submerged stone steps, holding a flower offering, looking at a temple doorway now half under water, quiet sorrow",
+     "type": "art"
+    },
+    "vo": "Yeh mandir sadiyon se jheel ke kinare khade the. Shraddhalu seedhiyan utar kar inke darshan karte the. Ab kai mandiron ke khambhe hare paani mein khade hain. Sanrakshan yaani purani dharohar ko bachaane ka kaam. Unke liye yeh badi chunauti ban gayi hai."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn cutaway panel: the crater shown in cross-section with hidden underground water channels flowing beneath the basalt into the lake, question-like swirls of mist above, mysterious mood",
+     "type": "art"
+    },
+    "vo": "Paani badh kyon raha hai? Iska pakka jawab abhi kisi ke paas nahi. Sawal zameen ke neeche paani ke raaston ka hai, jise hydrogeology kehte hain. Hydrogeology yaani zameen ke andar paani kaise behta hai, uska vigyan. Jaankaron mein is par abhi sehmati nahi hai."
+   },
+   {
+    "facts_used": [
+     8,
+     9
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a night sky full of stars above the dark crater lake, the silhouette of the temple on the rim, a faint trail of light across the sky, contemplative mood",
+     "type": "art"
+    },
+    "vo": "Aur bhi sawal baaki hain. Ulka kitni badi thi, aur kis disha se aayi? Jheel ka paani itna khaara kyon bana rehta hai? Mandir pehle kis devta ke liye socha gaya tha? Har sawal ke peeche nayi khoj chhupi hai."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a family of visitors at a viewpoint on the crater rim looking over the circular lake, a simple stone marker beside the path without readable text, bright clear morning",
+     "type": "art"
+    },
+    "vo": "Agar aap Lonar jaana chahte hain, toh yeh jaaniye. Saal 1979 mein GSI ne ise National Geological Monument ghoshit kiya. Matlab, desh ki suraksha wali bhoogarbh dharohar. Yahan ki chattaan aur mitti ko nuksaan pahunchana mana hai."
+   },
+   {
+    "facts_used": [
+     3,
+     9
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a narrow forest trail descending the crater slope towards the lake, small stone shrines along the way, sunlight filtering through trees, a hiker with a backpack seen from behind",
+     "type": "art"
+    },
+    "vo": "Kinare se neeche jheel tak paidal raasta jaata hai. Raste mein ghana jungle aur purane patthar ke mandir milte hain. Gaon mein Daitya Sudan mandir ki nakkashi zaroor dekhiye. Aur pichhli deewar par Surya ki murti dhoondhna mat bhooliye."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: the low hill beside the crater at golden hour, a visitor sitting on a rock gazing from the hill towards the round lake, peaceful wonder",
+     "type": "art"
+    },
+    "vo": "Paas wala teela bhi dekhiye, jise lok katha daitya ki gufa ka dhakkan kehti hai. Kahani aur vigyan, yahan saath saath khade hain. Jheel mein kachra mat phenkiye, paani ko chhed-chhaad mat kijiye. Yeh jagah jitni purani hai, utni hi naazuk."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a diver seen from behind swimming towards shadowy carved stone blocks on a murky seabed, shafts of light from above, mysterious teaser mood",
+     "type": "art"
+    },
+    "vo": "Agli baar chalenge samundar ke neeche, Dwarka ki khoj mein. Woh nagri, jiska zikr Mahabharat mein milta hai. Wahan gotakhoron ne kya dekha, aur vigyan kya kehta hai? Kahani bhi sunenge, aur sabut bhi tolenge."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "end_smile",
+     "type": "avatar"
+    },
+    "vo": "Ab aapki baari. Aap Lonar jaayein, toh pehle kya dekhenge, Daitya Sudan mandir ya jheel ka kinara? Comment mein likhiye."
+   }
+  ],
+  "thumbnail": {
+   "scene": "An old PILGRIM woman stares wide-eyed at a carved stone temple pillar half under rising green lake water, hand pressed to her mouth",
+   "words": [
+    "2026",
+    "SINKING"
+   ]
+  },
+  "title": "Lonar jheel, *ulka* ya asur ka khoon? 🤯"
+ },
+ "status": "writing",
+ "timings": [],
+ "topic": {
+  "allowed_sources": [
+   "gsi.gov.in",
+   "en.wikipedia.org",
+   "Skanda Purana (Lonar Mahatmya)"
+  ],
+  "hooks": [
+   "Ek ulka ne 50,000 saal pehle yeh jheel banayi?",
+   "Lonar ka paani gulabi kyon hua?",
+   "Jheel ke kinare Daitya Sudan mandir ki kahani"
+  ],
+  "id": "lonar-crater",
+  "notes": "Science is solid here; the demon story is scripture/legend.",
+  "place": "Lonar, Maharashtra",
+  "revise": "numbers without a source: 52000, 52000, 52000",
+  "sheet": {
+   "facts": [
+    {
+     "label": "scripture",
+     "number": 1598.0,
+     "quote": "These mountains produce all the requisites for making glass and soap. And here are saltpetre works which yield a considerable revenue to the State, from the duties collected.",
+     "source_date": "1598",
+     "source_name": "Ain-i-Akbari by Abu'l-Fazl",
+     "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
+     "text": "The sixteenth-century administrative record Ain-i-Akbari notes that the saline lake at Lonar provided natural chemical salts utilized for manufacturing soap and glass.",
+     "unit": "CE"
+    },
+    {
+     "label": "legend",
+     "number": null,
+     "quote": "The Lonar lake is supposed to be the pit within which the giant had resided, with its water representing his blood.",
+     "source_date": "1910",
+     "source_name": "Central Provinces District Gazetteers: Buldhana District",
+     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+     "text": "Local oral folklore asserts that the circular crater lake represents the deep subterranean trench where the demon Lonasura fell, with the salty water representing his putrefied blood.",
+     "unit": null
+    },
+    {
+     "label": "legend",
+     "number": null,
+     "quote": "A nearby hill is supposed to be the lid which Vishnu had thrown open.",
+     "source_date": "1910",
+     "source_name": "Central Provinces District Gazetteers: Buldhana District",
+     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+     "text": "According to regional folklore, a nearby elevated mound represents the stone lid of the subterranean pit that was cast aside when Vishnu broke into the demon's shelter.",
+     "unit": null
+    },
+    {
+     "label": "archaeology",
+     "number": 1897.0,
+     "quote": "Henry Cousens dates the temple to the end of the 13th and beginning of the 14th centuries CE. He is of the opinion that the construction of the temple was never completed due to invasions of the Delhi Sultanate.",
+     "source_date": "1897",
+     "source_name": "Archaeological Survey of India",
+     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+     "text": "In 1897, archaeologist Henry Cousens of the Archaeological Survey of India documented the Hemadpanthi-style Daitya Sudan Temple at Lonar and dated its construction to the late thirteenth or early fourteenth century CE.",
+     "unit": "CE"
+    },
+    {
+     "label": "archaeology",
+     "number": 1973.0,
+     "quote": "Coarse breccia containing shatter cones and maskelynite-bearing have been recovered from drill cores beneath the crater floor, providing evidence of shock metamorphism associated with the impact.",
+     "source_date": "1973",
+     "source_name": "Geological Survey of India",
+     "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
+     "text": "In 1973, scientists from the Geological Survey of India recovered shock-metamorphosed plagioclase glass known as maskelynite from drill cores beneath the crater, confirming its extraterrestrial impact origin.",
+     "unit": "CE"
+    },
+    {
+     "label": "archaeology",
+     "number": 1979.0,
+     "quote": "The Lonar Lake was designated as a National Geological Monument by the Geological Survey of India in 1979.",
+     "source_date": "1979",
+     "source_name": "Geological Survey of India",
+     "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
+     "text": "The Geological Survey of India designated the Lonar impact structure as a protected National Geological Monument in the year 1979.",
+     "unit": "CE"
+    },
+    {
+     "label": "archaeology",
+     "number": 2020.0,
+     "quote": "The dominant population of bacteria, called haloarchaea, was a result of an increase in the water's salinity by 1.5%, and the PH level to nearly 10 from 7.5, a microbial analysis report by the Agharkar Research Institute has concluded.",
+     "source_date": "2020-07-18",
+     "source_name": "Agharkar Research Institute",
+     "source_url": "https://timesofindia.indiatimes.com/city/pune/maharashtra-ari-says-bacteria-tinged-lonar-lakes-surface-pink/articleshow/76997420.cms",
+     "text": "In July 2020, microbial analysis by the Agharkar Research Institute in Pune concluded that the lake turned pink due to a massive growth of haloarchaea microbes producing red-pink carotenoid pigments under high salinity and alkalinity.",
+     "unit": "CE"
+    },
+    {
+     "label": "archaeology",
+     "number": 2026.0,
+     "quote": "A sharp rise in the water level of the world-famous Lonar Lake in Maharashtra's Buldhana district has submerged several ancient temples, raising serious concerns over conservation and preservation at the heritage site.",
+     "source_date": "2026-01-15",
+     "source_name": "Archaeological Survey of India",
+     "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
+     "text": "In January 2026, the Archaeological Survey of India observed that an ongoing rise in the water level of Lonar Lake had partially submerged medieval stone temples along the inner crater rim.",
+     "unit": "CE"
+    },
+    {
+     "label": "disputed",
+     "number": 570000.0,
+     "quote": "While earlier analyses dated the structure to 52 ± 6 ka, subsequent argon-argon dating ( 40Ar/ 39Ar) yielded a much older age of 570 ± 47 ka.",
+     "source_date": "2011-07-01",
+     "source_name": "Geology (Geological Society of America)",
+     "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
+     "text": "While thermoluminescence dating originally estimated the crater's impact event to be around 52,000 years old, 40Ar/39Ar radiometric dating published by Fred Jourdan and colleagues in 2011 indicated an age of approximately 570,000 years.",
+     "unit": "years"
+    },
+    {
+     "label": "disputed",
+     "number": null,
+     "quote": "A standing image of Surya occupies the niche at the back of the temple. This indicates that the temple might have been originally intended to be dedicated to Surya.",
+     "source_date": "1897",
+     "source_name": "Archaeological Survey of India",
+     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
+     "text": "Historians and archaeologists disagree on whether the Daitya Sudan Temple was originally dedicated to Vishnu or to the sun god Surya, because an image of Surya occupies the primary niche on the back of the exterior sanctum.",
+     "unit": null
+    },
+    {
+     "label": "archaeology",
+     "number": 1.8,
+     "quote": "The crater measures 1.8 km (1.1 mi) in diameter and is 150 m (490 ft) deep.",
+     "source_date": "2011",
+     "source_name": "Geological Survey of India",
+     "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
+     "text": "Geological field surveys show that the meteor crater structure spans an average rim diameter of approximately 1.8 kilometres.",
+     "unit": "km"
+    }
+   ],
+   "summary": "According to the Lonar Mahatmya and local legends, the crater lake was created when Lord Vishnu assumed the form of Daityasudan to destroy the underground demon Lonasura, leaving behind a salty basin tainted with the demon's blood. Modern geological surveys by the Geological Survey of India established that the lake occupies a hypervelocity meteoritic impact crater blasted into Deccan basalt, while biological studies proved the lake turned pink in 2020 due to explosive blooms of carotenoid-rich Haloarchaea. Geologists continue to dispute the exact chronology of the impact event, with early thermoluminescence pointing to 52,000 years ago while argon-argon dating places it much earlier at roughly 570,000 years ago. Long-term questions also remain unresolved regarding the subterranean hydrogeological forces currently causing the lake's water level to rise and submerge medieval rim temples."
+  },
+  "target_minutes": 14,
+  "title_hi": "Lonar, ulka se bani jheel"
+ },
+ "updated": "2026-10-24T17:44:57+00:00",
+ "writer": "claude"
+}
