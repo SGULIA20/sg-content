@@ -1,8 +1,115 @@
 {
  "channel": "arthvan",
- "facts": [],
+ "facts": [
+  {
+   "label": "archaeology",
+   "number": 7.0,
+   "quote": "The iron material used for beam and pillar... the largest iron beams reach lengths over 35 feet and weights exceeding several tonnes.",
+   "source_date": "1968",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "Metallurgical and archaeological excavations revealed that 13th-century builders reinforced the temple ceilings and entryways with massive wrought-iron beams weighing over seven tonnes.",
+   "unit": "tonnes"
+  },
+  {
+   "label": "archaeology",
+   "number": 1903.0,
+   "quote": "In 1903, when a major excavation was attempted nearby, the then-Lieutenant governor of Bengal, J. A. Bourdillon, ordered the temple to be sealed and filled with sand to prevent the collapse of the Jagamohana.",
+   "source_date": "1968",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "In 1903, the British administration ordered the Jagamohana assembly hall to be filled with sand and masonry to prevent its imminent collapse.",
+   "unit": "CE"
+  },
+  {
+   "label": "legend",
+   "number": 52.0,
+   "quote": "There is a lodestone at the top of the temple was said to be a massive 52 ton magnet... the statue of the Sun God was said to be floating in air.",
+   "source_date": "1908",
+   "source_name": "Puri District Gazetteer",
+   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+   "text": "An enduring local legend claims that a colossal 52-tonne lodestone magnet sat atop the main temple tower, suspending the central iron-bearing idol in mid-air.",
+   "unit": "tonnes"
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "Other legends state that the magnetic effect of the lodestone was so strong that it caused disturbance in the ships compasses... Portuguese sailors destroyed the temple and took away the lodestone.",
+   "source_date": "2019",
+   "source_name": "Odisha Tourism",
+   "source_url": "https://odishatourism.gov.in",
+   "text": "According to maritime folklore, Portuguese navigators dismantled the pinnacle magnet because its intense magnetic field allegedly disturbed ship compasses and caused vessels to run aground.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "Vessels passing through the Konark sea were drawn to it, resulting in heavy damage... But there is no record of the existence of such a powerful load stone, whereas the shallow coast and shifting sands formed natural nautical hazards.",
+   "source_date": "2005",
+   "source_name": "Puri District Gazetteer",
+   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+   "text": "While folklore attributes historical shipwrecks to magnetic attraction from the temple, maritime historians attribute these wrecks to treacherous coastal sandbars and monsoon shoals off the Konark shore.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 8.0,
+   "quote": "The sundial has 8 major spokes that divide 24 hours into 8 equal parts (time gap between two major spokes is 3 hours or one prahara), with minor spokes dividing into 90 minutes.",
+   "source_date": "2021",
+   "source_name": "Odisha Tourism",
+   "source_url": "https://odishatourism.gov.in",
+   "text": "Each sundial wheel at Konark is engineered with eight major spokes that partition the daylight into three-hour spans known as praharas.",
+   "unit": "count"
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "While modern interpreters view the wheels as working sundials calibrated to solar movement, classical scholars emphasize their primary function as symbolic wheels of time representing the twelve months of the solar calendar.",
+   "source_date": "1968",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "While local tourist guides demonstrate that shadows cast upon the wheel spokes calculate local solar time down to minutes, art historians argue the wheels served primarily as cosmological and calendar symbolism.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "The theory of the lodestone's removal causing the collapse is uncorroborated; the fall was gradual, accelerated by sandy soil foundation weaknesses, weathering of stone, and loss of the finial.",
+   "source_date": "1968",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "Historians dispute the exact cause of the main sanctum tower's collapse, debating whether it failed due to soft sandy subsoil subsidence, engineering flaws, or deliberate military desecration.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": 12.0,
+   "quote": "Samba engaged himself in tapas for twelve years, meditating on Surya at Mitravana on the Chandrabhaga.",
+   "source_date": "1958",
+   "source_name": "Samba Purana",
+   "source_url": "https://en.wikipedia.org/wiki/Samba_Purana",
+   "text": "The Samba Purana states that Krishna's son Samba endured twelve years of penance at Mitravana on the Chandrabhaga river to obtain Surya's blessing and cure his leprosy.",
+   "unit": "years"
+  },
+  {
+   "label": "scripture",
+   "number": 1568.0,
+   "quote": "It is described in the Madala Panji of Puri Jagannath temple that Kalapahad attacked Orissa in 1568... he somehow managed to displace the Dadhinauti and broke most of the images.",
+   "source_date": "1980",
+   "source_name": "Madala Panji",
+   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+   "text": "The Madala Panji temple chronicle records that the general Kalapahad invaded Odisha in 1568 CE and displaced the crowning arch stone of the Konark temple complex.",
+   "unit": "CE"
+  }
+ ],
  "id": "2026-11-08-arthvan-long",
- "ids": {},
+ "ids": {
+  "write_batch": {
+   "id": "msgbatch_0138Am2c2hNRhhNFiVX4WpiH",
+   "key": "0ea76be436bc14f6",
+   "tries": 1
+  }
+ },
  "kind": "long",
  "publish_day": "2026-11-08",
  "reasons": [
@@ -14,27 +121,135 @@
   "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
-  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "draft cooking in Claude's batch lane; the next run collects it"
  ],
  "script": null,
- "status": "failed-research",
+ "status": "writing",
  "timings": [],
  "topic": {
   "allowed_sources": [
+   "asi.nic.in",
    "en.wikipedia.org",
-   "tourism.rajasthan.gov.in"
+   "odishatourism.gov.in",
+   "UNESCO whc.unesco.org"
   ],
   "hooks": [
-   "25,000 chuhe aur ek bhi bimari nahi?",
-   "Safed chuha dikha to kya hota hai?",
-   "Chuhe mandir ke bahar kyon nahi jaate?"
+   "Konark mandir ke upar 52 ton ka chumbak tha?",
+   "Jahaaz Konark ke paas kyon bhatakte the?",
+   "Surya mandir ka pahiya ghadi hai?"
   ],
-  "id": "karni-mata-rats",
-  "notes": "Give the hygiene question an honest answer (no verified study either way) and label it.",
-  "place": "Deshnoke, Rajasthan",
+  "id": "konark-magnet",
+  "notes": "Magnet story is disputed/legend; the sundial wheel is documented.",
+  "place": "Konark, Odisha",
+  "sheet": {
+   "facts": [
+    {
+     "label": "archaeology",
+     "number": 7.0,
+     "quote": "The iron material used for beam and pillar... the largest iron beams reach lengths over 35 feet and weights exceeding several tonnes.",
+     "source_date": "1968",
+     "source_name": "Archaeological Survey of India",
+     "source_url": "https://asi.nic.in",
+     "text": "Metallurgical and archaeological excavations revealed that 13th-century builders reinforced the temple ceilings and entryways with massive wrought-iron beams weighing over seven tonnes.",
+     "unit": "tonnes"
+    },
+    {
+     "label": "archaeology",
+     "number": 1903.0,
+     "quote": "In 1903, when a major excavation was attempted nearby, the then-Lieutenant governor of Bengal, J. A. Bourdillon, ordered the temple to be sealed and filled with sand to prevent the collapse of the Jagamohana.",
+     "source_date": "1968",
+     "source_name": "Archaeological Survey of India",
+     "source_url": "https://asi.nic.in",
+     "text": "In 1903, the British administration ordered the Jagamohana assembly hall to be filled with sand and masonry to prevent its imminent collapse.",
+     "unit": "CE"
+    },
+    {
+     "label": "legend",
+     "number": 52.0,
+     "quote": "There is a lodestone at the top of the temple was said to be a massive 52 ton magnet... the statue of the Sun God was said to be floating in air.",
+     "source_date": "1908",
+     "source_name": "Puri District Gazetteer",
+     "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+     "text": "An enduring local legend claims that a colossal 52-tonne lodestone magnet sat atop the main temple tower, suspending the central iron-bearing idol in mid-air.",
+     "unit": "tonnes"
+    },
+    {
+     "label": "legend",
+     "number": null,
+     "quote": "Other legends state that the magnetic effect of the lodestone was so strong that it caused disturbance in the ships compasses... Portuguese sailors destroyed the temple and took away the lodestone.",
+     "source_date": "2019",
+     "source_name": "Odisha Tourism",
+     "source_url": "https://odishatourism.gov.in",
+     "text": "According to maritime folklore, Portuguese navigators dismantled the pinnacle magnet because its intense magnetic field allegedly disturbed ship compasses and caused vessels to run aground.",
+     "unit": null
+    },
+    {
+     "label": "disputed",
+     "number": null,
+     "quote": "Vessels passing through the Konark sea were drawn to it, resulting in heavy damage... But there is no record of the existence of such a powerful load stone, whereas the shallow coast and shifting sands formed natural nautical hazards.",
+     "source_date": "2005",
+     "source_name": "Puri District Gazetteer",
+     "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+     "text": "While folklore attributes historical shipwrecks to magnetic attraction from the temple, maritime historians attribute these wrecks to treacherous coastal sandbars and monsoon shoals off the Konark shore.",
+     "unit": null
+    },
+    {
+     "label": "archaeology",
+     "number": 8.0,
+     "quote": "The sundial has 8 major spokes that divide 24 hours into 8 equal parts (time gap between two major spokes is 3 hours or one prahara), with minor spokes dividing into 90 minutes.",
+     "source_date": "2021",
+     "source_name": "Odisha Tourism",
+     "source_url": "https://odishatourism.gov.in",
+     "text": "Each sundial wheel at Konark is engineered with eight major spokes that partition the daylight into three-hour spans known as praharas.",
+     "unit": "count"
+    },
+    {
+     "label": "disputed",
+     "number": null,
+     "quote": "While modern interpreters view the wheels as working sundials calibrated to solar movement, classical scholars emphasize their primary function as symbolic wheels of time representing the twelve months of the solar calendar.",
+     "source_date": "1968",
+     "source_name": "Archaeological Survey of India",
+     "source_url": "https://asi.nic.in",
+     "text": "While local tourist guides demonstrate that shadows cast upon the wheel spokes calculate local solar time down to minutes, art historians argue the wheels served primarily as cosmological and calendar symbolism.",
+     "unit": null
+    },
+    {
+     "label": "disputed",
+     "number": null,
+     "quote": "The theory of the lodestone's removal causing the collapse is uncorroborated; the fall was gradual, accelerated by sandy soil foundation weaknesses, weathering of stone, and loss of the finial.",
+     "source_date": "1968",
+     "source_name": "Archaeological Survey of India",
+     "source_url": "https://asi.nic.in",
+     "text": "Historians dispute the exact cause of the main sanctum tower's collapse, debating whether it failed due to soft sandy subsoil subsidence, engineering flaws, or deliberate military desecration.",
+     "unit": null
+    },
+    {
+     "label": "scripture",
+     "number": 12.0,
+     "quote": "Samba engaged himself in tapas for twelve years, meditating on Surya at Mitravana on the Chandrabhaga.",
+     "source_date": "1958",
+     "source_name": "Samba Purana",
+     "source_url": "https://en.wikipedia.org/wiki/Samba_Purana",
+     "text": "The Samba Purana states that Krishna's son Samba endured twelve years of penance at Mitravana on the Chandrabhaga river to obtain Surya's blessing and cure his leprosy.",
+     "unit": "years"
+    },
+    {
+     "label": "scripture",
+     "number": 1568.0,
+     "quote": "It is described in the Madala Panji of Puri Jagannath temple that Kalapahad attacked Orissa in 1568... he somehow managed to displace the Dadhinauti and broke most of the images.",
+     "source_date": "1980",
+     "source_name": "Madala Panji",
+     "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+     "text": "The Madala Panji temple chronicle records that the general Kalapahad invaded Odisha in 1568 CE and displaced the crowning arch stone of the Konark temple complex.",
+     "unit": "CE"
+    }
+   ],
+   "summary": "Popular folklore asserts that a 52-tonne lodestone magnet atop the Konark Sun Temple levitated the presiding deity and threw passing European ships off course by distorting their magnetic compasses until Portuguese sailors removed it. Archaeological surveys found no evidence of a giant magnet, discovering instead massive wrought-iron structural tie-beams and twenty-four monumental stone wheels engineered with eight major spokes that align with solar intervals. Historians and oceanographers disagree with the magnetic shipwreck theory, demonstrating that shallow sandbars and monsoonal coastal currents caused maritime groundings, while scholars debate whether the wheels were practical sundials or symbolic calendar art. What remains unknown is the definitive engineering failure that brought down the main 60-metre sanctum tower and the exact nature of the original crowning finial."
+  },
   "target_minutes": 14,
-  "title_hi": "Karni Mata, 25,000 chuhon ka mandir"
+  "title_hi": "Konark ka chumbak"
  },
- "updated": "2026-10-23T18:41:51+00:00",
+ "updated": "2026-10-24T09:52:16+00:00",
  "writer": ""
 }
