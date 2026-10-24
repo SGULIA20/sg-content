@@ -17,6 +17,7 @@ def is_story(piece: Piece) -> bool:
     return _is(piece.channel, piece.kind)
 QA_TOO_LONG = re.compile(r"duration: ([\d.]+)s, allowed [\d.]+-([\d.]+)s")
 RESUMABLE = {"written", "voicing", "voiced", "painting", "drawn", "assembled", "failed-voice", "failed-art", "qa_failed"}
+DAILY_DRAFTS, DAILY_RESEARCH = 6, 4     # per piece per quota day: a piece that keeps failing stops and waits for tomorrow instead of looping (24 Oct 2026)
 PARKED_WRITE = "writing"      # the draft is cooking in Claude's batch lane; topic, facts and the research sheet stay on the piece
 HANDLE = "@sanjeev_gulia"
 LONG_TARGET_MINUTES = {"sglearning": 12, "arthvan": 14}
@@ -169,6 +170,19 @@ def _thumb(piece: Piece, deps: Deps, out_dir: Path) -> Path:
     return deps.render_card("thumb", {"words": words[:3], "number": number, "avatar_path": deps.avatar("surprised")}, out_dir / "thumb.jpg", (1280, 720))
 
 
+def _allow(piece: Piece, what: str, limit: int) -> bool:
+    """Counts one more draft or research call for this piece today; False when today's allowance is used up."""
+    from .config import today_pacific
+    b = piece.ids.setdefault("budget", {})
+    day = today_pacific().isoformat()
+    if b.get("day") != day:
+        b.clear(); b["day"] = day
+    if b.get(what, 0) >= limit:
+        return False
+    b[what] = b.get(what, 0) + 1
+    return True
+
+
 def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pack_mode: bool = False) -> Piece:
     """Runs the pipeline for one piece and records every transition. Returns the piece in its final state for this run."""
     if piece.status in buffer.DONE:
@@ -204,6 +218,9 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
                 piece.facts = topic["long_facts"]
                 sheet = {"facts": piece.facts, "summary": "", "long_scenes": topic["long_scenes"], "hook": topic["hook"]}
             else:
+                if not _allow(piece, "research", DAILY_RESEARCH):
+                    pieces.save(pieces.transition(piece, "rejected", f"research budget used for today ({DAILY_RESEARCH} calls); the next quota day retries"), root)
+                    return piece
                 try:
                     sheet = deps.research(topic, piece.channel)
                 except (research.ResearchError, gemini.GeminiError) as e:
@@ -216,6 +233,9 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
             pieces.save(pieces.transition(piece, "researched"), root)
         else:
             piece.topic["revise"] = revise
+        if not _allow(piece, "drafts", DAILY_DRAFTS):
+            pieces.save(pieces.transition(piece, "rejected", f"draft budget used for today ({DAILY_DRAFTS} drafts); the next quota day retries"), root)
+            return piece
         try:
             written = deps.write(piece, sheet, deps.library, deps.hashtags)
         except writer.WriterError as e:

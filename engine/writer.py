@@ -15,6 +15,89 @@ SPEND_FILE = LOGS_DIR / "claude-spend.json"
 WRITER_FOR = {"short": "claude", "long": "claude"}      # Claude writes everything; Gemini only as the fallback (founder, 20 Oct: the free model wrote weak stories)
 MAX_TOKENS = 64000
 GEMINI_MAX_TOKENS = 32000
+PATCH_SCHEMA = {
+    "type": "object", "additionalProperties": False, "required": ["scenes"],
+    "properties": {
+        "scenes": {"type": "array", "items": {"type": "object", "additionalProperties": False, "required": ["index", "vo"],
+                                              "properties": {"index": {"type": "integer"}, "vo": {"type": "string"}, "label": {"type": "string"}}}},
+        "fields": {"type": "object", "additionalProperties": False,
+                   "properties": {"title": {"type": "string"}, "hook": {"type": "string"}, "end_question": {"type": "string"},
+                                  "youtube_title": {"type": "string"}, "youtube_description": {"type": "string"},
+                                  "instagram_caption": {"type": "string"}, "threads_text": {"type": "string"}}},
+    },
+}
+PATCH_TRIES = 2          # patch attempts per topic before a full rewrite
+
+
+def patchable(reasons: list) -> bool:
+    """True when every failed check can be fixed by rewriting a few scenes: an unsourced number, banned wording, a missing label, or a script
+    that is OVER its word limit. Too short, a wrong format or a copied script still gets a full rewrite."""
+    if not reasons:
+        return False
+    for r in reasons:
+        if r.startswith(("numbers without a source", "advice", "label")):
+            continue
+        m = re.match(r"length: (\d+) words, allowed (\d+)-(\d+)", r)
+        if m and int(m.group(1)) > int(m.group(3)):
+            continue
+        return False
+    return True
+
+
+def _numbered(script: dict) -> dict:
+    """The draft with each scene's 0-based index written on it, so the model names the right scene (a live test patched scene 3 instead of 2)."""
+    import copy
+    out = copy.deepcopy(script)
+    out["scenes"] = [{"index": i, **sc} for i, sc in enumerate(out.get("scenes", []))]
+    return out
+
+
+def patch_params(piece, sheet, library, hashtags, previous: dict, reasons: list, formula=None) -> dict:
+    """The same writer rules and fact sheet as the full draft, plus the failed draft and the checks it failed: the model returns only what changes."""
+    base = claude_params(piece, sheet, library, hashtags, formula)
+    note = ("\n\nPATCH MODE. Your previous draft is below. It failed these automatic checks:\n- " + "\n- ".join(reasons) +
+            "\n\nReturn ONLY the scenes whose narration must change (by index, with the corrected `vo`; add `label` only if a label was missing) and, in `fields`, "
+            "any other text that must change. Fix the problems named above and nothing else. Do not add or remove scenes, keep the story, tone and facts, "
+            "use only numbers that appear in the FACT_SHEET, and when trimming for length cut the weakest sentences, never the twist or the closing question.\n"
+            "Scene `index` is 0-based and shown on every scene below.\nPREVIOUS DRAFT:\n" + json.dumps(_numbered(previous), ensure_ascii=False))
+    base["messages"] = [{"role": "user", "content": base["messages"][0]["content"] + note}]
+    base["max_tokens"] = 8000
+    base["output_config"] = {"effort": "medium", "format": {"type": "json_schema", "schema": schema.api_schema(PATCH_SCHEMA)}}
+    return base
+
+
+def apply_patch(previous: dict, raw: str) -> dict:
+    """The previous draft with the returned scenes and fields replaced; validated against the full schema."""
+    import copy
+    try:
+        data = json.loads(FENCE.sub("", (raw or "").strip()))
+    except ValueError as e:
+        raise WriterError(f"patch reply is not valid JSON ({e})") from e
+    problems = schema.validate(data, PATCH_SCHEMA)
+    if problems:
+        raise WriterError("patch does not match its schema: " + "; ".join(problems[:3]))
+    out = copy.deepcopy(previous)
+    n = len(out.get("scenes", []))
+    for fix in data["scenes"]:
+        if not 0 <= fix["index"] < n:
+            raise WriterError(f"patch names scene {fix['index']} of {n}")
+        out["scenes"][fix["index"]]["vo"] = fix["vo"]
+        if fix.get("label"):
+            out["scenes"][fix["index"]]["label"] = fix["label"]
+    f = data.get("fields") or {}
+    caps = out.setdefault("captions", {})
+    for key, setter in (("title", lambda v: out.__setitem__("title", v)), ("hook", lambda v: out.__setitem__("hook", v)),
+                        ("end_question", lambda v: out.__setitem__("end_question", v)),
+                        ("youtube_title", lambda v: caps["youtube"].__setitem__("title", v)), ("youtube_description", lambda v: caps["youtube"].__setitem__("description", v)),
+                        ("instagram_caption", lambda v: caps["instagram"].__setitem__("caption", v)), ("threads_text", lambda v: caps["threads"].__setitem__("text", v))):
+        if f.get(key):
+            setter(f[key])
+    problems = schema.validate(out)
+    if problems:
+        raise WriterError("patched script does not match the schema: " + "; ".join(problems[:3]))
+    return out
+
+
 FENCE = re.compile(r"^```(?:json)?\s*|\s*```$", re.MULTILINE)
 
 
@@ -109,6 +192,19 @@ def _claude(piece, sheet, library, hashtags, formula, client, spend, today) -> d
     return _parse(text)
 
 
+def _claude_patch(piece, sheet, library, hashtags, formula, client, spend, today, reasons) -> dict:
+    import anthropic
+    client = client or anthropic.Anthropic(api_key=secrets.get("ANTHROPIC_API_KEY"))
+    params = patch_params(piece, sheet, library, hashtags, piece.script, reasons, formula)
+    with client.beta.messages.stream(**params, betas=["server-side-fallback-2026-07-01"], fallbacks="default") as stream:
+        response = stream.get_final_message()
+    record_spend(response.usage, spend, today)
+    if response.stop_reason in ("refusal", "max_tokens"):
+        raise WriterError(f"patch ended with {response.stop_reason}")
+    text = next((b.text for b in response.content if getattr(b, "type", "") == "text"), "")
+    return apply_patch(piece.script, text)
+
+
 def _gemini(piece, sheet, library, hashtags, formula, ask) -> dict:
     prompt = system_prompt(piece.channel) + "\n\nSCHEMA (return exactly this shape):\n" + json.dumps(schema.PIECE_SCHEMA) + \
         "\n\nINPUT:\n" + _user_message(piece, sheet, library, hashtags)
@@ -130,6 +226,20 @@ def write(piece: Piece, sheet: dict, library: list, hashtags: dict, formula: str
     elif spent_today(spend, today) >= BUDGETS["claude_usd_per_day"]:
         note = "claude budget spent for the day"
     else:
+        reasons = (piece.topic.get("revise") or "").split("; ") if piece.topic.get("revise") else []
+        if piece.script and patchable(reasons) and piece.topic.get("patch_tries", 0) < PATCH_TRIES:
+            try:
+                if batch_fn is not None:
+                    state, script = batch_fn(piece, sheet, library, hashtags, formula, client=client, spend=spend, today=today, patch_reasons=reasons)
+                    if state == "writing":
+                        return {"script": None, "writer": "claude", "note": "", "state": "writing"}
+                else:
+                    script = _claude_patch(piece, sheet, library, hashtags, formula, client, spend, today, reasons)
+                piece.topic["patch_tries"] = piece.topic.get("patch_tries", 0) + 1
+                return {"script": script, "writer": "claude", "note": "patched: " + "; ".join(reasons)[:120], "state": "ready"}
+            except Exception as e:                                # a patch is an optimisation: the full rewrite is next
+                print(f"patch failed ({type(e).__name__}: {secrets.scrub(str(e))[:120]}); rewriting the whole script", flush=True)
+                piece.topic["patch_tries"] = PATCH_TRIES
         if batch_fn is not None:
             try:
                 state, script = batch_fn(piece, sheet, library, hashtags, formula, client=client, spend=spend, today=today)

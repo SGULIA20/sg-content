@@ -35,6 +35,11 @@ def hide_or_delete(channel: str, vid: str) -> str:
 
 
 def main(argv) -> int:
+    if "--yes" not in argv:
+        print("A re-make re-voices every line (about ₹3 for a Short, ₹20 for a long) and uses a YouTube upload (1,600 of 10,000 daily units). "
+              "Re-make only for defects viewers can see. Add --yes to go ahead.")
+        return 2
+    argv = [a for a in argv if a != "--yes"]
     if argv[:1] == ["--from"]:
         ids = sorted(p.id for p in pieces.list_all(ROOT) if p.id >= argv[1] and p.status == "uploaded" and p.ids.get("yt_id"))
     else:
@@ -45,7 +50,7 @@ def main(argv) -> int:
             print(pid, "skipped: no script"); continue
         vid = p.ids.get("yt_id")
         note = hide_or_delete(p.channel, vid) if vid else "no upload"
-        for k in ("yt_id", "captions", "out_sha", "unlisted", "voice_batch", "art_batch", "write_batch"):
+        for k in ("yt_id", "captions", "out_sha", "unlisted", "voice_batch", "art_batch", "write_batch", "budget"):
             p.ids.pop(k, None)
         pieces.save(pieces.transition(p, "written", "remake: clipped ending / repeated line / tone note (22 Oct 2026)"), ROOT)
         print(f"{pid}: old video {vid or '-'} {note}; status -> written")

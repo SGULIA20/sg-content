@@ -5,6 +5,13 @@ phone, cloud) reads this file first and follows it instead of asking again. When
 line here (who, date) in the same change. Newest first.
 
 ## Recent changes and why (newest first)
+- 24 Oct 2026: cost cuts that do not touch the video (founder, "go ahead"): story word limit is soft up to 260; a draft that fails only on an unsourced
+  number, banned wording, a missing label or being too long is PATCHED (only the failing scenes are rewritten, ~$0.03 against ~$0.30 for a full
+  draft; tried twice, then a full rewrite); each piece gets at most 6 drafts and 4 research calls per quota day; `scripts/remake.py` needs `--yes`
+  and is used only for defects viewers can see. Expected content-pipeline cost about ₹4,000-4,500 a month (estimate, not a cap); hard stops are the
+  provider limits the founder sets (Anthropic workspace limit, AI Studio project cap) plus the in-code ceilings.
+- 22 Oct 2026: Play Console is read by a read-only service account (`play-reports-reader`, key in ~/sg-content/play-reader-key.json, never committed); no
+  write rights. `engine/playreports.py --weekly` sends installs, countries, ratings and Waypoint's phase gates (`content/growth-gates.yaml`) every Monday.
 - 23 Oct 2026: one picture style per brand (see "Picture style"); only the pictures change. Founder, after comparing nine styles.
 - 23 Oct 2026: GitHub skipped every morning job; the LinkedIn post and the Learning with SG post were started by hand. Fix waiting on the
   founder: `GITHUB_TOKEN` in Supabase so the database starts each job at its exact minute (docs/external-scheduler.md).
@@ -22,6 +29,8 @@ line here (who, date) in the same change. Newest first.
 - The cast keeps the same people, drawn once per channel in that channel's style (assets/cast/<channel>/).
 
 ## Operating rules
+- **Buffer (supersedes the 21 Oct line below): 7 days of Shorts and 4 longs per channel; an alert under 7 / under 4.** (founder, 22 Oct 2026; engine/digest.py)
+- **No trimming, no speed-up, no Google voices.** Narration runs at its natural speed and length; only the designed storyteller voices are used. (founder, 22 Oct 2026)
 - **Fully automatic.** The founder never decides what is made or posted on a given day. Topics, scripts, voice, video, upload and posting run on their own; a piece that fails a check is skipped and retried by the next run, never posted. (founder, 21 Oct 2026)
 - **Buffer: never under 4 days, aim for 5+.** The buffer targets 7 days of Shorts and 10 of longs (`engine/buffer.py`); under 4 days is an alert (`digest.BUFFER_ALERT_DAYS`). (founder, 21 Oct 2026)
 - **One failure never stops the rest.** A crash in one piece marks that piece `failed-crash` and the run carries on (`engine/produce.py`). (21 Oct 2026, after the long-video crash)

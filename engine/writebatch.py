@@ -41,13 +41,16 @@ def _log(row: dict) -> None:
 
 
 def write_piece(piece, sheet: dict, library: list, hashtags: dict, formula: str | None = None, *, client=None,
-                spend: Path = writer.SPEND_FILE, today=None, wait_s: float = WAIT_S, sleep=time.sleep, clock=time.monotonic) -> tuple:
+                spend: Path = writer.SPEND_FILE, today=None, wait_s: float = WAIT_S, sleep=time.sleep, clock=time.monotonic, patch_reasons=None) -> tuple:
     """("ready", script) once the draft is back and parsed; ("writing", None) while the batch still runs (piece.ids["write_batch"] keeps it).
     Raises WriteBatchError when the lane fails, so the caller can fall back to the synchronous writer."""
     from .config import today_pacific
     today = today or today_pacific()
     client = _client(client)
-    params = writer.claude_params(piece, sheet, library, hashtags, formula)
+    if patch_reasons:
+        params = writer.patch_params(piece, sheet, library, hashtags, piece.script, patch_reasons, formula)
+    else:
+        params = writer.claude_params(piece, sheet, library, hashtags, formula)
     key = _key(params)
     job = piece.ids.get("write_batch") or {}
     if job.get("key") != key:
@@ -78,7 +81,7 @@ def write_piece(piece, sheet: dict, library: list, hashtags: dict, formula: str 
                 if message.stop_reason == "max_tokens":
                     raise WriteBatchError(f"Claude's script was cut off at {writer.MAX_TOKENS} tokens")
                 text = next((b.text for b in message.content if getattr(b, "type", "") == "text"), "")
-                return "ready", writer._parse(text)
+                return "ready", (writer.apply_patch(piece.script, text) if patch_reasons else writer._parse(text))
             raise WriteBatchError("batch ended without a result for this piece")
         if clock() - start >= wait_s:
             return "writing", None
