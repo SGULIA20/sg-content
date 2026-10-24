@@ -2,33 +2,113 @@
  "channel": "arthvan",
  "facts": [
   {
-   "label": "scripture",
+   "label": "legend",
+   "number": 52.0,
+   "quote": "According to legend, the statue of the Sun God inside the temple was built of a material with iron content and was said to be floating in air... due to the lodestone at the top of the temple said to be a massive 52 ton magnet.",
+   "source_date": "2024",
+   "source_name": "Odisha Tourism",
+   "source_url": "https://odishatourism.gov.in/",
+   "text": "According to Odia folklore, a 52-tonne lodestone was installed at the apex of the Konark Sun Temple, creating a magnetic corridor that suspended the central iron-crafted idol of Surya in mid-air.",
+   "unit": "tonnes"
+  },
+  {
+   "label": "legend",
    "number": null,
-   "quote": "The Kashi section of the Skanda Purana mentions the origins of Lord Shani, born to Surya Dev and Goddess Chhaya as the arbiter of karma.",
-   "source_date": "1950",
-   "source_name": "Skanda Purana, Kashi Khanda",
-   "source_url": "https://www.wisdomlib.org/hinduism/book/the-skanda-purana",
-   "text": "In the Kashi Khanda of the Skanda Purana, Shani is described as the offspring of Surya and Chhaya who serves as the cosmic dispenser of karmic justice.",
+   "quote": "Other legends state that the magnetic effect of the lodestone was so strong that it caused disturbance in the ships compasses those passed by the coast... Portuguese sailors destroyed the temple and took away the lodestone.",
+   "source_date": "2024",
+   "source_name": "Wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+   "text": "Maritime lore asserts that Portuguese merchant vessels strayed off course and were wrecked because the magnetic force of the temple's lodestone distorted compass readings along the Bay of Bengal.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "Some attribute it to natural calamity like cyclone, earthquake or lightning, while others believe the foundation gave in because of weak soil... Some are accused of removing a powerful magnet crowning the temple.",
+   "source_date": "2024",
+   "source_name": "Odisha Tourism",
+   "source_url": "https://odishatourism.gov.in/",
+   "text": "While folklore maintains that removing the summit lodestone destabilized the structure and caused the sanctum tower to fall, structural engineers and archaeologists attribute the collapse to unstable sandy subsoil foundations, cyclonic storms, and building weight imbalance.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "Modern studies suggest iron-rich sandstone may have caused compass distortions, while historians note shallow sandbars and coastal currents made navigation hazardous.",
+   "source_date": "2003",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+   "text": "While popular narratives claim that iron-bearing minerals in the temple's masonry caused ship compass deviations, nautical historians demonstrate that shallow nearshore sandbars and shifting currents near the Chandrabhaga delta caused vessels to ground.",
    "unit": null
   },
   {
    "label": "archaeology",
-   "number": 4.25,
-   "quote": "Most of the houses, some thirty-nine in all, have been exposed in the uppermost levels of the site. They are uniformly circular in plan and vary in diameter from 2.5 to 4.25 m.",
-   "source_date": "1975",
-   "source_name": "Penn Museum / Deccan College",
-   "source_url": "https://www.penn.museum/sites/expedition/an-early-farmers-village-in-central-india/",
-   "text": "Excavations of the protohistoric Chalcolithic strata at Nevasa documented 39 Late Jorwe period circular houses measuring between 2.5 and 4.25 metres in diameter.",
+   "number": 1968.0,
+   "quote": "These ceilings are supported by three iron beams... Supported by iron beams, the architraves were of chlorite and had their front faces sculptured.",
+   "source_date": "1968",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/",
+   "text": "In her comprehensive monograph for the Archaeological Survey of India, former Director General Debala Mitra confirmed that temple builders used forged wrought-iron beams as structural lintels rather than magnetic lodestones.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 10.0,
+   "quote": "The Navagraha is engraved on a single stone which is place on an iron beam and is located in the eastern part... rust-resistant beams suggests a metallurgical sophistication.",
+   "source_date": "2003",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/",
+   "text": "Metallurgical documentation at Konark revealed load-bearing wrought-iron beams reaching lengths of nearly 10 metres that withstood coastal saline humidity for centuries with negligible oxidation.",
    "unit": "metres"
   },
   {
-   "label": "legend",
-   "number": 5.5,
-   "quote": "The shrine for Shani consists of a five and a half feet high black rock installed on an open-air platform, which symbolizes the god Shani.",
-   "source_date": "2023-07-28",
-   "source_name": "Wikipedia / Shri Shaneshwar Devasthan",
-   "source_url": "https://en.wikipedia.org/wiki/Shani_Shingnapur",
-   "text": "The sacred black basalt slab measuring five and a half feet in height has stood on an open-air stone platform without a roof or enclosure for centuries according to temple tradition.",
+   "label": "archaeology",
+   "number": 1676.0,
+   "quote": "On December 23, 1676, Master saw the Konark temple and the Jagannatha temple and recorded in his diary as follows: 'We sailed in sight of the Black Pagoda.'",
+   "source_date": "1676",
+   "source_name": "Sir Streynsham Master Diary",
+   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+   "text": "Sir Streynsham Master recorded in 1676 that European seafarers used the towering, dark sandstone ruins of Konark as a major visual navigation beacon called the Black Pagoda, contrasting it with Puri's white Jagannath temple.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 3.0,
+   "quote": "The Konark Wheel is 9 feet in diameter and has 8 larger spokes and 8 inner spokes... The 8 spokes represent the day's eight prahars.",
+   "source_date": "2024",
+   "source_name": "Odisha Tourism",
+   "source_url": "https://odishatourism.gov.in/",
+   "text": "The carved stone wheels set along the temple plinth measure approximately 3 metres in diameter, each featuring 8 major spokes and 8 minor spokes that demarcate the traditional praharas of the solar day.",
+   "unit": "metres"
+  },
+  {
+   "label": "archaeology",
+   "number": 30.0,
+   "quote": "The spokes of the wheel form a sundial, and the shadow cast by these wheels aids in calculating the exact time of day... Each wheel has 8 larger spokes and 8 inner spokes with beads for time markers.",
+   "source_date": "2024",
+   "source_name": "Odisha Tourism",
+   "source_url": "https://odishatourism.gov.in/",
+   "text": "The chariot wheels serve as working sundials where the shadow cast from the central axle across thirty perimeter beads between spokes enables observers to calculate local solar time.",
+   "unit": "count"
+  },
+  {
+   "label": "scripture",
+   "number": 12.0,
+   "quote": "Near Jagannath is a temple dedicated to the sun. Its cost was defrayed by 12 years revenue of the province. Even those whose judgment is critical and who are difficult to please stand astonished at its sight.",
+   "source_date": "1590",
+   "source_name": "Ain-i-Akbari",
+   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+   "text": "The 16th-century Mughal chronicle Ain-i-Akbari recorded that the Sun Temple was constructed over 12 years using regional tax revenues, leaving visitors completely astonished at its design.",
+   "unit": "years"
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "The Samba Purana in its chapters 42-43 refers to the Tapovana of Samba... near the Chandrabhaga river, a river flowing near the Konark temple was also named Chandrabhaga.",
+   "source_date": "1000",
+   "source_name": "Samba Purana",
+   "source_url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+   "text": "The Samba Purana recounts that Prince Samba performed rigorous penance to the solar divinity along the banks of the Chandrabhaga river to receive cure from an affliction, establishing the sanctity of Arka-kshetra.",
    "unit": null
   }
  ],
@@ -36,14 +116,16 @@
  "ids": {
   "budget": {
    "day": "2026-10-24",
-   "drafts": 3,
-   "research": 3
+   "drafts": 4,
+   "research": 4
   },
-  "write_batch": {
-   "id": "msgbatch_01MqUgJut5H5tPSHfuB1Nyty",
-   "key": "aa367c198e0090a8",
-   "tries": 4
-  }
+  "cost": {
+   "inr": 19.5,
+   "usd": 0.083624,
+   "voice": 12
+  },
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "BO4vM0ORMAI"
  },
  "kind": "short",
  "publish_day": "2026-10-29",
@@ -66,7 +148,7 @@
  "script": {
   "captions": {
    "instagram": {
-    "caption": "Konark mandir ke upar 52 ton ka chumbak tha? 🤯\nLok kahani kehti hai murti hawa mein tairti thi aur jahaaz kinare kheenche aate the.\nHistorians kehte hain aise chumbak ka koi record nahi, par pahiya sach mein dhoop ghadi hai.\nAapko kya lagta hai, chumbak sirf kahani thi?\nUs dost ko bhejo jo kehta hai Konark mein jahaaz chumbak se doobte the.",
+    "caption": "Konark mandir ke upar 52 ton ka chumbak? 🤯\nLok katha kehti hai, murti hawa mein tairti thi aur jahaaz bhatak jaate the.\nASI ko chumbak nahi, jung se bache lohe ke beams mile. Aur pahiye nikle dhoop ghadi.\nAapko kya lagta hai, jahaaz chumbak se bhatke ya ret ke teelon se?\nUs dost ko bhejo jo kehta hai Konark mein aaj bhi chumbak chhupa hai.",
     "hashtags": [
      "#SabutKeSaath",
      "#IndianHistory",
@@ -74,62 +156,59 @@
      "#AncientIndia",
      "#Itihaas",
      "#Rahasya",
-     "#Mythology",
      "#SGMythWorld"
     ]
    },
    "threads": {
-    "text": "Konark mandir ke upar 52 ton ka chumbak tha? Kahani kehti hai jahaaz kinare kheenche aate the. ASI ko chumbak nahi, lohe ke beams mile, aur ek pahiya jo dhoop ghadi hai. Aapko kya lagta hai, chumbak sirf kahani thi? #SabutKeSaath #IndianHistory"
+    "text": "Konark mandir ke shikhar par 52 ton ka chumbak tha? Lok katha haan kehti hai, par ASI ko mile lohe ke beams aur dhoop ghadi wale pahiye. Aapko kya lagta hai, jahaaz chumbak se bhatke ya ret ke teelon se? #SabutKeSaath #IndianHistory"
    },
    "youtube": {
     "chapters": [],
-    "description": "Konark ke Surya mandir par 52 ton ka chumbak tha, ya yeh sirf lok kahani hai? Granth, ASI ki khoj aur vaigyanikon ki raay, sab sabut ke saath. Aur asli rahasya chumbak nahi, patthar ka woh pahiya hai jo aaj bhi samay batata hai. Us dost ko bhejo jo kehta hai Konark mein jahaaz chumbak se doobte the.",
+    "description": "Kya Konark Surya mandir ke shikhar par sach mein 52 ton ka chumbak tha? Lok katha, Samba Purana, ASI ki khoj aur itihaaskaron ki behas, sab sabut ke saath. Aur asli rahasya chhat par nahi, mandir ke pathar ke pahiyon mein chhupa hai. Us dost ko bhejo jo kehta hai Konark mein aaj bhi chumbak chhupa hai.",
     "tags": [
      "Konark",
      "Konark Sun Temple",
-     "Surya Mandir",
-     "chumbak",
-     "magnet",
+     "Konark magnet",
+     "Surya mandir",
+     "Black Pagoda",
      "Odisha",
      "ASI",
-     "Black Pagoda",
      "sundial",
-     "Samba Purana",
-     "itihaas",
+     "Indian history",
+     "mythology",
      "archaeology"
     ],
-    "title": "Konark mandir 52 ton chumbak: sach ya kahani?"
+    "title": "Konark Magnet 52 Ton? Jahaaz Kyon Doobe"
    }
   },
   "cards": [],
   "carousel": false,
-  "end_question": "Aapko kya lagta hai, chumbak sirf kahani thi?",
-  "hook": "Konark mandir ke upar 52 ton ka chumbak tha?",
+  "end_question": "Aapko kya lagta hai, jahaaz chumbak se bhatke, ya ret ke teelon se?",
+  "hook": "Kya Konark mandir ke shikhar par 52 ton ka chumbak tha?",
   "scenes": [
    {
     "facts_used": [
-     1,
-     9
+     0
     ],
-    "label": "scripture",
+    "label": "legend",
     "visual": {
      "card": null,
-     "prompt": "Wide drawn panel of the Konark Sun Temple at dawn on the Odisha coast, a faint glowing stone placed on top of a tall dark tower, waves in the distance, mysterious golden mood",
+     "prompt": "Drawn panel: the Konark Sun Temple at golden dawn by the sea, a giant dark stone glowing faintly at the top of the tall spire, far inside the dim sanctum a small silhouette of a sun statue seen from a distance seemingly floating, mysterious mood, illustrated storybook style, no text",
      "type": "art"
     },
-    "vo": "Konark mandir ke upar 52 ton ka chumbak tha? Pehle suniye, Samba Purana kya kehta hai."
+    "vo": "Kya Konark mandir ke shikhar par 52 ton ka chumbak tha? Lok katha kehti hai, uske zor se Surya ki murti hawa mein tairti thi."
    },
    {
     "facts_used": [
-     9
+     10
     ],
     "label": "scripture",
     "visual": {
      "card": null,
-     "prompt": "A young ancient prince with bandaged arms sits in meditation on a quiet riverbank, seen from behind, the rising sun a huge glowing disc far on the horizon, soft spiritual light",
+     "prompt": "Drawn panel: an ancient young prince in simple robes seated in meditation on a quiet riverbank, seen from behind, facing a huge rising sun over the water, reeds and forest around, devotional calm mood, no text",
      "type": "art"
     },
-    "vo": "Krishna ke bete Samba ko kodh, yaani leprosy, ho gaya. Surya ki tapasya se woh theek hua."
+    "vo": "Samba Purana kehta hai, Prince Samba yahan bimar aaye. Chandrabhaga nadi kinare Surya ki tapasya ki, aur theek ho gaye."
    },
    {
     "facts_used": [
@@ -138,83 +217,46 @@
     "label": "legend",
     "visual": {
      "card": null,
-     "prompt": "Inside a dim medieval stone sanctum, a distant statue of the Sun God appears to float in mid-air under a dark rock high above, villagers watching in awe from the doorway, dreamy legend style",
+     "prompt": "Drawn panel: an old wooden sailing ship on a stormy Bay of Bengal at night, a sailor seen from behind staring at a spinning brass compass, the dark temple spire on the distant shore, tense legendary mood, no text",
      "type": "art"
     },
-    "vo": "Phir lok kahani aayi. Choti par lodestone, yaani kudrati chumbak, aur hawa mein tairti Surya ki murti."
-   },
-   {
-    "facts_used": [
-     2
-    ],
-    "label": "legend",
-    "visual": {
-     "card": null,
-     "prompt": "Old wooden sailing ship on a stormy sea near a dark temple silhouette on the shore, a sailor's hand holding a brass compass with a spinning needle, tense moonlit mood",
-     "type": "art"
-    },
-    "vo": "Kehte hain, jahaaz kinare kheenche chale aate, aur compass bhatak jaata."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Side view of the Konark temple base drawn as a giant stone chariot with carved wheels and rearing stone horses, an archaeologist with a notebook standing small beside a wheel, bright daylight",
-     "type": "art"
-    },
-    "vo": "ASI, yaani Archaeological Survey of India, ise patthar ka vishaal rath batata hai, pahiyon aur ghodon ke saath."
-   },
-   {
-    "facts_used": [
-     11
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Early twentieth century workers in colonial-era clothes pouring sand into a huge stone hall and bricking up its doorway, a conservator in a pith helmet supervising, dusty sepia mood",
-     "type": "art"
-    },
-    "vo": "1903 tak angrezon ne sabha hall ret se bhar diya, taaki imaarat na baithe."
-   },
-   {
-    "facts_used": [
-     5,
-     6
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "A scientist in a lab coat examining a long dark wrought-iron beam lying beside temple stone blocks, a rusty modern steel bar next to it for comparison, clean lab light",
-     "type": "art"
-    },
-    "vo": "Pattharon ke beech bhaari lohe ke beams mile, chumbak nahi, loha. IIT Bhubaneswar ki jaanch mein yeh aaj ke steel se kahin kam zang khaate hain."
-   },
-   {
-    "facts_used": [
-     3
-    ],
-    "label": "disputed",
-    "visual": {
-     "card": null,
-     "prompt": "Split panel: on one side old European sailors lowering a dark rock from a temple tower by ropes, on the other a historian in a library shaking her head over empty old record books, contrasting moods",
-     "type": "art"
-    },
-    "vo": "Kahani kehti hai, Portuguese navik chumbak utaar le gaye. Historians kehte hain, aise chumbak ka koi record nahi."
+    "vo": "Phir samundar ki kahani aayi. Kehte hain, chumbak se jahaazon ke compass ghoom jaate the. Portuguese nawik use utaar le gaye."
    },
    {
     "facts_used": [
      4
     ],
-    "label": "disputed",
+    "label": "archaeology",
     "visual": {
      "card": null,
-     "prompt": "A ship captain on deck pointing at a dark temple tower standing out against pale coastal sand, using it as a landmark, calm sea, clear evening sky",
+     "prompt": "Drawn panel: a woman archaeologist in a 1960s sari and spectacles sitting at a wooden desk among temple ruins, sketches and survey drawings spread out, a stone wall of Konark carvings behind, studious mood, no text",
      "type": "art"
     },
-    "vo": "Kahani kehti hai, Black Pagoda naam doobe jahaazon se pada. Records kehte hain, navik ise raasta dikhane wala nishaan maante the."
+    "vo": "ASI ki Director General rahin Debala Mitra ne 1968 mein Konark par kitaab likhi. ASI yaani Archaeological Survey of India. Chumbak nahi mila."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: workers and an archaeologist beside a very long dark iron beam lying among carved sandstone blocks, salty sea breeze and mist, the beam surprisingly clean of rust, wonder mood, no text",
+     "type": "art"
+    },
+    "vo": "Mile wrought-iron ke beams, yaani hathode se peet kar bana loha. Samundari hawa mein bhi, sadiyon tak jung se bache rahe."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a 17th century European traveller on a ship deck writing in a leather diary with a quill, pointing toward a tall dark temple on the coastline, far away a white temple on another shore, calm sea, no text",
+     "type": "art"
+    },
+    "vo": "Ek angrez yatri ne diary mein ise Black Pagoda likha. Jahaazon ke liye yeh raasta dikhane wala nishaan tha."
    },
    {
     "facts_used": [
@@ -223,10 +265,46 @@
     "label": "disputed",
     "visual": {
      "card": null,
-     "prompt": "Cross-section drawing of a temple foundation sinking into soft shifting coastal sand, cracks running up the stone, a geologist kneeling with a soil sample, questioning mood",
+     "prompt": "Drawn panel: split scene, on one side a compass needle trembling near a reddish sandstone block, on the other a wooden ship grounded on a shallow sandbar in churning coastal currents near a river mouth, thoughtful mood, no text",
      "type": "art"
     },
-    "vo": "Vaigyanik girne ki wajah ret ki kamzor zameen batate hain. Shikhar kaise gira, yeh abhi koi nahi jaanta."
+    "vo": "Toh jahaaz doobe kyon? Kuch kehte hain, lohe wala pathar compass hila sakta tha. Itihaaskar kehte hain, asli khatra uthle ret ke teele the."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a massive temple tower cracking and leaning during a fierce cyclone, rain lashing, sandy ground sinking beneath the foundation, dramatic storm mood, no text",
+     "type": "art"
+    },
+    "vo": "Shikhar gira kyon? Katha kehti hai, chumbak hata isliye. Engineer kehte hain, kamzor reteeli zameen aur cyclone."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an old historian seen from behind holding a torn palm-leaf manuscript with missing pieces, the ruined temple outline in fog behind him, unresolved mysterious mood, no text",
+     "type": "art"
+    },
+    "vo": "Theek kab aur kaise gira, purane records aaj bhi chup hain."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a giant intricately carved stone chariot wheel on the temple plinth in bright sunlight, the shadow of the central axle falling across the spokes, revelation mood, no text",
+     "type": "art"
+    },
+    "vo": "Asli twist neeche hai. Mandir ke pathar ke pahiye sundial hain, yaani dhoop ghadi."
    },
    {
     "facts_used": [
@@ -236,98 +314,69 @@
     "label": "archaeology",
     "visual": {
      "card": null,
-     "prompt": "Close view of a carved stone chariot wheel at Konark in bright sun, a sharp shadow of a spoke falling across the carved beads on the rim, a curious child pointing at it, warm wonder",
+     "prompt": "Drawn panel: a grandmother and a curious child standing before the carved stone wheel today, the child pointing at the shadow on the beads between spokes, tourists in the background, warm joyful mood, no text",
      "type": "art"
     },
-    "vo": "Asli rahasya pahiye mein hai. Yeh sundial hai, yaani dhoop ghadi, parchhaai se samay batata hai."
+    "vo": "Dhuri ki parchhai daanon par girti hai, aur samay batati hai. Aaj Konark jaakar, aap khud waqt padh sakte hain."
    },
    {
     "facts_used": [
-     7,
-     11
+     1,
+     3
     ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Modern-day visitors gathered around a stone wheel at the Konark temple, while in the background archaeologists carefully remove sand from an opened doorway of the great hall, hopeful afternoon light",
-     "type": "art"
-    },
-    "vo": "Konark jaakar aap khud yeh parchhaai dekh sakte hain. Band hall se ret nikalna ab shuru hua hai."
-   },
-   {
-    "facts_used": [],
     "label": "disputed",
     "visual": {
      "card": null,
-     "prompt": "A grandmother telling a story to two children on a porch at dusk, the dark temple silhouette and a faint glowing rock on its tower drawn in the sky above them like a memory, cozy mysterious mood",
+     "prompt": "Drawn panel: the dark Konark temple silhouette at sunset by the sea, a small ship on the horizon, a sandbar visible in the shallows, a narrator figure in a kurta seen from behind looking out, reflective mood, no text",
      "type": "art"
     },
-    "vo": "Aapko kya lagta hai, chumbak sirf kahani thi? Comment mein likhiye."
+    "vo": "Aapko kya lagta hai, jahaaz chumbak se bhatke, ya ret ke teelon se?"
    }
   ],
   "thumbnail": {
-   "scene": "ARCHAEOLOGIST stares wide-eyed at sand pouring out of a bricked-up stone doorway of the Konark hall, mouth open, torch in hand",
+   "scene": "The ARCHAEOLOGIST kneels beside a long rust-free iron beam among carved stones, eyes wide and mouth open in disbelief, the dark temple spire looming behind",
    "words": [
-    "1903",
-    "SEALED"
+    "1968",
+    "SACH?"
    ]
   },
-  "title": "Konark ke upar *chumbak* ya kahani? 🤯"
+  "title": "Konark mandir ka *chumbak* sach tha? 🤯"
  },
- "status": "writing",
- "timings": [],
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  10.17,
+  20.3,
+  30.91,
+  42.8,
+  52.89,
+  62.34,
+  75.43,
+  86.36,
+  92.65,
+  101.34,
+  110.15
+ ],
  "topic": {
   "allowed_sources": [
+   "asi.nic.in",
    "en.wikipedia.org",
-   "maharashtratourism.gov.in",
-   "news reports with dates"
+   "odishatourism.gov.in",
+   "UNESCO whc.unesco.org"
   ],
   "hooks": [
-   "Is gaon mein ghar ke darwaze kyon nahi?",
-   "Bank ki shakha bhi bina lock ke?",
-   "Chori hui to kya hua?"
+   "Konark mandir ke upar 52 ton ka chumbak tha?",
+   "Jahaaz Konark ke paas kyon bhatakte the?",
+   "Surya mandir ka pahiya ghadi hai?"
   ],
-  "id": "shani-shingnapur",
-  "notes": "Legend lane plus documented modern facts (UCO Bank branch 2011); report thefts honestly.",
-  "place": "Shani Shingnapur, Maharashtra",
-  "sheet": {
-   "facts": [
-    {
-     "label": "scripture",
-     "number": null,
-     "quote": "The Kashi section of the Skanda Purana mentions the origins of Lord Shani, born to Surya Dev and Goddess Chhaya as the arbiter of karma.",
-     "source_date": "1950",
-     "source_name": "Skanda Purana, Kashi Khanda",
-     "source_url": "https://www.wisdomlib.org/hinduism/book/the-skanda-purana",
-     "text": "In the Kashi Khanda of the Skanda Purana, Shani is described as the offspring of Surya and Chhaya who serves as the cosmic dispenser of karmic justice.",
-     "unit": null
-    },
-    {
-     "label": "archaeology",
-     "number": 4.25,
-     "quote": "Most of the houses, some thirty-nine in all, have been exposed in the uppermost levels of the site. They are uniformly circular in plan and vary in diameter from 2.5 to 4.25 m.",
-     "source_date": "1975",
-     "source_name": "Penn Museum / Deccan College",
-     "source_url": "https://www.penn.museum/sites/expedition/an-early-farmers-village-in-central-india/",
-     "text": "Excavations of the protohistoric Chalcolithic strata at Nevasa documented 39 Late Jorwe period circular houses measuring between 2.5 and 4.25 metres in diameter.",
-     "unit": "metres"
-    },
-    {
-     "label": "legend",
-     "number": 5.5,
-     "quote": "The shrine for Shani consists of a five and a half feet high black rock installed on an open-air platform, which symbolizes the god Shani.",
-     "source_date": "2023-07-28",
-     "source_name": "Wikipedia / Shri Shaneshwar Devasthan",
-     "source_url": "https://en.wikipedia.org/wiki/Shani_Shingnapur",
-     "text": "The sacred black basalt slab measuring five and a half feet in height has stood on an open-air stone platform without a roof or enclosure for centuries according to temple tradition.",
-     "unit": null
-    }
-   ],
-   "summary": "According to local legend, a bleeding black stone washed ashore during floods 300 years ago, leading villagers to install it on a roofless platform and leave their homes without doors under Lord Shani's protective watch. Archaeological excavations in Nevasa taluka by Deccan College revealed deep prehistoric sequences along the Pravara River, while modern institutions like UCO Bank and a local police station accommodated village tradition by opening without conventional door locks. Experts and officials sharply disagree with the popular claim of a crime-free utopia, as regional police registries document multiple formal theft and burglary cases that local accounts dispute or disown. What remains unknown is the precise geological source of the central basalt monolith and whether the absence of doors began as an ancient ritual covenant or evolved from early modern agrarian living arrangements."
-  },
+  "id": "konark-magnet",
+  "look": "indian-comic",
+  "notes": "Magnet story is disputed/legend; the sundial wheel is documented.",
+  "place": "Konark, Odisha",
   "target_minutes": null,
-  "title_hi": "Shani Shingnapur, bina darwaze ka gaon"
+  "title_hi": "Konark ka chumbak",
+  "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-24T14:10:55+00:00",
+ "updated": "2026-10-24T15:01:19+00:00",
  "writer": "claude"
 }

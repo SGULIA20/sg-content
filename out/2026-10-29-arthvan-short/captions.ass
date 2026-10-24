@@ -1,0 +1,68 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.36,Default,,0,0,0,,Kya Konark mandir ke shikhar par
+Dialogue: 0,0:00:02.36,0:00:04.20,Default,,0,0,0,,52 ton ka chumbak tha?
+Dialogue: 0,0:00:04.20,0:00:05.78,Default,,0,0,0,,Lok katha kehti hai,
+Dialogue: 0,0:00:05.78,0:00:08.14,Default,,0,0,0,,uske zor se Surya ki murti
+Dialogue: 0,0:00:08.14,0:00:09.72,Default,,0,0,0,,hawa mein tairti thi.
+Dialogue: 0,0:00:10.17,0:00:12.26,Default,,0,0,0,,Samba Purana kehta hai,
+Dialogue: 0,0:00:12.26,0:00:14.62,Default,,0,0,0,,Prince Samba yahan bimar aaye.
+Dialogue: 0,0:00:14.62,0:00:18.54,Default,,0,0,0,,Chandrabhaga nadi kinare Surya ki tapasya
+Dialogue: 0,0:00:18.54,0:00:18.80,Default,,0,0,0,,ki,
+Dialogue: 0,0:00:18.80,0:00:19.85,Default,,0,0,0,,aur theek ho gaye.
+Dialogue: 0,0:00:20.30,0:00:22.77,Default,,0,0,0,,Phir samundar ki kahani aayi.
+Dialogue: 0,0:00:22.77,0:00:23.59,Default,,0,0,0,,Kehte hain,
+Dialogue: 0,0:00:23.59,0:00:26.34,Default,,0,0,0,,chumbak se jahaazon ke compass ghoom
+Dialogue: 0,0:00:26.34,0:00:27.16,Default,,0,0,0,,jaate the.
+Dialogue: 0,0:00:27.16,0:00:30.46,Default,,0,0,0,,Portuguese nawik use utaar le gaye.
+Dialogue: 0,0:00:30.91,0:00:34.18,Default,,0,0,0,,ASI ki Director General rahin Debala
+Dialogue: 0,0:00:34.18,0:00:36.75,Default,,0,0,0,,Mitra ne 1968 mein Konark par
+Dialogue: 0,0:00:36.75,0:00:37.68,Default,,0,0,0,,kitaab likhi.
+Dialogue: 0,0:00:37.68,0:00:40.95,Default,,0,0,0,,ASI yaani Archaeological Survey of India.
+Dialogue: 0,0:00:40.95,0:00:42.35,Default,,0,0,0,,Chumbak nahi mila.
+Dialogue: 0,0:00:42.80,0:00:44.67,Default,,0,0,0,,Mile wrought-iron ke beams,
+Dialogue: 0,0:00:44.67,0:00:47.35,Default,,0,0,0,,yaani hathode se peet kar bana
+Dialogue: 0,0:00:47.35,0:00:47.89,Default,,0,0,0,,loha.
+Dialogue: 0,0:00:47.89,0:00:50.03,Default,,0,0,0,,Samundari hawa mein bhi,
+Dialogue: 0,0:00:50.03,0:00:52.44,Default,,0,0,0,,sadiyon tak jung se bache rahe.
+Dialogue: 0,0:00:52.89,0:00:55.34,Default,,0,0,0,,Ek angrez yatri ne diary mein
+Dialogue: 0,0:00:55.34,0:00:57.53,Default,,0,0,0,,ise Black Pagoda likha.
+Dialogue: 0,0:00:57.53,0:01:00.53,Default,,0,0,0,,Jahaazon ke liye yeh raasta dikhane
+Dialogue: 0,0:01:00.53,0:01:01.89,Default,,0,0,0,,wala nishaan tha.
+Dialogue: 0,0:01:02.34,0:01:04.19,Default,,0,0,0,,Toh jahaaz doobe kyon?
+Dialogue: 0,0:01:04.19,0:01:05.42,Default,,0,0,0,,Kuch kehte hain,
+Dialogue: 0,0:01:05.42,0:01:09.12,Default,,0,0,0,,lohe wala pathar compass hila sakta
+Dialogue: 0,0:01:09.12,0:01:09.43,Default,,0,0,0,,tha.
+Dialogue: 0,0:01:09.43,0:01:11.59,Default,,0,0,0,,Itihaaskar kehte hain,
+Dialogue: 0,0:01:11.59,0:01:14.67,Default,,0,0,0,,asli khatra uthle ret ke teele
+Dialogue: 0,0:01:14.67,0:01:14.98,Default,,0,0,0,,the.
+Dialogue: 0,0:01:15.43,0:01:17.02,Default,,0,0,0,,Shikhar gira kyon?
+Dialogue: 0,0:01:17.02,0:01:18.61,Default,,0,0,0,,Katha kehti hai,
+Dialogue: 0,0:01:18.61,0:01:20.51,Default,,0,0,0,,chumbak hata isliye.
+Dialogue: 0,0:01:20.51,0:01:22.42,Default,,0,0,0,,Engineer kehte hain,
+Dialogue: 0,0:01:22.42,0:01:25.91,Default,,0,0,0,,kamzor reteeli zameen aur cyclone.
+Dialogue: 0,0:01:26.36,0:01:28.92,Default,,0,0,0,,Theek kab aur kaise gira,
+Dialogue: 0,0:01:28.92,0:01:32.20,Default,,0,0,0,,purane records aaj bhi chup hain.
+Dialogue: 0,0:01:32.65,0:01:34.90,Default,,0,0,0,,Asli twist neeche hai.
+Dialogue: 0,0:01:34.90,0:01:38.64,Default,,0,0,0,,Mandir ke pathar ke pahiye sundial
+Dialogue: 0,0:01:38.64,0:01:39.02,Default,,0,0,0,,hain,
+Dialogue: 0,0:01:39.02,0:01:40.89,Default,,0,0,0,,yaani dhoop ghadi.
+Dialogue: 0,0:01:41.34,0:01:44.13,Default,,0,0,0,,Dhuri ki parchhai daanon par girti
+Dialogue: 0,0:01:44.13,0:01:44.41,Default,,0,0,0,,hai,
+Dialogue: 0,0:01:44.41,0:01:46.36,Default,,0,0,0,,aur samay batati hai.
+Dialogue: 0,0:01:46.36,0:01:47.75,Default,,0,0,0,,Aaj Konark jaakar,
+Dialogue: 0,0:01:47.75,0:01:49.70,Default,,0,0,0,,aap khud waqt padh sakte hain.
+Dialogue: 0,0:01:50.15,0:01:52.08,Default,,0,0,0,,Aapko kya lagta hai,
+Dialogue: 0,0:01:52.08,0:01:54.34,Default,,0,0,0,,jahaaz chumbak se bhatke,
+Dialogue: 0,0:01:54.34,0:01:56.27,Default,,0,0,0,,ya ret ke teelon se?
