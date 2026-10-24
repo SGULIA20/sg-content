@@ -1,0 +1,43 @@
+name: reeltip
+
+# Daily tip (founder, 24 Oct 2026): which Reel should get one of the few Meta Verified Reel links, sent to Telegram.
+on:
+  schedule:
+    - cron: '23 6 * * *'     # 07:23 Lagos
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reeltip
+  cancel-in-progress: false
+
+jobs:
+  tip:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Pick today's Reel for a link
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m engine.reeltip
+      - name: Remember what was tipped
+        if: always()
+        run: |
+          git config user.name "sg-content-bot"
+          git config user.email "sg-content-bot@users.noreply.github.com"
+          git add -f logs/reel-tip.json || true
+          git diff --cached --quiet || git commit -m "reeltip [skip ci]"
+          git pull --rebase origin main && git push origin HEAD:main

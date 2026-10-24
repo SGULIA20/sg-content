@@ -42,6 +42,8 @@ line here (who, date) in the same change. Newest first.
   (graduation SS_PERFORMANCE); a plain Reel when Instagram refuses a trial. (founder, 23 Oct 2026)
 - Long videos run a thumbnail click test: B (same picture, the title's words) two days after going public; the higher click rate
   stays, A when the numbers are missing or too few (engine/thumbtest.py). (founder, 23 Oct 2026)
+- Meta Verified (one month from 23 Oct 2026): Reel links are app-only and few, so engine/reeltip.py sends a daily Telegram tip naming
+  the Reel taking off and the exact Play link to add (max 4 a month). Renew only if the Reel links bring installs. (founder, 24 Oct 2026)
 - The weekly "what's working" report is report-only; nothing changes topics or posting on its own without the founder's yes.
 
 ## Reporting
