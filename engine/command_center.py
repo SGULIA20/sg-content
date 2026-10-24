@@ -112,6 +112,16 @@ def telegram_inbox(root: Path = ROOT, env=None, call=_call) -> list | None:
     return [str(m) for m in out.get("messages", [])]
 
 
+def replies_sync(new: list, posted: list, failed: list | None = None, root: Path = ROOT, env=None, call=_call) -> list | None:
+    """YouTube reply drafts (engine/ytreplies.py): sends new drafts (each goes to Telegram with Post / Skip buttons) and the ids
+    posted or failed since, and gets back the drafts the founder approved and not yet posted. None when unreachable."""
+    key = _key(env)
+    if not key or not _live(root):
+        return None
+    out = call("POST", "replies", key, {"new": new, "posted": posted, "failed": failed or []}, timeout=30)
+    return None if out is None else list(out.get("approved", []))
+
+
 def _json(path: Path):
     try:
         return json.loads(Path(path).read_text())
