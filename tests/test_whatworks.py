@@ -70,3 +70,12 @@ def test_writer_gets_the_lessons_for_its_channel_only(tmp_path):
     got = writer.hook_lessons("sglearning", f)
     assert got["best"][0]["hook"] == "Dividend free hai?" and "never copy" in got["note"]
     assert writer.hook_lessons("arthvan", f) == {} and writer.hook_lessons("sglearning", tmp_path / "none.json") == {}
+
+
+def test_report_says_when_youtube_numbers_were_not_read():
+    from engine import whatworks
+    row = {"channel": "sglearning", "day": "2026-10-24", "title": "t", "reach": 5, "yt_views": 0, "yt_watched_pct": None, "ig_views": 5,
+           "ig_saves": 0, "ig_skip_rate": None, "th_views": 0, "look": "doodle", "yt_error": "analytics 403: API disabled"}
+    out = whatworks.text([row], {})
+    assert "YouTube numbers NOT read" in out and "analytics 403" in out
+    assert "NOT read" not in whatworks.text([dict(row, yt_error=None)], {})

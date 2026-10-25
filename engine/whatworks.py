@@ -90,6 +90,7 @@ def collect(start: date, end: date, env=None, root: Path = ROOT, yt=youtube_by_v
         rows.append({"id": p.id, "channel": p.channel, "day": p.publish_day.isoformat(), "look": look_of(p), "title": title[:70],
                      "yt_views": y.get("views", 0), "yt_watched_pct": y.get("watched_pct"), "ig_views": i.get("views") or i.get("reach") or 0,
                      "ig_saves": i.get("saved") or 0, "ig_skip_rate": i.get("reels_skip_rate"), "th_views": t.get("views") or 0,
+                     "yt_error": yt_cache[p.channel].get("_error"),
                      "ig_watch_s": round(i["ig_reels_avg_watch_time"] / 1000, 1) if i.get("ig_reels_avg_watch_time") else None,
                      "hook": ((p.script or {}).get("hook") or "")[:160],
                      "reach": (y.get("views", 0) or 0) + (i.get("views") or i.get("reach") or 0) + (t.get("views") or 0)})
@@ -144,6 +145,10 @@ def text(week: list, looks: dict) -> str:
         for lk, g in sorted((looks.get(ch) or {}).items()):
             pct = f", watched {g['avg_watched_pct']}%" if g["avg_watched_pct"] is not None else ""
             lines.append(f"  look {lk}: {g['shorts']} Shorts, average reach {g['avg_reach']:,}{pct} (last 4 weeks)")
+    errors = sorted({f"{CHANNELS[r['channel']].display_name}: {r['yt_error']}" for r in week if r.get("yt_error")})
+    if errors:                                   # 24 Oct 2026: the Analytics API was off and every YouTube number read as 0, silently
+        lines.append("")
+        lines += ["⚠️ YouTube numbers NOT read (they show as 0 above):"] + [f"  {e}" for e in errors]
     lines.append("")
     lines.append("YouTube numbers arrive 2-3 days late, so the newest Shorts look small.")
     return "\n".join(lines)
