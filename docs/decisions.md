@@ -96,6 +96,10 @@ line here (who, date) in the same change. Newest first.
 ## Priority (founder, 25 Oct 2026)
 - The job is growing Reel and Short views. Do not propose new automation unless it directly serves reach; work on the Reels
   themselves (what viewers see and hear, topics, openings, distribution) and show it with numbers.
+- Reel first seconds (founder, 25 Oct 2026, A + B): the first picture is the story's own striking object or moment, never a cast
+  member with a phone (8 of 10 Learning with SG Shorts opened on Bhai with his phone) and never close to the last 5 Shorts' first
+  picture (lint check_opener; a miss rewrites the same topic). The first 1.3 s are a moving close-up, then a cut to the full picture
+  (storyframe PUNCH_S). C (bigger picture, bold captions) waits for the founder's look at a sample.
 - Item 13 (Waypoint ban-appeal review) dropped: the Supabase connector can reach only one organisation (ScoreMyBiz).
 
 ## Approved 24 Oct 2026 (founder: "okay yes do"), built one at a time

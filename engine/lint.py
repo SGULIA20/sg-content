@@ -48,6 +48,29 @@ def check_hook(piece: Piece) -> list:
     return out
 
 
+OPENER_SIMILAR = 0.35            # first pictures this alike look like a repeat to the viewer (founder, 25 Oct 2026)
+CAST = ("bhai", "papa", "mummy", "beta", "beti", "behen", "wife", "sg", "bank uncle", "shopkeeper")
+PHONE_WORDS = re.compile(r"\b(phone|screen|mobile|notification)\b", re.I)
+
+
+def check_opener(piece: Piece, recent: list) -> list:
+    """The first picture is the thumbnail of the scroll: never a cast member staring at a phone, never close to the last Shorts' openers.
+    `recent`: [(piece id, first-scene picture prompt)] of the same channel's last Shorts."""
+    scenes = (piece.script or {}).get("scenes") or []
+    prompt = str(((scenes[0] if scenes else {}).get("visual") or {}).get("prompt") or "")
+    if not prompt or piece.kind != "short":
+        return []
+    out = []
+    low = prompt.lower()
+    if PHONE_WORDS.search(low) and any(re.search(rf"\b{c}\b", low) for c in CAST):
+        out.append("opener: the first picture is a cast member with a phone again; open on the story's own object or moment")
+    for pid, other in recent:
+        if similarity(prompt, other) >= OPENER_SIMILAR:
+            out.append(f"opener: the first picture is too close to {pid}'s; pick a different subject")
+            break
+    return out
+
+
 _BANNED = None
 
 

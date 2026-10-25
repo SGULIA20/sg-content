@@ -216,3 +216,15 @@ def test_hook_rule_rejects_slow_openings_and_keeps_good_ones():
     assert any("needs a question" in r for r in lint.check_hook(_hooked("Ek poora mandir pahaad kaat kar bana.")))
     assert any("first spoken line" in r for r in lint.check_hook(_hooked("Petrol 2 rupaye sasta?", first="Aaj ki khabar suniye.")))
     assert lint.check_hook(_hooked("")) == ["hook: missing"]
+
+
+def test_opener_refuses_cast_with_phone_and_repeats():
+    from datetime import date
+    from engine import lint
+    from engine.pieces import Piece
+    p = Piece(id="2026-10-30-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 10, 30))
+    p.script = {"scenes": [{"visual": {"prompt": "BHAI in a hoodie on a sofa, staring at his phone, chai in hand"}}]}
+    assert any("with a phone" in r for r in lint.check_opener(p, []))
+    p.script = {"scenes": [{"visual": {"prompt": "A petrol pump price board at dawn, the diesel price glowing red"}}]}
+    assert lint.check_opener(p, []) == []
+    assert any("too close" in r for r in lint.check_opener(p, [("x", "A petrol pump price board at dawn, the diesel price glowing")]))

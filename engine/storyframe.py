@@ -14,6 +14,8 @@ HANDLE = "@sanjeev_gulia"
 END_S = 3.0                                                  # branded end card: channel name, tagline, subscribe, the question
 LOGO_PX = 150                                                # round channel badge in the panel's bottom-right corner, every frame
 WATERMARK_ALPHA = 0.10                                       # the same badge, large and faint, in the centre of every panel: a crop cannot remove it
+PUNCH_S, PUNCH_ZOOM = 1.3, 1.35                            # founder, 25 Oct 2026: the first 1.3 s are a close-up that moves, then a cut to
+                                                             # the whole picture; a still first 3 seconds read as a slideshow and get swiped
 LOGO_TEXT = {"sglearning": ("SG", "Learning"), "arthvan": ("SG", "Myth World")}
 LOGO_DIR = Path(__file__).resolve().parent.parent / "assets" / "logo"
 
@@ -58,15 +60,24 @@ def _run(args: list) -> None:
     subprocess.run(["ffmpeg", "-v", "error", "-y", *args], check=True)
 
 
+def zoom_expr(seconds: float, punch: bool) -> str:
+    """zoompan's zoom: the slow push-in; with `punch`, a moving close-up for PUNCH_S, then a cut to the full picture."""
+    slow = f"min(1+{assemble.ZOOM_PER_FRAME}*on,{assemble.ZOOM_MAX})"
+    n1 = int(round(PUNCH_S * FPS))
+    if not punch or seconds < PUNCH_S + 0.8:
+        return f"min(zoom+{assemble.ZOOM_PER_FRAME},{assemble.ZOOM_MAX})"
+    return f"if(lt(on,{n1}),{PUNCH_ZOOM}+0.004*on,min(1+{assemble.ZOOM_PER_FRAME}*(on-{n1}),{assemble.ZOOM_MAX}))"
+
+
 def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, cue_overlays: list, chip: Path | None = None,
-          logo_png: Path | None = None, watermark_png: Path | None = None) -> Path:
+          logo_png: Path | None = None, watermark_png: Path | None = None, punch: bool = False) -> Path:
     """Panel with push-in in the middle band, black bands top and bottom, title band, optional evidence chip, caption cues overlaid."""
     w, h = size
     ph = int(h * PANEL)
     py = int(h * TOP)
     frames = max(1, int(round(seconds * FPS)))
     chain = (f"[0:v]scale={w * 2}:{ph * 2}:force_original_aspect_ratio=increase,crop={w * 2}:{ph * 2},"
-             f"zoompan=z='min(zoom+{assemble.ZOOM_PER_FRAME},{assemble.ZOOM_MAX})':d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={w}x{ph}:fps={FPS},"
+             f"zoompan=z='{zoom_expr(seconds, punch)}':d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={w}x{ph}:fps={FPS},"
              f"pad={w}:{h}:0:{py}:black[base];[base][1:v]overlay=0:0:shortest=1[t]")
     inputs = ["-loop", "1", "-i", str(panel), "-loop", "1", "-i", str(title_png)]
     last, k0 = "[t]", 2
@@ -123,7 +134,8 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
             chip = out_dir / f"label-{scene_d['label']}.png"
             if not chip.exists():
                 cards.render("label", {"label": scene_d["label"]}, chip, (400, 90))
-        clips.append(scene(panel, dur, size, out_dir / f"scene{i:02d}.mp4", title_png, overlays, chip=chip, logo_png=badge, watermark_png=big_badge))
+        clips.append(scene(panel, dur, size, out_dir / f"scene{i:02d}.mp4", title_png, overlays, chip=chip, logo_png=badge, watermark_png=big_badge,
+                           punch=(i == 0 and piece.kind == "short")))
     (out_dir / "captions.ass").write_text(captions.ass(all_cues, size))
     clips.append(end_card(piece, size, out_dir))
     concat = out_dir / "scenes.txt"
