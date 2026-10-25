@@ -93,6 +93,11 @@ line here (who, date) in the same change. Newest first.
 - All times told to the founder are in **WAT (Lagos)**. (founder, 22 Oct 2026)
 - The control room's live status refreshes on its own every 30 seconds. (founder, 22 Oct 2026)
 
+## Priority (founder, 25 Oct 2026)
+- The job is growing Reel and Short views. Do not propose new automation unless it directly serves reach; work on the Reels
+  themselves (what viewers see and hear, topics, openings, distribution) and show it with numbers.
+- Item 13 (Waypoint ban-appeal review) dropped: the Supabase connector can reach only one organisation (ScoreMyBiz).
+
 ## Approved 24 Oct 2026 (founder: "okay yes do"), built one at a time
 - A: each YouTube Short description carries an app line with a tagged Play link (ScoreMyBiz under Learning with SG, Waypoint under
   SG-MYTH-WORLD). The video itself does not change.
