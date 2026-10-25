@@ -53,6 +53,28 @@ CAST = ("bhai", "papa", "mummy", "beta", "beti", "behen", "wife", "sg", "bank un
 PHONE_WORDS = re.compile(r"\b(phone|screen|mobile|notification)\b", re.I)
 
 
+SEND = re.compile(r"\b(bhejo|bhej do|bhejiye)\b", re.I)
+SEND_WORDS_MAX = 14
+
+
+def check_send(piece: Piece) -> list:
+    """A Short ends by naming who to send it to: sends are Instagram's strongest signal for new viewers (founder, 25 Oct 2026)."""
+    if piece.kind != "short":
+        return []
+    s = piece.script or {}
+    line = str(s.get("end_question") or "").strip()
+    scenes = s.get("scenes") or []
+    last = str((scenes[-1] if scenes else {}).get("vo") or "")
+    out = []
+    if not SEND.search(line):
+        out.append("send: the Short must end with who to send it to ('... ko bhejo, jo ...')")
+    elif len(re.findall(r"\w+", line)) > SEND_WORDS_MAX:
+        out.append(f"send: the send line is longer than {SEND_WORDS_MAX} words")
+    elif not SEND.search(last):
+        out.append("send: the last spoken scene must say the send line")
+    return out
+
+
 def check_opener(piece: Piece, recent: list) -> list:
     """The first picture is the thumbnail of the scroll: never a cast member staring at a phone, never close to the last Shorts' openers.
     `recent`: [(piece id, first-scene picture prompt)] of the same channel's last Shorts."""

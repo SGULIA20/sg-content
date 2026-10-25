@@ -73,5 +73,87 @@
     "avg_watched_pct": null
    }
   }
- }
+ },
+ "month": [
+  {
+   "id": "2026-10-21-arthvan-short",
+   "channel": "arthvan",
+   "day": "2026-10-21",
+   "title": "Ram Setu: 103 reefs ya kisi ka banaya pul?",
+   "ig_views": 1565,
+   "ig_skip_rate": 30.2
+  },
+  {
+   "id": "2026-10-21-sglearning-short",
+   "channel": "sglearning",
+   "day": "2026-10-21",
+   "title": "Dividend ka ₹6.50 free hai? Agle din share kyun gira",
+   "ig_views": 1359,
+   "ig_skip_rate": 34.6
+  },
+  {
+   "id": "2026-10-22-arthvan-short",
+   "channel": "arthvan",
+   "day": "2026-10-22",
+   "title": "Kailash par chadhna mumkin, phir kyon nahi?",
+   "ig_views": 72,
+   "ig_skip_rate": 58.9
+  },
+  {
+   "id": "2026-10-22-sglearning-short",
+   "channel": "sglearning",
+   "day": "2026-10-22",
+   "title": "US Stocks 1 dollar se? Asli kharcha kya hai",
+   "ig_views": 1451,
+   "ig_skip_rate": 34.1
+  },
+  {
+   "id": "2026-10-23-arthvan-short",
+   "channel": "arthvan",
+   "day": "2026-10-23",
+   "title": "Kedarnath 2013: Ek patthar ne mandir bachaya?",
+   "ig_views": 338,
+   "ig_skip_rate": 43
+  },
+  {
+   "id": "2026-10-23-sglearning-short",
+   "channel": "sglearning",
+   "day": "2026-10-23",
+   "title": "Meta $145B AI kharcha: SIP par kya asar?",
+   "ig_views": 62,
+   "ig_skip_rate": 60.4
+  },
+  {
+   "id": "2026-10-24-arthvan-short",
+   "channel": "arthvan",
+   "day": "2026-10-24",
+   "title": "Chakravyuh ka naksha: 5,000 saal purana?",
+   "ig_views": 174,
+   "ig_skip_rate": 61.2
+  },
+  {
+   "id": "2026-10-24-sglearning-short",
+   "channel": "sglearning",
+   "day": "2026-10-24",
+   "title": "Core sector 7.9% upar, petrol sasta kyun nahi?",
+   "ig_views": 1240,
+   "ig_skip_rate": 22.3
+  },
+  {
+   "id": "2026-10-25-arthvan-short",
+   "channel": "arthvan",
+   "day": "2026-10-25",
+   "title": "Rakhigarhi DNA: Harappa ke log kaun the?",
+   "ig_views": 0,
+   "ig_skip_rate": null
+  },
+  {
+   "id": "2026-10-25-sglearning-short",
+   "channel": "sglearning",
+   "day": "2026-10-25",
+   "title": "SIP fees: AMC ka 4.22 billion profit kaise?",
+   "ig_views": 0,
+   "ig_skip_rate": null
+  }
+ ]
 }
