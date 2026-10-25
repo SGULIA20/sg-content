@@ -48,9 +48,13 @@ def fetch_app_log(url: str = APP_LOG_URL) -> list:
 
 
 def _app_rows(day: date, log: list) -> list:
-    """Three rows for the app whose day it is: Reel, Post, Story."""
-    app = app_for(day)
+    """Three rows for the app whose day it is: Reel, Post, Story. App posts are Mon/Wed/Fri (founder, 24 Oct 2026); on other days
+    there are no app rows unless something did go out (a festival post), so a day off is never reported as NOT POSTED."""
     today = [e for e in log if e.get("date") == day.isoformat() and e.get("status") == "published"]
+    posted = [e.get("app") for e in today if e.get("app") in APP_NAMES]
+    if day.weekday() not in APP_POST_WEEKDAYS and not posted:
+        return []
+    app = posted[0] if posted else app_for(day)
     insta = {}
     for e in today:
         if e.get("app") == app and not e.get("channel") and isinstance(e.get("ids"), dict):
