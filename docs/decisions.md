@@ -71,6 +71,10 @@ line here (who, date) in the same change. Newest first.
   Learning loop: the weekly report saves the three best and worst openings per channel (logs/hook-lessons.json, from 6 Shorts) and
   the writer reads them as examples. The opening rule (item 2) was not chosen; the data later showed the same scene-setting opener
   on both a 1,358-view and a 59-view Short, so topic, not that opener, made the difference.
+- LinkedIn (founder, 25 Oct 2026, after the 90-day export: 1,245 followers; our posts 50-120 impressions, the founder's own
+  hand post of 9 Oct 3,213): post at 08:10 WAT (clock; was 04:40) so the founder can reply in the first hour, with a Telegram
+  nudge; Mon/Wed/Fri as a swipeable document (opening, card, one page per point, question), other days the picture, two-week
+  test; opening line at most 140 characters (lint). Same visual style for now.
 - Reel link tips: up to 8 a month (founder, 24 Oct 2026: their Meta Verified plan allows 8; public pages list 2/4/6 by tier).
 - Long videos run a thumbnail click test: B (same picture, the title's words) two days after going public; the higher click rate
   stays, A when the numbers are missing or too few (engine/thumbtest.py). (founder, 23 Oct 2026)
