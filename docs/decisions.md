@@ -66,6 +66,11 @@ line here (who, date) in the same change. Newest first.
   The 9 pm card lists each Trial Reel once its 72 hours are over (views, likes, comments, shares, saves, link) so the founder can tap
   "Share to followers" by hand when Instagram did not; Meta's API can neither read nor do that step (founder, 24 Oct 2026, option 2).
   Sharing stays a manual tap: no re-posting the video as a normal Reel, no app automation (founder, 24 Oct 2026, "keep the tap").
+- Reels (founder, 25 Oct 2026, after the 24 Oct diagnosis): Shorts keep their length (item 1 left). Finance topics favour the viewer's
+  own wallet (engine/topics.py WALLET); myth topics put famous, easy-to-picture places first (`priority: 1` in myth-topics.yaml).
+  Learning loop: the weekly report saves the three best and worst openings per channel (logs/hook-lessons.json, from 6 Shorts) and
+  the writer reads them as examples. The opening rule (item 2) was not chosen; the data later showed the same scene-setting opener
+  on both a 1,358-view and a 59-view Short, so topic, not that opener, made the difference.
 - Reel link tips: up to 8 a month (founder, 24 Oct 2026: their Meta Verified plan allows 8; public pages list 2/4/6 by tier).
 - Long videos run a thumbnail click test: B (same picture, the title's words) two days after going public; the higher click rate
   stays, A when the numbers are missing or too few (engine/thumbtest.py). (founder, 23 Oct 2026)

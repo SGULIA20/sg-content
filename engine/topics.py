@@ -24,6 +24,11 @@ HOUSEHOLD = ["emi", "petrol", "diesel", "tax", "salary", "sip", "price", "prices
              "pension", "gold", "rupee", "gst", "mutual fund", "upi", "deposit", "insurance", "home loan", "rent", "repo rate",
              "interest rate", "fuel", "crude", "oil", "sensex", "nifty", "market", "stock", "share", "profit", "results", "ipo",
              "crore", "lakh", "jobs", "layoff", "income", "subsidy", "scam", "fraud", "fine", "penalty"]
+# The viewer's own wallet (founder, 24 Oct 2026): on 21-24 Oct the Shorts about dividends, US stocks for 1 dollar and petrol prices
+# reached about 1,300-1,500 people each on Instagram; the one about Meta's AI spending reached 59. Market words still count, less.
+WALLET = ["emi", "petrol", "diesel", "tax", "salary", "sip", "price", "prices", "inflation", "loan", "fd ", "epf", "pension", "gold",
+          "rupee", "gst", "mutual fund", "upi", "deposit", "insurance", "home loan", "rent", "repo rate", "interest rate", "fuel",
+          "income", "subsidy", "scam", "fraud", "dividend", "savings", "credit card", "lpg", "electricity", "ticket", "fees"]
 NUMBER = re.compile(r"\d|lakh|crore|%|\$")
 BANNED_TOPIC = ["modi", "rahul gandhi", "bjp", "congress", "election", "rally", "pakistan", "minister", "parliament",
                 "opposition", "cm ", "pm ",
@@ -95,7 +100,7 @@ def fetch_all(fetch=None) -> list:
 
 def household(item: dict) -> bool:
     blob = f"{item.get('title', '')} {item.get('summary', '')}".lower()
-    return any(k in blob for k in HOUSEHOLD)
+    return any(k in blob for k in HOUSEHOLD + WALLET)
 
 
 def score(item: dict) -> int:
@@ -107,8 +112,10 @@ def score(item: dict) -> int:
     s = item.get("rank", 0)
     if NUMBER.search(blob):
         s += 3
-    if any(k in blob for k in HOUSEHOLD):
-        s += 2
+    if any(k in blob for k in WALLET):
+        s += 4
+    elif any(k in blob for k in HOUSEHOLD):
+        s += 1
     return s
 
 
@@ -138,8 +145,10 @@ def next_long_finance(root: Path, used_ids: set) -> dict:
 
 
 def next_myth(root: Path, used_ids: set) -> dict:
+    """The next unused topic; a famous, visual place (`priority: 1` in the bank) goes first (founder, 24 Oct 2026: Ram Setu reached
+    1,564 on Instagram, Kailash's 'who climbed it' question 71; places people already know and can picture travel further)."""
     bank = load_myth_bank(root)
-    for t in bank:
-        if t["id"] not in used_ids:
-            return t
+    fresh = [t for t in bank if t["id"] not in used_ids]
+    if fresh:
+        return max(fresh, key=lambda t: (t.get("priority", 0), -bank.index(t)))
     return bank[0]                                                 # every topic used once: start the rotation again

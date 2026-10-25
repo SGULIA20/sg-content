@@ -112,6 +112,18 @@ def system_prompt(channel: str, root: Path = CONTENT_DIR) -> str:
     return base.replace("{formula}", formula)
 
 
+def hook_lessons(channel: str, path: Path | None = None) -> dict:
+    """Last month's best and worst openings on this channel with their Instagram numbers (engine/whatworks.py, weekly), as examples
+    of what made people stay or swipe away in the first 3 seconds. Data, not instructions; empty until there are enough Shorts."""
+    try:
+        data = json.loads(Path(path or LOGS_DIR / "hook-lessons.json").read_text())
+    except (FileNotFoundError, ValueError):
+        return {}
+    got = data.get(channel) or {}
+    return {"note": "Openings of our own recent Shorts with their Instagram views and the share who swiped away in the first 3 seconds. "
+                    "Learn from what made people stay; never copy a line.", **got} if got else {}
+
+
 def _user_message(piece: Piece, sheet: dict, library: list, hashtags: dict) -> str:
     return json.dumps({
         "piece": {"id": piece.id, "channel": piece.channel, "kind": piece.kind, "publish_day": piece.publish_day.isoformat(),
@@ -119,6 +131,7 @@ def _user_message(piece: Piece, sheet: dict, library: list, hashtags: dict) -> s
         "FACT_SHEET": sheet,
         "CLAIMS_LIBRARY": [{"text": e.get("text"), "number": e.get("number"), "unit": e.get("unit"), "source": e.get("source_url")} for e in library],
         "ALLOWED_HASHTAGS": hashtags.get(piece.channel, {}),
+        "OPENINGS_THAT_WORKED": hook_lessons(piece.channel),
         "REVISION": (f"Your previous draft was rejected: {piece.topic['revise']}. Rewrite the same piece, same facts, trimmed to the middle of the allowed range "
                      f"(count the words in `vo` yourself before answering).") if piece.topic.get("revise") else "",
     }, ensure_ascii=False, indent=1, default=lambda o: o.isoformat() if hasattr(o, "isoformat") else str(o))

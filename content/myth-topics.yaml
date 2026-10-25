@@ -2,6 +2,7 @@
 # allowed_sources: where the research step may take facts from (plus the scriptures named). Every claim is labelled
 # scripture / archaeology / disputed / legend on screen. No communal content, no debunking of faith.
 - id: dwarka-underwater
+  priority: 1          # famous and easy to picture (24 Oct 2026)
   title_hi: Samundar ke neeche Dwarka
   place: Dwarka, Gujarat
   hooks: ["Samundar ke neeche 3,000 saal purani deewarein?", "NIO ke goton ne Dwarka ke paas kya nikala?", "Kya yeh wahi Dwarka hai jo Mahabharat mein doobi?"]
@@ -116,6 +117,7 @@
   allowed_sources: [en.wikipedia.org, maharashtratourism.gov.in, news reports with dates]
   notes: Legend lane plus documented modern facts (UCO Bank branch 2011); report thefts honestly.
 - id: karni-mata-rats
+  priority: 1          # famous and easy to picture (24 Oct 2026)
   title_hi: Karni Mata, 25,000 chuhon ka mandir
   place: Deshnoke, Rajasthan
   hooks: ["25,000 chuhe aur ek bhi bimari nahi?", "Safed chuha dikha to kya hota hai?", "Chuhe mandir ke bahar kyon nahi jaate?"]
@@ -134,30 +136,35 @@
   allowed_sources: [asi.nic.in, UNESCO whc.unesco.org, en.wikipedia.org]
   notes: Pure archaeology lane.
 - id: sanchi-stupa
+  priority: 1          # famous and easy to picture (24 Oct 2026)
   title_hi: Sanchi, Ashok ka stupa
   place: Sanchi, Madhya Pradesh
   hooks: ["2,300 saal purana stupa jise angrezon ne phir se joda?", "Ashok ne yahan kya chhupaya?", "Sanchi ke darwazon par kaun si kahaniyan?"]
   allowed_sources: [asi.nic.in, UNESCO whc.unesco.org, en.wikipedia.org]
   notes: Buddhist heritage; archaeology lane.
 - id: nalanda-library
+  priority: 1          # famous and easy to picture (24 Oct 2026)
   title_hi: Nalanda ki library 3 mahine tak jali
   place: Nalanda, Bihar
   hooks: ["9 manzil ki library, 90 lakh kitaabein?", "Nalanda ko kisne jalaya, kitne din jali?", "Khudai mein kya bacha?"]
   allowed_sources: [asi.nic.in, en.wikipedia.org, Xuanzang (Hiuen Tsang) records, UNESCO whc.unesco.org]
   notes: The '3 months' and '9 million books' are from later sources; label disputed; no communal angle on the destruction.
 - id: iron-pillar-delhi
+  priority: 1          # famous and easy to picture (24 Oct 2026)
   title_hi: Delhi ka loha jo 1,600 saal se zang nahi khaya
   place: Mehrauli, Delhi
   hooks: ["1,600 saal, 6 ton loha, zero zang?", "IIT Kanpur ne is lohe mein kya paya?", "Yeh khamba Delhi kaise aaya?"]
   allowed_sources: [asi.nic.in, en.wikipedia.org, IIT Kanpur (R. Balasubramaniam) papers]
   notes: Science explains it (phosphorus, misawite layer); say so with the inscription history.
 - id: chand-baori
+  priority: 1          # famous and easy to picture (24 Oct 2026)
   title_hi: Chand Baori, 3,500 seedhiyon ka kuan
   place: Abhaneri, Rajasthan
   hooks: ["13 manzil neeche, 3,500 seedhiyan, 1,200 saal purana?", "Ek raat mein bhoot ne banaya?", "Paani 5 degree thanda kaise?"]
   allowed_sources: [asi.nic.in, tourism.rajasthan.gov.in, en.wikipedia.org]
   notes: Stepwell engineering; the one-night story is legend.
 - id: chausath-yogini
+  priority: 1          # famous and easy to picture (24 Oct 2026)
   title_hi: Chausath Yogini aur Sansad ka design
   place: Morena, Madhya Pradesh
   hooks: ["Kya Parliament ka design is mandir se aaya?", "64 yoginiyon ka gol mandir", "Tantra ka vigyan ya kahani?"]
@@ -182,6 +189,7 @@
   allowed_sources: [en.wikipedia.org, Valmiki Ramayana (Kishkindha Kanda), TTD statement 2021]
   notes: Present all three claims as disputed; scripture for the birth story.
 - id: ravana-lanka-location
+  priority: 1          # famous and easy to picture (24 Oct 2026)
   title_hi: Ravan ki Lanka kahan thi
   place: Sri Lanka / disputed
   hooks: ["Lanka Sri Lanka hi thi ya kahin aur?", "Sigiriya Ravan ka mahal?", "Ashok Vatika aaj kahan?"]
@@ -194,6 +202,7 @@
   allowed_sources: [gsi.gov.in, en.wikipedia.org, Skanda Purana, Kerala Mahatmya]
   notes: Scripture/legend vs coastal geology (sea-level change); both told, both labelled.
 - id: mahabalipuram-seven-pagodas
+  priority: 1          # famous and easy to picture (24 Oct 2026)
   title_hi: Mahabalipuram ke 7 mandir, 6 samundar mein?
   place: Mahabalipuram, Tamil Nadu
   hooks: ["2004 sunami ne samundar se kya bahar nikala?", "7 pagoda ki kahani 1,300 saal purani?", "Goton ko samundar mein kya mila?"]
@@ -206,6 +215,7 @@
   allowed_sources: [nio.res.in, en.wikipedia.org, Silappatikaram (Sangam literature)]
   notes: Kumari Kandam is legend; the offshore structures are archaeology with dating disputes.
 - id: kumbhalgarh-wall
+  priority: 1          # famous and easy to picture (24 Oct 2026)
   title_hi: Kumbhalgarh, 36 km ki deewar
   place: Kumbhalgarh, Rajasthan
   hooks: ["China ke baad duniya ki sabse lambi deewar India mein?", "Deewar itni chaudi ki 8 ghode saath chalein?", "Ek sant ki bali ki kahani"]
@@ -218,6 +228,7 @@
   allowed_sources: [asi.nic.in, en.wikipedia.org, news reports with dates (K. K. Muhammed)]
   notes: Documented modern story; good evidence lane.
 - id: unakoti
+  priority: 1          # famous and easy to picture (24 Oct 2026)
   title_hi: Unakoti, ek karod se ek kam moortiyan
   place: Unakoti, Tripura
   hooks: ["Pahad par 99,99,999 moortiyan?", "Ek raat mein sab patthar ban gaye?", "Kisne banaya, koi nahi jaanta"]
@@ -242,6 +253,7 @@
   allowed_sources: [asi.nic.in, tnarch.gov.in, en.wikipedia.org]
   notes: Archaeology lane; Berlin museum artefacts documented.
 - id: tirupati-facts
+  priority: 1          # famous and easy to picture (24 Oct 2026)
   title_hi: Tirupati, duniya ka sabse ameer mandir
   place: Tirumala, Andhra Pradesh
   hooks: ["Roz 1 lakh log, kitna daan?", "Balaji ki moorti par asli baal?", "Hundi ka paisa kahan jaata hai?"]

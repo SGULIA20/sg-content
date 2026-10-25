@@ -46,3 +46,27 @@ def test_instagram_metric_names_meta_does_not_know_are_skipped_one_by_one():
 
 def test_the_look_name_comes_from_the_channel_style_file():
     assert art.look("sglearning") == "claymation" and art.look("arthvan") == "indian-comic"
+
+
+def _row(ch, views, hook, skip=50.0):
+    return {"channel": ch, "ig_views": views, "hook": hook, "ig_skip_rate": skip, "ig_watch_s": 9.0}
+
+
+def test_lessons_keep_the_three_best_and_worst_openings_per_channel():
+    from engine import whatworks
+    rows = [_row("sglearning", v, f"h{v}") for v in (59, 1449, 1235, 300, 1358, 20)] + [_row("arthvan", 100, "x")]
+    out = whatworks.lessons(rows)
+    assert [b["hook"] for b in out["sglearning"]["best"]] == ["h1449", "h1358", "h1235"]
+    assert [w["hook"] for w in out["sglearning"]["worst"]] == ["h20", "h59", "h300"]
+    assert "arthvan" not in out                                    # one Short teaches nothing yet
+    assert "sglearning" not in whatworks.lessons(rows[:5])         # five would put a Short in both lists
+
+
+def test_writer_gets_the_lessons_for_its_channel_only(tmp_path):
+    import json
+    from engine import writer
+    f = tmp_path / "hook-lessons.json"
+    f.write_text(json.dumps({"end": "2026-10-25", "sglearning": {"best": [{"hook": "Dividend free hai?"}], "worst": []}}))
+    got = writer.hook_lessons("sglearning", f)
+    assert got["best"][0]["hook"] == "Dividend free hai?" and "never copy" in got["note"]
+    assert writer.hook_lessons("arthvan", f) == {} and writer.hook_lessons("sglearning", tmp_path / "none.json") == {}

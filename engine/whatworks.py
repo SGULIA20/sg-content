@@ -90,6 +90,8 @@ def collect(start: date, end: date, env=None, root: Path = ROOT, yt=youtube_by_v
         rows.append({"id": p.id, "channel": p.channel, "day": p.publish_day.isoformat(), "look": look_of(p), "title": title[:70],
                      "yt_views": y.get("views", 0), "yt_watched_pct": y.get("watched_pct"), "ig_views": i.get("views") or i.get("reach") or 0,
                      "ig_saves": i.get("saved") or 0, "ig_skip_rate": i.get("reels_skip_rate"), "th_views": t.get("views") or 0,
+                     "ig_watch_s": round(i["ig_reels_avg_watch_time"] / 1000, 1) if i.get("ig_reels_avg_watch_time") else None,
+                     "hook": ((p.script or {}).get("hook") or "")[:160],
                      "reach": (y.get("views", 0) or 0) + (i.get("views") or i.get("reach") or 0) + (t.get("views") or 0)})
     return rows
 
@@ -108,6 +110,23 @@ def by_look(rows: list) -> dict:
                  for lk, g in looks.items()} for ch, looks in out.items()}
 
 
+LESSONS = ROOT / "logs" / "hook-lessons.json"
+LESSON_MIN = 6                       # three best and three worst, never the same Short in both
+
+
+def lessons(rows: list) -> dict:
+    """{channel: {"best": [...], "worst": [...]}}: the three openings with the most and the fewest Instagram views over the last four
+    weeks, with how many people swiped away in the first 3 seconds. The writer reads them as examples (founder, 24 Oct 2026)."""
+    out = {}
+    for ch in CHANNELS:
+        rs = sorted((r for r in rows if r["channel"] == ch and r.get("hook") and r["ig_views"]), key=lambda r: r["ig_views"], reverse=True)
+        if len(rs) < LESSON_MIN:
+            continue
+        pick = lambda r: {"hook": r["hook"], "ig_views": r["ig_views"], "skipped_early_pct": r["ig_skip_rate"], "watched_s": r.get("ig_watch_s")}
+        out[ch] = {"best": [pick(r) for r in rs[:3]], "worst": [pick(r) for r in rs[-3:][::-1]]}
+    return out
+
+
 def text(week: list, looks: dict) -> str:
     lines = ["📊 What's working (last 7 days, report only: nothing changes on its own)"]
     for ch in CHANNELS:
@@ -117,6 +136,7 @@ def text(week: list, looks: dict) -> str:
         for r in rs:
             pct = f", watched {r['yt_watched_pct']}%" if r["yt_watched_pct"] is not None else ""
             skip = f", skipped early {r['ig_skip_rate']}%" if r["ig_skip_rate"] is not None else ""
+            skip += f", watched {r['ig_watch_s']} s" if r.get("ig_watch_s") else ""
             lines.append(f"  {r['day'][5:]} {r['title']}: reach {r['reach']:,} (YT {r['yt_views']:,}{pct}; IG {r['ig_views']:,}, saves {r['ig_saves']}{skip}; Threads {r['th_views']:,})")
         if len(rs) >= 2:
             lines.append(f"  ⬆ strongest: {rs[0]['title']}")
@@ -139,6 +159,9 @@ def main(argv=None) -> int:
     out = text(week, looks)
     (ROOT / "logs").mkdir(parents=True, exist_ok=True)
     (ROOT / "logs" / "whatworks.json").write_text(json.dumps({"end": end.isoformat(), "week": week, "looks": looks}, indent=1, ensure_ascii=False))
+    learnt = lessons(month)
+    if learnt:
+        LESSONS.write_text(json.dumps({"end": end.isoformat(), **learnt}, indent=1, ensure_ascii=False))
     print(out)
     if "--send" in argv:
         telegram.send(out)
