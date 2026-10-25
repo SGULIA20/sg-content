@@ -1,0 +1,389 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "archaeology",
+   "number": 1818.0,
+   "quote": "Since the fourteenth century Sanchi remained deserted and uncared for till 1818 when General Taylor rediscovered the site.",
+   "source_date": "2023",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/tourist-monuments-madhya-pradesh/",
+   "text": "The deserted and overgrown ruins of Sanchi were rediscovered by British cavalry officer General Henry Taylor in 1818.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1822.0,
+   "quote": "In 1822, Captain Johnson, Assistant Political Agent in Bhopal, opened up Stupa 1 from top to bottom on one side, thus leaving a great breach which resulted in the collapse of the West Gateway and a part of the enclosing balustrade.",
+   "source_date": "1918",
+   "source_name": "John Marshall, A Guide to Sanchi",
+   "source_url": "https://en.wikipedia.org/wiki/Sanchi",
+   "text": "In 1822, Captain Johnson breached the Great Stupa from top to bottom on its western side while digging for buried treasure, causing the western gateway to collapse.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1851.0,
+   "quote": "They also sank a shaft at the centre of Stupa 1, which, however, failed to yield any relics.",
+   "source_date": "1854",
+   "source_name": "Alexander Cunningham, The Bhilsa Topes",
+   "source_url": "https://en.wikipedia.org/wiki/Sanchi",
+   "text": "Alexander Cunningham and Captain F. C. Maisey sank a vertical shaft through the centre of the Great Stupa in 1851 but found no relic casket.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1851.0,
+   "quote": "The relics of Sariputra and Maha Moggalana, the two foremost disciples of the Buddha, were found by Colonel Cunningham in 1851 in this stupa, enshrined at the centre of the dome on the level of the terrace.",
+   "source_date": "1854",
+   "source_name": "Alexander Cunningham, The Bhilsa Topes",
+   "source_url": "https://en.wikipedia.org/wiki/Sanchi",
+   "text": "Alexander Cunningham discovered inscribed stone relic caskets bearing bone fragments of the Buddha's chief disciples, Sariputta and Maha-Moggallana, inside Stupa 3 at Sanchi in 1851.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1919.0,
+   "quote": "Sir John Marshall established an archaeological museum in 1919, which was later transformed into the present site museum at Sanchi.",
+   "source_date": "2023",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/tourist-monuments-madhya-pradesh/",
+   "text": "Archaeological Survey of India Director General Sir John Marshall directed the comprehensive restoration of Sanchi's monuments and reconstructed the fallen gateways between 1912 and 1919.",
+   "unit": "CE"
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "When he was heir-apparent and was journeying as Viceroy to Ujjain, he is said to have halted at Vidisha (10 kilometers from Sanchi), and there married the daughter of a local banker. She was called Devi and later gave Ashoka two sons, Ujjeniya and Mahendra, and a daughter Sanghamitta.",
+   "source_date": "1912",
+   "source_name": "Mahavamsa, Chapter XIII",
+   "source_url": "https://en.wikipedia.org/wiki/Mahavamsa",
+   "text": "The Mahavamsa records that Ashoka married Devi, the daughter of a merchant in nearby Vidisha, who later established a monastery on the hill of Chetiyagiri.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": 84000.0,
+   "quote": "He erected the Great Stupa (Stupa 1) here after redistribution of mortal remains of Lord Buddha for erecting several stupas all over the country in order to spread Buddhism.",
+   "source_date": "1983",
+   "source_name": "Ashokavadana",
+   "source_url": "https://en.wikipedia.org/wiki/Ashokavadana",
+   "text": "Popular Buddhist tradition holds that Emperor Ashoka recovered the Buddha's relics from seven ancient mounds and redistributed them into eighty-four thousand stupas across the realm.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": 1.0,
+   "quote": "In the first century BC the Andhra-Satavahanas, who had extended their sway over the eastern Malwa, caused the elaborately carved gateways to Stupa 1. The Great Stupa of Sanchi displays an austere grandeur and the exquisite carvings of the doorway depict in detail the significant episodes and miracles from Lord Buddha's life and events depicted in the Buddhist Jataka stories.",
+   "source_date": "2023",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/tourist-monuments-madhya-pradesh/",
+   "text": "Four intricately sculpted sandstone gateways added to Stupa 1 during the 1st century BCE portray Buddhist Jataka stories such as the Chaddanta and Vessantara tales.",
+   "unit": "BCE"
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "The Divyavadana, a Buddhist Sanskrit work from the early centuries of the Common Era, describes the Brahmin ruler Pushyamitra Shunga as a great persecutor of Buddhists.",
+   "source_date": "1886",
+   "source_name": "Divyavadana",
+   "source_url": "https://en.wikipedia.org/wiki/Divyavadana",
+   "text": "The Sanskrit chronicle Divyavadana asserts that the Shunga ruler Pushyamitra Shunga waged an extermination campaign against Buddhist shrines and monastics in northern India.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": 2.0,
+   "quote": "He also theorized that the Sanchi stupa was vandalized in 2nd century BCE (that is, during Pushyamitra's reign), before being rebuilt on a larger scale.",
+   "source_date": "1955",
+   "source_name": "John Marshall / Romila Thapar",
+   "source_url": "https://en.wikipedia.org/wiki/Pushyamitra_Shunga",
+   "text": "Historians disagree on whether 2nd-century BCE damage to Ashoka's brick stupa reflects targeted persecution by Pushyamitra Shunga or ordinary weathering followed by peaceful Shunga-period expansion.",
+   "unit": "BCE"
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "Susan Huntington of Ohio State University is of the opinion that most of the reliefs in Bharhut, Sanchi and Amaravati represent worship at sacred Buddhist sites and not aniconic representations pointing to the Buddha.",
+   "source_date": "1990",
+   "source_name": "Art Journal (Susan L. Huntington) / Ars Orientalis (Vidya Dehejia)",
+   "source_url": "https://www.jstor.org/stable/777142",
+   "text": "Scholars disagree over whether the empty thrones, wheels, and footprints on Sanchi's gateways represent aniconic surrogates for the Buddha or denote sacred pilgrimage sites and devotional monuments.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 16.4,
+   "quote": "Standing roughly 100 feet high with a base diameter of around 350 feet, it is significantly larger than Sanchi Stupa, which measures 54 feet in height and 120 feet in diameter.",
+   "source_date": "2023",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/tourist-monuments-madhya-pradesh/",
+   "text": "The preserved Great Stupa structure measures approximately 16.4 metres in height and roughly 36.6 metres in dome diameter.",
+   "unit": "metres"
+  }
+ ],
+ "id": "2026-10-31-arthvan-short",
+ "ids": {
+  "budget": {
+   "day": "2026-10-25",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 21.0,
+   "usd": 0.090744,
+   "voice": 13
+  },
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "kOBSksIR8lw"
+ },
+ "kind": "short",
+ "publish_day": "2026-10-31",
+ "reasons": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Sanchi ke stupa ke andar Buddha ki asthiyan thi ya nahi?\nKhazane ke laalach mein ek taraf se kaata gaya, beech mein gaddha khoda gaya, andar kuch nahi mila.\nPar paas ke chhote stupa ne ek alag hi kahani sunayi.\nAapke hisaab se asthiyan kahan gayi?\nUs dost ko bhejo jo Sanchi ghoomne ka plan bana raha hai.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#IndianHistory",
+     "#Archaeology",
+     "#AncientIndia",
+     "#Itihaas",
+     "#Rahasya",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Sanchi ke stupa ke andar Buddha ki asthiyan thi ya nahi? Cunningham ne beech mein gaddha khoda, andar koi asthi nahi mili. Aapke hisaab se kahan gayi? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Sanchi ke stupa ke andar Buddha ki asthiyan thi ya nahi? Cunningham ne beech mein gaddha khoda aur kuch nahi mila, par paas ke chhote stupa mein Buddha ke sabse bade shishyon ki dibbiyan mil gayi. Sabut ke saath dekhiye kya pata hai aur kya aaj bhi rahasya hai. Us dost ko bhejo jo Sanchi ghoomne ka plan bana raha hai.",
+    "tags": [
+     "Sanchi",
+     "Sanchi Stupa",
+     "Ashok",
+     "Buddha",
+     "Cunningham",
+     "John Marshall",
+     "ASI",
+     "Madhya Pradesh",
+     "Indian History",
+     "Archaeology",
+     "Buddhist heritage",
+     "Sabut ke saath"
+    ],
+    "title": "Sanchi Stupa ke andar kya tha? Ashok ka raaz"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Aapke hisaab se, bade stupa ki asthiyan kahan gayi?",
+  "hook": "Sanchi ke stupa ke andar Buddha ki asthiyan thi ya nahi?",
+  "scenes": [
+   {
+    "facts_used": [
+     2,
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Wide drawn panel of the Great Stupa of Sanchi on a hilltop at dusk, a huge hemispherical stone dome with a carved stone gateway in front, a single oil lamp glowing at its base, mysterious purple sky, hand-drawn storybook style, no text",
+     "type": "art"
+    },
+    "vo": "Sanchi ke stupa ke andar Buddha ki asthiyan thi ya nahi?"
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Ancient Indian town of Vidisha, a young prince in royal robes seen from behind on horseback entering a busy market lane with a retinue, palm-leaf manuscript pages framing the scene, warm golden light, drawn illustration, no text",
+     "type": "art"
+    },
+    "vo": "Mahavamsa, Sri Lanka ka purana granth, kehta hai: yuva Ashok Vidisha mein ruke."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "A noblewoman in simple ancient Indian dress seen at a distance, standing on a green hill watching saffron-robed monks build a small brick monastery, peaceful morning light, drawn storybook panel, no text",
+     "type": "art"
+    },
+    "vo": "Wahan unhone vyapari ki beti Devi se shaadi ki, aur Devi ne paas ki pahadi par bhikshuon ke liye vihaar banwaya."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Legendary scene: dozens of small stupas rising across a vast ancient Indian landscape to the horizon, tiny caravans carrying sealed caskets between them, dreamy soft-focus painted style, no text",
+     "type": "art"
+    },
+    "vo": "Lok kahani kehti hai, Ashok ne Buddha ki asthiyan hazaaron stupon mein baant di."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "A British cavalry officer in 19th century uniform, seen from behind, pushing aside thick jungle vines to reveal a huge overgrown stone dome, birds flying up, sense of discovery, drawn panel, no text",
+     "type": "art"
+    },
+    "vo": "Phir sadiyon tak Sanchi jungle mein kho gaya. 1818 mein angrez afsar General Taylor ne ise dobara dhoondha."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Workers with pickaxes cutting a deep gash down one side of the stone stupa while a colonial officer watches, a carved stone gateway toppling in a cloud of dust, tense dramatic mood, drawn illustration, no text",
+     "type": "art"
+    },
+    "vo": "Phir Captain Johnson khazana dhoondhne aaye, aur stupa ek taraf se kaat diya. Pashchimi darwaza gir gaya."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "A Victorian archaeologist with sideburns peering down a dark vertical shaft dug through the centre of the stupa dome, lantern light revealing only bare bricks, disappointed mood, drawn panel, no text",
+     "type": "art"
+    },
+    "vo": "1851 mein Alexander Cunningham ne stupa ke beech seedha gaddha khoda. Andar koi asthi nahi mili."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Close view of two small inscribed stone caskets lifted from the heart of a smaller stupa, an archaeologist's hands brushing dust off them, soft glowing light, sense of wonder, drawn illustration, no text",
+     "type": "art"
+    },
+    "vo": "Par paas ke chhote stupa mein pathar ki dibbiyan mili, Buddha ke sabse bade shishyon, Sariputta aur Maha-Moggallana ke naam ke saath."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Split drawn panel: on one side cracked ancient bricks with broken fragments scattered, on the other side the same bricks worn smooth by rain and wind over centuries, two historians seen from behind studying each side, no text",
+     "type": "art"
+    },
+    "vo": "John Marshall ka andaaza tha, purane zamane mein stupa toda gaya. Doosre itihaskar kehte hain, bas mausam ki maar thi."
+   },
+   {
+    "facts_used": [
+     10
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Detailed drawing of a carved sandstone gateway panel showing an empty throne, a wheel and a pair of footprints being worshipped by tiny carved figures, a scholar with a notebook studying it, thoughtful mood, no text",
+     "type": "art"
+    },
+    "vo": "Darwazon par khaali singhasan aur pairon ke nishaan hain. Kuch vidvaan inhe Buddha ka pratik maante hain, Susan Huntington pavitra jagahon ki pooja."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Cutaway drawing of the Great Stupa showing its stone shell and an ancient brick core inside, the centre an empty dark chamber with a question-like glow, mysterious night mood, no text",
+     "type": "art"
+    },
+    "vo": "Aur bade stupa ke andar asthiyan kabhi thi bhi ya nahi, yeh aaj tak koi nahi jaanta."
+   },
+   {
+    "facts_used": [
+     4,
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Present-day Sanchi in bright sunlight, the restored stupa with its four richly carved stone gateways, a family of visitors seen from behind gazing up at carvings of elephants and forest scenes, joyful mood, drawn panel, no text",
+     "type": "art"
+    },
+    "vo": "Aaj ke darwaze ASI ke John Marshall ne phir se jode. ASI yaani Bharat ka puratatva vibhag. Un par Jataka kathayein hain, Buddha ke pichhle janmon ki kahaniyan."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A grandmother and a curious child sitting on stone steps in front of the Sanchi stupa at sunset, the child pointing at the dome, warm golden light, drawn storybook style, no text",
+     "type": "art"
+    },
+    "vo": "Aapke hisaab se, bade stupa ki asthiyan kahan gayi?"
+   }
+  ],
+  "thumbnail": {
+   "scene": "The ARCHAEOLOGIST stares down into a dark empty shaft holding a glowing lantern, eyes wide, mouth open",
+   "words": [
+    "1851",
+    "GAYAB"
+   ]
+  },
+  "title": "Sanchi stupa mein *asthiyan* kahan gayi? 🤯"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  3.73,
+  8.82,
+  16.43,
+  21.96,
+  30.33,
+  37.3,
+  44.67,
+  53.8,
+  62.01,
+  71.5,
+  77.55,
+  89.84
+ ],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "UNESCO whc.unesco.org",
+   "en.wikipedia.org"
+  ],
+  "hooks": [
+   "2,300 saal purana stupa jise angrezon ne phir se joda?",
+   "Ashok ne yahan kya chhupaya?",
+   "Sanchi ke darwazon par kaun si kahaniyan?"
+  ],
+  "id": "sanchi-stupa",
+  "look": "indian-comic",
+  "notes": "Buddhist heritage; archaeology lane.",
+  "place": "Sanchi, Madhya Pradesh",
+  "priority": 1,
+  "target_minutes": null,
+  "title_hi": "Sanchi, Ashok ka stupa",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-10-25T08:26:02+00:00",
+ "writer": "claude"
+}

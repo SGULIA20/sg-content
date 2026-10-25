@@ -1,0 +1,61 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.93,Default,,0,0,0,,Sanchi ke stupa ke andar Buddha
+Dialogue: 0,0:00:01.93,0:00:03.28,Default,,0,0,0,,ki asthiyan thi ya nahi?
+Dialogue: 0,0:00:03.73,0:00:04.47,Default,,0,0,0,,Mahavamsa,
+Dialogue: 0,0:00:04.47,0:00:05.96,Default,,0,0,0,,Sri Lanka ka purana granth,
+Dialogue: 0,0:00:05.96,0:00:06.51,Default,,0,0,0,,kehta hai:
+Dialogue: 0,0:00:06.51,0:00:08.37,Default,,0,0,0,,yuva Ashok Vidisha mein ruke.
+Dialogue: 0,0:00:08.82,0:00:11.48,Default,,0,0,0,,Wahan unhone vyapari ki beti Devi
+Dialogue: 0,0:00:11.48,0:00:12.30,Default,,0,0,0,,se shaadi ki,
+Dialogue: 0,0:00:12.30,0:00:14.14,Default,,0,0,0,,aur Devi ne paas ki pahadi
+Dialogue: 0,0:00:14.14,0:00:15.98,Default,,0,0,0,,par bhikshuon ke liye vihaar banwaya.
+Dialogue: 0,0:00:16.43,0:00:17.98,Default,,0,0,0,,Lok kahani kehti hai,
+Dialogue: 0,0:00:17.98,0:00:20.41,Default,,0,0,0,,Ashok ne Buddha ki asthiyan hazaaron
+Dialogue: 0,0:00:20.41,0:00:21.51,Default,,0,0,0,,stupon mein baant di.
+Dialogue: 0,0:00:21.96,0:00:24.12,Default,,0,0,0,,Phir sadiyon tak Sanchi jungle mein
+Dialogue: 0,0:00:24.12,0:00:24.60,Default,,0,0,0,,kho gaya.
+Dialogue: 0,0:00:24.60,0:00:27.96,Default,,0,0,0,,1818 mein angrez afsar General Taylor
+Dialogue: 0,0:00:27.96,0:00:29.88,Default,,0,0,0,,ne ise dobara dhoondha.
+Dialogue: 0,0:00:30.33,0:00:32.89,Default,,0,0,0,,Phir Captain Johnson khazana dhoondhne aaye,
+Dialogue: 0,0:00:32.89,0:00:34.75,Default,,0,0,0,,aur stupa ek taraf se kaat
+Dialogue: 0,0:00:34.75,0:00:34.99,Default,,0,0,0,,diya.
+Dialogue: 0,0:00:34.99,0:00:36.85,Default,,0,0,0,,Pashchimi darwaza gir gaya.
+Dialogue: 0,0:00:37.30,0:00:40.54,Default,,0,0,0,,1851 mein Alexander Cunningham ne stupa
+Dialogue: 0,0:00:40.54,0:00:42.27,Default,,0,0,0,,ke beech seedha gaddha khoda.
+Dialogue: 0,0:00:42.27,0:00:44.22,Default,,0,0,0,,Andar koi asthi nahi mili.
+Dialogue: 0,0:00:44.67,0:00:46.45,Default,,0,0,0,,Par paas ke chhote stupa mein
+Dialogue: 0,0:00:46.45,0:00:48.01,Default,,0,0,0,,pathar ki dibbiyan mili,
+Dialogue: 0,0:00:48.01,0:00:50.01,Default,,0,0,0,,Buddha ke sabse bade shishyon,
+Dialogue: 0,0:00:50.01,0:00:53.13,Default,,0,0,0,,Sariputta aur Maha-Moggallana ke naam ke
+Dialogue: 0,0:00:53.13,0:00:53.35,Default,,0,0,0,,saath.
+Dialogue: 0,0:00:53.80,0:00:55.57,Default,,0,0,0,,John Marshall ka andaaza tha,
+Dialogue: 0,0:00:55.57,0:00:58.23,Default,,0,0,0,,purane zamane mein stupa toda gaya.
+Dialogue: 0,0:00:58.23,0:01:00.23,Default,,0,0,0,,Doosre itihaskar kehte hain,
+Dialogue: 0,0:01:00.23,0:01:01.56,Default,,0,0,0,,bas mausam ki maar thi.
+Dialogue: 0,0:01:02.01,0:01:04.53,Default,,0,0,0,,Darwazon par khaali singhasan aur pairon
+Dialogue: 0,0:01:04.53,0:01:05.37,Default,,0,0,0,,ke nishaan hain.
+Dialogue: 0,0:01:05.37,0:01:07.48,Default,,0,0,0,,Kuch vidvaan inhe Buddha ka pratik
+Dialogue: 0,0:01:07.48,0:01:08.11,Default,,0,0,0,,maante hain,
+Dialogue: 0,0:01:08.11,0:01:11.05,Default,,0,0,0,,Susan Huntington pavitra jagahon ki pooja.
+Dialogue: 0,0:01:11.50,0:01:13.74,Default,,0,0,0,,Aur bade stupa ke andar asthiyan
+Dialogue: 0,0:01:13.74,0:01:15.31,Default,,0,0,0,,kabhi thi bhi ya nahi,
+Dialogue: 0,0:01:15.31,0:01:17.10,Default,,0,0,0,,yeh aaj tak koi nahi jaanta.
+Dialogue: 0,0:01:17.55,0:01:19.77,Default,,0,0,0,,Aaj ke darwaze ASI ke John
+Dialogue: 0,0:01:19.77,0:01:21.50,Default,,0,0,0,,Marshall ne phir se jode.
+Dialogue: 0,0:01:21.50,0:01:24.70,Default,,0,0,0,,ASI yaani Bharat ka puratatva vibhag.
+Dialogue: 0,0:01:24.70,0:01:26.68,Default,,0,0,0,,Un par Jataka kathayein hain,
+Dialogue: 0,0:01:26.68,0:01:29.39,Default,,0,0,0,,Buddha ke pichhle janmon ki kahaniyan.
+Dialogue: 0,0:01:29.84,0:01:30.89,Default,,0,0,0,,Aapke hisaab se,
+Dialogue: 0,0:01:30.89,0:01:33.00,Default,,0,0,0,,bade stupa ki asthiyan kahan gayi?
