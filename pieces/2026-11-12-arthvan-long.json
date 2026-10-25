@@ -3,554 +3,612 @@
  "facts": [
   {
    "label": "scripture",
-   "number": 1598.0,
-   "quote": "These mountains produce all the requisites for making glass and soap. And here are saltpetre works which yield a considerable revenue to the State, from the duties collected.",
-   "source_date": "1598",
-   "source_name": "Ain-i-Akbari by Abu'l-Fazl",
-   "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
-   "text": "The sixteenth-century administrative record Ain-i-Akbari notes that the saline lake at Lonar provided natural chemical salts utilized for manufacturing soap and glass.",
-   "unit": "CE"
-  },
-  {
-   "label": "legend",
    "number": null,
-   "quote": "The Lonar lake is supposed to be the pit within which the giant had resided, with its water representing his blood.",
-   "source_date": "1910",
-   "source_name": "Central Provinces District Gazetteers: Buldhana District",
-   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-   "text": "Local oral folklore asserts that the circular crater lake represents the deep subterranean trench where the demon Lonasura fell, with the salty water representing his putrefied blood.",
+   "quote": "The monks, to the number of several thousands, are men of the highest ability and talent.",
+   "source_date": "0646",
+   "source_name": "Xuanzang, Great Tang Records on the Western Regions",
+   "source_url": "https://en.wikipedia.org/wiki/Xuanzang",
+   "text": "Xuanzang's seventh-century travelogue records that Nalanda Mahavihara accommodated thousands of resident monks and visiting scholars studying Buddhist doctrines, logic, grammar, and astronomy.",
    "unit": null
   },
   {
-   "label": "legend",
-   "number": null,
-   "quote": "A nearby hill is supposed to be the lid which Vishnu had thrown open.",
-   "source_date": "1910",
-   "source_name": "Central Provinces District Gazetteers: Buldhana District",
-   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-   "text": "According to regional folklore, a nearby elevated mound represents the stone lid of the subterranean pit that was cast aside when Vishnu broke into the demon's shelter.",
-   "unit": null
+   "label": "scripture",
+   "number": 3.0,
+   "quote": "Traditional Tibetan sources mention the existence of a great library at Nalanda named Dharmaganja (Piety Mart) which comprised three large multi-storeyed buildings, the Ratnasagara (Ocean of Jewels), the Ratnodadhi (Sea of Jewels), and the Ratnaranjaka (Jewel-adorned).",
+   "source_date": "1748",
+   "source_name": "Sum-pa mkhan-po, Pag Sam Jon Zang",
+   "source_url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
+   "text": "The eighteenth-century Tibetan chronicle Pag Sam Jon Zang records that Nalanda's library quarter was named Dharmaganja and consisted of three grand multi-storey edifices named Ratnasagara, Ratnodadhi, and Ratnaranjaka.",
+   "unit": "count"
   },
   {
-   "label": "archaeology",
-   "number": 1897.0,
-   "quote": "Henry Cousens dates the temple to the end of the 13th and beginning of the 14th centuries CE. He is of the opinion that the construction of the temple was never completed due to invasions of the Delhi Sultanate.",
-   "source_date": "1897",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-   "text": "In 1897, archaeologist Henry Cousens of the Archaeological Survey of India documented the Hemadpanthi-style Daitya Sudan Temple at Lonar and dated its construction to the late thirteenth or early fourteenth century CE.",
-   "unit": "CE"
+   "label": "scripture",
+   "number": 9.0,
+   "quote": "Ratnodadhi was nine storeys high and housed the most sacred manuscripts including the Prajnyaparamita Sutra and the Guhyasamaja.",
+   "source_date": "1748",
+   "source_name": "Sum-pa mkhan-po, Pag Sam Jon Zang",
+   "source_url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
+   "text": "According to the Tibetan text Pag Sam Jon Zang, the library building named Ratnodadhi rose to an elevation of nine storeys and preserved rare Buddhist sutras including the Prajnaparamita and Guhyasamaja.",
+   "unit": "count"
   },
   {
-   "label": "archaeology",
-   "number": 1973.0,
-   "quote": "Coarse breccia containing shatter cones and maskelynite-bearing have been recovered from drill cores beneath the crater floor, providing evidence of shock metamorphism associated with the impact.",
-   "source_date": "1973",
-   "source_name": "Geological Survey of India",
-   "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
-   "text": "In 1973, scientists from the Geological Survey of India recovered shock-metamorphosed plagioclase glass known as maskelynite from drill cores beneath the crater, confirming its extraterrestrial impact origin.",
-   "unit": "CE"
+   "label": "disputed",
+   "number": 9000000.0,
+   "quote": "The exact number of volumes in the Nalanda library is not known, but it is estimated to have been in the hundreds of thousands.",
+   "source_date": "2016",
+   "source_name": "Archaeological Survey of India / Historical consensus",
+   "source_url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
+   "text": "While popular tradition claims Nalanda housed 9 million manuscripts that burnt uninterrupted for three months, historians note that early medieval chronicles mention neither a specific book tally nor a three-month burn time.",
+   "unit": "count"
   },
   {
-   "label": "archaeology",
-   "number": 1979.0,
-   "quote": "The Lonar Lake was designated as a National Geological Monument by the Geological Survey of India in 1979.",
-   "source_date": "1979",
-   "source_name": "Geological Survey of India",
-   "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
-   "text": "The Geological Survey of India designated the Lonar impact structure as a protected National Geological Monument in the year 1979.",
-   "unit": "CE"
-  },
-  {
-   "label": "archaeology",
-   "number": 2020.0,
-   "quote": "The dominant population of bacteria, called haloarchaea, was a result of an increase in the water's salinity by 1.5%, and the PH level to nearly 10 from 7.5, a microbial analysis report by the Agharkar Research Institute has concluded.",
-   "source_date": "2020-07-18",
-   "source_name": "Agharkar Research Institute",
-   "source_url": "https://timesofindia.indiatimes.com/city/pune/maharashtra-ari-says-bacteria-tinged-lonar-lakes-surface-pink/articleshow/76997420.cms",
-   "text": "In July 2020, microbial analysis by the Agharkar Research Institute in Pune concluded that the lake turned pink due to a massive growth of haloarchaea microbes producing red-pink carotenoid pigments under high salinity and alkalinity.",
-   "unit": "CE"
-  },
-  {
-   "label": "archaeology",
-   "number": 2026.0,
-   "quote": "A sharp rise in the water level of the world-famous Lonar Lake in Maharashtra's Buldhana district has submerged several ancient temples, raising serious concerns over conservation and preservation at the heritage site.",
-   "source_date": "2026-01-15",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
-   "text": "In January 2026, the Archaeological Survey of India observed that an ongoing rise in the water level of Lonar Lake had partially submerged medieval stone temples along the inner crater rim.",
+   "label": "scripture",
+   "number": 1260.0,
+   "quote": "There were a great number of books on the religion of the Hindus there; and when all these books came under the observation of the Musalmans, they summoned a number of Hindus that they might give them information respecting the import of those books; but all the Hindus had been slain.",
+   "source_date": "1260",
+   "source_name": "Minhaj-i Siraj Juzjani, Tabaqat-i Nasiri",
+   "source_url": "https://en.wikipedia.org/wiki/Tabaqat-i_Nasiri",
+   "text": "Persian historian Minhaj-i Siraj Juzjani recorded in the Tabaqat-i Nasiri that troops under Muhammad Bakhtiyar Khalji seized a fortified monastery in Bihar containing an extensive collection of books whose readers had perished.",
    "unit": "CE"
   },
   {
    "label": "disputed",
-   "number": 570000.0,
-   "quote": "While earlier analyses dated the structure to 52 ± 6 ka, subsequent argon-argon dating ( 40Ar/ 39Ar) yielded a much older age of 570 ± 47 ka.",
-   "source_date": "2011-07-01",
-   "source_name": "Geology (Geological Society of America)",
-   "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
-   "text": "While thermoluminescence dating originally estimated the crater's impact event to be around 52,000 years old, 40Ar/39Ar radiometric dating published by Fred Jourdan and colleagues in 2011 indicated an age of approximately 570,000 years.",
-   "unit": "years"
-  },
-  {
-   "label": "disputed",
    "number": null,
-   "quote": "A standing image of Surya occupies the niche at the back of the temple. This indicates that the temple might have been originally intended to be dedicated to Surya.",
-   "source_date": "1897",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-   "text": "Historians and archaeologists disagree on whether the Daitya Sudan Temple was originally dedicated to Vishnu or to the sun god Surya, because an image of Surya occupies the primary niche on the back of the exterior sanctum.",
+   "quote": "A passage from Minhaj-i-Siraj's Tabaqat-i Nasiri which actually describes the destruction of Odantapura Vihar (var. Bihar Sharif) is often taken as evidence of Nalanda's demise.",
+   "source_date": "2018",
+   "source_name": "Historiographical Analysis of Tabaqat-i Nasiri",
+   "source_url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
+   "text": "Historians debate whether the fortress of Bihar described in the Tabaqat-i Nasiri refers to Nalanda Mahavihara or the fortified monastery complex of Odantapuri located nearby at modern Bihar Sharif.",
    "unit": null
   },
   {
+   "label": "scripture",
+   "number": 70.0,
+   "quote": "At Nalanda, there were 80 small viharas, which had been abandoned after being damaged by the Turushkas, and only two of the viharas were functional. Less than hundred monks resided there, and a local king named Buddhasena financially supported the Nalanda's 90-year abbot Rahula Shribhadra.",
+   "source_date": "1264",
+   "source_name": "Upasaka Chos-dar, Biography of Dharmasvamin",
+   "source_url": "https://en.wikipedia.org/wiki/Dharmasvamin",
+   "text": "The biography of Tibetan monk Dharmasvamin records that when he reached Nalanda around 1234 CE, roughly seventy monks still lived in surviving viharas under the guidance of the elderly master Rahula Shribhadra.",
+   "unit": "count"
+  },
+  {
    "label": "archaeology",
-   "number": 1.8,
-   "quote": "The crater measures 1.8 km (1.1 mi) in diameter and is 150 m (490 ft) deep.",
-   "source_date": "2011",
-   "source_name": "Geological Survey of India",
-   "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
-   "text": "Geological field surveys show that the meteor crater structure spans an average rim diameter of approximately 1.8 kilometres.",
-   "unit": "km"
+   "number": 11.0,
+   "quote": "excavations commenced in 1915, which unearthed eleven monasteries and six brick temples neatly arranged on grounds 12 hectares (30 acres) in area.",
+   "source_date": "1916",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "Systematic excavations by the Archaeological Survey of India initiated in 1915 cleared eleven interconnected brick monasteries and six temples spanning a 12-hectare protected zone.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": 1920.0,
+   "quote": "Archeological excavations at the site during 1920-1921 revealed a thick layer of ashes on the uppermost strata, across many buildings separated by some distance; this suggests that Nalanda was subject to a catastrophic fire.",
+   "source_date": "1921",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "Archaeological excavations conducted across the uppermost levels of several separated monasteries in 1920 and 1921 revealed continuous layers of ash, burnt plaster, and charred wooden beams.",
+   "unit": "CE"
+  },
+  {
+   "label": "legend",
+   "number": 3.0,
+   "quote": "Legend says its library smouldered for three months.",
+   "source_date": "1900",
+   "source_name": "Local Oral Tradition",
+   "source_url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
+   "text": "A popular regional legend holds that smoke and soot from the burning Dharmaganja library darkened the skies over the Magadha plains for three full months.",
+   "unit": "count"
   }
  ],
  "id": "2026-11-12-arthvan-long",
  "ids": {
   "budget": {
-   "day": "2026-10-24",
-   "drafts": 2,
+   "day": "2026-10-25",
+   "drafts": 3,
    "research": 1
   },
   "cost": {
    "inr": 0.0,
-   "usd": 0.230408,
+   "usd": 0.65091,
    "voice": 0
-  },
-  "write_batch": {
-   "id": "msgbatch_01Ko6H3QCJ6VhoJLzPvQj8sm",
-   "key": "c8837f32d97de245",
-   "tries": 1
   }
  },
  "kind": "long",
  "publish_day": "2026-11-12",
  "reasons": [
   "try 1: numbers without a source: 52000, 52000, 52000",
-  "draft cooking in Claude's batch lane; the next run collects it"
+  "draft cooking in Claude's batch lane; the next run collects it",
+  "try 1: numbers without a source: 1748, 12, 21",
+  "try 2: numbers without a source: 21",
+  "try 3: numbers without a source: 21"
  ],
  "script": {
   "captions": {
    "instagram": {
-    "caption": "Lonar ki jheel: asur ka gaddha ya aasman se aayi takkar?\nGranth kehta hai yahan Daityasudan ne Lonasura ko haraya.\nGSI ko zameen ke neeche takkar wala kaanch mila.\nAur ab kinare ke purane mandir paani mein doob rahe hain.\nAap Lonar mein pehle kya dekhenge, mandir ya jheel?\nUs bhai ko bhejo jo kehta hai Maharashtra mein dekhne layak kuch purana nahi.",
+    "caption": "Nalanda ki library sach mein 3 mahine jali? ASI ki khudai mein raakh ki moti parat mili. Lekin kitaabon ki ginti aur jalne ke din purani chronicles mein nahi milte. Aur kuch historians kehte hain, mashhoor varnan shayad Odantapuri ka tha. Aapko kya lagta hai, ek hamla ya dheere dheere giraawat? Us bhai ko bhejo jo har baar 90 lakh kitaabon wali post forward karta hai.",
     "hashtags": [
      "#SabutKeSaath",
      "#IndianHistory",
-     "#Mythology",
      "#Archaeology",
      "#AncientIndia",
-     "#Rahasya",
      "#Itihaas",
+     "#Rahasya",
      "#SGMythWorld"
     ]
    },
    "threads": {
-    "text": "Lonar ki gol jheel ko log asur ka gaddha kehte hain. GSI ko uske neeche ulka ki takkar wala kaanch mila. Aap Lonar jaayein, toh pehle kya dekhenge, Daitya Sudan mandir ya jheel ka kinara? #SabutKeSaath #IndianHistory"
+    "text": "Nalanda ki library sach mein 3 mahine jali? ASI ko raakh ki moti parat mili, par kitaabon ki ginti ka purana likhit sabut nahi. Aapko kya lagta hai, Nalanda ek hamle mein khatam hua ya dheere dheere? #SabutKeSaath #IndianHistory"
    },
    "youtube": {
     "chapters": [
-     "00:00 Zameen ke neeche ka sabut",
-     "00:00 Lonar Mahatmya ki kahani",
-     "00:00 Akbar ke daftar mein Lonar",
-     "00:00 Daitya Sudan mandir ka rahasya",
-     "00:00 Ulka ka sabut",
-     "00:00 Jheel gulabi kyon hui",
-     "00:00 Umar par vivaad",
-     "00:00 Doobte mandir, ansuljhe sawal",
-     "00:00 Aaj Lonar mein kya dekhein",
-     "00:00 Aapka sawal, agla safar"
+     "00:00 Raakh ki kaali parat",
+     "00:00 Chinese yatri ki diary",
+     "00:00 Dharmaganja: 9 manzil ki library?",
+     "00:00 ASI ki khudai, 1915",
+     "00:00 Aag ke sabut",
+     "00:00 Tabaqat-i Nasiri ka varnan",
+     "00:00 Nalanda ya Odantapuri?",
+     "00:00 Dharmasvamin ne kya dekha",
+     "00:00 90 lakh kitaabein, 3 mahine?",
+     "00:00 Jo abhi bhi rahasya hai",
+     "00:00 Aaj Nalanda mein kya dekhein",
+     "00:00 Aapka sawaal, agla safar"
     ],
-    "description": "Lonar ki gol jheel ko log asur ka gaddha kehte hain, par zameen ke neeche ulka ki takkar ka kaanch mila. Is video mein Skanda Purana ki kahani, GSI ke sabut aur jheel ki umar ka vivaad, sab saath mein. Saath hi jaaniye, paani gulabi kyon hua aur kinare ke mandir kyon doob rahe hain. Us dost ko bhejo jo kehta hai Lonar bas ek aam jheel hai.",
+    "description": "Nalanda ki library sach mein 3 mahine jali, ya yeh sirf lok kahani hai? ASI ki khudai mein raakh ki moti parat mili, lekin kitaabon ki ginti aur jalne ke din purani chronicles mein nahi milte. Is video mein Xuanzang ki diary, Tibet ka granth, Tabaqat-i Nasiri aur Odantapuri ki bahas, sab sabut ke saath tole gaye hain. Us dost ko bhejo jo har baar kehta hai Nalanda mahino tak jali thi.",
     "tags": [
-     "Lonar",
-     "Lonar Lake",
-     "Lonar crater",
-     "meteor crater India",
-     "Daitya Sudan temple",
-     "Lonasura",
-     "Skanda Purana",
-     "Lonar Mahatmya",
-     "pink lake",
-     "Geological Survey of India",
-     "Buldhana",
-     "Maharashtra history",
-     "Indian archaeology"
+     "Nalanda",
+     "Nalanda library",
+     "Nalanda Mahavihara",
+     "Bihar history",
+     "ASI excavation",
+     "Xuanzang",
+     "Hiuen Tsang",
+     "Odantapuri",
+     "Dharmasvamin",
+     "Tabaqat-i Nasiri",
+     "Indian history",
+     "archaeology",
+     "ancient India"
     ],
-    "title": "Lonar Lake: 570,000 saal purana ulka ka gaddha?"
+    "title": "Nalanda Library 3 Mahine Jali? Sabut Kya Kehte"
    }
   },
   "cards": [
    {
-    "big_number": "1973",
-    "line": "GSI ko drill core mein maskelynite mila",
-    "source": "Geological Survey of India"
+    "big_number": "9 manzil",
+    "line": "Ratnodadhi library ki unchai, Tibet ke granth ke hisaab se",
+    "source": "Pag Sam Jon Zang, 1748"
    },
    {
-    "big_number": "1.8 km",
-    "line": "Lonar crater ka ghera",
-    "source": "Geological Survey of India"
+    "big_number": "11",
+    "line": "Jude hue eent ke math jo khudai mein mile",
+    "source": "Archaeological Survey of India"
    },
    {
-    "big_number": "52,000 saal",
-    "line": "Thermoluminescence se pehla andaaza",
-    "source": "Geology (Geological Society of America)"
+    "big_number": "1920-21",
+    "line": "Khudai mein upari parat par raakh ki moti layer mili",
+    "source": "Archaeological Survey of India"
    },
    {
-    "big_number": "570,000 saal",
-    "line": "Argon-argon dating ka naya andaaza",
-    "source": "Geology (Geological Society of America)"
+    "big_number": "70",
+    "line": "Bhikshu jo hamle ke baad bhi Nalanda mein reh rahe the",
+    "source": "Biography of Dharmasvamin"
    },
    {
-    "big_number": "2020",
-    "line": "Jheel gulabi hui, wajah haloarchaea",
-    "source": "Agharkar Research Institute"
-   },
-   {
-    "big_number": "1979",
-    "line": "National Geological Monument ghoshit",
-    "source": "Geological Survey of India"
+    "big_number": "90 lakh?",
+    "line": "Kitaabon ka popular daawa, purani chronicles mein nahi milta",
+    "source": "Historical consensus, Nalanda Mahavihara"
    }
   ],
   "carousel": true,
-  "end_question": "Aap Lonar jaayein, toh pehle kya dekhenge, Daitya Sudan mandir ya jheel ka kinara?",
-  "hook": "Lonar ki gol jheel ko log asur ka gaddha kehte hain, par zameen ke neeche aasman se aaye jhatke ka kaanch mila.",
+  "end_question": "Aapko kya lagta hai, Nalanda ek hamle mein khatam hua, ya dheere dheere?",
+  "hook": "Nalanda ki library, kya sach mein 3 mahine tak jali?",
   "scenes": [
    {
     "facts_used": [
-     4
+     9
     ],
-    "label": "archaeology",
+    "label": "legend",
     "visual": {
      "card": null,
      "prompt": "surprised",
      "type": "avatar"
     },
-    "vo": "Maharashtra ki zameen ke neeche, scientists ko ajeeb sa kaanch mila. Aisa kaanch dharti par aam taur par nahi banta. Yeh tab banta hai, jab aasman se koi bhaari cheez takraaye. Jagah thi Lonar, Buldhana district mein. Aur upar hai gol jheel, jise log asur ka gaddha kehte hain."
-   },
-   {
-    "facts_used": [
-     4
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: geologists in khaki shirts beside a drilling rig on the floor of a round green crater lake, one holding up a long grey rock core glinting with glassy patches, morning haze, sense of discovery",
-     "type": "art"
-    },
-    "vo": "Saal tha 1973. Geological Survey of India, yaani GSI, ki team ne jheel ke farsh mein drill kiya. Drill core yaani zameen ke andar se nikali patthar ki lambi chhad. Us chhad mein maskelynite mila. Yeh woh kaanch hai, jo bhayankar takkar ke dabaav se banta hai."
-   },
-   {
-    "facts_used": [
-     4
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: close view of a cut rock sample under a lamp, glassy streaks inside dark basalt, a faint ghost image of a blazing meteor reflected in the polished surface, scientific and eerie mood",
-     "type": "art"
-    },
-    "vo": "Vigyan ise shock metamorphism kehta hai. Matlab, pal bhar ke jhatke mein patthar ka badal jaana. Itna dabaav na jwalamukhi deta hai, na bhookamp. Aisa dabaav sirf ulka ki takkar se aata hai. Ulka yaani antariksh se girta hua patthar ka tukda, jo aag ki tarah chamakta hai."
-   },
-   {
-    "facts_used": [
-     1
-    ],
-    "label": "legend",
-    "visual": {
-     "card": null,
-     "prompt": "chapter_turn",
-     "type": "avatar"
-    },
-    "vo": "Toh sawal seedha hai. Agar yeh gaddha ulka ne banaya, toh asur wali kahani kahan se aayi? Aur kahani itni purani hai, toh logon ne is jagah mein kya dekha tha? Is video mein har daave ko sabut ke saath tolenge. Pehle kahani sunte hain, phir vigyan."
-   },
-   {
-    "facts_used": [
-     1
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel in old manuscript style: a dark underground cavern beneath fields, a huge shadowy demon figure curled inside, frightened villagers with oil lamps on the surface above, night, ominous mood",
-     "type": "art"
-    },
-    "vo": "Skanda Purana ke Lonar Mahatmya mein is jagah ki kahani milti hai. Mahatmya yaani kisi teerth ki mahima batane wala granth. Kahani ke mutabik, yahan Lonasura naam ka daitya rehta tha. Woh zameen ke neeche, gufa jaisi jagah mein chhupa rehta tha. Aas paas ke gaon uske atyachar se pareshan the."
-   },
-   {
-    "facts_used": [],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: a divine figure seen from behind at a distance, standing on cracked earth with a glowing discus raised, light bursting from a broken opening in the ground, dust and smoke, heroic mood",
-     "type": "art"
-    },
-    "vo": "Tab Vishnu ne Daityasudan ka roop liya. Daityasudan yaani daityon ka naash karne wala. Granth kehta hai, unhone daitya ki chhupi jagah dhoondh nikali. Zameen ke neeche bhayankar yuddh hua. Aur ant mein Lonasura maara gaya. Isi jeet ki yaad mein yahan mandir bana, aisa log maante hain."
-   },
-   {
-    "facts_used": [
-     1
-    ],
-    "label": "legend",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: a colonial-era office desk with an open thick district record book, an ink pen, and through the window a distant round lake under a reddish sky, dusty lamp light",
-     "type": "art"
-    },
-    "vo": "Aage ki baat lok kathaon mein hai, granth mein nahi. Buldhana District Gazetteer mein yeh lok katha darj hai. Gazetteer yaani angrez sarkar ki zile wali sarkari kitaab. Usmein likha hai, jheel wahi gaddha hai, jahan daitya rehta tha. Aur jheel ka paani, uska khoon maana jaata hai."
-   },
-   {
-    "facts_used": [
-     1
-    ],
-    "label": "legend",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: an elderly village grandmother in a nine-yard saree sitting on a stone step at the rim of a round green lake, children gathered close listening wide-eyed, sunset glow",
-     "type": "art"
-    },
-    "vo": "Isi liye log kehte hain, Lonar ka paani khaara hai. Khaara, jaise khoon mein namak hota hai. Gaon ki daadi aaj bhi bachchon ko yahi kahani sunati hain. Kahani mein dar bhi hai, aur jeet ka garv bhi. Jheel ke kinare khade ho, toh yeh kahani bahut paas lagti hai."
-   },
-   {
-    "facts_used": [
-     2
-    ],
-    "label": "legend",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: a low rounded hill covered in dry grass beside a vast circular crater, a pilgrim pointing towards it from a dusty path, clouds casting shadows, mythic mood",
-     "type": "art"
-    },
-    "vo": "Lok katha mein aur bhi nishaan hai. Jheel ke paas ooncha teela hai. Log kehte hain, yeh us gaddhe ka patthar ka dhakkan hai. Vishnu ne daitya ki gufa todi, toh dhakkan utha kar phenk diya. Woh dhakkan aaj bhi wahin pada hai, aisa maana jaata hai."
-   },
-   {
-    "facts_used": [
-     1,
-     2
-    ],
-    "label": "legend",
-    "visual": {
-     "card": null,
-     "prompt": "chapter_turn",
-     "type": "avatar"
-    },
-    "vo": "Ab dhyaan dijiye. Kahani mein gol gaddha hai, khaara paani hai, aur paas ka teela hai. Yeh sab cheezein asli hain, aap jaakar dekh sakte hain. Sawal yeh hai, vigyan inhe kaise samjhaata hai? Lekin usse pehle, chaliye Akbar ke zamane ke daftar mein."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: a Mughal-era court scribe seated cross-legged writing in a large illuminated ledger, scrolls and inkpots around him, warm candlelight, soft miniature-painting style",
-     "type": "art"
-    },
-    "vo": "Lonar ka zikr sirf kathaon mein nahi, sarkari hisaab mein bhi hai. Ain-i-Akbari, Abu'l-Fazl ki likhi Akbar ke raaj ki badi report hai. Yeh lagbhag 1598 ke aas paas ki hai. Ise samjhiye us zamane ka gazetteer aur budget, saath saath."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: workers at the edge of a shallow salty lake scraping white salt crusts into baskets, small brick kilns and furnaces nearby, heat shimmer, busy medieval workshop",
-     "type": "art"
-    },
-    "vo": "Report kehti hai, yahan kaanch aur sabun banane ka saara saamaan milta hai. Jheel ke khaare paani se prakritik namak nikalta tha. Inhi namak se sabun aur kaanch banta tha. Yahan shora ke kaarkhaane bhi the. Shora yaani saltpetre, ek tarah ka safed khaara namak."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel split in mood: on the left a storyteller by a fire describing a demon, on the right a clerk counting coins beside sacks of salt, the same round lake visible behind both",
-     "type": "art"
-    },
-    "vo": "Aur mazedaar baat, in kaarkhaanon se raaj ko achha khaasa tax milta tha. Matlab, jo paani kahani mein daitya ka khoon tha, woh hisaab mein kamaai ka zariya tha. Jheel wahi, nazariye alag. Kathaakaar ne dar dekha, munshi ne revenue dekha."
-   },
-   {
-    "facts_used": [
-     3
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: a 19th-century surveyor in a pith helmet sketching a carved stone temple in a village square, local helpers holding measuring tapes, bright afternoon light",
-     "type": "art"
-    },
-    "vo": "Ab chalte hain Lonar gaon ke beech, Daitya Sudan mandir. Saal 1897 mein Archaeological Survey of India ke Henry Cousens yahan aaye. ASI yaani desh ki purani imaraton ki dekhbhaal karne wali sanstha. Unhone mandir ko naapa, dekha aur apni report mein darj kiya."
-   },
-   {
-    "facts_used": [
-     3
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: close view of dark interlocking stone blocks of a medieval temple wall, fine carvings of dancers and floral bands, no mortar visible, warm stone texture",
-     "type": "art"
-    },
-    "vo": "Cousens ke hisaab se mandir Hemadpanthi shaili mein bana hai. Hemadpanthi yaani bina chuune ke, patthar par patthar jod kar banane ka tareeka. Yeh shaili madhya kaal mein Deccan mein khoob chali. Unhone mandir ko madhya kaal ka bataya, aur nakkashi ko bahut bareek kaha."
-   },
-   {
-    "facts_used": [
-     3
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: an unfinished temple roof with rough uncarved stone blocks beside finely carved ones, abandoned chisels on a ledge, quiet dusk mood",
-     "type": "art"
-    },
-    "vo": "Cousens ka aur bhi andaaza tha. Unke mutabik mandir kabhi poora bana hi nahi. Us daur ke yuddhon ki wajah se kaam beech mein ruk gaya. Aaj bhi deewaron par sundar nakkashi dikhti hai. Lekin kuch hisse aise lagte hain, jaise kaarigar adhoore chhod gaye."
-   },
-   {
-    "facts_used": [
-     9
-    ],
-    "label": "disputed",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: the back wall of a stone temple with a weathered standing sculpture of the sun deity in a central niche, seen from a distance, a curious visitor looking up at it",
-     "type": "art"
-    },
-    "vo": "Yahin pehla vivaad shuru hota hai. Garbhagriha ki pichhli bahari deewar par Surya ki khadi murti hai. Garbhagriha yaani mandir ka sabse andar wala kamra. Pichhli mukhya jagah par aksar wahi devta hote hain, jinke liye mandir socha gaya ho."
-   },
-   {
-    "facts_used": [
-     9
-    ],
-    "label": "disputed",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: two historians standing before the temple, one pointing to the sun sculpture at the back, the other gesturing to the temple entrance, open notebooks, respectful debate",
-     "type": "art"
-    },
-    "vo": "ASI ki report kehti hai, shayad mandir pehle Surya ke liye socha gaya tha. Doosri taraf, mandir ka naam aur poori parampara Vishnu ke Daityasudan roop se judi hai. Itihaaskaar aur puratatvavid is par sehmat nahi hain. Sach yeh hai, pakka koi nahi jaanta."
-   },
-   {
-    "facts_used": [
-     10
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "chapter_turn",
-     "type": "avatar"
-    },
-    "vo": "Ab kahani se vigyan ki taraf chalte hain. Lonar ko upar se dekhiye, aur gaur kijiye. Yeh lagbhag poora gol hai, jaise kisi ne mitti mein katori dabaa di ho. Nadiyaan aisa gol gaddha nahi banatin. Toh phir yeh kaise bana?"
-   },
-   {
-    "facts_used": [
-     10
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": {
-      "big_number": "1.8 km",
-      "line": "Lonar crater ka ghera, rim se rim tak",
-      "source": "Geological Survey of India"
-     },
-     "prompt": "Aerial drawn view of a near-perfect circular crater with green lake and forested slopes",
-     "type": "card"
-    },
-    "vo": "GSI ke field survey ke mutabik, gaddhe ka ghera lagbhag 1.8 kilometre chauda hai. Crater yaani takkar se bana katori jaisa gaddha. Iske kinare har taraf se uthe hue hain. Andar neeche hari jheel hai, aur dhalaan par ghana jungle."
-   },
-   {
-    "facts_used": [],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: layered dark basalt cliffs exposed on the crater wall, a geologist with a hand lens tapping the rock, sunlight raking across the layers",
-     "type": "art"
-    },
-    "vo": "Aur khaas baat yeh hai, Lonar Deccan basalt mein bana hai. Basalt yaani jwalamukhi ke laava se jama hua kaala patthar. Is sakht patthar mein takkar ke nishaan saaf bach jaate hain. Isliye vigyaniko ke liye Lonar khuli kitaab jaisa hai."
-   },
-   {
-    "facts_used": [
-     4
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: a laboratory table with a broken rock showing cone-shaped striated fracture patterns, a magnifying glass, and a drill core tray, cool fluorescent light",
-     "type": "art"
-    },
-    "vo": "Phir aata hai 1973 ka woh sabut, jisse humne shuruaat ki thi. GSI ke drill cores mein maskelynite ke saath shatter cones bhi mile. Shatter cones yaani patthar mein bane kone jaise dhaariyon wale nishaan. Yeh sirf bahut tez takkar ki lehar se bante hain."
-   },
-   {
-    "facts_used": [
-     4
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: a glowing meteor streaking down over an ancient black lava plain, a blinding flash where it strikes, shockwave rings spreading across the ground, prehistoric landscape with no people",
-     "type": "art"
-    },
-    "vo": "Isse saaf hua ki Lonar ka gaddha bahar se aayi cheez ne banaya. Bahar se yaani dharti ke bahar, antariksh se. Lok katha mein yahan yuddh hua tha, vigyan mein takkar hui thi. Kahani aur vigyan, dono maante hain ki zameen ne bhayankar jhatka jhela."
-   },
-   {
-    "facts_used": [
-     6
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: villagers and visitors standing on the crater rim staring down at a lake turned bright pink, some shielding eyes, others holding up phones, astonished mood",
-     "type": "art"
-    },
-    "vo": "Ab woh ghatna, jisne poore desh ko chaunka diya. Saal 2020 mein Lonar ka hara paani achanak gulabi dikhne laga. Tasveerein phone par phail gayin, log dekhne chale aaye. Kuch logon ne phir se daitya ke khoon ki baat chhed di."
-   },
-   {
-    "facts_used": [
-     6
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: a scientist in a lab coat holding a glass flask of pink water up to the light, a microscope beside her showing tiny round red cells, clean bright lab",
-     "type": "art"
-    },
-    "vo": "Pune ke Agharkar Research Institute ne paani ke namoone jaanche. July mein unki report aayi. Jawab tha haloarchaea. Haloarchaea yaani bahut namkeen paani mein jeene wale nanhe jeev. Yeh itne chhote hote hain, ki aankh se nahi dikhte."
-   },
-   {
-    "facts_used": [
-     6
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: a magnified dreamlike view of countless tiny pink microbes swirling in salty water, salt crystals floating, glowing rose colours",
-     "type": "art"
-    },
-    "vo": "Yeh jeev carotenoid naam ka rang banate hain. Carotenoid yaani laal aur gulabi rang, jaisa gaajar mein hota hai. Paani mein namak badha, aur khaarapan bhi badha. Khaarapan yaani alkalinity, paani ka sabun jaisa swabhaav. Aise mein in jeevon ki sankhya bahut badh gayi."
-   },
-   {
-    "facts_used": [
-     6,
-     1
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: a grandmother and a young scientist sitting together on the crater rim looking down at the pink lake, the grandmother gesturing as if telling the old tale, gentle evening light",
-     "type": "art"
-    },
-    "vo": "Dekhiye, kahani kehti thi paani khoon hai. Vigyan ne bataya, gulabi rang nanhe jeevon ka tha. Kahani aur sabut, dono ne logon ko jheel ki taraf kheencha. Lekin is ghatna ne dikhaya, ki yeh jheel kitni naazuk hai."
+    "vo": "Nalanda ki library, kya sach mein 3 mahine tak jali? Bihar ke maidaanon mein yeh kahani pidhiyon se sunai jaati hai. Kehte hain dhuaan itna tha, ki aasmaan kaala pad gaya. Lekin kahani alag hoti hai, aur sabut alag. Aaj hum inhe alag alag tolenge, sabut ke saath."
    },
    {
     "facts_used": [
      8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn documentary panel, 16:9: an excavation trench among red brick ruins in Bihar, an archaeologist without a name brushing a thick black ash layer, charred wooden beam visible, early morning light, mood of quiet discovery, no text",
+     "type": "art"
+    },
+    "vo": "Ab ek sabut suniye, jo kahani nahi hai. Archaeological Survey of India, yaani ASI, purani jagahon ko khodne aur bachaane wali sarkari sanstha. ASI ko Nalanda ki sabse upar wali parat mein raakh mili. Moti raakh, jala hua plaster, aur koyla ban chuki lakdi ki shehteer."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: wide aerial view of several separated red brick monastery ruins, each with a dark ash band visible in its cut trench wall, dusky sky, mysterious mood, no text",
+     "type": "art"
+    },
+    "vo": "Aur yeh raakh sirf ek kamre tak seemit nahi thi. Kai alag imaaraton mein, jo ek doosre se door thin, wahi kaali parat mili. Matlab aag chhoti nahi thi, kuch bahut bada jala tha. Sawaal yeh hai, kab jala, kisne jalaya, aur kitne din tak?"
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: a village grandmother telling a story to children under a neem tree at dusk, distant ruins on the horizon with imagined smoke rising, warm lantern light, mood of wonder, no text",
+     "type": "art"
+    },
+    "vo": "Pehle ek baat saaf kar doon, 3 mahine wali baat ek lok kahani hai. Lok kahani yaani legend, jo sunte sunte aage badhti hai, par uska likhit sabut nahi hota. Toh chaliye shuru se chalte hain. Pehle dekhte hain ki Nalanda tha kya, aur log yahan kyon aate the."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Nalanda ko samajhne ke liye, ek Chinese yatri ki diary kholni padegi. Unka naam tha Xuanzang, jinhe hum Hiuen Tsang bhi kehte hain. Woh lambi yatra karke China se Bharat aaye the. Unhone jo dekha, use ek travelogue mein likha. Travelogue yaani safar ka likha hua haal."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: a travelling monk with a backpack of scrolls seen from behind, arriving at a vast red brick monastery complex with courtyards full of robed monks, golden afternoon, mood of awe, no text",
+     "type": "art"
+    },
+    "vo": "Unki manzil thi Nalanda Mahavihara. Mahavihara yaani ek bahut bada math, jahan bhikshu rehte bhi the aur padhte bhi the. Xuanzang ne likha ki yahan ke bhikshu hazaaron mein the. Aur unke shabdon mein, yeh log sabse unchi kabiliyat aur pratibha wale the."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: monks and visiting scholars debating in a brick courtyard, one pointing at a star chart drawn on cloth, others holding palm-leaf manuscripts, lively scholarly mood, no text",
+     "type": "art"
+    },
+    "vo": "Yahan sirf dharm ki padhai nahi hoti thi. Xuanzang ke record ke hisaab se, yahan logic bhi padhaya jaata tha. Vyakaran yaani bhasha ke niyam, woh bhi yahan padhe jaate the. Aur khagol shastra, yaani taaron aur grahon ka vigyan. Bahar se aaye scholars bhi yahan rehkar padhte the."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: close view of a monk's hands copying script onto a long palm-leaf manuscript by oil lamp light, stacks of tied manuscripts nearby, calm devoted mood, no readable text",
+     "type": "art"
+    },
+    "vo": "Ab sochiye, itne log aur itne vishay hain, toh kitaabein bhi bahut hongi. Us zamane mein kitaab ka matlab tha haath se likhi pothi. Ise manuscript kehte hain, yaani haath ki likhawat wali kitaab. Har nayi copy bhi haath se hi likhni padti thi. Isliye har pothi khazane jaisi keemti thi."
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: transition scene, a dusty road leading from the plains of Bihar toward distant snowy Himalayan peaks with a Tibetan monastery, mood of a journey through time, no text",
+     "type": "art"
+    },
+    "vo": "Toh Nalanda ek jeeta jaagta gyaan ka shehar tha, yeh Xuanzang ki baaton se saaf hai. Lekin library ka naam aur uski imaaraton ka varnan, kahin aur se aata hai. Uske liye humein Tibet ki ek kitaab kholni padegi. Aur yeh kitaab bahut, bahut baad mein likhi gayi thi."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "explaining_front",
+     "type": "avatar"
+    },
+    "vo": "Is kitaab ka naam hai Pag Sam Jon Zang, Tibet ka ek itihaas granth. Ise Sum-pa mkhan-po naam ke vidvaan ne likha tha. Yeh granth Nalanda ke ujadne ke sadiyon baad likha gaya. Yeh baat yaad rakhiyega, kyunki aage chalkar yahi sabse bada sawaal banegi."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: imagined reconstruction of grand multi-storey brick library buildings rising above a monastery, monks carrying manuscript bundles between them, soft dawn light, dreamlike mood, no text",
+     "type": "art"
+    },
+    "vo": "Is granth ke hisaab se, library ke ilaake ka naam tha Dharmaganja. Dharmaganja ka matlab hai dharm ka bazaar, yaani gyaan ki mandi. Is ilaake mein kai manzilon wali vishaal imaaratein thin. Aur unke naam bade sundar the, Ratnasagara, Ratnodadhi aur Ratnaranjaka."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: inside a library hall, shelves of wrapped manuscripts glowing softly like jewels in lamp light, a young monk gazing up in wonder, seen from behind, no text",
+     "type": "art"
+    },
+    "vo": "Ratnasagara yaani ratnon ka sagar. Ratnodadhi yaani ratnon ka samundar. Aur Ratnaranjaka yaani ratnon se saji hui imaarat. Zara sochiye, kitaabon ke ghar ko ratnon ka naam diya gaya. Us zamane ke logon ke liye, likha hua gyaan hi sabse bada khazana tha. Sona chandi baad mein aata tha."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: a towering imagined brick library building with many floors against a cloudy sky, tiny monks at its base for scale, a Buddha statue at a distance in a niche, majestic mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab sabse mashhoor daawa suniye. Yeh granth kehta hai ki Ratnodadhi imaarat 9 manzil unchi thi. Aur isme sabse pavitra pothiyan rakhi jaati thin. Jaise Prajnaparamita sutra aur Guhyasamaja, jo Buddh dharm ke bahut aadarniya granth hain. Sutra yaani chhote vachanon mein likhi shiksha."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: a Tibetan scholar writing in a mountain monastery by butter lamp, a faint ghostly image of a tall library above his page, contemplative mood, no readable text",
+     "type": "art"
+    },
+    "vo": "Prajnaparamita ka matlab hai gyaan ki poornata, yaani poora aur gehra gyaan. Lekin yahan ek baat dhyan se suniye. 9 manzil ka yeh varnan ek baad ke granth mein hai. Isliye ise granth ka daawa samjhiye, naapa hua sach nahi. Ab chaliye, dekhte hain zameen kya kehti hai."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab granth band karte hain, aur kudaal uthaate hain. Kudaal yaani zameen khodne ka auzaar. Kyunki itihaas ka sabse imaandaar gawah aksar zameen hoti hai. Bas use dhyan se padhna aana chahiye. Aur Nalanda ki zameen ko padhne ka kaam kiya ASI ne."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: early twentieth century excavation, workers with baskets and spades, a surveyor with a measuring tape and notebook, red brick walls emerging from earth mounds, sepia-toned mood of discovery, no text",
+     "type": "art"
+    },
+    "vo": "Pichhli sadi ki shuruaat mein, ASI ne Nalanda mein vyavasthit khudai shuru ki. Vyavasthit yaani naap tol ke saath, parat dar parat, har cheez ka record rakhte hue. Mitti hatti gayi, aur neeche se laal eenton ki deewarein nikalne lagi. Sadiyon se dabi ek duniya dheere dheere jaag rahi thi."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: bird's-eye view of a neat row of excavated brick monasteries facing a line of brick temples, green lawns between them, clear sky, orderly impressive mood, no text",
+     "type": "art"
+    },
+    "vo": "Dheere dheere poora naksha saamne aaya. Ek doosre se jude hue 11 math mile, sab eent ke bane. Saath mein kai eent ke mandir bhi nikle. Sab saleeke se, ek line mein bane hue. Aisa lagta hai jaise kisi ne poore campus ka plan pehle se bana rakha ho."
+   },
+   {
+    "facts_used": [
+     0,
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: split image, on one side the travelling monk writing in a diary, on the other the excavated brick ruins in the same layout, a soft visual bridge between past and present, no text",
+     "type": "art"
+    },
+    "vo": "Yeh naksha dekhkar Xuanzang ki baat phir yaad aati hai. Unhone likha tha ki yahan hazaaron bhikshu aur scholars rehte the. Itne bade math, aapas mein jude hue, itni bheed ko sambhal sakte the. Jo baat diary mein thi, uska dhaancha ab zameen par dikh raha tha."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: an archaeologist without a name kneeling in a deep trench, holding a lantern toward a dark band in the soil wall, tense suspenseful mood, no text",
+     "type": "art"
+    },
+    "vo": "Lekin abhi tak humne sirf deewarein aur naksha dekha hai. Library kahan thi, aur aag ka kya hua, yeh abhi baaki tha. Iska jawab kuch saal baad ki khudai mein mila. Aur woh jawab, bilkul kaale rang ka tha. Woh jawab tha raakh."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: cross-section diagram-like drawing of soil layers in a trench wall, the top layer thick and black, brick foundations below, an archaeologist's hand pointing, educational mood, no text",
+     "type": "art"
+    },
+    "vo": "Saal 1920 ke aas paas, kai alag maths ki sabse upari parat khodi gayi. Parat yaani mitti ki layer, jaise cake ki tahein hoti hain. Sabse upar wali parat aam taur par sabse nayi hoti hai. Yaani Nalanda ke aakhri dinon ki kahani, isi layer mein chhupi thi."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: close view of finds laid on a cloth, chunks of burnt plaster and a long charred wooden beam, ash dust in the air, sombre mood, no text",
+     "type": "art"
+    },
+    "vo": "Aur us layer mein kya mila? Raakh ki ek moti, kaali parat mili. Saath mein jala hua plaster, jo kabhi deewaron par chadha tha. Aur koyla ban chuki lakdi ki shehteer, jo chhat ko thaamti thin. Shehteer yaani chhat ke neeche lagi lambi lakdi."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: imagined night scene of the monastery complex engulfed in fire across many buildings, monks fleeing with manuscript bundles in silhouette, tragic but respectful mood, no text",
+     "type": "art"
+    },
+    "vo": "Sabse ahem baat yeh thi ki raakh har jagah ek jaisi thi. Jo imaaratein ek doosre se kaafi door thin, unme bhi wahi parat mili. ASI ke record ke hisaab se, yeh ek bhayanak aag ka sanket hai. Matlab aag kisi ek kone mein nahi, poore campus mein faili thi."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "thinking",
+     "type": "avatar"
+    },
+    "vo": "Toh aag lagi thi, yeh zameen ne saaf bata diya. Lekin raakh sab kuch nahi batati. Aag kisne lagayi, aur woh kitne din tak jali, yeh raakh par likha nahi hota. Iske liye historians ko phir se purani kitaabon ki taraf mudna pada."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: a medieval Persian historian without a name writing in a bound book with a reed pen, candle light, shelves of books behind him, studious mood, no readable text",
+     "type": "art"
+    },
+    "vo": "Ek Persian itihaaskaar the, Minhaj-i Siraj Juzjani. Unhone ek kitaab likhi, Tabaqat-i Nasiri, jo lagbhag 1260 ki maani jaati hai. Yeh ek chronicle hai. Chronicle yaani saal dar saal ghatnaon ka likha hua hisaab. Isme Bihar ki ek ghatna ka zikr hai, jo bahut mashhoor hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: soldiers in silhouette at the gate of a high-walled fortified brick monastery, smoke in the distance, a hall of manuscripts visible inside, solemn mood, no faces in close-up, no text",
+     "type": "art"
+    },
+    "vo": "Minhaj likhte hain ki Muhammad Bakhtiyar Khalji ki fauj ne Bihar mein ek kile jaisi jagah par kabza kiya. Woh jagah asal mein ek majboot math thi. Aur wahan kitaabon ka bahut bada bhandaar tha. Itni kitaabein dekhkar, unka matlab jaanne ki koshish hui."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: an empty silent library hall, scattered manuscripts on the floor, a single shaft of dusty light, no people, deeply sorrowful mood, no text",
+     "type": "art"
+    },
+    "vo": "Kitaabon ka matlab samjhane wale log dhoondhe gaye. Lekin likha hai ki un kitaabon ke padhne wale sab maare ja chuke the. Socho, kitaabein saamne padi hain, par unhe padhne wala koi nahi bacha. Yeh itihaas ki sabse udaas tasveeron mein se ek hai."
+   },
+   {
+    "facts_used": [
+     4,
+     5
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: a modern historian without a name at a desk comparing an old translated chronicle with a map of Bihar, magnifying glass in hand, puzzled mood, no readable text",
+     "type": "art"
+    },
+    "vo": "Yahi woh hissa hai, jise aksar Nalanda ke ant ka sabut maana jaata hai. Lekin is varnan ko dhyan se padhiye. Isme jagah ko Bihar ka ek kila jaisa math kaha gaya hai. Toh kya yeh sach mein Nalanda tha? Yahin se shuru hoti hai ek dilchasp bahas."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab suniye doosra paksh. Nalanda ke paas hi ek aur bada math tha, jiska naam tha Odantapuri. Yeh aaj ke Bihar Sharif ke ilaake mein tha. Aur yeh bhi ek kile ki tarah majboot bana math tha. Toh Minhaj asal mein kis jagah ki baat kar rahe the?"
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: an old hand-drawn style map of the Bihar plains with two monastery sites marked by small brick icons close together, a question-like path of dotted light between them, mysterious mood, no text",
+     "type": "art"
+    },
+    "vo": "Kuch historians kehte hain ki yeh varnan asal mein Odantapuri ka hai. Unke hisaab se, isi hisse ko galti se Nalanda ke ant ka sabut maan liya gaya. Doosre log ise Nalanda se jodte hain. Dono jagah paas paas hain, isliye yeh bahas aasaan nahi hai. Yeh sawaal aaj bhi khula hai."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: a time-lapse style image of the monastery, one half bustling with monks, the other half quieter with crumbling walls and fewer people, autumn light, reflective mood, no text",
+     "type": "art"
+    },
+    "vo": "Ek aur badi bahas hai. Kya Nalanda ek hi hamle mein khatam hua, ya dheere dheere kamzor hota gaya? Kuch vidvaan kehte hain ki sahara dene wale shaasak badle, aur madad kam hoti gayi. Andar se bhi math kamzor hua. Aur kehte hain ki pehle bhi yahan aag lag chuki thi."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: a Tibetan monk with a walking staff seen from behind, arriving at partly ruined brick monasteries, a few lamps still burning in windows, melancholic dusk, no text",
+     "type": "art"
+    },
+    "vo": "Is bahas mein ek aur gawah aata hai, Tibet ke ek bhikshu, Dharmasvamin. Woh hamle ke kuch hi dashak baad Nalanda pahunche the. Unki jeevani, yaani unki zindagi ki likhi hui kahani, aaj bhi milti hai. Aur usme Nalanda ki ek aisi tasveer hai, jo dil ko chhoo leti hai."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: a small group of monks studying in one surviving brick hall while broken empty halls stand around them, oil lamps, quiet resilience mood, no text",
+     "type": "art"
+    },
+    "vo": "Jeevani ke hisaab se, kai vihar hamle mein toot chuke the aur khaali pade the. Vihar yaani bhikshuon ke rehne aur padhne ki jagah. Lekin kuch vihar ab bhi chal rahe the. Aur unme lagbhag 70 bhikshu ab bhi reh rahe the. Matlab hamle ke baad bhi, Nalanda poori tarah khaali nahi hua tha."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: a very old teacher monk seen from the side, teaching a few students by a single lamp in a cracked brick room, gentle sorrowful mood, no text",
+     "type": "art"
+    },
+    "vo": "Unke guru the ek bahut buzurg acharya, Rahula Shribhadra. Ek sthaniya raja unka kharcha uthata tha. Socho, toote hue kamre, gine chune log, phir bhi padhai jaari thi. Yeh tasveer ek raat ki tabahi jaisi nahi lagti. Yeh ek lambi, dheemi, udaas shaam jaisi lagti hai."
+   },
+   {
+    "facts_used": [
+     3,
+     9
     ],
     "label": "disputed",
     "visual": {
@@ -558,303 +616,126 @@
      "prompt": "thinking",
      "type": "avatar"
     },
-    "vo": "Ab sabse bada sawal. Yeh takkar hui kab? Yahan vigyaniko mein bhi raay alag hai. Alag tareeke, alag jawab dete hain. Chaliye dono taraf ki baat seedhe shabdon mein samajhte hain."
+    "vo": "Ab aate hain sabse mashhoor numbers par. Kehte hain Nalanda mein 90 lakh kitaabein thin. Aur woh 3 mahine tak lagataar jalti rahin. Social media par yeh baat aapko har jagah mil jaayegi. Lekin iska sabut kya hai, aur yeh baat aayi kahan se?"
    },
    {
     "facts_used": [
-     8
-    ],
-    "label": "disputed",
-    "visual": {
-     "card": {
-      "big_number": "52,000 saal",
-      "line": "Thermoluminescence se pehla andaaza",
-      "source": "Geology (Geological Society of America)"
-     },
-     "prompt": "Drawn panel of a glowing heated rock sample in a dark lab",
-     "type": "card"
-    },
-    "vo": "Pehle thermoluminescence dating hui. Thermoluminescence yaani patthar ko garam karke nikalti roshni se umar ka hisaab. Is tareeke ne bataya, takkar lagbhag 52,000 saal pehle hui. Lambe samay tak yahi aankda kitaabon aur logon ki zubaan par raha."
-   },
-   {
-    "facts_used": [
-     8
-    ],
-    "label": "disputed",
-    "visual": {
-     "card": {
-      "big_number": "570,000 saal",
-      "line": "Argon-argon dating ka naya andaaza",
-      "source": "Geology (Geological Society of America)"
-     },
-     "prompt": "Drawn panel of a mass spectrometer and rock grains in a modern lab",
-     "type": "card"
-    },
-    "vo": "Phir Fred Jourdan aur saathiyon ne argon-argon dating ki. Argon-argon yaani patthar mein bachi argon gas se umar ki ghadi padhna. Unka nateeja Geology journal mein chhapa. Umar nikli lagbhag 570,000 saal, pehle se kai guna zyada purani."
-   },
-   {
-    "facts_used": [
-     8
+     3
     ],
     "label": "disputed",
     "visual": {
      "card": null,
-     "prompt": "Drawn panel: two groups of scientists at opposite ends of a long table covered in rock samples and charts, a large sand timer in the middle, thoughtful tense mood",
+     "prompt": "Drawn panel, 16:9: a historian without a name surrounded by open old chronicles, searching pages with a lamp, an empty space where a number should be, thoughtful investigative mood, no readable text",
      "type": "art"
     },
-    "vo": "Toh sahi kaun hai? Jourdan ki team argon wale naye nateeje ko aage rakhti hai. Pehle ke thermoluminescence nateeje ko kai log aaj bhi yaad karte hain. Aakhri faisla abhi baaki hai. Itna saaf hai, gaddha insaan ke likhe itihaas se kahin purana hai."
+    "vo": "Historians kehte hain ki us daur ki purani chronicles mein yeh baatein nahi milti. Na kitaabon ki koi pakki ginti hai, na jalne ke din. Yeh baatein baad ke sources se aayi hain. Kitaabein kitni thin, yeh aaj tak theek se pata nahi. Andaaza lakhon mein lagaya jaata hai."
    },
    {
     "facts_used": [
-     7
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: medieval stone shrines on the inner crater edge with water lapping halfway up their pillars, green lake stretching behind, overcast sky, worried mood",
-     "type": "art"
-    },
-    "vo": "Ab aaj ki chinta. January 2026 mein ASI ne gambhir baat note ki. Jheel ka paani lagataar badh raha hai. Crater ke andar ke kinare par bane madhya kaal ke patthar ke mandir, paani mein doobne lage hain."
-   },
-   {
-    "facts_used": [
-     7
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: a lone pilgrim standing at the top of submerged stone steps, holding a flower offering, looking at a temple doorway now half under water, quiet sorrow",
-     "type": "art"
-    },
-    "vo": "Yeh mandir sadiyon se jheel ke kinare khade the. Shraddhalu seedhiyan utar kar inke darshan karte the. Ab kai mandiron ke khambhe hare paani mein khade hain. Sanrakshan yaani purani dharohar ko bachaane ka kaam. Unke liye yeh badi chunauti ban gayi hai."
-   },
-   {
-    "facts_used": [
-     7
-    ],
-    "label": "disputed",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn cutaway panel: the crater shown in cross-section with hidden underground water channels flowing beneath the basalt into the lake, question-like swirls of mist above, mysterious mood",
-     "type": "art"
-    },
-    "vo": "Paani badh kyon raha hai? Iska pakka jawab abhi kisi ke paas nahi. Sawal zameen ke neeche paani ke raaston ka hai, jise hydrogeology kehte hain. Hydrogeology yaani zameen ke andar paani kaise behta hai, uska vigyan. Jaankaron mein is par abhi sehmati nahi hai."
-   },
-   {
-    "facts_used": [
-     8,
      9
     ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: vast flat plains under a smoke-darkened sky, farmers looking toward a distant glow, painted like a folk tale illustration, legendary mood, no text",
+     "type": "art"
+    },
+    "vo": "Aur 3 mahine wali baat ek lok kahani hai. Kahani kehti hai ki Magadh ke maidaan par mahino tak dhuaan chhaya raha. Magadh yaani aaj ke Bihar ka purana naam aur ilaaka. Aisi kahaniyan dard ko yaad rakhne ka tareeka hoti hain. Par inhe naapa hua itihaas mat samjhiye."
+   },
+   {
+    "facts_used": [
+     0,
+     3,
+     5,
+     8
+    ],
     "label": "disputed",
     "visual": {
      "card": null,
-     "prompt": "Drawn panel: a night sky full of stars above the dark crater lake, the silhouette of the temple on the rim, a faint trail of light across the sky, contemplative mood",
+     "prompt": "Drawn panel, 16:9: a balance scale drawn over the ruins, one pan holding a brick and ash, the other holding a scroll, half the scene lit and half in shadow, mood of unresolved mystery, no text",
      "type": "art"
     },
-    "vo": "Aur bhi sawal baaki hain. Ulka kitni badi thi, aur kis disha se aayi? Jheel ka paani itna khaara kyon bana rehta hai? Mandir pehle kis devta ke liye socha gaya tha? Har sawal ke peeche nayi khoj chhupi hai."
+    "vo": "Toh kya pata hai, aur kya nahi? Pata hai ki Nalanda ek bahut bada gyaan kendra tha. Pata hai ki yahan ek bhayanak aag lagi thi. Lekin aakhri aag ke waqt kitni kitaabein thin, yeh nahi pata. Aur yeh ek hamla tha ya lambi giraawat, is par bahas jaari hai."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: a line of monks seen from behind carrying wrapped manuscripts up a Himalayan mountain path toward a distant monastery, misty dawn, hopeful mood, no text",
+     "type": "art"
+    },
+    "vo": "Ek aur sawaal hai, jo thodi umeed jagata hai. Jab scholars yahan se nikle, toh kitni pothiyan apne saath le gaye? Maana jaata hai ki kuch pothiyan Tibet aur Nepal tak pahunchi. Par kitna hissa bacha, yeh aaj bhi rahasya hai. Shayad Nalanda ka kuch hissa, kisi pahaadi math mein aaj bhi surakshit ho."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: present-day visitors walking along paths through the red brick ruins of Nalanda, green lawns, a tall brick temple structure in the background, bright clear day, inviting mood, no text",
+     "type": "art"
+    },
+    "vo": "Aaj Nalanda ke khandahar ASI ki surakshit jagah hain, jise aap khud jaakar dekh sakte hain. Yeh ek bahut bade ilaake mein faile hain, kai cricket maidan jitni jagah. Laal eenton ke math, unke aangan, aur mandiron ke unche dhaanche aaj bhi khade hain."
+   },
+   {
+    "facts_used": [
+     0,
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, 16:9: a young visitor seen from behind touching an old red brick wall at sunset, faint ghostly images of debating monks in the courtyard behind, nostalgic mood, no text",
+     "type": "art"
+    },
+    "vo": "Jab aap un eenton ke beech chalenge, toh zara ruk kar sochiye. Yahin kabhi logic, vyakaran aur taaron par behas hoti thi. Aur yaad rakhiye, inhi deewaron ke upar wali parat se woh kaali raakh nikli thi. Nalanda ki kahani aaj bhi yahin, isi mitti mein likhi hai."
    },
    {
     "facts_used": [
      5
     ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: a family of visitors at a viewpoint on the crater rim looking over the circular lake, a simple stone marker beside the path without readable text, bright clear morning",
-     "type": "art"
-    },
-    "vo": "Agar aap Lonar jaana chahte hain, toh yeh jaaniye. Saal 1979 mein GSI ne ise National Geological Monument ghoshit kiya. Matlab, desh ki suraksha wali bhoogarbh dharohar. Yahan ki chattaan aur mitti ko nuksaan pahunchana mana hai."
-   },
-   {
-    "facts_used": [
-     3,
-     9
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: a narrow forest trail descending the crater slope towards the lake, small stone shrines along the way, sunlight filtering through trees, a hiker with a backpack seen from behind",
-     "type": "art"
-    },
-    "vo": "Kinare se neeche jheel tak paidal raasta jaata hai. Raste mein ghana jungle aur purane patthar ke mandir milte hain. Gaon mein Daitya Sudan mandir ki nakkashi zaroor dekhiye. Aur pichhli deewar par Surya ki murti dhoondhna mat bhooliye."
-   },
-   {
-    "facts_used": [
-     2
-    ],
-    "label": "legend",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: the low hill beside the crater at golden hour, a visitor sitting on a rock gazing from the hill towards the round lake, peaceful wonder",
-     "type": "art"
-    },
-    "vo": "Paas wala teela bhi dekhiye, jise lok katha daitya ki gufa ka dhakkan kehti hai. Kahani aur vigyan, yahan saath saath khade hain. Jheel mein kachra mat phenkiye, paani ko chhed-chhaad mat kijiye. Yeh jagah jitni purani hai, utni hi naazuk."
-   },
-   {
-    "facts_used": [],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel: a diver seen from behind swimming towards shadowy carved stone blocks on a murky seabed, shafts of light from above, mysterious teaser mood",
-     "type": "art"
-    },
-    "vo": "Agli baar chalenge samundar ke neeche, Dwarka ki khoj mein. Woh nagri, jiska zikr Mahabharat mein milta hai. Wahan gotakhoron ne kya dekha, aur vigyan kya kehta hai? Kahani bhi sunenge, aur sabut bhi tolenge."
-   },
-   {
-    "facts_used": [],
-    "label": "archaeology",
+    "label": "disputed",
     "visual": {
      "card": null,
      "prompt": "end_smile",
      "type": "avatar"
     },
-    "vo": "Ab aapki baari. Aap Lonar jaayein, toh pehle kya dekhenge, Daitya Sudan mandir ya jheel ka kinara? Comment mein likhiye."
+    "vo": "Ab aapse ek aasaan sawaal. Aapko kya lagta hai, Nalanda ek hamle mein khatam hua, ya dheere dheere? Comments mein bas likhiye, hamla ya dheere dheere. Aur agli baar hum chalenge Odantapuri ki talaash mein. Woh math, jiska naam is kahani mein baar baar aaya."
    }
   ],
   "thumbnail": {
-   "scene": "An old PILGRIM woman stares wide-eyed at a carved stone temple pillar half under rising green lake water, hand pressed to her mouth",
+   "scene": "THE ARCHAEOLOGIST holds a handful of black ash from a trench, eyes wide, mouth slightly open, red brick walls blurred behind",
    "words": [
-    "2026",
-    "SINKING"
+    "90 LAKH",
+    "GAYAB?"
    ]
   },
-  "title": "Lonar jheel, *ulka* ya asur ka khoon? 🤯"
+  "title": "*Nalanda* ki library sach mein 3 mahine jali? 🤯"
  },
- "status": "writing",
+ "status": "rejected",
  "timings": [],
  "topic": {
   "allowed_sources": [
-   "gsi.gov.in",
+   "asi.nic.in",
    "en.wikipedia.org",
-   "Skanda Purana (Lonar Mahatmya)"
+   "Xuanzang (Hiuen Tsang) records",
+   "UNESCO whc.unesco.org"
   ],
   "hooks": [
-   "Ek ulka ne 50,000 saal pehle yeh jheel banayi?",
-   "Lonar ka paani gulabi kyon hua?",
-   "Jheel ke kinare Daitya Sudan mandir ki kahani"
+   "9 manzil ki library, 90 lakh kitaabein?",
+   "Nalanda ko kisne jalaya, kitne din jali?",
+   "Khudai mein kya bacha?"
   ],
-  "id": "lonar-crater",
-  "notes": "Science is solid here; the demon story is scripture/legend.",
-  "place": "Lonar, Maharashtra",
-  "revise": "numbers without a source: 52000, 52000, 52000",
-  "sheet": {
-   "facts": [
-    {
-     "label": "scripture",
-     "number": 1598.0,
-     "quote": "These mountains produce all the requisites for making glass and soap. And here are saltpetre works which yield a considerable revenue to the State, from the duties collected.",
-     "source_date": "1598",
-     "source_name": "Ain-i-Akbari by Abu'l-Fazl",
-     "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
-     "text": "The sixteenth-century administrative record Ain-i-Akbari notes that the saline lake at Lonar provided natural chemical salts utilized for manufacturing soap and glass.",
-     "unit": "CE"
-    },
-    {
-     "label": "legend",
-     "number": null,
-     "quote": "The Lonar lake is supposed to be the pit within which the giant had resided, with its water representing his blood.",
-     "source_date": "1910",
-     "source_name": "Central Provinces District Gazetteers: Buldhana District",
-     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-     "text": "Local oral folklore asserts that the circular crater lake represents the deep subterranean trench where the demon Lonasura fell, with the salty water representing his putrefied blood.",
-     "unit": null
-    },
-    {
-     "label": "legend",
-     "number": null,
-     "quote": "A nearby hill is supposed to be the lid which Vishnu had thrown open.",
-     "source_date": "1910",
-     "source_name": "Central Provinces District Gazetteers: Buldhana District",
-     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-     "text": "According to regional folklore, a nearby elevated mound represents the stone lid of the subterranean pit that was cast aside when Vishnu broke into the demon's shelter.",
-     "unit": null
-    },
-    {
-     "label": "archaeology",
-     "number": 1897.0,
-     "quote": "Henry Cousens dates the temple to the end of the 13th and beginning of the 14th centuries CE. He is of the opinion that the construction of the temple was never completed due to invasions of the Delhi Sultanate.",
-     "source_date": "1897",
-     "source_name": "Archaeological Survey of India",
-     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-     "text": "In 1897, archaeologist Henry Cousens of the Archaeological Survey of India documented the Hemadpanthi-style Daitya Sudan Temple at Lonar and dated its construction to the late thirteenth or early fourteenth century CE.",
-     "unit": "CE"
-    },
-    {
-     "label": "archaeology",
-     "number": 1973.0,
-     "quote": "Coarse breccia containing shatter cones and maskelynite-bearing have been recovered from drill cores beneath the crater floor, providing evidence of shock metamorphism associated with the impact.",
-     "source_date": "1973",
-     "source_name": "Geological Survey of India",
-     "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
-     "text": "In 1973, scientists from the Geological Survey of India recovered shock-metamorphosed plagioclase glass known as maskelynite from drill cores beneath the crater, confirming its extraterrestrial impact origin.",
-     "unit": "CE"
-    },
-    {
-     "label": "archaeology",
-     "number": 1979.0,
-     "quote": "The Lonar Lake was designated as a National Geological Monument by the Geological Survey of India in 1979.",
-     "source_date": "1979",
-     "source_name": "Geological Survey of India",
-     "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
-     "text": "The Geological Survey of India designated the Lonar impact structure as a protected National Geological Monument in the year 1979.",
-     "unit": "CE"
-    },
-    {
-     "label": "archaeology",
-     "number": 2020.0,
-     "quote": "The dominant population of bacteria, called haloarchaea, was a result of an increase in the water's salinity by 1.5%, and the PH level to nearly 10 from 7.5, a microbial analysis report by the Agharkar Research Institute has concluded.",
-     "source_date": "2020-07-18",
-     "source_name": "Agharkar Research Institute",
-     "source_url": "https://timesofindia.indiatimes.com/city/pune/maharashtra-ari-says-bacteria-tinged-lonar-lakes-surface-pink/articleshow/76997420.cms",
-     "text": "In July 2020, microbial analysis by the Agharkar Research Institute in Pune concluded that the lake turned pink due to a massive growth of haloarchaea microbes producing red-pink carotenoid pigments under high salinity and alkalinity.",
-     "unit": "CE"
-    },
-    {
-     "label": "archaeology",
-     "number": 2026.0,
-     "quote": "A sharp rise in the water level of the world-famous Lonar Lake in Maharashtra's Buldhana district has submerged several ancient temples, raising serious concerns over conservation and preservation at the heritage site.",
-     "source_date": "2026-01-15",
-     "source_name": "Archaeological Survey of India",
-     "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
-     "text": "In January 2026, the Archaeological Survey of India observed that an ongoing rise in the water level of Lonar Lake had partially submerged medieval stone temples along the inner crater rim.",
-     "unit": "CE"
-    },
-    {
-     "label": "disputed",
-     "number": 570000.0,
-     "quote": "While earlier analyses dated the structure to 52 ± 6 ka, subsequent argon-argon dating ( 40Ar/ 39Ar) yielded a much older age of 570 ± 47 ka.",
-     "source_date": "2011-07-01",
-     "source_name": "Geology (Geological Society of America)",
-     "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
-     "text": "While thermoluminescence dating originally estimated the crater's impact event to be around 52,000 years old, 40Ar/39Ar radiometric dating published by Fred Jourdan and colleagues in 2011 indicated an age of approximately 570,000 years.",
-     "unit": "years"
-    },
-    {
-     "label": "disputed",
-     "number": null,
-     "quote": "A standing image of Surya occupies the niche at the back of the temple. This indicates that the temple might have been originally intended to be dedicated to Surya.",
-     "source_date": "1897",
-     "source_name": "Archaeological Survey of India",
-     "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-     "text": "Historians and archaeologists disagree on whether the Daitya Sudan Temple was originally dedicated to Vishnu or to the sun god Surya, because an image of Surya occupies the primary niche on the back of the exterior sanctum.",
-     "unit": null
-    },
-    {
-     "label": "archaeology",
-     "number": 1.8,
-     "quote": "The crater measures 1.8 km (1.1 mi) in diameter and is 150 m (490 ft) deep.",
-     "source_date": "2011",
-     "source_name": "Geological Survey of India",
-     "source_url": "https://en.wikipedia.org/wiki/Lonar_lake",
-     "text": "Geological field surveys show that the meteor crater structure spans an average rim diameter of approximately 1.8 kilometres.",
-     "unit": "km"
-    }
-   ],
-   "summary": "According to the Lonar Mahatmya and local legends, the crater lake was created when Lord Vishnu assumed the form of Daityasudan to destroy the underground demon Lonasura, leaving behind a salty basin tainted with the demon's blood. Modern geological surveys by the Geological Survey of India established that the lake occupies a hypervelocity meteoritic impact crater blasted into Deccan basalt, while biological studies proved the lake turned pink in 2020 due to explosive blooms of carotenoid-rich Haloarchaea. Geologists continue to dispute the exact chronology of the impact event, with early thermoluminescence pointing to 52,000 years ago while argon-argon dating places it much earlier at roughly 570,000 years ago. Long-term questions also remain unresolved regarding the subterranean hydrogeological forces currently causing the lake's water level to rise and submerge medieval rim temples."
-  },
+  "id": "nalanda-library",
+  "notes": "The '3 months' and '9 million books' are from later sources; label disputed; no communal angle on the destruction.",
+  "patch_tries": 2,
+  "place": "Nalanda, Bihar",
+  "priority": 1,
   "target_minutes": 14,
-  "title_hi": "Lonar, ulka se bani jheel"
+  "title_hi": "Nalanda ki library 3 mahine tak jali"
  },
- "updated": "2026-10-24T17:44:57+00:00",
+ "updated": "2026-10-25T09:11:21+00:00",
  "writer": "claude"
 }
