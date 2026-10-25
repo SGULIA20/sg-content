@@ -328,7 +328,7 @@ def test_story_format_uses_panels_cast_refs_and_storyframe(tmp_path):
     d.write = write_fn
     p = pipeline.make(_piece(), d, tmp_path)
     assert p.status == "uploaded" and built == [3] and calls["build"] == 0
-    assert painted == ["4:5"] * 3 + ["9:16"] and refs_seen[0] == ["sg.png"]          # three panels, then the thumbnail reaction
+    assert painted == ["2:3"] * 3 + ["9:16"] and refs_seen[0] == ["sg.png"]          # three tall Short panels (25 Oct 2026), then the thumbnail reaction
 
 
 def test_myth_story_short_is_standalone_and_panels_carry_labels(tmp_path, monkeypatch):

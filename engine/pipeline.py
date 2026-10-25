@@ -72,6 +72,9 @@ def _used(root: Path) -> tuple:
     return links | ids, prior
 
 
+SHORT_PANEL_NOTE = " Tall portrait framing; keep the lower third calm (floor, table, sky or ground), with no face or key object there."
+
+
 def recent_openers(root: Path, piece: Piece, n: int = 5) -> list:
     """[(id, first picture prompt)] of the same channel's last n Shorts before this one."""
     rows = []
@@ -128,6 +131,8 @@ def _visual_for(piece: Piece, i: int, scene: dict, deps: Deps, out_dir: Path, si
     if is_story(piece):
         prompt = v.get("prompt") or piece.script["hook"]
         refs = deps.cast_refs(prompt, channel=piece.channel) if deps.cast_refs else []
+        if piece.kind == "short":                                  # founder, 25 Oct 2026 (C): the picture runs to the bottom of the screen
+            return deps.paint(art.style_prompt(piece.channel, prompt + SHORT_PANEL_NOTE), out, aspect="2:3", refs=refs)
         return deps.paint(art.style_prompt(piece.channel, prompt), out, aspect="4:5", refs=refs)
     aspect = "9:16" if size[1] > size[0] else "16:9"
     return deps.paint(art.style_prompt(piece.channel, v.get("prompt") or piece.script["hook"]), out, aspect=aspect)

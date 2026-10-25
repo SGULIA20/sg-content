@@ -99,7 +99,9 @@ line here (who, date) in the same change. Newest first.
 - Reel first seconds (founder, 25 Oct 2026, A + B): the first picture is the story's own striking object or moment, never a cast
   member with a phone (8 of 10 Learning with SG Shorts opened on Bhai with his phone) and never close to the last 5 Shorts' first
   picture (lint check_opener; a miss rewrites the same topic). The first 1.3 s are a moving close-up, then a cut to the full picture
-  (storyframe PUNCH_S). C (bigger picture, bold captions) waits for the founder's look at a sample.
+  (storyframe PUNCH_S). C (founder, 25 Oct 2026, "go with C as shown"): Shorts run the picture from the title band to the foot of
+  the screen (panels drawn 2:3, lower third kept calm), a soft shadow at the foot, captions big bold white with a black outline and
+  numbers / the title keyword in yellow, the logo top right, evidence chips top left. Long videos keep the old layout.
 - Item 13 (Waypoint ban-appeal review) dropped: the Supabase connector can reach only one organisation (ScoreMyBiz).
 
 ## Approved 24 Oct 2026 (founder: "okay yes do"), built one at a time
