@@ -1,0 +1,40 @@
+# One-off check (25 Oct 2026): can the Play account read reviews (androidpublisher) and crash data (Developer Reporting API)?
+# Prints status codes and counts only, no review text. Delete after use.
+name: play-probe
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: { python-version: '3.12' }
+      - run: pip install -r requirements.txt
+      - name: Probe
+        env:
+          PLAY_READER_KEY_B64: ${{ secrets.PLAY_READER_KEY_B64 }}
+        run: |
+          python - <<'PY'
+          import json, urllib.request, urllib.error
+          from engine import playreports as pr
+          def get(url, tok):
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(url, headers={"Authorization": "Bearer " + tok}), timeout=60) as r:
+                      return r.status, json.loads(r.read() or b"{}")
+              except urllib.error.HTTPError as e:
+                  return e.code, {"error": e.read().decode(errors="replace")[:200]}
+          pub = pr.access_token(pr.SCOPE_PUBLISHER)
+          try:
+              rep = pr.access_token("https://www.googleapis.com/auth/playdeveloperreporting")
+          except Exception as e:
+              rep = None; print("reporting token:", str(e)[:200])
+          for app, pkg in pr.APPS.items():
+              s, b = get(f"https://androidpublisher.googleapis.com/androidpublisher/v3/applications/{pkg}/reviews?maxResults=10", pub)
+              print(app, "reviews:", s, len(b.get("reviews", [])) if s == 200 else b)
+              if rep:
+                  s, b = get(f"https://playdeveloperreporting.googleapis.com/v1beta1/apps/{pkg}/crashRateMetricSet", rep)
+                  print(app, "crash metrics:", s, (b.get("freshnessInfo") or {}) if s == 200 else b)
+          PY
