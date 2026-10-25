@@ -69,3 +69,12 @@ def test_index_names_and_the_topics_own_number_are_not_claims():
     text = "Bhai ki 500 rupaye mahine ki SIP. Nifty 50 aur Nifty 500 TRI mein, Sensex 30 bhi. Return 11 percent maan lo."
     assert claims.match(text, [], [], context=("500 rupaye mahine ki SIP: 20 saal mein kya bana",)) == [11.0]
     assert 500.0 in claims.match(text, [], [])                     # without the topic, 500 still needs a source
+
+
+def test_numbers_inside_the_sourced_sentence_count_and_year_ranges_pass():
+    from engine import claims
+    facts = [{"number": 31, "unit": "lakh INR", "text": "A 1.2 percent difference in expense ratios over 20 years on a monthly SIP of 10,000 INR can erode 31 lakh."},
+             {"number": 4.3, "unit": "lakh INR", "text": "Assuming an annualized return of 11 percent, 500 a month grows to 4.3 lakh."}]
+    assert claims.match("1.2 percent ka farak, 10,000 rupaye ki SIP, 11 percent return", facts, []) == []
+    assert claims.match("Khudai 1920-21 mein hui", [], []) == []
+    assert claims.match("Return 14 percent tha", facts, []) == [14.0]
