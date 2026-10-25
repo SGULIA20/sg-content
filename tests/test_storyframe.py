@@ -91,3 +91,10 @@ def test_logo_badge_is_drawn_once_per_channel_and_transparent(tmp_path):
     data = a.read_bytes()
     assert data[:8] == b"\x89PNG\r\n\x1a\n" and struct.unpack(">B", data[25:26])[0] in (6,)      # colour type 6 = RGBA, so corners stay see-through
     assert storyframe.logo("arthvan", 150, tmp_path).exists()
+
+
+def test_first_scene_opens_on_a_moving_close_up_then_cuts():
+    from engine import storyframe
+    assert "if(lt(on,39),1.35" in storyframe.zoom_expr(4.0, True)
+    assert storyframe.zoom_expr(4.0, False).startswith("min(zoom+")
+    assert storyframe.zoom_expr(1.5, True).startswith("min(zoom+")          # too short to cut twice

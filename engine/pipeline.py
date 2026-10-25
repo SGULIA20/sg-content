@@ -72,6 +72,17 @@ def _used(root: Path) -> tuple:
     return links | ids, prior
 
 
+def recent_openers(root: Path, piece: Piece, n: int = 5) -> list:
+    """[(id, first picture prompt)] of the same channel's last n Shorts before this one."""
+    rows = []
+    for p in pieces.list_all(root):
+        if p.channel == piece.channel and p.kind == "short" and p.id != piece.id and p.script and p.status != "rejected" \
+                and p.publish_day < piece.publish_day:
+            sc = (p.script.get("scenes") or [{}])[0]
+            rows.append((p.publish_day, p.id, str((sc.get("visual") or {}).get("prompt") or "")))
+    return [(pid, prompt) for _d, pid, prompt in sorted(rows)[-n:]]
+
+
 def _pick_topic(piece: Piece, deps: Deps, root: Path, used: set) -> dict | None:
     if piece.channel == "arthvan" and piece.kind == "short" and not is_story(piece):
         long_id = buffer.long_for_short(piece.channel, piece.publish_day)
@@ -274,7 +285,7 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
         pieces.transition(piece, "rejected", f"try {attempt + 1}: " + "; ".join(reasons))
         pieces.save(piece, root)
         fixable = ("length", "label", "card", "hashtags", "disclaimer", "title", "threads", "instagram",
-                   "numbers without a source", "hook")         # a slow opening: same topic, rewritten opening (25 Oct 2026)                     # same topic: drop those numbers or use the fact sheet's
+                   "numbers without a source", "hook", "opener")         # a slow opening: same topic, rewritten opening (25 Oct 2026)                     # same topic: drop those numbers or use the fact sheet's
         revise = "; ".join(reasons) if all(r.startswith(fixable) for r in reasons) else None      # formatting misses: same topic, trimmed draft
     if script is None:
         return piece
@@ -419,7 +430,8 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
     return Deps(topic=topic_fn, research=lambda topic, ch: research.verify_urls(research.fact_sheet(topic, ch)),
                 write=lambda piece, sheet, lib, tags: writer.write(piece, sheet, lib, tags, batch_fn=writebatch.write_piece), say=voice.say, paint=art.paint, avatar=art.avatar,
                 render_card=cards.render, build=assemble.build, qa=qa.report, upload=upload_fn,
-                lint=lambda piece, prior: lint.check_script(piece, banned, prior) + lint.check_captions(piece, hashtags),
+                lint=lambda piece, prior: (lint.check_script(piece, banned, prior) + lint.check_captions(piece, hashtags)
+                                           + lint.check_opener(piece, recent_openers(root, piece))),
                 claims_check=lambda piece: claims.match(lint.all_text(piece), piece.facts, library,
                                                         context=(piece.topic.get("title"), piece.topic.get("title_hi"))),
                 commons=art.commons_photo, library=library, hashtags=hashtags, voice_id=default_voice,
