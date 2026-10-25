@@ -1,8 +1,8 @@
 {
- "made": "2026-10-24",
+ "made": "2026-10-25",
  "channels": {
   "sglearning": {
-   "viewCount": "18884",
+   "viewCount": "18894",
    "subscriberCount": "53",
    "hiddenSubscriberCount": false,
    "videoCount": "75"
@@ -21,13 +21,13 @@
    "day": "2026-10-21",
    "look": "doodle",
    "title": "Ram Setu: 103 reefs ya kisi ka banaya pul?",
-   "yt_views": 0,
-   "yt_watched_pct": null,
-   "ig_views": 1564,
+   "yt_views": 37,
+   "yt_watched_pct": 39.3,
+   "ig_views": 1565,
    "ig_saves": 1,
-   "ig_skip_rate": 30.1,
+   "ig_skip_rate": 30.2,
    "th_views": 23,
-   "reach": 1587
+   "reach": 1625
   },
   {
    "id": "2026-10-21-sglearning-short",
@@ -35,13 +35,13 @@
    "day": "2026-10-21",
    "look": "doodle",
    "title": "Dividend ka ₹6.50 free hai? Agle din share kyun gira",
-   "yt_views": 0,
-   "yt_watched_pct": null,
-   "ig_views": 1358,
-   "ig_saves": 4,
-   "ig_skip_rate": 34.7,
+   "yt_views": 23,
+   "yt_watched_pct": 62.9,
+   "ig_views": 1359,
+   "ig_saves": 3,
+   "ig_skip_rate": 34.6,
    "th_views": 4,
-   "reach": 1362
+   "reach": 1386
   },
   {
    "id": "2026-10-22-arthvan-short",
@@ -49,13 +49,13 @@
    "day": "2026-10-22",
    "look": "doodle",
    "title": "Kailash par chadhna mumkin, phir kyon nahi?",
-   "yt_views": 0,
-   "yt_watched_pct": null,
-   "ig_views": 71,
+   "yt_views": 35,
+   "yt_watched_pct": 96.6,
+   "ig_views": 72,
    "ig_saves": 0,
-   "ig_skip_rate": 60,
+   "ig_skip_rate": 58.9,
    "th_views": 0,
-   "reach": 71
+   "reach": 107
   },
   {
    "id": "2026-10-22-sglearning-short",
@@ -63,13 +63,13 @@
    "day": "2026-10-22",
    "look": "doodle",
    "title": "US Stocks 1 dollar se? Asli kharcha kya hai",
-   "yt_views": 0,
-   "yt_watched_pct": null,
-   "ig_views": 1449,
+   "yt_views": 19,
+   "yt_watched_pct": 49.7,
+   "ig_views": 1451,
    "ig_saves": 4,
    "ig_skip_rate": 34.1,
    "th_views": 5,
-   "reach": 1454
+   "reach": 1475
   },
   {
    "id": "2026-10-23-arthvan-short",
@@ -79,11 +79,11 @@
    "title": "Kedarnath 2013: Ek patthar ne mandir bachaya?",
    "yt_views": 0,
    "yt_watched_pct": null,
-   "ig_views": 337,
+   "ig_views": 338,
    "ig_saves": 0,
-   "ig_skip_rate": 42.8,
+   "ig_skip_rate": 43,
    "th_views": 0,
-   "reach": 337
+   "reach": 338
   },
   {
    "id": "2026-10-23-sglearning-short",
@@ -91,13 +91,13 @@
    "day": "2026-10-23",
    "look": "doodle",
    "title": "Meta $145B AI kharcha: SIP par kya asar?",
-   "yt_views": 0,
-   "yt_watched_pct": null,
-   "ig_views": 59,
+   "yt_views": 1,
+   "yt_watched_pct": 13.2,
+   "ig_views": 62,
    "ig_saves": 0,
-   "ig_skip_rate": 57.8,
+   "ig_skip_rate": 60.4,
    "th_views": 4,
-   "reach": 63
+   "reach": 67
   },
   {
    "id": "2026-10-24-arthvan-short",
@@ -107,11 +107,11 @@
    "title": "Chakravyuh ka naksha: 5,000 saal purana?",
    "yt_views": 0,
    "yt_watched_pct": null,
-   "ig_views": 117,
+   "ig_views": 174,
    "ig_saves": 1,
-   "ig_skip_rate": 63.6,
+   "ig_skip_rate": 61.2,
    "th_views": 0,
-   "reach": 117
+   "reach": 174
   },
   {
    "id": "2026-10-24-sglearning-short",
@@ -121,17 +121,45 @@
    "title": "Core sector 7.9% upar, petrol sasta kyun nahi?",
    "yt_views": 0,
    "yt_watched_pct": null,
-   "ig_views": 1235,
+   "ig_views": 1240,
    "ig_saves": 2,
-   "ig_skip_rate": 22.2,
-   "th_views": 1,
-   "reach": 1236
+   "ig_skip_rate": 22.3,
+   "th_views": 3,
+   "reach": 1243
+  },
+  {
+   "id": "2026-10-25-arthvan-short",
+   "channel": "arthvan",
+   "day": "2026-10-25",
+   "look": "doodle",
+   "title": "Rakhigarhi DNA: Harappa ke log kaun the?",
+   "yt_views": 0,
+   "yt_watched_pct": 0.0,
+   "ig_views": 0,
+   "ig_saves": 0,
+   "ig_skip_rate": null,
+   "th_views": 0,
+   "reach": 0
+  },
+  {
+   "id": "2026-10-25-sglearning-short",
+   "channel": "sglearning",
+   "day": "2026-10-25",
+   "look": "doodle",
+   "title": "SIP fees: AMC ka 4.22 billion profit kaise?",
+   "yt_views": 0,
+   "yt_watched_pct": null,
+   "ig_views": 0,
+   "ig_saves": 0,
+   "ig_skip_rate": null,
+   "th_views": 0,
+   "reach": 0
   }
  ],
  "videos": {
   "1oq8a5RJzTw": {
    "stats": {
-    "viewCount": "24",
+    "viewCount": "26",
     "likeCount": "0",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -155,7 +183,7 @@
   },
   "dvM49ysxU38": {
    "stats": {
-    "viewCount": "7",
+    "viewCount": "8",
     "likeCount": "0",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -167,7 +195,7 @@
   },
   "wO9L5aUZoQ4": {
    "stats": {
-    "viewCount": "3",
+    "viewCount": "20",
     "likeCount": "1",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -179,7 +207,7 @@
   },
   "f6Q8M7vFtkY": {
    "stats": {
-    "viewCount": "1",
+    "viewCount": "4",
     "likeCount": "0",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -335,7 +363,7 @@
   },
   "miAOjHnEulQ": {
    "stats": {
-    "viewCount": "104",
+    "viewCount": "105",
     "likeCount": "7",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -347,8 +375,8 @@
   },
   "kSVxzJmtZcA": {
    "stats": {
-    "viewCount": "92",
-    "likeCount": "0",
+    "viewCount": "178",
+    "likeCount": "3",
     "dislikeCount": "0",
     "favoriteCount": "0",
     "commentCount": "1"
@@ -480,45 +508,846 @@
  },
  "traffic": {
   "sglearning:insightTrafficSourceType": {
-   "status": 403,
+   "status": 400,
    "headers": [],
    "rows": [],
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"YouTube Analytics API has not been used in project 1026407812603 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtubeanalytics.googleapis.com/overview?project=1026407812603 then retry. If you enabled th"
+   "error": "{\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The query is not supported. Check the documentation at https://developers.google.com/youtube/analytics/v2/available_reports for a list of supported queries.\",\n    \"errors\": [\n      {\n        \"message\": \"The query is not supported. Check the documentati"
   },
   "sglearning:day": {
-   "status": 403,
-   "headers": [],
-   "rows": [],
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"YouTube Analytics API has not been used in project 1026407812603 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtubeanalytics.googleapis.com/overview?project=1026407812603 then retry. If you enabled th"
+   "status": 200,
+   "headers": [
+    "day",
+    "views",
+    "averageViewPercentage",
+    "averageViewDuration",
+    "subscribersGained"
+   ],
+   "rows": [
+    [
+     "2026-10-19",
+     12,
+     30.04,
+     40,
+     0
+    ],
+    [
+     "2026-10-13",
+     20,
+     43.06,
+     23,
+     0
+    ],
+    [
+     "2026-09-29",
+     1,
+     37.42,
+     11,
+     0
+    ],
+    [
+     "2026-10-08",
+     6,
+     50.32,
+     15,
+     1
+    ],
+    [
+     "2026-10-06",
+     3,
+     0,
+     0,
+     0
+    ],
+    [
+     "2026-10-21",
+     39,
+     49.52,
+     39,
+     0
+    ],
+    [
+     "2026-10-03",
+     3,
+     1.18,
+     0,
+     0
+    ],
+    [
+     "2026-10-04",
+     3,
+     57.42,
+     17,
+     0
+    ],
+    [
+     "2026-10-09",
+     2,
+     0,
+     0,
+     0
+    ],
+    [
+     "2026-09-25",
+     4,
+     0,
+     0,
+     0
+    ],
+    [
+     "2026-10-07",
+     3,
+     0.9000000000000001,
+     4,
+     0
+    ],
+    [
+     "2026-09-30",
+     6,
+     37.12,
+     12,
+     0
+    ],
+    [
+     "2026-10-12",
+     162,
+     15.24,
+     11,
+     0
+    ],
+    [
+     "2026-09-23",
+     4,
+     15.010000000000002,
+     6,
+     0
+    ],
+    [
+     "2026-09-24",
+     4,
+     39.52,
+     12,
+     0
+    ],
+    [
+     "2026-10-05",
+     2,
+     9.68,
+     3,
+     0
+    ],
+    [
+     "2026-10-11",
+     2,
+     0,
+     0,
+     0
+    ],
+    [
+     "2026-09-28",
+     2,
+     119.02999999999999,
+     36,
+     0
+    ],
+    [
+     "2026-09-27",
+     2,
+     90.32,
+     28,
+     0
+    ],
+    [
+     "2026-09-22",
+     3,
+     95.16,
+     29,
+     0
+    ],
+    [
+     "2026-10-02",
+     5,
+     44.41,
+     13,
+     0
+    ],
+    [
+     "2026-10-16",
+     13,
+     14.64,
+     8,
+     1
+    ],
+    [
+     "2026-10-18",
+     37,
+     13.849999999999998,
+     26,
+     0
+    ],
+    [
+     "2026-09-20",
+     5,
+     35.32,
+     10,
+     0
+    ],
+    [
+     "2026-10-10",
+     13,
+     22.02,
+     12,
+     0
+    ],
+    [
+     "2026-10-15",
+     2,
+     0,
+     0,
+     0
+    ],
+    [
+     "2026-10-14",
+     12,
+     33.1,
+     13,
+     0
+    ],
+    [
+     "2026-10-20",
+     3,
+     11.92,
+     16,
+     0
+    ],
+    [
+     "2026-10-22",
+     53,
+     49.55,
+     30,
+     0
+    ],
+    [
+     "2026-10-17",
+     6,
+     7.13,
+     24,
+     0
+    ]
+   ],
+   "error": "None"
   },
   "sglearning:video": {
-   "status": 403,
-   "headers": [],
-   "rows": [],
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"YouTube Analytics API has not been used in project 1026407812603 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtubeanalytics.googleapis.com/overview?project=1026407812603 then retry. If you enabled th"
+   "status": 200,
+   "headers": [
+    "video",
+    "views",
+    "engagedViews",
+    "averageViewPercentage",
+    "averageViewDuration",
+    "likes",
+    "shares",
+    "subscribersGained"
+   ],
+   "rows": [
+    [
+     "Ml00ohR_ia0",
+     161,
+     16,
+     24.61,
+     11,
+     2,
+     0,
+     0
+    ],
+    [
+     "qKNrU6rPc64",
+     68,
+     29,
+     44.62,
+     13,
+     0,
+     0,
+     0
+    ],
+    [
+     "1oq8a5RJzTw",
+     23,
+     6,
+     62.91,
+     44,
+     0,
+     0,
+     0
+    ],
+    [
+     "dbVKWtDhrFY",
+     19,
+     6,
+     49.7,
+     36,
+     0,
+     0,
+     0
+    ],
+    [
+     "YB-jVSlaWXA",
+     15,
+     8,
+     3.51,
+     12,
+     1,
+     0,
+     0
+    ],
+    [
+     "9xjztZ1YGs0",
+     14,
+     7,
+     48.06,
+     24,
+     0,
+     0,
+     0
+    ],
+    [
+     "9SAZbzL44_k",
+     13,
+     4,
+     35.45,
+     14,
+     0,
+     0,
+     0
+    ],
+    [
+     "E-Dv8Nnkwd4",
+     9,
+     2,
+     1.01,
+     5,
+     0,
+     0,
+     0
+    ],
+    [
+     "VXuYQjrRaEg",
+     9,
+     1,
+     14.64,
+     8,
+     0,
+     0,
+     0
+    ],
+    [
+     "1ROwBjqcugM",
+     8,
+     3,
+     48.15,
+     19,
+     0,
+     0,
+     0
+    ],
+    [
+     "QKVUYcl-8gE",
+     6,
+     2,
+     124.02,
+     50,
+     0,
+     0,
+     0
+    ],
+    [
+     "egjwEtRcK9M",
+     6,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "vjFKcq6yao0",
+     5,
+     4,
+     44.39,
+     89,
+     0,
+     0,
+     0
+    ],
+    [
+     "2hre3IGn9JI",
+     4,
+     3,
+     8.62,
+     17,
+     0,
+     0,
+     0
+    ],
+    [
+     "wcH1IQIGe3g",
+     4,
+     1,
+     99.56,
+     40,
+     0,
+     0,
+     0
+    ],
+    [
+     "YS33o64J32k",
+     3,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "F3lM_Brflms",
+     3,
+     3,
+     1.51,
+     5,
+     0,
+     0,
+     0
+    ],
+    [
+     "93VuQUb3cA4",
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "9C8yB5ywWro",
+     2,
+     1,
+     99.97,
+     37,
+     0,
+     0,
+     0
+    ],
+    [
+     "NBn-l1qnusY",
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "UUBs9WadABU",
+     2,
+     2,
+     1.18,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "hcAPhpwWBlQ",
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "phOGwq4gnaM",
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "eE9qPQ3gH6k",
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "dvM49ysxU38",
+     1,
+     1,
+     13.18,
+     9,
+     0,
+     0,
+     0
+    ],
+    [
+     "wqa4gxdnMlc",
+     1,
+     1,
+     14.71,
+     11,
+     0,
+     0,
+     0
+    ],
+    [
+     "4mdc99FqwhI",
+     1,
+     1,
+     13.96,
+     14,
+     0,
+     0,
+     0
+    ],
+    [
+     "a_OPA2m8lEE",
+     1,
+     1,
+     28.12,
+     16,
+     0,
+     0,
+     0
+    ],
+    [
+     "aiy8qWbBJDE",
+     1,
+     1,
+     68.57,
+     28,
+     0,
+     0,
+     0
+    ],
+    [
+     "yjguC4aodFk",
+     1,
+     1,
+     13.200000000000001,
+     8,
+     0,
+     0,
+     0
+    ],
+    [
+     "3B_ybQcabiM",
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "cDvfdCPEWy0",
+     1,
+     1,
+     11.92,
+     16,
+     0,
+     0,
+     0
+    ]
+   ],
+   "error": "None"
   },
   "arthvan:insightTrafficSourceType": {
-   "status": 403,
+   "status": 400,
    "headers": [],
    "rows": [],
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"YouTube Analytics API has not been used in project 1026407812603 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtubeanalytics.googleapis.com/overview?project=1026407812603 then retry. If you enabled th"
+   "error": "{\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The query is not supported. Check the documentation at https://developers.google.com/youtube/analytics/v2/available_reports for a list of supported queries.\",\n    \"errors\": [\n      {\n        \"message\": \"The query is not supported. Check the documentati"
   },
   "arthvan:day": {
-   "status": 403,
-   "headers": [],
-   "rows": [],
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"YouTube Analytics API has not been used in project 1026407812603 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtubeanalytics.googleapis.com/overview?project=1026407812603 then retry. If you enabled th"
+   "status": 200,
+   "headers": [
+    "day",
+    "views",
+    "averageViewPercentage",
+    "averageViewDuration",
+    "subscribersGained"
+   ],
+   "rows": [
+    [
+     "2026-09-27",
+     1,
+     2.73,
+     6,
+     0
+    ],
+    [
+     "2026-10-13",
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "2026-10-08",
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     "2026-10-16",
+     21,
+     22.41,
+     12,
+     0
+    ],
+    [
+     "2026-10-21",
+     7,
+     16.98,
+     29,
+     0
+    ],
+    [
+     "2026-10-18",
+     3,
+     3.2,
+     1,
+     0
+    ],
+    [
+     "2026-09-20",
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     "2026-10-15",
+     2,
+     13.36,
+     7,
+     0
+    ],
+    [
+     "2026-10-12",
+     123,
+     31.75,
+     15,
+     0
+    ],
+    [
+     "2026-10-22",
+     69,
+     73.32,
+     77,
+     0
+    ],
+    [
+     "2026-10-17",
+     8,
+     16.89,
+     9,
+     0
+    ]
+   ],
+   "error": "None"
   },
   "arthvan:video": {
-   "status": 403,
-   "headers": [],
-   "rows": [],
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"YouTube Analytics API has not been used in project 1026407812603 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtubeanalytics.googleapis.com/overview?project=1026407812603 then retry. If you enabled th"
+   "status": 200,
+   "headers": [
+    "video",
+    "views",
+    "engagedViews",
+    "averageViewPercentage",
+    "averageViewDuration",
+    "likes",
+    "shares",
+    "subscribersGained"
+   ],
+   "rows": [
+    [
+     "7nfp1PCXmiE",
+     108,
+     18,
+     30.510000000000005,
+     14,
+     0,
+     0,
+     0
+    ],
+    [
+     "WvzlsYrVBQo",
+     37,
+     20,
+     39.3,
+     36,
+     1,
+     0,
+     0
+    ],
+    [
+     "Nm8DImn35mM",
+     35,
+     22,
+     96.64,
+     112,
+     1,
+     0,
+     0
+    ],
+    [
+     "2k5nMwk-c58",
+     5,
+     2,
+     5.66,
+     3,
+     0,
+     0,
+     0
+    ],
+    [
+     "FD5CQwRTv1o",
+     3,
+     1,
+     1.6399999999999997,
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     "h8iB1F82SZs",
+     2,
+     1,
+     13.269999999999998,
+     5,
+     0,
+     0,
+     0
+    ],
+    [
+     "3ufFWwI88ss",
+     2,
+     2,
+     13.36,
+     7,
+     0,
+     0,
+     0
+    ],
+    [
+     "vRC5nle_Opg",
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "KOwA7ryaDcs",
+     1,
+     1,
+     2.73,
+     6,
+     0,
+     0,
+     0
+    ],
+    [
+     "x-3lywQKfOc",
+     1,
+     1,
+     7.86,
+     4,
+     0,
+     0,
+     0
+    ],
+    [
+     "hMiOEIHQL34",
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "iMW2IfrYsyI",
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "uyEz2wcbe0o",
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "vFPLBKuvGCE",
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "6MT5xf4BeKA",
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "6wa2bi16SDo",
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "error": "None"
   }
  },
  "ig": {
   "account": {
-   "followers_count": 17548,
+   "followers_count": 17500,
    "media_count": 53,
    "username": "sanjeev_gulia",
    "id": "39082874041358640"
@@ -533,12 +1362,12 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/De4hdZkmAV9/",
     "insights": {
-     "reach": 104,
-     "views": 117,
+     "reach": 163,
+     "views": 174,
      "saved": 1,
      "shares": 0,
-     "ig_reels_avg_watch_time": 11928,
-     "reels_skip_rate": 63.6
+     "ig_reels_avg_watch_time": 12830,
+     "reels_skip_rate": 61.2
     }
    },
    {
@@ -550,12 +1379,12 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/De4X2uAjkjz/",
     "insights": {
-     "reach": 129,
-     "views": 148,
+     "reach": 133,
+     "views": 152,
      "saved": 0,
      "shares": 0,
-     "ig_reels_avg_watch_time": 9219,
-     "reels_skip_rate": 54.5
+     "ig_reels_avg_watch_time": 8984,
+     "reels_skip_rate": 55.9
     }
    },
    {
@@ -567,12 +1396,12 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/De30y6gj6Kz/",
     "insights": {
-     "reach": 1147,
-     "views": 1235,
+     "reach": 1151,
+     "views": 1240,
      "saved": 2,
      "shares": 1,
-     "ig_reels_avg_watch_time": 17553,
-     "reels_skip_rate": 22.2
+     "ig_reels_avg_watch_time": 17511,
+     "reels_skip_rate": 22.3
     }
    },
    {
@@ -584,12 +1413,12 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/De2EYpgD0tk/",
     "insights": {
-     "reach": 38,
-     "views": 63,
+     "reach": 39,
+     "views": 65,
      "saved": 0,
      "shares": 0,
-     "ig_reels_avg_watch_time": 7816,
-     "reels_skip_rate": 61.5
+     "ig_reels_avg_watch_time": 7526,
+     "reels_skip_rate": 63.4
     }
    },
    {
@@ -601,12 +1430,12 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/De1LAJ6ESyh/",
     "insights": {
-     "reach": 46,
-     "views": 59,
+     "reach": 48,
+     "views": 62,
      "saved": 0,
      "shares": 0,
-     "ig_reels_avg_watch_time": 6793,
-     "reels_skip_rate": 57.8
+     "ig_reels_avg_watch_time": 6503,
+     "reels_skip_rate": 60.4
     }
    },
    {
@@ -618,12 +1447,12 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/Dezx6LIiaFj/",
     "insights": {
-     "reach": 287,
-     "views": 337,
+     "reach": 288,
+     "views": 338,
      "saved": 0,
      "shares": 0,
-     "ig_reels_avg_watch_time": 17031,
-     "reels_skip_rate": 42.8
+     "ig_reels_avg_watch_time": 16976,
+     "reels_skip_rate": 43
     }
    },
    {
@@ -635,12 +1464,12 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/Dezj55ek3K1/",
     "insights": {
-     "reach": 55,
-     "views": 71,
+     "reach": 56,
+     "views": 72,
      "saved": 0,
      "shares": 0,
-     "ig_reels_avg_watch_time": 8814,
-     "reels_skip_rate": 60
+     "ig_reels_avg_watch_time": 8717,
+     "reels_skip_rate": 58.9
     }
    },
    {
@@ -653,11 +1482,11 @@
     "permalink": "https://www.instagram.com/reel/DezZgKrkTS-/",
     "insights": {
      "reach": 1335,
-     "views": 1564,
+     "views": 1565,
      "saved": 1,
      "shares": 0,
-     "ig_reels_avg_watch_time": 30929,
-     "reels_skip_rate": 30.1
+     "ig_reels_avg_watch_time": 30907,
+     "reels_skip_rate": 30.2
     }
    },
    {
@@ -669,12 +1498,12 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/DezRXZkiYMW/",
     "insights": {
-     "reach": 133,
-     "views": 164,
+     "reach": 134,
+     "views": 166,
      "saved": 0,
      "shares": 0,
-     "ig_reels_avg_watch_time": 8202,
-     "reels_skip_rate": 56.2
+     "ig_reels_avg_watch_time": 8102,
+     "reels_skip_rate": 56.8
     }
    },
    {
@@ -682,15 +1511,15 @@
     "caption": "US stock 1 dollar se? Aasaan hai, sasta nahi 💸\nRupaya dollar banta hai, bank margin rakhta hai, har order par brokerage ",
     "media_product_type": "REELS",
     "timestamp": "2026-10-22T08:43:24+0000",
-    "like_count": 25,
+    "like_count": 26,
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/DeylFymDsG0/",
     "insights": {
-     "reach": 1315,
-     "views": 1449,
+     "reach": 1317,
+     "views": 1451,
      "saved": 4,
      "shares": 6,
-     "ig_reels_avg_watch_time": 16774,
+     "ig_reels_avg_watch_time": 16768,
      "reels_skip_rate": 34.1
     }
    },
@@ -703,12 +1532,12 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/Dew22QBEYLj/",
     "insights": {
-     "reach": 136,
-     "views": 169,
+     "reach": 137,
+     "views": 171,
      "saved": 1,
      "shares": 0,
-     "ig_reels_avg_watch_time": 6200,
-     "reels_skip_rate": 62.4
+     "ig_reels_avg_watch_time": 6176,
+     "reels_skip_rate": 62.7
     }
    },
    {
@@ -721,11 +1550,11 @@
     "permalink": "https://www.instagram.com/reel/Dew1qmmjAgT/",
     "insights": {
      "reach": 1227,
-     "views": 1358,
-     "saved": 4,
+     "views": 1359,
+     "saved": 3,
      "shares": 0,
-     "ig_reels_avg_watch_time": 16437,
-     "reels_skip_rate": 34.7
+     "ig_reels_avg_watch_time": 16426,
+     "reels_skip_rate": 34.6
     }
    },
    {
@@ -737,12 +1566,12 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/Deud_5RChUA/",
     "insights": {
-     "reach": 106,
-     "views": 137,
+     "reach": 107,
+     "views": 138,
      "saved": 0,
      "shares": 0,
-     "ig_reels_avg_watch_time": 4590,
-     "reels_skip_rate": 67.9
+     "ig_reels_avg_watch_time": 4572,
+     "reels_skip_rate": 68.2
     }
    },
    {
@@ -839,12 +1668,12 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/DehfMkijXgC/",
     "insights": {
-     "reach": 46,
-     "views": 81,
+     "reach": 47,
+     "views": 82,
      "saved": 0,
      "shares": 0,
-     "ig_reels_avg_watch_time": 9350,
-     "reels_skip_rate": 62.5
+     "ig_reels_avg_watch_time": 9345,
+     "reels_skip_rate": 61.2
     }
    },
    {
@@ -956,7 +1785,7 @@
     "caption": "FULL BREAKDOWN 👇\n\n🏦 DECISION 1 — RBI REPO RATE\nJune 5, 2026 — RBI MPC meeting.\nRepo rate 5.25% pe UNCHANGED rakha.\nNeutr",
     "media_product_type": "REELS",
     "timestamp": "2026-06-06T15:52:38+0000",
-    "like_count": 5370,
+    "like_count": 5369,
     "comments_count": 334,
     "permalink": "https://www.instagram.com/reel/DZP_5Ocqj9h/",
     "insights": {
@@ -973,7 +1802,7 @@
     "caption": "Finance ka ek formula hai —\nagar log jitna jaldi samjhein —\nunke liye utna acha hai.\n\nFormula kya hai?\n\nINCOME - INVESTM",
     "media_product_type": "REELS",
     "timestamp": "2026-06-05T15:56:45+0000",
-    "like_count": 5484,
+    "like_count": 5482,
     "comments_count": 333,
     "permalink": "https://www.instagram.com/reel/DZNb4pvhCI-/",
     "insights": {
@@ -990,7 +1819,7 @@
     "caption": "LIC agent came home — showed you a policy.\nJo unhone nahi bataya — woh sun lo. 👀\n\nLOSING ₹2 CRORE — WITHOUT KNOWING IT\n\n",
     "media_product_type": "REELS",
     "timestamp": "2026-06-04T16:00:08+0000",
-    "like_count": 5447,
+    "like_count": 5446,
     "comments_count": 149,
     "permalink": "https://www.instagram.com/reel/DZK3600OtNd/",
     "insights": {
@@ -1194,7 +2023,7 @@
     "caption": "Modi ji ne 7 din mein kya kar diya? 🤯\n\n5 desh. 50+ global CEOs. $40 billion.\n\n🇦🇪 UAE — $5B investment + energy deals\n🇳🇱 ",
     "media_product_type": "REELS",
     "timestamp": "2026-05-25T16:15:08+0000",
-    "like_count": 26910,
+    "like_count": 26897,
     "comments_count": 8,
     "permalink": "https://www.instagram.com/reel/DYxJsaFBli_/",
     "insights": {
