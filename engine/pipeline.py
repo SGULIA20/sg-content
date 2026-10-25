@@ -86,7 +86,42 @@ def recent_openers(root: Path, piece: Piece, n: int = 5) -> list:
     return [(pid, prompt) for _d, pid, prompt in sorted(rows)[-n:]]
 
 
+REMAKE_WEEKDAY = 6                 # Sunday's Short remakes a past winner (founder, 25 Oct 2026)
+REMAKE_MIN_AGE_DAYS, REMAKE_MIN_VIEWS = 10, 800        # a winner: the month's top third on Instagram, and at least 800 views
+REMAKE_NOTE = ("A FRESH VERSION of one of our Reels that people watched: the same topic and facts, told as a new story. New opening line, "
+               "new first picture, new cast moments, go one step deeper (a Part 2 if it fits). Never reuse its lines or its title.")
+
+
+def remake_topic(piece: Piece, root: Path) -> dict | None:
+    """On REMAKE_WEEKDAY, the channel's best Instagram Short of the last 4 weeks (its top third, and at least REMAKE_MIN_VIEWS),
+    published at least REMAKE_MIN_AGE_DAYS earlier and never remade, with its own facts: no new research. Else None."""
+    if piece.kind != "short" or piece.publish_day.weekday() != REMAKE_WEEKDAY:
+        return None
+    try:
+        rows = json.loads((Path(root) / "logs" / "whatworks.json").read_text()).get("month") or []
+    except (FileNotFoundError, ValueError):
+        return None
+    rows = [r for r in rows if r.get("channel") == piece.channel and r.get("ig_views")]
+    if len(rows) < 4:
+        return None
+    views = sorted((r["ig_views"] for r in rows), reverse=True)
+    top_third = views[max(0, -(-len(views) // 3) - 1)]
+    remade = {p.topic.get("remake_of") for p in pieces.list_all(root) if p.topic.get("remake_of")}
+    cands = [r for r in rows if r["id"] not in remade and r["ig_views"] >= max(REMAKE_MIN_VIEWS, top_third)
+             and (piece.publish_day - date.fromisoformat(r["day"])).days >= REMAKE_MIN_AGE_DAYS]
+    for r in sorted(cands, key=lambda r: r["ig_views"], reverse=True):
+        orig = pieces.load(r["id"], root)
+        if orig and orig.facts and orig.script:
+            base = {k: v for k, v in orig.topic.items() if k not in ("look", "sheet", "revise", "rewrite")}
+            return {**base, "id": f"{orig.topic.get('id') or orig.id}#remake", "remake_of": orig.id, "remake_note": REMAKE_NOTE,
+                    "remake_views": r["ig_views"], "remake_facts": orig.facts}
+    return None
+
+
 def _pick_topic(piece: Piece, deps: Deps, root: Path, used: set) -> dict | None:
+    remake = remake_topic(piece, root)
+    if remake:
+        return remake
     if piece.channel == "arthvan" and piece.kind == "short" and not is_story(piece):
         long_id = buffer.long_for_short(piece.channel, piece.publish_day)
         long_p = pieces.load(long_id, root)
@@ -247,6 +282,10 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
             if topic.get("long_scenes"):
                 piece.facts = topic["long_facts"]
                 sheet = {"facts": piece.facts, "summary": "", "long_scenes": topic["long_scenes"], "hook": topic["hook"]}
+            elif topic.get("remake_of"):                               # a past winner: its own sourced facts, no new research
+                piece.facts = topic["remake_facts"]
+                piece.topic.pop("remake_facts", None)
+                sheet = {"facts": piece.facts, "summary": topic["remake_note"]}
             else:
                 if not _allow(piece, "research", DAILY_RESEARCH):
                     pieces.save(pieces.transition(piece, "rejected", f"research budget used for today ({DAILY_RESEARCH} calls); the next quota day retries"), root)
@@ -290,7 +329,7 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
         pieces.transition(piece, "rejected", f"try {attempt + 1}: " + "; ".join(reasons))
         pieces.save(piece, root)
         fixable = ("length", "label", "card", "hashtags", "disclaimer", "title", "threads", "instagram",
-                   "numbers without a source", "hook", "opener")         # a slow opening: same topic, rewritten opening (25 Oct 2026)                     # same topic: drop those numbers or use the fact sheet's
+                   "numbers without a source", "hook", "opener", "send")   # same topic: drop those numbers, rewrite the opening or the ending
         revise = "; ".join(reasons) if all(r.startswith(fixable) for r in reasons) else None      # formatting misses: same topic, trimmed draft
     if script is None:
         return piece
@@ -436,7 +475,7 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
                 write=lambda piece, sheet, lib, tags: writer.write(piece, sheet, lib, tags, batch_fn=writebatch.write_piece), say=voice.say, paint=art.paint, avatar=art.avatar,
                 render_card=cards.render, build=assemble.build, qa=qa.report, upload=upload_fn,
                 lint=lambda piece, prior: (lint.check_script(piece, banned, prior) + lint.check_captions(piece, hashtags)
-                                           + lint.check_opener(piece, recent_openers(root, piece))),
+                                           + lint.check_opener(piece, recent_openers(root, piece)) + lint.check_send(piece)),
                 claims_check=lambda piece: claims.match(lint.all_text(piece), piece.facts, library,
                                                         context=(piece.topic.get("title"), piece.topic.get("title_hi"))),
                 commons=art.commons_photo, library=library, hashtags=hashtags, voice_id=default_voice,

@@ -228,3 +228,18 @@ def test_opener_refuses_cast_with_phone_and_repeats():
     p.script = {"scenes": [{"visual": {"prompt": "A petrol pump price board at dawn, the diesel price glowing red"}}]}
     assert lint.check_opener(p, []) == []
     assert any("too close" in r for r in lint.check_opener(p, [("x", "A petrol pump price board at dawn, the diesel price glowing")]))
+
+
+def test_short_ends_with_a_named_send_line():
+    from datetime import date
+    from engine import lint
+    from engine.pieces import Piece
+    p = Piece(id="2026-10-30-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 10, 30))
+    p.script = {"end_question": "Yeh Papa ko bhejo, jo kehte hain FD sabse safe hai.", "scenes": [{"vo": "a"}, {"vo": "Yeh Papa ko bhejo, jo kehte hain FD sabse safe hai."}]}
+    assert lint.check_send(p) == []
+    p.script["end_question"] = "Aapke ghar mein kya mehnga hua?"
+    assert any("who to send" in r for r in lint.check_send(p))
+    p.script["end_question"] = "Yeh Papa ko bhejo."; p.script["scenes"][-1]["vo"] = "Bas itna hi."
+    assert any("last spoken scene" in r for r in lint.check_send(p))
+    p.kind = "long"
+    assert lint.check_send(p) == []

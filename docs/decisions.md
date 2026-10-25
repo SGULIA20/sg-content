@@ -102,6 +102,11 @@ line here (who, date) in the same change. Newest first.
   (storyframe PUNCH_S). C (founder, 25 Oct 2026, "go with C as shown"): Shorts run the picture from the title band to the foot of
   the screen (panels drawn 2:3, lower third kept calm), a soft shadow at the foot, captions big bold white with a black outline and
   numbers / the title keyword in yellow, the logo top right, evidence chips top left. Long videos keep the old layout.
+- Shares and remakes (founder, 25 Oct 2026, "do 1 and 2"): every Short ends with a spoken SEND line naming who to send it to
+  ("Yeh Papa ko bhejo, jo ..."), shown on the end card (lint check_send; Instagram's strongest signal for new viewers is DM sends,
+  ours were 0-6 per Reel). Every Sunday each channel's Short is a fresh version of a past winner (top third of the month on
+  Instagram, at least 800 views, at least 10 days old, each remade once; its own facts, new opening and picture). First: 1 Nov,
+  US stocks for 1 dollar (1,451) and Ram Setu (1,565).
 - Item 13 (Waypoint ban-appeal review) dropped: the Supabase connector can reach only one organisation (ScoreMyBiz).
 
 ## Approved 24 Oct 2026 (founder: "okay yes do"), built one at a time

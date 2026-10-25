@@ -163,7 +163,7 @@ def main(argv=None) -> int:
     looks = by_look(month)
     out = text(week, looks)
     (ROOT / "logs").mkdir(parents=True, exist_ok=True)
-    (ROOT / "logs" / "whatworks.json").write_text(json.dumps({"end": end.isoformat(), "week": week, "looks": looks}, indent=1, ensure_ascii=False))
+    (ROOT / "logs" / "whatworks.json").write_text(json.dumps({"end": end.isoformat(), "week": week, "looks": looks, "month": month}, indent=1, ensure_ascii=False))
     learnt = lessons(month)
     if learnt:
         LESSONS.write_text(json.dumps({"end": end.isoformat(), **learnt}, indent=1, ensure_ascii=False))
