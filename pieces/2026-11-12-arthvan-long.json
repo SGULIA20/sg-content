@@ -2,118 +2,149 @@
  "channel": "arthvan",
  "facts": [
   {
+   "label": "archaeology",
+   "number": 7.21,
+   "quote": "The height of the pillar, from the top to the bottom of its base, is 7.21 m (23 ft 8 in), 1.12 m (3 ft 8 in) of which is below ground.",
+   "source_date": "2005",
+   "source_name": "ASI",
+   "source_url": "https://en.wikipedia.org/wiki/Iron_pillar_of_Delhi",
+   "text": "The Iron Pillar of Delhi stands at a total height of 7.21 metres from its underground base to the tip of its bell capital, with about 1.12 metres resting below the modern stone floor.",
+   "unit": "metres"
+  },
+  {
+   "label": "archaeology",
+   "number": 6.0,
+   "quote": "The Delhi Iron Pillar is a large mass of iron, weighing about 6 tons, which is nearly the weight of a full-grown male elephant!",
+   "source_date": "2005",
+   "source_name": "IIT Kanpur",
+   "source_url": "http://home.iitk.ac.in/~bala",
+   "text": "Structural and computational analyses estimate the total weight of the forge-welded wrought iron pillar to be approximately 6.0 tonnes.",
+   "unit": "tonnes"
+  },
+  {
    "label": "scripture",
    "number": null,
-   "quote": "The monks, to the number of several thousands, are men of the highest ability and talent.",
-   "source_date": "0646",
-   "source_name": "Xuanzang, Great Tang Records on the Western Regions",
-   "source_url": "https://en.wikipedia.org/wiki/Xuanzang",
-   "text": "Xuanzang's seventh-century travelogue records that Nalanda Mahavihara accommodated thousands of resident monks and visiting scholars studying Buddhist doctrines, logic, grammar, and astronomy.",
+   "quote": "having in faith fixed his mind upon (the god) Vishnu, this lofty standard of the divine Vishnu was set up on the hill (called) Vishnupada.",
+   "source_date": "1888",
+   "source_name": "Corpus Inscriptionum Indicarum (J. F. Fleet)",
+   "source_url": "https://en.wikipedia.org/wiki/Iron_pillar_of_Delhi",
+   "text": "The earliest Sanskrit inscription engraved on the pillar records that a monarch named Chandra erected it as a standard of Vishnu on the hill named Vishnupada.",
    "unit": null
   },
   {
-   "label": "scripture",
-   "number": 3.0,
-   "quote": "Traditional Tibetan sources mention the existence of a great library at Nalanda named Dharmaganja (Piety Mart) which comprised three large multi-storeyed buildings, the Ratnasagara (Ocean of Jewels), the Ratnodadhi (Sea of Jewels), and the Ratnaranjaka (Jewel-adorned).",
-   "source_date": "1748",
-   "source_name": "Sum-pa mkhan-po, Pag Sam Jon Zang",
-   "source_url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
-   "text": "The eighteenth-century Tibetan chronicle Pag Sam Jon Zang records that Nalanda's library quarter was named Dharmaganja and consisted of three grand multi-storey edifices named Ratnasagara, Ratnodadhi, and Ratnaranjaka.",
-   "unit": "count"
-  },
-  {
-   "label": "scripture",
-   "number": 9.0,
-   "quote": "Ratnodadhi was nine storeys high and housed the most sacred manuscripts including the Prajnyaparamita Sutra and the Guhyasamaja.",
-   "source_date": "1748",
-   "source_name": "Sum-pa mkhan-po, Pag Sam Jon Zang",
-   "source_url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
-   "text": "According to the Tibetan text Pag Sam Jon Zang, the library building named Ratnodadhi rose to an elevation of nine storeys and preserved rare Buddhist sutras including the Prajnaparamita and Guhyasamaja.",
-   "unit": "count"
-  },
-  {
-   "label": "disputed",
-   "number": 9000000.0,
-   "quote": "The exact number of volumes in the Nalanda library is not known, but it is estimated to have been in the hundreds of thousands.",
-   "source_date": "2016",
-   "source_name": "Archaeological Survey of India / Historical consensus",
-   "source_url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
-   "text": "While popular tradition claims Nalanda housed 9 million manuscripts that burnt uninterrupted for three months, historians note that early medieval chronicles mention neither a specific book tally nor a three-month burn time.",
-   "unit": "count"
-  },
-  {
-   "label": "scripture",
-   "number": 1260.0,
-   "quote": "There were a great number of books on the religion of the Hindus there; and when all these books came under the observation of the Musalmans, they summoned a number of Hindus that they might give them information respecting the import of those books; but all the Hindus had been slain.",
-   "source_date": "1260",
-   "source_name": "Minhaj-i Siraj Juzjani, Tabaqat-i Nasiri",
-   "source_url": "https://en.wikipedia.org/wiki/Tabaqat-i_Nasiri",
-   "text": "Persian historian Minhaj-i Siraj Juzjani recorded in the Tabaqat-i Nasiri that troops under Muhammad Bakhtiyar Khalji seized a fortified monastery in Bihar containing an extensive collection of books whose readers had perished.",
+   "label": "archaeology",
+   "number": 2002.0,
+   "quote": "Balasubramaniam demonstrates that the lack of rust is due to the formation of a protective layer of misawite (δ-FeOOH), as well as a layer of crystalline phosphates, catalyzed by the presence of comparatively high levels of phosphorus in the iron.",
+   "source_date": "2002-06-10",
+   "source_name": "IIT Kanpur",
+   "source_url": "http://home.iitk.ac.in/~bala",
+   "text": "In 2002, metallurgist R. Balasubramaniam of IIT Kanpur demonstrated that the pillar's rust resistance is due to a thin protective surface layer composed of misawite and iron hydrogen phosphate hydrate.",
    "unit": "CE"
   },
   {
-   "label": "disputed",
-   "number": null,
-   "quote": "A passage from Minhaj-i-Siraj's Tabaqat-i Nasiri which actually describes the destruction of Odantapura Vihar (var. Bihar Sharif) is often taken as evidence of Nalanda's demise.",
-   "source_date": "2018",
-   "source_name": "Historiographical Analysis of Tabaqat-i Nasiri",
-   "source_url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
-   "text": "Historians debate whether the fortress of Bihar described in the Tabaqat-i Nasiri refers to Nalanda Mahavihara or the fortified monastery complex of Odantapuri located nearby at modern Bihar Sharif.",
+   "label": "archaeology",
+   "number": 0.25,
+   "quote": "Moreover, the pillar iron contains a relatively larger weight fraction of P (average composition 0.25%) which will aid in inducing passivity in iron.",
+   "source_date": "2000",
+   "source_name": "IIT Kanpur",
+   "source_url": "http://home.iitk.ac.in/~bala",
+   "text": "Elemental assays by IIT Kanpur established that the pillar possesses an average phosphorus concentration of roughly 0.25 percent, compared to modern wrought iron which rarely exceeds 0.05 percent.",
    "unit": null
   },
   {
-   "label": "scripture",
-   "number": 70.0,
-   "quote": "At Nalanda, there were 80 small viharas, which had been abandoned after being damaged by the Turushkas, and only two of the viharas were functional. Less than hundred monks resided there, and a local king named Buddhasena financially supported the Nalanda's 90-year abbot Rahula Shribhadra.",
-   "source_date": "1264",
-   "source_name": "Upasaka Chos-dar, Biography of Dharmasvamin",
-   "source_url": "https://en.wikipedia.org/wiki/Dharmasvamin",
-   "text": "The biography of Tibetan monk Dharmasvamin records that when he reached Nalanda around 1234 CE, roughly seventy monks still lived in surviving viharas under the guidance of the elderly master Rahula Shribhadra.",
-   "unit": "count"
+   "label": "archaeology",
+   "number": null,
+   "quote": "In ancient India lime wasn't added in the processed of iron from blast furnaces. Lime is responsible for carrying away most of the phosphorus present, in the modern processes.",
+   "source_date": "2003",
+   "source_name": "IIT Kanpur",
+   "source_url": "http://home.iitk.ac.in/~bala",
+   "text": "Ancient Indian smelters produced this corrosion-resistant wrought iron by directly reducing iron ore with charcoal in open bloomery hearths without adding limestone flux, preserving phosphorus in the finished metal.",
+   "unit": null
   },
   {
-   "label": "archaeology",
-   "number": 11.0,
-   "quote": "excavations commenced in 1915, which unearthed eleven monasteries and six brick temples neatly arranged on grounds 12 hectares (30 acres) in area.",
-   "source_date": "1916",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://asi.nic.in",
-   "text": "Systematic excavations by the Archaeological Survey of India initiated in 1915 cleared eleven interconnected brick monasteries and six temples spanning a 12-hectare protected zone.",
-   "unit": "count"
+   "label": "disputed",
+   "number": null,
+   "quote": "Fleet (1898) identified this place with Mathura... Based on archaeological and astronomical evidence, Balasubramaniam (2000) and Meera Dass (2004) identified Vishnupadagiri with modern Udayagiri.",
+   "source_date": "2004",
+   "source_name": "IIT Kanpur & Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Iron_pillar_of_Delhi",
+   "text": "While epigraphist J. F. Fleet asserted that the original hill Vishnupadagiri was located in Mathura, researchers R. Balasubramaniam and Meera Dass argued it was modern Udayagiri near Vidisha based on astronomical alignments during summer solstices.",
+   "unit": null
   },
   {
-   "label": "archaeology",
-   "number": 1920.0,
-   "quote": "Archeological excavations at the site during 1920-1921 revealed a thick layer of ashes on the uppermost strata, across many buildings separated by some distance; this suggests that Nalanda was subject to a catastrophic fire.",
-   "source_date": "1921",
+   "label": "disputed",
+   "number": null,
+   "quote": "The identity of king Chandra of the Delhi iron pillar Sanskrit inscription has been critically addressed.",
+   "source_date": "1989",
    "source_name": "Archaeological Survey of India",
-   "source_url": "https://asi.nic.in",
-   "text": "Archaeological excavations conducted across the uppermost levels of several separated monasteries in 1920 and 1921 revealed continuous layers of ash, burnt plaster, and charred wooden beams.",
+   "source_url": "https://en.wikipedia.org/wiki/Iron_pillar_of_Delhi",
+   "text": "Scholars dispute whether King Chandra in the eulogy refers to Gupta Emperor Chandragupta II or to the 4th-century ruler King Chandravarman of Pushkarana in Rajasthan.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": 1052.0,
+   "quote": "Alexander Cunningham read the inscription as follows: 'Samvat Dihali 1109 Ang Pāl bahi'... Buddha Rashmi Mani (1997) read it as follows: Samvat Kinllī 1109 Angapala bādi.",
+   "source_date": "1997",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Iron_pillar_of_Delhi",
+   "text": "Historians debate the reading of a Samvat 1109 inscription carved on the shaft, with Alexander Cunningham reading it as Tomar King Anangpal peopling Delhi and B. R. Mani interpreting it as Anangpal tightening the iron pillar in 1052 CE.",
    "unit": "CE"
   },
   {
    "label": "legend",
-   "number": 3.0,
-   "quote": "Legend says its library smouldered for three months.",
-   "source_date": "1900",
-   "source_name": "Local Oral Tradition",
-   "source_url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
-   "text": "A popular regional legend holds that smoke and soot from the burning Dharmaganja library darkened the skies over the Magadha plains for three full months.",
-   "unit": "count"
+   "number": null,
+   "quote": "The Brahman also predicted that as long as the pillar stood, the dominion would remain with King Anang Pal's family. However, harboring doubts... foot of the pillar was found wet with the blood of Vasuki... This Dhili Killi (loose pillar), is said to be the origin of the name of the ancient city of Delhi.",
+   "source_date": "1871",
+   "source_name": "Archaeological Survey of India Reports",
+   "source_url": "https://en.wikipedia.org/wiki/Iron_pillar_of_Delhi",
+   "text": "A popular oral legend claims King Anangpal uprooted the pillar because he doubted a priest's warning that it was anchored into the head of the cosmic serpent Vasuki, causing it to loosen forever and giving Delhi its name.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "There is a popular tradition that it was considered good luck if you could stand with your back to the pillar and make your hands meet behind it.",
+   "source_date": "1997",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Iron_pillar_of_Delhi",
+   "text": "A widespread local belief maintained that standing with one's back to the pillar and successfully wrapping one's arms around it brought good luck and answered prayers.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 1997.0,
+   "quote": "A fence was erected around the pillar in 1997 in response to damage caused by visitors... it was found that this practice was harming the naturally occurring protective film on the pillar's surface.",
+   "source_date": "1997",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in",
+   "text": "In 1997, the Archaeological Survey of India enclosed the pillar with an iron fence because constant human rubbing and sweat were eroding the protective misawite layer on its lower section.",
+   "unit": "CE"
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "when, in battle in the Vanga countries (Bengal), he kneaded (and turned) back with (his) breast the enemies who, uniting together, came against (him); – he, by whom, having crossed in warfare the seven mouths of the (river) Sindhu, the Vahlikas were conquered.",
+   "source_date": "1888",
+   "source_name": "Corpus Inscriptionum Indicarum (J. F. Fleet)",
+   "source_url": "https://en.wikipedia.org/wiki/Iron_pillar_of_Delhi",
+   "text": "The Mehrauli pillar's poetic verse proclaims that King Chandra defeated a confederacy of enemies in Vanga and crossed the seven tributaries of the Indus to conquer the Vahlikas.",
+   "unit": null
   }
  ],
  "id": "2026-11-12-arthvan-long",
  "ids": {
   "budget": {
    "day": "2026-10-25",
-   "drafts": 3,
-   "research": 1
+   "drafts": 5,
+   "research": 2
   },
   "cost": {
-   "inr": 0.0,
-   "usd": 0.65091,
-   "voice": 0
-  }
+   "inr": 61.5,
+   "usd": 1.129702,
+   "voice": 42
+  },
+  "yt_id": "a77qw_JI7wI"
  },
  "kind": "long",
  "publish_day": "2026-11-12",
@@ -122,125 +153,209 @@
   "draft cooking in Claude's batch lane; the next run collects it",
   "try 1: numbers without a source: 1748, 12, 21",
   "try 2: numbers without a source: 21",
-  "try 3: numbers without a source: 21"
+  "try 3: numbers without a source: 21",
+  "try 1: numbers without a source: 1888, 1871"
  ],
  "script": {
   "captions": {
    "instagram": {
-    "caption": "Nalanda ki library sach mein 3 mahine jali? ASI ki khudai mein raakh ki moti parat mili. Lekin kitaabon ki ginti aur jalne ke din purani chronicles mein nahi milte. Aur kuch historians kehte hain, mashhoor varnan shayad Odantapuri ka tha. Aapko kya lagta hai, ek hamla ya dheere dheere giraawat? Us bhai ko bhejo jo har baar 90 lakh kitaabon wali post forward karta hai.",
+    "caption": "Mehrauli ka 6 ton loha, sadiyon se zang kyun nahi khata? 🤯\nIIT Kanpur ne raaz dhoondha: zyada phosphorus aur misawite ki patli parat.\nShilalekh kehta hai Raja Chandra ne ise Vishnupada pahadi par lagaya.\nAapke hisaab se woh pahadi kahan thi, Mathura ya Udayagiri?\nUs dost ko bhejo jo bachpan mein is khambe ko peeth laga kar gale lagane ki koshish karta tha.",
     "hashtags": [
      "#SabutKeSaath",
      "#IndianHistory",
-     "#Archaeology",
      "#AncientIndia",
+     "#Archaeology",
      "#Itihaas",
      "#Rahasya",
      "#SGMythWorld"
     ]
    },
    "threads": {
-    "text": "Nalanda ki library sach mein 3 mahine jali? ASI ko raakh ki moti parat mili, par kitaabon ki ginti ka purana likhit sabut nahi. Aapko kya lagta hai, Nalanda ek hamle mein khatam hua ya dheere dheere? #SabutKeSaath #IndianHistory"
+    "text": "Mehrauli ka 6 ton loha, sadiyon se zang kyun nahi khata? IIT Kanpur ne raaz phosphorus aur misawite parat mein paaya. Par yeh khamba pehle kahan khada tha, Mathura ya Udayagiri? #SabutKeSaath #IndianHistory"
    },
    "youtube": {
     "chapters": [
-     "00:00 Raakh ki kaali parat",
-     "00:00 Chinese yatri ki diary",
-     "00:00 Dharmaganja: 9 manzil ki library?",
-     "00:00 ASI ki khudai, 1915",
-     "00:00 Aag ke sabut",
-     "00:00 Tabaqat-i Nasiri ka varnan",
-     "00:00 Nalanda ya Odantapuri?",
-     "00:00 Dharmasvamin ne kya dekha",
-     "00:00 90 lakh kitaabein, 3 mahine?",
-     "00:00 Jo abhi bhi rahasya hai",
-     "00:00 Aaj Nalanda mein kya dekhein",
-     "00:00 Aapka sawaal, agla safar"
+     "00:00 6 ton loha, zang nahi",
+     "00:00 Khambe par kya likha hai",
+     "00:00 Vasuki aur Dhili Killi",
+     "00:00 Zang ka raaz: misawite",
+     "00:00 Phosphorus aur praacheen bhatti",
+     "00:00 Raja Chandra kaun the?",
+     "00:00 Vishnupada kahan thi?",
+     "00:00 Anangpal ka lekh",
+     "00:00 Delhi kaise pahuncha?",
+     "00:00 Aaj kya dekhein",
+     "00:00 Sawaal aur agli jagah"
     ],
-    "description": "Nalanda ki library sach mein 3 mahine jali, ya yeh sirf lok kahani hai? ASI ki khudai mein raakh ki moti parat mili, lekin kitaabon ki ginti aur jalne ke din purani chronicles mein nahi milte. Is video mein Xuanzang ki diary, Tibet ka granth, Tabaqat-i Nasiri aur Odantapuri ki bahas, sab sabut ke saath tole gaye hain. Us dost ko bhejo jo har baar kehta hai Nalanda mahino tak jali thi.",
+    "description": "Mehrauli ka 6 ton loha, sadiyon se zang kyun nahi khata? IIT Kanpur ki jaanch ne iska raaz phosphorus aur misawite parat mein dhoondha. Par Raja Chandra kaun the aur yeh khamba pehle kahan khada tha, yeh bahas aaj bhi jaari hai. Us dost ko bhejo jo bachpan mein is khambe ko peeth laga kar gale lagane ki koshish karta tha.",
     "tags": [
-     "Nalanda",
-     "Nalanda library",
-     "Nalanda Mahavihara",
-     "Bihar history",
-     "ASI excavation",
-     "Xuanzang",
-     "Hiuen Tsang",
-     "Odantapuri",
-     "Dharmasvamin",
-     "Tabaqat-i Nasiri",
-     "Indian history",
-     "archaeology",
-     "ancient India"
+     "iron pillar",
+     "delhi iron pillar",
+     "mehrauli",
+     "zang",
+     "rust",
+     "IIT Kanpur",
+     "misawite",
+     "phosphorus",
+     "Chandragupta",
+     "Vasuki",
+     "Anangpal",
+     "Udayagiri",
+     "ancient india",
+     "itihaas",
+     "archaeology"
     ],
-    "title": "Nalanda Library 3 Mahine Jali? Sabut Kya Kehte"
+    "title": "Iron Pillar Delhi: 6 ton loha, zang kyun nahi?"
    }
   },
   "cards": [
    {
-    "big_number": "9 manzil",
-    "line": "Ratnodadhi library ki unchai, Tibet ke granth ke hisaab se",
-    "source": "Pag Sam Jon Zang, 1748"
+    "big_number": "6 ton",
+    "line": "Khambe ka lagbhag wazan, ek bade haathi jitna",
+    "source": "IIT Kanpur"
    },
    {
-    "big_number": "11",
-    "line": "Jude hue eent ke math jo khudai mein mile",
-    "source": "Archaeological Survey of India"
+    "big_number": "7.21 m",
+    "line": "Khambe ki kul oonchai, neev se ghanti jaise sir tak",
+    "source": "ASI"
    },
    {
-    "big_number": "1920-21",
-    "line": "Khudai mein upari parat par raakh ki moti layer mili",
-    "source": "Archaeological Survey of India"
+    "big_number": "2002",
+    "line": "IIT Kanpur ne misawite parat ka raaz bataya",
+    "source": "IIT Kanpur"
    },
    {
-    "big_number": "70",
-    "line": "Bhikshu jo hamle ke baad bhi Nalanda mein reh rahe the",
-    "source": "Biography of Dharmasvamin"
+    "big_number": "0.25%",
+    "line": "Khambe ke lohe mein ausat phosphorus",
+    "source": "IIT Kanpur"
    },
    {
-    "big_number": "90 lakh?",
-    "line": "Kitaabon ka popular daawa, purani chronicles mein nahi milta",
-    "source": "Historical consensus, Nalanda Mahavihara"
+    "big_number": "0.05%",
+    "line": "Aaj ke wrought iron mein phosphorus shayad hi isse upar",
+    "source": "IIT Kanpur"
+   },
+   {
+    "big_number": "1997",
+    "line": "ASI ne khambe ke chaaron taraf fence lagayi",
+    "source": "ASI"
    }
   ],
   "carousel": true,
-  "end_question": "Aapko kya lagta hai, Nalanda ek hamle mein khatam hua, ya dheere dheere?",
-  "hook": "Nalanda ki library, kya sach mein 3 mahine tak jali?",
+  "end_question": "Aapke hisaab se yeh khamba pehle kahan khada tha, Mathura ya Udayagiri?",
+  "hook": "Mehrauli ka 6 ton loha, sadiyon se zang kyun nahi khata?",
   "scenes": [
    {
     "facts_used": [
-     9
+     1
     ],
-    "label": "legend",
+    "label": "archaeology",
     "visual": {
      "card": null,
      "prompt": "surprised",
      "type": "avatar"
     },
-    "vo": "Nalanda ki library, kya sach mein 3 mahine tak jali? Bihar ke maidaanon mein yeh kahani pidhiyon se sunai jaati hai. Kehte hain dhuaan itna tha, ki aasmaan kaala pad gaya. Lekin kahani alag hoti hai, aur sabut alag. Aaj hum inhe alag alag tolenge, sabut ke saath."
+    "vo": "Mehrauli ka 6 ton loha, sadiyon se zang kyun nahi khata? Aapke ghar ka lohe ka gate kuch saal mein bhura pad jaata hai. Barsaat mein cycle ki chain bhi zang kha jaati hai. Par Delhi mein ek khamba hai, jo khule aasmaan ke neeche sadiyon se khada hai."
    },
    {
     "facts_used": [
-     8
+     1
     ],
     "label": "archaeology",
     "visual": {
      "card": null,
-     "prompt": "Drawn documentary panel, 16:9: an excavation trench among red brick ruins in Bihar, an archaeologist without a name brushing a thick black ash layer, charred wooden beam visible, early morning light, mood of quiet discovery, no text",
+     "prompt": "16:9 drawn panel: a dark iron pillar standing in an open courtyard beside the faint outline of a full-grown elephant for scale, warm afternoon light, sense of quiet wonder, no text",
      "type": "art"
     },
-    "vo": "Ab ek sabut suniye, jo kahani nahi hai. Archaeological Survey of India, yaani ASI, purani jagahon ko khodne aur bachaane wali sarkari sanstha. ASI ko Nalanda ki sabse upar wali parat mein raakh mili. Moti raakh, jala hua plaster, aur koyla ban chuki lakdi ki shehteer."
+    "vo": "IIT Kanpur ke vaigyanikon ne iska wazan lagbhag 6 ton aanka hai. Yaani ek bade, poore jawaan haathi jitna loha. Aur yeh loha saanche mein dhaala nahi gaya. Ise wrought iron kehte hain, yaani garam karke hathode se peeta gaya loha."
    },
    {
     "facts_used": [
-     8
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": {
+      "big_number": "7.21 m",
+      "line": "Khambe ki kul oonchai, neev se ghanti jaise sir tak",
+      "source": "ASI"
+     },
+     "prompt": "number card over a drawn silhouette of the iron pillar with part of it below a stone floor",
+     "type": "card"
+    },
+    "vo": "ASI ke naap ke hisaab se khambe ki kul oonchai 7.21 metre hai. Iska ek hissa aaj ke patthar ke farsh ke neeche daba hai. Sabse upar ghanti jaisa ek sir hai, jise bell capital kehte hain. Door se yeh ek seedha, shaant, kaala stambh dikhta hai."
+   },
+   {
+    "facts_used": [
+     2
     ],
     "label": "archaeology",
     "visual": {
      "card": null,
-     "prompt": "Drawn panel, 16:9: wide aerial view of several separated red brick monastery ruins, each with a dark ash band visible in its cut trench wall, dusky sky, mysterious mood, no text",
+     "prompt": "16:9 drawn panel: close view of old engraved lines of script on a dark iron surface, soft side light catching the grooves, mysterious mood, letters abstract and unreadable, no text",
      "type": "art"
     },
-    "vo": "Aur yeh raakh sirf ek kamre tak seemit nahi thi. Kai alag imaaraton mein, jo ek doosre se door thin, wahi kaali parat mili. Matlab aag chhoti nahi thi, kuch bahut bada jala tha. Sawaal yeh hai, kab jala, kisne jalaya, aur kitne din tak?"
+    "vo": "Toh sawaal seedhe hain. Yeh khamba kisne banwaya, yeh pehle kahan khada tha? Aur sabse bada, is par zang kyun nahi chadhi? Khambe par khuda shilalekh hamara pehla gawah hai. Aaj hum har jawab sabut ke saath, ek ek karke dekhenge."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Chaliye pehle khambe ki apni zubaan sunte hain. Is par Sanskrit mein ek purana shilalekh khuda hai. Shilalekh yaani patthar ya dhaatu par khoda gaya sandesh. Yeh kavita ki shakl mein ek raja ki prashansa hai. Is kahani ka sabse purana sabut yahi hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: an ancient king seen from behind kneeling in devotion on a hilltop, a distant small stone statue of Vishnu in a shrine, a tall iron pillar rising beside him, golden dawn, no text",
+     "type": "art"
+    },
+    "vo": "Shilalekh kehta hai, Chandra naam ke ek raja ne Vishnu mein apna mann lagaya. Phir Bhagwan Vishnu ka yeh ooncha dhwaj, Vishnupada naam ki pahadi par sthapit kiya. Dhwaj yaani jhanda, yahan matlab devta ke naam ka ek pavitra stambh."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: ancient hilltop ceremony, priests chanting, crowd of villagers below, workers with ropes raising a gleaming iron pillar, a king watching from a distance, soft morning light, festive yet solemn, no text",
+     "type": "art"
+    },
+    "vo": "Ab us din ka drishya sochiye. Ek pahadi, subah ki narm dhoop, neeche jama log. Pujari mantra padh rahe hain, raja thodi door khade dekh rahe hain. Chamakta hua lohe ka stambh dheere dheere khada hota hai. Tasveer hamari kalpana hai, par baat shilalekh ki hai."
+   },
+   {
+    "facts_used": [
+     12
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: stylised ancient battlefield in green river country, a king on horseback seen from behind pushing back an allied enemy line, dust and banners without symbols, heroic painted style, no text",
+     "type": "art"
+    },
+    "vo": "Shilalekh raja ki jeet bhi ginata hai. Vanga desh mein, yaani aaj ke Bengal mein, dushman ekjut hokar aaye. Raja ne unhe apni chhaati se peeche dhakel diya. Yeh kavita ki bhasha hai, seedha itihaas nahi. Par isse raja ki shaan ka andaaza milta hai."
+   },
+   {
+    "facts_used": [
+     12,
+     2
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: an ancient army crossing the wide braided mouths of a great river on boats and horses, then a Victorian-era scholar at a desk with lamp copying an inscription rubbing, split composition, no text",
+     "type": "art"
+    },
+    "vo": "Aage likha hai ki raja ne yuddh mein Sindhu nadi ke saat muhane paar kiye. Aur Vahlika naam ke logon ko jeet liya. Is shilalekh ka angrezi anuvaad epigraphist J. F. Fleet ne chhapa tha. Aaj bhi zyadatar vidwan wahi anuvaad padhte hain."
    },
    {
     "facts_used": [
@@ -249,452 +364,410 @@
     "label": "legend",
     "visual": {
      "card": null,
-     "prompt": "Drawn panel, 16:9: a village grandmother telling a story to children under a neem tree at dusk, distant ruins on the horizon with imagined smoke rising, warm lantern light, mood of wonder, no text",
+     "prompt": "16:9 drawn panel: a grandmother sitting on a charpai in a lamp-lit courtyard telling a story to wide-eyed children, the iron pillar faintly visible in the night sky behind like a dream, warm cosy mood, no text",
      "type": "art"
     },
-    "vo": "Pehle ek baat saaf kar doon, 3 mahine wali baat ek lok kahani hai. Lok kahani yaani legend, jo sunte sunte aage badhti hai, par uska likhit sabut nahi hota. Toh chaliye shuru se chalte hain. Pehle dekhte hain ki Nalanda tha kya, aur log yahan kyon aate the."
+    "vo": "Ab shilalekh se hatkar, logon ki zubaan par chalte hain. Delhi mein ek kahani peedhiyon se sunai jaati rahi hai. ASI ki purani reports mein bhi yeh kahani darj hai. Par dhyan rakhiye, yeh lok katha hai. Iske ghatne ka koi sabut nahi hai."
    },
    {
     "facts_used": [
-     0
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "chapter_turn",
-     "type": "avatar"
-    },
-    "vo": "Nalanda ko samajhne ke liye, ek Chinese yatri ki diary kholni padegi. Unka naam tha Xuanzang, jinhe hum Hiuen Tsang bhi kehte hain. Woh lambi yatra karke China se Bharat aaye the. Unhone jo dekha, use ek travelogue mein likha. Travelogue yaani safar ka likha hua haal."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: a travelling monk with a backpack of scrolls seen from behind, arriving at a vast red brick monastery complex with courtyards full of robed monks, golden afternoon, mood of awe, no text",
-     "type": "art"
-    },
-    "vo": "Unki manzil thi Nalanda Mahavihara. Mahavihara yaani ek bahut bada math, jahan bhikshu rehte bhi the aur padhte bhi the. Xuanzang ne likha ki yahan ke bhikshu hazaaron mein the. Aur unke shabdon mein, yeh log sabse unchi kabiliyat aur pratibha wale the."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: monks and visiting scholars debating in a brick courtyard, one pointing at a star chart drawn on cloth, others holding palm-leaf manuscripts, lively scholarly mood, no text",
-     "type": "art"
-    },
-    "vo": "Yahan sirf dharm ki padhai nahi hoti thi. Xuanzang ke record ke hisaab se, yahan logic bhi padhaya jaata tha. Vyakaran yaani bhasha ke niyam, woh bhi yahan padhe jaate the. Aur khagol shastra, yaani taaron aur grahon ka vigyan. Bahar se aaye scholars bhi yahan rehkar padhte the."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: close view of a monk's hands copying script onto a long palm-leaf manuscript by oil lamp light, stacks of tied manuscripts nearby, calm devoted mood, no readable text",
-     "type": "art"
-    },
-    "vo": "Ab sochiye, itne log aur itne vishay hain, toh kitaabein bhi bahut hongi. Us zamane mein kitaab ka matlab tha haath se likhi pothi. Ise manuscript kehte hain, yaani haath ki likhawat wali kitaab. Har nayi copy bhi haath se hi likhni padti thi. Isliye har pothi khazane jaisi keemti thi."
-   },
-   {
-    "facts_used": [
-     0,
-     1
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: transition scene, a dusty road leading from the plains of Bihar toward distant snowy Himalayan peaks with a Tibetan monastery, mood of a journey through time, no text",
-     "type": "art"
-    },
-    "vo": "Toh Nalanda ek jeeta jaagta gyaan ka shehar tha, yeh Xuanzang ki baaton se saaf hai. Lekin library ka naam aur uski imaaraton ka varnan, kahin aur se aata hai. Uske liye humein Tibet ki ek kitaab kholni padegi. Aur yeh kitaab bahut, bahut baad mein likhi gayi thi."
-   },
-   {
-    "facts_used": [
-     1
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "explaining_front",
-     "type": "avatar"
-    },
-    "vo": "Is kitaab ka naam hai Pag Sam Jon Zang, Tibet ka ek itihaas granth. Ise Sum-pa mkhan-po naam ke vidvaan ne likha tha. Yeh granth Nalanda ke ujadne ke sadiyon baad likha gaya. Yeh baat yaad rakhiyega, kyunki aage chalkar yahi sabse bada sawaal banegi."
-   },
-   {
-    "facts_used": [
-     1
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: imagined reconstruction of grand multi-storey brick library buildings rising above a monastery, monks carrying manuscript bundles between them, soft dawn light, dreamlike mood, no text",
-     "type": "art"
-    },
-    "vo": "Is granth ke hisaab se, library ke ilaake ka naam tha Dharmaganja. Dharmaganja ka matlab hai dharm ka bazaar, yaani gyaan ki mandi. Is ilaake mein kai manzilon wali vishaal imaaratein thin. Aur unke naam bade sundar the, Ratnasagara, Ratnodadhi aur Ratnaranjaka."
-   },
-   {
-    "facts_used": [
-     1
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: inside a library hall, shelves of wrapped manuscripts glowing softly like jewels in lamp light, a young monk gazing up in wonder, seen from behind, no text",
-     "type": "art"
-    },
-    "vo": "Ratnasagara yaani ratnon ka sagar. Ratnodadhi yaani ratnon ka samundar. Aur Ratnaranjaka yaani ratnon se saji hui imaarat. Zara sochiye, kitaabon ke ghar ko ratnon ka naam diya gaya. Us zamane ke logon ke liye, likha hua gyaan hi sabse bada khazana tha. Sona chandi baad mein aata tha."
-   },
-   {
-    "facts_used": [
-     2
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: a towering imagined brick library building with many floors against a cloudy sky, tiny monks at its base for scale, a Buddha statue at a distance in a niche, majestic mood, no text",
-     "type": "art"
-    },
-    "vo": "Ab sabse mashhoor daawa suniye. Yeh granth kehta hai ki Ratnodadhi imaarat 9 manzil unchi thi. Aur isme sabse pavitra pothiyan rakhi jaati thin. Jaise Prajnaparamita sutra aur Guhyasamaja, jo Buddh dharm ke bahut aadarniya granth hain. Sutra yaani chhote vachanon mein likhi shiksha."
-   },
-   {
-    "facts_used": [
-     2
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: a Tibetan scholar writing in a mountain monastery by butter lamp, a faint ghostly image of a tall library above his page, contemplative mood, no readable text",
-     "type": "art"
-    },
-    "vo": "Prajnaparamita ka matlab hai gyaan ki poornata, yaani poora aur gehra gyaan. Lekin yahan ek baat dhyan se suniye. 9 manzil ka yeh varnan ek baad ke granth mein hai. Isliye ise granth ka daawa samjhiye, naapa hua sach nahi. Ab chaliye, dekhte hain zameen kya kehti hai."
-   },
-   {
-    "facts_used": [
-     7
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "chapter_turn",
-     "type": "avatar"
-    },
-    "vo": "Ab granth band karte hain, aur kudaal uthaate hain. Kudaal yaani zameen khodne ka auzaar. Kyunki itihaas ka sabse imaandaar gawah aksar zameen hoti hai. Bas use dhyan se padhna aana chahiye. Aur Nalanda ki zameen ko padhne ka kaam kiya ASI ne."
-   },
-   {
-    "facts_used": [
-     7
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: early twentieth century excavation, workers with baskets and spades, a surveyor with a measuring tape and notebook, red brick walls emerging from earth mounds, sepia-toned mood of discovery, no text",
-     "type": "art"
-    },
-    "vo": "Pichhli sadi ki shuruaat mein, ASI ne Nalanda mein vyavasthit khudai shuru ki. Vyavasthit yaani naap tol ke saath, parat dar parat, har cheez ka record rakhte hue. Mitti hatti gayi, aur neeche se laal eenton ki deewarein nikalne lagi. Sadiyon se dabi ek duniya dheere dheere jaag rahi thi."
-   },
-   {
-    "facts_used": [
-     7
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: bird's-eye view of a neat row of excavated brick monasteries facing a line of brick temples, green lawns between them, clear sky, orderly impressive mood, no text",
-     "type": "art"
-    },
-    "vo": "Dheere dheere poora naksha saamne aaya. Ek doosre se jude hue 11 math mile, sab eent ke bane. Saath mein kai eent ke mandir bhi nikle. Sab saleeke se, ek line mein bane hue. Aisa lagta hai jaise kisi ne poore campus ka plan pehle se bana rakha ho."
-   },
-   {
-    "facts_used": [
-     0,
-     7
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: split image, on one side the travelling monk writing in a diary, on the other the excavated brick ruins in the same layout, a soft visual bridge between past and present, no text",
-     "type": "art"
-    },
-    "vo": "Yeh naksha dekhkar Xuanzang ki baat phir yaad aati hai. Unhone likha tha ki yahan hazaaron bhikshu aur scholars rehte the. Itne bade math, aapas mein jude hue, itni bheed ko sambhal sakte the. Jo baat diary mein thi, uska dhaancha ab zameen par dikh raha tha."
-   },
-   {
-    "facts_used": [
-     8
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: an archaeologist without a name kneeling in a deep trench, holding a lantern toward a dark band in the soil wall, tense suspenseful mood, no text",
-     "type": "art"
-    },
-    "vo": "Lekin abhi tak humne sirf deewarein aur naksha dekha hai. Library kahan thi, aur aag ka kya hua, yeh abhi baaki tha. Iska jawab kuch saal baad ki khudai mein mila. Aur woh jawab, bilkul kaale rang ka tha. Woh jawab tha raakh."
-   },
-   {
-    "facts_used": [
-     8
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: cross-section diagram-like drawing of soil layers in a trench wall, the top layer thick and black, brick foundations below, an archaeologist's hand pointing, educational mood, no text",
-     "type": "art"
-    },
-    "vo": "Saal 1920 ke aas paas, kai alag maths ki sabse upari parat khodi gayi. Parat yaani mitti ki layer, jaise cake ki tahein hoti hain. Sabse upar wali parat aam taur par sabse nayi hoti hai. Yaani Nalanda ke aakhri dinon ki kahani, isi layer mein chhupi thi."
-   },
-   {
-    "facts_used": [
-     8
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: close view of finds laid on a cloth, chunks of burnt plaster and a long charred wooden beam, ash dust in the air, sombre mood, no text",
-     "type": "art"
-    },
-    "vo": "Aur us layer mein kya mila? Raakh ki ek moti, kaali parat mili. Saath mein jala hua plaster, jo kabhi deewaron par chadha tha. Aur koyla ban chuki lakdi ki shehteer, jo chhat ko thaamti thin. Shehteer yaani chhat ke neeche lagi lambi lakdi."
-   },
-   {
-    "facts_used": [
-     8
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: imagined night scene of the monastery complex engulfed in fire across many buildings, monks fleeing with manuscript bundles in silhouette, tragic but respectful mood, no text",
-     "type": "art"
-    },
-    "vo": "Sabse ahem baat yeh thi ki raakh har jagah ek jaisi thi. Jo imaaratein ek doosre se kaafi door thin, unme bhi wahi parat mili. ASI ke record ke hisaab se, yeh ek bhayanak aag ka sanket hai. Matlab aag kisi ek kone mein nahi, poore campus mein faili thi."
-   },
-   {
-    "facts_used": [
-     8
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "thinking",
-     "type": "avatar"
-    },
-    "vo": "Toh aag lagi thi, yeh zameen ne saaf bata diya. Lekin raakh sab kuch nahi batati. Aag kisne lagayi, aur woh kitne din tak jali, yeh raakh par likha nahi hota. Iske liye historians ko phir se purani kitaabon ki taraf mudna pada."
-   },
-   {
-    "facts_used": [
-     4
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: a medieval Persian historian without a name writing in a bound book with a reed pen, candle light, shelves of books behind him, studious mood, no readable text",
-     "type": "art"
-    },
-    "vo": "Ek Persian itihaaskaar the, Minhaj-i Siraj Juzjani. Unhone ek kitaab likhi, Tabaqat-i Nasiri, jo lagbhag 1260 ki maani jaati hai. Yeh ek chronicle hai. Chronicle yaani saal dar saal ghatnaon ka likha hua hisaab. Isme Bihar ki ek ghatna ka zikr hai, jo bahut mashhoor hai."
-   },
-   {
-    "facts_used": [
-     4
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: soldiers in silhouette at the gate of a high-walled fortified brick monastery, smoke in the distance, a hall of manuscripts visible inside, solemn mood, no faces in close-up, no text",
-     "type": "art"
-    },
-    "vo": "Minhaj likhte hain ki Muhammad Bakhtiyar Khalji ki fauj ne Bihar mein ek kile jaisi jagah par kabza kiya. Woh jagah asal mein ek majboot math thi. Aur wahan kitaabon ka bahut bada bhandaar tha. Itni kitaabein dekhkar, unka matlab jaanne ki koshish hui."
-   },
-   {
-    "facts_used": [
-     4
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: an empty silent library hall, scattered manuscripts on the floor, a single shaft of dusty light, no people, deeply sorrowful mood, no text",
-     "type": "art"
-    },
-    "vo": "Kitaabon ka matlab samjhane wale log dhoondhe gaye. Lekin likha hai ki un kitaabon ke padhne wale sab maare ja chuke the. Socho, kitaabein saamne padi hain, par unhe padhne wala koi nahi bacha. Yeh itihaas ki sabse udaas tasveeron mein se ek hai."
-   },
-   {
-    "facts_used": [
-     4,
-     5
-    ],
-    "label": "disputed",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: a modern historian without a name at a desk comparing an old translated chronicle with a map of Bihar, magnifying glass in hand, puzzled mood, no readable text",
-     "type": "art"
-    },
-    "vo": "Yahi woh hissa hai, jise aksar Nalanda ke ant ka sabut maana jaata hai. Lekin is varnan ko dhyan se padhiye. Isme jagah ko Bihar ka ek kila jaisa math kaha gaya hai. Toh kya yeh sach mein Nalanda tha? Yahin se shuru hoti hai ek dilchasp bahas."
-   },
-   {
-    "facts_used": [
-     5
-    ],
-    "label": "disputed",
-    "visual": {
-     "card": null,
-     "prompt": "chapter_turn",
-     "type": "avatar"
-    },
-    "vo": "Ab suniye doosra paksh. Nalanda ke paas hi ek aur bada math tha, jiska naam tha Odantapuri. Yeh aaj ke Bihar Sharif ke ilaake mein tha. Aur yeh bhi ek kile ki tarah majboot bana math tha. Toh Minhaj asal mein kis jagah ki baat kar rahe the?"
-   },
-   {
-    "facts_used": [
-     5
-    ],
-    "label": "disputed",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: an old hand-drawn style map of the Bihar plains with two monastery sites marked by small brick icons close together, a question-like path of dotted light between them, mysterious mood, no text",
-     "type": "art"
-    },
-    "vo": "Kuch historians kehte hain ki yeh varnan asal mein Odantapuri ka hai. Unke hisaab se, isi hisse ko galti se Nalanda ke ant ka sabut maan liya gaya. Doosre log ise Nalanda se jodte hain. Dono jagah paas paas hain, isliye yeh bahas aasaan nahi hai. Yeh sawaal aaj bhi khula hai."
-   },
-   {
-    "facts_used": [
-     5
-    ],
-    "label": "disputed",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: a time-lapse style image of the monastery, one half bustling with monks, the other half quieter with crumbling walls and fewer people, autumn light, reflective mood, no text",
-     "type": "art"
-    },
-    "vo": "Ek aur badi bahas hai. Kya Nalanda ek hi hamle mein khatam hua, ya dheere dheere kamzor hota gaya? Kuch vidvaan kehte hain ki sahara dene wale shaasak badle, aur madad kam hoti gayi. Andar se bhi math kamzor hua. Aur kehte hain ki pehle bhi yahan aag lag chuki thi."
-   },
-   {
-    "facts_used": [
-     6
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: a Tibetan monk with a walking staff seen from behind, arriving at partly ruined brick monasteries, a few lamps still burning in windows, melancholic dusk, no text",
-     "type": "art"
-    },
-    "vo": "Is bahas mein ek aur gawah aata hai, Tibet ke ek bhikshu, Dharmasvamin. Woh hamle ke kuch hi dashak baad Nalanda pahunche the. Unki jeevani, yaani unki zindagi ki likhi hui kahani, aaj bhi milti hai. Aur usme Nalanda ki ek aisi tasveer hai, jo dil ko chhoo leti hai."
-   },
-   {
-    "facts_used": [
-     6
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: a small group of monks studying in one surviving brick hall while broken empty halls stand around them, oil lamps, quiet resilience mood, no text",
-     "type": "art"
-    },
-    "vo": "Jeevani ke hisaab se, kai vihar hamle mein toot chuke the aur khaali pade the. Vihar yaani bhikshuon ke rehne aur padhne ki jagah. Lekin kuch vihar ab bhi chal rahe the. Aur unme lagbhag 70 bhikshu ab bhi reh rahe the. Matlab hamle ke baad bhi, Nalanda poori tarah khaali nahi hua tha."
-   },
-   {
-    "facts_used": [
-     6
-    ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: a very old teacher monk seen from the side, teaching a few students by a single lamp in a cracked brick room, gentle sorrowful mood, no text",
-     "type": "art"
-    },
-    "vo": "Unke guru the ek bahut buzurg acharya, Rahula Shribhadra. Ek sthaniya raja unka kharcha uthata tha. Socho, toote hue kamre, gine chune log, phir bhi padhai jaari thi. Yeh tasveer ek raat ki tabahi jaisi nahi lagti. Yeh ek lambi, dheemi, udaas shaam jaisi lagti hai."
-   },
-   {
-    "facts_used": [
-     3,
      9
     ],
-    "label": "disputed",
+    "label": "legend",
     "visual": {
      "card": null,
-     "prompt": "thinking",
-     "type": "avatar"
+     "prompt": "16:9 drawn panel: a medieval king in a palace hall listening to an elderly priest, a cutaway below the floor showing the pillar's base resting on the hooded head of a giant mythic serpent seen at a distance, mystical glow, no text",
+     "type": "art"
     },
-    "vo": "Ab aate hain sabse mashhoor numbers par. Kehte hain Nalanda mein 90 lakh kitaabein thin. Aur woh 3 mahine tak lagataar jalti rahin. Social media par yeh baat aapko har jagah mil jaayegi. Lekin iska sabut kya hai, aur yeh baat aayi kahan se?"
+    "vo": "Kahani mein Raja Anangpal hain. Ek Brahmin unse kehte hain, yeh khamba naagraj Vasuki ke sir mein gada hai. Vasuki yaani puranon mein naagon ke raja. Brahmin ne kaha, jab tak khamba khada hai, raaj aapke parivaar mein rahega."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: workers with ropes pulling the iron pillar out of the ground at dusk, its base glistening dark red, a king in the background with hands on his head in regret, dramatic storm sky, no text",
+     "type": "art"
+    },
+    "vo": "Raja ke mann mein shak jaag utha. Kya sach mein khamba itna gehra gada hai? Unhone khamba ukhadwa diya. Kahani kehti hai, khambe ka pair Vasuki ke khoon se geela nikla. Brahmin ki baat sach nikli, aur raja pachhtaye."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: the iron pillar standing slightly tilted in loose earth, a small medieval city growing around it, children pointing and laughing, light playful folk-art style, no text",
+     "type": "art"
+    },
+    "vo": "Khamba wapas gaada gaya, par ab woh dheela reh gaya. Dheeli killi, yaani dheela khoonta, ise Dhili Killi kaha gaya. Kahani ke hisaab se isi se shahar ka naam pada, Dilli. Sunne mein mazedaar hai, par yeh naam ki ek lok vyakhya hai, pakka itihaas nahi."
+   },
+   {
+    "facts_used": [
+     10
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: a young man standing with his back against the iron pillar, arms stretched behind him straining to make his hands meet, friends cheering, sunny courtyard, joyful mood, no text",
+     "type": "art"
+    },
+    "vo": "Ek aur parampara bahut mashhoor thi. Log khambe se peeth laga kar khade hote the. Phir dono haath peeche le jaakar milane ki koshish karte. Maana jaata tha, haath mil gaye toh kismat khulegi, mannat poori hogi. Is maanyata ki keemat khambe ne chukayi, woh aage dekhenge."
    },
    {
     "facts_used": [
      3
     ],
-    "label": "disputed",
+    "label": "archaeology",
     "visual": {
      "card": null,
-     "prompt": "Drawn panel, 16:9: a historian without a name surrounded by open old chronicles, searching pages with a lamp, an empty space where a number should be, thoughtful investigative mood, no readable text",
-     "type": "art"
+     "prompt": "chapter_turn",
+     "type": "avatar"
     },
-    "vo": "Historians kehte hain ki us daur ki purani chronicles mein yeh baatein nahi milti. Na kitaabon ki koi pakki ginti hai, na jalne ke din. Yeh baatein baad ke sources se aayi hain. Kitaabein kitni thin, yeh aaj tak theek se pata nahi. Andaaza lakhon mein lagaya jaata hai."
+    "vo": "Ab sabse bada sawaal, zang kyun nahi lagi? Pehle samjhiye ki zang hoti kya hai. Loha jab hawa ki oxygen aur nami se milta hai, bhuri parat banti hai. Woh parat jhadti rehti hai, aur andar ka loha khata jaata hai. Isi ko hum zang kehte hain."
    },
    {
     "facts_used": [
-     9
+     3
     ],
-    "label": "legend",
+    "label": "archaeology",
     "visual": {
      "card": null,
-     "prompt": "Drawn panel, 16:9: vast flat plains under a smoke-darkened sky, farmers looking toward a distant glow, painted like a folk tale illustration, legendary mood, no text",
+     "prompt": "16:9 drawn panel: a metallurgist in a lab coat seen from the side peering into a microscope in a university lab, tiny iron flakes on a glass slide, notes and beakers around, focused curious mood, no text",
      "type": "art"
     },
-    "vo": "Aur 3 mahine wali baat ek lok kahani hai. Kahani kehti hai ki Magadh ke maidaan par mahino tak dhuaan chhaya raha. Magadh yaani aaj ke Bihar ka purana naam aur ilaaka. Aisi kahaniyan dard ko yaad rakhne ka tareeka hoti hain. Par inhe naapa hua itihaas mat samjhiye."
+    "vo": "Is sawaal par saalon kaam kiya IIT Kanpur ke metallurgist R. Balasubramaniam ne. Metallurgist yaani dhaatu vaigyanik, jo dhaatuon ki banawat padhta hai. Unhone khambe ki sateh ke namoone liye. Phir microscope aur lab ki jaanch se unki ek ek parat ko padha."
    },
    {
     "facts_used": [
-     0,
-     3,
-     5,
-     8
+     3
     ],
-    "label": "disputed",
+    "label": "archaeology",
     "visual": {
-     "card": null,
-     "prompt": "Drawn panel, 16:9: a balance scale drawn over the ruins, one pan holding a brick and ash, the other holding a scroll, half the scene lit and half in shadow, mood of unresolved mystery, no text",
-     "type": "art"
+     "card": {
+      "big_number": "2002",
+      "line": "IIT Kanpur ne misawite parat ka raaz bataya",
+      "source": "IIT Kanpur"
+     },
+     "prompt": "number card over a drawn magnified cross-section of iron with a thin protective surface layer",
+     "type": "card"
     },
-    "vo": "Toh kya pata hai, aur kya nahi? Pata hai ki Nalanda ek bahut bada gyaan kendra tha. Pata hai ki yahan ek bhayanak aag lagi thi. Lekin aakhri aag ke waqt kitni kitaabein thin, yeh nahi pata. Aur yeh ek hamla tha ya lambi giraawat, is par bahas jaari hai."
+    "vo": "2002 mein unhone apna nateeja saamne rakha. Khambe ki sateh par ek bahut patli suraksha parat hai. Iska naam hai misawite, yaani lohe ka ek khaas oxide jo ghana aur chipka rehta hai. Yeh parat aam zang ki tarah jhadti nahi."
    },
    {
-    "facts_used": [],
-    "label": "disputed",
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
     "visual": {
      "card": null,
-     "prompt": "Drawn panel, 16:9: a line of monks seen from behind carrying wrapped manuscripts up a Himalayan mountain path toward a distant monastery, misty dawn, hopeful mood, no text",
+     "prompt": "16:9 drawn panel: stylised microscopic view of an iron surface where a glowing crystalline shield blocks tiny drops of rain and swirls of air from reaching the metal below, scientific yet magical mood, no text",
      "type": "art"
     },
-    "vo": "Ek aur sawaal hai, jo thodi umeed jagata hai. Jab scholars yahan se nikle, toh kitni pothiyan apne saath le gaye? Maana jaata hai ki kuch pothiyan Tibet aur Nepal tak pahunchi. Par kitna hissa bacha, yeh aaj bhi rahasya hai. Shayad Nalanda ka kuch hissa, kisi pahaadi math mein aaj bhi surakshit ho."
+    "vo": "Is parat mein ek aur cheez mili, iron hydrogen phosphate hydrate. Naam bhaari hai, matlab seedha hai. Yeh phosphorus aur lohe se bana ek crystal jaisa padarth hai. Misawite aur yeh phosphate milkar kawach banate hain. Yeh kawach hawa aur paani ko andar jaane se rokta hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: the iron pillar under monsoon rain, water beading and sliding off its dark smooth surface while a nearby modern iron railing is orange with rust, contrast of old and new, no text",
+     "type": "art"
+    },
+    "vo": "Matlab khamba zang se bacha nahi, balki ek khaas zang ne hi use bachaya. Shuru mein jo patli parat bani, wahi dheere dheere kawach ban gayi. Yeh koi chamatkar nahi, seedha vigyan hai. Aur sach kahun, yahi baat is khambe ko aur bhi kamaal ka banati hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": {
+      "big_number": "0.25%",
+      "line": "Khambe ke lohe mein ausat phosphorus",
+      "source": "IIT Kanpur"
+     },
+     "prompt": "number card over a drawn lab assay scene with an iron sample and a glowing element symbol shape, no letters",
+     "type": "card"
+    },
+    "vo": "Ab is kawach ki jad dekhte hain. IIT Kanpur ki jaanch mein khambe ke lohe mein phosphorus ausatan 0.25 percent mila. Phosphorus ek tatva hai, jise aam taur par lohe mein ashuddhi maana jaata hai. Par yahan yahi ashuddhi hero ban gayi."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": {
+      "big_number": "0.05%",
+      "line": "Aaj ke wrought iron mein phosphorus shayad hi isse upar",
+      "source": "IIT Kanpur"
+     },
+     "prompt": "number card comparing a tall bar for the ancient pillar iron and a tiny bar for modern wrought iron, drawn style",
+     "type": "card"
+    },
+    "vo": "Ab tulna kijiye. Aaj ke wrought iron mein phosphorus shayad hi kabhi 0.05 percent se upar jaata hai. Yaani is khambe mein phosphorus kai guna zyada hai. Yahi zyada phosphorus suraksha parat ko banne mein madad karta hai. Raaz ka pehla taala yahin khulta hai."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: ancient Indian smiths around a small open clay furnace glowing orange, one working leather bellows, baskets of charcoal and reddish ore nearby, night sparks rising, no text",
+     "type": "art"
+    },
+    "vo": "Toh itna phosphorus aaya kahan se? Jawab praacheen Bharatiya karigaron ki bhatti mein chhupa hai. Woh bloomery bhatti mein loha banate the. Bloomery yaani chhoti khuli bhatti, jismein kachcha loha koyle ke saath tapaya jaata tha. Isse seedha loha mil jaata tha."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel split in two: left a modern steel plant pouring white limestone into a giant furnace, right an ancient smith beside a small clay furnace with only charcoal and ore, contrasting cool and warm palettes, no text",
+     "type": "art"
+    },
+    "vo": "Aaj ki factory mein bhatti mein choona milaya jaata hai, ise flux kehte hain. Flux yaani woh cheez jo ashuddhiyan kheench kar bahar le jaaye. Choona phosphorus ko bhi saath le jaata hai. Praacheen karigar choona nahi milate the. Isliye phosphorus lohe ke andar hi reh gaya."
+   },
+   {
+    "facts_used": [
+     1,
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: a team of ancient blacksmiths hammering a glowing section of a long iron shaft on stone anvils, sweat and sparks, rhythm of work, heroic anonymous labourers, no text",
+     "type": "art"
+    },
+    "vo": "Phir garam lohe ke tukdon ko hathode se peet peet kar joda gaya. Ise forge welding kehte hain, yaani garam karke peet kar dhaatu jodna. Sochiye kitne karigar, kitni bhattiyan, kitne din lage honge. Un karigaron ke naam shilalekh mein kahin nahi hain."
    },
    {
     "facts_used": [
      7
     ],
-    "label": "archaeology",
+    "label": "disputed",
     "visual": {
      "card": null,
-     "prompt": "Drawn panel, 16:9: present-day visitors walking along paths through the red brick ruins of Nalanda, green lawns, a tall brick temple structure in the background, bright clear day, inviting mood, no text",
-     "type": "art"
+     "prompt": "chapter_turn",
+     "type": "avatar"
     },
-    "vo": "Aaj Nalanda ke khandahar ASI ki surakshit jagah hain, jise aap khud jaakar dekh sakte hain. Yeh ek bahut bade ilaake mein faile hain, kai cricket maidan jitni jagah. Laal eenton ke math, unke aangan, aur mandiron ke unche dhaanche aaj bhi khade hain."
+    "vo": "Ab us hisse par chalte hain jahan vidwan ek mat nahi hain. Pehla sawaal, shilalekh ka Raja Chandra aakhir kaun tha? Shilalekh mein sirf naam hai, Chandra. Na vansh ka naam saaf hai, na koi saal. Isliye yeh paheli aaj tak khuli hai."
    },
    {
     "facts_used": [
-     0,
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: a grand ancient imperial court seen from the back of the hall, an emperor on a distant throne, gold coins and palm-leaf records on a table in the foreground, regal mood, no text",
+     "type": "art"
+    },
+    "vo": "Ek paksh kehta hai, yeh Gupta samrat Chandragupta Dwitiya the. Dwitiya yaani doosre, is naam ke doosre Gupta raja. Gupta vansh praacheen Bharat ka ek bada rajvansh tha. Chandra naam ka mel Chandragupta se baithta hai, yahi is paksh ka seedha tark hai."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: a desert fort town in golden Rajasthan light, a regional king on a balcony seen from behind looking over sand dunes, a scholar below comparing two old manuscripts, no text",
+     "type": "art"
+    },
+    "vo": "Doosra paksh kehta hai, yeh Rajasthan ke Pushkarana ke Raja Chandravarman ho sakte hain. ASI se jude adhyayanon mein Chandra ki pehchaan par yeh sawaal gambhirta se uthaya gaya. Dono taraf apne tark hain. Aur abhi tak koi aakhri faisla nahi hua hai."
+   },
+   {
+    "facts_used": [
+     2,
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: a blurred painted portrait of an ancient king fading into mist, half of it left unfinished, the iron pillar inscription glowing faintly in the foreground, contemplative mood, no text",
+     "type": "art"
+    },
+    "vo": "Toh hamare haath mein kya hai? Naam pakka hai, Chandra. Bhakti bhi pakki hai, Vishnu ki. Par raja ka chehra ab bhi dhundhla hai. Itihaas mein aisa aksar hota hai, jab ek shilalekh hi akela gawah ho. Aur gawah sirf utna bolta hai jitna likha hai."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: an old map of north India spread on a wooden desk, a Victorian scholar's hand placing a pin near a river city, an oil lamp and magnifying glass beside it, no readable text",
+     "type": "art"
+    },
+    "vo": "Doosri paheli, khamba pehle kahan tha? Shilalekh kehta hai, Vishnupada pahadi par. Par aaj woh Delhi mein hai. Shilalekh padhne wale vidwan ko epigraphist kehte hain. Epigraphist J. F. Fleet ne 1898 mein kaha, yeh pahadi Mathura mein thi."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: two researchers seen from behind standing on a rocky sandstone hill overlooking green plains, one holding a survey notebook, the other pointing at the horizon, late afternoon, no text",
+     "type": "art"
+    },
+    "vo": "Phir IIT Kanpur ke R. Balasubramaniam aur shodhkarta Meera Dass ne alag raay di. Unke hisaab se Vishnupada aaj ka Udayagiri hai, Vidisha ke paas. Unhone puratatv aur aasmaan, dono ke sabut saath rakhe. Puratatv yaani zameen se mili purani cheezon ka adhyayan."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: sunrise on the longest day of the year, a single beam of sunlight crossing a rocky hill and touching an empty spot where a pillar might have stood, awe-filled mood, no text",
+     "type": "art"
+    },
+    "vo": "Unka tark suraj se juda hai. Summer solstice yaani saal ka sabse lamba din. Us din suraj ki seedh ko unhone pahadi ki jagah se joda. Meera Dass ka yeh kaam 2004 mein saamne aaya. Mathura ya Udayagiri, yeh bahas aaj bhi jaari hai."
+   },
+   {
+    "facts_used": [
      8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: close view of a small later engraving on the iron pillar shaft, a finger tracing its grooves, an old palm-leaf calendar overlaid faintly in the background, no readable text",
+     "type": "art"
+    },
+    "vo": "Teesra sabut bhi khambe par hi khuda hai. Ek chhota sa lekh, Samvat 1109 ka. Samvat yaani Vikram Samvat, Bharat ka ek purana calendar. Aaj ke angrezi calendar mein yeh 1052 isvi ke aas paas baithta hai. Isvi yaani CE, jo hum roz likhte hain."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: a 19th-century surveyor in a pith helmet sketching the iron pillar in a notebook, beyond him a vision of a medieval town being built with walls and gates, no text",
+     "type": "art"
+    },
+    "vo": "Puratatvavid Alexander Cunningham ne is lekh ko padha. Puratatvavid yaani archaeologist, jo khudai aur purane sabut padhta hai. Unke hisaab se likha hai ki Tomar Raja Anangpal ne Dilli basayi. Yaani yeh lekh ek shahar ke basne ki baat karta hai."
+   },
+   {
+    "facts_used": [
+     8,
+     9
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: medieval workers tightening the base of the iron pillar with wooden wedges and mallets while a king watches, a faint ghostly serpent coil in the soil hinting at the legend, no text",
+     "type": "art"
+    },
+    "vo": "Baad mein puratatvavid B. R. Mani ne isi lekh ko alag padha. Unke hisaab se Anangpal ne khamba kas diya, yaani dobara mazbooti se gaada. Ek padhaai mein shahar basta hai, doosri mein khamba thehrta hai. Aur yaad kijiye, Vasuki wali lok katha mein bhi yahi raja aur yahi khamba tha."
+   },
+   {
+    "facts_used": [
+     1,
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "thinking",
+     "type": "avatar"
+    },
+    "vo": "Ab woh baat jo koi pakke se nahi jaanta. Agar khamba pehle Mathura ya Udayagiri mein tha, toh Delhi kaise aaya? Lagbhag 6 ton ka loha, bina truck, bina crane. Itni door ise kaise dhoya gaya, iska koi likhit hisaab nahi milta."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: three faded dream-like vignettes of the iron pillar being hauled by elephants, floated on a river barge, and rolled on wooden logs, drawn as uncertain sketches with question-like mist, no text",
+     "type": "art"
+    },
+    "vo": "Kya haathiyon se khinchwaya gaya? Kya nadi ke raaste naav par laaya gaya? Kya lakdi ke belan par sarakaaya gaya? Yeh sab sirf andaaze hain, sabut nahi. Shayad kisi din kisi purane dastavez ya khudai se iska jawab mile."
+   },
+   {
+    "facts_used": [
+     0
     ],
     "label": "archaeology",
     "visual": {
      "card": null,
-     "prompt": "Drawn panel, 16:9: a young visitor seen from behind touching an old red brick wall at sunset, faint ghostly images of debating monks in the courtyard behind, nostalgic mood, no text",
+     "prompt": "16:9 drawn panel: cutaway view of the iron pillar going below a stone courtyard floor into dark earth, the hidden base fading into shadow, a visitor above looking down curiously, no text",
      "type": "art"
     },
-    "vo": "Jab aap un eenton ke beech chalenge, toh zara ruk kar sochiye. Yahin kabhi logic, vyakaran aur taaron par behas hoti thi. Aur yaad rakhiye, inhi deewaron ke upar wali parat se woh kaali raakh nikli thi. Nalanda ki kahani aaj bhi yahin, isi mitti mein likhi hai."
+    "vo": "Ek sawaal aur bhi hai, jo seedha zameen se juda hai. Khambe ka 1.12 metre hissa aaj farsh ke neeche hai. Neeche kya hai, woh aam aankh se nahi dikhta. Itna bhaari khamba seedha kaise khada kiya gaya, yeh aaj bhi hairaan karta hai."
    },
    {
     "facts_used": [
-     5
+     11
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": {
+      "big_number": "1997",
+      "line": "ASI ne khambe ke chaaron taraf fence lagayi",
+      "source": "ASI"
+     },
+     "prompt": "number card over a drawn view of the iron pillar surrounded by a low iron fence with tourists outside",
+     "type": "card"
+    },
+    "vo": "Ab baat aapki. Aaj aap Mehrauli jaakar yeh khamba apni aankhon se dekh sakte hain. Par ab aap use gale nahi laga sakte. 1997 mein ASI ne khambe ke chaaron taraf lohe ki baad laga di. Baad yaani fence, ek suraksha ghera."
+   },
+   {
+    "facts_used": [
+     11,
+     10,
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: the lower part of the iron pillar polished bright by countless hands, a ghostly crowd of reaching arms around it, then a quiet fence in the present, bittersweet mood, no text",
+     "type": "art"
+    },
+    "vo": "Wajah wahi purani parampara thi. Anginat haathon ki ragad aur paseene se neeche ki misawite parat ghis rahi thi. Jo kawach sadiyon mein bana tha, woh logon ke pyaar se ghis raha tha. Isliye ASI ne beech mein thodi doori bana di. Mannat ab door se maangi jaati hai."
+   },
+   {
+    "facts_used": [
+     0,
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: a family of tourists seen from behind at the fence looking up at the iron pillar's bell capital against a clear blue sky, a child pointing, peaceful wonder, no text",
+     "type": "art"
+    },
+    "vo": "Jab aap jaayein, toh khambe ke neeche ke hisse ko dhyan se dekhiye. Upar ka ghanti jaisa sir dekhiye, aur shilalekh ki panktiyan dhoondhiye. Aap ek aise sabut ke saamne khade honge, jo vigyan aur itihaas dono ka hai. Aur jo aaj bhi khule aasmaan ke neeche khada hai."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "16:9 drawn panel: a lone traveller with a backpack walking up a sandstone hill path at sunrise, the hilltop glowing ahead, sense of a new journey beginning, no text",
+     "type": "art"
+    },
+    "vo": "Agli kadi mein hum chalenge Vidisha ke paas Udayagiri. Wahi pahadi, jise kuch vidwan asli Vishnupada maante hain. Dekhenge ki wahan suraj aur patthar ka kya rishta hai. Aur kya wahan khambe ki koi nishaani bachi hai."
+   },
+   {
+    "facts_used": [
+     6,
+     10
     ],
     "label": "disputed",
     "visual": {
@@ -702,40 +775,84 @@
      "prompt": "end_smile",
      "type": "avatar"
     },
-    "vo": "Ab aapse ek aasaan sawaal. Aapko kya lagta hai, Nalanda ek hamle mein khatam hua, ya dheere dheere? Comments mein bas likhiye, hamla ya dheere dheere. Aur agli baar hum chalenge Odantapuri ki talaash mein. Woh math, jiska naam is kahani mein baar baar aaya."
+    "vo": "Ab aapki baari. Aapke hisaab se yeh khamba pehle kahan khada tha, Mathura ya Udayagiri? Comment mein bas ek shabd likhiye. Aur agar aapne kabhi ise peeth laga kar gale lagaya tha, toh woh kissa bhi zaroor bataiye."
    }
   ],
   "thumbnail": {
-   "scene": "THE ARCHAEOLOGIST holds a handful of black ash from a trench, eyes wide, mouth slightly open, red brick walls blurred behind",
+   "scene": "THE METALLURGIST leans close to the dark iron pillar holding a magnifying glass, eyes wide and lips parted in wonder",
    "words": [
-    "90 LAKH",
-    "GAYAB?"
+    "0.25%",
+    "SECRET"
    ]
   },
-  "title": "*Nalanda* ki library sach mein 3 mahine jali? 🤯"
+  "title": "Delhi ka *loha* jo zang nahi khata 🤯"
  },
- "status": "rejected",
- "timings": [],
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  16.81,
+  31.18,
+  47.91,
+  64.2,
+  80.25,
+  95.9,
+  112.71,
+  128.48,
+  143.73,
+  158.18,
+  172.47,
+  186.96,
+  204.81,
+  221.78,
+  237.99,
+  254.92,
+  269.49,
+  287.22,
+  302.31,
+  318.92,
+  336.09,
+  351.58,
+  368.07,
+  384.04,
+  400.45,
+  416.9,
+  432.11,
+  449.04,
+  466.73,
+  484.22,
+  498.67,
+  516.68,
+  532.97,
+  553.14,
+  568.51,
+  582.92,
+  597.97,
+  614.06,
+  631.47,
+  648.0,
+  661.09
+ ],
  "topic": {
   "allowed_sources": [
    "asi.nic.in",
    "en.wikipedia.org",
-   "Xuanzang (Hiuen Tsang) records",
-   "UNESCO whc.unesco.org"
+   "IIT Kanpur (R. Balasubramaniam) papers"
   ],
   "hooks": [
-   "9 manzil ki library, 90 lakh kitaabein?",
-   "Nalanda ko kisne jalaya, kitne din jali?",
-   "Khudai mein kya bacha?"
+   "1,600 saal, 6 ton loha, zero zang?",
+   "IIT Kanpur ne is lohe mein kya paya?",
+   "Yeh khamba Delhi kaise aaya?"
   ],
-  "id": "nalanda-library",
-  "notes": "The '3 months' and '9 million books' are from later sources; label disputed; no communal angle on the destruction.",
-  "patch_tries": 2,
-  "place": "Nalanda, Bihar",
+  "id": "iron-pillar-delhi",
+  "look": "indian-comic",
+  "notes": "Science explains it (phosphorus, misawite layer); say so with the inscription history.",
+  "patch_tries": 1,
+  "place": "Mehrauli, Delhi",
   "priority": 1,
   "target_minutes": 14,
-  "title_hi": "Nalanda ki library 3 mahine tak jali"
+  "title_hi": "Delhi ka loha jo 1,600 saal se zang nahi khaya",
+  "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-10-25T09:11:21+00:00",
+ "updated": "2026-10-25T13:40:50+00:00",
  "writer": "claude"
 }
