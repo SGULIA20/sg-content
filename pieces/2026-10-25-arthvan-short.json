@@ -24,8 +24,12 @@
  ],
  "id": "2026-10-25-arthvan-short",
  "ids": {
+  "ig_reel_id": "18154393711540698",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "out_sha": "7adcab6ff430885ef7b4a46dce77c43aa937a0d8",
+  "threads_id": "18034929428854097",
+  "threads_poll_id": "17962299567215537",
   "yt_id": "uyEz2wcbe0o"
  },
  "kind": "short",
@@ -210,7 +214,7 @@
   },
   "title": "Rakhigarhi ki aurat ka *DNA* kya bolta hai? 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   10.05,
@@ -243,6 +247,6 @@
   "title_hi": "Rakhigarhi ka DNA",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-22T14:29:57+00:00",
+ "updated": "2026-10-25T16:09:24+00:00",
  "writer": "claude"
 }
