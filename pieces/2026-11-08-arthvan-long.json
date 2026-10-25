@@ -3,137 +3,75 @@
  "facts": [
   {
    "label": "archaeology",
-   "number": 3.0,
-   "quote": "However, these are rare features on the surface of the Earth and only 190 structures are currently known and accepted as confirmed impact structures... out of which three confirmed impact structures are from India (e.g. Lonar, Dhala and Ramgarh craters).",
-   "source_date": "2020",
-   "source_name": "Geological Survey of India",
-   "source_url": "https://www.gsi.gov.in",
-   "text": "The Geological Survey of India recognizes Lonar as one of three confirmed terrestrial meteorite impact craters in India displaying shock metamorphism.",
-   "unit": "count"
+   "number": null,
+   "quote": "The construction of the Karni Mata Temple was concluded in the early 20th century by Maharaja Ganga Singh of Bikaner. The entire temple structure is raised in marble and its architecture evinces resemblance to the Mughal style.",
+   "source_date": "2026-07-30",
+   "source_name": "Rajasthan Tourism",
+   "source_url": "https://www.tourism.rajasthan.gov.in/karni-mata-temple.html",
+   "text": "The present marble structure of the Karni Mata Temple at Deshnoke was completed in the early twentieth century under the patronage of Maharaja Ganga Singh of Bikaner, incorporating late Rajput and Mughal architectural motifs.",
+   "unit": null
   },
   {
    "label": "archaeology",
-   "number": 1.8,
-   "quote": "The Lonar crater is a relatively small (rim to rim diameter 1830 m), almost perfectly circular simple (bowl-shaped) impact crater centered at 19°58'N and 76°31'E.",
-   "source_date": "2004",
-   "source_name": "Lunar and Planetary Institute",
-   "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
-   "text": "The circular Lonar crater has an average rim-to-rim diameter of approximately 1.8 kilometres.",
-   "unit": "km"
-  },
-  {
-   "label": "archaeology",
-   "number": 150.0,
-   "quote": "The crater measures 1.8 km (1.1 mi) in diameter and is 150 m (490 ft) deep.",
-   "source_date": "1979",
-   "source_name": "Geological Survey of India",
-   "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
-   "text": "The depth from the raised rim crest of the crater down to the crater basin floor measures approximately 150 metres.",
+   "number": 0.75,
+   "quote": "The idol of Karni Mata of Bikaner sits within the inner sanctum of the temple,a 75 cm tall statue holding a trident (trishul) in one hand, adorned by a crown and garlands.",
+   "source_date": "2026-07-30",
+   "source_name": "Rajasthan Tourism",
+   "source_url": "https://www.tourism.rajasthan.gov.in/karni-mata-temple.html",
+   "text": "The inner sanctum of the Deshnoke shrine houses a 0.75-metre-tall stone idol of Karni Mata holding a trident, flanked on either side by images of her sisters.",
    "unit": "metres"
   },
   {
-   "label": "disputed",
-   "number": 52000.0,
-   "quote": "While earlier analyses dated the structure to 52 ± 6 ka, subsequent argon-argon dating (40Ar/39Ar) yielded a much older age of 570 ± 47 ka. However, the 40Ar/39Ar age has been disputed, as inherited argon in the samples may have resulted in an overestimation of the crater's age.",
-   "source_date": "2011-07-01",
-   "source_name": "Geology (Jourdan et al.) / Physical Research Laboratory",
-   "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
-   "text": "The age of the Lonar crater impact is disputed between earlier thermoluminescence dating placing it at roughly 52,000 years ago and subsequent argon-argon geochronology dating it to roughly 570,000 years ago.",
-   "unit": "years"
-  },
-  {
    "label": "archaeology",
    "number": null,
-   "quote": "When the meteor hit, the pressure was so intense it turned regular minerals into maskelynite (a type of glass that only forms under extreme shock pressures from a meteorite collision).",
-   "source_date": "1973-04-20",
-   "source_name": "Science / U.S. Geological Survey",
-   "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
-   "text": "Geological studies established the hypervelocity meteorite impact origin of the crater by detecting maskelynite, a shock-metamorphosed mineral glass formed under extreme kinetic pressures in basalt.",
-   "unit": null
-  },
-  {
-   "label": "archaeology",
-   "number": 2020.0,
-   "quote": "Lonar Lake's color shift occurred over the span of a few days. The change is visible in this image pair, acquired on May 25 and June 10 with the Operational Land Imager (OLI) on Landsat 8.",
-   "source_date": "2020-06-19",
-   "source_name": "NASA Earth Observatory",
-   "source_url": "https://earthobservatory.nasa.gov/images/146869/lonar-lake-tries-on-a-rosy-color",
-   "text": "In June 2020 CE, the water of Lonar Lake underwent an unexpected, rapid colour transformation from emerald green to bright pink within a few days.",
-   "unit": "CE"
-  },
-  {
-   "label": "scripture",
-   "number": null,
-   "quote": "A localized text, the Lonar Mahatmya (or Virajakshetra Mahatmya), composed in the late 18th or early 19th century, expands the tale in eleven chapters, narrated by Vyasa to Skanda, integrating every feature of the crater into the legend...",
-   "source_date": "1800",
-   "source_name": "Skanda Purana (Lonar Mahatmya)",
-   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-   "text": "The Lonar Mahatmya, a regional sacred text affiliated with the Skanda Purana, identifies the crater as the subterranean lair of the demon Lonasura.",
-   "unit": null
-  },
-  {
-   "label": "scripture",
-   "number": null,
-   "quote": "Vishnu descended in the form of a handsome youth, discovered the demon's underground dwelling with the help of his sisters, threw open the lid of his subterranean lair, and killed him within the very pit where he had resided.",
-   "source_date": "1800",
-   "source_name": "Skanda Purana (Lonar Mahatmya)",
-   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-   "text": "The Skanda Purana tradition relates that Lord Vishnu incarnated as the youth Daitya Sudan to uncover the demon's underground cave and slay him in his pit.",
+   "quote": "Adding to the charm of the attractive marble façade are solid silver doors that lead to an entry to the compound within. The panels of the silver doors depict the many legends of the Goddess.",
+   "source_date": "2026-07-30",
+   "source_name": "Rajasthan Tourism",
+   "source_url": "https://www.tourism.rajasthan.gov.in/karni-mata-temple.html",
+   "text": "The entrance to the temple compound is fitted with solid silver gates featuring relief carvings that depict scenes from the life and legends of Karni Mata.",
    "unit": null
   },
   {
    "label": "legend",
+   "number": 25000.0,
+   "quote": "Out of all the rats, white rats are held specifically sacred as they are believed to be the incarnations of Karni Mata and her sons.",
+   "source_date": "2026-07-30",
+   "source_name": "Rajasthan Tourism",
+   "source_url": "https://www.tourism.rajasthan.gov.in/karni-mata-temple.html",
+   "text": "Local Charan belief maintains that an estimated 25,000 black rats residing in the Deshnoke sanctuary are holy ancestors known as kaba rather than ordinary pests.",
+   "unit": "count"
+  },
+  {
+   "label": "legend",
    "number": null,
-   "quote": "The Lonar lake is supposed to be the pit within which the giant had resided, with its water representing his blood. A nearby hill is supposed to be the lid which Vishnu had thrown open.",
-   "source_date": "1909",
-   "source_name": "Lonar Oral Tradition",
-   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-   "text": "Local oral legend maintains that the saline water of Lonar Lake is the demon Lonasura's spilled blood and that a nearby hill represents the subterranean stone lid cast aside by Vishnu.",
+   "quote": "Out of all the rats, white rats are held specifically sacred as they are believed to be the incarnations of Karni Mata and her sons. Visitors put in enormous efforts to draw them out often through offering of sweets.",
+   "source_date": "2026-07-30",
+   "source_name": "Rajasthan Tourism",
+   "source_url": "https://www.tourism.rajasthan.gov.in/karni-mata-temple.html",
+   "text": "Devotees believe that spotting a rare white rat among the thousands of dark rodents brings exceptional fortune and serves as a direct divine blessing.",
    "unit": null
-  },
-  {
-   "label": "archaeology",
-   "number": 1300.0,
-   "quote": "Henry Cousens dates the temple to the end of the 13th and beginning of the 14th centuries CE. He is of the opinion that the construction of the temple was never completed due to invasions of the Delhi Sultanate.",
-   "source_date": "1931",
-   "source_name": "Archaeological Survey of India / Henry Cousens",
-   "source_url": "https://en.wikipedia.org/wiki/Daitya_Sudan_Temple",
-   "text": "The Archaeological Survey of India protects the medieval Daitya Sudan Temple at Lonar, a Hemadpanthi-style star-shaped structure dated by archaeologist Henry Cousens to around 1300 CE.",
-   "unit": "CE"
-  },
-  {
-   "label": "scripture",
-   "number": 1598.0,
-   "quote": "These mountains produce all the requisites for making glass and soap. And here are saltpetre works which yield a considerable revenue to the State, from the duties collected.",
-   "source_date": "1598",
-   "source_name": "Ain-i-Akbari (Abu'l-Fazl)",
-   "source_url": "https://en.wikipedia.org/wiki/Lonar_Lake",
-   "text": "The Mughal administrative text Ain-i-Akbari recorded in roughly 1598 CE that Lonar was an active mining and industrial site where saltpetre, glass, and soap were manufactured from its waters.",
-   "unit": "CE"
-  },
-  {
-   "label": "archaeology",
-   "number": 2020.0,
-   "quote": "Lonar Lake. Buldhana, Maharashtra. Designated 22 July 2020. Reference no. 2441.",
-   "source_date": "2020-07-22",
-   "source_name": "Ramsar Convention Secretariat",
-   "source_url": "https://rsis.ramsar.org/ris/2441",
-   "text": "Lonar Lake was officially recognized as an internationally protected wetland under the Ramsar Convention in 2020 CE.",
-   "unit": "CE"
   }
  ],
  "id": "2026-11-08-arthvan-long",
  "ids": {
   "budget": {
-   "day": "2026-10-24",
-   "drafts": 4,
-   "research": 4
+   "day": "2026-10-25",
+   "drafts": 1,
+   "research": 1
   },
-  "write_batch": {
-   "id": "msgbatch_01NevTYUvS9HF66FBgJQ6aDP",
-   "key": "2ba926b86aee49fb",
-   "tries": 5
-  }
+  "captions": {
+   "en": "AUieDaZguhpub0LjUvY0eAy3F8Lx8NTgDRhW0GEHDlbFcRzDVQzgWWwk",
+   "gu": "AUieDabjNfRP3W3bQpO0-V80I_EN4s8evt1XLT8Sjn48W9fe4lVZU5cy2tXD23alJZgE2PJtPw4",
+   "hi": "AUieDab5-vA_EtrGgSa8RtcRl-cZ8Uesa9JhWBi1Ti3AIArKC6YA4WncYSzwurpSpsOTPDM",
+   "mr": "AUieDaaUSoN2yDUyWJ5Te1Bw6DziWn4JsZetcnVCgKbt_I8_KRprFHfkbfYMpiI_HTI",
+   "ta": "AUieDaZcGyYcfxVMdVe6ZOixD2VWWGkvMGxhRDWn2P7Dgkr5iyNWtrbXLyrvdniGe6k"
+  },
+  "cost": {
+   "inr": 61.5,
+   "usd": 0.696884,
+   "voice": 40
+  },
+  "yt_id": "vKBPhn7er8s"
  },
  "kind": "long",
  "publish_day": "2026-11-08",
@@ -154,26 +92,579 @@
   "draft cooking in Claude's batch lane; the next run collects it",
   "research budget used for today (4 calls); the next quota day retries"
  ],
- "script": null,
- "status": "rejected",
- "timings": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "25,000 chuhe aur ek bhi bimari nahi? Deshnoke ka Karni Mata mandir. Bhakt kehte hain yeh Mata ki kripa hai, doctor kehte hain chuhe keetanu le jaate hain. Sach yeh hai ki is daave par koi verified study hai hi nahi. Aap safed chuha dekhoge to kya karoge? Us dost ko bhejo jo Bikaner trip plan kar raha hai aur chuhon se darta hai.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#IndianHistory",
+     "#Mythology",
+     "#Rahasya",
+     "#Itihaas",
+     "#AncientIndia",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "25,000 chuhe aur ek bhi bimari nahi? Deshnoke ke Karni Mata mandir mein bhakt chuhon ko purvaj maante hain. Par bimari wale daave par aaj tak koi verified study nahi hui. Aap wahan safed chuha dekho to kya karoge, photo ya pranaam? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 25,000 chuhon ka mandir",
+     "00:00 Karni Mata ki kahani",
+     "00:00 Sangemarmar aur chaandi",
+     "00:00 Safed chuhe ka raaz",
+     "00:00 Bimari: daava aur sach",
+     "00:00 Jo abhi tak pata nahi",
+     "00:00 Aaj kya dekh sakte hain",
+     "00:00 Nichod aur agla safar"
+    ],
+    "description": "25,000 chuhe aur ek bhi bimari nahi, Deshnoke ke Karni Mata mandir mein kya raaz hai? Hum kahani, mandir ka record aur bimari wala daava, teeno ko sabut ke saath alag alag parakhte hain. Safed chuhe ki aastha se lekar us sawal tak, jiska jawab abhi vigyan ke paas bhi nahi. Us dost ko bhejo jo kehta hai chuhon wale mandir mein jaana khatarnak hai.",
+    "tags": [
+     "Karni Mata",
+     "Deshnoke",
+     "Karni Mata temple",
+     "rat temple",
+     "chuhon ka mandir",
+     "Bikaner",
+     "Rajasthan",
+     "kaba",
+     "white rat",
+     "Indian history",
+     "mythology",
+     "temple mystery",
+     "Sabut ke saath"
+    ],
+    "title": "Karni Mata: 25,000 chuhe, bimari kyon nahi?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "25,000",
+    "line": "Deshnoke mandir mein kaale chuhon ka anumaan",
+    "source": "Rajasthan Tourism"
+   },
+   {
+    "big_number": "0.75 m",
+    "line": "Karni Mata ki patthar ki murti ki oonchai",
+    "source": "Rajasthan Tourism"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Agar Deshnoke mein aapke saamne safed chuha aa jaaye, to aap kya karoge? Photo loge, ya haath jod kar chupchaap ruk jaoge?",
+  "hook": "25,000 chuhe aur ek bhi bimari nahi, Deshnoke mein kya raaz hai?",
+  "scenes": [
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Wide illustrated panel of a white marble temple courtyard in a Rajasthan desert town at golden hour, hundreds of small black rats gathered around a large shallow bowl, barefoot pilgrims watching in quiet awe, warm mysterious mood, no text",
+     "type": "art"
+    },
+    "vo": "25,000 chuhe aur ek bhi bimari nahi, Deshnoke mein kya raaz hai? Rajasthan ke ek chhote kasbe mein ek anokha mandir hai. Yahan chuhon ko bhagaaya nahi jaata, khilaaya jaata hai. Log unhe keede nahi, apne purvaj maante hain. Aur yahi baat duniya bhar ko hairaan karti hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Low-angle drawn panel of bare feet of pilgrims stepping carefully on a polished white marble floor while small black rats scurry between them, ornate marble arches in the background, gentle daylight, no text",
+     "type": "art"
+    },
+    "vo": "Yeh hai Karni Mata ka mandir, Bikaner ke paas, Deshnoke mein. Safed sangemarmar ka farsh, aur us par daudte kaale chuhe. Bhakt nange paanv, bahut sambhal kar chalte hain. Har kadam par neeche dekhna padta hai. Kyunki yahan farsh ke asli mehmaan insaan nahi, chuhe hain."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Split illustrated panel: on the left a devout elderly pilgrim with folded hands in a marble temple, on the right a doctor in a white coat looking through a magnifying glass at a small black rat, balanced neutral mood, no text",
+     "type": "art"
+    },
+    "vo": "Lekin asli sawal yeh hai. Itne chuhe, itni bheed, phir bimari ka dar kyon nahi? Bhakt kehte hain, yeh Mata ki kripa hai. Doctor kehte hain, chuhe khatarnak keetanu le kar chalte hain. Aaj hum yeh sab sabut ke saath parkhenge, bina mazaak, bina faisla sunaaye."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Painterly panel of an old Rajasthan desert landscape with sand dunes and a small village of mud houses, a robed female sage figure seen from behind at a distance walking toward the horizon, soft dusty light, no text",
+     "type": "art"
+    },
+    "vo": "Kahani kai sadiyon pehle ki hai, Rajasthan ke tapte registaan ki. Wahan ek sant stree thi, jinhe log Karni Mata kehte hain. Charan samaj, yaani Rajasthan ka ek purana samudaay, unse gehri aastha rakhta hai. Unke liye yeh sirf kahani nahi, apne ghar ki yaad hai."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel of a grandmother in a Rajasthani odhni sitting on a mud courtyard at dusk, children gathered close listening wide-eyed, an oil lamp flickering, warm storytelling mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab socho, ek kachcha aangan, shaam ka waqt. Ek daadi bachchon ko gher kar baithi hai. Woh kehti hai, ek baar Mata ke parivaar par bada dukh aaya. Mata ne haar nahi maani. Woh seedhe Yamraj ke paas gayin, yaani mrityu ke devta ke paas."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Dreamlike illustrated panel of a misty celestial threshold, a robed female sage seen from behind facing a towering shadowy figure of the lord of death at a great distance, small glowing rat shapes drifting toward a temple below, solemn mood, no text",
+     "type": "art"
+    },
+    "vo": "Kahani ke mutabik, wahan ek saudha hua. Mata ke vansh ke log marne ke baad kahin bhatkenge nahi. Woh chuhe ban kar Mata ke paas hi rahenge. Isi mandir mein, isi aangan mein. Daadi muskura kar kehti hai, isiliye yahan ke chuhe hamare apne hain."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Close drawn panel of a family of black rats resting calmly on a marble step beside marigold petals, an old man kneeling nearby looking at them tenderly as if at relatives, soft warm light, no text",
+     "type": "art"
+    },
+    "vo": "In chuhon ko yahan kaba kehte hain. Kaba yaani pavitra chuhe, jinhe log apne purvaj maante hain. Purvaj yaani hamare baap dada, jo hamse pehle jee chuke. Socho, jise duniya chuha kehti hai, woh kisi ke pardada ho sakte hain. Isiliye yahan koi unhe nahi maarta."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel showing a chain of hands across generations, an old woman's hand passing a small clay lamp to a younger woman's hand and then to a child's hand, desert village backdrop, reflective mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab ek baat saaf kar dein, imaandari se. Yeh kahani kisi likhit granth se nahi, local parampara se aati hai. Yeh peedhi dar peedhi, zubaani chalti aayi hai. Isliye is panel par label hai legend. Iska matlab jhooth nahi, bas itna ki likhit sabut hamare paas nahi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Historical drawn panel of stone masons carving white marble blocks at a temple construction site in early twentieth century Rajasthan, a turbaned royal overseer seen from behind at a distance reviewing plans, scaffolding of wood, dusty daylight, no text",
+     "type": "art"
+    },
+    "vo": "Ab kahani se nikal kar patthar par aate hain. Jo mandir aaj aap dekhte ho, woh bahut purana nahi hai. Rajasthan Tourism ke mutabik, iska nirmaan pichhli sadi ki shuruaat mein poora hua. Yeh kaam Bikaner ke Maharaja Ganga Singh ki dekh rekh mein hua."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Detailed illustrated panel of a white marble temple facade with cusped arches, latticed stone screens and delicate floral carvings, blending Rajput and Mughal motifs, bright clear sky, no text",
+     "type": "art"
+    },
+    "vo": "Poora mandir sangemarmar se bana hai, upar se neeche tak. Iski banawat mein Rajput shaili hai, aur Mughal shaili ki jhalak bhi. Shaili yaani banane ka andaaz, jaise mehraab, jaali aur nakkashi. Alag alag zamaane ka hunar, ek hi deewar par dikhta hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel of tall gleaming solid silver temple doors with embossed relief panels showing tiny scenes of a desert sage and animals, sunlight glinting on the metal, a pilgrim standing small before them, no text",
+     "type": "art"
+    },
+    "vo": "Mandir mein ghuste hi aankh darwaazon par atak jaati hai. Yeh thos chaandi ke darwaaze hain. Inke panel par ubhri hui nakkashi hai. Ubhri nakkashi yaani aisi tasveer, jo sateh se bahar uthi ho. In tasveeron mein Karni Mata ki kahaniyan khudi hain."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel of a young pilgrim couple standing before embossed silver doors, leaning close to study one relief panel, a black rat sitting at the threshold, calm reverent mood, no text",
+     "type": "art"
+    },
+    "vo": "Yaani jo kahani daadi zubaani sunaati hai, wahi chaandi par bhi likhi hai. Bas shabdon mein nahi, tasveeron mein. Kai bhakt darwaaze ke saamne ruk kar sir jhukaate hain. Kuch log har panel dhyaan se dekhte hain, jaise kisi kitaab ke panne palat rahe hon."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel looking through a dim marble doorway into an inner sanctum, a small crowned stone idol holding a trident seen at a distance, garlands and soft lamp glow, devotees silhouetted in the foreground, no text",
+     "type": "art"
+    },
+    "vo": "Andar garbhgriha hai, yaani mandir ka sabse andar wala pavitra kamra. Wahan Karni Mata ki patthar ki murti hai. Rajasthan Tourism ke anusaar iski oonchai lagbhag 0.75 metre hai. Matlab ek chhote bachche jitni. Murti ke haath mein trishul hai, sir par mukut."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel of a queue of pilgrims seen from behind facing a distant sanctum with a small central idol flanked by two smaller images, a neat line of black rats along the marble floor beside the queue, gentle humorous warmth, no text",
+     "type": "art"
+    },
+    "vo": "Murti ke aas paas unki behnon ki pratimaayein bhi hain. Mukut aur maalaon se saji murti, aur saamne bhakton ki qatar. Aur yahin, garbhgriha ke paas, chuhe bhi jama rehte hain. Aisa lagta hai jaise woh bhi darshan ki line mein khade hon."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Upward-looking drawn panel of a temple courtyard covered by fine protective netting, a hawk circling far above in the blue sky, black rats safe on the marble below, sunlight filtering through the mesh, no text",
+     "type": "art"
+    },
+    "vo": "Ab upar dekhiye. Aangan ke upar jaali lagi hai, hifaazat ke liye. Yeh jaali chuhon ko upar se aane wale khatre se bachaati hai, jaise shikari parinde. Matlab mandir sirf chuhon ko sehta nahi hai. Woh unki hifaazat ka poora intezaam bhi karta hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Dramatic illustrated panel of a crowd of pilgrims all pointing toward one corner of a marble courtyard where a single white rat appears among many black rats, a spotlight of sunlight on it, excited hushed mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab mandir ke sabse bade raaz ki baat. Hazaron kaale chuhon ke beech, kabhi kabhi ek safed chuha dikhta hai. Aur jab dikhta hai, to aangan mein halchal mach jaati hai. Log ishaara karte hain, phusphusaate hain. Sabki nazar ek hi kone par tik jaati hai."
+   },
+   {
+    "facts_used": [
+     3,
+     4
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Soft glowing drawn panel of a white rat sitting on a marble ledge beside marigold flowers, a faint golden aura around it, devotees in the blurred background with folded hands, sacred mood, no text",
+     "type": "art"
+    },
+    "vo": "Kyon? Kyunki safed chuhon ko khaas taur par pavitra maana jaata hai. Rajasthan Tourism likhta hai, log inhe Karni Mata aur unke beton ka avatar maante hain. Avatar yaani kisi devi devta ka dharti par liya hua roop. Isliye safed chuha dikhna bada saubhagya maana jaata hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel of a mother holding her young son's hand, both crouching and peering into a dark corner of a marble wall, a small plate of sweets placed on the floor, hopeful patient mood, no text",
+     "type": "art"
+    },
+    "vo": "Bhakt unhe bahar bulaane ke liye badi mehnat karte hain. Mithai rakhte hain, ghanton chupchaap intezaar karte hain. Ek maa apne bete ka haath pakad kar kone mein jhaankti hai. Bas ek jhalak mil jaaye. Unke liye yeh seedha Mata ka aashirvaad hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Overhead drawn panel of a vast sea of black rats filling a marble courtyard, with one tiny white rat barely visible in the middle, a sense of scale and rarity, no text",
+     "type": "art"
+    },
+    "vo": "Ab andaza lagaiye, yahan kitne chuhe hain? Ek anumaan ke mutabik, lagbhag 25,000 kaale chuhe. Inmein safed chuhe gine chune hi hain. To safed chuha dhoondhna, bheed mein ek khaas chehra dhoondhne jaisa hai. Yahi rare hona use aur bhi pavitra bana deta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Split drawn panel: on one side a black rat being chased from a grain warehouse by a man with a broom, on the other the same kind of rat calmly eating sweets on a temple marble floor, contrast of attitudes, no text",
+     "type": "art"
+    },
+    "vo": "Ek baat science ki bhi. Yahan ke kaale chuhe Rattus rattus hain. Yaani wahi aam kaala chuha, jo ghar aur godaam mein milta hai. Koi anokhi jaati nahi hai. Fark bas nazariye ka hai. Baahar inhe dushman maana jaata hai, yahan parivaar."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Moody illustrated panel of an old desert town with shuttered houses and empty lanes suggesting an epidemic, while in the distance a white marble temple glows peacefully, contrast of fear and calm, no text",
+     "type": "art"
+    },
+    "vo": "Ab woh sawal, jiske liye shayad aap yeh video dekh rahe ho. Kya yahan sach mein bimari nahi phailti? Bhakton ka daava bahut bada hai. Unka kehna hai, yeh jagah plague se achhooti rahi. Plague yaani woh mahamaari, jo chuhon ke pissuon se phailti hai."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel of a brass plate of sweets on a marble floor with a few black rats nibbling at the edge, a devotee's hands reaching respectfully toward the plate, reverent mood, no text",
+     "type": "art"
+    },
+    "vo": "Isse bhi chaunkane wala daava sun lijiye. Jis prasad ko chuhon ne chakh liya, use bahut pavitra maana jaata hai. Bhakt kehte hain, use khaane se koi nuksaan nahi hota. Yeh daava bahut logon ki aastha se juda hai. Hum ise halke mein nahi le rahe."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel of a researcher in a lab coat at a microscope, a magnified circle showing tiny microbes floating, a sketch of a black rat pinned on a board behind her, serious scientific mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab doosri taraf ki baat suniye. Medical researchers kehte hain, chuhe khatarnak pathogens le kar chalte hain. Pathogens yaani woh chhote keetanu, jo bimari failaate hain. Yeh baat duniya bhar ke chuhon par laagu hoti hai. Deshnoke ke chuhe bhi biology mein wahi Rattus rattus hain."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel of an old balance scale on a marble ledge, one pan holding marigold flowers, the other holding a stethoscope, perfectly level and still, a black rat looking up at it, thoughtful mood, no text",
+     "type": "art"
+    },
+    "vo": "To sach kya hai? Seedhi baat suniye. Is daave par koi verified study maujood nahi hai. Na yeh sabit hua ki yahan bimari bilkul nahi hoti. Na yeh sabit hua ki yahan bimari zyada failti hai. Daave hain, par napa hua data nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel of an old leather register lying open on a wooden desk with completely blank pages, an oil lamp beside it, a black rat sniffing the empty pages, quiet reflective mood, no text",
+     "type": "art"
+    },
+    "vo": "Yahan ek fark samajhna zaroori hai. Bimari nahi hoti, aur bimari ka record nahi hai, yeh alag baatein hain. Kabhi kabhi hum record ki kami ko hi sabut maan lete hain. Lekin khaali register kuch sabit nahi karta. Woh bas batata hai ki kisi ne gina nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel of a health worker with a clipboard standing at a temple gate, looking at a long line of pilgrims, with an empty chart on her board, sense of a study that has never been done, no text",
+     "type": "art"
+    },
+    "vo": "Researchers ek khaas cheez ki kami batate hain. Epidemiological study, yaani bade paimane par logon ki sehat ka hisaab. Kitne log aaye, kitne beemar pade, aur kis wajah se. Aisa systematic adhyayan is mandir par hua hi nahi. Isliye vigyan abhi koi faisla nahi suna sakta."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel of a devotee and a doctor standing on opposite sides of a marble courtyard facing each other, an empty glowing space between them on the floor, black rats moving freely through it, neutral mood, no text",
+     "type": "art"
+    },
+    "vo": "Isliye is panel par label hai disputed. Matlab bhakt aur experts alag alag baat kehte hain. Bhakt aastha ki baat karte hain. Doctor saavdhani ki baat karte hain. Aur beech mein woh khaali jagah hai, jahan sabut hona chahiye tha, par abhi nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel of a father washing his young daughter's hands at a stone water tap outside a white marble temple, both smiling, pilgrims in the background, caring practical mood, no text",
+     "type": "art"
+    },
+    "vo": "Agar aap jaate ho, to doctor wali saavdhani bhi saath le jaiye. Haath achhe se dhoiye, chot ho to dhyaan rakhiye, bachchon par nazar rakhiye. Yeh aastha ke khilaaf nahi hai. Yeh bas apni sehat ki zimmedari hai. Mata ka darshan bhi, aur apna khayal bhi."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel of a large question mark formed by a winding line of black rats across a marble courtyard seen from above, dusk light, mysterious unanswered mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab woh baatein, jo aaj bhi koi nahi jaanta. Sabse pehle, yeh chuhe kitni tezi se marte hain? Unki mrityu dar, yaani kitne chuhe har saal marte hain, kabhi theek se napi nahi gayi. Itni badi colony ka yeh hisaab kisi ke paas nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel of a magnifying glass held over a sleeping black rat, revealing tiny fleas in its fur in a stylized magnified circle, empty notebook beside it, curious scientific mood, no text",
+     "type": "art"
+    },
+    "vo": "Phir sawal parjeeviyon ka. Parjeevi yaani parasites, jaise pissu aur keede, jo doosre jeev par palte hain. Yahi cheez bimari ka khatra badha bhi sakti hai, ghata bhi sakti hai. Par in chuhon par kitne parjeevi hain, iska koi napa hua record nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel of a black rat sitting at the open edge of a temple gate, looking out at an empty sandy desert street, choosing not to step out, the warm temple behind it, contemplative mood, no text",
+     "type": "art"
+    },
+    "vo": "Aur sabse dilchasp sawal yeh hai. Chuhe mandir chhod kar bahar kyon nahi jaate? Aas paas registaani kasba hai, khula aur bada. Phir bhi colony zyadatar mandir mein hi rehti hai. Bhakt ise Mata ka bandhan kehte hain. Vigyan ke paas sirf andaze hain."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel of black rats gathered contentedly around large bowls and plates of offerings in a temple courtyard, pilgrims moving around them without fear, relaxed familiar mood, no text",
+     "type": "art"
+    },
+    "vo": "Ek andaza hai, roz ka bharpoor khaana. Mithai aur prasad sab yahin mil jaata hai, to bahar kyon jaana? Ek aur andaza hai social habituation. Yaani jaanwar ek jagah aur insaanon ke aadi ho jaate hain. Par yeh sab andaze hain, abhi sabit nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Wide illustrated panel of a white marble temple at twilight, a pilgrim with folded hands on one side and a scientist with a notebook on the other, both watching thousands of rats calmly eating in the middle, wonder-filled mood, no text",
+     "type": "art"
+    },
+    "vo": "To dekhiye, kahani ke paas jawab hai, vigyan ke paas sawal. Aur yahi is jagah ko itna khaas banata hai. Ek mandir, jahan aastha aur science aamne saamne khade hain. Aur beech mein hazaron chuhe, bekhabar, aaraam se prasad kha rahe hain."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel of a traveler with a backpack arriving at the marble temple entrance in morning light, the silver doors shining ahead, desert road and a few camels in the background, inviting travel mood, no text",
+     "type": "art"
+    },
+    "vo": "Agar aap Deshnoke jaana chahte ho, to yeh Bikaner ke paas hai. Rajasthan Tourism ki website par is mandir ki jaankari maujood hai. Pahunch kar pehle chaandi ke darwaaze dekhiye. Har panel ek kahani hai. Ruk kar dekhoge, to poori katha tasveeron mein samajh aa jaayegi."
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel of a visitor walking slowly barefoot across a netted marble courtyard toward a distant sanctum with a small idol, black rats on all sides, careful respectful mood, no text",
+     "type": "art"
+    },
+    "vo": "Andar sangemarmar ka aangan hai, upar hifaazat ki jaali. Garbhgriha mein lagbhag 0.75 metre oonchi murti, trishul ke saath. Aur farsh par har taraf kaba. Nange paanv chalna hota hai, to dheere chaliye. Kisi ko chot na pahunche, na aapko, na unhe."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel of an elderly woman praying quietly with eyes closed beside a marble pillar while a young tourist lowers his camera respectfully, rats resting nearby, gentle respectful mood, no text",
+     "type": "art"
+    },
+    "vo": "Yaad rakhiye, yeh museum nahi, jeeta jaagta mandir hai. Yahan log pooja karne aate hain, mannat maangne aate hain. Photo lijiye, par kisi ki aastha ka mazaak mat banaiye. Jo dekhne aaye ho, use dil se dekhiye. Sawal poochiye, par izzat ke saath."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel of several pilgrims of different ages crouching together, eyes shining with hope, all gazing at a gap in a marble wall where a white tail is just visible, magical anticipation, no text",
+     "type": "art"
+    },
+    "vo": "Aur haan, nazar safed chuhe par rakhiye. Shayad ghanton baad bhi na dikhe. Shayad aate hi dikh jaaye. Wahan khade logon ki aankhon mein jo ummeed hoti hai, woh apne aap mein ek nazara hai. Woh pal kisi photo mein poora nahi samaata."
+   },
+   {
+    "facts_used": [
+     0,
+     2,
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel of three objects on a marble ledge side by side: a small silver relief panel, a grandmother's clay lamp, and an empty notebook with a pen, a black rat sitting beside them, summarizing mood, no text",
+     "type": "art"
+    },
+    "vo": "To aaj ki baat ka nichod kya hai? Mandir ka sangemarmar aur chaandi, Rajasthan Tourism ke record mein hai. Kaba ki kahani, local parampara mein hai. Bimari wala daava, abhi bina kisi study ke hai. Yeh sab alag cheezein hain, aur inhe alag nazar se dekhna chahiye."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel of a diver silhouette descending into blue-green sea water toward faint shapes of submerged stone ruins, light rays from above, mysterious teaser mood, no text",
+     "type": "art"
+    },
+    "vo": "Agle safar mein hum samundar ki taraf chalenge. Ek aisi nagri, jiske baare mein kaha jaata hai ki woh paani mein sama gayi. Naam hai Dwarka. Wahan kya mila, kisne dhoondha, kya abhi bhi sawal hai, sab sabut ke saath. Tab tak Deshnoke ki yeh kahani yaad rakhiye."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel of a narrator figure in a simple shirt kneeling on a marble temple floor, smiling and gesturing toward a white rat that has stopped in front of him, warm inviting end mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab aapse ek aasaan sa sawal. Agar Deshnoke mein aapke saamne safed chuha aa jaaye, to aap kya karoge? Photo loge, ya haath jod kar chupchaap ruk jaoge? Comments mein zaroor bataiye."
+   }
+  ],
+  "thumbnail": {
+   "scene": "The GRANDMOTHER stares wide-eyed at a single white rat sitting on the marble temple floor beside a plate of sweets, mouth slightly open in awe",
+   "words": [
+    "NO PROOF",
+    "KHATRA?"
+   ]
+  },
+  "title": "Karni Mata ke 25,000 *chuhe* ka raaz 😱"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  22.65,
+  47.5,
+  67.95,
+  90.76,
+  112.09,
+  134.66,
+  156.95,
+  178.0,
+  194.53,
+  216.98,
+  237.83,
+  259.96,
+  280.85,
+  299.9,
+  320.31,
+  341.8,
+  361.85,
+  382.74,
+  405.55,
+  427.88,
+  449.49,
+  467.9,
+  488.91,
+  506.88,
+  527.01,
+  549.22,
+  566.11,
+  585.76,
+  602.37,
+  623.54,
+  645.83,
+  668.0,
+  691.41,
+  711.78,
+  735.55,
+  756.32,
+  773.09,
+  793.42,
+  814.27
+ ],
  "topic": {
   "allowed_sources": [
    "en.wikipedia.org",
-   "maharashtratourism.gov.in",
-   "news reports with dates"
+   "tourism.rajasthan.gov.in"
   ],
   "hooks": [
-   "Is gaon mein ghar ke darwaze kyon nahi?",
-   "Bank ki shakha bhi bina lock ke?",
-   "Chori hui to kya hua?"
+   "25,000 chuhe aur ek bhi bimari nahi?",
+   "Safed chuha dikha to kya hota hai?",
+   "Chuhe mandir ke bahar kyon nahi jaate?"
   ],
-  "id": "shani-shingnapur",
-  "notes": "Legend lane plus documented modern facts (UCO Bank branch 2011); report thefts honestly.",
-  "place": "Shani Shingnapur, Maharashtra",
+  "id": "karni-mata-rats",
+  "look": "indian-comic",
+  "notes": "Give the hygiene question an honest answer (no verified study either way) and label it.",
+  "place": "Deshnoke, Rajasthan",
+  "priority": 1,
   "target_minutes": 14,
-  "title_hi": "Shani Shingnapur, bina darwaze ka gaon"
+  "title_hi": "Karni Mata, 25,000 chuhon ka mandir",
+  "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-24T17:10:10+00:00",
- "writer": ""
+ "updated": "2026-10-25T07:53:03+00:00",
+ "writer": "claude"
 }
