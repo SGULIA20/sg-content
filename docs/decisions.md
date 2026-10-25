@@ -104,14 +104,16 @@ line here (who, date) in the same change. Newest first.
   Found first: the approved due-reminder wording says it "never asks for payment details" and has no UPI (trust and every country),
   so a pay link would have broken that; the safer form (Already paid / Will pay in 7 days buttons) was offered too.
 - Later (founder's call): 8 app releases from the phone, 9 Waypoint Expo upgrade, 12b WhatsApp entry form, 12c partner payouts,
-  11 WhatsApp usernames, the Play service account.
+  11 WhatsApp usernames.
 
 ## Open (not decided yet; ask, don't assume)
 - WhatsApp spend after Meta's 1 Oct 2026 price change: not built. On 23 Oct ScoreMyBiz had sent 32 WhatsApp messages in 30 days,
   far under the 1,000 free a month; build the spend line when sends pass 500 a month.
 - Waypoint crisis help (helplines from chats, comments, check-in; more languages; voice alert): founder said **no** on 23 Oct 2026.
   Waypoint PR #1 stays unmerged; do not merge or re-propose unless the founder asks.
-- Google Play service account (review replies, crash watch): later, founder's call (23 Oct 2026).
+- Google Play account (25 Oct 2026, founder): `play-reports-reader` now also has Reply to reviews and the Play Developer Reporting
+  API (crash data) for both apps; still no release, price or listing rights. Checked 25 Oct: reviews read 200 (0 in the last
+  7 days), crash metrics 200 for both apps. Replies go to the founder's Telegram first, like the YouTube replies.
 - LinkedIn re-login reminder on Telegram: not wanted (founder, 23 Oct 2026). Do not build it.
 - Moving the app Reel production off the Mac: the founder takes this on, starting 23 Oct 2026 evening.
 - Exact clock: running in Supabase (`command.clock`, function `sg-command`) since 24 Oct 2026 09:39 UTC; `GITHUB_TOKEN` is set. Do not ask the founder for it again.
