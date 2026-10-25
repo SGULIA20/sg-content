@@ -1,0 +1,376 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,86,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.77,Default,,0,0,0,,10 lakh ki salary par tax
+Dialogue: 0,0:00:01.77,0:00:02.16,Default,,0,0,0,,zero,
+Dialogue: 0,0:00:02.16,0:00:04.52,Default,,0,0,0,,phir bhi Papa policy khareedwa rahe
+Dialogue: 0,0:00:04.52,0:00:04.72,Default,,0,0,0,,the.
+Dialogue: 0,0:00:04.72,0:00:06.68,Default,,0,0,0,,Yeh kahani meri behen ki hai.
+Dialogue: 0,0:00:06.68,0:00:07.87,Default,,0,0,0,,Pehli badi naukri,
+Dialogue: 0,0:00:07.87,0:00:09.24,Default,,0,0,0,,pehli badi salary.
+Dialogue: 0,0:00:09.24,0:00:10.42,Default,,0,0,0,,Aur pehle hi hafte,
+Dialogue: 0,0:00:10.42,0:00:11.40,Default,,0,0,0,,HR ka email aaya.
+Dialogue: 0,0:00:11.40,0:00:11.99,Default,,0,0,0,,Sawaal tha,
+Dialogue: 0,0:00:11.99,0:00:13.96,Default,,0,0,0,,purana regime chahiye ya naya?
+Dialogue: 0,0:00:14.41,0:00:15.91,Default,,0,0,0,,Shaam ko dining table par yeh
+Dialogue: 0,0:00:15.91,0:00:17.59,Default,,0,0,0,,email poora ghar padh raha tha.
+Dialogue: 0,0:00:17.59,0:00:18.90,Default,,0,0,0,,Behen ne laptop khola,
+Dialogue: 0,0:00:18.90,0:00:19.84,Default,,0,0,0,,Mummy chai le aayi.
+Dialogue: 0,0:00:19.84,0:00:21.71,Default,,0,0,0,,Papa ne chashma lagaya aur seedha
+Dialogue: 0,0:00:21.71,0:00:22.08,Default,,0,0,0,,bole.
+Dialogue: 0,0:00:22.08,0:00:23.76,Default,,0,0,0,,Purana regime lo beta,
+Dialogue: 0,0:00:23.76,0:00:25.64,Default,,0,0,0,,hum hamesha usi mein rahe hain.
+Dialogue: 0,0:00:25.64,0:00:26.57,Default,,0,0,0,,Wahi safe hai.
+Dialogue: 0,0:00:27.02,0:00:28.80,Default,,0,0,0,,Papa ki dalil simple thi.
+Dialogue: 0,0:00:28.80,0:00:31.46,Default,,0,0,0,,Purane regime mein tax bachane ke
+Dialogue: 0,0:00:31.46,0:00:32.12,Default,,0,0,0,,raaste hain.
+Dialogue: 0,0:00:32.12,0:00:33.01,Default,,0,0,0,,Policy lo,
+Dialogue: 0,0:00:33.01,0:00:33.67,Default,,0,0,0,,PPF kholo,
+Dialogue: 0,0:00:33.67,0:00:34.56,Default,,0,0,0,,FD lock karo,
+Dialogue: 0,0:00:34.56,0:00:35.89,Default,,0,0,0,,tax kam ho jaata hai.
+Dialogue: 0,0:00:35.89,0:00:38.11,Default,,0,0,0,,Unke liye tax bachana matlab kuch
+Dialogue: 0,0:00:38.11,0:00:39.22,Default,,0,0,0,,na kuch khareedna.
+Dialogue: 0,0:00:39.22,0:00:41.22,Default,,0,0,0,,Saalon se har March yahi hota
+Dialogue: 0,0:00:41.22,0:00:41.66,Default,,0,0,0,,aaya tha.
+Dialogue: 0,0:00:42.11,0:00:43.84,Default,,0,0,0,,Bhai hoodie mein sofa par tha,
+Dialogue: 0,0:00:43.84,0:00:44.70,Default,,0,0,0,,phone haath mein.
+Dialogue: 0,0:00:44.70,0:00:45.13,Default,,0,0,0,,Bola,
+Dialogue: 0,0:00:45.13,0:00:45.57,Default,,0,0,0,,Papa,
+Dialogue: 0,0:00:45.57,0:00:46.65,Default,,0,0,0,,naya regime lo,
+Dialogue: 0,0:00:46.65,0:00:48.81,Default,,0,0,0,,internet pe sab yahi bol rahe
+Dialogue: 0,0:00:48.81,0:00:49.02,Default,,0,0,0,,hain.
+Dialogue: 0,0:00:49.02,0:00:50.10,Default,,0,0,0,,Papa ne poochha,
+Dialogue: 0,0:00:50.10,0:00:50.32,Default,,0,0,0,,kyun?
+Dialogue: 0,0:00:50.32,0:00:52.05,Default,,0,0,0,,Bhai ke paas jawab nahi tha.
+Dialogue: 0,0:00:52.05,0:00:53.77,Default,,0,0,0,,Bas subah dekhi ek reel yaad
+Dialogue: 0,0:00:53.77,0:00:53.99,Default,,0,0,0,,thi.
+Dialogue: 0,0:00:54.44,0:00:56.12,Default,,0,0,0,,Aur yahin asli dikkat hai.
+Dialogue: 0,0:00:56.12,0:00:57.38,Default,,0,0,0,,Ek taraf aadat hai,
+Dialogue: 0,0:00:57.38,0:00:58.43,Default,,0,0,0,,doosri taraf reel.
+Dialogue: 0,0:00:58.43,0:01:00.11,Default,,0,0,0,,Beech mein woh insaan hai jiski
+Dialogue: 0,0:01:00.11,0:01:01.38,Default,,0,0,0,,salary kat-ti hai.
+Dialogue: 0,0:01:01.38,0:01:03.90,Default,,0,0,0,,Usse koi hisaab karke nahi dikhata.
+Dialogue: 0,0:01:03.90,0:01:05.58,Default,,0,0,0,,Toh aaj hum hisaab karenge,
+Dialogue: 0,0:01:05.58,0:01:07.26,Default,,0,0,0,,bilkul dining table wala,
+Dialogue: 0,0:01:07.26,0:01:07.68,Default,,0,0,0,,seedha.
+Dialogue: 0,0:01:08.13,0:01:09.66,Default,,0,0,0,,Aaj ke sawaal yeh hain.
+Dialogue: 0,0:01:09.66,0:01:12.21,Default,,0,0,0,,Kya naya regime sabke liye sasta
+Dialogue: 0,0:01:12.21,0:01:12.47,Default,,0,0,0,,hai?
+Dialogue: 0,0:01:12.47,0:01:14.00,Default,,0,0,0,,Kya 80C ab bhi kaam ka
+Dialogue: 0,0:01:14.00,0:01:14.26,Default,,0,0,0,,hai,
+Dialogue: 0,0:01:14.26,0:01:15.53,Default,,0,0,0,,ya bas aadat hai?
+Dialogue: 0,0:01:15.53,0:01:17.58,Default,,0,0,0,,Aur HRA yaani kiraaye par tax
+Dialogue: 0,0:01:17.58,0:01:17.83,Default,,0,0,0,,chhoot,
+Dialogue: 0,0:01:17.83,0:01:19.62,Default,,0,0,0,,kab sach mein kaam aati hai?
+Dialogue: 0,0:01:19.62,0:01:22.17,Default,,0,0,0,,Jawab isi ghar ki kahani se.
+Dialogue: 0,0:01:22.62,0:01:24.05,Default,,0,0,0,,Pehle ek baat saaf kar dein.
+Dialogue: 0,0:01:24.05,0:01:26.10,Default,,0,0,0,,Regime yaani tax ka rulebook.
+Dialogue: 0,0:01:26.10,0:01:28.56,Default,,0,0,0,,Sarkar ne dono rulebook aapke saamne
+Dialogue: 0,0:01:28.56,0:01:29.17,Default,,0,0,0,,rakh diye hain.
+Dialogue: 0,0:01:29.17,0:01:30.81,Default,,0,0,0,,Purane mein rate zyada,
+Dialogue: 0,0:01:30.81,0:01:31.63,Default,,0,0,0,,par chhoot bahut.
+Dialogue: 0,0:01:31.63,0:01:32.65,Default,,0,0,0,,Naye mein rate kam,
+Dialogue: 0,0:01:32.65,0:01:33.88,Default,,0,0,0,,par chhoot gini-chuni.
+Dialogue: 0,0:01:33.88,0:01:34.70,Default,,0,0,0,,Kuch na bolo,
+Dialogue: 0,0:01:34.70,0:01:36.34,Default,,0,0,0,,toh naya apne aap lagta hai.
+Dialogue: 0,0:01:36.79,0:01:38.45,Default,,0,0,0,,Raat ko maine behen ke saath
+Dialogue: 0,0:01:38.45,0:01:40.12,Default,,0,0,0,,uski salary slip kholi.
+Dialogue: 0,0:01:40.12,0:01:41.78,Default,,0,0,0,,Sabse upar gross salary,
+Dialogue: 0,0:01:41.78,0:01:43.87,Default,,0,0,0,,yaani katne se pehle ki poori
+Dialogue: 0,0:01:43.87,0:01:44.28,Default,,0,0,0,,kamai.
+Dialogue: 0,0:01:44.28,0:01:45.74,Default,,0,0,0,,Neeche PF aur ek line,
+Dialogue: 0,0:01:45.74,0:01:45.95,Default,,0,0,0,,TDS.
+Dialogue: 0,0:01:45.95,0:01:48.44,Default,,0,0,0,,TDS yaani company har mahine aapka
+Dialogue: 0,0:01:48.44,0:01:50.11,Default,,0,0,0,,tax pehle hi kaat leti hai.
+Dialogue: 0,0:01:50.56,0:01:52.94,Default,,0,0,0,,Naye regime mein salaried logon ko
+Dialogue: 0,0:01:52.94,0:01:54.66,Default,,0,0,0,,seedha 75,000 ki chhoot milti hai.
+Dialogue: 0,0:01:54.66,0:01:56.82,Default,,0,0,0,,Isse standard deduction kehte hain.
+Dialogue: 0,0:01:56.82,0:01:58.12,Default,,0,0,0,,Koi policy nahi,
+Dialogue: 0,0:01:58.12,0:01:59.20,Default,,0,0,0,,koi receipt nahi,
+Dialogue: 0,0:01:59.20,0:02:00.06,Default,,0,0,0,,koi proof nahi.
+Dialogue: 0,0:02:00.06,0:02:01.58,Default,,0,0,0,,Bas aap naukri karte ho,
+Dialogue: 0,0:02:01.58,0:02:03.52,Default,,0,0,0,,aur itna hissa tax se bahar.
+Dialogue: 0,0:02:03.97,0:02:06.14,Default,,0,0,0,,Matlab salary mein se pehle yeh
+Dialogue: 0,0:02:06.14,0:02:07.65,Default,,0,0,0,,hissa nikal jaata hai.
+Dialogue: 0,0:02:07.65,0:02:08.52,Default,,0,0,0,,Jo bachta hai,
+Dialogue: 0,0:02:08.52,0:02:10.90,Default,,0,0,0,,usse taxable income kehte hain.
+Dialogue: 0,0:02:10.90,0:02:13.50,Default,,0,0,0,,Taxable income yaani woh kamai jis
+Dialogue: 0,0:02:13.50,0:02:15.01,Default,,0,0,0,,par sach mein tax lagta hai.
+Dialogue: 0,0:02:15.01,0:02:16.53,Default,,0,0,0,,Ab asli twist aata hai.
+Dialogue: 0,0:02:16.98,0:02:18.89,Default,,0,0,0,,Naye regime mein 12 lakh tak
+Dialogue: 0,0:02:18.89,0:02:21.23,Default,,0,0,0,,ki taxable income par tax zero
+Dialogue: 0,0:02:21.23,0:02:21.44,Default,,0,0,0,,hai.
+Dialogue: 0,0:02:21.44,0:02:23.35,Default,,0,0,0,,Yeh Section 87A ke rebate se
+Dialogue: 0,0:02:23.35,0:02:23.99,Default,,0,0,0,,hota hai.
+Dialogue: 0,0:02:23.99,0:02:26.11,Default,,0,0,0,,Rebate yaani tax banta toh hai,
+Dialogue: 0,0:02:26.11,0:02:28.02,Default,,0,0,0,,par sarkar use poora maaf kar
+Dialogue: 0,0:02:28.02,0:02:28.66,Default,,0,0,0,,deti hai.
+Dialogue: 0,0:02:29.11,0:02:31.79,Default,,0,0,0,,Behen ki taxable income is limit
+Dialogue: 0,0:02:31.79,0:02:33.12,Default,,0,0,0,,se kaafi neeche thi.
+Dialogue: 0,0:02:33.12,0:02:35.80,Default,,0,0,0,,Matlab naye regime mein uska income
+Dialogue: 0,0:02:35.80,0:02:36.03,Default,,0,0,0,,tax,
+Dialogue: 0,0:02:36.03,0:02:36.47,Default,,0,0,0,,zero.
+Dialogue: 0,0:02:36.47,0:02:37.36,Default,,0,0,0,,Na policy,
+Dialogue: 0,0:02:37.36,0:02:38.03,Default,,0,0,0,,na lock-in,
+Dialogue: 0,0:02:38.03,0:02:39.15,Default,,0,0,0,,na March ki bhaag-daud.
+Dialogue: 0,0:02:39.15,0:02:41.38,Default,,0,0,0,,Papa ne chashma utaara aur phir
+Dialogue: 0,0:02:41.38,0:02:42.27,Default,,0,0,0,,se screen dekhi.
+Dialogue: 0,0:02:42.72,0:02:44.53,Default,,0,0,0,,Salaried ke liye yeh faayda aur
+Dialogue: 0,0:02:44.53,0:02:45.73,Default,,0,0,0,,bada ho jaata hai.
+Dialogue: 0,0:02:45.73,0:02:46.73,Default,,0,0,0,,Pehle 75,000 ki chhoot,
+Dialogue: 0,0:02:46.73,0:02:48.34,Default,,0,0,0,,phir 12 lakh tak rebate.
+Dialogue: 0,0:02:48.34,0:02:50.75,Default,,0,0,0,,Dono milkar ek achhi khaasi salary
+Dialogue: 0,0:02:50.75,0:02:52.35,Default,,0,0,0,,ko tax se bahar rakh dete
+Dialogue: 0,0:02:52.35,0:02:52.55,Default,,0,0,0,,hain.
+Dialogue: 0,0:02:52.55,0:02:54.16,Default,,0,0,0,,Bahut log yeh jod kar dekhte
+Dialogue: 0,0:02:54.16,0:02:54.76,Default,,0,0,0,,hi nahi.
+Dialogue: 0,0:02:55.21,0:02:57.01,Default,,0,0,0,,Toh kya naya regime sabke liye
+Dialogue: 0,0:02:57.01,0:02:57.61,Default,,0,0,0,,sasta hai?
+Dialogue: 0,0:02:57.61,0:02:58.01,Default,,0,0,0,,Nahi,
+Dialogue: 0,0:02:58.01,0:02:59.01,Default,,0,0,0,,sabke liye nahi.
+Dialogue: 0,0:02:59.01,0:03:01.01,Default,,0,0,0,,Jinki salary is range mein hai,
+Dialogue: 0,0:03:01.01,0:03:02.21,Default,,0,0,0,,unke liye aksar haan.
+Dialogue: 0,0:03:02.21,0:03:03.81,Default,,0,0,0,,Par jinki kamai zyada hai,
+Dialogue: 0,0:03:03.81,0:03:05.21,Default,,0,0,0,,aur kharche chhoot wale hain,
+Dialogue: 0,0:03:05.21,0:03:07.41,Default,,0,0,0,,unki kahani alag ho sakti hai.
+Dialogue: 0,0:03:07.86,0:03:09.07,Default,,0,0,0,,Ek baat aur dhyaan rakhna.
+Dialogue: 0,0:03:09.07,0:03:11.88,Default,,0,0,0,,Yeh rebate salary jaisi normal income
+Dialogue: 0,0:03:11.88,0:03:12.29,Default,,0,0,0,,par hai.
+Dialogue: 0,0:03:12.29,0:03:14.10,Default,,0,0,0,,Share bechkar kamaya munafa,
+Dialogue: 0,0:03:14.10,0:03:15.31,Default,,0,0,0,,yaani capital gains,
+Dialogue: 0,0:03:15.31,0:03:16.51,Default,,0,0,0,,uske alag niyam hain.
+Dialogue: 0,0:03:16.51,0:03:18.32,Default,,0,0,0,,Agar aap trading bhi karte ho,
+Dialogue: 0,0:03:18.32,0:03:20.34,Default,,0,0,0,,poora hisaab kisi CA se zaroor
+Dialogue: 0,0:03:20.34,0:03:21.14,Default,,0,0,0,,karwa lena.
+Dialogue: 0,0:03:21.59,0:03:23.21,Default,,0,0,0,,Ab Papa ka sawaal.
+Dialogue: 0,0:03:23.21,0:03:23.75,Default,,0,0,0,,Beta,
+Dialogue: 0,0:03:23.75,0:03:25.65,Default,,0,0,0,,toh meri LIC aur PPF sab
+Dialogue: 0,0:03:25.65,0:03:26.19,Default,,0,0,0,,bekaar?
+Dialogue: 0,0:03:26.19,0:03:28.62,Default,,0,0,0,,Yahan samajhna zaroori hai.
+Dialogue: 0,0:03:28.62,0:03:31.59,Default,,0,0,0,,80C yaani purane regime ka woh
+Dialogue: 0,0:03:31.59,0:03:32.13,Default,,0,0,0,,section,
+Dialogue: 0,0:03:32.13,0:03:34.84,Default,,0,0,0,,jahan kuch investments par chhoot milti
+Dialogue: 0,0:03:34.84,0:03:35.11,Default,,0,0,0,,hai.
+Dialogue: 0,0:03:35.11,0:03:37.54,Default,,0,0,0,,Naye regime mein yeh chhoot milti
+Dialogue: 0,0:03:37.54,0:03:38.35,Default,,0,0,0,,hi nahi.
+Dialogue: 0,0:03:38.80,0:03:41.28,Default,,0,0,0,,Purane regime mein 80C ki limit
+Dialogue: 0,0:03:41.28,0:03:41.95,Default,,0,0,0,,1.5 lakh hai.
+Dialogue: 0,0:03:41.95,0:03:42.18,Default,,0,0,0,,PPF,
+Dialogue: 0,0:03:42.18,0:03:42.40,Default,,0,0,0,,EPF,
+Dialogue: 0,0:03:42.40,0:03:44.20,Default,,0,0,0,,life insurance premium,
+Dialogue: 0,0:03:44.20,0:03:45.10,Default,,0,0,0,,tax saving fund,
+Dialogue: 0,0:03:45.10,0:03:46.68,Default,,0,0,0,,sab milakar itne tak.
+Dialogue: 0,0:03:46.68,0:03:49.15,Default,,0,0,0,,Yeh amount taxable income se ghat
+Dialogue: 0,0:03:49.15,0:03:49.83,Default,,0,0,0,,jaata hai.
+Dialogue: 0,0:03:49.83,0:03:52.08,Default,,0,0,0,,Sunne mein bahut bada lagta hai.
+Dialogue: 0,0:03:52.53,0:03:54.13,Default,,0,0,0,,Par ek cheez Papa ne kabhi
+Dialogue: 0,0:03:54.13,0:03:54.93,Default,,0,0,0,,nahi gini.
+Dialogue: 0,0:03:54.93,0:03:56.93,Default,,0,0,0,,Behen ki salary se EPF pehle
+Dialogue: 0,0:03:56.93,0:03:57.93,Default,,0,0,0,,hi kat raha hai.
+Dialogue: 0,0:03:57.93,0:03:59.33,Default,,0,0,0,,EPF yaani provident fund,
+Dialogue: 0,0:03:59.33,0:04:01.33,Default,,0,0,0,,jo aap aur company har mahine
+Dialogue: 0,0:04:01.33,0:04:01.93,Default,,0,0,0,,daalte ho.
+Dialogue: 0,0:04:01.93,0:04:03.33,Default,,0,0,0,,Woh bhi 80C mein ginta hai.
+Dialogue: 0,0:04:03.33,0:04:05.33,Default,,0,0,0,,Limit ka hissa pehle se bhara
+Dialogue: 0,0:04:05.33,0:04:05.53,Default,,0,0,0,,hai.
+Dialogue: 0,0:04:05.98,0:04:07.89,Default,,0,0,0,,Ab socho behen ne Papa ki
+Dialogue: 0,0:04:07.89,0:04:08.53,Default,,0,0,0,,baat maan li.
+Dialogue: 0,0:04:08.53,0:04:10.01,Default,,0,0,0,,Purana regime liya,
+Dialogue: 0,0:04:10.01,0:04:12.35,Default,,0,0,0,,aur March mein ek insurance policy
+Dialogue: 0,0:04:12.35,0:04:12.77,Default,,0,0,0,,le li.
+Dialogue: 0,0:04:12.77,0:04:14.26,Default,,0,0,0,,Saalon tak premium bharna,
+Dialogue: 0,0:04:14.26,0:04:14.68,Default,,0,0,0,,lock-in,
+Dialogue: 0,0:04:14.68,0:04:16.38,Default,,0,0,0,,aur return ka pata nahi.
+Dialogue: 0,0:04:16.38,0:04:18.50,Default,,0,0,0,,Sirf isliye kyunki tax bachana tha.
+Dialogue: 0,0:04:18.95,0:04:20.95,Default,,0,0,0,,Par naye regime mein uska tax
+Dialogue: 0,0:04:20.95,0:04:22.29,Default,,0,0,0,,pehle se zero tha.
+Dialogue: 0,0:04:22.29,0:04:24.07,Default,,0,0,0,,Jis tax ko bachane ke liye
+Dialogue: 0,0:04:24.07,0:04:24.96,Default,,0,0,0,,policy li,
+Dialogue: 0,0:04:24.96,0:04:26.30,Default,,0,0,0,,woh tax tha hi nahi.
+Dialogue: 0,0:04:26.30,0:04:28.52,Default,,0,0,0,,Policy ka faayda tax mein nahi
+Dialogue: 0,0:04:28.52,0:04:28.97,Default,,0,0,0,,mila.
+Dialogue: 0,0:04:28.97,0:04:30.75,Default,,0,0,0,,Bas paisa saalon ke liye bandh
+Dialogue: 0,0:04:30.75,0:04:31.20,Default,,0,0,0,,ho gaya.
+Dialogue: 0,0:04:31.20,0:04:32.31,Default,,0,0,0,,Yahi woh trap hai.
+Dialogue: 0,0:04:32.76,0:04:34.98,Default,,0,0,0,,Iska matlab yeh nahi ki PPF
+Dialogue: 0,0:04:34.98,0:04:35.72,Default,,0,0,0,,bura hai.
+Dialogue: 0,0:04:35.72,0:04:37.94,Default,,0,0,0,,PPF par abhi lagbhag 7.1 percent
+Dialogue: 0,0:04:37.94,0:04:39.17,Default,,0,0,0,,saalana byaaj hai.
+Dialogue: 0,0:04:39.17,0:04:41.39,Default,,0,0,0,,Lambi bachat ke liye log ise
+Dialogue: 0,0:04:41.39,0:04:42.62,Default,,0,0,0,,pasand karte hain.
+Dialogue: 0,0:04:42.62,0:04:44.35,Default,,0,0,0,,Bas ab PPF bachat ke liye
+Dialogue: 0,0:04:44.35,0:04:44.84,Default,,0,0,0,,kholo,
+Dialogue: 0,0:04:44.84,0:04:46.32,Default,,0,0,0,,tax ke darr se nahi.
+Dialogue: 0,0:04:46.77,0:04:48.17,Default,,0,0,0,,Toh 80C ab kaam ka hai
+Dialogue: 0,0:04:48.17,0:04:48.87,Default,,0,0,0,,ya nahi?
+Dialogue: 0,0:04:48.87,0:04:50.74,Default,,0,0,0,,Purane regime mein ho,
+Dialogue: 0,0:04:50.74,0:04:51.21,Default,,0,0,0,,toh haan,
+Dialogue: 0,0:04:51.21,0:04:52.14,Default,,0,0,0,,bahut kaam ka.
+Dialogue: 0,0:04:52.14,0:04:53.54,Default,,0,0,0,,Naye regime mein ho,
+Dialogue: 0,0:04:53.54,0:04:55.41,Default,,0,0,0,,toh tax ke liye bilkul nahi.
+Dialogue: 0,0:04:55.41,0:04:57.04,Default,,0,0,0,,Pehle regime chuno,
+Dialogue: 0,0:04:57.04,0:04:59.14,Default,,0,0,0,,phir socho ki 80C ki zaroorat
+Dialogue: 0,0:04:59.14,0:04:59.61,Default,,0,0,0,,hai bhi.
+Dialogue: 0,0:05:00.06,0:05:01.86,Default,,0,0,0,,Papa ne thodi der chup rehkar
+Dialogue: 0,0:05:01.86,0:05:02.26,Default,,0,0,0,,kaha,
+Dialogue: 0,0:05:02.26,0:05:04.26,Default,,0,0,0,,matlab maine itne saal galat kiya?
+Dialogue: 0,0:05:04.26,0:05:05.06,Default,,0,0,0,,Maine kaha,
+Dialogue: 0,0:05:05.06,0:05:05.86,Default,,0,0,0,,nahi Papa.
+Dialogue: 0,0:05:05.86,0:05:08.06,Default,,0,0,0,,Aapke zamaane mein naya regime tha
+Dialogue: 0,0:05:08.06,0:05:08.66,Default,,0,0,0,,hi nahi.
+Dialogue: 0,0:05:08.66,0:05:09.86,Default,,0,0,0,,Tab wahi sahi tha.
+Dialogue: 0,0:05:09.86,0:05:11.06,Default,,0,0,0,,Bas rules badal gaye,
+Dialogue: 0,0:05:11.06,0:05:12.66,Default,,0,0,0,,aur hum aadat nahi badle.
+Dialogue: 0,0:05:13.11,0:05:14.73,Default,,0,0,0,,Ab kahani ka doosra pehlu.
+Dialogue: 0,0:05:14.73,0:05:16.35,Default,,0,0,0,,Har kisi ke liye naya regime
+Dialogue: 0,0:05:16.35,0:05:17.07,Default,,0,0,0,,nahi jeetta.
+Dialogue: 0,0:05:17.07,0:05:18.87,Default,,0,0,0,,Behen ki ek colleague ko dekho.
+Dialogue: 0,0:05:18.87,0:05:20.49,Default,,0,0,0,,Woh bade sheher mein kiraaye par
+Dialogue: 0,0:05:20.49,0:05:21.03,Default,,0,0,0,,rehti hai.
+Dialogue: 0,0:05:21.03,0:05:23.37,Default,,0,0,0,,Mummy-Papa ka health insurance bharti hai.
+Dialogue: 0,0:05:23.37,0:05:24.99,Default,,0,0,0,,Aur salary kaafi upar hai.
+Dialogue: 0,0:05:25.44,0:05:26.39,Default,,0,0,0,,Pehle HRA samjho.
+Dialogue: 0,0:05:26.39,0:05:28.30,Default,,0,0,0,,HRA yaani House Rent Allowance,
+Dialogue: 0,0:05:28.30,0:05:30.21,Default,,0,0,0,,jo company kiraaye ke liye deti
+Dialogue: 0,0:05:30.21,0:05:30.40,Default,,0,0,0,,hai.
+Dialogue: 0,0:05:30.40,0:05:32.88,Default,,0,0,0,,Purane regime mein iska bada hissa
+Dialogue: 0,0:05:32.88,0:05:34.41,Default,,0,0,0,,tax se bahar ho sakta hai,
+Dialogue: 0,0:05:34.41,0:05:36.13,Default,,0,0,0,,agar aap sach mein kiraaya dete
+Dialogue: 0,0:05:36.13,0:05:36.32,Default,,0,0,0,,ho.
+Dialogue: 0,0:05:36.32,0:05:38.04,Default,,0,0,0,,Naye regime mein yeh chhoot nahi.
+Dialogue: 0,0:05:38.49,0:05:40.39,Default,,0,0,0,,Isliye rent receipt aur landlord ki
+Dialogue: 0,0:05:40.39,0:05:41.87,Default,,0,0,0,,details sambhaal kar rakho.
+Dialogue: 0,0:05:41.87,0:05:43.35,Default,,0,0,0,,Aur jo log apne ghar mein
+Dialogue: 0,0:05:43.35,0:05:43.98,Default,,0,0,0,,rehte hain,
+Dialogue: 0,0:05:43.98,0:05:45.67,Default,,0,0,0,,unke liye HRA chhoot ka sawaal
+Dialogue: 0,0:05:45.67,0:05:46.30,Default,,0,0,0,,hi nahi.
+Dialogue: 0,0:05:46.30,0:05:48.62,Default,,0,0,0,,Wahan HRA bas salary ka taxable
+Dialogue: 0,0:05:48.62,0:05:49.89,Default,,0,0,0,,hissa ban jaata hai.
+Dialogue: 0,0:05:50.34,0:05:51.11,Default,,0,0,0,,Ab home loan.
+Dialogue: 0,0:05:51.11,0:05:53.22,Default,,0,0,0,,Purane regime mein apne ghar ke
+Dialogue: 0,0:05:53.22,0:05:54.38,Default,,0,0,0,,loan ke byaaj par bhi chhoot
+Dialogue: 0,0:05:54.38,0:05:54.95,Default,,0,0,0,,milti hai.
+Dialogue: 0,0:05:54.95,0:05:56.49,Default,,0,0,0,,Byaaj yaani loan ka woh hissa
+Dialogue: 0,0:05:56.49,0:05:57.84,Default,,0,0,0,,jo bank ka munafa hai.
+Dialogue: 0,0:05:57.84,0:06:00.14,Default,,0,0,0,,Health insurance ka premium bhi purane
+Dialogue: 0,0:06:00.14,0:06:02.26,Default,,0,0,0,,regime mein income se ghatta hai.
+Dialogue: 0,0:06:02.71,0:06:04.22,Default,,0,0,0,,Colleague ne sab joda.
+Dialogue: 0,0:06:04.22,0:06:05.08,Default,,0,0,0,,Kiraaye ki chhoot,
+Dialogue: 0,0:06:05.08,0:06:05.30,Default,,0,0,0,,80C,
+Dialogue: 0,0:06:05.30,0:06:06.38,Default,,0,0,0,,health insurance.
+Dialogue: 0,0:06:06.38,0:06:08.97,Default,,0,0,0,,Deductions yaani woh kharche jo taxable
+Dialogue: 0,0:06:08.97,0:06:11.13,Default,,0,0,0,,income se ghata diye jaate hain.
+Dialogue: 0,0:06:11.13,0:06:13.50,Default,,0,0,0,,Uski deductions bahut badi ban gayi.
+Dialogue: 0,0:06:13.50,0:06:15.01,Default,,0,0,0,,Jitni badi deductions,
+Dialogue: 0,0:06:15.01,0:06:17.39,Default,,0,0,0,,utna purana regime aakarshak.
+Dialogue: 0,0:06:17.84,0:06:20.16,Default,,0,0,0,,Uski salary itni upar hai ki
+Dialogue: 0,0:06:20.16,0:06:22.06,Default,,0,0,0,,naye regime mein unche slab tak
+Dialogue: 0,0:06:22.06,0:06:22.70,Default,,0,0,0,,jaati hai.
+Dialogue: 0,0:06:22.70,0:06:24.60,Default,,0,0,0,,Slab yaani income ke tukde,
+Dialogue: 0,0:06:24.60,0:06:26.29,Default,,0,0,0,,har tukde par alag rate.
+Dialogue: 0,0:06:26.29,0:06:28.40,Default,,0,0,0,,Naye regime ka sabse ooncha slab
+Dialogue: 0,0:06:28.40,0:06:29.45,Default,,0,0,0,,30 percent hai,
+Dialogue: 0,0:06:29.45,0:06:30.72,Default,,0,0,0,,24 lakh ke upar.
+Dialogue: 0,0:06:31.17,0:06:33.03,Default,,0,0,0,,Aisi kamai par zero tax wala
+Dialogue: 0,0:06:33.03,0:06:34.52,Default,,0,0,0,,rebate kaam nahi aata.
+Dialogue: 0,0:06:34.52,0:06:36.01,Default,,0,0,0,,Ab har rupaye ki chhoot asli
+Dialogue: 0,0:06:36.01,0:06:37.12,Default,,0,0,0,,paisa bachati hai.
+Dialogue: 0,0:06:37.12,0:06:39.73,Default,,0,0,0,,Isliye purane regime ki badi deductions
+Dialogue: 0,0:06:39.73,0:06:41.03,Default,,0,0,0,,sach mein farq daal sakti hain.
+Dialogue: 0,0:06:41.03,0:06:43.27,Default,,0,0,0,,Uske case mein purana regime jeet
+Dialogue: 0,0:06:43.27,0:06:44.01,Default,,0,0,0,,bhi sakta hai.
+Dialogue: 0,0:06:44.46,0:06:45.80,Default,,0,0,0,,Toh formula simple hai.
+Dialogue: 0,0:06:45.80,0:06:47.72,Default,,0,0,0,,Dono regime mein tax nikaalo,
+Dialogue: 0,0:06:47.72,0:06:48.30,Default,,0,0,0,,jo kam aaye,
+Dialogue: 0,0:06:48.30,0:06:48.87,Default,,0,0,0,,woh chuno.
+Dialogue: 0,0:06:48.87,0:06:51.37,Default,,0,0,0,,Income tax ki website par calculator
+Dialogue: 0,0:06:51.37,0:06:51.56,Default,,0,0,0,,hai.
+Dialogue: 0,0:06:51.56,0:06:53.29,Default,,0,0,0,,Wahan dono hisaab saath mein dikh
+Dialogue: 0,0:06:53.29,0:06:53.86,Default,,0,0,0,,jaate hain.
+Dialogue: 0,0:06:53.86,0:06:55.01,Default,,0,0,0,,Andaaza mat lagao,
+Dialogue: 0,0:06:55.01,0:06:55.78,Default,,0,0,0,,number dekho.
+Dialogue: 0,0:06:56.23,0:06:58.02,Default,,0,0,0,,Ab woh galti jo sabse zyada
+Dialogue: 0,0:06:58.02,0:06:58.82,Default,,0,0,0,,log karte hain.
+Dialogue: 0,0:06:58.82,0:07:00.81,Default,,0,0,0,,Regime ko aadat se chunte hain,
+Dialogue: 0,0:07:00.81,0:07:01.81,Default,,0,0,0,,hisaab se nahi.
+Dialogue: 0,0:07:01.81,0:07:03.81,Default,,0,0,0,,Kuch Papa ki tarah purane se
+Dialogue: 0,0:07:03.81,0:07:04.80,Default,,0,0,0,,chipke rehte hain.
+Dialogue: 0,0:07:04.80,0:07:06.40,Default,,0,0,0,,Kuch Bhai ki tarah reel dekhkar
+Dialogue: 0,0:07:06.40,0:07:07.39,Default,,0,0,0,,naya le lete hain.
+Dialogue: 0,0:07:07.39,0:07:08.79,Default,,0,0,0,,Dono mein hisaab gayab hai.
+Dialogue: 0,0:07:09.24,0:07:10.13,Default,,0,0,0,,Doosri galti,
+Dialogue: 0,0:07:10.13,0:07:11.02,Default,,0,0,0,,March ki bhaag-daud.
+Dialogue: 0,0:07:11.02,0:07:12.13,Default,,0,0,0,,Saal bhar kuch nahi,
+Dialogue: 0,0:07:12.13,0:07:13.90,Default,,0,0,0,,aur aakhri hafte mein koi bhi
+Dialogue: 0,0:07:13.90,0:07:14.57,Default,,0,0,0,,policy.
+Dialogue: 0,0:07:14.57,0:07:16.13,Default,,0,0,0,,Sirf tax bachane ke liye.
+Dialogue: 0,0:07:16.13,0:07:17.90,Default,,0,0,0,,Product ko uske kaam ke liye
+Dialogue: 0,0:07:17.90,0:07:18.13,Default,,0,0,0,,lo,
+Dialogue: 0,0:07:18.13,0:07:19.24,Default,,0,0,0,,tax ke liye nahi.
+Dialogue: 0,0:07:19.24,0:07:20.79,Default,,0,0,0,,Chhoot bonus ho sakti hai,
+Dialogue: 0,0:07:20.79,0:07:21.68,Default,,0,0,0,,wajah nahi.
+Dialogue: 0,0:07:22.13,0:07:23.52,Default,,0,0,0,,Ab switch kaise karte hain.
+Dialogue: 0,0:07:23.52,0:07:25.30,Default,,0,0,0,,Salaried ko saal ki shuruaat mein
+Dialogue: 0,0:07:25.30,0:07:27.48,Default,,0,0,0,,HR ko regime batana hota hai.
+Dialogue: 0,0:07:27.48,0:07:29.46,Default,,0,0,0,,Usi hisaab se har mahine TDS
+Dialogue: 0,0:07:29.46,0:07:30.06,Default,,0,0,0,,katta hai.
+Dialogue: 0,0:07:30.06,0:07:31.44,Default,,0,0,0,,Aap kuch nahi batate,
+Dialogue: 0,0:07:31.44,0:07:33.62,Default,,0,0,0,,toh company naya regime maan leti
+Dialogue: 0,0:07:33.62,0:07:33.82,Default,,0,0,0,,hai,
+Dialogue: 0,0:07:33.82,0:07:35.21,Default,,0,0,0,,kyunki wahi default hai.
+Dialogue: 0,0:07:35.66,0:07:36.92,Default,,0,0,0,,Achhi khabar yeh hai.
+Dialogue: 0,0:07:36.92,0:07:39.24,Default,,0,0,0,,Salaried log return file karte waqt
+Dialogue: 0,0:07:39.24,0:07:41.13,Default,,0,0,0,,bhi regime badal sakte hain.
+Dialogue: 0,0:07:41.13,0:07:42.19,Default,,0,0,0,,Return yaani ITR,
+Dialogue: 0,0:07:42.19,0:07:43.66,Default,,0,0,0,,saal ke end mein sarkar ko
+Dialogue: 0,0:07:43.66,0:07:44.93,Default,,0,0,0,,diya gaya poora hisaab.
+Dialogue: 0,0:07:44.93,0:07:46.40,Default,,0,0,0,,HR ko galat bata diya,
+Dialogue: 0,0:07:46.40,0:07:48.08,Default,,0,0,0,,toh bhi faisla return mein ho
+Dialogue: 0,0:07:48.08,0:07:48.72,Default,,0,0,0,,sakta hai,
+Dialogue: 0,0:07:48.72,0:07:49.98,Default,,0,0,0,,deadline ke andar.
+Dialogue: 0,0:07:50.43,0:07:51.30,Default,,0,0,0,,Bas yeh dhyaan rakhna.
+Dialogue: 0,0:07:51.30,0:07:52.87,Default,,0,0,0,,Jinki business income hai,
+Dialogue: 0,0:07:52.87,0:07:54.61,Default,,0,0,0,,unke liye switch itna aasaan nahi.
+Dialogue: 0,0:07:54.61,0:07:56.36,Default,,0,0,0,,Unke liye wapas aane ke mauke
+Dialogue: 0,0:07:56.36,0:07:57.05,Default,,0,0,0,,bahut kam hain.
+Dialogue: 0,0:07:57.05,0:07:58.97,Default,,0,0,0,,Agar aapki dukaan ya practice hai,
+Dialogue: 0,0:07:58.97,0:08:01.24,Default,,0,0,0,,regime badalne se pehle kisi jaankar
+Dialogue: 0,0:08:01.24,0:08:02.11,Default,,0,0,0,,se zaroor poochho.
+Dialogue: 0,0:08:02.56,0:08:04.06,Default,,0,0,0,,Behen ne us raat HR ko
+Dialogue: 0,0:08:04.06,0:08:04.69,Default,,0,0,0,,reply kiya,
+Dialogue: 0,0:08:04.69,0:08:05.55,Default,,0,0,0,,naya regime.
+Dialogue: 0,0:08:05.55,0:08:07.69,Default,,0,0,0,,Papa ne hisaab dekhkar haan kahi.
+Dialogue: 0,0:08:07.69,0:08:09.82,Default,,0,0,0,,Policy ka form waapas drawer mein
+Dialogue: 0,0:08:09.82,0:08:10.46,Default,,0,0,0,,chala gaya.
+Dialogue: 0,0:08:10.46,0:08:11.74,Default,,0,0,0,,PPF ab bhi khulegi,
+Dialogue: 0,0:08:11.74,0:08:12.81,Default,,0,0,0,,par bachat ke liye.
+Dialogue: 0,0:08:12.81,0:08:14.94,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:08:14.94,0:08:16.44,Default,,0,0,0,,Apna hisaab khud karo.
+Dialogue: 0,0:08:16.89,0:08:18.02,Default,,0,0,0,,Toh aapka sawaal.
+Dialogue: 0,0:08:18.02,0:08:20.06,Default,,0,0,0,,Aap abhi kaun se regime mein
+Dialogue: 0,0:08:20.06,0:08:20.28,Default,,0,0,0,,ho,
+Dialogue: 0,0:08:20.28,0:08:21.41,Default,,0,0,0,,purana ya naya?
+Dialogue: 0,0:08:21.41,0:08:23.45,Default,,0,0,0,,Comments mein bas purana ya naya
+Dialogue: 0,0:08:23.45,0:08:23.90,Default,,0,0,0,,likho.
+Dialogue: 0,0:08:23.90,0:08:25.71,Default,,0,0,0,,Aur agar pata hi nahi,
+Dialogue: 0,0:08:25.71,0:08:27.75,Default,,0,0,0,,toh apni salary slip dekho.
+Dialogue: 0,0:08:27.75,0:08:29.33,Default,,0,0,0,,Wahi pehla kadam hai.
+Dialogue: 0,0:08:29.78,0:08:31.54,Default,,0,0,0,,Agli baar woh sawaal jo har
+Dialogue: 0,0:08:31.54,0:08:32.64,Default,,0,0,0,,ghar mein hota hai.
+Dialogue: 0,0:08:32.64,0:08:34.63,Default,,0,0,0,,Share bechne par tax kab lagta
+Dialogue: 0,0:08:34.63,0:08:34.85,Default,,0,0,0,,hai,
+Dialogue: 0,0:08:34.85,0:08:35.73,Default,,0,0,0,,aur kab nahi?
+Dialogue: 0,0:08:35.73,0:08:37.93,Default,,0,0,0,,Capital gains ki poori kahani,
+Dialogue: 0,0:08:37.93,0:08:39.48,Default,,0,0,0,,isi dining table par.
+Dialogue: 0,0:08:39.48,0:08:39.92,Default,,0,0,0,,Tab tak,
+Dialogue: 0,0:08:39.92,0:08:41.90,Default,,0,0,0,,apna hisaab khud karna seekho.

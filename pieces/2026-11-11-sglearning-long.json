@@ -3,117 +3,35 @@
  "facts": [
   {
    "label": "official",
-   "number": 500.0,
-   "quote": "The SIP instalment amount could be as small as ₹500 per month and ₹ 250 per month under Chhoti SIP.",
-   "source_date": "2026-10-12",
-   "source_name": "AMFI",
-   "source_url": "https://www.amfiindia.com",
-   "text": "Under mutual fund systematic investment plans, the minimum monthly installment can be as low as 500 INR.",
+   "number": 75000.0,
+   "quote": "STANDARD DEDUCTION INCREASED FROM ₹ 50,000 TO ₹ 75,000/- FOR THOSE IN THE NEW TAX REGIME.",
+   "source_date": "2024-07-23",
+   "source_name": "PIB",
+   "source_url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2035618",
+   "text": "Salaried employees opting for the new tax regime receive a standard deduction of INR 75,000.",
    "unit": "INR"
-  },
-  {
-   "label": "official",
-   "number": 120000.0,
-   "quote": "If you had invested ₹500 per month for 10, 20, or 30 years, your total investment would have been ₹60,000, ₹1,20,000, and ₹1,80,000, respectively.",
-   "source_date": "2026-10-14",
-   "source_name": "Tata Mutual Fund",
-   "source_url": "https://www.tatamutualfund.com",
-   "text": "A salaried individual contributing 500 INR every month over a 20-year period accumulates a total principal deposit of 1,20,000 INR.",
-   "unit": "INR"
-  },
-  {
-   "label": "analyst-view",
-   "number": 4.3,
-   "quote": "At an assumed 11% annual return, these amounts could have potentially grown to approximately ₹1.05 lakhs, ₹4.30 lakhs, and ₹14 lakhs, respectively.",
-   "source_date": "2026-10-14",
-   "source_name": "Tata Mutual Fund",
-   "source_url": "https://www.tatamutualfund.com",
-   "text": "Assuming an annualized return of 11 percent, an investment of 500 INR per month over 20 years could potentially grow to approximately 4.30 lakh INR.",
-   "unit": "lakh INR"
-  },
-  {
-   "label": "official",
-   "number": 32490.0,
-   "quote": "Total amount collected through SIP during September 2026 was ₹ 32,490 crore.",
-   "source_date": "2026-10-12",
-   "source_name": "AMFI",
-   "source_url": "https://www.amfiindia.com",
-   "text": "Total monthly inflows collected through systematic investment plans across the Indian mutual fund industry hit a record 32,490 crore INR in September 2026.",
-   "unit": "crore INR"
-  },
-  {
-   "label": "official",
-   "number": 10.06,
-   "quote": "SIP contributions stood at ₹32,490 crore, with 10.06 crore contributing SIP accounts during the month, reflecting continued investor participation in systematic investing.",
-   "source_date": "2026-10-12",
-   "source_name": "AMFI",
-   "source_url": "https://www.amfiindia.com",
-   "text": "Active contributing systematic investment plan accounts across Indian mutual funds reached 10.06 crore during September 2026.",
-   "unit": "crore accounts"
-  },
-  {
-   "label": "reported",
-   "number": 38.0,
-   "quote": "In March 2020, the Sensex fell 38 per cent in four weeks.",
-   "source_date": "2026-04-28",
-   "source_name": "Value Research",
-   "source_url": "https://www.valueresearchonline.com",
-   "text": "During the March 2020 market downturn, the benchmark Sensex plunged 38 percent in four weeks, illustrating the severe market drops that rupee-cost averaging navigates.",
-   "unit": "pct"
-  },
-  {
-   "label": "reported",
-   "number": 1.0,
-   "quote": "The gap between regular and direct plans is typically around 0.5 to 1 percent annually.",
-   "source_date": "2026-05-20",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com",
-   "text": "The gap between regular and direct mutual fund expense ratios typically ranges up to 1.0 percent each year.",
-   "unit": "pct"
-  },
-  {
-   "label": "analyst-view",
-   "number": 31.0,
-   "quote": "That 1.2 per cent annual difference, compounded over 20 years on a Rs 10,000 per month SIP, does not cost Rs 24,000 a year. It costs Rs 31 lakh in final corpus.",
-   "source_date": "2026-09-08",
-   "source_name": "Value Research",
-   "source_url": "https://www.valueresearchonline.com",
-   "text": "A 1.2 percent difference in expense ratios compounded over 20 years on a monthly SIP of 10,000 INR can erode 31 lakh INR from the final corpus.",
-   "unit": "lakh INR"
-  },
-  {
-   "label": "official",
-   "number": 12.5,
-   "quote": "For equity funds, gains on units held over 12 months are taxed at 12.5% on gains above Rs. 1.25 lakh a year; gains on units held 12 months or less are taxed at 20%.",
-   "source_date": "2026-10-03",
-   "source_name": "Bajaj Finserv",
-   "source_url": "https://www.bajajfinserv.in",
-   "text": "Long-term capital gains on equity mutual fund units held over 12 months are taxed at 12.5 percent on gains above the statutory threshold.",
-   "unit": "pct"
-  },
-  {
-   "label": "official",
-   "number": 1.25,
-   "quote": "For equity funds, gains on units held over 12 months are taxed at 12.5% on gains above Rs. 1.25 lakh a year; gains on units held 12 months or less are taxed at 20%.",
-   "source_date": "2026-10-03",
-   "source_name": "Bajaj Finserv",
-   "source_url": "https://www.bajajfinserv.in",
-   "text": "Salaried investors receive an annual tax-free exemption of up to 1.25 lakh INR on long-term capital gains from equity mutual fund redemptions.",
-   "unit": "lakh INR"
   }
  ],
  "id": "2026-11-11-sglearning-long",
  "ids": {
   "budget": {
    "day": "2026-10-25",
-   "drafts": 3,
-   "research": 1
+   "drafts": 4,
+   "research": 2
+  },
+  "captions": {
+   "en": "AUieDaazJ3UvPpbrfI8jUnQLqu_BpvPKUsjJbetruVCCQCa4Y9gXGvqy",
+   "gu": "AUieDaaE5AgDiKUohFgK7tvb1Cs2ScLSDtsvDPfVIgOlFKzatBro0bkFG88mqeyuShk-jpc3DmI",
+   "hi": "AUieDaaGq59jnLW_69FoJPYCCt4t36SLeBMY91tfpfTbR1oZfYAy5P5i5w5AdNFVzl5rJUE",
+   "mr": "AUieDaZNdB-u4UWMkUUvUumtRvkUXaTyliL3VrbKuKoEyooI85Z2atuZLJ2H3k-oN7k",
+   "ta": "AUieDaaERJ81c2-FGUft8wnPDl14vWO2rKij3fp9s_6TWX9ynriMTR_hTepj6r1T6Lo"
   },
   "cost": {
-   "inr": 0.0,
-   "usd": 0.472558,
-   "voice": 0
-  }
+   "inr": 60.0,
+   "usd": 0.998666,
+   "voice": 39
+  },
+  "yt_id": "et4lCbGQdkk"
  },
  "kind": "long",
  "publish_day": "2026-11-11",
@@ -136,201 +54,151 @@
  "script": {
   "captions": {
    "instagram": {
-    "caption": "500 ki SIP se 20 saal mein kya banega? Jama hoga 1,20,000, aage ka hissa market aur aapki fees tay karegi. Crash mein SIP band karna aur regular plan ki fees, dono chupchaap mehnge padte hain. Aapki SIP regular mein hai ya direct mein? Yeh investment advice nahi hai. Share karo us bhai ko jisne bank counter pe bina pooche SIP form sign kar diya.",
+    "caption": "10 lakh ki salary par tax zero, phir bhi Papa policy khareedwa rahe the. 🧾\nNaye regime mein 75,000 ka standard deduction aur 12 lakh tak rebate. Purana regime tab jeetta hai jab deductions sach mein badi hon.\nAap kaun se regime mein ho, purana ya naya?\nYeh investment advice nahi hai.\nShare karo us dost ko jo har March sirf tax bachane ke liye policy khareedta hai.",
     "hashtags": [
-     "#SIP",
-     "#MutualFunds",
+     "#IncomeTax",
      "#PersonalFinanceIndia",
+     "#MoneyTipsHindi",
      "#HinglishFinance",
      "#SeedhiBaat",
-     "#MoneyTipsHindi",
-     "#LearningWithSG"
+     "#LearningWithSG",
+     "#PaiseKiKhabar"
     ]
    },
    "threads": {
-    "text": "500 ki SIP se 20 saal mein kya banega? Crash mein band karna aur regular plan ki fees, dono chupchaap paisa khaate hain. Aapki SIP regular mein hai ya direct mein? #PaiseKiKhabar #MoneyTipsHindi"
+    "text": "10 lakh ki salary par tax zero ho sakta hai, phir bhi log March mein sirf tax bachane ke liye policy le lete hain. Naya regime ya purana, hisaab karke chuno. Aap abhi kaun se regime mein ho? #PaiseKiKhabar #MoneyTipsHindi"
    },
    "youtube": {
     "chapters": [
-     "00:00 500 ki SIP ka sach",
-     "00:00 500 se 20 saal mein kya banega",
-     "00:00 Crash mein SIP band karein?",
-     "00:00 Expense ratio kya khata hai",
-     "00:00 Galti, tax aur kya karein"
+     "00:00 HR ka email aur Papa ki salah",
+     "00:00 Naya regime: zero tax ka raaz",
+     "00:00 80C ab kaam ka hai ya nahi?",
+     "00:00 HRA aur deductions: purana kab jeetta hai",
+     "00:00 Galti, switch aur aapka faisla"
     ],
-    "description": "500 rupaye mahine ki SIP se 20 saal mein kya banega, aur kya nahi banega? Market crash mein SIP band karna kitna mehnga padta hai, aur expense ratio chupchaap kitna kha jaata hai, sab ek ghar ki kahani mein. Share karo us dost ko jo market girte hi SIP band kar deta hai.",
+    "description": "10 lakh ki salary par tax zero ho sakta hai, phir bhi log March mein policy khareedte hain. Ek family ki kahani se samjho naya aur purana regime, 80C, HRA aur switch kaise karte hain. Hisaab karke chuno, aadat se nahi. Share karo us dost ko jo har March sirf tax bachane ke liye policy khareedta hai.",
     "tags": [
-     "SIP",
-     "mutual fund",
-     "500 SIP",
-     "rupee cost averaging",
-     "expense ratio",
-     "direct plan",
-     "regular plan",
-     "SIP band karein",
-     "Sensex crash",
-     "LTCG tax",
-     "personal finance Hindi",
+     "income tax",
+     "new tax regime",
+     "old tax regime",
+     "80C",
+     "HRA",
+     "standard deduction",
+     "salary tax",
+     "ITR",
+     "tax saving",
+     "87A rebate",
+     "Hinglish finance",
      "Learning with SG"
     ],
-    "title": "SIP 500 rupaye: 20 saal mein kitna banega?"
+    "title": "Old vs New Tax Regime: 10 lakh par tax zero?"
    }
   },
   "cards": [
    {
-    "big_number": "₹1,20,000",
-    "line": "500 mahine ki SIP, 20 saal mein kul jama",
-    "source": "Tata Mutual Fund"
+    "big_number": "₹75,000",
+    "line": "Naye regime mein salaried ka standard deduction",
+    "source": "PIB"
    },
    {
-    "big_number": "₹4.30 lakh",
-    "line": "11% saalana return maan kar andaaza, vaada nahi",
-    "source": "Tata Mutual Fund"
+    "big_number": "₹12 lakh",
+    "line": "Naye regime mein is taxable income tak tax zero (87A rebate)",
+    "source": "incometaxindia.gov.in"
    },
    {
-    "big_number": "38%",
-    "line": "March 2020 mein Sensex kuch hafton mein gira",
-    "source": "Value Research"
+    "big_number": "₹1.5 lakh",
+    "line": "Purane regime mein 80C ki limit",
+    "source": "incometaxindia.gov.in"
    },
    {
-    "big_number": "₹31 lakh",
-    "line": "1.2% fees ka fark, 10,000 SIP, 20 saal",
-    "source": "Value Research"
+    "big_number": "30%",
+    "line": "Naye regime ka sabse ooncha slab, 24 lakh ke upar",
+    "source": "incometaxindia.gov.in"
    }
   ],
   "carousel": true,
-  "end_question": "Aapki SIP regular plan mein hai ya direct mein?",
-  "hook": "500 rupaye mahine ki SIP se 20 saal mein kya banega?",
+  "end_question": "Aap abhi kaun se regime mein ho, purana ya naya?",
+  "hook": "10 lakh ki salary par tax zero, phir bhi Papa policy khareedwa rahe the.",
   "scenes": [
    {
-    "facts_used": [
-     0
-    ],
-    "label": "500 ki SIP ka sach",
+    "facts_used": [],
+    "label": "HR ka email aur Papa ki salah",
     "visual": {
      "card": null,
-     "prompt": "A middle-class Indian dining table in the evening, steel cups of chai, a phone face up glowing, family silhouettes leaning in curiously, warm yellow light",
+     "prompt": "BEHEN in office wear sits at a dining table at night, staring at an email on her laptop, PAPA in a kurta beside her holding an insurance policy brochure, warm lamp light, curious tense mood",
      "type": "art"
     },
-    "vo": "500 rupaye mahine ki SIP se 20 saal mein kya banega? Yeh sawaal har ghar mein hota hai, chai ke saath, salary ke din. Koi kehta hai raaton raat ameer banoge, koi kehta hai paisa doob jayega. Sach kahin beech mein hai. Aaj poori kahani sunte hain, seedhi baat."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "BHAI in a hoodie sitting on a bed at night, smiling at his phone screen glowing in his hands, excited, a plate of samosas beside him",
-     "type": "art"
-    },
-    "vo": "Kahani BHAI ki hai. Nayi naukri ki salary aayi hai, phone mein bank ka message chamak raha hai. Usne reel dekhi, SIP shuru karo, paisa badhao. Usne socha, chhota sa amount rakhta hoon, 500 rupaye. Itna toh chai aur samose mein chala jata hai."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "PAPA in a kurta holding FD receipts at the dining table, BEHEN in office wear looking sceptical over her phone, MUMMY in a saree placing chai with a worried face, BHAI listening, evening",
-     "type": "art"
-    },
-    "vo": "Dining table pe PAPA ne FD ki rasid nikaali. Bole, beta, FD safe hai, share market juaa hai. BEHEN ne phone se nazar uthaayi aur poocha, 500 se kya hoga? Itne mein toh kuch nahi banta. MUMMY chupchaap chai rakh gayi, thodi si pareshaan."
-   },
-   {
-    "facts_used": [
-     4
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A wide city view at dusk with countless lit apartment windows, in many windows small figures look at phones, a sense of a whole country doing the same thing",
-     "type": "art"
-    },
-    "vo": "Aur BHAI akela nahi hai. AMFI ke hisaab se September 2026 mein 10.06 crore SIP accounts mein har mahine paisa ja raha tha. Matlab bahut saare log har mahine yahi faisla le rahe hain. Toh samajhna zaroori hai ki yeh cheez asal mein kaam kaise karti hai."
+    "vo": "10 lakh ki salary par tax zero, phir bhi Papa policy khareedwa rahe the. Yeh kahani meri behen ki hai. Pehli badi naukri, pehli badi salary. Aur pehle hi hafte, HR ka email aaya. Sawaal tha, purana regime chahiye ya naya?"
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "An illustrated big glass jar filling with coins dropped by many different hands, a calm professional in a shirt sorting the coins into neat small boxes, soft daylight",
+     "prompt": "Family gathered around a dining table in the evening, MUMMY in a saree placing cups of chai, PAPA adjusting his glasses and pointing confidently at the laptop, BEHEN listening, cosy middle-class Indian home",
      "type": "art"
     },
-    "vo": "SIP yaani Systematic Investment Plan. Seedhe shabdon mein, har mahine tay din, tay rakam, apne aap mutual fund mein. Mutual fund yaani bahut logon ka paisa milaakar, koi professional use shares ya bonds mein lagata hai. Aap usme chhota sa hissa kharidte ho, jise unit kehte hain."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "SG, early forties with a beard and striped shirt, standing beside a blank chalkboard in a cosy study, gesturing warmly toward the viewer, afternoon light",
-     "type": "art"
-    },
-    "vo": "Toh aaj BHAI ki kahani ke saath yeh sawaal suljhaate hain. 500 ki SIP se asal mein kya banega? Market gire toh SIP band karna sahi hai ya galat? Aur expense ratio naam ki cheez chupchaap kitna kha jaati hai? Chaliye, shuru karte hain."
-   },
-   {
-    "facts_used": [
-     0,
-     1
-    ],
-    "label": "500 se 20 saal mein kya banega",
-    "visual": {
-     "card": null,
-     "prompt": "BEHEN in office wear tapping a calculator app on her phone at the dining table, focused frown, BHAI peeking over her shoulder, night lamp light",
-     "type": "art"
-    },
-    "vo": "BEHEN ka sawaal pehle. Usne phone pe calculator khola. 500 rupaye mahine, 20 saal. Matlab BHAI apni jeb se kul 1,20,000 rupaye daalega. Bas itna hi, na zyada, na kam. Yeh woh paisa hai jo usne kamaaya, bachaaya, aur har mahine alag rakha."
-   },
-   {
-    "facts_used": [
-     1
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A small snowball rolling down a gentle hillside, growing bigger as it goes, a tiny figure of BHAI watching from the top in amazement, bright morning",
-     "type": "art"
-    },
-    "vo": "Ab sawaal yeh hai ki yeh 1,20,000 badhkar kitna banega? Yahan aata hai compounding. Compounding yaani byaaj par byaaj, return par return. Aaj ka munafa kal khud kamaane lagta hai. Shuru mein dheere, baad mein tez, jaise baraf ka gola pahaad se ludhakta hai."
-   },
-   {
-    "facts_used": [
-     2,
-     0
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "BEHEN with wide surprised eyes looking at her phone, PAPA taking off his spectacles and leaning forward at the dining table, chai steaming, evening",
-     "type": "art"
-    },
-    "vo": "Tata Mutual Fund ne andaaza diya hai. Ek achha saalana return maan kar, 20 saal mein 500 ki SIP lagbhag 4.30 lakh tak ban sakti hai. BEHEN ki aankhen badi ho gayi. PAPA ne chashma utaara aur dhyan se suna."
-   },
-   {
-    "facts_used": [
-     2
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A winding road split into a sunny green path and a grey foggy flat path, BHAI standing at the fork with a small backpack, thoughtful, late afternoon",
-     "type": "art"
-    },
-    "vo": "Par dhyan se suniye, yeh maan kar hai. Woh return koi vaada nahi, sirf andaaza hai. Kisi achhe daur mein market itna de sakta hai. Kisi sust daur mein bahut kam bhi de sakta hai. Mutual fund mein return tay nahi hota, yahi sach hai."
+    "vo": "Shaam ko dining table par yeh email poora ghar padh raha tha. Behen ne laptop khola, Mummy chai le aayi. Papa ne chashma lagaya aur seedha bole. Purana regime lo beta, hum hamesha usi mein rahe hain. Wahi safe hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "BHAI sitting on a balcony looking at his phone with a flat bored expression, grey cloudy sky, a wilted plant pot beside him",
+     "prompt": "PAPA spreading old FD receipts and insurance papers across the table like trophies, proud expression, BEHEN watching unsure, evening light",
      "type": "art"
     },
-    "vo": "Sust daur ka matlab kya? Kai saal aise aate hain jab market upar neeche hota rehta hai, par kahin pahunchta nahi. Tab aapki SIP ki value lagbhag utni hi dikh sakti hai jitna aapne daala. Isi daur mein log sabse zyada himmat haarte hain."
+    "vo": "Papa ki dalil simple thi. Purane regime mein tax bachane ke raaste hain. Policy lo, PPF kholo, FD lock karo, tax kam ho jaata hai. Unke liye tax bachana matlab kuch na kuch khareedna. Saalon se har March yahi hota aaya tha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in a hoodie lounging on a sofa scrolling his phone, looking up with a blank face as PAPA turns to question him, comic awkward moment, living room at night",
+     "type": "art"
+    },
+    "vo": "Bhai hoodie mein sofa par tha, phone haath mein. Bola, Papa, naya regime lo, internet pe sab yahi bol rahe hain. Papa ne poochha, kyun? Bhai ke paas jawab nahi tha. Bas subah dekhi ek reel yaad thi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN sitting between PAPA holding old papers and BHAI holding a glowing phone, both leaning toward her, she looks confused and pressured, dramatic split lighting",
+     "type": "art"
+    },
+    "vo": "Aur yahin asli dikkat hai. Ek taraf aadat hai, doosri taraf reel. Beech mein woh insaan hai jiski salary kat-ti hai. Usse koi hisaab karke nahi dikhata. Toh aaj hum hisaab karenge, bilkul dining table wala, seedha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG, early forties with a beard and striped shirt, sitting at the head of the dining table with a notepad, calm smile, family looking at him, warm night light",
+     "type": "art"
+    },
+    "vo": "Aaj ke sawaal yeh hain. Kya naya regime sabke liye sasta hai? Kya 80C ab bhi kaam ka hai, ya bas aadat hai? Aur HRA yaani kiraaye par tax chhoot, kab sach mein kaam aati hai? Jawab isi ghar ki kahani se."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG holding two thick rulebooks, one old and worn with many bookmarks, one new and slim, balancing them like a scale, explaining gesture, plain warm background",
+     "type": "art"
+    },
+    "vo": "Pehle ek baat saaf kar dein. Regime yaani tax ka rulebook. Sarkar ne dono rulebook aapke saamne rakh diye hain. Purane mein rate zyada, par chhoot bahut. Naye mein rate kam, par chhoot gini-chuni. Kuch na bolo, toh naya apne aap lagta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Naya regime: zero tax ka raaz",
+    "visual": {
+     "card": null,
+     "prompt": "SG and BEHEN leaning over a printed salary slip under a table lamp, SG tracing a line with a pen, BEHEN focused, late night quiet room",
+     "type": "art"
+    },
+    "vo": "Raat ko maine behen ke saath uski salary slip kholi. Sabse upar gross salary, yaani katne se pehle ki poori kamai. Neeche PF aur ek line, TDS. TDS yaani company har mahine aapka tax pehle hi kaat leti hai."
    },
    {
     "facts_used": [
@@ -339,55 +207,40 @@
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A small sapling being watered by BHAI in a clay pot on a windowsill, calm smile, soft morning sunlight",
+     "prompt": "BEHEN surprised as SG slides a chunk of her salary slip aside with a pen, an empty space where receipts usually go, light of realisation on her face",
      "type": "art"
     },
-    "vo": "Toh 500 ki SIP se raaton raat ameer nahi banoge, yeh seedhi baat hai. Par 500 se aadat banti hai. Aur yahi aadat baad mein, salary badhne par, badi SIP banti hai. BHAI ke liye asli munafa yahi tha, shuruaat karna aur tikna."
-   },
-   {
-    "facts_used": [
-     0,
-     5
-    ],
-    "label": "Crash mein SIP band karein?",
-    "visual": {
-     "card": null,
-     "prompt": "SG in a striped shirt standing in a dim study, turning toward a window where storm clouds are gathering over the city, serious expression, dusk",
-     "type": "art"
-    },
-    "vo": "Ab aata hai sabse mushkil sawaal. Market gire toh kya karein? BHAI ki SIP chal rahi thi, sab theek tha. Har mahine 500 katte, app mein chhota sa hara number dikhta. Phir aaya March 2020, aur sab badal gaya."
-   },
-   {
-    "facts_used": [
-     5
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A family living room at night, a TV glowing red with a falling chart shape, MUMMY and PAPA watching tensely from the sofa, empty quiet street outside the window",
-     "type": "art"
-    },
-    "vo": "Lockdown ki khabar, TV par laal screen. Value Research ke mutabik March 2020 mein Sensex kuch hi hafton mein 38 percent gir gaya. Sensex yaani desh ki badi companies ke shares ka thermometer. Thermometer neeche gaya, aur sab ki saans upar."
+    "vo": "Naye regime mein salaried logon ko seedha 75,000 ki chhoot milti hai. Isse standard deduction kehte hain. Koi policy nahi, koi receipt nahi, koi proof nahi. Bas aap naukri karte ho, aur itna hissa tax se bahar."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "BHAI alone in a dark room, face lit by a phone screen showing red colours, sweating, thumb hovering over the screen, late night",
+     "prompt": "A stack of rupee notes on a table with a small portion moved aside by a hand, the remaining stack under a spotlight, simple dramatic still life",
      "type": "art"
     },
-    "vo": "BHAI ne app khola. Jahan hara number tha, wahan laal tha. Usne socha, jitna daala, usse kam dikh raha hai. Abhi band kar doon toh aur nuksaan nahi hoga. Paisa bacha lunga, market theek hoga tab wapas aaunga."
+    "vo": "Matlab salary mein se pehle yeh hissa nikal jaata hai. Jo bachta hai, usse taxable income kehte hain. Taxable income yaani woh kamai jis par sach mein tax lagta hai. Ab asli twist aata hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "PAPA waving FD receipts with an I-told-you-so look, MUMMY in a saree clutching a chai cup with worry, BHAI looking down at the floor, dim kitchen light",
+     "prompt": "A tax bill on a table being stamped cancelled by an official hand, BEHEN in the background with wide eyes and a slow smile, bright clean light",
      "type": "art"
     },
-    "vo": "Yeh soch galat nahi lagti. Aag lagi ho toh ghar se bhaagna samajh mein aata hai. PAPA ne bhi kaha, dekha, maine bola tha, FD safe hai. MUMMY ne poocha, beta, sab doob toh nahi gaya? Ghar mein dar ka mahaul tha."
+    "vo": "Naye regime mein 12 lakh tak ki taxable income par tax zero hai. Yeh Section 87A ke rebate se hota hai. Rebate yaani tax banta toh hai, par sarkar use poora maaf kar deti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA taking off his glasses and leaning close to the laptop screen in disbelief, BEHEN beside him grinning, MUMMY peeking over his shoulder, night",
+     "type": "art"
+    },
+    "vo": "Behen ki taxable income is limit se kaafi neeche thi. Matlab naye regime mein uska income tax, zero. Na policy, na lock-in, na March ki bhaag-daud. Papa ne chashma utaara aur phir se screen dekhi."
    },
    {
     "facts_used": [
@@ -396,256 +249,336 @@
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "SHOPKEEPER at a kirana counter filling an overflowing cloth bag with red tomatoes, SG and BHAI standing in front, SG smiling and pointing at the bag, bright afternoon",
+     "prompt": "SG drawing two building blocks on a notepad and stacking them into a protective wall around a small house, BEHEN nodding, warm desk light",
      "type": "art"
     },
-    "vo": "Yahan SG ne BHAI ko kirane ki dukaan ka example diya. Socho, SHOPKEEPER ke paas tamatar sasta ho gaya. Wahi 500 rupaye, par thaila zyada bhar gaya. Kya aap kehte ho ki sasta hai toh nahi kharidunga? Nahi na."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "An illustrated jar receiving many more small coloured tokens from a funnel while a downward slope glows behind it, BHAI watching with dawning understanding, soft light",
-     "type": "art"
-    },
-    "vo": "SIP mein bhi yahi hota hai. Har unit ka daam hota hai, jise NAV kehte hain, yaani unit ki keemat. Market gira toh NAV gira. Toh wahi 500 rupaye mein BHAI ko zyada units milte. Isi ko rupee cost averaging kehte hain."
+    "vo": "Salaried ke liye yeh faayda aur bada ho jaata hai. Pehle 75,000 ki chhoot, phir 12 lakh tak rebate. Dono milkar ek achhi khaasi salary ko tax se bahar rakh dete hain. Bahut log yeh jod kar dekhte hi nahi."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A seesaw in a park balancing gently in the middle, small tokens on both sides, SG explaining beside it to BHAI, golden evening light",
+     "prompt": "SG standing at a fork in a road at dusk, one path wide and smooth, the other winding with signposts, thoughtful expression",
      "type": "art"
     },
-    "vo": "Rupee cost averaging yaani mehnge mein kam units, saste mein zyada units. Lambe samay mein aapki average keemat beech mein aa jaati hai. Aapko yeh andaaza nahi lagana padta ki market kab girega, kab uthega. SIP yeh kaam apne aap karti hai."
+    "vo": "Toh kya naya regime sabke liye sasta hai? Nahi, sabke liye nahi. Jinki salary is range mein hai, unke liye aksar haan. Par jinki kamai zyada hai, aur kharche chhoot wale hain, unki kahani alag ho sakti hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A young man standing outside a closed glass door watching a crowded bright room inside where people celebrate, regretful face, rainy evening",
+     "prompt": "BHAI looking at a stock chart on his phone while SG gently taps his shoulder with a cautious look, living room at night",
      "type": "art"
     },
-    "vo": "Ab socho jisne crash mein SIP band ki. Usne saste units kharidne ka mauka chhod diya. Aur jab market wapas uthta hai, woh aksar baahar khada dekh raha hota hai. Girte waqt rukna aur uthte waqt chhoot jaana, yahi sabse mehngi galti hai."
+    "vo": "Ek baat aur dhyaan rakhna. Yeh rebate salary jaisi normal income par hai. Share bechkar kamaya munafa, yaani capital gains, uske alag niyam hain. Agar aap trading bhi karte ho, poora hisaab kisi CA se zaroor karwa lena."
+   },
+   {
+    "facts_used": [],
+    "label": "80C ab kaam ka hai ya nahi?",
+    "visual": {
+     "card": null,
+     "prompt": "PAPA holding a bundle of old insurance and PPF passbooks to his chest, worried face, SG sitting opposite him with an understanding look, dim evening light",
+     "type": "art"
+    },
+    "vo": "Ab Papa ka sawaal. Beta, toh meri LIC aur PPF sab bekaar? Yahan samajhna zaroori hai. 80C yaani purane regime ka woh section, jahan kuch investments par chhoot milti hai. Naye regime mein yeh chhoot milti hi nahi."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "WIFE arranging two separate steel boxes on a kitchen shelf, one labelled by colour for emergencies, calm confident face, morning light",
+     "prompt": "A wooden box on a table being filled with a PPF passbook, an insurance policy and fund papers, the lid barely closing, PAPA watching proudly",
      "type": "art"
     },
-    "vo": "Haan, iska matlab yeh nahi ki market hamesha jaldi wapas aata hai. Kabhi jaldi, kabhi der se. Isiliye SIP ka paisa woh hona chahiye jiski aapko jaldi zaroorat na ho. Ghar ka emergency paisa alag rakho, phir crash mein dar kam lagta hai."
+    "vo": "Purane regime mein 80C ki limit 1.5 lakh hai. PPF, EPF, life insurance premium, tax saving fund, sab milakar itne tak. Yeh amount taxable income se ghat jaata hai. Sunne mein bahut bada lagta hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "BHAI putting his phone face down on a table and taking a deep breath, eyes closed, relieved, first light of dawn through the window",
+     "prompt": "SG pointing at the PF line on BEHEN's salary slip while PAPA leans in with raised eyebrows, small moment of discovery, table lamp light",
      "type": "art"
     },
-    "vo": "BHAI ne SIP band nahi ki. Kaanpte haathon se usne app band kiya, aur auto debit chalne diya. Woh aaj kehta hai, us mahine maine kuch nahi kiya, aur wahi meri sabse achhi investment thi. Kabhi kabhi kuch na karna hi kaam hai."
-   },
-   {
-    "facts_used": [],
-    "label": "Expense ratio kya khata hai",
-    "visual": {
-     "card": null,
-     "prompt": "BANK UNCLE behind a bank counter smiling and sliding a form toward BHAI who signs it with a pen, a cup of tea on the counter, bright office lights",
-     "type": "art"
-    },
-    "vo": "Ab aata hai woh kharcha jo dikhta nahi. BHAI ne apni SIP BANK UNCLE ke kehne par shuru ki thi. Counter pe form, muskaan, chai. Uncle bole, achha fund hai, chinta mat karo. BHAI ne sign kar diya, bina kuch pooche."
+    "vo": "Par ek cheez Papa ne kabhi nahi gini. Behen ki salary se EPF pehle hi kat raha hai. EPF yaani provident fund, jo aap aur company har mahine daalte ho. Woh bhi 80C mein ginta hai. Limit ka hissa pehle se bhara hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A large water tank with a tiny hidden tap at the bottom slowly dripping, SG pointing at the drip with a knowing look, soft daylight",
+     "prompt": "BEHEN signing a thick insurance form at a crowded office desk in March, an agent smiling across the table, her face tired and unsure, harsh fluorescent light",
      "type": "art"
     },
-    "vo": "Har mutual fund chalane ka kharcha leta hai. Fund manager, office, research, sab ka bill. Isko expense ratio kehte hain, yaani aapke paise ka chhota hissa jo fund har saal fees mein kaat leta hai. Yeh alag bill nahi aata, chupchaap NAV se kat jaata hai."
+    "vo": "Ab socho behen ne Papa ki baat maan li. Purana regime liya, aur March mein ek insurance policy le li. Saalon tak premium bharna, lock-in, aur return ka pata nahi. Sirf isliye kyunki tax bachana tha."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "Two paths to the same shop door, one longer path passing through a middleman at a desk, one short straight path, BHAI standing at the start looking at both, midday",
+     "prompt": "A locked steel cash box with a heavy chain on a table, BEHEN's hand resting on it, her face realising the mistake, cold blue light",
      "type": "art"
     },
-    "vo": "Har fund ke paas regular plan bhi hota hai aur direct plan bhi. Regular mein beech mein agent ya distributor hota hai, uska commission bhi aapke expense ratio mein judta hai. Direct mein aap seedhe fund se kharidte ho, beech mein koi nahi."
+    "vo": "Par naye regime mein uska tax pehle se zero tha. Jis tax ko bachane ke liye policy li, woh tax tha hi nahi. Policy ka faayda tax mein nahi mila. Bas paisa saalon ke liye bandh ho gaya. Yahi woh trap hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "BHAI frowning at his phone on the sofa, BEHEN beside him shrugging casually with a cup of coffee, evening lamp light",
+     "prompt": "PAPA calmly handing BEHEN a new PPF passbook at a bank counter, BANK UNCLE smiling behind the glass, relaxed daytime mood",
      "type": "art"
     },
-    "vo": "BHAI ne baad mein app mein dekha, uska plan regular tha. Direct mein wahi fund, wahi manager, wahi shares, bas fees kam. BEHEN ne kaha, chhota sa fark hai, isme kya rakha hai? Yahi soch lambe samay mein sabse mehngi padti hai."
-   },
-   {
-    "facts_used": [
-     7
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "BEHEN frozen mid-sip with a coffee cup near her lips, eyes wide in shock, staring at a phone screen, BHAI beside her equally stunned, night",
-     "type": "art"
-    },
-    "vo": "Value Research ne hisaab lagaya. Ek badi SIP par, fees ka chhota sa saalana fark, 20 saal mein final rakam lagbhag 31 lakh kam kar sakta hai. Sirf fees ka fark. BEHEN ka chai ka cup ruk gaya."
+    "vo": "Iska matlab yeh nahi ki PPF bura hai. PPF par abhi lagbhag 7.1 percent saalana byaaj hai. Lambi bachat ke liye log ise pasand karte hain. Bas ab PPF bachat ke liye kholo, tax ke darr se nahi."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A small leak in a bucket of water slowly forming a large puddle on the floor over time, SG crouching beside it explaining, afternoon light",
+     "prompt": "SG at the dining table with two small piles of papers, moving one aside decisively, clear calm explaining expression",
      "type": "art"
     },
-    "vo": "Kyun itna? Kyunki fees har saal poori jama rakam par katti hai, sirf naye paise par nahi. Aur jo paisa fees mein gaya, woh aage compounding bhi nahi kamata. Matlab compounding ulta chalti hai. Chhota sa chhed, lambe samay mein bada gaddha ban jaata hai."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "BHAI at a desk carefully reading on a laptop with a magnifying glass in hand, focused and curious, a cup of chai beside him, evening",
-     "type": "art"
-    },
-    "vo": "500 ki SIP par yeh rakam chhoti hogi, par asool wahi hai. Fund chunte waqt sirf pichhla return mat dekho. Expense ratio bhi dekho, aur yeh bhi ki plan regular hai ya direct. Fund ki website aur factsheet pe yeh likha hota hai."
+    "vo": "Toh 80C ab kaam ka hai ya nahi? Purane regime mein ho, toh haan, bahut kaam ka. Naye regime mein ho, toh tax ke liye bilkul nahi. Pehle regime chuno, phir socho ki 80C ki zaroorat hai bhi."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "BANK UNCLE and BHAI sitting together across a desk, BANK UNCLE explaining patiently with open hands, BHAI nodding, calm office afternoon",
+     "prompt": "PAPA sitting quietly with an old photo album of FD receipts, SG with a hand on his shoulder, tender emotional moment, soft night light",
      "type": "art"
     },
-    "vo": "Agent ki bhi apni jagah hai. Agar koi aapko sahi salah deta hai aur haath pakadkar chalata hai, toh uski fees ka matlab ban sakta hai. Bas jaan bujhkar chuno. Bina jaane fees dete rehna, asli problem yahi hai."
+    "vo": "Papa ne thodi der chup rehkar kaha, matlab maine itne saal galat kiya? Maine kaha, nahi Papa. Aapke zamaane mein naya regime tha hi nahi. Tab wahi sahi tha. Bas rules badal gaye, aur hum aadat nahi badle."
    },
    {
     "facts_used": [],
-    "label": "Galti, tax aur kya karein",
+    "label": "HRA aur deductions: purana kab jeetta hai",
     "visual": {
      "card": null,
-     "prompt": "SG in a striped shirt standing at a crossroads with several tempting shop signs as shapes without text, looking back at the viewer with a gentle warning expression, dusk",
+     "prompt": "A confident young woman colleague in office wear at a high-rise office window overlooking a big city, holding a rent agreement and a health insurance card, afternoon light",
      "type": "art"
     },
-    "vo": "Ab woh galti jo sabse zyada log karte hain. SIP shuru karna aasaan hai, chalaate rehna mushkil. Koi crash mein band kar deta hai. Koi naya phone lene ke liye beech mein nikaal leta hai. Aur koi bhool jaata hai ki SIP badhani bhi thi."
-   },
-   {
-    "facts_used": [
-     8
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "WIFE at the dining table with a notebook and pen, calmly working through household papers, BHAI sitting beside her listening, morning light",
-     "type": "art"
-    },
-    "vo": "Aur nikaalte waqt tax bhi samjho. Equity fund ke units saal bhar se zyada rakhe, toh munafe par long term capital gains tax lagta hai, yaani lambe samay ke munafe ka tax. Aaj yeh rate 12.5 percent hai."
-   },
-   {
-    "facts_used": [
-     9,
-     8
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "WIFE smiling and pointing at her notebook while BHAI looks impressed, a small pile of coins neatly split on the table, warm daylight",
-     "type": "art"
-    },
-    "vo": "Par har saal 1.25 lakh tak ka aisa munafa tax free hai. Uske upar ke munafe par hi 12.5 percent lagta hai. Toh plan karke, thoda thoda nikaalna, tax ka bojh kam kar sakta hai. Yeh baat zyada log jaante hi nahi."
+    "vo": "Ab kahani ka doosra pehlu. Har kisi ke liye naya regime nahi jeetta. Behen ki ek colleague ko dekho. Woh bade sheher mein kiraaye par rehti hai. Mummy-Papa ka health insurance bharti hai. Aur salary kaafi upar hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "BHAI confidently walking out of his office building in the evening with a calm smile, phone in pocket, city lights coming on",
+     "prompt": "The colleague handing rent to a landlord at the door of a small city apartment, keys and a rent receipt in hand, evening",
      "type": "art"
     },
-    "vo": "Toh BHAI ne kya seekha? SIP ka auto debit salary ke agle din rakho. Crash aaye toh app kam kholo, SIP chalne do. Plan direct hai ya regular, check karo. Aur jab salary badhe, SIP bhi thodi badhao."
+    "vo": "Pehle HRA samjho. HRA yaani House Rent Allowance, jo company kiraaye ke liye deti hai. Purane regime mein iska bada hissa tax se bahar ho sakta hai, agar aap sach mein kiraaya dete ho. Naye regime mein yeh chhoot nahi."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "SG sitting on a sofa in a cosy room, leaning forward with an honest open-handed gesture toward the viewer, soft evening lamp light",
+     "prompt": "A neat folder of rent receipts being filed in a drawer by the colleague, organised desk, calm focused face, night lamp",
      "type": "art"
     },
-    "vo": "Aur sabse zaroori, return ka koi vaada mat suno. Achha daur bhi aata hai, sust daur bhi. Aapke haath mein bas yeh hai, kitna daalte ho, kitne lambe samay tak, aur kitni fees dete ho. Yeh investment advice nahi hai, apni zaroorat dekhkar faisla kijiye."
+    "vo": "Isliye rent receipt aur landlord ki details sambhaal kar rakho. Aur jo log apne ghar mein rehte hain, unke liye HRA chhoot ka sawaal hi nahi. Wahan HRA bas salary ka taxable hissa ban jaata hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "PAPA in a kurta and BHAI in a hoodie sitting side by side on a sofa, PAPA holding a file of papers and smiling at BHAI's phone, MUMMY bringing chai in the background, warm evening",
+     "prompt": "A middle-aged man receiving house keys at a bank counter from BANK UNCLE, loan papers on the counter, hopeful expression, daytime",
      "type": "art"
     },
-    "vo": "Aaj BHAI ki SIP ki statement PAPA ki FD ki rasid ke saath file mein rakhi hai. PAPA ab bhi kehte hain FD safe hai. Par ab woh BHAI se poochte hain, beta, tera fund kaisa chal raha hai? Ghar mein FD aur SIP, sab ki jagah hai."
+    "vo": "Ab home loan. Purane regime mein apne ghar ke loan ke byaaj par bhi chhoot milti hai. Byaaj yaani loan ka woh hissa jo bank ka munafa hai. Health insurance ka premium bhi purane regime mein income se ghatta hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "BETA, a 10-year-old boy, holding up his father's phone toward the viewer with a curious questioning look, living room, afternoon",
+     "prompt": "The colleague at a desk adding up a long column on paper with a calculator, pile of receipts beside her, determined look, late evening",
      "type": "art"
     },
-    "vo": "Ab aapse sawaal. Aapki SIP regular plan mein hai ya direct mein? Comment mein bas likhiye, regular ya direct. Aur agar pata nahi, toh aaj hi app kholkar check kijiye. Yeh chhota sa kaam, lambe samay mein bada fark la sakta hai."
+    "vo": "Colleague ne sab joda. Kiraaye ki chhoot, 80C, health insurance. Deductions yaani woh kharche jo taxable income se ghata diye jaate hain. Uski deductions bahut badi ban gayi. Jitni badi deductions, utna purana regime aakarshak."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "SG standing at a doorway waving goodbye with a friendly smile, a hint of a house key and a piggy bank on a side table, golden sunset light",
+     "prompt": "A staircase drawn as rising steps with the colleague climbing toward the top step, the steps getting steeper, dramatic upward perspective",
      "type": "art"
     },
-    "vo": "Agle video mein baat karenge EMI aur SIP ki ladaai ki. Home loan jaldi chukaayein, ya SIP chalaate rahein? Ghar ghar ka sawaal hai, aur jawaab utna seedha nahi jitna lagta hai. Tab tak, seedhi baat, paisa samajh kar lagaiye."
+    "vo": "Uski salary itni upar hai ki naye regime mein unche slab tak jaati hai. Slab yaani income ke tukde, har tukde par alag rate. Naye regime ka sabse ooncha slab 30 percent hai, 24 lakh ke upar."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The colleague smiling with relief as she compares two sheets of paper side by side, one clearly lighter, soft morning light at her desk",
+     "type": "art"
+    },
+    "vo": "Aisi kamai par zero tax wala rebate kaam nahi aata. Ab har rupaye ki chhoot asli paisa bachati hai. Isliye purane regime ki badi deductions sach mein farq daal sakti hain. Uske case mein purana regime jeet bhi sakta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG and BEHEN side by side looking at a calculator page on a laptop, both pointing at the screen, satisfied expressions, bright room",
+     "type": "art"
+    },
+    "vo": "Toh formula simple hai. Dono regime mein tax nikaalo, jo kam aaye, woh chuno. Income tax ki website par calculator hai. Wahan dono hisaab saath mein dikh jaate hain. Andaaza mat lagao, number dekho."
+   },
+   {
+    "facts_used": [],
+    "label": "Galti, switch aur aapka faisla",
+    "visual": {
+     "card": null,
+     "prompt": "SG at a chapter turn standing between a cartoon of PAPA clutching old files and BHAI staring at his phone, SG shrugging with a knowing smile",
+     "type": "art"
+    },
+    "vo": "Ab woh galti jo sabse zyada log karte hain. Regime ko aadat se chunte hain, hisaab se nahi. Kuch Papa ki tarah purane se chipke rehte hain. Kuch Bhai ki tarah reel dekhkar naya le lete hain. Dono mein hisaab gayab hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A long hurried queue of tired office workers outside an insurance office at the end of March, papers in hand, rushed chaotic mood",
+     "type": "art"
+    },
+    "vo": "Doosri galti, March ki bhaag-daud. Saal bhar kuch nahi, aur aakhri hafte mein koi bhi policy. Sirf tax bachane ke liye. Product ko uske kaam ke liye lo, tax ke liye nahi. Chhoot bonus ho sakti hai, wajah nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN at her office desk filling an online HR form on a computer, a colleague walking past with coffee, morning office light",
+     "type": "art"
+    },
+    "vo": "Ab switch kaise karte hain. Salaried ko saal ki shuruaat mein HR ko regime batana hota hai. Usi hisaab se har mahine TDS katta hai. Aap kuch nahi batate, toh company naya regime maan leti hai, kyunki wahi default hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN at home filing a return on her laptop late at night, relieved smile, cup of chai beside her, calm lamp light",
+     "type": "art"
+    },
+    "vo": "Achhi khabar yeh hai. Salaried log return file karte waqt bhi regime badal sakte hain. Return yaani ITR, saal ke end mein sarkar ko diya gaya poora hisaab. HR ko galat bata diya, toh bhi faisla return mein ho sakta hai, deadline ke andar."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SHOPKEEPER at his kirana counter looking at a tax form with a puzzled frown, shelves of goods behind him, afternoon light",
+     "type": "art"
+    },
+    "vo": "Bas yeh dhyaan rakhna. Jinki business income hai, unke liye switch itna aasaan nahi. Unke liye wapas aane ke mauke bahut kam hain. Agar aapki dukaan ya practice hai, regime badalne se pehle kisi jaankar se zaroor poochho."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA closing a drawer with the unsigned insurance form inside, BEHEN smiling at her laptop, MUMMY bringing chai, peaceful happy family moment at night",
+     "type": "art"
+    },
+    "vo": "Behen ne us raat HR ko reply kiya, naya regime. Papa ne hisaab dekhkar haan kahi. Policy ka form waapas drawer mein chala gaya. PPF ab bhi khulegi, par bachat ke liye. Yeh investment advice nahi hai. Apna hisaab khud karo."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG sitting at the dining table holding up a salary slip toward the viewer, friendly inviting smile, warm evening light",
+     "type": "art"
+    },
+    "vo": "Toh aapka sawaal. Aap abhi kaun se regime mein ho, purana ya naya? Comments mein bas purana ya naya likho. Aur agar pata hi nahi, toh apni salary slip dekho. Wahi pehla kadam hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in a hoodie excitedly showing his phone with a stock chart to SG at the dining table, SG raising an eyebrow with a teasing smile, night",
+     "type": "art"
+    },
+    "vo": "Agli baar woh sawaal jo har ghar mein hota hai. Share bechne par tax kab lagta hai, aur kab nahi? Capital gains ki poori kahani, isi dining table par. Tab tak, apna hisaab khud karna seekho."
    }
   ],
   "thumbnail": {
-   "scene": "BEHEN frozen mid-sip with a coffee cup at her lips, eyes wide in shock, staring at a glowing phone screen",
+   "scene": "PAPA clutches an unsigned insurance policy form in front of a glowing laptop, eyes wide, mouth open in shock",
    "words": [
-    "31 LAKH",
-    "GAYAB"
+    "1.5 LAKH",
+    "TRAP"
    ]
   },
-  "title": "500 ki *SIP* ka poora sach 📈"
+  "title": "10 lakh salary, *zero* tax ka sach 🧾"
  },
- "status": "rejected",
- "timings": [],
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  14.41,
+  27.02,
+  42.11,
+  54.44,
+  68.13,
+  82.62,
+  96.79,
+  110.56,
+  123.97,
+  136.98,
+  149.11,
+  162.72,
+  175.21,
+  187.86,
+  201.59,
+  218.8,
+  232.53,
+  245.98,
+  258.95,
+  272.76,
+  286.77,
+  300.06,
+  313.11,
+  325.44,
+  338.49,
+  350.34,
+  362.71,
+  377.84,
+  391.17,
+  404.46,
+  416.23,
+  429.24,
+  442.13,
+  455.66,
+  470.43,
+  482.56,
+  496.89,
+  509.78
+ ],
  "topic": {
   "hooks": [
-   "500 ki SIP se kya hoga?",
-   "Market girne par SIP band karna sahi hai?",
-   "Expense ratio kya khata hai?"
+   "Naya regime sabke liye sasta hai?",
+   "80C ab kaam ka hai ya nahi?",
+   "HRA kab kaam aata hai?"
   ],
-  "id": "sip-rupee-cost",
-  "patch_tries": 2,
-  "summary": "How a monthly SIP in a mutual fund works, rupee cost averaging, the difference between returns in a good decade and a flat one, expense ratio, why stopping in a crash hurts; honest ranges, no promises.",
+  "id": "income-tax-regimes",
+  "look": "claymation",
+  "summary": "The two income tax regimes explained with one salaried family: slabs, standard deduction, 80C/HRA under the old regime, when each wins, how to switch; numbers from the current Finance Act.",
   "target_minutes": 12,
-  "title": "500 rupaye mahine ki SIP: 20 saal mein kya bana, aur kya nahi bana"
+  "title": "Purana ya naya tax regime: 10 lakh salary par kaun sa jeb bachaata hai",
+  "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-10-25T08:39:06+00:00",
+ "updated": "2026-10-25T12:59:09+00:00",
  "writer": "claude"
 }
