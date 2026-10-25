@@ -9,7 +9,9 @@ from . import assemble, captions, cards, lint, music
 from .config import CHANNELS, STORY_MAX_S, VIDEO
 
 FPS = VIDEO["fps"]
-TOP, PANEL, BOTTOM = 0.17, 0.66, 0.17
+TOP, PANEL, BOTTOM = 0.17, 0.66, 0.17                        # long videos (16:9)
+SHADE_H, CAP_H = 560, 420                                    # Shorts (founder, 25 Oct 2026, C): the picture runs to the bottom of the screen,
+                                                             # a soft shadow at the foot, big bold captions on it, key words in yellow
 HANDLE = "@sanjeev_gulia"
 END_S = 3.0                                                  # branded end card: channel name, tagline, subscribe, the question
 LOGO_PX = 150                                                # round channel badge in the panel's bottom-right corner, every frame
@@ -69,12 +71,24 @@ def zoom_expr(seconds: float, punch: bool) -> str:
     return f"if(lt(on,{n1}),{PUNCH_ZOOM}+0.004*on,min(1+{assemble.ZOOM_PER_FRAME}*(on-{n1}),{assemble.ZOOM_MAX}))"
 
 
+def caption_html(text: str, keyword: str = "") -> str:
+    """Numbers (and the title's keyword) in yellow; everything else escaped."""
+    kw = keyword.lower().strip()
+    out = []
+    for tok in re.split(r"(\s+)", text):
+        bare = re.sub(r"[^\w₹%.,]", "", tok).lower()
+        hit = bool(re.search(r"\d|₹|%", tok)) or (kw and bare.strip(".,") == kw)
+        out.append(f"<b>{html.escape(tok)}</b>" if hit and tok.strip() else html.escape(tok))
+    return "".join(out)
+
+
 def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, cue_overlays: list, chip: Path | None = None,
-          logo_png: Path | None = None, watermark_png: Path | None = None, punch: bool = False) -> Path:
-    """Panel with push-in in the middle band, black bands top and bottom, title band, optional evidence chip, caption cues overlaid."""
+          logo_png: Path | None = None, watermark_png: Path | None = None, punch: bool = False, shade_png: Path | None = None) -> Path:
+    """Panel with push-in below the title band; long videos keep a black caption band below, Shorts (shade_png given) run the
+    picture to the bottom with a shadow under the captions. Optional evidence chip, caption cues overlaid."""
     w, h = size
-    ph = int(h * PANEL)
     py = int(h * TOP)
+    ph = h - py if shade_png is not None else int(h * PANEL)
     frames = max(1, int(round(seconds * FPS)))
     chain = (f"[0:v]scale={w * 2}:{ph * 2}:force_original_aspect_ratio=increase,crop={w * 2}:{ph * 2},"
              f"zoompan=z='{zoom_expr(seconds, punch)}':d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={w}x{ph}:fps={FPS},"
@@ -87,7 +101,14 @@ def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, 
         chain += (f";[{k0}:v]scale={wm}:{wm},format=rgba,colorchannelmixer=aa={WATERMARK_ALPHA}[wm];"
                   f"{last}[wm]overlay={(w - wm) // 2}:{py + (ph - wm) // 2}:shortest=1[x{k0}]")
         last, k0 = f"[x{k0}]", k0 + 1
-    for extra, x, y in ((chip, w - 400 - 30, py + 30), (logo_png, w - LOGO_PX - 26, py + ph - LOGO_PX - 26)):
+    if shade_png is not None:
+        inputs += ["-loop", "1", "-i", str(shade_png)]
+        chain += f";{last}[{k0}:v]overlay=0:{h - SHADE_H}:shortest=1[x{k0}]"
+        last, k0 = f"[x{k0}]", k0 + 1
+        spots = ((chip, 30, py + 30), (logo_png, w - LOGO_PX - 26, py + 26))           # logo up top, never under the captions
+    else:
+        spots = ((chip, w - 400 - 30, py + 30), (logo_png, w - LOGO_PX - 26, py + ph - LOGO_PX - 26))
+    for extra, x, y in spots:
         if extra is None:
             continue
         inputs += ["-loop", "1", "-i", str(extra)]
@@ -117,7 +138,10 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     piece.timings = starts
     durations = [d + assemble.PAD_S for _w, d in lines]
     clips, all_cues = [], []
-    bottom_y = h - band_h
+    short = piece.kind == "short"
+    bottom_y = h - CAP_H if short else h - band_h
+    shade = cards.render("storyshade", {}, out_dir / "shade.png", (w, SHADE_H)) if short else None
+    keyword = (re.search(r"\*(.+?)\*", title) or [None, ""])[1]
     badge = logo(piece.channel)
     big_badge = logo(piece.channel, 600)
     for i, (panel, dur, (wav, d), start, scene_d) in enumerate(zip(panels, durations, lines, starts, piece.script["scenes"])):
@@ -127,7 +151,10 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
         for s, e, text in cues:
             png = out_dir / "cues" / f"cap{i:02d}-{int(s * 100):05d}.png"
             if not png.exists():
-                cards.render("storycap", {"text": text}, png, (w, band_h))
+                if short:
+                    cards.render("storycap2", {"text_html": caption_html(text, keyword)}, png, (w, CAP_H))
+                else:
+                    cards.render("storycap", {"text": text}, png, (w, band_h))
             overlays.append((png, 0, bottom_y, s, e))
         chip = None
         if piece.channel == "arthvan" and scene_d.get("label") in lint.MYTH_LABELS:
@@ -135,7 +162,7 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
             if not chip.exists():
                 cards.render("label", {"label": scene_d["label"]}, chip, (400, 90))
         clips.append(scene(panel, dur, size, out_dir / f"scene{i:02d}.mp4", title_png, overlays, chip=chip, logo_png=badge, watermark_png=big_badge,
-                           punch=(i == 0 and piece.kind == "short")))
+                           punch=(i == 0 and short), shade_png=shade))
     (out_dir / "captions.ass").write_text(captions.ass(all_cues, size))
     clips.append(end_card(piece, size, out_dir))
     concat = out_dir / "scenes.txt"
