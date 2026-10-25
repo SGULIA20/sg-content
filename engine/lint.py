@@ -22,6 +22,32 @@ PHONE = re.compile(r"(\+?\d[\d\s\-]{8,}\d)")
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+\.[\w.]+")
 
 
+HOOK_WORDS_MAX = 12              # the first spoken line decides whether people stay (founder, 25 Oct 2026); Hinglish needs ke/ka/hai
+SLOW_OPENING = re.compile(r"^\W*(subah|raat|shaam|dopahar|aaj|kal|ek din|ek baar|budhvaar|somvaar|mangalvaar|guruvaar|shukravaar|shanivaar|"
+                          r"ravivaar|january|february|march|april|may|june|july|august|september|october|november|december|"
+                          r"results ka din|bhai|papa|mummy|beta|beti|behen|wife)\b", re.I)
+
+
+def check_hook(piece: Piece) -> list:
+    """Shorts open on the claim or the question: short, concrete, not a scene being set."""
+    s = piece.script or {}
+    hook = str(s.get("hook") or "").strip()
+    first = str(((s.get("scenes") or [{}])[0]).get("vo") or "").strip()
+    out = []
+    if not hook:
+        return ["hook: missing"]
+    words = len(re.findall(r"\d[\d,.]*|[^\W\d_]+", hook))           # "5,000" is one word
+    if words > HOOK_WORDS_MAX:
+        out.append(f"hook: {words} words, at most {HOOK_WORDS_MAX}")
+    if SLOW_OPENING.search(hook):
+        out.append("hook: opens by setting a scene (a time, a day or a character); open on the claim or the question")
+    if not ("?" in hook or re.search(r"\d", hook) or re.search(r"\s[A-Z]", hook)):
+        out.append("hook: needs a question, a number or a name")
+    if first and re.findall(r"\w+", first.lower())[:4] != re.findall(r"\w+", hook.lower())[:4]:
+        out.append("hook: the first spoken line must start with the hook")
+    return out
+
+
 _BANNED = None
 
 
@@ -95,6 +121,8 @@ def check_script(piece: Piece, banned: dict, prior_scripts: list) -> list:
         lo, hi = int(target * 0.8), int(target * 1.2)
     if not lo <= words <= hi:
         reasons.append(f"length: {words} words, allowed {lo}-{hi}")
+    if piece.kind == "short":
+        reasons += check_hook(piece)
     if scenes:
         share = sum(1 for sc in scenes if (sc.get("visual") or {}).get("type") == "avatar") / len(scenes)
         if share > AVATAR_MAX_SHARE:

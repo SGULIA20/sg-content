@@ -71,6 +71,10 @@ line here (who, date) in the same change. Newest first.
   Learning loop: the weekly report saves the three best and worst openings per channel (logs/hook-lessons.json, from 6 Shorts) and
   the writer reads them as examples. The opening rule (item 2) was not chosen; the data later showed the same scene-setting opener
   on both a 1,358-view and a 59-view Short, so topic, not that opener, made the difference.
+  Then (founder, 25 Oct 2026, "do 2nd also"): the opening rule is on. Scene 1 is the hook, word for word: the surprising fact or the
+  question, with a number or a name, at most 12 words (Hinglish needs ke/ka/hai; Ram Setu's 11-word opening was the best), never a
+  time, day or character first. engine/lint.py check_hook; a miss rewrites the same topic. Shorts are one file for YouTube and
+  Instagram, so both get it. The made reserve goes out as made.
 - LinkedIn (founder, 25 Oct 2026, after the 90-day export: 1,245 followers; our posts 50-120 impressions, the founder's own
   hand post of 9 Oct 3,213): post at 08:10 WAT (clock; was 04:40) so the founder can reply in the first hour, with a Telegram
   nudge; Mon/Wed/Fri as a swipeable document (opening, card, one page per point, question), other days the picture, two-week

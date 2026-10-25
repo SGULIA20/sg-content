@@ -26,7 +26,7 @@ def _words(n):
 def piece_with(vo: str, channel="sglearning", kind="short", scenes=None, label="reported"):
     p = pieces.Piece(id=f"2026-10-20-{channel}-{kind}", channel=channel, kind=kind, publish_day=date(2026, 10, 20))
     p.script = {
-        "hook": "Oil 100 dollar?",
+        "hook": (" ".join(vo.split()[:6]) + "?") if vo else "Oil 100 dollar?",     # the first spoken line starts with the hook
         "scenes": scenes or [{"vo": vo, "visual": {"type": "art", "prompt": "oil"}, "facts_used": [0], "label": label}],
         "end_question": "Aapko kya lagta hai?",
         "cards": [],
@@ -196,3 +196,23 @@ def test_captions_need_share_line_and_three_youtube_hashtags():
     assert any(r.startswith("share") for r in lint.check_captions(p, HASHTAGS))
     p.script["captions"]["instagram"]["caption"] = f"Oil 100 dollar. {DISCLAIMER} Share karo us dost ko jo abhi bhi FD mein paisa rakhta hai."
     assert not any(r.startswith("share") for r in lint.check_captions(p, HASHTAGS))
+
+
+def _hooked(hook, first=None, channel="sglearning"):
+    from datetime import date
+    from engine.pieces import Piece
+    p = Piece(id=f"2026-10-30-{channel}-short", channel=channel, kind="short", publish_day=date(2026, 10, 30))
+    p.script = {"hook": hook, "scenes": [{"vo": first if first is not None else hook}]}
+    return p
+
+
+def test_hook_rule_rejects_slow_openings_and_keeps_good_ones():
+    from engine import lint
+    assert lint.check_hook(_hooked("Dividend ka paisa sach mein free hai?")) == []
+    assert lint.check_hook(_hooked("Samundar ke beech ek pul, kya woh aaj bhi dikhta hai?", channel="arthvan")) == []
+    assert lint.check_hook(_hooked("Kya Kurukshetra ke pattharon par Chakravyuh ka 5,000 saal purana naksha hai?", channel="arthvan")) == []
+    slow = lint.check_hook(_hooked("Subah chai ke saath, Bhai ke phone par headline chamki."))
+    assert any("setting a scene" in r for r in slow)
+    assert any("needs a question" in r for r in lint.check_hook(_hooked("Ek poora mandir pahaad kaat kar bana.")))
+    assert any("first spoken line" in r for r in lint.check_hook(_hooked("Petrol 2 rupaye sasta?", first="Aaj ki khabar suniye.")))
+    assert lint.check_hook(_hooked("")) == ["hook: missing"]

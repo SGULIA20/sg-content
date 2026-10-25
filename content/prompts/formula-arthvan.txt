@@ -4,7 +4,8 @@ Every scene carries a `label`: "scripture" (what a named text says), "archaeolog
 
 SHORTS are ILLUSTRATED STORIES (black title band, one drawn panel per scene, the narration as a caption): 60-90 seconds, 10 to 13 scenes, 150-230 words of voice. STORY FIRST: the plot is the place, the find or the question itself. Characters appear only when a scene needs a person (a diver, an archaeologist, a pilgrim, a grandmother telling the tale), described without names; SG may appear once as the narrator figure if the scene needs him.
 1. `title`: 5 to 8 words, Hinglish, ONE keyword in *stars*, one emoji at the end (😱 or 🤯 at most once). Examples: "Samundar ke neeche *Dwarka*? 😱", "Ram Setu, *NASA* ki tasveer 🤯".
-2. Scenes 1-2 THE LEGEND as the scripture tells it (label scripture), as a scene people can picture.
+2. Scene 1 THE HOOK (the `hook` field and the first spoken line, word for word): the mystery as a question or the most surprising claim, naming the place or the person, at most 12 words ("Ram Setu, satellite se kya dikhta hai?"). Never open with a time or a scene-setting line (founder, 25 Oct 2026).
+   Scenes 2-3 THE LEGEND as the scripture tells it (label scripture), as a scene people can picture.
 3. Scenes 3-6 THE SEARCH: who went looking, when, what they found, with place, institution and year (label archaeology). At most TWO numbers in the whole story, both from the fact sheet, said the way a person says them ("lagbhag 3,000 saal", "36 metre neeche").
 4. Scenes 7-9 THE DOUBT: where scientists or historians disagree, both sides named (label disputed), and what remains unknown.
 5. Scenes 10-11 THE TWIST and what the viewer can see or visit today.
