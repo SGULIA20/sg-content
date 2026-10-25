@@ -21,6 +21,7 @@ APP_LOG_URL = "https://raw.githubusercontent.com/SGULIA20/arthvan-media/main/log
 APP_EPOCH = date(2026, 10, 11)                               # Waypoint day; the apps alternate from here (arthvan-media rule)
 APP_YT = {"scoremybiz": "youtube:sglearning", "waypoint": "youtube:arthvan"}
 APP_NAMES = {"scoremybiz": "ScoreMyBiz", "waypoint": "Waypoint"}
+APP_POST_WEEKDAYS = (0, 2, 4)                                # arthvan-media content/apps.json _global.post_weekdays
 OK, NO, NA = "✅ Posted", "🔴 NOT POSTED", "—"
 LATEST = ROOT / "logs" / "evening-latest.txt"
 STATE = ROOT / "logs" / "evening.json"
@@ -113,14 +114,15 @@ def tomorrow_plan(day: date) -> str:
     """What goes out tomorrow and when, in Lagos time (founder, 22 Oct 2026: a 21:00 WAT note on both bots)."""
     t = day + timedelta(days=1)
     app = APP_NAMES[app_for(t)]
-    rows = [("04:37", "LinkedIn", "your daily post"),
+    rows = [("08:10", "LinkedIn", "your daily post" + (" (document)" if t.weekday() in (0, 2, 4) else "") + ", reply in the first hour"),
             (_wat(CHANNELS["sglearning"].ig_slot_ist), "Instagram + Threads", "Learning with SG Reel and Story")]
     for key, label in (("sglearning", "Learning with SG"), ("arthvan", "SG-MYTH-WORLD")):
         ch = CHANNELS[key]
         if t.weekday() in ch.long_days:
             rows.append((_wat(ch.long_publish_ist), "YouTube", f"{label} long video"))
     rows.append((_wat(CHANNELS["sglearning"].short_publish_ist), "YouTube", "Shorts on both channels"))
-    rows.append(("15:37", "Instagram + Threads + YouTube", f"{app} set (Reel, post, Story)"))
+    if t.weekday() in APP_POST_WEEKDAYS:                         # app posts Mon/Wed/Fri (founder, 24 Oct 2026; festivals add days)
+        rows.append(("15:40", "Instagram + Threads + YouTube", f"{app} set (Reel, post, Story)"))
     rows.append((_wat(CHANNELS["arthvan"].ig_slot_ist), "Instagram + Threads", "SG-MYTH-WORLD Reel and Story"))
     rows.sort()
     return "\n".join([f"📅 Tomorrow {t.strftime('%a %d %b')} (Lagos time)"] + [f"   {hh}  {what}: {where}" for hh, where, what in rows])

@@ -95,3 +95,19 @@ def test_real_long_bank_has_ten_sourced_topics():
 def test_stock_tip_headlines_are_never_topics():
     for title in ("Stocks in news: Reliance, Eternal, Alkem Labs", "5 stocks to buy today", "Top picks for Diwali"):
         assert topics.score({"title": title, "summary": "market", "published": None}) < 0
+
+
+def test_wallet_news_beats_market_news_of_the_same_rank():
+    from engine import topics
+    wallet = {"title": "Petrol price cut by 2 rupees from today", "summary": "", "rank": 3}
+    market = {"title": "Meta profit results beat estimates by 10%", "summary": "", "rank": 3}
+    assert topics.score(wallet) > topics.score(market) > 0
+
+
+def test_famous_myth_topics_go_first_then_bank_order(tmp_path):
+    from engine import topics
+    (tmp_path / "myth-topics.yaml").write_text("- id: a\n- id: b\n  priority: 1\n- id: c\n  priority: 1\n")
+    assert topics.next_myth(tmp_path, set())["id"] == "b"
+    assert topics.next_myth(tmp_path, {"b"})["id"] == "c"
+    assert topics.next_myth(tmp_path, {"b", "c"})["id"] == "a"
+    assert topics.next_myth(tmp_path, {"a", "b", "c"})["id"] == "a"

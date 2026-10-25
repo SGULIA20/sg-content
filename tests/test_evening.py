@@ -61,10 +61,13 @@ def test_unreadable_app_log_gives_an_empty_list(monkeypatch):
 def test_tomorrow_plan_lists_times_in_lagos_time():
     plan = evening.tomorrow_plan(date(2026, 10, 23))                               # tomorrow = Saturday 24 Oct: Learning with SG long day
     assert plan.startswith("📅 Tomorrow Sat 24 Oct (Lagos time)")
-    assert "04:37  your daily post: LinkedIn" in plan and "09:30  Learning with SG Reel and Story" in plan
+    assert "08:10  your daily post, reply in the first hour: LinkedIn" in plan and "09:30  Learning with SG Reel and Story" in plan
     assert "14:30  Learning with SG long video: YouTube" in plan and "15:30  Shorts on both channels: YouTube" in plan
-    assert "15:37  Waypoint set" in plan or "15:37  ScoreMyBiz set" in plan and "17:00  SG-MYTH-WORLD Reel and Story" in plan
+    assert "17:00  SG-MYTH-WORLD Reel and Story" in plan and " set (Reel" not in plan     # Saturday: no app post
     assert "SG-MYTH-WORLD long video" not in plan
+    monday = evening.tomorrow_plan(date(2026, 10, 25))
+    assert "08:10  your daily post (document), reply in the first hour: LinkedIn" in monday
+    assert "15:40  Waypoint set" in monday or "15:40  ScoreMyBiz set" in monday
 
 
 def test_a_skipped_story_with_no_reel_yet_is_simply_not_posted(tmp_path):
