@@ -87,6 +87,8 @@ def _known_values(entries: list) -> list:
     """Every fact number as written and scaled by the words in its unit ("24400 crore INR" also means 2.44e11)."""
     out = []
     for f in entries:
+        for field in ("text", "quote"):                       # every number in the sourced sentence, not only the headline one
+            out += numbers_in(str(f.get(field) or ""))        # (25 Oct 2026: "11 percent" and "10,000 INR" sat in the text, not in `number`)
         n = f.get("number")
         if n is None:
             continue
@@ -117,6 +119,9 @@ def _index_name_before(text: str, pos: int) -> bool:
     return bool(INDEX_NAME.search(text[max(0, pos - 30):pos]))
 
 
+YEAR_DASH = re.compile(r"\b1\d{3}\s*[-–]\s*$|\b20\d{2}\s*[-–]\s*$")
+
+
 def match(script_text: str, facts: list, library: list, tolerance: float = 0.005, context: tuple = ()) -> list:
     """`context`: the topic's own words (its title); a number the topic itself names ("500 rupaye ki SIP") is the subject, not a claim."""
     known = _known_values(list(facts) + list(library)) + [v for c in context for v in numbers_in(str(c or ""))]
@@ -133,6 +138,8 @@ def match(script_text: str, facts: list, library: list, tolerance: float = 0.005
             continue                                  # counters: teen cheezein, do baatein
         if unit is None and YEAR_RANGE[0] <= value <= YEAR_RANGE[1] and float(value).is_integer():
             continue                                  # a year, not a claim
+        if unit is None and float(value).is_integer() and value < 100 and YEAR_DASH.search(script_text[max(0, pos - 8):pos]):
+            continue                                  # "1920-21": the end of a year range
         if any(abs(value - k) <= tol * max(abs(k), 1) for k in known):
             continue
         unmatched.append(value)
