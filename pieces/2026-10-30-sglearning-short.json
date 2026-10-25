@@ -3,67 +3,39 @@
  "facts": [
   {
    "label": "reported",
-   "number": 200.0,
-   "quote": "High dividend, low price: 4 stocks under ₹200 with high yield - IOCL, PTC India, Central Bank, PTL Enterprises",
+   "number": 142024.0,
+   "quote": "MCX gold has fallen 21.43% from its January record, settling at ₹1,42,024 per 10 grams as inflation concerns, higher crude prices and investor selling weigh on precious metals.",
    "source_date": "2026-10-24",
    "source_name": "Mint",
-   "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
-   "text": "A financial report highlighted four dividend-yielding Indian stocks priced below the ₹200 threshold per share.",
-   "unit": "INR"
+   "source_url": "https://www.livemint.com/market/stock-market-news/gold-price-crashes-over-rs-38-600-from-record-high-whatll-happen-amid-diwali-2026-fervour-right-time-to-buy-decoded-11792910366849.html",
+   "text": "Domestic MCX gold futures settled at ₹1,42,024 per 10 grams after experiencing a correction ahead of Diwali.",
+   "unit": "INR per 10 grams"
   },
   {
    "label": "reported",
-   "number": 19.0,
-   "quote": "Indian Oil Corporation, PTC India, Central Bank of India, and PTL Enterprises are highlighted as stocks priced below ₹200 with dividend yields of 5.5%, 19%, 2.53%, and 6.25%, respectively.",
+   "number": 21.43,
+   "quote": "MCX gold has fallen 21.43% from its January record, settling at ₹1,42,024 per 10 grams as inflation concerns, higher crude prices and investor selling weigh on precious metals.",
    "source_date": "2026-10-24",
    "source_name": "Mint",
-   "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
-   "text": "PTC India was highlighted as having a dividend yield of 19%.",
-   "unit": "pct"
-  },
-  {
-   "label": "reported",
-   "number": 6.25,
-   "quote": "Indian Oil Corporation, PTC India, Central Bank of India, and PTL Enterprises are highlighted as stocks priced below ₹200 with dividend yields of 5.5%, 19%, 2.53%, and 6.25%, respectively.",
-   "source_date": "2026-10-24",
-   "source_name": "Mint",
-   "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
-   "text": "PTL Enterprises was reported to offer a dividend yield of 6.25%.",
-   "unit": "pct"
-  },
-  {
-   "label": "reported",
-   "number": 5.5,
-   "quote": "Indian Oil Corporation, PTC India, Central Bank of India, and PTL Enterprises are highlighted as stocks priced below ₹200 with dividend yields of 5.5%, 19%, 2.53%, and 6.25%, respectively.",
-   "source_date": "2026-10-24",
-   "source_name": "Mint",
-   "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
-   "text": "Indian Oil Corporation was recorded as having a dividend yield of 5.5%.",
-   "unit": "pct"
-  },
-  {
-   "label": "reported",
-   "number": 2.53,
-   "quote": "Indian Oil Corporation, PTC India, Central Bank of India, and PTL Enterprises are highlighted as stocks priced below ₹200 with dividend yields of 5.5%, 19%, 2.53%, and 6.25%, respectively.",
-   "source_date": "2026-10-24",
-   "source_name": "Mint",
-   "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
-   "text": "Central Bank of India was featured with a dividend yield of 2.53%.",
+   "source_url": "https://www.livemint.com/market/stock-market-news/gold-price-crashes-over-rs-38-600-from-record-high-whatll-happen-amid-diwali-2026-fervour-right-time-to-buy-decoded-11792910366849.html",
+   "text": "MCX gold futures have dropped 21.43% from their record peak reached in January.",
    "unit": "pct"
   }
  ],
  "id": "2026-10-30-sglearning-short",
  "ids": {
   "budget": {
-   "day": "2026-10-24",
-   "drafts": 5,
-   "research": 4
+   "day": "2026-10-25",
+   "drafts": 2,
+   "research": 1
   },
-  "write_batch": {
-   "id": "msgbatch_01RgWqvnRm9xZF5QUNw8jqAs",
-   "key": "9cc4e4fb78950d2b",
-   "tries": 4
-  }
+  "cost": {
+   "inr": 19.5,
+   "usd": 0.108582,
+   "voice": 12
+  },
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "wzobHQ24A6U"
  },
  "kind": "short",
  "publish_day": "2026-10-30",
@@ -72,217 +44,213 @@
   "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it",
-  "draft cooking in Claude's batch lane; the next run collects it"
+  "draft cooking in Claude's batch lane; the next run collects it",
+  "try 1: length: 143 words, allowed 150-260; numbers without a source: 10"
  ],
  "script": {
   "captions": {
    "instagram": {
-    "caption": "Record bhaav par chandi li, aaj woh lagbhag 53.5 percent neeche hai. 🥈\nJo group upar 'abhi lo' bol raha tha, wahi ab neeche bhi 'abhi lo' bol raha hai.\nSasta hona wajah nahi, aapka plan wajah hai.\nAapne kabhi tip sunkar kuch khareeda, haan ya na?\nYeh investment advice nahi hai.\nUs bhai ko bhejo jo WhatsApp group dekh kar chandi khareedta hai.",
+    "caption": "Gold January se 21.43 percent gir chuka hai, pata tha? 🪔\nJanuary mein log line laga kar record bhaav par khareed rahe the.\nSona bhi upar neeche hota hai, safe ka matlab kabhi na girna nahi.\nAap is Dhanteras sona loge? Haan ya na?\nYeh investment advice nahi hai.\nUs Papa ko bhejo jo kehte hain sona kabhi nahi girta.",
     "hashtags": [
      "#PaiseKiKhabar",
      "#SeedhiBaat",
      "#MoneyTipsHindi",
      "#HinglishFinance",
-     "#InvestingIndia",
      "#PersonalFinanceIndia",
+     "#InvestingIndia",
      "#LearningWithSG"
     ]
    },
    "threads": {
-    "text": "Chandi record se lagbhag 53.5 percent neeche hai, MCX par lagbhag 1,95,000 rupaye kilo. Jo upar 'abhi lo' bolte the, ab neeche bhi wahi bol rahe hain. Aapne kabhi tip sunkar kuch khareeda, haan ya na? Yeh investment advice nahi hai. #PaiseKiKhabar #MoneyTipsHindi"
+    "text": "Gold January ke record se 21.43 percent gir chuka hai. Jo kehte the sona kabhi nahi girta, unke liye yeh twist hai. Aap is Dhanteras sona loge? Haan ya na? #PaiseKiKhabar #MoneyTipsHindi"
    },
    "youtube": {
     "chapters": [],
-    "description": "Record bhaav par chandi li, aur ab woh aadhe se zyada neeche hai. Bheed upar bhi 'abhi lo' bolti hai aur neeche bhi, isliye khareedne ki wajah aapka plan hona chahiye, bhaav nahi. Pehle poocho kitne saal rakhoge aur girne par kya karoge. Us bhai ko bhejo jo WhatsApp group dekh kar chandi khareedta hai.",
+    "description": "Gold January ke record se 21.43 percent gir chuka hai. Sona safe maana jaata hai, par safe ka matlab kabhi na girna nahi hota. Dhanteras par khareedne se pehle yeh kahani zaroor dekho. Us Papa ko bhejo jo kehte hain sona kabhi nahi girta.",
     "tags": [
-     "silver price",
-     "chandi",
-     "silver price today",
-     "MCX silver",
-     "silver crash",
-     "silver investment",
+     "gold price",
+     "gold rate today",
+     "dhanteras gold",
+     "diwali gold",
+     "mcx gold",
+     "sona",
+     "gold investment",
+     "gold crash",
      "personal finance hindi",
      "hinglish finance",
      "learning with sg"
     ],
-    "title": "Silver price 53.5% gira: sasta ya trap?"
+    "title": "Gold price gira, Dhanteras par khareedna sahi?"
    }
   },
   "cards": [],
   "carousel": false,
-  "end_question": "Aapne kabhi tip sunkar kuch khareeda, haan ya na?",
-  "hook": "January mein Bhai ke phone par ek hi baat thi, chandi.",
+  "end_question": "Aap is Dhanteras sona loge? Haan ya na?",
+  "hook": "Gold January se 21.43 percent gir chuka hai, pata tha?",
   "scenes": [
    {
-    "facts_used": [],
-    "label": "SETUP",
-    "visual": {
-     "card": null,
-     "prompt": "BHAI in his hoodie sits on a sofa at night, glowing phone in hand, screen full of shiny silver bar images, eyes excited, living room dim",
-     "type": "art"
-    },
-    "vo": "January mein Bhai ke phone par ek hi baat thi, chandi."
-   },
-   {
-    "facts_used": [],
-    "label": "SETUP",
-    "visual": {
-     "card": null,
-     "prompt": "Close view of a phone screen with many chat bubbles and arrows pointing up, silver coins scattered around the phone on a table, evening light, no readable text",
-     "type": "art"
-    },
-    "vo": "Har group mein shor, chandi record bana rahi hai, abhi lo."
-   },
-   {
-    "facts_used": [],
-    "label": "THE CHOICE",
-    "visual": {
-     "card": null,
-     "prompt": "BHAI stands on a balcony looking at neighbours holding silver bars and smiling, he feels left out and restless, late afternoon",
-     "type": "art"
-    },
-    "vo": "Bhai ne socha, sab kama rahe hain, main peeche kyun rahun?"
-   },
-   {
-    "facts_used": [],
-    "label": "THE CHOICE",
-    "visual": {
-     "card": null,
-     "prompt": "BHAI at a jewellery shop counter proudly receiving a heavy silver bar from the shopkeeper, confident grin, bright shop lights, daytime",
-     "type": "art"
-    },
-    "vo": "Record bhaav par chandi le li, jo upar hai, aur upar jayega."
-   },
-   {
     "facts_used": [
-     0
+     1
     ],
-    "label": "WHAT REALLY HAPPENED",
+    "label": null,
     "visual": {
      "card": null,
-     "prompt": "A large trading screen in a busy market hall showing a red line falling, traders watching tensely, a silver bar on a weighing scale in front, morning",
+     "prompt": "A gold jewellery showroom window at dusk with diyas lit outside, a downward arrow shape formed by hanging marigold strings, a surprised young woman looking in, warm festive light",
      "type": "art"
     },
-    "vo": "Aaj MCX par chandi lagbhag 1,95,000 rupaye kilo hai. MCX yaani commodity ka bazaar."
+    "vo": "Gold January se 21.43 percent gir chuka hai, pata tha?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A middle-class Indian living room decorated with rangoli and fairy lights, family sitting together after dinner, evening, cheerful festive mood",
+     "type": "art"
+    },
+    "vo": "Dhanteras aa raha hai, aur ghar mein ek hi baat chal rahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE at the dining table writing a small shopping list, a jeweller's catalogue open beside her, hopeful smile, evening lamp light",
+     "type": "art"
+    },
+    "vo": "Wife ki list ready hai, jhumke ya ek chhoti chain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA in a kurta on the sofa, holding an old gold coin proudly, raising one finger confidently, MUMMY nearby with a cup of chai, night",
+     "type": "art"
+    },
+    "vo": "Papa kehte hain, sona kabhi nahi girta, sona safe hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A long queue of people outside a busy jewellery shop on a cold winter morning, everyone eager and rushing, shawls and sweaters",
+     "type": "art"
+    },
+    "vo": "January mein bhi yahi soch thi, jab bhaav record par tha. Padosiyon ne line laga kar khareeda, ki aur mehenga ho jayega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A neighbour aunty showing off a new gold bangle to other women in a housing society corridor, everyone admiring it, daytime",
+     "type": "art"
+    },
+    "vo": "Logic seedha tha, sab khareed rahe hain, toh galat kaise hoga?"
    },
    {
     "facts_used": [
      1
     ],
-    "label": "WHAT REALLY HAPPENED",
+    "label": null,
     "visual": {
      "card": null,
-     "prompt": "BHAI sits on his bed holding a silver bar that looks half faded away, shoulders dropped, shocked face, phone with a falling red chart beside him, night",
+     "prompt": "BHAI in a hoodie staring at his phone showing a falling red price chart, mouth open in shock, dim room at night",
      "type": "art"
     },
-    "vo": "Record se lagbhag 53.5 percent neeche. Matlab aadhe se zyada paisa kaagaz par gayab."
+    "vo": "Phir kya hua? MCX par gold 21.43 percent neeche aa gaya. MCX yaani woh bazaar jahan gold ke future saude hote hain."
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A busy illustrated trading floor with worried traders, an oil barrel and a rising price tag in the background, many hands selling at once, tense mood",
+     "type": "art"
+    },
+    "vo": "Wajah? Mehngai ka darr, crude oil mehenga, aur bade investors ki bikwali. Bikwali yaani log ek saath bechne lage."
    },
    {
     "facts_used": [],
-    "label": "THE TWIST",
+    "label": null,
     "visual": {
      "card": null,
-     "prompt": "BHAI stares at his phone as new chat bubbles now show arrows pointing down with shopping bags, his expression confused and wary, kitchen at night",
+     "prompt": "The neighbour aunty sitting alone, looking sadly at her gold bangle in an open velvet box, soft evening light",
      "type": "art"
     },
-    "vo": "Ab wahi group keh raha hai, sasti hai, abhi lo. Awaaz wahi, disha ulti."
+    "vo": "Jisne record par khareeda, uska har gehna ab kam ka dikh raha hai."
    },
    {
     "facts_used": [],
-    "label": "THE TWIST",
+    "label": null,
     "visual": {
      "card": null,
-     "prompt": "SG in a striped shirt sits at the dinner table with BHAI, calmly drawing a simple long road on a notebook, BHAI listening thoughtfully, warm evening light",
+     "prompt": "SG in a striped shirt gently explaining to PAPA at the dining table, drawing a wavy up-and-down line on a notepad with a pen, PAPA thinking, night",
      "type": "art"
     },
-    "vo": "Sasta hona wajah nahi, wajah aapka plan hai. Kitne saal rakhoge, pehle yeh poocho. Yeh investment advice nahi hai."
+    "vo": "Twist yeh hai, safe ka matlab kabhi na girna nahi hota. Sona bhi share ki tarah upar neeche hota hai."
    },
    {
     "facts_used": [],
-    "label": "END",
+    "label": null,
     "visual": {
      "card": null,
-     "prompt": "BHAI puts his phone face down on the table and smiles a little, a silver bar resting next to a cup of chai, calm night",
+     "prompt": "WIFE placing a few small coins into a steel piggy bank one by one, calm and thoughtful, diyas glowing beside her, evening",
      "type": "art"
     },
-    "vo": "Aapne kabhi tip sunkar kuch khareeda, haan ya na?"
+    "vo": "Experts kehte hain, ek saath nahi, thoda thoda khareedo. Aur bhaav ke peeche bhaagne se pehle, apni zaroorat dekho. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The whole family PAPA, MUMMY, WIFE, BETA and BETI on the balcony lighting diyas, looking out curiously, festive night sky",
+     "type": "art"
+    },
+    "vo": "Aap is Dhanteras sona loge? Haan ya na?"
    }
   ],
   "thumbnail": {
-   "scene": "BHAI holds a half-faded silver bar close to his face, eyes wide and mouth open in shock",
+   "scene": "PAPA stares at a gold bangle in his open palm, eyes wide, mouth open in disbelief",
    "words": [
-    "1,95,000",
+    "21.43%",
     "LOST"
    ]
   },
-  "title": "Chandi ne Bhai ka *paisa* aadha kar diya 🥈"
+  "title": "Gold ka *bhaav* gira, ab kya karein? 🪔"
  },
- "status": "writing",
- "timings": [],
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  5.09,
+  9.34,
+  13.87,
+  18.08,
+  25.53,
+  29.78,
+  39.03,
+  47.08,
+  52.13,
+  58.66,
+  67.51
+ ],
  "topic": {
-  "link": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
-  "published": "2026-10-24T16:49:50+00:00",
+  "link": "https://www.livemint.com/market/stock-market-news/gold-price-crashes-over-rs-38-600-from-record-high-whatll-happen-amid-diwali-2026-fervour-right-time-to-buy-decoded-11792910366849.html",
+  "look": "claymation",
+  "published": "2026-10-25T07:48:58+00:00",
   "rank": 3,
-  "sheet": {
-   "facts": [
-    {
-     "label": "reported",
-     "number": 200.0,
-     "quote": "High dividend, low price: 4 stocks under ₹200 with high yield - IOCL, PTC India, Central Bank, PTL Enterprises",
-     "source_date": "2026-10-24",
-     "source_name": "Mint",
-     "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
-     "text": "A financial report highlighted four dividend-yielding Indian stocks priced below the ₹200 threshold per share.",
-     "unit": "INR"
-    },
-    {
-     "label": "reported",
-     "number": 19.0,
-     "quote": "Indian Oil Corporation, PTC India, Central Bank of India, and PTL Enterprises are highlighted as stocks priced below ₹200 with dividend yields of 5.5%, 19%, 2.53%, and 6.25%, respectively.",
-     "source_date": "2026-10-24",
-     "source_name": "Mint",
-     "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
-     "text": "PTC India was highlighted as having a dividend yield of 19%.",
-     "unit": "pct"
-    },
-    {
-     "label": "reported",
-     "number": 6.25,
-     "quote": "Indian Oil Corporation, PTC India, Central Bank of India, and PTL Enterprises are highlighted as stocks priced below ₹200 with dividend yields of 5.5%, 19%, 2.53%, and 6.25%, respectively.",
-     "source_date": "2026-10-24",
-     "source_name": "Mint",
-     "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
-     "text": "PTL Enterprises was reported to offer a dividend yield of 6.25%.",
-     "unit": "pct"
-    },
-    {
-     "label": "reported",
-     "number": 5.5,
-     "quote": "Indian Oil Corporation, PTC India, Central Bank of India, and PTL Enterprises are highlighted as stocks priced below ₹200 with dividend yields of 5.5%, 19%, 2.53%, and 6.25%, respectively.",
-     "source_date": "2026-10-24",
-     "source_name": "Mint",
-     "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
-     "text": "Indian Oil Corporation was recorded as having a dividend yield of 5.5%.",
-     "unit": "pct"
-    },
-    {
-     "label": "reported",
-     "number": 2.53,
-     "quote": "Indian Oil Corporation, PTC India, Central Bank of India, and PTL Enterprises are highlighted as stocks priced below ₹200 with dividend yields of 5.5%, 19%, 2.53%, and 6.25%, respectively.",
-     "source_date": "2026-10-24",
-     "source_name": "Mint",
-     "source_url": "https://www.livemint.com/market/stock-market-news/high-dividend-low-price-4-stocks-under-rs-200-with-high-yield-iocl-ptc-india-central-bank-ptl-enterprises-11792860259451.html",
-     "text": "Central Bank of India was featured with a dividend yield of 2.53%.",
-     "unit": "pct"
-    }
-   ],
-   "summary": "Mint identified four Indian companies trading below ₹200 per share that offer annual dividend yields ranging between 2.53% and 19%. For salaried Indian households, dividend-paying equities can create a secondary cash flow stream alongside monthly salary income. However, households must remember that corporate dividends are fully taxable at individual slab rates and subject to a 10% tax deduction at source, meaning net returns differ significantly from headline yields."
-  },
   "source": "Mint Markets",
-  "summary": "Indian Oil Corporation, PTC India, Central Bank of India, and PTL Enterprises are highlighted as stocks priced below  ₹200 with dividend yields of 5.5%, 19%, 2.53%, and 6.25%, respectively. Dividend yield estimates annual dividend income relative to a stock’s market price.",
+  "summary": "MCX gold has fallen 21.43% from its January record, settling at  ₹1,42,024 per 10 grams as inflation concerns, higher crude prices and investor selling weigh on precious metals. Experts say festive demand may offer support, but advise gradual buying and watching the  ₹1,40,000 support level.",
   "target_minutes": null,
-  "title": "High dividend, low price: 4 stocks under  ₹200 with high yield - IOCL, PTC India, Central Bank, PTL Enterprises"
+  "title": "Gold price crashes over  ₹38,600 from record high — What'll happen amid Diwali 2026 fervour? Right time to buy? Decoded",
+  "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-24T17:22:47+00:00",
+ "updated": "2026-10-25T08:12:24+00:00",
  "writer": "claude"
 }

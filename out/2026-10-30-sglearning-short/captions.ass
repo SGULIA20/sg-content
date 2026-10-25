@@ -1,0 +1,59 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.78,Default,,0,0,0,,Gold January se 21.43 percent gir
+Dialogue: 0,0:00:02.78,0:00:03.71,Default,,0,0,0,,chuka hai,
+Dialogue: 0,0:00:03.71,0:00:04.64,Default,,0,0,0,,pata tha?
+Dialogue: 0,0:00:05.09,0:00:06.66,Default,,0,0,0,,Dhanteras aa raha hai,
+Dialogue: 0,0:00:06.66,0:00:08.00,Default,,0,0,0,,aur ghar mein ek hi baat
+Dialogue: 0,0:00:08.00,0:00:08.89,Default,,0,0,0,,chal rahi hai.
+Dialogue: 0,0:00:09.34,0:00:11.38,Default,,0,0,0,,Wife ki list ready hai,
+Dialogue: 0,0:00:11.38,0:00:13.42,Default,,0,0,0,,jhumke ya ek chhoti chain.
+Dialogue: 0,0:00:13.87,0:00:14.91,Default,,0,0,0,,Papa kehte hain,
+Dialogue: 0,0:00:14.91,0:00:16.59,Default,,0,0,0,,sona kabhi nahi girta,
+Dialogue: 0,0:00:16.59,0:00:17.63,Default,,0,0,0,,sona safe hai.
+Dialogue: 0,0:00:18.08,0:00:19.88,Default,,0,0,0,,January mein bhi yahi soch thi,
+Dialogue: 0,0:00:19.88,0:00:21.08,Default,,0,0,0,,jab bhaav record par tha.
+Dialogue: 0,0:00:21.08,0:00:23.48,Default,,0,0,0,,Padosiyon ne line laga kar khareeda,
+Dialogue: 0,0:00:23.48,0:00:25.08,Default,,0,0,0,,ki aur mehenga ho jayega.
+Dialogue: 0,0:00:25.53,0:00:26.59,Default,,0,0,0,,Logic seedha tha,
+Dialogue: 0,0:00:26.59,0:00:27.85,Default,,0,0,0,,sab khareed rahe hain,
+Dialogue: 0,0:00:27.85,0:00:29.33,Default,,0,0,0,,toh galat kaise hoga?
+Dialogue: 0,0:00:29.78,0:00:30.63,Default,,0,0,0,,Phir kya hua?
+Dialogue: 0,0:00:30.63,0:00:32.90,Default,,0,0,0,,MCX par gold 21.43 percent neeche
+Dialogue: 0,0:00:32.90,0:00:33.47,Default,,0,0,0,,aa gaya.
+Dialogue: 0,0:00:33.47,0:00:36.02,Default,,0,0,0,,MCX yaani woh bazaar jahan gold
+Dialogue: 0,0:00:36.02,0:00:38.58,Default,,0,0,0,,ke future saude hote hain.
+Dialogue: 0,0:00:39.03,0:00:39.48,Default,,0,0,0,,Wajah?
+Dialogue: 0,0:00:39.48,0:00:40.37,Default,,0,0,0,,Mehngai ka darr,
+Dialogue: 0,0:00:40.37,0:00:41.71,Default,,0,0,0,,crude oil mehenga,
+Dialogue: 0,0:00:41.71,0:00:43.95,Default,,0,0,0,,aur bade investors ki bikwali.
+Dialogue: 0,0:00:43.95,0:00:46.18,Default,,0,0,0,,Bikwali yaani log ek saath bechne
+Dialogue: 0,0:00:46.18,0:00:46.63,Default,,0,0,0,,lage.
+Dialogue: 0,0:00:47.08,0:00:48.92,Default,,0,0,0,,Jisne record par khareeda,
+Dialogue: 0,0:00:48.92,0:00:50.76,Default,,0,0,0,,uska har gehna ab kam ka
+Dialogue: 0,0:00:50.76,0:00:51.68,Default,,0,0,0,,dikh raha hai.
+Dialogue: 0,0:00:52.13,0:00:52.70,Default,,0,0,0,,Twist yeh hai,
+Dialogue: 0,0:00:52.70,0:00:54.60,Default,,0,0,0,,safe ka matlab kabhi na girna
+Dialogue: 0,0:00:54.60,0:00:55.36,Default,,0,0,0,,nahi hota.
+Dialogue: 0,0:00:55.36,0:00:57.26,Default,,0,0,0,,Sona bhi share ki tarah upar
+Dialogue: 0,0:00:57.26,0:00:58.21,Default,,0,0,0,,neeche hota hai.
+Dialogue: 0,0:00:58.66,0:00:59.64,Default,,0,0,0,,Experts kehte hain,
+Dialogue: 0,0:00:59.64,0:01:00.42,Default,,0,0,0,,ek saath nahi,
+Dialogue: 0,0:01:00.42,0:01:01.79,Default,,0,0,0,,thoda thoda khareedo.
+Dialogue: 0,0:01:01.79,0:01:03.35,Default,,0,0,0,,Aur bhaav ke peeche bhaagne se
+Dialogue: 0,0:01:03.35,0:01:03.74,Default,,0,0,0,,pehle,
+Dialogue: 0,0:01:03.74,0:01:05.11,Default,,0,0,0,,apni zaroorat dekho.
+Dialogue: 0,0:01:05.11,0:01:07.06,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:01:07.51,0:01:09.70,Default,,0,0,0,,Aap is Dhanteras sona loge?
+Dialogue: 0,0:01:09.70,0:01:10.43,Default,,0,0,0,,Haan ya na?
