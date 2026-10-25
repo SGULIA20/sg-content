@@ -1,0 +1,51 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.91,Default,,0,0,0,,Warren Buffett ne apni biwi ke
+Dialogue: 0,0:00:01.91,0:00:02.68,Default,,0,0,0,,liye kya chuna?
+Dialogue: 0,0:00:03.13,0:00:03.67,Default,,0,0,0,,Socho,
+Dialogue: 0,0:00:03.67,0:00:05.85,Default,,0,0,0,,Papa ka retirement hua,
+Dialogue: 0,0:00:05.85,0:00:08.03,Default,,0,0,0,,aur ek saath bada paisa haath
+Dialogue: 0,0:00:08.03,0:00:08.57,Default,,0,0,0,,mein aaya.
+Dialogue: 0,0:00:09.02,0:00:10.04,Default,,0,0,0,,Bhai bolta hai,
+Dialogue: 0,0:00:10.04,0:00:11.57,Default,,0,0,0,,phone pe tip aayi hai,
+Dialogue: 0,0:00:11.57,0:00:13.10,Default,,0,0,0,,sab ek stock mein daalo.
+Dialogue: 0,0:00:13.55,0:00:14.96,Default,,0,0,0,,Papa kehte hain,
+Dialogue: 0,0:00:14.96,0:00:15.53,Default,,0,0,0,,nahi,
+Dialogue: 0,0:00:15.53,0:00:16.38,Default,,0,0,0,,sab FD mein,
+Dialogue: 0,0:00:16.38,0:00:17.23,Default,,0,0,0,,safe hai.
+Dialogue: 0,0:00:17.68,0:00:19.64,Default,,0,0,0,,Bhai ko jaldi kamai chahiye,
+Dialogue: 0,0:00:19.64,0:00:21.36,Default,,0,0,0,,Papa ko bas chain ki neend.
+Dialogue: 0,0:00:21.81,0:00:22.52,Default,,0,0,0,,Ab suno,
+Dialogue: 0,0:00:22.52,0:00:24.66,Default,,0,0,0,,Warren Buffett ne apni will mein
+Dialogue: 0,0:00:24.66,0:00:25.37,Default,,0,0,0,,kya likhwaya.
+Dialogue: 0,0:00:25.82,0:00:28.13,Default,,0,0,0,,Biwi ke paise ka 90 percent,
+Dialogue: 0,0:00:28.13,0:00:29.74,Default,,0,0,0,,ek simple index fund mein.
+Dialogue: 0,0:00:30.19,0:00:32.48,Default,,0,0,0,,Index fund yaani poore market ki
+Dialogue: 0,0:00:32.48,0:00:34.55,Default,,0,0,0,,badi companies ka ek tokra.
+Dialogue: 0,0:00:35.00,0:00:36.47,Default,,0,0,0,,Baaki 10 percent,
+Dialogue: 0,0:00:36.47,0:00:38.19,Default,,0,0,0,,short-term government bonds mein,
+Dialogue: 0,0:00:38.19,0:00:40.40,Default,,0,0,0,,jo sarkar ko chhota udhaar hai.
+Dialogue: 0,0:00:40.85,0:00:41.80,Default,,0,0,0,,Na koi tip,
+Dialogue: 0,0:00:41.80,0:00:43.07,Default,,0,0,0,,na koi jaadu,
+Dialogue: 0,0:00:43.07,0:00:44.02,Default,,0,0,0,,bas sasta,
+Dialogue: 0,0:00:44.02,0:00:45.61,Default,,0,0,0,,simple aur sabar.
+Dialogue: 0,0:00:46.06,0:00:46.76,Default,,0,0,0,,Twist yeh hai,
+Dialogue: 0,0:00:46.76,0:00:49.09,Default,,0,0,0,,sabse bada investor ghar ke liye
+Dialogue: 0,0:00:49.09,0:00:51.18,Default,,0,0,0,,sabse boring raasta chunta hai.
+Dialogue: 0,0:00:51.63,0:00:52.24,Default,,0,0,0,,Aap dekho,
+Dialogue: 0,0:00:52.24,0:00:54.08,Default,,0,0,0,,aapka paisa aisi cheez mein hai
+Dialogue: 0,0:00:54.08,0:00:55.31,Default,,0,0,0,,jo aap samajhte ho?
+Dialogue: 0,0:00:55.31,0:00:57.35,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:57.80,0:00:59.41,Default,,0,0,0,,Aapke ghar mein kaun hai,
+Dialogue: 0,0:00:59.41,0:01:00.48,Default,,0,0,0,,Papa ya Bhai?
