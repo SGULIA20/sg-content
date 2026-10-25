@@ -79,6 +79,9 @@ line here (who, date) in the same change. Newest first.
   hand post of 9 Oct 3,213): post at 08:10 WAT (clock; was 04:40) so the founder can reply in the first hour, with a Telegram
   nudge; Mon/Wed/Fri as a swipeable document (opening, card, one page per point, question), other days the picture, two-week
   test; opening line at most 140 characters (lint). Same visual style for now.
+- App Reels (25 Oct 2026, item 5): the scheduled app Reels are story mode and already open in the scene (founder). The ~270 old
+  "Hi, I'm Lumi/Mira" files are not scheduled and are not rewritten; arthvan-media engine/story_hook.py refuses to render any new
+  story that opens with a greeting. mira-shaadi-mr (6 Nov) text fixed ('एकोणतीस'); its MP4 needs a re-render on the Mac.
 - Reel link tips: up to 8 a month (founder, 24 Oct 2026: their Meta Verified plan allows 8; public pages list 2/4/6 by tier).
 - Long videos run a thumbnail click test: B (same picture, the title's words) two days after going public; the higher click rate
   stays, A when the numbers are missing or too few (engine/thumbtest.py). (founder, 23 Oct 2026)
