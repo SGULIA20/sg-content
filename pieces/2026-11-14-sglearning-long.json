@@ -1,0 +1,580 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 500.0,
+   "quote": "The SIP instalment amount could be as small as ₹500 per month and ₹ 250 per month under Chhoti SIP.",
+   "source_date": "2026-10-12",
+   "source_name": "AMFI",
+   "source_url": "https://www.amfiindia.com/research-information/amfi-monthly",
+   "text": "Mutual funds allow retail investors to start systematic investment plans with monthly contributions as low as 500 rupees per month.",
+   "unit": "INR"
+  },
+  {
+   "label": "analyst-view",
+   "number": 2.2,
+   "quote": "The Nifty 50 Total Return Index was down 8.1 per cent year-to-date as of June 30, 2026, after delivering just 2.2 per cent between June 2024 and June 2026.",
+   "source_date": "2026-09-01",
+   "source_name": "Value Research",
+   "source_url": "https://www.valueresearchonline.com/stories/56102/should-i-stop-my-sip-in-a-flat-market-heres-the-data/",
+   "text": "The Nifty 50 Total Return Index returned only 2.2 percent between June 2024 and June 2026, demonstrating prolonged sideways performance in equity markets.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-14-sglearning-long",
+ "ids": {
+  "budget": {
+   "day": "2026-10-25",
+   "drafts": 1,
+   "research": 1
+  },
+  "captions": {
+   "en": "AUieDabi2NUO35UJlCwedhp6gk1qPVRfRuv-YVYEF27ibJqct3h6jCXb",
+   "gu": "AUieDaa68TxAGuSyks2P4rBojhVeqIBRpqOtRKW9Mlw1-DU4Y8ar_jqDc3XeyPzFf_nP5WJ5Ekw",
+   "hi": "AUieDaYFXJ3OW_x58tSOuBvfp90pAyYhXysq7KVgZ5m6ZRbZl4KRetmuaTntjXjrhiTGT8U",
+   "mr": "AUieDab_g3FE2NduRRYRevCobF1rEXiFricp81AEOT6i01yJS7Po0GyoEU9OfOvKTYo",
+   "ta": "AUieDaav1SG27XlPkRcvLK__sxWikEDW3FCqavJOA5mhclrkLqooHpNa0C90SR8tETU"
+  },
+  "cost": {
+   "inr": 60.0,
+   "usd": 0.580066,
+   "voice": 39
+  },
+  "yt_id": "HIuVorxOZsE"
+ },
+ "kind": "long",
+ "publish_day": "2026-11-14",
+ "reasons": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "500 rupaye mahine ki SIP se sach mein kuch banta hai?\nJune 2024 se June 2026 tak Nifty Total Return Index ne sirf 2.2 percent diya.\nFlat market mein SIP band karna sabse mehngi galti kyun ban sakti hai, aur expense ratio chupchaap kya khata hai.\nAapne kabhi market girne par SIP band ki hai?\nYeh investment advice nahi hai.\nShare karo us dost ko jo market girte hi SIP band karne ki soch raha hai.",
+    "hashtags": [
+     "#SIP",
+     "#MutualFunds",
+     "#LearningWithSG",
+     "#PersonalFinanceIndia",
+     "#HinglishFinance",
+     "#Nifty",
+     "#SeedhiBaat"
+    ]
+   },
+   "threads": {
+    "text": "500 rupaye ki SIP, aur market June 2024 se June 2026 tak sirf 2.2 percent chala. Band karein ya chalne dein? Rupee cost averaging ka asli khel yahi samay hai. Aapne kabhi market girne par SIP band ki hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 500 ki SIP ka sach",
+     "00:00 Rupee cost averaging ka khel",
+     "00:00 Flat market: SIP band karein?",
+     "00:00 Expense ratio aur tax: chhupe kharche",
+     "00:00 Sabse badi galti aur ab kya karein"
+    ],
+    "description": "500 rupaye mahine ki SIP se sach mein kuch banta hai? June 2024 se June 2026 tak market lagbhag flat raha, aur bahut logon ne SIP band kar di. Is video mein samjhiye rupee cost averaging, expense ratio, tax aur flat market mein SIP rokne ki asli keemat. Share karo us dost ko jo market girte hi SIP band karne ki soch raha hai.",
+    "tags": [
+     "SIP",
+     "mutual fund",
+     "rupee cost averaging",
+     "expense ratio",
+     "flat market",
+     "SIP band karein",
+     "Nifty",
+     "direct plan",
+     "LTCG tax",
+     "personal finance Hindi",
+     "Learning with SG"
+    ],
+    "title": "SIP Band Karein? 500 Ki SIP Ka Sach"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Aapne kabhi market girne par SIP band ki hai? Haan ya na?",
+  "hook": "500 rupaye mahine ki SIP se sach mein kuch banta hai?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "500 ki SIP ka sach",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in his hoodie sits on a sofa at night, holding his phone close, frowning at a flat line graph on the screen, SG beside him listening with raised eyebrows, warm lamp light, no text",
+     "type": "art"
+    },
+    "vo": "500 rupaye mahine ki SIP se sach mein kuch banta hai? Yahi sawaal Bhai ne pichhle hafte mujhse poocha. Uske phone par SIP ka app khula tha. Screen par paisa wahin ka wahin tha. Aur usne kaha, bhaiya, main ise band kar raha hoon."
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Flashback panel: BHAI smiling at a bank app on his phone in a small bedroom, a calendar on the wall, hopeful morning light, no text",
+     "type": "art"
+    },
+    "vo": "Bhai ne yeh SIP June 2024 mein shuru ki thi. Har mahine 500 rupaye, bank se apne aap kat jaate the. Usne socha tha, chhota amount hai, chubhega nahi. Aur dheere dheere kuch bada ban jaayega. Sab yahi sochte hain, aur yeh soch galat nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Family dinner table at night: PAPA in a kurta spreads FD receipts beside his plate with a satisfied look, MUMMY in a saree holds a cup of chai looking worried, BHAI looks down, no text",
+     "type": "art"
+    },
+    "vo": "Dinner par Papa ne FD ki rasidein nikaal li. Bole, maine kaha tha na, FD safe hai. Share market mein paisa doobta hai. Mummy chai lekar chupchaap sun rahi thi. Unke chehre par wahi purani chinta thi, paisa gaya toh?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN in office wear at the dinner table looks up from her phone with a sceptical raised eyebrow, BHAI across the table looking embarrassed, soft yellow dining light, no text",
+     "type": "art"
+    },
+    "vo": "Behen ne phone se nazar uthayi aur seedha sawaal kiya. Bhai, tumhe pata bhi hai SIP hoti kya hai? Ya bas kisi video mein suna aur shuru kar di? Bhai chup ho gaya. Sach yeh hai, zyaadatar log bina samjhe SIP shuru karte hain."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG standing at the head of the dinner table, gently raising his hand to calm everyone, the family turning towards him with curiosity, warm evening light, no text",
+     "type": "art"
+    },
+    "vo": "Toh chaliye, usi dinner table ki baat aaj aapke saath karte hain. Aaj teen sawaal hain. Pehla, 500 rupaye ki SIP asal mein kaam kaise karti hai? Phir, market seedha na chale toh kya hota hai? Aur aakhir mein, chupchaap aapka paisa kaun khata hai?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated concept panel: many small hands from different people dropping coins into one big glass jar, a calm fund manager in a suit sorting the coins into baskets, bright daylight, no text",
+     "type": "art"
+    },
+    "vo": "Pehle seedhi baat, SIP hoti kya hai. SIP yaani Systematic Investment Plan. Matlab har mahine fixed taarikh par, fixed rakam mutual fund mein jaati hai. Mutual fund yaani bahut saare logon ka paisa ek jagah. Use professional fund manager shares ya bonds mein lagata hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A young man at a pizza counter pausing, putting his wallet back in his pocket and opening a savings app on his phone instead, playful evening scene, no text",
+     "type": "art"
+    },
+    "vo": "Aur sabse achhi baat, shuruaat badi rakam se nahi karni padti. AMFI ke mutabik SIP 500 rupaye mahine se bhi shuru ho sakti hai. Yaani mahine ka bahar ka pizza chhod do, bas. Ameer hona zaroori nahi hai, shuru karna zaroori hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A delivery pipe carrying coins from a piggy bank into a mutual fund jar that sits on a gently rocking boat on waves, symbolic illustration, daytime, no text",
+     "type": "art"
+    },
+    "vo": "Lekin yahin log pehli galti karte hain. Woh sochte hain, SIP koi scheme hai jo fixed return deti hai. Nahi. SIP sirf paisa daalne ka tareeka hai. Return us fund se aata hai jisme paisa jaata hai. Aur fund ka return market ke saath upar neeche hota hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Rupee cost averaging ka khel",
+    "visual": {
+     "card": null,
+     "prompt": "SG as narrator at a chapter turn, standing at the entrance of a busy vegetable market, smiling and pointing towards WIFE who holds a cloth shopping bag, morning light, no text",
+     "type": "art"
+    },
+    "vo": "Ab pehla sawaal, yeh 500 rupaye kaam kaise karte hain? Iske liye ek bhaari shabd hai, rupee cost averaging. Ghabraiye mat, iska matlab bahut simple hai. Chaliye ise sabzi mandi mein samajhte hain, jahan Wife har hafte jaati hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE at a vegetable stall comparing a big pile of tomatoes in one bag and a small pile in another, the vendor weighing them on a brass scale, bright morning market, no text",
+     "type": "art"
+    },
+    "vo": "Maan lijiye tamatar sasta hai, toh usi paise mein zyaada kilo aate hain. Tamatar mehnga hai, toh kam aate hain. Agar aap har hafte utne hi paise ke tamatar lo, toh kya hoga? Kabhi zyaada milenge, kabhi kam. Average daam beech ka ho jaayega."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel of small golden unit tokens dropping into a family's account box, a price tag above them swinging up and down, clean bright background, no text",
+     "type": "art"
+    },
+    "vo": "Mutual fund mein bhi yahi hota hai. Fund ka daam roz badalta hai, ise NAV kehte hain. NAV yaani fund ki ek unit ka us din ka daam. Aapke 500 rupaye se jitni units aati hain, utni aapke account mein jud jaati hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Split panel: on a sunny hill few golden tokens fall into a basket, in a valley below many golden tokens fall into the same basket, a calm automatic conveyor belt connecting them, no text",
+     "type": "art"
+    },
+    "vo": "Jab market upar hai, NAV mehngi hai, toh units kam milti hain. Jab market neeche hai, NAV sasti hai, toh units zyaada milti hain. Aapko kuch karna nahi padta. Bank se paisa kat-ta hai, aur system apne aap average kar deta hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI staring at his phone in frustration while behind him, unseen by him, a growing pile of small golden tokens collects in a box, late evening room, no text",
+     "type": "art"
+    },
+    "vo": "Ab Bhai ki galti dekhiye. Usne sirf screen par total value dekhi. Value badhi nahi, toh usne socha nuksaan ho gaya. Par usne yeh nahi dekha ki girte market mein uske 500 rupaye zyaada units khareed rahe the. Wahi units aage ka asli khazana hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Contrast panel: a crowd rushing happily into a clothing shop during a sale on one side, and a crowd running away from a stock exchange building on the other side, afternoon, no text",
+     "type": "art"
+    },
+    "vo": "Isliye kehte hain, SIP karne waale ke liye girta market dushman nahi hai. Woh sale ka season hai. Dukaan pe sale lagti hai toh hum bhaag ke jaate hain. Share market pe sale lagti hai toh hum bhaag ke nikalte hain. Ulta nahi lagta?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG sitting at a desk with a thoughtful, honest expression, one hand raised as if cautioning, a small umbrella beside a stack of coins, calm night lamp light, no text",
+     "type": "art"
+    },
+    "vo": "Lekin ek imaandaar baat bhi sun lijiye. Rupee cost averaging nuksaan ko gayab nahi karti. Agar market bahut lambe samay tak neeche hi rahe, toh averaging bhi bacha nahi sakti. Yeh bas itna karti hai ki aapko sahi waqt dhundhna nahi padta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A blindfolded man trying to catch a bouncing ball on a rollercoaster track, a TV and a phone shouting at him from the sides, comic but gentle illustration, no text",
+     "type": "art"
+    },
+    "vo": "Market ka sahi waqt koi nahi jaanta. Na TV waale, na tip dene waale dost. Ise market timing kehte hain, yaani sabse neeche khareedna aur sabse upar bechna. Bade bade log isme fail hote hain. SIP aapko is game se bahar nikaal deti hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Flat market: SIP band karein?",
+    "visual": {
+     "card": null,
+     "prompt": "SG as narrator at a chapter turn, standing beside a long flat road that stretches to the horizon, BHAI walking on it looking bored and tired, dusk light, no text",
+     "type": "art"
+    },
+    "vo": "Ab doosra sawaal, jo Bhai ko sabse zyaada pareshaan kar raha tha. Market seedha na chale, bas wahin ghoomta rahe, toh kya karein? Yeh sawaal sirf Bhai ka nahi hai. Bahut saare SIP waale aaj yahi soch rahe hain. Pehle dekhte hain ki hua kya."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN at her office desk showing BHAI a laptop with a nearly flat line chart, both leaning in, BHAI looking stunned, afternoon office light, no text",
+     "type": "art"
+    },
+    "vo": "Value Research ne Nifty ke Total Return Index ka data dekha. Total Return yaani daam ke saath dividend bhi jod kar. June 2024 se June 2026 tak, isne sirf 2.2 percent diya. Itne lambe waqt mein, bas itna. Bhai ki SIP ka poora samay isi mein beeta."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A tired bull sitting down on a flat road under a cloudy sky, BHAI standing next to it with his phone, shoulders slumped, grey afternoon, no text",
+     "type": "art"
+    },
+    "vo": "Aur 2026 mein June ke aakhir tak, index 8.1 percent neeche tha. Yaani Bhai ke shuru karne ke baad market lagbhag wahin khada raha. Upar se is saal aur gir gaya. Bhai ki screen par jo dikha, woh jhooth nahi tha. Market sach mein thaka hua tha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A row of people in a waiting room yawning and checking phones, a ceiling fan turning slowly, one man getting up to leave, dull afternoon light, no text",
+     "type": "art"
+    },
+    "vo": "Aise samay ko flat ya sideways market kehte hain. Yaani market na upar jaata hai, na bahut neeche, bas idhar udhar ghoomta hai. Yeh sabse boring samay hota hai. Aur boring samay mein hi log sabse zyaada SIP band karte hain. Dimaag kehta hai, kuch ho hi nahi raha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI explaining with open hands at the dinner table, PAPA nodding happily holding an FD receipt, SG in the background with a thoughtful look, night, no text",
+     "type": "art"
+    },
+    "vo": "Bhai ka logic bhi yahi tha. Usne kaha, jab kuch mil hi nahi raha, toh paisa kyun daalun? Isse achha FD mein daal deta hoon, Papa bhi khush. Sunne mein yeh logic bilkul sahi lagta hai. Lekin isme ek chhupi hui galti hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A farmer quietly planting many small seeds in a dry flat field under a pale sky, while another man walks away from his field, early morning, no text",
+     "type": "art"
+    },
+    "vo": "Galti yeh hai ki flat market mein bhi aapke 500 rupaye ruke nahi hain. Woh units khareed rahe hain, aur girte daam par zyaada units. Agar aur jab market aage chalta hai, yahi sasti units sabse zyaada kaam aati hain. Band karne waale ke paas yeh hoti hi nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A long golden chain growing link by link along a table, one link snapping in the middle, MUMMY looking at it with concern, soft evening light, no text",
+     "type": "art"
+    },
+    "vo": "Ab compounding samajhiye. Compounding yaani byaaj par byaaj, ya return par return. Yeh tabhi kaam karti hai jab paisa lambe samay tak bina toote pada rahe. SIP band ki, toh compounding ki chain toot gayi. Aur toota hua samay wapas nahi aata."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A young man walking out of a gym with his bag, looking disappointed, while through the window other people keep lifting weights, evening light, no text",
+     "type": "art"
+    },
+    "vo": "Socho ek ladka har mahine gym jaata hai, par body nahi banti. Kuch mahine baad woh chhod deta hai. Aur jis mahine se body banni shuru hoti, woh wahan hai hi nahi. SIP band karna bhi waisa hi hai. Mehnat ke din jhele, aur fal ke din aap gayab."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG and BHAI sitting on a park bench, SG calmly explaining with an open palm, BHAI listening closely, a cloudy but peaceful sky, no text",
+     "type": "art"
+    },
+    "vo": "Lekin yahan bhi imaandaar baat. Koi nahi keh sakta ki market kab chalega. Ho sakta hai flat samay aur lamba chale. Isiliye SIP sirf us paise se karo jiski zaroorat jaldi na pade. Tab aapko girte market mein bechna nahi padega."
+   },
+   {
+    "facts_used": [],
+    "label": "Expense ratio aur tax: chhupe kharche",
+    "visual": {
+     "card": null,
+     "prompt": "SG as narrator at a chapter turn, standing beside BEHEN who holds a magnifying glass over a jar of coins, a tiny hidden hand quietly taking a coin from the jar, no text",
+     "type": "art"
+    },
+    "vo": "Ab teesra sawaal. Aapke paise ko chupchaap kaun khata hai? Behen ne yahi poocha tha. Bhaiya, fund manager free mein kaam karta hai kya? Bilkul nahi. Uski fees ka naam hai expense ratio. Aur yeh fees har saal lagti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A cosy fund office with a manager, researchers and computers, a thin stream of coins flowing from a family jar towards the office, daytime, no text",
+     "type": "art"
+    },
+    "vo": "Expense ratio yaani fund chalane ka saalana kharcha. Fund manager ki salary, office, research, sab isme aata hai. Yeh aapke bill mein alag se nahi aata. Yeh chupchaap fund ki value se kat jaata hai. Isliye zyaadatar log ise kabhi dekhte hi nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SHOPKEEPER at a kirana counter smiling and adding small items into a bag, a long paper roll of a year's purchases curling onto the floor, WIFE looking at it surprised, no text",
+     "type": "art"
+    },
+    "vo": "Kirana dukaan socho. Shopkeeper har cheez par thoda sa margin rakhta hai. Ek saamaan par pata nahi chalta. Par saal bhar ka hisaab jodo, toh achhi khaasi rakam banti hai. Expense ratio bhi aisa hi hai, chhota dikhta hai, par har saal lagta hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A growing snowball of coins rolling down a hill, a small scoop taking a bigger bite from it as it grows, BEHEN watching with folded arms, daytime, no text",
+     "type": "art"
+    },
+    "vo": "Aur yeh aapke poore jama paise par lagta hai, sirf naye 500 rupaye par nahi. Jaise jaise corpus bada hota hai, fees bhi badi hoti jaati hai. Corpus yaani aapka kul jama paisa, return ke saath. Lambe samay mein yeh chhota farq bada ban jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Two roads to the same fund building: one straight road with BHAI walking directly, another road passing through a middleman's booth taking a coin, afternoon light, no text",
+     "type": "art"
+    },
+    "vo": "Ab kaam ki baat. Har fund ke direct aur regular plan hote hain. Regular plan mein beech mein agent ya distributor hota hai, uska commission bhi jud jaata hai. Direct plan mein yeh commission nahi hota. Isliye direct plan ka expense ratio aam taur par kam hota hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BANK UNCLE behind a counter calmly explaining a tax form to BHAI, a jar of coins on the counter with a small portion set aside, daytime bank interior, no text",
+     "type": "art"
+    },
+    "vo": "Aur ek chhupa kharcha hai, tax. Equity fund saal bhar se zyaada rakha, toh munafe ko long term capital gain kehte hain. Ispe 12.5 percent tax lagta hai. Lekin har saal 1.25 lakh rupaye tak ka aisa munafa tax se chhoot mein hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI holding his phone with a glowing shiny screen in one hand and a few real coins in the other palm, comparing them thoughtfully, night, no text",
+     "type": "art"
+    },
+    "vo": "500 rupaye ki SIP waale ko yeh tax shuruaat mein shayad hi lage. Par jaankar rakhiye. Return dekhte waqt hamesha socho, kharcha aur tax ke baad haath mein kya bachega. Wahi asli return hai. Baaki sab screen ki chamak hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Sabse badi galti aur ab kya karein",
+    "visual": {
+     "card": null,
+     "prompt": "SG as narrator at a chapter turn, back at the family dinner table, PAPA proudly holding his FD receipts while SG nods respectfully, MUMMY smiling a little, night, no text",
+     "type": "art"
+    },
+    "vo": "Ab wapas dinner table par. Bhai ne poocha, toh kya FD bekaar hai? Nahi. Papa ki FD ki apni jagah hai. Emergency ka paisa, jaldi chahiye waala paisa, wahan theek hai. Bank deposit par 5 lakh rupaye tak ka insurance cover bhi hota hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A nervous young man pressing a cancel button on his phone in front of a TV glowing red, then later rushing back to a crowded counter, two-moment panel, evening, no text",
+     "type": "art"
+    },
+    "vo": "Sabse badi galti hai, darr mein faisla. Market gira, news mein laal screen dikhi, aur SIP band. Phir market sambhla, toh log upar ke daam par wapas aate hain. Yaani sasta chhod diya, mehnga khareeda. Yahi cheez SIP ko sabse zyaada bigaadti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI lying in bed at midnight with his face lit by his phone, anxious eyes, a marathon runner poster on the wall behind him, no text",
+     "type": "art"
+    },
+    "vo": "Ek aur galti hai, sirf pichhla return dekh kar fund chunna. Jo fund pichhle saal sabse upar tha, zaroori nahi aage bhi rahe. Aur ek galti, roz app kholna. Roz khologe, toh roz darr lagega. SIP lambi race hai, roz ka score nahi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE and SG at the kitchen table with a household budget notebook, a small emergency envelope and a piggy bank side by side, calm morning light, no text",
+     "type": "art"
+    },
+    "vo": "Toh kya karein? Pehle emergency fund, phir SIP. SIP utni rakho jo bure mahine mein bhi chal sake, chahe 500 rupaye hi kyun na ho. Direct plan aur expense ratio check karo. Aur saal mein bas kuch baar hisaab dekho, roz nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI putting his phone face down on the table with a relieved smile, PAPA beside him smiling softly while folding his FD receipt, warm family light, no text",
+     "type": "art"
+    },
+    "vo": "Aur jab salary badhe, toh SIP bhi thodi badhao. Ise step-up SIP kehte hain, yaani har saal SIP ki rakam badhana. Bhai ne kaha, theek hai bhaiya, band nahi karunga. Papa ne FD ki rasid rakh kar halki si muskaan di."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG facing the viewer in a calm living room, hand on chest in an honest gesture, a gentle wave pattern drawn on the wall behind him, evening light, no text",
+     "type": "art"
+    },
+    "vo": "Ek baat saaf kar doon. Main kisi fund ka naam nahi le raha, aur kisi return ka vaada nahi kar raha. Market upar bhi jaata hai, neeche bhi. Yeh investment advice nahi hai. Apni zaroorat dekh kar, samajh kar faisla kijiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The whole family at the dinner table laughing together, BETA and BETI peeking in, SG smiling and waving goodbye to the viewer, warm night light, no text",
+     "type": "art"
+    },
+    "vo": "Agle video mein baat karenge PPF aur EPF ki, jo Papa ko itne pasand hain. Kya woh sach mein SIP se behtar hain? Par usse pehle aapse sawaal. Aapne kabhi market girne par SIP band ki hai? Haan ya na, comments mein likhiye."
+   }
+  ],
+  "thumbnail": {
+   "scene": "BHAI stares at his phone with wide worried eyes, thumb hovering over a cancel button, the screen glowing red on his face",
+   "words": [
+    "2.2%",
+    "PANIC"
+   ]
+  },
+  "title": "500 ki SIP: *flat* market mein kya karein? 📉"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  14.21,
+  28.86,
+  43.63,
+  57.2,
+  72.89,
+  89.54,
+  104.55,
+  121.08,
+  137.73,
+  152.54,
+  165.67,
+  179.08,
+  194.65,
+  208.58,
+  222.83,
+  240.84,
+  256.81,
+  275.98,
+  293.03,
+  308.8,
+  321.45,
+  339.02,
+  354.75,
+  372.08,
+  387.49,
+  402.3,
+  418.27,
+  433.32,
+  447.97,
+  463.1,
+  476.99,
+  491.32,
+  507.53,
+  524.18,
+  539.51,
+  553.88,
+  567.69,
+  581.42
+ ],
+ "topic": {
+  "hooks": [
+   "500 ki SIP se kya hoga?",
+   "Market girne par SIP band karna sahi hai?",
+   "Expense ratio kya khata hai?"
+  ],
+  "id": "sip-rupee-cost",
+  "look": "claymation",
+  "summary": "How a monthly SIP in a mutual fund works, rupee cost averaging, the difference between returns in a good decade and a flat one, expense ratio, why stopping in a crash hurts; honest ranges, no promises.",
+  "target_minutes": 12,
+  "title": "500 rupaye mahine ki SIP: 20 saal mein kya bana, aur kya nahi bana",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-10-25T14:09:07+00:00",
+ "writer": "claude"
+}
