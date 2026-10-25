@@ -48,7 +48,7 @@ def test_scheduled_youtube_before_its_time_is_not_called_missing(tmp_path):
     early = datetime(2026, 10, 22, 10, 0, tzinfo=timezone.utc)
     text = evening.build(day, early, tmp_path, [])
     status = text.split("📅 Tomorrow")[0]
-    assert "SG-LEARNING Short\n   YouTube: ⏳ scheduled" in status and "Waypoint" not in status and "ScoreMyBiz Reel\n   YouTube: 🔴 NOT POSTED" in status
+    assert "SG-LEARNING Short\n   YouTube: ⏳ scheduled" in status and "Waypoint" not in status and "ScoreMyBiz" not in status     # Thursday: no app post due (Mon/Wed/Fri)
 
 
 def test_unreadable_app_log_gives_an_empty_list(monkeypatch):
@@ -90,3 +90,12 @@ def test_a_card_run_after_midnight_in_lagos_still_reports_the_day_that_ended():
     assert evening.card_day(late).isoformat() == "2026-10-24"
     assert evening.card_day(datetime(2026, 10, 25, 3, 59, tzinfo=timezone.utc)).isoformat() == "2026-10-24"   # 04:59 WAT
     assert evening.card_day(datetime(2026, 10, 25, 4, 0, tzinfo=timezone.utc)).isoformat() == "2026-10-25"    # 05:00 WAT: a new day
+
+
+def test_no_app_rows_on_a_day_without_app_posts():
+    from engine import evening
+    assert evening._app_rows(date(2026, 10, 25), []) == []                                            # Sunday: no app post due
+    rows = evening._app_rows(date(2026, 10, 26), [])                                                   # Monday: due, not out yet
+    assert rows and all("NOT POSTED" in v for _n, cells in rows for v in cells.values())
+    fest = [{"date": "2026-10-25", "status": "published", "app": "waypoint", "ids": {"reel": "r"}}]
+    assert evening._app_rows(date(2026, 10, 25), fest)[0][0] == "Waypoint Reel"                        # a festival post still shows
