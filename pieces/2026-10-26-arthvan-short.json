@@ -84,8 +84,12 @@
  ],
  "id": "2026-10-26-arthvan-short",
  "ids": {
+  "ig_reel_id": "17914423350514643",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "out_sha": "307f1d1073906a3b9128589c4f521de8c6f053ef",
+  "threads_id": "17872415613642249",
+  "threads_poll_id": "18084881393686614",
   "yt_id": "5T94w15BxYI"
  },
  "kind": "short",
@@ -299,7 +303,7 @@
   },
   "title": "Mahabharat kab hua? *Taaron* ka sabut 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   7.09,
@@ -334,6 +338,6 @@
   "title_hi": "Mahabharat kab hua, taaron se hisaab",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-10-22T15:05:38+00:00",
+ "updated": "2026-10-26T16:09:46+00:00",
  "writer": "claude"
 }
