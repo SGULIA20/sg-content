@@ -72,7 +72,10 @@ def _used(root: Path) -> tuple:
     return links | ids, prior
 
 
-SHORT_PANEL_NOTE = " Tall portrait framing; keep the lower third calm (floor, table, sky or ground), with no face or key object there."
+SHORT_PANEL_NOTE = (" Full-bleed tall picture filling the whole canvas edge to edge: no border, no frame, no panel outline, no empty box or blank"
+                    " strip anywhere (26 Oct 2026: a comic-style panel came back framed with an empty box below). Keep the lower third calm"
+                    " (floor, table, sea, sky or ground continuing the scene), with no face or key object there.")
+LONG_PANEL_NOTE = " Portrait 4:5 panel with the subject centred and some air above."
 
 
 def recent_openers(root: Path, piece: Piece, n: int = 5) -> list:
@@ -167,8 +170,12 @@ def _visual_for(piece: Piece, i: int, scene: dict, deps: Deps, out_dir: Path, si
         prompt = v.get("prompt") or piece.script["hook"]
         refs = deps.cast_refs(prompt, channel=piece.channel) if deps.cast_refs else []
         if piece.kind == "short":                                  # founder, 25 Oct 2026 (C): the picture runs to the bottom of the screen
-            return deps.paint(art.style_prompt(piece.channel, prompt + SHORT_PANEL_NOTE), out, aspect="2:3", refs=refs)
-        return deps.paint(art.style_prompt(piece.channel, prompt), out, aspect="4:5", refs=refs)
+            got = deps.paint(art.style_prompt(piece.channel, prompt + SHORT_PANEL_NOTE), out, aspect="2:3", refs=refs)
+            if Path(got).exists() and art.blank_share(got) > art.BLANK_MAX:   # framed, with an empty box below: redraw once
+                got = deps.paint(art.style_prompt(piece.channel, prompt + SHORT_PANEL_NOTE + " Paint the scene all the way down to the bottom edge."),
+                                 out, aspect="2:3", refs=refs)
+            return got
+        return deps.paint(art.style_prompt(piece.channel, prompt + LONG_PANEL_NOTE), out, aspect="4:5", refs=refs)
     aspect = "9:16" if size[1] > size[0] else "16:9"
     return deps.paint(art.style_prompt(piece.channel, v.get("prompt") or piece.script["hook"]), out, aspect=aspect)
 
