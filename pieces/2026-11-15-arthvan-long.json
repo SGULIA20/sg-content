@@ -1,0 +1,834 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "scripture",
+   "number": 3.0,
+   "quote": "Traditional Tibetan sources mention the existence of a great library at Nalanda named Dharmaganja (Piety Mart) which comprised three large multi-storeyed buildings, the Ratnasagara, the Ratnodadhi, and the Ratnaranjaka.",
+   "source_date": "1747",
+   "source_name": "Sumpa Mkhan-po, Pag Sam Jon Zang",
+   "source_url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
+   "text": "Tibetan historical chronicles describe Nalanda's central library quarter by the name Dharmaganja, stating it comprised three prominent multi-storeyed edifices named Ratnasagara, Ratnodadhi, and Ratnaranjaka.",
+   "unit": "count"
+  },
+  {
+   "label": "scripture",
+   "number": 9.0,
+   "quote": "Ratnodadhi was nine storeys high and housed the most sacred manuscripts including the Prajnyaparamita Sutra and the Guhyasamaja.",
+   "source_date": "1747",
+   "source_name": "Sumpa Mkhan-po, Pag Sam Jon Zang",
+   "source_url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
+   "text": "Tibetan records state that the Ratnodadhi library building stood nine storeys high and preserved the university's sacred scriptures, including the Prajnaparamita Sutra.",
+   "unit": "count"
+  },
+  {
+   "label": "disputed",
+   "number": 9000000.0,
+   "quote": "Given the three multi-story libraries, including a nine-storey one evidenced by literary records, 9 million is just a number. The actual number of books remains unknown.",
+   "source_date": "2014",
+   "source_name": "Historiographical Analysis / D.N. Jha",
+   "source_url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
+   "text": "The widespread assertion that Nalanda's library contained nine million manuscripts is disputed by academic historians as an unverified modern estimation lacking contemporary inventory evidence.",
+   "unit": "count"
+  },
+  {
+   "label": "disputed",
+   "number": 3.0,
+   "quote": "Tabakat-i-Nasiri written by Minhaj-i-siraj does not mention the library being burnt down by Bakhtiyar Khilji, while the three months duration appears solely in later popular tradition.",
+   "source_date": "2014",
+   "source_name": "Historiographical Review of Tabaqat-i Nasiri",
+   "source_url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
+   "text": "The popular claim that the Nalanda library burned for three months straight is disputed by historians, who note that primary thirteenth-century chronicles record the destruction of monasteries but make no mention of a three-month burning period.",
+   "unit": "count"
+  },
+  {
+   "label": "scripture",
+   "number": 1260.0,
+   "quote": "There were a great number of books there; and, when all these books came under the observation of the Musalmans, they summoned a number of Hindus that they might give them information respecting the import of those books; but the whole of the Hindus had been killed.",
+   "source_date": "1881",
+   "source_name": "Minhaj-i-Siraj, Tabaqat-i Nasiri (tr. H.G. Raverty)",
+   "source_url": "https://en.wikipedia.org/wiki/Tabaqat-i_Nasiri",
+   "text": "Thirteenth-century Persian historian Minhaj-i-Siraj Juzjani recorded that Muhammad Bakhtiyar Khalji seized a fortified monastic compound in Bihar containing an immense collection of books whose readers had perished.",
+   "unit": "CE"
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "The text describes the capture of 'Bihar' (likely Odantapuri, adjacent to Nalanda), leading scholars to debate whether Nalanda itself or Odantapuri was the primary site targeted in that specific passage.",
+   "source_date": "2014",
+   "source_name": "D.N. Jha vs Traditional Historiography",
+   "source_url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
+   "text": "Historians disagree on whether the college fortress sacked by Bakhtiyar Khalji in Minhaj-i-Siraj's chronicle was Nalanda or the adjacent fortified mahavihara of Odantapuri.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": 1235.0,
+   "quote": "When he visited Nalanda in 1235, he found it still surviving, but a ghost of its past existence... under the tutelage of Rahula Shribhadra.",
+   "source_date": "1959",
+   "source_name": "Biography of Dharmasvamin (tr. George Roerich)",
+   "source_url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
+   "text": "Tibetan monk Dharmasvamin visited Nalanda in 1235 CE, decades after Khalji's initial expedition, and documented that abbot Rahulasribhadra was still instructing seventy students amidst the damaged complex.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 11.0,
+   "quote": "Excavations conducted by Archaeological Survey of India during 1915-37 and 1974-82 have exposed the extensive remains of six major brick temples and eleven monasteries arranged on a systematic layout.",
+   "source_date": "1937",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/museum-nalanda/",
+   "text": "Excavations conducted by the Archaeological Survey of India between 1915 and 1937 exposed eleven monasteries and six major brick temples aligned along a central axis.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": 1928.0,
+   "quote": "Archaeological evidence from ASI excavations corroborates this, revealing layers of ash and charred remains dated to the late 12th to early 13th century CE, indicating widespread burning.",
+   "source_date": "1928",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/museum-nalanda/",
+   "text": "Archaeological excavations at Nalanda uncovered thick strata of ash, charred timber beams, and heat-altered bricks across monastery levels, providing physical proof of devastating fires.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 12.0,
+   "quote": "The collection includes copper plates and stone inscriptions, coins, pottery and samples of burnt rice (12th century AD) found among the ruins here.",
+   "source_date": "1917",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/museum-nalanda/",
+   "text": "Excavations at Nalanda recovered jars containing charred rice grains dating to the twelfth century CE, which are on display at the site museum.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 9.0,
+   "quote": "This site was the first to be excavated by ASI at Nalanda and revealed multi-layered construction periods exhibiting repetitive renovation over earlier strata.",
+   "source_date": "1926",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/museum-nalanda/",
+   "text": "Stratigraphic investigations by the Archaeological Survey of India at Monastery Site Number 1 identified nine successive levels of construction and rebuilding across several centuries.",
+   "unit": "count"
+  },
+  {
+   "label": "scripture",
+   "number": 5.0,
+   "quote": "Xuanzang who studied there for five years, studied Yoga shastra under Silabhadra. He also studied Nyaya, Hetuvidya, Shabdavidya and the Sanskrit grammar of Panini.",
+   "source_date": "1884",
+   "source_name": "Xuanzang, Great Tang Records on the Western Regions",
+   "source_url": "https://en.wikipedia.org/wiki/Great_Tang_Records_on_the_Western_Regions",
+   "text": "Chinese scholar-pilgrim Xuanzang spent five years residing and studying Buddhist logic and philosophy at Nalanda during the seventh century CE.",
+   "unit": "years"
+  },
+  {
+   "label": "legend",
+   "number": 9.0,
+   "quote": "For nine years they meditated and attained siddhi. On return they scattered charmed ashes all around and those ashes ignited the fire.",
+   "source_date": "1608",
+   "source_name": "Taranatha, History of Buddhism in India",
+   "source_url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
+   "text": "A seventeenth-century Tibetan legend recorded by Taranatha claims that two humiliated mendicants performed ascetic penance for nine years and threw magically energized embers that ignited the library complex.",
+   "unit": "years"
+  }
+ ],
+ "id": "2026-11-15-arthvan-long",
+ "ids": {
+  "budget": {
+   "day": "2026-10-26",
+   "drafts": 1,
+   "research": 1
+  },
+  "captions": {
+   "en": "AUieDaY-GZMuPj6QkJ8lwaCrEj46hxcdoTjK_mHbcgIoGKH1Tia3HnFk",
+   "gu": "AUieDabyUwOM4IILpUIQN9H9EYY7ZXNmn-l8BBYdVrRZwcAYz4yTPlcPJpWJRUlANwmYgNJhrfs",
+   "hi": "AUieDaao-8QazxtmS9-iwjtZKE0b4kC-_H2PGVLsCDxoCgLs1EyC-lU8446FD49UwMlTBkA",
+   "mr": "AUieDaakUeeD17upL9gbSaY4rP5M4r_ZwzkGCMtyPNKjS4s9MvRy3Oh-UowxkXCSH9w",
+   "ta": "AUieDaaWPap0PnI5-eRJs6_fHEfQHz6OEqxeRM5uW2a6wlMcfiqiDhxOTqKYexrOQpQ"
+  },
+  "cost": {
+   "inr": 54.0,
+   "usd": 0.682472,
+   "voice": 43
+  },
+  "yt_id": "hC7Q3PLVfXM"
+ },
+ "kind": "long",
+ "publish_day": "2026-11-15",
+ "reasons": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Nalanda ke khandahar mein jale hue chawal kyun mile?\nASI ki khudai ne raakh aur jali lakdi dikhayi, aag sach mein lagi thi.\nPar 3 mahine tak jalna aur 90 lakh pothiyan? Purane granth yeh nahi kehte.\nAapne yeh kahani sabse pehle kahan suni thi?\nUs dost ko bhejo jo kehta hai Nalanda 3 mahine jali thi.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#IndianHistory",
+     "#Archaeology",
+     "#AncientIndia",
+     "#Itihaas",
+     "#Rahasya",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Nalanda ki library 3 mahine jali, 90 lakh pothiyan thi? ASI ko raakh aur 12vi sadi ke jale chawal mile, par purane granth 3 mahine ki baat nahi karte. Aapne yeh kahani kahan suni thi? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Jale hue chawal",
+     "00:00 Granthon ki Nalanda",
+     "00:00 Khudai shuru",
+     "00:00 Raakh ki parat",
+     "00:00 3 mahine aur 90 lakh ka sach",
+     "00:00 Lok katha aur aankhon dekha",
+     "00:00 Jo abhi bhi nahi pata",
+     "00:00 Aaj Nalanda mein kya dekhein",
+     "00:00 Aapka sawaal aur agli jagah"
+    ],
+    "description": "Nalanda ke khandahar mein jale hue chawal kyun mile? ASI ki khudai mein raakh, jali lakdi aur 12vi sadi ke jale chawal mile, yaani aag sach mein lagi thi. Par 3 mahine tak jalna aur 90 lakh pothiyan, yeh daave purane granthon mein nahi milte, aur itihaskar inpar bahas karte hain. Us dost ko bhejo jo kehta hai Nalanda 3 mahine jali thi.",
+    "tags": [
+     "Nalanda",
+     "Nalanda University",
+     "Nalanda library",
+     "Bihar history",
+     "ASI",
+     "Xuanzang",
+     "Archaeology",
+     "Indian history",
+     "Odantapuri",
+     "Ancient India",
+     "Dharmaganja",
+     "Sabut ke saath"
+    ],
+    "title": "Nalanda Library 3 Mahine Jali? Sabut Dekhiye"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "9 manzil",
+    "line": "Ratnodadhi library ki oonchai, Tibetan granth ke mutabik",
+    "source": "Sumpa Mkhan-po, Pag Sam Jon Zang"
+   },
+   {
+    "big_number": "11",
+    "line": "vihar, ASI ki khudai mein mile",
+    "source": "ASI, asi.nic.in"
+   },
+   {
+    "big_number": "90 lakh?",
+    "line": "pothiyon ka daava, koi purani suchi nahi milti",
+    "source": "Wikipedia, Nalanda mahavihara (D.N. Jha)"
+   },
+   {
+    "big_number": "3 mahine?",
+    "line": "jalne ka daava, purane granth mein nahi milta",
+    "source": "Historiographical review of Tabaqat-i Nasiri"
+   }
+  ],
+  "carousel": true,
+  "end_question": "Aapne Nalanda ke 3 mahine jalne ki baat kahan suni thi, school, ghar ya WhatsApp?",
+  "hook": "Nalanda ke khandahar mein jale hue chawal kyun mile?",
+  "scenes": [
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "surprised",
+     "type": "avatar"
+    },
+    "vo": "Nalanda ke khandahar mein jale hue chawal kyun mile? Sawaal chhota lagta hai, par isme poori kahani chhupi hai. Bihar ki mitti ke neeche, mitti ke jaar mile. Unke andar chawal ke daane the. Kaale, koyle jaise, aur bahut purane. Kisi rasoi mein nahi, ek vidyalaya ke khandahar mein."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, extreme close view of a cracked clay jar spilling blackened, charred rice grains onto dark ash-covered soil, red brick ruins blurred behind, dramatic low light, mood of a buried secret",
+     "type": "art"
+    },
+    "vo": "Yeh daane ASI ne nikaale. ASI yaani Archaeological Survey of India, woh sarkari sanstha jo purani jagahon ki khudai karti hai. Unke mutabik yeh chawal 12vi sadi ke hain. Aaj bhi yeh Nalanda ke site museum mein rakhe hain. Inhe pakane ke liye nahi jalaya gaya tha. Inhe aag ne jalaya tha."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, a towering ancient brick library engulfed in orange flames against a smoky night sky, embers swirling, painted like a half-remembered folk tale, edges fading into mist",
+     "type": "art"
+    },
+    "vo": "Aapne shayad suna hoga ki Nalanda ki library 3 mahine tak jalti rahi. WhatsApp par, reels mein, yeh baat har jagah ghoomti hai. Par kya kisi purane granth mein yeh likha hai? Ya yeh baad mein judi kahani hai? Is video mein hum yahi dhoondhenge, sabut ke saath."
+   },
+   {
+    "facts_used": [
+     7,
+     4,
+     11
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, an old map-like composition: a Tibetan manuscript, a pilgrim's walking staff, an archaeologist's trowel and a Persian bound book laid on a wooden table around a sketch of brick ruins, warm lamplight",
+     "type": "art"
+    },
+    "vo": "Hum chalenge Tibet ke granthon se, China ke ek yatri ke bayan tak. Phir ASI ki khudai, raakh ki parton aur Persian itihaas ki kitaab tak. Har kadam par hum saaf batayenge. Kya granth mein likha hai, kya mitti se mila hai, aur kya sirf lok-katha hai."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Pehle chalte hain us Nalanda mein, jise granthon ne yaad rakha. Nalanda ek mahavihara tha. Mahavihara yaani bada Buddhist math aur vidyalaya, jahan bhikshu rehte bhi the aur padhte bhi the. Door-door se vidyarthi yahan seekhne aate the. Yeh uss zamane ki sabse mashhoor jagahon mein gina jaata tha."
+   },
+   {
+    "facts_used": [
+     11
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, a weary Chinese pilgrim monk seen from behind with a bamboo backpack, standing at the gate of a vast red brick monastery complex at dawn, monks walking inside, sense of arrival and awe",
+     "type": "art"
+    },
+    "vo": "China se ek yatri aaya, naam tha Xuanzang, jinhe Hiuen Tsang bhi kehte hain. Woh lambi aur mushkil yatra karke Nalanda pahuncha. Yahan woh 5 saal ruka. Usne Buddhist tark aur darshan padha, aur Panini ka Sanskrit vyakaran bhi seekha. Uske likhe bayan aaj bhi padhe jaate hain."
+   },
+   {
+    "facts_used": [
+     11
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, inside a small brick monastery cell at night, a young foreign monk bent over hand-written manuscripts by an oil lamp, an older teacher seated nearby seen in soft shadow, quiet devotion",
+     "type": "art"
+    },
+    "vo": "Xuanzang ne apne guru Shilabhadra se Yoga shastra seekha. Socho, ek videshi vidyarthi, diye ki roshni mein, pothiyan padh raha hai. Pothi yaani haath se likhi kitaab. Uss zamane mein har kitaab haath se likhi jaati thi. Yahi pothiyan aage chalkar is kahani ka dil banti hain."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, a Tibetan scholar monk seen from behind writing on long loose manuscript leaves in a mountain monastery, through the window a dreamlike vision of tall library towers rising over a plain",
+     "type": "art"
+    },
+    "vo": "Tibet ke itihaas granth ek library ka naam lete hain, Dharmaganja. Iska matlab hai, dharm ka bazaar. Yeh baat Sumpa Khenpo naam ke Tibetan vidwan ki kitaab mein milti hai. Usme kai manzil wali badi imaaratein bataayi gayi hain. Naam the Ratnasagara, Ratnodadhi aur Ratnaranjaka."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": {
+      "big_number": "9 manzil",
+      "line": "Ratnodadhi library ki oonchai, Tibetan granth ke mutabik",
+      "source": "Sumpa Mkhan-po, Pag Sam Jon Zang"
+     },
+     "prompt": "Drawn tall brick library tower silhouette behind the number, warm parchment texture",
+     "type": "card"
+    },
+    "vo": "In granthon ke hisaab se Ratnodadhi 9 manzil ooncha tha. Ismein sabse pavitra pothiyan rakhi jaati thi, jaise Prajnaparamita Sutra. Par yaad rakhiye, yeh granth ka bayan hai. Khudai mein abhi tak aisi 9 manzil wali imaarat zameen se nahi nikli hai."
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, a tall multi-storey ancient library at night seen from a distance, many small windows glowing with lamplight, tiny figures of monks on balconies, stars above, serene and grand",
+     "type": "art"
+    },
+    "vo": "Ab socho, raat ka waqt hai. Ooncha bhawan, khidkiyon se diyon ki roshni aa rahi hai. Andar bhikshu chupchaap pothiyan likh rahe hain, sambhal rahe hain. Yeh tasveer humare mann mein granthon se aati hai. Ab dekhte hain, mitti is tasveer ke baare mein kya kehti hai."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Granth ek baat hai, mitti alag baat. Archaeology yaani zameen khod kar purane logon ke nishaan dhoondhne ka vigyan. Nalanda ke khandahar sadiyon tak mitti ke neeche dabe rahe. Bahar se yeh bas mitti ke oonche dher lagte the. Kisi ko andaza nahi tha ki neeche kya chhupa hai."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, early twentieth century excavation scene, workers with baskets and spades removing earth from a large mound, an archaeologist in a sun hat seen from behind pointing at emerging red brick walls, dusty golden light",
+     "type": "art"
+    },
+    "vo": "Phir ASI ne yahan baakayda khudai shuru ki. Yeh kaam 1915 se 1937 tak chala. Mazdoor aur archaeologist mil kar, parat dar parat, mitti hatate gaye. Dheere dheere neeche se laal eenton ki deewarein ubharne lagin. Jaise koi shehar neend se jaag raha ho."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, high aerial view of excavated red brick monasteries in a neat row facing large stepped brick temples, long straight pathway between them, green fields around, sense of planned scale",
+     "type": "art"
+    },
+    "vo": "Jo nikla, woh kisi chhote math jaisa nahi tha. Seedhi line mein bane kai vihar the, aur unke saamne bade eenton ke mandir. Sab kuch ek soche samjhe naqshe par bana tha. Jaise kisi ne pehle poora plan banaya ho, phir eenth rakhi ho."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, a brick monastery courtyard reconstructed in its prime, small cells around an open square, monks in robes walking with manuscripts, a well in the centre, soft afternoon light",
+     "type": "art"
+    },
+    "vo": "Vihar yaani woh imaarat jahan bhikshu rehte the. Beech mein khula aangan, aur aas paas chhote chhote kamre. Inhi kamron mein bhikshu rehte, padhte aur so jaate the. Aaj jab aap inme khade hote hain, toh lagta hai jaise abhi koi pothi lekar andar aayega."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, cross-section of an excavation trench showing a thick black band of ash, charred wooden beams and reddened bricks, an archaeologist's gloved hand brushing the layer, tense dramatic mood",
+     "type": "art"
+    },
+    "vo": "Aur phir khudai karne walon ko kuch aur dikha. Kaali mitti. Raakh ki moti parat. Jali hui lakdi ki kadiyan. Aisi eentein jo garmi se rang badal chuki thi. Yeh sab ek hi baat ki gawaahi de raha tha. Yahan kabhi badi aag lagi thi."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": {
+      "big_number": "11",
+      "line": "vihar, ASI ki khudai mein mile",
+      "source": "ASI, asi.nic.in"
+     },
+     "prompt": "Drawn plan of brick monasteries in a row behind the number, red brick texture",
+     "type": "card"
+    },
+    "vo": "ASI ke mutabik yahan 11 vihar mile, aur kai bade eenton ke mandir. Yeh sab ek beech ki line par sajaye gaye the. Yaani Nalanda ek imaarat nahi tha. Woh ek poore shehar jaisa campus tha, jahan padhai, ibaadat aur rehna, sab saath chalta tha."
+   },
+   {
+    "facts_used": [
+     10
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, an archaeologist seen from behind kneeling before a tall trench wall with many coloured soil layers stacked like pages of a book, measuring tape hanging, focused quiet mood",
+     "type": "art"
+    },
+    "vo": "ASI ne sabse pehle jis vihar ki khudai ki, wahan stratigraphy ki gayi. Stratigraphy yaani mitti ki parton ko padhna, bilkul kitaab ke panno ki tarah. Neeche wali parat purani hoti hai, upar wali nayi. Har parat ek alag daur ki kahani sunati hai."
+   },
+   {
+    "facts_used": [
+     10
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, a cutaway illustration of one brick wall showing older walls buried beneath newer walls, layer upon layer, ghostly figures of builders from different eras laying bricks on top",
+     "type": "art"
+    },
+    "vo": "Is vihar mein 9 alag alag daur ki banawat mili. Matlab, yeh vihar baar baar bana, toota, aur phir se bana. Har peedhi ne purani deewar ke upar nayi deewar uthayi. Jaise ghar ki marammat hoti hai, waise hi sadiyon tak yahan kaam chalta raha."
+   },
+   {
+    "facts_used": [
+     10
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, monks and masons repairing a damaged brick wall together, fresh bricks beside old cracked ones, morning light, mood of patience and resilience",
+     "type": "art"
+    },
+    "vo": "Yeh baat bahut zaroori hai. Nalanda ek din mein nahi bana. Aur is sabut se lagta hai, shayad ek din mein khatam bhi nahi hua. Sadiyon tak log yahan marammat karte rahe. Matlab nuksaan pehle bhi aaye honge, aur log phir se jod kar khade hue honge."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, a museum glass case holding a small dish of charred rice grains beside copper plates and old coins, a visitor seen from behind leaning close, soft museum lighting",
+     "type": "art"
+    },
+    "vo": "Ab un jale chawalon par lautte hain. Jaar mein rakhe chawal, jo aag mein kaale pad gaye. ASI ke museum mein yeh namoone aaj bhi rakhe hain, copper plate, shilalekh aur sikkon ke saath. Yeh woh sabut hai jise aap apni aankhon se dekh sakte hain."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, wide view of ruined brick walls blackened by old fire under a grey sky, wisps of imagined smoke rising, an empty courtyard, mood of silent loss",
+     "type": "art"
+    },
+    "vo": "ASI ke mutabik yeh raakh ek bade aur phaile hue jalne ki nishaani hai. Yaani aag sach mein lagi thi. Yeh baat kahani nahi, mitti ka sabut hai. Par aag kitne din chali, kisne lagayi, yeh mitti nahi batati. Yahin se bahas shuru hoti hai."
+   },
+   {
+    "facts_used": [
+     2,
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "thinking",
+     "type": "avatar"
+    },
+    "vo": "Ab aate hain sabse mashhoor daavon par, jo aap baar baar sunte hain. Ek daava, ki library mahino tak jalti rahi. Aur ek daava, ki wahan anginat kitaabein thi. Dekhte hain, in daavon ke peeche sabut kya hai, aur itihaskar kya kehte hain."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": {
+      "big_number": "90 lakh?",
+      "line": "pothiyon ka daava, koi purani suchi nahi milti",
+      "source": "Wikipedia, Nalanda mahavihara (D.N. Jha)"
+     },
+     "prompt": "Drawn stack of palm manuscripts fading into fog behind the number",
+     "type": "card"
+    },
+    "vo": "Kaha jaata hai Nalanda mein 90 lakh pothiyan thi. Par itihaskar D.N. Jha jaise vidwan kehte hain, yeh sirf ek ginti hai. Uss zamane ki koi suchi, koi register nahi milta. Asli sankhya kitni thi, yeh aaj bhi koi nahi jaanta."
+   },
+   {
+    "facts_used": [
+     2,
+     0
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, two scholars seen from behind debating at a long table, one gesturing at a sketch of tall library towers, the other holding up an empty ledger, balanced scales between them",
+     "type": "art"
+    },
+    "vo": "Wahin kuch log kehte hain, itni oonchi aur badi imaaratein thi, toh pothiyan bhi bahut rahi hongi. Yeh baat samajh mein aati hai. Par bahut hona aur ek tay ginti hona, inme fark hai. Granth imaaraton ka zikr karte hain, ginti ka sabut nahi milta."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": {
+      "big_number": "3 mahine?",
+      "line": "jalne ka daava, purane granth mein nahi milta",
+      "source": "Historiographical review of Tabaqat-i Nasiri"
+     },
+     "prompt": "Drawn hourglass with ash instead of sand behind the number",
+     "type": "card"
+    },
+    "vo": "Ab 3 mahine wali baat. Itihaskar kehte hain, us daur ka mukhya granth vihar ke tootne ka zikr karta hai. Par 3 mahine tak jalne ki baat usme nahi milti. Yeh ginti baad ki lok kahaniyon mein aati hai, purane likhe itihaas mein nahi."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, a medieval Persian historian seen from behind writing in a bound book with a reed pen by candlelight, ink pot and scrolls around, a window showing a distant fortress",
+     "type": "art"
+    },
+    "vo": "Chronicle yaani itihaas ki diary, jo raja ya sena ke daur mein likhi jaati thi. Aisi hi ek kitaab hai Tabaqat-i Nasiri. Ise Persian itihaskar Minhaj-i-Siraj ne likha. Isme Bihar ke ek kile jaise vihar par hamle ka zikr milta hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, an abandoned hall piled with manuscripts and scattered pages, dust in shafts of light, armoured figures seen only as distant silhouettes in the doorway, mood of tragic silence",
+     "type": "art"
+    },
+    "vo": "Minhaj likhte hain ki Bakhtiyar Khalji ki sena ne woh jagah jeeti. Wahan bahut saari kitaabein mili. Sena ne aise log dhoondhe jo bata sakein ki kitaabon mein kya likha hai. Par granth kehta hai, unhe padhne wale tab tak maare ja chuke the."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, an old hand-drawn map of a plain with two brick monastery complexes marked by small drawings, a question-shaped trail of ink between them, a scholar's hand hovering uncertainly",
+     "type": "art"
+    },
+    "vo": "Aur yahin itihaskar ek baat par atak jaate hain. Kitaab us jagah ko bas Bihar kehti hai. Kuch vidwan maante hain ki yeh Nalanda tha. D.N. Jha jaise itihaskar kehte hain, yeh paas ka Odantapuri vihar bhi ho sakta hai."
+   },
+   {
+    "facts_used": [
+     5,
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, a fortified brick monastery with high walls on a misty plain at dusk, smoke rising faintly in the distance from another complex, ambiguous and mysterious mood",
+     "type": "art"
+    },
+    "vo": "Odantapuri bhi ek bada mahavihara tha, Nalanda ke paas hi. Woh bhi kile jaisa mazboot tha. Isliye kitaab ka varnan us par bhi fit ho sakta hai. Matlab, Nalanda mein aag ka sabut mitti mein hai. Par kis hamle mein, kis din, yeh abhi bhi bahas ka mudda hai."
+   },
+   {
+    "facts_used": [
+     12
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab ek aur kahani suniye, jo Tibet se aati hai. Yeh itihaas nahi, legend hai, yaani lok katha jiska koi pakad mein aane wala sabut nahi. Par yeh dikhati hai ki log is aag ko sadiyon tak kaise yaad rakhte rahe, kaise sunate rahe."
+   },
+   {
+    "facts_used": [
+     12
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel in folk-tale style, cloaked ascetic figures seen from behind on a hill at night scattering glowing ash into the wind toward a distant library, sparks drifting like fireflies, eerie dreamlike mood",
+     "type": "art"
+    },
+    "vo": "Tibetan lekhak Taranatha ne likha ki kuch apmaanit sadhuon ne 9 saal tak tapasya ki. Tapasya poori hone par woh laute. Unhone mantra se bhari raakh har taraf bikher di. Aur kahani kehti hai, usi raakh se library mein aag lag gayi. Kahani mein jaadu hai, par dard asli lagta hai."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, a Tibetan monk traveller seen from behind with a staff, standing at the edge of half-ruined brick monasteries overgrown with grass, a few robed figures still moving among them, melancholy light",
+     "type": "art"
+    },
+    "vo": "Ab ek aankhon dekha bayan. Tibet ke bhikshu Dharmasvamin 1235 mein Nalanda pahunche. Yeh hamle ke kai saal baad ki baat hai. Unhone dekha ki Nalanda toota hua tha, par poori tarah khatam nahi hua tha. Unki jeevani mein yeh bayan aaj bhi milta hai."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, an elderly teacher monk seen from a distance seated on a broken brick platform, a small group of students in front of him, collapsed walls around, a single shaft of sunlight, mood of quiet persistence",
+     "type": "art"
+    },
+    "vo": "Wahan abbot Rahula Shribhadra ab bhi padha rahe the. Abbot yaani math ke pramukh. Khandaharon ke beech, kuch vidyarthi unke saamne baithe the. Granth kehta hai, Nalanda tab apne purane roop ka bas ek saaya reh gaya tha. Phir bhi padhai chal rahi thi."
+   },
+   {
+    "facts_used": [
+     6,
+     10
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, a time-lapse style composition of the same brick courtyard shown in fading stages from busy to empty, figures becoming fewer and fainter, grass slowly covering the bricks",
+     "type": "art"
+    },
+    "vo": "Yeh bayan kahani ko badal deta hai. Agar 1235 mein bhi yahan padhai chal rahi thi, toh Nalanda ek jhatke mein khatam nahi hua. Shayad dheere dheere, nuksaan par nuksaan se, yeh khaali hota gaya. Kuch itihaskar isi taraf ishara karte hain."
+   },
+   {
+    "facts_used": [
+     8,
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "thinking",
+     "type": "avatar"
+    },
+    "vo": "Toh ab tak kya sach mein pata hai? Nalanda tha, bahut bada tha, aur usme aag lagi thi. Yeh mitti aur granth, dono batate hain. Par kuch sawaal aaj bhi khule hain. Aur shayad yahi Nalanda ka sabse bada rahasya hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, an unexcavated grassy mound beside the exposed brick ruins, a faint ghostly outline of a tall library tower drawn in the sky above it, an archaeologist seen from behind looking up",
+     "type": "art"
+    },
+    "vo": "Sabse bada sawaal, Dharmaganja kahan tha? Granthon mein naam hai, oonchi imaaraton ka zikr hai. Par khudai wale ilaake mein abhi tak yeh tay nahi hua ki library ki imaaratein theek kis jagah khadi thi. Shayad woh abhi bhi mitti ke neeche hai."
+   },
+   {
+    "facts_used": [
+     11
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, empty carved wooden shelves in a dim ruined hall, a single blank manuscript leaf drifting in the air, a pilgrim's distant silhouette walking away on a road carrying a bundle",
+     "type": "art"
+    },
+    "vo": "Aur ek sawaal, kaunsi pothiyan kho gayi? Unki koi poori suchi nahi bachi. Hum nahi jaante ki un shelfon par kya kya likha tha. Jo gyaan Xuanzang jaise yatri seekh kar le gaye, woh bacha. Jo yahin reh gaya, uske naam bhi hum nahi jaante."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Nalanda Mahavihara ruins Bihar red brick monastery temple",
+     "type": "photo"
+    },
+    "vo": "Aaj aap Nalanda, Bihar jaa sakte hain. UNESCO ne ise World Heritage Site maana hai, yaani poori duniya ki saajhi virasat. Laal eenton ke vihar, oonche mandir aur lambe raste aaj bhi khade hain. Subah ki dhoop mein yeh jagah alag hi dikhti hai."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, a young visitor seen from behind standing inside a small roofless brick cell, imagining a translucent monk reading by lamplight in the same spot, past and present overlapping",
+     "type": "art"
+    },
+    "vo": "Site museum mein woh jale chawal zaroor dekhiye, jo is kahani ki shuruaat the. Copper plate, sikke aur mitti ke bartan bhi wahin hain. Phir kisi vihar ke kamre mein khade hokar socho. Yahin kabhi koi bhikshu diye ki roshni mein pothi padhta tha."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel, close view of a visitor's hand touching a soot-darkened brick in an ancient wall, a tour guide seen from behind gesturing animatedly nearby, warm afternoon light",
+     "type": "art"
+    },
+    "vo": "Aur jab aap kisi deewar par kaala nishaan dekhein, toh ek pal ruk jaiye. Ho sakta hai woh usi aag ki yaad ho. Guide ki kahani bhi suniye, mazaa aayega. Par saath mein ek sawaal zaroor poochiye. Iska sabut kya hai?"
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "pointing_right",
+     "type": "avatar"
+    },
+    "vo": "Agli baar hum chalenge Odantapuri ki talash mein. Woh mahavihara jiska naam is kahani mein baar baar aaya, par jiska thikana aaj bhi bahas mein hai. Kya woh sach mein Nalanda ke paas tha? Wahan kya mila hai? Sabut ke saath dekhenge."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "end_smile",
+     "type": "avatar"
+    },
+    "vo": "Ab aapse ek aasaan sawaal. Aapne Nalanda ke 3 mahine jalne ki baat kahan suni thi, school, ghar ya WhatsApp? Comment mein bataiye. Aur agar aap Nalanda gaye hain, toh bataiye wahan aapko sabse zyada kya yaad raha."
+   }
+  ],
+  "thumbnail": {
+   "scene": "THE ARCHAEOLOGIST holds a cracked clay jar of blackened rice grains up to her face, eyes wide, mouth open, ash smeared on her cheek",
+   "words": [
+    "90 LAKH?",
+    "GAYAB"
+   ]
+  },
+  "title": "Nalanda ki library, sach mein *3 mahine* jali? 🤯"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  17.45,
+  35.34,
+  51.03,
+  68.84,
+  86.77,
+  104.46,
+  122.31,
+  141.16,
+  156.93,
+  173.58,
+  191.07,
+  210.68,
+  227.37,
+  243.1,
+  258.79,
+  276.64,
+  292.77,
+  306.98,
+  322.43,
+  337.04,
+  352.57,
+  368.7,
+  383.63,
+  398.68,
+  413.33,
+  428.54,
+  441.75,
+  455.88,
+  471.61,
+  487.58,
+  507.51,
+  522.8,
+  538.73,
+  555.22,
+  570.91,
+  585.2,
+  600.73,
+  617.42,
+  632.87,
+  646.48,
+  661.85
+ ],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "en.wikipedia.org",
+   "Xuanzang (Hiuen Tsang) records",
+   "UNESCO whc.unesco.org"
+  ],
+  "hooks": [
+   "9 manzil ki library, 90 lakh kitaabein?",
+   "Nalanda ko kisne jalaya, kitne din jali?",
+   "Khudai mein kya bacha?"
+  ],
+  "id": "nalanda-library",
+  "look": "indian-comic",
+  "notes": "The '3 months' and '9 million books' are from later sources; label disputed; no communal angle on the destruction.",
+  "place": "Nalanda, Bihar",
+  "priority": 1,
+  "target_minutes": 14,
+  "title_hi": "Nalanda ki library 3 mahine tak jali",
+  "voice": "voice_g8azc8xcwhlu"
+ },
+ "updated": "2026-10-26T07:49:14+00:00",
+ "writer": "claude"
+}
