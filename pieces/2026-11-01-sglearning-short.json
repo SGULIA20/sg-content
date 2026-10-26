@@ -1,0 +1,311 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 2000.0,
+   "quote": "The service provides access to up to 2,000 US-listed companies and around 1,000 ETFs, with fractional investments starting at $1.",
+   "source_date": "2026-10-21",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/zerodha-launches-us-stock-investing-how-to-invest-in-tesla-amazon-spacex-meta-micron-nvidia-and-amd-explained-11792594591349.html",
+   "text": "Zerodha's beta rollout on Kite allows eligible Indian residents to invest in up to 2,000 US-listed companies.",
+   "unit": "companies"
+  },
+  {
+   "label": "reported",
+   "number": 1000.0,
+   "quote": "The service provides access to up to 2,000 US-listed companies and around 1,000 ETFs, with fractional investments starting at $1.",
+   "source_date": "2026-10-21",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/zerodha-launches-us-stock-investing-how-to-invest-in-tesla-amazon-spacex-meta-micron-nvidia-and-amd-explained-11792594591349.html",
+   "text": "The international investing feature on Kite provides access to approximately 1,000 exchange-traded funds.",
+   "unit": "ETFs"
+  },
+  {
+   "label": "reported",
+   "number": 1.0,
+   "quote": "Zerodha has launched beta access to US stocks and ETFs through its Kite platform, letting eligible Indian residents invest in up to 2,000 companies and around 1,000 funds, with fractional investing from $1.",
+   "source_date": "2026-10-21",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/zerodha-launches-us-stock-investing-how-to-invest-in-tesla-amazon-spacex-meta-micron-nvidia-and-amd-explained-11792594591349.html",
+   "text": "Indian retail investors can start purchasing fractional shares in the US market with an outlay as small as $1.",
+   "unit": "USD"
+  },
+  {
+   "label": "reported",
+   "number": 0.1,
+   "quote": "Zerodha has set brokerage at 0.1% of the transaction value, subject to a minimum charge of $0.01 and a maximum of $10 per order.",
+   "source_date": "2026-10-19",
+   "source_name": "Business Today",
+   "source_url": "https://www.businesstoday.in/markets/company-news/story/zerodha-launches-us-stock-investing-in-beta-mode-all-you-need-to-know-450519-2026-10-19",
+   "text": "Zerodha sets brokerage charges at 0.1% of the transaction value for US equity buy and sell trades.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 10.0,
+   "quote": "Zerodha has set brokerage at 0.1% of the transaction value, subject to a minimum charge of $0.01 and a maximum of $10 per order.",
+   "source_date": "2026-10-19",
+   "source_name": "Business Today",
+   "source_url": "https://www.businesstoday.in/markets/company-news/story/zerodha-launches-us-stock-investing-in-beta-mode-all-you-need-to-know-450519-2026-10-19",
+   "text": "Zerodha caps its brokerage fee on US stock orders at a maximum of $10 per order.",
+   "unit": "USD"
+  },
+  {
+   "label": "official",
+   "number": 250.0,
+   "quote": "Around 1,000 Exchange Traded Funds (ETFs) with Assets Under Management (AUM) exceeding $250 million.",
+   "source_date": "2026-10-19",
+   "source_name": "Zerodha",
+   "source_url": "https://support.zerodha.com/category/trading-and-markets/general-kite/global-investing/articles/global-investing-guide",
+   "text": "To be eligible on Zerodha's platform, US exchange-traded funds must have assets under management exceeding $250 million.",
+   "unit": "million USD"
+  },
+  {
+   "label": "official",
+   "number": 20.0,
+   "quote": "For remittances made to invest in US stocks, the applicable TCS rate is 20%.",
+   "source_date": "2026-10-19",
+   "source_name": "Zerodha",
+   "source_url": "https://support.zerodha.com/category/trading-and-markets/general-kite/global-investing/articles/global-investing-guide",
+   "text": "Remittances made by resident Indians to invest in US stocks attract a Tax Collected at Source rate of 20%.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-01-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-10-26",
+   "drafts": 1
+  },
+  "cost": {
+   "inr": 60.0,
+   "usd": 0.076292,
+   "voice": 15
+  },
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "rQLfR0nQJzs"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-01",
+ "reasons": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Nvidia kharidne chale, aur 20 percent pehle hi kat gaya? 💸\nZerodha Kite par US shares ab 1 dollar se. Par paisa videsh bhejne par ek limit ke upar TCS katta hai.\nAchhi baat: yeh ITR mein adjust hota hai. Asli cost hai paisa atka rehna aur brokerage.\nAapne US stock kharidne se pehle yeh hisaab lagaya tha?\nYeh investment advice nahi hai.\nUs bhai ko bhejo jo kal Nvidia kharidne wala hai.",
+    "hashtags": [
+     "#LearningWithSG",
+     "#StockMarketIndia",
+     "#InvestingIndia",
+     "#IncomeTax",
+     "#PersonalFinanceIndia",
+     "#HinglishFinance",
+     "#SeedhiBaat"
+    ]
+   },
+   "threads": {
+    "text": "Nvidia kharidne chale, aur 20 percent pehle hi kat gaya? US stocks ke liye paisa bhejne par ek limit ke upar TCS lagta hai. Paisa gayab nahi hota, ITR mein adjust hota hai. Aapko yeh pata tha? Yeh investment advice nahi hai. #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Nvidia kharidne chale, aur 20 percent pehle hi kat gaya? Zerodha Kite par US shares 1 dollar se mil rahe hain, par paisa bahar bhejne par ek limit ke upar TCS lagta hai. Yeh paisa gayab nahi hota, ITR mein adjust hota hai, bas kuch mahine atka rehta hai. Us bhai ko bhejo jo kal Nvidia kharidne wala hai.",
+    "tags": [
+     "US stocks",
+     "Zerodha",
+     "Kite",
+     "TCS",
+     "US stock investing India",
+     "fractional shares",
+     "Nvidia",
+     "LRS",
+     "income tax return",
+     "Hinglish finance"
+    ],
+    "title": "US Stocks Zerodha: bhejte hi tax kyun katega?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us bhai ko bhejo jo kal Nvidia kharidne wala hai.",
+  "hook": "Nvidia kharidne chale, aur 20 percent pehle hi kat gaya?",
+  "scenes": [
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "Close-up of a big glass jar overflowing with shiny coins on a wooden table, a clear pipe at its side draining a fifth of the coins into a separate locked steel box, dramatic warm evening light, no text",
+     "type": "art"
+    },
+    "vo": "Nvidia kharidne chale, aur 20 percent pehle hi kat gaya?"
+   },
+   {
+    "facts_used": [],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "A cosy Indian living room at night, a glowing laptop on a centre table showing a stylised skyline of tall American towers rising out of the screen, chai cup beside it, no text",
+     "type": "art"
+    },
+    "vo": "Zerodha ke Kite par ab American shares, India se hi milte hain."
+   },
+   {
+    "facts_used": [],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in his hoodie on the sofa, excited grin, imagining a shopping basket filled with tiny electric cars, delivery boxes and computer chips floating above his head, night, no text",
+     "type": "art"
+    },
+    "vo": "Bhai ne socha, Tesla, Amazon, Nvidia, sab ek hi app mein."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "A big round cake shaped like a company building being cut into thin slices, a single small slice placed on a plate next to one coin, bright kitchen counter, playful mood, no text",
+     "type": "art"
+    },
+    "vo": "Fractional share yaani poora share nahi, uska ek chhota tukda. Shuruaat sirf 1 dollar se."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI at a desk confidently stacking small piles of rupee notes into an envelope with a paper aeroplane drawn on it, determined smile, afternoon light through window, no text",
+     "type": "art"
+    },
+    "vo": "Logic seedha tha, chhota amount, chhota risk. Toh bonus ka paisa bhejne ka plan bana."
+   },
+   {
+    "facts_used": [],
+    "label": "turn",
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN in office wear standing in the doorway, arms crossed, one eyebrow raised, looking at BHAI holding the envelope, evening, sceptical mood, no text",
+     "type": "art"
+    },
+    "vo": "Tabhi behen ne poocha, TCS ka hisaab lagaya kya?"
+   },
+   {
+    "facts_used": [],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "BANK UNCLE behind a counter gently pulling a portion of notes out of an envelope that is about to fly abroad as a paper aeroplane, calm expression, bank interior, daytime, no text",
+     "type": "art"
+    },
+    "vo": "TCS yaani Tax Collected at Source, paisa bhejte waqt hi tax pakad liya jaata hai."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "A tall stack of rupee notes on a bank counter with a clean chunk sliced off the top and placed in a locked steel tray, harsh white bank light, no text",
+     "type": "art"
+    },
+    "vo": "Ek saal mein ek limit se zyada bheja, toh 20 percent pehle hi rukega."
+   },
+   {
+    "facts_used": [],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI sitting on the edge of his bed, hands on his head, shocked and worried, empty envelope beside him, dim night lamp, no text",
+     "type": "art"
+    },
+    "vo": "Bhai ghabra gaya, laga itna paisa hamesha ke liye gaya."
+   },
+   {
+    "facts_used": [],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt sitting next to BHAI, calmly smiling and placing a reassuring hand on his shoulder, warm lamp light, night, no text",
+     "type": "art"
+    },
+    "vo": "Twist yeh hai, yeh paisa gayab nahi hota."
+   },
+   {
+    "facts_used": [],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "The same locked steel tray of notes opening and the notes flying back home into BHAI's hands like birds returning to a nest, bright morning light, relief on his face, no text",
+     "type": "art"
+    },
+    "vo": "ITR yaani income tax return, wahan yeh aapke tax mein adjust hota hai, ya refund aata hai."
+   },
+   {
+    "facts_used": [],
+    "label": "what to do",
+    "visual": {
+     "card": null,
+     "prompt": "A wall calendar with many pages flipping past while a small bundle of notes waits tied with a rope beside it, and a tiny toll gate in front of a shopping cart, thoughtful quiet mood, afternoon, no text",
+     "type": "art"
+    },
+    "vo": "Asli cost hai, mahino paisa atka rehna, aur har order par brokerage. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI and BEHEN on the sofa laughing together, BHAI now holding a notebook with careful calculations, cosy living room, evening, no text",
+     "type": "art"
+    },
+    "vo": "Us bhai ko bhejo jo kal Nvidia kharidne wala hai."
+   }
+  ],
+  "thumbnail": {
+   "scene": "BHAI stares at a stack of rupee notes with a chunk sliced off the top, eyes wide, mouth open",
+   "words": [
+    "20%",
+    "GAYAB?"
+   ]
+  },
+  "title": "US stock ka *chhupa* hua kharcha 💸"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  3.53,
+  8.3,
+  13.35,
+  19.88,
+  26.49,
+  30.5,
+  37.07,
+  42.16,
+  46.49,
+  49.86,
+  55.91,
+  62.72
+ ],
+ "topic": {
+  "id": "2026-10-22-sglearning-short#remake",
+  "link": "https://www.livemint.com/market/stock-market-news/zerodha-launches-us-stock-investing-how-to-invest-in-tesla-amazon-spacex-meta-micron-nvidia-and-amd-explained-11792594591349.html",
+  "look": "claymation",
+  "published": "2026-10-21T15:40:38+00:00",
+  "rank": 3,
+  "remake_note": "A FRESH VERSION of one of our Reels that people watched: the same topic and facts, told as a new story. New opening line, new first picture, new cast moments, go one step deeper (a Part 2 if it fits). Never reuse its lines or its title.",
+  "remake_of": "2026-10-22-sglearning-short",
+  "remake_views": 1451,
+  "source": "Mint Markets",
+  "summary": "Zerodha has launched beta access to US stocks and ETFs through its Kite platform, letting eligible Indian residents invest in up to 2,000 companies and around 1,000 funds, with fractional investing from $1. The service supports delivery orders only and charges brokerage.&amp;nbsp;",
+  "target_minutes": null,
+  "title": "Zerodha launches US stock investing: How to invest in Tesla, Amazon, SpaceX, Meta, Micron, Nvidia and AMD — explained",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-10-26T08:18:02+00:00",
+ "writer": "claude"
+}

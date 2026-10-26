@@ -1,0 +1,55 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.27,Default,,0,0,0,,Nvidia kharidne chale,
+Dialogue: 0,0:00:01.27,0:00:02.90,Default,,0,0,0,,aur 20 percent pehle hi kat
+Dialogue: 0,0:00:02.90,0:00:03.08,Default,,0,0,0,,gaya?
+Dialogue: 0,0:00:03.53,0:00:06.00,Default,,0,0,0,,Zerodha ke Kite par ab American
+Dialogue: 0,0:00:06.00,0:00:06.41,Default,,0,0,0,,shares,
+Dialogue: 0,0:00:06.41,0:00:07.85,Default,,0,0,0,,India se hi milte hain.
+Dialogue: 0,0:00:08.30,0:00:09.45,Default,,0,0,0,,Bhai ne socha,
+Dialogue: 0,0:00:09.45,0:00:10.03,Default,,0,0,0,,Tesla,
+Dialogue: 0,0:00:10.03,0:00:10.89,Default,,0,0,0,,Amazon,
+Dialogue: 0,0:00:10.89,0:00:11.46,Default,,0,0,0,,Nvidia,
+Dialogue: 0,0:00:11.46,0:00:12.90,Default,,0,0,0,,sab ek hi app mein.
+Dialogue: 0,0:00:13.35,0:00:16.28,Default,,0,0,0,,Fractional share yaani poora share nahi,
+Dialogue: 0,0:00:16.28,0:00:17.85,Default,,0,0,0,,uska ek chhota tukda.
+Dialogue: 0,0:00:17.85,0:00:19.43,Default,,0,0,0,,Shuruaat sirf 1 dollar se.
+Dialogue: 0,0:00:19.88,0:00:21.16,Default,,0,0,0,,Logic seedha tha,
+Dialogue: 0,0:00:21.16,0:00:22.19,Default,,0,0,0,,chhota amount,
+Dialogue: 0,0:00:22.19,0:00:22.96,Default,,0,0,0,,chhota risk.
+Dialogue: 0,0:00:22.96,0:00:25.27,Default,,0,0,0,,Toh bonus ka paisa bhejne ka
+Dialogue: 0,0:00:25.27,0:00:26.04,Default,,0,0,0,,plan bana.
+Dialogue: 0,0:00:26.49,0:00:28.27,Default,,0,0,0,,Tabhi behen ne poocha,
+Dialogue: 0,0:00:28.27,0:00:30.05,Default,,0,0,0,,TCS ka hisaab lagaya kya?
+Dialogue: 0,0:00:30.50,0:00:33.16,Default,,0,0,0,,TCS yaani Tax Collected at Source,
+Dialogue: 0,0:00:33.16,0:00:35.56,Default,,0,0,0,,paisa bhejte waqt hi tax pakad
+Dialogue: 0,0:00:35.56,0:00:36.62,Default,,0,0,0,,liya jaata hai.
+Dialogue: 0,0:00:37.07,0:00:38.55,Default,,0,0,0,,Ek saal mein ek limit se
+Dialogue: 0,0:00:38.55,0:00:39.39,Default,,0,0,0,,zyada bheja,
+Dialogue: 0,0:00:39.39,0:00:41.71,Default,,0,0,0,,toh 20 percent pehle hi rukega.
+Dialogue: 0,0:00:42.16,0:00:43.13,Default,,0,0,0,,Bhai ghabra gaya,
+Dialogue: 0,0:00:43.13,0:00:45.80,Default,,0,0,0,,laga itna paisa hamesha ke liye
+Dialogue: 0,0:00:45.80,0:00:46.04,Default,,0,0,0,,gaya.
+Dialogue: 0,0:00:46.49,0:00:47.29,Default,,0,0,0,,Twist yeh hai,
+Dialogue: 0,0:00:47.29,0:00:49.41,Default,,0,0,0,,yeh paisa gayab nahi hota.
+Dialogue: 0,0:00:49.86,0:00:51.73,Default,,0,0,0,,ITR yaani income tax return,
+Dialogue: 0,0:00:51.73,0:00:53.59,Default,,0,0,0,,wahan yeh aapke tax mein adjust
+Dialogue: 0,0:00:53.59,0:00:54.22,Default,,0,0,0,,hota hai,
+Dialogue: 0,0:00:54.22,0:00:55.46,Default,,0,0,0,,ya refund aata hai.
+Dialogue: 0,0:00:55.91,0:00:56.70,Default,,0,0,0,,Asli cost hai,
+Dialogue: 0,0:00:56.70,0:00:58.49,Default,,0,0,0,,mahino paisa atka rehna,
+Dialogue: 0,0:00:58.49,0:01:00.28,Default,,0,0,0,,aur har order par brokerage.
+Dialogue: 0,0:01:00.28,0:01:02.27,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:01:02.72,0:01:04.14,Default,,0,0,0,,Us bhai ko bhejo jo kal
+Dialogue: 0,0:01:04.14,0:01:05.76,Default,,0,0,0,,Nvidia kharidne wala hai.
