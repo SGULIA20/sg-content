@@ -111,6 +111,28 @@ def look(channel: str, root: Path = CONTENT_DIR) -> str:
     return next((name for word, name in LOOKS if word in style), "other")
 
 
+BLANK_MAX = 0.12                     # a Short panel whose lower half holds an empty strip taller than this share of the picture is redrawn
+
+
+def blank_share(path: Path, flat: float = 7.0) -> float:
+    """Tallest run of near-flat rows in the lower half, as a share of the height: a framed comic panel with an empty box under it
+    (26 Oct 2026) scores about 0.2; a full-bleed picture under 0.1."""
+    from PIL import Image, ImageStat, UnidentifiedImageError
+    try:
+        im = Image.open(path).convert("L")
+    except (UnidentifiedImageError, OSError):
+        return 0.0                                   # not a picture we can read: the render's own checks decide
+    w, h = im.size
+    run = best = 0
+    for y in range(int(h * 0.45), h - 4, 4):
+        if ImageStat.Stat(im.crop((int(w * 0.1), y, int(w * 0.9), y + 4))).stddev[0] < flat:
+            run += 1
+            best = max(best, run)
+        else:
+            run = 0
+    return best * 4 / h
+
+
 def style_prompt(channel: str, scene_prompt: str, root: Path = CONTENT_DIR) -> str:
     style = (Path(root) / "prompts" / f"style-{channel}.txt").read_text().strip()
     return f"{scene_prompt.strip()}. {style}"

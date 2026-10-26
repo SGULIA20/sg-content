@@ -92,3 +92,20 @@ def test_library_has_thirty_poses_with_real_refs():
     assert len(lib) >= 30
     for pose, spec in lib.items():
         assert len(spec["refs"]) == 3 and all((art.ASSETS_DIR / "reference" / r).exists() for r in spec["refs"]), pose
+
+
+def test_blank_share_flags_a_framed_panel_with_an_empty_box(tmp_path):
+    from PIL import Image, ImageDraw
+    import random
+    from engine import art
+    full = Image.new("RGB", (200, 300))
+    d = ImageDraw.Draw(full)
+    rnd = random.Random(1)
+    for y in range(0, 300, 3):
+        for x in range(0, 200, 3):
+            d.rectangle((x, y, x + 2, y + 2), fill=(rnd.randint(0, 255),) * 3)
+    full.save(tmp_path / "full.png")
+    framed = full.copy()
+    ImageDraw.Draw(framed).rectangle((0, 220, 200, 300), fill=(30, 30, 30))
+    framed.save(tmp_path / "framed.png")
+    assert art.blank_share(tmp_path / "full.png") < art.BLANK_MAX < art.blank_share(tmp_path / "framed.png")
