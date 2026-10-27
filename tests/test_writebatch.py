@@ -57,6 +57,17 @@ def test_a_slow_batch_parks_the_piece_and_the_next_run_collects_the_same_job(tmp
     assert state == "ready" and len(fb.creates) == 1                            # polled, not resubmitted
 
 
+def test_a_draft_already_ordered_is_collected_even_when_the_request_changed(tmp_path):
+    fb = FakeBatches(["in_progress", "ended"])
+    p = _piece()
+    state, _ = writebatch.write_piece(p, {"facts": []}, [], {}, "F", client=_client(fb), spend=tmp_path / "s.json", today=date(2026, 10, 22),
+                                      wait_s=0, sleep=lambda s: None, clock=lambda: 0.0)
+    assert state == "writing"
+    state, script = writebatch.write_piece(p, {"facts": [{"text": "new"}]}, [], {}, "F2", client=_client(fb), spend=tmp_path / "s.json",
+                                           today=date(2026, 10, 22), sleep=lambda s: None, clock=lambda: 0.0)
+    assert state == "ready" and len(fb.creates) == 1             # 27 Oct 2026: re-ordering on each small change kept the 2 Nov Shorts parked
+
+
 def test_a_revision_is_a_new_request(tmp_path):
     fb = FakeBatches(["ended", "ended"])
     p = _piece()
