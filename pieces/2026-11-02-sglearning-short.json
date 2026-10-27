@@ -3,200 +3,101 @@
  "facts": [
   {
    "label": "analyst-view",
-   "number": 3.4,
-   "quote": "The impact of El Nino weather conditions could further hurt domestic production, expected to fall by 3.4% to a new low in the 2026-27 crop year ended September.",
-   "source_date": "2026-10-26",
+   "number": 12.5,
+   "quote": "Jio Platforms could overtake Bharti Airtel to become India's second-largest listed company after its October 28 debut, with a 22% grey market premium implying a market capitalisation of Rs 12.5 lakh crore.",
+   "source_date": "2026-10-27",
    "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/cotton-shortage-set-to-worsen-as-new-deals-drive-export-demand/articleshow/135218241.cms",
-   "text": "India's domestic cotton production is expected to decline by 3.4% to a new low in the 2026-27 crop year due to El Nino weather conditions.",
-   "unit": "pct"
+   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/jios-big-bang-listing-may-give-it-stock-markets-no-2-crown-after-reliance-industries/articleshow/135227418.cms",
+   "text": "Jio Platforms could reach a market capitalisation of Rs 12.5 lakh crore after its debut, making it India's second-largest listed company.",
+   "unit": "lakh crore INR"
   },
   {
    "label": "reported",
-   "number": 7.1,
-   "quote": "Cotton imports hit a record high in 2025-26 to an estimated 7.1 million bales of 170 kilograms compared to last year's imports of 5.74 million bales.",
-   "source_date": "2026-10-26",
+   "number": 30213.0,
+   "quote": "Its Rs 30213-crore IPO drew 22.2 times subscription, while brokerages highlighted growth opportunities in broadband, enterprise technology and AI.",
+   "source_date": "2026-10-27",
    "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/cotton-shortage-set-to-worsen-as-new-deals-drive-export-demand/articleshow/135218241.cms",
-   "text": "India's cotton imports reached a record 7.1 million bales of 170 kilograms during the 2025-26 crop year.",
-   "unit": "million bales"
+   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/jios-big-bang-listing-may-give-it-stock-markets-no-2-crown-after-reliance-industries/articleshow/135227418.cms",
+   "text": "The public issue of Jio Platforms was sized at Rs 30,213 crore.",
+   "unit": "crore INR"
   },
   {
    "label": "reported",
-   "number": 5.74,
-   "quote": "Cotton imports hit a record high in 2025-26 to an estimated 7.1 million bales of 170 kilograms compared to last year's imports of 5.74 million bales.",
-   "source_date": "2026-10-26",
+   "number": 22.2,
+   "quote": "Its Rs 30213-crore IPO drew 22.2 times subscription, while brokerages highlighted growth opportunities in broadband, enterprise technology and AI.",
+   "source_date": "2026-10-27",
    "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/cotton-shortage-set-to-worsen-as-new-deals-drive-export-demand/articleshow/135218241.cms",
-   "text": "India had imported 5.74 million bales of cotton in the previous crop year.",
-   "unit": "million bales"
-  },
-  {
-   "label": "reported",
-   "number": 7.0,
-   "quote": "Prices have also risen more than 7% in the past month.",
-   "source_date": "2026-10-26",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/cotton-shortage-set-to-worsen-as-new-deals-drive-export-demand/articleshow/135218241.cms",
-   "text": "Cotton prices in India jumped by more than 7% in the month leading up to late October 2026.",
-   "unit": "pct"
-  },
-  {
-   "label": "official",
-   "number": 11.0,
-   "quote": "India has given exemption on the 11% import duty on raw cotton for June 1 to October 31.",
-   "source_date": "2026-10-26",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/cotton-shortage-set-to-worsen-as-new-deals-drive-export-demand/articleshow/135218241.cms",
-   "text": "The government granted an exemption on the 11% import duty on raw cotton effective June 1 to October 31.",
-   "unit": "pct"
-  },
-  {
-   "label": "reported",
-   "number": 4500.0,
-   "quote": "As the new cotton year started on October 1, cotton prices increased by ₹4,500/candy to ₹68,500/candy for the benchmark Gujarat 29-millimeter cotton, showed spot prices data.",
-   "source_date": "2026-10-26",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/cotton-shortage-set-to-worsen-as-new-deals-drive-export-demand/articleshow/135218241.cms",
-   "text": "Benchmark Gujarat 29-millimeter cotton spot prices surged by ₹4,500 per candy at the start of October.",
-   "unit": "INR/candy"
-  },
-  {
-   "label": "reported",
-   "number": 68500.0,
-   "quote": "As the new cotton year started on October 1, cotton prices increased by ₹4,500/candy to ₹68,500/candy for the benchmark Gujarat 29-millimeter cotton, showed spot prices data.",
-   "source_date": "2026-10-26",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/cotton-shortage-set-to-worsen-as-new-deals-drive-export-demand/articleshow/135218241.cms",
-   "text": "Benchmark Gujarat 29-millimeter cotton prices reached ₹68,500 per candy, elevating input costs that pressure retail clothing prices for families.",
-   "unit": "INR/candy"
-  },
-  {
-   "label": "analyst-view",
-   "number": 9.0,
-   "quote": "The gap between cotton demand and supply is expected to widen to more than 9 million bales from last year's 7 million bales.",
-   "source_date": "2026-10-26",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/cotton-shortage-set-to-worsen-as-new-deals-drive-export-demand/articleshow/135218241.cms",
-   "text": "The shortfall between domestic cotton demand and supply is expected to expand to more than 9 million bales.",
-   "unit": "million bales"
+   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/jios-big-bang-listing-may-give-it-stock-markets-no-2-crown-after-reliance-industries/articleshow/135227418.cms",
+   "text": "The Jio Platforms IPO received bids totaling 22.2 times the shares on offer.",
+   "unit": "times"
   }
  ],
  "id": "2026-11-02-sglearning-short",
  "ids": {
   "budget": {
-   "day": "2026-10-26",
+   "day": "2026-10-27",
    "drafts": 1,
    "research": 1
   },
   "write_batch": {
-   "id": "msgbatch_01TuSa6X7Lshwnkz9QNuByyP",
-   "key": "bcfecdb5f36f1731",
-   "tries": 1
+   "id": "msgbatch_01KUjXzKoC2KDJ96m8x8ELKQ",
+   "key": "d91a3da683c99795",
+   "tries": 2
   }
  },
  "kind": "short",
  "publish_day": "2026-11-02",
  "reasons": [
+  "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it"
  ],
  "script": null,
  "status": "writing",
  "timings": [],
  "topic": {
-  "link": "https://economictimes.indiatimes.com/news/economy/agriculture/cotton-shortage-set-to-worsen-as-new-deals-drive-export-demand/articleshow/135218241.cms",
-  "published": "2026-10-26T18:38:45+00:00",
+  "link": "https://economictimes.indiatimes.com/markets/stocks/news/jios-big-bang-listing-may-give-it-stock-markets-no-2-crown-after-reliance-industries/articleshow/135227418.cms",
+  "published": "2026-10-27T07:16:38+00:00",
   "rank": 3,
   "sheet": {
    "facts": [
     {
      "label": "analyst-view",
-     "number": 3.4,
-     "quote": "The impact of El Nino weather conditions could further hurt domestic production, expected to fall by 3.4% to a new low in the 2026-27 crop year ended September.",
-     "source_date": "2026-10-26",
+     "number": 12.5,
+     "quote": "Jio Platforms could overtake Bharti Airtel to become India's second-largest listed company after its October 28 debut, with a 22% grey market premium implying a market capitalisation of Rs 12.5 lakh crore.",
+     "source_date": "2026-10-27",
      "source_name": "ET",
-     "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/cotton-shortage-set-to-worsen-as-new-deals-drive-export-demand/articleshow/135218241.cms",
-     "text": "India's domestic cotton production is expected to decline by 3.4% to a new low in the 2026-27 crop year due to El Nino weather conditions.",
-     "unit": "pct"
+     "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/jios-big-bang-listing-may-give-it-stock-markets-no-2-crown-after-reliance-industries/articleshow/135227418.cms",
+     "text": "Jio Platforms could reach a market capitalisation of Rs 12.5 lakh crore after its debut, making it India's second-largest listed company.",
+     "unit": "lakh crore INR"
     },
     {
      "label": "reported",
-     "number": 7.1,
-     "quote": "Cotton imports hit a record high in 2025-26 to an estimated 7.1 million bales of 170 kilograms compared to last year's imports of 5.74 million bales.",
-     "source_date": "2026-10-26",
+     "number": 30213.0,
+     "quote": "Its Rs 30213-crore IPO drew 22.2 times subscription, while brokerages highlighted growth opportunities in broadband, enterprise technology and AI.",
+     "source_date": "2026-10-27",
      "source_name": "ET",
-     "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/cotton-shortage-set-to-worsen-as-new-deals-drive-export-demand/articleshow/135218241.cms",
-     "text": "India's cotton imports reached a record 7.1 million bales of 170 kilograms during the 2025-26 crop year.",
-     "unit": "million bales"
+     "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/jios-big-bang-listing-may-give-it-stock-markets-no-2-crown-after-reliance-industries/articleshow/135227418.cms",
+     "text": "The public issue of Jio Platforms was sized at Rs 30,213 crore.",
+     "unit": "crore INR"
     },
     {
      "label": "reported",
-     "number": 5.74,
-     "quote": "Cotton imports hit a record high in 2025-26 to an estimated 7.1 million bales of 170 kilograms compared to last year's imports of 5.74 million bales.",
-     "source_date": "2026-10-26",
+     "number": 22.2,
+     "quote": "Its Rs 30213-crore IPO drew 22.2 times subscription, while brokerages highlighted growth opportunities in broadband, enterprise technology and AI.",
+     "source_date": "2026-10-27",
      "source_name": "ET",
-     "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/cotton-shortage-set-to-worsen-as-new-deals-drive-export-demand/articleshow/135218241.cms",
-     "text": "India had imported 5.74 million bales of cotton in the previous crop year.",
-     "unit": "million bales"
-    },
-    {
-     "label": "reported",
-     "number": 7.0,
-     "quote": "Prices have also risen more than 7% in the past month.",
-     "source_date": "2026-10-26",
-     "source_name": "ET",
-     "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/cotton-shortage-set-to-worsen-as-new-deals-drive-export-demand/articleshow/135218241.cms",
-     "text": "Cotton prices in India jumped by more than 7% in the month leading up to late October 2026.",
-     "unit": "pct"
-    },
-    {
-     "label": "official",
-     "number": 11.0,
-     "quote": "India has given exemption on the 11% import duty on raw cotton for June 1 to October 31.",
-     "source_date": "2026-10-26",
-     "source_name": "ET",
-     "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/cotton-shortage-set-to-worsen-as-new-deals-drive-export-demand/articleshow/135218241.cms",
-     "text": "The government granted an exemption on the 11% import duty on raw cotton effective June 1 to October 31.",
-     "unit": "pct"
-    },
-    {
-     "label": "reported",
-     "number": 4500.0,
-     "quote": "As the new cotton year started on October 1, cotton prices increased by ₹4,500/candy to ₹68,500/candy for the benchmark Gujarat 29-millimeter cotton, showed spot prices data.",
-     "source_date": "2026-10-26",
-     "source_name": "ET",
-     "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/cotton-shortage-set-to-worsen-as-new-deals-drive-export-demand/articleshow/135218241.cms",
-     "text": "Benchmark Gujarat 29-millimeter cotton spot prices surged by ₹4,500 per candy at the start of October.",
-     "unit": "INR/candy"
-    },
-    {
-     "label": "reported",
-     "number": 68500.0,
-     "quote": "As the new cotton year started on October 1, cotton prices increased by ₹4,500/candy to ₹68,500/candy for the benchmark Gujarat 29-millimeter cotton, showed spot prices data.",
-     "source_date": "2026-10-26",
-     "source_name": "ET",
-     "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/cotton-shortage-set-to-worsen-as-new-deals-drive-export-demand/articleshow/135218241.cms",
-     "text": "Benchmark Gujarat 29-millimeter cotton prices reached ₹68,500 per candy, elevating input costs that pressure retail clothing prices for families.",
-     "unit": "INR/candy"
-    },
-    {
-     "label": "analyst-view",
-     "number": 9.0,
-     "quote": "The gap between cotton demand and supply is expected to widen to more than 9 million bales from last year's 7 million bales.",
-     "source_date": "2026-10-26",
-     "source_name": "ET",
-     "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/cotton-shortage-set-to-worsen-as-new-deals-drive-export-demand/articleshow/135218241.cms",
-     "text": "The shortfall between domestic cotton demand and supply is expected to expand to more than 9 million bales.",
-     "unit": "million bales"
+     "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/jios-big-bang-listing-may-give-it-stock-markets-no-2-crown-after-reliance-industries/articleshow/135227418.cms",
+     "text": "The Jio Platforms IPO received bids totaling 22.2 times the shares on offer.",
+     "unit": "times"
     }
    ],
-   "summary": "India's domestic cotton deficit is set to widen past 9 million bales as adverse El Nino weather hurts crop output while export demand under new trade pacts picks up pace. To offset tight domestic availability, mills imported a record 7.1 million bales in 2025-26, yet raw cotton and yarn costs have continued to climb. For salaried Indian households, this persistent raw material squeeze raises manufacturing costs across mills and will ultimately translate into higher retail prices for everyday garments, school uniforms, and festive clothing."
+   "summary": "Jio Platforms concluded India's largest initial public offering to raise Rs 30,213 crore, with grey market indicators positioning the firm to become the country's second-largest listed corporation by market value. Salaried Indian households should follow this event closely because retail bidders had Rs 13,428 per lot blocked during allotment, while mutual funds held in monthly household SIPs will likely rebalance weightings toward the new mega-cap stock. Furthermore, industry analysts project mobile tariff price hikes of 12% to 15% following the listing, which will directly impact monthly household phone and broadband bills."
   },
-  "source": "ET Economy",
-  "summary": "The impact of El Nino weather conditions could further hurt domestic production, expected to fall by 3.4% to a new low in the 2026-27 crop year ended September. Cotton imports hit a record high in 2025-26 to an estimated 7.1 million bales of 170 kilograms compared to last year's imports of 5.74 million bales. Prices have also risen more than 7% in the past month.",
+  "source": "ET Markets",
+  "summary": "Jio Platforms could overtake Bharti Airtel to become India’s second-largest listed company after its October 28 debut, with a 22% grey market premium implying a market capitalisation of Rs 12.5 lakh crore. Its Rs 30,213-crore IPO drew 22.2 times subscription, while brokerages highlighted growth opportunities in broadband, enterprise technology and AI.",
   "target_minutes": null,
-  "title": "Cotton shortage set to worsen as new deals drive export demand"
+  "title": "Jio’s big-bang listing may give it stock market’s No.2 crown after Reliance Industries"
  },
- "updated": "2026-10-26T19:59:22+00:00",
+ "updated": "2026-10-27T07:40:53+00:00",
  "writer": ""
 }
