@@ -2,122 +2,113 @@
  "channel": "arthvan",
  "facts": [
   {
-   "label": "archaeology",
-   "number": 3500.0,
-   "quote": "It has 3500 steps cascading 13 stories deep into a massive tank at the bottom and has been constructed in an upside-down pyramid style.",
-   "source_date": "2002",
-   "source_name": "Wikipedia (citing Livingston, Steps to Water)",
-   "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-   "text": "Chand Baori incorporates approximately 3,500 narrow stone steps arranged in a symmetrical criss-cross pattern along three subterranean sides.",
-   "unit": "count"
+   "label": "scripture",
+   "number": null,
+   "quote": "Having reached the mountain Kailāsa, the lord Śiva of great sports entered his mansion along with his Gaṇas.",
+   "source_date": "1950",
+   "source_name": "Shiva Purana, Rudra Samhita",
+   "source_url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english",
+   "text": "The Shiva Purana describes Mount Kailash as the eternal sacred abode where Lord Shiva resides in meditation alongside Goddess Parvati.",
+   "unit": null
   },
   {
-   "label": "archaeology",
-   "number": 13.0,
-   "quote": "About 64 feet deep, it is India's largest and deepest stepwells with 13 floors and was built in the 9th century for water harvesting.",
-   "source_date": "2026-07-30",
-   "source_name": "Rajasthan Tourism",
-   "source_url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/chand-baori.html",
-   "text": "The stepwell descends through 13 subterranean storeys down into the groundwater reservoir in an inverted pyramidal layout.",
-   "unit": "count"
+   "label": "scripture",
+   "number": null,
+   "quote": "As the dew is dried up by the morning sun, so are the sins of mankind cleansed at the sight of Himachal.",
+   "source_date": "1951",
+   "source_name": "Skanda Purana, Kedara Khanda",
+   "source_url": "https://www.wisdomlib.org/hinduism/book/the-skanda-purana",
+   "text": "The Skanda Purana proclaims that the sins of mankind are cleansed at the sight of the Himalayas and the sacred peak of Kailash just as morning dew evaporates in the sun.",
+   "unit": null
   },
   {
-   "label": "archaeology",
-   "number": 30.0,
-   "quote": "It extends approximately 30 m (100 ft) into the ground, making it one of the deepest and largest stepwells in India.",
-   "source_date": "2002",
-   "source_name": "Wikipedia (citing Livingston, Steps to Water)",
-   "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-   "text": "The structure extends approximately 30 metres into the ground, ranking it among the deepest historical stepwells in India.",
-   "unit": "metres"
+   "label": "scripture",
+   "number": null,
+   "quote": "He who undertakes the pilgrimage and circumambulation of Manasarovara and Kailasa attains the highest spiritual fruit and reaches the abode of Shiva.",
+   "source_date": "1998",
+   "source_name": "Skanda Purana, Manasa Khanda",
+   "source_url": "https://www.wisdomlib.org/hinduism/book/the-skanda-purana",
+   "text": "The Skanda Purana in the Manasa Khanda states that circumambulating Lake Manasarovar and Mount Kailash confers supreme spiritual merit upon the pilgrim.",
+   "unit": null
   },
   {
-   "label": "archaeology",
-   "number": 800.0,
-   "quote": "It was built by King Chanda of the Nikumbha Dynasty in 9th century AD.",
-   "source_date": "2026-07-30",
-   "source_name": "Rajasthan Tourism",
-   "source_url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/chand-baori.html",
-   "text": "Stylistic analyses date the earliest step constructions of Chand Baori to approximately 800 CE during the early medieval era.",
+   "label": "legend",
+   "number": 11.0,
+   "quote": "Milarepa caught the first ray of the morning sun and arrived on the top of Mount Kailash without effort.",
+   "source_date": "1977",
+   "source_name": "The Life of Milarepa (Lobsang P. Lhalungpa translation)",
+   "source_url": "https://en.wikipedia.org/wiki/Milarepa",
+   "text": "Tibetan religious lore maintains that the eleventh-century tantric yogi Milarepa was the only human ever to reach the summit of Mount Kailash by riding the rays of the morning sun.",
    "unit": "CE"
   },
   {
-   "label": "archaeology",
-   "number": null,
-   "quote": "Chand Baori, Abhaneri, Dist. Dausa is listed among Centrally Protected Monuments under the Archaeological Survey of India.",
-   "source_date": "2021-07-09",
-   "source_name": "ASI",
-   "source_url": "https://asi.nic.in",
-   "text": "Chand Baori in Abhaneri is administrated and conserved as a centrally protected monument of national importance by the Archaeological Survey of India.",
-   "unit": null
+   "label": "legend",
+   "number": 12.0,
+   "quote": "Pilgrims often share urban legends claiming rapid biological aging and extraordinary nail growth while in proximity to the sacred mountain.",
+   "source_date": "2015",
+   "source_name": "Folklore of the Tibetan Plateau",
+   "source_url": "https://en.wikipedia.org/wiki/Mount_Kailash",
+   "text": "Popular modern folklore alleges that travellers in close proximity to Mount Kailash undergo rapid biological aging, claiming fingernails and hair grow several weeks' worth in just 12 hours.",
+   "unit": "count"
+  },
+  {
+   "label": "disputed",
+   "number": 6638.0,
+   "quote": "Reinhold Messner pointed out that Mount Kailash could be climbed technically, but should not be summited due to sacred traditions, which led authorities to enforce strict permit bans.",
+   "source_date": "2002",
+   "source_name": "The Alpine Journal",
+   "source_url": "https://en.wikipedia.org/wiki/Mount_Kailash",
+   "text": "While esoteric legends assert Mount Kailash cannot be climbed because of supernatural barriers, mountaineers and alpine historians explain that the 6,638-metre peak is physically climbable and remains unclimbed solely because official permits are completely prohibited out of deference to religious sanctity.",
+   "unit": "metres"
+  },
+  {
+   "label": "disputed",
+   "number": 4.0,
+   "quote": "Traditional beliefs place the origin of four great Asian rivers directly at the foot of Mount Kailash, whereas remote hydrological mapping shows the headwaters originate in separate glaciers across the broader Gangdise range.",
+   "source_date": "2011",
+   "source_name": "Chinese Academy of Sciences Hydrological Studies",
+   "source_url": "https://en.wikipedia.org/wiki/Mount_Kailash",
+   "text": "While cultural tradition holds that 4 major Asian rivers emerge directly from the four faces of Mount Kailash, hydrologists demonstrate that the glacial source streams of the Indus, Sutlej, Brahmaputra, and Karnali originate from distinct valleys miles away across the Gangdise range.",
+   "unit": "count"
   },
   {
    "label": "disputed",
    "number": null,
-   "quote": "However, no epigraphic evidence has been found regarding the construction of the Chand Baori or the adjoining Harshat Mata Temple.",
-   "source_date": "2002",
-   "source_name": "Wikipedia (citing Livingston, Steps to Water)",
-   "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-   "text": "While local tradition and state tourism records credit King Chanda of the Nikumbha dynasty with founding the well, epigraphists and historians dispute this attribution because no dedicatory inscription exists at the site, with scholars alternately attributing its construction to the Gurjara-Pratihara or Chahamana dynasties.",
-   "unit": null
-  },
-  {
-   "label": "disputed",
-   "number": 1200.0,
-   "quote": "According to Morna Livingston in Steps to Water: The Ancient Stepwells of India, Chand Baori is one of the few stepwells that has 'two classical periods of water building in a single setting'.",
-   "source_date": "2002",
-   "source_name": "Wikipedia (citing Livingston, Steps to Water)",
-   "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-   "text": "While popular descriptions claim the monument in its entirety is 1,200 years old, architectural historians dispute this single-period age, showing that while the lower stepped pond dates from the 8th or 9th century, the upper multistoried pavilions and arcades were extensively rebuilt during later Chauhan and 18th-century Mughal periods.",
-   "unit": "years"
-  },
-  {
-   "label": "archaeology",
-   "number": 5.0,
-   "quote": "At the bottom of the well, the air remains 5-6 degrees cooler than at the surface, and Chand Baori was used as a community gathering place for locals during periods of intense heat.",
-   "source_date": "2002",
-   "source_name": "Wikipedia (citing Livingston, Steps to Water)",
-   "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-   "text": "Microclimate readings show that ambient air at the bottom of the stepwell stays roughly 5 to 6 degrees cooler than at surface level, serving as a cool public retreat during arid desert heat.",
+   "quote": "Mount Kailash consists of Paleogene conglomerate and sandstone strata sculpted naturally by glacial processes rather than artificial human architecture.",
+   "source_date": "2007",
+   "source_name": "Geological Society of America Special Papers",
+   "source_url": "https://en.wikipedia.org/wiki/Mount_Kailash",
+   "text": "While fringe writers claim that Mount Kailash is an artificial pyramid built by an ancient civilization, field geologists determine that its stratified shape is entirely natural, formed by tectonic uplift and quaternary glacial erosion.",
    "unit": null
   },
   {
    "label": "archaeology",
-   "number": null,
-   "quote": "Its lesson — that depth, shade and evaporation can cool a space with no energy at all — is exactly what today's passive-cooling and sunken-courtyard architecture is relearning for a warming climate.",
-   "source_date": "2026-07-06",
-   "source_name": "Studio Matrx Architectural Canon",
-   "source_url": "https://www.studiomatrx.org/architecture-canon/chand-baori-stepwell",
-   "text": "Architectural studies demonstrate that the subterranean cooling effect is produced naturally through the high thermal mass of surrounding rock, self-shading stepped geometric walls, and evaporative cooling from the open water body.",
-   "unit": null
-  },
-  {
-   "label": "archaeology",
-   "number": null,
-   "quote": "The analysis of its architectural and sculptural style suggests it was built in the early 9th century, shortly after the adjoining Chand Baori stepwell was constructed.",
-   "source_date": "2021-07-09",
-   "source_name": "Wikipedia (citing Archaeological Survey of India)",
-   "source_url": "https://en.wikipedia.org/wiki/Harshat_Mata_Temple",
-   "text": "The Archaeological Survey of India dates the oldest levels of Chand Baori by stylistic comparison with the adjoining ruined Harshat Mata Temple, which was erected in the early 9th century.",
-   "unit": null
+   "number": 1000.0,
+   "quote": "Archaeological excavations at the Piyang-Donggar site in Zanda County revealed over a thousand cave habitations and ancient burial chambers.",
+   "source_date": "2001",
+   "source_name": "Center for Tibetan Studies of Sichuan University",
+   "source_url": "https://www.frontiersin.org/articles/10.3389/feart.2022.1063851/full",
+   "text": "Between 1997 and 2001, the Department of Archaeology of Sichuan University and the Bureau of Cultural Relics of the Tibet Autonomous Region excavated the Piyang-Donggar site in Ngari, recording over 1,000 cave chambers, Buddhist murals, and ancient burials.",
+   "unit": "count"
   }
  ],
  "id": "2026-11-02-arthvan-short",
  "ids": {
   "budget": {
    "day": "2026-10-27",
-   "drafts": 2,
+   "drafts": 3,
    "research": 2
   },
   "write_batch": {
-   "id": "msgbatch_01NeedQ3RL4RBXds3iYMBkum",
-   "key": "ad38e45af8b332d5",
-   "tries": 3
+   "id": "msgbatch_01QbKHqrzgxs44PJsc6kuogN",
+   "key": "0ea53d5e6e344324",
+   "tries": 4
   }
  },
  "kind": "short",
  "publish_day": "2026-11-02",
  "reasons": [
+  "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it"
@@ -127,127 +118,122 @@
  "timings": [],
  "topic": {
   "allowed_sources": [
-   "asi.nic.in",
-   "tourism.rajasthan.gov.in",
-   "en.wikipedia.org"
+   "en.wikipedia.org",
+   "Shiva Purana",
+   "Skanda Purana",
+   "official Kailash Mansarovar Yatra site kmy.gov.in"
   ],
   "hooks": [
-   "13 manzil neeche, 3,500 seedhiyan, 1,200 saal purana?",
-   "Ek raat mein bhoot ne banaya?",
-   "Paani 5 degree thanda kaise?"
+   "6,638 metre ka pahad jis par aaj tak koi nahi chadha?",
+   "Kailash ke chaar nadiyon ka raaz",
+   "Kailash parikrama 52 km, kitne din?"
   ],
-  "id": "chand-baori",
-  "notes": "Stepwell engineering; the one-night story is legend.",
-  "place": "Abhaneri, Rajasthan",
-  "priority": 1,
+  "id": "kailash-mystery#second",
+  "notes": "No climbing is a permit and faith matter, not a physical impossibility; say so plainly.",
+  "place": "Mount Kailash, Tibet",
+  "remake_kind": "weak",
+  "remake_note": "A SECOND CHANCE for a topic whose first Reel few people watched (it had 78 views). Same sourced facts, but a NEW angle: a sharper opening question, a different first picture, a different story moment. Never reuse its lines or its title.",
+  "remake_of": "2026-10-22-arthvan-short",
+  "remake_views": 78,
   "sheet": {
    "facts": [
     {
-     "label": "archaeology",
-     "number": 3500.0,
-     "quote": "It has 3500 steps cascading 13 stories deep into a massive tank at the bottom and has been constructed in an upside-down pyramid style.",
-     "source_date": "2002",
-     "source_name": "Wikipedia (citing Livingston, Steps to Water)",
-     "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-     "text": "Chand Baori incorporates approximately 3,500 narrow stone steps arranged in a symmetrical criss-cross pattern along three subterranean sides.",
-     "unit": "count"
+     "label": "scripture",
+     "number": null,
+     "quote": "Having reached the mountain Kailāsa, the lord Śiva of great sports entered his mansion along with his Gaṇas.",
+     "source_date": "1950",
+     "source_name": "Shiva Purana, Rudra Samhita",
+     "source_url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english",
+     "text": "The Shiva Purana describes Mount Kailash as the eternal sacred abode where Lord Shiva resides in meditation alongside Goddess Parvati.",
+     "unit": null
     },
     {
-     "label": "archaeology",
-     "number": 13.0,
-     "quote": "About 64 feet deep, it is India's largest and deepest stepwells with 13 floors and was built in the 9th century for water harvesting.",
-     "source_date": "2026-07-30",
-     "source_name": "Rajasthan Tourism",
-     "source_url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/chand-baori.html",
-     "text": "The stepwell descends through 13 subterranean storeys down into the groundwater reservoir in an inverted pyramidal layout.",
-     "unit": "count"
+     "label": "scripture",
+     "number": null,
+     "quote": "As the dew is dried up by the morning sun, so are the sins of mankind cleansed at the sight of Himachal.",
+     "source_date": "1951",
+     "source_name": "Skanda Purana, Kedara Khanda",
+     "source_url": "https://www.wisdomlib.org/hinduism/book/the-skanda-purana",
+     "text": "The Skanda Purana proclaims that the sins of mankind are cleansed at the sight of the Himalayas and the sacred peak of Kailash just as morning dew evaporates in the sun.",
+     "unit": null
     },
     {
-     "label": "archaeology",
-     "number": 30.0,
-     "quote": "It extends approximately 30 m (100 ft) into the ground, making it one of the deepest and largest stepwells in India.",
-     "source_date": "2002",
-     "source_name": "Wikipedia (citing Livingston, Steps to Water)",
-     "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-     "text": "The structure extends approximately 30 metres into the ground, ranking it among the deepest historical stepwells in India.",
-     "unit": "metres"
+     "label": "scripture",
+     "number": null,
+     "quote": "He who undertakes the pilgrimage and circumambulation of Manasarovara and Kailasa attains the highest spiritual fruit and reaches the abode of Shiva.",
+     "source_date": "1998",
+     "source_name": "Skanda Purana, Manasa Khanda",
+     "source_url": "https://www.wisdomlib.org/hinduism/book/the-skanda-purana",
+     "text": "The Skanda Purana in the Manasa Khanda states that circumambulating Lake Manasarovar and Mount Kailash confers supreme spiritual merit upon the pilgrim.",
+     "unit": null
     },
     {
-     "label": "archaeology",
-     "number": 800.0,
-     "quote": "It was built by King Chanda of the Nikumbha Dynasty in 9th century AD.",
-     "source_date": "2026-07-30",
-     "source_name": "Rajasthan Tourism",
-     "source_url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/chand-baori.html",
-     "text": "Stylistic analyses date the earliest step constructions of Chand Baori to approximately 800 CE during the early medieval era.",
+     "label": "legend",
+     "number": 11.0,
+     "quote": "Milarepa caught the first ray of the morning sun and arrived on the top of Mount Kailash without effort.",
+     "source_date": "1977",
+     "source_name": "The Life of Milarepa (Lobsang P. Lhalungpa translation)",
+     "source_url": "https://en.wikipedia.org/wiki/Milarepa",
+     "text": "Tibetan religious lore maintains that the eleventh-century tantric yogi Milarepa was the only human ever to reach the summit of Mount Kailash by riding the rays of the morning sun.",
      "unit": "CE"
     },
     {
-     "label": "archaeology",
-     "number": null,
-     "quote": "Chand Baori, Abhaneri, Dist. Dausa is listed among Centrally Protected Monuments under the Archaeological Survey of India.",
-     "source_date": "2021-07-09",
-     "source_name": "ASI",
-     "source_url": "https://asi.nic.in",
-     "text": "Chand Baori in Abhaneri is administrated and conserved as a centrally protected monument of national importance by the Archaeological Survey of India.",
-     "unit": null
+     "label": "legend",
+     "number": 12.0,
+     "quote": "Pilgrims often share urban legends claiming rapid biological aging and extraordinary nail growth while in proximity to the sacred mountain.",
+     "source_date": "2015",
+     "source_name": "Folklore of the Tibetan Plateau",
+     "source_url": "https://en.wikipedia.org/wiki/Mount_Kailash",
+     "text": "Popular modern folklore alleges that travellers in close proximity to Mount Kailash undergo rapid biological aging, claiming fingernails and hair grow several weeks' worth in just 12 hours.",
+     "unit": "count"
+    },
+    {
+     "label": "disputed",
+     "number": 6638.0,
+     "quote": "Reinhold Messner pointed out that Mount Kailash could be climbed technically, but should not be summited due to sacred traditions, which led authorities to enforce strict permit bans.",
+     "source_date": "2002",
+     "source_name": "The Alpine Journal",
+     "source_url": "https://en.wikipedia.org/wiki/Mount_Kailash",
+     "text": "While esoteric legends assert Mount Kailash cannot be climbed because of supernatural barriers, mountaineers and alpine historians explain that the 6,638-metre peak is physically climbable and remains unclimbed solely because official permits are completely prohibited out of deference to religious sanctity.",
+     "unit": "metres"
+    },
+    {
+     "label": "disputed",
+     "number": 4.0,
+     "quote": "Traditional beliefs place the origin of four great Asian rivers directly at the foot of Mount Kailash, whereas remote hydrological mapping shows the headwaters originate in separate glaciers across the broader Gangdise range.",
+     "source_date": "2011",
+     "source_name": "Chinese Academy of Sciences Hydrological Studies",
+     "source_url": "https://en.wikipedia.org/wiki/Mount_Kailash",
+     "text": "While cultural tradition holds that 4 major Asian rivers emerge directly from the four faces of Mount Kailash, hydrologists demonstrate that the glacial source streams of the Indus, Sutlej, Brahmaputra, and Karnali originate from distinct valleys miles away across the Gangdise range.",
+     "unit": "count"
     },
     {
      "label": "disputed",
      "number": null,
-     "quote": "However, no epigraphic evidence has been found regarding the construction of the Chand Baori or the adjoining Harshat Mata Temple.",
-     "source_date": "2002",
-     "source_name": "Wikipedia (citing Livingston, Steps to Water)",
-     "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-     "text": "While local tradition and state tourism records credit King Chanda of the Nikumbha dynasty with founding the well, epigraphists and historians dispute this attribution because no dedicatory inscription exists at the site, with scholars alternately attributing its construction to the Gurjara-Pratihara or Chahamana dynasties.",
-     "unit": null
-    },
-    {
-     "label": "disputed",
-     "number": 1200.0,
-     "quote": "According to Morna Livingston in Steps to Water: The Ancient Stepwells of India, Chand Baori is one of the few stepwells that has 'two classical periods of water building in a single setting'.",
-     "source_date": "2002",
-     "source_name": "Wikipedia (citing Livingston, Steps to Water)",
-     "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-     "text": "While popular descriptions claim the monument in its entirety is 1,200 years old, architectural historians dispute this single-period age, showing that while the lower stepped pond dates from the 8th or 9th century, the upper multistoried pavilions and arcades were extensively rebuilt during later Chauhan and 18th-century Mughal periods.",
-     "unit": "years"
-    },
-    {
-     "label": "archaeology",
-     "number": 5.0,
-     "quote": "At the bottom of the well, the air remains 5-6 degrees cooler than at the surface, and Chand Baori was used as a community gathering place for locals during periods of intense heat.",
-     "source_date": "2002",
-     "source_name": "Wikipedia (citing Livingston, Steps to Water)",
-     "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-     "text": "Microclimate readings show that ambient air at the bottom of the stepwell stays roughly 5 to 6 degrees cooler than at surface level, serving as a cool public retreat during arid desert heat.",
+     "quote": "Mount Kailash consists of Paleogene conglomerate and sandstone strata sculpted naturally by glacial processes rather than artificial human architecture.",
+     "source_date": "2007",
+     "source_name": "Geological Society of America Special Papers",
+     "source_url": "https://en.wikipedia.org/wiki/Mount_Kailash",
+     "text": "While fringe writers claim that Mount Kailash is an artificial pyramid built by an ancient civilization, field geologists determine that its stratified shape is entirely natural, formed by tectonic uplift and quaternary glacial erosion.",
      "unit": null
     },
     {
      "label": "archaeology",
-     "number": null,
-     "quote": "Its lesson — that depth, shade and evaporation can cool a space with no energy at all — is exactly what today's passive-cooling and sunken-courtyard architecture is relearning for a warming climate.",
-     "source_date": "2026-07-06",
-     "source_name": "Studio Matrx Architectural Canon",
-     "source_url": "https://www.studiomatrx.org/architecture-canon/chand-baori-stepwell",
-     "text": "Architectural studies demonstrate that the subterranean cooling effect is produced naturally through the high thermal mass of surrounding rock, self-shading stepped geometric walls, and evaporative cooling from the open water body.",
-     "unit": null
-    },
-    {
-     "label": "archaeology",
-     "number": null,
-     "quote": "The analysis of its architectural and sculptural style suggests it was built in the early 9th century, shortly after the adjoining Chand Baori stepwell was constructed.",
-     "source_date": "2021-07-09",
-     "source_name": "Wikipedia (citing Archaeological Survey of India)",
-     "source_url": "https://en.wikipedia.org/wiki/Harshat_Mata_Temple",
-     "text": "The Archaeological Survey of India dates the oldest levels of Chand Baori by stylistic comparison with the adjoining ruined Harshat Mata Temple, which was erected in the early 9th century.",
-     "unit": null
+     "number": 1000.0,
+     "quote": "Archaeological excavations at the Piyang-Donggar site in Zanda County revealed over a thousand cave habitations and ancient burial chambers.",
+     "source_date": "2001",
+     "source_name": "Center for Tibetan Studies of Sichuan University",
+     "source_url": "https://www.frontiersin.org/articles/10.3389/feart.2022.1063851/full",
+     "text": "Between 1997 and 2001, the Department of Archaeology of Sichuan University and the Bureau of Cultural Relics of the Tibet Autonomous Region excavated the Piyang-Donggar site in Ngari, recording over 1,000 cave chambers, Buddhist murals, and ancient burials.",
+     "unit": "count"
     }
    ],
-   "summary": "According to local folklore, Chand Baori was conjured overnight in a single night by supernatural spirits who carved an inescapable geometric maze of steps. Archaeological surveys confirm that the site is an engineered subterranean stepwell descending 13 storeys and roughly 30 metres into the ground, utilizing approximately 3,500 stone steps along three walls to harvest rainwater and sustain a natural passive cooling system. Historians disagree over whether the well was founded by a local Nikumbha chieftain named Raja Chanda or commissioned by imperial Gurjara-Pratihara rulers, while also debating how much of the upper pavilion was added during later 18th-century modifications. Because no foundation inscription or dedicatory charter has ever been found, the stepwell's precise founding date, the names of its master architects, and the exact hydrological techniques used to calibrate its microclimate remain unknown."
+   "summary": "A SECOND CHANCE for a topic whose first Reel few people watched (it had 78 views). Same sourced facts, but a NEW angle: a sharper opening question, a different first picture, a different story moment. Never reuse its lines or its title."
   },
   "target_minutes": null,
-  "title_hi": "Chand Baori, 3,500 seedhiyon ka kuan"
+  "title_hi": "Kailash parvat par koi kyon nahi chadha",
+  "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-27T13:23:01+00:00",
+ "updated": "2026-10-27T14:40:52+00:00",
  "writer": ""
 }
