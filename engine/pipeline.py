@@ -311,7 +311,8 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
             pieces.save(pieces.transition(piece, "researched"), root)
         else:
             piece.topic["revise"] = revise
-        if not _allow(piece, "drafts", DAILY_DRAFTS):
+        collecting = resume_write and attempt == 0 and bool(piece.ids.get("write_batch"))    # only ordering a draft counts, not checking on one
+        if not collecting and not _allow(piece, "drafts", DAILY_DRAFTS):
             pieces.save(pieces.transition(piece, "rejected", f"draft budget used for today ({DAILY_DRAFTS} drafts); the next quota day retries"), root)
             return piece
         try:

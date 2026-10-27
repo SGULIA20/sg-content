@@ -490,3 +490,17 @@ def test_weak_shorts_get_one_second_chance_a_day_oldest_first(tmp_path):
     assert pipeline.weak_remake_topic(tue_sg, tmp_path, today)["remake_of"] == "2026-10-23-sglearning-short"
     sun = pieces.Piece(id="2026-11-08-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 11, 8))
     assert pipeline.weak_remake_topic(sun, tmp_path, today) is None                            # Sunday is always a new topic
+
+
+def test_checking_on_a_parked_draft_does_not_use_the_daily_draft_allowance(tmp_path):
+    from engine.config import today_pacific
+    d, calls = deps(tmp_path)
+    states = iter([{"script": None, "writer": "claude", "note": "", "state": "writing"}, {"script": good_script(), "writer": "claude", "note": "", "state": "ready"}])
+    def write_fn(piece, sheet, library, hashtags):
+        piece.ids["write_batch"] = {"id": "msgbatch_1"}; return next(states)
+    d.write = write_fn
+    p = pipeline.make(_piece(), d, tmp_path)
+    p = pieces.load(p.id, tmp_path)
+    p.ids["budget"] = {"day": today_pacific().isoformat(), "drafts": pipeline.DAILY_DRAFTS}   # 27 Oct 2026: six checks used the whole day's allowance
+    pieces.save(p, tmp_path)
+    assert pipeline.make(p, d, tmp_path).status == "uploaded"
