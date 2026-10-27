@@ -3,131 +3,92 @@
  "facts": [
   {
    "label": "archaeology",
-   "number": 3500.0,
-   "quote": "Chand Baori is an architectural wonder with 3,500 perfectly symmetrical, narrow steps.",
-   "source_date": "2026-07-30",
-   "source_name": "Rajasthan Tourism",
-   "source_url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/chand-baori.html",
-   "text": "Chand Baori contains approximately 3,500 narrow, symmetrical stone steps engineered into its descending pyramidal terraces.",
-   "unit": "count"
-  },
-  {
-   "label": "archaeology",
-   "number": 13.0,
-   "quote": "It has 3500 steps cascading 13 stories deep into a massive tank at the bottom and has been constructed in an upside-down pyramid style.",
-   "source_date": "2002",
-   "source_name": "Steps to Water: The Ancient Stepwells of India",
-   "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-   "text": "The stepwell descends across 13 subterranean storeys arranged in an inverted stepped pyramid configuration.",
-   "unit": "count"
-  },
-  {
-   "label": "archaeology",
-   "number": 30.0,
-   "quote": "It extends approximately 30 m (100 ft) into the ground, making it one of the deepest and largest stepwells in India.",
-   "source_date": "2026",
-   "source_name": "Chand Baori - Wikipedia",
-   "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-   "text": "The vertical excavation of Chand Baori plunges approximately 30 metres into the earth, making it one of the deepest stepwells in India.",
-   "unit": "metres"
-  },
-  {
-   "label": "archaeology",
-   "number": 5.0,
-   "quote": "The air at the bottom of the well remains 5–6 degrees cooler than at the surface.",
-   "source_date": "2026",
-   "source_name": "Chand Baori - Wikipedia",
-   "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-   "text": "Due to depth and natural evaporative cooling, the subterranean microclimate at the base of the stepwell stays roughly 5 to 6 degrees cooler than surface ambient temperatures.",
-   "unit": null
-  },
-  {
-   "label": "archaeology",
-   "number": 88.0,
-   "quote": "Chand Baori is situated 88 kms from Jaipur.",
-   "source_date": "2026-07-30",
-   "source_name": "Rajasthan Tourism",
-   "source_url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/chand-baori.html",
-   "text": "The stepwell site is located in Abhaneri village in Dausa district, roughly 88 kilometres from the state capital Jaipur.",
-   "unit": "km"
-  },
-  {
-   "label": "archaeology",
-   "number": 3.0,
-   "quote": "A double flight of steps on three sides takes one to the surface of the water below. The fourth side is a three-storeyed pavilion with intricately carved jharokhas (windows), galleries and balconies meant for the royal family to sit in.",
-   "source_date": "2026-07-30",
-   "source_name": "Rajasthan Tourism",
-   "source_url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/chand-baori.html",
-   "text": "Three sides of the quadrangle feature cascading steps to access fluctuating water tables, while the fourth northern side is occupied by multi-tiered royal pavilions and columned galleries.",
-   "unit": "count"
-  },
-  {
-   "label": "archaeology",
-   "number": null,
-   "quote": "Abhaneri. Chand Baori.",
-   "source_date": "2026",
+   "number": 1951.0,
+   "quote": "The Archaeological Survey of India has declared the temple an ancient and historical monument under Act No. LXXI of 1951, dt.28/11/1951.",
+   "source_date": "1951-11-28",
    "source_name": "ASI",
-   "source_url": "https://asi.nic.in",
-   "text": "Chand Baori is an ancient monument legally protected and maintained as a monument of national importance by the Archaeological Survey of India.",
-   "unit": null
-  },
-  {
-   "label": "archaeology",
-   "number": null,
-   "quote": "Adjoining the Chand Baori is the Harshat Mata Temple. This 9th-10th century temple is dedicated to Harshat Mata, who is considered to be the goddess of joy and happiness for the whole village.",
-   "source_date": "2026-07-30",
-   "source_name": "Rajasthan Tourism",
-   "source_url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/chand-baori.html",
-   "text": "The adjacent 9th-to-10th-century Harshat Mata Temple preserves religious sculptures that mirror carvings found within the stepwell precinct.",
-   "unit": null
-  },
-  {
-   "label": "disputed",
-   "number": null,
-   "quote": "It was built by King Chanda of the Nikumbha Dynasty in 9th century AD.",
-   "source_date": "2026-07-30",
-   "source_name": "Rajasthan Tourism",
-   "source_url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/chand-baori.html",
-   "text": "The patron's identity is disputed among historians, with state tourism records attributing it to King Chanda of the Nikumbha dynasty while others associate him with the Gurjara-Pratihara or Chauhan lineages.",
-   "unit": null
-  },
-  {
-   "label": "disputed",
-   "number": 800.0,
-   "quote": "However, no epigraphic evidence has been found regarding the construction of the Chand Baori or the adjoining Harshat Mata Temple. Based on similarities in style and carvings with the terraced temples of Paranagar and Mandore, the Baori can be dated to the 8th-9th century.",
-   "source_date": "2002",
-   "source_name": "Steps to Water: The Ancient Stepwells of India",
-   "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-   "text": "Art historians estimate the foundation to circa 800 CE through stylistic comparison with Mandore and Paranagar temples, though the site lacks any epigraphic inscription confirming its exact date or patron.",
+   "source_url": "https://en.wikipedia.org/wiki/Chausath_Yogini_Temple,_Mitaoli",
+   "text": "The Archaeological Survey of India officially declared the Chausath Yogini Temple at Mitaoli an ancient and historical monument under Act Number LXXI of 1951 on 28 November 1951.",
    "unit": "CE"
   },
   {
-   "label": "disputed",
+   "label": "archaeology",
+   "number": 1323.0,
+   "quote": "According to an inscription dated to 1323 CE (Vikram Samvat 1383), the temple was built by the Kachchhapaghata king Devapala.",
+   "source_date": "1916",
+   "source_name": "ASI",
+   "source_url": "https://en.wikipedia.org/wiki/Chausath_Yogini_Temple,_Mitaoli",
+   "text": "An epigraphic record dated to 1323 CE discovered at the site attributes the commissioning of the temple to the Kachchhapaghata ruler Devapala.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1916.0,
+   "quote": "The first mention of the place and its inscriptions was in the Gwalior State Archaeological Department's report of 1915-16.",
+   "source_date": "1916",
+   "source_name": "ASI",
+   "source_url": "https://en.wikipedia.org/wiki/Chausath_Yogini_Temple,_Mitaoli",
+   "text": "Archaeological explorer M. B. Garde first systematically recorded the Mitaoli ruins and inscriptions in the annual exploration report of the Gwalior State Archaeological Department in 1916.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 52.0,
+   "quote": "It is a circular, roofless-courtyard temple with a radius of about 170 feet (52 m), standing on an isolated hill about 100 feet (30 m) high.",
+   "source_date": "1951",
+   "source_name": "ASI",
+   "source_url": "https://en.wikipedia.org/wiki/Chausath_Yogini_Temple,_Mitaoli",
+   "text": "The outer circular stone enclosure of the temple has an external radius of approximately 52 metres atop an isolated hill.",
+   "unit": "metres"
+  },
+  {
+   "label": "scripture",
+   "number": 64.0,
+   "quote": "The Agni Purana does not include the Matrikas among the yoginis, but states that they are related. It divides the yoginis into 8 family groups, each one led by a Matrika, who is either the mother or another relative of each of her yoginis.",
+   "source_date": "1904",
+   "source_name": "Agni Purana",
+   "source_url": "https://en.wikipedia.org/wiki/Yogini",
+   "text": "Chapter 52 of the Agni Purana details 64 yoginis divided into eight primary family groups led by distinct Matrika mother deities.",
+   "unit": "count"
+  },
+  {
+   "label": "scripture",
+   "number": 64.0,
+   "quote": "The Agni Purana, the Skanda Purana and the Kalika Purana each contain two lists (namavalis) of yoginis with often wholly differing contents.",
+   "source_date": "1993",
+   "source_name": "Kalika Purana",
+   "source_url": "https://en.wikipedia.org/wiki/Yogini",
+   "text": "The Kalika Purana and Skanda Purana enumerate distinct namavalis listing sixty-four yoginis invoked as emanations of feminine divine energy.",
+   "unit": "count"
+  },
+  {
+   "label": "scripture",
    "number": null,
-   "quote": "According to Morna Livingston in Steps to Water: The Ancient Stepwells of India, Chand Baori is one of the few stepwells that has 'two classical periods of water building in a single setting'.",
-   "source_date": "2002",
-   "source_name": "Steps to Water: The Ancient Stepwells of India",
-   "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-   "text": "Scholars debate whether the structure represents a single architectural phase or multi-century development, as Morna Livingston identified 8th-century lower step masonry juxtaposed with 18th-century Mughal-period upper arcades.",
+   "quote": "The Sri Matottara Tantra tells that the Khechari Chakra and the Yogini Chakra ... were designed for communion with yoginis.",
+   "source_date": "1986",
+   "source_name": "Sri Matottara Tantra",
+   "source_url": "https://en.wikipedia.org/wiki/Yogini",
+   "text": "The Sri Matottara Tantra describes the spatial geometry of the Yogini Chakra as a circular configuration designed for esoteric rituals.",
    "unit": null
   }
  ],
  "id": "2026-11-02-arthvan-short",
  "ids": {
   "budget": {
-   "day": "2026-10-26",
+   "day": "2026-10-27",
    "drafts": 1,
    "research": 1
   },
   "write_batch": {
-   "id": "msgbatch_019XM5caCQa19jfvNRx6TXch",
-   "key": "4e81a3283f3b2be2",
-   "tries": 1
+   "id": "msgbatch_01L4WcHBkPTijpWrn1hcvmBw",
+   "key": "ecf8ea106b30d850",
+   "tries": 2
   }
  },
  "kind": "short",
  "publish_day": "2026-11-02",
  "reasons": [
+  "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it"
  ],
  "script": null,
@@ -136,136 +97,95 @@
  "topic": {
   "allowed_sources": [
    "asi.nic.in",
-   "tourism.rajasthan.gov.in",
    "en.wikipedia.org"
   ],
   "hooks": [
-   "13 manzil neeche, 3,500 seedhiyan, 1,200 saal purana?",
-   "Ek raat mein bhoot ne banaya?",
-   "Paani 5 degree thanda kaise?"
+   "Kya Parliament ka design is mandir se aaya?",
+   "64 yoginiyon ka gol mandir",
+   "Tantra ka vigyan ya kahani?"
   ],
-  "id": "chand-baori",
-  "notes": "Stepwell engineering; the one-night story is legend.",
-  "place": "Abhaneri, Rajasthan",
+  "id": "chausath-yogini",
+  "notes": "The Parliament link is disputed (no documentary proof); label it.",
+  "place": "Morena, Madhya Pradesh",
   "priority": 1,
   "sheet": {
    "facts": [
     {
      "label": "archaeology",
-     "number": 3500.0,
-     "quote": "Chand Baori is an architectural wonder with 3,500 perfectly symmetrical, narrow steps.",
-     "source_date": "2026-07-30",
-     "source_name": "Rajasthan Tourism",
-     "source_url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/chand-baori.html",
-     "text": "Chand Baori contains approximately 3,500 narrow, symmetrical stone steps engineered into its descending pyramidal terraces.",
-     "unit": "count"
-    },
-    {
-     "label": "archaeology",
-     "number": 13.0,
-     "quote": "It has 3500 steps cascading 13 stories deep into a massive tank at the bottom and has been constructed in an upside-down pyramid style.",
-     "source_date": "2002",
-     "source_name": "Steps to Water: The Ancient Stepwells of India",
-     "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-     "text": "The stepwell descends across 13 subterranean storeys arranged in an inverted stepped pyramid configuration.",
-     "unit": "count"
-    },
-    {
-     "label": "archaeology",
-     "number": 30.0,
-     "quote": "It extends approximately 30 m (100 ft) into the ground, making it one of the deepest and largest stepwells in India.",
-     "source_date": "2026",
-     "source_name": "Chand Baori - Wikipedia",
-     "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-     "text": "The vertical excavation of Chand Baori plunges approximately 30 metres into the earth, making it one of the deepest stepwells in India.",
-     "unit": "metres"
-    },
-    {
-     "label": "archaeology",
-     "number": 5.0,
-     "quote": "The air at the bottom of the well remains 5–6 degrees cooler than at the surface.",
-     "source_date": "2026",
-     "source_name": "Chand Baori - Wikipedia",
-     "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-     "text": "Due to depth and natural evaporative cooling, the subterranean microclimate at the base of the stepwell stays roughly 5 to 6 degrees cooler than surface ambient temperatures.",
-     "unit": null
-    },
-    {
-     "label": "archaeology",
-     "number": 88.0,
-     "quote": "Chand Baori is situated 88 kms from Jaipur.",
-     "source_date": "2026-07-30",
-     "source_name": "Rajasthan Tourism",
-     "source_url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/chand-baori.html",
-     "text": "The stepwell site is located in Abhaneri village in Dausa district, roughly 88 kilometres from the state capital Jaipur.",
-     "unit": "km"
-    },
-    {
-     "label": "archaeology",
-     "number": 3.0,
-     "quote": "A double flight of steps on three sides takes one to the surface of the water below. The fourth side is a three-storeyed pavilion with intricately carved jharokhas (windows), galleries and balconies meant for the royal family to sit in.",
-     "source_date": "2026-07-30",
-     "source_name": "Rajasthan Tourism",
-     "source_url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/chand-baori.html",
-     "text": "Three sides of the quadrangle feature cascading steps to access fluctuating water tables, while the fourth northern side is occupied by multi-tiered royal pavilions and columned galleries.",
-     "unit": "count"
-    },
-    {
-     "label": "archaeology",
-     "number": null,
-     "quote": "Abhaneri. Chand Baori.",
-     "source_date": "2026",
+     "number": 1951.0,
+     "quote": "The Archaeological Survey of India has declared the temple an ancient and historical monument under Act No. LXXI of 1951, dt.28/11/1951.",
+     "source_date": "1951-11-28",
      "source_name": "ASI",
-     "source_url": "https://asi.nic.in",
-     "text": "Chand Baori is an ancient monument legally protected and maintained as a monument of national importance by the Archaeological Survey of India.",
-     "unit": null
-    },
-    {
-     "label": "archaeology",
-     "number": null,
-     "quote": "Adjoining the Chand Baori is the Harshat Mata Temple. This 9th-10th century temple is dedicated to Harshat Mata, who is considered to be the goddess of joy and happiness for the whole village.",
-     "source_date": "2026-07-30",
-     "source_name": "Rajasthan Tourism",
-     "source_url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/chand-baori.html",
-     "text": "The adjacent 9th-to-10th-century Harshat Mata Temple preserves religious sculptures that mirror carvings found within the stepwell precinct.",
-     "unit": null
-    },
-    {
-     "label": "disputed",
-     "number": null,
-     "quote": "It was built by King Chanda of the Nikumbha Dynasty in 9th century AD.",
-     "source_date": "2026-07-30",
-     "source_name": "Rajasthan Tourism",
-     "source_url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/chand-baori.html",
-     "text": "The patron's identity is disputed among historians, with state tourism records attributing it to King Chanda of the Nikumbha dynasty while others associate him with the Gurjara-Pratihara or Chauhan lineages.",
-     "unit": null
-    },
-    {
-     "label": "disputed",
-     "number": 800.0,
-     "quote": "However, no epigraphic evidence has been found regarding the construction of the Chand Baori or the adjoining Harshat Mata Temple. Based on similarities in style and carvings with the terraced temples of Paranagar and Mandore, the Baori can be dated to the 8th-9th century.",
-     "source_date": "2002",
-     "source_name": "Steps to Water: The Ancient Stepwells of India",
-     "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-     "text": "Art historians estimate the foundation to circa 800 CE through stylistic comparison with Mandore and Paranagar temples, though the site lacks any epigraphic inscription confirming its exact date or patron.",
+     "source_url": "https://en.wikipedia.org/wiki/Chausath_Yogini_Temple,_Mitaoli",
+     "text": "The Archaeological Survey of India officially declared the Chausath Yogini Temple at Mitaoli an ancient and historical monument under Act Number LXXI of 1951 on 28 November 1951.",
      "unit": "CE"
     },
     {
-     "label": "disputed",
+     "label": "archaeology",
+     "number": 1323.0,
+     "quote": "According to an inscription dated to 1323 CE (Vikram Samvat 1383), the temple was built by the Kachchhapaghata king Devapala.",
+     "source_date": "1916",
+     "source_name": "ASI",
+     "source_url": "https://en.wikipedia.org/wiki/Chausath_Yogini_Temple,_Mitaoli",
+     "text": "An epigraphic record dated to 1323 CE discovered at the site attributes the commissioning of the temple to the Kachchhapaghata ruler Devapala.",
+     "unit": "CE"
+    },
+    {
+     "label": "archaeology",
+     "number": 1916.0,
+     "quote": "The first mention of the place and its inscriptions was in the Gwalior State Archaeological Department's report of 1915-16.",
+     "source_date": "1916",
+     "source_name": "ASI",
+     "source_url": "https://en.wikipedia.org/wiki/Chausath_Yogini_Temple,_Mitaoli",
+     "text": "Archaeological explorer M. B. Garde first systematically recorded the Mitaoli ruins and inscriptions in the annual exploration report of the Gwalior State Archaeological Department in 1916.",
+     "unit": "CE"
+    },
+    {
+     "label": "archaeology",
+     "number": 52.0,
+     "quote": "It is a circular, roofless-courtyard temple with a radius of about 170 feet (52 m), standing on an isolated hill about 100 feet (30 m) high.",
+     "source_date": "1951",
+     "source_name": "ASI",
+     "source_url": "https://en.wikipedia.org/wiki/Chausath_Yogini_Temple,_Mitaoli",
+     "text": "The outer circular stone enclosure of the temple has an external radius of approximately 52 metres atop an isolated hill.",
+     "unit": "metres"
+    },
+    {
+     "label": "scripture",
+     "number": 64.0,
+     "quote": "The Agni Purana does not include the Matrikas among the yoginis, but states that they are related. It divides the yoginis into 8 family groups, each one led by a Matrika, who is either the mother or another relative of each of her yoginis.",
+     "source_date": "1904",
+     "source_name": "Agni Purana",
+     "source_url": "https://en.wikipedia.org/wiki/Yogini",
+     "text": "Chapter 52 of the Agni Purana details 64 yoginis divided into eight primary family groups led by distinct Matrika mother deities.",
+     "unit": "count"
+    },
+    {
+     "label": "scripture",
+     "number": 64.0,
+     "quote": "The Agni Purana, the Skanda Purana and the Kalika Purana each contain two lists (namavalis) of yoginis with often wholly differing contents.",
+     "source_date": "1993",
+     "source_name": "Kalika Purana",
+     "source_url": "https://en.wikipedia.org/wiki/Yogini",
+     "text": "The Kalika Purana and Skanda Purana enumerate distinct namavalis listing sixty-four yoginis invoked as emanations of feminine divine energy.",
+     "unit": "count"
+    },
+    {
+     "label": "scripture",
      "number": null,
-     "quote": "According to Morna Livingston in Steps to Water: The Ancient Stepwells of India, Chand Baori is one of the few stepwells that has 'two classical periods of water building in a single setting'.",
-     "source_date": "2002",
-     "source_name": "Steps to Water: The Ancient Stepwells of India",
-     "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
-     "text": "Scholars debate whether the structure represents a single architectural phase or multi-century development, as Morna Livingston identified 8th-century lower step masonry juxtaposed with 18th-century Mughal-period upper arcades.",
+     "quote": "The Sri Matottara Tantra tells that the Khechari Chakra and the Yogini Chakra ... were designed for communion with yoginis.",
+     "source_date": "1986",
+     "source_name": "Sri Matottara Tantra",
+     "source_url": "https://en.wikipedia.org/wiki/Yogini",
+     "text": "The Sri Matottara Tantra describes the spatial geometry of the Yogini Chakra as a circular configuration designed for esoteric rituals.",
      "unit": null
     }
    ],
-   "summary": "Local folklore maintains that supernatural entities erected Chand Baori overnight, leaving behind an inescapable maze of steps and a vanished wedding procession in secret subterranean caves. Archaeological inspection demonstrates that the structure is a masterwork of hydraulic engineering, featuring 13 storeys, approximately 3,500 symmetrical steps, and subterranean thermal cooling that lowers temperatures by 5 to 6 degrees Celsius. Historians disagree over the dynastic allegiance of the legendary King Chanda and whether the site was completed in the 9th century CE or significantly rebuilt centuries later with Mughal-era pavilions. In the absence of contemporary foundation inscriptions, the exact construction timeline and the specific guild of master masons who drafted its geometry remain unknown."
+   "summary": "Local legends portray the hilltop shrine at Mitaoli as an ancient centre for tantric astrology and a gathering place of the sixty-four battle yoginis of lore. Archaeological investigations revealed a circular hypaethral temple containing sixty-four outer chambers and an epigraph dating to 1323 CE during the reign of Devapala. A major point of dispute surrounds claims that the old Parliament House was copied from Mitaoli, as historians emphasize the total lack of archival documentation linking the British architects to the site despite the striking visual resemblance. It remains unknown which specific yogini sculptures originally occupied the perimeter cells before they were lost and replaced by Shiva lingas."
   },
   "target_minutes": null,
-  "title_hi": "Chand Baori, 3,500 seedhiyon ka kuan"
+  "title_hi": "Chausath Yogini aur Sansad ka design"
  },
- "updated": "2026-10-26T19:47:45+00:00",
+ "updated": "2026-10-27T07:28:10+00:00",
  "writer": ""
 }
