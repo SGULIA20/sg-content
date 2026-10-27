@@ -1,22 +1,42 @@
-"""Thumbnails that earn the click: a drawn reaction panel (a face with a strong emotion, the key object) plus at most three big words that the
-title does NOT say (youtube skill: information split, faces +20-30 % CTR, legible at 168×94). Longs get 16:9; Shorts get a 9:16 cover
-for Instagram and the YouTube Shorts thumbnail, plus a 16:9 for search and the channel page."""
+"""Thumbnails that earn the click (founder, 27 Oct 2026, after comparing ours with StudyIQ's and Mysterious Hindu's on the same topic):
+one dramatic, vivid picture of the story's most striking sight (a before/after split when the story is a change), the TOPIC NAME huge
+on a red banner, and two or three shock words with the number in a yellow tag (templates/thumb2.html). Longs get 16:9; Shorts get a
+9:16 cover for Instagram and the YouTube Shorts thumbnail, plus a 16:9 for search and the channel page. One picture per piece, as before:
+thumb, thumb_b and cover all reuse it. Letters: SG-MYTH-WORLD in Devanagari, Learning with SG in Roman; a long's click test (thumb_b)
+tries the other script with the same picture."""
 import re
 from pathlib import Path
 
-from . import art, cards, cast
+from . import art, cards
 from .pieces import Piece
 
-REACTION = ("Close-up, {scene}. Exaggerated, genuine emotion on the face: wide eyes, raised eyebrows, mouth open or jaw dropped; one key object "
-            "clearly visible; simple uncluttered background with strong contrast; the face takes most of the frame; same picture style as the panels; "
-            "no text in the picture.")
-MAX_WORDS, MAX_LEN = 3, 14
+DRAMA = ("{scene}. One dramatic, eye-catching sight that makes a stranger stop scrolling: cinematic wide or medium shot, vivid saturated "
+         "colours, strong contrast and dramatic light, hyper-detailed digital painting with a realistic look, the main subject large and "
+         "clear in the RIGHT half of the frame and the left side calmer. No face close-up, nobody looking at a phone. Deities only from behind, "
+         "at a distance, or as a statue or wall painting, never in close-up; no real people, no politicians, no logos. No text, no letters, no numbers.")
+MAX_WORDS, MAX_LEN, MAX_NAME = 3, 14, 16
+SCRIPT = {"arthvan": "hi", "sglearning": "en"}       # founder, 27 Oct 2026: myth in Devanagari, money in Roman
 
 
-def words_for(piece: Piece) -> list:
-    """Two or three punchy words for the image, taken from the writer's thumbnail block, else the title's starred keyword plus a number."""
+def _thumb(piece: Piece) -> dict:
+    return (piece.script or {}).get("thumbnail") or {}
+
+
+def name_for(piece: Piece, script: str | None = None) -> str:
+    """The topic name for the red banner (Saraswati / सरस्वती, Nvidia), in the given script; "" when the writer gave none."""
+    t = _thumb(piece)
+    script = script or SCRIPT.get(piece.channel, "en")
+    name = (t.get("name_hi") if script == "hi" else t.get("name")) or ""
+    return name.strip()[:MAX_NAME]
+
+
+def words_for(piece: Piece, script: str | None = None) -> list:
+    """Two or three punchy words from the writer's thumbnail block (Devanagari ones for "hi" when given), else the title's starred
+    keyword plus a number."""
     s = piece.script or {}
-    words = [w.strip() for w in (s.get("thumbnail") or {}).get("words", []) if w and w.strip()]
+    script = script or SCRIPT.get(piece.channel, "en")
+    t = _thumb(piece)
+    words = [w.strip() for w in ((script == "hi" and t.get("words_hi")) or t.get("words") or []) if w and w.strip()]
     if not words:
         title = s.get("title", "")
         key = re.findall(r"\*(.+?)\*", title)
@@ -30,14 +50,11 @@ def words_for(piece: Piece) -> list:
     return [w[:MAX_LEN] for w in words][:MAX_WORDS]
 
 
-def words_b(piece: Piece) -> list:
-    """The second thumbnail's words for the click test (founder, 23 Oct 2026): the title's own first words, so the test asks
-    "the writer's punch words or the title's words?". [] when they would be the same as the first thumbnail."""
-    s = piece.script or {}
-    title = (s.get("captions", {}).get("youtube", {}).get("title") or s.get("title") or "")
-    words = [w for w in re.sub(r"[^\w\s₹%]", " ", title).split() if len(w) > 1][:MAX_WORDS]
-    words = [w[:MAX_LEN] for w in words]
-    return words if words and [w.lower() for w in words] != [w.lower() for w in words_for(piece)] else []
+def other_script(piece: Piece) -> str | None:
+    """The script the click test tries second, when the writer gave the name in both; else None."""
+    other = "en" if SCRIPT.get(piece.channel, "en") == "hi" else "hi"
+    t = _thumb(piece)
+    return other if (t.get("name") and t.get("name_hi")) else None
 
 
 def scene_for(piece: Piece) -> str:
@@ -52,20 +69,24 @@ def scene_for(piece: Piece) -> str:
     return (twist.get("visual") or {}).get("prompt") or twist.get("vo", "")
 
 
-def make(piece: Piece, out_dir: Path, paint=art.paint, render=cards.render, cast_refs=cast.refs_for) -> dict:
-    """Paints the reaction panel once and renders thumb.jpg (16:9) and, for Shorts, cover.jpg (9:16). Returns their paths."""
+def paint_prompt(piece: Piece) -> str:
+    """The thumbnail picture's prompt; the batch job in pipeline.picture_jobs builds it the same way so the cache is hit."""
+    return DRAMA.format(scene=scene_for(piece).rstrip(". "))
+
+
+def make(piece: Piece, out_dir: Path, paint=art.paint, render=cards.render, cast_refs=None) -> dict:
+    """Paints the picture once and renders thumb.jpg (16:9), for longs thumb_b.jpg (the other script) and for Shorts cover.jpg
+    (9:16). Returns their paths. cast_refs is accepted for old callers and not used: the picture is a sight, not our cast's faces."""
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    scene = scene_for(piece)
-    prompt = art.style_prompt(piece.channel, REACTION.format(scene=scene))
     aspect = "9:16" if piece.kind == "short" else "16:9"
-    panel = paint(prompt, out_dir / "reaction.png", aspect=aspect, refs=cast_refs(scene, channel=piece.channel))
-    words = words_for(piece)
-    focus = "50% 22%" if piece.kind == "short" else "50% 50%"               # a portrait panel cropped to 16:9 keeps the face, not the belly
-    out = {"thumb": render("thumb2", {"words": words, "panel_path": panel, "focus": focus}, out_dir / "thumb.jpg", (1280, 720))}
-    alt = words_b(piece) if piece.kind == "long" else []
-    if alt:                                                                   # same panel, other words: no extra picture cost
-        out["thumb_b"] = render("thumb2", {"words": alt, "panel_path": panel, "focus": focus}, out_dir / "thumb_b.jpg", (1280, 720))
+    panel = paint(paint_prompt(piece), out_dir / "reaction.png", aspect=aspect)
+    focus = "50% 30%" if piece.kind == "short" else "50% 50%"
+    data = lambda script, f: {"name": name_for(piece, script), "words": words_for(piece, script), "panel_path": panel, "focus": f}
+    out = {"thumb": render("thumb2", data(None, focus), out_dir / "thumb.jpg", (1280, 720))}
+    alt = other_script(piece) if piece.kind == "long" else None
+    if alt:                                                                   # same picture, other letters: no extra picture cost
+        out["thumb_b"] = render("thumb2", data(alt, focus), out_dir / "thumb_b.jpg", (1280, 720))
     if piece.kind == "short":
-        out["cover"] = render("thumb2", {"words": words, "panel_path": panel, "focus": "50% 50%"}, out_dir / "cover.jpg", (1080, 1920))
+        out["cover"] = render("thumb2", data(None, "50% 50%"), out_dir / "cover.jpg", (1080, 1920))
     return out

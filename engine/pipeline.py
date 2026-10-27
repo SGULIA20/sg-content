@@ -208,21 +208,19 @@ def _label_chips(piece: Piece, deps: Deps, out_dir: Path) -> dict:
 
 
 def picture_jobs(piece: Piece, deps: Deps) -> list:
-    """[(prompt, refs, aspect)] for every drawn panel of a story piece plus its thumbnail reaction, exactly as the per-scene calls build them."""
+    """[(prompt, refs, aspect)] for every drawn panel of a story piece plus its thumbnail picture, exactly as the per-scene calls build them."""
     from . import thumbs
     jobs = []
     for sc in (piece.script or {}).get("scenes", []):
         prompt = (sc.get("visual") or {}).get("prompt") or piece.script["hook"]
         refs = deps.cast_refs(prompt, channel=piece.channel) if deps.cast_refs else []
         jobs.append((art.style_prompt(piece.channel, prompt), list(refs), "4:5"))
-    scene = thumbs.scene_for(piece)
-    refs = deps.cast_refs(scene, channel=piece.channel) if deps.cast_refs else []
-    jobs.append((art.style_prompt(piece.channel, thumbs.REACTION.format(scene=scene)), list(refs), "9:16" if piece.kind == "short" else "16:9"))
+    jobs.append((thumbs.paint_prompt(piece), [], "9:16" if piece.kind == "short" else "16:9"))
     return jobs
 
 
 def _thumb(piece: Piece, deps: Deps, out_dir: Path) -> Path:
-    """A drawn reaction panel with two or three shock words (engine.thumbs); Shorts also get a 9:16 cover for Instagram."""
+    """The topic-name thumbnail (engine.thumbs); Shorts also get a 9:16 cover for Instagram."""
     from . import thumbs
     if is_story(piece):
         return thumbs.make(piece, out_dir, paint=deps.paint, render=deps.render_card, cast_refs=deps.cast_refs or (lambda s, **kw: []))["thumb"]

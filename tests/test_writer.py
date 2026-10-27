@@ -24,7 +24,7 @@ def good_script():
                      "instagram": {"caption": "Oil 100 dollar. " + DISCLAIMER + " Share karo us dost ko jo petrol daily bharta hai.", "hashtags": ["#PaiseKiKhabar", "#SeedhiBaat", "#CrudeOil", "#EMI", "#RBI"]},
                      "threads": {"text": "Oil 100 dollar?"}},
         "carousel": False,
-        "thumbnail": {"words": ["100 DOLLAR", "EMI?"], "scene": "PAPA stares at the petrol pump meter, eyes wide, mouth open"},
+        "thumbnail": {"name": "PETROL", "name_hi": "पेट्रोल", "words": ["100 DOLLAR", "EMI?"], "words_hi": ["100 डॉलर", "EMI?"], "scene": "LEFT: a petrol pump meter at 70 rupees; RIGHT: the same meter at 100"},
     }
 
 
@@ -188,7 +188,7 @@ def test_schema_sent_to_claude_has_no_keyword_the_api_rejects():
     sent = schema.api_schema(schema.PIECE_SCHEMA)
     bad = [(k, v) for k, v in _keys(sent) if k in schema.UNSUPPORTED or (k == "minItems" and v not in (0, 1))]
     assert bad == []
-    assert schema.validate({**good_script(), "thumbnail": {"words": ["A", "B", "C", "D"], "scene": "x"}}) != []   # still enforced locally
+    assert schema.validate({**good_script(), "thumbnail": {**good_script()["thumbnail"], "words": ["A", "B", "C", "D"]}}) != []   # still enforced locally
 
 
 def test_cut_off_gemini_reply_is_a_writer_error_not_a_crash(tmp_path):

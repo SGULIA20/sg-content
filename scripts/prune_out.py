@@ -12,7 +12,8 @@ from datetime import date, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-KEEP_IN_OUT = {"reel.mp4", "story.mp4", "thumb.jpg", "captions.ass"}
+KEEP_IN_OUT = {"reel.mp4", "story.mp4", "thumb.jpg", "captions.ass", "cover.jpg", "thumb_b.jpg"}   # 27 Oct 2026: the Instagram cover and
+# the click test's second thumbnail were pruned before use, so Reels showed a video frame and the test never ran
 
 
 def prune(days: int, today: date | None = None) -> list:
