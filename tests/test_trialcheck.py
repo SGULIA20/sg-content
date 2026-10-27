@@ -14,7 +14,7 @@ def _piece(root, day, trial="SS_PERFORMANCE", reel="r1"):
 def _call(stamps):
     def call(method, path, token, params=None):
         return {"timestamp": stamps[path.strip("/")], "permalink": f"https://instagram.com/reel/{path.strip('/')}",
-                "like_count": 12, "comments_count": 3}
+                "like_count": 12, "comments_count": 3, "is_shared_to_feed": path.strip("/") != "due"}
     return call
 
 
@@ -27,9 +27,9 @@ def test_lists_only_trial_reels_whose_72_hours_ended_in_the_last_day(tmp_path):
     out = trialcheck.lines(NOW, tmp_path, {"IG_ACCESS_TOKEN": "t"}, call=_call(stamps),
                            numbers=lambda mid, tok: {"views": 1234, "shares": 4, "saved": 2})
     text = "\n".join(out)
-    assert "Learning with SG 24 Oct: 1,234 views, 12 likes, 3 comments, 4 shares, 2 saves" in text
+    assert "Learning with SG 24 Oct: 👉 NOT shared" in text and "1,234 views, 12 likes, 3 comments, 4 shares, 2 saves" in text
     assert "reel/due" in text and "young" not in text and "old" not in text and "plain" not in text
-    assert "Share to followers" in text
+    assert "👉 NOT shared: open it and tap Share to followers" in text
 
 
 def test_nothing_due_or_no_token_means_no_lines(tmp_path, monkeypatch):
@@ -53,4 +53,4 @@ def test_app_trial_reels_from_the_app_log_are_listed_too(tmp_path):
     out = trialcheck.lines(NOW, tmp_path, {"IG_ACCESS_TOKEN": "t"}, call=_call({"app1": "2026-10-24T14:44:00+0000"}),
                            numbers=lambda mid, tok: {"views": 50}, app_log=log)
     text = "\n".join(out)
-    assert "Waypoint 24 Oct: 50 views" in text and "plainapp" not in text
+    assert "Waypoint 24 Oct: ✅ shared with followers" in text and "50 views" in text and "plainapp" not in text
