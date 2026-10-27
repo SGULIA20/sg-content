@@ -1,0 +1,124 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 1.0,
+   "quote": "The Centre eases GST rules on post-sales discounts from November 1, no longer requiring a prior agreement, which is expected to help FMCG and pharma companies and retailers.",
+   "source_date": "2026-10-27",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/indicators/centre-eases-gst-rules-for-post-sales-discounts-no-prior-agreement-needed-from-november-1/articleshow/135243003.cms",
+   "text": "The Centre has eased GST rules on post-sales discounts starting November 1 without requiring a prior agreement, directly supporting retail discount flexibility on everyday household goods across FMCG and pharma sectors.",
+   "unit": "November"
+  },
+  {
+   "label": "reported",
+   "number": 26.0,
+   "quote": "India plans to implement easing rules related to the goods and services tax for post-sale discounts while speeding up provisional refunds for businesses facing inverted duty structures from November 1, according to a government notification dated October 26.",
+   "source_date": "2026-10-27",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/policy/india-to-implement-changes-to-gst-from-november-1/articleshow/135229166.cms",
+   "text": "The government issued the official notification on October 26 to implement revised GST discount rules and expedite provisional refunds.",
+   "unit": "October"
+  },
+  {
+   "label": "reported",
+   "number": 15.0,
+   "quote": "Penalties under these provisions range from 15% to 100% of the tax amount, depending on when the payment is made in relation to the show cause notice.",
+   "source_date": "2026-10-27",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/policy/gst-officers-must-prove-intent-to-evade-tax-before-invoking-fraud-provision-cbic/articleshow/135229488.cms",
+   "text": "Statutory penalties for tax demands under fraud or suppression provisions start at 15% of the assessed tax amount.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 100.0,
+   "quote": "Penalties under these provisions range from 15% to 100% of the tax amount, depending on when the payment is made in relation to the show cause notice.",
+   "source_date": "2026-10-27",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/policy/gst-officers-must-prove-intent-to-evade-tax-before-invoking-fraud-provision-cbic/articleshow/135229488.cms",
+   "text": "Maximum penalties in GST fraud and suppression cases can reach up to 100% of the underlying tax amount.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-03-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-10-27",
+   "drafts": 1,
+   "research": 1
+  },
+  "write_batch": {
+   "at": 1793128649.5798225,
+   "id": "msgbatch_01GuL1pu1cWQ4jLt74cTiJtw",
+   "key": "2aa36f3c451e8436",
+   "patch": false,
+   "tries": 1
+  }
+ },
+ "kind": "short",
+ "publish_day": "2026-11-03",
+ "reasons": [
+  "draft cooking in Claude's batch lane; the next run collects it"
+ ],
+ "script": null,
+ "status": "writing",
+ "timings": [],
+ "topic": {
+  "link": "https://economictimes.indiatimes.com/news/economy/indicators/centre-eases-gst-rules-for-post-sales-discounts-no-prior-agreement-needed-from-november-1/articleshow/135243003.cms",
+  "published": "2026-10-27T17:58:10+00:00",
+  "rank": 3,
+  "sheet": {
+   "facts": [
+    {
+     "label": "reported",
+     "number": 1.0,
+     "quote": "The Centre eases GST rules on post-sales discounts from November 1, no longer requiring a prior agreement, which is expected to help FMCG and pharma companies and retailers.",
+     "source_date": "2026-10-27",
+     "source_name": "ET",
+     "source_url": "https://economictimes.indiatimes.com/news/economy/indicators/centre-eases-gst-rules-for-post-sales-discounts-no-prior-agreement-needed-from-november-1/articleshow/135243003.cms",
+     "text": "The Centre has eased GST rules on post-sales discounts starting November 1 without requiring a prior agreement, directly supporting retail discount flexibility on everyday household goods across FMCG and pharma sectors.",
+     "unit": "November"
+    },
+    {
+     "label": "reported",
+     "number": 26.0,
+     "quote": "India plans to implement easing rules related to the goods and services tax for post-sale discounts while speeding up provisional refunds for businesses facing inverted duty structures from November 1, according to a government notification dated October 26.",
+     "source_date": "2026-10-27",
+     "source_name": "ET",
+     "source_url": "https://economictimes.indiatimes.com/news/economy/policy/india-to-implement-changes-to-gst-from-november-1/articleshow/135229166.cms",
+     "text": "The government issued the official notification on October 26 to implement revised GST discount rules and expedite provisional refunds.",
+     "unit": "October"
+    },
+    {
+     "label": "reported",
+     "number": 15.0,
+     "quote": "Penalties under these provisions range from 15% to 100% of the tax amount, depending on when the payment is made in relation to the show cause notice.",
+     "source_date": "2026-10-27",
+     "source_name": "ET",
+     "source_url": "https://economictimes.indiatimes.com/news/economy/policy/gst-officers-must-prove-intent-to-evade-tax-before-invoking-fraud-provision-cbic/articleshow/135229488.cms",
+     "text": "Statutory penalties for tax demands under fraud or suppression provisions start at 15% of the assessed tax amount.",
+     "unit": "pct"
+    },
+    {
+     "label": "reported",
+     "number": 100.0,
+     "quote": "Penalties under these provisions range from 15% to 100% of the tax amount, depending on when the payment is made in relation to the show cause notice.",
+     "source_date": "2026-10-27",
+     "source_name": "ET",
+     "source_url": "https://economictimes.indiatimes.com/news/economy/policy/gst-officers-must-prove-intent-to-evade-tax-before-invoking-fraud-provision-cbic/articleshow/135229488.cms",
+     "text": "Maximum penalties in GST fraud and suppression cases can reach up to 100% of the underlying tax amount.",
+     "unit": "pct"
+    }
+   ],
+   "summary": "The Central Government has overhauled GST regulations from November 1 by eliminating the requirement of prior agreements for post-sale discounts and streamlining the issuance of credit notes. By removing procedural tax hurdles and litigation risks for FMCG, consumer durables, and pharmaceutical companies, suppliers can pass volume-based incentives and promotional pricing down to retail shelves more freely. For salaried households, these frictionless commercial discounts help keep everyday consumer prices and family shopping budgets competitive without artificial tax markups."
+  },
+  "source": "ET Economy",
+  "summary": "The Centre eases GST rules on post-sales discounts from November 1, no longer requiring a prior agreement, which is expected to help FMCG and pharma companies and retailers.",
+  "target_minutes": null,
+  "title": "Centre eases GST rules for post-sales discounts, no prior agreement needed from November 1"
+ },
+ "updated": "2026-10-27T19:27:37+00:00",
+ "writer": ""
+}
