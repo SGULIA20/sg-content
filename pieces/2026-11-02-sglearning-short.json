@@ -2,13 +2,33 @@
  "channel": "sglearning",
  "facts": [
   {
-   "label": "reported",
-   "number": 2.0,
-   "quote": "The results will also come two days after the scheduled stock market debut of Reliance's telecom and digital services subsidiary, Jio Platforms, on October 28.",
+   "label": "official",
+   "number": 14159.0,
+   "quote": "Accordingly, the redemption price for premature redemption due on October 28, 2026, shall be ₹14,159/- (Rupees Fourteen Thousand One Hundred and Fifty-Nine Only) per unit of SGB based on the simple average of closing price of gold for the three business days i.e., October 23, October 26, and October 27, 2026.",
    "source_date": "2026-10-27",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/ril-to-announce-q2-results-on-october-30-board-to-also-consider-fundraising/articleshow/135237289.cms",
-   "text": "Reliance Industries scheduled its quarterly financial results meeting two days after the public market listing of Jio Platforms.",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872",
+   "text": "The Reserve Bank of India set the premature redemption price for SGB 2020-21 Series I at 14,159 INR per unit for redemption due on October 28, 2026.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 5.0,
+   "quote": "In terms of GOI notification F.No. 4(4)-B(W&M)/2020 dated April 13, 2020 (SGB 2020-21 Series I - Issue date April 28, 2020) on Sovereign Gold Bond Scheme, premature redemption of Gold Bond may be permitted after fifth year from the date of issue of such Gold Bond on the date on which interest is payable.",
+   "source_date": "2026-10-27",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872",
+   "text": "Under Sovereign Gold Bond regulations, premature redemption is permitted after 5 years from the date of issuance on interest payout dates.",
+   "unit": "years"
+  },
+  {
+   "label": "official",
+   "number": 3.0,
+   "quote": "Further, the redemption price of SGB shall be based on simple average of closing price of gold of 999 purity of previous three business days from the date of redemption, as published by the India Bullion and Jewellers Association Ltd (IBJA).",
+   "source_date": "2026-10-27",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872",
+   "text": "The Sovereign Gold Bond premature redemption value is calculated using the simple average closing price of 999 purity gold across 3 business days preceding redemption.",
    "unit": "days"
   }
  ],
@@ -16,18 +36,19 @@
  "ids": {
   "budget": {
    "day": "2026-10-27",
-   "drafts": 3,
-   "research": 3
+   "drafts": 4,
+   "research": 4
   },
   "write_batch": {
-   "id": "msgbatch_01QX3Y8jsepKN652EAHcUJEL",
-   "key": "74d3e3e82e02e53d",
-   "tries": 4
+   "id": "msgbatch_01Cr7ZmFHpbSXXg8nJTLfKS4",
+   "key": "c0a1f852da1134d2",
+   "tries": 5
   }
  },
  "kind": "short",
  "publish_day": "2026-11-02",
  "reasons": [
+  "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it",
@@ -37,29 +58,49 @@
  "status": "writing",
  "timings": [],
  "topic": {
-  "link": "https://economictimes.indiatimes.com/markets/stocks/earnings/ril-to-announce-q2-results-on-october-30-board-to-also-consider-fundraising/articleshow/135237289.cms",
-  "published": "2026-10-27T14:14:58+00:00",
-  "rank": 3,
+  "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872",
+  "published": "2026-10-27T17:50:00+00:00",
+  "rank": 5,
   "sheet": {
    "facts": [
     {
-     "label": "reported",
-     "number": 2.0,
-     "quote": "The results will also come two days after the scheduled stock market debut of Reliance's telecom and digital services subsidiary, Jio Platforms, on October 28.",
+     "label": "official",
+     "number": 14159.0,
+     "quote": "Accordingly, the redemption price for premature redemption due on October 28, 2026, shall be ₹14,159/- (Rupees Fourteen Thousand One Hundred and Fifty-Nine Only) per unit of SGB based on the simple average of closing price of gold for the three business days i.e., October 23, October 26, and October 27, 2026.",
      "source_date": "2026-10-27",
-     "source_name": "ET",
-     "source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/ril-to-announce-q2-results-on-october-30-board-to-also-consider-fundraising/articleshow/135237289.cms",
-     "text": "Reliance Industries scheduled its quarterly financial results meeting two days after the public market listing of Jio Platforms.",
+     "source_name": "RBI",
+     "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872",
+     "text": "The Reserve Bank of India set the premature redemption price for SGB 2020-21 Series I at 14,159 INR per unit for redemption due on October 28, 2026.",
+     "unit": "INR"
+    },
+    {
+     "label": "official",
+     "number": 5.0,
+     "quote": "In terms of GOI notification F.No. 4(4)-B(W&M)/2020 dated April 13, 2020 (SGB 2020-21 Series I - Issue date April 28, 2020) on Sovereign Gold Bond Scheme, premature redemption of Gold Bond may be permitted after fifth year from the date of issue of such Gold Bond on the date on which interest is payable.",
+     "source_date": "2026-10-27",
+     "source_name": "RBI",
+     "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872",
+     "text": "Under Sovereign Gold Bond regulations, premature redemption is permitted after 5 years from the date of issuance on interest payout dates.",
+     "unit": "years"
+    },
+    {
+     "label": "official",
+     "number": 3.0,
+     "quote": "Further, the redemption price of SGB shall be based on simple average of closing price of gold of 999 purity of previous three business days from the date of redemption, as published by the India Bullion and Jewellers Association Ltd (IBJA).",
+     "source_date": "2026-10-27",
+     "source_name": "RBI",
+     "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872",
+     "text": "The Sovereign Gold Bond premature redemption value is calculated using the simple average closing price of 999 purity gold across 3 business days preceding redemption.",
      "unit": "days"
     }
    ],
-   "summary": "Reliance Industries will announce its September-quarter earnings on October 30, 2026, while also deliberating on a new debt fundraising plan through non-convertible debentures. Because Reliance constitutes roughly nine percent of key equity indices, its earnings trajectory directly dictates the performance of index funds and retirement SIPs held by salaried families. Furthermore, the company's capital allocation choices and operational pricing in telecom and retail fuel have an immediate effect on monthly household utility and commuting expenses."
+   "summary": "The Reserve Bank of India has fixed the premature redemption price for the Sovereign Gold Bond 2020-21 Series I at ₹14,159 per unit for redemption due on October 28, 2026. Salaried households that entered this tranche online at ₹4,589 per gram in April 2020 have secured capital appreciation of over 208 percent alongside recurring 2.5 percent semi-annual interest payouts. However, investors choosing early exit must carefully evaluate post-tax returns, as amended rules restrict full capital gains tax exemptions to original subscribers who hold their bonds until the full eight-year maturity."
   },
-  "source": "ET Markets",
-  "summary": "Reliance Industries will announce its September-quarter results on October 30, alongside considering fundraising through non-convertible debentures. Investors will track performance across O2C, telecom, retail and energy businesses amid share price weakness and market uncertainty.",
+  "source": "RBI Press Releases",
+  "summary": "  In terms of GOI notification F.No. 4(4)-B(W&amp;M)/2020 dated April 13, 2020 (SGB 2020-21 Series I - Issue date April 28, 2020) on Sovereign Gold Bond Scheme, premature redemption of Gold Bond may be permitted after fifth year from the date of issue of such Gold Bond on the date on which interest is payable. Accordingly, the next due date of premature redemption of the above tranche shall be on October 28, 2026.      2. Further, the redemption price of SGB shall be based on simple average of closing price of gold of 999 purity of previous three business days from the date of redemption, as published by the India Bullion and Jewellers Association Ltd (IBJA). Accordingly, the redemption price for premature redemption due on October 28, 2026, shall be &#8377;14,159/- (Rupees Fourteen Thousand One Hundred and Fifty-Nine Only) per unit of SGB based on the simple average of closing price of gold for the three business days i.e., October 23, October 26, and October 27, 2026.      Ajit Prasad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Deputy General Manager      (Communications)&nbsp;&nbsp;&nbsp;&nbsp;      Press Release: 2026-2027/1394",
   "target_minutes": null,
-  "title": "RIL to announce Q2 results on October 30, board to also consider fundraising"
+  "title": "Premature redemption under Sovereign Gold Bond (SGB) Scheme - Redemption Price for premature redemption of SGB 2020-21 Series I due on October 28, 2026"
  },
- "updated": "2026-10-27T14:52:22+00:00",
+ "updated": "2026-10-27T15:17:39+00:00",
  "writer": ""
 }
