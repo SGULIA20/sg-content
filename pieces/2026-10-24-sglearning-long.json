@@ -485,10 +485,16 @@
    }
   ],
   "thumbnail": {
-   "scene": "BHAI stares at his phone glowing with a long credit card statement late at night, eyes wide, mouth open",
+   "name": "CREDIT CARD",
+   "name_hi": "क्रेडिट कार्ड",
+   "scene": "A shiny credit card caught inside a heavy iron bear trap surrounded by endless towering stacks of red-inked bank statements.",
    "words": [
-    "50 DIN",
-    "GAYAB"
+    "4 SAAL",
+    "TRAP"
+   ],
+   "words_hi": [
+    "4 साल",
+    "ट्रैप"
    ]
   },
   "title": "*Minimum due* bhara, phir bhi karz badha 💳"

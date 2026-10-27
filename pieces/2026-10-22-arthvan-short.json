@@ -296,10 +296,16 @@
    }
   ],
   "thumbnail": {
-   "scene": "A PILGRIM stares up at the snow-capped Kailash peak, eyes wide, mouth open, gripping prayer beads tight in both hands",
+   "name": "KAILASH",
+   "name_hi": "कैलाश",
+   "scene": "The towering snow-covered black pyramid peak of Mount Kailash glowing golden in the morning sun under a deep dark Tibetan sky, standing untouched and completely desolate.",
    "words": [
-    "6,638m",
-    "KOI NAHI"
+    "6,638M",
+    "SECRET"
+   ],
+   "words_hi": [
+    "6,638M",
+    "रहस्य"
    ]
   },
   "title": "Kailash par koi *kyon* nahi chadha? 🤯"

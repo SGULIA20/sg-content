@@ -555,10 +555,16 @@
    }
   ],
   "thumbnail": {
-   "scene": "MUMMY stares at her glowing phone screen, eyes wide with shock, one hand over her mouth",
+   "name": "UPI FRAUD",
+   "name_hi": "यूपीआई फ्रॉड",
+   "scene": "A smartphone lying flat on a wooden table glowing with a crimson bank debit notification alongside an empty wallet and scattered rupee notes.",
    "words": [
-    "₹93,195",
-    "GAYAB"
+    "93,195",
+    "LOOT"
+   ],
+   "words_hi": [
+    "93,195",
+    "लूट"
    ]
   },
   "title": "Refund ke liye *PIN* kyun maanga? 📱"

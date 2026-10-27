@@ -218,10 +218,16 @@
    }
   ],
   "thumbnail": {
-   "scene": "PAPA stares at a gold bangle in his open palm, eyes wide, mouth open in disbelief",
+   "name": "GOLD",
+   "name_hi": "गोल्ड",
+   "scene": "A heavy stack of shiny gold bars cracking through a glass table over a plunging red market graph, surrounded by burning brass Diwali diyas.",
    "words": [
-    "21.43%",
-    "LOST"
+    "21%",
+    "CRASH"
+   ],
+   "words_hi": [
+    "21%",
+    "क्रैश"
    ]
   },
   "title": "Gold ka *bhaav* gira, ab kya karein? 🪔"

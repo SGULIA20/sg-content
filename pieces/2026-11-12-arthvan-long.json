@@ -779,10 +779,16 @@
    }
   ],
   "thumbnail": {
-   "scene": "THE METALLURGIST leans close to the dark iron pillar holding a magnifying glass, eyes wide and lips parted in wonder",
+   "name": "IRON PILLAR",
+   "name_hi": "लौह स्तंभ",
+   "scene": "The towering dark Iron Pillar of Delhi standing resilient under heavy monsoon rain, its ancient metallic surface glistening completely smooth and free of rust.",
    "words": [
-    "0.25%",
+    "1,600 SAAL",
     "SECRET"
+   ],
+   "words_hi": [
+    "1,600 साल",
+    "रहस्य"
    ]
   },
   "title": "Delhi ka *loha* jo zang nahi khata 🤯"

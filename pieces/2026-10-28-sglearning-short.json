@@ -273,10 +273,16 @@
    }
   ],
   "thumbnail": {
-   "scene": "BHAI stares at his phone showing a loan rate, eyes wide, mouth open, at the breakfast table",
+   "name": "REPO RATE",
+   "name_hi": "रेपो रेट",
+   "scene": "LEFT: A towering Reserve Bank of India vault releasing a massive glowing 125 basis point discount banner; RIGHT: A commercial bank counter leaking only a tiny fraction of the cash relief onto stacked loan contracts.",
    "words": [
-    "ONLY 93",
-    "GAYAB"
+    "125 BPS",
+    "GAYAB?"
+   ],
+   "words_hi": [
+    "125 BPS",
+    "गायब?"
    ]
   },
   "title": "RBI ne byaaj ghataya, par *EMI* utni nahi? 📉"

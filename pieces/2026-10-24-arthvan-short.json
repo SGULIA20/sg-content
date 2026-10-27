@@ -265,10 +265,16 @@
    }
   ],
   "thumbnail": {
-   "scene": "The ARCHAEOLOGIST stares at a grey painted pottery shard in her palm, eyes wide, a faint spiral battle maze glowing behind her",
+   "name": "CHAKRAVYUH",
+   "name_hi": "चक्रव्यूह",
+   "scene": "LEFT: an ancient army arranged in seven massive swirling spiral rings across a smoky battlefield; RIGHT: the dry excavated archaeological mound at Kurukshetra showing exposed ancient brick ruins.",
    "words": [
-    "13 DIN",
+    "DAY 13",
     "TRAP"
+   ],
+   "words_hi": [
+    "13वां दिन",
+    "ट्रैप"
    ]
   },
   "title": "Kurukshetra mein *Chakravyuh* ka asli naksha? 🤯"

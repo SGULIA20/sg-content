@@ -449,10 +449,16 @@
    }
   ],
   "thumbnail": {
-   "scene": "PAPA holds a single FD receipt close to his face under a table lamp at night, eyes wide with shock, mouth slightly open",
+   "name": "BANK FD",
+   "name_hi": "बैंक एफडी",
+   "scene": "LEFT: a full grocery basket overflowing with fresh food and dairy beside a single bank note; RIGHT: the same basket nearly empty with just one withered vegetable beside a thick stack of fixed deposit certificates.",
    "words": [
-    "30% TAX",
-    "GAYAB"
+    "5.9%",
+    "TRAP"
+   ],
+   "words_hi": [
+    "5.9%",
+    "ट्रैप"
    ]
   },
   "title": "Papa ki FD *chhoti* kyun ho gayi? 📉"

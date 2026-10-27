@@ -207,10 +207,16 @@
    }
   ],
   "thumbnail": {
-   "scene": "The ARCHAEOLOGIST kneels in a dusty trench, gently lifting an ancient skull into the light, eyes wide in awe, mouth slightly open",
+   "name": "RAKHIGARHI",
+   "name_hi": "राखीगढ़ी",
+   "scene": "LEFT: a bustling Bronze Age Harappan city with organized red-brick streets and active craft workshops; RIGHT: the modern excavation trench in Haryana cutting through dusty earth to reveal an ancient skeletal burial surrounded by terracotta pots.",
    "words": [
-    "350",
-    "LOST CITY"
+    "350 HECTARE",
+    "SECRET"
+   ],
+   "words_hi": [
+    "350 हेक्टेयर",
+    "रहस्य"
    ]
   },
   "title": "Rakhigarhi ki aurat ka *DNA* kya bolta hai? 🤯"

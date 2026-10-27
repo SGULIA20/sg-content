@@ -499,10 +499,16 @@
    }
   ],
   "thumbnail": {
-   "scene": "MUMMY stares at her gold bangles on a jeweller's weighing scale, eyes wide, mouth slightly open",
+   "name": "GOLD BOND",
+   "name_hi": "गोल्ड बॉन्ड",
+   "scene": "LEFT: heavy engraved gold bangles resting on a jeweller's precision weighing scale on a glass counter; RIGHT: a crisp Sovereign Gold Bond certificate stamped with an official central bank emblem.",
    "words": [
-    "₹2,000",
-    "GAYAB"
+    "2,000",
+    "LOOT"
+   ],
+   "words_hi": [
+    "2,000",
+    "लूट"
    ]
   },
   "title": "Mummy ka *sona* ya gold bond, kaun kamata? 💰"

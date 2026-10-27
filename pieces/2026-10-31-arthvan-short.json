@@ -341,10 +341,16 @@
    }
   ],
   "thumbnail": {
-   "scene": "The ARCHAEOLOGIST stares down into a dark empty shaft holding a glowing lantern, eyes wide, mouth open",
+   "name": "SANCHI",
+   "name_hi": "सांची",
+   "scene": "A massive ancient sandstone stupa at Sanchi sliced open with a deep vertical excavation shaft running through its central dome, revealing a dark hollow core.",
    "words": [
     "1851",
-    "GAYAB"
+    "LOOT?"
+   ],
+   "words_hi": [
+    "1851",
+    "लूट?"
    ]
   },
   "title": "Sanchi stupa mein *asthiyan* kahan gayi? 🤯"

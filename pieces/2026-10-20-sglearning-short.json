@@ -216,7 +216,20 @@
     },
     "vo": "Is tyohaar shopping cash se ki ya UPI se? Comment mein bataiye."
    }
-  ]
+  ],
+  "thumbnail": {
+   "name": "RBI",
+   "name_hi": "आरबीआई",
+   "scene": "A massive steel bank vault swung wide open, overflowing with towering pallets of freshly printed Indian rupee notes illuminated by cold industrial light.",
+   "words": [
+    "1,00,014 CR",
+    "SECRET"
+   ],
+   "words_hi": [
+    "1,00,014 CR",
+    "सीक्रेट"
+   ]
+  }
  },
  "status": "assembled",
  "timings": [

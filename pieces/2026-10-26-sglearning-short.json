@@ -256,10 +256,16 @@
    }
   ],
   "thumbnail": {
-   "scene": "BHAI stares at his phone glowing red in his hand on an evening bus, eyes wide, mouth open in shock",
+   "name": "SENSEX",
+   "name_hi": "सेंसेक्स",
+   "scene": "LEFT: a glowing green stock market chart surging straight up on an exchange screen; RIGHT: the same chart collapsing into a steep red plunge to negative numbers.",
    "words": [
-    "-143",
+    "143",
     "TRAP"
+   ],
+   "words_hi": [
+    "143",
+    "ट्रैप"
    ]
   },
   "title": "Subah ki *tezi*, shaam ka nuksaan 📉"

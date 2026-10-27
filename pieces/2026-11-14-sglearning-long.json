@@ -512,10 +512,16 @@
    }
   ],
   "thumbnail": {
-   "scene": "BHAI stares at his phone with wide worried eyes, thumb hovering over a cancel button, the screen glowing red on his face",
+   "name": "SIP",
+   "name_hi": "एसआईपी",
+   "scene": "LEFT: a towering stack of crisp 500-rupee notes shining brightly; RIGHT: twenty years later, a cracked piggy bank sitting on a completely flat red market chart.",
    "words": [
-    "2.2%",
-    "PANIC"
+    "20 SAAL",
+    "KHATRA"
+   ],
+   "words_hi": [
+    "20 साल",
+    "खतरा"
    ]
   },
   "title": "500 ki SIP: *flat* market mein kya karein? 📉"

@@ -497,10 +497,16 @@
    }
   ],
   "thumbnail": {
-   "scene": "The ARCHAEOLOGIST kneels with a torch at the base of the hanging stone pillar, eyes wide, as a thin cloth stops against the one corner touching the floor",
+   "name": "LEPAKSHI",
+   "name_hi": "लेपाक्षी",
+   "scene": "A bright red cloth being pulled smoothly underneath a massive carved stone temple pillar, showing a clear gap of empty space between its base and the granite floor.",
    "words": [
-    "NOT",
-    "FLOATING"
+    "ASLI",
+    "PROOF"
+   ],
+   "words_hi": [
+    "असली",
+    "सबूत"
    ]
   },
   "title": "Lepakshi ka *latakta* khamba, raaz kya hai? 🤯"

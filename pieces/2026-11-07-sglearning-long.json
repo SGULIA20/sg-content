@@ -493,10 +493,16 @@
    }
   ],
   "thumbnail": {
-   "scene": "BHAI stares at a long hospital bill at the discharge counter, eyes wide, mouth open.",
+   "name": "INSURANCE",
+   "name_hi": "इंश्योरेंस",
+   "scene": "A towering hospital billing counter at night with a massive paper invoice stamped with a bold red 'REJECTED' seal beside an open, empty leather wallet.",
    "words": [
-    "ROOM RENT",
+    "60",
     "TRAP"
+   ],
+   "words_hi": [
+    "60",
+    "ट्रैप"
    ]
   },
   "title": "Hospital bill par claim *kat* kyun gaya? 🏥"

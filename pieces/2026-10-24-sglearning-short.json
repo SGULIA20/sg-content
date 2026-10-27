@@ -270,10 +270,16 @@
    }
   ],
   "thumbnail": {
-   "scene": "BHAI stares at a petrol pump meter in shock, eyes wide, phone slipping from his hand",
+   "name": "CRUDE OIL",
+   "name_hi": "क्रूड ऑयल",
+   "scene": "LEFT: a massive industrial steel plant glowing bright orange with active smelting furnaces; RIGHT: an empty rusted oil barrel tipped over on cracked ground beside a towering fuel price display.",
    "words": [
     "88%",
-    "IMPORT"
+    "TRAP"
+   ],
+   "words_hi": [
+    "88%",
+    "ट्रैप"
    ]
   },
   "title": "Factory daudi, par *petrol* sasta kyun nahi? ⛽"

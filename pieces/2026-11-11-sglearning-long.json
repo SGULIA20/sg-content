@@ -516,10 +516,16 @@
    }
   ],
   "thumbnail": {
-   "scene": "PAPA clutches an unsigned insurance policy form in front of a glowing laptop, eyes wide, mouth open in shock",
+   "name": "TAX REGIME",
+   "name_hi": "टैक्स रिजीम",
+   "scene": "LEFT: a messy stack of paper insurance policies and investment receipts; RIGHT: a crisp official salary slip lying on a wooden table showing zero tax.",
    "words": [
-    "1.5 LAKH",
-    "TRAP"
+    "75,000",
+    "SECRET"
+   ],
+   "words_hi": [
+    "75,000",
+    "सीक्रेट"
    ]
   },
   "title": "10 lakh salary, *zero* tax ka sach 🧾"
