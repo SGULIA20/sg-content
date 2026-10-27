@@ -2,52 +2,53 @@
  "channel": "sglearning",
  "facts": [
   {
-   "label": "analyst-view",
-   "number": 12.5,
-   "quote": "Jio Platforms could overtake Bharti Airtel to become India's second-largest listed company after its October 28 debut, with a 22% grey market premium implying a market capitalisation of Rs 12.5 lakh crore.",
+   "label": "official",
+   "number": 14159.0,
+   "quote": "Accordingly, the redemption price for premature redemption due on October 28, 2026, shall be ₹14,159/- (Rupees Fourteen Thousand One Hundred and Fifty-Nine Only) per unit of SGB based on the simple average of closing price of gold for the three business days i.e., October 23, October 26, and October 27, 2026.",
    "source_date": "2026-10-27",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/jios-big-bang-listing-may-give-it-stock-markets-no-2-crown-after-reliance-industries/articleshow/135227418.cms",
-   "text": "Jio Platforms could reach a market capitalisation of Rs 12.5 lakh crore after its debut, making it India's second-largest listed company.",
-   "unit": "lakh crore INR"
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872",
+   "text": "The Reserve Bank of India announced a premature redemption price of 14,159 INR per unit for Sovereign Gold Bond 2020-21 Series I due on October 28, 2026.",
+   "unit": "INR"
   },
   {
-   "label": "reported",
-   "number": 30213.0,
-   "quote": "Its Rs 30213-crore IPO drew 22.2 times subscription, while brokerages highlighted growth opportunities in broadband, enterprise technology and AI.",
+   "label": "official",
+   "number": 999.0,
+   "quote": "Further, the redemption price of SGB shall be based on simple average of closing price of gold of 999 purity of previous three business days from the date of redemption, as published by the India Bullion and Jewellers Association Ltd (IBJA).",
    "source_date": "2026-10-27",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/jios-big-bang-listing-may-give-it-stock-markets-no-2-crown-after-reliance-industries/articleshow/135227418.cms",
-   "text": "The public issue of Jio Platforms was sized at Rs 30,213 crore.",
-   "unit": "crore INR"
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872",
+   "text": "The Sovereign Gold Bond premature redemption value is pegged to the closing price of gold of 999 purity as published by the India Bullion and Jewellers Association.",
+   "unit": "purity"
   },
   {
-   "label": "reported",
-   "number": 22.2,
-   "quote": "Its Rs 30213-crore IPO drew 22.2 times subscription, while brokerages highlighted growth opportunities in broadband, enterprise technology and AI.",
+   "label": "official",
+   "number": 5.0,
+   "quote": "In terms of GOI notification F.No. 4(4)-B(W&M)/2020 dated April 13, 2020 (SGB 2020-21 Series I - Issue date April 28, 2020) on Sovereign Gold Bond Scheme, premature redemption of Gold Bond may be permitted after fifth year from the date of issue of such Gold Bond on the date on which interest is payable.",
    "source_date": "2026-10-27",
-   "source_name": "ET",
-   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/jios-big-bang-listing-may-give-it-stock-markets-no-2-crown-after-reliance-industries/articleshow/135227418.cms",
-   "text": "The Jio Platforms IPO received bids totaling 22.2 times the shares on offer.",
-   "unit": "times"
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872",
+   "text": "Early exit from the Sovereign Gold Bond Scheme is allowed after 5 years from the issue date on dates when interest payments fall due.",
+   "unit": "years"
   }
  ],
  "id": "2026-11-02-sglearning-short",
  "ids": {
   "budget": {
    "day": "2026-10-27",
-   "drafts": 1,
-   "research": 1
+   "drafts": 2,
+   "research": 2
   },
   "write_batch": {
-   "id": "msgbatch_01KUjXzKoC2KDJ96m8x8ELKQ",
-   "key": "d91a3da683c99795",
-   "tries": 2
+   "id": "msgbatch_01CQ6wwQkj2qaYz291b3dBFP",
+   "key": "7eee59143d7c8104",
+   "tries": 3
   }
  },
  "kind": "short",
  "publish_day": "2026-11-02",
  "reasons": [
+  "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it"
  ],
@@ -55,49 +56,49 @@
  "status": "writing",
  "timings": [],
  "topic": {
-  "link": "https://economictimes.indiatimes.com/markets/stocks/news/jios-big-bang-listing-may-give-it-stock-markets-no-2-crown-after-reliance-industries/articleshow/135227418.cms",
-  "published": "2026-10-27T07:16:38+00:00",
-  "rank": 3,
+  "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872",
+  "published": "2026-10-27T17:50:00+00:00",
+  "rank": 5,
   "sheet": {
    "facts": [
     {
-     "label": "analyst-view",
-     "number": 12.5,
-     "quote": "Jio Platforms could overtake Bharti Airtel to become India's second-largest listed company after its October 28 debut, with a 22% grey market premium implying a market capitalisation of Rs 12.5 lakh crore.",
+     "label": "official",
+     "number": 14159.0,
+     "quote": "Accordingly, the redemption price for premature redemption due on October 28, 2026, shall be ₹14,159/- (Rupees Fourteen Thousand One Hundred and Fifty-Nine Only) per unit of SGB based on the simple average of closing price of gold for the three business days i.e., October 23, October 26, and October 27, 2026.",
      "source_date": "2026-10-27",
-     "source_name": "ET",
-     "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/jios-big-bang-listing-may-give-it-stock-markets-no-2-crown-after-reliance-industries/articleshow/135227418.cms",
-     "text": "Jio Platforms could reach a market capitalisation of Rs 12.5 lakh crore after its debut, making it India's second-largest listed company.",
-     "unit": "lakh crore INR"
+     "source_name": "RBI",
+     "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872",
+     "text": "The Reserve Bank of India announced a premature redemption price of 14,159 INR per unit for Sovereign Gold Bond 2020-21 Series I due on October 28, 2026.",
+     "unit": "INR"
     },
     {
-     "label": "reported",
-     "number": 30213.0,
-     "quote": "Its Rs 30213-crore IPO drew 22.2 times subscription, while brokerages highlighted growth opportunities in broadband, enterprise technology and AI.",
+     "label": "official",
+     "number": 999.0,
+     "quote": "Further, the redemption price of SGB shall be based on simple average of closing price of gold of 999 purity of previous three business days from the date of redemption, as published by the India Bullion and Jewellers Association Ltd (IBJA).",
      "source_date": "2026-10-27",
-     "source_name": "ET",
-     "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/jios-big-bang-listing-may-give-it-stock-markets-no-2-crown-after-reliance-industries/articleshow/135227418.cms",
-     "text": "The public issue of Jio Platforms was sized at Rs 30,213 crore.",
-     "unit": "crore INR"
+     "source_name": "RBI",
+     "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872",
+     "text": "The Sovereign Gold Bond premature redemption value is pegged to the closing price of gold of 999 purity as published by the India Bullion and Jewellers Association.",
+     "unit": "purity"
     },
     {
-     "label": "reported",
-     "number": 22.2,
-     "quote": "Its Rs 30213-crore IPO drew 22.2 times subscription, while brokerages highlighted growth opportunities in broadband, enterprise technology and AI.",
+     "label": "official",
+     "number": 5.0,
+     "quote": "In terms of GOI notification F.No. 4(4)-B(W&M)/2020 dated April 13, 2020 (SGB 2020-21 Series I - Issue date April 28, 2020) on Sovereign Gold Bond Scheme, premature redemption of Gold Bond may be permitted after fifth year from the date of issue of such Gold Bond on the date on which interest is payable.",
      "source_date": "2026-10-27",
-     "source_name": "ET",
-     "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/jios-big-bang-listing-may-give-it-stock-markets-no-2-crown-after-reliance-industries/articleshow/135227418.cms",
-     "text": "The Jio Platforms IPO received bids totaling 22.2 times the shares on offer.",
-     "unit": "times"
+     "source_name": "RBI",
+     "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872",
+     "text": "Early exit from the Sovereign Gold Bond Scheme is allowed after 5 years from the issue date on dates when interest payments fall due.",
+     "unit": "years"
     }
    ],
-   "summary": "Jio Platforms concluded India's largest initial public offering to raise Rs 30,213 crore, with grey market indicators positioning the firm to become the country's second-largest listed corporation by market value. Salaried Indian households should follow this event closely because retail bidders had Rs 13,428 per lot blocked during allotment, while mutual funds held in monthly household SIPs will likely rebalance weightings toward the new mega-cap stock. Furthermore, industry analysts project mobile tariff price hikes of 12% to 15% following the listing, which will directly impact monthly household phone and broadband bills."
+   "summary": "The Reserve Bank of India has fixed the premature redemption price for Sovereign Gold Bond 2020-21 Series I at ₹14,159 per gram for the redemption date due on October 28, 2026. Subscribed in April 2020 at ₹4,589 per gram online, the tranche has delivered substantial capital gains along with semi-annual interest payments of 2.5% per annum. For middle-class salaried households, early redemption through the official RBI window offers a liquidity avenue to fund personal goals without having to sell units on secondary exchanges."
   },
-  "source": "ET Markets",
-  "summary": "Jio Platforms could overtake Bharti Airtel to become India’s second-largest listed company after its October 28 debut, with a 22% grey market premium implying a market capitalisation of Rs 12.5 lakh crore. Its Rs 30,213-crore IPO drew 22.2 times subscription, while brokerages highlighted growth opportunities in broadband, enterprise technology and AI.",
+  "source": "RBI Press Releases",
+  "summary": "  In terms of GOI notification F.No. 4(4)-B(W&amp;M)/2020 dated April 13, 2020 (SGB 2020-21 Series I - Issue date April 28, 2020) on Sovereign Gold Bond Scheme, premature redemption of Gold Bond may be permitted after fifth year from the date of issue of such Gold Bond on the date on which interest is payable. Accordingly, the next due date of premature redemption of the above tranche shall be on October 28, 2026.      2. Further, the redemption price of SGB shall be based on simple average of closing price of gold of 999 purity of previous three business days from the date of redemption, as published by the India Bullion and Jewellers Association Ltd (IBJA). Accordingly, the redemption price for premature redemption due on October 28, 2026, shall be &#8377;14,159/- (Rupees Fourteen Thousand One Hundred and Fifty-Nine Only) per unit of SGB based on the simple average of closing price of gold for the three business days i.e., October 23, October 26, and October 27, 2026.      Ajit Prasad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Deputy General Manager      (Communications)&nbsp;&nbsp;&nbsp;&nbsp;      Press Release: 2026-2027/1394",
   "target_minutes": null,
-  "title": "Jio’s big-bang listing may give it stock market’s No.2 crown after Reliance Industries"
+  "title": "Premature redemption under Sovereign Gold Bond (SGB) Scheme - Redemption Price for premature redemption of SGB 2020-21 Series I due on October 28, 2026"
  },
- "updated": "2026-10-27T07:40:53+00:00",
+ "updated": "2026-10-27T13:34:22+00:00",
  "writer": ""
 }
