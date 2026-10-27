@@ -504,3 +504,14 @@ def test_checking_on_a_parked_draft_does_not_use_the_daily_draft_allowance(tmp_p
     p.ids["budget"] = {"day": today_pacific().isoformat(), "drafts": pipeline.DAILY_DRAFTS}   # 27 Oct 2026: six checks used the whole day's allowance
     pieces.save(p, tmp_path)
     assert pipeline.make(p, d, tmp_path).status == "uploaded"
+
+
+def test_produce_collects_a_parked_draft_instead_of_picking_the_topic_again(tmp_path):
+    from engine import produce
+    d, calls = deps(tmp_path)
+    states = iter([{"script": None, "writer": "claude", "note": "", "state": "writing"}, {"script": good_script(), "writer": "claude", "note": "", "state": "ready"}])
+    d.write = lambda piece, sheet, lib, tags: (calls.__setitem__("write", calls["write"] + 1), next(states))[1]
+    produce.run(tmp_path, date(2026, 10, 20), max_pieces=1, dry_run=True, only={"sglearning:short"}, deps=d, notify=lambda t: True)
+    assert pieces.load(_piece().id, tmp_path).status == "writing" and calls["topics"] == 1 and calls["research"] == 1
+    produce.run(tmp_path, date(2026, 10, 20), max_pieces=1, dry_run=True, only={"sglearning:short"}, deps=d, notify=lambda t: True)
+    assert calls["topics"] == 1 and calls["research"] == 1 and calls["write"] == 2      # 27 Oct 2026: it used to re-pick and re-research
