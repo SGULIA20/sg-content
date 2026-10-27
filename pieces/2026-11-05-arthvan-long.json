@@ -518,11 +518,16 @@
    }
   ],
   "thumbnail": {
-   "scene": "THE GRANDMOTHER stares up at the towering temple under the noon sun, eyes wide, mouth open, holding a small brass lamp close to her chest",
+   "name": "TANJORE",
+   "name_hi": "तंजौर",
+   "scene": "The towering granite vimana of the Tanjore temple bathed in bright midday sun with its massive 80-tonne capstone perched on top, casting zero shadow on the stone courtyard below.",
    "words": [
-    "1010",
-    "SHADOW",
-    "GAYAB?"
+    "80 TON",
+    "SACH?"
+   ],
+   "words_hi": [
+    "80 टन",
+    "सच?"
    ]
   },
   "title": "Tanjore mandir ki *parchhai* kahan gayi? 🤯"
