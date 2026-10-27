@@ -120,6 +120,8 @@ line here (who, date) in the same change. Newest first.
   yellow tag and one shock word. SG-MYTH-WORLD in Devanagari, Learning with SG in Roman; a long's click test tries the other script
   on the same picture. Still one picture per video (no extra cost per Reel); redoing the 39 already made cost about ₹120 once.
   Posted Instagram Reels keep their cover (Meta's API cannot change it).
+- App Reels every day again (founder, 28 Oct 2026, "better to go everyday"): replaces the 24-25 Oct Mon/Wed/Fri rule (item B); each
+  still a Trial Reel, ScoreMyBiz and Waypoint alternating day by day as content/schedule.json already plans.
 - Item 13 (Waypoint ban-appeal review) dropped: the Supabase connector can reach only one organisation (ScoreMyBiz).
 
 ## Approved 24 Oct 2026 (founder: "okay yes do"), built one at a time

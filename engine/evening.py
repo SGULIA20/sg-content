@@ -21,7 +21,7 @@ APP_LOG_URL = "https://raw.githubusercontent.com/SGULIA20/arthvan-media/main/log
 APP_EPOCH = date(2026, 10, 11)                               # Waypoint day; the apps alternate from here (arthvan-media rule)
 APP_YT = {"scoremybiz": "youtube:sglearning", "waypoint": "youtube:arthvan"}
 APP_NAMES = {"scoremybiz": "ScoreMyBiz", "waypoint": "Waypoint"}
-APP_POST_WEEKDAYS = (0, 2, 4)                                # arthvan-media content/apps.json _global.post_weekdays
+APP_POST_WEEKDAYS = tuple(range(7))                          # every day again (founder, 28 Oct 2026); arthvan-media content/apps.json _global.post_weekdays
 OK, NO, NA = "✅ Posted", "🔴 NOT POSTED", "—"
 LATEST = ROOT / "logs" / "evening-latest.txt"
 STATE = ROOT / "logs" / "evening.json"
@@ -48,7 +48,7 @@ def fetch_app_log(url: str = APP_LOG_URL) -> list:
 
 
 def _app_rows(day: date, log: list) -> list:
-    """Three rows for the app whose day it is: Reel, Post, Story. App posts are Mon/Wed/Fri (founder, 24 Oct 2026); on other days
+    """Three rows for the app whose day it is: Reel, Post, Story. App posts go out on APP_POST_WEEKDAYS; on other days
     there are no app rows unless something did go out (a festival post), so a day off is never reported as NOT POSTED."""
     today = [e for e in log if e.get("date") == day.isoformat() and e.get("status") == "published"]
     posted = [e.get("app") for e in today if e.get("app") in APP_NAMES]
@@ -125,7 +125,7 @@ def tomorrow_plan(day: date) -> str:
         if t.weekday() in ch.long_days:
             rows.append((_wat(ch.long_publish_ist), "YouTube", f"{label} long video"))
     rows.append((_wat(CHANNELS["sglearning"].short_publish_ist), "YouTube", "Shorts on both channels"))
-    if t.weekday() in APP_POST_WEEKDAYS:                         # app posts Mon/Wed/Fri (founder, 24 Oct 2026; festivals add days)
+    if t.weekday() in APP_POST_WEEKDAYS:
         rows.append(("15:40", "Instagram + Threads + YouTube", f"{app} set (Reel, post, Story)"))
     rows.append((_wat(CHANNELS["arthvan"].ig_slot_ist), "Instagram + Threads", "SG-MYTH-WORLD Reel and Story"))
     rows.sort()
