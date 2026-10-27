@@ -53,8 +53,10 @@ def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFA
                     continue                                               # the founder's clips may still come
                 pieces.transition(piece, "written", f"pack cancelled: no clips {FALLBACK_HOURS} h before the slot; rendered the automatic way")
                 notify(f"{pid}: pack cancelled, rendering the automatic version instead")
-            if not (piece.script and piece.status in pipeline.RESUMABLE):
+            if not (piece.script and piece.status in pipeline.RESUMABLE) and piece.status != pipeline.PARKED_WRITE:
                 piece.status = "planned"                                   # a parked piece keeps its script and resumes
+                # 27 Oct 2026: a piece whose draft is cooking in Claude's batch lane stays "writing", or the run re-picks the topic,
+                # redoes the research and never collects the draft (the 2 Nov Shorts sat a day like that)
             if kind == "long" and long_minutes:
                 pipeline.LONG_TARGET_MINUTES[channel] = long_minutes
             print(f"making {pid}", flush=True)
