@@ -33,7 +33,7 @@ def lines(now: datetime | None = None, root=ROOT, env=None, call=instagram.call,
     out = []
     for label, reel in reels:
         try:
-            m = call("GET", f"/{reel}", token, {"fields": "timestamp,permalink,like_count,comments_count"})
+            m = call("GET", f"/{reel}", token, {"fields": "timestamp,permalink,like_count,comments_count,is_shared_to_feed"})
             age = now - _when(m["timestamp"])
             if not (WINDOW[0] <= age < WINDOW[1]):
                 continue
@@ -42,10 +42,11 @@ def lines(now: datetime | None = None, root=ROOT, env=None, call=instagram.call,
             out.append(f"   {label}: numbers not read ({secrets.scrub(str(e))[:80]})")
             continue
         views = int(n.get("views") or n.get("reach") or 0)
-        out.append(f"   {label}: {views:,} views, {int(m.get('like_count') or 0)} likes, "
+        shared = m.get("is_shared_to_feed")          # 27 Oct 2026: True once Instagram shared the trial with followers, False while it stays a trial
+        state = "✅ shared with followers" if shared is True else "👉 NOT shared: open it and tap Share to followers" if shared is False else "share state unknown"
+        out.append(f"   {label}: {state}\n      {views:,} views, {int(m.get('like_count') or 0)} likes, "
                    f"{int(m.get('comments_count') or 0)} comments, {int(n.get('shares') or 0)} shares, {int(n.get('saved') or 0)} saves\n"
                    f"      {m.get('permalink', '')}")
     if not out:
         return []
-    return ["🧪 Trial Reels, 72 hours over: if one is not on your profile, Instagram did not share it with followers.",
-            "   Open it and tap \"Share to followers\" if you want them to see it."] + out
+    return ["🧪 Trial Reels, 72 hours over (tap only the ones marked 👉):"] + out
