@@ -53,12 +53,14 @@ def write_piece(piece, sheet: dict, library: list, hashtags: dict, formula: str 
         params = writer.claude_params(piece, sheet, library, hashtags, formula)
     key = _key(params)
     job = piece.ids.get("write_batch") or {}
-    if job.get("key") != key:
+    # A draft already ordered is collected, never re-ordered (27 Oct 2026): the request changes a little between runs (the latest hook
+    # lessons, recent openers, prompt edits), and re-ordering on every change left the 2 Nov Shorts parked for a day, one unused batch per run.
+    if not job or job.get("patch", False) != bool(patch_reasons):
         try:
             batch = client.beta.messages.batches.create(requests=[{"custom_id": piece.id, "params": params}], betas=BETAS)
         except Exception as e:
             raise WriteBatchError(f"batch create failed: {type(e).__name__}: {secrets.scrub(str(e))[:160]}") from e
-        job = {"id": batch.id, "key": key, "tries": job.get("tries", 0) + 1}
+        job = {"id": batch.id, "key": key, "patch": bool(patch_reasons), "tries": job.get("tries", 0) + 1}
         piece.ids["write_batch"] = job
         _log({"at": datetime.now(timezone.utc).isoformat(), "piece": piece.id, "batch": batch.id, "revise": bool(piece.topic.get("revise"))})
     start = clock()
