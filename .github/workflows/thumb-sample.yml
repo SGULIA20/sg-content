@@ -1,0 +1,31 @@
+# One-off (27 Oct 2026): two sample thumbnail pictures for the founder (one paint each, about Rs 3). Saved to logs/review/. Delete after use.
+name: thumb-sample
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  paint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: { python-version: '3.12' }
+      - run: pip install -r requirements.txt
+      - env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from engine import art
+          out = Path("logs/review"); out.mkdir(parents=True, exist_ok=True)
+          split = ("A dramatic split image, 16:9. LEFT half: a wide blue river flowing through a green valley under a bright sky, 5,000 years ago. "
+                   "RIGHT half: the very same valley today, the riverbed completely dry, cracked earth and sand, harsh sun. A thin white line divides "
+                   "the halves. Highly saturated, high contrast, cinematic, crisp, no text, no letters, no people.")
+          art.paint(split, out / "thumb-bg-realistic.png", aspect="16:9")
+          art.paint(art.style_prompt("arthvan", split), out / "thumb-bg-drawn.png", aspect="16:9")
+          print("ok")
+          PY
+      - run: |
+          git config user.name "sg-content-bot"; git config user.email "sg-content-bot@users.noreply.github.com"
+          git add -f logs/review/thumb-bg-*.png && git commit -m "thumbnail sample pictures [skip ci]" && git pull --rebase origin main && git push origin HEAD:main
