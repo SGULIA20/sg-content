@@ -109,6 +109,10 @@ line here (who, date) in the same change. Newest first.
   ours were 0-6 per Reel). Every Sunday each channel's Short is a fresh version of a past winner (top third of the month on
   Instagram, at least 800 views, at least 10 days old, each remade once; its own facts, new opening and picture). First: 1 Nov,
   US stocks for 1 dollar (1,451) and Ram Setu (1,565).
+- Weak Reels (founder, 27 Oct 2026, "remake them"): no deleting or re-uploading (Instagram's repost rules). Mon-Sat, one Short a
+  day (either channel, oldest first) is a fresh version of a Short under 1,000 Instagram views, settled 4 days, never remade and
+  not itself a remake; it takes that channel's slot that day. First: 3 Nov Kailash, 4 Nov Meta AI, 5 Nov Kedarnath, 6 Nov
+  Chakravyuh, 7 Nov SIP fees. The 1 Nov Ram Setu Sunday remake goes out as it is (founder).
 - Item 13 (Waypoint ban-appeal review) dropped: the Supabase connector can reach only one organisation (ScoreMyBiz).
 
 ## Approved 24 Oct 2026 (founder: "okay yes do"), built one at a time

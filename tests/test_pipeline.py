@@ -484,3 +484,32 @@ def test_sunday_short_remakes_the_best_past_winner_with_its_own_facts(tmp_path):
     done.topic = {"remake_of": "2026-10-22-sglearning-short"}
     pieces.save(done, tmp_path)
     assert pipeline.remake_topic(sunday, tmp_path)["remake_of"] == "2026-10-21-sglearning-short"     # each winner remade once
+
+
+def test_weak_shorts_get_one_second_chance_a_day_oldest_first(tmp_path):
+    import json
+    from datetime import date
+    from engine import pieces, pipeline
+    (tmp_path / "logs").mkdir()
+    rows = [{"id": "2026-10-22-arthvan-short", "channel": "arthvan", "day": "2026-10-22", "ig_views": 78},
+            {"id": "2026-10-23-sglearning-short", "channel": "sglearning", "day": "2026-10-23", "ig_views": 65},
+            {"id": "2026-10-21-sglearning-short", "channel": "sglearning", "day": "2026-10-21", "ig_views": 1358},
+            {"id": "2026-10-26-sglearning-short", "channel": "sglearning", "day": "2026-10-26", "ig_views": 10}]     # not settled yet
+    (tmp_path / "logs" / "whatworks.json").write_text(json.dumps({"month": rows}))
+    for r in rows:
+        p = pieces.Piece(id=r["id"], channel=r["channel"], kind="short", publish_day=date.fromisoformat(r["day"]), status="posted")
+        p.topic, p.facts, p.script = {"id": f"t{r['day']}"}, [{"text": "f", "number": 1}], {"hook": "h"}
+        pieces.save(p, tmp_path)
+    today = date(2026, 10, 27)
+    mon_sg = pieces.Piece(id="2026-11-02-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 11, 2))
+    mon_av = pieces.Piece(id="2026-11-02-arthvan-short", channel="arthvan", kind="short", publish_day=date(2026, 11, 2))
+    assert pipeline.weak_remake_topic(mon_sg, tmp_path, today) is None                         # the oldest weak one is arthvan's
+    t = pipeline.weak_remake_topic(mon_av, tmp_path, today)
+    assert t["remake_of"] == "2026-10-22-arthvan-short" and t["remake_kind"] == "weak" and "78 views" in t["remake_note"]
+    mon_av.topic = t
+    pieces.save(mon_av, tmp_path)
+    assert pipeline.weak_remake_topic(mon_sg, tmp_path, today) is None                         # one second chance a day
+    tue_sg = pieces.Piece(id="2026-11-03-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 11, 3))
+    assert pipeline.weak_remake_topic(tue_sg, tmp_path, today)["remake_of"] == "2026-10-23-sglearning-short"
+    sun = pieces.Piece(id="2026-11-08-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 11, 8))
+    assert pipeline.weak_remake_topic(sun, tmp_path, today) is None                            # Sunday belongs to the winners
