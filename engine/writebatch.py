@@ -12,6 +12,7 @@ from .config import LOGS_DIR
 
 WAIT_S = 600
 POLL_S = 20
+STALE_S = 2 * 3600          # 27 Oct 2026: a batch still running after this is cancelled and the draft is written directly (the buffer comes first)
 BETAS = ["server-side-fallback-2026-07-01"]
 LEDGER = LOGS_DIR / "write-batch.jsonl"
 
@@ -41,7 +42,8 @@ def _log(row: dict) -> None:
 
 
 def write_piece(piece, sheet: dict, library: list, hashtags: dict, formula: str | None = None, *, client=None,
-                spend: Path = writer.SPEND_FILE, today=None, wait_s: float = WAIT_S, sleep=time.sleep, clock=time.monotonic, patch_reasons=None) -> tuple:
+                spend: Path = writer.SPEND_FILE, today=None, wait_s: float = WAIT_S, sleep=time.sleep, clock=time.monotonic, patch_reasons=None,
+                now=time.time) -> tuple:
     """("ready", script) once the draft is back and parsed; ("writing", None) while the batch still runs (piece.ids["write_batch"] keeps it).
     Raises WriteBatchError when the lane fails, so the caller can fall back to the synchronous writer."""
     from .config import today_pacific
@@ -60,7 +62,7 @@ def write_piece(piece, sheet: dict, library: list, hashtags: dict, formula: str 
             batch = client.beta.messages.batches.create(requests=[{"custom_id": piece.id, "params": params}], betas=BETAS)
         except Exception as e:
             raise WriteBatchError(f"batch create failed: {type(e).__name__}: {secrets.scrub(str(e))[:160]}") from e
-        job = {"id": batch.id, "key": key, "patch": bool(patch_reasons), "tries": job.get("tries", 0) + 1}
+        job = {"id": batch.id, "key": key, "patch": bool(patch_reasons), "tries": job.get("tries", 0) + 1, "at": time.time()}
         piece.ids["write_batch"] = job
         _log({"at": datetime.now(timezone.utc).isoformat(), "piece": piece.id, "batch": batch.id, "revise": bool(piece.topic.get("revise"))})
     start = clock()
@@ -86,5 +88,12 @@ def write_piece(piece, sheet: dict, library: list, hashtags: dict, formula: str 
                 return "ready", (writer.apply_patch(piece.script, text) if patch_reasons else writer._parse(text))
             raise WriteBatchError("batch ended without a result for this piece")
         if clock() - start >= wait_s:
+            if now() - job.get("at", 0) >= STALE_S:              # a job from before this field existed counts as stale
+                piece.ids.pop("write_batch", None)
+                try:
+                    client.beta.messages.batches.cancel(job["id"])
+                except Exception:
+                    pass
+                raise WriteBatchError(f"batch {job['id']} still running after {STALE_S // 3600} hours; writing directly")
             return "writing", None
         sleep(POLL_S)

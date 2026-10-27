@@ -22,6 +22,9 @@ class FakeBatches:
     def create(self, requests, betas):
         self.creates.append((requests, betas)); return NS(id=f"msgbatch_{len(self.creates)}", processing_status="in_progress")
 
+    def cancel(self, bid):
+        self.cancelled = bid
+
     def retrieve(self, bid):
         return NS(id=bid, processing_status=self.statuses.pop(0) if self.statuses else "ended")
 
@@ -66,6 +69,19 @@ def test_a_draft_already_ordered_is_collected_even_when_the_request_changed(tmp_
     state, script = writebatch.write_piece(p, {"facts": [{"text": "new"}]}, [], {}, "F2", client=_client(fb), spend=tmp_path / "s.json",
                                            today=date(2026, 10, 22), sleep=lambda s: None, clock=lambda: 0.0)
     assert state == "ready" and len(fb.creates) == 1             # 27 Oct 2026: re-ordering on each small change kept the 2 Nov Shorts parked
+
+
+def test_a_batch_running_over_two_hours_is_cancelled_and_written_directly(tmp_path):
+    fb = FakeBatches(["in_progress"] * 5)
+    p = _piece(); p.ids["write_batch"] = {"id": "msgbatch_old", "key": "k", "tries": 1, "at": 1000.0}
+    with pytest.raises(writebatch.WriteBatchError, match="writing directly"):
+        writebatch.write_piece(p, {"facts": []}, [], {}, "F", client=_client(fb), spend=tmp_path / "s.json", today=date(2026, 10, 22),
+                               wait_s=0, sleep=lambda s: None, clock=lambda: 0.0, now=lambda: 1000.0 + writebatch.STALE_S)
+    assert fb.cancelled == "msgbatch_old" and "write_batch" not in p.ids and fb.creates == []
+    p.ids["write_batch"] = {"id": "msgbatch_new", "key": "k", "tries": 1, "at": 1000.0}           # under two hours: keep waiting
+    state, _ = writebatch.write_piece(p, {"facts": []}, [], {}, "F", client=_client(fb), spend=tmp_path / "s.json", today=date(2026, 10, 22),
+                                      wait_s=0, sleep=lambda s: None, clock=lambda: 0.0, now=lambda: 1000.0 + 60)
+    assert state == "writing"
 
 
 def test_a_revision_is_a_new_request(tmp_path):
