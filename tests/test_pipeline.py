@@ -463,29 +463,6 @@ def test_a_draft_cooking_in_claudes_batch_lane_parks_the_piece_and_the_next_run_
     assert seen[1]["facts"] == FACTS and "sheet" not in p.topic
 
 
-def test_sunday_short_remakes_the_best_past_winner_with_its_own_facts(tmp_path):
-    import json
-    from datetime import date
-    from engine import pieces, pipeline
-    (tmp_path / "logs").mkdir()
-    rows = [{"id": f"2026-10-{d}-sglearning-short", "channel": "sglearning", "day": f"2026-10-{d}", "ig_views": v}
-            for d, v in (("20", 100), ("21", 1358), ("22", 1449), ("23", 59), ("24", 1235))]
-    (tmp_path / "logs" / "whatworks.json").write_text(json.dumps({"month": rows}))
-    for r in rows:
-        p = pieces.Piece(id=r["id"], channel="sglearning", kind="short", publish_day=date.fromisoformat(r["day"]), status="posted")
-        p.topic, p.facts, p.script = {"id": f"t{r['day']}", "title": "x"}, [{"text": "f", "number": 1}], {"hook": "h"}
-        pieces.save(p, tmp_path)
-    sunday = pieces.Piece(id="2026-11-08-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 11, 8))
-    t = pipeline.remake_topic(sunday, tmp_path)
-    assert t["remake_of"] == "2026-10-22-sglearning-short" and t["remake_facts"] and "FRESH VERSION" in t["remake_note"]
-    monday = pieces.Piece(id="2026-11-09-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 11, 9))
-    assert pipeline.remake_topic(monday, tmp_path) is None
-    done = pieces.Piece(id="2026-11-01-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 11, 1))
-    done.topic = {"remake_of": "2026-10-22-sglearning-short"}
-    pieces.save(done, tmp_path)
-    assert pipeline.remake_topic(sunday, tmp_path)["remake_of"] == "2026-10-21-sglearning-short"     # each winner remade once
-
-
 def test_weak_shorts_get_one_second_chance_a_day_oldest_first(tmp_path):
     import json
     from datetime import date
@@ -512,4 +489,4 @@ def test_weak_shorts_get_one_second_chance_a_day_oldest_first(tmp_path):
     tue_sg = pieces.Piece(id="2026-11-03-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 11, 3))
     assert pipeline.weak_remake_topic(tue_sg, tmp_path, today)["remake_of"] == "2026-10-23-sglearning-short"
     sun = pieces.Piece(id="2026-11-08-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 11, 8))
-    assert pipeline.weak_remake_topic(sun, tmp_path, today) is None                            # Sunday belongs to the winners
+    assert pipeline.weak_remake_topic(sun, tmp_path, today) is None                            # Sunday is always a new topic

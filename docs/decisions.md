@@ -113,6 +113,8 @@ line here (who, date) in the same change. Newest first.
   day (either channel, oldest first) is a fresh version of a Short under 1,000 Instagram views, settled 4 days, never remade and
   not itself a remake; it takes that channel's slot that day. First: 3 Nov Kailash, 4 Nov Meta AI, 5 Nov Kedarnath, 6 Nov
   Chakravyuh, 7 Nov SIP fees. The 1 Nov Ram Setu Sunday remake goes out as it is (founder).
+- No Sunday winner remakes (founder, 27 Oct 2026, "dont do this"): replaces the Sunday part of "Shares and remakes" above. Sunday's
+  Short is always a new topic. The two 1 Nov remakes (US stocks, Ram Setu) were already made and scheduled; weak-Reel second chances stay Mon-Sat.
 - Item 13 (Waypoint ban-appeal review) dropped: the Supabase connector can reach only one organisation (ScoreMyBiz).
 
 ## Approved 24 Oct 2026 (founder: "okay yes do"), built one at a time
