@@ -33,8 +33,10 @@ PIECE_SCHEMA = {
                          "threads": {"type": "object", "additionalProperties": False, "required": ["text"],
                                      "properties": {"text": {"type": "string"}}}}},
         "carousel": {"type": "boolean"},
-        "thumbnail": {"type": "object", "additionalProperties": False, "required": ["words", "scene"],
-                      "properties": {"words": {"type": "array", "items": {"type": "string"}, "minItems": 1, "maxItems": 3},
+        "thumbnail": {"type": "object", "additionalProperties": False, "required": ["name", "name_hi", "words", "words_hi", "scene"],
+                      "properties": {"name": {"type": "string"}, "name_hi": {"type": "string"},
+                                     "words": {"type": "array", "items": {"type": "string"}, "minItems": 1, "maxItems": 3},
+                                     "words_hi": {"type": "array", "items": {"type": "string"}, "minItems": 1, "maxItems": 3},
                                      "scene": {"type": "string"}}},
     },
 }

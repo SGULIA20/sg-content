@@ -89,36 +89,7 @@ def recent_openers(root: Path, piece: Piece, n: int = 5) -> list:
     return [(pid, prompt) for _d, pid, prompt in sorted(rows)[-n:]]
 
 
-REMAKE_WEEKDAY = 6                 # Sunday's Short remakes a past winner (founder, 25 Oct 2026)
-REMAKE_MIN_AGE_DAYS, REMAKE_MIN_VIEWS = 10, 800        # a winner: the month's top third on Instagram, and at least 800 views
-REMAKE_NOTE = ("A FRESH VERSION of one of our Reels that people watched: the same topic and facts, told as a new story. New opening line, "
-               "new first picture, new cast moments, go one step deeper (a Part 2 if it fits). Never reuse its lines or its title.")
-
-
-def remake_topic(piece: Piece, root: Path) -> dict | None:
-    """On REMAKE_WEEKDAY, the channel's best Instagram Short of the last 4 weeks (its top third, and at least REMAKE_MIN_VIEWS),
-    published at least REMAKE_MIN_AGE_DAYS earlier and never remade, with its own facts: no new research. Else None."""
-    if piece.kind != "short" or piece.publish_day.weekday() != REMAKE_WEEKDAY:
-        return None
-    try:
-        rows = json.loads((Path(root) / "logs" / "whatworks.json").read_text()).get("month") or []
-    except (FileNotFoundError, ValueError):
-        return None
-    rows = [r for r in rows if r.get("channel") == piece.channel and r.get("ig_views")]
-    if len(rows) < 4:
-        return None
-    views = sorted((r["ig_views"] for r in rows), reverse=True)
-    top_third = views[max(0, -(-len(views) // 3) - 1)]
-    remade = {p.topic.get("remake_of") for p in pieces.list_all(root) if p.topic.get("remake_of")}
-    cands = [r for r in rows if r["id"] not in remade and r["ig_views"] >= max(REMAKE_MIN_VIEWS, top_third)
-             and (piece.publish_day - date.fromisoformat(r["day"])).days >= REMAKE_MIN_AGE_DAYS]
-    for r in sorted(cands, key=lambda r: r["ig_views"], reverse=True):
-        orig = pieces.load(r["id"], root)
-        if orig and orig.facts and orig.script:
-            base = {k: v for k, v in orig.topic.items() if k not in ("look", "sheet", "revise", "rewrite")}
-            return {**base, "id": f"{orig.topic.get('id') or orig.id}#remake", "remake_of": orig.id, "remake_note": REMAKE_NOTE,
-                    "remake_views": r["ig_views"], "remake_facts": orig.facts}
-    return None
+FRESH_WEEKDAY = 6                  # Sunday's Short is always a new topic: no remakes (founder, 27 Oct 2026)
 
 
 WEAK_VIEWS, WEAK_SETTLED_DAYS = 1000, 4         # founder, 27 Oct 2026: Reels under 1,000 Instagram views get a second chance, one a day
@@ -129,7 +100,7 @@ WEAK_NOTE = ("A SECOND CHANCE for a topic whose first Reel few people watched (i
 def weak_remake_topic(piece: Piece, root: Path, today: date | None = None) -> dict | None:
     """Mon-Sat: the oldest Short (either channel) under WEAK_VIEWS on Instagram, settled for WEAK_SETTLED_DAYS, never remade and not
     itself a remake, comes back as a fresh version in its own channel's slot. At most one per day across both channels."""
-    if piece.kind != "short" or piece.publish_day.weekday() == REMAKE_WEEKDAY:
+    if piece.kind != "short" or piece.publish_day.weekday() == FRESH_WEEKDAY:
         return None
     today = today or date.today()
     try:
@@ -155,7 +126,7 @@ def weak_remake_topic(piece: Piece, root: Path, today: date | None = None) -> di
 
 
 def _pick_topic(piece: Piece, deps: Deps, root: Path, used: set) -> dict | None:
-    remake = remake_topic(piece, root) or weak_remake_topic(piece, root)
+    remake = weak_remake_topic(piece, root)
     if remake:
         return remake
     if piece.channel == "arthvan" and piece.kind == "short" and not is_story(piece):
@@ -237,21 +208,19 @@ def _label_chips(piece: Piece, deps: Deps, out_dir: Path) -> dict:
 
 
 def picture_jobs(piece: Piece, deps: Deps) -> list:
-    """[(prompt, refs, aspect)] for every drawn panel of a story piece plus its thumbnail reaction, exactly as the per-scene calls build them."""
+    """[(prompt, refs, aspect)] for every drawn panel of a story piece plus its thumbnail picture, exactly as the per-scene calls build them."""
     from . import thumbs
     jobs = []
     for sc in (piece.script or {}).get("scenes", []):
         prompt = (sc.get("visual") or {}).get("prompt") or piece.script["hook"]
         refs = deps.cast_refs(prompt, channel=piece.channel) if deps.cast_refs else []
         jobs.append((art.style_prompt(piece.channel, prompt), list(refs), "4:5"))
-    scene = thumbs.scene_for(piece)
-    refs = deps.cast_refs(scene, channel=piece.channel) if deps.cast_refs else []
-    jobs.append((art.style_prompt(piece.channel, thumbs.REACTION.format(scene=scene)), list(refs), "9:16" if piece.kind == "short" else "16:9"))
+    jobs.append((thumbs.paint_prompt(piece), [], "9:16" if piece.kind == "short" else "16:9"))
     return jobs
 
 
 def _thumb(piece: Piece, deps: Deps, out_dir: Path) -> Path:
-    """A drawn reaction panel with two or three shock words (engine.thumbs); Shorts also get a 9:16 cover for Instagram."""
+    """The topic-name thumbnail (engine.thumbs); Shorts also get a 9:16 cover for Instagram."""
     from . import thumbs
     if is_story(piece):
         return thumbs.make(piece, out_dir, paint=deps.paint, render=deps.render_card, cast_refs=deps.cast_refs or (lambda s, **kw: []))["thumb"]
