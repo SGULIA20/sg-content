@@ -551,6 +551,10 @@
   "id": "credit-card-minimum-due",
   "summary": "What happens when a cardholder pays only the minimum due: the interest-free period ends, interest of 36-42% a year compounds on the whole balance, late fees; how long a bill takes to clear paying minimum only; how to escape (pay in full, convert to EMI, balance transfer).",
   "target_minutes": 12,
+  "thumb_test": {
+   "phase": "B",
+   "switched": "2026-10-27T16:51+00:00"
+  },
   "title": "Credit card ka 'minimum due' button: 40,000 ka bill 4 saal kaise chalta hai",
   "voice": "voice_7o0kddoq6q2z"
  },
