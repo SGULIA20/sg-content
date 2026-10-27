@@ -121,8 +121,41 @@ def remake_topic(piece: Piece, root: Path) -> dict | None:
     return None
 
 
+WEAK_VIEWS, WEAK_SETTLED_DAYS = 1000, 4         # founder, 27 Oct 2026: Reels under 1,000 Instagram views get a second chance, one a day
+WEAK_NOTE = ("A SECOND CHANCE for a topic whose first Reel few people watched (it had {views} views). Same sourced facts, but a NEW "
+             "angle: a sharper opening question, a different first picture, a different story moment. Never reuse its lines or its title.")
+
+
+def weak_remake_topic(piece: Piece, root: Path, today: date | None = None) -> dict | None:
+    """Mon-Sat: the oldest Short (either channel) under WEAK_VIEWS on Instagram, settled for WEAK_SETTLED_DAYS, never remade and not
+    itself a remake, comes back as a fresh version in its own channel's slot. At most one per day across both channels."""
+    if piece.kind != "short" or piece.publish_day.weekday() == REMAKE_WEEKDAY:
+        return None
+    today = today or date.today()
+    try:
+        rows = json.loads((Path(root) / "logs" / "whatworks.json").read_text()).get("month") or []
+    except (FileNotFoundError, ValueError):
+        return None
+    all_pieces = pieces.list_all(root)
+    remade = {p.topic.get("remake_of") for p in all_pieces if p.topic.get("remake_of")}
+    is_remake = {p.id for p in all_pieces if p.topic.get("remake_of")}
+    if any(p.publish_day == piece.publish_day and p.id != piece.id and p.topic.get("remake_kind") == "weak" for p in all_pieces):
+        return None                                                   # today's second chance is already the other channel's
+    weak = sorted((r for r in rows if r.get("ig_views") is not None and r["ig_views"] < WEAK_VIEWS and r["id"] not in remade
+                   and r["id"] not in is_remake and (today - date.fromisoformat(r["day"])).days >= WEAK_SETTLED_DAYS),
+                  key=lambda r: (r["day"], r["id"]))
+    if not weak or weak[0]["channel"] != piece.channel:
+        return None
+    orig = pieces.load(weak[0]["id"], root)
+    if not (orig and orig.facts and orig.script):
+        return None
+    base = {k: v for k, v in orig.topic.items() if k not in ("look", "sheet", "revise", "rewrite")}
+    return {**base, "id": f"{orig.topic.get('id') or orig.id}#second", "remake_of": orig.id, "remake_kind": "weak",
+            "remake_note": WEAK_NOTE.format(views=weak[0]["ig_views"]), "remake_views": weak[0]["ig_views"], "remake_facts": orig.facts}
+
+
 def _pick_topic(piece: Piece, deps: Deps, root: Path, used: set) -> dict | None:
-    remake = remake_topic(piece, root)
+    remake = remake_topic(piece, root) or weak_remake_topic(piece, root)
     if remake:
         return remake
     if piece.channel == "arthvan" and piece.kind == "short" and not is_story(piece):
