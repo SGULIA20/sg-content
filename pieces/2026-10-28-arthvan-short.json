@@ -124,8 +124,12 @@
  ],
  "id": "2026-10-28-arthvan-short",
  "ids": {
+  "ig_reel_id": "18104866445369919",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "out_sha": "e667f17c00d0234401d41e189f6cecada3fd2dc0",
+  "threads_id": "18081841457535303",
+  "threads_poll_id": "17914427796501548",
   "yt_id": "DTVZY3Vg1qw"
  },
  "kind": "short",
@@ -341,7 +345,7 @@
   },
   "title": "Ellora ka *Kailasa*, upar se neeche kaise? 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   9.73,
@@ -375,6 +379,6 @@
   "title_hi": "Ellora ka Kailasa mandir, upar se neeche",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-23T13:35:37+00:00",
+ "updated": "2026-10-28T16:10:46+00:00",
  "writer": "claude"
 }
