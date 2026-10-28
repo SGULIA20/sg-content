@@ -84,8 +84,12 @@
  ],
  "id": "2026-10-28-sglearning-short",
  "ids": {
+  "ig_reel_id": "18037351469898181",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "out_sha": "3bd7c4b796f132f1fe72ee645af2b997b0dda1ce",
+  "threads_id": "18134852920682674",
+  "threads_poll_id": "18129642403840595",
   "yt_id": "60M3A5JBZSQ"
  },
  "kind": "short",
@@ -287,7 +291,7 @@
   },
   "title": "RBI ne byaaj ghataya, par *EMI* utni nahi? 📉"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   7.09,
@@ -314,6 +318,6 @@
   "title": "RBI Bulletin – October 2026",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-23T13:50:12+00:00",
+ "updated": "2026-10-28T08:39:06+00:00",
  "writer": "claude"
 }
