@@ -2,48 +2,90 @@
  "channel": "sglearning",
  "facts": [
   {
-   "label": "official",
-   "number": 14159.0,
-   "quote": "Accordingly, the redemption price for premature redemption due on October 28, 2026, shall be ₹14,159/- (Rupees Fourteen Thousand One Hundred and Fifty-Nine Only) per unit of SGB based on the simple average of closing price of gold for the three business days i.e., October 23, October 26, and October 27, 2026.",
-   "source_date": "2026-10-27",
-   "source_name": "RBI",
-   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872",
-   "text": "The Reserve Bank of India set the premature redemption price for SGB 2020-21 Series I at 14,159 INR per unit for redemption due on October 28, 2026.",
-   "unit": "INR"
+   "label": "reported",
+   "number": 2.4,
+   "quote": "With a substantial ₹2.4 lakh crore earmarked for capital expenditures by FY30, the company aims to enhance its renewable energy capacity.",
+   "source_date": "2026-10-28",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/adani-greens-debt-maths-why-leverage-may-fall-below-4x-as-capex-cycle-matures/articleshow/135256023.cms",
+   "text": "Adani Green Energy Limited has earmarked ₹2.4 lakh crore for capital expenditures by financial year 2030 to expand its renewable power capacity.",
+   "unit": "lakh crore INR"
+  },
+  {
+   "label": "reported",
+   "number": 5.6,
+   "quote": "AGEL's net debt-to-run-rate EBITDA currently stands at around 5.6 times and is expected to remain broadly at that level through FY28 and FY29.",
+   "source_date": "2026-10-28",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/adani-greens-debt-maths-why-leverage-may-fall-below-4x-as-capex-cycle-matures/articleshow/135256023.cms",
+   "text": "Adani Green Energy's net debt-to-run-rate EBITDA currently stands at approximately 5.6 times and is anticipated to stay near that level through FY29.",
+   "unit": "times"
+  },
+  {
+   "label": "reported",
+   "number": 45.0,
+   "quote": "It expects to build a portfolio of about 45 GW of renewable energy capacity, 5 GW of pumped storage capacity and 40–50 GWh of battery storage by FY30.",
+   "source_date": "2026-10-28",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/adani-greens-debt-maths-why-leverage-may-fall-below-4x-as-capex-cycle-matures/articleshow/135256023.cms",
+   "text": "Adani Green Energy targets building a renewable power generation portfolio of 45 gigawatts by financial year 2030.",
+   "unit": "GW"
+  },
+  {
+   "label": "reported",
+   "number": 8276.0,
+   "quote": "For the first half of FY27, EBITDA stood at ₹8,276 crore and could have been close to ₹9,000 crore without the impact of curtailment, according to the management.",
+   "source_date": "2026-10-28",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/adani-greens-debt-maths-why-leverage-may-fall-below-4x-as-capex-cycle-matures/articleshow/135256023.cms",
+   "text": "Adani Green Energy posted an EBITDA of ₹8,276 crore for the first half of financial year 2027.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "reported",
+   "number": 2120.0,
+   "quote": "Finance costs increased 30% year-on-year to ₹2,120 crore, while consolidated EBITDA rose 46% to ₹3,797 crore.",
+   "source_date": "2026-10-28",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/adani-greens-debt-maths-why-leverage-may-fall-below-4x-as-capex-cycle-matures/articleshow/135256023.cms",
+   "text": "Adani Green Energy saw its finance costs climb to ₹2,120 crore, representing a 30 percent year-on-year increase.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "analyst-view",
+   "number": 30.0,
+   "quote": "“AGEL's EBITDA rose at a 25% CAGR over FY23-26 and should see 30% CAGR as per our estimates in FY26-30E.",
+   "source_date": "2026-10-28",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/adani-greens-debt-maths-why-leverage-may-fall-below-4x-as-capex-cycle-matures/articleshow/135256023.cms",
+   "text": "Jefferies forecasts that Adani Green Energy's EBITDA will expand at a 30 percent compound annual growth rate over the financial years 2026 to 2030.",
+   "unit": "pct"
   },
   {
    "label": "official",
-   "number": 5.0,
-   "quote": "In terms of GOI notification F.No. 4(4)-B(W&M)/2020 dated April 13, 2020 (SGB 2020-21 Series I - Issue date April 28, 2020) on Sovereign Gold Bond Scheme, premature redemption of Gold Bond may be permitted after fifth year from the date of issue of such Gold Bond on the date on which interest is payable.",
-   "source_date": "2026-10-27",
+   "number": 5.5,
+   "quote": "After a detailed assessment of the evolving macroeconomic and financial developments and the outlook, the MPC voted unanimously to increase the policy repo rate under the liquidity adjustment facility (LAF) by 25 bps to 5.50 per cent.",
+   "source_date": "2026-10-21",
    "source_name": "RBI",
-   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872",
-   "text": "Under Sovereign Gold Bond regulations, premature redemption is permitted after 5 years from the date of issuance on interest payout dates.",
-   "unit": "years"
-  },
-  {
-   "label": "official",
-   "number": 3.0,
-   "quote": "Further, the redemption price of SGB shall be based on simple average of closing price of gold of 999 purity of previous three business days from the date of redemption, as published by the India Bullion and Jewellers Association Ltd (IBJA).",
-   "source_date": "2026-10-27",
-   "source_name": "RBI",
-   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872",
-   "text": "The Sovereign Gold Bond premature redemption value is calculated using the simple average closing price of 999 purity gold across 3 business days preceding redemption.",
-   "unit": "days"
+   "source_url": "https://www.rbi.org.in",
+   "text": "The Reserve Bank of India increased its policy repo rate under the liquidity adjustment facility to 5.50 percent in October 2026.",
+   "unit": "pct"
   }
  ],
  "id": "2026-11-02-sglearning-short",
  "ids": {
   "budget": {
-   "day": "2026-10-27",
-   "drafts": 4,
-   "research": 4
+   "day": "2026-10-28",
+   "drafts": 2,
+   "research": 1
   },
-  "write_batch": {
-   "id": "msgbatch_01Cr7ZmFHpbSXXg8nJTLfKS4",
-   "key": "c0a1f852da1134d2",
-   "tries": 5
-  }
+  "cost": {
+   "inr": 69.0,
+   "usd": 0.093298,
+   "voice": 13
+  },
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "gCIxlt1Oap0"
  },
  "kind": "short",
  "publish_day": "2026-11-02",
@@ -56,20 +98,229 @@
   "research budget used for today (4 calls); the next quota day retries",
   "research budget used for today (4 calls); the next quota day retries",
   "research budget used for today (4 calls); the next quota day retries",
-  "research budget used for today (4 calls); the next quota day retries"
+  "research budget used for today (4 calls); the next quota day retries",
+  "try 1: numbers without a source: 14159, 14159, 14159, 14159, 14159, 14159"
  ],
- "script": null,
- "status": "rejected",
- "timings": [],
- "topic": {
-  "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872",
-  "published": "2026-10-27T17:50:00+00:00",
-  "rank": 5,
-  "source": "RBI Press Releases",
-  "summary": "  In terms of GOI notification F.No. 4(4)-B(W&amp;M)/2020 dated April 13, 2020 (SGB 2020-21 Series I - Issue date April 28, 2020) on Sovereign Gold Bond Scheme, premature redemption of Gold Bond may be permitted after fifth year from the date of issue of such Gold Bond on the date on which interest is payable. Accordingly, the next due date of premature redemption of the above tranche shall be on October 28, 2026.      2. Further, the redemption price of SGB shall be based on simple average of closing price of gold of 999 purity of previous three business days from the date of redemption, as published by the India Bullion and Jewellers Association Ltd (IBJA). Accordingly, the redemption price for premature redemption due on October 28, 2026, shall be &#8377;14,159/- (Rupees Fourteen Thousand One Hundred and Fifty-Nine Only) per unit of SGB based on the simple average of closing price of gold for the three business days i.e., October 23, October 26, and October 27, 2026.      Ajit Prasad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Deputy General Manager      (Communications)&nbsp;&nbsp;&nbsp;&nbsp;      Press Release: 2026-2027/1394",
-  "target_minutes": null,
-  "title": "Premature redemption under Sovereign Gold Bond (SGB) Scheme - Redemption Price for premature redemption of SGB 2020-21 Series I due on October 28, 2026"
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Sone ka bond, upar se 2.5 percent byaaj. Bechein ya rukein? 🪙\nRBI ne SGB ka early exit price bataya, par yeh sirf sone ka bazaar bhaav hai.\nBond lautaya toh byaaj bhi band. Tax ka hisaab pehle dekho.\nAap kya karoge, rukoge ya nikaloge?\nYeh investment advice nahi hai.\nYeh Papa ko bhejo, jinke paas purana gold bond rakha hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#RBI",
+     "#SeedhiBaat",
+     "#MoneyTipsHindi",
+     "#PersonalFinanceIndia",
+     "#HinglishFinance",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Sone ka bond, upar se 2.5 percent byaaj. RBI ne SGB ka early exit price bataya, par yeh bonus nahi, bas sone ka average bhaav hai. Aur bond lautaya toh byaaj bhi band. Aap rukoge ya nikaloge? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Sone ka bond, upar se 2.5 percent byaaj. Bechein ya rukein? RBI ne SGB ka premature redemption price bataya hai, lekin yeh sirf sone ka average bhaav hai, koi bonus nahi. Bond lautate hi byaaj band ho jata hai, aur tax ka hisaab bhi pehle dekhna zaroori hai. Yeh Papa ko bhejo, jinke paas purana gold bond rakha hai.",
+    "tags": [
+     "sovereign gold bond",
+     "SGB",
+     "gold bond redemption",
+     "premature redemption",
+     "RBI",
+     "gold price",
+     "SGB 2020-21",
+     "gold investment",
+     "personal finance hindi",
+     "Learning with SG"
+    ],
+    "title": "Gold Bond jaldi bechein? 2.5% byaaj ka sawaal"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Yeh Papa ko bhejo, jinke paas purana gold bond rakha hai.",
+  "hook": "Sone ka bond, upar se 2.5 percent byaaj. Bechein ya rukein?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Close-up filling the frame: a stack of gleaming gold bars resting on an official-looking bond certificate with a wax seal, warm golden light, dark wooden table, dramatic and rich mood, no text",
+     "type": "art"
+    },
+    "vo": "Sone ka bond, upar se 2.5 percent byaaj. Bechein ya rukein?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A grand old central bank building with pillars, a glowing gold coin floating above a paper certificate in front of it, daytime, calm official mood, no text",
+     "type": "art"
+    },
+    "vo": "Yeh Sovereign Gold Bond hai, yaani sarkar ka kagzi sona, RBI ke through."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Split panel: on one side an empty dusty bank locker with a padlock, on the other a neat paper bond folder with small gold coins dropping into a piggy bank, relieved light mood, no text",
+     "type": "art"
+    },
+    "vo": "Na locker ka kharcha, na chori ka darr, upar se byaaj bhi milta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA in a kurta at a wooden almirah at home, quietly placing a folder of papers next to his FD receipts, evening tube light, proud and private expression, no text",
+     "type": "art"
+    },
+    "vo": "Bahut gharon mein Papa ne yeh bond saalon pehle, chupchaap le liya tha."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A newspaper lying on a breakfast table beside a cup of chai, a small gold bar illustration on the folded page, morning sunlight through a window, sense of news arriving, no text",
+     "type": "art"
+    },
+    "vo": "Ab RBI ne bataya, is series mein 5 saal baad jaldi exit khul gaya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A paper bond certificate being handed back across a bank counter to BANK UNCLE, who hands back a bundle of rupee notes, daytime bank hall, neutral transactional mood, no text",
+     "type": "art"
+    },
+    "vo": "Premature redemption yaani maturity se pehle bond lauta kar paisa le lena."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Family around the dining table at night: PAPA holding the bond folder, MUMMY in a saree with chai looking worried, BHAI in a hoodie gesturing excitedly, warm lamp light, tense debate, no text",
+     "type": "art"
+    },
+    "vo": "Ghar mein sabko laga, sona ooncha hai, abhi nikaal lo, kal gira toh?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA leaning back in his chair with a relieved smile, imagining a pile of gold coins turning into cash in a thought bubble, cosy living room, night, no text",
+     "type": "art"
+    },
+    "vo": "Logic sahi lagta hai, munafa haath mein ho toh dil ko sukoon milta hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A jewellery market street at dusk with several shop price boards glowing blank, gold bangles in glass cases, a sense of ordinary market prices, no text on boards",
+     "type": "art"
+    },
+    "vo": "Lekin yeh price koi bonus nahi, bas haal ke dinon ka sone ka average bhaav hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A small tap dripping gold coins into a bowl, the tap being turned off by a hand, the last coin hanging mid-air, moody dim light, sudden realisation, no text",
+     "type": "art"
+    },
+    "vo": "Twist yeh hai, bond lautaya toh uska byaaj bhi wahin band ho jata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN in office wear at a desk with a calculator and a folder of papers, raising an eyebrow sceptically, PAPA listening beside her, evening desk lamp, thoughtful mood, no text",
+     "type": "art"
+    },
+    "vo": "Aur bechne se pehle tax ka hisaab zaroor check karo, maturity aur exit alag ho sakte hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt with a beard sitting calmly at the family table, palms open, the bond folder closed in front of PAPA, soft warm light, reassuring mood, no text",
+     "type": "art"
+    },
+    "vo": "Yeh investment advice nahi hai. Pehle socho, paisa kab aur kis kaam ke liye chahiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "An old almirah drawer half open at night, a neatly kept bond folder resting beside FD receipts, a single gold coin catching lamp light, quiet nostalgic mood, no text",
+     "type": "art"
+    },
+    "vo": "Yeh Papa ko bhejo, jinke paas purana gold bond rakha hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "GOLD BOND",
+   "name_hi": "गोल्ड बॉन्ड",
+   "scene": "A massive stack of gleaming gold bars sitting on an official sealed bond certificate under a dramatic spotlight, with a bank counter and rupee note bundles glowing in the dark background.",
+   "words": [
+    "₹14,159",
+    "SACH?"
+   ],
+   "words_hi": [
+    "₹14,159",
+    "सच?"
+   ]
+  },
+  "title": "Gold bond se *jaldi* nikalna sahi hai? 🪙"
  },
- "updated": "2026-10-27T19:03:39+00:00",
- "writer": ""
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  6.97,
+  12.98,
+  18.87,
+  25.0,
+  30.65,
+  36.94,
+  42.91,
+  47.84,
+  54.53,
+  60.02,
+  67.03,
+  74.08
+ ],
+ "topic": {
+  "link": "https://economictimes.indiatimes.com/markets/stocks/news/adani-greens-debt-maths-why-leverage-may-fall-below-4x-as-capex-cycle-matures/articleshow/135256023.cms",
+  "look": "claymation",
+  "patch_tries": 1,
+  "published": "2026-10-28T07:07:13+00:00",
+  "rank": 3,
+  "source": "ET Markets",
+  "summary": "Adani Green Energy Limited is looking forward to a decrease in leverage as its upcoming projects start functioning and yield cash flow. With a substantial ₹2.4 lakh crore earmarked for capital expenditures by FY30, the company aims to enhance its renewable energy capacity. As project loans are paid off, leverage is expected to dip below four times.",
+  "target_minutes": null,
+  "title": "Adani Green’s debt maths: Why leverage may fall below 4x as capex cycle matures",
+  "voice": "voice_1kn3blc2u13l"
+ },
+ "updated": "2026-10-28T07:40:31+00:00",
+ "writer": "claude"
 }

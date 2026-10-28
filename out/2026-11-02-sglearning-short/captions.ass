@@ -1,0 +1,54 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.63,Default,,0,0,0,,Sone ka bond,
+Dialogue: 0,0:00:01.63,0:00:04.48,Default,,0,0,0,,upar se 2.5 percent byaaj.
+Dialogue: 0,0:00:04.48,0:00:06.52,Default,,0,0,0,,Bechein ya rukein?
+Dialogue: 0,0:00:06.97,0:00:09.02,Default,,0,0,0,,Yeh Sovereign Gold Bond hai,
+Dialogue: 0,0:00:09.02,0:00:11.65,Default,,0,0,0,,yaani sarkar ka kagzi sona,
+Dialogue: 0,0:00:11.65,0:00:12.53,Default,,0,0,0,,RBI ke through.
+Dialogue: 0,0:00:12.98,0:00:14.70,Default,,0,0,0,,Na locker ka kharcha,
+Dialogue: 0,0:00:14.70,0:00:16.13,Default,,0,0,0,,na chori ka darr,
+Dialogue: 0,0:00:16.13,0:00:18.42,Default,,0,0,0,,upar se byaaj bhi milta hai.
+Dialogue: 0,0:00:18.87,0:00:21.56,Default,,0,0,0,,Bahut gharon mein Papa ne yeh
+Dialogue: 0,0:00:21.56,0:00:23.05,Default,,0,0,0,,bond saalon pehle,
+Dialogue: 0,0:00:23.05,0:00:24.55,Default,,0,0,0,,chupchaap le liya tha.
+Dialogue: 0,0:00:25.00,0:00:26.44,Default,,0,0,0,,Ab RBI ne bataya,
+Dialogue: 0,0:00:26.44,0:00:28.47,Default,,0,0,0,,is series mein 5 saal baad
+Dialogue: 0,0:00:28.47,0:00:30.20,Default,,0,0,0,,jaldi exit khul gaya.
+Dialogue: 0,0:00:30.65,0:00:34.39,Default,,0,0,0,,Premature redemption yaani maturity se pehle
+Dialogue: 0,0:00:34.39,0:00:36.49,Default,,0,0,0,,bond lauta kar paisa le lena.
+Dialogue: 0,0:00:36.94,0:00:38.60,Default,,0,0,0,,Ghar mein sabko laga,
+Dialogue: 0,0:00:38.60,0:00:39.98,Default,,0,0,0,,sona ooncha hai,
+Dialogue: 0,0:00:39.98,0:00:41.36,Default,,0,0,0,,abhi nikaal lo,
+Dialogue: 0,0:00:41.36,0:00:42.46,Default,,0,0,0,,kal gira toh?
+Dialogue: 0,0:00:42.91,0:00:44.40,Default,,0,0,0,,Logic sahi lagta hai,
+Dialogue: 0,0:00:44.40,0:00:46.11,Default,,0,0,0,,munafa haath mein ho toh dil
+Dialogue: 0,0:00:46.11,0:00:47.39,Default,,0,0,0,,ko sukoon milta hai.
+Dialogue: 0,0:00:47.84,0:00:50.34,Default,,0,0,0,,Lekin yeh price koi bonus nahi,
+Dialogue: 0,0:00:50.34,0:00:52.33,Default,,0,0,0,,bas haal ke dinon ka sone
+Dialogue: 0,0:00:52.33,0:00:54.08,Default,,0,0,0,,ka average bhaav hai.
+Dialogue: 0,0:00:54.53,0:00:55.37,Default,,0,0,0,,Twist yeh hai,
+Dialogue: 0,0:00:55.37,0:00:57.61,Default,,0,0,0,,bond lautaya toh uska byaaj bhi
+Dialogue: 0,0:00:57.61,0:00:59.57,Default,,0,0,0,,wahin band ho jata hai.
+Dialogue: 0,0:01:00.02,0:01:01.89,Default,,0,0,0,,Aur bechne se pehle tax ka
+Dialogue: 0,0:01:01.89,0:01:03.53,Default,,0,0,0,,hisaab zaroor check karo,
+Dialogue: 0,0:01:03.53,0:01:06.35,Default,,0,0,0,,maturity aur exit alag ho sakte
+Dialogue: 0,0:01:06.35,0:01:06.58,Default,,0,0,0,,hain.
+Dialogue: 0,0:01:07.03,0:01:09.78,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:01:09.78,0:01:10.88,Default,,0,0,0,,Pehle socho,
+Dialogue: 0,0:01:10.88,0:01:12.81,Default,,0,0,0,,paisa kab aur kis kaam ke
+Dialogue: 0,0:01:12.81,0:01:13.63,Default,,0,0,0,,liye chahiye.
+Dialogue: 0,0:01:14.08,0:01:15.61,Default,,0,0,0,,Yeh Papa ko bhejo,
+Dialogue: 0,0:01:15.61,0:01:18.15,Default,,0,0,0,,jinke paas purana gold bond rakha
+Dialogue: 0,0:01:18.15,0:01:18.40,Default,,0,0,0,,hai.
