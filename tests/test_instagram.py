@@ -173,3 +173,22 @@ def test_mp4_length_is_read_from_the_file_header_without_ffprobe(tmp_path):
     assert abs(instagram.mp4_seconds(f) - 91.267) < 0.001 and instagram._too_long_for_story(f)
     (tmp_path / "stub.mp4").write_bytes(b"x")
     assert instagram.mp4_seconds(tmp_path / "stub.mp4") is None and not instagram._too_long_for_story(tmp_path / "stub.mp4")
+
+
+def test_the_cover_comes_from_main_so_a_redone_cover_is_used():
+    from engine import instagram, pieces
+    from datetime import date
+    p = pieces.Piece(id="2026-10-30-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 10, 30))
+    p.ids["out_sha"] = "abc123"
+    assert instagram.cover_url(p, "o/r", head=lambda req: _Ok()).endswith("/main/out/2026-10-30-sglearning-short/cover.jpg")
+    def only_sha(req):
+        if "/main/" in req.full_url:
+            raise OSError("404")
+        return _Ok()
+    assert "/abc123/" in instagram.cover_url(p, "o/r", head=only_sha)
+
+
+class _Ok:
+    status = 200
+    def __enter__(self): return self
+    def __exit__(self, *a): return False

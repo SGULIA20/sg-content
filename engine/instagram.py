@@ -115,6 +115,13 @@ def resolved_media_url(piece: Piece, name: str, repo: str, head=None) -> str:
     raise InstagramError(f"{piece.id}: {name} is served neither at {sha[:8]} nor on main")
 
 
+def cover_url(piece: Piece, repo: str, head=None) -> str:
+    """The cover as it is now on main, else as committed with the video (28 Oct 2026: the redone topic-name covers live in a later
+    commit than the video, so the recorded commit served the old face cover)."""
+    latest = f"https://raw.githubusercontent.com/{repo}/main/out/{piece.id}/cover.jpg"
+    return latest if _serves(latest, head) else resolved_media_url(piece, "cover.jpg", repo, head)
+
+
 def caption_text(piece: Piece) -> str:
     from .config import YOUTUBE_URLS
     ig = (piece.script or {}).get("captions", {}).get("instagram", {})
@@ -143,7 +150,7 @@ def publish_piece(piece: Piece, env=None, call=call, sleep=time.sleep, root: Pat
         if not piece.ids.get("ig_reel_id"):
             params = {"media_type": "REELS", "video_url": media_url(piece, "reel.mp4", repo), "caption": caption, "share_to_feed": "true"}
             if (Path(root) / "out" / piece.id / "cover.jpg").exists():
-                params["cover_url"] = media_url(piece, "cover.jpg", repo)       # the drawn reaction cover, same as the YouTube thumbnail
+                params["cover_url"] = cover_url(piece, repo) if check_media else media_url(piece, "cover.jpg", repo)
             else:
                 params["thumb_offset"] = str(THUMB_OFFSET_MS)
             trial = {k: v for k, v in params.items() if k != "share_to_feed"}
