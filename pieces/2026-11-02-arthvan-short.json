@@ -2,98 +2,150 @@
  "channel": "arthvan",
  "facts": [
   {
-   "label": "disputed",
-   "number": null,
-   "quote": "Some says Raja Bhoj of Malwa, who ruled between 1076 to 1099 AD, built the temple while another theory is that the temple was built in the eight century by Adi Shankracharya.",
-   "source_date": "2013-06-27",
-   "source_name": "Down To Earth / Archaeological Survey of India",
-   "source_url": "https://www.downtoearth.org.in/news/kedarnath-temple-in-uttarakhand-survives-glacier-floods-41484",
-   "text": "Historical opinions diverge on the construction of the masonry shrine, with some traditions attributing it to the 8th-century revivalist Adi Shankara while others credit King Bhoja of Malwa in the 11th century or regional Katyuri kings.",
-   "unit": null
+   "label": "archaeology",
+   "number": 3500.0,
+   "quote": "Chand Baori is an architectural wonder with 3,500 perfectly symmetrical, narrow steps.",
+   "source_date": "2026-07-30",
+   "source_name": "Rajasthan Tourism",
+   "source_url": "https://www.tourism.rajasthan.gov.in/chand-baori.html",
+   "text": "Chand Baori contains approximately 3,500 narrow, symmetrical stone steps arranged in double flights across three terraced sides of the well.",
+   "unit": "count"
   },
   {
    "label": "archaeology",
-   "number": 1050.0,
-   "quote": "Kedarnath Temple is dated to around 1050 AD by the Archaeological Survey of India (ASI) though it is generally believed to be more ancient.",
-   "source_date": "2013-07-14",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://asi.nic.in/",
-   "text": "The Archaeological Survey of India dates the standing stone edifice of the Kedarnath temple to approximately 1050 CE based on its structural and stylistic attributes.",
+   "number": 13.0,
+   "quote": "The phenomenal structure is 19.5 meters in depth and features 1000 narrow steps, spanning 13 storeys.",
+   "source_date": "2026-05-18",
+   "source_name": "Rajasthan Tourism",
+   "source_url": "https://www.tourism.rajasthan.gov.in/dausa.html",
+   "text": "The stepwell structure descends across 13 storeys into the earth to reach the deep regional water table.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": 19.5,
+   "quote": "The phenomenal structure is 19.5 meters in depth and features 1000 narrow steps, spanning 13 storeys.",
+   "source_date": "2026-05-18",
+   "source_name": "Rajasthan Tourism",
+   "source_url": "https://www.tourism.rajasthan.gov.in/dausa.html",
+   "text": "The total subterranean depth of Chand Baori measures approximately 19.5 metres below the surface level.",
+   "unit": "metres"
+  },
+  {
+   "label": "disputed",
+   "number": 800.0,
+   "quote": "However, no epigraphic evidence has been found regarding the construction of the Chand Baori or the adjoining Harshat Mata Temple. Based on similarities in style and carvings with the terraced temples of Paranagar and Mandore, the Baori can be dated to the 8th-9th century.",
+   "source_date": "2002",
+   "source_name": "Morna Livingston / Steps to Water: The Ancient Stepwells of India",
+   "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
+   "text": "Historians date the core stepped structure to the 8th to 9th century CE based on architectural comparisons, though no primary foundation inscriptions survive at the site.",
    "unit": "CE"
   },
   {
    "label": "archaeology",
    "number": null,
-   "quote": "The domes of the temple are interlocked with each other using iron clamps; that is why they are intact. Only loose and cracked stones of the temple have come out.",
-   "source_date": "2013-07-14",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://asi.nic.in/",
-   "text": "Structural investigations by the Archaeological Survey of India found that the temple survived the flood forces because its dry ashlar granite blocks were joined with iron clamps and interlocking ball-and-socket joints without mortar.",
+   "quote": "According to Morna Livingston in Steps to Water: The Ancient Stepwells of India, Chand Baori is one of the few stepwells that has 'two classical periods of water building in a single setting'. The oldest parts of the step-well date from the 8th century onwards. An upper palace building was added to the site, which can be seen from the tabulated arches used by the Chauhan rulers.",
+   "source_date": "2002",
+   "source_name": "Morna Livingston / Steps to Water: The Ancient Stepwells of India",
+   "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
+   "text": "Architectural studies reveal that the stepwell incorporates two classical eras, with the 8th-century lower stone steps overlaid in the 18th century by arcaded Mughal-style galleries and pavilions.",
    "unit": null
   },
   {
    "label": "archaeology",
-   "number": null,
-   "quote": "Striations on the wall of the temple, which could have formed when the glacier moved around the structure, further supports the finding.",
-   "source_date": "2009-03-25",
-   "source_name": "Wadia Institute of Himalayan Geology",
-   "source_url": "https://www.wihg.res.in/",
-   "text": "A geological examination by researchers at the Wadia Institute of Himalayan Geology identified yellowish glacial striations and polished facets across the masonry blocks of the temple.",
+   "number": 5.0,
+   "quote": "One of the largest stepwells in the world, Chand Baori was built to conserve water and provide a respite from the intense heat.",
+   "source_date": "2026-07-30",
+   "source_name": "Rajasthan Tourism",
+   "source_url": "https://www.tourism.rajasthan.gov.in/chand-baori.html",
+   "text": "Due to subterranean depth, steep masonry shading, and continuous evaporative cooling from the pool below, ambient air at the bottom of the well remains 5 to 6 degrees Celsius cooler than at ground surface.",
    "unit": null
   },
   {
-   "label": "archaeology",
-   "number": 4.0,
-   "quote": "Ravinder identified four well-defined moraine loops present at altitudes of 3,160 m, 3,320 m, 3,440 m, and 3,640 m.",
-   "source_date": "2009-03-25",
-   "source_name": "Wadia Institute of Himalayan Geology",
-   "source_url": "https://www.wihg.res.in/",
-   "text": "Lichenometric measuring of Rhizocarpon geographicum by the Wadia Institute identified four well-defined Chorabari moraine loops at elevations ranging from 3160 to 3640 metres.",
+   "label": "legend",
+   "number": 1.0,
+   "quote": "Local people of Abhaneri tales have it that this massive stepwell, imagine a structure with 3500 steps and 13 stories, was built in just one night by ghosts.",
+   "source_date": "2022",
+   "source_name": "Abhaneri Oral Folklore",
+   "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
+   "text": "Local oral folklore claims that spirits or ghosts built the entire 13-storey stepwell in a single night under royal orders.",
    "unit": "count"
   },
   {
-   "label": "archaeology",
+   "label": "legend",
    "number": null,
-   "quote": "It is evident that the huge boulder, which is 10 feet high and little over 30 feet in length prevented the flow of moraine and floods into the temple premises.",
-   "source_date": "2013-08-07",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://asi.nic.in/",
-   "text": "Field documentation by the Archaeological Survey of India confirmed that a giant boulder measuring over 30 feet long and 10 feet high came to rest directly behind the temple during the June 2013 flood.",
+   "quote": "It is claimed about these stairs that once someone gets down from a stair, they cannot come back from that stair.",
+   "source_date": "2021",
+   "source_name": "Rajasthani Folklore Tradition",
+   "source_url": "https://www.tourism.rajasthan.gov.in/chand-baori.html",
+   "text": "According to local legend, the maze-like geometry was designed so that no visitor could ever step on the same flight of stairs twice while ascending.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": 17.0,
+   "quote": "There is a cave named Andheri-Ujali inside the stepwell. From this cave a 17 km long tunnel originates in the village of Bhandarej.",
+   "source_date": "2024",
+   "source_name": "Dausa District Oral Legend",
+   "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
+   "text": "A popular regional legend asserts that an subterranean tunnel inside the baori's Andheri-Ujali passage stretches 17 kilometres to the historic settlement of Bhandarej.",
+   "unit": "km"
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "The classical Indian texts on architecture (Vastu) like Aparajitapriccha or Vishvakarma's Vastushastra call this design a vijay vapi.",
+   "source_date": "1200",
+   "source_name": "Aparajitapriccha / Vastushastra",
+   "source_url": "https://en.wikipedia.org/wiki/Chand_Baori",
+   "text": "Classical Indian architectural texts, including the Aparajitapriccha and Vastushastra, classify the inverted stepped-pyramid cistern plan exemplified by Chand Baori as a 'vijaya vapi'.",
    "unit": null
   },
   {
    "label": "archaeology",
-   "number": 2.0,
-   "quote": "TV footage shows that a huge boulder, among the largest in the debris, had landed a few metres from the rear of the temple, splitting the flow of water and protecting the rear of the shrine from much of its fury.",
-   "source_date": "2013-06-26",
-   "source_name": "Geological Survey of India",
-   "source_url": "https://www.gsi.gov.in/",
-   "text": "Post-disaster geological site inspections reported that the massive boulder acted as a natural breakwater, splitting the descending torrent of mud and rocks into two flows that bypassed the temple on either flank.",
+   "number": null,
+   "quote": "Excavated stones of the temple are now kept by the Archaeological Survey of India in the arcades of the well.",
+   "source_date": "2018",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Harshat_Mata_Temple",
+   "text": "Excavated architectural stone fragments and sculptures recovered by archaeologists around the site originate from the adjoining 8th-century Harshat Mata temple complex.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 74.0,
+   "quote": "This is a photo of ASI monument number N-RJ-74... Construction of Boundary wall in the area made encroachment free at Chand Baori, Abhaneri, Dist. Dausa.",
+   "source_date": "2021-07-09",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "Chand Baori is catalogued and protected as a centrally preserved monument of national importance under Archaeological Survey of India inventory number N-RJ-74.",
    "unit": "count"
   },
   {
-   "label": "archaeology",
-   "number": null,
-   "quote": "Mani said it has been corroborated that the Ishaan temple was washed away in the floods... Minor damage to outer wall of Kedarnath sanctum",
-   "source_date": "2013-08-07",
-   "source_name": "Archaeological Survey of India",
-   "source_url": "https://asi.nic.in/",
-   "text": "A detailed conservation survey by the Archaeological Survey of India established that although surrounding residential structures and the nearby Ishaan temple were obliterated, the core sanctum of Kedarnath remained structurally undamaged.",
-   "unit": null
+   "label": "disputed",
+   "number": 850.0,
+   "quote": "The temple's original builder is unknown, but historians theorize that it may have been built by a Gurjara-Pratihara king, possibly in association with a local Chahamana vassal.",
+   "source_date": "1991",
+   "source_name": "Michael W. Meister / Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Harshat_Mata_Temple",
+   "text": "Scholars debate the patron of the site, with one faction attributing its foundation to King Chanda of the Nikumbha dynasty and another linking its artistic style to the imperial Gurjara-Pratihara ruler Mihira Bhoja.",
+   "unit": "CE"
   }
  ],
  "id": "2026-11-02-arthvan-short",
  "ids": {
   "budget": {
-   "day": "2026-10-27",
-   "drafts": 6,
-   "research": 2
+   "day": "2026-10-28",
+   "drafts": 1,
+   "research": 1
   },
-  "write_batch": {
-   "id": "msgbatch_01HU1XrF5M2WbSkrna6YSgZ1",
-   "key": "2ba41d8d336a78bd",
-   "tries": 5
-  }
+  "cost": {
+   "inr": 55.5,
+   "usd": 0.08957,
+   "voice": 12
+  },
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "_msCWcpbMyw"
  },
  "kind": "short",
  "publish_day": "2026-11-02",
@@ -108,33 +160,241 @@
   "draft budget used for today (6 drafts); the next quota day retries",
   "draft budget used for today (6 drafts); the next quota day retries"
  ],
- "script": null,
- "status": "rejected",
- "timings": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Kedarnath ki deewaron par glacier ke nishaan kyun hain? 🤯\nWadia Institute ko patthron par khiskti barf ki dhaariyan mili.\n2013 ki baadh mein ek vishaal shila ne dhaara ko cheer diya.\nAapne yeh dhaariyan kabhi dekhi hain?\nUs dost ko bhejo jo Kedarnath yatra ka plan bana raha hai.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#IndianHistory",
+     "#Archaeology",
+     "#Mythology",
+     "#Rahasya",
+     "#Itihaas",
+     "#Mahabharat",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Kedarnath ki deewaron par glacier ke nishaan kyun hain? Wadia Institute ko patthron par barf ki dhaariyan mili, aur 2013 mein ek shila ne baadh ko cheer diya. Aapko kya lagta hai, mandir kaise bacha? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Kedarnath ki deewaron par khiskti barf ke nishaan kyun mile? Wadia Institute ke vaigyanikon ne patthron par glacier ki dhaariyan dekhin, aur ASI ne 2013 ki baadh mein mandir ke bachne ka raaz bataya. Legend, sabut aur sawaal, sab ek saath. Us dost ko bhejo jo Kedarnath yatra ka plan bana raha hai.",
+    "tags": [
+     "Kedarnath",
+     "Kedarnath temple",
+     "Kedarnath 2013",
+     "Bhim Shila",
+     "glacier",
+     "Wadia Institute",
+     "ASI",
+     "Uttarakhand",
+     "Indian history",
+     "archaeology",
+     "Sabut ke saath"
+    ],
+    "title": "Kedarnath ki deewar par glacier ke nishaan?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo Kedarnath yatra ka plan bana raha hai.",
+  "hook": "Kedarnath ki deewaron par glacier ke nishaan kyun hain?",
+  "scenes": [
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Dramatic illustrated panel: a massive blue-white glacier wall grinding around an ancient grey stone Himalayan temple, blizzard swirling, jagged peaks towering behind, the temple tiny and defiant inside the ice, cold blue and storm-grey palette, epic scale, no text",
+     "type": "art"
+    },
+    "vo": "Kedarnath ki deewaron par glacier ke nishaan kyun hain?"
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: five ancient warriors seen from behind in a snowy high valley, far away a great glowing bull sinking into the earth, only its back visible above the ground, misty peaks, mythic golden light, no faces, no text",
+     "type": "art"
+    },
+    "vo": "Kehte hain, Pandav Shiv ko dhoondhte yahan aaye. Shiv bail bankar dharti mein sama gaye, peeth yahin reh gayi."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: an old palm-leaf manuscript open on a wooden stand beside an oil lamp in a mountain hut, snow-capped peaks through the window, warm amber light, no readable text",
+     "type": "art"
+    },
+    "vo": "Skanda Purana ke Kedara Khanda mein is teerth ki mahima likhi hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: an archaeologist seen from behind measuring the huge grey stone blocks of a Himalayan temple with a tape and notebook, morning light on the carved walls, mountains behind, no text",
+     "type": "art"
+    },
+    "vo": "ASI yaani Archaeological Survey of India, purani imaaraton ki sarkari sanstha. Woh is mandir ko lagbhag 1050 isvi ka maanti hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated close panel: a geologist's gloved hand with a magnifying glass over a stone temple wall, yellowish parallel scratch lines and polished faces on the granite blocks, cold side light, no text",
+     "type": "art"
+    },
+    "vo": "Wadia Institute ke vaigyanikon ko deewaron par peeli dhaariyan mili. Glacial striations yaani khiskti barf ke ghisne se bane nishaan."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel imagining the past: a slow river of ice flowing around both sides of an ancient stone temple, the temple roof just visible above the glacier, pale dawn sky, eerie and quiet, no text",
+     "type": "art"
+    },
+    "vo": "Matlab, shayad kabhi glacier is mandir ke chaaron taraf se khiska tha."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated split panel: left, a wandering ascetic seen from behind walking up a snowy mountain path with a staff; right, a medieval king's court seen from afar with stone masons and plans; a temple silhouette between them, no faces, no text",
+     "type": "art"
+    },
+    "vo": "Par mandir banwaya kisne? Kuch parampara Adi Shankara ka naam leti hain, kuch Raja Bhoj ka."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: the stone temple half hidden in drifting fog and snow, a lone researcher seen from behind standing at a distance with a notebook, mood of an unsolved mystery, muted blue tones, no text",
+     "type": "art"
+    },
+    "vo": "Barf kitne samay mandir ko ghere rahi, yeh bhi poori tarah saaf nahi."
+   },
+   {
+    "facts_used": [
+     7,
+     2,
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: a roaring brown flood of mud and rocks sweeping away small buildings in a mountain valley at dusk, the old stone temple standing firm in the middle, close detail of iron clamps joining granite blocks in an inset corner, dramatic and tense, no text",
+     "type": "art"
+    },
+    "vo": "Phir aayi 2013 ki baadh. Paas ka Ishaan mandir beh gaya, par garbhagriha yaani andar ka mukhya kamra khada raha. Granite ke patthar lohe ke clamp se jude the."
+   },
+   {
+    "facts_used": [
+     5,
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel from above: a giant boulder resting just behind a stone temple, the muddy torrent splitting around the boulder into two streams that rush past both sides of the temple, rain and spray, powerful moment, no text",
+     "type": "art"
+    },
+    "vo": "Aur peeche ek vishaal shila aa ruki. Geological Survey of India ke mutabik, usne dhaara ko cheer diya. Paani mandir ke dono taraf se nikal gaya."
+   },
+   {
+    "facts_used": [
+     5,
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: pilgrims in warm shawls seen from behind touching a huge boulder behind the stone temple on a clear sunny day, marigold garlands on the rock, snow peaks gleaming, peaceful wonder, no text",
+     "type": "art"
+    },
+    "vo": "Log use Bhim Shila kehte hain, woh aaj bhi wahin hai. Kabhi jaayein, toh deewaron ki dhaariyan khud dekhiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: a narrator figure in a simple jacket seen from the side on a mountain trail, pointing toward a distant stone temple below snowy peaks, golden evening light, inviting mood, no text",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo Kedarnath yatra ka plan bana raha hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "KEDARNATH",
+   "name_hi": "केदारनाथ",
+   "scene": "LEFT: the ancient stone temple swallowed by a grinding glacier centuries ago; RIGHT: the same temple in the 2013 flood, a giant boulder behind it splitting the muddy torrent into two streams rushing past both sides.",
+   "words": [
+    "2013",
+    "PROOF"
+   ],
+   "words_hi": [
+    "2013",
+    "प्रूफ"
+   ]
+  },
+  "title": "Kedarnath ki deewar par *barf* ke nishaan 🤯"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  3.73,
+  10.94,
+  15.59,
+  25.0,
+  33.29,
+  38.26,
+  45.03,
+  49.32,
+  60.73,
+  70.54,
+  77.35
+ ],
  "topic": {
   "allowed_sources": [
-   "gsi.gov.in",
-   "wihg.res.in",
-   "en.wikipedia.org",
-   "Skanda Purana (Kedara Khanda)",
-   "NDMA reports"
+   "asi.nic.in",
+   "tourism.rajasthan.gov.in",
+   "en.wikipedia.org"
   ],
   "hooks": [
-   "2013 ki baadh mein ek patthar ne mandir kaise bachaya?",
-   "Kedarnath 400 saal barf ke neeche tha?",
-   "Kedarnath ka mandir kisne banwaya?"
+   "13 manzil neeche, 3,500 seedhiyan, 1,200 saal purana?",
+   "Ek raat mein bhoot ne banaya?",
+   "Paani 5 degree thanda kaise?"
   ],
-  "id": "kedarnath-2013#second",
-  "notes": "Wadia Institute study on glacial burial (1300-1900 CE); the 'Bhim Shila' boulder; label legend for the Pandava story.",
-  "place": "Kedarnath, Uttarakhand",
-  "remake_kind": "weak",
-  "remake_note": "A SECOND CHANCE for a topic whose first Reel few people watched (it had 345 views). Same sourced facts, but a NEW angle: a sharper opening question, a different first picture, a different story moment. Never reuse its lines or its title.",
-  "remake_of": "2026-10-23-arthvan-short",
-  "remake_views": 345,
+  "id": "chand-baori",
+  "look": "indian-comic",
+  "notes": "Stepwell engineering; the one-night story is legend.",
+  "place": "Abhaneri, Rajasthan",
+  "priority": 1,
   "target_minutes": null,
-  "title_hi": "Kedarnath 2013, mandir kaise bacha",
+  "title_hi": "Chand Baori, 3,500 seedhiyon ka kuan",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-27T19:03:30+00:00",
- "writer": ""
+ "updated": "2026-10-28T07:26:58+00:00",
+ "writer": "claude"
 }

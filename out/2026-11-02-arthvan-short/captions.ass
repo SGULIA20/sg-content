@@ -1,0 +1,58 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.40,Default,,0,0,0,,Kedarnath ki deewaron par glacier ke
+Dialogue: 0,0:00:02.40,0:00:03.28,Default,,0,0,0,,nishaan kyun hain?
+Dialogue: 0,0:00:03.73,0:00:04.48,Default,,0,0,0,,Kehte hain,
+Dialogue: 0,0:00:04.48,0:00:06.73,Default,,0,0,0,,Pandav Shiv ko dhoondhte yahan aaye.
+Dialogue: 0,0:00:06.73,0:00:08.99,Default,,0,0,0,,Shiv bail bankar dharti mein sama
+Dialogue: 0,0:00:08.99,0:00:09.24,Default,,0,0,0,,gaye,
+Dialogue: 0,0:00:09.24,0:00:10.49,Default,,0,0,0,,peeth yahin reh gayi.
+Dialogue: 0,0:00:10.94,0:00:13.34,Default,,0,0,0,,Skanda Purana ke Kedara Khanda mein
+Dialogue: 0,0:00:13.34,0:00:15.14,Default,,0,0,0,,is teerth ki mahima likhi hai.
+Dialogue: 0,0:00:15.59,0:00:18.44,Default,,0,0,0,,ASI yaani Archaeological Survey of India,
+Dialogue: 0,0:00:18.44,0:00:21.09,Default,,0,0,0,,purani imaaraton ki sarkari sanstha.
+Dialogue: 0,0:00:21.09,0:00:23.33,Default,,0,0,0,,Woh is mandir ko lagbhag 1050
+Dialogue: 0,0:00:23.33,0:00:24.55,Default,,0,0,0,,isvi ka maanti hai.
+Dialogue: 0,0:00:25.00,0:00:28.02,Default,,0,0,0,,Wadia Institute ke vaigyanikon ko deewaron
+Dialogue: 0,0:00:28.02,0:00:29.42,Default,,0,0,0,,par peeli dhaariyan mili.
+Dialogue: 0,0:00:29.42,0:00:31.43,Default,,0,0,0,,Glacial striations yaani khiskti barf ke
+Dialogue: 0,0:00:31.43,0:00:32.84,Default,,0,0,0,,ghisne se bane nishaan.
+Dialogue: 0,0:00:33.29,0:00:33.77,Default,,0,0,0,,Matlab,
+Dialogue: 0,0:00:33.77,0:00:35.91,Default,,0,0,0,,shayad kabhi glacier is mandir ke
+Dialogue: 0,0:00:35.91,0:00:37.81,Default,,0,0,0,,chaaron taraf se khiska tha.
+Dialogue: 0,0:00:38.26,0:00:39.90,Default,,0,0,0,,Par mandir banwaya kisne?
+Dialogue: 0,0:00:39.90,0:00:42.71,Default,,0,0,0,,Kuch parampara Adi Shankara ka naam
+Dialogue: 0,0:00:42.71,0:00:43.41,Default,,0,0,0,,leti hain,
+Dialogue: 0,0:00:43.41,0:00:44.58,Default,,0,0,0,,kuch Raja Bhoj ka.
+Dialogue: 0,0:00:45.03,0:00:46.86,Default,,0,0,0,,Barf kitne samay mandir ko ghere
+Dialogue: 0,0:00:46.86,0:00:47.22,Default,,0,0,0,,rahi,
+Dialogue: 0,0:00:47.22,0:00:48.87,Default,,0,0,0,,yeh bhi poori tarah saaf nahi.
+Dialogue: 0,0:00:49.32,0:00:51.15,Default,,0,0,0,,Phir aayi 2013 ki baadh.
+Dialogue: 0,0:00:51.15,0:00:52.97,Default,,0,0,0,,Paas ka Ishaan mandir beh gaya,
+Dialogue: 0,0:00:52.97,0:00:55.71,Default,,0,0,0,,par garbhagriha yaani andar ka mukhya
+Dialogue: 0,0:00:55.71,0:00:57.08,Default,,0,0,0,,kamra khada raha.
+Dialogue: 0,0:00:57.08,0:00:59.37,Default,,0,0,0,,Granite ke patthar lohe ke clamp
+Dialogue: 0,0:00:59.37,0:01:00.28,Default,,0,0,0,,se jude the.
+Dialogue: 0,0:01:00.73,0:01:02.65,Default,,0,0,0,,Aur peeche ek vishaal shila aa
+Dialogue: 0,0:01:02.65,0:01:03.07,Default,,0,0,0,,ruki.
+Dialogue: 0,0:01:03.07,0:01:05.83,Default,,0,0,0,,Geological Survey of India ke mutabik,
+Dialogue: 0,0:01:05.83,0:01:07.33,Default,,0,0,0,,usne dhaara ko cheer diya.
+Dialogue: 0,0:01:07.33,0:01:09.45,Default,,0,0,0,,Paani mandir ke dono taraf se
+Dialogue: 0,0:01:09.45,0:01:10.09,Default,,0,0,0,,nikal gaya.
+Dialogue: 0,0:01:10.54,0:01:12.58,Default,,0,0,0,,Log use Bhim Shila kehte hain,
+Dialogue: 0,0:01:12.58,0:01:13.95,Default,,0,0,0,,woh aaj bhi wahin hai.
+Dialogue: 0,0:01:13.95,0:01:14.63,Default,,0,0,0,,Kabhi jaayein,
+Dialogue: 0,0:01:14.63,0:01:16.90,Default,,0,0,0,,toh deewaron ki dhaariyan khud dekhiye.
+Dialogue: 0,0:01:17.35,0:01:19.21,Default,,0,0,0,,Us dost ko bhejo jo Kedarnath
+Dialogue: 0,0:01:19.21,0:01:21.07,Default,,0,0,0,,yatra ka plan bana raha hai.
