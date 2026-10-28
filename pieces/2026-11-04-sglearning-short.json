@@ -1,0 +1,323 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 4.0,
+   "quote": "The Federal Open Market Committee (FOMC) decided to maintain the target range for the federal funds rate at 3.75% to 4%, which was raised to this level on 16 September this year, marking the first US Fed interest rate hike since 2023.",
+   "source_date": "2026-10-28",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/explained-why-us-fed-reserve-decided-to-not-hike-rate-after-fomc-meeting-what-chair-kevin-warsh-said-in-press-speech-11793215854245.html",
+   "text": "The US Federal Reserve held the benchmark federal funds rate steady in the target range of 3.75% to 4.00%.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 10.0,
+   "quote": "The FOMC approved the policy decision by a 10 – 2 vote, with Governor Lisa Cook and Cleveland Fed President Beth Hammack dissenting in favour of a 25-basis-point rate hike.",
+   "source_date": "2026-10-28",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/explained-why-us-fed-reserve-decided-to-not-hike-rate-after-fomc-meeting-what-chair-kevin-warsh-said-in-press-speech-11793215854245.html",
+   "text": "The Federal Open Market Committee decided by a 10 to 2 vote to maintain the interest rate target unchanged.",
+   "unit": "votes"
+  },
+  {
+   "label": "official",
+   "number": 25.0,
+   "quote": "Two members wanted to raise it by 25 basis points.",
+   "source_date": "2026-10-28",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/explained-why-us-fed-reserve-decided-to-not-hike-rate-after-fomc-meeting-what-chair-kevin-warsh-said-in-press-speech-11793215854245.html",
+   "text": "Two dissenting policymakers voted in favor of hiking the policy rate by 25 basis points.",
+   "unit": "bps"
+  },
+  {
+   "label": "official",
+   "number": 2.0,
+   "quote": "The accumulation of more information will help the Committee determine the policy stance appropriate to ensure a timely return of inflation to the Committee's 2% goal.",
+   "source_date": "2026-10-28",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/explained-why-us-fed-reserve-decided-to-not-hike-rate-after-fomc-meeting-what-chair-kevin-warsh-said-in-press-speech-11793215854245.html",
+   "text": "The Federal Reserve reiterated its policy objective to return annual inflation to 2%.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 3.7,
+   "quote": "Inflation in September saw significant uptick as consumer prices rose 3.7% compared with a year earlier.",
+   "source_date": "2026-10-28",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/explained-why-us-fed-reserve-decided-to-not-hike-rate-after-fomc-meeting-what-chair-kevin-warsh-said-in-press-speech-11793215854245.html",
+   "text": "US headline consumer price inflation increased to 3.7% year-on-year in September.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 2.6,
+   "quote": "Core CPI, which excludes volatile food and energy prices, stood at 2.6%, up 0.3 percentage point from August.",
+   "source_date": "2026-10-28",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/explained-why-us-fed-reserve-decided-to-not-hike-rate-after-fomc-meeting-what-chair-kevin-warsh-said-in-press-speech-11793215854245.html",
+   "text": "US core consumer inflation excluding food and energy climbed to 2.6% in September.",
+   "unit": "pct"
+  },
+  {
+   "label": "analyst-view",
+   "number": 87.4,
+   "quote": "Financial markets are pricing in an 87.4% likelihood of a 25-basis-point rate hike at the Fed's next meeting in December, up from 78.3% on Tuesday, according to CME's FedWatch tool.",
+   "source_date": "2026-10-28",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/explained-why-us-fed-reserve-decided-to-not-hike-rate-after-fomc-meeting-what-chair-kevin-warsh-said-in-press-speech-11793215854245.html",
+   "text": "Financial markets priced in an 87.4% chance of a 25-basis-point interest rate increase at the December FOMC meeting.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 4.7,
+   "quote": "Two-year yields, which are more sensitive to the Fed's policy path, fell as much as four basis points to 4.7% on Wednesday after Warsh's remarks.",
+   "source_date": "2026-10-28",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/explained-why-us-fed-reserve-decided-to-not-hike-rate-after-fomc-meeting-what-chair-kevin-warsh-said-in-press-speech-11793215854245.html",
+   "text": "US two-year Treasury yields fell to 4.7% following policy statements from the central bank.",
+   "unit": "pct"
+  },
+  {
+   "label": "analyst-view",
+   "number": 115.0,
+   "quote": "Experts say the decision was already priced in, while crude oil near $115 a barrel, rising US bond yields, rupee weakness and foreign investor selling remain bigger risks.",
+   "source_date": "2026-10-28",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/explained-why-us-fed-reserve-decided-to-not-hike-rate-after-fomc-meeting-what-chair-kevin-warsh-said-in-press-speech-11793215854245.html",
+   "text": "Crude oil trading near 115 USD per barrel remains a significant risk factor for domestic fuel prices and imported inflation in India.",
+   "unit": "USD/bbl"
+  },
+  {
+   "label": "reported",
+   "number": 7.0,
+   "quote": "At the same time, the housing market is struggling under the pressure of mortgage rates above 7%.",
+   "source_date": "2026-10-28",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/explained-why-us-fed-reserve-decided-to-not-hike-rate-after-fomc-meeting-what-chair-kevin-warsh-said-in-press-speech-11793215854245.html",
+   "text": "Persistent interest rate pressures have kept benchmark home mortgage rates above 7%, restraining housing affordability and increasing loan burdens.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-04-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-10-28",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 51.0,
+   "usd": 0.067948,
+   "voice": 11
+  },
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "dGs2WzVyRSY"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-04",
+ "reasons": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "America ne byaaj nahi badhaya, phir aapki EMI kyun nahi ghat rahi? 🤔\nUS mein ooncha byaaj, rupee kamzor, aur crude lagbhag 115 dollar ek barrel.\nAise mein RBI rate ghatane se hichkichata hai, aur EMI ooncha reh sakta hai.\nKya aapne bhi koi loan plan is khabar pe badla? Yeh investment advice nahi hai.\nUs bhai ko bhejo jo soch raha hai EMI ab ghategi.",
+    "hashtags": [
+     "#EMI",
+     "#RBI",
+     "#CrudeOil",
+     "#Rupee",
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#HinglishFinance",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "America ne byaaj nahi badhaya, phir bhi aapki EMI shayad nahi ghategi. US mein ooncha byaaj aur mehenga crude, dono RBI ke haath baandhte hain. Kya aap bhi EMI ghatne ka intezaar kar rahe the? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "US Fed ne byaaj nahi badhaya, phir bhi aapki EMI shayad abhi nahi ghategi. America mein ooncha byaaj aur mehenga crude, dono milkar RBI ke haath baandh dete hain. Isliye loan ka plan ek headline dekhkar mat badliye. Us bhai ko bhejo jo soch raha hai EMI ab ghategi.",
+    "tags": [
+     "US Fed",
+     "Fed rate",
+     "EMI",
+     "home loan",
+     "RBI",
+     "repo rate",
+     "crude oil",
+     "rupee",
+     "interest rate",
+     "Hinglish finance"
+    ],
+    "title": "US Fed 4% pe ruka, EMI kyun nahi ghategi?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us bhai ko bhejo jo soch raha hai EMI ab ghategi.",
+  "hook": "America ne byaaj nahi badhaya, phir aapki EMI kyun nahi ghat rahi?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "A grand white marble central bank building with tall columns at dusk, seen from low angle, a giant shadow stretching across a stylised ocean towards a small Indian apartment block on the far shore, dramatic orange sky, no text",
+     "type": "art"
+    },
+    "vo": "America ne byaaj nahi badhaya, phir aapki EMI kyun nahi ghat rahi?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "Inside a large wood-panelled meeting room, a long table with unnamed officials in suits, one lowering a gavel gently, calm serious mood, daylight through tall windows, no text",
+     "type": "art"
+    },
+    "vo": "US Fed ne pichle hafte rate wahi rakha, lagbhag 4 percent. Fed yaani America ka RBI, jo wahan byaaj tay karta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "Evening in an Indian living room, WIFE and BHAI on a sofa watching a news channel on TV, MUMMY bringing chai, everyone smiling with relief, warm lamp light, no text",
+     "type": "art"
+    },
+    "vo": "Yeh khabar TV pe aayi, toh ghar mein sabne rahat ki saans li. Sabko laga, ab loan sasta hoga."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in a hoodie at the dining table explaining excitedly with his hands, a home loan file open in front of him, WIFE listening hopefully, night, no text",
+     "type": "art"
+    },
+    "vo": "Soch simple thi, America ne rate nahi badhaya, toh RBI ab ghatayega. RBI ghatayega, toh bank bhi home loan ka byaaj kam karega."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "A cheque book being closed and pushed aside on a table, next to it a glossy car brochure being opened by a young man's hand, hopeful mood, soft morning light, no text",
+     "type": "art"
+    },
+    "vo": "Isliye loan ka prepayment roka, yaani loan jaldi chukane ka paisa. Aur ek naya car loan bhi plan kar liya."
+   },
+   {
+    "facts_used": [],
+    "label": "what happened",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated stream of golden coins flying across an ocean from an Indian city skyline towards a tall American financial district, a small rupee coin shrinking on the Indian shore, dramatic stormy sky, no text",
+     "type": "art"
+    },
+    "vo": "Par dhyaan do, Fed ne rate ghataya bhi nahi. Wahan byaaj ooncha hai, toh videshi paisa wahan bhaagta hai, aur rupee kamzor hota hai."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "what happened",
+    "visual": {
+     "card": null,
+     "prompt": "A huge oil tanker arriving at an Indian port at sunset, rows of heavy black oil barrels stacked on the dock, workers looking up at the giant ship, no text",
+     "type": "art"
+    },
+    "vo": "Upar se crude, yaani kachcha tel, lagbhag 115 dollar ek barrel chal raha hai. India apna zyada tar tel bahar se kharidta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "what happened",
+    "visual": {
+     "card": null,
+     "prompt": "A busy Indian petrol pump at noon, a long queue of scooters and cars, an unnamed man frowning as he pays the attendant, heat haze in the air, no text",
+     "type": "art"
+    },
+    "vo": "Mehenga tel matlab mehengai. Aur jab mehengai badhti hai, RBI rate ghatane se hichkichata hai."
+   },
+   {
+    "facts_used": [],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI sitting alone at the dining table late at night, staring at the home loan file with the car brochure pushed away, the cheque book back in front of him, thoughtful expression, single lamp, no text",
+     "type": "art"
+    },
+    "vo": "Twist yeh hai, America ka kuch na karna bhi aapki EMI ooncha rakh sakta hai. Toh loan plan ek headline pe mat badlo."
+   },
+   {
+    "facts_used": [],
+    "label": "what to do",
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt sitting beside BHAI at the table, calmly pointing at a handwritten monthly budget notebook, reassuring mood, warm evening light, no text",
+     "type": "art"
+    },
+    "vo": "Pehle apna budget dekho, phir faisla. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "Family living room at night, WIFE smiling and nudging BHAI who grins sheepishly, the car brochure folded on the shelf, cosy warm light, no text",
+     "type": "art"
+    },
+    "vo": "Us bhai ko bhejo jo soch raha hai EMI ab ghategi."
+   }
+  ],
+  "thumbnail": {
+   "name": "US FED",
+   "name_hi": "यूएस फेड",
+   "scene": "A towering white marble central bank building on one shore casting a giant dark shadow across the ocean, while huge black oil barrels and a small Indian home with a loan file sit under that shadow on the other shore, stormy orange sky.",
+   "words": [
+    "$115",
+    "KHATRA"
+   ],
+   "words_hi": [
+    "$115",
+    "ख़तरा"
+   ]
+  },
+  "title": "America ka faisla, aapki *EMI* pe bhaari 😬"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  5.57,
+  15.74,
+  23.39,
+  34.84,
+  44.29,
+  54.06,
+  64.71,
+  72.56,
+  81.89,
+  87.7
+ ],
+ "topic": {
+  "link": "https://www.livemint.com/market/stock-market-news/explained-why-us-fed-reserve-decided-to-not-hike-rate-after-fomc-meeting-what-chair-kevin-warsh-said-in-press-speech-11793215854245.html",
+  "look": "claymation",
+  "published": "2026-10-28T19:36:42+00:00",
+  "rank": 3,
+  "source": "Mint Markets",
+  "summary": "The Federal Reserve held interest rates at 3.75%–4% in a 10–2 vote, citing resilient economic activity and persistent inflation. Chair Kevin Warsh said policymakers remain focused on returning inflation to the 2% target and are prepared to act as conditions require.",
+  "target_minutes": null,
+  "title": "Explained: Why US Fed Reserve decided to not hike rate after FOMC meeting? What Chair Kevin Warsh said in press speech",
+  "voice": "voice_1kn3blc2u13l"
+ },
+ "updated": "2026-10-28T19:57:52+00:00",
+ "writer": "claude"
+}
