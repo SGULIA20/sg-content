@@ -49,76 +49,225 @@
    "drafts": 1,
    "research": 1
   },
-  "write_batch": {
-   "at": 1793128649.5798225,
-   "id": "msgbatch_01GuL1pu1cWQ4jLt74cTiJtw",
-   "key": "2aa36f3c451e8436",
-   "patch": false,
-   "tries": 1
-  }
+  "cost": {
+   "inr": 61.5,
+   "usd": 0.066976,
+   "voice": 12
+  },
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "33rpJFB6J_0"
  },
  "kind": "short",
  "publish_day": "2026-11-03",
  "reasons": [
   "draft cooking in Claude's batch lane; the next run collects it"
  ],
- "script": null,
- "status": "writing",
- "timings": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "1 November se GST badla, kya dukaan par cheezein sasti hongi?\nAb company bikne ke baad bhi discount de sakti hai, pehle se agreement ki zaroorat nahi.\nPar yeh discount pehle dukaandaar tak aata hai, aage dena uski marzi.\nAapke kirana bill mein kabhi scheme ka fayda dikha?\nYeh investment advice nahi hai.\nUs dukaandaar dost ko bhejo jise company se scheme milti hai.",
+    "hashtags": [
+     "#GST",
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#MoneyTipsHindi",
+     "#HinglishFinance",
+     "#PersonalFinanceIndia",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "1 November se GST ka post-sale discount rule aasaan ho gaya, ab pehle se agreement zaroori nahi. Par kya yeh discount aapke kirana bill tak pahunchega, ya dukaan par hi ruk jaayega? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "1 November se GST ka post-sale discount rule badla, ab pehle se agreement zaroori nahi. Company ab baad mein bhi dukaan ko discount de sakti hai, tax ka hisaab credit note se saaf hoga. Par yeh discount aapki jeb tak pahunchega ya nahi, yeh dukaan par depend karta hai. Us dukaandaar dost ko bhejo jise company se scheme milti hai.",
+    "tags": [
+     "GST",
+     "GST new rule",
+     "post sale discount",
+     "credit note",
+     "GST November",
+     "FMCG",
+     "kirana",
+     "discount",
+     "Hinglish finance",
+     "Learning with SG"
+    ],
+    "title": "GST discount rule badla, cheezein sasti hongi?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Yeh us dukaandaar dost ko bhejo, jise company se scheme milti hai.",
+  "hook": "1 November se GST badla, kya dukaan par cheezein sasti hongi?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "HOOK",
+    "visual": {
+     "card": null,
+     "prompt": "Close, frame-filling view of a crowded Indian kirana shop shelf packed with soap bars, shampoo bottles and medicine strips, bright colourful discount stickers with no readable text, warm evening light, a sense of anticipation",
+     "type": "art"
+    },
+    "vo": "1 November se GST badla, kya dukaan par cheezein sasti hongi?"
+   },
+   {
+    "facts_used": [],
+    "label": "SETUP",
+    "visual": {
+     "card": null,
+     "prompt": "A delivery truck unloading cartons of soap and medicine boxes outside a row of small Indian shops, a distributor's helper carrying boxes, busy morning street",
+     "type": "art"
+    },
+    "vo": "Socho, sabun aur dawai ki company maal dukaanon tak bhejti hai."
+   },
+   {
+    "facts_used": [],
+    "label": "SETUP",
+    "visual": {
+     "card": null,
+     "prompt": "SHOPKEEPER at his kirana counter smiling as a company sales representative in a formal shirt hands him a sealed envelope, stacks of empty cartons behind, late afternoon",
+     "type": "art"
+    },
+    "vo": "Mahine ke end mein company kehti hai, zyada becha, toh discount lo. Isse post-sale discount kehte hain, yaani bikne ke baad mila discount."
+   },
+   {
+    "facts_used": [],
+    "label": "THE RULE",
+    "visual": {
+     "card": null,
+     "prompt": "An office desk in a small company with a thick paper contract file, a rubber stamp and a frowning accountant flipping pages, tube light, cluttered files",
+     "type": "art"
+    },
+    "vo": "Pehle GST mein shart thi, yeh discount pehle se agreement mein likha ho. Agreement nahi, toh credit note se tax kam nahi hota tha."
+   },
+   {
+    "facts_used": [],
+    "label": "THE TERM",
+    "visual": {
+     "card": null,
+     "prompt": "Close view of a printed bill on a table with a smaller slip of paper clipped to it, a pen beside, an accountant's hand pointing at the slip, simple clear composition, no readable text",
+     "type": "art"
+    },
+    "vo": "Credit note yaani bill ko baad mein chhota karne wali parchi."
+   },
+   {
+    "facts_used": [],
+    "label": "THE CHOICE",
+    "visual": {
+     "card": null,
+     "prompt": "A company manager at a meeting table pushing a pile of discount envelopes back into a drawer, colleagues nodding nervously, evening office mood",
+     "type": "art"
+    },
+    "vo": "Toh companies ne socha, notice ka jhanjhat kyon lein? Discount hi kam do, ya der se do."
+   },
+   {
+    "facts_used": [],
+    "label": "THE WHY",
+    "visual": {
+     "card": null,
+     "prompt": "A worried accountant imagining a stern tax officer holding a thick notice file, shown as a thought cloud above his head, dim office light",
+     "type": "art"
+    },
+    "vo": "Logic seedha tha, tax officer se jhagda, chhote discount se mehnga padta."
+   },
+   {
+    "facts_used": [],
+    "label": "THE COST",
+    "visual": {
+     "card": null,
+     "prompt": "A balance scale on a shop counter, one side heavy with coins labelled only by colour, the other side light with a small discount envelope, SHOPKEEPER looking at it with a sigh",
+     "type": "art"
+    },
+    "vo": "Nateeja, tax poore daam par lagta raha, discount ke baad bhi. Kai cheezon par 18 percent GST hai, toh yeh farak chhota nahi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "WHAT CHANGED",
+    "visual": {
+     "card": null,
+     "prompt": "The same accountant now relaxed, closing the thick contract file and attaching a small slip to a bill, sunlight coming through the office window, calm mood",
+     "type": "art"
+    },
+    "vo": "Ab 1 November se pehle wale agreement ki zaroorat khatam. Company baad mein bhi discount de, credit note se tax ka hisaab saaf."
+   },
+   {
+    "facts_used": [],
+    "label": "THE TWIST",
+    "visual": {
+     "card": null,
+     "prompt": "SHOPKEEPER holding a discount envelope behind his counter, thinking, while WIFE stands on the other side with a shopping bag waiting, evening shop light",
+     "type": "art"
+    },
+    "vo": "Lekin twist yeh hai, yeh discount seedha aapki jeb mein nahi aata. Pehle dukaandaar tak pahunchta hai, aage dena uski marzi."
+   },
+   {
+    "facts_used": [],
+    "label": "WHAT YOU CAN DO",
+    "visual": {
+     "card": null,
+     "prompt": "WIFE at the kirana counter comparing a product pack with her bill, pointing politely, SHOPKEEPER smiling and explaining, SG standing beside her nodding, warm evening",
+     "type": "art"
+    },
+    "vo": "Agli baar bill par MRP aur asli daam milao, scheme poochho. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "SEND",
+    "visual": {
+     "card": null,
+     "prompt": "A small Indian street of kirana shops at dusk, shop lights glowing, a shopkeeper receiving a carton from a delivery man, friendly closing mood",
+     "type": "art"
+    },
+    "vo": "Yeh us dukaandaar dost ko bhejo, jise company se scheme milti hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "GST",
+   "name_hi": "जीएसटी",
+   "scene": "LEFT: a pile of discount envelopes locked inside a company warehouse cage while a kirana shelf stays expensive; RIGHT: the same envelopes flowing out to a brightly lit kirana shelf full of soap and medicine packs",
+   "words": [
+    "1 NOV",
+    "SACH?"
+   ],
+   "words_hi": [
+    "1 नवंबर",
+    "सच?"
+   ]
+  },
+  "title": "GST ka naya rule, *discount* ab aasaan 🛒"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  4.61,
+  9.62,
+  18.23,
+  26.28,
+  30.49,
+  36.06,
+  41.59,
+  50.88,
+  59.21,
+  67.06,
+  73.75
+ ],
  "topic": {
   "link": "https://economictimes.indiatimes.com/news/economy/indicators/centre-eases-gst-rules-for-post-sales-discounts-no-prior-agreement-needed-from-november-1/articleshow/135243003.cms",
+  "look": "claymation",
   "published": "2026-10-27T17:58:10+00:00",
   "rank": 3,
-  "sheet": {
-   "facts": [
-    {
-     "label": "reported",
-     "number": 1.0,
-     "quote": "The Centre eases GST rules on post-sales discounts from November 1, no longer requiring a prior agreement, which is expected to help FMCG and pharma companies and retailers.",
-     "source_date": "2026-10-27",
-     "source_name": "ET",
-     "source_url": "https://economictimes.indiatimes.com/news/economy/indicators/centre-eases-gst-rules-for-post-sales-discounts-no-prior-agreement-needed-from-november-1/articleshow/135243003.cms",
-     "text": "The Centre has eased GST rules on post-sales discounts starting November 1 without requiring a prior agreement, directly supporting retail discount flexibility on everyday household goods across FMCG and pharma sectors.",
-     "unit": "November"
-    },
-    {
-     "label": "reported",
-     "number": 26.0,
-     "quote": "India plans to implement easing rules related to the goods and services tax for post-sale discounts while speeding up provisional refunds for businesses facing inverted duty structures from November 1, according to a government notification dated October 26.",
-     "source_date": "2026-10-27",
-     "source_name": "ET",
-     "source_url": "https://economictimes.indiatimes.com/news/economy/policy/india-to-implement-changes-to-gst-from-november-1/articleshow/135229166.cms",
-     "text": "The government issued the official notification on October 26 to implement revised GST discount rules and expedite provisional refunds.",
-     "unit": "October"
-    },
-    {
-     "label": "reported",
-     "number": 15.0,
-     "quote": "Penalties under these provisions range from 15% to 100% of the tax amount, depending on when the payment is made in relation to the show cause notice.",
-     "source_date": "2026-10-27",
-     "source_name": "ET",
-     "source_url": "https://economictimes.indiatimes.com/news/economy/policy/gst-officers-must-prove-intent-to-evade-tax-before-invoking-fraud-provision-cbic/articleshow/135229488.cms",
-     "text": "Statutory penalties for tax demands under fraud or suppression provisions start at 15% of the assessed tax amount.",
-     "unit": "pct"
-    },
-    {
-     "label": "reported",
-     "number": 100.0,
-     "quote": "Penalties under these provisions range from 15% to 100% of the tax amount, depending on when the payment is made in relation to the show cause notice.",
-     "source_date": "2026-10-27",
-     "source_name": "ET",
-     "source_url": "https://economictimes.indiatimes.com/news/economy/policy/gst-officers-must-prove-intent-to-evade-tax-before-invoking-fraud-provision-cbic/articleshow/135229488.cms",
-     "text": "Maximum penalties in GST fraud and suppression cases can reach up to 100% of the underlying tax amount.",
-     "unit": "pct"
-    }
-   ],
-   "summary": "The Central Government has overhauled GST regulations from November 1 by eliminating the requirement of prior agreements for post-sale discounts and streamlining the issuance of credit notes. By removing procedural tax hurdles and litigation risks for FMCG, consumer durables, and pharmaceutical companies, suppliers can pass volume-based incentives and promotional pricing down to retail shelves more freely. For salaried households, these frictionless commercial discounts help keep everyday consumer prices and family shopping budgets competitive without artificial tax markups."
-  },
   "source": "ET Economy",
   "summary": "The Centre eases GST rules on post-sales discounts from November 1, no longer requiring a prior agreement, which is expected to help FMCG and pharma companies and retailers.",
   "target_minutes": null,
-  "title": "Centre eases GST rules for post-sales discounts, no prior agreement needed from November 1"
+  "title": "Centre eases GST rules for post-sales discounts, no prior agreement needed from November 1",
+  "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-10-27T19:27:37+00:00",
- "writer": ""
+ "updated": "2026-10-28T10:42:36+00:00",
+ "writer": "claude"
 }

@@ -1,0 +1,61 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.85,Default,,0,0,0,,1 November se GST badla,
+Dialogue: 0,0:00:01.85,0:00:04.16,Default,,0,0,0,,kya dukaan par cheezein sasti hongi?
+Dialogue: 0,0:00:04.61,0:00:05.09,Default,,0,0,0,,Socho,
+Dialogue: 0,0:00:05.09,0:00:07.49,Default,,0,0,0,,sabun aur dawai ki company maal
+Dialogue: 0,0:00:07.49,0:00:09.17,Default,,0,0,0,,dukaanon tak bhejti hai.
+Dialogue: 0,0:00:09.62,0:00:11.86,Default,,0,0,0,,Mahine ke end mein company kehti
+Dialogue: 0,0:00:11.86,0:00:12.07,Default,,0,0,0,,hai,
+Dialogue: 0,0:00:12.07,0:00:12.88,Default,,0,0,0,,zyada becha,
+Dialogue: 0,0:00:12.88,0:00:13.70,Default,,0,0,0,,toh discount lo.
+Dialogue: 0,0:00:13.70,0:00:15.74,Default,,0,0,0,,Isse post-sale discount kehte hain,
+Dialogue: 0,0:00:15.74,0:00:17.78,Default,,0,0,0,,yaani bikne ke baad mila discount.
+Dialogue: 0,0:00:18.23,0:00:19.46,Default,,0,0,0,,Pehle GST mein shart thi,
+Dialogue: 0,0:00:19.46,0:00:21.52,Default,,0,0,0,,yeh discount pehle se agreement mein
+Dialogue: 0,0:00:21.52,0:00:22.13,Default,,0,0,0,,likha ho.
+Dialogue: 0,0:00:22.13,0:00:23.16,Default,,0,0,0,,Agreement nahi,
+Dialogue: 0,0:00:23.16,0:00:24.80,Default,,0,0,0,,toh credit note se tax kam
+Dialogue: 0,0:00:24.80,0:00:25.83,Default,,0,0,0,,nahi hota tha.
+Dialogue: 0,0:00:26.28,0:00:28.16,Default,,0,0,0,,Credit note yaani bill ko baad
+Dialogue: 0,0:00:28.16,0:00:30.04,Default,,0,0,0,,mein chhota karne wali parchi.
+Dialogue: 0,0:00:30.49,0:00:31.98,Default,,0,0,0,,Toh companies ne socha,
+Dialogue: 0,0:00:31.98,0:00:33.69,Default,,0,0,0,,notice ka jhanjhat kyon lein?
+Dialogue: 0,0:00:33.69,0:00:34.76,Default,,0,0,0,,Discount hi kam do,
+Dialogue: 0,0:00:34.76,0:00:35.61,Default,,0,0,0,,ya der se do.
+Dialogue: 0,0:00:36.06,0:00:37.27,Default,,0,0,0,,Logic seedha tha,
+Dialogue: 0,0:00:37.27,0:00:38.96,Default,,0,0,0,,tax officer se jhagda,
+Dialogue: 0,0:00:38.96,0:00:41.14,Default,,0,0,0,,chhote discount se mehnga padta.
+Dialogue: 0,0:00:41.59,0:00:42.35,Default,,0,0,0,,Nateeja,
+Dialogue: 0,0:00:42.35,0:00:44.62,Default,,0,0,0,,tax poore daam par lagta raha,
+Dialogue: 0,0:00:44.62,0:00:45.88,Default,,0,0,0,,discount ke baad bhi.
+Dialogue: 0,0:00:45.88,0:00:48.16,Default,,0,0,0,,Kai cheezon par 18 percent GST
+Dialogue: 0,0:00:48.16,0:00:48.41,Default,,0,0,0,,hai,
+Dialogue: 0,0:00:48.41,0:00:50.43,Default,,0,0,0,,toh yeh farak chhota nahi.
+Dialogue: 0,0:00:50.88,0:00:52.95,Default,,0,0,0,,Ab 1 November se pehle wale
+Dialogue: 0,0:00:52.95,0:00:54.82,Default,,0,0,0,,agreement ki zaroorat khatam.
+Dialogue: 0,0:00:54.82,0:00:56.69,Default,,0,0,0,,Company baad mein bhi discount de,
+Dialogue: 0,0:00:56.69,0:00:58.55,Default,,0,0,0,,credit note se tax ka hisaab
+Dialogue: 0,0:00:58.55,0:00:58.76,Default,,0,0,0,,saaf.
+Dialogue: 0,0:00:59.21,0:01:00.24,Default,,0,0,0,,Lekin twist yeh hai,
+Dialogue: 0,0:01:00.24,0:01:02.09,Default,,0,0,0,,yeh discount seedha aapki jeb mein
+Dialogue: 0,0:01:02.09,0:01:02.91,Default,,0,0,0,,nahi aata.
+Dialogue: 0,0:01:02.91,0:01:04.97,Default,,0,0,0,,Pehle dukaandaar tak pahunchta hai,
+Dialogue: 0,0:01:04.97,0:01:06.61,Default,,0,0,0,,aage dena uski marzi.
+Dialogue: 0,0:01:07.06,0:01:08.74,Default,,0,0,0,,Agli baar bill par MRP aur
+Dialogue: 0,0:01:08.74,0:01:09.94,Default,,0,0,0,,asli daam milao,
+Dialogue: 0,0:01:09.94,0:01:10.90,Default,,0,0,0,,scheme poochho.
+Dialogue: 0,0:01:10.90,0:01:13.30,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:01:13.75,0:01:15.69,Default,,0,0,0,,Yeh us dukaandaar dost ko bhejo,
+Dialogue: 0,0:01:15.69,0:01:18.07,Default,,0,0,0,,jise company se scheme milti hai.
