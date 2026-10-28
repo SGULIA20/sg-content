@@ -1,0 +1,671 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "analyst-view",
+   "number": 6.0,
+   "quote": "Have dependents or a home loan? Save 6 months.",
+   "source_date": "2026-06-15",
+   "source_name": "ET",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMLJBjHosFZW7o3_bJl0cUMrGyXB2tVi3pIe6TfC-UNYEpRP9uq3cD63ejytW4-eLG1m81w7kpqBjM0S5aay4Gs3JA_esgk70c7jxPZ4lFaORxw93dlyYEdk0kdReL2d8STn8fgaUGZdMP7WFnoWB4m2yHb2hS8g6x5TN9HZ5zmerL5XqfFfuNojit-0CwPi839pqk8fXolmF6h6KHvkOi4UC1fgiDRvkPi3sVkxahsfmnajw-UPbW9TRo0Udz9CffHXUOu2dqch4C_qlFwNb0lWlxWmFJxtqJGaCkzTfI9Zp-qpEE7wmoVsSBC5Kq-GWGTev8p839MsduR7gE1RVLWzYpvEfpr6mcJQyRawDbkpBx2KX9ZN-pIA==",
+   "text": "Households carrying liabilities like home loans or financial dependents are advised to hold a minimum emergency cushion of 6 months of mandatory living expenses.",
+   "unit": "months"
+  },
+  {
+   "label": "analyst-view",
+   "number": 300000.0,
+   "quote": "If your survival costs are ₹50,000 a month, a 6-month fund means saving ₹3 lakh.",
+   "source_date": "2026-06-15",
+   "source_name": "ET",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMLJBjHosFZW7o3_bJl0cUMrGyXB2tVi3pIe6TfC-UNYEpRP9uq3cD63ejytW4-eLG1m81w7kpqBjM0S5aay4Gs3JA_esgk70c7jxPZ4lFaORxw93dlyYEdk0kdReL2d8STn8fgaUGZdMP7WFnoWB4m2yHb2hS8g6x5TN9HZ5zmerL5XqfFfuNojit-0CwPi839pqk8fXolmF6h6KHvkOi4UC1fgiDRvkPi3sVkxahsfmnajw-UPbW9TRo0Udz9CffHXUOu2dqch4C_qlFwNb0lWlxWmFJxtqJGaCkzTfI9Zp-qpEE7wmoVsSBC5Kq-GWGTev8p839MsduR7gE1RVLWzYpvEfpr6mcJQyRawDbkpBx2KX9ZN-pIA==",
+   "text": "For an individual with baseline monthly survival expenses of 50,000 rupees, establishing a six-month reserve equates to accumulating 300,000 rupees.",
+   "unit": "INR"
+  },
+  {
+   "label": "analyst-view",
+   "number": 40.0,
+   "quote": "Keep 30-40% in a savings account or sweep-in FD for instant access.",
+   "source_date": "2026-06-15",
+   "source_name": "ET",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMLJBjHosFZW7o3_bJl0cUMrGyXB2tVi3pIe6TfC-UNYEpRP9uq3cD63ejytW4-eLG1m81w7kpqBjM0S5aay4Gs3JA_esgk70c7jxPZ4lFaORxw93dlyYEdk0kdReL2d8STn8fgaUGZdMP7WFnoWB4m2yHb2hS8g6x5TN9HZ5zmerL5XqfFfuNojit-0CwPi839pqk8fXolmF6h6KHvkOi4UC1fgiDRvkPi3sVkxahsfmnajw-UPbW9TRo0Udz9CffHXUOu2dqch4C_qlFwNb0lWlxWmFJxtqJGaCkzTfI9Zp-qpEE7wmoVsSBC5Kq-GWGTev8p839MsduR7gE1RVLWzYpvEfpr6mcJQyRawDbkpBx2KX9ZN-pIA==",
+   "text": "Financial planners advise setting aside 30% to 40% of the contingency corpus in liquid bank vehicles like savings accounts or sweep-in fixed deposits.",
+   "unit": "pct"
+  },
+  {
+   "label": "analyst-view",
+   "number": 70.0,
+   "quote": "Park the remaining 60-70% in liquid mutual funds, safer than stocks, better returns than a savings account, and redeemable within one business day.",
+   "source_date": "2026-06-15",
+   "source_name": "ET",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMLJBjHosFZW7o3_bJl0cUMrGyXB2tVi3pIe6TfC-UNYEpRP9uq3cD63ejytW4-eLG1m81w7kpqBjM0S5aay4Gs3JA_esgk70c7jxPZ4lFaORxw93dlyYEdk0kdReL2d8STn8fgaUGZdMP7WFnoWB4m2yHb2hS8g6x5TN9HZ5zmerL5XqfFfuNojit-0CwPi839pqk8fXolmF6h6KHvkOi4UC1fgiDRvkPi3sVkxahsfmnajw-UPbW9TRo0Udz9CffHXUOu2dqch4C_qlFwNb0lWlxWmFJxtqJGaCkzTfI9Zp-qpEE7wmoVsSBC5Kq-GWGTev8p839MsduR7gE1RVLWzYpvEfpr6mcJQyRawDbkpBx2KX9ZN-pIA==",
+   "text": "Planners recommend deploying 60% to 70% of emergency reserves in liquid mutual funds for better yield and next-business-day redemption.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 50000.0,
+   "quote": "Markets regulator Sebi issued a circular on instant redemption in liquid funds in 2017, allowing investors to withdraw up to ₹50,000 or 90% of the money parked in a liquid fund per day, whichever is lower.",
+   "source_date": "2024-12-05",
+   "source_name": "Mint",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2RoHQ5DedMuCytJXjzrb5FQqXThulEyAxLa9b0JM-6__S0e0H2AyDZQLpkOmlke240tBgSV3Lr-b7w6IkRFF3_thLgeC-j6uzV81BU49MVm6Y6jYBpRr3-o5HzYAc3D6H6tZib8F_jJZkpdLCm4hTgFv700JHVzo7Za8Zk8VKmLPYRVm7Nvw5dkiIKqJ68-HbKnVWyUqFxKgFd04n-gau5iA0JMafUSoo07MS4z8D5hoZSl1eo7tRsInoImZX8Yx1av95iZBM4IzMSw==",
+   "text": "Markets regulator SEBI permits mutual fund investors an instant redemption facility of up to 50,000 rupees daily per liquid fund scheme.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 500000.0,
+   "quote": "Deposit Insurance and Credit Guarantee Corporation, a wholly owned subsidiary of the Reserve Bank of India, has raised the limit of insurance cover for depositors in insured banks from the present level of ₹1 lakh to ₹5 lakh per depositor with effect from February 4, 2020 with the approval of Government of India.",
+   "source_date": "2020-02-04",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnL7-HVQ_A3XdsRUS1M1vozQ-d0LLnciUeZwCyBBIp0HVWhhvxeHh-d_Rz584f5KIRNJenf4YjFH0C7-GxsKHhrozjPKfajY4fNKxALySiVe-jEJJgiGXcbrSAxI_TuEoxYIizks5VCQ9ruDSwPt-ZvZzWh-rOuzyvYSg=",
+   "text": "The Reserve Bank of India subsidiary DICGC provides statutory insurance coverage for bank depositors up to a ceiling of 500,000 rupees.",
+   "unit": "INR"
+  },
+  {
+   "label": "reported",
+   "number": 33.0,
+   "quote": "Indians spend more than 33% of their income on paying instalments on loans, according to a new study from PwC and Perfios that analysed the spending behaviour of more than 3 million tech-savvy consumers.",
+   "source_date": "2025-02-19",
+   "source_name": "Mint",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUUk0VRo1ZKR3MzPdSxqSs4IaDP4xlH4DkMvIrv8Y9unboJ_gQEVgjN_8Q_WKMA0n-uY883qU8lyUxnOLDv2yyw9xSEVQ3715gGHJsxrVapkLfO8j01j0s2frBnkqtdBjm1fJlmTmnUCldjVWr2ofEqEZuAtioma1GWsRl5XX0lvmw_tJ4RPzbQ8EVb082iUnA6c7zjSuaFHr0mc7QS7VBjOsjGIKUpCkvNfAw",
+   "text": "A comprehensive consumer spending study found that Indian borrowers allocate over 33% of their income toward repaying loan EMIs.",
+   "unit": "pct"
+  },
+  {
+   "label": "analyst-view",
+   "number": 30.0,
+   "quote": "A practical thumb rule is to keep your total EMI outgo within 25 to 30% of your monthly income.",
+   "source_date": "2026-04-21",
+   "source_name": "Mint",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGt-_uTSUZR3CUYZqvSUIMx9MujWH-MQ_bZkLjHDkZHPN00DylJZwXYxOpE8lNhIOd-jC6jICLJYf9V9gpPK0MuktEPHUqvgz3TFIDK3-1uGHgfk9_lP26cpjCIuwNNV_KeSBlmoa9z74X-2dGS2k1jUbMVG7G5x7tW8F34aER6wCMQ7bVFHGIPjhI6YnD5LggZvoSZBNIp1qsZmIRKou9Z5s04KJxyJqjKeDZLQd0esm7quCUHirfzZNps8e77LGg=",
+   "text": "Credit risk managers recommend capping total household loan EMI commitments within 30% of take-home income to preserve financial stability.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-18-sglearning-long",
+ "ids": {
+  "budget": {
+   "day": "2026-10-28",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 0.0,
+   "usd": 0.300162,
+   "voice": 42
+  },
+  "voice_batch": {
+   "lines": 42,
+   "name": "batches/at2ebjsrmc670tihdomfot1yuth6mp01exsu",
+   "tries": 1,
+   "voice": "voice_g8azc8xcwhlu"
+  }
+ },
+ "kind": "long",
+ "publish_day": "2026-11-18",
+ "reasons": [
+  "voice job still running; the next run collects it"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Hum Indians income ka 33 percent se zyada EMI mein dete hain. Naukri gayi toh?\n6 mahine ka emergency fund: kitna, kahan rakhein, aur pehle loan ya fund.\nBank, sweep-in FD aur liquid fund ka seedha plan.\nAapka fund abhi kitne mahine ka hai?\nYeh investment advice nahi hai.\nShare karo us dost ko jiska saara paisa shares mein hai, emergency ke liye kuch alag nahi.",
+    "hashtags": [
+     "#PersonalFinanceIndia",
+     "#MoneyTipsHindi",
+     "#HinglishFinance",
+     "#EMI",
+     "#MutualFunds",
+     "#SeedhiBaat",
+     "#LearningWithSG",
+     "#PaiseKiKhabar"
+    ]
+   },
+   "threads": {
+    "text": "Naukri gayi, par EMI nahi ruki. 6 mahine ka emergency fund kitna hota hai, aur use kahan rakhein: savings, sweep-in FD ya liquid fund? Aapka fund abhi kitne mahine ka hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Naukri gayi, EMI nahi ruki",
+     "00:00 Emergency fund kitna ho?",
+     "00:00 Savings account galat hai?",
+     "00:00 Liquid fund kya hai?",
+     "00:00 Pehle loan ya fund? Aur galtiyan"
+    ],
+    "description": "Naukri kal chali jaaye, toh EMI kitne mahine bhar paoge? Ek family ki kahani se samjhiye ki 6 mahine ka emergency fund kitna hota hai, kahan rakhein, aur pehle loan chukayein ya fund banayein. Bank, sweep-in FD aur liquid fund ka seedha plan, bina jargon ke. Us dost ko bhejo jiska saara paisa shares mein hai aur emergency ke liye kuch alag nahi.",
+    "tags": [
+     "emergency fund",
+     "emergency fund kitna hona chahiye",
+     "liquid fund",
+     "sweep in fd",
+     "savings account",
+     "home loan emi",
+     "job loss",
+     "personal finance hindi",
+     "dicgc",
+     "prepayment",
+     "financial planning india",
+     "hinglish finance"
+    ],
+    "title": "Emergency Fund kitna ho? 6 mahine kyun?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "6 mahine",
+    "line": "Home loan ya dependents ho toh kam se kam itne mahine ke zaroori kharche",
+    "source": "ET"
+   },
+   {
+    "big_number": "₹3 lakh",
+    "line": "₹50,000 mahine ke kharche par 6 mahine ka fund",
+    "source": "ET"
+   },
+   {
+    "big_number": "30-40%",
+    "line": "Fund ka yeh hissa savings account ya sweep-in FD mein",
+    "source": "ET"
+   },
+   {
+    "big_number": "60-70%",
+    "line": "Fund ka yeh hissa liquid mutual fund mein",
+    "source": "ET"
+   },
+   {
+    "big_number": "₹5 lakh",
+    "line": "DICGC insurance, har bank mein har depositor ke liye",
+    "source": "RBI"
+   },
+   {
+    "big_number": "33%",
+    "line": "Indians income ka itna se zyada EMI mein dete hain",
+    "source": "Mint"
+   }
+  ],
+  "carousel": true,
+  "end_question": "Aapka emergency fund abhi kitne mahine ka hai? Comments mein sirf number likhiye.",
+  "hook": "Hum Indians apni income ka 33 percent se zyada EMI mein dete hain.",
+  "scenes": [
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "Naukri gayi, EMI nahi ruki",
+    "visual": {
+     "card": null,
+     "prompt": "A wall calendar with several dates circled in red hanging above a dining table piled with loan statements, a car key and a house key, an empty wallet open beside them, dim evening light, tense mood, no text",
+     "type": "art"
+    },
+    "vo": "Hum Indians apni income ka 33 percent se zyada EMI mein dete hain. Yeh ek badi study ka nateeja hai. Ab sochiye, agar kal naukri chali jaaye. Salary band ho jaati hai, par EMI ki date nahi badalti. Bank ko aapki naukri ki khabar se koi matlab nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A modest apartment in Pune at evening, a man in his thirties and his wife at a dining table, a small boy doing homework beside them, loan papers and a car key on the table, warm lamp light, comfortable and content",
+     "type": "art"
+    },
+    "vo": "Ek dost ki kahani suniye, naam maan lijiye Karan. Pune mein IT ki naukri, achhi salary, aur ek flat ka home loan. Saath mein car loan bhi, kyunki office door tha. Har mahine salary aati, aur bada hissa seedha EMI mein chala jaata. Ghar mein wife Neha aur ek chhota beta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The same young man relaxing on a sofa at night with a laptop showing a rising green line chart, a cup of tea beside him, confident smile, city lights through the window, no text",
+     "type": "art"
+    },
+    "vo": "Karan sochta tha, mera kaam achha hai, company badi hai. Alag se bachat ki kya zaroorat, savings account mein thoda toh hai hi. Bacha hua paisa usne shares mein laga diya, kyunki wahan return zyada dikhta tha. Sach kahein, toh uski logic galat nahi lagti thi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A corporate office in grey afternoon light, a man packing his desk items into a cardboard box, empty chairs of colleagues around him, a closed laptop, stunned and quiet mood",
+     "type": "art"
+    },
+    "vo": "Phir ek Monday, office mein HR ki meeting bulayi gayi. Company kharche kaat rahi thi, aur Karan ki poori team band ho gayi. Haath mein notice period ki salary aur ek cardboard box. Ghar aakar usne Neha ko bataya, toh dono der tak chup baithe rahe."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Three panels of the same dining table across months: first neat with bills paid, then fewer coins and more envelopes, then a pile of unpaid envelopes and a laptop showing a falling red line, the man with his head in his hands, late night",
+     "type": "art"
+    },
+    "vo": "Pehle mahine sab theek laga, notice ki salary jo thi. Doosre mahine EMI ki date aayi, aur account tezi se khaali hone laga. Teesre mahine Karan ko shares bechne pade, woh bhi loss mein, kyunki market neeche tha. Jo paisa lambe samay ke liye tha, woh aaj ke bill mein chala gaya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A cloth money pouch tied with a string kept alone on a high shelf, glowing softly in a dark room, below it a stormy window, symbolic and calm, no text",
+     "type": "art"
+    },
+    "vo": "Yahin poori kahani ka asli sabak chhupa hai. Karan ke paas paisa tha, par sahi jagah par nahi tha. Use ek alag thaili chahiye thi, jo sirf aise din ke liye ho. Isi ko kehte hain emergency fund, yaani mushkil waqt ka paisa, jo turant haath mein aaye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG, early forties, beard, striped shirt, standing beside a chalkboard with three blank boxes drawn on it, friendly explaining gesture, warm study room, daytime",
+     "type": "art"
+    },
+    "vo": "Toh aaj 3 sawaal. Pehla, emergency fund kitna hona chahiye? Doosra, use kahan rakhein, kya savings account mein rakhna galat hai? Teesra, pehle loan chukayein ya pehle fund banayein? Aur aakhir mein, woh galtiyan jo achha kamane wale log bhi karte hain."
+   },
+   {
+    "facts_used": [],
+    "label": "Emergency fund kitna ho?",
+    "visual": {
+     "card": null,
+     "prompt": "A kitchen table at night with a notebook, a pen, a calculator and a neat pile of monthly bills under a single lamp, a cup of chai steaming, focused quiet mood",
+     "type": "art"
+    },
+    "vo": "Pehla sawaal, emergency fund kitna ho? Iska jawab salary se nahi, kharche se shuru hota hai. Log sochte hain, meri salary itni hai, toh fund bhi usi hisaab se. Yeh galat shuruaat hai. Naukri jaane par aapko salary nahi, apne zaroori kharche chalane hote hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A collage of household essentials on a table: a ration bag, an electricity bill envelope, a gas cylinder, school books, medicine strips, a house key, while a restaurant menu and shopping bags are pushed aside to the edge, bright daylight",
+     "type": "art"
+    },
+    "vo": "Zaroori kharche yaani woh, jo har haal mein dene hi padte hain. Ghar ka kiraya, ya home loan aur baaki loans ki EMI. Ration, bijli, paani, phone aur gas. Bachchon ki school fees, insurance premium aur dawaiyan. Restaurant, online shopping aur vacation is list mein nahi aate."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A young woman in a kurta writing a long list in a notebook at the dining table late at night, her husband leaning in beside her, surprised and relieved expressions, soft lamp light",
+     "type": "art"
+    },
+    "vo": "Neha ne baad mein yahi list ek copy mein banayi. Pehli baar dono ne dekha, ghar chalane mein asal mein kitna lagta hai. Woh number salary se kaafi kam nikla. Aur yahi number aapke emergency fund ki neev hai. Salary nahi, zaroori kharcha."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A family portrait style scene in a living room: a man and wife standing behind a small boy and elderly parents seated on a sofa, a house model on a side table, warm protective mood, afternoon",
+     "type": "art"
+    },
+    "vo": "Ab sawaal, kitne mahine ka fund? Financial planners kehte hain, jinpar home loan hai, ya jinpar ghar wale nirbhar hain, wo kam se kam 6 mahine ke zaroori kharche rakhein. Dependents yaani woh log, jo aapki kamai par chalte hain, jaise bachche ya maa baap."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A man in formal shirt walking along a long road of office buildings carrying a file folder, the road stretching far into the distance, calendar pages blowing in the wind around him, determined but tired, morning",
+     "type": "art"
+    },
+    "vo": "6 mahine hi kyun? Kyunki nayi naukri dhoondhne mein waqt lagta hai. Interview, offer, joining, phir pehli salary, sab mein hafte nikal jaate hain. Aur us beech EMI nahi rukti. Yeh cushion aapko ghabrahat mein galat naukri lene se bhi bachata hai."
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Six identical stacks of rupee notes lined up in a row on a wooden table, each beside a small drawn house, soft morning light, calm and reassuring, no text",
+     "type": "art"
+    },
+    "vo": "Ek seedha hisaab dekhiye. Agar aapka zaroori kharcha mahine ka 50,000 rupaye hai, toh 6 mahine ka fund matlab 3 lakh rupaye. Yeh hisaab ET ki ek report mein diya gaya hai. Number bada lagta hai, par yeh aapke ghar ki 6 mahine ki saans hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA in a kurta sitting in a small town home holding a bundle of FD receipts, speaking on a phone with a wise concerned look, afternoon sunlight through a window",
+     "type": "art"
+    },
+    "vo": "Karan ke Papa ne phone par kaha, beta, hamare zamane mein sab FD mein rakhte the, safe hai. Unki baat mein dum tha, bachat ki aadat sabse zaroori hai. Par asli sawaal yeh hai, paisa rakha kahan hai. Aur zaroorat ke din woh kitni jaldi haath mein aayega."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG, early forties, beard, striped shirt, standing at a crossroads signpost with arrows pointing in different directions, holding a money pouch, thoughtful expression, daytime",
+     "type": "art"
+    },
+    "vo": "Toh pehla jawab simple hai. Zaroori kharchon ki list banao, aur use 6 mahine se guna karo. Yahi aapka target hai. Ab doosra sawaal, jahan sabse zyada confusion hai. Itna paisa rakhein kahan, ki zaroorat pe turant mile, aur mehngai mein ghis bhi na jaaye?"
+   },
+   {
+    "facts_used": [],
+    "label": "Savings account galat hai?",
+    "visual": {
+     "card": null,
+     "prompt": "A hospital reception counter at night under bright white lights, a worried man handing over a debit card, an anxious woman beside him, empty waiting chairs",
+     "type": "art"
+    },
+    "vo": "Karan ka pehla khayal tha, sab savings account mein daal do. Card se kabhi bhi nikaal lo, UPI se turant bhej do. Aur sach mein, emergency mein speed sabse zaroori hai. Hospital ka bill raat ko bhi aa sakta hai, Sunday ko bhi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A glass jar of coins on a shelf slowly melting like ice in the sun, while vegetable and grocery prices rise on a market stall in the background, dreamy symbolic style, no text",
+     "type": "art"
+    },
+    "vo": "Par poora fund savings account mein rakhne ki ek keemat hai. Wahan byaaj kam milta hai, aur mehngai har saal paise ki taakat kam karti hai. Mehngai yaani cheezon ke daam badhna. Paisa safe toh dikhta hai, par andar hi andar ghis raha hota hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A shopping mall during a festive sale, a young man carrying a new phone box and shopping bags, behind him a translucent money pouch shrinking, bright colourful lights, evening",
+     "type": "art"
+    },
+    "vo": "Doosri problem paise ki nahi, insaan ki hai. Jo paisa roz saamne dikhta hai, woh kharch ho hi jaata hai. Sale aayi, naya phone liya, fund thoda kam. Dost ki shaadi aayi, fund aur kam. Ek hi account mein sab ho, toh pata bhi nahi chalta."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A bank vault door slightly open with a small, neatly tied portion of money inside within easy reach, the rest of the money pouch kept aside, clean daylight, organised mood, no text",
+     "type": "art"
+    },
+    "vo": "Toh planners kya kehte hain? Fund ka 30 se 40 percent hissa bank mein rakho, savings account ya sweep-in FD mein. Yeh woh paisa hai jo usi din chahiye. Hospital ka deposit, achanak ka safar, ya koi bill jo kal tak nahi ruk sakta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BANK UNCLE behind a bank counter drawing two connected water tanks on a sheet of paper for a young couple, water flowing between the tanks, the couple nodding in understanding, bright bank interior, morning",
+     "type": "art"
+    },
+    "vo": "Sweep-in FD kya hota hai? Yeh savings account se juda ek FD hai. Ek limit se upar ka paisa khud FD ban jaata hai, aur thoda zyada byaaj kamata hai. Jab account mein paisa kam pade, toh FD ka paisa apne aap wapas aa jaata hai."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A large umbrella sheltering a small bank building in heavy rain, people's deposit boxes dry under it, calm protective mood, daytime storm, no text",
+     "type": "art"
+    },
+    "vo": "Aur bank mein paisa kitna surakshit hai? DICGC yaani RBI ki ek company, jo bank deposits ka insurance deti hai. Har bank mein, har depositor ke 5 lakh rupaye tak insured hain. Matlab bank ko kuch ho bhi jaaye, toh is limit tak paisa wapas milta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Two separate piggy banks on a shelf, one cheerful and used daily with coins spilling, the other sealed and wrapped with a red ribbon, a woman's hand placing a coin in the sealed one, soft morning light",
+     "type": "art"
+    },
+    "vo": "Isliye ek chhoti si samajhdaari rakhiye. Fund bada ho, toh use alag alag bank mein baant sakte hain. Aur emergency fund ko salary account se alag account mein rakhiye. Taaki dimaag mein baith jaaye, yeh paisa roz ke kharche ke liye nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Liquid fund kya hai?",
+    "visual": {
+     "card": null,
+     "prompt": "SG, early forties, beard, striped shirt, holding a glass of water in one hand and a folder in the other with a playful smile, warm study room, daytime",
+     "type": "art"
+    },
+    "vo": "Ab fund ka baaki hissa. Yahan ek naam aata hai, jo bahut log pehli baar sunte hain. Liquid fund. Naam se lagta hai paani ka koi plan hai. Asal mein yeh mutual fund ka sabse seedha aur shaant roop hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A calm river flowing gently past tall government and corporate buildings, small boats carrying money bags briefly to each building and back, peaceful clear morning, illustrated metaphor, no text",
+     "type": "art"
+    },
+    "vo": "Liquid fund yaani ek mutual fund, jo paisa bahut kam samay ke loans mein lagata hai. Jaise sarkar ya badi companies ko kuch hafton ke liye udhaar. Yeh share market mein paisa nahi lagata. Isliye iski keemat mein utaar chadhaav bahut kam hota hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The money pouch split into two parts on a table, the larger part placed beside a calm water glass, the smaller part beside a bank passbook, tidy desk, morning sunlight, no text",
+     "type": "art"
+    },
+    "vo": "Planners kehte hain, emergency fund ka 60 se 70 percent hissa liquid fund mein rakho. Wajah seedhi hai. Shares se kam risk, aur aam taur par savings account se behtar return. Bechne par paisa agle kaam ke din tak account mein aa jaata hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A late night scene with a tap opening and a steady stream of rupee coins flowing into a waiting bowl, the moon outside the window, symbolic and calm, no text",
+     "type": "art"
+    },
+    "vo": "Aur agar paisa abhi ke abhi chahiye? Iske liye SEBI ka ek niyam hai. SEBI yaani share market aur mutual funds ka regulator. Liquid fund mein instant redemption milta hai, yaani turant paisa nikalna. Har scheme se roz 50,000 rupaye tak, kuch sharton ke saath."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A simple three-step staircase drawn as stepping stones across a stream, a man calmly stepping from one stone to the next carrying a bag, sunrise, reassuring mood, no text",
+     "type": "art"
+    },
+    "vo": "Toh poora plan kuch aisa banta hai. Pehle din ka kharcha bank se, card aur UPI se turant. Zaroorat badi ho, toh liquid fund se instant nikaal lo. Baaki ke liye redemption daal do, jo agle kaam ke din account mein aa jaayega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN in office wear at a desk carefully reading a thick fund document with a magnifying glass, a cup of coffee beside her, sceptical careful expression, afternoon office light",
+     "type": "art"
+    },
+    "vo": "Ek baat saaf rakhiye. Kam risk ka matlab yeh nahi, ki risk hai hi nahi. Liquid fund chunte waqt bada, jaana maana fund house aur direct plan dekhiye. Direct plan yaani bina agent ke, jismein kharcha kam hota hai. Yahan zyada return ke peeche mat bhaagiye."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A strong guard figure made of a money pouch standing in front of a small tree of investments during a storm, the tree safe behind it, dramatic but hopeful sky",
+     "type": "art"
+    },
+    "vo": "Ab Karan ki kahani dobara sochiye. Agar uske paas 6 mahine ka aisa fund hota, toh shares loss mein bechne hi nahi padte. Market neeche tha, par woh aaram se intezaar kar sakta tha. Emergency fund asal mein aapke baaki investments ka bodyguard hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Pehle loan ya fund?",
+    "visual": {
+     "card": null,
+     "prompt": "SG, early forties, beard, striped shirt, holding a balance scale with a house-shaped weight on one side and a money pouch on the other, thinking expression, warm study room",
+     "type": "art"
+    },
+    "vo": "Teesra sawaal, aur yeh sabse zyada poocha jaata hai. Pehle loan chukayein, ya pehle fund banayein? Dil kehta hai, loan khatam karo aur byaaj bachao. Yeh logic bhi achha lagta hai. Par Karan ki kahani yahan ek aur baat sikhaati hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A man pouring all his savings from a jar into a big bank building's slot, then standing outside the closed bank door in the rain with an empty jar, regretful mood, evening",
+     "type": "art"
+    },
+    "vo": "Maan lijiye, aapne saara bacha paisa home loan ke prepayment mein daal diya. Prepayment yaani loan ka kuch hissa samay se pehle chuka dena. Loan chhota hua, achhi baat hai. Par naukri gayi, toh bank woh paisa wapas nahi dega. EMI phir bhi har mahine aayegi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A couple watering two plants side by side on a balcony, one plant a small money tree, the other a house-shaped plant, both growing steadily, gentle morning sunlight",
+     "type": "art"
+    },
+    "vo": "Isliye ek samajhdaar raasta yeh hai. Pehle kuch mahine ka chhota cushion banao. Phir dono saath saath chalao, fund bhi bharo aur EMI bhi bharo. Jab fund 6 mahine ka ho jaaye, tab extra paisa prepayment mein lagao."
+   },
+   {
+    "facts_used": [
+     6,
+     7
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A salary envelope being sliced like a cake on a plate, a large slice taken away by several small loan-shaped hands, a family watching across the table, evening, no text",
+     "type": "art"
+    },
+    "vo": "Saath mein ek check zaroori hai, aapki kul EMI kitni hai. Ek study kehti hai, Indians apni income ka 33 percent se zyada EMI mein dete hain. Credit experts kehte hain, kul EMI take-home salary ke 30 percent ke andar rakho. Take-home yaani katauti ke baad haath mein aane wala paisa."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A showroom counter with a new motorbike and a new phone on display, a man hesitating with a pen above a loan form, a cushion on a chair behind him slowly deflating, bright showroom lights",
+     "type": "art"
+    },
+    "vo": "Agar aapki EMI 30 percent se upar hai, toh naya loan lene se pehle rukiye. Naya phone EMI par, nayi bike EMI par, har chhoti EMI aapka cushion kha jaati hai. Karan ka car loan bhi aise hi aaya tha, bas thode aaram ke liye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in a hoodie excitedly showing a stock chart on his phone to a hesitant man holding a sealed money pouch, a falling stock line visible in a window reflection, living room, evening",
+     "type": "art"
+    },
+    "vo": "Ab woh galtiyan, jo achha kamane wale log bhi karte hain. Pehli galti, emergency fund ko share market mein daal dena. Bhai ka tip aata hai, yeh share bahut chalega. Par emergency fund ka kaam badhna nahi, waqt par milna hai. Gira hua market aapki emergency nahi dekhta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A sealed money pouch being tempted by floating images of a beach holiday, wedding clothes and sale bags around it, while a small umbrella stands beside it, playful illustrated style, daytime",
+     "type": "art"
+    },
+    "vo": "Doosri galti, fund ko chhutti, sale ya shaadi ki shopping ke liye todna. Yeh sab zaroori lagte hain, par emergency nahi hain. Emergency yaani naukri jaana, bimari, accident, ya ghar ki achanak marammat. Jo plan karke aata hai, uske liye alag bachat kijiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A water tank on a rooftop with a tap at the bottom in use, and a woman refilling it from the top with a bucket, sunny afternoon, steady and responsible mood",
+     "type": "art"
+    },
+    "vo": "Teesri galti, fund ka hisaab banate waqt EMI ko bhool jaana. Chauthi galti, fund use karne ke baad use wapas na bharna. Fund ek baar banta hai, par use zinda rakhna padta hai. Ghar ke kharche badhein, toh fund bhi saath mein badhaiye."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE at a dining table at night with a notebook and calculator, writing a household budget, a cup of chai beside her, calm and determined, warm lamp light",
+     "type": "art"
+    },
+    "vo": "Toh karna kya hai? Aaj raat ghar ke zaroori kharchon ki list banaiye. Usse 6 mahine se guna kijiye, yahi target hai. Salary wale din, ek fixed hissa apne aap emergency account mein jaaye. Yeh setting bank app mein ho jaati hai, bina roz soche."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A house protected by layers: a money pouch at the door, a shield over the roof and an umbrella above everything, a family visible safe inside the window, soft evening light",
+     "type": "art"
+    },
+    "vo": "Fund ko bank aur liquid fund mein baantiye, jaise humne dekha. Saath mein health insurance aur term insurance bhi dekhiye, kyunki bada bill fund ko ek jhatke mein kha sakta hai. Yeh investment advice nahi hai. Apni zaroorat ke hisaab se, samajh kar faisla kijiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A rainy evening outside an apartment door, a folded umbrella kept ready by the door, inside a family of three laughing at the dinner table under warm light, peaceful mood",
+     "type": "art"
+    },
+    "vo": "Karan ko kuch mahino baad nayi naukri mil gayi. Ab uske ghar mein ek alag account hai, jiska naam Neha ne rakha hai, Chhatri. Kyunki baarish batakar nahi aati. Par chhatri pehle se ghar mein rakhni padti hai, yahi emergency fund ka poora falsafa hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A long hospital corridor at dusk with a single folded insurance file lying on a waiting chair, soft light from a doorway, curious and suspenseful mood, no text",
+     "type": "art"
+    },
+    "vo": "Agli video mein us cheez ki baat, jo emergency fund ko sabse jaldi khaali karti hai. Hospital ka bill. Health insurance ki woh lines, jo claim ke din hi samajh aati hain. Usse pehle, aapke liye ek chhota sa sawaal hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG, early forties, beard, striped shirt, smiling warmly while placing a coin into a sealed money pouch on his desk, a small umbrella beside it, warm evening light",
+     "type": "art"
+    },
+    "vo": "Aapka emergency fund abhi kitne mahine ka hai? Comments mein sirf number likhiye. Koi judge nahi karega, yeh aapke liye hai. Aur agar abhi kuch bhi nahi hai, toh aaj raat kharchon ki list se shuruaat kijiye. Pehla kadam hi sabse zaroori hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "EMERGENCY",
+   "name_hi": "इमरजेंसी",
+   "scene": "LEFT: a calm family dining table with bills neatly paid and a full money pouch on the shelf; RIGHT: the same table months later buried under unpaid EMI envelopes, an empty pouch and rain lashing the window.",
+   "words": [
+    "₹3 LAKH",
+    "KHATRA"
+   ],
+   "words_hi": [
+    "₹3 लाख",
+    "खतरा"
+   ]
+  },
+  "title": "Naukri gayi, par *EMI* nahi ruki ☔"
+ },
+ "status": "voicing",
+ "timings": [],
+ "topic": {
+  "hooks": [
+   "Emergency fund kitna hona chahiye?",
+   "Savings account mein rakhna galat hai?",
+   "Pehle loan chukayein ya fund banayein?"
+  ],
+  "id": "emergency-fund-six-months",
+  "summary": "Why six months of expenses in a liquid place matters, where to keep it (savings, sweep FD, liquid fund), how a family builds it in a year, what not to touch it for.",
+  "target_minutes": 12,
+  "title": "Naukri gayi, EMI nahi ruki: 6 mahine ka emergency fund kaise banta hai",
+  "voice": "voice_g8azc8xcwhlu"
+ },
+ "updated": "2026-10-28T19:28:25+00:00",
+ "writer": "claude"
+}
