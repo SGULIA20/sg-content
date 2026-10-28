@@ -98,22 +98,237 @@
    "day": "2026-10-27",
    "drafts": 1
   },
-  "write_batch": {
-   "at": 1793127822.8443983,
-   "id": "msgbatch_01M2dkJvFpca2muw551Q1SSG",
-   "key": "4c2769e7fcbb3b9f",
-   "patch": false,
-   "tries": 1
-  }
+  "cost": {
+   "inr": 55.5,
+   "usd": 0.10088,
+   "voice": 12
+  },
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "0mVgqo_vuEU"
  },
  "kind": "short",
  "publish_day": "2026-11-03",
  "reasons": [
   "draft cooking in Claude's batch lane; the next run collects it"
  ],
- "script": null,
- "status": "writing",
- "timings": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Kailash par aaj tak koi kyon nahi chadha, rokta kaun hai? 🏔️\nPuran kehte hain yeh Shiv ka ghar hai. Katha kehti hai sirf Milarepa upar pahunche.\nParvatarohi kehte hain pahad chadha ja sakta hai, par permit band hai.\nAapko kya lagta hai, shraddha ya rahasya?\nUs dost ko bhejo jo kehta hai Kailash par koi chadh hi nahi sakta.",
+    "hashtags": [
+     "#Kailash",
+     "#SabutKeSaath",
+     "#Mythology",
+     "#HinduMythology",
+     "#Rahasya",
+     "#AncientIndia",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Kailash par aaj tak koi kyon nahi chadha, rokta kaun hai? Puran, Milarepa ki katha aur parvatarohiyon ki raay, teeno alag kehte hain. Aapko kya lagta hai, shraddha ya rahasya? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Kailash par aaj tak koi kyon nahi chadha, rokta kaun hai? Puranon ki katha, Milarepa ki kahani aur vigyan ki khoj, sab sabut ke saath. Jawab koi adrishya deewar nahi, shraddha aur sarkari ban hai. Us dost ko bhejo jo kehta hai Kailash par koi chadh hi nahi sakta.",
+    "tags": [
+     "Kailash",
+     "Mount Kailash",
+     "Kailash mystery",
+     "Kailash parvat",
+     "Shiva Purana",
+     "Skanda Purana",
+     "Milarepa",
+     "Mansarovar",
+     "Kailash yatra",
+     "Tibet",
+     "Indian mythology",
+     "Sabut ke saath"
+    ],
+    "title": "Kailash par koi kyon nahi chadha? Rokta kaun?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo kehta hai Kailash par koi chadh hi nahi sakta.",
+  "hook": "Kailash par aaj tak koi kyon nahi chadha, rokta kaun hai?",
+  "scenes": [
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: storm clouds tearing apart around the dark, ice-ribbed pyramid face of Mount Kailash, lightning over the summit, a lone mountaineer seen from behind at the foot of the slope, halted, ice axe lowered, prayer flags whipping in the wind, dramatic and mysterious mood, no text",
+     "type": "art"
+    },
+    "vo": "Kailash par aaj tak koi kyon nahi chadha, rokta kaun hai?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: the snowy summit of Kailash glowing at dawn, far in the distance a small seated figure of a meditating deity seen from behind beside a goddess figure, attendants as tiny silhouettes on the slopes, golden light, serene and sacred mood, no text",
+     "type": "art"
+    },
+    "vo": "Shiva Purana kehta hai, Kailash Shiv ka ghar hai. Wahan Shiv, Parvati ke saath dhyan mein hain."
+   },
+   {
+    "facts_used": [
+     1,
+     2
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: morning sun rising behind Himalayan peaks, dew drops evaporating on grass in the foreground, a line of tiny pilgrims walking around the base of Kailash and along a blue lake, peaceful devotional mood, no text",
+     "type": "art"
+    },
+    "vo": "Skanda Purana mein, darshan se paap aise sookhte hain, jaise dhoop mein os. Aur parikrama, yaani pahad ke gird paidal chakkar, sabse bada punya hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a thin yogi in white cloth seen from behind, rising along a golden beam of the first morning sunlight toward the snowy summit of Kailash, Tibetan painting style, magical legendary mood, no text",
+     "type": "art"
+    },
+    "vo": "Tibet ki ek katha kehti hai, sirf yogi Milarepa upar pahunche. Suraj ki pehli kiran pakadkar."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: archaeologists without names in sun hats digging and measuring on a dry, eroded hillside in western Tibet, survey tools and notebooks, cliffs full of dark cave openings behind them, earnest discovery mood, no text",
+     "type": "art"
+    },
+    "vo": "Phir khoj shuru hui. Sichuan University aur Tibet ke Cultural Relics Bureau ne Ngari mein khudai ki."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: torchlight inside an ancient cave chamber revealing faded Buddhist murals on the walls, an archaeologist from behind brushing dust from an old burial niche, honeycomb of caves visible through the entrance, awe-filled mood, no text",
+     "type": "art"
+    },
+    "vo": "2001 tak Piyang-Donggar mein gufaon ka poora basera mila. Saath mein Buddh chitra aur purani kabrein."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: split mood, on one side a shimmering invisible wall of light around the peak of Kailash, on the other a seasoned mountaineer seen from behind studying the rock face with binoculars and a climbing map, tense debate mood, no text",
+     "type": "art"
+    },
+    "vo": "Kuch log kehte hain, koi adrishya shakti rokti hai. Par Reinhold Messner jaise parvatarohi kehte hain, 6,638 metre ka pahad chadha ja sakta hai."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: aerial view of Kailash with four rivers flowing outward like a traditional map, overlaid with a scientist's view showing the river sources in separate distant glacier valleys of a wide mountain range, contrast of belief and mapping, no text",
+     "type": "art"
+    },
+    "vo": "Parampara kehti hai, Sindhu, Sutlej, Brahmaputra aur Karnali Kailash se nikalti hain. Hydrologist, yaani paani ke raaston ke vaigyanik, srot alag ghatiyon mein batate hain."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: close view of the layered, horizontally striped rock bands on the face of Kailash with glaciers grinding below, a geologist from behind holding a rock sample and hammer, curious scientific mood, no text",
+     "type": "art"
+    },
+    "vo": "Kuch lekhak ise kisi sabhyata ka banaya pyramid kehte hain. Geologist, yaani chattanon ke vaigyanik, kehte hain, yeh qudrati chattanein hain, barf ne inhe tarasha."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a climbing rope and ice axe left untouched in the snow at the base of Kailash, prayer flags and a small stone cairn beside them, the peak glowing above, quiet respectful mood, no text",
+     "type": "art"
+    },
+    "vo": "Toh rokta kaun hai? Koi deewar nahi, shraddha. Pavitrata ke samman mein permit, yaani sarkari ijazat, hi band hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a long line of pilgrims in warm jackets walking a stony trail around Kailash, the turquoise Mansarovar lake shining below, an old grandmother pilgrim seen from behind with a walking stick, hopeful and warm mood, no text",
+     "type": "art"
+    },
+    "vo": "Aaj aap shikhar par nahi, gird chal sakte hain. Kailash Mansarovar Yatra mein wahi parikrama hoti hai, jo Skanda Purana mein hai."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: the summit of Kailash at sunset with an untouched snow ridge, a narrator figure in a simple jacket seen from behind on a distant hill gesturing toward the peak, reflective inviting mood, no text",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo kehta hai Kailash par koi chadh hi nahi sakta."
+   }
+  ],
+  "thumbnail": {
+   "name": "KAILASH",
+   "name_hi": "कैलाश",
+   "scene": "The dark, ice-ribbed pyramid face of Mount Kailash under a splitting storm sky with lightning, an abandoned climbing rope and ice axe lying untouched in the snow at its foot.",
+   "words": [
+    "6,638 METRE",
+    "SECRET"
+   ],
+   "words_hi": [
+    "6,638 मीटर",
+    "सीक्रेट"
+   ]
+  },
+  "title": "*Kailash* ki choti par kaun rokta hai? 🤯"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  6.29,
+  14.9,
+  29.87,
+  39.16,
+  48.21,
+  58.14,
+  71.39,
+  84.72,
+  97.01,
+  106.74,
+  118.47
+ ],
  "topic": {
   "allowed_sources": [
    "en.wikipedia.org",
@@ -127,111 +342,17 @@
    "Kailash parikrama 52 km, kitne din?"
   ],
   "id": "kailash-mystery#second",
+  "look": "indian-comic",
   "notes": "No climbing is a permit and faith matter, not a physical impossibility; say so plainly.",
   "place": "Mount Kailash, Tibet",
   "remake_kind": "weak",
   "remake_note": "A SECOND CHANCE for a topic whose first Reel few people watched (it had 78 views). Same sourced facts, but a NEW angle: a sharper opening question, a different first picture, a different story moment. Never reuse its lines or its title.",
   "remake_of": "2026-10-22-arthvan-short",
   "remake_views": 78,
-  "sheet": {
-   "facts": [
-    {
-     "label": "scripture",
-     "number": null,
-     "quote": "Having reached the mountain Kailāsa, the lord Śiva of great sports entered his mansion along with his Gaṇas.",
-     "source_date": "1950",
-     "source_name": "Shiva Purana, Rudra Samhita",
-     "source_url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english",
-     "text": "The Shiva Purana describes Mount Kailash as the eternal sacred abode where Lord Shiva resides in meditation alongside Goddess Parvati.",
-     "unit": null
-    },
-    {
-     "label": "scripture",
-     "number": null,
-     "quote": "As the dew is dried up by the morning sun, so are the sins of mankind cleansed at the sight of Himachal.",
-     "source_date": "1951",
-     "source_name": "Skanda Purana, Kedara Khanda",
-     "source_url": "https://www.wisdomlib.org/hinduism/book/the-skanda-purana",
-     "text": "The Skanda Purana proclaims that the sins of mankind are cleansed at the sight of the Himalayas and the sacred peak of Kailash just as morning dew evaporates in the sun.",
-     "unit": null
-    },
-    {
-     "label": "scripture",
-     "number": null,
-     "quote": "He who undertakes the pilgrimage and circumambulation of Manasarovara and Kailasa attains the highest spiritual fruit and reaches the abode of Shiva.",
-     "source_date": "1998",
-     "source_name": "Skanda Purana, Manasa Khanda",
-     "source_url": "https://www.wisdomlib.org/hinduism/book/the-skanda-purana",
-     "text": "The Skanda Purana in the Manasa Khanda states that circumambulating Lake Manasarovar and Mount Kailash confers supreme spiritual merit upon the pilgrim.",
-     "unit": null
-    },
-    {
-     "label": "legend",
-     "number": 11.0,
-     "quote": "Milarepa caught the first ray of the morning sun and arrived on the top of Mount Kailash without effort.",
-     "source_date": "1977",
-     "source_name": "The Life of Milarepa (Lobsang P. Lhalungpa translation)",
-     "source_url": "https://en.wikipedia.org/wiki/Milarepa",
-     "text": "Tibetan religious lore maintains that the eleventh-century tantric yogi Milarepa was the only human ever to reach the summit of Mount Kailash by riding the rays of the morning sun.",
-     "unit": "CE"
-    },
-    {
-     "label": "legend",
-     "number": 12.0,
-     "quote": "Pilgrims often share urban legends claiming rapid biological aging and extraordinary nail growth while in proximity to the sacred mountain.",
-     "source_date": "2015",
-     "source_name": "Folklore of the Tibetan Plateau",
-     "source_url": "https://en.wikipedia.org/wiki/Mount_Kailash",
-     "text": "Popular modern folklore alleges that travellers in close proximity to Mount Kailash undergo rapid biological aging, claiming fingernails and hair grow several weeks' worth in just 12 hours.",
-     "unit": "count"
-    },
-    {
-     "label": "disputed",
-     "number": 6638.0,
-     "quote": "Reinhold Messner pointed out that Mount Kailash could be climbed technically, but should not be summited due to sacred traditions, which led authorities to enforce strict permit bans.",
-     "source_date": "2002",
-     "source_name": "The Alpine Journal",
-     "source_url": "https://en.wikipedia.org/wiki/Mount_Kailash",
-     "text": "While esoteric legends assert Mount Kailash cannot be climbed because of supernatural barriers, mountaineers and alpine historians explain that the 6,638-metre peak is physically climbable and remains unclimbed solely because official permits are completely prohibited out of deference to religious sanctity.",
-     "unit": "metres"
-    },
-    {
-     "label": "disputed",
-     "number": 4.0,
-     "quote": "Traditional beliefs place the origin of four great Asian rivers directly at the foot of Mount Kailash, whereas remote hydrological mapping shows the headwaters originate in separate glaciers across the broader Gangdise range.",
-     "source_date": "2011",
-     "source_name": "Chinese Academy of Sciences Hydrological Studies",
-     "source_url": "https://en.wikipedia.org/wiki/Mount_Kailash",
-     "text": "While cultural tradition holds that 4 major Asian rivers emerge directly from the four faces of Mount Kailash, hydrologists demonstrate that the glacial source streams of the Indus, Sutlej, Brahmaputra, and Karnali originate from distinct valleys miles away across the Gangdise range.",
-     "unit": "count"
-    },
-    {
-     "label": "disputed",
-     "number": null,
-     "quote": "Mount Kailash consists of Paleogene conglomerate and sandstone strata sculpted naturally by glacial processes rather than artificial human architecture.",
-     "source_date": "2007",
-     "source_name": "Geological Society of America Special Papers",
-     "source_url": "https://en.wikipedia.org/wiki/Mount_Kailash",
-     "text": "While fringe writers claim that Mount Kailash is an artificial pyramid built by an ancient civilization, field geologists determine that its stratified shape is entirely natural, formed by tectonic uplift and quaternary glacial erosion.",
-     "unit": null
-    },
-    {
-     "label": "archaeology",
-     "number": 1000.0,
-     "quote": "Archaeological excavations at the Piyang-Donggar site in Zanda County revealed over a thousand cave habitations and ancient burial chambers.",
-     "source_date": "2001",
-     "source_name": "Center for Tibetan Studies of Sichuan University",
-     "source_url": "https://www.frontiersin.org/articles/10.3389/feart.2022.1063851/full",
-     "text": "Between 1997 and 2001, the Department of Archaeology of Sichuan University and the Bureau of Cultural Relics of the Tibet Autonomous Region excavated the Piyang-Donggar site in Ngari, recording over 1,000 cave chambers, Buddhist murals, and ancient burials.",
-     "unit": "count"
-    }
-   ],
-   "summary": "A SECOND CHANCE for a topic whose first Reel few people watched (it had 78 views). Same sourced facts, but a NEW angle: a sharper opening question, a different first picture, a different story moment. Never reuse its lines or its title."
-  },
   "target_minutes": null,
   "title_hi": "Kailash parvat par koi kyon nahi chadha",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-27T19:13:50+00:00",
- "writer": ""
+ "updated": "2026-10-28T07:48:54+00:00",
+ "writer": "claude"
 }
