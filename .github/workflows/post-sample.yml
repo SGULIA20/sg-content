@@ -1,0 +1,43 @@
+name: post-sample
+
+# One-off (founder, 28 Oct 2026): post a review sample from logs/review/ as an Instagram Trial Reel. Delete after the test.
+on:
+  workflow_dispatch:
+    inputs:
+      video:
+        description: 'Path of the MP4 in the repo'
+        required: true
+        default: 'logs/review/gold-motion-sample.mp4'
+      piece:
+        description: 'Piece whose Instagram caption to use'
+        required: true
+        default: '2026-10-30-sglearning-short'
+
+permissions:
+  contents: write
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Post the Trial Reel
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          VIDEO: ${{ github.event.inputs.video }}
+          PIECE: ${{ github.event.inputs.piece }}
+        run: python scripts/post_sample.py "$VIDEO" "$PIECE"
+      - name: Save the result
+        if: always()
+        run: |
+          git config user.name "sg-content-bot"; git config user.email "sg-content-bot@users.noreply.github.com"
+          python -m engine.gitsync "post-sample: Trial Reel [skip ci]" logs
