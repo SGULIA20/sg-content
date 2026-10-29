@@ -52,10 +52,10 @@ def test_the_ramp():
     assert trends.extras_today(date(2026, 10, 29)) == 1 and trends.extras_today(date(2026, 11, 5)) == 2 and trends.extras_today(date(2026, 11, 20)) == 3
 
 
-def test_the_voice_credit_is_on_youtube_and_instagram():
+def test_no_voice_credit_on_youtube_or_instagram():
     from engine import instagram, youtube
     p = pieces.Piece(id="2026-11-02-sglearning-short", channel="sglearning", kind="short", publish_day=TODAY)
     p.script = {"hook": "h", "scenes": [], "captions": {"youtube": {"description": "d", "tags": []}, "instagram": {"caption": "c", "hashtags": []}}}
-    assert "Voice: Sanjeev Gulia, FCMA, IIM" in instagram.caption_text(p)
+    assert "Voice:" not in instagram.caption_text(p)
     meta = youtube.metadata(p, datetime(2026, 11, 2, 14, 30, tzinfo=timezone.utc), {})
-    assert "Voice: Sanjeev Gulia, FCMA, IIM" in meta["snippet"]["description"]
+    assert "Voice:" not in meta["snippet"]["description"]
