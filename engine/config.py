@@ -83,6 +83,11 @@ def is_story(channel: str, kind: str) -> bool:
 
 
 STORY_WORDS = (150, 260)                      # 60-105 s at ~2.5 words/s; the upper limit is soft (founder, 24 Oct 2026: 15 drafts were rewritten for being 2-5 words over 230)
+STORY_WORDS_BY_CHANNEL = {"sglearning": (85, 125)}     # money Shorts 35-45 s (founder, 30 Oct 2026, "C": a one-week test against the 60-74 s ones)
+
+
+def story_words(channel: str) -> tuple:
+    return STORY_WORDS_BY_CHANNEL.get(channel, STORY_WORDS)
 STORY_MAX_S = 178.0                           # YouTube Shorts allow up to 3 minutes; the writer aims for 60-90 s but nothing is ever cut or sped up (founder, 22 Oct 2026)
 
 ENABLED_KINDS = {"short", "long"}             # longs twice a week per channel (founder, 20 Oct 2026)
