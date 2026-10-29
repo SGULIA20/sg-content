@@ -52,7 +52,8 @@ DATED = ["today", "tomorrow", "this week", "live", "outlook", "prediction", "exp
          "trade setup", "market wrap", "what to expect", "ahead of"]
 DATE_IN_TITLE = re.compile(r"\b\d{1,2}\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b", re.I)
 # the daily market call is crowded and goes stale by evening: not even the news Short takes it
-MARKET_CALL = ["outlook", "prediction", "expiry", "trade setup", "opening bell", "closing bell", "market wrap", "technical view"]
+MARKET_CALL = ["outlook", "prediction", "expiry", "trade setup", "opening bell", "closing bell", "market wrap", "technical view",
+               "markets today", "market today", "stocks end", "shares end", "stocks close", "stock market today"]   # 29 Oct 2026: "US markets today: US stocks end lower" was picked
 
 
 def dated(item: dict) -> bool:
