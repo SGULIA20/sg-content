@@ -67,6 +67,9 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, deps=None, notify=te
     today = slots.ist(now_utc).date()
     sid = slots.piece_id(today, CHANNEL, "short")
     evergreen = pieces.load(sid, root)
+    if evergreen is not None and evergreen.topic.get("keep_slot"):          # a planned test needs this Short on this day (30 Oct gold style test)
+        print(f"{sid} keeps its slot: {evergreen.topic['keep_slot']}", flush=True)
+        return 0
     if evergreen is not None and evergreen.topic.get("news"):
         print(f"{sid} is already today's news Short", flush=True)
         return 0
