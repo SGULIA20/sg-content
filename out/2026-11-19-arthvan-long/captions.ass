@@ -1,0 +1,434 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,86,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.14,Default,,0,0,0,,Kya Sansad Bhavan ka gol design
+Dialogue: 0,0:00:02.14,0:00:04.28,Default,,0,0,0,,Morena ke is mandir se aaya?
+Dialogue: 0,0:00:04.28,0:00:06.90,Default,,0,0,0,,Ek akeli pahadi par patthar ka
+Dialogue: 0,0:00:06.90,0:00:08.09,Default,,0,0,0,,ek gol ghera hai.
+Dialogue: 0,0:00:08.09,0:00:09.28,Default,,0,0,0,,Bahar se dekho,
+Dialogue: 0,0:00:09.28,0:00:11.66,Default,,0,0,0,,toh Delhi ki purani Sansad yaad
+Dialogue: 0,0:00:11.66,0:00:12.38,Default,,0,0,0,,aati hai.
+Dialogue: 0,0:00:12.38,0:00:14.52,Default,,0,0,0,,Lekin is daave ka koi kagzi
+Dialogue: 0,0:00:14.52,0:00:15.95,Default,,0,0,0,,sabut nahi mila.
+Dialogue: 0,0:00:15.95,0:00:16.90,Default,,0,0,0,,Toh sach kya hai,
+Dialogue: 0,0:00:16.90,0:00:19.04,Default,,0,0,0,,chaliye sabut ke saath dekhte hain.
+Dialogue: 0,0:00:19.49,0:00:21.75,Default,,0,0,0,,Is mandir ke beech mein chhat
+Dialogue: 0,0:00:21.75,0:00:22.72,Default,,0,0,0,,nahi hai.
+Dialogue: 0,0:00:22.72,0:00:26.28,Default,,0,0,0,,Aangan seedha aasmaan ki taraf khula
+Dialogue: 0,0:00:26.28,0:00:26.60,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:26.60,0:00:27.89,Default,,0,0,0,,Log kehte hain,
+Dialogue: 0,0:00:27.89,0:00:31.13,Default,,0,0,0,,yeh jaan-boojhkar khula chhoda gaya tha.
+Dialogue: 0,0:00:31.13,0:00:35.01,Default,,0,0,0,,Kyunki yahan 64 yoginiyan aasmaan se
+Dialogue: 0,0:00:35.01,0:00:36.30,Default,,0,0,0,,utarti thin.
+Dialogue: 0,0:00:36.30,0:00:39.86,Default,,0,0,0,,Yogini yaani Devi ki shaktiyon ke
+Dialogue: 0,0:00:39.86,0:00:40.18,Default,,0,0,0,,roop,
+Dialogue: 0,0:00:40.18,0:00:43.09,Default,,0,0,0,,jinhe udne wala mana gaya.
+Dialogue: 0,0:00:43.54,0:00:46.81,Default,,0,0,0,,Lekin pattharon ke paas apni alag
+Dialogue: 0,0:00:46.81,0:00:48.00,Default,,0,0,0,,kahani hai.
+Dialogue: 0,0:00:48.00,0:00:50.38,Default,,0,0,0,,Yahan ek shilalekh mila,
+Dialogue: 0,0:00:50.38,0:00:53.06,Default,,0,0,0,,yaani patthar par khuda hua lekh.
+Dialogue: 0,0:00:53.06,0:00:55.44,Default,,0,0,0,,Usme ek raja ka naam hai,
+Dialogue: 0,0:00:55.44,0:00:57.23,Default,,0,0,0,,aur ek saal likha hai.
+Dialogue: 0,0:00:57.23,0:00:59.61,Default,,0,0,0,,Beech mein Shiva ka mandir hai,
+Dialogue: 0,0:00:59.61,0:01:01.99,Default,,0,0,0,,aur chhat mein chhed wale patthar.
+Dialogue: 0,0:01:01.99,0:01:04.67,Default,,0,0,0,,Yeh chhed baarish ka paani neeche
+Dialogue: 0,0:01:04.67,0:01:05.86,Default,,0,0,0,,le jaate the.
+Dialogue: 0,0:01:06.31,0:01:08.10,Default,,0,0,0,,Is video mein hum ek ek
+Dialogue: 0,0:01:08.10,0:01:09.38,Default,,0,0,0,,sabut kholenge.
+Dialogue: 0,0:01:09.38,0:01:11.17,Default,,0,0,0,,Pehle granth kya kehte hain.
+Dialogue: 0,0:01:11.17,0:01:13.47,Default,,0,0,0,,Phir khudai aur report kya kehti
+Dialogue: 0,0:01:13.47,0:01:13.72,Default,,0,0,0,,hai.
+Dialogue: 0,0:01:13.72,0:01:16.28,Default,,0,0,0,,Phir experts kahan alag raay rakhte
+Dialogue: 0,0:01:16.28,0:01:16.54,Default,,0,0,0,,hain.
+Dialogue: 0,0:01:16.54,0:01:17.56,Default,,0,0,0,,Aur aakhir mein,
+Dialogue: 0,0:01:17.56,0:01:19.61,Default,,0,0,0,,aap khud wahan jaakar kya dekh
+Dialogue: 0,0:01:19.61,0:01:20.37,Default,,0,0,0,,sakte hain.
+Dialogue: 0,0:01:20.37,0:01:22.42,Default,,0,0,0,,Har panel par likha hoga,
+Dialogue: 0,0:01:22.42,0:01:23.19,Default,,0,0,0,,yeh granth hai,
+Dialogue: 0,0:01:23.19,0:01:23.95,Default,,0,0,0,,sabut hai,
+Dialogue: 0,0:01:23.95,0:01:25.23,Default,,0,0,0,,ya sirf kahani.
+Dialogue: 0,0:01:25.68,0:01:27.53,Default,,0,0,0,,Shuru karte hain granth se.
+Dialogue: 0,0:01:27.53,0:01:30.70,Default,,0,0,0,,Agni Purana ek purana Hindu granth
+Dialogue: 0,0:01:30.70,0:01:30.96,Default,,0,0,0,,hai,
+Dialogue: 0,0:01:30.96,0:01:33.07,Default,,0,0,0,,jisme pooja ke niyam bhi hain.
+Dialogue: 0,0:01:33.07,0:01:35.98,Default,,0,0,0,,Iske Tantra wale adhyayon mein 64
+Dialogue: 0,0:01:35.98,0:01:38.09,Default,,0,0,0,,yoginiyon ke naam milte hain.
+Dialogue: 0,0:01:38.09,0:01:40.46,Default,,0,0,0,,Tantra yaani pooja ki ek gupt
+Dialogue: 0,0:01:40.46,0:01:41.52,Default,,0,0,0,,parampara,
+Dialogue: 0,0:01:41.52,0:01:44.42,Default,,0,0,0,,jisme mantra aur mandala ka bada
+Dialogue: 0,0:01:44.42,0:01:45.48,Default,,0,0,0,,mahatva hai.
+Dialogue: 0,0:01:45.93,0:01:48.67,Default,,0,0,0,,Agni Purana ke hisaab se yeh
+Dialogue: 0,0:01:48.67,0:01:51.67,Default,,0,0,0,,yoginiyan Shiva ke Bhairava roop ke
+Dialogue: 0,0:01:51.67,0:01:53.59,Default,,0,0,0,,chaaron taraf hoti hain.
+Dialogue: 0,0:01:53.59,0:01:55.50,Default,,0,0,0,,Har ek ka apna naam hai,
+Dialogue: 0,0:01:55.50,0:01:56.87,Default,,0,0,0,,apna aahvaan hai.
+Dialogue: 0,0:01:56.87,0:02:00.15,Default,,0,0,0,,Aahvaan yaani pooja mein unhe bulane
+Dialogue: 0,0:02:00.15,0:02:00.97,Default,,0,0,0,,ki vidhi.
+Dialogue: 0,0:02:00.97,0:02:03.16,Default,,0,0,0,,Yeh ek ghera banata hai,
+Dialogue: 0,0:02:03.16,0:02:04.25,Default,,0,0,0,,beech mein Shiva,
+Dialogue: 0,0:02:04.25,0:02:06.17,Default,,0,0,0,,aur chaaron taraf shaktiyan.
+Dialogue: 0,0:02:06.62,0:02:09.36,Default,,0,0,0,,Granth mein gol mandala ki vyavastha
+Dialogue: 0,0:02:09.36,0:02:10.73,Default,,0,0,0,,bhi batayi gayi hai.
+Dialogue: 0,0:02:10.73,0:02:13.75,Default,,0,0,0,,Mandala yaani pooja ke liye bana
+Dialogue: 0,0:02:13.75,0:02:15.67,Default,,0,0,0,,ek pavitra gol naksha.
+Dialogue: 0,0:02:15.67,0:02:16.49,Default,,0,0,0,,Ab socho,
+Dialogue: 0,0:02:16.49,0:02:18.96,Default,,0,0,0,,agar is naksha ko patthar mein
+Dialogue: 0,0:02:18.96,0:02:19.79,Default,,0,0,0,,banaya jaaye.
+Dialogue: 0,0:02:19.79,0:02:21.43,Default,,0,0,0,,Toh kaisa dikhega?
+Dialogue: 0,0:02:21.43,0:02:22.80,Default,,0,0,0,,Beech mein ek mandir,
+Dialogue: 0,0:02:22.80,0:02:25.27,Default,,0,0,0,,aur gol deewar mein chhote chhote
+Dialogue: 0,0:02:25.27,0:02:25.82,Default,,0,0,0,,kamre.
+Dialogue: 0,0:02:26.27,0:02:28.08,Default,,0,0,0,,Ab aati hai lok-katha,
+Dialogue: 0,0:02:28.08,0:02:30.41,Default,,0,0,0,,jiska koi likhit sabut nahi.
+Dialogue: 0,0:02:30.41,0:02:32.23,Default,,0,0,0,,Gaon ke buzurg kehte hain,
+Dialogue: 0,0:02:32.23,0:02:34.81,Default,,0,0,0,,raat ko yoginiyan udkar aati thin.
+Dialogue: 0,0:02:34.81,0:02:37.66,Default,,0,0,0,,Isiliye aangan ki chhat nahi banayi
+Dialogue: 0,0:02:37.66,0:02:37.92,Default,,0,0,0,,gayi.
+Dialogue: 0,0:02:37.92,0:02:40.77,Default,,0,0,0,,Yeh kahani pidhi dar pidhi sunayi
+Dialogue: 0,0:02:40.77,0:02:41.29,Default,,0,0,0,,gayi hai.
+Dialogue: 0,0:02:41.29,0:02:43.88,Default,,0,0,0,,Hum ise kahani hi kahenge,
+Dialogue: 0,0:02:43.88,0:02:45.95,Default,,0,0,0,,aur iska samman karenge.
+Dialogue: 0,0:02:46.40,0:02:48.87,Default,,0,0,0,,Ek aur kahani bhi chalti hai.
+Dialogue: 0,0:02:48.87,0:02:49.69,Default,,0,0,0,,Kehte hain,
+Dialogue: 0,0:02:49.69,0:02:52.43,Default,,0,0,0,,yeh mandir ek tarah ka vidyalaya
+Dialogue: 0,0:02:52.43,0:02:52.70,Default,,0,0,0,,tha.
+Dialogue: 0,0:02:52.70,0:02:55.44,Default,,0,0,0,,Yahan suraj ki chaal dekhkar ganit
+Dialogue: 0,0:02:55.44,0:02:57.63,Default,,0,0,0,,aur jyotish padhaya jaata tha.
+Dialogue: 0,0:02:57.63,0:03:00.37,Default,,0,0,0,,Jyotish yaani grahon aur taaron ki
+Dialogue: 0,0:03:00.37,0:03:01.46,Default,,0,0,0,,chaal ka hisaab.
+Dialogue: 0,0:03:01.46,0:03:03.66,Default,,0,0,0,,Lekin yeh bhi lok-katha hai,
+Dialogue: 0,0:03:03.66,0:03:06.12,Default,,0,0,0,,koi shilalekh yeh nahi kehta.
+Dialogue: 0,0:03:06.57,0:03:09.57,Default,,0,0,0,,Toh granth humein 64 yoginiyan aur
+Dialogue: 0,0:03:09.57,0:03:11.66,Default,,0,0,0,,gol mandala dete hain.
+Dialogue: 0,0:03:11.66,0:03:15.56,Default,,0,0,0,,Lok-katha humein udti yoginiyan aur suraj
+Dialogue: 0,0:03:15.56,0:03:17.66,Default,,0,0,0,,ka vidyalaya deti hai.
+Dialogue: 0,0:03:17.66,0:03:20.06,Default,,0,0,0,,Lekin patthar kya kehte hain?
+Dialogue: 0,0:03:20.06,0:03:20.96,Default,,0,0,0,,Kab bana,
+Dialogue: 0,0:03:20.96,0:03:22.16,Default,,0,0,0,,kisne banaya,
+Dialogue: 0,0:03:22.16,0:03:24.85,Default,,0,0,0,,aur kisne pehli baar duniya ko
+Dialogue: 0,0:03:24.85,0:03:25.45,Default,,0,0,0,,bataya?
+Dialogue: 0,0:03:25.45,0:03:27.85,Default,,0,0,0,,Ab chalte hain khoj ki taraf,
+Dialogue: 0,0:03:27.85,0:03:29.05,Default,,0,0,0,,sabut ke saath.
+Dialogue: 0,0:03:29.50,0:03:32.02,Default,,0,0,0,,Yeh mandir Madhya Pradesh ke Morena
+Dialogue: 0,0:03:32.02,0:03:32.94,Default,,0,0,0,,zile mein hai,
+Dialogue: 0,0:03:32.94,0:03:34.31,Default,,0,0,0,,Mitaoli gaon ke paas.
+Dialogue: 0,0:03:34.31,0:03:36.83,Default,,0,0,0,,Kuch log ise Mitawali bhi kehte
+Dialogue: 0,0:03:36.83,0:03:37.06,Default,,0,0,0,,hain.
+Dialogue: 0,0:03:37.06,0:03:39.35,Default,,0,0,0,,Sadiyon tak yeh pahadi par chupchaap
+Dialogue: 0,0:03:39.35,0:03:40.27,Default,,0,0,0,,khada raha.
+Dialogue: 0,0:03:40.27,0:03:42.10,Default,,0,0,0,,Gaon wale ise jaante the,
+Dialogue: 0,0:03:42.10,0:03:44.39,Default,,0,0,0,,lekin bahar ki duniya ke nakshon
+Dialogue: 0,0:03:44.39,0:03:45.54,Default,,0,0,0,,par yeh nahi tha.
+Dialogue: 0,0:03:45.99,0:03:47.28,Default,,0,0,0,,Phir aate hain M.
+Dialogue: 0,0:03:47.28,0:03:47.54,Default,,0,0,0,,B.
+Dialogue: 0,0:03:47.54,0:03:48.06,Default,,0,0,0,,Garde,
+Dialogue: 0,0:03:48.06,0:03:52.21,Default,,0,0,0,,Gwalior State Archaeological Department ke officer.
+Dialogue: 0,0:03:52.21,0:03:55.31,Default,,0,0,0,,Unhone is mandir ka baakayda survey
+Dialogue: 0,0:03:55.31,0:03:55.57,Default,,0,0,0,,kiya.
+Dialogue: 0,0:03:55.57,0:03:57.90,Default,,0,0,0,,Survey yaani jagah ko naapna,
+Dialogue: 0,0:03:57.90,0:04:00.49,Default,,0,0,0,,dekhna aur likhit report banana.
+Dialogue: 0,0:04:00.49,0:04:02.82,Default,,0,0,0,,Saal 1915 ke aas paas ki
+Dialogue: 0,0:04:02.82,0:04:05.16,Default,,0,0,0,,unki report mein is mandir ka
+Dialogue: 0,0:04:05.16,0:04:06.71,Default,,0,0,0,,pehla zikr milta hai.
+Dialogue: 0,0:04:07.16,0:04:09.59,Default,,0,0,0,,Garde ne sirf mandir nahi dekha,
+Dialogue: 0,0:04:09.59,0:04:11.54,Default,,0,0,0,,uske shilalekh bhi padhe.
+Dialogue: 0,0:04:11.54,0:04:13.73,Default,,0,0,0,,Yahi us zamane ki khoj ka
+Dialogue: 0,0:04:13.73,0:04:14.71,Default,,0,0,0,,asli kaam tha.
+Dialogue: 0,0:04:14.71,0:04:16.89,Default,,0,0,0,,Patthar par khude akshar padhna,
+Dialogue: 0,0:04:16.89,0:04:17.87,Default,,0,0,0,,unhe likhna,
+Dialogue: 0,0:04:17.87,0:04:19.33,Default,,0,0,0,,aur sambhaal kar rakhna.
+Dialogue: 0,0:04:19.33,0:04:21.76,Default,,0,0,0,,Isi report ki wajah se aage
+Dialogue: 0,0:04:21.76,0:04:24.44,Default,,0,0,0,,ke historian is mandir tak pahunche.
+Dialogue: 0,0:04:24.89,0:04:27.46,Default,,0,0,0,,Phir aazadi ke baad ek bada
+Dialogue: 0,0:04:27.46,0:04:28.60,Default,,0,0,0,,kadam utha.
+Dialogue: 0,0:04:28.60,0:04:31.45,Default,,0,0,0,,Archaeological Survey of India,
+Dialogue: 0,0:04:31.45,0:04:32.59,Default,,0,0,0,,yaani ASI,
+Dialogue: 0,0:04:32.59,0:04:35.16,Default,,0,0,0,,desh ki puratatva sanstha hai.
+Dialogue: 0,0:04:35.16,0:04:39.44,Default,,0,0,0,,Puratatva yaani purani cheezon aur jagahon
+Dialogue: 0,0:04:39.44,0:04:40.29,Default,,0,0,0,,ka vigyan.
+Dialogue: 0,0:04:40.29,0:04:42.58,Default,,0,0,0,,ASI ne is gol mandir ko
+Dialogue: 0,0:04:42.58,0:04:46.29,Default,,0,0,0,,rashtriya mahatva ka sanrakshit smarak ghoshit
+Dialogue: 0,0:04:46.29,0:04:46.57,Default,,0,0,0,,kiya.
+Dialogue: 0,0:04:47.02,0:04:49.80,Default,,0,0,0,,Yeh ghoshna 1951 mein hui.
+Dialogue: 0,0:04:49.80,0:04:51.04,Default,,0,0,0,,Iska matlab,
+Dialogue: 0,0:04:51.04,0:04:54.13,Default,,0,0,0,,ab yeh mandir kanoon ki hifazat
+Dialogue: 0,0:04:54.13,0:04:54.75,Default,,0,0,0,,mein hai.
+Dialogue: 0,0:04:54.75,0:04:55.98,Default,,0,0,0,,Yahan todphod,
+Dialogue: 0,0:04:55.98,0:04:59.38,Default,,0,0,0,,kabza ya manmaana nirmaan nahi ho
+Dialogue: 0,0:04:59.38,0:05:00.00,Default,,0,0,0,,sakta.
+Dialogue: 0,0:05:00.00,0:05:02.78,Default,,0,0,0,,Yaani sarkar ne maana ki yeh
+Dialogue: 0,0:05:02.78,0:05:04.95,Default,,0,0,0,,patthar sirf gaon ke nahi,
+Dialogue: 0,0:05:04.95,0:05:07.42,Default,,0,0,0,,poore desh ki virasat hain.
+Dialogue: 0,0:05:07.87,0:05:09.60,Default,,0,0,0,,Ab report bhi hai,
+Dialogue: 0,0:05:09.60,0:05:12.37,Default,,0,0,0,,aur kanoon ki hifazat bhi.
+Dialogue: 0,0:05:12.37,0:05:16.18,Default,,0,0,0,,Lekin asli sawaal abhi baaki hai.
+Dialogue: 0,0:05:16.18,0:05:18.60,Default,,0,0,0,,Mandir ke andar kya hai?
+Dialogue: 0,0:05:18.60,0:05:20.33,Default,,0,0,0,,Kitne kamre hain,
+Dialogue: 0,0:05:20.33,0:05:21.72,Default,,0,0,0,,beech mein kya hai,
+Dialogue: 0,0:05:21.72,0:05:24.83,Default,,0,0,0,,aur woh shilalekh kya kehta hai?
+Dialogue: 0,0:05:24.83,0:05:28.99,Default,,0,0,0,,Chaliye pahadi chadhkar andar chalte hain.
+Dialogue: 0,0:05:29.44,0:05:31.93,Default,,0,0,0,,Upar pahunchte hi ek badi gol
+Dialogue: 0,0:05:31.93,0:05:33.18,Default,,0,0,0,,deewar dikhti hai.
+Dialogue: 0,0:05:33.18,0:05:35.42,Default,,0,0,0,,Is deewar ke andar ki taraf
+Dialogue: 0,0:05:35.42,0:05:37.66,Default,,0,0,0,,chhote chhote kamre bane hain.
+Dialogue: 0,0:05:37.66,0:05:39.40,Default,,0,0,0,,In kamron ko cell ya kaksh
+Dialogue: 0,0:05:39.40,0:05:40.15,Default,,0,0,0,,kehte hain.
+Dialogue: 0,0:05:40.15,0:05:42.64,Default,,0,0,0,,Har kamre ke saamne khambon wala
+Dialogue: 0,0:05:42.64,0:05:44.13,Default,,0,0,0,,ek chhota hissa hai.
+Dialogue: 0,0:05:44.13,0:05:46.87,Default,,0,0,0,,Poora ghera ek pahiye jaisa lagta
+Dialogue: 0,0:05:46.87,0:05:47.12,Default,,0,0,0,,hai.
+Dialogue: 0,0:05:47.57,0:05:49.17,Default,,0,0,0,,Ab ginti suniye.
+Dialogue: 0,0:05:49.17,0:05:52.05,Default,,0,0,0,,Is gol deewar mein 65 kamre
+Dialogue: 0,0:05:52.05,0:05:52.37,Default,,0,0,0,,hain.
+Dialogue: 0,0:05:52.37,0:05:54.93,Default,,0,0,0,,Vidwaanon ka anumaan hai,
+Dialogue: 0,0:05:54.93,0:05:57.81,Default,,0,0,0,,har yogini ke liye ek kamra
+Dialogue: 0,0:05:57.81,0:05:58.13,Default,,0,0,0,,tha.
+Dialogue: 0,0:05:58.13,0:06:00.69,Default,,0,0,0,,Aur ek kamra khud Devi ke
+Dialogue: 0,0:06:00.69,0:06:01.01,Default,,0,0,0,,liye.
+Dialogue: 0,0:06:01.01,0:06:03.89,Default,,0,0,0,,Aaj zyaadatar kamre khaali hain,
+Dialogue: 0,0:06:03.89,0:06:06.45,Default,,0,0,0,,murtiyan wahan nahi dikhti.
+Dialogue: 0,0:06:06.90,0:06:09.31,Default,,0,0,0,,Beech ke khule aangan mein ek
+Dialogue: 0,0:06:09.31,0:06:10.52,Default,,0,0,0,,gol mandir hai,
+Dialogue: 0,0:06:10.52,0:06:12.94,Default,,0,0,0,,jo Shiva ko samarpit hai.
+Dialogue: 0,0:06:12.94,0:06:16.26,Default,,0,0,0,,Yaani granth wala naksha yahan patthar
+Dialogue: 0,0:06:16.26,0:06:17.47,Default,,0,0,0,,mein dikhta hai.
+Dialogue: 0,0:06:17.47,0:06:18.67,Default,,0,0,0,,Beech mein Shiva,
+Dialogue: 0,0:06:18.67,0:06:21.69,Default,,0,0,0,,aur chaaron taraf shaktiyon ke kamre.
+Dialogue: 0,0:06:21.69,0:06:24.41,Default,,0,0,0,,Aangan ke upar koi chhat nahi
+Dialogue: 0,0:06:24.41,0:06:24.71,Default,,0,0,0,,hai,
+Dialogue: 0,0:06:24.71,0:06:26.22,Default,,0,0,0,,sirf khula aasmaan.
+Dialogue: 0,0:06:26.67,0:06:29.89,Default,,0,0,0,,Vidwaan aise khule mandir ko hypaethral
+Dialogue: 0,0:06:29.89,0:06:31.23,Default,,0,0,0,,mandir kehte hain.
+Dialogue: 0,0:06:31.23,0:06:33.92,Default,,0,0,0,,Hypaethral yaani jiski chhat na ho,
+Dialogue: 0,0:06:33.92,0:06:36.34,Default,,0,0,0,,jo seedha aasmaan ke neeche ho.
+Dialogue: 0,0:06:36.34,0:06:39.56,Default,,0,0,0,,Yogini mandiron mein yeh khaasiyat aksar
+Dialogue: 0,0:06:39.56,0:06:40.36,Default,,0,0,0,,dikhti hai.
+Dialogue: 0,0:06:40.36,0:06:44.39,Default,,0,0,0,,Lok-katha iski wajah udti yoginiyan batati
+Dialogue: 0,0:06:44.39,0:06:44.66,Default,,0,0,0,,hai,
+Dialogue: 0,0:06:44.66,0:06:47.34,Default,,0,0,0,,lekin patthar khud koi wajah nahi
+Dialogue: 0,0:06:47.34,0:06:48.15,Default,,0,0,0,,batata.
+Dialogue: 0,0:06:48.60,0:06:50.81,Default,,0,0,0,,Ab sabse dilchasp cheez dekhiye.
+Dialogue: 0,0:06:50.81,0:06:52.74,Default,,0,0,0,,Beech ke mandir ki chhat par
+Dialogue: 0,0:06:52.74,0:06:54.40,Default,,0,0,0,,patthar ki patiyan hain.
+Dialogue: 0,0:06:54.40,0:06:56.88,Default,,0,0,0,,In patiyon mein chhote chhote chhed
+Dialogue: 0,0:06:56.88,0:06:57.16,Default,,0,0,0,,hain.
+Dialogue: 0,0:06:57.16,0:06:59.64,Default,,0,0,0,,Baarish ka paani in chhedon se
+Dialogue: 0,0:06:59.64,0:07:01.03,Default,,0,0,0,,neeche jaata tha.
+Dialogue: 0,0:07:01.03,0:07:03.51,Default,,0,0,0,,Aur zameen ke neeche ek badi
+Dialogue: 0,0:07:03.51,0:07:05.72,Default,,0,0,0,,tanki mein jama hota tha.
+Dialogue: 0,0:07:06.17,0:07:08.81,Default,,0,0,0,,Isko aaj ki bhasha mein rainwater
+Dialogue: 0,0:07:08.81,0:07:10.40,Default,,0,0,0,,harvesting kehte hain.
+Dialogue: 0,0:07:10.40,0:07:13.04,Default,,0,0,0,,Yaani baarish ke paani ko bekaar
+Dialogue: 0,0:07:13.04,0:07:15.68,Default,,0,0,0,,bahne dene ki jagah sambhaal kar
+Dialogue: 0,0:07:15.68,0:07:16.21,Default,,0,0,0,,rakhna.
+Dialogue: 0,0:07:16.21,0:07:18.85,Default,,0,0,0,,Ek sookhi pahadi par yeh bahut
+Dialogue: 0,0:07:18.85,0:07:19.91,Default,,0,0,0,,kaam ki cheez thi.
+Dialogue: 0,0:07:19.91,0:07:21.50,Default,,0,0,0,,Pooja ka mandir bhi,
+Dialogue: 0,0:07:21.50,0:07:23.61,Default,,0,0,0,,aur paani ka intezaam bhi.
+Dialogue: 0,0:07:24.06,0:07:25.51,Default,,0,0,0,,Ab woh shilalekh.
+Dialogue: 0,0:07:25.51,0:07:28.12,Default,,0,0,0,,Ek patthar ki patti par khude
+Dialogue: 0,0:07:28.12,0:07:31.02,Default,,0,0,0,,lekh mein saal 1323 likha hai.
+Dialogue: 0,0:07:31.02,0:07:33.33,Default,,0,0,0,,Yeh saal Isvi yaani CE ke
+Dialogue: 0,0:07:33.33,0:07:34.50,Default,,0,0,0,,hisaab se hai.
+Dialogue: 0,0:07:34.50,0:07:37.68,Default,,0,0,0,,Lekh mein Kachchhapaghata vansh ke raja
+Dialogue: 0,0:07:37.68,0:07:39.71,Default,,0,0,0,,Devapala ka naam hai.
+Dialogue: 0,0:07:39.71,0:07:43.19,Default,,0,0,0,,Yaani raja ki sarparasti mein mandir
+Dialogue: 0,0:07:43.19,0:07:44.06,Default,,0,0,0,,ka kaam hua.
+Dialogue: 0,0:07:44.51,0:07:46.71,Default,,0,0,0,,Kachchhapaghata vansh kaun tha?
+Dialogue: 0,0:07:46.71,0:07:49.19,Default,,0,0,0,,Yeh ek madhyakaleen raajvansh tha,
+Dialogue: 0,0:07:49.19,0:07:51.66,Default,,0,0,0,,jo is ilaake mein raaj karta
+Dialogue: 0,0:07:51.66,0:07:51.94,Default,,0,0,0,,tha.
+Dialogue: 0,0:07:51.94,0:07:55.52,Default,,0,0,0,,Madhyakaleen yaani prachin aur aadhunik ke
+Dialogue: 0,0:07:55.52,0:07:56.34,Default,,0,0,0,,beech ka daur.
+Dialogue: 0,0:07:56.34,0:07:58.54,Default,,0,0,0,,Isi vansh ke raja ka naam
+Dialogue: 0,0:07:58.54,0:08:00.74,Default,,0,0,0,,is mandir ke patthar par aaj
+Dialogue: 0,0:08:00.74,0:08:02.67,Default,,0,0,0,,bhi pada ja sakta hai.
+Dialogue: 0,0:08:03.12,0:08:05.25,Default,,0,0,0,,Toh ab humare paas naam bhi
+Dialogue: 0,0:08:05.25,0:08:05.52,Default,,0,0,0,,hai,
+Dialogue: 0,0:08:05.52,0:08:06.32,Default,,0,0,0,,aur saal bhi.
+Dialogue: 0,0:08:06.32,0:08:08.46,Default,,0,0,0,,Lagta hai kahani khatam.
+Dialogue: 0,0:08:08.46,0:08:11.39,Default,,0,0,0,,Lekin yahin se asli bahas shuru
+Dialogue: 0,0:08:11.39,0:08:12.19,Default,,0,0,0,,hoti hai.
+Dialogue: 0,0:08:12.19,0:08:14.86,Default,,0,0,0,,Kya yeh shilalekh mandir ke banne
+Dialogue: 0,0:08:14.86,0:08:15.93,Default,,0,0,0,,ki tareekh hai?
+Dialogue: 0,0:08:15.93,0:08:19.13,Default,,0,0,0,,Ya kisi purane mandir ki marammat
+Dialogue: 0,0:08:19.13,0:08:19.40,Default,,0,0,0,,ki?
+Dialogue: 0,0:08:19.40,0:08:22.07,Default,,0,0,0,,Aur Sansad Bhavan wala sawaal toh
+Dialogue: 0,0:08:22.07,0:08:23.40,Default,,0,0,0,,abhi baaki hai.
+Dialogue: 0,0:08:23.85,0:08:26.08,Default,,0,0,0,,Sabse pehle tareekh ka vivaad.
+Dialogue: 0,0:08:26.08,0:08:27.81,Default,,0,0,0,,Kuch historian kehte hain,
+Dialogue: 0,0:08:27.81,0:08:30.78,Default,,0,0,0,,1323 wala lekh hi mandir banne
+Dialogue: 0,0:08:30.78,0:08:31.77,Default,,0,0,0,,ki tareekh hai.
+Dialogue: 0,0:08:31.77,0:08:33.01,Default,,0,0,0,,Baaki kehte hain,
+Dialogue: 0,0:08:33.01,0:08:35.73,Default,,0,0,0,,mandir isse kaafi pehle bana tha.
+Dialogue: 0,0:08:35.73,0:08:38.45,Default,,0,0,0,,Aur Kachchhapaghata raajaon ne baad mein
+Dialogue: 0,0:08:38.45,0:08:40.18,Default,,0,0,0,,iski marammat karwayi.
+Dialogue: 0,0:08:40.18,0:08:41.92,Default,,0,0,0,,Dono taraf vidwaan hain,
+Dialogue: 0,0:08:41.92,0:08:43.65,Default,,0,0,0,,dono ke apne tark hain.
+Dialogue: 0,0:08:44.10,0:08:46.04,Default,,0,0,0,,Jhagde ki jad ek hi hai.
+Dialogue: 0,0:08:46.04,0:08:48.81,Default,,0,0,0,,Yahan koi neenv ka shilalekh nahi
+Dialogue: 0,0:08:48.81,0:08:49.36,Default,,0,0,0,,mila.
+Dialogue: 0,0:08:49.36,0:08:51.86,Default,,0,0,0,,Neenv ka shilalekh yaani woh lekh
+Dialogue: 0,0:08:51.86,0:08:54.35,Default,,0,0,0,,jo nirmaan ke waqt lagaya jaata
+Dialogue: 0,0:08:54.35,0:08:54.63,Default,,0,0,0,,hai.
+Dialogue: 0,0:08:54.63,0:08:55.46,Default,,0,0,0,,Woh hota,
+Dialogue: 0,0:08:55.46,0:08:56.85,Default,,0,0,0,,toh baat saaf hoti.
+Dialogue: 0,0:08:56.85,0:08:59.89,Default,,0,0,0,,Puratattva ki ek report bhi yahi
+Dialogue: 0,0:08:59.89,0:09:00.72,Default,,0,0,0,,kehti hai,
+Dialogue: 0,0:09:00.72,0:09:02.94,Default,,0,0,0,,isliye tareekh par matbhed hai.
+Dialogue: 0,0:09:03.39,0:09:04.21,Default,,0,0,0,,Ab agla,
+Dialogue: 0,0:09:04.21,0:09:06.13,Default,,0,0,0,,aur sabse mashhoor vivaad.
+Dialogue: 0,0:09:06.13,0:09:09.14,Default,,0,0,0,,Delhi ki purani Sansad Bhavan bhi
+Dialogue: 0,0:09:09.14,0:09:09.69,Default,,0,0,0,,gol hai.
+Dialogue: 0,0:09:09.69,0:09:12.70,Default,,0,0,0,,Bahar chaaron taraf khambon ki lambi
+Dialogue: 0,0:09:12.70,0:09:13.52,Default,,0,0,0,,qatar hai.
+Dialogue: 0,0:09:13.52,0:09:14.89,Default,,0,0,0,,Upar se dekho,
+Dialogue: 0,0:09:14.89,0:09:17.63,Default,,0,0,0,,toh dono ka aakaar kaafi milta
+Dialogue: 0,0:09:17.63,0:09:19.00,Default,,0,0,0,,julta lagta hai.
+Dialogue: 0,0:09:19.00,0:09:20.91,Default,,0,0,0,,Isiliye log kehte hain,
+Dialogue: 0,0:09:20.91,0:09:22.83,Default,,0,0,0,,design yahin se liya gaya.
+Dialogue: 0,0:09:23.28,0:09:24.71,Default,,0,0,0,,Ek paksh kehta hai,
+Dialogue: 0,0:09:24.71,0:09:28.14,Default,,0,0,0,,British architects ne Bharat ke mandiron
+Dialogue: 0,0:09:28.14,0:09:29.29,Default,,0,0,0,,ko dekha tha.
+Dialogue: 0,0:09:29.29,0:09:30.43,Default,,0,0,0,,Ho sakta hai,
+Dialogue: 0,0:09:30.43,0:09:33.29,Default,,0,0,0,,unhone is gol mandir se prerna
+Dialogue: 0,0:09:33.29,0:09:33.86,Default,,0,0,0,,li ho.
+Dialogue: 0,0:09:33.86,0:09:36.44,Default,,0,0,0,,Yeh baat social media par bahut
+Dialogue: 0,0:09:36.44,0:09:37.29,Default,,0,0,0,,chalti hai.
+Dialogue: 0,0:09:37.29,0:09:39.87,Default,,0,0,0,,Lekin is daave ke peeche koi
+Dialogue: 0,0:09:39.87,0:09:41.30,Default,,0,0,0,,likhit dastavez,
+Dialogue: 0,0:09:41.30,0:09:44.16,Default,,0,0,0,,koi chitthi ya naksha nahi mila.
+Dialogue: 0,0:09:44.61,0:09:45.94,Default,,0,0,0,,Doosra paksh kehta hai,
+Dialogue: 0,0:09:45.94,0:09:47.72,Default,,0,0,0,,yeh sirf sanyog ho sakta hai.
+Dialogue: 0,0:09:47.72,0:09:50.60,Default,,0,0,0,,Us zamane mein Europe ki neoclassical
+Dialogue: 0,0:09:50.60,0:09:53.04,Default,,0,0,0,,shaili mein gol imaaratein aur khambe
+Dialogue: 0,0:09:53.04,0:09:53.49,Default,,0,0,0,,aam the.
+Dialogue: 0,0:09:53.49,0:09:56.59,Default,,0,0,0,,Neoclassical yaani purane Greece aur Rome
+Dialogue: 0,0:09:56.59,0:09:58.59,Default,,0,0,0,,se prerit imaarat ki shaili.
+Dialogue: 0,0:09:58.59,0:10:00.36,Default,,0,0,0,,Toh gol aakaar wahan se bhi
+Dialogue: 0,0:10:00.36,0:10:01.25,Default,,0,0,0,,aa sakta tha.
+Dialogue: 0,0:10:01.70,0:10:03.45,Default,,0,0,0,,Toh hum kya kahenge?
+Dialogue: 0,0:10:03.45,0:10:04.62,Default,,0,0,0,,Hum kahenge,
+Dialogue: 0,0:10:04.62,0:10:06.66,Default,,0,0,0,,yeh daava vivaadit hai.
+Dialogue: 0,0:10:06.66,0:10:09.28,Default,,0,0,0,,Milta julta aakaar ek sach hai,
+Dialogue: 0,0:10:09.28,0:10:11.03,Default,,0,0,0,,aankhon se dikhta hai.
+Dialogue: 0,0:10:11.03,0:10:13.95,Default,,0,0,0,,Lekin nakal ka sabut abhi tak
+Dialogue: 0,0:10:13.95,0:10:15.12,Default,,0,0,0,,nahi mila.
+Dialogue: 0,0:10:15.12,0:10:17.45,Default,,0,0,0,,Jab tak dastavez na mile,
+Dialogue: 0,0:10:17.45,0:10:20.37,Default,,0,0,0,,ise saabit kehna sahi nahi.
+Dialogue: 0,0:10:20.37,0:10:23.58,Default,,0,0,0,,Aur jhootha kehna bhi jaldbaazi hogi.
+Dialogue: 0,0:10:24.03,0:10:26.06,Default,,0,0,0,,Ab baat un sawaalon ki,
+Dialogue: 0,0:10:26.06,0:10:28.97,Default,,0,0,0,,jinka jawab kisi ke paas nahi.
+Dialogue: 0,0:10:28.97,0:10:31.58,Default,,0,0,0,,Har purani jagah ki tarah,
+Dialogue: 0,0:10:31.58,0:10:34.49,Default,,0,0,0,,yahan bhi kuch khaali jagahein hain.
+Dialogue: 0,0:10:34.49,0:10:35.65,Default,,0,0,0,,Khaali kamre,
+Dialogue: 0,0:10:35.65,0:10:37.10,Default,,0,0,0,,adhoori tareekh,
+Dialogue: 0,0:10:37.10,0:10:39.42,Default,,0,0,0,,aur ek gol deewar jo chupchaap
+Dialogue: 0,0:10:39.42,0:10:40.30,Default,,0,0,0,,khadi hai.
+Dialogue: 0,0:10:40.30,0:10:42.91,Default,,0,0,0,,Chaliye ek ek karke dekhte hain.
+Dialogue: 0,0:10:43.36,0:10:45.02,Default,,0,0,0,,Sabse pehla sawaal,
+Dialogue: 0,0:10:45.02,0:10:46.41,Default,,0,0,0,,murtiyan kahan gayin?
+Dialogue: 0,0:10:46.41,0:10:49.46,Default,,0,0,0,,Bahar ke kamron mein kabhi yoginiyon
+Dialogue: 0,0:10:49.46,0:10:51.40,Default,,0,0,0,,ki murtiyan rahi hongi.
+Dialogue: 0,0:10:51.40,0:10:53.34,Default,,0,0,0,,Aaj woh wahan nahi hain.
+Dialogue: 0,0:10:53.34,0:10:55.00,Default,,0,0,0,,Unhe kab hataya gaya,
+Dialogue: 0,0:10:55.00,0:10:56.11,Default,,0,0,0,,kisne hataya,
+Dialogue: 0,0:10:56.11,0:10:58.32,Default,,0,0,0,,yeh abhi tak pata nahi.
+Dialogue: 0,0:10:58.32,0:11:00.82,Default,,0,0,0,,Koi record is sawaal ka seedha
+Dialogue: 0,0:11:00.82,0:11:02.48,Default,,0,0,0,,jawab nahi deta.
+Dialogue: 0,0:11:02.93,0:11:04.07,Default,,0,0,0,,Agla sawaal,
+Dialogue: 0,0:11:04.07,0:11:05.77,Default,,0,0,0,,asli nirmaan kab hua?
+Dialogue: 0,0:11:05.77,0:11:08.32,Default,,0,0,0,,Shilalekh ek saal batata hai,
+Dialogue: 0,0:11:08.32,0:11:10.59,Default,,0,0,0,,lekin woh nirmaan ka hai ya
+Dialogue: 0,0:11:10.59,0:11:11.73,Default,,0,0,0,,marammat ka,
+Dialogue: 0,0:11:11.73,0:11:12.86,Default,,0,0,0,,yeh saaf nahi.
+Dialogue: 0,0:11:12.86,0:11:15.41,Default,,0,0,0,,Agar mandir pehle bana tha,
+Dialogue: 0,0:11:15.41,0:11:17.40,Default,,0,0,0,,toh pehle kisne banaya?
+Dialogue: 0,0:11:17.40,0:11:19.96,Default,,0,0,0,,Yeh sawaal aaj bhi historians ke
+Dialogue: 0,0:11:19.96,0:11:21.09,Default,,0,0,0,,beech khula hai.
+Dialogue: 0,0:11:21.54,0:11:23.36,Default,,0,0,0,,Aur yeh sawaal bhi hai,
+Dialogue: 0,0:11:23.36,0:11:25.79,Default,,0,0,0,,ki yeh mandir itna gol kyun
+Dialogue: 0,0:11:25.79,0:11:26.09,Default,,0,0,0,,hai?
+Dialogue: 0,0:11:26.09,0:11:28.82,Default,,0,0,0,,Kya yeh sirf mandala ka naksha
+Dialogue: 0,0:11:28.82,0:11:29.13,Default,,0,0,0,,tha?
+Dialogue: 0,0:11:29.13,0:11:31.55,Default,,0,0,0,,Ya suraj ki chaal dekhne ka
+Dialogue: 0,0:11:31.55,0:11:32.77,Default,,0,0,0,,koi tareeka?
+Dialogue: 0,0:11:32.77,0:11:35.50,Default,,0,0,0,,Granth mandala ki baat karta hai.
+Dialogue: 0,0:11:35.50,0:11:38.54,Default,,0,0,0,,Lok-katha suraj ki baat karti hai.
+Dialogue: 0,0:11:38.54,0:11:40.66,Default,,0,0,0,,Patthar abhi tak chup hain.
+Dialogue: 0,0:11:41.11,0:11:42.72,Default,,0,0,0,,Aur aakhri sawaal,
+Dialogue: 0,0:11:42.72,0:11:45.29,Default,,0,0,0,,yahan sach mein kya hota tha?
+Dialogue: 0,0:11:45.29,0:11:47.22,Default,,0,0,0,,Lok-katha kehti hai,
+Dialogue: 0,0:11:47.22,0:11:50.44,Default,,0,0,0,,raat ko tantric anushthan hote the.
+Dialogue: 0,0:11:50.44,0:11:52.69,Default,,0,0,0,,Ek aur katha kehti hai,
+Dialogue: 0,0:11:52.69,0:11:55.91,Default,,0,0,0,,ganit aur jyotish ki padhai hoti
+Dialogue: 0,0:11:55.91,0:11:56.23,Default,,0,0,0,,thi.
+Dialogue: 0,0:11:56.23,0:11:59.45,Default,,0,0,0,,Dono ka koi likhit sabut nahi
+Dialogue: 0,0:11:59.45,0:11:59.77,Default,,0,0,0,,hai.
+Dialogue: 0,0:11:59.77,0:12:02.02,Default,,0,0,0,,Shayad sach in dono ke beech
+Dialogue: 0,0:12:02.02,0:12:02.99,Default,,0,0,0,,kahin hai.
+Dialogue: 0,0:12:03.44,0:12:04.82,Default,,0,0,0,,Ab sabse achhi baat.
+Dialogue: 0,0:12:04.82,0:12:06.66,Default,,0,0,0,,Yeh mandir aaj bhi khada hai,
+Dialogue: 0,0:12:06.66,0:12:08.51,Default,,0,0,0,,aur aap wahan ja sakte hain.
+Dialogue: 0,0:12:08.51,0:12:11.04,Default,,0,0,0,,Yeh Morena zile mein Mitaoli gaon
+Dialogue: 0,0:12:11.04,0:12:13.34,Default,,0,0,0,,ke paas ek akeli pahadi par
+Dialogue: 0,0:12:13.34,0:12:13.57,Default,,0,0,0,,hai.
+Dialogue: 0,0:12:13.57,0:12:16.34,Default,,0,0,0,,Pahadi lagbhag 30 metre oonchi hai.
+Dialogue: 0,0:12:16.34,0:12:17.95,Default,,0,0,0,,Door se hi gol deewar ka
+Dialogue: 0,0:12:17.95,0:12:19.56,Default,,0,0,0,,ghera dikhne lagta hai.
+Dialogue: 0,0:12:20.01,0:12:22.71,Default,,0,0,0,,Mandir tak pahunchne ke liye 100
+Dialogue: 0,0:12:22.71,0:12:24.42,Default,,0,0,0,,seedhiyan chadhni padti hain.
+Dialogue: 0,0:12:24.42,0:12:25.89,Default,,0,0,0,,Thodi thakaan hogi,
+Dialogue: 0,0:12:25.89,0:12:28.59,Default,,0,0,0,,lekin upar ka nazaara sab bhula
+Dialogue: 0,0:12:28.59,0:12:29.08,Default,,0,0,0,,dega.
+Dialogue: 0,0:12:29.08,0:12:30.79,Default,,0,0,0,,Chaaron taraf khule khet,
+Dialogue: 0,0:12:30.79,0:12:32.51,Default,,0,0,0,,aur beech mein patthar ka gol
+Dialogue: 0,0:12:32.51,0:12:33.00,Default,,0,0,0,,ghera.
+Dialogue: 0,0:12:33.00,0:12:34.23,Default,,0,0,0,,Subah ya shaam jaaiye,
+Dialogue: 0,0:12:34.23,0:12:35.45,Default,,0,0,0,,jab dhoop naram ho.
+Dialogue: 0,0:12:35.90,0:12:39.19,Default,,0,0,0,,Upar jaakar yeh cheezein zaroor dekhiye.
+Dialogue: 0,0:12:39.19,0:12:41.59,Default,,0,0,0,,Gol deewar ke khaali kamre,
+Dialogue: 0,0:12:41.59,0:12:43.99,Default,,0,0,0,,aur unke saamne ke khambe.
+Dialogue: 0,0:12:43.99,0:12:45.78,Default,,0,0,0,,Beech ka Shiva mandir,
+Dialogue: 0,0:12:45.78,0:12:47.88,Default,,0,0,0,,aur uski chhed wali chhat.
+Dialogue: 0,0:12:47.88,0:12:49.38,Default,,0,0,0,,Aur khula aangan,
+Dialogue: 0,0:12:49.38,0:12:52.37,Default,,0,0,0,,jahan se seedha aasmaan dikhta hai.
+Dialogue: 0,0:12:52.37,0:12:55.66,Default,,0,0,0,,Yahan khade hokar aap lok-katha ko
+Dialogue: 0,0:12:55.66,0:12:57.46,Default,,0,0,0,,mehsoos kar sakte hain.
+Dialogue: 0,0:12:57.91,0:12:59.38,Default,,0,0,0,,Ek baat yaad rakhiye.
+Dialogue: 0,0:12:59.38,0:13:02.31,Default,,0,0,0,,Yeh ASI ka sanrakshit smarak hai.
+Dialogue: 0,0:13:02.31,0:13:04.36,Default,,0,0,0,,Deewaron par kuch likhna,
+Dialogue: 0,0:13:04.36,0:13:07.88,Default,,0,0,0,,patthar todna ya kachra failana mana
+Dialogue: 0,0:13:07.88,0:13:08.17,Default,,0,0,0,,hai.
+Dialogue: 0,0:13:08.17,0:13:10.51,Default,,0,0,0,,Yeh virasat humari hai,
+Dialogue: 0,0:13:10.51,0:13:12.86,Default,,0,0,0,,aur aage ki pidhiyon ki bhi.
+Dialogue: 0,0:13:12.86,0:13:14.03,Default,,0,0,0,,Jaise mila,
+Dialogue: 0,0:13:14.03,0:13:15.79,Default,,0,0,0,,waise hi chhod kar aaiye.
+Dialogue: 0,0:13:16.24,0:13:18.84,Default,,0,0,0,,Toh ab sab sabut aapke saamne
+Dialogue: 0,0:13:18.84,0:13:19.13,Default,,0,0,0,,hain.
+Dialogue: 0,0:13:19.13,0:13:22.32,Default,,0,0,0,,Granth 64 yoginiyon ka gol mandala
+Dialogue: 0,0:13:22.32,0:13:23.18,Default,,0,0,0,,deta hai.
+Dialogue: 0,0:13:23.18,0:13:26.65,Default,,0,0,0,,Patthar 1323 ka shilalekh aur ek
+Dialogue: 0,0:13:26.65,0:13:28.39,Default,,0,0,0,,gol mandir dete hain.
+Dialogue: 0,0:13:28.39,0:13:31.57,Default,,0,0,0,,Lekin Sansad Bhavan wale daave ka
+Dialogue: 0,0:13:31.57,0:13:34.75,Default,,0,0,0,,kagzi sabut abhi tak nahi mila.
+Dialogue: 0,0:13:34.75,0:13:36.20,Default,,0,0,0,,Faisla aapka hai.
+Dialogue: 0,0:13:36.65,0:13:39.12,Default,,0,0,0,,Ab aapse ek aasaan sawaal.
+Dialogue: 0,0:13:39.12,0:13:41.91,Default,,0,0,0,,Sansad Bhavan ka gol aakaar is
+Dialogue: 0,0:13:41.91,0:13:43.76,Default,,0,0,0,,mandir se prerit tha,
+Dialogue: 0,0:13:43.76,0:13:45.00,Default,,0,0,0,,ya sirf sanyog?
+Dialogue: 0,0:13:45.00,0:13:46.86,Default,,0,0,0,,Comment mein bas likhiye,
+Dialogue: 0,0:13:46.86,0:13:48.40,Default,,0,0,0,,prerna ya sanyog.
+Dialogue: 0,0:13:48.40,0:13:51.19,Default,,0,0,0,,Agli baar hum chalenge ek aur
+Dialogue: 0,0:13:51.19,0:13:53.97,Default,,0,0,0,,rahasyamayi jagah ki taraf,
+Dialogue: 0,0:13:53.97,0:13:55.21,Default,,0,0,0,,sabut ke saath.

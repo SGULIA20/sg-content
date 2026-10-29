@@ -1,12 +1,127 @@
 {
  "channel": "arthvan",
- "facts": [],
+ "facts": [
+  {
+   "label": "archaeology",
+   "number": 1951.0,
+   "quote": "The Archaeological Survey of India has declared the temple an ancient and historical monument under Act No. LXXI of 1951, dt.28/11/1951.",
+   "source_date": "1951-11-28",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Chausath_Yogini_Temple,_Mitaoli",
+   "text": "The Archaeological Survey of India declared the circular Chausath Yogini Temple at Mitaoli a protected monument of national importance under Act LXXI on 28 November 1951.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1323.0,
+   "quote": "According to an inscription dated to 1323 CE (Vikram Samvat 1383), the temple was built by the Kachchhapaghata king Devapala (r. c. 1055 – 1075).",
+   "source_date": "2023",
+   "source_name": "Chausath Yogini Temple, Mitaoli - Wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/Chausath_Yogini_Temple,_Mitaoli",
+   "text": "An inscription discovered on a slab in the temple dates to the year 1323 CE, recording patronage under King Devapala of the Kachchhapaghata dynasty.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 65.0,
+   "quote": "The temple is formed by a circular wall with 65 chambers, apparently for 64 yoginis and the goddess Devi, and an open mandapa in the centre of a circular courtyard, sacred to Shiva.",
+   "source_date": "2023",
+   "source_name": "Chausath Yogini Temple, Mitaoli - Wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/Chausath_Yogini_Temple,_Mitaoli",
+   "text": "The hilltop temple is constructed with an outer circular wall enclosing 65 small chambers arranged around an open courtyard with a central circular shrine dedicated to Shiva.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": 30.0,
+   "quote": "The temple is located on a hill about 100 feet (30 m) in height; there are 100 steps to climb up to the entrance.",
+   "source_date": "2024",
+   "source_name": "UNESCO World Heritage Centre",
+   "source_url": "https://whc.unesco.org/en/tentativelists/6738/",
+   "text": "The temple complex stands on an isolated hill rising approximately 30 metres in height and is reached by a flight of 100 steps.",
+   "unit": "metres"
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "Within the main central shrine there are slab coverings which have perforations in them to drain rainwater to a large underground storage.",
+   "source_date": "2023",
+   "source_name": "Chausath Yogini Temple, Mitaoli - Wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/Chausath_Yogini_Temple,_Mitaoli",
+   "text": "The central Shiva shrine incorporates an ancient drainage system with perforated roof slabs designed to channel rainwater into an underground storage facility.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 1915.0,
+   "quote": "The first mention of the place and its inscriptions was in the Gwalior State Archaeological Department's report of 1915-16.",
+   "source_date": "1916",
+   "source_name": "Gwalior State Archaeological Department",
+   "source_url": "https://puratattva.in/mitawali-yogini-temple-mystified/",
+   "text": "Archaeological officer M. B. Garde first formally surveyed and reported the Mitawali temple and its inscriptions in the 1915–16 annual report of the Gwalior State Archaeological Department.",
+   "unit": "CE"
+  },
+  {
+   "label": "disputed",
+   "number": 1323.0,
+   "quote": "As no foundation inscription has been found and therefore dating of the temple is a matter of contention among scholars.",
+   "source_date": "2023-03-29",
+   "source_name": "Puratattva",
+   "source_url": "https://puratattva.in/mitawali-yogini-temple-mystified/",
+   "text": "Historians disagree whether the inscription dated to 1323 CE records the original construction of the temple or a 14th-century renovation of a pre-existing 11th-century structure by the Kachchhapaghatas.",
+   "unit": "CE"
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "It is said that the temple was the venue of providing education in astrology and mathematics based on the transit of the Sun.",
+   "source_date": "2023",
+   "source_name": "Chausath Yogini Temple, Mitaoli - Wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/Chausath_Yogini_Temple,_Mitaoli",
+   "text": "Regional folklore maintains that the circular temple operated as an esoteric academy where students and practitioners were instructed in mathematics and astrology based on the movement of the sun.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": 64.0,
+   "quote": "This is because they were designed for communion with yoginis, thought to be capable of flight.",
+   "source_date": "2020",
+   "source_name": "Yogini temples - Wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/Yogini_temples",
+   "text": "Local tradition recounts that the circular courtyard was deliberately left roofless so that the 64 yoginis could alight from flight to partake in nocturnal tantric rituals.",
+   "unit": "count"
+  },
+  {
+   "label": "scripture",
+   "number": 64.0,
+   "quote": "The Agni Purana (chapters 52 and 146) lists the names of 64 yoginis and their ritual invocations around Bhairava.",
+   "source_date": "1904",
+   "source_name": "Agni Purana, Chapter 52",
+   "source_url": "https://en.wikipedia.org/wiki/Yogini",
+   "text": "Tantric chapters in the Agni Purana enumerate sixty-four yoginis around Shiva and outline circular mandala arrangements for their esoteric worship.",
+   "unit": "count"
+  }
+ ],
  "id": "2026-11-19-arthvan-long",
  "ids": {
   "budget": {
    "day": "2026-10-29",
-   "research": 3
-  }
+   "drafts": 1,
+   "research": 4
+  },
+  "captions": {
+   "en": "AUieDaZuBdkr1raStx_Hf8prRlx3IICTzHMhZ_Jdb9JHromYRGD7tYfj",
+   "gu": "AUieDaaqACv002URYWHUefqW7zu4Hl-3SH5GcbR4sgnKu4fD4AFq-dzsFnUqNf4-77NUr7BEpqg",
+   "hi": "AUieDaaxV1IEiIVDcA2z_J7ed3EVB7Kt4nB3QnEV4gAr7-2UaHxi-IjXToyFuBN7DoK80Lk",
+   "mr": "AUieDaZfiASX_HSitQIp_cbEEcQbCTFHyD4ety1Vxn0Y-vTONsdsBDmJTSRPPeKuTZg",
+   "ta": "AUieDaYWPdzwkOeDnPf896NVL67hlJixgvbOo-fPzec9s_gSr0kGqEm4sSG-2uSLv6c"
+  },
+  "cost": {
+   "inr": 181.5,
+   "usd": 0.654094,
+   "voice": 42
+  },
+  "yt_id": "EixHMTaZ7tQ"
  },
  "kind": "long",
  "publish_day": "2026-11-19",
@@ -15,28 +130,674 @@
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
  ],
- "script": null,
- "status": "failed-research",
- "timings": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Kya Sansad Bhavan ka gol design Morena ke is mandir se aaya?\nPahadi par patthar ka gol ghera, beech mein Shiva ka mandir, aur 1323 ka shilalekh.\nMilta julta aakaar dikhta hai, lekin nakal ka kagzi sabut abhi tak nahi mila.\nAapko kya lagta hai, prerna ya sanyog?\nUs dost ko bhejo jo kehta hai Sansad ka design videsh se aaya.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#IndianHistory",
+     "#Archaeology",
+     "#AncientIndia",
+     "#Itihaas",
+     "#Rahasya",
+     "#HinduMythology",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Morena ki pahadi par ek gol mandir, aur log kehte hain Sansad Bhavan ka design yahin se aaya. Shilalekh, ASI ki hifazat, aur ek bada sawaal: kya yeh prerna thi, ya sirf sanyog? Aap kya kehte hain? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Sansad jaisa gol mandir",
+     "00:00 Granth aur lok-katha",
+     "00:00 Khoj: Garde se ASI tak",
+     "00:00 Mandir ke andar ke sabut",
+     "00:00 Vivaad: tareekh aur Sansad",
+     "00:00 Jo abhi tak pata nahi",
+     "00:00 Aaj wahan kya dekhein",
+     "00:00 Aapka sawaal"
+    ],
+    "description": "Kya Sansad Bhavan ka gol design Morena ke is mandir se aaya? Granth, lok-katha aur ASI ke sabut ek saath dekhiye, har baat par label ke saath. Kya sabit hai, kya vivaadit hai, aur kya aaj bhi koi nahi jaanta. Us dost ko bhejo jo kehta hai Sansad ka design videsh se aaya.",
+    "tags": [
+     "Chausath Yogini",
+     "Mitaoli",
+     "Mitawali",
+     "Morena",
+     "Sansad Bhavan",
+     "Yogini temple",
+     "ASI",
+     "Agni Purana",
+     "Madhya Pradesh",
+     "Indian history",
+     "archaeology",
+     "ancient India"
+    ],
+    "title": "Chausath Yogini 1323: Sansad ka design yahan se?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "1951",
+    "line": "ASI ne rashtriya mahatva ka smarak ghoshit kiya",
+    "source": "Archaeological Survey of India"
+   },
+   {
+    "big_number": "65",
+    "line": "kamre, gol deewar ke andar",
+    "source": "Chausath Yogini Temple, Mitaoli - Wikipedia"
+   },
+   {
+    "big_number": "1323 CE",
+    "line": "ka shilalekh, Raja Devapala ka naam",
+    "source": "Chausath Yogini Temple, Mitaoli - Wikipedia"
+   },
+   {
+    "big_number": "30 metre",
+    "line": "oonchi pahadi par khada gol mandir",
+    "source": "UNESCO World Heritage Centre"
+   }
+  ],
+  "carousel": true,
+  "end_question": "Sansad Bhavan ka gol aakaar is mandir se prerit tha, ya sirf sanyog?",
+  "hook": "Kya Sansad Bhavan ka gol design Morena ke is mandir se aaya?",
+  "scenes": [
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Dramatic aerial drawn panel of a circular stone temple on a lonely hilltop in central India at stormy dusk, dark clouds swirling above, lightning on the horizon, the perfect ring of the outer wall glowing in the last light, open courtyard with a small round shrine in the centre, no people, no text",
+     "type": "art"
+    },
+    "vo": "Kya Sansad Bhavan ka gol design Morena ke is mandir se aaya? Ek akeli pahadi par patthar ka ek gol ghera hai. Bahar se dekho, toh Delhi ki purani Sansad yaad aati hai. Lekin is daave ka koi kagzi sabut nahi mila. Toh sach kya hai, chaliye sabut ke saath dekhte hain."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Night view of a roofless circular stone courtyard under a sky full of stars, faint glowing feminine silhouettes seen far away and from behind descending like lights from the sky, moonlight on the stone ring, mystical but calm mood, no text",
+     "type": "art"
+    },
+    "vo": "Is mandir ke beech mein chhat nahi hai. Aangan seedha aasmaan ki taraf khula hai. Log kehte hain, yeh jaan-boojhkar khula chhoda gaya tha. Kyunki yahan 64 yoginiyan aasmaan se utarti thin. Yogini yaani Devi ki shaktiyon ke roop, jinhe udne wala mana gaya."
+   },
+   {
+    "facts_used": [
+     1,
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Close drawn panel of a weathered stone slab with carved ancient script, beside it a stone roof slab with small round perforations, rain drops falling through the holes, warm grey stone, evidence mood, no readable text",
+     "type": "art"
+    },
+    "vo": "Lekin pattharon ke paas apni alag kahani hai. Yahan ek shilalekh mila, yaani patthar par khuda hua lekh. Usme ek raja ka naam hai, aur ek saal likha hai. Beech mein Shiva ka mandir hai, aur chhat mein chhed wale patthar. Yeh chhed baarish ka paani neeche le jaate the."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Is video mein hum ek ek sabut kholenge. Pehle granth kya kehte hain. Phir khudai aur report kya kehti hai. Phir experts kahan alag raay rakhte hain. Aur aakhir mein, aap khud wahan jaakar kya dekh sakte hain. Har panel par likha hoga, yeh granth hai, sabut hai, ya sirf kahani."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "An old palm-leaf manuscript lying open on a wooden stand in a lamp-lit room, a priest seen from behind reading it, soft oil lamp glow, incense smoke, no readable text",
+     "type": "art"
+    },
+    "vo": "Shuru karte hain granth se. Agni Purana ek purana Hindu granth hai, jisme pooja ke niyam bhi hain. Iske Tantra wale adhyayon mein 64 yoginiyon ke naam milte hain. Tantra yaani pooja ki ek gupt parampara, jisme mantra aur mandala ka bada mahatva hai."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "A traditional painting inside a scene, showing a distant small statue of Shiva at the centre with a ring of tiny goddess figures around him, viewed from afar on a temple wall, warm ochre colours, no close-up of deities, no text",
+     "type": "art"
+    },
+    "vo": "Agni Purana ke hisaab se yeh yoginiyan Shiva ke Bhairava roop ke chaaron taraf hoti hain. Har ek ka apna naam hai, apna aahvaan hai. Aahvaan yaani pooja mein unhe bulane ki vidhi. Yeh ek ghera banata hai, beech mein Shiva, aur chaaron taraf shaktiyan."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "A circular sacred diagram drawn with coloured powder on a temple floor, slowly transforming into a stone ring of small chambers around a central round shrine, dreamy transition, top-down view, no text",
+     "type": "art"
+    },
+    "vo": "Granth mein gol mandala ki vyavastha bhi batayi gayi hai. Mandala yaani pooja ke liye bana ek pavitra gol naksha. Ab socho, agar is naksha ko patthar mein banaya jaaye. Toh kaisa dikhega? Beech mein ek mandir, aur gol deewar mein chhote chhote kamre."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "An elderly village grandmother sitting by a small fire at night telling a story to wide-eyed children, the dark outline of a round hilltop temple visible in the distance under the moon, warm firelight, no text",
+     "type": "art"
+    },
+    "vo": "Ab aati hai lok-katha, jiska koi likhit sabut nahi. Gaon ke buzurg kehte hain, raat ko yoginiyan udkar aati thin. Isiliye aangan ki chhat nahi banayi gayi. Yeh kahani pidhi dar pidhi sunayi gayi hai. Hum ise kahani hi kahenge, aur iska samman karenge."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Imagined medieval scene of students in simple robes sitting in a circular stone courtyard, a teacher seen from behind pointing at the sun's shadow on the floor, morning light, gentle and scholarly mood, no text",
+     "type": "art"
+    },
+    "vo": "Ek aur kahani bhi chalti hai. Kehte hain, yeh mandir ek tarah ka vidyalaya tha. Yahan suraj ki chaal dekhkar ganit aur jyotish padhaya jaata tha. Jyotish yaani grahon aur taaron ki chaal ka hisaab. Lekin yeh bhi lok-katha hai, koi shilalekh yeh nahi kehta."
+   },
+   {
+    "facts_used": [
+     9,
+     8,
+     7
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Toh granth humein 64 yoginiyan aur gol mandala dete hain. Lok-katha humein udti yoginiyan aur suraj ka vidyalaya deti hai. Lekin patthar kya kehte hain? Kab bana, kisne banaya, aur kisne pehli baar duniya ko bataya? Ab chalte hain khoj ki taraf, sabut ke saath."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Wide landscape of dry fields and a small village in central India, a lone hill with a circular stone temple on top, shepherds and goats on a dusty path, quiet timeless afternoon, no text",
+     "type": "art"
+    },
+    "vo": "Yeh mandir Madhya Pradesh ke Morena zile mein hai, Mitaoli gaon ke paas. Kuch log ise Mitawali bhi kehte hain. Sadiyon tak yeh pahadi par chupchaap khada raha. Gaon wale ise jaante the, lekin bahar ki duniya ke nakshon par yeh nahi tha."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "An early twentieth-century archaeologist in a pith helmet seen from behind, measuring the curved stone wall of a circular temple with a tape, an assistant holding a notebook, sepia toned drawn style, no text",
+     "type": "art"
+    },
+    "vo": "Phir aate hain M. B. Garde, Gwalior State Archaeological Department ke officer. Unhone is mandir ka baakayda survey kiya. Survey yaani jagah ko naapna, dekhna aur likhit report banana. Saal 1915 ke aas paas ki unki report mein is mandir ka pehla zikr milta hai."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Hands copying carved letters from a stone slab onto paper by lamp light inside a stone chamber, an old field notebook and ink pot beside, careful scholarly mood, no readable text",
+     "type": "art"
+    },
+    "vo": "Garde ne sirf mandir nahi dekha, uske shilalekh bhi padhe. Yahi us zamane ki khoj ka asli kaam tha. Patthar par khude akshar padhna, unhe likhna, aur sambhaal kar rakhna. Isi report ki wajah se aage ke historian is mandir tak pahunche."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Mid-century Indian officials in white clothes seen from a distance standing at the gate of a circular stone hilltop temple, a plain blank signboard being set up, hopeful clear sky, no text, no logos",
+     "type": "art"
+    },
+    "vo": "Phir aazadi ke baad ek bada kadam utha. Archaeological Survey of India, yaani ASI, desh ki puratatva sanstha hai. Puratatva yaani purani cheezon aur jagahon ka vigyan. ASI ne is gol mandir ko rashtriya mahatva ka sanrakshit smarak ghoshit kiya."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": {
+      "big_number": "1951",
+      "line": "ASI ne rashtriya mahatva ka smarak ghoshit kiya",
+      "source": "Archaeological Survey of India"
+     },
+     "prompt": "Number card over a faded drawing of the circular temple",
+     "type": "card"
+    },
+    "vo": "Yeh ghoshna 1951 mein hui. Iska matlab, ab yeh mandir kanoon ki hifazat mein hai. Yahan todphod, kabza ya manmaana nirmaan nahi ho sakta. Yaani sarkar ne maana ki yeh patthar sirf gaon ke nahi, poore desh ki virasat hain."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "A pilgrim seen from behind climbing a long stone stairway up a hill towards the ring wall of a circular temple, early morning mist, sense of anticipation, no text",
+     "type": "art"
+    },
+    "vo": "Ab report bhi hai, aur kanoon ki hifazat bhi. Lekin asli sawaal abhi baaki hai. Mandir ke andar kya hai? Kitne kamre hain, beech mein kya hai, aur woh shilalekh kya kehta hai? Chaliye pahadi chadhkar andar chalte hain."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "View from inside the circular courtyard showing the curved inner wall lined with many small pillared chambers in a continuous ring, like the rim of a giant stone wheel, bright daylight, no people, no text",
+     "type": "art"
+    },
+    "vo": "Upar pahunchte hi ek badi gol deewar dikhti hai. Is deewar ke andar ki taraf chhote chhote kamre bane hain. In kamron ko cell ya kaksh kehte hain. Har kamre ke saamne khambon wala ek chhota hissa hai. Poora ghera ek pahiye jaisa lagta hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": {
+      "big_number": "65",
+      "line": "kamre, gol deewar ke andar",
+      "source": "Chausath Yogini Temple, Mitaoli - Wikipedia"
+     },
+     "prompt": "Number card over a drawn top-down plan of the ring of chambers",
+     "type": "card"
+    },
+    "vo": "Ab ginti suniye. Is gol deewar mein 65 kamre hain. Vidwaanon ka anumaan hai, har yogini ke liye ek kamra tha. Aur ek kamra khud Devi ke liye. Aaj zyaadatar kamre khaali hain, murtiyan wahan nahi dikhti."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "The small round central shrine standing in the middle of the open circular courtyard, seen from the edge of the ring wall, blue sky overhead, long shadows, sacred calm mood, no text",
+     "type": "art"
+    },
+    "vo": "Beech ke khule aangan mein ek gol mandir hai, jo Shiva ko samarpit hai. Yaani granth wala naksha yahan patthar mein dikhta hai. Beech mein Shiva, aur chaaron taraf shaktiyon ke kamre. Aangan ke upar koi chhat nahi hai, sirf khula aasmaan."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Looking straight up from the centre of a roofless circular stone courtyard, the ring of the wall framing an open sky with drifting clouds and a few birds, no text",
+     "type": "art"
+    },
+    "vo": "Vidwaan aise khule mandir ko hypaethral mandir kehte hain. Hypaethral yaani jiski chhat na ho, jo seedha aasmaan ke neeche ho. Yogini mandiron mein yeh khaasiyat aksar dikhti hai. Lok-katha iski wajah udti yoginiyan batati hai, lekin patthar khud koi wajah nahi batata."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Cutaway drawing of the central stone shrine during monsoon rain, water flowing through perforated roof slabs and down hidden channels into a large underground stone tank, educational cross-section style, no text",
+     "type": "art"
+    },
+    "vo": "Ab sabse dilchasp cheez dekhiye. Beech ke mandir ki chhat par patthar ki patiyan hain. In patiyon mein chhote chhote chhed hain. Baarish ka paani in chhedon se neeche jaata tha. Aur zameen ke neeche ek badi tanki mein jama hota tha."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "A dry rocky hilltop under heavy monsoon clouds, the circular temple catching rain while the surrounding land is parched, a villager seen from behind watching from below, no text",
+     "type": "art"
+    },
+    "vo": "Isko aaj ki bhasha mein rainwater harvesting kehte hain. Yaani baarish ke paani ko bekaar bahne dene ki jagah sambhaal kar rakhna. Ek sookhi pahadi par yeh bahut kaam ki cheez thi. Pooja ka mandir bhi, aur paani ka intezaam bhi."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": {
+      "big_number": "1323 CE",
+      "line": "ka shilalekh, Raja Devapala ka naam",
+      "source": "Chausath Yogini Temple, Mitaoli - Wikipedia"
+     },
+     "prompt": "Number card over a drawing of a carved stone inscription slab",
+     "type": "card"
+    },
+    "vo": "Ab woh shilalekh. Ek patthar ki patti par khude lekh mein saal 1323 likha hai. Yeh saal Isvi yaani CE ke hisaab se hai. Lekh mein Kachchhapaghata vansh ke raja Devapala ka naam hai. Yaani raja ki sarparasti mein mandir ka kaam hua."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "A medieval royal procession seen from far away winding up a hill toward a circular stone temple, banners without symbols, horses and attendants, golden evening light, no faces in close-up, no text",
+     "type": "art"
+    },
+    "vo": "Kachchhapaghata vansh kaun tha? Yeh ek madhyakaleen raajvansh tha, jo is ilaake mein raaj karta tha. Madhyakaleen yaani prachin aur aadhunik ke beech ka daur. Isi vansh ke raja ka naam is mandir ke patthar par aaj bhi pada ja sakta hai."
+   },
+   {
+    "facts_used": [
+     1,
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "thinking",
+     "type": "avatar"
+    },
+    "vo": "Toh ab humare paas naam bhi hai, aur saal bhi. Lagta hai kahani khatam. Lekin yahin se asli bahas shuru hoti hai. Kya yeh shilalekh mandir ke banne ki tareekh hai? Ya kisi purane mandir ki marammat ki? Aur Sansad Bhavan wala sawaal toh abhi baaki hai."
+   },
+   {
+    "facts_used": [
+     6,
+     1
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Two scholars seen from behind standing on opposite sides of a stone inscription slab, one pointing at the carved date, the other pointing at the old weathered wall, a balance scale motif in the sky, no text",
+     "type": "art"
+    },
+    "vo": "Sabse pehle tareekh ka vivaad. Kuch historian kehte hain, 1323 wala lekh hi mandir banne ki tareekh hai. Baaki kehte hain, mandir isse kaafi pehle bana tha. Aur Kachchhapaghata raajaon ne baad mein iski marammat karwayi. Dono taraf vidwaan hain, dono ke apne tark hain."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "An empty rectangular gap in the base of an ancient stone wall where a foundation stone might have been, an archaeologist's brush and lantern resting nearby, mysterious shadowed mood, no text",
+     "type": "art"
+    },
+    "vo": "Jhagde ki jad ek hi hai. Yahan koi neenv ka shilalekh nahi mila. Neenv ka shilalekh yaani woh lekh jo nirmaan ke waqt lagaya jaata hai. Woh hota, toh baat saaf hoti. Puratattva ki ek report bhi yahi kehti hai, isliye tareekh par matbhed hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Split drawn panel: LEFT the circular stone hilltop temple seen from above, RIGHT a large round colonial-era colonnaded building with a long ring of pillars seen from above, matching circles, no text, no logos",
+     "type": "art"
+    },
+    "vo": "Ab agla, aur sabse mashhoor vivaad. Delhi ki purani Sansad Bhavan bhi gol hai. Bahar chaaron taraf khambon ki lambi qatar hai. Upar se dekho, toh dono ka aakaar kaafi milta julta lagta hai. Isiliye log kehte hain, design yahin se liya gaya."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A colonial-era drafting table with blank architectural drawings of a round colonnaded building, a sketchbook beside it open to a faint drawing of a circular temple, a question-mark shaped shadow, no readable text, no real people",
+     "type": "art"
+    },
+    "vo": "Ek paksh kehta hai, British architects ne Bharat ke mandiron ko dekha tha. Ho sakta hai, unhone is gol mandir se prerna li ho. Yeh baat social media par bahut chalti hai. Lekin is daave ke peeche koi likhit dastavez, koi chitthi ya naksha nahi mila."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A grand round European neoclassical building with tall columns and a dome under a pale sky, ancient Roman-style ruins faintly in the background, stately mood, no text",
+     "type": "art"
+    },
+    "vo": "Doosra paksh kehta hai, yeh sirf sanyog ho sakta hai. Us zamane mein Europe ki neoclassical shaili mein gol imaaratein aur khambe aam the. Neoclassical yaani purane Greece aur Rome se prerit imaarat ki shaili. Toh gol aakaar wahan se bhi aa sakta tha."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A traditional brass weighing scale perfectly balanced, on one pan a small stone model of the circular temple, on the other a small model of a round colonnaded building, neutral soft light, no text",
+     "type": "art"
+    },
+    "vo": "Toh hum kya kahenge? Hum kahenge, yeh daava vivaadit hai. Milta julta aakaar ek sach hai, aankhon se dikhta hai. Lekin nakal ka sabut abhi tak nahi mila. Jab tak dastavez na mile, ise saabit kehna sahi nahi. Aur jhootha kehna bhi jaldbaazi hogi."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab baat un sawaalon ki, jinka jawab kisi ke paas nahi. Har purani jagah ki tarah, yahan bhi kuch khaali jagahein hain. Khaali kamre, adhoori tareekh, aur ek gol deewar jo chupchaap khadi hai. Chaliye ek ek karke dekhte hain."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A row of empty stone niches along a curved wall, dust and dry leaves on the floors, one faint outline where a statue once stood, late afternoon light, melancholic mystery, no text",
+     "type": "art"
+    },
+    "vo": "Sabse pehla sawaal, murtiyan kahan gayin? Bahar ke kamron mein kabhi yoginiyon ki murtiyan rahi hongi. Aaj woh wahan nahi hain. Unhe kab hataya gaya, kisne hataya, yeh abhi tak pata nahi. Koi record is sawaal ka seedha jawab nahi deta."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Layered stones of an old wall showing two different textures, older rough blocks below and neater blocks above, a magnifying glass resting on the stone, investigative mood, no text",
+     "type": "art"
+    },
+    "vo": "Agla sawaal, asli nirmaan kab hua? Shilalekh ek saal batata hai, lekin woh nirmaan ka hai ya marammat ka, yeh saaf nahi. Agar mandir pehle bana tha, toh pehle kisne banaya? Yeh sawaal aaj bhi historians ke beech khula hai."
+   },
+   {
+    "facts_used": [
+     9,
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "The sun rising exactly over the ring wall of the circular temple, a long shadow from the central shrine stretching across the courtyard, a sacred circle pattern faintly overlaid in the sky, no text",
+     "type": "art"
+    },
+    "vo": "Aur yeh sawaal bhi hai, ki yeh mandir itna gol kyun hai? Kya yeh sirf mandala ka naksha tha? Ya suraj ki chaal dekhne ka koi tareeka? Granth mandala ki baat karta hai. Lok-katha suraj ki baat karti hai. Patthar abhi tak chup hain."
+   },
+   {
+    "facts_used": [
+     8,
+     7
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Split drawn panel of the same circular courtyard: LEFT at night with oil lamps and robed figures seen from behind in ritual, RIGHT by day with students drawing sun shadows on the floor, no text",
+     "type": "art"
+    },
+    "vo": "Aur aakhri sawaal, yahan sach mein kya hota tha? Lok-katha kehti hai, raat ko tantric anushthan hote the. Ek aur katha kehti hai, ganit aur jyotish ki padhai hoti thi. Dono ka koi likhit sabut nahi hai. Shayad sach in dono ke beech kahin hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "A family of tourists seen from behind on a village road looking up at a lone hill with the circular stone temple on top, bright winter sunshine, green fields around, inviting mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab sabse achhi baat. Yeh mandir aaj bhi khada hai, aur aap wahan ja sakte hain. Yeh Morena zile mein Mitaoli gaon ke paas ek akeli pahadi par hai. Pahadi lagbhag 30 metre oonchi hai. Door se hi gol deewar ka ghera dikhne lagta hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "A long stone stairway climbing a hillside to the temple entrance, a young visitor seen from behind halfway up, golden morning light over wide open fields below, no text",
+     "type": "art"
+    },
+    "vo": "Mandir tak pahunchne ke liye 100 seedhiyan chadhni padti hain. Thodi thakaan hogi, lekin upar ka nazaara sab bhula dega. Chaaron taraf khule khet, aur beech mein patthar ka gol ghera. Subah ya shaam jaaiye, jab dhoop naram ho."
+   },
+   {
+    "facts_used": [
+     2,
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "A visitor seen from behind standing in the middle of the open circular courtyard, turning slowly to take in the ring of pillared chambers and the small round shrine, wide-angle view, sense of wonder, no text",
+     "type": "art"
+    },
+    "vo": "Upar jaakar yeh cheezein zaroor dekhiye. Gol deewar ke khaali kamre, aur unke saamne ke khambe. Beech ka Shiva mandir, aur uski chhed wali chhat. Aur khula aangan, jahan se seedha aasmaan dikhta hai. Yahan khade hokar aap lok-katha ko mehsoos kar sakte hain."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "A clean stone pathway along the temple wall with a visitor seen from behind carefully placing a wrapper in a bag, untouched carved stones around, respectful mood, no text, no logos",
+     "type": "art"
+    },
+    "vo": "Ek baat yaad rakhiye. Yeh ASI ka sanrakshit smarak hai. Deewaron par kuch likhna, patthar todna ya kachra failana mana hai. Yeh virasat humari hai, aur aage ki pidhiyon ki bhi. Jaise mila, waise hi chhod kar aaiye."
+   },
+   {
+    "facts_used": [
+     9,
+     1
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "explaining_front",
+     "type": "avatar"
+    },
+    "vo": "Toh ab sab sabut aapke saamne hain. Granth 64 yoginiyon ka gol mandala deta hai. Patthar 1323 ka shilalekh aur ek gol mandir dete hain. Lekin Sansad Bhavan wale daave ka kagzi sabut abhi tak nahi mila. Faisla aapka hai."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "end_smile",
+     "type": "avatar"
+    },
+    "vo": "Ab aapse ek aasaan sawaal. Sansad Bhavan ka gol aakaar is mandir se prerit tha, ya sirf sanyog? Comment mein bas likhiye, prerna ya sanyog. Agli baar hum chalenge ek aur rahasyamayi jagah ki taraf, sabut ke saath."
+   }
+  ],
+  "thumbnail": {
+   "name": "YOGINI MANDIR",
+   "name_hi": "योगिनी मंदिर",
+   "scene": "LEFT: the circular stone Chausath Yogini temple on a lonely hilltop at stormy dusk seen from above, its ring of chambers glowing; RIGHT: a similar round colonnaded colonial-era building in New Delhi seen from above, the two circles matching.",
+   "words": [
+    "65 KAMRE",
+    "COPY?"
+   ],
+   "words_hi": [
+    "65 कमरे",
+    "कॉपी?"
+   ]
+  },
+  "title": "Chausath Yogini Mandir aur *Sansad* ka sach 🤯"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  19.49,
+  43.54,
+  66.31,
+  85.68,
+  105.93,
+  126.62,
+  146.27,
+  166.4,
+  186.57,
+  209.5,
+  225.99,
+  247.16,
+  264.89,
+  287.02,
+  307.87,
+  329.44,
+  347.57,
+  366.9,
+  386.67,
+  408.6,
+  426.17,
+  444.06,
+  464.51,
+  483.12,
+  503.85,
+  524.1,
+  543.39,
+  563.28,
+  584.61,
+  601.7,
+  624.03,
+  643.36,
+  662.93,
+  681.54,
+  701.11,
+  723.44,
+  740.01,
+  755.9,
+  777.91,
+  796.24,
+  816.65
+ ],
  "topic": {
   "allowed_sources": [
    "asi.nic.in",
-   "nio.res.in",
-   "UNESCO whc.unesco.org",
    "en.wikipedia.org"
   ],
   "hooks": [
-   "2004 sunami ne samundar se kya bahar nikala?",
-   "7 pagoda ki kahani 1,300 saal purani?",
-   "Goton ko samundar mein kya mila?"
+   "Kya Parliament ka design is mandir se aaya?",
+   "64 yoginiyon ka gol mandir",
+   "Tantra ka vigyan ya kahani?"
   ],
-  "id": "mahabalipuram-seven-pagodas",
-  "notes": "Post-tsunami finds are documented; the seven-pagoda count is legend.",
-  "place": "Mahabalipuram, Tamil Nadu",
+  "id": "chausath-yogini",
+  "look": "indian-comic",
+  "notes": "The Parliament link is disputed (no documentary proof); label it.",
+  "place": "Morena, Madhya Pradesh",
   "priority": 1,
   "target_minutes": 14,
-  "title_hi": "Mahabalipuram ke 7 mandir, 6 samundar mein?"
+  "title_hi": "Chausath Yogini aur Sansad ka design",
+  "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-29T19:16:11+00:00",
- "writer": ""
+ "updated": "2026-10-29T22:32:09+00:00",
+ "writer": "claude"
 }
