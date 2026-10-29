@@ -1,0 +1,281 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 145.0,
+   "quote": "Meta raised its 2026 capital expenditure forecast to $135 billion-$145 billion to accelerate AI expansion and announced plans for non-voting shares, while reporting stronger revenue amid mounting legal challenges and intensifying competition.",
+   "source_date": "2026-10-21",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/meta-raises-ai-spending-forecast-to-145-billion-plans-new-share-issue-q3-revenue-beats-estimates/articleshow/135100437.cms",
+   "text": "Meta raised the ceiling of its full-year 2026 capital expenditure outlook to $145 billion to accelerate artificial intelligence expansion.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "reported",
+   "number": 135.0,
+   "quote": "Meta raised its 2026 capital expenditure forecast to $135 billion-$145 billion to accelerate AI expansion and announced plans for non-voting shares, while reporting stronger revenue amid mounting legal challenges and intensifying competition.",
+   "source_date": "2026-10-21",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/meta-raises-ai-spending-forecast-to-145-billion-plans-new-share-issue-q3-revenue-beats-estimates/articleshow/135100437.cms",
+   "text": "Meta lifted the lower bound of its 2026 capital expenditure guidance range to $135 billion.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "reported",
+   "number": 64.6,
+   "quote": "The company reported quarterly revenue of $64.60 billion, beating Wall Street estimates of $63.37 billion, according to data compiled by LSEG.",
+   "source_date": "2026-10-21",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/meta-raises-ai-spending-forecast-to-145-billion-plans-new-share-issue-q3-revenue-beats-estimates/articleshow/135100437.cms",
+   "text": "Meta delivered third-quarter revenue of $64.60 billion, beating consensus expectations.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "analyst-view",
+   "number": 63.37,
+   "quote": "The company reported quarterly revenue of $64.60 billion, beating Wall Street estimates of $63.37 billion, according to data compiled by LSEG.",
+   "source_date": "2026-10-21",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/meta-raises-ai-spending-forecast-to-145-billion-plans-new-share-issue-q3-revenue-beats-estimates/articleshow/135100437.cms",
+   "text": "Wall Street analysts polled by LSEG had expected Meta's quarterly revenue to come in at $63.37 billion.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "official",
+   "number": 34.91,
+   "quote": "Capital expenditures – Capital expenditures, including principal payments on finance leases, were $34.91 billion.",
+   "source_date": "2026-10-21",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/meta-raises-ai-spending-forecast-to-145-billion-plans-new-share-issue-q3-revenue-beats-estimates/articleshow/135100437.cms",
+   "text": "Meta incurred $34.91 billion in capital expenditures during the third quarter of 2026.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "official",
+   "number": 9.89,
+   "quote": "Third quarter 2026 costs and expenses includes a $9.89 billion charge related to this agreement.",
+   "source_date": "2026-10-21",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/meta-raises-ai-spending-forecast-to-145-billion-plans-new-share-issue-q3-revenue-beats-estimates/articleshow/135100437.cms",
+   "text": "Meta recorded a legal charge of $9.89 billion in its third-quarter costs and expenses related to state attorney general settlements.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "official",
+   "number": -2.12,
+   "quote": "Cash flow from operating activities was $32.79 billion, and free cash flow was negative $2.12 billion.(1)",
+   "source_date": "2026-10-21",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/meta-raises-ai-spending-forecast-to-145-billion-plans-new-share-issue-q3-revenue-beats-estimates/articleshow/135100437.cms",
+   "text": "Meta registered a negative free cash flow of $2.12 billion in the third quarter of 2026 as heavy capital investments surpassed operational cash flow.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "official",
+   "number": 10.38,
+   "quote": "Meta Platforms, Services, 10.38, -, -, -.",
+   "source_date": "2026-10-19",
+   "source_name": "Value Research",
+   "source_url": "https://www.valueresearchonline.com/funds/41349/mirae-asset-nyse-fang-etf/",
+   "text": "Meta Platforms carries a 10.38% portfolio weight in the Mirae Asset NYSE FANG+ ETF, an index product held by Indian households running regular SIPs for foreign equity allocation.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 12.5,
+   "quote": "If the mutual fund units are sold after 1 year from the date of investment, gains are taxed at the rate of 12.5%.",
+   "source_date": "2026-10-21",
+   "source_name": "Value Research",
+   "source_url": "https://www.valueresearchonline.com/funds/13017/motilal-oswal-nasdaq-100-etf/",
+   "text": "Indian households redeeming units of international mutual fund schemes after a holding period of more than one year face a 12.5% tax rate on long-term capital gains.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-05-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-10-29",
+   "drafts": 1
+  },
+  "cost": {
+   "inr": 0.0,
+   "usd": 0.057972,
+   "voice": 1
+  }
+ },
+ "kind": "short",
+ "publish_day": "2026-11-05",
+ "reasons": [
+  "voice synthesis failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. "
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Aapki SIP ka paisa Meta ke AI pe kharch ho raha hai? 🤖\nMeta ne AI kharcha 145 billion dollar tak badha diya.\nKamai badhi, par is quarter free cash flow minus mein chala gaya.\nAapke ETF mein kaunsi company kitni hai, kabhi dekha hai?\nYeh investment advice nahi hai.\nUs bhai ko bhejo jo FANG ETF ko sabse safe maanta hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SIP",
+     "#MutualFunds",
+     "#InvestingIndia",
+     "#HinglishFinance",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Aapki SIP ka paisa Meta ke AI pe kharch ho raha hai? Meta ka AI kharcha 145 billion dollar tak, aur free cash flow minus mein. Aapne apne ETF ki holdings list kabhi kholi hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Aapki SIP ka paisa Meta ke AI pe kharch ho raha hai? Meta ne AI kharcha 145 billion dollar tak badha diya, aur is quarter free cash flow minus mein chala gaya. FANG plus ETF mein Meta ka hissa 10.38 percent hai, toh yeh khabar aapke portfolio ki bhi hai. Us bhai ko bhejo jo FANG ETF ko sabse safe maanta hai.",
+    "tags": [
+     "Meta",
+     "Meta AI",
+     "FANG ETF",
+     "SIP",
+     "US stocks",
+     "free cash flow",
+     "capex",
+     "international mutual fund",
+     "Hinglish finance",
+     "Learning with SG"
+    ],
+    "title": "Meta AI kharcha: aapki SIP ka paisa kahan?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us bhai ko bhejo jo FANG ETF ko sabse safe maanta hai.",
+  "hook": "Aapki SIP ka paisa Meta ke AI pe kharch ho raha hai?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "A vast AI data center hall at night filling the frame, endless rows of glowing blue server racks, cooling pipes and cables overhead, a faint stream of rupee coins flowing in from a tiny house far away, dramatic and slightly ominous mood",
+     "type": "art"
+    },
+    "vo": "Aapki SIP ka paisa Meta ke AI pe kharch ho raha hai?"
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in his hoodie sitting at a home desk in the evening, a printed SIP statement and a laptop in front of him, pie chart drawn on a notepad with one slice highlighted, proud and confident expression, warm lamp light",
+     "type": "art"
+    },
+    "vo": "Bhai har mahine FANG plus ETF mein SIP karta hai. Us fund mein Meta ka hissa 10.38 percent hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI explaining to BEHEN at the dining table, pointing at a newspaper business page with a rising bar graph drawing, BEHEN in office wear listening with folded arms, sceptical, evening tea cups on the table",
+     "type": "art"
+    },
+    "vo": "Uska logic simple hai, Meta umeed se zyada kamaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI leaning back with hands behind his head, dreaming, a thought bubble showing a rocket made of computer chips flying upward, bright optimistic colours",
+     "type": "art"
+    },
+    "vo": "Toh AI pe kharcha matlab aage ki growth."
+   },
+   {
+    "facts_used": [
+     0,
+     4
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "A huge construction site of a new data center at dusk, cranes lifting giant server blocks, trucks unloading crates of computer chips, mountains of dollar bills being shovelled into a furnace-like machine, scale feels enormous",
+     "type": "art"
+    },
+    "vo": "Par Meta ne is saal ka AI kharcha 145 billion dollar tak badha diya. Capex yaani data center aur chips pe hone wala bada kharcha."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "A giant cash vault door swung open revealing an almost empty vault, a single coin on the floor, an accountant figure in shadow holding an empty bucket, cold blue light, quiet shock",
+     "type": "art"
+    },
+    "vo": "Is quarter free cash flow minus mein chala gaya, yaani kharche ke baad cash nahi bacha."
+   },
+   {
+    "facts_used": [
+     2,
+     6,
+     7
+    ],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt at a dining table at night, calmly holding a magnifying glass over a printed fund holdings list, BHAI beside him looking thoughtful for the first time, soft warm light",
+     "type": "art"
+    },
+    "vo": "Kamai badhi, par jeb ka cash minus. Apne ETF mein dekho, paisa kiske daav pe hai. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN smiling knowingly, handing BHAI a folded paper note across the table, BHAI raising an eyebrow, cosy living room at night, light-hearted mood",
+     "type": "art"
+    },
+    "vo": "Us bhai ko bhejo jo FANG ETF ko sabse safe maanta hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "META",
+   "name_hi": "मेटा",
+   "scene": "A colossal glowing AI data center at night swallowing a river of dollar bills and rupee coins, while a nearly empty cash vault stands open in the foreground.",
+   "words": [
+    "$145 BN",
+    "KHATRA?"
+   ],
+   "words_hi": [
+    "$145 बिलियन",
+    "खतरा?"
+   ]
+  },
+  "title": "Meta ka AI kharcha, aapki *SIP* pe? 🤖"
+ },
+ "status": "failed-voice",
+ "timings": [],
+ "topic": {
+  "id": "2026-10-23-sglearning-short#second",
+  "link": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/meta-raises-ai-spending-forecast-to-145-billion-plans-new-share-issue-q3-revenue-beats-estimates/articleshow/135100437.cms",
+  "published": "2026-10-21T20:12:20+00:00",
+  "rank": 3,
+  "remake_kind": "weak",
+  "remake_note": "A SECOND CHANCE for a topic whose first Reel few people watched (it had 71 views). Same sourced facts, but a NEW angle: a sharper opening question, a different first picture, a different story moment. Never reuse its lines or its title.",
+  "remake_of": "2026-10-23-sglearning-short",
+  "remake_views": 71,
+  "source": "ET Markets",
+  "summary": "Meta raised its 2026 capital expenditure forecast to $135 billion-$145 billion to accelerate AI expansion and announced plans for non-voting shares, while reporting stronger revenue amid mounting legal challenges and intensifying competition.",
+  "target_minutes": null,
+  "title": "Meta raises AI spending forecast to $145 billion, plans new share issue; Q3 revenue beats estimates",
+  "voice": "voice_1kn3blc2u13l"
+ },
+ "updated": "2026-10-29T19:19:21+00:00",
+ "writer": "claude"
+}
