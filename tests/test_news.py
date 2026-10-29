@@ -92,3 +92,9 @@ def test_the_buffer_skips_dated_headlines_and_the_news_pick_skips_market_calls()
     assert topics.pick_finance([dated], set(), now) is None
     assert topics.pick_finance([dated], set(), now, news=True)["link"] == "a"
     assert topics.pick_finance([call], set(), now, news=True) is None
+
+
+def test_a_short_marked_keep_slot_is_never_swapped(tmp_path, monkeypatch):
+    p = _evergreen(tmp_path); p.topic["keep_slot"] = "style test"; pieces.save(p, tmp_path)
+    monkeypatch.setattr(pipeline, "make", lambda *a, **k: (_ for _ in ()).throw(AssertionError("made")))
+    assert news.run(tmp_path, NOW, deps=D(), notify=lambda t: None, items=[ITEM]) == 0
