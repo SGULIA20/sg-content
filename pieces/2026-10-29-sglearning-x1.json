@@ -213,6 +213,14 @@
   "slot_ist": "18:40",
   "source": "chosen",
   "summary": "Angle: open on the reported Innodata layoffs (about 550 in India on 26 Oct, devices and accounts cut off around lunch, termination emails said not performance-related, company has not confirmed numbers, shares fell about 26-28%). Then the viewer's own rights in India if laid off: notice period or pay in lieu of notice, full and final settlement, gratuity after 5 years, PF withdrawal or transfer, getting it in writing, first week checklist. Say reported claims as reported.",
+  "taken_down": {
+   "at": "2026-10-29T15:53:56+00:00",
+   "instagram reel": "refused: HTTP 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '17939506689392753' does not exist, cannot be loaded due to missing permissions, or do",
+   "instagram story": "refused: HTTP 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '18119035342799383' does not exist, cannot be loaded due to missing permissions, or do",
+   "threads poll": "refused: HTTP 403: {\"error\":{\"message\":\"Application does not have permission for this action\",\"code\":10,\"type\":\"THApiException\",\"fbtrace_id\":\"AVJSFbl_22m-ddzufe8YhZP\"}}",
+   "threads post": "refused: HTTP 403: {\"error\":{\"message\":\"Application does not have permission for this action\",\"code\":10,\"type\":\"THApiException\",\"fbtrace_id\":\"A69C30bP4wZ136MqeXWIEOc\"}}",
+   "youtube": "deleted"
+  },
   "target_minutes": null,
   "title": "Innodata reportedly lays off about 550 employees in India in a day: what are your rights if you are laid off?",
   "voice": "voice_7o0kddoq6q2z"
