@@ -19,6 +19,10 @@ FEEDS = [
     ("RBI Press Releases", "https://www.rbi.org.in/pressreleases_rss.xml", 5),
     ("SEBI Press", "https://www.sebi.gov.in/sebirss.xml", 5),
     ("PIB Finance", "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3", 4),
+    # jobs, companies and AI (founder, 29 Oct 2026, "C"); a dead feed is skipped, never fatal
+    ("ET Jobs", "https://economictimes.indiatimes.com/jobs/rssfeeds/107115.cms", 3),
+    ("ET Tech", "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms", 2),
+    ("Mint Companies", "https://www.livemint.com/rss/companies", 2),
 ]
 HOUSEHOLD = ["emi", "petrol", "diesel", "tax", "salary", "sip", "price", "prices", "inflation", "loan", "fd ", "epf",
              "pension", "gold", "rupee", "gst", "mutual fund", "upi", "deposit", "insurance", "home loan", "rent", "repo rate",
@@ -29,6 +33,9 @@ HOUSEHOLD = ["emi", "petrol", "diesel", "tax", "salary", "sip", "price", "prices
 WALLET = ["emi", "petrol", "diesel", "tax", "salary", "sip", "price", "prices", "inflation", "loan", "fd ", "epf", "pension", "gold",
           "rupee", "gst", "mutual fund", "upi", "deposit", "insurance", "home loan", "rent", "repo rate", "interest rate", "fuel",
           "income", "subsidy", "scam", "fraud", "dividend", "savings", "credit card", "lpg", "electricity", "ticket", "fees"]
+# Jobs and the workplace are as personal as the wallet (founder, 29 Oct 2026: "550 Indian employees fired after lunch break")
+JOBS = ["layoff", "laid off", "lays off", "fired", "job cuts", "jobs cut", "sacked", "hiring", "appraisal", "salary hike", "pay cut",
+        "notice period", "resign", "work from office", "ai jobs", "replace jobs", "employees"]
 NUMBER = re.compile(r"\d|lakh|crore|%|\$")
 BANNED_TOPIC = ["modi", "rahul gandhi", "bjp", "congress", "election", "rally", "pakistan", "minister", "parliament",
                 "opposition", "cm ", "pm ",
@@ -112,7 +119,7 @@ def fetch_all(fetch=None) -> list:
 
 def household(item: dict) -> bool:
     blob = f"{item.get('title', '')} {item.get('summary', '')}".lower()
-    return any(k in blob for k in HOUSEHOLD + WALLET)
+    return any(k in blob for k in HOUSEHOLD + WALLET + JOBS)
 
 
 def score(item: dict) -> int:
@@ -124,7 +131,7 @@ def score(item: dict) -> int:
     s = item.get("rank", 0)
     if NUMBER.search(blob):
         s += 3
-    if any(k in blob for k in WALLET):
+    if any(k in blob for k in WALLET) or any(k in blob for k in JOBS):
         s += 4
     elif any(k in blob for k in HOUSEHOLD):
         s += 1

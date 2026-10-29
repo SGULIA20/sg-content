@@ -1,0 +1,97 @@
+name: extra
+
+# An extra Learning with SG Reel on a chosen story (founder, 29 Oct 2026: 3-4 Reels a day, "from today"). engine/extra.py
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        description: 'The story (headline)'
+        required: true
+      link:
+        description: 'Source article URL'
+        required: true
+      summary:
+        description: 'The angle, one or two lines'
+        required: false
+        default: ''
+      slot:
+        description: 'India time HH:MM (blank = as soon as it is made)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: extra
+  cancel-in-progress: false
+
+jobs:
+  extra:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Restore the voice and picture caches
+        uses: actions/cache@v5
+        with:
+          path: cache
+          key: sg-cache-${{ github.run_id }}
+          restore-keys: sg-cache-
+      - name: Install ffmpeg and fonts
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-core
+      - name: Install Python packages
+        run: pip install -r requirements.txt
+      - name: Install Chromium
+        run: python -m playwright install --with-deps chromium
+      - name: Unit tests
+        run: python -m pytest -q -m "not slow"
+      - name: Git identity
+        run: |
+          git config user.name "sg-content-bot"
+          git config user.email "sg-content-bot@users.noreply.github.com"
+      - name: Make the extra Reel and upload it
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
+          YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SG_COMMAND_KEY: ${{ secrets.SG_COMMAND_KEY }}
+          TITLE: ${{ github.event.inputs.title }}
+          LINK: ${{ github.event.inputs.link }}
+          SUMMARY: ${{ github.event.inputs.summary }}
+          SLOT: ${{ github.event.inputs.slot }}
+        run: python -m engine.extra --title "$TITLE" --link "$LINK" --summary "$SUMMARY" --slot "$SLOT"
+      - name: Prune media older than 14 days
+        if: always()
+        run: python scripts/prune_out.py --days 14
+      - name: Commit anything still uncommitted (pieces, media, logs) and push
+        if: always()
+        run: |
+          # also pushes any piece whose own push failed earlier; never leaves a stuck rebase
+          python -m engine.gitsync "extra: $(date -u +%Y-%m-%dT%H:%M)"
+      - name: Post it now if its time has come (else the next sglearning publish run does)
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
+          YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python -m engine.publish --channel sglearning
+          python -m engine.gitsync "publish: $(date -u +%Y-%m-%dT%H:%M)" pieces logs

@@ -65,7 +65,7 @@ def test_paint_piece_respects_the_daily_and_monthly_ceilings(tmp_path):
     spend.write_text(json.dumps({"2026-10-22": {"inr": 899.0, "requests": 1}}))
     with pytest.raises(art.ImageBudget):
         artbatch.paint_piece(_piece(), [("p", [], "4:5")], key="k", cache_dir=tmp_path / "c", spend=spend, today=date(2026, 10, 22), post=lambda *a: (500, {}))
-    spend.write_text(json.dumps({f"2026-10-{d:02d}": {"inr": 300.0, "requests": 1} for d in range(1, 21)}))        # ₹6,000 this month already
+    spend.write_text(json.dumps({f"2026-10-{d:02d}": {"inr": 400.0, "requests": 1} for d in range(1, 21)}))        # ₹8,000 this month already (ceiling raised 29 Oct 2026)
     with pytest.raises(art.ImageBudget):
         artbatch.paint_piece(_piece(), [("p", [], "4:5")], key="k", cache_dir=tmp_path / "c", spend=spend, today=date(2026, 10, 22), post=lambda *a: (500, {}))
     with pytest.raises(art.ImageBudget):
