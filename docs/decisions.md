@@ -141,6 +141,10 @@ line here (who, date) in the same change. Newest first.
   India), ramping to 3-4 a day while views per Reel hold. C: topics widen to jobs and workplace, management, psychology, AI,
   economy and numbers (jobs news scores like the wallet). D: Reels are India and global; Nigeria news goes to LinkedIn. Next: a
   research cycle every 4 hours with a Telegram report that makes the extra Reels by itself.
+- Niches and trust (founder, 29 Oct 2026, "1 2 and 3"): (1) 55 evergreen Learning with SG topics (AI and jobs, money decisions,
+  management, psychology of money, economy, numbers; no crypto, dark psychology, conspiracy or true crime) feed the 4-hourly research
+  cycle on quiet days; (2) two Learning with SG Reels in a row never share a category; (3) the money channel names the voice:
+  "Voice: Sanjeev Gulia, FCMA, IIM" on the end card, the YouTube description and the Instagram caption.
 - Item 13 (Waypoint ban-appeal review) dropped: the Supabase connector can reach only one organisation (ScoreMyBiz).
 
 ## Approved 24 Oct 2026 (founder: "okay yes do"), built one at a time

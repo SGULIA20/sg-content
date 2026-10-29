@@ -41,7 +41,9 @@ def brand(channel: str) -> dict:
 def end_card(piece, size: tuple, out_dir: Path) -> Path:
     """A still end card held for END_S seconds, same bands and colours as the story."""
     w, h = size
-    png = cards.render("storyend", {**brand(piece.channel), "question": (piece.script or {}).get("end_question", ""), "logo_path": logo(piece.channel, 320)},
+    from .config import VOICE_CREDIT
+    png = cards.render("storyend", {**brand(piece.channel), "question": (piece.script or {}).get("end_question", ""), "logo_path": logo(piece.channel, 320),
+                                    "credit": VOICE_CREDIT.get(piece.channel, "")},
                        Path(out_dir) / "end.png", size)
     out = Path(out_dir) / "end.mp4"
     _run(["-loop", "1", "-framerate", str(FPS), "-i", str(png), "-t", f"{END_S:.2f}", "-vf", f"scale={w}:{h},format=yuv420p",
