@@ -38,7 +38,8 @@ def test_scorecard_marks_each_cell_posted_or_not(tmp_path):
     assert "SG-LEARNING Short\n   YouTube: ✅ Posted\n   Instagram: ✅ Posted\n   Threads: ✅ Posted\n   LinkedIn" not in text      # no videos on LinkedIn (founder, 22 Oct 2026)
     assert "SG-MYTH Short\n   YouTube: ✅ Posted\n   Instagram: 🔴 Reel only\n   Threads: 🔴 NOT POSTED" in text
     assert "SG-MYTH long video\n   YouTube: ✅ Posted" in text and "SG-LEARNING long video" not in text
-    assert "LinkedIn daily post\n   LinkedIn: ✅ Posted" in text and "📅 Tomorrow Fri 23 Oct (Lagos time)" in text
+    assert "LinkedIn post\n   LinkedIn" not in text and "📅 Tomorrow Fri 23 Oct (Lagos time)" in text      # Thursday: no LinkedIn post (Mon/Wed/Fri)
+    assert "08:10  your post, reply in the first hour: LinkedIn" in text                                        # Friday is a LinkedIn day
 
 
 def test_scheduled_youtube_before_its_time_is_not_called_missing(tmp_path):
@@ -61,12 +62,13 @@ def test_unreadable_app_log_gives_an_empty_list(monkeypatch):
 def test_tomorrow_plan_lists_times_in_lagos_time():
     plan = evening.tomorrow_plan(date(2026, 10, 23))                               # tomorrow = Saturday 24 Oct: Learning with SG long day
     assert plan.startswith("📅 Tomorrow Sat 24 Oct (Lagos time)")
-    assert "08:10  your daily post, reply in the first hour: LinkedIn" in plan and "09:30  Learning with SG Reel and Story" in plan
+    assert "LinkedIn" not in plan and "09:30  Learning with SG Reel and Story" in plan          # Saturday: no LinkedIn post
     assert "14:30  Learning with SG long video: YouTube" in plan and "15:30  Shorts on both channels: YouTube" in plan
     assert "17:00  SG-MYTH-WORLD Reel and Story" in plan and " set (Reel" in plan         # app posts every day (founder, 28 Oct 2026)
     assert "SG-MYTH-WORLD long video" not in plan
     monday = evening.tomorrow_plan(date(2026, 10, 25))
-    assert "08:10  your daily post (document), reply in the first hour: LinkedIn" in monday
+    assert "08:10  your post, reply in the first hour: LinkedIn" in monday
+    assert "08:10  your post (document), reply in the first hour: LinkedIn" in evening.tomorrow_plan(date(2026, 10, 27))   # Wednesday
     assert "15:40  Waypoint set" in monday or "15:40  ScoreMyBiz set" in monday
 
 
