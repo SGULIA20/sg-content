@@ -189,3 +189,6 @@ line here (who, date) in the same change. Newest first.
 - Channels: Learning with SG (`sglearning`) and SG-MYTH-WORLD (`arthvan`) on YouTube, Instagram Reels and Stories, Threads.
 - **LinkedIn:** the founder's personal profile, **picture posts only**, one a day from arthvan-media `linkedin-personal`; no Short or Reel video and no app posts go to LinkedIn. (founder, 22 Oct 2026; replaces the 21 Oct "each Short as a native video")
 - **ScoreMyBiz and Waypoint** join the control room: business numbers, social promotion of both, and controls for them. (founder, 21 Oct 2026)
+- Voice: every Reel uses the same request the batch voice sends (founder clone, no style note); never the styled path that sounded worse (founder, 29 Oct 2026).
+- News and extra Reels explain why it happened, the wider and AI impact, the consequences and the viewer's legal remedies (naming the law), 50-60 s, not basic advice (founder, 29 Oct 2026).
+- The 9 pm card lists each extra Learning with SG Reel as its own row, and tomorrow's plan shows the extra slots (founder, 29 Oct 2026).

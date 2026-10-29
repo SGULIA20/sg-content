@@ -86,7 +86,12 @@ STORY_WORDS = (150, 260)                      # 60-105 s at ~2.5 words/s; the up
 STORY_WORDS_BY_CHANNEL = {"sglearning": (85, 125)}     # money Shorts 35-45 s (founder, 30 Oct 2026, "C": a one-week test against the 60-74 s ones)
 
 
-def story_words(channel: str) -> tuple:
+NEWS_STORY_WORDS = (115, 155)                 # a breaking-news or extra Reel explains why, impact and remedies: 50-60 s (founder, 29 Oct 2026)
+
+
+def story_words(channel: str, topic: dict | None = None) -> tuple:
+    if channel == "sglearning" and topic and (topic.get("news") or topic.get("extra")):
+        return NEWS_STORY_WORDS
     return STORY_WORDS_BY_CHANNEL.get(channel, STORY_WORDS)
 STORY_MAX_S = 178.0                           # YouTube Shorts allow up to 3 minutes; the writer aims for 60-90 s but nothing is ever cut or sped up (founder, 22 Oct 2026)
 

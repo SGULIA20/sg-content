@@ -135,8 +135,10 @@ def cache_path(text: str, voice_id: str, cache_dir: Path = CACHE_DIR / "voice", 
 
 def say(text: str, voice_id: str, out_wav: Path, *, key: str | None = None, cache_dir: Path = CACHE_DIR / "voice",
         budget: Path = BUDGET_FILE, post=gemini._post, style: str = STYLE, today: date | None = None,
-        sleep=time.sleep, clock=time.monotonic) -> float:
-    """Synthesizes one line into out_wav (24 kHz mono 16-bit) and returns its length in seconds. Cached by voice, style and text."""
+        sleep=time.sleep, clock=time.monotonic, plain: bool = False) -> float:
+    """Synthesizes one line into out_wav (24 kHz mono 16-bit) and returns its length in seconds. Cached by voice, style and text.
+    plain=True sends exactly what the batch lane sends (the line alone, generateContent, no style note): the founder's voice as the
+    daily Shorts carry it. The style-annotated request sounded different (founder, 29 Oct 2026: "my voice looks so worst")."""
     today = today or today_pacific()
     out_wav = Path(out_wav)
     cache_dir = Path(cache_dir)
@@ -146,7 +148,11 @@ def say(text: str, voice_id: str, out_wav: Path, *, key: str | None = None, cach
         if requests_today(budget, today) >= BUDGETS["voice_requests_per_day"]:
             raise VoiceBudget(f"voice budget of {BUDGETS['voice_requests_per_day']} requests reached for {today}")
         key = key or secrets.get("GEMINI_API_KEY")
-        if voice_id.startswith("voice"):                                  # a replicated or designed voice: interactions API
+        if plain and voice_id.startswith("voice"):                        # the batch lane's request, one line at a time
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
+            body = {"contents": [{"parts": [{"text": text}]}],
+                    "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {"voiceConfig": {"voice": voice_id}}}}
+        elif voice_id.startswith("voice"):                                # a replicated or designed voice: interactions API
             url = SYNTH_URL
             body = {"model": MODEL,
                     "input": [{"type": "user_input", "content": [{"type": "text", "text": text,
@@ -171,7 +177,11 @@ def say(text: str, voice_id: str, out_wav: Path, *, key: str | None = None, cach
             _count_request(budget, today)                                  # a rate-limited (429) request never reached the model
         if status != 200:
             raise VoiceError(f"voice synthesis failed ({status}): {secrets.scrub(str((data.get('error') or {}).get('message', '')))[:300]}")
-        audio = _audio_from(data) if url == SYNTH_URL else _pcm_to_wav(_pcm_from(data))
+        if url == SYNTH_URL:
+            audio = _audio_from(data)
+        else:
+            raw = _pcm_from(data)
+            audio = raw if (raw or b"")[:4] == b"RIFF" else _pcm_to_wav(raw)
         if not audio:
             raise VoiceError("voice synthesis returned no audio")
         cached.write_bytes(audio)
