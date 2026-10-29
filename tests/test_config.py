@@ -18,7 +18,7 @@ def test_sglearning_shorts_every_day_and_longs_wed_sat():
 
 def test_budgets_match_spec():
     assert config.BUDGETS == {"voice_requests_per_day": 80, "image_inr_per_day": 900, "claude_usd_per_day": 10.0,
-                              "image_inr_per_month": 6000, "claude_usd_per_month": 45.0}
+                              "image_inr_per_month": 8000, "claude_usd_per_month": 75.0}
 
 
 def test_video_sizes():

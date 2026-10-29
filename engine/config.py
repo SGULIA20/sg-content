@@ -41,7 +41,7 @@ CHANNELS = {
 }
 
 BUDGETS = {"voice_requests_per_day": 80, "image_inr_per_day": 900, "claude_usd_per_day": 10.0,     # fill-the-stock rate (22 Oct 2026); back to 450 / 6 once 7 days + 4 longs are in hand
-           "image_inr_per_month": 6000, "claude_usd_per_month": 45.0}      # hard monthly ceilings (founder, 22 Oct 2026): production stops, never the card   # raised 22 Oct 2026 to build the 7-day / 4-long buffer; a steady day is ≈ ₹160 + $1   # ceilings, not targets: a normal day is 2 Shorts + 1 long ≈ ₹190 of pictures (21 Oct 2026)
+           "image_inr_per_month": 8000, "claude_usd_per_month": 75.0}      # raised 29 Oct 2026 for 3-4 Learning with SG Reels a day (founder, "A")      # hard monthly ceilings (founder, 22 Oct 2026): production stops, never the card   # raised 22 Oct 2026 to build the 7-day / 4-long buffer; a steady day is ≈ ₹160 + $1   # ceilings, not targets: a normal day is 2 Shorts + 1 long ≈ ₹190 of pictures (21 Oct 2026)
 
 VIDEO = {"short": (1080, 1920), "long": (1920, 1080), "fps": 30}
 

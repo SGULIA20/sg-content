@@ -126,7 +126,9 @@ def weak_remake_topic(piece: Piece, root: Path, today: date | None = None) -> di
 
 
 def _pick_topic(piece: Piece, deps: Deps, root: Path, used: set) -> dict | None:
-    remake = None if piece.id.endswith("-news") else weak_remake_topic(piece, root)
+    if piece.topic.get("preset"):                                     # a topic chosen up front (the news Short, an extra Reel)
+        return piece.topic["preset"]
+    remake = None if (piece.id.endswith("-news") or re.search(r"-x\d+$", piece.id)) else weak_remake_topic(piece, root)
     if remake:
         return remake
     if piece.channel == "arthvan" and piece.kind == "short" and not is_story(piece):
@@ -498,7 +500,11 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
     def upload_fn(piece, video, thumb):
         import os
         token = youtube.access_token(piece.channel, env)
-        meta = youtube.metadata(piece, slots.publish_at(piece.channel, piece.kind, piece.publish_day), env or os.environ)
+        when = slots.publish_at(piece.channel, piece.kind, piece.publish_day)
+        if piece.topic.get("slot_ist"):                                   # an extra Reel (engine/extra.py): its own time, at least 10 minutes ahead
+            from datetime import datetime as _dt, timedelta as _td, timezone as _tz
+            when = max(slots.utc_for(piece.publish_day, piece.topic["slot_ist"]), _dt.now(_tz.utc) + _td(minutes=10))
+        meta = youtube.metadata(piece, when, env or os.environ)
         vid = youtube.upload(token, video, meta)
         youtube.set_thumbnail(token, vid, thumb)
         from . import config as _cfg

@@ -136,6 +136,11 @@ line here (who, date) in the same change. Newest first.
   slot; the planned Short moves to the first free day after the buffer; if anything fails by 13:00 WAT the planned Short posts.
   (2) The buffer takes no dated headlines ("today", "outlook", dates); the daily market call is never a Short. (3) Money Reels post on
   Instagram at 18:30 India (14:00 WAT) instead of 14:00 India; YouTube stays at 20:00 India.
+- Learning with SG growth engine (founder, 29 Oct 2026, master prompt + "do a b c d ... from today"): A: monthly ceilings raised to
+  pictures Rs 8,000 and Claude $75. B: extra Reels beyond the daily one from today (engine/extra.py, own slots 13:00 / 16:30 / 22:45
+  India), ramping to 3-4 a day while views per Reel hold. C: topics widen to jobs and workplace, management, psychology, AI,
+  economy and numbers (jobs news scores like the wallet). D: Reels are India and global; Nigeria news goes to LinkedIn. Next: a
+  research cycle every 4 hours with a Telegram report that makes the extra Reels by itself.
 - Item 13 (Waypoint ban-appeal review) dropped: the Supabase connector can reach only one organisation (ScoreMyBiz).
 
 ## Approved 24 Oct 2026 (founder: "okay yes do"), built one at a time
