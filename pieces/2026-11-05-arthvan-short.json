@@ -1,0 +1,41 @@
+{
+ "channel": "arthvan",
+ "facts": [],
+ "id": "2026-11-05-arthvan-short",
+ "ids": {
+  "budget": {
+   "day": "2026-10-29",
+   "research": 3
+  }
+ },
+ "kind": "short",
+ "publish_day": "2026-11-05",
+ "reasons": [
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+ ],
+ "script": null,
+ "status": "failed-research",
+ "timings": [],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "UNESCO whc.unesco.org",
+   "en.wikipedia.org"
+  ],
+  "hooks": [
+   "China ke baad duniya ki sabse lambi deewar India mein?",
+   "Deewar itni chaudi ki 8 ghode saath chalein?",
+   "Ek sant ki bali ki kahani"
+  ],
+  "id": "kumbhalgarh-wall",
+  "notes": "Length figures vary (36-38 km); the sacrifice story is legend.",
+  "place": "Kumbhalgarh, Rajasthan",
+  "priority": 1,
+  "target_minutes": null,
+  "title_hi": "Kumbhalgarh, 36 km ki deewar"
+ },
+ "updated": "2026-10-29T19:16:16+00:00",
+ "writer": ""
+}
