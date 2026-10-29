@@ -15,7 +15,7 @@ from pathlib import Path
 
 import yaml
 
-from . import extra, pieces, pipeline, slots, telegram, topics
+from . import extra, pieces, pipeline, produce, slots, telegram, topics
 from .config import CONTENT_DIR, ROOT
 
 CHANNEL = "sglearning"
@@ -152,6 +152,9 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, items=None, notify=t
     notify("\n".join(lines))
     if choice:
         piece = make(choice, root, now_utc, slot_ist=slot, notify=notify)
+        if piece.status != "uploaded" and produce.out_of_credit(root, [(piece.id, piece.status)]):
+            notify(produce.CREDIT_ALERT)                     # 29 Oct 2026: an empty Gemini balance showed only as a red research run
+            return 0
         return 0 if piece.status == "uploaded" else 1
     return 0
 

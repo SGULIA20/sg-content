@@ -59,3 +59,20 @@ def test_no_voice_credit_on_youtube_or_instagram():
     assert "Voice:" not in instagram.caption_text(p)
     meta = youtube.metadata(p, datetime(2026, 11, 2, 14, 30, tzinfo=timezone.utc), {})
     assert "Voice:" not in meta["snippet"]["description"]
+
+
+def test_an_empty_gemini_balance_sends_the_top_up_alert_not_a_red_run(tmp_path):
+    from engine import produce
+    _main(tmp_path)
+    sent = []
+    def make(topic, root_, now, slot_ist=None, notify=None):
+        p = pieces.Piece(id="2026-11-02-sglearning-x1", channel="sglearning", kind="short", publish_day=TODAY, status="failed-topic")
+        p.reasons = ["try 1: gemini failed (402): Your prepayment credits are depleted."]
+        pieces.save(p, root_); return p
+    assert trends.run(tmp_path, NOW, items=[_item("Infosys layoffs: 300 jobs cut")], notify=sent.append, make=make, bank=[]) == 0
+    assert sent[-1] == produce.CREDIT_ALERT
+
+
+def test_a_daily_us_market_wrap_is_skipped():
+    rows = trends.ranked([_item("US markets today: US stocks end lower as Alphabet revenue miss revives AI capex jitters")], set(), NOW)
+    assert rows[0][2] == "daily market call (stale by evening)"
