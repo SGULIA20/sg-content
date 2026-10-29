@@ -1,0 +1,87 @@
+{
+ "end": "2026-10-28",
+ "sglearning": {
+  "best": [
+   {
+    "hook": "Raat ko Bhai ka phone chamka, news thi, Zerodha par ab US stocks milenge.",
+    "ig_views": 1463,
+    "skipped_early_pct": 34.3,
+    "watched_s": 16.8
+   },
+   {
+    "hook": "Subah chai ke saath, Bhai ke phone par headline chamki.",
+    "ig_views": 1365,
+    "skipped_early_pct": 34.7,
+    "watched_s": 16.4
+   },
+   {
+    "hook": "Raat ke 9 baje, TV pe khabar aayi: core sector 7.9 percent badha.",
+    "ig_views": 1312,
+    "skipped_early_pct": 23.6,
+    "watched_s": 17.3
+   }
+  ],
+  "worst": [
+   {
+    "hook": "Results ka din hai, aur Bhai ke phone par notification bajta hai.",
+    "ig_views": 3,
+    "skipped_early_pct": 33.3,
+    "watched_s": 28.8
+   },
+   {
+    "hook": "Budhvaar subah, office canteen mein Bhai ka phone lagataar baj raha hai.",
+    "ig_views": 10,
+    "skipped_early_pct": 77.8,
+    "watched_s": 11.7
+   },
+   {
+    "hook": "Subah subah, Bhai ki screen par sab hara hi hara tha.",
+    "ig_views": 15,
+    "skipped_early_pct": 35.7,
+    "watched_s": 14.7
+   }
+  ]
+ },
+ "arthvan": {
+  "best": [
+   {
+    "hook": "Samundar ke beech ek pul, kya woh aaj bhi dikhta hai?",
+    "ig_views": 1573,
+    "skipped_early_pct": 30.4,
+    "watched_s": 30.8
+   },
+   {
+    "hook": "Haryana ke ek gaon ke neeche, kya poora shehar so raha hai?",
+    "ig_views": 1459,
+    "skipped_early_pct": 27.1,
+    "watched_s": 29.6
+   },
+   {
+    "hook": "Kya Mahabharat ki tareekh taaron mein likhi hai?",
+    "ig_views": 1365,
+    "skipped_early_pct": 29.9,
+    "watched_s": 27.0
+   }
+  ],
+  "worst": [
+   {
+    "hook": "Kailash, woh pahad jis par aaj tak koi nahi chadha. Kyon?",
+    "ig_views": 85,
+    "skipped_early_pct": 61.8,
+    "watched_s": 9.3
+   },
+   {
+    "hook": "Kya Mahabharata ka ek yoddha aaj bhi zinda hai?",
+    "ig_views": 119,
+    "skipped_early_pct": 50.9,
+    "watched_s": 26.8
+   },
+   {
+    "hook": "Kya Kurukshetra ke pattharon par Chakravyuh ka 5,000 saal purana naksha hai?",
+    "ig_views": 259,
+    "skipped_early_pct": 57.3,
+    "watched_s": 13.8
+   }
+  ]
+ }
+}
