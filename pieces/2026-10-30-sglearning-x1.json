@@ -1,0 +1,34 @@
+{
+ "channel": "sglearning",
+ "facts": [],
+ "id": "2026-10-30-sglearning-x1",
+ "ids": {
+  "budget": {
+   "day": "2026-10-29",
+   "research": 1
+  }
+ },
+ "kind": "short",
+ "publish_day": "2026-10-30",
+ "reasons": [
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "no usable topic (for a mythology Short: its long is not made yet)"
+ ],
+ "script": null,
+ "status": "failed-topic",
+ "timings": [],
+ "topic": {
+  "category": "ai",
+  "extra": true,
+  "link": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-markets-today-us-stocks-end-lower-as-alphabet-revenue-miss-revives-ai-capex-jitters/articleshow/135331051.cms",
+  "published": "2026-10-29T20:16:15+00:00",
+  "rank": 3,
+  "slot_ist": "13:00",
+  "source": "ET Markets",
+  "summary": "Wall Street ended the day on a sour note, as Alphabet's revenue shortfall cast a shadow over the AI investment landscape and overall market stability. The Nasdaq Composite was hardest hit, plummeting by 1.36 percent. Although the economy shows robust growth, investor focus shifted to inflation numbers and corporate profitability, which displayed resilience.",
+  "target_minutes": null,
+  "title": "US Markets Today: US stocks end lower as Alphabet revenue miss revives AI capex jitters"
+ },
+ "updated": "2026-10-29T21:23:08+00:00",
+ "writer": ""
+}
