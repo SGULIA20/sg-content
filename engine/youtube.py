@@ -3,7 +3,7 @@ import json
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from . import assemble, secrets
@@ -167,6 +167,18 @@ def set_thumbnail(token: str, video_id: str, jpg: Path, call=call) -> bool:
 
 
 VIDEOS_URL = "https://www.googleapis.com/youtube/v3/videos?part=status"
+
+
+def reschedule(token: str, video_id: str, when_utc, call=call) -> bool:
+    """Moves a scheduled (private) video to another publish time (videos.update, part=status): the same-day news Short takes the
+    day's slot and the evergreen Short it replaces moves to the end of the buffer (founder, 30 Oct 2026)."""
+    at = when_utc.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    status, _h, body = call("PUT", VIDEOS_URL, token, json_body={"id": video_id, "status": {"privacyStatus": "private", "publishAt": at,
+                                                                  "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}})
+    if status in (200, 201):
+        return True
+    print(f"reschedule failed for {video_id} ({status}): {secrets.scrub(json.dumps(body))[:160]}", flush=True)
+    return False
 
 
 def go_public(token: str, video_id: str, call=call) -> bool:

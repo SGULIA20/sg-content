@@ -62,7 +62,7 @@ def test_unreadable_app_log_gives_an_empty_list(monkeypatch):
 def test_tomorrow_plan_lists_times_in_lagos_time():
     plan = evening.tomorrow_plan(date(2026, 10, 23))                               # tomorrow = Saturday 24 Oct: Learning with SG long day
     assert plan.startswith("📅 Tomorrow Sat 24 Oct (Lagos time)")
-    assert "LinkedIn" not in plan and "09:30  Learning with SG Reel and Story" in plan          # Saturday: no LinkedIn post
+    assert "LinkedIn" not in plan and "14:00  Learning with SG Reel and Story" in plan          # Saturday: no LinkedIn post; money Reel 18:30 India
     assert "14:30  Learning with SG long video: YouTube" in plan and "15:30  Shorts on both channels: YouTube" in plan
     assert "17:00  SG-MYTH-WORLD Reel and Story" in plan and " set (Reel" in plan         # app posts every day (founder, 28 Oct 2026)
     assert "SG-MYTH-WORLD long video" not in plan

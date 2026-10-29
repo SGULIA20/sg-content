@@ -131,6 +131,11 @@ line here (who, date) in the same change. Newest first.
 - Reels like the top channels (founder, 30 Oct 2026, "yes do B C"; A, the founder on camera, declined): B: SG-MYTH-WORLD Shorts
   open on a real, credited Wikimedia Commons photo of the place when the script names it, then the drawn story; C: Learning with SG
   Shorts 35-45 s (85-125 words, 7-9 scenes) instead of 60-74 s, a one-week test. Both reach posts from about 6-7 Nov (7-day buffer).
+- Fresh news (founder, 30 Oct 2026, "yes build 1-3"): (1) each morning (news workflow 08:47/09:47 WAT) Learning with SG makes a
+  same-day news Short from that morning's household money news (synchronous writer, about $0.40 a day more) and swaps it into today's
+  slot; the planned Short moves to the first free day after the buffer; if anything fails by 13:00 WAT the planned Short posts.
+  (2) The buffer takes no dated headlines ("today", "outlook", dates); the daily market call is never a Short. (3) Money Reels post on
+  Instagram at 18:30 India (14:00 WAT) instead of 14:00 India; YouTube stays at 20:00 India.
 - Item 13 (Waypoint ban-appeal review) dropped: the Supabase connector can reach only one organisation (ScoreMyBiz).
 
 ## Approved 24 Oct 2026 (founder: "okay yes do"), built one at a time

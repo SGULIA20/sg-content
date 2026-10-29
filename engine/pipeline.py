@@ -126,7 +126,7 @@ def weak_remake_topic(piece: Piece, root: Path, today: date | None = None) -> di
 
 
 def _pick_topic(piece: Piece, deps: Deps, root: Path, used: set) -> dict | None:
-    remake = weak_remake_topic(piece, root)
+    remake = None if piece.id.endswith("-news") else weak_remake_topic(piece, root)
     if remake:
         return remake
     if piece.channel == "arthvan" and piece.kind == "short" and not is_story(piece):
