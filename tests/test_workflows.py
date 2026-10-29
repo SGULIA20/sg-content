@@ -37,9 +37,9 @@ def test_produce_schedule_and_guards():
 def test_publish_crons_match_slots():
     data = yaml.safe_load((ROOT / ".github" / "workflows" / "publish.yml").read_text())
     crons = [s["cron"] for s in (data.get(True) or data.get("on"))["schedule"]]
-    assert "33 8 * * *" in crons and "33 9 * * *" in crons and "3 16 * * *" in crons and "3 17 * * *" in crons
+    assert "3 13 * * *" in crons and "3 14 * * *" in crons and "3 16 * * *" in crons and "3 17 * * *" in crons      # 18:30 / 21:30 India
     pick = next(s["run"] for s in data["jobs"]["publish"]["steps"] if s.get("id") == "slot")
-    assert '"33 9 * * *"' in pick and '"33 10 * * *"' in pick                                   # every finance slot maps to sglearning
+    assert '"3 13 * * *"' in pick and '"3 14 * * *"' in pick and '"33 14 * * *"' in pick        # every finance slot maps to sglearning
 
 
 def test_docs_secrets_lists_every_secret():

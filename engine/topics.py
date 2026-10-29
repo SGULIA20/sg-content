@@ -39,6 +39,18 @@ BANNED_TOPIC = ["modi", "rahul gandhi", "bjp", "congress", "election", "rally", 
 PLUMBING = ["variable rate repo", "vrr", "money market operations", "auction", "government securities", "state government securities",
             "treasury bill", "t-bill", "laf", "omo ", "switch auction", "conversion/switch", "sdl", "g-sec", "under laf"]
 FRESH_HOURS = 24
+# A buffered Short posts up to a week later (founder, 30 Oct 2026: "today, 22 Oct" Shorts posted on 25-27 Oct reached 3-15 people):
+# headlines tied to a day go only to the same-day news Short (engine.news), never into the buffer.
+DATED = ["today", "tomorrow", "this week", "live", "outlook", "prediction", "expiry", "opening bell", "closing bell", "schedule",
+         "trade setup", "market wrap", "what to expect", "ahead of"]
+DATE_IN_TITLE = re.compile(r"\b\d{1,2}\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b", re.I)
+# the daily market call is crowded and goes stale by evening: not even the news Short takes it
+MARKET_CALL = ["outlook", "prediction", "expiry", "trade setup", "opening bell", "closing bell", "market wrap", "technical view"]
+
+
+def dated(item: dict) -> bool:
+    title = str(item.get("title", ""))
+    return any(w in title.lower() for w in DATED) or bool(DATE_IN_TITLE.search(title))
 NS = {"atom": "http://www.w3.org/2005/Atom"}
 
 
@@ -119,9 +131,12 @@ def score(item: dict) -> int:
     return s
 
 
-def pick_finance(items: list, used_links: set, now: datetime) -> dict | None:
-    fresh = [i for i in items if i.get("published") and now - i["published"] <= timedelta(hours=FRESH_HOURS)
-             and i["link"] not in used_links and score(i) > 0 and household(i)]
+def pick_finance(items: list, used_links: set, now: datetime, news: bool = False, hours: int = FRESH_HOURS) -> dict | None:
+    """The best household money story of the last `hours`. For the buffer (news=False) a headline tied to a day is skipped;
+    for the same-day news Short (news=True) it is welcome, but the daily market call never is."""
+    fresh = [i for i in items if i.get("published") and now - i["published"] <= timedelta(hours=hours)
+             and i["link"] not in used_links and score(i) > 0 and household(i)
+             and (not any(w in str(i.get("title", "")).lower() for w in MARKET_CALL) if news else not dated(i))]
     if not fresh:
         return None
     return max(fresh, key=lambda i: (score(i), i["published"]))

@@ -69,7 +69,7 @@ def test_a_failed_poll_never_holds_a_short_back_and_is_not_retried(tmp_path):
     def bad_poll(*a):
         raise threads.ThreadsError("polls not allowed")
     env = {"IG_ACCESS_TOKEN": "t", "IG_USER_ID": "u", "THREADS_ACCESS_TOKEN": "tt", "THREADS_USER_ID": "tu", "GITHUB_REPOSITORY": "r"}
-    publish.run(tmp_path, "sglearning", datetime(2026, 10, 20, 7, 30, tzinfo=timezone.utc), env, ig_publish=lambda piece, env: piece,
+    publish.run(tmp_path, "sglearning", datetime(2026, 10, 20, 12, 30, tzinfo=timezone.utc), env, ig_publish=lambda piece, env: piece,
                 threads_post=lambda *a, **k: "th1", threads_poll=bad_poll, notify=lambda t: True)
     got = pieces.load(p.id, root=tmp_path)
     assert got.status == "posted" and got.ids["threads_poll_id"].startswith("skipped")

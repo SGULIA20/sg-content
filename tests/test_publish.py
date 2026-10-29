@@ -5,7 +5,7 @@ import pytest
 from engine import config, pieces, publish, secrets, telegram
 
 ENV = {"IG_ACCESS_TOKEN": "t", "IG_USER_ID": "u", "THREADS_ACCESS_TOKEN": "tt", "THREADS_USER_ID": "tu", "GITHUB_REPOSITORY": "r"}
-NOW = datetime(2026, 10, 20, 7, 30, tzinfo=timezone.utc)          # 13:00 IST on 20 Oct
+NOW = datetime(2026, 10, 20, 12, 30, tzinfo=timezone.utc)         # 18:00 IST on 20 Oct (money Reels post at 18:30 India from 30 Oct 2026)
 LI_ENV = {**ENV, "LINKEDIN_ACCESS_TOKEN": "litok1", "LINKEDIN_PERSON_URN": "urn:li:person:p1"}
 
 
@@ -184,7 +184,7 @@ def test_a_posted_short_is_due_again_when_a_newly_configured_platform_is_missing
     p = pieces.Piece(id="2026-10-22-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 10, 22))
     p.status = "posted"; p.ids = {"yt_id": "y", "ig_reel_id": "r", "ig_story_id": "s", "threads_id": "t", "out_sha": "abc"}
     pieces.save(p, tmp_path)
-    now = datetime(2026, 10, 22, 9, 30, tzinfo=timezone.utc)
+    now = datetime(2026, 10, 22, 13, 0, tzinfo=timezone.utc)                                          # 18:30 India
     assert publish.due(tmp_path, now, "sglearning", {}) == []                                           # nothing owed without LinkedIn keys
     env = {"LINKEDIN_ACCESS_TOKEN": "t", "LINKEDIN_PERSON_URN": "urn:li:person:x"}
     assert [q.id for q in publish.due(tmp_path, now, "sglearning", env)] == [p.id]                        # LinkedIn owed once its keys exist
