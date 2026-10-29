@@ -99,10 +99,11 @@
    "drafts": 1
   },
   "cost": {
-   "inr": 0.0,
+   "inr": 37.5,
    "usd": 0.057972,
-   "voice": 1
-  }
+   "voice": 9
+  },
+  "yt_id": "IZJ5VUWxulk"
  },
  "kind": "short",
  "publish_day": "2026-11-05",
@@ -259,11 +260,21 @@
   },
   "title": "Meta ka AI kharcha, aapki *SIP* pe? 🤖"
  },
- "status": "failed-voice",
- "timings": [],
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  5.33,
+  13.74,
+  19.03,
+  23.2,
+  33.69,
+  40.38,
+  49.83
+ ],
  "topic": {
   "id": "2026-10-23-sglearning-short#second",
   "link": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/meta-raises-ai-spending-forecast-to-145-billion-plans-new-share-issue-q3-revenue-beats-estimates/articleshow/135100437.cms",
+  "look": "claymation",
   "published": "2026-10-21T20:12:20+00:00",
   "rank": 3,
   "remake_kind": "weak",
@@ -276,6 +287,6 @@
   "title": "Meta raises AI spending forecast to $145 billion, plans new share issue; Q3 revenue beats estimates",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-29T19:19:21+00:00",
+ "updated": "2026-10-29T23:00:03+00:00",
  "writer": "claude"
 }
