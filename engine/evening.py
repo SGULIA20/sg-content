@@ -5,7 +5,7 @@ Rows and cells follow the founder's table exactly:
   ScoreMyBiz / Waypoint (alternate days)  Reel: YouTube (own channel) + Instagram   Post: Instagram + Threads + LinkedIn   Story: Instagram
   SG-LEARNING  long (Wed, Sat): YouTube      Short (daily): YouTube + Instagram + Threads + LinkedIn
   SG-MYTH      long (Thu, Sun): YouTube      Short (daily): YouTube + Instagram + Threads + LinkedIn
-  LinkedIn daily post
+  LinkedIn post Mon/Wed/Fri
 Sources: this repo's piece records, and the app poster's public log (logs/posts.jsonl in SGULIA20/arthvan-media)."""
 import json
 import sys
@@ -21,6 +21,7 @@ APP_LOG_URL = "https://raw.githubusercontent.com/SGULIA20/arthvan-media/main/log
 APP_EPOCH = date(2026, 10, 11)                               # Waypoint day; the apps alternate from here (arthvan-media rule)
 APP_YT = {"scoremybiz": "youtube:sglearning", "waypoint": "youtube:arthvan"}
 APP_NAMES = {"scoremybiz": "ScoreMyBiz", "waypoint": "Waypoint"}
+LINKEDIN_WEEKDAYS = (0, 2, 4)                                # founder's LinkedIn post Mon/Wed/Fri (founder, 29 Oct 2026); arthvan-media POST_WEEKDAYS
 APP_POST_WEEKDAYS = tuple(range(7))                          # every day again (founder, 28 Oct 2026); arthvan-media content/apps.json _global.post_weekdays
 OK, NO, NA = "✅ Posted", "🔴 NOT POSTED", "—"
 LATEST = ROOT / "logs" / "evening-latest.txt"
@@ -101,7 +102,7 @@ def _channel_rows(day: date, now: datetime, root: Path) -> list:
 
 def _personal_row(day: date, log: list) -> tuple:
     done = any(e.get("date") == day.isoformat() and e.get("channel") == "linkedin_personal" and e.get("status") == "published" for e in log)
-    return ("LinkedIn daily post", {"LinkedIn": OK if done else NO})
+    return ("LinkedIn post", {"LinkedIn": OK if done else NO})
 
 
 WAT = timezone(timedelta(hours=1))
@@ -118,8 +119,9 @@ def tomorrow_plan(day: date) -> str:
     """What goes out tomorrow and when, in Lagos time (founder, 22 Oct 2026: a 21:00 WAT note on both bots)."""
     t = day + timedelta(days=1)
     app = APP_NAMES[app_for(t)]
-    rows = [("08:10", "LinkedIn", "your daily post" + (" (document)" if t.weekday() in (0, 2, 4) else "") + ", reply in the first hour"),
-            (_wat(CHANNELS["sglearning"].ig_slot_ist), "Instagram + Threads", "Learning with SG Reel and Story")]
+    rows = [(_wat(CHANNELS["sglearning"].ig_slot_ist), "Instagram + Threads", "Learning with SG Reel and Story")]
+    if t.weekday() in LINKEDIN_WEEKDAYS:
+        rows.append(("08:10", "LinkedIn", "your post" + (" (document)" if t.weekday() == 2 else "") + ", reply in the first hour"))
     for key, label in (("sglearning", "Learning with SG"), ("arthvan", "SG-MYTH-WORLD")):
         ch = CHANNELS[key]
         if t.weekday() in ch.long_days:
@@ -136,7 +138,7 @@ def build(day: date | None = None, now: datetime | None = None, root: Path = ROO
     day = day or today_ist()
     now = now or datetime.now(timezone.utc)
     log = fetch_app_log() if log is None else log
-    rows = _app_rows(day, log) + _channel_rows(day, now, root) + [_personal_row(day, log)]
+    rows = _app_rows(day, log) + _channel_rows(day, now, root) + ([_personal_row(day, log)] if day.weekday() in LINKEDIN_WEEKDAYS else [])
     missing = sum(1 for _r, cells in rows for v in cells.values() if v.startswith("🔴"))
     head = f"📋 Evening status {day.strftime('%a %d %b %Y')}" + (" — all posted ✅" if missing == 0 else f" — {missing} NOT POSTED 🔴")
     lines = [head, ""]
