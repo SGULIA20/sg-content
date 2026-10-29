@@ -1,0 +1,41 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:03.28,Default,,0,0,0,,Reportedly ek din mein 550 naukriyan
+Dialogue: 0,0:00:03.28,0:00:03.56,Default,,0,0,0,,gayi.
+Dialogue: 0,0:00:03.56,0:00:05.20,Default,,0,0,0,,Aapke rights pata hain?
+Dialogue: 0,0:00:05.65,0:00:07.01,Default,,0,0,0,,Employees ke mutabik,
+Dialogue: 0,0:00:07.01,0:00:08.82,Default,,0,0,0,,lunch tak laptop aur email band
+Dialogue: 0,0:00:08.82,0:00:09.27,Default,,0,0,0,,ho gaye.
+Dialogue: 0,0:00:09.27,0:00:10.17,Default,,0,0,0,,Mail mein likha,
+Dialogue: 0,0:00:10.17,0:00:12.21,Default,,0,0,0,,wajah performance nahi hai.
+Dialogue: 0,0:00:12.66,0:00:14.25,Default,,0,0,0,,Zyada log kya karte hain?
+Dialogue: 0,0:00:14.25,0:00:15.39,Default,,0,0,0,,Jo paper mile,
+Dialogue: 0,0:00:15.39,0:00:16.98,Default,,0,0,0,,chupchap sign kar dete hain.
+Dialogue: 0,0:00:17.43,0:00:18.36,Default,,0,0,0,,Darr lagta hai,
+Dialogue: 0,0:00:18.36,0:00:20.92,Default,,0,0,0,,bahas ki toh relieving letter atak
+Dialogue: 0,0:00:20.92,0:00:21.39,Default,,0,0,0,,jayega.
+Dialogue: 0,0:00:21.84,0:00:23.63,Default,,0,0,0,,Par aapka haq hai notice period,
+Dialogue: 0,0:00:23.63,0:00:25.24,Default,,0,0,0,,ya uske badle ki salary.
+Dialogue: 0,0:00:25.69,0:00:27.94,Default,,0,0,0,,Full and final yaani aakhri hisaab:
+Dialogue: 0,0:00:27.94,0:00:29.06,Default,,0,0,0,,bachi salary,
+Dialogue: 0,0:00:29.06,0:00:30.18,Default,,0,0,0,,leave ka paisa,
+Dialogue: 0,0:00:30.18,0:00:32.43,Default,,0,0,0,,eligible ho toh gratuity bhi.
+Dialogue: 0,0:00:32.43,0:00:34.23,Default,,0,0,0,,PF nikaalo ya naye job mein
+Dialogue: 0,0:00:34.23,0:00:35.13,Default,,0,0,0,,transfer karo.
+Dialogue: 0,0:00:35.58,0:00:37.18,Default,,0,0,0,,Asli galti layoff nahi,
+Dialogue: 0,0:00:37.18,0:00:39.46,Default,,0,0,0,,bina likhit hisaab ke sign karna.
+Dialogue: 0,0:00:39.46,0:00:41.06,Default,,0,0,0,,Sab email par likhwa lo.
+Dialogue: 0,0:00:41.06,0:00:43.34,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:43.79,0:00:45.24,Default,,0,0,0,,Us dost ko bhejo jo kehta
+Dialogue: 0,0:00:45.24,0:00:47.79,Default,,0,0,0,,hai meri company kabhi nikalegi nahi.

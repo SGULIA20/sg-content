@@ -1,0 +1,215 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 550.0,
+   "quote": "InnoData has laid off nearly 550 employees in India, with further job cuts reported in the Philippines on 26 October 2026.",
+   "source_date": "2026-10-27",
+   "source_name": "News24",
+   "source_url": "https://news24online.com/business/innodata-lays-off-nearly-550-employees-in-india-job-cuts-also-reported-in-philippines/947487/",
+   "text": "AI data services firm InnoData reportedly laid off nearly 550 employees in India in a single day on October 26, 2026.",
+   "unit": "employees"
+  },
+  {
+   "label": "reported",
+   "number": 500.0,
+   "quote": "By late evening, we had almost 500 people, all clueless and in a state of panic,” the employee said.",
+   "source_date": "2026-10-27",
+   "source_name": "News24",
+   "source_url": "https://news24online.com/business/innodata-lays-off-nearly-550-employees-in-india-job-cuts-also-reported-in-philippines/947487/",
+   "text": "Affected workers formed an internal group that swelled to almost 500 people by late evening after corporate access was abruptly cut.",
+   "unit": "people"
+  },
+  {
+   "label": "reported",
+   "number": 28.0,
+   "quote": "Innodata (NASDAQ:INOD) shares fell 28% on Tuesday following reports that the AI services company laid off nearly 550 employees in India.",
+   "source_date": "2026-10-27",
+   "source_name": "Investing.com",
+   "source_url": "https://www.investing.com/news/stock-market-news/innodata-stock-tumbles-on-report-of-layoffs-in-india-and-philippines-3682974",
+   "text": "Shares of Innodata slumped 28 percent on Nasdaq following news reports of sudden mass layoffs in India and the Philippines.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-10-29-sglearning-x1",
+ "ids": {
+  "budget": {
+   "day": "2026-10-29",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 27.0,
+   "usd": 0.135368,
+   "voice": 8
+  },
+  "yt_id": "yYC9nH5dOyA"
+ },
+ "kind": "short",
+ "publish_day": "2026-10-29",
+ "reasons": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Reportedly ek din mein 550 naukriyan gayi. Aapke rights pata hain? ⚖️\nNotice period ya uske badle salary, full and final hisaab, gratuity aur PF, yeh sab aapka haq hai.\nSign karne se pehle sab email par likhwa lo.\nAapki company mein layoff ka process kaisa tha? Comment mein batao.\nYeh investment advice nahi hai.\nUs dost ko bhejo jo kehta hai meri company kabhi nikalegi nahi.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#MoneyTipsHindi",
+     "#PersonalFinanceIndia",
+     "#HinglishFinance",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Reportedly ek din mein 550 naukriyan gayi, lunch tak laptop band. Layoff ho jaye toh notice pay, full and final, gratuity aur PF aapka haq hai. Sign karne se pehle sab likhwa lo. Aapko apne rights pata the? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Reportedly ek din mein 550 log Innodata India se nikaale gaye, company ne numbers confirm nahi kiye. Layoff mein sabse badi galti hai shock mein bina likhit hisaab ke sign kar dena. Notice pay, full and final, gratuity aur PF, yeh aapka haq hai, sab email par likhwa lo. Us dost ko bhejo jo kehta hai meri company kabhi nikalegi nahi.",
+    "tags": [
+     "layoff",
+     "layoff rights India",
+     "notice period",
+     "full and final settlement",
+     "gratuity",
+     "PF withdrawal",
+     "Innodata layoffs",
+     "job loss",
+     "employee rights",
+     "Hinglish finance",
+     "Learning with SG"
+    ],
+    "title": "Layoff hua toh aapke rights kya hain?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo kehta hai meri company kabhi nikalegi nahi.",
+  "hook": "Reportedly ek din mein 550 naukriyan gayi. Aapke rights pata hain?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Hook",
+    "visual": {
+     "card": null,
+     "prompt": "A vast open-plan office floor at midday, rows and rows of laptop screens going black at the same moment, empty swivel chairs pushed back, open tiffin boxes left half eaten on desks, harsh noon light through tall windows, eerie stillness, no text anywhere",
+     "type": "art"
+    },
+    "vo": "Reportedly ek din mein 550 naukriyan gayi. Aapke rights pata hain?"
+   },
+   {
+    "facts_used": [],
+    "label": "Setup",
+    "visual": {
+     "card": null,
+     "prompt": "A young woman employee in office wear frozen at her desk, staring at a blank laptop screen, a colleague behind her holding a lunch box looking confused, afternoon office light, shocked mood, no text",
+     "type": "art"
+    },
+    "vo": "Employees ke mutabik, lunch tak laptop aur email band ho gaye. Mail mein likha, wajah performance nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "The choice",
+    "visual": {
+     "card": null,
+     "prompt": "A small HR meeting room, a stack of papers and a pen on the table, a nervous young man in a formal shirt holding the pen just above the paper, an HR person across the table looking away, cold fluorescent light, no text",
+     "type": "art"
+    },
+    "vo": "Zyada log kya karte hain? Jo paper mile, chupchap sign kar dete hain."
+   },
+   {
+    "facts_used": [],
+    "label": "Why it felt right",
+    "visual": {
+     "card": null,
+     "prompt": "The same young man pausing with the pen, sweat on his forehead, a thought bubble above him showing a sealed envelope locked with a chain, tense mood, afternoon, no text",
+     "type": "art"
+    },
+    "vo": "Darr lagta hai, bahas ki toh relieving letter atak jayega."
+   },
+   {
+    "facts_used": [],
+    "label": "Your rights",
+    "visual": {
+     "card": null,
+     "prompt": "A wall calendar with pages flying off beside a thick salary envelope on an office desk, warm light, symbolic still life showing time being paid for, no text or numbers",
+     "type": "art"
+    },
+    "vo": "Par aapka haq hai notice period, ya uske badle ki salary."
+   },
+   {
+    "facts_used": [],
+    "label": "Full and final",
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN in office wear at a home dining table in the evening, sceptically going through documents, a PF passbook, a calculator and a folder spread out, a cup of chai beside her, focused mood, no text",
+     "type": "art"
+    },
+    "vo": "Full and final yaani aakhri hisaab: bachi salary, leave ka paisa, eligible ho toh gratuity bhi. PF nikaalo ya naye job mein transfer karo."
+   },
+   {
+    "facts_used": [],
+    "label": "The twist",
+    "visual": {
+     "card": null,
+     "prompt": "SG, early forties, beard, striped shirt, sitting calmly at the same dining table, tapping a printed sheet of paper with one finger while BEHEN nods in relief, warm evening lamp light, no text",
+     "type": "art"
+    },
+    "vo": "Asli galti layoff nahi, bina likhit hisaab ke sign karna. Sab email par likhwa lo. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Send",
+    "visual": {
+     "card": null,
+     "prompt": "A confident young man with an office ID card around his neck laughing at a roadside chai stall at dusk, friends around him looking doubtful, glasses of chai in hand, golden evening light, no text",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo kehta hai meri company kabhi nikalegi nahi."
+   }
+  ],
+  "thumbnail": {
+   "name": "LAYOFF",
+   "name_hi": "लेऑफ",
+   "scene": "A vast office floor at lunchtime where hundreds of laptop screens turn black at once, empty chairs pushed back and open tiffin boxes abandoned on the desks under harsh noon light.",
+   "words": [
+    "550 JOBS",
+    "GAYAB"
+   ],
+   "words_hi": [
+    "550 जॉब्स",
+    "गायब"
+   ]
+  },
+  "title": "Layoff ho gaya? Aapke *haq* kya hain ⚖️"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  5.65,
+  12.66,
+  17.43,
+  21.84,
+  25.69,
+  35.58,
+  43.79
+ ],
+ "topic": {
+  "extra": true,
+  "link": "https://news24online.com/business/innodata-lays-off-nearly-550-employees-in-india-job-cuts-also-reported-in-philippines/947487/",
+  "look": "claymation",
+  "published": "2026-10-29T12:55:58.481647+00:00",
+  "slot_ist": "18:40",
+  "source": "chosen",
+  "summary": "Angle: open on the reported Innodata layoffs (about 550 in India on 26 Oct, devices and accounts cut off around lunch, termination emails said not performance-related, company has not confirmed numbers, shares fell about 26-28%). Then the viewer's own rights in India if laid off: notice period or pay in lieu of notice, full and final settlement, gratuity after 5 years, PF withdrawal or transfer, getting it in writing, first week checklist. Say reported claims as reported.",
+  "target_minutes": null,
+  "title": "Innodata reportedly lays off about 550 employees in India in a day: what are your rights if you are laid off?",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-10-29T13:01:12+00:00",
+ "writer": "claude"
+}
