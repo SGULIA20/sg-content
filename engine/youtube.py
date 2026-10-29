@@ -127,6 +127,9 @@ def metadata(piece: Piece, publish_at_utc: datetime, env=None) -> dict:
         parts.append("Sources:\n" + "\n".join(sources))
     if piece.channel == "sglearning":
         parts.append(f"{DISCLAIMER}. Yeh video sirf samjhaane ke liye hai; koi bhi faisla apne advisor se pooch kar lijiye.")
+    from .config import VOICE_CREDIT
+    if VOICE_CREDIT.get(piece.channel):
+        parts.append(VOICE_CREDIT[piece.channel])
     credits = sorted({sc["credit"] for sc in (piece.script or {}).get("scenes", []) if sc.get("credit")})
     if credits:
         parts.append("Photos:\n" + "\n".join(credits))

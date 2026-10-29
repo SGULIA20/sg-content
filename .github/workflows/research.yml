@@ -1,0 +1,66 @@
+name: research
+
+# Learning with SG research cycle every 4 hours (founder, 29 Oct 2026 master prompt): a Telegram report each cycle, and an extra Reel
+# when today still has room (engine/trends.py). 06:00, 10:00, 14:00, 18:00 and 22:00 India.
+on:
+  schedule:
+    - cron: '30 0,4,8,12,16 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: research
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Restore the voice and picture caches
+        uses: actions/cache@v5
+        with:
+          path: cache
+          key: sg-cache-${{ github.run_id }}
+          restore-keys: sg-cache-
+      - name: Install ffmpeg and fonts
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-core
+      - name: Install Python packages
+        run: pip install -r requirements.txt
+      - name: Install Chromium
+        run: python -m playwright install --with-deps chromium
+      - name: Unit tests
+        run: python -m pytest -q -m "not slow"
+      - name: Git identity
+        run: |
+          git config user.name "sg-content-bot"
+          git config user.email "sg-content-bot@users.noreply.github.com"
+      - name: Research cycle (report, and make an extra Reel when there is room)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
+          YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SG_COMMAND_KEY: ${{ secrets.SG_COMMAND_KEY }}
+        run: python -m engine.trends
+      - name: Prune media older than 14 days
+        if: always()
+        run: python scripts/prune_out.py --days 14
+      - name: Commit anything still uncommitted (pieces, media, logs) and push
+        if: always()
+        run: |
+          # also pushes any piece whose own push failed earlier; never leaves a stuck rebase
+          python -m engine.gitsync "research: $(date -u +%Y-%m-%dT%H:%M)"

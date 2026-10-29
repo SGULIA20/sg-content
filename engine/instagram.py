@@ -123,13 +123,14 @@ def cover_url(piece: Piece, repo: str, head=None) -> str:
 
 
 def caption_text(piece: Piece) -> str:
-    from .config import YOUTUBE_URLS
+    from .config import VOICE_CREDIT, YOUTUBE_URLS
     ig = (piece.script or {}).get("captions", {}).get("instagram", {})
     link = YOUTUBE_URLS.get(piece.channel)
     ask = DM_ASK.get(piece.channel, "")
     photos = sorted({sc["credit"] for sc in (piece.script or {}).get("scenes", []) if sc.get("credit")})     # licence: the photographer is named
     parts = ([ig.get("caption", "").strip()] + ([f"▶ Poori videos YouTube par: {link}"] if link else []) + ([ask] if ask else [])
-             + ([("Photo: " + "; ".join(photos))] if photos else []) + [" ".join(ig.get("hashtags", []))])
+             + ([("Photo: " + "; ".join(photos))] if photos else []) + ([VOICE_CREDIT[piece.channel]] if VOICE_CREDIT.get(piece.channel) else [])
+             + [" ".join(ig.get("hashtags", []))])
     return "\n\n".join(p for p in parts if p).strip()
 
 
