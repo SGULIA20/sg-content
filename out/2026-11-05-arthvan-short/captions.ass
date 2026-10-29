@@ -1,0 +1,65 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.20,Default,,0,0,0,,Ravan ki Lanka,
+Dialogue: 0,0:00:01.20,0:00:02.64,Default,,0,0,0,,kya sach mein aaj ka Sri
+Dialogue: 0,0:00:02.64,0:00:03.36,Default,,0,0,0,,Lanka thi?
+Dialogue: 0,0:00:03.81,0:00:06.60,Default,,0,0,0,,Valmiki Ramayan mein Hanuman samundar paar
+Dialogue: 0,0:00:06.60,0:00:07.25,Default,,0,0,0,,karte hain.
+Dialogue: 0,0:00:07.25,0:00:09.61,Default,,0,0,0,,Trikuta parvat ki choti par unhe
+Dialogue: 0,0:00:09.61,0:00:11.33,Default,,0,0,0,,Ravan ki Lanka dikhti hai.
+Dialogue: 0,0:00:11.78,0:00:13.74,Default,,0,0,0,,Wahin hai Ashoka Vatika,
+Dialogue: 0,0:00:13.74,0:00:16.14,Default,,0,0,0,,deewaron se ghira shahi bagicha.
+Dialogue: 0,0:00:16.14,0:00:18.32,Default,,0,0,0,,Sita ji Shimshapa ped ke neeche
+Dialogue: 0,0:00:18.32,0:00:18.98,Default,,0,0,0,,baithi hain.
+Dialogue: 0,0:00:19.43,0:00:21.47,Default,,0,0,0,,Sri Lanka ki lok kathayein Sigiriya
+Dialogue: 0,0:00:21.47,0:00:23.51,Default,,0,0,0,,chattan ko Ravan ka mahal maanti
+Dialogue: 0,0:00:23.51,0:00:23.71,Default,,0,0,0,,hain.
+Dialogue: 0,0:00:24.16,0:00:26.25,Default,,0,0,0,,Par UNESCO ke records kehte hain,
+Dialogue: 0,0:00:26.25,0:00:28.35,Default,,0,0,0,,yeh kila Raja Kashyapa ka hai.
+Dialogue: 0,0:00:28.35,0:00:30.86,Default,,0,0,0,,Unhone ise lagbhag san 477 mein
+Dialogue: 0,0:00:30.86,0:00:31.28,Default,,0,0,0,,banwaya.
+Dialogue: 0,0:00:31.73,0:00:34.47,Default,,0,0,0,,Hakgala garden ko log Ashoka Vatika
+Dialogue: 0,0:00:34.47,0:00:35.10,Default,,0,0,0,,maante hain.
+Dialogue: 0,0:00:35.10,0:00:37.84,Default,,0,0,0,,Par angrez botanists ne ise 1861
+Dialogue: 0,0:00:37.84,0:00:38.69,Default,,0,0,0,,mein banaya tha.
+Dialogue: 0,0:00:38.69,0:00:40.37,Default,,0,0,0,,Cinchona ugaane ke liye,
+Dialogue: 0,0:00:40.37,0:00:42.69,Default,,0,0,0,,yaani malaria ki dawai ka paudha.
+Dialogue: 0,0:00:43.14,0:00:44.23,Default,,0,0,0,,Archaeologist H.
+Dialogue: 0,0:00:44.23,0:00:44.45,Default,,0,0,0,,D.
+Dialogue: 0,0:00:44.45,0:00:45.98,Default,,0,0,0,,Sankalia ke hisaab se,
+Dialogue: 0,0:00:45.98,0:00:47.95,Default,,0,0,0,,Lanka Vindhya pahadon mein thi.
+Dialogue: 0,0:00:47.95,0:00:50.35,Default,,0,0,0,,Paramparik vidwan yeh nahi maante,
+Dialogue: 0,0:00:50.35,0:00:52.32,Default,,0,0,0,,unke liye Lanka dakshin ka dweep
+Dialogue: 0,0:00:52.32,0:00:52.54,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:52.99,0:00:54.05,Default,,0,0,0,,Surya Siddhanta,
+Dialogue: 0,0:00:54.05,0:00:55.96,Default,,0,0,0,,yaani taaron ka purana granth,
+Dialogue: 0,0:00:55.96,0:00:58.08,Default,,0,0,0,,Lanka ko equator par rakhta hai.
+Dialogue: 0,0:00:58.08,0:00:59.78,Default,,0,0,0,,Aaj ka Sri Lanka us rekha
+Dialogue: 0,0:00:59.78,0:01:00.63,Default,,0,0,0,,se upar hai.
+Dialogue: 0,0:01:01.08,0:01:03.42,Default,,0,0,0,,Purane shilalekh is dweep ko Simhala
+Dialogue: 0,0:01:03.42,0:01:04.98,Default,,0,0,0,,aur Tambapanni kehte hain.
+Dialogue: 0,0:01:04.98,0:01:07.13,Default,,0,0,0,,Shilalekh yaani patthar par khude lekh.
+Dialogue: 0,0:01:07.13,0:01:09.28,Default,,0,0,0,,Local parampara phir bhi Ramayan ke
+Dialogue: 0,0:01:09.28,0:01:10.84,Default,,0,0,0,,naamon ko asli maanti hai.
+Dialogue: 0,0:01:11.29,0:01:13.23,Default,,0,0,0,,Toh asli Lanka kahan thi?
+Dialogue: 0,0:01:13.23,0:01:14.92,Default,,0,0,0,,Koi bhi khoj abhi tak tay
+Dialogue: 0,0:01:14.92,0:01:15.89,Default,,0,0,0,,nahi kar payi.
+Dialogue: 0,0:01:16.34,0:01:18.08,Default,,0,0,0,,Aaj aap Seetha Eliya ja sakte
+Dialogue: 0,0:01:18.08,0:01:18.27,Default,,0,0,0,,hain.
+Dialogue: 0,0:01:18.27,0:01:20.40,Default,,0,0,0,,Nadi kinare chattan par gol gaddhe
+Dialogue: 0,0:01:20.40,0:01:20.59,Default,,0,0,0,,hain.
+Dialogue: 0,0:01:20.59,0:01:22.52,Default,,0,0,0,,Bhakt inhe Hanuman ji ke pad-chinh
+Dialogue: 0,0:01:22.52,0:01:23.10,Default,,0,0,0,,maante hain.
+Dialogue: 0,0:01:23.55,0:01:25.43,Default,,0,0,0,,Us dost ko bhejo jo kehta
+Dialogue: 0,0:01:25.43,0:01:27.31,Default,,0,0,0,,hai Lanka sirf Sri Lanka thi.

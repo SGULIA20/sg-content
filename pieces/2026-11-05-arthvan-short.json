@@ -1,12 +1,151 @@
 {
  "channel": "arthvan",
- "facts": [],
+ "facts": [
+  {
+   "label": "scripture",
+   "number": 100.0,
+   "quote": "That Hanuma with great strength crossed the insurmountable ocean without becoming tired and viewed the city of Lanka located on the peak of Mount Trikuta.",
+   "source_date": "1930",
+   "source_name": "Valmiki Ramayana, Sundara Kanda",
+   "source_url": "https://www.valmikiramayan.net/utf8/sundara/sarga2/sundara_2_frame.htm",
+   "text": "In the Valmiki Ramayana, the island city of Lanka is described as situated across the southern ocean at a distance of one hundred yojanas from the mainland.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "sa saagaram anaadR^ishhyam atikramya mahaabalaH | trikuuTa shikhare lankaam sthitaam svastho dadarsha ha ||",
+   "source_date": "1930",
+   "source_name": "Valmiki Ramayana, Sundara Kanda",
+   "source_url": "https://www.valmikiramayan.net/utf8/sundara/sarga2/sundara_2_frame.htm",
+   "text": "The Sundara Kanda specifically records that Ravana's fortified capital of Lanka was built on the summit of Mount Trikuta.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": 0.0,
+   "quote": "Situated upon the line which passes through the haunt of the rakshasas and the mountain which is the seat of the gods...",
+   "source_date": "1935",
+   "source_name": "Surya Siddhanta",
+   "source_url": "https://en.wikipedia.org/wiki/Surya_Siddhanta",
+   "text": "The classical Sanskrit astronomical treatise Surya Siddhanta defines Lanka as an astronomical baseline city situated on the terrestrial equator at zero degrees latitude.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": 1973.0,
+   "quote": "Ravana was an ordinary human being, as the epic expressly says so. And Lanka was situated in the Vindhyas. Thus Rama had not crossed the Narbada.",
+   "source_date": "1973",
+   "source_name": "H. D. Sankalia, Ramayana: Myth or Reality?",
+   "source_url": "https://books.google.com/books?id=lZEOAAAAQAAJ",
+   "text": "Archaeologist H. D. Sankalia argued in 1973 that the Lanka of the original Ramayana was situated in the Vindhya mountain range and Chota Nagpur plateau in Central India rather than the island of Sri Lanka, a proposition rejected by mainstream traditional scholars who identify Lanka with the southern island.",
+   "unit": "CE"
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "Lanka was regarded as the city at the intersection of the Equatorial line and the Prime Meridian. Today's Sri Lanka is not the one referenced in the ancient texts, according to Indian astronomers.",
+   "source_date": "1935",
+   "source_name": "Surya Siddhanta",
+   "source_url": "https://en.wikipedia.org/wiki/Surya_Siddhanta",
+   "text": "Astronomers and historians highlight a geographic contradiction because the modern island of Sri Lanka lies between 5 and 10 degrees north latitude, whereas ancient Indian astronomical calculations fixed Lanka strictly on the equator along the Ujjain meridian.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 477.0,
+   "quote": "The ruins of the capital built by the parricidal King Kassapa I (477–95) lie on the steep slopes and at the summit of a granite peak standing some 180m high.",
+   "source_date": "1982",
+   "source_name": "UNESCO World Heritage Centre",
+   "source_url": "https://whc.unesco.org/en/list/202",
+   "text": "Archaeological excavations and historical records document that the rock fortress and royal palace at Sigiriya were constructed by King Kashyapa I during his reign from 477 CE to 495 CE.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 5500.0,
+   "quote": "The first inhabitants of the Sigiriya region were the Mesolithic humans who belonged to prehistoric times of Sri Lanka as revealed from the excavation and investigations done in nearby caves in proximity to the Sigiriya summit...",
+   "source_date": "2020-11-14",
+   "source_name": "Department of Archaeology, Sri Lanka",
+   "source_url": "https://www.archaeology.lk",
+   "text": "Archaeological surveys at the Aligala rock shelter on the eastern slopes of Sigiriya yielded microlithic tools demonstrating prehistoric human occupation dating back approximately 5,500 years before present.",
+   "unit": "years"
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "Known for its stunning rock fortress, Sigiriya is a UNESCO World Heritage Site that is also believed to be one of the places where Ravana kept Sita captive.",
+   "source_date": "2024",
+   "source_name": "Sri Lanka Tourism Promotion Bureau",
+   "source_url": "https://www.srilanka.travel",
+   "text": "Local Sri Lankan folklore and modern tourism narratives identify Sigiriya as the mythological palace fortress of Ravana named Alakamandava.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "Sita refused to live in Ravana's palace. She stayed in the grove, seated under a simsapa tree.",
+   "source_date": "1930",
+   "source_name": "Valmiki Ramayana, Sundara Kanda",
+   "source_url": "https://www.valmikiramayan.net/utf8/sundara/sarga14/sundara_14_frame.htm",
+   "text": "In the Sundara Kanda of the Valmiki Ramayana, Ashoka Vatika is described as an imperial garden enclosed by walls and filled with Ashoka, Champaka, and Shimshapa trees where Sita was held captive.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "The Hakgala Botanical Gardens was one of the pleasure gardens of King Ravana... This is the exotic pleasure garden where King Ravana kept the depressed Sita, insisting that she marries him.",
+   "source_date": "2024",
+   "source_name": "Sri Lanka Tourism Promotion Bureau",
+   "source_url": "https://www.srilanka.travel",
+   "text": "Popular Sri Lankan pilgrimage traditions identify Hakgala Botanical Garden and the adjacent village of Seetha Eliya as the historical location of Ashoka Vatika.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 1861.0,
+   "quote": "The garden was established in 1861, under the curation of William Purdie, initially as an experimental cultivation of Cinchona, a source of quinine against malaria.",
+   "source_date": "2011",
+   "source_name": "Department of National Botanic Gardens, Sri Lanka",
+   "source_url": "https://en.wikipedia.org/wiki/Hakgala_Botanical_Garden",
+   "text": "Historical records indicate that the Hakgala site was formally established by British colonial botanists in 1861 CE as an experimental reserve for cultivating medicinal Cinchona plants.",
+   "unit": "CE"
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "On the rock face across the stream are circular depressions said to be the footprints of Lord Hanuman.",
+   "source_date": "2024",
+   "source_name": "Sri Lanka Tourism Promotion Bureau",
+   "source_url": "https://www.srilanka.travel",
+   "text": "Devotees at the Seetha Amman Temple in Seetha Eliya identify round depressions in the riverside rock surface as the physical footprints of Hanuman.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "Sri Lanka was known to Indians of the olden days as Simhala or Tamraparni, and not as Lanka.",
+   "source_date": "2015",
+   "source_name": "Department of Archaeology, Sri Lanka",
+   "source_url": "https://en.wikipedia.org/wiki/Names_of_Sri_Lanka",
+   "text": "Epigraphists emphasize that ancient inscriptions and Pali chronicles refer to the island as Tambapanni and Simhala, leading historians to dispute the antiquity of Sri Lanka's Ramayana place names while local tradition maintains they preserve genuine epic geography.",
+   "unit": null
+  }
+ ],
  "id": "2026-11-05-arthvan-short",
  "ids": {
   "budget": {
    "day": "2026-10-29",
-   "research": 3
-  }
+   "drafts": 1,
+   "research": 4
+  },
+  "cost": {
+   "inr": 55.5,
+   "usd": 0.09429,
+   "voice": 12
+  },
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "jy9B06Xthyg"
  },
  "kind": "short",
  "publish_day": "2026-11-05",
@@ -15,27 +154,259 @@
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
  ],
- "script": null,
- "status": "failed-research",
- "timings": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Ravan ki Lanka, kya sach mein aaj ka Sri Lanka thi?\nRamayan Trikuta parvat par sone ki Lanka dikhati hai.\nSigiriya ko log Ravan ka mahal kehte hain, par UNESCO kehta hai yeh Raja Kashyapa ka kila hai.\nAapke hisaab se asli Lanka kahan thi?\nUs dost ko bhejo jo kehta hai Lanka sirf Sri Lanka hi thi.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#Ramayan",
+     "#Mythology",
+     "#Archaeology",
+     "#AncientIndia",
+     "#Itihaas",
+     "#Rahasya",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Ravan ki Lanka, kya sach mein aaj ka Sri Lanka thi? Ramayan, Surya Siddhanta aur archaeologists teeno alag jagah ki taraf ishara karte hain. Aap kya maante ho, Sri Lanka, Vindhya, ya kahin aur? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Ravan ki Lanka, kya sach mein aaj ka Sri Lanka thi? Ramayan kya kehti hai, UNESCO aur archaeologists kya kehte hain, aur kahan vidwan aaj bhi bante hue hain. Sigiriya se Seetha Eliya tak, sabut ke saath poori kahani. Us dost ko bhejo jo kehta hai Lanka sirf Sri Lanka hi thi.",
+    "tags": [
+     "Ravan ki Lanka",
+     "Lanka kahan thi",
+     "Ramayan",
+     "Sigiriya",
+     "Ashoka Vatika",
+     "Seetha Eliya",
+     "Sri Lanka Ramayana",
+     "Surya Siddhanta",
+     "Sankalia",
+     "Indian mythology",
+     "archaeology"
+    ],
+    "title": "Ravan ki Lanka Sri Lanka thi ya Vindhya mein?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "477",
+    "line": "Sigiriya kila Raja Kashyapa ne banwaya, lagbhag san 477",
+    "source": "UNESCO World Heritage Centre"
+   },
+   {
+    "big_number": "1861",
+    "line": "Hakgala garden angrez botanists ne banaya",
+    "source": "Department of National Botanic Gardens, Sri Lanka"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo kehta hai Lanka sirf Sri Lanka thi.",
+  "hook": "Ravan ki Lanka, kya sach mein aaj ka Sri Lanka thi?",
+  "scenes": [
+   {
+    "facts_used": [
+     3,
+     4,
+     12
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Dramatic drawn panel: a giant dark rock fortress rising from a jungle under a violent storm, lightning splitting the sky, a faint golden city glowing on the summit as if imagined, waves of mist below, epic and mysterious mood, no text",
+     "type": "art"
+    },
+    "vo": "Ravan ki Lanka, kya sach mein aaj ka Sri Lanka thi?"
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a mighty divine figure seen from behind and at a distance, landing on a cliff after crossing a wide night ocean, looking at a golden fortified city on top of a three-peaked mountain, moonlight, awe-filled mood, no text",
+     "type": "art"
+    },
+    "vo": "Valmiki Ramayan mein Hanuman samundar paar karte hain. Trikuta parvat ki choti par unhe Ravan ki Lanka dikhti hai."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a walled royal garden full of flowering ashoka and champaka trees, a lone woman seen from a distance and from behind sitting beneath a large shady tree, soft sorrowful evening light, guards far away near the wall, no text",
+     "type": "art"
+    },
+    "vo": "Wahin hai Ashoka Vatika, deewaron se ghira shahi bagicha. Sita ji Shimshapa ped ke neeche baithi hain."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a village grandmother telling a story to children under a tree at dusk, the huge flat-topped Sigiriya rock visible on the horizon behind them, warm lamp light, storytelling mood, no text",
+     "type": "art"
+    },
+    "vo": "Sri Lanka ki lok kathayein Sigiriya chattan ko Ravan ka mahal maanti hain."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: ancient workers carving steps and walls into a massive granite rock, a king without a visible face watching from below, scaffolding and stone lion paws at the base, dusty golden afternoon, historical mood, no text",
+     "type": "art"
+    },
+    "vo": "Par UNESCO ke records kehte hain, yeh kila Raja Kashyapa ka hai. Unhone ise lagbhag san 477 mein banwaya."
+   },
+   {
+    "facts_used": [
+     9,
+     10
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: 19th century colonial botanists in hats planting rows of young cinchona saplings on a misty green hill garden, notebooks and wooden crates, cool highland fog, documentary mood, no text",
+     "type": "art"
+    },
+    "vo": "Hakgala garden ko log Ashoka Vatika maante hain. Par angrez botanists ne ise 1861 mein banaya tha. Cinchona ugaane ke liye, yaani malaria ki dawai ka paudha."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel split in two: on the left an elderly archaeologist at a desk pointing at forested central Indian hills on a map, on the right traditional scholars with palm-leaf manuscripts pointing south toward an island across the sea, debating mood, no text",
+     "type": "art"
+    },
+    "vo": "Archaeologist H. D. Sankalia ke hisaab se, Lanka Vindhya pahadon mein thi. Paramparik vidwan yeh nahi maante, unke liye Lanka dakshin ka dweep hai."
+   },
+   {
+    "facts_used": [
+     2,
+     4
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an ancient astronomer on a rooftop at night with a brass instrument, a glowing line drawn across a stylised globe marking the equator, an island shown clearly above the line, starry sky, puzzling mood, no text",
+     "type": "art"
+    },
+    "vo": "Surya Siddhanta, yaani taaron ka purana granth, Lanka ko equator par rakhta hai. Aaj ka Sri Lanka us rekha se upar hai."
+   },
+   {
+    "facts_used": [
+     12
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an epigraphist with a torch examining an ancient carved stone inscription in a cave, ancient script lines glowing faintly, a pilgrim lighting a lamp at the cave mouth behind, mysterious mood, no text",
+     "type": "art"
+    },
+    "vo": "Purane shilalekh is dweep ko Simhala aur Tambapanni kehte hain. Shilalekh yaani patthar par khude lekh. Local parampara phir bhi Ramayan ke naamon ko asli maanti hai."
+   },
+   {
+    "facts_used": [
+     3,
+     4,
+     12
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an old map of the Indian subcontinent and the southern ocean on a wooden table, three candle-lit question marks shaped by light falling on central India, the island and the equator line, mysterious unresolved mood, no text letters",
+     "type": "art"
+    },
+    "vo": "Toh asli Lanka kahan thi? Koi bhi khoj abhi tak tay nahi kar payi."
+   },
+   {
+    "facts_used": [
+     11
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a small colourful temple beside a misty mountain stream, pilgrims kneeling at a riverside rock with round footprint-like depressions, flowers and lamps placed beside them, devotional calm green highlands, no text",
+     "type": "art"
+    },
+    "vo": "Aaj aap Seetha Eliya ja sakte hain. Nadi kinare chattan par gol gaddhe hain. Bhakt inhe Hanuman ji ke pad-chinh maante hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: two friends sitting on steps at sunset, one showing the other a drawing of a golden city on a mountain, the Sigiriya rock glowing far away, warm curious mood, no text",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo kehta hai Lanka sirf Sri Lanka thi."
+   }
+  ],
+  "thumbnail": {
+   "name": "LANKA",
+   "name_hi": "लंका",
+   "scene": "A colossal dark rock fortress rising out of a jungle under a storm-black sky, lightning striking behind it, a faint golden palace glowing on its summit like a lost city.",
+   "words": [
+    "477 CE",
+    "SACH?"
+   ],
+   "words_hi": [
+    "477 ई.",
+    "सच?"
+   ]
+  },
+  "title": "Ravan ki *Lanka* asal mein kahan thi? 🤯"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  3.81,
+  11.78,
+  19.43,
+  24.16,
+  31.73,
+  43.14,
+  52.99,
+  61.08,
+  71.29,
+  76.34,
+  83.55
+ ],
  "topic": {
   "allowed_sources": [
-   "asi.nic.in",
-   "UNESCO whc.unesco.org",
-   "en.wikipedia.org"
+   "en.wikipedia.org",
+   "Valmiki Ramayana (Sundara Kanda)",
+   "srilanka.travel (Ramayana trail)"
   ],
   "hooks": [
-   "China ke baad duniya ki sabse lambi deewar India mein?",
-   "Deewar itni chaudi ki 8 ghode saath chalein?",
-   "Ek sant ki bali ki kahani"
+   "Lanka Sri Lanka hi thi ya kahin aur?",
+   "Sigiriya Ravan ka mahal?",
+   "Ashok Vatika aaj kahan?"
   ],
-  "id": "kumbhalgarh-wall",
-  "notes": "Length figures vary (36-38 km); the sacrifice story is legend.",
-  "place": "Kumbhalgarh, Rajasthan",
+  "id": "ravana-lanka-location",
+  "look": "indian-comic",
+  "notes": "Everything location-wise is disputed or legend; scripture for the story.",
+  "place": "Sri Lanka / disputed",
   "priority": 1,
   "target_minutes": null,
-  "title_hi": "Kumbhalgarh, 36 km ki deewar"
+  "title_hi": "Ravan ki Lanka kahan thi",
+  "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-29T19:16:16+00:00",
- "writer": ""
+ "updated": "2026-10-29T22:50:24+00:00",
+ "writer": "claude"
 }
