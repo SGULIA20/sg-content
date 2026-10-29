@@ -1,0 +1,42 @@
+{
+ "channel": "arthvan",
+ "facts": [],
+ "id": "2026-11-19-arthvan-long",
+ "ids": {
+  "budget": {
+   "day": "2026-10-29",
+   "research": 3
+  }
+ },
+ "kind": "long",
+ "publish_day": "2026-11-19",
+ "reasons": [
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+ ],
+ "script": null,
+ "status": "failed-research",
+ "timings": [],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "nio.res.in",
+   "UNESCO whc.unesco.org",
+   "en.wikipedia.org"
+  ],
+  "hooks": [
+   "2004 sunami ne samundar se kya bahar nikala?",
+   "7 pagoda ki kahani 1,300 saal purani?",
+   "Goton ko samundar mein kya mila?"
+  ],
+  "id": "mahabalipuram-seven-pagodas",
+  "notes": "Post-tsunami finds are documented; the seven-pagoda count is legend.",
+  "place": "Mahabalipuram, Tamil Nadu",
+  "priority": 1,
+  "target_minutes": 14,
+  "title_hi": "Mahabalipuram ke 7 mandir, 6 samundar mein?"
+ },
+ "updated": "2026-10-29T19:16:11+00:00",
+ "writer": ""
+}
