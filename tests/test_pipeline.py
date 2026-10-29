@@ -515,3 +515,23 @@ def test_produce_collects_a_parked_draft_instead_of_picking_the_topic_again(tmp_
     assert pieces.load(_piece().id, tmp_path).status == "writing" and calls["topics"] == 1 and calls["research"] == 1
     produce.run(tmp_path, date(2026, 10, 20), max_pieces=1, dry_run=True, only={"sglearning:short"}, deps=d, notify=lambda t: True)
     assert calls["topics"] == 1 and calls["research"] == 1 and calls["write"] == 2      # 27 Oct 2026: it used to re-pick and re-research
+
+
+def test_a_myth_short_opens_on_a_credited_photo_of_its_place_only_when_the_script_names_it(tmp_path):
+    from engine import instagram
+    d, calls = deps(tmp_path)
+    p = pieces.Piece(id="2026-11-10-arthvan-short", channel="arthvan", kind="short", publish_day=date(2026, 11, 10))
+    p.topic = {"place": "Konark, Odisha"}
+    p.script = {"title": "Konark ka *chumbak*? 🤯", "hook": "Kya Konark mandir par 52 ton ka chumbak tha?", "scenes": [{"vo": "x", "visual": {"prompt": "temple"}}],
+                "captions": {"instagram": {"caption": "c", "hashtags": []}}}
+    seen = []
+    def commons(q, out_dir):
+        seen.append(q); out_dir.mkdir(parents=True, exist_ok=True); f = out_dir / "k.jpg"; f.write_bytes(b"j")
+        return {"path": f, "credit": "A. Person, CC BY-SA 4.0, Wikimedia Commons", "title": "File:Konark Sun Temple.jpg"}
+    d.commons = commons
+    sc = p.script["scenes"][0]
+    out = pipeline._visual_for(p, 0, sc, d, tmp_path, (1080, 1920))
+    assert seen == ["Konark"] and out.name == "visual00.png" and sc["credit"].startswith("A. Person")
+    assert "Photo: A. Person, CC BY-SA 4.0, Wikimedia Commons" in instagram.caption_text(p)
+    p.topic = {"place": "Abhaneri, Rajasthan"}                                      # the script is about another place: no photo
+    assert pipeline.place_key(p) == ""

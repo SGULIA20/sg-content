@@ -39,7 +39,7 @@ def piece_with(vo: str, channel="sglearning", kind="short", scenes=None, label="
 
 
 def test_clean_finance_script_passes():
-    p = piece_with(_words(180) + " " + DISCLAIMER)
+    p = piece_with(_words(100) + " " + DISCLAIMER)                            # money Shorts are 35-45 s (founder, 30 Oct 2026)
     assert lint.check_script(p, BANNED, []) == []
 
 
@@ -175,9 +175,10 @@ def test_card_big_number_must_be_short():
 
 
 def test_story_shorts_allow_longer_scripts():
-    p = piece_with(_words(200))                                               # sglearning short = story format
+    p = piece_with(_words(110))                                               # sglearning short = story format, 35-45 s since 30 Oct 2026
     assert not any(r.startswith("length") for r in lint.check_script(p, BANNED, []))
-    assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(120)), BANNED, []))
+    assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(200)), BANNED, []))
+    assert any(r.startswith("length") for r in lint.check_script(piece_with(_words(60)), BANNED, []))
     p2 = piece_with(_words(200), channel="arthvan"); p2.script["scenes"][0]["label"] = "legend"
     assert not any(r.startswith("length") for r in lint.check_script(p2, BANNED, []))      # mythology Shorts are stories too
 

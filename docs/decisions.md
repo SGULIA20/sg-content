@@ -128,6 +128,9 @@ line here (who, date) in the same change. Newest first.
 - LinkedIn (founder, 29 Oct 2026, "yes do A"): the personal post goes out Mon/Wed/Fri only (Wednesday a document, Mon/Fri the
   picture); 23-29 Oct export: daily posts fell 333 -> 31 impressions a day, posts about the founder led (139/138) and general essays
   trailed (22-35). Next: posts start from the founder's own stories (he sends them); 10 minutes of replies and comments per post day.
+- Reels like the top channels (founder, 30 Oct 2026, "yes do B C"; A, the founder on camera, declined): B: SG-MYTH-WORLD Shorts
+  open on a real, credited Wikimedia Commons photo of the place when the script names it, then the drawn story; C: Learning with SG
+  Shorts 35-45 s (85-125 words, 7-9 scenes) instead of 60-74 s, a one-week test. Both reach posts from about 6-7 Nov (7-day buffer).
 - Item 13 (Waypoint ban-appeal review) dropped: the Supabase connector can reach only one organisation (ScoreMyBiz).
 
 ## Approved 24 Oct 2026 (founder: "okay yes do"), built one at a time

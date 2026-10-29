@@ -10,7 +10,7 @@ from tests.test_writer import FakeMessages, fake_client, good_script
 
 
 def test_story_word_limit_is_soft_at_260():
-    assert config.STORY_WORDS == (150, 260)
+    assert config.STORY_WORDS == (150, 260) and config.story_words("sglearning") == (85, 125)
 
 
 def test_patchable_means_only_fixable_checks_over_the_limit():

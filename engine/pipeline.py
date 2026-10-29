@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Callable
 
 from . import art, artbatch, assemble, buffer, cards, cartoon, cast, claims, costs, gemini, lint, pieces, qa, research, secrets, slots, storyframe, topics, voice, voicebatch, writer, youtube
-from .config import CHANNELS, ROOT, STORY_WORDS, VIDEO
+from .config import CHANNELS, ROOT, VIDEO, story_words
 from .pieces import Piece
 
 TOPIC_TRIES = 3
@@ -145,10 +145,42 @@ def _pick_topic(piece: Piece, deps: Deps, root: Path, used: set) -> dict | None:
     return deps.topic(piece, used)
 
 
+def place_key(piece: Piece) -> str:
+    """The place a myth Short is about, as one search word ("Konark, Odisha" -> "Konark"), only when the script itself names it:
+    a remade topic can carry the first story's place (2 Nov: place Abhaneri, story about Kedarnath), and a wrong photo is worse than none."""
+    place = str((piece.topic or {}).get("place") or "")
+    key = place.split(",")[0].split(" to ")[0].strip()
+    said = " ".join([str((piece.script or {}).get("title", "")), str((piece.script or {}).get("hook", ""))]).lower()
+    return key if key and key.lower() in said else ""
+
+
+def _place_photo(piece: Piece, deps: Deps, out_dir: Path, out: Path, scene: dict) -> Path | None:
+    """Founder, 30 Oct 2026 ("B"): a myth Short opens on a real photo of its place (free-licensed, Wikimedia Commons, credited),
+    which stops the scroll better than a drawing of it; the drawn story follows. None when no fitting photo is found."""
+    key = place_key(piece)
+    if not (key and deps.commons):
+        return None
+    try:
+        got = deps.commons(key, out_dir / "photos")
+    except Exception as e:
+        print(f"{piece.id}: no place photo ({secrets.scrub(str(e))[:80]})", flush=True)
+        return None
+    if not got or key.lower() not in str(got.get("title", "")).lower():
+        return None
+    piece.topic.setdefault("credits", []).append(got["credit"])
+    scene["credit"] = got["credit"]
+    shutil.copy(got["path"], out)
+    return out
+
+
 def _visual_for(piece: Piece, i: int, scene: dict, deps: Deps, out_dir: Path, size: tuple, line=None) -> Path:
     v = scene.get("visual") or {}
     kind = v.get("type", "art")
     out = out_dir / f"visual{i:02d}.png"
+    if i == 0 and piece.channel == "arthvan" and piece.kind == "short":
+        photo = _place_photo(piece, deps, out_dir, out, scene)
+        if photo:
+            return photo
     if is_story(piece):
         kind = "art"
     if kind == "avatar" and deps.cartoon and line is not None:
@@ -426,7 +458,7 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
         if too_long:                                                   # the same script and cached voice would fail again forever:
             dur, hi = float(too_long.group(1)), float(too_long.group(2))     # rewrite shorter, scaled to how fast this voice spoke
             words = sum(len(sc["vo"].split()) for sc in script["scenes"])
-            lo_words = (STORY_WORDS if is_story(piece) else lint.SHORT_WORDS)[0]
+            lo_words = (story_words(piece.channel) if is_story(piece) else lint.SHORT_WORDS)[0]
             cap = max(lo_words, int(words * (hi * 0.9) / dur))
             piece.topic["rewrite"] = (f"length: the voiced video ran {dur:.0f}s, the limit is {hi:.0f}s; "
                                       f"rewrite the same story in at most {cap} words of voice in total")

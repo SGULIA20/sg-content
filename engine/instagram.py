@@ -127,7 +127,9 @@ def caption_text(piece: Piece) -> str:
     ig = (piece.script or {}).get("captions", {}).get("instagram", {})
     link = YOUTUBE_URLS.get(piece.channel)
     ask = DM_ASK.get(piece.channel, "")
-    parts = [ig.get("caption", "").strip()] + ([f"▶ Poori videos YouTube par: {link}"] if link else []) + ([ask] if ask else []) + [" ".join(ig.get("hashtags", []))]
+    photos = sorted({sc["credit"] for sc in (piece.script or {}).get("scenes", []) if sc.get("credit")})     # licence: the photographer is named
+    parts = ([ig.get("caption", "").strip()] + ([f"▶ Poori videos YouTube par: {link}"] if link else []) + ([ask] if ask else [])
+             + ([("Photo: " + "; ".join(photos))] if photos else []) + [" ".join(ig.get("hashtags", []))])
     return "\n\n".join(p for p in parts if p).strip()
 
 
