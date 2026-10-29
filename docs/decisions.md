@@ -192,3 +192,4 @@ line here (who, date) in the same change. Newest first.
 - Voice: no change from before 29 Oct: the designed storyteller pool (content/voice.json), every line sent exactly as the batch sends it (no style note), and no "Voice: ..." credit anywhere, since it is not the founder's voice (founder, 29 Oct 2026; replaces the voice-credit part of niches item 3).
 - News and extra Reels explain why it happened, the wider and AI impact, the consequences and the viewer's legal remedies (naming the law), 50-60 s, not basic advice (founder, 29 Oct 2026).
 - The 9 pm card lists each extra Learning with SG Reel as its own row, and tomorrow's plan shows the extra slots (founder, 29 Oct 2026).
+- Old basic Innodata layoff Reel (2026-10-29-sglearning-x1) taken down everywhere (YouTube, Instagram Reel and Story, Threads) once the deeper remake is live (founder, 29 Oct 2026).
