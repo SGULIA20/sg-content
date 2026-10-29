@@ -1,0 +1,239 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 550.0,
+   "quote": "InnoData has reportedly laid off nearly 550 employees in India, with job cuts also reported in the Philippines.",
+   "source_date": "2026-10-27",
+   "source_name": "News24",
+   "source_url": "https://news24online.com/business/innodata-lays-off-nearly-550-employees-in-india-job-cuts-also-reported-in-philippines/947487/",
+   "text": "Artificial intelligence data services company Innodata reportedly laid off nearly 550 employees in India on October 26, 2026, alongside additional job cuts in the Philippines.",
+   "unit": "employees"
+  }
+ ],
+ "id": "2026-10-29-sglearning-x2",
+ "ids": {
+  "budget": {
+   "day": "2026-10-29",
+   "drafts": 2,
+   "research": 1
+  },
+  "cost": {
+   "inr": 39.0,
+   "usd": 0.185708,
+   "voice": 11
+  },
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "lWsDvrvySds"
+ },
+ "kind": "short",
+ "publish_day": "2026-10-29",
+ "reasons": [
+  "try 1: numbers without a source: 15, 15"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Innodata ne India mein reportedly 550 logon ko nikaala. 🤖\nAI ko kam manual labelling chahiye, isliye data aur back-office jobs sabse pehle khatre mein.\nAgar aap 'worker' hain, toh notice pay, compensation, re-skilling fund aur 2 working days mein dues aapka haq hai.\nKya aapka kaam AI kar sakta hai?\nYeh investment advice nahi hai.\nUs dost ko bhejo jo data labelling ya back-office job mein hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#LearningWithSG",
+     "#MoneyTipsHindi",
+     "#PersonalFinanceIndia",
+     "#EMI"
+    ]
+   },
+   "threads": {
+    "text": "Innodata ne India mein reportedly 550 logon ko nikaala. AI data ki jobs sabse pehle exposed hain. Labour codes mein 'worker' ko notice pay, compensation, re-skilling fund aur 2 working days mein dues ka haq hai. Aapka kaam AI kar sakta hai kya? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Innodata ne India mein reportedly 550 logon ko nikaala. AI training data ka kaam badal raha hai, aur data annotation aur back-office jobs sabse pehle exposed hain. Agar aap 'worker' hain, toh labour codes aapko notice pay, retrenchment compensation, re-skilling fund aur 2 working days mein final dues ka haq dete hain. Us dost ko bhejo jo data labelling ya back-office job mein hai.",
+    "tags": [
+     "Innodata layoffs",
+     "AI jobs",
+     "layoffs India",
+     "labour codes",
+     "Industrial Relations Code",
+     "Code on Wages",
+     "retrenchment compensation",
+     "data annotation",
+     "back office jobs",
+     "final settlement",
+     "naukri",
+     "Hinglish finance"
+    ],
+    "title": "Innodata layoffs: AI jobs pehle kyun gaye?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo data ya back-office job mein hai.",
+  "hook": "Innodata ne India mein reportedly 550 logon ko nikaala.",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A wide open-plan office floor in India filled with rows of empty desks, closed laptops and switched-off monitors, ID access cards left lying on the desks, an untouched lunch box on one desk, flat afternoon light, eerie silence, the whole frame full of empty chairs",
+     "type": "art"
+    },
+    "vo": "Innodata ne India mein reportedly 550 logon ko nikaala."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A young woman at an office lunch table stares at her closed company laptop showing a locked screen, colleagues around her look stunned, a security guard collecting laptops in the background, midday, shock and confusion",
+     "type": "art"
+    },
+    "vo": "Employees kehte hain, laptop aur access achanak band. Shares 25 percent se zyada gire."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Rows of young workers at computers drawing boxes around cars and people in street images and tagging text, a large stylised robot brain glowing above them as if learning from their work, daytime office, focused mood",
+     "type": "art"
+    },
+    "vo": "Company AI ke liye data label karti hai, yaani AI ko sikhane wali tagging."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A split office scene: on one side a shrinking group of human labellers, on the other a big shiny foreign tech campus pulling glowing data boxes into its own building, cool evening light, sense of work moving away",
+     "type": "art"
+    },
+    "vo": "Industry trend: AI ko kam manual labelling chahiye, clients kaam andar le rahe hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A long line of office buildings in an Indian tech park at dusk, inside lit windows rows of back-office and data workers at screens, a dark storm cloud gathering over the buildings, worried mood",
+     "type": "art"
+    },
+    "vo": "Isliye data annotation aur back-office jobs sabse pehle khatre mein hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A kitchen table at night with a loan EMI statement, a hospital insurance card cut in half and an empty salary envelope, a man in his thirties sits with his head in his hands, MUMMY in a saree places chai beside him looking worried",
+     "type": "art"
+    },
+    "vo": "Job gayi toh salary rukti hai, EMI nahi. Company ka health cover bhi khatam."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG, early forties, beard, striped shirt, at a dining table calmly explaining to a laid-off young man, a thick rulebook lying open between them, warm evening lamp light, reassuring mood",
+     "type": "art"
+    },
+    "vo": "Industrial Relations Code mein, agar aap 'worker' hain, manager nahi, toh notice ya uske badle salary."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Two neat stacks of rupee notes on an HR desk, one being handed to a young worker, the other going into a glass box marked only with a book and tools symbol for re-skilling, bright office daylight, sense of fairness",
+     "type": "art"
+    },
+    "vo": "Har poore saal ke hisaab se retrenchment compensation milta hai, plus re-skilling fund mein alag paisa."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A young woman in office wear walking up the steps of a government labour office with a file of papers under her arm, a calendar on the wall inside with two days circled, morning light, determined mood",
+     "type": "art"
+    },
+    "vo": "Code on Wages: dues 2 working days mein. Nahi mile, toh labour commissioner ko complaint."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A young professional at his desk at night looking at his own reflection in a dark monitor, a faint robot silhouette mirrored behind him, a notebook open with a learning plan sketched, thoughtful mood",
+     "type": "art"
+    },
+    "vo": "Khud se poocho: mera kaam AI kar sakta hai kya? Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Two friends in their twenties at a roadside chai stall in the evening, one showing the other something serious while the other listens closely, warm streetlight glow, caring mood",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo data ya back-office job mein hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "INNODATA",
+   "name_hi": "इनोडेटा",
+   "scene": "A huge open-plan Indian office floor with endless rows of empty desks, closed laptops and dark monitors, access cards abandoned on every desk, chairs pushed back, cold afternoon light pouring through tall windows",
+   "words": [
+    "550 JOBS",
+    "GAYAB?"
+   ],
+   "words_hi": [
+    "550 नौकरियां",
+    "गायब?"
+   ]
+  },
+  "title": "AI data ki *naukri* sabse pehle kyun gayi? 🤖"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  4.13,
+  10.46,
+  16.03,
+  22.32,
+  26.97,
+  32.46,
+  38.79,
+  45.68,
+  51.21,
+  56.94
+ ],
+ "topic": {
+  "extra": true,
+  "link": "https://news24online.com/business/innodata-lays-off-nearly-550-employees-in-india-job-cuts-also-reported-in-philippines/947487/",
+  "look": "claymation",
+  "patch_tries": 1,
+  "published": "2026-10-29T14:08:20.646594+00:00",
+  "slot_ist": "21:10",
+  "source": "chosen",
+  "summary": "Deeper remake, not basic advice. Beats: (1) hook: about 550 reportedly cut in India in a day, laptops and access shut at lunch, shares down about 26-28% (reported; company has not confirmed numbers). (2) WHY: Innodata labels and prepares training data for big AI companies; as AI models need less manual labelling and big clients shift work or in-house it, data-work jobs are the first exposed (say this is the industry trend, not the company's stated reason). (3) bigger IMPACT: India's data annotation and back-office AI support workforce, who else is exposed, what AI changes for such roles. (4) CONSEQUENCES for the employee: income gap, EMIs, health cover ending with the job, visa/loan checks. (5) REMEDIES under the labour codes in force since 21 Nov 2025: Industrial Relations Code 2020 for a 'worker' (not a manager): one month's notice or pay in lieu, retrenchment compensation of 15 days' wages per completed year, plus 15 days' wages paid to the re-skilling fund for the worker; Code on Wages: final dues within two working days; gratuity after 5 years under the Code on Social Security; PF stays yours (EPFO); complaint to the state labour commissioner if dues are not paid. Say which rights depend on being a 'worker'. Never cite the repealed Industrial Disputes Act as current. (6) takeaway: the AI-exposed role question to ask yourself now. Label reported claims as reported.",
+  "target_minutes": null,
+  "title": "Innodata layoffs in India: why AI data firms are cutting jobs, and what the new labour codes give you",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-10-29T14:14:39+00:00",
+ "writer": "claude"
+}
