@@ -160,7 +160,7 @@ def check_script(piece: Piece, banned: dict, prior_scripts: list) -> list:
         reasons.append("disclaimer: finance script must speak the disclaimer line")
     words = len(re.findall(r"[\wऀ-ॿ]+", " ".join(sc.get("vo", "") for sc in scenes)))
     if piece.kind == "short":
-        lo, hi = story_words(piece.channel) if is_story(piece.channel, piece.kind) else SHORT_WORDS
+        lo, hi = story_words(piece.channel, piece.topic) if is_story(piece.channel, piece.kind) else SHORT_WORDS
     else:
         target = int(piece.topic.get("target_minutes") or 15) * LONG_WORDS_PER_MIN
         lo, hi = int(target * 0.8), int(target * 1.2)

@@ -221,3 +221,17 @@ def test_verified_lines_resynthesises_a_line_heard_twice(tmp_path):
     heard = iter(["a b c d e", "a b c d e a b c d e", "a b c d e"])            # line 2 comes back doubled once, then clean
     out = voice.verified_lines(["a b c d e", "a b c d e!"], "voice_x", tmp_path / "vo", say_fn=fake_say, transcribe_fn=lambda w: next(heard), cache_dir=tmp_path / "c")
     assert len(out) == 2 and made == ["a b c d e", "a b c d e!", "a b c d e!"]
+
+
+def test_plain_voice_sends_the_batch_lanes_request_without_a_style_note(tmp_path):
+    import base64
+    from engine import voice
+    sent = []
+    def post(url, body, key):
+        sent.append((url, body)); pcm = b"\x00\x00" * 2400
+        return 200, {"candidates": [{"content": {"parts": [{"inlineData": {"mimeType": "audio/L16;rate=24000", "data": base64.b64encode(pcm).decode()}}]}}]}
+    secs = voice.say("Namaste", "voice_abc", tmp_path / "a.wav", key="k", cache_dir=tmp_path / "c", budget=tmp_path / "b.json", post=post,
+                     sleep=lambda s: None, plain=True)
+    url, body = sent[0]
+    assert url.endswith(":generateContent") and body["generationConfig"]["speechConfig"]["voiceConfig"] == {"voice": "voice_abc"}
+    assert "style" not in str(body) and secs > 0

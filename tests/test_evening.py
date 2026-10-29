@@ -102,3 +102,22 @@ def test_no_app_rows_on_a_day_without_app_posts(monkeypatch):
     assert rows and all("NOT POSTED" in v for _n, cells in rows for v in cells.values())
     fest = [{"date": "2026-10-25", "status": "published", "app": "waypoint", "ids": {"reel": "r"}}]
     assert evening._app_rows(date(2026, 10, 25), fest)[0][0] == "Waypoint Reel"                        # a festival post still shows
+
+
+def test_extra_reels_get_their_own_rows_on_the_9pm_card(tmp_path):
+    day = date(2026, 10, 29)
+    (tmp_path / "pieces").mkdir()
+    x1 = _piece(tmp_path, "2026-10-29-sglearning-x1", "sglearning", "short", day, yt_id="y", ig_reel_id="r", ig_story_id="s", threads_id="t")
+    x2 = _piece(tmp_path, "2026-10-29-sglearning-x2", "sglearning", "short", day, yt_id="z")
+    for p, slot in ((x1, "13:00"), (x2, "22:45")):
+        p.topic = {"slot_ist": slot}
+        pieces.save(p, tmp_path)
+    between = datetime(2026, 10, 29, 12, 0, tzinfo=timezone.utc)              # 17:30 IST: x1 is out, x2 is still scheduled
+    status = evening.build(day, between, tmp_path, []).split("📅 Tomorrow")[0]
+    assert "SG-LEARNING extra Reel 1 (08:30 WAT)\n   YouTube: ✅ Posted\n   Instagram: ✅ Posted\n   Threads: ✅ Posted" in status
+    assert "SG-LEARNING extra Reel 2 (18:15 WAT)\n   YouTube: ⏳ scheduled\n   Instagram: 🔴 NOT POSTED" in status
+
+
+def test_tomorrow_plan_shows_the_extra_reels():
+    assert "up to 1 extra Learning with SG Reel from the research cycle (slots 08:30, 12:00, 18:15)" in evening.tomorrow_plan(date(2026, 10, 30))
+    assert "up to 2 extra Learning with SG Reels" in evening.tomorrow_plan(date(2026, 11, 5))

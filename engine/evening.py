@@ -5,6 +5,7 @@ Rows and cells follow the founder's table exactly:
   ScoreMyBiz / Waypoint (alternate days)  Reel: YouTube (own channel) + Instagram   Post: Instagram + Threads + LinkedIn   Story: Instagram
   SG-LEARNING  long (Wed, Sat): YouTube      Short (daily): YouTube + Instagram + Threads + LinkedIn
   SG-MYTH      long (Thu, Sun): YouTube      Short (daily): YouTube + Instagram + Threads + LinkedIn
+  SG-LEARNING extra Reels (-x1, -x2 ...): same cells as the Short
   LinkedIn post Mon/Wed/Fri
 Sources: this repo's piece records, and the app poster's public log (logs/posts.jsonl in SGULIA20/arthvan-media)."""
 import json
@@ -71,8 +72,25 @@ def _app_rows(day: date, log: list) -> list:
 def _yt_cell(piece, now: datetime) -> str:
     if not piece or not piece.ids.get("yt_id"):
         return NO
-    due = slots.publish_at(piece.channel, piece.kind, piece.publish_day)
+    slot = piece.topic.get("slot_ist")                                    # an extra Reel publishes at its own time
+    due = slots.utc_for(piece.publish_day, slot) if slot else slots.publish_at(piece.channel, piece.kind, piece.publish_day)
     return OK if now >= due or piece.ids.get("unlisted") else "⏳ scheduled"
+
+
+def _short_cells(p, now: datetime) -> dict:
+    ids = p.ids if p else {}
+    story = ids.get("ig_story_id") or ""
+    skipped = story.startswith("skipped")
+    if not ids.get("ig_reel_id"):
+        ig = NO if (skipped or not story) else "🔴 Story only"
+    elif skipped:
+        ig = "✅ Reel (no Story: over 60 s)"
+    else:
+        ig = OK if story else "🔴 Reel only"
+    cells = {"YouTube": _yt_cell(p, now), "Instagram": ig, "Threads": OK if ids.get("threads_id") else NO}
+    if config.LINKEDIN_VIDEOS:
+        cells["LinkedIn"] = OK if ids.get("linkedin_id") else NO
+    return cells
 
 
 def _channel_rows(day: date, now: datetime, root: Path) -> list:
@@ -83,20 +101,12 @@ def _channel_rows(day: date, now: datetime, root: Path) -> list:
             p = pieces.load(slots.piece_id(day, key, "long"), root)
             rows.append((f"{label} long video", {"YouTube": _yt_cell(p, now)}))
         if day.weekday() in ch.short_days:
-            p = pieces.load(slots.piece_id(day, key, "short"), root)
-            ids = p.ids if p else {}
-            story = ids.get("ig_story_id") or ""
-            skipped = story.startswith("skipped")
-            if not ids.get("ig_reel_id"):
-                ig = NO if (skipped or not story) else "🔴 Story only"
-            elif skipped:
-                ig = "✅ Reel (no Story: over 60 s)"
-            else:
-                ig = OK if story else "🔴 Reel only"
-            cells = {"YouTube": _yt_cell(p, now), "Instagram": ig, "Threads": OK if ids.get("threads_id") else NO}
-            if config.LINKEDIN_VIDEOS:
-                cells["LinkedIn"] = OK if ids.get("linkedin_id") else NO
-            rows.append((f"{label} Short", cells))
+            rows.append((f"{label} Short", _short_cells(pieces.load(slots.piece_id(day, key, "short"), root), now)))
+        if key == "sglearning":                                           # extra Reels from the research cycle (founder, 29 Oct 2026)
+            n = 1
+            while (p := pieces.load(f"{day.isoformat()}-{key}-x{n}", root)) is not None:
+                rows.append((f"{label} extra Reel {n} ({_wat(p.topic.get('slot_ist') or '00:00')} WAT)", _short_cells(p, now)))
+                n += 1
     return rows
 
 
@@ -130,6 +140,12 @@ def tomorrow_plan(day: date) -> str:
     if t.weekday() in APP_POST_WEEKDAYS:
         rows.append(("15:40", "Instagram + Threads + YouTube", f"{app} set (Reel, post, Story)"))
     rows.append((_wat(CHANNELS["arthvan"].ig_slot_ist), "Instagram + Threads", "SG-MYTH-WORLD Reel and Story"))
+    from . import extra, trends                                           # here, not at the top: trends pulls in the whole pipeline
+    n = trends.extras_today(t)
+    if n:
+        times = ", ".join(_wat(s) for s in extra.EXTRA_SLOTS_IST)
+        rows.append((_wat(extra.EXTRA_SLOTS_IST[0]), "Instagram + Threads + YouTube",
+                     f"up to {n} extra Learning with SG Reel{'s' if n > 1 else ''} from the research cycle (slots {times})"))
     rows.sort()
     return "\n".join([f"📅 Tomorrow {t.strftime('%a %d %b')} (Lagos time)"] + [f"   {hh}  {what}: {where}" for hh, where, what in rows])
 

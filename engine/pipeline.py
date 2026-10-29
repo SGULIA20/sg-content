@@ -460,7 +460,7 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
         if too_long:                                                   # the same script and cached voice would fail again forever:
             dur, hi = float(too_long.group(1)), float(too_long.group(2))     # rewrite shorter, scaled to how fast this voice spoke
             words = sum(len(sc["vo"].split()) for sc in script["scenes"])
-            lo_words = (story_words(piece.channel) if is_story(piece) else lint.SHORT_WORDS)[0]
+            lo_words = (story_words(piece.channel, piece.topic) if is_story(piece) else lint.SHORT_WORDS)[0]
             cap = max(lo_words, int(words * (hi * 0.9) / dur))
             piece.topic["rewrite"] = (f"length: the voiced video ran {dur:.0f}s, the limit is {hi:.0f}s; "
                                       f"rewrite the same story in at most {cap} words of voice in total")
@@ -520,7 +520,7 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
 
     from . import writebatch
     return Deps(topic=topic_fn, research=lambda topic, ch: research.verify_urls(research.fact_sheet(topic, ch)),
-                write=lambda piece, sheet, lib, tags: writer.write(piece, sheet, lib, tags, batch_fn=writebatch.write_piece), say=voice.say, paint=art.paint, avatar=art.avatar,
+                write=lambda piece, sheet, lib, tags: writer.write(piece, sheet, lib, tags, batch_fn=writebatch.write_piece), say=lambda *a, **k: voice.say(*a, plain=True, **k), paint=art.paint, avatar=art.avatar,
                 render_card=cards.render, build=assemble.build, qa=qa.report, upload=upload_fn,
                 lint=lambda piece, prior: (lint.check_script(piece, banned, prior) + lint.check_captions(piece, hashtags)
                                            + lint.check_opener(piece, recent_openers(root, piece)) + lint.check_send(piece)),
