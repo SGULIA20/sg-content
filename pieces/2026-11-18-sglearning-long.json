@@ -89,17 +89,19 @@
    "drafts": 1,
    "research": 1
   },
-  "cost": {
-   "inr": 0.0,
-   "usd": 0.300162,
-   "voice": 42
+  "captions": {
+   "en": "AUieDaZxePDKcSQolmAMhvaEd7D_ZAItWpwZgGrxrc7HK6GJIzdA00UC",
+   "gu": "AUieDaaaVhAbrrmrdhDZ-kjlUWjk5-yb2k2vRZD06IbFq50qOPWh-lpiy5NkTNW0rgG2xlDUyiI",
+   "hi": "AUieDaY2-d8T39i8WWGahmFJzPBPAssrtT2hnUzXeFXs4eezihsSr1bc4oI76kX9NVw3IS8",
+   "mr": "AUieDaYPoIYCqvwNaOkhHk_KoiYK4v2omHNGwwUViVyvhTPRUZ0ztIH13VHB4aaqRS8",
+   "ta": "AUieDaaoh7zItdpi0Anih5Z7Y8q4PbQ_3Vq6OWeA5qT0RVv1x7ng4z4OkZCbVxNH0pU"
   },
-  "voice_batch": {
-   "lines": 42,
-   "name": "batches/at2ebjsrmc670tihdomfot1yuth6mp01exsu",
-   "tries": 1,
-   "voice": "voice_g8azc8xcwhlu"
-  }
+  "cost": {
+   "inr": 190.5,
+   "usd": 0.723786,
+   "voice": 43
+  },
+  "yt_id": "BrtdtMGzy-U"
  },
  "kind": "long",
  "publish_day": "2026-11-18",
@@ -652,8 +654,51 @@
   },
   "title": "Naukri gayi, par *EMI* nahi ruki ☔"
  },
- "status": "voicing",
- "timings": [],
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  16.01,
+  35.26,
+  51.63,
+  66.24,
+  84.89,
+  101.62,
+  117.63,
+  135.56,
+  154.37,
+  170.74,
+  187.19,
+  202.08,
+  217.09,
+  233.34,
+  248.55,
+  262.36,
+  277.97,
+  292.86,
+  307.03,
+  320.92,
+  337.89,
+  351.46,
+  365.31,
+  380.16,
+  395.25,
+  411.98,
+  426.23,
+  442.56,
+  457.73,
+  473.5,
+  489.51,
+  502.72,
+  521.37,
+  537.26,
+  553.99,
+  571.72,
+  587.65,
+  603.82,
+  619.91,
+  635.16,
+  648.69
+ ],
  "topic": {
   "hooks": [
    "Emergency fund kitna hona chahiye?",
@@ -661,11 +706,12 @@
    "Pehle loan chukayein ya fund banayein?"
   ],
   "id": "emergency-fund-six-months",
+  "look": "claymation",
   "summary": "Why six months of expenses in a liquid place matters, where to keep it (savings, sweep FD, liquid fund), how a family builds it in a year, what not to touch it for.",
   "target_minutes": 12,
   "title": "Naukri gayi, EMI nahi ruki: 6 mahine ka emergency fund kaise banta hai",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-10-28T19:28:25+00:00",
+ "updated": "2026-10-29T07:39:17+00:00",
  "writer": "claude"
 }

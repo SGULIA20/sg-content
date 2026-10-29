@@ -1,0 +1,463 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,86,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.19,Default,,0,0,0,,Hum Indians apni income ka 33
+Dialogue: 0,0:00:02.19,0:00:04.19,Default,,0,0,0,,percent se zyada EMI mein dete
+Dialogue: 0,0:00:04.19,0:00:04.39,Default,,0,0,0,,hain.
+Dialogue: 0,0:00:04.39,0:00:06.38,Default,,0,0,0,,Yeh ek badi study ka nateeja
+Dialogue: 0,0:00:06.38,0:00:06.58,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:06.58,0:00:07.18,Default,,0,0,0,,Ab sochiye,
+Dialogue: 0,0:00:07.18,0:00:08.78,Default,,0,0,0,,agar kal naukri chali jaaye.
+Dialogue: 0,0:00:08.78,0:00:10.37,Default,,0,0,0,,Salary band ho jaati hai,
+Dialogue: 0,0:00:10.37,0:00:12.57,Default,,0,0,0,,par EMI ki date nahi badalti.
+Dialogue: 0,0:00:12.57,0:00:14.36,Default,,0,0,0,,Bank ko aapki naukri ki khabar
+Dialogue: 0,0:00:14.36,0:00:15.56,Default,,0,0,0,,se koi matlab nahi.
+Dialogue: 0,0:00:16.01,0:00:17.89,Default,,0,0,0,,Ek dost ki kahani suniye,
+Dialogue: 0,0:00:17.89,0:00:19.30,Default,,0,0,0,,naam maan lijiye Karan.
+Dialogue: 0,0:00:19.30,0:00:20.95,Default,,0,0,0,,Pune mein IT ki naukri,
+Dialogue: 0,0:00:20.95,0:00:22.12,Default,,0,0,0,,achhi salary,
+Dialogue: 0,0:00:22.12,0:00:23.77,Default,,0,0,0,,aur ek flat ka home loan.
+Dialogue: 0,0:00:23.77,0:00:24.94,Default,,0,0,0,,Saath mein car loan bhi,
+Dialogue: 0,0:00:24.94,0:00:26.59,Default,,0,0,0,,kyunki office door tha.
+Dialogue: 0,0:00:26.59,0:00:28.70,Default,,0,0,0,,Har mahine salary aati,
+Dialogue: 0,0:00:28.70,0:00:31.05,Default,,0,0,0,,aur bada hissa seedha EMI mein
+Dialogue: 0,0:00:31.05,0:00:31.99,Default,,0,0,0,,chala jaata.
+Dialogue: 0,0:00:31.99,0:00:33.87,Default,,0,0,0,,Ghar mein wife Neha aur ek
+Dialogue: 0,0:00:33.87,0:00:34.81,Default,,0,0,0,,chhota beta.
+Dialogue: 0,0:00:35.26,0:00:36.31,Default,,0,0,0,,Karan sochta tha,
+Dialogue: 0,0:00:36.31,0:00:37.56,Default,,0,0,0,,mera kaam achha hai,
+Dialogue: 0,0:00:37.56,0:00:38.82,Default,,0,0,0,,company badi hai.
+Dialogue: 0,0:00:38.82,0:00:40.92,Default,,0,0,0,,Alag se bachat ki kya zaroorat,
+Dialogue: 0,0:00:40.92,0:00:42.80,Default,,0,0,0,,savings account mein thoda toh hai
+Dialogue: 0,0:00:42.80,0:00:43.01,Default,,0,0,0,,hi.
+Dialogue: 0,0:00:43.01,0:00:45.10,Default,,0,0,0,,Bacha hua paisa usne shares mein
+Dialogue: 0,0:00:45.10,0:00:45.73,Default,,0,0,0,,laga diya,
+Dialogue: 0,0:00:45.73,0:00:48.04,Default,,0,0,0,,kyunki wahan return zyada dikhta tha.
+Dialogue: 0,0:00:48.04,0:00:48.67,Default,,0,0,0,,Sach kahein,
+Dialogue: 0,0:00:48.67,0:00:50.97,Default,,0,0,0,,toh uski logic galat nahi lagti
+Dialogue: 0,0:00:50.97,0:00:51.18,Default,,0,0,0,,thi.
+Dialogue: 0,0:00:51.63,0:00:52.44,Default,,0,0,0,,Phir ek Monday,
+Dialogue: 0,0:00:52.44,0:00:54.46,Default,,0,0,0,,office mein HR ki meeting bulayi
+Dialogue: 0,0:00:54.46,0:00:54.66,Default,,0,0,0,,gayi.
+Dialogue: 0,0:00:54.66,0:00:56.48,Default,,0,0,0,,Company kharche kaat rahi thi,
+Dialogue: 0,0:00:56.48,0:00:58.10,Default,,0,0,0,,aur Karan ki poori team band
+Dialogue: 0,0:00:58.10,0:00:58.51,Default,,0,0,0,,ho gayi.
+Dialogue: 0,0:00:58.51,0:01:00.73,Default,,0,0,0,,Haath mein notice period ki salary
+Dialogue: 0,0:01:00.73,0:01:01.74,Default,,0,0,0,,aur ek cardboard box.
+Dialogue: 0,0:01:01.74,0:01:03.77,Default,,0,0,0,,Ghar aakar usne Neha ko bataya,
+Dialogue: 0,0:01:03.77,0:01:05.39,Default,,0,0,0,,toh dono der tak chup baithe
+Dialogue: 0,0:01:05.39,0:01:05.79,Default,,0,0,0,,rahe.
+Dialogue: 0,0:01:06.24,0:01:08.19,Default,,0,0,0,,Pehle mahine sab theek laga,
+Dialogue: 0,0:01:08.19,0:01:10.14,Default,,0,0,0,,notice ki salary jo thi.
+Dialogue: 0,0:01:10.14,0:01:12.52,Default,,0,0,0,,Doosre mahine EMI ki date aayi,
+Dialogue: 0,0:01:12.52,0:01:14.69,Default,,0,0,0,,aur account tezi se khaali hone
+Dialogue: 0,0:01:14.69,0:01:15.12,Default,,0,0,0,,laga.
+Dialogue: 0,0:01:15.12,0:01:17.72,Default,,0,0,0,,Teesre mahine Karan ko shares bechne
+Dialogue: 0,0:01:17.72,0:01:18.16,Default,,0,0,0,,pade,
+Dialogue: 0,0:01:18.16,0:01:19.02,Default,,0,0,0,,woh bhi loss mein,
+Dialogue: 0,0:01:19.02,0:01:20.54,Default,,0,0,0,,kyunki market neeche tha.
+Dialogue: 0,0:01:20.54,0:01:22.49,Default,,0,0,0,,Jo paisa lambe samay ke liye
+Dialogue: 0,0:01:22.49,0:01:22.71,Default,,0,0,0,,tha,
+Dialogue: 0,0:01:22.71,0:01:24.22,Default,,0,0,0,,woh aaj ke bill mein chala
+Dialogue: 0,0:01:24.22,0:01:24.44,Default,,0,0,0,,gaya.
+Dialogue: 0,0:01:24.89,0:01:27.53,Default,,0,0,0,,Yahin poori kahani ka asli sabak
+Dialogue: 0,0:01:27.53,0:01:28.19,Default,,0,0,0,,chhupa hai.
+Dialogue: 0,0:01:28.19,0:01:29.73,Default,,0,0,0,,Karan ke paas paisa tha,
+Dialogue: 0,0:01:29.73,0:01:31.71,Default,,0,0,0,,par sahi jagah par nahi tha.
+Dialogue: 0,0:01:31.71,0:01:33.91,Default,,0,0,0,,Use ek alag thaili chahiye thi,
+Dialogue: 0,0:01:33.91,0:01:35.45,Default,,0,0,0,,jo sirf aise din ke liye
+Dialogue: 0,0:01:35.45,0:01:35.67,Default,,0,0,0,,ho.
+Dialogue: 0,0:01:35.67,0:01:38.09,Default,,0,0,0,,Isi ko kehte hain emergency fund,
+Dialogue: 0,0:01:38.09,0:01:39.85,Default,,0,0,0,,yaani mushkil waqt ka paisa,
+Dialogue: 0,0:01:39.85,0:01:41.17,Default,,0,0,0,,jo turant haath mein aaye.
+Dialogue: 0,0:01:41.62,0:01:42.73,Default,,0,0,0,,Toh aaj 3 sawaal.
+Dialogue: 0,0:01:42.73,0:01:43.18,Default,,0,0,0,,Pehla,
+Dialogue: 0,0:01:43.18,0:01:45.62,Default,,0,0,0,,emergency fund kitna hona chahiye?
+Dialogue: 0,0:01:45.62,0:01:46.07,Default,,0,0,0,,Doosra,
+Dialogue: 0,0:01:46.07,0:01:47.40,Default,,0,0,0,,use kahan rakhein,
+Dialogue: 0,0:01:47.40,0:01:49.62,Default,,0,0,0,,kya savings account mein rakhna galat
+Dialogue: 0,0:01:49.62,0:01:49.84,Default,,0,0,0,,hai?
+Dialogue: 0,0:01:49.84,0:01:50.29,Default,,0,0,0,,Teesra,
+Dialogue: 0,0:01:50.29,0:01:52.29,Default,,0,0,0,,pehle loan chukayein ya pehle fund
+Dialogue: 0,0:01:52.29,0:01:52.73,Default,,0,0,0,,banayein?
+Dialogue: 0,0:01:52.73,0:01:53.62,Default,,0,0,0,,Aur aakhir mein,
+Dialogue: 0,0:01:53.62,0:01:56.07,Default,,0,0,0,,woh galtiyan jo achha kamane wale
+Dialogue: 0,0:01:56.07,0:01:57.18,Default,,0,0,0,,log bhi karte hain.
+Dialogue: 0,0:01:57.63,0:01:58.49,Default,,0,0,0,,Pehla sawaal,
+Dialogue: 0,0:01:58.49,0:02:00.22,Default,,0,0,0,,emergency fund kitna ho?
+Dialogue: 0,0:02:00.22,0:02:02.38,Default,,0,0,0,,Iska jawab salary se nahi,
+Dialogue: 0,0:02:02.38,0:02:04.10,Default,,0,0,0,,kharche se shuru hota hai.
+Dialogue: 0,0:02:04.10,0:02:04.97,Default,,0,0,0,,Log sochte hain,
+Dialogue: 0,0:02:04.97,0:02:06.69,Default,,0,0,0,,meri salary itni hai,
+Dialogue: 0,0:02:06.69,0:02:08.42,Default,,0,0,0,,toh fund bhi usi hisaab se.
+Dialogue: 0,0:02:08.42,0:02:09.72,Default,,0,0,0,,Yeh galat shuruaat hai.
+Dialogue: 0,0:02:09.72,0:02:12.31,Default,,0,0,0,,Naukri jaane par aapko salary nahi,
+Dialogue: 0,0:02:12.31,0:02:15.11,Default,,0,0,0,,apne zaroori kharche chalane hote hain.
+Dialogue: 0,0:02:15.56,0:02:17.49,Default,,0,0,0,,Zaroori kharche yaani woh,
+Dialogue: 0,0:02:17.49,0:02:19.18,Default,,0,0,0,,jo har haal mein dene hi
+Dialogue: 0,0:02:19.18,0:02:19.91,Default,,0,0,0,,padte hain.
+Dialogue: 0,0:02:19.91,0:02:20.88,Default,,0,0,0,,Ghar ka kiraya,
+Dialogue: 0,0:02:20.88,0:02:22.81,Default,,0,0,0,,ya home loan aur baaki loans
+Dialogue: 0,0:02:22.81,0:02:23.53,Default,,0,0,0,,ki EMI.
+Dialogue: 0,0:02:23.53,0:02:24.01,Default,,0,0,0,,Ration,
+Dialogue: 0,0:02:24.01,0:02:24.50,Default,,0,0,0,,bijli,
+Dialogue: 0,0:02:24.50,0:02:24.98,Default,,0,0,0,,paani,
+Dialogue: 0,0:02:24.98,0:02:25.95,Default,,0,0,0,,phone aur gas.
+Dialogue: 0,0:02:25.95,0:02:27.16,Default,,0,0,0,,Bachchon ki school fees,
+Dialogue: 0,0:02:27.16,0:02:29.33,Default,,0,0,0,,insurance premium aur dawaiyan.
+Dialogue: 0,0:02:29.33,0:02:30.06,Default,,0,0,0,,Restaurant,
+Dialogue: 0,0:02:30.06,0:02:32.71,Default,,0,0,0,,online shopping aur vacation is list
+Dialogue: 0,0:02:32.71,0:02:33.92,Default,,0,0,0,,mein nahi aate.
+Dialogue: 0,0:02:34.37,0:02:36.14,Default,,0,0,0,,Neha ne baad mein yahi list
+Dialogue: 0,0:02:36.14,0:02:37.47,Default,,0,0,0,,ek copy mein banayi.
+Dialogue: 0,0:02:37.47,0:02:39.23,Default,,0,0,0,,Pehli baar dono ne dekha,
+Dialogue: 0,0:02:39.23,0:02:41.45,Default,,0,0,0,,ghar chalane mein asal mein kitna
+Dialogue: 0,0:02:41.45,0:02:42.11,Default,,0,0,0,,lagta hai.
+Dialogue: 0,0:02:42.11,0:02:44.32,Default,,0,0,0,,Woh number salary se kaafi kam
+Dialogue: 0,0:02:44.32,0:02:44.76,Default,,0,0,0,,nikla.
+Dialogue: 0,0:02:44.76,0:02:47.42,Default,,0,0,0,,Aur yahi number aapke emergency fund
+Dialogue: 0,0:02:47.42,0:02:48.08,Default,,0,0,0,,ki neev hai.
+Dialogue: 0,0:02:48.08,0:02:49.18,Default,,0,0,0,,Salary nahi,
+Dialogue: 0,0:02:49.18,0:02:50.29,Default,,0,0,0,,zaroori kharcha.
+Dialogue: 0,0:02:50.74,0:02:51.41,Default,,0,0,0,,Ab sawaal,
+Dialogue: 0,0:02:51.41,0:02:52.96,Default,,0,0,0,,kitne mahine ka fund?
+Dialogue: 0,0:02:52.96,0:02:54.74,Default,,0,0,0,,Financial planners kehte hain,
+Dialogue: 0,0:02:54.74,0:02:56.07,Default,,0,0,0,,jinpar home loan hai,
+Dialogue: 0,0:02:56.07,0:02:58.07,Default,,0,0,0,,ya jinpar ghar wale nirbhar hain,
+Dialogue: 0,0:02:58.07,0:02:59.85,Default,,0,0,0,,wo kam se kam 6 mahine
+Dialogue: 0,0:02:59.85,0:03:01.63,Default,,0,0,0,,ke zaroori kharche rakhein.
+Dialogue: 0,0:03:01.63,0:03:03.18,Default,,0,0,0,,Dependents yaani woh log,
+Dialogue: 0,0:03:03.18,0:03:05.18,Default,,0,0,0,,jo aapki kamai par chalte hain,
+Dialogue: 0,0:03:05.18,0:03:06.74,Default,,0,0,0,,jaise bachche ya maa baap.
+Dialogue: 0,0:03:07.19,0:03:08.43,Default,,0,0,0,,6 mahine hi kyun?
+Dialogue: 0,0:03:08.43,0:03:10.28,Default,,0,0,0,,Kyunki nayi naukri dhoondhne mein waqt
+Dialogue: 0,0:03:10.28,0:03:10.90,Default,,0,0,0,,lagta hai.
+Dialogue: 0,0:03:10.90,0:03:11.52,Default,,0,0,0,,Interview,
+Dialogue: 0,0:03:11.52,0:03:11.94,Default,,0,0,0,,offer,
+Dialogue: 0,0:03:11.94,0:03:12.35,Default,,0,0,0,,joining,
+Dialogue: 0,0:03:12.35,0:03:13.59,Default,,0,0,0,,phir pehli salary,
+Dialogue: 0,0:03:13.59,0:03:15.44,Default,,0,0,0,,sab mein hafte nikal jaate hain.
+Dialogue: 0,0:03:15.44,0:03:17.30,Default,,0,0,0,,Aur us beech EMI nahi rukti.
+Dialogue: 0,0:03:17.30,0:03:19.57,Default,,0,0,0,,Yeh cushion aapko ghabrahat mein galat
+Dialogue: 0,0:03:19.57,0:03:21.63,Default,,0,0,0,,naukri lene se bhi bachata hai.
+Dialogue: 0,0:03:22.08,0:03:23.56,Default,,0,0,0,,Ek seedha hisaab dekhiye.
+Dialogue: 0,0:03:23.56,0:03:26.30,Default,,0,0,0,,Agar aapka zaroori kharcha mahine ka
+Dialogue: 0,0:03:26.30,0:03:27.14,Default,,0,0,0,,50,000 rupaye hai,
+Dialogue: 0,0:03:27.14,0:03:29.04,Default,,0,0,0,,toh 6 mahine ka fund matlab
+Dialogue: 0,0:03:29.04,0:03:29.89,Default,,0,0,0,,3 lakh rupaye.
+Dialogue: 0,0:03:29.89,0:03:31.58,Default,,0,0,0,,Yeh hisaab ET ki ek report
+Dialogue: 0,0:03:31.58,0:03:32.42,Default,,0,0,0,,mein diya gaya hai.
+Dialogue: 0,0:03:32.42,0:03:33.90,Default,,0,0,0,,Number bada lagta hai,
+Dialogue: 0,0:03:33.90,0:03:35.37,Default,,0,0,0,,par yeh aapke ghar ki 6
+Dialogue: 0,0:03:35.37,0:03:36.64,Default,,0,0,0,,mahine ki saans hai.
+Dialogue: 0,0:03:37.09,0:03:38.99,Default,,0,0,0,,Karan ke Papa ne phone par
+Dialogue: 0,0:03:38.99,0:03:39.41,Default,,0,0,0,,kaha,
+Dialogue: 0,0:03:39.41,0:03:39.83,Default,,0,0,0,,beta,
+Dialogue: 0,0:03:39.83,0:03:41.94,Default,,0,0,0,,hamare zamane mein sab FD mein
+Dialogue: 0,0:03:41.94,0:03:42.57,Default,,0,0,0,,rakhte the,
+Dialogue: 0,0:03:42.57,0:03:43.20,Default,,0,0,0,,safe hai.
+Dialogue: 0,0:03:43.20,0:03:44.46,Default,,0,0,0,,Unki baat mein dum tha,
+Dialogue: 0,0:03:44.46,0:03:46.78,Default,,0,0,0,,bachat ki aadat sabse zaroori hai.
+Dialogue: 0,0:03:46.78,0:03:48.25,Default,,0,0,0,,Par asli sawaal yeh hai,
+Dialogue: 0,0:03:48.25,0:03:49.73,Default,,0,0,0,,paisa rakha kahan hai.
+Dialogue: 0,0:03:49.73,0:03:51.63,Default,,0,0,0,,Aur zaroorat ke din woh kitni
+Dialogue: 0,0:03:51.63,0:03:52.89,Default,,0,0,0,,jaldi haath mein aayega.
+Dialogue: 0,0:03:53.34,0:03:54.89,Default,,0,0,0,,Toh pehla jawab simple hai.
+Dialogue: 0,0:03:54.89,0:03:56.64,Default,,0,0,0,,Zaroori kharchon ki list banao,
+Dialogue: 0,0:03:56.64,0:03:58.58,Default,,0,0,0,,aur use 6 mahine se guna
+Dialogue: 0,0:03:58.58,0:03:58.97,Default,,0,0,0,,karo.
+Dialogue: 0,0:03:58.97,0:04:00.33,Default,,0,0,0,,Yahi aapka target hai.
+Dialogue: 0,0:04:00.33,0:04:01.30,Default,,0,0,0,,Ab doosra sawaal,
+Dialogue: 0,0:04:01.30,0:04:03.25,Default,,0,0,0,,jahan sabse zyada confusion hai.
+Dialogue: 0,0:04:03.25,0:04:04.80,Default,,0,0,0,,Itna paisa rakhein kahan,
+Dialogue: 0,0:04:04.80,0:04:06.55,Default,,0,0,0,,ki zaroorat pe turant mile,
+Dialogue: 0,0:04:06.55,0:04:07.91,Default,,0,0,0,,aur mehngai mein ghis bhi na
+Dialogue: 0,0:04:07.91,0:04:08.10,Default,,0,0,0,,jaaye?
+Dialogue: 0,0:04:08.55,0:04:10.08,Default,,0,0,0,,Karan ka pehla khayal tha,
+Dialogue: 0,0:04:10.08,0:04:11.84,Default,,0,0,0,,sab savings account mein daal do.
+Dialogue: 0,0:04:11.84,0:04:13.59,Default,,0,0,0,,Card se kabhi bhi nikaal lo,
+Dialogue: 0,0:04:13.59,0:04:15.12,Default,,0,0,0,,UPI se turant bhej do.
+Dialogue: 0,0:04:15.12,0:04:15.78,Default,,0,0,0,,Aur sach mein,
+Dialogue: 0,0:04:15.78,0:04:18.41,Default,,0,0,0,,emergency mein speed sabse zaroori hai.
+Dialogue: 0,0:04:18.41,0:04:20.16,Default,,0,0,0,,Hospital ka bill raat ko bhi
+Dialogue: 0,0:04:20.16,0:04:21.03,Default,,0,0,0,,aa sakta hai,
+Dialogue: 0,0:04:21.03,0:04:21.91,Default,,0,0,0,,Sunday ko bhi.
+Dialogue: 0,0:04:22.36,0:04:24.40,Default,,0,0,0,,Par poora fund savings account mein
+Dialogue: 0,0:04:24.40,0:04:25.98,Default,,0,0,0,,rakhne ki ek keemat hai.
+Dialogue: 0,0:04:25.98,0:04:27.56,Default,,0,0,0,,Wahan byaaj kam milta hai,
+Dialogue: 0,0:04:27.56,0:04:29.37,Default,,0,0,0,,aur mehngai har saal paise ki
+Dialogue: 0,0:04:29.37,0:04:30.73,Default,,0,0,0,,taakat kam karti hai.
+Dialogue: 0,0:04:30.73,0:04:33.00,Default,,0,0,0,,Mehngai yaani cheezon ke daam badhna.
+Dialogue: 0,0:04:33.00,0:04:34.81,Default,,0,0,0,,Paisa safe toh dikhta hai,
+Dialogue: 0,0:04:34.81,0:04:36.84,Default,,0,0,0,,par andar hi andar ghis raha
+Dialogue: 0,0:04:36.84,0:04:37.52,Default,,0,0,0,,hota hai.
+Dialogue: 0,0:04:37.97,0:04:40.03,Default,,0,0,0,,Doosri problem paise ki nahi,
+Dialogue: 0,0:04:40.03,0:04:40.95,Default,,0,0,0,,insaan ki hai.
+Dialogue: 0,0:04:40.95,0:04:43.01,Default,,0,0,0,,Jo paisa roz saamne dikhta hai,
+Dialogue: 0,0:04:43.01,0:04:44.62,Default,,0,0,0,,woh kharch ho hi jaata hai.
+Dialogue: 0,0:04:44.62,0:04:45.31,Default,,0,0,0,,Sale aayi,
+Dialogue: 0,0:04:45.31,0:04:46.22,Default,,0,0,0,,naya phone liya,
+Dialogue: 0,0:04:46.22,0:04:47.14,Default,,0,0,0,,fund thoda kam.
+Dialogue: 0,0:04:47.14,0:04:48.28,Default,,0,0,0,,Dost ki shaadi aayi,
+Dialogue: 0,0:04:48.28,0:04:48.97,Default,,0,0,0,,fund aur kam.
+Dialogue: 0,0:04:48.97,0:04:50.58,Default,,0,0,0,,Ek hi account mein sab ho,
+Dialogue: 0,0:04:50.58,0:04:52.41,Default,,0,0,0,,toh pata bhi nahi chalta.
+Dialogue: 0,0:04:52.86,0:04:54.31,Default,,0,0,0,,Toh planners kya kehte hain?
+Dialogue: 0,0:04:54.31,0:04:56.19,Default,,0,0,0,,Fund ka 30 se 40 percent
+Dialogue: 0,0:04:56.19,0:04:57.43,Default,,0,0,0,,hissa bank mein rakho,
+Dialogue: 0,0:04:57.43,0:04:59.30,Default,,0,0,0,,savings account ya sweep-in FD mein.
+Dialogue: 0,0:04:59.30,0:05:00.97,Default,,0,0,0,,Yeh woh paisa hai jo usi
+Dialogue: 0,0:05:00.97,0:05:01.59,Default,,0,0,0,,din chahiye.
+Dialogue: 0,0:05:01.59,0:05:03.05,Default,,0,0,0,,Hospital ka deposit,
+Dialogue: 0,0:05:03.05,0:05:04.29,Default,,0,0,0,,achanak ka safar,
+Dialogue: 0,0:05:04.29,0:05:05.54,Default,,0,0,0,,ya koi bill jo kal tak
+Dialogue: 0,0:05:05.54,0:05:06.58,Default,,0,0,0,,nahi ruk sakta.
+Dialogue: 0,0:05:07.03,0:05:08.45,Default,,0,0,0,,Sweep-in FD kya hota hai?
+Dialogue: 0,0:05:08.45,0:05:10.29,Default,,0,0,0,,Yeh savings account se juda ek
+Dialogue: 0,0:05:10.29,0:05:10.69,Default,,0,0,0,,FD hai.
+Dialogue: 0,0:05:10.69,0:05:12.53,Default,,0,0,0,,Ek limit se upar ka paisa
+Dialogue: 0,0:05:12.53,0:05:13.75,Default,,0,0,0,,khud FD ban jaata hai,
+Dialogue: 0,0:05:13.75,0:05:15.79,Default,,0,0,0,,aur thoda zyada byaaj kamata hai.
+Dialogue: 0,0:05:15.79,0:05:17.62,Default,,0,0,0,,Jab account mein paisa kam pade,
+Dialogue: 0,0:05:17.62,0:05:19.25,Default,,0,0,0,,toh FD ka paisa apne aap
+Dialogue: 0,0:05:19.25,0:05:20.47,Default,,0,0,0,,wapas aa jaata hai.
+Dialogue: 0,0:05:20.92,0:05:23.25,Default,,0,0,0,,Aur bank mein paisa kitna surakshit
+Dialogue: 0,0:05:23.25,0:05:23.48,Default,,0,0,0,,hai?
+Dialogue: 0,0:05:23.48,0:05:25.57,Default,,0,0,0,,DICGC yaani RBI ki ek company,
+Dialogue: 0,0:05:25.57,0:05:28.37,Default,,0,0,0,,jo bank deposits ka insurance deti
+Dialogue: 0,0:05:28.37,0:05:28.60,Default,,0,0,0,,hai.
+Dialogue: 0,0:05:28.60,0:05:29.30,Default,,0,0,0,,Har bank mein,
+Dialogue: 0,0:05:29.30,0:05:31.62,Default,,0,0,0,,har depositor ke 5 lakh rupaye
+Dialogue: 0,0:05:31.62,0:05:32.79,Default,,0,0,0,,tak insured hain.
+Dialogue: 0,0:05:32.79,0:05:34.42,Default,,0,0,0,,Matlab bank ko kuch ho bhi
+Dialogue: 0,0:05:34.42,0:05:34.65,Default,,0,0,0,,jaaye,
+Dialogue: 0,0:05:34.65,0:05:36.74,Default,,0,0,0,,toh is limit tak paisa wapas
+Dialogue: 0,0:05:36.74,0:05:37.44,Default,,0,0,0,,milta hai.
+Dialogue: 0,0:05:37.89,0:05:40.20,Default,,0,0,0,,Isliye ek chhoti si samajhdaari rakhiye.
+Dialogue: 0,0:05:40.20,0:05:40.98,Default,,0,0,0,,Fund bada ho,
+Dialogue: 0,0:05:40.98,0:05:42.71,Default,,0,0,0,,toh use alag alag bank mein
+Dialogue: 0,0:05:42.71,0:05:43.49,Default,,0,0,0,,baant sakte hain.
+Dialogue: 0,0:05:43.49,0:05:45.80,Default,,0,0,0,,Aur emergency fund ko salary account
+Dialogue: 0,0:05:45.80,0:05:47.34,Default,,0,0,0,,se alag account mein rakhiye.
+Dialogue: 0,0:05:47.34,0:05:48.69,Default,,0,0,0,,Taaki dimaag mein baith jaaye,
+Dialogue: 0,0:05:48.69,0:05:50.24,Default,,0,0,0,,yeh paisa roz ke kharche ke
+Dialogue: 0,0:05:50.24,0:05:51.01,Default,,0,0,0,,liye nahi hai.
+Dialogue: 0,0:05:51.46,0:05:53.20,Default,,0,0,0,,Ab fund ka baaki hissa.
+Dialogue: 0,0:05:53.20,0:05:54.93,Default,,0,0,0,,Yahan ek naam aata hai,
+Dialogue: 0,0:05:54.93,0:05:57.17,Default,,0,0,0,,jo bahut log pehli baar sunte
+Dialogue: 0,0:05:57.17,0:05:57.42,Default,,0,0,0,,hain.
+Dialogue: 0,0:05:57.42,0:05:58.16,Default,,0,0,0,,Liquid fund.
+Dialogue: 0,0:05:58.16,0:06:00.14,Default,,0,0,0,,Naam se lagta hai paani ka
+Dialogue: 0,0:06:00.14,0:06:00.89,Default,,0,0,0,,koi plan hai.
+Dialogue: 0,0:06:00.89,0:06:02.88,Default,,0,0,0,,Asal mein yeh mutual fund ka
+Dialogue: 0,0:06:02.88,0:06:04.86,Default,,0,0,0,,sabse seedha aur shaant roop hai.
+Dialogue: 0,0:06:05.31,0:06:07.11,Default,,0,0,0,,Liquid fund yaani ek mutual fund,
+Dialogue: 0,0:06:07.11,0:06:08.91,Default,,0,0,0,,jo paisa bahut kam samay ke
+Dialogue: 0,0:06:08.91,0:06:10.11,Default,,0,0,0,,loans mein lagata hai.
+Dialogue: 0,0:06:10.11,0:06:12.31,Default,,0,0,0,,Jaise sarkar ya badi companies ko
+Dialogue: 0,0:06:12.31,0:06:13.71,Default,,0,0,0,,kuch hafton ke liye udhaar.
+Dialogue: 0,0:06:13.71,0:06:15.71,Default,,0,0,0,,Yeh share market mein paisa nahi
+Dialogue: 0,0:06:15.71,0:06:16.31,Default,,0,0,0,,lagata.
+Dialogue: 0,0:06:16.31,0:06:18.51,Default,,0,0,0,,Isliye iski keemat mein utaar chadhaav
+Dialogue: 0,0:06:18.51,0:06:19.71,Default,,0,0,0,,bahut kam hota hai.
+Dialogue: 0,0:06:20.16,0:06:21.25,Default,,0,0,0,,Planners kehte hain,
+Dialogue: 0,0:06:21.25,0:06:23.66,Default,,0,0,0,,emergency fund ka 60 se 70
+Dialogue: 0,0:06:23.66,0:06:25.84,Default,,0,0,0,,percent hissa liquid fund mein rakho.
+Dialogue: 0,0:06:25.84,0:06:26.93,Default,,0,0,0,,Wajah seedhi hai.
+Dialogue: 0,0:06:26.93,0:06:28.03,Default,,0,0,0,,Shares se kam risk,
+Dialogue: 0,0:06:28.03,0:06:29.77,Default,,0,0,0,,aur aam taur par savings account
+Dialogue: 0,0:06:29.77,0:06:30.87,Default,,0,0,0,,se behtar return.
+Dialogue: 0,0:06:30.87,0:06:32.83,Default,,0,0,0,,Bechne par paisa agle kaam ke
+Dialogue: 0,0:06:32.83,0:06:34.58,Default,,0,0,0,,din tak account mein aa jaata
+Dialogue: 0,0:06:34.58,0:06:34.80,Default,,0,0,0,,hai.
+Dialogue: 0,0:06:35.25,0:06:37.48,Default,,0,0,0,,Aur agar paisa abhi ke abhi
+Dialogue: 0,0:06:37.48,0:06:37.93,Default,,0,0,0,,chahiye?
+Dialogue: 0,0:06:37.93,0:06:39.71,Default,,0,0,0,,Iske liye SEBI ka ek niyam
+Dialogue: 0,0:06:39.71,0:06:39.93,Default,,0,0,0,,hai.
+Dialogue: 0,0:06:39.93,0:06:42.39,Default,,0,0,0,,SEBI yaani share market aur mutual
+Dialogue: 0,0:06:42.39,0:06:43.73,Default,,0,0,0,,funds ka regulator.
+Dialogue: 0,0:06:43.73,0:06:46.18,Default,,0,0,0,,Liquid fund mein instant redemption milta
+Dialogue: 0,0:06:46.18,0:06:46.40,Default,,0,0,0,,hai,
+Dialogue: 0,0:06:46.40,0:06:48.41,Default,,0,0,0,,yaani turant paisa nikalna.
+Dialogue: 0,0:06:48.41,0:06:50.19,Default,,0,0,0,,Har scheme se roz 50,000 rupaye
+Dialogue: 0,0:06:50.19,0:06:50.42,Default,,0,0,0,,tak,
+Dialogue: 0,0:06:50.42,0:06:51.53,Default,,0,0,0,,kuch sharton ke saath.
+Dialogue: 0,0:06:51.98,0:06:53.98,Default,,0,0,0,,Toh poora plan kuch aisa banta
+Dialogue: 0,0:06:53.98,0:06:54.21,Default,,0,0,0,,hai.
+Dialogue: 0,0:06:54.21,0:06:55.99,Default,,0,0,0,,Pehle din ka kharcha bank se,
+Dialogue: 0,0:06:55.99,0:06:57.55,Default,,0,0,0,,card aur UPI se turant.
+Dialogue: 0,0:06:57.55,0:06:58.88,Default,,0,0,0,,Zaroorat badi ho,
+Dialogue: 0,0:06:58.88,0:07:00.88,Default,,0,0,0,,toh liquid fund se instant nikaal
+Dialogue: 0,0:07:00.88,0:07:01.11,Default,,0,0,0,,lo.
+Dialogue: 0,0:07:01.11,0:07:03.11,Default,,0,0,0,,Baaki ke liye redemption daal do,
+Dialogue: 0,0:07:03.11,0:07:04.89,Default,,0,0,0,,jo agle kaam ke din account
+Dialogue: 0,0:07:04.89,0:07:05.78,Default,,0,0,0,,mein aa jaayega.
+Dialogue: 0,0:07:06.23,0:07:07.36,Default,,0,0,0,,Ek baat saaf rakhiye.
+Dialogue: 0,0:07:07.36,0:07:09.18,Default,,0,0,0,,Kam risk ka matlab yeh nahi,
+Dialogue: 0,0:07:09.18,0:07:10.54,Default,,0,0,0,,ki risk hai hi nahi.
+Dialogue: 0,0:07:10.54,0:07:12.36,Default,,0,0,0,,Liquid fund chunte waqt bada,
+Dialogue: 0,0:07:12.36,0:07:14.62,Default,,0,0,0,,jaana maana fund house aur direct
+Dialogue: 0,0:07:14.62,0:07:15.30,Default,,0,0,0,,plan dekhiye.
+Dialogue: 0,0:07:15.30,0:07:17.57,Default,,0,0,0,,Direct plan yaani bina agent ke,
+Dialogue: 0,0:07:17.57,0:07:19.39,Default,,0,0,0,,jismein kharcha kam hota hai.
+Dialogue: 0,0:07:19.39,0:07:21.66,Default,,0,0,0,,Yahan zyada return ke peeche mat
+Dialogue: 0,0:07:21.66,0:07:22.11,Default,,0,0,0,,bhaagiye.
+Dialogue: 0,0:07:22.56,0:07:24.88,Default,,0,0,0,,Ab Karan ki kahani dobara sochiye.
+Dialogue: 0,0:07:24.88,0:07:26.82,Default,,0,0,0,,Agar uske paas 6 mahine ka
+Dialogue: 0,0:07:26.82,0:07:27.79,Default,,0,0,0,,aisa fund hota,
+Dialogue: 0,0:07:27.79,0:07:29.34,Default,,0,0,0,,toh shares loss mein bechne hi
+Dialogue: 0,0:07:29.34,0:07:30.11,Default,,0,0,0,,nahi padte.
+Dialogue: 0,0:07:30.11,0:07:31.08,Default,,0,0,0,,Market neeche tha,
+Dialogue: 0,0:07:31.08,0:07:32.82,Default,,0,0,0,,par woh aaram se intezaar kar
+Dialogue: 0,0:07:32.82,0:07:33.41,Default,,0,0,0,,sakta tha.
+Dialogue: 0,0:07:33.41,0:07:35.73,Default,,0,0,0,,Emergency fund asal mein aapke baaki
+Dialogue: 0,0:07:35.73,0:07:37.28,Default,,0,0,0,,investments ka bodyguard hai.
+Dialogue: 0,0:07:37.73,0:07:38.69,Default,,0,0,0,,Teesra sawaal,
+Dialogue: 0,0:07:38.69,0:07:41.08,Default,,0,0,0,,aur yeh sabse zyada poocha jaata
+Dialogue: 0,0:07:41.08,0:07:41.32,Default,,0,0,0,,hai.
+Dialogue: 0,0:07:41.32,0:07:42.52,Default,,0,0,0,,Pehle loan chukayein,
+Dialogue: 0,0:07:42.52,0:07:43.95,Default,,0,0,0,,ya pehle fund banayein?
+Dialogue: 0,0:07:43.95,0:07:44.91,Default,,0,0,0,,Dil kehta hai,
+Dialogue: 0,0:07:44.91,0:07:47.07,Default,,0,0,0,,loan khatam karo aur byaaj bachao.
+Dialogue: 0,0:07:47.07,0:07:49.22,Default,,0,0,0,,Yeh logic bhi achha lagta hai.
+Dialogue: 0,0:07:49.22,0:07:51.61,Default,,0,0,0,,Par Karan ki kahani yahan ek
+Dialogue: 0,0:07:51.61,0:07:53.05,Default,,0,0,0,,aur baat sikhaati hai.
+Dialogue: 0,0:07:53.50,0:07:54.14,Default,,0,0,0,,Maan lijiye,
+Dialogue: 0,0:07:54.14,0:07:56.48,Default,,0,0,0,,aapne saara bacha paisa home loan
+Dialogue: 0,0:07:56.48,0:07:57.98,Default,,0,0,0,,ke prepayment mein daal diya.
+Dialogue: 0,0:07:57.98,0:08:00.11,Default,,0,0,0,,Prepayment yaani loan ka kuch hissa
+Dialogue: 0,0:08:00.11,0:08:02.03,Default,,0,0,0,,samay se pehle chuka dena.
+Dialogue: 0,0:08:02.03,0:08:02.88,Default,,0,0,0,,Loan chhota hua,
+Dialogue: 0,0:08:02.88,0:08:03.73,Default,,0,0,0,,achhi baat hai.
+Dialogue: 0,0:08:03.73,0:08:04.58,Default,,0,0,0,,Par naukri gayi,
+Dialogue: 0,0:08:04.58,0:08:06.50,Default,,0,0,0,,toh bank woh paisa wapas nahi
+Dialogue: 0,0:08:06.50,0:08:06.93,Default,,0,0,0,,dega.
+Dialogue: 0,0:08:06.93,0:08:09.06,Default,,0,0,0,,EMI phir bhi har mahine aayegi.
+Dialogue: 0,0:08:09.51,0:08:11.64,Default,,0,0,0,,Isliye ek samajhdaar raasta yeh hai.
+Dialogue: 0,0:08:11.64,0:08:13.98,Default,,0,0,0,,Pehle kuch mahine ka chhota cushion
+Dialogue: 0,0:08:13.98,0:08:14.40,Default,,0,0,0,,banao.
+Dialogue: 0,0:08:14.40,0:08:15.89,Default,,0,0,0,,Phir dono saath saath chalao,
+Dialogue: 0,0:08:15.89,0:08:17.59,Default,,0,0,0,,fund bhi bharo aur EMI bhi
+Dialogue: 0,0:08:17.59,0:08:18.02,Default,,0,0,0,,bharo.
+Dialogue: 0,0:08:18.02,0:08:19.72,Default,,0,0,0,,Jab fund 6 mahine ka ho
+Dialogue: 0,0:08:19.72,0:08:19.93,Default,,0,0,0,,jaaye,
+Dialogue: 0,0:08:19.93,0:08:22.27,Default,,0,0,0,,tab extra paisa prepayment mein lagao.
+Dialogue: 0,0:08:22.72,0:08:24.36,Default,,0,0,0,,Saath mein ek check zaroori hai,
+Dialogue: 0,0:08:24.36,0:08:25.99,Default,,0,0,0,,aapki kul EMI kitni hai.
+Dialogue: 0,0:08:25.99,0:08:27.22,Default,,0,0,0,,Ek study kehti hai,
+Dialogue: 0,0:08:27.22,0:08:29.67,Default,,0,0,0,,Indians apni income ka 33 percent
+Dialogue: 0,0:08:29.67,0:08:31.51,Default,,0,0,0,,se zyada EMI mein dete hain.
+Dialogue: 0,0:08:31.51,0:08:32.95,Default,,0,0,0,,Credit experts kehte hain,
+Dialogue: 0,0:08:32.95,0:08:35.60,Default,,0,0,0,,kul EMI take-home salary ke 30
+Dialogue: 0,0:08:35.60,0:08:37.03,Default,,0,0,0,,percent ke andar rakho.
+Dialogue: 0,0:08:37.03,0:08:39.49,Default,,0,0,0,,Take-home yaani katauti ke baad haath
+Dialogue: 0,0:08:39.49,0:08:40.92,Default,,0,0,0,,mein aane wala paisa.
+Dialogue: 0,0:08:41.37,0:08:43.90,Default,,0,0,0,,Agar aapki EMI 30 percent se
+Dialogue: 0,0:08:43.90,0:08:44.60,Default,,0,0,0,,upar hai,
+Dialogue: 0,0:08:44.60,0:08:46.44,Default,,0,0,0,,toh naya loan lene se pehle
+Dialogue: 0,0:08:46.44,0:08:46.90,Default,,0,0,0,,rukiye.
+Dialogue: 0,0:08:46.90,0:08:48.28,Default,,0,0,0,,Naya phone EMI par,
+Dialogue: 0,0:08:48.28,0:08:49.67,Default,,0,0,0,,nayi bike EMI par,
+Dialogue: 0,0:08:49.67,0:08:51.97,Default,,0,0,0,,har chhoti EMI aapka cushion kha
+Dialogue: 0,0:08:51.97,0:08:52.66,Default,,0,0,0,,jaati hai.
+Dialogue: 0,0:08:52.66,0:08:54.51,Default,,0,0,0,,Karan ka car loan bhi aise
+Dialogue: 0,0:08:54.51,0:08:55.20,Default,,0,0,0,,hi aaya tha,
+Dialogue: 0,0:08:55.20,0:08:56.81,Default,,0,0,0,,bas thode aaram ke liye.
+Dialogue: 0,0:08:57.26,0:08:58.06,Default,,0,0,0,,Ab woh galtiyan,
+Dialogue: 0,0:08:58.06,0:09:00.07,Default,,0,0,0,,jo achha kamane wale log bhi
+Dialogue: 0,0:09:00.07,0:09:00.68,Default,,0,0,0,,karte hain.
+Dialogue: 0,0:09:00.68,0:09:01.48,Default,,0,0,0,,Pehli galti,
+Dialogue: 0,0:09:01.48,0:09:03.69,Default,,0,0,0,,emergency fund ko share market mein
+Dialogue: 0,0:09:03.69,0:09:04.29,Default,,0,0,0,,daal dena.
+Dialogue: 0,0:09:04.29,0:09:05.50,Default,,0,0,0,,Bhai ka tip aata hai,
+Dialogue: 0,0:09:05.50,0:09:07.11,Default,,0,0,0,,yeh share bahut chalega.
+Dialogue: 0,0:09:07.11,0:09:09.12,Default,,0,0,0,,Par emergency fund ka kaam badhna
+Dialogue: 0,0:09:09.12,0:09:09.52,Default,,0,0,0,,nahi,
+Dialogue: 0,0:09:09.52,0:09:10.52,Default,,0,0,0,,waqt par milna hai.
+Dialogue: 0,0:09:10.52,0:09:13.14,Default,,0,0,0,,Gira hua market aapki emergency nahi
+Dialogue: 0,0:09:13.14,0:09:13.54,Default,,0,0,0,,dekhta.
+Dialogue: 0,0:09:13.99,0:09:14.89,Default,,0,0,0,,Doosri galti,
+Dialogue: 0,0:09:14.89,0:09:15.78,Default,,0,0,0,,fund ko chhutti,
+Dialogue: 0,0:09:15.78,0:09:17.80,Default,,0,0,0,,sale ya shaadi ki shopping ke
+Dialogue: 0,0:09:17.80,0:09:18.48,Default,,0,0,0,,liye todna.
+Dialogue: 0,0:09:18.48,0:09:20.27,Default,,0,0,0,,Yeh sab zaroori lagte hain,
+Dialogue: 0,0:09:20.27,0:09:22.07,Default,,0,0,0,,par emergency nahi hain.
+Dialogue: 0,0:09:22.07,0:09:24.31,Default,,0,0,0,,Emergency yaani naukri jaana,
+Dialogue: 0,0:09:24.31,0:09:24.99,Default,,0,0,0,,bimari,
+Dialogue: 0,0:09:24.99,0:09:25.66,Default,,0,0,0,,accident,
+Dialogue: 0,0:09:25.66,0:09:27.68,Default,,0,0,0,,ya ghar ki achanak marammat.
+Dialogue: 0,0:09:27.68,0:09:29.25,Default,,0,0,0,,Jo plan karke aata hai,
+Dialogue: 0,0:09:29.25,0:09:31.27,Default,,0,0,0,,uske liye alag bachat kijiye.
+Dialogue: 0,0:09:31.72,0:09:32.67,Default,,0,0,0,,Teesri galti,
+Dialogue: 0,0:09:32.67,0:09:35.05,Default,,0,0,0,,fund ka hisaab banate waqt EMI
+Dialogue: 0,0:09:35.05,0:09:36.01,Default,,0,0,0,,ko bhool jaana.
+Dialogue: 0,0:09:36.01,0:09:36.96,Default,,0,0,0,,Chauthi galti,
+Dialogue: 0,0:09:36.96,0:09:39.10,Default,,0,0,0,,fund use karne ke baad use
+Dialogue: 0,0:09:39.10,0:09:40.29,Default,,0,0,0,,wapas na bharna.
+Dialogue: 0,0:09:40.29,0:09:41.72,Default,,0,0,0,,Fund ek baar banta hai,
+Dialogue: 0,0:09:41.72,0:09:44.10,Default,,0,0,0,,par use zinda rakhna padta hai.
+Dialogue: 0,0:09:44.10,0:09:45.53,Default,,0,0,0,,Ghar ke kharche badhein,
+Dialogue: 0,0:09:45.53,0:09:47.20,Default,,0,0,0,,toh fund bhi saath mein badhaiye.
+Dialogue: 0,0:09:47.65,0:09:48.76,Default,,0,0,0,,Toh karna kya hai?
+Dialogue: 0,0:09:48.76,0:09:50.75,Default,,0,0,0,,Aaj raat ghar ke zaroori kharchon
+Dialogue: 0,0:09:50.75,0:09:51.63,Default,,0,0,0,,ki list banaiye.
+Dialogue: 0,0:09:51.63,0:09:54.07,Default,,0,0,0,,Usse 6 mahine se guna kijiye,
+Dialogue: 0,0:09:54.07,0:09:55.18,Default,,0,0,0,,yahi target hai.
+Dialogue: 0,0:09:55.18,0:09:56.51,Default,,0,0,0,,Salary wale din,
+Dialogue: 0,0:09:56.51,0:09:59.16,Default,,0,0,0,,ek fixed hissa apne aap emergency
+Dialogue: 0,0:09:59.16,0:10:00.05,Default,,0,0,0,,account mein jaaye.
+Dialogue: 0,0:10:00.05,0:10:01.60,Default,,0,0,0,,Yeh setting bank app mein ho
+Dialogue: 0,0:10:01.60,0:10:02.26,Default,,0,0,0,,jaati hai,
+Dialogue: 0,0:10:02.26,0:10:03.37,Default,,0,0,0,,bina roz soche.
+Dialogue: 0,0:10:03.82,0:10:05.32,Default,,0,0,0,,Fund ko bank aur liquid fund
+Dialogue: 0,0:10:05.32,0:10:05.96,Default,,0,0,0,,mein baantiye,
+Dialogue: 0,0:10:05.96,0:10:07.25,Default,,0,0,0,,jaise humne dekha.
+Dialogue: 0,0:10:07.25,0:10:09.18,Default,,0,0,0,,Saath mein health insurance aur term
+Dialogue: 0,0:10:09.18,0:10:10.68,Default,,0,0,0,,insurance bhi dekhiye,
+Dialogue: 0,0:10:10.68,0:10:12.39,Default,,0,0,0,,kyunki bada bill fund ko ek
+Dialogue: 0,0:10:12.39,0:10:13.89,Default,,0,0,0,,jhatke mein kha sakta hai.
+Dialogue: 0,0:10:13.89,0:10:16.03,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:10:16.03,0:10:17.96,Default,,0,0,0,,Apni zaroorat ke hisaab se,
+Dialogue: 0,0:10:17.96,0:10:19.46,Default,,0,0,0,,samajh kar faisla kijiye.
+Dialogue: 0,0:10:19.91,0:10:21.74,Default,,0,0,0,,Karan ko kuch mahino baad nayi
+Dialogue: 0,0:10:21.74,0:10:22.55,Default,,0,0,0,,naukri mil gayi.
+Dialogue: 0,0:10:22.55,0:10:24.17,Default,,0,0,0,,Ab uske ghar mein ek alag
+Dialogue: 0,0:10:24.17,0:10:24.78,Default,,0,0,0,,account hai,
+Dialogue: 0,0:10:24.78,0:10:26.60,Default,,0,0,0,,jiska naam Neha ne rakha hai,
+Dialogue: 0,0:10:26.60,0:10:27.01,Default,,0,0,0,,Chhatri.
+Dialogue: 0,0:10:27.01,0:10:29.24,Default,,0,0,0,,Kyunki baarish batakar nahi aati.
+Dialogue: 0,0:10:29.24,0:10:30.86,Default,,0,0,0,,Par chhatri pehle se ghar mein
+Dialogue: 0,0:10:30.86,0:10:31.87,Default,,0,0,0,,rakhni padti hai,
+Dialogue: 0,0:10:31.87,0:10:34.51,Default,,0,0,0,,yahi emergency fund ka poora falsafa
+Dialogue: 0,0:10:34.51,0:10:34.71,Default,,0,0,0,,hai.
+Dialogue: 0,0:10:35.16,0:10:36.82,Default,,0,0,0,,Agli video mein us cheez ki
+Dialogue: 0,0:10:36.82,0:10:37.03,Default,,0,0,0,,baat,
+Dialogue: 0,0:10:37.03,0:10:39.31,Default,,0,0,0,,jo emergency fund ko sabse jaldi
+Dialogue: 0,0:10:39.31,0:10:40.35,Default,,0,0,0,,khaali karti hai.
+Dialogue: 0,0:10:40.35,0:10:41.39,Default,,0,0,0,,Hospital ka bill.
+Dialogue: 0,0:10:41.39,0:10:43.26,Default,,0,0,0,,Health insurance ki woh lines,
+Dialogue: 0,0:10:43.26,0:10:44.71,Default,,0,0,0,,jo claim ke din hi samajh
+Dialogue: 0,0:10:44.71,0:10:45.33,Default,,0,0,0,,aati hain.
+Dialogue: 0,0:10:45.33,0:10:46.16,Default,,0,0,0,,Usse pehle,
+Dialogue: 0,0:10:46.16,0:10:48.03,Default,,0,0,0,,aapke liye ek chhota sa sawaal
+Dialogue: 0,0:10:48.03,0:10:48.24,Default,,0,0,0,,hai.
+Dialogue: 0,0:10:48.69,0:10:51.31,Default,,0,0,0,,Aapka emergency fund abhi kitne mahine
+Dialogue: 0,0:10:51.31,0:10:51.69,Default,,0,0,0,,ka hai?
+Dialogue: 0,0:10:51.69,0:10:53.19,Default,,0,0,0,,Comments mein sirf number likhiye.
+Dialogue: 0,0:10:53.19,0:10:54.69,Default,,0,0,0,,Koi judge nahi karega,
+Dialogue: 0,0:10:54.69,0:10:55.62,Default,,0,0,0,,yeh aapke liye hai.
+Dialogue: 0,0:10:55.62,0:10:57.31,Default,,0,0,0,,Aur agar abhi kuch bhi nahi
+Dialogue: 0,0:10:57.31,0:10:57.50,Default,,0,0,0,,hai,
+Dialogue: 0,0:10:57.50,0:10:58.81,Default,,0,0,0,,toh aaj raat kharchon ki list
+Dialogue: 0,0:10:58.81,0:10:59.75,Default,,0,0,0,,se shuruaat kijiye.
+Dialogue: 0,0:10:59.75,0:11:01.81,Default,,0,0,0,,Pehla kadam hi sabse zaroori hai.
