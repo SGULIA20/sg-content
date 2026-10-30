@@ -1,0 +1,269 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 39305.0,
+   "quote": "September – 2026 39,305 (7.2) 20,097 (12.6)",
+   "source_date": "2026-10-30",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63893",
+   "text": "India's services export receipts rose to 39,305 million US dollars in September 2026.",
+   "unit": "million USD"
+  },
+  {
+   "label": "official",
+   "number": 7.2,
+   "quote": "September – 2026 39,305 (7.2) 20,097 (12.6)",
+   "source_date": "2026-10-30",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63893",
+   "text": "Services export receipts recorded a year-on-year growth rate of 7.2 percent in September 2026.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 20097.0,
+   "quote": "September – 2026 39,305 (7.2) 20,097 (12.6)",
+   "source_date": "2026-10-30",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63893",
+   "text": "India's payments for imported services reached 20,097 million US dollars in September 2026.",
+   "unit": "million USD"
+  },
+  {
+   "label": "official",
+   "number": 12.6,
+   "quote": "September – 2026 39,305 (7.2) 20,097 (12.6)",
+   "source_date": "2026-10-30",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63893",
+   "text": "Services import payments expanded by 12.6 percent year-on-year in September 2026.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 35471.0,
+   "quote": "August – 2026 35,471 (13.7) 18,934 (21.4)",
+   "source_date": "2026-10-30",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63893",
+   "text": "Services export receipts stood at 35,471 million US dollars in August 2026.",
+   "unit": "million USD"
+  },
+  {
+   "label": "official",
+   "number": 18934.0,
+   "quote": "August – 2026 35,471 (13.7) 18,934 (21.4)",
+   "source_date": "2026-10-30",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63893",
+   "text": "Services import payments were 18,934 million US dollars in August 2026.",
+   "unit": "million USD"
+  },
+  {
+   "label": "official",
+   "number": 38253.0,
+   "quote": "July – 2026 38,253 (13.4) 20,606 (19.1)",
+   "source_date": "2026-10-30",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63893",
+   "text": "Services export receipts in July 2026 stood at 38,253 million US dollars.",
+   "unit": "million USD"
+  }
+ ],
+ "id": "2026-11-06-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-10-30",
+   "drafts": 3,
+   "research": 2
+  },
+  "cost": {
+   "inr": 43.5,
+   "usd": 0.19702,
+   "voice": 8
+  },
+  "yt_id": "hAATA_nwcuM"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-06",
+ "reasons": [
+  "try 1: opener: the first picture is too close to 2026-11-02-sglearning-short's; pick a different subject",
+  "try 2: advice: bech do; advice: becho"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "India ne sirf September mein services bechkar 39,305 million dollar kamaye. 💸\nYeh dollar rupee ko sahara dete hain.\nPar videsh ki services pe kharcha 12.6 percent badha, kamai se tez.\nAapka kaunsa kharcha dollar mein jaata hai?\nYeh investment advice nahi hai.\nShare karo us bhai ko jo har mahine naya subscription le leta hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#Rupee",
+     "#RBI",
+     "#HinglishFinance",
+     "#PersonalFinanceIndia",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "India ne sirf September mein services bechkar 39,305 million dollar kamaye. Par videsh ki services pe kharcha 12.6% badha, kamai se tez. Aapka kaunsa kharcha chupchaap dollar mein jaata hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "India ne sirf September mein services bechkar 39,305 million dollar kamaye. Yeh dollar rupee ko sahara dete hain, isliye petrol aur EMI pe dabaav kam rehta hai. Par videsh ki services pe hamara kharcha pichhle saal se 12.6 percent badha, kamai se tez. Us bhai ko bhejo jo har mahine naya subscription le leta hai.",
+    "tags": [
+     "services export",
+     "RBI data",
+     "rupee",
+     "dollar",
+     "India trade",
+     "IT exports",
+     "EMI",
+     "petrol price",
+     "hinglish finance",
+     "Learning with SG"
+    ],
+    "title": "India Services Export: Kharcha 12.6% tez kyun?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Yeh us bhai ko bhejo jo har mahine naya subscription le leta hai.",
+  "hook": "India ne services bechkar sirf September mein 39,305 million dollar kamaye.",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Hook",
+    "visual": {
+     "card": null,
+     "prompt": "A tall glass IT office tower in an Indian city at night, hundreds of windows glowing, streams of drawn dollar notes flowing out of the windows across a stylised world map toward the tower, dramatic and wide, filling the frame, no text",
+     "type": "art"
+    },
+    "vo": "India ne services bechkar sirf September mein 39,305 million dollar kamaye."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Setup",
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN in office wear at a desk late evening, on a video call with foreign clients on a laptop, rows of colleagues with headsets in a busy Indian office behind her, focused mood, no text",
+     "type": "art"
+    },
+    "vo": "Services yaani cheezein nahi, kaam bechna. Software, call centre, consulting, videsh ke clients ke liye."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "The choice",
+    "visual": {
+     "card": null,
+     "prompt": "A drawn scene of dollar notes arriving like birds and settling on a large sturdy rupee coin standing upright on a balance, the coin steady, warm daylight, no text",
+     "type": "art"
+    },
+    "vo": "Yeh kamai dollar mein aati hai, aur rupee ko sahara deti hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Why it feels right",
+    "visual": {
+     "card": null,
+     "prompt": "PAPA in a kurta relaxing on a sofa with a newspaper and a cup of chai, a calm petrol pump visible through the window, home loan papers on the table, relaxed contented mood, morning light, no text",
+     "type": "art"
+    },
+    "vo": "Rupee sambhla rahe, toh petrol aur EMI pe dabaav kam. Lagta hai sab theek hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "What really happened",
+    "visual": {
+     "card": null,
+     "prompt": "A collage panel: a packed suitcase with airline tags, a TV showing a streaming app screen, a cargo ship at a port, each with small dollar notes flying out of India toward the sea, evening, no text",
+     "type": "art"
+    },
+    "vo": "Par hum bhi videsh ki services kharidte hain, trip, apps, shipping."
+   },
+   {
+    "facts_used": [
+     3,
+     1
+    ],
+    "label": "The cost",
+    "visual": {
+     "card": null,
+     "prompt": "Two drawn paths side by side: a fast runner carrying a bag of dollars running out of a gate, and a slower runner carrying dollars coming in, the outgoing runner clearly ahead, dusk, no text",
+     "type": "art"
+    },
+    "vo": "Usi mahine yeh kharcha pichhle saal se 12.6 percent badha. Aur hamari kamai isse dheemi badhi."
+   },
+   {
+    "facts_used": [
+     1,
+     3
+    ],
+    "label": "The twist",
+    "visual": {
+     "card": null,
+     "prompt": "A large water tank labelled with no text, filling from a pipe at the top while a wider tap at the bottom drains it faster, a young man watching thoughtfully, SG standing beside him calmly explaining, soft evening light, no text",
+     "type": "art"
+    },
+    "vo": "Matlab dollar aa rahe hain, par jaane ki raftaar tez hai. Har foreign subscription bhi dollar bahar le jaata hai. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Send",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in a hoodie on a sofa surrounded by floating icons of many streaming and app subscriptions, looking slightly guilty, SISTER-like warm room light at night, playful mood, no text",
+     "type": "art"
+    },
+    "vo": "Yeh us bhai ko bhejo jo har mahine naya subscription le leta hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "SERVICES",
+   "name_hi": "सर्विसेज़",
+   "scene": "LEFT: a river of dollar notes pouring into India from a glowing night-time IT office tower; RIGHT: the same dollars rushing back out faster through suitcases, streaming screens and a giant cargo ship.",
+   "words": [
+    "$39,305 MN",
+    "KHATRA?"
+   ],
+   "words_hi": [
+    "$39,305 मिलियन",
+    "खतरा?"
+   ]
+  },
+  "title": "Dollar aa rahe, par *tez* ja rahe 💸"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  6.61,
+  13.98,
+  18.55,
+  23.8,
+  28.61,
+  35.26,
+  44.63
+ ],
+ "topic": {
+  "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63893",
+  "look": "claymation",
+  "published": "2026-10-30T17:30:00+00:00",
+  "rank": 5,
+  "source": "RBI Press Releases",
+  "summary": "      The values of exports and imports of services during September 2026 are presented in the following table.                        International Trade in Services                                      (US$ million)                          Month          Receipts (Exports)          Payments (Imports)                          July &ndash; 2026          38,253          (13.4)          20,606          (19.1)                          August &ndash; 2026          35,471          (13.7)          18,934          (21.4)                          September &ndash; 2026          39,305          (7.2)          20,097          (12.6)                          Note: (i) Data for July-September are provisional.            (ii) Figures in parentheses are growth rates over the corresponding month of the previous year, which have been revised on the basis of balance of payments statistics.                    Ajit Prasad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Deputy General Manager        (Communications)&nbsp;&nbsp;&nbsp;&nbsp;    Press Release: 2026-2027/1415  ",
+  "target_minutes": null,
+  "title": "Monthly Data on India’s International Trade in Services  for the Month of September 2026",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-10-30T19:32:39+00:00",
+ "writer": "claude"
+}

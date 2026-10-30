@@ -1,0 +1,43 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:03.70,Default,,0,0,0,,India ne services bechkar sirf September
+Dialogue: 0,0:00:03.70,0:00:06.16,Default,,0,0,0,,mein 39,305 million dollar kamaye.
+Dialogue: 0,0:00:06.61,0:00:08.92,Default,,0,0,0,,Services yaani cheezein nahi,
+Dialogue: 0,0:00:08.92,0:00:09.69,Default,,0,0,0,,kaam bechna.
+Dialogue: 0,0:00:09.69,0:00:10.45,Default,,0,0,0,,Software,
+Dialogue: 0,0:00:10.45,0:00:11.22,Default,,0,0,0,,call centre,
+Dialogue: 0,0:00:11.22,0:00:11.99,Default,,0,0,0,,consulting,
+Dialogue: 0,0:00:11.99,0:00:13.53,Default,,0,0,0,,videsh ke clients ke liye.
+Dialogue: 0,0:00:13.98,0:00:15.93,Default,,0,0,0,,Yeh kamai dollar mein aati hai,
+Dialogue: 0,0:00:15.93,0:00:18.10,Default,,0,0,0,,aur rupee ko sahara deti hai.
+Dialogue: 0,0:00:18.55,0:00:19.86,Default,,0,0,0,,Rupee sambhla rahe,
+Dialogue: 0,0:00:19.86,0:00:21.82,Default,,0,0,0,,toh petrol aur EMI pe dabaav
+Dialogue: 0,0:00:21.82,0:00:22.04,Default,,0,0,0,,kam.
+Dialogue: 0,0:00:22.04,0:00:23.35,Default,,0,0,0,,Lagta hai sab theek hai.
+Dialogue: 0,0:00:23.80,0:00:26.11,Default,,0,0,0,,Par hum bhi videsh ki services
+Dialogue: 0,0:00:26.11,0:00:27.13,Default,,0,0,0,,kharidte hain,
+Dialogue: 0,0:00:27.13,0:00:27.39,Default,,0,0,0,,trip,
+Dialogue: 0,0:00:27.39,0:00:27.65,Default,,0,0,0,,apps,
+Dialogue: 0,0:00:27.65,0:00:28.16,Default,,0,0,0,,shipping.
+Dialogue: 0,0:00:28.61,0:00:30.96,Default,,0,0,0,,Usi mahine yeh kharcha pichhle saal
+Dialogue: 0,0:00:30.96,0:00:32.24,Default,,0,0,0,,se 12.6 percent badha.
+Dialogue: 0,0:00:32.24,0:00:34.81,Default,,0,0,0,,Aur hamari kamai isse dheemi badhi.
+Dialogue: 0,0:00:35.26,0:00:37.00,Default,,0,0,0,,Matlab dollar aa rahe hain,
+Dialogue: 0,0:00:37.00,0:00:38.74,Default,,0,0,0,,par jaane ki raftaar tez hai.
+Dialogue: 0,0:00:38.74,0:00:41.13,Default,,0,0,0,,Har foreign subscription bhi dollar bahar
+Dialogue: 0,0:00:41.13,0:00:42.00,Default,,0,0,0,,le jaata hai.
+Dialogue: 0,0:00:42.00,0:00:44.18,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:44.63,0:00:45.90,Default,,0,0,0,,Yeh us bhai ko bhejo jo
+Dialogue: 0,0:00:45.90,0:00:47.89,Default,,0,0,0,,har mahine naya subscription le leta
+Dialogue: 0,0:00:47.89,0:00:48.07,Default,,0,0,0,,hai.
