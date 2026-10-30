@@ -1,0 +1,44 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.90,Default,,0,0,0,,Google ke shares aur Bitcoin,
+Dialogue: 0,0:00:01.90,0:00:03.56,Default,,0,0,0,,dono ek saath kyun gire?
+Dialogue: 0,0:00:04.01,0:00:06.62,Default,,0,0,0,,Google wali Alphabet ki kamaai badhi,
+Dialogue: 0,0:00:06.62,0:00:07.93,Default,,0,0,0,,phir bhi share gira.
+Dialogue: 0,0:00:08.38,0:00:10.89,Default,,0,0,0,,Ek quarter mein AI data centres
+Dialogue: 0,0:00:10.89,0:00:13.12,Default,,0,0,0,,par 51.4 billion dollar lage.
+Dialogue: 0,0:00:13.12,0:00:13.95,Default,,0,0,0,,Free cash flow,
+Dialogue: 0,0:00:13.95,0:00:15.62,Default,,0,0,0,,yaani bacha hua cash,
+Dialogue: 0,0:00:15.62,0:00:16.46,Default,,0,0,0,,minus mein.
+Dialogue: 0,0:00:16.91,0:00:18.69,Default,,0,0,0,,Investors ka sawaal:
+Dialogue: 0,0:00:18.69,0:00:19.87,Default,,0,0,0,,itna kharcha,
+Dialogue: 0,0:00:19.87,0:00:21.35,Default,,0,0,0,,paisa wapas kab?
+Dialogue: 0,0:00:21.80,0:00:22.93,Default,,0,0,0,,Darr Amazon,
+Dialogue: 0,0:00:22.93,0:00:25.20,Default,,0,0,0,,Intel aur Asia tak phail gaya.
+Dialogue: 0,0:00:25.65,0:00:28.68,Default,,0,0,0,,Usi raat Binance par reportedly 6.3
+Dialogue: 0,0:00:28.68,0:00:30.45,Default,,0,0,0,,billion dollar ka hack hua.
+Dialogue: 0,0:00:30.90,0:00:31.80,Default,,0,0,0,,Bitcoin gira,
+Dialogue: 0,0:00:31.80,0:00:34.26,Default,,0,0,0,,toh udhaar wale daanv zabardasti kat
+Dialogue: 0,0:00:34.26,0:00:34.49,Default,,0,0,0,,gaye.
+Dialogue: 0,0:00:34.49,0:00:36.73,Default,,0,0,0,,Har forced sale ne agla sale
+Dialogue: 0,0:00:36.73,0:00:37.18,Default,,0,0,0,,karwaya.
+Dialogue: 0,0:00:37.63,0:00:39.12,Default,,0,0,0,,Bank mein DICGC 5 lakh tak
+Dialogue: 0,0:00:39.12,0:00:40.11,Default,,0,0,0,,bachata hai,
+Dialogue: 0,0:00:40.11,0:00:42.83,Default,,0,0,0,,crypto exchange par koi cover nahi.
+Dialogue: 0,0:00:43.28,0:00:46.01,Default,,0,0,0,,Girawat mein SIP rokna sabse mehngi
+Dialogue: 0,0:00:46.01,0:00:46.76,Default,,0,0,0,,galti hai.
+Dialogue: 0,0:00:47.21,0:00:48.76,Default,,0,0,0,,AI ka future bada hai,
+Dialogue: 0,0:00:48.76,0:00:50.31,Default,,0,0,0,,par har AI share ka nahi.
+Dialogue: 0,0:00:50.31,0:00:52.25,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:52.70,0:00:54.43,Default,,0,0,0,,Us bhai ko bhejo jo udhaar
+Dialogue: 0,0:00:54.43,0:00:55.94,Default,,0,0,0,,lekar crypto khelta hai.

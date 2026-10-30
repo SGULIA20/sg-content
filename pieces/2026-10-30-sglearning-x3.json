@@ -1,0 +1,311 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 51.4,
+   "quote": "Alphabet spent USD 51.4 billion on capital expenditures during the quarter, mostly on data centers and AI chips, more than double the $24 billion a year earlier.",
+   "source_date": "2026-10-29",
+   "source_name": "The Economic Times",
+   "source_url": "https://brandequity.economictimes.indiatimes.com/news/business-of-brands/shares-in-google-owner-alphabet-sink-on-profit-miss-ad-slowdown/114708152",
+   "text": "Alphabet spent 51.4 billion dollars on capital expenditures during the third quarter, largely dedicated to data centers and artificial intelligence chips.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "official",
+   "number": -9.1,
+   "quote": "The spending kept free cash flow negative for a second straight quarter, at minus USD 9.1 billion.",
+   "source_date": "2026-10-29",
+   "source_name": "The Economic Times",
+   "source_url": "https://brandequity.economictimes.indiatimes.com/news/business-of-brands/shares-in-google-owner-alphabet-sink-on-profit-miss-ad-slowdown/114708152",
+   "text": "Alphabet reported negative quarterly free cash flow of 9.1 billion dollars as infrastructure investments surged.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "official",
+   "number": 8.7,
+   "quote": "Alphabet booked an USD 8.7 billion loss on its equity investments, which includes a large stake in SpaceX.",
+   "source_date": "2026-10-29",
+   "source_name": "The Economic Times",
+   "source_url": "https://brandequity.economictimes.indiatimes.com/news/business-of-brands/shares-in-google-owner-alphabet-sink-on-profit-miss-ad-slowdown/114708152",
+   "text": "Alphabet recorded an 8.7 billion dollar loss on its equity portfolio, driven by valuation marks on its SpaceX holding.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "official",
+   "number": 205.0,
+   "quote": "Its latest forecast for capex spending is between USD 195 billion to USD 205 billion in spending for 2026.",
+   "source_date": "2026-10-29",
+   "source_name": "The Economic Times",
+   "source_url": "https://brandequity.economictimes.indiatimes.com/news/business-of-brands/shares-in-google-owner-alphabet-sink-on-profit-miss-ad-slowdown/114708152",
+   "text": "Alphabet reiterated its full-year 2026 capital spending outlook of 195 billion to 205 billion dollars.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "official",
+   "number": 2027.0,
+   "quote": "CNBC reports Microsoft CFO Amy Hood said third-party GPU-provider delays pushed some available capacity into the first half of 2027.",
+   "source_date": "2026-10-29",
+   "source_name": "CNBC",
+   "source_url": "https://www.cnbc.com/2026/10/29/microsoft-google-ai-capex-estimates.html",
+   "text": "Microsoft indicated that supplier delays for outside computing capacity shifted some deployments into the first half of 2027.",
+   "unit": "year"
+  },
+  {
+   "label": "official",
+   "number": 6.3,
+   "quote": "The company wrote on its X account that the estimated total impact sat at around 6.3 billion dollars.",
+   "source_date": "2026-10-30",
+   "source_name": "STV News",
+   "source_url": "https://news.stv.tv/world/worlds-biggest-crypto-exchange-reports-6-3-billion-dollars-impacted-after-hack",
+   "text": "Binance estimated the total financial impact of its security incident at approximately 6.3 billion dollars following unauthorized withdrawals via a compromised engineer laptop.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "official",
+   "number": 3.0,
+   "quote": "It said it has worked with blockchain partners to freeze affected assets, with roughly 3 billion dollars frozen on-chain so far.",
+   "source_date": "2026-10-30",
+   "source_name": "STV News",
+   "source_url": "https://news.stv.tv/world/worlds-biggest-crypto-exchange-reports-6-3-billion-dollars-impacted-after-hack",
+   "text": "Blockchain collaborators froze approximately 3 billion dollars in assets connected to the Binance security breach.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "reported",
+   "number": 32000.0,
+   "quote": "Systematic investment plans (SIPs) are the most innovative product developed by the mutual fund (MF) industry, driving monthly inflows of more than ₹32,000 crore, industry leaders said at the Business Standard BFSI Insight Summit on Wednesday.",
+   "source_date": "2026-10-28",
+   "source_name": "Business Standard",
+   "source_url": "https://www.business-standard.com/specials/bs-events/bfsi-insight-summit-2026-mf-ceos-hail-sips-as-sector-s-top-innovation-126102801591_1.html",
+   "text": "Systematic investment plans channel over 32,000 crore rupees per month into Indian mutual funds, showing sustained retail household participation amid market corrections.",
+   "unit": "crore INR"
+  }
+ ],
+ "id": "2026-10-30-sglearning-x3",
+ "ids": {
+  "budget": {
+   "day": "2026-10-30",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 39.0,
+   "usd": 0.210912,
+   "voice": 11
+  },
+  "ig_reel_id": "17989141922878707",
+  "ig_story_id": "18117205655148586",
+  "ig_trial": "SS_PERFORMANCE",
+  "out_sha": "4e8d4c27e12800d8716e00c4bd03786edbb79280",
+  "threads_id": "18138533968656271",
+  "threads_poll_id": "17927068443474013",
+  "yt_id": "2tHxIDmijNU"
+ },
+ "kind": "short",
+ "publish_day": "2026-10-30",
+ "reasons": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Google ke shares aur Bitcoin, dono ek saath kyun gire? 📉\nAlphabet ne ek quarter mein AI par 51.4 billion dollar lagaye, investors ne poocha paisa wapas kab.\nUsi raat Binance par reportedly 6.3 billion dollar ka hack, aur udhaar wale daanv domino ki tarah gire.\nAapke paas US tech ya crypto mein kitna hissa hai?\nYeh investment advice nahi hai.\nUs bhai ko bhejo jo udhaar lekar crypto khelta hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#StockMarketIndia",
+     "#SIP",
+     "#MutualFunds",
+     "#HinglishFinance",
+     "#InvestingIndia",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Google ke shares aur Bitcoin ek saath kyun gire? AI par 51.4 billion dollar ka ek quarter ka kharcha, aur Binance par reportedly 6.3 billion dollar ka hack. Aapke portfolio mein US tech ya crypto kitna hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Google ke shares aur Bitcoin, dono ek saath kyun gire? Alphabet ne ek quarter mein AI data centres par 51.4 billion dollar lagaye aur investors ne poocha, paisa wapas kab. Usi raat Binance par reportedly 6.3 billion dollar ka hack hua, aur udhaar wale daanv kat-kat kar girawat ko achanak bana gaye. Us bhai ko bhejo jo udhaar lekar crypto khelta hai.",
+    "tags": [
+     "Google share",
+     "Alphabet results",
+     "Bitcoin crash",
+     "Binance hack",
+     "AI stocks",
+     "crypto",
+     "SIP",
+     "stock market Hindi",
+     "leverage",
+     "DICGC",
+     "personal finance India"
+    ],
+    "title": "Google aur Bitcoin ek saath kyun gire?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us bhai ko bhejo jo udhaar lekar crypto khelta hai.",
+  "hook": "Google ke shares aur Bitcoin, dono ek saath kyun gire?",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "HOOK",
+    "visual": {
+     "card": null,
+     "prompt": "A huge wall of trading screens glowing deep red in a dark trading hall at night, jagged falling chart lines everywhere, and in front of it a giant golden coin cracking down the middle, dramatic red and gold light, no text",
+     "type": "art"
+    },
+    "vo": "Google ke shares aur Bitcoin, dono ek saath kyun gire?"
+   },
+   {
+    "facts_used": [],
+    "label": "KYA HUA",
+    "visual": {
+     "card": null,
+     "prompt": "A tall glass tech company tower at dusk, a big green arrow rising on one side of the building and a heavy red arrow crashing down on the other, puzzled office workers on the plaza below, no text",
+     "type": "art"
+    },
+    "vo": "Google wali Alphabet ki kamaai badhi, phir bhi share gira."
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "WAJAH",
+    "visual": {
+     "card": null,
+     "prompt": "An enormous data centre hall with endless rows of glowing server racks, a giant money funnel pouring stacks of dollar notes into the machines, an almost empty cash box on the floor in the foreground, cool blue light, no text",
+     "type": "art"
+    },
+    "vo": "Ek quarter mein AI data centres par 51.4 billion dollar lage. Free cash flow, yaani bacha hua cash, minus mein."
+   },
+   {
+    "facts_used": [],
+    "label": "SAWAAL",
+    "visual": {
+     "card": null,
+     "prompt": "A boardroom with a long table, worried investors in suits leaning forward, one pointing at a huge server rack drawing on the wall, tense mood, evening light, no text",
+     "type": "art"
+    },
+    "vo": "Investors ka sawaal: itna kharcha, paisa wapas kab?"
+   },
+   {
+    "facts_used": [],
+    "label": "PHAILAAV",
+    "visual": {
+     "card": null,
+     "prompt": "A world map at night with red shockwaves spreading from America across the ocean to Japan, Taiwan and Korea, falling red arrows over glowing city skylines, no text, no logos",
+     "type": "art"
+    },
+    "vo": "Darr Amazon, Intel aur Asia tak phail gaya."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "CRYPTO HACK",
+    "visual": {
+     "card": null,
+     "prompt": "A dark room lit only by an open laptop, digital coins streaming out of the screen like smoke into the night, an empty office chair, eerie green glow, no text, no faces",
+     "type": "art"
+    },
+    "vo": "Usi raat Binance par reportedly 6.3 billion dollar ka hack hua."
+   },
+   {
+    "facts_used": [],
+    "label": "DOMINO",
+    "visual": {
+     "card": null,
+     "prompt": "A long line of golden coins falling like dominoes, each one knocking the next over, chains of borrowed money snapping above them, motion blur, dramatic red light, no text",
+     "type": "art"
+    },
+    "vo": "Bitcoin gira, toh udhaar wale daanv zabardasti kat gaye. Har forced sale ne agla sale karwaya."
+   },
+   {
+    "facts_used": [],
+    "label": "AAPKE LIYE",
+    "visual": {
+     "card": null,
+     "prompt": "Split panel: LEFT a calm bank counter with BANK UNCLE behind a sturdy umbrella shielding a stack of deposits; RIGHT a crypto coin standing alone in the rain with no umbrella, daylight, no text",
+     "type": "art"
+    },
+    "vo": "Bank mein DICGC 5 lakh tak bachata hai, crypto exchange par koi cover nahi."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "SIP",
+    "visual": {
+     "card": null,
+     "prompt": "A small steady stream of coins dropping into a clay piggy bank during a stormy evening, a hand reaching to stop the stream but hesitating, warm lamp light inside a home, no text",
+     "type": "art"
+    },
+    "vo": "Girawat mein SIP rokna sabse mehngi galti hai."
+   },
+   {
+    "facts_used": [],
+    "label": "TAKEAWAY",
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt standing at a crossroads at sunrise, one road leading to a bright futuristic city, side paths crumbling away into fog, calm thoughtful expression, no text",
+     "type": "art"
+    },
+    "vo": "AI ka future bada hai, par har AI share ka nahi. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "SEND",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in a hoodie on a sofa at night, surrounded by glowing coin icons, MUMMY in a saree holding chai looking at him with worry from the doorway, warm room light, no text",
+     "type": "art"
+    },
+    "vo": "Us bhai ko bhejo jo udhaar lekar crypto khelta hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "BITCOIN",
+   "name_hi": "बिटकॉइन",
+   "scene": "A giant golden coin shattering into glowing pieces in front of a towering wall of blood-red falling stock charts, with a vast dark data centre of server racks behind it, dramatic night lighting",
+   "words": [
+    "6.3 BILLION",
+    "LOOT"
+   ],
+   "words_hi": [
+    "6.3 बिलियन",
+    "लूट"
+   ]
+  },
+  "title": "AI shares aur crypto ek saath *dhadaam* 📉"
+ },
+ "status": "posted",
+ "timings": [
+  0.0,
+  4.01,
+  8.38,
+  16.91,
+  21.8,
+  25.65,
+  30.9,
+  37.63,
+  43.28,
+  47.21,
+  52.7
+ ],
+ "topic": {
+  "extra": true,
+  "link": "https://www.cnbc.com/2026/10/29/microsoft-google-ai-capex-estimates.html",
+  "look": "claymation",
+  "published": "2026-10-30T11:20:14.306123+00:00",
+  "slot_ist": "17:05",
+  "source": "chosen",
+  "summary": "Deep news explainer, 55-60 s, Hinglish: WHAT happened, WHY, and HOW it spread so suddenly, then what it means for the viewer. Use only these reported facts, say 'reported' where needed, no stock tips, no predictions. (1) HOOK: 48 ghante mein AI shares aur crypto dono dhadaam: Google ki company Alphabet ke about $500 billion, yaani lagbhag 47 lakh crore rupaye, ek din mein saaf. (2) WHAT, Tue 28 Oct results: kamaai 25% badhi, Google Cloud double hua, par profit per share $2.12 aaya jabki umeed $3.01 thi, badi wajah SpaceX mein lagaye paise par $8.2 billion ka kaagzi nuksaan. Ek hi quarter mein AI data centres par $51.4 billion kharch, isliye free cash flow minus $9.1 billion; is saal $195-205 billion aur 2027 mein usse bhi zyada kharcha. (3) WHY the fall: investors ka sawaal, itna AI kharcha, paisa wapas kab? Wed 29 Oct share about 12.6% gira, 2004 ke baad sabse bura din. (4) HOW it spread: usi raat Amazon ka cash flow lagataar doosre quarter minus, share about 7% gira; Intel about 23% gira; Microsoft ne chip ki kami se kharche ka forecast ghataya. Agle din Asia: Japan Nikkei about 2.75%, Taiwan about 3% gira, South Korea mein trading rokni padi; China ka CSI 300 bear market mein. (5) CRYPTO same night: duniya ke sabse bade crypto exchange Binance par itihaas ka sabse bada hack, about $6.3 billion, ek engineer ke laptop ke zariye; North Korea ke hackers par shak (reported). Withdrawals band, Bitcoin $77,000 se neeche, 24 ghante mein about $1.5 billion ke udhaar wale daanv zabardasti kat gaye, aur har forced sale ne agla sale karwaya, isliye itna achanak. (6) INDIA: oil about $113-116, rupaya about 95 per dollar; reports ke mutabik Nifty IT ulta upar gaya. (7) WHAT IT MEANS FOR YOU: US/tech funds mein kitna paisa hai dekho; crypto exchange par sab paisa mat rakho, aur udhaar (leverage) wale daanv sabse pehle doobte hain; SIP girawat mein band karna sabse mehngi galti. (8) TAKEAWAY: AI ka future bada hai, par har AI share ka nahi. Yeh investment advice nahi hai. Category: ai.",
+  "target_minutes": null,
+  "title": "48 ghante ka bloodbath: AI shares aur crypto ek saath kyun gire",
+  "voice": "voice_g8azc8xcwhlu"
+ },
+ "updated": "2026-10-30T11:31:21+00:00",
+ "writer": "claude"
+}
