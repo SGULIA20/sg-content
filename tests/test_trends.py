@@ -76,3 +76,12 @@ def test_an_empty_gemini_balance_sends_the_top_up_alert_not_a_red_run(tmp_path):
 def test_a_daily_us_market_wrap_is_skipped():
     rows = trends.ranked([_item("US markets today: US stocks end lower as Alphabet revenue miss revives AI capex jitters")], set(), NOW)
     assert rows[0][2] == "daily market call (stale by evening)"
+
+
+def test_a_failed_extra_frees_its_slot_and_the_days_allowance(tmp_path):
+    _main(tmp_path)
+    dead = pieces.Piece(id="2026-11-02-sglearning-x1", channel="sglearning", kind="short", publish_day=TODAY, status="failed-topic")
+    dead.topic = {"title": "x", "slot_ist": "13:00"}
+    pieces.save(dead, tmp_path)
+    made, _sent = _run(tmp_path, [_item("Infosys layoffs: 300 jobs cut")])
+    assert len(made) == 1 and made[0][1] == "13:00"
