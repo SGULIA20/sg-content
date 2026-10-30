@@ -38,7 +38,9 @@ def make(topic: dict, root: Path = ROOT, now_utc: datetime | None = None, slot_i
     today = slots.ist(now_utc).date()
     slot = slot_ist or now_slot(now_utc)
     piece = pieces.Piece(id=next_id(root, today), channel=CHANNEL, kind="short", publish_day=today)
-    piece.topic = {"preset": {**topic, "slot_ist": slot, "extra": True}}
+    from . import trends
+    topic = {**topic, "category": topic.get("category") or trends.category(topic)}
+    piece.topic = {"preset": {**topic, "slot_ist": slot, "extra": True, "graphics": True}}   # news cards, no paid pictures (30 Oct 2026)
     deps = deps or news.news_deps(root)
     deps.topic = lambda p, used: None                       # one story per extra Reel: if its drafts fail, nothing else slips in
     piece = pipeline.make(piece, deps, root)

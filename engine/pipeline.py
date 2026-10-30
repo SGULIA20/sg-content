@@ -175,10 +175,27 @@ def _place_photo(piece: Piece, deps: Deps, out_dir: Path, out: Path, scene: dict
     return out
 
 
+def graphics(piece: Piece) -> bool:
+    """News Reels drawn as code-made cards, no paid pictures (founder, 30 Oct 2026)."""
+    t = piece.topic or {}
+    return bool(t.get("graphics") or (t.get("preset") or {}).get("graphics"))
+
+
+def _newscard(piece: Piece, i: int, scene: dict, deps: Deps, out: Path, size: tuple) -> Path:
+    from . import newscard, storyframe
+    t = {**(piece.topic.get("preset") or {}), **piece.topic}
+    scenes = piece.script["scenes"]
+    roundup = "TOP 10 ROUNDUP" in str(t.get("summary", ""))
+    data = newscard.data(scene, i, len(scenes), t.get("category") or "money", roundup)
+    return deps.render_card("newscard", data, out, (size[0], size[1] - int(size[1] * storyframe.TOP)))
+
+
 def _visual_for(piece: Piece, i: int, scene: dict, deps: Deps, out_dir: Path, size: tuple, line=None) -> Path:
     v = scene.get("visual") or {}
     kind = v.get("type", "art")
     out = out_dir / f"visual{i:02d}.png"
+    if graphics(piece) and piece.kind == "short":
+        return _newscard(piece, i, scene, deps, out, size)
     if i == 0 and piece.channel == "arthvan" and piece.kind == "short":
         photo = _place_photo(piece, deps, out_dir, out, scene)
         if photo:
@@ -256,6 +273,9 @@ def picture_jobs(piece: Piece, deps: Deps) -> list:
 def _thumb(piece: Piece, deps: Deps, out_dir: Path) -> Path:
     """The topic-name thumbnail (engine.thumbs); Shorts also get a 9:16 cover for Instagram."""
     from . import thumbs
+    if is_story(piece) and graphics(piece) and (out_dir / "visual00.png").exists():     # the first news card stands in for the picture
+        return thumbs.make(piece, out_dir, paint=lambda prompt, out, aspect=None, refs=None: out_dir / "visual00.png",
+                           render=deps.render_card)["thumb"]
     if is_story(piece):
         return thumbs.make(piece, out_dir, paint=deps.paint, render=deps.render_card, cast_refs=deps.cast_refs or (lambda s, **kw: []))["thumb"]
     title = piece.script["captions"]["youtube"]["title"]
@@ -373,7 +393,7 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
         pieces.transition(piece, "rejected", f"try {attempt + 1}: " + "; ".join(reasons))
         pieces.save(piece, root)
         fixable = ("length", "label", "card", "hashtags", "disclaimer", "title", "threads", "instagram",
-                   "numbers without a source", "hook", "opener", "send")   # same topic: drop those numbers, rewrite the opening or the ending
+                   "numbers without a source", "hook", "opener", "send", "jargon")   # same topic: drop those numbers, rewrite the opening or the ending
         revise = "; ".join(reasons) if all(r.startswith(fixable) for r in reasons) else None      # formatting misses: same topic, trimmed draft
     if script is None:
         return piece
@@ -413,7 +433,7 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
     pieces.save(pieces.transition(piece, "voiced"), root)
     # 6-7: pictures and cards (every panel and the thumbnail go out as one half-price batch job first; the per-scene calls then hit the cache)
     try:
-        if deps.art_batch and is_story(piece):
+        if deps.art_batch and is_story(piece) and not graphics(piece):
             try:
                 if deps.art_batch(piece, picture_jobs(piece, deps)) == "painting":
                     pieces.save(pieces.transition(piece, "painting", "picture job still running; the next run collects it"), root)

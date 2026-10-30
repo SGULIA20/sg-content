@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+/* 30 Oct 2026 (founder: "for top 10 news use graphics made internally with zero cost, any 3-4 breaking news also"): a news card drawn in
+   code, no paid picture. Sits under the title band; the captions run over the bottom, so everything that matters is in the top part. */
+@font-face{font-family:Dev;src:url({{FONTS}}/NotoSansDevanagari.ttf)}
+@font-face{font-family:Inter;src:url({{FONTS}}/Inter.ttf)}
+html,body{margin:0;padding:0;background:#0B0F1A}
+#root{position:relative;width:{{W}}px;height:{{H}}px;overflow:hidden;font-family:Inter,Dev,sans-serif;color:#fff;text-align:center;
+      background:radial-gradient(ellipse at 50% 22%,{{glow}} 0,#0B0F1A 62%)}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:90px 90px}
+.wrap{position:absolute;left:6%;right:6%;top:13%;display:flex;flex-direction:column;align-items:center;gap:38px}
+.tag{font-weight:900;font-size:46px;letter-spacing:3px;padding:10px 30px;border-radius:12px;background:{{accent}};color:#000;text-transform:uppercase}
+.tag:empty{display:none}
+.icon{font-size:270px;line-height:1.05;filter:drop-shadow(0 14px 18px rgba(0,0,0,.6))}
+.big{font-weight:900;font-size:170px;line-height:1;letter-spacing:-4px;color:#FFE14D;text-shadow:0 8px 0 #000}
+.big:empty{display:none}
+.line{font-weight:800;font-size:76px;line-height:1.15;max-width:100%}
+</style></head><body><div id="root"><div class="grid"></div><div class="wrap">
+  <div class="tag">{{tag}}</div>
+  <div class="icon">{{icon}}</div>
+  <div class="big">{{big_number}}</div>
+  <div class="line">{{line}}</div>
+</div>
+<script>const b=document.querySelector(".big");const n=b.textContent.trim().length;if(n>7){b.style.fontSize=Math.max(90,Math.floor(1050/n))+"px"}
+const l=document.querySelector(".line");if(l.textContent.trim().length>34){l.style.fontSize="62px"}</script>
+</div></body></html>
