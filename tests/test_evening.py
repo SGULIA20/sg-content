@@ -119,5 +119,5 @@ def test_extra_reels_get_their_own_rows_on_the_9pm_card(tmp_path):
 
 
 def test_tomorrow_plan_shows_the_extra_reels():
-    assert "up to 1 extra Learning with SG Reel from the research cycle (slots 08:30, 12:00, 18:15)" in evening.tomorrow_plan(date(2026, 10, 30))
-    assert "up to 2 extra Learning with SG Reels" in evening.tomorrow_plan(date(2026, 11, 5))
+    assert "up to 1 extra Learning with SG Reel from the research cycle (slots 08:30, 12:00, 18:15)" in evening.tomorrow_plan(date(2026, 10, 29))
+    assert "up to 3 extra Learning with SG Reels" in evening.tomorrow_plan(date(2026, 10, 30))

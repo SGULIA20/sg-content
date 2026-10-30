@@ -244,3 +244,14 @@ def test_short_ends_with_a_named_send_line():
     assert any("last spoken scene" in r for r in lint.check_send(p))
     p.kind = "long"
     assert lint.check_send(p) == []
+
+
+def test_money_jargon_must_be_said_in_plain_words():
+    from engine.pieces import Piece
+    from datetime import date
+    p = Piece(id="x", channel="sglearning", kind="short", publish_day=date(2026, 11, 1))
+    p.script = {"scenes": [{"vo": "Free cash flow minus mein, aur leverage wale traders liquidated."}, {"vo": "Kharche ke baad paisa nahi bacha."}]}
+    hits = lint.jargon_hits(p)
+    assert hits and "free cash flow" in hits[0] and "leverage" in hits[0] and "liquidated" in hits[0]
+    p.script = {"scenes": [{"vo": "Kharche ke baad haath mein paisa nahi bacha; udhaar wale daanv zabardasti bike."}]}
+    assert lint.jargon_hits(p) == []

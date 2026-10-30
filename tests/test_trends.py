@@ -42,14 +42,15 @@ def test_two_reels_in_a_row_never_share_a_category_and_the_bank_fills_quiet_cycl
 
 def test_once_todays_extras_are_made_a_cycle_only_reports(tmp_path):
     _main(tmp_path)
-    x = pieces.Piece(id="2026-11-02-sglearning-x1", channel="sglearning", kind="short", publish_day=TODAY, status="uploaded")
-    x.topic = {"slot_ist": "13:00", "category": "ai"}; pieces.save(x, tmp_path)
+    for n, slot in enumerate(("13:00", "16:30", "22:45"), 1):
+        x = pieces.Piece(id=f"2026-11-02-sglearning-x{n}", channel="sglearning", kind="short", publish_day=TODAY, status="uploaded")
+        x.topic = {"slot_ist": slot, "category": "ai"}; pieces.save(x, tmp_path)
     made, sent = _run(tmp_path, [_item("RBI cuts repo rate")])
-    assert trends.extras_today(TODAY) == 1 and made == [] and "made; next cycle reports only" in sent[0]
+    assert trends.extras_today(TODAY) == 3 and made == [] and "made; next cycle reports only" in sent[0]
 
 
 def test_the_ramp():
-    assert trends.extras_today(date(2026, 10, 29)) == 1 and trends.extras_today(date(2026, 11, 5)) == 2 and trends.extras_today(date(2026, 11, 20)) == 3
+    assert trends.extras_today(date(2026, 10, 29)) == 1 and trends.extras_today(date(2026, 10, 31)) == 3 and trends.extras_today(date(2026, 11, 20)) == 3
 
 
 def test_no_voice_credit_on_youtube_or_instagram():
@@ -85,3 +86,23 @@ def test_a_failed_extra_frees_its_slot_and_the_days_allowance(tmp_path):
     pieces.save(dead, tmp_path)
     made, _sent = _run(tmp_path, [_item("Infosys layoffs: 300 jobs cut")])
     assert len(made) == 1 and made[0][1] == "13:00"
+
+
+def test_the_first_cycle_of_the_day_makes_the_top_10_from_ten_fresh_stories(tmp_path):
+    _main(tmp_path)
+    early = datetime(2026, 11, 2, 0, 30, tzinfo=timezone.utc)                    # 06:00 India
+    titles = ["Bitcoin crashes 8% after Binance hack", "Gold price hits record", "Infosys hiring 20,000 freshers", "Petrol price cut Rs 2",
+              "Nvidia chip sales record", "Rupee falls to 95", "Tata Motors profit jumps", "Crude oil at $113", "Home loan rates cut",
+              "OpenAI launches new model", "Silver price surges"]
+    items = [{"title": t, "summary": "", "link": t, "published": early - timedelta(hours=3), "rank": 1, "source": "ET"} for t in titles]
+    made, sent = [], []
+    def make(topic, root_, now, slot_ist=None, notify=None):
+        made.append((topic, slot_ist))
+        p = pieces.Piece(id=f"2026-11-02-sglearning-x{len(made)}", channel="sglearning", kind="short", publish_day=TODAY, status="uploaded")
+        p.topic = {**topic, "slot_ist": slot_ist}; pieces.save(p, root_); return p
+    trends.run(tmp_path, early, items=items, notify=sent.append, make=make, bank=[])
+    top = [t for t, s in made if t.get("roundup")]
+    assert len(top) == 1 and made[0][1] == "09:30" and top[0]["summary"].startswith("TOP 10 ROUNDUP")
+    assert top[0]["summary"].count("\n") == 10
+    trends.run(tmp_path, early + timedelta(hours=1), items=items, notify=sent.append, make=make, bank=[])
+    assert len([t for t, s in made if t.get("roundup")]) == 1                 # once a day

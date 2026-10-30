@@ -38,3 +38,6 @@ CAPTIONS
 - carousel: true only when the piece has at least 3 number cards worth reading as slides; otherwise false.
 
 Return only the JSON object that matches the schema. No prose before or after.
+
+PLAIN LANGUAGE (founder, 30 Oct 2026: "people on insta youtube cant understand all this ... reels will be scrolled within 1-2 seconds"): write the way you would explain it to a friend at a chai stall who has never read a business paper. Every line must make sense to a 15-year-old on first hearing. Short sentences (at most 12 words a line). Translate every money or tech term into an everyday picture instead of naming it: not "free cash flow minus" but "kharche ke baad haath mein paisa nahi bacha"; not "leverage/liquidation" but "udhaar lekar lagaya paisa, zabardasti bik gaya"; not "capex" but "data centres banane ka kharcha"; not "bear market" but "share 20% se zyada gir chuke". Big numbers in rupees people feel ("47 lakh crore, yaani har Indian ke 33,000 rupaye") rather than only in dollars. The first line is the most shocking fact or a direct question, with its number, in at most 10 words.
+

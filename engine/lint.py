@@ -145,12 +145,27 @@ def all_text(piece: Piece) -> str:
                         ig.get("caption", ""), th.get("text", ""), *cards])
 
 
+JARGON = ["free cash flow", "cash flow", "capex", "liquidation", "liquidated", "leverage", "ebitda", "basis point", "bps", "bear market",
+          "bull market", "hyperscaler", "valuation", "market cap", "guidance", "yield", "open interest", "derivative", "fii", "dii",
+          "q1 ", "q2 ", "q3 ", "q4 ", "eps", "headwind", "tailwind", "macro", "fiscal deficit"]     # founder, 30 Oct 2026: plain words only
+
+
+def jargon_hits(piece: Piece) -> list:
+    """Money and tech jargon in the spoken lines of a Learning with SG Short; each must be said in plain words instead."""
+    if piece.channel != "sglearning" or piece.kind != "short":
+        return []
+    spoken = " " + " ".join(sc.get("vo", "") for sc in (piece.script or {}).get("scenes", [])).lower() + " "
+    found = [j.strip() for j in JARGON if re.search(r"(?<![a-z])" + re.escape(j.strip()) + r"(?![a-z])", spoken)]
+    return [f"jargon: say {', '.join(found)} in everyday words (founder: a 15-year-old must follow it)"] if found else []
+
+
 def check_script(piece: Piece, banned: dict, prior_scripts: list) -> list:
     reasons = []
     s = piece.script or {}
     scenes = s.get("scenes", [])
     text = script_text(piece)
     reasons += _banned_hits(text, banned, ["politics", "communal", "advice"])
+    reasons += jargon_hits(piece)
     if piece.channel == "arthvan":
         reasons += _banned_hits(text, banned, ["myth_forbidden"])
         for i, sc in enumerate(scenes):
