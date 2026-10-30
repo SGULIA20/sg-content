@@ -40,7 +40,9 @@
  },
  "kind": "short",
  "publish_day": "2026-10-30",
- "reasons": [],
+ "reasons": [
+  "taken down: replaced by a remake"
+ ],
  "script": {
   "captions": {
    "instagram": {
@@ -215,7 +217,7 @@
   },
   "title": "*AI* kharche ne Google ko giraya, aapka paisa? 📉"
  },
- "status": "uploaded",
+ "status": "rejected",
  "timings": [
   0.0,
   6.17,
@@ -237,10 +239,14 @@
   "slot_ist": "16:52",
   "source": "chosen",
   "summary": "News explainer, 50-60 s, Hinglish. Use only these reported figures and say 'reported': (1) HOOK: Google ki parent Alphabet ka share ek din mein about 12% gira (29 Oct, US) - record mein sabse bura din, roughly $500 billion (about Rs 42 lakh crore) value saaf. (2) WHAT: Q3 results mein search aur YouTube ad revenue estimate se kam; free cash flow minus $9.07 billion, kyunki AI data centres par bhaari kharcha. Nasdaq about 1.4% gira; Intel after-hours about 23%, Amazon about 7% gire. (3) WHY: AI par trillion-dollar kharcha ho raha hai, par kamaai utni tez nahi; investors poochh rahe hain paisa wapas kab aayega; aur darr ki AI chatbots Google search ke ad business ko hi kha jayenge. (4) IMPACT, Asia: agle din Japan Nikkei about 2.75% gira, Taiwan about 3%, SoftBank about 7%, South Korea mein chip shares (SK Hynix, Samsung) girne se trading halt; China ka CSI 300 bear market mein, STAR50 June ke peak se about 40% neeche. (5) INDIA twist: reports ke mutabik Nifty IT ulta about 2.3% upar gaya - investors ne Indian IT ko safer maana (say 'reported'). (6) WHAT IT MEANS FOR YOU: agar aapke paas US/Nasdaq funds ya US stocks hain (Zerodha/INDmoney se), check karo kitna paisa sirf AI/tech mein hai; ek sector mein 20-25% se zyada ho toh risk zyada. SIP chal rahi hai toh girne par band karna sabse mehnga galti hoti hai - kam daam par zyada units milti hain. (7) TAKEAWAY: AI ka future bada hai, par har AI company ka share nahi. Disclaimer: yeh investment advice nahi hai. No stock tips, no buy/sell calls, no predictions. Category: ai.",
+  "taken_down": {
+   "at": "2026-10-30T11:19:19+00:00",
+   "youtube": "deleted"
+  },
   "target_minutes": null,
   "title": "AI bloodbath: Alphabet's worst day ever wipes about $500 billion, Asia and China tech fall. What it means for your money",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-30T11:13:20+00:00",
+ "updated": "2026-10-30T11:19:19+00:00",
  "writer": "claude"
 }
