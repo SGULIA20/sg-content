@@ -13,6 +13,7 @@ gh secret set NAME --repo SGULIA20/sg-content < file-with-the-value
 | `YT_CLIENT_ID`, `YT_CLIENT_SECRET` | the Google Cloud OAuth client already used by arthvan-media | produce (upload), weekly report |
 | `YT_SGLEARNING_REFRESH_TOKEN` | OAuth refresh token for Learning with SG (same value as arthvan-media) | produce, report |
 | `YT_ARTHVAN_REFRESH_TOKEN` | OAuth refresh token for SG-MYTH-WORLD (same value as arthvan-media) | produce, report |
+| `ADS_REFRESH_TOKEN` | `python3 scripts/yt_authorize.py ads` (Google Ads permission on the same OAuth client; sign in with the Ads account's owner) | ads watch |
 | `IG_ACCESS_TOKEN`, `IG_USER_ID` | Instagram Graph long-lived token and the IG user id for sanjeev_gulia (same as arthvan-media) | publish, report, refresh |
 | `THREADS_ACCESS_TOKEN`, `THREADS_USER_ID` | Threads API token and user id (same as arthvan-media) | publish, refresh |
 | `LINKEDIN_CLIENT_ID`, `LINKEDIN_CLIENT_SECRET` (optional, local only) | linkedin.com/developers → the sg-content app → Auth tab; products "Sign In with LinkedIn using OpenID Connect" and "Share on LinkedIn"; redirect URL `http://localhost:8765/callback` | `python -m engine.linkedin --auth` on the Mac (not a GitHub secret) |

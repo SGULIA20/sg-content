@@ -2,6 +2,7 @@
 
     python3 scripts/yt_authorize.py sglearning
     python3 scripts/yt_authorize.py arthvan
+    python3 scripts/yt_authorize.py ads          Google Ads (founder, 30 Oct 2026): sign in with the account that owns the Ads account
 
 It opens Google's consent page in your browser; sign in with the Google account that owns THAT channel and pick the channel.
 The new refresh token is written straight into ~/sg-content/.env (YT_<CHANNEL>_REFRESH_TOKEN); nothing is printed or logged.
@@ -21,18 +22,19 @@ from engine import secrets  # noqa: E402
 SCOPES = "https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/youtube.force-ssl"
 PORT = 8765
 ENV = Path.home() / "sg-content" / ".env"
-KEYS = {"sglearning": "YT_SGLEARNING_REFRESH_TOKEN", "arthvan": "YT_ARTHVAN_REFRESH_TOKEN"}
+KEYS = {"sglearning": "YT_SGLEARNING_REFRESH_TOKEN", "arthvan": "YT_ARTHVAN_REFRESH_TOKEN", "ads": "ADS_REFRESH_TOKEN"}
+ADS_SCOPE = "https://www.googleapis.com/auth/adwords"
 
 
 def main() -> int:
     if len(sys.argv) != 2 or sys.argv[1] not in KEYS:
-        print("usage: python3 scripts/yt_authorize.py sglearning|arthvan"); return 2
+        print("usage: python3 scripts/yt_authorize.py sglearning|arthvan|ads"); return 2
     channel = sys.argv[1]
     client_id, client_secret = secrets.get("YT_CLIENT_ID"), secrets.get("YT_CLIENT_SECRET")
     state = pysecrets.token_urlsafe(16)
     redirect = f"http://localhost:{PORT}/"
     url = "https://accounts.google.com/o/oauth2/v2/auth?" + urllib.parse.urlencode({
-        "client_id": client_id, "redirect_uri": redirect, "response_type": "code", "scope": SCOPES,
+        "client_id": client_id, "redirect_uri": redirect, "response_type": "code", "scope": ADS_SCOPE if channel == "ads" else SCOPES,
         "access_type": "offline", "prompt": "consent", "state": state})
     got = {}
 
@@ -66,7 +68,10 @@ def main() -> int:
     lines = ENV.read_text().splitlines() if ENV.exists() else []
     lines = [ln for ln in lines if not ln.startswith(key + "=")] + [f"{key}={tok['refresh_token']}"]
     ENV.write_text("\n".join(lines) + "\n")
-    print(f"{key} updated in {ENV}. Next: python3 -m engine.subtitles <piece-id> for any long already uploaded.")
+    if channel == "ads":
+        print(f"{key} saved in {ENV}. Next: grep '^{key}=' {ENV} | cut -d= -f2- | gh secret set {key} --repo SGULIA20/sg-content")
+    else:
+        print(f"{key} updated in {ENV}. Next: python3 -m engine.subtitles <piece-id> for any long already uploaded.")
     return 0
 
 
