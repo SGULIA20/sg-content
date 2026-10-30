@@ -50,15 +50,20 @@ def extras_today(day: date) -> int:
     return n
 
 
+DEAD = ("failed", "rejected")                     # 30 Oct 2026: an extra that failed when the Gemini credit ran out used up the day's allowance
+
+
 def todays_reels(root: Path, day: date) -> list:
-    """Today's Learning with SG Reels in posting order: the daily one and the extras, each with its India time and category."""
+    """Today's Learning with SG Reels in posting order: the daily one and the extras that were made or are being made (a failed or
+    taken-down extra frees its slot and its place in the day's allowance), each with its India time."""
     out = []
     main = pieces.load(slots.piece_id(day, CHANNEL, "short"), root)
     if main is not None:
         out.append((main.topic.get("slot_ist") or "18:30", main))
     n = 1
     while (p := pieces.load(f"{day.isoformat()}-{CHANNEL}-x{n}", root)) is not None:
-        out.append((p.topic.get("slot_ist") or "23:59", p))
+        if not p.status.startswith(DEAD):
+            out.append((p.topic.get("slot_ist") or "23:59", p))
         n += 1
     return sorted(out, key=lambda x: x[0])
 
