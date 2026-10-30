@@ -1,0 +1,42 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:03.81,Default,,0,0,0,,Google ki company ke 500 billion
+Dialogue: 0,0:00:03.81,0:00:04.45,Default,,0,0,0,,dollar,
+Dialogue: 0,0:00:04.45,0:00:05.72,Default,,0,0,0,,ek din mein saaf.
+Dialogue: 0,0:00:06.17,0:00:07.38,Default,,0,0,0,,Reportedly,
+Dialogue: 0,0:00:07.38,0:00:10.71,Default,,0,0,0,,Alphabet ka share 12.64 percent gira,
+Dialogue: 0,0:00:10.71,0:00:13.13,Default,,0,0,0,,record ka sabse bura din.
+Dialogue: 0,0:00:13.58,0:00:14.38,Default,,0,0,0,,Wajah,
+Dialogue: 0,0:00:14.38,0:00:17.16,Default,,0,0,0,,ad kamaai umeed se kam,
+Dialogue: 0,0:00:17.16,0:00:19.94,Default,,0,0,0,,aur AI par bhaari kharcha.
+Dialogue: 0,0:00:20.39,0:00:23.06,Default,,0,0,0,,Free cash flow yaani kharche ke
+Dialogue: 0,0:00:23.06,0:00:24.40,Default,,0,0,0,,baad bacha cash,
+Dialogue: 0,0:00:24.40,0:00:26.07,Default,,0,0,0,,seedha minus mein.
+Dialogue: 0,0:00:26.52,0:00:29.43,Default,,0,0,0,,Intel bhi reportedly 23 percent gira,
+Dialogue: 0,0:00:29.43,0:00:31.00,Default,,0,0,0,,Asia ke tech shares bhi.
+Dialogue: 0,0:00:31.45,0:00:33.26,Default,,0,0,0,,Par reports ke mutabik,
+Dialogue: 0,0:00:33.26,0:00:35.85,Default,,0,0,0,,Indian IT shares ulta upar gaye.
+Dialogue: 0,0:00:36.30,0:00:38.40,Default,,0,0,0,,Aapke paas US fund hai?
+Dialogue: 0,0:00:38.40,0:00:39.10,Default,,0,0,0,,Dekho,
+Dialogue: 0,0:00:39.10,0:00:41.90,Default,,0,0,0,,kitna paisa sirf tech mein hai.
+Dialogue: 0,0:00:42.35,0:00:44.43,Default,,0,0,0,,Ek sector mein 20 se 25
+Dialogue: 0,0:00:44.43,0:00:45.59,Default,,0,0,0,,percent se zyada,
+Dialogue: 0,0:00:45.59,0:00:46.51,Default,,0,0,0,,toh risk zyada.
+Dialogue: 0,0:00:46.96,0:00:49.39,Default,,0,0,0,,SIP mein girawat ka matlab,
+Dialogue: 0,0:00:49.39,0:00:51.52,Default,,0,0,0,,kam daam par zyada units.
+Dialogue: 0,0:00:51.97,0:00:53.94,Default,,0,0,0,,AI ka future bada hai,
+Dialogue: 0,0:00:53.94,0:00:55.91,Default,,0,0,0,,par har AI share ka nahi.
+Dialogue: 0,0:00:55.91,0:00:58.37,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:58.82,0:01:00.46,Default,,0,0,0,,Us bhai ko bhejo jo sirf
+Dialogue: 0,0:01:00.46,0:01:01.86,Default,,0,0,0,,AI stocks khareedta hai.

@@ -1,0 +1,245 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 500.0,
+   "quote": "During the regular session, Alphabet fell 12.64%, its largest one-day drop on record, wiping out about $500 billion in market value.",
+   "source_date": "2026-10-29",
+   "source_name": "Yahoo Finance",
+   "source_url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-29-dow-sp-500-nasdaq-alphabet-microsoft-earnings-130305714.html",
+   "text": "Alphabet lost approximately $500 billion in market capitalization after its share price dropped 12.64% in a single session.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "reported",
+   "number": 23.0,
+   "quote": "The shares fell about 21–23% after hours, to around $72 from a close of $92.07.",
+   "source_date": "2026-10-29",
+   "source_name": "Yahoo Finance",
+   "source_url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-29-dow-sp-500-nasdaq-alphabet-microsoft-earnings-130305714.html",
+   "text": "Intel shares declined by approximately 23% in extended trading following weak forward quarterly guidance.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-10-30-sglearning-x2",
+ "ids": {
+  "budget": {
+   "day": "2026-10-30",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 39.0,
+   "usd": 0.15252,
+   "voice": 11
+  },
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "EI8LkLuyS1Y"
+ },
+ "kind": "short",
+ "publish_day": "2026-10-30",
+ "reasons": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Google ki company ke 500 billion dollar, ek din mein saaf. 📉\nReportedly AI par bhaari kharcha, aur kamaai umeed se kam.\nAapke US fund mein kitna paisa sirf tech mein hai?\nYeh investment advice nahi hai.\nUs bhai ko bhejo jo kehta hai AI share kabhi nahi girega.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#StockMarketIndia",
+     "#ShareMarket",
+     "#InvestingIndia",
+     "#MutualFunds",
+     "#SIP",
+     "#HinglishFinance",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Google ki company ke reportedly 500 billion dollar ek din mein saaf. AI par kharcha bada, kamaai kam. Aapke paise ka kitna hissa sirf tech mein hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Google ki company Alphabet ke reportedly 500 billion dollar ek din mein saaf ho gaye. AI par bhaari kharcha aur kam ad kamaai ne investors ko daraya, aur Asia ke tech shares bhi gire. Aapke portfolio mein kitna paisa sirf tech mein hai, yeh check karna zaroori hai. Us bhai ko bhejo jo kehta hai AI share kabhi nahi girega.",
+    "tags": [
+     "Google share",
+     "Alphabet",
+     "AI stocks",
+     "Nasdaq",
+     "US stocks India",
+     "tech crash",
+     "SIP",
+     "mutual funds",
+     "Nifty IT",
+     "diversification",
+     "Hinglish finance"
+    ],
+    "title": "Google share crash: aapke US fund ka kya?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us bhai ko bhejo jo sirf AI stocks khareedta hai.",
+  "hook": "Google ki company ke 500 billion dollar, ek din mein saaf.",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "A colossal red downward arrow smashing through the roof of a glowing futuristic data centre at night, dollar notes and coins exploding into the dark sky, dramatic wide shot, no text",
+     "type": "art"
+    },
+    "vo": "Google ki company ke 500 billion dollar, ek din mein saaf."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "A huge trading floor in New York at evening, giant wall screens glowing deep red with a steep falling line, traders frozen in shock, papers in the air, no text or numbers visible",
+     "type": "art"
+    },
+    "vo": "Reportedly, Alphabet ka share 12.64 percent gira, record ka sabse bura din."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A split balance scale: on one side a small pile of coins labelled only by ad billboard icons, on the other side towering stacks of server racks and chips pushing the scale down, moody blue light, no text",
+     "type": "art"
+    },
+    "vo": "Wajah, ad kamaai umeed se kam, aur AI par bhaari kharcha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A large corporate vault door swung open, the vault inside nearly empty, a few coins on the floor, cables from a data centre snaking in and draining it, cold grey light, no text",
+     "type": "art"
+    },
+    "vo": "Free cash flow yaani kharche ke baad bacha cash, seedha minus mein."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "A night map of Asia seen from above, city lights of Tokyo, Taipei and Seoul flickering red one after another like falling dominoes, chip factories dimming, dramatic, no text",
+     "type": "art"
+    },
+    "vo": "Intel bhi reportedly 23 percent gira, Asia ke tech shares bhi."
+   },
+   {
+    "facts_used": [],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "A sunny Bengaluru IT park with glass office towers, a small green upward arrow rising above them while dark red storm clouds hover far away on the horizon, hopeful mood, no text",
+     "type": "art"
+    },
+    "vo": "Par reports ke mutabik, Indian IT shares ulta upar gaye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A young man in a hoodie (BHAI) at a desk at night, a big pie chart drawn on a whiteboard behind him where one slice in blue is almost the whole circle, he looks worried, no text",
+     "type": "art"
+    },
+    "vo": "Aapke paas US fund hai? Dekho, kitna paisa sirf tech mein hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "All eggs piled high in one wobbling basket on the edge of a table, the basket tipping, several other empty baskets nearby, warm kitchen light, no text",
+     "type": "art"
+    },
+    "vo": "Ek sector mein 20 se 25 percent se zyada, toh risk zyada."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A shop counter where a SHOPKEEPER pours more grains into the same sized bag than before, a sale-style happy customer, symbolising more units for the same money, bright afternoon, no text",
+     "type": "art"
+    },
+    "vo": "SIP mein girawat ka matlab, kam daam par zyada units."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG, early forties, beard, striped shirt, standing calmly in front of a bright futuristic city skyline at dusk, one tower glowing strong while another has cracks, thoughtful expression, no text",
+     "type": "art"
+    },
+    "vo": "AI ka future bada hai, par har AI share ka nahi. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A cosy living room at night, a family sitting together, a young man in a hoodie (BHAI) on the sofa getting a message while his sister in office wear smiles knowingly, warm lamp light, no text",
+     "type": "art"
+    },
+    "vo": "Us bhai ko bhejo jo sirf AI stocks khareedta hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "GOOGLE",
+   "name_hi": "गूगल",
+   "scene": "A colossal red arrow smashing down through a glowing AI data centre at night, dollar notes swirling into the air above a dark city skyline.",
+   "words": [
+    "$500 BN",
+    "DOOBA"
+   ],
+   "words_hi": [
+    "$500 बिलियन",
+    "डूबा"
+   ]
+  },
+  "title": "*AI* kharche ne Google ko giraya, aapka paisa? 📉"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  6.17,
+  13.58,
+  20.39,
+  26.52,
+  31.45,
+  36.3,
+  42.35,
+  46.96,
+  51.97,
+  58.82
+ ],
+ "topic": {
+  "extra": true,
+  "link": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-29-dow-sp-500-nasdaq-alphabet-microsoft-earnings-130305714.html",
+  "look": "claymation",
+  "published": "2026-10-30T11:07:07.938946+00:00",
+  "slot_ist": "16:52",
+  "source": "chosen",
+  "summary": "News explainer, 50-60 s, Hinglish. Use only these reported figures and say 'reported': (1) HOOK: Google ki parent Alphabet ka share ek din mein about 12% gira (29 Oct, US) - record mein sabse bura din, roughly $500 billion (about Rs 42 lakh crore) value saaf. (2) WHAT: Q3 results mein search aur YouTube ad revenue estimate se kam; free cash flow minus $9.07 billion, kyunki AI data centres par bhaari kharcha. Nasdaq about 1.4% gira; Intel after-hours about 23%, Amazon about 7% gire. (3) WHY: AI par trillion-dollar kharcha ho raha hai, par kamaai utni tez nahi; investors poochh rahe hain paisa wapas kab aayega; aur darr ki AI chatbots Google search ke ad business ko hi kha jayenge. (4) IMPACT, Asia: agle din Japan Nikkei about 2.75% gira, Taiwan about 3%, SoftBank about 7%, South Korea mein chip shares (SK Hynix, Samsung) girne se trading halt; China ka CSI 300 bear market mein, STAR50 June ke peak se about 40% neeche. (5) INDIA twist: reports ke mutabik Nifty IT ulta about 2.3% upar gaya - investors ne Indian IT ko safer maana (say 'reported'). (6) WHAT IT MEANS FOR YOU: agar aapke paas US/Nasdaq funds ya US stocks hain (Zerodha/INDmoney se), check karo kitna paisa sirf AI/tech mein hai; ek sector mein 20-25% se zyada ho toh risk zyada. SIP chal rahi hai toh girne par band karna sabse mehnga galti hoti hai - kam daam par zyada units milti hain. (7) TAKEAWAY: AI ka future bada hai, par har AI company ka share nahi. Disclaimer: yeh investment advice nahi hai. No stock tips, no buy/sell calls, no predictions. Category: ai.",
+  "target_minutes": null,
+  "title": "AI bloodbath: Alphabet's worst day ever wipes about $500 billion, Asia and China tech fall. What it means for your money",
+  "voice": "voice_1kn3blc2u13l"
+ },
+ "updated": "2026-10-30T11:13:20+00:00",
+ "writer": "claude"
+}
