@@ -201,8 +201,9 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, items=None, notify=t
         piece = make(choice, root, now_utc, slot_ist=slot, notify=notify)
         if piece.status != "uploaded" and produce.out_of_credit(root, [(piece.id, piece.status)]):
             notify(produce.CREDIT_ALERT)                     # 29 Oct 2026: an empty Gemini balance showed only as a red research run
-            return 0
-        return 0 if piece.status == "uploaded" else 1
+        # 31 Oct 2026: a draft the checks turned down is reported on Telegram (extra.make) and its slot goes to the next cycle; it is not a
+        # failed run, so the watchdog stays quiet. Only a crash makes the run red.
+        return 0
     return 0
 
 

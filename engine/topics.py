@@ -53,7 +53,8 @@ BANNED_TOPIC = ["modi", "rahul gandhi", "bjp", "congress", "election", "rally", 
                 "stocks in news", "stocks to buy", "stocks to watch", "top picks", "buy or sell", "target price", "multibagger",
                 "stock recommendations", "hot stocks", "stocks in focus", "shares to buy"]
 # market plumbing nobody at home needs: auctions, operations notices, securities results. Never a Short on its own.
-PLUMBING = ["variable rate repo", "vrr", "money market operations", "auction", "government securities", "state government securities",
+PLUMBING = ["premature redemption", "redemption price", "redemption of", "tranche",   # routine notices (31 Oct 2026: an SGB redemption-price notice was picked)
+            "variable rate repo", "vrr", "money market operations", "auction", "government securities", "state government securities",
             "treasury bill", "t-bill", "laf", "omo ", "switch auction", "conversion/switch", "sdl", "g-sec", "under laf"]
 FRESH_HOURS = 24
 # A buffered Short posts up to a week later (founder, 30 Oct 2026: "today, 22 Oct" Shorts posted on 25-27 Oct reached 3-15 people):
