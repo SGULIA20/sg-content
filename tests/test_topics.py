@@ -40,9 +40,8 @@ def test_pick_skips_used_and_old():
     items = _items()
     best = topics.pick_finance(items, used_links=set(), now=NOW)
     assert best["link"].endswith("101.cms")
-    second = topics.pick_finance(items, used_links={best["link"]}, now=NOW)
-    assert second["link"].endswith("102.cms")           # the repo-rate item is 9 days old, the rally is banned
-    assert topics.pick_finance(items, used_links={best["link"], second["link"]}, now=NOW) is None
+    # the rest: "Sensex ends flat" is the day's index move (30 Oct 2026), the repo-rate item is 9 days old, the rally is banned
+    assert topics.pick_finance(items, used_links={best["link"]}, now=NOW) is None
 
 
 def test_myth_rotation_skips_used_and_wraps(tmp_path):
@@ -111,3 +110,9 @@ def test_famous_myth_topics_go_first_then_bank_order(tmp_path):
     assert topics.next_myth(tmp_path, {"b"})["id"] == "c"
     assert topics.next_myth(tmp_path, {"b", "c"})["id"] == "a"
     assert topics.next_myth(tmp_path, {"a", "b", "c"})["id"] == "a"
+
+
+def test_the_days_index_move_is_never_a_topic():
+    from engine import topics
+    assert topics.score({"title": "Sensex 829 upar, phir bhi loss kyun?", "summary": "salary EMI", "rank": 5}) < 0
+    assert topics.score({"title": "Petrol price cut by Rs 2", "summary": "", "rank": 1}) > 0

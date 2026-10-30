@@ -36,6 +36,7 @@ WALLET = ["emi", "petrol", "diesel", "tax", "salary", "sip", "price", "prices", 
 # Jobs and the workplace are as personal as the wallet (founder, 29 Oct 2026: "550 Indian employees fired after lunch break")
 JOBS = ["layoff", "laid off", "lays off", "fired", "job cuts", "jobs cut", "sacked", "hiring", "appraisal", "salary hike", "pay cut",
         "notice period", "resign", "work from office", "ai jobs", "replace jobs", "employees"]
+INDEX_MOVE = ["sensex", "nifty", "share market", "stock market"]
 NUMBER = re.compile(r"\d|lakh|crore|%|\$")
 BANNED_TOPIC = ["modi", "rahul gandhi", "bjp", "congress", "election", "rally", "pakistan", "minister", "parliament",
                 "opposition", "cm ", "pm ",
@@ -129,6 +130,8 @@ def score(item: dict) -> int:
         return -10
     if any(p in blob for p in PLUMBING):
         return -5
+    if any(w in str(item.get("title", "")).lower() for w in INDEX_MOVE):
+        return -3                                    # 22-28 Oct 2026: the day's Sensex/Nifty move got 28-42 views; big questions got 1,300-1,500
     s = item.get("rank", 0)
     if NUMBER.search(blob):
         s += 3
