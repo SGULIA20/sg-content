@@ -30,7 +30,7 @@ PACK_STATUSES = ("awaiting-clips", "awaiting-confirm")
 
 def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFAULT, dry_run: bool = False, only: set | None = None,
         long_minutes: int | None = None, deps: pipeline.Deps | None = None, notify=telegram.send, mode: str = "auto",
-        now_utc: datetime | None = None) -> int:
+        now_utc: datetime | None = None, teaser_cards=None) -> int:
     now_utc = now_utc or datetime.now(timezone.utc)
     today = today or slots.ist(now_utc).date()
     if telegram.paused(root):
@@ -80,6 +80,12 @@ def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFA
         ok = False
         traceback.print_exc()
         made.append(("run", f"crashed: {type(e).__name__}: {str(e)[:200]}"))
+    if not dry_run and teaser_cards is not None:
+        try:                                                # the Instagram Story card for each made long video (founder, 30 Oct 2026)
+            if teaser_cards(root):
+                gitsync.safe_commit(root, "produce: long-video Story cards")
+        except Exception as e:
+            print(f"teaser cards: {e}", flush=True)
     _log_run(root, {"day": today.isoformat(), "at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "ok": ok,
                     "dry_run": dry_run, "made": made, "stopped": stopped})
     text = digest.run_summary(root, today)
@@ -124,8 +130,9 @@ def main(argv=None) -> int:
     ap.add_argument("--mode", choices=["auto", "pack"], default="auto", help="pack = write the script and send the Gemini prompt pack, no render")
     a = ap.parse_args(argv)
     telegram.poll_commands(status_fn=lambda: digest.status_line(ROOT))
+    from . import teaser
     return run(ROOT, date.fromisoformat(a.date) if a.date else None, a.max, a.dry_run,
-               set(a.only.split(",")) if a.only else None, a.long_minutes, mode=a.mode)
+               set(a.only.split(",")) if a.only else None, a.long_minutes, mode=a.mode, teaser_cards=teaser.backfill)
 
 
 if __name__ == "__main__":

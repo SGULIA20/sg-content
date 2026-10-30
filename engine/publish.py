@@ -66,7 +66,7 @@ def threads_text(piece) -> str:
 
 def run(root: Path = ROOT, channel: str = "sglearning", now_utc: datetime | None = None, env=None,
         ig_publish=instagram.publish_piece, threads_post=threads.post_video, linkedin_post=linkedin.post_video, notify=telegram.send, check_media: bool = False,
-        threads_poll=None, long_links=None) -> int:
+        threads_poll=None, long_links=None, teaser=None) -> int:
     now_utc = now_utc or datetime.now(timezone.utc)
     env = os.environ if env is None else env
     if telegram.paused(root):
@@ -117,6 +117,8 @@ def run(root: Path = ROOT, channel: str = "sglearning", now_utc: datetime | None
         gitsync.safe_commit(root, f"publish: {piece.id} {piece.status}")
     if long_links is not None:
         problems += long_links(root, channel, now_utc, env)                  # each public Short points to the long video (founder, 23 Oct 2026)
+    if teaser is not None:
+        problems += teaser(root, channel, now_utc, env)                      # an Instagram Story for each new long video (founder, 30 Oct 2026)
     text = f"SG Content publish {channel} {slots.ist(now_utc).strftime('%Y-%m-%d %H:%M')} IST: posted {len(posted)}"
     for pid in posted:
         text += f"\n  + {pid}"
@@ -136,8 +138,8 @@ def main(argv=None) -> int:
     a = ap.parse_args(argv)
     telegram.poll_commands(status_fn=lambda: digest.status_line(ROOT))
     try:
-        from . import ytlink
-        return run(ROOT, a.channel, check_media=True, threads_poll=threads.post_poll, long_links=ytlink.run)   # production: every media URL is verified on GitHub first
+        from . import teaser, ytlink
+        return run(ROOT, a.channel, check_media=True, threads_poll=threads.post_poll, long_links=ytlink.run, teaser=teaser.run)   # production: every media URL is verified on GitHub first
     except Exception as e:
         traceback.print_exc()
         telegram.send(f"publish {a.channel} crashed: {type(e).__name__}: {str(e)[:200]}")
