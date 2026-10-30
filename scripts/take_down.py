@@ -40,6 +40,8 @@ def main(argv) -> int:
         if ids.get(key) and str(ids[key]).isdigit():
             out[label] = _try(lambda k=key: threads.call("DELETE", f"/{ids[k]}", th_token))
     p.topic["taken_down"] = {"at": datetime.now(timezone.utc).isoformat(timespec="seconds"), **out}
+    if p.status == "uploaded":                              # not posted yet: the publish job must never pick it up (30 Oct 2026)
+        p = pieces.transition(p, "rejected", "taken down: replaced by a remake")
     pieces.save(p, ROOT)
     for k, v in out.items():
         print(f"{p.id} {k}: {v}", flush=True)

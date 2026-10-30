@@ -29,3 +29,15 @@ def test_take_down_tries_every_platform_and_keeps_the_ids(tmp_path, monkeypatch)
     assert done["youtube"] == "deleted" and done["instagram reel"] == "deleted" and done["instagram story"] == "deleted"
     assert done["threads post"].startswith("refused: HTTP 403")
     assert got.ids["ig_reel_id"] == "1"                     # kept, so the publish job never posts it again
+
+
+def test_an_unposted_piece_is_taken_out_of_the_publish_queue(tmp_path, monkeypatch):
+    (tmp_path / "pieces").mkdir()
+    p = pieces.Piece(id="2026-10-30-sglearning-x2", channel="sglearning", kind="short", publish_day=date(2026, 10, 30), status="uploaded")
+    p.ids = {"yt_id": "v"}
+    pieces.save(p, tmp_path)
+    monkeypatch.setattr(take_down, "ROOT", tmp_path)
+    monkeypatch.setattr(take_down, "hide_or_delete", lambda ch, vid: "deleted")
+    monkeypatch.setattr(take_down.secrets, "get", lambda k, env=None: "tok")
+    assert take_down.main([p.id]) == 0
+    assert pieces.load(p.id, tmp_path).status == "rejected"
