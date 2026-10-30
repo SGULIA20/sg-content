@@ -87,7 +87,7 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, deps=None, notify=te
     nid = f"{today.isoformat()}-{CHANNEL}-news"
     news = pieces.load(nid, root) or pieces.Piece(id=nid, channel=CHANNEL, kind="short", publish_day=today)
     deps = deps or news_deps(root)
-    topic = {**topic, "news": True}                                                       # the writer builds a news explainer (50-60 s)
+    topic = {**topic, "news": True, "graphics": True}                                     # a news explainer (50-60 s) on free news cards
     deps.topic = lambda piece, used_links: topic if not piece.topic else None              # this morning's story, one try
     news = pipeline.make(news, deps, root, dry_run=True)
     video, thumb = _out(root, nid) / "reel.mp4", _out(root, nid) / "thumb.jpg"

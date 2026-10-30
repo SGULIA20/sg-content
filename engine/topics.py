@@ -23,6 +23,9 @@ FEEDS = [
     ("ET Jobs", "https://economictimes.indiatimes.com/jobs/rssfeeds/107115.cms", 3),
     ("ET Tech", "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms", 2),
     ("Mint Companies", "https://www.livemint.com/rss/companies", 2),
+    # tech, AI, crypto, commodities and the world events that move money (founder, 30 Oct 2026)
+    ("Mint Technology", "https://www.livemint.com/rss/technology", 2),
+    ("Business Standard Technology", "https://www.business-standard.com/rss/technology-108.rss", 2),
 ]
 HOUSEHOLD = ["emi", "petrol", "diesel", "tax", "salary", "sip", "price", "prices", "inflation", "loan", "fd ", "epf",
              "pension", "gold", "rupee", "gst", "mutual fund", "upi", "deposit", "insurance", "home loan", "rent", "repo rate",
@@ -36,6 +39,12 @@ WALLET = ["emi", "petrol", "diesel", "tax", "salary", "sip", "price", "prices", 
 # Jobs and the workplace are as personal as the wallet (founder, 29 Oct 2026: "550 Indian employees fired after lunch break")
 JOBS = ["layoff", "laid off", "lays off", "fired", "job cuts", "jobs cut", "sacked", "hiring", "appraisal", "salary hike", "pay cut",
         "notice period", "resign", "work from office", "ai jobs", "replace jobs", "employees"]
+# Big stories beyond the wallet (founder, 30 Oct 2026: "AI, tech, politics, business, financials of top companies, share markets,
+# commodities"): they count as the viewer's world too, a little below the wallet itself. Party politics stays out (BANNED_TOPIC).
+BIG_STORY = ["bitcoin", "crypto", "binance", "hack", "openai", "chatgpt", "nvidia", "google", "alphabet", "apple", "microsoft", "amazon",
+             "meta ", "tesla", "reliance", "tata ", "adani", "infosys", "tcs", "wipro", "silver", "copper", "china", "tariff", " war",
+             "sanction", "startup", "funding", "unicorn", " ai ", "artificial intelligence", "chip", "semiconductor", "record", "crash",
+             "plunge", "surge", "soar", "billion", "trillion"]
 INDEX_MOVE = ["sensex", "nifty", "share market", "stock market"]
 NUMBER = re.compile(r"\d|lakh|crore|%|\$")
 BANNED_TOPIC = ["modi", "rahul gandhi", "bjp", "congress", "election", "rally", "pakistan", "minister", "parliament",
@@ -120,8 +129,8 @@ def fetch_all(fetch=None) -> list:
 
 
 def household(item: dict) -> bool:
-    blob = f"{item.get('title', '')} {item.get('summary', '')}".lower()
-    return any(k in blob for k in HOUSEHOLD + WALLET + JOBS)
+    blob = f" {item.get('title', '')} {item.get('summary', '')} ".lower()
+    return any(k in blob for k in HOUSEHOLD + WALLET + JOBS + BIG_STORY)
 
 
 def score(item: dict) -> int:
@@ -137,6 +146,8 @@ def score(item: dict) -> int:
         s += 3
     if any(k in blob for k in WALLET) or any(k in blob for k in JOBS):
         s += 4
+    elif any(k in f" {blob} " for k in BIG_STORY):
+        s += 2
     elif any(k in blob for k in HOUSEHOLD):
         s += 1
     return s

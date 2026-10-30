@@ -22,14 +22,18 @@ CHANNEL = "sglearning"
 CYCLE_HOURS = 8                       # a story counts as fresh for two cycles
 SLOT_LEAD_MINUTES = 60                # a cycle only takes a slot it can still meet
 # extra Reels a day on top of the daily one, ramping while views per Reel hold (founder, 29 Oct 2026, "B")
-EXTRAS_FROM = [(date(2026, 10, 29), 1), (date(2026, 11, 5), 2), (date(2026, 11, 12), 3)]
+EXTRAS_FROM = [(date(2026, 10, 29), 1), (date(2026, 10, 31), 3)]   # 31 Oct: 3 breaking-news Reels a day on free news cards (founder, 30 Oct 2026)
 
 CATEGORIES = {
+    "crypto": ["bitcoin", "crypto", "binance", "ethereum", "token"],
     "jobs": topics.JOBS + ["salary", "pf ", "epf", "gratuity", "employee", "hiring", "job"],
     "ai": ["ai ", "artificial intelligence", "chatgpt", "openai", "gemini", "deepfake", "automation", "robot", "chip", "semiconductor"],
     "economy": ["gdp", "inflation", "repo", "rbi", "rupee", "gst", "budget", "export", "import", "fiscal", "monsoon", "cpi", "wpi"],
     "psychology": ["behaviour", "behavior", "bias", "psychology", "habit"],
     "management": ["ceo", "leadership", "management", "culture", "strategy", "restructuring"],
+    "companies": ["results", "profit", "revenue", "reliance", "tata ", "adani", "infosys", "tcs", "apple", "amazon", "microsoft", "tesla", "ipo"],
+    "commodities": ["gold", "silver", "crude", "oil", "copper", "brent"],
+    "world": ["china", "tariff", " war", "sanction", "us fed", "federal reserve", "trump"],
     "numbers": ["record", "crore", "billion", "trillion", "biggest", "highest", "lowest"],
 }
 
@@ -66,6 +70,37 @@ def todays_reels(root: Path, day: date) -> list:
             out.append((p.topic.get("slot_ist") or "23:59", p))
         n += 1
     return sorted(out, key=lambda x: x[0])
+
+
+ROUNDUP_FROM = date(2026, 11, 1)          # the daily Top 10 (founder, 30 Oct 2026); 31 Oct's is made by hand
+ROUNDUP_SLOT = "09:30"                     # India morning; made by the first cycle of the day (06:00 India)
+ROUNDUP_HOURS = 24
+ROUNDUP_PER_CATEGORY = 3
+
+
+def is_roundup(p) -> bool:
+    return bool(p.topic.get("roundup") or (p.topic.get("preset") or {}).get("roundup"))
+
+
+def roundup(items: list, used: set, now_utc: datetime) -> dict | None:
+    """The day's Top 10 as one preset topic: the best fresh stories of the last 24 hours, at most three of one category, biggest first."""
+    fresh = [i for i in items if i.get("published") and now_utc - i["published"] <= timedelta(hours=ROUNDUP_HOURS)
+             and i.get("link") not in used and topics.score(i) > 0 and topics.household(i)
+             and not any(w in str(i.get("title", "")).lower() for w in topics.MARKET_CALL)]
+    fresh.sort(key=lambda i: (topics.score(i), i["published"]), reverse=True)
+    picked, per = [], {}
+    for i in fresh:
+        c = category(i)
+        if per.get(c, 0) < ROUNDUP_PER_CATEGORY and all(i["title"][:40] != p["title"][:40] for p in picked):
+            picked.append(i); per[c] = per.get(c, 0) + 1
+        if len(picked) == 10:
+            break
+    if len(picked) < 10:
+        return None
+    lines = "\n".join(f"{n}. {i['title']} :: {str(i.get('summary', ''))[:180]} ({i.get('source', '')})" for n, i in enumerate(picked, 1))
+    return {"title": picked[0]["title"], "link": picked[0]["link"], "source": "roundup", "category": category(picked[0]), "roundup": True,
+            "published": now_utc.isoformat(),
+            "summary": "TOP 10 ROUNDUP. Plain everyday words, one line per item, item 1 (the biggest) is the hook. Items as reported:\n" + lines}
 
 
 def piece_category(p) -> str:
@@ -123,12 +158,19 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, items=None, notify=t
         return 0
     today = slots.ist(now_utc).date()
     used, _prior = pipeline._used(root)
-    rows = ranked(items if items is not None else topics.fetch_all(), used, now_utc)
+    fetched = items if items is not None else topics.fetch_all()
+    rows = ranked(fetched, used, now_utc)
     lines = [f"🔎 Learning with SG research, {slots.ist(now_utc):%H:%M} India"]
     top = rows[:5]
     lines += ["Top stories since the last cycles:"] + [f"  {n}. [{category(i)}] {i.get('title', '')[:90]}" + (f"  (skip: {why})" if why else "")
                                                        for n, (_s, i, why) in enumerate(top, 1)] if top else ["No new money, jobs or business stories since the last cycle."]
-    room = extras_today(today) - len([1 for _t, p in todays_reels(root, today) if p.id.endswith(tuple(f"-x{k}" for k in range(1, 10)))])
+    room = extras_today(today) - len([1 for _t, p in todays_reels(root, today) if p.id.endswith(tuple(f"-x{k}" for k in range(1, 10)))
+                                      and not is_roundup(p)])
+    if today >= ROUNDUP_FROM and slots.ist(now_utc).hour < 9 and not any(is_roundup(p) for _t, p in todays_reels(root, today)):
+        top10 = roundup(fetched, used, now_utc)
+        if top10:
+            notify(f"🗞 Today's Top 10 is being made from the last 24 hours' stories; posts {ROUNDUP_SLOT} India. Opens on: {top10['title'][:90]}")
+            make(top10, root, now_utc, slot_ist=ROUNDUP_SLOT, notify=notify)
     slot = free_slot(root, now_utc) if room > 0 else None
     choice, source = None, ""
     if slot:

@@ -15,7 +15,7 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
-      - run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-core
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-core fonts-noto-color-emoji
       - run: pip install -r requirements.txt
       - run: python -m playwright install --with-deps chromium
       - name: All tests, slow ones included
