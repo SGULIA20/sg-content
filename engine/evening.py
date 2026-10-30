@@ -162,9 +162,11 @@ def build(day: date | None = None, now: datetime | None = None, root: Path = ROO
         lines.append(name)
         lines += [f"   {k}: {v}" for k, v in cells.items()]
     lines += ["", tomorrow_plan(day)]
-    from . import credit
+    from . import ads, credit
     if (c := credit.line(day, root)):
         lines += ["", c]
+    if (a := ads.card_line(root, day)):
+        lines += [a]
     if trials:
         lines += [""] + trials
     return "\n".join(lines)
