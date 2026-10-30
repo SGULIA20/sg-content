@@ -6,8 +6,8 @@ from pathlib import Path
 
 from .config import ASSETS_DIR, TEMPLATES_DIR
 
-KINDS = {"hook", "number", "source", "label", "end", "thumb", "slide", "caption", "avatar", "story", "storytitle", "storycap", "thumb2", "storyend", "logo", "banner", "storycap2", "storyshade"}
-TRANSPARENT = {"label", "caption", "logo", "storycap2", "storyshade"}
+KINDS = {"hook", "number", "source", "label", "end", "thumb", "slide", "caption", "avatar", "story", "storytitle", "storycap", "thumb2", "storyend", "logo", "banner", "storycap2", "storyshade", "teaser"}
+TRANSPARENT = {"label", "caption", "logo", "storycap2", "storyshade", "teaser"}
 BG = "#0B0F1A"
 _PW = None
 _BROWSER = None
