@@ -1,0 +1,304 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 14167.0,
+   "quote": "Accordingly, the redemption price for premature redemption due on November 02, 2026, shall be ₹14,167/- (Rupees Fourteen Thousand One Hundred and Sixty-Seven Only) per unit of SGB based on the simple average of closing price of gold for the three business days i.e., October 28, October 29, and October 30, 2026.",
+   "source_date": "2026-10-30",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63897",
+   "text": "The Reserve Bank of India set the premature redemption price for Sovereign Gold Bond 2021-22 Series VII due on November 02, 2026, at 14,167 INR per unit.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 5.0,
+   "quote": "In terms of GOI notification F.No. 4(5)-B(W&M)/2021 dated October 21, 2021 (SGB 2021-22 Series VII - Issue date November 02, 2021) on Sovereign Gold Bond Scheme, premature redemption of Gold Bond may be permitted after fifth year from the date of issue of such Gold Bond on the date on which interest is payable.",
+   "source_date": "2026-10-30",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63897",
+   "text": "Under the Sovereign Gold Bond Scheme, premature redemption is permitted after 5.0 years from the date of issuance on coupon payment dates.",
+   "unit": "years"
+  },
+  {
+   "label": "official",
+   "number": 3.0,
+   "quote": "Further, the redemption price of SGB shall be based on simple average of closing price of gold of 999 purity of previous three business days from the date of redemption, as published by the India Bullion and Jewellers Association Ltd (IBJA).",
+   "source_date": "2026-10-30",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63897",
+   "text": "The premature redemption value is calculated using the simple average closing price of 999 purity gold over the preceding 3.0 business days.",
+   "unit": "days"
+  }
+ ],
+ "id": "2026-10-31-sglearning-x1",
+ "ids": {
+  "budget": {
+   "day": "2026-10-30",
+   "drafts": 3,
+   "research": 1
+  },
+  "cost": {
+   "inr": 0.0,
+   "usd": 0.251036,
+   "voice": 0
+  }
+ },
+ "kind": "short",
+ "publish_day": "2026-10-31",
+ "reasons": [
+  "try 1: numbers without a source: 4715, 4715, 4715, 4715, 4715, 4715, 4715, 4715, 4715",
+  "try 2: length: 159 words, allowed 115-155; numbers without a source: 4715, 4715",
+  "try 3: numbers without a source: 4715, 4715"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "2021 ka Gold Bond, ab RBI de raha hai 14,167 har gram. 🪙\nSovereign Gold Bond 2021-22 Series VII se 2 November ko pehli baar beech mein nikal sakte ho.\nPrice IBJA ke 999 sone ka 3 din ka average hai. Aur 2.5 percent byaaj 2021 wali kharid keemat par hi banta hai.\nAap niklenge ya maturity tak rukenge?\nYeh investment advice nahi hai.\nYeh Papa ko bhejo, jinke paas 2021 wala gold bond pada hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#RBI",
+     "#PersonalFinanceIndia",
+     "#MoneyTipsHindi",
+     "#HinglishFinance",
+     "#InvestingIndia",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "2021 ka Sovereign Gold Bond: ab RBI har gram ka 14,167 de raha hai. 2 November ko pehli baar beech mein exit ka mauka. Aap niklenge ya 2029 tak rukenge? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "2021 ka Sovereign Gold Bond, ab RBI har gram ka 14,167 de raha hai. 5 saal baad pehli baar beech mein nikalne ka mauka hai, sirf byaaj wali date par. Byaaj 2021 wali kharid keemat par hi banta hai, isliye faisla soch kar lo. Yeh Papa ko bhejo, jinke paas 2021 wala gold bond pada hai.",
+    "tags": [
+     "sovereign gold bond",
+     "SGB",
+     "SGB redemption",
+     "gold bond exit price",
+     "RBI",
+     "gold price",
+     "sona",
+     "premature redemption",
+     "personal finance hindi",
+     "Learning with SG"
+    ],
+    "title": "Gold Bond exit: ₹14,167 lein ya rukein?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "₹14,167",
+    "line": "Har gram ka exit price",
+    "source": "RBI"
+   },
+   {
+    "big_number": "5 saal",
+    "line": "Uske baad hi exit",
+    "source": "RBI"
+   },
+   {
+    "big_number": "3 din",
+    "line": "999 sone ka average",
+    "source": "RBI / IBJA"
+   },
+   {
+    "big_number": "2.5%",
+    "line": "Byaaj sirf ₹4,715 par",
+    "source": "RBI"
+   }
+  ],
+  "carousel": true,
+  "end_question": "Yeh Papa ko bhejo, jinke paas 2021 wala gold bond pada hai.",
+  "hook": "2021 ka Gold Bond, ab RBI de raha hai 14,167 har gram.",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Hook",
+    "visual": {
+     "card": {
+      "big_number": "₹14,167",
+      "line": "Har gram ka exit price",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "2021 ka Gold Bond, ab RBI de raha hai 14,167 har gram."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Kya hua",
+    "visual": {
+     "card": {
+      "big_number": "2021",
+      "line": "Series VII ka exit price",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "RBI ne November 2021 wale Gold Bond ka exit price tay kiya."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "Niyam",
+    "visual": {
+     "card": {
+      "big_number": "5 saal",
+      "line": "Uske baad hi exit",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "5 saal baad hi beech mein nikal sakte ho, sirf byaaj wali date par."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "Price kyun",
+    "visual": {
+     "card": {
+      "big_number": "3 din",
+      "line": "999 sone ka average",
+      "source": "RBI / IBJA"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Price kaise bana? IBJA yaani jewellers ki sanstha, uske 999 sone ka 3 din ka average."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Asar",
+    "visual": {
+     "card": {
+      "big_number": "3 guna",
+      "line": "Har gram par paisa",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "2021 ka sona aaj kaafi mehenga hai. Upar se 2.5 percent byaaj alag."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Twist",
+    "visual": {
+     "card": {
+      "big_number": "2.5%",
+      "line": "Byaaj sirf ₹4,715 par",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Par yeh baat kam log jaante hain. 2.5 percent byaaj 2021 wali kharid keemat par banta hai, 14,167 par nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "Aapke liye",
+    "visual": {
+     "card": {
+      "big_number": "2029",
+      "line": "Poori maturity ka saal",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Ab faisla aapka, abhi niklein, ya 2029 mein maturity tak rukein?"
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "Kya karein",
+    "visual": {
+     "card": {
+      "big_number": "2 Nov",
+      "line": "Pehle request bhejo",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Nikalna hai, to bank, post office ya broker ko date se pehle request do."
+   },
+   {
+    "facts_used": [],
+    "label": "Takeaway",
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Faisla apni zaroorat se",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Bhaav roz badalta hai, faisla apni zaroorat se lo. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Send",
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Papa ko bhejo",
+      "source": "Learning with SG"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Yeh Papa ko bhejo, jinke paas 2021 wala gold bond pada hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "GOLD BOND",
+   "name_hi": "गोल्ड बॉन्ड",
+   "scene": "LEFT: a small stack of gold bond certificates beside a few gold coins in 2021; RIGHT: the same certificates beside a much taller glowing pile of gold coins in 2026, under dramatic golden light.",
+   "words": [
+    "3X",
+    "EXIT?"
+   ],
+   "words_hi": [
+    "3X",
+    "एग्ज़िट?"
+   ]
+  },
+  "title": "Gold Bond ka paisa *3 guna* 🪙"
+ },
+ "status": "rejected",
+ "timings": [],
+ "topic": {
+  "category": "economy",
+  "extra": true,
+  "graphics": true,
+  "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63897",
+  "patch_tries": 2,
+  "published": "2026-10-30T18:40:00+00:00",
+  "rank": 5,
+  "slot_ist": "13:00",
+  "source": "RBI Press Releases",
+  "summary": "      In terms of GOI notification F.No. 4(5)-B(W&amp;M)/2021 dated October 21, 2021 (SGB 2021-22 Series VII - Issue date November 02, 2021) on Sovereign Gold Bond Scheme, premature redemption of Gold Bond may be permitted after fifth year from the date of issue of such Gold Bond on the date on which interest is payable. Accordingly, the due date of premature redemption of the above tranche shall be on November 02, 2026.      2. Further, the redemption price of SGB shall be based on simple average of closing price of gold of 999 purity of previous three business days from the date of redemption, as published by the India Bullion and Jewellers Association Ltd (IBJA). Accordingly, the redemption price for premature redemption due on November 02, 2026, shall be &#8377;14,167/- (Rupees Fourteen Thousand One Hundred and Sixty-Seven Only) per unit of SGB based on the simple average of closing price of gold for the three business days i.e., October 28, October 29, and October 30, 2026.      Ajit Prasad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Deputy General Manager        (Communications)&nbsp;&nbsp;&nbsp;&nbsp;      Press Release: 2026-2027/1419        ",
+  "target_minutes": null,
+  "title": "Premature redemption under Sovereign Gold Bond (SGB) Scheme - Redemption Price for premature redemption of SGB 2021-22 Series VII due on November 02, 2026"
+ },
+ "updated": "2026-10-30T21:05:37+00:00",
+ "writer": "claude"
+}
