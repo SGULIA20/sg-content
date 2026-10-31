@@ -105,3 +105,5 @@ VOICE_CREDIT: dict = {}     # no voice credit: the narration is the designed sto
 
 LINKEDIN_VIDEOS = False                       # founder, 22 Oct 2026: LinkedIn gets picture posts only; no Short or Reel video goes there from this repo
 UNLISTED_KINDS = set()                        # founder 21 Oct 2026: longs go public on schedule like Shorts (`python -m engine.youtube --go-public` still releases any unlisted ones)
+
+INSTAGRAM_CAROUSEL = False                    # founder, 31 Oct 2026: "do not add 7 slides on instagram, only videos": Reel + Story only

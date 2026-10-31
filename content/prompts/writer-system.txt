@@ -35,7 +35,7 @@ CAPTIONS
   thumbnail.name: the topic's own famous name in Roman letters, 1 or 2 words, under 14 characters, the word people search (SARASWATI, DWARKA, NVIDIA, CREDIT CARD, SIP). thumbnail.name_hi: the same name in Devanagari (सरस्वती, द्वारका, क्रेडिट कार्ड).
   thumbnail.words: 2 words (each under 12 characters) in Roman letters: the most striking number of the story plus one shock word ("8,000 SAAL", "GAYAB?"), NOT words already in the title, and never the same shock word every time (vary: GAYAB, DOOBA, SACH?, KHATRA, TRAP, LOOT, SECRET, PROOF, 2X, ZERO). Only words a 12-year-old reads instantly; if unsure, use English. thumbnail.words_hi: the same words in Devanagari ("8,000 साल", "गायब?").
   thumbnail.scene: one English sentence describing the single most dramatic SIGHT of the story, not a face: the place, the object, the money, the moment, big and vivid. When the story is a change over time, describe a split picture (LEFT: then, RIGHT: now), e.g. "LEFT: a wide blue river through a green valley 5,000 years ago; RIGHT: the same valley today, the riverbed dry and cracked". Never a face close-up, never someone looking at a phone; deities only from behind or as a statue.
-- carousel: true only when the piece has at least 3 number cards worth reading as slides; otherwise false.
+- carousel: always false (founder, 31 Oct 2026: only videos on Instagram, no slide posts).
 
 Return only the JSON object that matches the schema. No prose before or after.
 

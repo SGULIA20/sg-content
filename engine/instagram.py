@@ -10,7 +10,7 @@ import urllib.request
 from pathlib import Path
 
 from . import pieces, secrets
-from .config import ROOT
+from .config import INSTAGRAM_CAROUSEL, ROOT
 from .pieces import Piece
 
 API = "https://graph.instagram.com/v25.0"          # Instagram API with Instagram Login (same tokens as arthvan-media)
@@ -174,7 +174,7 @@ def publish_piece(piece: Piece, env=None, call=call, sleep=time.sleep, root: Pat
             piece.ids["ig_story_id"] = _create_and_publish(ig_id, token, {
                 "media_type": "STORIES", "video_url": media_url(piece, "story.mp4", repo)}, "story", call, sleep)
             pieces.save(piece, root); done.append("story")
-        if (piece.script or {}).get("carousel") and not piece.ids.get("ig_post_id"):
+        if INSTAGRAM_CAROUSEL and (piece.script or {}).get("carousel") and not piece.ids.get("ig_post_id"):
             n = len((piece.script or {}).get("cards", []))
             children = []
             for i in range(1, n + 1):

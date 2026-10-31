@@ -71,7 +71,8 @@ def test_partial_publish_resumes_without_duplicate(tmp_path):
     assert kinds == ["STORIES"] and p.ids["ig_reel_id"] == "already" and p.ids["ig_story_id"] == "mc1"
 
 
-def test_carousel_only_when_flagged(tmp_path):
+def test_carousel_only_when_flagged_and_switched_on(tmp_path, monkeypatch):
+    monkeypatch.setattr(instagram, "INSTAGRAM_CAROUSEL", True)    # off by default since 31 Oct 2026; the path stays tested
     fc = FakeCall()
     p = instagram.publish_piece(_piece(carousel=True), {"IG_ACCESS_TOKEN": "t", "IG_USER_ID": "u", "GITHUB_REPOSITORY": "r"}, call=fc, sleep=lambda s: None, root=tmp_path)
     media = [c[2] for c in fc.calls if c[1].endswith("/media")]
@@ -192,3 +193,11 @@ class _Ok:
     status = 200
     def __enter__(self): return self
     def __exit__(self, *a): return False
+
+
+def test_no_slides_on_instagram_even_when_a_script_asks(tmp_path):
+    assert instagram.INSTAGRAM_CAROUSEL is False                  # founder, 31 Oct 2026: only videos on Instagram
+    fc = FakeCall()
+    p = instagram.publish_piece(_piece(carousel=True), {"IG_ACCESS_TOKEN": "t", "IG_USER_ID": "u", "GITHUB_REPOSITORY": "r"}, call=fc, sleep=lambda s: None, root=tmp_path)
+    media = [c[2] for c in fc.calls if c[1].endswith("/media")]
+    assert not any(m.get("is_carousel_item") or m.get("media_type") == "CAROUSEL" for m in media) and "ig_post_id" not in p.ids

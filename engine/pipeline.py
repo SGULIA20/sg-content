@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Callable
 
 from . import art, artbatch, assemble, buffer, cards, cartoon, cast, claims, costs, gemini, lint, pieces, qa, research, secrets, slots, storyframe, topics, voice, voicebatch, writer, youtube
-from .config import CHANNELS, ROOT, VIDEO, story_words
+from .config import CHANNELS, INSTAGRAM_CAROUSEL, ROOT, VIDEO, story_words
 from .pieces import Piece
 
 TOPIC_TRIES = 3
@@ -478,7 +478,7 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
     if piece.kind == "short":
         if assemble.story_copy(video, out_dir / "story.mp4") is None:          # founder, 22 Oct 2026: never trim; a Reel over 60 s simply has no Story
             piece.ids["ig_story_id"] = "skipped: Reel over 60 s"
-        if script.get("carousel"):
+        if INSTAGRAM_CAROUSEL and script.get("carousel"):                 # off: only videos on Instagram (31 Oct 2026)
             for j, card in enumerate(script.get("cards", []), start=1):
                 deps.render_card("slide", card, out_dir / f"slide{j:02d}.jpg", (1080, 1350))
     pieces.save(pieces.transition(piece, "assembled"), root)
