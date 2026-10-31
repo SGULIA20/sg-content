@@ -237,3 +237,12 @@ def test_daily_shorts_longs_and_myth_world_stay_on_opus():
     assert writer.model_for(p) == writer.MODEL
     p.kind, p.channel = "short", "arthvan"
     assert writer.model_for(p) == writer.MODEL
+
+
+def test_patch_also_corrects_a_news_card():
+    prev = good_script()
+    out = writer.apply_patch(prev, json.dumps({"scenes": [{"index": 1, "vo": "India apna zyada tar tel bahar se khareedta hai.",
+                                                           "card_big_number": "", "card_line": "tel bahar se aata"}]}))
+    card = out["scenes"][1]["visual"]["card"]
+    assert card["big_number"] == "" and card["line"] == "tel bahar se aata" and card["source"] == "PPAC"
+    assert out["scenes"][0]["visual"]["card"] is None                     # scenes not named stay untouched
