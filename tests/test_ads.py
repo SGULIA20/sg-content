@@ -101,3 +101,10 @@ def test_an_account_in_a_currency_without_limits_is_paused_not_watched(tmp_path,
     monkeypatch.setattr(ads.telegram, "paused", lambda root: False)
     assert ads.run(tmp_path, NOW, {}, notify=sent.append, cfg=CFG, call=call, token="t", subs=lambda ch: 0) == 1
     assert any(u.endswith("campaigns:mutate") for u, _b in calls) and "paused 1" in sent[0]
+
+
+def test_errors_text_keeps_googles_details():
+    from engine import ads
+    body = {"error": {"details": [{"errors": [{"message": "below minimum", "errorCode": {"campaignBudgetError": "BUDGET_BELOW_PER_DAY_MINIMUM"},
+                                               "details": {"budgetPerDayMinimumErrorDetails": {"minimumBudgetAmountMicros": "5000000"}}}]}]}}
+    assert "5000000" in ads.errors_text(body)

@@ -71,7 +71,8 @@ def errors_text(body: dict) -> str:
         for e in d.get("errors", []):
             path = ".".join(str(x.get("fieldName", "")) + (f"[{x['index']}]" if "index" in x else "") for x in
                             (e.get("location") or {}).get("fieldPathElements", []))
-            out.append(f"{path or '-'}: {e.get('message', '')} {json.dumps(e.get('errorCode', {}))}")
+            extra = f" {json.dumps(e['details'])}" if e.get("details") else ""      # e.g. Google's per-day budget minimum (31 Oct 2026)
+            out.append(f"{path or '-'}: {e.get('message', '')} {json.dumps(e.get('errorCode', {}))}{extra}")
     return "\n".join(out) or json.dumps(body)[:1500]
 
 
