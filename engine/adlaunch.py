@@ -60,11 +60,12 @@ def operations(cid: str, channel: str, video_id: str, logo: bytes, today, n: int
                                           "targetSpend": {},
                                           "containsEuPoliticalAdvertising": "DOES_NOT_CONTAIN_EU_POLITICAL_ADVERTISING",
                                           "startDateTime": f"{today.isoformat()} 00:00:00", "endDateTime": f"{end.isoformat()} 23:59:59"}}},
-        {"campaignCriterionOperation": {"create": {"campaign": rn("campaigns", 4), "location": {"geoTargetConstant": INDIA}}}},
-        {"campaignCriterionOperation": {"create": {"campaign": rn("campaigns", 4), "language": {"languageConstant": HINDI}}}},
-        {"campaignCriterionOperation": {"create": {"campaign": rn("campaigns", 4), "language": {"languageConstant": ENGLISH}}}},
         {"adGroupOperation": {"create": {"resourceName": rn("adGroups", 5), "name": f"{tag} group", "campaign": rn("campaigns", 4),
                                          "status": "ENABLED"}}},
+        # Demand Gen takes location and language on the ad group (31 Oct 2026: Google refused them on the campaign)
+        {"adGroupCriterionOperation": {"create": {"adGroup": rn("adGroups", 5), "location": {"geoTargetConstant": INDIA}}}},
+        {"adGroupCriterionOperation": {"create": {"adGroup": rn("adGroups", 5), "language": {"languageConstant": HINDI}}}},
+        {"adGroupCriterionOperation": {"create": {"adGroup": rn("adGroups", 5), "language": {"languageConstant": ENGLISH}}}},
         {"adGroupAdOperation": {"create": {"adGroup": rn("adGroups", 5), "status": "ENABLED", "ad": {
             "name": f"{tag} ad", "finalUrls": [YOUTUBE_URLS[channel]],
             "demandGenVideoResponsiveAd": {"headlines": text(lines["headlines"]), "longHeadlines": text(lines["long"]),
