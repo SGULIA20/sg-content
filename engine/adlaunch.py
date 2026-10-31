@@ -141,6 +141,11 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, env=None, live: bool
 def set_budgets(cfg: dict | None = None, env=None, notify=telegram.send, call=ads.call_full, token=None, live: bool = False) -> int:
     """Sets every test campaign's daily budget to the founder's limit in the account currency (31 Oct 2026: they were created at
     $143 a day). Check-only unless live; never resumes a campaign."""
+    sent = notify
+
+    def notify(text):                                         # also in the run log
+        print(text, flush=True)
+        sent(text)
     cfg = ads.settings() if cfg is None else cfg
     cid = str(cfg.get("customer_id", "")).replace("-", "")
     tok = token or ads.access_token(env)
@@ -174,6 +179,7 @@ def main(argv=None) -> int:
             return set_budgets(live="--live" in argv)
         return run(live="--live" in argv)
     except Exception as e:
+        print(f"crashed: {secrets.scrub(str(e))[:2000]}", flush=True)
         telegram.send(f"📣 Ads launch crashed: {secrets.scrub(str(e))[:200]}")
         return 1
 

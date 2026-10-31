@@ -85,7 +85,7 @@ def _headers(cfg: dict) -> dict:
 def search(cid: str, query: str, token: str, cfg: dict, call=youtube.call) -> list:
     status, _h, body = call("POST", f"{API}/customers/{cid}/googleAds:search", token, json_body={"query": query}, headers=_headers(cfg))
     if status != 200:
-        raise AdsError(f"Google Ads search {status}: {secrets.scrub(json.dumps(body))[:300]}")
+        raise AdsError(f"Google Ads search {status}: {secrets.scrub(errors_text(body) if isinstance(body, dict) else str(body))[:1500]}")
     return body.get("results", [])
 
 
