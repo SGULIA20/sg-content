@@ -219,9 +219,27 @@ def check(env=None, notify=telegram.send, call=youtube.call, token=None) -> int:
     return 0
 
 
+def pause_all(cfg: dict | None = None, env=None, notify=telegram.send, call=None, token=None) -> int:
+    """Pauses every running campaign in the account, whatever its currency (31 Oct 2026: the account is in USD, so the launcher's
+    Rs 143 a day became $143 a day; the campaigns were paused before Google's review let them spend)."""
+    cfg = settings() if cfg is None else cfg
+    call = call or call_full
+    cid = str(cfg.get("customer_id", "")).replace("-", "")
+    tok = token or access_token(env)
+    rows = search(cid, "SELECT campaign.id, campaign.name, campaign.status FROM campaign WHERE campaign.status = 'ENABLED'", tok, cfg, call)
+    ids = [str(r["campaign"]["id"]) for r in rows]
+    if ids:
+        pause(cid, ids, tok, cfg, call)
+    notify(f"⏸ Ads: paused {len(ids)} campaign(s): " + ", ".join(r["campaign"].get("name", "") for r in rows) if ids else "⏸ Ads: nothing running.")
+    print(ids, flush=True)
+    return 0
+
+
 def main(argv=None) -> int:
     argv = sys.argv[1:] if argv is None else argv
     try:
+        if "--pause-all" in argv:
+            return pause_all()
         if "--check" in argv:
             return check()
         return run(report="--report" in argv)

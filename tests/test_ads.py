@@ -72,3 +72,16 @@ def test_google_errors_read_as_field_and_message():
                                                "location": {"fieldPathElements": [{"fieldName": "mutate_operations", "index": 3},
                                                                                   {"fieldName": "campaign_operation"}]}}]}]}}
     assert ads.errors_text(body) == 'mutate_operations[3].campaign_operation: The required field was not present. {"fieldError": "REQUIRED"}'
+
+
+def test_pause_all_pauses_every_running_campaign():
+    calls, sent = [], []
+    def call(method, url, tok, json_body=None, headers=None):
+        calls.append((url, json_body))
+        if url.endswith(":search"):
+            return 200, {}, {"results": [{"campaign": {"id": "1", "name": "A", "status": "ENABLED"}},
+                                         {"campaign": {"id": "2", "name": "B", "status": "ENABLED"}}]}
+        return 200, {}, {}
+    assert ads.pause_all({"customer_id": "601-481-4549"}, {}, notify=sent.append, call=call, token="t") == 0
+    ops = calls[1][1]["operations"]
+    assert [o["update"]["status"] for o in ops] == ["PAUSED", "PAUSED"] and "paused 2" in sent[0]
