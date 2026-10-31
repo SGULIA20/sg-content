@@ -10,7 +10,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from . import config, digest, gitsync, instagram, linkedin, pieces, slots, telegram, threads
-from .config import ROOT
+from .config import INSTAGRAM_CAROUSEL, ROOT
 from .instagram import InstagramError
 from .threads import ThreadsError
 
@@ -43,7 +43,7 @@ def due(root: Path, now_utc: datetime, channel: str, env=None) -> list:
         if p.ids.get("unlisted"):                                                  # first-day unlisted uploads stay off Instagram and Threads
             continue
         missing = [k for k in required(env) if not p.ids.get(k)]
-        if (p.script or {}).get("carousel") and not p.ids.get("ig_post_id"):
+        if INSTAGRAM_CAROUSEL and (p.script or {}).get("carousel") and not p.ids.get("ig_post_id"):
             missing.append("ig_post_id")
         if missing:
             out.append(p)
