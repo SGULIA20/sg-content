@@ -1,10 +1,13 @@
 {
  "_note": "Ads watch (engine/ads.py). customer_id: the 10-digit Google Ads ID (xxx-xxx-xxxx); login_customer_id only if it sits under a manager account. The watch only ever PAUSES; scale stays false until the founder says yes.",
- "customer_id": "",
+ "customer_id": "601-481-4549",
  "login_customer_id": "",
  "test_start": "",
  "monthly_cap_inr": 6000,
  "baseline_subs_per_day": 0.5,
- "pause_rule": {"min_spend_inr": 1500, "max_cost_per_sub_inr": 25},
+ "pause_rule": {
+  "min_spend_inr": 1500,
+  "max_cost_per_sub_inr": 25
+ },
  "scale": false
 }
