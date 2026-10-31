@@ -71,13 +71,17 @@
    "usd": 0.162836,
    "voice": 12
   },
+  "ig_reel_id": "18120162751967556",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "out_sha": "1e579fba80029af2e238d4a2d3b1e5d1789ffd43",
   "yt_id": "Jea6bfSoihI"
  },
  "kind": "short",
  "publish_day": "2026-10-31",
- "reasons": [],
+ "reasons": [
+  "instagram: 2026-10-31-sglearning-x6: HTTP 400: {\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\""
+ ],
  "script": {
   "captions": {
    "instagram": {
@@ -370,6 +374,6 @@
   "title": "Tech companies ke 95 lakh crore ek din mein saaf, aur 9 aur badi khabrein",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-31T06:05:48+00:00",
+ "updated": "2026-10-31T07:42:25+00:00",
  "writer": "claude"
 }
