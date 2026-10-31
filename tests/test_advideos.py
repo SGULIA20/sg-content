@@ -53,3 +53,12 @@ def test_check_adds_two_videos_to_the_same_ad_without_touching_budget_or_status(
     assert len(upd["update"]["demandGenVideoResponsiveAd"]["videos"]) == 3
     assert not any("campaignBudgetOperation" in o or "campaignOperation" in o for o in ops)
     assert "check passed" in sent[0] and "youtu.be/b" in sent[0] and "55% watched" in sent[0]
+
+
+def test_founder_pick_wins_and_skips_videos_that_are_not_public_longs():
+    calls, sent = [], []
+    cfg = {**CFG, "ad_videos": {"arthvan": ["a", "short"]}}
+    assert advideos.run(cfg, {}, notify=sent.append, call=_ads(calls), yt_call=_yt, ads_token="t", yt_token=lambda c, e: "y", now=NOW) == 0
+    ops = calls[0]["mutateOperations"]
+    assert [o["assetOperation"]["create"]["youtubeVideoAsset"]["youtubeVideoId"] for o in ops if "assetOperation" in o] == ["a"]
+    assert "youtu.be/short skipped" in sent[0]
