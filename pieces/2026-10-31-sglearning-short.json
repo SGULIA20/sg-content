@@ -84,8 +84,12 @@
    "usd": 0.05729,
    "voice": 13
   },
+  "ig_reel_id": "17987058120110468",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "out_sha": "39406a736bb3fb2ea7ae1f2919c482f50afb3980",
+  "threads_id": "17982924338935300",
+  "threads_poll_id": "skipped: HTTP 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":",
   "yt_id": "GfxTm3-HRaU"
  },
  "kind": "short",
@@ -281,7 +285,7 @@
   },
   "title": "Buffett ka biwi ke liye *boring* plan 😮"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   3.13,
@@ -308,6 +312,6 @@
   "title": "Warren Buffett’s 6 golden rules for investors after retirement",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-10-25T08:52:31+00:00",
+ "updated": "2026-10-31T13:09:29+00:00",
  "writer": "claude"
 }
