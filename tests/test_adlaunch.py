@@ -119,3 +119,25 @@ def test_resume_never_turns_on_a_campaign_still_on_the_old_budget():
     calls, sent = [], []
     assert adlaunch.resume(CFG, {}, notify=sent.append, call=_resume_api(calls, [143_000_000, 143_000_000]), token="t") == 1
     assert calls == [] and "nothing resumed" in sent[0]
+
+
+def test_youtube_only_limits_each_ad_group_and_touches_nothing_else():
+    calls, sent = [], []
+    def call(method, url, tok, json_body=None, data=None, headers=None):
+        if url.endswith(":search"):
+            return 200, {}, {"results": [{"adGroup": {"resourceName": "customers/1/adGroups/9"}, "campaign": {"name": "SG test A"}}]}
+        calls.append(json_body); return 200, {}, {}
+    assert adlaunch.youtube_only(CFG, {}, notify=sent.append, call=call, token="t") == 0
+    body = calls[0]
+    assert body["validateOnly"] is True
+    op = body["mutateOperations"][0]["adGroupOperation"]
+    ch = op["update"]["demandGenAdGroupSettings"]["channelControls"]["selectedChannels"]
+    assert ch["youtubeInFeed"] and ch["youtubeShorts"] and ch["youtubeInStream"] and not (ch["gmail"] or ch["discover"] or ch["display"])
+    assert "status" not in op["update"] and "status" not in op["updateMask"] and "budget" not in op["updateMask"]
+    assert "check passed" in sent[0]
+
+
+def test_new_launches_are_youtube_only(tmp_path):
+    ops = adlaunch.operations("1", "sglearning", "vid", b"png", date(2026, 10, 31), 1, 70)
+    group = next(o["adGroupOperation"]["create"] for o in ops if "adGroupOperation" in o)
+    assert group["demandGenAdGroupSettings"] == adlaunch.YOUTUBE_ONLY
