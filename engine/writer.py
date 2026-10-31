@@ -21,7 +21,8 @@ PATCH_SCHEMA = {
     "type": "object", "additionalProperties": False, "required": ["scenes"],
     "properties": {
         "scenes": {"type": "array", "items": {"type": "object", "additionalProperties": False, "required": ["index", "vo"],
-                                              "properties": {"index": {"type": "integer"}, "vo": {"type": "string"}, "label": {"type": "string"}}}},
+                                              "properties": {"index": {"type": "integer"}, "vo": {"type": "string"}, "label": {"type": "string"},
+                                                             "card_big_number": {"type": "string"}, "card_line": {"type": "string"}}}},
         "fields": {"type": "object", "additionalProperties": False,
                    "properties": {"title": {"type": "string"}, "hook": {"type": "string"}, "end_question": {"type": "string"},
                                   "youtube_title": {"type": "string"}, "youtube_description": {"type": "string"},
@@ -49,7 +50,7 @@ def patchable(reasons: list) -> bool:
     if not reasons:
         return False
     for r in reasons:
-        if r.startswith(("numbers without a source", "advice", "label")):
+        if r.startswith(("numbers without a source", "advice", "label", "card", "figures", "jargon")):
             continue
         m = re.match(r"length: (\d+) words, allowed (\d+)-(\d+)", r)
         if m and int(m.group(1)) > int(m.group(3)):
@@ -70,7 +71,9 @@ def patch_params(piece, sheet, library, hashtags, previous: dict, reasons: list,
     """The same writer rules and fact sheet as the full draft, plus the failed draft and the checks it failed: the model returns only what changes."""
     base = claude_params(piece, sheet, library, hashtags, formula)
     note = ("\n\nPATCH MODE. Your previous draft is below. It failed these automatic checks:\n- " + "\n- ".join(reasons) +
-            "\n\nReturn ONLY the scenes whose narration must change (by index, with the corrected `vo`; add `label` only if a label was missing) and, in `fields`, "
+            "\n\nReturn ONLY the scenes whose narration must change (by index, with the corrected `vo`; add `label` only if a label was missing; "
+            "for a scene drawn as a news card also return `card_big_number` (a figure the new `vo` says, written the same way, or \"\" for none) and, "
+            "if it must change, `card_line`) and, in `fields`, "
             "any other text that must change. Fix the problems named above and nothing else. Do not add or remove scenes, keep the story, tone and facts, "
             "use only numbers that appear in the FACT_SHEET, and when trimming for length cut the weakest sentences, never the twist or the closing question.\n"
             "Scene `index` is 0-based and shown on every scene below.\nPREVIOUS DRAFT:\n" + json.dumps(_numbered(previous), ensure_ascii=False))
@@ -98,6 +101,12 @@ def apply_patch(previous: dict, raw: str) -> dict:
         out["scenes"][fix["index"]]["vo"] = fix["vo"]
         if fix.get("label"):
             out["scenes"][fix["index"]]["label"] = fix["label"]
+        card = (out["scenes"][fix["index"]].get("visual") or {}).get("card")
+        if card is not None:                                     # a news card follows its corrected line (31 Oct 2026)
+            if "card_big_number" in fix:
+                card["big_number"] = fix["card_big_number"]
+            if fix.get("card_line"):
+                card["line"] = fix["card_line"]
     f = data.get("fields") or {}
     caps = out.setdefault("captions", {})
     for key, setter in (("title", lambda v: out.__setitem__("title", v)), ("hook", lambda v: out.__setitem__("hook", v)),

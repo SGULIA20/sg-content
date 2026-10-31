@@ -148,6 +148,60 @@ def all_text(piece: Piece) -> str:
 JARGON = ["free cash flow", "cash flow", "capex", "liquidation", "liquidated", "leverage", "ebitda", "basis point", "bps", "bear market",
           "bull market", "hyperscaler", "valuation", "market cap", "guidance", "yield", "open interest", "derivative", "fii", "dii",
           "q1 ", "q2 ", "q3 ", "q4 ", "eps", "headwind", "tailwind", "macro", "fiscal deficit"]     # founder, 30 Oct 2026: plain words only
+# Only for the Reels drawn in code (news, extras, Top 10); the daily painted Shorts are working and stay as they are (founder, 31 Oct 2026)
+CARD_JARGON = ["mclr", "spread", "arpu", "dicgc", "nasdaq", "dow jones", "s&p", "cagr", "xirr", "nav", "aum", "ytm", "coupon", "tranche",
+               "withdrawals", "exit price", "base rate", "quarter"]
+
+NUM = re.compile(r"\d+(?:[.,]\d+)*")
+FIGURES_MAX = {"roundup": 6, "news": 3}   # founder, 31 Oct 2026: "use figures in situation where it is really mandatory"
+
+
+def _numbers(text: str) -> set:
+    """Every figure in a text as a plain number string: '₹8,387 cr' -> {'8387'}, '-29.1%' -> {'29.1'}."""
+    out = set()
+    for m in NUM.findall(text or ""):
+        v = m.replace(",", "")
+        out.add(v[:-2] if v.endswith(".0") else v)
+    return out
+
+
+def _is_year(v: str) -> bool:
+    return v.isdigit() and len(v) == 4 and 1900 <= int(v) <= 2099
+
+
+def card_hits(piece: Piece) -> list:
+    """Reels drawn in code only. A news card may only show a figure the voice says in that same scene (31 Oct 2026: cards showed 8.96%, Rs 4,715 and '3 guna'
+    while the narration said something else)."""
+    out = []
+    if not drawn_in_code(piece):
+        return out
+    for i, sc in enumerate((piece.script or {}).get("scenes", [])):
+        card = (sc.get("visual") or {}).get("card") or {}
+        shown = _numbers(f"{card.get('big_number') or ''} {card.get('line') or ''}")
+        missing = sorted(shown - _numbers(sc.get("vo", "")))
+        if missing:
+            out.append(f"card: scene {i} shows {', '.join(missing)} but its voice line does not say it; show only what is said, or leave big_number empty")
+    return out
+
+
+def drawn_in_code(piece: Piece) -> bool:
+    """A news, extra or Top 10 Reel whose pictures are cards drawn in code (not a daily Short painted by Gemini)."""
+    t = {**((piece.topic or {}).get("preset") or {}), **(piece.topic or {})}
+    return piece.channel == "sglearning" and piece.kind == "short" and bool(t.get("graphics") or t.get("news") or t.get("extra") or t.get("roundup"))
+
+
+def figure_hits(piece: Piece) -> list:
+    """Too many figures in a Reel drawn in code: years do not count; the Top 10 may use 6, a news or extra Reel 3."""
+    if not drawn_in_code(piece):
+        return []
+    t = {**((piece.topic or {}).get("preset") or {}), **(piece.topic or {})}
+    kind = "roundup" if (t.get("roundup") or "TOP 10 ROUNDUP" in str(t.get("summary", ""))) else "news"
+    figures = {v for sc in (piece.script or {}).get("scenes", []) for v in _numbers(sc.get("vo", "")) if not _is_year(v)}
+    cap = FIGURES_MAX[kind]
+    if len(figures) > cap:
+        return [f"figures: {len(figures)} different numbers spoken ({', '.join(sorted(figures, key=float)[:10])}), allowed {cap}; keep only the "
+                f"numbers the story cannot do without and say the rest in words (kaafi sasta, double, aadha)"]
+    return []
 
 
 def jargon_hits(piece: Piece) -> list:
@@ -155,7 +209,8 @@ def jargon_hits(piece: Piece) -> list:
     if piece.channel != "sglearning" or piece.kind != "short":
         return []
     spoken = " " + " ".join(sc.get("vo", "") for sc in (piece.script or {}).get("scenes", [])).lower() + " "
-    found = [j.strip() for j in JARGON if re.search(r"(?<![a-z])" + re.escape(j.strip()) + r"(?![a-z])", spoken)]
+    words = JARGON + (CARD_JARGON if drawn_in_code(piece) else [])
+    found = [j.strip() for j in words if re.search(r"(?<![a-z])" + re.escape(j.strip()) + r"(?![a-z])", spoken)]
     return [f"jargon: say {', '.join(found)} in everyday words (founder: a 15-year-old must follow it)"] if found else []
 
 
@@ -166,6 +221,7 @@ def check_script(piece: Piece, banned: dict, prior_scripts: list) -> list:
     text = script_text(piece)
     reasons += _banned_hits(text, banned, ["politics", "communal", "advice"])
     reasons += jargon_hits(piece)
+    reasons += card_hits(piece) + figure_hits(piece)
     if piece.channel == "arthvan":
         reasons += _banned_hits(text, banned, ["myth_forbidden"])
         for i, sc in enumerate(scenes):
