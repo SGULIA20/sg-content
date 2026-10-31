@@ -1,0 +1,357 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 90.0,
+   "quote": "Cryptocurrency exchange Binance has replaced 90% of the assets stolen in a record $6.3 billion hack by using its own funds to purchase replacement tokens, the company said on Saturday.",
+   "source_date": "2026-10-31",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/cryptocurrency/binance-replaces-90-of-stolen-crypto-after-record-6-3-billion-hack-pledges-to-cover-remaining-losses-11793469971870.html",
+   "text": "Binance has replaced 90 percent of the assets stolen in a record hack by purchasing replacement tokens using its own company reserves.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 6.3,
+   "quote": "Cryptocurrency exchange Binance has replaced 90% of the assets stolen in a record $6.3 billion hack by using its own funds to purchase replacement tokens, the company said on Saturday.",
+   "source_date": "2026-10-31",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/cryptocurrency/binance-replaces-90-of-stolen-crypto-after-record-6-3-billion-hack-pledges-to-cover-remaining-losses-11793469971870.html",
+   "text": "The security breach resulted in the theft of 6.3 billion dollars in digital assets from Binance.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "official",
+   "number": 6.34,
+   "quote": "The company added that it had internally allocated around $6.34 billion from its own funds to cover the losses.",
+   "source_date": "2026-10-31",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/cryptocurrency/binance-replaces-90-of-stolen-crypto-after-record-6-3-billion-hack-pledges-to-cover-remaining-losses-11793469971870.html",
+   "text": "Binance internally earmarked 6.34 billion dollars from its own funds to cover customer losses from the cyberattack.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "official",
+   "number": 10.0,
+   "quote": "The remaining 10% comprises less liquid tokens, which could take longer to acquire, Binance said in a statement posted on X.",
+   "source_date": "2026-10-31",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/cryptocurrency/binance-replaces-90-of-stolen-crypto-after-record-6-3-billion-hack-pledges-to-cover-remaining-losses-11793469971870.html",
+   "text": "The remaining 10 percent of stolen cryptocurrency consists of less liquid tokens that require additional time to procure.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 1.0,
+   "quote": "The money spent re-buying tokens came from using part of its $1 billion Secure Asset Fund for Users (SAFU), a bitcoin reserve it holds to protect customers in the event of security breaches, as well as some of its Futures insurance fund, and the company's own corporate treasury, it said on X.",
+   "source_date": "2026-10-31",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/cryptocurrency/binance-replaces-90-of-stolen-crypto-after-record-6-3-billion-hack-pledges-to-cover-remaining-losses-11793469971870.html",
+   "text": "Binance funded the token repurchases in part by drawing on its 1 billion dollar Secure Asset Fund for Users emergency reserve.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "official",
+   "number": 3.0,
+   "quote": "The company wrote on its X account that the estimated total impact sat at around $6.3 billion. It said it has worked with blockchain partners to freeze affected assets, with roughly $3 billion frozen on-chain so far.",
+   "source_date": "2026-10-30",
+   "source_name": "PBS News",
+   "source_url": "https://www.pbs.org/newshour/world/binance-flags-potential-security-issue-says-approximately-6-3-billion-impacted",
+   "text": "Binance coordinated with blockchain network partners to freeze approximately 3 billion dollars worth of the stolen crypto assets on-chain.",
+   "unit": "billion USD"
+  },
+  {
+   "date": "2026-10-31",
+   "label": "reported",
+   "source": "Mint Markets",
+   "text": "Cryptocurrency prices declined on Friday as Binance, the world's largest cryptocurrency exchange, sought to reassure customers that their funds remained safe following the theft of more than $6 billion worth of digital assets.",
+   "url": "https://www.livemint.com/market/cryptocurrency/binance-replaces-90-of-stolen-crypto-after-record-6-3-billion-hack-pledges-to-cover-remaining-losses-11793469971870.html"
+  }
+ ],
+ "id": "2026-11-01-sglearning-x2",
+ "ids": {
+  "budget": {
+   "day": "2026-10-31",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 0.0,
+   "usd": 0.061256,
+   "voice": 11
+  },
+  "drafts": 1,
+  "yt_id": "7-_Tj81SABQ"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-01",
+ "reasons": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Binance se record chori hui, phir 90 percent wapas?\nCompany ne apni jeb aur emergency fund se paisa bhara.\nPar India mein crypto kamai par 30 percent tax hai, aur chori ka nuksaan kamai se minus nahi hota.\nAapka paisa exchange par hai to kya aapko pata hai ki kaun bharpai karega?\nYeh investment advice nahi hai.\nUs bhai ko bhejo jo exchange par crypto rakhta hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#InvestingIndia",
+     "#PersonalFinanceIndia",
+     "#HinglishFinance",
+     "#IncomeTax",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Binance se record chori hui, phir bhi company ne 90 percent paisa apni jeb se bhar diya. Par India mein crypto kamai par 30 percent tax hai, aur chori ka nuksaan minus nahi hota. Aap exchange par paisa rakhte ho? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Binance se record crypto chori hui, aur company ne 90 percent wapas bhar diya. Par India mein crypto par 30 percent tax lagta hai aur chori ka nuksaan kamai se minus nahi hota. Isliye exchange par paisa rakhne se pehle yeh rules jaan lo. Us dost ko bhejo jo exchange par crypto rakhta hai.",
+    "tags": [
+     "binance hack",
+     "crypto india",
+     "crypto tax india",
+     "binance",
+     "bitcoin",
+     "crypto exchange",
+     "30 percent crypto tax",
+     "TDS crypto",
+     "paise ki khabar",
+     "learning with sg"
+    ],
+    "title": "Binance hack: paisa wapas milega?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "90%",
+    "line": "Chori hui, 90% wapas",
+    "source": "Mint"
+   },
+   {
+    "big_number": "30%",
+    "line": "Crypto kamai par seedha tax",
+    "source": "Mint"
+   },
+   {
+    "big_number": "1%",
+    "line": "Bechte hi TDS kat jaata hai",
+    "source": "Mint"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Yeh us bhai ko bhejo jo exchange par crypto rakhta hai.",
+  "hook": "Binance se record chori hui, phir 90 percent wapas?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "90%",
+      "line": "Chori hui, 90% wapas",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Binance se record chori hui, phir 90 percent wapas?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Duniya ka sabse bada exchange",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Binance duniya ka sabse bada crypto exchange hai, digital sikkon ki online mandi."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Ab tak ki sabse badi chori",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Company ke mutabik, hackers ne ab tak ki sabse badi crypto chori ki."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "90%",
+      "line": "Apni jeb se 90% bhara",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Phir Binance ne apni jeb se naye token kharid kar 90 percent bhar diya."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Emergency fund aur apna khazana",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Paisa emergency fund, yaani SAFU, aur company ke apne khazane se aaya."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Baaki hissa, thoda time",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Baaki hissa mushkil se milne wale tokens ka hai, isme thoda time lagega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "30%",
+      "line": "Crypto kamai par seedha tax",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "India mein crypto kamai par seedha 30 percent tax lagta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "1%",
+      "line": "Bechte hi TDS kat jaata hai",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Har bechne par 1 percent TDS bhi kat'ta hai, yaani tax pehle hi kat jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Nuksaan kamai se minus nahi",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Income Tax rules mein chori ya phansa crypto ka nuksaan, kamai se minus nahi hota."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Pehle platform ki tijori dekho",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Isliye munafa nahi, platform ki tijori dekho. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Us bhai ko bhejo",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Yeh us bhai ko bhejo jo exchange par crypto rakhta hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "BINANCE",
+   "name_hi": "बिनेंस",
+   "scene": "A giant bank vault door blown open at night, glowing golden crypto coins streaming out into the dark.",
+   "words": [
+    "$6.3B",
+    "LOOT"
+   ],
+   "words_hi": [
+    "$6.3B",
+    "लूट"
+   ]
+  },
+  "title": "Binance ki chori, paisa *wapas* mila? 💸"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  4.41,
+  10.26,
+  15.67,
+  20.68,
+  25.93,
+  30.86,
+  35.15,
+  41.4,
+  47.01,
+  53.06
+ ],
+ "topic": {
+  "category": "crypto",
+  "extra": true,
+  "graphics": true,
+  "link": "https://www.livemint.com/market/cryptocurrency/binance-replaces-90-of-stolen-crypto-after-record-6-3-billion-hack-pledges-to-cover-remaining-losses-11793469971870.html",
+  "look": "claymation",
+  "published": "2026-10-31T18:27:12+00:00",
+  "rank": 3,
+  "slot_ist": "13:00",
+  "source": "Mint Markets",
+  "summary": "Cryptocurrency prices declined on Friday as Binance, the world's largest cryptocurrency exchange, sought to reassure customers that their funds remained safe following the theft of more than $6 billion worth of digital assets.",
+  "target_minutes": null,
+  "title": "Binance replaces 90% of stolen crypto after record $6.3 billion hack, pledges to cover remaining losses",
+  "voice": "voice_g8azc8xcwhlu"
+ },
+ "updated": "2026-10-31T20:23:32+00:00",
+ "writer": "claude"
+}

@@ -1,0 +1,306 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 5.0,
+   "quote": "Under the rules, the organisation that survives the merger cannot change its objectives for five years from the end of the financial year in which the merger takes place.",
+   "source_date": "2026-10-31",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/policy/cbdt-tightens-merger-rules-for-charity-trusts-imposes-five-year-curbs-on-changing-objectives/articleshow/135409569.cms",
+   "text": "The entity surviving a charitable trust merger is barred from changing its objectives for 5 years from the end of the financial year of the merger.",
+   "unit": "years"
+  },
+  {
+   "date": "2026-10-31",
+   "label": "reported",
+   "source": "roundup",
+   "text": "TOP 10 ROUNDUP. Plain everyday words, one line per item, item 1 (the biggest) is the hook. Items as reported:\n1. CBDT tightens merger rules for charity trusts, imposes five-year curbs on changing objectives :: The Central Board of Direct Taxes (CBDT) has made it mandatory for organisations merging with another registered non-profit to inform the I-T Department within a prescribed deadlin (ET Economy)\n2. Binance replaces 90% of stolen crypto after record $6.3 billion hack, pledges to cover remaining losses :: Cryptocurrency prices declined on Friday as Binance, the world's largest cryptocurrency exchange, sought to reassure customers that their funds remained safe following the theft of (Mint Markets)\n3. GST reforms: Easier registration for small e-commerce sellers, faster refunds to take effect Nov 1 :: Simplified GST registration processes will benefit small sellers using e-commerce platforms without physical presence in multiple states. The GST portal will offer user-friendly in (ET Economy)\n4. NTPC vs NTPC Green Energy Q2 results 2026 compared: Which PSU wins on Q2 profit, revenue, EBITDA, dividend? Details :: NTPC reported Q2 FY27 profit growth of 38.7% to  ₹7,029.56 crore, while subsidiary NTPC Green Energy’s profit rose 59% to  ₹137.50 crore.&amp;nbsp; (Mint Markets)\n5. Jio Platforms up 27.8% since IPO listing but how RIL, Jio Fin, Alok Ind, Network 18, Lotus shares fared in 3 years? :: Jio Platforms made a strong stock market debut, listing 21.26% above its IPO price and rising 27.8%. Other Reliance group stocks have had mixed results over three years: Reliance I (Mint Markets)\n6. India extends cotton import duty exemption till December 31 :: The Indian government has extended the customs duty exemption on cotton imports to December 31. This decision aims to support the textile industry by ensuring adequate raw material (ET Economy)\n7. NTPC Q2 Results: Standalone profit rises 14% YoY to Rs 5,320 crore; revenue up 17% :: NTPC has showcased a strong performance in the second quarter of FY27, with a significant 14% increase in standalone net profit year-on-year. The operational revenue saw a notable  (ET Markets)\n8. Concurrent Gainers: 8 stocks that gain for 5 days in a row :: Eight BSE 500 stocks gained in each of the five sessions between October 26 and 30, delivering cumulative returns of 10% to 21%. (ET Markets)\n9. Karnataka sugarcane growers stage demo to press for their demands, district officials impose restrictions :: Farmers in North Karnataka are intensifying their protest over the procurement price of sugarcane and other related issues. They staged blockades and sit-ins across several locatio (ET Economy)\n10. ET Wealth Expo: Why market veteran S Naren thinks investors are getting gold, silver and asset allocation all wrong :: ICICI Prudential MF's S Naren warns investors against chasing assets after spectacular rallies, highlighting how silver's 216% surge drew record ETF inflows before a 27% correction (ET Markets)",
+   "url": "https://economictimes.indiatimes.com/news/economy/policy/cbdt-tightens-merger-rules-for-charity-trusts-imposes-five-year-curbs-on-changing-objectives/articleshow/135409569.cms"
+  }
+ ],
+ "id": "2026-11-01-sglearning-x1",
+ "ids": {
+  "budget": {
+   "day": "2026-10-31",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 0.0,
+   "usd": 0.073484,
+   "voice": 12
+  },
+  "drafts": 1,
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "wL0UBrt5WJs"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-01",
+ "reasons": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Merge ke baad charity ka maksad 5 saal fix. Saath mein 9 aur khabrein: GST, NTPC, Jio, cotton aur silver. Aapko kaunsi khabar sabse zaroori lagi? Yeh investment advice nahi hai. Us dost ko bhejo jo roz paise ki khabar miss kar deta hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#IncomeTax",
+     "#GST",
+     "#StockMarketIndia",
+     "#HinglishFinance",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Charity trust merge kare to uska maksad 5 saal tak nahi badal sakta. Saath mein GST, NTPC, Jio aur silver ki khabrein. Aapko kaunsi khabar sabse zaroori lagi? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Charity trust merge kare to maksad 5 saal tak nahi badal sakta. Saath mein 9 aur khabrein jo aapke paise aur kaam ko chhooti hain. Us dost ko bhejo jo roz paise ki khabar miss kar deta hai.",
+    "tags": [
+     "charity trust",
+     "CBDT",
+     "income tax",
+     "donation deduction",
+     "GST",
+     "NTPC",
+     "Binance",
+     "paise ki khabar",
+     "hinglish finance"
+    ],
+    "title": "Charity Trust Rules: Kya Badla?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "5 saal",
+    "line": "Merge ke baad maksad fix",
+    "source": "ET"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Yeh us dost ko bhejo jo roz paise ki khabar miss kar deta hai.",
+  "hook": "Merge ke baad charity ka maksad 5 saal fix, aur 9 khabrein.",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "5 saal",
+      "line": "Merge ke baad maksad fix",
+      "source": "ET"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Merge ke baad charity ka maksad 5 saal fix, aur 9 khabrein."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Trust jude to I-T ko batao",
+      "source": "ET Economy"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Ek: Trust jude to I-T ko batana padega, purana tax bhi naya trust bharega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Binance mein record hack",
+      "source": "Mint Markets"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Do: Binance crypto exchange mein record hack, zyaadatar chori hua paisa company ne bhara."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "GST registration aasaan, refund jaldi",
+      "source": "ET Economy"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Teen: Aaj se GST registration aasaan, chhote online sellers ko refund bhi jaldi milega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "NTPC ka munafa badha",
+      "source": "Mint Markets"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Chaar: Sarkari bijli company NTPC ka munafa badha, green wing ka aur tezi se."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Jio chadha, baaki mila-jula",
+      "source": "Mint Markets"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Paanch: Jio Platforms listing ke baad chadha, baaki Reliance shares ka haal mila-jula."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Cotton import duty chhoot badhi",
+      "source": "ET Economy"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Chhe: Cotton import par duty chhoot saal-end tak badhi, textile ko raahat."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "NTPC ka akela munafa badha",
+      "source": "ET Markets"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Saat: NTPC ka akela munafa bhi badha, aur kamaai bhi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Kuch shares lagaatar chadhe",
+      "source": "ET Markets"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Aath: Kuch shares lagaatar kai din chadhe, par yeh khareedne ki salah nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Ganna kisan dharne par",
+      "source": "ET Economy"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Nau: Karnataka mein ganna kisan daam ke liye dharne par, prashasan ne rok lagayi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Rally ke peeche mat bhaago",
+      "source": "ET Markets"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Das: Fund manager Naren: silver ke peeche sab bhaage, phir gira. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Dost ko bhejo",
+      "source": "Learning with SG"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Yeh us dost ko bhejo jo roz paise ki khabar miss kar deta hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "CHARITY",
+   "name_hi": "चैरिटी",
+   "scene": "A giant padlock chained around a charity donation box, with tax forms and rupee notes scattered around it on a desk.",
+   "words": [
+    "9 KHABAR",
+    "SAKHT"
+   ],
+   "words_hi": [
+    "9 खबर",
+    "सख्त"
+   ]
+  },
+  "title": "Charity ka maksad *5 saal* lock 🔒"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  4.85,
+  10.22,
+  15.75,
+  22.88,
+  29.85,
+  35.74,
+  42.23,
+  47.28,
+  52.69,
+  58.62,
+  65.63
+ ],
+ "topic": {
+  "category": "companies",
+  "extra": true,
+  "graphics": true,
+  "link": "https://economictimes.indiatimes.com/news/economy/policy/cbdt-tightens-merger-rules-for-charity-trusts-imposes-five-year-curbs-on-changing-objectives/articleshow/135409569.cms",
+  "look": "claymation",
+  "published": "2026-10-31T20:14:03.688241+00:00",
+  "roundup": true,
+  "slot_ist": "09:30",
+  "source": "roundup",
+  "summary": "TOP 10 ROUNDUP. Plain everyday words, one line per item, item 1 (the biggest) is the hook. Items as reported:\n1. CBDT tightens merger rules for charity trusts, imposes five-year curbs on changing objectives :: The Central Board of Direct Taxes (CBDT) has made it mandatory for organisations merging with another registered non-profit to inform the I-T Department within a prescribed deadlin (ET Economy)\n2. Binance replaces 90% of stolen crypto after record $6.3 billion hack, pledges to cover remaining losses :: Cryptocurrency prices declined on Friday as Binance, the world's largest cryptocurrency exchange, sought to reassure customers that their funds remained safe following the theft of (Mint Markets)\n3. GST reforms: Easier registration for small e-commerce sellers, faster refunds to take effect Nov 1 :: Simplified GST registration processes will benefit small sellers using e-commerce platforms without physical presence in multiple states. The GST portal will offer user-friendly in (ET Economy)\n4. NTPC vs NTPC Green Energy Q2 results 2026 compared: Which PSU wins on Q2 profit, revenue, EBITDA, dividend? Details :: NTPC reported Q2 FY27 profit growth of 38.7% to  ₹7,029.56 crore, while subsidiary NTPC Green Energy’s profit rose 59% to  ₹137.50 crore.&amp;nbsp; (Mint Markets)\n5. Jio Platforms up 27.8% since IPO listing but how RIL, Jio Fin, Alok Ind, Network 18, Lotus shares fared in 3 years? :: Jio Platforms made a strong stock market debut, listing 21.26% above its IPO price and rising 27.8%. Other Reliance group stocks have had mixed results over three years: Reliance I (Mint Markets)\n6. India extends cotton import duty exemption till December 31 :: The Indian government has extended the customs duty exemption on cotton imports to December 31. This decision aims to support the textile industry by ensuring adequate raw material (ET Economy)\n7. NTPC Q2 Results: Standalone profit rises 14% YoY to Rs 5,320 crore; revenue up 17% :: NTPC has showcased a strong performance in the second quarter of FY27, with a significant 14% increase in standalone net profit year-on-year. The operational revenue saw a notable  (ET Markets)\n8. Concurrent Gainers: 8 stocks that gain for 5 days in a row :: Eight BSE 500 stocks gained in each of the five sessions between October 26 and 30, delivering cumulative returns of 10% to 21%. (ET Markets)\n9. Karnataka sugarcane growers stage demo to press for their demands, district officials impose restrictions :: Farmers in North Karnataka are intensifying their protest over the procurement price of sugarcane and other related issues. They staged blockades and sit-ins across several locatio (ET Economy)\n10. ET Wealth Expo: Why market veteran S Naren thinks investors are getting gold, silver and asset allocation all wrong :: ICICI Prudential MF's S Naren warns investors against chasing assets after spectacular rallies, highlighting how silver's 216% surge drew record ETF inflows before a 27% correction (ET Markets)",
+  "target_minutes": null,
+  "title": "CBDT tightens merger rules for charity trusts, imposes five-year curbs on changing objectives",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-10-31T20:18:47+00:00",
+ "writer": "claude"
+}
