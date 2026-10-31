@@ -108,3 +108,26 @@ def test_errors_text_keeps_googles_details():
     body = {"error": {"details": [{"errors": [{"message": "below minimum", "errorCode": {"campaignBudgetError": "BUDGET_BELOW_PER_DAY_MINIMUM"},
                                                "details": {"budgetPerDayMinimumErrorDetails": {"minimumBudgetAmountMicros": "5000000"}}}]}]}}
     assert "5000000" in ads.errors_text(body)
+
+
+def test_status_reports_approvals_and_flags_a_disapproved_ad():
+    from engine import ads
+    seen = []
+    def call(method, url, tok, json_body=None, headers=None):
+        q = json_body["query"]
+        seen.append(q)
+        if "FROM customer" in q:
+            return 200, {}, {"results": [{"customer": {"status": "ENABLED", "currencyCode": "USD"}}]}
+        if "FROM billing_setup" in q:
+            return 200, {}, {"results": [{"billingSetup": {"status": "APPROVED"}}]}
+        return 200, {}, {"results": [
+            {"campaign": {"name": "SG test A", "status": "ENABLED", "primaryStatus": "ELIGIBLE"},
+             "adGroupAd": {"policySummary": {"approvalStatus": "APPROVED", "reviewStatus": "REVIEWED"}}},
+            {"campaign": {"name": "SG test B", "status": "ENABLED", "primaryStatus": "NOT_ELIGIBLE", "primaryStatusReasons": ["AD_GROUP_AD_DISAPPROVED"]},
+             "adGroupAd": {"policySummary": {"approvalStatus": "DISAPPROVED", "reviewStatus": "REVIEWED",
+                                             "policyTopicEntries": [{"topic": "MISLEADING", "type": "PROHIBITED"}]}}}]}
+    sent = []
+    assert ads.status({"customer_id": "601-481-4549"}, {}, notify=sent.append, call=call, token="t") == 0
+    assert sent[0].startswith("⚠️") and "SG test A: campaign ENABLED, serving ELIGIBLE; ad APPROVED" in sent[0]
+    assert "MISLEADING (PROHIBITED)" in sent[0] and "billing: APPROVED" in sent[0]
+    assert not any("mutate" in q for q in seen)
