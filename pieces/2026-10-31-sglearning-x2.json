@@ -1,0 +1,395 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 8.96,
+   "quote": "The weighted average lending rate (WALR) on outstanding rupee loans of SCBs remained unchanged at 8.96 per cent in September 2026 compared to August 2026.",
+   "source_date": "2026-10-30",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63894",
+   "text": "The weighted average lending rate on outstanding rupee loans of scheduled commercial banks remained unchanged at 8.96 per cent in September 2026.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 8.51,
+   "quote": "The WALR on fresh rupee loans of SCBs declined to 8.51 per cent in September 2026 from 8.61 per cent in August 2026.",
+   "source_date": "2026-10-30",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63894",
+   "text": "The weighted average lending rate on fresh rupee loans of scheduled commercial banks declined to 8.51 per cent in September 2026.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 8.55,
+   "quote": "1-Year median Marginal Cost of Funds based Lending Rate (MCLR) of SCBs declined to 8.55 per cent in October 2026 from 8.61 per cent in September 2026.",
+   "source_date": "2026-10-30",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63894",
+   "text": "The one-year median Marginal Cost of Funds based Lending Rate of scheduled commercial banks moderated to 8.55 per cent in October 2026.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 6.55,
+   "quote": "The weighted average domestic term deposit rate (WADTDR) on outstanding rupee term deposits of SCBs marginally declined to 6.55 per cent in September 2026 from 6.56 per cent in August 2026.",
+   "source_date": "2026-10-30",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63894",
+   "text": "The weighted average domestic term deposit rate on outstanding rupee term deposits eased marginally to 6.55 per cent in September 2026.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 5.61,
+   "quote": "The WADTDR on fresh rupee term deposits of SCBs declined to 5.61 per cent in September 2026 from 5.67 per cent in August 2026.",
+   "source_date": "2026-10-30",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63894",
+   "text": "The weighted average domestic term deposit rate on fresh rupee term deposits of scheduled commercial banks fell to 5.61 per cent in September 2026.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 7.93,
+   "quote": "Among bank groups, the WALR on fresh loans declined to 7.93 per cent for public sector banks and 7.76 per cent for foreign banks in September, while private sector banks reported 9.19 per cent.",
+   "source_date": "2026-10-30",
+   "source_name": "Business Standard",
+   "source_url": "https://www.business-standard.com/industry/banking/bank-advances-against-deposits-surge-53-on-fcnr-b-leverage-rbi-data",
+   "text": "The weighted average lending rate on fresh loans at public sector banks stood at 7.93 per cent in September 2026.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 17.3,
+   "quote": "Personal loans grew 17.3 per cent to ₹74.27 trillion, moderating from 11.5 per cent growth in the corresponding period last year.",
+   "source_date": "2026-10-30",
+   "source_name": "Business Standard",
+   "source_url": "https://www.business-standard.com/industry/banking/bank-advances-against-deposits-surge-53-on-fcnr-b-leverage-rbi-data",
+   "text": "Personal loans extended by commercial banks recorded year-on-year growth of 17.3 per cent as of September 2026.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 83.0,
+   "quote": "Within personal loans, bank credit extended against gold jewellery expanded rapidly, surging 83 per cent Y-o-Y to reach ₹5.6 trillion.",
+   "source_date": "2026-10-30",
+   "source_name": "Business Standard",
+   "source_url": "https://www.business-standard.com/industry/banking/bank-advances-against-deposits-surge-53-on-fcnr-b-leverage-rbi-data",
+   "text": "Bank advances against gold jewellery expanded 83 per cent year-on-year to reach 5.6 trillion rupees.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-10-31-sglearning-x2",
+ "ids": {
+  "budget": {
+   "day": "2026-10-30",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 0.0,
+   "usd": 0.147964,
+   "voice": 11
+  },
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "wrRaUagLzYw"
+ },
+ "kind": "short",
+ "publish_day": "2026-10-31",
+ "reasons": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Naya loan 8.51 percent, aapka purana loan abhi bhi 8.96? 🤔\nRBI data: naye loan saste, naye FD pe byaaj sirf 5.61 percent.\nFloating loan reset date par hi badalta hai, bank se spread poochho.\nAapka home loan rate aakhri baar kab badla tha? Comment karo.\nYeh investment advice nahi hai.\nUs bhai ko bhejo jo purane home loan ki EMI bharta hai.",
+    "hashtags": [
+     "#RBI",
+     "#EMI",
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#PersonalFinanceIndia",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Naya loan 8.51%, purana abhi bhi 8.96% (RBI data). Naye FD pe byaaj sirf 5.61%. Floating home loan apne aap sasta nahi hota, reset date aur spread check karo. Aapka rate aakhri baar kab badla? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Naya loan 8.51 percent, aapka purana loan abhi bhi 8.96? RBI data ke hisaab se naye loan aur naye FD dono saste hue, par purane floating loan ka rate apne aap nahi girta. Reset date aur spread check kijiye, aur FD renew karne se pehle soch lijiye. Yeh investment advice nahi hai. Us bhai ko bhejo jo purane home loan ki EMI bharta hai.",
+    "tags": [
+     "home loan",
+     "EMI",
+     "RBI",
+     "MCLR",
+     "FD rates",
+     "interest rate",
+     "lending rate",
+     "fixed deposit",
+     "gold loan",
+     "DICGC",
+     "personal finance hindi",
+     "Learning with SG"
+    ],
+    "title": "Home Loan EMI kyun nahi giri? RBI ka naya data"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "8.51%",
+    "line": "naya loan hua sasta",
+    "source": "RBI"
+   },
+   {
+    "big_number": "8.96%",
+    "line": "purane loan ka rate atka",
+    "source": "RBI"
+   },
+   {
+    "big_number": "8.55%",
+    "line": "bank ka base rate gira",
+    "source": "RBI"
+   },
+   {
+    "big_number": "5.61%",
+    "line": "naye FD ka byaaj",
+    "source": "RBI"
+   },
+   {
+    "big_number": "6.55%",
+    "line": "purani FD ka byaaj",
+    "source": "RBI"
+   },
+   {
+    "big_number": "83%",
+    "line": "gold loan ki chhalaang",
+    "source": "Business Standard"
+   },
+   {
+    "big_number": "₹5 lakh",
+    "line": "DICGC cover har bank",
+    "source": "DICGC"
+   }
+  ],
+  "carousel": true,
+  "end_question": "Yeh us bhai ko bhejo jo purane home loan ki EMI bharta hai.",
+  "hook": "Naya loan 8.51 percent, aapka purana loan abhi bhi 8.96?",
+  "scenes": [
+   {
+    "facts_used": [
+     1,
+     0
+    ],
+    "label": "Hook",
+    "visual": {
+     "card": {
+      "big_number": "8.51%",
+      "line": "naya loan hua sasta",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Naya loan 8.51 percent, aapka purana loan abhi bhi 8.96?"
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "Kya hua",
+    "visual": {
+     "card": {
+      "big_number": "8.96%",
+      "line": "purane loan ka rate atka",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "RBI data: September mein naye loan saste hue, purane wahin atke."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "Kyun hua",
+    "visual": {
+     "card": {
+      "big_number": "8.55%",
+      "line": "bank ka base rate gira",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Wajah? Banks ka base rate, yaani MCLR, October mein 8.55 percent hua."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "FD par asar",
+    "visual": {
+     "card": {
+      "big_number": "5.61%",
+      "line": "naye FD ka byaaj",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Isi liye naye FD pe byaaj gira, sirf 5.61 percent."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "FD par asar",
+    "visual": {
+     "card": {
+      "big_number": "6.55%",
+      "line": "purani FD ka byaaj",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Purani FD abhi 6.55 percent kama rahi, renew karte hi kam milega."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "Bada asar",
+    "visual": {
+     "card": {
+      "big_number": "83%",
+      "line": "gold loan ki chhalaang",
+      "source": "Business Standard"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Reportedly, gold ke badle loan 83 percent badhe. Log udhaar pe chal rahe."
+   },
+   {
+    "facts_used": [],
+    "label": "Aapke liye",
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "reset date par hi badlega",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Floating home loan ka rate apne aap nahi girta. Woh reset date par badalta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Kya karein",
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "bank se spread poochho",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Bank se poochho, mera spread kitna? Spread yaani base rate ke upar bank ka munafa."
+   },
+   {
+    "facts_used": [],
+    "label": "Aapka haq",
+    "visual": {
+     "card": {
+      "big_number": "₹5 lakh",
+      "line": "DICGC cover har bank",
+      "source": "DICGC"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "FD renew karte waqt yaad rakho, DICGC har bank mein 5 lakh tak cover deta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Takeaway",
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "EMI girwana aapka kaam",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Rate girna khabar hai, EMI girwana aapka kaam. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Send",
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "purane loan wale ko bhejo",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Yeh us bhai ko bhejo jo purane home loan ki EMI bharta hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "HOME LOAN",
+   "name_hi": "होम लोन",
+   "scene": "LEFT: a bright bank counter handing over a fresh home loan file with a small light pile of coins; RIGHT: an old house key chained to a heavy iron ball stamped with a rupee sign, stuck firmly on the floor.",
+   "words": [
+    "8.96%",
+    "TRAP"
+   ],
+   "words_hi": [
+    "8.96%",
+    "ट्रैप"
+   ]
+  },
+  "title": "Naya loan sasta, purana *mehnga* kyun? 🤔"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  5.93,
+  11.34,
+  18.35,
+  23.44,
+  29.09,
+  35.26,
+  40.35,
+  47.76,
+  54.29,
+  60.42
+ ],
+ "topic": {
+  "category": "economy",
+  "extra": true,
+  "graphics": true,
+  "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63894",
+  "look": "claymation",
+  "published": "2026-10-30T17:35:00+00:00",
+  "rank": 5,
+  "slot_ist": "13:00",
+  "source": "RBI Press Releases",
+  "summary": "      Data on lending and deposit rates of scheduled commercial banks (SCBs) (excluding regional rural banks and small finance banks) received during October 2026 are set out in Tables 1 to 9.    Highlights:     Lending Rates:                  The weighted average lending rate (WALR) on outstanding rupee loans of SCBs remained unchanged at 8.96 per cent in September 2026 compared to August 2026.                    The WALR on fresh rupee loans of SCBs declined to 8.51 per cent in September 2026 from 8.61 per cent in August 2026.                    1-Year median Marginal Cost of Funds based Lending Rate (MCLR) of SCBs declined to 8.55 per cent in October 2026 from 8.61 per cent in September 2026.                    The WALR on fresh as well as outstanding rupee loans exhibited a mixed movement across sectors in September 2026.              Deposit Rates:                  The weighted average domestic term deposit rate (WADTDR) on outstanding rupee term deposits of SCBs marginally declined to 6.55 per cent in September 2026 from 6.56 per cent in August 2026.                    The WADTDR on fresh rupee term deposits of SCBs declined to 5.61 per cent in September 2026 from 5.67 per cent in August 2026.              Ajit Prasad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      Deputy General Manager      (Communications)&nbsp;&nbsp;&nbsp;&nbsp;    Press Release: 2026-2027/1416  ",
+  "target_minutes": null,
+  "title": "Lending and Deposit Rates of Scheduled Commercial Banks – October 2026",
+  "voice": "voice_g8azc8xcwhlu"
+ },
+ "updated": "2026-10-31T00:43:04+00:00",
+ "writer": "claude"
+}
