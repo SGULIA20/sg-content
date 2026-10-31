@@ -93,3 +93,29 @@ def test_set_budgets_fixes_the_test_campaigns_and_never_resumes():
     op = calls[0]["mutateOperations"][0]["campaignBudgetOperation"]
     assert op["update"]["amountMicros"] == "1500000" and op["updateMask"] == "amount_micros" and "status" not in op["update"]
     assert "$1.50 a day" in sent[0] and "stay paused" in sent[0]
+
+
+def _resume_api(calls, budgets):
+    def call(method, url, tok, json_body=None, data=None, headers=None):
+        if url.endswith(":search") and "currency_code" in json_body["query"]:
+            return 200, {}, {"results": [{"customer": {"currencyCode": "USD"}}]}
+        if url.endswith(":search"):
+            return 200, {}, {"results": [{"campaign": {"id": str(i), "name": f"SG test {i}", "status": "PAUSED"},
+                                          "campaignBudget": {"amountMicros": str(m)}} for i, m in enumerate(budgets, 1)]}
+        calls.append((url, json_body)); return 200, {}, {}
+    return call
+
+
+def test_resume_turns_on_only_campaigns_within_the_limit():
+    calls, sent = [], []
+    assert adlaunch.resume(CFG, {}, notify=sent.append, call=_resume_api(calls, [1_500_000, 143_000_000]), token="t") == 1
+    url, body = calls[0]
+    assert url.endswith("/campaigns:mutate") and body["operations"] == [
+        {"update": {"resourceName": "customers/6014814549/campaigns/1", "status": "ENABLED"}, "updateMask": "status"}]
+    assert "$1.50 a day" in sent[0] and "SG test 2" in sent[0]
+
+
+def test_resume_never_turns_on_a_campaign_still_on_the_old_budget():
+    calls, sent = [], []
+    assert adlaunch.resume(CFG, {}, notify=sent.append, call=_resume_api(calls, [143_000_000, 143_000_000]), token="t") == 1
+    assert calls == [] and "nothing resumed" in sent[0]

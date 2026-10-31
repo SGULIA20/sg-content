@@ -13,11 +13,11 @@
    "max_cost_per_sub": 25
   },
   "USD": {
-   "monthly_cap": 42,
-   "budget_per_channel": 21,
-   "min_spend": 18,
+   "monthly_cap": 140,
+   "budget_per_channel": 70,
+   "min_spend": 30,
    "max_cost_per_sub": 0.3
   }
  },
- "_limits_note": "Founder, 31 Oct 2026: postpaid, at most USD 50 a month in total; the account turned out to be in USD. 42 + up to 18% tax = about 50. Every limit is in the account's own currency."
+ "_limits_note": "Founder, 31 Oct 2026: postpaid, account in USD. Google's Demand Gen minimum is $5 a day per campaign, so the cap was raised from $42 to $140: both channels at $5 a day for 14 days ($70 each), plus tax. Every limit is in the account's own currency."
 }
