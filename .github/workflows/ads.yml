@@ -17,7 +17,7 @@ on:
         required: false
         default: ''
       launch:
-        description: 'check / live = create the test campaigns; budgets-check / budgets-live = set their daily budgets to the limit; resume = turn paused test campaigns on if their budget is within the limit (engine/adlaunch.py)'
+        description: 'check / live = create the test campaigns; budgets-check / budgets-live = set their daily budgets to the limit; resume = turn paused test campaigns on if their budget is within the limit; youtube-check / youtube-live = show the ads only on YouTube (engine/adlaunch.py)'
         required: false
         default: ''
 
@@ -62,6 +62,8 @@ jobs:
           elif [ "${{ github.event.inputs.launch }}" = "budgets-check" ]; then python -m engine.adlaunch --set-budgets
           elif [ "${{ github.event.inputs.launch }}" = "budgets-live" ]; then python -m engine.adlaunch --set-budgets --live
           elif [ "${{ github.event.inputs.launch }}" = "resume" ]; then python -m engine.adlaunch --resume
+          elif [ "${{ github.event.inputs.launch }}" = "youtube-check" ]; then python -m engine.adlaunch --youtube-only
+          elif [ "${{ github.event.inputs.launch }}" = "youtube-live" ]; then python -m engine.adlaunch --youtube-only --live
           else python -m engine.ads ${{ github.event.inputs.check == 'yes' && '--check' || (github.event.schedule == '30 19 * * *' && '--report' || '') }}
           fi
       - name: Save the state

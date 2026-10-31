@@ -30,6 +30,12 @@ LINES = {
                 "descriptions": ["Kahani bhi, sabut bhi. Har hafte nayi khoj. Subscribe karo, free hai."]},
 }
 LAUNCHED = "ads-launch.json"
+# YouTube feed, Shorts and in-stream only, never Gmail, Discover or partner websites (founder, 31 Oct 2026: "switch both to YouTube only")
+YOUTUBE_ONLY = {"channelControls": {"channelConfig": "SELECTED_CHANNELS", "selectedChannels": {
+    "youtubeInFeed": True, "youtubeInStream": True, "youtubeShorts": True, "discover": False, "gmail": False, "display": False}}}
+YOUTUBE_ONLY_MASK = ",".join(["demand_gen_ad_group_settings.channel_controls.channel_config"] + [
+    f"demand_gen_ad_group_settings.channel_controls.selected_channels.{f}"
+    for f in ("youtube_in_feed", "youtube_in_stream", "youtube_shorts", "discover", "gmail", "display")])
 
 
 def best_long(channel: str, root: Path, now_utc: datetime):
@@ -66,7 +72,7 @@ def operations(cid: str, channel: str, video_id: str, logo: bytes, today, n: int
                                           "containsEuPoliticalAdvertising": "DOES_NOT_CONTAIN_EU_POLITICAL_ADVERTISING",
                                           "startDateTime": f"{today.isoformat()} 00:00:00", "endDateTime": f"{end.isoformat()} 23:59:59"}}},
         {"adGroupOperation": {"create": {"resourceName": rn("adGroups", 5), "name": f"{tag} group", "campaign": rn("campaigns", 4),
-                                         "status": "ENABLED"}}},
+                                         "status": "ENABLED", "demandGenAdGroupSettings": YOUTUBE_ONLY}}},
         # Demand Gen takes location and language on the ad group (31 Oct 2026: Google refused them on the campaign)
         {"adGroupCriterionOperation": {"create": {"adGroup": rn("adGroups", 5), "location": {"geoTargetConstant": INDIA}}}},
         {"adGroupCriterionOperation": {"create": {"adGroup": rn("adGroups", 5), "language": {"languageConstant": HINDI}}}},
@@ -207,9 +213,39 @@ def resume(cfg: dict | None = None, env=None, notify=telegram.send, call=ads.cal
     return 1 if held else 0
 
 
+def youtube_only(cfg: dict | None = None, env=None, notify=telegram.send, call=ads.call_full, token=None, live: bool = False) -> int:
+    """Limits every test ad group to YouTube (feed, Shorts, in-stream). Check-only unless live; never changes status or budget."""
+    sent = notify
+
+    def notify(text):                                         # also in the run log
+        print(text, flush=True)
+        sent(text)
+    cfg = ads.settings() if cfg is None else cfg
+    cid = str(cfg.get("customer_id", "")).replace("-", "")
+    tok = token or ads.access_token(env)
+    rows = ads.search(cid, "SELECT ad_group.resource_name, campaign.name FROM ad_group "
+                           "WHERE campaign.name LIKE 'SG test %' AND campaign.status != 'REMOVED' AND ad_group.status != 'REMOVED'", tok, cfg, call)
+    ops = [{"adGroupOperation": {"update": {"resourceName": r["adGroup"]["resourceName"], "demandGenAdGroupSettings": YOUTUBE_ONLY},
+                                 "updateMask": YOUTUBE_ONLY_MASK}} for r in rows]
+    if not ops:
+        notify("📣 Ads YouTube-only: no test ad groups found.")
+        return 1
+    status, _h, body = call("POST", f"{ads.API}/customers/{cid}/googleAds:mutate", tok,
+                            json_body={"mutateOperations": ops, "validateOnly": not live}, headers=ads._headers(cfg))
+    if status != 200:
+        notify(f"📣 Ads YouTube-only {'FAILED' if live else 'check found problems'} ({status}):\n{secrets.scrub(ads.errors_text(body))[:2000]}")
+        return 1
+    names = ", ".join(sorted({r["campaign"]["name"] for r in rows}))
+    notify(f"📣 Ads YouTube-only {'set' if live else 'check passed'}: {names} now show only on YouTube (feed, Shorts, before videos); "
+           "no Gmail, Discover or partner websites.")
+    return 0
+
+
 def main(argv=None) -> int:
     argv = sys.argv[1:] if argv is None else argv
     try:
+        if "--youtube-only" in argv:
+            return youtube_only(live="--live" in argv)
         if "--resume" in argv:
             return resume()
         if "--set-budgets" in argv:
