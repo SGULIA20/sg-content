@@ -76,6 +76,11 @@ def operations(cid: str, channel: str, video_id: str, logo: bytes, today, n: int
 def run(root: Path = ROOT, now_utc: datetime | None = None, env=None, live: bool = False, notify=telegram.send, call=youtube.call,
         token=None, cfg: dict | None = None) -> int:
     now_utc = now_utc or datetime.now(timezone.utc)
+    sent = notify
+
+    def notify(text):                                         # also in the run log, so Google's exact answer can be read there
+        print(text, flush=True)
+        sent(text)
     cfg = ads.settings() if cfg is None else cfg
     cid = str(cfg.get("customer_id", "")).replace("-", "")
     if not cid:
