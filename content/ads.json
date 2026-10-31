@@ -19,5 +19,15 @@
    "max_cost_per_sub": 0.3
   }
  },
- "_limits_note": "Founder, 31 Oct 2026: postpaid, account in USD. Google's Demand Gen minimum is $5 a day per campaign, so the cap was raised from $42 to $140: both channels at $5 a day for 14 days ($70 each), plus tax. Every limit is in the account's own currency."
+ "_limits_note": "Founder, 31 Oct 2026: postpaid, account in USD. Google's Demand Gen minimum is $5 a day per campaign, so the cap was raised from $42 to $140: both channels at $5 a day for 14 days ($70 each), plus tax. Every limit is in the account's own currency.",
+ "ad_videos": {
+  "sglearning": [
+   "wO9L5aUZoQ4"
+  ],
+  "arthvan": [
+   "6SsYUMyyO-4",
+   "3s-vr6ZPXxc"
+  ]
+ },
+ "_ad_videos_note": "Founder, 31 Oct 2026: videos added to each test ad, picked by topic because views were too few to rank: Learning with SG + Credit Card Minimum Due (not the off-topic CIMA exam video); SG-MYTH-WORLD + Jagannath flag and Saraswati river. Empty = pick by watch data."
 }

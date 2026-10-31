@@ -103,7 +103,12 @@ def run(cfg=None, env=None, live: bool = False, notify=telegram.send, call=ads.c
         ytok = yt_token(channel, env)
         titles = long_videos(ytok, yt_call)
         stats = watch_stats(ytok, list(titles), today, yt_call)
-        picks = pick(stats, have_ids, min(ADD, MAX_VIDEOS - len(have)))
+        chosen = (cfg.get("ad_videos") or {}).get(channel)      # the founder's own pick wins over the data (31 Oct 2026: views too thin)
+        if chosen:
+            picks = [v for v in chosen if v in titles and v not in have_ids][:MAX_VIDEOS - len(have)]
+            lines += [f"{CHANNELS[channel].display_name}: youtu.be/{v} skipped (not a public long video)" for v in chosen if v not in titles]
+        else:
+            picks = pick(stats, have_ids, min(ADD, MAX_VIDEOS - len(have)))
         label = CHANNELS[channel].display_name
         if not picks:
             lines.append(f"{label}: no other long video with {MIN_VIEWS}+ views yet; ad unchanged")
@@ -118,8 +123,8 @@ def run(cfg=None, env=None, live: bool = False, notify=telegram.send, call=ads.c
         ops.append({"adOperation": {"update": {"resourceName": ad["resourceName"],
                                                "demandGenVideoResponsiveAd": {"videos": [{"asset": a} for a in have + new]}},
                                     "updateMask": "demand_gen_video_responsive_ad.videos"}})
-        lines.append(f"{label}: + " + "; ".join(f"{titles[v][:45]} (youtu.be/{v}, {stats[v][1]:.0f}% watched, {stats[v][0]} views, "
-                                                f"+{stats[v][2]} subs)" for v in picks))
+        lines.append(f"{label}: + " + "; ".join(f"{titles[v][:45]} (youtu.be/{v}" + (f", {stats[v][1]:.0f}% watched, {stats[v][0]} views, "
+                                                f"+{stats[v][2]} subs)" if v in stats else ")") for v in picks))
     if not ops:
         notify("📣 Ad videos: nothing to add (" + "; ".join(lines) + ").")
         return 0
