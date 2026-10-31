@@ -394,6 +394,7 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
             pieces.save(pieces.transition(piece, PARKED_WRITE, "draft cooking in Claude's batch lane; the next run collects it"), root)
             return piece
         piece.topic.pop("sheet", None)
+        piece.ids["drafts"] = piece.ids.get("drafts", 0) + 1         # writer.model_for: only the first draft of a news Reel may be Sonnet
         if written.get("note", "").startswith("claude failed"):
             piece.reasons.append(written["note"][:300])
         piece.script, piece.writer = written["script"], written["writer"]

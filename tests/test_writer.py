@@ -207,3 +207,33 @@ def test_claude_cut_off_at_max_tokens_falls_back(tmp_path):
     p = _piece(); p.kind = "long"
     out = writer.write(p, {"facts": []}, [], {}, formula="F", client=fake_client(fm), gemini_ask=g, spend=tmp_path / "s.json")
     assert out["writer"] == "gemini" and "cut off" in out["note"]
+
+
+@pytest.mark.parametrize("topic", [{"preset": {"title": "AI layoffs", "extra": True}}, {"title": "Crypto falls", "news": True},
+                                   {"title": "Top 10", "extra": True, "roundup": True}])
+def test_first_draft_of_a_news_reel_is_sonnet_at_half_the_meter(tmp_path, topic):
+    fm = FakeMessages(text=json.dumps(good_script()))
+    p = _piece(); p.topic = topic
+    writer.write(p, {"facts": []}, [], {}, formula="F", client=fake_client(fm), spend=tmp_path / "s.json", today=date(2026, 10, 20))
+    assert fm.calls[0]["model"] == writer.SONNET and fm.calls[0]["output_config"]["effort"] == "high"
+    assert fm.calls[0]["fallbacks"] == "default"
+    spent = json.loads((tmp_path / "s.json").read_text())["2026-10-20"]["usd"]
+    assert spent == pytest.approx((5000 * 4 / 1e6 + 1500 * 20 / 1e6) * writer.SONNET_VS_OPUS)
+
+
+def test_any_redraft_of_a_news_reel_goes_back_to_opus():
+    p = _piece(); p.topic = {"title": "AI layoffs", "extra": True}
+    assert writer.model_for(p) == writer.SONNET
+    p.ids["drafts"] = 1
+    assert writer.model_for(p) == writer.MODEL                    # a draft that failed a check is rewritten by Opus
+    p.ids.pop("drafts"); p.topic["revise"] = "length: 170 words, allowed 115-155"
+    assert writer.model_for(p) == writer.MODEL                    # and every patch is Opus too
+
+
+def test_daily_shorts_longs_and_myth_world_stay_on_opus():
+    p = _piece()
+    assert writer.model_for(p) == writer.MODEL
+    p.kind = "long"; p.topic = {"title": "x", "news": True}
+    assert writer.model_for(p) == writer.MODEL
+    p.kind, p.channel = "short", "arthvan"
+    assert writer.model_for(p) == writer.MODEL
