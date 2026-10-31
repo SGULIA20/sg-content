@@ -359,6 +359,11 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
                     pieces.save(pieces.transition(piece, "failed-research", f"try {attempt + 1}: {secrets.scrub(str(e))[:200]}"), root)
                     continue
                 piece.facts = sheet.get("facts", [])
+                if topic.get("extra") and topic.get("summary") and topic.get("link"):
+                    # 31 Oct 2026: a chosen story's own brief (the Top 10's ten checked figures, a news item's reported numbers) is a
+                    # reported source too; research verified only item 1, so the number check turned the Top 10 down three times
+                    piece.facts = piece.facts + [{"text": str(topic["summary"]), "url": topic["link"], "label": "reported",
+                                                  "date": str(topic.get("published", ""))[:10], "source": topic.get("source", "brief")}]
                 if not piece.facts:
                     pieces.save(pieces.transition(piece, "failed-research", f"try {attempt + 1}: no sourced facts survived the checks"), root)
                     continue
