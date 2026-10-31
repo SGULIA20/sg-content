@@ -254,6 +254,38 @@ def pause_all(cfg: dict | None = None, env=None, notify=telegram.send, call=None
     return 0
 
 
+def status(cfg: dict | None = None, env=None, notify=telegram.send, call=None, token=None) -> int:
+    """Read-only: the account, billing, each test campaign's serving state and each ad's Google review (founder, 31 Oct 2026:
+    "are campaigns approved by google? is my account all clear")."""
+    call = call or call_full
+    sent = notify
+
+    def notify(text):                                         # also in the run log
+        print(text, flush=True)
+        sent(text)
+    cfg = settings() if cfg is None else cfg
+    cid = str(cfg.get("customer_id", "")).replace("-", "")
+    tok = token or access_token(env)
+    acct = (search(cid, "SELECT customer.status, customer.currency_code FROM customer", tok, cfg, call) or [{}])[0].get("customer", {})
+    bills = [b.get("billingSetup", {}).get("status", "") for b in search(cid, "SELECT billing_setup.status FROM billing_setup", tok, cfg, call)]
+    lines = [f"Account {cfg.get('customer_id')}: {acct.get('status', '?')} ({acct.get('currencyCode', '?')}); billing: {', '.join(bills) or 'none found'}"]
+    rows = search(cid, "SELECT campaign.name, campaign.status, campaign.primary_status, campaign.primary_status_reasons, "
+                       "ad_group_ad.policy_summary.approval_status, ad_group_ad.policy_summary.review_status, "
+                       "ad_group_ad.policy_summary.policy_topic_entries FROM ad_group_ad "
+                       "WHERE campaign.name LIKE 'SG test %' AND ad_group_ad.status != 'REMOVED'", tok, cfg, call)
+    problems = acct.get("status") != "ENABLED" or not any(b == "APPROVED" for b in bills)
+    for r in rows:
+        c, pol = r.get("campaign", {}), r.get("adGroupAd", {}).get("policySummary", {})
+        topics = ", ".join(t.get("topic", "") + (f" ({t.get('type', '')})" if t.get("type") else "") for t in pol.get("policyTopicEntries", []))
+        approval = pol.get("approvalStatus", "?")
+        problems |= approval in ("DISAPPROVED", "AREA_OF_INTEREST_ONLY") or c.get("status") != "ENABLED"
+        lines.append(f"{c.get('name')}: campaign {c.get('status', '?')}, serving {c.get('primaryStatus', '?')}"
+                     + (f" ({', '.join(c.get('primaryStatusReasons', []))})" if c.get("primaryStatusReasons") else "")
+                     + f"; ad {approval} / review {pol.get('reviewStatus', '?')}" + (f"; policy: {topics}" if topics else ""))
+    notify(("⚠️" if problems else "✅") + " Ads status:\n" + "\n".join(lines))
+    return 0
+
+
 def main(argv=None) -> int:
     argv = sys.argv[1:] if argv is None else argv
     try:
@@ -261,6 +293,8 @@ def main(argv=None) -> int:
             return pause_all()
         if "--check" in argv:
             return check()
+        if "--status" in argv:
+            return status()
         return run(report="--report" in argv)
     except Exception as e:
         telegram.send(f"📣 Ads watch failed: {secrets.scrub(str(e))[:200]}")
