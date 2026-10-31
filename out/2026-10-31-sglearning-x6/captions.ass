@@ -1,0 +1,54 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.61,Default,,0,0,0,,Tech shares ke 95 lakh crore
+Dialogue: 0,0:00:02.61,0:00:03.19,Default,,0,0,0,,rupaye,
+Dialogue: 0,0:00:03.19,0:00:04.36,Default,,0,0,0,,ek din mein saaf.
+Dialogue: 0,0:00:04.36,0:00:06.68,Default,,0,0,0,,Aur 9 khabrein aapki jeb ki.
+Dialogue: 0,0:00:07.13,0:00:07.49,Default,,0,0,0,,Ek:
+Dialogue: 0,0:00:07.49,0:00:11.13,Default,,0,0,0,,reportedly 1 trillion dollar saaf,
+Dialogue: 0,0:00:11.13,0:00:11.86,Default,,0,0,0,,sawaal,
+Dialogue: 0,0:00:11.86,0:00:14.41,Default,,0,0,0,,AI kharche ki kamaai kab?
+Dialogue: 0,0:00:14.86,0:00:15.24,Default,,0,0,0,,Do:
+Dialogue: 0,0:00:15.24,0:00:19.02,Default,,0,0,0,,Intel ka share 29.1 percent gira,
+Dialogue: 0,0:00:19.02,0:00:23.18,Default,,0,0,0,,1974 ke baad sabse bura din.
+Dialogue: 0,0:00:23.63,0:00:23.96,Default,,0,0,0,,Teen:
+Dialogue: 0,0:00:23.96,0:00:27.87,Default,,0,0,0,,Nasdaq 100 October mein 5.8 percent
+Dialogue: 0,0:00:27.87,0:00:28.52,Default,,0,0,0,,gira,
+Dialogue: 0,0:00:28.52,0:00:30.15,Default,,0,0,0,,AI ka josh thanda.
+Dialogue: 0,0:00:30.60,0:00:31.02,Default,,0,0,0,,Chaar:
+Dialogue: 0,0:00:31.02,0:00:35.64,Default,,0,0,0,,Binance se 6.3 billion dollar chori,
+Dialogue: 0,0:00:35.64,0:00:39.00,Default,,0,0,0,,Bitcoin 77,000 dollar se neeche.
+Dialogue: 0,0:00:39.45,0:00:39.77,Default,,0,0,0,,Paanch:
+Dialogue: 0,0:00:39.77,0:00:43.02,Default,,0,0,0,,Microsoft ka 60,000 logon ko naukri
+Dialogue: 0,0:00:43.02,0:00:44.64,Default,,0,0,0,,chhodne ka offer,
+Dialogue: 0,0:00:44.64,0:00:45.61,Default,,0,0,0,,India bhi.
+Dialogue: 0,0:00:46.06,0:00:46.36,Default,,0,0,0,,Chhe:
+Dialogue: 0,0:00:46.36,0:00:49.33,Default,,0,0,0,,Amazon cloud 39 percent badha,
+Dialogue: 0,0:00:49.33,0:00:51.70,Default,,0,0,0,,par AI kharche mein cash khatam.
+Dialogue: 0,0:00:52.15,0:00:52.71,Default,,0,0,0,,Saat:
+Dialogue: 0,0:00:52.71,0:00:57.23,Default,,0,0,0,,sona do din mein 5,000 sasta,
+Dialogue: 0,0:00:57.23,0:01:02.31,Default,,0,0,0,,10 gram reportedly 1.39 lakh.
+Dialogue: 0,0:01:02.76,0:01:03.08,Default,,0,0,0,,Aath:
+Dialogue: 0,0:01:03.08,0:01:05.00,Default,,0,0,0,,rupaya 95 ke paas,
+Dialogue: 0,0:01:05.00,0:01:06.92,Default,,0,0,0,,tel 113 dollar,
+Dialogue: 0,0:01:06.92,0:01:09.48,Default,,0,0,0,,petrol mehenga reh sakta.
+Dialogue: 0,0:01:09.93,0:01:10.21,Default,,0,0,0,,Nau:
+Dialogue: 0,0:01:10.21,0:01:14.38,Default,,0,0,0,,food delivery DoorDash reportedly Instacart ko
+Dialogue: 0,0:01:14.38,0:01:16.89,Default,,0,0,0,,17 billion dollar mein legi.
+Dialogue: 0,0:01:17.34,0:01:17.70,Default,,0,0,0,,Das:
+Dialogue: 0,0:01:17.70,0:01:21.66,Default,,0,0,0,,Volkswagen ko 6.5 billion dollar ghaata,
+Dialogue: 0,0:01:21.66,0:01:24.18,Default,,0,0,0,,China mein cars kam biki.
+Dialogue: 0,0:01:24.63,0:01:26.92,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:01:26.92,0:01:28.76,Default,,0,0,0,,Us dost ko bhejo jo kehta
+Dialogue: 0,0:01:28.76,0:01:30.59,Default,,0,0,0,,hai tech kabhi nahi girta.
