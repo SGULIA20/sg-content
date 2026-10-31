@@ -4,8 +4,9 @@ from datetime import datetime, timezone
 from engine import ads
 
 NOW = datetime(2026, 11, 3, 19, 30, tzinfo=timezone.utc)
-CFG = {"customer_id": "123-456-7890", "test_start": "2026-11-01", "monthly_cap_inr": 6000, "baseline_subs_per_day": 0.5,
-       "pause_rule": {"min_spend_inr": 1500, "max_cost_per_sub_inr": 25}}
+CFG = {"customer_id": "123-456-7890", "test_start": "2026-11-01", "baseline_subs_per_day": 0.5,
+       "limits": {"INR": {"monthly_cap": 6000, "budget_per_channel": 2000, "min_spend": 1500, "max_cost_per_sub": 25},
+                  "USD": {"monthly_cap": 42, "budget_per_channel": 21, "min_spend": 18, "max_cost_per_sub": 0.30}}}
 
 
 def _api(cost_rupees, calls):
@@ -30,7 +31,7 @@ def _run(tmp_path, cost, subs_each, monkeypatch, paused=False):
 
 def test_cheap_subscribers_are_reported_and_nothing_is_paused(tmp_path, monkeypatch):
     calls, sent, state = _run(tmp_path, 1600, 60, monkeypatch)           # 120 new, 2 usual over 3 days
-    assert state["subs_above_usual"] == 118 and state["cost_per_sub"] == 13.6
+    assert state["subs_above_usual"] == 118 and state["cost_per_sub"] == 13.56
     assert not any(":mutate" in u for _m, u, _b in calls)
     assert sent[-1].startswith("📣 Ads: Rs 1,600 today, Rs 1,600 since 11-01")
 
@@ -49,6 +50,7 @@ def test_a_founder_pause_pauses_the_ads_too(tmp_path, monkeypatch):
 
 def test_the_monthly_cap_pauses_and_no_customer_id_does_nothing(tmp_path, monkeypatch):
     assert ads.decide(CFG, 100, 6000, 50, False).startswith("this month's spend reached")
+    assert ads.decide(CFG, 10, 42, 50, False, "USD") == "this month's spend reached the $42 cap"
     assert ads.run(tmp_path, NOW, {}, notify=lambda m: None, cfg={}) == 0
 
 
@@ -85,3 +87,17 @@ def test_pause_all_pauses_every_running_campaign():
     assert ads.pause_all({"customer_id": "601-481-4549"}, {}, notify=sent.append, call=call, token="t") == 0
     ops = calls[1][1]["operations"]
     assert [o["update"]["status"] for o in ops] == ["PAUSED", "PAUSED"] and "paused 2" in sent[0]
+
+
+def test_an_account_in_a_currency_without_limits_is_paused_not_watched(tmp_path, monkeypatch):
+    calls, sent = [], []
+    def call(method, url, token, json_body=None, data=None, headers=None):
+        calls.append((url, json_body))
+        if url.endswith(":search") and "currency_code" in json_body["query"]:
+            return 200, {}, {"results": [{"customer": {"currencyCode": "EUR"}}]}
+        if url.endswith(":search"):
+            return 200, {}, {"results": [{"campaign": {"id": "9", "status": "ENABLED"}}]}
+        return 200, {}, {}
+    monkeypatch.setattr(ads.telegram, "paused", lambda root: False)
+    assert ads.run(tmp_path, NOW, {}, notify=sent.append, cfg=CFG, call=call, token="t", subs=lambda ch: 0) == 1
+    assert any(u.endswith("campaigns:mutate") for u, _b in calls) and "paused 1" in sent[0]

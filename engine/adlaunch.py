@@ -39,7 +39,12 @@ def best_long(channel: str, root: Path, now_utc: datetime):
     return max(longs, key=lambda p: p.publish_day) if longs else None
 
 
-def operations(cid: str, channel: str, video_id: str, logo: bytes, today, n: int, budget_inr: int = BUDGET_PER_CHANNEL_INR) -> list:
+def daily_micros(budget: float) -> str:
+    """The test's per-channel budget spread over its days, in micros of the account currency, rounded to cents."""
+    return str(int(round(budget / TEST_DAYS, 2) * 1_000_000))
+
+
+def operations(cid: str, channel: str, video_id: str, logo: bytes, today, n: int, budget: float = BUDGET_PER_CHANNEL_INR) -> list:
     """The mutate operations for one channel's campaign, with temporary ids -n*10-1 ... so channels never collide."""
     rn = lambda kind, k: f"customers/{cid}/{kind}/-{n * 10 + k}"
     name = CHANNELS[channel].display_name
@@ -53,7 +58,7 @@ def operations(cid: str, channel: str, video_id: str, logo: bytes, today, n: int
         {"assetOperation": {"create": {"resourceName": rn("assets", 2), "name": f"{tag} video", "type": "YOUTUBE_VIDEO",
                                        "youtubeVideoAsset": {"youtubeVideoId": video_id}}}},
         {"campaignBudgetOperation": {"create": {"resourceName": rn("campaignBudgets", 3), "name": f"{tag} budget",
-                                                "amountMicros": str(round(budget_inr / TEST_DAYS) * 1_000_000),
+                                                "amountMicros": daily_micros(budget),
                                                 "deliveryMethod": "STANDARD", "explicitlyShared": False}}},
         {"campaignOperation": {"create": {"resourceName": rn("campaigns", 4), "name": tag, "status": "ENABLED",
                                           "advertisingChannelType": "DEMAND_GEN", "campaignBudget": rn("campaignBudgets", 3),
@@ -93,6 +98,12 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, env=None, live: bool
     except (OSError, ValueError):
         launched = {}
     today = slots.ist(now_utc).date()
+    tok = token or ads.access_token(env)
+    cur = ads.currency(cid, tok, cfg, call)
+    budget = ads.limits(cfg, cur).get("budget_per_channel")
+    if not budget:                                     # 31 Oct 2026: a rupee number sent to a USD account became $143 a day
+        notify(f"📣 Ads launch: the account is in {cur or 'an unknown currency'} and content/ads.json has no budget for it; nothing launched.")
+        return 1
     ops, plan = [], []
     for n, channel in enumerate(("sglearning", "arthvan"), 1):
         if channel in launched:
@@ -102,19 +113,18 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, env=None, live: bool
             plan.append(f"{CHANNELS[channel].display_name}: no public long video yet, skipped")
             continue
         logo = (Path(root) / "assets" / "logo" / f"{channel}-320.png").read_bytes()
-        ops += operations(cid, channel, video.ids["yt_id"], logo, today, n, int(cfg.get("budget_per_channel_inr", BUDGET_PER_CHANNEL_INR)))
+        ops += operations(cid, channel, video.ids["yt_id"], logo, today, n, budget)
         plan.append(f"{CHANNELS[channel].display_name}: {video.id} (youtu.be/{video.ids['yt_id']})")
     if not ops:
         notify("📣 Ads launch: nothing to launch (" + "; ".join(plan or ["both channels already launched"]) + ").")
         return 0
-    tok = token or ads.access_token(env)
     status, _h, body = call("POST", f"{ads.API}/customers/{cid}/googleAds:mutate", tok,
                             json_body={"mutateOperations": ops, "validateOnly": not live}, headers=ads._headers(cfg))
     if status != 200:
         notify(f"📣 Ads launch {'FAILED' if live else 'check found problems'} ({status}):\n{secrets.scrub(ads.errors_text(body))[:3000]}")
         return 1
     if not live:
-        notify(f"📣 Ads launch check passed ✅ (nothing created, nothing spent). Ready to launch Rs {int(cfg.get('budget_per_channel_inr', BUDGET_PER_CHANNEL_INR)):,} per channel over 14 days: "
+        notify(f"📣 Ads launch check passed ✅ (nothing created, nothing spent). Ready to launch {ads.money(cur, budget)} per channel over 14 days ({ads.money(cur, int(daily_micros(budget)) / 1e6)} a day): "
                + "; ".join(plan))
         return 0
     for line in plan:
@@ -123,14 +133,45 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, env=None, live: bool
                 launched[channel] = {"day": today.isoformat(), "video": line}
     state_path.parent.mkdir(exist_ok=True)
     state_path.write_text(json.dumps(launched, indent=1))
-    notify(f"🚀 Ads launched: Rs {int(cfg.get('budget_per_channel_inr', BUDGET_PER_CHANNEL_INR)):,} per channel over 14 days, India, Hindi and English; clicks open the Subscribe prompt. "
+    notify(f"🚀 Ads launched: {ads.money(cur, budget)} per channel over 14 days ({ads.money(cur, int(daily_micros(budget)) / 1e6)} a day), India, Hindi and English; clicks open the Subscribe prompt. "
            + "; ".join(plan) + ". The watch pauses them on your rules and reports daily at 20:30 WAT.")
+    return 0
+
+
+def set_budgets(cfg: dict | None = None, env=None, notify=telegram.send, call=ads.call_full, token=None, live: bool = False) -> int:
+    """Sets every test campaign's daily budget to the founder's limit in the account currency (31 Oct 2026: they were created at
+    $143 a day). Check-only unless live; never resumes a campaign."""
+    cfg = ads.settings() if cfg is None else cfg
+    cid = str(cfg.get("customer_id", "")).replace("-", "")
+    tok = token or ads.access_token(env)
+    cur = ads.currency(cid, tok, cfg, call)
+    budget = ads.limits(cfg, cur).get("budget_per_channel")
+    if not budget:
+        notify(f"📣 Ads budgets: no limit for {cur}; nothing changed.")
+        return 1
+    rows = ads.search(cid, "SELECT campaign.name, campaign.status, campaign_budget.resource_name, campaign_budget.amount_micros FROM campaign "
+                           "WHERE campaign.name LIKE 'SG test %' AND campaign.status != 'REMOVED'", tok, cfg, call)
+    ops = [{"campaignBudgetOperation": {"update": {"resourceName": r["campaignBudget"]["resourceName"], "amountMicros": daily_micros(budget)},
+                                        "updateMask": "amount_micros"}} for r in rows]
+    if not ops:
+        notify("📣 Ads budgets: no test campaigns found.")
+        return 0
+    status, _h, body = call("POST", f"{ads.API}/customers/{cid}/googleAds:mutate", tok,
+                            json_body={"mutateOperations": ops, "validateOnly": not live}, headers=ads._headers(cfg))
+    if status != 200:
+        notify(f"📣 Ads budgets {'FAILED' if live else 'check found problems'} ({status}):\n{secrets.scrub(ads.errors_text(body))[:2000]}")
+        return 1
+    names = ", ".join(f"{r['campaign']['name']} ({r['campaign']['status'].lower()})" for r in rows)
+    notify(f"📣 Ads budgets {'set' if live else 'check passed'}: {ads.money(cur, int(daily_micros(budget)) / 1e6)} a day each for {names}. "
+           "Campaigns stay paused until the founder says resume.")
     return 0
 
 
 def main(argv=None) -> int:
     argv = sys.argv[1:] if argv is None else argv
     try:
+        if "--set-budgets" in argv:
+            return set_budgets(live="--live" in argv)
         return run(live="--live" in argv)
     except Exception as e:
         telegram.send(f"📣 Ads launch crashed: {secrets.scrub(str(e))[:200]}")
