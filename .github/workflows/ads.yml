@@ -12,6 +12,10 @@ on:
         description: 'yes = only check the Google Ads permission and list the reachable accounts'
         required: false
         default: ''
+      launch:
+        description: 'check = Google validates the test campaigns (nothing spent); live = create them (engine/adlaunch.py)'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -47,7 +51,11 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SG_COMMAND_KEY: ${{ secrets.SG_COMMAND_KEY }}
-        run: python -m engine.ads ${{ github.event.inputs.check == 'yes' && '--check' || (github.event.schedule == '30 19 * * *' && '--report' || '') }}
+        run: |
+          if [ "${{ github.event.inputs.launch }}" = "check" ]; then python -m engine.adlaunch
+          elif [ "${{ github.event.inputs.launch }}" = "live" ]; then python -m engine.adlaunch --live
+          else python -m engine.ads ${{ github.event.inputs.check == 'yes' && '--check' || (github.event.schedule == '30 19 * * *' && '--report' || '') }}
+          fi
       - name: Save the state
         if: always()
         run: |
