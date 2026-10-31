@@ -163,9 +163,29 @@ def card_line(root: Path = ROOT, day: date | None = None) -> str:
     return line(state) if day is None or state.get("day") == day.isoformat() else ""
 
 
+def check(env=None, notify=telegram.send, call=youtube.call, token=None) -> int:
+    """Proves the Google Ads permission works and lists the Ads accounts it can reach (founder, 31 Oct 2026: "please check step 4")."""
+    try:
+        tok = token or access_token(env)
+    except secrets.MissingSecret:
+        notify("📣 Ads check: ADS_REFRESH_TOKEN is not saved in GitHub yet (step 4 not finished).")
+        return 1
+    status, _h, body = call("GET", f"{API}/customers:listAccessibleCustomers", tok)
+    if status != 200:
+        notify(f"📣 Ads check: the permission works, but Google Ads answered {status}: {secrets.scrub(json.dumps(body))[:200]}")
+        return 1
+    ids = [r.split("/")[-1] for r in body.get("resourceNames", [])]
+    shown = ", ".join(f"{i[:3]}-{i[3:6]}-{i[6:]}" for i in ids) or "none yet (create the Google Ads account)"
+    notify(f"📣 Ads check: step 4 works ✅. Google Ads accounts this permission can reach: {shown}")
+    print(shown, flush=True)
+    return 0
+
+
 def main(argv=None) -> int:
     argv = sys.argv[1:] if argv is None else argv
     try:
+        if "--check" in argv:
+            return check()
         return run(report="--report" in argv)
     except Exception as e:
         telegram.send(f"📣 Ads watch failed: {secrets.scrub(str(e))[:200]}")

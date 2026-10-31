@@ -50,3 +50,18 @@ def test_a_founder_pause_pauses_the_ads_too(tmp_path, monkeypatch):
 def test_the_monthly_cap_pauses_and_no_customer_id_does_nothing(tmp_path, monkeypatch):
     assert ads.decide(CFG, 100, 6000, 50, False).startswith("this month's spend reached")
     assert ads.run(tmp_path, NOW, {}, notify=lambda m: None, cfg={}) == 0
+
+
+def test_check_lists_the_reachable_accounts():
+    sent = []
+    call = lambda m, url, tok, json_body=None, data=None, headers=None: (200, {}, {"resourceNames": ["customers/1234567890"]})
+    assert ads.check({}, notify=sent.append, call=call, token="t") == 0
+    assert "step 4 works" in sent[0] and "123-456-7890" in sent[0]
+
+
+def test_check_says_when_step_4_is_missing(monkeypatch):
+    sent = []
+    def missing(env=None, post=None):
+        raise ads.secrets.MissingSecret("ADS_REFRESH_TOKEN")
+    monkeypatch.setattr(ads, "access_token", missing)
+    assert ads.check({}, notify=sent.append) == 1 and "not saved in GitHub yet" in sent[0]
