@@ -1,0 +1,46 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.92,Default,,0,0,0,,Jio ne ek quarter mein 8,387
+Dialogue: 0,0:00:02.92,0:00:04.59,Default,,0,0,0,,crore kamaye,
+Dialogue: 0,0:00:04.59,0:00:06.68,Default,,0,0,0,,profit 14% upar.
+Dialogue: 0,0:00:07.13,0:00:09.00,Default,,0,0,0,,ET ke mutabik,
+Dialogue: 0,0:00:09.00,0:00:12.37,Default,,0,0,0,,Jio ki total kamaai 40,475 crore
+Dialogue: 0,0:00:12.37,0:00:13.49,Default,,0,0,0,,pahunchi.
+Dialogue: 0,0:00:13.94,0:00:16.21,Default,,0,0,0,,Users ab 542 million,
+Dialogue: 0,0:00:16.21,0:00:19.06,Default,,0,0,0,,jinmein 300 million log 5G par
+Dialogue: 0,0:00:19.06,0:00:19.34,Default,,0,0,0,,hain.
+Dialogue: 0,0:00:19.79,0:00:20.41,Default,,0,0,0,,Wajah?
+Dialogue: 0,0:00:20.41,0:00:24.16,Default,,0,0,0,,Ek average user ab mahine ka
+Dialogue: 0,0:00:24.16,0:00:26.03,Default,,0,0,0,,218.8 rupaye deta hai.
+Dialogue: 0,0:00:26.48,0:00:28.32,Default,,0,0,0,,Upar se apps aur ghar ka
+Dialogue: 0,0:00:28.32,0:00:28.84,Default,,0,0,0,,broadband,
+Dialogue: 0,0:00:28.84,0:00:30.68,Default,,0,0,0,,dono tezi se badhe.
+Dialogue: 0,0:00:31.13,0:00:33.55,Default,,0,0,0,,Jio ne abhi IPO se 30,188
+Dialogue: 0,0:00:33.55,0:00:34.76,Default,,0,0,0,,crore uthaye,
+Dialogue: 0,0:00:34.76,0:00:38.09,Default,,0,0,0,,reportedly India ka sabse bada.
+Dialogue: 0,0:00:38.54,0:00:40.74,Default,,0,0,0,,Mutual funds ne bhi paisa lagaya,
+Dialogue: 0,0:00:40.74,0:00:42.69,Default,,0,0,0,,toh aapki SIP par bhi asar
+Dialogue: 0,0:00:42.69,0:00:43.18,Default,,0,0,0,,hoga.
+Dialogue: 0,0:00:43.63,0:00:44.45,Default,,0,0,0,,Seedhi baat,
+Dialogue: 0,0:00:44.45,0:00:47.46,Default,,0,0,0,,aapka badhta recharge bill hi unka
+Dialogue: 0,0:00:47.46,0:00:48.83,Default,,0,0,0,,badhta profit hai.
+Dialogue: 0,0:00:49.28,0:00:51.20,Default,,0,0,0,,IPO mein share mile?
+Dialogue: 0,0:00:51.20,0:00:52.57,Default,,0,0,0,,Income Tax niyam:
+Dialogue: 0,0:00:52.57,0:00:54.48,Default,,0,0,0,,saal bhar se pehle beche,
+Dialogue: 0,0:00:54.48,0:00:56.40,Default,,0,0,0,,toh munafe pe 20% tax.
+Dialogue: 0,0:00:56.85,0:00:58.37,Default,,0,0,0,,Saal bhar baad 12.5%,
+Dialogue: 0,0:00:58.37,0:01:01.80,Default,,0,0,0,,aur 1.25 lakh tak munafa tax-free.
+Dialogue: 0,0:01:01.80,0:01:05.61,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:01:06.06,0:01:08.02,Default,,0,0,0,,Us dost ko bhejo jisne Jio
+Dialogue: 0,0:01:08.02,0:01:09.98,Default,,0,0,0,,IPO mein paisa lagaya hai.
