@@ -17,7 +17,7 @@ on:
         required: false
         default: ''
       launch:
-        description: 'check = Google validates the test campaigns (nothing spent); live = create them (engine/adlaunch.py)'
+        description: 'check / live = create the test campaigns; budgets-check / budgets-live = set their daily budgets to the limit (engine/adlaunch.py)'
         required: false
         default: ''
 
@@ -59,6 +59,8 @@ jobs:
           if [ "${{ github.event.inputs.pause }}" = "yes" ]; then python -m engine.ads --pause-all
           elif [ "${{ github.event.inputs.launch }}" = "check" ]; then python -m engine.adlaunch
           elif [ "${{ github.event.inputs.launch }}" = "live" ]; then python -m engine.adlaunch --live
+          elif [ "${{ github.event.inputs.launch }}" = "budgets-check" ]; then python -m engine.adlaunch --set-budgets
+          elif [ "${{ github.event.inputs.launch }}" = "budgets-live" ]; then python -m engine.adlaunch --set-budgets --live
           else python -m engine.ads ${{ github.event.inputs.check == 'yes' && '--check' || (github.event.schedule == '30 19 * * *' && '--report' || '') }}
           fi
       - name: Save the state

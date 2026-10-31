@@ -131,15 +131,27 @@ def _launch_day(root: Path) -> str:
     return min([d for d in days if d], default="")
 
 
-def decide(cfg: dict, spend_test: float, spend_month: float, extra_subs: int, paused_by_founder: bool) -> str:
+SYMBOL = {"INR": "Rs ", "USD": "$"}
+
+
+def limits(cfg: dict, cur: str) -> dict:
+    """The founder's limits in the account's own currency (31 Oct 2026: the account is in USD; a rupee budget became dollars)."""
+    return (cfg.get("limits") or {}).get(cur) or {}
+
+
+def money(cur: str, amount: float) -> str:
+    return f"{SYMBOL.get(cur, cur + ' ')}{amount:,.2f}".replace(".00", "")
+
+
+def decide(cfg: dict, spend_test: float, spend_month: float, extra_subs: int, paused_by_founder: bool, cur: str = "INR") -> str:
     """Why every running campaign must be paused now, or "" to leave them alone."""
     if paused_by_founder:
         return "the system is paused (/pause)"
-    if cfg.get("monthly_cap_inr") and spend_month >= cfg["monthly_cap_inr"]:
-        return f"this month's spend reached the Rs {cfg['monthly_cap_inr']:,} cap"
-    rule = cfg.get("pause_rule", {})
-    if spend_test >= rule.get("min_spend_inr", 1500) and spend_test / max(extra_subs, 1) > rule.get("max_cost_per_sub_inr", 25):
-        return f"a new subscriber costs more than Rs {rule.get('max_cost_per_sub_inr', 25)} after Rs {int(spend_test):,} spent"
+    lim = limits(cfg, cur)
+    if lim.get("monthly_cap") is not None and spend_month >= lim["monthly_cap"]:
+        return f"this month's spend reached the {money(cur, lim['monthly_cap'])} cap"
+    if spend_test >= lim.get("min_spend", float("inf")) and spend_test / max(extra_subs, 1) > lim.get("max_cost_per_sub", float("inf")):
+        return f"a new subscriber costs more than {money(cur, lim['max_cost_per_sub'])} after {money(cur, spend_test)} spent"
     return ""
 
 
@@ -155,8 +167,12 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, env=None, notify=tel
     start = date.fromisoformat(cfg.get("test_start") or _launch_day(root) or today.isoformat())
     tok = token or access_token(env)
     cur = currency(cid, tok, cfg, call)
-    if cur != "INR":
-        notify(f"📣 Ads watch: the Google Ads account is in {cur or 'an unknown currency'}, not INR; the rupee rules are off until that is fixed.")
+    if not limits(cfg, cur):
+        rows = search(cid, "SELECT campaign.id, campaign.status FROM campaign WHERE campaign.status = 'ENABLED'", tok, cfg, call)
+        if rows:                                                # no limits for this currency: never let anything run unwatched
+            pause(cid, [str(r["campaign"]["id"]) for r in rows], tok, cfg, call)
+        notify(f"⏸ Ads watch: the account is in {cur or 'an unknown currency'}, which has no limits in content/ads.json; "
+               f"paused {len(rows)} campaign(s).")
         return 1
     rows_test = campaigns(cid, start, today, tok, cfg, call)
     rows_month = campaigns(cid, today.replace(day=1), today, tok, cfg, call)
@@ -169,16 +185,17 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, env=None, notify=tel
     gained = sum(got(ch) for ch in CHANNELS)
     extra = max(gained - round(cfg.get("baseline_subs_per_day", 0) * days), 0)
     per_sub = spend_test / extra if extra else None
-    why = decide(cfg, spend_test, spend_month, extra, telegram.paused(root))
+    why = decide(cfg, spend_test, spend_month, extra, telegram.paused(root), cur)
     running = [i for i, r in {**rows_test, **rows_month}.items() if r["status"] == "ENABLED"]
     acted = []
     if why and running:
         pause(cid, running, tok, cfg, call)
         acted = running
         notify(f"⏸ Ads paused ({len(running)} campaign(s)): {why}. Restart them in Google Ads when you decide.")
-    state = {"day": today.isoformat(), "spend_today": round(spend_today), "spend_test": round(spend_test), "spend_month": round(spend_month),
+    state = {"day": today.isoformat(), "currency": cur, "spend_today": round(spend_today, 2), "spend_test": round(spend_test, 2),
+             "spend_month": round(spend_month, 2),
              "test_start": start.isoformat(), "subs_gained": gained, "subs_above_usual": extra,
-             "cost_per_sub": round(per_sub, 1) if per_sub else None, "paused_now": acted, "reason": why}
+             "cost_per_sub": round(per_sub, 2) if per_sub else None, "paused_now": acted, "reason": why}
     (Path(root) / "logs").mkdir(exist_ok=True)
     (Path(root) / "logs" / "ads.json").write_text(json.dumps(state, indent=1))
     if report:
@@ -187,8 +204,9 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, env=None, notify=tel
 
 
 def line(state: dict) -> str:
-    per = f"Rs {state['cost_per_sub']} per new subscriber" if state.get("cost_per_sub") else "no new subscribers above the usual pace yet"
-    return (f"📣 Ads: Rs {state['spend_today']:,} today, Rs {state['spend_test']:,} since {state['test_start'][5:]} · "
+    cur = state.get("currency", "INR")
+    per = f"{money(cur, state['cost_per_sub'])} per new subscriber" if state.get("cost_per_sub") else "no new subscribers above the usual pace yet"
+    return (f"📣 Ads: {money(cur, state['spend_today'])} today, {money(cur, state['spend_test'])} since {state['test_start'][5:]} · "
             f"{state['subs_above_usual']} subscribers above the usual pace · {per}")
 
 
