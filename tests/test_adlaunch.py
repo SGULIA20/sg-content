@@ -57,3 +57,13 @@ def test_google_refusal_is_reported(tmp_path):
     call = lambda m, u, t, json_body=None, data=None, headers=None: (400, {}, {"error": {"message": "bad field"}})
     assert adlaunch.run(tmp_path, NOW, {}, live=False, notify=sent.append, call=call, token="t", cfg=CFG) == 1
     assert "check found problems" in sent[0] and "bad field" in sent[0]
+
+
+def test_budget_follows_the_usd_50_cap(tmp_path):
+    _setup(tmp_path)
+    calls = []
+    def call(method, url, tok, json_body=None, data=None, headers=None):
+        calls.append(json_body); return 200, {}, {}
+    adlaunch.run(tmp_path, NOW, {}, live=False, notify=lambda m: None, call=call, token="t", cfg={**CFG, "budget_per_channel_inr": 2000})
+    budgets = [o["campaignBudgetOperation"]["create"]["amountMicros"] for o in calls[0]["mutateOperations"] if "campaignBudgetOperation" in o]
+    assert budgets == ["143000000", "143000000"]                    # Rs 143 a day for 14 days, each channel

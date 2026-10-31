@@ -2,7 +2,7 @@
 
 One Demand Gen campaign per channel (YouTube feed, Shorts and watch pages; the API cannot create classic video campaigns): the channel's
 newest public long video, India, Hindi and English, Maximize clicks, Rs 3,000 over 14 days (a daily budget of Rs 215 with an end date),
-the channel logo and plain Hinglish lines, and a link that opens the channel's Subscribe prompt. Every request goes to Google first in
+the channel logo and plain Hinglish lines (budget: content/ads.json budget_per_channel_inr, Rs 2,000 for the USD 50 cap), and a link that opens the channel's Subscribe prompt. Every request goes to Google first in
 check-only mode (validateOnly), which spends nothing; only `--live` creates campaigns, once per channel (logs/ads-launch.json). The ads
 watch (engine/ads.py) then reports daily and pauses on the founder's rules.
 
@@ -15,11 +15,11 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from . import ads, pieces, secrets, slots, telegram, youtube
+from . import ads, pieces, secrets, slots, telegram
 from .config import CHANNELS, ROOT, YOUTUBE_URLS
 
 TEST_DAYS = 14
-BUDGET_PER_CHANNEL_INR = 3000
+BUDGET_PER_CHANNEL_INR = 2000                 # founder, 31 Oct 2026: postpaid, at most USD 50 a month with GST; content/ads.json overrides
 INDIA, HINDI, ENGLISH = "geoTargetConstants/2356", "languageConstants/1023", "languageConstants/1000"
 LINES = {
     "sglearning": {"headlines": ["Paise ki seedhi baat", "Learning with SG", "Aapke paise ki khabar"],
@@ -39,7 +39,7 @@ def best_long(channel: str, root: Path, now_utc: datetime):
     return max(longs, key=lambda p: p.publish_day) if longs else None
 
 
-def operations(cid: str, channel: str, video_id: str, logo: bytes, today, n: int) -> list:
+def operations(cid: str, channel: str, video_id: str, logo: bytes, today, n: int, budget_inr: int = BUDGET_PER_CHANNEL_INR) -> list:
     """The mutate operations for one channel's campaign, with temporary ids -n*10-1 ... so channels never collide."""
     rn = lambda kind, k: f"customers/{cid}/{kind}/-{n * 10 + k}"
     name = CHANNELS[channel].display_name
@@ -53,7 +53,7 @@ def operations(cid: str, channel: str, video_id: str, logo: bytes, today, n: int
         {"assetOperation": {"create": {"resourceName": rn("assets", 2), "name": f"{tag} video", "type": "YOUTUBE_VIDEO",
                                        "youtubeVideoAsset": {"youtubeVideoId": video_id}}}},
         {"campaignBudgetOperation": {"create": {"resourceName": rn("campaignBudgets", 3), "name": f"{tag} budget",
-                                                "amountMicros": str(round(BUDGET_PER_CHANNEL_INR / TEST_DAYS) * 1_000_000),
+                                                "amountMicros": str(round(budget_inr / TEST_DAYS) * 1_000_000),
                                                 "deliveryMethod": "STANDARD", "explicitlyShared": False}}},
         {"campaignOperation": {"create": {"resourceName": rn("campaigns", 4), "name": tag, "status": "ENABLED",
                                           "advertisingChannelType": "DEMAND_GEN", "campaignBudget": rn("campaignBudgets", 3),
@@ -73,7 +73,7 @@ def operations(cid: str, channel: str, video_id: str, logo: bytes, today, n: int
     ]
 
 
-def run(root: Path = ROOT, now_utc: datetime | None = None, env=None, live: bool = False, notify=telegram.send, call=youtube.call,
+def run(root: Path = ROOT, now_utc: datetime | None = None, env=None, live: bool = False, notify=telegram.send, call=ads.call_full,
         token=None, cfg: dict | None = None) -> int:
     now_utc = now_utc or datetime.now(timezone.utc)
     sent = notify
@@ -101,7 +101,7 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, env=None, live: bool
             plan.append(f"{CHANNELS[channel].display_name}: no public long video yet, skipped")
             continue
         logo = (Path(root) / "assets" / "logo" / f"{channel}-320.png").read_bytes()
-        ops += operations(cid, channel, video.ids["yt_id"], logo, today, n)
+        ops += operations(cid, channel, video.ids["yt_id"], logo, today, n, int(cfg.get("budget_per_channel_inr", BUDGET_PER_CHANNEL_INR)))
         plan.append(f"{CHANNELS[channel].display_name}: {video.id} (youtu.be/{video.ids['yt_id']})")
     if not ops:
         notify("📣 Ads launch: nothing to launch (" + "; ".join(plan or ["both channels already launched"]) + ").")
@@ -110,10 +110,10 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, env=None, live: bool
     status, _h, body = call("POST", f"{ads.API}/customers/{cid}/googleAds:mutate", tok,
                             json_body={"mutateOperations": ops, "validateOnly": not live}, headers=ads._headers(cfg))
     if status != 200:
-        notify(f"📣 Ads launch {'FAILED' if live else 'check found problems'} ({status}): {secrets.scrub(json.dumps(body))[:700]}")
+        notify(f"📣 Ads launch {'FAILED' if live else 'check found problems'} ({status}):\n{secrets.scrub(ads.errors_text(body))[:3000]}")
         return 1
     if not live:
-        notify("📣 Ads launch check passed ✅ (nothing created, nothing spent). Ready to launch Rs 3,000 per channel over 14 days: "
+        notify(f"📣 Ads launch check passed ✅ (nothing created, nothing spent). Ready to launch Rs {int(cfg.get('budget_per_channel_inr', BUDGET_PER_CHANNEL_INR)):,} per channel over 14 days: "
                + "; ".join(plan))
         return 0
     for line in plan:
@@ -122,7 +122,7 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, env=None, live: bool
                 launched[channel] = {"day": today.isoformat(), "video": line}
     state_path.parent.mkdir(exist_ok=True)
     state_path.write_text(json.dumps(launched, indent=1))
-    notify("🚀 Ads launched: Rs 3,000 per channel over 14 days, India, Hindi and English; clicks open the Subscribe prompt. "
+    notify(f"🚀 Ads launched: Rs {int(cfg.get('budget_per_channel_inr', BUDGET_PER_CHANNEL_INR)):,} per channel over 14 days, India, Hindi and English; clicks open the Subscribe prompt. "
            + "; ".join(plan) + ". The watch pauses them on your rules and reports daily at 20:30 WAT.")
     return 0
 

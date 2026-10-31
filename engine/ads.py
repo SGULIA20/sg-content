@@ -19,7 +19,7 @@ from pathlib import Path
 from . import secrets, telegram, youtube
 from .config import CONTENT_DIR, ROOT
 
-API = "https://googleads.googleapis.com/v25"
+API = "https://googleads.googleapis.com/v26"                   # 31 Oct 2026: v25 answered "the error code is not in this version"
 ANALYTICS_URL = "https://youtubeanalytics.googleapis.com/v2/reports"
 TOKEN_URL = "https://oauth2.googleapis.com/token"
 CHANNELS = ("sglearning", "arthvan")
@@ -44,6 +44,35 @@ def access_token(env=None, post=youtube._post_form) -> str:
         raise AdsError(f"Google Ads token refresh failed: {out.get('error_description') or out.get('error')}")
     secrets.remember(out["access_token"])
     return out["access_token"]
+
+
+def call_full(method: str, url: str, token: str, json_body=None, headers=None):
+    """Like youtube.call, but keeps Google's whole error (youtube.call cuts errors at 400 characters, which hid the failing field)."""
+    import urllib.error
+    import urllib.request
+    hdrs = {"Authorization": "Bearer " + token, "Content-Type": "application/json; charset=UTF-8", **(headers or {})}
+    req = urllib.request.Request(url, data=json.dumps(json_body).encode() if json_body is not None else None, method=method, headers=hdrs)
+    try:
+        with urllib.request.urlopen(req, timeout=120, context=secrets.ssl_context()) as r:
+            raw = r.read()
+            return r.status, {}, (json.loads(raw) if raw else {})
+    except urllib.error.HTTPError as e:
+        raw = e.read().decode(errors="replace")
+        try:
+            return e.code, {}, json.loads(raw)
+        except ValueError:
+            return e.code, {}, {"error": raw}
+
+
+def errors_text(body: dict) -> str:
+    """Google Ads errors as 'field: message' lines (the readable part of a GoogleAdsFailure)."""
+    out = []
+    for d in (body.get("error") or {}).get("details", []) if isinstance(body.get("error"), dict) else []:
+        for e in d.get("errors", []):
+            path = ".".join(str(x.get("fieldName", "")) + (f"[{x['index']}]" if "index" in x else "") for x in
+                            (e.get("location") or {}).get("fieldPathElements", []))
+            out.append(f"{path or '-'}: {e.get('message', '')} {json.dumps(e.get('errorCode', {}))}")
+    return "\n".join(out) or json.dumps(body)[:1500]
 
 
 def _headers(cfg: dict) -> dict:
