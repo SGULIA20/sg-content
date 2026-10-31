@@ -78,3 +78,8 @@ def test_numbers_inside_the_sourced_sentence_count_and_year_ranges_pass():
     assert claims.match("1.2 percent ka farak, 10,000 rupaye ki SIP, 11 percent return", facts, []) == []
     assert claims.match("Khudai 1920-21 mein hui", [], []) == []
     assert claims.match("Return 14 percent tha", facts, []) == [14.0]
+
+
+def test_cr_on_a_card_means_crore():
+    from engine import claims
+    assert claims.numbers_in("₹95 lakh cr") == claims.numbers_in("95 lakh crore") == [9.5e13]

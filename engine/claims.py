@@ -20,7 +20,7 @@ UNITS = {
 }
 # "saath" (60) is left out on purpose: it also means "with" (ke saath) and would invent numbers.
 SCALES = {"sau": 100, "सौ": 100, "hazaar": 1000, "hazar": 1000, "हज़ार": 1000, "हजार": 1000,
-          "lakh": 100_000, "laakh": 100_000, "लाख": 100_000, "crore": 10_000_000, "karod": 10_000_000, "करोड़": 10_000_000}
+          "lakh": 100_000, "laakh": 100_000, "लाख": 100_000, "crore": 10_000_000, "cr": 10_000_000, "karod": 10_000_000, "करोड़": 10_000_000}   # "cr" on cards (31 Oct 2026)
 PERCENT = {"pratishat", "प्रतिशत", "percent", "%"}
 DEVANAGARI_DIGITS = str.maketrans("०१२३४५६७८९", "0123456789")
 TOKEN = re.compile(r"\d[\d,]*(?:\.\d+)?%?|%|[\u0900-\u097F]+|[^\W\d_]+", re.UNICODE)
