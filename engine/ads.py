@@ -93,6 +93,15 @@ def subscribers(channel: str, start: date, end: date, env=None, call=youtube.cal
     return int(rows[0][0])
 
 
+def _launch_day(root: Path) -> str:
+    """The day engine.adlaunch started the test (logs/ads-launch.json), or ""."""
+    try:
+        days = [v.get("day", "") for v in json.loads((Path(root) / "logs" / "ads-launch.json").read_text()).values()]
+    except (OSError, ValueError):
+        return ""
+    return min([d for d in days if d], default="")
+
+
 def decide(cfg: dict, spend_test: float, spend_month: float, extra_subs: int, paused_by_founder: bool) -> str:
     """Why every running campaign must be paused now, or "" to leave them alone."""
     if paused_by_founder:
@@ -114,7 +123,7 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, env=None, notify=tel
         print("ads: no customer_id in content/ads.json yet", flush=True)
         return 0
     today = now_utc.date()
-    start = date.fromisoformat(cfg.get("test_start") or today.isoformat())
+    start = date.fromisoformat(cfg.get("test_start") or _launch_day(root) or today.isoformat())
     tok = token or access_token(env)
     cur = currency(cid, tok, cfg, call)
     if cur != "INR":

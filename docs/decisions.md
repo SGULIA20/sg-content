@@ -203,3 +203,4 @@ line here (who, date) in the same change. Newest first.
 - Google Ads watch, phase 1: uses the YouTube uploads' Google Cloud project; reports spend and cost per new subscriber daily, and only ever pauses (founder /pause, monthly cap, or > Rs 25 a subscriber after Rs 1,500); never raises or starts spend (founder, 30 Oct 2026).
 - A chosen story's own checked brief counts as a reported source for the number check; the Top 10 may run 125-170 words (founder's Top 10, 31 Oct 2026).
 - Google Ads account for the YouTube promotion test: 601-481-4549 (founder, 31 Oct 2026).
+- The Rs 6,000 YouTube promotion test is launched by code (engine/adlaunch.py): one Demand Gen campaign per channel on its newest public long video, India, Hindi + English, Maximize clicks, Rs 3,000 over 14 days, clicks open the Subscribe prompt; Google validates first, then live (founder, 31 Oct 2026: "I want to automise step 3").
