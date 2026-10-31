@@ -9,6 +9,7 @@ from .config import BUDGETS, CONTENT_DIR, LOGS_DIR, today_ist, today_pacific
 from .pieces import Piece
 
 MODEL = "claude-opus-5-5"
+SONNET = "claude-sonnet-5-5"     # first draft of an extra, news or Top 10 Reel (founder, 31 Oct 2026: "use sonnet for extras and news, quality should not deteriorate")
 GEMINI_MODEL = "gemini-3.8-flash"
 USD_PER_M_IN, USD_PER_M_OUT = 4.0, 20.0
 SONNET_VS_OPUS = 0.5       # Sonnet 5.5 is $2 / $10 per million tokens against Opus 5.5's $4 / $20 (checked 24 Oct 2026), so the same meter at half the factor
@@ -28,6 +29,18 @@ PATCH_SCHEMA = {
     },
 }
 PATCH_TRIES = 2          # patch attempts per topic before a full rewrite
+
+
+def model_for(piece) -> str:
+    """Sonnet writes only the FIRST draft of a Learning with SG extra, news or Top 10 Reel; every later draft and every patch of it is Opus,
+    so a draft that fails any check (numbers, jargon, length, hook) is redone by the stronger model and quality never drops below today's."""
+    t = {**((piece.topic or {}).get("preset") or {}), **(piece.topic or {})}
+    news_like = piece.channel == "sglearning" and piece.kind == "short" and bool(t.get("news") or t.get("extra") or t.get("roundup"))
+    return SONNET if news_like and not piece.ids.get("drafts") and not piece.topic.get("revise") else MODEL
+
+
+def price_factor(params: dict) -> float:
+    return SONNET_VS_OPUS if params.get("model") == SONNET else 1.0
 
 
 def patchable(reasons: list) -> bool:
@@ -185,7 +198,7 @@ def claude_params(piece, sheet, library, hashtags, formula=None) -> dict:
     """The one Opus request both lanes send: the synchronous stream and the half-price batch."""
     system = system_prompt(piece.channel) if formula is None else system_prompt(piece.channel).replace(
         (CONTENT_DIR / "prompts" / f"formula-{piece.channel}.txt").read_text(), formula)
-    return {"model": MODEL, "max_tokens": MAX_TOKENS,
+    return {"model": model_for(piece), "max_tokens": MAX_TOKENS,
             "output_config": {"effort": "high", "format": {"type": "json_schema", "schema": schema.api_schema(schema.PIECE_SCHEMA)}},
             "system": [{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
             "messages": [{"role": "user", "content": _user_message(piece, sheet, library, hashtags)}]}
@@ -194,11 +207,12 @@ def claude_params(piece, sheet, library, hashtags, formula=None) -> dict:
 def _claude(piece, sheet, library, hashtags, formula, client, spend, today) -> dict:
     import anthropic
     client = client or anthropic.Anthropic(api_key=secrets.get("ANTHROPIC_API_KEY"))
+    params = claude_params(piece, sheet, library, hashtags, formula)
     with client.beta.messages.stream(                              # streamed: a 12-14 minute long needs more than 16k tokens
-        **claude_params(piece, sheet, library, hashtags, formula), betas=["server-side-fallback-2026-07-01"], fallbacks="default",
+        **params, betas=["server-side-fallback-2026-07-01"], fallbacks="default",
     ) as stream:
         response = stream.get_final_message()
-    record_spend(response.usage, spend, today)
+    record_spend(response.usage, spend, today, factor=price_factor(params))
     if response.stop_reason == "refusal":
         raise WriterError("Claude refused the request")
     if response.stop_reason == "max_tokens":
@@ -213,7 +227,7 @@ def _claude_patch(piece, sheet, library, hashtags, formula, client, spend, today
     params = patch_params(piece, sheet, library, hashtags, piece.script, reasons, formula)
     with client.beta.messages.stream(**params, betas=["server-side-fallback-2026-07-01"], fallbacks="default") as stream:
         response = stream.get_final_message()
-    record_spend(response.usage, spend, today)
+    record_spend(response.usage, spend, today, factor=price_factor(params))
     if response.stop_reason in ("refusal", "max_tokens"):
         raise WriterError(f"patch ended with {response.stop_reason}")
     text = next((b.text for b in response.content if getattr(b, "type", "") == "text"), "")
