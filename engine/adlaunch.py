@@ -172,9 +172,46 @@ def set_budgets(cfg: dict | None = None, env=None, notify=telegram.send, call=ad
     return 0
 
 
+def resume(cfg: dict | None = None, env=None, notify=telegram.send, call=ads.call_full, token=None) -> int:
+    """Turns the paused test campaigns back on (founder, 31 Oct 2026: "resume both campaigns with revised limits"), but only a campaign whose
+    daily budget is already at or under the founder's limit in the account currency; a campaign still on a bigger budget stays paused."""
+    sent = notify
+
+    def notify(text):                                         # also in the run log
+        print(text, flush=True)
+        sent(text)
+    cfg = ads.settings() if cfg is None else cfg
+    cid = str(cfg.get("customer_id", "")).replace("-", "")
+    tok = token or ads.access_token(env)
+    cur = ads.currency(cid, tok, cfg, call)
+    budget = ads.limits(cfg, cur).get("budget_per_channel")
+    if not budget:
+        notify(f"📣 Ads resume: no limit for {cur}; nothing resumed.")
+        return 1
+    cap = int(daily_micros(budget))
+    rows = ads.search(cid, "SELECT campaign.id, campaign.name, campaign.status, campaign_budget.amount_micros FROM campaign "
+                           "WHERE campaign.name LIKE 'SG test %' AND campaign.status = 'PAUSED'", tok, cfg, call)
+    ok = [r for r in rows if int(r.get("campaignBudget", {}).get("amountMicros", 0)) <= cap]
+    held = [r["campaign"]["name"] for r in rows if r not in ok]
+    if not ok:
+        notify("📣 Ads resume: nothing resumed (" + ("still over the limit: " + ", ".join(held) if held else "no paused test campaigns") + ").")
+        return 1 if held else 0
+    ops = [{"update": {"resourceName": f"customers/{cid}/campaigns/{r['campaign']['id']}", "status": "ENABLED"}, "updateMask": "status"} for r in ok]
+    status, _h, body = call("POST", f"{ads.API}/customers/{cid}/campaigns:mutate", tok, json_body={"operations": ops}, headers=ads._headers(cfg))
+    if status != 200:
+        notify(f"📣 Ads resume FAILED ({status}):\n{secrets.scrub(ads.errors_text(body))[:2000]}")
+        return 1
+    notify(f"▶️ Ads resumed at {ads.money(cur, cap / 1e6)} a day each: " + ", ".join(r["campaign"]["name"] for r in ok)
+           + (f". Still paused (budget over the limit): {', '.join(held)}" if held else "")
+           + ". The watch pauses them on your rules and reports daily at 20:30 WAT.")
+    return 1 if held else 0
+
+
 def main(argv=None) -> int:
     argv = sys.argv[1:] if argv is None else argv
     try:
+        if "--resume" in argv:
+            return resume()
         if "--set-budgets" in argv:
             return set_budgets(live="--live" in argv)
         return run(live="--live" in argv)
