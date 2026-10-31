@@ -116,3 +116,8 @@ def test_the_days_index_move_is_never_a_topic():
     from engine import topics
     assert topics.score({"title": "Sensex 829 upar, phir bhi loss kyun?", "summary": "salary EMI", "rank": 5}) < 0
     assert topics.score({"title": "Petrol price cut by Rs 2", "summary": "", "rank": 1}) > 0
+
+
+def test_routine_notices_are_not_topics():
+    from engine import topics
+    assert topics.score({"title": "Premature redemption under Sovereign Gold Bond (SGB) Scheme - Redemption Price for premature redemption of SGB 2021-22 Series", "summary": "gold", "rank": 5}) < 0
