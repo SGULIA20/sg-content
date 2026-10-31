@@ -38,3 +38,9 @@ def test_today_pacific_follows_the_gemini_quota_window():
     from engine.config import today_pacific
     assert today_pacific(datetime(2026, 10, 21, 6, 59, tzinfo=timezone.utc)).isoformat() == "2026-10-20"   # 23:59 PDT the day before
     assert today_pacific(datetime(2026, 10, 21, 7, 1, tzinfo=timezone.utc)).isoformat() == "2026-10-21"
+
+
+def test_the_top_10_gets_room_for_twelve_lines():
+    from engine import config
+    assert config.story_words("sglearning", {"preset": {"extra": True, "summary": "TOP 10 ROUNDUP. 1. ..."}}) == config.ROUNDUP_WORDS
+    assert config.story_words("sglearning", {"extra": True, "summary": "a news story"}) == config.NEWS_STORY_WORDS
