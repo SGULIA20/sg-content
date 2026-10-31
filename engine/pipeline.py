@@ -75,7 +75,17 @@ def _used(root: Path) -> tuple:
 SHORT_PANEL_NOTE = (" Full-bleed tall picture filling the whole canvas edge to edge: no border, no frame, no panel outline, no empty box or blank"
                     " strip anywhere (26 Oct 2026: a comic-style panel came back framed with an empty box below). Keep the lower third calm"
                     " (floor, table, sea, sky or ground continuing the scene), with no face or key object there.")
-LONG_PANEL_NOTE = " Portrait 4:5 panel with the subject centred and some air above."
+LONG_PANEL_NOTE = (" Very wide cinematic frame; every face and the key object sit in the middle band, nothing important near the top or"
+                   " bottom edge (31 Oct 2026: 4:5 panels lost the heads when fitted into the wide strip between the title and caption bands).")
+LONG_PANEL_ASPECT = "21:9"                     # the long video's picture strip is 1920x713 (about 2.7:1); 21:9 loses little
+
+
+def panel_request(piece: Piece, prompt: str) -> tuple:
+    """(full prompt, aspect) for one story panel. The half-price batch and the per-scene call must send exactly this, or the scene
+    call misses the batch's cached picture and paints it again at full price (26-31 Oct 2026: every panel was paid twice)."""
+    if piece.kind == "short":
+        return art.style_prompt(piece.channel, prompt + SHORT_PANEL_NOTE), "2:3"
+    return art.style_prompt(piece.channel, prompt + LONG_PANEL_NOTE), LONG_PANEL_ASPECT
 
 
 def recent_openers(root: Path, piece: Piece, n: int = 5) -> list:
@@ -224,13 +234,12 @@ def _visual_for(piece: Piece, i: int, scene: dict, deps: Deps, out_dir: Path, si
     if is_story(piece):
         prompt = v.get("prompt") or piece.script["hook"]
         refs = deps.cast_refs(prompt, channel=piece.channel) if deps.cast_refs else []
-        if piece.kind == "short":                                  # founder, 25 Oct 2026 (C): the picture runs to the bottom of the screen
-            got = deps.paint(art.style_prompt(piece.channel, prompt + SHORT_PANEL_NOTE), out, aspect="2:3", refs=refs)
-            if Path(got).exists() and art.blank_share(got) > art.BLANK_MAX:   # framed, with an empty box below: redraw once
-                got = deps.paint(art.style_prompt(piece.channel, prompt + SHORT_PANEL_NOTE + " Paint the scene all the way down to the bottom edge."),
-                                 out, aspect="2:3", refs=refs)
-            return got
-        return deps.paint(art.style_prompt(piece.channel, prompt + LONG_PANEL_NOTE), out, aspect="4:5", refs=refs)
+        full, aspect = panel_request(piece, prompt)
+        got = deps.paint(full, out, aspect=aspect, refs=refs)
+        if piece.kind == "short" and Path(got).exists() and art.blank_share(got) > art.BLANK_MAX:   # framed, with an empty box below: redraw once
+            got = deps.paint(art.style_prompt(piece.channel, prompt + SHORT_PANEL_NOTE + " Paint the scene all the way down to the bottom edge."),
+                             out, aspect="2:3", refs=refs)
+        return got
     aspect = "9:16" if size[1] > size[0] else "16:9"
     return deps.paint(art.style_prompt(piece.channel, v.get("prompt") or piece.script["hook"]), out, aspect=aspect)
 
@@ -265,7 +274,8 @@ def picture_jobs(piece: Piece, deps: Deps) -> list:
     for sc in (piece.script or {}).get("scenes", []):
         prompt = (sc.get("visual") or {}).get("prompt") or piece.script["hook"]
         refs = deps.cast_refs(prompt, channel=piece.channel) if deps.cast_refs else []
-        jobs.append((art.style_prompt(piece.channel, prompt), list(refs), "4:5"))
+        full, aspect = panel_request(piece, prompt)
+        jobs.append((full, list(refs), aspect))
     jobs.append((thumbs.paint_prompt(piece), [], "9:16" if piece.kind == "short" else "16:9"))
     return jobs
 
