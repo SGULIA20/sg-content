@@ -3,11 +3,13 @@
  "customer_id": "601-481-4549",
  "login_customer_id": "",
  "test_start": "",
- "monthly_cap_inr": 6000,
+ "monthly_cap_inr": 4000,
  "baseline_subs_per_day": 0.5,
  "pause_rule": {
   "min_spend_inr": 1500,
   "max_cost_per_sub_inr": 25
  },
- "scale": false
+ "scale": false,
+ "budget_per_channel_inr": 2000,
+ "_cap_note": "Founder, 31 Oct 2026: postpaid billing, at most USD 50 a month in total. Rs 4,000 of ads + 18% GST = about Rs 4,720 = about USD 49.7 at Rs 95."
 }

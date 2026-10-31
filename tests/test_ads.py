@@ -65,3 +65,10 @@ def test_check_says_when_step_4_is_missing(monkeypatch):
         raise ads.secrets.MissingSecret("ADS_REFRESH_TOKEN")
     monkeypatch.setattr(ads, "access_token", missing)
     assert ads.check({}, notify=sent.append) == 1 and "not saved in GitHub yet" in sent[0]
+
+
+def test_google_errors_read_as_field_and_message():
+    body = {"error": {"details": [{"errors": [{"errorCode": {"fieldError": "REQUIRED"}, "message": "The required field was not present.",
+                                               "location": {"fieldPathElements": [{"fieldName": "mutate_operations", "index": 3},
+                                                                                  {"fieldName": "campaign_operation"}]}}]}]}}
+    assert ads.errors_text(body) == 'mutate_operations[3].campaign_operation: The required field was not present. {"fieldError": "REQUIRED"}'

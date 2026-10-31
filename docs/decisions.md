@@ -204,3 +204,4 @@ line here (who, date) in the same change. Newest first.
 - A chosen story's own checked brief counts as a reported source for the number check; the Top 10 may run 125-170 words (founder's Top 10, 31 Oct 2026).
 - Google Ads account for the YouTube promotion test: 601-481-4549 (founder, 31 Oct 2026).
 - The Rs 6,000 YouTube promotion test is launched by code (engine/adlaunch.py): one Demand Gen campaign per channel on its newest public long video, India, Hindi + English, Maximize clicks, Rs 3,000 over 14 days, clicks open the Subscribe prompt; Google validates first, then live (founder, 31 Oct 2026: "I want to automise step 3").
+- Google Ads billing is postpaid: at most USD 50 a month in total, so Rs 4,000 of ad spend a month (plus 18% GST about Rs 4,720) and Rs 2,000 per channel for the 14-day test; the watch pauses at Rs 4,000 (founder, 31 Oct 2026).
