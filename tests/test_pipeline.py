@@ -535,3 +535,21 @@ def test_a_myth_short_opens_on_a_credited_photo_of_its_place_only_when_the_scrip
     assert "Photo: A. Person, CC BY-SA 4.0, Wikimedia Commons" in instagram.caption_text(p)
     p.topic = {"place": "Abhaneri, Rajasthan"}                                      # the script is about another place: no photo
     assert pipeline.place_key(p) == ""
+
+
+def test_the_batch_paints_exactly_what_each_scene_asks_for():
+    """26-31 Oct 2026: the batch painted 4:5 without the panel note, every scene missed its cached picture and was paid twice."""
+    from datetime import date
+    from engine import pipeline
+    from engine.pieces import Piece
+    for kind in ("short", "long"):
+        p = Piece(id=f"2026-11-01-sglearning-{kind}", channel="sglearning", kind=kind, publish_day=date(2026, 11, 1))
+        p.script = {"hook": "h", "scenes": [{"vo": "x", "visual": {"type": "art", "prompt": "a kirana shop"}}]}
+        asked = []
+        deps = pipeline.Deps.__new__(pipeline.Deps)
+        deps.cast_refs = None
+        deps.paint = lambda prompt, out, aspect=None, refs=(): asked.append((prompt, aspect)) or out
+        pipeline._visual_for(p, 0, p.script["scenes"][0], deps, __import__("pathlib").Path("/tmp"), (1080, 1920) if kind == "short" else (1920, 1080))
+        job = pipeline.picture_jobs(p, deps)[0]
+        assert asked[0] == (job[0], job[2])
+    assert job[2] == "21:9"
