@@ -1,0 +1,381 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 1.0,
+   "quote": "Tech stocks plunged Friday morning, putting the Nasdaq 100 index on course for a more than $1 trillion drop.",
+   "source_date": "2026-10-30",
+   "source_name": "NBC News",
+   "source_url": "https://www.nbcnews.com/business/markets/tech-stocks-nasdaq-ai-boom-fears-deepen-rcna606512",
+   "text": "Major technology stocks were on course to erase more than 1 trillion USD in market value on 30 October 2026 as investor concerns deepened over surging artificial intelligence capital spending without immediate returns.",
+   "unit": "trillion USD"
+  },
+  {
+   "label": "reported",
+   "number": 29.0,
+   "quote": "Sparking the declines were shares of Amazon, which fell 3%, and Intel, which plunged 30%.",
+   "source_date": "2026-10-30",
+   "source_name": "NBC News",
+   "source_url": "https://www.nbcnews.com/business/markets/tech-stocks-nasdaq-ai-boom-fears-deepen-rcna606512",
+   "text": "Intel Corporation shares plummeted nearly 29 percent on 30 October 2026, marking the stock's worst single-day market drop since 1974 after reporting weak forward earnings guidance.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 60000.0,
+   "quote": "This offer will be available to eligible employees in participating teams in Canada, India, the United Kingdom and the United States at level 70 and below.",
+   "source_date": "2026-10-26",
+   "source_name": "The Official Microsoft Blog",
+   "source_url": "https://blogs.microsoft.com/blog/2026/10/26/introducing-a-voluntary-exit-offer/",
+   "text": "Microsoft Corporation offered a Voluntary Exit Offer to approximately 60,000 eligible employees across India, Canada, the United Kingdom, and the United States on 26 October 2026 to reallocate resources toward artificial intelligence infrastructure.",
+   "unit": "employees"
+  },
+  {
+   "label": "official",
+   "number": 39.0,
+   "quote": "AWS segment sales increased 39% year-over-year to $46.0 billion.",
+   "source_date": "2026-10-29",
+   "source_name": "Amazon Investor Relations",
+   "source_url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+   "text": "Amazon Web Services grew third-quarter net sales by 39 percent year-over-year to 46.0 billion USD, even as company-wide cash capital expenditure was projected to reach 220 billion USD for 2026.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 6.5,
+   "quote": "German auto giant Volkswagen reported a €5.86 billion ($6.5 billion) operating loss in the third quarter of 2026, far wider than expected, as a large impairment on its Porsche brand and a sharp drop in China sales weighed heavily on results.",
+   "source_date": "2026-10-29",
+   "source_name": "Anadolu Agency",
+   "source_url": "https://www.aa.com.tr/en/economy/german-automaker-volkswagen-posts-65b-operating-loss-in-q3/3377721",
+   "text": "Volkswagen posted a third-quarter operating loss of 6.5 billion USD (5.86 billion euros) as deliveries in China plummeted 38.5 percent alongside an impairment charge on Porsche.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "reported",
+   "number": 95.26,
+   "quote": "The India rupee is expected to open flat to marginally higher, per traders, having settled at 95.26 to the dollar on Thursday.",
+   "source_date": "2026-10-30",
+   "source_name": "Reuters",
+   "source_url": "https://www.brecorder.com/news/40388910/india-rupee-to-benefit-from-dollar-retreat-plunging-us-yields-oil-surge-tempers-impact",
+   "text": "The Indian rupee settled near 95.26 INR against the US dollar while global crude benchmark Brent traded above 115 USD per barrel, keeping domestic fuel prices and transport inflation under upward pressure.",
+   "unit": "INR"
+  },
+  {
+   "date": "2026-10-31",
+   "label": "reported",
+   "source": "chosen",
+   "text": "TOP 10 ROUNDUP. Plain everyday Hinglish a 15-year-old follows, one line per item (fact + why it matters), in this order, item 1 is the hook and title. Say 'reported' where marked. No tips. 1. Friday 30 Oct ko tech companies ke shares se about 1 trillion dollar, yaani lagbhag 95 lakh crore rupaye, ek din mein saaf (reported); wajah: AI par itna kharcha, kamaai kab? 2. Intel ka share about 29% gira, 1974 ke baad sabse bura din; agle quarter ki kamaai ka andaaza umeed se kaafi kam. 3. America ka Nasdaq poore October mein about 5% gira, March 2025 ke baad sabse bura mahina. 4. Crypto exchange Binance se about 6.3 billion dollar chori, itihaas ki sabse badi crypto chori; Bitcoin 77,000 dollar se neeche, withdrawals band. 5. Microsoft ne about 60,000 logon ko, yaani har chaar mein se ek, khud naukri chhodne ka offer diya, India ke kuch employees bhi shamil; paisa AI par lagana hai. 6. Amazon ka cloud business 39% badha, par AI kharche ke baad haath mein cash nahi bacha, share gira. 7. India mein sona do din mein about 5,000 rupaye sasta, 24 carat about 1.39 lakh rupaye per 10 gram (reported, city ke hisaab se alag). 8. Rupaya about 95 per dollar ke paas, aur kachcha tel about 113 dollar; matlab petrol-diesel aur import mehenga rehne ka darr. 9. DoorDash, America ki food delivery company, Instacart ko about 17 billion dollar mein khareedegi (reported deal). 10. Volkswagen ko ek quarter mein about 6.5 billion dollar ka nuksaan, China mein cars kam biki. Then the send line. Disclaimer line: yeh investment advice nahi hai. Category: markets.",
+   "url": "https://www.nbcnews.com/business/markets/tech-stocks-nasdaq-ai-boom-fears-deepen-rcna606512"
+  }
+ ],
+ "id": "2026-10-31-sglearning-x5",
+ "ids": {
+  "budget": {
+   "day": "2026-10-30",
+   "drafts": 3,
+   "research": 1
+  },
+  "cost": {
+   "inr": 0.0,
+   "usd": 0.285268,
+   "voice": 0
+  }
+ },
+ "kind": "short",
+ "publish_day": "2026-10-31",
+ "reasons": [
+  "try 1: numbers without a source: 9.5e+06, 9.5e+06",
+  "try 2: numbers without a source: 9.5e+06, 9.5e+06",
+  "try 3: numbers without a source: 9.5e+06, 9.5e+06"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Tech shares ke 1 trillion dollar, ek din mein saaf 📉\nIntel 29 percent gira, Microsoft ka 60,000 logon ko exit offer, rupaya 95 ke paas.\nAur sona sasta hua, yeh achhi khabar hai.\nAapke liye sabse badi khabar kaunsi thi?\nYeh investment advice nahi hai.\nUs dost ko bhejo jo AI shares ka deewana hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#StockMarketIndia",
+     "#HinglishFinance",
+     "#Rupee",
+     "#SIP",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Tech shares ke 1 trillion dollar ek din mein saaf, reportedly. Wajah: AI par itna kharcha, kamaai kab? Intel 29% gira, Microsoft ka 60,000 logon ko exit offer, rupaya 95 ke paas. Aapke liye sabse badi khabar kaunsi? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Tech shares ke 1 trillion dollar ek din mein saaf, reportedly. AI par bhaari kharcha hai, par kamaai abhi dikh nahi rahi. Saath mein Microsoft ka exit offer, kamzor rupaya aur sasta sona, 10 khabrein jo aapki jeb chhooti hain. Us dost ko bhejo jo AI shares ka deewana hai.",
+    "tags": [
+     "tech stocks crash",
+     "AI bubble",
+     "Intel share",
+     "Microsoft exit offer",
+     "Amazon AWS",
+     "Binance hack",
+     "rupee dollar",
+     "gold price",
+     "Volkswagen loss",
+     "Nasdaq",
+     "paise ki khabar",
+     "hinglish finance"
+    ],
+    "title": "AI shares crash: 1 trillion dollar kyun doobe?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "₹95 lakh cr",
+    "line": "Tech shares ek din mein saaf",
+    "source": "NBC News"
+   },
+   {
+    "big_number": "-29%",
+    "line": "Intel ka 1974 ke baad bura din",
+    "source": "NBC News"
+   },
+   {
+    "big_number": "60,000",
+    "line": "Khud naukri chhodne ka offer",
+    "source": "Microsoft Blog"
+   },
+   {
+    "big_number": "+39%",
+    "line": "Cloud badha, cash nahi bacha",
+    "source": "Amazon IR"
+   },
+   {
+    "big_number": "₹95/$",
+    "line": "Rupaya kamzor, tel mehenga",
+    "source": "Reuters"
+   },
+   {
+    "big_number": "$6.5 bn",
+    "line": "Volkswagen ka quarter nuksaan",
+    "source": "Anadolu Agency"
+   }
+  ],
+  "carousel": true,
+  "end_question": "Us dost ko bhejo jo AI shares ka deewana hai.",
+  "hook": "Tech shares ke 1 trillion dollar, ek din mein saaf.",
+  "scenes": [
+   {
+    "facts_used": [
+     0,
+     5
+    ],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "₹95 lakh cr",
+      "line": "Tech shares ek din mein saaf",
+      "source": "NBC News"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Tech shares ke 1 trillion dollar, ek din mein saaf. Aur 9 khabrein jo aapki jeb chhooti hain."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "$1 trillion",
+      "line": "AI kharcha, kamaai kab?",
+      "source": "NBC News"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Ek: wajah, reportedly AI par bhaari kharcha, par kamaai dikh nahi rahi."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "-29%",
+      "line": "Intel ka 1974 ke baad bura din",
+      "source": "NBC News"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Do: Intel ka share 29 percent gira, 1974 ke baad sabse bura din."
+   },
+   {
+    "facts_used": [],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "Nasdaq",
+      "line": "Poore October girawat",
+      "source": "NBC News"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Teen: Nasdaq poore October gira, US tech fund wale SIP bhi hile."
+   },
+   {
+    "facts_used": [],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "Binance",
+      "line": "Sabse badi crypto chori",
+      "source": "News reports"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Chaar: Binance se reportedly itihaas ki sabse badi crypto chori, withdrawals band."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "official",
+    "visual": {
+     "card": {
+      "big_number": "60,000",
+      "line": "Khud naukri chhodne ka offer",
+      "source": "Microsoft Blog"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Paanch: Microsoft ka 60,000 logon ko naukri chhodne ka offer, India bhi shamil."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "official",
+    "visual": {
+     "card": {
+      "big_number": "+39%",
+      "line": "Cloud badha, cash nahi bacha",
+      "source": "Amazon IR"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Chhe: Amazon cloud 39 percent badha, par AI kharche ne cash khaaya."
+   },
+   {
+    "facts_used": [],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "Sona",
+      "line": "Sasta hua, budget ko raahat",
+      "source": "News reports"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Saat: India mein sona reportedly kaafi sasta, shaadi-tyohaar budget ko raahat."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "₹95/$",
+      "line": "Rupaya kamzor, tel mehenga",
+      "source": "Reuters"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Aath: Rupaya 95 per dollar ke paas, tel mehenga, petrol-diesel ka darr."
+   },
+   {
+    "facts_used": [],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "DoorDash",
+      "line": "Instacart khareedne ki deal",
+      "source": "News reports"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Nau: DoorDash, America ki food delivery company, Instacart ko khareedegi, reportedly."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "$6.5 bn",
+      "line": "Volkswagen ka quarter nuksaan",
+      "source": "Anadolu Agency"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Das: Volkswagen ko 6.5 billion dollar nuksaan, China mein cars kam biki."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Us dost ko bhejo",
+      "source": "Learning with SG"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Yeh investment advice nahi hai. Us dost ko bhejo jo AI shares ka deewana hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "TECH CRASH",
+   "name_hi": "टेक क्रैश",
+   "scene": "LEFT: glowing glass tech towers lit up with green rising charts at dusk; RIGHT: the same towers dark and cracked, a giant red arrow crashing down through them and banknotes blowing away in the wind",
+   "words": [
+    "$1 TRILLION",
+    "GAYAB"
+   ],
+   "words_hi": [
+    "$1 ट्रिलियन",
+    "गायब"
+   ]
+  },
+  "title": "Tech ke 1 trillion dollar *saaf* 📉"
+ },
+ "status": "rejected",
+ "timings": [],
+ "topic": {
+  "category": "crypto",
+  "extra": true,
+  "graphics": true,
+  "link": "https://www.nbcnews.com/business/markets/tech-stocks-nasdaq-ai-boom-fears-deepen-rcna606512",
+  "patch_tries": 2,
+  "published": "2026-10-31T05:48:13.389885+00:00",
+  "slot_ist": "13:00",
+  "source": "chosen",
+  "summary": "TOP 10 ROUNDUP. Plain everyday Hinglish a 15-year-old follows, one line per item (fact + why it matters), in this order, item 1 is the hook and title. Say 'reported' where marked. No tips. 1. Friday 30 Oct ko tech companies ke shares se about 1 trillion dollar, yaani lagbhag 95 lakh crore rupaye, ek din mein saaf (reported); wajah: AI par itna kharcha, kamaai kab? 2. Intel ka share about 29% gira, 1974 ke baad sabse bura din; agle quarter ki kamaai ka andaaza umeed se kaafi kam. 3. America ka Nasdaq poore October mein about 5% gira, March 2025 ke baad sabse bura mahina. 4. Crypto exchange Binance se about 6.3 billion dollar chori, itihaas ki sabse badi crypto chori; Bitcoin 77,000 dollar se neeche, withdrawals band. 5. Microsoft ne about 60,000 logon ko, yaani har chaar mein se ek, khud naukri chhodne ka offer diya, India ke kuch employees bhi shamil; paisa AI par lagana hai. 6. Amazon ka cloud business 39% badha, par AI kharche ke baad haath mein cash nahi bacha, share gira. 7. India mein sona do din mein about 5,000 rupaye sasta, 24 carat about 1.39 lakh rupaye per 10 gram (reported, city ke hisaab se alag). 8. Rupaya about 95 per dollar ke paas, aur kachcha tel about 113 dollar; matlab petrol-diesel aur import mehenga rehne ka darr. 9. DoorDash, America ki food delivery company, Instacart ko about 17 billion dollar mein khareedegi (reported deal). 10. Volkswagen ko ek quarter mein about 6.5 billion dollar ka nuksaan, China mein cars kam biki. Then the send line. Disclaimer line: yeh investment advice nahi hai. Category: markets.",
+  "target_minutes": null,
+  "title": "Tech companies ke 95 lakh crore ek din mein saaf, aur 9 aur badi khabrein"
+ },
+ "updated": "2026-10-31T05:51:23+00:00",
+ "writer": "claude"
+}
