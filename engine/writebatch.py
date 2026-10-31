@@ -79,7 +79,7 @@ def write_piece(piece, sheet: dict, library: list, hashtags: dict, formula: str 
                 if r.result.type != "succeeded":
                     raise WriteBatchError(f"batch result {r.result.type}: {secrets.scrub(str(getattr(r.result, 'error', '')))[:160]}")
                 message = r.result.message
-                writer.record_spend(message.usage, spend, today, factor=0.5)
+                writer.record_spend(message.usage, spend, today, factor=0.5 * writer.price_factor(params))
                 if message.stop_reason == "refusal":
                     raise WriteBatchError("Claude refused the request")
                 if message.stop_reason == "max_tokens":
