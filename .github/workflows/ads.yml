@@ -17,7 +17,11 @@ on:
         required: false
         default: ''
       launch:
-        description: 'check / live = create the test campaigns; budgets-check / budgets-live = set their daily budgets to the limit; resume = turn paused test campaigns on if their budget is within the limit; youtube-check / youtube-live = show the ads only on YouTube; status = read-only: account, billing, approvals; extend-check / extend-live = move the end date to content/ads.json run_until; ypp = read-only: each channel against the Partner Program bar; videos-check / videos-live = add the 2 best-watched long videos to each ad (engine/advideos.py) (engine/adlaunch.py)'
+        description: 'check / live = create the test campaigns; budgets-check / budgets-live = set their daily budgets to the limit; resume = turn paused test campaigns on if their budget is within the limit; youtube-check / youtube-live = show the ads only on YouTube; status = read-only: account, billing, approvals; extend-check / extend-live = move the end date to content/ads.json run_until; ypp = read-only: each channel against the Partner Program bar; videos-check / videos-live = add the 2 best-watched long videos to each ad; videos-report = per-video numbers (read-only); swap-check / swap-live = set the videos of each ad to the videos input (engine/advideos.py) (engine/adlaunch.py)'
+        required: false
+        default: ''
+      videos:
+        description: 'for swap-check / swap-live: sglearning=ID,ID arthvan=ID,ID (the full list each ad should carry)'
         required: false
         default: ''
 
@@ -55,6 +59,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SG_COMMAND_KEY: ${{ secrets.SG_COMMAND_KEY }}
+          VIDEOS: ${{ github.event.inputs.videos }}
         run: |
           if [ "${{ github.event.inputs.pause }}" = "yes" ]; then python -m engine.ads --pause-all
           elif [ "${{ github.event.inputs.launch }}" = "check" ]; then python -m engine.adlaunch
@@ -70,6 +75,9 @@ jobs:
           elif [ "${{ github.event.inputs.launch }}" = "extend-live" ]; then python -m engine.adlaunch --extend --live
           elif [ "${{ github.event.inputs.launch }}" = "videos-check" ]; then python -m engine.advideos
           elif [ "${{ github.event.inputs.launch }}" = "videos-live" ]; then python -m engine.advideos --live
+          elif [ "${{ github.event.inputs.launch }}" = "videos-report" ]; then python -m engine.advideos --report
+          elif [ "${{ github.event.inputs.launch }}" = "swap-check" ]; then python -m engine.advideos --set "$VIDEOS"
+          elif [ "${{ github.event.inputs.launch }}" = "swap-live" ]; then python -m engine.advideos --set "$VIDEOS" --live
           else python -m engine.ads ${{ github.event.inputs.check == 'yes' && '--check' || (github.event.schedule == '30 19 * * *' && '--report' || '') }}
           fi
       - name: Save the state

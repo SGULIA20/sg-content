@@ -139,9 +139,136 @@ def run(cfg=None, env=None, live: bool = False, notify=telegram.send, call=ads.c
     return 0
 
 
+def _ads_and_ids(cid, tok, cfg, call) -> list:
+    """[(channel, campaign name, ad resource name, [(asset resource name, youtube id)])] for every live test ad."""
+    rows = ads.search(cid, "SELECT campaign.name, ad_group_ad.ad.resource_name, ad_group_ad.ad.demand_gen_video_responsive_ad.videos "
+                           "FROM ad_group_ad WHERE campaign.name LIKE 'SG test %' AND campaign.status != 'REMOVED' "
+                           "AND ad_group_ad.status != 'REMOVED'", tok, cfg, call)
+    out = []
+    for r in rows:
+        name = r["campaign"]["name"]
+        channel = next((c for c in ("sglearning", "arthvan") if name.endswith(CHANNELS[c].display_name)), None)
+        if channel is None:
+            continue
+        ad = r["adGroupAd"]["ad"]
+        have = [v["asset"] for v in (ad.get("demandGenVideoResponsiveAd") or {}).get("videos", [])]
+        ids = {}
+        if have:
+            q = "SELECT asset.resource_name, asset.youtube_video_asset.youtube_video_id FROM asset WHERE asset.resource_name IN (" + \
+                ",".join(f"'{a}'" for a in have) + ")"
+            ids = {a["asset"]["resourceName"]: a["asset"]["youtubeVideoAsset"]["youtubeVideoId"] for a in ads.search(cid, q, tok, cfg, call)}
+        out.append((channel, name, ad["resourceName"], [(a, ids.get(a, "?")) for a in have]))
+    return out
+
+
+def report(cfg=None, env=None, notify=telegram.send, call=ads.call_full, yt_call=youtube.call, ads_token=None,
+           yt_token=youtube.access_token, now=None, days: int = 7) -> int:
+    """Read-only: per video in each test ad, the last `days` days of ad cost and clicks (where Google reports them per video) and YouTube
+    views, subscribers gained and subscribers gained from ads; plus each channel's newest public long video not yet in its ad."""
+    sent = notify
+
+    def notify(text):
+        print(text, flush=True)
+        sent(text)
+    cfg = ads.settings() if cfg is None else cfg
+    cid = str(cfg.get("customer_id", "")).replace("-", "")
+    today = (now or datetime.now(timezone.utc)).date()
+    start = today - timedelta(days=days)
+    tok = ads_token or ads.access_token(env)
+    per_asset = {}
+    try:                                                        # Google may not report Demand Gen spend per video; then it is left out
+        q = ("SELECT asset.youtube_video_asset.youtube_video_id, metrics.cost_micros, metrics.clicks, metrics.impressions FROM ad_group_ad_asset_view "
+             f"WHERE segments.date BETWEEN '{start.isoformat()}' AND '{today.isoformat()}' AND ad_group_ad_asset_view.field_type = 'YOUTUBE_VIDEO'")
+        for r in ads.search(cid, q, tok, cfg, call):
+            v = r.get("asset", {}).get("youtubeVideoAsset", {}).get("youtubeVideoId")
+            m = r.get("metrics", {})
+            a = per_asset.setdefault(v, [0.0, 0, 0])
+            a[0] += int(m.get("costMicros", 0)) / 1e6; a[1] += int(m.get("clicks", 0)); a[2] += int(m.get("impressions", 0))
+    except Exception as e:
+        print(f"per-video ad numbers not available: {secrets.scrub(str(e))[:200]}", flush=True)
+    lines = []
+    for channel, name, _ad, vids in _ads_and_ids(cid, tok, cfg, call):
+        ytok = yt_token(channel, env)
+        ids = [v for _a, v in vids]
+        q = {"ids": "channel==MINE", "startDate": start.isoformat(), "endDate": today.isoformat(), "metrics": "views,subscribersGained",
+             "dimensions": "video", "filters": "video==" + ",".join(ids)}
+        yt = {r[0]: (int(r[1]), int(r[2])) for r in _get(ads.ANALYTICS_URL + "?" + urllib.parse.urlencode(q), ytok, yt_call).get("rows", [])}
+        titles = long_videos(ytok, yt_call)
+        newest = next((v for v in titles if v not in ids), None)          # uploads come newest first
+        lines.append(f"{CHANNELS[channel].display_name}:")
+        for v in ids:
+            cost, clicks, imps = per_asset.get(v, (None, None, None))
+            views, subs = yt.get(v, (0, 0))
+            ad_part = f"ad ${cost:.2f}, {clicks} clicks, {imps} shown" if cost is not None else "ad per-video n/a"
+            lines.append(f"  youtu.be/{v} {titles.get(v, '')[:40]}: {ad_part}; YouTube {views} views, +{subs} subs")
+        lines.append(f"  newest long video not in the ad: " + (f"youtu.be/{newest} {titles[newest][:40]}" if newest else "none"))
+    notify(f"📣 Ad videos, last {days} days (read-only):\n" + "\n".join(lines))
+    return 0
+
+
+def set_videos(wanted: dict, cfg=None, env=None, live: bool = False, notify=telegram.send, call=ads.call_full, ads_token=None) -> int:
+    """Sets each named channel's test ad to exactly these YouTube ids (founder, 1 Nov 2026: "swap automatically and tell me after").
+    Kept videos reuse their assets; new ones get new assets. Check-only unless live; budgets and status are never touched."""
+    sent = notify
+
+    def notify(text):
+        print(text, flush=True)
+        sent(text)
+    cfg = ads.settings() if cfg is None else cfg
+    cid = str(cfg.get("customer_id", "")).replace("-", "")
+    tok = ads_token or ads.access_token(env)
+    ops, lines, n = [], [], 0
+    for channel, name, ad, vids in _ads_and_ids(cid, tok, cfg, call):
+        ids = wanted.get(channel)
+        if not ids:
+            continue
+        if not 1 <= len(ids) <= MAX_VIDEOS:
+            notify(f"📣 Ad videos: {channel} needs 1 to {MAX_VIDEOS} videos, got {len(ids)}; nothing changed.")
+            return 1
+        by_id = {v: a for a, v in vids}
+        assets = []
+        for v in ids:
+            if v in by_id:
+                assets.append(by_id[v])
+                continue
+            n += 1
+            res = f"customers/{cid}/assets/-{950 + n}"
+            ops.append({"assetOperation": {"create": {"resourceName": res, "name": f"{name} video {v}", "type": "YOUTUBE_VIDEO",
+                                                      "youtubeVideoAsset": {"youtubeVideoId": v}}}})
+            assets.append(res)
+        ops.append({"adOperation": {"update": {"resourceName": ad, "demandGenVideoResponsiveAd": {"videos": [{"asset": a} for a in assets]}},
+                                    "updateMask": "demand_gen_video_responsive_ad.videos"}})
+        old = [v for _a, v in vids]
+        lines.append(f"{CHANNELS[channel].display_name}: out {', '.join(v for v in old if v not in ids) or '-'}; "
+                     f"in {', '.join(v for v in ids if v not in old) or '-'}; now {', '.join(ids)}")
+    if not ops:
+        notify("📣 Ad videos: nothing to change.")
+        return 0
+    status, _h, body = call("POST", f"{ads.API}/customers/{cid}/googleAds:mutate", tok,
+                            json_body={"mutateOperations": ops, "validateOnly": not live}, headers=ads._headers(cfg))
+    if status != 200:
+        notify(f"📣 Ad videos swap {'FAILED' if live else 'check found problems'} ({status}):\n{secrets.scrub(ads.errors_text(body))[:2000]}")
+        return 1
+    notify(f"🔁 Ad videos {'swapped' if live else 'swap check passed (nothing changed)'}; same $5 a day:\n" + "\n".join(lines))
+    return 0
+
+
+def parse_wanted(text: str) -> dict:
+    """'sglearning=a,b arthvan=c' -> {"sglearning": ["a", "b"], "arthvan": ["c"]}"""
+    out = {}
+    for part in (text or "").split():
+        ch, _, ids = part.partition("=")
+        out[ch] = [i for i in ids.split(",") if i]
+    return out
+
+
 def main(argv=None) -> int:
     argv = sys.argv[1:] if argv is None else argv
     try:
+        if "--report" in argv:
+            return report()
+        if "--set" in argv:
+            return set_videos(parse_wanted(argv[argv.index("--set") + 1]), live="--live" in argv)
         return run(live="--live" in argv)
     except Exception as e:
         print(f"crashed: {secrets.scrub(str(e))[:2000]}", flush=True)

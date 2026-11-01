@@ -62,3 +62,43 @@ def test_founder_pick_wins_and_skips_videos_that_are_not_public_longs():
     ops = calls[0]["mutateOperations"]
     assert [o["assetOperation"]["create"]["youtubeVideoAsset"]["youtubeVideoId"] for o in ops if "assetOperation" in o] == ["a"]
     assert "youtu.be/short skipped" in sent[0]
+
+
+def _ads2(calls):
+    def call(method, url, tok, json_body=None, headers=None):
+        q = (json_body or {}).get("query", "")
+        if "FROM ad_group_ad " in q:
+            return 200, {}, {"results": [{"campaign": {"name": "SG test 2026-10-31 SG-MYTH-WORLD"},
+                                          "adGroupAd": {"ad": {"resourceName": "customers/6014814549/ads/77",
+                                                               "demandGenVideoResponsiveAd": {"videos": [{"asset": "customers/6014814549/assets/5"},
+                                                                                                         {"asset": "customers/6014814549/assets/6"}]}}}}]}
+        if "FROM asset " in q:
+            return 200, {}, {"results": [{"asset": {"resourceName": "customers/6014814549/assets/5", "youtubeVideoAsset": {"youtubeVideoId": "cur"}}},
+                                         {"asset": {"resourceName": "customers/6014814549/assets/6", "youtubeVideoAsset": {"youtubeVideoId": "a"}}}]}
+        if "ad_group_ad_asset_view" in q:
+            return 200, {}, {"results": [{"asset": {"youtubeVideoAsset": {"youtubeVideoId": "cur"}}, "metrics": {"costMicros": "3000000", "clicks": "40", "impressions": "900"}}]}
+        calls.append(json_body)
+        return 200, {}, {}
+    return call
+
+
+def test_swap_keeps_existing_assets_adds_new_and_touches_nothing_else():
+    calls, sent = [], []
+    assert advideos.set_videos({"arthvan": ["cur", "b"]}, CFG, {}, notify=sent.append, call=_ads2(calls), ads_token="t") == 0
+    ops = calls[0]["mutateOperations"]
+    assert calls[0]["validateOnly"] is True
+    assert [o["assetOperation"]["create"]["youtubeVideoAsset"]["youtubeVideoId"] for o in ops if "assetOperation" in o] == ["b"]
+    upd = next(o["adOperation"] for o in ops if "adOperation" in o)["update"]["demandGenVideoResponsiveAd"]["videos"]
+    assert upd[0] == {"asset": "customers/6014814549/assets/5"} and len(upd) == 2
+    assert not any("campaignBudgetOperation" in o or "campaignOperation" in o for o in ops)
+    assert "out a; in b" in sent[0]
+
+
+def test_report_lists_each_video_and_the_newest_candidate():
+    calls, sent = [], []
+    assert advideos.report(CFG, {}, notify=sent.append, call=_ads2(calls), yt_call=_yt, ads_token="t", yt_token=lambda c, e: "y", now=NOW) == 0
+    assert "youtu.be/cur" in sent[0] and "ad $3.00, 40 clicks" in sent[0] and "newest long video not in the ad: youtu.be/b" in sent[0] and calls == []
+
+
+def test_parse_wanted():
+    assert advideos.parse_wanted("sglearning=a,b arthvan=c") == {"sglearning": ["a", "b"], "arthvan": ["c"]}
