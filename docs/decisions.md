@@ -220,3 +220,4 @@ line here (who, date) in the same change. Newest first.
 - From 2 Nov 2026: 1 best news Reel a day (plus the daily Top 10), 30-40 seconds, one clear point; replaces 3 a day at 50-60 s (founder, 1 Nov 2026: people watched 5-11 s of them).
 - Google ads continue without pausing until 31 Jan 2027: $5 a day per channel (about $310 a month, ~₹26,000 + GST), no cost-per-subscriber pause, monthly cap $330 only as an overspend safety net (founder, 1 Nov 2026: "continue with ads, don't pause for next 3 months").
 - Google ads: a 1-month trial to 30 Nov 2026 (replaces "until 31 Jan"), no pausing during it; the ads stop on 30 Nov unless the founder renews for the next month after the 28 Nov review; subscriber cost and watch hours are reviewed twice a week and weekly; the goal is monetising both channels (founder, 1 Nov 2026).
+- Google ads hard limit: USD 300 a month for both campaigns together; the watch pauses them if a month reaches it (founder, 1 Nov 2026).
