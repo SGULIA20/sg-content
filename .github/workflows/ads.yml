@@ -17,7 +17,7 @@ on:
         required: false
         default: ''
       launch:
-        description: 'check / live = create the test campaigns; budgets-check / budgets-live = set their daily budgets to the limit; resume = turn paused test campaigns on if their budget is within the limit; youtube-check / youtube-live = show the ads only on YouTube; status = read-only: account, billing, approvals; extend-check / extend-live = move the end date to content/ads.json run_until; ypp = read-only: each channel against the Partner Program bar; videos-check / videos-live = add the 2 best-watched long videos to each ad; videos-report = per-video numbers (read-only); swap-check / swap-live = set each ad's videos to the `videos` input (engine/advideos.py) (engine/adlaunch.py)'
+        description: 'check / live = create the test campaigns; budgets-check / budgets-live = set their daily budgets to the limit; resume = turn paused test campaigns on if their budget is within the limit; youtube-check / youtube-live = show the ads only on YouTube; status = read-only: account, billing, approvals; extend-check / extend-live = move the end date to content/ads.json run_until; ypp = read-only: each channel against the Partner Program bar; videos-check / videos-live = add the 2 best-watched long videos to each ad; videos-report = per-video numbers (read-only); swap-check / swap-live = set the videos of each ad to the videos input (engine/advideos.py) (engine/adlaunch.py)'
         required: false
         default: ''
       videos:
