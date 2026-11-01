@@ -1,0 +1,384 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 16.2,
+   "quote": "The Competition Commission of India (CCI) on Friday approved French billionaire Xavier Niel's proposal to acquire a 16.2% stake in UK-based telecom major Vodafone Group Plc, news agency PTI reported.",
+   "source_date": "2026-10-31",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/companies/people/french-billionaire-xavier-niel-gets-cci-nod-for-16-2-vodafone-stake-what-is-the-5-1-billion-deal-11793459486004.html",
+   "text": "The Competition Commission of India cleared Xavier Niel's proposed acquisition of a 16.2% stake in Vodafone Group Plc.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 5.1,
+   "quote": "The deal, valued at around €5.1 billion, involves the purchase of the stake by Vega SAS, Niel's family investment vehicle, from Emirates Telecommunications Group Co PJSC.",
+   "source_date": "2026-10-31",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/companies/people/french-billionaire-xavier-niel-gets-cci-nod-for-16-2-vodafone-stake-what-is-the-5-1-billion-deal-11793459486004.html",
+   "text": "The transaction between Vega SAS and Emirates Telecommunications Group is valued at approximately 5.1 billion euros.",
+   "unit": "billion EUR"
+  },
+  {
+   "label": "reported",
+   "number": 4.4,
+   "quote": "In July, Vega SAS announced a binding agreement with Emirates Telecommunications Group Co PJSC for the acquisition, valued at approximately 4.4 billion pounds (5.1 billion euros).",
+   "source_date": "2026-10-31",
+   "source_name": "ET",
+   "source_url": "https://telecom.economictimes.indiatimes.com/news/industry/cci-clears-xavier-niels-16-2-stake-acquisition-in-vodafone-group/135371385",
+   "text": "The cash consideration agreed for Vega SAS to acquire the Vodafone stake is approximately 4.4 billion British pounds.",
+   "unit": "billion GBP"
+  },
+  {
+   "label": "reported",
+   "number": 3.0,
+   "quote": "The CCI also approved three other corporate transactions on Friday.",
+   "source_date": "2026-10-31",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/companies/people/french-billionaire-xavier-niel-gets-cci-nod-for-16-2-vodafone-stake-what-is-the-5-1-billion-deal-11793459486004.html",
+   "text": "The competition regulator cleared 3 other major corporate transactions alongside the Vodafone Group stake purchase.",
+   "unit": "corporate transactions"
+  },
+  {
+   "label": "reported",
+   "number": 100.0,
+   "quote": "The watchdog also approved Adani Energy Solutions' proposed acquisition of 100% of IntelliSmart Infrastructure from the National Investment and Infrastructure Fund (NIIF) and Energy Efficiency Services Ltd, as per BS.",
+   "source_date": "2026-10-31",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/companies/people/french-billionaire-xavier-niel-gets-cci-nod-for-16-2-vodafone-stake-what-is-the-5-1-billion-deal-11793459486004.html",
+   "text": "Under the approved corporate transactions, Adani Energy Solutions received clearance to acquire a 100% stake in IntelliSmart Infrastructure.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 50.0,
+   "quote": "These include the sale of its businesses in Italy and Spain, the divestment of its 50% stake in a Dutch joint venture and its merger with Three to create the UK's largest mobile operator.",
+   "source_date": "2026-10-31",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/companies/people/french-billionaire-xavier-niel-gets-cci-nod-for-16-2-vodafone-stake-what-is-the-5-1-billion-deal-11793459486004.html",
+   "text": "Vodafone Group has been restructuring globally, having previously sold a 50% interest in a Dutch joint venture.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 177.0,
+   "quote": "Currently, Airtel leads the market with an ARPU of ₹275, followed by Jio (₹216), and Vodafone Idea (₹177).",
+   "source_date": "2026-10-30",
+   "source_name": "ET",
+   "source_url": "https://telecom.economictimes.indiatimes.com/news/industry/indian-telcos-arpu-may-rise-5-even-in-absence-of-tariff-hikes-ind-ra/135359740",
+   "text": "Vodafone Idea generates an average revenue per user of 177 rupees per month from its mobile consumer base.",
+   "unit": "INR"
+  },
+  {
+   "label": "analyst-view",
+   "number": 10.0,
+   "quote": "Axis Capital expects a “broad-based 10-12% industry tariff hike over the next six months”, supporting telcos' tariff-repair strategy.",
+   "source_date": "2026-10-30",
+   "source_name": "ET",
+   "source_url": "https://telecom.economictimes.indiatimes.com/news/industry/indian-telcos-arpu-may-rise-5-even-in-absence-of-tariff-hikes-ind-ra/135359740",
+   "text": "Brokerage Axis Capital projects an industry-wide tariff hike of 10% to 12% over the next six months that will impact consumer recharge bills.",
+   "unit": "pct"
+  },
+  {
+   "date": "2026-10-31",
+   "label": "reported",
+   "source": "Mint Companies",
+   "text": "The CCI has approved French billionaire Xavier Niel's €5.1 billion deal to acquire a 16.2% stake in Vodafone Group through his investment vehicle Vega SAS. The acquisition, from Emirates Telecommunications Group, will make Vega Vodafone's largest shareholder.",
+   "url": "https://www.livemint.com/companies/people/french-billionaire-xavier-niel-gets-cci-nod-for-16-2-vodafone-stake-what-is-the-5-1-billion-deal-11793459486004.html"
+  }
+ ],
+ "id": "2026-11-01-sglearning-x3",
+ "ids": {
+  "budget": {
+   "day": "2026-10-31",
+   "drafts": 2,
+   "research": 1
+  },
+  "cost": {
+   "inr": 0.0,
+   "usd": 0.245688,
+   "voice": 11
+  },
+  "drafts": 2,
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "dGgi9OCKA7g"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-01",
+ "reasons": [
+  "try 1: figures: 4 different numbers spoken (5, 10, 12, 16.2), allowed 3; keep only the numbers the story cannot do without and say the rest in words (kaafi sasta, double, aadha)"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Vodafone ka 16.2 percent hissa ab French arabpati ke haath. 📱\nCCI ne deal ko haan bol di, aur Vodafone Group hamari Vi ka partner hai.\nEk brokerage ka andaaza: recharge 10 percent se zyada mehenga ho sakta hai.\nAapka recharge budget tayyar hai?\nYeh investment advice nahi hai.\nUs dost ko bhejo jiske phone mein Vi ka SIM hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#HinglishFinance",
+     "#PersonalFinanceIndia",
+     "#StockMarketIndia",
+     "#MoneyTipsHindi",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Vodafone ka 16.2 percent hissa ab French arabpati Xavier Niel ka, CCI ne haan bol di. Vodafone Group hamari Vi ka partner hai. Agar recharge 10 percent se zyada mehenga hua, toh aap kya karoge? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Vodafone ka 16.2 percent hissa ab French arabpati Xavier Niel ka, aur CCI ne haan bol di. Vodafone Group, Vi mein partner hai, isliye upar ka badlaav aapke network aur recharge tak pahunchta hai. Ek brokerage ka andaaza hai ki aadhe saal mein recharge 10 percent se zyada mehenga ho sakta hai. Us dost ko bhejo jiske phone mein Vi ka SIM hai.",
+    "tags": [
+     "Vodafone",
+     "Vodafone Idea",
+     "Vi",
+     "Xavier Niel",
+     "CCI",
+     "recharge price",
+     "telecom India",
+     "mobile recharge",
+     "Hinglish finance",
+     "Learning with SG"
+    ],
+    "title": "Vodafone ka naya maalik, Vi users ka kya hoga?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "16.2%",
+    "line": "Vodafone hissa French arabpati ka",
+    "source": "Mint"
+   },
+   {
+    "big_number": "₹177",
+    "line": "Vi ki ek grahak se kamaai",
+    "source": "ET"
+   },
+   {
+    "big_number": "10%",
+    "line": "Recharge mehenga hone ka andaaza",
+    "source": "ET"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Yeh us dost ko bhejo jiske phone mein Vi ka SIM hai.",
+  "hook": "Vodafone ka 16.2 percent hissa ab French arabpati ka.",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "16.2%",
+      "line": "Vodafone hissa French arabpati ka",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Vodafone ka 16.2 percent hissa ab French arabpati ka."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Xavier Niel ne kharida hissa",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Naam hai Xavier Niel, hissa UAE ki Emirates Telecom se kharida."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "CCI ne haan bol di",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Ab Vodafone ke sabse bade hissedaar yahi. CCI ne bhi haan bol di."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "CCI bachata hai muqabla",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "CCI yaani Competition Commission, jo dekhta hai koi deal muqabla khatam na kare."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Vodafone Group, Vi ka partner",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "British company ki deal mein India kyon? Kyunki Vodafone Group, Vi mein partner hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Vi ke paise, network par asar",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Upar maalik badla, toh Vi ke paise aur network par seedha asar."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "₹177",
+      "line": "Vi ki ek grahak se kamaai",
+      "source": "ET"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Vi ek grahak se mahine ka sirf 177 rupaye kamaata hai, Airtel-Jio se kaafi kam."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "analyst-view",
+    "visual": {
+     "card": {
+      "big_number": "10%",
+      "line": "Recharge mehenga hone ka andaaza",
+      "source": "ET"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Isliye ek brokerage ka andaaza: aadhe saal mein recharge 10 percent se zyada mehenga."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Muqabla raha toh bill kaabu",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Asli baat: Vi tiki rahe, tabhi muqabla rehta hai, aur bill kaabu mein."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Recharge budget abhi socho",
+      "source": "ET"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Yeh investment advice nahi hai, par recharge ka budget abhi se socho."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Vi wale dost ko bhejo",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Yeh us dost ko bhejo jiske phone mein Vi ka SIM hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "VODAFONE",
+   "name_hi": "वोडाफोन",
+   "scene": "LEFT: a towering glass telecom headquarters in grey London rain with a giant red mobile tower on its roof; RIGHT: a crowded small Indian mobile recharge shop at night, prepaid SIM cards and price boards glowing under a tube light.",
+   "words": [
+    "16.2%",
+    "NAYA BOSS"
+   ],
+   "words_hi": [
+    "16.2%",
+    "नया बॉस"
+   ]
+  },
+  "title": "Vodafone ka naya *maalik*, aapka recharge? 📱"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  4.89,
+  9.82,
+  14.95,
+  21.08,
+  26.49,
+  31.3,
+  37.75,
+  44.04,
+  49.69,
+  54.58
+ ],
+ "topic": {
+  "category": "numbers",
+  "extra": true,
+  "graphics": true,
+  "link": "https://www.livemint.com/companies/people/french-billionaire-xavier-niel-gets-cci-nod-for-16-2-vodafone-stake-what-is-the-5-1-billion-deal-11793459486004.html",
+  "look": "claymation",
+  "published": "2026-10-31T18:40:18+00:00",
+  "rank": 2,
+  "slot_ist": "16:30",
+  "source": "Mint Companies",
+  "summary": "The CCI has approved French billionaire Xavier Niel's €5.1 billion deal to acquire a 16.2% stake in Vodafone Group through his investment vehicle Vega SAS. The acquisition, from Emirates Telecommunications Group, will make Vega Vodafone's largest shareholder.",
+  "target_minutes": null,
+  "title": "French billionaire Xavier Niel gets CCI nod for 16.2% Vodafone stake: What is the €5.1 billion deal?",
+  "voice": "voice_g8azc8xcwhlu"
+ },
+ "updated": "2026-11-01T00:47:49+00:00",
+ "writer": "claude"
+}

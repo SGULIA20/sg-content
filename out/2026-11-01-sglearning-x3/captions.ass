@@ -1,0 +1,46 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.87,Default,,0,0,0,,Vodafone ka 16.2 percent hissa ab
+Dialogue: 0,0:00:02.87,0:00:04.44,Default,,0,0,0,,French arabpati ka.
+Dialogue: 0,0:00:04.89,0:00:06.01,Default,,0,0,0,,Naam hai Xavier Niel,
+Dialogue: 0,0:00:06.01,0:00:08.70,Default,,0,0,0,,hissa UAE ki Emirates Telecom se
+Dialogue: 0,0:00:08.70,0:00:09.37,Default,,0,0,0,,kharida.
+Dialogue: 0,0:00:09.82,0:00:12.72,Default,,0,0,0,,Ab Vodafone ke sabse bade hissedaar
+Dialogue: 0,0:00:12.72,0:00:13.16,Default,,0,0,0,,yahi.
+Dialogue: 0,0:00:13.16,0:00:14.50,Default,,0,0,0,,CCI ne bhi haan bol di.
+Dialogue: 0,0:00:14.95,0:00:17.32,Default,,0,0,0,,CCI yaani Competition Commission,
+Dialogue: 0,0:00:17.32,0:00:19.45,Default,,0,0,0,,jo dekhta hai koi deal muqabla
+Dialogue: 0,0:00:19.45,0:00:20.63,Default,,0,0,0,,khatam na kare.
+Dialogue: 0,0:00:21.08,0:00:23.24,Default,,0,0,0,,British company ki deal mein India
+Dialogue: 0,0:00:23.24,0:00:23.45,Default,,0,0,0,,kyon?
+Dialogue: 0,0:00:23.45,0:00:24.96,Default,,0,0,0,,Kyunki Vodafone Group,
+Dialogue: 0,0:00:24.96,0:00:26.04,Default,,0,0,0,,Vi mein partner hai.
+Dialogue: 0,0:00:26.49,0:00:27.87,Default,,0,0,0,,Upar maalik badla,
+Dialogue: 0,0:00:27.87,0:00:29.70,Default,,0,0,0,,toh Vi ke paise aur network
+Dialogue: 0,0:00:29.70,0:00:30.85,Default,,0,0,0,,par seedha asar.
+Dialogue: 0,0:00:31.30,0:00:33.38,Default,,0,0,0,,Vi ek grahak se mahine ka
+Dialogue: 0,0:00:33.38,0:00:35.69,Default,,0,0,0,,sirf 177 rupaye kamaata hai,
+Dialogue: 0,0:00:35.69,0:00:37.30,Default,,0,0,0,,Airtel-Jio se kaafi kam.
+Dialogue: 0,0:00:37.75,0:00:40.04,Default,,0,0,0,,Isliye ek brokerage ka andaaza:
+Dialogue: 0,0:00:40.04,0:00:42.34,Default,,0,0,0,,aadhe saal mein recharge 10 percent
+Dialogue: 0,0:00:42.34,0:00:43.59,Default,,0,0,0,,se zyada mehenga.
+Dialogue: 0,0:00:44.04,0:00:44.78,Default,,0,0,0,,Asli baat:
+Dialogue: 0,0:00:44.78,0:00:46.02,Default,,0,0,0,,Vi tiki rahe,
+Dialogue: 0,0:00:46.02,0:00:48.00,Default,,0,0,0,,tabhi muqabla rehta hai,
+Dialogue: 0,0:00:48.00,0:00:49.24,Default,,0,0,0,,aur bill kaabu mein.
+Dialogue: 0,0:00:49.69,0:00:51.71,Default,,0,0,0,,Yeh investment advice nahi hai,
+Dialogue: 0,0:00:51.71,0:00:53.73,Default,,0,0,0,,par recharge ka budget abhi se
+Dialogue: 0,0:00:53.73,0:00:54.13,Default,,0,0,0,,socho.
+Dialogue: 0,0:00:54.58,0:00:56.41,Default,,0,0,0,,Yeh us dost ko bhejo jiske
+Dialogue: 0,0:00:56.41,0:00:58.02,Default,,0,0,0,,phone mein Vi ka SIM hai.
