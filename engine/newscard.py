@@ -27,6 +27,8 @@ def data(scene: dict, index: int, total: int, category: str, roundup: bool) -> d
         m = NUMBER.search(vo)
         num = m.group(0).strip() if m else ""
     line = card.get("line") or " ".join(re.sub(r"[^\w\s%₹$.,]", "", vo).split()[:6])
+    if index == 0 and vo:                    # 1 Nov 2026: the first 2 seconds decide; frame 1 carries the spoken question itself
+        line = " ".join(vo.split()[:10])
     if roundup and 0 < index < total - 1:
         tag = f"#{index}"
     else:
