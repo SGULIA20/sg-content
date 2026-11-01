@@ -141,3 +141,23 @@ def test_new_launches_are_youtube_only(tmp_path):
     ops = adlaunch.operations("1", "sglearning", "vid", b"png", date(2026, 10, 31), 1, 70)
     group = next(o["adGroupOperation"]["create"] for o in ops if "adGroupOperation" in o)
     assert group["demandGenAdGroupSettings"] == adlaunch.YOUTUBE_ONLY
+
+
+def test_extend_moves_only_the_end_date():
+    calls, sent = [], []
+    def call(method, url, tok, json_body=None, headers=None):
+        if url.endswith(":search"):
+            return 200, {}, {"results": [{"campaign": {"resourceName": "customers/1/campaigns/5", "name": "SG test A", "endDateTime": "2026-11-13 23:59:59"}}]}
+        calls.append(json_body); return 200, {}, {}
+    assert adlaunch.extend({**CFG, "run_until": "2027-01-31"}, {}, notify=sent.append, call=call, token="t") == 0
+    op = calls[0]["mutateOperations"][0]["campaignOperation"]
+    assert calls[0]["validateOnly"] is True and op["updateMask"] == "end_date_time"
+    assert op["update"] == {"resourceName": "customers/1/campaigns/5", "endDateTime": "2027-01-31 23:59:59"}
+    assert "was 2026-11-13" in sent[0] and "until 2027-01-31" in sent[0]
+
+
+def test_no_cost_per_subscriber_pause_with_the_new_limits():
+    from engine import ads
+    cfg = {"limits": {"USD": {"monthly_cap": 330, "budget_per_channel": 70}}}
+    assert ads.decide(cfg, 200, 150, 0, False, "USD") == ""
+    assert "cap" in ads.decide(cfg, 400, 330, 0, False, "USD")

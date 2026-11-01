@@ -241,9 +241,43 @@ def youtube_only(cfg: dict | None = None, env=None, notify=telegram.send, call=a
     return 0
 
 
+def extend(cfg: dict | None = None, env=None, notify=telegram.send, call=ads.call_full, token=None, live: bool = False) -> int:
+    """Moves every test campaign's end date to content/ads.json run_until (founder, 1 Nov 2026: "continue with ads, don't pause for
+    next 3 months"). Check-only unless live; never changes budget or status."""
+    sent = notify
+
+    def notify(text):                                         # also in the run log
+        print(text, flush=True)
+        sent(text)
+    cfg = ads.settings() if cfg is None else cfg
+    until = cfg.get("run_until")
+    if not until:
+        notify("📣 Ads end date: no run_until in content/ads.json; nothing changed.")
+        return 1
+    cid = str(cfg.get("customer_id", "")).replace("-", "")
+    tok = token or ads.access_token(env)
+    rows = ads.search(cid, "SELECT campaign.resource_name, campaign.name, campaign.end_date_time FROM campaign "
+                           "WHERE campaign.name LIKE 'SG test %' AND campaign.status != 'REMOVED'", tok, cfg, call)
+    ops = [{"campaignOperation": {"update": {"resourceName": r["campaign"]["resourceName"], "endDateTime": f"{until} 23:59:59"},
+                                  "updateMask": "end_date_time"}} for r in rows]
+    if not ops:
+        notify("📣 Ads end date: no test campaigns found.")
+        return 1
+    status, _h, body = call("POST", f"{ads.API}/customers/{cid}/googleAds:mutate", tok,
+                            json_body={"mutateOperations": ops, "validateOnly": not live}, headers=ads._headers(cfg))
+    if status != 200:
+        notify(f"📣 Ads end date {'FAILED' if live else 'check found problems'} ({status}):\n{secrets.scrub(ads.errors_text(body))[:2000]}")
+        return 1
+    notify(f"📣 Ads end date {'set' if live else 'check passed'}: " + ", ".join(f"{r['campaign']['name']} (was {r['campaign'].get('endDateTime', '?')[:10]})" for r in rows)
+           + f" now run until {until}.")
+    return 0
+
+
 def main(argv=None) -> int:
     argv = sys.argv[1:] if argv is None else argv
     try:
+        if "--extend" in argv:
+            return extend(live="--live" in argv)
         if "--youtube-only" in argv:
             return youtube_only(live="--live" in argv)
         if "--resume" in argv:
