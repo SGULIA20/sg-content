@@ -102,8 +102,12 @@
    "voice": 11
   },
   "drafts": 2,
+  "ig_reel_id": "18135072103824121",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "out_sha": "44651112fba5002b383f0e5c478314bc8d28051d",
+  "threads_id": "17973561114189489",
+  "threads_poll_id": "skipped: HTTP 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":",
   "yt_id": "dGgi9OCKA7g"
  },
  "kind": "short",
@@ -351,7 +355,7 @@
   },
   "title": "Vodafone ka naya *maalik*, aapka recharge? 📱"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   4.89,
@@ -380,6 +384,6 @@
   "title": "French billionaire Xavier Niel gets CCI nod for 16.2% Vodafone stake: What is the €5.1 billion deal?",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-11-01T00:47:49+00:00",
+ "updated": "2026-11-01T11:08:55+00:00",
  "writer": "claude"
 }
