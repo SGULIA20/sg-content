@@ -42,15 +42,15 @@ def test_two_reels_in_a_row_never_share_a_category_and_the_bank_fills_quiet_cycl
 
 def test_once_todays_extras_are_made_a_cycle_only_reports(tmp_path):
     _main(tmp_path)
-    for n, slot in enumerate(("13:00", "16:30", "22:45"), 1):
+    for n, slot in enumerate(("13:00",), 1):                         # 1 best news Reel a day from 2 Nov (founder, 1 Nov 2026)
         x = pieces.Piece(id=f"2026-11-02-sglearning-x{n}", channel="sglearning", kind="short", publish_day=TODAY, status="uploaded")
         x.topic = {"slot_ist": slot, "category": "ai"}; pieces.save(x, tmp_path)
     made, sent = _run(tmp_path, [_item("RBI cuts repo rate")])
-    assert trends.extras_today(TODAY) == 3 and made == [] and "made; next cycle reports only" in sent[0]
+    assert trends.extras_today(TODAY) == 1 and made == [] and "made; next cycle reports only" in sent[0]
 
 
 def test_the_ramp():
-    assert trends.extras_today(date(2026, 10, 29)) == 1 and trends.extras_today(date(2026, 10, 31)) == 3 and trends.extras_today(date(2026, 11, 20)) == 3
+    assert trends.extras_today(date(2026, 10, 29)) == 1 and trends.extras_today(date(2026, 10, 31)) == 3 and trends.extras_today(date(2026, 11, 20)) == 1
 
 
 def test_no_voice_credit_on_youtube_or_instagram():

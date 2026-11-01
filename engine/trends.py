@@ -22,7 +22,7 @@ CHANNEL = "sglearning"
 CYCLE_HOURS = 8                       # a story counts as fresh for two cycles
 SLOT_LEAD_MINUTES = 60                # a cycle only takes a slot it can still meet
 # extra Reels a day on top of the daily one, ramping while views per Reel hold (founder, 29 Oct 2026, "B")
-EXTRAS_FROM = [(date(2026, 10, 29), 1), (date(2026, 10, 31), 3)]   # 31 Oct: 3 breaking-news Reels a day on free news cards (founder, 30 Oct 2026)
+EXTRAS_FROM = [(date(2026, 10, 29), 1), (date(2026, 10, 31), 3), (date(2026, 11, 2), 1)]   # 2 Nov: only the 1 best news Reel a day, plus the Top 10 (founder, 1 Nov 2026)
 
 CATEGORIES = {
     "crypto": ["bitcoin", "crypto", "binance", "ethereum", "token"],
