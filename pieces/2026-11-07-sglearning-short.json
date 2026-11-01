@@ -1,0 +1,201 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "analyst-view",
+   "number": 4.22,
+   "quote": "Nippon Life India Asset Management Ltd. is expected to report a 22.3% on-year rise in consolidated net profit to INR 4.22 billion for the September quarter, according to the average of estimates from 15 brokerages.",
+   "source_date": "2026-10-21",
+   "source_name": "Informist",
+   "source_url": "https://www.informistmedia.com/earnings-outlook-nippon-life-q2-net-profit-seen-rising-22-on-year/",
+   "text": "Nippon Life India Asset Management, which oversees mutual fund investments and SIPs for millions of household savers, is estimated to report a quarterly net profit of 4.22 billion INR.",
+   "unit": "billion INR"
+  }
+ ],
+ "id": "2026-11-07-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-01",
+   "drafts": 1
+  },
+  "cost": {
+   "inr": 16.5,
+   "usd": 0.070848,
+   "voice": 9
+  },
+  "drafts": 1,
+  "yt_id": "5G3x2AYtajQ"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-07",
+ "reasons": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Aapki SIP doobe, phir bhi fund house kyun kamata hai? 🤔\nNippon Life India ka munafa, brokerages ke andaze mein, 22.3 percent badhne wala tha.\nKyunki fees har din kat-ti hai, market gire ya chadhe. Aapne apne fund ka expense ratio kabhi dekha hai?\nYeh investment advice nahi hai.\nUs dost ko bhejo jo sochta hai fund wale bhi uske saath doobte hain.",
+    "hashtags": [
+     "#SIP",
+     "#MutualFunds",
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#PersonalFinanceIndia",
+     "#HinglishFinance",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Aapki SIP doobe, phir bhi fund house kamata hai. Nippon Life India ka munafa andaze mein 22.3 percent upar tha, kyunki fees har din kat-ti hai. Aapne apne fund ka expense ratio kabhi dekha hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Aapki SIP doobe, phir bhi fund house kyun kamata hai? Brokerages ke andaze mein Nippon Life India ka munafa 22.3 percent badhne wala tha. Wajah simple hai: fees har din aapke paise se kat-ti hai, market gire ya chadhe. Us dost ko bhejo jo sochta hai fund wale bhi uske saath doobte hain.",
+    "tags": [
+     "SIP",
+     "mutual fund",
+     "fund house",
+     "expense ratio",
+     "Nippon Life India",
+     "Q2 results",
+     "SIP fees",
+     "personal finance",
+     "Hinglish finance",
+     "Learning with SG"
+    ],
+    "title": "SIP gire, phir bhi fund house kyun kamata?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo sochta hai fund wale bhi saath doobte hain.",
+  "hook": "Aapki SIP doobe, phir bhi fund house kyun kamata hai?",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "Hook",
+    "visual": {
+     "card": null,
+     "prompt": "A tall glass fund-house tower at dusk filling the frame, thin golden streams of coins flowing into it from thousands of tiny lit homes below, while a faint red falling arrow cuts across the sky, dramatic and slightly ominous",
+     "type": "art"
+    },
+    "vo": "Aapki SIP doobe, phir bhi fund house kyun kamata hai?"
+   },
+   {
+    "facts_used": [],
+    "label": "Setup",
+    "visual": {
+     "card": null,
+     "prompt": "WIFE at a kitchen table at night with the house budget notebook and a bank passbook, ticking off the monthly SIP entry, calm and content, warm lamp light",
+     "type": "art"
+    },
+    "vo": "Har mahine salary aate hi SIP kat jaati hai. Wife ko lagta hai, yeh paisa sirf hamare liye kaam karta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "The choice",
+    "visual": {
+     "card": null,
+     "prompt": "Living room in the evening, PAPA in a kurta holding FD receipts, worried, pointing at a TV showing a big red downward arrow, WIFE calmly shaking her head with a firm smile",
+     "type": "art"
+    },
+    "vo": "Market gira, Papa bole SIP band karo. Wife ne chalu rakhi, plan lambi daud ka tha."
+   },
+   {
+    "facts_used": [],
+    "label": "The belief",
+    "visual": {
+     "card": null,
+     "prompt": "Dreamlike panel: the family and a suited fund manager rowing together in one small wooden boat on a calm river at sunrise, everyone smiling, sharing the same oars",
+     "type": "art"
+    },
+    "vo": "Unka logic seedha tha, hum kamayenge tabhi fund wale kamayenge."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "What really happened",
+    "visual": {
+     "card": null,
+     "prompt": "A grand fund-house office building in daylight, long lines of small families walking up its steps carrying coin jars, the vault doors inside glowing gold, busy and impressive",
+     "type": "art"
+    },
+    "vo": "Nippon Life India lakhon logon ki SIP sambhalti hai. Andaza tha, July-September ka munafa 4.22 billion rupaye."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "The cost",
+    "visual": {
+     "card": null,
+     "prompt": "A big family coin jar with a small ticking meter attached, a steady trickle of coins dripping into the fund house vault, behind it a stormy sky with a jagged up and down line, the meter never stops",
+     "type": "art"
+    },
+    "vo": "Pichhle saal se 22.3 percent zyada. Kyunki fees har din kat-ti hai, market gire ya chadhe."
+   },
+   {
+    "facts_used": [],
+    "label": "The twist",
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt at the dinner table holding a magnifying glass over a printed fund statement, WIFE and PAPA leaning in, surprised, night, warm light",
+     "type": "art"
+    },
+    "vo": "Aap partner nahi, customer ho. Expense ratio dekho, yaani saal bhar ki fees. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Send",
+    "visual": {
+     "card": null,
+     "prompt": "Two young friends at a roadside chai stall in the evening, one explaining with open hands, the other wide-eyed and laughing in realisation, steam rising from glasses",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo sochta hai fund wale bhi saath doobte hain."
+   }
+  ],
+  "thumbnail": {
+   "name": "SIP",
+   "name_hi": "एसआईपी",
+   "scene": "A giant glass fund-house tower sucking streams of gold coins out of thousands of tiny homes below, while a red stock line crashes across the stormy sky behind it.",
+   "words": [
+    "22.3%",
+    "SECRET"
+   ],
+   "words_hi": [
+    "22.3%",
+    "सीक्रेट"
+   ]
+  },
+  "title": "SIP giri, phir bhi *fund house* jeeta? 💰"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  4.01,
+  10.9,
+  18.47,
+  22.92,
+  30.97,
+  38.18,
+  46.27
+ ],
+ "topic": {
+  "id": "2026-10-25-sglearning-short#second",
+  "link": "https://www.livemint.com/market/stock-market-news/q2-results-2026-today-schedule-swiggy-adani-energy-hpcl-53-more-firms-to-declare-quarterly-earnings-oct-22-tue-list-11792636869326.html",
+  "look": "claymation",
+  "published": "2026-10-22T03:18:04+00:00",
+  "rank": 3,
+  "remake_kind": "weak",
+  "remake_note": "A SECOND CHANCE for a topic whose first Reel few people watched (it had 3 views). Same sourced facts, but a NEW angle: a sharper opening question, a different first picture, a different story moment. Never reuse its lines or its title.",
+  "remake_of": "2026-10-25-sglearning-short",
+  "remake_views": 3,
+  "source": "Mint Markets",
+  "summary": "Q2 results 2026 today, schedule: Key companies set to declare their quarterly earnings today include Swiggy, Adani Energy Solutions, Hindustan Petroleum Corporation, Adani Total Gas, Colgate Palmolive (India).",
+  "target_minutes": null,
+  "title": "Q2 results 2026 today, schedule: Swiggy, Adani Energy, HPCL 53 more firms to declare quarterly earnings; Oct 22 Tue list",
+  "voice": "voice_g8azc8xcwhlu"
+ },
+ "updated": "2026-11-01T07:48:01+00:00",
+ "writer": "claude"
+}
