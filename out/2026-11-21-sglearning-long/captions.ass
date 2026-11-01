@@ -1,0 +1,462 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,86,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.13,Default,,0,0,0,,50 lakh ka ghar,
+Dialogue: 0,0:00:01.13,0:00:02.48,Default,,0,0,0,,aur bill 1 crore ka.
+Dialogue: 0,0:00:02.48,0:00:03.83,Default,,0,0,0,,Yeh koi galti nahi,
+Dialogue: 0,0:00:03.83,0:00:05.63,Default,,0,0,0,,20 saal ke home loan ka
+Dialogue: 0,0:00:05.63,0:00:06.76,Default,,0,0,0,,seedha hisaab hai.
+Dialogue: 0,0:00:06.76,0:00:08.34,Default,,0,0,0,,Jo flat aap 50 lakh mein
+Dialogue: 0,0:00:08.34,0:00:09.01,Default,,0,0,0,,lete ho,
+Dialogue: 0,0:00:09.01,0:00:11.04,Default,,0,0,0,,uske lagbhag double aap bank ko
+Dialogue: 0,0:00:11.04,0:00:11.71,Default,,0,0,0,,dete ho.
+Dialogue: 0,0:00:11.71,0:00:13.52,Default,,0,0,0,,Aur sabse ajeeb baat yeh hai,
+Dialogue: 0,0:00:13.52,0:00:15.32,Default,,0,0,0,,ki pehle kai saal ghar asal
+Dialogue: 0,0:00:15.32,0:00:17.12,Default,,0,0,0,,mein aapka hota hi nahi.
+Dialogue: 0,0:00:17.57,0:00:19.87,Default,,0,0,0,,Amit aur Neha ki kahani suniye.
+Dialogue: 0,0:00:19.87,0:00:21.33,Default,,0,0,0,,Dono naukri karte hain,
+Dialogue: 0,0:00:21.33,0:00:23.00,Default,,0,0,0,,ghar mein ek chhoti beti hai.
+Dialogue: 0,0:00:23.00,0:00:24.89,Default,,0,0,0,,Kiraaye ke ghar mein makaan maalik
+Dialogue: 0,0:00:24.89,0:00:26.77,Default,,0,0,0,,har saal kiraya badha deta tha.
+Dialogue: 0,0:00:26.77,0:00:28.23,Default,,0,0,0,,Ek shaam Neha ne kaha,
+Dialogue: 0,0:00:28.23,0:00:28.44,Default,,0,0,0,,bas,
+Dialogue: 0,0:00:28.44,0:00:29.69,Default,,0,0,0,,ab apna ghar lenge.
+Dialogue: 0,0:00:29.69,0:00:31.16,Default,,0,0,0,,Papa ne bhi haan mein haan
+Dialogue: 0,0:00:31.16,0:00:31.57,Default,,0,0,0,,milayi,
+Dialogue: 0,0:00:31.57,0:00:33.04,Default,,0,0,0,,kiraaya bekaar jaata hai,
+Dialogue: 0,0:00:33.04,0:00:34.29,Default,,0,0,0,,EMI toh apni hai.
+Dialogue: 0,0:00:34.74,0:00:36.75,Default,,0,0,0,,Bank mein Bank Uncle ne file
+Dialogue: 0,0:00:36.75,0:00:37.26,Default,,0,0,0,,kholi,
+Dialogue: 0,0:00:37.26,0:00:39.27,Default,,0,0,0,,aur bade aaram se samjhaya.
+Dialogue: 0,0:00:39.27,0:00:40.53,Default,,0,0,0,,Loan 50 lakh ka,
+Dialogue: 0,0:00:40.53,0:00:41.79,Default,,0,0,0,,20 saal ke liye,
+Dialogue: 0,0:00:41.79,0:00:43.05,Default,,0,0,0,,8 percent byaaj par.
+Dialogue: 0,0:00:43.05,0:00:46.07,Default,,0,0,0,,Har mahine EMI banegi 41,822 rupaye.
+Dialogue: 0,0:00:46.07,0:00:48.09,Default,,0,0,0,,Amit ne salary dekhi,
+Dialogue: 0,0:00:48.09,0:00:49.60,Default,,0,0,0,,mann mein hisaab lagaya,
+Dialogue: 0,0:00:49.60,0:00:49.85,Default,,0,0,0,,haan,
+Dialogue: 0,0:00:49.85,0:00:50.60,Default,,0,0,0,,ho jaayega.
+Dialogue: 0,0:00:50.60,0:00:51.86,Default,,0,0,0,,Signature hue,
+Dialogue: 0,0:00:51.86,0:00:53.88,Default,,0,0,0,,aur kuch hafton mein chaabi haath
+Dialogue: 0,0:00:53.88,0:00:54.38,Default,,0,0,0,,mein thi.
+Dialogue: 0,0:00:54.83,0:00:56.57,Default,,0,0,0,,Grihapravesh ke din sab khush the.
+Dialogue: 0,0:00:56.57,0:00:57.93,Default,,0,0,0,,Mummy ne mithai baanti,
+Dialogue: 0,0:00:57.93,0:00:59.87,Default,,0,0,0,,beti naye kamre mein idhar udhar
+Dialogue: 0,0:00:59.87,0:01:00.64,Default,,0,0,0,,daud rahi thi.
+Dialogue: 0,0:01:00.64,0:01:02.38,Default,,0,0,0,,Kisi ne yeh nahi poocha ki
+Dialogue: 0,0:01:02.38,0:01:04.32,Default,,0,0,0,,20 saal mein total kitna jaayega.
+Dialogue: 0,0:01:04.32,0:01:06.84,Default,,0,0,0,,Kyunki EMI hamesha chhota number lagta
+Dialogue: 0,0:01:06.84,0:01:07.03,Default,,0,0,0,,hai.
+Dialogue: 0,0:01:07.03,0:01:08.58,Default,,0,0,0,,Total woh number hai jo neend
+Dialogue: 0,0:01:08.58,0:01:09.55,Default,,0,0,0,,uda deta hai.
+Dialogue: 0,0:01:10.00,0:01:10.72,Default,,0,0,0,,3 saal baad,
+Dialogue: 0,0:01:10.72,0:01:12.66,Default,,0,0,0,,Amit ne pehli baar dhyaan se
+Dialogue: 0,0:01:12.66,0:01:14.11,Default,,0,0,0,,loan statement khola.
+Dialogue: 0,0:01:14.11,0:01:15.32,Default,,0,0,0,,Woh hairaan reh gaya.
+Dialogue: 0,0:01:15.32,0:01:17.97,Default,,0,0,0,,Itne mahine EMI bhar chuka tha,
+Dialogue: 0,0:01:17.97,0:01:19.91,Default,,0,0,0,,par udhaar bas thoda sa kam
+Dialogue: 0,0:01:19.91,0:01:20.39,Default,,0,0,0,,hua tha.
+Dialogue: 0,0:01:20.39,0:01:21.36,Default,,0,0,0,,Usne socha,
+Dialogue: 0,0:01:21.36,0:01:23.53,Default,,0,0,0,,kahin bank ne galti toh nahi
+Dialogue: 0,0:01:23.53,0:01:23.78,Default,,0,0,0,,ki?
+Dialogue: 0,0:01:23.78,0:01:24.98,Default,,0,0,0,,Galti nahi thi,
+Dialogue: 0,0:01:24.98,0:01:27.16,Default,,0,0,0,,home loan ka design hi aisa
+Dialogue: 0,0:01:27.16,0:01:27.40,Default,,0,0,0,,hai.
+Dialogue: 0,0:01:27.85,0:01:28.96,Default,,0,0,0,,Toh aaj 3 sawaal.
+Dialogue: 0,0:01:28.96,0:01:29.41,Default,,0,0,0,,Pehla,
+Dialogue: 0,0:01:29.41,0:01:31.63,Default,,0,0,0,,EMI ke andar asal mein hota
+Dialogue: 0,0:01:31.63,0:01:32.07,Default,,0,0,0,,kya hai?
+Dialogue: 0,0:01:32.07,0:01:32.52,Default,,0,0,0,,Doosra,
+Dialogue: 0,0:01:32.52,0:01:34.07,Default,,0,0,0,,pehle 5 saal mein ghar ka
+Dialogue: 0,0:01:34.07,0:01:36.29,Default,,0,0,0,,kitna hissa sach mein aapka hota
+Dialogue: 0,0:01:36.29,0:01:36.52,Default,,0,0,0,,hai?
+Dialogue: 0,0:01:36.52,0:01:36.96,Default,,0,0,0,,Teesra,
+Dialogue: 0,0:01:36.96,0:01:38.74,Default,,0,0,0,,saal mein sirf 1 extra EMI
+Dialogue: 0,0:01:38.74,0:01:40.52,Default,,0,0,0,,dene se kitna bachta hai?
+Dialogue: 0,0:01:40.52,0:01:41.41,Default,,0,0,0,,Aur aakhir mein,
+Dialogue: 0,0:01:41.41,0:01:43.18,Default,,0,0,0,,woh haq jo bank aksar nahi
+Dialogue: 0,0:01:43.18,0:01:43.85,Default,,0,0,0,,batata.
+Dialogue: 0,0:01:44.30,0:01:45.17,Default,,0,0,0,,Pehla sawaal,
+Dialogue: 0,0:01:45.17,0:01:46.04,Default,,0,0,0,,EMI hai kya?
+Dialogue: 0,0:01:46.04,0:01:48.21,Default,,0,0,0,,EMI yaani har mahine ki fix
+Dialogue: 0,0:01:48.21,0:01:48.43,Default,,0,0,0,,kisht,
+Dialogue: 0,0:01:48.43,0:01:49.95,Default,,0,0,0,,jo aap bank ko dete ho.
+Dialogue: 0,0:01:49.95,0:01:52.13,Default,,0,0,0,,Har EMI ke andar principal bhi
+Dialogue: 0,0:01:52.13,0:01:52.35,Default,,0,0,0,,hai,
+Dialogue: 0,0:01:52.35,0:01:53.00,Default,,0,0,0,,aur byaaj bhi.
+Dialogue: 0,0:01:53.00,0:01:54.96,Default,,0,0,0,,Principal yaani asli udhaar,
+Dialogue: 0,0:01:54.96,0:01:56.26,Default,,0,0,0,,jo aapne bank se liya.
+Dialogue: 0,0:01:56.26,0:01:58.22,Default,,0,0,0,,Byaaj yaani us udhaar ka kiraya,
+Dialogue: 0,0:01:58.22,0:01:59.74,Default,,0,0,0,,jo bank aapse leta hai.
+Dialogue: 0,0:02:00.19,0:02:02.25,Default,,0,0,0,,Ab sabse zaroori baat suniye.
+Dialogue: 0,0:02:02.25,0:02:04.09,Default,,0,0,0,,Bank byaaj kis par lagata hai?
+Dialogue: 0,0:02:04.09,0:02:06.15,Default,,0,0,0,,Us udhaar par jo abhi baaki
+Dialogue: 0,0:02:06.15,0:02:06.38,Default,,0,0,0,,hai.
+Dialogue: 0,0:02:06.38,0:02:08.68,Default,,0,0,0,,Shuru mein poore 50 lakh baaki
+Dialogue: 0,0:02:08.68,0:02:08.91,Default,,0,0,0,,hain,
+Dialogue: 0,0:02:08.91,0:02:10.74,Default,,0,0,0,,toh byaaj bhi poore 50 lakh
+Dialogue: 0,0:02:10.74,0:02:10.97,Default,,0,0,0,,par.
+Dialogue: 0,0:02:10.97,0:02:13.26,Default,,0,0,0,,Isliye pehli EMI ka zyada tar
+Dialogue: 0,0:02:13.26,0:02:15.56,Default,,0,0,0,,hissa seedha byaaj mein chala jaata
+Dialogue: 0,0:02:15.56,0:02:15.79,Default,,0,0,0,,hai.
+Dialogue: 0,0:02:15.79,0:02:17.62,Default,,0,0,0,,Ghar ke udhaar mein bahut kam
+Dialogue: 0,0:02:17.62,0:02:18.31,Default,,0,0,0,,jaata hai.
+Dialogue: 0,0:02:18.76,0:02:20.66,Default,,0,0,0,,Neha ne isse ghar ke budget
+Dialogue: 0,0:02:20.66,0:02:21.72,Default,,0,0,0,,ki tarah samjha.
+Dialogue: 0,0:02:21.72,0:02:23.40,Default,,0,0,0,,Mez par 41,822 rupaye ki gaddi
+Dialogue: 0,0:02:23.40,0:02:23.82,Default,,0,0,0,,rakho.
+Dialogue: 0,0:02:23.82,0:02:25.51,Default,,0,0,0,,Bank pehle us mein se apna
+Dialogue: 0,0:02:25.51,0:02:26.78,Default,,0,0,0,,byaaj utha leta hai.
+Dialogue: 0,0:02:26.78,0:02:27.62,Default,,0,0,0,,Jo bachta hai,
+Dialogue: 0,0:02:27.62,0:02:29.74,Default,,0,0,0,,sirf wahi aapka udhaar kam karta
+Dialogue: 0,0:02:29.74,0:02:29.95,Default,,0,0,0,,hai.
+Dialogue: 0,0:02:29.95,0:02:31.84,Default,,0,0,0,,Shuru ke saalon mein yeh bacha
+Dialogue: 0,0:02:31.84,0:02:32.48,Default,,0,0,0,,hua hissa,
+Dialogue: 0,0:02:32.48,0:02:34.59,Default,,0,0,0,,gaddi ka chhota sa kona hota
+Dialogue: 0,0:02:34.59,0:02:34.80,Default,,0,0,0,,hai.
+Dialogue: 0,0:02:35.25,0:02:37.38,Default,,0,0,0,,Jaise jaise udhaar thoda kam hota
+Dialogue: 0,0:02:37.38,0:02:37.57,Default,,0,0,0,,hai,
+Dialogue: 0,0:02:37.57,0:02:39.13,Default,,0,0,0,,byaaj bhi thoda kam hota hai.
+Dialogue: 0,0:02:39.13,0:02:40.68,Default,,0,0,0,,Par EMI wahi rehti hai.
+Dialogue: 0,0:02:40.68,0:02:43.00,Default,,0,0,0,,Toh har mahine principal wala hissa
+Dialogue: 0,0:02:43.00,0:02:44.55,Default,,0,0,0,,thoda sa badhta jaata hai.
+Dialogue: 0,0:02:44.55,0:02:45.52,Default,,0,0,0,,Shuru mein boond boond,
+Dialogue: 0,0:02:45.52,0:02:47.26,Default,,0,0,0,,aakhri saalon mein poori dhaara.
+Dialogue: 0,0:02:47.26,0:02:49.98,Default,,0,0,0,,Isi schedule ko amortisation kehte hain,
+Dialogue: 0,0:02:49.98,0:02:52.30,Default,,0,0,0,,yaani udhaar dheere dheere utarne ka
+Dialogue: 0,0:02:52.30,0:02:52.69,Default,,0,0,0,,naksha.
+Dialogue: 0,0:02:53.14,0:02:54.53,Default,,0,0,0,,Ise rang se samjho.
+Dialogue: 0,0:02:54.53,0:02:55.46,Default,,0,0,0,,Laal yaani byaaj,
+Dialogue: 0,0:02:55.46,0:02:57.09,Default,,0,0,0,,hara yaani principal.
+Dialogue: 0,0:02:57.09,0:02:59.18,Default,,0,0,0,,Shuru ke saalon mein har EMI
+Dialogue: 0,0:02:59.18,0:03:00.80,Default,,0,0,0,,zyada tar laal hoti hai.
+Dialogue: 0,0:03:00.80,0:03:03.13,Default,,0,0,0,,Aakhri saalon mein zyada tar hari.
+Dialogue: 0,0:03:03.13,0:03:05.22,Default,,0,0,0,,Matlab bank ki kamaai shuru mein
+Dialogue: 0,0:03:05.22,0:03:05.91,Default,,0,0,0,,hoti hai.
+Dialogue: 0,0:03:05.91,0:03:08.00,Default,,0,0,0,,Aur ghar aapka aakhir mein jaakar
+Dialogue: 0,0:03:08.00,0:03:08.70,Default,,0,0,0,,banta hai.
+Dialogue: 0,0:03:09.15,0:03:11.40,Default,,0,0,0,,Kirane ki dukaan ka udhaar socho.
+Dialogue: 0,0:03:11.40,0:03:12.42,Default,,0,0,0,,Shopkeeper kahe,
+Dialogue: 0,0:03:12.42,0:03:14.67,Default,,0,0,0,,har mahine pehle main byaaj kaatunga,
+Dialogue: 0,0:03:14.67,0:03:16.72,Default,,0,0,0,,phir baaki se khaata kam karunga.
+Dialogue: 0,0:03:16.72,0:03:17.53,Default,,0,0,0,,Aap kahoge,
+Dialogue: 0,0:03:17.53,0:03:18.97,Default,,0,0,0,,yeh toh ulta hisaab hai.
+Dialogue: 0,0:03:18.97,0:03:20.81,Default,,0,0,0,,Par home loan mein bilkul yahi
+Dialogue: 0,0:03:20.81,0:03:21.42,Default,,0,0,0,,hota hai.
+Dialogue: 0,0:03:21.42,0:03:22.24,Default,,0,0,0,,Fark itna hai,
+Dialogue: 0,0:03:22.24,0:03:23.87,Default,,0,0,0,,ki yahan sab kuch pehle se
+Dialogue: 0,0:03:23.87,0:03:25.51,Default,,0,0,0,,kaagaz par likha hota hai.
+Dialogue: 0,0:03:25.96,0:03:27.74,Default,,0,0,0,,Ab total jodte hain.
+Dialogue: 0,0:03:27.74,0:03:28.63,Default,,0,0,0,,41,822 rupaye,
+Dialogue: 0,0:03:28.63,0:03:29.81,Default,,0,0,0,,har mahine,
+Dialogue: 0,0:03:29.81,0:03:31.59,Default,,0,0,0,,poore 20 saal tak.
+Dialogue: 0,0:03:31.59,0:03:34.26,Default,,0,0,0,,Jodo toh bill lagbhag 1 crore
+Dialogue: 0,0:03:34.26,0:03:35.44,Default,,0,0,0,,ka banta hai.
+Dialogue: 0,0:03:35.44,0:03:37.52,Default,,0,0,0,,Yaani 50 lakh ghar ke,
+Dialogue: 0,0:03:37.52,0:03:39.89,Default,,0,0,0,,aur lagbhag utna hi sirf byaaj.
+Dialogue: 0,0:03:39.89,0:03:41.67,Default,,0,0,0,,Yahi hai woh double,
+Dialogue: 0,0:03:41.67,0:03:44.33,Default,,0,0,0,,jiski baat humne shuru mein ki
+Dialogue: 0,0:03:44.33,0:03:44.63,Default,,0,0,0,,thi.
+Dialogue: 0,0:03:44.63,0:03:47.00,Default,,0,0,0,,Aur yahi hai bank ki kamaai.
+Dialogue: 0,0:03:47.45,0:03:49.36,Default,,0,0,0,,Amit ne yeh hisaab Papa ko
+Dialogue: 0,0:03:49.36,0:03:49.78,Default,,0,0,0,,dikhaya.
+Dialogue: 0,0:03:49.78,0:03:51.26,Default,,0,0,0,,Papa kuch der chup rahe,
+Dialogue: 0,0:03:51.26,0:03:51.90,Default,,0,0,0,,phir bole,
+Dialogue: 0,0:03:51.90,0:03:53.81,Default,,0,0,0,,isiliye hum loan se darte the.
+Dialogue: 0,0:03:53.81,0:03:54.87,Default,,0,0,0,,Amit ne kaha,
+Dialogue: 0,0:03:54.87,0:03:55.29,Default,,0,0,0,,Papa,
+Dialogue: 0,0:03:55.29,0:03:56.35,Default,,0,0,0,,darna nahi hai,
+Dialogue: 0,0:03:56.35,0:03:57.20,Default,,0,0,0,,samajhna hai.
+Dialogue: 0,0:03:57.20,0:03:58.47,Default,,0,0,0,,Loan bura nahi hai,
+Dialogue: 0,0:03:58.47,0:03:59.53,Default,,0,0,0,,ghar zaroori hai.
+Dialogue: 0,0:03:59.53,0:04:01.86,Default,,0,0,0,,Bina samjhe 20 saal chalne dena,
+Dialogue: 0,0:04:01.86,0:04:03.13,Default,,0,0,0,,woh mehnga padta hai.
+Dialogue: 0,0:04:03.58,0:04:04.53,Default,,0,0,0,,Doosra sawaal.
+Dialogue: 0,0:04:04.53,0:04:06.42,Default,,0,0,0,,Pehle 5 saal ki EMI ke
+Dialogue: 0,0:04:06.42,0:04:06.65,Default,,0,0,0,,baad,
+Dialogue: 0,0:04:06.65,0:04:08.78,Default,,0,0,0,,ghar ka kitna hissa aapka hua?
+Dialogue: 0,0:04:08.78,0:04:10.44,Default,,0,0,0,,Zyada tar log sochte hain,
+Dialogue: 0,0:04:10.44,0:04:11.85,Default,,0,0,0,,5 saal EMI bhari,
+Dialogue: 0,0:04:11.85,0:04:13.98,Default,,0,0,0,,toh achha khaasa ghar apna ho
+Dialogue: 0,0:04:13.98,0:04:14.22,Default,,0,0,0,,gaya.
+Dialogue: 0,0:04:14.22,0:04:15.40,Default,,0,0,0,,Hisaab se dekho,
+Dialogue: 0,0:04:15.40,0:04:17.05,Default,,0,0,0,,toh sach kaafi alag hai.
+Dialogue: 0,0:04:17.05,0:04:18.94,Default,,0,0,0,,Aur yeh sach thoda chubhta bhi
+Dialogue: 0,0:04:18.94,0:04:19.18,Default,,0,0,0,,hai.
+Dialogue: 0,0:04:19.63,0:04:21.31,Default,,0,0,0,,Pehle 5 saal mein aap bahut
+Dialogue: 0,0:04:21.31,0:04:22.79,Default,,0,0,0,,saari EMI bharte ho.
+Dialogue: 0,0:04:22.79,0:04:24.68,Default,,0,0,0,,Par unka zyada tar paisa byaaj
+Dialogue: 0,0:04:24.68,0:04:25.53,Default,,0,0,0,,mein jaata hai.
+Dialogue: 0,0:04:25.53,0:04:27.42,Default,,0,0,0,,Asli udhaar bas thoda sa kam
+Dialogue: 0,0:04:27.42,0:04:28.05,Default,,0,0,0,,hota hai.
+Dialogue: 0,0:04:28.05,0:04:29.53,Default,,0,0,0,,Ghar ko tasveer mein socho,
+Dialogue: 0,0:04:29.53,0:04:30.79,Default,,0,0,0,,toh 5 saal baad bhi bas
+Dialogue: 0,0:04:30.79,0:04:32.06,Default,,0,0,0,,ek kona aapka hai.
+Dialogue: 0,0:04:32.06,0:04:33.53,Default,,0,0,0,,Baaki ghar ab bhi bank ke
+Dialogue: 0,0:04:33.53,0:04:33.95,Default,,0,0,0,,naam hai.
+Dialogue: 0,0:04:34.40,0:04:36.36,Default,,0,0,0,,Neha ne loan statement ka har
+Dialogue: 0,0:04:36.36,0:04:37.66,Default,,0,0,0,,page dhyaan se padha.
+Dialogue: 0,0:04:37.66,0:04:39.62,Default,,0,0,0,,Har mahine ki line mein byaaj
+Dialogue: 0,0:04:39.62,0:04:40.71,Default,,0,0,0,,alag likha tha,
+Dialogue: 0,0:04:40.71,0:04:41.79,Default,,0,0,0,,principal alag.
+Dialogue: 0,0:04:41.79,0:04:43.75,Default,,0,0,0,,Shuru ke saalon mein byaaj wali
+Dialogue: 0,0:04:43.75,0:04:45.27,Default,,0,0,0,,line har baar badi thi.
+Dialogue: 0,0:04:45.27,0:04:46.58,Default,,0,0,0,,Us din usne samjha,
+Dialogue: 0,0:04:46.58,0:04:48.54,Default,,0,0,0,,EMI bharna aur loan chukana,
+Dialogue: 0,0:04:48.54,0:04:49.84,Default,,0,0,0,,same baat nahi hai.
+Dialogue: 0,0:04:50.29,0:04:52.11,Default,,0,0,0,,Yeh baat tab sabse zyada chubhti
+Dialogue: 0,0:04:52.11,0:04:53.52,Default,,0,0,0,,hai jab plan badalta hai.
+Dialogue: 0,0:04:53.52,0:04:54.94,Default,,0,0,0,,Maan lo 5 saal baad naukri
+Dialogue: 0,0:04:54.94,0:04:56.35,Default,,0,0,0,,doosre shehar mein lagi.
+Dialogue: 0,0:04:56.35,0:04:57.36,Default,,0,0,0,,Ghar bechna pada.
+Dialogue: 0,0:04:57.36,0:04:58.98,Default,,0,0,0,,Tab pata chalta hai ki bank
+Dialogue: 0,0:04:58.98,0:05:01.00,Default,,0,0,0,,ko abhi bhi lagbhag poora udhaar
+Dialogue: 0,0:05:01.00,0:05:01.81,Default,,0,0,0,,lautana hai.
+Dialogue: 0,0:05:01.81,0:05:03.63,Default,,0,0,0,,Itne saal ki EMI ka bada
+Dialogue: 0,0:05:03.63,0:05:04.03,Default,,0,0,0,,hissa,
+Dialogue: 0,0:05:04.03,0:05:05.65,Default,,0,0,0,,byaaj ban kar ja chuka hota
+Dialogue: 0,0:05:05.65,0:05:05.85,Default,,0,0,0,,hai.
+Dialogue: 0,0:05:06.30,0:05:07.19,Default,,0,0,0,,Ab ek aur cheez,
+Dialogue: 0,0:05:07.19,0:05:09.41,Default,,0,0,0,,jo zyada tar log nahi samajhte,
+Dialogue: 0,0:05:09.41,0:05:10.30,Default,,0,0,0,,floating rate.
+Dialogue: 0,0:05:10.30,0:05:12.52,Default,,0,0,0,,Floating rate yaani byaaj fix nahi
+Dialogue: 0,0:05:12.52,0:05:12.74,Default,,0,0,0,,hai.
+Dialogue: 0,0:05:12.74,0:05:14.96,Default,,0,0,0,,Yeh upar neeche hota rehta hai,
+Dialogue: 0,0:05:14.96,0:05:16.74,Default,,0,0,0,,RBI ke repo rate ke saath.
+Dialogue: 0,0:05:16.74,0:05:18.52,Default,,0,0,0,,Repo rate yaani woh byaaj,
+Dialogue: 0,0:05:18.52,0:05:20.07,Default,,0,0,0,,jis par RBI banks ko paisa
+Dialogue: 0,0:05:20.07,0:05:20.74,Default,,0,0,0,,deta hai.
+Dialogue: 0,0:05:20.74,0:05:21.40,Default,,0,0,0,,Woh badhe,
+Dialogue: 0,0:05:21.40,0:05:23.18,Default,,0,0,0,,toh aapka byaaj bhi badhta hai.
+Dialogue: 0,0:05:23.63,0:05:24.86,Default,,0,0,0,,Jab byaaj badhta hai,
+Dialogue: 0,0:05:24.86,0:05:27.31,Default,,0,0,0,,toh bank aksar aapki EMI nahi
+Dialogue: 0,0:05:27.31,0:05:28.05,Default,,0,0,0,,badhata.
+Dialogue: 0,0:05:28.05,0:05:30.02,Default,,0,0,0,,Woh chupchaap loan ke saal badha
+Dialogue: 0,0:05:30.02,0:05:30.75,Default,,0,0,0,,deta hai.
+Dialogue: 0,0:05:30.75,0:05:32.72,Default,,0,0,0,,Aapko lagta hai sab theek hai,
+Dialogue: 0,0:05:32.72,0:05:34.19,Default,,0,0,0,,EMI toh wahi hai.
+Dialogue: 0,0:05:34.19,0:05:36.40,Default,,0,0,0,,Par loan ke peeche aur mahine
+Dialogue: 0,0:05:36.40,0:05:36.89,Default,,0,0,0,,jud gaye.
+Dialogue: 0,0:05:36.89,0:05:38.86,Default,,0,0,0,,Aur har naye mahine ke saath,
+Dialogue: 0,0:05:38.86,0:05:39.35,Default,,0,0,0,,aur byaaj.
+Dialogue: 0,0:05:39.80,0:05:41.44,Default,,0,0,0,,Amit ne ek din Bank Uncle
+Dialogue: 0,0:05:41.44,0:05:42.05,Default,,0,0,0,,se poocha,
+Dialogue: 0,0:05:42.05,0:05:43.90,Default,,0,0,0,,mera loan ab khatam kab hoga?
+Dialogue: 0,0:05:43.90,0:05:45.33,Default,,0,0,0,,Jawab sun kar woh chaunk gaya.
+Dialogue: 0,0:05:45.33,0:05:46.36,Default,,0,0,0,,Byaaj badhne ke baad,
+Dialogue: 0,0:05:46.36,0:05:48.61,Default,,0,0,0,,aakhri tareekh aage khisak chuki thi.
+Dialogue: 0,0:05:48.61,0:05:50.66,Default,,0,0,0,,Kisi ne phone karke yeh nahi
+Dialogue: 0,0:05:50.66,0:05:51.27,Default,,0,0,0,,bataya tha.
+Dialogue: 0,0:05:51.27,0:05:53.12,Default,,0,0,0,,Yeh cheez aapko khud dekhni padti
+Dialogue: 0,0:05:53.12,0:05:53.32,Default,,0,0,0,,hai.
+Dialogue: 0,0:05:53.77,0:05:55.17,Default,,0,0,0,,Toh aapke liye seedhi baat.
+Dialogue: 0,0:05:55.17,0:05:57.18,Default,,0,0,0,,Har saal apna loan statement zaroor
+Dialogue: 0,0:05:57.18,0:05:57.78,Default,,0,0,0,,nikalo.
+Dialogue: 0,0:05:57.78,0:05:59.99,Default,,0,0,0,,Dekho kitna asli udhaar baaki hai.
+Dialogue: 0,0:05:59.99,0:06:01.79,Default,,0,0,0,,Aur dekho loan khatam kab hoga.
+Dialogue: 0,0:06:01.79,0:06:03.40,Default,,0,0,0,,Agar yeh tareekh saal dar saal
+Dialogue: 0,0:06:03.40,0:06:04.80,Default,,0,0,0,,aage khisak rahi hai,
+Dialogue: 0,0:06:04.80,0:06:06.40,Default,,0,0,0,,toh samjho byaaj ka meter tez
+Dialogue: 0,0:06:06.40,0:06:07.21,Default,,0,0,0,,chal raha hai.
+Dialogue: 0,0:06:07.21,0:06:08.61,Default,,0,0,0,,Aur ab kuch karne ka waqt
+Dialogue: 0,0:06:08.61,0:06:08.81,Default,,0,0,0,,hai.
+Dialogue: 0,0:06:09.26,0:06:10.27,Default,,0,0,0,,Teesra sawaal,
+Dialogue: 0,0:06:10.27,0:06:11.54,Default,,0,0,0,,aur sabse kaam ka.
+Dialogue: 0,0:06:11.54,0:06:13.57,Default,,0,0,0,,Saal mein sirf 1 extra EMI
+Dialogue: 0,0:06:13.57,0:06:15.35,Default,,0,0,0,,dene se kya hota hai?
+Dialogue: 0,0:06:15.35,0:06:17.38,Default,,0,0,0,,Yaani saal bhar ki EMI ke
+Dialogue: 0,0:06:17.38,0:06:17.89,Default,,0,0,0,,upar,
+Dialogue: 0,0:06:17.89,0:06:19.16,Default,,0,0,0,,bas 1 EMI aur.
+Dialogue: 0,0:06:19.16,0:06:21.44,Default,,0,0,0,,Sunne mein chhoti si baat lagti
+Dialogue: 0,0:06:21.44,0:06:21.69,Default,,0,0,0,,hai.
+Dialogue: 0,0:06:21.69,0:06:23.98,Default,,0,0,0,,Par iska asar dekh kar Amit
+Dialogue: 0,0:06:23.98,0:06:26.26,Default,,0,0,0,,aur Neha dono hairaan reh gaye.
+Dialogue: 0,0:06:26.71,0:06:28.58,Default,,0,0,0,,Neha ko har saal thoda bonus
+Dialogue: 0,0:06:28.58,0:06:29.21,Default,,0,0,0,,milta tha.
+Dialogue: 0,0:06:29.21,0:06:31.08,Default,,0,0,0,,Pehle woh paisa ghoomne ya naye
+Dialogue: 0,0:06:31.08,0:06:32.75,Default,,0,0,0,,gadget mein chala jaata tha.
+Dialogue: 0,0:06:32.75,0:06:34.00,Default,,0,0,0,,Is baar usne socha,
+Dialogue: 0,0:06:34.00,0:06:35.46,Default,,0,0,0,,kyun na isse loan mein daal
+Dialogue: 0,0:06:35.46,0:06:35.67,Default,,0,0,0,,doon?
+Dialogue: 0,0:06:35.67,0:06:37.54,Default,,0,0,0,,Isi ko prepayment kehte hain.
+Dialogue: 0,0:06:37.54,0:06:39.21,Default,,0,0,0,,Yaani tay EMI ke upar,
+Dialogue: 0,0:06:39.21,0:06:41.08,Default,,0,0,0,,apni marzi se udhaar ka kuch
+Dialogue: 0,0:06:41.08,0:06:42.75,Default,,0,0,0,,hissa pehle chuka dena.
+Dialogue: 0,0:06:43.20,0:06:44.77,Default,,0,0,0,,Yeh itna kaam kyun karta hai?
+Dialogue: 0,0:06:44.77,0:06:46.73,Default,,0,0,0,,Kyunki extra paisa byaaj mein nahi
+Dialogue: 0,0:06:46.73,0:06:47.12,Default,,0,0,0,,jaata.
+Dialogue: 0,0:06:47.12,0:06:48.89,Default,,0,0,0,,Woh seedha asli udhaar ko kam
+Dialogue: 0,0:06:48.89,0:06:49.48,Default,,0,0,0,,karta hai.
+Dialogue: 0,0:06:49.48,0:06:50.65,Default,,0,0,0,,Aur jab udhaar kam hua,
+Dialogue: 0,0:06:50.65,0:06:52.42,Default,,0,0,0,,toh agle har mahine ka byaaj
+Dialogue: 0,0:06:52.42,0:06:53.20,Default,,0,0,0,,bhi kam laga.
+Dialogue: 0,0:06:53.20,0:06:54.97,Default,,0,0,0,,Yeh fayda ek baar nahi milta,
+Dialogue: 0,0:06:54.97,0:06:55.75,Default,,0,0,0,,har mahine,
+Dialogue: 0,0:06:55.75,0:06:57.32,Default,,0,0,0,,saalon tak chalta rehta hai.
+Dialogue: 0,0:06:57.77,0:06:59.87,Default,,0,0,0,,Ab ET ka hisaab suniye.
+Dialogue: 0,0:06:59.87,0:07:01.37,Default,,0,0,0,,Loan 50 lakh ka,
+Dialogue: 0,0:07:01.37,0:07:02.57,Default,,0,0,0,,8 percent byaaj,
+Dialogue: 0,0:07:02.57,0:07:03.48,Default,,0,0,0,,20 saal.
+Dialogue: 0,0:07:03.48,0:07:05.88,Default,,0,0,0,,Har saal sirf 1 extra EMI,
+Dialogue: 0,0:07:05.88,0:07:07.38,Default,,0,0,0,,yaani 41,822 rupaye.
+Dialogue: 0,0:07:07.38,0:07:09.48,Default,,0,0,0,,Is se byaaj mein lagbhag 10.17
+Dialogue: 0,0:07:09.48,0:07:11.29,Default,,0,0,0,,lakh rupaye bachte hain.
+Dialogue: 0,0:07:11.29,0:07:12.79,Default,,0,0,0,,Yeh woh paisa hai,
+Dialogue: 0,0:07:12.79,0:07:15.49,Default,,0,0,0,,jo warna seedha bank ki kamaai
+Dialogue: 0,0:07:15.49,0:07:16.09,Default,,0,0,0,,banta.
+Dialogue: 0,0:07:16.54,0:07:17.90,Default,,0,0,0,,Aur sirf paisa nahi,
+Dialogue: 0,0:07:17.90,0:07:19.04,Default,,0,0,0,,waqt bhi bachta hai.
+Dialogue: 0,0:07:19.04,0:07:20.86,Default,,0,0,0,,ET ke hisaab se loan 41
+Dialogue: 0,0:07:20.86,0:07:23.36,Default,,0,0,0,,mahine pehle khatam ho jaata hai.
+Dialogue: 0,0:07:23.36,0:07:25.41,Default,,0,0,0,,Yaani 3 saal 5 mahine kam
+Dialogue: 0,0:07:25.41,0:07:25.86,Default,,0,0,0,,EMI.
+Dialogue: 0,0:07:25.86,0:07:26.32,Default,,0,0,0,,Socho,
+Dialogue: 0,0:07:26.32,0:07:27.45,Default,,0,0,0,,3 saal se zyada,
+Dialogue: 0,0:07:27.45,0:07:29.50,Default,,0,0,0,,har mahine ki kisht ki tension
+Dialogue: 0,0:07:29.50,0:07:29.96,Default,,0,0,0,,nahi.
+Dialogue: 0,0:07:29.96,0:07:32.23,Default,,0,0,0,,Woh paisa tab aapke apne sapnon
+Dialogue: 0,0:07:32.23,0:07:33.14,Default,,0,0,0,,ke kaam aayega.
+Dialogue: 0,0:07:33.59,0:07:35.60,Default,,0,0,0,,Neha ne khud se seedha sawaal
+Dialogue: 0,0:07:35.60,0:07:36.04,Default,,0,0,0,,poocha.
+Dialogue: 0,0:07:36.04,0:07:37.38,Default,,0,0,0,,Bonus gadget mein gaya,
+Dialogue: 0,0:07:37.38,0:07:39.38,Default,,0,0,0,,toh kuch saal mein gadget purana.
+Dialogue: 0,0:07:39.38,0:07:40.94,Default,,0,0,0,,Wahi bonus loan mein gaya,
+Dialogue: 0,0:07:40.94,0:07:42.50,Default,,0,0,0,,toh lakhon ka byaaj bacha,
+Dialogue: 0,0:07:42.50,0:07:43.84,Default,,0,0,0,,aur ghar jaldi apna.
+Dialogue: 0,0:07:43.84,0:07:45.40,Default,,0,0,0,,Faisla mushkil nahi tha.
+Dialogue: 0,0:07:45.40,0:07:47.41,Default,,0,0,0,,Bas pehle kisi ne yeh hisaab
+Dialogue: 0,0:07:47.41,0:07:49.19,Default,,0,0,0,,saamne rakha hi nahi tha.
+Dialogue: 0,0:07:49.64,0:07:51.67,Default,,0,0,0,,Ek saath 41,822 rupaye nikaalna mushkil
+Dialogue: 0,0:07:51.67,0:07:52.07,Default,,0,0,0,,lage,
+Dialogue: 0,0:07:52.07,0:07:53.49,Default,,0,0,0,,toh tareeka simple hai.
+Dialogue: 0,0:07:53.49,0:07:55.51,Default,,0,0,0,,Har mahine EMI ke saath thoda
+Dialogue: 0,0:07:55.51,0:07:56.93,Default,,0,0,0,,sa paisa alag rakh do.
+Dialogue: 0,0:07:56.93,0:07:58.35,Default,,0,0,0,,Saal ke aakhir tak woh 1
+Dialogue: 0,0:07:58.35,0:07:59.97,Default,,0,0,0,,extra EMI ban jaata hai.
+Dialogue: 0,0:07:59.97,0:08:02.00,Default,,0,0,0,,Kuch bank har mahine thoda zyada
+Dialogue: 0,0:08:02.00,0:08:03.82,Default,,0,0,0,,bharne ka option bhi dete hain.
+Dialogue: 0,0:08:03.82,0:08:05.24,Default,,0,0,0,,Apne bank se poochh lena.
+Dialogue: 0,0:08:05.69,0:08:07.14,Default,,0,0,0,,Ab ek zaroori baat.
+Dialogue: 0,0:08:07.14,0:08:09.31,Default,,0,0,0,,Prepayment ke waqt bank poochta hai,
+Dialogue: 0,0:08:09.31,0:08:11.25,Default,,0,0,0,,EMI kam karein ya saal kam
+Dialogue: 0,0:08:11.25,0:08:11.73,Default,,0,0,0,,karein?
+Dialogue: 0,0:08:11.73,0:08:13.91,Default,,0,0,0,,Zyada tar log EMI kam karwa
+Dialogue: 0,0:08:13.91,0:08:14.63,Default,,0,0,0,,lete hain,
+Dialogue: 0,0:08:14.63,0:08:17.05,Default,,0,0,0,,kyunki haath mein paisa bachta dikhta
+Dialogue: 0,0:08:17.05,0:08:17.29,Default,,0,0,0,,hai.
+Dialogue: 0,0:08:17.29,0:08:19.46,Default,,0,0,0,,Par aksar zyada byaaj tab bachta
+Dialogue: 0,0:08:19.46,0:08:19.70,Default,,0,0,0,,hai,
+Dialogue: 0,0:08:19.70,0:08:21.15,Default,,0,0,0,,jab saal kam hote hain.
+Dialogue: 0,0:08:21.15,0:08:23.33,Default,,0,0,0,,Yeh choice soch samajh kar karna.
+Dialogue: 0,0:08:23.78,0:08:24.45,Default,,0,0,0,,Ab woh baat,
+Dialogue: 0,0:08:24.45,0:08:26.24,Default,,0,0,0,,jo bank counter par aksar zor
+Dialogue: 0,0:08:26.24,0:08:27.80,Default,,0,0,0,,se nahi batayi jaati.
+Dialogue: 0,0:08:27.80,0:08:30.26,Default,,0,0,0,,Bahut log prepayment se isliye darte
+Dialogue: 0,0:08:30.26,0:08:30.49,Default,,0,0,0,,hain,
+Dialogue: 0,0:08:30.49,0:08:32.05,Default,,0,0,0,,ki bank penalty lega.
+Dialogue: 0,0:08:32.05,0:08:34.06,Default,,0,0,0,,Pehle kai loan par aisa hota
+Dialogue: 0,0:08:34.06,0:08:34.51,Default,,0,0,0,,bhi tha.
+Dialogue: 0,0:08:34.51,0:08:35.85,Default,,0,0,0,,Par ab RBI ka saaf niyam
+Dialogue: 0,0:08:35.85,0:08:36.07,Default,,0,0,0,,hai.
+Dialogue: 0,0:08:36.07,0:08:37.64,Default,,0,0,0,,Aur yeh niyam aapke haq mein
+Dialogue: 0,0:08:37.64,0:08:37.86,Default,,0,0,0,,hai.
+Dialogue: 0,0:08:38.31,0:08:39.86,Default,,0,0,0,,RBI ke niyam ke hisaab se,
+Dialogue: 0,0:08:39.86,0:08:41.63,Default,,0,0,0,,aapne apne liye loan liya hai,
+Dialogue: 0,0:08:41.63,0:08:43.18,Default,,0,0,0,,business ke liye nahi.
+Dialogue: 0,0:08:43.18,0:08:44.95,Default,,0,0,0,,Aur loan floating rate par hai.
+Dialogue: 0,0:08:44.95,0:08:46.95,Default,,0,0,0,,Toh bank prepayment ka koi charge
+Dialogue: 0,0:08:46.95,0:08:48.05,Default,,0,0,0,,nahi le sakta.
+Dialogue: 0,0:08:48.05,0:08:49.83,Default,,0,0,0,,Matlab koi penalty nahi.
+Dialogue: 0,0:08:49.83,0:08:50.71,Default,,0,0,0,,Aap jab chaho,
+Dialogue: 0,0:08:50.71,0:08:51.60,Default,,0,0,0,,jitna chaho,
+Dialogue: 0,0:08:51.60,0:08:53.59,Default,,0,0,0,,udhaar pehle chuka sakte ho.
+Dialogue: 0,0:08:54.04,0:08:55.33,Default,,0,0,0,,Yeh naye niyam kin loan par
+Dialogue: 0,0:08:55.33,0:08:55.97,Default,,0,0,0,,lagte hain?
+Dialogue: 0,0:08:55.97,0:08:58.32,Default,,0,0,0,,Jo 1 January 2026 ko ya
+Dialogue: 0,0:08:58.32,0:08:59.39,Default,,0,0,0,,uske baad mile.
+Dialogue: 0,0:08:59.39,0:09:00.89,Default,,0,0,0,,Ya us din ke baad renew
+Dialogue: 0,0:09:00.89,0:09:01.11,Default,,0,0,0,,hue.
+Dialogue: 0,0:09:01.11,0:09:03.25,Default,,0,0,0,,Toh apna loan agreement nikalo,
+Dialogue: 0,0:09:03.25,0:09:04.32,Default,,0,0,0,,aur tareekh dekho.
+Dialogue: 0,0:09:04.32,0:09:04.75,Default,,0,0,0,,Shaq ho,
+Dialogue: 0,0:09:04.75,0:09:06.25,Default,,0,0,0,,toh bank se likh kar poochho.
+Dialogue: 0,0:09:06.25,0:09:07.32,Default,,0,0,0,,Yeh aapka haq hai,
+Dialogue: 0,0:09:07.32,0:09:08.60,Default,,0,0,0,,bank ka ehsaan nahi.
+Dialogue: 0,0:09:09.05,0:09:10.48,Default,,0,0,0,,Ek aur raasta hai,
+Dialogue: 0,0:09:10.48,0:09:11.63,Default,,0,0,0,,refinancing.
+Dialogue: 0,0:09:11.63,0:09:14.49,Default,,0,0,0,,Yaani apna loan kisi doosre bank
+Dialogue: 0,0:09:14.49,0:09:15.63,Default,,0,0,0,,mein shift karna,
+Dialogue: 0,0:09:15.63,0:09:16.78,Default,,0,0,0,,jo kam byaaj de.
+Dialogue: 0,0:09:16.78,0:09:18.50,Default,,0,0,0,,ET ke ek hisaab mein,
+Dialogue: 0,0:09:18.50,0:09:20.79,Default,,0,0,0,,50 lakh ka loan 20 saal
+Dialogue: 0,0:09:20.79,0:09:21.64,Default,,0,0,0,,ke liye tha.
+Dialogue: 0,0:09:21.64,0:09:23.36,Default,,0,0,0,,Byaaj 8.5 se ghat kar 7.5
+Dialogue: 0,0:09:23.36,0:09:24.22,Default,,0,0,0,,percent hua.
+Dialogue: 0,0:09:24.22,0:09:26.23,Default,,0,0,0,,Toh byaaj mein lagbhag 7.47 lakh
+Dialogue: 0,0:09:26.23,0:09:27.37,Default,,0,0,0,,rupaye bache.
+Dialogue: 0,0:09:27.82,0:09:29.32,Default,,0,0,0,,Par shift karne se pehle,
+Dialogue: 0,0:09:29.32,0:09:31.04,Default,,0,0,0,,naye bank ki processing fees aur
+Dialogue: 0,0:09:31.04,0:09:32.75,Default,,0,0,0,,kaagazi kharcha bhi jodo.
+Dialogue: 0,0:09:32.75,0:09:34.25,Default,,0,0,0,,Kai baar purana bank hi,
+Dialogue: 0,0:09:34.25,0:09:34.89,Default,,0,0,0,,poochne par,
+Dialogue: 0,0:09:34.89,0:09:36.18,Default,,0,0,0,,byaaj kam kar deta hai.
+Dialogue: 0,0:09:36.18,0:09:37.90,Default,,0,0,0,,Bas aapko poochna padta hai.
+Dialogue: 0,0:09:37.90,0:09:39.40,Default,,0,0,0,,Jo grahak chup rehta hai,
+Dialogue: 0,0:09:39.40,0:09:41.54,Default,,0,0,0,,uska byaaj aksar wahi rehta hai.
+Dialogue: 0,0:09:41.99,0:09:42.77,Default,,0,0,0,,Ab woh galti,
+Dialogue: 0,0:09:42.77,0:09:44.71,Default,,0,0,0,,jo zyada tar parivaar karte hain.
+Dialogue: 0,0:09:44.71,0:09:46.46,Default,,0,0,0,,Woh EMI ko kiraaye ki tarah
+Dialogue: 0,0:09:46.46,0:09:47.04,Default,,0,0,0,,dekhte hain.
+Dialogue: 0,0:09:47.04,0:09:48.21,Default,,0,0,0,,Har mahine bharo,
+Dialogue: 0,0:09:48.21,0:09:48.79,Default,,0,0,0,,aur bhool jao.
+Dialogue: 0,0:09:48.79,0:09:50.54,Default,,0,0,0,,Statement kabhi nahi khulta,
+Dialogue: 0,0:09:50.54,0:09:52.28,Default,,0,0,0,,prepayment kabhi nahi hota.
+Dialogue: 0,0:09:52.28,0:09:53.64,Default,,0,0,0,,Byaaj ke baare mein bank se
+Dialogue: 0,0:09:53.64,0:09:55.00,Default,,0,0,0,,kabhi baat nahi hoti.
+Dialogue: 0,0:09:55.00,0:09:56.75,Default,,0,0,0,,Aur 20 saal baad pata chalta
+Dialogue: 0,0:09:56.75,0:09:56.95,Default,,0,0,0,,hai,
+Dialogue: 0,0:09:56.95,0:09:58.11,Default,,0,0,0,,ghar double mein pada.
+Dialogue: 0,0:09:58.56,0:09:59.50,Default,,0,0,0,,Toh karein kya?
+Dialogue: 0,0:09:59.50,0:10:01.15,Default,,0,0,0,,Har saal statement dekho.
+Dialogue: 0,0:10:01.15,0:10:03.03,Default,,0,0,0,,Bonus ya extra paisa aaye,
+Dialogue: 0,0:10:03.03,0:10:05.38,Default,,0,0,0,,toh uska kuch hissa prepayment mein
+Dialogue: 0,0:10:05.38,0:10:05.85,Default,,0,0,0,,daalo.
+Dialogue: 0,0:10:05.85,0:10:07.74,Default,,0,0,0,,Prepayment par saal kam karwao.
+Dialogue: 0,0:10:07.74,0:10:08.44,Default,,0,0,0,,Byaaj badhe,
+Dialogue: 0,0:10:08.44,0:10:09.85,Default,,0,0,0,,toh bank se baat karo.
+Dialogue: 0,0:10:09.85,0:10:12.68,Default,,0,0,0,,Par emergency ka paisa alag rakho,
+Dialogue: 0,0:10:12.68,0:10:14.09,Default,,0,0,0,,sab loan mein mat jhonko.
+Dialogue: 0,0:10:14.09,0:10:16.44,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:10:16.89,0:10:18.89,Default,,0,0,0,,Amit aur Neha ka ghar wahi
+Dialogue: 0,0:10:18.89,0:10:19.11,Default,,0,0,0,,hai,
+Dialogue: 0,0:10:19.11,0:10:20.22,Default,,0,0,0,,EMI bhi wahi.
+Dialogue: 0,0:10:20.22,0:10:22.22,Default,,0,0,0,,Bas ab woh andhere mein nahi
+Dialogue: 0,0:10:22.22,0:10:22.89,Default,,0,0,0,,chal rahe.
+Dialogue: 0,0:10:22.89,0:10:24.00,Default,,0,0,0,,Unhe pata hai,
+Dialogue: 0,0:10:24.00,0:10:26.22,Default,,0,0,0,,har EMI ka kitna hissa kahan
+Dialogue: 0,0:10:26.22,0:10:26.89,Default,,0,0,0,,jaata hai.
+Dialogue: 0,0:10:26.89,0:10:28.00,Default,,0,0,0,,Aur yahi fark hai,
+Dialogue: 0,0:10:28.00,0:10:29.33,Default,,0,0,0,,loan lene wale mein,
+Dialogue: 0,0:10:29.33,0:10:31.11,Default,,0,0,0,,aur loan samajhne wale mein.
+Dialogue: 0,0:10:31.11,0:10:31.78,Default,,0,0,0,,Ghar wahi,
+Dialogue: 0,0:10:31.78,0:10:32.89,Default,,0,0,0,,par bill ab chhota.
+Dialogue: 0,0:10:33.34,0:10:35.56,Default,,0,0,0,,Agle video mein baat karenge credit
+Dialogue: 0,0:10:35.56,0:10:36.97,Default,,0,0,0,,card ke minimum due ki,
+Dialogue: 0,0:10:36.97,0:10:38.38,Default,,0,0,0,,aur us jaal ki jo usme
+Dialogue: 0,0:10:38.38,0:10:38.99,Default,,0,0,0,,chhupa hai.
+Dialogue: 0,0:10:38.99,0:10:41.01,Default,,0,0,0,,Par usse pehle aapse ek aasaan
+Dialogue: 0,0:10:41.01,0:10:41.41,Default,,0,0,0,,sawaal.
+Dialogue: 0,0:10:41.41,0:10:43.43,Default,,0,0,0,,Kya aapne kabhi apne home loan
+Dialogue: 0,0:10:43.43,0:10:45.25,Default,,0,0,0,,ka statement khol kar dekha hai?
+Dialogue: 0,0:10:45.25,0:10:45.85,Default,,0,0,0,,Haan ya na,
+Dialogue: 0,0:10:45.85,0:10:46.86,Default,,0,0,0,,comments mein likho.
