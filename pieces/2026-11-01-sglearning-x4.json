@@ -1,0 +1,410 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 384.0,
+   "quote": "Reliance shares: Buy, sell or hold after Q2 results 2026? RIL stock up 384% in 10 yrs! Brokerages advice to investors.",
+   "source_date": "2026-10-31",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/reliance-shares-buy-sell-or-hold-after-q2-results-2026-ril-stock-up-384-in-10-yrs-brokerages-advice-to-investors-11793504303710.html",
+   "text": "Reliance Industries shares have delivered a cumulative return of 384% over the past 10 years, creating substantial wealth for retail investors.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 362268.0,
+   "quote": "Highest ever Revenue at ₹ 362,268 crore, up 27.8% Y-o-Y.",
+   "source_date": "2026-10-30",
+   "source_name": "Reliance Industries Limited",
+   "source_url": "https://www.ril.com/investors/financial-reporting",
+   "text": "Reliance Industries reported its highest-ever consolidated gross revenue of ₹3,62,268 crore for the second quarter of FY27, up 27.8% year-on-year.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "official",
+   "number": 29550.0,
+   "quote": "Quarterly PAT hits new high of ₹ 29,550 crore, up 33.8% Y-o-Y.",
+   "source_date": "2026-10-30",
+   "source_name": "Reliance Industries Limited",
+   "source_url": "https://www.ril.com/investors/financial-reporting",
+   "text": "Quarterly consolidated profit after tax and share of profit from joint ventures and associates reached an all-time high of ₹29,550 crore, rising 33.8% year-on-year.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "official",
+   "number": 62409.0,
+   "quote": "Record quarterly EBITDA at ₹ 62,409 crore, up 23.9% Y-o-Y.",
+   "source_date": "2026-10-30",
+   "source_name": "Reliance Industries Limited",
+   "source_url": "https://www.ril.com/investors/financial-reporting",
+   "text": "Reliance Industries posted a record quarterly consolidated EBITDA of ₹62,409 crore, representing an increase of 23.9% year-on-year.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "official",
+   "number": 25203.0,
+   "quote": "Best ever O2C business performance, EBITDA at ₹ 25,203 crore, up 67.9% Y-o-Y.",
+   "source_date": "2026-10-30",
+   "source_name": "Reliance Industries Limited",
+   "source_url": "https://www.ril.com/investors/financial-reporting",
+   "text": "The Oil-to-Chemicals business recorded its highest-ever performance with EBITDA surging 67.9% year-on-year to ₹25,203 crore.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "official",
+   "number": 40.6,
+   "quote": "Crude price for the quarter increased 40.6%, whereas transportation fuel prices were up 50-78% Y-o-Y.",
+   "source_date": "2026-10-30",
+   "source_name": "Reliance Industries Limited",
+   "source_url": "https://www.ril.com/investors/financial-reporting",
+   "text": "Benchmark crude oil prices climbed 40.6% year-on-year during the quarter, elevating refining cracks while increasing imported fuel costs for domestic consumers.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 218.8,
+   "quote": "During the quarter, Jio's total subscriber base reached 542.4 million, while monthly average revenue per user (ARPU) increased to Rs 218.8.",
+   "source_date": "2026-10-30",
+   "source_name": "Reliance Industries Limited",
+   "source_url": "https://www.ril.com/investors/financial-reporting",
+   "text": "Jio Platforms' monthly average revenue per user increased to ₹218.8, raising recurring mobile and data recharge expenses for household budgets.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 2611.0,
+   "quote": "retail PAT was ₹2,611 crore, down 24.3%.",
+   "source_date": "2026-10-30",
+   "source_name": "Reliance Industries Limited",
+   "source_url": "https://www.ril.com/investors/financial-reporting",
+   "text": "Reliance Retail recorded a quarterly net profit of ₹2,611 crore, down 24.3% year-on-year as it absorbed input inflation and expanded quick-commerce logistics.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "official",
+   "number": 30188.0,
+   "quote": "JPL also completed its Rs 30,188-crore initial public offering on October 28, 2026.",
+   "source_date": "2026-10-30",
+   "source_name": "Reliance Industries Limited",
+   "source_url": "https://www.ril.com/investors/financial-reporting",
+   "text": "Jio Platforms successfully concluded a massive initial public offering of ₹30,188 crore prior to its standalone market listing.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "official",
+   "number": 38153.0,
+   "quote": "Capital Expenditure for the quarter ended 30th September 2026, stood at ₹ 38,153 crore ($ 4.0 billion).",
+   "source_date": "2026-10-30",
+   "source_name": "Reliance Industries Limited",
+   "source_url": "https://www.ril.com/investors/financial-reporting",
+   "text": "Reliance Industries incurred a quarterly capital expenditure of ₹38,153 crore to support retail logistics, new energy projects, and network infrastructure.",
+   "unit": "crore INR"
+  },
+  {
+   "date": "2026-11-01",
+   "label": "reported",
+   "source": "Mint Markets",
+   "text": "Reliance Industries reported record second-quarter FY27 profit of  ₹29,550 crore, up 33.8% year-on-year, as a strong recovery in its oil-to-chemicals business and growth in digital services offset weaker retail earnings. Revenue rose 27.8% to  ₹3,62,268 crore.",
+   "url": "https://www.livemint.com/market/stock-market-news/reliance-shares-buy-sell-or-hold-after-q2-results-2026-ril-stock-up-384-in-10-yrs-brokerages-advice-to-investors-11793504303710.html"
+  }
+ ],
+ "id": "2026-11-01-sglearning-x4",
+ "ids": {
+  "budget": {
+   "day": "2026-10-31",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 0.0,
+   "usd": 0.067598,
+   "voice": 12
+  },
+  "drafts": 1,
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "8qi8yWAU3ZQ"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-01",
+ "reasons": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Reliance ka profit 29,550 crore, ab tak ka sabse bada.\n\nTel saaf karne ka dhandha chala, lekin retail ka profit gira. Petrol aur recharge ka kharcha aapki jeb tak aata hai.\n\nAap index fund ya SIP mein ho toh kaunsa dhandha dum de raha hai, kabhi dekha?\n\nYeh investment advice nahi hai.\n\nUs dost ko bhejo jo sirf Reliance ka share dekhta hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#StockMarketIndia",
+     "#ShareMarket",
+     "#CrudeOil",
+     "#Nifty",
+     "#SIP",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Reliance ka profit 29,550 crore, ab tak ka sabse bada. Par retail ka profit 24.3 percent gira. Aap apne SIP mein dekhte ho ki kaunsa dhandha dum de raha hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Reliance ka profit 29,550 crore, ab tak ka sabse bada. Tel saaf karne ka dhandha chala, lekin dukaanein kamzor rahin, aur petrol aur recharge ka kharcha aapki jeb se judta hai. Index fund ya SIP mein ho toh yeh result samajhna zaroori hai. Us dost ko bhejo jo sirf Reliance ka share dekhta hai.",
+    "tags": [
+     "Reliance",
+     "Reliance profit",
+     "Reliance Q2 results",
+     "RIL share",
+     "Jio",
+     "crude oil",
+     "index fund",
+     "SIP",
+     "stock market India",
+     "paise ki khabar"
+    ],
+    "title": "Reliance profit 29,550 crore: aapko kya?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "₹29,550 cr",
+    "line": "Reliance ka record profit",
+    "source": "Reliance Industries"
+   },
+   {
+    "big_number": "24.3%",
+    "line": "Retail ka profit gira",
+    "source": "Reliance Industries"
+   },
+   {
+    "big_number": "384%",
+    "line": "Share ka ek dashak ka return",
+    "source": "Mint"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Yeh us dost ko bhejo jo sirf Reliance ka share dekhta hai.",
+  "hook": "Reliance ka profit 29,550 crore, ab tak ka sabse bada.",
+  "scenes": [
+   {
+    "facts_used": [
+     2
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "₹29,550 cr",
+      "line": "Reliance ka record profit",
+      "source": "Reliance Industries"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Reliance ka profit 29,550 crore, ab tak ka sabse bada."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Pichhle saal se kaafi zyada",
+      "source": "Reliance Industries"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Yeh teen mahine ka result hai, aur pichhle saal se kaafi zyada."
+   },
+   {
+    "facts_used": [
+     4,
+     5
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Tel saaf karne ka munafa badha",
+      "source": "Reliance Industries"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Wajah: crude mahanga hua, toh tel saaf karne ka munafa kaafi badha."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Jio ki kamai per user badhi",
+      "source": "Reliance Industries"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Jio ka har user se kamai bhi badhi, yaani recharge aapki jeb par bhaari."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "24.3%",
+      "line": "Retail ka profit gira",
+      "source": "Reliance Industries"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Lekin Reliance ki dukaanein, yaani retail, ka profit 24.3 percent gir gaya."
+   },
+   {
+    "facts_used": [
+     5,
+     6
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Aapka kharcha upar, profit bhi",
+      "source": "Reliance Industries"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Aapke liye matlab: petrol aur recharge ka kharcha upar, company ka profit bhi upar."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "384%",
+      "line": "Share ka ek dashak ka return",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Share ne ek dashak mein 384 percent diya, reportedly kaafi logon ko ameer banaya."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Index fund mein bhaari naam",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Index fund yaani top companies ki tokri, usme Reliance bhaari naam hai."
+   },
+   {
+    "facts_used": [
+     4,
+     7
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Kaun sa dhandha chala, dekho",
+      "source": "Reliance Industries"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Seekh: sirf profit mat dekho, dekho kaun sa dhandha kamaya, kaun gira."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Yeh investment advice nahi hai",
+      "source": "Learning with SG"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Yeh investment advice nahi hai, bas samajhne ki baat hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Us dost ko bhejo",
+      "source": "Learning with SG"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Yeh us dost ko bhejo jo sirf Reliance ka share dekhta hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "RELIANCE",
+   "name_hi": "रिलायंस",
+   "scene": "A giant glowing oil refinery with towering flames at dusk, a mountain of rupee notes stacked in front of it, and a tall green arrow rising behind.",
+   "words": [
+    "384%",
+    "SACH?"
+   ],
+   "words_hi": [
+    "384%",
+    "सच?"
+   ]
+  },
+  "title": "Reliance ka *record* profit, aapko kya? 📈"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  5.81,
+  11.5,
+  18.19,
+  25.32,
+  32.13,
+  38.78,
+  45.91,
+  51.68,
+  58.13,
+  63.26
+ ],
+ "topic": {
+  "category": "economy",
+  "extra": true,
+  "graphics": true,
+  "link": "https://www.livemint.com/market/stock-market-news/reliance-shares-buy-sell-or-hold-after-q2-results-2026-ril-stock-up-384-in-10-yrs-brokerages-advice-to-investors-11793504303710.html",
+  "look": "claymation",
+  "published": "2026-11-01T04:31:38+00:00",
+  "rank": 3,
+  "slot_ist": "22:45",
+  "source": "Mint Markets",
+  "summary": "Reliance Industries reported record second-quarter FY27 profit of  ₹29,550 crore, up 33.8% year-on-year, as a strong recovery in its oil-to-chemicals business and growth in digital services offset weaker retail earnings. Revenue rose 27.8% to  ₹3,62,268 crore.",
+  "target_minutes": null,
+  "title": "Reliance shares: Buy, sell or hold after Q2 results 2026? RIL stock up 384% in 10 yrs! Brokerages advice to investors",
+  "voice": "voice_1kn3blc2u13l"
+ },
+ "updated": "2026-11-01T04:43:16+00:00",
+ "writer": "claude"
+}

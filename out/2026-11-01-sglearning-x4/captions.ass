@@ -1,0 +1,44 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:03.02,Default,,0,0,0,,Reliance ka profit 29,550 crore,
+Dialogue: 0,0:00:03.02,0:00:05.36,Default,,0,0,0,,ab tak ka sabse bada.
+Dialogue: 0,0:00:05.81,0:00:08.43,Default,,0,0,0,,Yeh teen mahine ka result hai,
+Dialogue: 0,0:00:08.43,0:00:11.05,Default,,0,0,0,,aur pichhle saal se kaafi zyada.
+Dialogue: 0,0:00:11.50,0:00:12.09,Default,,0,0,0,,Wajah:
+Dialogue: 0,0:00:12.09,0:00:13.88,Default,,0,0,0,,crude mahanga hua,
+Dialogue: 0,0:00:13.88,0:00:16.55,Default,,0,0,0,,toh tel saaf karne ka munafa
+Dialogue: 0,0:00:16.55,0:00:17.74,Default,,0,0,0,,kaafi badha.
+Dialogue: 0,0:00:18.19,0:00:20.62,Default,,0,0,0,,Jio ka har user se kamai
+Dialogue: 0,0:00:20.62,0:00:21.53,Default,,0,0,0,,bhi badhi,
+Dialogue: 0,0:00:21.53,0:00:24.87,Default,,0,0,0,,yaani recharge aapki jeb par bhaari.
+Dialogue: 0,0:00:25.32,0:00:28.05,Default,,0,0,0,,Lekin Reliance ki dukaanein,
+Dialogue: 0,0:00:28.05,0:00:29.26,Default,,0,0,0,,yaani retail,
+Dialogue: 0,0:00:29.26,0:00:31.68,Default,,0,0,0,,ka profit 24.3 percent gir gaya.
+Dialogue: 0,0:00:32.13,0:00:33.37,Default,,0,0,0,,Aapke liye matlab:
+Dialogue: 0,0:00:33.37,0:00:36.10,Default,,0,0,0,,petrol aur recharge ka kharcha upar,
+Dialogue: 0,0:00:36.10,0:00:38.33,Default,,0,0,0,,company ka profit bhi upar.
+Dialogue: 0,0:00:38.78,0:00:41.35,Default,,0,0,0,,Share ne ek dashak mein 384
+Dialogue: 0,0:00:41.35,0:00:42.12,Default,,0,0,0,,percent diya,
+Dialogue: 0,0:00:42.12,0:00:45.46,Default,,0,0,0,,reportedly kaafi logon ko ameer banaya.
+Dialogue: 0,0:00:45.91,0:00:48.44,Default,,0,0,0,,Index fund yaani top companies ki
+Dialogue: 0,0:00:48.44,0:00:48.95,Default,,0,0,0,,tokri,
+Dialogue: 0,0:00:48.95,0:00:51.23,Default,,0,0,0,,usme Reliance bhaari naam hai.
+Dialogue: 0,0:00:51.68,0:00:52.01,Default,,0,0,0,,Seekh:
+Dialogue: 0,0:00:52.01,0:00:54.01,Default,,0,0,0,,sirf profit mat dekho,
+Dialogue: 0,0:00:54.01,0:00:56.68,Default,,0,0,0,,dekho kaun sa dhandha kamaya,
+Dialogue: 0,0:00:56.68,0:00:57.68,Default,,0,0,0,,kaun gira.
+Dialogue: 0,0:00:58.13,0:01:00.88,Default,,0,0,0,,Yeh investment advice nahi hai,
+Dialogue: 0,0:01:00.88,0:01:02.81,Default,,0,0,0,,bas samajhne ki baat hai.
+Dialogue: 0,0:01:03.26,0:01:04.84,Default,,0,0,0,,Yeh us dost ko bhejo jo
+Dialogue: 0,0:01:04.84,0:01:07.10,Default,,0,0,0,,sirf Reliance ka share dekhta hai.
