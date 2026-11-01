@@ -19,6 +19,14 @@ BAR_2027 = {"hours": 8000, "shorts": 20_000_000}
 NEW_BAR_FROM = date(2027, 2, 1)
 
 
+def _kind(v) -> str:
+    """YouTube spells content types several ways ("VIDEO_ON_DEMAND", "videoOnDemand"): compare them loosely."""
+    return str(v).replace("_", "").lower()
+
+
+LONG, SHORT, ADS = "videoondemand", "shorts", "advertising"
+
+
 def _get(url: str, token: str, call):
     status, _h, body = call("GET", url, token)
     if status != 200:
@@ -39,16 +47,18 @@ def status(token: str, today: date, call=youtube.call) -> dict:
     ch = _get(f"{DATA}/channels?part=statistics,snippet&mine=true", token, call)["items"][0]
     stats = ch.get("statistics", {})
     year, q90, week = today - timedelta(days=365), today - timedelta(days=90), today - timedelta(days=7)
+    kinds = _report(token, call, year, today, "estimatedMinutesWatched", "creatorContentType")
+    print("content types:", sorted({str(r[0]) for r in kinds}), flush=True)
     long_min = sum(r[1] for r in _report(token, call, year, today, "estimatedMinutesWatched", "creatorContentType")
-                   if r[0] == "VIDEO_ON_DEMAND")
+                   if _kind(r[0]) == LONG)
     try:                                                       # not every dimension pair is allowed; fall back to traffic source alone
         ad_min = sum(r[2] for r in _report(token, call, year, today, "estimatedMinutesWatched", "creatorContentType,insightTrafficSourceType")
-                     if r[0] == "VIDEO_ON_DEMAND" and r[1] == "ADVERTISING")
+                     if _kind(r[0]) == LONG and _kind(r[1]) == ADS)
     except RuntimeError:
         ad_min = sum(r[1] for r in _report(token, call, year, today, "estimatedMinutesWatched", "insightTrafficSourceType")
-                     if r[0] == "ADVERTISING")
-    shorts = sum(r[1] for r in _report(token, call, q90, today, "views", "creatorContentType") if r[0] == "SHORTS")
-    wk_long = sum(r[1] for r in _report(token, call, week, today, "estimatedMinutesWatched", "creatorContentType") if r[0] == "VIDEO_ON_DEMAND")
+                     if _kind(r[0]) == ADS)
+    shorts = sum(r[1] for r in _report(token, call, q90, today, "views", "creatorContentType") if _kind(r[0]) == SHORT)
+    wk_long = sum(r[1] for r in _report(token, call, week, today, "estimatedMinutesWatched", "creatorContentType") if _kind(r[0]) == LONG)
     wk_subs = sum(r[0] for r in _report(token, call, week, today, "subscribersGained"))
     return {"name": ch["snippet"]["title"], "subs": int(stats.get("subscriberCount", 0)), "hidden": stats.get("hiddenSubscriberCount", False),
             "hours": round((long_min - ad_min) / 60, 1), "ad_hours": round(ad_min / 60, 1), "shorts_90d": int(shorts),
