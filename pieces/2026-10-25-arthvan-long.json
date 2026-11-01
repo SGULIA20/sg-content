@@ -716,8 +716,17 @@
   "place": "Haryana-Rajasthan-Gujarat",
   "target_minutes": 14,
   "thumb_test": {
-   "phase": "B",
-   "switched": "2026-10-27T16:51+00:00"
+   "a": [
+    0,
+    null
+   ],
+   "b": [
+    0,
+    null
+   ],
+   "phase": "done",
+   "switched": "2026-10-27T16:51+00:00",
+   "winner": "A"
   },
   "title_hi": "Saraswati nadi kahan gayi",
   "voice": "voice_7o0kddoq6q2z"
