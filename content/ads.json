@@ -13,11 +13,11 @@
    "max_cost_per_sub": 25
   },
   "USD": {
-   "monthly_cap": 330,
+   "monthly_cap": 300,
    "budget_per_channel": 70
   }
  },
- "_limits_note": "Founder, 1 Nov 2026: a 1-month trial without pausing, to 30 Nov 2026; December only if the founder says go after the review. $5 a day per channel (budget_per_channel 70 over the 14-day formula = $5/day), about $310 a month for both; monthly_cap 330 is only a safety net against an overspend. No cost-per-subscriber pause. Earlier: $1.50 a day refused by Google's $5 Demand Gen floor (31 Oct).",
+ "_limits_note": "Founder, 1 Nov 2026: a 1-month trial without pausing, to 30 Nov 2026; December only if the founder says go after the review. $5 a day per channel (budget_per_channel 70 over the 14-day formula = $5/day), about $310 a month for both; monthly_cap 300: the founder's hard limit per month (1 Nov 2026); the watch pauses both campaigns if a month's spend reaches it. No cost-per-subscriber pause. Earlier: $1.50 a day refused by Google's $5 Demand Gen floor (31 Oct).",
  "ad_videos": {
   "sglearning": [
    "wO9L5aUZoQ4"
