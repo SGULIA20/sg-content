@@ -32,8 +32,12 @@
    "voice": 12
   },
   "drafts": 1,
+  "ig_reel_id": "17921743311451733",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "out_sha": "14413f583163f1a4dcd1addc7e5b9a9d8d770230",
+  "threads_id": "18054466448596769",
+  "threads_poll_id": "skipped: HTTP 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":",
   "yt_id": "wL0UBrt5WJs"
  },
  "kind": "short",
@@ -272,7 +276,7 @@
   },
   "title": "Charity ka maksad *5 saal* lock 🔒"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   4.85,
@@ -302,6 +306,6 @@
   "title": "CBDT tightens merger rules for charity trusts, imposes five-year curbs on changing objectives",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-31T20:18:47+00:00",
+ "updated": "2026-11-01T07:39:00+00:00",
  "writer": "claude"
 }
