@@ -1,0 +1,539 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 0.0,
+   "quote": "For all loans granted for purposes other than business to individuals, with or without co-obligant(s), an RE shall not levy pre-payment charges;",
+   "source_date": "2025-07-02",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/Scripts/BS_CircularIndexDisplay.aspx?Id=12879",
+   "text": "Under the Reserve Bank of India directions effective January 1, 2026, regulated lending entities are barred from levying any prepayment penalty on floating-rate individual retail loans.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-21-sglearning-long",
+ "ids": {
+  "budget": {
+   "day": "2026-11-01",
+   "drafts": 2,
+   "research": 2
+  },
+  "cost": {
+   "inr": 0.0,
+   "usd": 0.243856,
+   "voice": 0
+  },
+  "drafts": 2
+ },
+ "kind": "long",
+ "publish_day": "2026-11-21",
+ "reasons": [
+  "try 1: no sourced facts survived the checks",
+  "try 2: numbers without a source: 1.04e+07, 1.04e+07, 8.5, 1.04e+07, 8.5, 1.04e+07, 70, 1.04e+07, 1.04e+07, 1.04e+07, 70, 1.04e+07, 70, 1.04e+07, 70, 1.04e+07, 70, 70, 1.3e+06",
+  "try 3: numbers without a source: 100000, 70"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "50 lakh ka ghar, par bill lagbhag double. 🏠\nPehle 5 saal mein EMI ka zyaadatar hissa sirf byaaj mein jaata hai.\nSaal mein ek extra EMI se loan lagbhag 5 saal pehle khatam ho sakta hai, aur RBI ke niyam se floating rate loan par prepayment penalty nahi.\nAapka home loan kitne saal ka hai?\nYeh investment advice nahi hai.\nUs bhai ko bhejo jo kehta hai EMI toh kiraye jaisi hi hai.",
+    "hashtags": [
+     "#EMI",
+     "#RBI",
+     "#PersonalFinanceIndia",
+     "#MoneyTipsHindi",
+     "#HinglishFinance",
+     "#SeedhiBaat",
+     "#LearningWithSG",
+     "#PaiseKiKhabar"
+    ]
+   },
+   "threads": {
+    "text": "50 lakh ka ghar, 20 saal ki EMI, kul bill lagbhag double. Pehle 5 saal mein EMI ka zyaadatar hissa sirf byaaj. Saal mein ek extra EMI se loan lagbhag 5 saal pehle khatam ho sakta hai. Aapka home loan kitne saal ka hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 50 lakh ka ghar, 1.04 crore ka bill",
+     "00:00 Sawaal 1: EMI ka asli hisaab",
+     "00:00 Sawaal 2: Pehle 5 saal mein ghar kitna aapka?",
+     "00:00 Sawaal 3: Ek extra EMI ka jaadu",
+     "00:00 Galti aur kya karein"
+    ],
+    "description": "50 lakh ka ghar, aur bank ko aap lagbhag double dete ho. Pehle 5 saal mein EMI ka zyaadatar hissa sirf byaaj mein jaata hai, isliye ghar dheere dheere aapka hota hai. Saal mein ek extra EMI se loan lagbhag 5 saal pehle khatam ho sakta hai, aur RBI ke niyam se floating rate loan par prepayment penalty nahi lagti. Us dost ko bhejo jo abhi naya flat loan par lene wala hai.",
+    "tags": [
+     "home loan",
+     "EMI",
+     "home loan EMI",
+     "prepayment",
+     "floating rate",
+     "RBI",
+     "home loan interest",
+     "loan hisaab",
+     "personal finance India",
+     "Hinglish finance",
+     "Learning with SG"
+    ],
+    "title": "Home Loan EMI: 50 lakh ka ghar, double kyun?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "₹1.04 cr",
+    "line": "20 saal mein kul bill",
+    "source": "Loan amortisation schedule"
+   },
+   {
+    "big_number": "70%",
+    "line": "EMI ka hissa byaaj mein",
+    "source": "Loan amortisation schedule"
+   },
+   {
+    "big_number": "₹13 lakh+",
+    "line": "Ek extra EMI ki bachat",
+    "source": "Loan amortisation schedule"
+   },
+   {
+    "big_number": "₹0",
+    "line": "Prepayment penalty, RBI niyam",
+    "source": "RBI"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Aapka home loan kitne saal ka hai, aur kya aapne kabhi extra EMI bhari?",
+  "hook": "50 lakh ka ghar, aur bank ko aap lagbhag double dete ho.",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "50 lakh ka ghar, 1.04 crore ka bill",
+    "visual": {
+     "card": null,
+     "prompt": "A shiny new flat door key lying on a wooden table, behind it a towering stack of paid bank EMI receipts rising almost to the ceiling, warm evening light, dramatic scale, no text",
+     "type": "art"
+    },
+    "vo": "50 lakh ka ghar, aur bank ko aap lagbhag double dete ho. Yeh koi galti nahi hai, yeh poora hisaab hai. 20 saal ki EMI ka yahi sach hai. Aur zyaadatar log yeh tab samajhte hain, jab aadhi zindagi EMI bharte bharte nikal chuki hoti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in his hoodie and his young wife sitting on the floor of a small rented flat at night, rent receipts scattered, Bhai gesturing excitedly, wife listening thoughtfully, warm lamp light",
+     "type": "art"
+    },
+    "vo": "Socho ek family. Bhai aur unki wife, dono naukri karte hain. Kiraye ke flat mein rehte hain, har mahine kiraya jaata hai. Ek din Bhai kehta hai, kiraya dena toh paisa barbaad karna hai. Apna ghar lete hain, EMI bhi lagbhag kiraye jaisi hi hogi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BANK UNCLE behind a bank counter smiling and stamping loan papers, BHAI and his wife across the counter beaming, a box of sweets on the counter, bright daytime bank interior",
+     "type": "art"
+    },
+    "vo": "Ek naya project pasand aata hai, ek chhota sa flat. Bank se 50 lakh ka home loan liya jaata hai. Byaaj sunne mein theek lagta hai, aur loan 20 saal ka. BANK UNCLE muskura kar kehte hain, approval ho jayega. Ghar mein mithai baant di jaati hai, sab khush hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI placing a thick loan file into a steel almirah and closing the door, the file pages full of long tables peeking out, his wife arranging new curtains in the background, afternoon light",
+     "type": "art"
+    },
+    "vo": "Phir aata hai ek kaagaz, jo koi nahi padhta. Ise kehte hain repayment schedule, yaani loan ki poori kundli. Har mahine ki EMI mein kitna byaaj gaya, kitna udhaar ghata, sab likha hota hai. Bhai ne file band ki, aur almaari mein rakh di."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG in his striped shirt standing beside a giant unfolded loan document as tall as a wall, pointing at it with curiosity, three glowing question-mark shapes drawn as symbols above, soft studio light",
+     "type": "art"
+    },
+    "vo": "Aaj usi kaagaz ko kholenge, aur teen sawaal poochhenge. Pehla, 50 lakh ka ghar lagbhag double ka kaise ho gaya? Doosra, pehle 5 saal ki EMI ke baad ghar kitna aapka hua? Teesra, saal mein sirf ek extra EMI se kitna bachta hai?"
+   },
+   {
+    "facts_used": [],
+    "label": "Sawaal 1: EMI ka asli hisaab",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Pehla sawaal. Shuru karte hain sabse basic shabd se, EMI. EMI yaani har mahine ki fixed kisht, jo aap bank ko dete ho. Har mahine wahi amount, poore 20 saal tak. Lekin us ek amount ke andar, do alag cheezein chhupi hoti hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A monthly EMI drawn as a cake being sliced into two parts, one part labelled by a small house symbol, the other by a bank building symbol, BHAI looking at it puzzled, clean bright kitchen table, no text",
+     "type": "art"
+    },
+    "vo": "Pehli cheez hai principal, yaani bank se liya hua asli udhaar. Bhai ke case mein yeh 50 lakh hai. Doosri cheez hai interest, yaani byaaj. Byaaj matlab us paise ka kiraya. Bank aapko paisa free mein nahi deta, uska bhi kiraya lagta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Two young friends at a roadside chai stall in the evening, one handing cash to the other, the lender holding up a finger as if adding a condition, steam rising from glasses of tea, warm street lights",
+     "type": "art"
+    },
+    "vo": "Ise chai stall ki misaal se samjho. Aapne dost se paise udhaar liye. Kaha, har mahine thoda thoda lautaunga. Dost kehta hai, theek hai, par jitna baaki hai uspe kiraya bhi dena. Bank bilkul yahi karta hai, bas bahut bade paimane par."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI relaxed on a sofa waving his hand dismissively, while behind him a long calendar stretching into the distance shows small coins dropping out of every month into a bank vault, evening light",
+     "type": "art"
+    },
+    "vo": "Ab byaaj ka rate sunne mein chhota lagta hai. Bhai ne bhi yahi socha, bas itna hi toh hai. Par yeh byaaj ek baar ka nahi, har saal ka hai. Aur 20 saal tak, har mahine, baaki udhaar par lagta hi rehta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "20 saal mein bill double",
+      "source": "Loan amortisation schedule"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Ab poore 20 saal ki saari EMI jod do. Total banta hai, ghar ki keemat ka lagbhag double. Yaani 50 lakh ke loan par, lagbhag utna hi paisa sirf byaaj mein. Ghar ek hi hai, par keemat lagbhag double ho gayi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Bhai's young wife at the dining table at night holding a calculator, eyes wide in shock, the loan file now open in front of her, BHAI standing behind looking worried, single overhead lamp",
+     "type": "art"
+    },
+    "vo": "Bhai ki wife ne calculator uthaya, aur number dekh kar chup ho gayi. Phir poocha, kya bank ne humein dhokha diya? Jawab hai, nahi. Sab kuch kaagaz par likha tha. Bas kisi ne woh kaagaz padha hi nahi, almaari mein band pada raha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A family climbing a tall ladder towards a cosy apartment window high up, the ladder rungs drawn like stacked currency notes, clear blue sky, hopeful mood",
+     "type": "art"
+    },
+    "vo": "Yahan ek baat saaf samajh lo. Loan lena galat nahi hai. Bahut kam log poora cash dekar ghar le paate hain. Loan ek seedhi ki tarah hai, upar pahunchne ka raasta. Par seedhi ki keemat jaanna aapka haq hai, aur aapki zimmedari bhi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A long road stretching into the horizon made of monthly calendar pages, a small family car at the start and a large bank building at the far end, sunset colours, sense of a very long journey",
+     "type": "art"
+    },
+    "vo": "Toh pehle sawaal ka jawab yeh hai. Ghar double isliye padta hai, kyunki byaaj lamba chalta hai. Jitna lamba loan, utna zyada kiraya. 20 saal ka loan EMI ko chhota dikhata hai. Par total bill ko chupchaap bahut bada kar deta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Sawaal 2: Pehle 5 saal mein ghar kitna aapka?",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab doosra sawaal, aur yeh sabse zyada chubhta hai. Bhai ne 5 saal tak har mahine EMI bhari. Ek bhi kisht nahi chhooti, kabhi late nahi hue. Ab socho, 5 saal baad ghar ka kitna hissa sach mein unka hua?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BANK UNCLE handing a printed loan statement across the counter, BHAI holding it with a stunned disappointed expression, the statement showing a long table, fluorescent bank lights, daytime",
+     "type": "art"
+    },
+    "vo": "Ek din Bhai bank gaye, poochhne ki kitna loan baaki hai. BANK UNCLE ne statement nikal kar diya. Bhai ka chehra utar gaya. 5 saal ki mehnat ke baad bhi, udhaar lagbhag wahin ka wahin tha. Bhai bole, yeh kaise ho sakta hai?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "EMI ka zyaadatar hissa byaaj",
+      "source": "Loan amortisation schedule"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Iski wajah hai ek shabd, front-loaded. Yaani shuruaat mein EMI ka bada hissa byaaj mein jaata hai. Pehle 5 saal mein, har EMI ka zyaadatar hissa sirf byaaj hota hai. Ghar ki taraf jaata hai, bas thoda sa hissa."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "An EMI drawn as a stream of coins flowing into a funnel, most coins diverted into a big bank pipe and only a trickle going into a small house-shaped jar, clean diagram-like painting, no text",
+     "type": "art"
+    },
+    "vo": "Aisa kyun hota hai? Byaaj hamesha baaki udhaar par lagta hai. Shuru mein udhaar poora 50 lakh hai, toh byaaj bhi bada hai. EMI fixed hai, toh pehle byaaj kat-ta hai. Jo bachta hai, sirf wahi asli udhaar ghatata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A steel bucket with a large hole at the bottom, water being poured in from a jug while most of it leaks out, a small house reflected in the water inside, plain courtyard background, morning light",
+     "type": "art"
+    },
+    "vo": "Ise ek baalti se socho. Baalti mein ek ched hai, woh ched byaaj hai. Aap har mahine paani daalte ho, woh EMI hai. Shuru mein ched bada hai, zyaadatar paani beh jaata hai. Dheere dheere ched chhota hota hai, tab baalti bharni shuru hoti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Split panel of the same bucket: LEFT early years with a big hole and little water, RIGHT later years with a tiny hole and the bucket nearly full, the same courtyard ageing from young plants to tall trees",
+     "type": "art"
+    },
+    "vo": "Aakhri saalon mein kahani ulti ho jaati hai. Tab EMI ka bada hissa asli udhaar mein jaata hai, aur byaaj chhota. Matlab ghar sach mein aapka, loan ke aakhri hisse mein banta hai. Shuru ke saal zyaadatar bank ki kamaai ke saal hote hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A young couple outside a property dealer's office looking at a bigger apartment poster, their faces falling as the dealer shows them a calculation sheet, busy street, late afternoon",
+     "type": "art"
+    },
+    "vo": "Iska asar sirf hisaab par nahi, faislon par bhi padta hai. Bahut log 5 saal baad flat bechte hain, bada ghar lene ke liye. Unhe lagta hai aadha loan toh chuk gaya. Par udhaar bahut kam ghata hota hai, haath mein sochne se kam aata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BETI, a girl of 6, in pyjamas sitting on her bed asking a question, BHAI sitting beside her smiling outwardly but with a thoughtful worried look, night, soft bedside lamp",
+     "type": "art"
+    },
+    "vo": "Ek raat BETI ne poocha, Papa, yeh ghar kab poora apna hoga? Bhai ne hans kar kaha, bas thode saal aur. Par andar se unhe pehli baar samajh aaya. Ki yeh thode saal, asal mein kitne lambe hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A tiny green sprout pushing up through a crack in a big grey concrete slab shaped like a loan file, morning sunlight falling on it, hopeful mood",
+     "type": "art"
+    },
+    "vo": "Toh doosre sawaal ka jawab. Pehle 5 saal mein ghar ka bahut chhota hissa aapka hota hai. EMI ka zyaadatar paisa byaaj mein jaata hai. Aur yahi woh jagah hai, jahan ek chhota sa kadam bahut bada farak laa sakta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Sawaal 3: Ek extra EMI ka jaadu",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab teesra sawaal, aur yahan kahani palat-ti hai. Agar aap saal mein sirf ek extra EMI bhar do, toh kya hoga? Na naukri badalni hai, na lifestyle chhodna hai. Bas saal mein ek baar, ek kisht extra."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI at the bank counter handing an extra envelope of money directly to BANK UNCLE, who places it straight onto a shrinking pile representing the loan, calm daytime bank interior",
+     "type": "art"
+    },
+    "vo": "Pehle ek shabd samajh lo, prepayment. Prepayment yaani loan ka kuch hissa, time se pehle chuka dena. Yeh paisa EMI ki tarah byaaj mein nahi bantta. Yeh seedha asli udhaar ghatata hai, yaani principal kam karta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The same steel bucket, a hand patching part of the hole, water level now rising faster, sunlight in the courtyard, satisfied mood",
+     "type": "art"
+    },
+    "vo": "Yahi iska asli jaadu hai. Asli udhaar ghata, toh agle mahine se byaaj bhi ghata. Kyunki byaaj hamesha baaki udhaar par lagta hai. Baalti ka ched chhota ho gaya. Ab har EMI ka zyada hissa ghar ki taraf jaane laga."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Bhai's wife at the dining table with a notebook and a jar marked only with a house symbol, dropping a bonus envelope into it, BHAI nodding beside her, a travel brochure set aside, morning light",
+     "type": "art"
+    },
+    "vo": "Bhai ki wife ne ek plan banaya. Har saal jo bonus ya increment aata hai, usse ek extra EMI jaayegi. Pehle yeh paisa naye phone ya trip mein chala jaata tha. Ab woh seedha loan mein jaane laga, bina mahine ka budget bigaade."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "5 saal",
+      "line": "Loan pehle khatam",
+      "source": "Loan amortisation schedule"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Nateeja chaunkane wala hai. Saal mein ek extra EMI se, loan lagbhag 5 saal pehle khatam ho sakta hai. Aur byaaj mein bachat hoti hai kai lakh rupaye ki. Wahi ghar, wahi bank, bas thodi si aadat badli."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI and his wife older, relaxing on the balcony of their flat at sunrise with tea, BETA and BETI grown a little older studying happily inside, peaceful free mood",
+     "type": "art"
+    },
+    "vo": "Socho, aakhri 5 saal koi EMI na dena kaisa lagega. Woh paisa bachchon ki padhai mein ja sakta hai. Retirement ki taiyari mein ja sakta hai. Ya bas ek chain ki neend mein, ki ab sar par koi udhaar nahi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA in a kurta sitting in an armchair holding FD receipts, wagging a finger in warning at BHAI, MUMMY bringing chai in the background, warm afternoon living room",
+     "type": "art"
+    },
+    "vo": "Ab PAPA ki aawaaz aati hai. Papa kehte hain, bank prepayment par penalty le leta hai, koi faayda nahi. Pehle kai baar yeh baat sach bhi thi. Par ab niyam badal gaye hain, aur yeh jaanna bahut zaroori hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "₹0",
+      "line": "Prepayment penalty, RBI niyam",
+      "source": "RBI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "RBI ke naye niyam 1 January 2026 se lagu hain. Floating rate wale personal loan par, bank prepayment ka koi charge nahi le sakta. Yaani penalty bilkul 0. Yeh niyam bank aur baaki loan dene wali companies, sab par lagta hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A small paper boat representing a home loan floating on gentle waves that rise and fall, a lighthouse shaped like a bank in the distance, calm sea at dusk, no text",
+     "type": "art"
+    },
+    "vo": "Floating rate kya hota hai? Floating yaani byaaj fixed nahi, badalta rehta hai. RBI banks ke liye byaaj badhaye, toh aapka byaaj bhi badh sakta hai. Ghataye, toh ghat bhi sakta hai. Zyaadatar home loan isi tarah ke hote hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A long rope labelled only by a house symbol being quietly stretched longer by an unseen hand in a dim back office, BHAI unaware in the foreground paying his EMI at a counter, evening",
+     "type": "art"
+    },
+    "vo": "Yahan ek chupa hua khatra hai. Jab byaaj badhta hai, bank aksar EMI wahi rakhta hai. Par loan ke saal chupchaap badha deta hai. Aapko pata bhi nahi chalta, aur 20 saal ka loan aur lamba khinch jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN in office wear at a bank counter calmly pointing at a line on her loan statement, BANK UNCLE leaning in to explain, confident mood, daytime",
+     "type": "art"
+    },
+    "vo": "Isliye saal mein ek baar apna loan statement zaroor dekho. Kitna udhaar baaki hai, kitne saal baaki hain. Agar saal badh gaye hain, toh bank se seedhi baat karo. Yeh aapka paisa hai, sawaal poochhna aapka haq hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Galti aur kya karein",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab sabse badi galti ki baat. Log ghar ki keemat dekhte hain, aur mahine ki EMI dekhte hain. Par total bill koi nahi dekhta. 50 lakh ka ghar, asal mein lagbhag double ka sauda hai. Faisla is total ko dekh kar karo."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A salary bonus envelope on a table splitting into two paths, one leading to a pile of gadgets and shopping bags, the other leading to a small house, a young man pausing to choose, evening light",
+     "type": "art"
+    },
+    "vo": "Doosri galti, bonus aate hi poora kharch kar dena. Naya phone, naya TV, lambi trip. Inme kuch galat nahi hai. Par agar bonus ka ek hissa bhi loan mein jaye, toh 20 saal ki poori kahani badal sakti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "explaining_front",
+     "type": "avatar"
+    },
+    "vo": "Toh aapke liye seedhi baat. Pehla kaam, apna repayment schedule nikalo aur ek baar padho. Doosra, saal mein ek extra EMI ka plan banao. Teesra, floating rate par nazar rakho, aur statement dekhte raho. Yeh investment advice nahi hai, yeh bas hisaab ki samajh hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI and his wife at the dining table with the loan file open, BETI crossing off squares on a hand-drawn wall chart shaped like a house, BETA cheering, warm family evening",
+     "type": "art"
+    },
+    "vo": "Bhai ki kahani par wapas chalte hain. Aaj bhi woh EMI bharte hain, par ab file almaari mein band nahi. Har saal bonus aata hai, aur ek extra kisht jaati hai. Beti ab poochhti hai, kitne saal bache? Aur jawab har saal chhota hota jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "end_smile",
+     "type": "avatar"
+    },
+    "vo": "Ab aapse ek sawaal. Aapka home loan kitne saal ka hai, aur kya aapne kabhi extra EMI bhari? Comment mein zaroor bataiye. Agle video mein, credit card ka minimum due, jo chhota dikhta hai par bahut mehenga padta hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "HOME LOAN",
+   "name_hi": "होम लोन",
+   "scene": "LEFT: a young family receiving the keys of a new flat with a small neat stack of cash beside them; RIGHT: the same flat 20 years later with a towering mountain of paid EMI receipts reaching the ceiling and spilling out of the windows",
+   "words": [
+    "70%",
+    "TRAP"
+   ],
+   "words_hi": [
+    "70%",
+    "ट्रैप"
+   ]
+  },
+  "title": "50 lakh ka ghar, double ka *bill*: EMI ka sach 🏠"
+ },
+ "status": "rejected",
+ "timings": [],
+ "topic": {
+  "hooks": [
+   "50 lakh ka ghar, 1 crore kyun dete ho?",
+   "Pehli 5 saal ki EMI mein ghar ka kitna hissa aapka hua?",
+   "Saal mein ek extra EMI se kitne saal bachte hain?"
+  ],
+  "id": "home-loan-double",
+  "patch_tries": 1,
+  "summary": "A family buys a flat on a 20-year home loan; the amortisation schedule shows interest front-loaded, the total paid roughly double the price, and what prepaying one extra EMI a year does. Explain EMI, principal, interest, prepayment, floating rate.",
+  "target_minutes": 12,
+  "title": "50 lakh ka ghar, 1 crore ka bill: 20 saal ki EMI mein bank kitna kamata hai"
+ },
+ "updated": "2026-11-01T07:24:33+00:00",
+ "writer": "claude"
+}
