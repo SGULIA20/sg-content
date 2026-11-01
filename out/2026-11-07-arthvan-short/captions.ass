@@ -1,0 +1,71 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.62,Default,,0,0,0,,Mahabalipuram ke 7 mandir,
+Dialogue: 0,0:00:02.62,0:00:04.72,Default,,0,0,0,,kya samundar ne nigal liye?
+Dialogue: 0,0:00:05.17,0:00:06.72,Default,,0,0,0,,Buzurg kehte the,
+Dialogue: 0,0:00:06.72,0:00:09.83,Default,,0,0,0,,kinare par kai shaandaar mandir the.
+Dialogue: 0,0:00:09.83,0:00:11.70,Default,,0,0,0,,Phir samundar utha,
+Dialogue: 0,0:00:11.70,0:00:14.18,Default,,0,0,0,,aur mandiron ko nigal gaya.
+Dialogue: 0,0:00:14.18,0:00:17.29,Default,,0,0,0,,Kinare wala mandir hi bacha.
+Dialogue: 0,0:00:17.74,0:00:18.77,Default,,0,0,0,,Log kehte the,
+Dialogue: 0,0:00:18.77,0:00:21.33,Default,,0,0,0,,paani mein mandiron ki tambe ki
+Dialogue: 0,0:00:21.33,0:00:22.87,Default,,0,0,0,,chotiyan chamakti thi.
+Dialogue: 0,0:00:22.87,0:00:26.21,Default,,0,0,0,,Videshi vyapari is jagah ko Pagodas
+Dialogue: 0,0:00:26.21,0:00:27.23,Default,,0,0,0,,kehne lage,
+Dialogue: 0,0:00:27.23,0:00:28.26,Default,,0,0,0,,yaani mandir.
+Dialogue: 0,0:00:28.71,0:00:31.74,Default,,0,0,0,,Bacha mandir aaj Shore Temple hai,
+Dialogue: 0,0:00:31.74,0:00:35.39,Default,,0,0,0,,Pallava raja Narasimhavarman ka.
+Dialogue: 0,0:00:35.39,0:00:37.51,Default,,0,0,0,,Tab yahan bada port tha.
+Dialogue: 0,0:00:37.96,0:00:41.58,Default,,0,0,0,,Phir aayi 2004 ki sunami.
+Dialogue: 0,0:00:41.58,0:00:43.39,Default,,0,0,0,,Lehar se pehle,
+Dialogue: 0,0:00:43.39,0:00:46.29,Default,,0,0,0,,samundar door peeche hat gaya.
+Dialogue: 0,0:00:46.29,0:00:49.55,Default,,0,0,0,,Logon ne ret par pattharon ka
+Dialogue: 0,0:00:49.55,0:00:51.00,Default,,0,0,0,,dhaancha dekha.
+Dialogue: 0,0:00:51.45,0:00:52.35,Default,,0,0,0,,Lehar gayi,
+Dialogue: 0,0:00:52.35,0:00:53.86,Default,,0,0,0,,to ret khisak gayi.
+Dialogue: 0,0:00:53.86,0:00:56.88,Default,,0,0,0,,Neeche se Pallava daur ke patthar
+Dialogue: 0,0:00:56.88,0:00:58.08,Default,,0,0,0,,ke sher nikle,
+Dialogue: 0,0:00:58.08,0:00:59.89,Default,,0,0,0,,adhoora haathi bhi.
+Dialogue: 0,0:01:00.34,0:01:00.98,Default,,0,0,0,,ASI,
+Dialogue: 0,0:01:00.98,0:01:05.49,Default,,0,0,0,,yaani purani cheezein khojne wali sarkari
+Dialogue: 0,0:01:05.49,0:01:06.14,Default,,0,0,0,,sanstha.
+Dialogue: 0,0:01:06.14,0:01:09.36,Default,,0,0,0,,Usne Shore Temple ke paas khudai
+Dialogue: 0,0:01:09.36,0:01:09.68,Default,,0,0,0,,ki.
+Dialogue: 0,0:01:09.68,0:01:12.26,Default,,0,0,0,,Ret ke neeche mandir ki neev
+Dialogue: 0,0:01:12.26,0:01:12.90,Default,,0,0,0,,mili.
+Dialogue: 0,0:01:13.35,0:01:17.92,Default,,0,0,0,,National Institute of Oceanography ke gotakhor,
+Dialogue: 0,0:01:17.92,0:01:19.80,Default,,0,0,0,,yaani paani ke khoji,
+Dialogue: 0,0:01:19.80,0:01:20.34,Default,,0,0,0,,utre.
+Dialogue: 0,0:01:20.34,0:01:23.83,Default,,0,0,0,,Neeche tarashe pattharon ki deewarein aur
+Dialogue: 0,0:01:23.83,0:01:24.91,Default,,0,0,0,,seedhiyan mili.
+Dialogue: 0,0:01:25.36,0:01:28.16,Default,,0,0,0,,Kya yeh wahi doobe mandir hain?
+Dialogue: 0,0:01:28.16,0:01:30.02,Default,,0,0,0,,Kuch experts kehte hain,
+Dialogue: 0,0:01:30.02,0:01:30.33,Default,,0,0,0,,haan,
+Dialogue: 0,0:01:30.33,0:01:32.19,Default,,0,0,0,,mandiron ke hisse.
+Dialogue: 0,0:01:32.19,0:01:33.75,Default,,0,0,0,,Doosre kehte hain,
+Dialogue: 0,0:01:33.75,0:01:35.92,Default,,0,0,0,,yeh port ki deewarein thi.
+Dialogue: 0,0:01:36.37,0:01:37.52,Default,,0,0,0,,Doobe kaise?
+Dialogue: 0,0:01:37.52,0:01:38.67,Default,,0,0,0,,Kuch kehte hain,
+Dialogue: 0,0:01:38.67,0:01:42.11,Default,,0,0,0,,purani sunami ne achanak duboya.
+Dialogue: 0,0:01:42.11,0:01:43.55,Default,,0,0,0,,Baaki kehte hain,
+Dialogue: 0,0:01:43.55,0:01:47.00,Default,,0,0,0,,samundar sadiyon tak dheere zameen khata
+Dialogue: 0,0:01:47.00,0:01:47.57,Default,,0,0,0,,raha.
+Dialogue: 0,0:01:48.02,0:01:49.33,Default,,0,0,0,,Aur 7 ki ginti?
+Dialogue: 0,0:01:49.33,0:01:51.69,Default,,0,0,0,,Iska koi sabut nahi mila.
+Dialogue: 0,0:01:51.69,0:01:54.05,Default,,0,0,0,,Par Shore Temple aaj bhi lehron
+Dialogue: 0,0:01:54.05,0:01:55.62,Default,,0,0,0,,ke saamne khada hai.
+Dialogue: 0,0:01:56.07,0:01:57.25,Default,,0,0,0,,Wahan jaakar,
+Dialogue: 0,0:01:57.25,0:01:59.91,Default,,0,0,0,,sunami wale sher khud dekhiye.
+Dialogue: 0,0:02:00.36,0:02:02.33,Default,,0,0,0,,Us dost ko bhejo jo kehta
+Dialogue: 0,0:02:02.33,0:02:04.80,Default,,0,0,0,,hai doobe mandir sirf kahani hain.
