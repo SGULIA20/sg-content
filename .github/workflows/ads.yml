@@ -17,7 +17,7 @@ on:
         required: false
         default: ''
       launch:
-        description: 'check / live = create the test campaigns; budgets-check / budgets-live = set their daily budgets to the limit; resume = turn paused test campaigns on if their budget is within the limit; youtube-check / youtube-live = show the ads only on YouTube; status = read-only: account, billing, approvals; ypp = read-only: each channel against the Partner Program bar; videos-check / videos-live = add the 2 best-watched long videos to each ad (engine/advideos.py) (engine/adlaunch.py)'
+        description: 'check / live = create the test campaigns; budgets-check / budgets-live = set their daily budgets to the limit; resume = turn paused test campaigns on if their budget is within the limit; youtube-check / youtube-live = show the ads only on YouTube; status = read-only: account, billing, approvals; extend-check / extend-live = move the end date to content/ads.json run_until; ypp = read-only: each channel against the Partner Program bar; videos-check / videos-live = add the 2 best-watched long videos to each ad (engine/advideos.py) (engine/adlaunch.py)'
         required: false
         default: ''
 
@@ -66,6 +66,8 @@ jobs:
           elif [ "${{ github.event.inputs.launch }}" = "youtube-live" ]; then python -m engine.adlaunch --youtube-only --live
           elif [ "${{ github.event.inputs.launch }}" = "status" ]; then python -m engine.ads --status
           elif [ "${{ github.event.inputs.launch }}" = "ypp" ]; then python -m engine.yppstatus
+          elif [ "${{ github.event.inputs.launch }}" = "extend-check" ]; then python -m engine.adlaunch --extend
+          elif [ "${{ github.event.inputs.launch }}" = "extend-live" ]; then python -m engine.adlaunch --extend --live
           elif [ "${{ github.event.inputs.launch }}" = "videos-check" ]; then python -m engine.advideos
           elif [ "${{ github.event.inputs.launch }}" = "videos-live" ]; then python -m engine.advideos --live
           else python -m engine.ads ${{ github.event.inputs.check == 'yes' && '--check' || (github.event.schedule == '30 19 * * *' && '--report' || '') }}
