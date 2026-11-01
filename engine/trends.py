@@ -22,7 +22,7 @@ CHANNEL = "sglearning"
 CYCLE_HOURS = 8                       # a story counts as fresh for two cycles
 SLOT_LEAD_MINUTES = 60                # a cycle only takes a slot it can still meet
 # extra Reels a day on top of the daily one, ramping while views per Reel hold (founder, 29 Oct 2026, "B")
-EXTRAS_FROM = [(date(2026, 10, 29), 1), (date(2026, 10, 31), 3)]   # 31 Oct: 3 breaking-news Reels a day on free news cards (founder, 30 Oct 2026)
+EXTRAS_FROM = [(date(2026, 10, 29), 1), (date(2026, 10, 31), 3), (date(2026, 11, 2), 1)]   # 2 Nov: only the 1 best news Reel a day, plus the Top 10 (founder, 1 Nov 2026)
 
 CATEGORIES = {
     "crypto": ["bitcoin", "crypto", "binance", "ethereum", "token"],
@@ -85,9 +85,9 @@ def is_roundup(p) -> bool:
 def roundup(items: list, used: set, now_utc: datetime) -> dict | None:
     """The day's Top 10 as one preset topic: the best fresh stories of the last 24 hours, at most three of one category, biggest first."""
     fresh = [i for i in items if i.get("published") and now_utc - i["published"] <= timedelta(hours=ROUNDUP_HOURS)
-             and i.get("link") not in used and topics.score(i) > 0 and topics.household(i)
+             and i.get("link") not in used and topics.news_score(i) > 0 and topics.household(i)
              and not any(w in str(i.get("title", "")).lower() for w in topics.MARKET_CALL)]
-    fresh.sort(key=lambda i: (topics.score(i), i["published"]), reverse=True)
+    fresh.sort(key=lambda i: (topics.news_score(i), i["published"]), reverse=True)
     picked, per = [], {}
     for i in fresh:
         c = category(i)
@@ -144,9 +144,9 @@ def ranked(items: list, used: set, now_utc: datetime) -> list:
             why = "already made"
         elif any(w in title for w in topics.MARKET_CALL):
             why = "daily market call (stale by evening)"
-        elif topics.score(i) <= 0 or not topics.household(i):
+        elif topics.news_score(i) <= 0 or not topics.household(i):
             why = "not about the viewer's money, job or decisions"
-        out.append((topics.score(i), i, why))
+        out.append((topics.news_score(i), i, why))
     return sorted(out, key=lambda x: (x[2] is None, x[0], x[1].get("published")), reverse=True)
 
 

@@ -56,6 +56,11 @@ BANNED_TOPIC = ["modi", "rahul gandhi", "bjp", "congress", "election", "rally", 
 PLUMBING = ["premature redemption", "redemption price", "redemption of", "tranche",   # routine notices (31 Oct 2026: an SGB redemption-price notice was picked)
             "variable rate repo", "vrr", "money market operations", "auction", "government securities", "state government securities",
             "treasury bill", "t-bill", "laf", "omo ", "switch auction", "conversion/switch", "sdl", "g-sec", "under laf"]
+# 31 Oct - 1 Nov 2026: company results ("Jio profit 8,387 crore": 8 Instagram views) and rate tables (new vs old loan rates: 71% swiped
+# away) were the weakest news Reels; the best was a "why" story (Google and Bitcoin falling together: 1,213 views)
+RESULTS = ["net profit", "profit rises", "profit jumps", "profit falls", "profit up", "profit down", "q1 ", "q2 ", "q3 ", "q4 ", "quarterly",
+           "results", "earnings", "revenue", "ebitda", "record profit", "posts profit", "reports profit"]
+RATE_TABLE = ["lending rate", "deposit rate", "weighted average", "mclr", "base rate", "interest rates on", "wadtdr", "walr"]
 FRESH_HOURS = 24
 # A buffered Short posts up to a week later (founder, 30 Oct 2026: "today, 22 Oct" Shorts posted on 25-27 Oct reached 3-15 people):
 # headlines tied to a day go only to the same-day news Short (engine.news), never into the buffer.
@@ -152,6 +157,13 @@ def score(item: dict) -> int:
     elif any(k in blob for k in HOUSEHOLD):
         s += 1
     return s
+
+
+def news_score(item: dict) -> int:
+    """score() for the news, extra and Top 10 Reels only (the daily painted Shorts keep score()): company results and rate tables
+    fall behind the stories that touch the viewer."""
+    blob = f" {item.get('title', '')} {item.get('summary', '')} ".lower()
+    return score(item) - (4 if any(w in blob for w in RESULTS + RATE_TABLE) else 0)
 
 
 def pick_finance(items: list, used_links: set, now: datetime, news: bool = False, hours: int = FRESH_HOURS) -> dict | None:

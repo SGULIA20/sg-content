@@ -74,13 +74,19 @@ def run(root: Path = ROOT, channel: str = "sglearning", now_utc: datetime | None
         return 0
     posted, problems = [], []
     need = required(env)
+    fresh_reel = False
     for piece in due(root, now_utc, channel, env):
+        if fresh_reel and not piece.ids.get("ig_reel_id"):
+            print(f"{piece.id}: waits for the next run (one new Reel per run, so two never land minutes apart)", flush=True)
+            continue
+        had_reel = bool(piece.ids.get("ig_reel_id"))
         try:
             piece = ig_publish(piece, env, check_media=True) if check_media else ig_publish(piece, env)
         except InstagramError as e:                     # Threads still goes out; the next run retries what Instagram missed
             problems.append(f"{piece.id}: instagram: {e}")
             pieces.transition(piece, piece.status, f"instagram: {str(e)[:200]}"); pieces.save(piece, root)
             gitsync.safe_commit(root, f"publish: {piece.id} partial")
+        fresh_reel = fresh_reel or (not had_reel and bool(piece.ids.get("ig_reel_id")))
         if not piece.ids.get("threads_id"):
             try:
                 from . import secrets

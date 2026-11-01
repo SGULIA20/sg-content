@@ -86,7 +86,7 @@ STORY_WORDS = (150, 260)                      # 60-105 s at ~2.5 words/s; the up
 STORY_WORDS_BY_CHANNEL = {"sglearning": (85, 125)}     # money Shorts 35-45 s (founder, 30 Oct 2026, "C": a one-week test against the 60-74 s ones)
 
 
-NEWS_STORY_WORDS = (115, 155)                 # a breaking-news or extra Reel explains why, impact and remedies: 50-60 s (founder, 29 Oct 2026)
+NEWS_STORY_WORDS = (75, 105)                  # a breaking-news or extra Reel: 30-40 s, one clear point (founder, 1 Nov 2026: people watched 5-11 s of 50-60 s)
 ROUNDUP_WORDS = (125, 170)                    # the Top 10: twelve one-line scenes (31 Oct 2026: a good draft of 156 words was turned down)
 
 
