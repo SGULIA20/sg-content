@@ -1,0 +1,36 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.80,Default,,0,0,0,,Kya BITS Pilani ki tuition fees
+Dialogue: 0,0:00:01.80,0:00:03.20,Default,,0,0,0,,poori maaf ho sakti hai?
+Dialogue: 0,0:00:03.65,0:00:05.66,Default,,0,0,0,,Agle saal se BITS Pilani top
+Dialogue: 0,0:00:05.66,0:00:07.66,Default,,0,0,0,,1,000 rankers ki poori tuition maaf
+Dialogue: 0,0:00:07.66,0:00:08.33,Default,,0,0,0,,karega.
+Dialogue: 0,0:00:08.78,0:00:11.86,Default,,0,0,0,,BITSAT yaani BITS ka apna entrance
+Dialogue: 0,0:00:11.86,0:00:12.42,Default,,0,0,0,,exam.
+Dialogue: 0,0:00:12.87,0:00:15.22,Default,,0,0,0,,Pichhle saal toppers ke admission kaafi
+Dialogue: 0,0:00:15.22,0:00:15.64,Default,,0,0,0,,badhe,
+Dialogue: 0,0:00:15.64,0:00:17.35,Default,,0,0,0,,isliye darwaza aur khula.
+Dialogue: 0,0:00:17.80,0:00:18.28,Default,,0,0,0,,Shart ek:
+Dialogue: 0,0:00:18.28,0:00:21.14,Default,,0,0,0,,parivar ki saalana kamai 20 lakh
+Dialogue: 0,0:00:21.14,0:00:23.28,Default,,0,0,0,,se zyada nahi honi chahiye.
+Dialogue: 0,0:00:23.73,0:00:24.41,Default,,0,0,0,,Shart do:
+Dialogue: 0,0:00:24.41,0:00:25.77,Default,,0,0,0,,har saal 7.5 CGPA,
+Dialogue: 0,0:00:25.77,0:00:27.81,Default,,0,0,0,,yaani achhe grade,
+Dialogue: 0,0:00:27.81,0:00:29.85,Default,,0,0,0,,banaye rakhne honge.
+Dialogue: 0,0:00:30.30,0:00:30.73,Default,,0,0,0,,Fees maaf,
+Dialogue: 0,0:00:30.73,0:00:32.89,Default,,0,0,0,,toh education loan ki EMI bach
+Dialogue: 0,0:00:32.89,0:00:33.54,Default,,0,0,0,,sakti hai.
+Dialogue: 0,0:00:33.54,0:00:35.70,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:36.15,0:00:37.83,Default,,0,0,0,,Yeh us dost ko bhejo jiska
+Dialogue: 0,0:00:37.83,0:00:39.51,Default,,0,0,0,,bachcha BITSAT de raha hai.

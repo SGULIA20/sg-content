@@ -1,0 +1,60 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.54,Default,,0,0,0,,Silver 19.17 percent gira,
+Dialogue: 0,0:00:02.54,0:00:03.63,Default,,0,0,0,,aapka gold?
+Dialogue: 0,0:00:03.63,0:00:05.44,Default,,0,0,0,,Aur baaki khabrein.
+Dialogue: 0,0:00:05.89,0:00:06.18,Default,,0,0,0,,Ek:
+Dialogue: 0,0:00:06.18,0:00:08.80,Default,,0,0,0,,Sone mein 7.23 percent giravat,
+Dialogue: 0,0:00:08.80,0:00:11.72,Default,,0,0,0,,mehngai aur America ke byaaj ka
+Dialogue: 0,0:00:11.72,0:00:12.01,Default,,0,0,0,,dar.
+Dialogue: 0,0:00:12.46,0:00:12.69,Default,,0,0,0,,Do:
+Dialogue: 0,0:00:12.69,0:00:14.94,Default,,0,0,0,,BITS Pilani top rankers ki poori
+Dialogue: 0,0:00:14.94,0:00:16.07,Default,,0,0,0,,fees maaf karega,
+Dialogue: 0,0:00:16.07,0:00:17.42,Default,,0,0,0,,income limit hai.
+Dialogue: 0,0:00:17.87,0:00:18.17,Default,,0,0,0,,Teen:
+Dialogue: 0,0:00:18.17,0:00:20.58,Default,,0,0,0,,Diesel export par tax badha,
+Dialogue: 0,0:00:20.58,0:00:21.48,Default,,0,0,0,,Indian Oil,
+Dialogue: 0,0:00:21.48,0:00:21.78,Default,,0,0,0,,BPCL,
+Dialogue: 0,0:00:21.78,0:00:23.59,Default,,0,0,0,,HPCL shares nazar mein.
+Dialogue: 0,0:00:24.04,0:00:24.31,Default,,0,0,0,,Chaar:
+Dialogue: 0,0:00:24.31,0:00:26.20,Default,,0,0,0,,November mein Coal India,
+Dialogue: 0,0:00:26.20,0:00:27.02,Default,,0,0,0,,Infosys,
+Dialogue: 0,0:00:27.02,0:00:27.29,Default,,0,0,0,,HUL,
+Dialogue: 0,0:00:27.29,0:00:29.72,Default,,0,0,0,,Power Grid ki dividend dates.
+Dialogue: 0,0:00:30.17,0:00:30.42,Default,,0,0,0,,Paanch:
+Dialogue: 0,0:00:30.42,0:00:32.90,Default,,0,0,0,,Sone-chaandi ke bhaav ab pichhle saal
+Dialogue: 0,0:00:32.90,0:00:34.14,Default,,0,0,0,,December jaise,
+Dialogue: 0,0:00:34.14,0:00:36.37,Default,,0,0,0,,shaadi ki kharidari sasti.
+Dialogue: 0,0:00:36.82,0:00:37.09,Default,,0,0,0,,Chhah:
+Dialogue: 0,0:00:37.09,0:00:40.12,Default,,0,0,0,,Sasti keemat wale kai penny shares
+Dialogue: 0,0:00:40.12,0:00:43.14,Default,,0,0,0,,teen mahine mein bahut zyada toote.
+Dialogue: 0,0:00:43.59,0:00:43.91,Default,,0,0,0,,Saat:
+Dialogue: 0,0:00:43.91,0:00:45.83,Default,,0,0,0,,Is hafte Infosys,
+Dialogue: 0,0:00:45.83,0:00:49.03,Default,,0,0,0,,Asian Paints jaisi kai companies ki
+Dialogue: 0,0:00:49.03,0:00:49.99,Default,,0,0,0,,dividend,
+Dialogue: 0,0:00:49.99,0:00:51.27,Default,,0,0,0,,bonus dates.
+Dialogue: 0,0:00:51.72,0:00:52.03,Default,,0,0,0,,Aath:
+Dialogue: 0,0:00:52.03,0:00:54.24,Default,,0,0,0,,PNB ke union ne fraud ke
+Dialogue: 0,0:00:54.24,0:00:56.76,Default,,0,0,0,,baad har branch ka audit maanga.
+Dialogue: 0,0:00:57.21,0:00:57.44,Default,,0,0,0,,Nau:
+Dialogue: 0,0:00:57.44,0:01:00.02,Default,,0,0,0,,Amazon ne devices unit mein kai
+Dialogue: 0,0:01:00.02,0:01:01.66,Default,,0,0,0,,software naukriyan kaatin,
+Dialogue: 0,0:01:01.66,0:01:03.53,Default,,0,0,0,,wajah efficiency batayi.
+Dialogue: 0,0:01:03.98,0:01:04.20,Default,,0,0,0,,Das:
+Dialogue: 0,0:01:04.20,0:01:07.45,Default,,0,0,0,,Reliance Digital iPhone par exchange offer,
+Dialogue: 0,0:01:07.45,0:01:10.06,Default,,0,0,0,,sasti keemat purana phone dene par.
+Dialogue: 0,0:01:10.51,0:01:12.31,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:01:12.31,0:01:13.21,Default,,0,0,0,,Us dost ko bhejo,
+Dialogue: 0,0:01:13.21,0:01:15.01,Default,,0,0,0,,jo sone mein paisa lagaye baitha
+Dialogue: 0,0:01:15.01,0:01:15.19,Default,,0,0,0,,hai.

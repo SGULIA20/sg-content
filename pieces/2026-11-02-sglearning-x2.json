@@ -1,0 +1,328 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 1000.0,
+   "quote": "BITS Pilani will offer full tuition fee scholarships to candidates securing ranks among the top 1,000 in its entrance examination from 2027, expanding financial assistance for high-performing students from families with an annual income of up to Rs 20 lakh.",
+   "source_date": "2026-11-01",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/jobs/fresher/bits-pilani-opens-scholarship-doors-wider-offers-full-fee-waiver-to-top-1000-rankers/articleshow/135428320.cms",
+   "text": "BITS Pilani will provide full four-year tuition scholarships to students securing ranks among the top 1,000 in BITSAT starting from 2027.",
+   "unit": "rank"
+  },
+  {
+   "label": "reported",
+   "number": 20.0,
+   "quote": "BITS Pilani is expanding its merit-based financial assistance from 2027, offering full tuition scholarships to its top 1,000 entrance test rankers from families earning up to Rs 20 lakh annually.",
+   "source_date": "2026-11-01",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/jobs/fresher/bits-pilani-opens-scholarship-doors-wider-offers-full-fee-waiver-to-top-1000-rankers/articleshow/135428320.cms",
+   "text": "The full tuition fee waiver is available to qualifying candidates whose family income does not exceed an annual ceiling of Rs 20 lakh.",
+   "unit": "lakh INR"
+  },
+  {
+   "label": "reported",
+   "number": 7.5,
+   "quote": "The scholarship will cover tuition fees for all four years of undergraduate study, provided recipients maintain a minimum cumulative grade point average (CGPA) of 7.5 at their respective campuses, Group Vice Chancellor V Ramgopal Rao told PTI.",
+   "source_date": "2026-11-01",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/jobs/fresher/bits-pilani-opens-scholarship-doors-wider-offers-full-fee-waiver-to-top-1000-rankers/articleshow/135428320.cms",
+   "text": "Students receiving the scholarship must maintain a minimum cumulative grade point average of 7.5 across four years of study to retain the fee waiver.",
+   "unit": "CGPA"
+  },
+  {
+   "label": "reported",
+   "number": 50.0,
+   "quote": "Overall, admissions from candidates in the top 1,000 ranks increased by 50% during the year.",
+   "source_date": "2026-11-01",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/jobs/fresher/bits-pilani-opens-scholarship-doors-wider-offers-full-fee-waiver-to-top-1000-rankers/articleshow/135428320.cms",
+   "text": "BITS Pilani recorded a 50% increase in admissions from candidates in the top 1,000 entrance examination ranks during 2026.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 324.0,
+   "quote": "In 2026, the number of eligible top-500 rankers who joined BITS Pilani increased by 50 pc, and the BITSAT score needed to be in that group went up from 314 to 324,\" Rao was quoted as saying.",
+   "source_date": "2026-11-01",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/jobs/fresher/bits-pilani-opens-scholarship-doors-wider-offers-full-fee-waiver-to-top-1000-rankers/articleshow/135428320.cms",
+   "text": "The BITSAT score needed to join the eligible top-500 cohort climbed to 324 in 2026 from 314 previously.",
+   "unit": "score"
+  },
+  {
+   "label": "reported",
+   "number": 190.0,
+   "quote": "BITS Pilani disbursed approximately Rs 190 crore through scholarships, fee waivers and fellowships across its First Degree, Higher Degree and PhD programmes in the academic year 2025-26.",
+   "source_date": "2026-11-01",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/jobs/fresher/bits-pilani-opens-scholarship-doors-wider-offers-full-fee-waiver-to-top-1000-rankers/articleshow/135428320.cms",
+   "text": "BITS Pilani disbursed approximately Rs 190 crore across scholarships, fee waivers, and fellowships during academic year 2025-26.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "reported",
+   "number": 101.0,
+   "quote": "Of this, around Rs 101 crore was allocated to undergraduate First Degree students through merit-based, merit-cum-need and international student scholarships.",
+   "source_date": "2026-11-01",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/jobs/fresher/bits-pilani-opens-scholarship-doors-wider-offers-full-fee-waiver-to-top-1000-rankers/articleshow/135428320.cms",
+   "text": "Undergraduate First Degree students received Rs 101 crore in financial aid through merit, need-based, and international scholarships in 2025-26.",
+   "unit": "crore INR"
+  },
+  {
+   "date": "2026-11-01",
+   "label": "reported",
+   "source": "ET Jobs",
+   "text": "BITS Pilani will offer full four-year tuition scholarships to candidates ranked among the top 1,000 in BITSAT from 2027, subject to an annual family income ceiling of Rs 20 lakh and a minimum CGPA of 7.5. The expansion follows a 50% rise in admissions from the top 1,000 rankers in 2026.",
+   "url": "https://economictimes.indiatimes.com/jobs/fresher/bits-pilani-opens-scholarship-doors-wider-offers-full-fee-waiver-to-top-1000-rankers/articleshow/135428320.cms"
+  }
+ ],
+ "id": "2026-11-02-sglearning-x2",
+ "ids": {
+  "budget": {
+   "day": "2026-11-01",
+   "drafts": 2,
+   "research": 1
+  },
+  "cost": {
+   "inr": 0.0,
+   "usd": 0.116774,
+   "voice": 8
+  },
+  "drafts": 2,
+  "yt_id": "AeBhvJNfP3s"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-02",
+ "reasons": [
+  "try 1: length: 106 words, allowed 75-105"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Kya BITS Pilani ki tuition fees poori maaf ho sakti hai?\nAgle saal se BITSAT mein top 1,000 rank walon ko full tuition scholarship, reportedly.\nShart: parivar ki kamai 20 lakh tak aur 7.5 CGPA banaye rakhna.\nAapke ghar mein kaun BITSAT ki taiyaari kar raha hai?\nYeh investment advice nahi hai.\nUs dost ko bhejo jiska bachcha BITSAT de raha hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#PersonalFinanceIndia",
+     "#MoneyTipsHindi",
+     "#EMI",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Kya BITS Pilani ki tuition fees poori maaf ho sakti hai? Agle saal se top 1,000 BITSAT rank walon ko scholarship, reportedly, kamai 20 lakh tak aur 7.5 CGPA ki shart ke saath. Aapke ghar mein kaun BITSAT de raha hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Kya BITS Pilani ki tuition fees poori maaf ho sakti hai? Agle saal se top 1,000 BITSAT rank walon ko scholarship milegi, reportedly, par parivar ki kamai aur grade ki shart ke saath. Isse education loan ki EMI ka bojh kam ho sakta hai. Share karo us dost ko jiska bachcha BITSAT de raha hai.",
+    "tags": [
+     "BITS Pilani",
+     "BITSAT",
+     "scholarship",
+     "engineering admission",
+     "education loan",
+     "fee waiver",
+     "college fees",
+     "money tips hindi",
+     "learning with sg"
+    ],
+    "title": "BITS Pilani fees maaf? Kisko milegi?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "1,000",
+    "line": "Top rank walon ki fees maaf",
+    "source": "ET Jobs"
+   },
+   {
+    "big_number": "₹20 lakh",
+    "line": "Family kamai ki seema",
+    "source": "ET Jobs"
+   },
+   {
+    "big_number": "7.5",
+    "line": "Achhe grade banaye rakhne honge",
+    "source": "ET Jobs"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Yeh us dost ko bhejo jiska bachcha BITSAT de raha hai.",
+  "hook": "Kya BITS Pilani ki tuition fees poori maaf ho sakti hai?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "BITS Pilani ki fees maaf?",
+      "source": "ET Jobs"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Kya BITS Pilani ki tuition fees poori maaf ho sakti hai?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "1,000",
+      "line": "Top rank walon ki fees maaf",
+      "source": "ET Jobs"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Agle saal se BITS Pilani top 1,000 rankers ki poori tuition maaf karega."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "BITSAT yaani BITS ka exam",
+      "source": "ET Jobs"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "BITSAT yaani BITS ka apna entrance exam."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Toppers ke liye khula darwaza",
+      "source": "ET Jobs"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Pichhle saal toppers ke admission kaafi badhe, isliye darwaza aur khula."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "₹20 lakh",
+      "line": "Family kamai ki seema",
+      "source": "ET Jobs"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Shart ek: parivar ki saalana kamai 20 lakh se zyada nahi honi chahiye."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "7.5",
+      "line": "Achhe grade banaye rakhne honge",
+      "source": "ET Jobs"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Shart do: har saal 7.5 CGPA, yaani achhe grade, banaye rakhne honge."
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Loan ka bojh kam ho sakta",
+      "source": "ET Jobs"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Fees maaf, toh education loan ki EMI bach sakti hai. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Us dost ko bhejo",
+      "source": "ET Jobs"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Yeh us dost ko bhejo jiska bachcha BITSAT de raha hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "BITS PILANI",
+   "name_hi": "बिट्स पिलानी",
+   "scene": "A grand university gate at golden hour with a giant fee receipt stamped with a big red PAID IN FULL mark in front, and a crowd of students' hands holding up rank cards.",
+   "words": [
+    "1,000 RANK",
+    "FREE?"
+   ],
+   "words_hi": [
+    "1,000 रैंक",
+    "फ्री?"
+   ]
+  },
+  "title": "BITS Pilani ki *fees* maaf, kisko milegi? 🎓"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  3.65,
+  8.78,
+  12.87,
+  17.8,
+  23.73,
+  30.3,
+  36.15
+ ],
+ "topic": {
+  "category": "money",
+  "extra": true,
+  "graphics": true,
+  "link": "https://economictimes.indiatimes.com/jobs/fresher/bits-pilani-opens-scholarship-doors-wider-offers-full-fee-waiver-to-top-1000-rankers/articleshow/135428320.cms",
+  "look": "claymation",
+  "patch_tries": 1,
+  "published": "2026-11-01T13:11:07+00:00",
+  "rank": 3,
+  "slot_ist": "13:00",
+  "source": "ET Jobs",
+  "summary": "BITS Pilani will offer full four-year tuition scholarships to candidates ranked among the top 1,000 in BITSAT from 2027, subject to an annual family income ceiling of Rs 20 lakh and a minimum CGPA of 7.5. The expansion follows a 50% rise in admissions from the top 1,000 rankers in 2026.",
+  "target_minutes": null,
+  "title": "BITS Pilani opens scholarship doors wider, offers full fee waiver to top 1,000 rankers",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-11-01T20:55:15+00:00",
+ "writer": "claude"
+}
