@@ -17,7 +17,7 @@
    "budget_per_channel": 70
   }
  },
- "_limits_note": "Founder, 1 Nov 2026: continue the ads, do not pause, until 31 Jan 2027. $5 a day per channel (budget_per_channel 70 over the 14-day formula = $5/day), about $310 a month for both; monthly_cap 330 is only a safety net against an overspend. No cost-per-subscriber pause (min_spend / max_cost_per_sub removed). Earlier: $1.50 a day refused by Google's $5 Demand Gen floor (31 Oct).",
+ "_limits_note": "Founder, 1 Nov 2026: a 1-month trial without pausing, to 30 Nov 2026; December only if the founder says go after the review. $5 a day per channel (budget_per_channel 70 over the 14-day formula = $5/day), about $310 a month for both; monthly_cap 330 is only a safety net against an overspend. No cost-per-subscriber pause. Earlier: $1.50 a day refused by Google's $5 Demand Gen floor (31 Oct).",
  "ad_videos": {
   "sglearning": [
    "wO9L5aUZoQ4"
@@ -28,5 +28,5 @@
   ]
  },
  "_ad_videos_note": "Founder, 31 Oct 2026: videos added to each test ad, picked by topic because views were too few to rank: Learning with SG + Credit Card Minimum Due (not the off-topic CIMA exam video); SG-MYTH-WORLD + Jagannath flag and Saraswati river. Empty = pick by watch data.",
- "run_until": "2027-01-31"
+ "run_until": "2026-11-30"
 }
