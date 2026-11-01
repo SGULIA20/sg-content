@@ -34,3 +34,19 @@ def test_one_channel_error_does_not_hide_the_other():
         return "t"
     assert yppstatus.run({}, notify=sent.append, call=_call, token_for=tok, now=NOW) == 0
     assert "could not read" in sent[0] and "SG-MYTH-WORLD: 212 subscribers" in sent[0] and "500.0 public long-video watch hours" in sent[0]
+
+
+def test_lowercase_type_names_are_understood():
+    def call(method, url, tok, json_body=None, data=None, headers=None):
+        if "/channels?" in url:
+            return 200, {}, {"items": [{"snippet": {"title": "X"}, "statistics": {"subscriberCount": "5"}}]}
+        q = url.split("?", 1)[1]
+        if "insightTrafficSourceType" in q:
+            return 200, {}, {"rows": [["videoOnDemand", "advertising", 60]]}
+        if "subscribersGained" in q:
+            return 200, {}, {"rows": [[1]]}
+        if "views" in q:
+            return 200, {}, {"rows": [["shorts", 700]]}
+        return 200, {}, {"rows": [["videoOnDemand", 600], ["shorts", 300]]}
+    s = yppstatus.status("t", NOW.date(), call)
+    assert s["hours"] == 9.0 and s["ad_hours"] == 1.0 and s["shorts_90d"] == 700
