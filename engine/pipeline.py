@@ -7,7 +7,7 @@ from datetime import date
 from pathlib import Path
 from typing import Callable
 
-from . import art, artbatch, assemble, buffer, cards, cartoon, cast, claims, costs, gemini, lint, pieces, qa, research, secrets, slots, storyframe, topics, voice, voicebatch, writer, youtube
+from . import art, artbatch, assemble, buffer, cards, cartoon, cast, claims, costs, gemini, lint, newscard, pieces, qa, research, secrets, slots, storyframe, topics, voice, voicebatch, writer, youtube
 from .config import CHANNELS, INSTAGRAM_CAROUSEL, ROOT, VIDEO, story_words
 from .pieces import Piece
 
@@ -51,6 +51,7 @@ class Deps:
     voice_batch: Callable = None # (piece, texts, voice_id) -> "ready" | "voicing": Gemini Batch API fills the voice cache (half price, no daily cap)
     art_batch: Callable = None   # (piece, jobs) -> "ready" | "painting": Gemini Batch API fills the picture cache at half price
     voice_check: Callable = None # (wav) -> transcript: every voiced line is read back and re-made if spoken twice or cut short
+    animate_card: Callable = None  # (data, index, total, roundup, seconds, size, out) -> mp4: the moving news card (2 Nov 2026)
 
 
 def _jsonable(d: dict) -> dict:
@@ -191,13 +192,20 @@ def graphics(piece: Piece) -> bool:
     return bool(t.get("graphics") or (t.get("preset") or {}).get("graphics"))
 
 
-def _newscard(piece: Piece, i: int, scene: dict, deps: Deps, out: Path, size: tuple) -> Path:
+def _newscard(piece: Piece, i: int, scene: dict, deps: Deps, out: Path, size: tuple, line=None) -> Path:
     from . import newscard, storyframe
     t = {**(piece.topic.get("preset") or {}), **piece.topic}
     scenes = piece.script["scenes"]
     roundup = "TOP 10 ROUNDUP" in str(t.get("summary", ""))
     data = newscard.data(scene, i, len(scenes), t.get("category") or "money", roundup)
-    return deps.render_card("newscard", data, out, (size[0], size[1] - int(size[1] * storyframe.TOP)))
+    card_size = (size[0], size[1] - int(size[1] * storyframe.TOP))
+    still = deps.render_card("newscard", data, out, card_size)            # kept: the thumbnail is made from the first card
+    if newscard.MOTION and line is not None and getattr(deps, "animate_card", None):
+        try:
+            return deps.animate_card(data, i, len(scenes), roundup, line[1] + assemble.PAD_S, card_size, out.with_suffix(".mp4"))
+        except Exception as e:                                             # a still card is better than no Reel
+            print(f"moving card {i} failed ({type(e).__name__}: {str(e)[:120]}); using the still card", flush=True)
+    return still
 
 
 def _visual_for(piece: Piece, i: int, scene: dict, deps: Deps, out_dir: Path, size: tuple, line=None) -> Path:
@@ -205,7 +213,7 @@ def _visual_for(piece: Piece, i: int, scene: dict, deps: Deps, out_dir: Path, si
     kind = v.get("type", "art")
     out = out_dir / f"visual{i:02d}.png"
     if graphics(piece) and piece.kind == "short":
-        return _newscard(piece, i, scene, deps, out, size)
+        return _newscard(piece, i, scene, deps, out, size, line)
     if i == 0 and piece.channel == "arthvan" and piece.kind == "short":
         photo = _place_photo(piece, deps, out_dir, out, scene)
         if photo:
@@ -565,6 +573,7 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
                 commons=art.commons_photo, library=library, hashtags=hashtags, voice_id=default_voice,
                 cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for, subtitles=subtitles_fn,
                 voice_batch=lambda piece, texts, vid: voicebatch.voice_piece(piece, texts, vid),
-                art_batch=lambda piece, jobs: artbatch.paint_piece(piece, jobs), voice_check=voice.transcribe)
+                art_batch=lambda piece, jobs: artbatch.paint_piece(piece, jobs), voice_check=voice.transcribe,
+                animate_card=newscard.animate)
     # voice.batched (several scenes per TTS request) stays unwired: on 22 Oct 2026 the model's paragraph pauses were not distinct enough
     # to cut on, and the transcript check sent every group back to line-by-line. Wire it in once the cut is reliable.

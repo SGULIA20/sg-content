@@ -97,10 +97,15 @@ def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, 
     py = int(h * TOP)
     ph = h - py if shade_png is not None else int(h * PANEL)
     frames = max(1, int(round(seconds * FPS)))
-    chain = (f"[0:v]scale={w * 2}:{ph * 2}:force_original_aspect_ratio=increase,crop={w * 2}:{ph * 2},"
-             f"zoompan=z='{zoom_expr(seconds, punch)}':d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={w}x{ph}:fps={FPS},"
-             f"pad={w}:{h}:0:{py}:black[base];[base][1:v]overlay=0:0:shortest=1[t]")
-    inputs = ["-loop", "1", "-i", str(panel), "-loop", "1", "-i", str(title_png)]
+    if Path(panel).suffix == ".mp4":                          # a moving news card (2 Nov 2026): already animated, no push-in
+        chain = (f"[0:v]scale={w}:{ph}:force_original_aspect_ratio=increase,crop={w}:{ph},fps={FPS},setsar=1,"
+                 f"pad={w}:{h}:0:{py}:black[base];[base][1:v]overlay=0:0:shortest=1[t]")
+        inputs = ["-stream_loop", "-1", "-i", str(panel), "-loop", "1", "-i", str(title_png)]
+    else:
+        chain = (f"[0:v]scale={w * 2}:{ph * 2}:force_original_aspect_ratio=increase,crop={w * 2}:{ph * 2},"
+                 f"zoompan=z='{zoom_expr(seconds, punch)}':d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={w}x{ph}:fps={FPS},"
+                 f"pad={w}:{h}:0:{py}:black[base];[base][1:v]overlay=0:0:shortest=1[t]")
+        inputs = ["-loop", "1", "-i", str(panel), "-loop", "1", "-i", str(title_png)]
     last, k0 = "[t]", 2
     if watermark_png is not None:
         wm = int(min(w, ph) * 0.34)
