@@ -118,13 +118,18 @@ def check(env=None, call=instagram.call, notify=telegram.send) -> int:
     except instagram.InstagramError as e:
         print(f"debug_token not available: {str(e)[:160]}", flush=True)
     now = datetime.now(timezone.utc)
-    asked = total = 0
+    asked = total = own = 0
     media = call("GET", f"/{ig_id}/media", token, {"fields": "id,timestamp", "limit": "30"}).get("data", [])
     for m in media:
         if now - _when(m["timestamp"]) > WINDOW:
             continue
-        for c in call("GET", f"/{m['id']}/comments", token, {"fields": "id,text,from", "limit": "50"}).get("data", []):
-            if (c.get("from") or {}).get("id") == ig_id:
+        for c in call("GET", f"/{m['id']}/comments", token, {"fields": "id,text,from,timestamp", "limit": "50"}).get("data", []):
+            who = c.get("from") or {}
+            mine = who.get("id") == ig_id
+            print(f"comment on {m['id']} at {c.get('timestamp', '?')} by @{who.get('username', '?')}{' (our own account, ignored)' if mine else ''}: "
+                  f"{(c.get('text') or '')[:60]!r}", flush=True)                 # the run log only, never Telegram
+            if mine:
+                own += 1
                 continue
             total += 1
             asked += bool(ASKS.search(c.get("text") or ""))
@@ -132,7 +137,7 @@ def check(env=None, call=instagram.call, notify=telegram.send) -> int:
     verdict = ("✅ DM permission present" if scopes and not missing else
                f"❌ missing: {', '.join(missing)}" if missing else "❓ Instagram did not list the token's permissions (debug_token unavailable); "
                "the only sure test is a real send")
-    text = (f"💬 DM check for @{me.get('username', '?')}: {verdict}. Last 7 days: {total} comments from others on our posts, {asked} asked for the app. "
+    text = (f"💬 DM check for @{me.get('username', '?')}: {verdict}. Last 7 days: {total} comments from others on our posts, {asked} asked for the app, {own} from our own account (ignored). "
             f"Token scopes: {', '.join(scopes) or 'not listed'}.")
     print(text, flush=True)
     notify(text)
