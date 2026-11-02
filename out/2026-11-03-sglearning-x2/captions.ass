@@ -1,0 +1,34 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.97,Default,,0,0,0,,Kya aapki SIP ka paisa naye
+Dialogue: 0,0:00:01.97,0:00:03.44,Default,,0,0,0,,IPO mein jaata hai?
+Dialogue: 0,0:00:03.89,0:00:04.56,Default,,0,0,0,,EAAA India,
+Dialogue: 0,0:00:04.56,0:00:06.79,Default,,0,0,0,,paisa sambhalne wali company,
+Dialogue: 0,0:00:06.79,0:00:08.13,Default,,0,0,0,,Monday ko listed hui.
+Dialogue: 0,0:00:08.58,0:00:11.48,Default,,0,0,0,,Bade kharidaron ne pehle din hi
+Dialogue: 0,0:00:11.48,0:00:13.86,Default,,0,0,0,,316.3 crore ke share utha liye.
+Dialogue: 0,0:00:14.31,0:00:17.15,Default,,0,0,0,,Sabse bada kharidaar HDFC Mutual Fund
+Dialogue: 0,0:00:17.15,0:00:17.41,Default,,0,0,0,,tha,
+Dialogue: 0,0:00:17.41,0:00:19.47,Default,,0,0,0,,jahan kaafi SIP jaati hain.
+Dialogue: 0,0:00:19.92,0:00:22.53,Default,,0,0,0,,SIP ka paisa fund kahin lagata
+Dialogue: 0,0:00:22.53,0:00:22.79,Default,,0,0,0,,hai,
+Dialogue: 0,0:00:22.79,0:00:24.36,Default,,0,0,0,,shayad aise share mein.
+Dialogue: 0,0:00:24.81,0:00:27.21,Default,,0,0,0,,Share IPO bhaav se 3.8% upar
+Dialogue: 0,0:00:27.21,0:00:27.74,Default,,0,0,0,,bandh hua,
+Dialogue: 0,0:00:27.74,0:00:29.61,Default,,0,0,0,,yaani halka sa faayda.
+Dialogue: 0,0:00:30.06,0:00:31.84,Default,,0,0,0,,Fund ki monthly share list kholo.
+Dialogue: 0,0:00:31.84,0:00:33.82,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:34.27,0:00:35.62,Default,,0,0,0,,Yeh us dost ko bhejo,
+Dialogue: 0,0:00:35.62,0:00:37.21,Default,,0,0,0,,jo SIP karta hai par list
+Dialogue: 0,0:00:37.21,0:00:38.11,Default,,0,0,0,,nahi dekhta.
