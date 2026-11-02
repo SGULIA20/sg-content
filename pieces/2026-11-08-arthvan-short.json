@@ -5,7 +5,7 @@
  "ids": {
   "budget": {
    "day": "2026-11-02",
-   "research": 3
+   "research": 4
   }
  },
  "kind": "short",
@@ -13,28 +13,32 @@
  "reasons": [
   "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
-  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "research budget used for today (4 calls); the next quota day retries"
  ],
  "script": null,
- "status": "failed-research",
+ "status": "rejected",
  "timings": [],
  "topic": {
   "allowed_sources": [
-   "gsi.gov.in",
+   "tirumala.org (TTD)",
    "en.wikipedia.org",
-   "Skanda Purana (Lonar Mahatmya)"
+   "Varaha Purana",
+   "Bhavishyottara Purana"
   ],
   "hooks": [
-   "Ek ulka ne 50,000 saal pehle yeh jheel banayi?",
-   "Lonar ka paani gulabi kyon hua?",
-   "Jheel ke kinare Daitya Sudan mandir ki kahani"
+   "Roz 1 lakh log, kitna daan?",
+   "Balaji ki moorti par asli baal?",
+   "Hundi ka paisa kahan jaata hai?"
   ],
-  "id": "lonar-crater",
-  "notes": "Science is solid here; the demon story is scripture/legend.",
-  "place": "Lonar, Maharashtra",
+  "id": "tirupati-facts",
+  "notes": "Use TTD's own numbers with dates; the hair story is legend.",
+  "place": "Tirumala, Andhra Pradesh",
+  "priority": 1,
   "target_minutes": null,
-  "title_hi": "Lonar, ulka se bani jheel"
+  "title_hi": "Tirupati, duniya ka sabse ameer mandir"
  },
- "updated": "2026-11-02T20:51:29+00:00",
+ "updated": "2026-11-02T22:31:10+00:00",
  "writer": ""
 }
