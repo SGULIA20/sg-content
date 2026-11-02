@@ -97,3 +97,4 @@
 {"day": "2026-11-01", "at": "2026-11-01T15:08:30+00:00", "ok": true, "dry_run": false, "made": [], "stopped": ""}
 {"day": "2026-11-01", "at": "2026-11-01T16:03:08+00:00", "ok": true, "dry_run": false, "made": [], "stopped": ""}
 {"day": "2026-11-03", "at": "2026-11-02T20:51:47+00:00", "ok": true, "dry_run": false, "made": [["2026-11-22-arthvan-long", "failed-research"], ["2026-11-08-arthvan-short", "failed-research"], ["2026-11-08-sglearning-short", "failed-research"], ["2026-11-09-arthvan-short", "failed-research"]], "stopped": ""}
+{"day": "2026-11-03", "at": "2026-11-02T22:31:22+00:00", "ok": true, "dry_run": false, "made": [["2026-11-22-arthvan-long", "rejected"], ["2026-11-08-arthvan-short", "rejected"], ["2026-11-08-sglearning-short", "rejected"], ["2026-11-09-arthvan-short", "rejected"]], "stopped": ""}
