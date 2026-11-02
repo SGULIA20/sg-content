@@ -1,13 +1,13 @@
 {
  "day": "2026-11-02",
  "currency": "USD",
- "spend_today": 0.0,
- "spend_test": 20.09,
- "spend_month": 10.09,
+ "spend_today": 7.33,
+ "spend_test": 27.64,
+ "spend_month": 17.63,
  "test_start": "2026-10-31",
- "subs_gained": 0,
- "subs_above_usual": 0,
- "cost_per_sub": null,
+ "subs_gained": 19,
+ "subs_above_usual": 17,
+ "cost_per_sub": 1.63,
  "paused_now": [],
  "reason": ""
 }
