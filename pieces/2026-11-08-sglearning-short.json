@@ -5,7 +5,7 @@
  "ids": {
   "budget": {
    "day": "2026-11-02",
-   "research": 3
+   "research": 4
   }
  },
  "kind": "short",
@@ -13,20 +13,22 @@
  "reasons": [
   "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
-  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "research budget used for today (4 calls); the next quota day retries"
  ],
  "script": null,
- "status": "failed-research",
+ "status": "rejected",
  "timings": [],
  "topic": {
-  "link": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-manufacturing-strengthens-in-october-input-prices-stay-high/articleshow/135472594.cms",
-  "published": "2026-11-02T19:17:36+00:00",
+  "link": "https://economictimes.indiatimes.com/news/economy/policy/budget-2027-customs-duty-relief-on-118-goods-under-review/articleshow/135472857.cms",
+  "published": "2026-11-02T19:18:39+00:00",
   "rank": 3,
-  "source": "ET Markets",
-  "summary": "US manufacturing activity accelerated in October, with the ISM manufacturing PMI rising to 55.5 from 54.5 in September, beating Reuters-polled economists' expectations. Strong consumer and AI-related business spending supported growth, but factory input prices remained elevated at 75.2, reinforcing concerns that US inflation could stay above the Federal Reserve's 2% target.",
+  "source": "ET Economy",
+  "summary": "The Indian government is currently reviewing customs duty concessions applicable to 118 products set to expire. This review involves input from respective line ministries and industry stakeholders regarding these exemptions. Goods under review include materials for power projects and certain medical devices. A focus is on correcting the inverted duty structure to support local manufacturing initiatives. The outcomes of this review will influence the upcoming budget for 2027-28.",
   "target_minutes": null,
-  "title": "US manufacturing strengthens in October, input prices stay high"
+  "title": "Budget 2027: Customs duty relief on 118 goods under review"
  },
- "updated": "2026-11-02T20:51:43+00:00",
+ "updated": "2026-11-02T22:31:18+00:00",
  "writer": ""
 }
