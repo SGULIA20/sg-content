@@ -1,28 +1,28 @@
 {
- "start": "2026-10-22",
- "end": "2026-10-28",
+ "start": "2026-10-26",
+ "end": "2026-11-01",
  "data": {
   "sglearning": {
-   "views": 219,
-   "minutes": 97,
+   "views": 283,
+   "minutes": 105,
    "subs_gained": 2,
-   "avg_view_pct": 64.1,
-   "shorts_avg_views": 10,
-   "best_short": 27,
-   "long_avg_views": 31,
+   "avg_view_pct": 56.5,
+   "shorts_avg_views": 13,
+   "best_short": 46,
+   "long_avg_views": 18,
    "ig": {
-    "reach": 5144,
-    "followers": 17392
+    "reach": 10169,
+    "followers": 17293
    }
   },
   "arthvan": {
-   "views": 818,
-   "minutes": 547,
-   "subs_gained": 1,
-   "avg_view_pct": 74.7,
-   "shorts_avg_views": 115,
-   "best_short": 207,
-   "long_avg_views": 4
+   "views": 1593,
+   "minutes": 1076,
+   "subs_gained": 2,
+   "avg_view_pct": 73.5,
+   "shorts_avg_views": 158,
+   "best_short": 440,
+   "long_avg_views": 3
   }
  }
 }
