@@ -5,7 +5,7 @@ import re
 import subprocess
 from pathlib import Path
 
-from . import assemble, captions, cards, lint, music
+from . import assemble, captions, cards, lint, music, sfx
 from .config import CHANNELS, STORY_MAX_S, VIDEO
 
 FPS = VIDEO["fps"]
@@ -183,9 +183,20 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     total = sum(durations) + END_S
     bed = music.bed("light", total + 5)
     out = out_dir / ("reel.mp4" if piece.kind == "short" else "long.mp4")
-    _run(["-f", "concat", "-safe", "0", "-i", str(concat), "-i", str(voice_wav), "-stream_loop", "-1", "-i", str(bed),
+    moving = [Path(p).suffix == ".mp4" for p in panels]                 # the moving news cards (2 Nov 2026) get sound cues, nothing else does
+    extra_in, chain_sfx, mix_n = [], "", 2
+    if short and any(moving):
+        numbered = [bool(((sc.get("visual") or {}).get("card") or {}).get("big_number")) for sc in piece.script["scenes"]]
+        cues = sfx.track(sfx.events_for([st for st, m in zip(starts, moving) if m], [nm for nm, m in zip(numbered, moving) if m]),
+                         total, out_dir / "sfx.wav")
+        extra_in = ["-i", str(cues)]
+        chain_sfx = f"[3:a]aresample=48000,apad=whole_dur={total:.3f},loudnorm=I={assemble.MUSIC_LUFS + 4}:TP=-3:LRA=7[s];"
+        mix_n = 3
+    mix_in = "[v][m]" + ("[s]" if mix_n == 3 else "")
+    _run(["-f", "concat", "-safe", "0", "-i", str(concat), "-i", str(voice_wav), "-stream_loop", "-1", "-i", str(bed), *extra_in,
           "-filter_complex", (f"[1:a]aresample=48000,apad=whole_dur={total:.3f},loudnorm=I={assemble.VOICE_LUFS}:TP=-1.5:LRA=11[v];"
                               f"[2:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS,afade=t=out:st={max(0.0, total - 2):.2f}:d=2,"
-                              f"loudnorm=I={assemble.MUSIC_LUFS}:TP=-6:LRA=7[m];[v][m]amix=inputs=2:duration=longest:normalize=0,apad=whole_dur={total:.3f},loudnorm=I={assemble.MIX_LUFS}:TP=-1.5:LRA=11[aout]"),
+                              f"loudnorm=I={assemble.MUSIC_LUFS}:TP=-6:LRA=7[m];{chain_sfx}{mix_in}amix=inputs={mix_n}:duration=longest:normalize=0,"
+                              f"apad=whole_dur={total:.3f},loudnorm=I={assemble.MIX_LUFS}:TP=-1.5:LRA=11[aout]"),
           "-map", "0:v", "-map", "[aout]", "-t", f"{total:.3f}", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", str(out)])
     return out
