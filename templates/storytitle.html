@@ -3,11 +3,11 @@
 @font-face{font-family:Inter;src:url({{FONTS}}/Inter.ttf)}
 html,body{margin:0;padding:0;background:#000}
 #root{position:relative;width:{{W}}px;height:{{H}}px;overflow:hidden;background:#000;font-family:Inter,Dev,sans-serif;color:#fff;box-sizing:border-box}
-.strip{position:absolute;left:44px;right:44px;top:22px;display:flex;align-items:center;justify-content:space-between;font-weight:700;font-size:30px;letter-spacing:1px;color:#D7DCEA;text-transform:uppercase}
+.strip{position:absolute;left:44px;right:44px;top:22px;display:{{strip}};align-items:center;justify-content:space-between;font-weight:700;font-size:30px;letter-spacing:1px;color:#D7DCEA;text-transform:uppercase}
 .strip .ch{display:flex;align-items:center;gap:12px}
 .strip .ch::before{content:"";display:inline-block;width:0;height:0;border-left:22px solid #FFD166;border-top:13px solid transparent;border-bottom:13px solid transparent}
 .strip .h{color:#9AA4BF;text-transform:none;letter-spacing:0;font-weight:600}
-.title{position:absolute;left:60px;right:60px;top:72px;bottom:14px;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:800;font-size:72px;line-height:1.15;letter-spacing:-1px}
+.title{position:absolute;left:{{pad}}px;right:{{pad}}px;top:72px;bottom:14px;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:800;font-size:72px;line-height:1.15;letter-spacing:-1px}
 .title .k{color:#FFD166}
 </style></head><body><div id="root">
 <div class="strip"><span class="ch">{{channel}}</span><span class="h">{{handle}}</span></div>
