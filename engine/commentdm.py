@@ -98,7 +98,56 @@ def run(env=None, now: datetime | None = None, call=instagram.call, notify=teleg
     return {"sent": len(done), "errors": errors}
 
 
+NEEDED = ("instagram_business_manage_messages", "instagram_business_manage_comments")
+
+
+def check(env=None, call=instagram.call, notify=telegram.send) -> int:
+    """Read-only (founder, 2 Nov 2026): does the Instagram token carry the permissions the comment-to-DM gift needs? Asks Instagram
+    which scopes the token has, and how many comments in the last week asked for the app, so we know whether 0 DMs sent means
+    "no permission" or "nobody asked". Sends nothing."""
+    token, ig_id = secrets.get("IG_ACCESS_TOKEN", env), secrets.get("IG_USER_ID", env)
+    try:
+        me = call("GET", "/me", token, {"fields": "id,username"})
+    except instagram.InstagramError as e:
+        notify(f"💬 DM check: the Instagram token does not work at all: {str(e)[:160]}")
+        return 1
+    scopes = []
+    try:
+        dbg = call("GET", "/debug_token", token, {"input_token": token})
+        scopes = (dbg.get("data") or {}).get("scopes") or []
+    except instagram.InstagramError as e:
+        print(f"debug_token not available: {str(e)[:160]}", flush=True)
+    now = datetime.now(timezone.utc)
+    asked = total = 0
+    media = call("GET", f"/{ig_id}/media", token, {"fields": "id,timestamp", "limit": "30"}).get("data", [])
+    for m in media:
+        if now - _when(m["timestamp"]) > WINDOW:
+            continue
+        for c in call("GET", f"/{m['id']}/comments", token, {"fields": "id,text,from", "limit": "50"}).get("data", []):
+            if (c.get("from") or {}).get("id") == ig_id:
+                continue
+            total += 1
+            asked += bool(ASKS.search(c.get("text") or ""))
+    missing = [s for s in NEEDED if scopes and s not in scopes]
+    verdict = ("✅ DM permission present" if scopes and not missing else
+               f"❌ missing: {', '.join(missing)}" if missing else "❓ Instagram did not list the token's permissions (debug_token unavailable); "
+               "the only sure test is a real send")
+    text = (f"💬 DM check for @{me.get('username', '?')}: {verdict}. Last 7 days: {total} comments from others on our posts, {asked} asked for the app. "
+            f"Token scopes: {', '.join(scopes) or 'not listed'}.")
+    print(text, flush=True)
+    notify(text)
+    return 0 if not missing else 1
+
+
 def main(argv=None) -> int:
+    argv = sys.argv[1:] if argv is None else argv
+    if "--check" in argv:
+        try:
+            return check()
+        except Exception as e:
+            print("DM check failed:", secrets.scrub(str(e))[:300], flush=True)
+            telegram.send("💬 DM check failed: " + secrets.scrub(str(e))[:200])
+            return 1
     try:
         print(run())
     except Exception as e:                                  # one bad hour never needs attention; the next run tries again

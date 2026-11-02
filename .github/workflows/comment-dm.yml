@@ -5,6 +5,11 @@ on:
   schedule:
     - cron: '17 * * * *'     # hourly; GitHub may skip some hours, and a comment can still be answered for 7 days
   workflow_dispatch:
+    inputs:
+      check:
+        description: 'yes = only check the DM permission and count comments that asked (sends nothing)'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -32,7 +37,7 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python -m engine.commentdm
+        run: python -m engine.commentdm ${{ github.event.inputs.check == 'yes' && '--check' || '' }}
       - name: Remember who was answered
         if: always()
         run: |
