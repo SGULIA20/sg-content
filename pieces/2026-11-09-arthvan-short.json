@@ -5,7 +5,7 @@
  "ids": {
   "budget": {
    "day": "2026-11-02",
-   "research": 3
+   "research": 4
   }
  },
  "kind": "short",
@@ -13,28 +13,30 @@
  "reasons": [
   "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
-  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "research budget used for today (4 calls); the next quota day retries"
  ],
  "script": null,
- "status": "failed-research",
+ "status": "rejected",
  "timings": [],
  "topic": {
   "allowed_sources": [
+   "gsi.gov.in",
    "en.wikipedia.org",
-   "maharashtratourism.gov.in",
-   "news reports with dates"
+   "Skanda Purana (Lonar Mahatmya)"
   ],
   "hooks": [
-   "Is gaon mein ghar ke darwaze kyon nahi?",
-   "Bank ki shakha bhi bina lock ke?",
-   "Chori hui to kya hua?"
+   "Ek ulka ne 50,000 saal pehle yeh jheel banayi?",
+   "Lonar ka paani gulabi kyon hua?",
+   "Jheel ke kinare Daitya Sudan mandir ki kahani"
   ],
-  "id": "shani-shingnapur",
-  "notes": "Legend lane plus documented modern facts (UCO Bank branch 2011); report thefts honestly.",
-  "place": "Shani Shingnapur, Maharashtra",
+  "id": "lonar-crater",
+  "notes": "Science is solid here; the demon story is scripture/legend.",
+  "place": "Lonar, Maharashtra",
   "target_minutes": null,
-  "title_hi": "Shani Shingnapur, bina darwaze ka gaon"
+  "title_hi": "Lonar, ulka se bani jheel"
  },
- "updated": "2026-11-02T20:51:46+00:00",
+ "updated": "2026-11-02T22:31:21+00:00",
  "writer": ""
 }
