@@ -84,8 +84,12 @@
    "usd": 0.093298,
    "voice": 13
   },
+  "ig_reel_id": "18137367679643468",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "out_sha": "dec8899bf930aee9b086ef3b6509a32555910776",
+  "threads_id": "18625158223062266",
+  "threads_poll_id": "skipped: HTTP 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":",
   "yt_id": "gCIxlt1Oap0"
  },
  "kind": "short",
@@ -294,7 +298,7 @@
   },
   "title": "Gold bond se *jaldi* nikalna sahi hai? 🪙"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   6.97,
@@ -322,6 +326,6 @@
   "title": "Adani Green’s debt maths: Why leverage may fall below 4x as capex cycle matures",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-28T07:40:31+00:00",
+ "updated": "2026-11-02T12:13:34+00:00",
  "writer": "claude"
 }
