@@ -5,7 +5,7 @@ import re
 import subprocess
 from pathlib import Path
 
-from . import assemble, captions, cards, layers, lint, music, sfx
+from . import assemble, captions, cards, layers, lint, music
 from .config import CHANNELS, STORY_MAX_S, VIDEO
 
 FPS = VIDEO["fps"]
@@ -159,14 +159,13 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     big_badge = logo(piece.channel, 600)
     layers_on = short and layers.apply(piece)                            # the painted Shorts' layer test (engine/layers.py)
     n_scenes = len(panels)
-    badge_texts = [layers.badge_text(sc["vo"]) if layers_on else None for sc in piece.script["scenes"]]
     for i, (panel, dur, (wav, d), start, scene_d) in enumerate(zip(panels, durations, lines, starts, piece.script["scenes"])):
         cues = captions.split(scene_d["vo"], d)
         all_cues += captions.offset(cues, start)
         overlays = []
         if layers_on:
-            overlays += layers.scene_overlays(badge_texts[i], i, n_scenes, size, out_dir / "layers", top=band_h, side=SAFE_SIDE,
-                                              badge_y=band_h + 230, dur=dur)
+            overlays += layers.scene_overlays(scene_d["vo"], i, n_scenes, size, out_dir / "layers", top=band_h, side=SAFE_SIDE,
+                                              chart_y=band_h + 230, dur=dur)
         for s, e, text in cues:
             png = out_dir / "cues" / f"cap{i:02d}-{int(s * 100):05d}.png"
             if not png.exists():
@@ -189,25 +188,10 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     total = sum(durations) + END_S
     bed = music.bed("light", total + 5)
     out = out_dir / ("reel.mp4" if piece.kind == "short" else "long.mp4")
-    moving = [Path(p).suffix == ".mp4" for p in panels]                 # the moving news cards (2 Nov 2026) get sound cues
-    extra_in, chain_sfx, mix_n = [], "", 2
-    if short and (any(moving) or layers_on):
-        events = []
-        for i, st in enumerate(starts):
-            if moving[i]:
-                numbered = bool(((piece.script["scenes"][i].get("visual") or {}).get("card") or {}).get("big_number"))
-                events += sfx.events_for([st], [numbered])
-            elif layers_on:
-                events += layers.sfx_events(st, badge_texts[i])                 # painted scene with layers: whoosh, plus pop and tick with a badge
-        cues = sfx.track(events, total, out_dir / "sfx.wav")
-        extra_in = ["-i", str(cues)]
-        chain_sfx = f"[3:a]aresample=48000,apad=whole_dur={total:.3f},loudnorm=I={assemble.MUSIC_LUFS + 4}:TP=-3:LRA=7[s];"
-        mix_n = 3
-    mix_in = "[v][m]" + ("[s]" if mix_n == 3 else "")
-    _run(["-f", "concat", "-safe", "0", "-i", str(concat), "-i", str(voice_wav), "-stream_loop", "-1", "-i", str(bed), *extra_in,
+    _run(["-f", "concat", "-safe", "0", "-i", str(concat), "-i", str(voice_wav), "-stream_loop", "-1", "-i", str(bed),
           "-filter_complex", (f"[1:a]aresample=48000,apad=whole_dur={total:.3f},loudnorm=I={assemble.VOICE_LUFS}:TP=-1.5:LRA=11[v];"
                               f"[2:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS,afade=t=out:st={max(0.0, total - 2):.2f}:d=2,"
-                              f"loudnorm=I={assemble.MUSIC_LUFS}:TP=-6:LRA=7[m];{chain_sfx}{mix_in}amix=inputs={mix_n}:duration=longest:normalize=0,"
+                              f"loudnorm=I={assemble.MUSIC_LUFS}:TP=-6:LRA=7[m];[v][m]amix=inputs=2:duration=longest:normalize=0,"
                               f"apad=whole_dur={total:.3f},loudnorm=I={assemble.MIX_LUFS}:TP=-1.5:LRA=11[aout]"),
           "-map", "0:v", "-map", "[aout]", "-t", f"{total:.3f}", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", str(out)])
     return out
