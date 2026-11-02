@@ -12,6 +12,11 @@ FPS = VIDEO["fps"]
 TOP, PANEL, BOTTOM = 0.17, 0.66, 0.17                        # long videos (16:9)
 SHADE_H, CAP_H = 560, 420                                    # Shorts (founder, 25 Oct 2026, C): the picture runs to the bottom of the screen,
                                                              # a soft shadow at the foot, big bold captions on it, key words in yellow
+# Instagram and YouTube draw their own buttons over a Short (founder, 2 Nov 2026: the label and badge were cut at the screen edges and the
+# captions sat under Instagram's name and caption text): keep our text inside the safe zone
+SAFE_SIDE = 120                                              # px kept clear on the left and right (phones crop the sides; the like column)
+LIFT = 300                                                   # captions sit this far above the bottom (Instagram's name, caption and audio line)
+TITLE_PAD_SHORT = 150                                        # the title clears Instagram's back arrow and camera button
 HANDLE = "@sanjeev_gulia"
 END_S = 3.0                                                  # branded end card: channel name, tagline, subscribe, the question
 LOGO_PX = 150                                                # round channel badge in the panel's bottom-right corner, every frame
@@ -105,9 +110,9 @@ def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, 
         last, k0 = f"[x{k0}]", k0 + 1
     if shade_png is not None:
         inputs += ["-loop", "1", "-i", str(shade_png)]
-        chain += f";{last}[{k0}:v]overlay=0:{h - SHADE_H}:shortest=1[x{k0}]"
+        chain += f";{last}[{k0}:v]overlay=0:{h - SHADE_H - LIFT}:shortest=1[x{k0}]"
         last, k0 = f"[x{k0}]", k0 + 1
-        spots = ((chip, 30, py + 30), (logo_png, w - LOGO_PX - 26, py + 26))           # logo up top, never under the captions
+        spots = ((chip, SAFE_SIDE, py + 30), (logo_png, w - LOGO_PX - SAFE_SIDE, py + 30))   # inside the safe zone, never under the captions
     else:
         spots = ((chip, w - 400 - 30, py + 30), (logo_png, w - LOGO_PX - 26, py + ph - LOGO_PX - 26))
     for extra, x, y in spots:
@@ -133,16 +138,17 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     w, h = size
     band_h = int(h * TOP)
     title = (piece.script or {}).get("title") or (piece.script or {}).get("hook", "")
-    title_png = cards.render("storytitle", {"title_html": title_html(title), **brand(piece.channel)}, out_dir / "title.png", (w, band_h))
+    short = piece.kind == "short"
+    title_png = cards.render("storytitle", {"title_html": title_html(title), **brand(piece.channel), "pad": TITLE_PAD_SHORT if short else 60,
+                                            "strip": "none" if short else "flex"}, out_dir / "title.png", (w, band_h))
     # founder, 22 Oct 2026: the narration is never sped up or cut to fit; a story takes the time it takes (YouTube Shorts allow 3 minutes)
     voice_wav = out_dir / "voice.wav"
     starts = assemble._voice_track(lines, voice_wav)
     piece.timings = starts
     durations = [d + assemble.PAD_S for _w, d in lines]
     clips, all_cues = [], []
-    short = piece.kind == "short"
-    bottom_y = h - CAP_H if short else h - band_h
-    shade = cards.render("storyshade", {}, out_dir / "shade.png", (w, SHADE_H)) if short else None
+    bottom_y = h - CAP_H - LIFT if short else h - band_h
+    shade = cards.render("storyshade", {}, out_dir / "shade.png", (w, SHADE_H + LIFT)) if short else None
     keyword = (re.search(r"\*(.+?)\*", title) or [None, ""])[1]
     badge = logo(piece.channel)
     big_badge = logo(piece.channel, 600)
