@@ -1,0 +1,43 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.10,Default,,0,0,0,,Aapke ghar ka sabzi bill RBI
+Dialogue: 0,0:00:02.10,0:00:03.68,Default,,0,0,0,,ka byaaj tay karta hai?
+Dialogue: 0,0:00:04.13,0:00:05.86,Default,,0,0,0,,Mummy mandi se lautin,
+Dialogue: 0,0:00:05.86,0:00:06.36,Default,,0,0,0,,boli,
+Dialogue: 0,0:00:06.36,0:00:07.84,Default,,0,0,0,,tamatar phir mehnga,
+Dialogue: 0,0:00:07.84,0:00:09.57,Default,,0,0,0,,hamari kaun sunta hai?
+Dialogue: 0,0:00:10.02,0:00:10.94,Default,,0,0,0,,RBI sunta hai.
+Dialogue: 0,0:00:10.94,0:00:13.69,Default,,0,0,0,,November mein uska gharon wala survey
+Dialogue: 0,0:00:13.69,0:00:14.38,Default,,0,0,0,,shuru hua.
+Dialogue: 0,0:00:14.83,0:00:16.96,Default,,0,0,0,,19 shehron mein log batate hain,
+Dialogue: 0,0:00:16.96,0:00:18.67,Default,,0,0,0,,daam kitne badhe lagte hain.
+Dialogue: 0,0:00:19.12,0:00:20.87,Default,,0,0,0,,Aur agle 3 mahine,
+Dialogue: 0,0:00:20.87,0:00:21.61,Default,,0,0,0,,agle saal,
+Dialogue: 0,0:00:21.61,0:00:23.11,Default,,0,0,0,,daam kitne badhenge,
+Dialogue: 0,0:00:23.11,0:00:24.36,Default,,0,0,0,,aapka andaza?
+Dialogue: 0,0:00:24.81,0:00:27.43,Default,,0,0,0,,Zyaadatar log kahein mehngai badhegi,
+Dialogue: 0,0:00:27.43,0:00:29.34,Default,,0,0,0,,toh RBI byaaj ghatane se ruk
+Dialogue: 0,0:00:29.34,0:00:30.05,Default,,0,0,0,,sakta hai.
+Dialogue: 0,0:00:30.50,0:00:32.69,Default,,0,0,0,,Matlab aapke home loan ki EMI
+Dialogue: 0,0:00:32.69,0:00:34.44,Default,,0,0,0,,kam hone mein der lag sakti
+Dialogue: 0,0:00:34.44,0:00:34.66,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:35.11,0:00:35.77,Default,,0,0,0,,Asli baat:
+Dialogue: 0,0:00:35.77,0:00:37.98,Default,,0,0,0,,aapka andaza hi RBI ka data
+Dialogue: 0,0:00:37.98,0:00:38.20,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:38.20,0:00:39.53,Default,,0,0,0,,Agency nahi aayi?
+Dialogue: 0,0:00:39.53,0:00:41.30,Default,,0,0,0,,RBI ki site par form bharo.
+Dialogue: 0,0:00:41.30,0:00:43.51,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:43.96,0:00:45.24,Default,,0,0,0,,Yeh Mummy ko bhejo,
+Dialogue: 0,0:00:45.24,0:00:46.95,Default,,0,0,0,,jo kehti hain mehngai ki koi
+Dialogue: 0,0:00:46.95,0:00:47.80,Default,,0,0,0,,nahi sunta.
