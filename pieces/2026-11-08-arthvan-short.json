@@ -4,8 +4,8 @@
  "id": "2026-11-08-arthvan-short",
  "ids": {
   "budget": {
-   "day": "2026-11-02",
-   "research": 4
+   "day": "2026-11-03",
+   "research": 3
   }
  },
  "kind": "short",
@@ -17,29 +17,31 @@
   "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "research budget used for today (4 calls); the next quota day retries",
   "research budget used for today (4 calls); the next quota day retries",
-  "research budget used for today (4 calls); the next quota day retries"
+  "research budget used for today (4 calls); the next quota day retries",
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
  ],
  "script": null,
- "status": "rejected",
+ "status": "failed-research",
  "timings": [],
  "topic": {
   "allowed_sources": [
-   "asi.nic.in",
-   "UNESCO whc.unesco.org",
-   "en.wikipedia.org"
+   "en.wikipedia.org",
+   "maharashtratourism.gov.in",
+   "news reports with dates"
   ],
   "hooks": [
-   "China ke baad duniya ki sabse lambi deewar India mein?",
-   "Deewar itni chaudi ki 8 ghode saath chalein?",
-   "Ek sant ki bali ki kahani"
+   "Is gaon mein ghar ke darwaze kyon nahi?",
+   "Bank ki shakha bhi bina lock ke?",
+   "Chori hui to kya hua?"
   ],
-  "id": "kumbhalgarh-wall",
-  "notes": "Length figures vary (36-38 km); the sacrifice story is legend.",
-  "place": "Kumbhalgarh, Rajasthan",
-  "priority": 1,
+  "id": "shani-shingnapur",
+  "notes": "Legend lane plus documented modern facts (UCO Bank branch 2011); report thefts honestly.",
+  "place": "Shani Shingnapur, Maharashtra",
   "target_minutes": null,
-  "title_hi": "Kumbhalgarh, 36 km ki deewar"
+  "title_hi": "Shani Shingnapur, bina darwaze ka gaon"
  },
- "updated": "2026-11-03T07:23:38+00:00",
+ "updated": "2026-11-03T13:49:26+00:00",
  "writer": ""
 }
