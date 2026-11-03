@@ -1,0 +1,44 @@
+name: yt-privacy
+
+# One-off (founder, 3 Nov 2026): list a channel's videos by title and make the duplicates private (never deleted). scripts/yt_privacy.py
+on:
+  workflow_dispatch:
+    inputs:
+      channel:
+        description: 'sglearning or arthvan'
+        required: true
+      text:
+        description: 'title text to match'
+        required: true
+      keep:
+        description: 'video id to keep public'
+        required: true
+      apply:
+        description: 'yes = make the others private; blank = list only'
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+
+jobs:
+  privacy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: List or privatise
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
+          YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
+          CH: ${{ github.event.inputs.channel }}
+          TXT: ${{ github.event.inputs.text }}
+          KEEP: ${{ github.event.inputs.keep }}
+          APPLY: ${{ github.event.inputs.apply }}
+        run: python scripts/yt_privacy.py "$CH" "$TXT" "$KEEP" ${{ github.event.inputs.apply == 'yes' && '--apply' || '' }}
