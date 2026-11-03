@@ -1,0 +1,196 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 19.0,
+   "quote": "The survey is conducted regularly in 19 cities, viz., Ahmedabad, Bengaluru, Bhopal, Bhubaneswar, Chandigarh, Chennai, Delhi, Guwahati, Hyderabad, Jaipur, Jammu, Kolkata, Lucknow, Mumbai, Nagpur, Patna, Raipur, Ranchi and Thiruvananthapuram.",
+   "source_date": "2026-11-03",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63908",
+   "text": "The Reserve Bank of India launched the November 2026 round of the Urban Consumer Confidence Survey across 19 major cities.",
+   "unit": "cities"
+  }
+ ],
+ "id": "2026-11-10-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-03",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 16.5,
+   "usd": 0.06191,
+   "voice": 9
+  },
+  "drafts": 1,
+  "yt_id": "Qo9H11qO9KM"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-10",
+ "reasons": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Kya RBI sach mein poochhta hai, ghar kaisa chal raha? 🏠\nRBI ka survey 19 shehron mein gharon se daam, naukri aur kamaai ka haal poochhta hai.\nRBI ke mutabik yeh jawab byaaj ke faisle mein kaam aate hain, wahi byaaj jo aapki EMI tay karta hai.\nAapne kabhi yeh form bhara hai? Yeh investment advice nahi hai.\nShare karo Mummy ko, jo kehti hain hamari koi nahi sunta.",
+    "hashtags": [
+     "#RBI",
+     "#EMI",
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#PersonalFinanceIndia",
+     "#HinglishFinance",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Kya RBI sach mein poochhta hai, ghar kaisa chal raha? Uska survey 19 shehron mein daam, naukri aur kamaai ka haal poochhta hai, aur agency na aaye tab bhi aap form bhar sakte ho. Aapne kabhi bhara hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Kya RBI sach mein poochhta hai ki aapka ghar kaisa chal raha? RBI ka Urban Consumer Confidence Survey 19 shehron mein daam, naukri aur kamaai par gharon ka mood poochhta hai, aur RBI ke mutabik yeh jawab byaaj ke faisle mein kaam aate hain. Agency aapke ghar na aaye, tab bhi aap form bhar sakte ho. Yeh investment advice nahi hai. Share karo Mummy ko, jo kehti hain hamari koi nahi sunta.",
+    "tags": [
+     "RBI",
+     "RBI survey",
+     "consumer confidence survey",
+     "EMI",
+     "byaaj",
+     "home loan",
+     "mehngai",
+     "personal finance hindi",
+     "Learning with SG",
+     "paise ki khabar"
+    ],
+    "title": "RBI aapki EMI se pehle aapse poochhta hai?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Mummy ko bhejo, jo kehti hain hamari koi nahi sunta.",
+  "hook": "Kya RBI sach mein poochhta hai, ghar kaisa chal raha?",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "A large blank questionnaire sheet filling the frame on a wooden kitchen table, surrounded by grocery bills, a loan statement envelope and a steel cup of chai, warm evening lamp light, no readable text",
+     "type": "art"
+    },
+    "vo": "Kya RBI sach mein poochhta hai, ghar kaisa chal raha?"
+   },
+   {
+    "facts_used": [],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "WIFE sitting at the kitchen table at night with a budget diary and a pile of bills, a basket of vegetables beside her, tired and thoughtful expression, soft yellow light",
+     "type": "art"
+    },
+    "vo": "Mahine ka aakhri hafta, Wife kharcha jod rahi hai. Sabzi mehngi, salary wahi."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "WIFE looking out of a small apartment window towards a distant city skyline with tall office towers, shoulders slumped, feeling unheard, dusk sky",
+     "type": "art"
+    },
+    "vo": "Woh sochti hai, RBI ko hamare ghar ka kya pata?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "what really happens",
+    "visual": {
+     "card": null,
+     "prompt": "A big illustrated map of India with 19 glowing dots for cities, small drawn icons floating above it: a price tag, an office bag, a wallet, bright daytime colours, no text",
+     "type": "art"
+    },
+    "vo": "Par RBI ka ek survey hai, gharon ka mood naapne ke liye. 19 shehron mein poochha jaata hai: daam, naukri, kamaai."
+   },
+   {
+    "facts_used": [],
+    "label": "the cost",
+    "visual": {
+     "card": null,
+     "prompt": "A grand meeting room with a long table where officials review stacks of filled survey sheets, through the window a family's small house and a home loan EMI envelope drawn as a link, calm serious mood, no faces in close-up",
+     "type": "art"
+    },
+    "vo": "RBI ke mutabik, yeh jawab byaaj ke faisle mein kaam aate hain. Wahi byaaj, jo aapki EMI tay karta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A survey worker with a clipboard ringing the doorbell of an apartment in a busy city lane, morning light, neighbours watching from balconies",
+     "type": "art"
+    },
+    "vo": "November wala round abhi shuru hua hai."
+   },
+   {
+    "facts_used": [],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "WIFE at the kitchen table filling a paper survey form with a pen, a small smile of confidence, chai beside her, the bills now neatly stacked, warm evening light",
+     "type": "art"
+    },
+    "vo": "Twist: agency aapke ghar na aaye, phir bhi aap form bhar sakte ho. Form RBI ki press release mein juda hai. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY in a saree holding a cup of chai in a cosy living room, raising her eyebrows with a curious hopeful look, soft afternoon light",
+     "type": "art"
+    },
+    "vo": "Mummy ko bhejo, jo kehti hain hamari koi nahi sunta."
+   }
+  ],
+  "thumbnail": {
+   "name": "RBI",
+   "name_hi": "आरबीआई",
+   "scene": "A giant survey form spread across a glowing map of India with 19 bright city dots, and in the foreground a kitchen table piled with grocery bills and a loan EMI envelope under a single warm lamp",
+   "words": [
+    "19 SHEHAR",
+    "SECRET"
+   ],
+   "words_hi": [
+    "19 शहर",
+    "सीक्रेट"
+   ]
+  },
+  "title": "RBI poochh raha hai, ghar ka *haal* 🏠"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  4.09,
+  11.78,
+  15.95,
+  25.44,
+  33.77,
+  37.22,
+  47.15
+ ],
+ "topic": {
+  "layers": false,
+  "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63908",
+  "look": "claymation",
+  "published": "2026-11-03T17:00:00+00:00",
+  "rank": 5,
+  "source": "RBI Press Releases",
+  "summary": "  The Reserve Bank of India has been regularly conducting Urban Consumer Confidence Survey (UCCS). The November 2026 round of the survey is being launched. The survey seeks qualitative responses from households, regarding their sentiments on general economic situation, employment scenario, price level, households&rsquo; income and spending. The survey is conducted regularly in 19 cities, viz., Ahmedabad, Bengaluru, Bhopal, Bhubaneswar, Chandigarh, Chennai, Delhi, Guwahati, Hyderabad, Jaipur, Jammu, Kolkata, Lucknow, Mumbai, Nagpur, Patna, Raipur, Ranchi and Thiruvananthapuram. The results of this survey provide useful inputs for monetary policy.      The agency, M/s Hansa Research Group Pvt. Ltd., Mumbai has been engaged to conduct the survey of this round on behalf of the Reserve Bank of India. For this purpose, the selected households will be approached by the agency and they are requested to provide their responses. Other individuals, who are not approached by the agency, can also participate in this survey by providing their responses using the linked survey schedule. The filled in survey schedule may be e-mailed as per the contact details given below. In case of any query/clarification, kindly contact at the following address:      The Director,Division of Household Surveys,Department of Statistics and Information Management,Reserve Bank of India,C-8, 2nd Floor,Bandra- Kurla Complex, Bandra (East),Mumbai-400 051;Phone: 022-2657 8398, 022-2657 8332;Please click here to send email.Ajit Prasad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Deputy General Manager      (Communications)&nbsp;&nbsp;&nbsp;&nbsp;      Press Release: 2026-2027/14301 Erstwhile Consumer Confidence Survey (CCS)",
+  "target_minutes": null,
+  "title": "RBI launches the November 2026 round of Urban Consumer Confidence Survey",
+  "voice": "voice_1kn3blc2u13l"
+ },
+ "updated": "2026-11-03T20:57:51+00:00",
+ "writer": "claude"
+}

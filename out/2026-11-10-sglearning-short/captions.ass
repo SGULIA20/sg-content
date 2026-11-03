@@ -1,0 +1,45 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.96,Default,,0,0,0,,Kya RBI sach mein poochhta hai,
+Dialogue: 0,0:00:01.96,0:00:03.64,Default,,0,0,0,,ghar kaisa chal raha?
+Dialogue: 0,0:00:04.09,0:00:06.41,Default,,0,0,0,,Mahine ka aakhri hafta,
+Dialogue: 0,0:00:06.41,0:00:08.72,Default,,0,0,0,,Wife kharcha jod rahi hai.
+Dialogue: 0,0:00:08.72,0:00:09.88,Default,,0,0,0,,Sabzi mehngi,
+Dialogue: 0,0:00:09.88,0:00:11.33,Default,,0,0,0,,salary wahi.
+Dialogue: 0,0:00:11.78,0:00:12.84,Default,,0,0,0,,Woh sochti hai,
+Dialogue: 0,0:00:12.84,0:00:14.97,Default,,0,0,0,,RBI ko hamare ghar ka kya
+Dialogue: 0,0:00:14.97,0:00:15.50,Default,,0,0,0,,pata?
+Dialogue: 0,0:00:15.95,0:00:18.06,Default,,0,0,0,,Par RBI ka ek survey hai,
+Dialogue: 0,0:00:18.06,0:00:20.47,Default,,0,0,0,,gharon ka mood naapne ke liye.
+Dialogue: 0,0:00:20.47,0:00:23.48,Default,,0,0,0,,19 shehron mein poochha jaata hai:
+Dialogue: 0,0:00:23.48,0:00:23.79,Default,,0,0,0,,daam,
+Dialogue: 0,0:00:23.79,0:00:24.39,Default,,0,0,0,,naukri,
+Dialogue: 0,0:00:24.39,0:00:24.99,Default,,0,0,0,,kamaai.
+Dialogue: 0,0:00:25.44,0:00:26.80,Default,,0,0,0,,RBI ke mutabik,
+Dialogue: 0,0:00:26.80,0:00:28.97,Default,,0,0,0,,yeh jawab byaaj ke faisle mein
+Dialogue: 0,0:00:28.97,0:00:30.06,Default,,0,0,0,,kaam aate hain.
+Dialogue: 0,0:00:30.06,0:00:30.87,Default,,0,0,0,,Wahi byaaj,
+Dialogue: 0,0:00:30.87,0:00:33.32,Default,,0,0,0,,jo aapki EMI tay karta hai.
+Dialogue: 0,0:00:33.77,0:00:36.52,Default,,0,0,0,,November wala round abhi shuru hua
+Dialogue: 0,0:00:36.52,0:00:36.77,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:37.22,0:00:37.47,Default,,0,0,0,,Twist:
+Dialogue: 0,0:00:37.47,0:00:39.47,Default,,0,0,0,,agency aapke ghar na aaye,
+Dialogue: 0,0:00:39.47,0:00:41.21,Default,,0,0,0,,phir bhi aap form bhar sakte
+Dialogue: 0,0:00:41.21,0:00:41.46,Default,,0,0,0,,ho.
+Dialogue: 0,0:00:41.46,0:00:43.46,Default,,0,0,0,,Form RBI ki press release mein
+Dialogue: 0,0:00:43.46,0:00:44.20,Default,,0,0,0,,juda hai.
+Dialogue: 0,0:00:44.20,0:00:46.70,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:47.15,0:00:48.34,Default,,0,0,0,,Mummy ko bhejo,
+Dialogue: 0,0:00:48.34,0:00:50.72,Default,,0,0,0,,jo kehti hain hamari koi nahi
+Dialogue: 0,0:00:50.72,0:00:51.19,Default,,0,0,0,,sunta.
