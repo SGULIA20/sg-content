@@ -1,0 +1,75 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:04.93,Default,,0,0,0,,Unakoti ke pahad par 99,99,999 moortiyan?
+Dialogue: 0,0:00:04.93,0:00:06.72,Default,,0,0,0,,Kisne banayin?
+Dialogue: 0,0:00:07.17,0:00:07.88,Default,,0,0,0,,Katha hai,
+Dialogue: 0,0:00:07.88,0:00:09.99,Default,,0,0,0,,Shiva devtaon ke saath Kashi ja
+Dialogue: 0,0:00:09.99,0:00:10.70,Default,,0,0,0,,rahe the.
+Dialogue: 0,0:00:10.70,0:00:11.87,Default,,0,0,0,,Raat yahin ruke.
+Dialogue: 0,0:00:11.87,0:00:13.52,Default,,0,0,0,,Subah sirf Shiva jaage,
+Dialogue: 0,0:00:13.52,0:00:14.93,Default,,0,0,0,,baaki patthar ban gaye.
+Dialogue: 0,0:00:15.38,0:00:16.16,Default,,0,0,0,,Aur katha,
+Dialogue: 0,0:00:16.16,0:00:18.22,Default,,0,0,0,,kaarigar Kalu Kamar ki.
+Dialogue: 0,0:00:18.22,0:00:21.06,Default,,0,0,0,,Raaton-raat saari moortiyan banani thi.
+Dialogue: 0,0:00:21.06,0:00:21.58,Default,,0,0,0,,Bhor hui,
+Dialogue: 0,0:00:21.58,0:00:23.90,Default,,0,0,0,,aakhri moorti adhoori reh gayi.
+Dialogue: 0,0:00:24.35,0:00:25.00,Default,,0,0,0,,Rajmala,
+Dialogue: 0,0:00:25.00,0:00:27.39,Default,,0,0,0,,Tripura ke raja-darbar ki kitaab,
+Dialogue: 0,0:00:27.39,0:00:30.21,Default,,0,0,0,,Manu nadi kinare Shiva puja likhti
+Dialogue: 0,0:00:30.21,0:00:30.43,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:30.88,0:00:31.25,Default,,0,0,0,,ASI,
+Dialogue: 0,0:00:31.25,0:00:33.50,Default,,0,0,0,,yaani Archaeological Survey of India,
+Dialogue: 0,0:00:33.50,0:00:34.81,Default,,0,0,0,,ne yeh nakkashi darj ki.
+Dialogue: 0,0:00:34.81,0:00:36.68,Default,,0,0,0,,Aaj yeh sarkari suraksha mein hai.
+Dialogue: 0,0:00:37.13,0:00:39.57,Default,,0,0,0,,Beech mein Shiva ka vishaal chehra,
+Dialogue: 0,0:00:39.57,0:00:40.66,Default,,0,0,0,,Kal Bhairava.
+Dialogue: 0,0:00:40.66,0:00:42.56,Default,,0,0,0,,Lagbhag 9 metre ooncha,
+Dialogue: 0,0:00:42.56,0:00:44.73,Default,,0,0,0,,poora chattan se kaata hua.
+Dialogue: 0,0:00:45.18,0:00:47.72,Default,,0,0,0,,Naale ke paani mein vishaal Ganesh
+Dialogue: 0,0:00:47.72,0:00:48.49,Default,,0,0,0,,kaate gaye.
+Dialogue: 0,0:00:48.49,0:00:51.29,Default,,0,0,0,,Paas ke shivling par purani Bengali
+Dialogue: 0,0:00:51.29,0:00:52.30,Default,,0,0,0,,mein naam mila,
+Dialogue: 0,0:00:52.30,0:00:53.32,Default,,0,0,0,,Sri Jayadeva,
+Dialogue: 0,0:00:53.32,0:00:54.34,Default,,0,0,0,,shayad teerthyatri.
+Dialogue: 0,0:00:54.79,0:00:56.54,Default,,0,0,0,,Umar kaise pata chali?
+Dialogue: 0,0:00:56.54,0:00:58.95,Default,,0,0,0,,ASI ne nakkashi ka andaaz dekha,
+Dialogue: 0,0:00:58.95,0:00:59.82,Default,,0,0,0,,yaani shaili.
+Dialogue: 0,0:00:59.82,0:01:02.01,Default,,0,0,0,,Woh Manikya rajaon se pehle ka
+Dialogue: 0,0:01:02.01,0:01:02.23,Default,,0,0,0,,hai.
+Dialogue: 0,0:01:02.68,0:01:04.63,Default,,0,0,0,,Historians yahan bant jaate hain.
+Dialogue: 0,0:01:04.63,0:01:07.01,Default,,0,0,0,,Kuch Samatata ka Deva vansh kehte
+Dialogue: 0,0:01:07.01,0:01:07.23,Default,,0,0,0,,hain.
+Dialogue: 0,0:01:07.23,0:01:08.31,Default,,0,0,0,,Kuch local raja,
+Dialogue: 0,0:01:08.31,0:01:10.04,Default,,0,0,0,,kuch Pala daur ke kaarigar.
+Dialogue: 0,0:01:10.49,0:01:12.91,Default,,0,0,0,,ASI maanta hai sab lagbhag saath
+Dialogue: 0,0:01:12.91,0:01:13.45,Default,,0,0,0,,bana.
+Dialogue: 0,0:01:13.45,0:01:15.07,Default,,0,0,0,,Kai vidwan kehte hain,
+Dialogue: 0,0:01:15.07,0:01:16.68,Default,,0,0,0,,sadiyon mein judta gaya.
+Dialogue: 0,0:01:16.68,0:01:17.22,Default,,0,0,0,,Aur 99,99,999?
+Dialogue: 0,0:01:17.22,0:01:18.83,Default,,0,0,0,,Asal mein gini gayi,
+Dialogue: 0,0:01:18.83,0:01:20.45,Default,,0,0,0,,toh bahut kam mili.
+Dialogue: 0,0:01:20.90,0:01:22.21,Default,,0,0,0,,Kaarigar kaun the,
+Dialogue: 0,0:01:22.21,0:01:23.53,Default,,0,0,0,,koi nahi jaanta.
+Dialogue: 0,0:01:23.53,0:01:23.79,Default,,0,0,0,,Twist,
+Dialogue: 0,0:01:23.79,0:01:26.42,Default,,0,0,0,,Kokborok bhasha mein yeh Subrai Khung
+Dialogue: 0,0:01:26.42,0:01:26.68,Default,,0,0,0,,hai,
+Dialogue: 0,0:01:26.68,0:01:28.78,Default,,0,0,0,,yahan ke logon ka Shiva.
+Dialogue: 0,0:01:29.23,0:01:31.35,Default,,0,0,0,,Aaj Kailashahar ke paas jungle mein,
+Dialogue: 0,0:01:31.35,0:01:32.83,Default,,0,0,0,,yeh sab khud dekh sakte hain.
+Dialogue: 0,0:01:32.83,0:01:35.16,Default,,0,0,0,,Naam UNESCO ki tentative list mein
+Dialogue: 0,0:01:35.16,0:01:35.38,Default,,0,0,0,,hai,
+Dialogue: 0,0:01:35.38,0:01:37.07,Default,,0,0,0,,World Heritage ki qatar.
+Dialogue: 0,0:01:37.52,0:01:39.16,Default,,0,0,0,,Us dost ko bhejo jo kehta
+Dialogue: 0,0:01:39.16,0:01:39.36,Default,,0,0,0,,hai,
+Dialogue: 0,0:01:39.36,0:01:41.20,Default,,0,0,0,,Northeast mein dekhne ko kuch nahi.

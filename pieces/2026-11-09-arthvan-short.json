@@ -1,12 +1,162 @@
 {
  "channel": "arthvan",
- "facts": [],
+ "facts": [
+  {
+   "label": "legend",
+   "number": 9999999.0,
+   "quote": "According to Hindu mythology, when Lord Shiva was going to Kashi along with one crore gods and goddesses he made a night halt at this location... Lord Shiva set out for Kashi himself cursing the others to become stone images.",
+   "source_date": "2022",
+   "source_name": "Tripura State Portal and Folklore Archives",
+   "source_url": "https://en.wikipedia.org/wiki/Unakoti",
+   "text": "According to regional folklore, Lord Shiva was journeying to Kashi with an entourage of one crore deities when he cursed the remaining ninety-nine lakh ninety-nine thousand nine hundred ninety-nine into stone for failing to wake before sunrise.",
+   "unit": "count"
+  },
+  {
+   "label": "legend",
+   "number": 1.0,
+   "quote": "Another story revolves around one Kalu Kamar, the famous sculptor. He was assigned the task to build a crore of the deities in his dream. But keeping the last idol unfinished Kalu created his own image.",
+   "source_date": "2021",
+   "source_name": "Tripura State Folklore Records",
+   "source_url": "https://en.wikipedia.org/wiki/Unakoti",
+   "text": "A parallel regional legend attributes the site's rock carvings to an artisan named Kalu Kamar, who attempted to carve one crore divine statues in a single night to gain spiritual prestige but fell short by one image before daybreak.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": 9.0,
+   "quote": "The central Shiva head known as Unakotiswara Kal Bhairava is about 30 feet high including an embroidered head-dress which itself is 10 feet high.",
+   "source_date": "2022-12-13",
+   "source_name": "UNESCO World Heritage Centre",
+   "source_url": "https://whc.unesco.org/en/tentativelists/6628/",
+   "text": "Archaeological surveys record that the central rock-cut Shiva head, designated Unakotiswara Kal Bhairava, stands approximately nine metres in height.",
+   "unit": "metres"
+  },
+  {
+   "label": "archaeology",
+   "number": 800.0,
+   "quote": "The bas relief sculptures at Unakoti are on stylistic grounds ascribed to 7th–9th century CE, to the period of Pre-Manikya rule.",
+   "source_date": "2022-12-13",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://whc.unesco.org/en/tentativelists/6628/",
+   "text": "Stylistic analysis by archaeologists dates the primary rock-cut bas-relief sculptures of Unakoti between the seventh and ninth centuries CE.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "Sculptures and rock-cut reliefs of the Unakotitirtha, Unakoti Range, N. Tripura.",
+   "source_date": "2019-03-26",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "The Archaeological Survey of India officially classified the sculptures and rock-cut reliefs of Unakotitirtha as a centrally protected monument under its Aizawl Circle.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 2022.0,
+   "quote": "Rock-cut Sculptures and Reliefs of the Unakoti, Unakoti Range, Unakoti District... Date of Submission: 13/12/2022.",
+   "source_date": "2022-12-13",
+   "source_name": "UNESCO World Heritage Centre",
+   "source_url": "https://whc.unesco.org/en/tentativelists/6628/",
+   "text": "The Archaeological Survey of India successfully proposed the rock-cut sculptures and reliefs of Unakoti for inclusion on the UNESCO World Heritage tentative list in the year 2022 CE.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1150.0,
+   "quote": "The only inscription at Unakoti is on the other Chaturmukhalinga image, consisting of a couple of records in Bengali Characters of the 11th to 12th century CE, which mentions one Sri Jayadeva, probably a pilgrim.",
+   "source_date": "2021",
+   "source_name": "Epigraphia Indica / Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Unakoti",
+   "text": "Epigraphic examination of a Chaturmukhalinga at Unakoti identified an inscription in medieval Bengali script dating to the twelfth century CE, referencing a pilgrim named Sri Jayadeva.",
+   "unit": "CE"
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "The bas relief sculptures at Unakoti are on stylistic grounds ascribed to 7th–9th century CE, to the period of Pre-Manikya rule. The rock art was patronised by Deva Dynasty of Sribhumi in Samatata.",
+   "source_date": "2022",
+   "source_name": "Archaeological Survey of India / State Gazetteers",
+   "source_url": "https://en.wikipedia.org/wiki/Unakoti",
+   "text": "Historians disagree regarding political patronage of the site, with some proposing the Deva dynasty of Samatata while others suggest pre-Manikya regional kings or Pala-period artistic workshops were responsible.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "According to the Archaeological Survey of India (ASI), Unakoti dates back to the 8th or 9th century AD. Yet, many others differ with the opinion, conceding that it dates back longer further holding that those images were carved out in different spell of time.",
+   "source_date": "2015",
+   "source_name": "Archaeological Survey of India / Regional Academic Studies",
+   "source_url": "https://en.wikipedia.org/wiki/Unakoti",
+   "text": "Scholars dispute whether the carvings were executed in a single concentrated phase during the early medieval era or added incrementally across multiple centuries lasting through the twelfth century CE.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": 9999999.0,
+   "quote": "Unakoti literally means 'one less than one crore'... The site is a massive gallery set in a forested area displaying a number of towering low relief images.",
+   "source_date": "2022-12-13",
+   "source_name": "UNESCO World Heritage Centre / Archaeological Survey of India",
+   "source_url": "https://whc.unesco.org/en/tentativelists/6628/",
+   "text": "While traditional myth claims the hill holds exactly ninety-nine lakh ninety-nine thousand nine hundred ninety-nine sculptures, archaeological documentations have identified only several hundred rock reliefs and loose stone figures across the valley.",
+   "unit": "count"
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "A 15th generation descendant of King Jujhar Fa, a Shiva disciple who started the Tripurabda, prayed for Lord Shiva in a village called Chhambulnagar on the banks of the river Mau... assumed that the Chhambulnagar mentioned in Rajmala was situated near the Unakoti Hills.",
+   "source_date": "1904",
+   "source_name": "Rajmala",
+   "source_url": "https://en.wikipedia.org/wiki/Unakoti",
+   "text": "The Rajmala, the court chronicle of Tripura, describes early rulers performing worship of Lord Shiva along the Manu river in the territory historically identified with the Unakoti hills.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 3.0,
+   "quote": "Among the rock-cut carvings, the central Shiva head and gigantic Ganesha figures deserve special mention.",
+   "source_date": "2022-12-13",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://whc.unesco.org/en/tentativelists/6628/",
+   "text": "Archaeological fieldwork documents a prominent panel carved directly into the bed of the Unakoti hill stream containing three colossal depictions of Ganesha.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": 8.0,
+   "quote": "The site of Unakoti is located in the northeastern part of Tripura, about 8 km from Kailasahar and 185 km from the State capital Agartala.",
+   "source_date": "2022-12-13",
+   "source_name": "UNESCO World Heritage Centre",
+   "source_url": "https://whc.unesco.org/en/tentativelists/6628/",
+   "text": "The archaeological complex of Unakoti is situated eight kilometres away from the subdivisional headquarters of Kailashahar in the state of Tripura.",
+   "unit": "km"
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "In the local Kokborok language, it is called Subrai Khung.",
+   "source_date": "2022",
+   "source_name": "Tripura State Tribal Cultural Research Institute",
+   "source_url": "https://en.wikipedia.org/wiki/Unakoti",
+   "text": "Indigenous Kokborok tradition refers to the sacred site as Subrai Khung, honouring the local ancestral appellation for Shiva.",
+   "unit": null
+  }
+ ],
  "id": "2026-11-09-arthvan-short",
  "ids": {
   "budget": {
-   "day": "2026-11-02",
-   "research": 4
-  }
+   "day": "2026-11-03",
+   "drafts": 2,
+   "research": 1
+  },
+  "cost": {
+   "inr": 21.0,
+   "usd": 0.150642,
+   "voice": 13
+  },
+  "drafts": 2,
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "HaStVT4-w04"
  },
  "kind": "short",
  "publish_day": "2026-11-09",
@@ -15,28 +165,268 @@
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
-  "research budget used for today (4 calls); the next quota day retries"
+  "research budget used for today (4 calls); the next quota day retries",
+  "try 1: numbers without a source: 100"
  ],
- "script": null,
- "status": "rejected",
- "timings": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Unakoti ke pahad par 99,99,999 moortiyan? 😱\nKatha kehti hai devta patthar ban gaye. ASI kehta hai, yeh chattan mein kaati purani nakkashi hai.\nTo asli kaarigar kaun the? Koi nahi jaanta.\nAapne yeh katha pehle suni thi?\nUs dost ko bhejo jo kehta hai Northeast mein dekhne ko kuch nahi.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#IndianHistory",
+     "#Archaeology",
+     "#AncientIndia",
+     "#HinduMythology",
+     "#Rahasya",
+     "#Itihaas",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Unakoti ke pahad par 99,99,999 moortiyan? Katha kehti hai devta raaton-raat patthar ban gaye. ASI ko mila chattan se kaata 9 metre ooncha Shiva chehra. Par kaarigar kaun the, koi nahi jaanta. Aapko kya lagta hai, kisne banaya? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Unakoti ke pahad par 99,99,999 moortiyan? Katha yahi kehti hai. Tripura ke jungle mein chattan se kaata 9 metre ooncha Shiva chehra hai, aur kaarigar kaun the, aaj tak koi nahi jaanta. Katha, ASI ke sabut aur historians ki behas, sab ek saath. Us dost ko bhejo jo kehta hai Northeast mein dekhne ko kuch nahi.",
+    "tags": [
+     "Unakoti",
+     "Tripura",
+     "Unakoti Tripura",
+     "rock cut sculptures",
+     "Kal Bhairava",
+     "ASI",
+     "Indian history",
+     "ancient India",
+     "mythology",
+     "archaeology",
+     "Kailashahar",
+     "Subrai Khung"
+    ],
+    "title": "Unakoti: 99,99,999 moortiyan kisne banayin?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo kehta hai, Northeast mein dekhne ko kuch nahi.",
+  "hook": "Unakoti ke pahad par 99,99,999 moortiyan? Kisne banayin?",
+  "scenes": [
+   {
+    "credit": "Proper Chopper, CC BY-SA 4.0, Wikimedia Commons",
+    "facts_used": [
+     0
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Dramatic drawn panel: a storm breaking over a dark rainforest hill in Tripura, lightning lighting up a towering cliff covered with countless half-hidden carved stone faces and figures, mist pouring down the rock, rain streaking across the frame, epic and mysterious mood, no text",
+     "type": "art"
+    },
+    "vo": "Unakoti ke pahad par 99,99,999 moortiyan? Kisne banayin?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel at dawn: a tall divine figure seen only from behind, walking away down a misty forest path toward the rising sun, while behind him on the hillside a vast crowd of sleeping figures slowly turns into grey stone, soft golden light, mythic mood, no text",
+     "type": "art"
+    },
+    "vo": "Katha hai, Shiva devtaon ke saath Kashi ja rahe the. Raat yahin ruke. Subah sirf Shiva jaage, baaki patthar ban gaye."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a lone village sculptor with hammer and chisel working by oil lamp at the foot of a huge cliff full of carved figures, the first pale light of dawn appearing over the hills, one figure on the rock left rough and unfinished, tense mood, no text",
+     "type": "art"
+    },
+    "vo": "Aur katha, kaarigar Kalu Kamar ki. Raaton-raat saari moortiyan banani thi. Bhor hui, aakhri moorti adhoori reh gayi."
+   },
+   {
+    "facts_used": [
+     10
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an old palm-leaf style court chronicle lying open on a wooden stand in a royal hall, through the window a winding river and green hills, small figures in old regional dress offering flowers at a riverside shrine in the distance, warm lamp light, no text on pages",
+     "type": "art"
+    },
+    "vo": "Rajmala, Tripura ke raja-darbar ki kitaab, Manu nadi kinare Shiva puja likhti hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: two archaeologists in khaki with notebooks and a measuring tape standing on a forest trail, studying a large relief carved straight into a mossy rock face, a simple railing and steps built around it, humid green jungle, curious mood, no text, no logos",
+     "type": "art"
+    },
+    "vo": "ASI, yaani Archaeological Survey of India, ne yeh nakkashi darj ki. Aaj yeh sarkari suraksha mein hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a colossal ancient face with a tall ornate headdress carved into a vertical cliff, seen from a distance with tiny visitors standing at its base for scale, ferns and vines around the rock, soft morning mist, awe-filled mood, no text",
+     "type": "art"
+    },
+    "vo": "Beech mein Shiva ka vishaal chehra, Kal Bhairava. Lagbhag 9 metre ooncha, poora chattan se kaata hua."
+   },
+   {
+    "facts_used": [
+     11,
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a clear hill stream flowing over rocks carved with giant elephant-headed figures half in the water, nearby an old stone pillar with faint worn engraved marks, an archaeologist kneeling with a torch to look closely, dappled forest light, no readable text",
+     "type": "art"
+    },
+    "vo": "Naale ke paani mein vishaal Ganesh kaate gaye. Paas ke shivling par purani Bengali mein naam mila, Sri Jayadeva, shayad teerthyatri."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an archaeologist holding up a sketch of carved patterns beside the real weathered relief on the rock, comparing curves of the crown and eyes, a field notebook and brush on a stone, thoughtful mood, no text",
+     "type": "art"
+    },
+    "vo": "Umar kaise pata chali? ASI ne nakkashi ka andaaz dekha, yaani shaili. Woh Manikya rajaon se pehle ka hai."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: three scholars around a lantern-lit table covered with old maps of eastern India and drawings of carvings, each pointing to a different region on the map, gentle debate, warm study room, no readable text",
+     "type": "art"
+    },
+    "vo": "Historians yahan bant jaate hain. Kuch Samatata ka Deva vansh kehte hain. Kuch local raja, kuch Pala daur ke kaarigar."
+   },
+   {
+    "facts_used": [
+     3,
+     8,
+     9
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a wide view of the forested valley with scattered carved reliefs and loose stone figures dotted along cliffs and the stream, small markers beside each one, an empty vastness of jungle beyond, quiet questioning mood, no text",
+     "type": "art"
+    },
+    "vo": "ASI maanta hai sab lagbhag saath bana. Kai vidwan kehte hain, sadiyon mein judta gaya. Aur 99,99,999? Asal mein gini gayi, toh bahut kam mili."
+   },
+   {
+    "facts_used": [
+     13
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a grandmother in traditional Tripuri wrap sitting by a hearth in a bamboo house, telling a story to children, through the doorway the distant carved cliff glows in evening light, cosy and mysterious mood, no text",
+     "type": "art"
+    },
+    "vo": "Kaarigar kaun the, koi nahi jaanta. Twist, Kokborok bhasha mein yeh Subrai Khung hai, yahan ke logon ka Shiva."
+   },
+   {
+    "facts_used": [
+     12,
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: pilgrims and tourists climbing stone steps through lush rainforest toward giant rock carvings, a stream with carved figures beside the path, bright green daylight, hopeful welcoming mood, no text, no logos",
+     "type": "art"
+    },
+    "vo": "Aaj Kailashahar ke paas jungle mein, yeh sab khud dekh sakte hain. Naam UNESCO ki tentative list mein hai, World Heritage ki qatar."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a narrator figure in a simple kurta standing at the foot of the giant carved cliff at sunset, gesturing toward the carvings as if inviting a friend, warm orange sky over the jungle, friendly mood, no text",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo kehta hai, Northeast mein dekhne ko kuch nahi."
+   }
+  ],
+  "thumbnail": {
+   "name": "UNAKOTI",
+   "name_hi": "उनाकोटी",
+   "scene": "A colossal ancient face with a towering ornate headdress carved into a mossy jungle cliff in Tripura, mist swirling around it and a tiny lone visitor standing at its base for scale.",
+   "words": [
+    "9 METRE",
+    "SECRET"
+   ],
+   "words_hi": [
+    "9 मीटर",
+    "सीक्रेट"
+   ]
+  },
+  "title": "*Unakoti*: pahad par 99,99,999 moortiyan? 😱"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  7.17,
+  15.38,
+  24.35,
+  30.88,
+  37.13,
+  45.18,
+  54.79,
+  62.68,
+  70.49,
+  80.9,
+  89.23,
+  97.52
+ ],
  "topic": {
   "allowed_sources": [
-   "gsi.gov.in",
-   "en.wikipedia.org",
-   "Skanda Purana (Lonar Mahatmya)"
+   "asi.nic.in",
+   "tripuratourism.gov.in",
+   "en.wikipedia.org"
+  ],
+  "credits": [
+   "Proper Chopper, CC BY-SA 4.0, Wikimedia Commons"
   ],
   "hooks": [
-   "Ek ulka ne 50,000 saal pehle yeh jheel banayi?",
-   "Lonar ka paani gulabi kyon hua?",
-   "Jheel ke kinare Daitya Sudan mandir ki kahani"
+   "Pahad par 99,99,999 moortiyan?",
+   "Ek raat mein sab patthar ban gaye?",
+   "Kisne banaya, koi nahi jaanta"
   ],
-  "id": "lonar-crater",
-  "notes": "Science is solid here; the demon story is scripture/legend.",
-  "place": "Lonar, Maharashtra",
+  "id": "unakoti",
+  "layers": true,
+  "look": "indian-comic",
+  "notes": "The count is legend; the carvings are archaeology (7th-9th c.).",
+  "patch_tries": 1,
+  "place": "Unakoti, Tripura",
+  "priority": 1,
   "target_minutes": null,
-  "title_hi": "Lonar, ulka se bani jheel"
+  "title_hi": "Unakoti, ek karod se ek kam moortiyan",
+  "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-11-02T22:31:21+00:00",
- "writer": ""
+ "updated": "2026-11-03T18:33:58+00:00",
+ "writer": "claude"
 }
