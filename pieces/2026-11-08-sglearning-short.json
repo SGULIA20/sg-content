@@ -4,8 +4,8 @@
  "id": "2026-11-08-sglearning-short",
  "ids": {
   "budget": {
-   "day": "2026-11-02",
-   "research": 4
+   "day": "2026-11-03",
+   "research": 3
   }
  },
  "kind": "short",
@@ -17,20 +17,23 @@
   "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "research budget used for today (4 calls); the next quota day retries",
   "research budget used for today (4 calls); the next quota day retries",
-  "research budget used for today (4 calls); the next quota day retries"
+  "research budget used for today (4 calls); the next quota day retries",
+  "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
  ],
  "script": null,
- "status": "rejected",
+ "status": "failed-research",
  "timings": [],
  "topic": {
-  "link": "https://www.livemint.com/market/stock-market-news/blockbuster-ipo-debut-of-bls-polymers-3-times-premium-as-compared-to-jio-platforms-all-details-for-investors-here-11793682497404.html",
-  "published": "2026-11-03T05:35:00+00:00",
-  "rank": 3,
-  "source": "Mint Markets",
-  "summary": "BLS Polymers shares debuted on the NSE at  ₹248, up 65.33% from the  ₹150 IPO price, after the issue was subscribed 241.22 times. The company plans to use proceeds from its fresh issue to expand its Goa manufacturing facility and meet working capital needs.",
+  "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63907",
+  "published": "2026-11-03T17:00:00+00:00",
+  "rank": 5,
+  "source": "RBI Press Releases",
+  "summary": "      The Reserve Bank of India has been regularly conducting Rural Consumer Confidence Survey (RCCS). The November 2026 round of the survey is being launched. The survey collects current perceptions and one year ahead expectations of households on general economic situation, employment scenario, overall price situation, own income and spending from the households residing in the rural and semi-urban areas across 31 states/ UTs viz., Andhra Pradesh, Arunachal Pradesh, Assam, Bihar, Chhattisgarh, Goa, Gujarat, Haryana, Himachal Pradesh, Jammu and Kashmir, Jharkhand, Karnataka, Keralam, Madhya Pradesh, Maharashtra, Manipur, Meghalaya, Mizoram, Nagaland, NCT of Delhi, Odisha, Punjab, Rajasthan, Sikkim, Tamil Nadu, Telangana, Tripura, Union Territory of Ladakh, Uttar Pradesh, Uttarakhand and West Bengal. The results of this survey provide useful inputs for monetary policy.    The agency, Ipsos Research Private Ltd., Gurugram has been engaged to conduct the survey of this round on behalf of the Reserve Bank of India. For this purpose, the selected households will be approached by the agency, and they are requested to provide their response. Other individuals, who are not approached by the agency can also participate in this survey by providing their responses using the linked survey schedule. The filled in survey schedule may be e-mailed as per contact details given below. In case of any query/clarification, kindly contact at the following address:    The Director, Division of Household Surveys, Department of Statistics and Information Management, Reserve Bank of India, C-8, 2nd Floor, Bandra- Kurla Complex, Bandra (East), Mumbai-400 051;Phone: 022-2657 8398, 022-2657 8332;Please click here to send email.     Ajit Prasad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      Deputy General Manager      (Communications)&nbsp;&nbsp;&nbsp;&nbsp;    Press Release: 2026-2027/1431  ",
   "target_minutes": null,
-  "title": "Blockbuster IPO debut of BLS Polymers; 3 times premium as compared to Jio Platforms - All details for investors here"
+  "title": "RBI launches the November 2026 round of the Rural Consumer Confidence Survey"
  },
- "updated": "2026-11-03T07:23:45+00:00",
+ "updated": "2026-11-03T13:49:42+00:00",
  "writer": ""
 }
