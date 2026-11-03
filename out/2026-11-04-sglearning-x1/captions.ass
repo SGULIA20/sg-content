@@ -1,0 +1,54 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.07,Default,,0,0,0,,Pistachio double mehnga kyun?
+Dialogue: 0,0:00:02.07,0:00:04.14,Default,,0,0,0,,Aur 9 khabrein jo jeb chhooti
+Dialogue: 0,0:00:04.14,0:00:04.40,Default,,0,0,0,,hain.
+Dialogue: 0,0:00:04.85,0:00:05.11,Default,,0,0,0,,Ek:
+Dialogue: 0,0:00:05.11,0:00:06.38,Default,,0,0,0,,GST 5 percent hua,
+Dialogue: 0,0:00:06.38,0:00:07.91,Default,,0,0,0,,to tyohaar mein dry fruit,
+Dialogue: 0,0:00:07.91,0:00:09.69,Default,,0,0,0,,chocolate zyada aaye.
+Dialogue: 0,0:00:10.14,0:00:10.41,Default,,0,0,0,,Do:
+Dialogue: 0,0:00:10.41,0:00:13.16,Default,,0,0,0,,Pistachio lagbhag double mehnga hua,
+Dialogue: 0,0:00:13.16,0:00:15.63,Default,,0,0,0,,West Asia tanaav aur kam fasal
+Dialogue: 0,0:00:15.63,0:00:15.90,Default,,0,0,0,,se.
+Dialogue: 0,0:00:16.35,0:00:16.54,Default,,0,0,0,,Teen:
+Dialogue: 0,0:00:16.54,0:00:19.44,Default,,0,0,0,,Bagmane office building company ne niveshkon
+Dialogue: 0,0:00:19.44,0:00:20.99,Default,,0,0,0,,ko kiraye ka paisa baanta.
+Dialogue: 0,0:00:21.44,0:00:21.69,Default,,0,0,0,,Chaar:
+Dialogue: 0,0:00:21.69,0:00:24.39,Default,,0,0,0,,Crude mehnga hone se mehngai badhne
+Dialogue: 0,0:00:24.39,0:00:25.13,Default,,0,0,0,,ka dar hai,
+Dialogue: 0,0:00:25.13,0:00:26.36,Default,,0,0,0,,EY ke mutabik.
+Dialogue: 0,0:00:26.81,0:00:27.11,Default,,0,0,0,,Paanch:
+Dialogue: 0,0:00:27.11,0:00:29.18,Default,,0,0,0,,RBI ghar-ghar poochh raha hai,
+Dialogue: 0,0:00:29.18,0:00:31.85,Default,,0,0,0,,aapko mehngai kitni lagti hai.
+Dialogue: 0,0:00:32.30,0:00:32.54,Default,,0,0,0,,Chhe:
+Dialogue: 0,0:00:32.54,0:00:35.42,Default,,0,0,0,,Office waali naukriyon ki hiring badhi,
+Dialogue: 0,0:00:35.42,0:00:37.82,Default,,0,0,0,,sabse zyada manufacturing mein.
+Dialogue: 0,0:00:38.27,0:00:38.52,Default,,0,0,0,,Saat:
+Dialogue: 0,0:00:38.52,0:00:40.97,Default,,0,0,0,,Mutual funds ne chhote companies ke
+Dialogue: 0,0:00:40.97,0:00:41.95,Default,,0,0,0,,share becha,
+Dialogue: 0,0:00:41.95,0:00:43.67,Default,,0,0,0,,kuch share kaafi gire.
+Dialogue: 0,0:00:44.12,0:00:44.37,Default,,0,0,0,,Aath:
+Dialogue: 0,0:00:44.37,0:00:46.84,Default,,0,0,0,,BLS Polymers ka share listing par
+Dialogue: 0,0:00:46.84,0:00:49.32,Default,,0,0,0,,IPO bhav se kaafi upar khula.
+Dialogue: 0,0:00:49.77,0:00:50.02,Default,,0,0,0,,Nau:
+Dialogue: 0,0:00:50.02,0:00:53.68,Default,,0,0,0,,AdaniConneX reportedly data centre ke liye
+Dialogue: 0,0:00:53.68,0:00:56.13,Default,,0,0,0,,videshi banks se udhaar maang raha.
+Dialogue: 0,0:00:56.58,0:00:56.89,Default,,0,0,0,,Das:
+Dialogue: 0,0:00:56.89,0:00:59.06,Default,,0,0,0,,Gold ETF mein paisa ghata,
+Dialogue: 0,0:00:59.06,0:01:01.55,Default,,0,0,0,,Sebi ke kehne par kuch fund
+Dialogue: 0,0:01:01.55,0:01:01.86,Default,,0,0,0,,band.
+Dialogue: 0,0:01:02.31,0:01:04.41,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:01:04.41,0:01:06.09,Default,,0,0,0,,Us dost ko bhejo jo IPO
+Dialogue: 0,0:01:06.09,0:01:07.35,Default,,0,0,0,,ke peeche bhaagta hai.

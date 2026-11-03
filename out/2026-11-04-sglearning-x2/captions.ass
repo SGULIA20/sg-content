@@ -1,0 +1,35 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.69,Default,,0,0,0,,Diwali ka dry fruit dabba,
+Dialogue: 0,0:00:01.69,0:00:03.60,Default,,0,0,0,,pichhle saal jaisa hi lagta hai?
+Dialogue: 0,0:00:04.05,0:00:06.58,Default,,0,0,0,,Pista is saal lagbhag double mehenga
+Dialogue: 0,0:00:06.58,0:00:06.82,Default,,0,0,0,,hai,
+Dialogue: 0,0:00:06.82,0:00:08.89,Default,,0,0,0,,badam bhi 20 percent upar.
+Dialogue: 0,0:00:09.34,0:00:09.58,Default,,0,0,0,,Kyun?
+Dialogue: 0,0:00:09.58,0:00:12.51,Default,,0,0,0,,California mein pista ki fasal pichhle
+Dialogue: 0,0:00:12.51,0:00:14.46,Default,,0,0,0,,saal ki sirf 40 percent hai.
+Dialogue: 0,0:00:14.91,0:00:16.67,Default,,0,0,0,,Upar se West Asia ki ladai
+Dialogue: 0,0:00:16.67,0:00:18.43,Default,,0,0,0,,ne maal aane ka raasta roka.
+Dialogue: 0,0:00:18.88,0:00:20.87,Default,,0,0,0,,Toh companies ne dabbe ka daam
+Dialogue: 0,0:00:20.87,0:00:21.53,Default,,0,0,0,,kam rakha,
+Dialogue: 0,0:00:21.53,0:00:23.08,Default,,0,0,0,,par andar maal ghata diya.
+Dialogue: 0,0:00:23.53,0:00:25.75,Default,,0,0,0,,Kai dabbon mein mehenge pista ki
+Dialogue: 0,0:00:25.75,0:00:27.53,Default,,0,0,0,,jagah seeds aur berries aa gaye.
+Dialogue: 0,0:00:27.98,0:00:30.02,Default,,0,0,0,,Isliye dabba uthao toh sirf daam
+Dialogue: 0,0:00:30.02,0:00:30.47,Default,,0,0,0,,nahi,
+Dialogue: 0,0:00:30.47,0:00:32.51,Default,,0,0,0,,peeche likha gram zaroor dekho.
+Dialogue: 0,0:00:32.51,0:00:34.78,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:35.23,0:00:36.43,Default,,0,0,0,,Yeh Mummy ko bhejo,
+Dialogue: 0,0:00:36.43,0:00:38.63,Default,,0,0,0,,jo Diwali ke dabbe khud kharidti
+Dialogue: 0,0:00:38.63,0:00:38.83,Default,,0,0,0,,hain.

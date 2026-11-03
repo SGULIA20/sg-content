@@ -1,0 +1,328 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 100.0,
+   "quote": "Pistachio prices have nearly doubled in retail trade from a year ago amid supply disruptions linked to the West Asia war and lower production in the US, while almond prices have risen about 20%, according to dry fruit processors and importers.",
+   "source_date": "2026-11-03",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/festive-season-pistachio-prices-nearly-double-almonds-up-20-on-west-asia-crisis-and-us-crop-shortfall/articleshow/135510824.cms",
+   "text": "Retail prices of pistachios have nearly doubled compared to last year due to Middle East trade disruptions and a crop shortfall in the United States.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 20.0,
+   "quote": "Pistachio prices have nearly doubled in retail trade from a year ago amid supply disruptions linked to the West Asia war and lower production in the US, while almond prices have risen about 20%, according to dry fruit processors and importers.",
+   "source_date": "2026-11-03",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/festive-season-pistachio-prices-nearly-double-almonds-up-20-on-west-asia-crisis-and-us-crop-shortfall/articleshow/135510824.cms",
+   "text": "Almond prices have increased by about 20% year-on-year, pushing up festive grocery and gifting costs for households.",
+   "unit": "pct"
+  },
+  {
+   "label": "analyst-view",
+   "number": 75000.0,
+   "quote": "As per industry estimates, between 30-35% of the estimated Rs 75,000-crore annual sales of nuts and dry fruits in the country take places during the Diwali period.",
+   "source_date": "2026-11-03",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/festive-season-pistachio-prices-nearly-double-almonds-up-20-on-west-asia-crisis-and-us-crop-shortfall/articleshow/135510824.cms",
+   "text": "India's annual retail and wholesale market for nuts and dry fruits is estimated at Rs 75,000 crore.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "analyst-view",
+   "number": 35.0,
+   "quote": "As per industry estimates, between 30-35% of the estimated Rs 75,000-crore annual sales of nuts and dry fruits in the country take places during the Diwali period.",
+   "source_date": "2026-11-03",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/festive-season-pistachio-prices-nearly-double-almonds-up-20-on-west-asia-crisis-and-us-crop-shortfall/articleshow/135510824.cms",
+   "text": "The Diwali festive period accounts for up to 35% of the annual nut and dry fruit sales across the country.",
+   "unit": "pct"
+  },
+  {
+   "label": "analyst-view",
+   "number": 40.0,
+   "quote": "\"The current pistachio crop in California is expected to be only about 40% of last year, which has led to an increase of 50% in pista prices in the wholesale markets and even more in retail,\" he added.",
+   "source_date": "2026-11-03",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/festive-season-pistachio-prices-nearly-double-almonds-up-20-on-west-asia-crisis-and-us-crop-shortfall/articleshow/135510824.cms",
+   "text": "California's pistachio harvest this season is projected to drop to just 40% of the previous year's output.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 50.0,
+   "quote": "\"The current pistachio crop in California is expected to be only about 40% of last year, which has led to an increase of 50% in pista prices in the wholesale markets and even more in retail,\" he added.",
+   "source_date": "2026-11-03",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/festive-season-pistachio-prices-nearly-double-almonds-up-20-on-west-asia-crisis-and-us-crop-shortfall/articleshow/135510824.cms",
+   "text": "Wholesale prices of pistachios have jumped by 50% across major Indian trading markets.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 7.0,
+   "quote": "\"This year we have seen an increase of about 5-7% in the Diwali sale of nuts and dry fruits when we compare the overall sales or even the same store sales of this year against last year,\" said Rahul Kamath, director at Bola Agro, the largest cashew processor of India.",
+   "source_date": "2026-11-03",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/festive-season-pistachio-prices-nearly-double-almonds-up-20-on-west-asia-crisis-and-us-crop-shortfall/articleshow/135510824.cms",
+   "text": "Overall Diwali sales of nuts and dry fruits increased by about 5% to 7% compared to last year despite higher prices.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 5.0,
+   "quote": "Despite the changes, however, dry fruits and nuts gifting volumes have risen 5-7% year-on-year, industry executives said.",
+   "source_date": "2026-11-03",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/agriculture/festive-season-pistachio-prices-nearly-double-almonds-up-20-on-west-asia-crisis-and-us-crop-shortfall/articleshow/135510824.cms",
+   "text": "Gifting volumes for dry fruits and nuts rose by 5% to 7% year-on-year as packaging sizes were reduced to fit corporate and consumer budgets.",
+   "unit": "pct"
+  },
+  {
+   "date": "2026-11-03",
+   "label": "reported",
+   "source": "ET Economy",
+   "text": "\"Pistachio have been the game spoiler this year. The prices of pistachio from all origins including Iran, Afghanistan and California have increased,\" said Ravindra Mehta, member of central governing council at Nuts and Dry Fruits Council of India (NDFC-I). \"The current pistachio crop in California is expected to be only about 40% of last year, which has led to an increase of 50% in pista prices in the wholesale markets and even more in retail,\" he added.",
+   "url": "https://economictimes.indiatimes.com/news/economy/agriculture/festive-season-pistachio-prices-nearly-double-almonds-up-20-on-west-asia-crisis-and-us-crop-shortfall/articleshow/135510824.cms"
+  }
+ ],
+ "id": "2026-11-04-sglearning-x2",
+ "ids": {
+  "budget": {
+   "day": "2026-11-03",
+   "drafts": 2,
+   "research": 1
+  },
+  "cost": {
+   "inr": 0.0,
+   "usd": 0.146204,
+   "voice": 8
+  },
+  "drafts": 2,
+  "yt_id": "tftx_ZQRhjs"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-04",
+ "reasons": [
+  "try 1: disclaimer: finance script must speak the disclaimer line; disclaimer: Instagram caption must carry the disclaimer"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Diwali ka dry fruit dabba, pichhle saal jaisa hi lagta hai? 🥜\nPista lagbhag double mehenga, badam 20 percent upar, reports kehti hain.\nCompanies ne daam sambhala, par dabbe ke andar maal ghata diya.\nAapne is baar dabbe ka gram check kiya?\nYeh investment advice nahi hai.\nYeh Mummy ko bhejo, jo Diwali ke dabbe khud kharidti hain.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#MoneyTipsHindi",
+     "#HinglishFinance",
+     "#PersonalFinanceIndia",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Diwali ka dry fruit dabba wahi, par andar maal kam? Pista lagbhag double mehenga, badam 20 percent upar, reports ke mutabik. Aapne is baar dabbe ka gram check kiya? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Diwali ka dry fruit dabba wahi dikhta hai, par andar ka maal kam ho sakta hai. Reports ke mutabik pista lagbhag double mehenga hua aur badam 20 percent, California ki kam fasal aur West Asia ki ladai ki wajah se. Isliye dabba lete waqt sirf daam nahi, gram bhi dekho. Us Mummy ko bhejo jo har saal Diwali ke dabbe khud kharidti hain.",
+    "tags": [
+     "pista price",
+     "dry fruit price",
+     "diwali gift box",
+     "badam price",
+     "shrinkflation",
+     "mehngai",
+     "diwali 2026",
+     "paise ki khabar",
+     "learning with sg"
+    ],
+    "title": "Diwali dry fruit dabba chhota kyun ho gaya?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "20%",
+    "line": "Pista double, badam mehenga",
+    "source": "ET"
+   },
+   {
+    "big_number": "40%",
+    "line": "California mein fasal kam",
+    "source": "ET"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Yeh Mummy ko bhejo, jo Diwali ke dabbe khud kharidti hain.",
+  "hook": "Diwali ka dry fruit dabba, pichhle saal jaisa hi lagta hai?",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Dabba wahi, andar kya?",
+      "source": "ET"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Diwali ka dry fruit dabba, pichhle saal jaisa hi lagta hai?"
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "20%",
+      "line": "Pista double, badam mehenga",
+      "source": "ET"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Pista is saal lagbhag double mehenga hai, badam bhi 20 percent upar."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "40%",
+      "line": "California mein fasal kam",
+      "source": "ET"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Kyun? California mein pista ki fasal pichhle saal ki sirf 40 percent hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Ladai se supply ruki",
+      "source": "ET"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Upar se West Asia ki ladai ne maal aane ka raasta roka."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Daam wahi, maal kam",
+      "source": "ET"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Toh companies ne dabbe ka daam kam rakha, par andar maal ghata diya."
+   },
+   {
+    "facts_used": [],
+    "label": "reported",
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Pista ki jagah seeds",
+      "source": "ET"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Kai dabbon mein mehenge pista ki jagah seeds aur berries aa gaye."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Daam nahi, gram dekho",
+      "source": "ET"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Isliye dabba uthao toh sirf daam nahi, peeche likha gram zaroor dekho. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Mummy ko bhejo",
+      "source": "ET"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Yeh Mummy ko bhejo, jo Diwali ke dabbe khud kharidti hain."
+   }
+  ],
+  "thumbnail": {
+   "name": "PISTA",
+   "name_hi": "पिस्ता",
+   "scene": "LEFT: a big Diwali gift box overflowing with green pistachios and almonds last year; RIGHT: the same shiny box this year, half empty, a few pistachios among seeds and dried berries",
+   "words": [
+    "2X",
+    "TRAP"
+   ],
+   "words_hi": [
+    "2X",
+    "ट्रैप"
+   ]
+  },
+  "title": "Diwali dabba mein *pista* kahan gaya? 🥜"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  4.05,
+  9.34,
+  14.91,
+  18.88,
+  23.53,
+  27.98,
+  35.23
+ ],
+ "topic": {
+  "category": "commodities",
+  "extra": true,
+  "graphics": true,
+  "link": "https://economictimes.indiatimes.com/news/economy/agriculture/festive-season-pistachio-prices-nearly-double-almonds-up-20-on-west-asia-crisis-and-us-crop-shortfall/articleshow/135510824.cms",
+  "look": "claymation",
+  "published": "2026-11-03T18:46:08+00:00",
+  "rank": 3,
+  "slot_ist": "13:00",
+  "source": "ET Economy",
+  "summary": "\"Pistachio have been the game spoiler this year. The prices of pistachio from all origins including Iran, Afghanistan and California have increased,\" said Ravindra Mehta, member of central governing council at Nuts and Dry Fruits Council of India (NDFC-I). \"The current pistachio crop in California is expected to be only about 40% of last year, which has led to an increase of 50% in pista prices in the wholesale markets and even more in retail,\" he added.",
+  "target_minutes": null,
+  "title": "Festive season: Pistachio prices nearly double, almonds up 20% on West Asia crisis and US crop shortfall",
+  "voice": "voice_g8azc8xcwhlu"
+ },
+ "updated": "2026-11-03T22:15:45+00:00",
+ "writer": "claude"
+}
