@@ -553,3 +553,17 @@ def test_the_batch_paints_exactly_what_each_scene_asks_for():
         job = pipeline.picture_jobs(p, deps)[0]
         assert asked[0] == (job[0], job[2])
     assert job[2] == "21:9"
+
+
+def test_a_gemini_failure_stops_the_piece_after_one_topic(tmp_path):
+    """3 Nov 2026 (cost): a failed Gemini call is not about the topic, so the other two topics are not tried."""
+    from engine import gemini
+    tries = []
+
+    def research_fn(topic, channel):
+        tries.append(topic)
+        raise gemini.GeminiError("gemini-3.8-flash failed (402): prepayment credits are depleted")
+
+    d, _calls = deps(tmp_path, research=research_fn)
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert p.status == "failed-research" and len(tries) == 1 and "stopped" in p.reasons[-1]

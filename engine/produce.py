@@ -15,6 +15,16 @@ from . import buffer, digest, gitsync, pieces, pipeline, secrets, slots, telegra
 from .config import ROOT
 
 MAX_DEFAULT = 3
+RESEARCH_HORIZON_DAYS = 7        # 3 Nov 2026 (cost): a piece with no script is researched only when due within 7 days (founder: keep the buffer)
+
+
+def _waits_for_its_turn(root: Path, day, channel: str, kind: str, today: date) -> bool:
+    """3 Nov 2026 (cost): a piece with no script yet is researched and written only when it is due within RESEARCH_HORIZON_DAYS.
+    A piece that already has its script keeps moving, so nothing half-made is left behind."""
+    if (day - today).days <= RESEARCH_HORIZON_DAYS:
+        return False
+    piece = pieces.load(slots.piece_id(day, channel, kind), root)
+    return not (piece and piece.script)
 
 
 def _log_run(root: Path, record: dict) -> None:
@@ -42,6 +52,7 @@ def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFA
         plan = [(d, c, k) for d, c, k in plan if f"{c}:{k}" in only]
     made, stopped, ok = [], "", True
     try:
+        plan = [(d, c, k) for d, c, k in plan if not _waits_for_its_turn(root, d, c, k, today)]    # before the slice: far longs come first in the plan
         for day, channel, kind in plan[:max_pieces]:
             pid = slots.piece_id(day, channel, kind)
             piece = pieces.load(pid, root) or pieces.Piece(id=pid, channel=channel, kind=kind, publish_day=day)

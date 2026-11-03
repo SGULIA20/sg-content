@@ -27,7 +27,7 @@ def estimate(today: date, root: Path = ROOT, content: Path = CONTENT_DIR) -> dic
     last = tops[-1]
     spend = _read(Path(root) / "logs" / "image-spend.json", {})
     since = date.fromisoformat(last["day"])
-    spent = sum(v.get("inr", 0) for d, v in spend.items() if since < date.fromisoformat(d) <= today) * UNMETERED_FACTOR
+    spent = sum(v.get("inr", 0) for d, v in spend.items() if since <= date.fromisoformat(d) <= today) * UNMETERED_FACTOR
     recent = [spend.get((today - timedelta(days=k)).isoformat(), {}).get("inr", 0) for k in range(1, RATE_DAYS + 1)]
     per_day = sum(recent) / RATE_DAYS * UNMETERED_FACTOR
     out = {"loaded": last.get("inr"), "since": since, "spent": round(spent), "per_day": round(per_day)}
