@@ -16,10 +16,10 @@ def test_only_pieces_due_within_the_horizon_are_researched(tmp_path):
     from engine import pieces, produce, slots
     today = date(2026, 11, 3)
     assert not produce._waits_for_its_turn(tmp_path, date(2026, 11, 4), "sglearning", "short", today)     # tomorrow: research
-    assert not produce._waits_for_its_turn(tmp_path, date(2026, 11, 5), "sglearning", "short", today)     # day after: research
-    assert produce._waits_for_its_turn(tmp_path, date(2026, 11, 8), "sglearning", "short", today)         # far: wait
-    scripted = pieces.Piece(id=slots.piece_id(date(2026, 11, 8), "sglearning", "short"), channel="sglearning", kind="short",
-                            publish_day=date(2026, 11, 8))
+    assert not produce._waits_for_its_turn(tmp_path, date(2026, 11, 10), "sglearning", "short", today)    # 7 days ahead: research
+    assert produce._waits_for_its_turn(tmp_path, date(2026, 11, 11), "sglearning", "short", today)        # 8 days ahead: wait
+    scripted = pieces.Piece(id=slots.piece_id(date(2026, 11, 11), "sglearning", "short"), channel="sglearning", kind="short",
+                            publish_day=date(2026, 11, 11))
     scripted.script = {"scenes": []}
     pieces.save(scripted, tmp_path)
-    assert not produce._waits_for_its_turn(tmp_path, date(2026, 11, 8), "sglearning", "short", today)     # already has its script
+    assert not produce._waits_for_its_turn(tmp_path, date(2026, 11, 11), "sglearning", "short", today)    # already has its script

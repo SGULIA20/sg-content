@@ -15,7 +15,7 @@ from . import buffer, digest, gitsync, pieces, pipeline, secrets, slots, telegra
 from .config import ROOT
 
 MAX_DEFAULT = 3
-RESEARCH_HORIZON_DAYS = 2        # 3 Nov 2026 (cost): only pieces due within 2 days are researched; further-out pieces wait for their turn
+RESEARCH_HORIZON_DAYS = 7        # 3 Nov 2026 (cost): a piece with no script is researched only when due within 7 days (founder: keep the buffer)
 
 
 def _waits_for_its_turn(root: Path, day, channel: str, kind: str, today: date) -> bool:
