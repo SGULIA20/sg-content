@@ -373,9 +373,14 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
                     return piece
                 try:
                     sheet = deps.research(topic, piece.channel)
-                except (research.ResearchError, gemini.GeminiError) as e:
+                except research.ResearchError as e:
                     pieces.save(pieces.transition(piece, "failed-research", f"try {attempt + 1}: {secrets.scrub(str(e))[:200]}"), root)
                     continue
+                except gemini.GeminiError as e:
+                    # 3 Nov 2026 (cost): a failed Gemini call (prepaid credit gone, outage after its own retries) is not about this topic:
+                    # trying three more topics only paid for three more failed calls. The piece waits for the next run.
+                    pieces.save(pieces.transition(piece, "failed-research", f"try {attempt + 1}, stopped: {secrets.scrub(str(e))[:200]}"), root)
+                    return piece
                 piece.facts = sheet.get("facts", [])
                 if topic.get("extra") and topic.get("summary") and topic.get("link"):
                     # 31 Oct 2026: a chosen story's own brief (the Top 10's ten checked figures, a news item's reported numbers) is a

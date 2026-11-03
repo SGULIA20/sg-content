@@ -1,7 +1,18 @@
 {
  "_note": "Gemini prepaid top-ups (rupees), newest last. The 9 pm card counts down from the newest one; add a line when the founder tops up.",
  "topups": [
-  {"day": "2026-10-24", "inr": 2000},
-  {"day": "2026-10-29", "inr": 2000}
+  {
+   "day": "2026-10-24",
+   "inr": 2000
+  },
+  {
+   "day": "2026-10-29",
+   "inr": 2000
+  },
+  {
+   "day": "2026-11-03",
+   "inr": 1975.04,
+   "note": "reloaded Rs 2,000 on 3 Nov; balance then Rs 1,975.04 (the earlier -24.96 was an overdraft)"
+  }
  ]
 }
