@@ -1,0 +1,44 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.58,Default,,0,0,0,,Sensex 829 points chadha,
+Dialogue: 0,0:00:02.58,0:00:04.52,Default,,0,0,0,,phir bhi shaam ko laal mein
+Dialogue: 0,0:00:04.52,0:00:04.84,Default,,0,0,0,,band?
+Dialogue: 0,0:00:05.29,0:00:06.50,Default,,0,0,0,,Office canteen,
+Dialogue: 0,0:00:06.50,0:00:08.93,Default,,0,0,0,,sabke phone par hara hi hara.
+Dialogue: 0,0:00:08.93,0:00:10.63,Default,,0,0,0,,Ek engineer sochta hai,
+Dialogue: 0,0:00:10.63,0:00:12.33,Default,,0,0,0,,aaj market bhaag raha hai.
+Dialogue: 0,0:00:12.78,0:00:14.31,Default,,0,0,0,,Lunch break mein woh share kharid
+Dialogue: 0,0:00:14.31,0:00:14.89,Default,,0,0,0,,leta hai.
+Dialogue: 0,0:00:14.89,0:00:15.65,Default,,0,0,0,,Logic seedha,
+Dialogue: 0,0:00:15.65,0:00:16.61,Default,,0,0,0,,jo chadh raha hai,
+Dialogue: 0,0:00:16.61,0:00:17.38,Default,,0,0,0,,aur chadhega.
+Dialogue: 0,0:00:17.83,0:00:20.23,Default,,0,0,0,,Par dopahar baad bechne waale aa
+Dialogue: 0,0:00:20.23,0:00:20.47,Default,,0,0,0,,gaye,
+Dialogue: 0,0:00:20.47,0:00:21.67,Default,,0,0,0,,chadhai pighal gayi.
+Dialogue: 0,0:00:22.12,0:00:24.75,Default,,0,0,0,,Shaam ko Sensex 143 points neeche
+Dialogue: 0,0:00:24.75,0:00:25.27,Default,,0,0,0,,band hua.
+Dialogue: 0,0:00:25.27,0:00:28.17,Default,,0,0,0,,Engineer ne lagbhag sabse oonche daam
+Dialogue: 0,0:00:28.17,0:00:29.48,Default,,0,0,0,,pe kharida tha.
+Dialogue: 0,0:00:29.93,0:00:32.20,Default,,0,0,0,,Agli subah Gift Nifty bhi neeche
+Dialogue: 0,0:00:32.20,0:00:32.42,Default,,0,0,0,,tha,
+Dialogue: 0,0:00:32.42,0:00:34.69,Default,,0,0,0,,yaani market khulne se pehle ka
+Dialogue: 0,0:00:34.69,0:00:35.37,Default,,0,0,0,,andaaza.
+Dialogue: 0,0:00:35.82,0:00:37.85,Default,,0,0,0,,Din ke beech ka hara number
+Dialogue: 0,0:00:37.85,0:00:39.89,Default,,0,0,0,,aapki kamaai nahi hota.
+Dialogue: 0,0:00:39.89,0:00:41.92,Default,,0,0,0,,Kharidne se pehle poochho,
+Dialogue: 0,0:00:41.92,0:00:43.20,Default,,0,0,0,,plan hai ya sirf josh?
+Dialogue: 0,0:00:43.20,0:00:45.74,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:46.19,0:00:47.72,Default,,0,0,0,,Us dost ko bhejo jo hara
+Dialogue: 0,0:00:47.72,0:00:49.44,Default,,0,0,0,,screen dekhte hi share le leta
+Dialogue: 0,0:00:49.44,0:00:49.63,Default,,0,0,0,,hai.
