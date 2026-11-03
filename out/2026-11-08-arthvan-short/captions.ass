@@ -1,0 +1,70 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.31,Default,,0,0,0,,Kumbhalgarh ki deewar,
+Dialogue: 0,0:00:01.31,0:00:03.28,Default,,0,0,0,,China ke baad duniya mein sabse
+Dialogue: 0,0:00:03.28,0:00:03.72,Default,,0,0,0,,lambi?
+Dialogue: 0,0:00:04.17,0:00:05.79,Default,,0,0,0,,Kahani kehti hai,
+Dialogue: 0,0:00:05.79,0:00:07.96,Default,,0,0,0,,yeh deewar har raat gir jaati
+Dialogue: 0,0:00:07.96,0:00:08.23,Default,,0,0,0,,thi.
+Dialogue: 0,0:00:08.23,0:00:09.86,Default,,0,0,0,,Din bhar patthar jodte,
+Dialogue: 0,0:00:09.86,0:00:11.21,Default,,0,0,0,,subah sirf malba.
+Dialogue: 0,0:00:11.66,0:00:13.33,Default,,0,0,0,,Tab ek sadhu ne raja ko
+Dialogue: 0,0:00:13.33,0:00:14.37,Default,,0,0,0,,apna sir de diya.
+Dialogue: 0,0:00:14.37,0:00:16.46,Default,,0,0,0,,Log unhe Baba Bhairon kehte hain.
+Dialogue: 0,0:00:16.46,0:00:17.50,Default,,0,0,0,,Yeh lok-katha hai,
+Dialogue: 0,0:00:17.50,0:00:18.34,Default,,0,0,0,,sabut nahi.
+Dialogue: 0,0:00:18.79,0:00:19.87,Default,,0,0,0,,Ab sabut ki baat.
+Dialogue: 0,0:00:19.87,0:00:22.03,Default,,0,0,0,,Yeh qila Mewar ke Rana Kumbha
+Dialogue: 0,0:00:22.03,0:00:22.68,Default,,0,0,0,,ne banwaya.
+Dialogue: 0,0:00:22.68,0:00:25.05,Default,,0,0,0,,Iska naksha shilpi Mandan ne banaya
+Dialogue: 0,0:00:25.05,0:00:25.27,Default,,0,0,0,,tha.
+Dialogue: 0,0:00:25.72,0:00:27.39,Default,,0,0,0,,Wahan ek Prashasti mili,
+Dialogue: 0,0:00:27.39,0:00:29.47,Default,,0,0,0,,yaani patthar par khuda raja ka
+Dialogue: 0,0:00:29.47,0:00:29.89,Default,,0,0,0,,gungaan.
+Dialogue: 0,0:00:29.89,0:00:32.18,Default,,0,0,0,,Usmein Kumbha ke qile banwane ka
+Dialogue: 0,0:00:32.18,0:00:32.60,Default,,0,0,0,,zikr hai.
+Dialogue: 0,0:00:33.05,0:00:35.36,Default,,0,0,0,,Deewar lagbhag 36 km lambi hai,
+Dialogue: 0,0:00:35.36,0:00:37.21,Default,,0,0,0,,pahadon ke upar-neeche.
+Dialogue: 0,0:00:37.21,0:00:39.98,Default,,0,0,0,,2013 mein UNESCO ne ise World
+Dialogue: 0,0:00:39.98,0:00:41.60,Default,,0,0,0,,Heritage bana diya.
+Dialogue: 0,0:00:41.60,0:00:44.37,Default,,0,0,0,,Yaani poori duniya ki saajhi virasat.
+Dialogue: 0,0:00:44.82,0:00:46.88,Default,,0,0,0,,Par China ke baad sabse lambi,
+Dialogue: 0,0:00:46.88,0:00:48.48,Default,,0,0,0,,yeh daawa aaya kahan se?
+Dialogue: 0,0:00:48.48,0:00:51.45,Default,,0,0,0,,Rajasthan Tourism ne ise apne vigyapan
+Dialogue: 0,0:00:51.45,0:00:52.82,Default,,0,0,0,,ki pehchaan bana diya.
+Dialogue: 0,0:00:53.27,0:00:54.56,Default,,0,0,0,,Itihaskaar kehte hain,
+Dialogue: 0,0:00:54.56,0:00:56.41,Default,,0,0,0,,is daawe ka pakka sabut nahi
+Dialogue: 0,0:00:56.41,0:00:56.59,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:56.59,0:00:58.62,Default,,0,0,0,,Iran mein Gorgan ki purani deewar
+Dialogue: 0,0:00:58.62,0:00:59.91,Default,,0,0,0,,isse kahin lambi hai.
+Dialogue: 0,0:01:00.36,0:01:03.02,Default,,0,0,0,,Deewar par kai ghode saath daudne
+Dialogue: 0,0:01:03.02,0:01:03.61,Default,,0,0,0,,ki baat?
+Dialogue: 0,0:01:03.61,0:01:06.56,Default,,0,0,0,,Kai jagah seedhiyan aur khadi chadhaai
+Dialogue: 0,0:01:06.56,0:01:06.85,Default,,0,0,0,,hai.
+Dialogue: 0,0:01:06.85,0:01:09.21,Default,,0,0,0,,Sadhu ki bali sach thi ya
+Dialogue: 0,0:01:09.21,0:01:09.80,Default,,0,0,0,,katha,
+Dialogue: 0,0:01:09.80,0:01:11.28,Default,,0,0,0,,koi nahi jaanta.
+Dialogue: 0,0:01:11.73,0:01:12.18,Default,,0,0,0,,Ab twist.
+Dialogue: 0,0:01:12.18,0:01:13.54,Default,,0,0,0,,Kahani kehti hai,
+Dialogue: 0,0:01:13.54,0:01:15.36,Default,,0,0,0,,jahan sadhu ka sir gira,
+Dialogue: 0,0:01:15.36,0:01:17.17,Default,,0,0,0,,wahan Hanuman Pol bana.
+Dialogue: 0,0:01:17.17,0:01:19.21,Default,,0,0,0,,Aaj bhi qile ka yeh darwaza
+Dialogue: 0,0:01:19.21,0:01:19.89,Default,,0,0,0,,khada hai.
+Dialogue: 0,0:01:20.34,0:01:22.08,Default,,0,0,0,,Aaj aap is deewar par khud
+Dialogue: 0,0:01:22.08,0:01:23.08,Default,,0,0,0,,chal sakte hain.
+Dialogue: 0,0:01:23.08,0:01:25.07,Default,,0,0,0,,Upar se door tak bas patthar
+Dialogue: 0,0:01:25.07,0:01:25.82,Default,,0,0,0,,aur pahad.
+Dialogue: 0,0:01:26.27,0:01:27.80,Default,,0,0,0,,Us dost ko bhejo jo kehta
+Dialogue: 0,0:01:27.80,0:01:29.52,Default,,0,0,0,,hai badi deewar sirf China mein
+Dialogue: 0,0:01:29.52,0:01:29.71,Default,,0,0,0,,hai.

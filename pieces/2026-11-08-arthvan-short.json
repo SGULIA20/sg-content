@@ -1,12 +1,72 @@
 {
  "channel": "arthvan",
- "facts": [],
+ "facts": [
+  {
+   "label": "archaeology",
+   "number": 2013.0,
+   "quote": "The serial site, situated in the state of Rajastahan, includes six majestic forts in Chittorgarh; Kumbhalgarh; Sawai Madhopur; Jhalawar; Jaipur, and Jaisalmer.",
+   "source_date": "2013-06-21",
+   "source_name": "UNESCO World Heritage Centre",
+   "source_url": "https://whc.unesco.org/en/list/247",
+   "text": "UNESCO inscribed Kumbhalgarh Fort as a World Heritage Site in 2013 under the serial nomination Hill Forts of Rajasthan.",
+   "unit": "CE"
+  },
+  {
+   "label": "disputed",
+   "number": 36.0,
+   "quote": "The second longest wall is a disputed statement as there has not been enough citation in this regard. Rajasthan Tourism is made it as its USP in one of the advertisement.",
+   "source_date": "2020",
+   "source_name": "Archaeological Survey of India / Wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/Kumbhalgarh",
+   "text": "Popular travel lore describes Kumbhalgarh as the second longest continuous wall in the world after the Great Wall of China, but military historians and archaeologists dispute this ranking by citing longer ancient fortifications such as Iran's 195-kilometre Great Wall of Gorgan and Pakistan's Ranikot Fort.",
+   "unit": "km"
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "According to the legend, all the efforts to build the wall of the fort failed, every time the wall was built, it would collapse as the construction proceeded.",
+   "source_date": "2013",
+   "source_name": "Folklore of Mewar",
+   "source_url": "https://en.wikipedia.org/wiki/Kumbhalgarh",
+   "text": "Local Mewar folklore recounts that during initial construction, the fort walls collapsed repeatedly each night until a spiritual priest declared that only a voluntary human sacrifice could remove the impediment.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "When no volunteers came forward Mer Baba offered his own head to the king.",
+   "source_date": "2018",
+   "source_name": "Folklore of Mewar",
+   "source_url": "https://en.wikipedia.org/wiki/Kumbhalgarh",
+   "text": "According to local legend, a wandering ascetic named Baba Bhairon offered himself to Rana Kumbha to be ritually beheaded so the fort's masonry could stand undisturbed.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "A small Hanuman mandir was built at the spot where the saint's severed head had fallen, to commemorate his great sacrifice. The gate made next to the mandir was named Hanuman Pol.",
+   "source_date": "2013",
+   "source_name": "Folklore of Mewar",
+   "source_url": "https://en.wikipedia.org/wiki/Kumbhalgarh",
+   "text": "Mewar lore states that the entrance gateway named Hanuman Pol was erected at the precise location where the severed head of the sacrificed ascetic landed.",
+   "unit": null
+  }
+ ],
  "id": "2026-11-08-arthvan-short",
  "ids": {
   "budget": {
    "day": "2026-11-03",
-   "research": 3
-  }
+   "drafts": 1,
+   "research": 4
+  },
+  "cost": {
+   "inr": 19.5,
+   "usd": 0.080836,
+   "voice": 12
+  },
+  "drafts": 1,
+  "ig_story_id": "skipped: Reel over 60 s",
+  "yt_id": "CgoSgtW6POo"
  },
  "kind": "short",
  "publish_day": "2026-11-08",
@@ -22,26 +82,246 @@
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
  ],
- "script": null,
- "status": "failed-research",
- "timings": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Kumbhalgarh ki deewar, China ke baad duniya mein sabse lambi? 🤯\nPahadon par lagbhag 36 km ki deewar, UNESCO World Heritage.\nPar itihaskaar kehte hain, 'sabse lambi' ka pakka sabut nahi.\nAur woh sadhu ki bali, sach ya sirf katha? Aap kya sochte ho?\nUs dost ko bhejo jo kehta hai badi deewar sirf China mein hai.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#IndianHistory",
+     "#Itihaas",
+     "#Rahasya",
+     "#Archaeology",
+     "#AncientIndia",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Kumbhalgarh ki deewar, China ke baad duniya mein sabse lambi? Rajasthan Tourism yahi kehta hai, itihaskaar nahi maante. Aur ek sadhu ki bali ki katha bhi hai. Aapne yeh deewar dekhi hai? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Kumbhalgarh ki deewar, China ke baad duniya mein sabse lambi? Rajasthan ke pahadon par lagbhag 36 km ki yeh deewar UNESCO World Heritage hai, par 'sabse lambi' wala daawa itihaskaar nahi maante. Saath mein ek sadhu ki bali ki lok-katha, jiska sabut aaj tak nahi mila. Us dost ko bhejo jo kehta hai badi deewar sirf China mein hai.",
+    "tags": [
+     "Kumbhalgarh",
+     "Kumbhalgarh Fort",
+     "Kumbhalgarh wall",
+     "Rana Kumbha",
+     "Rajasthan history",
+     "Hill Forts of Rajasthan",
+     "UNESCO",
+     "Indian history",
+     "Hanuman Pol",
+     "Mewar",
+     "great wall of India"
+    ],
+    "title": "Kumbhalgarh Deewar, China ke Baad Sabse Lambi?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo kehta hai badi deewar sirf China mein hai.",
+  "hook": "Kumbhalgarh ki deewar, China ke baad duniya mein sabse lambi?",
+  "scenes": [
+   {
+    "credit": "Sailinghermit, CC BY-SA 4.0, Wikimedia Commons",
+    "facts_used": [
+     1
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Dramatic illustrated panel: a massive stone fort wall snaking endlessly over jagged Aravalli hill ridges in Rajasthan, monsoon storm clouds overhead, lightning striking behind a watchtower, the wall filling the frame and vanishing into the horizon, epic and mysterious mood, no text",
+     "type": "art"
+    },
+    "vo": "Kumbhalgarh ki deewar, China ke baad duniya mein sabse lambi?"
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel at dawn: tired medieval workers in turbans standing before a collapsed heap of fresh stone blocks on a hilltop, scattered tools, dust in the air, worried faces seen from a distance, eerie golden light, no text",
+     "type": "art"
+    },
+    "vo": "Kahani kehti hai, yeh deewar har raat gir jaati thi. Din bhar patthar jodte, subah sirf malba."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: a calm wandering ascetic with long hair and saffron cloth kneeling on a rocky hilltop before a medieval Rajput king seen from behind, unfinished fort walls around them, torches at dusk, solemn and sacred mood, nothing gory, no text",
+     "type": "art"
+    },
+    "vo": "Tab ek sadhu ne raja ko apna sir de diya. Log unhe Baba Bhairon kehte hain. Yeh lok-katha hai, sabut nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: a medieval master builder unrolling a large hand-drawn fort plan on a stone table, a Rajput ruler in royal attire watching from the side, masons carving stone in the background on a hill, warm afternoon light, no text",
+     "type": "art"
+    },
+    "vo": "Ab sabut ki baat. Yeh qila Mewar ke Rana Kumbha ne banwaya. Iska naksha shilpi Mandan ne banaya tha."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: a large old stone slab densely carved with ancient script, an archaeologist without a name brushing dust off it with a soft brush, torchlight in a stone chamber, sense of discovery, script shown as texture only with no readable text",
+     "type": "art"
+    },
+    "vo": "Wahan ek Prashasti mili, yaani patthar par khuda raja ka gungaan. Usmein Kumbha ke qile banwane ka zikr hai."
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated aerial panel: the long fort wall climbing up and down green and brown Aravalli ridges like a stone serpent, round bastions every few hundred metres, the palace at the top of the fort, bright clear sky, grand scale, no text, no logos",
+     "type": "art"
+    },
+    "vo": "Deewar lagbhag 36 km lambi hai, pahadon ke upar-neeche. 2013 mein UNESCO ne ise World Heritage bana diya. Yaani poori duniya ki saajhi virasat."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: an old-style painted travel poster pinned on a railway station wall showing a fort wall over hills, a curious traveller with a backpack looking at it from behind, the poster has only pictures and no readable words, playful questioning mood",
+     "type": "art"
+    },
+    "vo": "Par China ke baad sabse lambi, yeh daawa aaya kahan se? Rajasthan Tourism ne ise apne vigyapan ki pehchaan bana diya."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated split panel: on the left a historian with old maps and a magnifying glass at a desk; on the right a long ancient brick wall ruin stretching across a dry Iranian plain, ochre and brown tones, thoughtful mood, no text",
+     "type": "art"
+    },
+    "vo": "Itihaskaar kehte hain, is daawe ka pakka sabut nahi hai. Iran mein Gorgan ki purani deewar isse kahin lambi hai."
+   },
+   {
+    "facts_used": [
+     1,
+     2,
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: a ghostly row of horsemen galloping side by side on top of the broad fort wall, fading into mist, while in the foreground the same wall turns into steep stone stairs climbing a sharp ridge, dreamlike versus real, no text",
+     "type": "art"
+    },
+    "vo": "Deewar par kai ghode saath daudne ki baat? Kai jagah seedhiyan aur khadi chadhaai hai. Sadhu ki bali sach thi ya katha, koi nahi jaanta."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: a tall arched stone gateway of a Rajasthan fort at sunset, a small shrine beside it with a distant saffron statue seen far away, pilgrims walking through the gate seen from behind, marigold garlands, reverent mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab twist. Kahani kehti hai, jahan sadhu ka sir gira, wahan Hanuman Pol bana. Aaj bhi qile ka yeh darwaza khada hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: a young visitor seen from behind walking on top of the wide fort wall at golden hour, the wall stretching far over endless hills, birds in the sky, peaceful and awe-filled mood, no text",
+     "type": "art"
+    },
+    "vo": "Aaj aap is deewar par khud chal sakte hain. Upar se door tak bas patthar aur pahad."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Illustrated panel: two friends seen from behind sitting on a bastion of the long fort wall at dusk, one pointing out at the wall winding over the hills, warm sky, friendly curious mood, no text",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo kehta hai badi deewar sirf China mein hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "KUMBHALGARH",
+   "name_hi": "कुम्भलगढ़",
+   "scene": "A colossal stone fort wall snaking endlessly over jagged Aravalli ridges under a dark monsoon sky, lightning flashing behind a round bastion, the wall vanishing into the horizon.",
+   "words": [
+    "36 KM",
+    "SACH?"
+   ],
+   "words_hi": [
+    "36 किमी",
+    "सच?"
+   ]
+  },
+  "title": "Kumbhalgarh, China ke baad sabse lambi *deewar*? 🤯"
+ },
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  4.17,
+  11.66,
+  18.79,
+  25.72,
+  33.05,
+  44.82,
+  53.27,
+  60.36,
+  71.73,
+  80.34,
+  86.27
+ ],
  "topic": {
   "allowed_sources": [
-   "en.wikipedia.org",
-   "maharashtratourism.gov.in",
-   "news reports with dates"
+   "asi.nic.in",
+   "UNESCO whc.unesco.org",
+   "en.wikipedia.org"
+  ],
+  "credits": [
+   "Sailinghermit, CC BY-SA 4.0, Wikimedia Commons"
   ],
   "hooks": [
-   "Is gaon mein ghar ke darwaze kyon nahi?",
-   "Bank ki shakha bhi bina lock ke?",
-   "Chori hui to kya hua?"
+   "China ke baad duniya ki sabse lambi deewar India mein?",
+   "Deewar itni chaudi ki 8 ghode saath chalein?",
+   "Ek sant ki bali ki kahani"
   ],
-  "id": "shani-shingnapur",
-  "notes": "Legend lane plus documented modern facts (UCO Bank branch 2011); report thefts honestly.",
-  "place": "Shani Shingnapur, Maharashtra",
+  "id": "kumbhalgarh-wall",
+  "layers": false,
+  "look": "indian-comic",
+  "notes": "Length figures vary (36-38 km); the sacrifice story is legend.",
+  "place": "Kumbhalgarh, Rajasthan",
+  "priority": 1,
   "target_minutes": null,
-  "title_hi": "Shani Shingnapur, bina darwaze ka gaon"
+  "title_hi": "Kumbhalgarh, 36 km ki deewar",
+  "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-11-03T13:49:26+00:00",
- "writer": ""
+ "updated": "2026-11-03T18:04:59+00:00",
+ "writer": "claude"
 }
