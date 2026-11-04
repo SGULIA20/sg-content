@@ -23,12 +23,20 @@ def _git(root: Path, *args, check: bool = True) -> str:
     return r.stdout.strip()
 
 
+MAX_FILE_MB = 95                 # GitHub refuses files over 100 MB (4 Nov 2026: a parked long's 112 MB video sank a whole run's push)
+
+
 def _stage(root: Path, paths=None) -> None:
     for p in paths or PATHS:
         if (Path(root) / p).exists():
             _git(root, "add", "-f", "-A", p)
     if paths is None and (Path(root) / "content" / "voice.json").exists():
         _git(root, "add", "content/voice.json")
+    big = [f for f in _git(root, "diff", "--cached", "--name-only").splitlines()
+           if (Path(root) / f).is_file() and (Path(root) / f).stat().st_size > MAX_FILE_MB * 1024 * 1024]
+    for f in big:                                                # never staged: too large for GitHub; the file stays on disk
+        _git(root, "reset", "-q", "--", f)
+        print(f"gitsync: {f} left out of the commit (over {MAX_FILE_MB} MB)", flush=True)
 
 
 def _rebasing(root: Path) -> bool:
