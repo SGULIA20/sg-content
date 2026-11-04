@@ -52,11 +52,14 @@ def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFA
         plan = [(d, c, k) for d, c, k in plan if f"{c}:{k}" in only]
     made, stopped, ok = [], "", True
     try:
+        from . import intro
+        for pid, action in intro.sweep(root, deps, now_utc, notify):     # pieces waiting for the founder's intro clip (engine/intro.py)
+            made.append((pid, action))
         plan = [(d, c, k) for d, c, k in plan if not _waits_for_its_turn(root, d, c, k, today)]    # before the slice: far longs come first in the plan
         for day, channel, kind in plan[:max_pieces]:
             pid = slots.piece_id(day, channel, kind)
             piece = pieces.load(pid, root) or pieces.Piece(id=pid, channel=channel, kind=kind, publish_day=day)
-            if piece.status in buffer.DONE:
+            if piece.status in buffer.DONE or piece.status == "intro-wait":      # a waiting piece was swept above
                 continue
             if piece.status in PACK_STATUSES:
                 deadline = slots.publish_at(channel, kind, day) - timedelta(hours=FALLBACK_HOURS)

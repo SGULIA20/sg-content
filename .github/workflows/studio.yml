@@ -1,0 +1,67 @@
+name: studio
+
+# The Studio bot (founder, 4 Nov 2026): intro clips, thumbnails and Reel X-rays sent to the separate Telegram bot (engine/studio.py),
+# then the intro sweep when a waiting piece has its clip or has passed its deadline (engine/intro.py). No always-on server: every 5 minutes.
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+    inputs:
+      redo:
+        description: 'piece id to re-upload with its intro clip (engine/intro.py --redo), blank = normal poll + sweep'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: studio
+  cancel-in-progress: false
+
+jobs:
+  studio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -q -r requirements.txt
+      - name: Answer the Studio bot
+        env:
+          TELEGRAM_STUDIO_TOKEN: ${{ secrets.TELEGRAM_STUDIO_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
+          YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
+        run: python -m engine.studio
+      - name: Is a sweep needed?
+        id: need
+        run: |
+          if [ -n "${{ github.event.inputs.redo }}" ] || python -m engine.intro --needed; then echo "yes=1" >> "$GITHUB_OUTPUT"; else echo "yes=0" >> "$GITHUB_OUTPUT"; fi
+      - name: Browser for the cards
+        if: steps.need.outputs.yes == '1'
+        run: python -m playwright install --with-deps chromium
+      - name: Sweep (compose + upload) or redo one piece
+        if: steps.need.outputs.yes == '1'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
+          YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
+        run: |
+          if [ -n "${{ github.event.inputs.redo }}" ]; then python -m engine.intro --redo "${{ github.event.inputs.redo }}"; else python -m engine.intro --sweep; fi
+      - name: Commit pieces, media and logs
+        if: always()
+        run: |
+          python -m engine.gitsync "studio: $(date -u +%Y-%m-%dT%H:%M)"

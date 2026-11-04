@@ -8,7 +8,7 @@ from . import secrets
 from .config import ROOT
 
 STATUSES = {"voicing", "painting", "writing","planned", "researched", "written", "rejected", "voiced", "drawn", "assembled", "qa_failed", "uploaded", "posted",
-            "awaiting-clips", "awaiting-confirm"}
+            "awaiting-clips", "awaiting-confirm", "intro-wait"}
 
 
 @dataclass
