@@ -522,12 +522,12 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
     if dry_run:
         pieces.save(piece, root)
         return piece
-    # 10: the founder's intro first (engine/intro.py: ask, wait, plain at the deadline), then the upload, scheduled
-    if deps.intro_notify is not None and intro.enabled(piece) and not piece.ids.get("intro_skipped") \
-            and datetime.now(timezone.utc) < intro.deadline_utc(piece):
-        intro.request(piece, root, deps.intro_notify)
-        pieces.save(pieces.transition(piece, "intro-wait", f"waiting for the founder's intro clip until {intro.deadline_utc(piece):%d %b %H:%M} UTC"), root)
-        return piece
+    # 10: the founder's intro first (engine/intro.py: his clip composed in, or ask and wait, or plain at the deadline), then the upload
+    if deps.intro_notify is not None and intro.enabled(piece):
+        action = intro.before_upload(piece, root, out_dir, deps.intro_notify)
+        if action == "wait":
+            pieces.save(pieces.transition(piece, "intro-wait", f"waiting for the founder's intro clip until {intro.deadline_utc(piece):%d %b %H:%M} UTC"), root)
+            return piece
     return finish_upload(piece, deps, root, video, thumb, out_dir)
 
 

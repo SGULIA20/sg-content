@@ -114,6 +114,7 @@ class _Deps:
 
 def _waiting(tmp_path, with_clip=True):
     p = _piece(); p.status = "intro-wait"; p.topic["intro"] = intro.plan(p, ask=lambda _p: "Aapka paisa doobta hai, unki fees pakki rehti hai")
+    p.ids["intro_sent"] = "2026-11-06T08:00:00+00:00"                                                   # the pipeline asked when it parked
     out = tmp_path / "out" / p.id; out.mkdir(parents=True); (out / "reel.mp4").write_bytes(b"reel"); (out / "thumb.jpg").write_bytes(b"t")
     pieces.save(p, tmp_path)
     if with_clip:
@@ -237,3 +238,20 @@ def test_a_founder_thumbnail_is_set_once_on_the_uploaded_video_and_rides_a_re_up
     assert intro.pending_thumbs(tmp_path) == [] and (tmp_path / "out" / p.id / "thumb.jpg").read_bytes() == b"jpg1"
     jpg.write_bytes(b"jpg2")                                                               # a new file is set again, once
     assert [q.id for q in intro.pending_thumbs(tmp_path)] == [p.id]
+
+
+def test_a_waiting_long_without_its_video_is_rebuilt_by_the_pipeline_and_the_old_upload_removed(tmp_path, monkeypatch):
+    """4 Nov 2026: out/**/long.mp4 is never in git, so a long carrying the intro is re-made from the voice and picture caches."""
+    from engine import pipeline, youtube
+    p = _piece("long"); p.status = "intro-wait"; p.ids["yt_id"] = "oldlong"; p.ids["intro_sent"] = "x"
+    p.topic["intro"] = intro.plan(p, ask=lambda _p: "Chhote print ka ek rule"); pieces.save(p, tmp_path)
+    c = intro.clip_path(tmp_path, p); c.parent.mkdir(parents=True, exist_ok=True); c.write_bytes(b"clip")
+    made, deleted = [], []
+    def fake_make(piece, deps, root, **k):
+        made.append(piece.status); piece.ids["yt_id"] = "newlong"; piece.status = "uploaded"; pieces.save(piece, root); return piece
+    monkeypatch.setattr(pipeline, "make", fake_make)
+    monkeypatch.setattr(youtube, "access_token", lambda ch, env=None: "t")
+    monkeypatch.setattr(youtube, "delete", lambda tok, vid: deleted.append(vid) or True)
+    action, q = intro.collect(p, _Deps(), tmp_path, now=datetime(2026, 11, 6, 9, 0, tzinfo=timezone.utc), notify=lambda t: None)
+    assert action == "rebuilt-uploaded" and made == ["drawn"] and deleted == ["oldlong"]
+    assert pieces.load(p.id, tmp_path).ids["yt_id_replaced"] == "oldlong"
