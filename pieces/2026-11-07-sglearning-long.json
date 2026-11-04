@@ -21,15 +21,22 @@
    "mr": "AUieDaZCWaT0ki9NAywmH6vm8smD66b9G27guOer0lSVV3VwbiN0yeKA5N-1fg0l2Hc",
    "ta": "AUieDaam8UTanJ3lS4ZxLVALmUD19g-LRvUAJR7iGCW_zYukGvqIYCbOQwk38SO2nk0"
   },
+  "intro": {
+   "adopted": "2026-11-04T22:05:08+00:00",
+   "clip": "2026-11-07-sglearning-long.mp4"
+  },
   "intro_sent": "2026-11-04T10:49:45+00:00",
   "thumb_sha": "a93365d97a1d8824",
-  "yt_id": "WxehCuJw-aI"
+  "yt_id": "UQKKuTPvbAU",
+  "yt_id_replaced": "WxehCuJw-aI"
  },
  "kind": "long",
  "publish_day": "2026-11-07",
  "reasons": [
   "try 1: numbers without a source: 11, 11, 11, 11",
-  "try 2: advice: bech do"
+  "try 2: advice: bech do",
+  "re-made from the caches to carry the founder's intro",
+  "intro merged; adopted the upload UQKKuTPvbAU an earlier run made"
  ],
  "script": {
   "captions": {
@@ -574,6 +581,6 @@
   "title": "Hospital ke bill par 'claim reject': health insurance ka chhota print",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-23T13:13:52+00:00",
+ "updated": "2026-11-04T22:05:09+00:00",
  "writer": "claude"
 }
