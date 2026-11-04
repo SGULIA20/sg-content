@@ -32,6 +32,7 @@ BRIDGE_MAX_WORDS = 13
 MIN_S, MAX_S = 8.0, 12.0                    # the clip the founder sends back
 DEADLINE_HOURS = 3                          # before the earliest slot (Instagram or YouTube): then the plain piece uploads
 MUSIC_LUFS = -26                            # the bed under the founder's voice: audible, below him (founder, 4 Nov 2026, preview 4)
+TAIL_S = 0.35                               # after his last word the body starts (founder, 4 Nov 2026: "trim the 1-2 second pause at the end")
 VOICE_LUFS = -16
 INBOX = Path("inbox") / "intro"
 SILENCE_DB, SILENCE_S = -35, 0.2
@@ -339,7 +340,9 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
     short = piece.kind == "short"
     size = size or VIDEO["short" if short else "long"]
     w, h = size
-    secs = duration(clip)
+    full = duration(clip)
+    segments = speech_segments(clip, full)
+    secs = round(min(full, segments[-1][1] + TAIL_S), 3)         # the silent tail after the last word is cut; the body starts at once
     band_h = int(h * storyframe.TOP)
     title_png = out_dir / "title.png"
     if not title_png.exists():
@@ -354,7 +357,7 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
     bottom_y = h - storyframe.CAP_H - storyframe.LIFT if short else h - band_h
     keyword = (re.search(r"\*(.+?)\*", (piece.script or {}).get("title", "")) or [None, ""])[1]
     overlays = []
-    for k, (s, e, text) in enumerate(cues_for(p["text"], speech_segments(clip, secs), secs)):
+    for k, (s, e, text) in enumerate(cues_for(p["text"], segments, secs)):
         png = out_dir / "cues" / f"intro-{k:02d}.png"
         png.parent.mkdir(parents=True, exist_ok=True)
         if short:
@@ -370,7 +373,7 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
                              watermark_png=storyframe.logo(piece.channel, 600), punch=False, shade_png=shade)
     # audio in separate passes: loudnorm buffers about 3 s, and a mixer that stops at the first input's end lost the last line (4 Nov 2026)
     voice = out_dir / "intro-voice.wav"
-    _run(["-i", str(clip), "-vn", "-af", f"aresample=48000,aformat=channel_layouts=stereo,loudnorm=I={VOICE_LUFS}:TP=-1.5:LRA=11,aresample=48000",
+    _run(["-t", f"{secs:.3f}", "-i", str(clip), "-vn", "-af", f"aresample=48000,aformat=channel_layouts=stereo,loudnorm=I={VOICE_LUFS}:TP=-1.5:LRA=11,aresample=48000",
           "-c:a", "pcm_s16le", str(voice)])
     bed = out_dir / "intro-music.wav"
     _run(["-i", str(music.bed("light", secs + 5)), "-af", f"aresample=48000,aformat=channel_layouts=stereo,loudnorm=I={MUSIC_LUFS}:TP=-6:LRA=7,"
@@ -398,7 +401,8 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
     if short:
         assemble.story_copy(plain, out_dir / "story.mp4")
     _run(["-ss", "1.0", "-i", str(plain), "-frames:v", "1", "-q:v", "2", str(out_dir / "cover.jpg")])
-    piece.ids["intro"] = {"clip": str(Path(clip).name), "seconds": round(secs, 2), "composed": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+    piece.ids["intro"] = {"clip": str(Path(clip).name), "seconds": round(secs, 2), "clip_seconds": round(full, 2),
+                          "composed": datetime.now(timezone.utc).isoformat(timespec="seconds")}
     return plain
 
 
