@@ -74,9 +74,16 @@
    "voice": 13
   },
   "ig_story_id": "skipped: Reel over 60 s",
+  "intro": {
+   "clip": "2026-11-06-arthvan-short.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-04T20:50:20+00:00",
+   "seconds": 8.92
+  },
   "intro_sent": "2026-11-04T10:49:33+00:00",
   "out_sha": "c2907b5be59bf314725cab73921e3c0dfdff12bb",
-  "yt_id": "eYYOkunxu7c"
+  "yt_id": "d2flxgu7Z8E",
+  "yt_id_replaced": "eYYOkunxu7c"
  },
  "kind": "short",
  "publish_day": "2026-11-06",
@@ -330,6 +337,6 @@
   "title_hi": "Kurukshetra ka Chakravyuh naksha",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-30T19:10:24+00:00",
+ "updated": "2026-11-04T20:50:29+00:00",
  "writer": "claude"
 }
