@@ -118,21 +118,68 @@ def prop_for(piece) -> str:
     return "a phone face-up on the table showing a bank app"
 
 
+# Every Reel looks different (founder, 4 Nov 2026: "founder should change his clothes, position should move, walk or change background
+# in every reel; all can't be the same"): the setting, outfit, pose and camera move rotate with the piece, so two days never repeat.
+SETTINGS = {
+    "sglearning": [
+        "a bright modern Indian living room in the morning, clean background with depth (plant, bookshelf, softly blurred)",
+        "a kitchen counter with a steel chai glass and a steaming kettle, warm morning light through the window",
+        "a home office with a laptop, a desk lamp and a wall calendar, late-afternoon light",
+        "the balcony of a city flat, railing and potted plants, soft overcast daylight, the street blurred below",
+        "a bank branch waiting area, blue chairs and a token display, clean fluorescent light softened",
+        "a quiet street outside a vegetable market, stalls and baskets blurred behind, golden evening light",
+        "a metro station platform before the train, clean steel and glass, cool daylight",
+    ],
+    "arthvan": [
+        "a study with a wooden bookshelf, old maps and a brass lamp, warm and calm, background softly blurred",
+        "the stone corridor of an old temple, carved pillars receding, warm sunlight slanting in",
+        "a museum gallery with a sandstone sculpture behind glass, dim gallery light, one spotlight",
+        "the ramparts of a hill fort at dawn, mist in the valley, soft golden light",
+        "a riverbank ghat at sunrise, steps and a temple spire behind, mist on the water",
+        "an archaeological dig site with string grids and a tent, bright even daylight",
+        "an old library reading room with tall shelves and a ladder, dust in a beam of light",
+    ],
+}
+OUTFITS = ["navy blazer over white tee", "a plain charcoal kurta", "a light blue linen shirt, sleeves rolled", "a maroon sweater over a white collar",
+           "a black polo", "a cream Nehru jacket over a white shirt", "a grey half-sleeve shirt, top button open"]
+POSES = ["seated at a wooden table, slightly angled, leaning toward camera, hands resting on the table",
+         "standing, turned a little to the side, weight on one foot, one hand in a pocket",
+         "walking slowly toward the camera, the camera tracking back at the same pace, one small hand gesture per line",
+         "leaning against a counter or railing, relaxed, arms loosely folded then opening on the question",
+         "seated on a stool, elbows on knees, leaning in, close and conversational"]
+CAMERAS = ["eye level, slow push-in from mid-shot to medium close-up over the 10 seconds",
+           "eye level, a slow lateral slide from left to right, the subject kept centred",
+           "a slow pull-back from close-up to mid-shot as he finishes the question, then steady",
+           "handheld feel, slight natural movement, medium close-up throughout",
+           "low angle, slightly below eye level, slow push-in"]
+BEATS = ["on the question, eyebrows lift and one open palm turns up; on the second line, a slow nod and a half-smile; on \"{closing}\", a small \"come with me\" gesture toward the viewer",
+         "on the question, a small head tilt and a raised finger; on the second line, both hands open, palms down, settling; on \"{closing}\", a nod and a step closer",
+         "on the question, a light shrug with open hands; on the second line, counting one point on a finger; on \"{closing}\", a hand inviting the viewer in",
+         "on the question, a direct look with a half-smile; on the second line, a slow nod, hand on chest; on \"{closing}\", a wave of the hand toward the lens"]
+
+
+def _pick(piece, options: list, salt: int = 0):
+    """A steady, different choice per piece: the day number and channel decide, so consecutive days never repeat an option."""
+    n = piece.publish_day.toordinal() + salt + (0 if piece.channel == "sglearning" else 3) + (0 if piece.kind == "short" else 4)
+    return options[n % len(options)]
+
+
 def prompt_for(piece, p: dict) -> str:
-    """The avatar prompt in the founder's format: setting, lighting, body language in three beats, prop, camera, watermark; no captions."""
+    """The avatar prompt in the founder's format: setting, lighting, body language in three beats, prop, camera, watermark; no captions.
+    Setting, outfit, pose, camera and beats rotate per piece."""
     short = piece.kind == "short"
     size = "9:16 vertical, 1080x1920" if short else "16:9 landscape, 1920x1080"
-    setting = ("a bright modern Indian living room in the morning, clean background with depth (plant, bookshelf, softly blurred)"
-               if piece.channel == "sglearning" else
-               "a study with a wooden bookshelf, old maps and a brass lamp, warm and calm, background softly blurred")
-    return (f"{size}, exactly 10 seconds, natural and cinematic. Setting: {setting}. Lighting: soft window key light from the left on the "
-            f"face, warm fill from the right, gentle rim light on the hair; no harsh shadows. SG [locked] seated at a wooden table, slightly "
-            f"angled, leaning toward camera, navy blazer over white tee. Speaks from the first frame, mouth matched to the words, steady eye "
-            f"contact with the lens. Body language in three beats: on the question, eyebrows lift and one open palm turns up; on the second "
-            f"line, a slow nod and a half-smile, hand resting on the table; on \"{CLOSING}\", a small \"come with me\" gesture toward the viewer. "
-            f"Prop: {prop_for(piece)}. Camera: eye level, slow push-in from mid-shot to medium close-up over the 10 seconds. No watermark, no "
-            f"captions, no subtitles, no on-screen text of any kind (the channel badge and captions are added afterwards). "
-            f"Export at {('1080x1920' if short else '1920x1080')}.")
+    handle = "@SGLearning" if piece.channel == "sglearning" else "@SGMythWorld"
+    setting = _pick(piece, SETTINGS[piece.channel])
+    outfit = _pick(piece, OUTFITS, 1)
+    pose = _pick(piece, POSES, 2)
+    camera = _pick(piece, CAMERAS, 3)
+    beats = _pick(piece, BEATS, 4).format(closing=CLOSING.rstrip("."))
+    return (f"{size}, exactly 10 seconds, natural and cinematic. Setting: {setting}. Lighting: soft key light on the face from one side, "
+            f"warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] {pose}, wearing {outfit}. Speaks from "
+            f"the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: {beats}. "
+            f"Prop: {prop_for(piece)}. Camera: {camera}. {handle} watermark top right, white, bold, 80% opacity. No captions, no subtitles, "
+            f"no other on-screen text. Export at {('1080x1920' if short else '1920x1080')}.")
 
 
 def earliest_slot_utc(piece) -> datetime:
