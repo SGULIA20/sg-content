@@ -96,9 +96,16 @@
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
+  "intro": {
+   "clip": "2026-11-07-arthvan-short.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-04T16:24:55+00:00",
+   "seconds": 10.03
+  },
   "intro_sent": "2026-11-04T13:47:57+00:00",
   "out_sha": "c39da9d68a84b49fd5c8fffa40d80002a1dee756",
-  "yt_id": "F2nSLUCfmJw"
+  "yt_id": "uABwm2lW7LM",
+  "yt_id_replaced": "F2nSLUCfmJw"
  },
  "kind": "short",
  "publish_day": "2026-11-07",
@@ -368,6 +375,6 @@
   "title_hi": "Mahabalipuram ke 7 mandir, 6 samundar mein?",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-11-01T07:36:10+00:00",
+ "updated": "2026-11-04T16:25:05+00:00",
  "writer": "claude"
 }
