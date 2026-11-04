@@ -24,14 +24,21 @@
  ],
  "id": "2026-11-05-arthvan-long",
  "ids": {
+  "intro": {
+   "adopted": "2026-11-04T16:42:37+00:00",
+   "clip": "2026-11-05-arthvan-long.mp4"
+  },
   "intro_sent": "2026-11-04T10:49:33+00:00",
   "thumb_sha": "72dad10890316647",
-  "yt_id": "tiWpEGWxpR0"
+  "yt_id": "XNPVNKHSz9o",
+  "yt_id_replaced": "tiWpEGWxpR0"
  },
  "kind": "long",
  "publish_day": "2026-11-05",
  "reasons": [
-  "try 1: numbers without a source: 7.8, 7.8"
+  "try 1: numbers without a source: 7.8, 7.8",
+  "re-made from the caches to carry the founder's intro",
+  "intro merged; adopted the upload XNPVNKHSz9o an earlier run made"
  ],
  "script": {
   "captions": {
@@ -605,6 +612,6 @@
   "title_hi": "Tanjore ke mandir ki parchhai",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-22T19:46:52+00:00",
+ "updated": "2026-11-04T16:42:38+00:00",
  "writer": "claude"
 }
