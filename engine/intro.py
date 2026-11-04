@@ -410,7 +410,7 @@ def needed(root: Path, now: datetime | None = None) -> bool:
     return any(_usable_clip(root, p) for p in scheduled(root, now))
 
 
-def sweep(root: Path, deps, now: datetime | None = None, notify=None, transcribe=None, compose_fn=None, env=None, delete=None) -> list:
+def sweep(root: Path, deps, now: datetime | None = None, notify=None, transcribe=None, compose_fn=None, env=None, delete=None, find=None) -> list:
     """Waiting pieces are collected; scheduled pieces whose clip has come are re-uploaded with it. Never raises."""
     now = now or datetime.now(timezone.utc)
     out = []
@@ -425,7 +425,7 @@ def sweep(root: Path, deps, now: datetime | None = None, notify=None, transcribe
         if not _usable_clip(root, p):
             continue
         try:
-            action = redo_piece(p, deps, root, env, notify, transcribe, compose_fn, delete)
+            action = redo_piece(p, deps, root, env, notify, transcribe, compose_fn, delete, find)
         except Exception as e:
             action = f"failed: {type(e).__name__}: {secrets.scrub(str(e))[:160]}"
             (notify or print)(f"🎬 {p.id}: re-upload with the intro failed ({action}); the scheduled version stays.")
@@ -433,7 +433,35 @@ def sweep(root: Path, deps, now: datetime | None = None, notify=None, transcribe
     return out
 
 
-def redo_piece(piece, deps, root: Path, env=None, notify=None, transcribe=None, compose_fn=None, delete=None) -> str:
+def existing_upload(piece, token: str, call=None) -> str:
+    """The id of a private upload already scheduled with this piece's title and publish time, if one exists (4 Nov 2026: a redo whose
+    final git push failed had replaced the video on YouTube; running it again must adopt that upload, not add a second one)."""
+    from . import youtube
+    call = call or youtube.call
+    want_title = youtube.metadata(piece, slots.publish_at(piece.channel, piece.kind, piece.publish_day))["snippet"]["title"]
+    want_at = slots.publish_at(piece.channel, piece.kind, piece.publish_day)
+    data = "https://www.googleapis.com/youtube/v3"
+    status, _h, ch = call("GET", f"{data}/channels?part=contentDetails&mine=true", token)
+    if status != 200:
+        return ""
+    uploads = ch["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+    status, _h, body = call("GET", f"{data}/playlistItems?part=contentDetails&maxResults=50&playlistId={uploads}", token)
+    ids = [i["contentDetails"]["videoId"] for i in (body.get("items") or [])] if status == 200 else []
+    if not ids:
+        return ""
+    status, _h, body = call("GET", f"{data}/videos?part=snippet,status&id={','.join(ids)}", token)
+    for v in (body.get("items") or []) if status == 200 else []:
+        at = str((v.get("status") or {}).get("publishAt", ""))
+        try:
+            same_time = datetime.fromisoformat(at.replace("Z", "+00:00")) == want_at
+        except ValueError:
+            same_time = False
+        if (v.get("snippet") or {}).get("title") == want_title and (v.get("status") or {}).get("privacyStatus") == "private" and same_time:
+            return v["id"]
+    return ""
+
+
+def redo_piece(piece, deps, root: Path, env=None, notify=None, transcribe=None, compose_fn=None, delete=None, find=None) -> str:
     """An already-uploaded piece gets its intro: compose with the clip, delete the scheduled YouTube video, upload the new one in the
     same slot (the publish time comes from the piece as before). The plain file is kept as reel-plain.mp4."""
     from . import pipeline, youtube
@@ -451,6 +479,13 @@ def redo_piece(piece, deps, root: Path, env=None, notify=None, transcribe=None, 
     (compose_fn or compose)(piece, clip, out_dir)
     piece.ids.setdefault("intro", {"clip": clip.name, "composed": datetime.now(timezone.utc).isoformat(timespec="seconds")})
     old = piece.ids.get("yt_id")
+    found = (find or (lambda pc: existing_upload(pc, youtube.access_token(pc.channel, env))))(piece)
+    if found and found != old:                                        # an earlier redo already replaced the video: adopt it, upload nothing
+        piece.ids["yt_id"], piece.ids["yt_id_replaced"] = found, old
+        piece.topic["look"] = piece.topic.get("look") or ""
+        pieces.save(pieces.transition(piece, "uploaded", f"intro merged; adopted the upload {found} an earlier run made"), root)
+        notify(f"🎬 {piece.id}: your intro is merged; the piece keeps the re-scheduled upload (YouTube {found}).")
+        return "adopted-intro"
     if old:
         (delete or (lambda ch, vid: youtube.delete(youtube.access_token(ch, env), vid)))(piece.channel, old)
         piece.ids["yt_id_replaced"] = old

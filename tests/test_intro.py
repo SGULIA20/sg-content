@@ -157,7 +157,7 @@ def test_a_scheduled_pieces_clip_replaces_its_youtube_upload_in_the_same_slot(tm
     deps = _Deps(); sent, deleted, composed = [], [], []
     heard = p.topic["intro"]["text"].lower()
     out = intro.sweep(tmp_path, deps, now=datetime(2026, 11, 5, 7, 0, tzinfo=timezone.utc), notify=sent.append, transcribe=lambda c: heard,
-                      compose_fn=lambda piece, clip, o: composed.append(piece.id), delete=lambda ch, vid: deleted.append((ch, vid)))
+                      compose_fn=lambda piece, clip, o: composed.append(piece.id), delete=lambda ch, vid: deleted.append((ch, vid)), find=lambda pc: "")
     assert out == [(p.id, "re-uploaded-intro")] and composed == [p.id] and deleted == [("sglearning", "old123")] and deps.uploaded == [p.id]
     q = pieces.load(p.id, tmp_path)
     assert q.status == "uploaded" and q.ids["yt_id"] == "yt2026" and q.ids["yt_id_replaced"] == "old123" and "re-scheduled" in sent[-1]
@@ -168,3 +168,31 @@ def test_a_scheduled_piece_too_close_to_its_slot_is_left_alone(tmp_path):
     _scheduled(tmp_path, "2026-11-07-sglearning-short", date(2026, 11, 7), with_clip=True)
     late = datetime(2026, 11, 7, 12, 30, tzinfo=timezone.utc)          # Instagram posts at 13:00 UTC
     assert intro.scheduled(tmp_path, late) == [] and intro.needed(tmp_path, late) is False
+
+
+def test_a_redo_adopts_the_upload_an_earlier_run_already_made_instead_of_uploading_twice(tmp_path, monkeypatch):
+    """4 Nov 2026: the first real redo replaced the video on YouTube, then its git push failed; the next run must not add a second video."""
+    p = _scheduled(tmp_path, "2026-11-07-sglearning-short", date(2026, 11, 7), with_clip=True)
+    p.topic["intro"] = intro.plan(p, ask=lambda _p: "Aapka paisa doobta hai, unki fees pakki rehti hai"); pieces.save(p, tmp_path)
+    monkeypatch.setattr(intro, "duration", lambda path: 9.9)
+    deps = _Deps(); sent, deleted = [], []
+    out = intro.sweep(tmp_path, deps, now=datetime(2026, 11, 5, 7, 0, tzinfo=timezone.utc), notify=sent.append,
+                      transcribe=lambda c: p.topic["intro"]["text"].lower(), compose_fn=lambda *a: None,
+                      delete=lambda ch, vid: deleted.append(vid), find=lambda pc: "new777")
+    assert out == [(p.id, "adopted-intro")] and deleted == [] and deps.uploaded == []
+    q = pieces.load(p.id, tmp_path)
+    assert q.status == "uploaded" and q.ids["yt_id"] == "new777" and q.ids["yt_id_replaced"] == "old123" and q.ids.get("intro")
+
+
+def test_existing_upload_matches_title_privacy_and_publish_time():
+    from engine import youtube
+    p = _piece(); p.script["captions"] = {"youtube": {"title": "SIP giri, phir bhi fund house jeeta?"}}
+    want = youtube.metadata(p, intro.slots.publish_at(p.channel, p.kind, p.publish_day))["snippet"]["title"]
+    at = intro.slots.publish_at(p.channel, p.kind, p.publish_day).strftime("%Y-%m-%dT%H:%M:%SZ")
+    def call(method, url, token, **k):
+        if "channels?" in url: return 200, {}, {"items": [{"contentDetails": {"relatedPlaylists": {"uploads": "UU1"}}}]}
+        if "playlistItems" in url: return 200, {}, {"items": [{"contentDetails": {"videoId": "a"}}, {"contentDetails": {"videoId": "b"}}]}
+        return 200, {}, {"items": [{"id": "a", "snippet": {"title": want}, "status": {"privacyStatus": "public", "publishAt": at}},
+                                   {"id": "b", "snippet": {"title": want}, "status": {"privacyStatus": "private", "publishAt": at}}]}
+    assert intro.existing_upload(p, "tok", call) == "b"
+    assert intro.existing_upload(p, "tok", lambda m, u, t, **k: (403, {}, {})) == ""
