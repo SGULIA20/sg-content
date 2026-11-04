@@ -66,9 +66,21 @@ def test_check_wants_8_to_12_seconds_the_words_and_the_closing_line(tmp_path):
     assert intro.recall("a b c d", "b c d e f g h i j") == 0.75
 
 
+def test_cues_deal_the_phrases_to_the_speech_segments_by_syllables_never_a_lone_hai():
+    """4 Nov 2026: the 7 Nov clip has four speech segments; the script has five phrases once "hai?" joins its question."""
+    text = "Aapki SIP doobe, phir bhi fund house kyun kamata hai? Aapka paisa doobta hai, unki fees phir bhi pakki rehti hai. Aaiye isko samajhte hain."
+    segs = [(0.508, 1.556), (1.852, 3.219), (4.287, 7.007), (7.55, 8.494)]
+    cues = intro.cues_for(text, segs, 9.9)
+    texts = [c[2] for c in cues]
+    assert texts == ["Aapki SIP doobe,", "phir bhi fund house kyun kamata hai?", "Aapka paisa doobta hai,", "unki fees phir bhi pakki rehti hai.", "Aaiye isko samajhte hain."]
+    assert cues[0][0] == 0.458 and cues[1][0] == 1.802 and cues[2][0] == 4.237 and 4.9 < cues[3][0] < 6.2 and cues[4][0] == 7.5 and cues[-1][1] == 9.9
+    short = intro.cues_for("Aapki SIP doobe, phir bhi fund house kyun kamata hai? Aaiye isko samajhte hain.", segs, 9.9)
+    assert [c[2] for c in short] == ["Aapki SIP doobe,", "phir bhi fund house kyun kamata hai?", "Aaiye isko samajhte hain."] and short[-1][0] == 7.5
+
+
 def test_cues_follow_the_spoken_phrases_one_per_segment_else_the_syllable_split():
     text = "Aapki SIP doobe, phir bhi fund house kyun kamata hai? Aapka paisa doobta hai. Aaiye isko samajhte hain."
-    n = len(intro.captions._phrases(text))
+    n = len(intro._phrases(text))
     segs = [(0.5 + i * 2.0, 1.9 + i * 2.0) for i in range(n)]
     cues = intro.cues_for(text, segs, 9.9)
     assert len(cues) == n and cues[0][0] == 0.45 and cues[0][1] == segs[1][0] and cues[-1][1] == 9.9 and cues[-1][2].startswith("Aaiye")
