@@ -1,0 +1,66 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.55,Default,,0,0,0,,Tirupati ke Balaji,
+Dialogue: 0,0:00:01.55,0:00:03.50,Default,,0,0,0,,Kubera ka karza aaj bhi chuka
+Dialogue: 0,0:00:03.50,0:00:04.08,Default,,0,0,0,,rahe hain?
+Dialogue: 0,0:00:04.53,0:00:06.23,Default,,0,0,0,,Varaha Purana kehta hai,
+Dialogue: 0,0:00:06.23,0:00:09.07,Default,,0,0,0,,Adi Varaha Swami Pushkarini ke kinare
+Dialogue: 0,0:00:09.07,0:00:09.45,Default,,0,0,0,,base.
+Dialogue: 0,0:00:09.45,0:00:12.10,Default,,0,0,0,,Aas-paas ke pahad unhone Venkateswara ko
+Dialogue: 0,0:00:12.10,0:00:12.29,Default,,0,0,0,,diye.
+Dialogue: 0,0:00:12.74,0:00:14.46,Default,,0,0,0,,Bhavishyottara Purana mein,
+Dialogue: 0,0:00:14.46,0:00:17.13,Default,,0,0,0,,Srinivasa ko Padmavati se shaadi karni
+Dialogue: 0,0:00:17.13,0:00:17.32,Default,,0,0,0,,thi.
+Dialogue: 0,0:00:17.32,0:00:19.61,Default,,0,0,0,,Unhone Kubera se bhaari karza liya.
+Dialogue: 0,0:00:19.61,0:00:21.14,Default,,0,0,0,,Byaaj Kali Yuga ke ant tak
+Dialogue: 0,0:00:21.14,0:00:21.90,Default,,0,0,0,,chukana hai.
+Dialogue: 0,0:00:22.35,0:00:24.98,Default,,0,0,0,,Archaeological Survey of India ne yahan
+Dialogue: 0,0:00:24.98,0:00:26.00,Default,,0,0,0,,shilalekh padhe,
+Dialogue: 0,0:00:26.00,0:00:27.82,Default,,0,0,0,,yaani patthar par khude record.
+Dialogue: 0,0:00:27.82,0:00:30.46,Default,,0,0,0,,Sabse purana tareekh wala lekh 966
+Dialogue: 0,0:00:30.46,0:00:30.86,Default,,0,0,0,,ka hai.
+Dialogue: 0,0:00:30.86,0:00:33.29,Default,,0,0,0,,Pallava rani Samavai ne zameen aur
+Dialogue: 0,0:00:33.29,0:00:34.51,Default,,0,0,0,,chaandi ki moorti di.
+Dialogue: 0,0:00:34.96,0:00:37.68,Default,,0,0,0,,Rajendra Chola ke lekh mein hukum
+Dialogue: 0,0:00:37.68,0:00:37.95,Default,,0,0,0,,hai,
+Dialogue: 0,0:00:37.95,0:00:39.58,Default,,0,0,0,,daan ka hisaab jaancho.
+Dialogue: 0,0:00:39.58,0:00:41.75,Default,,0,0,0,,Rasoi mein ghee kaise rakhein,
+Dialogue: 0,0:00:41.75,0:00:42.84,Default,,0,0,0,,yeh bhi likha.
+Dialogue: 0,0:00:43.29,0:00:46.21,Default,,0,0,0,,Samrat Krishnadevaraya ne sona aur ratna
+Dialogue: 0,0:00:46.21,0:00:46.43,Default,,0,0,0,,diye.
+Dialogue: 0,0:00:46.43,0:00:48.90,Default,,0,0,0,,Usse garbhagriha ki chhat sone se
+Dialogue: 0,0:00:48.90,0:00:49.57,Default,,0,0,0,,madhi gayi.
+Dialogue: 0,0:00:50.02,0:00:51.44,Default,,0,0,0,,Par umar par bahas hai.
+Dialogue: 0,0:00:51.44,0:00:54.09,Default,,0,0,0,,Vidvaan purani Tamil Sangam kavita mein
+Dialogue: 0,0:00:54.09,0:00:56.33,Default,,0,0,0,,Vengadam pahad ka zikr dikhate hain.
+Dialogue: 0,0:00:56.33,0:00:58.56,Default,,0,0,0,,Patthar ke sabut mandir ko Pallava
+Dialogue: 0,0:00:58.56,0:00:59.58,Default,,0,0,0,,daur se jodte hain.
+Dialogue: 0,0:01:00.03,0:01:02.23,Default,,0,0,0,,Moorti ka patthar kitna purana hai?
+Dialogue: 0,0:01:02.23,0:01:03.83,Default,,0,0,0,,Garbhagriha ke niyam sakht hain,
+Dialogue: 0,0:01:03.83,0:01:05.83,Default,,0,0,0,,kisi vaigyanik ne jaancha nahi.
+Dialogue: 0,0:01:06.28,0:01:07.79,Default,,0,0,0,,Lok-katha kehti hai,
+Dialogue: 0,0:01:07.79,0:01:09.55,Default,,0,0,0,,moorti par asli baal hain,
+Dialogue: 0,0:01:09.55,0:01:10.81,Default,,0,0,0,,jo uljhte nahi.
+Dialogue: 0,0:01:10.81,0:01:13.08,Default,,0,0,0,,Iska koi likha sabut nahi.
+Dialogue: 0,0:01:13.53,0:01:14.19,Default,,0,0,0,,Katha hai,
+Dialogue: 0,0:01:14.19,0:01:16.18,Default,,0,0,0,,Neela Devi ne apne baal kaat
+Dialogue: 0,0:01:16.18,0:01:17.72,Default,,0,0,0,,kar Srinivasa ko diye.
+Dialogue: 0,0:01:17.72,0:01:19.93,Default,,0,0,0,,Wahin se baal daan ki parampara
+Dialogue: 0,0:01:19.93,0:01:20.37,Default,,0,0,0,,judi.
+Dialogue: 0,0:01:20.82,0:01:22.95,Default,,0,0,0,,Aaj TTD ke mutabik roz 1
+Dialogue: 0,0:01:22.95,0:01:24.55,Default,,0,0,0,,lakh tak log aate hain.
+Dialogue: 0,0:01:24.55,0:01:26.15,Default,,0,0,0,,Bhakt baal chadhate hain,
+Dialogue: 0,0:01:26.15,0:01:28.02,Default,,0,0,0,,hundi mein daan daalte hain.
+Dialogue: 0,0:01:28.47,0:01:29.95,Default,,0,0,0,,Us dost ko bhejo jo har
+Dialogue: 0,0:01:29.95,0:01:32.07,Default,,0,0,0,,saal Tirupati darshan jaata hai.

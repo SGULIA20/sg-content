@@ -1,0 +1,391 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "archaeology",
+   "number": 100000.0,
+   "quote": "The temple shrine famous for Lord Venkateshwara receives between 50,000 and 1 lakh visitors every day, according to the TTD official website.",
+   "source_date": "2024-01-29",
+   "source_name": "Tirumala Tirupati Devasthanams (TTD)",
+   "source_url": "https://www.tirumala.org",
+   "text": "According to official administrative statistics released by the Tirumala Tirupati Devasthanams, the hill shrine accommodates between 50,000 and 100,000 pilgrims on a typical day.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": 966.0,
+   "quote": "The first recorded endowment was made by Pallava queen Samavai in the year 966 CE.",
+   "source_date": "1930",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/History_of_Tirumala_Venkateswara_Temple",
+   "text": "An epigraphical survey by the Archaeological Survey of India documented that the earliest dated inscription in the temple records the donation of land and consecration of a silver deity by Pallava queen Samavai in 966 CE.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1019.0,
+   "quote": "One significant inscription from 1019 AD, during Rajendra Chola-I's reign, mandates strict maintenance of the temple kitchen, or 'Potu,' with severe punishment for non-compliance.",
+   "source_date": "2024-09-24",
+   "source_name": "Archaeological Survey of India, Epigraphy Branch",
+   "source_url": "https://www.newindianexpress.com/states/andhra-pradesh/2024/Sep/24/inscriptions-reveal-historical-details-of-offerings-to-tirumala-temple",
+   "text": "An inscription documented by the Archaeological Survey of India dating to the regnal year of Rajendra Chola I in 1019 CE orders an inquiry into the management of endowments and sets standards for ghee storage in the temple kitchen.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1517.0,
+   "quote": "In 1517, Vijayanagara Emperor Krishnadevaraya, on one of his many visits to the temple, donated gold and jewels, enabling the Ananda Nilayam (inner shrine) roofing to be gilded.",
+   "source_date": "1931",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/History_of_Tirumala_Venkateswara_Temple",
+   "text": "Epigraphical records compiled by the Archaeological Survey of India reveal that Vijayanagara emperor Krishnadevaraya donated gold and gems to guild the Ananda Nilayam temple canopy in 1517 CE.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1150.0,
+   "quote": "Mysore Archaeological Society of India (ASI) Director (Epigraphy) Dr K Munirathnam Reddy explained that around 1,150 inscriptions in Tamil, Kannada, and Telugu were found around the temple.",
+   "source_date": "2024-09-24",
+   "source_name": "Archaeological Survey of India, Epigraphy Branch",
+   "source_url": "https://www.newindianexpress.com/states/andhra-pradesh/2024/Sep/24/inscriptions-reveal-historical-details-of-offerings-to-tirumala-temple",
+   "text": "Epigraphists from the Archaeological Survey of India cataloged approximately 1,150 historical stone inscriptions in Tamil, Telugu, and Kannada across the shrines of Tirumala and Tirupati.",
+   "unit": "count"
+  },
+  {
+   "label": "disputed",
+   "number": 300.0,
+   "quote": "The Venkatam hill is mentioned in Tamil Sangam literature dated to 300 BCE.",
+   "source_date": "2018",
+   "source_name": "Sangam Literature / Epigraphical Survey",
+   "source_url": "https://en.wikipedia.org/wiki/Venkateswara",
+   "text": "Historians disagree over the era of origin of the Tirumala sanctuary, as literary scholars cite Tamil Sangam poetry from approximately 300 BCE referencing the sacred Vengadam hill, whereas material and epigraphical evidence establishes the earliest temple structure only from the medieval Pallava era.",
+   "unit": "BCE"
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "According to the Bhavishyottara Purana tradition, Srinivasa approached Kubera, the divine treasurer, for financial help... Kubera agreed, with repayment and interest extending through Kali Yuga.",
+   "source_date": "1980",
+   "source_name": "Bhavishyottara Purana",
+   "source_url": "https://www.tirumala.org",
+   "text": "The Bhavishyottara Purana states that Srinivasa obtained a massive loan of wealth from Kubera to marry Padmavati and committed to repaying interest until the end of Kali Yuga.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "According to the Varaha Purana, Adi Varaha manifested himself on the western bank of the Swami Pushkarini, while Vishnu in the form of Venkateswara came in to reside on the southern bank of the Swami Pushkarini.",
+   "source_date": "1965",
+   "source_name": "Varaha Purana",
+   "source_url": "https://www.tirumala.org",
+   "text": "The Varaha Purana relates that Adi Varaha first inhabited the western banks of Swami Pushkarini and allocated the surrounding hills of Venkatadri to Lord Venkateswara.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "Śrī Venkaṭeśāth paro devo nāsthy anyoḥ śaraṇam bhuvi | Venkaṭeśa samo devo nāsti nāsti maheṭale",
+   "source_date": "1965",
+   "source_name": "Varaha Purana, Canto 1, Chapter 61",
+   "source_url": "https://www.tirumala.org",
+   "text": "The Varaha Purana states that no deity equal to Lord Venkateswara exists on Earth to grant ultimate refuge to human beings in the Kali Yuga.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "Lord Venkateswara's idol is real human hair, never tangles, remains smooth.",
+   "source_date": "2024",
+   "source_name": "Tirumala Folk Legend",
+   "source_url": "https://en.wikipedia.org/wiki/Venkateswara_Temple,_Tirumala",
+   "text": "A widespread oral tradition asserts that the stone idol in the Tirumala sanctum possesses soft, genuine human hair that never develops tangles.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "A celestial princess named Neela Devi noticed this and immediately cut a portion of her own hair to cover the Lord's bald patch.",
+   "source_date": "2024",
+   "source_name": "Tirumala Sthala Legend",
+   "source_url": "https://en.wikipedia.org/wiki/Venkateswara_Temple,_Tirumala",
+   "text": "A popular devotional legend states that the celestial maiden Neela Devi clipped her own locks to restore hair lost from Srinivasa's head after an injury, inspiring the tradition of pilgrim tonsure.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "If you put your ear close to the wall behind the Balaji idol, you can hear the sound of sea waves.",
+   "source_date": "2024",
+   "source_name": "Tirupati Pilgrim Lore",
+   "source_url": "https://www.tirumala.org",
+   "text": "A long-standing local folklore tale holds that devotees who listen closely behind the sanctum idol can hear the sound of oceanic waves.",
+   "unit": null
+  }
+ ],
+ "id": "2026-11-11-arthvan-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-04",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 19.5,
+   "usd": 0.0971,
+   "voice": 12
+  },
+  "drafts": 1,
+  "ig_story_id": "skipped: Reel over 60 s",
+  "intro_sent": "2026-11-04T21:17:47+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-11",
+ "reasons": [
+  "waiting for the founder's intro clip until 11 Nov 11:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Tirupati ke Balaji, Kubera ka karza aaj bhi chuka rahe hain? 🤯\nPurana mein karze ki katha, patthar par 966 ka daan ka lekh.\nPar moorti ke patthar ki jaanch aaj tak kisi vaigyanik ne nahi ki.\nAapne Tirupati mein baal chadhaye hain kabhi?\nUs dost ko bhejo jo har saal Tirupati darshan jaata hai.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#IndianHistory",
+     "#Mythology",
+     "#Archaeology",
+     "#AncientIndia",
+     "#HinduMythology",
+     "#Itihaas",
+     "#Rahasya"
+    ]
+   },
+   "threads": {
+    "text": "Tirupati ke Balaji, Kubera ka karza aaj bhi chuka rahe hain? Purana karze ki katha kehta hai, patthar ke lekh 966 ke daan dikhate hain. Aapne kabhi hundi mein daan kiya hai? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Tirupati ke Balaji aur Kubera ka karza, Purana kya kehta hai? Patthar par khude lekh 966 tak ke daan ka hisaab dikhate hain, par mandir ki asli umar par vidvaan aaj bhi bahas karte hain. Katha, sabut aur sawaal, sab ek saath. Us dost ko bhejo jo har saal Tirupati darshan jaata hai.",
+    "tags": [
+     "Tirupati",
+     "Balaji",
+     "Tirumala",
+     "Venkateswara",
+     "Kubera",
+     "Padmavati",
+     "Indian history",
+     "mythology",
+     "archaeology",
+     "inscriptions",
+     "Sabut ke saath"
+    ],
+    "title": "Tirupati Balaji ne Kubera se karza liya tha?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo har saal Tirupati darshan jaata hai.",
+  "hook": "Tirupati ke Balaji, Kubera ka karza aaj bhi chuka rahe hain?",
+  "scenes": [
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Dramatic night on the Tirumala hills under a stormy purple sky with lightning, a glowing golden temple roof on the peak, a tall divine figure seen only from behind facing a radiant treasurer figure beside towering heaps of gold coins and jewels, wind and mist swirling, epic illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Tirupati ke Balaji, Kubera ka karza aaj bhi chuka rahe hain?"
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "An ancient sacred temple tank on a forested hilltop at sunrise, a distant divine boar-headed figure seen from far away on the western bank, green Venkatadri hills rolling behind, soft golden mist, illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "Varaha Purana kehta hai, Adi Varaha Swami Pushkarini ke kinare base. Aas-paas ke pahad unhone Venkateswara ko diye."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "A celestial wedding preparation in an ancient hill kingdom, a divine groom seen from behind receiving overflowing chests of gold from a heavenly treasurer, a royal bride's palace glowing in the distance, festive lamps, illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "Bhavishyottara Purana mein, Srinivasa ko Padmavati se shaadi karni thi. Unhone Kubera se bhaari karza liya. Byaaj Kali Yuga ke ant tak chukana hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "An epigraphist in an old khaki outfit kneeling by a temple stone wall covered in ancient carved script, torchlight on the letters, a faded painting nearby of an ancient queen offering a silver statue, mood of discovery, illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "Archaeological Survey of India ne yahan shilalekh padhe, yaani patthar par khude record. Sabse purana tareekh wala lekh 966 ka hai. Pallava rani Samavai ne zameen aur chaandi ki moorti di."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "A medieval temple kitchen with huge clay pots of ghee and firewood stoves, cooks in dhotis at work, a royal messenger reading an order from a palm leaf, warm smoky light, illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "Rajendra Chola ke lekh mein hukum hai, daan ka hisaab jaancho. Rasoi mein ghee kaise rakhein, yeh bhi likha."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "A Vijayanagara emperor in royal robes seen from behind, attendants carrying trays of gold and gems toward a temple inner shrine whose domed roof is being covered in shining gold sheets by craftsmen, grand celebratory mood, illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "Samrat Krishnadevaraya ne sona aur ratna diye. Usse garbhagriha ki chhat sone se madhi gayi."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Split panel: on one side an old poet writing on palm leaves under a tree with a sacred hill in the distance, on the other side an archaeologist examining carved medieval temple stones, a visible line dividing two views, thoughtful mood, illustrated, no text",
+     "type": "art"
+    },
+    "vo": "Par umar par bahas hai. Vidvaan purani Tamil Sangam kavita mein Vengadam pahad ka zikr dikhate hain. Patthar ke sabut mandir ko Pallava daur se jodte hain."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A scientist with a closed equipment case standing outside a heavy ornate temple doorway, priests guarding the dim sacred inner chamber glowing with lamps, the idol unseen deep inside, mood of an unanswered question, illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "Moorti ka patthar kitna purana hai? Garbhagriha ke niyam sakht hain, kisi vaigyanik ne jaancha nahi."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "A grandmother telling a story to wide-eyed children on a village courtyard at dusk, oil lamp flickering, a small framed painting of a temple deity seen from a distance on the wall, cozy wondering mood, illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "Lok-katha kehti hai, moorti par asli baal hain, jo uljhte nahi. Iska koi likha sabut nahi."
+   },
+   {
+    "facts_used": [
+     10
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "A celestial maiden seen from behind in a misty heavenly garden, holding out a lock of her long dark hair toward a distant divine figure also seen from behind, soft glowing light, tender mood, illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "Katha hai, Neela Devi ne apne baal kaat kar Srinivasa ko diye. Wahin se baal daan ki parampara judi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "A huge crowd of pilgrims climbing the Tirumala hill steps at dawn toward a golden temple roof, some with freshly shaved heads, a large cloth-covered offering vessel overflowing with coins in the foreground, vibrant devotional mood, illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "Aaj TTD ke mutabik roz 1 lakh tak log aate hain. Bhakt baal chadhate hain, hundi mein daan daalte hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A narrator figure in a simple kurta standing on a hilltop viewpoint at sunset, the golden-roofed Tirumala temple glowing far below among green hills, warm inviting mood, illustrated panel, no text",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo har saal Tirupati darshan jaata hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "TIRUPATI",
+   "name_hi": "तिरुपति",
+   "scene": "The blazing gold-covered temple roof on the misty green Tirumala hills at dawn, an endless river of pilgrims climbing the steps toward it, a giant offering vessel overflowing with gold coins in the foreground.",
+   "words": [
+    "1 LAKH ROZ",
+    "SECRET"
+   ],
+   "words_hi": [
+    "1 लाख रोज़",
+    "सीक्रेट"
+   ]
+  },
+  "title": "Tirupati ke *Balaji* ka Kubera wala karza 🤯"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  4.53,
+  12.74,
+  22.35,
+  34.96,
+  43.29,
+  50.02,
+  60.03,
+  66.28,
+  73.53,
+  80.82,
+  88.47
+ ],
+ "topic": {
+  "allowed_sources": [
+   "tirumala.org (TTD)",
+   "en.wikipedia.org",
+   "Varaha Purana",
+   "Bhavishyottara Purana"
+  ],
+  "hooks": [
+   "Roz 1 lakh log, kitna daan?",
+   "Balaji ki moorti par asli baal?",
+   "Hundi ka paisa kahan jaata hai?"
+  ],
+  "id": "tirupati-facts",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "Aaiye isko samajhte hain.",
+   "prompt": "9:16 vertical, 1080x1920, exactly 10 seconds, natural and cinematic. Setting: an old library reading room with tall shelves and a ladder, dust in a beam of light. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] standing, turned a little to the side, weight on one foot, one hand in a pocket, wearing navy blazer over white tee. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, a light shrug with open hands; on the second line, counting one point on a finger; on \"Aaiye isko samajhte hain\", a hand inviting the viewer in. Prop: a printed photograph or old map of the place, held up to the camera for a moment. Camera: a slow pull-back from close-up to mid-shot as he finishes the question, then steady. @SGMythWorld watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. Export at 1080x1920.",
+   "question": "Tirupati ke Balaji, Kubera ka karza aaj bhi chuka rahe hain?",
+   "text": "Tirupati ke Balaji, Kubera ka karza aaj bhi chuka rahe hain? Aaiye isko samajhte hain.",
+   "words": 15
+  },
+  "layers": true,
+  "notes": "Use TTD's own numbers with dates; the hair story is legend.",
+  "place": "Tirumala, Andhra Pradesh",
+  "priority": 1,
+  "target_minutes": null,
+  "title_hi": "Tirupati, duniya ka sabse ameer mandir",
+  "voice": "voice_g8azc8xcwhlu"
+ },
+ "updated": "2026-11-04T21:17:51+00:00",
+ "writer": "claude"
+}
