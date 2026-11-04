@@ -50,7 +50,8 @@ def test_once_todays_extras_are_made_a_cycle_only_reports(tmp_path):
 
 
 def test_the_ramp():
-    assert trends.extras_today(date(2026, 10, 29)) == 1 and trends.extras_today(date(2026, 10, 31)) == 3 and trends.extras_today(date(2026, 11, 20)) == 1
+    assert trends.extras_today(date(2026, 10, 29)) == 1 and trends.extras_today(date(2026, 10, 31)) == 3 and trends.extras_today(date(2026, 11, 3)) == 1
+    assert trends.extras_today(date(2026, 11, 4)) == 0 and trends.extras_today(date(2026, 11, 20)) == 0      # off (founder, 4 Nov 2026)
 
 
 def test_no_voice_credit_on_youtube_or_instagram():
@@ -91,9 +92,9 @@ def test_a_failed_extra_frees_its_slot_and_the_days_allowance(tmp_path):
 def test_the_first_cycle_of_the_day_makes_the_top_10_from_ten_fresh_stories(tmp_path):
     _main(tmp_path)
     early = datetime(2026, 11, 2, 0, 30, tzinfo=timezone.utc)                    # 06:00 India
-    titles = ["Bitcoin crashes 8% after Binance hack", "Gold price hits record", "Infosys hiring 20,000 freshers", "Petrol price cut Rs 2",
-              "Nvidia chip sales record", "Rupee falls to 95", "Tata Motors profit jumps", "Crude oil at $113", "Home loan rates cut",
-              "OpenAI launches new model", "Silver price surges"]
+    titles = ["LPG cylinder price cut by Rs 50", "Gold price hits record", "Infosys hiring 20,000 freshers", "Petrol price cut Rs 2",
+              "Electricity tariff up 8% in Delhi", "Rupee falls to 95", "SBI cuts FD rates", "Crude oil at $113", "Home loan rates cut",
+              "Train ticket fares up 5%", "Silver price surges", "EPF interest rate fixed at 8.25%"]
     items = [{"title": t, "summary": "", "link": t, "published": early - timedelta(hours=3), "rank": 1, "source": "ET"} for t in titles]
     made, sent = [], []
     def make(topic, root_, now, slot_ist=None, notify=None):
@@ -106,3 +107,14 @@ def test_the_first_cycle_of_the_day_makes_the_top_10_from_ten_fresh_stories(tmp_
     assert top[0]["summary"].count("\n") == 10
     trends.run(tmp_path, early + timedelta(hours=1), items=items, notify=sent.append, make=make, bank=[])
     assert len([t for t, s in made if t.get("roundup")]) == 1                 # once a day
+
+
+def test_from_4_nov_a_cycle_fetches_nothing_and_makes_nothing(tmp_path):
+    """4 Nov 2026 (founder: one painted Reel a day per channel): no extra, news or Top 10 Reels, and no Telegram report about them."""
+    _main(tmp_path)
+    made, sent = [], []
+    def make(topic, root_, now, slot_ist=None, notify=None):
+        made.append(topic)
+    early = datetime(2026, 11, 4, 0, 30, tzinfo=timezone.utc)
+    assert trends.run(tmp_path, early, items=[_item("RBI cuts repo rate")], notify=sent.append, make=make, bank=[]) == 0
+    assert made == [] and sent == []

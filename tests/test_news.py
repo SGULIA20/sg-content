@@ -85,7 +85,7 @@ def test_nothing_happens_after_the_deadline_or_once_posted(tmp_path, monkeypatch
 def test_the_buffer_skips_dated_headlines_and_the_news_pick_skips_market_calls():
     from engine import topics
     now = NOW
-    dated = {"title": "Q2 results today, 22 Oct: Swiggy, HPCL", "summary": "results profit", "link": "a", "published": now, "rank": 1}
+    dated = {"title": "Petrol price cut today, 22 Oct: Rs 2 a litre", "summary": "petrol price", "link": "a", "published": now, "rank": 1}   # 4 Nov 2026: results headlines are never Reels
     call = {"title": "Stock market outlook: Sensex prediction", "summary": "sensex price", "link": "b", "published": now, "rank": 1}
     plain = {"title": "Gold price crashes Rs 38,600 from record", "summary": "gold price", "link": "c", "published": now, "rank": 1}
     assert topics.pick_finance([dated, plain], set(), now)["link"] == "c"

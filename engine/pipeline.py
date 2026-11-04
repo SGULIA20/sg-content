@@ -540,10 +540,12 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
 
     def topic_fn(piece, used):
         if piece.channel == "sglearning":
-            if piece.kind == "long":
-                return topics.next_long_finance(root / "content", used)
+            if piece.kind == "long":                                   # 4 Nov 2026: a proven Short's question first, then the bank
+                return topics.next_long_finance(root / "content", used, topics.proven_shorts(root, "sglearning"))
             from datetime import datetime, timezone
             return topics.pick_finance(topics.fetch_all(), used, datetime.now(timezone.utc))
+        if piece.kind == "long":
+            return topics.next_myth_long(root / "content", used, topics.proven_shorts(root, "arthvan"))
         return topics.next_myth(root / "content", used)
 
     def upload_fn(piece, video, thumb):

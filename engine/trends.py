@@ -22,7 +22,10 @@ CHANNEL = "sglearning"
 CYCLE_HOURS = 8                       # a story counts as fresh for two cycles
 SLOT_LEAD_MINUTES = 60                # a cycle only takes a slot it can still meet
 # extra Reels a day on top of the daily one, ramping while views per Reel hold (founder, 29 Oct 2026, "B")
-EXTRAS_FROM = [(date(2026, 10, 29), 1), (date(2026, 10, 31), 3), (date(2026, 11, 2), 1)]   # 2 Nov: only the 1 best news Reel a day, plus the Top 10 (founder, 1 Nov 2026)
+EXTRAS_FROM = [(date(2026, 10, 29), 1), (date(2026, 10, 31), 3), (date(2026, 11, 2), 1), (date(2026, 11, 4), 0)]
+# 2 Nov: only the 1 best news Reel a day, plus the Top 10 (founder, 1 Nov 2026). 4 Nov: none. The code-card Reels (news, extras, Top 10)
+# got a median of 56 Instagram views and 0 on YouTube over two weeks, eight of them 0-5 views, while the painted big-question Shorts got
+# 400-2,000; so Learning with SG posts one painted Reel a day and nothing else (founder, 4 Nov 2026: "go ahead with A").
 
 CATEGORIES = {
     "crypto": ["bitcoin", "crypto", "binance", "ethereum", "token"],
@@ -73,6 +76,7 @@ def todays_reels(root: Path, day: date) -> list:
 
 
 ROUNDUP_FROM = date(2026, 11, 1)          # the daily Top 10 (founder, 30 Oct 2026); 31 Oct's is made by hand
+ROUNDUP_UNTIL = date(2026, 11, 4)         # stopped: 3-5 Instagram views each (founder, 4 Nov 2026)
 ROUNDUP_SLOT = "09:30"                     # India morning; made by the first cycle of the day (06:00 India)
 ROUNDUP_HOURS = 24
 ROUNDUP_PER_CATEGORY = 3
@@ -157,6 +161,9 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, items=None, notify=t
         print("paused: no research cycle", flush=True)
         return 0
     today = slots.ist(now_utc).date()
+    if extras_today(today) == 0 and today >= ROUNDUP_UNTIL:
+        print("extra Reels and the Top 10 are off (founder, 4 Nov 2026): nothing fetched, nothing made", flush=True)
+        return 0
     used, _prior = pipeline._used(root)
     fetched = items if items is not None else topics.fetch_all()
     rows = ranked(fetched, used, now_utc)
@@ -166,7 +173,7 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, items=None, notify=t
                                                        for n, (_s, i, why) in enumerate(top, 1)] if top else ["No new money, jobs or business stories since the last cycle."]
     room = extras_today(today) - len([1 for _t, p in todays_reels(root, today) if p.id.endswith(tuple(f"-x{k}" for k in range(1, 10)))
                                       and not is_roundup(p)])
-    if today >= ROUNDUP_FROM and slots.ist(now_utc).hour < 9 and not any(is_roundup(p) for _t, p in todays_reels(root, today)):
+    if ROUNDUP_FROM <= today < ROUNDUP_UNTIL and slots.ist(now_utc).hour < 9 and not any(is_roundup(p) for _t, p in todays_reels(root, today)):
         top10 = roundup(fetched, used, now_utc)
         if top10:
             notify(f"🗞 Today's Top 10 is being made from the last 24 hours' stories; posts {ROUNDUP_SLOT} India. Opens on: {top10['title'][:90]}")
