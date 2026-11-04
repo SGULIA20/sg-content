@@ -103,6 +103,7 @@
    "usd": 0.057972,
    "voice": 9
   },
+  "intro_sent": "2026-11-04T10:49:33+00:00",
   "out_sha": "d02b593d537ebac104fbda7b181be154746d8cb7",
   "yt_id": "IZJ5VUWxulk"
  },
@@ -274,6 +275,15 @@
  ],
  "topic": {
   "id": "2026-10-23-sglearning-short#second",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "Aapki SIP kat-ti hai, Meta AI par arabon lagata hai.",
+   "closing": "Aaiye isko samajhte hain.",
+   "prompt": "9:16 vertical, 1080x1920, exactly 10 seconds, natural and cinematic. Setting: a bright modern Indian living room in the morning, clean background with depth (plant, bookshelf, softly blurred). Lighting: soft window key light from the left on the face, warm fill from the right, gentle rim light on the hair; no harsh shadows. SG [locked] seated at a wooden table, slightly angled, leaning toward camera, navy blazer over white tee. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, eyebrows lift and one open palm turns up; on the second line, a slow nod and a half-smile, hand resting on the table; on \"Aaiye isko samajhte hain.\", a small \"come with me\" gesture toward the viewer. Prop: a phone face-up showing a bank SMS \"SIP debited ₹5,000\". Camera: eye level, slow push-in from mid-shot to medium close-up over the 10 seconds. No watermark, no captions, no subtitles, no on-screen text of any kind (the channel badge and captions are added afterwards). Export at 1080x1920.",
+   "question": "Aapki SIP ka paisa Meta ke AI pe kharch ho raha hai?",
+   "text": "Aapki SIP ka paisa Meta ke AI pe kharch ho raha hai? Aapki SIP kat-ti hai, Meta AI par arabon lagata hai. Aaiye isko samajhte hain.",
+   "words": 26
+  },
   "link": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/meta-raises-ai-spending-forecast-to-145-billion-plans-new-share-issue-q3-revenue-beats-estimates/articleshow/135100437.cms",
   "look": "claymation",
   "published": "2026-10-21T20:12:20+00:00",
