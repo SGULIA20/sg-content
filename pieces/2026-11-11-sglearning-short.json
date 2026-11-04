@@ -1,0 +1,314 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 55.8,
+   "quote": "The HSBC Services Business Activity Index rose to 55.8, reflecting improved business conditions.",
+   "source_date": "2026-11-04",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/indicators/new-orders-robust-demand-lift-indias-october-services-growth-to-4-month-high/articleshow/135549909.cms",
+   "text": "India's services sector business activity index climbed to a four-month high of 55.8 in October 2026, driven by resilient domestic demand.",
+   "unit": "index points"
+  },
+  {
+   "label": "reported",
+   "number": 55.2,
+   "quote": "The HSBC India Services Business Activity Index posted a reading of 55.8 compared with 55.2 in September and 58.9 a year ago, data released on Wednesday showed.",
+   "source_date": "2026-11-04",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/indicators/new-orders-robust-demand-lift-indias-october-services-growth-to-4-month-high/articleshow/135549909.cms",
+   "text": "The services business activity index had registered 55.2 in September 2026 before accelerating in October.",
+   "unit": "index points"
+  },
+  {
+   "label": "reported",
+   "number": 58.9,
+   "quote": "The HSBC India Services Business Activity Index posted a reading of 55.8 compared with 55.2 in September and 58.9 a year ago, data released on Wednesday showed.",
+   "source_date": "2026-11-04",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/indicators/new-orders-robust-demand-lift-indias-october-services-growth-to-4-month-high/articleshow/135549909.cms",
+   "text": "During the same month a year earlier, India's services activity index stood at a higher level of 58.9.",
+   "unit": "index points"
+  },
+  {
+   "label": "reported",
+   "number": 50.0,
+   "quote": "A reading above 50 indicates expansion in activity.",
+   "source_date": "2026-11-04",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/indicators/new-orders-robust-demand-lift-indias-october-services-growth-to-4-month-high/articleshow/135549909.cms",
+   "text": "A purchasing managers' index reading above the 50 threshold indicates expansion in sector activity.",
+   "unit": "index points"
+  },
+  {
+   "label": "reported",
+   "number": 54.7,
+   "quote": "In contrast, manufacturing activity in October showed a moderation, with the PMI easing to 54.7 from 55.1 in September.",
+   "source_date": "2026-11-04",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/indicators/new-orders-robust-demand-lift-indias-october-services-growth-to-4-month-high/articleshow/135549909.cms",
+   "text": "In contrast to services, manufacturing activity softened in October 2026 as the factory PMI eased to 54.7.",
+   "unit": "index points"
+  },
+  {
+   "label": "reported",
+   "number": 55.1,
+   "quote": "In contrast, manufacturing activity in October showed a moderation, with the PMI easing to 54.7 from 55.1 in September.",
+   "source_date": "2026-11-04",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/indicators/new-orders-robust-demand-lift-indias-october-services-growth-to-4-month-high/articleshow/135549909.cms",
+   "text": "Manufacturing PMI had recorded a stronger print of 55.1 in September 2026 before easing in October.",
+   "unit": "index points"
+  },
+  {
+   "label": "reported",
+   "number": 56.2,
+   "quote": "Growth in services activity helped lift India's composite PMI, which tracks both manufacturing and services, to 56.2 from 55.9 in September, indicating the fastest expansion in four months.",
+   "source_date": "2026-11-04",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/indicators/new-orders-robust-demand-lift-indias-october-services-growth-to-4-month-high/articleshow/135549909.cms",
+   "text": "Higher services output pushed India's composite PMI to a four-month high of 56.2 in October 2026.",
+   "unit": "index points"
+  },
+  {
+   "label": "reported",
+   "number": 55.9,
+   "quote": "Growth in services activity helped lift India's composite PMI, which tracks both manufacturing and services, to 56.2 from 55.9 in September, indicating the fastest expansion in four months.",
+   "source_date": "2026-11-04",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/indicators/new-orders-robust-demand-lift-indias-october-services-growth-to-4-month-high/articleshow/135549909.cms",
+   "text": "India's composite PMI tracking both factory and services output stood at 55.9 in September 2026.",
+   "unit": "index points"
+  },
+  {
+   "label": "reported",
+   "number": 6.0,
+   "quote": "While input prices continued to rise, the rate of increase was the slowest in over six years.",
+   "source_date": "2026-11-04",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/indicators/new-orders-robust-demand-lift-indias-october-services-growth-to-4-month-high/articleshow/135549909.cms",
+   "text": "Input cost inflation for service businesses slowed to its lowest pace in over 6 years, helping cushion consumer household prices.",
+   "unit": "years"
+  },
+  {
+   "label": "reported",
+   "number": 3.0,
+   "quote": "Fewer than 3% of firms covered in the survey said they raised their selling prices at the start of the third quarter, as some businesses passed on the higher costs to customers.",
+   "source_date": "2026-11-04",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/indicators/new-orders-robust-demand-lift-indias-october-services-growth-to-4-month-high/articleshow/135549909.cms",
+   "text": "Fewer than 3 percent of surveyed service firms increased selling prices to customers at the start of the third fiscal quarter, keeping everyday services inflation subdued for households.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 12.0,
+   "quote": "The survey showed that services firms were optimistic about output growth over the next 12 months, although business confidence weakened in October and stayed below its long-term average.",
+   "source_date": "2026-11-04",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/indicators/new-orders-robust-demand-lift-indias-october-services-growth-to-4-month-high/articleshow/135549909.cms",
+   "text": "Service sector enterprises maintained an optimistic outlook for output growth over the upcoming 12 months.",
+   "unit": "months"
+  }
+ ],
+ "id": "2026-11-11-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-04",
+   "drafts": 2,
+   "research": 1
+  },
+  "cost": {
+   "inr": 13.5,
+   "usd": 0.127086,
+   "voice": 8
+  },
+  "drafts": 2,
+  "intro_sent": "2026-11-04T21:29:48+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-11",
+ "reasons": [
+  "try 1: advice: kharid lo; advice: kharid lo",
+  "waiting for the founder's intro clip until 11 Nov 10:00 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "3 percent se bhi kam services walon ne daam badhaye. Kyun?\nOctober mein orders khoob aaye, par dukaanon ka kharcha 6 saal mein sabse dheere badha.\nToh kya aapke ghar ka bill bhi utna nahi badha jitna aap soch rahe the?\nYeh investment advice nahi hai.\nYeh Mummy ko bhejo, jo har mahine kehti hain sab mehnga ho gaya.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#HinglishFinance",
+     "#PersonalFinanceIndia",
+     "#EMI",
+     "#MoneyTipsHindi",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "3 percent se bhi kam services walon ne October mein daam badhaye. Dukaanon ka apna kharcha 6 saal mein sabse dheere badha. Aapke salon, tuition ya laundry ka bill is baar badha ya wahi raha? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "3 percent se bhi kam services walon ne daam badhaye, kyun? October mein services ka kaam tezi se badha, par dukaanon ka apna kharcha 6 saal mein sabse dheere badha. Isliye salon, tuition, laundry jaise kharche abhi zyada nahi badh rahe, aur EMI bhi shaant reh sakti hai. Yeh Mummy ko bhejo, jo har mahine kehti hain sab mehnga ho gaya.",
+    "tags": [
+     "mehngai",
+     "inflation india",
+     "services sector",
+     "PMI India",
+     "EMI",
+     "ghar ka budget",
+     "personal finance hindi",
+     "Learning with SG",
+     "India economy",
+     "paise ki khabar"
+    ],
+    "title": "Mehngai dheemi? 3% dukaanon ne hi daam badhaye"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Yeh Mummy ko bhejo, jo har mahine kehti hain sab mehnga ho gaya.",
+  "hook": "3 percent se bhi kam services walon ne daam badhaye. Kyun?",
+  "scenes": [
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "A busy neighbourhood barber salon in an Indian market at evening, filling the frame: a customer in a chair under a cape, a barber with scissors, mirrors, warm tube lights, blank price board on the wall, no readable text",
+     "type": "art"
+    },
+    "vo": "3 percent se bhi kam services walon ne daam badhaye. Kyun?"
+   },
+   {
+    "facts_used": [],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "WIFE at the dining table at night after Diwali, diyas still on the windowsill, a notebook and a small pile of receipts in front of her, pen in hand, focused expression",
+     "type": "art"
+    },
+    "vo": "Diwali ke baad Wife ne salon, tuition, laundry ka hisaab nikala."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "WIFE frowning and striking lines through items in her notebook, MUMMY beside her with a cup of chai looking worried, dim kitchen light, late evening",
+     "type": "art"
+    },
+    "vo": "Use laga sab mehnga hua hoga, isliye kharche kaatne ki list bani."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "A thought-bubble style panel: a laundry shop owner ironing clothes while an electricity meter spins fast behind him, WIFE imagining him raising prices, daytime market lane",
+     "type": "art"
+    },
+    "vo": "Logic seedha tha, dukaan ka kharcha badha, toh rate bhi badhega."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "what happened",
+    "visual": {
+     "card": null,
+     "prompt": "A lively Indian street in daylight: delivery riders loading parcels, a crowded tuition room through a window, a repairman carrying tools, a sense of rush and business",
+     "type": "art"
+    },
+    "vo": "Par October mein services ka kaam tezi se badha, orders khoob aaye."
+   },
+   {
+    "facts_used": [
+     8,
+     9
+    ],
+    "label": "what happened",
+    "visual": {
+     "card": null,
+     "prompt": "A tailor at his shop counter shaking his head calmly as a customer pays the same small stack of notes as before, relieved customer smiling, afternoon light",
+     "type": "art"
+    },
+    "vo": "Dukaanon ka apna kharcha badha, par 6 saal mein sabse dheere. Isliye lagbhag sab ne rate wahi rakha."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "SG sitting across from WIFE at the dining table, placing an old receipt next to a new one, both comparing calmly, WIFE's face easing into a smile, warm evening lamp light",
+     "type": "art"
+    },
+    "vo": "Mehngai dheemi ho, toh byaaj badhne ka darr kam hota hai. EMI shaant reh sakti hai. Kaatne se pehle, pichhla bill milao. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY in a saree holding a cup of chai on the balcony, laughing softly as WIFE shows her the notebook, soft night light, cosy family moment",
+     "type": "art"
+    },
+    "vo": "Yeh Mummy ko bhejo, jo har mahine kehti hain sab mehnga ho gaya."
+   }
+  ],
+  "thumbnail": {
+   "name": "MEHNGAI",
+   "name_hi": "महंगाई",
+   "scene": "A row of Indian neighbourhood shops at night, a salon, a laundry and a tuition room glowing under the same old blank price boards, with a household budget notebook and a stack of rupee notes in the foreground.",
+   "words": [
+    "6 SAAL",
+    "SACH?"
+   ],
+   "words_hi": [
+    "6 साल",
+    "सच?"
+   ]
+  },
+  "title": "Is baar daam kyun nahi *badhe*? 🤔"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  4.17,
+  8.9,
+  13.79,
+  18.48,
+  23.21,
+  29.86,
+  40.27
+ ],
+ "topic": {
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "Aaiye isko samajhte hain.",
+   "prompt": "9:16 vertical, 1080x1920, exactly 10 seconds, natural and cinematic. Setting: the balcony of a city flat, railing and potted plants, soft overcast daylight, the street blurred below. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] leaning against a counter or railing, relaxed, arms loosely folded then opening on the question, wearing a black polo. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, a direct look with a half-smile; on the second line, a slow nod, hand on chest; on \"Aaiye isko samajhte hain\", a wave of the hand toward the lens. Prop: a phone face-up on the table showing a bank app. Camera: low angle, slightly below eye level, slow push-in. @SGLearning watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. Export at 1080x1920.",
+   "question": "3 percent se bhi kam services walon ne daam badhaye. Kyun?",
+   "text": "3 percent se bhi kam services walon ne daam badhaye. Kyun? Aaiye isko samajhte hain.",
+   "words": 15
+  },
+  "layers": true,
+  "link": "https://economictimes.indiatimes.com/news/economy/indicators/new-orders-robust-demand-lift-indias-october-services-growth-to-4-month-high/articleshow/135549909.cms",
+  "published": "2026-11-04T18:48:40+00:00",
+  "rank": 3,
+  "source": "ET Economy",
+  "summary": "Growth in India's services sector increased to a four-month high in October due to strong domestic demand and business orders. The HSBC Services Business Activity Index rose to 55.8, reflecting improved business conditions. Conversely, manufacturing activity showed a slight decline, easing to a PMI of 54.7. While input prices continued to rise, the rate of increase was the slowest in over six years.",
+  "target_minutes": null,
+  "title": "New orders &amp; robust demand lift India's October services growth to 4-month high",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-11-04T21:29:51+00:00",
+ "writer": "claude"
+}

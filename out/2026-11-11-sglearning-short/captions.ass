@@ -1,0 +1,41 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.09,Default,,0,0,0,,3 percent se bhi kam services
+Dialogue: 0,0:00:02.09,0:00:03.49,Default,,0,0,0,,walon ne daam badhaye.
+Dialogue: 0,0:00:03.49,0:00:03.72,Default,,0,0,0,,Kyun?
+Dialogue: 0,0:00:04.17,0:00:06.31,Default,,0,0,0,,Diwali ke baad Wife ne salon,
+Dialogue: 0,0:00:06.31,0:00:06.74,Default,,0,0,0,,tuition,
+Dialogue: 0,0:00:06.74,0:00:08.45,Default,,0,0,0,,laundry ka hisaab nikala.
+Dialogue: 0,0:00:08.90,0:00:11.12,Default,,0,0,0,,Use laga sab mehnga hua hoga,
+Dialogue: 0,0:00:11.12,0:00:13.34,Default,,0,0,0,,isliye kharche kaatne ki list bani.
+Dialogue: 0,0:00:13.79,0:00:14.91,Default,,0,0,0,,Logic seedha tha,
+Dialogue: 0,0:00:14.91,0:00:16.47,Default,,0,0,0,,dukaan ka kharcha badha,
+Dialogue: 0,0:00:16.47,0:00:18.03,Default,,0,0,0,,toh rate bhi badhega.
+Dialogue: 0,0:00:18.48,0:00:20.73,Default,,0,0,0,,Par October mein services ka kaam
+Dialogue: 0,0:00:20.73,0:00:21.86,Default,,0,0,0,,tezi se badha,
+Dialogue: 0,0:00:21.86,0:00:22.76,Default,,0,0,0,,orders khoob aaye.
+Dialogue: 0,0:00:23.21,0:00:25.28,Default,,0,0,0,,Dukaanon ka apna kharcha badha,
+Dialogue: 0,0:00:25.28,0:00:26.93,Default,,0,0,0,,par 6 saal mein sabse dheere.
+Dialogue: 0,0:00:26.93,0:00:29.00,Default,,0,0,0,,Isliye lagbhag sab ne rate wahi
+Dialogue: 0,0:00:29.00,0:00:29.41,Default,,0,0,0,,rakha.
+Dialogue: 0,0:00:29.86,0:00:31.05,Default,,0,0,0,,Mehngai dheemi ho,
+Dialogue: 0,0:00:31.05,0:00:32.71,Default,,0,0,0,,toh byaaj badhne ka darr kam
+Dialogue: 0,0:00:32.71,0:00:33.42,Default,,0,0,0,,hota hai.
+Dialogue: 0,0:00:33.42,0:00:35.08,Default,,0,0,0,,EMI shaant reh sakti hai.
+Dialogue: 0,0:00:35.08,0:00:36.26,Default,,0,0,0,,Kaatne se pehle,
+Dialogue: 0,0:00:36.26,0:00:37.45,Default,,0,0,0,,pichhla bill milao.
+Dialogue: 0,0:00:37.45,0:00:39.82,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:40.27,0:00:41.56,Default,,0,0,0,,Yeh Mummy ko bhejo,
+Dialogue: 0,0:00:41.56,0:00:43.49,Default,,0,0,0,,jo har mahine kehti hain sab
+Dialogue: 0,0:00:43.49,0:00:44.35,Default,,0,0,0,,mehnga ho gaya.
