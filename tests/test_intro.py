@@ -26,8 +26,24 @@ def test_plan_is_question_bridge_closing_within_26_words_with_the_founders_promp
     plan = intro.plan(p, ask=lambda prompt: "Aapka paisa doobta hai, unki fees phir bhi pakki rehti hai")
     assert plan["question"] == p.script["hook"] and plan["bridge"].endswith(".") and plan["closing"] == "Aaiye isko samajhte hain."
     assert plan["text"].endswith("Aaiye isko samajhte hain.") and plan["words"] <= 26 and plan["aspect"] == "9:16"
-    for must in ("9:16 vertical, 1080x1920", "window key light", "open palm", "come with me", "SIP debited", "No watermark", "Speaks from the first frame"):
+    for must in ("9:16 vertical, 1080x1920", "key light", "Body language in three beats", "SIP debited", "@SGLearning watermark top right", "Speaks from the first frame", "wearing"):
         assert must in plan["prompt"], must
+
+
+def test_the_avatar_prompt_changes_setting_outfit_pose_and_camera_from_day_to_day():
+    """4 Nov 2026 (founder): "clothes, position, walk or background should change in every reel; all can't be the same"."""
+    from datetime import timedelta
+    seen = set()
+    for k in range(5):
+        p = _piece(day=date(2026, 11, 5) + timedelta(days=k))
+        pr = intro.prompt_for(p, {"text": ""})
+        key = (intro._pick(p, intro.SETTINGS["sglearning"]), intro._pick(p, intro.OUTFITS, 1), intro._pick(p, intro.POSES, 2))
+        assert key not in seen; seen.add(key)
+        assert "walking" in pr or "seated" in pr or "standing" in pr or "leaning" in pr
+    short, long = _piece(day=date(2026, 11, 6)), _piece("long", day=date(2026, 11, 5))         # a long and the next day's Short differ too
+    assert intro._pick(short, intro.SETTINGS["sglearning"]) != intro._pick(long, intro.SETTINGS["sglearning"])
+    myth = _piece("short", "arthvan", day=date(2026, 11, 5))
+    assert "@SGMythWorld" in intro.prompt_for(myth, {"text": ""}) and "old map" in intro.prompt_for(myth, {"text": ""})
 
 
 def test_a_long_bridge_or_a_failed_ask_leaves_question_and_closing_only():
