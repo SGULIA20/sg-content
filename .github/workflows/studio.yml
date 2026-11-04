@@ -22,7 +22,7 @@ concurrency:
 jobs:
   studio:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 120          # a 12-minute long is re-made from the caches and re-uploaded here (4 Nov 2026)
     steps:
       - uses: actions/checkout@v5
         with:
