@@ -12,6 +12,7 @@ python -m engine.intro --plan <id>      print the intro script and prompt (nothi
 python -m engine.intro --needed         exit 0 when a waiting piece has its clip or passed its deadline (the Studio workflow then sweeps)
 python -m engine.intro --sweep          collect clips, compose, upload; plain upload past the deadline
 python -m engine.intro --redo <id>      an already-uploaded piece: compose with its clip, replace the YouTube video (same schedule)
+python -m engine.intro --ask-scheduled  send the intro request for already-scheduled pieces due within 3 days (the produce run does this)
 """
 import argparse
 import json
@@ -342,6 +343,7 @@ def collect(piece, deps, root: Path, now: datetime | None = None, notify=None, t
                 return "rejected", piece
         else:
             (compose_fn or compose)(piece, clip, out_dir)
+            piece.ids.setdefault("intro", {"clip": clip.name, "composed": now.isoformat(timespec="seconds")})
             pipeline.finish_upload(piece, deps, root, video, thumb, out_dir)
             notify(f"🎬 {piece.id}: your intro is merged and the piece is scheduled for its slot.")
             return "uploaded-intro", piece
@@ -357,17 +359,53 @@ def waiting(root: Path) -> list:
     return sorted((p for p in pieces.list_all(root) if p.status == "intro-wait"), key=lambda p: p.publish_day)
 
 
+ASK_AHEAD_DAYS = 3                           # already-scheduled pieces are asked for in a rolling window, not all at once
+
+
+def scheduled(root: Path, now: datetime | None = None) -> list:
+    """Pieces already uploaded for a coming slot that have no intro yet (founder, 4 Nov 2026: "whatever scheduled can be replaced with
+    the new one"): their intro is asked for up to ASK_AHEAD_DAYS ahead, and the clip re-uploads the piece in the same slot."""
+    now = now or datetime.now(timezone.utc)
+    out = []
+    for p in pieces.list_all(root):
+        if p.status != "uploaded" or not enabled(p) or p.ids.get("intro") or not p.ids.get("yt_id"):
+            continue
+        if earliest_slot_utc(p) - timedelta(hours=1) <= now:             # too close to its first posting: leave it
+            continue
+        out.append(p)
+    return sorted(out, key=lambda p: p.publish_day)
+
+
+def ask_scheduled(root: Path, notify, now: datetime | None = None, ask=_ask_claude) -> list:
+    """Sends the intro request for scheduled pieces due within ASK_AHEAD_DAYS that have not been asked; skips one whose clip is already in."""
+    now = now or datetime.now(timezone.utc)
+    asked = []
+    for p in scheduled(root, now):
+        if (p.publish_day - now.date()).days > ASK_AHEAD_DAYS or p.ids.get("intro_sent") or clip_path(root, p).exists():
+            continue
+        request(p, root, notify, ask, now)
+        pieces.save(p, root)
+        asked.append(p.id)
+    return asked
+
+
+def _usable_clip(root: Path, p) -> bool:
+    clip = clip_path(root, p)
+    return clip.exists() and _sha(clip) != p.ids.get("intro_rejected")
+
+
 def needed(root: Path, now: datetime | None = None) -> bool:
     """Cheap: does a waiting piece have a fresh clip, or has one passed its deadline?"""
     now = now or datetime.now(timezone.utc)
     for p in waiting(root):
-        clip = clip_path(root, p)
-        if (clip.exists() and _sha(clip) != p.ids.get("intro_rejected")) or now >= deadline_utc(p):
+        if _usable_clip(root, p) or now >= deadline_utc(p):
             return True
-    return False
+    return any(_usable_clip(root, p) for p in scheduled(root, now))
 
 
-def sweep(root: Path, deps, now: datetime | None = None, notify=None, transcribe=None, compose_fn=None) -> list:
+def sweep(root: Path, deps, now: datetime | None = None, notify=None, transcribe=None, compose_fn=None, env=None, delete=None) -> list:
+    """Waiting pieces are collected; scheduled pieces whose clip has come are re-uploaded with it. Never raises."""
+    now = now or datetime.now(timezone.utc)
     out = []
     for p in waiting(root):
         try:
@@ -376,41 +414,59 @@ def sweep(root: Path, deps, now: datetime | None = None, notify=None, transcribe
             action = f"failed: {type(e).__name__}: {secrets.scrub(str(e))[:160]}"
             (notify or print)(f"🎬 {p.id}: intro step failed ({action}); it stays waiting, the plain version goes out at the deadline.")
         out.append((p.id, action))
+    for p in scheduled(root, now):
+        if not _usable_clip(root, p):
+            continue
+        try:
+            action = redo_piece(p, deps, root, env, notify, transcribe, compose_fn, delete)
+        except Exception as e:
+            action = f"failed: {type(e).__name__}: {secrets.scrub(str(e))[:160]}"
+            (notify or print)(f"🎬 {p.id}: re-upload with the intro failed ({action}); the scheduled version stays.")
+        out.append((p.id, action))
     return out
 
 
-def redo(piece_id: str, root: Path = ROOT, env=None, deps=None, notify=None) -> str:
-    """An already-uploaded piece gets its intro: compose with the clip in the inbox, delete the scheduled YouTube video, upload the new one."""
+def redo_piece(piece, deps, root: Path, env=None, notify=None, transcribe=None, compose_fn=None, delete=None) -> str:
+    """An already-uploaded piece gets its intro: compose with the clip, delete the scheduled YouTube video, upload the new one in the
+    same slot (the publish time comes from the piece as before). The plain file is kept as reel-plain.mp4."""
     from . import pipeline, youtube
+    notify = notify or (lambda t: None)
+    clip = clip_path(root, piece)
+    if not (piece.topic or {}).get("intro"):
+        piece.topic["intro"] = plan(piece, ask=lambda _p: "")
+    problems = check(clip, piece.topic["intro"], transcribe)
+    if problems:
+        piece.ids["intro_rejected"] = _sha(clip)
+        pieces.save(piece, root)
+        notify(f"🎬 {piece.id}: the intro clip was not used: " + "; ".join(problems) + f". Send a new one with the caption intro {piece.id}.")
+        return "rejected"
+    out_dir = Path(root) / "out" / piece.id
+    (compose_fn or compose)(piece, clip, out_dir)
+    piece.ids.setdefault("intro", {"clip": clip.name, "composed": datetime.now(timezone.utc).isoformat(timespec="seconds")})
+    old = piece.ids.get("yt_id")
+    if old:
+        (delete or (lambda ch, vid: youtube.delete(youtube.access_token(ch, env), vid)))(piece.channel, old)
+        piece.ids["yt_id_replaced"] = old
+    video = out_dir / ("reel.mp4" if piece.kind == "short" else "long.mp4")
+    pipeline.finish_upload(piece, deps, root, video, out_dir / "thumb.jpg", out_dir)
+    notify(f"🎬 {piece.id}: your intro is merged and the piece is re-scheduled for its slot (YouTube {piece.ids['yt_id']}, the earlier upload removed).")
+    return "re-uploaded-intro"
+
+
+def redo(piece_id: str, root: Path = ROOT, env=None, deps=None, notify=None) -> str:
+    from . import pipeline
     piece = pieces.load(piece_id, root)
     if piece is None:
         return f"{piece_id}: no such piece"
-    clip = clip_path(root, piece)
-    if not clip.exists():
-        return f"{piece_id}: no clip at {clip}"
-    deps = deps or pipeline.real_deps(root, env)
-    if not (piece.topic or {}).get("intro"):
-        piece.topic["intro"] = plan(piece, ask=lambda _p: "")
-    problems = check(clip, piece.topic["intro"])
-    if problems:
-        return f"{piece_id}: clip not used: " + "; ".join(problems)
-    out_dir = Path(root) / "out" / piece.id
-    compose(piece, clip, out_dir)
-    old = piece.ids.get("yt_id")
-    if old:
-        youtube.delete(youtube.access_token(piece.channel, env), old)
-        piece.ids["yt_id_replaced"] = old
-    video = out_dir / ("reel.mp4" if piece.kind == "short" else "long.mp4")
-    piece.ids["yt_id"] = deps.upload(piece, video, out_dir / "thumb.jpg")
-    pieces.save(piece, root)
-    msg = f"🎬 {piece.id}: intro merged and re-uploaded for its slot (YouTube {piece.ids['yt_id']}, replaced {old or 'nothing'})."
-    (notify or print)(msg)
-    return msg
+    if not clip_path(root, piece).exists():
+        return f"{piece_id}: no clip at {clip_path(root, piece)}"
+    return f"{piece_id}: " + redo_piece(piece, deps or pipeline.real_deps(root, env), root, env, notify)
 
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--plan"); ap.add_argument("--needed", action="store_true"); ap.add_argument("--sweep", action="store_true"); ap.add_argument("--redo")
+    ap.add_argument("--ask-scheduled", action="store_true")
     a = ap.parse_args(argv)
     if a.plan:
         piece = pieces.load(a.plan, ROOT)
@@ -423,6 +479,9 @@ def main(argv=None) -> int:
         for pid, action in sweep(ROOT, pipeline.real_deps(ROOT), notify=telegram.send):
             print(f"{pid}: {action}")
         return 0
+    if a.ask_scheduled:
+        from . import telegram
+        print("asked:", ask_scheduled(ROOT, telegram.send) or "nothing"); return 0
     if a.redo:
         from . import telegram
         print(redo(a.redo, ROOT, notify=telegram.send)); return 0

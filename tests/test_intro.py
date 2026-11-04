@@ -123,3 +123,45 @@ def test_sweep_never_raises_and_reports_each_piece(tmp_path, monkeypatch):
     out = intro.sweep(tmp_path, deps, now=datetime(2026, 11, 6, 9, 0, tzinfo=timezone.utc), notify=sent.append, transcribe=lambda c: heard, compose_fn=boom)
     assert out[0][0] == p.id and out[0][1].startswith("failed: RuntimeError") and "stays waiting" in sent[-1]
     assert pieces.load(p.id, tmp_path).status == "intro-wait"
+
+
+def _scheduled(tmp_path, pid="2026-11-08-sglearning-short", day=date(2026, 11, 8), with_clip=False):
+    p = _piece(pid=pid, day=day); p.status = "uploaded"; p.ids["yt_id"] = "old123"
+    out = tmp_path / "out" / p.id; out.mkdir(parents=True, exist_ok=True); (out / "reel.mp4").write_bytes(b"reel"); (out / "thumb.jpg").write_bytes(b"t")
+    pieces.save(p, tmp_path)
+    if with_clip:
+        c = intro.clip_path(tmp_path, p); c.parent.mkdir(parents=True, exist_ok=True); c.write_bytes(b"clip")
+    return p
+
+
+def test_scheduled_pieces_are_asked_three_days_ahead_once_and_not_when_their_clip_is_in(tmp_path):
+    """4 Nov 2026 (founder: "from tomorrow onwards itself"): the backlog already on YouTube gets the intro too."""
+    near = _scheduled(tmp_path); far = _scheduled(tmp_path, "2026-11-12-sglearning-short", date(2026, 11, 12))
+    has = _scheduled(tmp_path, "2026-11-07-sglearning-short", date(2026, 11, 7), with_clip=True)
+    posted = _scheduled(tmp_path, "2026-11-06-sglearning-short", date(2026, 11, 6)); posted.status = "posted"; pieces.save(posted, tmp_path)
+    now = datetime(2026, 11, 5, 7, 0, tzinfo=timezone.utc); sent = []
+    assert [p.id for p in intro.scheduled(tmp_path, now)] == [has.id, near.id, far.id]
+    asked = intro.ask_scheduled(tmp_path, sent.append, now, ask=lambda _p: "Aapka paisa doobta hai")
+    assert asked == [near.id] and len(sent) == 1 and "Intro for 2026-11-08" in sent[0]
+    assert intro.ask_scheduled(tmp_path, sent.append, now, ask=lambda _p: "x") == [] and len(sent) == 1        # asked once
+    assert intro.needed(tmp_path, now) is True                                                                # the 7 Nov clip is in
+
+
+def test_a_scheduled_pieces_clip_replaces_its_youtube_upload_in_the_same_slot(tmp_path, monkeypatch):
+    p = _scheduled(tmp_path, "2026-11-07-sglearning-short", date(2026, 11, 7), with_clip=True)
+    p.topic["intro"] = intro.plan(p, ask=lambda _p: "Aapka paisa doobta hai, unki fees pakki rehti hai"); pieces.save(p, tmp_path)
+    monkeypatch.setattr(intro, "duration", lambda path: 9.9)
+    deps = _Deps(); sent, deleted, composed = [], [], []
+    heard = p.topic["intro"]["text"].lower()
+    out = intro.sweep(tmp_path, deps, now=datetime(2026, 11, 5, 7, 0, tzinfo=timezone.utc), notify=sent.append, transcribe=lambda c: heard,
+                      compose_fn=lambda piece, clip, o: composed.append(piece.id), delete=lambda ch, vid: deleted.append((ch, vid)))
+    assert out == [(p.id, "re-uploaded-intro")] and composed == [p.id] and deleted == [("sglearning", "old123")] and deps.uploaded == [p.id]
+    q = pieces.load(p.id, tmp_path)
+    assert q.status == "uploaded" and q.ids["yt_id"] == "yt2026" and q.ids["yt_id_replaced"] == "old123" and "re-scheduled" in sent[-1]
+    assert intro.scheduled(tmp_path, datetime(2026, 11, 5, 8, 0, tzinfo=timezone.utc)) == []      # done once: it has its intro now
+
+
+def test_a_scheduled_piece_too_close_to_its_slot_is_left_alone(tmp_path):
+    _scheduled(tmp_path, "2026-11-07-sglearning-short", date(2026, 11, 7), with_clip=True)
+    late = datetime(2026, 11, 7, 12, 30, tzinfo=timezone.utc)          # Instagram posts at 13:00 UTC
+    assert intro.scheduled(tmp_path, late) == [] and intro.needed(tmp_path, late) is False
