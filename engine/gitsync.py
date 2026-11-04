@@ -12,7 +12,7 @@ from pathlib import Path
 from . import pieces
 from .config import ROOT
 
-PATHS = ["pieces", "out", "logs"]
+PATHS = ["pieces", "out", "logs", "inbox"]
 SNAPSHOTS = {"logs/remote-pause.json"}      # the control room's last answer: every workflow rewrites it, so a clash is settled in favour of the newest copy
 
 

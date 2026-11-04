@@ -184,6 +184,12 @@ def reschedule(token: str, video_id: str, when_utc, call=call) -> bool:
     return False
 
 
+def delete(token: str, video_id: str, call=call) -> bool:
+    """Removes a video (4 Nov 2026: a scheduled piece re-uploaded with the founder's intro). Never used on a public video by the pipeline."""
+    status, _h, _body = call("DELETE", f"https://www.googleapis.com/youtube/v3/videos?id={video_id}", token)
+    return status in (204, 200)
+
+
 def go_public(token: str, video_id: str, call=call) -> bool:
     """Flips a first-day unlisted video to public (videos.update, part=status)."""
     status, _h, body = call("PUT", VIDEOS_URL, token, json_body={"id": video_id, "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}})

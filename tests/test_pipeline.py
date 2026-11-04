@@ -567,3 +567,32 @@ def test_a_gemini_failure_stops_the_piece_after_one_topic(tmp_path):
     d, _calls = deps(tmp_path, research=research_fn)
     p = pipeline.make(_piece(), d, tmp_path)
     assert p.status == "failed-research" and len(tries) == 1 and "stopped" in p.reasons[-1]
+
+
+def test_a_finished_piece_waits_for_the_founders_intro_then_uploads_when_the_clip_comes(tmp_path, monkeypatch):
+    """4 Nov 2026: with intro_notify set, step 10 asks for the intro and parks the piece; the sweep merges the clip and uploads."""
+    from datetime import datetime, timezone
+    from engine import intro, pieces
+    sent = []
+    d, calls = deps(tmp_path)
+    d.intro_notify = sent.append
+    monkeypatch.setattr(intro, "_ask_claude", lambda prompt: "Aapka paisa doobta hai, unki fees pakki rehti hai")
+    p = pipeline.make(_piece(day=date(2027, 1, 10)), d, tmp_path)                       # a slot well ahead: the deadline has not passed
+    assert p.status == "intro-wait" and calls["upload"] == 0 and p.topic["intro"]["text"].endswith("Aaiye isko samajhte hain.")
+    assert len(sent) == 1 and "Intro for" in sent[0] and p.ids["intro_sent"]
+    p2 = pipeline.make(pieces.load(p.id, tmp_path), d, tmp_path)                       # no clip yet, before the deadline: still waiting
+    assert p2.status == "intro-wait" and calls["upload"] == 0 and len(sent) == 1
+    clip = intro.clip_path(tmp_path, p); clip.parent.mkdir(parents=True, exist_ok=True); clip.write_bytes(b"clip")
+    monkeypatch.setattr(intro, "duration", lambda path: 9.9)
+    monkeypatch.setattr(intro, "compose", lambda piece, c, out_dir: (out_dir / "reel.mp4"))
+    heard = (p.topic["intro"]["text"]).lower()
+    from engine import inbox
+    monkeypatch.setattr(inbox, "transcribe", lambda c: heard)
+    p3 = pipeline.make(pieces.load(p.id, tmp_path), d, tmp_path)
+    assert p3.status == "uploaded" and calls["upload"] == 1 and "merged" in sent[-1]
+
+
+def test_without_intro_notify_the_piece_uploads_as_before(tmp_path):
+    d, calls = deps(tmp_path)
+    p = pipeline.make(_piece(day=date(2027, 1, 10)), d, tmp_path)
+    assert p.status == "uploaded" and calls["upload"] == 1

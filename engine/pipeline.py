@@ -3,11 +3,11 @@ import json
 import re
 import shutil
 from dataclasses import dataclass, field
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Callable
 
-from . import art, artbatch, assemble, buffer, cards, cartoon, cast, claims, costs, gemini, lint, newscard, pieces, qa, research, secrets, slots, storyframe, topics, voice, voicebatch, writer, youtube
+from . import art, artbatch, assemble, buffer, cards, cartoon, cast, claims, costs, gemini, intro, lint, newscard, pieces, qa, research, secrets, slots, storyframe, telegram, topics, voice, voicebatch, writer, youtube
 from .config import CHANNELS, INSTAGRAM_CAROUSEL, ROOT, VIDEO, story_words
 from .pieces import Piece
 
@@ -16,7 +16,7 @@ def is_story(piece: Piece) -> bool:
     from .config import is_story as _is
     return _is(piece.channel, piece.kind)
 QA_TOO_LONG = re.compile(r"duration: ([\d.]+)s, allowed [\d.]+-([\d.]+)s")
-RESUMABLE = {"written", "voicing", "voiced", "painting", "drawn", "assembled", "failed-voice", "failed-art", "qa_failed"}
+RESUMABLE = {"written", "voicing", "voiced", "painting", "drawn", "assembled", "failed-voice", "failed-art", "qa_failed", "intro-wait"}
 DAILY_DRAFTS, DAILY_RESEARCH = 6, 4     # per piece per quota day: a piece that keeps failing stops and waits for tomorrow instead of looping (24 Oct 2026)
 PARKED_WRITE = "writing"      # the draft is cooking in Claude's batch lane; topic, facts and the research sheet stay on the piece
 HANDLE = "@sanjeev_gulia"
@@ -52,6 +52,7 @@ class Deps:
     art_batch: Callable = None   # (piece, jobs) -> "ready" | "painting": Gemini Batch API fills the picture cache at half price
     voice_check: Callable = None # (wav) -> transcript: every voiced line is read back and re-made if spoken twice or cut short
     animate_card: Callable = None  # (data, index, total, roundup, seconds, size, out) -> mp4: the moving news card (2 Nov 2026)
+    intro_notify: Callable = None  # (text) -> None: set, the founder's 10-second avatar intro is asked for before every upload (engine/intro.py, 4 Nov 2026)
 
 
 def _jsonable(d: dict) -> dict:
@@ -333,6 +334,8 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
     """Runs the pipeline for one piece and records every transition. Returns the piece in its final state for this run."""
     if piece.status in buffer.DONE:
         return piece
+    if piece.status == "intro-wait":                                   # the founder's intro clip may have come (engine/intro.py)
+        return intro.collect(piece, deps, root, notify=deps.intro_notify)[1]
     used, prior = _used(root)
     size = VIDEO[piece.kind]
     out_dir = Path(root) / "out" / piece.id
@@ -519,7 +522,17 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
     if dry_run:
         pieces.save(piece, root)
         return piece
-    # 10: upload, scheduled
+    # 10: the founder's intro first (engine/intro.py: ask, wait, plain at the deadline), then the upload, scheduled
+    if deps.intro_notify is not None and intro.enabled(piece) and not piece.ids.get("intro_skipped") \
+            and datetime.now(timezone.utc) < intro.deadline_utc(piece):
+        intro.request(piece, root, deps.intro_notify)
+        pieces.save(pieces.transition(piece, "intro-wait", f"waiting for the founder's intro clip until {intro.deadline_utc(piece):%d %b %H:%M} UTC"), root)
+        return piece
+    return finish_upload(piece, deps, root, video, thumb, out_dir)
+
+
+def finish_upload(piece: Piece, deps: Deps, root: Path, video: Path, thumb: Path, out_dir: Path) -> Piece:
+    """The scheduled upload and the long's caption tracks; shared by the plain path and the intro path."""
     piece.ids["yt_id"] = deps.upload(piece, video, thumb)
     piece.topic["look"] = art.look(piece.channel)                     # which picture style this piece was drawn in (weekly report)
     pieces.save(pieces.transition(piece, "uploaded"), root)
@@ -581,6 +594,6 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
                 cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for, subtitles=subtitles_fn,
                 voice_batch=lambda piece, texts, vid: voicebatch.voice_piece(piece, texts, vid),
                 art_batch=lambda piece, jobs: artbatch.paint_piece(piece, jobs), voice_check=voice.transcribe,
-                animate_card=newscard.animate)
+                animate_card=newscard.animate, intro_notify=telegram.send)
     # voice.batched (several scenes per TTS request) stays unwired: on 22 Oct 2026 the model's paragraph pauses were not distinct enough
     # to cut on, and the transcript check sent every group back to line-by-line. Wire it in once the cut is reliable.
