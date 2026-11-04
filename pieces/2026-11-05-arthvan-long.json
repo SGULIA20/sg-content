@@ -24,14 +24,28 @@
  ],
  "id": "2026-11-05-arthvan-long",
  "ids": {
+  "captions": {
+   "en": "AUieDabGfvPf5Wj2agpege8HDH2xG7L_ETCepF8_vMfjMk10u9gaiL2C",
+   "gu": "AUieDaaotViEXkKvkvddg6C-YuJ7yHKwb7CZLEk28j7h_BZicsOwtGuV4cW2m-2lppSRgXItWDM",
+   "hi": "AUieDaYAMO81t-LgC86Taf1uAb-OzB-5TNuZfzplnIL9TxM3Ap8ldcMO4v4X-GxSBFXjk48",
+   "mr": "AUieDaYSC33SZD1qI2qKQ-wXxGKzfaC9pQ03ntThYHnepovzDC6XSOPMGjI5oG0tx9A",
+   "ta": "AUieDaaKgNasHZeZDjSZraccl2Q80dgul_1JLKVTC-gaMQstPg8kt548_ggIkQbzmLw"
+  },
+  "cost": {
+   "inr": 52.5,
+   "usd": 0.395974,
+   "voice": 0
+  },
   "intro": {
-   "adopted": "2026-11-04T16:42:37+00:00",
-   "clip": "2026-11-05-arthvan-long.mp4"
+   "clip": "2026-11-05-arthvan-long.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-04T19:12:47+00:00",
+   "seconds": 10.03
   },
   "intro_sent": "2026-11-04T10:49:33+00:00",
   "thumb_sha": "72dad10890316647",
-  "yt_id": "lstYx4lbo3Y",
-  "yt_id_replaced": "XNPVNKHSz9o"
+  "yt_id": "RBKs7SVDsqI",
+  "yt_id_replaced": "lstYx4lbo3Y"
  },
  "kind": "long",
  "publish_day": "2026-11-05",
@@ -40,7 +54,8 @@
   "re-made from the caches to carry the founder's intro",
   "intro merged; adopted the upload XNPVNKHSz9o an earlier run made",
   "re-made from the caches to carry the founder's intro",
-  "intro merged; adopted the upload lstYx4lbo3Y an earlier run made"
+  "intro merged; adopted the upload lstYx4lbo3Y an earlier run made",
+  "re-made from the caches to carry the founder's intro"
  ],
  "script": {
   "captions": {
@@ -608,12 +623,13 @@
    "text": "Kehte hain, Tanjore ke mandir ki parchhai dopahar mein zameen par girti hi nahi. Aur 80 ton ka patthar upar gaya kaise? Aaiye isko samajhte hain.",
    "words": 26
   },
+  "look": "indian-comic",
   "notes": "Chola engineering (ramp theories), shadow claim is a partial truth; explain geometry.",
   "place": "Thanjavur, Tamil Nadu",
   "target_minutes": 14,
   "title_hi": "Tanjore ke mandir ki parchhai",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-11-04T17:58:01+00:00",
+ "updated": "2026-11-04T19:12:52+00:00",
  "writer": "claude"
 }
