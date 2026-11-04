@@ -45,9 +45,11 @@ jobs:
         id: need
         run: |
           if [ -n "${{ github.event.inputs.redo }}" ] || python -m engine.intro --needed; then echo "yes=1" >> "$GITHUB_OUTPUT"; else echo "yes=0" >> "$GITHUB_OUTPUT"; fi
-      - name: Browser for the cards
+      - name: ffmpeg, fonts and the browser for the cards
         if: steps.need.outputs.yes == '1'
-        run: python -m playwright install --with-deps chromium
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-core fonts-noto-color-emoji
+          python -m playwright install --with-deps chromium
       - name: Sweep (compose + upload) or redo one piece
         if: steps.need.outputs.yes == '1'
         env:
