@@ -5,6 +5,11 @@ from . import config
 
 IST = timezone(timedelta(hours=5, minutes=30), name="IST")
 
+# A third long a week for two weeks, on the days neither channel has one, so the proven Short questions get their 12-minute telling
+# three weeks earlier than the Wed/Sat and Thu/Sun rotation allows (founder, 4 Nov 2026: "Do 1"): Learning with SG Mon 9 and 16 Nov
+# (gold on Dhanteras, US stocks from $1), SG-MYTH-WORLD Tue 10 and 17 Nov (Sanchi, Ram Setu). Explicit dates: nothing after them.
+EXTRA_LONG_DAYS = {"sglearning": (date(2026, 11, 9), date(2026, 11, 16)), "arthvan": (date(2026, 11, 10), date(2026, 11, 17))}
+
 
 def ist(dt_utc: datetime) -> datetime:
     if dt_utc.tzinfo is None:
@@ -24,7 +29,7 @@ def publish_dates(channel: str, kind: str, start: date, days: int) -> list:
         d = start + timedelta(days=i)
         if kind == "short" and d.weekday() in ch.short_days:
             out.append(d)
-        elif kind == "long" and d.weekday() in ch.long_days:
+        elif kind == "long" and (d.weekday() in ch.long_days or d in EXTRA_LONG_DAYS.get(channel, ())):
             out.append(d)
     return out
 

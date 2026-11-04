@@ -48,3 +48,13 @@ def test_two_long_days_per_channel():
     # sglearning: Wednesday and Saturday; arthvan: Thursday and Sunday (founder's table, 21 Oct 2026)
     assert slots.publish_dates("sglearning", "long", date(2026, 10, 19), 7) == [date(2026, 10, 21), date(2026, 10, 24)]
     assert slots.publish_dates("arthvan", "long", date(2026, 10, 19), 7) == [date(2026, 10, 22), date(2026, 10, 25)]
+
+
+def test_the_two_week_third_long_day_and_nothing_after(tmp_path):
+    """4 Nov 2026 (founder: "Do 1"): Learning with SG Mon 9 and 16 Nov, SG-MYTH-WORLD Tue 10 and 17 Nov, on top of the usual days."""
+    assert slots.publish_dates("sglearning", "long", date(2026, 11, 9), 7) == [date(2026, 11, 9), date(2026, 11, 11), date(2026, 11, 14)]
+    assert slots.publish_dates("arthvan", "long", date(2026, 11, 9), 7) == [date(2026, 11, 10), date(2026, 11, 12), date(2026, 11, 15)]
+    assert date(2026, 11, 16) in slots.publish_dates("sglearning", "long", date(2026, 11, 16), 1)
+    assert date(2026, 11, 17) in slots.publish_dates("arthvan", "long", date(2026, 11, 17), 1)
+    assert slots.publish_dates("sglearning", "long", date(2026, 11, 23), 14) == [date(2026, 11, 25), date(2026, 11, 28), date(2026, 12, 2), date(2026, 12, 5)]
+    assert slots.publish_dates("arthvan", "long", date(2026, 11, 23), 7) == [date(2026, 11, 26), date(2026, 11, 29)]
