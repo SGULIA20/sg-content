@@ -97,7 +97,7 @@ def _channel_rows(day: date, now: datetime, root: Path) -> list:
     rows = []
     for key, label in (("sglearning", "SG-LEARNING"), ("arthvan", "SG-MYTH")):
         ch = CHANNELS[key]
-        if day.weekday() in ch.long_days:
+        if day in slots.publish_dates(key, "long", day, 1):                  # includes the extra long days (slots.EXTRA_LONG_DAYS)
             p = pieces.load(slots.piece_id(day, key, "long"), root)
             rows.append((f"{label} long video", {"YouTube": _yt_cell(p, now)}))
         if day.weekday() in ch.short_days:
@@ -134,7 +134,7 @@ def tomorrow_plan(day: date) -> str:
         rows.append(("08:10", "LinkedIn", "your post" + (" (document)" if t.weekday() == 2 else "") + ", reply in the first hour"))
     for key, label in (("sglearning", "Learning with SG"), ("arthvan", "SG-MYTH-WORLD")):
         ch = CHANNELS[key]
-        if t.weekday() in ch.long_days:
+        if t in slots.publish_dates(key, "long", t, 1):
             rows.append((_wat(ch.long_publish_ist), "YouTube", f"{label} long video"))
     rows.append((_wat(CHANNELS["sglearning"].short_publish_ist), "YouTube", "Shorts on both channels"))
     if t.weekday() in APP_POST_WEEKDAYS:
