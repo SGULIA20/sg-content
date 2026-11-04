@@ -398,6 +398,7 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
           f"[0:v]setsar=1[v0];[1:v]setsar=1[v1];[0:a]atrim=0:{va:.3f},asetpts=PTS-STARTPTS[a0];[v0][a0][v1][1:a]concat=n=2:v=1:a=1[v][a]",
           "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "aac", "-b:a", "160k", "-ar", "48000",
           "-movflags", "+faststart", str(plain)])
+    part_b.unlink(missing_ok=True)                                  # an intermediate the size of the whole video: never kept (a 114 MB one sank run 10's push)
     if short:
         assemble.story_copy(plain, out_dir / "story.mp4")
     _run(["-ss", "1.0", "-i", str(plain), "-frames:v", "1", "-q:v", "2", str(out_dir / "cover.jpg")])
@@ -452,7 +453,7 @@ def _sha(path: Path) -> str:
     return hashlib.sha1(Path(path).read_bytes()).hexdigest()[:16]
 
 
-def collect(piece, deps, root: Path, now: datetime | None = None, notify=None, transcribe=None, compose_fn=None) -> tuple:
+def collect(piece, deps, root: Path, now: datetime | None = None, notify=None, transcribe=None, compose_fn=None, find=None) -> tuple:
     """One waiting piece: ("uploaded-intro" | "uploaded-plain" | "waiting" | "rejected" | "rebuilt-<status>", piece). A piece whose plain
     video is not on this machine (a long: out/**/long.mp4 is never in git) is rebuilt by the pipeline from the voice and picture caches,
     which compose and upload at its end."""
@@ -466,6 +467,13 @@ def collect(piece, deps, root: Path, now: datetime | None = None, notify=None, t
         return "waiting", piece
     if not video.exists():
         old = piece.ids.get("yt_id")
+        found = (find or (lambda pc: existing_upload(pc, youtube.access_token(pc.channel))))(piece)
+        if found and found != old:                                 # an earlier run already re-made and uploaded it, then its git push failed
+            piece.ids["yt_id"], piece.ids["yt_id_replaced"] = found, old      # (4 Nov 2026, the Tanjore long): adopt it, no second 35-minute build
+            piece.ids.setdefault("intro", {"clip": clip_path(root, piece).name, "adopted": now.isoformat(timespec="seconds")})
+            pieces.save(pieces.transition(piece, "uploaded", f"intro merged; adopted the upload {found} an earlier run made"), root)
+            notify(f"🎬 {piece.id}: your intro is merged; the piece keeps the re-scheduled upload (YouTube {found}).")
+            return "adopted-intro", piece
         piece.status = "drawn"                                     # script, facts and timings stay; voice and pictures come from the caches
         pieces.save(piece, root)
         piece = pipeline.make(piece, deps, root)
