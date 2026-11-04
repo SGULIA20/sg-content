@@ -145,9 +145,16 @@
    "voice": 12
   },
   "ig_story_id": "skipped: Reel over 60 s",
+  "intro": {
+   "clip": "2026-11-05-arthvan-short.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-04T11:45:31+00:00",
+   "seconds": 9.39
+  },
   "intro_sent": "2026-11-04T10:49:33+00:00",
   "out_sha": "eb5b613cc8d527e9898fc71b4d8e88454ddbcfdd",
-  "yt_id": "jy9B06Xthyg"
+  "yt_id": "BmbntsT3bfc",
+  "yt_id_replaced": "jy9B06Xthyg"
  },
  "kind": "short",
  "publish_day": "2026-11-05",
@@ -418,6 +425,6 @@
   "title_hi": "Ravan ki Lanka kahan thi",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-29T22:50:24+00:00",
+ "updated": "2026-11-04T11:45:41+00:00",
  "writer": "claude"
 }
