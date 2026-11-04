@@ -8,13 +8,13 @@ qualifies on its own, and YouTube reviews it (about a month). Check the exact nu
 
 | Channel | YouTube views | Minutes watched | New subscribers | Instagram |
 |---|---|---|---|---|
-| Learning with SG | 219 | 97 | 2 | 17,392 followers |
+| Learning with SG | 219 | 97 | 2 | 17,392 followers (inorganic: not counted, founder 4 Nov 2026) |
 | SG-MYTH-WORLD | 818 | 547 | 1 | - |
 
 - 4,000 hours is about 4,600 minutes a week, so SG-MYTH-WORLD needs about 8x, and Learning with SG about 50x.
 - The Shorts route (10 million in 90 days, about 111,000 views a day) is out of reach for now. We get about 150 a day.
-- So the realistic route is **long-video watch time, starting with SG-MYTH-WORLD**, plus moving the 17,000 Instagram
-  followers over to YouTube.
+- So the realistic route is **long-video watch time, starting with SG-MYTH-WORLD**. The Instagram follower count is
+  inorganic and is not a lever (founder, 4 Nov 2026): Instagram counts only by the views each Reel actually gets.
 
 ## Free levers (running)
 
@@ -24,8 +24,8 @@ qualifies on its own, and YouTube reviews it (about a month). Check the exact nu
 2. **Hooks.** Since 25 Oct every Reel opens on the claim or the question, with a number or a name, in at most 12 words,
    and never on a scene. Measure: the early-skip rate in the Monday report should fall from about 45% to under 30%.
 3. **Shorts to long videos.** Each Short already links its long video (description and pinned comment).
-4. **Instagram to YouTube (founder, 2 minutes).** Put the YouTube channel link first in both Instagram bios. Once a week,
-   share the new long video as a Story with a link sticker. Our app cannot add link stickers, so this is done in the app.
+4. **Instagram to YouTube.** The YouTube link stays in the bios and each long gets its Story card, but no plan counts on the
+   follower number: those followers are inorganic (founder, 4 Nov 2026). Only real Reel views and saves count.
 5. **Collab posts** (draft below). One post appears on both accounts, at no cost.
 
 ## The Rs 6,000 test: spend it on YouTube, not Instagram
@@ -45,7 +45,7 @@ Who to ask: Hindi finance creators (for Learning with SG) or Hindi history and m
 20,000-300,000 followers. Look for real comments, not giveaways, and nothing that could look like stock tips. Five to eight
 messages a week.
 
-> Namaste [name] ji, main Sanjeev Gulia (FCMA), Learning with SG chalata hoon (17k on Instagram). Aapki [specific Reel]
+> Namaste [name] ji, main Sanjeev Gulia (FCMA), Learning with SG chalata hoon. Aapki [specific Reel]
 > bahut achhi lagi, khaas kar [one detail]. Ek idea: ek Collab Reel saath mein, "[topic both audiences care about]".
 > Script aur edit hum kar denge, aap sirf review karke Collab accept karein; post dono profiles par jaayega. Agar theek lage
 > toh main 2 topic options bhej deta hoon?
