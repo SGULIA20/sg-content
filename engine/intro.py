@@ -199,12 +199,19 @@ def check(clip: Path, p: dict, transcribe=None, seconds: float | None = None) ->
         heard = (transcribe or inbox.transcribe)(clip)
     except Exception as e:
         return reasons + [f"transcription failed: {type(e).__name__}"]
-    sim = inbox.similarity(p["text"], heard)
+    sim = recall(p["text"], heard)                                     # the script's words heard; extra words of his are fine
     if sim < inbox.SIMILARITY_MIN:
         reasons.append(f"missing words (only {sim:.0%} of the script heard): \"{heard[:120]}\"")
     if "samajh" not in heard.lower() and "samjh" not in heard.lower():
         reasons.append("the closing line \"Aaiye isko samajhte hain\" was not heard")
     return reasons
+
+
+def recall(script: str, heard: str) -> float:
+    """How much of the script was heard (4 Nov 2026: Jaccard punished a clip that said the script plus a bridge line the plan lacked)."""
+    from . import inbox
+    want, got = set(inbox._tokens(script)), set(inbox._tokens(heard))
+    return len(want & got) / len(want) if want else 0.0
 
 
 def cues_for(text: str, segments: list, total: float) -> list:
@@ -433,7 +440,7 @@ def redo_piece(piece, deps, root: Path, env=None, notify=None, transcribe=None, 
     notify = notify or (lambda t: None)
     clip = clip_path(root, piece)
     if not (piece.topic or {}).get("intro"):
-        piece.topic["intro"] = plan(piece, ask=lambda _p: "")
+        piece.topic["intro"] = plan(piece)                            # the real plan, bridge line included (bridge() falls back to none)
     problems = check(clip, piece.topic["intro"], transcribe)
     if problems:
         piece.ids["intro_rejected"] = _sha(clip)
