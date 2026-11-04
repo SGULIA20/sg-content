@@ -19,6 +19,7 @@ gh secret set NAME --repo SGULIA20/sg-content < file-with-the-value
 | `LINKEDIN_CLIENT_ID`, `LINKEDIN_CLIENT_SECRET` (optional, local only) | linkedin.com/developers → the sg-content app → Auth tab; products "Sign In with LinkedIn using OpenID Connect" and "Share on LinkedIn"; redirect URL `http://localhost:8765/callback` | `python -m engine.linkedin --auth` on the Mac (not a GitHub secret) |
 | `LINKEDIN_ACCESS_TOKEN`, `LINKEDIN_PERSON_URN` (optional) | printed by `python -m engine.linkedin --auth`; the token lasts 60 days and is not refreshed automatically, so re-run `--auth` when the digest warns (7 days ahead, from `logs/tokens.json`) | publish (LinkedIn is skipped when these are absent) |
 | `TELEGRAM_BOT_TOKEN` | @BotFather token for @Sglearningcontent_bot (this project's own bot) | every workflow |
+| `TELEGRAM_STUDIO_TOKEN` | @BotFather token for the Studio bot: the founder's intro clips, thumbnails and Reel X-rays (engine/studio.py, 4 Nov 2026) | studio.yml |
 | `TELEGRAM_CHAT_ID` | `python -m engine.telegram --find-chat` after messaging the bot once | every workflow |
 | `ACTIONS_PAT` (optional) | a fine-grained GitHub token with "Secrets: write" on this repo; lets refresh-tokens rotate the Instagram/Threads secrets itself | refresh-tokens |
 | `SG_COMMAND_KEY` (optional) | Supabase (ScoreMyBiz project) → Project Settings → Vault → `sg_command_ingest`; lets runs report to the founder's control page and obey its pause button | produce, publish |
