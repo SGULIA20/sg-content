@@ -113,3 +113,18 @@ def test_the_publish_step_can_leave_media_out(repos):
     gitsync.commit(a, "publish: x", paths=["pieces", "logs"])
     assert "out/reel.mp4" not in _git(a, "ls-files")
     assert "logs/claude-spend.json" in _git(a, "ls-files")
+
+
+def test_a_file_over_95_mb_is_never_staged(tmp_path, monkeypatch):
+    """4 Nov 2026: GitHub refuses files over 100 MB; a parked long's video sank a run's push."""
+    import subprocess
+    from engine import gitsync
+    subprocess.run(["git", "init", "-q", str(tmp_path)], check=True)
+    (tmp_path / "out" / "x").mkdir(parents=True)
+    big = tmp_path / "out" / "x" / "long.mp4"
+    with big.open("wb") as f:
+        f.truncate(96 * 1024 * 1024)
+    (tmp_path / "out" / "x" / "thumb.jpg").write_bytes(b"small")
+    gitsync._stage(tmp_path, ["out"])
+    staged = subprocess.run(["git", "-C", str(tmp_path), "diff", "--cached", "--name-only"], capture_output=True, text=True).stdout.split()
+    assert staged == ["out/x/thumb.jpg"]

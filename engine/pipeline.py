@@ -526,6 +526,8 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
     if deps.intro_notify is not None and intro.enabled(piece):
         action = intro.before_upload(piece, root, out_dir, deps.intro_notify)
         if action == "wait":
+            if piece.kind == "long":                                     # too big for git: re-made from the caches when the clip comes
+                video.unlink(missing_ok=True)
             pieces.save(pieces.transition(piece, "intro-wait", f"waiting for the founder's intro clip until {intro.deadline_utc(piece):%d %b %H:%M} UTC"), root)
             return piece
     return finish_upload(piece, deps, root, video, thumb, out_dir)
