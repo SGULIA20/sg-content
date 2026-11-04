@@ -103,9 +103,15 @@
    "usd": 0.057972,
    "voice": 9
   },
+  "intro": {
+   "clip": "2026-11-05-sglearning-short.mp4",
+   "composed": "2026-11-04T11:33:16+00:00",
+   "seconds": 10.03
+  },
   "intro_sent": "2026-11-04T10:49:33+00:00",
   "out_sha": "d02b593d537ebac104fbda7b181be154746d8cb7",
-  "yt_id": "IZJ5VUWxulk"
+  "yt_id": "JnWhBiS5kqo",
+  "yt_id_replaced": "IZJ5VUWxulk"
  },
  "kind": "short",
  "publish_day": "2026-11-05",
@@ -298,6 +304,6 @@
   "title": "Meta raises AI spending forecast to $145 billion, plans new share issue; Q3 revenue beats estimates",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-29T23:00:03+00:00",
+ "updated": "2026-11-04T11:33:25+00:00",
  "writer": "claude"
 }
