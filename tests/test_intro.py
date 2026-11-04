@@ -61,6 +61,9 @@ def test_check_wants_8_to_12_seconds_the_words_and_the_closing_line(tmp_path):
     assert any("8-12 s" in r for r in intro.check(clip, plan, transcribe=lambda c: heard, seconds=14.2))
     bad = intro.check(clip, plan, transcribe=lambda c: "namaste doston aaj gold ki baat", seconds=9.9)
     assert any("missing words" in r for r in bad) and any("closing line" in r for r in bad)
+    extra = heard + " aapka paisa doobta hai unki fees phir bhi pakki rehti hai"        # he said more than the plan: still his script
+    assert intro.check(clip, {"text": "Aapki SIP doobe, phir bhi fund house kyun kamata hai? Aaiye isko samajhte hain."}, transcribe=lambda c: extra, seconds=9.9) == []
+    assert intro.recall("a b c d", "b c d e f g h i j") == 0.75
 
 
 def test_cues_follow_the_spoken_phrases_one_per_segment_else_the_syllable_split():
