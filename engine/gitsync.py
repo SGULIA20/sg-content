@@ -77,24 +77,40 @@ def enabled(env=None) -> bool:
     return env.get("SG_COMMIT_EACH") == "1" or env.get("SG_PUSH_FROM_MAC") == "1" or env.get("GITHUB_ACTIONS") == "true"
 
 
+def _push(root: Path, tries: int = 4) -> None:
+    """A push GitHub refuses with a server error (4 Nov 2026: "fatal error in commit_refs") is tried again after a pause."""
+    import time
+    last = ""
+    for attempt in range(tries):
+        r = subprocess.run(["git", "-C", str(root), "push", "-q", "origin", "HEAD:main"], capture_output=True, text=True)
+        if r.returncode == 0:
+            return
+        last = r.stderr.strip()[:300]
+        if "rejected" in last and "fetch first" in last:
+            _pull_rebase(root)
+        if attempt < tries - 1:
+            time.sleep(5 * (2 ** attempt))
+    raise RuntimeError(f"git push failed after {tries} tries: {last}")
+
+
 def commit(root: Path = ROOT, message: str = "sg-content: progress", push: bool = True, paths=None) -> str:
     _stage(root, paths)
     if not _dirty(root):
         if push and _git(root, "rev-list", "--count", "origin/main..HEAD", check=False) not in ("", "0"):
             _pull_rebase(root)                                  # an earlier piece's push failed: send it now, with the end-of-run sync
-            _git(root, "push", "-q", "origin", "HEAD:main")
+            _push(root)
         return ""
     _git(root, "commit", "-q", "-m", f"{message} [skip ci]")
     if push:
         _pull_rebase(root)
-        _git(root, "push", "-q", "origin", "HEAD:main")
+        _push(root)
     sha = _git(root, "rev-parse", "HEAD")                      # after the push: a rebase rewrites commits, so only the pushed HEAD is a sha GitHub serves
     if record_out_sha(root, sha):
         _git(root, "add", "-A", "pieces")
         _git(root, "commit", "-q", "-m", "record media sha [skip ci]")
         if push:
             _pull_rebase(root)
-            _git(root, "push", "-q", "origin", "HEAD:main")
+            _push(root)
     return sha
 
 
