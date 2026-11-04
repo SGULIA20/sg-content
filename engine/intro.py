@@ -84,7 +84,8 @@ def bridge(piece, ask=_ask_claude) -> str:
               f"no English finance terms. It must flow naturally before the closing line \"{CLOSING}\". Output only the line.")
     try:
         line = ask(prompt).strip().strip('"').strip("'").split("\n")[0].strip()
-    except Exception:
+    except Exception as e:
+        print(f"intro bridge: no line from Claude ({type(e).__name__}: {secrets.scrub(str(e))[:120]}); question and closing only", flush=True)
         return ""
     words = line.split()
     if not words or len(words) > BRIDGE_MAX_WORDS + 3:
@@ -214,27 +215,68 @@ def recall(script: str, heard: str) -> float:
     return len(want & got) / len(want) if want else 0.0
 
 
-def cues_for(text: str, segments: list, total: float) -> list:
-    """Captions on the spoken phrases: one per speech segment when the counts match, else the body's syllable split over the speech span.
-    Each caption holds until the next begins, the last until the clip ends."""
-    phrases = captions._phrases(text.strip())
-    if len(phrases) == len(segments):
-        cues = []
-        for i, (ph, (s, _e)) in enumerate(zip(phrases, segments)):
-            end = segments[i + 1][0] if i + 1 < len(segments) else total
-            cues.append((round(max(0.0, s - 0.05), 3), round(end, 3), ph))
-        return cues
-    start, end = segments[0][0], segments[-1][1]
-    cues = captions.offset(captions.split(text, max(0.5, end - start)), max(0.0, start - 0.05))
-    cues = [(s, (cues[i + 1][0] if i + 1 < len(cues) else total), t) for i, (s, _e, t) in enumerate(cues)]
-    merged = []                                                    # a one-word tail ("hai?") joins the phrase before it: never a 0.2 s caption
-    for s, e, t in cues:
-        if merged and (len(t.split()) == 1 or e - s < 0.5):
-            ps, _pe, pt = merged[-1]
-            merged[-1] = (ps, e, f"{pt} {t}")
+def _phrases(text: str) -> list:
+    """The body's phrase split, with a one-word tail ("hai?") joined to the phrase before it: never a caption of its own."""
+    out = []
+    for ph in captions._phrases(text.strip()):
+        if out and len(ph.split()) == 1:
+            out[-1] = f"{out[-1]} {ph}"
         else:
-            merged.append((s, e, t))
-    return merged
+            out.append(ph)
+    return out
+
+
+def cues_for(text: str, segments: list, total: float) -> list:
+    """Captions on the spoken phrases. One phrase per speech segment when the counts match; otherwise the phrases are dealt to the
+    segments in order by their share of syllables against each segment's share of speech time (4 Nov 2026: the bridge segment once
+    showed "hai?" on its own). Each caption holds until the next begins, the last until the clip ends."""
+    phrases = _phrases(text)
+    if not phrases or not segments:
+        return []
+    weights = [max(1, sum(captions.syllables(w) for w in ph.split())) for ph in phrases]
+    if len(phrases) == len(segments):
+        groups = [[i] for i in range(len(phrases))]
+    else:                                                          # each phrase goes to the segment whose share of the speech time holds the
+        speech = sum(e - s for s, e in segments) or 1.0            # phrase's share of the syllables (its midpoint), never moving backwards
+        ends, acc = [], 0.0
+        for s, e in segments:
+            acc += (e - s) / speech
+            ends.append(acc)
+        groups, k, cum, total_w = [[] for _ in segments], 0, 0.0, float(sum(weights))
+        for i, w in enumerate(weights):
+            mid = (cum + w / 2) / total_w
+            cum += w
+            while k < len(segments) - 1 and mid > ends[k]:
+                k += 1
+            groups[k].append(i)
+        last = len(phrases) - 1                                    # the closing line is always on the last segment, the question on the first
+        if last not in groups[-1]:
+            for g in groups:
+                if last in g:
+                    g.remove(last)
+            groups[-1].append(last)
+        if 0 not in groups[0]:
+            for g in groups:
+                if 0 in g:
+                    g.remove(0)
+            groups[0].insert(0, 0)
+    cues = []
+    for k, (seg, idx) in enumerate(zip(segments, groups)):
+        if not idx:
+            continue
+        s0 = max(0.0, seg[0] - 0.05)
+        seg_end = segments[k + 1][0] if k + 1 < len(segments) else total
+        inner = seg[1] - seg[0]
+        w_sum = sum(weights[i] for i in idx)
+        t = s0
+        for n, i in enumerate(idx):
+            if n == len(idx) - 1:
+                e = seg_end
+            else:
+                e = round(t + inner * weights[i] / w_sum, 3)
+            cues.append((round(t, 3), round(e, 3), phrases[i]))
+            t = e
+    return cues
 
 
 def _run(args: list) -> None:
