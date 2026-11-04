@@ -1,7 +1,8 @@
 name: studio
 
 # The Studio bot (founder, 4 Nov 2026): intro clips, thumbnails and Reel X-rays sent to the separate Telegram bot (engine/studio.py),
-# then the intro sweep when a waiting piece has its clip or has passed its deadline (engine/intro.py). No always-on server: every 5 minutes.
+# then the intro sweep when a waiting piece has its clip or has passed its deadline (engine/intro.py). No always-on server: every 5 minutes,
+# started by the Supabase clock (command.clock, docs/external-scheduler.md); the cron below is only the backup (GitHub fired it once in 8 h).
 on:
   schedule:
     - cron: '*/5 * * * *'

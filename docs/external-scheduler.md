@@ -25,6 +25,7 @@ cron-job.org removes that dependency: it calls GitHub's API at the exact minute 
 | 21:05 | sg-content | evening.yml | `{"ref":"main"}` |
 | 21:30 | arthvan-media | status.yml | `{"ref":"main"}` |
 | every 15 min | arthvan-media | telegram-commands.yml | `{"ref":"main"}` |
+| every 5 min | sg-content | studio.yml | `{"ref":"main"}` (the Studio bot: intro clips, thumbnails, X-rays; added 4 Nov 2026) |
 
 Every engine refuses to post or upload the same piece twice, so a run started by cron-job.org, by the Mac and by GitHub on the
 same day does one job once.
