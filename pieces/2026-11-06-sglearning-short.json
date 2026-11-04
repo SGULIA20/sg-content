@@ -84,9 +84,16 @@
    "usd": 0.19702,
    "voice": 8
   },
+  "intro": {
+   "clip": "2026-11-06-sglearning-short.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-04T16:19:58+00:00",
+   "seconds": 9.54
+  },
   "intro_sent": "2026-11-04T10:49:33+00:00",
   "out_sha": "85c71e285b2d03fffa02235271516f8fe5fdcb78",
-  "yt_id": "hAATA_nwcuM"
+  "yt_id": "-XRz8TtAUmQ",
+  "yt_id_replaced": "hAATA_nwcuM"
  },
  "kind": "short",
  "publish_day": "2026-11-06",
@@ -275,6 +282,6 @@
   "title": "Monthly Data on India’s International Trade in Services  for the Month of September 2026",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-30T19:32:39+00:00",
+ "updated": "2026-11-04T16:20:06+00:00",
  "writer": "claude"
 }
