@@ -519,7 +519,17 @@ def collect(piece, deps, root: Path, now: datetime | None = None, notify=None, t
             piece.ids["yt_id"], piece.ids["yt_id_replaced"] = found, old      # (4 Nov 2026, the Tanjore long): adopt it, no second 35-minute build
             piece.ids.setdefault("intro", {"clip": clip_path(root, piece).name, "adopted": now.isoformat(timespec="seconds")})
             pieces.save(pieces.transition(piece, "uploaded", f"intro merged; adopted the upload {found} an earlier run made"), root)
-            notify(f"🎬 {piece.id}: your intro is merged; the piece keeps the re-scheduled upload (YouTube {found}).")
+            try:                                                   # the superseded copies go, or the slot would publish twice (4 Nov 2026)
+                token = youtube.access_token(piece.channel)
+                gone = [old] if old and youtube.delete(token, old) else []
+                gone += remove_duplicates(piece, found, token_for=lambda ch: token)
+                piece.ids["yt_duplicates_removed"] = sorted(set(piece.ids.get("yt_duplicates_removed", []) + gone))
+                pieces.save(piece, root)
+            except Exception as e:
+                gone = []
+                notify(f"🎬 {piece.id}: the earlier upload(s) could not be removed ({secrets.scrub(str(e))[:120]}).")
+            notify(f"🎬 {piece.id}: your intro is merged; the piece keeps the re-scheduled upload (YouTube {found})"
+                   + (f"; removed {', '.join(gone)}." if gone else "."))
             return "adopted-intro", piece
         piece.status = "drawn"                                     # script, facts and timings stay; voice and pictures come from the caches
         pieces.save(piece, root)
@@ -757,7 +767,18 @@ def redo_piece(piece, deps, root: Path, env=None, notify=None, transcribe=None, 
         piece.ids["yt_id"], piece.ids["yt_id_replaced"] = found, old
         piece.topic["look"] = piece.topic.get("look") or ""
         pieces.save(pieces.transition(piece, "uploaded", f"intro merged; adopted the upload {found} an earlier run made"), root)
-        notify(f"🎬 {piece.id}: your intro is merged; the piece keeps the re-scheduled upload (YouTube {found}).")
+        try:                                                      # the superseded copies go, or the slot would publish twice (4 Nov 2026)
+            rm = delete or (lambda ch, vid: youtube.delete(youtube.access_token(ch, env), vid))
+            gone = [old] if old and (rm(piece.channel, old) or delete) else []
+            gone += remove_duplicates(piece, found, token_for=lambda ch: youtube.access_token(ch, env),
+                                      delete=(lambda vid: rm(piece.channel, vid) or True) if delete else None)
+            piece.ids["yt_duplicates_removed"] = sorted(set(piece.ids.get("yt_duplicates_removed", []) + gone))
+            pieces.save(piece, root)
+        except Exception as e:
+            gone = []
+            notify(f"🎬 {piece.id}: the earlier upload(s) could not be removed ({secrets.scrub(str(e))[:120]}).")
+        notify(f"🎬 {piece.id}: your intro is merged; the piece keeps the re-scheduled upload (YouTube {found})"
+               + (f"; removed {', '.join(gone)}." if gone else "."))
         return "adopted-intro"
     if old:
         (delete or (lambda ch, vid: youtube.delete(youtube.access_token(ch, env), vid)))(piece.channel, old)
@@ -782,6 +803,7 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--plan"); ap.add_argument("--needed", action="store_true"); ap.add_argument("--sweep", action="store_true"); ap.add_argument("--redo")
     ap.add_argument("--ask-scheduled", action="store_true"); ap.add_argument("--uploads", help="piece id: list its private scheduled uploads on YouTube")
+    ap.add_argument("--tidy", help="piece id: remove every private scheduled copy on YouTube except the recorded yt_id")
     a = ap.parse_args(argv)
     if a.plan:
         piece = pieces.load(a.plan, ROOT)
@@ -797,6 +819,11 @@ def main(argv=None) -> int:
     if a.ask_scheduled:
         from . import telegram
         print("asked:", ask_scheduled(ROOT, telegram.send) or "nothing"); return 0
+    if a.tidy:
+        piece = pieces.load(a.tidy, ROOT)
+        gone = remove_duplicates(piece, piece.ids["yt_id"])
+        pieces.save(piece, ROOT)
+        print(f"{a.tidy}: kept {piece.ids['yt_id']}, removed {', '.join(gone) or 'nothing'}"); return 0
     if a.uploads:
         from . import youtube
         piece = pieces.load(a.uploads, ROOT)

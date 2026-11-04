@@ -16,6 +16,10 @@ on:
         description: 'piece id: list its private scheduled uploads on YouTube (engine/intro.py --uploads), no sweep'
         required: false
         default: ''
+      tidy:
+        description: 'piece id: remove its private scheduled copies on YouTube except the recorded one (engine/intro.py --tidy), no sweep'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -64,10 +68,18 @@ jobs:
           YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
           YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
         run: python -m engine.intro --uploads "${{ github.event.inputs.uploads }}"
+      - name: Remove a piece's superseded uploads on YouTube
+        if: github.event.inputs.tidy != ''
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
+          YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
+        run: python -m engine.intro --tidy "${{ github.event.inputs.tidy }}"
       - name: Is a sweep needed?
         id: need
         run: |
-          if [ -n "${{ github.event.inputs.uploads }}" ]; then echo "yes=0" >> "$GITHUB_OUTPUT"; elif [ -n "${{ github.event.inputs.redo }}" ] || python -m engine.intro --needed; then echo "yes=1" >> "$GITHUB_OUTPUT"; else echo "yes=0" >> "$GITHUB_OUTPUT"; fi
+          if [ -n "${{ github.event.inputs.uploads }}${{ github.event.inputs.tidy }}" ]; then echo "yes=0" >> "$GITHUB_OUTPUT"; elif [ -n "${{ github.event.inputs.redo }}" ] || python -m engine.intro --needed; then echo "yes=1" >> "$GITHUB_OUTPUT"; else echo "yes=0" >> "$GITHUB_OUTPUT"; fi
       - name: ffmpeg, fonts and the browser for the cards
         if: steps.need.outputs.yes == '1'
         run: |

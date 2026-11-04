@@ -209,7 +209,7 @@ def test_a_redo_adopts_the_upload_an_earlier_run_already_made_instead_of_uploadi
     out = intro.sweep(tmp_path, deps, now=datetime(2026, 11, 5, 7, 0, tzinfo=timezone.utc), notify=sent.append,
                       transcribe=lambda c: p.topic["intro"]["text"].lower(), compose_fn=lambda *a: None,
                       delete=lambda ch, vid: deleted.append(vid), find=lambda pc: "new777")
-    assert out == [(p.id, "adopted-intro")] and deleted == [] and deps.uploaded == []
+    assert out == [(p.id, "adopted-intro")] and deleted == ["old123"] and deps.uploaded == []        # adopted, old copy removed, nothing uploaded
     q = pieces.load(p.id, tmp_path)
     assert q.status == "uploaded" and q.ids["yt_id"] == "new777" and q.ids["yt_id_replaced"] == "old123" and q.ids.get("intro")
 
@@ -287,10 +287,14 @@ def test_a_long_an_earlier_run_already_rebuilt_and_uploaded_is_adopted_not_built
     p.topic["intro"] = intro.plan(p, ask=lambda _p: "Chhote print ka ek rule"); pieces.save(p, tmp_path)
     c = intro.clip_path(tmp_path, p); c.parent.mkdir(parents=True, exist_ok=True); c.write_bytes(b"clip")
     monkeypatch.setattr(pipeline, "make", lambda *a, **k: (_ for _ in ()).throw(AssertionError("built again")))
-    monkeypatch.setattr(youtube, "delete", lambda tok, vid: (_ for _ in ()).throw(AssertionError("deleted")))
+    deleted = []
+    monkeypatch.setattr(youtube, "access_token", lambda ch, env=None: "t")
+    monkeypatch.setattr(youtube, "delete", lambda tok, vid: deleted.append(vid) or True)
+    monkeypatch.setattr(intro, "existing_uploads", lambda pc, tok, call=None: [{"id": "newlong", "uploaded": None, "duration": ""}, {"id": "stray", "uploaded": None, "duration": ""}])
     sent = []
     action, q = intro.collect(p, _Deps(), tmp_path, now=datetime(2026, 11, 6, 9, 0, tzinfo=timezone.utc), notify=sent.append, find=lambda pc: "newlong")
     assert action == "adopted-intro" and q.status == "uploaded" and q.ids["yt_id"] == "newlong" and q.ids["yt_id_replaced"] == "oldlong"
+    assert deleted == ["oldlong", "stray"] and q.ids["yt_duplicates_removed"] == ["oldlong", "stray"]      # the old slot copy never publishes twice
     assert pieces.load(p.id, tmp_path).ids["intro"]["adopted"] and "newlong" in sent[0]
 
 
