@@ -321,3 +321,23 @@ def test_the_closing_line_rotates_per_piece_and_check_wants_the_planned_one(tmp_
     assert intro.check(clip, plan, transcribe=lambda c: "aapki sip doobe phir bhi fund house kyun kamata hai chaliye sach jaante hain", seconds=9.9) == []
     bad = intro.check(clip, plan, transcribe=lambda c: "aapki sip doobe phir bhi fund house kyun kamata hai bye bye", seconds=9.9)
     assert any("Chaliye, sach jaante hain" in r for r in bad)
+
+
+def test_a_redo_of_a_long_adopts_the_upload_of_a_run_whose_sync_failed(tmp_path, monkeypatch):
+    """4 Nov 2026, run 34: the long was rebuilt and uploaded, the final sync clashed; the next redo must adopt it, not build again.
+    The floor is the piece's last change before this run's own save."""
+    from engine import pipeline
+    p = _scheduled(tmp_path, "2026-11-07-sglearning-long", date(2026, 11, 7), with_clip=True); p.kind = "long"
+    p.topic["intro"] = intro.plan(p, ask=lambda _p: "Chhote print ka ek rule"); p.updated = "2026-10-23T13:13:52+00:00"; pieces.save(p, tmp_path)
+    monkeypatch.setattr(pipeline, "make", lambda *a, **k: (_ for _ in ()).throw(AssertionError("built again")))
+    monkeypatch.setattr(intro, "duration", lambda path: 9.9)
+    from engine import youtube
+    monkeypatch.setattr(youtube, "access_token", lambda ch, env=None: "t")
+    seen = {}
+    def find_after(pc, token, call=None, after=None):
+        seen["after"] = after; return "fresh77"
+    monkeypatch.setattr(intro, "existing_upload", find_after)
+    out = intro.redo_piece(p, _Deps(), tmp_path, notify=lambda t: None, transcribe=lambda c: p.topic["intro"]["text"].lower())
+    assert out == "adopted-intro" and seen["after"].isoformat().startswith("2026-10-23")
+    q = pieces.load(p.id, tmp_path)
+    assert q.status == "uploaded" and q.ids["yt_id"] == "fresh77" and q.ids["yt_id_replaced"] == "old123"
