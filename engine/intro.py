@@ -420,42 +420,71 @@ def request(piece, root: Path, notify, ask=_ask_claude, now: datetime | None = N
     return piece.topic["intro"]
 
 
+def before_upload(piece, root: Path, out_dir: Path, notify=None, now: datetime | None = None, transcribe=None, compose_fn=None, ask=_ask_claude) -> str:
+    """What to do with a finished piece: "compose" (his clip is in and checked: composed in place), "wait" (asked, before the deadline),
+    or "plain" (deadline passed, or a bad clip past the deadline)."""
+    now = now or datetime.now(timezone.utc)
+    notify = notify or (lambda t: None)
+    if piece.ids.get("intro_skipped"):
+        return "plain"
+    clip = clip_path(root, piece)
+    if _usable_clip(root, piece):
+        if not (piece.topic or {}).get("intro"):
+            piece.topic["intro"] = plan(piece, ask)
+        problems = check(clip, piece.topic["intro"], transcribe)
+        if not problems:
+            (compose_fn or compose)(piece, clip, out_dir)
+            piece.ids.setdefault("intro", {"clip": clip.name, "composed": now.isoformat(timespec="seconds")})
+            return "compose"
+        piece.ids["intro_rejected"] = _sha(clip)
+        notify(f"🎬 {piece.id}: the intro clip was not used: " + "; ".join(problems) + f". Send a new one with the caption intro {piece.id}"
+               + ("" if now < deadline_utc(piece) else "; the plain version goes out now."))
+    if now >= deadline_utc(piece):
+        piece.ids["intro_skipped"] = now.isoformat(timespec="seconds")
+        notify(f"🎬 {piece.id}: no intro clip by {_wat(deadline_utc(piece))}; the plain version is scheduled for its slot.")
+        return "plain"
+    request(piece, root, notify, ask, now)
+    return "wait"
+
+
 def _sha(path: Path) -> str:
     import hashlib
     return hashlib.sha1(Path(path).read_bytes()).hexdigest()[:16]
 
 
 def collect(piece, deps, root: Path, now: datetime | None = None, notify=None, transcribe=None, compose_fn=None) -> tuple:
-    """One waiting piece: ("uploaded-intro" | "uploaded-plain" | "waiting" | "rejected", piece)."""
-    from . import pipeline
+    """One waiting piece: ("uploaded-intro" | "uploaded-plain" | "waiting" | "rejected" | "rebuilt-<status>", piece). A piece whose plain
+    video is not on this machine (a long: out/**/long.mp4 is never in git) is rebuilt by the pipeline from the voice and picture caches,
+    which compose and upload at its end."""
+    from . import pipeline, youtube
     now = now or datetime.now(timezone.utc)
     notify = notify or (lambda t: None)
     out_dir = Path(root) / "out" / piece.id
     video = out_dir / ("reel.mp4" if piece.kind == "short" else "long.mp4")
     thumb = out_dir / "thumb.jpg"
-    clip = clip_path(root, piece)
-    p = (piece.topic or {}).get("intro") or {}
-    if clip.exists() and _sha(clip) != piece.ids.get("intro_rejected"):
-        problems = check(clip, p, transcribe)
-        if problems:
-            piece.ids["intro_rejected"] = _sha(clip)
-            notify(f"🎬 {piece.id}: the intro clip was not used: " + "; ".join(problems) + f". Send a new one with the caption intro {piece.id}"
-                   + ("" if now < deadline_utc(piece) else "; the plain version goes out now."))
-            pieces.save(piece, root)
-            if now < deadline_utc(piece):
-                return "rejected", piece
-        else:
-            (compose_fn or compose)(piece, clip, out_dir)
-            piece.ids.setdefault("intro", {"clip": clip.name, "composed": now.isoformat(timespec="seconds")})
-            pipeline.finish_upload(piece, deps, root, video, thumb, out_dir)
-            notify(f"🎬 {piece.id}: your intro is merged and the piece is scheduled for its slot.")
-            return "uploaded-intro", piece
-    if now >= deadline_utc(piece):
-        piece.ids["intro_skipped"] = now.isoformat(timespec="seconds")
-        pipeline.finish_upload(piece, deps, root, video, thumb, out_dir)
-        notify(f"🎬 {piece.id}: no intro clip by {_wat(deadline_utc(piece))}; the plain version is scheduled for its slot.")
-        return "uploaded-plain", piece
-    return "waiting", piece
+    if not (_usable_clip(root, piece) or now >= deadline_utc(piece)):
+        return "waiting", piece
+    if not video.exists():
+        old = piece.ids.get("yt_id")
+        piece.status = "drawn"                                     # script, facts and timings stay; voice and pictures come from the caches
+        pieces.save(piece, root)
+        piece = pipeline.make(piece, deps, root)
+        if piece.status == "uploaded" and old and piece.ids.get("yt_id") != old:
+            try:
+                youtube.delete(youtube.access_token(piece.channel), old)
+                piece.ids["yt_id_replaced"] = old
+                pieces.save(piece, root)
+            except Exception as e:
+                notify(f"🎬 {piece.id}: re-uploaded, but the earlier upload {old} could not be removed ({secrets.scrub(str(e))[:120]}).")
+        return f"rebuilt-{piece.status}", piece
+    action = before_upload(piece, root, out_dir, notify, now, transcribe, compose_fn)
+    if action == "wait":
+        pieces.save(piece, root)
+        return "rejected" if piece.ids.get("intro_rejected") else "waiting", piece
+    pipeline.finish_upload(piece, deps, root, video, thumb, out_dir)
+    notify(f"🎬 {piece.id}: " + ("your intro is merged and the piece is scheduled for its slot." if action == "compose"
+                               else "the plain version is scheduled for its slot."))
+    return ("uploaded-intro" if action == "compose" else "uploaded-plain"), piece
 
 
 def thumb_path(root: Path, piece) -> Path:
@@ -483,7 +512,8 @@ def set_thumbs(root: Path, env=None, notify=None, set_thumb=None, token_for=None
         ok = (set_thumb or youtube.set_thumbnail)(tok, p.ids["yt_id"], jpg)
         if ok:
             p.ids["thumb_sha"] = _sha(jpg)
-            shutil.copy2(jpg, Path(root) / "out" / p.id / "thumb.jpg") if (Path(root) / "out" / p.id).exists() else None
+            if (Path(root) / "out" / p.id).exists():
+                shutil.copy2(jpg, Path(root) / "out" / p.id / "thumb.jpg")
             pieces.save(p, root)
             notify(f"🖼 {p.id}: your thumbnail is set on YouTube ({p.ids['yt_id']}).")
         else:
@@ -611,6 +641,11 @@ def redo_piece(piece, deps, root: Path, env=None, notify=None, transcribe=None, 
         notify(f"🎬 {piece.id}: the intro clip was not used: " + "; ".join(problems) + f". Send a new one with the caption intro {piece.id}.")
         return "rejected"
     out_dir = Path(root) / "out" / piece.id
+    plain_video = out_dir / ("reel.mp4" if piece.kind == "short" else "long.mp4")
+    if not plain_video.exists():                                    # a long: rebuilt from the caches, composed and re-uploaded by collect()
+        pieces.save(pieces.transition(piece, "intro-wait", "re-made from the caches to carry the founder's intro"), root)
+        action, piece = collect(piece, deps, root, None, notify, transcribe, compose_fn)
+        return action
     (compose_fn or compose)(piece, clip, out_dir)
     piece.ids.setdefault("intro", {"clip": clip.name, "composed": datetime.now(timezone.utc).isoformat(timespec="seconds")})
     old = piece.ids.get("yt_id")
