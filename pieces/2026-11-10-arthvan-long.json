@@ -1,0 +1,811 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "archaeology",
+   "number": 3.0,
+   "quote": "It would appear that the site was settled in the 3rd century B.C. at the time that the emperor Asoka, the grandson of Chandragupta, who had defeated the Macedonian invaders and founded the Maurya dynasty, was converted to Buddhism.",
+   "source_date": "1989",
+   "source_name": "UNESCO",
+   "source_url": "https://whc.unesco.org/en/list/524/",
+   "text": "The Great Stupa at Sanchi was originally commissioned by Mauryan Emperor Ashoka in the 3rd century BCE as a brick hemispherical dome covering relics of the Buddha.",
+   "unit": "BCE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1818.0,
+   "quote": "Since the fourteenth century Sanchi remained deserted and uncared for till 1818 when General Taylor rediscovered the site.",
+   "source_date": "2011",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/buddhist-monuments-at-sanchi/",
+   "text": "British cavalry officer General Henry Taylor documented and brought modern archaeological attention to the abandoned ruins of Sanchi in 1818.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1822.0,
+   "quote": "In 1822, Maddock clumsily breached the Great Stupa at Sanchi, although he was not able to reach the center, and he then abandoned.",
+   "source_date": "1854",
+   "source_name": "Alexander Cunningham, The Bhilsa Topes",
+   "source_url": "https://en.wikipedia.org/wiki/Thomas_Herbert_Maddock",
+   "text": "In 1822, British political agent Herbert Maddock breached the dome of the Great Stupa from top to foundation while hunting for treasure, causing extensive structural destruction.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1912.0,
+   "quote": "Sir John Marshall established an archaeological museum in 1919, which was later transformed into the present site museum at Sanchi.",
+   "source_date": "1940",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/buddhist-monuments-at-sanchi/",
+   "text": "Between 1912 and 1919, Director General of Archaeology Sir John Marshall carried out the systematic reconstruction and conservation of Sanchi, financially supported by Sultan Jahan Begum of Bhopal.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 36.6,
+   "quote": "The original brick stupa was encased in a stone facing that nearly doubled its diameter to 36.6 metres and increased its height to 16.5 metres.",
+   "source_date": "1989",
+   "source_name": "UNESCO",
+   "source_url": "https://whc.unesco.org/en/list/524/",
+   "text": "The outer stone casing expanded the Great Stupa to a diameter of 36.6 metres and a dome height of 16.46 metres.",
+   "unit": "metres"
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "An inscription on the Southern Gateway records that it was executed by the ivory carvers of Vidisha.",
+   "source_date": "1940",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/buddhist-monuments-at-sanchi/",
+   "text": "A dedicatory Brahmi inscription on the Southern Gateway reveals that its stone carvings were made by the guild of ivory carvers from Vidisha.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "The pillar bears an edict of Ashoka warning against schism in the Buddhist church.",
+   "source_date": "1940",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/buddhist-monuments-at-sanchi/",
+   "text": "The Ashokan pillar erected near the Southern Gateway bears an edict declaring that any monk or nun who breaks the unity of the Buddhist order shall be expelled from the Sangha.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "While halting at the city of Vedisa, he dwelt in the house of a merchant and won the hand of his daughter, the noble lady Devi.",
+   "source_date": "1912",
+   "source_name": "Mahavamsa, Chapter 13",
+   "source_url": "https://en.wikipedia.org/wiki/Mahavamsa",
+   "text": "The Sri Lankan chronicle Mahavamsa states that Emperor Ashoka married Devi, a merchant's daughter from Vidisha, who founded the monastery at Vedisagiri near modern Sanchi.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": 84000.0,
+   "quote": "King Asoka took the relics of the Buddha, had eighty-four thousand caskets made of gold, silver, crystal, and lapis lazuli, and distributed them among eighty-four thousand stupas.",
+   "source_date": "1983",
+   "source_name": "Ashokavadana",
+   "source_url": "https://en.wikipedia.org/wiki/Ashokavadana",
+   "text": "The Sanskrit Buddhist narrative Ashokavadana records that Emperor Ashoka redistributed bodily relics from seven pre-existing stupas into 84,000 stupas across his empire.",
+   "unit": "count"
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "Susan Huntington challenged the traditional aniconic interpretation of early Buddhist art, arguing that scenes previously read as life events of the Buddha actually depict worship of sacred spots and relic shrines.",
+   "source_date": "1990",
+   "source_name": "Susan L. Huntington, Art Journal",
+   "source_url": "https://en.wikipedia.org/wiki/Aniconism_in_Buddhism",
+   "text": "Art historians disagree over the narrative panels of Sanchi, where Alfred Foucher asserted that empty thrones and riderless horses signified a strict doctrinal ban on depicting the Buddha's physical body, whereas Susan Huntington argued these reliefs represent historical pilgrimage worship of sacred shrines rather than aniconic life events.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "Local tradition often claims that the stupa marks the exact site of Ashoka's wedding to Devi of Vidisha, though archaeological epigraphy provides no such record.",
+   "source_date": "2020",
+   "source_name": "Local Oral Tradition",
+   "source_url": "https://whc.unesco.org/en/list/524/",
+   "text": "Local lore recounts that Ashoka deliberately chose Sanchi hill because it served as the wedding venue where he married Queen Devi, though no contemporary Mauryan inscription identifies her at the site.",
+   "unit": null
+  }
+ ],
+ "id": "2026-11-10-arthvan-long",
+ "ids": {
+  "budget": {
+   "day": "2026-11-04",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 58.5,
+   "usd": 0.282832,
+   "voice": 42
+  },
+  "drafts": 1,
+  "intro_sent": "2026-11-04T17:46:51+00:00"
+ },
+ "kind": "long",
+ "publish_day": "2026-11-10",
+ "reasons": [
+  "waiting for the founder's intro clip until 10 Nov 10:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "1822 mein Sanchi stupa ko khazane ke liye cheera gaya.\nAshok ka stupa, Vidisha ki Devi ki katha, haathi daant ke kaarigaron ke darwaze.\nAur ek raaz jo aaj bhi khula hai.\nAapko kya lagta hai, andar Buddha ki asthiyan thi ya nahi?\nUs dost ko bhejo jo Sanchi ko bas ek gol gumbad samajhta hai.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#IndianHistory",
+     "#Archaeology",
+     "#AncientIndia",
+     "#Itihaas",
+     "#Rahasya",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "1822 mein Sanchi stupa ko khazane ke liye cheera gaya. Afsar beech tak pahunch hi nahi paaya. Toh sawaal aaj bhi khula hai: kya Sanchi ke bade stupa ke beech mein Buddha ki asthiyan thi? Aap kya sochte ho? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Stupa mein gaddha kisne kiya?",
+     "00:00 Ashok aur Vidisha ki Devi",
+     "00:00 84,000 stupon ki katha",
+     "00:00 Jungle mein bhula Sanchi",
+     "00:00 Marshall aur Begum ne phir joda",
+     "00:00 Patthar ke darwazon ka raaz",
+     "00:00 Vidwan kyon asahmat hain",
+     "00:00 Andar kya tha?",
+     "00:00 Aaj Sanchi mein kya dekhein",
+     "00:00 Aapka sawaal, agla safar"
+    ],
+    "description": "Sanchi ke bade stupa ko ek angrez afsar ne khazane ke liye cheer diya tha. Granth kya kehte hain, khudai mein kya mila, aur vidwan aaj bhi kahan asahmat hain, sab sabut ke saath. Aur sabse bada sawaal: kya iske beech mein Buddha ki asthiyan thi? Us dost ko bhejo jo Sanchi ko bas ek gol gumbad samajhta hai.",
+    "tags": [
+     "Sanchi",
+     "Sanchi Stupa",
+     "Ashoka",
+     "Samrat Ashok",
+     "Buddhist heritage",
+     "Madhya Pradesh",
+     "Vidisha",
+     "ASI",
+     "UNESCO",
+     "John Marshall",
+     "Mahavamsa",
+     "Indian history",
+     "archaeology",
+     "Sabut ke saath"
+    ],
+    "title": "Sanchi Stupa 1822 mein kyon toda gaya?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "1822",
+    "line": "Khazane ke liye stupa mein gehri khudai",
+    "source": "Alexander Cunningham, The Bhilsa Topes"
+   },
+   {
+    "big_number": "84,000",
+    "line": "Ashokavadana ke mutabik itne stupa banwaye gaye",
+    "source": "Ashokavadana"
+   },
+   {
+    "big_number": "36.6 metre",
+    "line": "Patthar ki parat ke baad stupa ka vyas",
+    "source": "UNESCO"
+   },
+   {
+    "big_number": "1912",
+    "line": "Sir John Marshall ne marammat shuru ki",
+    "source": "ASI"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Aapko kya lagta hai, Sanchi stupa ke beech mein Buddha ki asthiyan thi ya nahi?",
+  "hook": "1822 mein Sanchi stupa ko khazane ke liye cheera gaya.",
+  "scenes": [
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Dramatic drawn panel at stormy dusk: the huge hemispherical stone dome of the Great Stupa at Sanchi with a deep jagged breach torn into its top, labourers with ropes and baskets hauling stones out, a colonial-era officer in a 19th century coat watching from the rim, lanterns glowing in the dark hole, dark clouds, tense mood, no text",
+     "type": "art"
+    },
+    "vo": "1822 mein Sanchi stupa ko khazane ke liye cheera gaya. Ek angrez afsar ne gumbad ke upar se khudai shuru karwayi. Use laga, andar sona chandi chhupa hoga. Mazdoor patthar hatate gaye, gaddha gehra hota gaya. Par woh beech tak pahunch hi nahi paaya. Aur kaam adhoora chhodkar chala gaya."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: the broken side of an ancient stone dome with scattered carved blocks rolling down a grassy hill, a 19th century scholar sketching the damage in a notebook in the foreground, overcast sky, sombre mood, no text",
+     "type": "art"
+    },
+    "vo": "Us afsar ka naam tha Herbert Maddock, ek British political agent. Yeh baat Alexander Cunningham ne apni kitaab mein darj ki. Gumbad mein bada ghaav ban gaya, patthar bikhar gaye. Jo stupa sadiyon se khada tha, woh ek lalach se ghayal hua. Aur sawaal yahin se shuru hota hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn cutaway panel of a giant stone stupa showing its hidden inner core in shadow, a small glowing empty niche at the very centre surrounded by darkness and a question-like ring of light, mysterious mood, no text",
+     "type": "art"
+    },
+    "vo": "Kya is stupa ke beech mein Buddha ki asthiyan thi? Asthiyan yaani jalne ke baad bachi haddiyan, jo pavitra maani jaati hain. Ya yeh gumbad bina kisi avshesh ke hi banaya gaya tha? Aaj tak koi yakeen se nahi jaanta. Is video mein hum sabut ke saath chalenge, ek ek parat kholkar."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "explaining_front",
+     "type": "avatar"
+    },
+    "vo": "Yeh kahani ek pahadi ki hai, Madhya Pradesh ke Sanchi ki. Pehle dekhenge granth kya kehte hain. Phir dekhenge khudai mein kya mila. Aur aakhir mein, vidwan kahan aapas mein asahmat hain. Har panel par ek chip dikhega. Usse pata chalega, yeh granth hai, sabut hai ya sirf kahani."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel of ancient India: workers in simple dhotis laying red bricks to form a rounded dome on a green hilltop, a royal canopy and elephants waiting at a distance, warm morning light, hopeful mood, no text",
+     "type": "art"
+    },
+    "vo": "Pehle samjhiye, stupa hota kya hai. Stupa yaani ek gol gumbad, jiske andar pavitra avshesh rakhe jaate hain. UNESCO ke mutabik, Sanchi ka bada stupa Samrat Ashok ne banwaya. Yeh 3rd century BCE ki baat hai, yaani Isa se bhi sadiyon pehle. Shuruaat mein yeh eenton ka ek gumbad tha."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a young prince in ancient Indian travelling clothes arriving at a prosperous merchant's courtyard house in an old market town, oil lamps, bullock carts outside, evening glow, gentle mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab chaliye granth ki taraf. Sri Lanka ka ek purana granth hai, Mahavamsa. Yeh wahan ke rajaon aur Buddh dharm ka itihaas likhta hai. Isme ek prem kahani hai. Yuva Ashok safar par Vidisha shehar mein ruke the. Woh ek vyapari ke ghar mehmaan bane."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a graceful noblewoman seen from behind standing on a hill, looking at monks building a small stone monastery among trees, a town visible in the valley below, soft golden light, serene mood, no text",
+     "type": "art"
+    },
+    "vo": "Mahavamsa kehta hai, wahin Ashok ne vyapari ki beti se vivah kiya. Uska naam tha Devi, granth use kulin mahila kehta hai. Vidisha, Sanchi se bahut paas ka shehar hai. Granth ke mutabik, Devi ne Vedisagiri par ek vihar banwaya. Vihar yaani bhikshuon ke rehne ki jagah."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a quiet hilltop at twilight with rows of small oil lamps, robed monks seated in meditation under trees, distant plains fading into blue haze, peaceful mood, no text",
+     "type": "art"
+    },
+    "vo": "Granth ka Vedisagiri aaj ke Sanchi ke paas maana jaata hai. Toh kahani mein ek raja hai, ek vyapari ki beti hai. Aur ek pahadi hai jahan shaanti basti thi. Socho, bahut purani ek shaam, pahadi par diye jal rahe hain. Bhikshu chupchaap dhyan mein baithe hain."
+   },
+   {
+    "facts_used": [
+     10
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an elderly village grandmother telling a story to children around a small fire at the foot of a hill, a faint dreamlike vision of a royal wedding procession in the smoke above, warm night mood, no text",
+     "type": "art"
+    },
+    "vo": "Yahan se ek lok kahani judti hai. Gaon ke log kehte hain, Ashok ne Sanchi isliye chuna. Kyonki yahi woh pahadi thi jahan unka Devi se vivah hua. Par dhyan rakhiye, yeh sirf lok kahani hai. Maurya kaal ka koi shilalekh Devi ko yahan nahi dikhata. Shilalekh yaani patthar par khuda sandesh."
+   },
+   {
+    "facts_used": [
+     7,
+     10
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Toh granth ek prem kahani sunata hai. Lok kahani use shaadi ki jagah bana deti hai. Aur patthar abhi tak chup hain. Yahi farq yaad rakhiye, poori video mein kaam aayega. Ab ek aur granth, jo ek aur badi baat kehta hai. Ek aisi sankhya, jo sunkar sar ghoom jaaye."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: royal attendants carefully opening an old weathered stupa by torchlight, a small sealed casket being lifted out, a king seen from behind watching with folded hands, reverent mood, no text",
+     "type": "art"
+    },
+    "vo": "Yeh granth hai Ashokavadana, Sanskrit mein likhi Ashok ki katha. Avadana yaani punya ke kaamon ki kahani. Isme likha hai, Ashok ne Buddha ke avshesh ikattha karwaye. Yeh avshesh 7 purane stupon mein rakhe hue the. Ashok ne un stupon ko khulwaya."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: rows of shining small caskets of gold, silver, clear crystal and deep blue stone on a long table, beyond the window an endless landscape dotted with countless small stupas to the horizon, grand awe-filled mood, no text",
+     "type": "art"
+    },
+    "vo": "Phir granth kehta hai, sone, chandi, crystal aur lajward ki dibbiyan banwayi gayi. Lajward yaani ek gehra neela keemti patthar. Avsheshon ko in dibbiyon mein baanta gaya. Aur poore samrajya mein 84,000 stupa banwaye gaye. Socho, ek hi raja, aur itne saare stupa."
+   },
+   {
+    "facts_used": [
+     8,
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn split panel: on one side an old palm-leaf manuscript glowing on a wooden stand, on the other side the ancient brick core of a stupa exposed in an excavation trench, both bathed in the same warm light, thoughtful mood, no text",
+     "type": "art"
+    },
+    "vo": "Yaad rakhiye, yeh granth ki baat hai, isliye chip par likha hai scripture. Granth ek bhavya tasveer dikhata hai. Par sankhya ka sabut granth ke bahar dhoondhna padta hai. Haan, Sanchi ka eenton wala purana gumbad Ashok ke zamane ka maana jaata hai. Yahan granth aur patthar ek jagah milte hain."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab sawaal yeh hai, itna bada stupa kho kaise gaya? Kyonki ek zamane mein Sanchi ko log bhool gaye. Pahadi par jhaadiyan ug aayin, patthar gir gaye. Aur phir aaye ek angrez ghudsawar afsar. Yahan se shuru hoti hai khoj ki kahani."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an overgrown jungle hill with a massive dome half hidden under vines and bushes, a cavalry officer on horseback in an early 19th century uniform pushing through the thicket, shafts of sunlight, discovery mood, no text",
+     "type": "art"
+    },
+    "vo": "ASI yaani Bharatiya Puratattva Survekshan. Yeh sarkari sanstha purani dharohar sambhalti hai. ASI ke mutabik, Sanchi sadiyon tak veeran pada raha. Na koi pooja karne aata, na koi dekhbhaal karta. Phir 1818 mein General Taylor yahan pahunche. Woh British ghudsawar fauj ke afsar the."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel from behind a horse rider: a vast earth-covered dome rising ahead, toppled pillars and carved stone gateways leaning among weeds, birds flying off, sense of wonder, no text",
+     "type": "art"
+    },
+    "vo": "Socho, ghode par ek afsar jhaadiyon ko hatata hua upar chadhta hai. Saamne ek vishal gol gumbad, aadha mitti mein dhanka. Aas paas tute khambe aur nakkashidaar darwaze. Taylor ne is jagah ko darj kiya. Aur duniya ki nazar phir Sanchi par padi."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a colonial officer pointing down at the top of a stone dome while labourers swing pickaxes, dust clouds rising, a dark gaping hole forming, harsh midday light, ominous mood, no text",
+     "type": "art"
+    },
+    "vo": "Par nazar padna hamesha achha nahi hota. Kuch angrez aise bhi aaye, jinhe itihaas nahi, khazana chahiye tha. Aur phir aaya 1822, jiska zikr humne shuru mein kiya. Herbert Maddock ne gumbad mein upar se gehri khudai karwayi. Maqsad tha, andar chhupa khazana nikalna."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an abandoned excavation on a stupa dome, tools left lying, a deep unfinished shaft stopping short of a faintly glowing centre, collapsed stone facing on one side, empty and silent mood, no text",
+     "type": "art"
+    },
+    "vo": "Cunningham ne baad mein likha, yeh khudai bhadde tareeke se hui. Gumbad mein bada sa ghaav ban gaya. Bahar ki patthar ki parat bhi kai jagah dhah gayi. Aur sabse ajeeb baat, Maddock beech tak pahunch hi nahi paaya. Woh kaam adhoora chhodkar chala gaya."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: three faint glowing paths leading into the dark heart of a cracked stone dome, each ending in shadow, moonlit night, mysterious questioning mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab socho, agar beech mein sach mein asthiyan thi. Toh kya woh is khudai mein bikhar gayi? Ya woh aaj bhi gumbad ke andar hain? Ya wahan kabhi kuch tha hi nahi? Yeh sawaal hum aakhir mein phir uthayenge. Pehle dekhte hain, toota stupa phir khada kaise hua."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Toota hua stupa, bikhre patthar, aur jungle. Kai saal tak Sanchi aise hi pada raha. Phir ek angrez puratattvavid aur Bhopal ki ek begum ne milkar kaam uthaya. Yeh is kahani ka sabse sukoon bhara hissa hai. Dekhiye kaise."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an early 20th century archaeologist in a pith helmet with measuring rods and drawings spread on a table at the foot of a damaged stupa, surveyors with tripods around, bright clear morning, purposeful mood, no text",
+     "type": "art"
+    },
+    "vo": "Unka naam tha Sir John Marshall, us waqt Bharat mein puratattva vibhag ke mukhiya. Puratattva yaani zameen se mili purani cheezon ka vigyan. 1912 mein Marshall ne Sanchi par vyavasthit kaam shuru kiya. Vyavasthit yaani naap jokh kar, record banakar, dheere dheere."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a dignified royal lady in a veiled traditional robe seen from a distance in a palace hall handing over a sealed chest to an official, a painting of a stupa on the wall, elegant warm mood, no text",
+     "type": "art"
+    },
+    "vo": "Is kaam ka paisa diya Bhopal ki Sultan Jahan Begum ne. Ek shasak ne apni dharohar bachane ke liye khazana khola. Ab is ulte pher ko dekhiye. Ek ne khazane ke liye stupa toda. Doosre ne stupa ke liye khazana diya."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: workers with wooden scaffolding and pulleys lifting numbered carved stones back into place on a great dome, a supervisor checking plans, dust and sunlight, patient restoring mood, no text",
+     "type": "art"
+    },
+    "vo": "Marshall ki team ne gire hue pattharon ko ek ek karke pehchana. Toote hisson ko jodkar gumbad ko phir se majboot kiya. Jo bikhra tha, use uski jagah lautaya gaya. Conservation yaani jo bacha hai, use aur girne se bachana. Yeh kaam saalon chala."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a small early 20th century stone museum building near the foot of a green hill, carved fragments displayed on plinths inside visible through open doors, the restored stupa on the hilltop behind, calm mood, no text",
+     "type": "art"
+    },
+    "vo": "Aur 1919 mein Marshall ne yahan ek puratattva museum bhi banaya. ASI ke mutabik, wahi aage chalkar aaj ka Sanchi site museum bana. Matlab Sanchi ki kahani dekhne ke liye aapko door nahi jaana. Yeh baat aakhir mein kaam aayegi."
+   },
+   {
+    "facts_used": [
+     4,
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn cutaway panel: a small red brick dome inside a much larger grey stone shell, layers clearly visible like rings, ancient masons fitting stone blocks around the outside, instructive mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab stupa ko dhyan se dekhiye. Andar Ashok ke zamane ka eenton wala gumbad hai. Baad mein uske upar patthar ki ek moti parat chadhayi gayi. UNESCO ke mutabik, isse stupa ki chaudai kaafi badh gayi. Jaise purane ghar par plaster nahi, poori nayi deewar chadha di jaaye."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: tiny human figures walking around the base of the massive restored stone stupa to show its enormous scale, a stone railing circling it, wide blue sky, awe-inspiring mood, no text",
+     "type": "art"
+    },
+    "vo": "Aaj iska vyas 36.6 metre hai. Vyas yaani ek kinaare se doosre kinaare tak ki seedhi doori. Aur gumbad ki oonchai lagbhag 16.5 metre hai. Yaani ek oonchi imaarat jitna. Itna bada gumbad, bina cement, bina machine. Sochiye, kitne haathon ne patthar dhoye honge."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a towering carved stone gateway with crossbeams full of tiny elephants, trees, kings and city scenes, the great dome visible through it, golden afternoon light, rich detailed mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab stupa ke aas paas ke darwaze dekhiye. Inhe torana kehte hain, yaani nakkashidaar patthar ka mukhya dwar. In par kahaniyon ke drishya khude hain, haathi, ped, raja, nagar. Dakshini darwaze par Brahmi lipi mein ek lekh hai. Brahmi yaani Bharat ki ek bahut purani lipi."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: ancient craftsmen who normally carve ivory now chiselling delicate patterns into a sandstone beam, fine tools laid out, a small ivory carving beside them for comparison, focused workshop mood, no text",
+     "type": "art"
+    },
+    "vo": "Woh lekh ek chaukane wali baat batata hai. Yeh nakkashi Vidisha ke haathi daant ke kaarigaron ne ki thi. Haathi daant par baarik kaam karne wale log, patthar par utre. Shayad isiliye yeh nakkashi itni naazuk lagti hai. Jaise patthar nahi, kisi ne daant taraasha ho."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a tall polished ancient stone pillar standing near a carved gateway, rows of ancient script carved on its surface without readable letters, a monk reading it quietly, soft light, solemn mood, no text",
+     "type": "art"
+    },
+    "vo": "Dakshini darwaze ke paas ek aur sabut khada hai, Ashok ka khamba. Is par Ashok ka ek edict khuda hai. Edict yaani raja ka likhit farmaan, jo sabke liye hota tha. ASI ke mutabik, yeh farmaan Sangha mein phoot ke khilaaf chetavni hai."
+   },
+   {
+    "facts_used": [
+     6,
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a gathering of robed monks and nuns seated in a circle before an ancient pillar on a hill, an elder raising a hand in calm instruction, harmonious mood, no text",
+     "type": "art"
+    },
+    "vo": "Sangha yaani bhikshuon aur bhikshuniyon ka samooh. Farmaan kehta hai, jo bhikshu ya bhikshuni Sangha ko todega, use bahar kiya jaayega. Socho, ek samrat patthar par likhwa raha hai, ekta banaye rakho. Yeh woh jagah hai jahan granth aur shilalekh dono Ashok ka naam lete hain."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "thinking",
+     "type": "avatar"
+    },
+    "vo": "Ab aate hain sabse dilchasp behas par. Darwazon ki nakkashi mein ek ajeeb baat hai. Kai drishyon mein Buddha ka sharir dikhta hi nahi. Unki jagah sirf nishaan hain. Khaali singhasan, bina sawaar ka ghoda, pairon ke nishaan, ek chakra."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: close view of a carved stone relief showing an empty throne under a tree and a riderless horse with a parasol above, an old scholar in early 20th century clothes studying it with a magnifying glass, contemplative mood, no text",
+     "type": "art"
+    },
+    "vo": "Vidwan Alfred Foucher ka kehna tha, yeh jaan boojhkar kiya gaya. Unke mutabik, Buddha ka sharir banane par dharmik rok thi. Isliye kalakaron ne sirf nishaan banaye. Is soch ko aniconism kehte hain. Aniconism yaani pooja ke roop ko murti mein nahi, sirf sanket se dikhana."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a modern woman scholar seen from behind examining a carved relief of ancient pilgrims bowing before a sacred tree shrine, research papers in her hand, museum lighting, thoughtful mood, no text",
+     "type": "art"
+    },
+    "vo": "Phir aayi kala itihaaskar Susan Huntington. Unhone yeh baat Art Journal ke ek lekh mein rakhi. Unka kehna tha, yeh Buddha ke jeevan ke drishya hain hi nahi. Yeh us zamane ke log hain, jo pavitra jagahon par pooja karne aaye. Yaani patthar par teerthyatra ka drishya."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn split panel: the same carved stone relief of an empty throne shown twice, LEFT lit with a soft halo suggesting an unseen presence, RIGHT lit to highlight the bowing worshippers around it, balanced neutral mood, no text",
+     "type": "art"
+    },
+    "vo": "Toh ek hi panel, do alag padhaai. Foucher kehte hain, yahan Buddha hain, bas dikhaye nahi gaye. Huntington kehti hain, yahan bhakt hain, ek pavitra jagah ki pooja karte hue. Dono bade vidwan hain, dono ke paas tark hain. Faisla aaj bhi khula hai."
+   },
+   {
+    "facts_used": [
+     8,
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: the great stupa at night under stars, a soft beam of moonlight falling on its dome, the inner core imagined as a dark sealed chamber, deep mystery mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab us sawaal par lautte hain jahan se shuru kiya tha. Kya bade stupa ke beech mein Buddha ki asthiyan thi? Granth kehte hain, Ashok ne avshesh stupon mein baante. Par bade stupa ke beech se aisa koi sabut aaj hamare saamne nahi hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn split panel: LEFT a lantern-lit 19th century treasure dig with scattered debris, RIGHT the same dome whole and calm with pilgrims circling it in quiet devotion, contrasting moods, no text",
+     "type": "art"
+    },
+    "vo": "Do raaste hain, aur dono khule hain. Pehla, asthiyan thi, jo angrez zamane ki shauqiya khudaiyon mein kho gayi. Shauqiya yaani bina training ke, sirf shauk ya lalach mein khodna. Doosra, yeh gumbad bina kisi sharirik avshesh ke hi banaya gaya. Shayad yeh yaad aur shraddha ka smarak tha."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a smaller stupa beside the great one with a small stone relic casket being carefully uncovered by an archaeologist with a brush, the great dome looming behind in shadow, intriguing mood, no text",
+     "type": "art"
+    },
+    "vo": "Ek aur baat. Aas paas ke chhote stupon mein Buddha ke shishyon ke avshesh ki dibbiyan mili hain. Shishya yaani unke kareebi chele. Toh is pahadi par avshesh rakhne ki parampara thi, yeh saaf hai. Bas bade stupa ka dil abhi bhi ek raaz hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "explaining_front",
+     "type": "avatar"
+    },
+    "vo": "Toh agar aap Sanchi jaayein, toh kya dekhein? Yeh jagah Madhya Pradesh mein hai, Vidisha ke paas. UNESCO ne ise World Heritage yaani vishwa dharohar ki suchi mein rakha hai. Matlab poori duniya ise insaaniyat ki saajhi virasat maanti hai."
+   },
+   {
+    "facts_used": [
+     4,
+     5,
+     6,
+     9
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: present-day visitors walking around the restored great stupa and pausing at a carved gateway, a family pointing at the relief panels, bright sunny day, inviting mood, no text",
+     "type": "art"
+    },
+    "vo": "Sabse pehle bada stupa, aur uske paas ke nakkashidaar darwaze. Dakshini darwaze par woh Brahmi lekh dhoondhiye, kaarigaron wala. Paas mein Ashok ke khambe ki jagah bhi dekhiye. Darwazon ke drishyon ko dhyan se dekhiye. Khaali singhasan dikhe, toh khud sochiye. Aap Foucher ke saath hain ya Huntington ke?"
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: inside a quiet museum hall with ancient carved stone fragments and a polished pillar capital on display, a young visitor gazing at them, the hill and stupa visible through a window, reflective mood, no text",
+     "type": "art"
+    },
+    "vo": "Phir site museum zaroor jaaiye, jiski neev Marshall ne rakhi thi. Wahan khudai ki cheezein aapko kareeb se dikhengi. Aur ek pal ruk kar sochiye. Ek angrez ne yahan khazana dhoondha, ek begum ne yahan khazana lagaya. Wahi pahadi, do bilkul alag niyat."
+   },
+   {
+    "facts_used": [
+     9,
+     2
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "thinking",
+     "type": "avatar"
+    },
+    "vo": "Ab aapki baari. Humne granth dekhe, lok kahani suni, aur khudai ke sabut dekhe. Humne dekha vidwan kahan asahmat hain. Ab sawaal aapse hai, aur jawab aapki samajh ka hai. Koi sahi galat nahi, bas aapki apni soch."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "end_smile",
+     "type": "avatar"
+    },
+    "vo": "Agli baar hum chalenge samundar ke neeche, Dwarka ki khoj par. Wahan gotakhor hain, yaani paani ke andar utarkar khoj karne wale log. Wahan bhi granth hain aur behas bhi. Tab tak comment mein bataiye. Aapko kya lagta hai, Sanchi stupa ke beech mein Buddha ki asthiyan thi ya nahi?"
+   }
+  ],
+  "thumbnail": {
+   "name": "SANCHI",
+   "name_hi": "साँची",
+   "scene": "The giant stone dome of the Sanchi stupa at stormy dusk with a deep jagged hole torn into its top, broken stones tumbling down the side and a lantern glowing deep inside the dark breach.",
+   "words": [
+    "84,000",
+    "SECRET?"
+   ],
+   "words_hi": [
+    "84,000",
+    "सीक्रेट?"
+   ]
+  },
+  "title": "Sanchi Stupa ke andar *asthiyan* thi? 🤯"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  17.97,
+  34.06,
+  49.83,
+  68.2,
+  86.53,
+  102.38,
+  120.75,
+  138.56,
+  158.33,
+  175.34,
+  191.79,
+  212.24,
+  230.81,
+  246.74,
+  266.63,
+  283.44,
+  302.57,
+  316.5,
+  333.63,
+  348.96,
+  365.61,
+  379.46,
+  394.79,
+  408.84,
+  427.01,
+  447.02,
+  464.35,
+  481.0,
+  497.05,
+  515.7,
+  531.27,
+  549.4,
+  565.25,
+  580.98,
+  594.07,
+  611.96,
+  629.29,
+  645.18,
+  663.43,
+  679.16,
+  695.29
+ ],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "UNESCO whc.unesco.org",
+   "en.wikipedia.org"
+  ],
+  "hooks": [
+   "2,300 saal purana stupa jise angrezon ne phir se joda?",
+   "Ashok ne yahan kya chhupaya?",
+   "Sanchi ke darwazon par kaun si kahaniyan?"
+  ],
+  "id": "sanchi-stupa#long",
+  "intro": {
+   "aspect": "16:9",
+   "bridge": "",
+   "closing": "Aaiye isko samajhte hain.",
+   "prompt": "16:9 landscape, 1920x1080, exactly 10 seconds, natural and cinematic. Setting: a museum gallery with a sandstone sculpture behind glass, dim gallery light, one spotlight. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] seated on a stool, elbows on knees, leaning in, close and conversational, wearing a maroon sweater over a white collar. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, a small head tilt and a raised finger; on the second line, both hands open, palms down, settling; on \"Aaiye isko samajhte hain\", a nod and a step closer. Prop: a printed photograph or old map of the place, held up to the camera for a moment. Camera: eye level, slow push-in from mid-shot to medium close-up over the 10 seconds. @SGMythWorld watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. Export at 1920x1080.",
+   "question": "1822 mein Sanchi stupa ko khazane ke liye cheera gaya.",
+   "text": "1822 mein Sanchi stupa ko khazane ke liye cheera gaya. Aaiye isko samajhte hain.",
+   "words": 14
+  },
+  "notes": "Buddhist heritage; archaeology lane.",
+  "place": "Sanchi, Madhya Pradesh",
+  "priority": 1,
+  "proven_short": "2026-10-31-arthvan-short",
+  "proven_views": 1986,
+  "target_minutes": 14,
+  "title_hi": "Sanchi, Ashok ka stupa",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-11-04T17:46:54+00:00",
+ "writer": "claude"
+}
