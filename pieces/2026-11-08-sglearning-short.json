@@ -45,6 +45,7 @@
    "voice": 9
   },
   "drafts": 1,
+  "intro_sent": "2026-11-04T10:49:45+00:00",
   "out_sha": "cb6e9dd91d6d575b170a68d74e88e2811a4d6d30",
   "yt_id": "1oCTGR1Jz8A"
  },
@@ -227,6 +228,15 @@
   43.96
  ],
  "topic": {
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "Tamatar mehnga hua, aur aapki EMI badal sakti hai.",
+   "closing": "Aaiye isko samajhte hain.",
+   "prompt": "9:16 vertical, 1080x1920, exactly 10 seconds, natural and cinematic. Setting: a bright modern Indian living room in the morning, clean background with depth (plant, bookshelf, softly blurred). Lighting: soft window key light from the left on the face, warm fill from the right, gentle rim light on the hair; no harsh shadows. SG [locked] seated at a wooden table, slightly angled, leaning toward camera, navy blazer over white tee. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, eyebrows lift and one open palm turns up; on the second line, a slow nod and a half-smile, hand resting on the table; on \"Aaiye isko samajhte hain.\", a small \"come with me\" gesture toward the viewer. Prop: a bank passbook and a pen. Camera: eye level, slow push-in from mid-shot to medium close-up over the 10 seconds. No watermark, no captions, no subtitles, no on-screen text of any kind (the channel badge and captions are added afterwards). Export at 1080x1920.",
+   "question": "Aapke ghar ka sabzi bill RBI ka byaaj tay karta hai?",
+   "text": "Aapke ghar ka sabzi bill RBI ka byaaj tay karta hai? Tamatar mehnga hua, aur aapki EMI badal sakti hai. Aaiye isko samajhte hain.",
+   "words": 24
+  },
   "layers": false,
   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63909",
   "look": "claymation",
