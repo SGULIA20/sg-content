@@ -11,6 +11,10 @@ on:
         description: 'piece id to re-upload with its intro clip (engine/intro.py --redo), blank = normal poll + sweep'
         required: false
         default: ''
+      uploads:
+        description: 'piece id: list its private scheduled uploads on YouTube (engine/intro.py --uploads), no sweep'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -51,10 +55,18 @@ jobs:
           YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
           YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
         run: python -m engine.studio
+      - name: List a piece's scheduled uploads on YouTube
+        if: github.event.inputs.uploads != ''
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
+          YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
+        run: python -m engine.intro --uploads "${{ github.event.inputs.uploads }}"
       - name: Is a sweep needed?
         id: need
         run: |
-          if [ -n "${{ github.event.inputs.redo }}" ] || python -m engine.intro --needed; then echo "yes=1" >> "$GITHUB_OUTPUT"; else echo "yes=0" >> "$GITHUB_OUTPUT"; fi
+          if [ -n "${{ github.event.inputs.uploads }}" ]; then echo "yes=0" >> "$GITHUB_OUTPUT"; elif [ -n "${{ github.event.inputs.redo }}" ] || python -m engine.intro --needed; then echo "yes=1" >> "$GITHUB_OUTPUT"; else echo "yes=0" >> "$GITHUB_OUTPUT"; fi
       - name: ffmpeg, fonts and the browser for the cards
         if: steps.need.outputs.yes == '1'
         run: |

@@ -227,6 +227,28 @@ def test_existing_upload_matches_title_privacy_and_publish_time():
     assert intro.existing_upload(p, "tok", lambda m, u, t, **k: (403, {}, {})) == ""
 
 
+def test_only_an_upload_newer_than_the_last_recorded_change_is_adopted_and_stray_copies_are_removed():
+    """4 Nov 2026, run 15: an older stray private copy of the Tanjore long was adopted and the rebuild never happened."""
+    from engine import youtube
+    p = _piece("long"); p.script["captions"] = {"youtube": {"title": "T"}}; p.updated = "2026-11-04T16:42:38+00:00"
+    want = youtube.metadata(p, intro.slots.publish_at(p.channel, p.kind, p.publish_day))["snippet"]["title"]
+    at = intro.slots.publish_at(p.channel, p.kind, p.publish_day).strftime("%Y-%m-%dT%H:%M:%SZ")
+    def call(method, url, token, **k):
+        if "channels?" in url: return 200, {}, {"items": [{"contentDetails": {"relatedPlaylists": {"uploads": "UU1"}}}]}
+        if "playlistItems" in url: return 200, {}, {"items": [{"contentDetails": {"videoId": "stray"}}, {"contentDetails": {"videoId": "fresh"}}]}
+        return 200, {}, {"items": [
+            {"id": "stray", "snippet": {"title": want, "publishedAt": "2026-11-04T15:30:00Z"}, "status": {"privacyStatus": "private", "publishAt": at}, "contentDetails": {"duration": "PT13M"}},
+            {"id": "fresh", "snippet": {"title": want, "publishedAt": "2026-11-04T17:10:00Z"}, "status": {"privacyStatus": "private", "publishAt": at}, "contentDetails": {"duration": "PT13M"}}]}
+    assert [f["id"] for f in intro.existing_uploads(p, "tok", call)] == ["fresh", "stray"]
+    assert intro.existing_upload(p, "tok", call, after=intro._last_change(p)) == "fresh"
+    p.updated = "2026-11-04T17:30:00+00:00"
+    assert intro.existing_upload(p, "tok", call, after=intro._last_change(p)) == ""      # nothing newer: rebuild, never adopt the stray
+    gone = []
+    assert intro.remove_duplicates(p, "fresh", token_for=lambda ch: "t", delete=lambda vid: gone.append(vid) or True,
+                                   uploads=lambda pc, tok: intro.existing_uploads(pc, tok, call)) == ["stray"]
+    assert gone == ["stray"] and p.ids["yt_duplicates_removed"] == ["stray"]
+
+
 def test_a_founder_thumbnail_is_set_once_on_the_uploaded_video_and_rides_a_re_upload(tmp_path, monkeypatch):
     """4 Nov 2026: "for long videos will give you thumbnails"."""
     p = _scheduled(tmp_path, "2026-11-05-arthvan-long", date(2026, 11, 5)); p.kind = "long"; pieces.save(p, tmp_path)

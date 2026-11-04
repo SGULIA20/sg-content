@@ -497,7 +497,7 @@ def collect(piece, deps, root: Path, now: datetime | None = None, notify=None, t
         return "waiting", piece
     if not video.exists():
         old = piece.ids.get("yt_id")
-        found = (find or (lambda pc: existing_upload(pc, youtube.access_token(pc.channel))))(piece)
+        found = (find or (lambda pc: existing_upload(pc, youtube.access_token(pc.channel), after=_last_change(pc))))(piece)
         if found and found != old:                                 # an earlier run already re-made and uploaded it, then its git push failed
             piece.ids["yt_id"], piece.ids["yt_id_replaced"] = found, old      # (4 Nov 2026, the Tanjore long): adopt it, no second 35-minute build
             piece.ids.setdefault("intro", {"clip": clip_path(root, piece).name, "adopted": now.isoformat(timespec="seconds")})
@@ -514,6 +514,14 @@ def collect(piece, deps, root: Path, now: datetime | None = None, notify=None, t
                 pieces.save(piece, root)
             except Exception as e:
                 notify(f"🎬 {piece.id}: re-uploaded, but the earlier upload {old} could not be removed ({secrets.scrub(str(e))[:120]}).")
+        if piece.status == "uploaded" and not find:
+            try:                                                   # stray private copies of the same slot (4 Nov 2026) go too
+                gone = remove_duplicates(piece, piece.ids["yt_id"])
+                if gone:
+                    pieces.save(piece, root)
+                    notify(f"🎬 {piece.id}: {len(gone)} duplicate scheduled upload(s) removed: {', '.join(gone)}.")
+            except Exception as e:
+                notify(f"🎬 {piece.id}: duplicate uploads could not be checked ({secrets.scrub(str(e))[:120]}).")
         return f"rebuilt-{piece.status}", piece
     action = before_upload(piece, root, out_dir, notify, now, transcribe, compose_fn)
     if action == "wait":
@@ -636,9 +644,9 @@ def sweep(root: Path, deps, now: datetime | None = None, notify=None, transcribe
     return out
 
 
-def existing_upload(piece, token: str, call=None) -> str:
-    """The id of a private upload already scheduled with this piece's title and publish time, if one exists (4 Nov 2026: a redo whose
-    final git push failed had replaced the video on YouTube; running it again must adopt that upload, not add a second one)."""
+def existing_uploads(piece, token: str, call=None) -> list:
+    """Every private upload scheduled with this piece's title and publish time, newest upload first:
+    [{"id", "uploaded" (the upload moment, UTC), "duration"}]. Empty when YouTube cannot be asked."""
     from . import youtube
     call = call or youtube.call
     want_title = youtube.metadata(piece, slots.publish_at(piece.channel, piece.kind, piece.publish_day))["snippet"]["title"]
@@ -646,13 +654,14 @@ def existing_upload(piece, token: str, call=None) -> str:
     data = "https://www.googleapis.com/youtube/v3"
     status, _h, ch = call("GET", f"{data}/channels?part=contentDetails&mine=true", token)
     if status != 200:
-        return ""
+        return []
     uploads = ch["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
     status, _h, body = call("GET", f"{data}/playlistItems?part=contentDetails&maxResults=50&playlistId={uploads}", token)
     ids = [i["contentDetails"]["videoId"] for i in (body.get("items") or [])] if status == 200 else []
     if not ids:
-        return ""
-    status, _h, body = call("GET", f"{data}/videos?part=snippet,status&id={','.join(ids)}", token)
+        return []
+    status, _h, body = call("GET", f"{data}/videos?part=snippet,status,contentDetails&id={','.join(ids)}", token)
+    found = []
     for v in (body.get("items") or []) if status == 200 else []:
         at = str((v.get("status") or {}).get("publishAt", ""))
         try:
@@ -660,8 +669,45 @@ def existing_upload(piece, token: str, call=None) -> str:
         except ValueError:
             same_time = False
         if (v.get("snippet") or {}).get("title") == want_title and (v.get("status") or {}).get("privacyStatus") == "private" and same_time:
-            return v["id"]
+            found.append({"id": v["id"], "uploaded": _utc((v.get("snippet") or {}).get("publishedAt", "")),
+                          "duration": (v.get("contentDetails") or {}).get("duration", "")})
+    return sorted(found, key=lambda f: f["uploaded"] or datetime.min.replace(tzinfo=timezone.utc), reverse=True)
+
+
+def _utc(text: str):
+    try:
+        return datetime.fromisoformat(str(text).replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def existing_upload(piece, token: str, call=None, after: datetime | None = None) -> str:
+    """The newest private upload with this piece's title and publish time, made after `after` (4 Nov 2026: a redo whose final git
+    push failed had replaced the video on YouTube; running it again must adopt that upload, not add a second one). Only an upload
+    newer than the piece's last recorded change can be that one: run 15 adopted an older stray copy and never rebuilt."""
+    for f in existing_uploads(piece, token, call):
+        if after is None or (f["uploaded"] and f["uploaded"] > after):
+            return f["id"]
     return ""
+
+
+def _last_change(piece) -> datetime | None:
+    return _utc(piece.updated) if piece.updated else None
+
+
+def remove_duplicates(piece, keep: str, token_for=None, delete=None, uploads=None) -> list:
+    """After a (re)upload: every other private copy scheduled for this piece's slot is removed, so one slot never publishes twice.
+    Returns the ids removed."""
+    from . import youtube
+    token = (token_for or youtube.access_token)(piece.channel)
+    delete = delete or (lambda vid: youtube.delete(token, vid))
+    gone = []
+    for f in (uploads or existing_uploads)(piece, token):
+        if f["id"] != keep and delete(f["id"]):
+            gone.append(f["id"])
+    if gone:
+        piece.ids["yt_duplicates_removed"] = piece.ids.get("yt_duplicates_removed", []) + gone
+    return gone
 
 
 def redo_piece(piece, deps, root: Path, env=None, notify=None, transcribe=None, compose_fn=None, delete=None, find=None) -> str:
@@ -687,7 +733,7 @@ def redo_piece(piece, deps, root: Path, env=None, notify=None, transcribe=None, 
     (compose_fn or compose)(piece, clip, out_dir)
     piece.ids.setdefault("intro", {"clip": clip.name, "composed": datetime.now(timezone.utc).isoformat(timespec="seconds")})
     old = piece.ids.get("yt_id")
-    found = (find or (lambda pc: existing_upload(pc, youtube.access_token(pc.channel, env))))(piece)
+    found = (find or (lambda pc: existing_upload(pc, youtube.access_token(pc.channel, env), after=_last_change(pc))))(piece)
     if found and found != old:                                        # an earlier redo already replaced the video: adopt it, upload nothing
         piece.ids["yt_id"], piece.ids["yt_id_replaced"] = found, old
         piece.topic["look"] = piece.topic.get("look") or ""
@@ -716,7 +762,7 @@ def redo(piece_id: str, root: Path = ROOT, env=None, deps=None, notify=None) -> 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--plan"); ap.add_argument("--needed", action="store_true"); ap.add_argument("--sweep", action="store_true"); ap.add_argument("--redo")
-    ap.add_argument("--ask-scheduled", action="store_true")
+    ap.add_argument("--ask-scheduled", action="store_true"); ap.add_argument("--uploads", help="piece id: list its private scheduled uploads on YouTube")
     a = ap.parse_args(argv)
     if a.plan:
         piece = pieces.load(a.plan, ROOT)
@@ -732,6 +778,12 @@ def main(argv=None) -> int:
     if a.ask_scheduled:
         from . import telegram
         print("asked:", ask_scheduled(ROOT, telegram.send) or "nothing"); return 0
+    if a.uploads:
+        from . import youtube
+        piece = pieces.load(a.uploads, ROOT)
+        for f in existing_uploads(piece, youtube.access_token(piece.channel)):
+            print(f"{f['id']}  uploaded {f['uploaded']:%Y-%m-%d %H:%M} UTC  {f['duration']}" if f["uploaded"] else f"{f['id']}  {f['duration']}")
+        print("recorded:", piece.ids.get("yt_id"), "replaced:", piece.ids.get("yt_id_replaced")); return 0
     if a.redo:
         from . import telegram
         print(redo(a.redo, ROOT, notify=telegram.send)); return 0
