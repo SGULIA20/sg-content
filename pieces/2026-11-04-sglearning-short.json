@@ -114,8 +114,12 @@
    "usd": 0.067948,
    "voice": 11
   },
+  "ig_reel_id": "18121016935958278",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "out_sha": "ae4b74c88886158a7b5702cb6a3dfb2c911e9f53",
+  "threads_id": "18396936724167563",
+  "threads_poll_id": "skipped: HTTP 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":",
   "yt_id": "dGs2WzVyRSY"
  },
  "kind": "short",
@@ -294,7 +298,7 @@
   },
   "title": "America ka faisla, aapki *EMI* pe bhaari 😬"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   5.57,
@@ -319,6 +323,6 @@
   "title": "Explained: Why US Fed Reserve decided to not hike rate after FOMC meeting? What Chair Kevin Warsh said in press speech",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-28T19:57:52+00:00",
+ "updated": "2026-11-04T13:09:29+00:00",
  "writer": "claude"
 }
