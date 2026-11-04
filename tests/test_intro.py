@@ -252,6 +252,20 @@ def test_a_waiting_long_without_its_video_is_rebuilt_by_the_pipeline_and_the_old
     monkeypatch.setattr(pipeline, "make", fake_make)
     monkeypatch.setattr(youtube, "access_token", lambda ch, env=None: "t")
     monkeypatch.setattr(youtube, "delete", lambda tok, vid: deleted.append(vid) or True)
-    action, q = intro.collect(p, _Deps(), tmp_path, now=datetime(2026, 11, 6, 9, 0, tzinfo=timezone.utc), notify=lambda t: None)
+    action, q = intro.collect(p, _Deps(), tmp_path, now=datetime(2026, 11, 6, 9, 0, tzinfo=timezone.utc), notify=lambda t: None, find=lambda pc: "")
     assert action == "rebuilt-uploaded" and made == ["drawn"] and deleted == ["oldlong"]
     assert pieces.load(p.id, tmp_path).ids["yt_id_replaced"] == "oldlong"
+
+
+def test_a_long_an_earlier_run_already_rebuilt_and_uploaded_is_adopted_not_built_again(tmp_path, monkeypatch):
+    """4 Nov 2026: run 10 re-made the Tanjore long and uploaded it, then its push failed on a 114 MB intermediate; the next run adopts."""
+    from engine import pipeline, youtube
+    p = _piece("long"); p.status = "intro-wait"; p.ids["yt_id"] = "oldlong"; p.ids["intro_sent"] = "x"
+    p.topic["intro"] = intro.plan(p, ask=lambda _p: "Chhote print ka ek rule"); pieces.save(p, tmp_path)
+    c = intro.clip_path(tmp_path, p); c.parent.mkdir(parents=True, exist_ok=True); c.write_bytes(b"clip")
+    monkeypatch.setattr(pipeline, "make", lambda *a, **k: (_ for _ in ()).throw(AssertionError("built again")))
+    monkeypatch.setattr(youtube, "delete", lambda tok, vid: (_ for _ in ()).throw(AssertionError("deleted")))
+    sent = []
+    action, q = intro.collect(p, _Deps(), tmp_path, now=datetime(2026, 11, 6, 9, 0, tzinfo=timezone.utc), notify=sent.append, find=lambda pc: "newlong")
+    assert action == "adopted-intro" and q.status == "uploaded" and q.ids["yt_id"] == "newlong" and q.ids["yt_id_replaced"] == "oldlong"
+    assert pieces.load(p.id, tmp_path).ids["intro"]["adopted"] and "newlong" in sent[0]
