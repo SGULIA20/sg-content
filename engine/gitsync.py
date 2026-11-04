@@ -39,6 +39,55 @@ def _stage(root: Path, paths=None) -> None:
         print(f"gitsync: {f} left out of the commit (over {MAX_FILE_MB} MB)", flush=True)
 
 
+def _settleable(f: str) -> bool:
+    """A clash this sync can settle on its own: the control-room snapshot, a money meter under logs/, or a media file under out/.
+    A clash on a piece record or the engine is real and stops the sync (the run's commits stay local for the next one)."""
+    return f in SNAPSHOTS or (f.startswith("logs/") and f.endswith(".json")) or f.startswith("out/")
+
+
+def _side(root: Path, f: str, n: int) -> str | None:
+    """The file at rebase stage n (1 base, 2 upstream, 3 the commit being replayed), or None when that side has no file."""
+    r = subprocess.run(["git", "-C", str(root), "show", f":{n}:{f}"], capture_output=True, text=True)
+    return r.stdout if r.returncode == 0 else None
+
+
+def _merge_meters(base: str | None, ours: str | None, theirs: str | None) -> str | None:
+    """Two runs each added to the same money meter (4 Nov 2026: logs/image-spend.json sank a 30-minute long rebuild): numbers at the
+    same key become ours + (theirs - base), other values take the replayed commit's side. None when the files are not plain JSON."""
+    try:
+        b, o, t = (json.loads(x) if x else {} for x in (base, ours, theirs))
+    except ValueError:
+        return None
+    def merge(b, o, t):
+        if isinstance(o, dict) and isinstance(t, dict):
+            b = b if isinstance(b, dict) else {}
+            out = dict(o)
+            for k, tv in t.items():
+                out[k] = merge(b.get(k), o.get(k), tv) if k in o else tv
+            return out
+        if isinstance(o, (int, float)) and isinstance(t, (int, float)) and not isinstance(o, bool) and not isinstance(t, bool):
+            bb = b if isinstance(b, (int, float)) and not isinstance(b, bool) else 0
+            return round(o + (t - bb), 6)
+        return t
+    return json.dumps(merge(b, o, t), ensure_ascii=False, indent=1)
+
+
+def _settle(root: Path, f: str) -> None:
+    """One settleable clash: the snapshot and out/ media keep the commit being replayed ("theirs" in a rebase: this run's own work);
+    a deleted-on-both side is dropped; a meter is merged three ways."""
+    base, ours, theirs = (_side(root, f, n) for n in (1, 2, 3))
+    if theirs is None:                                                # this run deleted it (or never had it): keep it gone
+        _git(root, "rm", "-q", "--cached", "--", f, check=False)
+        (Path(root) / f).unlink(missing_ok=True)
+        return
+    merged = _merge_meters(base, ours, theirs) if f.startswith("logs/") and f not in SNAPSHOTS and ours is not None else None
+    if merged is not None:
+        (Path(root) / f).write_text(merged)
+    else:
+        _git(root, "checkout", "--theirs", "--", f)
+    _git(root, "add", f)
+
+
 def _rebasing(root: Path) -> bool:
     return any((Path(root) / ".git" / d).exists() for d in ("rebase-merge", "rebase-apply"))
 
@@ -52,11 +101,10 @@ def _pull_rebase(root: Path) -> None:
         if r.returncode == 0 or not _rebasing(root):
             break
         clash = [f for f in _git(root, "diff", "--name-only", "--diff-filter=U", check=False).splitlines() if f]
-        if not clash or any(f not in SNAPSHOTS for f in clash):
+        if not clash or any(not _settleable(f) for f in clash):
             break
         for f in clash:
-            _git(root, "checkout", "--theirs", "--", f)            # in a rebase, "theirs" is the commit being replayed
-            _git(root, "add", f)
+            _settle(root, f)
         r = subprocess.run(["git", "-C", str(root), "-c", "core.editor=true", "rebase", "--continue"], capture_output=True, text=True)
         if r.returncode != 0 and _rebasing(root) and not _git(root, "diff", "--name-only", "--diff-filter=U", check=False):
             r = subprocess.run(["git", "-C", str(root), "rebase", "--skip"], capture_output=True, text=True)    # the commit became empty

@@ -531,7 +531,7 @@ def collect(piece, deps, root: Path, now: datetime | None = None, notify=None, t
                 pieces.save(piece, root)
             except Exception as e:
                 notify(f"🎬 {piece.id}: re-uploaded, but the earlier upload {old} could not be removed ({secrets.scrub(str(e))[:120]}).")
-        if piece.status == "uploaded" and not find:
+        if piece.status == "uploaded" and not getattr(find, "test_only", False):
             try:                                                   # stray private copies of the same slot (4 Nov 2026) go too
                 gone = remove_duplicates(piece, piece.ids["yt_id"])
                 if gone:
@@ -744,8 +744,10 @@ def redo_piece(piece, deps, root: Path, env=None, notify=None, transcribe=None, 
     out_dir = Path(root) / "out" / piece.id
     plain_video = out_dir / ("reel.mp4" if piece.kind == "short" else "long.mp4")
     if not plain_video.exists():                                    # a long: rebuilt from the caches, composed and re-uploaded by collect()
+        since = _last_change(piece)                                   # before this run's own save: an upload newer than this is a failed run's
         pieces.save(pieces.transition(piece, "intro-wait", "re-made from the caches to carry the founder's intro"), root)
-        action, piece = collect(piece, deps, root, None, notify, transcribe, compose_fn)
+        action, piece = collect(piece, deps, root, None, notify, transcribe, compose_fn,
+                                find=find or (lambda pc: existing_upload(pc, youtube.access_token(pc.channel, env), after=since)))
         return action
     (compose_fn or compose)(piece, clip, out_dir)
     piece.ids.setdefault("intro", {"clip": clip.name, "composed": datetime.now(timezone.utc).isoformat(timespec="seconds")})

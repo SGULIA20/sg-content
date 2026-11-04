@@ -128,3 +128,22 @@ def test_a_file_over_95_mb_is_never_staged(tmp_path, monkeypatch):
     gitsync._stage(tmp_path, ["out"])
     staged = subprocess.run(["git", "-C", str(tmp_path), "diff", "--cached", "--name-only"], capture_output=True, text=True).stdout.split()
     assert staged == ["out/x/thumb.jpg"]
+
+
+def test_two_runs_adding_to_the_same_meter_are_summed_and_pruned_media_keeps_this_runs_copy(repos):
+    """4 Nov 2026: a 30-minute long rebuild was lost when its final sync clashed with a produce run on logs/image-spend.json."""
+    a, b, remote = repos
+    (b / "logs" / "image-spend.json").write_text('{"2026-11-04": {"inr": 100, "n": 2}}')
+    (b / "out" / "x").mkdir(parents=True); (b / "out" / "x" / "reel.mp4").write_bytes(b"old")
+    _git(b, "add", "-A"); _git(b, "commit", "-q", "-m", "seed meter"); _git(b, "push", "-q", "origin", "HEAD:main")
+    _git(a, "pull", "-q", "--rebase", "origin", "main")
+    _push_from(b, "logs/image-spend.json", '{"2026-11-04": {"inr": 130, "n": 3}}')          # produce painted for 30
+    _git(b, "rm", "-q", "out/x/reel.mp4"); _git(b, "commit", "-q", "-m", "prune"); _git(b, "push", "-q", "origin", "HEAD:main")
+    (a / "logs" / "image-spend.json").write_text('{"2026-11-04": {"inr": 112, "n": 2}, "2026-11-05": {"inr": 5}}')   # this run painted for 12
+    (a / "out" / "x" / "reel.mp4").write_bytes(b"new")
+    sha = gitsync.commit(a, "studio: redo")
+    assert sha and not _stuck(a) and _git(a, "rev-parse", "HEAD") == _git(remote, "rev-parse", "main")
+    import json
+    m = json.loads((a / "logs" / "image-spend.json").read_text())
+    assert m["2026-11-04"] == {"inr": 142, "n": 3} and m["2026-11-05"] == {"inr": 5}
+    assert (a / "out" / "x" / "reel.mp4").read_bytes() == b"new"
