@@ -578,7 +578,7 @@ def test_a_finished_piece_waits_for_the_founders_intro_then_uploads_when_the_cli
     d.intro_notify = sent.append
     monkeypatch.setattr(intro, "_ask_claude", lambda prompt: "Aapka paisa doobta hai, unki fees pakki rehti hai")
     p = pipeline.make(_piece(day=date(2027, 1, 10)), d, tmp_path)                       # a slot well ahead: the deadline has not passed
-    assert p.status == "intro-wait" and calls["upload"] == 0 and p.topic["intro"]["text"].endswith("Aaiye isko samajhte hain.")
+    assert p.status == "intro-wait" and calls["upload"] == 0 and p.topic["intro"]["text"].endswith(p.topic["intro"]["closing"]) and p.topic["intro"]["closing"] in intro.CLOSINGS
     assert len(sent) == 1 and "Intro for" in sent[0] and p.ids["intro_sent"]
     p2 = pipeline.make(pieces.load(p.id, tmp_path), d, tmp_path)                       # no clip yet, before the deadline: still waiting
     assert p2.status == "intro-wait" and calls["upload"] == 0 and len(sent) == 1

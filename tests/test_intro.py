@@ -24,8 +24,9 @@ def test_enabled_for_painted_shorts_and_longs_not_code_card_reels():
 def test_plan_is_question_bridge_closing_within_26_words_with_the_founders_prompt_rules():
     p = _piece()
     plan = intro.plan(p, ask=lambda prompt: "Aapka paisa doobta hai, unki fees phir bhi pakki rehti hai")
-    assert plan["question"] == p.script["hook"] and plan["bridge"].endswith(".") and plan["closing"] == "Aaiye isko samajhte hain."
-    assert plan["text"].endswith("Aaiye isko samajhte hain.") and plan["words"] <= 26 and plan["aspect"] == "9:16"
+    assert plan["question"] == p.script["hook"] and plan["bridge"].endswith(".") and plan["closing"] in intro.CLOSINGS
+    assert plan["text"].endswith(plan["closing"]) and plan["words"] <= 26 and plan["aspect"] == "9:16"
+    assert plan["closing"].rstrip(".") in plan["prompt"]
     for must in ("9:16 vertical, 1080x1920", "key light", "Body language in three beats", "SIP debited", "@SGLearning watermark top right", "Speaks from the first frame", "wearing"):
         assert must in plan["prompt"], must
 
@@ -49,7 +50,7 @@ def test_the_avatar_prompt_changes_setting_outfit_pose_and_camera_from_day_to_da
 def test_a_long_bridge_or_a_failed_ask_leaves_question_and_closing_only():
     p = _piece("long", "arthvan")
     too_long = intro.plan(p, ask=lambda _p: " ".join(["bahut"] * 30))
-    assert too_long["bridge"] == "" and too_long["text"] == p.script["hook"] + " Aaiye isko samajhte hain." and too_long["aspect"] == "16:9"
+    assert too_long["bridge"] == "" and too_long["text"] == p.script["hook"] + " " + intro.closing_for(p) and too_long["aspect"] == "16:9"
     def boom(_p): raise RuntimeError("no key")
     assert intro.plan(p, ask=boom)["bridge"] == "" and "old map" in intro.plan(p, ask=boom)["prompt"]
 
@@ -308,3 +309,15 @@ def test_a_long_body_resumes_right_after_the_hook_sentence_and_a_short_at_scene_
     assert intro.body_cut(p, out) == 0.0                      # not placed: the whole long, the hook heard twice, never a jump
     q = _piece("short"); q.timings = [0.0, 5.2, 9.9]
     assert intro.body_cut(q, out) == 5.2
+
+
+def test_the_closing_line_rotates_per_piece_and_check_wants_the_planned_one(tmp_path):
+    """Founder, 4 Nov 2026: "we are mentioning the same aaiye isko samajhte hain in every reel"; new wordings, same purpose."""
+    seen = {intro.closing_for(_piece(day=date(2026, 11, d))) for d in range(5, 13)}
+    assert len(seen) >= 6 and seen <= set(intro.CLOSINGS)
+    assert intro.closing_for(_piece(day=date(2026, 11, 8))) != intro.closing_for(_piece(channel="arthvan", day=date(2026, 11, 8)))
+    clip = tmp_path / "c.mp4"; clip.write_bytes(b"x")
+    plan = {"text": "Aapki SIP doobe, phir bhi fund house kyun kamata hai? Chaliye, sach jaante hain.", "closing": "Chaliye, sach jaante hain."}
+    assert intro.check(clip, plan, transcribe=lambda c: "aapki sip doobe phir bhi fund house kyun kamata hai chaliye sach jaante hain", seconds=9.9) == []
+    bad = intro.check(clip, plan, transcribe=lambda c: "aapki sip doobe phir bhi fund house kyun kamata hai bye bye", seconds=9.9)
+    assert any("Chaliye, sach jaante hain" in r for r in bad)

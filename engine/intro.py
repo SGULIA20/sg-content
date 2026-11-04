@@ -27,6 +27,18 @@ from . import captions, pieces, secrets, slots
 from .config import CHANNELS, ROOT, VIDEO
 
 CLOSING = "Aaiye isko samajhte hain."
+CLOSINGS = ["Chaliye, poori baat samajhte hain.",                   # founder, 4 Nov 2026: the same closing on every Reel wears out; rotate
+            "Aaiye, iske peeche ki kahani dekhte hain.",            # the wording, keep the purpose (come, let us understand this)
+            "Chaliye, isko detail mein dekhte hain.",
+            "Aaiye, sach jaante hain.",
+            "Chaliye, is sawal ka jawab dhoondte hain.",
+            "Aaiye, poora khel samajhte hain.",
+            "Chaliye, shuru se dekhte hain.",
+            CLOSING]
+
+
+def closing_for(piece) -> str:
+    return _pick(piece, CLOSINGS, 5)
 MAX_WORDS = 26                              # about 10 seconds of calm Hinglish
 BRIDGE_MAX_WORDS = 13
 MIN_S, MAX_S = 8.0, 12.0                    # the clip the founder sends back
@@ -82,7 +94,7 @@ def bridge(piece, ask=_ask_claude) -> str:
     prompt = (f"A Hindi/Hinglish money-or-history explainer for ordinary Indians opens with this question: \"{script.get('hook', '')}\"\n"
               f"The script that follows: {body[:900]}\n\nWrite ONE bridge line in Hinglish (Latin script) of at most {BRIDGE_MAX_WORDS} words that "
               f"states the tension or surprise behind the question, in words a 15-year-old knows, no numbers that are not in the script, "
-              f"no English finance terms. It must flow naturally before the closing line \"{CLOSING}\". Output only the line.")
+              f"no English finance terms. It must flow naturally before the closing line \"{closing_for(piece)}\". Output only the line.")
     try:
         line = ask(prompt).strip().strip('"').strip("'").split("\n")[0].strip()
     except Exception as e:
@@ -99,11 +111,15 @@ def plan(piece, ask=_ask_claude) -> dict:
     script = piece.script or {}
     question = (script.get("hook") or (script.get("scenes") or [{}])[0].get("vo", "")).strip()
     b = bridge(piece, ask)
-    text = " ".join(x for x in (question, b, CLOSING) if x)
+    closing = closing_for(piece)
+    text = " ".join(x for x in (question, b, closing) if x)
+    if len(text.split()) > MAX_WORDS:                                 # over 10 seconds: a shorter closing first, the bridge goes last
+        closing = _pick(piece, [c for c in CLOSINGS if len(c.split()) <= 4], 5)
+        text = " ".join(x for x in (question, b, closing) if x)
     if len(text.split()) > MAX_WORDS:
-        b, text = "", " ".join((question, CLOSING))
+        b, text = "", " ".join((question, closing))
     aspect = "9:16" if piece.kind == "short" else "16:9"
-    out = {"question": question, "bridge": b, "closing": CLOSING, "text": text, "words": len(text.split()), "aspect": aspect}
+    out = {"question": question, "bridge": b, "closing": closing, "text": text, "words": len(text.split()), "aspect": aspect}
     out["prompt"] = prompt_for(piece, out)
     return out
 
@@ -175,7 +191,7 @@ def prompt_for(piece, p: dict) -> str:
     outfit = _pick(piece, OUTFITS, 1)
     pose = _pick(piece, POSES, 2)
     camera = _pick(piece, CAMERAS, 3)
-    beats = _pick(piece, BEATS, 4).format(closing=CLOSING.rstrip("."))
+    beats = _pick(piece, BEATS, 4).format(closing=(p.get("closing") or CLOSING).rstrip("."))
     return (f"{size}, exactly 10 seconds, natural and cinematic. Setting: {setting}. Lighting: soft key light on the face from one side, "
             f"warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] {pose}, wearing {outfit}. Speaks from "
             f"the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: {beats}. "
@@ -251,8 +267,9 @@ def check(clip: Path, p: dict, transcribe=None, seconds: float | None = None) ->
     sim = recall(p["text"], heard)                                     # the script's words heard; extra words of his are fine
     if sim < inbox.SIMILARITY_MIN:
         reasons.append(f"missing words (only {sim:.0%} of the script heard): \"{heard[:120]}\"")
-    if "samajh" not in heard.lower() and "samjh" not in heard.lower():
-        reasons.append("the closing line \"Aaiye isko samajhte hain\" was not heard")
+    closing = p.get("closing") or CLOSING
+    if recall(closing, heard) < 0.5 and "samajh" not in heard.lower() and "samjh" not in heard.lower():
+        reasons.append(f"the closing line \"{closing}\" was not heard")
     return reasons
 
 
