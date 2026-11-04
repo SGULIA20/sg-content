@@ -269,3 +269,20 @@ def test_a_long_an_earlier_run_already_rebuilt_and_uploaded_is_adopted_not_built
     action, q = intro.collect(p, _Deps(), tmp_path, now=datetime(2026, 11, 6, 9, 0, tzinfo=timezone.utc), notify=sent.append, find=lambda pc: "newlong")
     assert action == "adopted-intro" and q.status == "uploaded" and q.ids["yt_id"] == "newlong" and q.ids["yt_id_replaced"] == "oldlong"
     assert pieces.load(p.id, tmp_path).ids["intro"]["adopted"] and "newlong" in sent[0]
+
+
+def test_a_long_body_resumes_right_after_the_hook_sentence_and_a_short_at_scene_two(tmp_path):
+    """4 Nov 2026 (the Tanjore long): the first scene of a long is hook plus set-up; cutting all 22 s made it start from the middle."""
+    p = _piece("long"); p.timings = [0.0, 22.05, 42.14]
+    p.script["hook"] = "Kehte hain, Tanjore ke mandir ki parchhai dopahar mein zameen par girti hi nahi."
+    out = tmp_path / "out" / p.id; out.mkdir(parents=True)
+    out.joinpath("captions.ass").write_text("[Events]\n"
+        "Dialogue: 0,0:00:00.00,0:00:00.91,Default,,0,0,0,,Kehte hain,\n"
+        "Dialogue: 0,0:00:00.91,0:00:04.56,Default,,0,0,0,,Tanjore ke mandir ki parchhai dopahar\n"
+        "Dialogue: 0,0:00:04.56,0:00:07.30,Default,,0,0,0,,mein zameen par girti hi nahi.\n"
+        "Dialogue: 0,0:00:07.30,0:00:10.04,Default,,0,0,0,,Log ise chamatkar kehte hain,\n")
+    assert intro.body_cut(p, out) == 7.3
+    p.script["hook"] = "Some other hook entirely"
+    assert intro.body_cut(p, out) == 0.0                      # not placed: the whole long, the hook heard twice, never a jump
+    q = _piece("short"); q.timings = [0.0, 5.2, 9.9]
+    assert intro.body_cut(q, out) == 5.2

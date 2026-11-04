@@ -331,6 +331,36 @@ def _run(args: list) -> None:
     subprocess.run(["ffmpeg", "-v", "error", "-y", *args], check=True)
 
 
+def _norm_words(text: str) -> list:
+    return re.findall(r"[a-z0-9]+", str(text).lower())
+
+
+def body_cut(piece, out_dir: Path) -> float:
+    """Where the body starts after the founder's intro. A Short: scene 2 (scene 1 is the hook). A long: right after the hook sentence,
+    read from the caption timings, since its first scene carries the set-up too (4 Nov 2026, the Tanjore long: cutting the whole
+    22-second scene made the video "start from between"). When the hook cannot be placed, a long starts from 0 (the hook is heard twice)."""
+    if piece.kind == "short":
+        return piece.timings[1] if len(piece.timings) > 1 else 0.0
+    hook = _norm_words((piece.script or {}).get("hook", ""))
+    ass = Path(out_dir) / "captions.ass"
+    if not hook or not ass.exists():
+        return 0.0
+    heard = []
+    for line in ass.read_text(errors="replace").splitlines():
+        if not line.startswith("Dialogue:"):
+            continue
+        parts = line.split(",", 9)
+        if len(parts) < 10:
+            continue
+        heard += _norm_words(parts[9])
+        if len(heard) >= len(hook):
+            if heard[:len(hook)] == hook:
+                h, m, sec = parts[2].split(":")
+                return round(int(h) * 3600 + int(m) * 60 + float(sec), 3)
+            return 0.0
+    return 0.0
+
+
 def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path:
     """The founder's clip in the piece's own frame, then the body from scene 2, a straight cut. Replaces out/<id>/reel.mp4 (long.mp4),
     keeps the plain file as reel-plain.mp4, refreshes story.mp4 and the Instagram cover (his face with the title band)."""
@@ -389,7 +419,7 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
     keep = out_dir / ("reel-plain.mp4" if short else "long-plain.mp4")
     if not keep.exists():
         shutil.copy2(plain, keep)
-    cut = piece.timings[1] if len(piece.timings) > 1 else 0.0
+    cut = body_cut(piece, out_dir)
     part_b = out_dir / "intro-body.mp4"
     _run(["-ss", f"{cut:.3f}", "-i", str(keep), "-vf", f"scale={w}:{h},setsar=1,fps={VIDEO['fps']},format=yuv420p",
           "-af", "aresample=48000,aformat=channel_layouts=stereo", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "aac", "-b:a", "160k", str(part_b)])
