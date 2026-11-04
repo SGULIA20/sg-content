@@ -401,6 +401,9 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
     if short:
         assemble.story_copy(plain, out_dir / "story.mp4")
     _run(["-ss", "1.0", "-i", str(plain), "-frames:v", "1", "-q:v", "2", str(out_dir / "cover.jpg")])
+    founder_thumb = out_dir.parent.parent / "inbox" / "thumb" / f"{piece.id}.jpg"
+    if founder_thumb.exists():                                      # the founder's own thumbnail goes up with the upload (longs, 4 Nov 2026)
+        shutil.copy2(founder_thumb, out_dir / "thumb.jpg")
     piece.ids["intro"] = {"clip": str(Path(clip).name), "seconds": round(secs, 2), "clip_seconds": round(full, 2),
                           "composed": datetime.now(timezone.utc).isoformat(timespec="seconds")}
     return plain
@@ -455,6 +458,40 @@ def collect(piece, deps, root: Path, now: datetime | None = None, notify=None, t
     return "waiting", piece
 
 
+def thumb_path(root: Path, piece) -> Path:
+    return Path(root) / "inbox" / "thumb" / f"{piece.id}.jpg"
+
+
+def pending_thumbs(root: Path) -> list:
+    """Uploaded pieces whose founder thumbnail in inbox/thumb/ has not been set on YouTube yet."""
+    out = []
+    for jpg in sorted((Path(root) / "inbox" / "thumb").glob("*.jpg")):
+        p = pieces.load(jpg.stem, root)
+        if p and p.ids.get("yt_id") and p.ids.get("thumb_sha") != _sha(jpg):
+            out.append(p)
+    return out
+
+
+def set_thumbs(root: Path, env=None, notify=None, set_thumb=None, token_for=None) -> list:
+    """Puts each pending founder thumbnail on its YouTube video; records the file's hash so it is done once per file."""
+    from . import youtube
+    notify = notify or (lambda t: None)
+    out = []
+    for p in pending_thumbs(root):
+        jpg = thumb_path(root, p)
+        tok = (token_for or youtube.access_token)(p.channel, env)
+        ok = (set_thumb or youtube.set_thumbnail)(tok, p.ids["yt_id"], jpg)
+        if ok:
+            p.ids["thumb_sha"] = _sha(jpg)
+            shutil.copy2(jpg, Path(root) / "out" / p.id / "thumb.jpg") if (Path(root) / "out" / p.id).exists() else None
+            pieces.save(p, root)
+            notify(f"🖼 {p.id}: your thumbnail is set on YouTube ({p.ids['yt_id']}).")
+        else:
+            notify(f"🖼 {p.id}: YouTube refused the thumbnail (JPG under 2 MB, 1280x720?).")
+        out.append((p.id, "thumb-set" if ok else "thumb-refused"))
+    return out
+
+
 def waiting(root: Path) -> list:
     return sorted((p for p in pieces.list_all(root) if p.status == "intro-wait"), key=lambda p: p.publish_day)
 
@@ -500,13 +537,18 @@ def needed(root: Path, now: datetime | None = None) -> bool:
     for p in waiting(root):
         if _usable_clip(root, p) or now >= deadline_utc(p):
             return True
-    return any(_usable_clip(root, p) for p in scheduled(root, now))
+    return any(_usable_clip(root, p) for p in scheduled(root, now)) or bool(pending_thumbs(root))
 
 
-def sweep(root: Path, deps, now: datetime | None = None, notify=None, transcribe=None, compose_fn=None, env=None, delete=None, find=None) -> list:
-    """Waiting pieces are collected; scheduled pieces whose clip has come are re-uploaded with it. Never raises."""
+def sweep(root: Path, deps, now: datetime | None = None, notify=None, transcribe=None, compose_fn=None, env=None, delete=None, find=None,
+          set_thumb=None, token_for=None) -> list:
+    """Waiting pieces are collected; scheduled pieces whose clip has come are re-uploaded with it; founder thumbnails are set. Never raises."""
     now = now or datetime.now(timezone.utc)
     out = []
+    try:
+        out += set_thumbs(root, env, notify, set_thumb, token_for)
+    except Exception as e:
+        (notify or print)(f"🖼 thumbnails: {type(e).__name__}: {secrets.scrub(str(e))[:160]}")
     for p in waiting(root):
         try:
             action, p = collect(p, deps, root, now, notify, transcribe, compose_fn)

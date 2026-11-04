@@ -224,3 +224,16 @@ def test_existing_upload_matches_title_privacy_and_publish_time():
                                    {"id": "b", "snippet": {"title": want}, "status": {"privacyStatus": "private", "publishAt": at}}]}
     assert intro.existing_upload(p, "tok", call) == "b"
     assert intro.existing_upload(p, "tok", lambda m, u, t, **k: (403, {}, {})) == ""
+
+
+def test_a_founder_thumbnail_is_set_once_on_the_uploaded_video_and_rides_a_re_upload(tmp_path, monkeypatch):
+    """4 Nov 2026: "for long videos will give you thumbnails"."""
+    p = _scheduled(tmp_path, "2026-11-05-arthvan-long", date(2026, 11, 5)); p.kind = "long"; pieces.save(p, tmp_path)
+    jpg = intro.thumb_path(tmp_path, p); jpg.parent.mkdir(parents=True, exist_ok=True); jpg.write_bytes(b"jpg1")
+    assert [q.id for q in intro.pending_thumbs(tmp_path)] == [p.id] and intro.needed(tmp_path, datetime(2026, 11, 4, 12, 0, tzinfo=timezone.utc))
+    calls, sent = [], []
+    out = intro.set_thumbs(tmp_path, notify=sent.append, set_thumb=lambda tok, vid, path: calls.append((vid, path.name)) or True, token_for=lambda ch, env=None: "t")
+    assert out == [(p.id, "thumb-set")] and calls == [("old123", "2026-11-05-arthvan-long.jpg")] and "set on YouTube" in sent[0]
+    assert intro.pending_thumbs(tmp_path) == [] and (tmp_path / "out" / p.id / "thumb.jpg").read_bytes() == b"jpg1"
+    jpg.write_bytes(b"jpg2")                                                               # a new file is set again, once
+    assert [q.id for q in intro.pending_thumbs(tmp_path)] == [p.id]
