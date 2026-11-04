@@ -3,8 +3,7 @@ name: research
 # Learning with SG research cycle every 4 hours (founder, 29 Oct 2026 master prompt): a Telegram report each cycle, and an extra Reel
 # when today still has room (engine/trends.py). 06:00, 10:00, 14:00, 18:00 and 22:00 India.
 on:
-  schedule:
-    - cron: '30 0,4,8,12,16 * * *'
+  # schedule removed 4 Nov 2026 (founder: one painted Reel a day per channel, no news, extra or Top 10 Reels); manual runs only
   workflow_dispatch:
 
 permissions:

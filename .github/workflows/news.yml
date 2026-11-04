@@ -3,9 +3,7 @@ name: news
 # Learning with SG's same-day news Short (founder, 30 Oct 2026): made each morning from that morning's money news and swapped into
 # today's slot (Instagram 18:30, YouTube 20:00 India); if anything fails by 13:00 WAT the planned Short posts. engine/news.py
 on:
-  schedule:
-    - cron: '47 7 * * *'   # 08:47 WAT, after the morning produce run has started; this morning's news is out
-    - cron: '47 9 * * *'   # second chance (GitHub delays crons); the deadline inside is 12:00 UTC
+  # schedule removed 4 Nov 2026 (founder: one painted Reel a day per channel, no news, extra or Top 10 Reels); manual runs only
   workflow_dispatch:
 
 permissions:

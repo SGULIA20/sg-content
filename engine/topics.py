@@ -1,4 +1,5 @@
 """Topic sources: finance news from RSS/Atom feeds and press pages, mythology from the hand-written topic bank (spec §3 step 1)."""
+import json
 import re
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -8,7 +9,7 @@ from pathlib import Path
 
 import yaml
 
-from . import secrets
+from . import pieces, secrets
 from .config import CONTENT_DIR
 
 FEEDS = [
@@ -35,7 +36,16 @@ HOUSEHOLD = ["emi", "petrol", "diesel", "tax", "salary", "sip", "price", "prices
 # reached about 1,300-1,500 people each on Instagram; the one about Meta's AI spending reached 59. Market words still count, less.
 WALLET = ["emi", "petrol", "diesel", "tax", "salary", "sip", "price", "prices", "inflation", "loan", "fd ", "epf", "pension", "gold",
           "rupee", "gst", "mutual fund", "upi", "deposit", "insurance", "home loan", "rent", "repo rate", "interest rate", "fuel",
-          "income", "subsidy", "scam", "fraud", "dividend", "savings", "credit card", "lpg", "electricity", "ticket", "fees"]
+          "income", "subsidy", "scam", "fraud", "dividend", "savings", "credit card", "lpg", "electricity", "ticket", "fees",
+          "crude", "us stocks", "invest", "returns", "cibil", "credit score", "ppf", "nps", "bank account", "atm", "gold loan",
+          "car loan", "hospital bill", "school fees", "toll"]
+# 4 Nov 2026 (founder: "B"): company, deal, results, crypto and leadership news is never a Learning with SG Reel. Two weeks of data: Vodafone's
+# new owner 4 Instagram views, Binance hack 5, charity-trust rules 3, Jio results 8; gold on Dhanteras 1,923, US stocks from $1 1,472,
+# a "free" dividend 1,370. The Reel is a question about the viewer's own money, or it is not made.
+CORPORATE = ["stake", "acquire", "acquisition", "merger", "merge", "takeover", "buyout", "buys ", "deal ", "ipo", "funding", "unicorn",
+             "startup", "valuation", "quarterly", "q1 ", "q2 ", "q3 ", "q4 ", "results", "earnings", "revenue", "ebitda", "net profit",
+             "profit rises", "profit jumps", "profit falls", "bitcoin", "crypto", "binance", "ethereum", "token", "hack", "ceo", "chairman",
+             "board meeting", "sebi order", "charity", "trust rules", "listing", "block deal", "promoter"]
 # Jobs and the workplace are as personal as the wallet (founder, 29 Oct 2026: "550 Indian employees fired after lunch break")
 JOBS = ["layoff", "laid off", "lays off", "fired", "job cuts", "jobs cut", "sacked", "hiring", "appraisal", "salary hike", "pay cut",
         "notice period", "resign", "work from office", "ai jobs", "replace jobs", "employees"]
@@ -147,15 +157,13 @@ def score(item: dict) -> int:
         return -5
     if any(w in str(item.get("title", "")).lower() for w in INDEX_MOVE):
         return -3                                    # 22-28 Oct 2026: the day's Sensex/Nifty move got 28-42 views; big questions got 1,300-1,500
-    s = item.get("rank", 0)
+    if any(c in f" {blob} " for c in CORPORATE):
+        return -2                                    # 4 Nov 2026: company, deal, results and crypto news: 3-8 views each
+    if not (any(k in blob for k in WALLET) or any(k in blob for k in JOBS)):
+        return 0                                     # 4 Nov 2026: not about the viewer's own money or job: not a Reel
+    s = item.get("rank", 0) + 4
     if NUMBER.search(blob):
         s += 3
-    if any(k in blob for k in WALLET) or any(k in blob for k in JOBS):
-        s += 4
-    elif any(k in f" {blob} " for k in BIG_STORY):
-        s += 2
-    elif any(k in blob for k in HOUSEHOLD):
-        s += 1
     return s
 
 
@@ -185,8 +193,47 @@ def load_long_bank(root: Path = CONTENT_DIR) -> list:
     return yaml.safe_load((Path(root) / "long-topics.yaml").read_text()) or []
 
 
-def next_long_finance(root: Path, used_ids: set) -> dict:
-    """Evergreen subject for a 12-minute finance documentary: the bank in order, each once, then the rotation restarts."""
+PROVEN_IG_VIEWS = 1000       # 4 Nov 2026 (founder: "D"): a Short that reached this many on Instagram has proved its topic; the next long is on it
+
+
+def proven_shorts(root: Path, channel: str, min_views: int = PROVEN_IG_VIEWS) -> list:
+    """The channel's Shorts that reached min_views on Instagram (logs/whatworks.json and logs/diagnosis.json), best first, each with
+    its topic and hook. The long-video pickers below take these before the banks: a proven question earns a 12-minute version, and
+    the ads then point at that long once it is public (the weekly swap adds the newest public long)."""
+    rows = {}
+    for name in ("whatworks.json", "diagnosis.json"):
+        try:
+            data = json.loads((Path(root) / "logs" / name).read_text())
+        except (OSError, ValueError):
+            continue
+        for r in list(data.get("week") or []) + list(data.get("rows") or []):
+            if r.get("channel") == channel and (r.get("ig_views") or 0) >= min_views:
+                best = rows.get(r["id"])
+                if best is None or (r.get("ig_views") or 0) > best["ig_views"]:
+                    rows[r["id"]] = {"id": r["id"], "title": r.get("title", ""), "ig_views": int(r.get("ig_views") or 0),
+                                     "yt_views": int(r.get("yt_views") or 0)}
+    out = []
+    for r in sorted(rows.values(), key=lambda x: -x["ig_views"]):
+        p = pieces.load(r["id"], root)
+        if p is None:
+            continue
+        out.append({**r, "topic": dict(p.topic or {}), "hook": str((p.script or {}).get("hook", ""))})
+    return out
+
+
+def next_long_finance(root: Path, used_ids: set, proven: list = ()) -> dict:
+    """Subject for a 12-minute finance documentary: first a proven Short's question not yet made as a long (4 Nov 2026), then the
+    evergreen bank in order, each once, then the rotation restarts."""
+    for s in proven:
+        tid = f"proven-{s['id']}"
+        if tid in used_ids or any(c in f" {str(s.get('title', '')).lower()} " for c in CORPORATE):
+            continue                                                   # rule B holds for longs too: no crypto or company story
+        t = s.get("topic") or {}
+        return {"id": tid, "title": s["title"], "link": t.get("link", ""), "source": t.get("source", ""),
+                "summary": f"A 12-minute illustrated documentary on the question of the Short \"{s['title']}\", which reached "
+                           f"{s['ig_views']:,} people on Instagram. Go deeper than the Short: the mechanism, a worked example in rupees, "
+                           f"the mistakes people make, what to check. Story so far: {str(t.get('summary', ''))[:600]}",
+                "hooks": [s["hook"]] if s.get("hook") else [], "proven_short": s["id"], "proven_views": s["ig_views"]}
     bank = load_long_bank(root)
     for t in bank:
         if t["id"] not in used_ids:
@@ -202,3 +249,17 @@ def next_myth(root: Path, used_ids: set) -> dict:
     if fresh:
         return max(fresh, key=lambda t: (t.get("priority", 0), -bank.index(t)))
     return bank[0]                                                 # every topic used once: start the rotation again
+
+
+
+def next_myth_long(root: Path, used_ids: set, proven: list = ()) -> dict:
+    """The next SG-MYTH-WORLD long: first the bank topic of a proven Short (its 60-second question earned a 12-minute telling; 4 Nov 2026:
+    Sanchi 1,979 Instagram views, Ram Setu 1,711, Rakhigarhi 1,472, Mahabharat date 1,396), then the usual rotation."""
+    bank = load_myth_bank(root)
+    for s in proven:
+        base = str((s.get("topic") or {}).get("id", "")).split("#")[0]
+        entry = next((t for t in bank if t.get("id") == base), None)
+        lid = f"{base}#long"
+        if entry and lid not in used_ids:
+            return {**entry, "id": lid, "proven_short": s["id"], "proven_views": s["ig_views"]}
+    return next_myth(root, used_ids)
