@@ -155,8 +155,15 @@
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
+  "intro": {
+   "clip": "2026-11-10-arthvan-short.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-05T13:24:12+00:00",
+   "seconds": 9.57
+  },
   "out_sha": "df7332a078ae13e0e13be3c81d79f77a13deae8b",
-  "yt_id": "0njxSOTEbV4"
+  "yt_id": "J4WMPSyuaGs",
+  "yt_id_replaced": "0njxSOTEbV4"
  },
  "kind": "short",
  "publish_day": "2026-11-10",
@@ -418,6 +425,6 @@
   "title_hi": "Ashwatthama zinda hai?",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-11-03T20:43:47+00:00",
+ "updated": "2026-11-05T13:24:20+00:00",
  "writer": "claude"
 }

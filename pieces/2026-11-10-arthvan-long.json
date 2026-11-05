@@ -119,13 +119,27 @@
    "drafts": 1,
    "research": 1
   },
+  "captions": {
+   "en": "AUieDabkUo03394MztI2PchKyeLCFAoZvYYwijVpc-9ybOcbrcSYHe4d",
+   "gu": "AUieDaYbxPmfALh4TfK3aCrCxODVBSZ-J38AfUztVtd-YEmB_zYcoGQh7vNvaI3R4cpFmOpd0r8",
+   "hi": "AUieDaaBd3Ou-yvEH8VakJLLBU3GuSzMjz5YI6TdXbEPcnDvB0_11ejskfy0hJQL-2nAZl4",
+   "mr": "AUieDaYhg4gNWvW43Fq3BNY8ejfZCZXf3VHI4Tbp0D-q8O98aP9Lni7Ulp-4AeX8Jvs",
+   "ta": "AUieDaaH2jq3az2wDq8x0ydHhojRpdi3c1VNOcoAP1_uW6EV2kCsVpoWER_msa-K6So"
+  },
   "cost": {
    "inr": 58.5,
-   "usd": 0.282832,
+   "usd": 0.738356,
    "voice": 42
   },
   "drafts": 1,
-  "intro_sent": "2026-11-04T17:46:51+00:00"
+  "intro": {
+   "clip": "2026-11-10-arthvan-long.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-05T13:17:34+00:00",
+   "seconds": 9.65
+  },
+  "intro_sent": "2026-11-04T17:46:51+00:00",
+  "yt_id": "TqpzqE0whb0"
  },
  "kind": "long",
  "publish_day": "2026-11-10",
@@ -731,7 +745,7 @@
   },
   "title": "Sanchi Stupa ke andar *asthiyan* thi? 🤯"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   17.97,
@@ -798,6 +812,7 @@
    "text": "Sanchi stupa mein Buddha ki asthiyan thi, ya khaali gumbad? Ek angrez afsar ne khazane ke liye ise cheer diya. Chaliye, shuru se dekhte hain.",
    "words": 25
   },
+  "look": "indian-comic",
   "notes": "Buddhist heritage; archaeology lane.",
   "place": "Sanchi, Madhya Pradesh",
   "priority": 1,
@@ -807,6 +822,6 @@
   "title_hi": "Sanchi, Ashok ka stupa",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-11-04T17:46:54+00:00",
+ "updated": "2026-11-05T13:17:43+00:00",
  "writer": "claude"
 }
