@@ -629,9 +629,35 @@ def collect(piece, deps, root: Path, now: datetime | None = None, notify=None, t
         pieces.save(piece, root)
         return "rejected" if piece.ids.get("intro_rejected") else "waiting", piece
     pipeline.finish_upload(piece, deps, root, video, thumb, out_dir)
+    _drop_other_copies(piece, root, notify)
     notify(f"🎬 {piece.id}: " + ("your intro is merged and the piece is scheduled for its slot." if action == "compose"
                                else "the plain version is scheduled for its slot."))
     return ("uploaded-intro" if action == "compose" else "uploaded-plain"), piece
+
+
+def _drop_other_copies(piece, root: Path, notify) -> list:
+    """After an upload: every other private copy scheduled for this slot goes (5 Nov 2026: two sweeps in parallel had uploaded
+    the same piece twice, and YouTube Studio showed two and three copies). Never raises."""
+    try:
+        gone = remove_duplicates(piece, piece.ids["yt_id"])
+        if gone:
+            pieces.save(piece, root)
+            notify(f"🎬 {piece.id}: {len(gone)} duplicate scheduled upload(s) removed: {', '.join(gone)}.")
+        return gone
+    except Exception as e:
+        notify(f"🎬 {piece.id}: duplicate uploads could not be checked ({secrets.scrub(str(e))[:120]}).")
+        return []
+
+
+def tidy_all(root: Path, notify=None) -> list:
+    """Every uploaded piece with a recorded YouTube id: the other private copies of its slot are removed. [(id, [gone])]."""
+    out = []
+    for p in pieces.list_all(root):
+        if p.status == "uploaded" and p.ids.get("yt_id") and enabled(p):
+            gone = _drop_other_copies(p, root, notify or (lambda t: None))
+            if gone:
+                out.append((p.id, gone))
+    return out
 
 
 def thumb_path(root: Path, piece) -> Path:
@@ -859,6 +885,8 @@ def redo_piece(piece, deps, root: Path, env=None, notify=None, transcribe=None, 
         piece.ids["yt_id_replaced"] = old
     video = out_dir / ("reel.mp4" if piece.kind == "short" else "long.mp4")
     pipeline.finish_upload(piece, deps, root, video, out_dir / "thumb.jpg", out_dir)
+    if not delete:
+        _drop_other_copies(piece, root, notify)
     notify(f"🎬 {piece.id}: your intro is merged and the piece is re-scheduled for its slot (YouTube {piece.ids['yt_id']}, the earlier upload removed).")
     return "re-uploaded-intro"
 
@@ -893,6 +921,10 @@ def main(argv=None) -> int:
     if a.ask_scheduled:
         from . import telegram
         print("asked:", ask_scheduled(ROOT, telegram.send) or "nothing"); return 0
+    if a.tidy == "all":
+        for pid, gone in tidy_all(ROOT, print):
+            print(f"{pid}: removed {', '.join(gone)}")
+        return 0
     if a.tidy:
         piece = pieces.load(a.tidy, ROOT)
         gone = remove_duplicates(piece, piece.ids["yt_id"])

@@ -130,7 +130,7 @@ def test_collect_merges_a_good_clip_and_uploads(tmp_path, monkeypatch):
     action, p = intro.collect(p, deps, tmp_path, now=datetime(2026, 11, 6, 9, 0, tzinfo=timezone.utc), notify=sent.append,
                               transcribe=lambda c: heard, compose_fn=lambda piece, clip, out: composed.append(clip.name))
     assert action == "uploaded-intro" and composed == ["2026-11-07-sglearning-short.mp4"] and deps.uploaded == [p.id]
-    assert pieces.load(p.id, tmp_path).status == "uploaded" and "merged" in sent[0]
+    assert pieces.load(p.id, tmp_path).status == "uploaded" and any("merged" in t for t in sent)
 
 
 def test_collect_rejects_a_wrong_clip_once_and_waits_then_plain_at_the_deadline(tmp_path, monkeypatch):
@@ -378,3 +378,21 @@ def test_the_setting_matches_the_reels_subject(tmp_path):
     q = _piece(); q.script["title"] = "Kuch aur"; q.script["hook"] = "Ek sawaal"; q.script["scenes"] = []
     assert intro.setting_for(q) in intro.SETTINGS["sglearning"]                 # nothing known: the rotating list
     assert intro.prompt_for(q, {"closing": "x.", "setting": "a tea stall"}).count("Setting: a tea stall") == 1
+
+
+def test_a_first_upload_drops_the_other_copies_of_its_slot(tmp_path, monkeypatch):
+    """5 Nov 2026: two sweeps in parallel uploaded the same piece twice; YouTube Studio showed Tirupati and Unakoti twice, Karni Mata thrice."""
+    from engine import youtube
+    p = _piece(); p.status = "intro-wait"; p.ids["intro_sent"] = "x"
+    p.topic["intro"] = intro.plan(p, ask=lambda _p: "Aapka paisa doobta hai"); pieces.save(p, tmp_path)
+    out = tmp_path / "out" / p.id; out.mkdir(parents=True); (out / "reel.mp4").write_bytes(b"reel")
+    c = intro.clip_path(tmp_path, p); c.parent.mkdir(parents=True, exist_ok=True); c.write_bytes(b"clip")
+    deleted = []
+    monkeypatch.setattr(intro, "duration", lambda path: 9.9)
+    monkeypatch.setattr(youtube, "access_token", lambda ch, env=None: "t")
+    monkeypatch.setattr(youtube, "delete", lambda tok, vid: deleted.append(vid) or True)
+    monkeypatch.setattr(intro, "existing_uploads", lambda pc, tok, call=None: [{"id": "twin", "uploaded": None, "duration": ""}, {"id": pc.ids["yt_id"], "uploaded": None, "duration": ""}])
+    deps = _Deps(); sent = []
+    action, q = intro.collect(p, deps, tmp_path, now=datetime(2026, 11, 6, 9, 0, tzinfo=timezone.utc), notify=sent.append,
+                              transcribe=lambda c: p.topic["intro"]["text"].lower(), compose_fn=lambda *a: None)
+    assert action == "uploaded-intro" and deleted == ["twin"] and q.ids["yt_duplicates_removed"] == ["twin"]
