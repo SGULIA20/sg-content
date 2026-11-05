@@ -345,3 +345,11 @@ def test_a_redo_of_a_long_adopts_the_upload_of_a_run_whose_sync_failed(tmp_path,
     assert out == "adopted-intro" and seen["after"].isoformat().startswith("2026-10-23")
     q = pieces.load(p.id, tmp_path)
     assert q.status == "uploaded" and q.ids["yt_id"] == "fresh77" and q.ids["yt_id_replaced"] == "old123"
+
+
+def test_numbers_with_commas_are_spelt_out_for_the_avatar():
+    """Founder, 5 Nov 2026: "error in reading digits" on 99,99,999."""
+    assert intro.spell_number(25000) == "pachchees hazaar" and intro.spell_number(9999999) == "ninyaanve lakh ninyaanve hazaar nau sau ninyaanve"
+    assert intro.spoken("25,000 chuhe aur 829 points, Rs 1,50,000 ka bill") == "pachchees hazaar chuhe aur 829 points, Rs ek lakh pachaas hazaar ka bill"
+    p = _piece(); p.script["hook"] = "Karni Mata ke 25,000 chuhe, ek bhi bimari nahi?"
+    assert intro.plan(p, ask=lambda _p: "")["text"].startswith("Karni Mata ke pachchees hazaar chuhe")

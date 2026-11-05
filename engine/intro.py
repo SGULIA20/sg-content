@@ -37,6 +37,36 @@ CLOSINGS = ["Chaliye, poori baat samajhte hain.",                   # founder, 4
             CLOSING]
 
 
+_ONES = ["zero", "ek", "do", "teen", "chaar", "paanch", "chhe", "saat", "aath", "nau", "das", "gyarah", "barah", "terah", "chaudah", "pandrah",
+         "solah", "satrah", "atharah", "unnees", "bees", "ikkees", "baees", "teees", "chaubees", "pachchees", "chhabbees", "sattaees", "atthaees",
+         "untees", "tees", "ikattees", "battees", "taintees", "chauntees", "paintees", "chhattees", "saintees", "adtees", "untaalees", "chaalees",
+         "iktaalees", "bayaalees", "taintaalees", "chavaalees", "paintaalees", "chhiyaalees", "saintaalees", "adtaalees", "unchaas", "pachaas",
+         "ikyaavan", "baavan", "tirpan", "chauvan", "pachpan", "chhappan", "sattaavan", "atthaavan", "unsath", "saath", "iksath", "baasath",
+         "tirsath", "chaunsath", "painsath", "chhiyaasath", "sadsath", "adsath", "unhattar", "sattar", "ikhattar", "bahattar", "tihattar",
+         "chauhattar", "pachhattar", "chhihattar", "sathattar", "athhattar", "unaasi", "assi", "ikyaasi", "bayaasi", "tiraasi", "chauraasi",
+         "pachaasi", "chhiyaasi", "sattaasi", "atthaasi", "navaasi", "nabbe", "ikyaanve", "baanve", "tiraanve", "chauraanve", "pachaanve",
+         "chhiyaanve", "sattaanve", "atthaanve", "ninyaanve"]
+
+
+def spell_number(n: int) -> str:
+    """An Indian number in Hinglish words (4 Nov 2026: the avatar misread "99,99,999" from digits)."""
+    if n < 100:
+        return _ONES[n]
+    parts = []
+    for unit, name in ((10_000_000, "crore"), (100_000, "lakh"), (1_000, "hazaar"), (100, "sau")):
+        if n >= unit:
+            parts.append(f"{spell_number(n // unit)} {name}")
+            n %= unit
+    if n:
+        parts.append(_ONES[n])
+    return " ".join(parts)
+
+
+def spoken(text: str) -> str:
+    """Numbers written with commas (25,000 or 99,99,999) become words, so the avatar says them right; plain digits stay."""
+    return re.sub(r"\b\d{1,3}(?:,\d{2,3})+\b", lambda m: spell_number(int(m.group(0).replace(",", ""))), text)
+
+
 def closing_for(piece) -> str:
     return _pick(piece, CLOSINGS, 5)
 MAX_WORDS = 26                              # about 10 seconds of calm Hinglish
@@ -109,8 +139,8 @@ def bridge(piece, ask=_ask_claude) -> str:
 def plan(piece, ask=_ask_claude) -> dict:
     """{"question", "bridge", "closing", "text", "words", "aspect", "prompt"}; the question is the piece's own hook, so the body never contradicts it."""
     script = piece.script or {}
-    question = (script.get("hook") or (script.get("scenes") or [{}])[0].get("vo", "")).strip()
-    b = bridge(piece, ask)
+    question = spoken((script.get("hook") or (script.get("scenes") or [{}])[0].get("vo", "")).strip())
+    b = spoken(bridge(piece, ask))
     closing = closing_for(piece)
     text = " ".join(x for x in (question, b, closing) if x)
     if len(text.split()) > MAX_WORDS:                                 # over 10 seconds: a shorter closing first, the bridge goes last
