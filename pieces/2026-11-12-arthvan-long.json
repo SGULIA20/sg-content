@@ -850,6 +850,16 @@
    "Yeh khamba Delhi kaise aaya?"
   ],
   "id": "iron-pillar-delhi",
+  "intro": {
+   "aspect": "16:9",
+   "bridge": "Ghar ka gate zang khata hai, yeh khamba nahi.",
+   "closing": "Chaliye, poori baat samajhte hain.",
+   "prompt": "16:9 landscape, 1920x1080, exactly 10 seconds, natural and cinematic. Setting: the Qutub complex in Delhi, the Iron Pillar standing a few steps behind with the Qutub Minar beyond, late-afternoon light. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] standing, turned a little to the side, weight on one foot, one hand in a pocket, wearing a cream Nehru jacket over a white shirt. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, a direct look with a half-smile; on the second line, a slow nod, hand on chest; on \"Chaliye, poori baat samajhte hain\", a wave of the hand toward the lens. Prop: a printed photograph or old map of the place, held up to the camera for a moment. Camera: a slow pull-back from close-up to mid-shot as he finishes the question, then steady. @SGMythWorld watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. Export at 1920x1080.",
+   "question": "Mehrauli ka chhe ton loha, sadiyon se zang kyun nahi khata?",
+   "setting": "the Qutub complex in Delhi, the Iron Pillar standing a few steps behind with the Qutub Minar beyond, late-afternoon light",
+   "text": "Mehrauli ka chhe ton loha, sadiyon se zang kyun nahi khata? Ghar ka gate zang khata hai, yeh khamba nahi. Chaliye, poori baat samajhte hain.",
+   "words": 25
+  },
   "look": "indian-comic",
   "notes": "Science explains it (phosphorus, misawite layer); say so with the inscription history.",
   "patch_tries": 1,
