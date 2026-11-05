@@ -109,3 +109,4 @@
 {"day": "2026-11-05", "at": "2026-11-05T15:31:14+00:00", "ok": true, "dry_run": false, "made": [["2026-11-11-arthvan-short", "waiting"], ["2026-11-11-sglearning-short", "waiting"], ["2026-11-09-sglearning-long", "rejected"]], "stopped": ""}
 {"day": "2026-11-05", "at": "2026-11-05T15:51:41+00:00", "ok": true, "dry_run": false, "made": [["2026-11-11-arthvan-short", "waiting"], ["2026-11-11-sglearning-short", "waiting"], ["2026-11-09-sglearning-long", "rejected"]], "stopped": ""}
 {"day": "2026-11-05", "at": "2026-11-05T17:26:54+00:00", "ok": true, "dry_run": false, "made": [["2026-11-09-sglearning-long", "rejected"]], "stopped": ""}
+{"day": "2026-11-06", "at": "2026-11-05T21:20:46+00:00", "ok": true, "dry_run": false, "made": [["2026-11-09-sglearning-long", "rejected"], ["2026-11-12-arthvan-short", "intro-wait"], ["2026-11-12-sglearning-short", "intro-wait"]], "stopped": ""}
