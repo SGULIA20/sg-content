@@ -367,6 +367,11 @@ def test_the_setting_matches_the_reels_subject(tmp_path):
     assert intro.setting_for(m).startswith("the courtyard of the Asirgarh temple")
     k = _piece(channel="arthvan"); k.script["title"] = "Kumbhalgarh, China ke baad sabse lambi *deewar*?"; k.script["hook"] = "Kumbhalgarh ki deewar, China ke baad duniya mein sabse lambi?"
     assert "ramparts of the fort" in intro.setting_for(k)
+    t = _piece(channel="arthvan"); t.script["title"] = "Tirupati ke *Balaji* ka Kubera wala karza"; t.script["hook"] = "Tirupati ke Balaji, Kubera ka karza aaj bhi chuka rahe hain?"
+    t.script["scenes"] = [{"vo": "Mandir ka karza, bank nahi."}]
+    assert intro.setting_for(t).startswith("the courtyard of the Tirupati temple")     # a Myth place beats a money word
+    s2 = _piece(channel="arthvan"); s2.script["title"] = "Sanchi Stupa ke andar *asthiyan* thi?"; s2.script["hook"] = "1822 mein Sanchi stupa ko khazane ke liye cheera gaya."
+    assert intro.setting_for(s2).startswith("the courtyard of the Sanchi temple")
     q = _piece(); q.script["title"] = "Kuch aur"; q.script["hook"] = "Ek sawaal"; q.script["scenes"] = []
     assert intro.setting_for(q) in intro.SETTINGS["sglearning"]                 # nothing known: the rotating list
     assert intro.prompt_for(q, {"closing": "x.", "setting": "a tea stall"}).count("Setting: a tea stall") == 1

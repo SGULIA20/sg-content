@@ -155,17 +155,26 @@ PLACES = [                                                            # founder,
 ]
 
 
+def _place_name(script: dict) -> str:
+    """The place a Myth video is about: the first capitalised word of the title (Asirgarh, Kumbhalgarh, Sanchi, Tirupati), never the emoji."""
+    for w in re.sub(r"[*_,:?!]", " ", script.get("title", "")).split():
+        if w[:1].isupper() and w.isascii() and len(w) > 3 and w.lower() not in ("china", "india", "isro", "asi", "rbi", "mahabharat", "kahan", "kaun", "kyun", "kya"):
+            return w
+    return ""
+
+
 def setting_for(piece, p: dict | None = None) -> str:
     """The background that matches the subject: the title and hook, then the first scenes, are searched for a known place; a Myth
     place is named outright. Falls back to the rotating list."""
     script = piece.script or {}
     head = " ".join([script.get("title", ""), script.get("hook", "")]).lower()
     body = " ".join(sc.get("vo", "") for sc in (script.get("scenes") or [])[:3]).lower()
-    name = re.sub(r"[*_]", "", (re.search(r"\*(.+?)\*", script.get("title", "")) or [None, ""])[1]).strip()
+    name = _place_name(script)
+    places = PLACES if piece.channel == "sglearning" else [x for x in PLACES if "this video" in x[1]] + [x for x in PLACES if "this video" not in x[1]]
     for text in (head, body):                                           # the title and hook decide first, the opening scenes after
-      for pattern, place in PLACES:
+      for pattern, place in places:                                     # a Myth piece looks for its place before any money word (karza, bank)
         if re.search(pattern, text):
-            if piece.channel == "arthvan" and name and name[0].isupper() and "this video is about" in place:
+            if piece.channel == "arthvan" and name and "this video" in place:
                 place = place.replace("the temple this video is about", f"the {name} temple").replace("the fort this video is about", f"{name} fort") \
                              .replace("the carved hill this video is about", f"the carved hill of {name}").replace("of this video's place", f"at {name}")
             return place
