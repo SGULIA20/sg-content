@@ -144,7 +144,9 @@
    "usd": 0.09429,
    "voice": 12
   },
+  "ig_reel_id": "18442642822181964",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-05-arthvan-short.mp4",
    "clip_seconds": 10.03,
@@ -153,6 +155,8 @@
   },
   "intro_sent": "2026-11-04T10:49:33+00:00",
   "out_sha": "eb5b613cc8d527e9898fc71b4d8e88454ddbcfdd",
+  "threads_id": "18079944821419167",
+  "threads_poll_id": "17905934466599341",
   "yt_id": "BmbntsT3bfc",
   "yt_id_replaced": "jy9B06Xthyg"
  },
@@ -381,7 +385,7 @@
   },
   "title": "Ravan ki *Lanka* asal mein kahan thi? 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   3.81,
@@ -425,6 +429,6 @@
   "title_hi": "Ravan ki Lanka kahan thi",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-11-04T11:45:41+00:00",
+ "updated": "2026-11-05T16:13:07+00:00",
  "writer": "claude"
 }
