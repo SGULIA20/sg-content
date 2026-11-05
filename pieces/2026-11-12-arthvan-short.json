@@ -86,7 +86,14 @@
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
-  "intro_sent": "2026-11-05T21:11:22+00:00"
+  "intro": {
+   "clip": "2026-11-12-arthvan-short.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-05T21:51:44+00:00",
+   "seconds": 10.03
+  },
+  "intro_sent": "2026-11-05T21:11:22+00:00",
+  "yt_id": "dxnhsdqef04"
  },
  "kind": "short",
  "publish_day": "2026-11-12",
@@ -296,7 +303,7 @@
   },
   "title": "Lonar ki jheel, aasmaan se giri *ulka*? 🤯"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   4.61,
@@ -338,12 +345,13 @@
    "words": 24
   },
   "layers": false,
+  "look": "indian-comic",
   "notes": "Science is solid here; the demon story is scripture/legend.",
   "place": "Lonar, Maharashtra",
   "target_minutes": null,
   "title_hi": "Lonar, ulka se bani jheel",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-11-05T21:11:26+00:00",
+ "updated": "2026-11-05T21:51:53+00:00",
  "writer": "claude"
 }

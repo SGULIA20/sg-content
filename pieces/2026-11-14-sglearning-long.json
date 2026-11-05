@@ -37,15 +37,25 @@
    "ta": "AUieDaav1SG27XlPkRcvLK__sxWikEDW3FCqavJOA5mhclrkLqooHpNa0C90SR8tETU"
   },
   "cost": {
-   "inr": 60.0,
-   "usd": 0.580066,
-   "voice": 39
+   "inr": 120.0,
+   "usd": 0.97702,
+   "voice": 41
   },
-  "yt_id": "HIuVorxOZsE"
+  "intro": {
+   "clip": "2026-11-14-sglearning-long.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-05T22:12:24+00:00",
+   "seconds": 9.53
+  },
+  "thumb_sha": "dc5164e078f9e3c6",
+  "yt_id": "lnkE6PoAmWg",
+  "yt_id_replaced": "HIuVorxOZsE"
  },
  "kind": "long",
  "publish_day": "2026-11-14",
- "reasons": [],
+ "reasons": [
+  "re-made from the caches to carry the founder's intro"
+ ],
  "script": {
   "captions": {
    "instagram": {
@@ -540,33 +550,33 @@
   137.73,
   152.54,
   165.67,
-  179.08,
-  194.65,
-  208.58,
-  222.83,
-  240.84,
-  256.81,
-  275.98,
-  293.03,
-  308.8,
-  321.45,
-  339.02,
-  354.75,
-  372.08,
-  387.49,
-  402.3,
-  418.27,
-  433.32,
-  447.97,
-  463.1,
-  476.99,
-  491.32,
-  507.53,
-  524.18,
-  539.51,
-  553.88,
-  567.69,
-  581.42
+  179.72,
+  195.29,
+  209.22,
+  223.47,
+  241.48,
+  257.45,
+  276.62,
+  293.67,
+  309.44,
+  322.09,
+  339.66,
+  355.39,
+  372.72,
+  388.13,
+  402.94,
+  418.91,
+  433.96,
+  448.61,
+  463.74,
+  477.63,
+  491.96,
+  508.17,
+  524.82,
+  540.15,
+  554.52,
+  568.33,
+  580.54
  ],
  "topic": {
   "hooks": [
@@ -591,6 +601,6 @@
   "title": "500 rupaye mahine ki SIP: 20 saal mein kya bana, aur kya nahi bana",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-10-25T14:09:07+00:00",
+ "updated": "2026-11-05T22:12:41+00:00",
  "writer": "claude"
 }
