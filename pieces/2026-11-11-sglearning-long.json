@@ -27,11 +27,19 @@
    "ta": "AUieDaaERJ81c2-FGUft8wnPDl14vWO2rKij3fp9s_6TWX9ynriMTR_hTepj6r1T6Lo"
   },
   "cost": {
-   "inr": 60.0,
-   "usd": 0.998666,
+   "inr": 120.0,
+   "usd": 1.337046,
    "voice": 39
   },
-  "yt_id": "et4lCbGQdkk"
+  "intro": {
+   "clip": "2026-11-11-sglearning-long.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-05T16:52:26+00:00",
+   "seconds": 10.03
+  },
+  "thumb_sha": "b339459ad8c161a2",
+  "yt_id": "_N5t6L0D6ss",
+  "yt_id_replaced": "et4lCbGQdkk"
  },
  "kind": "long",
  "publish_day": "2026-11-11",
@@ -49,7 +57,8 @@
   "research budget used for today (4 calls); the next quota day retries",
   "try 1: numbers without a source: 11, 1.2, 10000, 11, 1.2, 10000",
   "try 2: numbers without a source: 11, 1.2, 10000",
-  "try 3: numbers without a source: 11, 1.2, 10000"
+  "try 3: numbers without a source: 11, 1.2, 10000",
+  "re-made from the caches to carry the founder's intro"
  ],
  "script": {
   "captions": {
@@ -595,6 +604,6 @@
   "title": "Purana ya naya tax regime: 10 lakh salary par kaun sa jeb bachaata hai",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-10-25T12:59:09+00:00",
+ "updated": "2026-11-05T16:52:35+00:00",
  "writer": "claude"
 }
