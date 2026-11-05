@@ -566,10 +566,11 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
     def upload_fn(piece, video, thumb):
         import os
         token = youtube.access_token(piece.channel, env)
+        from datetime import datetime as _dt, timedelta as _td, timezone as _tz
         when = slots.publish_at(piece.channel, piece.kind, piece.publish_day)
-        if piece.topic.get("slot_ist"):                                   # an extra Reel (engine/extra.py): its own time, at least 10 minutes ahead
-            from datetime import datetime as _dt, timedelta as _td, timezone as _tz
-            when = max(slots.utc_for(piece.publish_day, piece.topic["slot_ist"]), _dt.now(_tz.utc) + _td(minutes=10))
+        if piece.topic.get("slot_ist"):                                   # an extra Reel (engine/extra.py): its own time
+            when = slots.utc_for(piece.publish_day, piece.topic["slot_ist"])
+        when = max(when, _dt.now(_tz.utc) + _td(minutes=10))              # a slot already passed (the intro clip came late): 10 minutes from now
         meta = youtube.metadata(piece, when, env or os.environ)
         vid = youtube.upload(token, video, meta)
         youtube.set_thumbnail(token, vid, thumb)
