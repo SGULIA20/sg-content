@@ -67,12 +67,19 @@
    "ta": "AUieDaZcGyYcfxVMdVe6ZOixD2VWWGkvMGxhRDWn2P7Dgkr5iyNWtrbXLyrvdniGe6k"
   },
   "cost": {
-   "inr": 61.5,
-   "usd": 0.696884,
+   "inr": 123.0,
+   "usd": 1.109158,
    "voice": 40
   },
+  "intro": {
+   "clip": "2026-11-08-arthvan-long.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-05T07:44:33+00:00",
+   "seconds": 10.03
+  },
   "intro_sent": "2026-11-04T10:49:45+00:00",
-  "yt_id": "vKBPhn7er8s"
+  "yt_id": "-NQolPB4-xI",
+  "yt_id_replaced": "vKBPhn7er8s"
  },
  "kind": "long",
  "publish_day": "2026-11-08",
@@ -91,7 +98,8 @@
   "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it",
   "draft cooking in Claude's batch lane; the next run collects it",
-  "research budget used for today (4 calls); the next quota day retries"
+  "research budget used for today (4 calls); the next quota day retries",
+  "re-made from the caches to carry the founder's intro"
  ],
  "script": {
   "captions": {
@@ -681,6 +689,6 @@
   "title_hi": "Karni Mata, 25,000 chuhon ka mandir",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-25T07:53:03+00:00",
+ "updated": "2026-11-05T07:44:37+00:00",
  "writer": "claude"
 }
