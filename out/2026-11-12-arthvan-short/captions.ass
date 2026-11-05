@@ -1,0 +1,57 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.98,Default,,0,0,0,,Lonar ki jheel,
+Dialogue: 0,0:00:00.98,0:00:03.43,Default,,0,0,0,,kya ise aasmaan se giri ulka
+Dialogue: 0,0:00:03.43,0:00:04.16,Default,,0,0,0,,ne khoda?
+Dialogue: 0,0:00:04.61,0:00:06.35,Default,,0,0,0,,Skanda Purana ki katha mein,
+Dialogue: 0,0:00:06.35,0:00:08.86,Default,,0,0,0,,Lonasura daitya dharti ke neeche chhupa
+Dialogue: 0,0:00:08.86,0:00:09.05,Default,,0,0,0,,tha.
+Dialogue: 0,0:00:09.50,0:00:11.83,Default,,0,0,0,,Vishnu ne Daitya Sudan roop mein
+Dialogue: 0,0:00:11.83,0:00:13.65,Default,,0,0,0,,gufa ko pair se khola.
+Dialogue: 0,0:00:13.65,0:00:15.46,Default,,0,0,0,,Wahi gadda jheel bana.
+Dialogue: 0,0:00:15.91,0:00:18.32,Default,,0,0,0,,Geological Survey of India ne yahan
+Dialogue: 0,0:00:18.32,0:00:19.33,Default,,0,0,0,,ke patthar jaanche.
+Dialogue: 0,0:00:19.33,0:00:21.14,Default,,0,0,0,,Unme maskelynite mila,
+Dialogue: 0,0:00:21.14,0:00:22.95,Default,,0,0,0,,yaani takkar se patthar ka kaanch
+Dialogue: 0,0:00:22.95,0:00:23.55,Default,,0,0,0,,ban jaana.
+Dialogue: 0,0:00:24.00,0:00:25.30,Default,,0,0,0,,Zameen basalt ki hai,
+Dialogue: 0,0:00:25.30,0:00:27.67,Default,,0,0,0,,yaani lava se bana kaala patthar.
+Dialogue: 0,0:00:27.67,0:00:29.62,Default,,0,0,0,,Ek ulka bahut tez raftaar se
+Dialogue: 0,0:00:29.62,0:00:30.48,Default,,0,0,0,,ispar giri.
+Dialogue: 0,0:00:30.93,0:00:33.45,Default,,0,0,0,,Duniya mein aise pakke takkar wale
+Dialogue: 0,0:00:33.45,0:00:34.83,Default,,0,0,0,,gadde bahut kam hain,
+Dialogue: 0,0:00:34.83,0:00:36.21,Default,,0,0,0,,Lonar unmein ek hai.
+Dialogue: 0,0:00:36.66,0:00:38.49,Default,,0,0,0,,Par ulka giri kab?
+Dialogue: 0,0:00:38.49,0:00:40.01,Default,,0,0,0,,Ek tareeka hai,
+Dialogue: 0,0:00:40.01,0:00:42.75,Default,,0,0,0,,patthar mein band roshni ka hisaab.
+Dialogue: 0,0:00:42.75,0:00:45.18,Default,,0,0,0,,Woh kehta hai lagbhag 52,000 saal.
+Dialogue: 0,0:00:45.63,0:00:47.24,Default,,0,0,0,,Argon-argon dating,
+Dialogue: 0,0:00:47.24,0:00:49.93,Default,,0,0,0,,yaani patthar ki gas wali ghadi,
+Dialogue: 0,0:00:49.93,0:00:51.27,Default,,0,0,0,,kehti hai 570,000 saal.
+Dialogue: 0,0:00:51.72,0:00:53.18,Default,,0,0,0,,Ulka kahan se aayi,
+Dialogue: 0,0:00:53.18,0:00:54.88,Default,,0,0,0,,aaj bhi koi nahi jaanta.
+Dialogue: 0,0:00:55.33,0:00:57.20,Default,,0,0,0,,Phir ek din jheel achanak gulabi
+Dialogue: 0,0:00:57.20,0:00:57.58,Default,,0,0,0,,ho gayi.
+Dialogue: 0,0:00:57.58,0:00:59.82,Default,,0,0,0,,Agharkar Research Institute ne bataya,
+Dialogue: 0,0:00:59.82,0:01:01.50,Default,,0,0,0,,namak pasand chhote jeev badh gaye
+Dialogue: 0,0:01:01.50,0:01:01.69,Default,,0,0,0,,the.
+Dialogue: 0,0:01:02.14,0:01:04.29,Default,,0,0,0,,Aaj kinare par Daitya Sudan mandir
+Dialogue: 0,0:01:04.29,0:01:04.49,Default,,0,0,0,,hai.
+Dialogue: 0,0:01:04.49,0:01:07.23,Default,,0,0,0,,Archaeological Survey of India iski dekhbhaal
+Dialogue: 0,0:01:07.23,0:01:07.82,Default,,0,0,0,,karta hai.
+Dialogue: 0,0:01:08.27,0:01:09.19,Default,,0,0,0,,Kisne banwaya?
+Dialogue: 0,0:01:09.19,0:01:10.81,Default,,0,0,0,,Kuch kehte hain Chalukya,
+Dialogue: 0,0:01:10.81,0:01:12.43,Default,,0,0,0,,kuch kehte hain Yadava.
+Dialogue: 0,0:01:12.88,0:01:14.72,Default,,0,0,0,,Us dost ko bhejo jo kehta
+Dialogue: 0,0:01:14.72,0:01:17.24,Default,,0,0,0,,hai purani kathayein sirf kahani hain.
