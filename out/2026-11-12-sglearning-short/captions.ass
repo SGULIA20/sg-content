@@ -1,0 +1,40 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.57,Default,,0,0,0,,Sensex 74,682 chhoo kar ek hi
+Dialogue: 0,0:00:02.57,0:00:04.40,Default,,0,0,0,,din mein kyun phisla?
+Dialogue: 0,0:00:04.85,0:00:06.26,Default,,0,0,0,,Canteen mein sab khush the,
+Dialogue: 0,0:00:06.26,0:00:08.37,Default,,0,0,0,,portfolio hara dikh raha tha.
+Dialogue: 0,0:00:08.82,0:00:09.89,Default,,0,0,0,,Colleague bola,
+Dialogue: 0,0:00:09.89,0:00:10.96,Default,,0,0,0,,aaj aur chadhega,
+Dialogue: 0,0:00:10.96,0:00:12.03,Default,,0,0,0,,aur paisa daalo.
+Dialogue: 0,0:00:12.03,0:00:12.88,Default,,0,0,0,,Logic laga,
+Dialogue: 0,0:00:12.88,0:00:13.95,Default,,0,0,0,,jo chadh raha hai,
+Dialogue: 0,0:00:13.95,0:00:15.02,Default,,0,0,0,,chadhta rahega.
+Dialogue: 0,0:00:15.47,0:00:17.33,Default,,0,0,0,,Par Middle East mein tension se
+Dialogue: 0,0:00:17.33,0:00:19.43,Default,,0,0,0,,kachcha tel mehnga ho raha tha.
+Dialogue: 0,0:00:19.88,0:00:22.61,Default,,0,0,0,,India lagbhag 88 percent crude bahar
+Dialogue: 0,0:00:22.61,0:00:23.74,Default,,0,0,0,,se khareedta hai.
+Dialogue: 0,0:00:23.74,0:00:24.42,Default,,0,0,0,,Tel mehnga,
+Dialogue: 0,0:00:24.42,0:00:26.47,Default,,0,0,0,,toh petrol se factory tak sab
+Dialogue: 0,0:00:26.47,0:00:26.92,Default,,0,0,0,,mehnga.
+Dialogue: 0,0:00:27.37,0:00:30.78,Default,,0,0,0,,Dopahar baad bade investors bechne lage,
+Dialogue: 0,0:00:30.78,0:00:32.09,Default,,0,0,0,,shaam tak badhat gayab.
+Dialogue: 0,0:00:32.54,0:00:33.12,Default,,0,0,0,,Asli baat,
+Dialogue: 0,0:00:33.12,0:00:34.67,Default,,0,0,0,,ek din ka hara-laal shor hai,
+Dialogue: 0,0:00:34.67,0:00:35.64,Default,,0,0,0,,kahani nahi.
+Dialogue: 0,0:00:35.64,0:00:36.99,Default,,0,0,0,,Crude pe nazar rakho,
+Dialogue: 0,0:00:36.99,0:00:38.92,Default,,0,0,0,,wahi aapki jeb tak pahunchta hai.
+Dialogue: 0,0:00:38.92,0:00:40.86,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:41.31,0:00:42.91,Default,,0,0,0,,Us dost ko bhejo jo har
+Dialogue: 0,0:00:42.91,0:00:44.75,Default,,0,0,0,,ghante Sensex check karta hai.

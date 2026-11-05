@@ -1,0 +1,252 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 73709.69,
+   "quote": "SENSEX closed at 73,709.69, down 143.21 points, after opening at 74,337.93 and touching an intraday high of 74,682.19 and a low of 73,229.45.",
+   "source_date": "2026-10-22",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/sensex-weekly-expiry-today-prediction-can-bulls-stage-comeback-despite-crude-oil-shock-key-levels-traders-should-watch-11792641111907.html",
+   "text": "The BSE Sensex closed down 143.21 points to settle at 73,709.69 ahead of the weekly derivatives expiry session.",
+   "unit": "index points"
+  },
+  {
+   "label": "reported",
+   "number": 74682.19,
+   "quote": "SENSEX closed at 73,709.69, down 143.21 points, after opening at 74,337.93 and touching an intraday high of 74,682.19 and a low of 73,229.45.",
+   "source_date": "2026-10-22",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/sensex-weekly-expiry-today-prediction-can-bulls-stage-comeback-despite-crude-oil-shock-key-levels-traders-should-watch-11792641111907.html",
+   "text": "During the previous trading session, the Sensex had surged to an intraday high of 74,682.19 before aggressive afternoon selling erased the gains.",
+   "unit": "index points"
+  },
+  {
+   "label": "analyst-view",
+   "number": 74500.0,
+   "quote": "On the upside, a sustained move above 74,500 may improve sentiment and open the door for a recovery.",
+   "source_date": "2026-10-22",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/sensex-weekly-expiry-today-prediction-can-bulls-stage-comeback-despite-crude-oil-shock-key-levels-traders-should-watch-11792641111907.html",
+   "text": "Technical analysts noted that a decisive breakout above the 74,500 resistance level is required to rebuild bullish momentum in the Sensex.",
+   "unit": "index points"
+  },
+  {
+   "label": "analyst-view",
+   "number": 73500.0,
+   "quote": "Sustaining above 73,500 will be important to preserve near-term stability, while a break below the 73,200 could invite further weakness.",
+   "source_date": "2026-10-22",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/sensex-weekly-expiry-today-prediction-can-bulls-stage-comeback-despite-crude-oil-shock-key-levels-traders-should-watch-11792641111907.html",
+   "text": "Market strategists pointed out that the 73,500 mark represents vital immediate support necessary to prevent deeper structural weakness.",
+   "unit": "index points"
+  },
+  {
+   "label": "reported",
+   "number": 22682.0,
+   "quote": "Gift Nifty was trading around the 22,682 level, down nearly 46.50 points or 0.20% from the Nifty futures' previous close, indicating a negative opening for the Indian stock market indices.",
+   "source_date": "2026-10-22",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/sensex-weekly-expiry-today-prediction-can-bulls-stage-comeback-despite-crude-oil-shock-key-levels-traders-should-watch-11792641111907.html",
+   "text": "GIFT Nifty futures traded lower at 22,682, signaling early morning weakness across Indian equities.",
+   "unit": "index points"
+  }
+ ],
+ "id": "2026-11-12-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-05",
+   "drafts": 1
+  },
+  "cost": {
+   "inr": 13.5,
+   "usd": 0.057658,
+   "voice": 8
+  },
+  "drafts": 1,
+  "intro_sent": "2026-11-05T21:20:36+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-12",
+ "reasons": [
+  "waiting for the founder's intro clip until 12 Nov 10:00 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Sensex 74,682 chhoo kar ek hi din mein kyun phisla? 📉\nDopahar tak sab hara, shaam tak badhat gayab.\nWajah: kachcha tel. India lagbhag 88 percent crude bahar se khareedta hai.\nAap market roz dekhte ho ya crude pe nazar rakhte ho?\nYeh investment advice nahi hai.\nUs dost ko bhejo jo har ghante Sensex check karta hai.",
+    "hashtags": [
+     "#Sensex",
+     "#CrudeOil",
+     "#StockMarketIndia",
+     "#ShareMarket",
+     "#SeedhiBaat",
+     "#PaiseKiKhabar",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Sensex 74,682 chhoo kar ek hi din mein phisal gaya. Wajah? Kachcha tel. India lagbhag 88 percent crude bahar se khareedta hai. Ek din ka hara-laal shor hai, kahani nahi. Aap market roz check karte ho ya crude pe nazar rakhte ho? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Sensex 74,682 chhoo kar ek hi din mein kyun phisla? India lagbhag 88 percent crude bahar se khareedta hai, isliye tel mehnga hote hi market ghabra jaata hai. Ek din ka hara-laal shor hai, asli asar aapki jeb tak crude ke raaste pahunchta hai. Us dost ko bhejo jo har ghante Sensex check karta hai.",
+    "tags": [
+     "sensex",
+     "nifty",
+     "crude oil",
+     "share market",
+     "stock market india",
+     "sensex kyun gira",
+     "kachcha tel",
+     "middle east",
+     "hinglish finance",
+     "learning with sg"
+    ],
+    "title": "Sensex 74,682 se kyun gira? Crude ka sach"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo har ghante Sensex check karta hai.",
+  "hook": "Sensex 74,682 chhoo kar ek hi din mein kyun phisla?",
+  "scenes": [
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "A giant stock market ticker board on a city building fills the frame, a bright green arrow at its peak cracking and bending downward into red, dramatic late-afternoon light, pigeons scattering, no readable text",
+     "type": "art"
+    },
+    "vo": "Sensex 74,682 chhoo kar ek hi din mein kyun phisla?"
+   },
+   {
+    "facts_used": [],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "A busy office canteen at lunchtime, young employees laughing over thalis and chai, relaxed happy mood, warm midday light through windows",
+     "type": "art"
+    },
+    "vo": "Canteen mein sab khush the, portfolio hara dikh raha tha."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "A confident young man in office wear leaning across a canteen table, gesturing upward with his hand, colleagues nodding eagerly, excited optimistic mood, midday",
+     "type": "art"
+    },
+    "vo": "Colleague bola, aaj aur chadhega, aur paisa daalo. Logic laga, jo chadh raha hai, chadhta rahega."
+   },
+   {
+    "facts_used": [],
+    "label": "crude",
+    "visual": {
+     "card": null,
+     "prompt": "A huge oil tanker ship on a dark stormy sea, oil barrels stacked on a dock in the foreground, tense ominous atmosphere, grey clouds gathering",
+     "type": "art"
+    },
+    "vo": "Par Middle East mein tension se kachcha tel mehnga ho raha tha."
+   },
+   {
+    "facts_used": [],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "A long line of oil tankers arriving at an Indian port, pipelines leading to a petrol pump, a delivery truck and a factory chimney, all connected like a chain, overcast afternoon",
+     "type": "art"
+    },
+    "vo": "India lagbhag 88 percent crude bahar se khareedta hai. Tel mehnga, toh petrol se factory tak sab mehnga."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "fall",
+    "visual": {
+     "card": null,
+     "prompt": "The same canteen in the evening, half-empty, the confident young man now sitting quietly with a cold cup of chai, stunned expression, dim orange evening light",
+     "type": "art"
+    },
+    "vo": "Dopahar baad bade investors bechne lage, shaam tak badhat gayab."
+   },
+   {
+    "facts_used": [],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "SG, early forties, beard, striped shirt, standing calmly beside a petrol pump at dusk, pointing toward a single oil barrel, reassuring thoughtful expression",
+     "type": "art"
+    },
+    "vo": "Asli baat, ek din ka hara-laal shor hai, kahani nahi. Crude pe nazar rakho, wahi aapki jeb tak pahunchta hai. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "A young man at a bus stop at night anxiously glancing at a wristwatch, a friend beside him smiling and handing him a cup of chai, warm streetlight glow",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo har ghante Sensex check karta hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "SENSEX",
+   "name_hi": "सेंसेक्स",
+   "scene": "LEFT: a giant stock ticker board glowing green with a soaring arrow at noon; RIGHT: the same board at dusk blazing red with the arrow crashing down, oil barrels stacked in the foreground",
+   "words": [
+    "88% TEL",
+    "KHATRA"
+   ],
+   "words_hi": [
+    "88% तेल",
+    "खतरा"
+   ]
+  },
+  "title": "Sensex upar gaya, phir *achanak* kyun gira? 📉"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  4.85,
+  8.82,
+  15.47,
+  19.88,
+  27.37,
+  32.54,
+  41.31
+ ],
+ "topic": {
+  "id": "2026-10-27-sglearning-short#second",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "Aaiye, iske peeche ki kahani dekhte hain.",
+   "prompt": "9:16 vertical, 1080x1920, exactly 10 seconds, natural and cinematic. Setting: a broker's office, a wall of green and red tickers softly blurred behind. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] seated on a stool, elbows on knees, leaning in, close and conversational, wearing a cream Nehru jacket over a white shirt. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, eyebrows lift and one open palm turns up; on the second line, a slow nod and a half-smile; on \"Aaiye, iske peeche ki kahani dekhte hain\", a small \"come with me\" gesture toward the viewer. Prop: a bike key and a fuel receipt. Camera: eye level, slow push-in from mid-shot to medium close-up over the 10 seconds. @SGLearning watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. Export at 1080x1920.",
+   "question": "Sensex chauhattar hazaar chhe sau bayaasi chhoo kar ek hi din mein kyun phisla?",
+   "text": "Sensex chauhattar hazaar chhe sau bayaasi chhoo kar ek hi din mein kyun phisla? Aaiye, iske peeche ki kahani dekhte hain.",
+   "words": 21
+  },
+  "layers": false,
+  "link": "https://www.livemint.com/market/stock-market-news/sensex-weekly-expiry-today-prediction-can-bulls-stage-comeback-despite-crude-oil-shock-key-levels-traders-should-watch-11792641111907.html",
+  "published": "2026-10-22T04:16:15+00:00",
+  "rank": 3,
+  "remake_kind": "weak",
+  "remake_note": "A SECOND CHANCE for a topic whose first Reel few people watched (it had 55 views). Same sourced facts, but a NEW angle: a sharper opening question, a different first picture, a different story moment. Never reuse its lines or its title.",
+  "remake_of": "2026-10-27-sglearning-short",
+  "remake_views": 55,
+  "source": "Mint Markets",
+  "summary": "The Sensex and Nifty opened lower as rising crude prices, Middle East tensions and weak Asian markets heightened investor concerns. Analysts expect the Sensex to remain range-bound, with support at 73,200–73,500 and resistance at 74,300–74,500.&amp;nbsp;",
+  "target_minutes": null,
+  "title": "Sensex weekly expiry today prediction: Can bulls stage comeback despite crude oil shock? Key levels traders should watch",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-11-05T21:20:39+00:00",
+ "writer": "claude"
+}
