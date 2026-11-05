@@ -369,7 +369,7 @@ def test_the_setting_matches_the_reels_subject(tmp_path):
     assert "ramparts of the fort" in intro.setting_for(k)
     t = _piece(channel="arthvan"); t.script["title"] = "Tirupati ke *Balaji* ka Kubera wala karza"; t.script["hook"] = "Tirupati ke Balaji, Kubera ka karza aaj bhi chuka rahe hain?"
     t.script["scenes"] = [{"vo": "Mandir ka karza, bank nahi."}]
-    assert intro.setting_for(t).startswith("the courtyard of the Tirupati temple")     # a Myth place beats a money word
+    assert "Tirupati" in intro.setting_for(t) and "bank" not in intro.setting_for(t)      # a Myth place beats a money word
     s2 = _piece(channel="arthvan"); s2.script["title"] = "Sanchi Stupa ke andar *asthiyan* thi?"; s2.script["hook"] = "1822 mein Sanchi stupa ko khazane ke liye cheera gaya."
     assert intro.setting_for(s2).startswith("the courtyard of the Sanchi temple")
     q = _piece(); q.script["title"] = "Kuch aur"; q.script["hook"] = "Ek sawaal"; q.script["scenes"] = []

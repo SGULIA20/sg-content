@@ -149,7 +149,7 @@ PLACES = [                                                            # founder,
     (r"\b(tax|itr|gst|income tax)\b", "outside the income tax office, its name board and steps behind"),
     (r"\b(mandir|temple|moorti|moortiyan|stupa|devta|shiva|krishna|mata)\b", "the courtyard of the temple this video is about, carved stone and pillars behind, early morning light"),
     (r"\b(qila|fort|deewar|wall|ramparts|garh)\b", "the ramparts of the fort this video is about, the wall running away into mist behind"),
-    (r"\b(pahad|hill|mountain|parbat)\b", "a rocky hillside path with the carved hill this video is about behind"),
+    (r"\b(pahad|hill|mountain|parbat)\b", "a rocky hillside path, the hill this video is about rising behind"),
     (r"\b(nadi|river|ghat|samundar|sea|setu)\b", "a riverbank at sunrise, the water and far bank of this video's place behind"),
     (r"\b(khudai|excavation|asi|archaeolog|rakhigarhi|harappa)\b", "the edge of an excavation trench, string grids and brick walls behind"),
 ]
@@ -176,7 +176,7 @@ def setting_for(piece, p: dict | None = None) -> str:
         if re.search(pattern, text):
             if piece.channel == "arthvan" and name and "this video" in place:
                 place = place.replace("the temple this video is about", f"the {name} temple").replace("the fort this video is about", f"{name} fort") \
-                             .replace("the carved hill this video is about", f"the carved hill of {name}").replace("of this video's place", f"at {name}")
+                             .replace("the hill this video is about", f"{name} hill").replace("of this video's place", f"at {name}")
             return place
     return _pick(piece, SETTINGS[piece.channel])
 
