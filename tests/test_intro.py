@@ -353,3 +353,25 @@ def test_numbers_with_commas_are_spelt_out_for_the_avatar():
     assert intro.spoken("25,000 chuhe aur 829 points, Rs 1,50,000 ka bill") == "pachchees hazaar chuhe aur 829 points, Rs ek lakh pachaas hazaar ka bill"
     p = _piece(); p.script["hook"] = "Karni Mata ke 25,000 chuhe, ek bhi bimari nahi?"
     assert intro.plan(p, ask=lambda _p: "")["text"].startswith("Karni Mata ke pachchees hazaar chuhe")
+
+
+def test_the_setting_matches_the_reels_subject(tmp_path):
+    """Founder, 5 Nov 2026: "RBI means RBI building, bank means any bank, shops means in market"."""
+    p = _piece(); p.script["title"] = "RBI poochh raha hai, ghar ka *haal*"; p.script["hook"] = "Kya RBI sach mein poochhta hai, ghar kaisa chal raha?"
+    assert "RBI headquarters" in intro.setting_for(p) and "RBI headquarters" in intro.plan(p, ask=lambda _p: "")["prompt"]
+    p.script["title"] = "Sabzi ka bill aur aapki *EMI*"; p.script["hook"] = "Aapke ghar ka sabzi bill RBI ka byaaj tay karta hai?"
+    assert "RBI headquarters" in intro.setting_for(p)                       # the first match in the list order wins: RBI before market
+    p.script["title"] = "Subah hara, shaam laal"; p.script["hook"] = "Sensex 829 points chadha, phir bhi shaam ko laal?"
+    assert "broker's office" in intro.setting_for(p)
+    m = _piece(channel="arthvan"); m.script["title"] = "*Asirgarh* ke band mandir mein taaze phool"; m.script["hook"] = "Asirgarh ke mandir mein roz phool kaun chadhata hai?"
+    assert intro.setting_for(m).startswith("the courtyard of the Asirgarh temple")
+    k = _piece(channel="arthvan"); k.script["title"] = "Kumbhalgarh, China ke baad sabse lambi *deewar*?"; k.script["hook"] = "Kumbhalgarh ki deewar, China ke baad duniya mein sabse lambi?"
+    assert intro.setting_for(k).startswith("the ramparts of Kumbhalgarh fort")
+    t = _piece(channel="arthvan"); t.script["title"] = "Tirupati ke *Balaji* ka Kubera wala karza"; t.script["hook"] = "Tirupati ke Balaji, Kubera ka karza aaj bhi chuka rahe hain?"
+    t.script["scenes"] = [{"vo": "Mandir ka karza, bank nahi."}]
+    assert "Tirupati" in intro.setting_for(t) and "bank" not in intro.setting_for(t)      # a Myth place beats a money word
+    s2 = _piece(channel="arthvan"); s2.script["title"] = "Sanchi Stupa ke andar *asthiyan* thi?"; s2.script["hook"] = "1822 mein Sanchi stupa ko khazane ke liye cheera gaya."
+    assert intro.setting_for(s2).startswith("the courtyard of the Sanchi temple")
+    q = _piece(); q.script["title"] = "Kuch aur"; q.script["hook"] = "Ek sawaal"; q.script["scenes"] = []
+    assert intro.setting_for(q) in intro.SETTINGS["sglearning"]                 # nothing known: the rotating list
+    assert intro.prompt_for(q, {"closing": "x.", "setting": "a tea stall"}).count("Setting: a tea stall") == 1

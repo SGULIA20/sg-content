@@ -136,6 +136,51 @@ def bridge(piece, ask=_ask_claude) -> str:
     return line if line[-1] in ".?!" else line + "."
 
 
+PLACES = [                                                            # founder, 5 Nov 2026: the background matches the reel's subject
+    (r"\brbi\b", "outside the RBI headquarters in Mumbai, the grey stone facade and its pillars behind, morning light"),
+    (r"\b(sensex|nifty|share|stock|market gir|market bhaag|ipo|demat|mutual fund|sip)\b", "a broker's office, a wall of green and red tickers softly blurred behind"),
+    (r"\b(fd|fixed deposit|bank|emi|loan|byaaj|passbook|cheque|atm)\b", "inside a bank branch, counters, a token display and a short queue softly blurred behind"),
+    (r"\b(sabzi|mandi|dukaan|shop|bazaar|kirana|tamatar|pyaaz)\b", "a busy vegetable market, stalls heaped with produce and the crowd softly blurred behind"),
+    (r"\b(insurance|hospital|claim|premium|bimari|doctor)\b", "a hospital lobby, the reception desk and a corridor of white light softly blurred behind"),
+    (r"\b(gold|sona|gehna|jeweller|sovereign)\b", "a jeweller's shop, glass counters of gold under warm spotlights softly blurred behind"),
+    (r"\b(upi|phonepe|paytm|qr|fraud|scam|otp)\b", "a street of small shops with a QR code sign at every counter, evening light"),
+    (r"\b(petrol|diesel|pump)\b", "a petrol pump forecourt at dusk, the price board lit behind"),
+    (r"\b(salary|office|hr|pf|epfo|gratuity)\b", "an open-plan office floor after hours, desks and monitors softly blurred behind"),
+    (r"\b(tax|itr|gst|income tax)\b", "outside the income tax office, its name board and steps behind"),
+    (r"\b(mandir|temple|moorti|moortiyan|stupa|devta|shiva|krishna|mata)\b", "the courtyard of the temple this video is about, carved stone and pillars behind, early morning light"),
+    (r"\b(qila|fort|deewar|wall|ramparts|garh)\b", "the ramparts of the fort this video is about, the wall running away into mist behind"),
+    (r"\b(pahad|hill|mountain|parbat)\b", "a rocky hillside path, the hill this video is about rising behind"),
+    (r"\b(nadi|river|ghat|samundar|sea|setu)\b", "a riverbank at sunrise, the water and far bank of this video's place behind"),
+    (r"\b(khudai|excavation|asi|archaeolog|rakhigarhi|harappa)\b", "the edge of an excavation trench, string grids and brick walls behind"),
+]
+
+
+def _place_name(script: dict) -> str:
+    """The place a Myth video is about: the first capitalised word of the title (Asirgarh, Kumbhalgarh, Sanchi, Tirupati), never the emoji."""
+    for w in re.sub(r"[*_,:?!]", " ", script.get("title", "")).split():
+        if w[:1].isupper() and w.isascii() and len(w) > 3 and w.lower() not in ("china", "india", "isro", "asi", "rbi", "mahabharat", "kahan", "kaun", "kyun", "kya"):
+            return w
+    return ""
+
+
+def setting_for(piece, p: dict | None = None) -> str:
+    """The background that matches the subject: the title and hook, then the first scenes, are searched for a known place; a Myth
+    place is named outright. Falls back to the rotating list."""
+    script = piece.script or {}
+    head = " ".join([script.get("title", ""), script.get("hook", "")]).lower()
+    body = " ".join(sc.get("vo", "") for sc in (script.get("scenes") or [])[:3]).lower()
+    name = _place_name(script)
+    places = PLACES if piece.channel == "sglearning" else [x for x in PLACES if "this video" in x[1]] + [x for x in PLACES if "this video" not in x[1]]
+    for text in (head, body):                                           # the title and hook decide first, the opening scenes after
+      for pattern, place in places:                                     # a Myth piece looks for its place before any money word (karza, bank)
+        if re.search(pattern, text):
+            if piece.channel == "arthvan" and name and "this video" in place:
+                place = place.replace("the temple this video is about", f"the {name} temple").replace("the fort this video is about", f"{name} fort") \
+                             .replace("the hill this video is about", f"{name} hill").replace("of this video's place", f"at {name}")
+            return place
+    return _pick(piece, SETTINGS[piece.channel])
+
+
 def plan(piece, ask=_ask_claude) -> dict:
     """{"question", "bridge", "closing", "text", "words", "aspect", "prompt"}; the question is the piece's own hook, so the body never contradicts it."""
     script = piece.script or {}
@@ -217,7 +262,7 @@ def prompt_for(piece, p: dict) -> str:
     short = piece.kind == "short"
     size = "9:16 vertical, 1080x1920" if short else "16:9 landscape, 1920x1080"
     handle = "@SGLearning" if piece.channel == "sglearning" else "@SGMythWorld"
-    setting = _pick(piece, SETTINGS[piece.channel])
+    setting = p.get("setting") or setting_for(piece, p)
     outfit = _pick(piece, OUTFITS, 1)
     pose = _pick(piece, POSES, 2)
     camera = _pick(piece, CAMERAS, 3)
