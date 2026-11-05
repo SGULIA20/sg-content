@@ -575,6 +575,16 @@
    "Expense ratio kya khata hai?"
   ],
   "id": "sip-rupee-cost",
+  "intro": {
+   "aspect": "16:9",
+   "bridge": "Rukne ki asli keemat, aapki soch se zyada hai.",
+   "closing": "Aaiye isko samajhte hain.",
+   "prompt": "16:9 landscape, 1920x1080, exactly 10 seconds, natural and cinematic. Setting: a broker's office, a wall of flat green and red tickers softly blurred behind, late-afternoon light. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] seated at a wooden table, slightly angled, leaning toward camera, hands resting on the table, wearing a black polo. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, a light shrug with open hands; on the second line, counting one point on a finger; on \"Aaiye isko samajhte hain\", a hand inviting the viewer in. Prop: a phone face-up showing a bank SMS \"SIP debited ₹5,000\". Camera: eye level, a slow lateral slide from left to right, the subject kept centred. @SGLearning watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. Export at 1920x1080.",
+   "question": "Paanch sau ki SIP, do saal flat market, band kar dein?",
+   "setting": "a broker's office, a wall of flat green and red tickers softly blurred behind, late-afternoon light",
+   "text": "Paanch sau ki SIP, do saal flat market, band kar dein? Rukne ki asli keemat, aapki soch se zyada hai. Aaiye isko samajhte hain.",
+   "words": 24
+  },
   "look": "claymation",
   "summary": "How a monthly SIP in a mutual fund works, rupee cost averaging, the difference between returns in a good decade and a flat one, expense ratio, why stopping in a crash hurts; honest ranges, no promises.",
   "target_minutes": 12,
