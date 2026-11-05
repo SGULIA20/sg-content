@@ -140,12 +140,19 @@
    "research": 2
   },
   "cost": {
-   "inr": 61.5,
-   "usd": 1.129702,
+   "inr": 117.0,
+   "usd": 1.336808,
    "voice": 42
   },
+  "intro": {
+   "clip": "2026-11-12-arthvan-long.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-05T21:43:34+00:00",
+   "seconds": 9.64
+  },
   "thumb_sha": "677841c50eca4e8b",
-  "yt_id": "a77qw_JI7wI"
+  "yt_id": "iL-sDt0u0Zg",
+  "yt_id_replaced": "a77qw_JI7wI"
  },
  "kind": "long",
  "publish_day": "2026-11-12",
@@ -155,7 +162,8 @@
   "try 1: numbers without a source: 1748, 12, 21",
   "try 2: numbers without a source: 21",
   "try 3: numbers without a source: 21",
-  "try 1: numbers without a source: 1888, 1871"
+  "try 1: numbers without a source: 1888, 1871",
+  "re-made from the caches to carry the founder's intro"
  ],
  "script": {
   "captions": {
@@ -870,6 +878,6 @@
   "title_hi": "Delhi ka loha jo 1,600 saal se zang nahi khaya",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-10-25T13:40:50+00:00",
+ "updated": "2026-11-05T21:43:42+00:00",
  "writer": "claude"
 }
