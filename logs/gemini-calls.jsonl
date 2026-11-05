@@ -258,3 +258,5 @@
 {"at": "2026-11-05T07:20:16+00:00", "model": "gemini-3.8-flash", "caller": "voice.transcribe", "status": 200, "attempt": 0, "in": 526, "out": 78, "thought": 287, "search": false, "search_queries": 0, "modalities": []}
 {"at": "2026-11-05T07:20:22+00:00", "model": "gemini-3.8-flash", "caller": "voice.transcribe", "status": 200, "attempt": 0, "in": 390, "out": 54, "thought": 320, "search": false, "search_queries": 0, "modalities": []}
 {"at": "2026-11-05T07:38:31+00:00", "model": "gemini-3.8-flash", "caller": "inbox.transcribe", "status": 200, "attempt": 0, "in": 272, "out": 43, "thought": 68, "search": false, "search_queries": 0, "modalities": []}
+{"at": "2026-11-05T07:54:00+00:00", "model": "gemini-3.8-flash", "caller": "inbox.transcribe", "status": 200, "attempt": 0, "in": 272, "out": 41, "thought": 208, "search": false, "search_queries": 0, "modalities": []}
+{"at": "2026-11-05T07:55:30+00:00", "model": "gemini-3.8-flash", "caller": "inbox.transcribe", "status": 200, "attempt": 0, "in": 272, "out": 42, "thought": 204, "search": false, "search_queries": 0, "modalities": []}

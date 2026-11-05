@@ -84,8 +84,15 @@
    "voice": 8
   },
   "drafts": 1,
+  "intro": {
+   "clip": "2026-11-09-sglearning-short.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-05T07:56:14+00:00",
+   "seconds": 10.03
+  },
   "out_sha": "7c6c734b8a3d9aa6e05b1f2cf18e31191c51b15c",
-  "yt_id": "JVHlmC4xeps"
+  "yt_id": "sFPx3RWNEiI",
+  "yt_id_replaced": "JVHlmC4xeps"
  },
  "kind": "short",
  "publish_day": "2026-11-09",
@@ -269,6 +276,6 @@
   "title": "Stock market outlook today, 22 Oct: Sensex, Nifty prediction - DJIA, S&amp;P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-11-03T18:47:24+00:00",
+ "updated": "2026-11-05T07:56:18+00:00",
  "writer": "claude"
 }
