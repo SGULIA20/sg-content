@@ -329,12 +329,13 @@
   "id": "lonar-crater",
   "intro": {
    "aspect": "9:16",
-   "bridge": "",
+   "bridge": "Pachaas hazaar saal purana gaddha, paani khaara aur meetha.",
    "closing": "Aaiye, sach jaante hain.",
-   "prompt": "9:16 vertical, 1080x1920, exactly 10 seconds, natural and cinematic. Setting: a study with a wooden bookshelf, old maps and a brass lamp, warm and calm, background softly blurred. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] walking slowly toward the camera, the camera tracking back at the same pace, one small hand gesture per line, wearing a plain charcoal kurta. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, a direct look with a half-smile; on the second line, a slow nod, hand on chest; on \"Aaiye, sach jaante hain\", a wave of the hand toward the lens. Prop: a printed photograph or old map of the place, held up to the camera for a moment. Camera: handheld feel, slight natural movement, medium close-up throughout. @SGMythWorld watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. Export at 1080x1920.",
+   "prompt": "9:16 vertical, 1080x1920, exactly 10 seconds, natural and cinematic. Setting: the rim of Lonar crater lake, the round green lake and the crater walls behind, early morning light. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] walking slowly toward the camera, the camera tracking back at the same pace, one small hand gesture per line, wearing a plain charcoal kurta. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, a direct look with a half-smile; on the second line, a slow nod, hand on chest; on \"Aaiye, sach jaante hain\", a wave of the hand toward the lens. Prop: a printed photograph or old map of the place, held up to the camera for a moment. Camera: handheld feel, slight natural movement, medium close-up throughout. @SGMythWorld watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. Export at 1080x1920.",
    "question": "Lonar ki jheel, kya ise aasmaan se giri ulka ne khoda?",
-   "text": "Lonar ki jheel, kya ise aasmaan se giri ulka ne khoda? Aaiye, sach jaante hain.",
-   "words": 15
+   "setting": "the rim of Lonar crater lake, the round green lake and the crater walls behind, early morning light",
+   "text": "Lonar ki jheel, kya ise aasmaan se giri ulka ne khoda? Pachaas hazaar saal purana gaddha, paani khaara aur meetha. Aaiye, sach jaante hain.",
+   "words": 24
   },
   "layers": false,
   "notes": "Science is solid here; the demon story is scripture/legend.",
