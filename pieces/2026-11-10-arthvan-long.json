@@ -790,12 +790,13 @@
   "id": "sanchi-stupa#long",
   "intro": {
    "aspect": "16:9",
-   "bridge": "",
+   "bridge": "Ek angrez afsar ne khazane ke liye ise cheer diya.",
    "closing": "Chaliye, shuru se dekhte hain.",
-   "prompt": "16:9 landscape, 1920x1080, exactly 10 seconds, natural and cinematic. Setting: the courtyard of the Sanchi temple, carved stone and pillars behind, early morning light. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] seated on a stool, elbows on knees, leaning in, close and conversational, wearing a maroon sweater over a white collar. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, a small head tilt and a raised finger; on the second line, both hands open, palms down, settling; on \"Chaliye, shuru se dekhte hain\", a nod and a step closer. Prop: a printed photograph or old map of the place, held up to the camera for a moment. Camera: eye level, slow push-in from mid-shot to medium close-up over the 10 seconds. @SGMythWorld watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. Export at 1920x1080.",
-   "question": "1822 mein Sanchi stupa ko khazane ke liye cheera gaya.",
-   "text": "1822 mein Sanchi stupa ko khazane ke liye cheera gaya. Chaliye, shuru se dekhte hain.",
-   "words": 15
+   "prompt": "16:9 landscape, 1920x1080, exactly 10 seconds, natural and cinematic. Setting: the Great Stupa at Sanchi, its carved stone railing and torana gateway behind, early morning light. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] seated on a stool, elbows on knees, leaning in, close and conversational, wearing a maroon sweater over a white collar. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, a small head tilt and a raised finger; on the second line, both hands open, palms down, settling; on \"Chaliye, shuru se dekhte hain\", a nod and a step closer. Prop: a printed photograph or old map of the place, held up to the camera for a moment. Camera: eye level, slow push-in from mid-shot to medium close-up over the 10 seconds. @SGMythWorld watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. Export at 1920x1080.",
+   "question": "Sanchi stupa mein Buddha ki asthiyan thi, ya khaali gumbad?",
+   "setting": "the Great Stupa at Sanchi, its carved stone railing and torana gateway behind, early morning light",
+   "text": "Sanchi stupa mein Buddha ki asthiyan thi, ya khaali gumbad? Ek angrez afsar ne khazane ke liye ise cheer diya. Chaliye, shuru se dekhte hain.",
+   "words": 25
   },
   "notes": "Buddhist heritage; archaeology lane.",
   "place": "Sanchi, Madhya Pradesh",
