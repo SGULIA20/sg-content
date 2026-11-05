@@ -181,6 +181,15 @@
   47.15
  ],
  "topic": {
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "Aapke ghar ka mood, aapki EMI tay kar sakta hai.",
+   "closing": "Aaiye isko samajhte hain.",
+   "prompt": "9:16 vertical, 1080x1920, exactly 10 seconds, natural and cinematic. Setting: a home office with a laptop, a desk lamp and a wall calendar, late-afternoon light. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] walking slowly toward the camera, the camera tracking back at the same pace, one small hand gesture per line, wearing a maroon sweater over a white collar. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, a light shrug with open hands; on the second line, counting one point on a finger; on \"Aaiye isko samajhte hain\", a hand inviting the viewer in. Prop: a bank passbook and a pen. Camera: handheld feel, slight natural movement, medium close-up throughout. @SGLearning watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. Export at 1080x1920.",
+   "question": "Kya RBI sach mein poochhta hai, ghar kaisa chal raha?",
+   "text": "Kya RBI sach mein poochhta hai, ghar kaisa chal raha? Aapke ghar ka mood, aapki EMI tay kar sakta hai. Aaiye isko samajhte hain.",
+   "words": 24
+  },
   "layers": false,
   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63908",
   "look": "claymation",
