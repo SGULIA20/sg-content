@@ -1,0 +1,36 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.74,Default,,0,0,0,,Phone par EMI loan itna aasaan
+Dialogue: 0,0:00:02.74,0:00:03.56,Default,,0,0,0,,kyun ho gaya?
+Dialogue: 0,0:00:04.01,0:00:06.58,Default,,0,0,0,,Kissht ki parent company OnEMI ke
+Dialogue: 0,0:00:06.58,0:00:08.45,Default,,0,0,0,,share aaj 7 percent badhe.
+Dialogue: 0,0:00:08.90,0:00:09.62,Default,,0,0,0,,Wajah yeh,
+Dialogue: 0,0:00:09.62,0:00:11.78,Default,,0,0,0,,logon ko diya udhaar 10,000 crore
+Dialogue: 0,0:00:11.78,0:00:13.70,Default,,0,0,0,,rupaye se upar nikal gaya.
+Dialogue: 0,0:00:14.15,0:00:16.05,Default,,0,0,0,,Company ne nayi funding bhi jutayi,
+Dialogue: 0,0:00:16.05,0:00:17.75,Default,,0,0,0,,yaani udhaar dene ke liye aur
+Dialogue: 0,0:00:17.75,0:00:18.51,Default,,0,0,0,,paisa aayega.
+Dialogue: 0,0:00:18.96,0:00:20.11,Default,,0,0,0,,Aapke liye matlab,
+Dialogue: 0,0:00:20.11,0:00:21.95,Default,,0,0,0,,app se loan aur EMI milna
+Dialogue: 0,0:00:21.95,0:00:23.56,Default,,0,0,0,,abhi aasaan rahega.
+Dialogue: 0,0:00:24.01,0:00:26.56,Default,,0,0,0,,Par isme 92 percent loan unsecured
+Dialogue: 0,0:00:26.56,0:00:26.77,Default,,0,0,0,,hain,
+Dialogue: 0,0:00:26.77,0:00:28.69,Default,,0,0,0,,yaani kuch girvi rakhe bina.
+Dialogue: 0,0:00:29.14,0:00:30.63,Default,,0,0,0,,Jinke pehle se kai loan chal
+Dialogue: 0,0:00:30.63,0:00:31.18,Default,,0,0,0,,rahe hain,
+Dialogue: 0,0:00:31.18,0:00:32.86,Default,,0,0,0,,unki jaanch ab kadi ho sakti
+Dialogue: 0,0:00:32.86,0:00:33.04,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:33.04,0:00:34.90,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:35.35,0:00:37.12,Default,,0,0,0,,Yeh us bhai ko bhejo jo
+Dialogue: 0,0:00:37.12,0:00:39.15,Default,,0,0,0,,har cheez EMI par leta hai.

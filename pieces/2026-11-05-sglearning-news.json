@@ -1,0 +1,281 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 7.34,
+   "quote": "Kissht parent OnEMI Technology Solutions shares rose 7.34% to ₹338.60 after the digital lender announced that assets under management had crossed ₹10,000 crore.",
+   "source_date": "2026-11-05",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/why-is-onemi-tech-stock-rising-today-kissht-parent-firms-shares-jump-7-after-aum-milestone-rs-832-cr-fundraise-11793863799441.html",
+   "text": "Shares of OnEMI Technology Solutions climbed 7.34% to ₹338.60 on the stock exchanges following the announcement of its loan book milestone.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 8580.0,
+   "quote": "The portfolio remains weighted towards personal loans, which are unsecured and sourced entirely through digital channels. They stood at ₹8,580 crore, or 92.1% of AUM.",
+   "source_date": "2026-10-29",
+   "source_name": "ET BFSI",
+   "source_url": "https://bfsi.economictimes.indiatimes.com/news/fintech/kissht-delivers-strong-q2fy27-performance-aum-reached-9317-cr-pat-doubles-yoy-to-125-cr/135555326",
+   "text": "Unsecured personal loans that fund retail consumer EMIs stood at ₹8,580 crore, making up 92.1% of the lender's total portfolio.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "official",
+   "number": 12.8,
+   "quote": "Cumulative customers served crossed 12.80 million, up 22% year on year.",
+   "source_date": "2026-10-29",
+   "source_name": "ET BFSI",
+   "source_url": "https://bfsi.economictimes.indiatimes.com/news/fintech/kissht-delivers-strong-q2fy27-performance-aum-reached-9317-cr-pat-doubles-yoy-to-125-cr/135555326",
+   "text": "Cumulative household and retail borrowers served by the digital lender reached 12.80 million, rising 22% year-on-year.",
+   "unit": "million"
+  },
+  {
+   "label": "official",
+   "number": 125.0,
+   "quote": "Assets under management (AUM) grew 68% year on year to ₹9,317 crore, and profit after tax (PAT) doubled to ₹125 crore.",
+   "source_date": "2026-10-29",
+   "source_name": "ET BFSI",
+   "source_url": "https://bfsi.economictimes.indiatimes.com/news/fintech/kissht-delivers-strong-q2fy27-performance-aum-reached-9317-cr-pat-doubles-yoy-to-125-cr/135555326",
+   "text": "OnEMI Technology Solutions reported a doubling of its quarterly profit after tax to ₹125 crore for the second quarter of FY27.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "official",
+   "number": 737.0,
+   "quote": "Loan against property, a secured product delivered through 107 branches across 9 states and union territories, stood at ₹737 crore, or 7.9%, and the company expects it to keep scaling through the remaining quarters of FY27 and beyond.",
+   "source_date": "2026-10-29",
+   "source_name": "ET BFSI",
+   "source_url": "https://bfsi.economictimes.indiatimes.com/news/fintech/kissht-delivers-strong-q2fy27-performance-aum-reached-9317-cr-pat-doubles-yoy-to-125-cr/135555326",
+   "text": "Kissht expanded its secured loan against property portfolio for borrowing households to ₹737 crore across 107 physical branches.",
+   "unit": "crore INR"
+  }
+ ],
+ "id": "2026-11-05-sglearning-news",
+ "ids": {
+  "budget": {
+   "day": "2026-11-04",
+   "drafts": 1,
+   "research": 1
+  },
+  "drafts": 1
+ },
+ "kind": "short",
+ "publish_day": "2026-11-05",
+ "reasons": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Phone par EMI loan itna aasaan kyun ho gaya?\nKissht ki parent company OnEMI ke share badhe, kyunki udhaar ka dhanda 10,000 crore se upar gaya.\nIsme 92 percent loan unsecured hain, yaani kuch girvi rakhe bina.\nAapke paas kitne EMI chal rahe hain?\nYeh investment advice nahi hai.\nUs bhai ko bhejo jo har cheez EMI par leta hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#EMI",
+     "#StockMarketIndia",
+     "#HinglishFinance",
+     "#PersonalFinanceIndia",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Phone par EMI loan itna aasaan kyun ho gaya? Kissht ki parent company ke share 7 percent badhe, aur 92 percent loan bina girvi ke hain. Aapke paas kitne EMI chal rahe hain? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Phone par EMI loan itna aasaan kyun ho gaya? Kissht ki parent company OnEMI ke share badhe kyunki unka udhaar ka dhanda bada hua aur nayi funding aayi. Matlab app se loan milna aasaan rahega, par jinke kai loan hain unki jaanch kadi ho sakti hai. Us bhai ko bhejo jo har cheez EMI par leta hai.",
+    "tags": [
+     "Kissht",
+     "OnEMI",
+     "EMI loan",
+     "digital lending",
+     "personal loan",
+     "share market",
+     "loan app",
+     "unsecured loan",
+     "paise ki khabar"
+    ],
+    "title": "Kissht ke share 7% kyun badhe?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "7%",
+    "line": "OnEMI ke share badhe",
+    "source": "Mint Markets"
+   },
+   {
+    "big_number": "₹10,000 cr",
+    "line": "Diya udhaar ab bahut bada",
+    "source": "Mint Markets"
+   },
+   {
+    "big_number": "92%",
+    "line": "Loan bina girvi ke",
+    "source": "ET BFSI"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Yeh us bhai ko bhejo jo har cheez EMI par leta hai.",
+  "hook": "Phone par EMI loan itna aasaan kyun ho gaya?",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Phone par loan aasaan kyun?",
+      "source": "Mint Markets"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Phone par EMI loan itna aasaan kyun ho gaya?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "7%",
+      "line": "OnEMI ke share badhe",
+      "source": "Mint Markets"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Kissht ki parent company OnEMI ke share aaj 7 percent badhe."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "₹10,000 cr",
+      "line": "Diya udhaar ab bahut bada",
+      "source": "Mint Markets"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Wajah yeh, logon ko diya udhaar 10,000 crore rupaye se upar nikal gaya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Udhaar dene ko aur paisa",
+      "source": "Mint Markets"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Company ne nayi funding bhi jutayi, yaani udhaar dene ke liye aur paisa aayega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "App se loan milta rahega",
+      "source": "Mint Markets"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Aapke liye matlab, app se loan aur EMI milna abhi aasaan rahega."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "92%",
+      "line": "Loan bina girvi ke",
+      "source": "ET BFSI"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Par isme 92 percent loan unsecured hain, yaani kuch girvi rakhe bina."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Kai loan walon par nazar",
+      "source": "Mint Markets"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Jinke pehle se kai loan chal rahe hain, unki jaanch ab kadi ho sakti hai. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Us bhai ko bhejo",
+      "source": "Mint Markets"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Yeh us bhai ko bhejo jo har cheez EMI par leta hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "KISSHT",
+   "name_hi": "किश्त",
+   "scene": "A glowing phone screen showing a loan approved tick, towering over a huge pile of rupee notes in a dark room.",
+   "words": [
+    "10,000 CR",
+    "LOAN?"
+   ],
+   "words_hi": [
+    "10,000 करोड़",
+    "लोन?"
+   ]
+  },
+  "title": "App wale *loan* ka dhanda kitna bada? 📱"
+ },
+ "status": "assembled",
+ "timings": [
+  0.0,
+  4.01,
+  8.9,
+  14.15,
+  18.96,
+  24.01,
+  29.14,
+  35.35
+ ],
+ "topic": {
+  "graphics": true,
+  "link": "https://www.livemint.com/market/stock-market-news/why-is-onemi-tech-stock-rising-today-kissht-parent-firms-shares-jump-7-after-aum-milestone-rs-832-cr-fundraise-11793863799441.html",
+  "news": true,
+  "published": "2026-11-05T07:51:12+00:00",
+  "rank": 3,
+  "source": "Mint Markets",
+  "summary": "Kissht parent OnEMI Technology Solutions shares rose 7.34% to  ₹338.60 after the digital lender announced that assets under management had crossed  ₹10,000 crore. The milestone followed a  ₹832 crore fundraise through a preferential share issue.",
+  "target_minutes": null,
+  "title": "Why is OnEMI Tech stock rising today? Kissht parent firm's shares jump 7% after AUM milestone,  ₹832 cr fundraise",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-11-05T07:58:57+00:00",
+ "writer": "claude"
+}
