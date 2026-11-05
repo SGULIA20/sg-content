@@ -25,8 +25,15 @@
    "voice": 9
   },
   "drafts": 1,
+  "intro": {
+   "clip": "2026-11-10-sglearning-short.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-05T12:50:01+00:00",
+   "seconds": 8.83
+  },
   "out_sha": "d89322615c6baad7cc10888a34e64a9797c38973",
-  "yt_id": "Qo9H11qO9KM"
+  "yt_id": "a0eU6l-xc-E",
+  "yt_id_replaced": "Qo9H11qO9KM"
  },
  "kind": "short",
  "publish_day": "2026-11-10",
@@ -201,6 +208,6 @@
   "title": "RBI launches the November 2026 round of Urban Consumer Confidence Survey",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-11-03T20:57:51+00:00",
+ "updated": "2026-11-05T12:50:07+00:00",
  "writer": "claude"
 }
