@@ -371,12 +371,13 @@
   "id": "tirupati-facts",
   "intro": {
    "aspect": "9:16",
-   "bridge": "",
-   "closing": "Aaiye isko samajhte hain.",
-   "prompt": "9:16 vertical, 1080x1920, exactly 10 seconds, natural and cinematic. Setting: a rocky hillside path, Tirupati hill rising behind. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] standing, turned a little to the side, weight on one foot, one hand in a pocket, wearing navy blazer over white tee. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, a light shrug with open hands; on the second line, counting one point on a finger; on \"Aaiye isko samajhte hain\", a hand inviting the viewer in. Prop: a printed photograph or old map of the place, held up to the camera for a moment. Camera: a slow pull-back from close-up to mid-shot as he finishes the question, then steady. @SGMythWorld watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. Export at 1080x1920.",
+   "bridge": "Shaadi ke liye liya karza, byaaj Kali Yuga ke ant tak.",
+   "closing": "Aaiye, sach jaante hain.",
+   "prompt": "9:16 vertical, 1080x1920, exactly 10 seconds, natural and cinematic. Setting: the temple steps at Tirumala, the gopuram of the Venkateswara temple rising behind, early morning light. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] standing, turned a little to the side, weight on one foot, one hand in a pocket, wearing navy blazer over white tee. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, a light shrug with open hands; on the second line, counting one point on a finger; on \"Aaiye, sach jaante hain\", a hand inviting the viewer in. Prop: a printed photograph or old map of the place, held up to the camera for a moment. Camera: a slow pull-back from close-up to mid-shot as he finishes the question, then steady. @SGMythWorld watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. Export at 1080x1920.",
    "question": "Tirupati ke Balaji, Kubera ka karza aaj bhi chuka rahe hain?",
-   "text": "Tirupati ke Balaji, Kubera ka karza aaj bhi chuka rahe hain? Aaiye isko samajhte hain.",
-   "words": 15
+   "setting": "the temple steps at Tirumala, the gopuram of the Venkateswara temple rising behind, early morning light",
+   "text": "Tirupati ke Balaji, Kubera ka karza aaj bhi chuka rahe hain? Shaadi ke liye liya karza, byaaj Kali Yuga ke ant tak. Aaiye, sach jaante hain.",
+   "words": 26
   },
   "layers": true,
   "notes": "Use TTD's own numbers with dates; the hair story is legend.",
