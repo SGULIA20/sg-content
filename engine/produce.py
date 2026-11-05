@@ -53,8 +53,7 @@ def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFA
     made, stopped, ok = [], "", True
     try:
         from . import intro
-        for pid, action in intro.sweep(root, deps, now_utc, notify):     # pieces waiting for the founder's intro clip (engine/intro.py)
-            made.append((pid, action))
+        # the intro sweep runs only in the Studio poll (studio.yml): a produce run sweeping at the same time uploaded pieces twice (5 Nov 2026)
         for pid in intro.ask_scheduled(root, notify, now_utc):            # already-scheduled pieces get asked, 3 days ahead (4 Nov 2026)
             made.append((pid, "intro asked"))
         plan = [(d, c, k) for d, c, k in plan if not _waits_for_its_turn(root, d, c, k, today)]    # before the slice: far longs come first in the plan

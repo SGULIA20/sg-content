@@ -17,7 +17,7 @@ on:
         required: false
         default: ''
       tidy:
-        description: 'piece id: remove its private scheduled copies on YouTube except the recorded one (engine/intro.py --tidy), no sweep'
+        description: 'piece id, or all: remove private scheduled copies on YouTube except the recorded one (engine/intro.py --tidy), no sweep'
         required: false
         default: ''
 
