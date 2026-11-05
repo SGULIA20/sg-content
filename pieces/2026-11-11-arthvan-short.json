@@ -136,7 +136,14 @@
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
-  "intro_sent": "2026-11-04T21:17:47+00:00"
+  "intro": {
+   "clip": "2026-11-11-arthvan-short.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-05T16:32:15+00:00",
+   "seconds": 10.02
+  },
+  "intro_sent": "2026-11-04T21:17:47+00:00",
+  "yt_id": "VU4_lWLVDbI"
  },
  "kind": "short",
  "publish_day": "2026-11-11",
@@ -341,7 +348,7 @@
   },
   "title": "Tirupati ke *Balaji* ka Kubera wala karza 🤯"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   4.53,
@@ -380,6 +387,7 @@
    "words": 26
   },
   "layers": true,
+  "look": "indian-comic",
   "notes": "Use TTD's own numbers with dates; the hair story is legend.",
   "place": "Tirumala, Andhra Pradesh",
   "priority": 1,
@@ -387,6 +395,6 @@
   "title_hi": "Tirupati, duniya ka sabse ameer mandir",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-11-04T21:17:51+00:00",
+ "updated": "2026-11-05T16:32:23+00:00",
  "writer": "claude"
 }
