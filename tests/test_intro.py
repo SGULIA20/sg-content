@@ -16,9 +16,9 @@ def _piece(kind="short", channel="sglearning", pid=None, day=date(2026, 11, 7)):
 
 def test_enabled_for_painted_shorts_and_longs_not_code_card_reels():
     assert intro.enabled(_piece()) and intro.enabled(_piece("long", "arthvan"))
-    x = _piece(pid="2026-11-07-sglearning-x1"); assert not intro.enabled(x)
-    n = _piece(); n.topic = {"news": True, "graphics": True}; assert not intro.enabled(n)
-    r = _piece(); r.topic = {"preset": {"roundup": True}}; assert not intro.enabled(r)
+    x = _piece(pid="2026-11-07-sglearning-x1"); assert intro.enabled(x)          # founder, 5 Nov 2026: compulsory on every Reel and video
+    n = _piece(); n.topic = {"news": True, "graphics": True}; assert intro.enabled(n)
+    c = _piece(); c.kind = "carousel"; assert not intro.enabled(c)
 
 
 def test_plan_is_question_bridge_closing_within_26_words_with_the_founders_prompt_rules():
@@ -143,9 +143,12 @@ def test_collect_rejects_a_wrong_clip_once_and_waits_then_plain_at_the_deadline(
     assert action == "waiting" and len(sent) == 1                       # the same clip is not checked twice
     assert intro.needed(tmp_path, early) is False
     late = datetime(2026, 11, 7, 10, 0, tzinfo=timezone.utc)
-    assert intro.needed(tmp_path, late) is True
+    assert intro.needed(tmp_path, late) is True                          # the one overdue reminder is due
     action, p = intro.collect(p, deps, tmp_path, now=late, notify=sent.append, transcribe=lambda c: "kuch aur", compose_fn=lambda *a: None)
-    assert action == "uploaded-plain" and deps.uploaded == [p.id] and p.ids.get("intro_skipped") and "plain version" in sent[-1]
+    assert action == "waiting" and deps.uploaded == [] and p.ids.get("intro_overdue") and "Nothing goes out without it" in sent[-1]
+    assert intro.needed(tmp_path, late) is False                         # founder, 5 Nov 2026: never the plain version, reminded once
+    action, p = intro.collect(p, deps, tmp_path, now=late, notify=sent.append, transcribe=lambda c: "kuch aur", compose_fn=lambda *a: None)
+    assert action == "waiting" and len(sent) == 2
 
 
 def test_sweep_never_raises_and_reports_each_piece(tmp_path, monkeypatch):

@@ -6,11 +6,11 @@ The piece is written, voiced, painted and assembled as before. Before the upload
 the avatar prompt (body language, lighting, a prop for the topic). The piece waits as "intro-wait". His clip comes back through the
 Studio bot as inbox/intro/<piece id>.mp4, is checked (8-12 s, the words), composed in the piece's own frame (title band, captions, badge,
 progress bar, a chart when the intro compares figures, the music bed under his voice) and joined to the body from scene 2 with a straight
-cut; then the piece uploads. No clip 3 hours before the earliest slot: the plain piece uploads. Nothing ever misses its slot.
+cut; then the piece uploads. No clip: the piece waits, the founder is reminded at the deadline, and a late clip publishes at once (5 Nov 2026).
 
 python -m engine.intro --plan <id>      print the intro script and prompt (nothing sent)
 python -m engine.intro --needed         exit 0 when a waiting piece has its clip or passed its deadline (the Studio workflow then sweeps)
-python -m engine.intro --sweep          collect clips, compose, upload; plain upload past the deadline
+python -m engine.intro --sweep          collect clips, compose, upload; the overdue reminder past the deadline
 python -m engine.intro --redo <id>      an already-uploaded piece: compose with its clip, replace the YouTube video (same schedule)
 python -m engine.intro --ask-scheduled  send the intro request for already-scheduled pieces due within 3 days (the produce run does this)
 """
@@ -72,7 +72,7 @@ def closing_for(piece) -> str:
 MAX_WORDS = 26                              # about 10 seconds of calm Hinglish
 BRIDGE_MAX_WORDS = 13
 MIN_S, MAX_S = 8.0, 12.0                    # the clip the founder sends back
-DEADLINE_HOURS = 3                          # before the earliest slot (Instagram or YouTube): then the plain piece uploads
+DEADLINE_HOURS = 3                          # before the earliest slot (Instagram or YouTube): the reminder goes then
 MUSIC_LUFS = -26                            # the bed under the founder's voice: audible, below him (founder, 4 Nov 2026, preview 4)
 TAIL_S = 0.35                               # after his last word the body starts (founder, 4 Nov 2026: "trim the 1-2 second pause at the end")
 VOICE_LUFS = -16
@@ -98,10 +98,9 @@ MYTH_PROP = "a printed photograph or old map of the place, held up to the camera
 
 
 def enabled(piece) -> bool:
-    """Every painted Short and every long of both channels; never the code-card news, extra or Top 10 Reels."""
-    t = {**((piece.topic or {}).get("preset") or {}), **(piece.topic or {})}
-    cards = bool(t.get("graphics") or t.get("news") or t.get("extra") or t.get("roundup"))
-    return piece.kind in ("short", "long") and piece.channel in CHANNELS and not cards and not re.search(r"-x\d+$|-news$", piece.id)
+    """Every Short and every long of both channels, the news and extra Reels included (founder, 5 Nov 2026: compulsory, nothing is
+    scheduled without the 10-second intro)."""
+    return piece.kind in ("short", "long") and piece.channel in CHANNELS
 
 
 # ---------- the script and the prompt ----------
@@ -295,8 +294,8 @@ def request_text(piece, p: dict) -> str:
     title = (piece.script or {}).get("title", "").replace("*", "")
     kind = "Short" if piece.kind == "short" else "long video"
     return (f"🎬 Intro for {piece.id} ({kind}: {title})\n\nSay exactly ({p['words']} words, ~10 s):\n\"{p['text']}\"\n\nPrompt:\n{p['prompt']}\n\n"
-            f"Send the clip as a FILE (paperclip → File) with the caption:\nintro {piece.id}\n\nBy {_wat(deadline_utc(piece))}; after that the "
-            f"plain version goes out at its slot.")
+            f"Send the clip as a FILE (paperclip → File) with the caption:\nintro {piece.id}\n\nBy {_wat(deadline_utc(piece))}. Nothing goes "
+            f"out without it: a late clip publishes as soon as it is merged.")
 
 
 def clip_path(root: Path, piece) -> Path:
@@ -548,8 +547,6 @@ def before_upload(piece, root: Path, out_dir: Path, notify=None, now: datetime |
     or "plain" (deadline passed, or a bad clip past the deadline)."""
     now = now or datetime.now(timezone.utc)
     notify = notify or (lambda t: None)
-    if piece.ids.get("intro_skipped"):
-        return "plain"
     clip = clip_path(root, piece)
     if _usable_clip(root, piece):
         if not (piece.topic or {}).get("intro"):
@@ -560,12 +557,11 @@ def before_upload(piece, root: Path, out_dir: Path, notify=None, now: datetime |
             piece.ids.setdefault("intro", {"clip": clip.name, "composed": now.isoformat(timespec="seconds")})
             return "compose"
         piece.ids["intro_rejected"] = _sha(clip)
-        notify(f"🎬 {piece.id}: the intro clip was not used: " + "; ".join(problems) + f". Send a new one with the caption intro {piece.id}"
-               + ("" if now < deadline_utc(piece) else "; the plain version goes out now."))
-    if now >= deadline_utc(piece):
-        piece.ids["intro_skipped"] = now.isoformat(timespec="seconds")
-        notify(f"🎬 {piece.id}: no intro clip by {_wat(deadline_utc(piece))}; the plain version is scheduled for its slot.")
-        return "plain"
+        notify(f"🎬 {piece.id}: the intro clip was not used: " + "; ".join(problems) + f". Send a new one with the caption intro {piece.id}.")
+    if now >= deadline_utc(piece) and not piece.ids.get("intro_overdue"):      # founder, 5 Nov 2026: never the plain version
+        piece.ids["intro_overdue"] = now.isoformat(timespec="seconds")
+        notify(f"🚨 {piece.id}: no intro clip and the slot is {_wat(slots.publish_at(piece.channel, piece.kind, piece.publish_day))}. "
+               f"Nothing goes out without it: send the clip with the caption intro {piece.id} and it publishes as soon as it is merged.")
     request(piece, root, notify, ask, now)
     return "wait"
 
@@ -585,7 +581,10 @@ def collect(piece, deps, root: Path, now: datetime | None = None, notify=None, t
     out_dir = Path(root) / "out" / piece.id
     video = out_dir / ("reel.mp4" if piece.kind == "short" else "long.mp4")
     thumb = out_dir / "thumb.jpg"
-    if not (_usable_clip(root, piece) or now >= deadline_utc(piece)):
+    if not _usable_clip(root, piece):
+        if now >= deadline_utc(piece) and not piece.ids.get("intro_overdue"):
+            before_upload(piece, root, out_dir, notify, now, transcribe, compose_fn)      # the one overdue reminder
+            pieces.save(piece, root)
         return "waiting", piece
     if not video.exists():
         old = piece.ids.get("yt_id")
@@ -713,7 +712,7 @@ def needed(root: Path, now: datetime | None = None) -> bool:
     """Cheap: does a waiting piece have a fresh clip, or has one passed its deadline?"""
     now = now or datetime.now(timezone.utc)
     for p in waiting(root):
-        if _usable_clip(root, p) or now >= deadline_utc(p):
+        if _usable_clip(root, p) or (now >= deadline_utc(p) and not p.ids.get("intro_overdue")):
             return True
     return any(_usable_clip(root, p) for p in scheduled(root, now)) or bool(pending_thumbs(root))
 
@@ -732,7 +731,7 @@ def sweep(root: Path, deps, now: datetime | None = None, notify=None, transcribe
             action, p = collect(p, deps, root, now, notify, transcribe, compose_fn)
         except Exception as e:
             action = f"failed: {type(e).__name__}: {secrets.scrub(str(e))[:160]}"
-            (notify or print)(f"🎬 {p.id}: intro step failed ({action}); it stays waiting, the plain version goes out at the deadline.")
+            (notify or print)(f"🎬 {p.id}: intro step failed ({action}); it stays waiting.")
         out.append((p.id, action))
     for p in scheduled(root, now):
         if not _usable_clip(root, p):
