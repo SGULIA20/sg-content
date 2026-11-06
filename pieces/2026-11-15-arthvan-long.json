@@ -147,16 +147,21 @@
    "ta": "AUieDaaWPap0PnI5-eRJs6_fHEfQHz6OEqxeRM5uW2a6wlMcfiqiDhxOTqKYexrOQpQ"
   },
   "cost": {
-   "inr": 54.0,
+   "inr": 108.0,
    "usd": 0.682472,
    "voice": 43
   },
+  "intro_rejected": "7f0e7e6216de3510",
+  "intro_sent": "2026-11-06T06:20:14+00:00",
   "thumb_sha": "2ddc1ed625ff3cd2",
   "yt_id": "hC7Q3PLVfXM"
  },
  "kind": "long",
  "publish_day": "2026-11-15",
- "reasons": [],
+ "reasons": [
+  "re-made from the caches to carry the founder's intro",
+  "waiting for the founder's intro clip until 15 Nov 10:30 UTC"
+ ],
  "script": {
   "captions": {
    "instagram": {
@@ -770,7 +775,7 @@
   },
   "title": "Nalanda ki library, sach mein *3 mahine* jali? 🤯"
  },
- "status": "uploaded",
+ "status": "intro-wait",
  "timings": [
   0.0,
   17.45,
@@ -846,6 +851,6 @@
   "title_hi": "Nalanda ki library 3 mahine tak jali",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-10-26T07:49:14+00:00",
+ "updated": "2026-11-06T06:20:15+00:00",
  "writer": "claude"
 }
