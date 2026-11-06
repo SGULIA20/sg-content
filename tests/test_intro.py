@@ -416,3 +416,19 @@ def test_a_clip_the_redo_checked_is_not_checked_again_after_the_rebuild(tmp_path
     (tmp_path / "out" / p.id / "reel.mp4").unlink()                                   # a long: no plain video on this machine
     out = intro.redo_piece(p, _Deps(), tmp_path, notify=lambda t: None, transcribe=transcribe, find=lambda pc: "", delete=lambda ch, vid: True)
     assert out == "rebuilt-uploaded" and len(calls) == 1 and p.ids.get("intro_checked") and not p.ids.get("intro_rejected")
+
+
+def test_a_long_request_carries_a_thumbnail_prompt_without_the_founder_and_pending_clips_are_listed(tmp_path):
+    """Founder, 6 Nov 2026: "are you going to remind me or should I remind you every day?"."""
+    p = _piece("long", "arthvan", pid="2026-11-19-arthvan-long", day=date(2026, 11, 19)); p.status = "intro-wait"
+    p.script["title"] = "Chausath Yogini Mandir aur *Sansad* ka sach 🤯"; p.script["captions"] = {"youtube": {"description": "Kya Sansad ka gol design Morena ke mandir se aaya?"}}
+    pieces.save(p, tmp_path)
+    plan = intro.plan(p, ask=lambda _p: "")
+    text = intro.request_text(p, plan)
+    assert "Thumbnail for 2026-11-19-arthvan-long" in text and "no people" in text and "Chausath" in text and "thumb 2026-11-19-arthvan-long" in text
+    assert "SG [locked]" not in intro.thumb_prompt(p)
+    s = _piece(pid="2026-11-13-sglearning-short", day=date(2026, 11, 13)); s.status = "intro-wait"; pieces.save(s, tmp_path)
+    lines = intro.pending_lines(tmp_path, datetime(2026, 11, 6, 8, 0, tzinfo=timezone.utc))
+    assert lines[0] == "🎬 Intro clips pending: 2" and "2026-11-13-sglearning-short (Short): clip, by" in lines[1] and "clip + thumbnail" in lines[2]
+    c = intro.clip_path(tmp_path, s); c.parent.mkdir(parents=True, exist_ok=True); c.write_bytes(b"clip")
+    assert len(intro.pending_lines(tmp_path, datetime(2026, 11, 6, 8, 0, tzinfo=timezone.utc))) == 2        # the Short's clip is in
