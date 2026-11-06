@@ -47,8 +47,8 @@ def _settleable(f: str) -> bool:
 
 def _side(root: Path, f: str, n: int) -> str | None:
     """The file at rebase stage n (1 base, 2 upstream, 3 the commit being replayed), or None when that side has no file."""
-    r = subprocess.run(["git", "-C", str(root), "show", f":{n}:{f}"], capture_output=True, text=True)
-    return r.stdout if r.returncode == 0 else None
+    r = subprocess.run(["git", "-C", str(root), "show", f":{n}:{f}"], capture_output=True)       # bytes: a media file is not UTF-8
+    return r.stdout.decode("utf-8", errors="replace") if r.returncode == 0 else None
 
 
 def _merge_meters(base: str | None, ours: str | None, theirs: str | None) -> str | None:
@@ -75,6 +75,15 @@ def _merge_meters(base: str | None, ours: str | None, theirs: str | None) -> str
 def _settle(root: Path, f: str) -> None:
     """One settleable clash: the snapshot and out/ media keep the commit being replayed ("theirs" in a rebase: this run's own work);
     a deleted-on-both side is dropped; a meter is merged three ways."""
+    if f.startswith("out/"):                                          # media: never read, this run's copy or nothing (6 Nov 2026 crash)
+        base, ours, theirs = None, None, (_side(root, f, 3) is not None)
+        if not theirs:
+            _git(root, "rm", "-q", "--cached", "--", f, check=False)
+            (Path(root) / f).unlink(missing_ok=True)
+        else:
+            _git(root, "checkout", "--theirs", "--", f)
+            _git(root, "add", f)
+        return
     base, ours, theirs = (_side(root, f, n) for n in (1, 2, 3))
     if theirs is None:                                                # this run deleted it (or never had it): keep it gone
         _git(root, "rm", "-q", "--cached", "--", f, check=False)
