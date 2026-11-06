@@ -25,10 +25,14 @@ def query(token: str, params: dict, call=youtube.call) -> list:
 def summarize(token: str, start: date, end: date, call=youtube.call) -> dict:
     span = {"startDate": start.isoformat(), "endDate": end.isoformat()}
     per_day = query(token, {**span, "dimensions": "day,creatorContentType", "metrics": "views,estimatedMinutesWatched,subscribersGained", "sort": "day"}, call)
+    kinds = {r[1] for r in per_day if r[0] != "error"}
+    long_kind = next((k for k in kinds if "demand" in str(k).lower()), None)          # the API's own spelling of "long video"
+    if not long_kind:
+        return {"per_day": per_day, "sources": [], "top": []}
     sources = query(token, {**span, "dimensions": "insightTrafficSourceType", "metrics": "views,estimatedMinutesWatched",
-                            "filters": "creatorContentType==VIDEO_ON_DEMAND", "sort": "-views"}, call)
+                            "filters": f"creatorContentType=={long_kind}", "sort": "-views"}, call)
     top = query(token, {**span, "dimensions": "video", "metrics": "views,estimatedMinutesWatched,averageViewDuration",
-                        "filters": "creatorContentType==VIDEO_ON_DEMAND", "sort": "-views", "maxResults": 8}, call)
+                        "filters": f"creatorContentType=={long_kind}", "sort": "-views", "maxResults": 8}, call)
     return {"per_day": per_day, "sources": sources, "top": top}
 
 
@@ -44,13 +48,19 @@ def report(name: str, s: dict) -> list:
             return out + [f"error: {row}"]
         day, kind, views, minutes, subs = row
         out.append(f"{day} {kind:<18} views {int(views):>5}  hours {hours(minutes):>6}  subs {int(subs)}")
-        if kind == "SHORTS":
+        if str(kind).lower() == "shorts":
             short_h += hours(minutes); short_v += views
         else:
             long_h += hours(minutes); long_v += views
     out.append(f"TOTAL long-form: {int(long_v)} views, {round(long_h, 1)} h | Shorts: {int(short_v)} views, {round(short_h, 1)} h")
-    out.append("long-form by traffic source (views, hours): " + "; ".join(f"{r[0]} {int(r[1])}/{hours(r[2])}" for r in s["sources"]))
-    out.append("top long videos (id, views, hours, avg seconds): " + "; ".join(f"{r[0]} {int(r[1])}/{hours(r[2])}/{int(r[3])}" for r in s["top"]))
+    if s["sources"] and s["sources"][0][0] == "error":
+        out.append(f"traffic sources: {s['sources'][0]}")
+    else:
+        out.append("long-form by traffic source (views, hours): " + "; ".join(f"{r[0]} {int(r[1])}/{hours(r[2])}" for r in s["sources"]))
+    if s["top"] and s["top"][0][0] == "error":
+        out.append(f"top videos: {s['top'][0]}")
+    else:
+        out.append("top long videos (id, views, hours, avg seconds): " + "; ".join(f"{r[0]} {int(r[1])}/{hours(r[2])}/{int(r[3])}" for r in s["top"]))
     return out
 
 
