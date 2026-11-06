@@ -139,7 +139,7 @@ def test_rate_limit_waits_and_retries_without_spending_budget(tmp_path):
 
 
 def test_lines_are_paced_under_ten_a_minute(tmp_path, monkeypatch):
-    monkeypatch.setattr(voice, "MIN_GAP_S", 6.5)
+    monkeypatch.setattr(voice, "MIN_GAP_S", 6.5)   # the test sets its own gap
     now = [100.0]; slept = []
     sleep = lambda s: (slept.append(round(s, 1)), now.__setitem__(0, now[0] + s))
     kw = dict(key="k", cache_dir=tmp_path / "c", budget=tmp_path / "b.json", post=FakePost(), today=date(2026, 10, 21), sleep=sleep, clock=lambda: now[0])

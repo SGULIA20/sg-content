@@ -1,5 +1,5 @@
 {
- "_note": "Gemini prepaid top-ups (rupees), newest last. The 9 pm card counts down from the newest one; add a line when the founder tops up. A line may carry spent_since_previous (rupees really spent since the line before, from the balance Google showed): the meter learns its correction factor from it.",
+ "_note": "Gemini prepaid top-ups (rupees; prepay balance plus any Google credits), newest last. The 9 pm card counts down from the newest one; add a line when the founder tops up. A line may carry spent_since_previous (rupees really spent since the line before, from the balance Google showed): the meter learns its correction factor from it.",
  "topups": [
   {
    "day": "2026-10-24",
@@ -16,8 +16,8 @@
   },
   {
    "day": "2026-11-06",
-   "inr": 1959.39,
-   "note": "prepaid Rs 2,000 added 6 Nov; balance shown Rs 1,959.39. Plus Google Developer Program credit Rs 952.30 (expires 4 Nov 2027), not counted here",
+   "inr": 2911.69,
+   "note": "prepaid Rs 2,000 added 6 Nov; prepay balance Rs 1,959.39 plus Google Developer Program credit Rs 952.30 (expires 4 Nov 2027) = Rs 2,911.69 spendable. Reading later on 6 Nov (AI Studio): prepay Rs 1,950.12 + credits Rs 754.97 = Rs 2,705.09, so Rs 206.60 spent since the top-up and the credits are used up first",
    "spent_since_previous": 2015.65
   }
  ]
