@@ -103,8 +103,12 @@
    "usd": 0.057972,
    "voice": 9
   },
-  "ig_reel_id": "18021523025736688",
-  "ig_story_id": "skipped: Reel over 60 s",
+  "ig_reposted_from": {
+   "ig_reel_id": "18021523025736688",
+   "ig_story_id": "skipped: Reel over 60 s",
+   "threads_id": "18149732770563684",
+   "threads_poll_id": "18018724973956602"
+  },
   "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-05-sglearning-short.mp4",
@@ -113,8 +117,6 @@
   },
   "intro_sent": "2026-11-04T10:49:33+00:00",
   "out_sha": "d02b593d537ebac104fbda7b181be154746d8cb7",
-  "threads_id": "18149732770563684",
-  "threads_poll_id": "18018724973956602",
   "yt_id": "JnWhBiS5kqo",
   "yt_id_replaced": "IZJ5VUWxulk",
   "yt_long_link": "UgzOCnSIV4Yp0JL8kkh4AaABAg"
@@ -122,7 +124,8 @@
  "kind": "short",
  "publish_day": "2026-11-05",
  "reasons": [
-  "voice synthesis failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. "
+  "voice synthesis failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+  "reposted to Instagram and Threads with the founder's intro (founder, 6 Nov 2026): the first post played without it"
  ],
  "script": {
   "captions": {
@@ -274,7 +277,7 @@
   },
   "title": "Meta ka AI kharcha, aapki *SIP* pe? 🤖"
  },
- "status": "posted",
+ "status": "uploaded",
  "timings": [
   0.0,
   5.33,
@@ -310,6 +313,6 @@
   "title": "Meta raises AI spending forecast to $145 billion, plans new share issue; Q3 revenue beats estimates",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-11-05T12:04:59+00:00",
+ "updated": "2026-11-06T14:06:52+00:00",
  "writer": "claude"
 }

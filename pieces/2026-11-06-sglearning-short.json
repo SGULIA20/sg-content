@@ -84,8 +84,12 @@
    "usd": 0.19702,
    "voice": 8
   },
-  "ig_reel_id": "18105757484377976",
-  "ig_story_id": "17997334406840687",
+  "ig_reposted_from": {
+   "ig_reel_id": "18105757484377976",
+   "ig_story_id": "17997334406840687",
+   "threads_id": "17907018108353081",
+   "threads_poll_id": "17909063607669000"
+  },
   "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-06-sglearning-short.mp4",
@@ -95,8 +99,6 @@
   },
   "intro_sent": "2026-11-04T10:49:33+00:00",
   "out_sha": "85c71e285b2d03fffa02235271516f8fe5fdcb78",
-  "threads_id": "17907018108353081",
-  "threads_poll_id": "17909063607669000",
   "yt_id": "-XRz8TtAUmQ",
   "yt_id_replaced": "hAATA_nwcuM"
  },
@@ -104,7 +106,8 @@
  "publish_day": "2026-11-06",
  "reasons": [
   "try 1: opener: the first picture is too close to 2026-11-02-sglearning-short's; pick a different subject",
-  "try 2: advice: bech do; advice: becho"
+  "try 2: advice: bech do; advice: becho",
+  "reposted to Instagram and Threads with the founder's intro (founder, 6 Nov 2026): the first post played without it"
  ],
  "script": {
   "captions": {
@@ -256,7 +259,7 @@
   },
   "title": "Dollar aa rahe, par *tez* ja rahe 💸"
  },
- "status": "posted",
+ "status": "uploaded",
  "timings": [
   0.0,
   6.61,
@@ -287,6 +290,6 @@
   "title": "Monthly Data on India’s International Trade in Services  for the Month of September 2026",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-11-06T13:10:57+00:00",
+ "updated": "2026-11-06T14:06:52+00:00",
  "writer": "claude"
 }
