@@ -396,3 +396,23 @@ def test_a_first_upload_drops_the_other_copies_of_its_slot(tmp_path, monkeypatch
     action, q = intro.collect(p, deps, tmp_path, now=datetime(2026, 11, 6, 9, 0, tzinfo=timezone.utc), notify=sent.append,
                               transcribe=lambda c: p.topic["intro"]["text"].lower(), compose_fn=lambda *a: None)
     assert action == "uploaded-intro" and deleted == ["twin"] and q.ids["yt_duplicates_removed"] == ["twin"]
+
+
+def test_a_clip_the_redo_checked_is_not_checked_again_after_the_rebuild(tmp_path, monkeypatch):
+    """6 Nov 2026, Nalanda: the redo passed the clip, the rebuilt long's second transcription failed it, and 22 minutes were lost."""
+    from engine import pipeline
+    p = _scheduled(tmp_path, "2026-11-15-arthvan-long", date(2026, 11, 15), with_clip=True); p.kind = "long"
+    p.topic["intro"] = intro.plan(p, ask=lambda _p: "Chhote print ka ek rule"); pieces.save(p, tmp_path)
+    monkeypatch.setattr(intro, "duration", lambda path: 9.9)
+    calls = []
+    def transcribe(c):
+        calls.append(1)
+        return p.topic["intro"]["text"].lower() if len(calls) == 1 else "kuch aur bilkul alag"      # the second verdict would fail
+    def fake_make(piece, deps, root, **k):
+        out = tmp_path / "out" / piece.id
+        action = intro.before_upload(piece, root, out, lambda t: None, None, transcribe, lambda *a: None)
+        piece.status = "uploaded" if action == "compose" else "intro-wait"; piece.ids["yt_id"] = "newlong"; pieces.save(piece, root); return piece
+    monkeypatch.setattr(pipeline, "make", fake_make)
+    (tmp_path / "out" / p.id / "reel.mp4").unlink()                                   # a long: no plain video on this machine
+    out = intro.redo_piece(p, _Deps(), tmp_path, notify=lambda t: None, transcribe=transcribe, find=lambda pc: "", delete=lambda ch, vid: True)
+    assert out == "rebuilt-uploaded" and len(calls) == 1 and p.ids.get("intro_checked") and not p.ids.get("intro_rejected")

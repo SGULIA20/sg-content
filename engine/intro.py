@@ -551,12 +551,16 @@ def before_upload(piece, root: Path, out_dir: Path, notify=None, now: datetime |
     if _usable_clip(root, piece):
         if not (piece.topic or {}).get("intro"):
             piece.topic["intro"] = plan(piece, ask)
-        problems = check(clip, piece.topic["intro"], transcribe)
+        # a clip the redo already checked is not checked again after the 25-minute rebuild: the transcription varies between calls,
+        # and a second verdict threw away a rebuilt long (6 Nov 2026, Nalanda)
+        problems = [] if piece.ids.get("intro_checked") == _sha(clip) else check(clip, piece.topic["intro"], transcribe)
         if not problems:
+            piece.ids["intro_checked"] = _sha(clip)
             (compose_fn or compose)(piece, clip, out_dir)
             piece.ids.setdefault("intro", {"clip": clip.name, "composed": now.isoformat(timespec="seconds")})
             return "compose"
         piece.ids["intro_rejected"] = _sha(clip)
+        piece.ids["intro_rejected_why"] = "; ".join(problems)
         notify(f"🎬 {piece.id}: the intro clip was not used: " + "; ".join(problems) + f". Send a new one with the caption intro {piece.id}.")
     if now >= deadline_utc(piece) and not piece.ids.get("intro_overdue"):      # founder, 5 Nov 2026: never the plain version
         piece.ids["intro_overdue"] = now.isoformat(timespec="seconds")
@@ -845,12 +849,14 @@ def redo_piece(piece, deps, root: Path, env=None, notify=None, transcribe=None, 
     clip = clip_path(root, piece)
     if not (piece.topic or {}).get("intro"):
         piece.topic["intro"] = plan(piece)                            # the real plan, bridge line included (bridge() falls back to none)
-    problems = check(clip, piece.topic["intro"], transcribe)
+    problems = [] if piece.ids.get("intro_checked") == _sha(clip) else check(clip, piece.topic["intro"], transcribe)
     if problems:
         piece.ids["intro_rejected"] = _sha(clip)
+        piece.ids["intro_rejected_why"] = "; ".join(problems)
         pieces.save(piece, root)
         notify(f"🎬 {piece.id}: the intro clip was not used: " + "; ".join(problems) + f". Send a new one with the caption intro {piece.id}.")
         return "rejected"
+    piece.ids["intro_checked"] = _sha(clip)                           # checked once; the rebuild path does not check again
     out_dir = Path(root) / "out" / piece.id
     plain_video = out_dir / ("reel.mp4" if piece.kind == "short" else "long.mp4")
     if not plain_video.exists():                                    # a long: rebuilt from the caches, composed and re-uploaded by collect()
