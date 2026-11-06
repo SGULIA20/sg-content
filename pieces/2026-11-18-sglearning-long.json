@@ -706,6 +706,16 @@
    "Pehle loan chukayein ya fund banayein?"
   ],
   "id": "emergency-fund-six-months",
+  "intro": {
+   "aspect": "16:9",
+   "bridge": "Salary rukti hai, EMI ki date nahi.",
+   "closing": "Aaiye, sach jaante hain.",
+   "prompt": "16:9 landscape, 1920x1080, exactly 10 seconds, natural and cinematic. Setting: inside a bank branch, the loan desk and an EMI due-date board softly blurred behind, clean daylight. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] seated on a stool, elbows on knees, leaning in, close and conversational, wearing a plain charcoal kurta. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, a light shrug with open hands; on the second line, counting one point on a finger; on \"Aaiye, sach jaante hain\", a hand inviting the viewer in. Prop: a bank passbook and a pen. Camera: eye level, slow push-in from mid-shot to medium close-up over the 10 seconds. @SGLearning watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. Export at 1920x1080.",
+   "question": "Kal naukri chali jaaye, toh EMI kitne mahine bhar paoge?",
+   "setting": "inside a bank branch, the loan desk and an EMI due-date board softly blurred behind, clean daylight",
+   "text": "Kal naukri chali jaaye, toh EMI kitne mahine bhar paoge? Salary rukti hai, EMI ki date nahi. Aaiye, sach jaante hain.",
+   "words": 21
+  },
   "look": "claymation",
   "summary": "Why six months of expenses in a liquid place matters, where to keep it (savings, sweep FD, liquid fund), how a family builds it in a year, what not to touch it for.",
   "target_minutes": 12,
