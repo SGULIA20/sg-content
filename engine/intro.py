@@ -100,7 +100,7 @@ MYTH_PROP = "a printed photograph or old map of the place, held up to the camera
 def enabled(piece) -> bool:
     """Every Short and every long of both channels, the news and extra Reels included (founder, 5 Nov 2026: compulsory, nothing is
     scheduled without the 10-second intro)."""
-    return piece.kind in ("short", "long") and piece.channel in CHANNELS
+    return piece.kind in ("short", "long") and piece.channel in CHANNELS and not (piece.topic or {}).get("adopted")
 
 
 # ---------- the script and the prompt ----------
@@ -701,6 +701,12 @@ def audit_channels(root: Path, call=None, token_for=None, out=print) -> dict:
                 known[p.ids[k]] = p.id
         for v in p.ids.get("yt_duplicates_removed", []) or []:
             known[v] = p.id + " (removed copy)"
+    try:
+        from . import orphans
+        for m in orphans.load_plan():
+            known.setdefault(m["video"], f"moved to {m['date']}")
+    except Exception:
+        pass
     data = "https://www.googleapis.com/youtube/v3"
     result = {}
     for ch in CHANNELS:

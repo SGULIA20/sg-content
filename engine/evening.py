@@ -79,6 +79,8 @@ def _yt_cell(piece, now: datetime) -> str:
 
 def _short_cells(p, now: datetime) -> dict:
     ids = p.ids if p else {}
+    if p and p.topic.get("adopted"):                                      # a video moved in from YouTube: no Instagram, Threads or LinkedIn files
+        return {"YouTube": _yt_cell(p, now)}
     story = ids.get("ig_story_id") or ""
     skipped = story.startswith("skipped")
     if not ids.get("ig_reel_id"):

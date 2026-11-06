@@ -196,6 +196,42 @@ def go_public(token: str, video_id: str, call=call) -> bool:
     return status in (200, 201)
 
 
+def scheduled_at(token: str, when: datetime, call=call, limit: int = 150) -> list:
+    """Ids of the private videos on the signed-in channel scheduled for exactly `when`: a day that already holds a video
+    (6 Nov 2026: five to seven extra videos had piled onto single days). Empty when YouTube cannot be asked, never raises."""
+    data = "https://www.googleapis.com/youtube/v3"
+    want = when.astimezone(timezone.utc).replace(second=0, microsecond=0)
+    try:
+        status, _h, me = call("GET", f"{data}/channels?part=contentDetails&mine=true", token)
+        if status != 200:
+            return []
+        uploads = me["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+        ids, page = [], ""
+        while len(ids) < limit:
+            status, _h, body = call("GET", f"{data}/playlistItems?part=contentDetails&maxResults=50&playlistId={uploads}"
+                                    + (f"&pageToken={page}" if page else ""), token)
+            if status != 200:
+                break
+            ids += [i["contentDetails"]["videoId"] for i in body.get("items") or []]
+            page = body.get("nextPageToken", "")
+            if not page:
+                break
+        held = []
+        for i in range(0, len(ids), 50):
+            status, _h, body = call("GET", f"{data}/videos?part=status&id={','.join(ids[i:i + 50])}", token)
+            for v in (body.get("items") or []) if status == 200 else []:
+                st = v.get("status") or {}
+                try:
+                    at = datetime.fromisoformat(str(st.get("publishAt", "")).replace("Z", "+00:00")).replace(second=0, microsecond=0)
+                except ValueError:
+                    continue
+                if st.get("privacyStatus") == "private" and at == want:
+                    held.append(v["id"])
+        return held
+    except Exception:
+        return []
+
+
 def main(argv=None) -> int:
     import argparse
     from . import pieces
