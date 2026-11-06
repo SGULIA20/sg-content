@@ -104,6 +104,12 @@ def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFA
     _log_run(root, {"day": today.isoformat(), "at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "ok": ok,
                     "dry_run": dry_run, "made": made, "stopped": stopped})
     text = digest.run_summary(root, today)
+    try:
+        from . import intro as _intro
+        if (pend := _intro.pending_lines(root, now_utc)):
+            text += "\n" + "\n".join(pend)
+    except Exception as e:
+        print(f"pending clips line: {e}", flush=True)
     if out_of_credit(root, made):
         text = CREDIT_ALERT + "\n\n" + text
     if stopped:

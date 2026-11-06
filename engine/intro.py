@@ -290,12 +290,50 @@ def _wat(dt: datetime) -> str:
     return (dt + timedelta(hours=1)).strftime("%a %d %b %H:%M WAT")
 
 
+def thumb_prompt(piece) -> str:
+    """The long video's thumbnail prompt for the founder (5 Nov 2026: never the founder on the poster): the subject, the place or
+    object the script is about, and two short text lines from the title, 1280x720."""
+    script = piece.script or {}
+    title = re.sub(r"[*_]", "", script.get("title", "")).split("\n")[0].strip()
+    title = re.sub(r"[\U0001F300-\U0001FAFF\u2600-\u27BF]", "", title).strip(" :?!")
+    summary = (script.get("captions") or {}).get("youtube", {}).get("description", "") or script.get("hook", "")
+    place = _place_name(script) if piece.channel == "arthvan" else ""
+    scene = (f"the real place, {place}, photoreal, at golden hour, with the one object or detail the video is about in sharp focus" if place
+             else "the one everyday object or scene the video is about (a bill, a passbook, a phone screen, a shop, a home), photoreal, "
+                  "dramatic side light")
+    return (f"🖼 Thumbnail for {piece.id} (16:9, 1280x720, no presenter)\nVideo summary: {summary[:300]}\n\nPrompt:\n"
+            f"1280x720 YouTube thumbnail, photoreal, no people. Main image: {scene}. One small inset that shows the proof or the twist. "
+            f"Bold Hindi-English text on the left in large white letters with a black outline, two short lines taken from: \"{title}\", "
+            f"the key word in red or yellow. High contrast, clean composition. No other text, no watermark.\n\n"
+            f"Send it as a PHOTO with the caption:\nthumb {piece.id}")
+
+
 def request_text(piece, p: dict) -> str:
     title = (piece.script or {}).get("title", "").replace("*", "")
     kind = "Short" if piece.kind == "short" else "long video"
-    return (f"🎬 Intro for {piece.id} ({kind}: {title})\n\nSay exactly ({p['words']} words, ~10 s):\n\"{p['text']}\"\n\nPrompt:\n{p['prompt']}\n\n"
+    text = (f"🎬 Intro for {piece.id} ({kind}: {title})\n\nSay exactly ({p['words']} words, ~10 s):\n\"{p['text']}\"\n\nPrompt:\n{p['prompt']}\n\n"
             f"Send the clip as a FILE (paperclip → File) with the caption:\nintro {piece.id}\n\nBy {_wat(deadline_utc(piece))}. Nothing goes "
             f"out without it: a late clip publishes as soon as it is merged.")
+    if piece.kind == "long":
+        text += "\n\n" + thumb_prompt(piece)
+    return text
+
+
+def pending_lines(root: Path, now: datetime | None = None) -> list:
+    """For the morning summary and the evening card (founder, 6 Nov 2026: "are you going to remind me?"): every piece still waiting
+    for its clip, soonest first, with its deadline in WAT; empty when nothing is pending."""
+    now = now or datetime.now(timezone.utc)
+    rows = []
+    for p in waiting(root) + scheduled(root, now):
+        if _usable_clip(root, p):
+            continue                                               # the clip is in: the sweep does the rest
+        kind = "Short" if p.kind == "short" else "long"
+        need = "clip" + (" + thumbnail" if p.kind == "long" and not thumb_path(root, p).exists() else "")
+        late = " OVERDUE" if now >= deadline_utc(p) else ""
+        rows.append((deadline_utc(p), f"  {p.id} ({kind}): {need}, by {_wat(deadline_utc(p))}{late}"))
+    if not rows:
+        return []
+    return [f"🎬 Intro clips pending: {len(rows)}"] + [r for _d, r in sorted(rows)]
 
 
 def clip_path(root: Path, piece) -> Path:
