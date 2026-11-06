@@ -32,24 +32,25 @@
   "research budget used for today (4 calls); the next quota day retries",
   "try 1: no sourced facts survived the checks",
   "try 2: no sourced facts survived the checks",
-  "try 3: no sourced facts survived the checks"
+  "try 3: no sourced facts survived the checks",
+  "topic replaced by money-history mh-2016-demonetisation (founder, 6 Nov 2026): the first topic failed three source checks"
  ],
  "script": null,
  "status": "failed-research",
  "timings": [],
  "topic": {
-  "hooks": [
-   "Raat ko Bhai ka phone chamka, news thi, Zerodha par ab US stocks milenge."
-  ],
-  "id": "proven-2026-10-22-sglearning-short",
-  "link": "https://www.livemint.com/market/stock-market-news/zerodha-launches-us-stock-investing-how-to-invest-in-tesla-amazon-spacex-meta-micron-nvidia-and-amd-explained-11792594591349.html",
-  "proven_short": "2026-10-22-sglearning-short",
-  "proven_views": 1473,
-  "source": "Mint Markets",
-  "summary": "A 12-minute illustrated documentary on the question of the Short \"US Stocks 1 dollar se? Asli kharcha kya hai\", which reached 1,473 people on Instagram. Go deeper than the Short: the mechanism, a worked example in rupees, the mistakes people make, what to check. Story so far: Zerodha has launched beta access to US stocks and ETFs through its Kite platform, letting eligible Indian residents invest in up to 2,000 companies and around 1,000 funds, with fractional investing from $1. The service supports delivery orders only and charges brokerage.&amp;nbsp;",
-  "target_minutes": 12,
-  "title": "US Stocks 1 dollar se? Asli kharcha kya hai"
+  "preset": {
+   "category": "policy",
+   "history": true,
+   "hooks": [
+    "Raat 8 baje ke baad 500 ka note kya ban gaya?",
+    "RBI ke hisaab se kitna paisa wapas aaya?"
+   ],
+   "id": "mh-2016-demonetisation",
+   "summary": "The 2016 note withdrawal: the queue months, the cash crunch in small shops, what RBI's final count of returned notes showed, and the digital-payments shift that followed. What a family learned about keeping some cash and some digital.",
+   "title": "8 November 2016: raat 8 baje se 500 ka note kaagaz"
+  }
  },
- "updated": "2026-11-06T13:52:19+00:00",
+ "updated": "2026-11-06T14:06:26+00:00",
  "writer": ""
 }
