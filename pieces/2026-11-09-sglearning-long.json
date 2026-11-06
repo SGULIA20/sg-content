@@ -4,8 +4,8 @@
  "id": "2026-11-09-sglearning-long",
  "ids": {
   "budget": {
-   "day": "2026-11-05",
-   "research": 4
+   "day": "2026-11-06",
+   "research": 3
   }
  },
  "kind": "long",
@@ -29,24 +29,27 @@
   "research budget used for today (4 calls); the next quota day retries",
   "research budget used for today (4 calls); the next quota day retries",
   "research budget used for today (4 calls); the next quota day retries",
-  "research budget used for today (4 calls); the next quota day retries"
+  "research budget used for today (4 calls); the next quota day retries",
+  "try 1: no sourced facts survived the checks",
+  "try 2: no sourced facts survived the checks",
+  "try 3: no sourced facts survived the checks"
  ],
  "script": null,
- "status": "rejected",
+ "status": "failed-research",
  "timings": [],
  "topic": {
   "hooks": [
-   "Gold January se 21.43 percent gir chuka hai, pata tha?"
+   "Raat ko Bhai ka phone chamka, news thi, Zerodha par ab US stocks milenge."
   ],
-  "id": "proven-2026-10-30-sglearning-short",
-  "link": "https://www.livemint.com/market/stock-market-news/gold-price-crashes-over-rs-38-600-from-record-high-whatll-happen-amid-diwali-2026-fervour-right-time-to-buy-decoded-11792910366849.html",
-  "proven_short": "2026-10-30-sglearning-short",
-  "proven_views": 1942,
+  "id": "proven-2026-10-22-sglearning-short",
+  "link": "https://www.livemint.com/market/stock-market-news/zerodha-launches-us-stock-investing-how-to-invest-in-tesla-amazon-spacex-meta-micron-nvidia-and-amd-explained-11792594591349.html",
+  "proven_short": "2026-10-22-sglearning-short",
+  "proven_views": 1473,
   "source": "Mint Markets",
-  "summary": "A 12-minute illustrated documentary on the question of the Short \"Gold price gira, Dhanteras par khareedna sahi?\", which reached 1,942 people on Instagram. Go deeper than the Short: the mechanism, a worked example in rupees, the mistakes people make, what to check. Story so far: MCX gold has fallen 21.43% from its January record, settling at  ₹1,42,024 per 10 grams as inflation concerns, higher crude prices and investor selling weigh on precious metals. Experts say festive demand may offer support, but advise gradual buying and watching the  ₹1,40,000 support level.",
+  "summary": "A 12-minute illustrated documentary on the question of the Short \"US Stocks 1 dollar se? Asli kharcha kya hai\", which reached 1,473 people on Instagram. Go deeper than the Short: the mechanism, a worked example in rupees, the mistakes people make, what to check. Story so far: Zerodha has launched beta access to US stocks and ETFs through its Kite platform, letting eligible Indian residents invest in up to 2,000 companies and around 1,000 funds, with fractional investing from $1. The service supports delivery orders only and charges brokerage.&amp;nbsp;",
   "target_minutes": 12,
-  "title": "Gold price gira, Dhanteras par khareedna sahi?"
+  "title": "US Stocks 1 dollar se? Asli kharcha kya hai"
  },
- "updated": "2026-11-06T07:18:26+00:00",
+ "updated": "2026-11-06T13:52:19+00:00",
  "writer": ""
 }
