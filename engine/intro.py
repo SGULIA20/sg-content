@@ -687,6 +687,54 @@ def collect(piece, deps, root: Path, now: datetime | None = None, notify=None, t
     return ("uploaded-intro" if action == "compose" else "uploaded-plain"), piece
 
 
+def audit_channels(root: Path, call=None, token_for=None, out=print) -> dict:
+    """Every private or scheduled video on both channels against what the repo recorded (6 Nov 2026: YouTube Studio showed several different
+    videos for one day). Prints one line per video, grouped by publish day; videos no piece recorded are marked NOT IN REPO.
+    Read-only."""
+    from . import youtube
+    call = call or youtube.call
+    token_for = token_for or (lambda ch: youtube.access_token(ch))
+    known = {}
+    for p in pieces.list_all(root):
+        for k in ("yt_id", "yt_id_replaced"):
+            if p.ids.get(k):
+                known[p.ids[k]] = p.id
+        for v in p.ids.get("yt_duplicates_removed", []) or []:
+            known[v] = p.id + " (removed copy)"
+    data = "https://www.googleapis.com/youtube/v3"
+    result = {}
+    for ch in CHANNELS:
+        token = token_for(ch)
+        status, _h, me = call("GET", f"{data}/channels?part=contentDetails&mine=true", token)
+        if status != 200:
+            out(f"{ch}: channel lookup failed ({status})"); continue
+        uploads = me["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+        ids, page = [], ""
+        while len(ids) < 400:
+            status, _h, body = call("GET", f"{data}/playlistItems?part=contentDetails&maxResults=50&playlistId={uploads}" + (f"&pageToken={page}" if page else ""), token)
+            if status != 200:
+                break
+            ids += [i["contentDetails"]["videoId"] for i in body.get("items") or []]
+            page = body.get("nextPageToken", "")
+            if not page:
+                break
+        rows = []
+        for i in range(0, len(ids), 50):
+            status, _h, body = call("GET", f"{data}/videos?part=snippet,status,contentDetails&id={','.join(ids[i:i + 50])}", token)
+            for v in (body.get("items") or []) if status == 200 else []:
+                st = v.get("status") or {}
+                if st.get("privacyStatus") == "private" or st.get("publishAt"):
+                    rows.append({"id": v["id"], "title": (v.get("snippet") or {}).get("title", ""), "publishAt": st.get("publishAt", ""),
+                                 "duration": (v.get("contentDetails") or {}).get("duration", ""), "uploaded": (v.get("snippet") or {}).get("publishedAt", ""),
+                                 "piece": known.get(v["id"], "")})
+        rows.sort(key=lambda r: (r["publishAt"], r["uploaded"]))
+        result[ch] = rows
+        out(f"=== {ch}: {len(rows)} private or scheduled videos")
+        for r in rows:
+            out(f"{(r['publishAt'] or 'no date')[:16]}  {r['id']}  {r['duration']:10}  up {r['uploaded'][5:16]}  {r['title'][:58]:58}  {r['piece'] or 'NOT IN REPO'}")
+    return result
+
+
 def _drop_other_copies(piece, root: Path, notify) -> list:
     """After an upload: every other private copy scheduled for this slot goes (5 Nov 2026: two sweeps in parallel had uploaded
     the same piece twice, and YouTube Studio showed two and three copies). Never raises."""
@@ -967,6 +1015,7 @@ def main(argv=None) -> int:
     ap.add_argument("--plan"); ap.add_argument("--needed", action="store_true"); ap.add_argument("--sweep", action="store_true"); ap.add_argument("--redo")
     ap.add_argument("--ask-scheduled", action="store_true"); ap.add_argument("--uploads", help="piece id: list its private scheduled uploads on YouTube")
     ap.add_argument("--tidy", help="piece id: remove every private scheduled copy on YouTube except the recorded yt_id")
+    ap.add_argument("--audit", action="store_true", help="list every private or scheduled video on both channels against the repo's records (read-only)")
     a = ap.parse_args(argv)
     if a.plan:
         piece = pieces.load(a.plan, ROOT)
@@ -982,6 +1031,8 @@ def main(argv=None) -> int:
     if a.ask_scheduled:
         from . import telegram
         print("asked:", ask_scheduled(ROOT, telegram.send) or "nothing"); return 0
+    if a.audit:
+        audit_channels(ROOT); return 0
     if a.tidy == "all":
         for pid, gone in tidy_all(ROOT, print):
             print(f"{pid}: removed {', '.join(gone)}")
