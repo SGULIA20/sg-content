@@ -1,0 +1,407 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "archaeology",
+   "number": 757.0,
+   "quote": "The Great Kailasa (Cave 16) is attributed to Krishna I (c. 757-83 A.D.), the successor and uncle of Dantidurga.",
+   "source_date": "2021",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/ellora-caves/",
+   "text": "The Archaeological Survey of India attributes the initial commissioning of the Great Kailasa rock-cut complex to the Rashtrakuta king Krishna I, whose reign commenced around 757 CE.",
+   "unit": "CE"
+  },
+  {
+   "label": "scripture",
+   "number": 812.0,
+   "quote": "A copper plate grant from Baroda of the period of Karka II (c. 812-13 A.D.) speaks about the greatness of this edifice.",
+   "source_date": "2021",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/ellora-caves/",
+   "text": "The Baroda copper-plate charter of Karkaraja II issued in 812 CE praises a wondrous Shiva temple at Elapura, noting that the chief architect and the gods were astonished by its beauty.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 3.0,
+   "quote": "The masons began at the top of the cliff and worked downward, cutting three deep trenches into the rock to isolate a huge U-shaped block.",
+   "source_date": "2003",
+   "source_name": "ASI",
+   "source_url": "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora",
+   "text": "Artisans isolated the core block of the Kailasa temple by excavating 3 massive vertical trenches into the sloping cliffside before chiseling details from top to bottom.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "The traditional methods were rigidly followed by the master architect which could not have been achieved by excavating from the front.",
+   "source_date": "2003",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/ellora-caves/",
+   "text": "The subtractive top-to-bottom excavation method allowed stonecutters to work without wooden scaffolding by standing on the living bedrock tiers as they carved downward.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 5.5,
+   "quote": "Dhavalikar calculated that about 250 workers cutting 4 cubic feet per day could do the basic excavation work in about five and a half years.",
+   "source_date": "1982",
+   "source_name": "Deccan College Research Institute",
+   "source_url": "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora",
+   "text": "Archaeologist M. K. Dhavalikar calculated that a crew of 250 stonecutters removing 4 cubic feet of basalt per day could have finished the primary rough quarrying phase within 5.5 years.",
+   "unit": "years"
+  },
+  {
+   "label": "disputed",
+   "number": 200000.0,
+   "quote": "It is estimated that the artists removed 3,000,000 cu ft (85,000 m3) of stone, weighing approximately 200,000 t (220,000 tons), to excavate the temple.",
+   "source_date": "2020",
+   "source_name": "Encyclopaedia Britannica",
+   "source_url": "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora",
+   "text": "While popular literature widely cites that roughly 200,000 tonnes of basalt were quarried to create Cave 16, modern architectural estimates dispute this exact figure and place the excavated mass between 150,000 and 400,000 tonnes based on differing courtyard boundary assumptions.",
+   "unit": "tonnes"
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "M. K. Dhavalikar (1982) analyzed the architecture of the temple, and concluded that the major part of the temple was completed during the reign of Krishna I, although he agreed with Goetz that some other parts of the temple complex can be dated to the later rulers.",
+   "source_date": "1982",
+   "source_name": "Deccan College Research Institute",
+   "source_url": "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora",
+   "text": "While Hermann Goetz argued that the Kailasa complex was sculpted in distinct phases over multiple centuries across different dynasties, M. K. Dhavalikar argued that the core architectural scheme was planned and executed primarily during Krishna I's single reign with only minor later additions.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": 40.0,
+   "quote": "Dhavalikar dated the famous sculpture of Ravana shaking Mount Kailasa to about three or four decades after the main temple, attributing it to later Rashtrakuta patronage.",
+   "source_date": "1982",
+   "source_name": "Deccan College Research Institute",
+   "source_url": "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora",
+   "text": "While some art historians regard the monumental relief of Ravana shaking Mount Kailasa as part of the original 8th-century design, M. K. Dhavalikar dated the sculpture to approximately 40 years after Krishna I's death based on changing stylistic idioms.",
+   "unit": "years"
+  },
+  {
+   "label": "scripture",
+   "number": 1470.0,
+   "quote": "According to this legend, the local king suffered from a severe disease. His queen prayed to the god Ghrishneshwar (Shiva) at Elapura to cure her husband. She vowed to construct a temple if her wish was granted, and promised to observe a fast until she could see the shikhara (top) of this temple.",
+   "source_date": "1500",
+   "source_name": "Katha-Kalpataru, Krishna Yajnavalki",
+   "source_url": "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora",
+   "text": "The 16th-century Marathi text Katha-Kalpataru by Krishna Yajnavalki records that Queen Manikavati vowed to observe an unbroken fast until she could see the shikhara of the proposed temple at Elapura.",
+   "unit": "CE"
+  },
+  {
+   "label": "scripture",
+   "number": 1.0,
+   "quote": "Kokasa assured the king that the queen would be able to see the shikhara within a week. He started carving the temple from the top, by excavating downwards.",
+   "source_date": "1500",
+   "source_name": "Katha-Kalpataru, Krishna Yajnavalki",
+   "source_url": "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora",
+   "text": "The Katha-Kalpataru text relates that an architect named Kokasa resolved the queen's crisis by beginning carving at the mountain top, thereby making the temple spire visible within 1 week.",
+   "unit": "count"
+  },
+  {
+   "label": "legend",
+   "number": 18.0,
+   "quote": "According to historians, the temple was built in 18 years using the most basic tools, such as hammers and chisels.",
+   "source_date": "1900",
+   "source_name": "Folk oral tradition",
+   "source_url": "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora",
+   "text": "A pervasive modern folk belief claims that the entire Kailasa temple complex was miraculously carved from the mountain in exactly 18 years using only rudimentary iron chisels and hammers.",
+   "unit": "years"
+  },
+  {
+   "label": "legend",
+   "number": 3.0,
+   "quote": "A local legend claims that the Mughal emperor Aurangzeb attempted to destroy the Kailasa temple, but failed, causing only minor damages.",
+   "source_date": "1900",
+   "source_name": "Local folklore",
+   "source_url": "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora",
+   "text": "A popular regional legend alleges that the Mughal emperor Aurangzeb dispatched over 1,000 workers to destroy the Kailasa temple over 3 full years, but they could only disfigure a handful of statues before giving up.",
+   "unit": "years"
+  }
+ ],
+ "id": "2026-11-13-arthvan-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-06",
+   "drafts": 1
+  },
+  "cost": {
+   "inr": 21.0,
+   "usd": 0.089464,
+   "voice": 13
+  },
+  "drafts": 1,
+  "ig_story_id": "skipped: Reel over 60 s",
+  "intro_sent": "2026-11-06T20:19:09+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-13",
+ "reasons": [
+  "waiting for the founder's intro clip until 13 Nov 11:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Kailasa mandir upar se neeche kyon kaata gaya, ek rani ke liye?\nGranth kehta hai rani ka vrat. ASI kehta hai Rashtrakuta raja ka kaam.\nItihaskar aaj bhi samay par asahmat hain.\nAapko kya lagta hai, katha ya karigari?\nUs engineer dost ko bhejo jo kehta hai yeh namumkin hai.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#Kailash",
+     "#IndianHistory",
+     "#Archaeology",
+     "#AncientIndia",
+     "#Itihaas",
+     "#Rahasya",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Kailasa mandir upar se neeche kyon kaata gaya, ek rani ke liye? Granth mein rani ka vrat, patthar mein Rashtrakuta raja ka sabut. Aapke hisaab se asli wajah kya thi? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Kailasa mandir upar se neeche kyon kaata gaya, ek rani ke liye? Ek purane granth mein rani ke vrat aur karigar Kokasa ki katha hai. ASI aur itihaskaron ke sabut kya kehte hain, aur kahan woh aapas mein asahmat hain, yeh sab is Reel mein. Us engineer dost ko bhejo jo kehta hai yeh namumkin hai.",
+    "tags": [
+     "Kailasa temple",
+     "Ellora",
+     "Kailasa mandir",
+     "Ellora caves",
+     "Rashtrakuta",
+     "rock cut temple",
+     "Indian history",
+     "archaeology",
+     "Maharashtra",
+     "ancient India"
+    ],
+    "title": "Kailasa mandir: 1 hafte mein shikhar kaise?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us engineer dost ko bhejo jo kehta hai yeh namumkin hai.",
+  "hook": "Kailasa mandir upar se neeche kyon kaata gaya, ek rani ke liye?",
+  "scenes": [
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Dramatic drawn panel at dusk under a stormy sky with lightning: a giant black basalt cliff with a half-carved temple spire rising out of the rock top, tiny stonecutters with chisels on the cliff edge, far below a veiled queen seen from behind holding an oil lamp, epic scale, no text",
+     "type": "art"
+    },
+    "vo": "Kailasa mandir upar se neeche kyon kaata gaya, ek rani ke liye?"
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel inside an old palace chamber lit by lamps: a sick king lying on a bed, a queen kneeling in prayer before a small distant Shiva lingam shrine, soft warm mood, no text",
+     "type": "art"
+    },
+    "vo": "Ek purana Marathi granth hai, Katha-Kalpataru. Usmein raja beemar hai, aur rani Shiv se prarthana karti hai."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: the queen seen from behind on a palace terrace, an untouched plate of food beside her, looking toward a distant rocky hill at sunrise, determined mood, no text",
+     "type": "art"
+    },
+    "vo": "Rani vrat leti hai, shikhar dekhe bina kuch nahi khaayegi. Shikhar yaani mandir ki sabse oonchi choti."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an old master craftsman in a simple dhoti standing on top of a bare basalt hill, raising a hammer and chisel for the first strike, workers gathering behind him, morning light, no text",
+     "type": "art"
+    },
+    "vo": "Granth ka karigar Kokasa kehta hai, 1 hafte mein shikhar dikhega. Aur woh pahad ko upar se kaatne lagta hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an archaeologist with a notebook and measuring tape standing in a vast rock-cut courtyard, looking up at carved temple walls, a royal seal motif carved faintly in the stone, curious mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab sabut. ASI yaani desh ka puratattva vibhag. Woh ise Rashtrakuta raja Krishna pratham ka kaam maanta hai."
+   },
+   {
+    "facts_used": [
+     2,
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn cutaway panel of a sloping cliff: deep vertical trenches cut around a huge U-shaped block of rock, hundreds of tiny workers chiselling from the top downward, dust in the air, no text",
+     "type": "art"
+    },
+    "vo": "Karigaron ne chattan mein gehri khaiyan kaati. Beech ka vishal tukda alag kiya, phir upar se neeche gadha."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an ancient copper plate inscription held in a scholar's hands under lamplight, behind it a faint glowing vision of the carved temple, wonder mood, no readable text",
+     "type": "art"
+    },
+    "vo": "Baroda ke ek tambe ke patra par iski taareef hai. Likha hai, devta bhi iski sundarta se hairaan the."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a mountain of broken basalt rubble beside the carved temple, tiny workers carrying baskets of stone, an architect with a scroll frowning at the pile, questioning mood, no text",
+     "type": "art"
+    },
+    "vo": "Par patthar kitna hataya gaya? Aksar 2 lakh ton bola jaata hai. Naye andaze is ginti ko chunauti dete hain."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn split panel: on the left an old European historian with a pipe pointing at layered carvings from different eras, on the right an Indian archaeologist pointing at one unified temple plan, the temple between them, no text",
+     "type": "art"
+    },
+    "vo": "Itihaskar Hermann Goetz maante the, yeh kai sadiyon mein bana. M. K. Dhavalikar kehte the, zyadatar kaam ek raja ke samay hua."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an empty carved courtyard at twilight with abandoned chisels and hammers on the stone floor, long shadows, mysterious mood, no text",
+     "type": "art"
+    },
+    "vo": "Kitne haath lage, kitna samay laga, yeh aaj bhi khula sawaal hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: stonecutters standing directly on stepped tiers of living rock as they carve a pillar below their feet, no wooden scaffolding anywhere, sunlight from above, clever mood, no text",
+     "type": "art"
+    },
+    "vo": "Twist yeh hai, upar se kaatne mein machaan nahi lagi. Machaan yaani lakdi ka dhancha. Karigar chattan par hi khade rehte."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: modern visitors standing on the cliff top at Ellora looking down into the vast rock-cut Kailasa temple and its courtyard, monsoon greenery around, awe mood, no text",
+     "type": "art"
+    },
+    "vo": "Aaj aap Maharashtra ke Ellora mein ise dekh sakte ho. Upar se dekho, poora mandir ek chattan se nikla hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a young engineer with a hard hat and blueprint staring up in disbelief at the towering rock-cut temple at golden hour, seen from behind, no text",
+     "type": "art"
+    },
+    "vo": "Us engineer dost ko bhejo jo kehta hai yeh namumkin hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "KAILASA",
+   "name_hi": "कैलास",
+   "scene": "A bird's-eye view straight down into a colossal black basalt cliff where an entire multi-storey temple has been carved out of a single rock, its courtyard walls dropping deep, tiny workers on the rim, storm clouds and golden light breaking over it.",
+   "words": [
+    "2 LAKH TON",
+    "SECRET"
+   ],
+   "words_hi": [
+    "2 लाख टन",
+    "सीक्रेट"
+   ]
+  },
+  "title": "Rani ka vrat, *Kailasa* upar se bana 🤯"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  4.45,
+  12.38,
+  19.99,
+  28.16,
+  36.37,
+  43.78,
+  51.15,
+  58.16,
+  67.37,
+  73.3,
+  81.51,
+  88.48
+ ],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "en.wikipedia.org",
+   "UNESCO whc.unesco.org"
+  ],
+  "hooks": [
+   "Ek hi chattan se 2 lakh ton patthar hataya gaya?",
+   "Mandir upar se neeche kyon banaya?",
+   "Kailasa 18 saal mein ya 200 saal mein?"
+  ],
+  "id": "kailasa-ellora#second",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "Aaiye, poora khel samajhte hain.",
+   "prompt": "9:16 vertical, 1080x1920, exactly 10 seconds, natural and cinematic. Setting: the courtyard of the Rani temple, carved stone and pillars behind, early morning light. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] leaning against a counter or railing, relaxed, arms loosely folded then opening on the question, wearing a light blue linen shirt, sleeves rolled. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, eyebrows lift and one open palm turns up; on the second line, a slow nod and a half-smile; on \"Aaiye, poora khel samajhte hain\", a small \"come with me\" gesture toward the viewer. Prop: a printed photograph or old map of the place, held up to the camera for a moment. Camera: low angle, slightly below eye level, slow push-in. @SGMythWorld watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. Export at 1080x1920.",
+   "question": "Kailasa mandir upar se neeche kyon kaata gaya, ek rani ke liye?",
+   "text": "Kailasa mandir upar se neeche kyon kaata gaya, ek rani ke liye? Aaiye, poora khel samajhte hain.",
+   "words": 17
+  },
+  "layers": true,
+  "notes": "Rashtrakuta period; the '18 years' claim is legend; volumes are estimates.",
+  "place": "Ellora, Maharashtra",
+  "remake_kind": "weak",
+  "remake_note": "A SECOND CHANCE for a topic whose first Reel few people watched (it had 387 views). Same sourced facts, but a NEW angle: a sharper opening question, a different first picture, a different story moment. Never reuse its lines or its title.",
+  "remake_of": "2026-10-28-arthvan-short",
+  "remake_views": 387,
+  "target_minutes": null,
+  "title_hi": "Ellora ka Kailasa mandir, upar se neeche",
+  "voice": "voice_g8azc8xcwhlu"
+ },
+ "updated": "2026-11-06T20:19:12+00:00",
+ "writer": "claude"
+}

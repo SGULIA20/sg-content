@@ -1,0 +1,69 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.32,Default,,0,0,0,,Kailasa mandir upar se neeche kyon
+Dialogue: 0,0:00:02.32,0:00:02.95,Default,,0,0,0,,kaata gaya,
+Dialogue: 0,0:00:02.95,0:00:04.00,Default,,0,0,0,,ek rani ke liye?
+Dialogue: 0,0:00:04.45,0:00:06.49,Default,,0,0,0,,Ek purana Marathi granth hai,
+Dialogue: 0,0:00:06.49,0:00:07.85,Default,,0,0,0,,Katha-Kalpataru.
+Dialogue: 0,0:00:07.85,0:00:09.44,Default,,0,0,0,,Usmein raja beemar hai,
+Dialogue: 0,0:00:09.44,0:00:11.70,Default,,0,0,0,,aur rani Shiv se prarthana karti
+Dialogue: 0,0:00:11.70,0:00:11.93,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:12.38,0:00:13.81,Default,,0,0,0,,Rani vrat leti hai,
+Dialogue: 0,0:00:13.81,0:00:16.44,Default,,0,0,0,,shikhar dekhe bina kuch nahi khaayegi.
+Dialogue: 0,0:00:16.44,0:00:19.06,Default,,0,0,0,,Shikhar yaani mandir ki sabse oonchi
+Dialogue: 0,0:00:19.06,0:00:19.54,Default,,0,0,0,,choti.
+Dialogue: 0,0:00:19.99,0:00:22.56,Default,,0,0,0,,Granth ka karigar Kokasa kehta hai,
+Dialogue: 0,0:00:22.56,0:00:24.67,Default,,0,0,0,,1 hafte mein shikhar dikhega.
+Dialogue: 0,0:00:24.67,0:00:26.54,Default,,0,0,0,,Aur woh pahad ko upar se
+Dialogue: 0,0:00:26.54,0:00:27.71,Default,,0,0,0,,kaatne lagta hai.
+Dialogue: 0,0:00:28.16,0:00:28.86,Default,,0,0,0,,Ab sabut.
+Dialogue: 0,0:00:28.86,0:00:31.69,Default,,0,0,0,,ASI yaani desh ka puratattva vibhag.
+Dialogue: 0,0:00:31.69,0:00:34.74,Default,,0,0,0,,Woh ise Rashtrakuta raja Krishna pratham
+Dialogue: 0,0:00:34.74,0:00:35.92,Default,,0,0,0,,ka kaam maanta hai.
+Dialogue: 0,0:00:36.37,0:00:38.92,Default,,0,0,0,,Karigaron ne chattan mein gehri khaiyan
+Dialogue: 0,0:00:38.92,0:00:39.39,Default,,0,0,0,,kaati.
+Dialogue: 0,0:00:39.39,0:00:41.47,Default,,0,0,0,,Beech ka vishal tukda alag kiya,
+Dialogue: 0,0:00:41.47,0:00:43.33,Default,,0,0,0,,phir upar se neeche gadha.
+Dialogue: 0,0:00:43.78,0:00:46.01,Default,,0,0,0,,Baroda ke ek tambe ke patra
+Dialogue: 0,0:00:46.01,0:00:47.35,Default,,0,0,0,,par iski taareef hai.
+Dialogue: 0,0:00:47.35,0:00:48.02,Default,,0,0,0,,Likha hai,
+Dialogue: 0,0:00:48.02,0:00:50.48,Default,,0,0,0,,devta bhi iski sundarta se hairaan
+Dialogue: 0,0:00:50.48,0:00:50.70,Default,,0,0,0,,the.
+Dialogue: 0,0:00:51.15,0:00:52.79,Default,,0,0,0,,Par patthar kitna hataya gaya?
+Dialogue: 0,0:00:52.79,0:00:54.63,Default,,0,0,0,,Aksar 2 lakh ton bola jaata
+Dialogue: 0,0:00:54.63,0:00:54.84,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:54.84,0:00:57.09,Default,,0,0,0,,Naye andaze is ginti ko chunauti
+Dialogue: 0,0:00:57.09,0:00:57.71,Default,,0,0,0,,dete hain.
+Dialogue: 0,0:00:58.16,0:01:00.53,Default,,0,0,0,,Itihaskar Hermann Goetz maante the,
+Dialogue: 0,0:01:00.53,0:01:02.19,Default,,0,0,0,,yeh kai sadiyon mein bana.
+Dialogue: 0,0:01:02.19,0:01:02.42,Default,,0,0,0,,M.
+Dialogue: 0,0:01:02.42,0:01:02.66,Default,,0,0,0,,K.
+Dialogue: 0,0:01:02.66,0:01:04.32,Default,,0,0,0,,Dhavalikar kehte the,
+Dialogue: 0,0:01:04.32,0:01:06.68,Default,,0,0,0,,zyadatar kaam ek raja ke samay
+Dialogue: 0,0:01:06.68,0:01:06.92,Default,,0,0,0,,hua.
+Dialogue: 0,0:01:07.37,0:01:08.81,Default,,0,0,0,,Kitne haath lage,
+Dialogue: 0,0:01:08.81,0:01:10.54,Default,,0,0,0,,kitna samay laga,
+Dialogue: 0,0:01:10.54,0:01:12.85,Default,,0,0,0,,yeh aaj bhi khula sawaal hai.
+Dialogue: 0,0:01:13.30,0:01:13.97,Default,,0,0,0,,Twist yeh hai,
+Dialogue: 0,0:01:13.97,0:01:16.18,Default,,0,0,0,,upar se kaatne mein machaan nahi
+Dialogue: 0,0:01:16.18,0:01:16.63,Default,,0,0,0,,lagi.
+Dialogue: 0,0:01:16.63,0:01:18.62,Default,,0,0,0,,Machaan yaani lakdi ka dhancha.
+Dialogue: 0,0:01:18.62,0:01:21.06,Default,,0,0,0,,Karigar chattan par hi khade rehte.
+Dialogue: 0,0:01:21.51,0:01:23.68,Default,,0,0,0,,Aaj aap Maharashtra ke Ellora mein
+Dialogue: 0,0:01:23.68,0:01:24.87,Default,,0,0,0,,ise dekh sakte ho.
+Dialogue: 0,0:01:24.87,0:01:25.86,Default,,0,0,0,,Upar se dekho,
+Dialogue: 0,0:01:25.86,0:01:27.83,Default,,0,0,0,,poora mandir ek chattan se nikla
+Dialogue: 0,0:01:27.83,0:01:28.03,Default,,0,0,0,,hai.
+Dialogue: 0,0:01:28.48,0:01:30.43,Default,,0,0,0,,Us engineer dost ko bhejo jo
+Dialogue: 0,0:01:30.43,0:01:32.16,Default,,0,0,0,,kehta hai yeh namumkin hai.
