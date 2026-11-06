@@ -128,12 +128,21 @@ def _dirty(root: Path) -> bool:
 
 
 def record_out_sha(root: Path, sha: str) -> list:
+    """Remembers the commit that holds each Short's reel, because Instagram and Threads fetch the video at that commit. A Short that has
+    the founder's intro (ids["intro"]) must point at the commit with the intro version: until 6 Nov 2026 the sha recorded for the plain
+    reel stayed, so Instagram posted the old video (no intro) under the new cover. `out_sha_intro` marks that it was re-recorded."""
     done = []
     for p in pieces.list_all(root):
-        if p.kind == "short" and p.status in ("uploaded", "posted") and not p.ids.get("out_sha") and (Path(root) / "out" / p.id / "reel.mp4").exists():
-            p.ids["out_sha"] = sha
-            pieces.save(p, root)
-            done.append(p.id)
+        if p.kind != "short" or p.status not in ("uploaded", "posted") or not (Path(root) / "out" / p.id / "reel.mp4").exists():
+            continue
+        stale_for_intro = bool(p.ids.get("intro")) and not p.ids.get("out_sha_intro") and not p.ids.get("ig_reel_id")
+        if p.ids.get("out_sha") and not stale_for_intro:
+            continue
+        p.ids["out_sha"] = sha
+        if p.ids.get("intro"):
+            p.ids["out_sha_intro"] = True
+        pieces.save(p, root)
+        done.append(p.id)
     return done
 
 

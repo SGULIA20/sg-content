@@ -106,3 +106,27 @@ def test_growth_report_runs_weekly_on_monday_morning_lagos():
     crons = [s["cron"] for s in (data.get(True) or data.get("on"))["schedule"]]
     assert crons == ["13 8 * * 1", "43 9 * * 1"]
     assert "engine.playreports --weekly --send" in " ".join(s.get("run", "") for s in data["jobs"]["growth"]["steps"])
+
+
+def test_a_short_with_the_intro_gets_its_media_sha_recorded_again(tmp_path):
+    """6 Nov 2026: Instagram posted the plain reel (no founder intro) because out_sha still pointed at the commit before the intro."""
+    import subprocess
+    from datetime import date
+    from engine import gitsync, pieces
+    subprocess.run(["git", "init", "-q", "-b", "main", str(tmp_path)], check=True)
+    subprocess.run(["git", "-C", str(tmp_path), "config", "user.email", "t@t"], check=True)
+    subprocess.run(["git", "-C", str(tmp_path), "config", "user.name", "t"], check=True)
+    mk = lambda d, ids: pieces.save(_short(d, ids), tmp_path)
+    def _short(d, ids):
+        p = pieces.Piece(id=f"2026-10-{d}-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 10, int(d)))
+        p.status = "uploaded"; p.ids = ids; (tmp_path / "out" / p.id).mkdir(parents=True, exist_ok=True)
+        (tmp_path / "out" / p.id / "reel.mp4").write_bytes(b"mp4"); return p
+    mk("20", {"yt_id": "a", "out_sha": "old", "intro": {"ok": 1}})                                    # composed after the sha was recorded
+    mk("21", {"yt_id": "b", "out_sha": "old", "intro": {"ok": 1}, "out_sha_intro": True})              # already re-recorded
+    mk("22", {"yt_id": "c", "out_sha": "old", "intro": {"ok": 1}, "ig_reel_id": "r"})                  # already on Instagram: left alone
+    mk("23", {"yt_id": "d", "out_sha": "old"})                                                        # no intro: unchanged
+    done = gitsync.record_out_sha(tmp_path, "new")
+    assert done == ["2026-10-20-sglearning-short"]
+    assert pieces.load("2026-10-20-sglearning-short", tmp_path).ids["out_sha"] == "new"
+    assert pieces.load("2026-10-20-sglearning-short", tmp_path).ids["out_sha_intro"] is True
+    assert {pieces.load(f"2026-10-{d}-sglearning-short", tmp_path).ids["out_sha"] for d in ("21", "22", "23")} == {"old"}
