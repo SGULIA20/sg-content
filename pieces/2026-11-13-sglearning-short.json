@@ -1,0 +1,298 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 15.4,
+   "quote": "On a year-on-year (y-o-y) basis, NBFCs' credit registered a growth of 15.4 per cent in September 2026 as compared to 13.3 per cent a year ago.",
+   "source_date": "2026-11-06",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63940",
+   "text": "Total credit deployed by non-banking financial companies grew by 15.4 percent year-on-year in September 2026.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 61.69,
+   "quote": "The overall credit of NBFCs registered a 15.4 per cent growth to Rs 61.69 lakh crore in September 2026 from Rs 53.46 lakh crore a year ago.",
+   "source_date": "2026-11-06",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/industry/banking/finance/nbfc-credit-to-gold-jewellery-consumer-durables-grows-over-50-pc-in-sep-rbi-data/articleshow/135615629.cms",
+   "text": "Total outstanding NBFC credit expanded to 61.69 lakh crore rupees in September 2026 from 53.46 lakh crore rupees a year prior.",
+   "unit": "lakh crore INR"
+  },
+  {
+   "label": "official",
+   "number": 21.9,
+   "quote": "Retail loans growth accelerated to 21.9 per cent (y-o-y) in September 2026 compared to 16.8 per cent a year ago.",
+   "source_date": "2026-11-06",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63940",
+   "text": "Retail loan growth by shadow lenders quickened to 21.9 percent in September 2026, driven by home, vehicle, and gold loans.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 66.1,
+   "quote": "According to the apex bank's data, non-banking finance companies (NBFCs) credit towards gold jewellery outstanding for non-bank lenders increased 66.1 per cent to Rs 3.74 lakh crore in September 2026 compared to Rs 2.25 lakh crore in the year-ago month.",
+   "source_date": "2026-11-06",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/industry/banking/finance/nbfc-credit-to-gold-jewellery-consumer-durables-grows-over-50-pc-in-sep-rbi-data/articleshow/135615629.cms",
+   "text": "NBFC lending against gold jewellery jumped 66.1 percent year-on-year in September 2026 as households tapped jewellery assets for financing.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 3.74,
+   "quote": "According to the apex bank's data, non-banking finance companies (NBFCs) credit towards gold jewellery outstanding for non-bank lenders increased 66.1 per cent to Rs 3.74 lakh crore in September 2026 compared to Rs 2.25 lakh crore in the year-ago month.",
+   "source_date": "2026-11-06",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/industry/banking/finance/nbfc-credit-to-gold-jewellery-consumer-durables-grows-over-50-pc-in-sep-rbi-data/articleshow/135615629.cms",
+   "text": "Total outstanding NBFC credit secured against gold jewellery reached 3.74 lakh crore rupees in September 2026.",
+   "unit": "lakh crore INR"
+  },
+  {
+   "label": "reported",
+   "number": 54.4,
+   "quote": "Similarly, NBFC credit to consumer durables increased by 54.4 per cent year-on-year to Rs 77,896 crore from Rs 50,411 crore, RBI data showed.",
+   "source_date": "2026-11-06",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/industry/banking/finance/nbfc-credit-to-gold-jewellery-consumer-durables-grows-over-50-pc-in-sep-rbi-data/articleshow/135615629.cms",
+   "text": "Credit disbursed for consumer durables rose by 54.4 percent year-on-year to 77,896 crore rupees as festive EMI purchases surged.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 17.8,
+   "quote": "Credit to agriculture and allied activities recorded a robust growth of 17.8 per cent (y-o-y) in September 2026 as against 5.2 per cent a year ago.",
+   "source_date": "2026-11-06",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63940",
+   "text": "NBFC lending to agriculture and allied activities expanded by 17.8 percent in September 2026 compared to 5.2 percent in September 2025.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 7.4,
+   "quote": "Credit growth in industry sector declined to 7.4 per cent (y-o-y) in September 2026 as compared with 10.2 per cent in September 2025.",
+   "source_date": "2026-11-06",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63940",
+   "text": "Industrial credit growth from NBFCs slipped to 7.4 percent in September 2026 amid subdued expansion in infrastructure financing.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 17.3,
+   "quote": "Credit growth in services sector moderated to 17.3 per cent (y-o-y) in September 2026 from 23.0 per cent a year ago.",
+   "source_date": "2026-11-06",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63940",
+   "text": "Services sector credit growth moderated to 17.3 percent in September 2026 from 23.0 percent in the corresponding month of the prior year.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 87.0,
+   "quote": "Sectoral credit data of NBFCs are based on sample of (i) NBFCs in Upper and Middle Layers, and (ii) HFCs, accounting for about 87 per cent of total credit with respect to data published in ‘Report on Trend and Progress of Banking in India 2024-25’ (RTP 2024-25, outstanding as on September 2025).",
+   "source_date": "2026-11-06",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63940",
+   "text": "The RBI sample covers upper- and middle-layer NBFCs and housing finance companies representing approximately 87 percent of total sector credit.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-13-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-06",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 16.5,
+   "usd": 0.066078,
+   "voice": 8
+  },
+  "drafts": 1,
+  "intro_sent": "2026-11-06T20:27:06+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-13",
+ "reasons": [
+  "waiting for the founder's intro clip until 13 Nov 10:00 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Gold loan ek saal mein 66.1 percent badha, aapke ghar mein bhi? 💍\nAadhe ghante mein paisa milta hai, isliye aasaan lagta hai.\nPar girvi rakhte hi sona bachat nahi, udhaar ban jaata hai.\nAapke ghar mein kabhi sona girvi rakha gaya hai?\nYeh investment advice nahi hai.\nYeh Mummy ko bhejo, jo kehti hain sona mushkil mein kaam aata hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#RBI",
+     "#EMI",
+     "#PersonalFinanceIndia",
+     "#MoneyTipsHindi",
+     "#HinglishFinance",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Gold loan ek saal mein 66.1 percent badha. Sona girvi rakhte hi bachat nahi, udhaar ban jaata hai. Aapke ghar mein kabhi sona girvi rakha gaya hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Gold loan ek saal mein 66.1 percent badha, aapke ghar mein bhi? Sona girvi rakhte hi bachat nahi, udhaar ban jaata hai. Byaaj har mahine chadhta hai, aur time pe paisa na lauta toh sona bik sakta hai. Us Mummy ko bhejo jo kehti hain sona mushkil mein kaam aata hai.",
+    "tags": [
+     "gold loan",
+     "sona girvi",
+     "NBFC",
+     "RBI data",
+     "gold loan byaaj",
+     "Diwali EMI",
+     "personal finance hindi",
+     "paise ki khabar",
+     "Learning with SG"
+    ],
+    "title": "Gold loan safe hai? Sona girvi ka sach"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Yeh Mummy ko bhejo, jo kehti hain sona mushkil mein kaam aata hai.",
+  "hook": "Gold loan ek saal mein 66.1 percent badha, aapke ghar mein bhi?",
+  "scenes": [
+   {
+    "facts_used": [
+     3
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Close-up filling the frame: a pair of heavy gold bangles resting on a small digital weighing scale on the glass counter of a gold loan office, warm yellow light glinting off the gold, a stack of rupee notes blurred in the background, daytime",
+     "type": "art"
+    },
+    "vo": "Gold loan ek saal mein 66.1 percent badha, aapke ghar mein bhi?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY in a saree standing at an open steel almirah at home, carefully lifting a red jewellery box with gold bangles, Diwali diyas and lights in the background, evening, thoughtful expression",
+     "type": "art"
+    },
+    "vo": "Diwali se pehle, Mummy ne almari se kangan nikaale. Gold loan company gayi, bank nahi, par loan deti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY sitting across a desk in a small bright gold loan office, an unnamed staff member smiling and counting cash for her, a wall clock showing a short wait, relieved expression, afternoon",
+     "type": "art"
+    },
+    "vo": "Soch simple thi, sona pada hai, kaam aa jaaye. Aadhe ghante mein paisa, koi salary slip nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A new double-door fridge being wheeled into a middle-class living room by delivery men, wedding invitation cards and gift boxes piled on the sofa, MUMMY and WIFE watching happily, festive evening",
+     "type": "art"
+    },
+    "vo": "Naya fridge aaya, shaadi ka kharcha nikla."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A long queue of ordinary men and women outside a busy gold loan branch on a crowded Indian street, each holding small jewellery pouches, shop lights on, late morning",
+     "type": "art"
+    },
+    "vo": "ET report ke mutabik, aise loan 3.74 lakh crore pahunch gaye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A heavy steel vault door closing on rows of sealed jewellery packets inside a gold loan company's strongroom, a wall calendar with pages flying off beside it, cold blue light, ominous mood",
+     "type": "art"
+    },
+    "vo": "Har mahine byaaj chadhta hai, sona company ke locker mein. Time pe na lautaya, toh sona bik sakta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt sitting at a dining table with MUMMY, calmly pointing at a loan paper while MUMMY listens with chai in hand, a jewellery box closed between them, warm night light",
+     "type": "art"
+    },
+    "vo": "Twist yeh hai, girvi rakhte hi sona bachat nahi, udhaar ban jaata hai. Pehle poochho, byaaj kitna, mohlat kitni. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY at home opening her jewellery box with her gold bangles safely back inside, smiling softly, WIFE beside her, soft morning light through the window",
+     "type": "art"
+    },
+    "vo": "Yeh Mummy ko bhejo, jo kehti hain sona mushkil mein kaam aata hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "GOLD LOAN",
+   "name_hi": "गोल्ड लोन",
+   "scene": "Heavy gold bangles on a digital weighing scale at a loan counter, a thick stack of rupee notes beside them and a steel vault door half-open behind, dramatic golden light",
+   "words": [
+    "66.1% UP",
+    "TRAP?"
+   ],
+   "words_hi": [
+    "66.1% ऊपर",
+    "ट्रैप?"
+   ]
+  },
+  "title": "Mummy ka *sona* girvi kyun ja raha? 💍"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  5.33,
+  12.54,
+  18.87,
+  22.28,
+  27.93,
+  34.38,
+  44.23
+ ],
+ "topic": {
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "Chaliye, isko detail mein dekhte hain.",
+   "prompt": "9:16 vertical, 1080x1920, exactly 10 seconds, natural and cinematic. Setting: inside a bank branch, counters, a token display and a short queue softly blurred behind. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] seated at a wooden table, slightly angled, leaning toward camera, hands resting on the table, wearing a grey half-sleeve shirt, top button open. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, a small head tilt and a raised finger; on the second line, both hands open, palms down, settling; on \"Chaliye, isko detail mein dekhte hain\", a nod and a step closer. Prop: a small gold coin and a jewellery box. Camera: eye level, a slow lateral slide from left to right, the subject kept centred. @SGLearning watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. Export at 1080x1920.",
+   "question": "Gold loan ek saal mein 66.1 percent badha, aapke ghar mein bhi?",
+   "text": "Gold loan ek saal mein 66.1 percent badha, aapke ghar mein bhi? Chaliye, isko detail mein dekhte hain.",
+   "words": 18
+  },
+  "layers": true,
+  "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63940",
+  "published": "2026-11-06T17:00:00+00:00",
+  "rank": 5,
+  "source": "RBI Press Releases",
+  "summary": "  Data on sectoral deployment of credit by non-banking financial companies (NBFCs) for the month of September 2026, collected from major NBFCs and housing finance companies (HFCs), are set out in the Statement1.      On a year-on-year (y-o-y) basis, NBFCs&rsquo; credit registered a growth of 15.4 per cent in September 2026 as compared to 13.3 per cent a year ago.      Highlights of the sectoral deployment of credit by NBFCs for the month ended September 30, 2026, are given below:                        Credit to agriculture and allied activities recorded a robust growth of 17.8 per cent (y-o-y) in September 2026 as against 5.2 per cent a year ago.                          Credit growth in industry sector declined to 7.4 per cent (y-o-y) in September 2026 as compared with 10.2 per cent in September 2025. Within industry, credit growth in &lsquo;infrastructure&rsquo; remained subdued.                           Credit growth in services sector moderated to 17.3 per cent (y-o-y) in September 2026 from 23.0 per cent a year ago. While credit to &lsquo;commercial real estate&rsquo; marked buoyant expansion, &lsquo;trade&rsquo; and &lsquo;transport operators&rsquo; segments also witnessed higher credit growth.                                   Retail loans growth accelerated to 21.9 per cent (y-o-y) in September 2026 compared to 16.8 per cent a year ago. Within retail sector, &lsquo;housing loans&rsquo;, &lsquo;loans against gold jewellery&rsquo; and &lsquo;vehicle loans&rsquo; witnessed accelerated credit growth.               Ajit Prasad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Deputy General Manager  (Communications)&nbsp;&nbsp;&nbsp;&nbsp;Press Release: 2026-2027/14611 Provisional data as reported on the last day of the month. Sectoral credit data of NBFCs are based on sample of (i) NBFCs in Upper and Middle Layers, and (ii) HFCs, accounting for about 87 per cent of total credit with respect to data published in &lsquo;Report on Trend and Progress of Banking in India 2024-25&rsquo; (RTP 2024-25, outstanding as on September 2025).",
+  "target_minutes": null,
+  "title": "Sectoral Deployment of Credit by NBFC – September 2026",
+  "voice": "voice_7o0kddoq6q2z"
+ },
+ "updated": "2026-11-06T20:27:08+00:00",
+ "writer": "claude"
+}
