@@ -64,8 +64,19 @@
    "voice": 8
   },
   "drafts": 1,
+  "intro": {
+   "clip": "2026-11-12-sglearning-short.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-06T09:08:57+00:00",
+   "seconds": 9.66
+  },
+  "intro_checked": "4b1e1e4e0d4507d3",
   "intro_sent": "2026-11-05T21:20:36+00:00",
-  "intro_unheard": "4b1e1e4e0d4507d3"
+  "intro_unheard": "4b1e1e4e0d4507d3",
+  "yt_duplicates_removed": [
+   "HPLgj8cO19M"
+  ],
+  "yt_id": "XN4neWPfbOk"
  },
  "kind": "short",
  "publish_day": "2026-11-12",
@@ -212,7 +223,7 @@
   },
   "title": "Sensex upar gaya, phir *achanak* kyun gira? 📉"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   4.85,
@@ -236,6 +247,7 @@
   },
   "layers": false,
   "link": "https://www.livemint.com/market/stock-market-news/sensex-weekly-expiry-today-prediction-can-bulls-stage-comeback-despite-crude-oil-shock-key-levels-traders-should-watch-11792641111907.html",
+  "look": "claymation",
   "published": "2026-10-22T04:16:15+00:00",
   "rank": 3,
   "remake_kind": "weak",
@@ -248,6 +260,6 @@
   "title": "Sensex weekly expiry today prediction: Can bulls stage comeback despite crude oil shock? Key levels traders should watch",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-11-05T21:20:39+00:00",
+ "updated": "2026-11-06T09:09:01+00:00",
  "writer": "claude"
 }

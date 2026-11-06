@@ -97,18 +97,27 @@
    "ta": "AUieDaaoh7zItdpi0Anih5Z7Y8q4PbQ_3Vq6OWeA5qT0RVv1x7ng4z4OkZCbVxNH0pU"
   },
   "cost": {
-   "inr": 190.5,
-   "usd": 0.723786,
+   "inr": 253.5,
+   "usd": 1.14533,
    "voice": 43
   },
+  "intro": {
+   "clip": "2026-11-18-sglearning-long.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-06T09:24:06+00:00",
+   "seconds": 9.7
+  },
+  "intro_checked": "5ed9572677ab009a",
   "intro_unheard": "5ed9572677ab009a",
   "thumb_sha": "6269aa0caed0f4aa",
-  "yt_id": "BrtdtMGzy-U"
+  "yt_id": "ZiazncbpIe8",
+  "yt_id_replaced": "BrtdtMGzy-U"
  },
  "kind": "long",
  "publish_day": "2026-11-18",
  "reasons": [
-  "voice job still running; the next run collects it"
+  "voice job still running; the next run collects it",
+  "re-made from the caches to carry the founder's intro"
  ],
  "script": {
   "captions": {
@@ -724,6 +733,6 @@
   "title": "Naukri gayi, EMI nahi ruki: 6 mahine ka emergency fund kaise banta hai",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-10-29T07:39:17+00:00",
+ "updated": "2026-11-06T09:24:14+00:00",
  "writer": "claude"
 }

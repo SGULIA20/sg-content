@@ -117,20 +117,29 @@
    "ta": "AUieDaYWPdzwkOeDnPf896NVL67hlJixgvbOo-fPzec9s_gSr0kGqEm4sSG-2uSLv6c"
   },
   "cost": {
-   "inr": 181.5,
-   "usd": 0.654094,
+   "inr": 235.5,
+   "usd": 1.074268,
    "voice": 42
   },
+  "intro": {
+   "clip": "2026-11-19-arthvan-long.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-06T09:46:09+00:00",
+   "seconds": 10.03
+  },
+  "intro_checked": "6effa89ee56250a0",
   "intro_unheard": "6effa89ee56250a0",
   "thumb_sha": "e0ce43dea31107c4",
-  "yt_id": "EixHMTaZ7tQ"
+  "yt_id": "-ibol-GVoYs",
+  "yt_id_replaced": "EixHMTaZ7tQ"
  },
  "kind": "long",
  "publish_day": "2026-11-19",
  "reasons": [
   "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
-  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "re-made from the caches to carry the founder's intro"
  ],
  "script": {
   "captions": {
@@ -810,6 +819,6 @@
   "title_hi": "Chausath Yogini aur Sansad ka design",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-10-29T22:32:09+00:00",
+ "updated": "2026-11-06T09:46:14+00:00",
  "writer": "claude"
 }

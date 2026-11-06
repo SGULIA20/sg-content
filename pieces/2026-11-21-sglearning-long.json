@@ -78,13 +78,21 @@
   },
   "cost": {
    "inr": 54.0,
-   "usd": 0.968362,
+   "usd": 1.386086,
    "voice": 41
   },
   "drafts": 3,
+  "intro": {
+   "clip": "2026-11-21-sglearning-long.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-06T10:02:59+00:00",
+   "seconds": 9.44
+  },
+  "intro_checked": "d4d5f76fed1c1f76",
   "intro_unheard": "d4d5f76fed1c1f76",
   "thumb_sha": "e32a07073148c895",
-  "yt_id": "EArS0PYEkug"
+  "yt_id": "kvwJrg7pIQA",
+  "yt_id_replaced": "EArS0PYEkug"
  },
  "kind": "long",
  "publish_day": "2026-11-21",
@@ -92,7 +100,8 @@
   "try 1: no sourced facts survived the checks",
   "try 2: numbers without a source: 1.04e+07, 1.04e+07, 8.5, 1.04e+07, 8.5, 1.04e+07, 70, 1.04e+07, 1.04e+07, 1.04e+07, 70, 1.04e+07, 70, 1.04e+07, 70, 1.04e+07, 70, 70, 1.3e+06",
   "try 3: numbers without a source: 100000, 70",
-  "try 1: no sourced facts survived the checks"
+  "try 1: no sourced facts survived the checks",
+  "re-made from the caches to carry the founder's intro"
  ],
  "script": {
   "captions": {
@@ -683,6 +692,6 @@
   "title": "50 lakh ka ghar, 1 crore ka bill: 20 saal ki EMI mein bank kitna kamata hai",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-11-01T14:17:29+00:00",
+ "updated": "2026-11-06T10:03:06+00:00",
  "writer": "claude"
 }
