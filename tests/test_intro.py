@@ -446,3 +446,19 @@ def test_a_transcription_outage_never_rejects_a_clip(tmp_path, monkeypatch):
     heard = "aapki sip doobe phir bhi fund house kyun kamata hai aapka paisa doobta hai unki fees pakki rehti hai aaiye isko samajhte hain"
     action, p = intro.collect(p, deps, tmp_path, now=datetime(2026, 11, 6, 9, 10, tzinfo=timezone.utc), notify=sent.append, transcribe=lambda c: heard, compose_fn=lambda *a: None)
     assert action == "uploaded-intro"                                                   # credit back: the same clip goes through
+
+
+def test_the_audit_lists_scheduled_videos_and_marks_the_ones_no_piece_recorded(tmp_path):
+    """6 Nov 2026: YouTube Studio showed several different videos for one day; the audit says which ones the repo knows."""
+    p = _piece(); p.status = "uploaded"; p.ids["yt_id"] = "known1"; pieces.save(p, tmp_path)
+    def call(method, url, token, **k):
+        if "channels?" in url: return 200, {}, {"items": [{"contentDetails": {"relatedPlaylists": {"uploads": "UU1"}}}]}
+        if "playlistItems" in url: return 200, {}, {"items": [{"contentDetails": {"videoId": "known1"}}, {"contentDetails": {"videoId": "stray2"}}, {"contentDetails": {"videoId": "pub3"}}]}
+        return 200, {}, {"items": [
+            {"id": "known1", "snippet": {"title": "A", "publishedAt": "2026-11-05T10:00:00Z"}, "status": {"privacyStatus": "private", "publishAt": "2026-11-07T08:00:00Z"}, "contentDetails": {"duration": "PT1M"}},
+            {"id": "stray2", "snippet": {"title": "B", "publishedAt": "2026-11-05T11:00:00Z"}, "status": {"privacyStatus": "private", "publishAt": "2026-11-07T08:00:00Z"}, "contentDetails": {"duration": "PT1M5S"}},
+            {"id": "pub3", "snippet": {"title": "C", "publishedAt": "2026-11-01T11:00:00Z"}, "status": {"privacyStatus": "public"}, "contentDetails": {"duration": "PT1M"}}]}
+    lines = []
+    res = intro.audit_channels(tmp_path, call=call, token_for=lambda ch: "t", out=lines.append)
+    assert [r["id"] for r in res["sglearning"]] == ["known1", "stray2"] and res["sglearning"][1]["piece"] == ""
+    assert any("stray2" in l and "NOT IN REPO" in l for l in lines) and any("known1" in l and p.id in l for l in lines)
