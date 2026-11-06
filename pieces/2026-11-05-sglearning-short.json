@@ -103,12 +103,14 @@
    "usd": 0.057972,
    "voice": 9
   },
+  "ig_reel_id": "18438676039177546",
   "ig_reposted_from": {
    "ig_reel_id": "18021523025736688",
    "ig_story_id": "skipped: Reel over 60 s",
    "threads_id": "18149732770563684",
    "threads_poll_id": "18018724973956602"
   },
+  "ig_story_id": "skipped: Reel over 60 s",
   "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-05-sglearning-short.mp4",
@@ -118,6 +120,8 @@
   "intro_sent": "2026-11-04T10:49:33+00:00",
   "out_sha": "a26545a9cb50a63c620da8521ce5fa2503d6b610",
   "out_sha_intro": true,
+  "threads_id": "18011718764995920",
+  "threads_poll_id": "17879137182576698",
   "yt_id": "JnWhBiS5kqo",
   "yt_id_replaced": "IZJ5VUWxulk",
   "yt_long_link": "UgzOCnSIV4Yp0JL8kkh4AaABAg"
@@ -278,7 +282,7 @@
   },
   "title": "Meta ka AI kharcha, aapki *SIP* pe? 🤖"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   5.33,
@@ -314,6 +318,6 @@
   "title": "Meta raises AI spending forecast to $145 billion, plans new share issue; Q3 revenue beats estimates",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-11-06T14:06:52+00:00",
+ "updated": "2026-11-06T15:41:50+00:00",
  "writer": "claude"
 }
