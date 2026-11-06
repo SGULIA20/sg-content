@@ -665,6 +665,16 @@
    "Saal mein ek extra EMI se kitne saal bachte hain?"
   ],
   "id": "home-loan-double",
+  "intro": {
+   "aspect": "16:9",
+   "bridge": "Pehle paanch saal, ghar asal mein bank ka rehta hai.",
+   "closing": "Chaliye, shuru se dekhte hain.",
+   "prompt": "16:9 landscape, 1920x1080, exactly 10 seconds, natural and cinematic. Setting: the balcony of a new flat in a half-built housing tower, cranes and other towers behind, late-afternoon light. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] walking slowly toward the camera, the camera tracking back at the same pace, one small hand gesture per line, wearing a black polo. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, a small head tilt and a raised finger; on the second line, both hands open, palms down, settling; on \"Chaliye, shuru se dekhte hain\", a nod and a step closer. Prop: a bank passbook and a pen. Camera: handheld feel, slight natural movement, medium close-up throughout. @SGLearning watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. Export at 1920x1080.",
+   "question": "Pachaas lakh ka ghar, bill ek crore ka. Kaise?",
+   "setting": "the balcony of a new flat in a half-built housing tower, cranes and other towers behind, late-afternoon light",
+   "text": "Pachaas lakh ka ghar, bill ek crore ka. Kaise? Pehle paanch saal, ghar asal mein bank ka rehta hai. Chaliye, shuru se dekhte hain.",
+   "words": 24
+  },
   "look": "claymation",
   "summary": "A family buys a flat on a 20-year home loan; the amortisation schedule shows interest front-loaded, the total paid roughly double the price, and what prepaying one extra EMI a year does. Explain EMI, principal, interest, prepayment, floating rate.",
   "target_minutes": 12,
