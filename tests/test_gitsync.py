@@ -147,3 +147,15 @@ def test_two_runs_adding_to_the_same_meter_are_summed_and_pruned_media_keeps_thi
     m = json.loads((a / "logs" / "image-spend.json").read_text())
     assert m["2026-11-04"] == {"inr": 142, "n": 3} and m["2026-11-05"] == {"inr": 5}
     assert (a / "out" / "x" / "reel.mp4").read_bytes() == b"new"
+
+
+def test_a_clash_on_a_binary_media_file_keeps_this_runs_copy_without_decoding_it(repos):
+    """6 Nov 2026: a png both runs wrote crashed the sync with a UnicodeDecodeError."""
+    a, b, remote = repos
+    (b / "out" / "x").mkdir(parents=True); (b / "out" / "x" / "cover.jpg").write_bytes(b"\xff\xd8old")
+    _git(b, "add", "-A"); _git(b, "commit", "-q", "-m", "seed media"); _git(b, "push", "-q", "origin", "HEAD:main")
+    _git(a, "pull", "-q", "--rebase", "origin", "main")
+    (b / "out" / "x" / "cover.jpg").write_bytes(b"\xff\xd8\xb4theirs"); _git(b, "add", "-A"); _git(b, "commit", "-q", "-m", "b media"); _git(b, "push", "-q", "origin", "HEAD:main")
+    (a / "out" / "x" / "cover.jpg").write_bytes(b"\xff\xd8\xb4ours")
+    sha = gitsync.commit(a, "studio: media")
+    assert sha and not _stuck(a) and (a / "out" / "x" / "cover.jpg").read_bytes().endswith(b"ours")
