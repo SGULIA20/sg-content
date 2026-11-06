@@ -151,16 +151,23 @@
    "usd": 0.682472,
    "voice": 43
   },
+  "intro": {
+   "adopted": "2026-11-06T07:24:18+00:00",
+   "clip": "2026-11-15-arthvan-long.mp4"
+  },
   "intro_checked": "7f0e7e6216de3510",
   "intro_sent": "2026-11-06T06:20:14+00:00",
   "thumb_sha": "2ddc1ed625ff3cd2",
-  "yt_id": "hC7Q3PLVfXM"
+  "yt_duplicates_removed": [],
+  "yt_id": "8Xwxq76S7yc",
+  "yt_id_replaced": "hC7Q3PLVfXM"
  },
  "kind": "long",
  "publish_day": "2026-11-15",
  "reasons": [
   "re-made from the caches to carry the founder's intro",
-  "waiting for the founder's intro clip until 15 Nov 10:30 UTC"
+  "waiting for the founder's intro clip until 15 Nov 10:30 UTC",
+  "intro merged; adopted the upload 8Xwxq76S7yc an earlier run made"
  ],
  "script": {
   "captions": {
@@ -775,7 +782,7 @@
   },
   "title": "Nalanda ki library, sach mein *3 mahine* jali? 🤯"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   17.45,
@@ -851,6 +858,6 @@
   "title_hi": "Nalanda ki library 3 mahine tak jali",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-11-06T06:20:15+00:00",
+ "updated": "2026-11-06T07:24:27+00:00",
  "writer": "claude"
 }
