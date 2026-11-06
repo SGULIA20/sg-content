@@ -1,0 +1,33 @@
+name: yt-watch
+
+# Read-only: the last 10 days of YouTube watch time, long videos versus Shorts and paid versus organic (engine/ytwatch.py).
+# Its own concurrency group, so the 5-minute Studio poll never cancels it.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: yt-watch
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -q -r requirements.txt
+      - name: Last 10 days of watch time
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
+          YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
+        run: python -m engine.ytwatch 10
