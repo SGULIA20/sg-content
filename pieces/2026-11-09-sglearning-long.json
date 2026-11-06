@@ -1,12 +1,51 @@
 {
  "channel": "sglearning",
- "facts": [],
+ "facts": [
+  {
+   "label": "official",
+   "number": 86.0,
+   "quote": "In view of the withdrawal of legal tender character of nearly 86 per cent of value of notes in circulation on November 8, 2016, the focus of the Reserve Bank subsequently shifted to making available banknotes generated from printing presses to currency chests and from there to bank branches and ATMs in the shortest possible time.",
+   "source_date": "2017-08-30",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/Scripts/AnnualReportPublications.aspx?Id=1207",
+   "text": "The withdrawal of high-denomination notes wiped out nearly 86 percent of the total value of notes in circulation on 8 November 2016.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 100.0,
+   "quote": "In an environment of a surge in low-cost current account and saving account (CASA) deposits, banks announced a large cut in their marginal cost of funds based lending rates (MCLR) with a 100 basis points (bps) reduction in the 1-year MCLR.",
+   "source_date": "2017-11-08",
+   "source_name": "RBI",
+   "source_url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=17195",
+   "text": "A massive influx of low-cost deposits enabled commercial banks to reduce 1-year MCLR loan rates by 100 basis points, directly lowering borrowing costs and EMIs.",
+   "unit": "bps"
+  },
+  {
+   "label": "reported",
+   "number": 241.62,
+   "quote": "According to National Payments Corporation of India (NPCI) data, annual UPI transaction volume increased from just 17.8 million transactions in FY17 to 241.62 billion in FY26, a nearly 13,600-fold increase.",
+   "source_date": "2026-11-05",
+   "source_name": "Business Standard",
+   "source_url": "https://www.business-standard.com/economy/news/ten-years-after-note-ban-how-india-s-cash-habit-survived-the-upi-boom-124110500980_1.html",
+   "text": "Annual UPI digital transactions surged from 17.8 million transactions in FY17 to 241.62 billion transactions in FY26 as retail payments moved online.",
+   "unit": "billion"
+  }
+ ],
  "id": "2026-11-09-sglearning-long",
  "ids": {
   "budget": {
    "day": "2026-11-06",
-   "research": 3
-  }
+   "drafts": 2,
+   "research": 4
+  },
+  "cost": {
+   "inr": 60.0,
+   "usd": 0.218682,
+   "voice": 39
+  },
+  "drafts": 2,
+  "intro_sent": "2026-11-06T15:20:21+00:00"
  },
  "kind": "long",
  "publish_day": "2026-11-09",
@@ -33,24 +72,563 @@
   "try 1: no sourced facts survived the checks",
   "try 2: no sourced facts survived the checks",
   "try 3: no sourced facts survived the checks",
-  "topic replaced by money-history mh-2016-demonetisation (founder, 6 Nov 2026): the first topic failed three source checks"
+  "topic replaced by money-history mh-2016-demonetisation (founder, 6 Nov 2026): the first topic failed three source checks",
+  "try 1: numbers without a source: 1000, 99.3, 99.3, 99.3, 1000, 1000, 99.3",
+  "waiting for the founder's intro clip until 09 Nov 10:30 UTC"
  ],
- "script": null,
- "status": "failed-research",
- "timings": [],
- "topic": {
-  "preset": {
-   "category": "policy",
-   "history": true,
-   "hooks": [
-    "Raat 8 baje ke baad 500 ka note kya ban gaya?",
-    "RBI ke hisaab se kitna paisa wapas aaya?"
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Raat 8 baje ke baad 500 ka note kya ban gaya?\nBank ki lines, kirana ki udhaar diary, aur RBI ki ginti jisme lagbhag saara paisa wapas aaya.\nAur us jhatke ka sabak: ghar mein thoda cash, baaki bank mein.\nNote ban ke waqt aapke ghar mein sabse mushkil kya tha?\nYeh investment advice nahi hai.\nUs dost ko bhejo jo kehta hai ab cash ki koi zaroorat hi nahi.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#RBI",
+     "#EMI",
+     "#PersonalFinanceIndia",
+     "#HinglishFinance",
+     "#MoneyTipsHindi",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "8 November 2016, raat 8 baje: 500 aur usse bade note ek jhatke mein kaagaz. Phir RBI ki ginti mein lagbhag saare note wapas aa gaye. Aapke ghar mein us waqt sabse mushkil kya tha, bank ki line, ATM ya chhutta? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Raat 8 baje ka announcement",
+     "00:00 Queue ke mahine",
+     "00:00 Dukaan aur udhaar ki diary",
+     "00:00 RBI ki ginti: kitna wapas aaya",
+     "00:00 UPI, cash aur ghar ka sabak"
+    ],
+    "description": "8 November 2016 ki raat 8 baje, 500 ka note aur usse bade note ek jhatke mein kaagaz ban gaye. Bank ki lines, dukaan ka udhaar aur RBI ki final ginti ne poori kahani badal di. Aur isi jhatke se aapke phone wali payment ki aadat shuru hui, jisse har ghar ke liye ek sabak nikla. Yeh video Papa ko bhejo, jo aaj bhi almari mein saara cash rakhte hain.",
+    "tags": [
+     "notebandi",
+     "demonetisation",
+     "note ban 2016",
+     "RBI",
+     "500 ka note",
+     "UPI",
+     "cash",
+     "emergency fund",
+     "EMI",
+     "personal finance hindi",
+     "Learning with SG"
+    ],
+    "title": "Note Ban 2016: saara paisa wapas kaise aaya?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "86%",
+    "line": "Noton ki value ek raat band",
+    "source": "RBI"
+   },
+   {
+    "big_number": "100 bps",
+    "line": "Loan ka byaaj ghata",
+    "source": "RBI"
+   },
+   {
+    "big_number": "241.62 bn",
+    "line": "FY26 mein UPI transactions",
+    "source": "Business Standard"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Note ban ke waqt aapke ghar mein sabse mushkil kya tha, bank ki line, ATM, ya dukaan par chhutta?",
+  "hook": "Raat 8 baje ke baad 500 ka note kya ban gaya?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Raat 8 baje ka announcement",
+    "visual": {
+     "card": null,
+     "prompt": "Close view of an open wooden drawer at night stuffed with old large rupee notes, lit by the blue glow of a television in a dark Indian living room, tense mood, no text",
+     "type": "art"
+    },
+    "vo": "Raat 8 baje ke baad 500 ka note kya ban gaya? Sirf kaagaz ka ek tukda. 8 November 2016 ki raat, TV par announcement aaya. Aadhi raat se 500 aur usse bade purane note chalna band. Ghar ke drawer mein rakha paisa, ek jhatke mein sawaal ban gaya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY in a saree holding a steel kitchen tin and PAPA in a kurta beside an open steel almirah, both looking at each other confused, small Indian home at night, warm lamp light",
+     "type": "art"
+    },
+    "vo": "Socho ek normal ghar. Mummy ne rasoi ke dabbe mein kuch note chhupa rakhe the. Papa ki almari mein shaadi ke liye bachaya cash tha. Dono ne ek doosre ki taraf dekha. Kisi ko samajh nahi aaya, ab kya karein."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A huge pile of old rupee notes on a table slowly turning grey like waste paper, only a small corner still colourful, dramatic night light, symbolic illustration, no text",
+     "type": "art"
+    },
+    "vo": "Yeh chhoti baat nahi thi. RBI ke hisaab se, us raat bazaar mein chal rahe noton ki value ka lagbhag 86 percent, ek saath kaanooni note nahi raha. Kaanooni note yaani legal tender, jise lene se koi mana nahi kar sakta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Early morning Indian street with a milkman on a bicycle, a vegetable cart and an auto rickshaw, people holding large notes and looking unsure, soft dawn light",
+     "type": "art"
+    },
+    "vo": "Matlab bazaar ka zyada tar paisa ek raat mein ruk gaya. Doodh wala, sabzi wala, auto wala, sabke haath mein wahi bade note the. Aur agli subah, sabko kharcha toh karna hi tha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt standing beside a large drawn timeline with a bank building, a counting machine and a QR code stand, calm narrator pose, warm studio-like background, no text",
+     "type": "art"
+    },
+    "vo": "Aaj yeh kahani poori sunenge. Pehla sawaal, queue ke un mahino mein aam family ne kya jhela? Doosra sawaal, RBI ne jab note gine, toh kitna paisa wapas aaya? Teesra sawaal, is jhatke ne hamari paise ki aadat kaise badli?"
+   },
+   {
+    "facts_used": [],
+    "label": "Queue ke mahine",
+    "visual": {
+     "card": null,
+     "prompt": "A very long queue of ordinary people outside a small Indian bank branch, stretching around a street corner, morning sun, people in slippers and shawls, tired faces from a distance",
+     "type": "art"
+    },
+    "vo": "Chaliye pehle sawaal se shuru karte hain. Agli subah, shehar ke har bank ke bahar line thi. Line itni lambi ki gali ke mod tak pahunch jaaye. Log nashta chhod kar, chappal pehen kar, bas line mein khade ho gaye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA in a kurta standing in a bank queue holding a cloth bag and a plastic file, sun moving from morning to evening behind him, patient but tired expression",
+     "type": "art"
+    },
+    "vo": "Papa bhi gaye. Haath mein purane noton ka thaila, aur ek file mein ID ki photocopy. Unhe laga tha, ek ghante mein kaam ho jaayega. Shaam ko jab ghar laute, tab bhi kaam aadha hi hua tha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BANK UNCLE behind a crowded bank counter, stacks of forms and notes around him, many hands reaching towards the counter, harsh tube light, stressed mood",
+     "type": "art"
+    },
+    "vo": "Bank ke andar BANK UNCLE ka haal bhi bura tha. Har aadmi ke sawaal, har aadmi ki jaldi. Paisa nikalne aur badalne par limit thi. Yaani aap apna hi paisa, apni marzi se, poora nahi nikaal sakte the."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A row of shuttered ATM booths at night with one lit booth and a crowd rushing towards it, street lamps, sense of urgency",
+     "type": "art"
+    },
+    "vo": "ATM ki kahani aur ajeeb thi. Kai ATM khaali, kai band. Jahan cash aaya, wahan khabar aag ki tarah phail gayi. Log raat ko bhi phone karke ek doosre ko bata rahe the, us wale ATM mein paisa hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A printing press with fresh notes, armoured cash vans on a highway, and a large steel vault room, drawn as a three-step journey in one panel, busy and fast mood",
+     "type": "art"
+    },
+    "vo": "RBI ka kaam ab ek race ban gaya tha. Press mein naye note chhapna, unhe currency chests tak bhejna, phir bank aur ATM tak. Currency chest yaani woh bade godaam, jahan banks ka cash rakha jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY sitting at the kitchen table counting small bundles of old notes from a steel tin, cup of chai going cold, worried expression, evening light",
+     "type": "art"
+    },
+    "vo": "Ghar mein bhi tension thi. Mummy ke dabbe wale note bhi jama karne the. Unhe darr tha ki bank wale poochenge, itna paisa kahan se aaya. Bade deposit par sawaal ho sakte the, yeh baat sabne suni thi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Flashback panel: MUMMY over many years tucking a single note into a steel tin after vegetable shopping, soft sepia tones, tender mood",
+     "type": "art"
+    },
+    "vo": "Yahan ek baat samajhne wali hai. Mummy ka paisa chori ka nahi tha. Woh saalon ki chhoti bachat thi, sabzi ke paison se bachayi. Par cash ka koi record nahi hota, isliye seedhi bachat bhi us waqt shaq mein lagi."
+   },
+   {
+    "facts_used": [],
+    "label": "Dukaan aur udhaar ki diary",
+    "visual": {
+     "card": null,
+     "prompt": "SHOPKEEPER at a small kirana counter looking into a nearly empty cash drawer, a thick handwritten ledger open beside him, shelves of rice and soap behind, afternoon light",
+     "type": "art"
+    },
+    "vo": "Ab chaliye mohalle ki kirana dukaan par. SHOPKEEPER ki dukaan udhaar aur cash par chalti thi. Har din ka hisaab ek moti diary mein. Note ban ke baad pehle hafte, galle mein chhutte paise lagbhag khatam ho gaye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A customer holding out a large note across the kirana counter while SHOPKEEPER shakes his head, bags of groceries waiting on the counter, frustrated mood",
+     "type": "art"
+    },
+    "vo": "Grahak aate, 500 ka purana note dikhate. Shopkeeper sir hilata, bhai yeh nahi chalega. Kuch log naya bada note laate, toh chhutta nahi hota. Saamaan dukaan mein tha, grahak bhi tha, par len-den beech mein atak gaya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SHOPKEEPER writing names in a thick ledger with a pen while a familiar neighbour takes a bag of groceries, friendly nod, warm evening shop light",
+     "type": "art"
+    },
+    "vo": "Toh shopkeeper ne kya kiya? Wahi jo hamare desh mein hamesha hota hai. Diary khol di. Jaan pehchaan walon ko udhaar dena shuru kiya. Usne socha, rishta bana rahega, paisa baad mein aa jaayega. Us waqt yeh sahi bhi laga."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SHOPKEEPER at a wholesale market with an empty wallet, a trader waiting with sacks of goods, shelves at his own shop half empty in the background, heavy mood",
+     "type": "art"
+    },
+    "vo": "Par udhaar ka matlab hai, dukaandaar khud bina paise ke maal de raha hai. Use wholesale wale ko toh cash dena hai. Toh beech ka dabaav uski apni jeb par aaya. Chhoti dukaan ke liye yeh mahino ka jhatka tha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A printed QR code sheet taped to a wooden kirana counter next to a jar of toffees, close view, curious and new feeling, daylight, no readable text",
+     "type": "art"
+    },
+    "vo": "Isi waqt ek aur cheez hui. Kuch dukaanon par ek kaagaz chipka dikhne laga, ek QR code ke saath. Pehli baar kai dukaandaaron ne phone se paisa lena shuru kiya. Shuruaat mein woh bhi darte the, paisa sach mein aayega?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in a hoodie explaining with his hands to SHOPKEEPER at the counter, the shopkeeper smiling slightly with relief, sunny afternoon, friendly mood",
+     "type": "art"
+    },
+    "vo": "Bhai ne shopkeeper ko samjhaya, chacha, phone pe paisa seedha bank mein jaata hai. Chhutte ka jhanjhat khatam. Shopkeeper ne dheere se haan kaha. Pehla payment aaya, aur uske chehre par halki si muskaan aayi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A daily wage labourer and an elderly woman outside a village shop holding only cash, an empty tea stall nearby, dusty evening light, quiet hardship",
+     "type": "art"
+    },
+    "vo": "Par sabke liye yeh aasan nahi tha. Gaon mein, ya bujurgon ke liye, smartphone aur bank app nayi cheez thi. Jo log roz ki kamai cash mein lete the, unke liye yeh mahine sabse mushkil rahe."
+   },
+   {
+    "facts_used": [],
+    "label": "RBI ki ginti: kitna wapas aaya",
+    "visual": {
+     "card": null,
+     "prompt": "A huge counting hall with rows of note-counting machines and mountains of bundled old notes, workers sorting under bright lights, sense of scale",
+     "type": "art"
+    },
+    "vo": "Ab doosra sawaal, sabse bada sawaal. Jab sab note bank mein wapas aa gaye, RBI ne unhe gina. Yeh ginti aasan nahi thi. Dher saare note, machine mein, ek ek karke check hue. Nakli toh nahi, sahi toh hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Imagined scene of a locked storeroom full of hidden sacks of notes gathering dust, shadowy and mysterious, illustrated as a thought bubble above a crowd",
+     "type": "art"
+    },
+    "vo": "Shuru mein bahut logon ko laga tha, ek bada hissa wapas nahi aayega. Soch yeh thi ki jinke paas chhupa hua paisa hai, woh bank aane se darenge. Aur woh note bas wahin khatam ho jaayenge."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A giant glass jar almost completely refilled with bundles of old notes, only a tiny gap at the top, bright official room, surprising mood",
+     "type": "art"
+    },
+    "vo": "Phir RBI ka final hisaab aaya. Jitne note band hue the, unme se lagbhag saare bank mein wapas aa gaye. Matlab qareeb qareeb poora paisa laut aaya. Bahut thoda sa hissa hi bahar reh gaya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The earlier imagined storeroom now empty, with a line of people carrying bags into a bank in the background, morning light, revealing mood",
+     "type": "art"
+    },
+    "vo": "Iska seedha matlab kya hai? Noton ke roop mein koi bada chhupa dher nahi mila. Log apna paisa kisi na kisi tarah bank tak le aaye. Shuru ki soch ko, aakhri number ne ek alag tasveer dikhayi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A bank vault overflowing with deposited money, a bank manager surprised at the sheer volume, golden light, abundant mood",
+     "type": "art"
+    },
+    "vo": "Par is wapsi ka ek aur asar hua, jo kam log jaante hain. Itna saara paisa ek saath bank mein aaya, bachat khaate aur current account mein. Bank ke liye yeh sasta paisa tha, kyunki is par byaaj kam dena padta hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A bank officer lowering a large lever marked only with a downward arrow, a house and a car model on his desk, bright office, positive mood, no text",
+     "type": "art"
+    },
+    "vo": "Jab bank ke paas sasta paisa ho, toh woh loan bhi sasta de sakta hai. RBI ke mutabik, banks ne saal bhar wale loan ke apne byaaj mein 100 basis points ki katauti ki. Basis point byaaj naapne ki chhoti ikai hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE at the dining table with a loan statement and a calculator, a small relieved smile, PAPA in the background resting after the queue days, evening lamp light",
+     "type": "art"
+    },
+    "vo": "Iska fayda kisko? Jinka home loan ya car loan chal raha tha. Byaaj ghatne se EMI halki ho sakti thi. Matlab jo family queue mein khadi thi, usi ki EMI par baad mein thodi raahat aayi. Ajeeb hai na?"
+   },
+   {
+    "facts_used": [],
+    "label": "UPI, cash aur ghar ka sabak",
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt standing at a busy tea stall with QR code stands on every cart around him, modern Indian street, cheerful daylight, no readable text",
+     "type": "art"
+    },
+    "vo": "Ab teesra sawaal. Is jhatke ne hamari aadat kaise badli? Jawab aaj aapki jeb mein hai. Chai ki tapri ho ya sabzi ka thela, har jagah woh QR code. Par yeh badlaav ek din mein nahi aaya."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A quiet street from years ago with just one small shop showing a QR sheet and almost no one using phones to pay, muted colours, early days feeling",
+     "type": "art"
+    },
+    "vo": "Business Standard ki report ke mutabik, NPCI ke data ke hisaab se, FY17 mein UPI se poore saal mein sirf 17.8 million transactions hue. NPCI yaani woh sanstha jo UPI chalati hai. FY yaani sarkari hisaab ka saal."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The same street today crowded with vendors, every cart with a QR stand, people paying at fruit carts, tea stalls and auto rickshaws, vibrant daylight",
+     "type": "art"
+    },
+    "vo": "Aur FY26 tak? Yeh number 241.62 billion transactions tak pahunch gaya. Yeh hazaaron guna badhat hai. Matlab jo cheez gine chune log use karte the, woh ab har ghar ki roz ki aadat hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A modern Indian home with a phone on the table and a small envelope of cash tucked in a steel almirah, both visible in one frame, balanced calm mood",
+     "type": "art"
+    },
+    "vo": "Par report ek aur baat kehti hai. Cash poori tarah gaya nahi. Report ke hisaab se, India ki cash wali aadat UPI ke boom mein bhi bachi rahi. Log phone se bhi dete hain, aur almari mein cash bhi rakhte hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Split panel: BHAI in a hoodie with empty pockets shrugging, and PAPA in a kurta guarding a steel almirah full of cash, playful contrast, daylight",
+     "type": "art"
+    },
+    "vo": "Ab woh galti jo bahut log karte hain. Kuch sochte hain, ab sab UPI hai, cash ki zaroorat hi nahi. Kuch aaj bhi sochte hain, cash hi asli paisa hai, bank pe bharosa nahi. Dono soch ek hi galti hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A young man stuck at a petrol pump at night with a dead phone in his hand and no cash, attendant waiting, flickering lights, awkward mood",
+     "type": "art"
+    },
+    "vo": "Kyun? Kyunki 2016 ne dikhaya ki sirf cash rakhna khatra hai. Ek raat mein aapka cash atak sakta hai. Aur sirf digital pe rehna bhi khatra hai. Network gaya, server down, battery khatam, toh aap bhi atak gaye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE sitting with a notebook and a small cloth pouch of cash, dividing a monthly budget on the dining table, confident expression, morning light",
+     "type": "art"
+    },
+    "vo": "Ab WIFE ki baat suniye, jo ghar ka budget chalati hai. Unhone 2016 se ek seedha niyam banaya. Rozana ka kharcha phone se. Par ghar mein thoda sa cash hamesha, bas itna ki kuch din ka zaroori kharcha chal jaaye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY handing her old steel tin to WIFE, who places a bank passbook next to it, two generations at a kitchen table, warm smiling mood",
+     "type": "art"
+    },
+    "vo": "Aur badi bachat ka paisa? Woh dabbe mein nahi, bank mein. Kyunki bank mein paisa record mein hai, byaaj bhi milta hai. Aur kal koi bhi niyam badle, aapke paas saboot hai ki yeh paisa aapka hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A soft cushion on a sofa split visually into a large part shaped like a bank building and a small part shaped like a cash pouch, cosy symbolic illustration, no text",
+     "type": "art"
+    },
+    "vo": "Isko emergency cushion kehte hain. Emergency cushion yaani mushkil waqt ke liye alag rakha paisa. Iska bada hissa bank khaate mein, jahan se turant nikal sake. Aur chhota hissa haath mein cash, jab bank ya network saath na de."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SHOPKEEPER today at a busy kirana counter accepting cash from one customer and a phone payment from another, relaxed and smiling, bright daylight",
+     "type": "art"
+    },
+    "vo": "Ek aur sabak shopkeeper se. Jo dukaan cash aur QR dono leti hai, uske grahak khaali haath nahi lautte. Aapke ghar ke liye bhi yahi niyam hai. Ek raasta band ho, toh doosra khula rehna chahiye. Yeh investment advice nahi hai, bas ghar chalane ka samajhdaar tareeka hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A wide panel showing the journey left to right: a night drawer of old notes, a long bank queue, a kirana ledger, a counting hall, and a modern street full of QR stands, storybook style",
+     "type": "art"
+    },
+    "vo": "Toh kahani ka hisaab yeh raha. 8 November 2016 ko lagbhag 86 percent noton ki value ek raat mein band hui. Bank ki line, dukaan ka udhaar, ghar ka darr. Phir lagbhag saare note wapas aaye, aur phone se payment ki aadat ban gayi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt waving goodbye at a doorway, a family behind him checking a small cash pouch and a bank passbook together, warm evening light",
+     "type": "art"
+    },
+    "vo": "Agli video mein ek aur kahani, jo seedhe aapke paise se judi hai. Tab tak, apne ghar ka cash aur digital ka balance ek baar check kar lijiye. Aur yeh video Papa ko bhejo, jo aaj bhi almari mein saara cash rakhte hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "An illustrated end panel with three drawn icons side by side: a bank queue, an ATM booth and a kirana counter, inviting friendly mood, no text",
+     "type": "art"
+    },
+    "vo": "Ab aapse ek aasaan sawaal. Note ban ke waqt aapke ghar mein sabse mushkil kya tha, bank ki line, ATM, ya dukaan par chhutta? Comment mein apni kahani likhiye."
+   }
+  ],
+  "thumbnail": {
+   "name": "NOTEBANDI",
+   "name_hi": "नोटबंदी",
+   "scene": "LEFT: a wooden drawer at night overflowing with old 500 and 1,000 rupee notes glowing in TV light; RIGHT: the same notes as a grey heap of waste paper in front of a huge bank queue at dawn",
+   "words": [
+    "86%",
+    "KHATAM?"
    ],
-   "id": "mh-2016-demonetisation",
-   "summary": "The 2016 note withdrawal: the queue months, the cash crunch in small shops, what RBI's final count of returned notes showed, and the digital-payments shift that followed. What a family learned about keeping some cash and some digital.",
-   "title": "8 November 2016: raat 8 baje se 500 ka note kaagaz"
-  }
+   "words_hi": [
+    "86%",
+    "खत्म?"
+   ]
+  },
+  "title": "8 November 2016: raat 8 baje se 500 ka note kaagaz"
  },
- "updated": "2026-11-06T14:06:26+00:00",
- "writer": ""
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  16.49,
+  29.58,
+  44.59,
+  56.32,
+  72.41,
+  86.74,
+  99.23,
+  112.8,
+  125.57,
+  138.18,
+  150.47,
+  163.08,
+  175.33,
+  189.86,
+  203.23,
+  214.72,
+  229.57,
+  242.98,
+  255.27,
+  269.68,
+  280.33,
+  292.1,
+  304.59,
+  317.8,
+  331.01,
+  343.82,
+  356.71,
+  373.52,
+  388.33,
+  401.14,
+  413.67,
+  426.08,
+  439.73,
+  452.42,
+  466.51,
+  482.48,
+  499.13,
+  512.02
+ ],
+ "topic": {
+  "category": "policy",
+  "history": true,
+  "hooks": [
+   "Raat 8 baje ke baad 500 ka note kya ban gaya?",
+   "RBI ke hisaab se kitna paisa wapas aaya?"
+  ],
+  "id": "mh-2016-demonetisation",
+  "intro": {
+   "aspect": "16:9",
+   "bridge": "",
+   "closing": "Chaliye, isko detail mein dekhte hain.",
+   "prompt": "16:9 landscape, 1920x1080, exactly 10 seconds, natural and cinematic. Setting: outside the RBI headquarters in Mumbai, the grey stone facade and its pillars behind, morning light. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] seated at a wooden table, slightly angled, leaning toward camera, hands resting on the table, wearing a grey half-sleeve shirt, top button open. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, a small head tilt and a raised finger; on the second line, both hands open, palms down, settling; on \"Chaliye, isko detail mein dekhte hain\", a nod and a step closer. Prop: a phone face-up on the table showing a bank app. Camera: eye level, a slow lateral slide from left to right, the subject kept centred. @SGLearning watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. Export at 1920x1080.",
+   "question": "Raat 8 baje ke baad 500 ka note kya ban gaya?",
+   "text": "Raat 8 baje ke baad 500 ka note kya ban gaya? Chaliye, isko detail mein dekhte hain.",
+   "words": 17
+  },
+  "patch_tries": 1,
+  "summary": "The 2016 note withdrawal: the queue months, the cash crunch in small shops, what RBI's final count of returned notes showed, and the digital-payments shift that followed. What a family learned about keeping some cash and some digital.",
+  "target_minutes": 12,
+  "title": "8 November 2016: raat 8 baje se 500 ka note kaagaz",
+  "voice": "voice_g8azc8xcwhlu"
+ },
+ "updated": "2026-11-06T15:20:24+00:00",
+ "writer": "claude"
 }
