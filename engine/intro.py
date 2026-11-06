@@ -365,6 +365,10 @@ def speech_segments(path: Path, total: float | None = None) -> list:
     return segs or [(0.0, total)]
 
 
+class TranscriptionDown(Exception):
+    """The clip could not be heard at all (Gemini down or out of credit, 6 Nov 2026): not the clip's fault, so never a rejection."""
+
+
 def check(clip: Path, p: dict, transcribe=None, seconds: float | None = None) -> list:
     """Empty = usable. Reasons: wrong length, missing words (the founder's own transcription check), no closing line."""
     from . import inbox
@@ -375,7 +379,7 @@ def check(clip: Path, p: dict, transcribe=None, seconds: float | None = None) ->
     try:
         heard = (transcribe or inbox.transcribe)(clip)
     except Exception as e:
-        return reasons + [f"transcription failed: {type(e).__name__}"]
+        raise TranscriptionDown(f"transcription failed: {type(e).__name__}: {secrets.scrub(str(e))[:120]}") from e
     sim = recall(p["text"], heard)                                     # the script's words heard; extra words of his are fine
     if sim < inbox.SIMILARITY_MIN:
         reasons.append(f"missing words (only {sim:.0%} of the script heard): \"{heard[:120]}\"")
@@ -591,7 +595,13 @@ def before_upload(piece, root: Path, out_dir: Path, notify=None, now: datetime |
             piece.topic["intro"] = plan(piece, ask)
         # a clip the redo already checked is not checked again after the 25-minute rebuild: the transcription varies between calls,
         # and a second verdict threw away a rebuilt long (6 Nov 2026, Nalanda)
-        problems = [] if piece.ids.get("intro_checked") == _sha(clip) else check(clip, piece.topic["intro"], transcribe)
+        try:
+            problems = [] if piece.ids.get("intro_checked") == _sha(clip) else check(clip, piece.topic["intro"], transcribe)
+        except TranscriptionDown as e:
+            if piece.ids.get("intro_unheard") != _sha(clip):
+                piece.ids["intro_unheard"] = _sha(clip)
+                notify(f"⏳ {piece.id}: your clip is in but could not be checked yet ({e}); it is tried again at the next poll.")
+            return "wait"
         if not problems:
             piece.ids["intro_checked"] = _sha(clip)
             (compose_fn or compose)(piece, clip, out_dir)
@@ -887,7 +897,14 @@ def redo_piece(piece, deps, root: Path, env=None, notify=None, transcribe=None, 
     clip = clip_path(root, piece)
     if not (piece.topic or {}).get("intro"):
         piece.topic["intro"] = plan(piece)                            # the real plan, bridge line included (bridge() falls back to none)
-    problems = [] if piece.ids.get("intro_checked") == _sha(clip) else check(clip, piece.topic["intro"], transcribe)
+    try:
+        problems = [] if piece.ids.get("intro_checked") == _sha(clip) else check(clip, piece.topic["intro"], transcribe)
+    except TranscriptionDown as e:
+        if piece.ids.get("intro_unheard") != _sha(clip):
+            piece.ids["intro_unheard"] = _sha(clip)
+            pieces.save(piece, root)
+            notify(f"⏳ {piece.id}: your clip is in but could not be checked yet ({e}); it is tried again at the next poll.")
+        return "waiting"
     if problems:
         piece.ids["intro_rejected"] = _sha(clip)
         piece.ids["intro_rejected_why"] = "; ".join(problems)

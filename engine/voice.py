@@ -319,7 +319,11 @@ def verified_lines(texts: list, voice_id: str, out_dir: Path, say_fn=None, trans
     for i, text in enumerate(texts):
         wav = Path(out_dir) / f"vo{i:02d}.wav"
         for attempt in range(tries + 1):
+            was_cached = cache_path(text, voice_id, cache_dir).exists()
             d = say_fn(text, voice_id, wav, cache_dir=cache_dir, **kw)
+            if was_cached and attempt == 0:                           # a cached line passed this check when it was made: no second
+                out.append((wav, d))                                  # transcription (6 Nov 2026: five long rebuilds re-transcribed
+                break                                                 # 40 lines each and emptied the Gemini credit)
             ok, heard = line_ok(wav, text, transcribe_fn)
             if ok or attempt == tries:
                 if not ok:

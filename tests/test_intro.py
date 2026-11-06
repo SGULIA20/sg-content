@@ -432,3 +432,17 @@ def test_a_long_request_carries_a_thumbnail_prompt_without_the_founder_and_pendi
     assert lines[0] == "🎬 Intro clips pending: 2" and "2026-11-13-sglearning-short (Short): clip, by" in lines[1] and "clip + thumbnail" in lines[2]
     c = intro.clip_path(tmp_path, s); c.parent.mkdir(parents=True, exist_ok=True); c.write_bytes(b"clip")
     assert len(intro.pending_lines(tmp_path, datetime(2026, 11, 6, 8, 0, tzinfo=timezone.utc))) == 2        # the Short's clip is in
+
+
+def test_a_transcription_outage_never_rejects_a_clip(tmp_path, monkeypatch):
+    """6 Nov 2026: Gemini answered 402 (credit gone) and four good clips were marked rejected; an outage waits and is retried."""
+    p = _waiting(tmp_path); deps = _Deps(); sent = []
+    monkeypatch.setattr(intro, "duration", lambda path: 9.9)
+    def down(c): raise RuntimeError("GeminiError 402")
+    action, p = intro.collect(p, deps, tmp_path, now=datetime(2026, 11, 6, 9, 0, tzinfo=timezone.utc), notify=sent.append, transcribe=down, compose_fn=lambda *a: None)
+    assert action == "waiting" and not p.ids.get("intro_rejected") and p.ids.get("intro_unheard") and "could not be checked yet" in sent[0]
+    action, p = intro.collect(p, deps, tmp_path, now=datetime(2026, 11, 6, 9, 5, tzinfo=timezone.utc), notify=sent.append, transcribe=down, compose_fn=lambda *a: None)
+    assert action == "waiting" and len(sent) == 1                                     # told once
+    heard = "aapki sip doobe phir bhi fund house kyun kamata hai aapka paisa doobta hai unki fees pakki rehti hai aaiye isko samajhte hain"
+    action, p = intro.collect(p, deps, tmp_path, now=datetime(2026, 11, 6, 9, 10, tzinfo=timezone.utc), notify=sent.append, transcribe=lambda c: heard, compose_fn=lambda *a: None)
+    assert action == "uploaded-intro"                                                   # credit back: the same clip goes through

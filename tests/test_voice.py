@@ -235,3 +235,15 @@ def test_plain_voice_sends_the_batch_lanes_request_without_a_style_note(tmp_path
     url, body = sent[0]
     assert url.endswith(":generateContent") and body["generationConfig"]["speechConfig"]["voiceConfig"] == {"voice": "voice_abc"}
     assert "style" not in str(body) and secs > 0
+
+
+def test_a_cached_voice_line_is_not_transcribed_again(tmp_path):
+    """6 Nov 2026: five long rebuilds re-transcribed 40 cached lines each and emptied the Gemini credit."""
+    calls = []
+    def say_fn(text, vid, wav, cache_dir=None, **kw):
+        wav.write_bytes(b"wav"); return 1.0
+    cache = tmp_path / "cache"; cache.mkdir()
+    voice.cache_path("line one", "v1", cache).write_bytes(b"cached")                 # made and checked on an earlier run
+    out = voice.verified_lines(["line one", "line two"], "v1", tmp_path / "vo", say_fn=say_fn, cache_dir=cache,
+                               transcribe_fn=lambda wav: calls.append(wav.name) or "line two")
+    assert len(out) == 2 and calls == ["vo01.wav"]                                     # only the new line is heard back
