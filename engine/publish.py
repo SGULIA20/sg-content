@@ -31,8 +31,8 @@ def due(root: Path, now_utc: datetime, channel: str, env=None) -> list:
     out = []
     today = now_ist.date()
     for p in pieces.list_all(root):
-        if p.channel != channel or p.kind != "short" or p.status not in ("uploaded", "posted"):
-            continue
+        if p.channel != channel or p.kind != "short" or p.status not in ("uploaded", "posted") or p.topic.get("adopted"):
+            continue                                                                        # an adopted video has no files to post
         if p.status == "posted" and not all(p.ids.get(k) for k in PLATFORM_IDS):             # "posted" counts only when it earned it; then a
             continue                                                                        # platform configured later (LinkedIn, 22 Oct) is still owed
         if not (today - timedelta(days=RETRY_DAYS) <= p.publish_day <= today):      # today's slot, or a recent day whose post failed

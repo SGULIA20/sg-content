@@ -52,6 +52,7 @@ class Deps:
     art_batch: Callable = None   # (piece, jobs) -> "ready" | "painting": Gemini Batch API fills the picture cache at half price
     voice_check: Callable = None # (wav) -> transcript: every voiced line is read back and re-made if spoken twice or cut short
     animate_card: Callable = None  # (data, index, total, roundup, seconds, size, out) -> mp4: the moving news card (2 Nov 2026)
+    slot_holders: Callable = None  # (piece) -> [video ids]: videos already scheduled for this piece's slot (6 Nov 2026: one day, one video)
     intro_notify: Callable = None  # (text) -> None: set, the founder's 10-second avatar intro is asked for before every upload (engine/intro.py, 4 Nov 2026)
 
 
@@ -330,12 +331,36 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
     return result
 
 
+def adopt_slot_holder(piece: Piece, deps: Deps, root: Path, dry_run: bool = False) -> bool:
+    """One day, one video (founder, 6 Nov 2026: "how come 5-6 additional videos can be allocated for the same day"). Before anything is
+    spent on a piece that has no video yet, YouTube is asked whether a video is already scheduled for its slot. If so, that video
+    is the piece's video: it is recorded (no script, no files: topic.adopted) and nothing is made."""
+    if dry_run or deps.slot_holders is None or piece.ids.get("yt_id") or piece.script:
+        return False
+    try:
+        held = [h for h in (deps.slot_holders(piece) or []) if h]
+    except Exception:
+        return False
+    if not held:
+        return False
+    piece.ids["yt_id"] = held[0]
+    piece.ids["slot_adopted"] = held
+    piece.topic["adopted"] = True
+    pieces.save(pieces.transition(piece, "uploaded", f"its slot already holds YouTube {held[0]}: nothing was made"), root)
+    if deps.intro_notify:
+        deps.intro_notify(f"🔒 {piece.id}: its slot already holds a scheduled video (YouTube {held[0]}), so no second video was made. "
+                          "One day, one video.")
+    return True
+
+
 def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pack_mode: bool = False) -> Piece:
     """Runs the pipeline for one piece and records every transition. Returns the piece in its final state for this run."""
     if piece.status in buffer.DONE:
         return piece
     if piece.status == "intro-wait":                                   # the founder's intro clip may have come (engine/intro.py)
         return intro.collect(piece, deps, root, notify=deps.intro_notify)[1]
+    if adopt_slot_holder(piece, deps, root, dry_run):                  # the day already has its video: nothing is researched, voiced or painted
+        return piece
     used, prior = _used(root)
     size = VIDEO[piece.kind]
     out_dir = Path(root) / "out" / piece.id
@@ -583,6 +608,13 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
             piece.ids["unlisted"] = True
         return vid
 
+    def slot_holders_fn(piece):
+        import os
+        when = slots.publish_at(piece.channel, piece.kind, piece.publish_day)
+        if piece.topic.get("slot_ist"):
+            when = slots.utc_for(piece.publish_day, piece.topic["slot_ist"])
+        return youtube.scheduled_at(youtube.access_token(piece.channel, env or os.environ), when)
+
     def subtitles_fn(piece, out_dir, video):
         import os
         from . import subtitles
@@ -601,6 +633,6 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
                 cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for, subtitles=subtitles_fn,
                 voice_batch=lambda piece, texts, vid: voicebatch.voice_piece(piece, texts, vid),
                 art_batch=lambda piece, jobs: artbatch.paint_piece(piece, jobs), voice_check=voice.transcribe,
-                animate_card=newscard.animate, intro_notify=telegram.send)
+                animate_card=newscard.animate, intro_notify=telegram.send, slot_holders=slot_holders_fn)
     # voice.batched (several scenes per TTS request) stays unwired: on 22 Oct 2026 the model's paragraph pauses were not distinct enough
     # to cut on, and the transcript check sent every group back to line-by-line. Wire it in once the cut is reliable.

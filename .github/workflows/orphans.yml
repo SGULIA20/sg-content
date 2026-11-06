@@ -1,0 +1,35 @@
+name: orphans
+
+# Moves the 16 videos made outside the one-day-one-video rule to their December days (engine/orphans.py, content/orphans-plan.json).
+# "check" only reports. Its own concurrency group, so the 5-minute Studio poll never cancels it.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: check (report only) or apply (move the videos)
+        default: check
+
+permissions:
+  contents: read
+
+concurrency:
+  group: orphans
+  cancel-in-progress: false
+
+jobs:
+  move:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -q -r requirements.txt
+      - name: Move the videos
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
+          YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
+        run: python -m engine.orphans ${{ inputs.mode }}

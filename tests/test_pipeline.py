@@ -596,3 +596,19 @@ def test_without_intro_notify_the_piece_uploads_as_before(tmp_path):
     d, calls = deps(tmp_path)
     p = pipeline.make(_piece(day=date(2027, 1, 10)), d, tmp_path)
     assert p.status == "uploaded" and calls["upload"] == 1
+
+
+def test_a_day_whose_slot_already_holds_a_video_makes_nothing_and_adopts_it(tmp_path):
+    notes = []
+    d, calls = deps(tmp_path, slot_holders=lambda piece: ["vidA"], intro_notify=notes.append)
+    p = pipeline.make(_piece(day=date(2027, 1, 11)), d, tmp_path)
+    assert p.status == "uploaded" and p.ids["yt_id"] == "vidA" and p.topic["adopted"] is True
+    assert calls["topics"] == 0 and calls["write"] == 0 and calls["paint"] == 0 and calls["say"] == 0 and calls["upload"] == 0
+    assert notes and "One day, one video" in notes[0]
+
+
+def test_an_empty_or_unreachable_slot_check_lets_the_piece_be_made(tmp_path):
+    for holders in (lambda piece: [], lambda piece: (_ for _ in ()).throw(RuntimeError("down"))):
+        d, calls = deps(tmp_path, slot_holders=holders)
+        p = pipeline.make(_piece(day=date(2027, 1, 12)), d, tmp_path / str(id(holders)))
+        assert p.status == "uploaded" and calls["upload"] == 1 and not p.topic.get("adopted")

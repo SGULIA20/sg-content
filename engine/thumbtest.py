@@ -64,7 +64,7 @@ def run(root: Path = ROOT, now: datetime | None = None, env=None, call=youtube.c
     done = []
     for ch in CHANNELS:
         longs = [p for p in pieces.list_all(root) if p.channel == ch and p.kind == "long" and p.ids.get("yt_id")
-                 and p.status in ("uploaded", "posted") and (now.date() - p.publish_day).days <= 14]
+                 and p.status in ("uploaded", "posted") and not p.topic.get("adopted") and (now.date() - p.publish_day).days <= 14]
         if not longs:
             continue
         token = youtube.access_token(ch, env)
