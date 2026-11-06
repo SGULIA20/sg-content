@@ -620,6 +620,10 @@
   "id": "upi-fraud-anatomy",
   "summary": "How common UPI and OTP frauds work (collect requests, screen-share apps, fake customer care), what the money trail looks like, the RBI zero-liability rules and the 1930 helpline, what to do in the first hour.",
   "target_minutes": 12,
+  "thumb_test": {
+   "phase": "B",
+   "switched": "2026-11-06T18:26+00:00"
+  },
   "title": "UPI par 'refund' ka call: ek fraud ki poori kahani, step by step",
   "voice": "voice_1kn3blc2u13l"
  },
