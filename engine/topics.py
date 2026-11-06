@@ -193,6 +193,23 @@ def load_long_bank(root: Path = CONTENT_DIR) -> list:
     return yaml.safe_load((Path(root) / "long-topics.yaml").read_text()) or []
 
 
+def load_money_history(root: Path = CONTENT_DIR) -> list:
+    return yaml.safe_load((Path(root) / "money-history.yaml").read_text()) or []
+
+
+def history_day(day) -> bool:
+    """Founder, 6 Nov 2026 ("you are repeating SIP, gold, oil"): every other Learning Short comes from the money-history bank."""
+    return day.toordinal() % 2 == 0
+
+
+def next_money_history(root: Path, used_ids: set) -> dict | None:
+    """The next unused money-history topic, in bank order; None once every one has been used (the news feed takes over)."""
+    for t in load_money_history(root):
+        if t["id"] not in used_ids:
+            return {**t, "history": True}
+    return None
+
+
 PROVEN_IG_VIEWS = 1000       # 4 Nov 2026 (founder: "D"): a Short that reached this many on Instagram has proved its topic; the next long is on it
 
 

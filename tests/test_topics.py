@@ -186,3 +186,18 @@ def test_the_myth_long_takes_the_proven_shorts_bank_topic_first_then_the_rotatio
     assert topics.next_myth_long(content, {"ram-setu#long"}, proven)["id"] == "mahabharata-date#long"
     assert topics.next_myth_long(content, {"ram-setu", "mahabharata-date", "ram-setu#long", "mahabharata-date#long"}, proven)["id"] == "other"
     assert topics.next_myth_long(content, set(), [])["id"] in ("ram-setu", "other")
+
+
+def test_every_other_learning_short_comes_from_the_money_history_bank():
+    """Founder, 6 Nov 2026: wars, attacks, scams and price history of the last 45 years; no more SIP, gold, oil on repeat."""
+    from datetime import date
+    from engine.config import CONTENT_DIR
+    bank = topics.load_money_history(CONTENT_DIR)
+    assert len(bank) >= 30 and len({t["id"] for t in bank}) == len(bank)
+    assert all(t.get("title") and t.get("summary") and t.get("hooks") and t.get("category") for t in bank)
+    assert len({t["category"] for t in bank}) >= 6                                   # war, attack, crash, scam, policy, sensation, price-history
+    assert topics.history_day(date(2026, 11, 14)) != topics.history_day(date(2026, 11, 15))
+    first = topics.next_money_history(CONTENT_DIR, set())
+    assert first["id"] == bank[0]["id"] and first["history"] is True
+    assert topics.next_money_history(CONTENT_DIR, {t["id"] for t in bank}) is None     # every topic used: the news feed takes over
+    assert topics.next_money_history(CONTENT_DIR, {bank[0]["id"]})["id"] == bank[1]["id"]

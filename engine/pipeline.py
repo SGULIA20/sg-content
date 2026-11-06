@@ -558,6 +558,10 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
             if piece.kind == "long":                                   # 4 Nov 2026: a proven Short's question first, then the bank
                 return topics.next_long_finance(root / "content", used, topics.proven_shorts(root, "sglearning"))
             from datetime import datetime, timezone
+            if topics.history_day(piece.publish_day):                   # 6 Nov 2026: wars, crashes, scams and price history, every other day
+                bank = topics.next_money_history(root / "content", used)
+                if bank:
+                    return bank
             return topics.pick_finance(topics.fetch_all(), used, datetime.now(timezone.utc))
         if piece.kind == "long":
             return topics.next_myth_long(root / "content", used, topics.proven_shorts(root, "arthvan"))
