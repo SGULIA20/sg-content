@@ -1,0 +1,17 @@
+{
+ "_note": "Gated Instagram Reel boosting through Meta Ads (founder, 6 Nov 2026: 'start with the gated plan at Rs 350 a day'). One boost a day, 1 day long, Rs 350 in total across both channels. mode 'probe' creates the ad PAUSED and never spends; 'live' starts it. Needs META_ACCESS_TOKEN, META_AD_ACCOUNT_ID, META_PAGE_ID in the repo secrets (IG_USER_ID is already there); without them the run skips itself.",
+ "enabled": true,
+ "mode": "probe",
+ "currency": "INR",
+ "daily_budget": 350,
+ "days": 1,
+ "week_cap": 2500,
+ "month_cap": 10000,
+ "objective": "OUTCOME_TRAFFIC",
+ "optimization_goal": "LINK_CLICKS",
+ "destination_type": "INSTAGRAM_PROFILE",
+ "countries": ["IN"],
+ "age_min": 21,
+ "age_max": 55,
+ "gate": {"min_views": 300, "max_skip_rate": 40, "min_watch_s": 12, "min_age_hours": 12, "max_age_hours": 72, "intro_required": true}
+}
