@@ -1,0 +1,32 @@
+{
+ "channel": "sglearning",
+ "facts": [],
+ "id": "2026-11-06-sglearning-news",
+ "ids": {
+  "budget": {
+   "day": "2026-11-05",
+   "research": 1
+  }
+ },
+ "kind": "short",
+ "publish_day": "2026-11-06",
+ "reasons": [
+  "try 1, stopped: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+ ],
+ "script": null,
+ "status": "failed-research",
+ "timings": [],
+ "topic": {
+  "graphics": true,
+  "link": "https://economictimes.indiatimes.com/markets/forex/rupee-falls-9-paise-to-94-50-against-us-dollar-in-early-trade/articleshow/135597848.cms",
+  "news": true,
+  "published": "2026-11-06T07:04:25+00:00",
+  "rank": 3,
+  "source": "ET Markets",
+  "summary": "In early trading on Friday, the rupee slipped by 9 paise to reach 94.50 against the US dollar, driven by a robust dollar and surging crude oil prices. After a brief bounce-back, it peaked at 94.36. The domestic equity market exhibited mixed performance, with Sensex rising yet Nifty falling. Notably, Foreign Institutional Investors remained active, purchasing substantial equities, bolstering market optimism.",
+  "target_minutes": null,
+  "title": "Rupee falls 9 paise to 94.50 against US dollar in early trade"
+ },
+ "updated": "2026-11-06T07:53:21+00:00",
+ "writer": ""
+}
