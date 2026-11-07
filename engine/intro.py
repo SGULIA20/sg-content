@@ -82,7 +82,7 @@ SONNET = "claude-sonnet-5-5"
 
 # a prop the avatar can have on the table, from the topic's words (the founder's clip shows the subject in the first second)
 PROPS = [
-    (("sip", "mutual fund", "fund house", "nav"), 'a phone face-up showing a bank SMS "SIP debited ₹5,000"'),
+    (("sip", "mutual fund", "fund house", "nav"), "a printed mutual-fund statement and a yellow highlighter"),
     (("gold", "sona", "dhanteras", "jewell"), "a small gold coin and a jewellery box"),
     (("fd", "fixed deposit", "bank", "savings", "interest", "byaaj"), "a bank passbook and a pen"),
     (("loan", "emi", "home loan", "car loan"), "a loan statement with the EMI amount circled"),
@@ -90,10 +90,12 @@ PROPS = [
     (("insurance", "claim", "hospital", "policy"), "a health insurance policy booklet"),
     (("petrol", "diesel", "fuel", "crude"), "a bike key and a fuel receipt"),
     (("job", "layoff", "hiring", "notice period", "appraisal"), "an office ID card on a lanyard"),
-    (("upi", "fraud", "scam", "otp"), 'a phone showing a UPI "collect request" pop-up'),
-    (("share", "stock", "dividend", "us stocks", "zerodha"), "a phone showing a stock app with one share's price"),
+    (("upi", "fraud", "scam", "otp"), "a printed bank alert slip with one line circled in red"),
+    (("share", "stock", "dividend", "us stocks", "zerodha"), "a printed share certificate and a small notebook with one price circled"),
     (("credit card", "minimum due"), "a credit card statement with the minimum due highlighted"),
 ]
+NEUTRAL_PROPS = ["a steel chai glass and a small notebook", "a pair of reading glasses on a folded newspaper", "a pocket diary and a pen",
+                 "a small stack of printed bills held together with a clip", "a brass paperweight and a notepad", "a wooden abacus"]
 MYTH_PROP = "a printed photograph or old map of the place, held up to the camera for a moment"
 
 
@@ -206,7 +208,7 @@ def prop_for(piece) -> str:
     for keys, prop in PROPS:
         if any(k in blob for k in keys):
             return prop
-    return "a phone face-up on the table showing a bank app"
+    return _pick(piece, NEUTRAL_PROPS, 5)
 
 
 # Every Reel looks different (founder, 4 Nov 2026: "founder should change his clothes, position should move, walk or change background
@@ -215,9 +217,9 @@ SETTINGS = {
     "sglearning": [
         "a bright modern Indian living room in the morning, clean background with depth (plant, bookshelf, softly blurred)",
         "a kitchen counter with a steel chai glass and a steaming kettle, warm morning light through the window",
-        "a home office with a laptop, a desk lamp and a wall calendar, late-afternoon light",
+        "a home study with a wooden desk, a desk lamp and a wall calendar, late-afternoon light",
         "the balcony of a city flat, railing and potted plants, soft overcast daylight, the street blurred below",
-        "a bank branch waiting area, blue chairs and a token display, clean fluorescent light softened",
+        "a bank branch waiting area, wooden benches and a counter blurred behind, clean light softened",
         "a quiet street outside a vegetable market, stalls and baskets blurred behind, golden evening light",
         "a metro station platform before the train, clean steel and glass, cool daylight",
     ],
@@ -231,8 +233,10 @@ SETTINGS = {
         "an old library reading room with tall shelves and a ladder, dust in a beam of light",
     ],
 }
-OUTFITS = ["navy blazer over white tee", "a plain charcoal kurta", "a light blue linen shirt, sleeves rolled", "a maroon sweater over a white collar",
-           "a black polo", "a cream Nehru jacket over a white shirt", "a grey half-sleeve shirt, top button open"]
+OUTFITS = ["a mustard kurta", "a white shirt with sleeves rolled and a dark waistcoat", "an olive green Nehru jacket over a cream shirt",
+           "a maroon sweater over a white collar", "a black polo", "a rust-orange linen shirt", "a charcoal kurta with a white pocket square",
+           "a teal half-sleeve shirt", "a cream Nehru jacket over a white shirt", "a brown corduroy jacket over a beige tee",
+           "a plain white kurta", "a dark green polo", "a navy blazer over a white tee", "a light grey sweater over a maroon collar"]
 POSES = ["seated at a wooden table, slightly angled, leaning toward camera, hands resting on the table",
          "standing, turned a little to the side, weight on one foot, one hand in a pocket",
          "walking slowly toward the camera, the camera tracking back at the same pace, one small hand gesture per line",
@@ -251,7 +255,7 @@ BEATS = ["on the question, eyebrows lift and one open palm turns up; on the seco
 
 def _pick(piece, options: list, salt: int = 0):
     """A steady, different choice per piece: the day number and channel decide, so consecutive days never repeat an option."""
-    n = piece.publish_day.toordinal() + salt + (0 if piece.channel == "sglearning" else 3) + (0 if piece.kind == "short" else 4)
+    n = piece.publish_day.toordinal() * 5 + salt + (0 if piece.channel == "sglearning" else len(options) // 2) + (0 if piece.kind == "short" else 4)
     return options[n % len(options)]
 
 
@@ -270,7 +274,7 @@ def prompt_for(piece, p: dict) -> str:
             f"warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] {pose}, wearing {outfit}. Speaks from "
             f"the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: {beats}. "
             f"Prop: {prop_for(piece)}. Camera: {camera}. {handle} watermark top right, white, bold, 80% opacity. No captions, no subtitles, "
-            f"no other on-screen text. Export at {('1080x1920' if short else '1920x1080')}.")
+            f"no other on-screen text. No laptop, tablet, monitor, TV or glowing blue screen anywhere in the frame; the only object on the table is the prop. Export at {('1080x1920' if short else '1920x1080')}.")
 
 
 def earliest_slot_utc(piece) -> datetime:
