@@ -40,7 +40,7 @@ def test_the_avatar_prompt_changes_setting_outfit_pose_and_camera_from_day_to_da
         pr = intro.prompt_for(p, {"text": ""})
         key = (intro._pick(p, intro.SETTINGS["sglearning"]), intro._pick(p, intro.OUTFITS, 1), intro._pick(p, intro.POSES, 2))
         assert key not in seen; seen.add(key)
-        assert "walking" in pr or "seated" in pr or "standing" in pr or "leaning" in pr
+        assert any(w in pr for w in ("walking", "striding", "pacing", "standing", "leaning"))
     short, long = _piece(day=date(2026, 11, 6)), _piece("long", day=date(2026, 11, 5))         # a long and the next day's Short differ too
     assert intro._pick(short, intro.SETTINGS["sglearning"]) != intro._pick(long, intro.SETTINGS["sglearning"])
     myth = _piece("short", "arthvan", day=date(2026, 11, 5))
@@ -478,3 +478,34 @@ def test_outfits_never_match_across_channels_or_on_back_to_back_days_and_no_scre
     assert not [p for _k, p in intro.PROPS if "phone" in p]
     p = mk("sglearning", 14)
     assert "No laptop, tablet, monitor, TV or glowing blue screen" in intro.prompt_for(p, {"text": "x", "closing": "Chaliye."})
+
+
+def test_the_intro_asks_for_a_news_reporter_delivery_and_the_closings_are_punchy_and_short_enough():
+    """7 Nov 2026 (founder: 'my personality looks dull, it should be energetic like a news reporter, walking, talking in excitement')."""
+    from datetime import date
+    p = pieces.Piece(id="2026-11-14-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 11, 14))
+    prompt = intro.prompt_for(p, {"text": "x", "closing": "Suniye, twist yahan hai!"})
+    for must in ("TV news reporter", "Delivery:", "never monotone", "bright high-key light", "eyes locked on the lens"):
+        assert must in prompt, must
+    assert all("walking" in x or "striding" in x or "pacing" in x or "leaning" in x or "standing right in the middle" in x for x in intro.POSES)
+    assert len(intro.CLOSINGS) >= 8 and sum(len(c.split()) <= 4 for c in intro.CLOSINGS) >= 3 and all(c.endswith("!") for c in intro.CLOSINGS if c != intro.CLOSING)
+
+
+def test_the_writer_is_told_to_open_on_the_shock_and_to_keep_pictures_short():
+    from engine.config import CONTENT_DIR
+    system = (CONTENT_DIR / "prompts" / "writer-system.txt").read_text()
+    assert "RETENTION RULES" in system and "news reporter" in system and "every 12 seconds" in system
+    assert "22-32 words" in (CONTENT_DIR / "prompts" / "formula-sglearning.txt").read_text() and "22-32 words" in (CONTENT_DIR / "prompts" / "formula-arthvan.txt").read_text()
+
+
+def test_every_rotating_list_cycles_through_all_its_entries_day_by_day():
+    """7 Nov 2026: a day multiplier of 5 froze the pose and camera lists (5 entries) and the closings (10): each list must show every entry."""
+    from datetime import date, timedelta
+    for name in ("OUTFITS", "POSES", "CAMERAS", "BEATS", "CLOSINGS", "NEUTRAL_PROPS"):
+        options = getattr(intro, name)
+        days = [pieces.Piece(id="x", channel="sglearning", kind="short", publish_day=date(2026, 11, 7) + timedelta(days=i)) for i in range(len(options))]
+        assert len({intro._pick(p, options, 1) for p in days}) == len(options), name
+        assert all(intro._pick(a, options, 1) != intro._pick(b, options, 1) for a, b in zip(days, days[1:])), name
+    for name, options in intro.SETTINGS.items():
+        days = [pieces.Piece(id="x", channel=name, kind="short", publish_day=date(2026, 11, 7) + timedelta(days=i)) for i in range(len(options))]
+        assert len({intro._pick(p, options, 0) for p in days}) == len(options), name
