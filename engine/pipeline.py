@@ -579,6 +579,10 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
     default_voice, _fallback = voice.voice_ids()
 
     def topic_fn(piece, used):
+        from . import weekly
+        planned = weekly.topic_for(root, piece, used)                  # 7 Nov 2026: the weekly YouTube research plan comes first
+        if planned:
+            return planned
         if piece.channel == "sglearning":
             if piece.kind == "long":                                   # 4 Nov 2026: a proven Short's question first, then the bank
                 return topics.next_long_finance(root / "content", used, topics.proven_shorts(root, "sglearning"))
