@@ -35,7 +35,11 @@ def test_the_real_plan_has_sixteen_videos_and_never_two_in_one_slot():
     slots_used = [orphans.target(m) + __import__("datetime").timedelta(0) for m in plan]
     keys = [(m["channel"], t) for m, t in zip(plan, slots_used)]
     assert len(set(keys)) == 16 and len({m["video"] for m in plan}) == 16
-    assert all(m["date"].startswith("2026-12") for m in plan)
+    assert all(m["date"] >= "2026-12-02" and m["date"] <= "2027-03-04" for m in plan)
+    unakoti = sorted(m["date"] for m in plan if m["video"] in {"aqlBCko_79E", "jcRNBbYeBpE", "alnSQTKBWpg", "lzhCLhq0qbA", "DZXTbCfU__0", "eA822xFSovc", "FJdS2ZliCF0"})
+    from datetime import date
+    gaps = [(date.fromisoformat(b) - date.fromisoformat(a)).days for a, b in zip(unakoti, unakoti[1:])]
+    assert len(unakoti) == 7 and min(gaps) >= 14                                   # the same story never twice within two weeks
 
 
 def test_scheduled_at_lists_private_videos_at_that_minute_and_never_raises():
