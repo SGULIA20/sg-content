@@ -485,7 +485,7 @@ def test_the_intro_asks_for_a_news_reporter_delivery_and_the_closings_are_punchy
     from datetime import date
     p = pieces.Piece(id="2026-11-14-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 11, 14))
     prompt = intro.prompt_for(p, {"text": "x", "closing": "Suniye, twist yahan hai!"})
-    for must in ("TV news reporter", "Delivery:", "never monotone", "bright high-key light", "eyes locked on the lens"):
+    for must in ("TV news reporter", "Delivery:", "never monotone", "bright high-key light", "friendly eye contact", "never angry", "no scowl"):
         assert must in prompt, must
     assert all("walking" in x or "striding" in x or "pacing" in x or "leaning" in x or "standing right in the middle" in x for x in intro.POSES)
     assert len(intro.CLOSINGS) >= 8 and sum(len(c.split()) <= 4 for c in intro.CLOSINGS) >= 3 and all(c.endswith("!") for c in intro.CLOSINGS if c != intro.CLOSING)
@@ -516,5 +516,5 @@ def test_the_avatar_prompt_keeps_clear_of_words_a_video_tools_safety_filter_may_
     but free of aggressive or violent verbs."""
     import re
     text = " ".join(intro.POSES + intro.CAMERAS + intro.BEATS + [intro.DELIVERY]).lower()
-    for bad in ("aggressive", "stabbing", "slicing", "stopping dead", "fist", "conspirator", "attack", "kill", "weapon", "blood"):
+    for bad in ("aggressive", "stabbing", "slicing", "stopping dead", "fist", "conspirator", "attack", "kill", "weapon", "blood", "sharp point"):
         assert not re.search(bad, text), bad
