@@ -1,8 +1,62 @@
 {
  "week_of": "2026-11-07",
- "generated": "2026-11-07T07:02:46+00:00",
+ "generated": "2026-11-07T07:09:41+00:00",
  "entries": {
   "2026-11-14-sglearning-short": {
+   "id": "wk-2026-11-14-sglearning-short",
+   "title": "Fraud message ke 3 din baad bataya, to bank paisa wapas dega?",
+   "summary": "Explains RBI's customer-liability rules for unauthorised transactions: zero liability if reported within 3 working days, limited liability after that. Check the current RBI circular, the capped amounts by account type, and how to report on 1930 and to the bank.",
+   "hooks": [
+    "Account se 20,000 gaye, aapne 4 din baad bataya, to kitna wapas milega?",
+    "Bank ko kitne din ke andar bolna zaroori hai?"
+   ],
+   "weekly": true,
+   "topic_score": 8,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
+    "+3 a scare or a crash",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "Hindi viewers watched the PNB account-fraud video (1.2M views) and the banking-scare video (1.3M). The topic is a scare with a number and a time limit."
+  },
+  "2026-11-15-sglearning-short": {
+   "id": "wk-2026-11-15-sglearning-short",
+   "title": "FD ke byaaj par TDS kab katta hai, aur kaise bachein?",
+   "summary": "Explains the TDS threshold on bank FD interest (₹50,000 a year for non-seniors, ₹1 lakh for seniors, per the Budget 2025 change), what Form 15G/15H does, and who can use it. Check the current limits on the Income Tax and bank sites.",
+   "hooks": [
+    "FD ka byaaj ₹50,000 se upar gaya, to bank kitna kaat lega?",
+    "Bina income ke bhi TDS kat jaye, to kya karein?"
+   ],
+   "weekly": true,
+   "topic_score": 6,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
+    "+1 a choice the viewer faces",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "The 'Rs 1 crore FD, tax bachane ka trick' video drew 529k views. This is a tax angle on FD interest that has not been covered yet."
+  },
+  "2026-11-16-sglearning-long": {
+   "id": "wk-2026-11-16-sglearning-long",
+   "title": "Bank doob jaye to aapke kitne paise wapas milenge?",
+   "summary": "Explains DICGC deposit insurance: ₹5 lakh per depositor per bank, covering principal plus interest. Covers what counts as one depositor, payout within 90 days under the 2021 amendment, and how to split deposits. Check DICGC and RBI pages for current limits and rules.",
+   "hooks": [
+    "Aapke 8 lakh bank mein hain, bank band ho jaye to kitne milenge?",
+    "Ek hi bank mein saare paise rakhna kitna risky hai?"
+   ],
+   "weekly": true,
+   "topic_score": 8,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
+    "+3 a scare or a crash",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "The banking-crash scare (1.37M views, 940 s) and the PNB fraud video (1.2M) show strong interest in bank safety. A long video suits the depth needed."
+  },
+  "2026-11-16-sglearning-short": {
    "id": "mh-2001-ketan-parekh",
    "category": "scam",
    "title": "2001: K-10 shares aur ek bank ka girna",
@@ -23,7 +77,7 @@
    "weekly": true,
    "from_bank": true
   },
-  "2026-11-15-sglearning-short": {
+  "2026-11-17-sglearning-short": {
    "id": "mh-2008-lehman-india",
    "category": "crisis",
    "title": "2008: Amreeka ka bank dooba, aapki SIP par kya beeta",
@@ -44,19 +98,7 @@
    "weekly": true,
    "from_bank": true
   },
-  "2026-11-16-sglearning-long": {
-   "id": "car-loan-vs-cash",
-   "title": "10 lakh ki gaadi: loan par lein ya cash, aur 5 saal mein asli kharcha kya",
-   "summary": "Total cost of car ownership: loan interest, depreciation, insurance, fuel, service; the loan-vs-cash decision with opportunity cost, why a used car can be the smarter maths for many families.",
-   "hooks": [
-    "Gaadi 5 saal mein kitni sasti ho jaati hai?",
-    "Car loan ka byaaj kitna dete hain?",
-    "Cash hai toh bhi loan lena sahi hai?"
-   ],
-   "weekly": true,
-   "from_bank": true
-  },
-  "2026-11-16-sglearning-short": {
+  "2026-11-18-sglearning-short": {
    "id": "mh-2014-sahara-saradha",
    "category": "scam",
    "title": "Sahara aur Saradha: chit fund ka paisa gaya kahan",
@@ -77,7 +119,7 @@
    "weekly": true,
    "from_bank": true
   },
-  "2026-11-17-sglearning-short": {
+  "2026-11-19-sglearning-short": {
    "id": "mh-2018-pnb-nirav",
    "category": "scam",
    "title": "PNB ka 13,000 crore: ek letter se bank kaise loota",
@@ -98,7 +140,7 @@
    "weekly": true,
    "from_bank": true
   },
-  "2026-11-18-sglearning-short": {
+  "2026-11-20-sglearning-short": {
    "id": "mh-2010-coal-2g-markets",
    "category": "scandal",
    "title": "2G aur coal: license radd hua, kiska paisa dooba",
@@ -118,69 +160,209 @@
    "weekly": true,
    "from_bank": true
   },
-  "2026-11-19-sglearning-short": {
-   "id": "mh-kingfisher-mallya",
-   "category": "sensation",
-   "title": "Kingfisher: airline doobi, banks ka 9,000 crore",
-   "summary": "The Kingfisher Airlines collapse: the losses, the bank consortium, the brand pledged as collateral, employees unpaid, and the owner's exit. What a loan default by a big borrower does to a bank and its depositors.",
-   "hooks": [
-    "Airline doobi toh bank ka paisa kahan gaya?",
-    "Brand ko girvi rakh kar loan kaise milta hai?"
-   ],
-   "history": true,
-   "topic_score": 8,
-   "topic_score_why": [
-    "+3 touches the viewer's own money",
-    "+3 a scare or a crash",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "weekly": true,
-   "from_bank": true
-  },
-  "2026-11-20-sglearning-short": {
-   "id": "mh-1992-harshad-mehta",
-   "category": "scam",
-   "title": "1992: ek broker ne poora market hila diya",
-   "summary": "The 1992 securities scam: bank receipts, money moved from banks into shares, the Sensex run-up and the crash when it broke; what changed after (SEBI's teeth, depositories, settlement). The lesson for anyone chasing a 'sure' stock today.",
-   "hooks": [
-    "1992 mein Sensex pehle kyun uda, phir kyun gira?",
-    "Bank ka paisa share market tak kaise pahuncha?"
-   ],
-   "history": true,
-   "topic_score": 7,
-   "topic_score_why": [
-    "+3 touches the viewer's own money",
-    "+1 a scare or a crash (in the summary)",
-    "+1 a choice the viewer faces",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "weekly": true,
-   "from_bank": true
-  },
   "2026-11-21-sglearning-short": {
-   "id": "mh-2023-2000-note",
-   "category": "policy",
-   "title": "2,000 ka note phir se bahar: is baar kya alag tha",
-   "summary": "May 2023: the 2,000 rupee note withdrawn from circulation, how it differed from 2016, how much came back, and the small-shop confusion. What 'legal tender' means and why RBI prints a note at all.",
+   "id": "wk-2026-11-21-sglearning-short",
+   "title": "Credit card ka minimum due bharne se kitna byaaj lagta hai?",
+   "summary": "Shows how paying only the minimum due leads to interest of roughly 3 to 3.5% a month (about 36 to 42% a year) on the balance, with a ₹50,000 example. Check a major bank's most important terms and conditions page for the current rate and fees.",
    "hooks": [
-    "2,000 ka note band hua, par 2016 jaisa kyun nahi laga?",
-    "Note wapas lene par RBI ko fayda ya nuksaan?"
+    "50,000 ka bill, sirf minimum bhara, to saal mein kitna byaaj?",
+    "Minimum due bharna bachat hai ya jaal?"
    ],
-   "history": true,
-   "topic_score": 7,
+   "weekly": true,
+   "topic_score": 6,
    "topic_score_why": [
-    "+1 touches the viewer's own money (in the summary)",
+    "+3 touches the viewer's own money",
+    "+1 a choice the viewer faces",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "Festive-season spending leaves card bills due in late November. A scare with a number fits the proven mix of a scare and a choice."
+  },
+  "2026-11-25-sglearning-long": {
+   "id": "wk-2026-11-25-sglearning-long",
+   "title": "Sona sasta hua, to shaadi ke liye gehna, coin ya gold ETF lein?",
+   "summary": "A deeper look at the recent gold and silver fall against the past 5 to 10 years of prices. Compares jewellery, coins, gold ETF and digital gold on cost, purity and resale, and notes SEBI's warning on digital gold. Check price data from IBJA/MCX and SEBI notices.",
+   "hooks": [
+    "Gold gira hai, to shaadi ka gehna abhi lein ya ruken?",
+    "Same 1 lakh ka sona gehne, coin aur ETF mein kitna alag nikalta hai?"
+   ],
+   "weekly": true,
+   "topic_score": 9,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
     "+3 a scare or a crash",
     "+1 a choice the viewer faces",
     "+1 a concrete number",
     "+1 asks a question"
    ],
+   "follows": "Gold-silver crash videos led the list (2.08M, 581k, 446k, 385k views). It follows Dev Uthani Ekadashi on 20 Nov, when wedding buying begins."
+  },
+  "2026-11-28-sglearning-long": {
+   "id": "wk-2026-11-28-sglearning-long",
+   "title": "10 lakh CTC ki naukri mein haath mein kitna aata hai?",
+   "summary": "Breaks down a ₹10 lakh CTC into basic, PF, gratuity, tax and take-home, and explains how the new labour codes' 50% wage rule can change in-hand pay. Check the Code on Wages, the current rollout status, and PF and gratuity rules on labour ministry sites.",
+   "hooks": [
+    "Offer letter mein 10 lakh likha hai, par account mein kitna aayega?",
+    "Naye labour code se salary ka kaun sa hissa badal sakta hai?"
+   ],
    "weekly": true,
-   "from_bank": true
+   "topic_score": 6,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
+    "+1 a choice the viewer faces",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "This is a personal job-and-money question with a number, one year after the labour codes took effect on 21 Nov 2025. It fits the pay-slip decisions people face "
   },
   "2026-11-14-arthvan-short": {
+   "id": "wk-2026-11-14-arthvan-short",
+   "title": "Jagannath mandir ka jhanda roz kaun badalta hai?",
+   "summary": "Explains the daily flag-change ritual at the Puri Jagannath temple: who the sevaks are, how the climb works, and the roughly 214 ft height. Check the height figure, the ritual's documented history, and which claims are tradition rather than record.",
+   "hooks": [
+    "Roz shaam 214 feet ki chadhai bina suraksha ke, yeh kaun karta hai?",
+    "Agar yeh jhanda ek din na badla gaya, toh kya kehti hai parampara?"
+   ],
+   "weekly": true,
+   "topic_score": 6,
+   "topic_score_why": [
+    "+4 one of the most-watched names",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "Jagannath temple flag and shikhar shorts drew 740k to 1.1M views. The untold angle is the sevak who climbs, not the viral wind claim.",
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story"
+   ]
+  },
+  "2026-11-15-arthvan-short": {
+   "id": "wk-2026-11-15-arthvan-short",
+   "title": "Karna roz Surya ko arghya dene ke baad kya deta tha?",
+   "summary": "Mahabharata's Karna worshipped Surya at midday and gave whatever was asked of him. Covers the Vana Parva episode where Indra takes the kavach-kundal. Check the verse source. Label the Chhath-Karna link in the Munger/Anga region as folk tradition.",
+   "hooks": [
+    "Surya ka putra hokar bhi Karna ne apna kavach kyun de diya?",
+    "Chhath ke din Karna ka naam kyun liya jata hai?"
+   ],
+   "weekly": true,
+   "topic_score": 9,
+   "topic_score_why": [
+    "+2 a famous name",
+    "+3 a shock question or a mystery",
+    "+3 timely: Chhath Puja",
+    "+1 asks a question"
+   ],
+   "follows": "Chhath Puja falls on 15 Nov. Karna content drew 513k views and Chhath content 714k. A famous name with a shock question fits.",
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story"
+   ]
+  },
+  "2026-11-16-arthvan-short": {
+   "id": "wk-2026-11-16-arthvan-short",
+   "title": "Kedarnath ke peeche ki badi shila 2013 mein kahan se aayi?",
+   "summary": "In the June 2013 flood a huge boulder stopped behind the Kedarnath temple and diverted debris. Check flood dates, the boulder's size and origin from scientific reports, and the devotees' name Bhim Shila. Keep faith belief and geology as separate labelled views.",
+   "hooks": [
+    "Sab kuch beh gaya, phir mandir ke peeche yeh shila kaise ruki?",
+    "Is shila ko log Bhim Shila kyun kehte hain?"
+   ],
+   "weekly": true,
+   "topic_score": 9,
+   "topic_score_why": [
+    "+4 one of the most-watched names",
+    "+3 a shock question or a mystery",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "The Kedarnath stone short drew 647k views. It is a shock question with checkable sources.",
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story"
+   ]
+  },
+  "2026-11-17-arthvan-long": {
+   "id": "wk-2026-11-17-arthvan-long",
+   "title": "Khatu Shyam ke Barbarik kaun the, aur teen baan ki kahani kahan likhi hai?",
+   "summary": "A deep telling of Barbarik, Ghatotkacha's son, with his three arrows and the Krishna encounter. Check the Skanda Purana source and its absence from the Vyasa Mahabharata critical edition. Treat the Khatu temple's dating (1027 CE tradition, later rebuilding) as disputed.",
+   "hooks": [
+    "Kya ek yoddha sach mein ek minute mein Mahabharat khatam kar sakta tha?",
+    "Mool Mahabharat mein Barbarik ka naam kyun nahi milta?"
+   ],
+   "weekly": true,
+   "topic_score": 8,
+   "topic_score_why": [
+    "+4 one of the most-watched names",
+    "+3 a shock question or a mystery",
+    "+1 asks a question"
+   ],
+   "follows": "A Khatu Shyam short drew 557k views. A long video allows the scripture-versus-folk-tradition evidence the channel is built on.",
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story"
+   ]
+  },
+  "2026-11-17-arthvan-short": {
+   "id": "wk-2026-11-17-arthvan-short",
+   "title": "Din mein do baar gayab hone wala Stambheshwar Mahadev mandir kahan hai?",
+   "summary": "Stambheshwar Mahadev near Kavi Kamboi, Gujarat, in the Gulf of Khambhat, is submerged at high tide. Check the location, the tide tables and the temple's legend of Kartikeya and Tarakasura. Present tides as the observed cause and the legend as the stated tradition.",
+   "hooks": [
+    "Ek mandir jo roz samundar mein doob jata hai, aur phir lautta hai?",
+    "Yahan darshan ka sahi samay tide table se kaise pata chalta hai?"
+   ],
+   "weekly": true,
+   "topic_score": 8,
+   "topic_score_why": [
+    "+4 one of the most-watched names",
+    "+3 a shock question or a mystery",
+    "+1 asks a question"
+   ],
+   "follows": "The vanishing-temple short drew 1.17M views. It is a clear shock question that can be checked against tide data.",
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story"
+   ]
+  },
+  "2026-11-18-arthvan-short": {
+   "id": "wk-2026-11-18-arthvan-short",
+   "title": "Kalyug ke lakshan Bhagavata Purana mein asal mein kya likhe hain?",
+   "summary": "Compares the viral claim that Krishna showed the Pandavas Kalyug with the Bhagavata Purana, Canto 12, Chapter 2, which lists Kali Yuga signs. Check that chapter and the traditional 3102 BCE start date. Label the viral clip's story as unsourced unless a text is found.",
+   "hooks": [
+    "Kya Krishna ne sach mein Pandavon ko Kalyug dikhaya tha?",
+    "Bhagavata Purana ke 12th skandh mein Kalyug ke kaun se lakshan hain?"
+   ],
+   "weekly": true,
+   "topic_score": 9,
+   "topic_score_why": [
+    "+4 one of the most-watched names",
+    "+3 a shock question or a mystery",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "The Kalyug ke 5 Sach video drew 1.69M views, the top signal. The angle here is to give viewers the actual scripture.",
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story"
+   ]
+  },
+  "2026-11-19-arthvan-short": {
    "id": "hanuman-garhi-and-anjaneri",
    "title_hi": "Hanuman ka janm sthan, kaun sa sach?",
    "place": "Anjaneri / Hampi / Tirumala",
@@ -205,7 +387,32 @@
    "weekly": true,
    "from_bank": true
   },
-  "2026-11-15-arthvan-short": {
+  "2026-11-20-arthvan-short": {
+   "id": "wk-2026-11-20-arthvan-short",
+   "title": "Tulsi Vivah wala Shaligram patthar asal mein kya hai?",
+   "summary": "Tulsi Vivah on Dev Uthani Ekadashi involves Shaligram, Vishnu's aniconic form. Check Puranic stories of Vrinda and Jalandhar. Check geology: Shaligrams from the Kali Gandaki in Nepal are ammonite fossils. Present both without ranking faith against science.",
+   "hooks": [
+    "Jis patthar ki aaj Tulsi se shaadi hoti hai, woh karodon saal purana kaise hai?",
+    "Kali Gandaki nadi se hi Shaligram kyun milte hain?"
+   ],
+   "weekly": true,
+   "topic_score": 9,
+   "topic_score_why": [
+    "+2 a famous name",
+    "+3 a shock question or a mystery",
+    "+3 timely: Dev Uthani Ekadashi and Tulsi Vivah",
+    "+1 asks a question"
+   ],
+   "follows": "Dev Uthani Ekadashi and Tulsi Vivah fall on 20 Nov. The festival truly fits, and the question is checkable.",
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story"
+   ]
+  },
+  "2026-11-21-arthvan-short": {
    "id": "sinauli-chariots",
    "title_hi": "Sinauli ke rath",
    "place": "Baghpat, Uttar Pradesh",
@@ -228,7 +435,7 @@
    "weekly": true,
    "from_bank": true
   },
-  "2026-11-16-arthvan-short": {
+  "2026-11-22-arthvan-long": {
    "id": "vijay-stambh",
    "title_hi": "Chittor ka Vijay Stambh",
    "place": "Chittorgarh, Rajasthan",
@@ -254,221 +461,55 @@
    "weekly": true,
    "from_bank": true
   },
-  "2026-11-17-arthvan-long": {
-   "id": "parashurama-kerala",
-   "title_hi": "Parashuram ne Kerala samundar se nikala?",
-   "place": "Konkan-Kerala coast",
+  "2026-11-26-arthvan-long": {
+   "id": "wk-2026-11-26-arthvan-long",
+   "title": "Tripurasur ka vadh aur Dev Deepawali: Kashi mein deep kab se jalne lage?",
+   "summary": "Kartik Purnima (24 Nov) tells of Shiva's defeat of Tripurasura in the Puranas (Shiva, Matsya). Check those texts and Varanasi's Dev Deepawali, noting that its modern ghat-wide form is a recent organised tradition. Check the dates and keep tradition labelled.",
    "hooks": [
-    "Ek pharse se 600 km zameen?",
-    "Geology Kerala ke tat ke baare mein kya kehti hai?",
-    "Konkan se Kanyakumari tak ek hi kahani"
+    "Teen udte nagar ek teer se kaise jale?",
+    "Kya Kashi ki Dev Deepawali hazaaron saal purani hai ya nayi?"
    ],
-   "allowed_sources": [
-    "gsi.gov.in",
-    "en.wikipedia.org",
-    "Skanda Purana",
-    "Kerala Mahatmya"
-   ],
-   "notes": "Scripture/legend vs coastal geology (sea-level change); both told, both labelled.",
-   "topic_score": 4,
+   "weekly": true,
+   "topic_score": 6,
    "topic_score_why": [
     "+2 a famous name",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "weekly": true,
-   "from_bank": true
-  },
-  "2026-11-17-arthvan-short": {
-   "id": "dholavira-water",
-   "title_hi": "Dholavira, 4,500 saal purana paani ka system",
-   "place": "Dholavira, Gujarat",
-   "hooks": [
-    "Registan mein 16 reservoir, 4,500 saal pehle?",
-    "Duniya ka sabse purana signboard?",
-    "Dholavira ko UNESCO ne kyon chuna?"
-   ],
-   "allowed_sources": [
-    "asi.nic.in",
-    "UNESCO whc.unesco.org",
-    "en.wikipedia.org"
-   ],
-   "notes": "Pure archaeology lane.",
-   "topic_score": 3,
-   "topic_score_why": [
-    "-2 no famous name",
     "+3 a shock question or a mystery",
-    "+1 a concrete number",
     "+1 asks a question"
    ],
-   "weekly": true,
-   "from_bank": true
-  },
-  "2026-11-18-arthvan-short": {
-   "id": "bhimbetka",
-   "title_hi": "Bhimbetka, 30,000 saal purani painting",
-   "place": "Raisen, Madhya Pradesh",
-   "hooks": [
-    "30,000 saal purani painting aaj bhi rangin?",
-    "Bhim yahan baithe the? Naam ka raaz",
-    "Duniya ki sabse purani jaanwar ki tasveer?"
-   ],
-   "allowed_sources": [
-    "asi.nic.in",
-    "UNESCO whc.unesco.org",
-    "en.wikipedia.org"
-   ],
-   "notes": "Archaeology lane; the Bhima name is legend.",
-   "topic_score": 3,
-   "topic_score_why": [
-    "-2 no famous name",
-    "+3 a shock question or a mystery",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "weekly": true,
-   "from_bank": true
-  },
-  "2026-11-19-arthvan-short": {
-   "id": "bateshwar-temples",
-   "title_hi": "Bateshwar, 200 mandir jo dakuon ne bachaye",
-   "place": "Morena, Madhya Pradesh",
-   "hooks": [
-    "ASI ne dakuon ki madad se mandir kaise jode?",
-    "1,300 saal purane 200 mandir ek pahadi par?",
-    "Nirbhay Gujjar aur ASI ka samjhauta"
-   ],
+   "follows": "Kartik Purnima and Dev Deepawali fall on 24 Nov. This is the post-festival deep dive, and Shiva topics appear throughout the signals.",
    "allowed_sources": [
     "asi.nic.in",
     "en.wikipedia.org",
-    "news reports with dates (K. K. Muhammed)"
-   ],
-   "notes": "Documented modern story; good evidence lane.",
-   "topic_score": 3,
-   "topic_score_why": [
-    "-2 no famous name",
-    "+3 a shock question or a mystery",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "weekly": true,
-   "from_bank": true
-  },
-  "2026-11-20-arthvan-short": {
-   "id": "keeladi",
-   "title_hi": "Keeladi, Tamil sabhyata 2,600 saal purani",
-   "place": "Keeladi, Tamil Nadu",
-   "hooks": [
-    "Vaigai ke kinare 2,600 saal purana sheher?",
-    "Keeladi ke bartan par likhe akshar",
-    "Keeladi ki khudai par vivaad kyon?"
-   ],
-   "allowed_sources": [
-    "tnarch.gov.in",
-    "asi.nic.in",
-    "en.wikipedia.org"
-   ],
-   "notes": "Dates and interpretations are disputed between agencies; label carefully, no regional politics.",
-   "topic_score": 3,
-   "topic_score_why": [
-    "-2 no famous name",
-    "+3 a shock question or a mystery",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "weekly": true,
-   "from_bank": true
-  },
-  "2026-11-21-arthvan-short": {
-   "id": "shani-shingnapur",
-   "title_hi": "Shani Shingnapur, bina darwaze ka gaon",
-   "place": "Shani Shingnapur, Maharashtra",
-   "hooks": [
-    "Is gaon mein ghar ke darwaze kyon nahi?",
-    "Bank ki shakha bhi bina lock ke?",
-    "Chori hui to kya hua?"
-   ],
-   "allowed_sources": [
-    "en.wikipedia.org",
-    "maharashtratourism.gov.in",
-    "news reports with dates"
-   ],
-   "notes": "Legend lane plus documented modern facts (UCO Bank branch 2011); report thefts honestly.",
-   "topic_score": 2,
-   "topic_score_why": [
-    "-2 no famous name",
-    "+3 a shock question or a mystery",
-    "+1 asks a question"
-   ],
-   "weekly": true,
-   "from_bank": true
-  },
-  "2026-11-22-arthvan-long": {
-   "id": "adichanallur",
-   "title_hi": "Adichanallur ki 3,000 saal purani kabrein",
-   "place": "Thoothukudi, Tamil Nadu",
-   "hooks": [
-    "Mitti ke ghadon mein 3,000 saal purane insaan?",
-    "Angrez ne 1876 mein yahan se kya le gaya?",
-    "Adichanallur ka loha duniya ka sabse purana?"
-   ],
-   "allowed_sources": [
-    "asi.nic.in",
-    "tnarch.gov.in",
-    "en.wikipedia.org"
-   ],
-   "notes": "Archaeology lane; Berlin museum artefacts documented.",
-   "topic_score": 0,
-   "topic_score_why": [
-    "-2 no famous name",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "weekly": true,
-   "from_bank": true
-  },
-  "2026-11-26-arthvan-long": {
-   "id": "poompuhar",
-   "title_hi": "Poompuhar, Tamil Atlantis",
-   "place": "Poompuhar, Tamil Nadu",
-   "hooks": [
-    "Sangam kaal ka sheher samundar mein?",
-    "NIO ko Poompuhar ke paas kya mila?",
-    "Kumari Kandam: kahani ya itihaas?"
-   ],
-   "allowed_sources": [
     "nio.res.in",
-    "en.wikipedia.org",
-    "Silappatikaram (Sangam literature)"
-   ],
-   "notes": "Kumari Kandam is legend; the offshore structures are archaeology with dating disputes.",
-   "topic_score": -1,
-   "topic_score_why": [
-    "-2 no famous name",
-    "+1 asks a question"
-   ],
-   "weekly": true,
-   "from_bank": true
+    "britannica.com",
+    "the scripture or text named in the story"
+   ]
   }
  },
  "notes": [
-  "sglearning: Claude's reply had no usable topics (starts: '[\\n  {\\n    \"slot\": \"2026-11-14-sglearning-short\",\\n    \"title\": \"Bank doob gaya, toh kitna paisa *wapas* milega? 🏦\",\\n    \"summary\": \"Explains '); the banks fill the week",
-  "arthvan: Claude's reply had no usable topics (starts: '```json\\n[\\n  {\\n    \"slot\": \"2026-11-14-arthvan-short\",\\n    \"title\": \"Vishnu ji ka *sir* kaise kata, Hayagriva kaun? 😱\",\\n    \"summary\": \"Short'); the banks fill the week"
+  "2026-11-16-sglearning-short: proposal 'Mutual fund bechein to paisa kitne din mein accoun' dropped (6 points, repeat)",
+  "2026-11-17-sglearning-short: proposal 'UPI payment fail hua, paisa kat gaya, to kitne din' dropped (6 points, repeat)",
+  "2026-11-18-sglearning-short: proposal 'Petrol 5 rupaye mehnga ho jaye to aapka mahine ka ' dropped (5 points)",
+  "2026-11-19-sglearning-short: proposal '1 lakh ke gehne mein asli sona kitna aur making ch' dropped (5 points)",
+  "2026-11-20-sglearning-short: proposal 'PPF mein har saal 1.5 lakh daalein to 15 saal baad' dropped (3 points)",
+  "2026-11-19-arthvan-short: proposal 'Kansa ke haath se chhootkar Devi kahan gayi, Vindh' dropped (5 points)",
+  "2026-11-21-arthvan-short: proposal 'Kala Pani ki saza mein Cellular Jail ke 698 cells ' dropped (5 points)",
+  "2026-11-22-arthvan-long: proposal 'Bamakhepa kaun the, aur Tarapith ki Maa Tara unke ' dropped (2 points)"
  ],
  "signals": {
   "sglearning": [
-   "2,482,063 Diwali से पहले फूटेगा महंगाई का बम! Petrol-Diesel और चीनी के दाम बढ़ें",
-   "2,083,163 Gold-Silver Crash! सोना ₹33,710 और चांदी ₹1.85 लाख सस्ती, अभी खरीदें य",
-   "1,529,126 Ek Diwali Unki Bhi | Mehfil-E-Fund by Tata Mutual Fund",
-   "1,373,497 Banking बंद , UPI बंद ? Biggest Financial Market Crash Coming? | SAGAR",
-   "1,229,706 PNB में ₹35 करोड़ का Fraud! Customers के Accounts से कैसे गायब हो गए प"
+   "2,482,064 Diwali से पहले फूटेगा महंगाई का बम! Petrol-Diesel और चीनी के दाम बढ़ें",
+   "2,083,200 Gold-Silver Crash! सोना ₹33,710 और चांदी ₹1.85 लाख सस्ती, अभी खरीदें य",
+   "1,529,243 Ek Diwali Unki Bhi | Mehfil-E-Fund by Tata Mutual Fund",
+   "1,373,510 Banking बंद , UPI बंद ? Biggest Financial Market Crash Coming? | SAGAR",
+   "1,229,733 PNB में ₹35 करोड़ का Fraud! Customers के Accounts से कैसे गायब हो गए प"
   ],
   "arthvan": [
-   "6,232,548 भगवान विष्णु का सिर कैसे कटा? 😱 | हयग्रीव अवतार का रहस्य #vishnu #maha",
-   "3,669,398 Ravana Kidnapped Lord Rama's Mother Kaushalya Before His Birth! | Unto",
-   "3,045,423 Karva Chauth Katha - करवा चौथ की कहानी - करवा चौथ व्रत कथा - Karwa Cha",
-   "2,780,928 Karwa Chauth Vrat Katha 2026 | करवा चौथ की कहानी | करवा चौथ व्रत कथा |",
-   "2,700,855 Karwa Chauth Vrat Katha 2026 | करवा चौथ की कहानी | करवा चौथ व्रत कथा |"
+   "1,695,209 जब कृष्ण ने पांडवों को दिखाया कलयुग - 5 सच्चाई आज सच हैं! 😱 | Kalyug K",
+   "1,368,487 Submerged in Water for 40 Years Without Decaying! 😱 #shorts",
+   "1,240,527 इस शिवलिंग में आज भी समाई है एक रानी | अकोला राजराजेश्वर मंदिर #shorts",
+   "1,191,177 Violating Mehandipur Balaji Temple Rules Unleashed 7 De*th Seeking Spi",
+   "1,170,236 दिन में 2 बार गायब होता मंदिर?! 😱🌊#mahadev  #shivmandir  #gujarattempl"
   ]
  }
 }
