@@ -259,9 +259,12 @@ BEATS = ["on the question, eyes wide and a sharp point at the lens; on the secon
          "on the question, an incredulous head shake and open palms; on the second line, stabbing the air with one finger on each key word; on \"{closing}\", a wink-like nod and a hand beckoning the viewer in"]
 
 
+ROTATION_STEP = 13     # prime and not a divisor of any list length here (4, 5, 6, 7, 10, 14): every list cycles through all its entries (7 Nov 2026: a step of 5 froze the lists of 5 and 10)
+
+
 def _pick(piece, options: list, salt: int = 0):
     """A steady, different choice per piece: the day number and channel decide, so consecutive days never repeat an option."""
-    n = piece.publish_day.toordinal() * 5 + salt + (0 if piece.channel == "sglearning" else len(options) // 2) + (0 if piece.kind == "short" else 4)
+    n = piece.publish_day.toordinal() * ROTATION_STEP + salt + (0 if piece.channel == "sglearning" else len(options) // 2) + (0 if piece.kind == "short" else 4)
     return options[n % len(options)]
 
 

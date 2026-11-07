@@ -40,7 +40,7 @@ def test_the_avatar_prompt_changes_setting_outfit_pose_and_camera_from_day_to_da
         pr = intro.prompt_for(p, {"text": ""})
         key = (intro._pick(p, intro.SETTINGS["sglearning"]), intro._pick(p, intro.OUTFITS, 1), intro._pick(p, intro.POSES, 2))
         assert key not in seen; seen.add(key)
-        assert "walking" in pr or "seated" in pr or "standing" in pr or "leaning" in pr
+        assert any(w in pr for w in ("walking", "striding", "pacing", "standing", "leaning"))
     short, long = _piece(day=date(2026, 11, 6)), _piece("long", day=date(2026, 11, 5))         # a long and the next day's Short differ too
     assert intro._pick(short, intro.SETTINGS["sglearning"]) != intro._pick(long, intro.SETTINGS["sglearning"])
     myth = _piece("short", "arthvan", day=date(2026, 11, 5))
@@ -496,3 +496,16 @@ def test_the_writer_is_told_to_open_on_the_shock_and_to_keep_pictures_short():
     system = (CONTENT_DIR / "prompts" / "writer-system.txt").read_text()
     assert "RETENTION RULES" in system and "news reporter" in system and "every 12 seconds" in system
     assert "22-32 words" in (CONTENT_DIR / "prompts" / "formula-sglearning.txt").read_text() and "22-32 words" in (CONTENT_DIR / "prompts" / "formula-arthvan.txt").read_text()
+
+
+def test_every_rotating_list_cycles_through_all_its_entries_day_by_day():
+    """7 Nov 2026: a day multiplier of 5 froze the pose and camera lists (5 entries) and the closings (10): each list must show every entry."""
+    from datetime import date, timedelta
+    for name in ("OUTFITS", "POSES", "CAMERAS", "BEATS", "CLOSINGS", "NEUTRAL_PROPS"):
+        options = getattr(intro, name)
+        days = [pieces.Piece(id="x", channel="sglearning", kind="short", publish_day=date(2026, 11, 7) + timedelta(days=i)) for i in range(len(options))]
+        assert len({intro._pick(p, options, 1) for p in days}) == len(options), name
+        assert all(intro._pick(a, options, 1) != intro._pick(b, options, 1) for a, b in zip(days, days[1:])), name
+    for name, options in intro.SETTINGS.items():
+        days = [pieces.Piece(id="x", channel=name, kind="short", publish_day=date(2026, 11, 7) + timedelta(days=i)) for i in range(len(options))]
+        assert len({intro._pick(p, options, 0) for p in days}) == len(options), name
