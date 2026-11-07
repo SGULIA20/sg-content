@@ -11,32 +11,26 @@ Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H800000
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.00,0:00:01.19,Default,,0,0,0,,Aapki SIP doobe,
-Dialogue: 0,0:00:01.19,0:00:03.32,Default,,0,0,0,,phir bhi fund house kyun kamata
-Dialogue: 0,0:00:03.32,0:00:03.56,Default,,0,0,0,,hai?
-Dialogue: 0,0:00:04.01,0:00:06.16,Default,,0,0,0,,Har mahine salary aate hi SIP
-Dialogue: 0,0:00:06.16,0:00:06.94,Default,,0,0,0,,kat jaati hai.
-Dialogue: 0,0:00:06.94,0:00:08.11,Default,,0,0,0,,Wife ko lagta hai,
-Dialogue: 0,0:00:08.11,0:00:09.87,Default,,0,0,0,,yeh paisa sirf hamare liye kaam
-Dialogue: 0,0:00:09.87,0:00:10.45,Default,,0,0,0,,karta hai.
-Dialogue: 0,0:00:10.90,0:00:12.04,Default,,0,0,0,,Market gira,
-Dialogue: 0,0:00:12.04,0:00:14.32,Default,,0,0,0,,Papa bole SIP band karo.
-Dialogue: 0,0:00:14.32,0:00:16.31,Default,,0,0,0,,Wife ne chalu rakhi,
-Dialogue: 0,0:00:16.31,0:00:18.02,Default,,0,0,0,,plan lambi daud ka tha.
-Dialogue: 0,0:00:18.47,0:00:19.94,Default,,0,0,0,,Unka logic seedha tha,
-Dialogue: 0,0:00:19.94,0:00:22.47,Default,,0,0,0,,hum kamayenge tabhi fund wale kamayenge.
-Dialogue: 0,0:00:22.92,0:00:25.38,Default,,0,0,0,,Nippon Life India lakhon logon ki
-Dialogue: 0,0:00:25.38,0:00:26.50,Default,,0,0,0,,SIP sambhalti hai.
-Dialogue: 0,0:00:26.50,0:00:27.39,Default,,0,0,0,,Andaza tha,
-Dialogue: 0,0:00:27.39,0:00:30.52,Default,,0,0,0,,July-September ka munafa 4.22 billion rupaye.
-Dialogue: 0,0:00:30.97,0:00:33.51,Default,,0,0,0,,Pichhle saal se 22.3 percent zyada.
-Dialogue: 0,0:00:33.51,0:00:35.76,Default,,0,0,0,,Kyunki fees har din kat-ti hai,
-Dialogue: 0,0:00:35.76,0:00:37.73,Default,,0,0,0,,market gire ya chadhe.
-Dialogue: 0,0:00:38.18,0:00:39.37,Default,,0,0,0,,Aap partner nahi,
-Dialogue: 0,0:00:39.37,0:00:40.33,Default,,0,0,0,,customer ho.
-Dialogue: 0,0:00:40.33,0:00:42.00,Default,,0,0,0,,Expense ratio dekho,
-Dialogue: 0,0:00:42.00,0:00:43.43,Default,,0,0,0,,yaani saal bhar ki fees.
-Dialogue: 0,0:00:43.43,0:00:45.82,Default,,0,0,0,,Yeh investment advice nahi hai.
-Dialogue: 0,0:00:46.27,0:00:47.98,Default,,0,0,0,,Us dost ko bhejo jo sochta
-Dialogue: 0,0:00:47.98,0:00:49.70,Default,,0,0,0,,hai fund wale bhi saath doobte
-Dialogue: 0,0:00:49.70,0:00:49.91,Default,,0,0,0,,hain.
+Dialogue: 0,0:00:00.00,0:00:02.29,Default,,0,0,0,,Kya Biyani ka loan aapki EMI
+Dialogue: 0,0:00:02.29,0:00:03.56,Default,,0,0,0,,badha sakta hai?
+Dialogue: 0,0:00:04.01,0:00:06.36,Default,,0,0,0,,CBI ne Future Retail ke Biyani
+Dialogue: 0,0:00:06.36,0:00:07.53,Default,,0,0,0,,par case kiya hai.
+Dialogue: 0,0:00:07.98,0:00:09.38,Default,,0,0,0,,Reportedly,
+Dialogue: 0,0:00:09.38,0:00:12.54,Default,,0,0,0,,loan ka 904.32 crore paisa judi
+Dialogue: 0,0:00:12.54,0:00:14.30,Default,,0,0,0,,companies mein gaya.
+Dialogue: 0,0:00:14.75,0:00:16.83,Default,,0,0,0,,Aur yeh loan 9 banks ke
+Dialogue: 0,0:00:16.83,0:00:17.87,Default,,0,0,0,,group ka tha.
+Dialogue: 0,0:00:18.32,0:00:19.57,Default,,0,0,0,,Bade loan doobein,
+Dialogue: 0,0:00:19.57,0:00:21.81,Default,,0,0,0,,to bank ko extra paisa rakhna
+Dialogue: 0,0:00:21.81,0:00:22.56,Default,,0,0,0,,padta hai.
+Dialogue: 0,0:00:23.01,0:00:24.90,Default,,0,0,0,,Phir loan mahenge hote hain,
+Dialogue: 0,0:00:24.90,0:00:27.02,Default,,0,0,0,,aur aapki home loan EMI badh
+Dialogue: 0,0:00:27.02,0:00:27.73,Default,,0,0,0,,sakti hai.
+Dialogue: 0,0:00:28.18,0:00:29.39,Default,,0,0,0,,Company band ho,
+Dialogue: 0,0:00:29.39,0:00:31.57,Default,,0,0,0,,to 2 din mein salary milni
+Dialogue: 0,0:00:31.57,0:00:32.06,Default,,0,0,0,,chahiye,
+Dialogue: 0,0:00:32.06,0:00:33.76,Default,,0,0,0,,PF surakshit rehta hai.
+Dialogue: 0,0:00:33.76,0:00:36.18,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:36.63,0:00:38.83,Default,,0,0,0,,Us dost ko bhejo jo kehta
+Dialogue: 0,0:00:38.83,0:00:39.10,Default,,0,0,0,,hai,
+Dialogue: 0,0:00:39.10,0:00:40.75,Default,,0,0,0,,bank ki baat mujhe kya.
