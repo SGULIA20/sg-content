@@ -70,3 +70,13 @@ def test_parse_survives_fences_prose_and_garbage():
     assert weekly.parse('Here you go:\n```json\n[{"slot": "a", "title": "t"}]\n```') == [{"slot": "a", "title": "t"}]
     assert weekly.parse("nothing useful") == [] and weekly.parse("[not json]") == []
     assert weekly.repeats("Gold silver crash kyun hua", ["Gold silver crash: kya karein"]) and not weekly.repeats("Kedarnath ki deewar", ["Gold silver crash"])
+
+
+def test_parse_accepts_an_object_wrapping_the_list_and_other_key_names():
+    raw = '{"topics": [{"slot_id": "2026-11-14-arthvan-short", "topic": "Vishnu ka sir kaise kata?"}]}'
+    assert weekly.parse(raw) == [{"slot_id": "2026-11-14-arthvan-short", "topic": "Vishnu ka sir kaise kata?", "slot": "2026-11-14-arthvan-short", "title": "Vishnu ka sir kaise kata?"}]
+
+
+def test_an_unusable_reply_is_reported_in_the_plan_notes(tmp_path):
+    plan = weekly.build(tmp_path, TODAY, {}, ask=lambda p: "Sorry, I cannot do that.", calendar=[])
+    assert sum("no usable topics" in n for n in plan["notes"]) == 2 and all(t.get("from_bank") for t in plan["entries"].values())
