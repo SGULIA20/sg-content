@@ -27,7 +27,7 @@ def test_plan_is_question_bridge_closing_within_26_words_with_the_founders_promp
     assert plan["question"] == p.script["hook"] and plan["bridge"].endswith(".") and plan["closing"] in intro.CLOSINGS
     assert plan["text"].endswith(plan["closing"]) and plan["words"] <= 26 and plan["aspect"] == "9:16"
     assert plan["closing"].rstrip(".") in plan["prompt"]
-    for must in ("9:16 vertical, 1080x1920", "key light", "Body language in three beats", "SIP debited", "@SGLearning watermark top right", "Speaks from the first frame", "wearing"):
+    for must in ("9:16 vertical, 1080x1920", "key light", "Body language in three beats", "mutual-fund statement", "@SGLearning watermark top right", "Speaks from the first frame", "wearing"):
         assert must in plan["prompt"], must
 
 
@@ -462,3 +462,19 @@ def test_the_audit_lists_scheduled_videos_and_marks_the_ones_no_piece_recorded(t
     res = intro.audit_channels(tmp_path, call=call, token_for=lambda ch: "t", out=lines.append)
     assert [r["id"] for r in res["sglearning"]] == ["known1", "stray2"] and res["sglearning"][1]["piece"] == ""
     assert any("stray2" in l and "NOT IN REPO" in l for l in lines) and any("known1" in l and p.id in l for l in lines)
+
+
+def test_outfits_never_match_across_channels_or_on_back_to_back_days_and_no_screens_appear(tmp_path):
+    """7 Nov 2026 (founder: similar clothes in both Shorts, a blue device in every reel): fourteen outfits, different for each channel and
+    day, props that are paper or objects, and a standing instruction against laptops, tablets and glowing screens."""
+    from datetime import date
+    def mk(ch, d):
+        return pieces.Piece(id=f"2026-11-{d:02d}-{ch}-short", channel=ch, kind="short", publish_day=date(2026, 11, d))
+    for d in range(1, 29):
+        assert intro._pick(mk("sglearning", d), intro.OUTFITS, 1) != intro._pick(mk("arthvan", d), intro.OUTFITS, 1)
+        assert intro._pick(mk("sglearning", d), intro.OUTFITS, 1) != intro._pick(mk("sglearning", d + 1), intro.OUTFITS, 1)
+    assert len(set(intro.OUTFITS)) == 14
+    assert not [s for room in intro.SETTINGS.values() for s in room if "laptop" in s or "blue chairs" in s]
+    assert not [p for _k, p in intro.PROPS if "phone" in p]
+    p = mk("sglearning", 14)
+    assert "No laptop, tablet, monitor, TV or glowing blue screen" in intro.prompt_for(p, {"text": "x", "closing": "Chaliye."})
