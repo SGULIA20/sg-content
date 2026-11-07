@@ -114,15 +114,28 @@ def _prompt(channel: str, slots_: list, rows: list, today: date, calendar: list,
 
 
 def parse(raw: str) -> list:
+    """The list of proposals in Claude's reply, whatever wraps it: a code fence, prose, or a JSON object holding the list."""
     raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", (raw or "").strip(), flags=re.M)
-    start, end = raw.find("["), raw.rfind("]")
-    if start < 0 or end <= start:
-        return []
-    try:
-        data = json.loads(raw[start:end + 1])
-    except ValueError:
-        return []
-    return [d for d in data if isinstance(d, dict) and d.get("slot") and d.get("title")]
+    data = None
+    for opener, closer in (("[", "]"), ("{", "}")):
+        start, end = raw.find(opener), raw.rfind(closer)
+        if start >= 0 and end > start:
+            try:
+                data = json.loads(raw[start:end + 1])
+                break
+            except ValueError:
+                continue
+    if isinstance(data, dict):
+        data = next((v for v in data.values() if isinstance(v, list)), [])
+    out = []
+    for d in data if isinstance(data, list) else []:
+        if not isinstance(d, dict):
+            continue
+        slot = d.get("slot") or d.get("slot_id") or d.get("id") or d.get("piece")
+        title = d.get("title") or d.get("topic")
+        if slot and title:
+            out.append({**d, "slot": str(slot).strip(), "title": str(title).strip()})
+    return out
 
 
 def build(root: Path, today: date, rows: dict, ask=_ask_claude, calendar: list | None = None, content: Path = CONTENT_DIR) -> dict:
@@ -137,8 +150,13 @@ def build(root: Path, today: date, rows: dict, ask=_ask_claude, calendar: list |
             continue
         proposals = {}
         try:
-            for d in parse(ask(_prompt(ch, mine, rows.get(ch, []), today, calendar, seen))):
+            raw = ask(_prompt(ch, mine, rows.get(ch, []), today, calendar, seen))
+            for d in parse(raw):
                 proposals[d["slot"]] = d
+            if not proposals:
+                notes.append(f"{ch}: Claude's reply had no usable topics (starts: {str(raw)[:140]!r}); the banks fill the week")
+            elif len(proposals) < len(mine):
+                notes.append(f"{ch}: Claude proposed {len(proposals)} of {len(mine)} slots; the banks fill the rest")
         except Exception as e:
             notes.append(f"{ch}: Claude could not propose topics ({secrets.scrub(str(e))[:100]}); the banks fill the week")
         used_here = list(seen)
