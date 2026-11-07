@@ -95,7 +95,9 @@
    "voice": 14
   },
   "drafts": 1,
+  "ig_reel_id": "18115818041035796",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-07-arthvan-short.mp4",
    "clip_seconds": 10.03,
@@ -105,6 +107,8 @@
   "intro_sent": "2026-11-04T13:47:57+00:00",
   "out_sha": "a26545a9cb50a63c620da8521ce5fa2503d6b610",
   "out_sha_intro": true,
+  "threads_id": "18053675519815129",
+  "threads_poll_id": "18388872829232975",
   "yt_id": "uABwm2lW7LM",
   "yt_id_replaced": "F2nSLUCfmJw"
  },
@@ -327,7 +331,7 @@
   },
   "title": "Mahabalipuram ke mandir *samundar* ke neeche? 😱"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   5.17,
@@ -376,6 +380,6 @@
   "title_hi": "Mahabalipuram ke 7 mandir, 6 samundar mein?",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-11-04T16:25:05+00:00",
+ "updated": "2026-11-07T16:11:29+00:00",
  "writer": "claude"
 }
