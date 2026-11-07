@@ -135,7 +135,15 @@
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
-  "intro_sent": "2026-11-06T20:19:09+00:00"
+  "intro": {
+   "clip": "2026-11-13-arthvan-short.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-07T06:35:56+00:00",
+   "seconds": 9.27
+  },
+  "intro_checked": "525cde6afbee0d17",
+  "intro_sent": "2026-11-06T20:19:09+00:00",
+  "yt_id": "KHZiSOsjgkU"
  },
  "kind": "short",
  "publish_day": "2026-11-13",
@@ -354,7 +362,7 @@
   },
   "title": "Rani ka vrat, *Kailasa* upar se bana 🤯"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   4.45,
@@ -392,6 +400,7 @@
    "words": 17
   },
   "layers": true,
+  "look": "indian-comic",
   "notes": "Rashtrakuta period; the '18 years' claim is legend; volumes are estimates.",
   "place": "Ellora, Maharashtra",
   "remake_kind": "weak",
@@ -402,6 +411,6 @@
   "title_hi": "Ellora ka Kailasa mandir, upar se neeche",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-11-06T20:19:12+00:00",
+ "updated": "2026-11-07T06:36:02+00:00",
  "writer": "claude"
 }

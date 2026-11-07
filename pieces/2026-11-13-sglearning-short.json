@@ -115,7 +115,15 @@
    "voice": 8
   },
   "drafts": 1,
-  "intro_sent": "2026-11-06T20:27:06+00:00"
+  "intro": {
+   "clip": "2026-11-13-sglearning-short.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-07T06:36:48+00:00",
+   "seconds": 8.83
+  },
+  "intro_checked": "853919d02af36c80",
+  "intro_sent": "2026-11-06T20:27:06+00:00",
+  "yt_id": "eOdnO0vNxuk"
  },
  "kind": "short",
  "publish_day": "2026-11-13",
@@ -262,7 +270,7 @@
   },
   "title": "Mummy ka *sona* girvi kyun ja raha? 💍"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   5.33,
@@ -285,6 +293,7 @@
   },
   "layers": true,
   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63940",
+  "look": "claymation",
   "published": "2026-11-06T17:00:00+00:00",
   "rank": 5,
   "source": "RBI Press Releases",
@@ -293,6 +302,6 @@
   "title": "Sectoral Deployment of Credit by NBFC – September 2026",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-11-06T20:27:08+00:00",
+ "updated": "2026-11-07T06:36:53+00:00",
  "writer": "claude"
 }
