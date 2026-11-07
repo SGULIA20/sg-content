@@ -1,0 +1,48 @@
+name: news-revert
+
+# Undoes a news swap (engine/news.py --revert, founder, 7 Nov 2026: the news Short had no founder intro and news Shorts stopped on 4 Nov):
+# the planned Short goes back to its day and the news Short is parked private with no publish time. Light: no video tools.
+on:
+  workflow_dispatch:
+    inputs:
+      day:
+        description: the day whose swap to undo, YYYY-MM-DD
+        required: true
+      later:
+        description: the day the planned Short was moved to, YYYY-MM-DD
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-revert
+  cancel-in-progress: false
+
+jobs:
+  revert:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -q -r requirements.txt
+      - name: Git identity
+        run: |
+          git config user.name "sg-content-bot"
+          git config user.email "sg-content-bot@users.noreply.github.com"
+      - name: Revert the swap
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DAY: ${{ inputs.day }}
+          LATER: ${{ inputs.later }}
+        run: python -m engine.news --revert "$DAY" "$LATER"

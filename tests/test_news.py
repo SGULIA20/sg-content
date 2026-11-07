@@ -98,3 +98,42 @@ def test_a_short_marked_keep_slot_is_never_swapped(tmp_path, monkeypatch):
     p = _evergreen(tmp_path); p.topic["keep_slot"] = "style test"; pieces.save(p, tmp_path)
     monkeypatch.setattr(pipeline, "make", lambda *a, **k: (_ for _ in ()).throw(AssertionError("made")))
     assert news.run(tmp_path, NOW, deps=D(), notify=lambda t: None, items=[ITEM]) == 0
+
+
+def test_reverting_a_news_swap_puts_the_planned_short_back_and_parks_the_news_short(tmp_path, monkeypatch):
+    """7 Nov 2026: the news Short had no founder intro; the planned Short goes back to today and the news Short is parked, never posted."""
+    monkeypatch.setattr(news.gitsync, "safe_commit", lambda *a, **k: "")
+    later = TODAY + timedelta(days=7)
+    ev = _evergreen(tmp_path, later)
+    ev.ids = {"yt_id": "EVER", "out_sha": "abc", "intro": {"ok": 1}}; pieces.save(ev, tmp_path)
+    nw = pieces.Piece(id=slots.piece_id(TODAY, "sglearning", "short"), channel="sglearning", kind="short", publish_day=TODAY, status="uploaded")
+    nw.ids = {"yt_id": "NEWS"}; nw.topic = {"news": True, "title": "Biyani"}
+    (tmp_path / "out" / nw.id).mkdir(parents=True); (tmp_path / "out" / nw.id / "reel.mp4").write_bytes(b"n"); pieces.save(nw, tmp_path)
+    moved, parked, said = [], [], []
+    out = news.revert(TODAY, later, tmp_path, token_for=lambda ch, env=None: "tok", reschedule=lambda t, v, w: moved.append((v, w)) or True,
+                      unschedule=lambda t, v: parked.append(v) or True, notify=said.append)
+    assert moved == [("EVER", slots.publish_at("sglearning", "short", TODAY))] and parked == ["NEWS"] and "Reverted" in out and said
+    back = pieces.load(slots.piece_id(TODAY, "sglearning", "short"), tmp_path)
+    assert back.ids["yt_id"] == "EVER" and back.ids["intro"] and back.publish_day == TODAY and (tmp_path / "out" / back.id / "reel.mp4").read_bytes() == b"e"
+    parked_piece = pieces.load(f"{TODAY.isoformat()}-sglearning-news", tmp_path)
+    assert parked_piece.status == "rejected" and parked_piece.ids["yt_id"] == "NEWS" and (tmp_path / "out" / parked_piece.id / "reel.mp4").read_bytes() == b"n"
+    assert pieces.load(slots.piece_id(later, "sglearning", "short"), tmp_path) is None
+
+
+def test_a_revert_that_cannot_move_the_planned_short_changes_nothing(tmp_path, monkeypatch):
+    monkeypatch.setattr(news.gitsync, "safe_commit", lambda *a, **k: "")
+    later = TODAY + timedelta(days=7)
+    _evergreen(tmp_path, later)
+    nw = pieces.Piece(id=slots.piece_id(TODAY, "sglearning", "short"), channel="sglearning", kind="short", publish_day=TODAY, status="uploaded")
+    nw.ids = {"yt_id": "NEWS"}; nw.topic = {"news": True}; pieces.save(nw, tmp_path)
+    parked = []
+    out = news.revert(TODAY, later, tmp_path, token_for=lambda ch, env=None: "tok", reschedule=lambda *a: False, unschedule=lambda t, v: parked.append(v) or True, notify=lambda m: None)
+    assert "nothing changed" in out and not parked and pieces.load(slots.piece_id(TODAY, "sglearning", "short"), tmp_path).topic["news"]
+    assert "not a news Short" in news.revert(date(2030, 1, 1), later, tmp_path, token_for=lambda *a, **k: "t")
+
+
+def test_unschedule_sends_no_publish_time_and_keeps_the_video_private():
+    from engine import youtube
+    sent = []
+    assert youtube.unschedule("t", "v", call=lambda m, u, t, json_body=None: sent.append(json_body) or (200, {}, {}))
+    assert sent[0]["status"]["privacyStatus"] == "private" and "publishAt" not in sent[0]["status"] and sent[0]["id"] == "v"
