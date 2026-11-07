@@ -116,7 +116,41 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, deps=None, notify=te
     return 0
 
 
+def revert(day, later, root: Path = ROOT, env=None, token_for=youtube.access_token, reschedule=youtube.reschedule, unschedule=youtube.unschedule,
+           notify=telegram.send, commit=True) -> str:
+    """Undoes the news swap of `day` (7 Nov 2026: the news Short had no founder intro and news Shorts were stopped on 4 Nov): the planned Short
+    that moved to `later` goes back into `day`'s slot, and the news Short is parked: private on YouTube with no publish time, its record
+    marked rejected under its own news id, so it never reaches Instagram. Nothing is changed unless the planned Short could be moved back."""
+    root = Path(root)
+    sid = slots.piece_id(day, CHANNEL, "short")
+    news = pieces.load(sid, root)
+    if news is None or not news.topic.get("news") or not news.ids.get("yt_id"):
+        return f"{sid} is not a news Short: nothing to revert"
+    evergreen = pieces.load(slots.piece_id(later, CHANNEL, "short"), root)
+    if evergreen is None or evergreen.topic.get("news") or evergreen.status != "uploaded" or not evergreen.ids.get("yt_id") or any(evergreen.ids.get(k) for k in PLATFORM_IDS):
+        return f"{slots.piece_id(later, CHANNEL, 'short')} is not a scheduled planned Short: nothing reverted"
+    token = token_for(CHANNEL, env)
+    if not reschedule(token, evergreen.ids["yt_id"], slots.publish_at(CHANNEL, "short", day)):
+        return "could not move the planned Short back on YouTube: nothing changed"
+    parked = unschedule(token, news.ids["yt_id"])
+    nid = f"{day.isoformat()}-{CHANNEL}-news"
+    news = pieces.transition(news, "rejected", "parked 7 Nov 2026: a news Short without the founder's intro; news Shorts stopped on 4 Nov")
+    rename(news, nid, day, root)
+    rename(evergreen, sid, day, root)
+    if commit:
+        gitsync.safe_commit(root, f"news: reverted the swap of {day}; the planned Short is back, the news Short is parked")
+    msg = (f"Reverted: the planned Short (with your intro) is back in {day:%d %b}'s slot; the news Short {news.ids['yt_id']} is "
+           f"{'parked private with no publish time' if parked else 'STILL SCHEDULED: unschedule it in YouTube Studio'}.")
+    notify(msg)
+    return msg
+
+
 def main(argv=None) -> int:
+    args = sys.argv[1:] if argv is None else argv
+    if args and args[0] == "--revert":
+        from datetime import date
+        print(revert(date.fromisoformat(args[1]), date.fromisoformat(args[2])), flush=True)
+        return 0
     return run()
 
 

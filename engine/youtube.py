@@ -196,6 +196,14 @@ def go_public(token: str, video_id: str, call=call) -> bool:
     return status in (200, 201)
 
 
+def unschedule(token: str, video_id: str, call=call) -> bool:
+    """Takes a private video off its publish schedule (videos.update, part=status, no publishAt): it stays private and never goes public by itself
+    (7 Nov 2026: a news Short without the founder's intro is parked, not deleted)."""
+    status, _h, _b = call("PUT", VIDEOS_URL, token, json_body={"id": video_id, "status": {
+        "privacyStatus": "private", "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}})
+    return status in (200, 201)
+
+
 def scheduled_at(token: str, when: datetime, call=call, limit: int = 150) -> list:
     """Ids of the private videos on the signed-in channel scheduled for exactly `when`: a day that already holds a video
     (6 Nov 2026: five to seven extra videos had piled onto single days). Empty when YouTube cannot be asked, never raises."""
