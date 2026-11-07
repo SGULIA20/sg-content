@@ -87,3 +87,13 @@ def test_a_reply_cut_off_midway_still_yields_the_complete_items():
            ' {"slot": "b", "title": "Sona ya chandi?", "summary": "y"},\n {"slot": "c", "title": "cut off here", "summary": "unfinis')
     got = weekly.parse(raw)
     assert [g["slot"] for g in got] == ["a", "b"] and got[0]["title"] == "Gold crash kyun?"
+
+
+def test_the_planner_sees_the_founders_pasted_analyses_as_hints_only(tmp_path):
+    (tmp_path / "intel").mkdir()
+    (tmp_path / "intel" / "arthvan.md").write_text("Seven Unakoti Shorts split interest.")
+    assert weekly.intel_for("arthvan", tmp_path) == "Seven Unakoti Shorts split interest." and weekly.intel_for("sglearning", tmp_path) == ""
+    seen = []
+    weekly.build(tmp_path, TODAY, {}, ask=lambda p: seen.append(p) or "[]", calendar=[])
+    arth = next(p for p in seen if "SG-MYTH-WORLD" in p)
+    assert "hints only, unchecked" in arth                                   # the shipped content/intel notes are in the prompt
