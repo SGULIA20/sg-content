@@ -1,0 +1,38 @@
+name: yt-retitle
+
+# Changes video titles from content/retitle-plan.json (engine/ytretitle.py); check reports only.
+# Its own concurrency group, so the 5-minute Studio poll never cancels it.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: check (report only) or apply
+        default: check
+
+permissions:
+  contents: read
+
+concurrency:
+  group: yt-retitle
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -q -r requirements.txt
+      - name: Retitle the videos
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
+          YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
+          MODE: ${{ inputs.mode }}
+        run: python -m engine.ytretitle "$MODE"
