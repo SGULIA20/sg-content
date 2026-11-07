@@ -37,7 +37,7 @@ RULES = {
 def _ask_claude(prompt: str) -> str:
     import anthropic
     client = anthropic.Anthropic(api_key=secrets.get("ANTHROPIC_API_KEY"))
-    r = client.messages.create(model="claude-sonnet-5-5", max_tokens=6000, messages=[{"role": "user", "content": prompt}])
+    r = client.messages.create(model="claude-sonnet-5-5", max_tokens=14000, messages=[{"role": "user", "content": prompt}])
     try:
         from . import writer
         writer.record_spend(r.usage, writer.SPEND_FILE, None, factor=writer.SONNET_VS_OPUS)
@@ -109,12 +109,28 @@ def _prompt(channel: str, slots_: list, rows: list, today: date, calendar: list,
             f"Propose ONE topic for each slot below. A long video is a deeper telling of a big story; a Short is one sharp question. Use the signals: a scare or a "
             f"choice tied to money (finance) or a famous name with a shock question or an untold angle (mythology). Tie a topic to a festival only when it truly fits. "
             f"Every topic must be checkable against real sources.\nSlots:\n{todo}\n\n"
-            f'Reply with JSON only: a list of {{"slot": "<slot id>", "title": "<Hinglish title as a question, Latin script>", "summary": "<2-3 sentences: what the video '
+            f'Reply with JSON only: a list of {{"slot": "<slot id>", "title": "<Hinglish title as a question, Latin script, no emoji, no asterisks>", "summary": "<at most 40 words: what the video '
             f'explains and which facts must be checked>", "hooks": ["<opening question 1>", "<opening question 2>"], "why": "<which signal or date this follows>"}}.')
 
 
+def _objects(raw: str) -> list:
+    """Every complete JSON object in the text, in order: a reply cut off by the length limit still yields the items before the cut."""
+    dec, out, i = json.JSONDecoder(), [], 0
+    while True:
+        i = raw.find("{", i)
+        if i < 0:
+            return out
+        try:
+            obj, end = dec.raw_decode(raw[i:])
+        except ValueError:
+            i += 1
+            continue
+        out.append(obj)
+        i += end
+
+
 def parse(raw: str) -> list:
-    """The list of proposals in Claude's reply, whatever wraps it: a code fence, prose, or a JSON object holding the list."""
+    """The proposals in Claude's reply, whatever wraps it: a code fence, prose, an object holding the list, or a reply cut off midway."""
     raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", (raw or "").strip(), flags=re.M)
     data = None
     for opener, closer in (("[", "]"), ("{", "}")):
@@ -126,15 +142,17 @@ def parse(raw: str) -> list:
             except ValueError:
                 continue
     if isinstance(data, dict):
-        data = next((v for v in data.values() if isinstance(v, list)), [])
+        data = next((v for v in data.values() if isinstance(v, list)), [data] if data.get("slot") else [])
+    if not isinstance(data, list):
+        data = [o for o in _objects(raw) if isinstance(o, dict) and (o.get("slot") or o.get("slot_id"))]
     out = []
-    for d in data if isinstance(data, list) else []:
+    for d in data:
         if not isinstance(d, dict):
             continue
         slot = d.get("slot") or d.get("slot_id") or d.get("id") or d.get("piece")
         title = d.get("title") or d.get("topic")
         if slot and title:
-            out.append({**d, "slot": str(slot).strip(), "title": str(title).strip()})
+            out.append({**d, "slot": str(slot).strip(), "title": re.sub(r"[*_]|[\U0001F300-\U0001FAFF\u2600-\u27BF]", "", str(title)).strip()})
     return out
 
 

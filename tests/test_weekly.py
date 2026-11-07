@@ -80,3 +80,10 @@ def test_parse_accepts_an_object_wrapping_the_list_and_other_key_names():
 def test_an_unusable_reply_is_reported_in_the_plan_notes(tmp_path):
     plan = weekly.build(tmp_path, TODAY, {}, ask=lambda p: "Sorry, I cannot do that.", calendar=[])
     assert sum("no usable topics" in n for n in plan["notes"]) == 2 and all(t.get("from_bank") for t in plan["entries"].values())
+
+
+def test_a_reply_cut_off_midway_still_yields_the_complete_items():
+    raw = ('```json\n[\n {"slot": "a", "title": "Gold *crash* kyun? \U0001F4C9", "summary": "x", "hooks": ["q"]},\n'
+           ' {"slot": "b", "title": "Sona ya chandi?", "summary": "y"},\n {"slot": "c", "title": "cut off here", "summary": "unfinis')
+    got = weekly.parse(raw)
+    assert [g["slot"] for g in got] == ["a", "b"] and got[0]["title"] == "Gold crash kyun?"
