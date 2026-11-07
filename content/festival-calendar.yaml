@@ -1,0 +1,9 @@
+# Festival and event dates that make a mythology story timely (founder, 7 Nov 2026: "build the scoring rule for topics"). The YouTube
+# research of 7 Nov showed festival stories (Karva Chauth, Diwali, Sharad Purnima, Ahoi Ashtami) taking 1.4-3 million views in the same fortnight.
+# A topic whose words match `terms` scores higher from `lead_days` before the date until `after_days` after it. Dates are from memory:
+# CHECK each against a panchang and fix this file; a wrong date only moves a small boost (engine/topicscore.py).
+- {date: "2026-11-08", name: "Diwali (Lakshmi Puja)", lead_days: 5, after_days: 2, terms: [lakshmi, ganesh, diwali, deepawali, deepavali, ram, ayodhya, dhanteras, kuber, dhanvantari]}
+- {date: "2026-11-15", name: "Chhath Puja", lead_days: 4, after_days: 1, terms: [chhath, surya, sun, karna, kunti, draupadi]}
+- {date: "2026-11-20", name: "Dev Uthani Ekadashi and Tulsi Vivah", lead_days: 4, after_days: 2, terms: [tulsi, vishnu, ekadashi, shaligram, shalagram, vrinda, jalandhar]}
+- {date: "2026-11-24", name: "Kartik Purnima and Dev Deepawali", lead_days: 4, after_days: 1, terms: [shiv, mahadev, tripurasur, kartikeya, ganga, kashi, deep]}
+- {date: "2026-12-20", name: "Gita Jayanti", lead_days: 5, after_days: 1, terms: [gita, krishna, arjun, kurukshetra, mahabharat]}
