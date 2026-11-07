@@ -241,7 +241,7 @@ OUTFITS = ["a mustard kurta", "a white shirt with sleeves rolled and a dark wais
            "a teal half-sleeve shirt", "a cream Nehru jacket over a white shirt", "a brown corduroy jacket over a beige tee",
            "a plain white kurta", "a dark green polo", "a navy blazer over a white tee", "a light grey sweater over a maroon collar"]
 POSES = ["walking briskly toward the camera like a TV news reporter on location, the camera tracking backward at the same pace, one hand pointing at the lens",
-         "striding along the street, turning sharply to the camera mid-step, leaning in, both hands moving",
+         "striding through the scene, turning sharply to the camera mid-step, leaning in, both hands moving",
          "standing right in the middle of the scene, leaning aggressively toward the lens, eyebrows high, one hand slicing the air",
          "pacing a few quick steps left and right in front of the camera, counting on his fingers, snapping back to the lens",
          "walking and talking, then stopping dead and spinning to face the camera on the key word, a finger raised"]
@@ -284,7 +284,7 @@ def prompt_for(piece, p: dict) -> str:
             f"SG [locked] {pose}, wearing {outfit}. Speaks from the first frame, mouth matched to the words, eyes locked on the lens. "
             f"{DELIVERY}. Body language in three beats: {beats}. "
             f"Prop: {prop_for(piece)}. Camera: {camera}. {handle} watermark top right, white, bold, 80% opacity. No captions, no subtitles, "
-            f"no other on-screen text. No laptop, tablet, monitor, TV or glowing blue screen anywhere in the frame; the only object on the table is the prop. "
+            f"no other on-screen text. No laptop, tablet, monitor, TV or glowing blue screen anywhere in the frame; the only object in his hands or near him is the prop. "
             f"Export at {('1080x1920' if short else '1920x1080')}.")
 
 
