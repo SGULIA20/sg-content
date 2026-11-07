@@ -1,0 +1,293 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 904.32,
+   "quote": "The Central Bureau of Investigation (CBI) has registered a case against Future Retail Ltd and its promoters, Kishore Biyani and his brother Rakesh Biyani, over an alleged bank fraud of ₹904.32 crore involving the State Bank of India (SBI), PTI reported.",
+   "source_date": "2026-11-06",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/companies/people/who-is-kishore-biyani-cbi-books-future-retail-founder-brother-in-904-crore-sbi-loan-fraud-case-11793971071226.html",
+   "text": "The Central Bureau of Investigation registered a case against Future Retail Ltd and promoters Kishore and Rakesh Biyani over an alleged bank fraud amounting to ₹904.32 crore.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "reported",
+   "number": 9.0,
+   "quote": "According to the PTI report citing CBI officials, SBI's complaint alleged that the accused entered into a criminal conspiracy to obtain credit facilities from the bank and a consortium of nine lenders.",
+   "source_date": "2026-11-06",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/companies/people/who-is-kishore-biyani-cbi-books-future-retail-founder-brother-in-904-crore-sbi-loan-fraud-case-11793971071226.html",
+   "text": "State Bank of India's complaint highlighted that the credit facilities were secured from SBI alongside a consortium of 9 lenders.",
+   "unit": "banks"
+  },
+  {
+   "label": "official",
+   "number": 5878.28,
+   "quote": "According to the bank's complaint, the forensic auditor identified 13 related and connected entities to which FRL made net payments of ₹5,878.28 crore during the review period.",
+   "source_date": "2026-11-06",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/india/cbi-books-kishore-biyani-and-frl-in-904-crore-sbi-fraud-case/articleshow/135619292.cms",
+   "text": "A forensic audit identified 13 related and connected entities that received net fund transfers of ₹5,878.28 crore from Future Retail.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "official",
+   "number": 24002.09,
+   "quote": "Gross payments to these entities stood at ₹24,002.09 crore against receipts of ₹18,123.79 crore.",
+   "source_date": "2026-11-06",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/india/cbi-books-kishore-biyani-and-frl-in-904-crore-sbi-fraud-case/articleshow/135619292.cms",
+   "text": "Future Retail routed gross disbursements of ₹24,002.09 crore to the identified connected entities against inward receipts of ₹18,123.79 crore.",
+   "unit": "crore INR"
+  }
+ ],
+ "id": "2026-11-07-sglearning-news",
+ "ids": {
+  "budget": {
+   "day": "2026-11-06",
+   "drafts": 2,
+   "research": 1
+  },
+  "drafts": 2,
+  "intro_rejected": "653c17091a844ed4",
+  "intro_rejected_why": "missing words (only 29% of the script heard): \"Aapki SIP doobe phir bhi fund house kyun kamata hai aapka paisa doobta hai unki fees phir bhi pakki rehti hai aaiye isko\"",
+  "yt_id": "tLybxBfk1MI"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-07",
+ "reasons": [
+  "try 1: length: 106 words, allowed 75-105",
+  "parked 7 Nov 2026: a news Short without the founder's intro; news Shorts stopped on 4 Nov"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Kya Biyani ka loan aapki EMI badha sakta hai?\nReports ke mutabik CBI ne Future Retail ke Biyani par 904.32 crore ke alleged bank fraud ka case kiya hai.\nJab bade loan doobte hain, bank ko extra paisa side mein rakhna padta hai, aur loan mahenge ho sakte hain.\nAapko lagta hai bank ke doobe loan ka asar sirf bank par hota hai?\nYeh investment advice nahi hai.\nUs dost ko bhejo jo kehta hai, bank ki baat mujhe kya.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#EMI",
+     "#PersonalFinanceIndia",
+     "#HinglishFinance",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Kya Biyani ka loan aapki EMI badha sakta hai? CBI ne reportedly 904.32 crore ke alleged bank fraud mein case kiya hai. Bade loan doobte hain to banks ko extra paisa side rakhna padta hai. Aapko kya lagta hai, iska asar aam logon par padta hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Kya Biyani ka loan aapki EMI badha sakta hai? CBI ne reportedly 904.32 crore ke alleged bank fraud mein case kiya hai. Jab bade loan doobte hain, banks ko extra paisa side mein rakhna padta hai, aur uska asar aam logon ke loan par aa sakta hai. Us dost ko bhejo jo kehta hai bank ki baat mujhe kya.",
+    "tags": [
+     "Kishore Biyani",
+     "Future Retail",
+     "CBI case",
+     "SBI loan fraud",
+     "home loan EMI",
+     "bank fraud",
+     "paise ki khabar",
+     "Hinglish finance",
+     "loan default"
+    ],
+    "title": "Biyani CBI case: aapki EMI par asar?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "₹904.32 cr",
+    "line": "Loan ka paisa idhar-udhar",
+    "source": "Mint"
+   },
+   {
+    "big_number": "9 banks",
+    "line": "Sirf SBI nahi, poora group",
+    "source": "Mint"
+   },
+   {
+    "big_number": "2 din",
+    "line": "Salary clear, PF surakshit",
+    "source": "Mint"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo kehta hai, bank ki baat mujhe kya.",
+  "hook": "Kya Biyani ka loan aapki EMI badha sakta hai?",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Biyani ka loan, aapki EMI?",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Kya Biyani ka loan aapki EMI badha sakta hai?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "CBI ka case Biyani par",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "CBI ne Future Retail ke Biyani par case kiya hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "₹904.32 cr",
+      "line": "Paisa judi companies mein",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Reportedly, loan ka 904.32 crore paisa judi companies mein gaya."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "9 banks",
+      "line": "9 banks ka group",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Aur yeh loan 9 banks ke group ka tha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Doobe loan, bank ka extra kharcha",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Bade loan doobein, to bank ko extra paisa rakhna padta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Aapki home loan EMI badh sakti",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Phir loan mahenge hote hain, aur aapki home loan EMI badh sakti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "2 din",
+      "line": "Salary clear, PF surakshit",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Company band ho, to 2 din mein salary milni chahiye, PF surakshit rehta hai. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": {
+      "big_number": "",
+      "line": "Us dost ko bhejo",
+      "source": "Mint"
+     },
+     "prompt": "",
+     "type": "card"
+    },
+    "vo": "Us dost ko bhejo jo kehta hai, bank ki baat mujhe kya."
+   }
+  ],
+  "thumbnail": {
+   "name": "BIYANI",
+   "name_hi": "बियानी",
+   "scene": "A huge shuttered retail store at dusk with stacks of bank loan files in front and a giant red crack running through a pile of rupee notes.",
+   "words": [
+    "904 CRORE",
+    "KHATRA?"
+   ],
+   "words_hi": [
+    "904 करोड़",
+    "खतरा?"
+   ]
+  },
+  "title": "Biyani ka *loan*, aapki EMI par asar? 💸"
+ },
+ "status": "rejected",
+ "timings": [
+  0.0,
+  4.01,
+  7.98,
+  14.75,
+  18.32,
+  23.01,
+  28.18,
+  36.63
+ ],
+ "topic": {
+  "graphics": true,
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "Chaliye, poori baat samajhte hain.",
+   "prompt": "9:16 vertical, 1080x1920, exactly 10 seconds, natural and cinematic. Setting: inside a bank branch, counters, a token display and a short queue softly blurred behind. Lighting: soft key light on the face from one side, warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] walking slowly toward the camera, the camera tracking back at the same pace, one small hand gesture per line, wearing a plain white kurta. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: on the question, a direct look with a half-smile; on the second line, a slow nod, hand on chest; on \"Chaliye, poori baat samajhte hain\", a wave of the hand toward the lens. Prop: a bank passbook and a pen. Camera: handheld feel, slight natural movement, medium close-up throughout. @SGLearning watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No laptop, tablet, monitor, TV or glowing blue screen anywhere in the frame; the only object on the table is the prop. Export at 1080x1920.",
+   "question": "Kya Biyani ka loan aapki EMI badha sakta hai?",
+   "text": "Kya Biyani ka loan aapki EMI badha sakta hai? Chaliye, poori baat samajhte hain.",
+   "words": 14
+  },
+  "link": "https://www.livemint.com/companies/people/who-is-kishore-biyani-cbi-books-future-retail-founder-brother-in-904-crore-sbi-loan-fraud-case-11793971071226.html",
+  "news": true,
+  "patch_tries": 1,
+  "published": "2026-11-06T13:59:47+00:00",
+  "rank": 2,
+  "source": "Mint Companies",
+  "summary": "The CBI has booked Future Retail founder Kishore Biyani and his brother Rakesh in an alleged  ₹904.32-crore bank fraud case following an SBI complaint. The agency searched premises linked to Biyani in Mumbai, alleging loan fund diversion through associate companies.",
+  "target_minutes": null,
+  "title": "Who is Kishore Biyani? CBI books Future Retail founder, brother in alleged  ₹904-crore SBI loan fraud case",
+  "topic_score": 8,
+  "topic_score_why": [
+   "+3 touches the viewer's own money",
+   "+3 a scare or a crash",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "voice": "voice_1kn3blc2u13l"
+ },
+ "updated": "2026-11-07T08:20:49+00:00",
+ "writer": "claude"
+}

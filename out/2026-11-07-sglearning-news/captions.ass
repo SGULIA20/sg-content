@@ -1,0 +1,36 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.29,Default,,0,0,0,,Kya Biyani ka loan aapki EMI
+Dialogue: 0,0:00:02.29,0:00:03.56,Default,,0,0,0,,badha sakta hai?
+Dialogue: 0,0:00:04.01,0:00:06.36,Default,,0,0,0,,CBI ne Future Retail ke Biyani
+Dialogue: 0,0:00:06.36,0:00:07.53,Default,,0,0,0,,par case kiya hai.
+Dialogue: 0,0:00:07.98,0:00:09.38,Default,,0,0,0,,Reportedly,
+Dialogue: 0,0:00:09.38,0:00:12.54,Default,,0,0,0,,loan ka 904.32 crore paisa judi
+Dialogue: 0,0:00:12.54,0:00:14.30,Default,,0,0,0,,companies mein gaya.
+Dialogue: 0,0:00:14.75,0:00:16.83,Default,,0,0,0,,Aur yeh loan 9 banks ke
+Dialogue: 0,0:00:16.83,0:00:17.87,Default,,0,0,0,,group ka tha.
+Dialogue: 0,0:00:18.32,0:00:19.57,Default,,0,0,0,,Bade loan doobein,
+Dialogue: 0,0:00:19.57,0:00:21.81,Default,,0,0,0,,to bank ko extra paisa rakhna
+Dialogue: 0,0:00:21.81,0:00:22.56,Default,,0,0,0,,padta hai.
+Dialogue: 0,0:00:23.01,0:00:24.90,Default,,0,0,0,,Phir loan mahenge hote hain,
+Dialogue: 0,0:00:24.90,0:00:27.02,Default,,0,0,0,,aur aapki home loan EMI badh
+Dialogue: 0,0:00:27.02,0:00:27.73,Default,,0,0,0,,sakti hai.
+Dialogue: 0,0:00:28.18,0:00:29.39,Default,,0,0,0,,Company band ho,
+Dialogue: 0,0:00:29.39,0:00:31.57,Default,,0,0,0,,to 2 din mein salary milni
+Dialogue: 0,0:00:31.57,0:00:32.06,Default,,0,0,0,,chahiye,
+Dialogue: 0,0:00:32.06,0:00:33.76,Default,,0,0,0,,PF surakshit rehta hai.
+Dialogue: 0,0:00:33.76,0:00:36.18,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:36.63,0:00:38.83,Default,,0,0,0,,Us dost ko bhejo jo kehta
+Dialogue: 0,0:00:38.83,0:00:39.10,Default,,0,0,0,,hai,
+Dialogue: 0,0:00:39.10,0:00:40.75,Default,,0,0,0,,bank ki baat mujhe kya.
