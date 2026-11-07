@@ -182,7 +182,10 @@ def pick_finance(items: list, used_links: set, now: datetime, news: bool = False
              and (not any(w in str(i.get("title", "")).lower() for w in MARKET_CALL) if news else not dated(i))]
     if not fresh:
         return None
-    return max(fresh, key=lambda i: (score(i), i["published"]))
+    from . import topicscore
+    best = max(fresh, key=lambda i: (score(i) + topicscore.score(i, "sglearning", now.date())[0] // 2, i["published"]))   # 7 Nov 2026: the YouTube-based rule breaks ties
+    pts, why = topicscore.score(best, "sglearning", now.date())
+    return {**best, "topic_score": pts, "topic_score_why": why}
 
 
 def load_myth_bank(root: Path = CONTENT_DIR) -> list:
@@ -202,12 +205,15 @@ def history_day(day) -> bool:
     return day.toordinal() % 2 == 0
 
 
-def next_money_history(root: Path, used_ids: set) -> dict | None:
-    """The next unused money-history topic, in bank order; None once every one has been used (the news feed takes over)."""
-    for t in load_money_history(root):
-        if t["id"] not in used_ids:
-            return {**t, "history": True}
-    return None
+def next_money_history(root: Path, used_ids: set, today=None) -> dict | None:
+    """The best unused money-history topic by the YouTube-based scoring rule (engine/topicscore.py; ties keep the bank's order); None once
+    every one has been used (the news feed takes over)."""
+    from . import topicscore
+    fresh = [t for t in load_money_history(root) if t["id"] not in used_ids]
+    if not fresh:
+        return None
+    pts, why, best = topicscore.rank(fresh, "sglearning", today)[0]
+    return {**best, "history": True, "topic_score": pts, "topic_score_why": why}
 
 
 PROVEN_IG_VIEWS = 1000       # 4 Nov 2026 (founder: "D"): a Short that reached this many on Instagram has proved its topic; the next long is on it
@@ -258,13 +264,16 @@ def next_long_finance(root: Path, used_ids: set, proven: list = ()) -> dict:
     return bank[0]
 
 
-def next_myth(root: Path, used_ids: set) -> dict:
+def next_myth(root: Path, used_ids: set, today=None) -> dict:
     """The next unused topic; a famous, visual place (`priority: 1` in the bank) goes first (founder, 24 Oct 2026: Ram Setu reached
     1,564 on Instagram, Kailash's 'who climbed it' question 71; places people already know and can picture travel further)."""
     bank = load_myth_bank(root)
     fresh = [t for t in bank if t["id"] not in used_ids]
     if fresh:
-        return max(fresh, key=lambda t: (t.get("priority", 0), -bank.index(t)))
+        from . import topicscore
+        scored = {t["id"]: topicscore.score(t, "arthvan", today) for t in fresh}       # 7 Nov 2026: famous name, shock question, untold angle, festival of the week
+        best = max(fresh, key=lambda t: (t.get("priority", 0) * 2 + scored[t["id"]][0], -bank.index(t)))
+        return {**best, "topic_score": scored[best["id"]][0], "topic_score_why": scored[best["id"]][1]}
     return bank[0]                                                 # every topic used once: start the rotation again
 
 

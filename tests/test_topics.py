@@ -48,9 +48,11 @@ def test_myth_rotation_skips_used_and_wraps(tmp_path):
     (tmp_path / "myth-topics.yaml").write_text(
         "- id: dwarka\n  title_hi: Dwarka\n  hooks: [a, b, c]\n  allowed_sources: [x]\n"
         "- id: ramsetu\n  title_hi: Ram Setu\n  hooks: [a, b, c]\n  allowed_sources: [x]\n")
-    assert topics.next_myth(tmp_path, used_ids=set())["id"] == "dwarka"
-    assert topics.next_myth(tmp_path, used_ids={"dwarka"})["id"] == "ramsetu"
-    assert topics.next_myth(tmp_path, used_ids={"dwarka", "ramsetu"})["id"] == "dwarka"
+    from datetime import date
+    quiet = date(2027, 3, 1)                                               # no festival window: ties keep the bank's order
+    assert topics.next_myth(tmp_path, used_ids=set(), today=quiet)["id"] == "dwarka"
+    assert topics.next_myth(tmp_path, used_ids={"dwarka"}, today=quiet)["id"] == "ramsetu"
+    assert topics.next_myth(tmp_path, used_ids={"dwarka", "ramsetu"}, today=quiet)["id"] == "dwarka"
 
 
 def test_bank_has_forty_topics_with_three_hooks():
@@ -197,7 +199,33 @@ def test_every_other_learning_short_comes_from_the_money_history_bank():
     assert all(t.get("title") and t.get("summary") and t.get("hooks") and t.get("category") for t in bank)
     assert len({t["category"] for t in bank}) >= 6                                   # war, attack, crash, scam, policy, sensation, price-history
     assert topics.history_day(date(2026, 11, 14)) != topics.history_day(date(2026, 11, 15))
+    from engine import topicscore
+    ranked = topicscore.rank(bank, "sglearning")                                        # 7 Nov 2026: the YouTube-based rule orders the bank
     first = topics.next_money_history(CONTENT_DIR, set())
-    assert first["id"] == bank[0]["id"] and first["history"] is True
+    assert first["id"] == ranked[0][2]["id"] and first["history"] is True and first["topic_score"] == ranked[0][0] and first["topic_score_why"]
     assert topics.next_money_history(CONTENT_DIR, {t["id"] for t in bank}) is None     # every topic used: the news feed takes over
-    assert topics.next_money_history(CONTENT_DIR, {bank[0]["id"]})["id"] == bank[1]["id"]
+    assert topics.next_money_history(CONTENT_DIR, {ranked[0][2]["id"]})["id"] == ranked[1][2]["id"]
+
+
+def test_topic_scoring_rule_prefers_scares_with_money_and_famous_shock_questions():
+    from datetime import date
+    from engine import topicscore
+    quiet = date(2027, 3, 1)
+    crash, _ = topicscore.score("Gold silver crash: ₹33,710 sasta, abhi khareedein ya rukein?", "sglearning", quiet)
+    results, _ = topicscore.score("Reliance net profit rises 7% in Q2 results", "sglearning", quiet)
+    roundup, _ = topicscore.score("Top 10 badi khabrein aaj ki", "sglearning", quiet)
+    assert crash >= 9 and results < 0 and roundup < 0
+    vishnu, _ = topicscore.score("Bhagwan Vishnu ka sir kaise kata? Hayagriva ka rahasya", "arthvan", quiet)
+    obscure, _ = topicscore.score("Ek chhote gaon ki purani baoli", "arthvan", quiet)
+    assert vishnu >= 8 and obscure < 2
+    assert topicscore.score("Modi ke election ki baat", "sglearning", quiet)[0] == -10
+
+
+def test_a_festival_boosts_only_matching_stories_inside_its_window():
+    from datetime import date
+    from engine import topicscore
+    cal = [{"date": "2026-11-08", "name": "Diwali", "lead_days": 5, "after_days": 2, "terms": ["lakshmi", "ganesh"]}]
+    inside, why = topicscore.score("Lakshmi ji ki kahani: kaise aayi?", "arthvan", date(2026, 11, 6), cal)
+    outside, _ = topicscore.score("Lakshmi ji ki kahani: kaise aayi?", "arthvan", date(2026, 12, 6), cal)
+    other, _ = topicscore.score("Kedarnath ki deewar kaise bachi?", "arthvan", date(2026, 11, 6), cal)
+    assert inside == outside + 3 and any("Diwali" in w for w in why) and not any("timely" in w for w in topicscore.score("Kedarnath ki deewar kaise bachi?", "arthvan", date(2026, 11, 6), cal)[1])
