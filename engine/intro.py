@@ -26,14 +26,16 @@ from pathlib import Path
 from . import captions, pieces, secrets, slots
 from .config import CHANNELS, ROOT, VIDEO
 
-CLOSING = "Aaiye isko samajhte hain."
-CLOSINGS = ["Chaliye, poori baat samajhte hain.",                   # founder, 4 Nov 2026: the same closing on every Reel wears out; rotate
-            "Aaiye, iske peeche ki kahani dekhte hain.",            # the wording, keep the purpose (come, let us understand this)
-            "Chaliye, isko detail mein dekhte hain.",
-            "Aaiye, sach jaante hain.",
-            "Chaliye, is sawal ka jawab dhoondte hain.",
-            "Aaiye, poora khel samajhte hain.",
-            "Chaliye, shuru se dekhte hain.",
+CLOSING = "Ruko, asli khel baaki!"
+CLOSINGS = ["Ruko, asli khel abhi baaki hai!",                      # founder, 7 Nov 2026: the intro must sound like a news reporter breaking a story
+            "Suniye, twist yahan hai!",                              # (founder, 4 Nov: the same closing every time wears out, so rotate; the
+            "Poora sach abhi batata hoon!",                          # purpose stays: come with me, stay to the end)
+            "Ye baat koi nahi batata, suniye!",
+            "Chalo, ek ek karke khol deta hoon!",
+            "Ab suniye, ye chaunkane wali baat hai!",
+            "Ruko mat, ye dekhna zaroori hai!",
+            "Dekhiye, poora sach yahan hai!",
+            "Poora sach yahan!",
             CLOSING]
 
 
@@ -124,8 +126,9 @@ def bridge(piece, ask=_ask_claude) -> str:
     body = " ".join(sc.get("vo", "") for sc in script.get("scenes", [])[:5])
     prompt = (f"A Hindi/Hinglish money-or-history explainer for ordinary Indians opens with this question: \"{script.get('hook', '')}\"\n"
               f"The script that follows: {body[:900]}\n\nWrite ONE bridge line in Hinglish (Latin script) of at most {BRIDGE_MAX_WORDS} words that "
-              f"states the tension or surprise behind the question, in words a 15-year-old knows, no numbers that are not in the script, "
-              f"no English finance terms. It must flow naturally before the closing line \"{closing_for(piece)}\". Output only the line.")
+              f"states the stake or the surprise behind the question the way an excited TV news reporter would say it: punchy, urgent, in words a "
+              f"15-year-old knows, no numbers that are not in the script, no English finance terms, no 'aaj hum baat karenge'. It must flow "
+              f"naturally before the closing line \"{closing_for(piece)}\". Output only the line.")
     try:
         line = ask(prompt).strip().strip('"').strip("'").split("\n")[0].strip()
     except Exception as e:
@@ -237,20 +240,23 @@ OUTFITS = ["a mustard kurta", "a white shirt with sleeves rolled and a dark wais
            "a maroon sweater over a white collar", "a black polo", "a rust-orange linen shirt", "a charcoal kurta with a white pocket square",
            "a teal half-sleeve shirt", "a cream Nehru jacket over a white shirt", "a brown corduroy jacket over a beige tee",
            "a plain white kurta", "a dark green polo", "a navy blazer over a white tee", "a light grey sweater over a maroon collar"]
-POSES = ["seated at a wooden table, slightly angled, leaning toward camera, hands resting on the table",
-         "standing, turned a little to the side, weight on one foot, one hand in a pocket",
-         "walking slowly toward the camera, the camera tracking back at the same pace, one small hand gesture per line",
-         "leaning against a counter or railing, relaxed, arms loosely folded then opening on the question",
-         "seated on a stool, elbows on knees, leaning in, close and conversational"]
-CAMERAS = ["eye level, slow push-in from mid-shot to medium close-up over the 10 seconds",
-           "eye level, a slow lateral slide from left to right, the subject kept centred",
-           "a slow pull-back from close-up to mid-shot as he finishes the question, then steady",
-           "handheld feel, slight natural movement, medium close-up throughout",
-           "low angle, slightly below eye level, slow push-in"]
-BEATS = ["on the question, eyebrows lift and one open palm turns up; on the second line, a slow nod and a half-smile; on \"{closing}\", a small \"come with me\" gesture toward the viewer",
-         "on the question, a small head tilt and a raised finger; on the second line, both hands open, palms down, settling; on \"{closing}\", a nod and a step closer",
-         "on the question, a light shrug with open hands; on the second line, counting one point on a finger; on \"{closing}\", a hand inviting the viewer in",
-         "on the question, a direct look with a half-smile; on the second line, a slow nod, hand on chest; on \"{closing}\", a wave of the hand toward the lens"]
+POSES = ["walking briskly toward the camera like a TV news reporter on location, the camera tracking backward at the same pace, one hand pointing at the lens",
+         "striding along the street, turning sharply to the camera mid-step, leaning in, both hands moving",
+         "standing right in the middle of the scene, leaning aggressively toward the lens, eyebrows high, one hand slicing the air",
+         "pacing a few quick steps left and right in front of the camera, counting on his fingers, snapping back to the lens",
+         "walking and talking, then stopping dead and spinning to face the camera on the key word, a finger raised"]
+# Delivery (founder, 7 Nov 2026: "my personality looks dull; it should be energetic like a news reporter, walking, talking in excitement"):
+DELIVERY = ("Delivery: fast, excited and punchy like a TV news reporter breaking a story: pitch jumps on the key word, a half-second pause before the "
+            "number, a big smile on the reveal, wide expressive eyes, big confident gestures; never flat, never calm, never monotone")
+CAMERAS = ["handheld tracking shot that walks backward with him, slight natural shake, medium shot to medium close-up",
+           "a fast push-in from mid-shot to close-up on the first question, then handheld and steady",
+           "handheld, a quick whip-pan to him mid-step, then following him in a medium close-up",
+           "low angle, slightly below eye level, tracking him as he strides toward the lens",
+           "orbiting a quarter-circle around him while he talks, handheld, medium close-up"]
+BEATS = ["on the question, eyes wide and a sharp point at the lens; on the second line, lean in with a 'can you believe it' gesture and a grin; on \"{closing}\", a decisive wave that says follow me",
+         "on the question, a gasp-like lift of the eyebrows and both hands thrown open; on the second line, a quick finger count, rising excitement; on \"{closing}\", a fist-clench and a nod to the lens",
+         "on the question, a fast step toward the camera and a raised finger; on the second line, a conspiratorial lean and a half-whisper that turns loud; on \"{closing}\", a big grin and a hand sweeping toward the viewer",
+         "on the question, an incredulous head shake and open palms; on the second line, stabbing the air with one finger on each key word; on \"{closing}\", a wink-like nod and a hand beckoning the viewer in"]
 
 
 def _pick(piece, options: list, salt: int = 0):
@@ -270,11 +276,13 @@ def prompt_for(piece, p: dict) -> str:
     pose = _pick(piece, POSES, 2)
     camera = _pick(piece, CAMERAS, 3)
     beats = _pick(piece, BEATS, 4).format(closing=(p.get("closing") or CLOSING).rstrip("."))
-    return (f"{size}, exactly 10 seconds, natural and cinematic. Setting: {setting}. Lighting: soft key light on the face from one side, "
-            f"warm fill from the other, gentle rim light on the hair; no harsh shadows. SG [locked] {pose}, wearing {outfit}. Speaks from "
-            f"the first frame, mouth matched to the words, steady eye contact with the lens. Body language in three beats: {beats}. "
+    return (f"{size}, exactly 10 seconds, high-energy and cinematic, bright vivid colour. Setting: {setting}, colourful and lively, a shallow depth of field. "
+            f"Lighting: bright high-key light, warm and punchy, crisp on the face, a gentle rim light on the hair; no dull or flat grey look. "
+            f"SG [locked] {pose}, wearing {outfit}. Speaks from the first frame, mouth matched to the words, eyes locked on the lens. "
+            f"{DELIVERY}. Body language in three beats: {beats}. "
             f"Prop: {prop_for(piece)}. Camera: {camera}. {handle} watermark top right, white, bold, 80% opacity. No captions, no subtitles, "
-            f"no other on-screen text. No laptop, tablet, monitor, TV or glowing blue screen anywhere in the frame; the only object on the table is the prop. Export at {('1080x1920' if short else '1920x1080')}.")
+            f"no other on-screen text. No laptop, tablet, monitor, TV or glowing blue screen anywhere in the frame; the only object on the table is the prop. "
+            f"Export at {('1080x1920' if short else '1920x1080')}.")
 
 
 def earliest_slot_utc(piece) -> datetime:

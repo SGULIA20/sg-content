@@ -478,3 +478,21 @@ def test_outfits_never_match_across_channels_or_on_back_to_back_days_and_no_scre
     assert not [p for _k, p in intro.PROPS if "phone" in p]
     p = mk("sglearning", 14)
     assert "No laptop, tablet, monitor, TV or glowing blue screen" in intro.prompt_for(p, {"text": "x", "closing": "Chaliye."})
+
+
+def test_the_intro_asks_for_a_news_reporter_delivery_and_the_closings_are_punchy_and_short_enough():
+    """7 Nov 2026 (founder: 'my personality looks dull, it should be energetic like a news reporter, walking, talking in excitement')."""
+    from datetime import date
+    p = pieces.Piece(id="2026-11-14-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 11, 14))
+    prompt = intro.prompt_for(p, {"text": "x", "closing": "Suniye, twist yahan hai!"})
+    for must in ("TV news reporter", "Delivery:", "never monotone", "bright high-key light", "eyes locked on the lens"):
+        assert must in prompt, must
+    assert all("walking" in x or "striding" in x or "pacing" in x or "leaning" in x or "standing right in the middle" in x for x in intro.POSES)
+    assert len(intro.CLOSINGS) >= 8 and sum(len(c.split()) <= 4 for c in intro.CLOSINGS) >= 3 and all(c.endswith("!") for c in intro.CLOSINGS if c != intro.CLOSING)
+
+
+def test_the_writer_is_told_to_open_on_the_shock_and_to_keep_pictures_short():
+    from engine.config import CONTENT_DIR
+    system = (CONTENT_DIR / "prompts" / "writer-system.txt").read_text()
+    assert "RETENTION RULES" in system and "news reporter" in system and "every 12 seconds" in system
+    assert "22-32 words" in (CONTENT_DIR / "prompts" / "formula-sglearning.txt").read_text() and "22-32 words" in (CONTENT_DIR / "prompts" / "formula-arthvan.txt").read_text()
