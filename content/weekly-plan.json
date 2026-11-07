@@ -1,0 +1,471 @@
+{
+ "week_of": "2026-11-07",
+ "generated": "2026-11-07T06:56:19+00:00",
+ "entries": {
+  "2026-11-14-sglearning-short": {
+   "id": "mh-2001-ketan-parekh",
+   "category": "scam",
+   "title": "2001: K-10 shares aur ek bank ka girna",
+   "summary": "The Ketan Parekh episode: a handful of 'K-10' tech stocks pumped with bank and cooperative-bank money, the 2001 crash, and the cooperative bank that went down with it. Why a stock everyone is buying is the one to question.",
+   "hooks": [
+    "Jo share sab khareed rahe the, woh raaton raat kyun gira?",
+    "Ek bank depositors ka paisa share market mein kaise gaya?"
+   ],
+   "history": true,
+   "topic_score": 9,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
+    "+3 a scare or a crash",
+    "+1 a choice the viewer faces",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-15-sglearning-short": {
+   "id": "mh-2008-lehman-india",
+   "category": "crisis",
+   "title": "2008: Amreeka ka bank dooba, aapki SIP par kya beeta",
+   "summary": "The global financial crisis as seen from India: the Sensex from 21,000 to 8,000, FIIs pulling out, the IT and realty job scare, and how a SIP that kept running from 2008 to 2010 came out. Published index data and fund returns only.",
+   "hooks": [
+    "2008 mein Sensex aadha ho gaya, phir kitne mahine mein wapas aaya?",
+    "Jo SIP 2008 mein band nahi hui, uska kya hua?"
+   ],
+   "history": true,
+   "topic_score": 9,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
+    "+3 a scare or a crash",
+    "+1 a choice the viewer faces",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-16-sglearning-long": {
+   "id": "car-loan-vs-cash",
+   "title": "10 lakh ki gaadi: loan par lein ya cash, aur 5 saal mein asli kharcha kya",
+   "summary": "Total cost of car ownership: loan interest, depreciation, insurance, fuel, service; the loan-vs-cash decision with opportunity cost, why a used car can be the smarter maths for many families.",
+   "hooks": [
+    "Gaadi 5 saal mein kitni sasti ho jaati hai?",
+    "Car loan ka byaaj kitna dete hain?",
+    "Cash hai toh bhi loan lena sahi hai?"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-16-sglearning-short": {
+   "id": "mh-2014-sahara-saradha",
+   "category": "scam",
+   "title": "Sahara aur Saradha: chit fund ka paisa gaya kahan",
+   "summary": "Two collective-investment collapses: Sahara's bonds ordered refunded by the Supreme Court, Saradha in Bengal where lakhs of small savers lost deposits. How such schemes recruit, why the refund is still running, and the one check before handing cash to an agent.",
+   "hooks": [
+    "Agent ne daily 50 rupaye liye, paisa kab doobta hai?",
+    "Court ne refund ka order diya, phir bhi paisa kyun nahi mila?"
+   ],
+   "history": true,
+   "topic_score": 9,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
+    "+3 a scare or a crash",
+    "+1 a choice the viewer faces",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-17-sglearning-short": {
+   "id": "mh-2018-pnb-nirav",
+   "category": "scam",
+   "title": "PNB ka 13,000 crore: ek letter se bank kaise loota",
+   "summary": "The 2018 PNB fraud: letters of undertaking issued without entries in the core banking system, foreign branches lending against them, the jeweller who left the country. How a public bank's controls failed and what it meant for the bank's depositors and shareholders.",
+   "hooks": [
+    "Ek bank branch se 13,000 crore bahar kaise gaye?",
+    "LoU kya hota hai, aur usne bank ko kaise dubaya?"
+   ],
+   "history": true,
+   "topic_score": 9,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
+    "+3 a scare or a crash",
+    "+1 a choice the viewer faces",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-18-sglearning-short": {
+   "id": "mh-2010-coal-2g-markets",
+   "category": "scandal",
+   "title": "2G aur coal: license radd hua, kiska paisa dooba",
+   "summary": "The 2G spectrum and coal block cancellations by the Supreme Court (2012, 2014): what happened to the companies, their lenders and their shareholders. Keep to court orders, company filings and bank disclosures; no party politics.",
+   "hooks": [
+    "License radd hone par shareholder ka paisa kahan gaya?",
+    "Banks ko 2G se kitna nuksaan hua?"
+   ],
+   "history": true,
+   "topic_score": 8,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
+    "+3 a scare or a crash",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-19-sglearning-short": {
+   "id": "mh-kingfisher-mallya",
+   "category": "sensation",
+   "title": "Kingfisher: airline doobi, banks ka 9,000 crore",
+   "summary": "The Kingfisher Airlines collapse: the losses, the bank consortium, the brand pledged as collateral, employees unpaid, and the owner's exit. What a loan default by a big borrower does to a bank and its depositors.",
+   "hooks": [
+    "Airline doobi toh bank ka paisa kahan gaya?",
+    "Brand ko girvi rakh kar loan kaise milta hai?"
+   ],
+   "history": true,
+   "topic_score": 8,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
+    "+3 a scare or a crash",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-20-sglearning-short": {
+   "id": "mh-1992-harshad-mehta",
+   "category": "scam",
+   "title": "1992: ek broker ne poora market hila diya",
+   "summary": "The 1992 securities scam: bank receipts, money moved from banks into shares, the Sensex run-up and the crash when it broke; what changed after (SEBI's teeth, depositories, settlement). The lesson for anyone chasing a 'sure' stock today.",
+   "hooks": [
+    "1992 mein Sensex pehle kyun uda, phir kyun gira?",
+    "Bank ka paisa share market tak kaise pahuncha?"
+   ],
+   "history": true,
+   "topic_score": 7,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
+    "+1 a scare or a crash (in the summary)",
+    "+1 a choice the viewer faces",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-21-sglearning-short": {
+   "id": "mh-2023-2000-note",
+   "category": "policy",
+   "title": "2,000 ka note phir se bahar: is baar kya alag tha",
+   "summary": "May 2023: the 2,000 rupee note withdrawn from circulation, how it differed from 2016, how much came back, and the small-shop confusion. What 'legal tender' means and why RBI prints a note at all.",
+   "hooks": [
+    "2,000 ka note band hua, par 2016 jaisa kyun nahi laga?",
+    "Note wapas lene par RBI ko fayda ya nuksaan?"
+   ],
+   "history": true,
+   "topic_score": 7,
+   "topic_score_why": [
+    "+1 touches the viewer's own money (in the summary)",
+    "+3 a scare or a crash",
+    "+1 a choice the viewer faces",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-14-arthvan-short": {
+   "id": "hanuman-garhi-and-anjaneri",
+   "title_hi": "Hanuman ka janm sthan, kaun sa sach?",
+   "place": "Anjaneri / Hampi / Tirumala",
+   "hooks": [
+    "Hanuman ka janm kahan hua: 3 dawe, 1 sach?",
+    "Kishkindha Hampi hi hai?",
+    "Tirumala ka dawa kya hai?"
+   ],
+   "allowed_sources": [
+    "en.wikipedia.org",
+    "Valmiki Ramayana (Kishkindha Kanda)",
+    "TTD statement 2021"
+   ],
+   "notes": "Present all three claims as disputed; scripture for the birth story.",
+   "topic_score": 9,
+   "topic_score_why": [
+    "+4 one of the most-watched names",
+    "+3 a shock question or a mystery",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-15-arthvan-short": {
+   "id": "sinauli-chariots",
+   "title_hi": "Sinauli ke rath",
+   "place": "Baghpat, Uttar Pradesh",
+   "hooks": [
+    "4,000 saal purane rath India mein mile?",
+    "Mahabharat ke rath aise the?",
+    "Sinauli ke yodhaon ki kabrein"
+   ],
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org"
+   ],
+   "notes": "Chariot vs cart debate is disputed; the Mahabharata link is legend unless a source says otherwise.",
+   "topic_score": 6,
+   "topic_score_why": [
+    "+4 one of the most-watched names",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-16-arthvan-short": {
+   "id": "vijay-stambh",
+   "title_hi": "Chittor ka Vijay Stambh",
+   "place": "Chittorgarh, Rajasthan",
+   "hooks": [
+    "9 manzil, 157 seedhiyan, 1448 mein?",
+    "Rani Padmini ki asli kahani kya hai?",
+    "Jauhar ka itihaas, sabut ke saath"
+   ],
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "Padmavat (Jayasi) as literature"
+   ],
+   "notes": "Separate chronicle from epic poem; label; no communal framing of sieges.",
+   "topic_score": 5,
+   "topic_score_why": [
+    "-2 no famous name",
+    "+3 a shock question or a mystery",
+    "+2 an untold angle",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-17-arthvan-long": {
+   "id": "parashurama-kerala",
+   "title_hi": "Parashuram ne Kerala samundar se nikala?",
+   "place": "Konkan-Kerala coast",
+   "hooks": [
+    "Ek pharse se 600 km zameen?",
+    "Geology Kerala ke tat ke baare mein kya kehti hai?",
+    "Konkan se Kanyakumari tak ek hi kahani"
+   ],
+   "allowed_sources": [
+    "gsi.gov.in",
+    "en.wikipedia.org",
+    "Skanda Purana",
+    "Kerala Mahatmya"
+   ],
+   "notes": "Scripture/legend vs coastal geology (sea-level change); both told, both labelled.",
+   "topic_score": 4,
+   "topic_score_why": [
+    "+2 a famous name",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-17-arthvan-short": {
+   "id": "dholavira-water",
+   "title_hi": "Dholavira, 4,500 saal purana paani ka system",
+   "place": "Dholavira, Gujarat",
+   "hooks": [
+    "Registan mein 16 reservoir, 4,500 saal pehle?",
+    "Duniya ka sabse purana signboard?",
+    "Dholavira ko UNESCO ne kyon chuna?"
+   ],
+   "allowed_sources": [
+    "asi.nic.in",
+    "UNESCO whc.unesco.org",
+    "en.wikipedia.org"
+   ],
+   "notes": "Pure archaeology lane.",
+   "topic_score": 3,
+   "topic_score_why": [
+    "-2 no famous name",
+    "+3 a shock question or a mystery",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-18-arthvan-short": {
+   "id": "bhimbetka",
+   "title_hi": "Bhimbetka, 30,000 saal purani painting",
+   "place": "Raisen, Madhya Pradesh",
+   "hooks": [
+    "30,000 saal purani painting aaj bhi rangin?",
+    "Bhim yahan baithe the? Naam ka raaz",
+    "Duniya ki sabse purani jaanwar ki tasveer?"
+   ],
+   "allowed_sources": [
+    "asi.nic.in",
+    "UNESCO whc.unesco.org",
+    "en.wikipedia.org"
+   ],
+   "notes": "Archaeology lane; the Bhima name is legend.",
+   "topic_score": 3,
+   "topic_score_why": [
+    "-2 no famous name",
+    "+3 a shock question or a mystery",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-19-arthvan-short": {
+   "id": "bateshwar-temples",
+   "title_hi": "Bateshwar, 200 mandir jo dakuon ne bachaye",
+   "place": "Morena, Madhya Pradesh",
+   "hooks": [
+    "ASI ne dakuon ki madad se mandir kaise jode?",
+    "1,300 saal purane 200 mandir ek pahadi par?",
+    "Nirbhay Gujjar aur ASI ka samjhauta"
+   ],
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "news reports with dates (K. K. Muhammed)"
+   ],
+   "notes": "Documented modern story; good evidence lane.",
+   "topic_score": 3,
+   "topic_score_why": [
+    "-2 no famous name",
+    "+3 a shock question or a mystery",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-20-arthvan-short": {
+   "id": "keeladi",
+   "title_hi": "Keeladi, Tamil sabhyata 2,600 saal purani",
+   "place": "Keeladi, Tamil Nadu",
+   "hooks": [
+    "Vaigai ke kinare 2,600 saal purana sheher?",
+    "Keeladi ke bartan par likhe akshar",
+    "Keeladi ki khudai par vivaad kyon?"
+   ],
+   "allowed_sources": [
+    "tnarch.gov.in",
+    "asi.nic.in",
+    "en.wikipedia.org"
+   ],
+   "notes": "Dates and interpretations are disputed between agencies; label carefully, no regional politics.",
+   "topic_score": 3,
+   "topic_score_why": [
+    "-2 no famous name",
+    "+3 a shock question or a mystery",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-21-arthvan-short": {
+   "id": "shani-shingnapur",
+   "title_hi": "Shani Shingnapur, bina darwaze ka gaon",
+   "place": "Shani Shingnapur, Maharashtra",
+   "hooks": [
+    "Is gaon mein ghar ke darwaze kyon nahi?",
+    "Bank ki shakha bhi bina lock ke?",
+    "Chori hui to kya hua?"
+   ],
+   "allowed_sources": [
+    "en.wikipedia.org",
+    "maharashtratourism.gov.in",
+    "news reports with dates"
+   ],
+   "notes": "Legend lane plus documented modern facts (UCO Bank branch 2011); report thefts honestly.",
+   "topic_score": 2,
+   "topic_score_why": [
+    "-2 no famous name",
+    "+3 a shock question or a mystery",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-22-arthvan-long": {
+   "id": "adichanallur",
+   "title_hi": "Adichanallur ki 3,000 saal purani kabrein",
+   "place": "Thoothukudi, Tamil Nadu",
+   "hooks": [
+    "Mitti ke ghadon mein 3,000 saal purane insaan?",
+    "Angrez ne 1876 mein yahan se kya le gaya?",
+    "Adichanallur ka loha duniya ka sabse purana?"
+   ],
+   "allowed_sources": [
+    "asi.nic.in",
+    "tnarch.gov.in",
+    "en.wikipedia.org"
+   ],
+   "notes": "Archaeology lane; Berlin museum artefacts documented.",
+   "topic_score": 0,
+   "topic_score_why": [
+    "-2 no famous name",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-11-26-arthvan-long": {
+   "id": "poompuhar",
+   "title_hi": "Poompuhar, Tamil Atlantis",
+   "place": "Poompuhar, Tamil Nadu",
+   "hooks": [
+    "Sangam kaal ka sheher samundar mein?",
+    "NIO ko Poompuhar ke paas kya mila?",
+    "Kumari Kandam: kahani ya itihaas?"
+   ],
+   "allowed_sources": [
+    "nio.res.in",
+    "en.wikipedia.org",
+    "Silappatikaram (Sangam literature)"
+   ],
+   "notes": "Kumari Kandam is legend; the offshore structures are archaeology with dating disputes.",
+   "topic_score": -1,
+   "topic_score_why": [
+    "-2 no famous name",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  }
+ },
+ "notes": [],
+ "signals": {
+  "sglearning": [
+   "2,482,054 Diwali से पहले फूटेगा महंगाई का बम! Petrol-Diesel और चीनी के दाम बढ़ें",
+   "2,083,085 Gold-Silver Crash! सोना ₹33,710 और चांदी ₹1.85 लाख सस्ती, अभी खरीदें य",
+   "1,373,487 Banking बंद , UPI बंद ? Biggest Financial Market Crash Coming? | SAGAR",
+   "1,105,195 Hamare Zamane Ki Diwali | Mehfil-E-Fund by Tata Mutual Fund",
+   "1,080,896 Gold - ல எப்படி invest பண்ணலாம்?"
+  ],
+  "arthvan": [
+   "6,232,428 भगवान विष्णु का सिर कैसे कटा? 😱 | हयग्रीव अवतार का रहस्य #vishnu #maha",
+   "3,668,655 Ravana Kidnapped Lord Rama's Mother Kaushalya Before His Birth! | Unto",
+   "3,045,423 Karva Chauth Katha - करवा चौथ की कहानी - करवा चौथ व्रत कथा - Karwa Cha",
+   "2,780,926 Karwa Chauth Vrat Katha 2026 | करवा चौथ की कहानी | करवा चौथ व्रत कथा |",
+   "2,700,854 Karwa Chauth Vrat Katha 2026 | करवा चौथ की कहानी | करवा चौथ व्रत कथा |"
+  ]
+ }
+}
