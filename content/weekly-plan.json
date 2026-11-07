@@ -1,6 +1,6 @@
 {
  "week_of": "2026-11-07",
- "generated": "2026-11-07T06:56:19+00:00",
+ "generated": "2026-11-07T07:02:46+00:00",
  "entries": {
   "2026-11-14-sglearning-short": {
    "id": "mh-2001-ketan-parekh",
@@ -451,21 +451,24 @@
    "from_bank": true
   }
  },
- "notes": [],
+ "notes": [
+  "sglearning: Claude's reply had no usable topics (starts: '[\\n  {\\n    \"slot\": \"2026-11-14-sglearning-short\",\\n    \"title\": \"Bank doob gaya, toh kitna paisa *wapas* milega? 🏦\",\\n    \"summary\": \"Explains '); the banks fill the week",
+  "arthvan: Claude's reply had no usable topics (starts: '```json\\n[\\n  {\\n    \"slot\": \"2026-11-14-arthvan-short\",\\n    \"title\": \"Vishnu ji ka *sir* kaise kata, Hayagriva kaun? 😱\",\\n    \"summary\": \"Short'); the banks fill the week"
+ ],
  "signals": {
   "sglearning": [
-   "2,482,054 Diwali से पहले फूटेगा महंगाई का बम! Petrol-Diesel और चीनी के दाम बढ़ें",
-   "2,083,085 Gold-Silver Crash! सोना ₹33,710 और चांदी ₹1.85 लाख सस्ती, अभी खरीदें य",
-   "1,373,487 Banking बंद , UPI बंद ? Biggest Financial Market Crash Coming? | SAGAR",
-   "1,105,195 Hamare Zamane Ki Diwali | Mehfil-E-Fund by Tata Mutual Fund",
-   "1,080,896 Gold - ல எப்படி invest பண்ணலாம்?"
+   "2,482,063 Diwali से पहले फूटेगा महंगाई का बम! Petrol-Diesel और चीनी के दाम बढ़ें",
+   "2,083,163 Gold-Silver Crash! सोना ₹33,710 और चांदी ₹1.85 लाख सस्ती, अभी खरीदें य",
+   "1,529,126 Ek Diwali Unki Bhi | Mehfil-E-Fund by Tata Mutual Fund",
+   "1,373,497 Banking बंद , UPI बंद ? Biggest Financial Market Crash Coming? | SAGAR",
+   "1,229,706 PNB में ₹35 करोड़ का Fraud! Customers के Accounts से कैसे गायब हो गए प"
   ],
   "arthvan": [
-   "6,232,428 भगवान विष्णु का सिर कैसे कटा? 😱 | हयग्रीव अवतार का रहस्य #vishnu #maha",
-   "3,668,655 Ravana Kidnapped Lord Rama's Mother Kaushalya Before His Birth! | Unto",
+   "6,232,548 भगवान विष्णु का सिर कैसे कटा? 😱 | हयग्रीव अवतार का रहस्य #vishnu #maha",
+   "3,669,398 Ravana Kidnapped Lord Rama's Mother Kaushalya Before His Birth! | Unto",
    "3,045,423 Karva Chauth Katha - करवा चौथ की कहानी - करवा चौथ व्रत कथा - Karwa Cha",
-   "2,780,926 Karwa Chauth Vrat Katha 2026 | करवा चौथ की कहानी | करवा चौथ व्रत कथा |",
-   "2,700,854 Karwa Chauth Vrat Katha 2026 | करवा चौथ की कहानी | करवा चौथ व्रत कथा |"
+   "2,780,928 Karwa Chauth Vrat Katha 2026 | करवा चौथ की कहानी | करवा चौथ व्रत कथा |",
+   "2,700,855 Karwa Chauth Vrat Katha 2026 | करवा चौथ की कहानी | करवा चौथ व्रत कथा |"
   ]
  }
 }
