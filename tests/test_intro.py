@@ -509,3 +509,12 @@ def test_every_rotating_list_cycles_through_all_its_entries_day_by_day():
     for name, options in intro.SETTINGS.items():
         days = [pieces.Piece(id="x", channel=name, kind="short", publish_day=date(2026, 11, 7) + timedelta(days=i)) for i in range(len(options))]
         assert len({intro._pick(p, options, 0) for p in days}) == len(options), name
+
+
+def test_the_avatar_prompt_keeps_clear_of_words_a_video_tools_safety_filter_may_refuse():
+    """7 Nov 2026: Gemini refused to make the founder's clip ('I can't make videos of real people in situations like that'): the wording stays energetic
+    but free of aggressive or violent verbs."""
+    import re
+    text = " ".join(intro.POSES + intro.CAMERAS + intro.BEATS + [intro.DELIVERY]).lower()
+    for bad in ("aggressive", "stabbing", "slicing", "stopping dead", "fist", "conspirator", "attack", "kill", "weapon", "blood"):
+        assert not re.search(bad, text), bad

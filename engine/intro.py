@@ -242,9 +242,9 @@ OUTFITS = ["a mustard kurta", "a white shirt with sleeves rolled and a dark wais
            "a plain white kurta", "a dark green polo", "a navy blazer over a white tee", "a light grey sweater over a maroon collar"]
 POSES = ["walking briskly toward the camera like a TV news reporter on location, the camera tracking backward at the same pace, one hand pointing at the lens",
          "striding through the scene, turning sharply to the camera mid-step, leaning in, both hands moving",
-         "standing right in the middle of the scene, leaning aggressively toward the lens, eyebrows high, one hand slicing the air",
-         "pacing a few quick steps left and right in front of the camera, counting on his fingers, snapping back to the lens",
-         "walking and talking, then stopping dead and spinning to face the camera on the key word, a finger raised"]
+         "standing right in the middle of the scene, leaning eagerly toward the lens, eyebrows high, one hand sweeping through the air",
+         "pacing a few quick steps left and right in front of the camera, counting on his fingers, turning back to the lens",
+         "walking and talking, then stopping suddenly and turning to face the camera on the key word, a finger raised"]
 # Delivery (founder, 7 Nov 2026: "my personality looks dull; it should be energetic like a news reporter, walking, talking in excitement"):
 DELIVERY = ("Delivery: fast, excited and punchy like a TV news reporter breaking a story: pitch jumps on the key word, a half-second pause before the "
             "number, a big smile on the reveal, wide expressive eyes, big confident gestures; never flat, never calm, never monotone")
@@ -254,9 +254,9 @@ CAMERAS = ["handheld tracking shot that walks backward with him, slight natural 
            "low angle, slightly below eye level, tracking him as he strides toward the lens",
            "orbiting a quarter-circle around him while he talks, handheld, medium close-up"]
 BEATS = ["on the question, eyes wide and a sharp point at the lens; on the second line, lean in with a 'can you believe it' gesture and a grin; on \"{closing}\", a decisive wave that says follow me",
-         "on the question, a gasp-like lift of the eyebrows and both hands thrown open; on the second line, a quick finger count, rising excitement; on \"{closing}\", a fist-clench and a nod to the lens",
-         "on the question, a fast step toward the camera and a raised finger; on the second line, a conspiratorial lean and a half-whisper that turns loud; on \"{closing}\", a big grin and a hand sweeping toward the viewer",
-         "on the question, an incredulous head shake and open palms; on the second line, stabbing the air with one finger on each key word; on \"{closing}\", a wink-like nod and a hand beckoning the viewer in"]
+         "on the question, a surprised lift of the eyebrows and both hands thrown open; on the second line, a quick finger count, rising excitement; on \"{closing}\", a confident nod to the lens",
+         "on the question, a fast step toward the camera and a raised finger; on the second line, a secret-sharing lean and a half-whisper that turns loud; on \"{closing}\", a big grin and a hand sweeping toward the viewer",
+         "on the question, an incredulous head shake and open palms; on the second line, pointing one finger sharply on each key word; on \"{closing}\", a wink-like nod and a hand beckoning the viewer in"]
 
 
 ROTATION_STEP = 13     # prime and not a divisor of any list length here (4, 5, 6, 7, 10, 14): every list cycles through all its entries (7 Nov 2026: a step of 5 froze the lists of 5 and 10)
