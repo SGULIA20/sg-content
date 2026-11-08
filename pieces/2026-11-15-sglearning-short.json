@@ -1,0 +1,222 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 100000.0,
+   "quote": "Under Section 194A, the limit for a tax deduction on interest for senior citizens is being doubled from the present Rs 50,000 to Rs 1 lakh.",
+   "source_date": "2025-02-01",
+   "source_name": "Business Standard",
+   "source_url": "https://www.business-standard.com/budget/news/financial-planning-post-budget-2025-taking-into-account-new-changes-125020101149_1.html",
+   "text": "Under Section 194A amendments, the threshold for deducting tax at source on deposit interest for senior citizens was doubled to 100,000 INR per annum.",
+   "unit": "INR"
+  },
+  {
+   "label": "reported",
+   "number": 50000.0,
+   "quote": "Senior citizens can also claim a deduction of up to ₹50,000 on interest income under Section 80TTB (available under the old tax regime), potentially reducing their tax burden on FD earnings.",
+   "source_date": "2026-01-16",
+   "source_name": "Business Standard",
+   "source_url": "https://www.business-standard.com/finance/personal-finance/fd-rates-touch-8-at-small-finance-banks-as-returns-outpace-big-lenders-126011600465_1.html",
+   "text": "Senior citizens can claim a tax deduction of up to 50,000 INR on deposit interest earnings under Section 80TTB when opting for the old tax regime.",
+   "unit": "INR"
+  },
+  {
+   "label": "analyst-view",
+   "number": 200.0,
+   "quote": "Accordingly, senior citizens must remain vigilant in ensuring full and accurate disclosure of their interest earnings in their annual Income Tax Returns (ITR), failing which they may be exposed to punitive repercussions, including but not limited to the imposition of penalties under Section 271(1)(c), extending up to 200% of the tax...",
+   "source_date": "2025-02-11",
+   "source_name": "Business Standard",
+   "source_url": "https://www.business-standard.com/finance/personal-finance/senior-citizens-how-the-rs-1-lakh-tds-threshold-affects-your-fd-earnings-125021100523_1.html",
+   "text": "Failure to accurately report fixed deposit interest income in annual tax returns exposes taxpayers to penalties under Section 271(1)(c) reaching up to 200 percent of the tax payable.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-15-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-08",
+   "drafts": 3,
+   "research": 1
+  },
+  "cost": {
+   "inr": 0.0,
+   "usd": 0.111548,
+   "voice": 0
+  },
+  "drafts": 3
+ },
+ "kind": "short",
+ "publish_day": "2026-11-15",
+ "reasons": [
+  "try 1: numbers without a source: 10, 15, 15, 15, 15, 15, 15, 10, 15, 15, 10, 15, 15",
+  "try 2: length: 126 words, allowed 85-125; numbers without a source: 15, 15",
+  "try 3: numbers without a source: 15, 15"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Income zero hai, phir bhi bank FD ka byaaj kaat lega? 😳\nFD ka byaaj 50,000 rupaye paar, aur bank ne pehle hi TDS kaat liya.\nEk self-declaration form (seniors ke liye alag) yeh katauti pehle hi rok sakta hai, agar poori income par tax na banta ho.\nAapke ghar mein kisi ka TDS kata hai? Yeh investment advice nahi hai.\nYeh Mummy ko bhejo, jinki FD ka byaaj chupchaap katta hai.",
+    "hashtags": [
+     "#IncomeTax",
+     "#PersonalFinanceIndia",
+     "#MoneyTipsHindi",
+     "#HinglishFinance",
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Income zero, phir bhi bank ne FD ka byaaj kaat liya? FD byaaj 50,000 rupaye paar hote hi bank TDS kaat leta hai. Self-declaration form time par diya kya? Aapke ghar mein kiska TDS kata hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Income zero hai, phir bhi bank FD ka byaaj kaat lega? FD ka byaaj ek limit paar karte hi bank TDS kaat leta hai, chahe aap par tax banta hi na ho. Self-declaration form time par do, to yeh katauti ruk sakti hai. Us dost ko bhejo jiski biwi ya maa ki FD ka byaaj har saal katta hai.",
+    "tags": [
+     "FD TDS",
+     "Form 15G",
+     "Form 15H",
+     "FD interest tax",
+     "TDS refund",
+     "income tax",
+     "senior citizen FD",
+     "fixed deposit",
+     "Hinglish finance",
+     "Learning with SG"
+    ],
+    "title": "FD TDS: income zero, phir bhi kyun kata?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Yeh Mummy ko bhejo, jinki FD ka byaaj chupchaap katta hai.",
+  "hook": "Income zero hai, phir bhi bank FD ka byaaj kaat lega?",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Close-up of an open bank passbook on a wooden table, one entry circled hard in red pen, a pair of scissors lying across a small stack of rupee notes beside it, dramatic lamp light at night",
+     "type": "art"
+    },
+    "vo": "Income zero hai, phir bhi bank FD ka byaaj kaat lega?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE at the kitchen table in the afternoon, proudly holding a folder of FD receipts, a steel dabba of saved cash beside her, calm and satisfied",
+     "type": "art"
+    },
+    "vo": "Biwi ki FD, ghar ki bachat se bani. Byaaj 50,000 rupaye paar."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE walking out of a bank branch in the morning, waving off a stack of blank forms on the counter, relaxed and confident",
+     "type": "art"
+    },
+    "vo": "Salary hi nahi, to tax kaisa? Isliye bank mein koi form nahi bhara."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A large drawn rupee coin on a bank counter with a slice cut out of it like a cake, BANK UNCLE behind the counter pushing the slice into a government box, cool office light",
+     "type": "art"
+    },
+    "vo": "Lekin bank ne byaaj ka hissa pehle hi kaat liya. Yeh TDS hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE sitting on a sofa in the evening looking worried at a wall calendar with many pages flipping, a locked small cash box on the table in front of her",
+     "type": "art"
+    },
+    "vo": "Bank ko baaki income pata hi nahi. Paisa phasa, refund ke intezaar mein."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG in a striped shirt at a bank counter holding up a single form like a shield, PAPA in a kurta beside him nodding, bright daylight through the bank window",
+     "type": "art"
+    },
+    "vo": "Par twist yeh hai, ek chhota self-declaration form yeh katauti rokta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A row of three different bank counters seen from above, a hand dropping one form into each tray, spring morning light, calm organised mood",
+     "type": "art"
+    },
+    "vo": "Har saal ki shuruaat mein, har bank mein do. Shart: income par tax na banta ho. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY in a saree at home with a cup of chai, smiling with relief as she holds her FD receipts, warm evening light",
+     "type": "art"
+    },
+    "vo": "Yeh Mummy ko bhejo, jinki FD ka byaaj chupchaap katta hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "FD TDS",
+   "name_hi": "एफडी टीडीएस",
+   "scene": "A thick stack of rupee notes on a bank counter with a giant pair of scissors slicing a chunk away, the cut notes falling into a dark box.",
+   "words": [
+    "10% CUT",
+    "TRAP?"
+   ],
+   "words_hi": [
+    "10% कट",
+    "ट्रैप?"
+   ]
+  },
+  "title": "Income zero, phir bhi *TDS* kata? 😳"
+ },
+ "status": "rejected",
+ "timings": [],
+ "topic": {
+  "follows": "The 'Rs 1 crore FD, tax bachane ka trick' video drew 529k views. This is a tax angle on FD interest that has not been covered yet.",
+  "hooks": [
+   "FD ka byaaj ₹50,000 se upar gaya, to bank kitna kaat lega?",
+   "Bina income ke bhi TDS kat jaye, to kya karein?"
+  ],
+  "id": "wk-2026-11-15-sglearning-short",
+  "patch_tries": 2,
+  "summary": "Explains the TDS threshold on bank FD interest (₹50,000 a year for non-seniors, ₹1 lakh for seniors, per the Budget 2025 change), what Form 15G/15H does, and who can use it. Check the current limits on the Income Tax and bank sites.",
+  "target_minutes": null,
+  "title": "FD ke byaaj par TDS kab katta hai, aur kaise bachein?",
+  "topic_score": 6,
+  "topic_score_why": [
+   "+3 touches the viewer's own money",
+   "+1 a choice the viewer faces",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "weekly": true
+ },
+ "updated": "2026-11-08T19:04:16+00:00",
+ "writer": "claude"
+}
