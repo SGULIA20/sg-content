@@ -1,0 +1,68 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.98,Default,,0,0,0,,Jagannath mandir ka jhanda,
+Dialogue: 0,0:00:01.98,0:00:04.71,Default,,0,0,0,,roz 214 feet upar kaun badalta
+Dialogue: 0,0:00:04.71,0:00:04.96,Default,,0,0,0,,hai?
+Dialogue: 0,0:00:05.41,0:00:07.73,Default,,0,0,0,,Skanda Purana mein Puri ki mahima
+Dialogue: 0,0:00:07.73,0:00:08.31,Default,,0,0,0,,likhi hai.
+Dialogue: 0,0:00:08.31,0:00:08.89,Default,,0,0,0,,Kehta hai,
+Dialogue: 0,0:00:08.89,0:00:10.82,Default,,0,0,0,,mandir ka shikhar dekhna bhi punya
+Dialogue: 0,0:00:10.82,0:00:11.01,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:11.46,0:00:14.51,Default,,0,0,0,,Shikhar par lehrata hai Patitapabana Bana,
+Dialogue: 0,0:00:14.51,0:00:16.75,Default,,0,0,0,,yaani girte hue ko uthane wala
+Dialogue: 0,0:00:16.75,0:00:17.16,Default,,0,0,0,,jhanda.
+Dialogue: 0,0:00:17.16,0:00:18.38,Default,,0,0,0,,Par badalta kaun hai?
+Dialogue: 0,0:00:18.83,0:00:20.68,Default,,0,0,0,,Parampara kehti hai,
+Dialogue: 0,0:00:20.68,0:00:22.01,Default,,0,0,0,,Chunara sevak.
+Dialogue: 0,0:00:22.01,0:00:24.13,Default,,0,0,0,,Peedhiyon se yahi parivaar,
+Dialogue: 0,0:00:24.13,0:00:24.66,Default,,0,0,0,,har shaam,
+Dialogue: 0,0:00:24.66,0:00:25.45,Default,,0,0,0,,nange pair,
+Dialogue: 0,0:00:25.45,0:00:27.31,Default,,0,0,0,,bina rassi chadhta hai.
+Dialogue: 0,0:00:27.76,0:00:29.78,Default,,0,0,0,,Sabse upar Nila Chakra hai,
+Dialogue: 0,0:00:29.78,0:00:31.58,Default,,0,0,0,,kai dhaatuon se bana pahiya.
+Dialogue: 0,0:00:31.58,0:00:34.50,Default,,0,0,0,,Uske kinare Navagunjara bane hain,
+Dialogue: 0,0:00:34.50,0:00:36.52,Default,,0,0,0,,kai jaanwaron se bana ek jeev.
+Dialogue: 0,0:00:36.97,0:00:39.18,Default,,0,0,0,,Lekin mandir kitna purana hai?
+Dialogue: 0,0:00:39.18,0:00:40.73,Default,,0,0,0,,1974 mein ASI,
+Dialogue: 0,0:00:40.73,0:00:43.16,Default,,0,0,0,,yaani sarkar ki puratatva sanstha,
+Dialogue: 0,0:00:43.16,0:00:45.59,Default,,0,0,0,,ne shikhar ka plaster hatana shuru
+Dialogue: 0,0:00:45.59,0:00:45.81,Default,,0,0,0,,kiya.
+Dialogue: 0,0:00:46.26,0:00:49.40,Default,,0,0,0,,Neeche nikli baarik nakkashi aur shilalekh,
+Dialogue: 0,0:00:49.40,0:00:52.30,Default,,0,0,0,,yaani patthar par khude purane sandesh.
+Dialogue: 0,0:00:52.75,0:00:55.30,Default,,0,0,0,,Kendupatna ke taambe ke patre kehte
+Dialogue: 0,0:00:55.30,0:00:55.52,Default,,0,0,0,,hain,
+Dialogue: 0,0:00:55.52,0:00:58.92,Default,,0,0,0,,mandir Ganga raja Anantavarman Chodaganga ne
+Dialogue: 0,0:00:58.92,0:00:59.35,Default,,0,0,0,,banwaya.
+Dialogue: 0,0:00:59.80,0:01:00.84,Default,,0,0,0,,Par yahan twist hai.
+Dialogue: 0,0:01:00.84,0:01:03.34,Default,,0,0,0,,Mandir ki bahi Madala Panji kehti
+Dialogue: 0,0:01:03.34,0:01:03.55,Default,,0,0,0,,hai,
+Dialogue: 0,0:01:03.55,0:01:05.84,Default,,0,0,0,,Anangabhima Deva ne poora kiya.
+Dialogue: 0,0:01:05.84,0:01:07.72,Default,,0,0,0,,Itihaskaar aaj bhi bante hain.
+Dialogue: 0,0:01:08.17,0:01:08.98,Default,,0,0,0,,Aur oonchai?
+Dialogue: 0,0:01:08.98,0:01:11.67,Default,,0,0,0,,Sadak se naapo toh 214 feet.
+Dialogue: 0,0:01:11.67,0:01:13.83,Default,,0,0,0,,Andar ke aangan se naapo,
+Dialogue: 0,0:01:13.83,0:01:14.37,Default,,0,0,0,,toh kam.
+Dialogue: 0,0:01:14.82,0:01:15.53,Default,,0,0,0,,Kehte hain,
+Dialogue: 0,0:01:15.53,0:01:17.18,Default,,0,0,0,,jhanda ek din na badla,
+Dialogue: 0,0:01:17.18,0:01:19.31,Default,,0,0,0,,toh mandir barson band rahega.
+Dialogue: 0,0:01:19.31,0:01:21.20,Default,,0,0,0,,Yeh kahani kab shuru hui,
+Dialogue: 0,0:01:21.20,0:01:22.38,Default,,0,0,0,,koi record nahi.
+Dialogue: 0,0:01:22.83,0:01:25.02,Default,,0,0,0,,Chadhai ka hunar kaise seekha jaata
+Dialogue: 0,0:01:25.02,0:01:25.22,Default,,0,0,0,,hai,
+Dialogue: 0,0:01:25.22,0:01:26.81,Default,,0,0,0,,woh bhi kahin likha nahi.
+Dialogue: 0,0:01:26.81,0:01:28.20,Default,,0,0,0,,Par aaj bhi Puri mein shaam
+Dialogue: 0,0:01:28.20,0:01:29.79,Default,,0,0,0,,ko log sar utha kar dekhte
+Dialogue: 0,0:01:29.79,0:01:29.99,Default,,0,0,0,,hain.
+Dialogue: 0,0:01:30.44,0:01:31.51,Default,,0,0,0,,Nani ko bhejo,
+Dialogue: 0,0:01:31.51,0:01:34.08,Default,,0,0,0,,jo Jagannath ki kahaniyan sunati hain.

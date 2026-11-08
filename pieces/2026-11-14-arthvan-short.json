@@ -1,0 +1,376 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "hoist the flag of Jagannatha which is called as the Patita – Pavana – Bana.",
+   "source_date": "2020-04-09",
+   "source_name": "The Indian Saree Journal",
+   "source_url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri",
+   "text": "The sacred banner hoisted daily atop the temple's crowning wheel is called the Patitapabana Bana, which translates to the purifier of the fallen.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": 8.0,
+   "quote": "Carved on the outer ring are the figures of eight Nava-kunjaras, which is a unique motif in Orissa ikats.",
+   "source_date": "2026-01-01",
+   "source_name": "Wikipedia: Navagunjara",
+   "source_url": "https://en.wikipedia.org/wiki/Navagunjara",
+   "text": "The sacred wheel at the apex of the spire, known as the Nila Chakra, is forged from an eight-metal alloy and features eight carved figures of the mythical composite beast Navagunjara on its outer ring.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": 1975.0,
+   "quote": "This architectural marvel has been declared as a monument of national importance under the Ancient Monuments and Archaeological Sites and Remains Act, 1958 by the Government of India Notification No.2/34/ 72-M dated 3.2.1975",
+   "source_date": "1975-02-03",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "The Government of India declared the 12th-century Jagannath Temple in Puri a monument of national importance under the Ancient Monuments and Archaeological Sites and Remains Act in 1975.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1974.0,
+   "quote": "In 1974, the Archaeological Survey of India (ASI) began the decades-long process of de-plastering the structure. As workers chipped away the white exterior, they revealed intricate bas-reliefs and previously unrecorded epigraphs",
+   "source_date": "1991-01-01",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "The Archaeological Survey of India began removing protective lime plaster from the main temple spire in 1974, uncovering intricate 12th-century stone carvings and historic epigraphs beneath.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "The temple was built by the Ganga dynasty king Anantavarman Chodaganga in the 12th century CE, as suggested by the Kendupatna copper-plate inscription of his descendant Narasimhadeva II.",
+   "source_date": "1987-01-01",
+   "source_name": "Epigraphia Indica, Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Anantavarman_Chodaganga",
+   "text": "The Kendupatna copper-plate inscription issued by King Narasimhadeva II documents the historical construction of the Purushottama temple by Eastern Ganga ruler King Anantavarman Chodaganga Deva.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 54.8,
+   "quote": "Good quality khondalite stone block was procured from Tapang of undivided Puri district and after proper dressing and carving as per the original design, the new piece was brought inside the temple Bedha and lifted to a height of about 180 feet by heavy lift, iron ropes and jacks and placed in the original position on 28.2.1991.",
+   "source_date": "1991-02-28",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "During conservation operations in 1991, the Archaeological Survey of India lifted a replacement khondalite stone to a height of 54.8 metres to repair damaged masonry on the main deula.",
+   "unit": "metres"
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "According to a story in the temple chronicles, it was founded by Anangabhima-deva II: different chronicles variously mention the year of construction as 1196, 1197, 1205, 1216, or 1226. This suggests that the temple's construction was completed or that the temple was renovated during the reign of Anantavarman's son Anangabhima.",
+   "source_date": "1998-01-01",
+   "source_name": "Madala Panji / Epigraphia Indica",
+   "source_url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri",
+   "text": "Scholars debate whether the existing temple was commissioned and finished by King Anantavarman Chodaganga Deva as indicated by royal epigraphs, or completed by King Anangabhima Deva as claimed in the temple chronicle Madala Panji.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": 65.4,
+   "quote": "The temple (214 ft. 8 inches high from the road level) is a fine specimen of the 'Pancharatha' style of Odishan temple architecture.",
+   "source_date": "1986-01-01",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri",
+   "text": "The physical height of the main temple shikhara is disputed between traditional and administrative records citing 65.4 metres from street level and trigonometric measurements from the inner courtyard recording 58.5 metres.",
+   "unit": "metres"
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "The Skanda Purana's Utkal Khanda has a dedicated section to Puri called the 'Purushottama Kshetra Mahatmya', while the Narada Purana and Matsya Purana also refer to Purusottama Kshetra as a sacred location dedicated to Vishnu.",
+   "source_date": "1900-01-01",
+   "source_name": "Skanda Purana, Utkala Khanda",
+   "source_url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri",
+   "text": "The Purushottama Kshetra Mahatmya in the Utkala Khanda of the Skanda Purana details the sacred topography of Nilachala and the religious merit of witnessing the temple's summit.",
+   "unit": null
+  }
+ ],
+ "id": "2026-11-14-arthvan-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-07",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 21.0,
+   "usd": 0.083232,
+   "voice": 13
+  },
+  "drafts": 1,
+  "ig_story_id": "skipped: Reel over 60 s",
+  "intro_sent": "2026-11-08T07:29:30+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-14",
+ "reasons": [
+  "waiting for the founder's intro clip until 14 Nov 11:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Jagannath mandir ka jhanda, roz 214 feet upar kaun badalta hai? 🤯\nNange pair, bina rassi, har shaam ek sevak chadhta hai.\nASI ko shikhar ke neeche kya mila, aur itihaskaar kis baat par bante hain?\nAapne yeh chadhai kabhi apni aankhon se dekhi hai?\nNani ko bhejo, jo Jagannath ki kahaniyan sunati hain.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#IndianHistory",
+     "#Itihaas",
+     "#Rahasya",
+     "#AncientIndia",
+     "#Archaeology",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Jagannath mandir ka jhanda roz 214 feet upar kaun badalta hai? Parampara kehti hai Chunara sevak, bina rassi ke. Aur ek din na badla toh? Aapne kabhi yeh chadhai dekhi hai? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Jagannath mandir ka jhanda, roz 214 feet upar kaun badalta hai? Parampara kehti hai Chunara sevak, bina rassi ke, har shaam yeh chadhai karte hain. ASI ki khudai aur purane taambe ke patre mandir ke baare mein kya batate hain, aur itihaskaar kahan bante hain, sab sabut ke saath. Nani ko bhejo, jo Jagannath ki kahaniyan sunati hain.",
+    "tags": [
+     "Jagannath",
+     "Puri",
+     "Jagannath mandir",
+     "jhanda",
+     "Patitapabana",
+     "Nila Chakra",
+     "Chunara sevak",
+     "ASI",
+     "Madala Panji",
+     "Indian history",
+     "mythology",
+     "Sabut ke saath"
+    ],
+    "title": "Jagannath ka jhanda roz kaun badalta hai?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Nani ko bhejo, jo Jagannath ki kahaniyan sunati hain.",
+  "hook": "Jagannath mandir ka jhanda, roz 214 feet upar kaun badalta hai?",
+  "scenes": [
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Dramatic drawn panel: the towering curved stone spire of the Puri temple against a stormy orange-purple evening sky, a tiny barefoot figure clinging high on the spire, a red flag whipping wildly in the sea wind at the very top, crowds far below as small dots, tense and awe-filled mood, no text",
+     "type": "art"
+    },
+    "vo": "Jagannath mandir ka jhanda, roz 214 feet upar kaun badalta hai?"
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an old palm-leaf manuscript open on a wooden stand in lamplight, a grandmother pointing out of a window toward a distant temple spire glowing at dusk, warm devotional mood, no readable text",
+     "type": "art"
+    },
+    "vo": "Skanda Purana mein Puri ki mahima likhi hai. Kehta hai, mandir ka shikhar dekhna bhi punya hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn close view of a large triangular red-and-yellow flag billowing above a metal wheel on a stone temple top, sea clouds behind, a single questioning silhouette of a pilgrim looking up from far below, no text",
+     "type": "art"
+    },
+    "vo": "Shikhar par lehrata hai Patitapabana Bana, yaani girte hue ko uthane wala jhanda. Par badalta kaun hai?"
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a barefoot temple servitor in a simple white dhoti climbing the carved stone face of a curved spire with bare hands, a folded flag tied on his back, no rope or harness, evening light, seen from below and behind, no face detail, no text",
+     "type": "art"
+    },
+    "vo": "Parampara kehti hai, Chunara sevak. Peedhiyon se yahi parivaar, har shaam, nange pair, bina rassi chadhta hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a gleaming dark metal wheel atop a temple spire, its outer ring carved with small mythical composite beasts that mix bird, lion, elephant and snake, clouds swirling around, mysterious mood, no text",
+     "type": "art"
+    },
+    "vo": "Sabse upar Nila Chakra hai, kai dhaatuon se bana pahiya. Uske kinare Navagunjara bane hain, kai jaanwaron se bana ek jeev."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: workers on bamboo scaffolding chipping thick white lime plaster off a huge stone temple spire, dust flying, a supervisor with a notebook below, 1970s clothing, documentary mood, no text or logos",
+     "type": "art"
+    },
+    "vo": "Lekin mandir kitna purana hai? 1974 mein ASI, yaani sarkar ki puratatva sanstha, ne shikhar ka plaster hatana shuru kiya."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn close-up of freshly uncovered stone: intricate carvings of dancers and vines and a row of ancient carved script-like marks, a gloved hand brushing away white plaster dust, discovery mood, no readable text",
+     "type": "art"
+    },
+    "vo": "Neeche nikli baarik nakkashi aur shilalekh, yaani patthar par khude purane sandesh."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a set of ancient copper plates held together by a ring with a royal seal, lying on a museum table under a lamp, an archaeologist in shadow studying them with a magnifying glass, no readable text",
+     "type": "art"
+    },
+    "vo": "Kendupatna ke taambe ke patre kehte hain, mandir Ganga raja Anantavarman Chodaganga ne banwaya."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn split panel: left side a stack of palm-leaf chronicle bundles tied with cloth, right side copper plates, two scholars sitting on opposite sides of a table in debate, the temple spire faint in the background, no text",
+     "type": "art"
+    },
+    "vo": "Par yahan twist hai. Mandir ki bahi Madala Panji kehti hai, Anangabhima Deva ne poora kiya. Itihaskaar aaj bhi bante hain."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: two surveyors with old measuring instruments, one on the street outside the temple wall, one inside the stone courtyard, both sighting up at the same towering spire, dotted lines implied by their gaze, no text or numbers",
+     "type": "art"
+    },
+    "vo": "Aur oonchai? Sadak se naapo toh 214 feet. Andar ke aangan se naapo, toh kam."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a grandmother telling a story to wide-eyed children by an oil lamp, behind them in a dream-like haze huge temple doors closed and dusty, an empty flagpole on the spire, eerie mood, no text",
+     "type": "art"
+    },
+    "vo": "Kehte hain, jhanda ek din na badla, toh mandir barson band rahega. Yeh kahani kab shuru hui, koi record nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a busy Puri street at sunset, hundreds of pilgrims seen from behind looking up at the temple spire, a fresh flag fluttering at the top, sea breeze, joyful wonder, no text",
+     "type": "art"
+    },
+    "vo": "Chadhai ka hunar kaise seekha jaata hai, woh bhi kahin likha nahi. Par aaj bhi Puri mein shaam ko log sar utha kar dekhte hain."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an elderly grandmother on a veranda smiling, holding a phone at arm's length as her grandson leans in, a small painting of the Puri temple spire on the wall behind, warm evening light, no text",
+     "type": "art"
+    },
+    "vo": "Nani ko bhejo, jo Jagannath ki kahaniyan sunati hain."
+   }
+  ],
+  "thumbnail": {
+   "name": "JAGANNATH",
+   "name_hi": "जगन्नाथ",
+   "scene": "A lone barefoot climber silhouetted high on the curved stone spire of the Puri temple against a stormy orange sunset sky, a red flag whipping in the wind above a dark metal wheel at the top, the crowd tiny far below.",
+   "words": [
+    "214 FEET",
+    "KHATRA"
+   ],
+   "words_hi": [
+    "214 फीट",
+    "खतरा"
+   ]
+  },
+  "title": "Jagannath ka *jhanda*, roz kaun chadhta hai? 🤯"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  5.41,
+  11.46,
+  18.83,
+  27.76,
+  36.97,
+  46.26,
+  52.75,
+  59.8,
+  68.17,
+  74.82,
+  82.83,
+  90.44
+ ],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "en.wikipedia.org",
+   "nio.res.in",
+   "britannica.com",
+   "the scripture or text named in the story"
+  ],
+  "follows": "Jagannath temple flag and shikhar shorts drew 740k to 1.1M views. The untold angle is the sevak who climbs, not the viral wind claim.",
+  "hooks": [
+   "Roz shaam 214 feet ki chadhai bina suraksha ke, yeh kaun karta hai?",
+   "Agar yeh jhanda ek din na badla gaya, toh kya kehti hai parampara?"
+  ],
+  "id": "wk-2026-11-14-arthvan-short",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "Poora sach abhi batata hoon!",
+   "prompt": "9:16 vertical, 1080x1920, exactly 10 seconds, high-energy and cinematic, bright vivid colour. Setting: the courtyard of the Jagannath temple, carved stone and pillars behind, early morning light, colourful and lively, a shallow depth of field. Lighting: bright high-key light, warm and punchy, crisp on the face, a gentle rim light on the hair; no dull or flat grey look. SG [locked] striding through the scene, turning sharply to the camera mid-step, leaning in, both hands moving, wearing an olive green Nehru jacket over a cream shirt. Speaks from the first frame, mouth matched to the words, friendly eye contact with the lens. Delivery: bubbling over with excitement like a TV news reporter who has just found an amazing story and cannot wait to share it: a warm, genuine smile and bright wide eyes, delighted and amazed, never angry; pitch jumps on the key word, a half-second pause before the number, a big grin on the reveal, open inviting gestures; no scowl, no frown, no glaring, no shouting at the viewer; never flat, never calm, never monotone. Body language in three beats: on the question, eyes wide and delighted, one open palm toward the lens; on the second line, lean in with a 'can you believe it' gesture and a grin; on \"Poora sach abhi batata hoon!\", a decisive wave that says follow me. Prop: a printed photograph or old map of the place, held up to the camera for a moment, held low at first and lifted toward the lens on the second line, then lowered. Camera: handheld, a quick whip-pan to him mid-step, then following him in a medium close-up. @SGMythWorld watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No laptop, tablet, monitor, TV or glowing blue screen anywhere in the frame; the only object in his hands or near him is the prop. Export at 1080x1920.",
+   "question": "Jagannath mandir ka jhanda, roz 214 feet upar kaun badalta hai?",
+   "text": "Jagannath mandir ka jhanda, roz 214 feet upar kaun badalta hai? Poora sach abhi batata hoon!",
+   "words": 16
+  },
+  "layers": false,
+  "summary": "Explains the daily flag-change ritual at the Puri Jagannath temple: who the sevaks are, how the climb works, and the roughly 214 ft height. Check the height figure, the ritual's documented history, and which claims are tradition rather than record.",
+  "target_minutes": null,
+  "title": "Jagannath mandir ka jhanda roz kaun badalta hai?",
+  "topic_score": 6,
+  "topic_score_why": [
+   "+4 one of the most-watched names",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "voice": "voice_g8azc8xcwhlu",
+  "weekly": true
+ },
+ "updated": "2026-11-08T07:29:33+00:00",
+ "writer": "claude"
+}
