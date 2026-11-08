@@ -106,7 +106,15 @@
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
-  "intro_sent": "2026-11-08T07:29:30+00:00"
+  "intro": {
+   "clip": "2026-11-14-arthvan-short.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-08T08:02:04+00:00",
+   "seconds": 8.7
+  },
+  "intro_checked": "0e897650bc8cb133",
+  "intro_sent": "2026-11-08T07:29:30+00:00",
+  "yt_id": "aO_SBrTebw8"
  },
  "kind": "short",
  "publish_day": "2026-11-14",
@@ -319,7 +327,7 @@
   },
   "title": "Jagannath ka *jhanda*, roz kaun chadhta hai? 🤯"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   5.41,
@@ -359,6 +367,7 @@
    "words": 16
   },
   "layers": false,
+  "look": "indian-comic",
   "summary": "Explains the daily flag-change ritual at the Puri Jagannath temple: who the sevaks are, how the climb works, and the roughly 214 ft height. Check the height figure, the ritual's documented history, and which claims are tradition rather than record.",
   "target_minutes": null,
   "title": "Jagannath mandir ka jhanda roz kaun badalta hai?",
@@ -371,6 +380,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-08T07:29:33+00:00",
+ "updated": "2026-11-08T08:02:09+00:00",
  "writer": "claude"
 }
