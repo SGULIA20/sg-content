@@ -1,0 +1,833 @@
+{
+ "channel": "sglearning",
+ "facts": [],
+ "id": "2026-11-16-sglearning-long",
+ "ids": {
+  "budget": {
+   "day": "2026-11-08",
+   "drafts": 1,
+   "research": 3
+  },
+  "cost": {
+   "inr": 0.0,
+   "usd": 0.251378,
+   "voice": 0
+  },
+  "drafts": 1
+ },
+ "kind": "long",
+ "publish_day": "2026-11-16",
+ "reasons": [
+  "try 1: advice: guarantee",
+  "try 2: no sourced facts survived the checks",
+  "try 3: no sourced facts survived the checks"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Bank doob jaye, to aapki FD mein se kitna wapas milega? 🏦\nDICGC ka insurance har bank mein sirf 5 lakh tak, mool aur byaaj mila kar.\nUsse upar ka paisa saalon tak atak sakta hai. Aapka saara paisa ek bank mein hai ya baanta hua?\nYeh investment advice nahi hai.\nYeh Reel Papa ko bhejo, jinki saari FD ek hi bank mein hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#RBI",
+     "#PersonalFinanceIndia",
+     "#MoneyTipsHindi",
+     "#HinglishFinance",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Bank doob gaya, to aapki FD mein se kitna milega? Insurance sirf 5 lakh tak, har bank mein, byaaj mila kar. Usse upar ka paisa lambi line mein. Aapka saara paisa ek hi bank mein hai, ya baant rakha hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Bank doobe to kya hoga",
+     "00:00 Kitna paisa milega",
+     "00:00 Ek depositor kaun",
+     "00:00 Paisa kab milega",
+     "00:00 Woh galti aur bachav"
+    ],
+    "description": "Bank doob gaya, to aapki FD mein se kitna wapas milega? DICGC ka insurance har depositor ko har bank mein 5 lakh tak deta hai, mool aur byaaj mila kar, aur kanoon ke hisaab se 90 din ke andar. Usse upar ka paisa lambi line mein atak sakta hai, isliye jaaniye depositor kaise ginta hai, joint account aur merger ka kya asar hai, aur paisa kaise baantein. Yeh investment advice nahi hai. Yeh video Papa ko bhejo, jinki saari FD ek hi bank mein hai.",
+    "tags": [
+     "bank deposit insurance",
+     "DICGC",
+     "5 lakh insurance",
+     "bank doob jaye to",
+     "FD safe hai",
+     "bank failure India",
+     "RBI",
+     "joint account",
+     "fixed deposit",
+     "personal finance hindi",
+     "Learning with SG"
+    ],
+    "title": "Bank doobe to kitna milega? 5 lakh ka sach"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "₹5 lakh",
+    "line": "Har depositor, har bank",
+    "source": "RBI"
+   },
+   {
+    "big_number": "90 din",
+    "line": "Insurance ka paisa itne mein",
+    "source": "PRS Legislative Research"
+   },
+   {
+    "big_number": "97.4%",
+    "line": "Account poori tarah cover",
+    "source": "DICGC"
+   },
+   {
+    "big_number": "₹7.86 lakh",
+    "line": "Baaki paisa lambi line mein",
+    "source": "Value Research"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Aapka saara paisa ek hi bank mein rakha hai, ya alag alag banks mein baanta hai?",
+  "hook": "Bank doob gaya, to aapki 12.86 lakh ki FD mein se kitna milega?",
+  "scenes": [
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "Bank doobe to kya hoga",
+    "visual": {
+     "card": null,
+     "prompt": "A thick stack of fixed deposit receipts and a bank passbook on a wooden table, a bank building silhouette looming dark behind them, dramatic evening light, ominous mood",
+     "type": "art"
+    },
+    "vo": "Bank doob gaya, to aapki 12.86 lakh ki FD mein se kitna milega? Poora? Aadha? Ya kuch nahi? Jawab sunkar aap apni passbook dobara kholenge."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A bank branch with its metal shutter half down and a paper notice pasted on it, a worried queue of ordinary people outside on a busy Indian street, morning light",
+     "type": "art"
+    },
+    "vo": "Socho, ek subah bank ke shutter par notice chipka hai. Andar aapka paisa hai, par nikal nahi sakte. Line mein khade log poochh rahe hain, ab kya?"
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA in a kurta standing in the queue outside the closed bank, clutching FD receipts to his chest, anxious expression, people around him, morning",
+     "type": "art"
+    },
+    "vo": "Us line mein Papa bhi khade hain. Kurta pehne, haath mein FD ki raseedein. Saari zindagi ki bachat, 12.86 lakh, sab isi ek bank mein rakhi thi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Flashback panel: PAPA at home on a sofa, confidently waving FD receipts while BEHEN listens sceptically, warm living room, evening lamp light",
+     "type": "art"
+    },
+    "vo": "Papa hamesha kehte the, bank hai beta, safe hai. Aur sach mein, bank ka paisa kaafi had tak surakshit hota hai. Lekin poora nahi. Yahin twist hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A giant umbrella shielding only a small pile of rupee notes while a much larger pile beside it sits out in the rain, stylised illustration, grey sky",
+     "type": "art"
+    },
+    "vo": "Kanoon ke hisaab se, har depositor ko har bank mein sirf 5 lakh tak ka insurance milta hai. Usse upar ka paisa? Woh ek lambi line mein chala jata hai."
+   },
+   {
+    "facts_used": [
+     6,
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA sitting on the steps outside the closed bank, staring at his FD receipts, a split shadow falling across the papers, late morning, heavy mood",
+     "type": "art"
+    },
+    "vo": "Matlab Papa ke 12.86 lakh mein se, insurance sirf 5 lakh ka. Baaki ka kya hoga, kab milega, milega bhi ya nahi, us din koi nahi jaanta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A long crowd of depositors outside a cooperative bank building in a Mumbai street, some holding passbooks up, police barricade nearby, overcast day, no text",
+     "type": "art"
+    },
+    "vo": "Aur yeh sirf Papa ki kahani nahi hai. Mumbai ke ek bade cooperative bank par jab RBI ne paabandi lagayi thi, bahut saare log aise hi line mein khade the."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG, early forties, beard, striped shirt, standing at a chai stall table with three large question-mark shaped paper cutouts beside him, friendly but serious, evening",
+     "type": "art"
+    },
+    "vo": "To aaj in sawaalon ka seedha jawab. Bank doobe to kitna paisa wapas aata hai? Depositor ginta kaise hai? Aur paisa kitne din mein haath mein aata hai?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A middle class Indian family's steel almirah open, with every passbook and FD folder stuffed into one single bag, soft indoor light, a hint of risk",
+     "type": "art"
+    },
+    "vo": "Aur aakhir mein, woh galti jo lagbhag har middle class family karti hai, aur usse bachne ka simple tareeka. To chaliye, pehle sawaal se shuru karte hain."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Kitna paisa milega",
+    "visual": {
+     "card": null,
+     "prompt": "SG as narrator at a chapter turn, standing beside an empty bank vault with its door wide open, gesturing at the bare shelves, dramatic overhead light",
+     "type": "art"
+    },
+    "vo": "Pehla sawaal, bank doobe to paisa deta kaun hai? Bank to khud doob chuka hai. Uske paas dene ko kuch bacha nahi. Phir yeh 5 lakh aata kahan se hai?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A grand official building with columns and a protective shield symbol above the entrance, stylised, clear daylight, no text or logos",
+     "type": "art"
+    },
+    "vo": "Jawab hai DICGC. Naam bhaari hai, kaam simple. Yeh RBI ki ek company hai, jo aapke bank deposit ka insurance karti hai. Bilkul gaadi ke insurance jaisa."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Split panel: LEFT a dented car on a roadside with an insurance agent handing over a cheque; RIGHT a shuttered bank with a similar figure handing money to a depositor",
+     "type": "art"
+    },
+    "vo": "Gaadi ka accident hua, to insurance company paisa deti hai. Bank ka accident hua, yaani bank band hua, to DICGC aapko paisa deti hai. Bas iski ek limit hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A neat bundle of rupee notes inside a glass protective box on a bank counter, BANK UNCLE behind the counter pointing at it, calm office light",
+     "type": "art"
+    },
+    "vo": "Woh limit hai 5 lakh rupaye, har depositor, har bank. RBI ki website par saaf likha hai, yeh 5 lakh mool paisa aur byaaj, dono mila kar hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A tall glass jar of coins with a painted line near the top, coins spilling over the line onto the table and rolling away, simple kitchen table, daylight",
+     "type": "art"
+    },
+    "vo": "Mool paisa yaani jo aapne jama kiya. Byaaj yaani bank ne jo upar se joda. Dono ka total limit se upar gaya, to upar wala hissa insurance mein nahi aata."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY in a saree at the dining table with chai, looking through a file of renewed FD certificates, slightly worried, afternoon window light",
+     "type": "art"
+    },
+    "vo": "Example lo. Mummy ne FD mein paisa daala, saalon tak byaaj judta gaya. Ab total 5 lakh se zyada ho gaya. Woh extra byaaj bhi line mein khada hoga."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Several different bank account folders and a passbook being swept together into a single box by a pair of hands, top-down view on a wooden desk",
+     "type": "art"
+    },
+    "vo": "Aur yeh limit sab accounts ka total hai. Savings account, FD, current account, RD, sab us bank mein jod kar, ek hi limit ke andar aate hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in a hoodie on a bed, confidently counting on his fingers, while BEHEN in office wear leans in the doorway shaking her head, evening room light",
+     "type": "art"
+    },
+    "vo": "Bhai sochta hai, mera savings alag, FD alag, to har account ka alag insurance milega. Nahi bhai. Bank wahi, aap wahi, to limit bhi wahi rahegi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A bank officer quietly sliding a small envelope across a desk to an official, while customers in the background bank normally, unaware, bright branch interior",
+     "type": "art"
+    },
+    "vo": "Ab ek mazedaar baat. Is insurance ka premium, yaani fees, aap nahi bharte. Poora kharcha bank uthata hai. Aapko pata bhi nahi chalta ki aap insured ho."
+   },
+   {
+    "facts_used": [
+     5,
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A single hundred-rupee note next to a tiny pile of small coins on a counter, viewed close up, warm light, scale contrast",
+     "type": "art"
+    },
+    "vo": "Kitna? RBI ke hisaab se, bank har 100 rupaye ke deposit par saal ke sirf 12 paise deta hai. Itne chhote premium mein, aapke 5 lakh tak insured."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A bank desk with brochures for mutual funds and insurance spread out, a salesman smiling, a customer holding a pen hesitantly, branch interior, midday",
+     "type": "art"
+    },
+    "vo": "Lekin dhyan do, bank mein rakhi har cheez insured nahi hoti. Bank ki branch se liya mutual fund, insurance policy, ya share, inka DICGC se koi bima nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A glossy roadside billboard style poster of a finance company office with an unnamed young man staring at it, next to an ordinary bank branch, afternoon street",
+     "type": "art"
+    },
+    "vo": "Aur ek badi galti. Bahut log finance company ki FD ko bank FD samajh lete hain. Byaaj zyada dikhta hai. Par aisi company ki FD par DICGC ka cover nahi milta."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A row of identical bank passbooks lined up, one spotlit, with a magnifying glass hovering over the name area left blank, dramatic desk lamp light",
+     "type": "art"
+    },
+    "vo": "To pehla jawab mil gaya, bank doobe to har bank mein 5 lakh tak. Par asli sawaal ab shuru hota hai. Yeh 'har depositor' aakhir hai kaun?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Ek depositor kaun",
+    "visual": {
+     "card": null,
+     "prompt": "SG at a chapter turn sitting at a dining table with BEHEN and PAPA, BEHEN asking a question with open palms, PAPA thinking, evening family dinner light",
+     "type": "art"
+    },
+    "vo": "Behen ne ek din poocha, main aur Papa ek hi bank mein hain, to hum dono ko milakar 5 lakh, ya alag alag? Yahin log sabse zyada confuse hote hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "An old thick rule book open on a desk with a simple pair of reading glasses resting on it, soft lamp light, quiet study room",
+     "type": "art"
+    },
+    "vo": "RBI ka rule kehta hai, cover milta hai same right aur same capacity ke hisaab se. Sunne mein kanooni lagta hai. Matlab simple hai, aap kis haisiyat se paisa rakhte ho."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN and PAPA each holding their own separate passbook, each under a separate small umbrella, standing side by side in a bright bank lobby",
+     "type": "art"
+    },
+    "vo": "Behen ka apna account, Behen ki haisiyat se. Papa ka apna account, Papa ki haisiyat se. Dono alag log hain, to dono ko apna apna 5 lakh tak cover."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A city map illustration with two branches of the same bank marked by identical buildings in different neighbourhoods, PAPA walking between them, daytime",
+     "type": "art"
+    },
+    "vo": "Ab twist. Papa ki FD usi bank ki alag alag branches mein hai. Ek ghar ke paas, ek purane office ke paas. Papa sochte hain, branch alag, to cover bhi alag."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Two streams of rupee notes flowing from two different branch buildings into a single funnel labelled only by a shield shape, stylised, clean background",
+     "type": "art"
+    },
+    "vo": "Galat. Branch alag ho, shehar alag ho, bank wahi hai to sab jod diya jata hai. Papa ka us bank mein poora total, ek hi 5 lakh ki limit mein."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA and MUMMY signing a joint account form together at a bank counter, BANK UNCLE smiling behind the counter, bright branch interior, midday",
+     "type": "art"
+    },
+    "vo": "Par joint account ki kahani alag hai. Papa aur Mummy ka joint account, Papa ke akele account se alag haisiyat maana jata hai. Uska cover alag ginta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A parent holding the hand of BETI at a bank counter opening a minor's account, in the background a small shop with partners counting stock, warm light",
+     "type": "art"
+    },
+    "vo": "Isi tarah, agar aap kisi bachche ke guardian bankar account chalate ho, ya kisi business mein partner ho, to woh bhi alag haisiyat hai. Uska cover bhi alag."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Two bank buildings drawn as if sliding together into one larger building, dust and motion lines, dramatic sky, no logos or text",
+     "type": "art"
+    },
+    "vo": "Lekin yahan ek chhupa khatra hai, jo kam log jaante hain. Bank merger. Aaj kal chhote bank bade banks mein mil rahe hain. Aur aapka hisaab badal sakta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Two small umbrellas over two piles of money merging into one single small umbrella, leaving half the money exposed to rain, stylised illustration",
+     "type": "art"
+    },
+    "vo": "Socho, aapne soch samajh kar paisa alag alag banks mein baanta. Phir woh bank aapas mein mil gaye. Ab woh ek bank hai, aur aapki limit bhi ek hi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A newspaper on a breakfast table with a picture of two buildings joining, a hand holding a pen totalling figures on a notepad beside it, morning light",
+     "type": "art"
+    },
+    "vo": "Isliye jab bhi khabar aaye ki aapka bank kisi aur mein mil raha hai, ek baar apna total zaroor check karna. Kahin milkar 5 lakh se upar to nahi?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A huge crowd of ordinary people seen from above, each holding a small passbook, a few standing apart holding thick files, bright day",
+     "type": "art"
+    },
+    "vo": "Ab aap soch rahe honge, yeh sab to badi rakam walon ki problem hai. Aur kuch had tak yeh sahi bhi hai. Par zara DICGC ka data dekho."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A giant protective dome over an endless sea of small passbooks, with only a thin sliver at the edge left outside the dome, stylised, clear sky",
+     "type": "art"
+    },
+    "vo": "DICGC ke hisaab se, India ke 97.4 percent bank account poori tarah cover hain. Matlab zyada tar logon ke account mein limit se kam paisa hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A retired man in a kurta sitting alone on a park bench at sunset with a file of FD receipts on his lap, a sold house sign-less gate in the background",
+     "type": "art"
+    },
+    "vo": "Par ulta socho. Jo baaki account hain, woh kiske hain? Retired Papa, jinki saari bachat FD mein hai. Ghar bechkar paisa bank mein rakhne wali family."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A heavy iron trunk full of savings placed on a thin cracking wooden plank over a gap, ominous low light",
+     "type": "art"
+    },
+    "vo": "Yaani khatra wahin hai, jahan sabse zyada bachat hai. Aur wahi log aksar sabse zyada bharosa karte hain ki bank hai, kuch nahi hoga."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A big padlock hanging on a bank's glass door, a wall clock visible inside the dark branch, dusk light reflecting on the glass",
+     "type": "art"
+    },
+    "vo": "To ab pata chal gaya, kitna milega aur kisko milega. Par jab bank par taala lag jaye, to sabse bada dar hota hai. Paisa milega kab?"
+   },
+   {
+    "facts_used": [],
+    "label": "Paisa kab milega",
+    "visual": {
+     "card": null,
+     "prompt": "SG at a chapter turn standing beside towering stacks of dusty court files in an old government office, ceiling fan, yellowed light",
+     "type": "art"
+    },
+    "vo": "Pehle ka haal suniye. Bank doobta tha, to paisa milne mein saalon lag jaate the. Pehle bank band hota, phir lamba kanooni process, phir kahin jaakar payment."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A wedding tent half set up but abandoned, chairs stacked, a family standing worried in front of it, cloudy evening",
+     "type": "art"
+    },
+    "vo": "Us beech log apne hi paise ke liye bhatakte the. Shaadi ruk jaati, ilaaj ruk jaata. Paisa tha, par haath mein nahi tha. Isliye kanoon badla gaya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A large stopwatch starting to tick placed in front of a bank building with a rope barrier across its door, crisp morning light",
+     "type": "art"
+    },
+    "vo": "Naye kanoon mein, bank ka poora band hona zaroori nahi. RBI ne bank par paabandi lagayi, jise moratorium kehte hain, to insurance ki ghadi chalu ho jaati hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "An ATM inside a bank lobby with a cloth draped over it and customers turned away at the counter, BANK UNCLE looking apologetic, afternoon",
+     "type": "art"
+    },
+    "vo": "Moratorium yaani RBI ka order, ki bank ab aam tarah se kaam nahi karega, aur aap apna paisa normal tarah se nikal nahi sakte. Wahin se countdown shuru."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A wall calendar with pages flying off quickly, a short stack of pages remaining, a depositor family watching hopefully, bright room",
+     "type": "art"
+    },
+    "vo": "PRS ke hisaab se, kanoon mein likha hai ki insurance ka paisa milne ka poora time 90 din se zyada nahi hoga. Saalon ki jagah, ab kuch mahine."
+   },
+   {
+    "facts_used": [
+     1,
+     2
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Bank staff working late at long tables compiling thick ledgers and registers of names, piles of files, night office lights",
+     "type": "art"
+    },
+    "vo": "Yeh 90 din bante kaise hain? Pehle, musibat wale bank ko 45 din ke andar saare depositors ki list banakar DICGC ko deni hoti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "An official at a desk carefully checking a long printed list with a ruler and pen, stamp pad nearby, quiet office, daylight",
+     "type": "art"
+    },
+    "vo": "Us list mein likha hota hai, kiska kitna paisa hai. Phir DICGC us list ki jaanch karti hai, naam, rakam, sab milaya jata hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA at home looking relieved, holding a passbook that has just been updated, MUMMY bringing chai, warm afternoon light",
+     "type": "art"
+    },
+    "vo": "Jaanch poori hote hi, payment ki baari. Paisa ya to seedha aapko milta hai, ya bank ke zariye aapke account mein aata hai. Sab 90 din ke andar."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A close view of an old bank account opening form with several empty boxes and a pen lying beside it, dust on the paper, side light",
+     "type": "art"
+    },
+    "vo": "Par yahan bhi ek chhota sa jaal hai. List mein aapka naam, sahi pata, aapka nominee, yeh sab bank ke record mein theek hona chahiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN holding PAPA's FD receipt under a table lamp, frowning at an empty field, PAPA looking embarrassed beside her, night",
+     "type": "art"
+    },
+    "vo": "Agar KYC purana hai, mobile number badal gaya, nominee likha hi nahi, to aapki baari mein der ho sakti hai. Papa ki raseedon mein nominee ka khana khaali tha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Two queues outside a bank: one short and moving quickly, one very long stretching around the block into the distance, overcast afternoon",
+     "type": "art"
+    },
+    "vo": "Aur dhyan rahe, yeh tez wala wada sirf insurance wale hisse ka hai. Usse upar ka paisa is line mein nahi aata. To uska kya hota hai?"
+   },
+   {
+    "facts_used": [],
+    "label": "Woh galti aur bachav",
+    "visual": {
+     "card": null,
+     "prompt": "SG at a chapter turn standing in a neighbourhood lane pointing toward a small local bank branch next to a kirana shop, SHOPKEEPER at his counter, evening",
+     "type": "art"
+    },
+    "vo": "Yahi woh galti hai, jo lagbhag har middle class family karti hai. Saara paisa ek bank mein. Kyunki ghar ke paas hai, manager pehchaan ka hai, byaaj thoda zyada hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA proudly showing a single neatly organised folder of FD receipts to a neighbour on a balcony, morning sunlight, relaxed mood",
+     "type": "art"
+    },
+    "vo": "Aur yeh soch galat lagti bhi nahi. Ek bank, ek passbook, hisaab saaf. Papa kehte, itne banks mein kaun bhaage, sab ek jagah rakho, yaad rakhna aasaan."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A balance scale on a table, one pan holding a small bundle of notes, the other pan holding a large heap of FD certificates, dim dramatic light",
+     "type": "art"
+    },
+    "vo": "Papa wali kahani yaad hai? Value Research ne bhi aisi hi misaal di. Saari FD ek bank mein, bank doobe, to insurance deta hai sirf 5 lakh."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A huge heap of rupee notes tied in bundles sitting in a dusty locked storeroom with cobwebs, a single beam of light through a high window",
+     "type": "art"
+    },
+    "vo": "Baaki 7.86 lakh ka kya? Value Research ke hisaab se, woh paisa band bank ki ek lambi line mein chala jata hai, jismein saalon lag sakte hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A cracked clay piggy bank on a table with only a few coins trickling out of the crack, most of the coins stuck inside, moody lamp light",
+     "type": "art"
+    },
+    "vo": "Aur unka kehna hai ki itihaas dekho, to aksar us baaki paise ka sirf ek hissa hi wapas aata hai. Poora nahi. Kitna aayega, koi guarantee nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "An old wooden cupboard with an iron chain wrapped around it in a quiet room, a framed family photo turned away on the shelf above, evening",
+     "type": "art"
+    },
+    "vo": "Socho, saari zindagi ki bachat ka bada hissa, ek faisle ki wajah se atak gaya. Bank ne dhokha nahi diya. Galti plan mein thi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE at the dining table with a notebook, calculator and several passbooks spread out, carefully adding figures, evening tube light",
+     "type": "art"
+    },
+    "vo": "To karna kya hai? Sabse pehle, apna total gino. Har bank mein, savings, FD, RD, sab jod kar. Byaaj bhi jodo, kyunki limit mein woh bhi aata hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Hands sorting bundles of rupee notes into several separate envelopes placed beside small drawings of different bank buildings, top-down desk view",
+     "type": "art"
+    },
+    "vo": "Agar kisi ek bank mein total 5 lakh ke paas ya usse upar hai, to paisa alag alag banks mein baanto. Har bank ka apna alag cover hota hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA walking out of one bank and towards a completely different bank across the street, folder under his arm, sunny morning",
+     "type": "art"
+    },
+    "vo": "Baantte waqt branch nahi, bank badlo. Aur merger ki khabar par nazar rakho, kyunki bank mil gaye to aapki alag limits bhi mil jaayengi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA and MUMMY at a bank counter with three separate account forms laid out in front of them, BANK UNCLE explaining, bright branch interior",
+     "type": "art"
+    },
+    "vo": "Ek aur tareeka, family ki alag haisiyat. Mummy ke naam ka account, Papa ke naam ka, aur dono ka joint account, yeh sab alag ginte hain. Bas kagaz sahi hone chahiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BETA, a ten-year-old boy, sitting beside PAPA at a desktop computer in a small home study, both looking at a long list on screen, screen content blurred, evening",
+     "type": "art"
+    },
+    "vo": "Aur jo bhi bank chuno, DICGC ki website par insured banks ki list check kar lo. Zyada tar bank usmein hote hain, cooperative bank bhi. Par khud dekho."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA at a bank counter filling in a nominee form with a pen, BEHEN beside him guiding, BANK UNCLE stamping a document, cheerful midday light",
+     "type": "art"
+    },
+    "vo": "Nominee bharo, KYC update rakho, mobile number sahi rakho. Bura waqt aaye, to aapka paisa jaldi aapke paas pahunche, kisi daftar mein na atke."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A busy, normal bank branch with customers being served calmly, sunlight through windows, everyday ordinary scene",
+     "type": "art"
+    },
+    "vo": "Ek baat saaf kar doon. Bank doobna roz ki baat nahi hai. Zyada tar bank theek chalte hain. Yeh dar ki baat nahi, tayyari ki baat hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG sitting on a bench outside a bank, calm and reassuring posture, a notebook in hand, late afternoon golden light",
+     "type": "art"
+    },
+    "vo": "Yeh investment advice nahi hai. Bas aapke haq ki jaankari hai, taaki bura din aaye to aap line mein khade hokar hairaan na hon."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The same bank shutter from the opening, now with a shorter calmer queue, sunlight breaking through clouds, hopeful tone",
+     "type": "art"
+    },
+    "vo": "To shuru wale sawaal par wapas chalein. Bank doobe, to har bank mein aapke 5 lakh tak, tay waqt ke andar. Usse upar, sirf intezaar aur umeed."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA at home smiling, laying out several separate FD folders on the table like playing cards, MUMMY nodding with chai, warm evening light",
+     "type": "art"
+    },
+    "vo": "Papa ne agle hi hafte apni FD alag alag banks mein baant di. Ab woh kehte hain, bank safe hai, par apna plan usse bhi mazboot hona chahiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A small town post office building with a red letter box outside, people walking in, early morning mist, inviting mood",
+     "type": "art"
+    },
+    "vo": "Agle video mein, post office ki schemes. Kya woh bank se bhi zyada surakshit hain? Aur yeh video us dost ko bhejo, jiska saara paisa ek bank mein hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG at a chai stall at dusk, raising his cup toward the viewer with a warm smile, string lights glowing behind him",
+     "type": "art"
+    },
+    "vo": "Ab aap batao, aapka saara paisa ek hi bank mein rakha hai, ya alag alag banks mein baanta hai? Comment mein likho, 'ek jagah' ya 'baant diya'."
+   }
+  ],
+  "thumbnail": {
+   "name": "BANK FD",
+   "name_hi": "बैंक FD",
+   "scene": "LEFT: a bank branch with its shutter pulled down and a long anxious queue outside; RIGHT: a huge heap of FD certificates and rupee bundles locked behind a thick iron chain and padlock, only a small bundle sitting free in front",
+   "words": [
+    "7.86 LAKH",
+    "ATKA?"
+   ],
+   "words_hi": [
+    "7.86 लाख",
+    "अटका?"
+   ]
+  },
+  "title": "Bank doob jaye to aapke kitne paise wapas milenge?"
+ },
+ "status": "failed-research",
+ "timings": [],
+ "topic": {
+  "hooks": [
+   "Gold January se 21.43 percent gir chuka hai, pata tha?"
+  ],
+  "id": "proven-2026-10-30-sglearning-short",
+  "link": "https://www.livemint.com/market/stock-market-news/gold-price-crashes-over-rs-38-600-from-record-high-whatll-happen-amid-diwali-2026-fervour-right-time-to-buy-decoded-11792910366849.html",
+  "proven_short": "2026-10-30-sglearning-short",
+  "proven_views": 1942,
+  "source": "Mint Markets",
+  "summary": "A 12-minute illustrated documentary on the question of the Short \"Gold price gira, Dhanteras par khareedna sahi?\", which reached 1,942 people on Instagram. Go deeper than the Short: the mechanism, a worked example in rupees, the mistakes people make, what to check. Story so far: MCX gold has fallen 21.43% from its January record, settling at  ₹1,42,024 per 10 grams as inflation concerns, higher crude prices and investor selling weigh on precious metals. Experts say festive demand may offer support, but advise gradual buying and watching the  ₹1,40,000 support level.",
+  "target_minutes": 12,
+  "title": "Gold price gira, Dhanteras par khareedna sahi?"
+ },
+ "updated": "2026-11-08T18:46:12+00:00",
+ "writer": "claude"
+}
