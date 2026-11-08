@@ -612,3 +612,15 @@ def test_an_empty_or_unreachable_slot_check_lets_the_piece_be_made(tmp_path):
         d, calls = deps(tmp_path, slot_holders=holders)
         p = pipeline.make(_piece(day=date(2027, 1, 12)), d, tmp_path / str(id(holders)))
         assert p.status == "uploaded" and calls["upload"] == 1 and not p.topic.get("adopted")
+
+
+def test_the_weekly_plan_outranks_a_remake_of_a_weak_reel(tmp_path, monkeypatch):
+    """8 Nov 2026: the 14 Nov Short was made as a second chance of an old 174-view Reel although the weekly YouTube research had planned another topic."""
+    import json
+    (tmp_path / "content").mkdir()
+    (tmp_path / "content" / "weekly-plan.json").write_text(json.dumps({"entries": {"2026-11-14-sglearning-short": {"id": "wk-1", "title": "Planned topic"}}}))
+    monkeypatch.setattr(pipeline, "weak_remake_topic", lambda piece, root: {"id": "remake", "title": "Old topic"})
+    d, _calls = deps(tmp_path)
+    p = _piece(day=date(2026, 11, 14))
+    assert pipeline._pick_topic(p, d, tmp_path, set())["title"] == "Planned topic"
+    assert pipeline._pick_topic(p, d, tmp_path, {"wk-1"})["title"] == "Old topic"               # a planned topic already tried falls back to the usual order
