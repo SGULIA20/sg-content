@@ -45,6 +45,9 @@
    "voice": 9
   },
   "drafts": 1,
+  "ig_reel_id": "18124193846314338",
+  "ig_story_id": "18056010908801802",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-08-sglearning-short.mp4",
    "clip_seconds": 10.03,
@@ -54,6 +57,8 @@
   "intro_sent": "2026-11-04T10:49:45+00:00",
   "out_sha": "a26545a9cb50a63c620da8521ce5fa2503d6b610",
   "out_sha_intro": true,
+  "threads_id": "18594112528068776",
+  "threads_poll_id": "18133323958693207",
   "yt_id": "4nvZ9ax1P58",
   "yt_id_replaced": "1oCTGR1Jz8A"
  },
@@ -223,7 +228,7 @@
   },
   "title": "Sabzi ka bill aur aapki *EMI* ka rishta? 🥬"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   4.13,
@@ -256,6 +261,6 @@
   "title": "RBI launches the November 2026 round of the Inflation Expectations Survey of Households",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-11-04T22:06:00+00:00",
+ "updated": "2026-11-08T13:10:38+00:00",
  "writer": "claude"
 }
