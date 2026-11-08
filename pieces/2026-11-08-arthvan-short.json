@@ -65,7 +65,9 @@
    "voice": 12
   },
   "drafts": 1,
+  "ig_reel_id": "18095147879691480",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-08-arthvan-short.mp4",
    "clip_seconds": 10.03,
@@ -75,6 +77,8 @@
   "intro_sent": "2026-11-04T10:49:45+00:00",
   "out_sha": "a26545a9cb50a63c620da8521ce5fa2503d6b610",
   "out_sha_intro": true,
+  "threads_id": "18035717696855177",
+  "threads_poll_id": "18144050824717815",
   "yt_id": "9Wk-ZUPS2Fs",
   "yt_id_replaced": "CgoSgtW6POo"
  },
@@ -293,7 +297,7 @@
   },
   "title": "Kumbhalgarh, China ke baad sabse lambi *deewar*? 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   4.17,
@@ -341,6 +345,6 @@
   "title_hi": "Kumbhalgarh, 36 km ki deewar",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-11-05T07:13:18+00:00",
+ "updated": "2026-11-08T16:11:00+00:00",
  "writer": "claude"
 }
