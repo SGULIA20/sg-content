@@ -94,7 +94,15 @@
    "voice": 9
   },
   "drafts": 2,
-  "intro_sent": "2026-11-08T07:41:05+00:00"
+  "intro": {
+   "clip": "2026-11-14-sglearning-short.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-08T08:06:38+00:00",
+   "seconds": 8.94
+  },
+  "intro_checked": "cd76dae8e543e489",
+  "intro_sent": "2026-11-08T07:41:05+00:00",
+  "yt_id": "v4bI2cil5p0"
  },
  "kind": "short",
  "publish_day": "2026-11-14",
@@ -253,7 +261,7 @@
   },
   "title": "RBI ne byaaj kaata, *EMI* kyun nahi? 🤔"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   5.25,
@@ -278,6 +286,7 @@
   },
   "layers": false,
   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63859",
+  "look": "claymation",
   "patch_tries": 1,
   "published": "2026-10-23T17:50:00+00:00",
   "rank": 5,
@@ -291,6 +300,6 @@
   "title": "RBI Bulletin – October 2026",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-11-08T07:41:07+00:00",
+ "updated": "2026-11-08T08:06:46+00:00",
  "writer": "claude"
 }
