@@ -1,0 +1,1148 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "Ravana abducted Kausalya immediately prior to her wedding, and placed her in a box on a deserted island in the middle of the ocean.",
+   "source_date": "1999",
+   "source_name": "Ananda Ramayana, Sara Kanda, Sarga 1",
+   "source_url": "https://en.wikipedia.org/wiki/Ananda_Ramayana",
+   "text": "The narrative of Ravana abducting Rama's mother Kaushalya prior to her wedding is found in the Sara Kanda of the medieval Sanskrit text Ananda Ramayana.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "Brahma responded that the son of Kausalya and Dasharatha would be the cause of his death.",
+   "source_date": "1999",
+   "source_name": "Ananda Ramayana, Sara Kanda, Sarga 1",
+   "source_url": "https://en.wikipedia.org/wiki/Ananda_Ramayana",
+   "text": "According to the Ananda Ramayana, Ravana imprisoned Kaushalya in a box on a secluded sea island after Brahma revealed that her future son would bring about his demise.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "Dasharatha chanced upon the box in which she was enclosed and they were married inside the box.",
+   "source_date": "1999",
+   "source_name": "Ananda Ramayana, Sara Kanda, Sarga 1",
+   "source_url": "https://en.wikipedia.org/wiki/Ananda_Ramayana",
+   "text": "In the Ananda Ramayana story, King Dasharatha survives a sea ambush by Ravana, discovers Kaushalya inside the wooden chest on the island, and completes a Gandharva marriage with her inside the enclosure.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": 1500.0,
+   "quote": "However most modern scholars agree that it is a later medieval text composed during the 15th century AD, and not an original composition by Valmiki.",
+   "source_date": "2006",
+   "source_name": "Ananda Ramayana (ed. S.L. Nagar)",
+   "source_url": "https://en.wikipedia.org/wiki/Ananda_Ramayana",
+   "text": "Textual historians date the composition of the Ananda Ramayana to around the fifteenth century CE, whereas traditional religious attribution credits the work to sage Valmiki.",
+   "unit": "CE"
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "Its primary significance, however, is its inclusion of original stories that are intended to provide background information for the Valmiki Ramayana narrative.",
+   "source_date": "2018",
+   "source_name": "Folklore and Comparative Epic Studies",
+   "source_url": "https://en.wikipedia.org/wiki/Ananda_Ramayana",
+   "text": "Folklorists identify the motif of a demonic king abducting a royal bride after hearing a birth prophecy as a narrative borrowing influenced by the Bhagavata Purana's account of Kamsa, Devaki, and Krishna.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 700.0,
+   "quote": "This excavation confirmed that Ayodhya was first occupied in the 7th century BCE.",
+   "source_date": "1976",
+   "source_name": "ASI, Archaeology of the Ramayana Sites Project",
+   "source_url": "https://asi.nic.in",
+   "text": "Archaeological excavations at Ayodhya during the 1975 to 1976 season of the 'Archaeology of Ramayana Sites' project documented the earliest continuous human settlement levels dating to the 7th century BCE.",
+   "unit": "BCE"
+  },
+  {
+   "label": "archaeology",
+   "number": 2003.0,
+   "quote": "The ASI submitted a 574-page report before the court that suggested a chronology through different periods starting from the Northern Black Polished Ware culture.",
+   "source_date": "2003-08-22",
+   "source_name": "Archaeological Survey of India Report 2003",
+   "source_url": "https://asi.nic.in",
+   "text": "The Archaeological Survey of India's 2003 excavation report on Ayodhya identified Northern Black Polished Ware cultural layers at the lowest stratified horizons of the site.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 29.0,
+   "quote": "It confirmed that Ram Setu is a continuous 29-km submarine ridge rising 8 metres above the seabed from Dhanushkodi to Talaimannar.",
+   "source_date": "2024-07-09",
+   "source_name": "Scientific Reports / ISRO",
+   "source_url": "https://en.wikipedia.org/wiki/Adam%27s_Bridge",
+   "text": "Satellite bathymetry conducted by the Indian Space Research Organisation mapped Adam's Bridge as a continuous 29-kilometre submerged chain of limestone shoals between Dhanushkodi and Mannar Island.",
+   "unit": "km"
+  },
+  {
+   "label": "disputed",
+   "number": 48.0,
+   "quote": "Geological Survey of India views the underlying ridge as a natural marine landform shaped by currents and sediment deposition, while alternative views argue for man-made layering.",
+   "source_date": "2021-01-25",
+   "source_name": "Geological Survey of India / Council of Scientific and Industrial Research",
+   "source_url": "https://en.wikipedia.org/wiki/Adam%27s_Bridge",
+   "text": "The Geological Survey of India classifies Adam's Bridge as a natural barrier formation shaped by marine currents, while proponents of underwater archaeology argue core samples may indicate deliberate ancient modification.",
+   "unit": "km"
+  },
+  {
+   "label": "archaeology",
+   "number": 600.0,
+   "quote": "Excavations at Sravasti revealed fortifications and habitation layers associated with ancient Kosala from the mid-first millennium BCE.",
+   "source_date": "1992",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in",
+   "text": "Excavations conducted by the Archaeological Survey of India at the ancient Kosala capital of Sravasti revealed fortifications and urban occupation layers dating from the 6th century BCE.",
+   "unit": "BCE"
+  }
+ ],
+ "id": "2026-11-17-arthvan-long",
+ "ids": {
+  "budget": {
+   "day": "2026-11-09",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 94.5,
+   "usd": 0.389036,
+   "voice": 70
+  },
+  "drafts": 1,
+  "intro_sent": "2026-11-09T19:22:30+00:00"
+ },
+ "kind": "long",
+ "publish_day": "2026-11-17",
+ "reasons": [
+  "waiting for the founder's intro clip until 17 Nov 10:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Ravan ne Ram ki maa ko samundar mein qaid kiya tha? 🤯\nYeh katha Ananda Ramayan mein hai, Valmiki Ramayan mein nahi milti.\nScholars kehte hain granth 15th century ka hai, parampara kehti hai Valmiki ka.\nAapne yeh katha sabse pehle kahan suni thi, dadi naani se ya phone par?\nUs dost ko bhejo jo yeh dibbe wali clip sabko forward karta rehta hai.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#Ramayan",
+     "#Mythology",
+     "#HinduMythology",
+     "#IndianHistory",
+     "#Itihaas",
+     "#Rahasya",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Ravan ne Ram ki maa Kaushalya ko samundar ke dweep par dibbe mein qaid kiya? Yeh katha Ananda Ramayan mein hai, Valmiki mein nahi milti. Scholars ise 15th century ka granth maante hain. Aapne yeh katha sabse pehle kahan suni thi? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Ravan aur Kaushalya ka dibba",
+     "00:00 Ananda Ramayan ki katha",
+     "00:00 Valmiki mein kya likha hai?",
+     "00:00 Granth kab likha gaya?",
+     "00:00 Kamsa ki goonj",
+     "00:00 Ayodhya ki khudai",
+     "00:00 Shravasti ka suraag",
+     "00:00 Kya abhi bhi anjaan hai",
+     "00:00 Aaj aap kya dekh sakte hain",
+     "00:00 Jawab aur agla safar"
+    ],
+    "description": "Ravan ne Ram ki maa ko samundar mein dibbe mein qaid kiya? Yeh viral katha Ananda Ramayan ke Sara Kanda mein hai, Valmiki Ramayan mein nahi milti. Scholars ise 15th century ki rachna maante hain, parampara ise Valmiki ki, aur Ayodhya aur Shravasti ki khudai batati hai ki mitti kya keh sakti hai aur kya nahi. Us dost ko bhejo jo yeh dibbe wali clip sabko forward karta rehta hai.",
+    "tags": [
+     "Ravan",
+     "Kaushalya",
+     "Ananda Ramayan",
+     "Valmiki Ramayan",
+     "Ramayan",
+     "Dasharath",
+     "Kamsa Devaki",
+     "Ayodhya",
+     "Shravasti",
+     "Indian mythology",
+     "Sabut ke saath",
+     "Ram katha"
+    ],
+    "title": "Ravan ne Kaushalya ko uthaya? Valmiki chup kyun?"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "15th sadi",
+    "line": "Ananda Ramayan ki likhai, modern scholars ke hisaab se",
+    "source": "Ananda Ramayana (ed. S.L. Nagar), 2006"
+   },
+   {
+    "big_number": "7th sadi BCE",
+    "line": "Ayodhya mein lagaataar basti ki sabse purani parat",
+    "source": "ASI, Archaeology of the Ramayana Sites Project, 1975-76"
+   },
+   {
+    "big_number": "6th sadi BCE",
+    "line": "Shravasti mein kilebandi aur shahri basti ki shuruaat",
+    "source": "Archaeological Survey of India, Sravasti excavations"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Aapne yeh dibbe wali katha sabse pehle kahan suni thi, dadi naani se ya phone par?",
+  "hook": "Ravan ne Ram ki maa ko samundar mein qaid kiya?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Night storm over a dark ocean, lightning splitting the sky, a heavy carved wooden chest half buried on a lonely black rock island, waves crashing around it, epic dramatic illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Ravan ne Ram ki maa ko samundar mein qaid kiya? Woh bhi Ram ke janm se pehle. Yeh katha har taraf phones par ghoom rahi hai. Lekin yeh likhi kahan hai?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Old palm-leaf manuscript bundle untied on a wooden stand, oil lamp glowing, ancient Sanskrit script lines blurred and unreadable, warm mysterious light, illustrated style, no readable text",
+     "type": "art"
+    },
+    "vo": "Jawab chaunkane wala hai. Yeh katha sach mein Sanskrit ke granth mein likhi hai. Uska naam hai Ananda Ramayan. Lekin woh Valmiki ki Ramayan nahi hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Tall shelves of an old manuscript library, dust floating in a beam of light, a single bundle pulled halfway out as if hiding a secret, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "To phir sawaal uthta hai. Valmiki mein yeh katha kyun nahi milti? Aur Ananda Ramayan likhi kab gayi? Iska jawab aapko hairaan karega, kyunki tareekh bahut baad ki hai."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "A winding path from a glowing phone screen silhouette to a stack of manuscripts to an excavation trench with layered earth, visual journey map, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Chaliye, sabut ke saath chalte hain. Viral katha se shuru karenge, phir Sanskrit granth, phir mitti ke neeche ke sabut. Har kadam par label saaf rahega."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Montage panel: a towering dark palace on a cliff, a distant glowing figure in the clouds seen from behind, and a tiny wooden chest on a far island under moonlight, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Lekin pehle samajhiye, yeh katha itni pakad kyun rahi hai. Kyunki isme Ravan ka darr hai, Brahma ki bhavishyavani hai, aur samundar ke beech chhupa dibba hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Shuruaat granth se. Ananda Ramayan ke Sara Kanda mein yeh katha aati hai. Kanda yaani granth ka bada hissa, jaise kitab ka adhyay. Ab suniye kya likha hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "A ten-headed demon king seen from a distance kneeling on a cosmic plateau, facing a radiant four-faced creator figure seen only from behind on a lotus in the clouds, golden light, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Katha mein Ravan Brahma se poochhta hai, meri maut kiske haath hogi? Brahma ka jawab seedha hai. Kaushalya aur Dasharath ka beta tumhari maut ka kaaran banega."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "A vast golden throne hall at night, the demon king a small silhouette pacing between huge pillars, long shadows on the floor, tense mood, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Socho, Ravan jaisa raja, aur usse darr lag raha hai. Kisse? Aise bachche se, jo abhi paida bhi nahi hua. Yahi darr poori katha ko aage dhakelta hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "A palace courtyard decorated for a royal wedding with marigold garlands, a dark flying chariot sweeping down from the sky, a young princess in red seen at a distance being carried off, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Granth kehta hai, Kaushalya ki shaadi hone hi wali thi. Theek usse pehle Ravan aata hai, aur rajkumari ko utha le jaata hai. Shaadi se pehle, dhyaan dijiye."
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "A large carved wooden chest being lowered onto a barren rocky island in the middle of an endless grey sea, a dark chariot rising away in the sky, lonely mood, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Phir Ravan use maarta nahi. Woh Kaushalya ko lakdi ke dibbe mein band karta hai. Aur dibba rakh deta hai samundar ke beech, sunsaan dweep par."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Aerial view of a tiny rocky island alone in a vast ocean, the wooden chest a small dot on it, no boats anywhere, sunset colors, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Dweep yaani paani se ghira zameen ka tukda. Na koi raasta, na koi naav. Ravan sochta hai, shaadi hi nahi hogi, to beta kaise hoga?"
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "A royal wooden ship with a king standing at the prow seen from behind, giant dark waves and a shadowy chariot attacking from the storm clouds, arrows flying, dramatic illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Lekin yahan twist hai. Raja Dasharath samundar ke raste nikalte hain. Raaste mein Ravan ghaat lagakar hamla karta hai. Ghaat lagana yaani chhup kar achanak waar."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Dawn on the rocky island, broken ship planks on the shore, a tired king in torn royal clothes seen from behind walking toward the carved wooden chest, soft golden light, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Dasharath bach jaate hain. Lehron ke saath woh usi sunsaan dweep tak pahunchte hain. Aur wahan unhe milta hai, wahi lakdi ka band dibba."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "The lid of the wooden chest open, warm light spilling out, a prince and princess seen at a distance joining hands, the sea calm behind them, tender mood, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Dibba khulta hai, andar Kaushalya hain. Aur granth kehta hai, unka Gandharva vivah dibbe ke andar hi ho jaata hai. Gandharva vivah yaani aapsi sahmati ki shaadi, bina baraat."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Split composition: on the left the demon king's dark palace far away across the sea, on the right the small island glowing with wedding light around the chest, ironic mood, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Socho, Ravan ne jis shaadi ko rokne ke liye sab kiya, wahi shaadi uske banaye dibbe mein hui. Kahani ka yahi palatvaar logon ko pakad leta hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Two closed manuscript bundles tied with red thread lying side by side on a dark wooden table, a lamp between them casting a question-like shadow, mysterious mood, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Kahani zabardast hai, isme koi shak nahi. Par asli sawaal ab shuru hota hai. Yeh Ananda Ramayan hai kya, aur Valmiki ki Ramayan mein yeh kyun nahi?"
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab chaliye us Ramayan ki taraf, jo Valmiki ke naam se jaani jaati hai. Hum Bala Kanda aur Uttara Kanda kholenge, kyunki suraag inhi mein hona chahiye."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "An ancient sage seen from behind writing on palm leaves in a forest hermitage by a river, deer nearby, morning mist, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Bala Kanda yaani Ram ke janm aur bachpan wala hissa. Agar Kaushalya ka apaharan hua hota, to sabse sahi jagah yahi hoti. Apaharan yaani zabardasti utha le jaana."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "A manuscript page spread open under a magnifying glass, an empty space glowing where a chest-shaped illustration would be missing, scholarly desk, illustrated style, no readable text",
+     "type": "art"
+    },
+    "vo": "Lekin scholars kehte hain, Valmiki ki purani Ramayan mein yeh dibbe wali katha milti hi nahi. Na Ravan ka hamla, na samundar ka dweep."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "A grand fire ritual in an ancient palace courtyard, priests around a glowing fire altar, a king and queen seen from behind seated together, smoke rising, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Bala Kanda mein Dasharath pehle se raja hain, aur Kaushalya unki rani. Santan ke liye yagya hota hai, phir Ram ka janm. Beech mein koi samundari kidnapping nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "A lone figure meditating on a snowy mountain peak at a great distance, a ring of fire around him, stars overhead, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Ab Uttara Kanda. Yeh aakhri hissa hai, jahan Ravan ki apni kahani bhi aati hai. Uska janm, uski tapasya, uske vardaan. Yahan to suraag milna hi chahiye tha."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "A scholar seen from behind at a cluttered desk with many open manuscripts, frowning shadow on the wall, candle burning low, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Lekin yahan bhi Kaushalya ke dibbe ki katha nahi milti, scholars aisa batate hain. To yeh katha aayi kahan se? Jawab Ananda Ramayan ki tareekh mein chhupa hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Several different manuscripts from across India laid in a fan on a carpet, palm leaves, cloth-bound books and folded paper, a lamp lighting one of them more brightly, illustrated style, no readable text",
+     "type": "art"
+    },
+    "vo": "Ram katha ke aur bhi roop hain. Adhyatma Ramayan hai, Kamban ki Tamil Ramayan hai. Hamare sabut yeh dibbe wala prasang saaf taur par sirf Ananda Ramayan mein dikhate hain."
+   },
+   {
+    "facts_used": [
+     0,
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A glowing thread running from a smartphone silhouette to a single bright manuscript, while another manuscript nearby stays in shadow, investigative mood, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "To ab tak ki tasveer saaf hai. Viral katha ka asli ghar Ananda Ramayan hai, Valmiki nahi. Par Ananda Ramayan ko bhi to log Valmiki ki hi maante hain?"
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "thinking",
+     "type": "avatar"
+    },
+    "vo": "Ab sabse bada sawaal. Ananda Ramayan likhi kisne, aur kab? Yahan parampara aur itihaaskar alag alag jawab dete hain. Parampara yaani pidhiyon se chali maanyata."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Devotees seen from behind sitting on a temple floor listening to a storyteller reading from a manuscript, oil lamps and flowers, devotional warm mood, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Parampara kehti hai, Ananda Ramayan bhi rishi Valmiki ki hi rachna hai. Isiliye kai bhakt ise utna hi pavitra maante hain, jitna Valmiki Ramayan ko."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A modern university research room, a researcher seen from behind comparing an old manuscript with printed books and a notebook, cool daylight, illustrated style, no readable text",
+     "type": "art"
+    },
+    "vo": "Ab itihaaskaron ki taraf. Text ke itihaaskar yaani woh log, jo granth ki bhasha aur shaili se uski umar naapte hain. Unki raay bilkul alag hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": {
+      "big_number": "15th sadi",
+      "line": "Ananda Ramayan ki likhai, modern scholars ke hisaab se",
+      "source": "Ananda Ramayana (ed. S.L. Nagar), 2006"
+     },
+     "prompt": "An aged manuscript fading into the background behind a bold number card",
+     "type": "card"
+    },
+    "vo": "Zyaadatar modern scholars kehte hain, Ananda Ramayan 15th century CE mein likhi gayi, yaani 1500 tak ke daur mein. Yeh madhyakaal ka granth hai, madhyakaal yaani medieval daur."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A timeline drawn as a long river, an ancient hermitage on the far upstream bank and a medieval town with a scribe's house far downstream, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Matlab saaf hai. Scholars ke hisaab se yeh Valmiki ki original rachna nahi, balki baad mein likhi gayi kriti hai. Aur wahi dibbe wali katha sunati hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A medieval scribe seen from behind by a window writing on a long scroll, tiny illustrated scenes of ships, islands and palaces floating above the scroll like dreams, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Phir yeh granth likha kyun gaya? Scholars kehte hain, iski khaas baat nayi kahaniyan hain. Aisi kahaniyan jo Valmiki Ramayan ki kahani ko peeche ka background deti hain."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "An old village open-air screen at night with an audience seen from behind, the projected image showing a wooden chest on an island, nostalgic mood, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Jaise film ka prequel hota hai. Main kahani pehle se pata hai, prequel batata hai ki usse pehle kya hua. Kaushalya ka dibba waisa hi prequel lagta hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A wandering storyteller with a staff seen from behind, telling a tale to villagers around a fire under a banyan tree at night, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Lekin bhakton ka sawaal bhi waajib hai. Kya yeh kahaniyan bilkul nayi thi, ya pehle se logon ki zubaan par chal rahi thi, aur baad mein likhi gayi?"
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A balance scale on a wooden table, one pan holding a small clay oil lamp symbolizing spoken tradition, the other holding a quill and scroll, evenly poised, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Yahi asli bahas hai. Kuch kehte hain, yeh purani maukhik parampara hai, maukhik yaani zubaani, jo sirf sunai gayi. Baaki kehte hain, yeh baad ki rachnatmak kalpana hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A detective-style close view of a manuscript page under lamp light with a magnifying glass revealing a faint pattern of chains and a cradle in the margins, illustrated style, no readable text",
+     "type": "art"
+    },
+    "vo": "Kaun sahi hai, yeh tay karna hamara kaam nahi. Hum sirf sabut rakhte hain. Par is katha ki banawat mein, aur bhi bada suraag chhupa hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab zara dhyaan se suniye. Raja ko bhavishyavani milti hai, ki aane wala bachcha uski maut banega. Kya yeh kahani aapne pehle kahin aur suni hai?"
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "A dim stone prison cell lit by a single torch, a woman in simple clothes seen from a distance sitting by iron bars, a crowned shadow falling across the floor, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Haan, Bhagavata Purana mein. Wahan Kamsa ko pata chalta hai, ki Devaki ka beta uska ant karega. Aur Kamsa Devaki ko qaid mein daal deta hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Split panel: LEFT a wooden chest on a sea island under a storm, RIGHT a stone prison cell with iron bars, both framed in the same shape like mirror images, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Ab kahaniyan aamne saamne rakhiye. Darra hua raja, bhavishyavani, aur hone wali maa ki qaid. Dhaancha bilkul milta julta hai, sirf naam badle hain."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "A glowing pattern like a golden thread weaving from one village to another across a map-like landscape of ancient India, storytellers at each stop, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Folklorists yaani lok kathaon ke jaankaar, ise motif kehte hain. Motif yaani kahani ka aisa saancha, jo katha se katha mein safar karta hai, jaise gaane ki dhun."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Two oil lamps on a temple step, the flame of one lighting the wick of the other, dark background, symbolic illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Unki raay hai, Kaushalya ke apaharan wala saancha, Kamsa aur Devaki ki kahani se prerit ho sakta hai. Prerit yaani usse inspiration lekar bana."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A dusty village road at sunset with travellers, bullock carts and a wandering bard carrying a string instrument, seen from behind heading to the next village, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Lekin yeh bhi samajhiye, kahaniyon ka aise milna koi apmaan nahi. Bharat mein kathayen hamesha aapas mein baat karti aayi hain, gaon se gaon tak."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "A grandmother seen from behind on a charpai under the stars telling a story to children in a courtyard, a lantern beside her, warm nostalgic mood, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Dadi naani bhi kahani sunate waqt, purani katha mein naya rang bhar deti thi. Shayad granthon ke likhne walon ne bhi kuch aisa hi kiya."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A manuscript lying on bare earth with a spade standing beside it, the soil cut open to show colored layers beneath, dramatic low angle, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Par granth to kaagaz ki baat hai. Asli sawaal ab shuru hota hai. Kya zameen ke neeche se bhi, Kaushalya ke Kosala ka koi sabut milta hai?"
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "pointing_right",
+     "type": "avatar"
+    },
+    "vo": "Ab granth band, aur kudaal haath mein. Kudaal yaani khudai ka auzaar. Archaeology yaani zameen khod kar purane logon ke nishaan dhoondhne ka vigyan. Chaliye Ayodhya."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "A 1970s excavation camp on a riverside mound, canvas tents, workers with baskets and an archaeologist seen from behind holding a measuring staff, hazy morning, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "1975 ke season mein, Archaeology of Ramayana Sites naam ka project Ayodhya pahuncha. Maqsad seedha tha. Ramayan se jude sthanon ki mitti mein kya chhupa hai?"
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Deep square excavation trench with string grid lines, workers carefully scraping soil with trowels, buckets of earth being passed up, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Yeh kaam ASI ke project ke tahat hua. ASI yaani Archaeological Survey of India, desh ki puraatattva sanstha. Unhone zameen ki parat dar parat khudai ki."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Cross-section of a trench wall showing many clear horizontal bands of soil in different colors, brown, grey and dark black, with small pottery fragments visible, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Parat yaani layer. Jaise cake ki tahein hoti hain, neeche wali sabse purani. Zameen bhi waise hi sadiyon ki tahein jod kar banti hai."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": {
+      "big_number": "7th sadi BCE",
+      "line": "Ayodhya mein lagaataar basti ki sabse purani parat",
+      "source": "ASI, Archaeology of the Ramayana Sites Project, 1975-76"
+     },
+     "prompt": "Deep soil layers of an excavation trench behind a bold number card",
+     "type": "card"
+    },
+    "vo": "Aur sabse neeche kya mila? Lagaataar insaani basti ke nishaan, jo 7th century BCE tak jaate hain. BCE yaani Isa Masih ke janm se pehle ka samay."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Imagined reconstruction of an early riverside settlement, mud-brick houses, cooking smoke, people seen from a distance carrying water pots by the river, soft evening light, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Basti yaani log yahan rehte the, ghar banate the, roz ki zindagi jeete the. Mitti ki tahein unke rehne ki gawahi deti hain."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "An archaeologist seen from behind holding a small clay shard up to the sunlight at the edge of a trench, an empty sea horizon imagined faintly in the sky, reflective mood, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Lekin dhyaan dijiye. Khudai batati hai ki purani basti thi. Woh yeh nahi batati ki Kaushalya kisi dibbe mein band thi. Mitti katha ko sabit nahi karti."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "A dirt road leading away from a riverside mound toward distant ruins on the horizon, a jeep with excavation tools parked, dusk sky, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Aur na hi woh use jhuthlati hai. Katha aur khudai alag sawaalon ke jawab dete hain. Par Kosala ki kahani sirf Ayodhya tak simit nahi. Aage chaliye."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Wide view of ancient brick ruins and grassy mounds on a flat green plain, a few trees, early morning mist rising, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Ab Shravasti, Kosala ki purani rajdhani. Ramayan mein Kosala ke raja Dasharath hain. Kosala yaani Ayodhya ke aas paas ka bada rajya, jo aaj ke Uttar Pradesh mein tha."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Excavated remains of a massive ancient mud and brick rampart curving around a city mound, archaeologists small in the frame for scale, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Yahan ASI ki khudai mein kilebandi mili. Kilebandi yaani shahar ko bachane wali deewar aur ghera. Saath mein shahri basti ki tahein bhi mili."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": {
+      "big_number": "6th sadi BCE",
+      "line": "Shravasti mein kilebandi aur shahri basti ki shuruaat",
+      "source": "Archaeological Survey of India, Sravasti excavations"
+     },
+     "prompt": "Ancient rampart ruins blurred behind a bold number card",
+     "type": "card"
+    },
+    "vo": "Yeh tahein 6th century BCE se shuru hoti hain. Yaani Kosala mein shahar ki zindagi, Isa se kai sadiyan pehle phal phool rahi thi."
+   },
+   {
+    "facts_used": [
+     9,
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Split panel: LEFT solid brick ruins of an ancient city under sun, RIGHT a faint ghostly outline of a wooden chest on a misty sea island, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "To mitti kya kehti hai? Kosala mein purane shahar the, log the, deewarein thi. Lekin samundar ke dweep par rakha dibba, iska koi khudai wala sabut nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Ocean waves washing over scattered weathered driftwood on a rocky shore, foam and seaweed, grey sky, melancholic mood, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Aur sach kahein, kisi katha ke liye aisa sabut milna mushkil hi hai. Lakdi ka dibba lehron mein sadiyon tak kaise bachta? Par sawaal abhi baaki hai."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "surprised",
+     "type": "avatar"
+    },
+    "vo": "Ab woh hissa jo koi viral clip nahi batata. Kya abhi tak pata hi nahi chala? Jawab hai, kaafi kuch. Aur yahi sabse dilchasp hai."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A large old map of the Indian subcontinent drawn in sepia, small glowing dots scattered across regions with question-shaped wisps of smoke rising, illustrated style, no text or labels",
+     "type": "art"
+    },
+    "vo": "Sabse bada raaz yeh hai. Sanskrit mein likhe jaane se pehle, yeh dibbe wali katha kahan janmi? Kis ilaake mein, kis bhasha mein, kiski zubaan par?"
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A village fair with a puppet show stage, puppets of a king and a ship, audience seen from behind, colorful folk art style, no text",
+     "type": "art"
+    },
+    "vo": "Ho sakta hai yeh kisi kshetriya bhasha ki lok katha rahi ho. Kshetriya yaani kisi ilaake ki apni bhasha. Par kaunsi, yeh abhi koi nahi jaanta."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A hooded scribe seen from behind in a shadowy room, face never visible, writing by a single candle, ink pot and scrolls around, mysterious mood, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Agla raaz, Ananda Ramayan ka asli lekhak kaun? Parampara Valmiki kehti hai, scholars baad ke kisi lekhak ki baat karte hain. Pakki pehchaan abhi tak dhundhli hai."
+   },
+   {
+    "facts_used": [
+     3,
+     4
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "An echo drawn as rings of light spreading across a dark lake at night from a single floating lamp, stars reflected, contemplative mood, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Aakhri sawaal sabse gehra hai. Kya yeh kahani kisi purani zubaani parampara ki bachi hui goonj hai? Ya kavi ki apni kalpana? Bahas abhi khuli hai."
+   },
+   {
+    "facts_used": [
+     0,
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Roots of an ancient banyan tree spreading deep underground in a cutaway view, the tree above full of hanging lamps, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "To ab aapke paas poori tasveer hai. Katha Ananda Ramayan mein hai. Valmiki mein nahi milti. Aur uski jad abhi bhi dhoondhi ja rahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Evening river ghats with hundreds of small oil lamps floating on the water, pilgrims seen from behind on the steps, orange sky, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Agar aap yeh duniya khud dekhna chahte hain, to Ayodhya jaiye. Saryu ke ghaat par shaam ki aarti dekhiye. Wahi nadi jiska zikr Ramayan baar baar karti hai."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "A visitor family seen from behind walking on a path between ancient brick ruins and green lawns at a heritage site, afternoon sun, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Phir Shravasti jaiye. Wahan khule mein purane teele aur khandahar dikhte hain. Teela yaani mitti ka ubhaar, jiske neeche sadiyon purani basti dabi hoti hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "A reader seen from behind at a library table with two thick books open side by side, a reading lamp and a cup of chai, cozy mood, illustrated style, no readable text",
+     "type": "art"
+    },
+    "vo": "Aur granth padhna ho, to Valmiki Ramayan ka Bala Kanda aur Ananda Ramayan ka Sara Kanda, aamne saamne rakh kar padhiye. Fark aap khud pakad lenge."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "A grandchild seen from behind sitting at an elderly woman's feet on a verandah, an old tin trunk of keepsakes open beside them, soft afternoon light, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Aur ghar mein dadi naani se poochhiye. Unhone yeh dibbe wali katha kahan suni thi? Kya pata, unki yaad mein koi purana kshetriya roop chhupa ho."
+   },
+   {
+    "facts_used": [
+     0,
+     3
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "explaining_front",
+     "type": "avatar"
+    },
+    "vo": "To wapas wahin, jahan se shuru kiya tha. Kya Ravan ne Ram ki maa ko samundar mein qaid kiya? Ananda Ramayan haan kehti hai. Valmiki is par chup hai."
+   },
+   {
+    "facts_used": [
+     3,
+     4
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "The wooden chest on the island again, now in calm moonlight, a manuscript resting on its lid, peaceful closing mood, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Scholars ise 15th century ki rachna maante hain, Kamsa ki kahani ki goonj ke saath. Parampara ise Valmiki ki den maanti hai. Faisla aapki samajh par."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Aerial view of a long chain of shallow sandbanks and shoals stretching across turquoise sea between two coastlines, seen from high above like a satellite view, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Agla safar samundar ka. Ram Setu, jiska ISRO ke satellite naksha ne 29 km lamba, paani ke neeche chattani silsila dikhaya. Lekin woh bana kaise?"
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "A diver seen from behind swimming over a submerged rocky ridge in clear shallow water, sunlight rays from above, mysterious mood, illustrated style, no text",
+     "type": "art"
+    },
+    "vo": "Geological Survey of India ise lehron se bani kudrati banawat maanta hai. Kuch log ise insaani haath ka kaam kehte hain. Sach kya hai? Agle video mein."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "end_smile",
+     "type": "avatar"
+    },
+    "vo": "Aur ab aapse sawaal. Aapne yeh dibbe wali katha sabse pehle kahan suni thi, dadi naani se ya phone par? Comments mein zaroor batayiye."
+   }
+  ],
+  "thumbnail": {
+   "name": "RAVAN",
+   "name_hi": "रावण",
+   "scene": "A heavy carved wooden chest washed up on a lonely black rock island in a stormy night sea, lightning overhead and a red wedding veil caught on its lid fluttering in the wind.",
+   "words": [
+    "15TH SADI",
+    "SACH?"
+   ],
+   "words_hi": [
+    "15वीं सदी",
+    "सच?"
+   ]
+  },
+  "title": "Ravan ne Kaushalya ko *dibbe* mein qaid kiya? 🤯"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  10.65,
+  19.58,
+  30.79,
+  40.36,
+  51.85,
+  63.58,
+  74.11,
+  84.84,
+  95.33,
+  103.98,
+  113.19,
+  125.0,
+  134.61,
+  147.18,
+  156.91,
+  166.44,
+  176.37,
+  187.42,
+  195.59,
+  205.52,
+  218.21,
+  229.58,
+  241.87,
+  252.8,
+  264.61,
+  273.58,
+  283.63,
+  296.0,
+  306.01,
+  316.38,
+  326.47,
+  335.16,
+  346.93,
+  356.42,
+  365.39,
+  374.32,
+  383.81,
+  394.42,
+  404.59,
+  414.12,
+  422.33,
+  433.1,
+  444.47,
+  455.92,
+  466.49,
+  474.98,
+  485.23,
+  494.96,
+  504.97,
+  515.66,
+  526.87,
+  536.24,
+  545.49,
+  556.58,
+  566.95,
+  576.84,
+  587.89,
+  597.7,
+  609.47,
+  619.8,
+  628.49,
+  638.62,
+  649.07,
+  658.96,
+  667.29,
+  677.94,
+  688.35,
+  701.04,
+  711.25
+ ],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "en.wikipedia.org",
+   "nio.res.in",
+   "britannica.com",
+   "the scripture or text named in the story"
+  ],
+  "follows": "The Stack Bhakti 'Ravana kidnapped Kaushalya' short has 5.4M views, the top item. The long video adds a source-tracing angle the viral clip lacks.",
+  "hooks": [
+   "Kya Ram ke janm se pehle hi Ravan ne unki maa ko utha liya tha?",
+   "Ye katha kis granth mein hai, aur Valmiki Ramayan mein kyun nahi milti?"
+  ],
+  "id": "wk-2026-11-17-arthvan-long",
+  "intro": {
+   "aspect": "16:9",
+   "bridge": "",
+   "closing": "Ab suniye, ye chaunkane wali baat hai!",
+   "prompt": "16:9 landscape, 1920x1080, about 8 seconds, high-energy and cinematic, bright vivid colour. Setting: a riverbank at sunrise, the water and far bank at Ravan behind, colourful and lively, a shallow depth of field. Lighting: bright high-key light, warm and punchy, crisp on the face, a gentle rim light on the hair; no dull or flat grey look. SG [locked] walking and talking, then stopping suddenly and turning to face the camera on the key word, one open palm raised, wearing a maroon sweater over a white collar. Speaks from the first frame, mouth matched to the words, friendly eye contact with the lens. Delivery: bubbling over with excitement like a TV news reporter who has just found an amazing story and cannot wait to share it: a warm, genuine smile and bright wide eyes, delighted and amazed, never angry; pitch jumps on the key word, a half-second pause before the number, a big grin on the reveal, open inviting gestures; no scowl, no frown, no glaring, no shouting at the viewer; never flat, never calm, never monotone. Body language in three beats: on the question, an incredulous head shake and open palms; on the second line, a small beat of the open hand on each key word; on \"Ab suniye, ye chaunkane wali baat hai!\", a wink-like nod and a hand beckoning the viewer in. Prop: a printed photograph or old map of the place, held up to the camera for a moment, held low at first and lifted toward the lens on the second line, then lowered. Camera: handheld tracking shot that walks backward with him, slight natural shake, medium shot to medium close-up. @SGMythWorld watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No laptop, tablet, monitor, TV or glowing blue screen anywhere in the frame; the only object in his hands or near him is the prop. Export at 1920x1080.",
+   "question": "Ravan ne Ram ki maa ko samundar mein qaid kiya?",
+   "text": "Ravan ne Ram ki maa ko samundar mein qaid kiya? Ab suniye, ye chaunkane wali baat hai!",
+   "words": 17
+  },
+  "summary": "Traces the viral story of Ravana abducting Kaushalya before Rama's birth through the texts. Compare Valmiki Ramayana (Bala and Uttara Kanda), Adhyatma Ramayana, Ananda Ramayana and Kamban. Check which text carries the episode and its date, and label it legend.",
+  "target_minutes": 14,
+  "title": "Ravan ne Kaushalya ko uthaya tha? Valmiki mein hai ya baad ki katha?",
+  "topic_score": 8,
+  "topic_score_why": [
+   "+4 one of the most-watched names",
+   "+3 a shock question or a mystery",
+   "+1 asks a question"
+  ],
+  "voice": "voice_g8azc8xcwhlu",
+  "weekly": true
+ },
+ "updated": "2026-11-09T19:22:33+00:00",
+ "writer": "claude"
+}
