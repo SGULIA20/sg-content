@@ -18,7 +18,7 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from engine import art, assemble, cards, voice  # noqa: E402
+from engine import art, assemble, cards, depthmove, voice  # noqa: E402
 
 SIZE = (1080, 1920)
 PILL_H = 90
@@ -60,7 +60,7 @@ def _cues(text: str, start: float, end: float) -> list:
     return out
 
 
-def build(spec: dict, out: Path, offline: bool = False) -> Path:
+def build(spec: dict, out: Path, offline: bool = False, depth: bool = False) -> Path:
     work = out.parent / (out.stem + "-work")
     work.mkdir(parents=True, exist_ok=True)
     voice_id = spec.get("voice", "voice_7o0kddoq6q2z")
@@ -75,6 +75,9 @@ def build(spec: dict, out: Path, offline: bool = False) -> Path:
         else:
             art.paint(art.hero_style_prompt(sc["picture"] + art.HERO_FRAME_NOTE), pic, aspect="9:16")
         pics.append(pic)
+    depths = []
+    if depth:
+        depths = [depthmove.fake_depth((1080, 1920)) for _ in pics] if offline else depthmove.estimate(pics)
     lines, factor = assemble.fit_short(lines, work / "fast")
     starts = assemble._voice_track(lines, work / "voice.wav")
     band_h, band_y = assemble.caption_band(SIZE)
@@ -88,7 +91,10 @@ def build(spec: dict, out: Path, offline: bool = False) -> Path:
             overlays.append((png, 40, 130, 0.15, min(dur, 3.6)))
         for png, s, e in assemble.cue_pngs(_cues(sc["say"], 0.0, secs), SIZE, work / "cues"):
             overlays.append((png, 0, band_y, s, e))
-        clips.append(assemble.scene_clip(pics[i], dur, SIZE, work / f"clip{i:02d}.mp4", overlays=overlays))
+        source = pics[i]
+        if depth:                                                      # 3D-film movement: near parts drift more than far ones
+            source = depthmove.move(pics[i], depths[i], dur, SIZE, work / f"move{i:02d}.mp4", direction=1 if i % 2 == 0 else -1)
+        clips.append(assemble.scene_clip(source, dur, SIZE, work / f"clip{i:02d}.mp4", overlays=overlays))
     listing = work / "clips.txt"
     listing.write_text("".join(f"file '{c.resolve()}'\n" for c in clips))
     silent = work / "silent.mp4"
@@ -103,7 +109,8 @@ def main(argv=None) -> int:
     spec = json.loads(Path(args[0]).read_text())
     out = Path(args[1])
     out.parent.mkdir(parents=True, exist_ok=True)
-    build(spec, out, offline="--offline" in (argv or sys.argv[1:]))
+    flags = argv or sys.argv[1:]
+    build(spec, out, offline="--offline" in flags, depth="--depth" in flags)
     print(f"made {out}")
     return 0
 

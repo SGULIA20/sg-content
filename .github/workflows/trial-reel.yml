@@ -9,6 +9,10 @@ on:
         description: 'Trial spec in the repo'
         required: false
         default: 'content/trial/dwarka.json'
+      depth:
+        description: 'yes = 3D-film (depth) movement on the pictures'
+        required: false
+        default: ''
 
 permissions:
   contents: read
@@ -26,12 +30,15 @@ jobs:
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-core fonts-noto-color-emoji
       - run: pip install -r requirements.txt
       - run: python -m playwright install --with-deps chromium
+      - name: Depth model (only for the 3D-film trial)
+        if: ${{ inputs.depth == 'yes' }}
+        run: pip install torch --index-url https://download.pytorch.org/whl/cpu && pip install transformers opencv-python-headless
       - name: Build the trial Short
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/trial_reel.py "${{ inputs.spec }}" out/trial/trial.mp4
+        run: python scripts/trial_reel.py "${{ inputs.spec }}" out/trial/trial.mp4 ${{ inputs.depth == 'yes' && '--depth' || '' }}
       - name: Send it to the founder
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python -c "from pathlib import Path; from engine import telegram; print(telegram.send_file(Path('out/trial/trial.mp4'), 'Trial Short (new opening style). AI visualisation pictures, not photographs. Never uploaded.'))"
+        run: python -c "from pathlib import Path; from engine import telegram; print(telegram.send_file(Path('out/trial/trial.mp4'), 'Trial Short (new opening style${{ inputs.depth == 'yes' && ', 3D-film movement' || '' }}). AI visualisation pictures, not photographs. Never uploaded.'))"
