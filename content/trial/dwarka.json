@@ -1,0 +1,15 @@
+{
+ "title": "Trial: Samundar ke neeche Dwarka",
+ "note": "Hand-written trial, never uploaded. Facts follow content/myth-topics.yaml (dwarka-underwater): NIO marine archaeology 1980s-2000s, dating disputed; scripture kept apart from finds.",
+ "voice": "voice_7o0kddoq6q2z",
+ "scenes": [
+  {"say": "Samundar ke neeche Dwarka, aisa dikhta hai.", "pill": "Dwarka • Gujarat", "picture": "Photorealistic view under the sea off the Gujarat coast: ancient carved stone walls and a gateway on the sea floor, shafts of sunlight from the surface, drifting particles, teal and gold colours, no people, no text"},
+  {"say": "Mahabharat kehta hai, Krishna ki nagri samundar mein doob gayi.", "pill": "Parampara • Mausala Parva", "pill_kind": "legend", "picture": "Photorealistic dramatic coastal scene at dusk: a vast ancient city of stone towers and temple domes sinking beneath rising waves, storm clouds, golden light, cinematic, no people, no text"},
+  {"say": "Toh kya yeh sirf ek kahani hai?", "picture": "Photorealistic aerial view of the Dwarka coastline in Gujarat at dawn, the Arabian Sea meeting the shore, a temple spire in the distance, mist, cinematic, no text"},
+  {"say": "Unnees sau assi ke dashak se, samundar vigyan ke vaigyanik wahan gote lagane lage.", "pill": "NIO • 1980s se khoj", "pill_kind": "science", "picture": "Photorealistic underwater photograph of scientific divers with lights and measuring tape exploring a sea floor near the Indian coast, blue-green water, bubbles, no text"},
+  {"say": "Unhe samundar ki tali par tarashe hue patthar ke dhaanche mile.", "pill": "Archaeology • patthar ke dhaanche", "pill_kind": "science", "picture": "Photorealistic close-up underwater of huge rectangular cut stone blocks lying in a line on the sea floor, algae and small fish, soft light, no text"},
+  {"say": "Par yeh kitne purane hain, is par vidwaan ek raay nahi hain.", "pill": "Umra: bahas jaari", "pill_kind": "disputed", "picture": "Photorealistic underwater scene of weathered stone ruins fading into dark blue water, mysterious, a single shaft of light, no text"},
+  {"say": "Kahani aur khoj alag hain, aur dono ko alag rakhna zaroori hai.", "picture": "Photorealistic split-feeling composition: on one side an ancient carved temple wall in warm light, on the other cool underwater stone blocks, calm, no text"},
+  {"say": "Aur jo vaigyanik ko neeche mila, uski tasveer kuch aisi hai…", "picture": "Photorealistic underwater ancient carved stone doorway glowing faintly in dark blue water, light from the surface above, no text"}
+ ]
+}
