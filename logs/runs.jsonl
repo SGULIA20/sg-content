@@ -135,3 +135,4 @@
 {"day": "2026-11-09", "at": "2026-11-09T13:56:46+00:00", "ok": true, "dry_run": false, "made": [["2026-11-16-sglearning-long", "failed-research"]], "stopped": ""}
 {"day": "2026-11-09", "at": "2026-11-09T17:33:19+00:00", "ok": true, "dry_run": false, "made": [["2026-11-16-sglearning-long", "rejected"]], "stopped": ""}
 {"day": "2026-11-09", "at": "2026-11-09T17:52:39+00:00", "ok": true, "dry_run": false, "made": [["2026-11-16-sglearning-long", "rejected"]], "stopped": ""}
+{"day": "2026-11-10", "at": "2026-11-09T19:23:05+00:00", "ok": true, "dry_run": false, "made": [["2026-11-16-sglearning-long", "rejected"], ["2026-11-16-arthvan-short", "intro-wait"], ["2026-11-17-arthvan-long", "intro-wait"]], "stopped": ""}
