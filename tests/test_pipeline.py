@@ -624,3 +624,19 @@ def test_the_weekly_plan_outranks_a_remake_of_a_weak_reel(tmp_path, monkeypatch)
     p = _piece(day=date(2026, 11, 14))
     assert pipeline._pick_topic(p, d, tmp_path, set())["title"] == "Planned topic"
     assert pipeline._pick_topic(p, d, tmp_path, {"wk-1"})["title"] == "Old topic"               # a planned topic already tried falls back to the usual order
+
+
+def test_realistic_opening_test_only_touches_the_configured_shorts(tmp_path):
+    from engine import pipeline
+    from types import SimpleNamespace as NS
+    (tmp_path / "content").mkdir()
+    (tmp_path / "content" / "hero-test.json").write_text('{"channel": "arthvan", "from": "2026-11-16", "to": "2026-11-18", "scenes": 2}')
+    p = lambda day, kind="short", ch="arthvan": NS(id=f"{day}-{ch}-{kind}", kind=kind, channel=ch)
+    assert pipeline.is_hero(p("2026-11-16"), 0, tmp_path) and pipeline.is_hero(p("2026-11-17"), 1, tmp_path)
+    assert not pipeline.is_hero(p("2026-11-17"), 2, tmp_path)               # only the first two pictures
+    assert not pipeline.is_hero(p("2026-11-19"), 0, tmp_path)               # outside the dates
+    assert not pipeline.is_hero(p("2026-11-16", ch="sglearning"), 0, tmp_path)
+    assert not pipeline.is_hero(p("2026-11-16", kind="long"), 0, tmp_path)
+    assert not pipeline.is_hero(p("2026-11-16"), 0, tmp_path / "nowhere")   # no file: nothing changes
+    full, aspect = pipeline.panel_request(p("2026-11-16"), "A fort", True)
+    assert "Photorealistic" in full and aspect == "2:3"

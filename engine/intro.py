@@ -71,9 +71,9 @@ def spoken(text: str) -> str:
 
 def closing_for(piece) -> str:
     return _pick(piece, CLOSINGS, 5)
-MAX_WORDS = 26                              # about 10 seconds of calm Hinglish
+MAX_WORDS = 20                              # about 8 seconds (founder, 9 Nov 2026: shorter, the first real picture and fact sooner); the bridge line is dropped when over
 BRIDGE_MAX_WORDS = 13
-MIN_S, MAX_S = 8.0, 12.0                    # the clip the founder sends back
+MIN_S, MAX_S = 6.0, 12.0                    # the clip the founder sends back
 DEADLINE_HOURS = 3                          # before the earliest slot (Instagram or YouTube): the reminder goes then
 MUSIC_LUFS = -26                            # the bed under the founder's voice: audible, below him (founder, 4 Nov 2026, preview 4)
 TAIL_S = 0.35                               # after his last word the body starts (founder, 4 Nov 2026: "trim the 1-2 second pause at the end")
@@ -280,7 +280,7 @@ def prompt_for(piece, p: dict) -> str:
     pose = _pick(piece, POSES, 2)
     camera = _pick(piece, CAMERAS, 3)
     beats = _pick(piece, BEATS, 4).format(closing=(p.get("closing") or CLOSING).rstrip("."))
-    return (f"{size}, exactly 10 seconds, high-energy and cinematic, bright vivid colour. Setting: {setting}, colourful and lively, a shallow depth of field. "
+    return (f"{size}, about 8 seconds, high-energy and cinematic, bright vivid colour. Setting: {setting}, colourful and lively, a shallow depth of field. "
             f"Lighting: bright high-key light, warm and punchy, crisp on the face, a gentle rim light on the hair; no dull or flat grey look. "
             f"SG [locked] {pose}, wearing {outfit}. Speaks from the first frame, mouth matched to the words, friendly eye contact with the lens. "
             f"{DELIVERY}. Body language in three beats: {beats}. "
@@ -391,7 +391,7 @@ def check(clip: Path, p: dict, transcribe=None, seconds: float | None = None) ->
     reasons = []
     secs = duration(clip) if seconds is None else seconds
     if not MIN_S <= secs <= MAX_S:
-        reasons.append(f"the clip runs {secs:.1f} s; it should be 8-12 s")
+        reasons.append(f"the clip runs {secs:.1f} s; it should be 6-12 s")
     try:
         heard = (transcribe or inbox.transcribe)(clip)
     except Exception as e:

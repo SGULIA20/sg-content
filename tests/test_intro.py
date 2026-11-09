@@ -21,11 +21,11 @@ def test_enabled_for_painted_shorts_and_longs_not_code_card_reels():
     c = _piece(); c.kind = "carousel"; assert not intro.enabled(c)
 
 
-def test_plan_is_question_bridge_closing_within_26_words_with_the_founders_prompt_rules():
+def test_plan_is_question_then_closing_within_20_words_the_bridge_only_when_it_fits():
     p = _piece()
     plan = intro.plan(p, ask=lambda prompt: "Aapka paisa doobta hai, unki fees phir bhi pakki rehti hai")
-    assert plan["question"] == p.script["hook"] and plan["bridge"].endswith(".") and plan["closing"] in intro.CLOSINGS
-    assert plan["text"].endswith(plan["closing"]) and plan["words"] <= 26 and plan["aspect"] == "9:16"
+    assert plan["question"] == p.script["hook"] and (plan["bridge"] == "" or plan["bridge"].endswith(".")) and plan["closing"] in intro.CLOSINGS
+    assert plan["text"].endswith(plan["closing"]) and plan["words"] <= 20 and plan["aspect"] == "9:16"      # founder, 9 Nov 2026: about 8 s
     assert plan["closing"].rstrip(".") in plan["prompt"]
     for must in ("9:16 vertical, 1080x1920", "key light", "Body language in three beats", "mutual-fund statement", "@SGLearning watermark top right", "Speaks from the first frame", "wearing"):
         assert must in plan["prompt"], must
@@ -70,12 +70,12 @@ def test_request_text_names_the_piece_the_words_the_caption_and_the_deadline_in_
     assert "Sat 07 Nov 11:00 WAT" in text and "FILE" in text
 
 
-def test_check_wants_8_to_12_seconds_the_words_and_the_closing_line(tmp_path):
+def test_check_wants_6_to_12_seconds_the_words_and_the_closing_line(tmp_path):
     clip = tmp_path / "c.mp4"; clip.write_bytes(b"x")
     plan = {"text": "Aapki SIP doobe, phir bhi fund house kyun kamata hai? Aapka paisa doobta hai. Aaiye isko samajhte hain."}
     heard = "aapki sip doobe phir bhi fund house kyun kamata hai aapka paisa doobta hai aaiye isko samajhte hain"
     assert intro.check(clip, plan, transcribe=lambda c: heard, seconds=9.9) == []
-    assert any("8-12 s" in r for r in intro.check(clip, plan, transcribe=lambda c: heard, seconds=14.2))
+    assert any("6-12 s" in r for r in intro.check(clip, plan, transcribe=lambda c: heard, seconds=14.2))
     bad = intro.check(clip, plan, transcribe=lambda c: "namaste doston aaj gold ki baat", seconds=9.9)
     assert any("missing words" in r for r in bad) and any("closing line" in r for r in bad)
     extra = heard + " aapka paisa doobta hai unki fees phir bhi pakki rehti hai"        # he said more than the plan: still his script
