@@ -1,44 +1,44 @@
 {
- "end": "2026-11-01",
+ "end": "2026-11-08",
  "sglearning": {
   "best": [
    {
     "hook": "Gold January se 21.43 percent gir chuka hai, pata tha?",
-    "ig_views": 1928,
-    "skipped_early_pct": 0,
-    "watched_s": 17.6
+    "ig_views": 1949,
+    "skipped_early_pct": 35.9,
+    "watched_s": 17.5
    },
    {
     "hook": "Raat ko Bhai ka phone chamka, news thi, Zerodha par ab US stocks milenge.",
-    "ig_views": 1472,
-    "skipped_early_pct": 34.3,
+    "ig_views": 1474,
+    "skipped_early_pct": 34.4,
     "watched_s": 16.8
    },
    {
     "hook": "Subah chai ke saath, Bhai ke phone par headline chamki.",
-    "ig_views": 1370,
+    "ig_views": 1371,
     "skipped_early_pct": 34.9,
     "watched_s": 16.3
    }
   ],
   "worst": [
    {
-    "hook": "Merge ke baad charity ka maksad 5 saal fix, aur 9 khabrein.",
-    "ig_views": 3,
-    "skipped_early_pct": 66.7,
-    "watched_s": 1.7
+    "hook": "Aapki SIP doobe, phir bhi fund house kyun kamata hai?",
+    "ig_views": 1,
+    "skipped_early_pct": 0,
+    "watched_s": 21.4
    },
    {
-    "hook": "Vodafone ka 16.2 percent hissa ab French arabpati ka.",
-    "ig_views": 5,
-    "skipped_early_pct": 60,
-    "watched_s": 3.6
+    "hook": "India ne services bechkar sirf September mein 39,305 million dollar kamaye.",
+    "ig_views": 1,
+    "skipped_early_pct": 100,
+    "watched_s": 1.6
    },
    {
-    "hook": "Binance se record chori hui, phir 90 percent wapas?",
-    "ig_views": 5,
-    "skipped_early_pct": 75,
-    "watched_s": 7.6
+    "hook": "Pistachio double mehnga kyun? Aur 9 khabrein jo jeb chhooti hain.",
+    "ig_views": 1,
+    "skipped_early_pct": 100,
+    "watched_s": 0.5
    }
   ]
  },
@@ -46,41 +46,41 @@
   "best": [
    {
     "hook": "Sanchi ke stupa ke andar Buddha ki asthiyan thi ya nahi?",
-    "ig_views": 1986,
-    "skipped_early_pct": 32.4,
+    "ig_views": 2024,
+    "skipped_early_pct": 32.9,
+    "watched_s": 29.4
+   },
+   {
+    "hook": "Kedarnath ki deewaron par glacier ke nishaan kyun hain?",
+    "ig_views": 1937,
+    "skipped_early_pct": 26,
+    "watched_s": 35.7
+   },
+   {
+    "hook": "Ravan ki Lanka, kya sach mein aaj ka Sri Lanka thi?",
+    "ig_views": 1807,
+    "skipped_early_pct": 37.5,
     "watched_s": 29.6
-   },
-   {
-    "hook": "Ram Setu ke neeche drill kiya gaya, toh kya mila?",
-    "ig_views": 1735,
-    "skipped_early_pct": 30.1,
-    "watched_s": 36.0
-   },
-   {
-    "hook": "Samundar ke beech ek pul, kya woh aaj bhi dikhta hai?",
-    "ig_views": 1585,
-    "skipped_early_pct": 30.5,
-    "watched_s": 30.7
    }
   ],
   "worst": [
    {
+    "hook": "Kailash par aaj tak koi kyon nahi chadha, rokta kaun hai?",
+    "ig_views": 25,
+    "skipped_early_pct": 41.7,
+    "watched_s": 17.6
+   },
+   {
     "hook": "Kailash, woh pahad jis par aaj tak koi nahi chadha. Kyon?",
-    "ig_views": 89,
-    "skipped_early_pct": 62,
-    "watched_s": 9.0
+    "ig_views": 91,
+    "skipped_early_pct": 63,
+    "watched_s": 8.8
    },
    {
-    "hook": "Kya Mahabharata ka ek yoddha aaj bhi zinda hai?",
-    "ig_views": 156,
-    "skipped_early_pct": 56.3,
-    "watched_s": 22.6
-   },
-   {
-    "hook": "Kya patthar ke khambe sach mein sur gaa sakte hain?",
-    "ig_views": 167,
-    "skipped_early_pct": 50,
-    "watched_s": 9.1
+    "hook": "Kumbhalgarh ki deewar, China ke baad duniya mein sabse lambi?",
+    "ig_views": 154,
+    "skipped_early_pct": 42.4,
+    "watched_s": 13.8
    }
   ]
  }
