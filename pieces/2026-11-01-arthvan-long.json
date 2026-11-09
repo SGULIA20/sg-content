@@ -571,8 +571,17 @@
   "place": "Lepakshi, Andhra Pradesh",
   "target_minutes": 14,
   "thumb_test": {
-   "phase": "B",
-   "switched": "2026-11-04T11:46+00:00"
+   "a": [
+    0,
+    null
+   ],
+   "b": [
+    0,
+    null
+   ],
+   "phase": "done",
+   "switched": "2026-11-04T11:46+00:00",
+   "winner": "A"
   },
   "title_hi": "Lepakshi ka latakta khamba",
   "voice": "voice_7o0kddoq6q2z"
