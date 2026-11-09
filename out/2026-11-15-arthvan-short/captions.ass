@@ -1,0 +1,67 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.34,Default,,0,0,0,,Karna roz Surya ko arghya dekar
+Dialogue: 0,0:00:02.34,0:00:03.28,Default,,0,0,0,,kya deta tha?
+Dialogue: 0,0:00:03.73,0:00:06.11,Default,,0,0,0,,Arghya yaani Surya ko jal chadhana.
+Dialogue: 0,0:00:06.11,0:00:08.48,Default,,0,0,0,,Mahabharata ke Vana Parva mein,
+Dialogue: 0,0:00:08.48,0:00:09.78,Default,,0,0,0,,Karna roz yeh karta.
+Dialogue: 0,0:00:09.78,0:00:10.64,Default,,0,0,0,,Phir jo maango,
+Dialogue: 0,0:00:10.64,0:00:11.29,Default,,0,0,0,,woh deta.
+Dialogue: 0,0:00:11.74,0:00:13.17,Default,,0,0,0,,Lekin twist yahan hai.
+Dialogue: 0,0:00:13.17,0:00:15.32,Default,,0,0,0,,Brahmin ke bhes mein Indra aate
+Dialogue: 0,0:00:15.32,0:00:15.55,Default,,0,0,0,,hain.
+Dialogue: 0,0:00:15.55,0:00:17.94,Default,,0,0,0,,Maangte hain Karna ka kavach-kundal.
+Dialogue: 0,0:00:18.39,0:00:20.07,Default,,0,0,0,,Yeh janam se mile the,
+Dialogue: 0,0:00:20.07,0:00:21.27,Default,,0,0,0,,Karna ki raksha.
+Dialogue: 0,0:00:21.27,0:00:23.19,Default,,0,0,0,,Surya ne sapne mein roka.
+Dialogue: 0,0:00:23.19,0:00:25.11,Default,,0,0,0,,Phir bhi Karna ne kaatkar de
+Dialogue: 0,0:00:25.11,0:00:25.35,Default,,0,0,0,,diye.
+Dialogue: 0,0:00:25.80,0:00:27.52,Default,,0,0,0,,Ab Bihar ki lok-katha.
+Dialogue: 0,0:00:27.52,0:00:29.48,Default,,0,0,0,,Karna Anga ka raja tha.
+Dialogue: 0,0:00:29.48,0:00:31.69,Default,,0,0,0,,Woh kamar tak paani mein arghya
+Dialogue: 0,0:00:31.69,0:00:32.18,Default,,0,0,0,,deta.
+Dialogue: 0,0:00:32.18,0:00:32.92,Default,,0,0,0,,Kehte hain,
+Dialogue: 0,0:00:32.92,0:00:34.64,Default,,0,0,0,,Chhath yahin se shuru hui.
+Dialogue: 0,0:00:35.09,0:00:36.65,Default,,0,0,0,,Par kya Anga sach mein tha?
+Dialogue: 0,0:00:36.65,0:00:39.32,Default,,0,0,0,,Bhagalpur ke paas Champanagar ko Anga
+Dialogue: 0,0:00:39.32,0:00:41.33,Default,,0,0,0,,ki rajdhani maana jata hai.
+Dialogue: 0,0:00:41.78,0:00:44.21,Default,,0,0,0,,Patna University aur ASI,
+Dialogue: 0,0:00:44.21,0:00:46.15,Default,,0,0,0,,yaani puratatva vibhag,
+Dialogue: 0,0:00:46.15,0:00:47.61,Default,,0,0,0,,ne yahan khudai ki.
+Dialogue: 0,0:00:47.61,0:00:49.31,Default,,0,0,0,,1980 ki report:
+Dialogue: 0,0:00:49.31,0:00:52.22,Default,,0,0,0,,basti 1000 BCE se bhi purani.
+Dialogue: 0,0:00:52.67,0:00:55.13,Default,,0,0,0,,Mili mitti aur eenton ki deewar,
+Dialogue: 0,0:00:55.13,0:00:56.60,Default,,0,0,0,,aur chaaron taraf khai.
+Dialogue: 0,0:00:56.60,0:00:59.31,Default,,0,0,0,,Khai yaani paani bhari gehri naali.
+Dialogue: 0,0:00:59.76,0:01:01.78,Default,,0,0,0,,Lekin kya Karna ne Chhath shuru
+Dialogue: 0,0:01:01.78,0:01:02.01,Default,,0,0,0,,ki?
+Dialogue: 0,0:01:02.01,0:01:03.58,Default,,0,0,0,,Itihaskaar kehte hain,
+Dialogue: 0,0:01:03.58,0:01:06.05,Default,,0,0,0,,purane Sanskrit granthon mein yeh likha
+Dialogue: 0,0:01:06.05,0:01:06.72,Default,,0,0,0,,hi nahi.
+Dialogue: 0,0:01:07.17,0:01:08.91,Default,,0,0,0,,Unke hisaab se Chhath Surya ki
+Dialogue: 0,0:01:08.91,0:01:10.64,Default,,0,0,0,,bahut purani lok-pooja hai.
+Dialogue: 0,0:01:10.64,0:01:12.57,Default,,0,0,0,,Karna ki kahani baad mein judi.
+Dialogue: 0,0:01:13.02,0:01:15.12,Default,,0,0,0,,Ek sawaal aaj bhi khula hai.
+Dialogue: 0,0:01:15.12,0:01:16.95,Default,,0,0,0,,Karna asli yoddha tha,
+Dialogue: 0,0:01:16.95,0:01:18.26,Default,,0,0,0,,ya daan ki misaal?
+Dialogue: 0,0:01:18.71,0:01:19.49,Default,,0,0,0,,Toh jawab?
+Dialogue: 0,0:01:19.49,0:01:21.30,Default,,0,0,0,,Karna sab de deta tha,
+Dialogue: 0,0:01:21.30,0:01:22.07,Default,,0,0,0,,kavach bhi.
+Dialogue: 0,0:01:22.07,0:01:23.88,Default,,0,0,0,,Aaj Chhath par log waise hi
+Dialogue: 0,0:01:23.88,0:01:25.95,Default,,0,0,0,,paani mein arghya dete hain.
+Dialogue: 0,0:01:25.95,0:01:28.53,Default,,0,0,0,,Champanagar ke tile aap khud dekh
+Dialogue: 0,0:01:28.53,0:01:29.31,Default,,0,0,0,,sakte hain.
+Dialogue: 0,0:01:29.76,0:01:30.78,Default,,0,0,0,,Nani ko bhejo,
+Dialogue: 0,0:01:30.78,0:01:32.42,Default,,0,0,0,,jo Chhath par Karna ki katha
+Dialogue: 0,0:01:32.42,0:01:33.24,Default,,0,0,0,,sunati hain.

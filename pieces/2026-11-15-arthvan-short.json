@@ -1,0 +1,321 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "It is also believed that Chhath was started by Karna, the son of Surya who ruled over the Anga Desh during the Mahabharat Age.",
+   "source_date": "2021",
+   "source_name": "Chhath Traditions of Eastern India",
+   "source_url": "https://en.wikipedia.org/wiki/Chhath",
+   "text": "Regional folklore in Bihar asserts that Karna, ruling from Anga, initiated the ritual of standing waist-deep in river water to offer Arghya to Surya, thereby inspiring the core observance of Chhath Puja.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 1000.0,
+   "quote": "Excavation was taken up in three areas: CMP-1M, CMP-2A and CMP-2B, with a view to exposing the pre-Northern Black Polished Ware levels.",
+   "source_date": "1980",
+   "source_url": "https://asi.nic.in",
+   "text": "Excavations at Champanagar near modern Bhagalpur, identified with the ancient Anga capital Champa, carried out by Patna University and the Archaeological Survey of India, exposed occupational levels beginning before 1000 BCE.",
+   "unit": "BCE"
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "Ancient Champa, capital of Anga, was surrounded by fortifications and a moat.",
+   "source_date": "1973",
+   "source_url": "https://asi.nic.in",
+   "text": "Archaeological excavations at Champanagar revealed an early historic mud rampart, a defensive brick wall, and a surrounding moat encircling the ancient city.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "The stories that Sita kept Chhath at Munger, or that Karna founded it in Anga, are local traditions layered onto an older folk observance.",
+   "source_date": "2020",
+   "source_name": "Chhath: Historical Analysis and Folk Traditions",
+   "source_url": "https://en.wikipedia.org/wiki/Chhath",
+   "text": "While regional folklore across Bihar attributes the origin of Chhath Puja to Karna's penance in Anga, historians point out that ancient Sanskrit texts contain no reference to Karna founding the festival, arguing instead that Chhath originated as an ancient folk and Vedic solar celebration.",
+   "unit": null
+  }
+ ],
+ "id": "2026-11-15-arthvan-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-08",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 21.0,
+   "usd": 0.122252,
+   "voice": 13
+  },
+  "drafts": 1,
+  "ig_story_id": "skipped: Reel over 60 s",
+  "intro_sent": "2026-11-08T18:55:57+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-15",
+ "reasons": [
+  "waiting for the founder's intro clip until 15 Nov 11:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Karna roz Surya ko arghya dekar kya deta tha?\nMahabharata mein Indra aaye, aur Karna ne apna kavach kaatkar de diya.\nBihar kehta hai Chhath Karna se shuru hui, itihaskaar kehte hain granthon mein yeh likha nahi.\nAapke ghar mein Chhath ki kaunsi katha sunayi jaati hai?\nNani ko bhejo, jo Chhath par Karna ki katha sunati hain.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#Mahabharat",
+     "#HinduMythology",
+     "#IndianHistory",
+     "#Archaeology",
+     "#Itihaas",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Karna roz Surya ko arghya dekar kya deta tha? Mahabharata kehta hai: jo maango, woh, apna kavach bhi. Bihar ki lok-katha kehti hai Chhath Karna se shuru hui. Aapke ghar mein kaunsi katha sunayi jaati hai? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Karna roz Surya ko arghya dekar kya deta tha? Mahabharata kehta hai, jo maango, woh, apna janam ka kavach bhi. Bihar ki lok-katha Chhath ko Karna se jodti hai, par itihaskaar aur Champanagar ki khudai kya kehte hain, sabut ke saath dekhiye. Nani ko bhejo, jo Chhath par Karna ki katha sunati hain.",
+    "tags": [
+     "Karna",
+     "Chhath Puja",
+     "Mahabharata",
+     "Vana Parva",
+     "kavach kundal",
+     "Anga",
+     "Champanagar",
+     "Bhagalpur",
+     "Surya",
+     "Indian history",
+     "archaeology"
+    ],
+    "title": "Karna ka kavach: Chhath se kya rishta?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Nani ko bhejo, jo Chhath par Karna ki katha sunati hain.",
+  "hook": "Karna roz Surya ko arghya dekar kya deta tha?",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Dramatic drawn panel: a lone warrior seen from behind, standing waist-deep in a wide churning river under a blazing white noon sun, water pouring from his raised cupped hands, golden armour on his chest flashing with light, spray and glare filling the whole frame, epic and intense mood",
+     "type": "art"
+    },
+    "vo": "Karna roz Surya ko arghya dekar kya deta tha?"
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: the same warrior now on the riverbank at midday, a line of poor villagers and travellers in ancient Indian clothes holding out empty hands, the warrior placing gold coins and cloth into their hands, warm generous mood",
+     "type": "art"
+    },
+    "vo": "Arghya yaani Surya ko jal chadhana. Mahabharata ke Vana Parva mein, Karna roz yeh karta. Phir jo maango, woh deta."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an old robed stranger with a staff seen from behind and at a distance, standing on a sunlit river ghat, while the warrior turns toward him in surprise, faint storm clouds gathering over the river, tense mysterious mood",
+     "type": "art"
+    },
+    "vo": "Lekin twist yahan hai. Brahmin ke bhes mein Indra aate hain. Maangte hain Karna ka kavach-kundal."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: close view of glowing golden armour and shining earrings being cut away from a warrior's body with a dagger, light bursting from the armour, the robed stranger's hands receiving it, the sun dimmed behind clouds, sacrificial and solemn mood",
+     "type": "art"
+    },
+    "vo": "Yeh janam se mile the, Karna ki raksha. Surya ne sapne mein roka. Phir bhi Karna ne kaatkar de diye."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a village grandmother sitting under a banyan tree at dusk telling a story to wide-eyed children, behind her a dreamy painted vision of a king standing waist-deep in the Ganga offering water to the rising sun, warm folk-tale mood",
+     "type": "art"
+    },
+    "vo": "Ab Bihar ki lok-katha. Karna Anga ka raja tha. Woh kamar tak paani mein arghya deta. Kehte hain, Chhath yahin se shuru hui."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: aerial view of a low grassy mound beside the broad Ganga near a modern town, farmland and small houses around it, early morning mist, a sense of hidden history beneath the earth",
+     "type": "art"
+    },
+    "vo": "Par kya Anga sach mein tha? Bhagalpur ke paas Champanagar ko Anga ki rajdhani maana jata hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: archaeologists in hats and dusty clothes working in deep square trenches cut into a mound, layered soil walls showing dark and light bands, broken black pottery shards laid out on a tray, bright afternoon, discovery mood",
+     "type": "art"
+    },
+    "vo": "Patna University aur ASI, yaani puratatva vibhag, ne yahan khudai ki. 1980 ki report: basti 1000 BCE se bhi purani."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: reconstruction of an ancient walled city seen from above, a thick mud rampart and a brick wall circling clustered houses, a wide water-filled moat wrapping around the walls, river in the background, grand and mysterious mood",
+     "type": "art"
+    },
+    "vo": "Mili mitti aur eenton ki deewar, aur chaaron taraf khai. Khai yaani paani bhari gehri naali."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a historian seen from behind in a dim library, turning the pages of old palm-leaf manuscripts under a lamp, piles of ancient texts around, a questioning thoughtful mood",
+     "type": "art"
+    },
+    "vo": "Lekin kya Karna ne Chhath shuru ki? Itihaskaar kehte hain, purane Sanskrit granthon mein yeh likha hi nahi."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: an ancient village scene with simple farmers offering water and harvest baskets to the rising sun at a riverbank, no kings, earthy and timeless mood, soft golden light",
+     "type": "art"
+    },
+    "vo": "Unke hisaab se Chhath Surya ki bahut purani lok-pooja hai. Karna ki kahani baad mein judi."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a lone warrior's silhouette standing on a hill at sunset, half of the figure solid and real, the other half fading into swirling painted mist, an empty chariot nearby, haunting unresolved mood",
+     "type": "art"
+    },
+    "vo": "Ek sawaal aaj bhi khula hai. Karna asli yoddha tha, ya daan ki misaal?"
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a crowded Chhath ghat at sunrise on the Ganga, hundreds of devotees standing waist-deep holding bamboo baskets of fruit toward the red rising sun, oil lamps floating, and in the far background a low ancient mound on the riverbank, joyful devotional mood",
+     "type": "art"
+    },
+    "vo": "Toh jawab? Karna sab de deta tha, kavach bhi. Aaj Chhath par log waise hi paani mein arghya dete hain. Champanagar ke tile aap khud dekh sakte hain."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Drawn panel: a grandmother in a simple sari sitting on a courtyard charpai at dawn, a Chhath basket of fruit beside her, telling a story to a smiling grandchild, warm loving mood",
+     "type": "art"
+    },
+    "vo": "Nani ko bhejo, jo Chhath par Karna ki katha sunati hain."
+   }
+  ],
+  "thumbnail": {
+   "name": "KARNA",
+   "name_hi": "कर्ण",
+   "scene": "A lone warrior seen from behind standing waist-deep in a blazing golden river at noon, cutting glowing golden armour from his body while a robed stranger waits on the bank under a darkening sky.",
+   "words": [
+    "1000 BCE",
+    "SACH?"
+   ],
+   "words_hi": [
+    "1000 ई.पू.",
+    "सच?"
+   ]
+  },
+  "title": "Karna, Chhath aur kaata hua *kavach* 🤯"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  3.73,
+  11.74,
+  18.39,
+  25.8,
+  35.09,
+  41.78,
+  52.67,
+  59.76,
+  67.17,
+  73.02,
+  78.71,
+  89.76
+ ],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "en.wikipedia.org",
+   "nio.res.in",
+   "britannica.com",
+   "the scripture or text named in the story"
+  ],
+  "follows": "Chhath Puja falls on 15 Nov. Karna content drew 513k views and Chhath content 714k. A famous name with a shock question fits.",
+  "hooks": [
+   "Surya ka putra hokar bhi Karna ne apna kavach kyun de diya?",
+   "Chhath ke din Karna ka naam kyun liya jata hai?"
+  ],
+  "id": "wk-2026-11-15-arthvan-short",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "Ab suniye, ye chaunkane wali baat hai!",
+   "prompt": "9:16 vertical, 1080x1920, exactly 10 seconds, high-energy and cinematic, bright vivid colour. Setting: the ramparts of a hill fort at dawn, mist in the valley, soft golden light, colourful and lively, a shallow depth of field. Lighting: bright high-key light, warm and punchy, crisp on the face, a gentle rim light on the hair; no dull or flat grey look. SG [locked] walking and talking, then stopping suddenly and turning to face the camera on the key word, one open palm raised, wearing a white shirt with sleeves rolled and a dark waistcoat. Speaks from the first frame, mouth matched to the words, friendly eye contact with the lens. Delivery: bubbling over with excitement like a TV news reporter who has just found an amazing story and cannot wait to share it: a warm, genuine smile and bright wide eyes, delighted and amazed, never angry; pitch jumps on the key word, a half-second pause before the number, a big grin on the reveal, open inviting gestures; no scowl, no frown, no glaring, no shouting at the viewer; never flat, never calm, never monotone. Body language in three beats: on the question, a delighted lift of the eyebrows and both hands thrown open; on the second line, a quick finger count, rising excitement; on \"Ab suniye, ye chaunkane wali baat hai!\", a confident nod to the lens. Prop: a printed photograph or old map of the place, held up to the camera for a moment, held low at first and lifted toward the lens on the second line, then lowered. Camera: handheld tracking shot that walks backward with him, slight natural shake, medium shot to medium close-up. @SGMythWorld watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No laptop, tablet, monitor, TV or glowing blue screen anywhere in the frame; the only object in his hands or near him is the prop. Export at 1080x1920.",
+   "question": "Karna roz Surya ko arghya dekar kya deta tha?",
+   "text": "Karna roz Surya ko arghya dekar kya deta tha? Ab suniye, ye chaunkane wali baat hai!",
+   "words": 16
+  },
+  "layers": true,
+  "summary": "Mahabharata's Karna worshipped Surya at midday and gave whatever was asked of him. Covers the Vana Parva episode where Indra takes the kavach-kundal. Check the verse source. Label the Chhath-Karna link in the Munger/Anga region as folk tradition.",
+  "target_minutes": null,
+  "title": "Karna roz Surya ko arghya dene ke baad kya deta tha?",
+  "topic_score": 9,
+  "topic_score_why": [
+   "+2 a famous name",
+   "+3 a shock question or a mystery",
+   "+3 timely: Chhath Puja",
+   "+1 asks a question"
+  ],
+  "voice": "voice_g8azc8xcwhlu",
+  "weekly": true
+ },
+ "updated": "2026-11-08T18:56:00+00:00",
+ "writer": "claude"
+}
