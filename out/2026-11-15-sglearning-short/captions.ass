@@ -1,0 +1,42 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.38,Default,,0,0,0,,America mein AI share gire,
+Dialogue: 0,0:00:02.38,0:00:04.52,Default,,0,0,0,,toh kya aapka SIP bhi doobega?
+Dialogue: 0,0:00:04.97,0:00:07.39,Default,,0,0,0,,America ke tech share ek din
+Dialogue: 0,0:00:07.39,0:00:09.08,Default,,0,0,0,,mein buri tarah gire.
+Dialogue: 0,0:00:09.08,0:00:10.77,Default,,0,0,0,,Bhai ka paisa SIP mein hai.
+Dialogue: 0,0:00:11.22,0:00:12.13,Default,,0,0,0,,Bhai bola,
+Dialogue: 0,0:00:12.13,0:00:13.34,Default,,0,0,0,,SIP band karo.
+Dialogue: 0,0:00:13.34,0:00:14.85,Default,,0,0,0,,AI har jagah hai,
+Dialogue: 0,0:00:14.85,0:00:16.66,Default,,0,0,0,,India bhi girega.
+Dialogue: 0,0:00:17.11,0:00:17.64,Default,,0,0,0,,Taiwan,
+Dialogue: 0,0:00:17.64,0:00:18.71,Default,,0,0,0,,Korea hil gaye.
+Dialogue: 0,0:00:18.71,0:00:21.37,Default,,0,0,0,,Wahan bazaar ka 70 percent se
+Dialogue: 0,0:00:21.37,0:00:22.43,Default,,0,0,0,,zyada AI hai.
+Dialogue: 0,0:00:22.88,0:00:24.34,Default,,0,0,0,,Lekin twist yeh hai.
+Dialogue: 0,0:00:24.34,0:00:26.37,Default,,0,0,0,,Goldman Sachs ke hisaab se,
+Dialogue: 0,0:00:26.37,0:00:28.99,Default,,0,0,0,,India mein yeh sirf 16 percent
+Dialogue: 0,0:00:28.99,0:00:29.28,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:29.73,0:00:32.43,Default,,0,0,0,,Usi din videshi investors ne India
+Dialogue: 0,0:00:32.43,0:00:34.68,Default,,0,0,0,,mein saalon ki sabse badi khareed
+Dialogue: 0,0:00:34.68,0:00:34.91,Default,,0,0,0,,ki,
+Dialogue: 0,0:00:34.91,0:00:35.81,Default,,0,0,0,,reportedly.
+Dialogue: 0,0:00:36.26,0:00:38.32,Default,,0,0,0,,India mein AI companiyan kam,
+Dialogue: 0,0:00:38.32,0:00:39.87,Default,,0,0,0,,isliye jhatka bhi kam.
+Dialogue: 0,0:00:39.87,0:00:41.68,Default,,0,0,0,,Bechne se pehle dekhiye,
+Dialogue: 0,0:00:41.68,0:00:43.48,Default,,0,0,0,,paisa kahan laga hai.
+Dialogue: 0,0:00:43.48,0:00:46.06,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:46.51,0:00:47.99,Default,,0,0,0,,Yeh us bhai ko bhejo jo
+Dialogue: 0,0:00:47.99,0:00:50.11,Default,,0,0,0,,America ki har khabar pe SIP
+Dialogue: 0,0:00:50.11,0:00:50.75,Default,,0,0,0,,rokta hai.

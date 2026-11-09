@@ -2,221 +2,284 @@
  "channel": "sglearning",
  "facts": [
   {
-   "label": "reported",
-   "number": 100000.0,
-   "quote": "Under Section 194A, the limit for a tax deduction on interest for senior citizens is being doubled from the present Rs 50,000 to Rs 1 lakh.",
-   "source_date": "2025-02-01",
-   "source_name": "Business Standard",
-   "source_url": "https://www.business-standard.com/budget/news/financial-planning-post-budget-2025-taking-into-account-new-changes-125020101149_1.html",
-   "text": "Under Section 194A amendments, the threshold for deducting tax at source on deposit interest for senior citizens was doubled to 100,000 INR per annum.",
-   "unit": "INR"
-  },
-  {
-   "label": "reported",
-   "number": 50000.0,
-   "quote": "Senior citizens can also claim a deduction of up to ₹50,000 on interest income under Section 80TTB (available under the old tax regime), potentially reducing their tax burden on FD earnings.",
-   "source_date": "2026-01-16",
-   "source_name": "Business Standard",
-   "source_url": "https://www.business-standard.com/finance/personal-finance/fd-rates-touch-8-at-small-finance-banks-as-returns-outpace-big-lenders-126011600465_1.html",
-   "text": "Senior citizens can claim a tax deduction of up to 50,000 INR on deposit interest earnings under Section 80TTB when opting for the old tax regime.",
-   "unit": "INR"
+   "label": "analyst-view",
+   "number": 16.0,
+   "quote": "Companies related to AI account for about 16% of MSCI India's value, against 70-80% in Taiwan and Korea, according to Goldman Sachs.",
+   "source_date": "2026-11-09",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/india-ai-trade-global-shares-it-firms-data-centre-11794200311059.html",
+   "text": "Artificial intelligence-related companies account for approximately 16% of MSCI India's total market value, according to Goldman Sachs.",
+   "unit": "pct"
   },
   {
    "label": "analyst-view",
-   "number": 200.0,
-   "quote": "Accordingly, senior citizens must remain vigilant in ensuring full and accurate disclosure of their interest earnings in their annual Income Tax Returns (ITR), failing which they may be exposed to punitive repercussions, including but not limited to the imposition of penalties under Section 271(1)(c), extending up to 200% of the tax...",
-   "source_date": "2025-02-11",
-   "source_name": "Business Standard",
-   "source_url": "https://www.business-standard.com/finance/personal-finance/senior-citizens-how-the-rs-1-lakh-tds-threshold-affects-your-fd-earnings-125021100523_1.html",
-   "text": "Failure to accurately report fixed deposit interest income in annual tax returns exposes taxpayers to penalties under Section 271(1)(c) reaching up to 200 percent of the tax payable.",
+   "number": 70.0,
+   "quote": "Companies related to AI account for about 16% of MSCI India's value, against 70-80% in Taiwan and Korea, according to Goldman Sachs.",
+   "source_date": "2026-11-09",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/india-ai-trade-global-shares-it-firms-data-centre-11794200311059.html",
+   "text": "Artificial intelligence-linked firms constitute between 70% and 80% of MSCI benchmark equity value in Taiwan and South Korea, creating significantly higher vulnerability to global tech slumps than in India.",
    "unit": "pct"
+  },
+  {
+   "label": "analyst-view",
+   "number": 7.0,
+   "quote": "Of the 84 leading private AI companies identified by Goldman Sachs in October, only seven focus on models, model training, or AI integration.",
+   "source_date": "2026-11-09",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/india-ai-trade-global-shares-it-firms-data-centre-11794200311059.html",
+   "text": "Out of 84 leading private artificial intelligence firms globally tracked by Goldman Sachs, only seven concentrate directly on foundation models, model training, or AI integration.",
+   "unit": "companies"
+  },
+  {
+   "label": "analyst-view",
+   "number": 84.0,
+   "quote": "Of the 84 leading private AI companies identified by Goldman Sachs in October, only seven focus on models, model training, or AI integration.",
+   "source_date": "2026-11-09",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/india-ai-trade-global-shares-it-firms-data-centre-11794200311059.html",
+   "text": "Goldman Sachs identified 84 prominent private artificial intelligence companies worldwide, illustrating how few private entities operate at the frontier of commercial AI technology.",
+   "unit": "companies"
+  },
+  {
+   "label": "reported",
+   "number": 5.5,
+   "quote": "The Nasdaq composite index fell 5.5% after Democrats swept the US midterm elections, raising fears that new limits on data centres could slow AI spending.",
+   "source_date": "2026-11-09",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/india-ai-trade-global-shares-it-firms-data-centre-11794200311059.html",
+   "text": "The tech-heavy Nasdaq composite index fell 5.5% on 5 November following concerns that potential regulatory curbs on data centres could slow artificial intelligence capital expenditure.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 1.6,
+   "quote": "Foreign investors bought $1.6 billion of Indian shares that day, their largest one-day purchase in nearly six years, according to exchange data.",
+   "source_date": "2026-11-09",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/india-ai-trade-global-shares-it-firms-data-centre-11794200311059.html",
+   "text": "Foreign portfolio investors bought $1.6 billion worth of Indian equities on 5 November as global market participants sought insulation from overseas technology declines.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "reported",
+   "number": 6.0,
+   "quote": "Foreign investors bought $1.6 billion of Indian shares that day, their largest one-day purchase in nearly six years, according to exchange data.",
+   "source_date": "2026-11-09",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/india-ai-trade-global-shares-it-firms-data-centre-11794200311059.html",
+   "text": "The single-day foreign net investment of $1.6 billion represented the largest single-day equity purchase in India by overseas investors in nearly six years.",
+   "unit": "years"
   }
  ],
  "id": "2026-11-15-sglearning-short",
  "ids": {
   "budget": {
    "day": "2026-11-08",
-   "drafts": 3,
-   "research": 1
+   "drafts": 4,
+   "research": 2
   },
   "cost": {
-   "inr": 0.0,
-   "usd": 0.111548,
-   "voice": 0
+   "inr": 13.5,
+   "usd": 0.186794,
+   "voice": 8
   },
-  "drafts": 3
+  "drafts": 4,
+  "intro_sent": "2026-11-09T07:32:00+00:00"
  },
  "kind": "short",
  "publish_day": "2026-11-15",
  "reasons": [
   "try 1: numbers without a source: 10, 15, 15, 15, 15, 15, 15, 10, 15, 15, 10, 15, 15",
   "try 2: length: 126 words, allowed 85-125; numbers without a source: 15, 15",
-  "try 3: numbers without a source: 15, 15"
+  "try 3: numbers without a source: 15, 15",
+  "waiting for the founder's intro clip until 15 Nov 10:00 UTC"
  ],
  "script": {
   "captions": {
    "instagram": {
-    "caption": "Income zero hai, phir bhi bank FD ka byaaj kaat lega? 😳\nFD ka byaaj 50,000 rupaye paar, aur bank ne pehle hi TDS kaat liya.\nEk self-declaration form (seniors ke liye alag) yeh katauti pehle hi rok sakta hai, agar poori income par tax na banta ho.\nAapke ghar mein kisi ka TDS kata hai? Yeh investment advice nahi hai.\nYeh Mummy ko bhejo, jinki FD ka byaaj chupchaap katta hai.",
+    "caption": "America mein AI share gire, toh kya aapka SIP bhi doobega?\nGoldman Sachs ke hisaab se India ke bazaar mein AI sirf lagbhag 16 percent hai, Taiwan aur Korea mein 70 percent se zyada.\nUsi din videshi investors ne India mein saalon ki sabse badi khareed ki, reportedly.\nAapne us din kya kiya, SIP roka ya chalne diya?\nYeh investment advice nahi hai.\nUs bhai ko bhejo jo America ki har khabar pe SIP rok deta hai.",
     "hashtags": [
-     "#IncomeTax",
-     "#PersonalFinanceIndia",
-     "#MoneyTipsHindi",
-     "#HinglishFinance",
      "#PaiseKiKhabar",
-     "#SeedhiBaat",
+     "#StockMarketIndia",
+     "#SIP",
+     "#MutualFunds",
+     "#HinglishFinance",
+     "#Nifty",
      "#LearningWithSG"
     ]
    },
    "threads": {
-    "text": "Income zero, phir bhi bank ne FD ka byaaj kaat liya? FD byaaj 50,000 rupaye paar hote hi bank TDS kaat leta hai. Self-declaration form time par diya kya? Aapke ghar mein kiska TDS kata hai? #PaiseKiKhabar #MoneyTipsHindi"
+    "text": "America mein AI share gire, toh kya aapka SIP bhi doobega? India ke bazaar mein AI sirf lagbhag 16 percent hai, Taiwan aur Korea mein 70 percent se zyada. Aapne us din SIP roka ya chalne diya? #PaiseKiKhabar #MoneyTipsHindi"
    },
    "youtube": {
     "chapters": [],
-    "description": "Income zero hai, phir bhi bank FD ka byaaj kaat lega? FD ka byaaj ek limit paar karte hi bank TDS kaat leta hai, chahe aap par tax banta hi na ho. Self-declaration form time par do, to yeh katauti ruk sakti hai. Us dost ko bhejo jiski biwi ya maa ki FD ka byaaj har saal katta hai.",
+    "description": "America mein AI share gire, toh kya aapka SIP bhi doobega? Goldman Sachs ke hisaab se India ke bazaar mein AI ka hissa sirf lagbhag 16 percent hai, Taiwan aur Korea mein 70 percent se zyada. Isliye ghabrahat mein bechne se pehle dekhiye ki aapka paisa kahan laga hai. Us bhai ko bhejo jo America ki har khabar pe SIP rok deta hai.",
     "tags": [
-     "FD TDS",
-     "Form 15G",
-     "Form 15H",
-     "FD interest tax",
-     "TDS refund",
-     "income tax",
-     "senior citizen FD",
-     "fixed deposit",
+     "AI crash",
+     "India stock market",
+     "SIP",
+     "mutual funds",
+     "Goldman Sachs",
+     "AI shares",
+     "Taiwan Korea market",
+     "foreign investors",
      "Hinglish finance",
      "Learning with SG"
     ],
-    "title": "FD TDS: income zero, phir bhi kyun kata?"
+    "title": "AI crash: India ko kam jhatka kyun laga?"
    }
   },
   "cards": [],
   "carousel": false,
-  "end_question": "Yeh Mummy ko bhejo, jinki FD ka byaaj chupchaap katta hai.",
-  "hook": "Income zero hai, phir bhi bank FD ka byaaj kaat lega?",
+  "end_question": "Yeh us bhai ko bhejo jo America ki har khabar pe SIP rokta hai.",
+  "hook": "America mein AI share gire, toh kya aapka SIP bhi doobega?",
   "scenes": [
    {
-    "facts_used": [],
-    "label": null,
+    "facts_used": [
+     4
+    ],
+    "label": "hook",
     "visual": {
      "card": null,
-     "prompt": "Close-up of an open bank passbook on a wooden table, one entry circled hard in red pen, a pair of scissors lying across a small stack of rupee notes beside it, dramatic lamp light at night",
+     "prompt": "A giant wall of stock market screens in a New York trading hall at night, every screen glowing deep red with steep falling lines, a huge red downward arrow cutting across the frame, dramatic and tense, no people in focus",
      "type": "art"
     },
-    "vo": "Income zero hai, phir bhi bank FD ka byaaj kaat lega?"
+    "vo": "America mein AI share gire, toh kya aapka SIP bhi doobega?"
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "A small Indian living room in the evening, BHAI in a hoodie sitting on the sofa looking alarmed at a TV showing a red falling chart, MUMMY in a saree standing behind him holding chai, worried expression",
+     "type": "art"
+    },
+    "vo": "America ke tech share ek din mein buri tarah gire. Bhai ka paisa SIP mein hai."
+   },
+   {
+    "facts_used": [],
+    "label": "the choice",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI standing up from the sofa, waving his hand firmly as if deciding to quit, a passbook and mutual fund statement on the table in front of him, tense night light from a table lamp",
+     "type": "art"
+    },
+    "vo": "Bhai bola, SIP band karo. AI har jagah hai, India bhi girega."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "the belief",
+    "visual": {
+     "card": null,
+     "prompt": "A busy Asian city skyline at dusk with tall glass towers and chip factories, a stormy dark cloud hanging low over it, lightning striking near the factories, sense of a shaken market",
+     "type": "art"
+    },
+    "vo": "Taiwan, Korea hil gaye. Wahan bazaar ka 70 percent se zyada AI hai."
    },
    {
     "facts_used": [
      0
     ],
-    "label": null,
+    "label": "twist",
     "visual": {
      "card": null,
-     "prompt": "WIFE at the kitchen table in the afternoon, proudly holding a folder of FD receipts, a steel dabba of saved cash beside her, calm and satisfied",
+     "prompt": "A big drawn pie of the Indian market shaped like a round thali, only a small slice glowing blue for AI while the rest shows banks, cars, medicines and groceries, bright morning light, SG standing beside it pointing at the small slice",
      "type": "art"
     },
-    "vo": "Biwi ki FD, ghar ki bachat se bani. Byaaj 50,000 rupaye paar."
+    "vo": "Lekin twist yeh hai. Goldman Sachs ke hisaab se, India mein yeh sirf 16 percent hai."
    },
    {
-    "facts_used": [],
-    "label": null,
+    "facts_used": [
+     5,
+     6
+    ],
+    "label": "what really happened",
     "visual": {
      "card": null,
-     "prompt": "WIFE walking out of a bank branch in the morning, waving off a stack of blank forms on the counter, relaxed and confident",
+     "prompt": "The Mumbai stock exchange building in bright daylight, a line of foreign investors in suits walking in carrying briefcases, green arrows rising in the sky above the building, upbeat mood",
      "type": "art"
     },
-    "vo": "Salary hi nahi, to tax kaisa? Isliye bank mein koi form nahi bhara."
+    "vo": "Usi din videshi investors ne India mein saalon ki sabse badi khareed ki, reportedly."
    },
    {
     "facts_used": [
      0
     ],
-    "label": null,
+    "label": "what to do",
     "visual": {
      "card": null,
-     "prompt": "A large drawn rupee coin on a bank counter with a slice cut out of it like a cake, BANK UNCLE behind the counter pushing the slice into a government box, cool office light",
+     "prompt": "BHAI sitting calmly at the dining table late at night, spreading out his fund statements and sorting them into small piles, SG beside him nodding, warm lamp light, relief on BHAI's face",
      "type": "art"
     },
-    "vo": "Lekin bank ne byaaj ka hissa pehle hi kaat liya. Yeh TDS hai."
+    "vo": "India mein AI companiyan kam, isliye jhatka bhi kam. Bechne se pehle dekhiye, paisa kahan laga hai. Yeh investment advice nahi hai."
    },
    {
     "facts_used": [],
-    "label": null,
+    "label": "send",
     "visual": {
      "card": null,
-     "prompt": "WIFE sitting on a sofa in the evening looking worried at a wall calendar with many pages flipping, a locked small cash box on the table in front of her",
+     "prompt": "Two brothers on a balcony at sunrise, one in a hoodie laughing and putting his arm around the other, a city waking up behind them, light and friendly mood",
      "type": "art"
     },
-    "vo": "Bank ko baaki income pata hi nahi. Paisa phasa, refund ke intezaar mein."
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "SG in a striped shirt at a bank counter holding up a single form like a shield, PAPA in a kurta beside him nodding, bright daylight through the bank window",
-     "type": "art"
-    },
-    "vo": "Par twist yeh hai, ek chhota self-declaration form yeh katauti rokta hai."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A row of three different bank counters seen from above, a hand dropping one form into each tray, spring morning light, calm organised mood",
-     "type": "art"
-    },
-    "vo": "Har saal ki shuruaat mein, har bank mein do. Shart: income par tax na banta ho. Yeh investment advice nahi hai."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "MUMMY in a saree at home with a cup of chai, smiling with relief as she holds her FD receipts, warm evening light",
-     "type": "art"
-    },
-    "vo": "Yeh Mummy ko bhejo, jinki FD ka byaaj chupchaap katta hai."
+    "vo": "Yeh us bhai ko bhejo jo America ki har khabar pe SIP rokta hai."
    }
   ],
   "thumbnail": {
-   "name": "FD TDS",
-   "name_hi": "एफडी टीडीएस",
-   "scene": "A thick stack of rupee notes on a bank counter with a giant pair of scissors slicing a chunk away, the cut notes falling into a dark box.",
+   "name": "AI CRASH",
+   "name_hi": "एआई क्रैश",
+   "scene": "LEFT: a New York trading wall of screens glowing red with crashing charts under a stormy sky; RIGHT: the Mumbai stock exchange building standing calm in bright sunlight with green arrows rising above it",
    "words": [
-    "10% CUT",
-    "TRAP?"
+    "16%",
+    "SAFE?"
    ],
    "words_hi": [
-    "10% कट",
-    "ट्रैप?"
+    "16%",
+    "सेफ?"
    ]
   },
-  "title": "Income zero, phir bhi *TDS* kata? 😳"
+  "title": "AI crash mein *India* kyun tika? 🤔"
  },
- "status": "rejected",
- "timings": [],
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  4.97,
+  11.22,
+  17.11,
+  22.88,
+  29.73,
+  36.26,
+  46.51
+ ],
  "topic": {
-  "follows": "The 'Rs 1 crore FD, tax bachane ka trick' video drew 529k views. This is a tax angle on FD interest that has not been covered yet.",
-  "hooks": [
-   "FD ka byaaj ₹50,000 se upar gaya, to bank kitna kaat lega?",
-   "Bina income ke bhi TDS kat jaye, to kya karein?"
-  ],
-  "id": "wk-2026-11-15-sglearning-short",
-  "patch_tries": 2,
-  "summary": "Explains the TDS threshold on bank FD interest (₹50,000 a year for non-seniors, ₹1 lakh for seniors, per the Budget 2025 change), what Form 15G/15H does, and who can use it. Check the current limits on the Income Tax and bank sites.",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "Ruko, asli khel abhi baaki hai!",
+   "prompt": "9:16 vertical, 1080x1920, exactly 10 seconds, high-energy and cinematic, bright vivid colour. Setting: a broker's office, a wall of green and red tickers softly blurred behind, colourful and lively, a shallow depth of field. Lighting: bright high-key light, warm and punchy, crisp on the face, a gentle rim light on the hair; no dull or flat grey look. SG [locked] standing right in the middle of the scene, leaning eagerly toward the lens, eyebrows high, one hand sweeping through the air, wearing a cream Nehru jacket over a white shirt. Speaks from the first frame, mouth matched to the words, friendly eye contact with the lens. Delivery: bubbling over with excitement like a TV news reporter who has just found an amazing story and cannot wait to share it: a warm, genuine smile and bright wide eyes, delighted and amazed, never angry; pitch jumps on the key word, a half-second pause before the number, a big grin on the reveal, open inviting gestures; no scowl, no frown, no glaring, no shouting at the viewer; never flat, never calm, never monotone. Body language in three beats: on the question, an incredulous head shake and open palms; on the second line, a small beat of the open hand on each key word; on \"Ruko, asli khel abhi baaki hai!\", a wink-like nod and a hand beckoning the viewer in. Prop: a printed mutual-fund statement and a yellow highlighter, held low at first and lifted toward the lens on the second line, then lowered. Camera: low angle, slightly below eye level, tracking him as he strides toward the lens. @SGLearning watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No laptop, tablet, monitor, TV or glowing blue screen anywhere in the frame; the only object in his hands or near him is the prop. Export at 1080x1920.",
+   "question": "America mein AI share gire, toh kya aapka SIP bhi doobega?",
+   "text": "America mein AI share gire, toh kya aapka SIP bhi doobega? Ruko, asli khel abhi baaki hai!",
+   "words": 17
+  },
+  "layers": true,
+  "link": "https://www.livemint.com/market/stock-market-news/india-ai-trade-global-shares-it-firms-data-centre-11794200311059.html",
+  "published": "2026-11-09T06:07:54+00:00",
+  "rank": 3,
+  "source": "Mint Markets",
+  "summary": "India has only a few companies building AI models, and the rout could make them harder to fund. Of the 84 leading private AI companies identified by Goldman Sachs in October, only seven focus on models, model training, or AI integration",
   "target_minutes": null,
-  "title": "FD ke byaaj par TDS kab katta hai, aur kaise bachein?",
-  "topic_score": 6,
+  "title": "What the global AI rout means for India",
+  "topic_score": 2,
   "topic_score_why": [
-   "+3 touches the viewer's own money",
-   "+1 a choice the viewer faces",
-   "+1 a concrete number",
+   "+1 touches the viewer's own money (in the summary)",
    "+1 asks a question"
   ],
-  "weekly": true
+  "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-11-08T19:04:16+00:00",
+ "updated": "2026-11-09T07:32:03+00:00",
  "writer": "claude"
 }
