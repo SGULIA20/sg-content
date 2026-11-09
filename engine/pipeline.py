@@ -7,7 +7,7 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Callable
 
-from . import art, artbatch, assemble, buffer, cards, cartoon, cast, claims, costs, gemini, intro, lint, newscard, pieces, qa, research, secrets, slots, storyframe, telegram, topics, voice, voicebatch, writer, youtube
+from . import art, artbatch, assemble, buffer, cards, cartoon, cast, claims, costs, gemini, intro, lint, newscard, opening, pieces, qa, research, secrets, slots, storyframe, telegram, topics, voice, voicebatch, writer, youtube
 from .config import CHANNELS, INSTAGRAM_CAROUSEL, ROOT, VIDEO, story_words
 from .pieces import Piece
 
@@ -83,19 +83,9 @@ LONG_PANEL_NOTE = (" Very wide cinematic frame; every face and the key object si
 LONG_PANEL_ASPECT = "21:9"                     # the long video's picture strip is 1920x713 (about 2.7:1); 21:9 loses little
 
 
-HERO_TEST_FILE = Path("content") / "hero-test.json"      # {"channel": "arthvan", "from": "2026-11-16", "to": "2026-11-18", "scenes": 2}
-
-
 def is_hero(piece: Piece, i: int, root: Path = None) -> bool:
-    """True for the first drawn picture(s) of a Short in the realistic-opening test: the channel's Shorts dated from..to, scenes before `scenes`."""
-    path = (Path(root) if root else Path(".")) / HERO_TEST_FILE
-    try:
-        t = json.loads(path.read_text())
-    except (OSError, ValueError):
-        return False
-    day = str(piece.id)[:10]
-    return (piece.kind == "short" and piece.channel == t.get("channel") and t.get("from", "9") <= day <= t.get("to", "0")
-            and i < int(t.get("scenes", 1)))
+    """True for the first drawn picture(s) of a Short in the new-opening test (engine.opening reads content/hero-test.json)."""
+    return opening.is_hero_scene(piece, i, Path(root) / "content" if root else None)
 
 
 def panel_request(piece: Piece, prompt: str, hero: bool = False) -> tuple:

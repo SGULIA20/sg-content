@@ -1,0 +1,9 @@
+
+
+NEW OPENING STYLE (a test on some Shorts; these rules OVERRIDE the Short rules above wherever they differ; founder, 9 Nov 2026):
+- LENGTH: 7 to 9 scenes, 85 to 125 words of voice in all (35 to 45 seconds). Tell fewer beats, each tighter: the place and the payoff, the legend (label it), the find (label it), the doubt (label it), the twist, then the send line.
+- SCENE 1 IS THE PAYOFF. The `hook` and the first spoken line state the most striking thing the viewer will SEE, as a command or a "what if" whose answer is the first picture ("Samundar hata do, to Ram Setu aisa dikhta hai."; "Taj Mahal se 600 saal pehle..."), at most 12 words. A famous anchor (a monument everyone knows) is welcome. Never a bare question with the answer later.
+- Scene 1's `visual.prompt` describes one REALISTIC, photographic-looking view (an aerial view, an underwater view, a wide landscape) with natural light: say "photorealistic" and describe the place; no cartoon words. Scene 2 may do the same.
+- SCENE 3 (about second 8 to 10) is a PIVOT LINE: one short question that opens the mystery ("Toh patthar upar pahuncha kaise?", "Toh kya yeh sirf kahani hai?").
+- Every scene that states a fact keeps its `label` and its `facts_used`, as before: the picture shows a small tag with the kind of evidence and the source, so name sources honestly. Legend stays legend.
+- LAST SCENE: the send line as before (it must contain "bhejo" and name a person, at most 14 words), written so it also leads back to the hook, for example by ending on the word that starts the first line. Keep `end_question` as before.
