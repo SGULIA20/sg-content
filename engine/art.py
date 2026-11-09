@@ -133,6 +133,16 @@ def blank_share(path: Path, flat: float = 7.0) -> float:
     return best * 4 / h
 
 
+HERO_STYLE = ("Photorealistic cinematic photograph look: natural colours, sharp detail, dramatic natural light, real textures, ultra detailed; "
+              "not a drawing, not a comic. No text, no watermark, no logo.")
+
+
+def hero_style_prompt(scene_prompt: str) -> str:
+    """The realistic opening picture (founder, 9 Nov 2026: Ankur Uncovers opens on a realistic view and holds viewers; test it on a few Shorts).
+    It is an AI visualisation, so every upload already carries YouTube's synthetic-media flag."""
+    return f"{scene_prompt.strip()}. {HERO_STYLE}"
+
+
 def style_prompt(channel: str, scene_prompt: str, root: Path = CONTENT_DIR) -> str:
     style = (Path(root) / "prompts" / f"style-{channel}.txt").read_text().strip()
     return f"{scene_prompt.strip()}. {style}"

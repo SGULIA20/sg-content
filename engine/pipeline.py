@@ -83,9 +83,26 @@ LONG_PANEL_NOTE = (" Very wide cinematic frame; every face and the key object si
 LONG_PANEL_ASPECT = "21:9"                     # the long video's picture strip is 1920x713 (about 2.7:1); 21:9 loses little
 
 
-def panel_request(piece: Piece, prompt: str) -> tuple:
+HERO_TEST_FILE = Path("content") / "hero-test.json"      # {"channel": "arthvan", "from": "2026-11-16", "to": "2026-11-18", "scenes": 2}
+
+
+def is_hero(piece: Piece, i: int, root: Path = None) -> bool:
+    """True for the first drawn picture(s) of a Short in the realistic-opening test: the channel's Shorts dated from..to, scenes before `scenes`."""
+    path = (Path(root) if root else Path(".")) / HERO_TEST_FILE
+    try:
+        t = json.loads(path.read_text())
+    except (OSError, ValueError):
+        return False
+    day = str(piece.id)[:10]
+    return (piece.kind == "short" and piece.channel == t.get("channel") and t.get("from", "9") <= day <= t.get("to", "0")
+            and i < int(t.get("scenes", 1)))
+
+
+def panel_request(piece: Piece, prompt: str, hero: bool = False) -> tuple:
     """(full prompt, aspect) for one story panel. The half-price batch and the per-scene call must send exactly this, or the scene
     call misses the batch's cached picture and paints it again at full price (26-31 Oct 2026: every panel was paid twice)."""
+    if piece.kind == "short" and hero:
+        return art.hero_style_prompt(prompt + SHORT_PANEL_NOTE), "2:3"
     if piece.kind == "short":
         return art.style_prompt(piece.channel, prompt + SHORT_PANEL_NOTE), "2:3"
     return art.style_prompt(piece.channel, prompt + LONG_PANEL_NOTE), LONG_PANEL_ASPECT
@@ -248,8 +265,9 @@ def _visual_for(piece: Piece, i: int, scene: dict, deps: Deps, out_dir: Path, si
     if is_story(piece):
         prompt = v.get("prompt") or piece.script["hook"]
         refs = deps.cast_refs(prompt, channel=piece.channel) if deps.cast_refs else []
-        full, aspect = panel_request(piece, prompt)
-        got = deps.paint(full, out, aspect=aspect, refs=refs)
+        hero = is_hero(piece, i)
+        full, aspect = panel_request(piece, prompt, hero)
+        got = deps.paint(full, out, aspect=aspect, refs=[] if hero else refs)
         if piece.kind == "short" and Path(got).exists() and art.blank_share(got) > art.BLANK_MAX:   # framed, with an empty box below: redraw once
             got = deps.paint(art.style_prompt(piece.channel, prompt + SHORT_PANEL_NOTE + " Paint the scene all the way down to the bottom edge."),
                              out, aspect="2:3", refs=refs)
@@ -285,10 +303,11 @@ def picture_jobs(piece: Piece, deps: Deps) -> list:
     """[(prompt, refs, aspect)] for every drawn panel of a story piece plus its thumbnail picture, exactly as the per-scene calls build them."""
     from . import thumbs
     jobs = []
-    for sc in (piece.script or {}).get("scenes", []):
+    for i, sc in enumerate((piece.script or {}).get("scenes", [])):
         prompt = (sc.get("visual") or {}).get("prompt") or piece.script["hook"]
-        refs = deps.cast_refs(prompt, channel=piece.channel) if deps.cast_refs else []
-        full, aspect = panel_request(piece, prompt)
+        hero = is_hero(piece, i)
+        refs = [] if hero else (deps.cast_refs(prompt, channel=piece.channel) if deps.cast_refs else [])
+        full, aspect = panel_request(piece, prompt, hero)
         jobs.append((full, list(refs), aspect))
     jobs.append((thumbs.paint_prompt(piece), [], "9:16" if piece.kind == "short" else "16:9"))
     return jobs
