@@ -137,6 +137,9 @@ HERO_STYLE = ("Photorealistic cinematic photograph look: natural colours, sharp 
               "not a drawing, not a comic. No text, no watermark, no logo.")
 
 
+HERO_FRAME_NOTE = " Vertical 9:16, full-bleed to every edge, no border or frame; keep the lower third calm (water, ground or sky) for captions."
+
+
 def hero_style_prompt(scene_prompt: str) -> str:
     """The realistic opening picture (founder, 9 Nov 2026: Ankur Uncovers opens on a realistic view and holds viewers; test it on a few Shorts).
     It is an AI visualisation, so every upload already carries YouTube's synthetic-media flag."""

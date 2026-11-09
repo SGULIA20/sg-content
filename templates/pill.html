@@ -1,0 +1,7 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Inter;src:url({{FONTS}}/Inter.ttf)}
+html,body{margin:0;padding:0;background:transparent}
+#root{position:relative;width:{{W}}px;height:{{H}}px;overflow:hidden;font-family:Inter,sans-serif;display:flex;align-items:center;justify-content:flex-start}
+.pill{padding:12px 30px;border-radius:40px;font-weight:800;font-size:34px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;background:rgba(10,14,24,.78);border:2px solid rgba(255,255,255,.55);box-shadow:0 6px 20px rgba(0,0,0,.45);white-space:nowrap}
+.pill.legend{border-color:#B48CFF}.pill.science{border-color:#7CE38B}.pill.disputed{border-color:#FF6B6B}.pill.ai{font-size:24px;padding:8px 20px;letter-spacing:1px;background:rgba(0,0,0,.6);border-color:rgba(255,255,255,.4)}
+</style></head><body><div id="root"><span class="pill {{kind}}">{{text}}</span></div></body></html>
