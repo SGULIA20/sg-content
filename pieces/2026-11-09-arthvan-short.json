@@ -155,7 +155,9 @@
    "voice": 13
   },
   "drafts": 2,
+  "ig_reel_id": "18401898811164525",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-09-arthvan-short.mp4",
    "clip_seconds": 10.03,
@@ -164,6 +166,8 @@
   },
   "out_sha": "a26545a9cb50a63c620da8521ce5fa2503d6b610",
   "out_sha_intro": true,
+  "threads_id": "17957222169027456",
+  "threads_poll_id": "18078174506579212",
   "yt_duplicates_removed": [
    "HaStVT4-w04"
   ],
@@ -398,7 +402,7 @@
   },
   "title": "*Unakoti*: pahad par 99,99,999 moortiyan? 😱"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   7.17,
@@ -448,6 +452,6 @@
   "title_hi": "Unakoti, ek karod se ek kam moortiyan",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-11-05T07:55:24+00:00",
+ "updated": "2026-11-09T16:10:46+00:00",
  "writer": "claude"
 }
