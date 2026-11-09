@@ -54,7 +54,15 @@
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
-  "intro_sent": "2026-11-08T18:55:57+00:00"
+  "intro": {
+   "clip": "2026-11-15-arthvan-short.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-09T12:21:09+00:00",
+   "seconds": 7.88
+  },
+  "intro_checked": "9bc3848666edc5e3",
+  "intro_sent": "2026-11-08T18:55:57+00:00",
+  "yt_id": "bRaEa9noxyA"
  },
  "kind": "short",
  "publish_day": "2026-11-15",
@@ -263,7 +271,7 @@
   },
   "title": "Karna, Chhath aur kaata hua *kavach* 🤯"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   3.73,
@@ -303,6 +311,7 @@
    "words": 16
   },
   "layers": true,
+  "look": "indian-comic",
   "summary": "Mahabharata's Karna worshipped Surya at midday and gave whatever was asked of him. Covers the Vana Parva episode where Indra takes the kavach-kundal. Check the verse source. Label the Chhath-Karna link in the Munger/Anga region as folk tradition.",
   "target_minutes": null,
   "title": "Karna roz Surya ko arghya dene ke baad kya deta tha?",
@@ -316,6 +325,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-08T18:56:00+00:00",
+ "updated": "2026-11-09T12:21:18+00:00",
  "writer": "claude"
 }
