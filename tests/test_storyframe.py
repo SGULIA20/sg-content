@@ -113,5 +113,5 @@ def test_a_full_screen_long_puts_captions_on_a_shade_and_moves_the_camera_a_diff
     seen = {sf.camera_expr(p, 300) for p in sf.CAMERA_PATHS}
     assert len(seen) == len(sf.CAMERA_PATHS)
     z, x, y = sf.camera_expr("push", 300)
-    assert "1.28" in z and "on" in z
+    assert "1.40" in z and "on" in z
     assert sf.camera_expr("glide", 300, 1)[1] != sf.camera_expr("glide", 300, -1)[1]
