@@ -75,6 +75,7 @@ MAX_WORDS = 20                              # about 8 seconds (founder, 9 Nov 20
 BRIDGE_MAX_WORDS = 13
 MIN_S, MAX_S = 6.0, 12.0                    # the clip the founder sends back
 DEADLINE_HOURS = 3                          # before the earliest slot (Instagram or YouTube): the reminder goes then
+HOOK_H = 270                                # the big hook line over the first two seconds of a new-style Short
 MUSIC_LUFS = -26                            # the bed under the founder's voice: audible, below him (founder, 4 Nov 2026, preview 4)
 TAIL_S = 0.35                               # after his last word the body starts (founder, 4 Nov 2026: "trim the 1-2 second pause at the end")
 VOICE_LUFS = -16
@@ -640,8 +641,9 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
         overlays.append((png, 0, bottom_y, s, e))
     if full and short:                                              # the hook, big, over the first two seconds (a long's wide frame has his face there)
         hook_png = cards.render("hookline", {"title_html": storyframe.title_html((piece.script or {}).get("title") or p.get("question", ""))},
-                                out_dir / "hookline.png", (w, 330 if short else 240))
-        overlays.append((hook_png, 0, geo["top"] + (90 if short else 150), 0.0, min(2.4, secs)))
+                                out_dir / "hookline.png", (w, HOOK_H))
+        # 10 Nov 2026: at the top it covered his forehead (his clip fills the screen now); it sits on his chest, just above the captions
+        overlays.append((hook_png, 0, geo["cap_y"] - HOOK_H + 20, 0.0, min(2.4, secs)))
     background = out_dir / storyframe.INTRO_BG
     if full and short and opening.cutout_on() and background.exists() and cutout.available():
         # the founder cut out of his clip, the story's first pictures moving behind him (they already carry the badge and the AI tag)
@@ -783,6 +785,8 @@ def collect(piece, deps, root: Path, now: datetime | None = None, notify=None, t
             notify(f"🎬 {piece.id}: your intro is merged; the piece keeps the re-scheduled upload (YouTube {found})"
                    + (f"; removed {', '.join(gone)}." if gone else "."))
             return "adopted-intro", piece
+        # 10 Nov 2026: a kept reel-plain.mp4 / long-plain.mp4 from the earlier build would be joined to the intro in place of the new body
+        (out_dir / ("reel-plain.mp4" if piece.kind == "short" else "long-plain.mp4")).unlink(missing_ok=True)
         piece.status = "drawn"                                     # script, facts and timings stay; voice and pictures come from the caches
         pieces.save(piece, root)
         piece = pipeline.make(piece, deps, root)
