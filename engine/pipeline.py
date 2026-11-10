@@ -145,6 +145,9 @@ def weak_remake_topic(piece: Piece, root: Path, today: date | None = None) -> di
             "remake_note": WEAK_NOTE.format(views=weak[0]["ig_views"]), "remake_views": weak[0]["ig_views"], "remake_facts": orig.facts}
 
 
+WEAK_REMAKES = False
+
+
 def _pick_topic(piece: Piece, deps: Deps, root: Path, used: set) -> dict | None:
     if piece.topic.get("preset"):                                     # a topic chosen up front (the news Short, an extra Reel)
         return piece.topic["preset"]
@@ -152,7 +155,9 @@ def _pick_topic(piece: Piece, deps: Deps, root: Path, used: set) -> dict | None:
     planned = weekly.topic_for(root, piece, used)                    # 8 Nov 2026: the weekly YouTube research plan outranks a remake of our own weak Reel
     if planned:
         return planned
-    remake = None if (piece.id.endswith("-news") or re.search(r"-x\d+$", piece.id)) else weak_remake_topic(piece, root)
+    # founder, 10 Nov 2026 ("why again America, SIP, share market?"): a planned topic that failed is followed by the next fresh topic, never
+    # by a second chance of a weak old Reel; the weak ones were all US-stocks, SIP and market stories, so the same subjects kept returning
+    remake = None if (not WEAK_REMAKES or piece.id.endswith("-news") or re.search(r"-x\d+$", piece.id)) else weak_remake_topic(piece, root)
     if remake:
         return remake
     if piece.channel == "arthvan" and piece.kind == "short" and not is_story(piece):

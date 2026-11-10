@@ -33,6 +33,11 @@ def is_trial(piece, root: Path = None) -> bool:
     return bool(t) and piece.kind == "short" and piece.channel == t.get("channel") and t.get("from", "9") <= day <= t.get("to", "0")
 
 
+def cutout_on(root: Path = None) -> bool:
+    """Whether the founder is cut out and placed over the story's pictures (off: his clip full-screen, its own background set in the prompt)."""
+    return bool(_config(root).get("cutout", False))
+
+
 def is_hero_scene(piece, i: int, root: Path = None) -> bool:
     return is_trial(piece, root) and i < int(_config(root).get("scenes", 1))
 
