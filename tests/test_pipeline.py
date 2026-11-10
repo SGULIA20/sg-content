@@ -640,3 +640,23 @@ def test_realistic_opening_test_only_touches_the_configured_shorts(tmp_path):
     assert not pipeline.is_hero(p("2026-11-16"), 0, tmp_path / "nowhere")   # no file: nothing changes
     full, aspect = pipeline.panel_request(p("2026-11-16"), "A fort", True)
     assert "Photorealistic" in full and aspect == "2:3"
+
+
+def test_a_topic_whose_research_found_nothing_is_never_tried_again_for_that_piece(tmp_path):
+    """10 Nov 2026: the 16 Nov long re-tried the same unresearchable topics on every run and never reached the next one."""
+    seen = []
+
+    def topic_fn(piece, used):
+        for link in ("https://e/dead1", "https://e/dead2", "https://e/dead3", "https://e/good"):
+            if link not in used:
+                return dict(TOPIC, link=link)
+
+    def research_fn(topic, channel):
+        seen.append(topic["link"])
+        return {"facts": FACTS if topic["link"].endswith("good") else [], "summary": "s"}
+
+    d, calls = deps(tmp_path, research=research_fn, topic=topic_fn)
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert p.status == "failed-research" and [k for k in p.ids["dead_topics"] if k.startswith("https")] == ["https://e/dead1", "https://e/dead2", "https://e/dead3"]
+    p = pipeline.make(pieces.load(p.id, tmp_path), d, tmp_path)                     # the next run starts at the topic behind them
+    assert seen[-1] == "https://e/good" and p.status == "uploaded"
