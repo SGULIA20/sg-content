@@ -109,13 +109,28 @@
    "drafts": 1,
    "research": 1
   },
+  "captions": {
+   "en": "AUieDaaJHjYBs8Z8_DsvbwP3Tk_17hg6Ens_fOQT0VndTR1ASJvEDk5h",
+   "gu": "AUieDaaIVukJrPYhgcz9zaHxAwMMu0LNhTuW3FnAJxdftPuPmx4QohtIaJWJdBh69oT13yLc64o",
+   "hi": "AUieDab5YykMhG6mWB9Nf_9zBR0i_tI_tzzK1-3MwwEo5Nn4mQH7EqqCMi3FbCnovHcoPbk",
+   "mr": "AUieDaZzvILJqfTW4Wn-9A7Q4cE-P26y_QATtSGTlObrUx_ULTEOvMBGNZhAsOlTKBs",
+   "ta": "AUieDabK1cf5d9fkcxUkvBkUhp69wI9FvlBuFWE8dPr5FqvwyPM-ZerOByEAxha9UgM"
+  },
   "cost": {
    "inr": 94.5,
-   "usd": 0.389036,
+   "usd": 0.82708,
    "voice": 70
   },
   "drafts": 1,
-  "intro_sent": "2026-11-09T19:22:30+00:00"
+  "intro": {
+   "clip": "2026-11-17-arthvan-long.mp4",
+   "clip_seconds": 10.03,
+   "composed": "2026-11-10T07:59:49+00:00",
+   "seconds": 9.42
+  },
+  "intro_checked": "65b8f1463ace854c",
+  "intro_sent": "2026-11-09T19:22:30+00:00",
+  "yt_id": "-j1wU7yWj8A"
  },
  "kind": "long",
  "publish_day": "2026-11-17",
@@ -1035,7 +1050,7 @@
   },
   "title": "Ravan ne Kaushalya ko *dibbe* mein qaid kiya? 🤯"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   10.65,
@@ -1131,6 +1146,7 @@
    "text": "Ravan ne Ram ki maa ko samundar mein qaid kiya? Ab suniye, ye chaunkane wali baat hai!",
    "words": 17
   },
+  "look": "indian-comic",
   "summary": "Traces the viral story of Ravana abducting Kaushalya before Rama's birth through the texts. Compare Valmiki Ramayana (Bala and Uttara Kanda), Adhyatma Ramayana, Ananda Ramayana and Kamban. Check which text carries the episode and its date, and label it legend.",
   "target_minutes": 14,
   "title": "Ravan ne Kaushalya ko uthaya tha? Valmiki mein hai ya baad ki katha?",
@@ -1143,6 +1159,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-09T19:22:33+00:00",
+ "updated": "2026-11-10T08:00:07+00:00",
  "writer": "claude"
 }
