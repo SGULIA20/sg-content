@@ -469,9 +469,27 @@ def check(clip: Path, p: dict, transcribe=None, seconds: float | None = None) ->
     if sim < inbox.SIMILARITY_MIN:
         reasons.append(f"missing words (only {sim:.0%} of the script heard): \"{heard[:120]}\"")
     closing = p.get("closing") or CLOSING
-    if recall(closing, heard) < 0.5 and "samajh" not in heard.lower() and "samjh" not in heard.lower():
+    if heard_share(closing, heard) < 0.5 and "samajh" not in heard.lower() and "samjh" not in heard.lower():
         reasons.append(f"the closing line \"{closing}\" was not heard")
     return reasons
+
+
+def _digits_spoken(text: str) -> str:
+    """Numbers the transcriber wrote as digits ("50,000", "50000") become the words he said ("pachaas hazaar")."""
+    return re.sub(r"\b\d[\d,]*\b", lambda m: spell_number(int(m.group(0).replace(",", ""))) if m.group(0).replace(",", "").isdigit() else m.group(0), text)
+
+
+def heard_share(line: str, heard: str, close: float = 0.72) -> float:
+    """How much of one short line was heard, forgiving the spellings a transcriber gives Hinglish (logon/logo, saath/sath, hazaar/hajar)
+    and numbers written as digits. 10 Nov 2026: a correct clip was turned down because its last line came back spelled differently."""
+    from difflib import SequenceMatcher
+    from . import inbox
+    want = inbox._tokens(_digits_spoken(line))
+    got = set(inbox._tokens(_digits_spoken(heard)))
+    if not want:
+        return 0.0
+    hit = sum(1 for w in want if w in got or any(SequenceMatcher(None, w, g).ratio() >= close for g in got))
+    return hit / len(want)
 
 
 def recall(script: str, heard: str) -> float:
@@ -1074,6 +1092,8 @@ def redo_piece(piece, deps, root: Path, env=None, notify=None, transcribe=None, 
         notify(f"🎬 {piece.id}: the intro clip was not used: " + "; ".join(problems) + f". Send a new one with the caption intro {piece.id}.")
         return "rejected"
     piece.ids["intro_checked"] = _sha(clip)                           # checked once; the rebuild path does not check again
+    piece.ids.pop("intro_rejected", None)                             # an earlier check turned this same clip down; it has passed now
+    piece.ids.pop("intro_rejected_why", None)
     out_dir = Path(root) / "out" / piece.id
     plain_video = out_dir / ("reel.mp4" if piece.kind == "short" else "long.mp4")
     if not plain_video.exists():                                    # a long: rebuilt from the caches, composed and re-uploaded by collect()

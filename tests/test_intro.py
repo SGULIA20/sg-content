@@ -563,3 +563,15 @@ def test_no_background_of_the_standard_prompt_asks_for_a_screen_or_a_blur():
         assert "blurred" not in clean and "ticker" not in clean and "monitor" not in clean and "display" not in clean, clean
     for place in intro.SETTINGS["sglearning"] + intro.SETTINGS["arthvan"]:
         assert "blurred" not in intro._moving(place), place
+
+
+def test_the_closing_line_is_heard_even_when_the_transcriber_spells_hinglish_differently_or_writes_digits(tmp_path):
+    """10 Nov 2026: the 16 Nov Learning clip said the right words; the check wanted "logon ... saath ... mein" letter for letter."""
+    closing = "pachaas hazaar logon ke saath yeh sach mein hua."
+    assert intro.heard_share(closing, "share market me paisa lagaya hi nahi phir bhi sab doob gaya 50,000 logo ke sath yah sach me hua") >= 0.5
+    assert intro.heard_share(closing, "pachas hajar logo ke sath ye sach me hua") >= 0.5
+    assert intro.heard_share(closing, "namaste doston aaj hum gold ki baat karenge") < 0.5
+    clip = tmp_path / "c.mp4"; clip.write_bytes(b"x")
+    plan = {"text": "Share market mein paisa lagaya hi nahi, phir bhi sab doob gaya. " + closing, "closing": closing}
+    heard = "share market mein paisa lagaya hi nahi phir bhi sab doob gaya 50,000 logo ke sath yah sach me hua"
+    assert intro.check(clip, plan, transcribe=lambda c: heard, seconds=10.0) == []
