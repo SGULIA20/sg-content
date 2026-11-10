@@ -1,0 +1,43 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.97,Default,,0,0,0,,America ka share hai,
+Dialogue: 0,0:00:01.97,0:00:02.95,Default,,0,0,0,,toh safe hai?
+Dialogue: 0,0:00:02.95,0:00:03.44,Default,,0,0,0,,Sach mein?
+Dialogue: 0,0:00:03.89,0:00:04.83,Default,,0,0,0,,Ek ladka,
+Dialogue: 0,0:00:04.83,0:00:06.09,Default,,0,0,0,,chhoti naukri,
+Dialogue: 0,0:00:06.09,0:00:07.35,Default,,0,0,0,,poori saving,
+Dialogue: 0,0:00:07.35,0:00:08.29,Default,,0,0,0,,ek sapna:
+Dialogue: 0,0:00:08.29,0:00:10.49,Default,,0,0,0,,America ka share.
+Dialogue: 0,0:00:10.94,0:00:12.82,Default,,0,0,0,,Woh chunta hai The Trade Desk,
+Dialogue: 0,0:00:12.82,0:00:14.93,Default,,0,0,0,,online ads wali company.
+Dialogue: 0,0:00:14.93,0:00:16.10,Default,,0,0,0,,Har jagah ads hain,
+Dialogue: 0,0:00:16.10,0:00:17.98,Default,,0,0,0,,toh kabhi nahi giregi.
+Dialogue: 0,0:00:18.43,0:00:20.27,Default,,0,0,0,,Upar se paisa dollar mein,
+Dialogue: 0,0:00:20.27,0:00:21.42,Default,,0,0,0,,rupaye se mazboot.
+Dialogue: 0,0:00:21.42,0:00:23.03,Default,,0,0,0,,Galat kya ho sakta hai?
+Dialogue: 0,0:00:23.48,0:00:25.77,Default,,0,0,0,,Lekin is saal yeh share 65.75
+Dialogue: 0,0:00:25.77,0:00:26.92,Default,,0,0,0,,percent gir gaya.
+Dialogue: 0,0:00:26.92,0:00:28.06,Default,,0,0,0,,Jo lagaya tha,
+Dialogue: 0,0:00:28.06,0:00:30.64,Default,,0,0,0,,uska aadha bhi nahi bacha.
+Dialogue: 0,0:00:31.09,0:00:32.52,Default,,0,0,0,,Car wali Stellantis,
+Dialogue: 0,0:00:32.52,0:00:34.42,Default,,0,0,0,,kapde wali Lululemon,
+Dialogue: 0,0:00:34.42,0:00:36.33,Default,,0,0,0,,sab aadhe se zyada gire.
+Dialogue: 0,0:00:36.78,0:00:37.37,Default,,0,0,0,,Twist yeh hai,
+Dialogue: 0,0:00:37.37,0:00:39.55,Default,,0,0,0,,America ka naam share ko nahi
+Dialogue: 0,0:00:39.55,0:00:40.14,Default,,0,0,0,,bachata.
+Dialogue: 0,0:00:40.14,0:00:40.93,Default,,0,0,0,,Kamai dekho,
+Dialogue: 0,0:00:40.93,0:00:41.72,Default,,0,0,0,,jhanda nahi.
+Dialogue: 0,0:00:41.72,0:00:43.70,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:44.15,0:00:45.81,Default,,0,0,0,,Us dost ko bhejo jo kehta
+Dialogue: 0,0:00:45.81,0:00:47.67,Default,,0,0,0,,hai US stocks kabhi nahi girte.
