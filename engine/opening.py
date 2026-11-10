@@ -11,7 +11,7 @@ from pathlib import Path
 from .config import CONTENT_DIR
 
 TEST_FILE = "hero-test.json"
-WORDS = (85, 125)                   # 35-45 s at about 2.5 words a second
+WORDS = (70, 100)                   # about 30-38 s of narration at 2.5 words a second, so the Short lands near 40-45 s with the founder's intro
 PILL_SIZE_H = 90
 TAG_TEXT = "AI visualisation"
 KIND_FOR = {"scripture": "legend", "legend": "legend", "archaeology": "science", "disputed": "disputed"}
@@ -60,7 +60,7 @@ def pill_for(piece, i: int):
     if label in LABEL_TEXT and used:
         src = (piece.facts[used[0]] or {}).get("source_name")
         if src:
-            return f"{LABEL_TEXT[label]} • {_short(src, 24)}", KIND_FOR[label]
+            return f"{LABEL_TEXT[label]} • {_short(src, 15)}", KIND_FOR[label]
     return None
 
 
@@ -73,16 +73,17 @@ def render_pills(piece, out_dir: Path, size: tuple, render) -> dict:
     for i in range(len((piece.script or {}).get("scenes", []))):
         p = pill_for(piece, i)
         if p:
-            out[i] = render("pill", {"kind": p[1], "text": p[0]}, out_dir / f"pill{i:02d}.png", (size[0] - 80, PILL_SIZE_H))
+            out[i] = render("pill", {"kind": p[1], "text": p[0]}, out_dir / f"pill{i:02d}.png", (size[0] - 420, PILL_SIZE_H))             # ends before the badge in the top-right corner
     out["tag"] = render("pill", {"kind": "ai", "text": TAG_TEXT}, out_dir / "tag.png", (460, 60))
     return out
 
 
-def overlays_for(piece, i: int, dur: float, size: tuple, pills: dict) -> list:
-    """Overlay tuples for assemble.scene_clip: the pill for a few seconds, the AI tag for the whole of a photoreal scene."""
+def frame_overlays(piece, i: int, dur: float, size: tuple, pills: dict, top: int, side: int, logo_px: int) -> list:
+    """Timed overlays (png, x, y, start, end) for the full-screen story frame: the AI tag top-left on a realistic picture, the scene's
+    pill on the row below it, both for the whole scene."""
     out = []
-    if i in pills:
-        out.append((pills[i], 40, 130, 0.15, min(dur, 3.6)))
     if "tag" in pills and is_hero_scene(piece, i):
-        out.append((pills["tag"], size[0] - 460 - 30, size[1] - 140))
+        out.append((pills["tag"], side, top, 0.0, dur))
+    if i in pills:
+        out.append((pills[i], side, top + 80, 0.0, dur))
     return out
