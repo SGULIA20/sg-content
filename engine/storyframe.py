@@ -152,13 +152,34 @@ INTRO_BG = "intro-bg.mp4"
 INTRO_BG_S = 6.5                                             # each of the first two pictures, so the pair outlasts a 12-second clip
 
 
-def intro_background(piece, panels: list, size: tuple, out_dir: Path, title_png: Path, shade, badge, pills: dict) -> Path | None:
+def moving_depths(panels: list):
+    """A depth map per still picture (None for a clip), or None when the depth tool is not installed (the slow zoom is used then)."""
+    from . import depthmove
+    if not depthmove.available():
+        return None
+    stills = [i for i, p in enumerate(panels) if Path(p).suffix.lower() != ".mp4"]
+    try:
+        found = depthmove.estimate([panels[i] for i in stills])
+    except Exception as e:                                          # the model could not be fetched: a plain zoom is better than no Reel
+        print(f"depth movement off ({type(e).__name__}: {str(e)[:120]})", flush=True)
+        return None
+    out = [None] * len(panels)
+    for i, d in zip(stills, found):
+        out[i] = d
+    return out
+
+
+def intro_background(piece, panels: list, size: tuple, out_dir: Path, title_png: Path, shade, badge, pills: dict, depths=None) -> Path | None:
     """The first two pictures, full-screen and moving, with the badge and the AI tag but no captions: the founder's cut-out stands on it."""
-    stills = [p for p in panels[:2] if Path(p).suffix != ".mp4"]
-    if not stills:
+    idx = [i for i, p in enumerate(panels[:2]) if Path(p).suffix.lower() != ".mp4"]
+    if not idx:
         return None
     clips = []
-    for k, panel in enumerate(stills):
+    for k, i in enumerate(idx):
+        panel = panels[i]
+        if depths and depths[i] is not None:
+            from . import depthmove
+            panel = depthmove.move(panel, depths[i], INTRO_BG_S, size, out_dir / f"introbgmove{k}.mp4", fps=FPS, direction=1 if k % 2 == 0 else -1)
         extra = [(pills["tag"], SAFE_SIDE, FULL_TOP, 0.0, INTRO_BG_S)] if "tag" in pills else []
         clips.append(scene(panel, INTRO_BG_S, size, out_dir / f"introbg{k}.mp4", title_png, extra, logo_png=badge, punch=(k == 0),
                            shade_png=shade, full=True))
@@ -166,7 +187,7 @@ def intro_background(piece, panels: list, size: tuple, out_dir: Path, title_png:
     listing.write_text("".join(f"file '{c.resolve()}'\n" for c in clips))
     out = out_dir / INTRO_BG
     _run(["-f", "concat", "-safe", "0", "-i", str(listing), "-c", "copy", str(out)])
-    for c in clips:
+    for c in [*clips, *out_dir.glob("introbgmove*.mp4")]:
         c.unlink(missing_ok=True)
     listing.unlink(missing_ok=True)
     return out
@@ -198,7 +219,11 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     big_badge = logo(piece.channel, 600)
     layers_on = short and layers.apply(piece)                            # the painted Shorts' layer test (engine/layers.py)
     n_scenes = len(panels)
+    depths = moving_depths(panels) if full else None             # 3D-film movement on every picture when the depth tool is installed
     for i, (panel, dur, (wav, d), start, scene_d) in enumerate(zip(panels, durations, lines, starts, piece.script["scenes"])):
+        if depths and depths[i] is not None:
+            from . import depthmove
+            panel = depthmove.move(panel, depths[i], dur, size, out_dir / f"move{i:02d}.mp4", fps=FPS, direction=1 if i % 2 == 0 else -1)
         cues = captions.split(scene_d["vo"], d)
         all_cues += captions.offset(cues, start)
         overlays = []
@@ -219,12 +244,14 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
             chip = out_dir / f"label-{scene_d['label']}.png"
             if not chip.exists():
                 cards.render("label", {"label": scene_d["label"]}, chip, (400, 90))
-        if full and chip is not None:                                # under the tag, not beside it
-            overlays.append((chip, SAFE_SIDE, FULL_TOP + 80, 0.0, dur)); chip = None
+        if full and chip is not None:                                # on the pill's row, under the badge
+            overlays.append((chip, SAFE_SIDE, FULL_TOP + LOGO_PX + 18, 0.0, dur)); chip = None
         clips.append(scene(panel, dur, size, out_dir / f"scene{i:02d}.mp4", title_png, overlays, chip=chip, logo_png=badge,
                            watermark_png=None if full else big_badge, punch=(i == 0 and short), shade_png=shade, full=full))
     if full:                                                         # the pictures that move behind the founder in his intro (engine/intro.py)
-        intro_background(piece, panels, size, out_dir, title_png, shade, badge, pills)
+        intro_background(piece, panels, size, out_dir, title_png, shade, badge, pills, depths)
+        for f in out_dir.glob("move*.mp4"):
+            f.unlink(missing_ok=True)
     (out_dir / "captions.ass").write_text(captions.ass(all_cues, size))
     clips.append(end_card(piece, size, out_dir))
     concat = out_dir / "scenes.txt"

@@ -70,15 +70,21 @@ def mask_video(clip: Path, seconds: float, out: Path, fps: int = 30, size: tuple
 
 
 def over(background: Path, clip: Path, mask: Path, seconds: float, size: tuple, out: Path, overlays: list = (), fps: int = 30,
-         scale: float = 0.92) -> Path:
-    """`clip` cut out by `mask`, standing at the bottom centre of `background` (looped to `seconds`); overlays are (png, x, y) or
+         scale: float = 0.80, rise_s: float = 0.35) -> Path:
+    """`clip` cut out by `mask`, standing at the bottom centre of `background` (looped to `seconds`) with a soft shadow behind him, so he
+    reads as standing in the scene; he rises into the frame in the first `rise_s` seconds. Overlays are (png, x, y) or
     (png, x, y, start, end). Silent H.264."""
     w, h = size
     fw, fh = int(w * scale) // 2 * 2, int(h * scale) // 2 * 2
+    x0, y0 = (w - fw) // 2, h - fh
+    rise = f"'{y0}+max(0,({rise_s}-t)/{rise_s})*220'"
     inputs = ["-stream_loop", "-1", "-i", str(background), "-i", str(clip), "-i", str(mask)]
     chain = (f"[0:v]scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},fps={fps},setsar=1[bg];"
-             f"[1:v]fps={fps},scale={fw}:{fh},setsar=1[c];[2:v]fps={fps},scale={fw}:{fh},format=gray,setsar=1[m];[c][m]alphamerge[fg];"
-             f"[bg][fg]overlay={(w - fw) // 2}:{h - fh}[b0]")
+             f"[1:v]fps={fps},scale={fw}:{fh},setsar=1,eq=contrast=1.05:saturation=1.08[c];"
+             f"[2:v]fps={fps},scale={fw}:{fh},format=gray,setsar=1,split=2[m][m2];"
+             f"[m2]gblur=sigma=26,lutyuv=y=val*0.6[sm];color=black:s={fw}x{fh}:r={fps}[blk];[blk][sm]alphamerge[shadow];"
+             f"[c][m]alphamerge[fg];"
+             f"[bg][shadow]overlay={x0 + 26}:{rise}:shortest=1[b00];[b00][fg]overlay={x0}:{rise}[b0]")
     last = "[b0]"
     for k, ov in enumerate(overlays, start=3):
         inputs += ["-loop", "1", "-i", str(ov[0])]

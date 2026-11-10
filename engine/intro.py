@@ -546,6 +546,10 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
         overlays.append((png, 0, bottom_y, s, e))
     from . import cutout, opening
     full = short and opening.is_trial(piece)                        # the new opening style (10 Nov 2026): full screen, no band, no centre watermark
+    if full:                                                        # the hook, big, over the first two seconds (the viewer reads it before he finishes saying it)
+        hook_png = cards.render("hookline", {"title_html": storyframe.title_html((piece.script or {}).get("title") or p.get("question", ""))},
+                                out_dir / "hookline.png", (w, 330))
+        overlays.append((hook_png, 0, storyframe.FULL_TOP + 90, 0.0, min(2.4, secs)))
     background = out_dir / storyframe.INTRO_BG
     if full and background.exists() and cutout.available():
         # the founder cut out of his clip, the story's first pictures moving behind him (they already carry the badge and the AI tag)

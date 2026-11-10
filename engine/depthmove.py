@@ -15,6 +15,19 @@ MARGIN = 1.18
 ZOOM = (1.05, 1.13)      # slow push-in, as the plain Ken Burns does
 
 
+PUNCH, PUNCH_TAU = 0.10, 0.14   # every cut lands a little closer and settles in about a third of a second
+
+
+def available() -> bool:
+    try:
+        import cv2  # noqa: F401
+        import torch  # noqa: F401
+        import transformers  # noqa: F401
+        return True
+    except Exception:
+        return False
+
+
 def estimate(paths: list, model: str = MODEL) -> list:
     """Depth maps (float 0 far .. 1 near, same size as each picture) for a list of picture paths."""
     from PIL import Image
@@ -57,7 +70,7 @@ def move(image: Path, depth: np.ndarray, seconds: float, size: tuple, out: Path,
         for f in range(frames):
             t = f / (frames - 1)
             e = t * t * (3 - 2 * t)                              # ease in and out
-            zoom = ZOOM[0] + (ZOOM[1] - ZOOM[0]) * e
+            zoom = ZOOM[0] + (ZOOM[1] - ZOOM[0]) * e + PUNCH * float(np.exp(-(f / fps) / PUNCH_TAU))
             sx = direction * (e - 0.5) * 2 * SHIFT_PX * (w / 1080)
             sy = (0.5 - e) * 2 * LIFT_PX * (w / 1080)
             cx, cy = pw / 2, ph / 2
