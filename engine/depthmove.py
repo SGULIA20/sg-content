@@ -9,10 +9,22 @@ from pathlib import Path
 import numpy as np
 
 MODEL = "depth-anything/Depth-Anything-V2-Small-hf"
-SHIFT_PX = 34            # how far the nearest parts move across the clip, at 1080 px wide
-LIFT_PX = 14
-MARGIN = 1.18
-ZOOM = (1.05, 1.13)      # slow push-in, as the plain Ken Burns does
+# founder, 10 Nov 2026: the first setting (34 px, zoom 1.05-1.13) "did not move"; free stronger camera movement, a different path per scene
+MARGIN = 1.30            # the picture is drawn this much larger than the frame, so the moving camera never shows an edge
+PARALLAX = 1.6           # near parts move this much more than the average
+PATHS = ("glide", "push", "rise", "pull")
+SHIFT_PX, LIFT_PX = 90, 80
+
+
+def camera(path: str, e: float, direction: int = 1) -> tuple:
+    """(zoom, shift x, shift y) at eased time e (0..1) for a camera path. Zoom stays between 1.10 and MARGIN + 0.04 so no edge shows."""
+    if path == "push":                                         # straight in, strongly
+        return 1.12 + 0.22 * e, direction * (e - 0.5) * 2 * 22, (0.5 - e) * 2 * 12
+    if path == "pull":                                         # starting close, drawing back to show the place
+        return 1.32 - 0.18 * e, direction * (e - 0.5) * 2 * 26, (e - 0.5) * 2 * 12
+    if path == "rise":                                         # the camera lifts: near ground slides down, the far scene opens
+        return 1.14 + 0.08 * e, direction * (e - 0.5) * 2 * 24, (0.5 - e) * 2 * LIFT_PX
+    return 1.14 + 0.07 * e, direction * (e - 0.5) * 2 * SHIFT_PX, (0.5 - e) * 2 * 14      # glide: a sideways track
 
 
 PUNCH, PUNCH_TAU = 0.10, 0.14   # every cut lands a little closer and settles in about a third of a second
@@ -48,16 +60,16 @@ def fake_depth(size: tuple) -> np.ndarray:
     return np.tile(np.linspace(0.0, 1.0, h, dtype=np.float32)[:, None], (1, w))
 
 
-def move(image: Path, depth: np.ndarray, seconds: float, size: tuple, out: Path, fps: int = 30, direction: int = 1) -> Path:
-    """Writes a silent H.264 clip of `image` with parallax movement."""
+def move(image: Path, depth: np.ndarray, seconds: float, size: tuple, out: Path, fps: int = 30, direction: int = 1, path: str = "glide") -> Path:
+    """Writes a silent H.264 clip of `image` with parallax movement along a camera path (see camera())."""
     import cv2
     w, h = size
     img = cv2.imread(str(image))
     ih, iw = img.shape[:2]
-    scale = max(w / iw, h / ih) * MARGIN                       # margin so the shifted edges never show
+    scale = max(w / iw, h / ih) * MARGIN                    # margin so the shifted edges never show
     img = cv2.resize(img, (int(iw * scale), int(ih * scale)), interpolation=cv2.INTER_CUBIC)
     dep = cv2.resize(depth, (img.shape[1], img.shape[0]), interpolation=cv2.INTER_LINEAR)
-    dep = cv2.GaussianBlur(dep, (0, 0), 6)                    # soft depth: less tearing at edges
+    dep = cv2.GaussianBlur(dep, (0, 0), 8)                    # soft depth: less tearing at edges
     dep = dep - float(dep.mean())
     ph, pw = img.shape[:2]
     ys, xs = np.mgrid[0:h, 0:w].astype(np.float32)
@@ -66,20 +78,20 @@ def move(image: Path, depth: np.ndarray, seconds: float, size: tuple, out: Path,
     out.parent.mkdir(parents=True, exist_ok=True)
     proc = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "bgr24", "-s", f"{w}x{h}", "-r", str(fps), "-i", "-",
                              "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", str(out)], stdin=subprocess.PIPE)
+    k1080 = w / 1080
     try:
         for f in range(frames):
             t = f / (frames - 1)
             e = t * t * (3 - 2 * t)                              # ease in and out
-            zoom = ZOOM[0] + (ZOOM[1] - ZOOM[0]) * e + PUNCH * float(np.exp(-(f / fps) / PUNCH_TAU))
-            sx = direction * (e - 0.5) * 2 * SHIFT_PX * (w / 1080)
-            sy = (0.5 - e) * 2 * LIFT_PX * (w / 1080)
+            zoom, sx, sy = camera(path, e, direction)
+            zoom += PUNCH * float(np.exp(-(f / fps) / PUNCH_TAU))
+            sx, sy = sx * k1080, sy * k1080
             cx, cy = pw / 2, ph / 2
-            # the sampling position of each output pixel: centred crop at this zoom, plus a depth-weighted shift (near parts move more)
             k = MARGIN / zoom
             mx = cx + (xs - w / 2) * k
             my = cy + (ys - h / 2) * k
             dsample = cv2.remap(dep, mx.astype(np.float32), my.astype(np.float32), cv2.INTER_LINEAR, borderMode=cv2.BORDER_REPLICATE)
-            frame = cv2.remap(img, (mx + sx * dsample * 1.6).astype(np.float32), (my + sy * dsample * 1.6).astype(np.float32),
+            frame = cv2.remap(img, (mx + sx * (1 + PARALLAX * dsample)).astype(np.float32), (my + sy * (1 + PARALLAX * dsample)).astype(np.float32),
                               cv2.INTER_CUBIC, borderMode=cv2.BORDER_REFLECT)
             proc.stdin.write(frame.tobytes())
     finally:
