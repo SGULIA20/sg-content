@@ -4,14 +4,22 @@
  "id": "2026-11-16-sglearning-long",
  "ids": {
   "budget": {
-   "day": "2026-11-09",
-   "research": 4
+   "day": "2026-11-10",
+   "research": 3
   },
   "cost": {
    "inr": 0.0,
    "usd": 0.251378,
    "voice": 0
   },
+  "dead_topics": [
+   "https://www.livemint.com/market/stock-market-news/zerodha-launches-us-stock-investing-how-to-invest-in-tesla-amazon-spacex-meta-micron-nvidia-and-amd-explained-11792594591349.html",
+   "proven-2026-10-22-sglearning-short",
+   "https://www.livemint.com/market/stock-market-news/dividend-stock-split-buyback-last-chance-to-buy-today-vrl-logistics-jsw-dulux-angel-one-shares-11792511128048.html",
+   "proven-2026-10-21-sglearning-short",
+   "https://economictimes.indiatimes.com/news/economy/indicators/core-output-grows-at-series-high-of-7-9-in-sept/articleshow/135100149.cms",
+   "proven-2026-10-24-sglearning-short"
+  ],
   "drafts": 1
  },
  "kind": "long",
@@ -31,7 +39,10 @@
   "research budget used for today (4 calls); the next quota day retries",
   "research budget used for today (4 calls); the next quota day retries",
   "research budget used for today (4 calls); the next quota day retries",
-  "research budget used for today (4 calls); the next quota day retries"
+  "research budget used for today (4 calls); the next quota day retries",
+  "try 1: no sourced facts survived the checks",
+  "try 2: no sourced facts survived the checks",
+  "try 3: no sourced facts survived the checks"
  ],
  "script": {
   "captions": {
@@ -824,21 +835,21 @@
   },
   "title": "Bank doob jaye to aapke kitne paise wapas milenge?"
  },
- "status": "rejected",
+ "status": "failed-research",
  "timings": [],
  "topic": {
   "hooks": [
-   "Gold January se 21.43 percent gir chuka hai, pata tha?"
+   "Raat ke 9 baje, TV pe khabar aayi: core sector 7.9 percent badha."
   ],
-  "id": "proven-2026-10-30-sglearning-short",
-  "link": "https://www.livemint.com/market/stock-market-news/gold-price-crashes-over-rs-38-600-from-record-high-whatll-happen-amid-diwali-2026-fervour-right-time-to-buy-decoded-11792910366849.html",
-  "proven_short": "2026-10-30-sglearning-short",
-  "proven_views": 1949,
-  "source": "Mint Markets",
-  "summary": "A 12-minute illustrated documentary on the question of the Short \"Gold price gira, Dhanteras par khareedna sahi?\", which reached 1,949 people on Instagram. Go deeper than the Short: the mechanism, a worked example in rupees, the mistakes people make, what to check. Story so far: MCX gold has fallen 21.43% from its January record, settling at  ₹1,42,024 per 10 grams as inflation concerns, higher crude prices and investor selling weigh on precious metals. Experts say festive demand may offer support, but advise gradual buying and watching the  ₹1,40,000 support level.",
+  "id": "proven-2026-10-24-sglearning-short",
+  "link": "https://economictimes.indiatimes.com/news/economy/indicators/core-output-grows-at-series-high-of-7-9-in-sept/articleshow/135100149.cms",
+  "proven_short": "2026-10-24-sglearning-short",
+  "proven_views": 1324,
+  "source": "ET Economy",
+  "summary": "A 12-minute illustrated documentary on the question of the Short \"Core sector 7.9% upar, petrol sasta kyun nahi?\", which reached 1,324 people on Instagram. Go deeper than the Short: the mechanism, a worked example in rupees, the mistakes people make, what to check. Story so far: India's core sector output growth for September recorded a remarkable 7.9%, driven largely by expansion in coal and electricity. Notably, refinery products and iron ore also contributed to this growth, supported by a favorable base effect. Coal production saw a sharp rebound with a growth rate of 10.7% following previous negative trends. Electricity generation growth declined slightly, impacted by heatwave conditions in the country.",
   "target_minutes": 12,
-  "title": "Gold price gira, Dhanteras par khareedna sahi?"
+  "title": "Core sector 7.9% upar, petrol sasta kyun nahi?"
  },
- "updated": "2026-11-10T07:22:59+00:00",
+ "updated": "2026-11-10T10:01:14+00:00",
  "writer": "claude"
 }
