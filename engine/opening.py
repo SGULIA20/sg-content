@@ -14,8 +14,11 @@ TEST_FILE = "hero-test.json"
 WORDS = (70, 100)                   # about 30-38 s of narration at 2.5 words a second, so the Short lands near 40-45 s with the founder's intro
 PILL_SIZE_H = 104
 TAG_TEXT = "AI visualisation"
-KIND_FOR = {"scripture": "legend", "legend": "legend", "archaeology": "science", "disputed": "disputed"}
-LABEL_TEXT = {"scripture": "Parampara", "legend": "Kahani", "archaeology": "Khoj", "disputed": "Bahas"}
+WORDS_BY_CHANNEL = {"sglearning": (75, 110)}     # room for the spoken disclaimer line
+KIND_FOR = {"scripture": "legend", "legend": "legend", "archaeology": "science", "disputed": "disputed",
+            "official": "science", "reported": "", "analyst-view": "disputed"}
+LABEL_TEXT = {"scripture": "Parampara", "legend": "Kahani", "archaeology": "Khoj", "disputed": "Bahas",
+              "official": "Sarkari", "reported": "Report", "analyst-view": "Raay"}
 ADDENDUM_FILE = "trial-arthvan.txt"
 
 
@@ -27,10 +30,18 @@ def _config(root: Path = None) -> dict:
         return {}
 
 
-def is_trial(piece, root: Path = None) -> bool:
+def _window(channel: str, root: Path = None) -> tuple:
+    """(from, to) for a channel, or None. The file names either one channel ("channel", "from") or several ("channels": {name: from})."""
     t = _config(root)
-    day = str(piece.id)[:10]
-    return bool(t) and piece.kind == "short" and piece.channel == t.get("channel") and t.get("from", "9") <= day <= t.get("to", "0")
+    if not t:
+        return None
+    start = (t.get("channels") or {}).get(channel) or (t.get("from") if t.get("channel") == channel else None)
+    return (start, t.get("to", "9999-12-31")) if start else None
+
+
+def is_trial(piece, root: Path = None) -> bool:
+    win = _window(piece.channel, root)
+    return bool(win) and piece.kind == "short" and win[0] <= str(piece.id)[:10] <= win[1]
 
 
 def cutout_on(root: Path = None) -> bool:
@@ -42,8 +53,13 @@ def is_hero_scene(piece, i: int, root: Path = None) -> bool:
     return is_trial(piece, root) and i < int(_config(root).get("scenes", 1))
 
 
-def addendum(root: Path = None) -> str:
-    return ((Path(root) if root else CONTENT_DIR) / "prompts" / ADDENDUM_FILE).read_text()
+def addendum(channel: str = "arthvan", root: Path = None) -> str:
+    return ((Path(root) if root else CONTENT_DIR) / "prompts" / f"trial-{channel}.txt").read_text()
+
+
+def words(channel: str) -> tuple:
+    """Allowed words of narration for a new-style Short."""
+    return WORDS_BY_CHANNEL.get(channel, WORDS)
 
 
 def _short(name: str, n: int = 30) -> str:
@@ -60,8 +76,8 @@ def pill_for(piece, i: int):
     place = (piece.topic or {}).get("place")
     if i == 0 and place:
         return _short(place, 34), ""
-    label = sc.get("label")
     used = [j for j in sc.get("facts_used", []) if j < len(piece.facts or [])]
+    label = sc.get("label") or ((piece.facts[used[0]] or {}).get("label") if used else None)
     if label in LABEL_TEXT and used:
         src = (piece.facts[used[0]] or {}).get("source_name")
         if src:
@@ -99,13 +115,15 @@ def frame_overlays(piece, i: int, dur: float, size: tuple, pills: dict, top: int
 
 
 def active(today=None, root: Path = None, ahead: int = 9) -> bool:
-    """True while the test window overlaps the days being produced (the workflows install the picture-movement and cut-out tools only then)."""
+    """True while a test window overlaps the days being produced (the workflows install the picture-movement and cut-out tools only then)."""
     from datetime import date, timedelta
     t = _config(root)
-    if not t:
-        return False
     today = today or date.today()
-    return t.get("from", "9") <= (today + timedelta(days=ahead)).isoformat() and (today - timedelta(days=1)).isoformat() <= t.get("to", "0")
+    for ch in list((t.get("channels") or {})) + ([t["channel"]] if t.get("channel") else []):
+        start, end = _window(ch, root)
+        if start <= (today + timedelta(days=ahead)).isoformat() and (today - timedelta(days=1)).isoformat() <= end:
+            return True
+    return False
 
 
 if __name__ == "__main__":

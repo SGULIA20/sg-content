@@ -44,7 +44,7 @@ def test_the_full_screen_frame_tags_a_realistic_picture_and_puts_the_pill_under_
 
 
 def test_trial_shorts_use_the_35_to_45_second_length_and_the_writer_gets_the_new_rules():
-    assert opening.WORDS == (70, 100)
+    assert opening.WORDS == (70, 100) and opening.words('arthvan') == (70, 100) and opening.words('sglearning') == (75, 110)
     assert "NEW OPENING STYLE" in opening.addendum() and "PAYOFF" in opening.addendum() and "PIVOT" in opening.addendum()
 
 
@@ -54,3 +54,23 @@ def test_the_tools_are_installed_only_while_the_test_window_is_being_produced(tm
     assert opening.active(date(2026, 11, 10), root) and opening.active(date(2026, 11, 18), root)
     assert not opening.active(date(2026, 11, 1), root) and not opening.active(date(2026, 11, 25), root)
     assert not opening.active(date(2026, 11, 10), tmp_path / "nowhere")
+
+
+def test_both_channels_can_run_the_new_style_each_from_its_own_day_with_no_end_date(tmp_path):
+    from datetime import date
+    root = _cfg(tmp_path, '{"channels": {"arthvan": "2026-11-16", "sglearning": "2026-11-17"}, "scenes": 99}')
+    assert opening.is_trial(_piece("2026-11-16"), root) and opening.is_trial(_piece("2027-03-01"), root)
+    assert not opening.is_trial(_piece("2026-11-16", ch="sglearning"), root) and opening.is_trial(_piece("2026-11-17", ch="sglearning"), root)
+    assert not opening.is_trial(_piece("2026-11-18", kind="long", ch="sglearning"), root)
+    assert opening.is_hero_scene(_piece("2026-11-17", ch="sglearning"), 7, root) and opening.active(date(2027, 1, 5), root)
+    assert "NEW OPENING STYLE" in opening.addendum("sglearning") and "disclaimer" in opening.addendum("sglearning")
+
+
+def test_a_money_fact_gets_a_pill_from_the_facts_own_label():
+    p = _piece(ch="sglearning")
+    p.topic = {}
+    p.facts = [{"source_name": "Reserve Bank of India", "label": "official"}, {"source_name": "Mint", "label": "reported"}]
+    p.script = {"scenes": [{"label": None, "facts_used": []}, {"label": None, "facts_used": [0]}, {"label": None, "facts_used": [1]}]}
+    assert opening.pill_for(p, 0) is None                                    # no place, no fact
+    assert opening.pill_for(p, 1) == ("Sarkari • Reserve Bank…", "science")
+    assert opening.pill_for(p, 2) == ("Report • Mint", "")
