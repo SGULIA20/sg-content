@@ -208,7 +208,7 @@ def claude_params(piece, sheet, library, hashtags, formula=None) -> dict:
     system = system_prompt(piece.channel) if formula is None else system_prompt(piece.channel).replace(
         (CONTENT_DIR / "prompts" / f"formula-{piece.channel}.txt").read_text(), formula)
     if opening.is_trial(piece):
-        system += opening.addendum()
+        system += opening.addendum(piece.channel)
     return {"model": model_for(piece), "max_tokens": MAX_TOKENS,
             "output_config": {"effort": "high", "format": {"type": "json_schema", "schema": schema.api_schema(schema.PIECE_SCHEMA)}},
             "system": [{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],

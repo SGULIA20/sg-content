@@ -218,7 +218,7 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     keyword = (re.search(r"\*(.+?)\*", title) or [None, ""])[1]
     badge = logo(piece.channel)
     big_badge = logo(piece.channel, 600)
-    layers_on = short and layers.apply(piece)                            # the painted Shorts' layer test (engine/layers.py)
+    layers_on = short and not full and layers.apply(piece)               # the painted Shorts' layer test (engine/layers.py); the full-screen frame has pills
     n_scenes = len(panels)
     depths = moving_depths(panels) if full else None             # 3D-film movement on every picture when the depth tool is installed
     for i, (panel, dur, (wav, d), start, scene_d) in enumerate(zip(panels, durations, lines, starts, piece.script["scenes"])):
