@@ -125,7 +125,15 @@
    "voice": 9
   },
   "drafts": 1,
-  "intro_sent": "2026-11-10T20:54:33+00:00"
+  "intro": {
+   "clip": "2026-11-17-arthvan-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-10T21:13:44+00:00",
+   "seconds": 10.03
+  },
+  "intro_checked": "91231b973c678472",
+  "intro_sent": "2026-11-10T20:54:33+00:00",
+  "yt_id": "Hs0z7dsoK9Q"
  },
  "kind": "short",
  "publish_day": "2026-11-17",
@@ -298,7 +306,7 @@
   },
   "title": "Surpanakha ka pati, *Ravan* ne maara? 😱"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   5.05,
@@ -333,6 +341,7 @@
    "text": "Valmiki ki Ramayan kholo, Surpanakha ke pati ko Ravan ne maara. Suniye, twist yahan hai!",
    "words": 15
   },
+  "look": "indian-comic",
   "summary": "Shows what Valmiki says about Surpanakha: she is Ravana's sister, and her husband Vidyujjihva was killed by Ravana (Uttara Kanda). Check the Aranya Kanda mutilation episode and how Kamban and later tellings change her.",
   "target_minutes": null,
   "title": "Surpanakha sach mein villain thi ya galatfehmi?",
@@ -346,6 +355,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-10T20:54:36+00:00",
+ "updated": "2026-11-10T21:13:50+00:00",
  "writer": "claude"
 }
