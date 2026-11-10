@@ -100,27 +100,29 @@
    "research": 1
   },
   "cost": {
-   "inr": 13.5,
+   "inr": 22.5,
    "usd": 0.094032,
    "voice": 8
   },
   "drafts": 1,
   "intro": {
    "clip": "2026-11-16-arthvan-short.mp4",
-   "clip_seconds": 10.03,
-   "composed": "2026-11-10T07:41:50+00:00",
-   "seconds": 9.38
+   "clip_seconds": 1,
+   "composed": "2026-11-10T15:26:20+00:00",
+   "seconds": 10.03
   },
-  "intro_checked": "e900770c55c5189a",
+  "intro_checked": "af47e0b74d0b8f00",
   "intro_sent": "2026-11-09T19:01:33+00:00",
   "out_sha": "07f15e63b92c4268c7bdf8da8c228e303bb4e635",
   "out_sha_intro": true,
-  "yt_id": "urkSA409VkA"
+  "yt_id": "wpgepLMeyXw",
+  "yt_id_replaced": "urkSA409VkA"
  },
  "kind": "short",
  "publish_day": "2026-11-16",
  "reasons": [
-  "waiting for the founder's intro clip until 16 Nov 11:30 UTC"
+  "waiting for the founder's intro clip until 16 Nov 11:30 UTC",
+  "re-made from the caches to carry the founder's intro"
  ],
  "script": {
   "captions": {
@@ -314,6 +316,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-10T07:41:58+00:00",
+ "updated": "2026-11-10T15:26:29+00:00",
  "writer": "claude"
 }
