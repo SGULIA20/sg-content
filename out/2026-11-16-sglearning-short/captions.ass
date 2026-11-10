@@ -1,0 +1,41 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.56,Default,,0,0,0,,Jis share ko sab khareed rahe
+Dialogue: 0,0:00:01.56,0:00:01.73,Default,,0,0,0,,hon,
+Dialogue: 0,0:00:01.73,0:00:03.12,Default,,0,0,0,,wahi sabse khatarnak kyun?
+Dialogue: 0,0:00:03.57,0:00:05.86,Default,,0,0,0,,Ketan Parekh ke chune share roz
+Dialogue: 0,0:00:05.86,0:00:06.77,Default,,0,0,0,,chadh rahe the.
+Dialogue: 0,0:00:07.22,0:00:07.98,Default,,0,0,0,,Sab sochte,
+Dialogue: 0,0:00:07.98,0:00:09.74,Default,,0,0,0,,itne log galat kaise?
+Dialogue: 0,0:00:10.19,0:00:12.15,Default,,0,0,0,,Bhai ne bhi FD tod di.
+Dialogue: 0,0:00:12.60,0:00:13.34,Default,,0,0,0,,Lekin twist:
+Dialogue: 0,0:00:13.34,0:00:15.55,Default,,0,0,0,,yeh tezi udhaar ke paise se
+Dialogue: 0,0:00:15.55,0:00:15.80,Default,,0,0,0,,thi.
+Dialogue: 0,0:00:16.25,0:00:17.12,Default,,0,0,0,,Reportedly,
+Dialogue: 0,0:00:17.12,0:00:19.29,Default,,0,0,0,,Madhavpura bank ki 50,000 logon ki
+Dialogue: 0,0:00:19.29,0:00:21.25,Default,,0,0,0,,bachat broker ko ja rahi thi.
+Dialogue: 0,0:00:21.70,0:00:22.65,Default,,0,0,0,,Craze toota,
+Dialogue: 0,0:00:22.65,0:00:23.60,Default,,0,0,0,,share gire,
+Dialogue: 0,0:00:23.60,0:00:25.50,Default,,0,0,0,,bank ke bahar line lag gayi.
+Dialogue: 0,0:00:25.95,0:00:27.57,Default,,0,0,0,,Jo share sab khareedein,
+Dialogue: 0,0:00:27.57,0:00:28.49,Default,,0,0,0,,wahan poochiye,
+Dialogue: 0,0:00:28.49,0:00:30.11,Default,,0,0,0,,peeche kiska paisa hai?
+Dialogue: 0,0:00:30.56,0:00:31.34,Default,,0,0,0,,Aaj bank doobe,
+Dialogue: 0,0:00:31.34,0:00:32.71,Default,,0,0,0,,toh bhi 5 lakh tak wapas
+Dialogue: 0,0:00:32.71,0:00:33.30,Default,,0,0,0,,milta hai.
+Dialogue: 0,0:00:33.30,0:00:35.64,Default,,0,0,0,,Emergency bachat isi had mein rakhiye.
+Dialogue: 0,0:00:35.64,0:00:37.60,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:38.05,0:00:39.76,Default,,0,0,0,,Us dost ko bhejo jo kehta
+Dialogue: 0,0:00:39.76,0:00:39.98,Default,,0,0,0,,hai,
+Dialogue: 0,0:00:39.98,0:00:41.69,Default,,0,0,0,,sab le rahe hain toh safe.

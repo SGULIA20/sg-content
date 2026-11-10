@@ -1,0 +1,322 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 800.0,
+   "quote": "The co-operative bank was also holding substantial amount (` 800.00 crore) of inter-bank deposits from a large number of UCBs in Gujarat and from other banks and this posed a systemic risk for the co-operative banks in Gujarat.",
+   "source_date": "2012-06-07",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxwNfmz5ousn81s7GhdXc_UBBkTXql1QV7i75Ecxue7kQWIfBbNdtFdD1Zd4_IRzAmg-S_tp8D3mYWSt-YpfezDH61FCs9-YuY5zOWrYVPah1Nf37yYKAXa-9NEnJAe-hRpZO1oG0JovNnGuMyooE_qoK0lScvIbHfKkk=",
+   "text": "Madhavpura Mercantile Co-operative Bank held Rs 800.00 crore in inter-bank deposits from numerous urban cooperative banks in Gujarat and other institutions when it faced a bank run.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "official",
+   "number": 14.0,
+   "quote": "By a detailed order dated 12.12.2003 passed by the Board they were all debarred from associating with the securities market for a period of 14 years.",
+   "source_date": "2006-09-06",
+   "source_name": "SEBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKG8T5hz4DqfQj7D5NYh0DIfPcswsCN-B3KUIRdtGwO3p6XQEJ_9lfH9w2Tzjh_zMe1JFuylqAGLVQSIUoffpdoyqranKgC5U4Om6VjKi9eJ63A5eSH1nT9JJcgBIixGuEhXtcIVO9aPlOZCrP",
+   "text": "The Securities Appellate Tribunal upheld an order debarring Ketan Parekh and his associated entities from associating with the securities market for a period of 14 years.",
+   "unit": "years"
+  },
+  {
+   "label": "reported",
+   "number": 1200.0,
+   "quote": "The MMCB had issued pay orders worth ₹1,200 crore (US$120 million) to stock broker Ketan Parekh, which he discounted at Bank of India.",
+   "source_date": "2026-10-10",
+   "source_name": "Wikipedia",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7MwYvbyXgwpH6ya8qt1JrhuukML04-gqbC_5TMsqbw0l44CAzUVAEA_tQA-XK36wrOgIAI3sIrdw-qeZhje6Yy0cqoAjEdlgpKcoXfn-Xn6u0nzMAVmUw4lMCItzgws5BWZMQ1QmjCArio_jdAyDGaDbldcvqBSku3g==",
+   "text": "Madhavpura Mercantile Co-operative Bank had issued pay orders worth Rs 1,200 crore to stockbroker Ketan Parekh prior to the market crash.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "reported",
+   "number": 15.0,
+   "quote": "At the time banks in India were not allowed to lend more than ₹15 crore (US$1.6 million) to stock brokers.",
+   "source_date": "2026-10-10",
+   "source_name": "Wikipedia",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7MwYvbyXgwpH6ya8qt1JrhuukML04-gqbC_5TMsqbw0l44CAzUVAEA_tQA-XK36wrOgIAI3sIrdw-qeZhje6Yy0cqoAjEdlgpKcoXfn-Xn6u0nzMAVmUw4lMCItzgws5BWZMQ1QmjCArio_jdAyDGaDbldcvqBSku3g==",
+   "text": "Under prevailing banking regulations during the 2001 scam, Indian banks were prohibited from lending more than Rs 15 crore to stock brokers.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "reported",
+   "number": 50000.0,
+   "quote": "In 1999–2000, when the bank had 50,000 public depositors, it started lending out large sums of money to stock brokers in gross violation of Reserve Bank of India (RBI) rules and regulations.",
+   "source_date": "2026-10-10",
+   "source_name": "Wikipedia",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7MwYvbyXgwpH6ya8qt1JrhuukML04-gqbC_5TMsqbw0l44CAzUVAEA_tQA-XK36wrOgIAI3sIrdw-qeZhje6Yy0cqoAjEdlgpKcoXfn-Xn6u0nzMAVmUw4lMCItzgws5BWZMQ1QmjCArio_jdAyDGaDbldcvqBSku3g==",
+   "text": "Madhavpura Mercantile Co-operative Bank had 50,000 public depositors when it started illegally diverting large sums to stock broking entities.",
+   "unit": "depositors"
+  },
+  {
+   "label": "reported",
+   "number": 3000.0,
+   "quote": "however, when the dotcom bubble burst, the Sensex dropped down to 3,000 points, and Parekh and the bank started having problems.",
+   "source_date": "2026-10-10",
+   "source_name": "Wikipedia",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7MwYvbyXgwpH6ya8qt1JrhuukML04-gqbC_5TMsqbw0l44CAzUVAEA_tQA-XK36wrOgIAI3sIrdw-qeZhje6Yy0cqoAjEdlgpKcoXfn-Xn6u0nzMAVmUw4lMCItzgws5BWZMQ1QmjCArio_jdAyDGaDbldcvqBSku3g==",
+   "text": "The benchmark Sensex fell sharply to 3,000 points following the dot-com bubble collapse, leading to unpaid pay orders and the freezing of bank liquidity.",
+   "unit": "points"
+  },
+  {
+   "label": "official",
+   "number": 100000.0,
+   "quote": "1,00,000 from May 1, 1993 onwards and ₹5,00,000 from February 4, 2020 onwards.",
+   "source_date": "2023-08-14",
+   "source_name": "DICGC",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCh4pdFPf-BE_TyPnIbA5HEIg8cM9vlYTx6c9cAfH1dLJ0Mytr20YYtEZqdsUkENSvRpSV35AV3-MFODPUa88GrZz998n52DP5arQBm_zn0BBpCrlsLG5NaPYfC2gDMWSq9uAhhaExO8ppjq7KbN18ro6wWRk-0Ty8U9ParBtTdS4K0nHvzrdRbbnWcpI=",
+   "text": "When the cooperative bank collapse happened in 2001, household savings deposits were insured only up to a maximum limit of Rs 1,00,000 per depositor under DICGC guidelines.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 500000.0,
+   "quote": "Deposit insurance cover increased from ₹1 lakh to ₹5 lakh with effect from February 4, 2020.",
+   "source_date": "2023-08-14",
+   "source_name": "DICGC",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCh4pdFPf-BE_TyPnIbA5HEIg8cM9vlYTx6c9cAfH1dLJ0Mytr20YYtEZqdsUkENSvRpSV35AV3-MFODPUa88GrZz998n52DP5arQBm_zn0BBpCrlsLG5NaPYfC2gDMWSq9uAhhaExO8ppjq7KbN18ro6wWRk-0Ty8U9ParBtTdS4K0nHvzrdRbbnWcpI=",
+   "text": "To strengthen protection for retail households storing savings in commercial and cooperative banks, deposit insurance cover was increased to Rs 5,00,000 per depositor from February 4, 2020.",
+   "unit": "INR"
+  }
+ ],
+ "id": "2026-11-16-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-10",
+   "drafts": 2,
+   "research": 1
+  },
+  "cost": {
+   "inr": 16.5,
+   "usd": 0.115374,
+   "voice": 10
+  },
+  "drafts": 2,
+  "intro_sent": "2026-11-10T14:45:11+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-16",
+ "reasons": [
+  "try 1: length: 136 words, allowed 85-125",
+  "waiting for the founder's intro clip until 16 Nov 10:00 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Jis share ko sab khareed rahe hon, wahi sabse khatarnak kyun? 📉\nKetan Parekh ke chune share udhaar ke paise par chadh rahe the.\nCraze toota, aur ek co-operative bank ke 50,000 logon ki bachat phans gayi.\nAapke paas aaj kaunsa share hai jo 'sab le rahe hain'? Yeh investment advice nahi hai.\nUs dost ko bhejo jo har trending share pe paisa laga deta hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#StockMarketIndia",
+     "#ShareMarket",
+     "#Sensex",
+     "#RBI",
+     "#PersonalFinanceIndia",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Jis share ko sab khareed rahe hon, wahi sabse khatarnak kyun? Ketan Parekh ke share udhaar ke paise par chadhe, phir gire, aur ek co-operative bank ke 50,000 logon ki bachat phans gayi. Aapne kabhi sirf bheed dekh kar share liya hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Jis share ko sab khareed rahe hon, wahi sabse khatarnak kyun? Ketan Parekh ke chune share udhaar ke paise par chadh rahe the, aur ek co-operative bank ke 50,000 logon ki bachat phans gayi. Aaj har bank mein 5 lakh tak jama insured hai, isliye emergency bachat ki had samajhiye. Us dost ko bhejo jo kehta hai sab khareed rahe hain toh safe hai.",
+    "tags": [
+     "Ketan Parekh",
+     "Ketan Parekh scam",
+     "K-10 shares",
+     "Madhavpura bank",
+     "share market crash",
+     "cooperative bank",
+     "deposit insurance",
+     "stock market history",
+     "Hinglish finance",
+     "Learning with SG"
+    ],
+    "title": "Ketan Parekh scam: sab khareed rahe the, phir?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo kehta hai, sab le rahe hain toh safe.",
+  "hook": "Jis share ko sab khareed rahe hon, wahi sabse khatarnak kyun?",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "A giant glowing stock board filled with bright green upward arrows towering over a packed, noisy brokers' hall in early 2000s Mumbai, traders shouting with raised hands, warm afternoon light, no readable text",
+     "type": "art"
+    },
+    "vo": "Jis share ko sab khareed rahe hon, wahi sabse khatarnak kyun?"
+   },
+   {
+    "facts_used": [],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "An early 2000s Indian street with a small cyber cafe and newspaper stall, a crowd of excited office workers huddled around a pink financial newspaper, rising arrows drawn in the air above them, morning, no readable text",
+     "type": "art"
+    },
+    "vo": "Ketan Parekh ke chune share roz chadh rahe the."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "A crowded housing society courtyard where neighbours in shirts and saris eagerly discuss shares over tea, everyone nodding confidently, evening glow, no readable text",
+     "type": "art"
+    },
+    "vo": "Sab sochte, itne log galat kaise?"
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in a hoodie at a bank counter happily handing over a fixed deposit receipt to BANK UNCLE, a stack of share certificates waiting beside him, bright midday, no readable text",
+     "type": "art"
+    },
+    "vo": "Bhai ne bhi FD tod di."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "A tall tower of stacked share certificates balanced precariously on a thin wobbly pile of borrowed bank notes, dramatic side lighting in a dark room, sense of danger, no readable text",
+     "type": "art"
+    },
+    "vo": "Lekin twist: yeh tezi udhaar ke paise se thi."
+   },
+   {
+    "facts_used": [
+     2,
+     4
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "Inside an old Gujarat cooperative bank at night, a back door open as sacks of cash are quietly carried out towards a waiting car, ledgers of ordinary depositors piled on the counter, tense mood, no readable text",
+     "type": "art"
+    },
+    "vo": "Reportedly, Madhavpura bank ki 50,000 logon ki bachat broker ko ja rahi thi."
+   },
+   {
+    "facts_used": [
+     0,
+     5
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "A long anxious queue of elderly men, women with handbags and shopkeepers outside a shuttered cooperative bank in Gujarat, a closed iron gate, worried faces, grey overcast morning, no readable text",
+     "type": "art"
+    },
+    "vo": "Craze toota, share gire, bank ke bahar line lag gayi."
+   },
+   {
+    "facts_used": [],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "A magnifying glass held over a shiny rising share chart, revealing underneath it a hidden web of loan papers and bank cheques, cool blue light, mood of discovery, no readable text",
+     "type": "art"
+    },
+    "vo": "Jo share sab khareedein, wahan poochiye, peeche kiska paisa hai?"
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "what to do",
+    "visual": {
+     "card": null,
+     "prompt": "WIFE at a dining table at night neatly splitting family savings passbooks into separate envelopes for different banks, a sturdy steel safe beside her, calm and reassured mood, warm lamp light, no readable text",
+     "type": "art"
+    },
+    "vo": "Aaj bank doobe, toh bhi 5 lakh tak wapas milta hai. Emergency bachat isi had mein rakhiye. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "Two friends at a roadside chai stall at dusk, one confidently pointing at a crowd rushing towards a stock board in the distance, the other raising an eyebrow, warm orange sky, no readable text",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo kehta hai, sab le rahe hain toh safe."
+   }
+  ],
+  "thumbnail": {
+   "name": "KETAN PAREKH",
+   "name_hi": "केतन पारेख",
+   "scene": "LEFT: a roaring early 2000s Mumbai stock exchange hall under a giant board of glowing green arrows; RIGHT: a long anxious queue outside a shuttered cooperative bank gate in Gujarat under a grey sky",
+   "words": [
+    "50,000 LOG",
+    "FANSE?"
+   ],
+   "words_hi": [
+    "50,000 लोग",
+    "फँसे?"
+   ]
+  },
+  "title": "Sab khareed rahe the, phir *crash* kyun? 📉"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  3.57,
+  7.22,
+  10.19,
+  12.6,
+  16.25,
+  21.7,
+  25.95,
+  30.56,
+  38.05
+ ],
+ "topic": {
+  "category": "scam",
+  "from_bank": true,
+  "history": true,
+  "hooks": [
+   "Jo share sab khareed rahe the, woh raaton raat kyun gira?",
+   "Ek bank depositors ka paisa share market mein kaise gaya?"
+  ],
+  "id": "mh-2001-ketan-parekh",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "Ye baat koi nahi batata, suniye!",
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, high-energy and cinematic, bright vivid colour. Setting: a broker's office, a wall of green and red tickers softly blurred behind, colourful and lively, a shallow depth of field. Lighting: bright high-key light, warm and punchy, crisp on the face, a gentle rim light on the hair; no dull or flat grey look. SG [locked] walking four or five brisk steps toward the camera while already talking, like a TV news reporter on location, the camera tracking backward at the same pace, then slowing to a stop mid-frame, one hand sweeping toward the scene, wearing a teal half-sleeve shirt. Speaks from the first frame, mouth matched to the words, friendly eye contact with the lens. Delivery: bubbling over with excitement like a TV news reporter who has just found an amazing story and cannot wait to share it: a warm, genuine smile and bright wide eyes, delighted and amazed, never angry; pitch jumps on the key word, a half-second pause before the number, a big grin on the reveal, open inviting gestures; no scowl, no frown, no glaring, no shouting at the viewer; never flat, never calm, never monotone. Body language in three beats: on the question, eyes wide and delighted, one open palm toward the lens; on the second line, lean in with a 'can you believe it' gesture and a grin; on \"Ye baat koi nahi batata, suniye!\", a decisive wave that says follow me. Prop: a bank passbook and a pen, held low at first and lifted toward the lens on the second line, then lowered. Camera: a fast push-in from mid-shot to close-up on the first question, then handheld and steady. @SGLearning watermark top right, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No laptop, tablet, monitor, TV or glowing blue screen anywhere in the frame; the only object in his hands or near him is the prop. Export at 1080x1920.",
+   "question": "Jis share ko sab khareed rahe hon, wahi sabse khatarnak kyun?",
+   "text": "Jis share ko sab khareed rahe hon, wahi sabse khatarnak kyun? Ye baat koi nahi batata, suniye!",
+   "words": 17
+  },
+  "layers": false,
+  "patch_tries": 1,
+  "summary": "The Ketan Parekh episode: a handful of 'K-10' tech stocks pumped with bank and cooperative-bank money, the 2001 crash, and the cooperative bank that went down with it. Why a stock everyone is buying is the one to question.",
+  "target_minutes": null,
+  "title": "2001: K-10 shares aur ek bank ka girna",
+  "topic_score": 9,
+  "topic_score_why": [
+   "+3 touches the viewer's own money",
+   "+3 a scare or a crash",
+   "+1 a choice the viewer faces",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "voice": "voice_7o0kddoq6q2z",
+  "weekly": true
+ },
+ "updated": "2026-11-10T14:45:14+00:00",
+ "writer": "claude"
+}
