@@ -80,6 +80,8 @@ SHORT_PANEL_NOTE = (" Full-bleed tall picture filling the whole canvas edge to e
                     " (floor, table, sea, sky or ground continuing the scene), with no face or key object there.")
 LONG_PANEL_NOTE = (" Very wide cinematic frame; every face and the key object sit in the middle band, nothing important near the top or"
                    " bottom edge (31 Oct 2026: 4:5 panels lost the heads when fitted into the wide strip between the title and caption bands).")
+LONG_FULL_NOTE = (" Full-bleed 16:9 picture filling the whole canvas edge to edge: no border, no frame, no panel outline. Keep the lower fifth"
+                  " calm (ground, water, floor or sky continuing the scene), with no face or key object there.")
 LONG_PANEL_ASPECT = "21:9"                     # the long video's picture strip is 1920x713 (about 2.7:1); 21:9 loses little
 
 
@@ -93,6 +95,8 @@ def panel_request(piece: Piece, prompt: str, hero: bool = False) -> tuple:
     call misses the batch's cached picture and paints it again at full price (26-31 Oct 2026: every panel was paid twice)."""
     if piece.kind == "short" and hero:
         return art.hero_style_prompt(prompt + SHORT_PANEL_NOTE), "2:3"
+    if hero:                                                       # a new-style long: the picture fills the 16:9 screen
+        return art.hero_style_prompt(prompt + LONG_FULL_NOTE), "16:9"
     if piece.kind == "short":
         return art.style_prompt(piece.channel, prompt + SHORT_PANEL_NOTE), "2:3"
     return art.style_prompt(piece.channel, prompt + LONG_PANEL_NOTE), LONG_PANEL_ASPECT

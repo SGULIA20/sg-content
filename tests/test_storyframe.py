@@ -98,3 +98,20 @@ def test_first_scene_opens_on_a_moving_close_up_then_cuts():
     assert "if(lt(on,39),1.35" in storyframe.zoom_expr(4.0, True)
     assert storyframe.zoom_expr(4.0, False).startswith("min(zoom+")
     assert storyframe.zoom_expr(1.5, True).startswith("min(zoom+")          # too short to cut twice
+
+
+def test_a_full_screen_long_puts_captions_on_a_shade_and_moves_the_camera_a_different_way_each_scene():
+    """Founder, 10 Nov 2026: "same should be for long videos also"."""
+    from engine import storyframe as sf
+    size = (1920, 1080)
+    old, new = sf.geometry(size, False, False), sf.geometry(size, False, True)
+    assert old["shade"] is None and old["cap_y"] == 1080 - int(1080 * sf.TOP)          # the banded long is unchanged
+    assert new["shade"] == (1920, sf.LONG_SHADE_H) and new["shade_y"] == 1080 - sf.LONG_SHADE_H
+    assert new["cap_y"] + new["cap"][1] <= 1080 and new["top"] == sf.LONG_TOP
+    short = sf.geometry((1080, 1920), True, True)
+    assert short["cap"] == (1080, sf.CAP_H) and short["top"] == sf.FULL_TOP
+    seen = {sf.camera_expr(p, 300) for p in sf.CAMERA_PATHS}
+    assert len(seen) == len(sf.CAMERA_PATHS)
+    z, x, y = sf.camera_expr("push", 300)
+    assert "1.28" in z and "on" in z
+    assert sf.camera_expr("glide", 300, 1)[1] != sf.camera_expr("glide", 300, -1)[1]

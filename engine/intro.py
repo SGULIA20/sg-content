@@ -602,25 +602,30 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
         shade = out_dir / "shade.png"
         if not shade.exists():
             cards.render("storyshade", {}, shade, (w, storyframe.SHADE_H + storyframe.LIFT))
-    bottom_y = h - storyframe.CAP_H - storyframe.LIFT if short else h - band_h
+    from . import cutout, opening
+    full = opening.is_trial(piece)                                  # the new style (10 Nov 2026): full screen, no band, no centre watermark
+    geo = storyframe.geometry(size, short, full)
+    bottom_y = geo["cap_y"]
+    if full and not short:                                          # a full-screen long: captions on a shade, as the body has them
+        shade = out_dir / "shade.png"
+        if not shade.exists():
+            cards.render("storyshade", {}, shade, geo["shade"])
     keyword = (re.search(r"\*(.+?)\*", (piece.script or {}).get("title", "")) or [None, ""])[1]
     overlays = []
     for k, (s, e, text) in enumerate(cues_for(p["text"], segments, secs)):
         png = out_dir / "cues" / f"intro-{k:02d}.png"
         png.parent.mkdir(parents=True, exist_ok=True)
-        if short:
-            cards.render("storycap2", {"text_html": storyframe.caption_html(text, keyword)}, png, (w, storyframe.CAP_H))
+        if short or full:
+            cards.render("storycap2", {"text_html": storyframe.caption_html(text, keyword)}, png, geo["cap"])
         else:
             cards.render("storycap", {"text": text}, png, (w, band_h))
         overlays.append((png, 0, bottom_y, s, e))
-    from . import cutout, opening
-    full = short and opening.is_trial(piece)                        # the new opening style (10 Nov 2026): full screen, no band, no centre watermark
-    if full:                                                        # the hook, big, over the first two seconds (the viewer reads it before he finishes saying it)
+    if full and short:                                              # the hook, big, over the first two seconds (a long's wide frame has his face there)
         hook_png = cards.render("hookline", {"title_html": storyframe.title_html((piece.script or {}).get("title") or p.get("question", ""))},
-                                out_dir / "hookline.png", (w, 330))
-        overlays.append((hook_png, 0, storyframe.FULL_TOP + 90, 0.0, min(2.4, secs)))
+                                out_dir / "hookline.png", (w, 330 if short else 240))
+        overlays.append((hook_png, 0, geo["top"] + (90 if short else 150), 0.0, min(2.4, secs)))
     background = out_dir / storyframe.INTRO_BG
-    if full and opening.cutout_on() and background.exists() and cutout.available():
+    if full and short and opening.cutout_on() and background.exists() and cutout.available():
         # the founder cut out of his clip, the story's first pictures moving behind him (they already carry the badge and the AI tag)
         mask = cutout.mask_video(clip, secs, out_dir / "intro-mask.mp4", fps=VIDEO["fps"])
         video = cutout.over(background, clip, mask, secs, size, out_dir / "intro-video.mp4",
@@ -628,7 +633,8 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
         mask.unlink(missing_ok=True)
     elif full:                                                      # no cut-out tool or no pictures: his clip as recorded, full screen, not zoomed
         video = storyframe.scene(clip, secs, size, out_dir / "intro-video.mp4", storyframe.blank_png(out_dir / "blank.png", w), overlays,
-                                 logo_png=storyframe.logo(piece.channel), punch=False, shade_png=shade, full=True)
+                                 logo_png=storyframe.logo(piece.channel), punch=False, shade_png=shade, full=True,
+                                 shade_y=geo["shade_y"], top=geo["top"], side=geo["side"])
     else:
         if short:                                                   # the first 10 seconds carry graphics too (founder, 4 Nov 2026)
             n = len((piece.script or {}).get("scenes") or []) + 1
