@@ -154,7 +154,9 @@
    "voice": 12
   },
   "drafts": 1,
+  "ig_reel_id": "18107637872458172",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-10-arthvan-short.mp4",
    "clip_seconds": 10.03,
@@ -163,6 +165,8 @@
   },
   "out_sha": "a26545a9cb50a63c620da8521ce5fa2503d6b610",
   "out_sha_intro": true,
+  "threads_id": "18121904950963346",
+  "threads_poll_id": "17966713644226259",
   "yt_id": "J4WMPSyuaGs",
   "yt_id_replaced": "0njxSOTEbV4"
  },
@@ -375,7 +379,7 @@
   },
   "title": "*Asirgarh* ke band mandir mein taaze phool 😱"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   8.05,
@@ -426,6 +430,6 @@
   "title_hi": "Ashwatthama zinda hai?",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-11-05T13:24:20+00:00",
+ "updated": "2026-11-10T16:11:01+00:00",
  "writer": "claude"
 }
