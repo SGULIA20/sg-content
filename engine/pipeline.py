@@ -375,6 +375,7 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
     if adopt_slot_holder(piece, deps, root, dry_run):                  # the day already has its video: nothing is researched, voiced or painted
         return piece
     used, prior = _used(root)
+    used |= set(piece.ids.get("dead_topics", []))                    # topics whose research found nothing on an earlier run: never tried again for this piece
     size = VIDEO[piece.kind]
     out_dir = Path(root) / "out" / piece.id
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -400,7 +401,7 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
                 pieces.save(pieces.transition(piece, "failed-topic", "no usable topic (for a mythology Short: its long is not made yet)"), root)
                 return piece
             piece.topic = {**_jsonable(topic), "target_minutes": LONG_TARGET_MINUTES.get(piece.channel) if piece.kind == "long" else None}
-            used.add(topic.get("link") or topic.get("id"))
+            used.update(k for k in (topic.get("link"), topic.get("id")) if k)      # both: the long pickers look for the id, the news pickers for the link
             if topic.get("long_scenes"):
                 piece.facts = topic["long_facts"]
                 sheet = {"facts": piece.facts, "summary": "", "long_scenes": topic["long_scenes"], "hook": topic["hook"]}
@@ -429,6 +430,10 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
                     piece.facts = piece.facts + [{"text": str(topic["summary"]), "url": topic["link"], "label": "reported",
                                                   "date": str(topic.get("published", ""))[:10], "source": topic.get("source", "brief")}]
                 if not piece.facts:
+                    # 10 Nov 2026: the 16 Nov long tried the same three unresearchable "proven Short" news topics on every run for two days
+                    # (the list of used topics is rebuilt each run), so the bank topic behind them was never reached
+                    dead = piece.ids.setdefault("dead_topics", [])
+                    dead += [k for k in (topic.get("link"), topic.get("id")) if k and k not in dead]
                     pieces.save(pieces.transition(piece, "failed-research", f"try {attempt + 1}: no sourced facts survived the checks"), root)
                     continue
             pieces.save(pieces.transition(piece, "researched"), root)
