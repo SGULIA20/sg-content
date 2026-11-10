@@ -90,20 +90,27 @@
    "research": 1
   },
   "cost": {
-   "inr": 16.5,
+   "inr": 36.0,
    "usd": 0.115374,
-   "voice": 10
+   "voice": 20
   },
   "drafts": 2,
-  "intro_rejected": "801b1067e63fb6c3",
-  "intro_rejected_why": "the closing line \"pachaas hazaar logon ke saath yeh sach mein hua.\" was not heard",
-  "intro_sent": "2026-11-10T14:45:11+00:00"
+  "intro": {
+   "clip": "2026-11-16-sglearning-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-10T17:27:47+00:00",
+   "seconds": 10.03
+  },
+  "intro_checked": "801b1067e63fb6c3",
+  "intro_sent": "2026-11-10T14:45:11+00:00",
+  "yt_id": "kTuvPgj7aY4"
  },
  "kind": "short",
  "publish_day": "2026-11-16",
  "reasons": [
   "try 1: length: 136 words, allowed 85-125",
-  "waiting for the founder's intro clip until 16 Nov 10:00 UTC"
+  "waiting for the founder's intro clip until 16 Nov 10:00 UTC",
+  "re-made from the caches to carry the founder's intro"
  ],
  "script": {
   "captions": {
@@ -272,18 +279,18 @@
   },
   "title": "Sab khareed rahe the, phir *crash* kyun? 📉"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
-  3.57,
-  7.22,
-  10.19,
-  12.6,
-  16.25,
-  21.7,
-  25.95,
-  30.56,
-  38.05
+  4.37,
+  7.98,
+  11.39,
+  13.72,
+  17.41,
+  23.14,
+  27.75,
+  32.6,
+  41.09
  ],
  "topic": {
   "category": "scam",
@@ -304,6 +311,7 @@
    "words": 21
   },
   "layers": false,
+  "look": "claymation",
   "patch_tries": 1,
   "summary": "The Ketan Parekh episode: a handful of 'K-10' tech stocks pumped with bank and cooperative-bank money, the 2001 crash, and the cooperative bank that went down with it. Why a stock everyone is buying is the one to question.",
   "target_minutes": null,
@@ -319,6 +327,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-10T14:45:14+00:00",
+ "updated": "2026-11-10T17:27:56+00:00",
  "writer": "claude"
 }
