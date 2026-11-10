@@ -90,7 +90,7 @@
    "research": 1
   },
   "cost": {
-   "inr": 36.0,
+   "inr": 43.5,
    "usd": 0.115374,
    "voice": 20
   },
@@ -98,20 +98,22 @@
   "intro": {
    "clip": "2026-11-16-sglearning-short.mp4",
    "clip_seconds": 1,
-   "composed": "2026-11-10T17:27:47+00:00",
+   "composed": "2026-11-10T21:35:36+00:00",
    "seconds": 10.03
   },
   "intro_checked": "801b1067e63fb6c3",
   "intro_sent": "2026-11-10T14:45:11+00:00",
   "out_sha": "e9da9ccbc3b60602dfc02a02ca681bdcb58e83a8",
   "out_sha_intro": true,
-  "yt_id": "kTuvPgj7aY4"
+  "yt_id": "R0fM_bVDZXU",
+  "yt_id_replaced": "kTuvPgj7aY4"
  },
  "kind": "short",
  "publish_day": "2026-11-16",
  "reasons": [
   "try 1: length: 136 words, allowed 85-125",
   "waiting for the founder's intro clip until 16 Nov 10:00 UTC",
+  "re-made from the caches to carry the founder's intro",
   "re-made from the caches to carry the founder's intro"
  ],
  "script": {
@@ -329,6 +331,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-10T17:27:56+00:00",
+ "updated": "2026-11-10T21:35:45+00:00",
  "writer": "claude"
 }
