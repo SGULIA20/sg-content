@@ -8,7 +8,7 @@ def test_every_camera_path_moves_clearly_and_never_shows_an_edge():
     for path in d.PATHS:
         (z0, x0, y0), (z1, x1, y1) = d.camera(path, 0.0), d.camera(path, 1.0)
         travel = abs(x1 - x0) + abs(y1 - y0) + abs(z1 - z0) * W / 2
-        assert travel >= 180, (path, travel)                          # about five times the first setting
+        assert travel >= 150, (path, travel)                          # about four times the first setting
         for e in (0.0, 0.25, 0.5, 0.75, 1.0):
             z, x, y = d.camera(path, e)
             assert 1.10 <= z <= d.ZOOM_TOP, (path, z)

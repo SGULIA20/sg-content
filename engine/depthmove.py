@@ -11,9 +11,9 @@ import numpy as np
 MODEL = "depth-anything/Depth-Anything-V2-Small-hf"
 # founder, 10 Nov 2026: the first setting (34 px, zoom 1.05-1.13) "did not move"; free stronger camera movement, a different path per scene
 MARGIN = 1.30            # the picture is drawn this much larger than the frame, so the moving camera never shows an edge
-PARALLAX = 1.6           # near parts move this much more than the average
+PARALLAX = 1.15          # near parts move this much more than the average (1.6 stretched the edges of people and rocks, 10 Nov 2026)
 PATHS = ("glide", "push", "rise", "pull")
-SHIFT_PX, LIFT_PX = 140, 130       # founder, 10 Nov 2026, after the first stronger demo: "more"
+SHIFT_PX, LIFT_PX = 115, 105       # founder, 10 Nov 2026: 90/80 was too little ("more"), 140/130 stretched edges ("B"): the middle
 ZOOM_TOP = MARGIN + 0.25            # the furthest push: a little closer than the picture's own size
 
 
@@ -21,12 +21,12 @@ def camera(path: str, e: float, direction: int = 1) -> tuple:
     """(zoom, shift x, shift y) at eased time e (0..1) for a camera path. The zoom at each moment leaves enough picture outside the
     frame for that moment's shift, so no edge shows (tests/test_depthmove.py checks every path)."""
     if path == "push":                                         # straight in, strongly
-        return 1.12 + 0.34 * e, direction * (e - 0.5) * 2 * 26, (0.5 - e) * 2 * 14
+        return 1.12 + 0.28 * e, direction * (e - 0.5) * 2 * 24, (0.5 - e) * 2 * 13
     if path == "pull":                                         # starting close, drawing back to show the place
-        return 1.46 - 0.32 * e, direction * (e - 0.5) * 2 * 28, (e - 0.5) * 2 * 14
+        return 1.40 - 0.26 * e, direction * (e - 0.5) * 2 * 26, (e - 0.5) * 2 * 13
     if path == "rise":                                         # the camera lifts: near ground slides down, the far scene opens
-        return 1.24 + 0.08 * e, direction * (e - 0.5) * 2 * 26, (0.5 - e) * 2 * LIFT_PX
-    return 1.22 + 0.08 * e, direction * (e - 0.5) * 2 * SHIFT_PX, (0.5 - e) * 2 * 14      # glide: a sideways track
+        return 1.20 + 0.08 * e, direction * (e - 0.5) * 2 * 24, (0.5 - e) * 2 * LIFT_PX
+    return 1.18 + 0.08 * e, direction * (e - 0.5) * 2 * SHIFT_PX, (0.5 - e) * 2 * 14      # glide: a sideways track
 
 
 PUNCH, PUNCH_TAU = 0.10, 0.14   # every cut lands a little closer and settles in about a third of a second
@@ -71,7 +71,7 @@ def move(image: Path, depth: np.ndarray, seconds: float, size: tuple, out: Path,
     scale = max(w / iw, h / ih) * MARGIN                    # margin so the shifted edges never show
     img = cv2.resize(img, (int(iw * scale), int(ih * scale)), interpolation=cv2.INTER_CUBIC)
     dep = cv2.resize(depth, (img.shape[1], img.shape[0]), interpolation=cv2.INTER_LINEAR)
-    dep = cv2.GaussianBlur(dep, (0, 0), 8)                    # soft depth: less tearing at edges
+    dep = cv2.GaussianBlur(dep, (0, 0), 11)                    # soft depth: less tearing at edges
     dep = dep - float(dep.mean())
     ph, pw = img.shape[:2]
     ys, xs = np.mgrid[0:h, 0:w].astype(np.float32)
