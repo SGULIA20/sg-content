@@ -548,7 +548,7 @@ def test_every_intro_prompt_sets_a_moving_background_a_calm_face_and_headroom_fo
         p = _piece(kind, ch)
         plan = intro.plan(p, ask=lambda _p: "")
         prompt = plan["prompt"]
-        for must in (size, "Setting: ", "real and in motion behind him", "waist up", "do not crop the top of his head", "slight knowing smile",
+        for must in (size, "Setting: ", "real and in motion behind him", "waist up", "do not crop the top of his head",
                      "No exaggerated expressions", "very slight slow push-in", "Empty hands, no prop", "No watermark", "No hologram, no floating screen",
                      plan["closing"].rstrip(".")):
             assert must in prompt, (ch, kind, must)
@@ -575,3 +575,16 @@ def test_the_closing_line_is_heard_even_when_the_transcriber_spells_hinglish_dif
     plan = {"text": "Share market mein paisa lagaya hi nahi, phir bhi sab doob gaya. " + closing, "closing": closing}
     heard = "share market mein paisa lagaya hi nahi phir bhi sab doob gaya 50,000 logo ke sath yah sach me hua"
     assert intro.check(clip, plan, transcribe=lambda c: heard, seconds=10.0) == []
+
+
+def test_the_face_follows_the_words_and_a_myth_scene_is_ancient_india():
+    """10 Nov 2026: a smile on a line about a killing, and European knights behind a Ramayan story."""
+    assert intro.tone_for("Valmiki ki Ramayan kholo, Surpanakha ke pati ko Ravan ne maara. Suniye, twist yahan hai!") == "grave"
+    assert intro.tone_for("Share market mein paisa lagaya hi nahi, phir bhi sab doob gaya.") == "grave"
+    assert intro.tone_for("Kumbhalgarh ki deewar, China ke baad duniya mein sabse lambi? Poora sach yahan!") == "warm"
+    grim = _piece("short", "arthvan"); grim.script["hook"] = "Surpanakha ke pati ko Ravan ne maara."
+    prompt = intro.plan(grim, ask=lambda _p: "")["prompt"]
+    assert "no smile on this line" in prompt and "warm, assured smile" not in prompt and "never European knights" in prompt
+    light = _piece("short", "sglearning"); light.script["hook"] = "Ek chai ke daam mein SIP shuru ho sakti hai?"
+    prompt = intro.plan(light, ask=lambda _p: "")["prompt"]
+    assert "warm, assured smile" in prompt and "slight knowing smile" in prompt and "European knights" not in prompt

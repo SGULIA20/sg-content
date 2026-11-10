@@ -293,10 +293,25 @@ def prompt_for(piece, p: dict) -> str:
 
 
 STANDARD_PROMPT = True          # founder, 10 Nov 2026: "I want background like this in the prompt always, a moving background", both channels
-FACE = ("Face and delivery: a confident, charismatic documentary presenter. Calm, natural face with a slight knowing smile, relaxed eyebrows, eyes soft "
+FACE = ("Face and delivery: a confident, charismatic documentary presenter. Calm, natural face with {base}, relaxed eyebrows, eyes soft "
         "and focused on the viewer. On \"{key}\" the eyes narrow a little with intrigue and the head tilts slightly, as if sharing a secret. On "
-        "\"{closing}\" a warm, assured smile and one small nod. Natural blinking, subtle head movement. No exaggerated expressions: no wide eyes, no "
+        "\"{closing}\" {close}. Natural blinking, subtle head movement. No exaggerated expressions: no wide eyes, no "
         "raised eyebrows, no open-mouth surprise, no big grin, no frown. Voice: warm, clear, measured, with quiet intensity; a short pause before \"{key}\"")
+# founder's clips, 10 Nov 2026: the automatic prompt put "a warm, assured smile" on a line about 50,000 people losing their savings and on
+# a line about a killing. The tone follows the words now.
+GRAVE = re.compile(r"\b(maar\w*|mara|mare|maut|hatya|khoon|qatl|katl|yudh|jung|shraap|shrap|qaid|kaid|jail|doob\w*|dooba|loot\w*|fraud|scam|ghotala|"
+                   r"dhokha|thagi|crash|barbaad|tabah|bankrupt|diwaliya|nuksaan|nuksan|gawa\w*|kho diya|jal\w*|bhasm|dead|death|kill\w*|died|lost)\b", re.I)
+TONE = {"warm": ("a slight knowing smile", "a warm, assured smile and one small nod"),
+        "grave": ("a serious, steady look", "a steady, concerned look and one slow nod; no smile on this line")}
+
+
+def tone_for(text: str) -> str:
+    return "grave" if GRAVE.search(text or "") else "warm"
+
+
+# an SG-MYTH-WORLD scene set in the past: the avatar tool once filled a Ramayan battle with European knights in plate armour (17 Nov clip)
+ERA = ("If the scene shows the past, it is ancient India: Indian people in dhotis, sarees and angavastram, warriors with bows, spears and "
+       "bronze or leather armour, carved stone pillars, oil lamps; never European knights, plate armour, castles or anything medieval European")
 MOTION = ("The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, "
           "light shifting); never a still, flat or heavily blurred backdrop")
 
@@ -344,9 +359,11 @@ def story_prompt(piece, p: dict) -> str:
     size = "9:16 vertical, 1080x1920" if short else "16:9 landscape, 1920x1080"
     setting = _scene_setting(piece) or _moving(p.get("setting") or setting_for(piece, p))
     closing = (p.get("closing") or CLOSING).rstrip(".")
-    face = FACE.format(key=_key_phrase(p.get("question") or p.get("text") or ""), closing=closing)
+    base, close = TONE[tone_for(p.get("text") or p.get("question") or "")]
+    face = FACE.format(key=_key_phrase(p.get("question") or p.get("text") or ""), closing=closing, base=base, close=close)
+    era = f" {ERA}." if piece.channel == "arthvan" else ""
     return (f"{size}, about 8 seconds, photorealistic and cinematic, bright vivid colour. "
-            f"Setting: {setting}. {MOTION}. "
+            f"Setting: {setting}. {MOTION}.{era} "
             "Framing: medium shot from the waist up, his whole head and both shoulders inside the frame with clear space above his hair and on "
             "both sides, and he stays framed like this to the end; do not crop the top of his head. "
             "Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. "
