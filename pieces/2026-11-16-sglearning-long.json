@@ -5,7 +5,7 @@
  "ids": {
   "budget": {
    "day": "2026-11-10",
-   "research": 3
+   "research": 4
   },
   "cost": {
    "inr": 0.0,
@@ -18,7 +18,9 @@
    "https://www.livemint.com/market/stock-market-news/dividend-stock-split-buyback-last-chance-to-buy-today-vrl-logistics-jsw-dulux-angel-one-shares-11792511128048.html",
    "proven-2026-10-21-sglearning-short",
    "https://economictimes.indiatimes.com/news/economy/indicators/core-output-grows-at-series-high-of-7-9-in-sept/articleshow/135100149.cms",
-   "proven-2026-10-24-sglearning-short"
+   "proven-2026-10-24-sglearning-short",
+   "https://www.livemint.com/market/stock-market-news/gold-price-crashes-over-rs-38-600-from-record-high-whatll-happen-amid-diwali-2026-fervour-right-time-to-buy-decoded-11792910366849.html",
+   "proven-2026-10-30-sglearning-short"
   ],
   "drafts": 1
  },
@@ -42,7 +44,9 @@
   "research budget used for today (4 calls); the next quota day retries",
   "try 1: no sourced facts survived the checks",
   "try 2: no sourced facts survived the checks",
-  "try 3: no sourced facts survived the checks"
+  "try 3: no sourced facts survived the checks",
+  "try 1: no sourced facts survived the checks",
+  "research budget used for today (4 calls); the next quota day retries"
  ],
  "script": {
   "captions": {
@@ -835,21 +839,19 @@
   },
   "title": "Bank doob jaye to aapke kitne paise wapas milenge?"
  },
- "status": "failed-research",
+ "status": "rejected",
  "timings": [],
  "topic": {
   "hooks": [
-   "Raat ke 9 baje, TV pe khabar aayi: core sector 7.9 percent badha."
+   "Gaadi 5 saal mein kitni sasti ho jaati hai?",
+   "Car loan ka byaaj kitna dete hain?",
+   "Cash hai toh bhi loan lena sahi hai?"
   ],
-  "id": "proven-2026-10-24-sglearning-short",
-  "link": "https://economictimes.indiatimes.com/news/economy/indicators/core-output-grows-at-series-high-of-7-9-in-sept/articleshow/135100149.cms",
-  "proven_short": "2026-10-24-sglearning-short",
-  "proven_views": 1324,
-  "source": "ET Economy",
-  "summary": "A 12-minute illustrated documentary on the question of the Short \"Core sector 7.9% upar, petrol sasta kyun nahi?\", which reached 1,324 people on Instagram. Go deeper than the Short: the mechanism, a worked example in rupees, the mistakes people make, what to check. Story so far: India's core sector output growth for September recorded a remarkable 7.9%, driven largely by expansion in coal and electricity. Notably, refinery products and iron ore also contributed to this growth, supported by a favorable base effect. Coal production saw a sharp rebound with a growth rate of 10.7% following previous negative trends. Electricity generation growth declined slightly, impacted by heatwave conditions in the country.",
+  "id": "car-loan-vs-cash",
+  "summary": "Total cost of car ownership: loan interest, depreciation, insurance, fuel, service; the loan-vs-cash decision with opportunity cost, why a used car can be the smarter maths for many families.",
   "target_minutes": 12,
-  "title": "Core sector 7.9% upar, petrol sasta kyun nahi?"
+  "title": "10 lakh ki gaadi: loan par lein ya cash, aur 5 saal mein asli kharcha kya"
  },
- "updated": "2026-11-10T10:01:14+00:00",
+ "updated": "2026-11-10T13:49:40+00:00",
  "writer": "claude"
 }
