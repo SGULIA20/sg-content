@@ -13,18 +13,20 @@ MODEL = "depth-anything/Depth-Anything-V2-Small-hf"
 MARGIN = 1.30            # the picture is drawn this much larger than the frame, so the moving camera never shows an edge
 PARALLAX = 1.6           # near parts move this much more than the average
 PATHS = ("glide", "push", "rise", "pull")
-SHIFT_PX, LIFT_PX = 90, 80
+SHIFT_PX, LIFT_PX = 140, 130       # founder, 10 Nov 2026, after the first stronger demo: "more"
+ZOOM_TOP = MARGIN + 0.25            # the furthest push: a little closer than the picture's own size
 
 
 def camera(path: str, e: float, direction: int = 1) -> tuple:
-    """(zoom, shift x, shift y) at eased time e (0..1) for a camera path. Zoom stays between 1.10 and MARGIN + 0.04 so no edge shows."""
+    """(zoom, shift x, shift y) at eased time e (0..1) for a camera path. The zoom at each moment leaves enough picture outside the
+    frame for that moment's shift, so no edge shows (tests/test_depthmove.py checks every path)."""
     if path == "push":                                         # straight in, strongly
-        return 1.12 + 0.22 * e, direction * (e - 0.5) * 2 * 22, (0.5 - e) * 2 * 12
+        return 1.12 + 0.34 * e, direction * (e - 0.5) * 2 * 26, (0.5 - e) * 2 * 14
     if path == "pull":                                         # starting close, drawing back to show the place
-        return 1.32 - 0.18 * e, direction * (e - 0.5) * 2 * 26, (e - 0.5) * 2 * 12
+        return 1.46 - 0.32 * e, direction * (e - 0.5) * 2 * 28, (e - 0.5) * 2 * 14
     if path == "rise":                                         # the camera lifts: near ground slides down, the far scene opens
-        return 1.14 + 0.08 * e, direction * (e - 0.5) * 2 * 24, (0.5 - e) * 2 * LIFT_PX
-    return 1.14 + 0.07 * e, direction * (e - 0.5) * 2 * SHIFT_PX, (0.5 - e) * 2 * 14      # glide: a sideways track
+        return 1.24 + 0.08 * e, direction * (e - 0.5) * 2 * 26, (0.5 - e) * 2 * LIFT_PX
+    return 1.22 + 0.08 * e, direction * (e - 0.5) * 2 * SHIFT_PX, (0.5 - e) * 2 * 14      # glide: a sideways track
 
 
 PUNCH, PUNCH_TAU = 0.10, 0.14   # every cut lands a little closer and settles in about a third of a second

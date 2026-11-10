@@ -167,13 +167,13 @@ def camera_expr(path: str, frames: int, direction: int = 1) -> tuple:
     n = max(1, frames)
     centre_x, centre_y = "iw/2-(iw/zoom/2)", "ih/2-(ih/zoom/2)"
     if path == "push":
-        return f"min(1.02+{0.26 / n:.6f}*on,1.28)", centre_x, centre_y
+        return f"min(1.02+{0.38 / n:.6f}*on,1.40)", centre_x, centre_y
     if path == "pull":
-        return f"max(1.28-{0.24 / n:.6f}*on,1.04)", centre_x, centre_y
+        return f"max(1.40-{0.36 / n:.6f}*on,1.04)", centre_x, centre_y
     if path == "rise":
-        return "1.18", centre_x, f"(ih-ih/zoom)*(1-on/{n})"
+        return "1.26", centre_x, f"(ih-ih/zoom)*(1-on/{n})"
     go = f"on/{n}" if direction >= 0 else f"(1-on/{n})"
-    return "1.18", f"(iw-iw/zoom)*{go}", centre_y
+    return "1.26", f"(iw-iw/zoom)*{go}", centre_y
 
 
 def blank_png(out: Path, w: int) -> Path:

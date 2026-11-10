@@ -8,10 +8,10 @@ def test_every_camera_path_moves_clearly_and_never_shows_an_edge():
     for path in d.PATHS:
         (z0, x0, y0), (z1, x1, y1) = d.camera(path, 0.0), d.camera(path, 1.0)
         travel = abs(x1 - x0) + abs(y1 - y0) + abs(z1 - z0) * W / 2
-        assert travel >= 120, (path, travel)                          # at least three times the first setting
+        assert travel >= 180, (path, travel)                          # about five times the first setting
         for e in (0.0, 0.25, 0.5, 0.75, 1.0):
             z, x, y = d.camera(path, e)
-            assert 1.10 <= z <= d.MARGIN + 0.04, (path, z)
+            assert 1.10 <= z <= d.ZOOM_TOP, (path, z)
             near = 1 + d.PARALLAX * 0.5                               # the nearest parts move furthest
             spare_x = (PIC_W * d.MARGIN - W * d.MARGIN / z) / 2      # picture left outside the frame on each side, in drawn pixels
             spare_y = H * d.MARGIN * (1 - 1 / z) / 2
