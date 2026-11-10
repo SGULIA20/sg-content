@@ -272,8 +272,7 @@ def _pick(piece, options: list, salt: int = 0):
 def prompt_for(piece, p: dict) -> str:
     """The avatar prompt in the founder's format: setting, lighting, body language in three beats, prop, camera, watermark; no captions.
     Setting, outfit, pose, camera and beats rotate per piece."""
-    from . import opening
-    if opening.is_trial(piece):
+    if STANDARD_PROMPT:
         return story_prompt(piece, p)
     short = piece.kind == "short"
     size = "9:16 vertical, 1080x1920" if short else "16:9 landscape, 1920x1080"
@@ -292,26 +291,71 @@ def prompt_for(piece, p: dict) -> str:
             f"Export at {('1080x1920' if short else '1920x1080')}.")
 
 
-def story_prompt(piece, p: dict) -> str:
-    """The avatar prompt for a Short in the new opening style (founder, 10 Nov 2026: "in prompt only we may set background"): he stands
-    in the story's own first scene, framed from the waist up with room above his head (the old clip was zoomed and cut), empty hands,
-    no watermark (the frame adds the badge) and a hard rule against the floating screen the avatar tool likes to draw."""
+STANDARD_PROMPT = True          # founder, 10 Nov 2026: "I want background like this in the prompt always, a moving background", both channels
+FACE = ("Face and delivery: a confident, charismatic documentary presenter. Calm, natural face with a slight knowing smile, relaxed eyebrows, eyes soft "
+        "and focused on the viewer. On \"{key}\" the eyes narrow a little with intrigue and the head tilts slightly, as if sharing a secret. On "
+        "\"{closing}\" a warm, assured smile and one small nod. Natural blinking, subtle head movement. No exaggerated expressions: no wide eyes, no "
+        "raised eyebrows, no open-mouth surprise, no big grin, no frown. Voice: warm, clear, measured, with quiet intensity; a short pause before \"{key}\"")
+MOTION = ("The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, "
+          "light shifting); never a still, flat or heavily blurred backdrop")
+
+
+def _scene_setting(piece) -> str:
+    """The story's own first picture, as a place to stand in (the new-style Shorts describe a realistic view there); '' when it is not one."""
+    from . import opening
+    if not opening.is_trial(piece):
+        return ""
     scenes = (piece.script or {}).get("scenes") or [{}]
     scene = re.sub(r"(?i)\bphoto-?realistic\b[, ]*", "", str((scenes[0].get("visual") or {}).get("prompt") or "")).strip().rstrip(".")
-    scene = re.sub(r"(?i),?\s*no (text|people|logos?)\b[^,.]*", "", scene) or setting_for(piece, p)
+    return re.sub(r"(?i),?\s*no (text|people|logos?)\b[^,.]*", "", scene)
+
+
+# places with screens or a blurred backdrop, as the older prompt asked for them: the standard prompt wants a clear place with life in it
+MOVING_PLACES = {
+    "a broker's office, a wall of green and red tickers softly blurred behind":
+        "the street outside the Bombay Stock Exchange tower on Dalal Street in the morning, office-goers walking past, traffic and pigeons moving behind",
+    "inside a bank branch, counters, a token display and a short queue softly blurred behind":
+        "inside a busy bank branch, customers at the counters and a short queue moving behind, daylight through tall windows",
+    "an open-plan office floor after hours, desks and monitors softly blurred behind":
+        "the glass lobby of an office building at closing time, people with bags and ID cards walking out behind",
+    "a bank branch waiting area, wooden benches and a counter blurred behind, clean light softened":
+        "a bank branch waiting area, people on wooden benches and at the counter moving behind, clean daylight",
+}
+
+
+def _moving(setting: str) -> str:
+    setting = MOVING_PLACES.get(setting, setting)
+    return re.sub(r",? ?(softly |heavily )?blurred( behind| below)?", lambda m: " behind" if "behind" in m.group(0) else "", setting).replace("  ", " ").strip()
+
+
+def _key_phrase(question: str) -> str:
+    """The last few words of the opening line: where the look of intrigue lands."""
+    words = re.sub(r"[?!.,]+$", "", question.strip()).split()
+    return " ".join(words[-4:])
+
+
+def story_prompt(piece, p: dict) -> str:
+    """The avatar prompt, both channels, Shorts and longs (founder, 10 Nov 2026, after the Hanuman intro: "in prompt only we may set
+    background", "always moving background", and a face that is not over-acted): he stands in a real, moving place that matches the
+    subject, framed from the waist up with room above his head (the old clips were zoomed and cut), a calm presenter's face, empty hands,
+    no watermark (the frame adds the badge) and a hard rule against the floating screen the avatar tool likes to draw."""
+    short = piece.kind == "short"
+    size = "9:16 vertical, 1080x1920" if short else "16:9 landscape, 1920x1080"
+    setting = _scene_setting(piece) or _moving(p.get("setting") or setting_for(piece, p))
     closing = (p.get("closing") or CLOSING).rstrip(".")
-    return ("9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. "
-            f"Setting: he stands inside this scene, which is real and in motion behind him: {scene}. "
+    face = FACE.format(key=_key_phrase(p.get("question") or p.get("text") or ""), closing=closing)
+    return (f"{size}, about 8 seconds, photorealistic and cinematic, bright vivid colour. "
+            f"Setting: {setting}. {MOTION}. "
             "Framing: medium shot from the waist up, his whole head and both shoulders inside the frame with clear space above his hair and on "
-            "both sides; do not crop the top of his head. "
-            "Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; no dull or flat grey look. "
-            f"SG [locked] leaning eagerly toward the lens, eyebrows high, wearing {_pick(piece, OUTFITS, 1)}. Speaks from the first frame, mouth matched "
-            f"to the words, friendly eye contact with the lens. {DELIVERY}. "
-            f"Body language in two beats: on the first line, one open hand sweeps out toward the scene behind him; on \"{closing}\", a big grin and "
-            "the hand comes forward toward the viewer. Camera: eye level, a slow push-in, slight handheld feel. "
+            "both sides, and he stays framed like this to the end; do not crop the top of his head. "
+            "Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. "
+            f"SG [locked] standing relaxed and upright, shoulders open, wearing {_pick(piece, OUTFITS, 1)}. Speaks from the first frame, mouth matched "
+            f"to the words, steady eye contact with the lens. {face}. "
+            "Hands: one slow, small gesture toward the scene behind him on the first line, then hands rest; no fast or large arm movements. "
+            "Camera: eye level, a very slight slow push-in, slight handheld feel. "
             "Empty hands, no prop. No watermark, no logo, no captions, no subtitles, no on-screen text of any kind. "
             "No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. "
-            "Export at 1080x1920.")
+            f"Export at {('1080x1920' if short else '1920x1080')}.")
 
 
 def earliest_slot_utc(piece) -> datetime:

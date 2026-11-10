@@ -14,6 +14,15 @@ def _piece(kind="short", channel="sglearning", pid=None, day=date(2026, 11, 7)):
     return p
 
 
+import pytest
+
+
+@pytest.fixture
+def old_prompt(monkeypatch):
+    """The reporter-style prompt of 7 Nov 2026, kept behind intro.STANDARD_PROMPT (off since 10 Nov 2026)."""
+    monkeypatch.setattr(intro, "STANDARD_PROMPT", False)
+
+
 def test_enabled_for_painted_shorts_and_longs_not_code_card_reels():
     assert intro.enabled(_piece()) and intro.enabled(_piece("long", "arthvan"))
     x = _piece(pid="2026-11-07-sglearning-x1"); assert intro.enabled(x)          # founder, 5 Nov 2026: compulsory on every Reel and video
@@ -21,7 +30,7 @@ def test_enabled_for_painted_shorts_and_longs_not_code_card_reels():
     c = _piece(); c.kind = "carousel"; assert not intro.enabled(c)
 
 
-def test_plan_is_question_then_closing_within_20_words_the_bridge_only_when_it_fits():
+def test_plan_is_question_then_closing_within_20_words_the_bridge_only_when_it_fits(old_prompt):
     p = _piece()
     plan = intro.plan(p, ask=lambda prompt: "Aapka paisa doobta hai, unki fees phir bhi pakki rehti hai")
     assert plan["question"] == p.script["hook"] and (plan["bridge"] == "" or plan["bridge"].endswith(".")) and plan["closing"] in intro.CLOSINGS
@@ -31,7 +40,7 @@ def test_plan_is_question_then_closing_within_20_words_the_bridge_only_when_it_f
         assert must in plan["prompt"], must
 
 
-def test_the_avatar_prompt_changes_setting_outfit_pose_and_camera_from_day_to_day():
+def test_the_avatar_prompt_changes_setting_outfit_pose_and_camera_from_day_to_day(old_prompt):
     """4 Nov 2026 (founder): "clothes, position, walk or background should change in every reel; all can't be the same"."""
     from datetime import timedelta
     seen = set()
@@ -47,7 +56,7 @@ def test_the_avatar_prompt_changes_setting_outfit_pose_and_camera_from_day_to_da
     assert "@SGMythWorld" in intro.prompt_for(myth, {"text": ""}) and "old map" in intro.prompt_for(myth, {"text": ""})
 
 
-def test_a_long_bridge_or_a_failed_ask_leaves_question_and_closing_only():
+def test_a_long_bridge_or_a_failed_ask_leaves_question_and_closing_only(old_prompt):
     p = _piece("long", "arthvan")
     too_long = intro.plan(p, ask=lambda _p: " ".join(["bahut"] * 30))
     assert too_long["bridge"] == "" and too_long["text"] == p.script["hook"] + " " + intro.closing_for(p) and too_long["aspect"] == "16:9"
@@ -464,7 +473,7 @@ def test_the_audit_lists_scheduled_videos_and_marks_the_ones_no_piece_recorded(t
     assert any("stray2" in l and "NOT IN REPO" in l for l in lines) and any("known1" in l and p.id in l for l in lines)
 
 
-def test_outfits_never_match_across_channels_or_on_back_to_back_days_and_no_screens_appear(tmp_path):
+def test_outfits_never_match_across_channels_or_on_back_to_back_days_and_no_screens_appear(tmp_path, old_prompt):
     """7 Nov 2026 (founder: similar clothes in both Shorts, a blue device in every reel): fourteen outfits, different for each channel and
     day, props that are paper or objects, and a standing instruction against laptops, tablets and glowing screens."""
     from datetime import date
@@ -480,7 +489,7 @@ def test_outfits_never_match_across_channels_or_on_back_to_back_days_and_no_scre
     assert "No laptop, tablet, monitor, TV or glowing blue screen" in intro.prompt_for(p, {"text": "x", "closing": "Chaliye."})
 
 
-def test_the_intro_asks_for_a_news_reporter_delivery_and_the_closings_are_punchy_and_short_enough():
+def test_the_intro_asks_for_a_news_reporter_delivery_and_the_closings_are_punchy_and_short_enough(old_prompt):
     """7 Nov 2026 (founder: 'my personality looks dull, it should be energetic like a news reporter, walking, talking in excitement')."""
     from datetime import date
     p = pieces.Piece(id="2026-11-14-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 11, 14))
@@ -531,3 +540,26 @@ def test_a_new_style_short_asks_for_the_storys_own_scene_behind_him_with_headroo
     for must in ("waist up", "do not crop the top of his head", "Empty hands, no prop", "No watermark", "No hologram, no floating screen"):
         assert must in prompt, must
     assert "watermark top right" not in prompt
+
+
+def test_every_intro_prompt_sets_a_moving_background_a_calm_face_and_headroom_for_both_channels():
+    """Founder, 10 Nov 2026: "I want background like this in the prompt always, a moving background"; the over-acted face was not attractive."""
+    for kind, ch, size in (("short", "sglearning", "1080x1920"), ("long", "arthvan", "1920x1080"), ("short", "arthvan", "1080x1920")):
+        p = _piece(kind, ch)
+        plan = intro.plan(p, ask=lambda _p: "")
+        prompt = plan["prompt"]
+        for must in (size, "Setting: ", "real and in motion behind him", "waist up", "do not crop the top of his head", "slight knowing smile",
+                     "No exaggerated expressions", "very slight slow push-in", "Empty hands, no prop", "No watermark", "No hologram, no floating screen",
+                     plan["closing"].rstrip(".")):
+            assert must in prompt, (ch, kind, must)
+        for never in ("watermark top right", "bubbling over", "eyebrows high", "big grin on the reveal"):
+            assert never not in prompt, never
+    assert intro._key_phrase("Kehte hain, Hanuman ji ne apni Ramayan khud samundar mein phenk di.") == "samundar mein phenk di"
+
+
+def test_no_background_of_the_standard_prompt_asks_for_a_screen_or_a_blur():
+    for _pat, place in intro.PLACES:
+        clean = intro._moving(place)
+        assert "blurred" not in clean and "ticker" not in clean and "monitor" not in clean and "display" not in clean, clean
+    for place in intro.SETTINGS["sglearning"] + intro.SETTINGS["arthvan"]:
+        assert "blurred" not in intro._moving(place), place
