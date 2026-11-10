@@ -11,8 +11,8 @@ from pathlib import Path
 from .config import CONTENT_DIR
 
 TEST_FILE = "hero-test.json"
-WORDS = (85, 125)                   # 35-45 s at about 2.5 words a second
-PILL_SIZE_H = 90
+WORDS = (70, 100)                   # about 30-38 s of narration at 2.5 words a second, so the Short lands near 40-45 s with the founder's intro
+PILL_SIZE_H = 104
 TAG_TEXT = "AI visualisation"
 KIND_FOR = {"scripture": "legend", "legend": "legend", "archaeology": "science", "disputed": "disputed"}
 LABEL_TEXT = {"scripture": "Parampara", "legend": "Kahani", "archaeology": "Khoj", "disputed": "Bahas"}
@@ -60,7 +60,7 @@ def pill_for(piece, i: int):
     if label in LABEL_TEXT and used:
         src = (piece.facts[used[0]] or {}).get("source_name")
         if src:
-            return f"{LABEL_TEXT[label]} • {_short(src, 24)}", KIND_FOR[label]
+            return f"{LABEL_TEXT[label]} • {_short(src, 13)}", KIND_FOR[label]
     return None
 
 
@@ -73,16 +73,36 @@ def render_pills(piece, out_dir: Path, size: tuple, render) -> dict:
     for i in range(len((piece.script or {}).get("scenes", []))):
         p = pill_for(piece, i)
         if p:
-            out[i] = render("pill", {"kind": p[1], "text": p[0]}, out_dir / f"pill{i:02d}.png", (size[0] - 80, PILL_SIZE_H))
-    out["tag"] = render("pill", {"kind": "ai", "text": TAG_TEXT}, out_dir / "tag.png", (460, 60))
+            out[i] = render("pill", {"kind": p[1], "text": p[0]}, out_dir / f"pill{i:02d}.png", (size[0] - 240, PILL_SIZE_H))             # its own row under the badge, the full safe width
+    out["tag"] = render("pill", {"kind": "ai", "text": TAG_TEXT}, out_dir / "tag.png", (460, 66))
     return out
 
 
-def overlays_for(piece, i: int, dur: float, size: tuple, pills: dict) -> list:
-    """Overlay tuples for assemble.scene_clip: the pill for a few seconds, the AI tag for the whole of a photoreal scene."""
+POP_S = 0.28                        # a pill slides in from the left in this time
+
+
+def frame_overlays(piece, i: int, dur: float, size: tuple, pills: dict, top: int, side: int, logo_px: int) -> list:
+    """Timed overlays (png, x, y, start, end) for the full-screen story frame: the AI tag top-left on a realistic picture for the whole
+    scene; the scene's pill on its own row under the badge, sliding in from the left (x is an ffmpeg expression)."""
     out = []
-    if i in pills:
-        out.append((pills[i], 40, 130, 0.15, min(dur, 3.6)))
     if "tag" in pills and is_hero_scene(piece, i):
-        out.append((pills["tag"], size[0] - 460 - 30, size[1] - 140))
+        out.append((pills["tag"], side, top, 0.0, dur))
+    if i in pills:
+        slide = f"'min({side},-{size[0]}+({size[0]}+{side})*(t-0.15)/{POP_S})'"
+        out.append((pills[i], slide, top + logo_px + 18, 0.15, dur))
     return out
+
+
+def active(today=None, root: Path = None, ahead: int = 9) -> bool:
+    """True while the test window overlaps the days being produced (the workflows install the picture-movement and cut-out tools only then)."""
+    from datetime import date, timedelta
+    t = _config(root)
+    if not t:
+        return False
+    today = today or date.today()
+    return t.get("from", "9") <= (today + timedelta(days=ahead)).isoformat() and (today - timedelta(days=1)).isoformat() <= t.get("to", "0")
+
+
+if __name__ == "__main__":
+    import sys
+    sys.exit(0 if active() else 1)

@@ -9,7 +9,7 @@ from pathlib import Path
 
 import numpy as np
 
-from . import captions, cards, opening
+from . import captions, cards
 from .config import ASSETS_DIR, VIDEO
 from .pieces import Piece
 
@@ -150,12 +150,10 @@ def build(piece: Piece, lines: list, visuals: list, size: tuple, out_dir: Path, 
     durations = [d + PAD_S for _w, d in lines]
     band, band_y = caption_band(size)
     all_cues, clips = [], []
-    pills = opening.render_pills(piece, out_dir / "pills", size, cards.render)            # the new-opening test only; {} for every other piece
     for i, (img, dur, (wav, d), start, scene) in enumerate(zip(visuals, durations, lines, starts, piece.script["scenes"])):
         cues = captions.split(scene["vo"], d)
         all_cues += captions.offset(cues, start)
         overlays = _overlays_for(piece, i, size, source_strips if source_strips is not None else source_strip, label_chips, credits)
-        overlays += opening.overlays_for(piece, i, dur, size, pills)
         overlays += [(png, 0, band_y, s, e) for png, s, e in cue_pngs(cues, size, out_dir / "cues")]
         clips.append(scene_clip(img, dur, size, out_dir / f"scene{i:02d}.mp4", overlays=overlays))
     (out_dir / "captions.ass").write_text(captions.ass(all_cues, size))            # sidecar for upload or review

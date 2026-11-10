@@ -85,6 +85,7 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-core fonts-noto-color-emoji
           python -m playwright install --with-deps chromium
+          if python -m engine.opening; then pip install -q torch --index-url https://download.pytorch.org/whl/cpu && pip install -q transformers opencv-python-headless rembg onnxruntime || echo "tools not installed, the intro is shown full-screen as recorded"; fi
       - name: Sweep (compose + upload) or redo one piece
         if: steps.need.outputs.yes == '1'
         env:

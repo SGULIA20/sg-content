@@ -603,7 +603,10 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
             return planned
         if piece.channel == "sglearning":
             if piece.kind == "long":                                   # 4 Nov 2026: a proven Short's question first, then the bank
-                return topics.next_long_finance(root / "content", used, topics.proven_shorts(root, "sglearning"))
+                # 10 Nov 2026: once one proven-Short news topic has failed research for this piece, go to the evergreen bank; the
+                # 16 Nov long spent two days on old news stories that no longer yield sourced facts for a 12-minute video
+                burnt = any(str(k).startswith("proven-") for k in piece.ids.get("dead_topics", []))
+                return topics.next_long_finance(root / "content", used, () if burnt else topics.proven_shorts(root, "sglearning"))
             from datetime import datetime, timezone
             if topics.history_day(piece.publish_day):                   # 6 Nov 2026: wars, crashes, scams and price history, every other day
                 bank = topics.next_money_history(root / "content", used)

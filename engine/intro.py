@@ -544,12 +544,29 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
         else:
             cards.render("storycap", {"text": text}, png, (w, band_h))
         overlays.append((png, 0, bottom_y, s, e))
-    if short:                                                       # the first 10 seconds carry graphics too (founder, 4 Nov 2026)
-        n = len((piece.script or {}).get("scenes") or []) + 1
-        overlays += layers.scene_overlays(p["text"], 0, n, size, out_dir / "layers", top=band_h, side=storyframe.SAFE_SIDE,
-                                          chart_y=band_h + 230, dur=secs)
-    video = storyframe.scene(clip, secs, size, out_dir / "intro-video.mp4", title_png, overlays, logo_png=storyframe.logo(piece.channel),
-                             watermark_png=storyframe.logo(piece.channel, 600), punch=False, shade_png=shade)
+    from . import cutout, opening
+    full = short and opening.is_trial(piece)                        # the new opening style (10 Nov 2026): full screen, no band, no centre watermark
+    if full:                                                        # the hook, big, over the first two seconds (the viewer reads it before he finishes saying it)
+        hook_png = cards.render("hookline", {"title_html": storyframe.title_html((piece.script or {}).get("title") or p.get("question", ""))},
+                                out_dir / "hookline.png", (w, 330))
+        overlays.append((hook_png, 0, storyframe.FULL_TOP + 90, 0.0, min(2.4, secs)))
+    background = out_dir / storyframe.INTRO_BG
+    if full and background.exists() and cutout.available():
+        # the founder cut out of his clip, the story's first pictures moving behind him (they already carry the badge and the AI tag)
+        mask = cutout.mask_video(clip, secs, out_dir / "intro-mask.mp4", fps=VIDEO["fps"])
+        video = cutout.over(background, clip, mask, secs, size, out_dir / "intro-video.mp4",
+                            overlays=[(shade, 0, h - storyframe.SHADE_H - storyframe.LIFT), *overlays], fps=VIDEO["fps"])
+        mask.unlink(missing_ok=True)
+    elif full:                                                      # no cut-out tool or no pictures: his clip as recorded, full screen, not zoomed
+        video = storyframe.scene(clip, secs, size, out_dir / "intro-video.mp4", storyframe.blank_png(out_dir / "blank.png", w), overlays,
+                                 logo_png=storyframe.logo(piece.channel), punch=False, shade_png=shade, full=True)
+    else:
+        if short:                                                   # the first 10 seconds carry graphics too (founder, 4 Nov 2026)
+            n = len((piece.script or {}).get("scenes") or []) + 1
+            overlays += layers.scene_overlays(p["text"], 0, n, size, out_dir / "layers", top=band_h, side=storyframe.SAFE_SIDE,
+                                              chart_y=band_h + 230, dur=secs)
+        video = storyframe.scene(clip, secs, size, out_dir / "intro-video.mp4", title_png, overlays, logo_png=storyframe.logo(piece.channel),
+                                 watermark_png=storyframe.logo(piece.channel, 600), punch=False, shade_png=shade)
     # audio in separate passes: loudnorm buffers about 3 s, and a mixer that stops at the first input's end lost the last line (4 Nov 2026)
     voice = out_dir / "intro-voice.wav"
     _run(["-t", f"{secs:.3f}", "-i", str(clip), "-vn", "-af", f"aresample=48000,aformat=channel_layouts=stereo,loudnorm=I={VOICE_LUFS}:TP=-1.5:LRA=11,aresample=48000",

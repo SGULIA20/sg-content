@@ -1,0 +1,38 @@
+name: preview-piece
+
+# A preview of one Short in the new opening style, sent to the founder's Telegram; never uploaded, nothing committed (founder, 10 Nov 2026).
+on:
+  workflow_dispatch:
+    inputs:
+      piece:
+        description: 'piece id, e.g. 2026-11-16-arthvan-short'
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-core fonts-noto-color-emoji
+      - run: pip install -r requirements.txt
+      - run: python -m playwright install --with-deps chromium
+      - name: Picture movement and cut-out tools
+        run: pip install -q torch --index-url https://download.pytorch.org/whl/cpu && pip install -q transformers opencv-python-headless rembg onnxruntime
+      - name: Build the preview
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/preview_piece.py "${{ inputs.piece }}" out/preview
+      - name: Send it to the founder
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python -c "from pathlib import Path; from engine import telegram; print(telegram.send_file(Path('out/preview/${{ inputs.piece }}/reel.mp4'), 'PREVIEW ${{ inputs.piece }} in the new style. Not uploaded. Tell Claude to approve it or what to change.'))"

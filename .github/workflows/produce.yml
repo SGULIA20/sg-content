@@ -55,6 +55,8 @@ jobs:
         run: pip install -r requirements.txt
       - name: Install Chromium
         run: python -m playwright install --with-deps chromium
+      - name: Picture movement and cut-out tools (only while the new-opening test is being produced)
+        run: if python -m engine.opening; then pip install -q torch --index-url https://download.pytorch.org/whl/cpu && pip install -q transformers opencv-python-headless rembg onnxruntime || echo "tools not installed, plain zoom and full-screen intro are used"; fi
       - name: Unit tests
         run: python -m pytest -q -m "not slow"
       - name: Git identity
