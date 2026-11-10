@@ -19,6 +19,7 @@ LIFT = 300                                                   # captions sit this
 TITLE_PAD_SHORT = 150                                        # the title clears Instagram's back arrow and camera button
 HANDLE = "@sanjeev_gulia"
 FULL_TOP = 170                                               # full-screen Shorts: the badge and the tag start here, clear of the apps' top buttons
+LONG_CAP_H, LONG_SHADE_H, LONG_TOP, LONG_SIDE = 230, 380, 50, 70   # full-screen long videos (16:9): captions on a soft shade at the foot
 END_S = 3.0                                                  # branded end card: channel name, tagline, subscribe, the question
 LOGO_PX = 150                                                # round channel badge in the panel's bottom-right corner, every frame
 WATERMARK_ALPHA = 0.10                                       # the same badge, large and faint, in the centre of every panel: a crop cannot remove it
@@ -92,21 +93,25 @@ def caption_html(text: str, keyword: str = "") -> str:
 
 def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, cue_overlays: list, chip: Path | None = None,
           logo_png: Path | None = None, watermark_png: Path | None = None, punch: bool = False, shade_png: Path | None = None,
-          full: bool = False) -> Path:
+          full: bool = False, camera: tuple | None = None, shade_y: int | None = None, top: int | None = None, side: int | None = None) -> Path:
     """Panel with push-in below the title band; long videos keep a black caption band below, Shorts (shade_png given) run the
     picture to the bottom with a shadow under the captions. Optional evidence chip, caption cues overlaid."""
     w, h = size
     py = 0 if full else int(h * TOP)                         # full: the picture fills the screen, no title band (the new-opening test, 10 Nov 2026)
     ph = h - py if shade_png is not None else int(h * PANEL)
-    top = FULL_TOP if full else py + 30                      # where the chip and the badge sit
+    if full and shade_png is None:
+        ph = h                                               # a full-screen frame with no shade (never the banded layout)
+    top = top if top is not None else (FULL_TOP if full else py + 30)       # where the chip and the badge sit
+    side = side if side is not None else SAFE_SIDE
     frames = max(1, int(round(seconds * FPS)))
     if Path(panel).suffix == ".mp4":                          # a moving news card (2 Nov 2026): already animated, no push-in
         chain = (f"[0:v]scale={w}:{ph}:force_original_aspect_ratio=increase,crop={w}:{ph},fps={FPS},setsar=1,"
                  f"pad={w}:{h}:0:{py}:black[base];[base][1:v]overlay=0:0:shortest=1[t]")
         inputs = ["-stream_loop", "-1", "-i", str(panel), "-loop", "1", "-i", str(title_png)]
     else:
+        zx, xx, yx = camera if camera else (zoom_expr(seconds, punch), "iw/2-(iw/zoom/2)", "ih/2-(ih/zoom/2)")
         chain = (f"[0:v]scale={w * 2}:{ph * 2}:force_original_aspect_ratio=increase,crop={w * 2}:{ph * 2},"
-                 f"zoompan=z='{zoom_expr(seconds, punch)}':d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={w}x{ph}:fps={FPS},"
+                 f"zoompan=z='{zx}':d={frames}:x='{xx}':y='{yx}':s={w}x{ph}:fps={FPS},"
                  f"pad={w}:{h}:0:{py}:black[base];[base][1:v]overlay=0:0:shortest=1[t]")
         inputs = ["-loop", "1", "-i", str(panel), "-loop", "1", "-i", str(title_png)]
     last, k0 = "[t]", 2
@@ -118,9 +123,9 @@ def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, 
         last, k0 = f"[x{k0}]", k0 + 1
     if shade_png is not None:
         inputs += ["-loop", "1", "-i", str(shade_png)]
-        chain += f";{last}[{k0}:v]overlay=0:{h - SHADE_H - LIFT}:shortest=1[x{k0}]"
+        chain += f";{last}[{k0}:v]overlay=0:{shade_y if shade_y is not None else h - SHADE_H - LIFT}:shortest=1[x{k0}]"
         last, k0 = f"[x{k0}]", k0 + 1
-        spots = ((chip, SAFE_SIDE, top), (logo_png, w - LOGO_PX - SAFE_SIDE, top))   # inside the safe zone, never under the captions
+        spots = ((chip, side, top), (logo_png, w - LOGO_PX - side, top))   # inside the safe zone, never under the captions
     else:
         spots = ((chip, w - 400 - 30, py + 30), (logo_png, w - LOGO_PX - 26, py + ph - LOGO_PX - 26))
     for extra, x, y in spots:
@@ -138,6 +143,37 @@ def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, 
     _run([*inputs, "-filter_complex", chain, "-map", last, "-t", f"{frames / FPS:.3f}", "-r", str(FPS),
           "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-an", str(out)])
     return out
+
+
+def geometry(size: tuple, short: bool, full: bool) -> dict:
+    """Where things sit: the caption card's size and top edge, the shade's size and top edge (None: no shade), and the top/side of the
+    badge row. Old long videos keep the black caption band; Shorts and full-screen longs put captions on a shade over the picture."""
+    w, h = size
+    band_h = int(h * TOP)
+    if short:
+        return {"cap": (w, CAP_H), "cap_y": h - CAP_H - LIFT, "shade": (w, SHADE_H + LIFT), "shade_y": h - SHADE_H - LIFT,
+                "top": FULL_TOP if full else band_h + 30, "side": SAFE_SIDE}
+    if full:
+        return {"cap": (w, LONG_CAP_H), "cap_y": h - LONG_CAP_H - 24, "shade": (w, LONG_SHADE_H), "shade_y": h - LONG_SHADE_H,
+                "top": LONG_TOP, "side": LONG_SIDE}
+    return {"cap": (w, band_h), "cap_y": h - band_h, "shade": None, "shade_y": 0, "top": band_h + 30, "side": 30}
+
+
+CAMERA_PATHS = ("push", "glide", "pull", "rise")             # full-screen long videos: a strong pan or zoom per scene, done by ffmpeg (fast)
+
+
+def camera_expr(path: str, frames: int, direction: int = 1) -> tuple:
+    """zoompan's (z, x, y) for a camera path over `frames` frames."""
+    n = max(1, frames)
+    centre_x, centre_y = "iw/2-(iw/zoom/2)", "ih/2-(ih/zoom/2)"
+    if path == "push":
+        return f"min(1.02+{0.26 / n:.6f}*on,1.28)", centre_x, centre_y
+    if path == "pull":
+        return f"max(1.28-{0.24 / n:.6f}*on,1.04)", centre_x, centre_y
+    if path == "rise":
+        return "1.18", centre_x, f"(ih-ih/zoom)*(1-on/{n})"
+    go = f"on/{n}" if direction >= 0 else f"(1-on/{n})"
+    return "1.18", f"(iw-iw/zoom)*{go}", centre_y
 
 
 def blank_png(out: Path, w: int) -> Path:
@@ -203,7 +239,8 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     short = piece.kind == "short"
     title_png = cards.render("storytitle", {"title_html": title_html(title), **brand(piece.channel), "pad": TITLE_PAD_SHORT if short else 60,
                                             "strip": "none" if short else "flex"}, out_dir / "title.png", (w, band_h))
-    full = short and opening.is_trial(piece)                         # the new opening style: full-screen picture, pills, no band, no centre watermark
+    full = opening.is_trial(piece)                                   # the new style (Shorts and longs): full-screen picture, pills, no band, no centre watermark
+    geo = geometry(size, short, full)
     pills = opening.render_pills(piece, out_dir / "pills", size, cards.render) if full else {}
     if full:
         title_png = blank_png(out_dir / "blank.png", w)
@@ -213,14 +250,14 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     piece.timings = starts
     durations = [d + assemble.PAD_S for _w, d in lines]
     clips, all_cues = [], []
-    bottom_y = h - CAP_H - LIFT if short else h - band_h
-    shade = cards.render("storyshade", {}, out_dir / "shade.png", (w, SHADE_H + LIFT)) if short else None
+    bottom_y = geo["cap_y"]
+    shade = cards.render("storyshade", {}, out_dir / "shade.png", geo["shade"]) if geo["shade"] else None
     keyword = (re.search(r"\*(.+?)\*", title) or [None, ""])[1]
     badge = logo(piece.channel)
     big_badge = logo(piece.channel, 600)
     layers_on = short and not full and layers.apply(piece)               # the painted Shorts' layer test (engine/layers.py); the full-screen frame has pills
     n_scenes = len(panels)
-    depths = moving_depths(panels) if full else None             # 3D-film movement on every picture when the depth tool is installed
+    depths = moving_depths(panels) if (full and short) else None # 3D-film movement on every Short picture when the depth tool is installed
     for i, (panel, dur, (wav, d), start, scene_d) in enumerate(zip(panels, durations, lines, starts, piece.script["scenes"])):
         if depths and depths[i] is not None:
             from . import depthmove
@@ -235,22 +272,26 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
         for s, e, text in cues:
             png = out_dir / "cues" / f"cap{i:02d}-{int(s * 100):05d}.png"
             if not png.exists():
-                if short:
-                    cards.render("storycap2", {"text_html": caption_html(text, keyword)}, png, (w, CAP_H))
+                if short or full:
+                    cards.render("storycap2", {"text_html": caption_html(text, keyword)}, png, geo["cap"])
                 else:
                     cards.render("storycap", {"text": text}, png, (w, band_h))
             overlays.append((png, 0, bottom_y, s, e))
-        overlays += opening.frame_overlays(piece, i, dur, size, pills, FULL_TOP, SAFE_SIDE, LOGO_PX) if full else []
+        overlays += opening.frame_overlays(piece, i, dur, size, pills, geo["top"], geo["side"], LOGO_PX) if full else []
         chip = None
         if piece.channel == "arthvan" and scene_d.get("label") in lint.MYTH_LABELS and i not in pills:
             chip = out_dir / f"label-{scene_d['label']}.png"
             if not chip.exists():
                 cards.render("label", {"label": scene_d["label"]}, chip, (400, 90))
         if full and chip is not None:                                # on the pill's row, under the badge
-            overlays.append((chip, SAFE_SIDE, FULL_TOP + LOGO_PX + 18, 0.0, dur)); chip = None
+            overlays.append((chip, geo["side"], geo["top"] + LOGO_PX + 18, 0.0, dur)); chip = None
+        cam = None
+        if full and not short and Path(panel).suffix.lower() != ".mp4":      # a long: a strong pan or zoom, a different path each scene
+            cam = camera_expr(CAMERA_PATHS[i % len(CAMERA_PATHS)], max(1, int(round(dur * FPS))), 1 if (i // len(CAMERA_PATHS)) % 2 == 0 else -1)
         clips.append(scene(panel, dur, size, out_dir / f"scene{i:02d}.mp4", title_png, overlays, chip=chip, logo_png=badge,
-                           watermark_png=None if full else big_badge, punch=(i == 0 and short), shade_png=shade, full=full))
-    if full:                                                         # the pictures that move behind the founder in his intro (engine/intro.py)
+                           watermark_png=None if full else big_badge, punch=(i == 0 and short), shade_png=shade, full=full, camera=cam,
+                           shade_y=geo["shade_y"] if shade else None, top=geo["top"], side=geo["side"]))
+    if full and short:                                               # the pictures that move behind the founder in his intro (engine/intro.py)
         intro_background(piece, panels, size, out_dir, title_png, shade, badge, pills, depths)
         for f in out_dir.glob("move*.mp4"):
             f.unlink(missing_ok=True)

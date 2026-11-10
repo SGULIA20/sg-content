@@ -74,3 +74,11 @@ def test_a_money_fact_gets_a_pill_from_the_facts_own_label():
     assert opening.pill_for(p, 0) is None                                    # no place, no fact
     assert opening.pill_for(p, 1) == ("Sarkari • Reserve Bank…", "science")
     assert opening.pill_for(p, 2) == ("Report • Mint", "")
+
+
+def test_long_videos_join_the_new_style_from_their_own_day(tmp_path):
+    root = _cfg(tmp_path, '{"channels": {"arthvan": "2026-11-16"}, "longs": {"arthvan": "2026-11-22", "sglearning": "2026-11-22"}, "scenes": 99}')
+    assert opening.is_trial(_piece("2026-11-22", kind="long"), root) and opening.is_trial(_piece("2026-11-25", kind="long", ch="sglearning"), root)
+    assert not opening.is_trial(_piece("2026-11-19", kind="long"), root)                      # made before: keeps the banded frame
+    assert opening.is_hero_scene(_piece("2026-11-22", kind="long"), 60, root)
+    assert "FULL SCREEN, 16:9" in opening.addendum("arthvan", kind="long")

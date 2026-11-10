@@ -662,3 +662,11 @@ def test_a_topic_whose_research_found_nothing_is_never_tried_again_for_that_piec
     assert p.status == "failed-research" and [k for k in p.ids["dead_topics"] if k.startswith("https")] == ["https://e/dead1", "https://e/dead2", "https://e/dead3"]
     p = pipeline.make(pieces.load(p.id, tmp_path), d, tmp_path)                     # the next run starts at the topic behind them
     assert seen[-1] == "https://e/good" and p.status == "uploaded"
+
+
+def test_a_new_style_long_asks_for_a_realistic_16_by_9_picture():
+    from types import SimpleNamespace as NS
+    full, aspect = pipeline.panel_request(NS(id="2026-11-22-arthvan-long", kind="long", channel="arthvan"), "A fort at dawn", True)
+    assert aspect == "16:9" and "Photorealistic" in full and "lower fifth" in full
+    _full, old = pipeline.panel_request(NS(id="2026-11-19-arthvan-long", kind="long", channel="arthvan"), "A fort at dawn")
+    assert old == pipeline.LONG_PANEL_ASPECT

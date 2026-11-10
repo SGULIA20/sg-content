@@ -30,18 +30,24 @@ def _config(root: Path = None) -> dict:
         return {}
 
 
-def _window(channel: str, root: Path = None) -> tuple:
-    """(from, to) for a channel, or None. The file names either one channel ("channel", "from") or several ("channels": {name: from})."""
+def _window(channel: str, root: Path = None, kind: str = "short") -> tuple:
+    """(from, to) for a channel's Shorts or longs, or None. Shorts: "channels": {name: first day} (or the older "channel" + "from");
+    long videos: "longs": {name: first day}."""
     t = _config(root)
     if not t:
         return None
-    start = (t.get("channels") or {}).get(channel) or (t.get("from") if t.get("channel") == channel else None)
+    if kind == "long":
+        start = (t.get("longs") or {}).get(channel)
+    else:
+        start = (t.get("channels") or {}).get(channel) or (t.get("from") if t.get("channel") == channel else None)
     return (start, t.get("to", "9999-12-31")) if start else None
 
 
 def is_trial(piece, root: Path = None) -> bool:
-    win = _window(piece.channel, root)
-    return bool(win) and piece.kind == "short" and win[0] <= str(piece.id)[:10] <= win[1]
+    if piece.kind not in ("short", "long"):
+        return False
+    win = _window(piece.channel, root, piece.kind)
+    return bool(win) and win[0] <= str(piece.id)[:10] <= win[1]
 
 
 def cutout_on(root: Path = None) -> bool:
@@ -53,8 +59,9 @@ def is_hero_scene(piece, i: int, root: Path = None) -> bool:
     return is_trial(piece, root) and i < int(_config(root).get("scenes", 1))
 
 
-def addendum(channel: str = "arthvan", root: Path = None) -> str:
-    return ((Path(root) if root else CONTENT_DIR) / "prompts" / f"trial-{channel}.txt").read_text()
+def addendum(channel: str = "arthvan", root: Path = None, kind: str = "short") -> str:
+    name = f"trial-{channel}.txt" if kind == "short" else "trial-long.txt"
+    return ((Path(root) if root else CONTENT_DIR) / "prompts" / name).read_text()
 
 
 def words(channel: str) -> tuple:
@@ -119,8 +126,9 @@ def active(today=None, root: Path = None, ahead: int = 9) -> bool:
     from datetime import date, timedelta
     t = _config(root)
     today = today or date.today()
-    for ch in list((t.get("channels") or {})) + ([t["channel"]] if t.get("channel") else []):
-        start, end = _window(ch, root)
+    spans = [_window(ch, root) for ch in list((t.get("channels") or {})) + ([t["channel"]] if t.get("channel") else [])]
+    spans += [_window(ch, root, "long") for ch in (t.get("longs") or {})]
+    for start, end in spans:
         if start <= (today + timedelta(days=ahead)).isoformat() and (today - timedelta(days=1)).isoformat() <= end:
             return True
     return False
