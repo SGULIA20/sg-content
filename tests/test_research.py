@@ -135,3 +135,13 @@ def test_verify_urls_drops_unreachable_sources():
     out = research.verify_urls(sheet, fetch=fetch)
     assert [f["source_url"] for f in out["facts"]] == ["https://ok.example/a", "https://ok.example/a"]
     assert seen == ["https://ok.example/a", "https://dead.example/b"]                 # each URL checked once
+
+
+def test_a_history_topic_is_told_to_cite_pages_that_stay_online_not_old_articles():
+    from datetime import date
+    from engine import research
+    history = research._prompt("sglearning", {"title": "2001: K-10 shares aur ek bank ka girna", "summary": "s"}, date(2026, 11, 10))
+    news = research._prompt("sglearning", {"title": "t", "summary": "s", "link": "https://e/news"}, date(2026, 11, 10))
+    assert "en.wikipedia.org" in history and "Never write a URL from memory" in history
+    assert "THIS TOPIC HAS NO NEWS ARTICLE" not in news
+    assert "THIS TOPIC HAS NO NEWS ARTICLE" not in research._prompt("arthvan", {"title_hi": "t", "place": "p"}, date(2026, 11, 10))

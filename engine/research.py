@@ -16,6 +16,19 @@ MAX_OUTPUT_TOKENS = 20000
 FENCE = re.compile(r"^```(?:json)?\s*|\s*```$", re.MULTILINE)
 
 
+# 10 Nov 2026: for money-history and evergreen topics the model wrote newspaper article URLs from memory (ET, TOI, Mint, HT, Rediff);
+# every one answered 404, all facts were dropped, and the slot fell back to a remake of a weak US-stocks Reel, day after day.
+STABLE_SOURCES = ("""
+
+THIS TOPIC HAS NO NEWS ARTICLE. It is a history or evergreen explainer, so the rule for sources changes:
+- Cite ONLY pages you actually opened in Google Search in this session, and copy each URL exactly as it appeared. Never write a URL from memory.
+- Prefer pages that stay online for years: the English Wikipedia article on the event, the person, the bank or the scheme (en.wikipedia.org),
+  and official sites (rbi.org.in, sebi.gov.in, dicgc.org.in, pib.gov.in, incometax.gov.in, npci.org.in, epfindia.gov.in, sci.gov.in, cag.gov.in).
+- Do NOT cite newspaper article URLs for events more than two years old: old article addresses have been moved or deleted.
+- "source_date" is the date of the event or of the page's last update; "label" is "official" for the official sites, "reported" otherwise.
+- At least 6 facts, each with its number, so the story can be told with sourced figures.""")
+
+
 class ResearchError(Exception):
     pass
 
@@ -26,7 +39,10 @@ def _prompt(channel: str, topic: dict, today: date, root: Path = CONTENT_DIR) ->
     fields = {"today": today.isoformat(), "title": topic.get("title") or topic.get("title_hi", ""), "link": topic.get("link", ""),
               "summary": topic.get("summary", ""), "place": topic.get("place", ""), "hooks": "; ".join(topic.get("hooks", [])),
               "notes": topic.get("notes", ""), "allowed_sources": ", ".join(str(s) for s in topic.get("allowed_sources", []))}
-    return tpl.format(**fields)
+    text = tpl.format(**fields)
+    if channel == "sglearning" and not topic.get("link"):
+        text += STABLE_SOURCES                                   # a history or evergreen topic: no article to open, so name pages that exist
+    return text
 
 
 def _parse(raw: str) -> dict:

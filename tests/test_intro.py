@@ -518,3 +518,16 @@ def test_the_avatar_prompt_keeps_clear_of_words_a_video_tools_safety_filter_may_
     text = " ".join(intro.POSES + intro.CAMERAS + intro.BEATS + [intro.DELIVERY]).lower()
     for bad in ("aggressive", "stabbing", "slicing", "stopping dead", "fist", "conspirator", "attack", "kill", "weapon", "blood", "sharp point"):
         assert not re.search(bad, text), bad
+
+
+def test_a_new_style_short_asks_for_the_storys_own_scene_behind_him_with_headroom_and_no_screens(tmp_path, monkeypatch):
+    from engine import opening
+    (tmp_path / "hero-test.json").write_text('{"channel": "sglearning", "from": "2026-11-01", "to": "2026-11-30", "scenes": 99}')
+    monkeypatch.setattr(opening, "CONTENT_DIR", tmp_path)
+    p = _piece()
+    p.script["scenes"][0]["visual"] = {"type": "art", "prompt": "Photorealistic rocky seashore at sunrise, waves on dark rocks, no text"}
+    prompt = intro.plan(p, ask=lambda _p: "")["prompt"]
+    assert "rocky seashore at sunrise, waves on dark rocks" in prompt and "Photorealistic rocky" not in prompt
+    for must in ("waist up", "do not crop the top of his head", "Empty hands, no prop", "No watermark", "No hologram, no floating screen"):
+        assert must in prompt, must
+    assert "watermark top right" not in prompt

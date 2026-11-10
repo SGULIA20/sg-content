@@ -272,6 +272,9 @@ def _pick(piece, options: list, salt: int = 0):
 def prompt_for(piece, p: dict) -> str:
     """The avatar prompt in the founder's format: setting, lighting, body language in three beats, prop, camera, watermark; no captions.
     Setting, outfit, pose, camera and beats rotate per piece."""
+    from . import opening
+    if opening.is_trial(piece):
+        return story_prompt(piece, p)
     short = piece.kind == "short"
     size = "9:16 vertical, 1080x1920" if short else "16:9 landscape, 1920x1080"
     handle = "@SGLearning" if piece.channel == "sglearning" else "@SGMythWorld"
@@ -287,6 +290,28 @@ def prompt_for(piece, p: dict) -> str:
             f"Prop: {prop_for(piece)}, held low at first and lifted toward the lens on the second line, then lowered. Camera: {camera}. {handle} watermark top right, white, bold, 80% opacity. No captions, no subtitles, "
             f"no other on-screen text. No laptop, tablet, monitor, TV or glowing blue screen anywhere in the frame; the only object in his hands or near him is the prop. "
             f"Export at {('1080x1920' if short else '1920x1080')}.")
+
+
+def story_prompt(piece, p: dict) -> str:
+    """The avatar prompt for a Short in the new opening style (founder, 10 Nov 2026: "in prompt only we may set background"): he stands
+    in the story's own first scene, framed from the waist up with room above his head (the old clip was zoomed and cut), empty hands,
+    no watermark (the frame adds the badge) and a hard rule against the floating screen the avatar tool likes to draw."""
+    scenes = (piece.script or {}).get("scenes") or [{}]
+    scene = re.sub(r"(?i)\bphoto-?realistic\b[, ]*", "", str((scenes[0].get("visual") or {}).get("prompt") or "")).strip().rstrip(".")
+    scene = re.sub(r"(?i),?\s*no (text|people|logos?)\b[^,.]*", "", scene) or setting_for(piece, p)
+    closing = (p.get("closing") or CLOSING).rstrip(".")
+    return ("9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. "
+            f"Setting: he stands inside this scene, which is real and in motion behind him: {scene}. "
+            "Framing: medium shot from the waist up, his whole head and both shoulders inside the frame with clear space above his hair and on "
+            "both sides; do not crop the top of his head. "
+            "Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; no dull or flat grey look. "
+            f"SG [locked] leaning eagerly toward the lens, eyebrows high, wearing {_pick(piece, OUTFITS, 1)}. Speaks from the first frame, mouth matched "
+            f"to the words, friendly eye contact with the lens. {DELIVERY}. "
+            f"Body language in two beats: on the first line, one open hand sweeps out toward the scene behind him; on \"{closing}\", a big grin and "
+            "the hand comes forward toward the viewer. Camera: eye level, a slow push-in, slight handheld feel. "
+            "Empty hands, no prop. No watermark, no logo, no captions, no subtitles, no on-screen text of any kind. "
+            "No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. "
+            "Export at 1080x1920.")
 
 
 def earliest_slot_utc(piece) -> datetime:
@@ -551,7 +576,7 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
                                 out_dir / "hookline.png", (w, 330))
         overlays.append((hook_png, 0, storyframe.FULL_TOP + 90, 0.0, min(2.4, secs)))
     background = out_dir / storyframe.INTRO_BG
-    if full and background.exists() and cutout.available():
+    if full and opening.cutout_on() and background.exists() and cutout.available():
         # the founder cut out of his clip, the story's first pictures moving behind him (they already carry the badge and the AI tag)
         mask = cutout.mask_video(clip, secs, out_dir / "intro-mask.mp4", fps=VIDEO["fps"])
         video = cutout.over(background, clip, mask, secs, size, out_dir / "intro-video.mp4",

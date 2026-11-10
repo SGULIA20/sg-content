@@ -623,7 +623,9 @@ def test_the_weekly_plan_outranks_a_remake_of_a_weak_reel(tmp_path, monkeypatch)
     d, _calls = deps(tmp_path)
     p = _piece(day=date(2026, 11, 14))
     assert pipeline._pick_topic(p, d, tmp_path, set())["title"] == "Planned topic"
-    assert pipeline._pick_topic(p, d, tmp_path, {"wk-1"})["title"] == "Old topic"               # a planned topic already tried falls back to the usual order
+    assert pipeline._pick_topic(p, d, tmp_path, {"wk-1"})["title"] != "Old topic"               # 10 Nov 2026: a failed planned topic is followed by a fresh one, never a weak remake
+    monkeypatch.setattr(pipeline, "WEAK_REMAKES", True)
+    assert pipeline._pick_topic(p, d, tmp_path, {"wk-1"})["title"] == "Old topic"               # the old order, kept behind the switch
 
 
 def test_realistic_opening_test_only_touches_the_configured_shorts(tmp_path):
