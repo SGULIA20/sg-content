@@ -179,7 +179,8 @@ def intro_background(piece, panels: list, size: tuple, out_dir: Path, title_png:
         panel = panels[i]
         if depths and depths[i] is not None:
             from . import depthmove
-            panel = depthmove.move(panel, depths[i], INTRO_BG_S, size, out_dir / f"introbgmove{k}.mp4", fps=FPS, direction=1 if k % 2 == 0 else -1)
+            panel = depthmove.move(panel, depths[i], INTRO_BG_S, size, out_dir / f"introbgmove{k}.mp4", fps=FPS, direction=1 if k % 2 == 0 else -1,
+                                   path=depthmove.PATHS[k % len(depthmove.PATHS)])
         extra = [(pills["tag"], SAFE_SIDE, FULL_TOP, 0.0, INTRO_BG_S)] if "tag" in pills else []
         clips.append(scene(panel, INTRO_BG_S, size, out_dir / f"introbg{k}.mp4", title_png, extra, logo_png=badge, punch=(k == 0),
                            shade_png=shade, full=True))
@@ -223,7 +224,8 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     for i, (panel, dur, (wav, d), start, scene_d) in enumerate(zip(panels, durations, lines, starts, piece.script["scenes"])):
         if depths and depths[i] is not None:
             from . import depthmove
-            panel = depthmove.move(panel, depths[i], dur, size, out_dir / f"move{i:02d}.mp4", fps=FPS, direction=1 if i % 2 == 0 else -1)
+            panel = depthmove.move(panel, depths[i], dur, size, out_dir / f"move{i:02d}.mp4", fps=FPS, direction=1 if i % 2 == 0 else -1,
+                                   path=depthmove.PATHS[i % len(depthmove.PATHS)])
         cues = captions.split(scene_d["vo"], d)
         all_cues += captions.offset(cues, start)
         overlays = []
