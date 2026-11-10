@@ -70,7 +70,7 @@ def test_a_money_fact_gets_a_pill_from_the_facts_own_label():
     p = _piece(ch="sglearning")
     p.topic = {}
     p.facts = [{"source_name": "Reserve Bank of India", "label": "official"}, {"source_name": "Mint", "label": "reported"}]
-    p.script = {"scenes": [{"label": None, "facts_used": []}, {"label": None, "facts_used": [0]}, {"label": None, "facts_used": [1]}]}
+    p.script = {"scenes": [{"label": "hook", "facts_used": []}, {"label": "twist", "facts_used": [0]}, {"label": None, "facts_used": [1]}]}   # 10 Nov 2026: beat labels hid every pill
     assert opening.pill_for(p, 0) is None                                    # no place, no fact
     assert opening.pill_for(p, 1) == ("Sarkari • Reserve Bank…", "science")
     assert opening.pill_for(p, 2) == ("Report • Mint", "")

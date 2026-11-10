@@ -84,7 +84,9 @@ def pill_for(piece, i: int):
     if i == 0 and place:
         return _short(place, 34), ""
     used = [j for j in sc.get("facts_used", []) if j < len(piece.facts or [])]
-    label = sc.get("label") or ((piece.facts[used[0]] or {}).get("label") if used else None)
+    label = sc.get("label")
+    if label not in LABEL_TEXT and used:                    # a money scene's label names its story beat ("twist", "cost"): the fact's own label counts
+        label = (piece.facts[used[0]] or {}).get("label")
     if label in LABEL_TEXT and used:
         src = (piece.facts[used[0]] or {}).get("source_name")
         if src:
