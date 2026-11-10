@@ -48,6 +48,7 @@
   "try 1: no sourced facts survived the checks",
   "research budget used for today (4 calls); the next quota day retries",
   "research budget used for today (4 calls); the next quota day retries",
+  "research budget used for today (4 calls); the next quota day retries",
   "research budget used for today (4 calls); the next quota day retries"
  ],
  "script": {
@@ -845,15 +846,15 @@
  "timings": [],
  "topic": {
   "hooks": [
-   "Gaadi 5 saal mein kitni sasti ho jaati hai?",
-   "Car loan ka byaaj kitna dete hain?",
-   "Cash hai toh bhi loan lena sahi hai?"
+   "50 lakh ka ghar, 1 crore kyun dete ho?",
+   "Pehli 5 saal ki EMI mein ghar ka kitna hissa aapka hua?",
+   "Saal mein ek extra EMI se kitne saal bachte hain?"
   ],
-  "id": "car-loan-vs-cash",
-  "summary": "Total cost of car ownership: loan interest, depreciation, insurance, fuel, service; the loan-vs-cash decision with opportunity cost, why a used car can be the smarter maths for many families.",
+  "id": "home-loan-double",
+  "summary": "A family buys a flat on a 20-year home loan; the amortisation schedule shows interest front-loaded, the total paid roughly double the price, and what prepaying one extra EMI a year does. Explain EMI, principal, interest, prepayment, floating rate.",
   "target_minutes": 12,
-  "title": "10 lakh ki gaadi: loan par lein ya cash, aur 5 saal mein asli kharcha kya"
+  "title": "50 lakh ka ghar, 1 crore ka bill: 20 saal ki EMI mein bank kitna kamata hai"
  },
- "updated": "2026-11-10T15:49:58+00:00",
+ "updated": "2026-11-10T16:29:42+00:00",
  "writer": "claude"
 }
