@@ -537,9 +537,8 @@ def test_a_new_style_short_asks_for_the_storys_own_scene_behind_him_with_headroo
     p.script["scenes"][0]["visual"] = {"type": "art", "prompt": "Photorealistic rocky seashore at sunrise, waves on dark rocks, no text"}
     prompt = intro.plan(p, ask=lambda _p: "")["prompt"]
     assert "rocky seashore at sunrise, waves on dark rocks" in prompt and "Photorealistic rocky" not in prompt
-    for must in ("waist up", "do not crop the top of his head", "Empty hands, no prop", "No watermark", "No hologram, no floating screen"):
+    for must in ("waist up", "do not crop the top of his head", "Empty hands, no prop", "watermark in the top right corner", "No hologram, no floating screen"):
         assert must in prompt, must
-    assert "watermark top right" not in prompt
 
 
 def test_every_intro_prompt_sets_a_moving_background_a_calm_face_and_headroom_for_both_channels():
@@ -549,10 +548,10 @@ def test_every_intro_prompt_sets_a_moving_background_a_calm_face_and_headroom_fo
         plan = intro.plan(p, ask=lambda _p: "")
         prompt = plan["prompt"]
         for must in (size, "Setting: ", "real and in motion behind him", "waist up", "do not crop the top of his head",
-                     "No exaggerated expressions", "very slight slow push-in", "Empty hands, no prop", "No watermark", "No hologram, no floating screen",
+                     "No exaggerated expressions", "very slight slow push-in", "Empty hands, no prop", "watermark in the top right corner", "never sad, gloomy", "No hologram, no floating screen",
                      plan["closing"].rstrip(".")):
             assert must in prompt, (ch, kind, must)
-        for never in ("watermark top right", "bubbling over", "eyebrows high", "big grin on the reveal"):
+        for never in ("bubbling over", "eyebrows high", "big grin on the reveal", "no smile on this line"):
             assert never not in prompt, never
     assert intro._key_phrase("Kehte hain, Hanuman ji ne apni Ramayan khud samundar mein phenk di.") == "samundar mein phenk di"
 
@@ -584,7 +583,22 @@ def test_the_face_follows_the_words_and_a_myth_scene_is_ancient_india():
     assert intro.tone_for("Kumbhalgarh ki deewar, China ke baad duniya mein sabse lambi? Poora sach yahan!") == "warm"
     grim = _piece("short", "arthvan"); grim.script["hook"] = "Surpanakha ke pati ko Ravan ne maara."
     prompt = intro.plan(grim, ask=lambda _p: "")["prompt"]
-    assert "no smile on this line" in prompt and "warm, assured smile" not in prompt and "never European knights" in prompt
+    assert "calm, reassuring look with a hint of a smile" in prompt and "never sad, gloomy" in prompt and "never European knights" in prompt   # 11 Nov 2026: never a sad face
     light = _piece("short", "sglearning"); light.script["hook"] = "Ek chai ke daam mein SIP shuru ho sakti hai?"
     prompt = intro.plan(light, ask=lambda _p: "")["prompt"]
-    assert "warm, assured smile" in prompt and "slight knowing smile" in prompt and "European knights" not in prompt
+    assert "warm, confident smile" in prompt and "pleasant, warm smile" in prompt and "European knights" not in prompt
+
+
+def test_blazers_on_learning_and_traditional_clothes_on_myth_world_never_the_same_two_days_running():
+    """Founder, 11 Nov 2026: "blazers every time on SG Learning reels and traditional on SG-MYTH"."""
+    from datetime import date, timedelta
+    seen = {"sglearning": [], "arthvan": []}
+    for n in range(8):
+        for ch in seen:
+            p = _piece("short", ch, day=date(2026, 11, 17) + timedelta(days=n))
+            seen[ch].append(intro.outfit_for(p))
+            assert f"wearing {seen[ch][-1]}" in intro.plan(p, ask=lambda _p: "")["prompt"]
+    assert all("blazer" in o for o in seen["sglearning"])
+    assert all(any(w in o for w in ("kurta", "bandhgala")) for o in seen["arthvan"])
+    for ch in seen:
+        assert all(a != b for a, b in zip(seen[ch], seen[ch][1:]))

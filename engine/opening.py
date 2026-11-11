@@ -46,8 +46,22 @@ def _window(channel: str, root: Path = None, kind: str = "short") -> tuple:
 def is_trial(piece, root: Path = None) -> bool:
     if piece.kind not in ("short", "long"):
         return False
+    import os
+    if os.environ.get("SG_FORCE_NEW_STYLE") == "1" and root is None:      # a preview of an older piece in the new style (scripts/preview_piece.py)
+        return True
     win = _window(piece.channel, root, piece.kind)
     return bool(win) and win[0] <= str(piece.id)[:10] <= win[1]
+
+
+def speed(piece, root: Path = None) -> float:
+    """How much faster a new-style Short is spoken, the founder's intro and the narration alike (founder, 11 Nov 2026: "speed like 1.2x so
+    reel timings can be maintained and the explanation will also be there"). 1.0 for everything else."""
+    if piece.kind != "short" or not is_trial(piece, root):
+        return 1.0
+    try:
+        return min(1.3, max(1.0, float(_config(root).get("speed", 1.0))))
+    except (TypeError, ValueError):
+        return 1.0
 
 
 def cutout_on(root: Path = None) -> bool:
@@ -104,22 +118,24 @@ def render_pills(piece, out_dir: Path, size: tuple, render) -> dict:
         p = pill_for(piece, i)
         if p:
             out[i] = render("pill", {"kind": p[1], "text": p[0]}, out_dir / f"pill{i:02d}.png", (size[0] - 240, PILL_SIZE_H))             # its own row under the badge, the full safe width
-    out["tag"] = render("pill", {"kind": "ai", "text": TAG_TEXT}, out_dir / "tag.png", (460, 66))
+    if _config().get("ai_tag"):                             # founder, 11 Nov 2026: "remove AI visualisation as well"; off unless switched on.
+        out["tag"] = render("pill", {"kind": "ai", "text": TAG_TEXT}, out_dir / "tag.png", (460, 66))   # YouTube is still told at upload (containsSyntheticMedia)
     return out
 
 
 POP_S = 0.28                        # a pill slides in from the left in this time
 
 
-def frame_overlays(piece, i: int, dur: float, size: tuple, pills: dict, top: int, side: int, logo_px: int) -> list:
+def frame_overlays(piece, i: int, dur: float, size: tuple, pills: dict, top: int, side: int, logo_px: int, pill_y: int | None = None) -> list:
     """Timed overlays (png, x, y, start, end) for the full-screen story frame: the AI tag top-left on a realistic picture for the whole
-    scene; the scene's pill on its own row under the badge, sliding in from the left (x is an ffmpeg expression)."""
+    scene; the scene's pill sliding in from the left (x is an ffmpeg expression). The pill sits at pill_y, just above the captions
+    (founder, 11 Nov 2026: under the badge it slid across people's faces: "written comes on faces"); without pill_y, under the badge."""
     out = []
     if "tag" in pills and is_hero_scene(piece, i):
         out.append((pills["tag"], side, top, 0.0, dur))
     if i in pills:
         slide = f"'min({side},-{size[0]}+({size[0]}+{side})*(t-0.15)/{POP_S})'"
-        out.append((pills[i], slide, top + logo_px + 18, 0.15, dur))
+        out.append((pills[i], slide, pill_y if pill_y is not None else top + logo_px + 18, 0.15, dur))
     return out
 
 

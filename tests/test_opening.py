@@ -40,12 +40,19 @@ def test_the_full_screen_frame_tags_a_realistic_picture_and_puts_the_pill_under_
     pills = {1: "pill.png", "tag": "tag.png"}
     ov = opening.frame_overlays(p, 1, 6.0, (1080, 1920), pills, 170, 120, 150)
     assert ov[0] == ("tag.png", 120, 170, 0.0, 6.0) and ov[1][0] == "pill.png" and ov[1][2:] == (338, 0.15, 6.0) and "min(120," in ov[1][1]
+    low = opening.frame_overlays(p, 1, 6.0, (1080, 1920), pills, 170, 120, 150, pill_y=1080)
+    assert low[1][2] == 1080                                # above the captions, never across a face
     assert opening.frame_overlays(p, 3, 6.0, (1080, 1920), pills, 170, 120, 150) == []      # scene 4 is not realistic here and has no pill
 
 
 def test_trial_shorts_use_the_35_to_45_second_length_and_the_writer_gets_the_new_rules():
     assert opening.WORDS == (70, 100) and opening.words('arthvan') == (70, 100) and opening.words('sglearning') == (75, 110)
-    assert "NEW OPENING STYLE" in opening.addendum() and "PAYOFF" in opening.addendum() and "PIVOT" in opening.addendum()
+    # founder, 11 Nov 2026: "do not compromise with scripts": the writer is told about the pictures only
+    for ch in ("arthvan", "sglearning"):
+        text = opening.addendum(ch)
+        assert "REALISTIC PICTURES" in text and "stay as the rules above say" in text
+        assert "PAYOFF" not in text and "PIVOT" not in text and "LENGTH:" not in text
+    assert "PAYOFF" not in opening.addendum("arthvan", kind="long")
 
 
 def test_the_tools_are_installed_only_while_the_test_window_is_being_produced(tmp_path):
@@ -63,7 +70,7 @@ def test_both_channels_can_run_the_new_style_each_from_its_own_day_with_no_end_d
     assert not opening.is_trial(_piece("2026-11-16", ch="sglearning"), root) and opening.is_trial(_piece("2026-11-17", ch="sglearning"), root)
     assert not opening.is_trial(_piece("2026-11-18", kind="long", ch="sglearning"), root)
     assert opening.is_hero_scene(_piece("2026-11-17", ch="sglearning"), 7, root) and opening.active(date(2027, 1, 5), root)
-    assert "NEW OPENING STYLE" in opening.addendum("sglearning") and "disclaimer" in opening.addendum("sglearning")
+    assert "REALISTIC PICTURES" in opening.addendum("sglearning") and "disclaimer" in opening.addendum("sglearning")
 
 
 def test_a_money_fact_gets_a_pill_from_the_facts_own_label():
@@ -82,3 +89,20 @@ def test_long_videos_join_the_new_style_from_their_own_day(tmp_path):
     assert not opening.is_trial(_piece("2026-11-19", kind="long"), root)                      # made before: keeps the banded frame
     assert opening.is_hero_scene(_piece("2026-11-22", kind="long"), 60, root)
     assert "FULL SCREEN, 16:9" in opening.addendum("arthvan", kind="long")
+
+
+def test_only_new_style_shorts_are_spoken_faster_and_never_beyond_a_safe_pace(tmp_path):
+    root = _cfg(tmp_path, '{"channels": {"arthvan": "2026-11-16"}, "longs": {"arthvan": "2026-11-22"}, "speed": 1.2}')
+    assert opening.speed(_piece("2026-11-17"), root) == 1.2
+    assert opening.speed(_piece("2026-11-22", kind="long"), root) == 1.0 and opening.speed(_piece("2026-11-10"), root) == 1.0
+    assert opening.speed(_piece("2026-11-17", ch="sglearning"), root) == 1.0
+    fast = _cfg(tmp_path, '{"channels": {"arthvan": "2026-11-16"}, "speed": 2.5}')
+    assert opening.speed(_piece("2026-11-17"), fast) == 1.3
+    assert opening.speed(_piece("2026-11-17"), _cfg(tmp_path, '{"channels": {"arthvan": "2026-11-16"}}')) == 1.0
+
+
+def test_the_ai_tag_is_drawn_only_when_switched_on(tmp_path, monkeypatch):
+    monkeypatch.setattr(opening, "CONTENT_DIR", _cfg(tmp_path))
+    made = []
+    render = lambda kind, data, out, size: made.append(data) or out
+    assert "tag" not in opening.render_pills(_piece(), tmp_path / "p", (1080, 1920), render)

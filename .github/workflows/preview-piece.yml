@@ -7,6 +7,10 @@ on:
       piece:
         description: 'piece id, e.g. 2026-11-16-arthvan-short'
         required: true
+      mode:
+        description: 'video (default) = build the preview video; script = only write a trial script and intro prompt and send them'
+        required: false
+        default: 'video'
 
 permissions:
   contents: read
@@ -14,23 +18,36 @@ permissions:
 jobs:
   preview:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
           cache: pip
-      - run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-core fonts-noto-color-emoji
+      - if: ${{ inputs.mode != 'script' }}
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-core fonts-noto-color-emoji
       - run: pip install -r requirements.txt
-      - run: python -m playwright install --with-deps chromium
+      - if: ${{ inputs.mode != 'script' }}
+        run: python -m playwright install --with-deps chromium
       - name: Picture movement and cut-out tools
+        if: ${{ inputs.mode != 'script' }}
         run: pip install -q torch --index-url https://download.pytorch.org/whl/cpu && pip install -q transformers opencv-python-headless rembg onnxruntime
+      - name: Write a trial script (nothing saved)
+        if: ${{ inputs.mode == 'script' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/trial_script.py "${{ inputs.piece }}"
       - name: Build the preview
+        if: ${{ inputs.mode != 'script' }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/preview_piece.py "${{ inputs.piece }}" out/preview
       - name: Send it to the founder
+        if: ${{ inputs.mode != 'script' }}
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}

@@ -296,13 +296,15 @@ STANDARD_PROMPT = True          # founder, 10 Nov 2026: "I want background like 
 FACE = ("Face and delivery: a confident, charismatic documentary presenter. Calm, natural face with {base}, relaxed eyebrows, eyes soft "
         "and focused on the viewer. On \"{key}\" the eyes narrow a little with intrigue and the head tilts slightly, as if sharing a secret. On "
         "\"{closing}\" {close}. Natural blinking, subtle head movement. No exaggerated expressions: no wide eyes, no "
-        "raised eyebrows, no open-mouth surprise, no big grin, no frown. Voice: warm, clear, measured, with quiet intensity; a short pause before \"{key}\"")
+        "raised eyebrows, no open-mouth surprise, no big grin, no frown; never sad, gloomy, worried or tired. Voice: warm, clear, measured, with quiet intensity; a short pause before \"{key}\"")
 # founder's clips, 10 Nov 2026: the automatic prompt put "a warm, assured smile" on a line about 50,000 people losing their savings and on
 # a line about a killing. The tone follows the words now.
 GRAVE = re.compile(r"\b(maar\w*|mara|mare|maut|hatya|khoon|qatl|katl|yudh|jung|shraap|shrap|qaid|kaid|jail|doob\w*|dooba|loot\w*|fraud|scam|ghotala|"
                    r"dhokha|thagi|crash|barbaad|tabah|bankrupt|diwaliya|nuksaan|nuksan|gawa\w*|kho diya|jal\w*|bhasm|dead|death|kill\w*|died|lost)\b", re.I)
-TONE = {"warm": ("a slight knowing smile", "a warm, assured smile and one small nod"),
-        "grave": ("a serious, steady look", "a steady, concerned look and one slow nod; no smile on this line")}
+# founder, 11 Nov 2026: "founder sad face still coming": he is never sad, gloomy or worried on camera. A grim line gets a calm, composed,
+# friendly face (no grin on it), every other line a warm smile.
+TONE = {"warm": ("a pleasant, warm smile", "a warm, confident smile and one small nod"),
+        "grave": ("a pleasant, composed, friendly face", "a calm, reassuring look with a hint of a smile and one small nod")}
 
 
 def tone_for(text: str) -> str:
@@ -350,12 +352,27 @@ def _key_phrase(question: str) -> str:
     return " ".join(words[-4:])
 
 
+# founder, 11 Nov 2026: "I want blazers every time on SG Learning reels and traditional on SG-MYTH"
+BLAZERS = ["a navy blazer over a white shirt, no tie", "a charcoal grey blazer over a light blue shirt", "a beige linen blazer over a white tee",
+           "a dark green blazer over a cream shirt", "a white blazer over a white tee", "a maroon blazer over a black tee",
+           "a light grey blazer over a navy polo", "a black blazer over a white shirt, top button open", "a tan blazer over a pale pink shirt",
+           "a royal blue blazer over a white shirt"]
+TRADITIONAL = ["a mustard kurta", "a cream silk kurta with a maroon Nehru jacket", "a white kurta with a saffron stole", "a deep blue kurta with a beige Nehru jacket",
+               "an ivory bandhgala jacket", "a maroon kurta with a gold-bordered stole", "an olive green kurta", "a white kurta with a black Nehru jacket",
+               "a rust-orange kurta with a cream stole", "a navy bandhgala jacket with a white pocket square"]
+
+
+def outfit_for(piece) -> str:
+    return _pick(piece, BLAZERS if piece.channel == "sglearning" else TRADITIONAL, 1)
+
+
 def story_prompt(piece, p: dict) -> str:
     """The avatar prompt, both channels, Shorts and longs (founder, 10 Nov 2026, after the Hanuman intro: "in prompt only we may set
     background", "always moving background", and a face that is not over-acted): he stands in a real, moving place that matches the
     subject, framed from the waist up with room above his head (the old clips were zoomed and cut), a calm presenter's face, empty hands,
     no watermark (the frame adds the badge) and a hard rule against the floating screen the avatar tool likes to draw."""
     short = piece.kind == "short"
+    handle = "@SGLearning" if piece.channel == "sglearning" else "@SGMythWorld"
     size = "9:16 vertical, 1080x1920" if short else "16:9 landscape, 1920x1080"
     setting = _scene_setting(piece) or _moving(p.get("setting") or setting_for(piece, p))
     closing = (p.get("closing") or CLOSING).rstrip(".")
@@ -367,11 +384,11 @@ def story_prompt(piece, p: dict) -> str:
             "Framing: medium shot from the waist up, his whole head and both shoulders inside the frame with clear space above his hair and on "
             "both sides, and he stays framed like this to the end; do not crop the top of his head. "
             "Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. "
-            f"SG [locked] standing relaxed and upright, shoulders open, wearing {_pick(piece, OUTFITS, 1)}. Speaks from the first frame, mouth matched "
+            f"SG [locked] standing relaxed and upright, shoulders open, wearing {outfit_for(piece)}. Speaks from the first frame, mouth matched "
             f"to the words, steady eye contact with the lens. {face}. "
             "Hands: one slow, small gesture toward the scene behind him on the first line, then hands rest; no fast or large arm movements. "
             "Camera: eye level, a very slight slow push-in, slight handheld feel. "
-            "Empty hands, no prop. No watermark, no logo, no captions, no subtitles, no on-screen text of any kind. "
+            f"Empty hands, no prop. {handle} watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. "
             "No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. "
             f"Export at {('1080x1920' if short else '1920x1080')}.")
 
@@ -624,6 +641,15 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
     short = piece.kind == "short"
     size = size or VIDEO["short" if short else "long"]
     w, h = size
+    from . import opening as _opening
+    source_clip = clip
+    rate = _opening.speed(piece)
+    if rate > 1.001:                                                # the founder speaks at the narration's pace: picture and sound together, lips in step
+        fast = out_dir / "intro-fast.mp4"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        _run(["-i", str(clip), "-filter_complex", f"[0:v]setpts=PTS/{rate:.3f}[v];[0:a]atempo={rate:.3f}[a]", "-map", "[v]", "-map", "[a]",
+              "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-c:a", "aac", "-b:a", "160k", str(fast)])
+        clip = fast
     full = duration(clip)
     segments = speech_segments(clip, full)
     secs = round(min(full, segments[-1][1] + TAIL_S), 3)         # the silent tail after the last word is cut; the body starts at once
@@ -713,7 +739,7 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
     founder_thumb = out_dir.parent.parent / "inbox" / "thumb" / f"{piece.id}.jpg"
     if founder_thumb.exists():                                      # the founder's own thumbnail goes up with the upload (longs, 4 Nov 2026)
         shutil.copy2(founder_thumb, out_dir / "thumb.jpg")
-    piece.ids["intro"] = {"clip": str(Path(clip).name), "seconds": round(secs, 2), "clip_seconds": round(full, 2),
+    piece.ids["intro"] = {"clip": str(Path(source_clip).name), "seconds": round(secs, 2), "clip_seconds": round(full, 2),
                           "composed": datetime.now(timezone.utc).isoformat(timespec="seconds")}
     return plain
 
