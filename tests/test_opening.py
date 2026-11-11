@@ -99,3 +99,10 @@ def test_only_new_style_shorts_are_spoken_faster_and_never_beyond_a_safe_pace(tm
     fast = _cfg(tmp_path, '{"channels": {"arthvan": "2026-11-16"}, "speed": 2.5}')
     assert opening.speed(_piece("2026-11-17"), fast) == 1.3
     assert opening.speed(_piece("2026-11-17"), _cfg(tmp_path, '{"channels": {"arthvan": "2026-11-16"}}')) == 1.0
+
+
+def test_the_ai_tag_is_drawn_only_when_switched_on(tmp_path, monkeypatch):
+    monkeypatch.setattr(opening, "CONTENT_DIR", _cfg(tmp_path))
+    made = []
+    render = lambda kind, data, out, size: made.append(data) or out
+    assert "tag" not in opening.render_pills(_piece(), tmp_path / "p", (1080, 1920), render)

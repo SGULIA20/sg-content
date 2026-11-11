@@ -118,7 +118,8 @@ def render_pills(piece, out_dir: Path, size: tuple, render) -> dict:
         p = pill_for(piece, i)
         if p:
             out[i] = render("pill", {"kind": p[1], "text": p[0]}, out_dir / f"pill{i:02d}.png", (size[0] - 240, PILL_SIZE_H))             # its own row under the badge, the full safe width
-    out["tag"] = render("pill", {"kind": "ai", "text": TAG_TEXT}, out_dir / "tag.png", (460, 66))
+    if _config().get("ai_tag"):                             # founder, 11 Nov 2026: "remove AI visualisation as well"; off unless switched on.
+        out["tag"] = render("pill", {"kind": "ai", "text": TAG_TEXT}, out_dir / "tag.png", (460, 66))   # YouTube is still told at upload (containsSyntheticMedia)
     return out
 
 
