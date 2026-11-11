@@ -14,8 +14,9 @@ import re
 import sys
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from types import SimpleNamespace
 
-from . import buffer, pieces, secrets, slots, telegram, topics, topicscore, ytresearch
+from . import buffer, pieces, secrets, slots, telegram, themes, topics, topicscore, ytresearch
 from .config import CHANNELS, CONTENT_DIR, ROOT
 
 PLAN = CONTENT_DIR / "weekly-plan.json"
@@ -189,9 +190,14 @@ def build(root: Path, today: date, rows: dict, ask=_ask_claude, calendar: list |
             notes.append(f"{ch}: Claude could not propose topics ({secrets.scrub(str(e))[:100]}); the banks fill the week")
         used_here = list(seen)
         used_ids = {p.topic.get("id") for p in pieces.list_all(root) if (p.topic or {}).get("id")}
-        for pid, _c, kind, day in mine:
+        week = []                                                                   # (day, theme) of the topics planned so far (engine/themes.py)
+        for pid, _c, kind, day in sorted(mine, key=lambda m: m[0] not in proposals):   # researched proposals claim their themes first; the banks fit round them
             d = proposals.get(pid)
             topic = None
+            avoid = themes.blocked(root, SimpleNamespace(id=pid, channel=ch, publish_day=day), week) if ch == "sglearning" else set()
+            if d and not themes.allowed({"title": d["title"], "summary": d.get("summary", ""), "hooks": d.get("hooks") or []}, avoid):
+                notes.append(f"{pid}: proposal '{d['title'][:50]}' dropped (same theme within days: {themes.theme_of(d)})")
+                d = None
             if d:
                 text = {"title": d["title"], "summary": d.get("summary", ""), "hooks": d.get("hooks") or []}
                 pts, why = topicscore.score(text, ch, day, calendar)
@@ -202,13 +208,14 @@ def build(root: Path, today: date, rows: dict, ask=_ask_claude, calendar: list |
                 else:
                     notes.append(f"{pid}: proposal '{d['title'][:50]}' dropped ({pts} points{', repeat' if repeats(d['title'], used_here) else ''})")
             if topic is None:                                                       # a gap: the best unused bank topic
-                bank = (topics.next_money_history(content, used_ids, day) if ch == "sglearning" else topics.next_myth(content, used_ids, day)) \
-                    if not (ch == "sglearning" and kind == "long") else topics.next_long_finance(content, used_ids)
+                bank = (topics.next_money_history(content, used_ids, day, avoid) if ch == "sglearning" else topics.next_myth(content, used_ids, day)) \
+                    if not (ch == "sglearning" and kind == "long") else topics.next_long_finance(content, used_ids, avoid=avoid)
                 title = str(bank.get("title") or bank.get("title_hi") or "") if bank else ""
                 if bank and title not in used_here:                               # a bank that has run round once repeats itself: leave the slot to the usual flow
                     topic = {**bank, "weekly": True, "from_bank": True}
                     used_ids.add(bank.get("id"))
             if topic:
+                week.append((day, themes.theme_of(topic)))
                 used_here.append(str(topic.get("title") or topic.get("title_hi") or ""))
                 plan[pid] = topic
     return {"week_of": today.isoformat(), "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"), "entries": plan, "notes": notes,
