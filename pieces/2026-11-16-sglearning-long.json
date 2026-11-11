@@ -3,91 +3,91 @@
  "facts": [
   {
    "label": "official",
-   "number": 150000.0,
-   "quote": "Combined deduction limit of ₹ 1,50,000.",
-   "source_date": "2026-07-09",
-   "source_name": "Income Tax Department",
-   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFACywh4_2oLnM-IGSNeksQxF9mSE-RbnEh7enzh4TdmAk1zV1AUBCs6LV1gGHFPfRXrKrvaCtDKWs1xCCs530DTvxEQIJjqdV5WX2Tzd0U6NBj904umFMLVHIyfRFHIi5ydH_9QWok8UNoyZki9jlCZf9u3jjGr97IW8omZu7e7JqQYCeBziJZyFvxxnM3w==",
-   "text": "Salaried taxpayers filing under the old tax regime can claim a maximum deduction of up to Rs 1,50,000 across eligible investments and expenses including life insurance premiums.",
-   "unit": "INR"
-  },
-  {
-   "label": "reported",
-   "number": 30.0,
-   "quote": "Free Look Period: Policyholders have a 30-day period to review the policy and cancel if dissatisfied, ensuring customer satisfaction and trust.",
-   "source_date": "2024-07-06",
-   "source_name": "Bimabazaar.com",
-   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjSDeVXYNw5GahU_AA_YMfuAmGQfMqvJiyAqYQzn075jSOvRS62zDbgvLvp14oA8v8nDsa6YFV83YTT00X0Cttjn1J2WYPNvUu2whm9liSmc71YCycR5BsIjxTHZc_5Lun9OWcV3c0SaDIkWz3REVFPev83R_VBW9cIbNxAzrcd1DX9FJ4rDpTAWvrYHNiz277Jfk_Q0pb6e1hhZufRt1qJAJKq_jlgjJOccM1f1ogTh2RKNDN6A61FQ==",
-   "text": "The Insurance Regulatory and Development Authority of India mandates a free-look period of 30 days during which policyholders can review and cancel their life insurance policy.",
-   "unit": "days"
-  },
-  {
-   "label": "reported",
-   "number": 3.0,
-   "quote": "Non-Contestability: Policies are non-contestable after three years from the date of issuance, commencement of risk, or revival, providing security to policyholders.",
-   "source_date": "2024-07-06",
-   "source_name": "Bimabazaar.com",
-   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjSDeVXYNw5GahU_AA_YMfuAmGQfMqvJiyAqYQzn075jSOvRS62zDbgvLvp14oA8v8nDsa6YFV83YTT00X0Cttjn1J2WYPNvUu2whm9liSmc71YCycR5BsIjxTHZc_5Lun9OWcV3c0SaDIkWz3REVFPev83R_VBW9cIbNxAzrcd1DX9FJ4rDpTAWvrYHNiz277Jfk_Q0pb6e1hhZufRt1qJAJKq_jlgjJOccM1f1ogTh2RKNDN6A61FQ==",
-   "text": "Under regulatory norms consolidated in the IRDAI Master Circular, life insurance policies become non-contestable after three years from the date of issuance or revival.",
-   "unit": "years"
-  },
-  {
-   "label": "reported",
-   "number": 5.0,
-   "quote": "In order to prevent the misuse of tax exemption by high-net-worth individuals by investing in policies having large premium contributions, FA 2023 amended s.10(10D) to withdraw exemption in respect of life insurance policies issued on or after 1 April 2023 where premium (or aggregate premium) payable for any of the tax year during the term of such policy/policies exceeds INR5 lakhs (except amount received on death of a person).",
-   "source_date": "2023-11-08",
-   "source_name": "EY",
-   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFeZpIH5kt8UiLogfqk0GZGZCVNzLA7OSl1fb2HQ45uDFD09cSGa5tBYrdHGUAWPfQwpg8w5Xv2m8J1hqa9ELJE7YpyHefpo1zrLVHAiEOFwM6_7BgAMHu-XrV5gXcVzg2jCHDn9-7fRHzCJXxorci3ZGcWFJB0aXs37CfuaYBffU4-4wOwjbvJxjKuc0xd9m4FV1_0rgs-MJhr06SJESqcwanyA==",
-   "text": "Under amended Section 10(10D) provisions, tax exemptions on life insurance maturity proceeds are withdrawn for non-ULIP policies issued on or after 1 April 2023 if annual aggregate premiums exceed Rs 5 lakh.",
-   "unit": "lakh INR"
-  },
-  {
-   "label": "analyst-view",
-   "number": 15.0,
-   "quote": "“While a broad thumb rule of 10 to 15 times annual income is commonly used, this should be refined based on individual circumstances,” says Oke.",
-   "source_date": "2026-06-06",
-   "source_name": "ET",
-   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUoTUQsuAGWnKVmE2UAxvL781CZS1hawkdEFgZEUv27-hzDlmfTK4x-Lb3k1nlzfmUWqJOB9l5KfgnZh93iKGFJyLU5AXdUx1kldGNFv7WnO48AztWmSMo7MZ0RmdsnKxrueHX6DWCTdNW9CmHZpeA5J1le7j3iJZBJVwTJLVNycd2W1yjqpqfLBg32-44Qtf0YkJjbu9DKZ_xgTsQgC6jZ1WRjdrCXVEyxky9UAMxmLqfgYMC8wbsTRbh4-DTIml42XuoUt0ki14=",
-   "text": "Insurance industry executives note that financial planners commonly recommend an insurance cover thumb rule of 10 to 15 times the earner's annual income.",
-   "unit": "times annual income"
-  },
-  {
-   "label": "reported",
-   "number": 6.0,
-   "quote": "Although actual returns would depend on one's age, term and the premium amount, the average IRR (internal rate of return) in most traditional plans, including money-back and endowment, lies between 4 and 6 percent per annum.",
-   "source_date": "2016-04-13",
-   "source_name": "ET",
-   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGptwZgZ5oQHNSZstpAKduiOxjzpfWtpiraZHTNvE5sT6YA8UUWGPk5nVCM-Ydgi0ekbhUSJIwrp9f7sRTX3BJmu_YtyrTxPcbF2TDz8cLxGeY0fw1AEF2NBwjWFeeBUmaQLxEfG-QmThHk0xUr9KZCPurN37t1-DRx1xrj1QsntjU7kINcfBzwy4w2LrWRzMSx6Rj9TTZag1pbGam7zYy1gp_qd0WiCDIN6Q==",
-   "text": "Financial analysis indicates that the internal rate of return for traditional endowment and money-back life insurance policies generally hovers between 4 percent and 6 percent per annum.",
-   "unit": "pct"
-  },
-  {
-   "label": "reported",
-   "number": 28778.0,
-   "quote": "The difference between the premiums of the two policies is ₹28,778 (calculated as = ₹47,712 - ₹18,934).",
-   "source_date": "2024-06-03",
-   "source_name": "Mint",
-   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEue2isuy9k83GfZfCRpxLryuWV1l4FBkEuCmY2rRvK_qr0zFBMRnHSuEeFIlWq00h2LNg3JtZM7h0GM5IMUXSWxeI_LY4QwkizvCOD4Je9A0fX5u_A6uXfpC3Fq7Sd5l2Pf-eVfBPd2uFo40v0LTCZoETDxXyCWxk_5rJYsF3Zp04EawiY568AnackEka4keD2H9RGpRWC_PvWewet6v0iExvf5tLuUw7h-2eiW61nhTcMi-m3nP1WcDULg8g1PqbmHqypOTBZUYC86uj_",
-   "text": "A buyer evaluating a 30-year ₹1 crore cover faces an annual premium gap of ₹28,778 between a return-of-premium policy and a plain term insurance plan.",
+   "number": 4593875.0,
+   "quote": "Principal Amount ₹50,00,000; Interest Amount ₹45,93,875; Total Amount Payable ₹95,93,875.",
+   "source_date": "2026-10-27",
+   "source_name": "Bank of Baroda",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEw_T4eWzLehPt01spH10fmM9UIa6x6fdND4s1vDtBxraavPopJiQHcgQOiVM6PNq-0Elfr-DlfzpyWTOYJKH6CGxKmjuxuMeWWdVAjFrctPbZcRSadCW2Us5KDIlgTFrCv-1a3Y2fh3JHuBG7Lvd43-ugwJisZ",
+   "text": "On a 50 lakh rupee home loan across a standard tenure, cumulative interest payable can reach 45,93,875 rupees, bringing total outgo to 95,93,875 rupees.",
    "unit": "INR"
   },
   {
    "label": "official",
-   "number": 1.0,
-   "quote": "In case of surrender of policy in the first year, higher of the Guaranteed Surrender Value (GSV) or \"Special Surrender Value\" (SSV) becomes payable after completion of first policy year provided one full year premium is paid by the policyholders.",
-   "source_date": "2024-09-05",
-   "source_name": "CAalley.com",
-   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFifCH1dcvc9L9gdqaUFFxgvwvly_eVn6JXUwZtwgReB9c76rff7o662ZtV12Imb-Cbz-2RcRDBG9at0iC6_h0O0prsY599mQW1OmkVX73rbKZXF0goFgDGGgjdZDtrlmTwrrF77JI9RjTlJvs1vP3YLrKej9VR6duBPP6cFAI8jQRvsg4Wdd0=",
-   "text": "The IRDAI Master Circular ensures that policyholders surrendering an eligible non-linked policy after completing one full year can receive the higher of guaranteed surrender value or special surrender value.",
-   "unit": "years"
+   "number": 182261.0,
+   "quote": "1, 22,29,875, 2,28,000, 1,82,261, 45,739, 21,84,136.",
+   "source_date": "2026-10-28",
+   "source_name": "Bank of Baroda",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0C18zWCd8PUuAx92tw-LZgOl4P-xmy6mR1DKQwUj6a5OvFdVZOf29lRa1OL61dVDGwJW_-UbF5f_9ZltLyCIaGkeuwkUieeFz3BBhBF_M0Xx5B2Fx68WhxTOhmEKykMgCx-mGrsBd541ETxBmSfc2r20=",
+   "text": "In a 20-year amortisation schedule, initial payments are heavily front-loaded with interest, where 1,82,261 rupees goes towards interest out of 2,28,000 rupees paid annually in Year 1.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 80.0,
+   "quote": "Loans above Rs.30/- Lacs up to Rs.75/- Lacs, 20%, 80%.",
+   "source_date": "2026-10-28",
+   "source_name": "Bank of Baroda",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEELqlVYLPdRFMuMGmW0trT1AYcOZNONPHPe5pd6pdPMnNmHORY1X57dQ1A76gGu5IS1ciq9uLzwsoZV4Aiszma64Zrn-9aO5-UnnLS907FCnYwn2gtmpdPki6Ln85auSqGKYhxORUsTxWt1eS_",
+   "text": "Lenders cap the Loan-to-Value ratio at 80 percent for housing loans between 30 lakh rupees and 75 lakh rupees, requiring home buyers to contribute at least 20 percent as a margin.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 18.31,
+   "quote": "By paying one extra EMI annually on a Rs 50 lakh loan at 8.5% for 25 years, you can save approximately Rs 18.31 lakh in interest and shorten the loan term by over 5 years.",
+   "source_date": "2026-01-16",
+   "source_name": "The Economic Times",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLt_Qhn6gXGgsGWSHVXxF6pcYKPdfLzjhLHNPatYskFa_UmFEKWe665rkz0PnJwhpLz2bXNxd70W-83spoBHfeQRL19LYxdd9mnlR_tjLu07ez6EepCgRs4YfsCExgtf9if8TOxRRizFp5VfBZv9Eew-BTybn3EgPXt4JTjWTZamNBsHgIF8MRkc_1JaMUflthqg-OgnjB133sCNYSj__XDHaGCAQEjL-eZpKVW1G1o-dzEk4Q-8wSv1rZV8fGwmDsI6puocJgBB4_UAsitPfbkDPqpoqXmjImghjnAwMP",
+   "text": "Prepaying one extra equated monthly instalment each year on a 50 lakh rupee home loan at 8.5 percent interest over 25 years saves approximately 18.31 lakh rupees in total interest.",
+   "unit": "lakh INR"
+  },
+  {
+   "label": "official",
+   "number": 200000.0,
+   "quote": "In case of self- occupied property, the upper limit for deduction of interest paid on housing loan is ₹ 2 lakh.",
+   "source_date": "2026-05-29",
+   "source_name": "Income Tax Department",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaIV-gOprBqtXkgWcBWaHo-xNfgJa7Q71Pey7Zh0UzsKcEeGHI2D55pQhMwRb6DooEJnGFUOi07kRdGxtlihceJkTixOQ2-CmtEmvP30RVdLMJwkhCL3IXvwPuWg7kovWSckU8fTyZohbZhd2a2355GnELLl2VQzeoqVZw7BuBJ7_ftg==",
+   "text": "Under Section 24(b) of the Income Tax Act, the maximum allowable tax deduction on interest paid for a self-occupied house property loan is 2,00,000 rupees per year.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 150000.0,
+   "quote": "The aggregate amount of deductions admissible u/s 80C, 80CCC and 80CCD(1) shall be restricted to maximum limit of Rs.1,50,000.",
+   "source_date": "2026-06-30",
+   "source_name": "Income Tax Department",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS5VwB5JE2Zp5MW_pi1MdebhmtE-1MkxLCPphy-09-NQqOOUS54VPlvoDbLpEyz2pwFnc6PEyDNumTeJvFRR3_cns7PBRsRYTolQ7M-NUbX3Wy3r4zl9s36J-nE3b2AlSFIuChmyxImh7qBhfxCSghMRABYcBBZawqQnTqoNezyyUgNiYwki3Kr4PAPq_a78IWIO95DKTjelIY0II=",
+   "text": "Under Section 80C of the Income Tax Act, taxpayers can claim a maximum combined deduction of 1,50,000 rupees, which includes repayment of housing loan principal.",
+   "unit": "INR"
+  },
+  {
+   "label": "analyst-view",
+   "number": 24.0,
+   "quote": "The following table shows the impact of above prepayment strategies for a Rs 75 lakh home loan taken for a tenure of 25 years at an interest rate of 8.0%:. Paying 1 extra EMI every year, 6-7 years, 24-25 lakhs.",
+   "source_date": "2025-10-29",
+   "source_name": "The Economic Times",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFm6HfNZbV-C_ztvapgBq-lekVsTINkVrf1Lp6WZV47FZ8JWNM4SKzkmy05Nu4Mgw7IMSvjyYTZTFpEriWci-NtJjgGSTayH56id-1YWIKX1wpnEOICGeS9oCNQp9KfE9UbaT5I1ALh7OWf8QyAoU3qapUsO1t1pKDgvEymbmYIOe6qTL33yq8eEY1AVbFIAj5mpX6cn89YxXqHQIcTacJVEosb7UDFiK2t3lP9fIPXieSQkpG5CTm4mDAyRKPhsfDw6Fcl52zHUsW0eEuP7_ILZjteG71_CfPjjQ==",
+   "text": "On a 75 lakh rupee loan over 25 years at 8.0 percent, an annual prepayment strategy of one extra EMI reduces the tenure by 6 to 7 years and saves 24 to 25 lakh rupees in interest.",
+   "unit": "lakh INR"
+  },
+  {
+   "label": "official",
+   "number": 0.0,
+   "quote": "It has, therefore, been decided that banks will not be permitted to charge foreclosure charges/pre-payment penalties on home loans on floating interest rate basis, with immediate effect.",
+   "source_date": "2012-06-05",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEe1iFqHGmL3_l0gb62SWIyM4f_mI8vsnRoVsBTXjJqULOUUpusb35y2zqSngjf67E5RcsZQVF-KI3l7PsIfZmw7rL5b-EUyvjkIyj4TWfwpa3pvodrtU2PbGMl1frg5gAsFwOX11fWXdGya2hmBn3Jnb4Ccrn_koST6WMByGTLwzlS",
+   "text": "The Reserve Bank of India prohibited all scheduled commercial banks from levying foreclosure charges or prepayment penalties on individual floating rate home loans.",
+   "unit": "INR"
   }
  ],
  "id": "2026-11-16-sglearning-long",
  "ids": {
   "budget": {
    "day": "2026-11-11",
-   "drafts": 5,
-   "research": 4
+   "drafts": 2,
+   "research": 2
   },
   "cost": {
    "inr": 87.0,
@@ -104,7 +104,8 @@
    "https://www.livemint.com/market/stock-market-news/gold-price-crashes-over-rs-38-600-from-record-high-whatll-happen-amid-diwali-2026-fervour-right-time-to-buy-decoded-11792910366849.html",
    "proven-2026-10-30-sglearning-short"
   ],
-  "drafts": 6
+  "drafts": 3,
+  "intro_sent": "2026-11-11T09:45:42+00:00"
  },
  "kind": "long",
  "publish_day": "2026-11-16",
@@ -137,409 +138,143 @@
   "research budget used for today (4 calls); the next quota day retries",
   "try 1: advice: double paisa; numbers without a source: 100000, 5.7e+06, 5.7e+06",
   "waiting for the founder's intro clip until 16 Nov 10:30 UTC",
-  "11 Nov 2026: was written on home-loan-double, the 21 Nov long's subject (the long bank had run out); re-planned on a fresh topic",
-  "try 1: advice: guarantee",
-  "try 2: numbers without a source: 100000"
+  "11 Nov 2026: the founder chose to keep this long on the home loan and gave his own intro line"
  ],
  "script": {
   "captions": {
    "instagram": {
-    "caption": "Paisa wapas policy ka asli return kitna hai? Aksar saal ka sirf 4 se 6 percent.\nAur term plan mein kuch wapas nahi milta, phir bhi family ke liye kyun zaroori ho sakta hai?\nAapke ghar mein kaunsi policy hai, term ya paisa wapas?\nYeh investment advice nahi hai.\nUs Papa ko bhejo jo kehte hain paisa wapas policy hi sabse safe hai.",
+    "caption": "50 lakh ka home loan, aur bank ko wapas 95,93,875 rupaye? 😳\nPehle saalon ki EMI ka zyaadatar paisa sirf byaaj mein jaata hai.\nSaal mein ek extra EMI se lakhon ka byaaj aur kai saal bach sakte hain.\nAapka loan floating hai ya fixed?\nYeh investment advice nahi hai.\nUs dost ko bhejo jisne abhi abhi home loan liya hai.",
     "hashtags": [
-     "#PaiseKiKhabar",
-     "#SeedhiBaat",
+     "#EMI",
+     "#PersonalFinanceIndia",
      "#MoneyTipsHindi",
      "#HinglishFinance",
-     "#PersonalFinanceIndia",
+     "#RBI",
      "#IncomeTax",
+     "#SeedhiBaat",
      "#LearningWithSG"
     ]
    },
    "threads": {
-    "text": "Aapki 'paisa wapas' policy ka asli return? Aksar saal ka sirf 4 se 6 percent. Term plan mein kuch wapas nahi milta, phir bhi woh family ko kahin zyada suraksha de sakta hai. Aapke ghar mein kaunsi policy hai? #PaiseKiKhabar #MoneyTipsHindi"
+    "text": "50 lakh ka home loan, aur bank ko wapas 95,93,875 rupaye? Pehle saal ki EMI ka zyaadatar hissa sirf byaaj mein jaata hai. Aapka loan floating hai ya fixed? #PaiseKiKhabar #MoneyTipsHindi"
    },
    "youtube": {
     "chapters": [
-     "00:00 Ek premium, do nateeje",
-     "00:00 Paisa wapas policy ka asli return",
-     "00:00 Term plan: kuch wapas nahi, phir bhi kyun?",
-     "00:00 Policy beech mein todi toh?",
-     "00:00 Kitna cover chahiye aur kya karein"
+     "00:00 Ghar ka asli bill",
+     "00:00 Loan double kaise hota hai",
+     "00:00 Pehle saal ki EMI kahaan gayi",
+     "00:00 Ek extra EMI ka jaadu",
+     "00:00 Galti, tax aur aapka plan"
     ],
-    "description": "Aapki 'paisa wapas' policy family ko asal mein kitna degi? Traditional endowment aur money-back policies ka return aksar saal ka sirf 4 se 6 percent hota hai, aur cover bhi chhota. Is video mein term plan, surrender value, free-look period aur sahi cover ka hisaab, seedhi bhasha mein. Yeh investment advice nahi hai. Us Papa ko bhejo jo kehte hain paisa wapas policy hi sabse safe hai.",
+    "description": "50 lakh ka home loan, aur bank ko wapas 95,93,875 rupaye? Pehle saalon ki EMI ka zyaadatar hissa byaaj mein jaata hai, isliye udhaar bahut dheere ghatta hai. Saal mein ek extra EMI aur RBI ka zero prepayment penalty niyam yeh poora hisaab badal sakta hai. Us dost ko bhejo jisne abhi abhi home loan ke papers sign kiye hain.",
     "tags": [
-     "term insurance",
-     "term plan",
-     "endowment policy",
-     "money back policy",
-     "paisa wapas policy",
-     "life insurance",
-     "surrender value",
-     "free look period",
-     "insurance cover",
-     "personal finance hindi",
-     "insurance hindi",
-     "Learning with SG"
+     "home loan",
+     "EMI",
+     "home loan interest",
+     "prepayment",
+     "floating rate",
+     "amortisation schedule",
+     "home loan hindi",
+     "Section 24b",
+     "80C",
+     "RBI",
+     "personal finance india",
+     "ghar kharidna",
+     "loan tips"
     ],
-    "title": "Term Plan ya Endowment? 1 crore ka sach"
+    "title": "Home Loan EMI: 50 lakh ka loan, double kyun?"
    }
   },
-  "cards": [],
+  "cards": [
+   {
+    "big_number": "₹95,93,875",
+    "line": "50 lakh loan ka kul bill",
+    "source": "Bank of Baroda"
+   },
+   {
+    "big_number": "₹1,82,261",
+    "line": "Pehle saal sirf byaaj",
+    "source": "Bank of Baroda"
+   },
+   {
+    "big_number": "₹18.31 lakh",
+    "line": "Ek extra EMI se byaaj bacha",
+    "source": "The Economic Times"
+   },
+   {
+    "big_number": "₹0",
+    "line": "Floating loan prepay penalty",
+    "source": "RBI"
+   }
+  ],
   "carousel": false,
-  "end_question": "Aapke ghar mein kaunsi policy hai, term plan ya paisa wapas wali?",
-  "hook": "Aapki 'paisa wapas' policy, aapke na rehne par family ko kitna degi?",
+  "end_question": "Aapka home loan floating rate par hai ya fixed? Comments mein likho, floating ya fixed.",
+  "hook": "50 lakh ka home loan, aur bank ko wapas 95,93,875 rupaye?",
   "scenes": [
    {
-    "facts_used": [],
-    "label": "Ek premium, do nateeje",
+    "facts_used": [
+     0
+    ],
+    "label": "Ghar ka asli bill",
     "visual": {
      "card": null,
-     "prompt": "Close view of an open steel almirah drawer at night, stuffed with old folded insurance policy papers tied with a red thread, lit by a single tubelight, mood of a forgotten secret",
+     "prompt": "A shiny new set of flat keys on a wooden table beside a loan sanction file, behind it a towering mountain of cash bundles rising to the ceiling, dramatic evening light, wide 16:9 illustrated panel",
      "type": "art"
     },
-    "vo": "Aapki 'paisa wapas' policy, aapke na rehne par family ko kitna degi? Zyaadatar log yeh number jaante hi nahi. Aur jo jaante hain, woh chaunk jaate hain."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A narrow Indian residential lane in the evening, two identical small houses side by side, two men in office shirts waving at each other from their gates, warm streetlight",
-     "type": "art"
-    },
-    "vo": "Sochiye, ek hi gali mein rehne wale padosi, Mohan aur Sunil. Same office, same salary, aur dono har saal insurance par lagbhag ek jaisa paisa bharte hain."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A noisy Indian wedding function at night, a smiling middle-aged insurance agent in a blazer holding a file and talking to a young man near the food counter, fairy lights everywhere",
-     "type": "art"
-    },
-    "vo": "Mohan ne policy li ek rishtedaar agent se, shaadi ke function mein. Agent ne kaha, 'paisa doobega nahi, maturity par sab wapas, upar se bonus bhi.'"
+    "vo": "50 lakh ka home loan, aur bank ko wapas 95,93,875 rupaye? Haan, yeh Bank of Baroda ke apne calculator ka hisaab hai. Matlab lagbhag double."
    },
    {
     "facts_used": [
-     6
+     0,
+     1
     ],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A young man at a small home desk with a laptop at night, calm and focused, while through the window two neighbours laugh and point, gentle comic mood",
+     "prompt": "A stream of rupee notes flowing out of a new apartment door and curving away into the open doors of a big bank building down the street, the apartment itself staying small and bare, afternoon light",
      "type": "art"
     },
-    "vo": "Sunil ne online term plan liya, 1 crore ka, 30 saal ke liye. Maturity par usse kuch wapas nahi milega. Padosi hanse, 'paisa paani mein daal diya?'"
+    "vo": "Ghar ek khareeda, par bill lagbhag dugna. Aur sabse bada jhatka abhi baaki hai. Shuru ke saalon ki EMI ka zyaadatar hissa ghar mein jaata hi nahi."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A dark bedroom at 2 am, a man sitting up in bed wide awake, his sleeping wife beside him, moonlight through the curtain, worried mood",
+     "prompt": "BHAI in his hoodie happily handing out sweets from a box in a small rented living room, MUMMY in a saree smiling, PAPA in a kurta laughing, festive warm evening light",
      "type": "art"
     },
-    "vo": "Ab ek sawaal. Agar kal dono mein se kisi ko kuch ho jaaye, toh kiski family ko zyada paisa milega? Jawab sunkar Mohan ki neend ud jaati hai."
-   },
-   {
-    "facts_used": [
-     6
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "Split panel: on the left a tall solid wall of bricks protecting a small house, on the right the same house behind a thin low fence, stormy sky above both",
-     "type": "art"
-    },
-    "vo": "Sunil ki family ko poore 1 crore. Mohan ki family ko? Sirf utna, jitna policy ka sum assured hai. Aur aksar woh rakam kaafi chhoti hoti hai."
+    "vo": "Yeh kahani hai Bhai ki. Naukri pakki, shaadi ho chuki, aur sapna ek, apna flat. Bank Uncle ne loan pass kiya, aur ghar mein mithai baati gayi."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A policy document lying on a wooden table under a magnifying glass, a small coin pouch next to a big empty space, soft afternoon light",
+     "prompt": "PAPA in a kurta resting a reassuring hand on BHAI's shoulder on a balcony, both looking at a half-built apartment tower in the distance, golden sunset",
      "type": "art"
     },
-    "vo": "Sum assured yaani woh rakam jo policy mein likhi hai, maut par milne wali. Paisa wapas policy mein yeh rakam chhoti hoti hai, kyunki premium ka hissa bachat mein jaata hai."
+    "vo": "Papa ne kandhe par haath rakha aur bole, bas EMI time par bharte rehna, baaki sab apne aap ho jaayega. Sabne maan liya. Lekin kya sach mein?"
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "Mohan on his balcony holding a passbook to his chest, looking hopeful, a potted tulsi plant and drying clothes behind him, morning sun",
+     "prompt": "Late night in a quiet bedroom, a printed bank statement lying open on a bedside table under a lamp, BHAI sitting up in bed in the background staring at the ceiling, worried, blue night tones",
      "type": "art"
     },
-    "vo": "Toh same paisa bhar ke, ek ghar ko suraksha mili, doosre ko sirf bachat ka ehsaas. Lekin Mohan kehta hai, 'mera paisa toh wapas aayega na?'"
+    "vo": "Kyunki kuch saal baad, Bhai ne pehli baar apna loan statement dhyaan se khola. Aur jo dekha, us raat use neend nahi aayi. Kya tha usme?"
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "PAPA in a white kurta in an old armchair, a thick file of FD receipts and policy papers on his lap, nodding confidently, living room with a wall clock",
+     "prompt": "A giant glass jar labelled with no text, filled almost to the top with coins representing the loan, a tiny hand removing only a few coins while a big pipe drains other coins toward a bank, surreal illustrated style",
      "type": "art"
     },
-    "vo": "Yahi woh line hai jo har agent bolta hai, aur har ghar ke Papa maan lete hain. 'Paisa wapas.' Sunne mein kitna safe lagta hai, hai na?"
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "An old hourglass on a shelf with banknotes inside instead of sand, the notes shrinking as they fall, dusty room, dramatic side light",
-     "type": "art"
-    },
-    "vo": "Lekin kya sach mein paisa wapas aata hai? Aur agar aata hai, toh barson baad haath mein aane par, uski asli keemat kitni bachti hai?"
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "SG, early forties, beard, striped shirt, standing at a chai stall counting points on his fingers, friendly and energetic, evening street behind him",
-     "type": "art"
-    },
-    "vo": "Aaj in sawaalon ka seedha jawab. Paisa wapas policy ka asli return kitna hai. Term plan mein kuch wapas nahi, phir bhi sahi kyun. Aur cover kitna lena chahiye."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A locked metal cash box on a table with a key half inserted, a hand about to turn it, curious suspense mood, warm lamp light",
-     "type": "art"
-    },
-    "vo": "Saath mein woh baat bhi, jo policy beech mein todne waale ko koi nahi batata. Par pehle, chaliye Mohan ki policy ka hisaab kholte hain."
-   },
-   {
-    "facts_used": [],
-    "label": "Paisa wapas policy ka asli return",
-    "visual": {
-     "card": null,
-     "prompt": "A postman handing an envelope to Mohan at his door, Mohan smiling widely, a scooter parked outside, bright morning",
-     "type": "art"
-    },
-    "vo": "Mohan har saal premium bharta hai, bina ek bhi saal chhode. Bonus ki chitthi aati hai, woh khush hota hai. Lagta hai paisa badh raha hai."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A man sitting alone at a dining table late at night with a calculator, a notebook and a cup of chai, frowning in thought",
-     "type": "art"
-    },
-    "vo": "Par ek seedha sawaal kisi ne nahi poocha. Jo paisa main daal raha hoon, uspar saal ka kitna kama raha hoon? Yahi asli return hai."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A small sapling growing very slowly in a clay pot, a watering can beside it, a man kneeling to measure its height with a ruler, soft daylight",
-     "type": "art"
-    },
-    "vo": "Ise kehte hain IRR. Seedhi bhasha mein, aapke har saal ke paise par, har saal ka asli byaaj kitna bana, bonus aur maturity sab jod kar."
-   },
-   {
-    "facts_used": [
-     5
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A newspaper lying on a breakfast table with spilled tea, a shocked man with his hand on his forehead in the background, morning kitchen",
-     "type": "art"
-    },
-    "vo": "Ab chaunkane wali baat. ET ki report ke mutabik, zyaadatar endowment aur money-back policies ka yeh return, saal ka sirf 4 se 6 percent ke beech hota hai."
-   },
-   {
-    "facts_used": [
-     5
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A row of glass jars on a shelf, each filled with coins to slightly different low levels, a hand pointing at them, plain wall background",
-     "type": "art"
-    },
-    "vo": "Haan, sirf 4 se 6 percent. Aur yeh bhi umar, policy ki lambai aur premium par depend karta hai. Kisi ka kam, kisi ka thoda zyada."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A busy small-town post office counter, an elderly clerk stamping a passbook, a queue of ordinary people waiting patiently, ceiling fan turning",
-     "type": "art"
-    },
-    "vo": "Ab ise compare kijiye. PPF, yaani sarkar ki chhoti bachat yojana, aaj saal ka 7.1 percent deta hai. Bina kisi agent ke, post office ya bank se."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A fork in a village road, one path wide and sunny, the other narrow and leading to a padlocked iron gate, a man standing at the gate looking back",
-     "type": "art"
-    },
-    "vo": "Matlab jis seedhe raste ko Mohan chhod aaya, wahi isse zyada de raha tha. Aur policy mein uska paisa barson ke liye band bhi hai."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "WIFE at a kirana counter looking at a long grocery bill in surprise, SHOPKEEPER weighing dal on a scale, shelves full of packets",
-     "type": "art"
-    },
-    "vo": "Ab mehngai ko yaad kijiye. Har saal doodh, school fees, dawai sab mehnga hota hai. Jo return mehngai se kam ho, woh paisa chupke se chhota karta hai."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A bucket of water with a small hole at the bottom, water being poured in from the top while it leaks out below, plain courtyard floor",
-     "type": "art"
-    },
-    "vo": "Real return yaani mehngai kaat kar jo bacha. Agar policy ka return mehngai ke aas paas hi hai, toh asli kamai lagbhag kuch nahi bachti."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "An old man holding a large cheque outside a bank, looking at a shop window where prices are high, mixed feeling of pride and confusion",
-     "type": "art"
-    },
-    "vo": "Toh maturity par jo bada sa cheque aata hai, woh bada dikhta hai. Par barson pehle ke paise se, aaj utna saamaan shayad nahi aata."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A man trying to carry an umbrella and a heavy piggy bank in the same hand during rain, getting wet anyway, comic and sad mood",
-     "type": "art"
-    },
-    "vo": "Aur cover bhi chhota tha. Yaani Mohan ne suraksha aur bachat, dono ek hi policy se karni chahi, aur dono adhoore reh gaye."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A shiny gift box with a big ribbon on a table, the lid slightly open revealing only a few coins inside, dramatic spotlight",
-     "type": "art"
-    },
-    "vo": "Na poori suraksha, na achha return. Yeh hai paisa wapas policy ka asli chehra. Par agent ise itni khoobsurti se kyun bechta hai?"
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "MUMMY in a saree holding a cup of chai at the window, looking worried at a grey sky, the house quiet behind her, late afternoon",
-     "type": "art"
-    },
-    "vo": "Kyunki 'paisa wapas' ek emotion hai. Insaan ko kuch na milne ka dar hota hai. Par yahin se Sunil ki kahani mein twist aata hai."
-   },
-   {
-    "facts_used": [],
-    "label": "Term plan: kuch wapas nahi, phir bhi kyun?",
-    "visual": {
-     "card": null,
-     "prompt": "Sunil holding a big umbrella over his wife and two children as rain starts in a park, everyone dry and calm, evening light",
-     "type": "art"
-    },
-    "vo": "Sunil ka term plan bilkul seedha hai. Woh premium bharta hai, aur badle mein bas ek vaada: agar use kuch hua, family ko poora cover milega."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A strong brass lock on the wooden front door of a home at night, a quiet street outside, moonlight on the lock",
-     "type": "art"
-    },
-    "vo": "Term plan yaani khaalis suraksha. Koi bachat nahi, koi bonus nahi. Jaise ghar ka taala, jo chori na ho toh bhi bekaar nahi hota."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A clean family car parked safely in a society parking lot at sunrise, a man wiping the windshield happily, no damage anywhere",
-     "type": "art"
-    },
-    "vo": "Socho, aap car insurance lete ho. Accident nahi hua, toh kya aap company se paisa wapas maangte ho? Nahi. Kyunki suraksha hi uski keemat thi."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A glossy insurance office with a bright banner-free display, a salesperson presenting a brochure to a young couple across a glass desk, polished lighting",
-     "type": "art"
-    },
-    "vo": "Lekin life insurance mein hum yahi maangte hain, ki kuch wapas mile. Isi soch ke liye companies ne banaya 'return of premium' term plan."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A boomerang flying back toward a man's hand in an open field, but it carries a heavy weight tied to it, golden hour",
-     "type": "art"
-    },
-    "vo": "Return of premium yaani policy khatam hone par aapka bhara hua premium wapas. Cover bhi, paisa bhi. Par iski keemat kitni hai, kabhi dekha?"
-   },
-   {
-    "facts_used": [
-     6
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "Two price tags hanging from two identical umbrellas in a shop, one tag much longer and heavier than the other, shop owner shrugging",
-     "type": "art"
-    },
-    "vo": "Mint ke ek hisaab mein, same 1 crore cover par, premium wapas wala plan, saada term plan se har saal 28,778 rupaye mehnga tha."
-   },
-   {
-    "facts_used": [
-     6
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A man handing a bundle of notes through a small window every year, a long line of identical bundles stacked behind the window gathering dust",
-     "type": "art"
-    },
-    "vo": "Har saal 28,778 rupaye extra. Sirf isliye ki aakhir mein aapka hi paisa aapko lauta diya jaaye. Woh bhi bina byaaj ke, barson baad."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "Sunil at his kitchen table dropping money into a clear glass jar labelled only with a drawn house symbol, his daughter watching with interest, morning light",
-     "type": "art"
-    },
-    "vo": "Ab Sunil ki soch suniye. 'Main saada term lunga, aur yeh extra paisa har mahine khud bachaunga, apne naam par, apne control mein.'"
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "Two separate neat boxes on a shelf, one holding a folded umbrella, the other holding a growing money plant, clean minimal room",
-     "type": "art"
-    },
-    "vo": "Yahi asli formula hai. Suraksha alag, bachat alag. Insurance sirf family ki hifazat ke liye, aur bachat ke liye alag, saaf raasta."
+    "vo": "Itni EMI bhar di, phir bhi bacha hua udhaar lagbhag utna ka utna. Toh paisa gaya kahaan? Seedha bank ki jeb mein, byaaj ban kar."
    },
    {
     "facts_used": [
@@ -548,126 +283,76 @@
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "BEHEN in office wear at her desk reviewing tax papers with a raised eyebrow, a laptop and a pen, sceptical but satisfied look, office window behind",
-     "type": "art"
+     "prompt": "explaining_front",
+     "type": "avatar"
     },
-    "vo": "Ek aur baat jo agent kam batate hain. Old tax regime mein term plan ka premium bhi tax deduction mein aata hai. Sirf paisa wapas policy ka nahi."
+    "vo": "Toh aaj teen sawaal. Pehla, 50 lakh ka loan lagbhag double kaise ban jaata hai? Doosra, pehle saalon mein ghar ka kitna hissa sach mein aapka hua?"
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A balance scale on a table, a small light coin pouch on one side and a heavy sack on the other, a hand adjusting it, plain background",
+     "prompt": "A wall calendar with many months, one single month glowing golden among the rest, a hand pinning an extra envelope of cash onto that glowing month, morning light in a home office",
      "type": "art"
     },
-    "vo": "Toh 'tax bachega' wala tark term plan par bhi lagu hota hai. Fark sirf itna hai, ki term plan ka premium kaafi kam hota hai."
+    "vo": "Aur teesra, saal mein sirf ek extra EMI bharne se kitna byaaj aur kitne saal bachte hain? Teesre jawaab ke liye aakhir tak rukna, woh sabse kaam ka hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Flashback panel with soft sepia tones: BHAI eagerly signing a thick stack of loan papers at a bank counter, BANK UNCLE behind the counter sliding more pages forward, busy bank branch daytime",
+     "type": "art"
+    },
+    "vo": "Par pehle chalte hain wahan, jahan yeh kahani shuru hui thi. Bank ki counter par, jahan Bhai ne khushi khushi har kaagaz par sign kiya tha."
    },
    {
     "facts_used": [
-     6
+     2
+    ],
+    "label": "Loan double kaise hota hai",
+    "visual": {
+     "card": null,
+     "prompt": "BANK UNCLE behind a wooden bank counter opening a fat loan file, explaining with one finger raised, BHAI and his wife seated across listening carefully, fluorescent bank interior, midday",
+     "type": "art"
+    },
+    "vo": "Bank Uncle ne file kholi. Pehli baat, ghar ki poori keemat bank nahi deta. Kam se kam 20 percent aapko apni jeb se dena padta hai."
+   },
+   {
+    "facts_used": [
+     2
     ],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "Aerial view of the same two houses in the lane, one with a thin cloth canopy, the other under a strong steel roof with a small garden growing beside it",
+     "prompt": "A miniature model house split into two parts, a small slice painted in the family's warm colours and the much larger rest in cold bank grey, sitting on a desk under a lamp",
      "type": "art"
     },
-    "vo": "Ab dono padosiyon ko phir dekhiye. Mohan ke paas chhota cover aur dheema return. Sunil ke paas 1 crore ka cover, aur alag se badhti bachat."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "Sunil's family sleeping peacefully in a small bedroom at night, BETA and BETI under a blanket, a night lamp glowing, calm mood",
-     "type": "art"
-    },
-    "vo": "Sunil ko maturity par kuch nahi milega, yeh sach hai. Par uski family har din, har raat, poori tarah surakshit hai. Yahi uska return hai."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "Mohan holding a policy document with both hands as if about to tear it, frozen mid-action, a dramatic lamp casting a long shadow",
-     "type": "art"
-    },
-    "vo": "Lekin yahan Mohan ek galti karne wala hai. Woh sochta hai, policy beech mein tod doon? Ruko, pehle sun lo ki todne par kya milta hai."
-   },
-   {
-    "facts_used": [],
-    "label": "Policy beech mein todi toh?",
-    "visual": {
-     "card": null,
-     "prompt": "Mohan walking into an insurance branch office with a determined face, a file under his arm, a security guard opening the glass door",
-     "type": "art"
-    },
-    "vo": "Mohan ko hisaab samajh aa gaya. Ab woh chahta hai policy band kar de, aur jama paisa nikaal le. Ise kehte hain policy surrender karna."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A clerk sliding a thin envelope across a counter to a man who expected much more, his hopeful smile fading, fluorescent office light",
-     "type": "art"
-    },
-    "vo": "Surrender value yaani policy beech mein todne par company jo paisa lautati hai. Aur shuruaati saalon mein, yeh rakam aksar umeed se bahut kam hoti hai."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A water pipe with several taps along it draining water before it reaches a small tank at the end, a man looking at the nearly empty tank",
-     "type": "art"
-    },
-    "vo": "Kyunki shuru ke premium ka bada hissa aksar commission aur company ke kharche mein jaata hai. Bachat wala hissa dheere dheere banta hai."
+    "vo": "Isse margin kehte hain, yaani ghar mein aapka apna hissa. Baaki sab bank ka udhaar. Aur asli kahani isi udhaar se shuru hoti hai."
    },
    {
     "facts_used": [
-     7
+     0
     ],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A grand old government building with stone pillars on a clear day, people walking up its steps with files, sense of rules and order",
+     "prompt": "Close view of neat bundles of cash being pushed across a bank counter toward BHAI's waiting hands, BANK UNCLE's hands on the other side, crisp daylight",
      "type": "art"
     },
-    "vo": "IRDAI, yaani insurance ka sarkari regulator. Iske niyam ke mutabik, 1 saal ka poora premium bharne ke baad hi, surrender par paisa milne ka haq banta hai."
-   },
-   {
-    "facts_used": [
-     7
-    ],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "BANK UNCLE behind a wooden counter comparing two ledgers side by side with spectacles on his nose, Mohan waiting across the counter",
-     "type": "art"
-    },
-    "vo": "Aur tab bhi company alag alag hisaab nikaalti hai, aur jo zyada ho woh deti hai. Par yaad rahe, poora bhara hua premium wapas milna zaroori nahi."
+    "vo": "Bhai ke papers par likha tha, loan 50 lakh rupaye. Is asal udhaar ko principal kehte hain. Yaani woh paisa jo bank ne sach mein aapko diya."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A man stuck between two closing doors in a corridor, both doors slowly shutting, a bright exit sign-free window at the far end behind him",
+     "prompt": "A cash bundle drawn like a rented house with a small meter ticking beside it, coins dropping out of the meter into a bank bag, playful illustrated concept panel",
      "type": "art"
     },
-    "vo": "Matlab galat policy lene ka nuksaan, use todne par bhi hota hai. Aur rakhne par bhi. Toh asli bachaav kahan hai? Policy lete waqt."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A courier delivering a thick sealed envelope at a family's door, a young woman receiving it with curiosity, afternoon light in the doorway",
-     "type": "art"
-    },
-    "vo": "Yahan aata hai woh haq jo bahut kam log jaante hain. Free-look period. Yaani policy milne ke baad, sochne aur lautane ka waqt."
+    "vo": "Ab bank yeh paisa muft mein toh dega nahi. Udhaar ka bhi kiraya hota hai. Usi kiraye ko byaaj kehte hain, angrezi mein interest."
    },
    {
     "facts_used": [
@@ -676,60 +361,422 @@
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A wall calendar in a kitchen with a month of days circled in pencil, a policy envelope pinned next to it, morning sun on the wall",
+     "prompt": "A long road of identical stepping stones stretching to the horizon, each stone a monthly payment envelope, BHAI walking on the first few stones carrying an envelope, early morning mist",
      "type": "art"
     },
-    "vo": "Yeh waqt 30 din ka hota hai. Is beech policy pasand nahi aayi, ya samajh nahi aayi, toh aap use cancel karke lauta sakte ho."
+    "vo": "In dono ko milaakar banti hai EMI. EMI yaani har mahine ki fixed kisht. Har mahine wahi raqam, 20 saal tak, bina ek bhi mahina chooke."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN in office wear at a desk with a laptop, a desk calculator beside it, her eyebrows raised in disbelief, two equal tall stacks of cash drawn on the desk next to her, evening office light",
+     "type": "art"
+    },
+    "vo": "Ab Bank of Baroda ke calculator mein 50 lakh ka loan daalo. Akela byaaj aata hai 45,93,875 rupaye. Yaani lagbhag asal udhaar jitna hi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A balance scale on a table: one pan holds a small model flat, the other pan holds two equal towers of cash bundles tipping it down heavily, dramatic side light",
+     "type": "art"
+    },
+    "vo": "Socho zara. Aapne 50 lakh udhaar liye, aur upar se lagbhag utne hi bank ko kiraye mein de diye. Total bill ho gaya 95,93,875 rupaye."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "BHAI in a hoodie sitting cross-legged on a bed reading policy papers spread around him, a pen behind his ear, concentrating",
+     "prompt": "A big boulder of debt on a hillside with a small new pebble of interest added on top every month, a tiny figure pushing the boulder uphill, dusk sky",
      "type": "art"
     },
-    "vo": "Toh agar ghar mein kisi ne abhi abhi policy li hai, kaagaz khol kar dekhiye. Cover kitna hai, aur paisa kab wapas aayega."
+    "vo": "Par aisa hota kyun hai? Byaaj sirf ek baar nahi lagta. Har mahine, jitna udhaar bacha hai, us poore par naya byaaj judta hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "An older couple sitting with a calm advisor at a small office table, papers between them, the advisor explaining with a pencil, quiet afternoon",
+     "prompt": "An unnamed young tenant handing rent money to a landlord at a rented flat door, month after month shown as ghostly repeated copies of the same handover, warm hallway light",
      "type": "art"
     },
-    "vo": "Agar policy saalon purani hai, toh jaldbaazi mat kijiye. Pehle surrender value poochiye, phir kisi samajhdaar advisor se poora hisaab lagwaiye. Gusse mein todna bhi galti hai."
+    "vo": "Ise kiraye ke ghar jaisa samjho. Jab tak aap usme rehte ho, har mahine kiraya dete ho. Udhaar bhi waisa hi hai, jitni der rakho, utna kiraya."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A time-lapse style panel of the same apartment window: a young couple at left, the same couple greying at right, a sapling outside growing into a tall tree, soft daylight",
+     "type": "art"
+    },
+    "vo": "Aur 20 saal bahut lambi der hai. Itne saal bank ka paisa aapke paas rehta hai. Isliye kiraya bhi itna bada ho jaata hai, lagbhag udhaar jitna."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A tailor's shop with one identical shirt hanging for people of very different sizes, customers looking puzzled, warm shop light",
+     "prompt": "Inside a bank branch from a wide angle: depositors at one counter receiving money, staff working at desks, lights and computers humming, money flowing in and out like rivers, daytime",
      "type": "art"
     },
-    "vo": "Par ab sabse bada sawaal. Agar term plan lena hai, toh kitne ka? Kya har ghar ke liye ek hi number sahi hai? Jawab chaunkayega."
-   },
-   {
-    "facts_used": [],
-    "label": "Kitna cover chahiye aur kya karein",
-    "visual": {
-     "card": null,
-     "prompt": "Sunil standing in his small living room looking at WIFE, BETA and BETI doing homework at the table, a bank loan folder on the shelf, evening",
-     "type": "art"
-    },
-    "vo": "Sunil ne bhi yahi socha. Uske ghar mein Wife hai, Beta aur Beti hain, ghar ka loan hai. Agar woh na rahe, toh yeh sab kaun chalayega?"
+    "vo": "Toh kya yeh poora byaaj bank ka munafa hai? Nahi. Bank ko bhi FD waalon ko byaaj dena hota hai, aur staff aur branch ka kharcha bhi uthana hota hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A sturdy wooden bridge holding up a family walking across a river, the bridge pillars strong, children running ahead, bright day",
+     "prompt": "A very long paper receipt unrolling from a kitchen table across the floor and out the door of a modest flat, MUMMY in a saree holding one end in surprise, morning light",
      "type": "art"
     },
-    "vo": "Cover ka matlab hai, aapki kamai ki jagah lena. Itna paisa ki family ka ghar chale, bachchon ki padhai ho, aur udhaar bhi chuk jaaye."
+    "vo": "Lekin aapki jeb ke liye hisaab seedha hai. Ghar ka udhaar alag, aur upar se lagbhag utna hi byaaj. Yahi hai aapke ghar ka asli bill."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN and BHAI sitting on the floor of the new empty flat with cardboard boxes around, BEHEN gesturing at the walls as if measuring them, late afternoon sun through the window",
+     "type": "art"
+    },
+    "vo": "Behen ne yeh number dekha toh boli, theek hai, byaaj zyada hai. Par har EMI ke saath ghar thoda thoda apna toh hota jaata hai na?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A snail slowly painting a house wall in warm colour while most of the wall stays bank grey, a big clock ticking above, humorous illustrated panel, soft daylight",
+     "type": "art"
+    },
+    "vo": "Yahi sabse badi galatfehmi hai. Shuru ke saalon mein ghar bahut hi dheere apna hota hai. Kitna dheere? Par asli sawaal ab shuru hota hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Pehle saal ki EMI kahaan gayi",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Doosra sawaal. Pehle saalon mein aapki EMI ka kitna hissa ghar mein gaya, aur kitna bank ki jeb mein? Jawaab ek table mein chhupa hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A long printed table of rows and columns spread across a dining table, drawn as two coloured columns, one thick red and one thin green, with a magnifying glass resting on it, lamplight, no readable text",
+     "type": "art"
+    },
+    "vo": "Is table ko amortisation schedule kehte hain. Naam mushkil, kaam seedha. Har EMI mein kitna byaaj gaya, kitna asal udhaar kata, sab likha hota hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A dusty sealed envelope from the bank tucked deep in a drawer under old bills and warranty cards, a cobweb in the corner, dim cupboard light",
+     "type": "art"
+    },
+    "vo": "Bank yeh table deta hai, aksar app mein bhi mil jaata hai. Par zyaadatar log ise kabhi kholte hi nahi. Bhai ne bhi kabhi nahi khola tha."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Twelve monthly payment envelopes laid out in a neat row on a table, a hand gathering them into one fat bundle, a curious question-shaped shadow on the wall, morning light",
+     "type": "art"
+    },
+    "vo": "Ab Bank of Baroda ka ek 20 saal ka schedule dekho. Pehle saal poore saal ki EMI bhari gayi, kul 2,28,000 rupaye. Ab andaaza lagao, isme byaaj kitna tha?"
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The fat bundle of cash split by a knife: a huge chunk sliding into a bank's open bag, only a thin sliver falling into a small piggy bank shaped like a house, dramatic lighting",
+     "type": "art"
+    },
+    "vo": "Jawaab hai 1,82,261 rupaye. Yaani saal bhar ki EMI ka zyaadatar paisa seedha byaaj mein. Asal udhaar mein toh bahut thoda hi gaya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A jigsaw puzzle of a house on a table with only one tiny corner piece placed in warm colour and the rest still grey and missing, BHAI staring at it, evening",
+     "type": "art"
+    },
+    "vo": "Matlab poore saal EMI bharne ke baad bhi, udhaar lagbhag utna ka utna. Ghar ka bahut chhota sa hissa hi sach mein aapka hua."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A giant hungry monster made of loan papers sitting on a mountain of debt, gobbling most of a plate of coins, a small figure holding the plate, cartoon style, daylight",
+     "type": "art"
+    },
+    "vo": "Aisa kyun? Shuru mein udhaar sabse bada hota hai. Toh us par byaaj bhi sabse bada banta hai. Aur EMI ka bada hissa wahi kha jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The same debt mountain shown shrinking over many seasons, the monster growing smaller each time, trees changing from summer to winter to spring in the background",
+     "type": "art"
+    },
+    "vo": "Jaise jaise udhaar ghatta hai, byaaj bhi ghatta hai. Tab EMI ka zyada hissa asal udhaar mein jaane lagta hai. Lekin yeh bahut saalon baad hota hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A seesaw in a park: on the left end a heavy sack of interest pressing down at the start of a path, on the right end a light feather far down the path, golden afternoon",
+     "type": "art"
+    },
+    "vo": "Isi ko front-loaded byaaj kehte hain. Yaani bank apna kiraya shuru ke saalon mein hi zyada vasool karta hai. Aakhri saalon ki EMI zyaadatar asal chukaati hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI standing at the foot of a towering mountain shaped like a stack of paper, a small flag at the very bottom marking how far he has climbed, cold dawn light",
+     "type": "art"
+    },
+    "vo": "Ab samjhe, Bhai ko neend kyun nahi aayi? Kuch saal EMI bharne ke baad bhi, statement mein bacha hua udhaar pahaad jaisa dikh raha tha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A small paper boat carrying a model house floating on a choppy sea, waves rising and falling, a distant lighthouse shaped like a central bank building, stormy sky",
+     "type": "art"
+    },
+    "vo": "Aur ek khatra bhi tha. Bhai ka loan floating rate par tha. Floating rate yaani byaaj RBI ke faislon ke saath upar neeche hota rehta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The long road of payment stepping stones from before, now silently extending further over the horizon as new stones appear at the far end, BHAI looking back in alarm, dusk",
+     "type": "art"
+    },
+    "vo": "Byaaj badhe, toh bank aksar EMI nahi chhedta. Chupchaap loan ke saal badha deta hai. Aur lambe saal matlab, aur zyada mahine ka byaaj."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA in a kurta sitting thoughtfully in an armchair with FD receipts on his lap, looking out of a window where a narrow sunlit path leads out of a dark maze, evening",
+     "type": "art"
+    },
+    "vo": "Toh sirf EMI time par bharna kaafi nahi hai. Papa ki baat aadhi hi sahi thi. Lekin is jaal se nikalne ka ek seedha raasta hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY in a saree placing cups of chai on a small kitchen table, worried look, BEHEN across the table smiling confidently with a notebook, warm kitchen light at night",
+     "type": "art"
+    },
+    "vo": "Mummy ne chai rakhi aur poocha, toh kya hum 20 saal tak bas bank ka kiraya bharte rahenge? Behen muskurayi. Nahi Mummy, ek tareeka hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Ek extra EMI ka jaadu",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Teesra sawaal, aur sabse kaam ka. Agar saal mein sirf ek extra EMI bhar do, toh kya hoga? Jawaab sunkar aap shayad chaunk jaayenge."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A hand dropping an extra envelope of cash straight into the debt boulder, which visibly cracks and loses a big chunk, bright morning light, energetic composition",
+     "type": "art"
+    },
+    "vo": "Isse prepayment kehte hain. Yaani time se pehle, apni marzi se, loan mein extra paisa jama karna. Yeh paisa seedha asal udhaar ko kam karta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A row of dominoes shaped like months falling one after another, each one smaller than the last, a sparkle at the end of the row, playful light",
+     "type": "art"
+    },
+    "vo": "Aur yahi iska jaadu hai. Asal udhaar kam hua, toh agle mahine se us par byaaj bhi kam lagega. Har mahine, loan ke aakhri din tak."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A morning newspaper folded on a breakfast table next to a cup of tea, a pencil and a page of hand calculations beside it, soft window light, no readable text",
+     "type": "art"
+    },
+    "vo": "The Economic Times ne ek hisaab chhapa. 50 lakh ka loan, Bhai ke loan se thoda lamba. Bas saal mein ek extra EMI, aur kuch nahi badla."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A big heap of cash bundles being rescued from the bank's bag and carried back into a family home by a cheerful line of tiny helpers, bright daylight",
+     "type": "art"
+    },
+    "vo": "Report ke mutabik, byaaj mein lagbhag 18.31 lakh rupaye bache. Socho, saal mein sirf ek extra kisht, aur lakhon rupaye ki bachat."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The long road of payment stones now ending much earlier at a sunny garden gate, beyond it a school bag and a pair of reading glasses resting on a bench, golden light",
+     "type": "art"
+    },
+    "vo": "Aur loan bhi 5 saal se zyada pehle khatam. Yaani saalon tak koi EMI nahi. Woh paisa bachchon ki padhai ya budhape ke kaam aa sakta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A woodcutter's axe striking the thickest base of a huge tree trunk made of stacked papers, the tree starting to tilt, early morning forest light",
+     "type": "art"
+    },
+    "vo": "Itna bada fark kyun? Kyunki extra paisa shuru ke saalon mein jaata hai, jab udhaar sabse bada hai aur byaaj sabse zyada kaat raha hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The seesaw from before now flipped, a family sitting happily on the raised end while the sack of interest slides off the other end, bright park afternoon",
+     "type": "art"
+    },
+    "vo": "Wahi front-loading jo ab tak aapke khilaaf thi, ab aapke saath kaam karti hai. Jitna jaldi prepay karo, utna zyada byaaj bachta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI and BEHEN on a terrace at night with diyas glowing around them, BEHEN pointing to a small steel box where coins are being saved, festive Diwali lights",
+     "type": "art"
+    },
+    "vo": "Bhai ne Behen se poocha, par ek extra EMI aayegi kahaan se? Behen boli, Diwali ka bonus. Ya har mahine EMI ka thoda thoda hissa alag rakho."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A glass jar on a kitchen shelf filling up month by month, shown as twelve small snapshots around it, the final jar full and glowing, cosy home light",
+     "type": "art"
+    },
+    "vo": "Saal ke aakhir tak ek EMI jitna paisa jud jaata hai. Woh seedha bank mein, prepayment ke naam par. Bas itna sa kaam, saal mein ek baar."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA in a kurta frowning with folded arms in the living room, an imagined thundercloud above him raining tiny fine slips, BHAI listening, evening lamplight",
+     "type": "art"
+    },
+    "vo": "Par Papa ko darr tha. Bank waale penalty toh nahi lagayenge? Pehle paisa lautaoge, toh unka byaaj ka nuksaan hoga na? Sawaal sahi tha."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A grand central bank building with a giant shield standing in front of a small family home, the thundercloud of penalties bouncing off the shield, bright clearing sky",
+     "type": "art"
+    },
+    "vo": "Yahan RBI ka ek saaf niyam aapke kaam aata hai. Floating rate home loan par, banks prepayment ya loan jaldi band karne ki penalty nahi le sakte."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI standing tall at a bank counter placing an envelope down confidently, BANK UNCLE behind the counter nodding and accepting it, sunlight through the branch windows",
+     "type": "art"
+    },
+    "vo": "Yaani aapka loan floating rate par hai, toh extra paisa jama karne par bank koi penalty nahi maang sakta. Yeh aapka haq hai, bank ki meherbaani nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A hand writing a short letter with a fountain pen on a desk, beside it a pair of scissors cutting the long road of payment stones shorter, warm desk lamp, no readable text",
+     "type": "art"
+    },
+    "vo": "Ek baat dhyaan rakho. Prepay karte waqt bank ko likhkar bolo, EMI wahi rakho, loan ke saal kam karo. Byaaj ki zyaadatar bachat isi mein hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The paper mountain of debt from before with a large chunk now missing, BHAI noticeably higher up the slope planting a small flag, a faint shadow of a question looming over the peak, morning",
+     "type": "art"
+    },
+    "vo": "Bhai ne usi hafte bank jaakar pehli extra EMI jama ki. Statement mein pehli baar udhaar sach mein kam dikha. Par ruko, ek galti abhi baaki hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Galti, tax aur aapka plan",
+    "visual": {
+     "card": null,
+     "prompt": "chapter_turn",
+     "type": "avatar"
+    },
+    "vo": "Ab woh galti jo bahut log karte hain. Woh sochte hain, home loan par tax toh bachta hai, phir jaldi chukaane ki kya zaroorat?"
    },
    {
     "facts_used": [
@@ -738,168 +785,222 @@
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A tall stack of identical lunch tiffins piled high like a tower on a kitchen counter, a man looking up at the height in surprise",
+     "prompt": "A tax office counter drawn simply, an umbrella labelled with no text sheltering a small part of a cash pile from a rain of tax coins, office daylight",
      "type": "art"
     },
-    "vo": "Financial planners ek seedha thumb rule batate hain. Cover ho aapki saal bhar ki kamai ka 10 se 15 guna. Yeh ET ki report mein bataya gaya."
+    "vo": "Haan, tax ka fayda hai. Section 24(b) mein, apne rehne waale ghar ke loan ke byaaj par, saal mein 2,00,000 rupaye tak deduction milta hai."
    },
    {
     "facts_used": [
-     4
+     5
     ],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A row of different Indian homes on one street, a small hut, a flat, a bungalow, each with different families in front, sunset",
+     "prompt": "A shared basket on a table holding a model house, a savings passbook and an insurance folder squeezed together, the basket clearly full with no room left, soft light",
      "type": "art"
     },
-    "vo": "Par yeh sirf shuruaat hai, aakhri number nahi. Expert khud kehte hain, apne halaat dekh kar ise sudhaaro. Har ghar alag hai."
+    "vo": "Deduction yaani itni income par tax nahi lagta. Asal udhaar chukaane par Section 80C mein bhi fayda hai, PPF jaisi cheezon ke saath milaakar 1,50,000 rupaye tak."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A little girl with a school bag looking up a very long staircase that rises into clouds, her father holding her hand, morning",
+     "prompt": "Two doors side by side in a corridor, an old wooden door with a warm glow behind it and a sleek new door with an empty bare room behind it, a person pausing between them",
      "type": "art"
     },
-    "vo": "Agar ghar ka loan bada hai, toh cover badhao. Agar bachche chhote hain aur padhai ke saal lambe hain, toh bhi cover badhana padega."
+    "vo": "Par dhyaan do, yeh dono fayde purane tax system mein milte hain. Naye tax system mein apne rehne waale ghar par yeh deduction nahi milte."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A husband and wife both leaving home for work together in the morning, each carrying an office bag, kids waving from the door",
+     "prompt": "A bucket full of water with a big hole leaking into a bank drain, a small cup catching only a few drops labelled with no text, garden courtyard daylight",
      "type": "art"
     },
-    "vo": "Aur agar pehle se achhi bachat hai, ya ghar mein doosra kamaane wala bhi hai, toh thode kam cover se bhi kaam chal sakta hai."
+    "vo": "Aur sabse badi baat. Tax mein jo bachta hai, woh byaaj ka sirf ek hissa hai. Bank ko diya baaki byaaj, phir bhi aapki jeb se hi gaya."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A doctor's clinic with a man honestly filling a medical form, a stethoscope and a blood pressure machine on the desk, clean white room",
-     "type": "art"
+     "prompt": "explaining_front",
+     "type": "avatar"
     },
-    "vo": "Ab ek zaroori baat, jo claim ke waqt sabse kaam aati hai. Form bharte waqt sach likhiye. Bimari, smoking, sab kuch, bina kuch chhupaye."
+    "vo": "Toh aapke liye seedhi baat kya hai? Apna loan statement kholo. Dekho, is saal ki EMI mein kitna byaaj gaya, aur kitna asal udhaar kata."
    },
    {
     "facts_used": [
-     2
+     7
     ],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A solid iron safe with its door firmly shut and bolted, a calendar on the wall above it with pages flown away, quiet office",
+     "prompt": "A loan agreement booklet open on a desk with one clause highlighted by a yellow marker glow, a magnifying glass over it, BEHEN's hand holding the marker, afternoon light, no readable text",
      "type": "art"
     },
-    "vo": "Kyunki niyam ke mutabik, policy ke 3 saal poore hone ke baad, company aam taur par purani baaton par claim nahi rok sakti."
+    "vo": "Phir check karo, aapka loan floating rate par hai ya fixed. Floating hai, toh prepayment par penalty ka sawaal hi nahi. Shaq ho, toh bank se likhit mein poocho."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A sturdy small safe in a cupboard marked by a red cross symbol only, next to it a family's first aid box and a folder of papers, calm evening light",
+     "type": "art"
+    },
+    "vo": "Haan, prepay karne se pehle emergency ke liye kuch paisa alag zaroor rakho. Aur apne CA se tax ka hisaab bhi milaa lo, khaaskar purana ya naya system."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A row of different homes along a street at dusk, a hut, a small flat, a bungalow, each with one lit window where a family studies a long table of papers",
+     "type": "art"
+    },
+    "vo": "Yeh investment advice nahi hai. Har ghar ki zaroorat alag hoti hai. Par ek baat har ghar par lagti hai, apni EMI ka table samajhna."
    },
    {
     "facts_used": [
-     2
+     0
     ],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A crack running through a glass window pane in a family home, a woman standing behind it looking concerned, rainy day outside",
+     "prompt": "BHAI, his wife, MUMMY and PAPA on the balcony of their own flat at sunset, the paper mountain in the distance now much smaller, everyone relaxed, warm golden light",
      "type": "art"
     },
-    "vo": "Par shuru ke 3 saal mein, form mein chhupaayi gayi baat claim rok sakti hai. Isliye sach likhna hi family ki asli suraksha hai."
+    "vo": "Bhai ki kahani yaad karo. 50 lakh ka loan, aur bill lagbhag double. Par ab use pata hai, EMI sirf bharni nahi hoti, samajhni bhi padti hai."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "A man wearing a raincoat as a shirt and carrying a shirt as an umbrella in the rain, people around smiling, comic illustration",
-     "type": "art"
+     "prompt": "pointing_right",
+     "type": "avatar"
     },
-    "vo": "Ab woh galti jo sabse zyada hoti hai. Log insurance ko investment samajh lete hain, aur investment ko suraksha. Dono ulat jaate hain."
+    "vo": "Agle video mein ek aur bada sawaal. Ghar khareedna behtar hai, ya kiraye par rehkar paisa bachana? Jawaab shayad aapki soch badal de."
    },
    {
     "facts_used": [],
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "SG in his striped shirt standing in a sunny courtyard with three neat folders on a table in front of him, explaining calmly",
-     "type": "art"
+     "prompt": "end_smile",
+     "type": "avatar"
     },
-    "vo": "Toh seedhi baat. Pehle family ki suraksha, term plan se. Phir bachat, alag se, apne control mein. Aur purani policy ka hisaab, thande dimaag se."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A quiet study corner with a desk lamp, a notebook, a calculator and a cup of tea, a man thinking with his chin on his hand, evening",
-     "type": "art"
-    },
-    "vo": "Yeh investment advice nahi hai. Apni zaroorat aur halaat dekh kar hi faisla kijiye, aur zaroorat ho toh kisi registered advisor se baat kijiye."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "The same steel almirah drawer from the opening, now open in daylight, a hand pulling out a policy paper with determination",
-     "type": "art"
-    },
-    "vo": "Yaad hai shuruaat ka sawaal? Aapki policy family ko kitna degi? Ab aap jaante ho, jawab policy ke sum assured mein likha hai. Aaj hi dekhiye."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "A hospital billing counter at night, a worried man holding a long bill, a receptionist shaking her head, cold blue lighting",
-     "type": "art"
-    },
-    "vo": "Agle video mein health insurance ki baat. Hospital ka bill aata hai, aur policy kehti hai, yeh cover nahi hai. Aisa kyun hota hai?"
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "SG smiling warmly on a rooftop at sunset, the city lights starting to glow behind him, a cup of chai in his hand",
-     "type": "art"
-    },
-    "vo": "Par pehle bataiye, aapke ghar mein kaunsi policy hai, term plan ya paisa wapas wali? Comment mein bas ek word likhiye, main har jawab padhunga."
+    "vo": "Aur ab aapse ek aasaan sawaal. Aapka home loan floating rate par hai ya fixed? Comments mein likho, floating ya fixed. Main padhunga."
    }
   ],
   "thumbnail": {
-   "name": "TERM PLAN",
-   "name_hi": "टर्म प्लान",
-   "scene": "LEFT: a fat pile of old insurance policy papers in an open steel almirah yielding only a tiny heap of coins; RIGHT: a giant steel umbrella shielding a small family home from a violent storm.",
+   "name": "HOME LOAN",
+   "name_hi": "होम लोन",
+   "scene": "LEFT: a young family receiving shiny keys outside a new flat with one small stack of cash; RIGHT: the same flat years later dwarfed by a towering mountain of cash bundles pouring into an open bank vault",
    "words": [
-    "4-6%",
-    "TRAP?"
+    "₹95 LAKH",
+    "TRAP"
    ],
    "words_hi": [
-    "4-6%",
-    "ट्रैप?"
+    "₹95 लाख",
+    "ट्रैप"
    ]
   },
-  "title": "1 crore ka term plan ya 'paisa wapas' policy: ek hi premium, do alag nateeje"
+  "title": "50 lakh ka home loan, bill *double* kyun? 🏠"
  },
- "status": "written",
- "timings": [],
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  14.49,
+  26.38,
+  39.75,
+  50.28,
+  61.57,
+  72.22,
+  83.71,
+  97.08,
+  108.97,
+  118.46,
+  129.03,
+  140.68,
+  150.97,
+  163.82,
+  176.59,
+  191.36,
+  202.29,
+  213.5,
+  223.63,
+  234.76,
+  245.65,
+  256.3,
+  267.75,
+  281.0,
+  292.29,
+  301.82,
+  316.35,
+  330.08,
+  340.49,
+  349.74,
+  359.99,
+  372.84,
+  383.93,
+  393.7,
+  404.87,
+  414.32,
+  426.17,
+  438.38,
+  451.35,
+  463.28,
+  475.49,
+  486.3,
+  498.11,
+  509.04,
+  518.01,
+  529.54,
+  541.19,
+  550.36,
+  561.13,
+  572.18,
+  582.03,
+  594.36,
+  602.97,
+  613.82,
+  626.35,
+  634.8,
+  643.41,
+  654.02,
+  663.91,
+  674.64,
+  685.05,
+  696.86,
+  706.43
+ ],
  "topic": {
   "hooks": [
-   "Paisa wapas wali policy mein asli return kitna hai?",
-   "Term plan mein kuch wapas nahi milta, phir bhi sahi kyun?",
-   "Kitne ka cover lena chahiye?"
+   "50 lakh ka ghar, 1 crore kyun dete ho?",
+   "Pehli 5 saal ki EMI mein ghar ka kitna hissa aapka hua?",
+   "Saal mein ek extra EMI se kitne saal bachte hain?"
   ],
-  "id": "term-vs-endowment",
-  "patch_tries": 1,
-  "summary": "Term insurance against endowment and money-back policies: what the family gets if the earner dies, what the policyholder gets at maturity, the real yearly return of a traditional policy, surrender value in the early years. How much cover a family needs.",
+  "id": "home-loan-double",
+  "intro": {
+   "aspect": "16:9",
+   "bridge": "Baaki paisa kahan gaya?",
+   "closing": "Chaliye, hisaab dekhte hain.",
+   "prompt": "16:9 landscape, 1920x1080, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: inside a busy bank branch, customers at the counters and a short queue moving behind, daylight through tall windows. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Framing: medium shot from the waist up, his whole head and both shoulders inside the frame with clear space above his hair and on both sides, and he stays framed like this to the end; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] standing relaxed and upright, shoulders open, wearing a dark green blazer over a cream shirt. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: a confident, charismatic documentary presenter. Calm, natural face with a pleasant, warm smile, relaxed eyebrows, eyes soft and focused on the viewer. On \"lagbhag ek crore ka\" the eyes narrow a little with intrigue and the head tilts slightly, as if sharing a secret. On \"Chaliye, hisaab dekhte hain\" a warm, confident smile and one small nod. Natural blinking, subtle head movement. No exaggerated expressions: no wide eyes, no raised eyebrows, no open-mouth surprise, no big grin, no frown; never sad, gloomy, worried or tired. Voice: warm, clear, measured, with quiet intensity; a short pause before \"lagbhag ek crore ka\". Hands: one slow, small gesture toward the scene behind him on the first line, then hands rest; no fast or large arm movements. Camera: eye level, a very slight slow push-in, slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1920x1080.",
+   "question": "Pachaas lakh ka ghar, bill lagbhag ek crore ka.",
+   "text": "Pachaas lakh ka ghar, bill lagbhag ek crore ka. Baaki paisa kahan gaya? Chaliye, hisaab dekhte hain.",
+   "words": 17
+  },
+  "summary": "A family buys a flat on a 20-year home loan; the amortisation schedule shows interest front-loaded, the total paid roughly double the price, and what prepaying one extra EMI a year does. Explain EMI, principal, interest, prepayment, floating rate.",
   "target_minutes": 12,
-  "theme": "insurance",
-  "title": "1 crore ka term plan ya 'paisa wapas' policy: ek hi premium, do alag nateeje"
+  "theme": "loan",
+  "title": "50 lakh ka ghar, 1 crore ka bill: 20 saal ki EMI mein bank kitna kamata hai",
+  "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-11-11T10:46:03+00:00",
+ "updated": "2026-11-11T09:45:45+00:00",
  "writer": "claude"
 }
