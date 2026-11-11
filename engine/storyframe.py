@@ -289,7 +289,7 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
         if full and not short and Path(panel).suffix.lower() != ".mp4":      # a long: a strong pan or zoom, a different path each scene
             cam = camera_expr(CAMERA_PATHS[i % len(CAMERA_PATHS)], max(1, int(round(dur * FPS))), 1 if (i // len(CAMERA_PATHS)) % 2 == 0 else -1)
         clips.append(scene(panel, dur, size, out_dir / f"scene{i:02d}.mp4", title_png, overlays, chip=chip, logo_png=badge,
-                           watermark_png=None if full else big_badge, punch=(i == 0 and short), shade_png=shade, full=full, camera=cam,
+                           watermark_png=big_badge, punch=(i == 0 and short), shade_png=shade, full=full, camera=cam,
                            shade_y=geo["shade_y"] if shade else None, top=geo["top"], side=geo["side"]))
     if full and short:                                               # the pictures that move behind the founder in his intro (engine/intro.py)
         intro_background(piece, panels, size, out_dir, title_png, shade, badge, pills, depths)

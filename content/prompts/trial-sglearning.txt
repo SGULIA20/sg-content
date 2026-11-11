@@ -1,9 +1,5 @@
 
 
-NEW OPENING STYLE (these rules OVERRIDE the Short rules above wherever they differ; founder, 10 Nov 2026: the same new style as SG-MYTH-WORLD):
-- LENGTH: 7 to 9 scenes, 75 to 110 words of voice in all, the disclaimer line included (about 30 to 40 seconds; the founder's 10-second intro comes on top). ONE clear point.
-- SCENE 1 IS THE PAYOFF. The `hook` and the first spoken line state the most striking thing in plain words, with its number when there is one, as a statement or a "what if" the first picture shows ("Limit thi 15 crore, bank ne de diye 1,200 crore."; "Share kabhi kharida hi nahi, phir bhi paisa doob gaya."), at most 12 words. Never a bare question with the answer later, never a scene-setting line.
-- SCENE 3 (about second 8 to 10) is a PIVOT LINE: one short question that turns it to the viewer ("Toh aapka paisa kahan hai?", "Toh galti kiski thi?").
-- EVERY scene's `visual.prompt` describes one REALISTIC, photographic-looking view of real Indian life (a bank counter, a kirana shop, a family at the dining table, a crowded trading street, a hand holding a passbook, a locked shutter) with natural light: say "photorealistic" and describe the place, the people and the moment. No cartoon, comic or drawing words, no named cast characters, no text, numbers, screens, charts or logos in the picture.
-- Every scene that states a fact keeps its `facts_used`, as before: the picture shows a small tag naming the source, so use the sourced numbers exactly.
-- LAST SCENE: the send line as before (it must contain "bhejo" and name a person, at most 14 words), written so it also leads back to the hook. Keep `end_question` and the spoken disclaimer as before.
+REALISTIC PICTURES (founder, 11 Nov 2026: the scripts stay exactly as the rules above say; only the pictures change):
+- EVERY scene's `visual.prompt` describes one REALISTIC, photographic-looking view of real Indian life (a bank counter, a kirana shop, a family at the dining table, a crowded street, a hand holding a passbook, a locked shutter) with natural light: say "photorealistic" and describe the place, the Indian people and the moment. No cartoon, comic or drawing words, no named cast characters, no drawn arrows, no text, numbers, screens, stock boards, charts or logos in the picture.
+- Length, number of scenes, the hook, the beats, `facts_used`, the disclaimer and the send line all stay as the rules above say.

@@ -1,9 +1,7 @@
 
 
-NEW OPENING STYLE (a test on some Shorts; these rules OVERRIDE the Short rules above wherever they differ; founder, 9 Nov 2026):
-- LENGTH: 7 to 9 scenes, 70 to 100 words of voice in all (about 30 to 38 seconds; the founder's 10-second intro comes on top). Tell fewer beats, each tighter: the place and the payoff, the legend (label it), the find (label it), the doubt (label it), the twist, then the send line.
-- SCENE 1 IS THE PAYOFF. The `hook` and the first spoken line state the most striking thing the viewer will SEE, as a command or a "what if" whose answer is the first picture ("Samundar hata do, to Ram Setu aisa dikhta hai."; "Taj Mahal se 600 saal pehle..."), at most 12 words. A famous anchor (a monument everyone knows) is welcome. Never a bare question with the answer later.
-- EVERY scene's `visual.prompt` describes one REALISTIC, photographic-looking view (an aerial view, an underwater view, a wide landscape, a close view of stone or a manuscript, people seen as in a documentary photograph) with natural light: say "photorealistic" and describe the place and the moment; no cartoon, comic or drawing words. Deities as before: from behind, at a distance, or as a statue or painting in the scene.
-- SCENE 3 (about second 8 to 10) is a PIVOT LINE: one short question that opens the mystery ("Toh patthar upar pahuncha kaise?", "Toh kya yeh sirf kahani hai?").
-- Every scene that states a fact keeps its `label` and its `facts_used`, as before: the picture shows a small tag with the kind of evidence and the source, so name sources honestly. Legend stays legend.
-- LAST SCENE: the send line as before (it must contain "bhejo" and name a person, at most 14 words), written so it also leads back to the hook, for example by ending on the word that starts the first line. Keep `end_question` as before.
+REALISTIC PICTURES (founder, 11 Nov 2026: the scripts stay exactly as the rules above say; only the pictures change):
+- EVERY scene's `visual.prompt` describes one REALISTIC, photographic-looking view (an aerial view, an underwater view, a wide landscape, a close view of stone or a manuscript, people seen as in a documentary photograph) with natural light: say "photorealistic" and describe the place and the moment; no cartoon, comic or drawing words.
+- A scene set in the past is ancient India: Indian people in dhotis, sarees and angavastram, warriors with bows, spears and bronze or leather armour, thatched Indian huts, carved stone temples, oil lamps; never European clothes, gowns, tunics, knights, castles or anything medieval European.
+- Deities as before: from behind, at a distance, or as a statue or painting in the scene. No text, numbers, screens or logos in the picture.
+- Length, number of scenes, the hook, the beats, labels, `facts_used` and the send line all stay as the rules above say.

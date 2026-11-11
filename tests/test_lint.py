@@ -255,3 +255,10 @@ def test_money_jargon_must_be_said_in_plain_words():
     assert hits and "free cash flow" in hits[0] and "leverage" in hits[0] and "liquidated" in hits[0]
     p.script = {"scenes": [{"vo": "Kharche ke baad haath mein paisa nahi bacha; udhaar wale daanv zabardasti bike."}]}
     assert lint.jargon_hits(p) == []
+
+
+def test_a_new_style_short_keeps_its_channels_full_script_length():
+    """Founder, 11 Nov 2026: the shorter scripts 'don't explain anything'; only pictures and movement were to change."""
+    import inspect
+    from engine import lint
+    assert "opening.words" not in inspect.getsource(lint)

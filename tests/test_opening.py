@@ -45,7 +45,12 @@ def test_the_full_screen_frame_tags_a_realistic_picture_and_puts_the_pill_under_
 
 def test_trial_shorts_use_the_35_to_45_second_length_and_the_writer_gets_the_new_rules():
     assert opening.WORDS == (70, 100) and opening.words('arthvan') == (70, 100) and opening.words('sglearning') == (75, 110)
-    assert "NEW OPENING STYLE" in opening.addendum() and "PAYOFF" in opening.addendum() and "PIVOT" in opening.addendum()
+    # founder, 11 Nov 2026: "do not compromise with scripts": the writer is told about the pictures only
+    for ch in ("arthvan", "sglearning"):
+        text = opening.addendum(ch)
+        assert "REALISTIC PICTURES" in text and "stay as the rules above say" in text
+        assert "PAYOFF" not in text and "PIVOT" not in text and "LENGTH:" not in text
+    assert "PAYOFF" not in opening.addendum("arthvan", kind="long")
 
 
 def test_the_tools_are_installed_only_while_the_test_window_is_being_produced(tmp_path):
@@ -63,7 +68,7 @@ def test_both_channels_can_run_the_new_style_each_from_its_own_day_with_no_end_d
     assert not opening.is_trial(_piece("2026-11-16", ch="sglearning"), root) and opening.is_trial(_piece("2026-11-17", ch="sglearning"), root)
     assert not opening.is_trial(_piece("2026-11-18", kind="long", ch="sglearning"), root)
     assert opening.is_hero_scene(_piece("2026-11-17", ch="sglearning"), 7, root) and opening.active(date(2027, 1, 5), root)
-    assert "NEW OPENING STYLE" in opening.addendum("sglearning") and "disclaimer" in opening.addendum("sglearning")
+    assert "REALISTIC PICTURES" in opening.addendum("sglearning") and "disclaimer" in opening.addendum("sglearning")
 
 
 def test_a_money_fact_gets_a_pill_from_the_facts_own_label():

@@ -296,13 +296,15 @@ STANDARD_PROMPT = True          # founder, 10 Nov 2026: "I want background like 
 FACE = ("Face and delivery: a confident, charismatic documentary presenter. Calm, natural face with {base}, relaxed eyebrows, eyes soft "
         "and focused on the viewer. On \"{key}\" the eyes narrow a little with intrigue and the head tilts slightly, as if sharing a secret. On "
         "\"{closing}\" {close}. Natural blinking, subtle head movement. No exaggerated expressions: no wide eyes, no "
-        "raised eyebrows, no open-mouth surprise, no big grin, no frown. Voice: warm, clear, measured, with quiet intensity; a short pause before \"{key}\"")
+        "raised eyebrows, no open-mouth surprise, no big grin, no frown; never sad, gloomy, worried or tired. Voice: warm, clear, measured, with quiet intensity; a short pause before \"{key}\"")
 # founder's clips, 10 Nov 2026: the automatic prompt put "a warm, assured smile" on a line about 50,000 people losing their savings and on
 # a line about a killing. The tone follows the words now.
 GRAVE = re.compile(r"\b(maar\w*|mara|mare|maut|hatya|khoon|qatl|katl|yudh|jung|shraap|shrap|qaid|kaid|jail|doob\w*|dooba|loot\w*|fraud|scam|ghotala|"
                    r"dhokha|thagi|crash|barbaad|tabah|bankrupt|diwaliya|nuksaan|nuksan|gawa\w*|kho diya|jal\w*|bhasm|dead|death|kill\w*|died|lost)\b", re.I)
-TONE = {"warm": ("a slight knowing smile", "a warm, assured smile and one small nod"),
-        "grave": ("a serious, steady look", "a steady, concerned look and one slow nod; no smile on this line")}
+# founder, 11 Nov 2026: "founder sad face still coming": he is never sad, gloomy or worried on camera. A grim line gets a calm, composed,
+# friendly face (no grin on it), every other line a warm smile.
+TONE = {"warm": ("a pleasant, warm smile", "a warm, confident smile and one small nod"),
+        "grave": ("a pleasant, composed, friendly face", "a calm, reassuring look with a hint of a smile and one small nod")}
 
 
 def tone_for(text: str) -> str:
@@ -356,6 +358,7 @@ def story_prompt(piece, p: dict) -> str:
     subject, framed from the waist up with room above his head (the old clips were zoomed and cut), a calm presenter's face, empty hands,
     no watermark (the frame adds the badge) and a hard rule against the floating screen the avatar tool likes to draw."""
     short = piece.kind == "short"
+    handle = "@SGLearning" if piece.channel == "sglearning" else "@SGMythWorld"
     size = "9:16 vertical, 1080x1920" if short else "16:9 landscape, 1920x1080"
     setting = _scene_setting(piece) or _moving(p.get("setting") or setting_for(piece, p))
     closing = (p.get("closing") or CLOSING).rstrip(".")
@@ -371,7 +374,7 @@ def story_prompt(piece, p: dict) -> str:
             f"to the words, steady eye contact with the lens. {face}. "
             "Hands: one slow, small gesture toward the scene behind him on the first line, then hands rest; no fast or large arm movements. "
             "Camera: eye level, a very slight slow push-in, slight handheld feel. "
-            "Empty hands, no prop. No watermark, no logo, no captions, no subtitles, no on-screen text of any kind. "
+            f"Empty hands, no prop. {handle} watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. "
             "No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. "
             f"Export at {('1080x1920' if short else '1920x1080')}.")
 
