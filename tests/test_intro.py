@@ -587,3 +587,18 @@ def test_the_face_follows_the_words_and_a_myth_scene_is_ancient_india():
     light = _piece("short", "sglearning"); light.script["hook"] = "Ek chai ke daam mein SIP shuru ho sakti hai?"
     prompt = intro.plan(light, ask=lambda _p: "")["prompt"]
     assert "warm, confident smile" in prompt and "pleasant, warm smile" in prompt and "European knights" not in prompt
+
+
+def test_blazers_on_learning_and_traditional_clothes_on_myth_world_never_the_same_two_days_running():
+    """Founder, 11 Nov 2026: "blazers every time on SG Learning reels and traditional on SG-MYTH"."""
+    from datetime import date, timedelta
+    seen = {"sglearning": [], "arthvan": []}
+    for n in range(8):
+        for ch in seen:
+            p = _piece("short", ch, day=date(2026, 11, 17) + timedelta(days=n))
+            seen[ch].append(intro.outfit_for(p))
+            assert f"wearing {seen[ch][-1]}" in intro.plan(p, ask=lambda _p: "")["prompt"]
+    assert all("blazer" in o for o in seen["sglearning"])
+    assert all(any(w in o for w in ("kurta", "bandhgala")) for o in seen["arthvan"])
+    for ch in seen:
+        assert all(a != b for a, b in zip(seen[ch], seen[ch][1:]))

@@ -352,6 +352,20 @@ def _key_phrase(question: str) -> str:
     return " ".join(words[-4:])
 
 
+# founder, 11 Nov 2026: "I want blazers every time on SG Learning reels and traditional on SG-MYTH"
+BLAZERS = ["a navy blazer over a white shirt, no tie", "a charcoal grey blazer over a light blue shirt", "a beige linen blazer over a white tee",
+           "a dark green blazer over a cream shirt", "a white blazer over a white tee", "a maroon blazer over a black tee",
+           "a light grey blazer over a navy polo", "a black blazer over a white shirt, top button open", "a tan blazer over a pale pink shirt",
+           "a royal blue blazer over a white shirt"]
+TRADITIONAL = ["a mustard kurta", "a cream silk kurta with a maroon Nehru jacket", "a white kurta with a saffron stole", "a deep blue kurta with a beige Nehru jacket",
+               "an ivory bandhgala jacket", "a maroon kurta with a gold-bordered stole", "an olive green kurta", "a white kurta with a black Nehru jacket",
+               "a rust-orange kurta with a cream stole", "a navy bandhgala jacket with a white pocket square"]
+
+
+def outfit_for(piece) -> str:
+    return _pick(piece, BLAZERS if piece.channel == "sglearning" else TRADITIONAL, 1)
+
+
 def story_prompt(piece, p: dict) -> str:
     """The avatar prompt, both channels, Shorts and longs (founder, 10 Nov 2026, after the Hanuman intro: "in prompt only we may set
     background", "always moving background", and a face that is not over-acted): he stands in a real, moving place that matches the
@@ -370,7 +384,7 @@ def story_prompt(piece, p: dict) -> str:
             "Framing: medium shot from the waist up, his whole head and both shoulders inside the frame with clear space above his hair and on "
             "both sides, and he stays framed like this to the end; do not crop the top of his head. "
             "Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. "
-            f"SG [locked] standing relaxed and upright, shoulders open, wearing {_pick(piece, OUTFITS, 1)}. Speaks from the first frame, mouth matched "
+            f"SG [locked] standing relaxed and upright, shoulders open, wearing {outfit_for(piece)}. Speaks from the first frame, mouth matched "
             f"to the words, steady eye contact with the lens. {face}. "
             "Hands: one slow, small gesture toward the scene behind him on the first line, then hands rest; no fast or large arm movements. "
             "Camera: eye level, a very slight slow push-in, slight handheld feel. "
