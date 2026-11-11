@@ -135,7 +135,9 @@
    "voice": 12
   },
   "drafts": 1,
+  "ig_reel_id": "18198455263398856",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-11-arthvan-short.mp4",
    "clip_seconds": 10.03,
@@ -145,6 +147,8 @@
   "intro_sent": "2026-11-04T21:17:47+00:00",
   "out_sha": "a26545a9cb50a63c620da8521ce5fa2503d6b610",
   "out_sha_intro": true,
+  "threads_id": "18038304068691031",
+  "threads_poll_id": "18482732587112173",
   "yt_duplicates_removed": [
    "ZTFyzBSf7mk"
   ],
@@ -353,7 +357,7 @@
   },
   "title": "Tirupati ke *Balaji* ka Kubera wala karza 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   4.53,
@@ -400,6 +404,6 @@
   "title_hi": "Tirupati, duniya ka sabse ameer mandir",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-11-05T16:32:23+00:00",
+ "updated": "2026-11-11T16:09:21+00:00",
  "writer": "claude"
 }
