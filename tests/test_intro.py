@@ -602,3 +602,11 @@ def test_blazers_on_learning_and_traditional_clothes_on_myth_world_never_the_sam
     assert all(any(w in o for w in ("kurta", "bandhgala")) for o in seen["arthvan"])
     for ch in seen:
         assert all(a != b for a, b in zip(seen[ch], seen[ch][1:]))
+
+
+def test_an_exact_big_number_is_rounded_for_the_founder_to_say():
+    assert intro.sayable(9593875) == "lagbhag chhiyaanve lakh"
+    assert intro.sayable(5000000) == intro.spell_number(5000000) and intro.sayable(829) == intro.spell_number(829)
+    assert intro.sayable(48249) == "lagbhag " + intro.spell_number(48000)
+    assert intro.sayable(12345678).startswith("lagbhag ek crore")
+    assert "tiraanve" not in intro.spoken("50,00,000 ka home loan, aur bank ko wapas 95,93,875 rupaye?")

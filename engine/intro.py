@@ -64,9 +64,20 @@ def spell_number(n: int) -> str:
     return " ".join(parts)
 
 
+def sayable(n: int) -> str:
+    """A number the founder can say in one breath (founder, 11 Nov 2026, on "pachaanve lakh tiraanve hazaar aath sau pachhattar rupaye":
+    "change this"): an exact figure of more than four words is rounded and said as "lagbhag ...": to the lakh from one lakh up (the ten lakh from a crore up), to
+    the thousand from ten thousand up. A figure that is already round, or small, is said as it is. The video itself shows the exact figure."""
+    exact = spell_number(n)
+    step = 1000000 if n >= 10000000 else 100000 if n >= 100000 else 1000 if n >= 10000 else 1
+    if n % step == 0 or len(exact.split()) <= 4:                     # "ek lakh pachaas hazaar" is easy to say as it is
+        return exact
+    return "lagbhag " + spell_number(int(n / step + 0.5) * step)
+
+
 def spoken(text: str) -> str:
     """Numbers written with commas (25,000 or 99,99,999) become words, so the avatar says them right; plain digits stay."""
-    return re.sub(r"\b\d{1,3}(?:,\d{2,3})+\b", lambda m: spell_number(int(m.group(0).replace(",", ""))), text)
+    return re.sub(r"\b\d{1,3}(?:,\d{2,3})+\b", lambda m: sayable(int(m.group(0).replace(",", ""))), text)
 
 
 def closing_for(piece) -> str:
