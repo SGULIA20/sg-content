@@ -139,106 +139,106 @@
   },
   "cards": [],
   "carousel": false,
-  "end_question": "Us dost ko bhejo jo girte market mein SIP band kar deta hai.",
-  "hook": "Sensex 60.9 percent gira, phir bhi SIP chalane wale jeet gaye.",
+  "end_question": "Us dost ko bhejo jo market girte hi SIP band kar deta hai.",
+  "hook": "Sensex aadha ho gaya, phir bhi SIP wale kaise jeete?",
   "scenes": [
    {
     "facts_used": [
      2
     ],
-    "label": null,
+    "label": "hook",
     "visual": {
      "card": null,
-     "prompt": "Photorealistic wide view of a crowded Mumbai stock exchange street at dusk in 2008, worried office workers in shirts standing in small groups, some holding newspapers, tense faces, warm streetlight and grey evening sky, no text or logos visible.",
+     "prompt": "Photorealistic view of a worried crowd of Indian office workers on a busy Mumbai street at dusk in 2008, reading evening newspapers at a stall, buses and taxis passing behind, grey evening sky, no readable text",
      "type": "art"
     },
-    "vo": "Sensex 60.9 percent gira, phir bhi SIP chalane wale jeet gaye."
+    "vo": "Sensex aadha ho gaya, phir bhi SIP wale kaise jeete?"
    },
    {
     "facts_used": [
      0
     ],
-    "label": null,
+    "label": "setup",
     "visual": {
      "card": null,
-     "prompt": "Photorealistic Indian middle-class family at a dining table at night, a husband in office clothes and his wife talking seriously over dinner, papers and a passbook beside the plates, a single ceiling light, worried mood, no text or screens.",
+     "prompt": "Photorealistic Indian middle-class living room in 2008, a family of four watching the evening news with tense faces, tea cups untouched on the table, warm lamp light, the television seen only from behind, no readable text",
      "type": "art"
     },
-    "vo": "2008 mein Amreeka ka bank Lehman dooba, aur darr India aaya. Naukri ka darr, ghar mein SIP band karne ki baat."
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "Photorealistic close view of a man's hand hovering over a printed bank mandate form with a pen, on a wooden table near a window, soft morning light, a moment of hesitation, no readable text.",
-     "type": "art"
-    },
-    "vo": "Aap hote, toh SIP band karte?"
-   },
-   {
-    "facts_used": [],
-    "label": null,
-    "visual": {
-     "card": null,
-     "prompt": "Photorealistic busy Indian bank branch counter in the afternoon, several customers queuing with forms in hand, an anxious young couple at the front speaking to the clerk, fluorescent light, no text or logos.",
-     "type": "art"
-    },
-    "vo": "Bahut logon ne SIP rok di. Girte market mein paisa kyun daalein?"
+    "vo": "2008. Amreeka ka bank Lehman dooba, aur darr India tak aaya."
    },
    {
     "facts_used": [
-     3
+     1
     ],
-    "label": null,
+    "label": "choice",
     "visual": {
      "card": null,
-     "prompt": "Photorealistic view of a near-empty corporate office floor in Mumbai at evening, rows of desks, one man packing a briefcase and looking out a tall glass window at the city, gloomy blue light, no screens or text visible.",
+     "prompt": "Photorealistic middle-aged Indian man in a shirt at a bank counter signing a form to stop his monthly investment, a bank clerk waiting, a queue behind him, harsh midday light through the window, no readable text",
      "type": "art"
     },
-    "vo": "Videshi investors bhi paisa nikaal rahe the, toh darr sahi laga."
+    "vo": "Sensex 21,000 se girkar aadhe se bhi neeche aa gaya. Sharma ji ne SIP band kar di."
    },
    {
     "facts_used": [],
-    "label": null,
+    "label": "choice",
     "visual": {
      "card": null,
-     "prompt": "Photorealistic Indian vegetable market in morning light, a shopper filling a cloth bag with heaps of vegetables at a stall with a cheerful vendor, sense of a bargain, natural sunlight, no text or price boards.",
+     "prompt": "Photorealistic close view of the same Indian man at home at night putting his cheque book away in a steel almirah and locking it, relief and worry on his face, dim tube light, no readable text",
      "type": "art"
     },
-    "vo": "Jinki SIP chalti rahi, unhe sasti keemat par zyada hisse mile."
+    "vo": "Soch seedhi thi: girte market mein paisa kyun daalna?"
+   },
+   {
+    "facts_used": [],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian man in his forties calmly posting an envelope into a red post box on a quiet residential street in the morning, a scooter parked nearby, soft sunlight, no readable text",
+     "type": "art"
+    },
+    "vo": "Padosi Mehta ji ne SIP chalu rakhi. Kisht wahi, par saste daam par zyada hisse mile."
+   },
+   {
+    "facts_used": [],
+    "label": "explain",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian vegetable market stall with a shopkeeper filling a customer's cloth bag to the brim for the same few notes, heaps of tomatoes and onions, a busy crowd behind, bright morning light, no readable text",
+     "type": "art"
+    },
+    "vo": "SIP yaani har mahine tay rakam. Daam gire, toh usi rakam mein zyada maal."
    },
    {
     "facts_used": [
      6
     ],
-    "label": null,
+    "label": "cost",
     "visual": {
      "card": null,
-     "prompt": "Photorealistic Mumbai skyline at sunrise seen from Marine Drive, joggers and a smiling middle-aged man walking by the sea, golden light breaking through clouds, a mood of recovery and relief, no text.",
+     "prompt": "Photorealistic Indian man in his forties smiling quietly on his balcony at sunrise holding a folded statement, potted plants and the city waking up behind him, golden light, no readable text",
      "type": "art"
     },
-    "vo": "Phir 2009 mein Nifty 75.76 percent chadha, wahi hisse chamak gaye."
+    "vo": "Phir 2009 mein Nifty 75.76 percent chadha. Mehta ji ke saste hisse chamak uthe."
    },
    {
     "facts_used": [],
-    "label": null,
+    "label": "what to do",
     "visual": {
      "card": null,
-     "prompt": "Photorealistic close-up of an elderly man's hands neatly stacking a thick folder of old investment statements on a home desk, a cup of chai beside it, calm late-afternoon light through a curtain, no readable text.",
+     "prompt": "Photorealistic two Indian neighbours talking over a low compound wall in the evening, one looking thoughtful and regretful, the other relaxed with a cup of tea, children playing cricket in the lane behind, warm light, no readable text",
      "type": "art"
     },
-    "vo": "Girta market dushman nahi, sale tha. Yeh investment advice nahi hai."
+    "vo": "Sharma ji laute, par mehnge daam par. Girta market dushman nahi, sale tha. Yeh investment advice nahi hai."
    },
    {
     "facts_used": [],
-    "label": null,
+    "label": "send",
     "visual": {
      "card": null,
-     "prompt": "Photorealistic two young Indian friends sitting at a roadside chai stall in the evening, one explaining something earnestly while the other listens thoughtfully, warm bulb light, steam rising from glasses, no text.",
+     "prompt": "Photorealistic two young Indian friends at a roadside chai stall in the evening, one showing concern and about to walk away, the other holding him back with a smile, traffic passing behind, warm orange light, no readable text",
      "type": "art"
     },
-    "vo": "Us dost ko bhejo jo girte market mein SIP band kar deta hai."
+    "vo": "Us dost ko bhejo jo market girte hi SIP band kar deta hai."
    }
   ],
   "thumbnail": {
@@ -254,7 +254,7 @@
     "प्रूफ"
    ]
   },
-  "title": "2008 crash mein *SIP* chalu rakhi toh? 📈"
+  "title": "Sensex aadha, phir bhi *SIP* wale jeete? 📈"
  },
  "status": "intro-wait",
  "timings": [
@@ -281,10 +281,10 @@
    "aspect": "9:16",
    "bridge": "",
    "closing": "Ruko mat, ye dekhna zaroori hai!",
-   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: wide view of a crowded Mumbai stock exchange street at dusk in 2008, worried office workers in shirts standing in small groups, some holding newspapers, tense faces, warm streetlight and grey evening sky. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Framing: medium shot from the waist up, his whole head and both shoulders inside the frame with clear space above his hair and on both sides, and he stays framed like this to the end; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] standing relaxed and upright, shoulders open, wearing a charcoal kurta with a white pocket square. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: a confident, charismatic documentary presenter. Calm, natural face with a slight knowing smile, relaxed eyebrows, eyes soft and focused on the viewer. On \"chalane wale jeet gaye\" the eyes narrow a little with intrigue and the head tilts slightly, as if sharing a secret. On \"Ruko mat, ye dekhna zaroori hai!\" a warm, assured smile and one small nod. Natural blinking, subtle head movement. No exaggerated expressions: no wide eyes, no raised eyebrows, no open-mouth surprise, no big grin, no frown. Voice: warm, clear, measured, with quiet intensity; a short pause before \"chalane wale jeet gaye\". Hands: one slow, small gesture toward the scene behind him on the first line, then hands rest; no fast or large arm movements. Camera: eye level, a very slight slow push-in, slight handheld feel. Empty hands, no prop. No watermark, no logo, no captions, no subtitles, no on-screen text of any kind. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
-   "question": "Sensex 60.9 percent gira, phir bhi SIP chalane wale jeet gaye.",
-   "text": "Sensex 60.9 percent gira, phir bhi SIP chalane wale jeet gaye. Ruko mat, ye dekhna zaroori hai!",
-   "words": 17
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: view of a worried crowd of Indian office workers on a busy Mumbai street at dusk in 2008, reading evening newspapers at a stall, buses and taxis passing behind, grey evening sky, no readable text. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Framing: medium shot from the waist up, his whole head and both shoulders inside the frame with clear space above his hair and on both sides, and he stays framed like this to the end; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] standing relaxed and upright, shoulders open, wearing a beige linen blazer over a white tee. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: a confident, charismatic documentary presenter. Calm, natural face with a pleasant, warm smile, relaxed eyebrows, eyes soft and focused on the viewer. On \"SIP wale kaise jeete\" the eyes narrow a little with intrigue and the head tilts slightly, as if sharing a secret. On \"Ruko mat, ye dekhna zaroori hai!\" a warm, confident smile and one small nod. Natural blinking, subtle head movement. No exaggerated expressions: no wide eyes, no raised eyebrows, no open-mouth surprise, no big grin, no frown; never sad, gloomy, worried or tired. Voice: warm, clear, measured, with quiet intensity; a short pause before \"SIP wale kaise jeete\". Hands: one slow, small gesture toward the scene behind him on the first line, then hands rest; no fast or large arm movements. Camera: eye level, a very slight slow push-in, slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "Sensex aadha ho gaya, phir bhi SIP wale kaise jeete?",
+   "text": "Sensex aadha ho gaya, phir bhi SIP wale kaise jeete? Ruko mat, ye dekhna zaroori hai!",
+   "words": 16
   },
   "summary": "The global financial crisis as seen from India: the Sensex from 21,000 to 8,000, FIIs pulling out, the IT and realty job scare, and how a SIP that kept running from 2008 to 2010 came out. Published index data and fund returns only.",
   "target_minutes": null,
