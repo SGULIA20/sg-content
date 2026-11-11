@@ -91,3 +91,17 @@ def test_story_copy_keeps_short_videos_and_skips_long_ones(tmp_path):
     same = assemble.story_copy(src, tmp_path / "s1.mp4", max_s=5)
     assert same.read_bytes() == src.read_bytes()
     assert assemble.story_copy(src, tmp_path / "s2.mp4", max_s=2) is None and not (tmp_path / "s2.mp4").exists()   # never trimmed (founder, 22 Oct 2026)
+
+
+def test_faster_speaks_each_line_quicker_and_leaves_them_alone_at_normal_speed(tmp_path):
+    import wave
+    import numpy as np
+    from engine import assemble
+    wav = tmp_path / "a.wav"
+    t = np.linspace(0, 3.0, 72000, endpoint=False)
+    with wave.open(str(wav), "wb") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(24000); w.writeframes((np.sin(2 * np.pi * 220 * t) * 3000).astype(np.int16).tobytes())
+    lines = [(wav, 3.0)]
+    assert assemble.faster(lines, 1.0, tmp_path / "f") is lines
+    out = assemble.faster(lines, 1.2, tmp_path / "f")
+    assert abs(out[0][1] - 2.5) < 0.06 and out[0][0] != wav

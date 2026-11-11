@@ -627,6 +627,15 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
     short = piece.kind == "short"
     size = size or VIDEO["short" if short else "long"]
     w, h = size
+    from . import opening as _opening
+    source_clip = clip
+    rate = _opening.speed(piece)
+    if rate > 1.001:                                                # the founder speaks at the narration's pace: picture and sound together, lips in step
+        fast = out_dir / "intro-fast.mp4"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        _run(["-i", str(clip), "-filter_complex", f"[0:v]setpts=PTS/{rate:.3f}[v];[0:a]atempo={rate:.3f}[a]", "-map", "[v]", "-map", "[a]",
+              "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-c:a", "aac", "-b:a", "160k", str(fast)])
+        clip = fast
     full = duration(clip)
     segments = speech_segments(clip, full)
     secs = round(min(full, segments[-1][1] + TAIL_S), 3)         # the silent tail after the last word is cut; the body starts at once
@@ -716,7 +725,7 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
     founder_thumb = out_dir.parent.parent / "inbox" / "thumb" / f"{piece.id}.jpg"
     if founder_thumb.exists():                                      # the founder's own thumbnail goes up with the upload (longs, 4 Nov 2026)
         shutil.copy2(founder_thumb, out_dir / "thumb.jpg")
-    piece.ids["intro"] = {"clip": str(Path(clip).name), "seconds": round(secs, 2), "clip_seconds": round(full, 2),
+    piece.ids["intro"] = {"clip": str(Path(source_clip).name), "seconds": round(secs, 2), "clip_seconds": round(full, 2),
                           "composed": datetime.now(timezone.utc).isoformat(timespec="seconds")}
     return plain
 

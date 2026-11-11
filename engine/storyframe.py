@@ -245,6 +245,7 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     if full:
         title_png = blank_png(out_dir / "blank.png", w)
     # founder, 22 Oct 2026: the narration is never sped up or cut to fit; a story takes the time it takes (YouTube Shorts allow 3 minutes)
+    lines = assemble.faster(lines, opening.speed(piece), out_dir / "vo-fast")     # 11 Nov 2026: a new-style Short is spoken a little faster, the full script kept
     voice_wav = out_dir / "voice.wav"
     starts = assemble._voice_track(lines, voice_wav)
     piece.timings = starts

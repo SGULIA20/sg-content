@@ -89,6 +89,21 @@ def fit_short(lines: list, work_dir: Path, limit: float = SHORT_MAX_S, pad: floa
     return out, factor
 
 
+def faster(lines: list, factor: float, work_dir: Path) -> list:
+    """Every voice line spoken `factor` times faster at the same pitch (atempo): [(wav, seconds)]. factor 1.0 returns the lines as they are."""
+    if factor <= 1.001:
+        return lines
+    work_dir = Path(work_dir)
+    work_dir.mkdir(parents=True, exist_ok=True)
+    out = []
+    for wav, _d in lines:
+        fast = work_dir / Path(wav).name
+        _run(["-i", str(wav), "-filter:a", f"atempo={factor:.3f}", "-ar", "24000", "-ac", "1", "-c:a", "pcm_s16le", str(fast)])
+        with wave.open(str(fast)) as w:
+            out.append((fast, w.getnframes() / w.getframerate()))
+    return out
+
+
 def caption_band(size: tuple) -> tuple:
     """(height, y) of the caption band for this frame size."""
     w, h = size

@@ -50,6 +50,17 @@ def is_trial(piece, root: Path = None) -> bool:
     return bool(win) and win[0] <= str(piece.id)[:10] <= win[1]
 
 
+def speed(piece, root: Path = None) -> float:
+    """How much faster a new-style Short is spoken, the founder's intro and the narration alike (founder, 11 Nov 2026: "speed like 1.2x so
+    reel timings can be maintained and the explanation will also be there"). 1.0 for everything else."""
+    if piece.kind != "short" or not is_trial(piece, root):
+        return 1.0
+    try:
+        return min(1.3, max(1.0, float(_config(root).get("speed", 1.0))))
+    except (TypeError, ValueError):
+        return 1.0
+
+
 def cutout_on(root: Path = None) -> bool:
     """Whether the founder is cut out and placed over the story's pictures (off: his clip full-screen, its own background set in the prompt)."""
     return bool(_config(root).get("cutout", False))
