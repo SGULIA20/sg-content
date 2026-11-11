@@ -90,12 +90,20 @@
    "research": 1
   },
   "cost": {
-   "inr": 15.0,
+   "inr": 28.5,
    "usd": 0.061952,
-   "voice": 9
+   "voice": 18
   },
   "drafts": 1,
-  "intro_sent": "2026-11-10T21:05:07+00:00"
+  "intro": {
+   "clip": "2026-11-17-sglearning-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-11T08:18:11+00:00",
+   "seconds": 8.38
+  },
+  "intro_checked": "6cddfa7c3cd6af65",
+  "intro_sent": "2026-11-10T21:05:07+00:00",
+  "yt_id": "qcwOKRYB8BA"
  },
  "kind": "short",
  "publish_day": "2026-11-17",
@@ -256,8 +264,18 @@
   },
   "title": "Sensex aadha, phir bhi *SIP* wale jeete? 📈"
  },
- "status": "written",
- "timings": [],
+ "status": "uploaded",
+ "timings": [
+  0.0,
+  3.996,
+  9.06,
+  14.139,
+  17.464,
+  22.763,
+  27.703,
+  34.602,
+  41.582
+ ],
  "topic": {
   "category": "crisis",
   "from_bank": true,
@@ -276,6 +294,7 @@
    "text": "Sensex aadha ho gaya, phir bhi SIP wale kaise jeete? Ruko mat, ye dekhna zaroori hai!",
    "words": 16
   },
+  "look": "claymation",
   "summary": "The global financial crisis as seen from India: the Sensex from 21,000 to 8,000, FIIs pulling out, the IT and realty job scare, and how a SIP that kept running from 2008 to 2010 came out. Published index data and fund returns only.",
   "target_minutes": null,
   "title": "2008: Amreeka ka bank dooba, aapki SIP par kya beeta",
@@ -290,6 +309,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-10T21:05:09+00:00",
+ "updated": "2026-11-11T08:18:16+00:00",
  "writer": "claude"
 }
