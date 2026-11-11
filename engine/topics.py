@@ -174,7 +174,7 @@ def news_score(item: dict) -> int:
     return score(item) - (4 if any(w in blob for w in RESULTS + RATE_TABLE) else 0)
 
 
-def pick_finance(items: list, used_links: set, now: datetime, news: bool = False, hours: int = FRESH_HOURS) -> dict | None:
+def pick_finance(items: list, used_links: set, now: datetime, news: bool = False, hours: int = FRESH_HOURS, avoid=()) -> dict | None:
     """The best household money story of the last `hours`. For the buffer (news=False) a headline tied to a day is skipped;
     for the same-day news Short (news=True) it is welcome, but the daily market call never is."""
     fresh = [i for i in items if i.get("published") and now - i["published"] <= timedelta(hours=hours)
@@ -182,7 +182,8 @@ def pick_finance(items: list, used_links: set, now: datetime, news: bool = False
              and (not any(w in str(i.get("title", "")).lower() for w in MARKET_CALL) if news else not dated(i))]
     if not fresh:
         return None
-    from . import topicscore
+    from . import themes, topicscore
+    fresh = [i for i in fresh if themes.allowed(i, avoid)] or fresh   # 11 Nov 2026: a theme used in the last days waits, unless nothing else is left
     best = max(fresh, key=lambda i: (score(i) + topicscore.score(i, "sglearning", now.date())[0] // 2, i["published"]))   # 7 Nov 2026: the YouTube-based rule breaks ties
     pts, why = topicscore.score(best, "sglearning", now.date())
     return {**best, "topic_score": pts, "topic_score_why": why}
@@ -205,11 +206,11 @@ def history_day(day) -> bool:
     return day.toordinal() % 2 == 0
 
 
-def next_money_history(root: Path, used_ids: set, today=None) -> dict | None:
+def next_money_history(root: Path, used_ids: set, today=None, avoid=()) -> dict | None:
     """The best unused money-history topic by the YouTube-based scoring rule (engine/topicscore.py; ties keep the bank's order); None once
-    every one has been used (the news feed takes over)."""
-    from . import topicscore
-    fresh = [t for t in load_money_history(root) if t["id"] not in used_ids]
+    every one has been used, or every unused one has a theme in `avoid` (the news feed takes over)."""
+    from . import themes, topicscore
+    fresh = [t for t in load_money_history(root) if t["id"] not in used_ids and themes.allowed(t, avoid)]
     if not fresh:
         return None
     pts, why, best = topicscore.rank(fresh, "sglearning", today)[0]
@@ -244,12 +245,13 @@ def proven_shorts(root: Path, channel: str, min_views: int = PROVEN_IG_VIEWS) ->
     return out
 
 
-def next_long_finance(root: Path, used_ids: set, proven: list = ()) -> dict:
+def next_long_finance(root: Path, used_ids: set, proven: list = (), avoid=()) -> dict:
     """Subject for a 12-minute finance documentary: first a proven Short's question not yet made as a long (4 Nov 2026), then the
-    evergreen bank in order, each once, then the rotation restarts."""
+    evergreen bank in order, each once, then the rotation restarts. A theme in `avoid` (engine/themes.py) waits its turn."""
+    from . import themes
     for s in proven:
         tid = f"proven-{s['id']}"
-        if tid in used_ids or any(c in f" {str(s.get('title', '')).lower()} " for c in CORPORATE):
+        if tid in used_ids or any(c in f" {str(s.get('title', '')).lower()} " for c in CORPORATE) or not themes.allowed(s, avoid):
             continue                                                   # rule B holds for longs too: no crypto or company story
         t = s.get("topic") or {}
         return {"id": tid, "title": s["title"], "link": t.get("link", ""), "source": t.get("source", ""),
@@ -259,6 +261,9 @@ def next_long_finance(root: Path, used_ids: set, proven: list = ()) -> dict:
                 "hooks": [s["hook"]] if s.get("hook") else [], "proven_short": s["id"], "proven_views": s["ig_views"]}
     bank = load_long_bank(root)
     for t in bank:
+        if t["id"] not in used_ids and themes.allowed(t, avoid):
+            return t
+    for t in bank:                                                     # every unused one clashes: the theme rule gives way before a repeat does
         if t["id"] not in used_ids:
             return t
     return bank[0]

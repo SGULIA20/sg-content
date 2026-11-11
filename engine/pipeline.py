@@ -606,22 +606,23 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
     default_voice, _fallback = voice.voice_ids()
 
     def topic_fn(piece, used):
-        from . import weekly
+        from . import themes, weekly
+        avoid = themes.blocked(root, piece) if piece.channel == "sglearning" else set()   # 11 Nov 2026: no theme twice within days
         planned = weekly.topic_for(root, piece, used)                  # 7 Nov 2026: the weekly YouTube research plan comes first
-        if planned:
+        if planned and themes.allowed(planned, avoid):
             return planned
         if piece.channel == "sglearning":
             if piece.kind == "long":                                   # 4 Nov 2026: a proven Short's question first, then the bank
                 # 10 Nov 2026: once one proven-Short news topic has failed research for this piece, go to the evergreen bank; the
                 # 16 Nov long spent two days on old news stories that no longer yield sourced facts for a 12-minute video
                 burnt = any(str(k).startswith("proven-") for k in piece.ids.get("dead_topics", []))
-                return topics.next_long_finance(root / "content", used, () if burnt else topics.proven_shorts(root, "sglearning"))
+                return topics.next_long_finance(root / "content", used, () if burnt else topics.proven_shorts(root, "sglearning"), avoid)
             from datetime import datetime, timezone
             if topics.history_day(piece.publish_day):                   # 6 Nov 2026: wars, crashes, scams and price history, every other day
-                bank = topics.next_money_history(root / "content", used)
+                bank = topics.next_money_history(root / "content", used, avoid=avoid)
                 if bank:
                     return bank
-            return topics.pick_finance(topics.fetch_all(), used, datetime.now(timezone.utc))
+            return topics.pick_finance(topics.fetch_all(), used, datetime.now(timezone.utc), avoid=avoid)
         if piece.kind == "long":
             return topics.next_myth_long(root / "content", used, topics.proven_shorts(root, "arthvan"))
         return topics.next_myth(root / "content", used)
