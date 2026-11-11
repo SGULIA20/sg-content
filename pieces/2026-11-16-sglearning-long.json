@@ -1,12 +1,93 @@
 {
  "channel": "sglearning",
- "facts": [],
+ "facts": [
+  {
+   "label": "official",
+   "number": 150000.0,
+   "quote": "Combined deduction limit of ₹ 1,50,000.",
+   "source_date": "2026-07-09",
+   "source_name": "Income Tax Department",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFACywh4_2oLnM-IGSNeksQxF9mSE-RbnEh7enzh4TdmAk1zV1AUBCs6LV1gGHFPfRXrKrvaCtDKWs1xCCs530DTvxEQIJjqdV5WX2Tzd0U6NBj904umFMLVHIyfRFHIi5ydH_9QWok8UNoyZki9jlCZf9u3jjGr97IW8omZu7e7JqQYCeBziJZyFvxxnM3w==",
+   "text": "Salaried taxpayers filing under the old tax regime can claim a maximum deduction of up to Rs 1,50,000 across eligible investments and expenses including life insurance premiums.",
+   "unit": "INR"
+  },
+  {
+   "label": "reported",
+   "number": 30.0,
+   "quote": "Free Look Period: Policyholders have a 30-day period to review the policy and cancel if dissatisfied, ensuring customer satisfaction and trust.",
+   "source_date": "2024-07-06",
+   "source_name": "Bimabazaar.com",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjSDeVXYNw5GahU_AA_YMfuAmGQfMqvJiyAqYQzn075jSOvRS62zDbgvLvp14oA8v8nDsa6YFV83YTT00X0Cttjn1J2WYPNvUu2whm9liSmc71YCycR5BsIjxTHZc_5Lun9OWcV3c0SaDIkWz3REVFPev83R_VBW9cIbNxAzrcd1DX9FJ4rDpTAWvrYHNiz277Jfk_Q0pb6e1hhZufRt1qJAJKq_jlgjJOccM1f1ogTh2RKNDN6A61FQ==",
+   "text": "The Insurance Regulatory and Development Authority of India mandates a free-look period of 30 days during which policyholders can review and cancel their life insurance policy.",
+   "unit": "days"
+  },
+  {
+   "label": "reported",
+   "number": 3.0,
+   "quote": "Non-Contestability: Policies are non-contestable after three years from the date of issuance, commencement of risk, or revival, providing security to policyholders.",
+   "source_date": "2024-07-06",
+   "source_name": "Bimabazaar.com",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjSDeVXYNw5GahU_AA_YMfuAmGQfMqvJiyAqYQzn075jSOvRS62zDbgvLvp14oA8v8nDsa6YFV83YTT00X0Cttjn1J2WYPNvUu2whm9liSmc71YCycR5BsIjxTHZc_5Lun9OWcV3c0SaDIkWz3REVFPev83R_VBW9cIbNxAzrcd1DX9FJ4rDpTAWvrYHNiz277Jfk_Q0pb6e1hhZufRt1qJAJKq_jlgjJOccM1f1ogTh2RKNDN6A61FQ==",
+   "text": "Under regulatory norms consolidated in the IRDAI Master Circular, life insurance policies become non-contestable after three years from the date of issuance or revival.",
+   "unit": "years"
+  },
+  {
+   "label": "reported",
+   "number": 5.0,
+   "quote": "In order to prevent the misuse of tax exemption by high-net-worth individuals by investing in policies having large premium contributions, FA 2023 amended s.10(10D) to withdraw exemption in respect of life insurance policies issued on or after 1 April 2023 where premium (or aggregate premium) payable for any of the tax year during the term of such policy/policies exceeds INR5 lakhs (except amount received on death of a person).",
+   "source_date": "2023-11-08",
+   "source_name": "EY",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFeZpIH5kt8UiLogfqk0GZGZCVNzLA7OSl1fb2HQ45uDFD09cSGa5tBYrdHGUAWPfQwpg8w5Xv2m8J1hqa9ELJE7YpyHefpo1zrLVHAiEOFwM6_7BgAMHu-XrV5gXcVzg2jCHDn9-7fRHzCJXxorci3ZGcWFJB0aXs37CfuaYBffU4-4wOwjbvJxjKuc0xd9m4FV1_0rgs-MJhr06SJESqcwanyA==",
+   "text": "Under amended Section 10(10D) provisions, tax exemptions on life insurance maturity proceeds are withdrawn for non-ULIP policies issued on or after 1 April 2023 if annual aggregate premiums exceed Rs 5 lakh.",
+   "unit": "lakh INR"
+  },
+  {
+   "label": "analyst-view",
+   "number": 15.0,
+   "quote": "“While a broad thumb rule of 10 to 15 times annual income is commonly used, this should be refined based on individual circumstances,” says Oke.",
+   "source_date": "2026-06-06",
+   "source_name": "ET",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUoTUQsuAGWnKVmE2UAxvL781CZS1hawkdEFgZEUv27-hzDlmfTK4x-Lb3k1nlzfmUWqJOB9l5KfgnZh93iKGFJyLU5AXdUx1kldGNFv7WnO48AztWmSMo7MZ0RmdsnKxrueHX6DWCTdNW9CmHZpeA5J1le7j3iJZBJVwTJLVNycd2W1yjqpqfLBg32-44Qtf0YkJjbu9DKZ_xgTsQgC6jZ1WRjdrCXVEyxky9UAMxmLqfgYMC8wbsTRbh4-DTIml42XuoUt0ki14=",
+   "text": "Insurance industry executives note that financial planners commonly recommend an insurance cover thumb rule of 10 to 15 times the earner's annual income.",
+   "unit": "times annual income"
+  },
+  {
+   "label": "reported",
+   "number": 6.0,
+   "quote": "Although actual returns would depend on one's age, term and the premium amount, the average IRR (internal rate of return) in most traditional plans, including money-back and endowment, lies between 4 and 6 percent per annum.",
+   "source_date": "2016-04-13",
+   "source_name": "ET",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGptwZgZ5oQHNSZstpAKduiOxjzpfWtpiraZHTNvE5sT6YA8UUWGPk5nVCM-Ydgi0ekbhUSJIwrp9f7sRTX3BJmu_YtyrTxPcbF2TDz8cLxGeY0fw1AEF2NBwjWFeeBUmaQLxEfG-QmThHk0xUr9KZCPurN37t1-DRx1xrj1QsntjU7kINcfBzwy4w2LrWRzMSx6Rj9TTZag1pbGam7zYy1gp_qd0WiCDIN6Q==",
+   "text": "Financial analysis indicates that the internal rate of return for traditional endowment and money-back life insurance policies generally hovers between 4 percent and 6 percent per annum.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 28778.0,
+   "quote": "The difference between the premiums of the two policies is ₹28,778 (calculated as = ₹47,712 - ₹18,934).",
+   "source_date": "2024-06-03",
+   "source_name": "Mint",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEue2isuy9k83GfZfCRpxLryuWV1l4FBkEuCmY2rRvK_qr0zFBMRnHSuEeFIlWq00h2LNg3JtZM7h0GM5IMUXSWxeI_LY4QwkizvCOD4Je9A0fX5u_A6uXfpC3Fq7Sd5l2Pf-eVfBPd2uFo40v0LTCZoETDxXyCWxk_5rJYsF3Zp04EawiY568AnackEka4keD2H9RGpRWC_PvWewet6v0iExvf5tLuUw7h-2eiW61nhTcMi-m3nP1WcDULg8g1PqbmHqypOTBZUYC86uj_",
+   "text": "A buyer evaluating a 30-year ₹1 crore cover faces an annual premium gap of ₹28,778 between a return-of-premium policy and a plain term insurance plan.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 1.0,
+   "quote": "In case of surrender of policy in the first year, higher of the Guaranteed Surrender Value (GSV) or \"Special Surrender Value\" (SSV) becomes payable after completion of first policy year provided one full year premium is paid by the policyholders.",
+   "source_date": "2024-09-05",
+   "source_name": "CAalley.com",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFifCH1dcvc9L9gdqaUFFxgvwvly_eVn6JXUwZtwgReB9c76rff7o662ZtV12Imb-Cbz-2RcRDBG9at0iC6_h0O0prsY599mQW1OmkVX73rbKZXF0goFgDGGgjdZDtrlmTwrrF77JI9RjTlJvs1vP3YLrKej9VR6duBPP6cFAI8jQRvsg4Wdd0=",
+   "text": "The IRDAI Master Circular ensures that policyholders surrendering an eligible non-linked policy after completing one full year can receive the higher of guaranteed surrender value or special surrender value.",
+   "unit": "years"
+  }
+ ],
  "id": "2026-11-16-sglearning-long",
  "ids": {
   "budget": {
    "day": "2026-11-11",
-   "drafts": 2,
-   "research": 2
+   "drafts": 5,
+   "research": 4
   },
   "cost": {
    "inr": 87.0,
@@ -23,7 +104,7 @@
    "https://www.livemint.com/market/stock-market-news/gold-price-crashes-over-rs-38-600-from-record-high-whatll-happen-amid-diwali-2026-fervour-right-time-to-buy-decoded-11792910366849.html",
    "proven-2026-10-30-sglearning-short"
   ],
-  "drafts": 3
+  "drafts": 6
  },
  "kind": "long",
  "publish_day": "2026-11-16",
@@ -56,12 +137,769 @@
   "research budget used for today (4 calls); the next quota day retries",
   "try 1: advice: double paisa; numbers without a source: 100000, 5.7e+06, 5.7e+06",
   "waiting for the founder's intro clip until 16 Nov 10:30 UTC",
-  "11 Nov 2026: was written on home-loan-double, the 21 Nov long's subject (the long bank had run out); re-planned on a fresh topic"
+  "11 Nov 2026: was written on home-loan-double, the 21 Nov long's subject (the long bank had run out); re-planned on a fresh topic",
+  "try 1: advice: guarantee",
+  "try 2: numbers without a source: 100000"
  ],
- "script": null,
- "status": "planned",
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Paisa wapas policy ka asli return kitna hai? Aksar saal ka sirf 4 se 6 percent.\nAur term plan mein kuch wapas nahi milta, phir bhi family ke liye kyun zaroori ho sakta hai?\nAapke ghar mein kaunsi policy hai, term ya paisa wapas?\nYeh investment advice nahi hai.\nUs Papa ko bhejo jo kehte hain paisa wapas policy hi sabse safe hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#MoneyTipsHindi",
+     "#HinglishFinance",
+     "#PersonalFinanceIndia",
+     "#IncomeTax",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Aapki 'paisa wapas' policy ka asli return? Aksar saal ka sirf 4 se 6 percent. Term plan mein kuch wapas nahi milta, phir bhi woh family ko kahin zyada suraksha de sakta hai. Aapke ghar mein kaunsi policy hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Ek premium, do nateeje",
+     "00:00 Paisa wapas policy ka asli return",
+     "00:00 Term plan: kuch wapas nahi, phir bhi kyun?",
+     "00:00 Policy beech mein todi toh?",
+     "00:00 Kitna cover chahiye aur kya karein"
+    ],
+    "description": "Aapki 'paisa wapas' policy family ko asal mein kitna degi? Traditional endowment aur money-back policies ka return aksar saal ka sirf 4 se 6 percent hota hai, aur cover bhi chhota. Is video mein term plan, surrender value, free-look period aur sahi cover ka hisaab, seedhi bhasha mein. Yeh investment advice nahi hai. Us Papa ko bhejo jo kehte hain paisa wapas policy hi sabse safe hai.",
+    "tags": [
+     "term insurance",
+     "term plan",
+     "endowment policy",
+     "money back policy",
+     "paisa wapas policy",
+     "life insurance",
+     "surrender value",
+     "free look period",
+     "insurance cover",
+     "personal finance hindi",
+     "insurance hindi",
+     "Learning with SG"
+    ],
+    "title": "Term Plan ya Endowment? 1 crore ka sach"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Aapke ghar mein kaunsi policy hai, term plan ya paisa wapas wali?",
+  "hook": "Aapki 'paisa wapas' policy, aapke na rehne par family ko kitna degi?",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "Ek premium, do nateeje",
+    "visual": {
+     "card": null,
+     "prompt": "Close view of an open steel almirah drawer at night, stuffed with old folded insurance policy papers tied with a red thread, lit by a single tubelight, mood of a forgotten secret",
+     "type": "art"
+    },
+    "vo": "Aapki 'paisa wapas' policy, aapke na rehne par family ko kitna degi? Zyaadatar log yeh number jaante hi nahi. Aur jo jaante hain, woh chaunk jaate hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A narrow Indian residential lane in the evening, two identical small houses side by side, two men in office shirts waving at each other from their gates, warm streetlight",
+     "type": "art"
+    },
+    "vo": "Sochiye, ek hi gali mein rehne wale padosi, Mohan aur Sunil. Same office, same salary, aur dono har saal insurance par lagbhag ek jaisa paisa bharte hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A noisy Indian wedding function at night, a smiling middle-aged insurance agent in a blazer holding a file and talking to a young man near the food counter, fairy lights everywhere",
+     "type": "art"
+    },
+    "vo": "Mohan ne policy li ek rishtedaar agent se, shaadi ke function mein. Agent ne kaha, 'paisa doobega nahi, maturity par sab wapas, upar se bonus bhi.'"
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A young man at a small home desk with a laptop at night, calm and focused, while through the window two neighbours laugh and point, gentle comic mood",
+     "type": "art"
+    },
+    "vo": "Sunil ne online term plan liya, 1 crore ka, 30 saal ke liye. Maturity par usse kuch wapas nahi milega. Padosi hanse, 'paisa paani mein daal diya?'"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A dark bedroom at 2 am, a man sitting up in bed wide awake, his sleeping wife beside him, moonlight through the curtain, worried mood",
+     "type": "art"
+    },
+    "vo": "Ab ek sawaal. Agar kal dono mein se kisi ko kuch ho jaaye, toh kiski family ko zyada paisa milega? Jawab sunkar Mohan ki neend ud jaati hai."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Split panel: on the left a tall solid wall of bricks protecting a small house, on the right the same house behind a thin low fence, stormy sky above both",
+     "type": "art"
+    },
+    "vo": "Sunil ki family ko poore 1 crore. Mohan ki family ko? Sirf utna, jitna policy ka sum assured hai. Aur aksar woh rakam kaafi chhoti hoti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A policy document lying on a wooden table under a magnifying glass, a small coin pouch next to a big empty space, soft afternoon light",
+     "type": "art"
+    },
+    "vo": "Sum assured yaani woh rakam jo policy mein likhi hai, maut par milne wali. Paisa wapas policy mein yeh rakam chhoti hoti hai, kyunki premium ka hissa bachat mein jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Mohan on his balcony holding a passbook to his chest, looking hopeful, a potted tulsi plant and drying clothes behind him, morning sun",
+     "type": "art"
+    },
+    "vo": "Toh same paisa bhar ke, ek ghar ko suraksha mili, doosre ko sirf bachat ka ehsaas. Lekin Mohan kehta hai, 'mera paisa toh wapas aayega na?'"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "PAPA in a white kurta in an old armchair, a thick file of FD receipts and policy papers on his lap, nodding confidently, living room with a wall clock",
+     "type": "art"
+    },
+    "vo": "Yahi woh line hai jo har agent bolta hai, aur har ghar ke Papa maan lete hain. 'Paisa wapas.' Sunne mein kitna safe lagta hai, hai na?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "An old hourglass on a shelf with banknotes inside instead of sand, the notes shrinking as they fall, dusty room, dramatic side light",
+     "type": "art"
+    },
+    "vo": "Lekin kya sach mein paisa wapas aata hai? Aur agar aata hai, toh barson baad haath mein aane par, uski asli keemat kitni bachti hai?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG, early forties, beard, striped shirt, standing at a chai stall counting points on his fingers, friendly and energetic, evening street behind him",
+     "type": "art"
+    },
+    "vo": "Aaj in sawaalon ka seedha jawab. Paisa wapas policy ka asli return kitna hai. Term plan mein kuch wapas nahi, phir bhi sahi kyun. Aur cover kitna lena chahiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A locked metal cash box on a table with a key half inserted, a hand about to turn it, curious suspense mood, warm lamp light",
+     "type": "art"
+    },
+    "vo": "Saath mein woh baat bhi, jo policy beech mein todne waale ko koi nahi batata. Par pehle, chaliye Mohan ki policy ka hisaab kholte hain."
+   },
+   {
+    "facts_used": [],
+    "label": "Paisa wapas policy ka asli return",
+    "visual": {
+     "card": null,
+     "prompt": "A postman handing an envelope to Mohan at his door, Mohan smiling widely, a scooter parked outside, bright morning",
+     "type": "art"
+    },
+    "vo": "Mohan har saal premium bharta hai, bina ek bhi saal chhode. Bonus ki chitthi aati hai, woh khush hota hai. Lagta hai paisa badh raha hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A man sitting alone at a dining table late at night with a calculator, a notebook and a cup of chai, frowning in thought",
+     "type": "art"
+    },
+    "vo": "Par ek seedha sawaal kisi ne nahi poocha. Jo paisa main daal raha hoon, uspar saal ka kitna kama raha hoon? Yahi asli return hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A small sapling growing very slowly in a clay pot, a watering can beside it, a man kneeling to measure its height with a ruler, soft daylight",
+     "type": "art"
+    },
+    "vo": "Ise kehte hain IRR. Seedhi bhasha mein, aapke har saal ke paise par, har saal ka asli byaaj kitna bana, bonus aur maturity sab jod kar."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A newspaper lying on a breakfast table with spilled tea, a shocked man with his hand on his forehead in the background, morning kitchen",
+     "type": "art"
+    },
+    "vo": "Ab chaunkane wali baat. ET ki report ke mutabik, zyaadatar endowment aur money-back policies ka yeh return, saal ka sirf 4 se 6 percent ke beech hota hai."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A row of glass jars on a shelf, each filled with coins to slightly different low levels, a hand pointing at them, plain wall background",
+     "type": "art"
+    },
+    "vo": "Haan, sirf 4 se 6 percent. Aur yeh bhi umar, policy ki lambai aur premium par depend karta hai. Kisi ka kam, kisi ka thoda zyada."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A busy small-town post office counter, an elderly clerk stamping a passbook, a queue of ordinary people waiting patiently, ceiling fan turning",
+     "type": "art"
+    },
+    "vo": "Ab ise compare kijiye. PPF, yaani sarkar ki chhoti bachat yojana, aaj saal ka 7.1 percent deta hai. Bina kisi agent ke, post office ya bank se."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A fork in a village road, one path wide and sunny, the other narrow and leading to a padlocked iron gate, a man standing at the gate looking back",
+     "type": "art"
+    },
+    "vo": "Matlab jis seedhe raste ko Mohan chhod aaya, wahi isse zyada de raha tha. Aur policy mein uska paisa barson ke liye band bhi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "WIFE at a kirana counter looking at a long grocery bill in surprise, SHOPKEEPER weighing dal on a scale, shelves full of packets",
+     "type": "art"
+    },
+    "vo": "Ab mehngai ko yaad kijiye. Har saal doodh, school fees, dawai sab mehnga hota hai. Jo return mehngai se kam ho, woh paisa chupke se chhota karta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A bucket of water with a small hole at the bottom, water being poured in from the top while it leaks out below, plain courtyard floor",
+     "type": "art"
+    },
+    "vo": "Real return yaani mehngai kaat kar jo bacha. Agar policy ka return mehngai ke aas paas hi hai, toh asli kamai lagbhag kuch nahi bachti."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "An old man holding a large cheque outside a bank, looking at a shop window where prices are high, mixed feeling of pride and confusion",
+     "type": "art"
+    },
+    "vo": "Toh maturity par jo bada sa cheque aata hai, woh bada dikhta hai. Par barson pehle ke paise se, aaj utna saamaan shayad nahi aata."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A man trying to carry an umbrella and a heavy piggy bank in the same hand during rain, getting wet anyway, comic and sad mood",
+     "type": "art"
+    },
+    "vo": "Aur cover bhi chhota tha. Yaani Mohan ne suraksha aur bachat, dono ek hi policy se karni chahi, aur dono adhoore reh gaye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A shiny gift box with a big ribbon on a table, the lid slightly open revealing only a few coins inside, dramatic spotlight",
+     "type": "art"
+    },
+    "vo": "Na poori suraksha, na achha return. Yeh hai paisa wapas policy ka asli chehra. Par agent ise itni khoobsurti se kyun bechta hai?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "MUMMY in a saree holding a cup of chai at the window, looking worried at a grey sky, the house quiet behind her, late afternoon",
+     "type": "art"
+    },
+    "vo": "Kyunki 'paisa wapas' ek emotion hai. Insaan ko kuch na milne ka dar hota hai. Par yahin se Sunil ki kahani mein twist aata hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Term plan: kuch wapas nahi, phir bhi kyun?",
+    "visual": {
+     "card": null,
+     "prompt": "Sunil holding a big umbrella over his wife and two children as rain starts in a park, everyone dry and calm, evening light",
+     "type": "art"
+    },
+    "vo": "Sunil ka term plan bilkul seedha hai. Woh premium bharta hai, aur badle mein bas ek vaada: agar use kuch hua, family ko poora cover milega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A strong brass lock on the wooden front door of a home at night, a quiet street outside, moonlight on the lock",
+     "type": "art"
+    },
+    "vo": "Term plan yaani khaalis suraksha. Koi bachat nahi, koi bonus nahi. Jaise ghar ka taala, jo chori na ho toh bhi bekaar nahi hota."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A clean family car parked safely in a society parking lot at sunrise, a man wiping the windshield happily, no damage anywhere",
+     "type": "art"
+    },
+    "vo": "Socho, aap car insurance lete ho. Accident nahi hua, toh kya aap company se paisa wapas maangte ho? Nahi. Kyunki suraksha hi uski keemat thi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A glossy insurance office with a bright banner-free display, a salesperson presenting a brochure to a young couple across a glass desk, polished lighting",
+     "type": "art"
+    },
+    "vo": "Lekin life insurance mein hum yahi maangte hain, ki kuch wapas mile. Isi soch ke liye companies ne banaya 'return of premium' term plan."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A boomerang flying back toward a man's hand in an open field, but it carries a heavy weight tied to it, golden hour",
+     "type": "art"
+    },
+    "vo": "Return of premium yaani policy khatam hone par aapka bhara hua premium wapas. Cover bhi, paisa bhi. Par iski keemat kitni hai, kabhi dekha?"
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Two price tags hanging from two identical umbrellas in a shop, one tag much longer and heavier than the other, shop owner shrugging",
+     "type": "art"
+    },
+    "vo": "Mint ke ek hisaab mein, same 1 crore cover par, premium wapas wala plan, saada term plan se har saal 28,778 rupaye mehnga tha."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A man handing a bundle of notes through a small window every year, a long line of identical bundles stacked behind the window gathering dust",
+     "type": "art"
+    },
+    "vo": "Har saal 28,778 rupaye extra. Sirf isliye ki aakhir mein aapka hi paisa aapko lauta diya jaaye. Woh bhi bina byaaj ke, barson baad."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Sunil at his kitchen table dropping money into a clear glass jar labelled only with a drawn house symbol, his daughter watching with interest, morning light",
+     "type": "art"
+    },
+    "vo": "Ab Sunil ki soch suniye. 'Main saada term lunga, aur yeh extra paisa har mahine khud bachaunga, apne naam par, apne control mein.'"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Two separate neat boxes on a shelf, one holding a folded umbrella, the other holding a growing money plant, clean minimal room",
+     "type": "art"
+    },
+    "vo": "Yahi asli formula hai. Suraksha alag, bachat alag. Insurance sirf family ki hifazat ke liye, aur bachat ke liye alag, saaf raasta."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BEHEN in office wear at her desk reviewing tax papers with a raised eyebrow, a laptop and a pen, sceptical but satisfied look, office window behind",
+     "type": "art"
+    },
+    "vo": "Ek aur baat jo agent kam batate hain. Old tax regime mein term plan ka premium bhi tax deduction mein aata hai. Sirf paisa wapas policy ka nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A balance scale on a table, a small light coin pouch on one side and a heavy sack on the other, a hand adjusting it, plain background",
+     "type": "art"
+    },
+    "vo": "Toh 'tax bachega' wala tark term plan par bhi lagu hota hai. Fark sirf itna hai, ki term plan ka premium kaafi kam hota hai."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Aerial view of the same two houses in the lane, one with a thin cloth canopy, the other under a strong steel roof with a small garden growing beside it",
+     "type": "art"
+    },
+    "vo": "Ab dono padosiyon ko phir dekhiye. Mohan ke paas chhota cover aur dheema return. Sunil ke paas 1 crore ka cover, aur alag se badhti bachat."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Sunil's family sleeping peacefully in a small bedroom at night, BETA and BETI under a blanket, a night lamp glowing, calm mood",
+     "type": "art"
+    },
+    "vo": "Sunil ko maturity par kuch nahi milega, yeh sach hai. Par uski family har din, har raat, poori tarah surakshit hai. Yahi uska return hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Mohan holding a policy document with both hands as if about to tear it, frozen mid-action, a dramatic lamp casting a long shadow",
+     "type": "art"
+    },
+    "vo": "Lekin yahan Mohan ek galti karne wala hai. Woh sochta hai, policy beech mein tod doon? Ruko, pehle sun lo ki todne par kya milta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Policy beech mein todi toh?",
+    "visual": {
+     "card": null,
+     "prompt": "Mohan walking into an insurance branch office with a determined face, a file under his arm, a security guard opening the glass door",
+     "type": "art"
+    },
+    "vo": "Mohan ko hisaab samajh aa gaya. Ab woh chahta hai policy band kar de, aur jama paisa nikaal le. Ise kehte hain policy surrender karna."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A clerk sliding a thin envelope across a counter to a man who expected much more, his hopeful smile fading, fluorescent office light",
+     "type": "art"
+    },
+    "vo": "Surrender value yaani policy beech mein todne par company jo paisa lautati hai. Aur shuruaati saalon mein, yeh rakam aksar umeed se bahut kam hoti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A water pipe with several taps along it draining water before it reaches a small tank at the end, a man looking at the nearly empty tank",
+     "type": "art"
+    },
+    "vo": "Kyunki shuru ke premium ka bada hissa aksar commission aur company ke kharche mein jaata hai. Bachat wala hissa dheere dheere banta hai."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A grand old government building with stone pillars on a clear day, people walking up its steps with files, sense of rules and order",
+     "type": "art"
+    },
+    "vo": "IRDAI, yaani insurance ka sarkari regulator. Iske niyam ke mutabik, 1 saal ka poora premium bharne ke baad hi, surrender par paisa milne ka haq banta hai."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BANK UNCLE behind a wooden counter comparing two ledgers side by side with spectacles on his nose, Mohan waiting across the counter",
+     "type": "art"
+    },
+    "vo": "Aur tab bhi company alag alag hisaab nikaalti hai, aur jo zyada ho woh deti hai. Par yaad rahe, poora bhara hua premium wapas milna zaroori nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A man stuck between two closing doors in a corridor, both doors slowly shutting, a bright exit sign-free window at the far end behind him",
+     "type": "art"
+    },
+    "vo": "Matlab galat policy lene ka nuksaan, use todne par bhi hota hai. Aur rakhne par bhi. Toh asli bachaav kahan hai? Policy lete waqt."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A courier delivering a thick sealed envelope at a family's door, a young woman receiving it with curiosity, afternoon light in the doorway",
+     "type": "art"
+    },
+    "vo": "Yahan aata hai woh haq jo bahut kam log jaante hain. Free-look period. Yaani policy milne ke baad, sochne aur lautane ka waqt."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A wall calendar in a kitchen with a month of days circled in pencil, a policy envelope pinned next to it, morning sun on the wall",
+     "type": "art"
+    },
+    "vo": "Yeh waqt 30 din ka hota hai. Is beech policy pasand nahi aayi, ya samajh nahi aayi, toh aap use cancel karke lauta sakte ho."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "BHAI in a hoodie sitting cross-legged on a bed reading policy papers spread around him, a pen behind his ear, concentrating",
+     "type": "art"
+    },
+    "vo": "Toh agar ghar mein kisi ne abhi abhi policy li hai, kaagaz khol kar dekhiye. Cover kitna hai, aur paisa kab wapas aayega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "An older couple sitting with a calm advisor at a small office table, papers between them, the advisor explaining with a pencil, quiet afternoon",
+     "type": "art"
+    },
+    "vo": "Agar policy saalon purani hai, toh jaldbaazi mat kijiye. Pehle surrender value poochiye, phir kisi samajhdaar advisor se poora hisaab lagwaiye. Gusse mein todna bhi galti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A tailor's shop with one identical shirt hanging for people of very different sizes, customers looking puzzled, warm shop light",
+     "type": "art"
+    },
+    "vo": "Par ab sabse bada sawaal. Agar term plan lena hai, toh kitne ka? Kya har ghar ke liye ek hi number sahi hai? Jawab chaunkayega."
+   },
+   {
+    "facts_used": [],
+    "label": "Kitna cover chahiye aur kya karein",
+    "visual": {
+     "card": null,
+     "prompt": "Sunil standing in his small living room looking at WIFE, BETA and BETI doing homework at the table, a bank loan folder on the shelf, evening",
+     "type": "art"
+    },
+    "vo": "Sunil ne bhi yahi socha. Uske ghar mein Wife hai, Beta aur Beti hain, ghar ka loan hai. Agar woh na rahe, toh yeh sab kaun chalayega?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A sturdy wooden bridge holding up a family walking across a river, the bridge pillars strong, children running ahead, bright day",
+     "type": "art"
+    },
+    "vo": "Cover ka matlab hai, aapki kamai ki jagah lena. Itna paisa ki family ka ghar chale, bachchon ki padhai ho, aur udhaar bhi chuk jaaye."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A tall stack of identical lunch tiffins piled high like a tower on a kitchen counter, a man looking up at the height in surprise",
+     "type": "art"
+    },
+    "vo": "Financial planners ek seedha thumb rule batate hain. Cover ho aapki saal bhar ki kamai ka 10 se 15 guna. Yeh ET ki report mein bataya gaya."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A row of different Indian homes on one street, a small hut, a flat, a bungalow, each with different families in front, sunset",
+     "type": "art"
+    },
+    "vo": "Par yeh sirf shuruaat hai, aakhri number nahi. Expert khud kehte hain, apne halaat dekh kar ise sudhaaro. Har ghar alag hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A little girl with a school bag looking up a very long staircase that rises into clouds, her father holding her hand, morning",
+     "type": "art"
+    },
+    "vo": "Agar ghar ka loan bada hai, toh cover badhao. Agar bachche chhote hain aur padhai ke saal lambe hain, toh bhi cover badhana padega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A husband and wife both leaving home for work together in the morning, each carrying an office bag, kids waving from the door",
+     "type": "art"
+    },
+    "vo": "Aur agar pehle se achhi bachat hai, ya ghar mein doosra kamaane wala bhi hai, toh thode kam cover se bhi kaam chal sakta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A doctor's clinic with a man honestly filling a medical form, a stethoscope and a blood pressure machine on the desk, clean white room",
+     "type": "art"
+    },
+    "vo": "Ab ek zaroori baat, jo claim ke waqt sabse kaam aati hai. Form bharte waqt sach likhiye. Bimari, smoking, sab kuch, bina kuch chhupaye."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A solid iron safe with its door firmly shut and bolted, a calendar on the wall above it with pages flown away, quiet office",
+     "type": "art"
+    },
+    "vo": "Kyunki niyam ke mutabik, policy ke 3 saal poore hone ke baad, company aam taur par purani baaton par claim nahi rok sakti."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A crack running through a glass window pane in a family home, a woman standing behind it looking concerned, rainy day outside",
+     "type": "art"
+    },
+    "vo": "Par shuru ke 3 saal mein, form mein chhupaayi gayi baat claim rok sakti hai. Isliye sach likhna hi family ki asli suraksha hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A man wearing a raincoat as a shirt and carrying a shirt as an umbrella in the rain, people around smiling, comic illustration",
+     "type": "art"
+    },
+    "vo": "Ab woh galti jo sabse zyada hoti hai. Log insurance ko investment samajh lete hain, aur investment ko suraksha. Dono ulat jaate hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG in his striped shirt standing in a sunny courtyard with three neat folders on a table in front of him, explaining calmly",
+     "type": "art"
+    },
+    "vo": "Toh seedhi baat. Pehle family ki suraksha, term plan se. Phir bachat, alag se, apne control mein. Aur purani policy ka hisaab, thande dimaag se."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A quiet study corner with a desk lamp, a notebook, a calculator and a cup of tea, a man thinking with his chin on his hand, evening",
+     "type": "art"
+    },
+    "vo": "Yeh investment advice nahi hai. Apni zaroorat aur halaat dekh kar hi faisla kijiye, aur zaroorat ho toh kisi registered advisor se baat kijiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "The same steel almirah drawer from the opening, now open in daylight, a hand pulling out a policy paper with determination",
+     "type": "art"
+    },
+    "vo": "Yaad hai shuruaat ka sawaal? Aapki policy family ko kitna degi? Ab aap jaante ho, jawab policy ke sum assured mein likha hai. Aaj hi dekhiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "A hospital billing counter at night, a worried man holding a long bill, a receptionist shaking her head, cold blue lighting",
+     "type": "art"
+    },
+    "vo": "Agle video mein health insurance ki baat. Hospital ka bill aata hai, aur policy kehti hai, yeh cover nahi hai. Aisa kyun hota hai?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "SG smiling warmly on a rooftop at sunset, the city lights starting to glow behind him, a cup of chai in his hand",
+     "type": "art"
+    },
+    "vo": "Par pehle bataiye, aapke ghar mein kaunsi policy hai, term plan ya paisa wapas wali? Comment mein bas ek word likhiye, main har jawab padhunga."
+   }
+  ],
+  "thumbnail": {
+   "name": "TERM PLAN",
+   "name_hi": "टर्म प्लान",
+   "scene": "LEFT: a fat pile of old insurance policy papers in an open steel almirah yielding only a tiny heap of coins; RIGHT: a giant steel umbrella shielding a small family home from a violent storm.",
+   "words": [
+    "4-6%",
+    "TRAP?"
+   ],
+   "words_hi": [
+    "4-6%",
+    "ट्रैप?"
+   ]
+  },
+  "title": "1 crore ka term plan ya 'paisa wapas' policy: ek hi premium, do alag nateeje"
+ },
+ "status": "written",
  "timings": [],
- "topic": {},
- "updated": "2026-11-11T09:45:45+00:00",
+ "topic": {
+  "hooks": [
+   "Paisa wapas wali policy mein asli return kitna hai?",
+   "Term plan mein kuch wapas nahi milta, phir bhi sahi kyun?",
+   "Kitne ka cover lena chahiye?"
+  ],
+  "id": "term-vs-endowment",
+  "patch_tries": 1,
+  "summary": "Term insurance against endowment and money-back policies: what the family gets if the earner dies, what the policyholder gets at maturity, the real yearly return of a traditional policy, surrender value in the early years. How much cover a family needs.",
+  "target_minutes": 12,
+  "theme": "insurance",
+  "title": "1 crore ka term plan ya 'paisa wapas' policy: ek hi premium, do alag nateeje"
+ },
+ "updated": "2026-11-11T10:46:03+00:00",
  "writer": "claude"
 }
