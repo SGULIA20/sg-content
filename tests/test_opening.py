@@ -40,6 +40,8 @@ def test_the_full_screen_frame_tags_a_realistic_picture_and_puts_the_pill_under_
     pills = {1: "pill.png", "tag": "tag.png"}
     ov = opening.frame_overlays(p, 1, 6.0, (1080, 1920), pills, 170, 120, 150)
     assert ov[0] == ("tag.png", 120, 170, 0.0, 6.0) and ov[1][0] == "pill.png" and ov[1][2:] == (338, 0.15, 6.0) and "min(120," in ov[1][1]
+    low = opening.frame_overlays(p, 1, 6.0, (1080, 1920), pills, 170, 120, 150, pill_y=1080)
+    assert low[1][2] == 1080                                # above the captions, never across a face
     assert opening.frame_overlays(p, 3, 6.0, (1080, 1920), pills, 170, 120, 150) == []      # scene 4 is not realistic here and has no pill
 
 

@@ -125,15 +125,16 @@ def render_pills(piece, out_dir: Path, size: tuple, render) -> dict:
 POP_S = 0.28                        # a pill slides in from the left in this time
 
 
-def frame_overlays(piece, i: int, dur: float, size: tuple, pills: dict, top: int, side: int, logo_px: int) -> list:
+def frame_overlays(piece, i: int, dur: float, size: tuple, pills: dict, top: int, side: int, logo_px: int, pill_y: int | None = None) -> list:
     """Timed overlays (png, x, y, start, end) for the full-screen story frame: the AI tag top-left on a realistic picture for the whole
-    scene; the scene's pill on its own row under the badge, sliding in from the left (x is an ffmpeg expression)."""
+    scene; the scene's pill sliding in from the left (x is an ffmpeg expression). The pill sits at pill_y, just above the captions
+    (founder, 11 Nov 2026: under the badge it slid across people's faces: "written comes on faces"); without pill_y, under the badge."""
     out = []
     if "tag" in pills and is_hero_scene(piece, i):
         out.append((pills["tag"], side, top, 0.0, dur))
     if i in pills:
         slide = f"'min({side},-{size[0]}+({size[0]}+{side})*(t-0.15)/{POP_S})'"
-        out.append((pills[i], slide, top + logo_px + 18, 0.15, dur))
+        out.append((pills[i], slide, pill_y if pill_y is not None else top + logo_px + 18, 0.15, dur))
     return out
 
 

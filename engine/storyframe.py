@@ -278,14 +278,15 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
                 else:
                     cards.render("storycap", {"text": text}, png, (w, band_h))
             overlays.append((png, 0, bottom_y, s, e))
-        overlays += opening.frame_overlays(piece, i, dur, size, pills, geo["top"], geo["side"], LOGO_PX) if full else []
+        overlays += opening.frame_overlays(piece, i, dur, size, pills, geo["top"], geo["side"], LOGO_PX,
+                                            pill_y=geo["cap_y"] - opening.PILL_SIZE_H - 16) if full else []
         chip = None
         if piece.channel == "arthvan" and scene_d.get("label") in lint.MYTH_LABELS and i not in pills:
             chip = out_dir / f"label-{scene_d['label']}.png"
             if not chip.exists():
                 cards.render("label", {"label": scene_d["label"]}, chip, (400, 90))
-        if full and chip is not None:                                # on the pill's row, under the badge
-            overlays.append((chip, geo["side"], geo["top"] + LOGO_PX + 18, 0.0, dur)); chip = None
+        if full and chip is not None:                                # on the pill's row, just above the captions (11 Nov 2026: off the faces)
+            overlays.append((chip, geo["side"], geo["cap_y"] - opening.PILL_SIZE_H - 16, 0.0, dur)); chip = None
         cam = None
         if full and not short and Path(panel).suffix.lower() != ".mp4":      # a long: a strong pan or zoom, a different path each scene
             cam = camera_expr(CAMERA_PATHS[i % len(CAMERA_PATHS)], max(1, int(round(dur * FPS))), 1 if (i // len(CAMERA_PATHS)) % 2 == 0 else -1)
