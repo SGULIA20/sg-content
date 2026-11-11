@@ -12,6 +12,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
+import os  # noqa: E402
+
+os.environ.setdefault("SG_FORCE_NEW_STYLE", "1")     # any piece can be previewed in the new style, whatever its date
+
 from engine import art, intro, opening, pieces, pipeline, storyframe, voice  # noqa: E402
 from engine.config import ROOT, VIDEO  # noqa: E402
 
@@ -24,7 +28,7 @@ def main(argv=None) -> int:
     if not opening.is_trial(piece):
         print(f"{piece.id} is outside the new-opening test window (content/hero-test.json)")
         return 2
-    size = VIDEO["short"]
+    size = VIDEO[piece.kind]
     voice_id = (piece.topic or {}).get("voice") or "voice_7o0kddoq6q2z"
     lines, panels = [], []
     for i, sc in enumerate(piece.script["scenes"]):

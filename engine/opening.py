@@ -46,6 +46,9 @@ def _window(channel: str, root: Path = None, kind: str = "short") -> tuple:
 def is_trial(piece, root: Path = None) -> bool:
     if piece.kind not in ("short", "long"):
         return False
+    import os
+    if os.environ.get("SG_FORCE_NEW_STYLE") == "1" and root is None:      # a preview of an older piece in the new style (scripts/preview_piece.py)
+        return True
     win = _window(piece.channel, root, piece.kind)
     return bool(win) and win[0] <= str(piece.id)[:10] <= win[1]
 
