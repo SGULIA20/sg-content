@@ -1,0 +1,803 @@
+1
+00:00:00,000 --> 00:00:06,376
+50 lakh ka home loan, aur bank ko wapas 95,93,875 rupaye?
+
+2
+00:00:06,376 --> 00:00:12,751
+Haan, yeh Bank of Baroda ke apne calculator ka hisaab hai.
+
+3
+00:00:12,751 --> 00:00:14,490
+Matlab lagbhag double.
+
+4
+00:00:14,490 --> 00:00:17,573
+Ghar ek khareeda, par bill lagbhag dugna.
+
+5
+00:00:17,573 --> 00:00:20,655
+Aur sabse bada jhatka abhi baaki hai.
+
+6
+00:00:20,655 --> 00:00:26,380
+Shuru ke saalon ki EMI ka zyaadatar hissa ghar mein jaata hi nahi.
+
+7
+00:00:26,380 --> 00:00:31,332
+Yeh kahani hai Bhai ki. Naukri pakki, shaadi ho chuki,
+
+8
+00:00:31,332 --> 00:00:36,779
+aur sapna ek, apna flat. Bank Uncle ne loan pass kiya,
+
+9
+00:00:36,779 --> 00:00:39,750
+aur ghar mein mithai baati gayi.
+
+10
+00:00:39,750 --> 00:00:42,870
+Papa ne kandhe par haath rakha aur bole,
+
+11
+00:00:42,870 --> 00:00:45,210
+bas EMI time par bharte rehna,
+
+12
+00:00:45,210 --> 00:00:48,720
+baaki sab apne aap ho jaayega. Sabne maan liya.
+
+13
+00:00:48,720 --> 00:00:50,280
+Lekin kya sach mein?
+
+14
+00:00:50,280 --> 00:00:52,017
+Kyunki kuch saal baad,
+
+15
+00:00:52,017 --> 00:00:56,359
+Bhai ne pehli baar apna loan statement dhyaan se khola.
+
+16
+00:00:56,359 --> 00:01:00,267
+Aur jo dekha, us raat use neend nahi aayi.
+
+17
+00:01:00,267 --> 00:01:01,570
+Kya tha usme?
+
+18
+00:01:01,570 --> 00:01:03,274
+Itni EMI bhar di,
+
+19
+00:01:03,274 --> 00:01:07,108
+phir bhi bacha hua udhaar lagbhag utna ka utna.
+
+20
+00:01:07,108 --> 00:01:10,942
+Toh paisa gaya kahaan? Seedha bank ki jeb mein,
+
+21
+00:01:10,942 --> 00:01:12,220
+byaaj ban kar.
+
+22
+00:01:12,220 --> 00:01:14,348
+Toh aaj teen sawaal. Pehla,
+
+23
+00:01:14,348 --> 00:01:19,029
+50 lakh ka loan lagbhag double kaise ban jaata hai? Doosra,
+
+24
+00:01:19,029 --> 00:01:23,710
+pehle saalon mein ghar ka kitna hissa sach mein aapka hua?
+
+25
+00:01:23,710 --> 00:01:24,632
+Aur teesra,
+
+26
+00:01:24,632 --> 00:01:31,548
+saal mein sirf ek extra EMI bharne se kitna byaaj aur kitne saal bachte hain?
+
+27
+00:01:31,548 --> 00:01:34,775
+Teesre jawaab ke liye aakhir tak rukna,
+
+28
+00:01:34,775 --> 00:01:37,080
+woh sabse kaam ka hai.
+
+29
+00:01:37,080 --> 00:01:42,110
+Par pehle chalte hain wahan, jahan yeh kahani shuru hui thi.
+
+30
+00:01:42,110 --> 00:01:43,940
+Bank ki counter par,
+
+31
+00:01:43,940 --> 00:01:48,970
+jahan Bhai ne khushi khushi har kaagaz par sign kiya tha.
+
+32
+00:01:48,970 --> 00:01:51,525
+Bank Uncle ne file kholi. Pehli baat,
+
+33
+00:01:51,525 --> 00:01:54,080
+ghar ki poori keemat bank nahi deta.
+
+34
+00:01:54,080 --> 00:01:58,460
+Kam se kam 20 percent aapko apni jeb se dena padta hai.
+
+35
+00:01:58,460 --> 00:02:02,864
+Isse margin kehte hain, yaani ghar mein aapka apna hissa.
+
+36
+00:02:02,864 --> 00:02:05,066
+Baaki sab bank ka udhaar.
+
+37
+00:02:05,066 --> 00:02:09,030
+Aur asli kahani isi udhaar se shuru hoti hai.
+
+38
+00:02:09,030 --> 00:02:13,345
+Bhai ke papers par likha tha, loan 50 lakh rupaye.
+
+39
+00:02:13,345 --> 00:02:16,365
+Is asal udhaar ko principal kehte hain.
+
+40
+00:02:16,365 --> 00:02:20,680
+Yaani woh paisa jo bank ne sach mein aapko diya.
+
+41
+00:02:20,680 --> 00:02:24,539
+Ab bank yeh paisa muft mein toh dega nahi.
+
+42
+00:02:24,539 --> 00:02:27,111
+Udhaar ka bhi kiraya hota hai.
+
+43
+00:02:27,111 --> 00:02:30,970
+Usi kiraye ko byaaj kehte hain, angrezi mein interest.
+
+44
+00:02:30,970 --> 00:02:34,430
+In dono ko milaakar banti hai EMI.
+
+45
+00:02:34,430 --> 00:02:39,866
+EMI yaani har mahine ki fixed kisht. Har mahine wahi raqam,
+
+46
+00:02:39,866 --> 00:02:43,820
+20 saal tak, bina ek bhi mahina chooke.
+
+47
+00:02:43,820 --> 00:02:50,205
+Ab Bank of Baroda ke calculator mein 50 lakh ka loan daalo.
+
+48
+00:02:50,205 --> 00:02:53,397
+Akela byaaj aata hai 45,93,875 rupaye.
+
+49
+00:02:53,397 --> 00:02:56,590
+Yaani lagbhag asal udhaar jitna hi.
+
+50
+00:02:56,590 --> 00:03:00,726
+Socho zara. Aapne 50 lakh udhaar liye,
+
+51
+00:03:00,726 --> 00:03:07,815
+aur upar se lagbhag utne hi bank ko kiraye mein de diye.
+
+52
+00:03:07,815 --> 00:03:11,360
+Total bill ho gaya 95,93,875 rupaye.
+
+53
+00:03:11,360 --> 00:03:16,370
+Par aisa hota kyun hai? Byaaj sirf ek baar nahi lagta.
+
+54
+00:03:16,370 --> 00:03:19,102
+Har mahine, jitna udhaar bacha hai,
+
+55
+00:03:19,102 --> 00:03:22,290
+us poore par naya byaaj judta hai.
+
+56
+00:03:22,290 --> 00:03:24,781
+Ise kiraye ke ghar jaisa samjho.
+
+57
+00:03:24,781 --> 00:03:29,348
+Jab tak aap usme rehte ho, har mahine kiraya dete ho.
+
+58
+00:03:29,348 --> 00:03:33,500
+Udhaar bhi waisa hi hai, jitni der rakho, utna kiraya.
+
+59
+00:03:33,500 --> 00:03:36,126
+Aur 20 saal bahut lambi der hai.
+
+60
+00:03:36,126 --> 00:03:39,503
+Itne saal bank ka paisa aapke paas rehta hai.
+
+61
+00:03:39,503 --> 00:03:43,630
+Isliye kiraya bhi itna bada ho jaata hai, lagbhag udhaar jitna.
+
+62
+00:03:43,630 --> 00:03:47,340
+Toh kya yeh poora byaaj bank ka munafa hai? Nahi.
+
+63
+00:03:47,340 --> 00:03:51,050
+Bank ko bhi FD waalon ko byaaj dena hota hai,
+
+64
+00:03:51,050 --> 00:03:54,760
+aur staff aur branch ka kharcha bhi uthana hota hai.
+
+65
+00:03:54,760 --> 00:03:58,111
+Lekin aapki jeb ke liye hisaab seedha hai.
+
+66
+00:03:58,111 --> 00:04:02,718
+Ghar ka udhaar alag, aur upar se lagbhag utna hi byaaj.
+
+67
+00:04:02,718 --> 00:04:05,650
+Yahi hai aapke ghar ka asli bill.
+
+68
+00:04:05,650 --> 00:04:09,337
+Behen ne yeh number dekha toh boli, theek hai,
+
+69
+00:04:09,337 --> 00:04:10,565
+byaaj zyada hai.
+
+70
+00:04:10,565 --> 00:04:16,300
+Par har EMI ke saath ghar thoda thoda apna toh hota jaata hai na?
+
+71
+00:04:16,300 --> 00:04:18,590
+Yahi sabse badi galatfehmi hai.
+
+72
+00:04:18,590 --> 00:04:23,628
+Shuru ke saalon mein ghar bahut hi dheere apna hota hai.
+
+73
+00:04:23,628 --> 00:04:27,750
+Kitna dheere? Par asli sawaal ab shuru hota hai.
+
+74
+00:04:27,750 --> 00:04:28,810
+Doosra sawaal.
+
+75
+00:04:28,810 --> 00:04:34,640
+Pehle saalon mein aapki EMI ka kitna hissa ghar mein gaya,
+
+76
+00:04:34,640 --> 00:04:37,820
+aur kitna bank ki jeb mein?
+
+77
+00:04:37,820 --> 00:04:41,000
+Jawaab ek table mein chhupa hai.
+
+78
+00:04:41,000 --> 00:04:45,968
+Is table ko amortisation schedule kehte hain. Naam mushkil, kaam seedha.
+
+79
+00:04:45,968 --> 00:04:50,484
+Har EMI mein kitna byaaj gaya, kitna asal udhaar kata,
+
+80
+00:04:50,484 --> 00:04:52,290
+sab likha hota hai.
+
+81
+00:04:52,290 --> 00:04:54,055
+Bank yeh table deta hai,
+
+82
+00:04:54,055 --> 00:04:56,526
+aksar app mein bhi mil jaata hai.
+
+83
+00:04:56,526 --> 00:04:59,349
+Par zyaadatar log ise kabhi kholte hi nahi.
+
+84
+00:04:59,349 --> 00:05:01,820
+Bhai ne bhi kabhi nahi khola tha.
+
+85
+00:05:01,820 --> 00:05:07,331
+Ab Bank of Baroda ka ek 20 saal ka schedule dekho.
+
+86
+00:05:07,331 --> 00:05:12,843
+Pehle saal poore saal ki EMI bhari gayi, kul 2,28,000 rupaye.
+
+87
+00:05:12,843 --> 00:05:16,350
+Ab andaaza lagao, isme byaaj kitna tha?
+
+88
+00:05:16,350 --> 00:05:18,738
+Jawaab hai 1,82,261 rupaye.
+
+89
+00:05:18,738 --> 00:05:25,304
+Yaani saal bhar ki EMI ka zyaadatar paisa seedha byaaj mein.
+
+90
+00:05:25,304 --> 00:05:30,080
+Asal udhaar mein toh bahut thoda hi gaya.
+
+91
+00:05:30,080 --> 00:05:33,550
+Matlab poore saal EMI bharne ke baad bhi,
+
+92
+00:05:33,550 --> 00:05:35,719
+udhaar lagbhag utna ka utna.
+
+93
+00:05:35,719 --> 00:05:40,490
+Ghar ka bahut chhota sa hissa hi sach mein aapka hua.
+
+94
+00:05:40,490 --> 00:05:43,573
+Aisa kyun? Shuru mein udhaar sabse bada hota hai.
+
+95
+00:05:43,573 --> 00:05:46,657
+Toh us par byaaj bhi sabse bada banta hai.
+
+96
+00:05:46,657 --> 00:05:49,740
+Aur EMI ka bada hissa wahi kha jaata hai.
+
+97
+00:05:49,740 --> 00:05:53,157
+Jaise jaise udhaar ghatta hai, byaaj bhi ghatta hai.
+
+98
+00:05:53,157 --> 00:05:57,333
+Tab EMI ka zyada hissa asal udhaar mein jaane lagta hai.
+
+99
+00:05:57,333 --> 00:05:59,990
+Lekin yeh bahut saalon baad hota hai.
+
+100
+00:05:59,990 --> 00:06:02,846
+Isi ko front-loaded byaaj kehte hain.
+
+101
+00:06:02,846 --> 00:06:09,033
+Yaani bank apna kiraya shuru ke saalon mein hi zyada vasool karta hai.
+
+102
+00:06:09,033 --> 00:06:12,840
+Aakhri saalon ki EMI zyaadatar asal chukaati hai.
+
+103
+00:06:12,840 --> 00:06:16,389
+Ab samjhe, Bhai ko neend kyun nahi aayi?
+
+104
+00:06:16,389 --> 00:06:19,494
+Kuch saal EMI bharne ke baad bhi,
+
+105
+00:06:19,494 --> 00:06:23,930
+statement mein bacha hua udhaar pahaad jaisa dikh raha tha.
+
+106
+00:06:23,930 --> 00:06:25,809
+Aur ek khatra bhi tha.
+
+107
+00:06:25,809 --> 00:06:28,439
+Bhai ka loan floating rate par tha.
+
+108
+00:06:28,439 --> 00:06:33,700
+Floating rate yaani byaaj RBI ke faislon ke saath upar neeche hota rehta hai.
+
+109
+00:06:33,700 --> 00:06:37,423
+Byaaj badhe, toh bank aksar EMI nahi chhedta.
+
+110
+00:06:37,423 --> 00:06:42,543
+Chupchaap loan ke saal badha deta hai. Aur lambe saal matlab,
+
+111
+00:06:42,543 --> 00:06:44,870
+aur zyada mahine ka byaaj.
+
+112
+00:06:44,870 --> 00:06:48,141
+Toh sirf EMI time par bharna kaafi nahi hai.
+
+113
+00:06:48,141 --> 00:06:50,685
+Papa ki baat aadhi hi sahi thi.
+
+114
+00:06:50,685 --> 00:06:54,320
+Lekin is jaal se nikalne ka ek seedha raasta hai.
+
+115
+00:06:54,320 --> 00:06:57,164
+Mummy ne chai rakhi aur poocha,
+
+116
+00:06:57,164 --> 00:07:02,852
+toh kya hum 20 saal tak bas bank ka kiraya bharte rahenge?
+
+117
+00:07:02,852 --> 00:07:06,170
+Behen muskurayi. Nahi Mummy, ek tareeka hai.
+
+118
+00:07:06,170 --> 00:07:09,223
+Teesra sawaal, aur sabse kaam ka.
+
+119
+00:07:09,223 --> 00:07:13,801
+Agar saal mein sirf ek extra EMI bhar do,
+
+120
+00:07:13,801 --> 00:07:18,380
+toh kya hoga? Jawaab sunkar aap shayad chaunk jaayenge.
+
+121
+00:07:18,380 --> 00:07:23,867
+Isse prepayment kehte hain. Yaani time se pehle, apni marzi se,
+
+122
+00:07:23,867 --> 00:07:26,860
+loan mein extra paisa jama karna.
+
+123
+00:07:26,860 --> 00:07:31,350
+Yeh paisa seedha asal udhaar ko kam karta hai.
+
+124
+00:07:31,350 --> 00:07:35,480
+Aur yahi iska jaadu hai. Asal udhaar kam hua,
+
+125
+00:07:35,480 --> 00:07:40,068
+toh agle mahine se us par byaaj bhi kam lagega.
+
+126
+00:07:40,068 --> 00:07:43,280
+Har mahine, loan ke aakhri din tak.
+
+127
+00:07:43,280 --> 00:07:48,254
+The Economic Times ne ek hisaab chhapa. 50 lakh ka loan,
+
+128
+00:07:48,254 --> 00:07:50,968
+Bhai ke loan se thoda lamba.
+
+129
+00:07:50,968 --> 00:07:55,490
+Bas saal mein ek extra EMI, aur kuch nahi badla.
+
+130
+00:07:55,490 --> 00:08:00,895
+Report ke mutabik, byaaj mein lagbhag 18.31 lakh rupaye bache. Socho,
+
+131
+00:08:00,895 --> 00:08:06,300
+saal mein sirf ek extra kisht, aur lakhon rupaye ki bachat.
+
+132
+00:08:06,300 --> 00:08:10,237
+Aur loan bhi 5 saal se zyada pehle khatam.
+
+133
+00:08:10,237 --> 00:08:12,861
+Yaani saalon tak koi EMI nahi.
+
+134
+00:08:12,861 --> 00:08:18,110
+Woh paisa bachchon ki padhai ya budhape ke kaam aa sakta hai.
+
+135
+00:08:18,110 --> 00:08:19,859
+Itna bada fark kyun?
+
+136
+00:08:19,859 --> 00:08:23,794
+Kyunki extra paisa shuru ke saalon mein jaata hai,
+
+137
+00:08:23,794 --> 00:08:29,040
+jab udhaar sabse bada hai aur byaaj sabse zyada kaat raha hai.
+
+138
+00:08:29,040 --> 00:08:32,160
+Wahi front-loading jo ab tak aapke khilaaf thi,
+
+139
+00:08:32,160 --> 00:08:36,060
+ab aapke saath kaam karti hai. Jitna jaldi prepay karo,
+
+140
+00:08:36,060 --> 00:08:38,010
+utna zyada byaaj bachta hai.
+
+141
+00:08:38,010 --> 00:08:40,145
+Bhai ne Behen se poocha,
+
+142
+00:08:40,145 --> 00:08:43,989
+par ek extra EMI aayegi kahaan se? Behen boli,
+
+143
+00:08:43,989 --> 00:08:45,270
+Diwali ka bonus.
+
+144
+00:08:45,270 --> 00:08:49,540
+Ya har mahine EMI ka thoda thoda hissa alag rakho.
+
+145
+00:08:49,540 --> 00:08:54,286
+Saal ke aakhir tak ek EMI jitna paisa jud jaata hai.
+
+146
+00:08:54,286 --> 00:08:57,738
+Woh seedha bank mein, prepayment ke naam par.
+
+147
+00:08:57,738 --> 00:09:01,190
+Bas itna sa kaam, saal mein ek baar.
+
+148
+00:09:01,190 --> 00:09:05,393
+Par Papa ko darr tha. Bank waale penalty toh nahi lagayenge?
+
+149
+00:09:05,393 --> 00:09:09,214
+Pehle paisa lautaoge, toh unka byaaj ka nuksaan hoga na?
+
+150
+00:09:09,214 --> 00:09:10,360
+Sawaal sahi tha.
+
+151
+00:09:10,360 --> 00:09:14,349
+Yahan RBI ka ek saaf niyam aapke kaam aata hai.
+
+152
+00:09:14,349 --> 00:09:16,343
+Floating rate home loan par,
+
+153
+00:09:16,343 --> 00:09:21,130
+banks prepayment ya loan jaldi band karne ki penalty nahi le sakte.
+
+154
+00:09:21,130 --> 00:09:23,995
+Yaani aapka loan floating rate par hai,
+
+155
+00:09:23,995 --> 00:09:28,906
+toh extra paisa jama karne par bank koi penalty nahi maang sakta.
+
+156
+00:09:28,906 --> 00:09:32,180
+Yeh aapka haq hai, bank ki meherbaani nahi.
+
+157
+00:09:32,180 --> 00:09:36,347
+Ek baat dhyaan rakho. Prepay karte waqt bank ko likhkar bolo,
+
+158
+00:09:36,347 --> 00:09:39,378
+EMI wahi rakho, loan ke saal kam karo.
+
+159
+00:09:39,378 --> 00:09:42,030
+Byaaj ki zyaadatar bachat isi mein hai.
+
+160
+00:09:42,030 --> 00:09:47,053
+Bhai ne usi hafte bank jaakar pehli extra EMI jama ki.
+
+161
+00:09:47,053 --> 00:09:52,077
+Statement mein pehli baar udhaar sach mein kam dikha. Par ruko,
+
+162
+00:09:52,077 --> 00:09:54,360
+ek galti abhi baaki hai.
+
+163
+00:09:54,360 --> 00:09:58,306
+Ab woh galti jo bahut log karte hain. Woh sochte hain,
+
+164
+00:09:58,306 --> 00:10:00,817
+home loan par tax toh bachta hai,
+
+165
+00:10:00,817 --> 00:10:02,970
+phir jaldi chukaane ki kya zaroorat?
+
+166
+00:10:02,970 --> 00:10:06,442
+Haan, tax ka fayda hai. Section 24(b) mein,
+
+167
+00:10:06,442 --> 00:10:10,348
+apne rehne waale ghar ke loan ke byaaj par,
+
+168
+00:10:10,348 --> 00:10:13,820
+saal mein 2,00,000 rupaye tak deduction milta hai.
+
+169
+00:10:13,820 --> 00:10:17,533
+Deduction yaani itni income par tax nahi lagta.
+
+170
+00:10:17,533 --> 00:10:22,173
+Asal udhaar chukaane par Section 80C mein bhi fayda hai,
+
+171
+00:10:22,173 --> 00:10:26,350
+PPF jaisi cheezon ke saath milaakar 1,50,000 rupaye tak.
+
+172
+00:10:26,350 --> 00:10:27,364
+Par dhyaan do,
+
+173
+00:10:27,364 --> 00:10:30,406
+yeh dono fayde purane tax system mein milte hain.
+
+174
+00:10:30,406 --> 00:10:34,800
+Naye tax system mein apne rehne waale ghar par yeh deduction nahi milte.
+
+175
+00:10:34,800 --> 00:10:37,567
+Aur sabse badi baat. Tax mein jo bachta hai,
+
+176
+00:10:37,567 --> 00:10:39,720
+woh byaaj ka sirf ek hissa hai.
+
+177
+00:10:39,720 --> 00:10:41,258
+Bank ko diya baaki byaaj,
+
+178
+00:10:41,258 --> 00:10:43,410
+phir bhi aapki jeb se hi gaya.
+
+179
+00:10:43,410 --> 00:10:48,078
+Toh aapke liye seedhi baat kya hai? Apna loan statement kholo.
+
+180
+00:10:48,078 --> 00:10:51,898
+Dekho, is saal ki EMI mein kitna byaaj gaya,
+
+181
+00:10:51,898 --> 00:10:54,020
+aur kitna asal udhaar kata.
+
+182
+00:10:54,020 --> 00:10:57,771
+Phir check karo, aapka loan floating rate par hai ya fixed.
+
+183
+00:10:57,771 --> 00:11:01,182
+Floating hai, toh prepayment par penalty ka sawaal hi nahi.
+
+184
+00:11:01,182 --> 00:11:03,910
+Shaq ho, toh bank se likhit mein poocho.
+
+185
+00:11:03,910 --> 00:11:04,293
+Haan,
+
+186
+00:11:04,293 --> 00:11:08,892
+prepay karne se pehle emergency ke liye kuch paisa alag zaroor rakho.
+
+187
+00:11:08,892 --> 00:11:12,724
+Aur apne CA se tax ka hisaab bhi milaa lo,
+
+188
+00:11:12,724 --> 00:11:14,640
+khaaskar purana ya naya system.
+
+189
+00:11:14,640 --> 00:11:16,722
+Yeh investment advice nahi hai.
+
+190
+00:11:16,722 --> 00:11:19,637
+Har ghar ki zaroorat alag hoti hai.
+
+191
+00:11:19,637 --> 00:11:22,968
+Par ek baat har ghar par lagti hai,
+
+192
+00:11:22,968 --> 00:11:25,050
+apni EMI ka table samajhna.
+
+193
+00:11:25,050 --> 00:11:28,987
+Bhai ki kahani yaad karo. 50 lakh ka loan,
+
+194
+00:11:28,987 --> 00:11:32,923
+aur bill lagbhag double. Par ab use pata hai,
+
+195
+00:11:32,923 --> 00:11:36,860
+EMI sirf bharni nahi hoti, samajhni bhi padti hai.
+
+196
+00:11:36,860 --> 00:11:41,437
+Agle video mein ek aur bada sawaal. Ghar khareedna behtar hai,
+
+197
+00:11:41,437 --> 00:11:43,933
+ya kiraye par rehkar paisa bachana?
+
+198
+00:11:43,933 --> 00:11:46,430
+Jawaab shayad aapki soch badal de.
+
+199
+00:11:46,430 --> 00:11:51,013
+Aur ab aapse ek aasaan sawaal.
+
+200
+00:11:51,013 --> 00:11:57,889
+Aapka home loan floating rate par hai ya fixed?
+
+201
+00:11:57,889 --> 00:12:04,000
+Comments mein likho, floating ya fixed. Main padhunga.

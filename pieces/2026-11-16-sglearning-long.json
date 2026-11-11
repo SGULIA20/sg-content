@@ -89,9 +89,16 @@
    "drafts": 2,
    "research": 2
   },
+  "captions": {
+   "en": "AUieDaYkDbCKmPC8UcUH8pJmlQZzPaM2v1MZxacKLqDYr1pdKGAO-ixf",
+   "gu": "AUieDab0FYTbT9_kwR207AiE0k-dM3pBBSOjQ_4eX8qB9xA_vPCJDILW8i72pxqU-MOQsvYVUkA",
+   "hi": "AUieDaZhQShLUnVX1DLl0XIgBJK2niZFk8YEG1qyNgueu8-BpIyzExOYnvgQiIn9wYIDJd8",
+   "mr": "AUieDaYbjvfc1wOTjv_OHd0bbTkEEfN2W-rMjIng9rxJUec0l3GVYe52KqAZF8rlFSw",
+   "ta": "AUieDab0sqeyCqyexeog0AdGqMpvNjlihdAXGp9opZDO3kuvf-34CNlLt9pX26t6Lb8"
+  },
   "cost": {
    "inr": 87.0,
-   "usd": 0.812058,
+   "usd": 1.185172,
    "voice": 64
   },
   "dead_topics": [
@@ -105,7 +112,15 @@
    "proven-2026-10-30-sglearning-short"
   ],
   "drafts": 3,
-  "intro_sent": "2026-11-11T09:45:42+00:00"
+  "intro": {
+   "clip": "2026-11-16-sglearning-long.mp4",
+   "clip_seconds": 0,
+   "composed": "2026-11-11T11:41:47+00:00",
+   "seconds": 8.86
+  },
+  "intro_checked": "df3471b052dd127e",
+  "intro_sent": "2026-11-11T09:45:42+00:00",
+  "yt_id": "9jXxEpVYzf0"
  },
  "kind": "long",
  "publish_day": "2026-11-16",
@@ -912,7 +927,7 @@
   },
   "title": "50 lakh ka home loan, bill *double* kyun? 🏠"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   14.49,
@@ -995,12 +1010,13 @@
    "text": "Pachaas lakh ka ghar, bill lagbhag ek crore ka. Baaki paisa kahan gaya? Chaliye, hisaab dekhte hain.",
    "words": 17
   },
+  "look": "claymation",
   "summary": "A family buys a flat on a 20-year home loan; the amortisation schedule shows interest front-loaded, the total paid roughly double the price, and what prepaying one extra EMI a year does. Explain EMI, principal, interest, prepayment, floating rate.",
   "target_minutes": 12,
   "theme": "loan",
   "title": "50 lakh ka ghar, 1 crore ka bill: 20 saal ki EMI mein bank kitna kamata hai",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-11-11T09:45:45+00:00",
+ "updated": "2026-11-11T11:41:54+00:00",
  "writer": "claude"
 }
