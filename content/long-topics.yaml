@@ -51,3 +51,75 @@
   title: "10 lakh ki gaadi: loan par lein ya cash, aur 5 saal mein asli kharcha kya"
   summary: "Total cost of car ownership: loan interest, depreciation, insurance, fuel, service; the loan-vs-cash decision with opportunity cost, why a used car can be the smarter maths for many families."
   hooks: ["Gaadi 5 saal mein kitni sasti ho jaati hai?", "Car loan ka byaaj kitna dete hain?", "Cash hai toh bhi loan lena sahi hai?"]
+# 11 Nov 2026: the ten topics above were all used and the rotation restarted on the first one, so the 16 Nov long came out on the same
+# subject as the 21 Nov long (home loan). Fourteen more, each with a theme (engine/themes.py).
+- id: rent-vs-buy
+  theme: prices
+  title: "Kiraye par rahein ya ghar khareedein: 20 saal ka poora hisaab"
+  summary: "Renting against buying the same flat over 20 years: rent rises, EMI, down payment, maintenance, property tax, and what the saved difference becomes if it is kept aside. When buying wins, when renting wins, and the questions a family should ask before deciding."
+  hooks: ["30,000 kiraya ya 60,000 EMI: 20 saal baad kaun aage?", "Down payment ka paisa ghar mein lagana sahi hai?", "Kiraya dena paisa barbaad karna hai?"]
+- id: term-vs-endowment
+  theme: insurance
+  title: "1 crore ka term plan ya 'paisa wapas' policy: ek hi premium, do alag nateeje"
+  summary: "Term insurance against endowment and money-back policies: what the family gets if the earner dies, what the policyholder gets at maturity, the real yearly return of a traditional policy, surrender value in the early years. How much cover a family needs."
+  hooks: ["Paisa wapas wali policy mein asli return kitna hai?", "Term plan mein kuch wapas nahi milta, phir bhi sahi kyun?", "Kitne ka cover lena chahiye?"]
+- id: credit-score-explained
+  theme: loan
+  title: "CIBIL score 650 se 780: ek number jo aapke loan ka byaaj tay karta hai"
+  summary: "How a credit score is built: payment history, card usage, loan mix, enquiries; what a late EMI does and for how long; how to read the free yearly report and dispute an error; what the score changes on a home loan's rate in rupees."
+  hooks: ["Ek EMI late hui, score kitna girta hai?", "Credit card band karne se score badhta hai ya girta hai?", "Score ka fark home loan par kitne lakh ka hai?"]
+- id: gold-loan-vs-personal-loan
+  theme: gold
+  title: "Paise ki zaroorat: zevar girvi rakhein ya personal loan lein"
+  summary: "Gold loan against personal loan for a sudden need: interest, processing fees, repayment styles, what happens on default (auction against a hit to the credit score), and the RBI limits on how much is lent against gold. A worked example of two lakh for one year."
+  hooks: ["Gold loan sasta kyun hota hai?", "Kisht chhooti toh zevar kab neelam hota hai?", "2 lakh ek saal ke liye: kaun sa loan kitne ka padega?"]
+- id: senior-savings-schemes
+  theme: bank
+  title: "Retire hone par 30 lakh kahan rakhein: SCSS, post office, FD ka seedha muqabla"
+  summary: "The Senior Citizen Savings Scheme, post office monthly income scheme, bank FDs and RBI floating bonds: rates, limits, lock-in, tax on the interest and TDS, and how a retired couple can ladder them for a monthly income."
+  hooks: ["30 lakh se mahine ka kitna aa sakta hai?", "SCSS mein kitna paisa rakh sakte hain?", "Byaaj par tax kat-ta hai toh kya karein?"]
+- id: nps-explained
+  theme: jobs
+  title: "NPS: 60 ke baad kitni pension, aur paisa kab haath mein aata hai"
+  summary: "The National Pension System for a salaried or self-employed person: the tax deduction, where the money is invested, what can be taken out at 60 and what must buy an annuity, and what monthly pension different savings give. Against PPF and EPF."
+  hooks: ["5,000 mahine se 60 par kitni pension banti hai?", "NPS ka poora paisa ek saath kyun nahi milta?", "NPS, PPF ya EPF: retirement ke liye kaun sa?"]
+- id: first-salary-plan
+  theme: jobs
+  title: "Pehli salary 40,000: mahine ke aakhir mein zero kyun, aur ise kaise rokein"
+  summary: "A first-job budget: needs, wants and savings, the order to build things in (emergency fund, health cover, then investing), salary-slip lines explained (basic, HRA, PF, professional tax), and the common first-year mistakes with cards and EMIs."
+  hooks: ["Salary slip mein PF ka paisa kiska hai?", "Pehle saal mein sabse badi galti kya hoti hai?", "40,000 mein kitna bachana sahi hai?"]
+- id: buy-now-pay-later-trap
+  theme: loan
+  title: "'No cost EMI' sach mein muft hai? Phone ki kisht ka chhupa hisaab"
+  summary: "How no-cost EMI and buy-now-pay-later work: the discount given up, processing fees and GST on interest, late fees, and what several small EMIs do to a credit report. When it is harmless and when it is a trap."
+  hooks: ["No cost EMI mein cost kahan chhupi hai?", "Teen chhoti EMI se score par kya asar?", "Late hone par kitna jurmana lagta hai?"]
+- id: health-cover-top-up
+  theme: insurance
+  title: "5 lakh ka health cover kam pad gaya: top-up plan kya hota hai"
+  summary: "Why a base health policy runs out, how a super top-up works with a deductible, the cost of a higher base cover against base plus top-up, employer cover against one's own, and the waiting periods to know before a claim."
+  hooks: ["Company ka insurance hai, phir apna kyun lein?", "Top-up plan itna sasta kyun hota hai?", "Deductible ka matlab kya hai?"]
+- id: will-and-nominee
+  theme: bank
+  title: "Nominee malik nahi hota: papa ke account ka paisa kise milta hai"
+  summary: "Nominee against legal heir for bank accounts, FDs, mutual funds, insurance and property; what happens when there is no will; how a simple will is written and registered; the unclaimed deposits lying with the RBI fund and how families claim them."
+  hooks: ["Nominee aur waaris mein fark kya hai?", "Bina will ke paisa kise jaata hai?", "Banks mein hazaaron crore unclaimed kyun pade hain?"]
+- id: child-education-fund
+  theme: prices
+  title: "Aaj 10 lakh ki degree 15 saal baad kitne ki: bachche ki padhai ka fund"
+  summary: "Education costs rising faster than general prices: what an engineering or medical seat costs now and may cost in 15 years, how much to set aside monthly, Sukanya Samriddhi and PPF against market-linked options, and the place of an education loan."
+  hooks: ["15 saal baad college ki fees kitni hogi?", "Mahine ka kitna bachaein toh fees nikal jaaye?", "Sukanya Samriddhi mein kitna milta hai?"]
+- id: fd-interest-tax
+  theme: tax
+  title: "FD ke byaaj par TDS kat gaya: 15G, 15H aur refund ka poora tareeka"
+  summary: "How FD interest is taxed: the TDS threshold, slab tax on top, forms 15G and 15H and who may file them, how interest shows in the annual statement, and how to claim a refund when too much was cut. A worked example for a homemaker and a retiree."
+  hooks: ["FD par TDS kab kat-ta hai?", "15G form kaun bhar sakta hai?", "Kata hua TDS wapas kaise milta hai?"]
+- id: used-car-maths
+  theme: prices
+  title: "Nayi gaadi showroom se nikalte hi kitni sasti: used car ka hisaab"
+  summary: "Depreciation of a new car in the first three years, insurance and service costs, what to check on a used car (service record, insurance claims, loan clearance), and the five-year cost of a new against a three-year-old car."
+  hooks: ["Nayi gaadi pehle saal mein kitni girti hai?", "Used car lete waqt kaun se kaagaz dekhein?", "5 saal mein nayi aur purani gaadi ka kharcha kitna?"]
+- id: wedding-budget-loan
+  theme: loan
+  title: "Shaadi ke liye 10 lakh ka loan: 5 saal baad uska asli bill"
+  summary: "Paying for a wedding with a personal loan or cards: the interest over five years, what the same EMI would have built if saved, how families plan a wedding fund in advance, and where costs can be cut without anyone noticing."
+  hooks: ["Shaadi ka loan 5 saal mein kitne ka padta hai?", "Wahi EMI bachat mein jaati toh kya banta?", "Shaadi ka kharcha kahan kam ho sakta hai?"]
