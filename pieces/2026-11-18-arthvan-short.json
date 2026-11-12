@@ -156,7 +156,15 @@
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
-  "intro_sent": "2026-11-12T07:32:01+00:00"
+  "intro": {
+   "clip": "2026-11-18-arthvan-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-12T10:31:30+00:00",
+   "seconds": 8.38
+  },
+  "intro_checked": "7158a3a33933b30b",
+  "intro_sent": "2026-11-12T07:32:01+00:00",
+  "yt_id": "lhCU1nXQWDU"
  },
  "kind": "short",
  "publish_day": "2026-11-18",
@@ -376,7 +384,7 @@
   },
   "title": "Apna hi sharir kha gaya *Kirtimukha*? 😱"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   4.593,
@@ -415,6 +423,7 @@
    "text": "Kirtimukha: Shiv ka banaya jeev, apna hi sharir kyun kha gaya? Suniye, twist yahan hai!",
    "words": 15
   },
+  "look": "indian-comic",
   "summary": "Kirtimukha is the face on temple gateways, linked in the Skanda Purana to a being born from Shiva's anger. Check the Purana version, the Rahu/Jalandhara context, and examples such as Pattadakal and Hampi, marking the legend as legend.",
   "target_minutes": null,
   "title": "Mandir ke dwar par dikhne wala Kirtimukha kaun hai?",
@@ -428,6 +437,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-12T07:32:04+00:00",
+ "updated": "2026-11-12T10:31:39+00:00",
  "writer": "claude"
 }

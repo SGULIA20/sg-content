@@ -105,7 +105,15 @@
    "voice": 8
   },
   "drafts": 1,
-  "intro_sent": "2026-11-12T07:45:49+00:00"
+  "intro": {
+   "clip": "2026-11-18-sglearning-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-12T10:32:21+00:00",
+   "seconds": 8.38
+  },
+  "intro_checked": "ba2a9d20b138e8b1",
+  "intro_sent": "2026-11-12T07:45:49+00:00",
+  "yt_id": "joU1BDky-Ds"
  },
  "kind": "short",
  "publish_day": "2026-11-18",
@@ -259,7 +267,7 @@
   },
   "title": "Sahara ka *refund* aaj tak kyun atka? 🔒"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   3.293,
@@ -288,6 +296,7 @@
    "text": "Court ne Sahara ko refund bola, phir paisa kyun atka? Ruko, asli khel baaki!",
    "words": 14
   },
+  "look": "claymation",
   "summary": "Two collective-investment collapses: Sahara's bonds ordered refunded by the Supreme Court, Saradha in Bengal where lakhs of small savers lost deposits. How such schemes recruit, why the refund is still running, and the one check before handing cash to an agent.",
   "target_minutes": null,
   "title": "Sahara aur Saradha: chit fund ka paisa gaya kahan",
@@ -302,6 +311,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-12T07:45:52+00:00",
+ "updated": "2026-11-12T10:32:26+00:00",
  "writer": "claude"
 }
