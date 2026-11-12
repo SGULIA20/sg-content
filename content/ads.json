@@ -20,15 +20,17 @@
  "_limits_note": "Founder, 1 Nov 2026: a 1-month trial without pausing, to 30 Nov 2026; December only if the founder says go after the review. $5 a day per channel (budget_per_channel 70 over the 14-day formula = $5/day), about $310 a month for both; monthly_cap 300: the founder's hard limit per month (1 Nov 2026); the watch pauses both campaigns if a month's spend reaches it. No cost-per-subscriber pause. Earlier: $1.50 a day refused by Google's $5 Demand Gen floor (31 Oct).",
  "ad_videos": {
   "sglearning": [
-   "4GhXYmvbYI0",
-   "gmEHuRhLWN8"
+   "gmEHuRhLWN8",
+   "_N5t6L0D6ss",
+   "UQKKuTPvbAU"
   ],
   "arthvan": [
+   "blOqODdoAVI",
    "src8dllxEII",
-   "6SsYUMyyO-4",
-   "blOqODdoAVI"
+   "TqpzqE0whb0",
+   "-NQolPB4-xI"
   ]
  },
- "_ad_videos_note": "Founder, 5 Nov 2026: Saraswati (3s-vr6ZPXxc, many clicks, few 30-second views) out, Lepakshi pillar (blOqODdoAVI) in; Learning keeps FD and Gold Bond. Earlier (31 Oct): videos picked by topic because views were too few to rank. Empty = pick by watch data.",
+ "_ad_videos_note": "Founder, 12 Nov 2026 ('yes swap'): in 7 days about 41,000 ad clicks gave about 1,500 views and 5 subscribers on five videos made before the founder intro and his thumbnails. Learning: FD out, tax regime and hospital claim in, Gold Bond stays. SG-MYTH: Jagannath out, Sanchi and Karni Mata in, Lepakshi and Ayodhya stay. Picked as the newest with his intro (no other long had 20 views to rank by). Earlier: 5 Nov Saraswati out, Lepakshi in. Empty = pick by watch data.",
  "run_until": "2026-11-30"
 }
