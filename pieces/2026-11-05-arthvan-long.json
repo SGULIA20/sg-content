@@ -629,8 +629,17 @@
   "place": "Thanjavur, Tamil Nadu",
   "target_minutes": 14,
   "thumb_test": {
-   "phase": "B",
-   "switched": "2026-11-07T17:00+00:00"
+   "a": [
+    0,
+    null
+   ],
+   "b": [
+    0,
+    null
+   ],
+   "phase": "done",
+   "switched": "2026-11-07T17:00+00:00",
+   "winner": "A"
   },
   "title_hi": "Tanjore ke mandir ki parchhai",
   "voice": "voice_1kn3blc2u13l"
