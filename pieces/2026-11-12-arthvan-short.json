@@ -85,7 +85,9 @@
    "voice": 13
   },
   "drafts": 1,
+  "ig_reel_id": "18024314267941451",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-12-arthvan-short.mp4",
    "clip_seconds": 10.03,
@@ -95,6 +97,8 @@
   "intro_sent": "2026-11-05T21:11:22+00:00",
   "out_sha": "a26545a9cb50a63c620da8521ce5fa2503d6b610",
   "out_sha_intro": true,
+  "threads_id": "17918228250497598",
+  "threads_poll_id": "18185790919391008",
   "yt_id": "dxnhsdqef04"
  },
  "kind": "short",
@@ -305,7 +309,7 @@
   },
   "title": "Lonar ki jheel, aasmaan se giri *ulka*? 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   4.61,
@@ -354,6 +358,6 @@
   "title_hi": "Lonar, ulka se bani jheel",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-11-05T21:51:53+00:00",
+ "updated": "2026-11-12T16:11:26+00:00",
  "writer": "claude"
 }
