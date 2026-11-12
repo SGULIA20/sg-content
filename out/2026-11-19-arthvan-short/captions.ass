@@ -1,0 +1,71 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.11,Default,,0,0,0,,Tulsi ka vivah Shaligram patthar se
+Dialogue: 0,0:00:02.11,0:00:03.07,Default,,0,0,0,,hi kyun hota hai?
+Dialogue: 0,0:00:03.52,0:00:04.88,Default,,0,0,0,,Shiva Purana mein Vrinda thi,
+Dialogue: 0,0:00:04.88,0:00:07.13,Default,,0,0,0,,asur raja Jalandhara ki pativrata patni.
+Dialogue: 0,0:00:07.13,0:00:08.79,Default,,0,0,0,,Vishnu ne Jalandhara ka roop lekar
+Dialogue: 0,0:00:08.79,0:00:09.39,Default,,0,0,0,,use chhala.
+Dialogue: 0,0:00:09.84,0:00:11.61,Default,,0,0,0,,Sach jaankar Vrinda ne shraap diya,
+Dialogue: 0,0:00:11.61,0:00:12.49,Default,,0,0,0,,patthar ban jao!
+Dialogue: 0,0:00:12.49,0:00:15.36,Default,,0,0,0,,Vishnu Gandaki ke kinare Shaligram ban
+Dialogue: 0,0:00:15.36,0:00:15.58,Default,,0,0,0,,gaye.
+Dialogue: 0,0:00:16.03,0:00:17.43,Default,,0,0,0,,Padma Purana kehta hai,
+Dialogue: 0,0:00:17.43,0:00:19.19,Default,,0,0,0,,Vrinda ki chita se Tulsi ugi.
+Dialogue: 0,0:00:19.19,0:00:20.24,Default,,0,0,0,,Vishnu ne vachan diya,
+Dialogue: 0,0:00:20.24,0:00:22.17,Default,,0,0,0,,Dev Uthani Ekadashi par vivah.
+Dialogue: 0,0:00:22.62,0:00:24.83,Default,,0,0,0,,Shaligram par chakra jaise nishaan hote
+Dialogue: 0,0:00:24.83,0:00:25.01,Default,,0,0,0,,hain.
+Dialogue: 0,0:00:25.01,0:00:27.04,Default,,0,0,0,,Brahmavaivarta Purana kehta hai,
+Dialogue: 0,0:00:27.04,0:00:28.70,Default,,0,0,0,,Vajrakita keedon ne kaate.
+Dialogue: 0,0:00:28.70,0:00:29.43,Default,,0,0,0,,Par sach kya hai?
+Dialogue: 0,0:00:29.88,0:00:30.44,Default,,0,0,0,,Geologists,
+Dialogue: 0,0:00:30.44,0:00:31.91,Default,,0,0,0,,yaani patthar ke vaigyanik,
+Dialogue: 0,0:00:31.91,0:00:33.02,Default,,0,0,0,,ne yeh patthar khole.
+Dialogue: 0,0:00:33.02,0:00:34.86,Default,,0,0,0,,Andar mila ammonite fossil,
+Dialogue: 0,0:00:34.86,0:00:36.89,Default,,0,0,0,,shankh jaisa samundari jeev jo patthar
+Dialogue: 0,0:00:36.89,0:00:37.26,Default,,0,0,0,,ban gaya.
+Dialogue: 0,0:00:37.71,0:00:40.27,Default,,0,0,0,,Yeh fossil lagbhag 150 million saal
+Dialogue: 0,0:00:40.27,0:00:41.20,Default,,0,0,0,,purane hain.
+Dialogue: 0,0:00:41.20,0:00:43.30,Default,,0,0,0,,Tab yahan Tethys samundar tha.
+Dialogue: 0,0:00:43.30,0:00:45.16,Default,,0,0,0,,Pahad mein samundar ka jeev!
+Dialogue: 0,0:00:45.61,0:00:47.03,Default,,0,0,0,,1931 mein ASI,
+Dialogue: 0,0:00:47.03,0:00:48.65,Default,,0,0,0,,yaani puratatva vibhag,
+Dialogue: 0,0:00:48.65,0:00:50.07,Default,,0,0,0,,ke John Marshall ne likha.
+Dialogue: 0,0:00:50.07,0:00:52.50,Default,,0,0,0,,Gharon mein Tulsi ka vivah Salagrama
+Dialogue: 0,0:00:52.50,0:00:53.31,Default,,0,0,0,,se hota hai.
+Dialogue: 0,0:00:53.76,0:00:54.74,Default,,0,0,0,,Yahan vivaad hai.
+Dialogue: 0,0:00:54.74,0:00:55.92,Default,,0,0,0,,Purana kehta hai,
+Dialogue: 0,0:00:55.92,0:00:56.31,Default,,0,0,0,,keede.
+Dialogue: 0,0:00:56.31,0:00:57.29,Default,,0,0,0,,Paleontologists,
+Dialogue: 0,0:00:57.29,0:00:58.86,Default,,0,0,0,,yaani fossil ke vaigyanik,
+Dialogue: 0,0:00:58.86,0:01:01.01,Default,,0,0,0,,kehte hain ammonite ki andar ki
+Dialogue: 0,0:01:01.01,0:01:01.60,Default,,0,0,0,,deewarein.
+Dialogue: 0,0:01:02.05,0:01:03.39,Default,,0,0,0,,Scholars bhi bante hue hain.
+Dialogue: 0,0:01:03.39,0:01:05.11,Default,,0,0,0,,Kya purane log jaante the yeh
+Dialogue: 0,0:01:05.11,0:01:05.49,Default,,0,0,0,,jeev hai?
+Dialogue: 0,0:01:05.49,0:01:07.40,Default,,0,0,0,,Ya chakra Sudarshan jaisa dikha?
+Dialogue: 0,0:01:07.85,0:01:08.98,Default,,0,0,0,,Pooja kab shuru hui,
+Dialogue: 0,0:01:08.98,0:01:09.92,Default,,0,0,0,,koi nahi jaanta.
+Dialogue: 0,0:01:09.92,0:01:11.98,Default,,0,0,0,,Par Kali Gandaki ke kinare yeh
+Dialogue: 0,0:01:11.98,0:01:13.30,Default,,0,0,0,,patthar aaj bhi milte hain.
+Dialogue: 0,0:01:13.75,0:01:14.35,Default,,0,0,0,,Twist yeh hai,
+Dialogue: 0,0:01:14.35,0:01:15.76,Default,,0,0,0,,Shaligram devta bhi hai,
+Dialogue: 0,0:01:15.76,0:01:16.36,Default,,0,0,0,,fossil bhi.
+Dialogue: 0,0:01:16.36,0:01:18.17,Default,,0,0,0,,Devi Bhagavata kehta hai,
+Dialogue: 0,0:01:18.17,0:01:20.58,Default,,0,0,0,,Tulsi ke bina uski pooja adhoori.
+Dialogue: 0,0:01:20.58,0:01:22.39,Default,,0,0,0,,Isliye jodi Shaligram se hi.
+Dialogue: 0,0:01:22.84,0:01:23.84,Default,,0,0,0,,Nani ko bhejo,
+Dialogue: 0,0:01:23.84,0:01:25.43,Default,,0,0,0,,jo har saal Tulsi ka vivah
+Dialogue: 0,0:01:25.43,0:01:26.23,Default,,0,0,0,,karati hain.
