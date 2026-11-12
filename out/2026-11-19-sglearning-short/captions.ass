@@ -1,0 +1,44 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.35,Default,,0,0,0,,Vodafone Idea videsh se 1.5 billion
+Dialogue: 0,0:00:02.35,0:00:03.91,Default,,0,0,0,,dollar udhaar kyun maang raha?
+Dialogue: 0,0:00:04.36,0:00:05.83,Default,,0,0,0,,Yeh akela nahi hai.
+Dialogue: 0,0:00:05.83,0:00:08.15,Default,,0,0,0,,September mein Indian companies ne 7.05
+Dialogue: 0,0:00:08.15,0:00:09.42,Default,,0,0,0,,billion dollar maange,
+Dialogue: 0,0:00:09.42,0:00:10.26,Default,,0,0,0,,reportedly.
+Dialogue: 0,0:00:10.26,0:00:11.73,Default,,0,0,0,,Aur iska bill aap tak aa
+Dialogue: 0,0:00:11.73,0:00:12.37,Default,,0,0,0,,sakta hai.
+Dialogue: 0,0:00:12.82,0:00:13.08,Default,,0,0,0,,Kyun?
+Dialogue: 0,0:00:13.08,0:00:15.21,Default,,0,0,0,,Kyunki videsh ka byaaj kai baar
+Dialogue: 0,0:00:15.21,0:00:16.80,Default,,0,0,0,,desh se kam lagta hai.
+Dialogue: 0,0:00:17.25,0:00:19.51,Default,,0,0,0,,Jaise koi rishtedaar sasta udhaar de,
+Dialogue: 0,0:00:19.51,0:00:20.13,Default,,0,0,0,,par shart ho,
+Dialogue: 0,0:00:20.13,0:00:21.36,Default,,0,0,0,,lautana dollar mein.
+Dialogue: 0,0:00:21.82,0:00:22.89,Default,,0,0,0,,Ab rupaya kamzor hua,
+Dialogue: 0,0:00:22.89,0:00:23.78,Default,,0,0,0,,toh dollar mehnga.
+Dialogue: 0,0:00:23.78,0:00:25.93,Default,,0,0,0,,Wahi udhaar chukane mein zyada rupaye
+Dialogue: 0,0:00:25.93,0:00:26.46,Default,,0,0,0,,lagenge.
+Dialogue: 0,0:00:26.91,0:00:28.80,Default,,0,0,0,,Yeh extra kharcha company ke profit
+Dialogue: 0,0:00:28.80,0:00:29.48,Default,,0,0,0,,se jaata hai,
+Dialogue: 0,0:00:29.48,0:00:31.54,Default,,0,0,0,,yaani shareholder aur kabhi graahak par
+Dialogue: 0,0:00:31.54,0:00:31.71,Default,,0,0,0,,bojh.
+Dialogue: 0,0:00:32.16,0:00:32.35,Default,,0,0,0,,Twist:
+Dialogue: 0,0:00:32.35,0:00:33.81,Default,,0,0,0,,sasta byaaj tabhi sasta hai,
+Dialogue: 0,0:00:33.81,0:00:35.10,Default,,0,0,0,,jab rupaya tika rahe.
+Dialogue: 0,0:00:35.10,0:00:35.83,Default,,0,0,0,,Khabar padho,
+Dialogue: 0,0:00:35.83,0:00:37.66,Default,,0,0,0,,toh dekho udhaar kis currency mein
+Dialogue: 0,0:00:37.66,0:00:37.85,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:37.85,0:00:39.68,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:40.13,0:00:41.49,Default,,0,0,0,,Us bhai ko bhejo jo kehta
+Dialogue: 0,0:00:41.49,0:00:43.37,Default,,0,0,0,,hai videsh ka udhaar hamesha sasta.
