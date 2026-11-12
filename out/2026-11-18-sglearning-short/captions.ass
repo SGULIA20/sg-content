@@ -1,0 +1,39 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.78,Default,,0,0,0,,Court ne Sahara ko refund bola,
+Dialogue: 0,0:00:01.78,0:00:02.84,Default,,0,0,0,,phir paisa kyun atka?
+Dialogue: 0,0:00:03.29,0:00:05.51,Default,,0,0,0,,Gali ka jaana-pehchana agent aata hai,
+Dialogue: 0,0:00:05.51,0:00:06.88,Default,,0,0,0,,ghar ki bachat le jaata hai.
+Dialogue: 0,0:00:07.33,0:00:07.95,Default,,0,0,0,,Bank door hai,
+Dialogue: 0,0:00:07.95,0:00:09.18,Default,,0,0,0,,agent ghar aata hai,
+Dialogue: 0,0:00:09.18,0:00:10.62,Default,,0,0,0,,aur zyada byaaj bolta hai.
+Dialogue: 0,0:00:11.07,0:00:12.50,Default,,0,0,0,,Padosi bhi de rahe hain,
+Dialogue: 0,0:00:12.50,0:00:13.39,Default,,0,0,0,,toh galat kaise?
+Dialogue: 0,0:00:13.39,0:00:14.46,Default,,0,0,0,,Lekin yahan twist hai.
+Dialogue: 0,0:00:14.90,0:00:17.18,Default,,0,0,0,,Saradha mein reportedly 40 percent tak
+Dialogue: 0,0:00:17.18,0:00:18.93,Default,,0,0,0,,paisa agents ki commission mein gaya.
+Dialogue: 0,0:00:18.93,0:00:20.85,Default,,0,0,0,,Aapka paisa kahin laga hi nahi.
+Dialogue: 0,0:00:21.30,0:00:23.07,Default,,0,0,0,,Aur Sahara ka paisa zameen mein
+Dialogue: 0,0:00:23.07,0:00:23.43,Default,,0,0,0,,phansa,
+Dialogue: 0,0:00:23.43,0:00:25.02,Default,,0,0,0,,isliye refund aaj bhi chal raha
+Dialogue: 0,0:00:25.02,0:00:25.20,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:25.65,0:00:26.88,Default,,0,0,0,,Paisa dene se pehle,
+Dialogue: 0,0:00:26.88,0:00:28.45,Default,,0,0,0,,RBI ki Sachet website par naam
+Dialogue: 0,0:00:28.45,0:00:28.98,Default,,0,0,0,,check karo.
+Dialogue: 0,0:00:28.98,0:00:30.73,Default,,0,0,0,,Bank ke paise par insurance hai,
+Dialogue: 0,0:00:30.73,0:00:31.78,Default,,0,0,0,,in schemes par nahi.
+Dialogue: 0,0:00:31.78,0:00:33.53,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:33.98,0:00:34.95,Default,,0,0,0,,Yeh Mummy ko bhejo,
+Dialogue: 0,0:00:34.95,0:00:36.23,Default,,0,0,0,,jo gali ke agent ko har
+Dialogue: 0,0:00:36.23,0:00:37.52,Default,,0,0,0,,mahine paisa deti hain.
