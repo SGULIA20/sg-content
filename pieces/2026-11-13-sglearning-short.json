@@ -115,6 +115,9 @@
    "voice": 8
   },
   "drafts": 1,
+  "ig_reel_id": "17915063310485025",
+  "ig_story_id": "18455036161193460",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-13-sglearning-short.mp4",
    "clip_seconds": 10.03,
@@ -125,6 +128,8 @@
   "intro_sent": "2026-11-06T20:27:06+00:00",
   "out_sha": "98e680fbb9a42da5876487c87d279a4a0deef671",
   "out_sha_intro": true,
+  "threads_id": "18252582613311760",
+  "threads_poll_id": "18125818783941060",
   "yt_id": "eOdnO0vNxuk"
  },
  "kind": "short",
@@ -272,7 +277,7 @@
   },
   "title": "Mummy ka *sona* girvi kyun ja raha? 💍"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   5.33,
@@ -304,6 +309,6 @@
   "title": "Sectoral Deployment of Credit by NBFC – September 2026",
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-11-07T06:36:53+00:00",
+ "updated": "2026-11-13T12:04:41+00:00",
  "writer": "claude"
 }
