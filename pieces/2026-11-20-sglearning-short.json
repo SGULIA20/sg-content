@@ -1,0 +1,264 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 100.0,
+   "quote": "Marriage Gifts 100% Exempt: Gifts received on the occasion of the individual's marriage carry zero tax liability.",
+   "source_date": "2026-09-11",
+   "source_name": "Tax Guide",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_QxS8wrZaxgEan8qw6UVPFleQ9VZ-B6uglLtpKzBq9Fuduxq-WcNtrPb8wQteNnmpvj74XuWRvO_jg9jvNMYSkblVpy8gsdImh8N-N9QPrDVzGxB84vdX61X_LbjK4sP3ywnUcNO53UFwnXam8MgdwDOIRwwfD7y-Ta0GNvKY-6Hl4DEA_W3n7X5Z95k=",
+   "text": "Wedding gifts received by an individual on the occasion of their marriage are completely tax-free without any upper monetary limit.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 100.0,
+   "quote": "All gifts received on the occasion of marriage are 100% tax-exempt under Section 56(2)(x) with no monetary limit;",
+   "source_date": "2026-10-05",
+   "source_name": "TaxFetch",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBlAW-rUfNtDaCRUDFvjHZH6XcPbeaRhESrkq8tyAvLBIEzcDLnUYwqa_eENk5lu-noGpSNZGoj4zYpqxg9lk2I0sQ7hnPwS-OWgvPizJL5SuEIwRDUulBqWNwE2gkQt7Fp6x8MxiHt60pFvcQI7i7q6kXjYvCiul1p2Oo8CGxEiyULw==",
+   "text": "All wedding gifts received during marriage are exempt under Section 56(2)(x) regardless of value or asset class.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 100.0,
+   "quote": "Under Section 271DA, the Joint Commissioner of Income Tax shall levy a 100% monetary penalty on the recipient equal to the cash amount received!",
+   "source_date": "2026-09-11",
+   "source_name": "Tax Guide",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_QxS8wrZaxgEan8qw6UVPFleQ9VZ-B6uglLtpKzBq9Fuduxq-WcNtrPb8wQteNnmpvj74XuWRvO_jg9jvNMYSkblVpy8gsdImh8N-N9QPrDVzGxB84vdX61X_LbjK4sP3ywnUcNO53UFwnXam8MgdwDOIRwwfD7y-Ta0GNvKY-6Hl4DEA_W3n7X5Z95k=",
+   "text": "Violating Section 269ST by accepting cash gifts of 2 lakh rupees or higher triggers a mandatory 100 percent penalty under Section 271DA on the recipient.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 60.0,
+   "quote": "The income tax officer might check for the genuineness of the transaction and if they feel that there is no satisfactory proof or explanation, they might levy 60% tax along with interest and penalty.",
+   "source_date": "2026-04-25",
+   "source_name": "EZTax",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhq3SC5e1F-6A_ZklF-RivFa7RMDJT-x0gNdgf97x-6CP5zYEn0LKo8SZtsaOnoC2TkQqNIWJ2IQto3FbZTSro9Twn7wqD8P1KsWW-hza0h7MlSxPzAKYQ58GB",
+   "text": "If high-value wedding gifts lack satisfactory documentation or proof of genuineness during tax scrutiny, assessing officers can levy a 60 percent tax along with interest and penalty.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-20-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-13",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 13.5,
+   "usd": 0.060006,
+   "voice": 16
+  },
+  "drafts": 1,
+  "intro_sent": "2026-11-13T21:09:14+00:00",
+  "voice_batch": {
+   "lines": 8,
+   "name": "batches/aznzfq4q603aol761opbwgx3d382p84fbqgh",
+   "tries": 1,
+   "voice": "voice_1kn3blc2u13l"
+  }
+ },
+ "kind": "short",
+ "publish_day": "2026-11-20",
+ "reasons": [
+  "waiting for the founder's intro clip until 20 Nov 10:00 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Shaadi mein 2 lakh shagun mila, tax lagega? 💍\nApni shaadi ke gift poore tax-free hain. Lekin ek insaan se ek mauke par 2 lakh ya zyada cash lena mana hai, aur penalty lene wale ko lagti hai.\nAapki shaadi mein sabse bada shagun cash mein aaya tha ya UPI se?\nYeh investment advice nahi hai.\nShare karo us dost ko jiski shaadi isi season mein hai.",
+    "hashtags": [
+     "#IncomeTax",
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#MoneyTipsHindi",
+     "#PersonalFinanceIndia",
+     "#HinglishFinance",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Shaadi ka shagun tax-free hai, lekin ek insaan se ek mauke par 2 lakh ya zyada cash lena mana hai. Penalty lene wale ko lagti hai. Aapke ghar mein bada shagun cash mein aata hai ya UPI se? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Shaadi ka shagun tax-free hai, lekin bada cash lifafa aapko jurmane mein phasa sakta hai. Ek insaan se ek mauke par 2 lakh ya zyada cash lena mana hai, aur penalty lene wale par lagti hai. Bada shagun UPI ya cheque se lo aur record rakho. Share karo us dost ko jiski shaadi isi season mein hai.",
+    "tags": [
+     "shaadi shagun tax",
+     "wedding gift tax",
+     "income tax india",
+     "cash gift rule",
+     "shagun",
+     "marriage gift",
+     "tax free gift",
+     "personal finance hindi",
+     "learning with sg"
+    ],
+    "title": "Shaadi Shagun Tax: 2 lakh cash par penalty?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jiski shaadi isi season mein hai.",
+  "hook": "Shaadi mein 2 lakh shagun mila, tax lagega?",
+  "scenes": [
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a decorated wedding stage table in an Indian banquet hall at night, a heap of colourful shagun envelopes beside marigold garlands, warm yellow fairy lights, shallow depth of field, no text",
+     "type": "art"
+    },
+    "vo": "Shaadi mein 2 lakh shagun mila, tax lagega?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian wedding reception, a smiling bride in a red lehenga and groom in a cream sherwani seated on a flower-decked stage, relatives queueing to hand over envelopes, festive warm night lighting",
+     "type": "art"
+    },
+    "vo": "Stage pe lifafon ka dher, dulha-dulhan befikar. Shagun pe kaun sa tax?"
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic moment of an older Indian man in a bandhgala jacket handing a thick, bulging envelope to the groom with both hands, the groom looking surprised and pleased, wedding lights behind them",
+     "type": "art"
+    },
+    "vo": "Phir Mama ji aate hain, ek lifafe mein 2 lakh cash."
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian family laughing together in a hotel room after the wedding, opening gift boxes and envelopes on a bed covered with wrapping paper, soft late-night lamp light, relaxed happy mood",
+     "type": "art"
+    },
+    "vo": "Sab khush, kyunki apni shaadi ke gift poore tax-free hote hain. Yeh sach bhi hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of a pair of hands holding a stack of rupee notes over an open envelope on a wooden table, dim tense lighting, a single lamp casting a hard shadow, no visible text or numbers",
+     "type": "art"
+    },
+    "vo": "Lekin twist yahan hai, cash ka rule alag hai. Ek insaan se ek mauke par 2 lakh ya zyada cash lena mana hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic young Indian husband sitting at a dining table in a modest flat in the morning, head in his hands, a pile of opened envelopes and loose cash in front of him, his wife standing behind him looking worried",
+     "type": "art"
+    },
+    "vo": "Jurmana dene wale ko nahi, lene wale ko. Penalty 100 percent, yaani jitna cash, utna jurmana."
+   },
+   {
+    "facts_used": [
+     0,
+     3
+    ],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian newly married couple at a bank branch counter in daylight, the wife handing a cheque to a bank officer while the husband holds a small notebook, calm and confident mood",
+     "type": "art"
+    },
+    "vo": "Gift tax-free hai, bada cash nahi. Bada shagun UPI ya cheque se lo, aur kisne kya diya, likh ke rakho. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic street outside an Indian wedding venue at dusk, a baraat with a decorated white horse, dhol players and dancing friends, marigold strings and lights overhead, joyful energy",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jiski shaadi isi season mein hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "SHAGUN",
+   "name_hi": "शगुन",
+   "scene": "A thick wedding envelope bursting with rupee notes lying on a marigold-decked wedding stage table under bright festive lights, with a shadow of a stern official hand reaching toward it.",
+   "words": [
+    "100%",
+    "KHATRA"
+   ],
+   "words_hi": [
+    "100%",
+    "खतरा"
+   ]
+  },
+  "title": "Shaadi ke *shagun* par bhi penalty? 💍"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  3.493,
+  9.476,
+  14.639,
+  21.749,
+  29.51,
+  36.872,
+  45.799
+ ],
+ "topic": {
+  "follows": "Dev Uthani Ekadashi and Tulsi Vivah fall on 20 Nov and mark the start of the wedding season. The Invesco 'Shagun ke lifafe mein SIP' video had 2.9M views.",
+  "hooks": [
+   "Shaadi mein 2 lakh ka shagun aaya, to kya income tax wale puchhenge?",
+   "Dost ne 60,000 ka gift diya, wo tax-free hai ya nahi?"
+  ],
+  "id": "wk-2026-11-20-sglearning-short",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "Ab suniye, ye chaunkane wali baat hai!",
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: close view of a decorated wedding stage table in an Indian banquet hall at night, a heap of colourful shagun envelopes beside marigold garlands, warm yellow fairy lights, shallow depth of field. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Framing: medium shot from the waist up, his whole head and both shoulders inside the frame with clear space above his hair and on both sides, and he stays framed like this to the end; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] standing relaxed and upright, shoulders open, wearing a charcoal grey blazer over a light blue shirt. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: a confident, charismatic documentary presenter. Calm, natural face with a pleasant, warm smile, relaxed eyebrows, eyes soft and focused on the viewer. On \"shagun mila, tax lagega\" the eyes narrow a little with intrigue and the head tilts slightly, as if sharing a secret. On \"Ab suniye, ye chaunkane wali baat hai!\" a warm, confident smile and one small nod. Natural blinking, subtle head movement. No exaggerated expressions: no wide eyes, no raised eyebrows, no open-mouth surprise, no big grin, no frown; never sad, gloomy, worried or tired. Voice: warm, clear, measured, with quiet intensity; a short pause before \"shagun mila, tax lagega\". Hands: one slow, small gesture toward the scene behind him on the first line, then hands rest; no fast or large arm movements. Camera: eye level, a very slight slow push-in, slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "Shaadi mein 2 lakh shagun mila, tax lagega?",
+   "text": "Shaadi mein 2 lakh shagun mila, tax lagega? Ab suniye, ye chaunkane wali baat hai!",
+   "words": 15
+  },
+  "summary": "Explains which wedding gifts are tax-free, covering gifts at one's own marriage, gifts from relatives, and the 50,000 limit for other gifts. Check: the gift-tax exemption rules under the new Income-tax Act 2026 against the old Section 56(2)(x), and what counts as a relative.",
+  "target_minutes": null,
+  "title": "Shaadi mein mile 2 lakh ke shagun par tax lagega?",
+  "topic_score": 6,
+  "topic_score_why": [
+   "+3 touches the viewer's own money",
+   "+1 a choice the viewer faces",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "voice": "voice_1kn3blc2u13l",
+  "weekly": true
+ },
+ "updated": "2026-11-13T21:09:17+00:00",
+ "writer": "claude"
+}

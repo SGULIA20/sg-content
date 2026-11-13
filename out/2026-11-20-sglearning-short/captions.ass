@@ -1,0 +1,43 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.11,Default,,0,0,0,,Shaadi mein 2 lakh shagun mila,
+Dialogue: 0,0:00:02.11,0:00:03.04,Default,,0,0,0,,tax lagega?
+Dialogue: 0,0:00:03.49,0:00:05.60,Default,,0,0,0,,Stage pe lifafon ka dher,
+Dialogue: 0,0:00:05.60,0:00:07.45,Default,,0,0,0,,dulha-dulhan befikar.
+Dialogue: 0,0:00:07.45,0:00:09.03,Default,,0,0,0,,Shagun pe kaun sa tax?
+Dialogue: 0,0:00:09.48,0:00:11.68,Default,,0,0,0,,Phir Mama ji aate hain,
+Dialogue: 0,0:00:11.68,0:00:14.19,Default,,0,0,0,,ek lifafe mein 2 lakh cash.
+Dialogue: 0,0:00:14.64,0:00:15.27,Default,,0,0,0,,Sab khush,
+Dialogue: 0,0:00:15.27,0:00:18.45,Default,,0,0,0,,kyunki apni shaadi ke gift poore
+Dialogue: 0,0:00:18.45,0:00:20.03,Default,,0,0,0,,tax-free hote hain.
+Dialogue: 0,0:00:20.03,0:00:21.30,Default,,0,0,0,,Yeh sach bhi hai.
+Dialogue: 0,0:00:21.75,0:00:23.12,Default,,0,0,0,,Lekin twist yahan hai,
+Dialogue: 0,0:00:23.12,0:00:24.72,Default,,0,0,0,,cash ka rule alag hai.
+Dialogue: 0,0:00:24.72,0:00:26.55,Default,,0,0,0,,Ek insaan se ek mauke par
+Dialogue: 0,0:00:26.55,0:00:28.38,Default,,0,0,0,,2 lakh ya zyada cash lena
+Dialogue: 0,0:00:28.38,0:00:29.06,Default,,0,0,0,,mana hai.
+Dialogue: 0,0:00:29.51,0:00:31.60,Default,,0,0,0,,Jurmana dene wale ko nahi,
+Dialogue: 0,0:00:31.60,0:00:32.65,Default,,0,0,0,,lene wale ko.
+Dialogue: 0,0:00:32.65,0:00:34.33,Default,,0,0,0,,Penalty 100 percent,
+Dialogue: 0,0:00:34.33,0:00:35.38,Default,,0,0,0,,yaani jitna cash,
+Dialogue: 0,0:00:35.38,0:00:36.42,Default,,0,0,0,,utna jurmana.
+Dialogue: 0,0:00:36.87,0:00:37.74,Default,,0,0,0,,Gift tax-free hai,
+Dialogue: 0,0:00:37.74,0:00:38.83,Default,,0,0,0,,bada cash nahi.
+Dialogue: 0,0:00:38.83,0:00:41.00,Default,,0,0,0,,Bada shagun UPI ya cheque se
+Dialogue: 0,0:00:41.00,0:00:41.22,Default,,0,0,0,,lo,
+Dialogue: 0,0:00:41.22,0:00:42.31,Default,,0,0,0,,aur kisne kya diya,
+Dialogue: 0,0:00:42.31,0:00:43.18,Default,,0,0,0,,likh ke rakho.
+Dialogue: 0,0:00:43.18,0:00:45.35,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:45.80,0:00:47.38,Default,,0,0,0,,Us dost ko bhejo jiski shaadi
+Dialogue: 0,0:00:47.38,0:00:48.44,Default,,0,0,0,,isi season mein hai.
