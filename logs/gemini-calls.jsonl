@@ -603,3 +603,4 @@
 {"at": "2026-11-12T21:28:46+00:00", "model": "gemini-3.8-flash", "caller": "research.fact_sheet", "status": 200, "attempt": 0, "in": 4352, "out": 2305, "thought": 6945, "search": true, "search_queries": 0, "modalities": []}
 {"at": "2026-11-13T08:56:53+00:00", "model": "gemini-3.8-flash", "caller": "inbox.transcribe", "status": 200, "attempt": 0, "in": 272, "out": 25, "thought": 282, "search": false, "search_queries": 0, "modalities": []}
 {"at": "2026-11-13T08:58:14+00:00", "model": "gemini-3.8-flash", "caller": "inbox.transcribe", "status": 200, "attempt": 0, "in": 272, "out": 26, "thought": 387, "search": false, "search_queries": 0, "modalities": []}
+{"at": "2026-11-13T20:44:57+00:00", "model": "gemini-3.8-flash", "caller": "research.fact_sheet", "status": 200, "attempt": 0, "in": 2090, "out": 2197, "thought": 4495, "search": true, "search_queries": 0, "modalities": []}
