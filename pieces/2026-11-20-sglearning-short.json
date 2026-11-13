@@ -55,13 +55,21 @@
    "voice": 16
   },
   "drafts": 1,
+  "intro": {
+   "clip": "2026-11-20-sglearning-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-13T21:37:35+00:00",
+   "seconds": 8.38
+  },
+  "intro_checked": "851ba61454e35fe9",
   "intro_sent": "2026-11-13T21:09:14+00:00",
   "voice_batch": {
    "lines": 8,
    "name": "batches/aznzfq4q603aol761opbwgx3d382p84fbqgh",
    "tries": 1,
    "voice": "voice_1kn3blc2u13l"
-  }
+  },
+  "yt_id": "ZG_kwGZySD8"
  },
  "kind": "short",
  "publish_day": "2026-11-20",
@@ -219,7 +227,7 @@
   },
   "title": "Shaadi ke *shagun* par bhi penalty? 💍"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   3.493,
@@ -246,6 +254,7 @@
    "text": "Shaadi mein 2 lakh shagun mila, tax lagega? Ab suniye, ye chaunkane wali baat hai!",
    "words": 15
   },
+  "look": "claymation",
   "summary": "Explains which wedding gifts are tax-free, covering gifts at one's own marriage, gifts from relatives, and the 50,000 limit for other gifts. Check: the gift-tax exemption rules under the new Income-tax Act 2026 against the old Section 56(2)(x), and what counts as a relative.",
   "target_minutes": null,
   "title": "Shaadi mein mile 2 lakh ke shagun par tax lagega?",
@@ -259,6 +268,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-13T21:09:17+00:00",
+ "updated": "2026-11-13T21:37:39+00:00",
  "writer": "claude"
 }
