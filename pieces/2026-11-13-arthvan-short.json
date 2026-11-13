@@ -134,7 +134,9 @@
    "voice": 13
   },
   "drafts": 1,
+  "ig_reel_id": "17885752368525144",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-13-arthvan-short.mp4",
    "clip_seconds": 10.03,
@@ -145,6 +147,8 @@
   "intro_sent": "2026-11-06T20:19:09+00:00",
   "out_sha": "98e680fbb9a42da5876487c87d279a4a0deef671",
   "out_sha_intro": true,
+  "threads_id": "18143442289616632",
+  "threads_poll_id": "18036445469890131",
   "yt_id": "KHZiSOsjgkU"
  },
  "kind": "short",
@@ -364,7 +368,7 @@
   },
   "title": "Rani ka vrat, *Kailasa* upar se bana 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   4.45,
@@ -413,6 +417,6 @@
   "title_hi": "Ellora ka Kailasa mandir, upar se neeche",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-11-07T06:36:02+00:00",
+ "updated": "2026-11-13T16:10:34+00:00",
  "writer": "claude"
 }
