@@ -136,7 +136,15 @@
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
-  "intro_sent": "2026-11-12T21:23:38+00:00"
+  "intro": {
+   "clip": "2026-11-19-arthvan-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-13T08:58:02+00:00",
+   "seconds": 8.38
+  },
+  "intro_checked": "bf46f503ab4b6471",
+  "intro_sent": "2026-11-12T21:23:38+00:00",
+  "yt_id": "beu4NTlPZF4"
  },
  "kind": "short",
  "publish_day": "2026-11-19",
@@ -355,7 +363,7 @@
   },
   "title": "Tulsi ka vivah *Shaligram* se hi kyun? 🤯"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   3.521,
@@ -394,6 +402,7 @@
    "text": "Tulsi ka vivah Shaligram patthar se hi kyun hota hai? Poora sach yahan!",
    "words": 13
   },
+  "look": "indian-comic",
   "summary": "Explains the Vrinda and Jalandhara story behind Tulsi Vivah as told in the Puranas (Padma, Shiva, Devi Bhagavata). Check how the versions differ and how Shaligram is a fossil ammonite stone from the Gandaki river.",
   "target_minutes": null,
   "title": "Tulsi ka vivah Shaligram se hi kyun hota hai?",
@@ -407,6 +416,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-12T21:23:40+00:00",
+ "updated": "2026-11-13T08:58:07+00:00",
  "writer": "claude"
 }
