@@ -136,7 +136,15 @@
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
-  "intro_sent": "2026-11-13T20:56:33+00:00"
+  "intro": {
+   "clip": "2026-11-20-arthvan-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-14T09:24:26+00:00",
+   "seconds": 8.38
+  },
+  "intro_checked": "81d02cad6ddbc962",
+  "intro_sent": "2026-11-13T20:56:33+00:00",
+  "yt_id": "SC0H7DmaKo8"
  },
  "kind": "short",
  "publish_day": "2026-11-20",
@@ -349,7 +357,7 @@
   },
   "title": "Vishnu 4 mahine kyun sote hain? *Dev Uthani* 🤯"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   2.997,
@@ -387,6 +395,7 @@
    "text": "Kya Vishnu sach mein 4 mahine sote hain? Ruko, asli khel abhi baaki hai!",
    "words": 14
   },
+  "look": "indian-comic",
   "summary": "Covers the Chaturmas idea of Vishnu sleeping from Devshayani to Prabodhini Ekadashi. Check the sources (Puranas, Bhavishyottara), the Bali/Vamana version, and the agricultural calendar link. Do not claim one single origin.",
   "target_minutes": null,
   "title": "Dev Uthani par Vishnu chaar mahine ke baad kyun jaagte hain?",
@@ -400,6 +409,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-13T20:56:36+00:00",
+ "updated": "2026-11-14T09:24:32+00:00",
  "writer": "claude"
 }
