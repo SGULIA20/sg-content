@@ -1,0 +1,455 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,86,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.57,Default,,0,0,0,,Kashi ki Dev Deepawali,
+Dialogue: 0,0:00:02.57,0:00:06.74,Default,,0,0,0,,hazaaron saal purani ya sirf 1985
+Dialogue: 0,0:00:06.74,0:00:07.06,Default,,0,0,0,,se?
+Dialogue: 0,0:00:07.06,0:00:08.02,Default,,0,0,0,,Lakhon diye,
+Dialogue: 0,0:00:08.02,0:00:10.27,Default,,0,0,0,,ghaton par aag ki nadi.
+Dialogue: 0,0:00:10.27,0:00:13.48,Default,,0,0,0,,Lekin is raushni ki asli umar
+Dialogue: 0,0:00:13.48,0:00:14.12,Default,,0,0,0,,kya hai?
+Dialogue: 0,0:00:14.57,0:00:15.94,Default,,0,0,0,,Aap sochte honge,
+Dialogue: 0,0:00:15.94,0:00:19.52,Default,,0,0,0,,yeh parampara hazaaron saal purani hai.
+Dialogue: 0,0:00:19.52,0:00:21.72,Default,,0,0,0,,Ki devta khud utarte hain,
+Dialogue: 0,0:00:21.72,0:00:23.37,Default,,0,0,0,,Ganga mein nahane.
+Dialogue: 0,0:00:23.37,0:00:25.84,Default,,0,0,0,,Magar records kuch aur kehte hain.
+Dialogue: 0,0:00:25.84,0:00:27.49,Default,,0,0,0,,Sunkar aap chaunk jaayenge.
+Dialogue: 0,0:00:27.94,0:00:29.97,Default,,0,0,0,,Local records kehte hain,
+Dialogue: 0,0:00:29.97,0:00:32.87,Default,,0,0,0,,saare ghat ek saath 1985 mein
+Dialogue: 0,0:00:32.87,0:00:33.45,Default,,0,0,0,,saje.
+Dialogue: 0,0:00:33.45,0:00:35.77,Default,,0,0,0,,Shuruaat Panchganga Ghat se hui.
+Dialogue: 0,0:00:35.77,0:00:38.09,Default,,0,0,0,,Yaani sirf kuch dashak pehle.
+Dialogue: 0,0:00:38.09,0:00:40.41,Default,,0,0,0,,To phir yeh katha kahaan se
+Dialogue: 0,0:00:40.41,0:00:40.70,Default,,0,0,0,,aayi?
+Dialogue: 0,0:00:41.15,0:00:44.33,Default,,0,0,0,,Kyunki is raat ke peeche bahut
+Dialogue: 0,0:00:44.33,0:00:46.80,Default,,0,0,0,,puraani kahani hai.
+Dialogue: 0,0:00:46.80,0:00:48.92,Default,,0,0,0,,3 udte hue shehar,
+Dialogue: 0,0:00:48.92,0:00:49.98,Default,,0,0,0,,aasmaan mein.
+Dialogue: 0,0:00:49.98,0:00:51.75,Default,,0,0,0,,Aur Shiv ka woh teer,
+Dialogue: 0,0:00:51.75,0:00:53.87,Default,,0,0,0,,jisne sab jala diya.
+Dialogue: 0,0:00:54.32,0:00:55.81,Default,,0,0,0,,To sawaal yeh hai.
+Dialogue: 0,0:00:55.81,0:00:57.89,Default,,0,0,0,,Kya Kashi ki yeh raat sach
+Dialogue: 0,0:00:57.89,0:01:00.27,Default,,0,0,0,,mein Tripur ke jalne ki yaad
+Dialogue: 0,0:01:00.27,0:01:00.57,Default,,0,0,0,,hai?
+Dialogue: 0,0:01:00.57,0:01:03.84,Default,,0,0,0,,Ya Kashi ne apni nayi parampara
+Dialogue: 0,0:01:03.84,0:01:04.44,Default,,0,0,0,,banayi?
+Dialogue: 0,0:01:04.89,0:01:07.12,Default,,0,0,0,,Pehle granth ki gawahi.
+Dialogue: 0,0:01:07.12,0:01:10.30,Default,,0,0,0,,Phir mitti ke neeche mile sikke.
+Dialogue: 0,0:01:10.30,0:01:11.57,Default,,0,0,0,,Phir woh records,
+Dialogue: 0,0:01:11.57,0:01:14.44,Default,,0,0,0,,jo kahani badal dete hain.
+Dialogue: 0,0:01:14.44,0:01:16.66,Default,,0,0,0,,Aur har sabut ke saath saaf
+Dialogue: 0,0:01:16.66,0:01:17.62,Default,,0,0,0,,bataayenge,
+Dialogue: 0,0:01:17.62,0:01:19.21,Default,,0,0,0,,granth hai ya khudai.
+Dialogue: 0,0:01:19.66,0:01:20.30,Default,,0,0,0,,Aur haan,
+Dialogue: 0,0:01:20.30,0:01:23.19,Default,,0,0,0,,Tripuri naam ka ek shehar sach
+Dialogue: 0,0:01:23.19,0:01:23.83,Default,,0,0,0,,mein tha.
+Dialogue: 0,0:01:23.83,0:01:26.40,Default,,0,0,0,,Madhya Pradesh ki mitti mein.
+Dialogue: 0,0:01:26.40,0:01:29.61,Default,,0,0,0,,Uske sikkon par yahi naam likha
+Dialogue: 0,0:01:29.61,0:01:30.25,Default,,0,0,0,,mila.
+Dialogue: 0,0:01:30.25,0:01:33.14,Default,,0,0,0,,Lekin kya yeh wahi Tripur hai?
+Dialogue: 0,0:01:33.59,0:01:36.42,Default,,0,0,0,,Par asli sawaal ab shuru hota
+Dialogue: 0,0:01:36.42,0:01:36.70,Default,,0,0,0,,hai.
+Dialogue: 0,0:01:36.70,0:01:40.09,Default,,0,0,0,,Is katha ki sabse purani gawahi
+Dialogue: 0,0:01:40.09,0:01:40.94,Default,,0,0,0,,kahaan hai?
+Dialogue: 0,0:01:40.94,0:01:43.77,Default,,0,0,0,,Jawab Mahabharat se bhi pehle,
+Dialogue: 0,0:01:43.77,0:01:46.03,Default,,0,0,0,,seedha Vedon tak jaata hai.
+Dialogue: 0,0:01:46.48,0:01:50.41,Default,,0,0,0,,Krishna Yajurveda ki Taittiriya Samhita.
+Dialogue: 0,0:01:50.41,0:01:53.43,Default,,0,0,0,,Yeh is katha ki sabse purani
+Dialogue: 0,0:01:53.43,0:01:56.46,Default,,0,0,0,,likhit gawahi maani jaati hai.
+Dialogue: 0,0:01:56.46,0:01:59.78,Default,,0,0,0,,Samhita yaani Vedon ke mantron ka
+Dialogue: 0,0:01:59.78,0:02:00.39,Default,,0,0,0,,sangrah,
+Dialogue: 0,0:02:00.39,0:02:02.20,Default,,0,0,0,,peedhiyon se yaad kiya hua.
+Dialogue: 0,0:02:02.65,0:02:04.20,Default,,0,0,0,,Wahan likha hai,
+Dialogue: 0,0:02:04.20,0:02:06.67,Default,,0,0,0,,asuron ke 3 kile the.
+Dialogue: 0,0:02:06.67,0:02:08.84,Default,,0,0,0,,Sabse neeche lohe ka.
+Dialogue: 0,0:02:08.84,0:02:11.00,Default,,0,0,0,,Uske upar chaandi ka.
+Dialogue: 0,0:02:11.00,0:02:12.55,Default,,0,0,0,,Aur sabse upar,
+Dialogue: 0,0:02:12.55,0:02:15.33,Default,,0,0,0,,chamakta hua sone ka kila.
+Dialogue: 0,0:02:15.78,0:02:19.10,Default,,0,0,0,,Devta unhe jeet nahi paa rahe
+Dialogue: 0,0:02:19.10,0:02:19.43,Default,,0,0,0,,the.
+Dialogue: 0,0:02:19.43,0:02:21.76,Default,,0,0,0,,Phir Rudra ne teer chhoda.
+Dialogue: 0,0:02:21.76,0:02:22.42,Default,,0,0,0,,Rudra,
+Dialogue: 0,0:02:22.42,0:02:24.74,Default,,0,0,0,,yaani Shiv ka Vedic naam.
+Dialogue: 0,0:02:24.74,0:02:27.07,Default,,0,0,0,,Teer ne kilon ko cheer diya,
+Dialogue: 0,0:02:27.07,0:02:29.06,Default,,0,0,0,,asur bhaga diye gaye.
+Dialogue: 0,0:02:29.51,0:02:32.30,Default,,0,0,0,,Lekin Vedon mein yeh katha chhoti
+Dialogue: 0,0:02:32.30,0:02:32.58,Default,,0,0,0,,hai.
+Dialogue: 0,0:02:32.58,0:02:33.70,Default,,0,0,0,,Kuch hi panktiyan.
+Dialogue: 0,0:02:33.70,0:02:37.33,Default,,0,0,0,,Asli bada drishya milta hai Mahabharat
+Dialogue: 0,0:02:37.33,0:02:39.00,Default,,0,0,0,,ke Karna Parva mein.
+Dialogue: 0,0:02:39.00,0:02:41.79,Default,,0,0,0,,Wahan yeh kahani ek poori film
+Dialogue: 0,0:02:41.79,0:02:42.91,Default,,0,0,0,,ban jaati hai.
+Dialogue: 0,0:02:43.36,0:02:46.39,Default,,0,0,0,,Karna Parva yaani Mahabharat ka woh
+Dialogue: 0,0:02:46.39,0:02:46.89,Default,,0,0,0,,hissa,
+Dialogue: 0,0:02:46.89,0:02:49.41,Default,,0,0,0,,jahan Karn senapati bante hain.
+Dialogue: 0,0:02:49.41,0:02:50.68,Default,,0,0,0,,Wahin Duryodhan,
+Dialogue: 0,0:02:50.68,0:02:53.71,Default,,0,0,0,,Shalya ko yeh purani katha sunata
+Dialogue: 0,0:02:53.71,0:02:53.96,Default,,0,0,0,,hai.
+Dialogue: 0,0:02:53.96,0:02:54.97,Default,,0,0,0,,Taaki Shalya,
+Dialogue: 0,0:02:54.97,0:02:56.48,Default,,0,0,0,,Karn ka saarthi bane.
+Dialogue: 0,0:02:56.93,0:02:59.86,Default,,0,0,0,,Katha mein 3 asur bhai hain.
+Dialogue: 0,0:02:59.86,0:03:01.32,Default,,0,0,0,,Tarakaksha,
+Dialogue: 0,0:03:01.32,0:03:04.61,Default,,0,0,0,,Kamalaksha aur Vidyunmali.
+Dialogue: 0,0:03:04.61,0:03:07.90,Default,,0,0,0,,Unke paas udte hue shehar hain.
+Dialogue: 0,0:03:07.90,0:03:10.83,Default,,0,0,0,,Jo din raat aasmaan mein ghoomte
+Dialogue: 0,0:03:10.83,0:03:11.92,Default,,0,0,0,,rehte hain,
+Dialogue: 0,0:03:11.92,0:03:14.85,Default,,0,0,0,,koi unhe chhoo nahi paata.
+Dialogue: 0,0:03:15.30,0:03:16.54,Default,,0,0,0,,Shart yeh thi,
+Dialogue: 0,0:03:16.54,0:03:19.86,Default,,0,0,0,,shehar sirf tab gir sakte the.
+Dialogue: 0,0:03:19.86,0:03:22.75,Default,,0,0,0,,Jab woh aasmaan mein seedh mein
+Dialogue: 0,0:03:22.75,0:03:23.58,Default,,0,0,0,,aa jaayein.
+Dialogue: 0,0:03:23.58,0:03:25.66,Default,,0,0,0,,Aur woh pal bahut,
+Dialogue: 0,0:03:25.66,0:03:28.14,Default,,0,0,0,,bahut kam aata tha.
+Dialogue: 0,0:03:28.59,0:03:31.17,Default,,0,0,0,,Shiv ke liye ek anokha rath
+Dialogue: 0,0:03:31.17,0:03:32.14,Default,,0,0,0,,banaya gaya.
+Dialogue: 0,0:03:32.14,0:03:35.05,Default,,0,0,0,,Kehte hain poora brahmand hi us
+Dialogue: 0,0:03:35.05,0:03:36.02,Default,,0,0,0,,rath mein tha.
+Dialogue: 0,0:03:36.02,0:03:38.28,Default,,0,0,0,,Shiv bane Tripurantak,
+Dialogue: 0,0:03:38.28,0:03:41.51,Default,,0,0,0,,yaani Tripur ka ant karne wale.
+Dialogue: 0,0:03:41.96,0:03:45.19,Default,,0,0,0,,Jaise hi Shiv dhanush lekar khade
+Dialogue: 0,0:03:45.19,0:03:45.52,Default,,0,0,0,,hue,
+Dialogue: 0,0:03:45.52,0:03:47.46,Default,,0,0,0,,shehar seedh mein aa gaye.
+Dialogue: 0,0:03:47.46,0:03:49.72,Default,,0,0,0,,Usi pal 1 teer chala.
+Dialogue: 0,0:03:49.72,0:03:51.66,Default,,0,0,0,,Aur dekhte hi dekhte,
+Dialogue: 0,0:03:51.66,0:03:53.92,Default,,0,0,0,,sab kuch aag mein badal gaya.
+Dialogue: 0,0:03:54.37,0:03:56.66,Default,,0,0,0,,Lekin is katha ka Kashi ki
+Dialogue: 0,0:03:56.66,0:03:58.19,Default,,0,0,0,,raat se kya rishta hai?
+Dialogue: 0,0:03:58.19,0:04:00.99,Default,,0,0,0,,Granth mein kahin Dev Deepawali likha
+Dialogue: 0,0:04:00.99,0:04:01.49,Default,,0,0,0,,hai kya?
+Dialogue: 0,0:04:01.49,0:04:03.53,Default,,0,0,0,,Yahan pehla twist aata hai.
+Dialogue: 0,0:04:03.98,0:04:07.09,Default,,0,0,0,,Skanda Purana mein Kartik maheene ki
+Dialogue: 0,0:04:07.09,0:04:08.13,Default,,0,0,0,,poonam khaas hai.
+Dialogue: 0,0:04:08.13,0:04:11.51,Default,,0,0,0,,Purana yaani purani kathaon aur niyamon
+Dialogue: 0,0:04:11.51,0:04:12.29,Default,,0,0,0,,ki kitaab.
+Dialogue: 0,0:04:12.29,0:04:15.14,Default,,0,0,0,,Ise Tripuri Purnima kehte hain,
+Dialogue: 0,0:04:15.14,0:04:17.22,Default,,0,0,0,,yaani Tripur wali poonam.
+Dialogue: 0,0:04:17.67,0:04:19.90,Default,,0,0,0,,Is din ke khaas kaam bataye
+Dialogue: 0,0:04:19.90,0:04:20.54,Default,,0,0,0,,gaye hain.
+Dialogue: 0,0:04:20.54,0:04:21.50,Default,,0,0,0,,Kartik snan,
+Dialogue: 0,0:04:21.50,0:04:24.37,Default,,0,0,0,,yaani nadi mein pavitra snan.
+Dialogue: 0,0:04:24.37,0:04:25.32,Default,,0,0,0,,Aur deepdan,
+Dialogue: 0,0:04:25.32,0:04:28.83,Default,,0,0,0,,yaani diya jalakar bhagwan ko arpit
+Dialogue: 0,0:04:28.83,0:04:29.47,Default,,0,0,0,,karna.
+Dialogue: 0,0:04:29.92,0:04:30.75,Default,,0,0,0,,Dhyan dijiye,
+Dialogue: 0,0:04:30.75,0:04:32.96,Default,,0,0,0,,yahan baat har bhakt ke apne
+Dialogue: 0,0:04:32.96,0:04:33.79,Default,,0,0,0,,diye ki hai.
+Dialogue: 0,0:04:33.79,0:04:36.56,Default,,0,0,0,,Ek saath poore shehar ko sajaane
+Dialogue: 0,0:04:36.56,0:04:37.67,Default,,0,0,0,,wala utsav?
+Dialogue: 0,0:04:37.67,0:04:39.88,Default,,0,0,0,,Woh bilkul alag sawaal hai.
+Dialogue: 0,0:04:40.33,0:04:43.39,Default,,0,0,0,,Ek aur purani parampara hai,
+Dialogue: 0,0:04:43.39,0:04:44.31,Default,,0,0,0,,Akashdeep.
+Dialogue: 0,0:04:44.31,0:04:46.76,Default,,0,0,0,,Bamboo ke lambe danday par,
+Dialogue: 0,0:04:46.76,0:04:48.59,Default,,0,0,0,,tokri ke andar diya.
+Dialogue: 0,0:04:48.59,0:04:50.73,Default,,0,0,0,,Poore Kartik maheene,
+Dialogue: 0,0:04:50.73,0:04:52.57,Default,,0,0,0,,oonchaai par jalta hua.
+Dialogue: 0,0:04:53.02,0:04:56.47,Default,,0,0,0,,Skanda Purana ke Kartik Mahatmya mein
+Dialogue: 0,0:04:56.47,0:04:57.62,Default,,0,0,0,,iska zikr hai.
+Dialogue: 0,0:04:57.62,0:05:01.07,Default,,0,0,0,,Mahatmya yaani kisi cheez ki mahima
+Dialogue: 0,0:05:01.07,0:05:01.93,Default,,0,0,0,,ka varnan.
+Dialogue: 0,0:05:01.93,0:05:04.51,Default,,0,0,0,,Yeh diya Vishnu ko prasann karne,
+Dialogue: 0,0:05:04.51,0:05:07.10,Default,,0,0,0,,aur purvajon ki shanti ke liye.
+Dialogue: 0,0:05:07.55,0:05:10.32,Default,,0,0,0,,Yaani Kashi mein diye ka rishta
+Dialogue: 0,0:05:10.32,0:05:12.17,Default,,0,0,0,,bahut purana hai.
+Dialogue: 0,0:05:12.17,0:05:14.63,Default,,0,0,0,,Lekin woh diya akela tha,
+Dialogue: 0,0:05:14.63,0:05:15.87,Default,,0,0,0,,ghar ki chhat par,
+Dialogue: 0,0:05:15.87,0:05:17.71,Default,,0,0,0,,ya ghat ke kinare.
+Dialogue: 0,0:05:17.71,0:05:19.87,Default,,0,0,0,,Bheed wala utsav nahi.
+Dialogue: 0,0:05:20.32,0:05:22.51,Default,,0,0,0,,Phir aati hai Kashi ki sabse
+Dialogue: 0,0:05:22.51,0:05:23.72,Default,,0,0,0,,pyaari maanyata.
+Dialogue: 0,0:05:23.72,0:05:26.63,Default,,0,0,0,,Kartik Purnima ko 33 crore devta
+Dialogue: 0,0:05:26.63,0:05:28.33,Default,,0,0,0,,dharti par utarte hain.
+Dialogue: 0,0:05:28.33,0:05:30.52,Default,,0,0,0,,Sirf Ganga mein nahane ke liye.
+Dialogue: 0,0:05:30.97,0:05:33.53,Default,,0,0,0,,Woh Shiv ki Tripurasur par jeet
+Dialogue: 0,0:05:33.53,0:05:35.24,Default,,0,0,0,,ka jashn manaate hain.
+Dialogue: 0,0:05:35.24,0:05:36.67,Default,,0,0,0,,Isliye naam pada,
+Dialogue: 0,0:05:36.67,0:05:38.09,Default,,0,0,0,,Dev Deepawali,
+Dialogue: 0,0:05:38.09,0:05:40.37,Default,,0,0,0,,yaani devtaon ki Diwali.
+Dialogue: 0,0:05:40.37,0:05:42.65,Default,,0,0,0,,Yeh Kashi ka lok-vishwas hai,
+Dialogue: 0,0:05:42.65,0:05:45.21,Default,,0,0,0,,jo peedhi dar peedhi sunaaya gaya.
+Dialogue: 0,0:05:45.66,0:05:47.63,Default,,0,0,0,,To katha Vedon mein hai,
+Dialogue: 0,0:05:47.63,0:05:49.31,Default,,0,0,0,,rasm Purana mein hai.
+Dialogue: 0,0:05:49.31,0:05:51.56,Default,,0,0,0,,Lekin kya Tripur naam ka koi
+Dialogue: 0,0:05:51.56,0:05:53.25,Default,,0,0,0,,asli shehar bhi tha?
+Dialogue: 0,0:05:53.25,0:05:56.06,Default,,0,0,0,,Iska jawab ek khudai mein mila.
+Dialogue: 0,0:05:56.51,0:05:59.58,Default,,0,0,0,,Madhya Pradesh mein Jabalpur ke paas
+Dialogue: 0,0:05:59.58,0:06:00.50,Default,,0,0,0,,ek gaon hai,
+Dialogue: 0,0:06:00.50,0:06:01.11,Default,,0,0,0,,Tewar.
+Dialogue: 0,0:06:01.11,0:06:03.56,Default,,0,0,0,,Naam mein kuch khaas nahi lagta.
+Dialogue: 0,0:06:03.56,0:06:06.32,Default,,0,0,0,,Lekin iske paas ki zameen ke
+Dialogue: 0,0:06:06.32,0:06:06.94,Default,,0,0,0,,neeche,
+Dialogue: 0,0:06:06.94,0:06:09.39,Default,,0,0,0,,ek purana shehar soya hai.
+Dialogue: 0,0:06:09.84,0:06:13.80,Default,,0,0,0,,ASI yaani Archaeological Survey of India.
+Dialogue: 0,0:06:13.80,0:06:17.47,Default,,0,0,0,,Desh ki purani dharohar sambhalne wali
+Dialogue: 0,0:06:17.47,0:06:18.88,Default,,0,0,0,,sarkari sanstha.
+Dialogue: 0,0:06:18.88,0:06:20.86,Default,,0,0,0,,Uski khudai ne bataya,
+Dialogue: 0,0:06:20.86,0:06:23.12,Default,,0,0,0,,yahi prachin Tripuri hai.
+Dialogue: 0,0:06:23.12,0:06:26.23,Default,,0,0,0,,Khudai yaani zameen ko dheere khodkar
+Dialogue: 0,0:06:26.23,0:06:27.92,Default,,0,0,0,,itihaas nikaalna.
+Dialogue: 0,0:06:28.37,0:06:29.82,Default,,0,0,0,,Yeh basti kab ki hai?
+Dialogue: 0,0:06:29.82,0:06:31.28,Default,,0,0,0,,ASI ke mutabik,
+Dialogue: 0,0:06:31.28,0:06:33.71,Default,,0,0,0,,iski jadein bahut purani hain.
+Dialogue: 0,0:06:33.71,0:06:36.13,Default,,0,0,0,,Tamra-Pashan yug ke aakhri daur tak.
+Dialogue: 0,0:06:36.13,0:06:38.56,Default,,0,0,0,,Yaani jab insaan tamba aur pathar
+Dialogue: 0,0:06:38.56,0:06:39.77,Default,,0,0,0,,saath chalata tha.
+Dialogue: 0,0:06:40.22,0:06:42.10,Default,,0,0,0,,Aur phir mile sikke.
+Dialogue: 0,0:06:42.10,0:06:43.67,Default,,0,0,0,,Tambe ke sikke.
+Dialogue: 0,0:06:43.67,0:06:46.17,Default,,0,0,0,,Un par shehar ka naam likha
+Dialogue: 0,0:06:46.17,0:06:46.49,Default,,0,0,0,,tha,
+Dialogue: 0,0:06:46.49,0:06:47.43,Default,,0,0,0,,Tirpuri.
+Dialogue: 0,0:06:47.43,0:06:48.99,Default,,0,0,0,,Prakrit bhasha mein,
+Dialogue: 0,0:06:48.99,0:06:50.56,Default,,0,0,0,,Brahmi lipi mein.
+Dialogue: 0,0:06:50.56,0:06:53.38,Default,,0,0,0,,Yahi sabse bada sabut hai.
+Dialogue: 0,0:06:53.83,0:06:57.68,Default,,0,0,0,,Brahmi yaani Bharat ki sabse purani
+Dialogue: 0,0:06:57.68,0:06:59.28,Default,,0,0,0,,lipiyon mein se ek.
+Dialogue: 0,0:06:59.28,0:07:02.81,Default,,0,0,0,,Prakrit yaani us zamane ki bolchaal
+Dialogue: 0,0:07:02.81,0:07:03.78,Default,,0,0,0,,ki bhasha.
+Dialogue: 0,0:07:03.78,0:07:05.70,Default,,0,0,0,,Aur sikkon ki umar?
+Dialogue: 0,0:07:05.70,0:07:07.31,Default,,0,0,0,,2nd century BCE,
+Dialogue: 0,0:07:07.31,0:07:09.23,Default,,0,0,0,,ya usse bhi pehle.
+Dialogue: 0,0:07:09.68,0:07:10.27,Default,,0,0,0,,Sochiye,
+Dialogue: 0,0:07:10.27,0:07:13.51,Default,,0,0,0,,Mahabharat jis Tripur ki baat karta
+Dialogue: 0,0:07:13.51,0:07:13.80,Default,,0,0,0,,hai.
+Dialogue: 0,0:07:13.80,0:07:16.16,Default,,0,0,0,,Aur zameen se nikle sikke,
+Dialogue: 0,0:07:16.16,0:07:18.52,Default,,0,0,0,,jin par Tirpuri likha hai.
+Dialogue: 0,0:07:18.52,0:07:20.58,Default,,0,0,0,,Kya yeh wahi Tripur hai?
+Dialogue: 0,0:07:20.58,0:07:22.64,Default,,0,0,0,,Yahin savdhaani chahiye.
+Dialogue: 0,0:07:23.09,0:07:25.59,Default,,0,0,0,,Sikke sirf itna batate hain ki
+Dialogue: 0,0:07:25.59,0:07:27.59,Default,,0,0,0,,Tripuri naam ka shehar tha.
+Dialogue: 0,0:07:27.59,0:07:29.10,Default,,0,0,0,,Wahan log rehte the,
+Dialogue: 0,0:07:29.10,0:07:30.35,Default,,0,0,0,,len-den karte the.
+Dialogue: 0,0:07:30.35,0:07:32.85,Default,,0,0,0,,Udte kilon ka koi sabut mitti
+Dialogue: 0,0:07:32.85,0:07:33.85,Default,,0,0,0,,nahi deti.
+Dialogue: 0,0:07:34.30,0:07:36.74,Default,,0,0,0,,ASI ne Tewar mein phir khudai
+Dialogue: 0,0:07:36.74,0:07:37.56,Default,,0,0,0,,shuru ki,
+Dialogue: 0,0:07:37.56,0:07:38.91,Default,,0,0,0,,2021 mein.
+Dialogue: 0,0:07:38.91,0:07:40.81,Default,,0,0,0,,Is baar zameen se aur bhi
+Dialogue: 0,0:07:40.81,0:07:41.90,Default,,0,0,0,,cheezein nikleen.
+Dialogue: 0,0:07:41.90,0:07:44.34,Default,,0,0,0,,Aur yeh cheezein ek bade shehar
+Dialogue: 0,0:07:44.34,0:07:46.78,Default,,0,0,0,,ki taraf ishaara karti hain.
+Dialogue: 0,0:07:47.23,0:07:49.85,Default,,0,0,0,,Balua pathar ke khambhe mile.
+Dialogue: 0,0:07:49.85,0:07:52.46,Default,,0,0,0,,Balua pathar yaani sandstone,
+Dialogue: 0,0:07:52.46,0:07:54.49,Default,,0,0,0,,wahi laal-bhoora pathar.
+Dialogue: 0,0:07:54.49,0:07:56.53,Default,,0,0,0,,Saath mein eenton ki deewar,
+Dialogue: 0,0:07:56.53,0:07:59.43,Default,,0,0,0,,aur purane zamane ka saamaan.
+Dialogue: 0,0:07:59.43,0:08:02.63,Default,,0,0,0,,Sab dheere-dheere bahar aa raha hai.
+Dialogue: 0,0:08:03.08,0:08:04.51,Default,,0,0,0,,ASI kehta hai,
+Dialogue: 0,0:08:04.51,0:08:07.36,Default,,0,0,0,,yahan log lambe samay tak base.
+Dialogue: 0,0:08:07.36,0:08:09.64,Default,,0,0,0,,Yeh ek sangathit shehar tha.
+Dialogue: 0,0:08:09.64,0:08:12.49,Default,,0,0,0,,Lekin kaam abhi poora nahi hua.
+Dialogue: 0,0:08:12.49,0:08:15.62,Default,,0,0,0,,Khambhe abhi tak poori tarah khule
+Dialogue: 0,0:08:15.62,0:08:16.48,Default,,0,0,0,,bhi nahi.
+Dialogue: 0,0:08:16.93,0:08:19.34,Default,,0,0,0,,To Tripuri ek asli shehar tha.
+Dialogue: 0,0:08:19.34,0:08:22.47,Default,,0,0,0,,Lekin Dev Deepawali Tripuri mein nahi,
+Dialogue: 0,0:08:22.47,0:08:24.88,Default,,0,0,0,,Kashi ke Ganga ghaton par hoti
+Dialogue: 0,0:08:24.88,0:08:25.12,Default,,0,0,0,,hai.
+Dialogue: 0,0:08:25.12,0:08:26.81,Default,,0,0,0,,Aur un ghaton ki umar?
+Dialogue: 0,0:08:26.81,0:08:28.25,Default,,0,0,0,,Yahan agla twist hai.
+Dialogue: 0,0:08:28.70,0:08:30.66,Default,,0,0,0,,Varanasi ke ghat,
+Dialogue: 0,0:08:30.66,0:08:34.25,Default,,0,0,0,,yaani nadi tak utarti pathar ki
+Dialogue: 0,0:08:34.25,0:08:34.90,Default,,0,0,0,,seedhiyan.
+Dialogue: 0,0:08:34.90,0:08:36.86,Default,,0,0,0,,Ginti mein 84 ghat.
+Dialogue: 0,0:08:36.86,0:08:39.48,Default,,0,0,0,,Aap tasveer dekhkar sochte hain,
+Dialogue: 0,0:08:39.48,0:08:42.74,Default,,0,0,0,,yeh hazaaron saal purane honge.
+Dialogue: 0,0:08:43.19,0:08:46.53,Default,,0,0,0,,Lekin ASI aur UNESCO ki tentative
+Dialogue: 0,0:08:46.53,0:08:48.32,Default,,0,0,0,,suchi kuch aur kehti hai.
+Dialogue: 0,0:08:48.32,0:08:51.66,Default,,0,0,0,,Zyaadatar ghat 1700 ke baad dobara
+Dialogue: 0,0:08:51.66,0:08:52.17,Default,,0,0,0,,bane.
+Dialogue: 0,0:08:52.17,0:08:54.48,Default,,0,0,0,,Matlab aaj jo pathar aap chhoote
+Dialogue: 0,0:08:54.48,0:08:54.74,Default,,0,0,0,,hain,
+Dialogue: 0,0:08:54.74,0:08:56.79,Default,,0,0,0,,woh utna purana nahi.
+Dialogue: 0,0:08:57.24,0:09:00.58,Default,,0,0,0,,Us samay Kashi Maratha samrajya ke
+Dialogue: 0,0:09:00.58,0:09:01.70,Default,,0,0,0,,prabhav mein thi.
+Dialogue: 0,0:09:01.70,0:09:05.04,Default,,0,0,0,,Ghaton ko banwane wale the Marathe,
+Dialogue: 0,0:09:05.04,0:09:05.59,Default,,0,0,0,,Scindia,
+Dialogue: 0,0:09:05.59,0:09:06.15,Default,,0,0,0,,Holkar,
+Dialogue: 0,0:09:06.15,0:09:07.54,Default,,0,0,0,,Bhonsle aur Peshwe.
+Dialogue: 0,0:09:07.54,0:09:11.16,Default,,0,0,0,,Inhone nadi kinare pathar ki seedhiyan
+Dialogue: 0,0:09:11.16,0:09:11.72,Default,,0,0,0,,bichhwaayi.
+Dialogue: 0,0:09:12.17,0:09:14.40,Default,,0,0,0,,Iska matlab yeh nahi ki Kashi
+Dialogue: 0,0:09:14.40,0:09:14.84,Default,,0,0,0,,nayi hai.
+Dialogue: 0,0:09:14.84,0:09:17.73,Default,,0,0,0,,Ganga kinare puja bahut purani ho
+Dialogue: 0,0:09:17.73,0:09:18.40,Default,,0,0,0,,sakti hai.
+Dialogue: 0,0:09:18.40,0:09:20.18,Default,,0,0,0,,Bas aaj ki pathar ki seedhiyan,
+Dialogue: 0,0:09:20.18,0:09:20.85,Default,,0,0,0,,baad ki hain.
+Dialogue: 0,0:09:21.30,0:09:23.75,Default,,0,0,0,,Granth ke hisaab se Kartik ka
+Dialogue: 0,0:09:23.75,0:09:25.28,Default,,0,0,0,,maheena khaas hai.
+Dialogue: 0,0:09:25.28,0:09:27.12,Default,,0,0,0,,Log subah nahate,
+Dialogue: 0,0:09:27.12,0:09:30.49,Default,,0,0,0,,tokriyon mein Akashdeep oonche latakte.
+Dialogue: 0,0:09:30.49,0:09:33.56,Default,,0,0,0,,Lekin aaj jaisa diyon ka samandar?
+Dialogue: 0,0:09:33.56,0:09:36.62,Default,,0,0,0,,Uski kahani bilkul alag hai.
+Dialogue: 0,0:09:37.07,0:09:37.99,Default,,0,0,0,,Ab sochiye.
+Dialogue: 0,0:09:37.99,0:09:39.52,Default,,0,0,0,,Granth mein deepdan hai.
+Dialogue: 0,0:09:39.52,0:09:42.28,Default,,0,0,0,,Akashdeep ki parampara hai.
+Dialogue: 0,0:09:42.28,0:09:44.42,Default,,0,0,0,,Ghat baad mein pakke bane.
+Dialogue: 0,0:09:44.42,0:09:46.57,Default,,0,0,0,,To sab ghaton par ek saath
+Dialogue: 0,0:09:46.57,0:09:48.71,Default,,0,0,0,,diye pehli baar kab jale?
+Dialogue: 0,0:09:49.16,0:09:52.50,Default,,0,0,0,,Aur woh kahani shuru hoti hai
+Dialogue: 0,0:09:52.50,0:09:54.17,Default,,0,0,0,,Panchganga Ghat se.
+Dialogue: 0,0:09:54.17,0:09:55.84,Default,,0,0,0,,Ek tareekh ke saath,
+Dialogue: 0,0:09:55.84,0:09:57.51,Default,,0,0,0,,jo bahut nayi hai.
+Dialogue: 0,0:09:57.51,0:09:59.85,Default,,0,0,0,,Par records khud bhi ek baat
+Dialogue: 0,0:09:59.85,0:10:01.52,Default,,0,0,0,,par nahi tikte.
+Dialogue: 0,0:10:01.97,0:10:04.18,Default,,0,0,0,,Local records ke mutabik,
+Dialogue: 0,0:10:04.18,0:10:08.33,Default,,0,0,0,,saamuhik Dev Deepawali 1985 mein shuru
+Dialogue: 0,0:10:08.33,0:10:08.61,Default,,0,0,0,,hui.
+Dialogue: 0,0:10:08.61,0:10:11.38,Default,,0,0,0,,Saamuhik yaani poore ghat ke log,
+Dialogue: 0,0:10:11.38,0:10:13.04,Default,,0,0,0,,ek saath milkar manaayein.
+Dialogue: 0,0:10:13.04,0:10:15.25,Default,,0,0,0,,Har ghar ka alag diya nahi.
+Dialogue: 0,0:10:15.70,0:10:17.60,Default,,0,0,0,,Jagah thi Panchganga Ghat,
+Dialogue: 0,0:10:17.60,0:10:20.32,Default,,0,0,0,,Kashi ke purane ghaton mein se
+Dialogue: 0,0:10:20.32,0:10:20.60,Default,,0,0,0,,ek.
+Dialogue: 0,0:10:20.60,0:10:23.32,Default,,0,0,0,,Wahan logon ne milkar seedhiyon par
+Dialogue: 0,0:10:23.32,0:10:24.13,Default,,0,0,0,,diye sajaaye.
+Dialogue: 0,0:10:24.13,0:10:25.76,Default,,0,0,0,,Aur dekhte hi dekhte,
+Dialogue: 0,0:10:25.76,0:10:27.94,Default,,0,0,0,,baat poore shehar mein phail gayi.
+Dialogue: 0,0:10:28.39,0:10:32.70,Default,,0,0,0,,Phir 1991 mein utsav Dashashwamedh Ghat
+Dialogue: 0,0:10:32.70,0:10:33.69,Default,,0,0,0,,tak phaila.
+Dialogue: 0,0:10:33.69,0:10:37.00,Default,,0,0,0,,Wahan ise aur bada roop mila.
+Dialogue: 0,0:10:37.00,0:10:40.31,Default,,0,0,0,,Dheere-dheere baaki ghat bhi jud gaye.
+Dialogue: 0,0:10:40.31,0:10:42.63,Default,,0,0,0,,Yahi hai aaj ka chehra.
+Dialogue: 0,0:10:43.08,0:10:46.09,Default,,0,0,0,,Lekin yahan records mein farq hai.
+Dialogue: 0,0:10:46.09,0:10:48.10,Default,,0,0,0,,Ek source kehta hai,
+Dialogue: 0,0:10:48.10,0:10:50.77,Default,,0,0,0,,shuruaat 1991 mein hui.
+Dialogue: 0,0:10:50.77,0:10:52.78,Default,,0,0,0,,Dashashwamedh Ghat par,
+Dialogue: 0,0:10:52.78,0:10:55.12,Default,,0,0,0,,ek sthaniya pandit ne ki.
+Dialogue: 0,0:10:55.57,0:10:58.38,Default,,0,0,0,,Unhe log Babu Maharaj ke naam
+Dialogue: 0,0:10:58.38,0:10:59.50,Default,,0,0,0,,se jaante the,
+Dialogue: 0,0:10:59.50,0:11:02.03,Default,,0,0,0,,Pandit Kishori Raman Dubey.
+Dialogue: 0,0:11:02.03,0:11:03.15,Default,,0,0,0,,Doosri taraf,
+Dialogue: 0,0:11:03.15,0:11:06.53,Default,,0,0,0,,kuch records 1985 aur Panchganga ka
+Dialogue: 0,0:11:06.53,0:11:07.65,Default,,0,0,0,,naam lete hain.
+Dialogue: 0,0:11:08.10,0:11:10.53,Default,,0,0,0,,To shuruaat kahan aur kab hui,
+Dialogue: 0,0:11:10.53,0:11:12.35,Default,,0,0,0,,is par raay alag hai.
+Dialogue: 0,0:11:12.35,0:11:14.77,Default,,0,0,0,,Lekin ek baat par sab sahmat
+Dialogue: 0,0:11:14.77,0:11:15.08,Default,,0,0,0,,hain.
+Dialogue: 0,0:11:15.08,0:11:18.42,Default,,0,0,0,,Yeh saamuhik roop kuch dashak purana
+Dialogue: 0,0:11:18.42,0:11:18.72,Default,,0,0,0,,hai,
+Dialogue: 0,0:11:18.72,0:11:20.54,Default,,0,0,0,,hazaaron saal nahi.
+Dialogue: 0,0:11:20.99,0:11:24.26,Default,,0,0,0,,Matlab pehle sawaal ka aadha jawab
+Dialogue: 0,0:11:24.26,0:11:24.85,Default,,0,0,0,,mil gaya.
+Dialogue: 0,0:11:24.85,0:11:27.52,Default,,0,0,0,,Shiv ki katha prachin granthon mein
+Dialogue: 0,0:11:27.52,0:11:27.82,Default,,0,0,0,,hai.
+Dialogue: 0,0:11:27.82,0:11:30.20,Default,,0,0,0,,Snan aur deepdan bhi prachin hain.
+Dialogue: 0,0:11:30.20,0:11:32.87,Default,,0,0,0,,Saare ghaton ki raushni nayi hai.
+Dialogue: 0,0:11:33.32,0:11:36.09,Default,,0,0,0,,Kya isse parampara chhoti ho jaati
+Dialogue: 0,0:11:36.09,0:11:36.32,Default,,0,0,0,,hai?
+Dialogue: 0,0:11:36.32,0:11:37.25,Default,,0,0,0,,Bilkul nahi.
+Dialogue: 0,0:11:37.25,0:11:39.55,Default,,0,0,0,,Kashi ne purani katha ko naya
+Dialogue: 0,0:11:39.55,0:11:40.02,Default,,0,0,0,,roop diya.
+Dialogue: 0,0:11:40.02,0:11:42.56,Default,,0,0,0,,Har parampara kabhi na kabhi nayi
+Dialogue: 0,0:11:42.56,0:11:43.48,Default,,0,0,0,,hi hoti hai.
+Dialogue: 0,0:11:43.93,0:11:47.11,Default,,0,0,0,,Lekin ab sabse gehra sawaal bachta
+Dialogue: 0,0:11:47.11,0:11:47.40,Default,,0,0,0,,hai.
+Dialogue: 0,0:11:47.40,0:11:50.00,Default,,0,0,0,,Shehar aasmaan mein seedh mein kaise
+Dialogue: 0,0:11:50.00,0:11:50.29,Default,,0,0,0,,aaye?
+Dialogue: 0,0:11:50.29,0:11:52.60,Default,,0,0,0,,Kya kisi ne sach mein aasmaan
+Dialogue: 0,0:11:52.60,0:11:54.05,Default,,0,0,0,,mein kuch dekha tha?
+Dialogue: 0,0:11:54.50,0:11:57.69,Default,,0,0,0,,Mahabharat ki shart yaad kijiye.
+Dialogue: 0,0:11:57.69,0:12:00.52,Default,,0,0,0,,Shehar sirf tab jal sakte the,
+Dialogue: 0,0:12:00.52,0:12:02.29,Default,,0,0,0,,jab woh seedh mein aayein.
+Dialogue: 0,0:12:02.29,0:12:05.47,Default,,0,0,0,,Aur aisa bahut kam hota tha.
+Dialogue: 0,0:12:05.47,0:12:08.66,Default,,0,0,0,,Yahi baat scholars ko kheenchti hai.
+Dialogue: 0,0:12:09.11,0:12:11.13,Default,,0,0,0,,Kuch vidwan kehte hain,
+Dialogue: 0,0:12:11.13,0:12:14.16,Default,,0,0,0,,yeh grahon ki yuti ho sakti
+Dialogue: 0,0:12:14.16,0:12:14.50,Default,,0,0,0,,hai.
+Dialogue: 0,0:12:14.50,0:12:17.53,Default,,0,0,0,,Yuti yaani jab aasmaan mein grah
+Dialogue: 0,0:12:17.53,0:12:18.21,Default,,0,0,0,,paas-paas,
+Dialogue: 0,0:12:18.21,0:12:20.23,Default,,0,0,0,,ek seedh mein dikhte hain.
+Dialogue: 0,0:12:20.68,0:12:25.52,Default,,0,0,0,,Archaeoastronomy yaani purane granthon aur imaaraton
+Dialogue: 0,0:12:25.52,0:12:28.37,Default,,0,0,0,,mein aasmaan ki jaankari dhoondhne ka
+Dialogue: 0,0:12:28.37,0:12:28.94,Default,,0,0,0,,vigyan.
+Dialogue: 0,0:12:28.94,0:12:31.50,Default,,0,0,0,,Isi se jude kuch log yahi
+Dialogue: 0,0:12:31.50,0:12:32.36,Default,,0,0,0,,poochhte hain.
+Dialogue: 0,0:12:32.36,0:12:34.92,Default,,0,0,0,,Kya purvajon ne kuch dekha tha?
+Dialogue: 0,0:12:35.37,0:12:38.68,Default,,0,0,0,,Kuch aur log alag andaaza lagaate
+Dialogue: 0,0:12:38.68,0:12:38.99,Default,,0,0,0,,hain.
+Dialogue: 0,0:12:38.99,0:12:41.70,Default,,0,0,0,,Shayad koi ulka girti dekhi gayi
+Dialogue: 0,0:12:41.70,0:12:42.00,Default,,0,0,0,,ho.
+Dialogue: 0,0:12:42.00,0:12:45.32,Default,,0,0,0,,Ulka yaani aasmaan se girta jalta
+Dialogue: 0,0:12:45.32,0:12:45.92,Default,,0,0,0,,pathar,
+Dialogue: 0,0:12:45.92,0:12:48.33,Default,,0,0,0,,jise shooting star kehte hain.
+Dialogue: 0,0:12:48.78,0:12:51.07,Default,,0,0,0,,Magar dharm aur granthon ke kai
+Dialogue: 0,0:12:51.07,0:12:53.65,Default,,0,0,0,,vidwan bilkul alag sochte hain.
+Dialogue: 0,0:12:53.65,0:12:56.23,Default,,0,0,0,,Unke liye yeh katha ek rupak
+Dialogue: 0,0:12:56.23,0:12:56.52,Default,,0,0,0,,hai.
+Dialogue: 0,0:12:56.52,0:12:59.96,Default,,0,0,0,,Rupak yaani kahani ke zariye gehri
+Dialogue: 0,0:12:59.96,0:13:00.82,Default,,0,0,0,,seekh dena.
+Dialogue: 0,0:13:01.27,0:13:04.47,Default,,0,0,0,,Unke hisaab se yeh Vedic yagya
+Dialogue: 0,0:13:04.47,0:13:05.75,Default,,0,0,0,,ki bhasha hai.
+Dialogue: 0,0:13:05.75,0:13:07.99,Default,,0,0,0,,Ya brahmand ke ant aur naye
+Dialogue: 0,0:13:07.99,0:13:09.59,Default,,0,0,0,,aarambh ka prateek.
+Dialogue: 0,0:13:09.59,0:13:11.83,Default,,0,0,0,,Yaani aasmaan ki nahi,
+Dialogue: 0,0:13:11.83,0:13:13.43,Default,,0,0,0,,mann ki kahani.
+Dialogue: 0,0:13:13.88,0:13:15.14,Default,,0,0,0,,Kaun sahi hai?
+Dialogue: 0,0:13:15.14,0:13:17.65,Default,,0,0,0,,Abhi tak koi tay nahi kar
+Dialogue: 0,0:13:17.65,0:13:17.96,Default,,0,0,0,,paaya.
+Dialogue: 0,0:13:17.96,0:13:21.73,Default,,0,0,0,,Aasmaan wala andaaza saabit nahi hua.
+Dialogue: 0,0:13:21.73,0:13:24.25,Default,,0,0,0,,Aur rupak wali baat bhi bas
+Dialogue: 0,0:13:24.25,0:13:26.76,Default,,0,0,0,,padhne ka ek tareeka hai.
+Dialogue: 0,0:13:27.21,0:13:29.48,Default,,0,0,0,,To abhi kya nahi pata?
+Dialogue: 0,0:13:29.48,0:13:32.04,Default,,0,0,0,,Hum nahi jaante ki 3 udte
+Dialogue: 0,0:13:32.04,0:13:34.88,Default,,0,0,0,,shehron ki katha kahaan se janmi.
+Dialogue: 0,0:13:34.88,0:13:36.02,Default,,0,0,0,,Aasmaan dekhkar,
+Dialogue: 0,0:13:36.02,0:13:38.01,Default,,0,0,0,,ya yagya ki bhasha se.
+Dialogue: 0,0:13:38.46,0:13:41.29,Default,,0,0,0,,Tewar ki Tripuri aur is katha
+Dialogue: 0,0:13:41.29,0:13:43.27,Default,,0,0,0,,ka rishta bhi saaf nahi.
+Dialogue: 0,0:13:43.27,0:13:44.40,Default,,0,0,0,,Naam milta hai,
+Dialogue: 0,0:13:44.40,0:13:46.38,Default,,0,0,0,,par sabut adhoora hai.
+Dialogue: 0,0:13:46.38,0:13:49.50,Default,,0,0,0,,Aur wahan khudai abhi poori nahi
+Dialogue: 0,0:13:49.50,0:13:49.78,Default,,0,0,0,,hui.
+Dialogue: 0,0:13:50.23,0:13:53.35,Default,,0,0,0,,Aur Dev Deepawali ki pehli shaam
+Dialogue: 0,0:13:53.35,0:13:54.60,Default,,0,0,0,,kahaan jali,
+Dialogue: 0,0:13:54.60,0:13:57.10,Default,,0,0,0,,Panchganga ya Dashashwamedh?
+Dialogue: 0,0:13:57.10,0:14:00.22,Default,,0,0,0,,Records ek awaaz mein nahi bolte.
+Dialogue: 0,0:14:00.22,0:14:02.72,Default,,0,0,0,,Shayad Kashi ke buzurg aaj bhi
+Dialogue: 0,0:14:02.72,0:14:04.59,Default,,0,0,0,,woh raat yaad karte hon.
+Dialogue: 0,0:14:05.04,0:14:06.96,Default,,0,0,0,,Lekin jo pata hai,
+Dialogue: 0,0:14:06.96,0:14:09.20,Default,,0,0,0,,woh aap khud dekh sakte hain.
+Dialogue: 0,0:14:09.20,0:14:11.44,Default,,0,0,0,,Seedha apni aankhon se.
+Dialogue: 0,0:14:11.44,0:14:12.08,Default,,0,0,0,,Chaliye,
+Dialogue: 0,0:14:12.08,0:14:13.68,Default,,0,0,0,,Kashi chalte hain.
+Dialogue: 0,0:14:13.68,0:14:16.24,Default,,0,0,0,,Aur phir Tewar ki mitti tak
+Dialogue: 0,0:14:16.24,0:14:16.56,Default,,0,0,0,,bhi.
+Dialogue: 0,0:14:17.01,0:14:19.16,Default,,0,0,0,,Kartik Purnima ki shaam,
+Dialogue: 0,0:14:19.16,0:14:21.93,Default,,0,0,0,,Kashi ke ghaton par khade hoiye.
+Dialogue: 0,0:14:21.93,0:14:23.47,Default,,0,0,0,,Pathar ki seedhiyan,
+Dialogue: 0,0:14:23.47,0:14:26.86,Default,,0,0,0,,jo Marathon ke zamane mein bichhi.
+Dialogue: 0,0:14:26.86,0:14:28.40,Default,,0,0,0,,Unpar jalte diye,
+Dialogue: 0,0:14:28.40,0:14:30.86,Default,,0,0,0,,jo pichhle kuch dashkon ki den
+Dialogue: 0,0:14:30.86,0:14:31.17,Default,,0,0,0,,hain.
+Dialogue: 0,0:14:31.62,0:14:34.76,Default,,0,0,0,,Ganga mein subah ka Kartik snan
+Dialogue: 0,0:14:34.76,0:14:35.46,Default,,0,0,0,,dekhiye.
+Dialogue: 0,0:14:35.46,0:14:38.96,Default,,0,0,0,,Aur oonche bamboo par tokri wale
+Dialogue: 0,0:14:38.96,0:14:40.71,Default,,0,0,0,,Akashdeep dhoondhiye.
+Dialogue: 0,0:14:40.71,0:14:42.45,Default,,0,0,0,,Yeh woh hissa hai,
+Dialogue: 0,0:14:42.45,0:14:44.90,Default,,0,0,0,,jo granthon mein likha hai.
+Dialogue: 0,0:14:45.35,0:14:48.53,Default,,0,0,0,,Aur agar itihaas ki mitti chhoni
+Dialogue: 0,0:14:48.53,0:14:48.82,Default,,0,0,0,,ho,
+Dialogue: 0,0:14:48.82,0:14:49.98,Default,,0,0,0,,to Tewar jaaiye.
+Dialogue: 0,0:14:49.98,0:14:52.29,Default,,0,0,0,,Tewar gaon se lagbhag 2 km
+Dialogue: 0,0:14:52.29,0:14:52.58,Default,,0,0,0,,door,
+Dialogue: 0,0:14:52.58,0:14:54.90,Default,,0,0,0,,prachin Tripuri ki jagah.
+Dialogue: 0,0:14:54.90,0:14:58.08,Default,,0,0,0,,Jahan ASI ne khambhe aur deewarein
+Dialogue: 0,0:14:58.08,0:14:58.95,Default,,0,0,0,,nikaali.
+Dialogue: 0,0:14:59.40,0:15:01.74,Default,,0,0,0,,To wapas pehle sawaal par.
+Dialogue: 0,0:15:01.74,0:15:03.49,Default,,0,0,0,,Shiv ne Tripur jalaya,
+Dialogue: 0,0:15:03.49,0:15:05.54,Default,,0,0,0,,yeh granthon ki katha hai.
+Dialogue: 0,0:15:05.54,0:15:07.88,Default,,0,0,0,,Aur Kashi ne us katha par,
+Dialogue: 0,0:15:07.88,0:15:10.80,Default,,0,0,0,,diyon ki ek nayi parampara banayi.
+Dialogue: 0,0:15:11.25,0:15:13.82,Default,,0,0,0,,Agle video mein chalenge Pushkar,
+Dialogue: 0,0:15:13.82,0:15:16.90,Default,,0,0,0,,jahan Kartik Purnima par mela lagta
+Dialogue: 0,0:15:16.90,0:15:17.15,Default,,0,0,0,,hai.
+Dialogue: 0,0:15:17.15,0:15:18.69,Default,,0,0,0,,Lekin pehle bataiye.
+Dialogue: 0,0:15:18.69,0:15:21.77,Default,,0,0,0,,Aapne Dev Deepawali Kashi mein dekhi
+Dialogue: 0,0:15:21.77,0:15:22.03,Default,,0,0,0,,hai,
+Dialogue: 0,0:15:22.03,0:15:23.57,Default,,0,0,0,,ya sirf tasveeron mein?

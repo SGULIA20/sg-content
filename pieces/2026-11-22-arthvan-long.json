@@ -1,12 +1,131 @@
 {
  "channel": "arthvan",
- "facts": [],
+ "facts": [
+  {
+   "label": "scripture",
+   "number": 3.0,
+   "quote": "The Asuras had three citadels; the lowest was of iron, then there was one of silver, then one of gold. The gods could not conquer them... Rudra let it go; it cleft the Citadels and drove the Asuras away from these worlds.",
+   "source_date": "1914",
+   "source_name": "Taittiriya Samhita, Krishna Yajurveda (6.2.3)",
+   "source_url": "https://en.wikipedia.org/wiki/Tripurasura",
+   "text": "The Taittiriya Samhita of the Krishna Yajurveda contains the earliest textual account of the Asuras constructing three citadels of iron, silver, and gold that Rudra destroyed with a single arrow.",
+   "unit": "count"
+  },
+  {
+   "label": "scripture",
+   "number": 1.0,
+   "quote": "And oh king, as soon as Rudra stood up holding his bow, during that time the three cities united... Shiva destroyed the three flying cities of the asuras with a single arrow.",
+   "source_date": "2015",
+   "source_name": "Mahabharata, Karna Parva (Chapters 33-34)",
+   "source_url": "https://en.wikipedia.org/wiki/Tripurantaka",
+   "text": "In the Mahabharata's Karna Parva, Shiva as Tripurantaka mounts a cosmic chariot made of the universe and uses a single arrow to destroy the three flying cities of the asura brothers Tarakaksha, Kamalaksha, and Vidyunmali when they align.",
+   "unit": "count"
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "The festival is also observed as Tripura Purnima Snan. The main rituals performed by devotees consist of kartik snan and deepdan.",
+   "source_date": "1996",
+   "source_name": "Skanda Purana, Kashi Khanda",
+   "source_url": "https://en.wikipedia.org/wiki/Dev_Deepavali_(Varanasi)",
+   "text": "The Skanda Purana associates the full moon of Kartik with the celebration of Tripuri Purnima and prescribes the ritual bath and lighting of lamps along the riverfront.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 2.0,
+   "quote": "The ancient site of Tripuri is situated nearly 2 km south west from Tewar village. During 2020-21 ASI conducted excavation of Tewar at two locations, TWR 1 and TWR 2.",
+   "source_date": "2021-01-16",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1689166",
+   "text": "Archaeological excavations at the ancient site of Tewar confirmed that it corresponds to Tripuri, an ancient city settlement dating back to the late Chalcolithic and early historic periods.",
+   "unit": "km"
+  },
+  {
+   "label": "archaeology",
+   "number": 200.0,
+   "quote": "'Tirpuri', the Prakrit form of the name, can be found on copper coins dated to the 2nd century BCE or earlier.",
+   "source_date": "1971",
+   "source_name": "Archaeological Survey of India / Sagar University",
+   "source_url": "https://en.wikipedia.org/wiki/Tewar,_Madhya_Pradesh",
+   "text": "Excavations at Tripuri recovered copper coins bearing the city name in ancient Brahmi and Prakrit script dating to the second century BCE.",
+   "unit": "BCE"
+  },
+  {
+   "label": "archaeology",
+   "number": 84.0,
+   "quote": "Most of the ghats were rebuilt after 1700 AD, when the city was part of the Maratha Empire. The patrons of current ghats are Marathas, Shindes, Holkars, Bhonsles, and Peshwes.",
+   "source_date": "2021",
+   "source_name": "Archaeological Survey of India / UNESCO Tentative List",
+   "source_url": "https://en.wikipedia.org/wiki/Ghats_in_Varanasi",
+   "text": "Architectural and archaeological surveys record that the masonry stone steps across the eighty-four river ghats of Varanasi were primarily constructed and paved between the eighteenth and nineteenth centuries CE under Maratha patronage.",
+   "unit": "count"
+  },
+  {
+   "label": "legend",
+   "number": 330000000.0,
+   "quote": "Mythologically, the gods are believed to descend to Earth to bathe in the Ganges on this day. The festival is also observed as Tripura Purnima Snan.",
+   "source_date": "2021",
+   "source_name": "Varanasi Oral Tradition",
+   "source_url": "https://en.wikipedia.org/wiki/Dev_Deepavali_(Varanasi)",
+   "text": "According to local oral belief in Varanasi, thirty-three crore deities descend to earth on Kartik Purnima to bathe in the Ganga and celebrate Shiva's victory over the demon Tripurasura.",
+   "unit": "count"
+  },
+  {
+   "label": "disputed",
+   "number": 1985.0,
+   "quote": "The tradition of lighting the lamps on the Dev Deepawali festival day was first started at the Dashashwamedh Ghat by Pandit Kishori Raman Dubey (Babu Maharaj) in 1991.",
+   "source_date": "2024",
+   "source_name": "Varanasi Cultural Documentation",
+   "source_url": "https://en.wikipedia.org/wiki/Dev_Deepavali_(Varanasi)",
+   "text": "While popular belief views the synchronized riverfront lighting across all ghats as an ancient multi-millennial ritual, local records document that the modern collective festival of Dev Deepawali was initiated in 1985 at Panchganga Ghat and expanded in 1991 at Dashashwamedh Ghat.",
+   "unit": "CE"
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "The alignment of the three moving cities once in a millennium has been interpreted either as an astronomical planetary conjunction, an allegory for cosmic dissolution, or a purely symbolic metaphysical narrative.",
+   "source_date": "2020",
+   "source_name": "Comparative Archaeoastronomy and Religious Studies",
+   "source_url": "https://en.wikipedia.org/wiki/Tripurantaka",
+   "text": "Scholars disagree on whether the myth of three moving cities aligning in the sky reflects an ancient astronomical observation of a planetary conjunction or meteor impact, or serves strictly as an allegorical Vedic ritual construct.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "Akashdeep is offered with the intention of pleasing Lord Vishnu and for the welfare of ancestors during the holy month of Kartik.",
+   "source_date": "1996",
+   "source_name": "Skanda Purana, Kartik Mahatmya",
+   "source_url": "https://en.wikipedia.org/wiki/Dev_Deepavali_(Varanasi)",
+   "text": "The traditional practice of hoisting Akashdeep lamps inside wicker baskets atop tall bamboo poles throughout the month of Kartik is documented in the Skanda Purana as an ancestral offering predating the modern mass Dev Deepawali spectacle.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 2021.0,
+   "quote": "ASI is carrying out excavation at archaeological site of Tewar... The architectural findings mainly consist of a brick wall and sandstone columns which are yet to be exposed fully as the project is ongoing.",
+   "source_date": "2021-03-08",
+   "source_name": "Archaeological Survey of India Lok Sabha Starred Question 197",
+   "source_url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1689166",
+   "text": "Excavations conducted by the Archaeological Survey of India at Tewar in 2021 revealed sandstone columns, brick walls, and early historic artifacts demonstrating long-term systematic urban occupation.",
+   "unit": "CE"
+  }
+ ],
  "id": "2026-11-22-arthvan-long",
  "ids": {
   "budget": {
-   "day": "2026-11-03",
-   "research": 3
-  }
+   "day": "2026-11-14",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 106.5,
+   "usd": 0.348456,
+   "voice": 70
+  },
+  "drafts": 1,
+  "intro_sent": "2026-11-14T19:29:22+00:00"
  },
  "kind": "long",
  "publish_day": "2026-11-22",
@@ -20,27 +139,1072 @@
   "research budget used for today (4 calls); the next quota day retries",
   "try 1: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
   "try 2: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
-  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+  "try 3: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "waiting for the founder's intro clip until 22 Nov 10:30 UTC"
  ],
- "script": null,
- "status": "failed-research",
- "timings": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Kashi ki Dev Deepawali, hazaaron saal purani ya sirf 1985 se?\nTripur ki katha Vedon aur Mahabharat mein hai.\nTewar ki mitti se Tirpuri naam ke sikke nikle.\nLekin saare ghaton ki raushni? Records kuch aur kehte hain.\nAapne Dev Deepawali Kashi mein dekhi hai, ya sirf tasveeron mein?\nUs dost ko bhejo jo is baar Dev Deepawali par Kashi ja raha hai.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#Mahabharat",
+     "#HinduMythology",
+     "#IndianHistory",
+     "#Mythology",
+     "#Itihaas",
+     "#Rahasya",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Kashi ki Dev Deepawali, hazaaron saal purani ya sirf 1985 se? Shiv ke Tripur jalaane ki katha Vedon mein hai, lekin saare ghaton ki raushni ki kahani bilkul alag nikli. Aapne Dev Deepawali Kashi mein dekhi hai, ya sirf tasveeron mein? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Dev Deepawali kitni purani?",
+     "00:00 Vedon mein 3 kile aur Shiv ka teer",
+     "00:00 Kartik Purnima: snan, deepdan, Akashdeep",
+     "00:00 Tewar mein Tripuri ki khudai",
+     "00:00 Kashi ke ghat kab bane?",
+     "00:00 Dev Deepawali kab shuru hui?",
+     "00:00 Aasmaan ki paheli",
+     "00:00 Jo abhi anjaan hai",
+     "00:00 Aaj kya dekh sakte hain",
+     "00:00 Sawaal aur agla safar"
+    ],
+    "description": "Kashi ki Dev Deepawali hazaaron saal purani hai, ya sirf 1985 se? Shiv ke Tripur jalaane ki katha Vedon aur Mahabharat mein hai, aur Tewar ki khudai mein Tirpuri naam ke sikke bhi mile. Lekin saare ghaton par ek saath diye jalaane ki shuruaat kab hui, is par records khud alag baat kehte hain. Us dost ko bhejo jo is baar Dev Deepawali par Kashi jaane ka plan bana raha hai.",
+    "tags": [
+     "Dev Deepawali",
+     "Kartik Purnima",
+     "Varanasi",
+     "Kashi",
+     "Tripurasura",
+     "Tripurantaka",
+     "Shiv katha",
+     "Tewar",
+     "Tripuri",
+     "Mahabharat",
+     "Karna Parva",
+     "Akashdeep",
+     "Indian history",
+     "archaeology"
+    ],
+    "title": "Dev Deepawali 1985 se? Tripurasura ka sach"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "1985",
+    "line": "Panchganga Ghat se saamuhik Dev Deepawali",
+    "source": "Varanasi Cultural Documentation"
+   },
+   {
+    "big_number": "84 ghat",
+    "line": "Zyaadatar 1700 ke baad dobara bane",
+    "source": "ASI / UNESCO Tentative List"
+   },
+   {
+    "big_number": "3 kile",
+    "line": "Lohe, chaandi aur sone ke kile",
+    "source": "Taittiriya Samhita 6.2.3"
+   },
+   {
+    "big_number": "2021",
+    "line": "Tewar khudai: khambhe aur eenton ki deewar",
+    "source": "Archaeological Survey of India"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Aapne Dev Deepawali Kashi mein dekhi hai, ya sirf tasveeron mein?",
+  "hook": "Kashi ki Dev Deepawali, hazaaron saal purani ya sirf 1985 se?",
+  "scenes": [
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic night aerial view of the Varanasi ghats on the Ganga blazing with endless rows of oil lamps, thin smoke and mist, crowded wooden boats, temple spires lit gold, the lower fifth calm dark river water reflecting the lamps, no text",
+     "type": "art"
+    },
+    "vo": "Kashi ki Dev Deepawali, hazaaron saal purani ya sirf 1985 se? Lakhon diye, ghaton par aag ki nadi. Lekin is raushni ki asli umar kya hai?"
+   },
+   {
+    "facts_used": [
+     6,
+     7
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic misty dawn over the Ganga at Varanasi, a lone old boatman in a white dhoti rowing past ghat steps, faint golden light breaking through clouds above, lower fifth calm river, documentary photograph, no text",
+     "type": "art"
+    },
+    "vo": "Aap sochte honge, yeh parampara hazaaron saal purani hai. Ki devta khud utarte hain, Ganga mein nahane. Magar records kuch aur kehte hain. Sunkar aap chaunk jaayenge."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic evening view of a single old stone ghat in Varanasi with a few rows of clay lamps on the steps, families in sarees and kurtas lighting them, lower fifth calm wet steps and water, no text",
+     "type": "art"
+    },
+    "vo": "Local records kehte hain, saare ghat ek saath 1985 mein saje. Shuruaat Panchganga Ghat se hui. Yaani sirf kuch dashak pehle. To phir yeh katha kahaan se aayi?"
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of an ancient weathered sandstone temple relief showing a multi-armed figure drawing a great bow from a chariot, carved fortresses above, lit by flickering oil lamps, lower fifth calm stone plinth, no text",
+     "type": "art"
+    },
+    "vo": "Kyunki is raat ke peeche bahut puraani kahani hai. 3 udte hue shehar, aasmaan mein. Aur Shiv ka woh teer, jisne sab jala diya."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide shot of a pilgrim seen from behind standing on dark ghat steps at night, looking at a river full of floating leaf-cup lamps, lower fifth calm water, natural low light, no text",
+     "type": "art"
+    },
+    "vo": "To sawaal yeh hai. Kya Kashi ki yeh raat sach mein Tripur ke jalne ki yaad hai? Ya Kashi ne apni nayi parampara banayi?"
+   },
+   {
+    "facts_used": [
+     0,
+     4,
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic still life on a wooden table: an old palm-leaf manuscript bundle, a small corroded copper coin and a brass oil lamp, warm window light, lower fifth calm table surface, no text",
+     "type": "art"
+    },
+    "vo": "Pehle granth ki gawahi. Phir mitti ke neeche mile sikke. Phir woh records, jo kahani badal dete hain. Aur har sabut ke saath saaf bataayenge, granth hai ya khudai."
+   },
+   {
+    "facts_used": [
+     3,
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view of an archaeological excavation trench in rural central India, red earth, brick foundations and stone columns partly exposed, farmland around, morning light, lower fifth calm grassy field, no text",
+     "type": "art"
+    },
+    "vo": "Aur haan, Tripuri naam ka ek shehar sach mein tha. Madhya Pradesh ki mitti mein. Uske sikkon par yahi naam likha mila. Lekin kya yeh wahi Tripur hai?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic ancient Indian scene: a Vedic fire altar of bricks in an open forest clearing at dusk, priests in white dhotis seated around it, smoke rising, lower fifth calm earth floor, no text",
+     "type": "art"
+    },
+    "vo": "Par asli sawaal ab shuru hota hai. Is katha ki sabse purani gawahi kahaan hai? Jawab Mahabharat se bhi pehle, seedha Vedon tak jaata hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a young student in a dhoti reciting from memory before an elderly teacher under a banyan tree in an ancient Indian ashram, soft afternoon light, lower fifth calm earthen ground, no text",
+     "type": "art"
+    },
+    "vo": "Krishna Yajurveda ki Taittiriya Samhita. Yeh is katha ki sabse purani likhit gawahi maani jaati hai. Samhita yaani Vedon ke mantron ka sangrah, peedhiyon se yaad kiya hua."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic dramatic sky at twilight with three massive fortress-like structures floating among clouds, the lowest dark iron, the middle silver, the highest gleaming gold, over an ancient Indian plain, lower fifth calm dark fields, no text",
+     "type": "art"
+    },
+    "vo": "Wahan likha hai, asuron ke 3 kile the. Sabse neeche lohe ka. Uske upar chaandi ka. Aur sabse upar, chamakta hua sone ka kila."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic distant silhouette of a tall archer seen from behind on a hilltop, a blazing arrow streaking toward fortresses in a stormy sky, ancient Indian landscape, lower fifth calm dark hillside, no text",
+     "type": "art"
+    },
+    "vo": "Devta unhe jeet nahi paa rahe the. Phir Rudra ne teer chhoda. Rudra, yaani Shiv ka Vedic naam. Teer ne kilon ko cheer diya, asur bhaga diye gaye."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of an old handwritten Sanskrit manuscript of the Mahabharata on aged paper, an oil lamp beside it, a reader's hand turning the page, warm light, lower fifth calm wooden desk, no text visible as readable letters",
+     "type": "art"
+    },
+    "vo": "Lekin Vedon mein yeh katha chhoti hai. Kuch hi panktiyan. Asli bada drishya milta hai Mahabharat ke Karna Parva mein. Wahan yeh kahani ek poori film ban jaati hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic ancient Indian war camp at night, two warriors in bronze armour and dhotis talking beside a campfire, war chariots and tents behind, lower fifth calm dusty ground, no text",
+     "type": "art"
+    },
+    "vo": "Karna Parva yaani Mahabharat ka woh hissa, jahan Karn senapati bante hain. Wahin Duryodhan, Shalya ko yeh purani katha sunata hai. Taaki Shalya, Karn ka saarthi bane."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view from below of three distant glowing citadels drifting across a star-filled night sky above an ancient Indian village of thatched huts, villagers in sarees looking up, lower fifth calm village ground, no text",
+     "type": "art"
+    },
+    "vo": "Katha mein 3 asur bhai hain. Tarakaksha, Kamalaksha aur Vidyunmali. Unke paas udte hue shehar hain. Jo din raat aasmaan mein ghoomte rehte hain, koi unhe chhoo nahi paata."
+   },
+   {
+    "facts_used": [
+     1,
+     8
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic night sky over a desert horizon with three bright points of light lining up in a straight row, an ancient Indian watchman with a spear seen from behind on a mud wall, lower fifth calm sand, no text",
+     "type": "art"
+    },
+    "vo": "Shart yeh thi, shehar sirf tab gir sakte the. Jab woh aasmaan mein seedh mein aa jaayein. Aur woh pal bahut, bahut kam aata tha."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic interior of an ancient stone temple with a bronze statue of a deity standing on a chariot with a bow, seen at a distance through a pillared hall, oil lamps glowing, lower fifth calm polished stone floor, no text",
+     "type": "art"
+    },
+    "vo": "Shiv ke liye ek anokha rath banaya gaya. Kehte hain poora brahmand hi us rath mein tha. Shiv bane Tripurantak, yaani Tripur ka ant karne wale."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic dramatic sky with three aligned fortresses bursting into fire, burning fragments falling over an ancient Indian river valley, red and orange glow on clouds, lower fifth calm dark river, no text",
+     "type": "art"
+    },
+    "vo": "Jaise hi Shiv dhanush lekar khade hue, shehar seedh mein aa gaye. Usi pal 1 teer chala. Aur dekhte hi dekhte, sab kuch aag mein badal gaya."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of the Varanasi riverfront at blue hour before the lamps are lit, empty stone steps, a few priests preparing brass lamps, lower fifth calm still water, no text",
+     "type": "art"
+    },
+    "vo": "Lekin is katha ka Kashi ki raat se kya rishta hai? Granth mein kahin Dev Deepawali likha hai kya? Yahan pehla twist aata hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic huge full moon rising over the Ganga at Varanasi, silhouettes of temple spires and ghat steps, a lone boat on silver water, lower fifth calm river, no text",
+     "type": "art"
+    },
+    "vo": "Skanda Purana mein Kartik maheene ki poonam khaas hai. Purana yaani purani kathaon aur niyamon ki kitaab. Ise Tripuri Purnima kehte hain, yaani Tripur wali poonam."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic early morning on the Ganga, women in wet sarees and men in dhotis bathing waist deep, one woman releasing a small leaf lamp onto the water, soft mist, lower fifth calm water, no text",
+     "type": "art"
+    },
+    "vo": "Is din ke khaas kaam bataye gaye hain. Kartik snan, yaani nadi mein pavitra snan. Aur deepdan, yaani diya jalakar bhagwan ko arpit karna."
+   },
+   {
+    "facts_used": [
+     2,
+     7
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of an elderly woman's hands cupping a single clay oil lamp on a stone step by the river at dusk, the flame bright, lower fifth calm dark stone, no text",
+     "type": "art"
+    },
+    "vo": "Dhyan dijiye, yahan baat har bhakt ke apne diye ki hai. Ek saath poore shehar ko sajaane wala utsav? Woh bilkul alag sawaal hai."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic dusk view of tall bamboo poles along a riverbank, each topped with a small wicker basket glowing with a lamp inside, against a purple sky, lower fifth calm riverbank sand, no text",
+     "type": "art"
+    },
+    "vo": "Ek aur purani parampara hai, Akashdeep. Bamboo ke lambe danday par, tokri ke andar diya. Poore Kartik maheene, oonchaai par jalta hua."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a man in a dhoti hoisting a lit wicker lamp basket up a tall bamboo pole with a rope on a rooftop in an old Indian town at dusk, lower fifth calm rooftop floor, no text",
+     "type": "art"
+    },
+    "vo": "Skanda Purana ke Kartik Mahatmya mein iska zikr hai. Mahatmya yaani kisi cheez ki mahima ka varnan. Yeh diya Vishnu ko prasann karne, aur purvajon ki shanti ke liye."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic quiet old Varanasi lane at night, a single lamp glowing in a basket high on a bamboo pole above narrow houses, a cow resting below, lower fifth calm stone-paved lane, no text",
+     "type": "art"
+    },
+    "vo": "Yaani Kashi mein diye ka rishta bahut purana hai. Lekin woh diya akela tha, ghar ki chhat par, ya ghat ke kinare. Bheed wala utsav nahi."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic night sky over the Ganga filled with soft drifting points of golden light descending toward the water like falling embers, ghats glowing faintly, lower fifth calm river, no text",
+     "type": "art"
+    },
+    "vo": "Phir aati hai Kashi ki sabse pyaari maanyata. Kartik Purnima ko 33 crore devta dharti par utarte hain. Sirf Ganga mein nahane ke liye."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic interior of an old Varanasi courtyard house at night, a grandmother in a white saree telling a story to children seated on a mat, lamp light on their faces from the side, lower fifth calm floor, no text",
+     "type": "art"
+    },
+    "vo": "Woh Shiv ki Tripurasur par jeet ka jashn manaate hain. Isliye naam pada, Dev Deepawali, yaani devtaon ki Diwali. Yeh Kashi ka lok-vishwas hai, jo peedhi dar peedhi sunaaya gaya."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a trowel and brush resting on red excavated earth beside a half-buried ancient brick, soft afternoon light, lower fifth calm soil, no text",
+     "type": "art"
+    },
+    "vo": "To katha Vedon mein hai, rasm Purana mein hai. Lekin kya Tripur naam ka koi asli shehar bhi tha? Iska jawab ek khudai mein mila."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of a quiet central Indian village with mud and brick houses, a dirt road, wheat fields and low rocky hills, early morning haze, lower fifth calm field, no text",
+     "type": "art"
+    },
+    "vo": "Madhya Pradesh mein Jabalpur ke paas ek gaon hai, Tewar. Naam mein kuch khaas nahi lagta. Lekin iske paas ki zameen ke neeche, ek purana shehar soya hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary photograph of archaeologists and local workers carefully digging a square trench with brushes and small picks under a canvas shade, red earth walls, lower fifth calm trench floor, no text",
+     "type": "art"
+    },
+    "vo": "ASI yaani Archaeological Survey of India. Desh ki purani dharohar sambhalne wali sarkari sanstha. Uski khudai ne bataya, yahi prachin Tripuri hai. Khudai yaani zameen ko dheere khodkar itihaas nikaalna."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic ancient Indian settlement scene: a man in a simple dhoti shaping a copper tool beside stone blades near mud huts, smoke from a small furnace, lower fifth calm earth, no text",
+     "type": "art"
+    },
+    "vo": "Yeh basti kab ki hai? ASI ke mutabik, iski jadein bahut purani hain. Tamra-Pashan yug ke aakhri daur tak. Yaani jab insaan tamba aur pathar saath chalata tha."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic macro view of a small worn square copper coin with faint ancient engraved marks resting in a gloved palm, green patina, soft light, lower fifth calm cloth background, no readable text",
+     "type": "art"
+    },
+    "vo": "Aur phir mile sikke. Tambe ke sikke. Un par shehar ka naam likha tha, Tirpuri. Prakrit bhasha mein, Brahmi lipi mein. Yahi sabse bada sabut hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic ancient Indian market street, a merchant in a dhoti exchanging small copper coins with a woman in a saree over baskets of grain, timber stalls, lower fifth calm packed-earth road, no text",
+     "type": "art"
+    },
+    "vo": "Brahmi yaani Bharat ki sabse purani lipiyon mein se ek. Prakrit yaani us zamane ki bolchaal ki bhasha. Aur sikkon ki umar? 2nd century BCE, ya usse bhi pehle."
+   },
+   {
+    "facts_used": [
+     1,
+     4
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic split-feel composition: on a museum table an ancient copper coin under a magnifying glass beside an open old manuscript, dim gallery light, lower fifth calm table, no readable text",
+     "type": "art"
+    },
+    "vo": "Sochiye, Mahabharat jis Tripur ki baat karta hai. Aur zameen se nikle sikke, jin par Tirpuri likha hai. Kya yeh wahi Tripur hai? Yahin savdhaani chahiye."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of layered soil in an excavation wall showing pottery shards and brick fragments in bands, raking sunlight, lower fifth calm trench floor, no text",
+     "type": "art"
+    },
+    "vo": "Sikke sirf itna batate hain ki Tripuri naam ka shehar tha. Wahan log rehte the, len-den karte the. Udte kilon ka koi sabut mitti nahi deti."
+   },
+   {
+    "facts_used": [
+     10
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of a fresh excavation site with two marked trenches, measuring tapes and survey poles, workers in caps, a village in the distance, lower fifth calm grass, no text",
+     "type": "art"
+    },
+    "vo": "ASI ne Tewar mein phir khudai shuru ki, 2021 mein. Is baar zameen se aur bhi cheezein nikleen. Aur yeh cheezein ek bade shehar ki taraf ishaara karti hain."
+   },
+   {
+    "facts_used": [
+     10
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of the top of a carved reddish sandstone column emerging from the earth beside an old brick wall, an archaeologist brushing dust away, lower fifth calm soil, no text",
+     "type": "art"
+    },
+    "vo": "Balua pathar ke khambhe mile. Balua pathar yaani sandstone, wahi laal-bhoora pathar. Saath mein eenton ki deewar, aur purane zamane ka saamaan. Sab dheere-dheere bahar aa raha hai."
+   },
+   {
+    "facts_used": [
+     10
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic late afternoon view of an excavation partly covered with tarpaulin sheets, columns half exposed, tools left on the edge, long shadows, lower fifth calm ground, no text",
+     "type": "art"
+    },
+    "vo": "ASI kehta hai, yahan log lambe samay tak base. Yeh ek sangathit shehar tha. Lekin kaam abhi poora nahi hua. Khambhe abhi tak poori tarah khule bhi nahi."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic sweeping daylight view of the long curve of Varanasi's stone ghats along the Ganga, palaces and temples rising above, boats moored, lower fifth calm river, no text",
+     "type": "art"
+    },
+    "vo": "To Tripuri ek asli shehar tha. Lekin Dev Deepawali Tripuri mein nahi, Kashi ke Ganga ghaton par hoti hai. Aur un ghaton ki umar? Yahan agla twist hai."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic low-angle view up a steep flight of worn sandstone ghat steps leading to an old palace facade in Varanasi, morning sun, lower fifth calm water lapping the bottom step, no text",
+     "type": "art"
+    },
+    "vo": "Varanasi ke ghat, yaani nadi tak utarti pathar ki seedhiyan. Ginti mein 84 ghat. Aap tasveer dekhkar sochte hain, yeh hazaaron saal purane honge."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a hand touching smooth cut stone blocks of a ghat step with visible mason joints, river glinting behind, lower fifth calm stone, no text",
+     "type": "art"
+    },
+    "vo": "Lekin ASI aur UNESCO ki tentative suchi kuch aur kehti hai. Zyaadatar ghat 1700 ke baad dobara bane. Matlab aaj jo pathar aap chhoote hain, woh utna purana nahi."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic 18th century Indian riverfront construction scene, masons in dhotis and turbans lifting sandstone blocks with ropes and wooden scaffolds on the Ganga bank, lower fifth calm river, no text",
+     "type": "art"
+    },
+    "vo": "Us samay Kashi Maratha samrajya ke prabhav mein thi. Ghaton ko banwane wale the Marathe, Scindia, Holkar, Bhonsle aur Peshwe. Inhone nadi kinare pathar ki seedhiyan bichhwaayi."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an ancient Indian riverbank with natural mud slopes, a small stone shrine and pilgrims in simple dhotis offering water at sunrise, lower fifth calm river, no text",
+     "type": "art"
+    },
+    "vo": "Iska matlab yeh nahi ki Kashi nayi hai. Ganga kinare puja bahut purani ho sakti hai. Bas aaj ki pathar ki seedhiyan, baad ki hain."
+   },
+   {
+    "facts_used": [
+     2,
+     9
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic old-time scene at a ghat at dusk with only a handful of lamps and a few tall bamboo poles with glowing baskets, pilgrims bathing in the half dark, lower fifth calm water, no text",
+     "type": "art"
+    },
+    "vo": "Granth ke hisaab se Kartik ka maheena khaas hai. Log subah nahate, tokriyon mein Akashdeep oonche latakte. Lekin aaj jaisa diyon ka samandar? Uski kahani bilkul alag hai."
+   },
+   {
+    "facts_used": [
+     2,
+     5,
+     9
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a boat drifting at night between a dark stretch of ghats and a distant glowing section full of lamps, a lone rower seen from behind, lower fifth calm water, no text",
+     "type": "art"
+    },
+    "vo": "Ab sochiye. Granth mein deepdan hai. Akashdeep ki parampara hai. Ghat baad mein pakke bane. To sab ghaton par ek saath diye pehli baar kab jale?"
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of the steep steps of an old Varanasi ghat with an ancient mosque-free plain stone tower and small shrines, evening light, lower fifth calm river, no text",
+     "type": "art"
+    },
+    "vo": "Aur woh kahani shuru hoti hai Panchganga Ghat se. Ek tareekh ke saath, jo bahut nayi hai. Par records khud bhi ek baat par nahi tikte."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic 1980s style documentary scene of local residents in kurtas and sarees placing clay lamps in long rows on ghat steps at dusk, simple clothes, lower fifth calm stone steps, no text",
+     "type": "art"
+    },
+    "vo": "Local records ke mutabik, saamuhik Dev Deepawali 1985 mein shuru hui. Saamuhik yaani poore ghat ke log, ek saath milkar manaayein. Har ghar ka alag diya nahi."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of children and elders pouring oil into rows of clay lamps on steps by the river, warm light, lower fifth calm wet stone, no text",
+     "type": "art"
+    },
+    "vo": "Jagah thi Panchganga Ghat, Kashi ke purane ghaton mein se ek. Wahan logon ne milkar seedhiyon par diye sajaaye. Aur dekhte hi dekhte, baat poore shehar mein phail gayi."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide night view of a large crowded ghat with tiered steps covered in thousands of lamps, priests in saffron performing a fire ritual, boats packed with onlookers, lower fifth calm water, no text",
+     "type": "art"
+    },
+    "vo": "Phir 1991 mein utsav Dashashwamedh Ghat tak phaila. Wahan ise aur bada roop mila. Dheere-dheere baaki ghat bhi jud gaye. Yahi hai aaj ka chehra."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of old yellowed local newspaper pages and a faded photo album open on a wooden desk in a Varanasi home, lamp light, lower fifth calm desk, no readable text",
+     "type": "art"
+    },
+    "vo": "Lekin yahan records mein farq hai. Ek source kehta hai, shuruaat 1991 mein hui. Dashashwamedh Ghat par, ek sthaniya pandit ne ki."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an elderly priest in a white dhoti and shawl seen from behind, lighting the first lamp on empty ghat steps at dusk, lower fifth calm steps, no text",
+     "type": "art"
+    },
+    "vo": "Unhe log Babu Maharaj ke naam se jaante the, Pandit Kishori Raman Dubey. Doosri taraf, kuch records 1985 aur Panchganga ka naam lete hain."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial dusk view showing two distant ghats along the river curve, one starting to glow with lamps, the other still dim, lower fifth calm river, no text",
+     "type": "art"
+    },
+    "vo": "To shuruaat kahan aur kab hui, is par raay alag hai. Lekin ek baat par sab sahmat hain. Yeh saamuhik roop kuch dashak purana hai, hazaaron saal nahi."
+   },
+   {
+    "facts_used": [
+     0,
+     2,
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic arrangement on a ghat step: a palm-leaf manuscript, a brass water pot for bathing and a modern row of clay lamps, evening light, lower fifth calm stone, no text",
+     "type": "art"
+    },
+    "vo": "Matlab pehle sawaal ka aadha jawab mil gaya. Shiv ki katha prachin granthon mein hai. Snan aur deepdan bhi prachin hain. Saare ghaton ki raushni nayi hai."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a young girl in a saree placing a lamp beside her grandmother's lamp on a river step, both seen from the side in warm light, lower fifth calm water, no text",
+     "type": "art"
+    },
+    "vo": "Kya isse parampara chhoti ho jaati hai? Bilkul nahi. Kashi ne purani katha ko naya roop diya. Har parampara kabhi na kabhi nayi hi hoti hai."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide night sky full of stars and the Milky Way over a dark ancient Indian landscape with a single stone temple silhouette, lower fifth calm dark field, no text",
+     "type": "art"
+    },
+    "vo": "Lekin ab sabse gehra sawaal bachta hai. Shehar aasmaan mein seedh mein kaise aaye? Kya kisi ne sach mein aasmaan mein kuch dekha tha?"
+   },
+   {
+    "facts_used": [
+     1,
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic twilight sky with three bright planets lined up low above a calm lake, reflections in the water, a lone figure in a shawl watching from the shore seen from behind, lower fifth calm lake, no text",
+     "type": "art"
+    },
+    "vo": "Mahabharat ki shart yaad kijiye. Shehar sirf tab jal sakte the, jab woh seedh mein aayein. Aur aisa bahut kam hota tha. Yahi baat scholars ko kheenchti hai."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic ancient Indian astronomer in a dhoti on a stone platform at night observing the sky with a simple wooden sighting instrument, planets shining above, lower fifth calm stone floor, no text",
+     "type": "art"
+    },
+    "vo": "Kuch vidwan kehte hain, yeh grahon ki yuti ho sakti hai. Yuti yaani jab aasmaan mein grah paas-paas, ek seedh mein dikhte hain."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic old stone observatory instruments in India at dusk, a curved masonry dial casting a long shadow, sky turning deep blue, lower fifth calm courtyard floor, no text",
+     "type": "art"
+    },
+    "vo": "Archaeoastronomy yaani purane granthon aur imaaraton mein aasmaan ki jaankari dhoondhne ka vigyan. Isi se jude kuch log yahi poochhte hain. Kya purvajon ne kuch dekha tha?"
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic bright meteor streaking across a night sky over an ancient Indian village of thatched huts, villagers looking up in awe, lower fifth calm ground, no text",
+     "type": "art"
+    },
+    "vo": "Kuch aur log alag andaaza lagaate hain. Shayad koi ulka girti dekhi gayi ho. Ulka yaani aasmaan se girta jalta pathar, jise shooting star kehte hain."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic quiet library of old manuscripts in an Indian monastery, a scholar in a shawl reading by a window, dust in the light beams, lower fifth calm wooden floor, no text",
+     "type": "art"
+    },
+    "vo": "Magar dharm aur granthon ke kai vidwan bilkul alag sochte hain. Unke liye yeh katha ek rupak hai. Rupak yaani kahani ke zariye gehri seekh dena."
+   },
+   {
+    "facts_used": [
+     0,
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of flames rising from a brick yagya altar with ghee being poured from a wooden ladle, sparks drifting upward into darkness, lower fifth calm brick base, no text",
+     "type": "art"
+    },
+    "vo": "Unke hisaab se yeh Vedic yagya ki bhasha hai. Ya brahmand ke ant aur naye aarambh ka prateek. Yaani aasmaan ki nahi, mann ki kahani."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic crossroads of two dirt paths at dusk in rural India, one leading toward a starry hill, the other toward a lit village temple, lower fifth calm path, no text",
+     "type": "art"
+    },
+    "vo": "Kaun sahi hai? Abhi tak koi tay nahi kar paaya. Aasmaan wala andaaza saabit nahi hua. Aur rupak wali baat bhi bas padhne ka ek tareeka hai."
+   },
+   {
+    "facts_used": [
+     0,
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic misty mountain valley at dawn with clouds drifting through, a faint shape of distant ruins on a ridge, lower fifth calm valley floor, no text",
+     "type": "art"
+    },
+    "vo": "To abhi kya nahi pata? Hum nahi jaante ki 3 udte shehron ki katha kahaan se janmi. Aasmaan dekhkar, ya yagya ki bhasha se."
+   },
+   {
+    "facts_used": [
+     3,
+     10
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic half-filled excavation pit at sunset with a sandstone column top just visible, a lone measuring pole standing in it, lower fifth calm earth, no text",
+     "type": "art"
+    },
+    "vo": "Tewar ki Tripuri aur is katha ka rishta bhi saaf nahi. Naam milta hai, par sabut adhoora hai. Aur wahan khudai abhi poori nahi hui."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic elderly man in a kurta and shawl seated on ghat steps at dusk, seen from the side gazing at the river, a single lamp beside him, lower fifth calm water, no text",
+     "type": "art"
+    },
+    "vo": "Aur Dev Deepawali ki pehli shaam kahaan jali, Panchganga ya Dashashwamedh? Records ek awaaz mein nahi bolte. Shayad Kashi ke buzurg aaj bhi woh raat yaad karte hon."
+   },
+   {
+    "facts_used": [
+     5,
+     10
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view from a moving boat toward the Varanasi ghats in golden late afternoon light, pilgrims on the steps, lower fifth calm river, no text",
+     "type": "art"
+    },
+    "vo": "Lekin jo pata hai, woh aap khud dekh sakte hain. Seedha apni aankhon se. Chaliye, Kashi chalte hain. Aur phir Tewar ki mitti tak bhi."
+   },
+   {
+    "facts_used": [
+     5,
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic eye-level view along a ghat at night, sandstone steps lined with flickering lamps receding into the distance, families walking, lower fifth calm stone steps, no text",
+     "type": "art"
+    },
+    "vo": "Kartik Purnima ki shaam, Kashi ke ghaton par khade hoiye. Pathar ki seedhiyan, jo Marathon ke zamane mein bichhi. Unpar jalte diye, jo pichhle kuch dashkon ki den hain."
+   },
+   {
+    "facts_used": [
+     2,
+     9
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic dawn on the Ganga with bathers in the river and tall bamboo poles with glowing lamp baskets on the bank, pink sky, lower fifth calm water, no text",
+     "type": "art"
+    },
+    "vo": "Ganga mein subah ka Kartik snan dekhiye. Aur oonche bamboo par tokri wale Akashdeep dhoondhiye. Yeh woh hissa hai, jo granthon mein likha hai."
+   },
+   {
+    "facts_used": [
+     3,
+     10
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic country road leading through fields toward a fenced archaeological mound with exposed brick walls under a wide sky, a lone traveller walking, lower fifth calm road, no text",
+     "type": "art"
+    },
+    "vo": "Aur agar itihaas ki mitti chhoni ho, to Tewar jaaiye. Tewar gaon se lagbhag 2 km door, prachin Tripuri ki jagah. Jahan ASI ne khambhe aur deewarein nikaali."
+   },
+   {
+    "facts_used": [
+     1,
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic night view from the river of the full Varanasi riverfront glowing with lamps under a full moon, a distant temple statue silhouette on a rooftop, lower fifth calm water, no text",
+     "type": "art"
+    },
+    "vo": "To wapas pehle sawaal par. Shiv ne Tripur jalaya, yeh granthon ki katha hai. Aur Kashi ne us katha par, diyon ki ek nayi parampara banayi."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic dusk view of a sacred lake surrounded by white temples and ghats in a desert town, camels and pilgrims on the far shore, lower fifth calm lake water, no text",
+     "type": "art"
+    },
+    "vo": "Agle video mein chalenge Pushkar, jahan Kartik Purnima par mela lagta hai. Lekin pehle bataiye. Aapne Dev Deepawali Kashi mein dekhi hai, ya sirf tasveeron mein?"
+   }
+  ],
+  "thumbnail": {
+   "name": "DEV DEEPAWALI",
+   "name_hi": "देव दीपावली",
+   "scene": "LEFT: an ancient dark Kashi riverbank with only a few lamps glowing in baskets on tall bamboo poles; RIGHT: the same riverfront today, stone ghats ablaze with endless rows of diyas reflected in the Ganga, three burning citadels faint in the sky above.",
+   "words": [
+    "3 SHEHAR",
+    "SECRET"
+   ],
+   "words_hi": [
+    "3 शहर",
+    "सीक्रेट"
+   ]
+  },
+  "title": "Dev Deepawali: *Tripur* katha ya 1985 ki parampara? 🤯"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  14.57,
+  27.94,
+  41.15,
+  54.32,
+  64.89,
+  79.66,
+  93.59,
+  106.48,
+  122.65,
+  135.78,
+  149.51,
+  163.36,
+  176.93,
+  195.3,
+  208.59,
+  221.96,
+  234.37,
+  243.98,
+  257.67,
+  269.92,
+  280.33,
+  293.02,
+  307.55,
+  320.32,
+  330.97,
+  345.66,
+  356.51,
+  369.84,
+  388.37,
+  400.22,
+  413.83,
+  429.68,
+  443.09,
+  454.3,
+  467.23,
+  483.08,
+  496.93,
+  508.7,
+  523.19,
+  537.24,
+  552.17,
+  561.3,
+  577.07,
+  589.16,
+  601.97,
+  615.7,
+  628.39,
+  643.08,
+  655.57,
+  668.1,
+  680.99,
+  693.32,
+  703.93,
+  714.5,
+  729.11,
+  740.68,
+  755.37,
+  768.78,
+  781.27,
+  793.88,
+  807.21,
+  818.46,
+  830.23,
+  845.04,
+  857.01,
+  871.62,
+  885.35,
+  899.4,
+  911.25
+ ],
  "topic": {
   "allowed_sources": [
+   "asi.nic.in",
    "en.wikipedia.org",
-   "Indian Journal of Psychiatry studies on temple healing"
+   "nio.res.in",
+   "britannica.com",
+   "the scripture or text named in the story"
   ],
+  "follows": "Kartik Purnima and Dev Deepawali fall on 24 Nov, and this airs two days before. It follows the strong Shiva-katha signal.",
   "hooks": [
-   "Yahan prasad ghar kyon nahi le jaate?",
-   "Bhoot utaarne ka mandir?",
-   "Doctors is mandir ke baare mein kya kehte hain?"
+   "Teen shehar ek teer se jale. Kya ye sirf katha hai?",
+   "Kashi ki Dev Deepawali kitni purani hai, hazaaron saal ya sirf kuch dashak?"
   ],
-  "id": "mehandipur-balaji",
-  "notes": "Respect faith; mention mental-health research neutrally; no mocking.",
-  "place": "Dausa, Rajasthan",
+  "id": "wk-2026-11-22-arthvan-long",
+  "intro": {
+   "aspect": "16:9",
+   "bridge": "",
+   "closing": "Ruko, asli khel abhi baaki hai!",
+   "prompt": "16:9 landscape, 1920x1080, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: night aerial view of the Varanasi ghats on the Ganga blazing with endless rows of oil lamps, thin smoke and mist, crowded wooden boats, temple spires lit gold, the lower fifth calm dark river water reflecting the lamps. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. If the scene shows the past, it is ancient India: Indian people in dhotis, sarees and angavastram, warriors with bows, spears and bronze or leather armour, carved stone pillars, oil lamps; never European knights, plate armour, castles or anything medieval European. Framing: medium shot from the waist up, his whole head and both shoulders inside the frame with clear space above his hair and on both sides, and he stays framed like this to the end; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] standing relaxed and upright, shoulders open, wearing an olive green kurta. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: a confident, charismatic documentary presenter. Calm, natural face with a pleasant, warm smile, relaxed eyebrows, eyes soft and focused on the viewer. On \"ya sirf 1985 se\" the eyes narrow a little with intrigue and the head tilts slightly, as if sharing a secret. On \"Ruko, asli khel abhi baaki hai!\" a warm, confident smile and one small nod. Natural blinking, subtle head movement. No exaggerated expressions: no wide eyes, no raised eyebrows, no open-mouth surprise, no big grin, no frown; never sad, gloomy, worried or tired. Voice: warm, clear, measured, with quiet intensity; a short pause before \"ya sirf 1985 se\". Hands: one slow, small gesture toward the scene behind him on the first line, then hands rest; no fast or large arm movements. Camera: eye level, a very slight slow push-in, slight handheld feel. Empty hands, no prop. @SGMythWorld watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1920x1080.",
+   "question": "Kashi ki Dev Deepawali, hazaaron saal purani ya sirf 1985 se?",
+   "text": "Kashi ki Dev Deepawali, hazaaron saal purani ya sirf 1985 se? Ruko, asli khel abhi baaki hai!",
+   "words": 17
+  },
+  "summary": "Separates the Tripurasura myth (Mahabharata Karna Parva, Shiva Purana) from the Kartik Purnima rituals. Check the modern Varanasi Dev Deepawali's origin (reportedly the 1980s at Panchganga Ghat), Pushkar fair, and avoid sectarian claims.",
   "target_minutes": 14,
-  "title_hi": "Mehandipur Balaji ka sach"
+  "title": "Dev Deepawali: Shiv ne Tripur jalaye ya Kashi ne nayi parampara banayi?",
+  "topic_score": 8,
+  "topic_score_why": [
+   "+4 one of the most-watched names",
+   "+3 timely: Kartik Purnima and Dev Deepawali",
+   "+1 asks a question"
+  ],
+  "voice": "voice_1kn3blc2u13l",
+  "weekly": true
  },
- "updated": "2026-11-03T13:49:22+00:00",
- "writer": ""
+ "updated": "2026-11-14T19:29:24+00:00",
+ "writer": "claude"
 }
