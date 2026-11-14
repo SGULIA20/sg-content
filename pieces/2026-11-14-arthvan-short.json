@@ -105,7 +105,9 @@
    "voice": 13
   },
   "drafts": 1,
+  "ig_reel_id": "18094154951248018",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-14-arthvan-short.mp4",
    "clip_seconds": 10.03,
@@ -116,6 +118,8 @@
   "intro_sent": "2026-11-08T07:29:30+00:00",
   "out_sha": "53b828c4583224d174b5f78ff0d5e2ba1201b804",
   "out_sha_intro": true,
+  "threads_id": "18165105250435607",
+  "threads_poll_id": "18379224769212001",
   "yt_id": "aO_SBrTebw8"
  },
  "kind": "short",
@@ -329,7 +333,7 @@
   },
   "title": "Jagannath ka *jhanda*, roz kaun chadhta hai? 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   5.41,
@@ -382,6 +386,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-08T08:02:09+00:00",
+ "updated": "2026-11-14T16:10:01+00:00",
  "writer": "claude"
 }
