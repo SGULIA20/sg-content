@@ -1,0 +1,296 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 122.0,
+   "quote": "Following the 2G spectrum case, the Supreme Court cancelled 122 licences issued by the Indian Government in 2008, including 21 licences belonging to Videocon.",
+   "source_date": "2012-02-02",
+   "source_name": "Wikipedia",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3INHkKrbjXvu-V8PsEVauFs_0MLkuf3RO8pb9MDlMcMe4K9Umc8KUe3k40sPBWP5Y0Dow0uDPkB1TJ5EpaoAXTiMhrmX5StZwVrQ4CYzFm8kJqegnzDyG4L_GL0STLeGGjN8=",
+   "text": "The Supreme Court of India quashed 122 telecom licenses granted during the 2008 allocation after declaring the process arbitrary.",
+   "unit": "licenses"
+  },
+  {
+   "label": "reported",
+   "number": 214.0,
+   "quote": "on 24 September 2014 Supreme Court quashed allocation of 214 out of 218 coal blocks which were allotted to various companies since 1993 and in which it was claimed that around Rs 2 lakh crores were invested.",
+   "source_date": "2014-09-24",
+   "source_name": "Wikipedia",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRd5YPiRKbLwvi1_Z4o2Fxr4-7FRS8KQRudyCAx1KoNfWdYAPTLzCddCKF4TN8bAvOKM6moPt5_fQgJl8Mepz7xMFIRR1-v7wcMVFcLbha0zqdoaiY-IH9hkN8BHywSqYHuWInm3wIY-zHRasAVQ==",
+   "text": "The Supreme Court cancelled 214 coal block allocations out of 218 that had been allocated to companies between 1993 and 2010.",
+   "unit": "coal blocks"
+  },
+  {
+   "label": "reported",
+   "number": 200000.0,
+   "quote": "on 24 September 2014 Supreme Court quashed allocation of 214 out of 218 coal blocks which were allotted to various companies since 1993 and in which it was claimed that around Rs 2 lakh crores were invested.",
+   "source_date": "2014-09-24",
+   "source_name": "Wikipedia",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRd5YPiRKbLwvi1_Z4o2Fxr4-7FRS8KQRudyCAx1KoNfWdYAPTLzCddCKF4TN8bAvOKM6moPt5_fQgJl8Mepz7xMFIRR1-v7wcMVFcLbha0zqdoaiY-IH9hkN8BHywSqYHuWInm3wIY-zHRasAVQ==",
+   "text": "Companies had invested an estimated 2 lakh crore INR into coal blocks and associated infrastructure projects prior to the judicial cancellations.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "official",
+   "number": 16.67,
+   "quote": "Since the Reserve Bank of India (RBI) initiated the Asset Quality Review of banks in the second half of 2015, it appears that possibly up to a sixth of public sector banks' gross advances are stressed (non-performing, restructured or written-off), and a significant majority of these are in fact non-performing assets (NPAs).",
+   "source_date": "2017-03-10",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGy9G63Ssa3QeGlMYhsySwb0GQzKmBqyIeY9e5zrngAlX4fCOo63zK9Aa-Mys33Gmqu4DslGJCbfo4fex0TT60Jn50T7_oEQR70i7gebC3WrOiNB6RViFkQNc7jVMPf7tYJ4cdPLJLjmLHowWarWA==",
+   "text": "The Reserve Bank of India reported that up to one-sixth of public sector banks' gross advances turned stressed following the 2015 Asset Quality Review.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 20.0,
+   "quote": "For banks in the worst shape, the share of assets under stress has approached or exceeded 20 per cent.",
+   "source_date": "2017-03-10",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGy9G63Ssa3QeGlMYhsySwb0GQzKmBqyIeY9e5zrngAlX4fCOo63zK9Aa-Mys33Gmqu4DslGJCbfo4fex0TT60Jn50T7_oEQR70i7gebC3WrOiNB6RViFkQNc7jVMPf7tYJ4cdPLJLjmLHowWarWA==",
+   "text": "Stressed assets reached or exceeded 20 percent of total advances for the most vulnerable state-owned lenders after debt recognition tightened.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 211000.0,
+   "quote": "This entails mobilization of capital, with maximum allocation in the current year, to the tune of about Rs. 2,11,000 crore over the next two years, through budgetary provisions of Rs. 18,139 crore, recapitalisation bonds to the tune of Rs. 1,35,000 crore, and the balance through raising of capital by banks from the market while diluting government equity (estimated potential Rs. 58,000 crore).",
+   "source_date": "2017-10-24",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSFtnOJqgOnScIOVEHMPDxYEFaQbFB01HwAZbUh_iYZq5Mf1xqPldg-bfeQurllTSrYsB4YZEMdjD8YtuXvNcHiGy1-elEV5a7upleiL4crTQzpSCE4ooIQ3EABa2rRY1Xoji73J_YNYwS-Fsx35I=",
+   "text": "The government approved a front-loaded bank recapitalisation plan of 2,11,000 crore INR to clean up legacy bad loans in public sector banks.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "official",
+   "number": 300000.0,
+   "quote": "Recapitalisation, under which, with today's decision, total mobilisation of capital in PSBs since commencement of clean-up in 2015-16 is slated to be over Rs. 3,00,000 crore.",
+   "source_date": "2018-12-20",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4yQKzOtVxNSWnUq5_do2mgeC7VBNbGvD6lwuj5Z7zJt2sKqNTHHHX6YksPe1CjyZisT_bIgdbC1v17L72rtuN9VrT5WjLAreSsGlZeCfpnc1v9M4aIkwZbnr6MjLf0CaXiYsRzlLg3nHzdwA0_p0=",
+   "text": "Total bank recapitalisation mobilisation to clean up stressed assets in public sector banks exceeded 3,00,000 crore INR by late 2018.",
+   "unit": "crore INR"
+  }
+ ],
+ "id": "2026-11-21-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-14",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 15.0,
+   "usd": 0.092724,
+   "voice": 9
+  },
+  "drafts": 1,
+  "intro_sent": "2026-11-14T19:58:15+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-21",
+ "reasons": [
+  "waiting for the founder's intro clip until 21 Nov 10:00 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "License radd hua, toh shareholder ka paisa kahan gaya? 🏭\nSupreme Court ne 2G license aur 214 coal blocks radd kiye. Reportedly lagbhag 2 lakh crore atak gaye, loan doobe, aur shareholder line mein sabse aakhir.\nAapke portfolio mein koi company ek sarkari permission par tiki hai?\nYeh investment advice nahi hai.\nShare karo us dost ko jo kehta hai sarkari license hai toh safe hai.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#ShareMarket",
+     "#StockMarketIndia",
+     "#RBI",
+     "#HinglishFinance",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Supreme Court ne 2G license aur 214 coal blocks radd kiye. Reportedly lagbhag 2 lakh crore atak gaye, loan doobe, shareholder sabse aakhir mein. Aapki kisi company ka poora business ek sarkari license par tika hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "License radd hua, toh shareholder ka paisa kahan gaya? Supreme Court ne 2G license aur 214 coal blocks radd kiye, aur reportedly lagbhag 2 lakh crore ka nivesh atak gaya. Loan doobe, banks ko bachane mein tax ka paisa laga, aur shareholder line mein sabse aakhir rahe. Share karo us dost ko jo kehta hai sarkari license hai toh safe hai.",
+    "tags": [
+     "2G",
+     "coal block",
+     "Supreme Court",
+     "license radd",
+     "shareholder",
+     "bank loan",
+     "bad loans",
+     "public sector banks",
+     "share market",
+     "Hinglish finance",
+     "Learning with SG"
+    ],
+    "title": "2G aur Coal: license radd, paisa kiska dooba?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo kehta hai sarkari license hai toh safe hai.",
+  "hook": "2G aur coal: license radd hua, shareholder ka paisa kahan gaya?",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of a vast open-cast coal mine in central India, giant excavators and dump trucks standing idle and silent, coal dust hanging in the air, overcast afternoon light, no people, no text",
+     "type": "art"
+    },
+    "vo": "2G aur coal: license radd hua, shareholder ka paisa kahan gaya?"
+   },
+   {
+    "facts_used": [],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of a middle-class Indian couple at their dining table in warm evening light, a folder of investment papers open between them, both looking hopeful and proud, steel tumblers of chai nearby, no readable text",
+     "type": "art"
+    },
+    "vo": "Aapke paas ek bijli company ke share, company ke paas apni coal khaan."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a large thermal power plant under construction in India, tall cooling towers and cranes against a bright morning sky, workers in helmets on scaffolding, optimistic mood",
+     "type": "art"
+    },
+    "vo": "Logic seedha: apna coal, sasti bijli, munafa toh aayega."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic inside of a public sector bank manager's cabin in India, a businessman in a suit shaking hands with the manager across a desk piled with thick files, daylight from a window, confident smiles",
+     "type": "art"
+    },
+    "vo": "Bank ne bhi yahi socha, aur bhaari loan de diya. Lekin yahan twist hai."
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "what happened",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic exterior of a grand Indian court building with wide stone steps, lawyers in black coats walking quickly, a crowd of reporters gathered at the gate, harsh afternoon sun",
+     "type": "art"
+    },
+    "vo": "Supreme Court ne 2G license aur 214 coal blocks radd kar diye. Wajah: tareeka manmaana tha."
+   },
+   {
+    "facts_used": [
+     2,
+     3
+    ],
+    "label": "the cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a half-built power plant abandoned in India, rusting steel frames, weeds growing through the concrete, empty conveyor belts, grey cloudy sky, deserted and still",
+     "type": "art"
+    },
+    "vo": "Reportedly lagbhag 2 lakh crore lag chuke the. Plant khade, coal gayab, loan doob gaya."
+   },
+   {
+    "facts_used": [
+     5,
+     6
+    ],
+    "label": "the cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of a tired Indian salaried man standing in a crowded Mumbai local train at dusk, holding his office bag and a tiffin, thoughtful expression, warm evening light through the open door",
+     "type": "art"
+    },
+    "vo": "Banks bachane mein aapka tax laga. Aur shareholder? Line mein sabse aakhir."
+   },
+   {
+    "facts_used": [],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of a heavy chain and padlock on the iron gate of a shut factory in India, dust on the bars, empty yard behind, low golden dusk light",
+     "type": "art"
+    },
+    "vo": "Asli risk ek sarkari permission mein chhupa tha. Poocho, license chhina toh kya bachega? Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of two young Indian men at a roadside chai stall in the evening, one talking confidently with his hands, the other listening with a sceptical half smile, steam rising from glasses of tea, warm street lights",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo kehta hai sarkari license hai toh safe hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "COAL BLOCKS",
+   "name_hi": "कोल ब्लॉक",
+   "scene": "LEFT: a busy open-cast coal mine with trucks and excavators working in bright sun; RIGHT: the same mine abandoned, rusting excavators and a padlocked gate under a grey sky",
+   "words": [
+    "214",
+    "KHATRA"
+   ],
+   "words_hi": [
+    "214",
+    "खतरा"
+   ]
+  },
+  "title": "License radd, *shareholder* ka paisa kahan? 🏭"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  4.465,
+  8.964,
+  12.749,
+  17.574,
+  24.107,
+  30.003,
+  35.038,
+  42.045
+ ],
+ "topic": {
+  "category": "scandal",
+  "from_bank": true,
+  "history": true,
+  "hooks": [
+   "License radd hone par shareholder ka paisa kahan gaya?",
+   "Banks ko 2G se kitna nuksaan hua?"
+  ],
+  "id": "mh-2010-coal-2g-markets",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "Poora sach yahan!",
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: wide view of a vast open-cast coal mine in central India, giant excavators and dump trucks standing idle and silent, coal dust hanging in the air, overcast afternoon light. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Framing: medium shot from the waist up, his whole head and both shoulders inside the frame with clear space above his hair and on both sides, and he stays framed like this to the end; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] standing relaxed and upright, shoulders open, wearing a white blazer over a white tee. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: a confident, charismatic documentary presenter. Calm, natural face with a pleasant, warm smile, relaxed eyebrows, eyes soft and focused on the viewer. On \"ka paisa kahan gaya\" the eyes narrow a little with intrigue and the head tilts slightly, as if sharing a secret. On \"Poora sach yahan!\" a warm, confident smile and one small nod. Natural blinking, subtle head movement. No exaggerated expressions: no wide eyes, no raised eyebrows, no open-mouth surprise, no big grin, no frown; never sad, gloomy, worried or tired. Voice: warm, clear, measured, with quiet intensity; a short pause before \"ka paisa kahan gaya\". Hands: one slow, small gesture toward the scene behind him on the first line, then hands rest; no fast or large arm movements. Camera: eye level, a very slight slow push-in, slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "2G aur coal: license radd hua, shareholder ka paisa kahan gaya?",
+   "text": "2G aur coal: license radd hua, shareholder ka paisa kahan gaya? Poora sach yahan!",
+   "words": 14
+  },
+  "summary": "The 2G spectrum and coal block cancellations by the Supreme Court (2012, 2014): what happened to the companies, their lenders and their shareholders. Keep to court orders, company filings and bank disclosures; no party politics.",
+  "target_minutes": null,
+  "title": "2G aur coal: license radd hua, kiska paisa dooba",
+  "topic_score": 8,
+  "topic_score_why": [
+   "+3 touches the viewer's own money",
+   "+3 a scare or a crash",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "voice": "voice_g8azc8xcwhlu",
+  "weekly": true
+ },
+ "updated": "2026-11-14T19:58:18+00:00",
+ "writer": "claude"
+}

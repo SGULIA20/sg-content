@@ -1,0 +1,46 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.67,Default,,0,0,0,,2G aur coal:
+Dialogue: 0,0:00:00.67,0:00:01.78,Default,,0,0,0,,license radd hua,
+Dialogue: 0,0:00:01.78,0:00:04.01,Default,,0,0,0,,shareholder ka paisa kahan gaya?
+Dialogue: 0,0:00:04.46,0:00:06.39,Default,,0,0,0,,Aapke paas ek bijli company ke
+Dialogue: 0,0:00:06.39,0:00:06.78,Default,,0,0,0,,share,
+Dialogue: 0,0:00:06.78,0:00:08.51,Default,,0,0,0,,company ke paas apni coal khaan.
+Dialogue: 0,0:00:08.96,0:00:09.75,Default,,0,0,0,,Logic seedha:
+Dialogue: 0,0:00:09.75,0:00:10.34,Default,,0,0,0,,apna coal,
+Dialogue: 0,0:00:10.34,0:00:11.12,Default,,0,0,0,,sasti bijli,
+Dialogue: 0,0:00:11.12,0:00:12.30,Default,,0,0,0,,munafa toh aayega.
+Dialogue: 0,0:00:12.75,0:00:14.36,Default,,0,0,0,,Bank ne bhi yahi socha,
+Dialogue: 0,0:00:14.36,0:00:15.74,Default,,0,0,0,,aur bhaari loan de diya.
+Dialogue: 0,0:00:15.74,0:00:17.12,Default,,0,0,0,,Lekin yahan twist hai.
+Dialogue: 0,0:00:17.57,0:00:19.83,Default,,0,0,0,,Supreme Court ne 2G license aur
+Dialogue: 0,0:00:19.83,0:00:21.63,Default,,0,0,0,,214 coal blocks radd kar diye.
+Dialogue: 0,0:00:21.63,0:00:22.08,Default,,0,0,0,,Wajah:
+Dialogue: 0,0:00:22.08,0:00:23.66,Default,,0,0,0,,tareeka manmaana tha.
+Dialogue: 0,0:00:24.11,0:00:26.83,Default,,0,0,0,,Reportedly lagbhag 2 lakh crore lag
+Dialogue: 0,0:00:26.83,0:00:27.57,Default,,0,0,0,,chuke the.
+Dialogue: 0,0:00:27.57,0:00:28.32,Default,,0,0,0,,Plant khade,
+Dialogue: 0,0:00:28.32,0:00:28.81,Default,,0,0,0,,coal gayab,
+Dialogue: 0,0:00:28.81,0:00:29.55,Default,,0,0,0,,loan doob gaya.
+Dialogue: 0,0:00:30.00,0:00:32.09,Default,,0,0,0,,Banks bachane mein aapka tax laga.
+Dialogue: 0,0:00:32.09,0:00:33.13,Default,,0,0,0,,Aur shareholder?
+Dialogue: 0,0:00:33.13,0:00:34.59,Default,,0,0,0,,Line mein sabse aakhir.
+Dialogue: 0,0:00:35.04,0:00:37.04,Default,,0,0,0,,Asli risk ek sarkari permission mein
+Dialogue: 0,0:00:37.04,0:00:37.59,Default,,0,0,0,,chhupa tha.
+Dialogue: 0,0:00:37.59,0:00:37.95,Default,,0,0,0,,Poocho,
+Dialogue: 0,0:00:37.95,0:00:39.77,Default,,0,0,0,,license chhina toh kya bachega?
+Dialogue: 0,0:00:39.77,0:00:41.60,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:42.05,0:00:43.25,Default,,0,0,0,,Us dost ko bhejo jo kehta
+Dialogue: 0,0:00:43.25,0:00:44.90,Default,,0,0,0,,hai sarkari license hai toh safe
+Dialogue: 0,0:00:44.90,0:00:45.05,Default,,0,0,0,,hai.
