@@ -1,0 +1,278 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 30.0,
+   "quote": "The Scheme, framed by the Reserve Bank in exercise of the powers conferred on it under Section 35A of the Banking Regulation Act, 1949 (10 of 1949), Section 45L of the Reserve Bank of India Act, 1934 (2 of 1934), and Section 18 of the Payment and Settlement Systems Act, 2007 (51 of 2007), will provide cost-free redress of customer complaints involving deficiency in services rendered by entities regulated by RBI, if not resolved to the satisfaction of the customers or not replied within a period of 30 days by the regulated entity.",
+   "source_date": "2021-11-12",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgtou4bybznBu3xphybdoGpdlXVwa1B3smyB1K8n0qmd8DtLBMcvyENwr_wz_7hDx0nqZdgkQYHEFV1ozhgnCXeBfPkhsjqw22S7LsNz-vf7CmgpY7RMiyY1zgRqc1q8dsxAnliSSNVYgPf0ULOGkFkPWWLYIXIWiRU_dMq1W2-A==",
+   "text": "Bank customers can escalate complaints free of cost to the RBI Integrated Ombudsman if the regulated entity fails to resolve the issue within 30 days.",
+   "unit": "days"
+  },
+  {
+   "label": "official",
+   "number": 90.0,
+   "quote": "The complaint must be made to the RBI Ombudsman within 90 days from the date on which the above timeline expires or the date of the last communication from the concerned Regulated Entity, whichever is later.",
+   "source_date": "2026-07-01",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfStNZonGdIYx7ugUMJT7G174ZZaaKySJPHrthKvZZnVUa-3-Q8MSTLwc0b7g9pI9ks4aAPWr3C1n4LFH1-KeKcdhhezPuujbbgAnjMuRXvDevGzclAOl_4De--QDFi6N7rFs3sHrrvI60IhOAkhlabGreyW90RQ==",
+   "text": "An aggrieved customer must escalate an unresolved banking complaint to the RBI Ombudsman within 90 days after the standard resolution window expires.",
+   "unit": "days"
+  },
+  {
+   "label": "official",
+   "number": 8.79,
+   "quote": "Non-adherence to RBI/ System Provider instructions on payment transactions through Unified Payment Interface (UPI)/ Bharat Bill Payment System (BBPS)/ Bharat Quick Response (QR) Code, with 43.89% of complaints, was the major ground of complaints, followed by Mobile/ Electronic transfers (24.10%), non-reversal of funds due to wrong beneficiary transfer by the System Participant (8.79%) and non-adherence to RBI guidelines for PPIs (7.98%).",
+   "source_date": "2021-02-08",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4X9YYdvGKT_bzdsHD77j1Wykd7oVe3E3M6GEr6_qhJtKj9feS-GD6eQkKshN1OHm9tVXyCm5h0HpyKNtRtR4uHKgYzXLZW_WbF_KI8ZcrEIgrHU2184oqWimMgnaNc6955Cltd1aVOnidE7eWXd7pk4Zl",
+   "text": "Non-reversal of funds due to wrong beneficiary transfers represented 8.79 percent of maintainable grievances handled by digital transactions ombudsman offices in a reporting year.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 5000.0,
+   "quote": "• BSBD Accounts, 5,000.",
+   "source_date": "2017-07-06",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgnLQ490swcKdlNzkAm9a6pOBey4AoW2H3CLS1_jA9NOuLRc8ZmX0kvMXn-7ekXs9Q56BPwCk2jcyFj_QUb1Dox8m8b9hIgUfXuTdIqJD4wcumZ78XNyZPhjn7UreQZXvnL6Sg5hGWCezHch8DleFTVj2v5BKkjoQvbRS_DzHBSg==",
+   "text": "For basic savings bank deposit accounts widely used for household budgeting, maximum customer liability in unauthorized electronic transactions reported between four and seven working days is capped at 5,000 rupees.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 10000.0,
+   "quote": "• All other SB accounts • Pre-paid Payment Instruments and Gift Cards • Current/ Cash Credit/ Overdraft Accounts of MSMEs • Current Accounts/ Cash Credit/ Overdraft Accounts of Individuals with annual average balance (during 365 days preceding the incidence of fraud)/ limit up to Rs.25 lakh • Credit cards with limit up to Rs.5 lakh, 10,000.",
+   "source_date": "2017-07-06",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgnLQ490swcKdlNzkAm9a6pOBey4AoW2H3CLS1_jA9NOuLRc8ZmX0kvMXn-7ekXs9Q56BPwCk2jcyFj_QUb1Dox8m8b9hIgUfXuTdIqJD4wcumZ78XNyZPhjn7UreQZXvnL6Sg5hGWCezHch8DleFTVj2v5BKkjoQvbRS_DzHBSg==",
+   "text": "For standard savings bank accounts holding household salaries and savings, customer liability for third-party electronic fraud reported within four to seven days is limited to 10,000 rupees.",
+   "unit": "INR"
+  },
+  {
+   "label": "reported",
+   "number": 1.5,
+   "quote": "The Telecom Regulatory Authority of India (TRAI) has set a maximum ceiling of ₹1.5 per transaction for accessing the NUUP, although rates can differ among service providers.",
+   "source_date": "2026-09-26",
+   "source_name": "Wikipedia",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFS_ZMifDUtfI6qmc_3QqBpxLrSfQIAC3FwTqb11jHNxv3Wq6SMJWi7sC4FLhTAkPg7k7YRblmEg6hviLcTpHMe10vc96xGEIdnGVNIV6wLlLNarh6CyJ9sEZxoXEGNc2XWg98rBpaJJ6tESBzP9I8BzAY=",
+   "text": "The Telecom Regulatory Authority of India capped the cost of accessing UPI banking services offline over the USSD platform at 1.5 rupees per session.",
+   "unit": "INR"
+  }
+ ],
+ "id": "2026-11-22-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-15",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 15.0,
+   "usd": 0.07216,
+   "voice": 9
+  },
+  "drafts": 1,
+  "intro_sent": "2026-11-15T19:55:39+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-22",
+ "reasons": [
+  "waiting for the founder's intro clip until 22 Nov 10:00 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Galat UPI ID par paisa gaya, bank khud wapas kyun nahi karta? 😱\nBank paane wale ki marzi ke bina paisa nahi kaat sakta. Turant UPI app mein complaint, phir bank ko likh kar.\nBank 30 din mein na suljhaye to RBI Ombudsman free hai, par uske baad sirf 90 din milte hain.\nAapke saath kabhi galat UPI hua hai?\nYeh investment advice nahi hai.\nYeh Mummy ko bhejo, jo roz UPI se sabzi ka paisa bhejti hain.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#MoneyTipsHindi",
+     "#PersonalFinanceIndia",
+     "#RBI",
+     "#HinglishFinance",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Galat UPI ID par paisa gaya? Bank paane wale ki marzi ke bina wapas nahi kaat sakta. App mein complaint, phir bank, aur 30 din mein na suljhe to RBI Ombudsman, free. Par uske baad sirf 90 din. Aapke saath kabhi hua hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Galat UPI ID par paisa gaya, bank khud wapas kyun nahi karta? Bank paane wale ki marzi ke bina paisa nahi kaat sakta, isliye turant app aur bank mein complaint daalo. Bank 30 din mein na suljhaye to RBI Ombudsman free mein sunta hai, par uske baad sirf 90 din milte hain. Us dost ko bhejo jo bina number check kiye UPI kar deta hai.",
+    "tags": [
+     "UPI",
+     "galat UPI payment",
+     "wrong UPI transfer",
+     "UPI refund",
+     "RBI Ombudsman",
+     "bank complaint",
+     "UPI dispute",
+     "paise wapas kaise",
+     "personal finance hindi",
+     "Learning with SG"
+    ],
+    "title": "Galat UPI payment wapas kaise? 30 din ka rule"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Yeh Mummy ko bhejo, jo roz UPI se sabzi ka paisa bhejti hain.",
+  "hook": "Galat UPI ID par paisa gaya, bank khud wapas kyun nahi karta?",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "Hook",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of a busy Indian bank branch counter in morning natural light, a young man's hand pressed flat on the counter in panic, an empty teller chair behind the glass, no text anywhere",
+     "type": "art"
+    },
+    "vo": "Galat UPI ID par paisa gaya, bank khud wapas kyun nahi karta?"
+   },
+   {
+    "facts_used": [],
+    "label": "Setup",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of a small rented flat in an Indian city at evening, a young woman sitting on the edge of a bed with her hand on her forehead, a landlord's rent envelope lying on the table, warm lamp light",
+     "type": "art"
+    },
+    "vo": "Rent bhejna tha, ek digit galat dab gaya. Paisa kisi anjaan ke khate mein chala gaya."
+   },
+   {
+    "facts_used": [],
+    "label": "The choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic long queue of Indian customers waiting outside a bank branch in late morning sun, a middle-aged man checking his wristwatch impatiently, dusty street, natural light",
+     "type": "art"
+    },
+    "vo": "Log kya karte hain? Bas intezaar, ya branch ka chakkar."
+   },
+   {
+    "facts_used": [],
+    "label": "The reasoning",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian family dining table at night, a husband confidently explaining to his wife with open hands, she looks doubtful holding a cup of chai, steel plates and a passbook on the table",
+     "type": "art"
+    },
+    "vo": "Soch seedhi hai: galti meri, paisa mera, bank palat dega."
+   },
+   {
+    "facts_used": [],
+    "label": "The catch",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view across a bank counter, an Indian bank officer in a formal shirt shaking his head politely at a stunned customer, afternoon light through the branch window",
+     "type": "art"
+    },
+    "vo": "Par twist yeh hai. Paane wale ki marzi ke bina bank paisa nahi kaat sakta."
+   },
+   {
+    "facts_used": [],
+    "label": "Step one",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of an Indian woman's hand writing a complaint letter with a blue pen on paper at a kitchen table, a passbook beside it, soft daylight from a window",
+     "type": "art"
+    },
+    "vo": "Isliye turant UPI app mein complaint daalo, phir bank ko likh kar batao."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Step two",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic exterior of a stately government office building in an Indian city at morning, a young man in a simple shirt walking up the steps holding a file folder, determined expression, natural light",
+     "type": "art"
+    },
+    "vo": "Bank 30 din mein na suljhaye, to RBI Ombudsman jao, yaani free shikayat daftar."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "Twist",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of a wall calendar in an Indian home with pages fluttering in a breeze from a ceiling fan, a worried older woman in a saree looking at it from the side, late afternoon light, no visible numbers",
+     "type": "art"
+    },
+    "vo": "Lekin der mat karo. Uske baad sirf 90 din milte hain. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Send",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic busy Indian vegetable market in the morning, a mother in a saree paying a sabzi seller at his cart piled with tomatoes and greens, smiling, warm sunlight",
+     "type": "art"
+    },
+    "vo": "Yeh Mummy ko bhejo, jo roz UPI se sabzi ka paisa bhejti hain."
+   }
+  ],
+  "thumbnail": {
+   "name": "UPI",
+   "name_hi": "यूपीआई",
+   "scene": "A worried young Indian man standing outside a bank branch with its shutter half down at dusk, clutching a handwritten complaint letter, a crowded city street glowing behind him.",
+   "words": [
+    "90 DIN",
+    "KHATRA"
+   ],
+   "words_hi": [
+    "90 दिन",
+    "खतरा"
+   ]
+  },
+  "title": "Galat *UPI* par paisa gaya, ab kya? 😱"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  3.932,
+  8.519,
+  11.948,
+  16.102,
+  20.631,
+  24.613,
+  29.879,
+  35.096
+ ],
+ "topic": {
+  "follows": "The Diwali scam-alert Short drew 283K views and bank-fraud videos did well. This is a scare with a clear fix, and Sunday suits a practical how-to.",
+  "hooks": [
+   "Galat number par 5,000 chale gaye, to pehle 10 minute mein kya karna chahiye?",
+   "Kya bank sach mein galat UPI payment wapas dila sakta hai?"
+  ],
+  "id": "wk-2026-11-22-sglearning-short",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "Suniye, twist yahan hai!",
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: close-up of a busy Indian bank branch counter in morning natural light, a young man's hand pressed flat on the counter in panic, an empty teller chair behind the glass. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Framing: medium shot from the waist up, his whole head and both shoulders inside the frame with clear space above his hair and on both sides, and he stays framed like this to the end; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] standing relaxed and upright, shoulders open, wearing a black blazer over a white shirt, top button open. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: a confident, charismatic documentary presenter. Calm, natural face with a pleasant, warm smile, relaxed eyebrows, eyes soft and focused on the viewer. On \"wapas kyun nahi karta\" the eyes narrow a little with intrigue and the head tilts slightly, as if sharing a secret. On \"Suniye, twist yahan hai!\" a warm, confident smile and one small nod. Natural blinking, subtle head movement. No exaggerated expressions: no wide eyes, no raised eyebrows, no open-mouth surprise, no big grin, no frown; never sad, gloomy, worried or tired. Voice: warm, clear, measured, with quiet intensity; a short pause before \"wapas kyun nahi karta\". Hands: one slow, small gesture toward the scene behind him on the first line, then hands rest; no fast or large arm movements. Camera: eye level, a very slight slow push-in, slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "Galat UPI ID par paisa gaya, bank khud wapas kyun nahi karta?",
+   "text": "Galat UPI ID par paisa gaya, bank khud wapas kyun nahi karta? Suniye, twist yahan hai!",
+   "words": 16
+  },
+  "summary": "Step-by-step guide to a wrong UPI transfer: report in the app, then complain to the bank, then escalate to NPCI and the RBI ombudsman. Check: the NPCI dispute process, official timelines, and the fact that the receiver's consent may be needed.",
+  "target_minutes": null,
+  "title": "Galat UPI ID par 5,000 gaye, wapas kaise aayenge?",
+  "topic_score": 6,
+  "topic_score_why": [
+   "+3 touches the viewer's own money",
+   "+1 a choice the viewer faces",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "voice": "voice_7o0kddoq6q2z",
+  "weekly": true
+ },
+ "updated": "2026-11-15T19:55:42+00:00",
+ "writer": "claude"
+}
