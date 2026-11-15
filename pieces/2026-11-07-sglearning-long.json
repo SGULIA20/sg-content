@@ -583,8 +583,17 @@
   "summary": "A family's hospital claim gets cut: room-rent limits, waiting periods, sub-limits, pre-existing disease rules, co-pay; how to read a policy, cashless vs reimbursement, why an employer policy alone is not enough.",
   "target_minutes": 12,
   "thumb_test": {
-   "phase": "B",
-   "switched": "2026-11-09T21:39+00:00"
+   "a": [
+    0,
+    null
+   ],
+   "b": [
+    0,
+    null
+   ],
+   "phase": "done",
+   "switched": "2026-11-09T21:39+00:00",
+   "winner": "A"
   },
   "title": "Hospital ke bill par 'claim reject': health insurance ka chhota print",
   "voice": "voice_7o0kddoq6q2z"
