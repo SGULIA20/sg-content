@@ -119,13 +119,29 @@
    "drafts": 1,
    "research": 1
   },
+  "captions": {
+   "en": "AUieDaYUsRyBb14MY3DkGgwRnG9mKeyTsONUaYInhRM54x2P-PAXViY_",
+   "gu": "AUieDabINCqke8YSiW8g93fz0_eU761bpKP0HDVmf3jpDPIfh-bj1tTcyHKNNVJV34suohLJxT0",
+   "hi": "AUieDaZMdrEsxuBSvrM0--fDMOmorjt3Vy1-ndK-mQNl3kvQSIAr3r2obt6x8YE7BEuGdio",
+   "mr": "AUieDabDPP7C_cbAVM0kBC7RbXdIULOrWStOoyY1pz9DsiV95S__EFtza1VW0yaDwwM",
+   "ta": "AUieDaa_Lqhjy16603-KdNaVSUJs3D3zbttYcYh4Qlad39ATk5NfMGPLpNRujr_Dq1U"
+  },
   "cost": {
    "inr": 106.5,
-   "usd": 0.348456,
+   "usd": 0.78676,
    "voice": 70
   },
   "drafts": 1,
-  "intro_sent": "2026-11-14T19:29:22+00:00"
+  "intro": {
+   "clip": "2026-11-22-arthvan-long.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-15T11:29:00+00:00",
+   "seconds": 10.03
+  },
+  "intro_checked": "9f02e3140b1a8feb",
+  "intro_sent": "2026-11-14T19:29:22+00:00",
+  "thumb_sha": "e9265f45d1a0cdfc",
+  "yt_id": "aSTVkHOmGgk"
  },
  "kind": "long",
  "publish_day": "2026-11-22",
@@ -1097,7 +1113,7 @@
   },
   "title": "Dev Deepawali: *Tripur* katha ya 1985 ki parampara? 🤯"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   14.57,
@@ -1193,6 +1209,7 @@
    "text": "Kashi ki Dev Deepawali, hazaaron saal purani ya sirf 1985 se? Ruko, asli khel abhi baaki hai!",
    "words": 17
   },
+  "look": "indian-comic",
   "summary": "Separates the Tripurasura myth (Mahabharata Karna Parva, Shiva Purana) from the Kartik Purnima rituals. Check the modern Varanasi Dev Deepawali's origin (reportedly the 1980s at Panchganga Ghat), Pushkar fair, and avoid sectarian claims.",
   "target_minutes": 14,
   "title": "Dev Deepawali: Shiv ne Tripur jalaye ya Kashi ne nayi parampara banayi?",
@@ -1205,6 +1222,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-14T19:29:24+00:00",
+ "updated": "2026-11-15T11:29:12+00:00",
  "writer": "claude"
 }
