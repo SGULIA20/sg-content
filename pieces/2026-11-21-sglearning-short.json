@@ -85,7 +85,15 @@
    "voice": 9
   },
   "drafts": 1,
-  "intro_sent": "2026-11-14T19:58:15+00:00"
+  "intro": {
+   "clip": "2026-11-21-sglearning-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-15T10:42:19+00:00",
+   "seconds": 8.38
+  },
+  "intro_checked": "e045392604b3fb63",
+  "intro_sent": "2026-11-14T19:58:15+00:00",
+  "yt_id": "wo-K57dOlQo"
  },
  "kind": "short",
  "publish_day": "2026-11-21",
@@ -248,7 +256,7 @@
   },
   "title": "License radd, *shareholder* ka paisa kahan? 🏭"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   4.465,
@@ -278,6 +286,7 @@
    "text": "2G aur coal: license radd hua, shareholder ka paisa kahan gaya? Poora sach yahan!",
    "words": 14
   },
+  "look": "claymation",
   "summary": "The 2G spectrum and coal block cancellations by the Supreme Court (2012, 2014): what happened to the companies, their lenders and their shareholders. Keep to court orders, company filings and bank disclosures; no party politics.",
   "target_minutes": null,
   "title": "2G aur coal: license radd hua, kiska paisa dooba",
@@ -291,6 +300,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-14T19:58:18+00:00",
+ "updated": "2026-11-15T10:42:26+00:00",
  "writer": "claude"
 }
