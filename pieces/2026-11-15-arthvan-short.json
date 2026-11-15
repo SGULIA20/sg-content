@@ -53,7 +53,9 @@
    "voice": 13
   },
   "drafts": 1,
+  "ig_reel_id": "17960786280018257",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-15-arthvan-short.mp4",
    "clip_seconds": 10.03,
@@ -64,6 +66,8 @@
   "intro_sent": "2026-11-08T18:55:57+00:00",
   "out_sha": "86455f4ecc033e5eb17a4711908d325fcc3f2f10",
   "out_sha_intro": true,
+  "threads_id": "18110518970631295",
+  "threads_poll_id": "18113477093523418",
   "yt_id": "bRaEa9noxyA"
  },
  "kind": "short",
@@ -273,7 +277,7 @@
   },
   "title": "Karna, Chhath aur kaata hua *kavach* 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   3.73,
@@ -327,6 +331,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-09T12:21:18+00:00",
+ "updated": "2026-11-15T16:10:36+00:00",
  "writer": "claude"
 }
