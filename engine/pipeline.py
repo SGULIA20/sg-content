@@ -553,11 +553,15 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
     # 9: QA
     from . import captions as _captions
     cues = []
-    for (wav, d), start, sc in zip(lines, piece.timings, script["scenes"]):
+    # 15 Nov 2026: a new-style Short is spoken 1.2x faster inside the story frame, so each line is shorter than its recording; the
+    # check looked for the last word 0.7 s after it had ended and turned the 21 Nov SG-MYTH Short down three times
+    rate = opening.speed(piece) if (is_story(piece) and deps.story_build) else 1.0
+    spoken = [(wav, d / rate) for wav, d in lines]
+    for (wav, d), start, sc in zip(spoken, piece.timings, script["scenes"]):
         cues += _captions.offset(_captions.split(sc["vo"], d), start)
     target = (piece.topic.get("target_minutes") or 0) * 60 or None
-    speech_end = (piece.timings[-1] + lines[-1][1]) if piece.timings and lines else None       # where the last narrated word should end
-    problems = deps.qa(video, piece.kind, sum(d for _w, d in lines), cues, target_seconds=target, story=is_story(piece),
+    speech_end = (piece.timings[-1] + spoken[-1][1]) if piece.timings and spoken else None       # where the last narrated word should end
+    problems = deps.qa(video, piece.kind, sum(d for _w, d in spoken), cues, target_seconds=target, story=is_story(piece),
                        check_freeze=not is_story(piece), speech_end=speech_end)                 # a story panel's slow push-in is calm by design, not a frozen frame
     if problems:
         too_long = next((m for m in map(QA_TOO_LONG.match, problems) if m and float(m.group(1)) > float(m.group(2))), None)
