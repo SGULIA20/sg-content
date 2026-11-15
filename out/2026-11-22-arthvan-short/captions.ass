@@ -1,0 +1,68 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.91,Default,,0,0,0,,Manthara,
+Dialogue: 0,0:00:00.91,0:00:03.94,Default,,0,0,0,,kya uski zubaan devtaon ne palti
+Dialogue: 0,0:00:03.94,0:00:04.25,Default,,0,0,0,,thi?
+Dialogue: 0,0:00:04.25,0:00:05.76,Default,,0,0,0,,Ek dasi ki chaal,
+Dialogue: 0,0:00:05.76,0:00:06.98,Default,,0,0,0,,ya devtaon ki?
+Dialogue: 0,0:00:07.43,0:00:09.35,Default,,0,0,0,,Valmiki Ramayan mein Manthara,
+Dialogue: 0,0:00:09.35,0:00:11.49,Default,,0,0,0,,Kaikeyi ki budhi kubdi dasi hai.
+Dialogue: 0,0:00:11.49,0:00:13.21,Default,,0,0,0,,Kekeya se rani ke saath aayi.
+Dialogue: 0,0:00:13.65,0:00:16.17,Default,,0,0,0,,Usne Kaikeyi ko Dasharath ke purane
+Dialogue: 0,0:00:16.17,0:00:17.21,Default,,0,0,0,,vardaan yaad dilaye.
+Dialogue: 0,0:00:17.21,0:00:17.63,Default,,0,0,0,,Maango,
+Dialogue: 0,0:00:17.63,0:00:19.09,Default,,0,0,0,,Bharat ko raaj aur Ram ko
+Dialogue: 0,0:00:19.09,0:00:20.14,Default,,0,0,0,,14 saal vanvas.
+Dialogue: 0,0:00:20.14,0:00:21.40,Default,,0,0,0,,Lekin yahan twist hai.
+Dialogue: 0,0:00:21.85,0:00:24.43,Default,,0,0,0,,Ramcharitmanas mein devta Saraswati se vinti
+Dialogue: 0,0:00:24.43,0:00:24.95,Default,,0,0,0,,karte hain,
+Dialogue: 0,0:00:24.95,0:00:25.98,Default,,0,0,0,,vaani ki devi se.
+Dialogue: 0,0:00:25.98,0:00:28.22,Default,,0,0,0,,Saraswati Manthara ki buddhi pher deti
+Dialogue: 0,0:00:28.22,0:00:28.39,Default,,0,0,0,,hain.
+Dialogue: 0,0:00:28.84,0:00:31.07,Default,,0,0,0,,Mahabharat mein Brahma ek gandharvi,
+Dialogue: 0,0:00:31.07,0:00:31.67,Default,,0,0,0,,Dundubhi,
+Dialogue: 0,0:00:31.67,0:00:33.70,Default,,0,0,0,,ko Manthara bana kar bhejte hain.
+Dialogue: 0,0:00:33.70,0:00:35.51,Default,,0,0,0,,Gandharvi yaani swarg ki gaayika.
+Dialogue: 0,0:00:35.96,0:00:36.95,Default,,0,0,0,,Sabut kahan hai?
+Dialogue: 0,0:00:36.95,0:00:38.34,Default,,0,0,0,,1975 mein ASI,
+Dialogue: 0,0:00:38.34,0:00:40.12,Default,,0,0,0,,yaani sarkari khudai vibhag,
+Dialogue: 0,0:00:40.12,0:00:42.09,Default,,0,0,0,,Ramayan ki jagahen khodne nikla.
+Dialogue: 0,0:00:42.54,0:00:43.52,Default,,0,0,0,,Sringaverapur,
+Dialogue: 0,0:00:43.52,0:00:45.26,Default,,0,0,0,,jahan katha mein Ram ne Ganga
+Dialogue: 0,0:00:45.26,0:00:45.65,Default,,0,0,0,,paar ki,
+Dialogue: 0,0:00:45.65,0:00:47.59,Default,,0,0,0,,wahan int ki lambi tanki mili.
+Dialogue: 0,0:00:48.04,0:00:49.80,Default,,0,0,0,,Ayodhya ke sabse purane bartan,
+Dialogue: 0,0:00:49.80,0:00:52.09,Default,,0,0,0,,paramparik ganana se kaafi naye nikle.
+Dialogue: 0,0:00:52.09,0:00:53.67,Default,,0,0,0,,Aur ek dasi ka sabut mitti
+Dialogue: 0,0:00:53.67,0:00:54.55,Default,,0,0,0,,mein nahi milta.
+Dialogue: 0,0:00:55.00,0:00:56.03,Default,,0,0,0,,Kuch vidwan kehte,
+Dialogue: 0,0:00:56.03,0:00:57.88,Default,,0,0,0,,Manthara bas chatur insaan thi.
+Dialogue: 0,0:00:57.88,0:00:59.52,Default,,0,0,0,,Bhakti parampara kehti,
+Dialogue: 0,0:00:59.52,0:01:00.95,Default,,0,0,0,,woh devtaon ka mohra thi.
+Dialogue: 0,0:01:00.95,0:01:02.39,Default,,0,0,0,,Yeh mod baad ki kathaon ka
+Dialogue: 0,0:01:02.39,0:01:02.60,Default,,0,0,0,,hai.
+Dialogue: 0,0:01:03.05,0:01:03.73,Default,,0,0,0,,Lok katha mein,
+Dialogue: 0,0:01:03.73,0:01:05.27,Default,,0,0,0,,bachpan mein Ram ne uski kamar
+Dialogue: 0,0:01:05.27,0:01:06.64,Default,,0,0,0,,par mitti ki goli maari.
+Dialogue: 0,0:01:06.64,0:01:08.00,Default,,0,0,0,,Par yeh kisi granth mein nahi.
+Dialogue: 0,0:01:08.45,0:01:09.94,Default,,0,0,0,,Asli twist Valmiki mein hai.
+Dialogue: 0,0:01:09.94,0:01:11.98,Default,,0,0,0,,Shatrughna Manthara ko maarne chale,
+Dialogue: 0,0:01:11.98,0:01:12.91,Default,,0,0,0,,Bharat ne roka.
+Dialogue: 0,0:01:12.91,0:01:14.20,Default,,0,0,0,,Stri ko maarna dharm nahi.
+Dialogue: 0,0:01:14.65,0:01:16.91,Default,,0,0,0,,Woh tanki aaj bhi Sringaverapur mein
+Dialogue: 0,0:01:16.91,0:01:17.73,Default,,0,0,0,,dekh sakte hain.
+Dialogue: 0,0:01:17.73,0:01:19.17,Default,,0,0,0,,Par zubaan kisne palti?
+Dialogue: 0,0:01:19.17,0:01:20.20,Default,,0,0,0,,Aaj bhi rahasya.
+Dialogue: 0,0:01:20.65,0:01:22.22,Default,,0,0,0,,Us dost ko bhejo jo Manthara
+Dialogue: 0,0:01:22.22,0:01:23.62,Default,,0,0,0,,ko sirf villain samajhta hai.
