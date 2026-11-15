@@ -121,11 +121,12 @@
   },
   "cost": {
    "inr": 21.0,
-   "usd": 0.138536,
+   "usd": 0.140724,
    "voice": 13
   },
   "drafts": 2,
-  "ig_story_id": "skipped: Reel over 60 s"
+  "ig_story_id": "skipped: Reel over 60 s",
+  "intro_sent": "2026-11-15T11:52:46+00:00"
  },
  "kind": "short",
  "publish_day": "2026-11-21",
@@ -134,7 +135,8 @@
   "narration: the last line is cut or inaudible before 102.1s",
   "narration: the last line is cut or inaudible before 102.1s",
   "narration: the last line is cut or inaudible before 102.1s",
-  "narration: the last line is cut or inaudible before 102.1s"
+  "narration: the last line is cut or inaudible before 102.1s",
+  "waiting for the founder's intro clip until 21 Nov 11:30 UTC"
  ],
  "script": {
   "captions": {
@@ -347,7 +349,7 @@
   },
   "title": "Prayagraj ke lete hue *Hanuman* kyun? 🤯"
  },
- "status": "qa_failed",
+ "status": "intro-wait",
  "timings": [
   0.0,
   7.764,
@@ -377,6 +379,15 @@
    "Baadh mein Ganga is murti ko kyun chhoti hai?"
   ],
   "id": "wk-2026-11-21-arthvan-short",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "Ye baat koi nahi batata, suniye!",
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: wide view at dusk during a monsoon storm over the Sangam at Prayagraj, dark clouds and lightning above the river, muddy floodwater swirling into a sunken temple pit, at a distance inside the pit a huge reclining saffron-painted stone statue of Hanuman, devotees in dhotis and sarees holding oil lamps at the rim, dramatic natural light. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. If the scene shows the past, it is ancient India: Indian people in dhotis, sarees and angavastram, warriors with bows, spears and bronze or leather armour, carved stone pillars, oil lamps; never European knights, plate armour, castles or anything medieval European. Framing: medium shot from the waist up, his whole head and both shoulders inside the frame with clear space above his hair and on both sides, and he stays framed like this to the end; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] standing relaxed and upright, shoulders open, wearing a navy bandhgala jacket with a white pocket square. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: a confident, charismatic documentary presenter. Calm, natural face with a pleasant, warm smile, relaxed eyebrows, eyes soft and focused on the viewer. On \"lete hue kyun hain\" the eyes narrow a little with intrigue and the head tilts slightly, as if sharing a secret. On \"Ye baat koi nahi batata, suniye!\" a warm, confident smile and one small nod. Natural blinking, subtle head movement. No exaggerated expressions: no wide eyes, no raised eyebrows, no open-mouth surprise, no big grin, no frown; never sad, gloomy, worried or tired. Voice: warm, clear, measured, with quiet intensity; a short pause before \"lete hue kyun hain\". Hands: one slow, small gesture toward the scene behind him on the first line, then hands rest; no fast or large arm movements. Camera: eye level, a very slight slow push-in, slight handheld feel. Empty hands, no prop. @SGMythWorld watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "Prayagraj ke Hanuman ji khade nahi, lete hue kyun hain?",
+   "text": "Prayagraj ke Hanuman ji khade nahi, lete hue kyun hain? Ye baat koi nahi batata, suniye!",
+   "words": 16
+  },
   "patch_tries": 1,
   "summary": "Describes the reclining Hanuman idol at Bade Hanuman Mandir near Sangam, Prayagraj. Check the temple's own account, the Ganga flood tradition, and the claimed height and age. Mark every legend (Ahiravan, Lanka return) as local tradition.",
   "target_minutes": null,
@@ -391,6 +402,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-15T08:23:43+00:00",
+ "updated": "2026-11-15T11:52:50+00:00",
  "writer": "claude"
 }
