@@ -207,6 +207,9 @@ def claude_params(piece, sheet, library, hashtags, formula=None) -> dict:
     """The one Opus request both lanes send: the synchronous stream and the half-price batch."""
     system = system_prompt(piece.channel) if formula is None else system_prompt(piece.channel).replace(
         (CONTENT_DIR / "prompts" / f"formula-{piece.channel}.txt").read_text(), formula)
+    from . import lang
+    if lang.english(piece):                                   # founder, 16 Nov 2026: Learning with SG in English only from 23 Nov
+        system += lang.english_rules()
     if opening.is_trial(piece):
         system += opening.addendum(piece.channel, kind=piece.kind)
     return {"model": model_for(piece), "max_tokens": MAX_TOKENS,

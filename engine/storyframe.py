@@ -39,17 +39,21 @@ def logo(channel: str, px: int = LOGO_PX, out_dir: Path | None = None) -> Path:
     return out
 
 
-def brand(channel: str) -> dict:
-    """What every frame and the end card say about the channel (the founder: name the channel like the app Reels name the app)."""
+def brand(channel: str, piece=None) -> dict:
+    """What every frame and the end card say about the channel (the founder: name the channel like the app Reels name the app). An
+    English piece (engine/lang.py) gets the English tagline and end-card line."""
+    from . import lang
     ch = CHANNELS[channel]
-    return {"channel": ch.display_name, "tagline": ch.niche, "handle": HANDLE}
+    en = piece is not None and lang.english(piece)
+    return {"channel": ch.display_name, "tagline": lang.TAGLINE_EN.get(channel, ch.niche) if en else ch.niche, "handle": HANDLE,
+            "cta_html": "<b>SUBSCRIBE</b> and share" if en else "<b>SUBSCRIBE</b> aur share karo"}
 
 
 def end_card(piece, size: tuple, out_dir: Path) -> Path:
     """A still end card held for END_S seconds, same bands and colours as the story."""
     w, h = size
     from .config import VOICE_CREDIT
-    png = cards.render("storyend", {**brand(piece.channel), "question": (piece.script or {}).get("end_question", ""), "logo_path": logo(piece.channel, 320),
+    png = cards.render("storyend", {**brand(piece.channel, piece), "question": (piece.script or {}).get("end_question", ""), "logo_path": logo(piece.channel, 320),
                                     "credit": VOICE_CREDIT.get(piece.channel, "")},
                        Path(out_dir) / "end.png", size)
     out = Path(out_dir) / "end.mp4"
@@ -237,7 +241,7 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     band_h = int(h * TOP)
     title = (piece.script or {}).get("title") or (piece.script or {}).get("hook", "")
     short = piece.kind == "short"
-    title_png = cards.render("storytitle", {"title_html": title_html(title), **brand(piece.channel), "pad": TITLE_PAD_SHORT if short else 60,
+    title_png = cards.render("storytitle", {"title_html": title_html(title), **brand(piece.channel, piece), "pad": TITLE_PAD_SHORT if short else 60,
                                             "strip": "none" if short else "flex"}, out_dir / "title.png", (w, band_h))
     full = opening.is_trial(piece)                                   # the new style (Shorts and longs): full-screen picture, pills, no band, no centre watermark
     geo = geometry(size, short, full)

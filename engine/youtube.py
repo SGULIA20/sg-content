@@ -23,6 +23,11 @@ class YouTubeError(Exception):
     pass
 
 
+
+def _language(piece) -> str:
+    from . import lang
+    return "en" if lang.english(piece) else "hi"
+
 def call(method: str, url: str, token: str, json_body=None, data=None, headers=None):
     hdrs = {"Authorization": "Bearer " + token}
     hdrs.update(headers or {})
@@ -126,7 +131,10 @@ def metadata(piece: Piece, publish_at_utc: datetime, env=None) -> dict:
     if sources:
         parts.append("Sources:\n" + "\n".join(sources))
     if piece.channel == "sglearning":
-        parts.append(f"{DISCLAIMER}. Yeh video sirf samjhaane ke liye hai; koi bhi faisla apne advisor se pooch kar lijiye.")
+        from . import lang
+        parts.append("This is not investment advice. This video is only an explanation; please check with your own advisor before any decision."
+                     if lang.english(piece) else
+                     f"{DISCLAIMER}. Yeh video sirf samjhaane ke liye hai; koi bhi faisla apne advisor se pooch kar lijiye.")
     from .config import VOICE_CREDIT
     if VOICE_CREDIT.get(piece.channel):
         parts.append(VOICE_CREDIT[piece.channel])
@@ -145,7 +153,7 @@ def metadata(piece: Piece, publish_at_utc: datetime, env=None) -> dict:
     if env.get("UNLISTED_DAY1") == "1" or piece.kind in config.UNLISTED_KINDS:
         status = {"privacyStatus": "unlisted", "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}
     return {"snippet": {"title": title, "description": description[:5000], "tags": tags, "categoryId": CHANNELS[piece.channel].youtube_category,
-                        "defaultLanguage": "hi", "defaultAudioLanguage": "hi"},
+                        "defaultLanguage": _language(piece), "defaultAudioLanguage": _language(piece)},
             "status": status}
 
 

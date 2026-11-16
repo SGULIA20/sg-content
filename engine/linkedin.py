@@ -138,8 +138,10 @@ def text_for(piece) -> str:
     body = re.sub(r"[ \t]+", " ", body).strip()
     tail = []
     carried = " ".join([caps.get("instagram", {}).get("caption", ""), caps.get("threads", {}).get("text", "")]).lower()
-    if piece.channel == "sglearning" and DISCLAIMER.lower() in carried and DISCLAIMER.lower() not in body.lower():
-        tail.append(DISCLAIMER + ".")
+    from . import lang
+    line = lang.disclaimer(piece)
+    if piece.channel == "sglearning" and line.lower() in carried and line.lower() not in body.lower():
+        tail.append(line + ".")
     yt = (piece.ids or {}).get("yt_id")
     if yt:
         tail.append(f"Watch the full video on YouTube: https://youtu.be/{yt}")
