@@ -1,16 +1,16 @@
 {
- "end": "2026-11-08",
+ "end": "2026-11-15",
  "sglearning": {
   "best": [
    {
     "hook": "Gold January se 21.43 percent gir chuka hai, pata tha?",
-    "ig_views": 1949,
+    "ig_views": 1951,
     "skipped_early_pct": 35.9,
     "watched_s": 17.5
    },
    {
     "hook": "Raat ko Bhai ka phone chamka, news thi, Zerodha par ab US stocks milenge.",
-    "ig_views": 1474,
+    "ig_views": 1475,
     "skipped_early_pct": 34.4,
     "watched_s": 16.8
    },
@@ -23,6 +23,12 @@
   ],
   "worst": [
    {
+    "hook": "Sensex 74,682 chhoo kar ek hi din mein kyun phisla?",
+    "ig_views": 1,
+    "skipped_early_pct": 0,
+    "watched_s": 12.4
+   },
+   {
     "hook": "Aapki SIP doobe, phir bhi fund house kyun kamata hai?",
     "ig_views": 1,
     "skipped_early_pct": 0,
@@ -33,12 +39,6 @@
     "ig_views": 1,
     "skipped_early_pct": 100,
     "watched_s": 1.6
-   },
-   {
-    "hook": "Pistachio double mehnga kyun? Aur 9 khabrein jo jeb chhooti hain.",
-    "ig_views": 1,
-    "skipped_early_pct": 100,
-    "watched_s": 0.5
    }
   ]
  },
@@ -46,41 +46,41 @@
   "best": [
    {
     "hook": "Sanchi ke stupa ke andar Buddha ki asthiyan thi ya nahi?",
-    "ig_views": 2024,
-    "skipped_early_pct": 32.9,
-    "watched_s": 29.4
+    "ig_views": 2033,
+    "skipped_early_pct": 33.1,
+    "watched_s": 29.3
    },
    {
     "hook": "Kedarnath ki deewaron par glacier ke nishaan kyun hain?",
-    "ig_views": 1937,
-    "skipped_early_pct": 26,
-    "watched_s": 35.7
+    "ig_views": 1959,
+    "skipped_early_pct": 26.5,
+    "watched_s": 35.4
    },
    {
     "hook": "Ravan ki Lanka, kya sach mein aaj ka Sri Lanka thi?",
-    "ig_views": 1807,
-    "skipped_early_pct": 37.5,
-    "watched_s": 29.6
+    "ig_views": 1867,
+    "skipped_early_pct": 37.9,
+    "watched_s": 29.0
    }
   ],
   "worst": [
    {
+    "hook": "Unakoti ke pahad par 99,99,999 moortiyan? Kisne banayin?",
+    "ig_views": 1,
+    "skipped_early_pct": 100,
+    "watched_s": 0.8
+   },
+   {
     "hook": "Kailash par aaj tak koi kyon nahi chadha, rokta kaun hai?",
-    "ig_views": 25,
-    "skipped_early_pct": 41.7,
-    "watched_s": 17.6
+    "ig_views": 27,
+    "skipped_early_pct": 38.5,
+    "watched_s": 16.5
    },
    {
     "hook": "Kailash, woh pahad jis par aaj tak koi nahi chadha. Kyon?",
     "ig_views": 91,
     "skipped_early_pct": 63,
     "watched_s": 8.8
-   },
-   {
-    "hook": "Kumbhalgarh ki deewar, China ke baad duniya mein sabse lambi?",
-    "ig_views": 154,
-    "skipped_early_pct": 42.4,
-    "watched_s": 13.8
    }
   ]
  }
