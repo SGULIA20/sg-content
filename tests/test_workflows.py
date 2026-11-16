@@ -38,9 +38,9 @@ def test_produce_schedule_and_guards():
 def test_publish_crons_match_slots():
     data = yaml.safe_load((ROOT / ".github" / "workflows" / "publish.yml").read_text())
     crons = [s["cron"] for s in (data.get(True) or data.get("on"))["schedule"]]
-    assert "3 13 * * *" in crons and "3 14 * * *" in crons and "3 16 * * *" in crons and "3 17 * * *" in crons      # 18:30 / 21:30 India
+    assert "13 16 * * *" in crons and "3 14 * * *" in crons and "3 16 * * *" in crons and "3 17 * * *" in crons      # 21:43 (Learning) / 21:33 (SG-MYTH) India
     pick = next(s["run"] for s in data["jobs"]["publish"]["steps"] if s.get("id") == "slot")
-    assert '"3 13 * * *"' in pick and '"3 14 * * *"' in pick and '"33 14 * * *"' in pick        # every finance slot maps to sglearning
+    assert '"13 16 * * *"' in pick and '"3 14 * * *"' in pick                                  # every finance slot maps to sglearning
 
 
 def test_docs_secrets_lists_every_secret():
@@ -131,3 +131,8 @@ def test_a_short_with_the_intro_gets_its_media_sha_recorded_again(tmp_path):
     assert pieces.load("2026-10-20-sglearning-short", tmp_path).ids["out_sha"] == "new"
     assert pieces.load("2026-10-20-sglearning-short", tmp_path).ids["out_sha_intro"] is True
     assert {pieces.load(f"2026-10-{d}-sglearning-short", tmp_path).ids["out_sha"] for d in ("21", "22", "23")} == {"old"}
+
+
+def test_the_live_learning_slot():
+    from tests.conftest import LIVE_LEARNING_SLOT
+    assert LIVE_LEARNING_SLOT == "21:40"            # ten minutes after SG-MYTH-WORLD's 21:30 (founder, 16 Nov 2026)
