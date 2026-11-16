@@ -103,3 +103,15 @@ def test_the_prune_step_keeps_the_story_videos():
     spec = importlib.util.spec_from_file_location("prune_out", Path(__file__).resolve().parent.parent / "scripts" / "prune_out.py")
     mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
     assert {"teaser.mp4", "trailer.mp4", "teaser.jpg"} <= mod.KEEP_IN_OUT
+
+
+def test_suspense_lines_are_short_questions_or_nothing(tmp_path):
+    p = _long(tmp_path)
+    good = '["Kashi ki Dev Deepawali kitni purani?", "Ya sirf 1985 se?", "Sikka kya raaz kholta hai?"]'
+    assert teaser.suspense_lines(p, lambda prompt: "Here you go: " + good) == ["Kashi ki Dev Deepawali kitni purani?", "Ya sirf 1985 se?", "Sikka kya raaz kholta hai?"]
+    assert teaser.suspense_lines(p, lambda prompt: '["only one line"]') == []                       # too few: the opening trailer is used
+    assert teaser.suspense_lines(p, lambda prompt: "no json") == []
+    long_line = " ".join(["word"] * 20)
+    assert teaser.suspense_lines(p, lambda prompt: f'["{long_line}", "a?", "b?"]') == []
+    assert teaser.closing_line(p) == "Poora sach YouTube par. Link bio mein."
+    assert teaser.suspense_trailer(p, [], tmp_path, ask=lambda prompt: good) is None               # no pictures: nothing made

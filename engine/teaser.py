@@ -101,6 +101,114 @@ def trailer(piece, long_video: Path, out_dir: Path, render=cards.render, seconds
     return out
 
 
+SUSPENSE_S = 20               # founder, 16 Nov 2026: "short scripts of suspense thriller questions ... max 20 seconds"
+SUSPENSE_LINES = (3, 4)
+LINE_WORDS = 9
+
+
+def suspense_lines(piece, ask) -> list:
+    """Three or four short question lines that raise the long video's mystery and give nothing away, in the piece's language; [] when
+    the writer gives nothing usable (the plain opening trailer is used then). The spoken closing line is added by the caller."""
+    import json as _json
+    import re as _re
+    from . import lang
+    script = piece.script or {}
+    body = " ".join(sc.get("vo", "") for sc in script.get("scenes", []))[:1800]
+    tongue = "plain Indian English, no Hindi words" if lang.english(piece) else "Hinglish in Latin script, the way the script speaks"
+    prompt = (f"A long video titled \"{script.get('title', '')}\" opens with: \"{script.get('hook', '')}\"\nIts script begins: {body}\n\n"
+              f"Write the voice-over of a 15-second suspense TRAILER for it, like a thriller teaser: {SUSPENSE_LINES[0]} or {SUSPENSE_LINES[1]} "
+              f"lines, each a question or a cliff-hanger of at most {LINE_WORDS} words, each raising the stakes over the one before. Reveal NO "
+              f"answer and no conclusion. Use only names, places and numbers that are in the script. No greeting, no 'in this video'. "
+              f"Language: {tongue}. Reply with a JSON array of strings only.")
+    try:
+        raw = ask(prompt)
+        lines = _json.loads(_re.search(r"\[.*\]", raw, _re.S).group(0))
+    except Exception as e:
+        print(f"{piece.id}: no suspense lines ({type(e).__name__}: {secrets.scrub(str(e))[:120]})", flush=True)
+        return []
+    lines = [str(x).strip() for x in lines if str(x).strip()][:SUSPENSE_LINES[1]]
+    if len(lines) < SUSPENSE_LINES[0] or any(len(x.split()) > LINE_WORDS + 3 for x in lines):
+        return []
+    return lines
+
+
+def closing_line(piece) -> str:
+    from . import lang
+    return "Full story on YouTube. Link in bio." if lang.english(piece) else "Poora sach YouTube par. Link bio mein."
+
+
+def suspense_trailer(piece, panels: list, out_dir: Path, ask=None, say=None, render=cards.render, limit: float = SUSPENSE_S):
+    """The trailer written for the Story: suspense questions in the narrator's voice over the long's own pictures, one picture a line,
+    the line big on screen, music under it, never longer than `limit` seconds. Returns the file, or None when it cannot be made (no
+    lines, fewer than three pictures): the caller then uses the long's opening seconds."""
+    from . import assemble, intro, lang, music, voice
+    out_dir = Path(out_dir)
+    panels = [Path(p) for p in panels if Path(p).suffix.lower() in (".png", ".jpg", ".jpeg") and Path(p).exists()]
+    if len(panels) < 3:
+        return None
+    lines = suspense_lines(piece, ask or intro._ask_claude)
+    if not lines:
+        return None
+    lines.append(closing_line(piece))
+    work = out_dir / "trailer-work"
+    work.mkdir(parents=True, exist_ok=True)
+    voice_id = (piece.topic or {}).get("voice") or voice.voice_ids()[0]
+    say = say or (lambda text, wav: voice.say(text, voice_id, wav, plain=True))
+    spoken = []
+    for i, text in enumerate(lines):
+        wav = work / f"line{i}.wav"
+        spoken.append((wav, say(text, wav)))
+    pad = 0.25
+    total = sum(d for _w, d in spoken) + pad * len(spoken)
+    if total > limit - 0.6:                                              # speak a little faster before anything is cut
+        spoken = assemble.faster(spoken, min(1.3, total / (limit - 0.6)), work / "fast")
+        total = sum(d for _w, d in spoken) + pad * len(spoken)
+    while total > limit - 0.3 and len(spoken) > 3:                       # still too long: the weakest middle line goes, never the closing
+        spoken.pop(-2); lines.pop(-2)
+        total = sum(d for _w, d in spoken) + pad * len(spoken)
+    starts = assemble._voice_track(spoken, work / "voice.wav", pad=pad)
+    seconds = min(limit, round(total + 0.3, 2))
+    step = max(1, len(panels) // len(lines))
+    chosen = [panels[min(len(panels) - 1, (i * step) + step // 2)] for i in range(len(lines))]     # spread over the whole video, not its start
+    en = lang.english(piece)
+    base = {**storyframe.brand(piece.channel, piece), "logo_path": storyframe.logo(piece.channel, 320),
+            "new": "NEW VIDEO" if en else "NAYA VIDEO", "full": "Full video on YouTube" if en else "Poora video YouTube par",
+            "bio": "Link in bio" if en else "Link bio mein"}
+    w, h = SIZE
+    inputs, chain, last = [], "", None
+    for i, (pic, (_wav, d)) in enumerate(zip(chosen, spoken)):
+        dur = (starts[i + 1] - starts[i]) if i + 1 < len(starts) else max(0.5, seconds - starts[i])
+        frames = max(1, int(round(dur * 30)))
+        inputs += ["-i", str(pic)]                                       # one still: zoompan turns it into exactly `frames` frames
+        z = f"min(1.05+{0.18 / frames:.6f}*on,1.23)" if i % 2 == 0 else f"max(1.23-{0.18 / frames:.6f}*on,1.05)"
+        chain += (f"[{i}:v]scale={w * 2}:{CLIP_H * 2}:force_original_aspect_ratio=increase,crop={w * 2}:{CLIP_H * 2},"
+                  f"zoompan=z='{z}':d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={w}x{CLIP_H}:fps=30[c{i}];")
+    n = len(chosen)
+    chain += "".join(f"[c{i}]" for i in range(n)) + f"concat=n={n}:v=1:a=0,split[fa][fb];"
+    chain += (f"[fa]scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},boxblur=24:4,eq=brightness=-0.25[bg];"
+              f"[bg][fb]overlay=0:{CLIP_Y}[v0];")
+    last = "[v0]"
+    for i, text in enumerate(lines):                                     # each line's own frame: the question big above the picture
+        png = render("trailer", {**base, "title_html": storyframe.title_html(text)}, work / f"frame{i}.png", SIZE)
+        inputs += ["-loop", "1", "-i", str(png)]
+        end = starts[i + 1] if i + 1 < len(starts) else seconds + 1
+        chain += f"{last}[{n + i}:v]overlay=0:0:enable='between(t,{starts[i]:.3f},{end:.3f})'[o{i}];"
+        last = f"[o{i}]"
+    bed = music.bed("epic" if piece.channel == "arthvan" else "calm", seconds + 3)
+    a0, a1 = n + len(lines), n + len(lines) + 1
+    inputs += ["-i", str(work / "voice.wav"), "-i", str(bed)]
+    chain += (f"{last}fade=t=out:st={seconds - 0.5:.2f}:d=0.5,format=yuv420p[v];"
+              f"[{a1}:a]loudnorm=I=-24:TP=-4:LRA=7,aresample=48000[m];[{a0}:a]aresample=48000,apad[vo];"
+              f"[vo][m]amix=inputs=2:duration=shortest:normalize=0,afade=t=out:st={seconds - 0.8:.2f}:d=0.8[au]")
+    out = out_dir / "trailer.mp4"
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", chain, "-map", "[v]", "-map", "[au]", "-t", f"{seconds:.2f}",
+                    "-c:v", "libx264", "-preset", "medium", "-crf", "25", "-c:a", "aac", "-b:a", "128k", "-ar", "48000",
+                    "-movflags", "+faststart", str(out)], check=True)
+    import shutil
+    shutil.rmtree(work, ignore_errors=True)
+    return out
+
+
 def backfill(root: Path = ROOT, render=cards.render, make_video=video) -> list:
     """Draws the Story card (and its video) for every made long video whose Story has not gone out and that has none yet, or whose
     thumbnail changed since the card was drawn; returns their ids. Costs nothing (no picture calls)."""

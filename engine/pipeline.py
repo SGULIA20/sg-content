@@ -604,7 +604,14 @@ def finish_upload(piece: Piece, deps: Deps, root: Path, video: Path, thumb: Path
         try:                                                         # the Instagram Story of this long: its own first seconds (16 Nov 2026)
             from . import teaser
             if Path(video).exists() and Path(video).stat().st_size > 1_000_000:      # a real render, not a test stub
-                teaser.trailer(piece, video, out_dir)
+                # founder, 16 Nov 2026: suspense questions written for the Story, 20 s at most; the long's opening seconds when that fails
+                made = None
+                try:
+                    made = teaser.suspense_trailer(piece, sorted(Path(out_dir).glob("visual*.png")), out_dir)
+                except Exception as e:
+                    print(f"suspense trailer failed for {piece.id}: {secrets.scrub(str(e))[:200]}", flush=True)
+                if made is None:
+                    teaser.trailer(piece, video, out_dir, seconds=20)
         except Exception as e:                                       # a bonus: the picture Story still goes out
             print(f"trailer skipped for {piece.id}: {secrets.scrub(str(e))[:200]}", flush=True)
     return piece
