@@ -1,0 +1,76 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.89,Default,,0,0,0,,Boodhe Jatayu ne Ravan ka rath
+Dialogue: 0,0:00:01.89,0:00:02.94,Default,,0,0,0,,sach mein toda tha?
+Dialogue: 0,0:00:03.39,0:00:04.61,Default,,0,0,0,,Valmiki Ramayan,
+Dialogue: 0,0:00:04.61,0:00:05.83,Default,,0,0,0,,Aranya Kanda.
+Dialogue: 0,0:00:05.83,0:00:08.27,Default,,0,0,0,,Ravan Sita ko lekar aakash mein
+Dialogue: 0,0:00:08.27,0:00:09.00,Default,,0,0,0,,udta hai.
+Dialogue: 0,0:00:09.00,0:00:10.71,Default,,0,0,0,,Saamne aata hai Jatayu.
+Dialogue: 0,0:00:11.16,0:00:12.27,Default,,0,0,0,,Jatayu kehta hai,
+Dialogue: 0,0:00:12.27,0:00:13.82,Default,,0,0,0,,main 60,000 saal ka boodha hoon.
+Dialogue: 0,0:00:13.82,0:00:14.71,Default,,0,0,0,,Tum jawaan ho,
+Dialogue: 0,0:00:14.71,0:00:16.04,Default,,0,0,0,,rath aur kavach wale.
+Dialogue: 0,0:00:16.04,0:00:17.82,Default,,0,0,0,,Phir bhi Sita ko nahi le
+Dialogue: 0,0:00:17.82,0:00:18.71,Default,,0,0,0,,jaane dunga.
+Dialogue: 0,0:00:19.16,0:00:19.86,Default,,0,0,0,,Phir hamla!
+Dialogue: 0,0:00:19.86,0:00:22.21,Default,,0,0,0,,Panjon se Ravan ka moti jada
+Dialogue: 0,0:00:22.21,0:00:23.15,Default,,0,0,0,,dhanush tod diya.
+Dialogue: 0,0:00:23.15,0:00:25.02,Default,,0,0,0,,Pankhon aur chonch se sone ka
+Dialogue: 0,0:00:25.02,0:00:25.73,Default,,0,0,0,,rath choor choor.
+Dialogue: 0,0:00:26.18,0:00:27.12,Default,,0,0,0,,Gadhe maar diye,
+Dialogue: 0,0:00:27.12,0:00:28.07,Default,,0,0,0,,aur sarathi,
+Dialogue: 0,0:00:28.07,0:00:29.96,Default,,0,0,0,,yaani rath chalane wala,
+Dialogue: 0,0:00:29.96,0:00:31.61,Default,,0,0,0,,uska sir chonch se alag.
+Dialogue: 0,0:00:31.61,0:00:33.03,Default,,0,0,0,,Lekin yahan twist hai.
+Dialogue: 0,0:00:33.48,0:00:35.37,Default,,0,0,0,,Ravan Sita ke saath zameen par
+Dialogue: 0,0:00:35.37,0:00:35.79,Default,,0,0,0,,utra.
+Dialogue: 0,0:00:35.79,0:00:36.84,Default,,0,0,0,,Talwar nikali,
+Dialogue: 0,0:00:36.84,0:00:38.52,Default,,0,0,0,,aur thake Jatayu ke pankh kaat
+Dialogue: 0,0:00:38.52,0:00:38.72,Default,,0,0,0,,diye.
+Dialogue: 0,0:00:39.17,0:00:40.53,Default,,0,0,0,,Kya yeh sirf kavita hai?
+Dialogue: 0,0:00:40.53,0:00:41.50,Default,,0,0,0,,Archaeologist B.
+Dialogue: 0,0:00:41.50,0:00:41.70,Default,,0,0,0,,B.
+Dialogue: 0,0:00:41.70,0:00:43.25,Default,,0,0,0,,Lal ne ASI ki madad se
+Dialogue: 0,0:00:43.25,0:00:45.39,Default,,0,0,0,,Ramayan wale shehron mein khudai karwayi.
+Dialogue: 0,0:00:45.84,0:00:47.10,Default,,0,0,0,,Phir 2018 mein,
+Dialogue: 0,0:00:47.10,0:00:48.36,Default,,0,0,0,,ASI ko Sinauli,
+Dialogue: 0,0:00:48.36,0:00:50.46,Default,,0,0,0,,Uttar Pradesh mein mitti ke neeche
+Dialogue: 0,0:00:50.46,0:00:51.51,Default,,0,0,0,,asli rath mile.
+Dialogue: 0,0:00:51.51,0:00:52.56,Default,,0,0,0,,Lakdi ke pahiye,
+Dialogue: 0,0:00:52.56,0:00:54.03,Default,,0,0,0,,upar taambe ki chadar.
+Dialogue: 0,0:00:54.48,0:00:55.63,Default,,0,0,0,,Matlab rath sach the.
+Dialogue: 0,0:00:55.63,0:00:56.09,Default,,0,0,0,,Par gidh?
+Dialogue: 0,0:00:56.09,0:00:56.32,Default,,0,0,0,,H.
+Dialogue: 0,0:00:56.32,0:00:56.55,Default,,0,0,0,,D.
+Dialogue: 0,0:00:56.55,0:00:57.93,Default,,0,0,0,,Sankalia kehte the,
+Dialogue: 0,0:00:57.93,0:00:59.77,Default,,0,0,0,,Jatayu ek jungle jaati thi,
+Dialogue: 0,0:00:59.77,0:01:01.15,Default,,0,0,0,,jiska nishaan gidh tha.
+Dialogue: 0,0:01:01.60,0:01:03.49,Default,,0,0,0,,Paramparik vidwan yeh nahi maante.
+Dialogue: 0,0:01:03.49,0:01:05.04,Default,,0,0,0,,Woh Valmiki ko jaisa likha,
+Dialogue: 0,0:01:05.04,0:01:05.90,Default,,0,0,0,,waisa padhte hain.
+Dialogue: 0,0:01:05.90,0:01:06.41,Default,,0,0,0,,Sach kya hai,
+Dialogue: 0,0:01:06.41,0:01:07.27,Default,,0,0,0,,koi nahi jaanta.
+Dialogue: 0,0:01:07.72,0:01:08.25,Default,,0,0,0,,Ab twist.
+Dialogue: 0,0:01:08.25,0:01:10.65,Default,,0,0,0,,Andhra ki lokkatha kehti hai,
+Dialogue: 0,0:01:10.65,0:01:13.04,Default,,0,0,0,,Ram ne girte Jatayu se kaha,
+Dialogue: 0,0:01:13.04,0:01:13.84,Default,,0,0,0,,Le Pakshi,
+Dialogue: 0,0:01:13.84,0:01:15.43,Default,,0,0,0,,yaani utho pakshi.
+Dialogue: 0,0:01:15.88,0:01:18.44,Default,,0,0,0,,Wahin aaj Lepakshi ka Virabhadra mandir
+Dialogue: 0,0:01:18.44,0:01:19.03,Default,,0,0,0,,khada hai,
+Dialogue: 0,0:01:19.03,0:01:20.41,Default,,0,0,0,,ASI ki suraksha mein.
+Dialogue: 0,0:01:20.41,0:01:21.58,Default,,0,0,0,,Rath toda ya nahi,
+Dialogue: 0,0:01:21.58,0:01:23.55,Default,,0,0,0,,Valmiki ke shabd aapke saamne hain.
+Dialogue: 0,0:01:24.00,0:01:24.89,Default,,0,0,0,,Nani ko bhejo,
+Dialogue: 0,0:01:24.89,0:01:26.83,Default,,0,0,0,,jinhone Jatayu ki katha sunayi thi.
