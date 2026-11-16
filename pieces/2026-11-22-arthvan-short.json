@@ -126,8 +126,15 @@
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
+  "intro": {
+   "clip": "2026-11-22-arthvan-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-16T14:44:00+00:00",
+   "seconds": 8.38
+  },
+  "intro_checked": "aeade8b801a5f628",
   "intro_sent": "2026-11-15T19:45:44+00:00",
-  "intro_checked": "aeade8b801a5f628"
+  "yt_id": "Uga8ET7utt4"
  },
  "kind": "short",
  "publish_day": "2026-11-22",
@@ -350,7 +357,7 @@
   },
   "title": "Manthara ki zubaan *devtaon* ne palti? 🤯"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   7.426,
@@ -389,6 +396,7 @@
    "text": "Manthara, kya uski zubaan devtaon ne palti thi? Ruko mat, ye dekhna zaroori hai!",
    "words": 14
   },
+  "look": "indian-comic",
   "summary": "Compares Valmiki, where Manthara is Kaikeyi's maid from her father's house, with later versions where the gods get Saraswati to twist her speech (Ramcharitmanas, Adhyatma). Check the verses and mark the divine-plot angle as a later tradition.",
   "target_minutes": null,
   "title": "Manthara kaun thi, sirf villain ya devtaon ki chaal?",
@@ -401,6 +409,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-15T19:45:47+00:00",
+ "updated": "2026-11-16T14:44:05+00:00",
  "writer": "claude"
 }
