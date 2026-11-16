@@ -1,0 +1,273 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 38.4,
+   "quote": "India's investment in US Treasury securities increased USD 38.4 billion, or 21 per cent, between June and August, coinciding with substantial inflows of Foreign Currency Non-Resident (FCNR) (B) deposits into the Indian banking system.",
+   "source_date": "2026-11-16",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/indias-investments-in-us-treasuries-jump-usd-38-4-bn-in-jun-aug-amid-fcnr-flows/articleshow/135888824.cms",
+   "text": "India's investment in US Treasury securities increased by USD 38.4 billion between June and August 2026 amid strong foreign currency inflows.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "official",
+   "number": 219.7,
+   "quote": "According to data compiled by PTI from the US Department of the Treasury, India's investment in US Treasuries rose to USD 219.7 billion in August 2026 from USD 181.3 billion in May 2026, just before the Reserve Bank of India (RBI) introduced the concessional facility.",
+   "source_date": "2026-11-16",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/indias-investments-in-us-treasuries-jump-usd-38-4-bn-in-jun-aug-amid-fcnr-flows/articleshow/135888824.cms",
+   "text": "India's total investment holdings in US Treasuries rose to USD 219.7 billion in August 2026.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "official",
+   "number": 127.23,
+   "quote": "The facility mobilised USD 127.23 billion through FCNR(B) deposits by August 31, while total inflows, including overseas foreign currency borrowings and external commercial borrowings, stood at USD 136.38 billion, according to RBI data.",
+   "source_date": "2026-11-16",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/indias-investments-in-us-treasuries-jump-usd-38-4-bn-in-jun-aug-amid-fcnr-flows/articleshow/135888824.cms",
+   "text": "The Reserve Bank of India's concessional swap facility mobilised USD 127.23 billion through FCNR(B) deposits by August 31, 2026.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "official",
+   "number": 740.803,
+   "quote": "Reserves stood at USD 740.803 billion as of August 28, 2026, compared with USD 682.231 billion as of May 29, 2026.",
+   "source_date": "2026-11-16",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/indias-investments-in-us-treasuries-jump-usd-38-4-bn-in-jun-aug-amid-fcnr-flows/articleshow/135888824.cms",
+   "text": "India's foreign exchange reserves rose to USD 740.803 billion as of August 28, 2026.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "reported",
+   "number": 4.75,
+   "quote": "During the period, the yield on 10-year US Treasury securities rose to 4.75 per cent as of August 31, 2026, from 4.45 per cent as of May 29, 2026.",
+   "source_date": "2026-11-16",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/markets/stocks/news/indias-investments-in-us-treasuries-jump-usd-38-4-bn-in-jun-aug-amid-fcnr-flows/articleshow/135888824.cms",
+   "text": "The yield on 10-year US Treasury securities rose to 4.75 per cent by late August 2026.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 34.4,
+   "quote": "Indian banks experienced a decline in low-cost deposits as the CASA ratio fell to 34.4%.",
+   "source_date": "2026-11-14",
+   "source_name": "ET",
+   "source_url": "https://bfsi.economictimes.indiatimes.com/news/banking/banks-low-cost-deposit-share-falls-to-34-4-in-q2-as-fcnr-b-inflows-lift-deposits-report/135831687",
+   "text": "The share of low-cost CASA deposits across Indian banks dropped to 34.4 per cent in the second quarter.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-23-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-16",
+   "drafts": 1,
+   "research": 2
+  },
+  "cost": {
+   "inr": 13.5,
+   "usd": 0.058788,
+   "voice": 8
+  },
+  "drafts": 1,
+  "intro_sent": "2026-11-16T19:06:47+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-23",
+ "reasons": [
+  "try 1: empty reply from the research model",
+  "waiting for the founder's intro clip until 23 Nov 11:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "India quietly lent America 38.4 billion dollars this summer. 💵\nThe money came from NRIs parking dollars in Indian banks through a special RBI offer.\nA fuller dollar safe keeps the rupee steady, and that matters when India imports most of its oil.\nNow the offer has closed. What happens next?\nThis is not investment advice.\nSend this to your cousin abroad who keeps his savings in dollars.",
+    "hashtags": [
+     "#RBI",
+     "#Rupee",
+     "#CrudeOil",
+     "#PersonalFinanceIndia",
+     "#PaiseKiKhabar",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "India quietly lent America 38.4 billion dollars between June and August, using NRI dollar deposits. A fuller dollar safe keeps the rupee steady. But the special RBI window has closed. Will the rupee stay calm now? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "India put 38.4 billion more dollars into US government bonds between June and August. Much of it came from NRIs parking dollars in Indian banks through a special RBI offer. That bigger dollar safe helps keep the rupee steady and your fuel bill calmer, but the offer has now closed. Send this to your cousin abroad who keeps his savings in dollars.",
+    "tags": [
+     "US Treasury",
+     "India forex reserves",
+     "FCNR deposit",
+     "NRI",
+     "RBI",
+     "rupee",
+     "dollar",
+     "crude oil",
+     "personal finance India",
+     "money explained"
+    ],
+    "title": "Why Is India Lending Money to America?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Send this to your cousin abroad who keeps his savings in dollars.",
+  "hook": "Why did India quietly lend America 38.4 billion dollars this summer?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of thick bundles of green US dollar banknotes stacked high on a polished Indian bank counter, warm afternoon light, notes slightly out of focus so no print is readable, no text",
+     "type": "art"
+    },
+    "vo": "Why did India quietly lend America 38.4 billion dollars this summer?"
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of a young Indian man in office wear at a bank branch counter in an Indian city, handing over a deposit slip to a bank officer, daylight through glass windows, calm and confident mood, no readable text",
+     "type": "art"
+    },
+    "vo": "Your cousin abroad earns dollars. He parks them in an Indian bank as a dollar FD, called FCNR."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of a busy Indian bank hall with a long line of customers at the foreign exchange desk, staff counting currency, bright morning light, energetic mood, no signs or text",
+     "type": "art"
+    },
+    "vo": "RBI made it sweeter with a special offer. Dollars poured in."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic interior of a heavy steel bank vault in India, its thick round door half open, shelves of sealed cash boxes inside, cool fluorescent light, sense of security, no text",
+     "type": "art"
+    },
+    "vo": "His savings dodge a falling rupee. India's dollar safe gets fuller."
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a grand stone government building in Washington with tall columns at sunset, a few people walking on the steps, no flags with text, no signs",
+     "type": "art"
+    },
+    "vo": "But dollars cannot sit idle. So India lent them to America, through US government bonds."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of a huge oil tanker docking at an Indian port at dusk, cranes and pipelines in the foreground, dock workers in hard hats, orange sky, no text or logos",
+     "type": "art"
+    },
+    "vo": "Why care? India imports about 88 percent of its crude oil. A full dollar safe keeps the rupee steady."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of a bank branch's metal shutter being pulled down by a guard in the evening, street lights coming on in an Indian market lane, quiet thoughtful mood, no text",
+     "type": "art"
+    },
+    "vo": "Here is the twist. That special window has closed. Experts say this buying may slow. This is not investment advice."
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of an Indian family at a dining table at night, a middle-aged man smiling as he talks, chai cups and a plate of snacks, warm yellow home light, no screens or text",
+     "type": "art"
+    },
+    "vo": "Send this to your cousin abroad who keeps his savings in dollars."
+   }
+  ],
+  "thumbnail": {
+   "name": "US TREASURY",
+   "name_hi": "US TREASURY",
+   "scene": "Pallets of US dollar bundles stacked on the floor of an Indian bank vault, with a giant oil tanker docking at an Indian port visible through the open vault door at dusk.",
+   "words": [
+    "$38.4 BN",
+    "SECRET?"
+   ],
+   "words_hi": [
+    "$38.4 BN",
+    "SECRET?"
+   ]
+  },
+  "title": "India's dollars went to *America*? 💵"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  4.992,
+  10.483,
+  14.602,
+  18.955,
+  25.167,
+  31.814,
+  38.646
+ ],
+ "topic": {
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "Let me open this up, step by step!",
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: close-up of thick bundles of green US dollar banknotes stacked high on a polished Indian bank counter, warm afternoon light, notes slightly out of focus so no print is readable. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Framing: medium shot from the waist up, his whole head and both shoulders inside the frame with clear space above his hair and on both sides, and he stays framed like this to the end; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] standing relaxed and upright, shoulders open, wearing a navy blazer over a white shirt, no tie. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: a confident, charismatic documentary presenter. Calm, natural face with a pleasant, warm smile, relaxed eyebrows, eyes soft and focused on the viewer. On \"billion dollars this summer\" the eyes narrow a little with intrigue and the head tilts slightly, as if sharing a secret. On \"Let me open this up, step by step!\" a warm, confident smile and one small nod. Natural blinking, subtle head movement. No exaggerated expressions: no wide eyes, no raised eyebrows, no open-mouth surprise, no big grin, no frown; never sad, gloomy, worried or tired. Voice: warm, clear, measured, with quiet intensity; a short pause before \"billion dollars this summer\". Hands: one slow, small gesture toward the scene behind him on the first line, then hands rest; no fast or large arm movements. Camera: eye level, a very slight slow push-in, slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "Why did India quietly lend America 38.4 billion dollars this summer?",
+   "text": "Why did India quietly lend America 38.4 billion dollars this summer? Let me open this up, step by step!",
+   "words": 19
+  },
+  "link": "https://economictimes.indiatimes.com/markets/stocks/news/indias-investments-in-us-treasuries-jump-usd-38-4-bn-in-jun-aug-amid-fcnr-flows/articleshow/135888824.cms",
+  "published": "2026-11-16T12:17:29+00:00",
+  "rank": 3,
+  "source": "ET Markets",
+  "summary": "India's investment in US Treasury securities increased by USD 38.4 billion due to FCNR(B) deposits during three months. The Reserve Bank of India introduced a special facility to encourage these foreign currency deposits. This facility led to significant inflows, improving India's foreign exchange reserves substantially. Experts suggest that investment in US Treasuries may slow down due to the closure of the FCNR(B) window. India's reserves grew to USD 740.",
+  "target_minutes": null,
+  "title": "India's investments in US Treasuries jump USD 38.4 bn in Jun-Aug amid FCNR flows",
+  "topic_score": 2,
+  "topic_score_why": [
+   "+1 touches the viewer's own money (in the summary)",
+   "+1 a concrete number"
+  ],
+  "voice": "voice_g8azc8xcwhlu"
+ },
+ "updated": "2026-11-16T19:06:49+00:00",
+ "writer": "claude"
+}
