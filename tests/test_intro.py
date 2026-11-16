@@ -612,18 +612,43 @@ def test_an_exact_big_number_is_rounded_for_the_founder_to_say():
     assert "tiraanve" not in intro.spoken("50,00,000 ka home loan, aur bank ko wapas 95,93,875 rupaye?")
 
 
-def test_the_founder_gets_three_lines_to_choose_from_and_any_of_them_is_accepted(tmp_path):
-    """Founder, 17 Nov 2026: "give me always 2-3 options for founder script"."""
+def test_the_founder_gets_hooks_written_to_his_brief_and_any_of_them_is_accepted(tmp_path):
+    """Founder, 17 Nov 2026: "give me always 2-3 options", then his own hook brief ("yes, use this prompt"): 20-23 words, no fixed closing."""
+    import json as _json
     p = _piece("short", "arthvan"); p.script["hook"] = "Boodhe Jatayu ne Ravan ka rath sach mein toda tha?"
-    ask = lambda prompt: '["Ek boodha giddh, aur Ravan ka rath tukde tukde?", "Jatayu ne akele Ravan ko kaise roka?"]' if "other ways" in prompt else ""
+    hooks = ["Ravan ke paas sone ka rath tha, kavach tha, jawani thi. Jatayu ke paas sirf pankh aur chonch. Phir bhi rath kiska toota?",
+             "Sita ko le jaate Ravan ko aasman mein kisi ne roka tha. Na koi yoddha, na devta. Ek boodha pakshi. Phir kya hua?",
+             "Ravan ka sone ka rath beech aasman mein choor choor ho gaya tha. Todne wala koi yoddha nahi tha. Toh woh kaun tha?",
+             "Yeh bahut chhota hook hai?"]                                                          # too short: dropped
+    seen = []
+    def ask(prompt):
+        seen.append(prompt)
+        return _json.dumps({"hooks": hooks, "strongest": 1, "why": "contrast"}) if "opening hooks" in prompt else ""
     plan = intro.plan(p, ask=ask)
+    brief = next(x for x in seen if "opening hooks" in x)
+    assert "exactly 20-23 words" in brief and "Poora sach yahan" in brief and "VIDEO SUMMARY" in brief and "Hinglish" in brief
     opts = plan["options"]
-    assert len(opts) == 3 and opts[0]["text"] == plan["text"] and len({o["text"] for o in opts}) == 3
-    assert opts[1]["question"].startswith("Ek boodha giddh") and opts[1]["closing"] != opts[0]["closing"]
+    assert [o["text"] for o in opts] == [hooks[1], hooks[0], hooks[2]]                              # the writer's pick first; 20-23 words only
+    assert plan["text"] == hooks[1] and plan["closing"] == "" and plan["words"] == 23
     text = intro.request_text(p, plan)
-    assert "Say ONE of these" in text and all(f'{k}. "' in text for k in (1, 2, 3))
+    assert "Say ONE of these" in text and "1. ⭐" in text and '3. "' in text
+    for must in ("walks toward the camera", "TV news reporter", "energetic and confident", "do not crop the top of his head"):
+        assert must in plan["prompt"], must
     clip = tmp_path / "c.mp4"; clip.write_bytes(b"x")
-    assert intro.check(clip, plan, transcribe=lambda c: opts[2]["text"], seconds=9.0) == []        # he said the third line
-    assert plan["text"] == opts[2]["text"] and plan["closing"] == opts[2]["closing"]              # the captions follow it
-    quiet = intro.plan(p, ask=lambda prompt: "")                                                  # no writer: the closings vary
-    assert len(quiet["options"]) == 3 and len({o["closing"] for o in quiet["options"]}) == 3
+    assert intro.check(clip, plan, transcribe=lambda c: hooks[2], seconds=9.5) == []                # he said the third; no closing is needed
+    assert plan["text"] == hooks[2]                                                                 # the captions follow it
+    quiet = intro.plan(p, ask=lambda prompt: "")                                                    # no writer: the planned line alone
+    assert len(quiet["options"]) == 1 and quiet["closing"] and "Say exactly" in intro.request_text(p, quiet)
+
+
+def test_resend_plans_afresh_and_asks_again_only_while_waiting(tmp_path):
+    (tmp_path / "pieces").mkdir()
+    p = _piece("short", "arthvan"); p.status = "intro-wait"
+    p.topic["intro"] = {"text": "old line", "closing": "x"}; p.ids["intro_sent"] = "2026-11-16T00:00:00+00:00"; p.ids["intro_rejected"] = "abc"
+    pieces.save(p, tmp_path)
+    sent = []
+    assert intro.resend(p.id, tmp_path, sent.append, ask=lambda prompt: "").startswith("sent again")
+    q = pieces.load(p.id, tmp_path)
+    assert len(sent) == 1 and q.topic["intro"]["text"] != "old line" and q.ids.get("intro_sent") and "intro_rejected" not in q.ids
+    q.status = "uploaded"; pieces.save(q, tmp_path)
+    assert "nothing sent" in intro.resend(p.id, tmp_path, sent.append, ask=lambda prompt: "") and len(sent) == 1

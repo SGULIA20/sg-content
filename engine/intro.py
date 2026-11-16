@@ -226,48 +226,81 @@ def plan(piece, ask=_ask_claude) -> dict:
     aspect = "9:16" if piece.kind == "short" else "16:9"
     out = {"question": question, "bridge": b, "closing": closing, "text": text, "words": len(text.split()), "aspect": aspect}
     out["options"] = options(piece, out, ask)
+    if out["options"][0]["text"] != out["text"]:                      # the hooks written to the founder's brief replace the planned line
+        out.update({k: out["options"][0][k] for k in ("text", "question", "closing", "words")})
+        out["bridge"] = ""
     out["prompt"] = prompt_for(piece, out)
     return out
 
 
-OPTIONS = 3                                 # founder, 17 Nov 2026: "give me always 2-3 options for founder script"
+HOOK_WORDS = (20, 23)                       # founder, 17 Nov 2026 ("yes, use this prompt"): every hook is 20-23 words, about 10 seconds
+HOOKS = 5
+
+# The founder's own brief for the opening hook (17 Nov 2026), kept in his words; only the language line and the reply format are added.
+HOOK_BRIEF = """Act as an expert YouTube Shorts scriptwriter specialising in {field}.
+
+Based on the video summary I provide, write {n} alternative opening hooks in {tongue}.
+
+Strict requirements:
+
+1. Each hook must contain exactly {lo}-{hi} words.
+2. Start with an irresistible curiosity gap, shocking question, mystery or dramatic contrast.
+3. Build suspense, emotion and intrigue immediately.
+4. Use powerful, cinematic and natural spoken language.
+5. Make viewers feel they MUST watch till the end.
+6. Avoid generic phrases like "Poora sach yahan", "Aap hairaan reh jayenge", "Video dekhiye", "the full truth is here", "you will be shocked", "watch this video".
+7. Do not reveal the complete answer or climax.
+8. Keep every hook unique, memorable and suitable for a 10-second YouTube Short opening.
+9. Prioritise curiosity, retention and emotional impact over complicated vocabulary.
+10. Use only names, places and numbers that are in the summary; add no new fact.
+
+After writing all {n}, identify the strongest hook and make sure its word count is {lo}-{hi} words.
+
+Reply with JSON only: {{"hooks": ["...", "..."], "strongest": <index from 0>, "why": "one short sentence"}}
+
+VIDEO SUMMARY:
+{summary}"""
+
+
+def _summary(piece) -> str:
+    script = piece.script or {}
+    body = " ".join(sc.get("vo", "") for sc in script.get("scenes", []))
+    return f"Title: {script.get('title', '')}\n{body[:2200]}"
 
 
 def options(piece, first: dict, ask=_ask_claude) -> list:
-    """[{"text", "question", "closing", "words"}]: the planned line first, then other ways to ask the same question, each with its own
-    closing. He says whichever he likes; check() accepts any of them and the captions follow the one he said. When the writer gives
-    nothing, the same question goes out with different closings, so there is always a choice."""
+    """[{"text", "question", "closing", "words"}], the strongest first: the opening hooks written to the founder's brief, each a whole
+    line of 20-23 words with no fixed closing. He says whichever he likes; check() accepts any of them and the captions follow the one
+    he said. When the writer gives fewer than two usable hooks, the planned line (the script's hook and a closing) is the only option."""
     import json as _json
     from . import lang
     en = lang.english(piece)
-    pool = [c for c in (lang.CLOSINGS_EN if en else CLOSINGS) if c != first["closing"] and len(c.split()) <= 7]
-    start = sum(ord(ch) for ch in piece.id) % max(1, len(pool))
-    closings = [pool[(start + k) % len(pool)] for k in range(OPTIONS - 1)] if pool else [first["closing"]] * (OPTIONS - 1)
-    tongue = "plain Indian English, no Hindi words" if en else "Hinglish in Latin script"
-    prompt = (f"A video opens with the presenter asking: \"{first['question']}\"\nWrite {OPTIONS - 1} other ways to ask the SAME question, "
-              f"each more exciting than the last, the way an energetic TV presenter would grab a viewer in two seconds: a dare, a "
-              f"shock, or a 'did you know'. At most 12 words each. Keep every name and number exactly as given; add no new fact. "
-              f"Language: {tongue}. Reply with a JSON array of strings only.")
-    alts = []
+    lo, hi = HOOK_WORDS
+    brief = HOOK_BRIEF.format(
+        field="money, personal finance and business stories for Indian households" if piece.channel == "sglearning"
+        else "mythology, Indian history, mysteries and untold stories",
+        tongue="plain Indian English (no Hindi words)" if en else "natural spoken Hinglish in Latin script",
+        n=HOOKS, lo=lo, hi=hi, summary=_summary(piece))
+    hooks, best = [], 0
     try:
         if ask is _ask_claude:                                        # the bridge call's small allowance returns nothing for a list
             from . import teaser
-            raw = teaser.intro_ask()(prompt)
+            raw = teaser.intro_ask()(brief)
         else:
-            raw = ask(prompt)
-        alts = [spoken(str(x).strip(), en) for x in _json.loads(re.search(r"\[.*\]", raw, re.S).group(0)) if str(x).strip()]
+            raw = ask(brief)
+        data = _json.loads(re.search(r"\{.*\}", raw, re.S).group(0))
+        hooks = [spoken(str(x).strip(), en) for x in data.get("hooks", []) if str(x).strip()]
+        best = int(data.get("strongest") or 0)
     except Exception as e:
-        print(f"intro options: no other lines from the writer ({type(e).__name__}: {secrets.scrub(str(e))[:100]}); closings vary instead", flush=True)
-    alts = [a for a in alts if a.lower() != first["question"].lower() and len(a.split()) <= 14][:OPTIONS - 1]
-    out = [{"text": first["text"], "question": first["question"], "closing": first["closing"], "words": first["words"]}]
-    for k in range(OPTIONS - 1):
-        q = alts[k] if k < len(alts) else first["question"]
-        text = f"{q} {closings[k]}"
-        if len(text.split()) > MAX_WORDS or any(o["text"] == text for o in out):
-            continue
-        out.append({"text": text, "question": q, "closing": closings[k], "words": len(text.split())})
+        print(f"intro hooks: none from the writer ({type(e).__name__}: {secrets.scrub(str(e))[:100]}); the planned line is used", flush=True)
+    strongest = hooks[best] if 0 <= best < len(hooks) else None
+    good = [h for h in hooks if lo <= len(h.split()) <= hi]
+    if strongest in good:
+        good.remove(strongest); good.insert(0, strongest)
+    out = [{"text": h, "question": h, "closing": "", "words": len(h.split())} for h in dict.fromkeys(good)][:HOOKS]
+    if len(out) < 2:
+        return [{"text": first["text"], "question": first["question"], "closing": first["closing"], "words": first["words"]}]
     return out
-
 
 def prop_for(piece) -> str:
     if piece.channel == "arthvan":
@@ -450,14 +483,16 @@ def story_prompt(piece, p: dict) -> str:
     era = f" {ERA}." if piece.channel == "arthvan" else ""
     return (f"{size}, about 8 seconds, photorealistic and cinematic, bright vivid colour. "
             f"Setting: {setting}. {MOTION}.{era} "
-            "Framing: medium shot from the waist up, his whole head and both shoulders inside the frame with clear space above his hair and on "
-            "both sides, and he stays framed like this to the end; do not crop the top of his head. "
+            "Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four "
+            "steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up "
+            "for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and "
+            "on both sides; do not crop the top of his head. "
             "Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. "
-            f"SG [locked] standing tall and lively, shoulders open, leaning slightly toward the camera, wearing {outfit_for(piece)}. Speaks from the first frame, mouth matched "
+            f"SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing {outfit_for(piece)}. Speaks from the first frame, mouth matched "
             f"to the words, steady eye contact with the lens. {face}. "
             "Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm "
             "toward the viewer on the last line; never limp, never hanging still by his sides. "
-            "Camera: eye level, a very slight slow push-in, slight handheld feel. "
+            "Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. "
             f"Empty hands, no prop. {handle} watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. "
             "No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. "
             f"Export at {('1080x1920' if short else '1920x1080')}.")
@@ -504,7 +539,8 @@ def request_text(piece, p: dict) -> str:
     kind = "Short" if piece.kind == "short" else "long video"
     opts = p.get("options") or [p]
     if len(opts) > 1:                                                 # founder, 17 Nov 2026: 2-3 lines to choose from
-        say = "Say ONE of these, whichever you like (~10 s):\n" + "\n".join(f"{k}. \"{o['text']}\"" for k, o in enumerate(opts, 1))
+        say = ("Say ONE of these, whichever you like (each 20-23 words, ~10 s; ⭐ = the writer's pick):\n"
+               + "\n".join(f"{k}. {'⭐ ' if k == 1 else ''}\"{o['text']}\"" for k, o in enumerate(opts, 1)))
     else:
         say = f"Say exactly ({p['words']} words, ~10 s):\n\"{p['text']}\""
     text = (f"🎬 Intro for {piece.id} ({kind}: {title})\n\n{say}\n\nPrompt:\n{p['prompt']}\n\n"
@@ -582,6 +618,8 @@ def check(clip: Path, p: dict, transcribe=None, seconds: float | None = None) ->
     sim = recall(p["text"], heard)                                     # the script's words heard; extra words of his are fine
     if sim < inbox.SIMILARITY_MIN:
         reasons.append(f"missing words (only {sim:.0%} of the script heard): \"{heard[:120]}\"")
+    if "closing" in p and not p["closing"]:                            # a hook written to the founder's brief has no fixed closing
+        return reasons
     closing = p.get("closing") or CLOSING
     if heard_share(closing, heard) < 0.5 and "samajh" not in heard.lower() and "samjh" not in heard.lower():
         reasons.append(f"the closing line \"{closing}\" was not heard")
@@ -832,6 +870,22 @@ def request(piece, root: Path, notify, ask=_ask_claude, now: datetime | None = N
         notify(request_text(piece, piece.topic["intro"]))
         piece.ids["intro_sent"] = (now or datetime.now(timezone.utc)).isoformat(timespec="seconds")
     return piece.topic["intro"]
+
+
+def resend(piece_id: str, root: Path, notify, ask=_ask_claude, now: datetime | None = None) -> str:
+    """Plans the intro of a waiting piece afresh and sends the request again (founder, 17 Nov 2026: "send revised prompt ... on
+    telegram now", after the hook brief and the walking-reporter delivery). A piece whose clip is already merged is left alone."""
+    piece = pieces.load(piece_id, root)
+    if piece is None or piece.status != "intro-wait":
+        return "not waiting for an intro; nothing sent"
+    if piece.ids.get("intro"):
+        return "its clip is already merged; nothing sent"
+    piece.topic.pop("intro", None)
+    for k in ("intro_sent", "intro_rejected", "intro_rejected_why", "intro_checked", "intro_unheard"):
+        piece.ids.pop(k, None)
+    p = request(piece, root, notify, ask, now)
+    pieces.save(piece, root)
+    return f"sent again with {len(p.get('options') or [])} line(s) to choose from"
 
 
 def before_upload(piece, root: Path, out_dir: Path, notify=None, now: datetime | None = None, transcribe=None, compose_fn=None, ask=_ask_claude) -> str:
@@ -1283,6 +1337,11 @@ def main(argv=None) -> int:
         print(request_text(piece, p)); return 0
     if a.needed:
         ok = needed(ROOT); print("sweep needed" if ok else "nothing to do"); return 0 if ok else 3
+    if a.redo and a.redo.startswith("resend:"):                         # studio.yml redo=resend:<id>[,<id>]: a fresh plan and request
+        from . import telegram
+        for pid in [x.strip() for x in a.redo[len("resend:"):].split(",") if x.strip()]:
+            print(f"{pid}: {resend(pid, ROOT, telegram.send)}")
+        return 0
     if a.sweep:
         from . import pipeline, telegram
         for pid, action in sweep(ROOT, pipeline.real_deps(ROOT), notify=telegram.send):
