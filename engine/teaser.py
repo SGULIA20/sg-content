@@ -133,12 +133,17 @@ def suspense_lines(piece, ask) -> list:
 
 
 def intro_ask():
-    """One short Sonnet request for the trailer lines (the intro's own call stops at 120 tokens, too few for four lines)."""
+    """One short Sonnet request for the trailer lines."""
     def ask(prompt: str) -> str:
         import anthropic
         from . import intro, writer
         client = anthropic.Anthropic(api_key=secrets.get("ANTHROPIC_API_KEY"))
-        r = client.messages.create(model=intro.SONNET, max_tokens=400, messages=[{"role": "user", "content": prompt}])
+        # 16 Nov 2026: this model thinks before it answers, and with 400 tokens the thinking used them all (an empty reply, no lines).
+        # Room for both, and low effort: four short lines need no long reasoning.
+        r = client.messages.create(model=intro.SONNET, max_tokens=4000, output_config={"effort": "low"},
+                                   messages=[{"role": "user", "content": prompt}])
+        if r.stop_reason != "end_turn":
+            print(f"trailer lines: the writer stopped with {r.stop_reason}", flush=True)
         try:
             writer.record_spend(r.usage, writer.SPEND_FILE, None, factor=writer.SONNET_VS_OPUS)
         except Exception:
