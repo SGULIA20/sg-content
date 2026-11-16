@@ -120,8 +120,15 @@
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
+  "intro": {
+   "clip": "2026-11-23-arthvan-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-16T21:27:23+00:00",
+   "seconds": 8.38
+  },
   "intro_checked": "f20d248f7b096762",
-  "intro_sent": "2026-11-16T18:51:04+00:00"
+  "intro_sent": "2026-11-16T18:51:04+00:00",
+  "yt_id": "_lxN2R78Yvg"
  },
  "kind": "short",
  "publish_day": "2026-11-23",
@@ -345,7 +352,7 @@
   },
   "title": "*Jatayu* ne Ravan ka rath toda? 🤯"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   3.394,
@@ -384,6 +391,7 @@
    "text": "Boodhe Jatayu ne Ravan ka rath sach mein toda tha? Ruko, asli khel baaki!",
    "words": 14
   },
+  "look": "indian-comic",
   "summary": "Aranya Kanda mein Jatayu aur Ravan ki ladai kya likhi hai. Check: sarga ka kram, rath, gadhe aur sarathi ka tootna, Jatayu ki umar ka daava (60,000 saal), aur lokkatha ke jode hue hisse alag.",
   "target_minutes": null,
   "title": "Jatayu ne Ravan ka rath sach mein toda?",
@@ -397,6 +405,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-16T18:51:06+00:00",
+ "updated": "2026-11-16T21:27:29+00:00",
  "writer": "claude"
 }
