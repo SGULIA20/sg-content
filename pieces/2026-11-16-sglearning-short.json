@@ -95,6 +95,9 @@
    "voice": 20
   },
   "drafts": 2,
+  "ig_reel_id": "17977480941172655",
+  "ig_story_id": "18106513424552493",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-16-sglearning-short.mp4",
    "clip_seconds": 1,
@@ -105,8 +108,11 @@
   "intro_sent": "2026-11-10T14:45:11+00:00",
   "out_sha": "e9da9ccbc3b60602dfc02a02ca681bdcb58e83a8",
   "out_sha_intro": true,
+  "threads_id": "18008222171793023",
+  "threads_poll_id": "18254889292309094",
   "yt_id": "R0fM_bVDZXU",
-  "yt_id_replaced": "kTuvPgj7aY4"
+  "yt_id_replaced": "kTuvPgj7aY4",
+  "yt_long_link": "Ugykbci-uwPlonY2i4F4AaABAg"
  },
  "kind": "short",
  "publish_day": "2026-11-16",
@@ -283,7 +289,7 @@
   },
   "title": "Sab khareed rahe the, phir *crash* kyun? 📉"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   4.37,
@@ -331,6 +337,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-10T21:35:45+00:00",
+ "updated": "2026-11-16T16:22:11+00:00",
  "writer": "claude"
 }
