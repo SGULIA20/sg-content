@@ -126,14 +126,14 @@
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
-  "intro_rejected": "aeade8b801a5f628",
-  "intro_rejected_why": "the closing line \"Ruko mat, ye dekhna zaroori hai!\" was not heard",
-  "intro_sent": "2026-11-15T19:45:44+00:00"
+  "intro_sent": "2026-11-15T19:45:44+00:00",
+  "intro_checked": "aeade8b801a5f628"
  },
  "kind": "short",
  "publish_day": "2026-11-22",
  "reasons": [
-  "waiting for the founder's intro clip until 22 Nov 11:30 UTC"
+  "waiting for the founder's intro clip until 22 Nov 11:30 UTC",
+  "16 Nov 2026: the founder confirmed the clip says the closing line ('accept clip'); the automatic check had not heard it"
  ],
  "script": {
   "captions": {
