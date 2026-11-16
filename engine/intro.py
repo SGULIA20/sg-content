@@ -75,13 +75,17 @@ def sayable(n: int) -> str:
     return "lagbhag " + spell_number(int(n / step + 0.5) * step)
 
 
-def spoken(text: str) -> str:
-    """Numbers written with commas (25,000 or 99,99,999) become words, so the avatar says them right; plain digits stay."""
-    return re.sub(r"\b\d{1,3}(?:,\d{2,3})+\b", lambda m: sayable(int(m.group(0).replace(",", ""))), text)
+def spoken(text: str, english: bool = False) -> str:
+    """Numbers written with commas (25,000 or 99,99,999) become words, so the avatar says them right; plain digits stay. An English
+    line (engine/lang.py) gets "about 96 lakh", not Hinglish number words."""
+    from . import lang
+    say = (lambda n: lang.say_number(n)) if english else sayable
+    return re.sub(r"\b\d{1,3}(?:,\d{2,3})+\b", lambda m: say(int(m.group(0).replace(",", ""))), text)
 
 
 def closing_for(piece) -> str:
-    return _pick(piece, CLOSINGS, 5)
+    from . import lang
+    return _pick(piece, lang.CLOSINGS_EN if lang.english(piece) else CLOSINGS, 5)
 MAX_WORDS = 20                              # about 8 seconds (founder, 9 Nov 2026: shorter, the first real picture and fact sooner); the bridge line is dropped when over
 BRIDGE_MAX_WORDS = 13
 MIN_S, MAX_S = 6.0, 12.0                    # the clip the founder sends back
@@ -136,11 +140,19 @@ def bridge(piece, ask=_ask_claude) -> str:
     """One Hinglish line (at most 13 words) that states the tension behind the question, in everyday words; empty when it cannot be had."""
     script = piece.script or {}
     body = " ".join(sc.get("vo", "") for sc in script.get("scenes", [])[:5])
-    prompt = (f"A Hindi/Hinglish money-or-history explainer for ordinary Indians opens with this question: \"{script.get('hook', '')}\"\n"
-              f"The script that follows: {body[:900]}\n\nWrite ONE bridge line in Hinglish (Latin script) of at most {BRIDGE_MAX_WORDS} words that "
-              f"states the stake or the surprise behind the question the way an excited TV news reporter would say it: punchy, urgent, in words a "
-              f"15-year-old knows, no numbers that are not in the script, no English finance terms, no 'aaj hum baat karenge'. It must flow "
-              f"naturally before the closing line \"{closing_for(piece)}\". Output only the line.")
+    from . import lang
+    if lang.english(piece):
+        prompt = (f"An English money explainer for ordinary Indians opens with this question: \"{script.get('hook', '')}\"\n"
+                  f"The script that follows: {body[:900]}\n\nWrite ONE bridge line in plain Indian English of at most {BRIDGE_MAX_WORDS} words "
+                  f"that states the stake or the surprise behind the question the way an excited TV news reporter would say it: punchy, "
+                  f"urgent, in words a 15-year-old knows, no numbers that are not in the script, no Hindi words. It must flow naturally "
+                  f"before the closing line \"{closing_for(piece)}\". Output only the line.")
+    else:
+      prompt = (f"A Hindi/Hinglish money-or-history explainer for ordinary Indians opens with this question: \"{script.get('hook', '')}\"\n"
+                f"The script that follows: {body[:900]}\n\nWrite ONE bridge line in Hinglish (Latin script) of at most {BRIDGE_MAX_WORDS} words that "
+                f"states the stake or the surprise behind the question the way an excited TV news reporter would say it: punchy, urgent, in words a "
+                f"15-year-old knows, no numbers that are not in the script, no English finance terms, no 'aaj hum baat karenge'. It must flow "
+                f"naturally before the closing line \"{closing_for(piece)}\". Output only the line.")
     try:
         line = ask(prompt).strip().strip('"').strip("'").split("\n")[0].strip()
     except Exception as e:
@@ -200,12 +212,14 @@ def setting_for(piece, p: dict | None = None) -> str:
 def plan(piece, ask=_ask_claude) -> dict:
     """{"question", "bridge", "closing", "text", "words", "aspect", "prompt"}; the question is the piece's own hook, so the body never contradicts it."""
     script = piece.script or {}
-    question = spoken((script.get("hook") or (script.get("scenes") or [{}])[0].get("vo", "")).strip())
-    b = spoken(bridge(piece, ask))
+    from . import lang
+    en = lang.english(piece)
+    question = spoken((script.get("hook") or (script.get("scenes") or [{}])[0].get("vo", "")).strip(), en)
+    b = spoken(bridge(piece, ask), en)
     closing = closing_for(piece)
     text = " ".join(x for x in (question, b, closing) if x)
     if len(text.split()) > MAX_WORDS:                                 # over 10 seconds: a shorter closing first, the bridge goes last
-        closing = _pick(piece, [c for c in CLOSINGS if len(c.split()) <= 4], 5)
+        closing = "Here is the full truth!" if en else _pick(piece, [c for c in CLOSINGS if len(c.split()) <= 4], 5)
         text = " ".join(x for x in (question, b, closing) if x)
     if len(text.split()) > MAX_WORDS:
         b, text = "", " ".join((question, closing))
@@ -424,6 +438,7 @@ def _wat(dt: datetime) -> str:
 def thumb_prompt(piece) -> str:
     """The long video's thumbnail prompt for the founder (5 Nov 2026: never the founder on the poster): the subject, the place or
     object the script is about, and two short text lines from the title, 1280x720."""
+    from . import lang
     script = piece.script or {}
     title = re.sub(r"[*_]", "", script.get("title", "")).split("\n")[0].strip()
     title = re.sub(r"[\U0001F300-\U0001FAFF\u2600-\u27BF]", "", title).strip(" :?!")
@@ -434,7 +449,7 @@ def thumb_prompt(piece) -> str:
                   "dramatic side light")
     return (f"🖼 Thumbnail for {piece.id} (16:9, 1280x720, no presenter)\nVideo summary: {summary[:300]}\n\nPrompt:\n"
             f"1280x720 YouTube thumbnail, photoreal, no people. Main image: {scene}. One small inset that shows the proof or the twist. "
-            f"Bold Hindi-English text on the left in large white letters with a black outline, two short lines taken from: \"{title}\", "
+            f"Bold {'English' if lang.english(piece) else 'Hindi-English'} text on the left in large white letters with a black outline, two short lines taken from: \"{title}\", "
             f"the key word in red or yellow. High contrast, clean composition. No other text, no watermark.\n\n"
             f"Send it as a PHOTO with the caption:\nthumb {piece.id}")
 
@@ -668,7 +683,7 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
     title_png = out_dir / "title.png"
     if not title_png.exists():
         title = (piece.script or {}).get("title") or (piece.script or {}).get("hook", "")
-        cards.render("storytitle", {"title_html": storyframe.title_html(title), **storyframe.brand(piece.channel),
+        cards.render("storytitle", {"title_html": storyframe.title_html(title), **storyframe.brand(piece.channel, piece),
                                     "pad": storyframe.TITLE_PAD_SHORT if short else 60, "strip": "none" if short else "flex"}, title_png, (w, band_h))
     shade = None
     if short:

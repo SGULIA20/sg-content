@@ -32,3 +32,12 @@ def _batch_ledgers_in_tmp(monkeypatch, tmp_path_factory):
     monkeypatch.setattr(voicebatch, "LEDGER", d / "voice-batch.jsonl")
     monkeypatch.setattr(artbatch, "LEDGER", d / "art-batch.jsonl")
     monkeypatch.setattr(writebatch, "LEDGER", d / "write-batch.jsonl")
+
+
+@pytest.fixture(autouse=True)
+def _hinglish_unless_the_test_is_about_language(monkeypatch, request):
+    """The older tests use dates after 23 Nov 2026 and were written for Hinglish; only tests/test_lang.py reads the live language file."""
+    if request.module.__name__.endswith("test_lang"):
+        return
+    from engine import lang
+    monkeypatch.setattr(lang, "_config", lambda root=None: {})

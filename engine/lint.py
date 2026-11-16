@@ -17,12 +17,13 @@ AVATAR_MAX_SHARE = 0.25
 SIMILARITY_MAX = 0.6
 TITLE_MAX, IG_CAPTION_MAX, THREADS_MAX = 60, 2200, 500
 IG_TAGS = (5, 8)
-SHARE = re.compile(r"\b(share|bhejo|bhej do|tag karo|forward)\b", re.I)
+SHARE = re.compile(r"\b(share|send|bhejo|bhej do|tag karo|forward)\b", re.I)
 BIG_NUMBER_MAX = 12
 PHONE = re.compile(r"(\+?\d[\d\s\-]{8,}\d)")
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+\.[\w.]+")
 
 
+HOOK_WORDS_MAX_EN = 16           # English needs more small words for the same question (founder's English sample, 16 Nov 2026)
 HOOK_WORDS_MAX = 12              # the first spoken line decides whether people stay (founder, 25 Oct 2026); Hinglish needs ke/ka/hai
 SLOW_OPENING = re.compile(r"^\W*(subah|raat|shaam|dopahar|aaj|kal|ek din|ek baar|budhvaar|somvaar|mangalvaar|guruvaar|shukravaar|shanivaar|"
                           r"ravivaar|january|february|march|april|may|june|july|august|september|october|november|december|"
@@ -38,8 +39,10 @@ def check_hook(piece: Piece) -> list:
     if not hook:
         return ["hook: missing"]
     words = len(re.findall(r"\d[\d,.]*|[^\W\d_]+", hook))           # "5,000" is one word
-    if words > HOOK_WORDS_MAX:
-        out.append(f"hook: {words} words, at most {HOOK_WORDS_MAX}")
+    from . import lang
+    most = HOOK_WORDS_MAX_EN if lang.english(piece) else HOOK_WORDS_MAX
+    if words > most:
+        out.append(f"hook: {words} words, at most {most}")
     if SLOW_OPENING.search(hook):
         out.append("hook: opens by setting a scene (a time, a day or a character); open on the claim or the question")
     if not ("?" in hook or re.search(r"\d", hook) or re.search(r"\s[A-Z]", hook)):
@@ -55,6 +58,7 @@ PHONE_WORDS = re.compile(r"\b(phone|screen|mobile|notification)\b", re.I)
 
 
 SEND = re.compile(r"\b(bhejo|bhej do|bhejiye)\b", re.I)
+SEND_EN = re.compile(r"\bsend (this|it)\b", re.I)            # English pieces (engine/lang.py): "Send this to your father, who ..."
 SEND_WORDS_MAX = 14
 
 
@@ -67,11 +71,14 @@ def check_send(piece: Piece) -> list:
     scenes = s.get("scenes") or []
     last = str((scenes[-1] if scenes else {}).get("vo") or "")
     out = []
-    if not SEND.search(line):
-        out.append("send: the Short must end with who to send it to ('... ko bhejo, jo ...')")
+    from . import lang
+    send = SEND_EN if lang.english(piece) else SEND
+    if not send.search(line):
+        out.append("send: the Short must end with who to send it to ('Send this to your ..., who ...')" if lang.english(piece)
+                   else "send: the Short must end with who to send it to ('... ko bhejo, jo ...')")
     elif len(re.findall(r"\w+", line)) > SEND_WORDS_MAX:
         out.append(f"send: the send line is longer than {SEND_WORDS_MAX} words")
-    elif not SEND.search(last):
+    elif not send.search(last):
         out.append("send: the last spoken scene must say the send line")
     return out
 
@@ -228,7 +235,8 @@ def check_script(piece: Piece, banned: dict, prior_scripts: list) -> list:
         for i, sc in enumerate(scenes):
             if sc.get("label") not in MYTH_LABELS and sc.get("facts_used"):      # a scene that states a fact must say what kind of evidence it is
                 reasons.append(f"label: scene {i} has no evidence label")
-    if piece.channel == "sglearning" and piece.kind == "short" and DISCLAIMER.lower() not in text.lower():
+    from . import lang
+    if piece.channel == "sglearning" and piece.kind == "short" and lang.disclaimer(piece).lower() not in text.lower():
         reasons.append("disclaimer: finance script must speak the disclaimer line")
     words = len(re.findall(r"[\wऀ-ॿ]+", " ".join(sc.get("vo", "") for sc in scenes)))
     if piece.kind == "short":
@@ -263,7 +271,8 @@ def check_captions(piece: Piece, hashtags: dict) -> list:
         reasons.append(f"title: {len(yt['title'])} chars, max {TITLE_MAX}")
     if len(ig.get("caption", "")) > IG_CAPTION_MAX:
         reasons.append("instagram: caption too long")
-    if piece.channel == "sglearning" and DISCLAIMER.lower() not in ig.get("caption", "").lower():
+    from . import lang
+    if piece.channel == "sglearning" and lang.disclaimer(piece).lower() not in ig.get("caption", "").lower():
         reasons.append("disclaimer: Instagram caption must carry the disclaimer")
     if not SHARE.search(ig.get("caption", "")):
         reasons.append("share: Instagram caption needs one share line (share karo / bhejo) naming who to send it to")

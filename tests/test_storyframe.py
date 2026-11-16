@@ -44,7 +44,8 @@ def test_story_build_frames_panels_with_title_and_captions(tmp_path):
 
 
 def test_brand_names_the_channel_on_every_piece():
-    assert storyframe.brand("sglearning") == {"channel": "Learning with SG", "tagline": "Paise ki khabar, seedhi baat", "handle": "@sanjeev_gulia"}
+    assert storyframe.brand("sglearning") == {"channel": "Learning with SG", "tagline": "Paise ki khabar, seedhi baat", "handle": "@sanjeev_gulia",
+                                              "cta_html": "<b>SUBSCRIBE</b> aur share karo"}
     assert storyframe.brand("arthvan")["channel"] == "SG-MYTH-WORLD"
 
 

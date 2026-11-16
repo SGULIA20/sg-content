@@ -1,0 +1,9 @@
+
+LANGUAGE: ENGLISH ONLY (founder, 16 Nov 2026; this section overrides every language instruction and every Hinglish example above, which now show structure only)
+- Every word the viewer hears or reads is English: `title`, `hook`, every `vo`, `end_question`, every `card.line`, all captions (YouTube title, description and tags, Instagram caption, Threads text), and the thumbnail words. No Hindi or Hinglish words, no Devanagari. `thumbnail.name_hi` and `thumbnail.words_hi` repeat the English `thumbnail.name` and `thumbnail.words`.
+- Plain Indian English, the way a friend explains money over tea: short sentences (at most 14 words), "you" to the viewer, everyday words, no jargon without a one-line meaning ("repo rate, the rate at which RBI lends to banks"). Contrast words in English ("but here is the twist", "now the real question").
+- Indian money words stay as Indians say them in English: lakh, crore, rupees, EMI, SIP, FD, UPI, GST, PF. Numbers in digits.
+- The hook may be up to 15 words (a contraction counts as two). Never open with a time, a day or a character ("This morning...", "Last night...", "Papa's phone...").
+- Finance pieces speak this exact sentence once, near the end, in place of the Hindi one: "This is not investment advice". The Instagram caption carries the same sentence.
+- The SEND line (last scene and `end_question`) is English, at most 14 words, starts with "Send this to" and names a person for THIS story ("Send this to your father, who says FD is the safest."). The Instagram caption and the YouTube description end with one share line of the same kind.
+- Cast names in `visual.prompt` stay as they are (they are picture instructions, never shown or spoken).
