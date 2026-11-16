@@ -29,13 +29,13 @@ from .config import CHANNELS, ROOT, VIDEO
 CLOSING = "Ruko, asli khel baaki!"
 CLOSINGS = ["Ruko, asli khel abhi baaki hai!",                      # founder, 7 Nov 2026: the intro must sound like a news reporter breaking a story
             "Suniye, twist yahan hai!",                              # (founder, 4 Nov: the same closing every time wears out, so rotate; the
-            "Poora sach abhi batata hoon!",                          # purpose stays: come with me, stay to the end)
-            "Ye baat koi nahi batata, suniye!",
-            "Chalo, ek ek karke khol deta hoon!",
-            "Ab suniye, ye chaunkane wali baat hai!",
+            "Jawab sunkar hosh ud jayenge!",                         # purpose stays: come with me, stay to the end)
+            "Ye baat koi nahi batata, suniye!",                      # founder, 17 Nov 2026: "this poora sach yahan is too boring": every
+            "Aage jo hua, yakeen nahi hoga!",                        # "poora sach ..." closing is gone; each one now promises a surprise
+            "Ye sunkar aap chaunk jayenge!",
             "Ruko mat, ye dekhna zaroori hai!",
-            "Dekhiye, poora sach yahan hai!",
-            "Poora sach yahan!",
+            "Chalo, parda uthate hain!",
+            "Asli raaz ab khulega!",
             CLOSING]
 
 
@@ -219,7 +219,7 @@ def plan(piece, ask=_ask_claude) -> dict:
     closing = closing_for(piece)
     text = " ".join(x for x in (question, b, closing) if x)
     if len(text.split()) > MAX_WORDS:                                 # over 10 seconds: a shorter closing first, the bridge goes last
-        closing = "Here is the full truth!" if en else _pick(piece, [c for c in CLOSINGS if len(c.split()) <= 4], 5)
+        closing = "The twist is coming!" if en else _pick(piece, [c for c in CLOSINGS if len(c.split()) <= 4], 5)
         text = " ".join(x for x in (question, b, closing) if x)
     if len(text.split()) > MAX_WORDS:
         b, text = "", " ".join((question, closing))

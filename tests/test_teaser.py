@@ -113,5 +113,5 @@ def test_suspense_lines_are_short_questions_or_nothing(tmp_path):
     assert teaser.suspense_lines(p, lambda prompt: "no json") == []
     long_line = " ".join(["word"] * 20)
     assert teaser.suspense_lines(p, lambda prompt: f'["{long_line}", "a?", "b?"]') == []
-    assert teaser.closing_line(p) == "Poora sach YouTube par. Link bio mein."
+    assert teaser.closing_line(p) == "Asli raaz YouTube par khulega. Link bio mein!"
     assert teaser.suspense_trailer(p, [], tmp_path, ask=lambda prompt: good) is None               # no pictures: nothing made
