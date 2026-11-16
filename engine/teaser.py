@@ -132,6 +132,12 @@ def suspense_lines(piece, ask) -> list:
     return lines
 
 
+def intro_ask():
+    """The Sonnet call the intro's bridge line uses (one short request)."""
+    from . import intro
+    return intro._ask_claude
+
+
 def closing_line(piece) -> str:
     from . import lang
     return "Full story on YouTube. Link in bio." if lang.english(piece) else "Poora sach YouTube par. Link bio mein."

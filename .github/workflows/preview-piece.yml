@@ -8,7 +8,7 @@ on:
         description: 'piece id, e.g. 2026-11-16-arthvan-short'
         required: true
       mode:
-        description: 'video (default) = build the preview video; script = only write a trial script and intro prompt and send them'
+        description: 'video (default) = build the preview video; script = only write a trial script and intro prompt and send them; trailer = a sample of a long video's suspense trailer Story'
         required: false
         default: 'video'
 
@@ -31,7 +31,7 @@ jobs:
       - if: ${{ inputs.mode != 'script' }}
         run: python -m playwright install --with-deps chromium
       - name: Picture movement and cut-out tools
-        if: ${{ inputs.mode != 'script' }}
+        if: ${{ inputs.mode != 'script' && inputs.mode != 'trailer' }}
         run: pip install -q torch --index-url https://download.pytorch.org/whl/cpu && pip install -q transformers opencv-python-headless rembg onnxruntime
       - name: Write a trial script (nothing saved)
         if: ${{ inputs.mode == 'script' }}
@@ -41,13 +41,21 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scripts/trial_script.py "${{ inputs.piece }}"
+      - name: A sample of the long video's suspense trailer Story (sent to Telegram, nothing posted)
+        if: ${{ inputs.mode == 'trailer' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/trailer_sample.py "${{ inputs.piece }}" out/trailer-sample
       - name: Build the preview
-        if: ${{ inputs.mode != 'script' }}
+        if: ${{ inputs.mode != 'script' && inputs.mode != 'trailer' }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/preview_piece.py "${{ inputs.piece }}" out/preview
       - name: Send it to the founder
-        if: ${{ inputs.mode != 'script' }}
+        if: ${{ inputs.mode != 'script' && inputs.mode != 'trailer' }}
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
