@@ -79,3 +79,27 @@ def test_a_long_on_any_weekday_gets_its_story(tmp_path):
     p.ids = {"yt_id": "v"}
     pieces.save(p, tmp_path)
     assert teaser.due(tmp_path, "sglearning", datetime(2026, 11, 9, 14, 0, tzinfo=timezone.utc)).id == p.id
+
+
+def test_the_music_version_is_made_again_when_it_went_missing_and_the_trailer_goes_first(tmp_path):
+    p = _long(tmp_path)
+    vids = []
+    def render(kind, data, out, size):
+        out.write_bytes(b"j" * 2000); return out
+    make = lambda jpg, out: vids.append(out.name) or out.write_bytes(b"mp4")
+    assert teaser.backfill(tmp_path, render, make) == [p.id]
+    (tmp_path / "out" / p.id / "teaser.mp4").unlink()                      # 16 Nov 2026: the prune step removed it after every run
+    assert teaser.backfill(tmp_path, render, make) == [p.id] and vids == ["teaser.mp4", "teaser.mp4"]
+    (tmp_path / "out" / p.id / "trailer.mp4").write_bytes(b"mp4")
+    posted = []
+    after = datetime(2026, 11, 4, 14, 0, tzinfo=timezone.utc)
+    assert teaser.run(tmp_path, "sglearning", after, {}, publish=lambda prm: posted.append(prm) or "s", url=lambda pc, repo, name="teaser.jpg": name) == []
+    assert posted == [{"media_type": "STORIES", "video_url": "trailer.mp4"}]
+
+
+def test_the_prune_step_keeps_the_story_videos():
+    import importlib.util
+    from pathlib import Path
+    spec = importlib.util.spec_from_file_location("prune_out", Path(__file__).resolve().parent.parent / "scripts" / "prune_out.py")
+    mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+    assert {"teaser.mp4", "trailer.mp4", "teaser.jpg"} <= mod.KEEP_IN_OUT
