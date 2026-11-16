@@ -105,6 +105,9 @@
    "voice": 8
   },
   "drafts": 1,
+  "ig_reel_id": "17966985162211022",
+  "ig_story_id": "18190861903417673",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-16-arthvan-short.mp4",
    "clip_seconds": 1,
@@ -115,6 +118,8 @@
   "intro_sent": "2026-11-09T19:01:33+00:00",
   "out_sha": "07f15e63b92c4268c7bdf8da8c228e303bb4e635",
   "out_sha_intro": true,
+  "threads_id": "18024522479726459",
+  "threads_poll_id": "17879134761635382",
   "yt_id": "wpgepLMeyXw",
   "yt_id_replaced": "urkSA409VkA"
  },
@@ -268,7 +273,7 @@
   },
   "title": "Hanuman ji ki *Ramayan* samundar mein? 😱"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   4.73,
@@ -316,6 +321,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-10T15:26:29+00:00",
+ "updated": "2026-11-16T16:11:54+00:00",
  "writer": "claude"
 }
