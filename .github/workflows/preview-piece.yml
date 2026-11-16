@@ -8,7 +8,7 @@ on:
         description: 'piece id, e.g. 2026-11-16-arthvan-short'
         required: true
       mode:
-        description: 'video (default) = build the preview video; script = only write a trial script and intro prompt and send them; trailer = a sample of a long video's suspense trailer Story'
+        description: 'video (default) = build the preview video; script = only write a trial script and intro prompt and send them; trailer = a sample of the suspense trailer Story of a long video'
         required: false
         default: 'video'
 

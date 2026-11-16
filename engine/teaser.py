@@ -133,9 +133,18 @@ def suspense_lines(piece, ask) -> list:
 
 
 def intro_ask():
-    """The Sonnet call the intro's bridge line uses (one short request)."""
-    from . import intro
-    return intro._ask_claude
+    """One short Sonnet request for the trailer lines (the intro's own call stops at 120 tokens, too few for four lines)."""
+    def ask(prompt: str) -> str:
+        import anthropic
+        from . import intro, writer
+        client = anthropic.Anthropic(api_key=secrets.get("ANTHROPIC_API_KEY"))
+        r = client.messages.create(model=intro.SONNET, max_tokens=400, messages=[{"role": "user", "content": prompt}])
+        try:
+            writer.record_spend(r.usage, writer.SPEND_FILE, None, factor=writer.SONNET_VS_OPUS)
+        except Exception:
+            pass
+        return "".join(getattr(b, "text", "") for b in r.content).strip()
+    return ask
 
 
 def closing_line(piece) -> str:
@@ -152,7 +161,7 @@ def suspense_trailer(piece, panels: list, out_dir: Path, ask=None, say=None, ren
     panels = [Path(p) for p in panels if Path(p).suffix.lower() in (".png", ".jpg", ".jpeg") and Path(p).exists()]
     if len(panels) < 3:
         return None
-    lines = suspense_lines(piece, ask or intro._ask_claude)
+    lines = suspense_lines(piece, ask or intro_ask())
     if not lines:
         return None
     lines.append(closing_line(piece))
