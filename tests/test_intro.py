@@ -548,8 +548,8 @@ def test_every_intro_prompt_sets_a_moving_background_a_calm_face_and_headroom_fo
         plan = intro.plan(p, ask=lambda _p: "")
         prompt = plan["prompt"]
         for must in (size, "Setting: ", "real and in motion behind him", "waist up", "do not crop the top of his head",
-                     "No exaggerated expressions", "very slight slow push-in", "Empty hands, no prop", "watermark in the top right corner", "never sad, gloomy", "No hologram, no floating screen",
-                     plan["closing"].rstrip(".")):
+                     "excited, high-energy presenter", "energetic, upbeat, punchy", "very slight slow push-in", "Empty hands, no prop",   # 17 Nov 2026: energetic, never flat
+                     "watermark in the top right corner", "Never sad, gloomy", "No hologram, no floating screen"):
             assert must in prompt, (ch, kind, must)
         for never in ("bubbling over", "eyebrows high", "big grin on the reveal", "no smile on this line"):
             assert never not in prompt, never
@@ -583,10 +583,10 @@ def test_the_face_follows_the_words_and_a_myth_scene_is_ancient_india():
     assert intro.tone_for("Kumbhalgarh ki deewar, China ke baad duniya mein sabse lambi? Poora sach yahan!") == "warm"
     grim = _piece("short", "arthvan"); grim.script["hook"] = "Surpanakha ke pati ko Ravan ne maara."
     prompt = intro.plan(grim, ask=lambda _p: "")["prompt"]
-    assert "calm, reassuring look with a hint of a smile" in prompt and "never sad, gloomy" in prompt and "never European knights" in prompt   # 11 Nov 2026: never a sad face
+    assert "alert, intense, wide-awake face" in prompt and "Never sad, gloomy" in prompt and "never European knights" in prompt   # never a sad face; 17 Nov 2026: energetic
     light = _piece("short", "sglearning"); light.script["hook"] = "Ek chai ke daam mein SIP shuru ho sakti hai?"
     prompt = intro.plan(light, ask=lambda _p: "")["prompt"]
-    assert "warm, confident smile" in prompt and "pleasant, warm smile" in prompt and "European knights" not in prompt
+    assert "big, bright, genuine smile" in prompt and "big confident smile" in prompt and "European knights" not in prompt
 
 
 def test_blazers_on_learning_and_traditional_clothes_on_myth_world_never_the_same_two_days_running():
@@ -610,3 +610,45 @@ def test_an_exact_big_number_is_rounded_for_the_founder_to_say():
     assert intro.sayable(48249) == "lagbhag " + intro.spell_number(48000)
     assert intro.sayable(12345678).startswith("lagbhag ek crore")
     assert "tiraanve" not in intro.spoken("50,00,000 ka home loan, aur bank ko wapas 95,93,875 rupaye?")
+
+
+def test_the_founder_gets_hooks_written_to_his_brief_and_any_of_them_is_accepted(tmp_path):
+    """Founder, 17 Nov 2026: "give me always 2-3 options", then his own hook brief ("yes, use this prompt"): 20-23 words, no fixed closing."""
+    import json as _json
+    p = _piece("short", "arthvan"); p.script["hook"] = "Boodhe Jatayu ne Ravan ka rath sach mein toda tha?"
+    hooks = ["Ravan ke paas sone ka rath tha, kavach tha, jawani thi. Jatayu ke paas sirf pankh aur chonch. Phir bhi rath kiska toota?",
+             "Sita ko le jaate Ravan ko aasman mein kisi ne roka tha. Na koi yoddha, na devta. Ek boodha pakshi. Phir kya hua?",
+             "Ravan ka sone ka rath beech aasman mein choor choor ho gaya tha. Todne wala koi yoddha nahi tha. Toh woh kaun tha?",
+             "Yeh bahut chhota hook hai?"]                                                          # too short: dropped
+    seen = []
+    def ask(prompt):
+        seen.append(prompt)
+        return _json.dumps({"hooks": hooks, "strongest": 1, "why": "contrast"}) if "opening hooks" in prompt else ""
+    plan = intro.plan(p, ask=ask)
+    brief = next(x for x in seen if "opening hooks" in x)
+    assert "exactly 20-23 words" in brief and "Poora sach yahan" in brief and "VIDEO SUMMARY" in brief and "Hinglish" in brief
+    opts = plan["options"]
+    assert [o["text"] for o in opts] == [hooks[1], hooks[0], hooks[2]]                              # the writer's pick first; 20-23 words only
+    assert plan["text"] == hooks[1] and plan["closing"] == "" and plan["words"] == 23
+    text = intro.request_text(p, plan)
+    assert "Say ONE of these" in text and "1. ⭐" in text and '3. "' in text
+    for must in ("walks toward the camera", "TV news reporter", "energetic and confident", "do not crop the top of his head"):
+        assert must in plan["prompt"], must
+    clip = tmp_path / "c.mp4"; clip.write_bytes(b"x")
+    assert intro.check(clip, plan, transcribe=lambda c: hooks[2], seconds=9.5) == []                # he said the third; no closing is needed
+    assert plan["text"] == hooks[2]                                                                 # the captions follow it
+    quiet = intro.plan(p, ask=lambda prompt: "")                                                    # no writer: the planned line alone
+    assert len(quiet["options"]) == 1 and quiet["closing"] and "Say exactly" in intro.request_text(p, quiet)
+
+
+def test_resend_plans_afresh_and_asks_again_only_while_waiting(tmp_path):
+    (tmp_path / "pieces").mkdir()
+    p = _piece("short", "arthvan"); p.status = "intro-wait"
+    p.topic["intro"] = {"text": "old line", "closing": "x"}; p.ids["intro_sent"] = "2026-11-16T00:00:00+00:00"; p.ids["intro_rejected"] = "abc"
+    pieces.save(p, tmp_path)
+    sent = []
+    assert intro.resend(p.id, tmp_path, sent.append, ask=lambda prompt: "").startswith("sent again")
+    q = pieces.load(p.id, tmp_path)
+    assert len(sent) == 1 and q.topic["intro"]["text"] != "old line" and q.ids.get("intro_sent") and "intro_rejected" not in q.ids
+    q.status = "uploaded"; pieces.save(q, tmp_path)
+    assert "nothing sent" in intro.resend(p.id, tmp_path, sent.append, ask=lambda prompt: "") and len(sent) == 1

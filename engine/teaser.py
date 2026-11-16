@@ -154,7 +154,7 @@ def intro_ask():
 
 def closing_line(piece) -> str:
     from . import lang
-    return "Full story on YouTube. Link in bio." if lang.english(piece) else "Poora sach YouTube par. Link bio mein."
+    return "Full story on YouTube. Link in bio." if lang.english(piece) else "Asli raaz YouTube par khulega. Link bio mein!"
 
 
 def suspense_trailer(piece, panels: list, out_dir: Path, ask=None, say=None, render=cards.render, limit: float = SUSPENSE_S):

@@ -13,7 +13,8 @@ TAGLINE_EN = {"sglearning": "Money news, straight talk"}
 CLOSINGS_EN = ["Stay with me, here is the twist!",
                "Wait, the real story starts now!",
                "Nobody tells you this part, listen!",
-               "Here is the full truth!",
+               "The twist is coming!",
+               "You won't believe what comes next!",
                "Let me open this up, step by step!",
                "Don't skip this, you need to see it!",
                "Watch closely, this will surprise you!"]
