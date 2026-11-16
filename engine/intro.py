@@ -395,8 +395,8 @@ STANDARD_PROMPT = True          # founder, 10 Nov 2026: "I want background like 
 # The 10 Nov wording ("calm, natural face ... no raised eyebrows ... measured, quiet intensity") made the avatar flat. The words below
 # name no phrase of the line, because he now picks one of several lines.
 FACE = ("Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. "
-        "Bright, wide-awake eyes, lively eyebrows that lift on the question, {base}. On the question he leans in toward the lens and his "
-        "voice rises with excitement. On the last line {close}. Natural blinking, lively head movement. Never sad, gloomy, worried, "
+        "Bright, wide-awake eyes, lively eyebrows that lift on the question, {base}. On the question his voice rises "
+        "with excitement as he strides closer. On the last line {close}. Natural blinking, lively head movement. Never sad, gloomy, worried, "
         "tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising "
         "on the question, with a quick beat before the last line")
 # founder's clips, 10 Nov 2026: the automatic prompt put "a warm, assured smile" on a line about 50,000 people losing their savings and on
