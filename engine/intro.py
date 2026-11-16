@@ -225,7 +225,47 @@ def plan(piece, ask=_ask_claude) -> dict:
         b, text = "", " ".join((question, closing))
     aspect = "9:16" if piece.kind == "short" else "16:9"
     out = {"question": question, "bridge": b, "closing": closing, "text": text, "words": len(text.split()), "aspect": aspect}
+    out["options"] = options(piece, out, ask)
     out["prompt"] = prompt_for(piece, out)
+    return out
+
+
+OPTIONS = 3                                 # founder, 17 Nov 2026: "give me always 2-3 options for founder script"
+
+
+def options(piece, first: dict, ask=_ask_claude) -> list:
+    """[{"text", "question", "closing", "words"}]: the planned line first, then other ways to ask the same question, each with its own
+    closing. He says whichever he likes; check() accepts any of them and the captions follow the one he said. When the writer gives
+    nothing, the same question goes out with different closings, so there is always a choice."""
+    import json as _json
+    from . import lang
+    en = lang.english(piece)
+    pool = [c for c in (lang.CLOSINGS_EN if en else CLOSINGS) if c != first["closing"] and len(c.split()) <= 7]
+    start = sum(ord(ch) for ch in piece.id) % max(1, len(pool))
+    closings = [pool[(start + k) % len(pool)] for k in range(OPTIONS - 1)] if pool else [first["closing"]] * (OPTIONS - 1)
+    tongue = "plain Indian English, no Hindi words" if en else "Hinglish in Latin script"
+    prompt = (f"A video opens with the presenter asking: \"{first['question']}\"\nWrite {OPTIONS - 1} other ways to ask the SAME question, "
+              f"each more exciting than the last, the way an energetic TV presenter would grab a viewer in two seconds: a dare, a "
+              f"shock, or a 'did you know'. At most 12 words each. Keep every name and number exactly as given; add no new fact. "
+              f"Language: {tongue}. Reply with a JSON array of strings only.")
+    alts = []
+    try:
+        if ask is _ask_claude:                                        # the bridge call's small allowance returns nothing for a list
+            from . import teaser
+            raw = teaser.intro_ask()(prompt)
+        else:
+            raw = ask(prompt)
+        alts = [spoken(str(x).strip(), en) for x in _json.loads(re.search(r"\[.*\]", raw, re.S).group(0)) if str(x).strip()]
+    except Exception as e:
+        print(f"intro options: no other lines from the writer ({type(e).__name__}: {secrets.scrub(str(e))[:100]}); closings vary instead", flush=True)
+    alts = [a for a in alts if a.lower() != first["question"].lower() and len(a.split()) <= 14][:OPTIONS - 1]
+    out = [{"text": first["text"], "question": first["question"], "closing": first["closing"], "words": first["words"]}]
+    for k in range(OPTIONS - 1):
+        q = alts[k] if k < len(alts) else first["question"]
+        text = f"{q} {closings[k]}"
+        if len(text.split()) > MAX_WORDS or any(o["text"] == text for o in out):
+            continue
+        out.append({"text": text, "question": q, "closing": closings[k], "words": len(text.split())})
     return out
 
 
@@ -318,18 +358,22 @@ def prompt_for(piece, p: dict) -> str:
 
 
 STANDARD_PROMPT = True          # founder, 10 Nov 2026: "I want background like this in the prompt always, a moving background", both channels
-FACE = ("Face and delivery: a confident, charismatic documentary presenter. Calm, natural face with {base}, relaxed eyebrows, eyes soft "
-        "and focused on the viewer. On \"{key}\" the eyes narrow a little with intrigue and the head tilts slightly, as if sharing a secret. On "
-        "\"{closing}\" {close}. Natural blinking, subtle head movement. No exaggerated expressions: no wide eyes, no "
-        "raised eyebrows, no open-mouth surprise, no big grin, no frown; never sad, gloomy, worried or tired. Voice: warm, clear, measured, with quiet intensity; a short pause before \"{key}\"")
+# founder, 17 Nov 2026 (on the Jatayu prompt): "founder should be excited, energetic while presenting, not like sad or something".
+# The 10 Nov wording ("calm, natural face ... no raised eyebrows ... measured, quiet intensity") made the avatar flat. The words below
+# name no phrase of the line, because he now picks one of several lines.
+FACE = ("Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. "
+        "Bright, wide-awake eyes, lively eyebrows that lift on the question, {base}. On the question he leans in toward the lens and his "
+        "voice rises with excitement. On the last line {close}. Natural blinking, lively head movement. Never sad, gloomy, worried, "
+        "tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising "
+        "on the question, with a quick beat before the last line")
 # founder's clips, 10 Nov 2026: the automatic prompt put "a warm, assured smile" on a line about 50,000 people losing their savings and on
 # a line about a killing. The tone follows the words now.
 GRAVE = re.compile(r"\b(maar\w*|mara|mare|maut|hatya|khoon|qatl|katl|yudh|jung|shraap|shrap|qaid|kaid|jail|doob\w*|dooba|loot\w*|fraud|scam|ghotala|"
                    r"dhokha|thagi|crash|barbaad|tabah|bankrupt|diwaliya|nuksaan|nuksan|gawa\w*|kho diya|jal\w*|bhasm|dead|death|kill\w*|died|lost)\b", re.I)
 # founder, 11 Nov 2026: "founder sad face still coming": he is never sad, gloomy or worried on camera. A grim line gets a calm, composed,
 # friendly face (no grin on it), every other line a warm smile.
-TONE = {"warm": ("a pleasant, warm smile", "a warm, confident smile and one small nod"),
-        "grave": ("a pleasant, composed, friendly face", "a calm, reassuring look with a hint of a smile and one small nod")}
+TONE = {"warm": ("a big, bright, genuine smile", "a big confident smile, a quick nod and a point at the viewer"),
+        "grave": ("an alert, intense, wide-awake face with a hint of a smile", "a firm, energetic nod with bright, eager eyes")}
 
 
 def tone_for(text: str) -> str:
@@ -402,16 +446,17 @@ def story_prompt(piece, p: dict) -> str:
     setting = _scene_setting(piece) or _moving(p.get("setting") or setting_for(piece, p))
     closing = (p.get("closing") or CLOSING).rstrip(".")
     base, close = TONE[tone_for(p.get("text") or p.get("question") or "")]
-    face = FACE.format(key=_key_phrase(p.get("question") or p.get("text") or ""), closing=closing, base=base, close=close)
+    face = FACE.format(base=base, close=close)
     era = f" {ERA}." if piece.channel == "arthvan" else ""
     return (f"{size}, about 8 seconds, photorealistic and cinematic, bright vivid colour. "
             f"Setting: {setting}. {MOTION}.{era} "
             "Framing: medium shot from the waist up, his whole head and both shoulders inside the frame with clear space above his hair and on "
             "both sides, and he stays framed like this to the end; do not crop the top of his head. "
             "Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. "
-            f"SG [locked] standing relaxed and upright, shoulders open, wearing {outfit_for(piece)}. Speaks from the first frame, mouth matched "
+            f"SG [locked] standing tall and lively, shoulders open, leaning slightly toward the camera, wearing {outfit_for(piece)}. Speaks from the first frame, mouth matched "
             f"to the words, steady eye contact with the lens. {face}. "
-            "Hands: one slow, small gesture toward the scene behind him on the first line, then hands rest; no fast or large arm movements. "
+            "Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm "
+            "toward the viewer on the last line; never limp, never hanging still by his sides. "
             "Camera: eye level, a very slight slow push-in, slight handheld feel. "
             f"Empty hands, no prop. {handle} watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. "
             "No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. "
@@ -457,7 +502,12 @@ def thumb_prompt(piece) -> str:
 def request_text(piece, p: dict) -> str:
     title = (piece.script or {}).get("title", "").replace("*", "")
     kind = "Short" if piece.kind == "short" else "long video"
-    text = (f"🎬 Intro for {piece.id} ({kind}: {title})\n\nSay exactly ({p['words']} words, ~10 s):\n\"{p['text']}\"\n\nPrompt:\n{p['prompt']}\n\n"
+    opts = p.get("options") or [p]
+    if len(opts) > 1:                                                 # founder, 17 Nov 2026: 2-3 lines to choose from
+        say = "Say ONE of these, whichever you like (~10 s):\n" + "\n".join(f"{k}. \"{o['text']}\"" for k, o in enumerate(opts, 1))
+    else:
+        say = f"Say exactly ({p['words']} words, ~10 s):\n\"{p['text']}\""
+    text = (f"🎬 Intro for {piece.id} ({kind}: {title})\n\n{say}\n\nPrompt:\n{p['prompt']}\n\n"
             f"Send the clip as a FILE (paperclip → File) with the caption:\nintro {piece.id}\n\nBy {_wat(deadline_utc(piece))}. Nothing goes "
             f"out without it: a late clip publishes as soon as it is merged.")
     if piece.kind == "long":
@@ -526,6 +576,9 @@ def check(clip: Path, p: dict, transcribe=None, seconds: float | None = None) ->
         heard = (transcribe or inbox.transcribe)(clip)
     except Exception as e:
         raise TranscriptionDown(f"transcription failed: {type(e).__name__}: {secrets.scrub(str(e))[:120]}") from e
+    best = max(p.get("options") or [p], key=lambda o: recall(o["text"], heard))      # the line he chose: the one heard best
+    if best.get("text") != p.get("text"):                              # the captions and the hook line follow what he said
+        p.update({k: best[k] for k in ("text", "question", "closing", "words") if k in best})
     sim = recall(p["text"], heard)                                     # the script's words heard; extra words of his are fine
     if sim < inbox.SIMILARITY_MIN:
         reasons.append(f"missing words (only {sim:.0%} of the script heard): \"{heard[:120]}\"")

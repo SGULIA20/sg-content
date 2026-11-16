@@ -548,8 +548,8 @@ def test_every_intro_prompt_sets_a_moving_background_a_calm_face_and_headroom_fo
         plan = intro.plan(p, ask=lambda _p: "")
         prompt = plan["prompt"]
         for must in (size, "Setting: ", "real and in motion behind him", "waist up", "do not crop the top of his head",
-                     "No exaggerated expressions", "very slight slow push-in", "Empty hands, no prop", "watermark in the top right corner", "never sad, gloomy", "No hologram, no floating screen",
-                     plan["closing"].rstrip(".")):
+                     "excited, high-energy presenter", "energetic, upbeat, punchy", "very slight slow push-in", "Empty hands, no prop",   # 17 Nov 2026: energetic, never flat
+                     "watermark in the top right corner", "Never sad, gloomy", "No hologram, no floating screen"):
             assert must in prompt, (ch, kind, must)
         for never in ("bubbling over", "eyebrows high", "big grin on the reveal", "no smile on this line"):
             assert never not in prompt, never
@@ -583,10 +583,10 @@ def test_the_face_follows_the_words_and_a_myth_scene_is_ancient_india():
     assert intro.tone_for("Kumbhalgarh ki deewar, China ke baad duniya mein sabse lambi? Poora sach yahan!") == "warm"
     grim = _piece("short", "arthvan"); grim.script["hook"] = "Surpanakha ke pati ko Ravan ne maara."
     prompt = intro.plan(grim, ask=lambda _p: "")["prompt"]
-    assert "calm, reassuring look with a hint of a smile" in prompt and "never sad, gloomy" in prompt and "never European knights" in prompt   # 11 Nov 2026: never a sad face
+    assert "alert, intense, wide-awake face" in prompt and "Never sad, gloomy" in prompt and "never European knights" in prompt   # never a sad face; 17 Nov 2026: energetic
     light = _piece("short", "sglearning"); light.script["hook"] = "Ek chai ke daam mein SIP shuru ho sakti hai?"
     prompt = intro.plan(light, ask=lambda _p: "")["prompt"]
-    assert "warm, confident smile" in prompt and "pleasant, warm smile" in prompt and "European knights" not in prompt
+    assert "big, bright, genuine smile" in prompt and "big confident smile" in prompt and "European knights" not in prompt
 
 
 def test_blazers_on_learning_and_traditional_clothes_on_myth_world_never_the_same_two_days_running():
@@ -610,3 +610,20 @@ def test_an_exact_big_number_is_rounded_for_the_founder_to_say():
     assert intro.sayable(48249) == "lagbhag " + intro.spell_number(48000)
     assert intro.sayable(12345678).startswith("lagbhag ek crore")
     assert "tiraanve" not in intro.spoken("50,00,000 ka home loan, aur bank ko wapas 95,93,875 rupaye?")
+
+
+def test_the_founder_gets_three_lines_to_choose_from_and_any_of_them_is_accepted(tmp_path):
+    """Founder, 17 Nov 2026: "give me always 2-3 options for founder script"."""
+    p = _piece("short", "arthvan"); p.script["hook"] = "Boodhe Jatayu ne Ravan ka rath sach mein toda tha?"
+    ask = lambda prompt: '["Ek boodha giddh, aur Ravan ka rath tukde tukde?", "Jatayu ne akele Ravan ko kaise roka?"]' if "other ways" in prompt else ""
+    plan = intro.plan(p, ask=ask)
+    opts = plan["options"]
+    assert len(opts) == 3 and opts[0]["text"] == plan["text"] and len({o["text"] for o in opts}) == 3
+    assert opts[1]["question"].startswith("Ek boodha giddh") and opts[1]["closing"] != opts[0]["closing"]
+    text = intro.request_text(p, plan)
+    assert "Say ONE of these" in text and all(f'{k}. "' in text for k in (1, 2, 3))
+    clip = tmp_path / "c.mp4"; clip.write_bytes(b"x")
+    assert intro.check(clip, plan, transcribe=lambda c: opts[2]["text"], seconds=9.0) == []        # he said the third line
+    assert plan["text"] == opts[2]["text"] and plan["closing"] == opts[2]["closing"]              # the captions follow it
+    quiet = intro.plan(p, ask=lambda prompt: "")                                                  # no writer: the closings vary
+    assert len(quiet["options"]) == 3 and len({o["closing"] for o in quiet["options"]}) == 3
