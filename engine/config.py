@@ -31,7 +31,7 @@ CHANNELS = {
     "sglearning": Channel(
         key="sglearning", youtube_env_token="YT_SGLEARNING_REFRESH_TOKEN", display_name="Learning with SG",
         niche="Paise ki khabar, seedhi baat", short_days=frozenset({MON, TUE, WED, THU, FRI, SAT, SUN}), long_days=frozenset({WED, SAT}),   # founder's table, 21 Oct 2026
-        short_publish_ist="20:00", long_publish_ist="19:00", ig_slot_ist="18:30", hashtags_key="sglearning",   # 18:30 India from 30 Oct 2026: room for the same-day news Short
+        short_publish_ist="20:00", long_publish_ist="19:00", ig_slot_ist="21:40", hashtags_key="sglearning",   # 21:40 India from 16 Nov 2026 (founder: "same time as SG-MYTH, 5-10 minutes apart"); was 18:30 from 30 Oct, 14:00 before
         youtube_category="22"),
     "arthvan": Channel(
         key="arthvan", youtube_env_token="YT_ARTHVAN_REFRESH_TOKEN", display_name="SG-MYTH-WORLD",

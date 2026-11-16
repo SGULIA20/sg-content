@@ -1,4 +1,18 @@
+import dataclasses
+
 import pytest
+
+from engine import config
+
+# The logic tests were written around the 18:30 India Instagram slot of Learning with SG. The live slot moved to 21:40 on 16 Nov 2026
+# (founder: "same time as SG-MYTH, 5-10 minutes apart"); the tests keep their clock so they still test the rules, and
+# test_workflows.test_the_live_learning_slot checks the live value.
+LIVE_LEARNING_SLOT = config.CHANNELS["sglearning"].ig_slot_ist
+
+
+@pytest.fixture(autouse=True)
+def _learning_slot_of_the_tests(monkeypatch):
+    monkeypatch.setitem(config.CHANNELS, "sglearning", dataclasses.replace(config.CHANNELS["sglearning"], ig_slot_ist="18:30"))
 
 
 @pytest.fixture(autouse=True)

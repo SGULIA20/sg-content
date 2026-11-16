@@ -2,9 +2,8 @@ name: publish
 
 on:
   schedule:
-    - cron: '3 13 * * *'      # 18:30 India (14:00 WAT, from 30 Oct 2026): Learning with SG Reel + Story + Threads, after the morning news Short
-    - cron: '3 14 * * *'      # second chance an hour later (the engine never posts a piece twice)
-    - cron: '33 14 * * *'
+    - cron: '3 14 * * *'      # 19:33 India: the Story of a Learning with SG long video made public at 19:00 (the Reel is not due yet)
+    - cron: '13 16 * * *'     # 21:43 India (17:13 WAT, from 16 Nov 2026): Learning with SG Reel + Story + Threads, ten minutes after SG-MYTH-WORLD
     - cron: '3 4 * * *'       # the daily Top 10 (engine/trends.py roundup): 09:30 India
     - cron: '30 7 * * *'      # extra Learning with SG Reels (engine/extra.py): 13:00 India
     - cron: '0 11 * * *'      # 16:30 India
@@ -44,7 +43,7 @@ jobs:
         id: slot
         run: |
           if [ -n "${{ github.event.inputs.channel }}" ]; then echo "channel=${{ github.event.inputs.channel }}" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event.schedule }}" = "3 13 * * *" ] || [ "${{ github.event.schedule }}" = "3 14 * * *" ] || [ "${{ github.event.schedule }}" = "33 14 * * *" ] || [ "${{ github.event.schedule }}" = "3 4 * * *" ] || [ "${{ github.event.schedule }}" = "30 7 * * *" ] || [ "${{ github.event.schedule }}" = "0 11 * * *" ] || [ "${{ github.event.schedule }}" = "15 17 * * *" ]; then echo "channel=sglearning" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "3 14 * * *" ] || [ "${{ github.event.schedule }}" = "13 16 * * *" ] || [ "${{ github.event.schedule }}" = "3 4 * * *" ] || [ "${{ github.event.schedule }}" = "30 7 * * *" ] || [ "${{ github.event.schedule }}" = "0 11 * * *" ] || [ "${{ github.event.schedule }}" = "15 17 * * *" ]; then echo "channel=sglearning" >> "$GITHUB_OUTPUT"
           else echo "channel=arthvan" >> "$GITHUB_OUTPUT"; fi
       - name: Git identity
         run: |
