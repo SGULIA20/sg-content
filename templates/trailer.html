@@ -1,0 +1,23 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+/* 16 Nov 2026 (founder: "can we put a trailer or teaser of this video as a status of 20-30 seconds made from clips of the long video"):
+   the see-through frame laid over the first seconds of a long video for its Instagram Story. The clip plays in the middle band
+   (16:9, 656 px from the top); the top names the video, the foot points to the YouTube link in the bio. */
+@font-face{font-family:Dev;src:url({{FONTS}}/NotoSansDevanagari.ttf)}
+@font-face{font-family:Inter;src:url({{FONTS}}/Inter.ttf)}
+html,body{margin:0;padding:0;background:transparent}
+#root{position:relative;width:{{W}}px;height:{{H}}px;overflow:hidden;font-family:Inter,Dev,sans-serif;color:#fff;text-align:center}
+.top{position:absolute;left:5%;right:5%;top:190px;height:440px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:22px}
+.logo{width:120px;height:120px}
+.new{background:#E50914;color:#fff;font-weight:900;font-size:54px;padding:6px 24px;border-radius:12px;letter-spacing:1px;transform:rotate(-2deg)}
+.title{font-weight:800;font-size:58px;line-height:1.2;text-shadow:0 3px 10px rgba(0,0,0,.8)}
+.k{color:#FFE14D}
+.frame{position:absolute;left:0;right:0;top:652px;height:616px;border-top:4px solid #fff;border-bottom:4px solid #fff;box-sizing:border-box}
+.foot{position:absolute;left:5%;right:5%;top:1310px;display:flex;flex-direction:column;align-items:center;gap:26px}
+.yt{font-weight:900;font-size:58px;color:#FFE14D;text-shadow:0 3px 10px rgba(0,0,0,.8)}
+.bio{font-weight:800;font-size:48px;color:#fff;background:rgba(0,0,0,.55);padding:14px 30px;border-radius:40px}
+.ch{font-weight:700;font-size:34px;color:#D5DAE8;text-shadow:0 2px 8px rgba(0,0,0,.8)}
+</style></head><body><div id="root">
+  <div class="top"><img class="logo" src="{{logo_path}}"><div class="new">{{new}}</div><div class="title">{{title_html}}</div></div>
+  <div class="frame"></div>
+  <div class="foot"><div class="yt">{{full}}</div><div class="bio">👆 {{bio}}</div><div class="ch">{{channel}} · {{handle}}</div></div>
+</div></body></html>
