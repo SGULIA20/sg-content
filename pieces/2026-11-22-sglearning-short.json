@@ -75,7 +75,15 @@
    "voice": 9
   },
   "drafts": 1,
-  "intro_sent": "2026-11-15T19:55:39+00:00"
+  "intro": {
+   "clip": "2026-11-22-sglearning-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-16T07:47:21+00:00",
+   "seconds": 7.4
+  },
+  "intro_checked": "322ce55456957770",
+  "intro_sent": "2026-11-15T19:55:39+00:00",
+  "yt_id": "Y6Rwjy7VVPI"
  },
  "kind": "short",
  "publish_day": "2026-11-22",
@@ -232,7 +240,7 @@
   },
   "title": "Galat *UPI* par paisa gaya, ab kya? 😱"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   3.932,
@@ -260,6 +268,7 @@
    "text": "Galat UPI ID par paisa gaya, bank khud wapas kyun nahi karta? Suniye, twist yahan hai!",
    "words": 16
   },
+  "look": "claymation",
   "summary": "Step-by-step guide to a wrong UPI transfer: report in the app, then complain to the bank, then escalate to NPCI and the RBI ombudsman. Check: the NPCI dispute process, official timelines, and the fact that the receiver's consent may be needed.",
   "target_minutes": null,
   "title": "Galat UPI ID par 5,000 gaye, wapas kaise aayenge?",
@@ -273,6 +282,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-15T19:55:42+00:00",
+ "updated": "2026-11-16T07:47:29+00:00",
  "writer": "claude"
 }
