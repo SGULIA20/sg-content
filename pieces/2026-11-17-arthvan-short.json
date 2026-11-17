@@ -125,6 +125,9 @@
    "voice": 9
   },
   "drafts": 1,
+  "ig_reel_id": "17989019219892069",
+  "ig_story_id": "18155018740471711",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-17-arthvan-short.mp4",
    "clip_seconds": 1,
@@ -135,6 +138,8 @@
   "intro_sent": "2026-11-10T20:54:33+00:00",
   "out_sha": "03b1b33c3b406f766a271e512f7586e7006c48d7",
   "out_sha_intro": true,
+  "threads_id": "17957790921318802",
+  "threads_poll_id": "18100837259428654",
   "yt_id": "Hs0z7dsoK9Q"
  },
  "kind": "short",
@@ -308,7 +313,7 @@
   },
   "title": "Surpanakha ka pati, *Ravan* ne maara? 😱"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   5.05,
@@ -357,6 +362,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-10T21:13:50+00:00",
+ "updated": "2026-11-17T16:13:16+00:00",
  "writer": "claude"
 }
