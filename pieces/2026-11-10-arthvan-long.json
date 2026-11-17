@@ -822,8 +822,17 @@
   "proven_views": 1986,
   "target_minutes": 14,
   "thumb_test": {
-   "phase": "B",
-   "switched": "2026-11-12T19:07+00:00"
+   "a": [
+    0,
+    null
+   ],
+   "b": [
+    0,
+    null
+   ],
+   "phase": "done",
+   "switched": "2026-11-12T19:07+00:00",
+   "winner": "A"
   },
   "title_hi": "Sanchi, Ashok ka stupa",
   "voice": "voice_7o0kddoq6q2z"
