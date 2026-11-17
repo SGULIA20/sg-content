@@ -1,0 +1,942 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 50.0,
+   "quote": "For the average car owner, depreciation constitutes about half the cost of running a car.",
+   "source_date": "2026-01-01",
+   "source_name": "Wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/Car_costs",
+   "text": "For an average motor vehicle owner, depreciation constitutes roughly 50.0 pct of the overall expense of running a car.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 20.0,
+   "quote": "Normally a car's value is correlated with the price it has on the market, but on average a car has a depreciation around 15–20% per year.",
+   "source_date": "2026-01-01",
+   "source_name": "Wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/Car_costs",
+   "text": "Passenger vehicles lose on average between 15.0 pct and 20.0 pct of their market value each year due to regular wear and tear.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 30.0,
+   "quote": "Depending on market conditions, cars may depreciate 10–30% the first year.",
+   "source_date": "2026-01-01",
+   "source_name": "Wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/Car_costs",
+   "text": "A brand new car can experience an initial depreciation drop of up to 30.0 pct during its first year of ownership depending on market conditions.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 3.0,
+   "quote": "While the long-term insurance policy is 3 years for four-wheelers, it is 5 years for two-wheelers.",
+   "source_date": "2024-10-01",
+   "source_name": "Wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/Motor_Vehicle_Insurance_(India)",
+   "text": "Under Indian motor vehicle regulations, acquiring a new four-wheeler requires an upfront long-term third-party insurance term of 3.0 years.",
+   "unit": "years"
+  },
+  {
+   "label": "reported",
+   "number": 85.0,
+   "quote": "Over 85% of new cars and half of used cars are financed (as opposed to being paid for in a lump sum with cash).",
+   "source_date": "2022-06-15",
+   "source_name": "Wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/Car_finance",
+   "text": "More than 85.0 pct of new automobiles purchased by retail consumers are financed using auto loans rather than bought with full upfront cash.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 83.0,
+   "quote": "According to the AAA, the average annual cost of owning a new vehicle in the United States was $11,577 in 2025, of which depreciation ($4,334), insurance ($1,694), maintenance ($1,656), and finance charges ($1,131) represent approximately 83% of total costs.",
+   "source_date": "2025-08-01",
+   "source_name": "Wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/Economics_of_car_use",
+   "text": "Non-running fixed expenditures including depreciation, insurance, routine maintenance, and financing interest represent roughly 83.0 pct of total annual car ownership costs.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-25-sglearning-long",
+ "ids": {
+  "budget": {
+   "day": "2026-11-17",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 99.0,
+   "usd": 0.317076,
+   "voice": 65
+  },
+  "drafts": 1,
+  "intro_sent": "2026-11-17T19:09:13+00:00"
+ },
+ "kind": "long",
+ "publish_day": "2026-11-25",
+ "reasons": [
+  "waiting for the founder's intro clip until 25 Nov 10:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Your new 10 lakh car can lose up to 30 percent in its first year.\nThe biggest cost of a car is not petrol. It is the value leaking out every day.\nLoan or cash? The answer depends on one comparison most people skip.\nDid you buy your last car on a loan or with cash?\nThis is not investment advice.\nSend this to your friend who is booking a new car this month.",
+    "hashtags": [
+     "#EMI",
+     "#PersonalFinanceIndia",
+     "#LearningWithSG",
+     "#InvestingIndia",
+     "#PaiseKiKhabar"
+    ]
+   },
+   "threads": {
+    "text": "Your new 10 lakh car can lose up to 30 percent in its first year. And depreciation is about half of what a car costs to run. So loan or cash, or a 2 to 3 year old car? Which did you choose last time? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 The showroom shock",
+     "00:00 How fast your car loses value",
+     "00:00 The real cost of owning a car",
+     "00:00 Loan or cash?",
+     "00:00 The mistake and what to do"
+    ],
+    "description": "Your new 10 lakh car can lose up to 30 percent in its first year. We break down the full cost of owning a car: falling value, insurance, service, loan interest and fuel. Then we answer loan or cash, and why a 2 to 3 year old car can be smarter maths. Send this to your friend who is about to book a new car this month.",
+    "tags": [
+     "car loan",
+     "car loan vs cash",
+     "car depreciation",
+     "total cost of car ownership",
+     "used car vs new car",
+     "EMI",
+     "personal finance India",
+     "car insurance India",
+     "opportunity cost",
+     "buying a car India",
+     "new car cost"
+    ],
+    "title": "Car Loan or Cash? The Real Cost of a 10 Lakh Car"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Did you buy your last car on a loan or with cash? And would you buy used next time?",
+  "hook": "Your new 10 lakh car can lose up to 30 percent in its first year.",
+  "scenes": [
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "The showroom shock",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a gleaming new silver hatchback on a polished Indian showroom floor, soft spotlights and reflections, the empty polished floor calm in the lower fifth, no text or logos.",
+     "type": "art"
+    },
+    "vo": "Your new 10 lakh car can lose up to 30 percent in its first year. You still owe the bank every month. But the car is already worth much less."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary photo inside an Indian car showroom, a family seen from behind gathered around a new car with a big red ribbon bow on the bonnet, a box of sweets on a side table, warm evening light, clean floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Picture the showroom. A red ribbon on the bonnet, sweets for the staff, the whole family smiling. Nobody in that room talks about what this car will really cost."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view from inside a showroom's glass doors as a new car with a marigold garland on the grille rolls out onto a sunny Indian street, calm road surface in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "The salesman talks about mileage and colour. The bank agent talks about an easy EMI. But the real bill? That starts the moment you drive out of the gate."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a fuel nozzle resting in a car's open fuel flap at an Indian petrol pump at dusk, a blurred service workshop in the background, plain concrete ground in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Here is the twist. The biggest cost of a car is not petrol. It is not service either. It is something you will never see printed on any bill."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a parked car on a quiet Indian residential lane at dusk, a long shadow stretching across the road, a few fallen leaves, calm road in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "It is the value quietly leaking out of your car, every single day. The car looks exactly the same. Your money locked inside it does not."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a showroom glass desk with papers lying face down, a pen and a set of car keys, a couple's hands seen from the side, soft light, clean desk surface in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "And then comes the big question. Should you pay with a loan, or in cash? Most families decide it at the showroom desk, in a hurry."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view of a busy Indian city road packed with cars at golden hour, flyover and trees, calm road surface in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "So today, 3 questions. How fast does a car lose value? What does it really cost to own one? And loan or cash, which one is smarter for you?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of a long highway through green Indian countryside with a single car in the distance, early morning mist, empty tarmac in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Stay till the end. There is a bonus answer most people never even consider. A smarter way to own a car that skips the biggest loss completely."
+   },
+   {
+    "facts_used": [],
+    "label": "How fast your car loses value",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of long rows of parked cars in a multilevel parking garage at dusk, concrete pillars, soft orange light, plain concrete floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "First question. How fast does a car lose value? Let us start with a word you will hear again and again today: depreciation."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of two cars of the same model side by side in an open courtyard, one shiny and new, the other dusty with faded paint, afternoon light, paved ground in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Depreciation simply means the fall in your car's price as it gets older. It is what you paid, minus what someone will pay you today."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of hands lifting a dark switched-off phone out of its plain white box on a wooden table, morning window light, empty wooden table in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Think of a new phone. The day you open the box, its resale price drops. A car works the same way, only the loss is in lakhs."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic macro view of a car's worn tyre tread and slightly faded side paint, natural daylight, plain road surface in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Reports say a car loses 15 to 20 percent of its value yearly. That is just from age, daily use, and normal wear and tear. Nothing has to go wrong."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a brand new car driving out through an Indian dealership gate at sunrise, security guard watching, long shadows, empty driveway in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "And the first year is the cruellest of all. It depends on the market. But a new car can drop up to 30 percent that year."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary photo outside a small-town Indian transport office, people waiting in a line holding plain files, midday sun, dusty courtyard ground in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Why so much? The moment the car is registered in your name, it stops being new. It becomes a used car, on paper and in every buyer's mind."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a used car lot in an Indian city, rows of second-hand cars, a buyer leaning in to look under an open bonnet, afternoon light, gravel ground in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "A used car buyer knows this very well. He will never pay the showroom price. Not even if you drove it for a few months."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a car parked under a neem tree, covered in a thin layer of dust and dry leaves, soft late afternoon light, plain dirt ground in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Now stretch this over 5 years. At 15 to 20 percent a year, more than half the value can disappear. Gone, without a single scratch or accident."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary photo in a Pune apartment parking area, a father in a vest washing a car with a bucket and cloth in the morning while a small child watches, wet concrete floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Imagine a family in Pune. They buy a 10 lakh car, drive it carefully, and service it on time. 5 years later, they try to sell it."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a used car dealer crouching beside a car's front tyre while an older Indian man stands with arms crossed, surprised, afternoon light in a dealer's yard, paved ground in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "The dealer walks around it and kicks a tyre. Then he offers well under half of what they paid. The father is stunned. The car still runs perfectly!"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of two men shaking hands beside a parked car at a dealer's yard in tired evening light, a few other cars behind, calm ground in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "But the dealer is not cheating anyone. This is simply how car prices move. The car is fine. Its price is what fell. The family just never counted that loss."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a car key and keychain resting on a dashboard, dusk light through the windshield, soft shadows, plain dashboard surface in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "So here is the uncomfortable truth. Every month you own a new car, some of your money quietly melts away. No bill, no SMS, no warning at all."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a home dining table at night with sealed envelopes and papers lying face down, a steel cup of tea, a warm lamp, plain table surface in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "But wait. If the value falls anyway, is depreciation really the biggest cost? Or is petrol worse? Let us open the full bill and see."
+   },
+   {
+    "facts_used": [],
+    "label": "The real cost of owning a car",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a single car parked in a narrow apartment basement parking under one bare bulb, concrete walls, quiet mood, plain floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Second question. What does it really cost to own a car? Not the showroom price. The full bill, every year it stands in your parking."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of an Indian wedding buffet with long food counters under warm string lights, guests in sarees and kurtas seen from behind, carpeted floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Most people count only petrol and the EMI. That is like judging a wedding budget only by the food. The real list is much longer."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic flat lay on a garage floor: a plain blank folder, a spanner, an unlabelled engine oil can, a car key and a small fuel can, soft daylight, bare floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Here is the full list. Depreciation, insurance, service and repairs, parking, interest on the loan, and then fuel. Fuel comes last on this list for a reason."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of an older car in a home garage being half covered with a grey dust sheet, light falling through a side window, plain floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Studies of car costs report something surprising. For the average owner, depreciation is about 50 percent of running costs. Bigger than anything else on the list."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a car in an open residential parking under a purple evening sky, paint slightly faded, a building's lit windows behind, calm ground in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Think about that. Half of everything you spend on a car is just its price falling. Not petrol, not service. Just the car getting older in your parking."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary photo of an insurance office counter in an Indian town, a clerk handing a plain folder to a customer, fluorescent light, tiled floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Then comes insurance. Under Indian rules, a new car needs third-party insurance for 3 years. And you pay all of it upfront, at the time of purchase."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of two cars after a minor bump on a city street, the two drivers talking calmly, traffic moving around them, plain asphalt in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Third-party insurance covers damage you cause to other people or their property. It is compulsory. And it is a big cheque on the very first day."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a car with a dented door parked outside a small Indian body repair shop, tools and paint cans visible inside, dusty ground in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Damage to your own car needs a separate cover, renewed every year. So insurance never really ends. It comes back every year, like a birthday you did not want."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo inside an Indian car workshop, a car raised on a lift, a mechanic draining oil, tools hanging on the wall, oil-stained floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Then there is service. Every few thousand kilometres, the car visits the workshop. Oil, filters, brakes, tyres. Small bills, but they never stop coming."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a car covered in raindrops parked outside an Indian house during the monsoon, grey sky, puddles on the ground in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Now notice something important. Depreciation, insurance, service and loan interest. You pay all of these even if the car sits at home all week. Rain or shine, used or not."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a single car standing alone in an empty parking lot at night under a streetlight, the city quiet in the distance, plain tarmac in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "These are called fixed costs. They do not care how much you drive. Fuel is the only big cost that moves with your actual driving."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a highway petrol pump in India at dusk, an attendant filling a car, canopy lights glowing, clean forecourt in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "So when someone boasts about great mileage, just smile. Good mileage saves you a little. The big money is lost long before you reach the petrol pump."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a man's hands placing folded receipts into an old shoebox on a cupboard shelf, warm room light, plain shelf surface in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Remember the family in Pune? They tracked every petrol bill for 5 years. But they never once tracked the value leaking out of the car itself."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of an Indian family standing outside a car showroom in the evening, discussing, seen from a distance, glass facade glowing, plain pavement in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "So the car costs far more than its sticker price. But now comes a decision that can add even more to the bill. How do you pay for it?"
+   },
+   {
+    "facts_used": [],
+    "label": "Loan or cash?",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary photo inside an Indian bank branch, customers sitting in front of a loan officer's desk, ceiling fans, tiled floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Third question. Loan or cash? This is where most families get the maths wrong, without even noticing. So let us slow down here."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a busy dealership delivery bay with several new cars and families collecting them, festive garlands, clean floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "First, know that you are not alone. Reportedly, over 85 percent of new cars are bought on a loan. Not with full cash upfront."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of hands receiving a set of car keys across a desk, a smiling salesman blurred behind, warm showroom light, desk surface in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Why? Because a loan feels easy. You pay a small down payment and drive out with the keys. The big amount feels far away, somewhere in the future."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a salaried man in office wear handing a cheque across an Indian bank counter, a clerk behind glass, afternoon light, counter edge and floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "That big amount comes as the EMI, your fixed monthly loan payment. Each EMI mixes a piece of the car's price with the bank's interest. Month after month."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of an old stone bank building exterior in an Indian city in the morning, pigeons on the steps, no signage visible, wide steps in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Interest is the bank's fee for lending you money. Over a few years, it quietly adds a big chunk on top. Most buyers never add it up."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a car parked on a steep hill road in the Indian hills, faded paint, misty valley below, empty road surface in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "And here is the painful part. You pay interest on something that loses value every single year. Your loan costs more, while your car is worth less."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of an Indian family at a dining table in the evening, the father writing in a notebook, the mother leaning in, warm lamp light, plain table in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "So cash is always better, right? Not so fast. Cash has a hidden cost too. It has a name most people never hear: opportunity cost."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary photo of a small-town Indian post office savings counter, an elderly man waiting with a passbook, wooden counter, stone floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Opportunity cost means what your money could have earned somewhere else. Money spent at the showroom cannot also sit in savings, earning interest for you."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a clay piggy bank on a wooden shelf in morning sunlight, a small brass lamp beside it, plain shelf surface in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "For example, PPF, the government's long-term savings scheme, currently pays 7.1 percent a year. Money spent on a car earns nothing. In fact, it shrinks every year."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a country road in rural India splitting into two paths around a big banyan tree, soft morning light, dirt road in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "So the real comparison is simple. What rate does the bank charge you on the loan? And what rate can your saved money safely earn?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a brass tap slowly dripping into a steel bucket in an Indian courtyard, droplets frozen in light, plain stone floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "If the loan costs more than your savings earn, paying cash usually wins. Every month, the gap between those rates is your loss. It adds up quietly."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a crowded financial district street in Mumbai at midday, office workers walking past tall buildings, no signage visible, pavement in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Now here is the twist most people miss. Many say, I will keep my cash in the market. It will easily beat the loan. Sounds clever, right?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of rough sea waves crashing on black rocks on the Konkan coast under a cloudy sky, calm wet sand in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "But market returns are never fixed. They can go up, and they can fall. Your EMI, though, is fixed. It comes every month, no matter what."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a lone man standing at a crossroads on an Indian town outskirts at dusk, seen from behind, long shadows, empty road in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "So comparing a certain loan cost with a hopeful market return is risky maths. The loan is certain. The return is not. Keep that in mind."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary photo of an Indian hospital corridor, a worried family waiting on a steel bench, soft fluorescent light, polished floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "And cash has its own trap. Never empty your emergency fund for a car. If illness or a job loss comes, the car will not pay the hospital."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a closed steel almirah in a middle-class Indian bedroom, a folded cotton sheet on the bed beside it, afternoon light, plain tiled floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "So the honest answer is this. Pay cash only if your emergency money stays untouched. If you must borrow, borrow less and keep the loan short."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a shiny new car seen through a showroom window from the street at night, reflections of passers-by on the glass, wet pavement in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "But wait. What if the smartest move is not about loan or cash at all? What if the real problem is just the word new?"
+   },
+   {
+    "facts_used": [],
+    "label": "The mistake and what to do",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a couple at a home table under an evening lamp, planning with a notebook and pen, papers face down, plain table surface in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Here is the mistake most families make. They plan the EMI carefully. But they never plan the full cost of owning the car. And they almost always buy new."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view of a huge parking lot full of cars in neat rows at midday, sharp shadows, an empty strip of tarmac in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "An American study by the motoring club AAA looked at yearly car costs. Depreciation, insurance, service and loan interest made up about 83 percent. Fuel was the small part."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a car showroom with several models lined up under bright lights, a lone buyer looking at them from a distance, polished floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Most of that bill is decided the day you choose the car. Not the day you fill petrol. So the choice matters more than the driving."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a clean, well-kept hatchback in a tidy pre-owned car yard in bright sunlight, washed and polished, swept ground in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Now think about a well-kept car, just 2 to 3 years old. Who already took the biggest fall in value? The first owner. Not you."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a young Indian couple test-driving a used car on a quiet tree-lined road, seen through the side window, soft afternoon light, empty road in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "That brutal first-year drop is already paid by someone else. You get a car that still runs well, at a much lower price. That is the bonus answer."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a modest Indian home with a small car and a scooter parked outside in the morning, potted plants by the gate, plain courtyard ground in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "A lower price means a smaller loan, or no loan at all. It also means less value lost in rupees every year after that. Your money leaks slower."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a mechanic with a torch inspecting the underside of a raised car in a garage, focused expression, oil-stained floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Of course, check it properly. Get a trusted mechanic to inspect it. Check the service record, and make sure the papers are clean. Never skip this step."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a desk by a window with an open notebook, a pen and a cup of tea, pages blank, morning light, plain desk surface in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "And if you still want a new car, that is fine. Just do the maths first. Write down every cost for 5 years, not only the EMI."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of an Indian bank officer explaining something to a customer across a desk, documents lying face down, calm office light, desk edge in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Ask the bank for the total interest in rupees, not just the rate. That figure alone often changes minds at the showroom desk."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of an Indian residential colony at sunset with cars parked along the lanes, children cycling, warm sky, calm road in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "This is not investment advice. Every family's income, needs and city are different. Use this as a way to think, not as a fixed rule."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic photo of a silver hatchback driving on an open highway at sunset, hills in the distance, golden light, empty tarmac in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "So back to where we started. A 10 lakh car is not a 10 lakh decision. It is a 5 year money plan. Plan it that way."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a young man's hand holding car keys at the doorway of an apartment in the evening, warm corridor light, plain tiled floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Send this to your friend who is booking a new car this month. Next time: should you buy a house, or keep paying rent? Watch for it."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide shot of a family car on a coastal road in India at golden hour, palm trees and the sea beside it, calm sea surface in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Now tell me in the comments. Did you buy your last car on a loan or with cash? And would you buy used next time?"
+   }
+  ],
+  "thumbnail": {
+   "name": "CAR LOAN",
+   "name_hi": "CAR LOAN",
+   "scene": "LEFT: a gleaming new silver car with a red ribbon on a bright showroom floor; RIGHT: the same car five years later, dusty and faded, parked among rows of second-hand cars in an open used car lot.",
+   "words": [
+    "30%",
+    "GONE?"
+   ],
+   "words_hi": [
+    "30%",
+    "GONE?"
+   ]
+  },
+  "title": "10 lakh car: loan or cash, and the real 5-year cost"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  10.65,
+  23.9,
+  36.87,
+  49.64,
+  61.25,
+  73.38,
+  85.55,
+  96.56,
+  107.17,
+  117.34,
+  128.51,
+  141.48,
+  151.73,
+  164.14,
+  172.55,
+  185.8,
+  196.49,
+  208.9,
+  222.95,
+  235.6,
+  245.77,
+  257.02,
+  266.55,
+  282.08,
+  295.57,
+  307.82,
+  320.43,
+  331.76,
+  345.25,
+  359.94,
+  374.27,
+  385.72,
+  398.77,
+  408.66,
+  419.11,
+  428.76,
+  439.65,
+  452.46,
+  464.63,
+  475.6,
+  488.21,
+  498.94,
+  508.23,
+  522.16,
+  531.41,
+  544.94,
+  556.51,
+  569.04,
+  580.77,
+  593.86,
+  607.03,
+  618.04,
+  629.69,
+  646.58,
+  655.19,
+  665.8,
+  675.89,
+  689.7,
+  700.67,
+  711.4,
+  719.69,
+  731.06,
+  742.07,
+  752.96
+ ],
+ "topic": {
+  "from_bank": true,
+  "hooks": [
+   "Gaadi 5 saal mein kitni sasti ho jaati hai?",
+   "Car loan ka byaaj kitna dete hain?",
+   "Cash hai toh bhi loan lena sahi hai?"
+  ],
+  "id": "car-loan-vs-cash",
+  "intro": {
+   "aspect": "16:9",
+   "bridge": "",
+   "closing": "",
+   "options": [
+    {
+     "closing": "",
+     "question": "You drive a 10 lakh car out of the showroom smiling, but something invisible is already draining its value. What is it?",
+     "text": "You drive a 10 lakh car out of the showroom smiling, but something invisible is already draining its value. What is it?",
+     "words": 22
+    },
+    {
+     "closing": "",
+     "question": "The bank still wants every EMI, but your new car is already worth far less. Where did the money go on day one?",
+     "text": "The bank still wants every EMI, but your new car is already worth far less. Where did the money go on day one?",
+     "words": 23
+    },
+    {
+     "closing": "",
+     "question": "Sweets are shared, the family is smiling, but nobody mentions the biggest cost of this car. Not petrol. Not service.",
+     "text": "Sweets are shared, the family is smiling, but nobody mentions the biggest cost of this car. Not petrol. Not service.",
+     "words": 20
+    },
+    {
+     "closing": "",
+     "question": "In 5 years, more than half your car's value can vanish without a single scratch. Should you pay with a loan or cash?",
+     "text": "In 5 years, more than half your car's value can vanish without a single scratch. Should you pay with a loan or cash?",
+     "words": 23
+    },
+    {
+     "closing": "",
+     "question": "Most families decide this in a hurry at the showroom desk, and it costs them lakhs. Loan or cash, which one is smarter?",
+     "text": "Most families decide this in a hurry at the showroom desk, and it costs them lakhs. Loan or cash, which one is smarter?",
+     "words": 23
+    }
+   ],
+   "prompt": "16:9 landscape, 1920x1080, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: close view of a gleaming new silver hatchback on a polished Indian showroom floor, soft spotlights and reflections, the empty polished floor calm in the lower fifth. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a navy blazer over a white shirt, no tie. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1920x1080.",
+   "question": "You drive a 10 lakh car out of the showroom smiling, but something invisible is already draining its value. What is it?",
+   "text": "You drive a 10 lakh car out of the showroom smiling, but something invisible is already draining its value. What is it?",
+   "words": 22
+  },
+  "summary": "Total cost of car ownership: loan interest, depreciation, insurance, fuel, service; the loan-vs-cash decision with opportunity cost, why a used car can be the smarter maths for many families.",
+  "target_minutes": 12,
+  "theme": "loan",
+  "title": "10 lakh ki gaadi: loan par lein ya cash, aur 5 saal mein asli kharcha kya",
+  "voice": "voice_1kn3blc2u13l",
+  "weekly": true
+ },
+ "updated": "2026-11-17T19:09:25+00:00",
+ "writer": "claude"
+}
