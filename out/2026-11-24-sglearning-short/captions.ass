@@ -1,0 +1,42 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.89,Default,,0,0,0,,You donated 10,000 rupees.
+Dialogue: 0,0:00:01.89,0:00:03.79,Default,,0,0,0,,Will your tax really fall by
+Dialogue: 0,0:00:03.79,0:00:04.06,Default,,0,0,0,,10,000?
+Dialogue: 0,0:00:04.51,0:00:06.33,Default,,0,0,0,,Kartik Purnima is a day of
+Dialogue: 0,0:00:06.33,0:00:06.73,Default,,0,0,0,,giving.
+Dialogue: 0,0:00:06.73,0:00:08.95,Default,,0,0,0,,Most people believe donations cut their
+Dialogue: 0,0:00:08.95,0:00:09.15,Default,,0,0,0,,tax.
+Dialogue: 0,0:00:09.60,0:00:10.96,Default,,0,0,0,,So they hand over cash,
+Dialogue: 0,0:00:10.96,0:00:12.08,Default,,0,0,0,,take a receipt,
+Dialogue: 0,0:00:12.08,0:00:13.21,Default,,0,0,0,,and feel doubly good.
+Dialogue: 0,0:00:13.66,0:00:15.36,Default,,0,0,0,,Tax law does allow relief on
+Dialogue: 0,0:00:15.36,0:00:16.00,Default,,0,0,0,,donations.
+Dialogue: 0,0:00:16.00,0:00:17.27,Default,,0,0,0,,But here is the twist.
+Dialogue: 0,0:00:17.72,0:00:19.95,Default,,0,0,0,,Cash above 2,000 rupees gets zero
+Dialogue: 0,0:00:19.95,0:00:20.62,Default,,0,0,0,,tax relief.
+Dialogue: 0,0:00:20.62,0:00:22.40,Default,,0,0,0,,Pay by UPI or bank transfer.
+Dialogue: 0,0:00:22.85,0:00:23.58,Default,,0,0,0,,Even then,
+Dialogue: 0,0:00:23.58,0:00:25.28,Default,,0,0,0,,most trusts count only half your
+Dialogue: 0,0:00:25.28,0:00:26.01,Default,,0,0,0,,donation.
+Dialogue: 0,0:00:26.01,0:00:27.96,Default,,0,0,0,,Your real saving is smaller still.
+Dialogue: 0,0:00:28.41,0:00:29.15,Default,,0,0,0,,The biggest catch?
+Dialogue: 0,0:00:29.15,0:00:30.99,Default,,0,0,0,,The default new tax regime gives
+Dialogue: 0,0:00:30.99,0:00:32.46,Default,,0,0,0,,no donation relief at all.
+Dialogue: 0,0:00:32.91,0:00:34.24,Default,,0,0,0,,Check the trust is approved,
+Dialogue: 0,0:00:34.24,0:00:36.34,Default,,0,0,0,,and get its donation certificate.
+Dialogue: 0,0:00:36.34,0:00:38.05,Default,,0,0,0,,This is not investment advice.
+Dialogue: 0,0:00:38.51,0:00:39.81,Default,,0,0,0,,Send this to your father,
+Dialogue: 0,0:00:39.81,0:00:42.00,Default,,0,0,0,,who gives cash donations to save
+Dialogue: 0,0:00:42.00,0:00:42.22,Default,,0,0,0,,tax.

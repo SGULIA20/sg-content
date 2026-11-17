@@ -1,0 +1,304 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 2000.0,
+   "quote": "No deduction shall be allowed under Section 80G in respect of any donation of any sum exceeding two thousand rupees unless such sum is paid by any mode other than cash (section. 80G(5D)).",
+   "source_date": "2025-12-19",
+   "source_name": "Income Tax Department",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGqyBBkCS6hcsDPb8tNvP8K4QB0eFtvbVhZOzMptnWyA_UK2HMxpj5vGRHbV5p6eWq6UIhAWPw3Foclqonffw-hMGvyJgLre9ar4Z9cWK-zXcPW0yUL06u20IouCSzbKgKww2CTqpzmRmHnbjxO7mrVviQxCNKnqP_daKmxXl9VGbiHwK79O_aspCdcghXJtpb2UIbwGbSQB2m4kRPODKIKGK55jz9QFfcvN4=",
+   "text": "Under Section 80G(5D) of the Income Tax Act, no tax deduction is permitted for any donation exceeding ₹2,000 made in cash.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 10.0,
+   "quote": "For donations under clauses (a)(iv), (a)(v), (a)(vi), (a)(via), (a)(vii), (b), and (c) – total deduction is capped at 10% of donor's adjusted gross total income.",
+   "source_date": "2025-12-19",
+   "source_name": "Income Tax Department",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGqyBBkCS6hcsDPb8tNvP8K4QB0eFtvbVhZOzMptnWyA_UK2HMxpj5vGRHbV5p6eWq6UIhAWPw3Foclqonffw-hMGvyJgLre9ar4Z9cWK-zXcPW0yUL06u20IouCSzbKgKww2CTqpzmRmHnbjxO7mrVviQxCNKnqP_daKmxXl9VGbiHwK79O_aspCdcghXJtpb2UIbwGbSQB2m4kRPODKIKGK55jz9QFfcvN4=",
+   "text": "For donations subject to qualifying limits, the total Section 80G deduction is capped at 10% of the donor's adjusted gross total income.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 50.0,
+   "quote": "If the donations are only to \"other eligible funds\": one gets. 50% deduction on total donations.",
+   "source_date": "2025-12-19",
+   "source_name": "Income Tax Department",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGqyBBkCS6hcsDPb8tNvP8K4QB0eFtvbVhZOzMptnWyA_UK2HMxpj5vGRHbV5p6eWq6UIhAWPw3Foclqonffw-hMGvyJgLre9ar4Z9cWK-zXcPW0yUL06u20IouCSzbKgKww2CTqpzmRmHnbjxO7mrVviQxCNKnqP_daKmxXl9VGbiHwK79O_aspCdcghXJtpb2UIbwGbSQB2m4kRPODKIKGK55jz9QFfcvN4=",
+   "text": "Donations made to standard approved charitable funds qualify for a 50% deduction from taxable income.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 100.0,
+   "quote": "Specific government and national funds (National. Defence Fund, PM Relief Fund, Clean Ganga. Fund, etc.) - These get 100% deduction without limit.",
+   "source_date": "2025-12-19",
+   "source_name": "Income Tax Department",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGqyBBkCS6hcsDPb8tNvP8K4QB0eFtvbVhZOzMptnWyA_UK2HMxpj5vGRHbV5p6eWq6UIhAWPw3Foclqonffw-hMGvyJgLre9ar4Z9cWK-zXcPW0yUL06u20IouCSzbKgKww2CTqpzmRmHnbjxO7mrVviQxCNKnqP_daKmxXl9VGbiHwK79O_aspCdcghXJtpb2UIbwGbSQB2m4kRPODKIKGK55jz9QFfcvN4=",
+   "text": "Contributions to specified government and national relief funds qualify for a 100% tax deduction without any upper qualifying limit.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 15.0,
+   "quote": "a donor effectively gives ₹100 but reduces their tax outflow by ₹15 (for a 30% bracket taxpayer donating ₹100 with 50% deduction).",
+   "source_date": "2026-05-11",
+   "source_name": "Mïam Charitable Trust",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFf4DkXBBP_uqNCfxiKvtIj1Xv0qKHxeivL6g_ZKsG2GGNEu66LVLNz_j1UtSvzi3Xu1JbZN8BfGkqDGRZQVkzcmdFGZeM0DSmOEdhlxNN6qS5Qhq8UOIBycGgubP06EIe03WI7LJkAO_iNQBeeZWVKJNC_YBcbIL6HAJCHni2rGkpbsqgPhtmS95-aCg1o8tUguOqz-ZQ8azikAC0=",
+   "text": "A taxpayer falling in the 30% tax bracket donating ₹100 under a 50% deduction category reduces personal tax liability by ₹15.",
+   "unit": "INR"
+  },
+  {
+   "label": "reported",
+   "number": 10000.0,
+   "quote": "If you donate ₹20,000 and fall within the limits, you can usually deduct ₹10,000 from your taxable income.",
+   "source_date": "2026-10-22",
+   "source_name": "Kind Circle",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsell5NUcupvgbZ0VuQzUTvVEBWjWID1yoPevS0cqtZEtoQLCD0fdlREVIes99xuJ1I3t_iSxRVZQ-sJ_x3gnxmQr0dnqeVNWyIFz0A4YYST0vGzO71pav11UmgTdMixd6hZ4u9yz_wC-wikyeT5dW1LcEAqv3dJCJ",
+   "text": "A household donating ₹20,000 to an approved charitable organisation subject to the 50% rule can deduct ₹10,000 from taxable income.",
+   "unit": "INR"
+  },
+  {
+   "label": "reported",
+   "number": 100.0,
+   "quote": "Donations to the National Defence Fund are 100% tax exempt.",
+   "source_date": "2020-11-19",
+   "source_name": "Wikipedia",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHTremappFCCEeifTGfEa2d0ZkQ34aV6V2yGiDD8lKPEo2D3jlsy-jeSO-kXaOXZPh06FyROUX3QnXgHY5b_AnwiogjBHMe1WWyZU8ZxwNazGcqSpT1AjNEsS_hDkoRRSI1fvGNuo1AFQ=",
+   "text": "Donations made by citizens to the National Defence Fund are 100% exempt from income tax.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-24-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-17",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 15.0,
+   "usd": 0.08394,
+   "voice": 9
+  },
+  "drafts": 1,
+  "intro_sent": "2026-11-17T19:39:23+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-24",
+ "reasons": [
+  "waiting for the founder's intro clip until 24 Nov 11:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "You donated 10,000 rupees. Will your tax really fall by 10,000?\nCash above 2,000 rupees gets zero tax relief.\nMost trusts count only half, and the new tax regime gives no relief at all.\nWhich tax regime are you in?\nThis is not investment advice.\nSend this to your father, who gives cash donations to save tax.",
+    "hashtags": [
+     "#IncomeTax",
+     "#PersonalFinanceIndia",
+     "#MoneyTipsHindi",
+     "#SeedhiBaat",
+     "#PaiseKiKhabar",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "You donated 10,000 rupees. Will your tax really fall by 10,000? Cash above 2,000 rupees gets zero relief, most trusts count only half, and the new tax regime gives nothing. Which regime are you in? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "You donated 10,000 rupees. Will your tax really fall by 10,000? Cash donations above 2,000 rupees get no tax relief, most trusts count only half, and the new tax regime gives nothing at all. Pay digitally, check the trust is approved, and keep the official donation certificate. Send this to your father, who gives cash donations to save tax.",
+    "tags": [
+     "donation tax saving",
+     "section 80G",
+     "income tax",
+     "donation deduction",
+     "new tax regime",
+     "old tax regime",
+     "Kartik Purnima",
+     "charity tax",
+     "personal finance India",
+     "tax tips"
+    ],
+    "title": "Donation Tax Saving: Does 10,000 Really Count?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Send this to your father, who gives cash donations to save tax.",
+  "hook": "You donated 10,000 rupees. Will your tax really fall by 10,000?",
+  "scenes": [
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of an Indian man's hand pushing a thick bundle of rupee notes into a large brass temple donation box, marigold garlands and oil lamps glowing around it, warm evening light, festive crowd softly blurred behind.",
+     "type": "art"
+    },
+    "vo": "You donated 10,000 rupees. Will your tax really fall by 10,000?"
+   },
+   {
+    "facts_used": [],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of an Indian riverside ghat at dusk on a festival evening, families in festive clothes floating clay lamps on the water, devotees walking toward a temple, soft golden light.",
+     "type": "art"
+    },
+    "vo": "Kartik Purnima is a day of giving. Most people believe donations cut their tax."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene at a small temple trust counter, a middle-aged Indian woman in a saree handing cash to a clerk who writes a paper receipt, contented smile, warm tube light, evening.",
+     "type": "art"
+    },
+    "vo": "So they hand over cash, take a receipt, and feel doubly good."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an Indian family dining table at night, a folded paper receipt resting beside a cup of tea and a pair of reading glasses, a man's hand reaching for it, quiet curious mood.",
+     "type": "art"
+    },
+    "vo": "Tax law does allow relief on donations. But here is the twist."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of crumpled rupee notes lying unused on a wooden table next to a bank cheque book and a debit card, natural morning light from a window, a sense of a mistake realised.",
+     "type": "art"
+    },
+    "vo": "Cash above 2,000 rupees gets zero tax relief. Pay by UPI or bank transfer."
+   },
+   {
+    "facts_used": [
+     2,
+     4
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic image of a young Indian salaried man in office wear sitting at a home desk with a calculator and paper files, frowning thoughtfully, evening lamp light, papers spread around.",
+     "type": "art"
+    },
+    "vo": "Even then, most trusts count only half your donation. Your real saving is smaller still."
+   },
+   {
+    "facts_used": [],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of an Indian couple at a dining table at night going through paper tax documents, the wife pointing at a page, the husband looking surprised, single warm ceiling light.",
+     "type": "art"
+    },
+    "vo": "The biggest catch? The default new tax regime gives no donation relief at all."
+   },
+   {
+    "facts_used": [],
+    "label": "what to do",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of an Indian man's hands receiving a stamped official paper certificate across a clean office counter of a charitable trust, daylight through a window, calm reassured mood.",
+     "type": "art"
+    },
+    "vo": "Check the trust is approved, and get its donation certificate. This is not investment advice."
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of an elderly Indian father in a white kurta sitting on a home balcony at sunset with a cup of tea, a few festival oil lamps glowing on the railing, peaceful mood.",
+     "type": "art"
+    },
+    "vo": "Send this to your father, who gives cash donations to save tax."
+   }
+  ],
+  "thumbnail": {
+   "name": "SECTION 80G",
+   "name_hi": "SECTION 80G",
+   "scene": "A hand dropping a thick bundle of rupee notes into a large brass temple donation box, glowing oil lamps and marigolds around it at dusk.",
+   "words": [
+    "2,000 CASH",
+    "TRAP"
+   ],
+   "words_hi": [
+    "2,000 CASH",
+    "TRAP"
+   ]
+  },
+  "title": "Does your donation really *cut* your tax? 🪔"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  4.509,
+  9.601,
+  13.661,
+  17.72,
+  22.847,
+  28.413,
+  32.906,
+  38.505
+ ],
+ "topic": {
+  "follows": "Kartik Purnima (24 Nov) is a day of daan, so a donation-tax question fits it honestly. It is a choice with a number.",
+  "hooks": [
+   "Mandir ko 10,000 diye, to kya tax mein 10,000 kam hoga?",
+   "Daan karne se tax bachta hai, par har daan par nahi. Kyun?"
+  ],
+  "id": "wk-2026-11-24-sglearning-short",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "",
+   "options": [
+    {
+     "closing": "",
+     "question": "Most people give cash on Kartik Purnima, take a receipt, and feel smart. Yet that receipt may be worth nothing to the taxman.",
+     "text": "Most people give cash on Kartik Purnima, take a receipt, and feel smart. Yet that receipt may be worth nothing to the taxman.",
+     "words": 23
+    },
+    {
+     "closing": "",
+     "question": "Even if you pay by UPI, the trust may count only half your donation. And the real catch is much bigger.",
+     "text": "Even if you pay by UPI, the trust may count only half your donation. And the real catch is much bigger.",
+     "words": 21
+    }
+   ],
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: close-up of an Indian man's hand pushing a thick bundle of rupee notes into a large brass temple donation box, marigold garlands and oil lamps glowing around it, warm evening light, festive crowd softly blurred behind. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a dark green blazer over a cream shirt. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "Most people give cash on Kartik Purnima, take a receipt, and feel smart. Yet that receipt may be worth nothing to the taxman.",
+   "text": "Most people give cash on Kartik Purnima, take a receipt, and feel smart. Yet that receipt may be worth nothing to the taxman.",
+   "words": 23
+  },
+  "summary": "Explains Section 80G in simple words: which donations qualify, the 50% or 100% rule, no cash deduction above ₹2,000, and that the new tax regime gives no deduction. Check the Income Tax Act text and the Income Tax Department's list of approved trusts.",
+  "target_minutes": null,
+  "title": "Kartik Purnima par 10,000 ka daan, tax mein kitna bachega?",
+  "topic_score": 6,
+  "topic_score_why": [
+   "+3 touches the viewer's own money",
+   "+1 a choice the viewer faces",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "voice": "voice_g8azc8xcwhlu",
+  "weekly": true
+ },
+ "updated": "2026-11-17T19:39:35+00:00",
+ "writer": "claude"
+}
