@@ -640,7 +640,7 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
                 bank = topics.next_money_history(root / "content", used, avoid=avoid)
                 if bank:
                     return bank
-            return topics.pick_finance(topics.fetch_all(), used, datetime.now(timezone.utc), avoid=avoid)
+            return topics.pick_finance(topics.fetch_all(), used, datetime.now(timezone.utc), avoid=avoid, never=themes.never(piece))
         if piece.kind == "long":
             return topics.next_myth_long(root / "content", used, topics.proven_shorts(root, "arthvan"))
         return topics.next_myth(root / "content", used)
