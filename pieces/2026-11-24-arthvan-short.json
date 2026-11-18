@@ -96,7 +96,15 @@
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
-  "intro_sent": "2026-11-17T19:26:17+00:00"
+  "intro": {
+   "clip": "2026-11-24-arthvan-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-18T08:09:03+00:00",
+   "seconds": 8.38
+  },
+  "intro_checked": "9ff92d9d41059088",
+  "intro_sent": "2026-11-17T19:26:17+00:00",
+  "yt_id": "3x48ZyzoJXI"
  },
  "kind": "short",
  "publish_day": "2026-11-24",
@@ -312,7 +320,7 @@
   },
   "title": "Hanuman ji ka *janm* kahan hua? 🤯"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   3.437,
@@ -382,6 +390,7 @@
    "text": "Ek hi Hanuman ji, lekin janm ke teen dawedaar pahad! Hampi, Tirumala ya Anjaneri... aakhir kiska dawa sach hai, aur kiska sirf bhakti?",
    "words": 23
   },
+  "look": "indian-comic",
   "notes": "Present all three claims as disputed; scripture for the birth story.",
   "place": "Anjaneri / Hampi / Tirumala",
   "target_minutes": null,
@@ -396,6 +405,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-17T19:26:32+00:00",
+ "updated": "2026-11-18T08:09:13+00:00",
  "writer": "claude"
 }
