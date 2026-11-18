@@ -105,6 +105,9 @@
    "voice": 8
   },
   "drafts": 1,
+  "ig_reel_id": "18094611074199852",
+  "ig_story_id": "18126830180291890",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-18-sglearning-short.mp4",
    "clip_seconds": 1,
@@ -115,6 +118,8 @@
   "intro_sent": "2026-11-12T07:45:49+00:00",
   "out_sha": "0de6b39416402b5d0cf44d660c091f71bdf1daeb",
   "out_sha_intro": true,
+  "threads_id": "18131246528311628",
+  "threads_poll_id": "17990508551878176",
   "yt_id": "joU1BDky-Ds"
  },
  "kind": "short",
@@ -269,7 +274,7 @@
   },
   "title": "Sahara ka *refund* aaj tak kyun atka? 🔒"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   3.293,
@@ -313,6 +318,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-12T10:32:26+00:00",
+ "updated": "2026-11-18T16:20:55+00:00",
  "writer": "claude"
 }
