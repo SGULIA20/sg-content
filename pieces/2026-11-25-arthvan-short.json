@@ -1,0 +1,364 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "archaeology",
+   "number": 2018.0,
+   "quote": "The excavations in Sinauli were conducted by Archaeological Survey of India (ASI) from 2005-2006 and in mid-2018.",
+   "source_date": "2018-06-08",
+   "source_name": "ASI",
+   "source_url": "https://en.wikipedia.org/wiki/Sinauli",
+   "text": "The Archaeological Survey of India carried out excavations at Sinauli in the Baghpat district during 2005–2006 and mid-2018.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 4000.0,
+   "quote": "According to the ¹⁴C radiocarbon dating and recovered material culture, the site date back to 4000 yr BP (∼2000 BCE) and is thought to belong to Ochre-Coloured Pottery (OCP)/Copper Hoard culture.",
+   "source_date": "2024-09-30",
+   "source_name": "Cambridge University Press & Assessment",
+   "source_url": "https://doi.org/10.1017/RDC.2024.90",
+   "text": "Radiocarbon dating places the Sinauli burials and organic cultural material at approximately 2000 to 1800 BCE, around 4,000 years before present.",
+   "unit": "years"
+  },
+  {
+   "label": "archaeology",
+   "number": 8.0,
+   "quote": "The excavation team reportedly found two cart-like vehicles and eight well-preserved corpses in coffins that appeared to have been mounted on a pedestal.",
+   "source_date": "2018-06-08",
+   "source_name": "ASI",
+   "source_url": "https://thewire.in/history/asi-claims-to-have-found-harappan-era-chariots-at-excavation-site-in-up",
+   "text": "Archaeologists excavated eight burial pits at the site containing wooden coffins mounted on legs with lids featuring anthropomorphic figures.",
+   "unit": "count"
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "In his opinion, several indications suggest that the Sanauli “chariots” are actually carts yoked to bulls, as in the copper sculpture of a bull-cart from the Late Harappan site of Daimabad in Maharashtra.",
+   "source_date": "2020-10-23",
+   "source_name": "Studia Orientalia Electronica",
+   "source_url": "https://journal.fi/store/article/view/98032",
+   "text": "While ASI excavation director Sanjay Manjul identified the vehicles as horse-drawn war chariots, Indologist Asko Parpola argued that their solid wheels indicate ox-drawn carts.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "Several scholars have noted that solid wheels belong to carts, not chariots.",
+   "source_date": "2020-10-23",
+   "source_name": "Wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/Sinauli",
+   "text": "Historians dispute whether the vehicles meet the technological criteria of chariots, because classical war chariots require light spoked wheels rather than solid wooden discs.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "According to Asko Parpola, these finds were ox-pulled carts, indicating that these burials are related to an early Aryan migration of Proto-Indo-Iranian speaking people into the Indian subcontinent.",
+   "source_date": "2020-10-23",
+   "source_name": "Studia Orientalia Electronica",
+   "source_url": "https://journal.fi/store/article/view/98032",
+   "text": "Researchers disagree on whether Sinauli represents a local development of the Copper Hoard culture or an early wave of Indo-Iranian pastoralists migrating into northern India.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": 5.0,
+   "quote": "Give us just five villages, Duryodhana, and we will be content.",
+   "source_date": "1975",
+   "source_name": "Mahabharata, Udyoga Parva",
+   "source_url": "https://en.wikipedia.org/wiki/Udyoga_Parva",
+   "text": "In the Mahabharata's Udyoga Parva, peace emissaries propose that granting five specific villages to the Pandavas would resolve the territorial conflict without war.",
+   "unit": "count"
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "Baghpat was originally known as Vyaghraprastha ('tiger city') and is traditionally regarded as one of the five villages demanded by the Pandavas.",
+   "source_date": "2020",
+   "source_name": "District Administration Baghpat",
+   "source_url": "https://en.wikipedia.org/wiki/Baghpat",
+   "text": "Local traditions in western Uttar Pradesh associate the modern town of Baghpat with Vyaghraprastha, one of the five villages requested by the Pandavas in the epic tradition.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "Local legends tell that Sinauli is one of the five villages that god Krishna unsuccessfully negotiated with the Kaurava princes to avoid the War at Kurukshetra.",
+   "source_date": "2021-02-13",
+   "source_name": "Discovery Channel / Popular Tradition",
+   "source_url": "https://en.wikipedia.org/wiki/Sinauli",
+   "text": "Popular narratives and local folklore identify the Sinauli warriors and wheeled vehicles directly as physical remains of the Mahabharata conflict.",
+   "unit": null
+  }
+ ],
+ "id": "2026-11-25-arthvan-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-18",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 0.0,
+   "usd": 0.097176,
+   "voice": 0
+  },
+  "drafts": 1
+ },
+ "kind": "short",
+ "publish_day": "2026-11-25",
+ "reasons": [
+  "crashed: ValueError: could not convert string to float: '¹⁴c'"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Sinauli ki kabron mein 4,000 saal purane rath mile?\nASI ki khudai mein asli kabrein aur pahiyon wale vaahan nikle.\nEk vidwan kehte hain yuddh rath, doosre kehte hain bailgaadi.\nAap kya maante ho, rath ya bailgaadi?\nUs dost ko bhejo jo Mahabharat ko sirf kahani maanta hai.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#Mahabharat",
+     "#Archaeology",
+     "#AncientIndia",
+     "#IndianHistory",
+     "#Itihaas",
+     "#Rahasya"
+    ]
+   },
+   "threads": {
+    "text": "Sinauli ki kabron mein 4,000 saal purane rath mile? ASI ki khudai mein pahiyon wale vaahan nikle, par vidwan bante hue hain. Yuddh rath ya bailgaadi, aap kya maante ho? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Sinauli ka sawaal",
+     "00:00 Mahabharat ki katha",
+     "00:00 ASI ki khudai",
+     "00:00 Rath ya bailgaadi",
+     "00:00 Aaj ka Sinauli"
+    ],
+    "description": "Sinauli ki kabron mein 4,000 saal purane rath mile? ASI ki khudai mein asli kabrein, taboot aur pahiyon wale vaahan mile. Par vidwan bante hue hain, yuddh rath ya bailgaadi, aur Mahabharat ka rishta abhi lok-katha hai. Us dost ko bhejo jo Mahabharat ko sirf kahani maanta hai.",
+    "tags": [
+     "Sinauli",
+     "Sinauli chariot",
+     "Baghpat",
+     "ASI",
+     "Mahabharat",
+     "archaeology",
+     "ancient India",
+     "Copper Hoard",
+     "Asko Parpola",
+     "Indian history",
+     "Vyaghraprastha"
+    ],
+    "title": "Sinauli rath: ghode ke ya bail ke?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo Mahabharat ko sirf kahani maanta hai.",
+  "hook": "Sinauli ki kabron mein 4,000 saal purane rath mile?",
+  "scenes": [
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic dramatic wide view of a deep archaeological excavation pit in a flat farm field in western Uttar Pradesh at dusk, dark storm clouds rolling overhead, lightning on the horizon, the dark outline of an ancient wooden two-wheeled vehicle with glinting copper fittings half-exposed in the reddish earth, work lamps casting hard light, dust in the air, filling the frame",
+     "type": "art"
+    },
+    "vo": "Sinauli ki kabron mein 4,000 saal purane rath mile? Kya yeh Mahabharat ke yodha the?"
+   },
+   {
+    "facts_used": [
+     6,
+     8
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic cinematic scene in an ancient Indian royal hall lit by oil lamps, carved stone pillars, a messenger in dhoti and angavastram standing before a seated king on a raised stone throne, courtiers in silk dhotis watching tensely, warm flickering light, documentary style",
+     "type": "art"
+    },
+    "vo": "Mahabharat, Udyoga Parva. Pandav kehte hain, bas kuch gaon de do, yuddh nahi hoga. Baat nahi bani."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an elderly Indian grandmother in a cotton saree sitting on a charpai in a village courtyard at evening, children in kurtas listening around her, an oil lamp glowing, mud walls and a neem tree, natural soft light",
+     "type": "art"
+    },
+    "vo": "Lok-katha kehti hai, Baghpat hi Vyaghraprastha tha, yaani baagh ka shehar. Lekin mitti ke neeche kya hai?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial drone view of a small village in western Uttar Pradesh surrounded by green sugarcane fields, a rectangular excavation site with neat trenches and blue tarpaulin sheds at its edge, morning haze, natural light",
+     "type": "art"
+    },
+    "vo": "Baghpat ka gaon Sinauli. ASI, yaani Bharat ka puratatva vibhag, yahan khudai karta hai. 2018 mein bada khulasa."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view from above of an excavated burial pit, the decayed remains of a wooden coffin standing on short legs, faint human-like figures in copper on the lid, an archaeologist's gloved hand brushing soil away with a soft brush, earthy tones, natural light",
+     "type": "art"
+    },
+    "vo": "Neeche kabrein milti hain, pairon wale lakdi ke taboot. Dhakkan par insaan jaisi aakritiyan. Yeh aam log nahi the."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic laboratory scene, a scientist in a white coat seen from behind holding a tiny sample of ancient charred wood with tweezers under a bright lamp, glass vials and sample trays on a steel bench, cool clean light, no text and no screens",
+     "type": "art"
+    },
+    "vo": "Radiocarbon dating, yaani vigyan se umar ka hisaab. Jawab, lagbhag 4,000 saal. Lekin twist abhi baaki hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic reconstruction of an ancient Indian warrior in leather armour standing on a light two-wheeled war chariot pulled by two horses across a dusty plain at sunrise, holding a bow, dust rising, seen from a low side angle",
+     "type": "art"
+    },
+    "vo": "Kabron ke saath pahiyon wale vaahan mile. Khudai ke director Sanjay Manjul bole, yeh ghodon wale yuddh rath hain."
+   },
+   {
+    "facts_used": [
+     3,
+     4
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a heavy solid wooden disc wheel lying in excavated earth, its grain and cracks visible, beside it a rough reconstruction of an ancient Indian bullock cart with two oxen in a field, overcast natural light",
+     "type": "art"
+    },
+    "vo": "Par itihaas ke vidwan Asko Parpola nahi maante. Pahiye thos hain, aur thos pahiye bailgaadi ke hote hain."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic museum-style view of ancient copper swords, spearheads and a copper shield laid on dark cloth under a single warm spotlight, their green-brown patina glowing, shallow depth of field",
+     "type": "art"
+    },
+    "vo": "Yeh log kaun the? Kuch kehte, tambe ke hathiyaron wali yahin ki sanskriti. Kuch kehte, bahar se aaye charwahe."
+   },
+   {
+    "facts_used": [
+     3,
+     4
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic split view at the same riverbank in ancient north India at dusk: on one side a horse standing in shadow, on the other a white ox with long horns, an empty wooden cart between them, misty golden light",
+     "type": "art"
+    },
+    "vo": "Aur gaadi kheenchta kaun tha, ghoda ya bail? Aaj tak koi nahi jaanta."
+   },
+   {
+    "facts_used": [
+     1,
+     8
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of the excavated Sinauli burial trenches at golden hour, a lone archaeologist in a cotton shirt kneeling at the edge looking down at the ancient remains, long shadows across the soil",
+     "type": "art"
+    },
+    "vo": "Twist yeh hai, kabrein asli, umar bhi asli. Par Mahabharat se rishta, abhi sirf lok-katha hai."
+   },
+   {
+    "facts_used": [
+     7,
+     8
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary view of village elders in white dhotis and turbans sitting under a large banyan tree in a western Uttar Pradesh village, one gesturing while telling a story, young men listening, afternoon sunlight through leaves",
+     "type": "art"
+    },
+    "vo": "Baghpat ke bujurg aaj bhi yahi katha sunate hain. Aap kya maante, rath ya bailgaadi?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a quiet field at night above the Sinauli excavation site, a vast starry sky over the dark trenches, a single oil lamp glowing on the edge of the pit, calm and mysterious mood",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo Mahabharat ko sirf kahani maanta hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "SINAULI",
+   "name_hi": "सिनौली",
+   "scene": "A deep excavation pit in a dark farm field under a stormy dusk sky, the remains of an ancient wooden two-wheeled vehicle with glinting copper fittings lying beside a decayed coffin in the red earth, lit by harsh work lamps.",
+   "words": [
+    "4,000 SAAL",
+    "PROOF?"
+   ],
+   "words_hi": [
+    "4,000 साल",
+    "सबूत?"
+   ]
+  },
+  "title": "Sinauli ki kabron mein *rath*? 🤯"
+ },
+ "status": "failed-crash",
+ "timings": [],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "en.wikipedia.org"
+  ],
+  "from_bank": true,
+  "hooks": [
+   "4,000 saal purane rath India mein mile?",
+   "Mahabharat ke rath aise the?",
+   "Sinauli ke yodhaon ki kabrein"
+  ],
+  "id": "sinauli-chariots",
+  "notes": "Chariot vs cart debate is disputed; the Mahabharata link is legend unless a source says otherwise.",
+  "place": "Baghpat, Uttar Pradesh",
+  "target_minutes": null,
+  "title_hi": "Sinauli ke rath",
+  "topic_score": 6,
+  "topic_score_why": [
+   "+4 one of the most-watched names",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "weekly": true
+ },
+ "updated": "2026-11-18T22:18:18+00:00",
+ "writer": "claude"
+}
