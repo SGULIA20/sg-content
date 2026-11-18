@@ -174,7 +174,7 @@ def news_score(item: dict) -> int:
     return score(item) - (4 if any(w in blob for w in RESULTS + RATE_TABLE) else 0)
 
 
-def pick_finance(items: list, used_links: set, now: datetime, news: bool = False, hours: int = FRESH_HOURS, avoid=()) -> dict | None:
+def pick_finance(items: list, used_links: set, now: datetime, news: bool = False, hours: int = FRESH_HOURS, avoid=(), never=()) -> dict | None:
     """The best household money story of the last `hours`. For the buffer (news=False) a headline tied to a day is skipped;
     for the same-day news Short (news=True) it is welcome, but the daily market call never is."""
     fresh = [i for i in items if i.get("published") and now - i["published"] <= timedelta(hours=hours)
@@ -183,6 +183,9 @@ def pick_finance(items: list, used_links: set, now: datetime, news: bool = False
     if not fresh:
         return None
     from . import themes, topicscore
+    fresh = [i for i in fresh if themes.allowed(i, never)]            # 18 Nov 2026: a barred theme is never taken, even when nothing else is left
+    if not fresh:
+        return None
     fresh = [i for i in fresh if themes.allowed(i, avoid)] or fresh   # 11 Nov 2026: a theme used in the last days waits, unless nothing else is left
     best = max(fresh, key=lambda i: (score(i) + topicscore.score(i, "sglearning", now.date())[0] // 2, i["published"]))   # 7 Nov 2026: the YouTube-based rule breaks ties
     pts, why = topicscore.score(best, "sglearning", now.date())

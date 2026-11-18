@@ -13,19 +13,29 @@ from . import pieces
 THEMES = [                                    # first match wins: a bank fraud is a scam story, not a bank story
     ("scam", ["scam", "fraud", "ghotala", "chit fund", "ponzi", "loot", "thagi", "fake ", "farzi"]),
     ("market", ["sensex", "nifty", "share", "stock", " sip", "mutual fund", "ipo", "demat", "circuit", "bull run", "market", "fii", "dalal"]),
+    ("rbi", [" rbi", "reserve bank", "repo rate", "monetary policy"]),     # its own theme, ahead of loan and bank, so Shorts can leave it out (18 Nov 2026)
     ("gold", ["gold", "sona", "sone ", "silver", "chandi"]),
     ("loan", ["loan", " emi", "credit card", "cibil", "karz", "udhaar"]),
     ("tax", [" tax", "gst", "tds", "itr"]),
     ("insurance", ["insurance", "bima", "claim"]),
     ("jobs", ["naukri", "salary", " job", " pf ", "epf", "pension", "layoff", "hadtaal", "tankhwah", "gig "]),
     ("payments", ["upi", " note", "cash", "atm", "wallet", "digital payment"]),
-    ("bank", ["bank", " fd", "fixed deposit", "deposit", "rbi", "moratorium", "byaaj", "interest rate"]),
+    ("bank", ["bank", " fd", "fixed deposit", "deposit", "moratorium", "byaaj", "interest rate"]),
     ("prices", ["petrol", "diesel", "mehngai", "inflation", "daam", "price", "pyaaz", "onion", "lpg", "rupaya", "rupee", "kiraya", "fare", "tel "]),
     ("business", ["company", "startup", "airline", "telecom", "data ", "brand", "factory", "mill "]),
 ]
 GAP = {"market": 7}
 DEFAULT_GAP = 3
 SKIP_STATUS = ("rejected", "failed")
+# founder, 18 Nov 2026 ("Yes drop stock market and RBI headlines from Learning Shorts"): on Instagram three of four viewers swiped away
+# from these in the first 3 seconds (76-82 percent, against 37-41 for SG-MYTH the same evenings). Long videos may still take them.
+NEVER_SHORT = ("market", "rbi")
+
+
+def never(piece) -> tuple:
+    """Themes this piece may never take, whatever else is left."""
+    short = getattr(piece, "kind", None) == "short" or str(getattr(piece, "id", "")).endswith("-short")
+    return NEVER_SHORT if (piece.channel == "sglearning" and short) else ()
 
 
 def theme_of(topic) -> str:
@@ -51,7 +61,7 @@ def blocked(root: Path, piece, extra=()) -> set:
     """Themes `piece` may not take. `extra` is [(day, theme)] for topics planned but not yet saved as pieces (the weekly plan)."""
     near = [(p.publish_day, theme_of(p.topic)) for p in pieces.list_all(root)
             if p.channel == piece.channel and p.id != piece.id and not str(p.status).startswith(SKIP_STATUS)]
-    out = set()
+    out = set(never(piece))
     for day, th in list(near) + list(extra):
         if th and abs((day - piece.publish_day).days) <= gap(th):
             out.add(th)
