@@ -625,9 +625,9 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
 
     def topic_fn(piece, used):
         from . import themes, weekly
-        avoid = themes.blocked(root, piece) if piece.channel == "sglearning" else set()   # 11 Nov 2026: no theme twice within days
+        avoid = themes.blocked(root, piece)                            # no theme twice within days: Learning 11 Nov 2026, SG-MYTH 18 Nov 2026
         planned = weekly.topic_for(root, piece, used)                  # 7 Nov 2026: the weekly YouTube research plan comes first
-        if planned and themes.allowed(planned, avoid):
+        if planned and themes.allowed(planned, avoid, piece.channel):
             return planned
         if piece.channel == "sglearning":
             if piece.kind == "long":                                   # 4 Nov 2026: a proven Short's question first, then the bank
@@ -642,8 +642,8 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
                     return bank
             return topics.pick_finance(topics.fetch_all(), used, datetime.now(timezone.utc), avoid=avoid, never=themes.never(piece))
         if piece.kind == "long":
-            return topics.next_myth_long(root / "content", used, topics.proven_shorts(root, "arthvan"))
-        return topics.next_myth(root / "content", used)
+            return topics.next_myth_long(root / "content", used, topics.proven_shorts(root, "arthvan"), avoid)
+        return topics.next_myth(root / "content", used, avoid=avoid)
 
     def upload_fn(piece, video, thumb):
         import os

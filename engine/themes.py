@@ -24,7 +24,29 @@ THEMES = [                                    # first match wins: a bank fraud i
     ("prices", ["petrol", "diesel", "mehngai", "inflation", "daam", "price", "pyaaz", "onion", "lpg", "rupaya", "rupee", "kiraya", "fare", "tel "]),
     ("business", ["company", "startup", "airline", "telecom", "data ", "brand", "factory", "mill "]),
 ]
+# SG-MYTH-WORLD (founder, 18 Nov 2026: "we are following the same topic for 7-8 days ... every day a new topic, altogether different from
+# the previous one"; six of the nine pieces of 16-24 Nov were Ramayan stories). First match wins: Hanuman is a Ramayan story, Jagannath a
+# Krishna one, a festival named for a deity counts as the festival.
+MYTH_THEMES = [
+    ("ramayan", ["ramayan", " ram ", "ram setu", "ravan", "sita", "hanuman", "lanka", "lakshman", "laxman", "jatayu", "surpanakha", "shurpanakha",
+                 "manthara", "kaushalya", "kaikeyi", "dashrath", "ayodhya", "valmiki", "sugriv", "kishkindha", "anjan", "bharat milap", "kumbhkaran",
+                 "meghnad", "vibhishan", "shabari"]),
+    ("mahabharat", ["mahabharat", " karna ", "karna ne", "karna ka", "arjun", "pandav", "kaurav", "draupadi", "kurukshetra", "bhishma", "ashwatthama", "duryodhan", "chakravyuh",
+                    "abhimanyu", " gita", "yudhishthir", "bhim ", "eklavya", "barbarik", "shakuni", "dronacharya"]),
+    ("festival", ["diwali", "deepawali", "dev uthani", "holi", "navratri", "purnima", "ekadashi", " vrat", "chhath", "kumbh mela", "mahakumbh", " mela",
+                  "tulsi vivah", "sankranti", "shivratri", "janmashtami", "rath yatra", "dussehra", "karva"]),
+    ("krishna", ["krishna", "dwarka", "vrindavan", "mathura", "radha", "jagannath", "puri ", "govardhan", "kanha", "banke bihari"]),
+    ("shiva", ["shiv", "mahadev", "kailash", "kedarnath", "jyotirling", "tripur", "kashi", "nataraj", "amarnath", "somnath", "rudra", "bholenath",
+               "kirtimukha", "nandi", "mahakal"]),
+    ("vishnu", ["vishnu", "tirupati", "balaji", "narayan", "shaligram", "dashavatar", "narasimha", "vaikunth", "padmanabh", "badrinath", "varaha", "vaman"]),
+    ("devi", ["devi", "durga", "kali ", "shakti", "yogini", "kamakhya", "lakshmi", "saraswati", "parvati", " sati", "vaishno", "chamunda"]),
+    ("history", ["fort", " kila", "qila", "stupa", "pillar", "stambh", "harappa", "rakhigarhi", "indus", "library", "nalanda", "takshashila", "crater",
+                 "jheel", "cave", "gufa", "ellora", "ajanta", "mahabalipuram", "empire", "samrajya", " raja", "rani ", "sanchi", "hampi", "konark",
+                 "khajuraho", "lonar", "kumbhalgarh", "asirgarh", "unakoti", "archaeolog", "asi ", "khudai", "sikka", "coin", "inscription", "shilalekh"]),
+    ("temple", ["mandir", "temple", "dham", "tirth"]),
+]
 GAP = {"market": 7}
+MYTH_GAP = 2                                 # the same theme at most every third day on SG-MYTH-WORLD
 DEFAULT_GAP = 3
 SKIP_STATUS = ("rejected", "failed")
 # founder, 18 Nov 2026 ("Yes drop stock market and RBI headlines from Learning Shorts"): on Instagram three of four viewers swiped away
@@ -38,35 +60,35 @@ def never(piece) -> tuple:
     return NEVER_SHORT if (piece.channel == "sglearning" and short) else ()
 
 
-def theme_of(topic) -> str:
+def theme_of(topic, channel: str = "sglearning") -> str:
     """The topic's theme, or "" when nothing matches (such a topic never clashes)."""
     if not topic:
         return ""
     if topic.get("theme"):
         return str(topic["theme"])
     head = " " + " ".join(str(x) for x in (topic.get("title"), topic.get("title_hi"), " ".join(topic.get("hooks") or [])) if x).lower() + " "
-    back = " " + str(topic.get("summary") or "").lower() + " "
+    back = " " + " ".join(str(topic.get(k) or "") for k in ("summary", "place", "notes")).lower() + " "
     for blob in (head, back):
-        for name, words in THEMES:
+        for name, words in (MYTH_THEMES if channel == "arthvan" else THEMES):
             if any(w in blob for w in words):
                 return name
     return ""
 
 
-def gap(theme: str) -> int:
-    return GAP.get(theme, DEFAULT_GAP)
+def gap(theme: str, channel: str = "sglearning") -> int:
+    return MYTH_GAP if channel == "arthvan" else GAP.get(theme, DEFAULT_GAP)
 
 
 def blocked(root: Path, piece, extra=()) -> set:
     """Themes `piece` may not take. `extra` is [(day, theme)] for topics planned but not yet saved as pieces (the weekly plan)."""
-    near = [(p.publish_day, theme_of(p.topic)) for p in pieces.list_all(root)
+    near = [(p.publish_day, theme_of(p.topic, piece.channel)) for p in pieces.list_all(root)
             if p.channel == piece.channel and p.id != piece.id and not str(p.status).startswith(SKIP_STATUS)]
     out = set(never(piece))
     for day, th in list(near) + list(extra):
-        if th and abs((day - piece.publish_day).days) <= gap(th):
+        if th and abs((day - piece.publish_day).days) <= gap(th, piece.channel):
             out.add(th)
     return out
 
 
-def allowed(topic, avoid) -> bool:
-    return theme_of(topic) not in set(avoid or ())
+def allowed(topic, avoid, channel: str = "sglearning") -> bool:
+    return theme_of(topic, channel) not in set(avoid or ())
