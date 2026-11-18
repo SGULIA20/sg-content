@@ -119,7 +119,9 @@ def _prompt(channel: str, slots_: list, rows: list, today: date, calendar: list,
             f"Topics already covered recently (do not repeat or rephrase): {'; '.join(seen[-40:]) or 'none'}.\n\n"
             f"Propose ONE topic for each slot below. A long video is a deeper telling of a big story; a Short is one sharp question. Use the signals: a scare or a "
             f"choice tied to money (finance) or a famous name with a shock question or an untold angle (mythology). Tie a topic to a festival only when it truly fits. "
-            f"Every topic must be checkable against real sources.\nSlots:\n{todo}\n\n"
+            f"Every topic must be checkable against real sources. SHUFFLE the week: no two days in a row from the same theme "
+            f"({'the same epic, deity or kind of place: a Ramayan day is followed by something that is not Ramayan' if channel == 'arthvan' else 'for example two loan days or two tax days'}), "
+            f"and no theme more than twice in the week.\nSlots:\n{todo}\n\n"
             f'Reply with JSON only: a list of {{"slot": "<slot id>", "title": "<Hinglish title as a question, Latin script, no emoji, no asterisks>", "summary": "<at most 40 words: what the video '
             f'explains and which facts must be checked>", "hooks": ["<opening question 1>", "<opening question 2>"], "why": "<which signal or date this follows>"}}.')
 
@@ -194,9 +196,9 @@ def build(root: Path, today: date, rows: dict, ask=_ask_claude, calendar: list |
         for pid, _c, kind, day in sorted(mine, key=lambda m: m[0] not in proposals):   # researched proposals claim their themes first; the banks fit round them
             d = proposals.get(pid)
             topic = None
-            avoid = themes.blocked(root, SimpleNamespace(id=pid, channel=ch, publish_day=day), week) if ch == "sglearning" else set()
-            if d and not themes.allowed({"title": d["title"], "summary": d.get("summary", ""), "hooks": d.get("hooks") or []}, avoid):
-                notes.append(f"{pid}: proposal '{d['title'][:50]}' dropped (same theme within days: {themes.theme_of(d)})")
+            avoid = themes.blocked(root, SimpleNamespace(id=pid, channel=ch, publish_day=day), week)
+            if d and not themes.allowed({"title": d["title"], "summary": d.get("summary", ""), "hooks": d.get("hooks") or []}, avoid, ch):
+                notes.append(f"{pid}: proposal '{d['title'][:50]}' dropped (same theme within days: {themes.theme_of(d, ch)})")
                 d = None
             if d:
                 text = {"title": d["title"], "summary": d.get("summary", ""), "hooks": d.get("hooks") or []}
@@ -208,14 +210,14 @@ def build(root: Path, today: date, rows: dict, ask=_ask_claude, calendar: list |
                 else:
                     notes.append(f"{pid}: proposal '{d['title'][:50]}' dropped ({pts} points{', repeat' if repeats(d['title'], used_here) else ''})")
             if topic is None:                                                       # a gap: the best unused bank topic
-                bank = (topics.next_money_history(content, used_ids, day, avoid) if ch == "sglearning" else topics.next_myth(content, used_ids, day)) \
+                bank = (topics.next_money_history(content, used_ids, day, avoid) if ch == "sglearning" else topics.next_myth(content, used_ids, day, avoid)) \
                     if not (ch == "sglearning" and kind == "long") else topics.next_long_finance(content, used_ids, avoid=avoid)
                 title = str(bank.get("title") or bank.get("title_hi") or "") if bank else ""
                 if bank and title not in used_here:                               # a bank that has run round once repeats itself: leave the slot to the usual flow
                     topic = {**bank, "weekly": True, "from_bank": True}
                     used_ids.add(bank.get("id"))
             if topic:
-                week.append((day, themes.theme_of(topic)))
+                week.append((day, themes.theme_of(topic, ch)))
                 used_here.append(str(topic.get("title") or topic.get("title_hi") or ""))
                 plan[pid] = topic
     return {"week_of": today.isoformat(), "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"), "entries": plan, "notes": notes,

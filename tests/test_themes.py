@@ -53,3 +53,23 @@ def test_learning_shorts_never_take_share_market_or_rbi_topics(tmp_path):
     got = topics.pick_finance(only, set(), now, news=True, never=themes.NEVER_SHORT)
     assert got is None or themes.theme_of(got) not in themes.NEVER_SHORT          # nothing else left: still not taken
 
+
+def test_sg_myth_topics_change_theme_from_day_to_day(tmp_path):
+    """Founder, 18 Nov 2026: 'every day a new topic, altogether different from the previous one' (six of nine pieces had been Ramayan)."""
+    from datetime import date
+    from types import SimpleNamespace as NS
+    from engine import pieces, themes, topics
+    from engine.pieces import Piece
+    th = lambda title: themes.theme_of({"title": title}, "arthvan")
+    assert th("Jatayu ne Ravan ka rath sach mein toda?") == "ramayan" and th("Prayagraj mein Hanuman ji lete hue kyun hain?") == "ramayan"
+    assert th("Karna roz Surya ko arghya dene ke baad kya deta tha?") == "mahabharat" and th("Hampi, Karnataka ke khandhar") == "history"
+    assert th("Jagannath mandir ka jhanda roz kaun badalta hai?") == "krishna" and th("Tulsi ka vivah Shaligram se hi kyun hota hai?") == "vishnu"
+    pieces.save(Piece(id="2026-11-24-arthvan-short", channel="arthvan", kind="short", publish_day=date(2026, 11, 24), status="uploaded",
+                      topic={"id": "x", "title": "Hanuman ka janm sthan, kaun sa sach?"}), tmp_path)
+    nxt = NS(id="2026-11-25-arthvan-short", channel="arthvan", kind="short", publish_day=date(2026, 11, 25))
+    assert themes.blocked(tmp_path, nxt) == {"ramayan"}
+    assert themes.blocked(tmp_path, NS(id="2026-11-27-arthvan-short", channel="arthvan", kind="short", publish_day=date(2026, 11, 27))) == set()
+    got = topics.next_myth(topics.CONTENT_DIR, set(), date(2026, 11, 25), avoid={"ramayan", "history"})
+    assert themes.theme_of(got, "arthvan") not in ("ramayan", "history")
+    assert not themes.allowed({"title": "Sita ki agni pariksha"}, {"ramayan"}, "arthvan")
+

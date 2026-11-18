@@ -272,13 +272,14 @@ def next_long_finance(root: Path, used_ids: set, proven: list = (), avoid=()) ->
     return bank[0]
 
 
-def next_myth(root: Path, used_ids: set, today=None) -> dict:
+def next_myth(root: Path, used_ids: set, today=None, avoid=()) -> dict:
     """The next unused topic; a famous, visual place (`priority: 1` in the bank) goes first (founder, 24 Oct 2026: Ram Setu reached
     1,564 on Instagram, Kailash's 'who climbed it' question 71; places people already know and can picture travel further)."""
     bank = load_myth_bank(root)
     fresh = [t for t in bank if t["id"] not in used_ids]
     if fresh:
-        from . import topicscore
+        from . import themes, topicscore
+        fresh = [t for t in fresh if themes.allowed(t, avoid, "arthvan")] or fresh      # 18 Nov 2026: a different theme from the days around it
         scored = {t["id"]: topicscore.score(t, "arthvan", today) for t in fresh}       # 7 Nov 2026: famous name, shock question, untold angle, festival of the week
         best = max(fresh, key=lambda t: (t.get("priority", 0) * 2 + scored[t["id"]][0], -bank.index(t)))
         return {**best, "topic_score": scored[best["id"]][0], "topic_score_why": scored[best["id"]][1]}
@@ -286,14 +287,15 @@ def next_myth(root: Path, used_ids: set, today=None) -> dict:
 
 
 
-def next_myth_long(root: Path, used_ids: set, proven: list = ()) -> dict:
+def next_myth_long(root: Path, used_ids: set, proven: list = (), avoid=()) -> dict:
     """The next SG-MYTH-WORLD long: first the bank topic of a proven Short (its 60-second question earned a 12-minute telling; 4 Nov 2026:
     Sanchi 1,979 Instagram views, Ram Setu 1,711, Rakhigarhi 1,472, Mahabharat date 1,396), then the usual rotation."""
+    from . import themes
     bank = load_myth_bank(root)
     for s in proven:
         base = str((s.get("topic") or {}).get("id", "")).split("#")[0]
         entry = next((t for t in bank if t.get("id") == base), None)
         lid = f"{base}#long"
-        if entry and lid not in used_ids:
+        if entry and lid not in used_ids and themes.allowed(entry, avoid, "arthvan"):
             return {**entry, "id": lid, "proven_short": s["id"], "proven_views": s["ig_views"]}
-    return next_myth(root, used_ids)
+    return next_myth(root, used_ids, avoid=avoid)
