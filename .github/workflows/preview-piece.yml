@@ -15,6 +15,10 @@ on:
         description: 'trailer mode only: commit that holds the long video own pictures (out/<id>/visual*.png), so none is painted again'
         required: false
         default: ''
+      lines:
+        description: 'trailer mode only: the question lines as a JSON array, to build an approved sample again word for word'
+        required: false
+        default: ''
 
 permissions:
   contents: read
@@ -53,7 +57,15 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TRAILER_PICTURES_FROM: ${{ inputs.pictures_from }}
+          TRAILER_LINES: ${{ inputs.lines }}
         run: python scripts/trailer_sample.py "${{ inputs.piece }}" out/trailer-sample
+      - name: Keep the sample trailer as a download
+        if: ${{ inputs.mode == 'trailer' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: trailer-sample
+          path: out/trailer-sample/*/trailer.mp4
+          retention-days: 3
       - name: Build the preview
         if: ${{ inputs.mode != 'script' && inputs.mode != 'trailer' }}
         env:

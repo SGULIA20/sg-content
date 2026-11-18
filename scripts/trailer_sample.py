@@ -52,6 +52,10 @@ def main(argv=None) -> int:
         panels.append(art.paint(full, out / f"visual{i:02d}.png", aspect=aspect))
     lines = []
     ask = teaser.intro_ask()
+    import os
+    fixed = os.environ.get("TRAILER_LINES", "").strip()             # the lines of a sample the founder approved: built again word for word
+    if fixed:
+        ask = lambda _prompt: fixed
     video = teaser.suspense_trailer(piece, panels, out, ask=lambda prompt: lines.append(ask(prompt)) or lines[-1])
     if video is None:
         print("no trailer: the writer gave no usable lines", lines[-1][:300] if lines else "")
