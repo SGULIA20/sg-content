@@ -11,6 +11,10 @@ on:
         description: 'video (default) = build the preview video; script = only write a trial script and intro prompt and send them; trailer = a sample of the suspense trailer Story of a long video'
         required: false
         default: 'video'
+      pictures_from:
+        description: 'trailer mode only: commit that holds the long video own pictures (out/<id>/visual*.png), so none is painted again'
+        required: false
+        default: ''
 
 permissions:
   contents: read
@@ -48,6 +52,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TRAILER_PICTURES_FROM: ${{ inputs.pictures_from }}
         run: python scripts/trailer_sample.py "${{ inputs.piece }}" out/trailer-sample
       - name: Build the preview
         if: ${{ inputs.mode != 'script' && inputs.mode != 'trailer' }}
