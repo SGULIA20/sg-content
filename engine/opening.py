@@ -54,10 +54,16 @@ def is_trial(piece, root: Path = None) -> bool:
 
 
 def speed(piece, root: Path = None) -> float:
-    """How much faster a new-style Short is spoken, the founder's intro and the narration alike (founder, 11 Nov 2026: "speed like 1.2x so
-    reel timings can be maintained and the explanation will also be there"). 1.0 for everything else."""
-    if piece.kind != "short" or not is_trial(piece, root):
+    """How much faster a new-style piece is spoken, the founder's intro and the narration alike (founder, 11 Nov 2026: "speed like 1.2x so
+    reel timings can be maintained and the explanation will also be there"). Long videos too from the day in `speed_longs_from`
+    (founder, 18 Nov 2026: "change long videos also to 1.2x speed for both channels"); longs made before that day keep their pace, so
+    a rebuild never changes an uploaded one. 1.0 for everything else."""
+    if not is_trial(piece, root):
         return 1.0
+    if piece.kind != "short":
+        start = _config(root).get("speed_longs_from")
+        if not start or str(piece.id)[:10] < str(start):
+            return 1.0
     try:
         return min(1.3, max(1.0, float(_config(root).get("speed", 1.0))))
     except (TypeError, ValueError):

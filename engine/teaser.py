@@ -103,6 +103,7 @@ def trailer(piece, long_video: Path, out_dir: Path, render=cards.render, seconds
 
 SUSPENSE_S = 20               # founder, 16 Nov 2026: "short scripts of suspense thriller questions ... max 20 seconds"
 SUSPENSE_LINES = (3, 4)
+TRAILER_SPEED = 1.2
 LINE_WORDS = 9
 
 
@@ -186,8 +187,10 @@ def suspense_trailer(piece, panels: list, out_dir: Path, ask=None, say=None, ren
         spoken.append((wav, say(text, wav)))
     pad = 0.25
     total = sum(d for _w, d in spoken) + pad * len(spoken)
-    if total > limit - 0.6:                                              # speak a little faster before anything is cut
-        spoken = assemble.faster(spoken, min(1.3, total / (limit - 0.6)), work / "fast")
+    # founder, 18 Nov 2026: the trailer is spoken at 1.2x like the videos; a little faster still (1.3x at most) before anything is cut
+    factor = min(1.3, max(TRAILER_SPEED, total / (limit - 0.6)))
+    if factor > 1.001:
+        spoken = assemble.faster(spoken, factor, work / "fast")
         total = sum(d for _w, d in spoken) + pad * len(spoken)
     while total > limit - 0.3 and len(spoken) > 3:                       # still too long: the weakest middle line goes, never the closing
         spoken.pop(-2); lines.pop(-2)
