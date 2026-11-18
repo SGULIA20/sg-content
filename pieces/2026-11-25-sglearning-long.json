@@ -69,13 +69,28 @@
    "drafts": 1,
    "research": 1
   },
+  "captions": {
+   "en": "AUieDaaIK7WKT5nYrRzAIcjbQkpHyD4HvFAfNyih1pOD3Fx0oj0b7fYl",
+   "gu": "AUieDaawH9SQ3--soKZXJl78bdwv51LtudDb6Y5hXWvFIFZAjIM0Me5Qb-C7l9MA_nI5PHf7VQ4",
+   "hi": "AUieDaaEgPRUOvoTpjl8ZGYZUtjiMbj7jDTN4gBgCo0z5qBAmpsVKdraMUaMDfaRTaIocIc",
+   "mr": "AUieDabvB3CUUDcMBOgDXnCYGwyk3DQlVI9bQBY_3skZHBca-3A9r_fvYFLL0cqPUWM",
+   "ta": "AUieDab05ZRms1TvmY3MSbnuOdhmGGFlBAjmgES2uRjxTHLkB9iz9ejfD05rj6bdh5g"
+  },
   "cost": {
    "inr": 99.0,
-   "usd": 0.317076,
-   "voice": 65
+   "usd": 0.720266,
+   "voice": 70
   },
   "drafts": 1,
-  "intro_sent": "2026-11-17T19:09:13+00:00"
+  "intro": {
+   "clip": "2026-11-25-sglearning-long.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-18T07:54:59+00:00",
+   "seconds": 9.59
+  },
+  "intro_checked": "0ba1ffebcb84c33a",
+  "intro_sent": "2026-11-17T19:09:13+00:00",
+  "yt_id": "UUDbk8OL4jQ"
  },
  "kind": "long",
  "publish_day": "2026-11-25",
@@ -813,7 +828,7 @@
   },
   "title": "10 lakh car: loan or cash, and the real 5-year cost"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   10.65,
@@ -926,10 +941,11 @@
     }
    ],
    "prompt": "16:9 landscape, 1920x1080, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: close view of a gleaming new silver hatchback on a polished Indian showroom floor, soft spotlights and reflections, the empty polished floor calm in the lower fifth. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a navy blazer over a white shirt, no tie. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1920x1080.",
-   "question": "You drive a 10 lakh car out of the showroom smiling, but something invisible is already draining its value. What is it?",
-   "text": "You drive a 10 lakh car out of the showroom smiling, but something invisible is already draining its value. What is it?",
-   "words": 22
+   "question": "Most families decide this in a hurry at the showroom desk, and it costs them lakhs. Loan or cash, which one is smarter?",
+   "text": "Most families decide this in a hurry at the showroom desk, and it costs them lakhs. Loan or cash, which one is smarter?",
+   "words": 23
   },
+  "look": "claymation",
   "summary": "Total cost of car ownership: loan interest, depreciation, insurance, fuel, service; the loan-vs-cash decision with opportunity cost, why a used car can be the smarter maths for many families.",
   "target_minutes": 12,
   "theme": "loan",
@@ -937,6 +953,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-17T19:09:25+00:00",
+ "updated": "2026-11-18T07:55:04+00:00",
  "writer": "claude"
 }

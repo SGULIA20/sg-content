@@ -85,7 +85,15 @@
    "voice": 9
   },
   "drafts": 1,
-  "intro_sent": "2026-11-17T19:39:23+00:00"
+  "intro": {
+   "clip": "2026-11-24-sglearning-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-18T07:28:09+00:00",
+   "seconds": 8.17
+  },
+  "intro_checked": "f659df006bdebbcb",
+  "intro_sent": "2026-11-17T19:39:23+00:00",
+  "yt_id": "XxnIlAa7Jys"
  },
  "kind": "short",
  "publish_day": "2026-11-24",
@@ -244,7 +252,7 @@
   },
   "title": "Does your donation really *cut* your tax? 🪔"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   4.509,
@@ -286,6 +294,7 @@
    "text": "Most people give cash on Kartik Purnima, take a receipt, and feel smart. Yet that receipt may be worth nothing to the taxman.",
    "words": 23
   },
+  "look": "claymation",
   "summary": "Explains Section 80G in simple words: which donations qualify, the 50% or 100% rule, no cash deduction above ₹2,000, and that the new tax regime gives no deduction. Check the Income Tax Act text and the Income Tax Department's list of approved trusts.",
   "target_minutes": null,
   "title": "Kartik Purnima par 10,000 ka daan, tax mein kitna bachega?",
@@ -299,6 +308,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-17T19:39:35+00:00",
+ "updated": "2026-11-18T07:28:16+00:00",
  "writer": "claude"
 }
