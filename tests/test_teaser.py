@@ -115,3 +115,16 @@ def test_suspense_lines_are_short_questions_or_nothing(tmp_path):
     assert teaser.suspense_lines(p, lambda prompt: f'["{long_line}", "a?", "b?"]') == []
     assert teaser.closing_line(p) == "Asli raaz YouTube par khulega. Link bio mein!"
     assert teaser.suspense_trailer(p, [], tmp_path, ask=lambda prompt: good) is None               # no pictures: nothing made
+
+
+def test_every_trailer_line_is_a_question_and_a_statement_is_asked_again(tmp_path):
+    """Founder, 18 Nov 2026: 'every trailer line should be a question'."""
+    p = _long(tmp_path)
+    replies = iter(['["A 10 lakh car. Driven out.", "Why is it worth less?", "You still owe the bank.", "What cost hides?"]',
+                    '["Who pays for the first drive?", "Why is it worth less?", "What cost hides?"]'])
+    asked = []
+    out = teaser.suspense_lines(p, lambda prompt: asked.append(prompt) or next(replies))
+    assert out == ["Who pays for the first drive?", "Why is it worth less?", "What cost hides?"]
+    assert len(asked) == 2 and "not questions" in asked[1] and "EVERY line is a question" in asked[0]
+    assert teaser.suspense_lines(p, lambda prompt: '["A statement.", "Another one.", "Third."]') == []   # never a statement on screen
+
