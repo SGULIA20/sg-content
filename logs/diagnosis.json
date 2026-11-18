@@ -1,17 +1,17 @@
 {
- "made": "2026-11-16",
+ "made": "2026-11-18",
  "channels": {
   "sglearning": {
-   "viewCount": "29212",
-   "subscriberCount": "305",
+   "viewCount": "30776",
+   "subscriberCount": "323",
    "hiddenSubscriberCount": false,
-   "videoCount": "130"
+   "videoCount": "131"
   },
   "arthvan": {
-   "viewCount": "15074",
-   "subscriberCount": "267",
+   "viewCount": "15831",
+   "subscriberCount": "294",
    "hiddenSubscriberCount": false,
-   "videoCount": "74"
+   "videoCount": "76"
   }
  },
  "rows": [
@@ -23,14 +23,14 @@
    "title": "Ram Setu: 103 reefs ya kisi ka banaya pul?",
    "yt_views": 43,
    "yt_watched_pct": 37.5,
-   "ig_views": 1600,
+   "ig_views": 1601,
    "ig_saves": 1,
-   "ig_skip_rate": 30.5,
+   "ig_skip_rate": 30.6,
    "th_views": 24,
    "yt_error": null,
    "ig_watch_s": 30.5,
    "hook": "Samundar ke beech ek pul, kya woh aaj bhi dikhta hai?",
-   "reach": 1667
+   "reach": 1668
   },
   {
    "id": "2026-10-21-sglearning-short",
@@ -38,7 +38,7 @@
    "day": "2026-10-21",
    "look": "doodle",
    "title": "Dividend ka ₹6.50 free hai? Agle din share kyun gira",
-   "yt_views": 41,
+   "yt_views": 42,
    "yt_watched_pct": 51.4,
    "ig_views": 1371,
    "ig_saves": 3,
@@ -47,7 +47,7 @@
    "yt_error": null,
    "ig_watch_s": 16.3,
    "hook": "Subah chai ke saath, Bhai ke phone par headline chamki.",
-   "reach": 1416
+   "reach": 1417
   },
   {
    "id": "2026-10-22-arthvan-short",
@@ -72,16 +72,16 @@
    "day": "2026-10-22",
    "look": "doodle",
    "title": "US Stocks 1 dollar se? Asli kharcha kya hai",
-   "yt_views": 46,
-   "yt_watched_pct": 45.5,
-   "ig_views": 1475,
+   "yt_views": 50,
+   "yt_watched_pct": 42.1,
+   "ig_views": 1476,
    "ig_saves": 4,
    "ig_skip_rate": 34.4,
    "th_views": 5,
    "yt_error": null,
-   "ig_watch_s": 16.8,
+   "ig_watch_s": 16.7,
    "hook": "Raat ko Bhai ka phone chamka, news thi, Zerodha par ab US stocks milenge.",
-   "reach": 1526
+   "reach": 1531
   },
   {
    "id": "2026-10-23-arthvan-short",
@@ -106,8 +106,8 @@
    "day": "2026-10-23",
    "look": "doodle",
    "title": "Meta $145B AI kharcha: SIP par kya asar?",
-   "yt_views": 32,
-   "yt_watched_pct": 42.0,
+   "yt_views": 37,
+   "yt_watched_pct": 36.8,
    "ig_views": 74,
    "ig_saves": 0,
    "ig_skip_rate": 66.1,
@@ -115,7 +115,7 @@
    "yt_error": null,
    "ig_watch_s": 6.6,
    "hook": "Subah chai ke saath, Bhai ke phone par khabar aayi.",
-   "reach": 110
+   "reach": 115
   },
   {
    "id": "2026-10-24-arthvan-short",
@@ -140,7 +140,7 @@
    "day": "2026-10-24",
    "look": "doodle",
    "title": "Core sector 7.9% upar, petrol sasta kyun nahi?",
-   "yt_views": 36,
+   "yt_views": 38,
    "yt_watched_pct": 30.8,
    "ig_views": 1324,
    "ig_saves": 2,
@@ -149,7 +149,7 @@
    "yt_error": null,
    "ig_watch_s": 17.2,
    "hook": "Raat ke 9 baje, TV pe khabar aayi: core sector 7.9 percent badha.",
-   "reach": 1365
+   "reach": 1367
   },
   {
    "id": "2026-10-25-arthvan-short",
@@ -157,16 +157,16 @@
    "day": "2026-10-25",
    "look": "doodle",
    "title": "Rakhigarhi DNA: Harappa ke log kaun the?",
-   "yt_views": 98,
+   "yt_views": 100,
    "yt_watched_pct": 107.6,
-   "ig_views": 1481,
+   "ig_views": 1482,
    "ig_saves": 1,
-   "ig_skip_rate": 27.6,
+   "ig_skip_rate": 27.7,
    "th_views": 3,
    "yt_error": null,
-   "ig_watch_s": 29.2,
+   "ig_watch_s": 29.1,
    "hook": "Haryana ke ek gaon ke neeche, kya poora shehar so raha hai?",
-   "reach": 1582
+   "reach": 1585
   },
   {
    "id": "2026-10-25-sglearning-short",
@@ -174,7 +174,7 @@
    "day": "2026-10-25",
    "look": "doodle",
    "title": "SIP fees: AMC ka 4.22 billion profit kaise?",
-   "yt_views": 42,
+   "yt_views": 43,
    "yt_watched_pct": 49.2,
    "ig_views": 47,
    "ig_saves": 0,
@@ -183,7 +183,7 @@
    "yt_error": null,
    "ig_watch_s": 4.4,
    "hook": "Results ka din hai, aur Bhai ke phone par notification bajta hai.",
-   "reach": 93
+   "reach": 94
   },
   {
    "id": "2026-10-26-arthvan-short",
@@ -208,7 +208,7 @@
    "day": "2026-10-26",
    "look": "doodle",
    "title": "Sensex 829 upar, phir bhi loss kyun?",
-   "yt_views": 69,
+   "yt_views": 71,
    "yt_watched_pct": 99.4,
    "ig_views": 59,
    "ig_saves": 0,
@@ -217,7 +217,7 @@
    "yt_error": null,
    "ig_watch_s": 8.3,
    "hook": "Budhvaar subah, office canteen mein Bhai ka phone lagataar baj raha hai.",
-   "reach": 139
+   "reach": 141
   },
   {
    "id": "2026-10-27-arthvan-short",
@@ -242,16 +242,16 @@
    "day": "2026-10-27",
    "look": "doodle",
    "title": "Sensex 74,682 se neeche kyun gira? Crude ka sach",
-   "yt_views": 42,
+   "yt_views": 43,
    "yt_watched_pct": 37.4,
-   "ig_views": 65,
+   "ig_views": 66,
    "ig_saves": 0,
-   "ig_skip_rate": 67.9,
-   "th_views": 11,
+   "ig_skip_rate": 68.5,
+   "th_views": 12,
    "yt_error": null,
-   "ig_watch_s": 6.9,
+   "ig_watch_s": 6.8,
    "hook": "Subah subah, Bhai ki screen par sab hara hi hara tha.",
-   "reach": 118
+   "reach": 121
   },
   {
    "id": "2026-10-28-arthvan-short",
@@ -276,7 +276,7 @@
    "day": "2026-10-28",
    "look": "claymation",
    "title": "Repo Rate cut hua, loan utna sasta kyun nahi?",
-   "yt_views": 51,
+   "yt_views": 52,
    "yt_watched_pct": 38.3,
    "ig_views": 181,
    "ig_saves": 0,
@@ -285,7 +285,7 @@
    "yt_error": null,
    "ig_watch_s": 7.3,
    "hook": "RBI ne byaaj ghataya, toh kya aapka loan bhi utna hi sasta hua?",
-   "reach": 239
+   "reach": 240
   },
   {
    "id": "2026-10-29-arthvan-short",
@@ -295,14 +295,14 @@
    "title": "Konark Magnet 52 Ton? Jahaaz Kyon Doobe",
    "yt_views": 209,
    "yt_watched_pct": 52.8,
-   "ig_views": 1313,
+   "ig_views": 1315,
    "ig_saves": 3,
-   "ig_skip_rate": 35.3,
+   "ig_skip_rate": 35.4,
    "th_views": 1,
    "yt_error": null,
    "ig_watch_s": 33.6,
    "hook": "Kya Konark mandir ke shikhar par 52 ton ka chumbak tha?",
-   "reach": 1523
+   "reach": 1525
   },
   {
    "id": "2026-10-29-sglearning-short",
@@ -310,7 +310,7 @@
    "day": "2026-10-29",
    "look": "claymation",
    "title": "US Stocks Safe Hain? Bada Naam, Bada Loss",
-   "yt_views": 77,
+   "yt_views": 78,
    "yt_watched_pct": 36.7,
    "ig_views": 226,
    "ig_saves": 1,
@@ -319,7 +319,7 @@
    "yt_error": null,
    "ig_watch_s": 11.6,
    "hook": "Bhai ne January mein phone kholke kaha, ab main America mein invest karunga.",
-   "reach": 318
+   "reach": 319
   },
   {
    "id": "2026-10-29-sglearning-x1",
@@ -344,16 +344,16 @@
    "day": "2026-10-29",
    "look": "claymation",
    "title": "Innodata layoffs: AI jobs pehle kyun gaye?",
-   "yt_views": 110,
+   "yt_views": 112,
    "yt_watched_pct": 39.5,
-   "ig_views": 310,
+   "ig_views": 311,
    "ig_saves": 2,
-   "ig_skip_rate": 54.5,
+   "ig_skip_rate": 54.7,
    "th_views": 11,
    "yt_error": null,
    "ig_watch_s": 10.2,
    "hook": "Innodata ne India mein reportedly 550 logon ko nikaala.",
-   "reach": 431
+   "reach": 434
   },
   {
    "id": "2026-10-30-arthvan-short",
@@ -363,14 +363,14 @@
    "title": "Hampi ke khambe bajte kyun hain? Angrez ya loot?",
    "yt_views": 215,
    "yt_watched_pct": 195.5,
-   "ig_views": 167,
+   "ig_views": 168,
    "ig_saves": 0,
-   "ig_skip_rate": 50,
+   "ig_skip_rate": 50.3,
    "th_views": 4,
    "yt_error": null,
-   "ig_watch_s": 9.1,
+   "ig_watch_s": 9.0,
    "hook": "Kya patthar ke khambe sach mein sur gaa sakte hain?",
-   "reach": 386
+   "reach": 387
   },
   {
    "id": "2026-10-30-sglearning-short",
@@ -378,16 +378,16 @@
    "day": "2026-10-30",
    "look": "claymation",
    "title": "Gold price gira, Dhanteras par khareedna sahi?",
-   "yt_views": 122,
+   "yt_views": 126,
    "yt_watched_pct": 30.4,
-   "ig_views": 1951,
+   "ig_views": 1952,
    "ig_saves": 6,
    "ig_skip_rate": 35.9,
    "th_views": 9,
    "yt_error": null,
    "ig_watch_s": 17.5,
    "hook": "Gold January se 21.43 percent gir chuka hai, pata tha?",
-   "reach": 2082
+   "reach": 2087
   },
   {
    "id": "2026-10-30-sglearning-x2",
@@ -412,7 +412,7 @@
    "day": "2026-10-30",
    "look": "claymation",
    "title": "Google aur Bitcoin ek saath kyun gire?",
-   "yt_views": 68,
+   "yt_views": 69,
    "yt_watched_pct": 54.7,
    "ig_views": 1242,
    "ig_saves": 1,
@@ -421,7 +421,7 @@
    "yt_error": null,
    "ig_watch_s": 9.9,
    "hook": "Google ke shares aur Bitcoin, dono ek saath kyun gire?",
-   "reach": 1318
+   "reach": 1319
   },
   {
    "id": "2026-10-31-arthvan-short",
@@ -429,7 +429,7 @@
    "day": "2026-10-31",
    "look": "indian-comic",
    "title": "Sanchi Stupa ke andar kya tha? Ashok ka raaz",
-   "yt_views": 156,
+   "yt_views": 158,
    "yt_watched_pct": 66.9,
    "ig_views": 2033,
    "ig_saves": 11,
@@ -438,7 +438,7 @@
    "yt_error": null,
    "ig_watch_s": 29.3,
    "hook": "Sanchi ke stupa ke andar Buddha ki asthiyan thi ya nahi?",
-   "reach": 2189
+   "reach": 2191
   },
   {
    "id": "2026-10-31-sglearning-short",
@@ -446,8 +446,8 @@
    "day": "2026-10-31",
    "look": "claymation",
    "title": "Buffett ne biwi ke liye 90% kahan rakha?",
-   "yt_views": 59,
-   "yt_watched_pct": 24.2,
+   "yt_views": 66,
+   "yt_watched_pct": 23.1,
    "ig_views": 129,
    "ig_saves": 0,
    "ig_skip_rate": 55.8,
@@ -455,7 +455,7 @@
    "yt_error": null,
    "ig_watch_s": 10.1,
    "hook": "Warren Buffett ne apni biwi ke liye kya chuna?",
-   "reach": 197
+   "reach": 204
   },
   {
    "id": "2026-10-31-sglearning-x2",
@@ -463,7 +463,7 @@
    "day": "2026-10-31",
    "look": "claymation",
    "title": "Home Loan EMI kyun nahi giri? RBI ka naya data",
-   "yt_views": 68,
+   "yt_views": 69,
    "yt_watched_pct": 398.6,
    "ig_views": 144,
    "ig_saves": 0,
@@ -472,7 +472,7 @@
    "yt_error": null,
    "ig_watch_s": 4.6,
    "hook": "Naya loan 8.51 percent, aapka purana loan abhi bhi 8.96?",
-   "reach": 212
+   "reach": 213
   },
   {
    "id": "2026-10-31-sglearning-x3",
@@ -480,8 +480,8 @@
    "day": "2026-10-31",
    "look": "claymation",
    "title": "Jio Profit 14% Up: Paisa Aapki Jeb Se?",
-   "yt_views": 84,
-   "yt_watched_pct": 32.8,
+   "yt_views": 86,
+   "yt_watched_pct": 31.9,
    "ig_views": 11,
    "ig_saves": 0,
    "ig_skip_rate": 40,
@@ -489,7 +489,7 @@
    "yt_error": null,
    "ig_watch_s": 19.2,
    "hook": "Jio ne ek quarter mein 8,387 crore kamaye, profit 14% upar.",
-   "reach": 98
+   "reach": 100
   },
   {
    "id": "2026-10-31-sglearning-x6",
@@ -497,7 +497,7 @@
    "day": "2026-10-31",
    "look": "claymation",
    "title": "Tech shares crash: 95 lakh crore kahan gaye?",
-   "yt_views": 91,
+   "yt_views": 92,
    "yt_watched_pct": 23.6,
    "ig_views": 230,
    "ig_saves": 1,
@@ -506,7 +506,7 @@
    "yt_error": null,
    "ig_watch_s": 11.2,
    "hook": "Tech shares ke 95 lakh crore rupaye, ek din mein saaf.",
-   "reach": 330
+   "reach": 331
   },
   {
    "id": "2026-11-01-arthvan-short",
@@ -516,14 +516,14 @@
    "title": "Ram Setu: 103 reefs ya insaani setu?",
    "yt_views": 1099,
    "yt_watched_pct": 83.5,
-   "ig_views": 1801,
+   "ig_views": 1802,
    "ig_saves": 2,
    "ig_skip_rate": 31.2,
    "th_views": 12,
    "yt_error": null,
    "ig_watch_s": 35.3,
    "hook": "Ram Setu ke neeche drill kiya gaya, toh kya mila?",
-   "reach": 2912
+   "reach": 2913
   },
   {
    "id": "2026-11-01-sglearning-short",
@@ -531,8 +531,8 @@
    "day": "2026-11-01",
    "look": "claymation",
    "title": "US Stocks Zerodha: bhejte hi tax kyun katega?",
-   "yt_views": 126,
-   "yt_watched_pct": 30.9,
+   "yt_views": 135,
+   "yt_watched_pct": 30.1,
    "ig_views": 5,
    "ig_saves": 0,
    "ig_skip_rate": 100,
@@ -540,7 +540,7 @@
    "yt_error": null,
    "ig_watch_s": 1.8,
    "hook": "Nvidia kharidne chale, aur 20 percent pehle hi kat gaya?",
-   "reach": 144
+   "reach": 153
   },
   {
    "id": "2026-11-01-sglearning-x1",
@@ -548,8 +548,8 @@
    "day": "2026-11-01",
    "look": "claymation",
    "title": "Charity Trust Rules: Kya Badla?",
-   "yt_views": 67,
-   "yt_watched_pct": 34.5,
+   "yt_views": 73,
+   "yt_watched_pct": 32.5,
    "ig_views": 3,
    "ig_saves": 0,
    "ig_skip_rate": 66.7,
@@ -557,7 +557,7 @@
    "yt_error": null,
    "ig_watch_s": 1.7,
    "hook": "Merge ke baad charity ka maksad 5 saal fix, aur 9 khabrein.",
-   "reach": 70
+   "reach": 76
   },
   {
    "id": "2026-11-01-sglearning-x2",
@@ -565,8 +565,8 @@
    "day": "2026-11-01",
    "look": "claymation",
    "title": "Binance hack: paisa wapas milega?",
-   "yt_views": 92,
-   "yt_watched_pct": 39.1,
+   "yt_views": 98,
+   "yt_watched_pct": 36.6,
    "ig_views": 5,
    "ig_saves": 0,
    "ig_skip_rate": 75,
@@ -574,7 +574,7 @@
    "yt_error": null,
    "ig_watch_s": 7.6,
    "hook": "Binance se record chori hui, phir 90 percent wapas?",
-   "reach": 99
+   "reach": 105
   },
   {
    "id": "2026-11-01-sglearning-x3",
@@ -582,8 +582,8 @@
    "day": "2026-11-01",
    "look": "claymation",
    "title": "Vodafone ka naya maalik, Vi users ka kya hoga?",
-   "yt_views": 140,
-   "yt_watched_pct": 58.0,
+   "yt_views": 157,
+   "yt_watched_pct": 52.5,
    "ig_views": 6,
    "ig_saves": 0,
    "ig_skip_rate": 66.7,
@@ -591,7 +591,7 @@
    "yt_error": null,
    "ig_watch_s": 3.0,
    "hook": "Vodafone ka 16.2 percent hissa ab French arabpati ka.",
-   "reach": 147
+   "reach": 164
   },
   {
    "id": "2026-11-01-sglearning-x4",
@@ -599,8 +599,8 @@
    "day": "2026-11-01",
    "look": "claymation",
    "title": "Reliance profit 29,550 crore: aapko kya?",
-   "yt_views": 84,
-   "yt_watched_pct": 32.7,
+   "yt_views": 89,
+   "yt_watched_pct": 31.6,
    "ig_views": 216,
    "ig_saves": 0,
    "ig_skip_rate": 68.1,
@@ -608,7 +608,7 @@
    "yt_error": null,
    "ig_watch_s": 7.0,
    "hook": "Reliance ka profit 29,550 crore, ab tak ka sabse bada.",
-   "reach": 303
+   "reach": 308
   },
   {
    "id": "2026-11-02-arthvan-short",
@@ -618,14 +618,14 @@
    "title": "Kedarnath ki deewar par glacier ke nishaan?",
    "yt_views": 396,
    "yt_watched_pct": 72.2,
-   "ig_views": 1959,
+   "ig_views": 1960,
    "ig_saves": 7,
    "ig_skip_rate": 26.5,
    "th_views": 2,
    "yt_error": null,
    "ig_watch_s": 35.4,
    "hook": "Kedarnath ki deewaron par glacier ke nishaan kyun hain?",
-   "reach": 2357
+   "reach": 2358
   },
   {
    "id": "2026-11-02-sglearning-short",
@@ -633,8 +633,8 @@
    "day": "2026-11-02",
    "look": "claymation",
    "title": "Gold Bond jaldi bechein? 2.5% byaaj ka sawaal",
-   "yt_views": 145,
-   "yt_watched_pct": 31.6,
+   "yt_views": 155,
+   "yt_watched_pct": 30.6,
    "ig_views": 132,
    "ig_saves": 1,
    "ig_skip_rate": 53.8,
@@ -642,7 +642,7 @@
    "yt_error": null,
    "ig_watch_s": 5.4,
    "hook": "Sone ka bond, upar se 2.5 percent byaaj. Bechein ya rukein?",
-   "reach": 278
+   "reach": 288
   },
   {
    "id": "2026-11-02-sglearning-x1",
@@ -650,16 +650,16 @@
    "day": "2026-11-02",
    "look": "claymation",
    "title": "Gold Silver kyun gire? 10 badi khabrein",
-   "yt_views": 66,
+   "yt_views": 73,
    "yt_watched_pct": 20.4,
    "ig_views": 165,
    "ig_saves": 0,
    "ig_skip_rate": 75.8,
-   "th_views": 33,
+   "th_views": 34,
    "yt_error": null,
    "ig_watch_s": 3.8,
    "hook": "Silver 19.17 percent gira, aapka gold? Aur baaki khabrein.",
-   "reach": 264
+   "reach": 272
   },
   {
    "id": "2026-11-02-sglearning-x2",
@@ -667,7 +667,7 @@
    "day": "2026-11-02",
    "look": "claymation",
    "title": "BITS Pilani fees maaf? Kisko milegi?",
-   "yt_views": 81,
+   "yt_views": 87,
    "yt_watched_pct": 46.7,
    "ig_views": 136,
    "ig_saves": 0,
@@ -676,7 +676,7 @@
    "yt_error": null,
    "ig_watch_s": 5.4,
    "hook": "Kya BITS Pilani ki tuition fees poori maaf ho sakti hai?",
-   "reach": 219
+   "reach": 225
   },
   {
    "id": "2026-11-03-arthvan-short",
@@ -686,14 +686,14 @@
    "title": "Kailash par koi kyon nahi chadha? Rokta kaun?",
    "yt_views": 704,
    "yt_watched_pct": 88.0,
-   "ig_views": 27,
+   "ig_views": 35,
    "ig_saves": 0,
-   "ig_skip_rate": 38.5,
+   "ig_skip_rate": 41.9,
    "th_views": 6,
    "yt_error": null,
-   "ig_watch_s": 16.5,
+   "ig_watch_s": 19.0,
    "hook": "Kailash par aaj tak koi kyon nahi chadha, rokta kaun hai?",
-   "reach": 737
+   "reach": 745
   },
   {
    "id": "2026-11-03-sglearning-short",
@@ -701,8 +701,8 @@
    "day": "2026-11-03",
    "look": "claymation",
    "title": "GST discount rule badla, cheezein sasti hongi?",
-   "yt_views": 96,
-   "yt_watched_pct": 22.9,
+   "yt_views": 102,
+   "yt_watched_pct": 23.0,
    "ig_views": 2,
    "ig_saves": 0,
    "ig_skip_rate": 100,
@@ -710,7 +710,7 @@
    "yt_error": null,
    "ig_watch_s": 1.8,
    "hook": "1 November se GST badla, kya dukaan par cheezein sasti hongi?",
-   "reach": 103
+   "reach": 109
   },
   {
    "id": "2026-11-03-sglearning-x1",
@@ -718,7 +718,7 @@
    "day": "2026-11-03",
    "look": "claymation",
    "title": "Dividend kab milta hai? 4 November",
-   "yt_views": 86,
+   "yt_views": 92,
    "yt_watched_pct": 14.8,
    "ig_views": 21,
    "ig_saves": 0,
@@ -727,7 +727,7 @@
    "yt_error": null,
    "ig_watch_s": 4.5,
    "hook": "4 November ka dividend chakkar kya hai? Saath mein 9 aur khabrein.",
-   "reach": 109
+   "reach": 115
   },
   {
    "id": "2026-11-03-sglearning-x2",
@@ -735,8 +735,8 @@
    "day": "2026-11-03",
    "look": "claymation",
    "title": "SIP ka paisa IPO mein jaata hai?",
-   "yt_views": 91,
-   "yt_watched_pct": 47.5,
+   "yt_views": 98,
+   "yt_watched_pct": 44.5,
    "ig_views": 0,
    "ig_saves": 0,
    "ig_skip_rate": 0,
@@ -744,7 +744,7 @@
    "yt_error": null,
    "ig_watch_s": null,
    "hook": "Kya aapki SIP ka paisa naye IPO mein jaata hai?",
-   "reach": 95
+   "reach": 102
   },
   {
    "id": "2026-11-04-arthvan-short",
@@ -769,8 +769,8 @@
    "day": "2026-11-04",
    "look": "claymation",
    "title": "US Fed 4% pe ruka, EMI kyun nahi ghategi?",
-   "yt_views": 101,
-   "yt_watched_pct": 29.8,
+   "yt_views": 109,
+   "yt_watched_pct": 27.9,
    "ig_views": 1,
    "ig_saves": 0,
    "ig_skip_rate": 0,
@@ -778,7 +778,7 @@
    "yt_error": null,
    "ig_watch_s": 5.3,
    "hook": "America ne byaaj nahi badhaya, phir aapki EMI kyun nahi ghat rahi?",
-   "reach": 105
+   "reach": 113
   },
   {
    "id": "2026-11-04-sglearning-x1",
@@ -786,8 +786,8 @@
    "day": "2026-11-04",
    "look": "claymation",
    "title": "Pistachio double mehnga kyun hua?",
-   "yt_views": 85,
-   "yt_watched_pct": 15.5,
+   "yt_views": 93,
+   "yt_watched_pct": 14.4,
    "ig_views": 2,
    "ig_saves": 0,
    "ig_skip_rate": 50,
@@ -795,7 +795,7 @@
    "yt_error": null,
    "ig_watch_s": 5.1,
    "hook": "Pistachio double mehnga kyun? Aur 9 khabrein jo jeb chhooti hain.",
-   "reach": 99
+   "reach": 107
   },
   {
    "id": "2026-11-04-sglearning-x2",
@@ -803,8 +803,8 @@
    "day": "2026-11-04",
    "look": "claymation",
    "title": "Diwali dry fruit dabba chhota kyun ho gaya?",
-   "yt_views": 128,
-   "yt_watched_pct": 84.5,
+   "yt_views": 151,
+   "yt_watched_pct": 77.9,
    "ig_views": 137,
    "ig_saves": 0,
    "ig_skip_rate": 66.1,
@@ -812,7 +812,7 @@
    "yt_error": null,
    "ig_watch_s": 5.4,
    "hook": "Diwali ka dry fruit dabba, pichhle saal jaisa hi lagta hai?",
-   "reach": 270
+   "reach": 293
   },
   {
    "id": "2026-11-05-arthvan-short",
@@ -822,14 +822,14 @@
    "title": "Ravan ki Lanka Sri Lanka thi ya Vindhya mein?",
    "yt_views": 211,
    "yt_watched_pct": 65.3,
-   "ig_views": 1867,
+   "ig_views": 1871,
    "ig_saves": 5,
-   "ig_skip_rate": 37.9,
+   "ig_skip_rate": 38,
    "th_views": 2,
    "yt_error": null,
-   "ig_watch_s": 29.0,
+   "ig_watch_s": 28.9,
    "hook": "Ravan ki Lanka, kya sach mein aaj ka Sri Lanka thi?",
-   "reach": 2080
+   "reach": 2084
   },
   {
    "id": "2026-11-05-sglearning-short",
@@ -837,16 +837,16 @@
    "day": "2026-11-05",
    "look": "claymation",
    "title": "Meta AI kharcha: aapki SIP ka paisa kahan?",
-   "yt_views": 129,
-   "yt_watched_pct": 33.2,
+   "yt_views": 140,
+   "yt_watched_pct": 34.9,
    "ig_views": 194,
    "ig_saves": 1,
    "ig_skip_rate": 65.7,
-   "th_views": 16,
+   "th_views": 17,
    "yt_error": null,
    "ig_watch_s": 7.1,
    "hook": "Aapki SIP ka paisa Meta ke AI pe kharch ho raha hai?",
-   "reach": 339
+   "reach": 351
   },
   {
    "id": "2026-11-06-arthvan-short",
@@ -871,8 +871,8 @@
    "day": "2026-11-06",
    "look": "claymation",
    "title": "India Services Export: Kharcha 12.6% tez kyun?",
-   "yt_views": 110,
-   "yt_watched_pct": 49.0,
+   "yt_views": 119,
+   "yt_watched_pct": 46.9,
    "ig_views": 1,
    "ig_saves": 0,
    "ig_skip_rate": 100,
@@ -880,7 +880,7 @@
    "yt_error": null,
    "ig_watch_s": 1.6,
    "hook": "India ne services bechkar sirf September mein 39,305 million dollar kamaye.",
-   "reach": 115
+   "reach": 124
   },
   {
    "id": "2026-11-07-arthvan-short",
@@ -890,14 +890,14 @@
    "title": "Mahabalipuram mandir samundar mein? 2004 sunami",
    "yt_views": 85,
    "yt_watched_pct": 37.4,
-   "ig_views": 1655,
+   "ig_views": 1659,
    "ig_saves": 10,
    "ig_skip_rate": 35,
    "th_views": 1,
    "yt_error": null,
    "ig_watch_s": 24.2,
    "hook": "Mahabalipuram ke 7 mandir, kya samundar ne nigal liye?",
-   "reach": 1741
+   "reach": 1745
   },
   {
    "id": "2026-11-07-sglearning-news",
@@ -922,8 +922,8 @@
    "day": "2026-11-07",
    "look": "claymation",
    "title": "SIP gire, phir bhi fund house kyun kamata?",
-   "yt_views": 100,
-   "yt_watched_pct": 24.2,
+   "yt_views": 110,
+   "yt_watched_pct": 23.6,
    "ig_views": 1,
    "ig_saves": 0,
    "ig_skip_rate": 0,
@@ -931,7 +931,7 @@
    "yt_error": null,
    "ig_watch_s": 21.4,
    "hook": "Aapki SIP doobe, phir bhi fund house kyun kamata hai?",
-   "reach": 125
+   "reach": 135
   },
   {
    "id": "2026-11-08-arthvan-short",
@@ -956,8 +956,8 @@
    "day": "2026-11-08",
    "look": "claymation",
    "title": "RBI Survey: Aapka andaza EMI rokta hai?",
-   "yt_views": 102,
-   "yt_watched_pct": 43.9,
+   "yt_views": 117,
+   "yt_watched_pct": 43.5,
    "ig_views": 118,
    "ig_saves": 0,
    "ig_skip_rate": 56.9,
@@ -965,7 +965,7 @@
    "yt_error": null,
    "ig_watch_s": 4.9,
    "hook": "Aapke ghar ka sabzi bill RBI ka byaaj tay karta hai?",
-   "reach": 228
+   "reach": 243
   },
   {
    "id": "2026-11-09-arthvan-short",
@@ -973,7 +973,7 @@
    "day": "2026-11-09",
    "look": "indian-comic",
    "title": "Unakoti: 99,99,999 moortiyan kisne banayin?",
-   "yt_views": 101,
+   "yt_views": 102,
    "yt_watched_pct": 43.5,
    "ig_views": 1,
    "ig_saves": 0,
@@ -982,7 +982,7 @@
    "yt_error": null,
    "ig_watch_s": 0.8,
    "hook": "Unakoti ke pahad par 99,99,999 moortiyan? Kisne banayin?",
-   "reach": 108
+   "reach": 109
   },
   {
    "id": "2026-11-09-sglearning-short",
@@ -990,8 +990,8 @@
    "day": "2026-11-09",
    "look": "claymation",
    "title": "Sensex upar gaya, phir bhi loss kyun?",
-   "yt_views": 118,
-   "yt_watched_pct": 38.0,
+   "yt_views": 140,
+   "yt_watched_pct": 39.5,
    "ig_views": 5,
    "ig_saves": 0,
    "ig_skip_rate": 50,
@@ -999,7 +999,7 @@
    "yt_error": null,
    "ig_watch_s": 5.8,
    "hook": "Sensex 829 points chadha, phir bhi shaam ko laal mein band?",
-   "reach": 139
+   "reach": 161
   },
   {
    "id": "2026-11-10-arthvan-short",
@@ -1007,16 +1007,16 @@
    "day": "2026-11-10",
    "look": "indian-comic",
    "title": "Asirgarh mandir mein roz phool kaun chadhata?",
-   "yt_views": 110,
-   "yt_watched_pct": 62.1,
-   "ig_views": 135,
+   "yt_views": 113,
+   "yt_watched_pct": 60.8,
+   "ig_views": 136,
    "ig_saves": 0,
-   "ig_skip_rate": 59.2,
+   "ig_skip_rate": 59.5,
    "th_views": 18,
    "yt_error": null,
    "ig_watch_s": 10.0,
    "hook": "Asirgarh ke mandir mein roz phool kaun chadhata hai?",
-   "reach": 263
+   "reach": 267
   },
   {
    "id": "2026-11-10-sglearning-short",
@@ -1024,8 +1024,8 @@
    "day": "2026-11-10",
    "look": "claymation",
    "title": "RBI aapki EMI se pehle aapse poochhta hai?",
-   "yt_views": 34,
-   "yt_watched_pct": 25.1,
+   "yt_views": 50,
+   "yt_watched_pct": 23.0,
    "ig_views": 110,
    "ig_saves": 0,
    "ig_skip_rate": 49.5,
@@ -1033,7 +1033,7 @@
    "yt_error": null,
    "ig_watch_s": 7.2,
    "hook": "Kya RBI sach mein poochhta hai, ghar kaisa chal raha?",
-   "reach": 155
+   "reach": 171
   },
   {
    "id": "2026-11-11-arthvan-short",
@@ -1041,16 +1041,16 @@
    "day": "2026-11-11",
    "look": "indian-comic",
    "title": "Tirupati Balaji ne Kubera se karza liya tha?",
-   "yt_views": 124,
-   "yt_watched_pct": 198.4,
-   "ig_views": 565,
+   "yt_views": 126,
+   "yt_watched_pct": 195.3,
+   "ig_views": 573,
    "ig_saves": 0,
    "ig_skip_rate": 44.4,
    "th_views": 7,
    "yt_error": null,
-   "ig_watch_s": 16.6,
+   "ig_watch_s": 16.5,
    "hook": "Tirupati ke Balaji, Kubera ka karza aaj bhi chuka rahe hain?",
-   "reach": 696
+   "reach": 706
   },
   {
    "id": "2026-11-11-sglearning-short",
@@ -1058,8 +1058,8 @@
    "day": "2026-11-11",
    "look": "claymation",
    "title": "Mehngai dheemi? 3% dukaanon ne hi daam badhaye",
-   "yt_views": 43,
-   "yt_watched_pct": 30.9,
+   "yt_views": 62,
+   "yt_watched_pct": 32.7,
    "ig_views": 106,
    "ig_saves": 0,
    "ig_skip_rate": 56.7,
@@ -1067,7 +1067,7 @@
    "yt_error": null,
    "ig_watch_s": 8.5,
    "hook": "3 percent se bhi kam services walon ne daam badhaye. Kyun?",
-   "reach": 153
+   "reach": 172
   },
   {
    "id": "2026-11-12-arthvan-short",
@@ -1075,16 +1075,16 @@
    "day": "2026-11-12",
    "look": "indian-comic",
    "title": "Lonar jheel: ulka ya Lonasura ki gufa?",
-   "yt_views": 105,
-   "yt_watched_pct": 61.5,
-   "ig_views": 140,
+   "yt_views": 110,
+   "yt_watched_pct": 62.1,
+   "ig_views": 141,
    "ig_saves": 0,
-   "ig_skip_rate": 52,
-   "th_views": 18,
+   "ig_skip_rate": 51.6,
+   "th_views": 20,
    "yt_error": null,
-   "ig_watch_s": 21.6,
+   "ig_watch_s": 21.4,
    "hook": "Lonar ki jheel, kya ise aasmaan se giri ulka ne khoda?",
-   "reach": 263
+   "reach": 271
   },
   {
    "id": "2026-11-12-sglearning-short",
@@ -1092,8 +1092,8 @@
    "day": "2026-11-12",
    "look": "claymation",
    "title": "Sensex 74,682 se kyun gira? Crude ka sach",
-   "yt_views": 9,
-   "yt_watched_pct": 42.9,
+   "yt_views": 31,
+   "yt_watched_pct": 52.6,
    "ig_views": 1,
    "ig_saves": 0,
    "ig_skip_rate": 0,
@@ -1101,7 +1101,7 @@
    "yt_error": null,
    "ig_watch_s": 12.4,
    "hook": "Sensex 74,682 chhoo kar ek hi din mein kyun phisla?",
-   "reach": 18
+   "reach": 40
   },
   {
    "id": "2026-11-13-arthvan-short",
@@ -1109,8 +1109,8 @@
    "day": "2026-11-13",
    "look": "indian-comic",
    "title": "Kailasa mandir: 1 hafte mein shikhar kaise?",
-   "yt_views": 42,
-   "yt_watched_pct": 47.4,
+   "yt_views": 53,
+   "yt_watched_pct": 54.8,
    "ig_views": 116,
    "ig_saves": 1,
    "ig_skip_rate": 53.7,
@@ -1118,7 +1118,7 @@
    "yt_error": null,
    "ig_watch_s": 8.5,
    "hook": "Kailasa mandir upar se neeche kyon kaata gaya, ek rani ke liye?",
-   "reach": 162
+   "reach": 173
   },
   {
    "id": "2026-11-13-sglearning-short",
@@ -1126,8 +1126,8 @@
    "day": "2026-11-13",
    "look": "claymation",
    "title": "Gold loan safe hai? Sona girvi ka sach",
-   "yt_views": 8,
-   "yt_watched_pct": 27.0,
+   "yt_views": 43,
+   "yt_watched_pct": 32.0,
    "ig_views": 108,
    "ig_saves": 0,
    "ig_skip_rate": 53.9,
@@ -1135,7 +1135,7 @@
    "yt_error": null,
    "ig_watch_s": 6.2,
    "hook": "Gold loan ek saal mein 66.1 percent badha, aapke ghar mein bhi?",
-   "reach": 117
+   "reach": 152
   },
   {
    "id": "2026-11-14-arthvan-short",
@@ -1143,16 +1143,16 @@
    "day": "2026-11-14",
    "look": "indian-comic",
    "title": "Jagannath ka jhanda roz kaun badalta hai?",
-   "yt_views": 0,
-   "yt_watched_pct": null,
-   "ig_views": 288,
+   "yt_views": 321,
+   "yt_watched_pct": 159.8,
+   "ig_views": 289,
    "ig_saves": 0,
-   "ig_skip_rate": 38.1,
-   "th_views": 2,
+   "ig_skip_rate": 38.4,
+   "th_views": 5,
    "yt_error": null,
-   "ig_watch_s": 17.5,
+   "ig_watch_s": 17.4,
    "hook": "Jagannath mandir ka jhanda, roz 214 feet upar kaun badalta hai?",
-   "reach": 290
+   "reach": 615
   },
   {
    "id": "2026-11-14-sglearning-short",
@@ -1160,16 +1160,16 @@
    "day": "2026-11-14",
    "look": "claymation",
    "title": "RBI ne byaaj kaata, EMI kyun nahi giri?",
-   "yt_views": 2,
-   "yt_watched_pct": 84.6,
+   "yt_views": 17,
+   "yt_watched_pct": 36.5,
    "ig_views": 9,
    "ig_saves": 0,
    "ig_skip_rate": 77.8,
-   "th_views": 5,
+   "th_views": 6,
    "yt_error": null,
    "ig_watch_s": 1.7,
    "hook": "RBI ne byaaj kaata, toh aapki EMI utni kam kyun nahi hui?",
-   "reach": 16
+   "reach": 32
   },
   {
    "id": "2026-11-15-arthvan-short",
@@ -1177,16 +1177,16 @@
    "day": "2026-11-15",
    "look": "indian-comic",
    "title": "Karna ka kavach: Chhath se kya rishta?",
-   "yt_views": 1,
-   "yt_watched_pct": 32.6,
-   "ig_views": 120,
+   "yt_views": 16,
+   "yt_watched_pct": 62.3,
+   "ig_views": 121,
    "ig_saves": 0,
-   "ig_skip_rate": 57.8,
-   "th_views": 14,
+   "ig_skip_rate": 57.3,
+   "th_views": 16,
    "yt_error": null,
-   "ig_watch_s": 12.2,
+   "ig_watch_s": 12.3,
    "hook": "Karna roz Surya ko arghya dekar kya deta tha?",
-   "reach": 135
+   "reach": 153
   },
   {
    "id": "2026-11-15-sglearning-short",
@@ -1194,16 +1194,16 @@
    "day": "2026-11-15",
    "look": "claymation",
    "title": "AI crash: India ko kam jhatka kyun laga?",
-   "yt_views": 1,
-   "yt_watched_pct": 39.2,
+   "yt_views": 6,
+   "yt_watched_pct": 38.8,
    "ig_views": 3,
    "ig_saves": 0,
    "ig_skip_rate": 100,
-   "th_views": 6,
+   "th_views": 11,
    "yt_error": null,
    "ig_watch_s": 2.4,
    "hook": "America mein AI share gire, toh kya aapka SIP bhi doobega?",
-   "reach": 10
+   "reach": 20
   },
   {
    "id": "2026-11-16-arthvan-short",
@@ -1211,16 +1211,16 @@
    "day": "2026-11-16",
    "look": "indian-comic",
    "title": "Hanuman ki Ramayan, samundar mein kyun fenki?",
-   "yt_views": 0,
-   "yt_watched_pct": null,
-   "ig_views": 0,
+   "yt_views": 1,
+   "yt_watched_pct": 14.0,
+   "ig_views": 330,
    "ig_saves": 0,
-   "ig_skip_rate": null,
-   "th_views": 0,
+   "ig_skip_rate": 41.4,
+   "th_views": 5,
    "yt_error": null,
-   "ig_watch_s": null,
+   "ig_watch_s": 15.2,
    "hook": "Socho, Hanuman ji ki likhi Ramayan samundar ki tah mein ho.",
-   "reach": 0
+   "reach": 336
   },
   {
    "id": "2026-11-16-sglearning-short",
@@ -1230,13 +1230,81 @@
    "title": "Ketan Parekh scam: sab khareed rahe the, phir?",
    "yt_views": 0,
    "yt_watched_pct": null,
+   "ig_views": 135,
+   "ig_saves": 0,
+   "ig_skip_rate": 76,
+   "th_views": 11,
+   "yt_error": null,
+   "ig_watch_s": 5.0,
+   "hook": "Jis share ko sab khareed rahe hon, wahi sabse khatarnak kyun?",
+   "reach": 146
+  },
+  {
+   "id": "2026-11-17-arthvan-short",
+   "channel": "arthvan",
+   "day": "2026-11-17",
+   "look": "indian-comic",
+   "title": "Surpanakha villain thi? Valmiki ka sach",
+   "yt_views": 2,
+   "yt_watched_pct": 101.1,
+   "ig_views": 408,
+   "ig_saves": 0,
+   "ig_skip_rate": 37.1,
+   "th_views": 3,
+   "yt_error": null,
+   "ig_watch_s": 20.3,
+   "hook": "Valmiki ki Ramayan kholo, Surpanakha ke pati ko Ravan ne maara.",
+   "reach": 413
+  },
+  {
+   "id": "2026-11-17-sglearning-short",
+   "channel": "sglearning",
+   "day": "2026-11-17",
+   "look": "claymation",
+   "title": "SIP band karein? 2008 mein Sensex 60.9% gira",
+   "yt_views": 0,
+   "yt_watched_pct": null,
+   "ig_views": 110,
+   "ig_saves": 0,
+   "ig_skip_rate": 81.9,
+   "th_views": 6,
+   "yt_error": null,
+   "ig_watch_s": 3.2,
+   "hook": "Sensex aadha ho gaya, phir bhi SIP wale kaise jeete?",
+   "reach": 116
+  },
+  {
+   "id": "2026-11-18-arthvan-short",
+   "channel": "arthvan",
+   "day": "2026-11-18",
+   "look": "indian-comic",
+   "title": "Kirtimukha: mandir ke dwar par yeh chehra kyun?",
+   "yt_views": 2,
+   "yt_watched_pct": 14.7,
    "ig_views": 0,
    "ig_saves": 0,
    "ig_skip_rate": null,
    "th_views": 0,
    "yt_error": null,
    "ig_watch_s": null,
-   "hook": "Jis share ko sab khareed rahe hon, wahi sabse khatarnak kyun?",
+   "hook": "Kirtimukha: Shiv ka banaya jeev, apna hi sharir kyun kha gaya?",
+   "reach": 2
+  },
+  {
+   "id": "2026-11-18-sglearning-short",
+   "channel": "sglearning",
+   "day": "2026-11-18",
+   "look": "claymation",
+   "title": "Sahara refund kyun atka? Saradha ka sach",
+   "yt_views": 0,
+   "yt_watched_pct": null,
+   "ig_views": 0,
+   "ig_saves": 0,
+   "ig_skip_rate": null,
+   "th_views": 0,
+   "yt_error": null,
+   "ig_watch_s": null,
+   "hook": "Court ne Sahara ko refund bola, phir paisa kyun atka?",
    "reach": 0
   }
  ],
@@ -1255,7 +1323,7 @@
   },
   "dbVKWtDhrFY": {
    "stats": {
-    "viewCount": "50",
+    "viewCount": "51",
     "likeCount": "2",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1267,7 +1335,7 @@
   },
   "dvM49ysxU38": {
    "stats": {
-    "viewCount": "37",
+    "viewCount": "39",
     "likeCount": "2",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1291,7 +1359,7 @@
   },
   "f6Q8M7vFtkY": {
    "stats": {
-    "viewCount": "38",
+    "viewCount": "42",
     "likeCount": "1",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1303,7 +1371,7 @@
   },
   "iBFNFPp6A0Y": {
    "stats": {
-    "viewCount": "44",
+    "viewCount": "47",
     "likeCount": "4",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1315,7 +1383,7 @@
   },
   "i5JBwClZWpU": {
    "stats": {
-    "viewCount": "72",
+    "viewCount": "74",
     "likeCount": "3",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1327,7 +1395,7 @@
   },
   "wqa4gxdnMlc": {
    "stats": {
-    "viewCount": "43",
+    "viewCount": "47",
     "likeCount": "3",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1339,7 +1407,7 @@
   },
   "4GhXYmvbYI0": {
    "stats": {
-    "viewCount": "1461",
+    "viewCount": "1464",
     "likeCount": "0",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1351,7 +1419,7 @@
   },
   "60M3A5JBZSQ": {
    "stats": {
-    "viewCount": "52",
+    "viewCount": "55",
     "likeCount": "2",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1363,7 +1431,7 @@
   },
   "sbYf7WtinGw": {
    "stats": {
-    "viewCount": "78",
+    "viewCount": "81",
     "likeCount": "1",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1375,7 +1443,7 @@
   },
   "lWsDvrvySds": {
    "stats": {
-    "viewCount": "112",
+    "viewCount": "117",
     "likeCount": "1",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1387,7 +1455,7 @@
   },
   "wzobHQ24A6U": {
    "stats": {
-    "viewCount": "128",
+    "viewCount": "133",
     "likeCount": "0",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1399,7 +1467,7 @@
   },
   "2tHxIDmijNU": {
    "stats": {
-    "viewCount": "70",
+    "viewCount": "75",
     "likeCount": "2",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1411,7 +1479,7 @@
   },
   "gmEHuRhLWN8": {
    "stats": {
-    "viewCount": "998",
+    "viewCount": "1072",
     "likeCount": "7",
     "dislikeCount": "3",
     "favoriteCount": "0",
@@ -1423,7 +1491,7 @@
   },
   "GfxTm3-HRaU": {
    "stats": {
-    "viewCount": "66",
+    "viewCount": "69",
     "likeCount": "1",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1435,7 +1503,7 @@
   },
   "wrRaUagLzYw": {
    "stats": {
-    "viewCount": "69",
+    "viewCount": "72",
     "likeCount": "0",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1447,7 +1515,7 @@
   },
   "Uv33XvrwDvM": {
    "stats": {
-    "viewCount": "86",
+    "viewCount": "89",
     "likeCount": "0",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1459,7 +1527,7 @@
   },
   "Jea6bfSoihI": {
    "stats": {
-    "viewCount": "92",
+    "viewCount": "95",
     "likeCount": "0",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1471,7 +1539,7 @@
   },
   "rQLfR0nQJzs": {
    "stats": {
-    "viewCount": "135",
+    "viewCount": "140",
     "likeCount": "3",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1483,7 +1551,7 @@
   },
   "wL0UBrt5WJs": {
    "stats": {
-    "viewCount": "73",
+    "viewCount": "80",
     "likeCount": "0",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1495,7 +1563,7 @@
   },
   "7-_Tj81SABQ": {
    "stats": {
-    "viewCount": "98",
+    "viewCount": "102",
     "likeCount": "2",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1507,8 +1575,8 @@
   },
   "dGgi9OCKA7g": {
    "stats": {
-    "viewCount": "157",
-    "likeCount": "3",
+    "viewCount": "162",
+    "likeCount": "4",
     "dislikeCount": "0",
     "favoriteCount": "0",
     "commentCount": "1"
@@ -1519,7 +1587,7 @@
   },
   "8qi8yWAU3ZQ": {
    "stats": {
-    "viewCount": "90",
+    "viewCount": "96",
     "likeCount": "3",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1531,7 +1599,7 @@
   },
   "gCIxlt1Oap0": {
    "stats": {
-    "viewCount": "157",
+    "viewCount": "166",
     "likeCount": "2",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1543,7 +1611,7 @@
   },
   "NzzASrtadM0": {
    "stats": {
-    "viewCount": "73",
+    "viewCount": "79",
     "likeCount": "1",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1555,7 +1623,7 @@
   },
   "AeBhvJNfP3s": {
    "stats": {
-    "viewCount": "87",
+    "viewCount": "94",
     "likeCount": "1",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1567,7 +1635,7 @@
   },
   "33rpJFB6J_0": {
    "stats": {
-    "viewCount": "102",
+    "viewCount": "112",
     "likeCount": "4",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1579,7 +1647,7 @@
   },
   "1-YnEfK6xd8": {
    "stats": {
-    "viewCount": "91",
+    "viewCount": "101",
     "likeCount": "2",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1591,7 +1659,7 @@
   },
   "d6rvExiAxjM": {
    "stats": {
-    "viewCount": "97",
+    "viewCount": "107",
     "likeCount": "2",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1603,7 +1671,7 @@
   },
   "YUOc-8BMlTA": {
    "stats": {
-    "viewCount": "212",
+    "viewCount": "213",
     "likeCount": "1",
     "dislikeCount": "1",
     "favoriteCount": "0",
@@ -1615,7 +1683,7 @@
   },
   "dGs2WzVyRSY": {
    "stats": {
-    "viewCount": "114",
+    "viewCount": "129",
     "likeCount": "2",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1627,7 +1695,7 @@
   },
   "ABmw-R0RGGY": {
    "stats": {
-    "viewCount": "97",
+    "viewCount": "109",
     "likeCount": "3",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1639,7 +1707,7 @@
   },
   "tftx_ZQRhjs": {
    "stats": {
-    "viewCount": "158",
+    "viewCount": "176",
     "likeCount": "4",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1651,7 +1719,7 @@
   },
   "JnWhBiS5kqo": {
    "stats": {
-    "viewCount": "142",
+    "viewCount": "157",
     "likeCount": "4",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1663,7 +1731,7 @@
   },
   "-XRz8TtAUmQ": {
    "stats": {
-    "viewCount": "122",
+    "viewCount": "142",
     "likeCount": "5",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1675,7 +1743,7 @@
   },
   "UQKKuTPvbAU": {
    "stats": {
-    "viewCount": "270",
+    "viewCount": "327",
     "likeCount": "0",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1699,7 +1767,7 @@
   },
   "wdWrBEvdnuw": {
    "stats": {
-    "viewCount": "113",
+    "viewCount": "129",
     "likeCount": "1",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1711,7 +1779,7 @@
   },
   "4nvZ9ax1P58": {
    "stats": {
-    "viewCount": "123",
+    "viewCount": "145",
     "likeCount": "5",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1723,7 +1791,7 @@
   },
   "0tzur3P4s7s": {
    "stats": {
-    "viewCount": "284",
+    "viewCount": "314",
     "likeCount": "3",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1735,7 +1803,7 @@
   },
   "sFPx3RWNEiI": {
    "stats": {
-    "viewCount": "145",
+    "viewCount": "176",
     "likeCount": "6",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1747,7 +1815,7 @@
   },
   "a0eU6l-xc-E": {
    "stats": {
-    "viewCount": "58",
+    "viewCount": "87",
     "likeCount": "0",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1759,7 +1827,7 @@
   },
   "_N5t6L0D6ss": {
    "stats": {
-    "viewCount": "211",
+    "viewCount": "264",
     "likeCount": "1",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1771,8 +1839,8 @@
   },
   "piFJNmzm0pE": {
    "stats": {
-    "viewCount": "73",
-    "likeCount": "1",
+    "viewCount": "109",
+    "likeCount": "3",
     "dislikeCount": "0",
     "favoriteCount": "0",
     "commentCount": "1"
@@ -1783,8 +1851,8 @@
   },
   "XN4neWPfbOk": {
    "stats": {
-    "viewCount": "49",
-    "likeCount": "1",
+    "viewCount": "120",
+    "likeCount": "2",
     "dislikeCount": "0",
     "favoriteCount": "0",
     "commentCount": "1"
@@ -1795,8 +1863,8 @@
   },
   "eOdnO0vNxuk": {
    "stats": {
-    "viewCount": "50",
-    "likeCount": "0",
+    "viewCount": "108",
+    "likeCount": "1",
     "dislikeCount": "0",
     "favoriteCount": "0",
     "commentCount": "1"
@@ -1807,7 +1875,7 @@
   },
   "lnkE6PoAmWg": {
    "stats": {
-    "viewCount": "78",
+    "viewCount": "115",
     "likeCount": "0",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1819,8 +1887,8 @@
   },
   "v4bI2cil5p0": {
    "stats": {
-    "viewCount": "21",
-    "likeCount": "1",
+    "viewCount": "71",
+    "likeCount": "2",
     "dislikeCount": "0",
     "favoriteCount": "0",
     "commentCount": "1"
@@ -1831,8 +1899,8 @@
   },
   "4qVD82Mblm4": {
    "stats": {
-    "viewCount": "9",
-    "likeCount": "1",
+    "viewCount": "41",
+    "likeCount": "2",
     "dislikeCount": "0",
     "favoriteCount": "0",
     "commentCount": "1"
@@ -1843,9 +1911,9 @@
   },
   "9jXxEpVYzf0": {
    "stats": {
-    "viewCount": "0",
-    "likeCount": "0",
-    "dislikeCount": "0",
+    "viewCount": "157",
+    "likeCount": "2",
+    "dislikeCount": "1",
     "favoriteCount": "0",
     "commentCount": "0"
    },
@@ -1855,11 +1923,11 @@
   },
   "R0fM_bVDZXU": {
    "stats": {
-    "viewCount": "1",
-    "likeCount": "0",
+    "viewCount": "24",
+    "likeCount": "1",
     "dislikeCount": "0",
     "favoriteCount": "0",
-    "commentCount": "0"
+    "commentCount": "1"
    },
    "duration": "PT54S",
    "privacy": "public",
@@ -1867,15 +1935,15 @@
   },
   "qcwOKRYB8BA": {
    "stats": {
-    "viewCount": "0",
+    "viewCount": "9",
     "likeCount": "0",
     "dislikeCount": "0",
     "favoriteCount": "0",
-    "commentCount": "0"
+    "commentCount": "1"
    },
    "duration": "PT53S",
-   "privacy": "private",
-   "publishAt": "2026-11-17T14:30:00Z"
+   "privacy": "public",
+   "publishAt": null
   },
   "ZiazncbpIe8": {
    "stats": {
@@ -1961,9 +2029,45 @@
    "privacy": "private",
    "publishAt": "2026-11-22T14:30:00Z"
   },
+  "ZuTbAhyEE0A": {
+   "stats": {
+    "viewCount": "2",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT49S",
+   "privacy": "private",
+   "publishAt": "2026-11-23T14:30:00Z"
+  },
+  "XxnIlAa7Jys": {
+   "stats": {
+    "viewCount": "1",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT50S",
+   "privacy": "private",
+   "publishAt": "2026-11-24T14:30:00Z"
+  },
+  "UUDbk8OL4jQ": {
+   "stats": {
+    "viewCount": "1",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT12M50S",
+   "privacy": "private",
+   "publishAt": "2026-11-25T13:30:00Z"
+  },
   "WvzlsYrVBQo": {
    "stats": {
-    "viewCount": "43",
+    "viewCount": "45",
     "likeCount": "1",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1975,7 +2079,7 @@
   },
   "6SsYUMyyO-4": {
    "stats": {
-    "viewCount": "996",
+    "viewCount": "1005",
     "likeCount": "6",
     "dislikeCount": "1",
     "favoriteCount": "0",
@@ -1987,7 +2091,7 @@
   },
   "Nm8DImn35mM": {
    "stats": {
-    "viewCount": "148",
+    "viewCount": "151",
     "likeCount": "6",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -1999,7 +2103,7 @@
   },
   "miAOjHnEulQ": {
    "stats": {
-    "viewCount": "128",
+    "viewCount": "130",
     "likeCount": "9",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -2011,7 +2115,7 @@
   },
   "kSVxzJmtZcA": {
    "stats": {
-    "viewCount": "208",
+    "viewCount": "210",
     "likeCount": "3",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -2023,7 +2127,7 @@
   },
   "3s-vr6ZPXxc": {
    "stats": {
-    "viewCount": "567",
+    "viewCount": "576",
     "likeCount": "2",
     "dislikeCount": "1",
     "favoriteCount": "0",
@@ -2035,7 +2139,7 @@
   },
   "uyEz2wcbe0o": {
    "stats": {
-    "viewCount": "100",
+    "viewCount": "101",
     "likeCount": "4",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -2047,7 +2151,7 @@
   },
   "5T94w15BxYI": {
    "stats": {
-    "viewCount": "353",
+    "viewCount": "355",
     "likeCount": "9",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -2059,7 +2163,7 @@
   },
   "GXSA0399l2Q": {
    "stats": {
-    "viewCount": "365",
+    "viewCount": "366",
     "likeCount": "3",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -2071,7 +2175,7 @@
   },
   "DTVZY3Vg1qw": {
    "stats": {
-    "viewCount": "443",
+    "viewCount": "444",
     "likeCount": "11",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -2083,8 +2187,8 @@
   },
   "src8dllxEII": {
    "stats": {
-    "viewCount": "1734",
-    "likeCount": "4",
+    "viewCount": "1770",
+    "likeCount": "5",
     "dislikeCount": "1",
     "favoriteCount": "0",
     "commentCount": "0"
@@ -2095,7 +2199,7 @@
   },
   "BO4vM0ORMAI": {
    "stats": {
-    "viewCount": "209",
+    "viewCount": "211",
     "likeCount": "5",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -2131,7 +2235,7 @@
   },
   "blOqODdoAVI": {
    "stats": {
-    "viewCount": "961",
+    "viewCount": "1013",
     "likeCount": "4",
     "dislikeCount": "4",
     "favoriteCount": "0",
@@ -2191,7 +2295,7 @@
   },
   "RBKs7SVDsqI": {
    "stats": {
-    "viewCount": "921",
+    "viewCount": "953",
     "likeCount": "6",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -2215,7 +2319,7 @@
   },
   "d2flxgu7Z8E": {
    "stats": {
-    "viewCount": "90",
+    "viewCount": "92",
     "likeCount": "2",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -2239,8 +2343,8 @@
   },
   "-NQolPB4-xI": {
    "stats": {
-    "viewCount": "674",
-    "likeCount": "1",
+    "viewCount": "806",
+    "likeCount": "2",
     "dislikeCount": "0",
     "favoriteCount": "0",
     "commentCount": "0"
@@ -2275,8 +2379,8 @@
   },
   "TqpzqE0whb0": {
    "stats": {
-    "viewCount": "679",
-    "likeCount": "6",
+    "viewCount": "733",
+    "likeCount": "7",
     "dislikeCount": "0",
     "favoriteCount": "0",
     "commentCount": "0"
@@ -2287,7 +2391,7 @@
   },
   "J4WMPSyuaGs": {
    "stats": {
-    "viewCount": "113",
+    "viewCount": "114",
     "likeCount": "0",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -2299,7 +2403,7 @@
   },
   "VU4_lWLVDbI": {
    "stats": {
-    "viewCount": "125",
+    "viewCount": "126",
     "likeCount": "1",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -2311,8 +2415,8 @@
   },
   "iL-sDt0u0Zg": {
    "stats": {
-    "viewCount": "199",
-    "likeCount": "1",
+    "viewCount": "251",
+    "likeCount": "3",
     "dislikeCount": "1",
     "favoriteCount": "0",
     "commentCount": "0"
@@ -2323,7 +2427,7 @@
   },
   "dxnhsdqef04": {
    "stats": {
-    "viewCount": "110",
+    "viewCount": "113",
     "likeCount": "2",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -2335,7 +2439,7 @@
   },
   "KHZiSOsjgkU": {
    "stats": {
-    "viewCount": "53",
+    "viewCount": "54",
     "likeCount": "2",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -2347,7 +2451,7 @@
   },
   "aO_SBrTebw8": {
    "stats": {
-    "viewCount": "613",
+    "viewCount": "322",
     "likeCount": "6",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -2359,7 +2463,7 @@
   },
   "8Xwxq76S7yc": {
    "stats": {
-    "viewCount": "68",
+    "viewCount": "221",
     "likeCount": "0",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -2371,7 +2475,7 @@
   },
   "bRaEa9noxyA": {
    "stats": {
-    "viewCount": "16",
+    "viewCount": "17",
     "likeCount": "0",
     "dislikeCount": "0",
     "favoriteCount": "0",
@@ -2383,11 +2487,11 @@
   },
   "wpgepLMeyXw": {
    "stats": {
-    "viewCount": "1",
+    "viewCount": "24",
     "likeCount": "0",
     "dislikeCount": "0",
     "favoriteCount": "0",
-    "commentCount": "0"
+    "commentCount": "1"
    },
    "duration": "PT1M",
    "privacy": "public",
@@ -2395,27 +2499,27 @@
   },
   "-j1wU7yWj8A": {
    "stats": {
-    "viewCount": "0",
-    "likeCount": "0",
+    "viewCount": "131",
+    "likeCount": "1",
     "dislikeCount": "0",
     "favoriteCount": "0",
     "commentCount": "0"
    },
    "duration": "PT12M9S",
-   "privacy": "private",
-   "publishAt": "2026-11-17T13:30:00Z"
+   "privacy": "public",
+   "publishAt": null
   },
   "Hs0z7dsoK9Q": {
    "stats": {
-    "viewCount": "4",
-    "likeCount": "0",
+    "viewCount": "65",
+    "likeCount": "1",
     "dislikeCount": "0",
     "favoriteCount": "0",
-    "commentCount": "0"
+    "commentCount": "1"
    },
    "duration": "PT58S",
-   "privacy": "private",
-   "publishAt": "2026-11-17T14:30:00Z"
+   "privacy": "public",
+   "publishAt": null
   },
   "lhCU1nXQWDU": {
    "stats": {
@@ -2488,6 +2592,42 @@
    "duration": "PT15M31S",
    "privacy": "private",
    "publishAt": "2026-11-22T13:30:00Z"
+  },
+  "Uga8ET7utt4": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT1M29S",
+   "privacy": "private",
+   "publishAt": "2026-11-22T14:30:00Z"
+  },
+  "_lxN2R78Yvg": {
+   "stats": {
+    "viewCount": "1",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT1M36S",
+   "privacy": "private",
+   "publishAt": "2026-11-23T14:30:00Z"
+  },
+  "3x48ZyzoJXI": {
+   "stats": {
+    "viewCount": "0",
+    "likeCount": "0",
+    "dislikeCount": "0",
+    "favoriteCount": "0",
+    "commentCount": "0"
+   },
+   "duration": "PT1M30S",
+   "privacy": "private",
+   "publishAt": "2026-11-24T14:30:00Z"
   }
  },
  "traffic": {
@@ -2515,18 +2655,18 @@
      0
     ],
     [
-     "2026-10-13",
-     20,
-     43.06,
-     23,
-     0
-    ],
-    [
      "2026-11-03",
      768,
      9.79,
      35,
      18
+    ],
+    [
+     "2026-11-14",
+     321,
+     15.370000000000001,
+     66,
+     20
     ],
     [
      "2026-10-26",
@@ -2634,18 +2774,18 @@
      22
     ],
     [
-     "2026-10-12",
-     162,
-     15.24,
-     11,
-     0
-    ],
-    [
      "2026-11-05",
      504,
      17.43,
      82,
      8
+    ],
+    [
+     "2026-11-15",
+     690,
+     14.029999999999998,
+     46,
+     12
     ],
     [
      "2026-10-29",
@@ -2691,7 +2831,7 @@
     ],
     [
      "2026-10-16",
-     12,
+     13,
      14.64,
      8,
      1
@@ -2756,9 +2896,9 @@
    "rows": [
     [
      "4GhXYmvbYI0",
-     1447,
-     748,
-     12.91,
+     1458,
+     759,
+     12.82,
      78,
      0,
      3,
@@ -2766,10 +2906,10 @@
     ],
     [
      "gmEHuRhLWN8",
-     917,
-     827,
-     10.16,
-     74,
+     986,
+     887,
+     9.97,
+     72,
      6,
      1,
      3
@@ -2785,168 +2925,198 @@
      0
     ],
     [
-     "qZ-69qpclew",
-     235,
-     61,
-     121.07,
-     55,
-     6,
-     0,
-     1
-    ],
-    [
-     "a_OPA2m8lEE",
-     222,
-     80,
-     29.049999999999997,
-     17,
-     8,
-     2,
-     1
-    ],
-    [
      "0tzur3P4s7s",
-     221,
-     188,
-     18.42,
-     97,
+     281,
+     227,
+     19.21,
+     102,
      3,
      2,
      0
     ],
     [
-     "UQKKuTPvbAU",
-     215,
-     119,
-     8.8,
-     54,
-     0,
-     0,
-     0
-    ],
-    [
-     "Ml00ohR_ia0",
-     211,
+     "a_OPA2m8lEE",
+     260,
+     92,
+     39.83,
      23,
-     26.47,
-     12,
-     4,
+     11,
+     2,
+     1
+    ],
+    [
+     "UQKKuTPvbAU",
+     258,
+     140,
+     10.71,
+     66,
+     0,
      0,
      0
     ],
     [
-     "YUOc-8BMlTA",
-     206,
-     155,
-     11.21,
-     83,
-     1,
-     1,
-     0
+     "qZ-69qpclew",
+     256,
+     66,
+     116.28,
+     53,
+     6,
+     0,
+     1
     ],
     [
      "JaBX9vKT8-w",
-     205,
-     80,
-     143.28,
-     70,
+     233,
+     89,
+     136.79,
+     67,
      6,
      1,
      0
     ],
     [
      "T5TadHbCw6M",
-     199,
-     53,
-     62.81,
-     28,
-     3,
+     231,
+     58,
+     60.11,
+     27,
+     4,
      0,
      0
     ],
     [
+     "YUOc-8BMlTA",
+     212,
+     161,
+     11.05,
+     82,
+     1,
+     1,
+     0
+    ],
+    [
      "GmOA1GdoZ_k",
-     189,
-     59,
-     40.64,
+     206,
+     62,
+     40.09,
      20,
      4,
      0,
      2
     ],
     [
+     "_N5t6L0D6ss",
+     196,
+     146,
+     11.2,
+     59,
+     1,
+     0,
+     0
+    ],
+    [
      "H1_SDQKok3A",
-     155,
-     36,
-     48.7,
-     27,
-     7,
+     181,
+     45,
+     45.56,
+     25,
+     9,
      1,
      1
     ],
     [
+     "dGgi9OCKA7g",
+     157,
+     43,
+     52.53,
+     32,
+     3,
+     0,
+     0
+    ],
+    [
      "gCIxlt1Oap0",
-     145,
-     60,
-     31.64,
+     155,
+     63,
+     30.599999999999998,
      25,
      2,
      0,
      0
     ],
     [
-     "dGgi9OCKA7g",
-     140,
-     38,
-     57.95,
-     35,
-     3,
+     "tftx_ZQRhjs",
+     151,
+     26,
+     77.88,
+     33,
+     4,
      0,
      0
     ],
     [
      "JnWhBiS5kqo",
-     129,
-     35,
-     33.19,
-     20,
+     140,
+     36,
+     34.91,
+     21,
      4,
      0,
      1
     ],
     [
-     "tftx_ZQRhjs",
-     128,
-     23,
-     84.48,
-     36,
-     2,
+     "sFPx3RWNEiI",
+     140,
+     52,
+     39.52,
+     22,
+     6,
      0,
-     0
-    ],
-    [
-     "_N5t6L0D6ss",
-     127,
-     104,
-     8.92,
-     47,
-     1,
-     0,
-     0
+     1
     ],
     [
      "rQLfR0nQJzs",
-     126,
-     37,
-     30.91,
+     135,
+     39,
+     30.12,
      21,
      3,
      0,
      0
     ],
     [
+     "9xjztZ1YGs0",
+     130,
+     41,
+     27.089999999999996,
+     13,
+     3,
+     0,
+     0
+    ],
+    [
+     "Af1sM83EumU",
+     126,
+     28,
+     87.63,
+     16,
+     0,
+     0,
+     1
+    ],
+    [
+     "gsHs84Woa8Q",
+     126,
+     29,
+     46.54,
+     23,
+     4,
+     0,
+     1
+    ],
+    [
      "wzobHQ24A6U",
-     122,
+     126,
      39,
      30.409999999999997,
      22,
@@ -2955,38 +3125,38 @@
      3
     ],
     [
-     "sFPx3RWNEiI",
+     "-XRz8TtAUmQ",
+     119,
+     30,
+     46.93,
+     25,
+     5,
+     0,
+     2
+    ],
+    [
+     "iahKbAri_yo",
      118,
-     45,
-     38.05,
-     22,
-     6,
+     43,
+     58.24,
+     25,
+     3,
      0,
      1
     ],
     [
-     "9xjztZ1YGs0",
+     "4nvZ9ax1P58",
      117,
-     36,
-     28.050000000000004,
-     14,
-     3,
-     0,
-     0
-    ],
-    [
-     "Af1sM83EumU",
-     111,
+     43,
+     43.55,
      24,
-     94.74,
-     18,
-     0,
+     5,
      0,
      0
     ],
     [
      "lWsDvrvySds",
-     110,
+     112,
      30,
      39.48,
      25,
@@ -2995,118 +3165,88 @@
      0
     ],
     [
-     "-XRz8TtAUmQ",
-     110,
-     27,
-     48.98,
-     26,
-     5,
-     0,
-     2
-    ],
-    [
-     "4nvZ9ax1P58",
-     102,
-     40,
-     43.86,
-     24,
-     5,
-     0,
-     0
-    ],
-    [
-     "FbYYzzUs9nc",
-     101,
-     25,
-     28.57,
-     15,
-     4,
-     0,
-     0
-    ],
-    [
-     "dGs2WzVyRSY",
-     101,
-     26,
-     29.799999999999997,
-     28,
-     2,
-     0,
-     0
-    ],
-    [
-     "gsHs84Woa8Q",
-     101,
-     23,
-     43.1,
-     21,
-     3,
-     0,
-     1
-    ],
-    [
      "wdWrBEvdnuw",
-     100,
-     28,
-     24.16,
+     110,
+     29,
+     23.57,
      14,
      1,
      0,
      0
     ],
     [
+     "dGs2WzVyRSY",
+     109,
+     30,
+     27.860000000000003,
+     26,
+     2,
+     0,
+     0
+    ],
+    [
+     "FbYYzzUs9nc",
+     106,
+     26,
+     27.99,
+     14,
+     4,
+     0,
+     0
+    ],
+    [
      "33rpJFB6J_0",
-     96,
-     39,
-     22.93,
+     102,
+     40,
+     23.03,
      18,
      4,
      0,
      0
     ],
     [
-     "iahKbAri_yo",
-     93,
-     34,
-     62.519999999999996,
-     26,
-     3,
+     "d6rvExiAxjM",
+     98,
+     20,
+     44.49,
+     18,
+     2,
      0,
      1
     ],
     [
      "7-_Tj81SABQ",
-     92,
-     21,
-     39.15,
+     98,
      23,
+     36.58,
+     21,
      2,
      0,
      0
     ],
     [
-     "d6rvExiAxjM",
-     91,
-     18,
-     47.5,
+     "jen2bvvxHxs",
+     94,
+     26,
+     35.84,
      19,
-     2,
+     4,
      0,
-     1
+     0
     ],
     [
-     "Jea6bfSoihI",
-     91,
-     28,
-     23.63,
-     22,
-     0,
+     "ABmw-R0RGGY",
+     93,
+     13,
+     14.400000000000002,
+     10,
+     3,
      0,
      0
     ],
     [
      "1-YnEfK6xd8",
-     86,
+     92,
      18,
      14.77,
      12,
@@ -3115,48 +3255,28 @@
      0
     ],
     [
-     "ABmw-R0RGGY",
-     85,
-     11,
-     15.47,
-     10,
-     2,
+     "Jea6bfSoihI",
+     92,
+     28,
+     23.63,
+     22,
+     0,
      0,
      0
     ],
     [
      "8qi8yWAU3ZQ",
-     84,
-     32,
-     32.72,
-     23,
+     89,
+     34,
+     31.61,
+     22,
      3,
      0,
      0
     ],
     [
-     "Uv33XvrwDvM",
-     84,
-     28,
-     32.75,
-     24,
-     0,
-     0,
-     0
-    ],
-    [
-     "jen2bvvxHxs",
-     84,
-     24,
-     37.57,
-     20,
-     4,
-     0,
-     0
-    ],
-    [
      "AeBhvJNfP3s",
-     81,
+     87,
      17,
      46.74,
      20,
@@ -3165,8 +3285,18 @@
      0
     ],
     [
+     "Uv33XvrwDvM",
+     86,
+     29,
+     31.929999999999996,
+     23,
+     0,
+     0,
+     0
+    ],
+    [
      "sbYf7WtinGw",
-     77,
+     78,
      22,
      36.66,
      24,
@@ -3175,8 +3305,28 @@
      0
     ],
     [
+     "wL0UBrt5WJs",
+     73,
+     13,
+     32.52,
+     24,
+     0,
+     0,
+     1
+    ],
+    [
+     "NzzASrtadM0",
+     73,
+     24,
+     20.38,
+     16,
+     1,
+     0,
+     0
+    ],
+    [
      "i5JBwClZWpU",
-     69,
+     71,
      26,
      99.38,
      79,
@@ -3186,7 +3336,7 @@
     ],
     [
      "wrRaUagLzYw",
-     68,
+     69,
      15,
      398.55,
      271,
@@ -3196,7 +3346,7 @@
     ],
     [
      "2tHxIDmijNU",
-     68,
+     69,
      17,
      54.74,
      32,
@@ -3205,14 +3355,24 @@
      0
     ],
     [
-     "wL0UBrt5WJs",
+     "vJly_U31OPg",
      67,
-     12,
-     34.53,
-     25,
+     17,
+     44.37,
+     20,
+     5,
      0,
+     0
+    ],
+    [
+     "GfxTm3-HRaU",
+     66,
+     24,
+     23.15,
+     14,
+     1,
      0,
-     1
+     0
     ],
     [
      "O8P9V48ul-M",
@@ -3225,48 +3385,58 @@
      0
     ],
     [
-     "NzzASrtadM0",
-     66,
-     22,
-     20.36,
-     16,
+     "2hre3IGn9JI",
+     65,
+     64,
+     17.11,
+     34,
+     0,
+     0,
+     0
+    ],
+    [
+     "lnkE6PoAmWg",
+     65,
+     65,
+     10.14,
+     61,
+     0,
+     0,
+     0
+    ],
+    [
+     "piFJNmzm0pE",
+     62,
+     21,
+     32.7,
+     17,
      1,
      0,
      0
     ],
     [
-     "2hre3IGn9JI",
-     64,
-     63,
-     17.34,
-     35,
-     0,
-     0,
-     0
-    ],
-    [
      "qKNrU6rPc64",
-     61,
-     16,
-     33.36,
+     59,
+     15,
+     35.16,
      10,
      0,
      0,
      0
     ],
     [
-     "GfxTm3-HRaU",
-     59,
-     21,
-     24.16,
-     15,
-     0,
+     "Ml00ohR_ia0",
+     58,
+     10,
+     27.750000000000004,
+     13,
+     2,
      0,
      0
     ],
     [
      "60M3A5JBZSQ",
-     51,
+     52,
      12,
      38.31,
      31,
@@ -3275,38 +3445,38 @@
      0
     ],
     [
+     "e267pfoU-vw",
+     52,
+     8,
+     22.95,
+     14,
+     0,
+     0,
+     0
+    ],
+    [
+     "a0eU6l-xc-E",
+     50,
+     18,
+     22.98,
+     13,
+     0,
+     0,
+     0
+    ],
+    [
      "dbVKWtDhrFY",
-     46,
-     10,
-     45.55,
-     33,
+     50,
+     11,
+     42.13,
+     30,
      2,
      0,
      0
     ],
     [
-     "e267pfoU-vw",
-     45,
-     6,
-     24.92,
-     15,
-     0,
-     0,
-     0
-    ],
-    [
-     "piFJNmzm0pE",
-     43,
-     16,
-     30.94,
-     16,
-     1,
-     0,
-     0
-    ],
-    [
      "iBFNFPp6A0Y",
-     42,
+     43,
      17,
      49.18,
      40,
@@ -3316,7 +3486,7 @@
     ],
     [
      "wqa4gxdnMlc",
-     42,
+     43,
      12,
      37.37,
      29,
@@ -3325,8 +3495,18 @@
      0
     ],
     [
+     "eOdnO0vNxuk",
+     43,
+     18,
+     32,
+     17,
+     0,
+     0,
+     0
+    ],
+    [
      "1oq8a5RJzTw",
-     41,
+     42,
      11,
      51.36999999999999,
      35,
@@ -3335,8 +3515,18 @@
      0
     ],
     [
+     "phOGwq4gnaM",
+     41,
+     41,
+     20.59,
+     45,
+     0,
+     0,
+     1
+    ],
+    [
      "f6Q8M7vFtkY",
-     36,
+     38,
      13,
      30.769999999999996,
      28,
@@ -3345,48 +3535,28 @@
      0
     ],
     [
-     "a0eU6l-xc-E",
-     34,
-     13,
-     25.06,
-     15,
-     0,
-     0,
-     0
-    ],
-    [
-     "phOGwq4gnaM",
-     34,
-     34,
-     19.88,
-     43,
-     0,
-     0,
-     1
-    ],
-    [
-     "vJly_U31OPg",
-     34,
-     10,
-     54.230000000000004,
-     24,
-     4,
-     0,
-     0
-    ],
-    [
      "dvM49ysxU38",
-     32,
-     9,
-     41.99,
-     30,
+     37,
+     11,
+     36.82,
+     26,
      2,
      0,
      0
     ],
     [
+     "QKVUYcl-8gE",
+     34,
+     17,
+     66.38,
+     27,
+     -1,
+     0,
+     0
+    ],
+    [
      "VXuYQjrRaEg",
-     31,
+     32,
      10,
      18.41,
      10,
@@ -3396,7 +3566,7 @@
     ],
     [
      "egjwEtRcK9M",
-     30,
+     31,
      4,
      11.53,
      5,
@@ -3405,48 +3575,58 @@
      0
     ],
     [
-     "hcAPhpwWBlQ",
-     29,
-     29,
-     21.26,
-     47,
+     "XN4neWPfbOk",
+     31,
+     12,
+     52.65,
+     28,
      0,
      0,
      0
     ],
     [
      "digmNZsi1ho",
-     29,
-     8,
-     51.23,
-     21,
+     30,
+     9,
+     48.25,
+     19,
      0,
      0,
      0
     ],
     [
-     "QKVUYcl-8gE",
-     27,
-     14,
-     62.89,
-     25,
-     -1,
+     "hcAPhpwWBlQ",
+     30,
+     30,
+     20.67,
+     45,
+     0,
      0,
      0
     ],
     [
      "aiy8qWbBJDE",
-     27,
+     30,
      11,
-     45.32,
-     19,
+     40.61,
+     17,
      2,
      0,
      0
     ],
     [
+     "3B_ybQcabiM",
+     29,
+     10,
+     64.98,
+     20,
+     0,
+     0,
+     0
+    ],
+    [
      "1ROwBjqcugM",
-     26,
+     28,
      7,
      48.05,
      19,
@@ -3455,28 +3635,8 @@
      0
     ],
     [
-     "3B_ybQcabiM",
-     25,
-     9,
-     55.61000000000001,
-     17,
-     0,
-     0,
-     0
-    ],
-    [
-     "NBn-l1qnusY",
-     23,
-     1,
-     27.889999999999997,
-     5,
-     1,
-     0,
-     0
-    ],
-    [
      "cMSJep11_QI",
-     23,
+     25,
      4,
      17.28,
      7,
@@ -3485,11 +3645,31 @@
      0
     ],
     [
+     "NBn-l1qnusY",
+     22,
+     1,
+     27.889999999999997,
+     5,
+     1,
+     0,
+     0
+    ],
+    [
      "4mdc99FqwhI",
+     22,
+     12,
+     13.95,
+     14,
+     0,
+     0,
+     0
+    ],
+    [
+     "auFZtSG4wwM",
      21,
-     11,
-     12.43,
-     13,
+     6,
+     39.97,
+     23,
      0,
      0,
      0
@@ -3505,24 +3685,24 @@
      0
     ],
     [
-     "auFZtSG4wwM",
-     19,
-     5,
-     28.970000000000002,
-     17,
-     0,
-     0,
-     0
-    ],
-    [
      "ASBJIz93z-8",
-     19,
-     6,
-     152.41,
-     92,
+     20,
+     7,
+     132.11,
+     80,
      1,
      0,
      1
+    ],
+    [
+     "Kkh2Ui9q_84",
+     19,
+     9,
+     53.32,
+     31,
+     1,
+     0,
+     0
     ],
     [
      "YB-jVSlaWXA",
@@ -3530,16 +3710,6 @@
      11,
      5.41,
      18,
-     1,
-     0,
-     0
-    ],
-    [
-     "Kkh2Ui9q_84",
-     18,
-     9,
-     53.32,
-     31,
      1,
      0,
      0
@@ -3555,12 +3725,12 @@
      0
     ],
     [
-     "9SAZbzL44_k",
-     14,
-     5,
-     42.78,
+     "v4bI2cil5p0",
      17,
-     0,
+     5,
+     36.49,
+     22,
+     1,
      0,
      0
     ],
@@ -3585,11 +3755,41 @@
      1
     ],
     [
+     "9SAZbzL44_k",
+     13,
+     4,
+     40,
+     16,
+     0,
+     0,
+     0
+    ],
+    [
      "YS33o64J32k",
      13,
      1,
      11.73,
      6,
+     0,
+     0,
+     0
+    ],
+    [
+     "MoeBiQV1dRM",
+     12,
+     7,
+     43.05,
+     20,
+     0,
+     0,
+     0
+    ],
+    [
+     "F3lM_Brflms",
+     12,
+     12,
+     15.659999999999998,
+     56,
      0,
      0,
      0
@@ -3605,41 +3805,31 @@
      0
     ],
     [
+     "vjFKcq6yao0",
+     11,
+     10,
+     27.949999999999996,
+     56,
+     0,
+     0,
+     0
+    ],
+    [
      "yjguC4aodFk",
-     12,
-     4,
-     31.790000000000003,
-     19,
+     11,
+     3,
+     37.99,
+     23,
      1,
      0,
      0
     ],
     [
-     "MoeBiQV1dRM",
+     "MpB0W9DXUBQ",
      11,
-     6,
-     40.3,
-     18,
-     0,
-     0,
-     0
-    ],
-    [
-     "F3lM_Brflms",
-     11,
-     11,
-     16.98,
-     61,
-     0,
-     0,
-     0
-    ],
-    [
-     "vjFKcq6yao0",
-     10,
-     9,
-     30.099999999999998,
-     60,
+     3,
+     28.89,
+     13,
      0,
      0,
      0
@@ -3675,38 +3865,8 @@
      1
     ],
     [
-     "XN4neWPfbOk",
-     9,
-     2,
-     42.87,
-     23,
-     0,
-     0,
-     0
-    ],
-    [
-     "MpB0W9DXUBQ",
-     9,
-     2,
-     13.33,
-     6,
-     0,
-     0,
-     0
-    ],
-    [
-     "eOdnO0vNxuk",
-     8,
-     5,
-     26.99,
-     15,
-     0,
-     0,
-     0
-    ],
-    [
      "ncfeFiuqb3s",
-     8,
+     9,
      2,
      85,
      35,
@@ -3765,11 +3925,11 @@
      0
     ],
     [
-     "Vd2Tq5RqBlA",
+     "2C34pyBuBk4",
      7,
-     1,
-     9.33,
-     4,
+     2,
+     21.2,
+     10,
      0,
      0,
      0
@@ -3805,21 +3965,31 @@
      0
     ],
     [
-     "cwL2lws4GEg",
-     6,
-     2,
-     95.21,
-     32,
+     "Vd2Tq5RqBlA",
+     7,
+     1,
+     9.33,
+     4,
      0,
      0,
      0
     ],
     [
-     "E-Dv8Nnkwd4",
+     "4iRIcDVj0gk",
+     7,
+     1,
+     29.38,
+     14,
+     0,
+     0,
+     0
+    ],
+    [
+     "cwL2lws4GEg",
      6,
-     3,
-     1.49,
-     8,
+     2,
+     95.21,
+     32,
      0,
      0,
      0
@@ -3845,21 +4015,21 @@
      0
     ],
     [
+     "4qVD82Mblm4",
+     6,
+     6,
+     38.79,
+     22,
+     1,
+     0,
+     0
+    ],
+    [
      "u1t55T_lqkw",
      6,
      6,
      21.11,
      42,
-     0,
-     0,
-     0
-    ],
-    [
-     "4iRIcDVj0gk",
-     6,
-     0,
-     0,
-     0,
      0,
      0,
      0
@@ -3875,11 +4045,11 @@
      0
     ],
     [
-     "2C34pyBuBk4",
+     "E-Dv8Nnkwd4",
      5,
      2,
-     21.2,
-     10,
+     1.68,
+     9,
      0,
      0,
      0
@@ -3955,6 +4125,16 @@
      0
     ],
     [
+     "eE9qPQ3gH6k",
+     3,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
      "2h1jUGobdYs",
      2,
      1,
@@ -3985,29 +4165,9 @@
      0
     ],
     [
-     "v4bI2cil5p0",
-     2,
-     1,
-     84.57,
-     51,
-     0,
-     0,
-     0
-    ],
-    [
      "eB6FiqqBpqk",
      2,
      1,
-     0,
-     0,
-     0,
-     0,
-     0
-    ],
-    [
-     "eE9qPQ3gH6k",
-     2,
-     0,
      0,
      0,
      0,
@@ -4025,31 +4185,11 @@
      0
     ],
     [
-     "4qVD82Mblm4",
-     1,
-     1,
-     39.22,
-     23,
-     0,
-     0,
-     0
-    ],
-    [
      "Qzw_bE5-HtI",
      1,
      0,
      0,
      0,
-     0,
-     0,
-     0
-    ],
-    [
-     "lnkE6PoAmWg",
-     1,
-     1,
-     1.2,
-     7,
      0,
      0,
      0
@@ -4124,13 +4264,6 @@
    ],
    "rows": [
     [
-     "2026-10-13",
-     0,
-     0,
-     0,
-     0
-    ],
-    [
      "2026-11-03",
      1171,
      20.12,
@@ -4166,11 +4299,11 @@
      26
     ],
     [
-     "2026-10-12",
-     123,
-     31.75,
-     15,
-     0
+     "2026-11-14",
+     558,
+     26.91,
+     107,
+     13
     ],
     [
      "2026-11-05",
@@ -4178,6 +4311,13 @@
      13.459999999999999,
      63,
      14
+    ],
+    [
+     "2026-11-15",
+     295,
+     10.04,
+     60,
+     8
     ],
     [
      "2026-10-29",
@@ -4351,10 +4491,10 @@
    "rows": [
     [
      "src8dllxEII",
-     1669,
-     1082,
-     10.58,
-     66,
+     1726,
+     1139,
+     10.24,
+     64,
      4,
      4,
      3
@@ -4371,9 +4511,9 @@
     ],
     [
      "6SsYUMyyO-4",
-     993,
-     817,
-     15.130000000000003,
+     995,
+     819,
+     15.1,
      91,
      6,
      1,
@@ -4381,20 +4521,20 @@
     ],
     [
      "blOqODdoAVI",
-     914,
-     889,
-     8.41,
-     49,
-     3,
+     957,
+     930,
+     8.45,
+     50,
+     4,
      1,
      3
     ],
     [
      "RBKs7SVDsqI",
-     903,
-     845,
-     9.76,
-     79,
+     921,
+     861,
+     9.66,
+     78,
      6,
      3,
      4
@@ -4411,33 +4551,33 @@
     ],
     [
      "TqpzqE0whb0",
-     602,
-     535,
-     10.97,
-     79,
-     5,
-     0,
-     0
+     671,
+     604,
+     10.64,
+     77,
+     6,
+     1,
+     1
+    ],
+    [
+     "-NQolPB4-xI",
+     662,
+     558,
+     9.22,
+     77,
+     1,
+     1,
+     1
     ],
     [
      "3s-vr6ZPXxc",
-     561,
-     501,
-     9.54,
+     566,
+     506,
+     9.48,
      64,
      2,
      1,
      0
-    ],
-    [
-     "-NQolPB4-xI",
-     548,
-     496,
-     8.55,
-     71,
-     1,
-     1,
-     1
     ],
     [
      "DTVZY3Vg1qw",
@@ -4476,6 +4616,16 @@
      51.45000000000001,
      45,
      9,
+     0,
+     0
+    ],
+    [
+     "aO_SBrTebw8",
+     321,
+     184,
+     159.76,
+     161,
+     6,
      0,
      0
     ],
@@ -4531,43 +4681,53 @@
     ],
     [
      "KOwA7ryaDcs",
-     191,
-     191,
-     15.560000000000002,
-     34,
+     195,
+     195,
+     16.11,
+     35,
      0,
      1,
      0
     ],
     [
+     "iL-sDt0u0Zg",
+     193,
+     186,
+     8.74,
+     59,
+     1,
+     1,
+     0
+    ],
+    [
      "iR6FL71aWsY",
-     157,
-     157,
-     11.92,
+     165,
+     165,
+     11.72,
      23,
      1,
      1,
      1
     ],
     [
+     "IBPJkc76fR4",
+     164,
+     164,
+     11.94,
+     24,
+     0,
+     2,
+     1
+    ],
+    [
      "kOBSksIR8lw",
-     156,
+     158,
      78,
      66.92,
      64,
      3,
      0,
      0
-    ],
-    [
-     "IBPJkc76fR4",
-     154,
-     154,
-     12.25,
-     24,
-     0,
-     2,
-     1
     ],
     [
      "Nm8DImn35mM",
@@ -4591,22 +4751,32 @@
     ],
     [
      "VU4_lWLVDbI",
-     124,
-     62,
-     198.39,
-     202,
+     126,
+     63,
+     195.31,
+     199,
      1,
      0,
      0
     ],
     [
      "hMiOEIHQL34",
-     112,
-     112,
-     12.770000000000001,
-     28,
+     118,
+     118,
+     13.22,
+     29,
      0,
      1,
+     0
+    ],
+    [
+     "J4WMPSyuaGs",
+     113,
+     65,
+     60.77,
+     65,
+     0,
+     0,
      0
     ],
     [
@@ -4620,50 +4790,30 @@
      1
     ],
     [
-     "J4WMPSyuaGs",
+     "dxnhsdqef04",
      110,
-     63,
-     62.13999999999999,
-     66,
-     0,
-     0,
-     0
-    ],
-    [
-     "7nfp1PCXmiE",
-     109,
-     18,
-     30.510000000000005,
-     14,
-     0,
+     56,
+     62.12,
+     54,
+     2,
      0,
      0
     ],
     [
      "4HigQAjTvDU",
-     107,
-     107,
-     15.03,
+     108,
+     108,
+     14.89,
      21,
      0,
      1,
      0
     ],
     [
-     "dxnhsdqef04",
-     105,
-     55,
-     61.49,
-     53,
-     2,
-     0,
-     0
-    ],
-    [
      "sj5Id-kXCTk",
-     102,
-     102,
-     5.27,
+     103,
+     103,
+     5.35,
      19,
      0,
      1,
@@ -4671,7 +4821,7 @@
     ],
     [
      "buwbBj8T7gU",
-     101,
+     102,
      59,
      43.49,
      46,
@@ -4680,32 +4830,22 @@
      0
     ],
     [
-     "iL-sDt0u0Zg",
-     100,
-     94,
-     9.26,
-     63,
-     1,
+     "qZFYW8VtJGI",
+     102,
+     101,
+     15.97,
+     32,
+     0,
      1,
      0
     ],
     [
      "uyEz2wcbe0o",
-     98,
+     100,
      62,
      107.64,
      90,
      4,
-     1,
-     0
-    ],
-    [
-     "qZFYW8VtJGI",
-     95,
-     94,
-     16.56,
-     33,
-     0,
      1,
      0
     ],
@@ -4751,11 +4891,21 @@
     ],
     [
      "tbBPC39wDeU",
-     75,
-     75,
-     7.539999999999999,
-     26,
+     79,
+     79,
+     7.86,
+     27,
      0,
+     1,
+     0
+    ],
+    [
+     "KHZiSOsjgkU",
+     53,
+     27,
+     54.81,
+     55,
+     2,
      1,
      0
     ],
@@ -4770,13 +4920,33 @@
      0
     ],
     [
-     "KHZiSOsjgkU",
+     "8Xwxq76S7yc",
      42,
+     42,
+     13.209999999999999,
+     90,
+     0,
+     0,
+     0
+    ],
+    [
+     "bRaEa9noxyA",
+     16,
+     8,
+     62.27,
+     62,
+     0,
+     0,
+     0
+    ],
+    [
+     "vFPLBKuvGCE",
+     10,
+     4,
+     57.56,
      23,
-     47.39,
-     47,
-     2,
-     1,
+     0,
+     0,
      0
     ],
     [
@@ -4790,22 +4960,22 @@
      1
     ],
     [
-     "vFPLBKuvGCE",
-     10,
-     4,
-     57.56,
-     23,
-     0,
-     0,
-     0
-    ],
-    [
      "t7c8SyJGs9w",
      9,
      2,
      15.22,
      7,
      1,
+     0,
+     0
+    ],
+    [
+     "FD5CQwRTv1o",
+     8,
+     1,
+     1.6399999999999997,
+     1,
+     0,
      0,
      0
     ],
@@ -4830,41 +5000,11 @@
      0
     ],
     [
-     "FD5CQwRTv1o",
-     7,
-     1,
-     1.6399999999999997,
-     1,
-     0,
-     0,
-     0
-    ],
-    [
      "uA5ylEbcnfQ",
      7,
      0,
      0,
      0,
-     0,
-     0,
-     0
-    ],
-    [
-     "fODdfe2ESwY",
-     6,
-     5,
-     58.34,
-     23,
-     1,
-     0,
-     0
-    ],
-    [
-     "vRC5nle_Opg",
-     6,
-     4,
-     36.61,
-     11,
      0,
      0,
      0
@@ -4900,6 +5040,26 @@
      0
     ],
     [
+     "fODdfe2ESwY",
+     6,
+     5,
+     58.34,
+     23,
+     1,
+     0,
+     0
+    ],
+    [
+     "vRC5nle_Opg",
+     5,
+     4,
+     36.61,
+     11,
+     0,
+     0,
+     0
+    ],
+    [
      "7w9Ut4bt3jo",
      5,
      2,
@@ -4920,6 +5080,16 @@
      0
     ],
     [
+     "KCK3c_CcCas",
+     4,
+     3,
+     14.580000000000002,
+     7,
+     0,
+     0,
+     0
+    ],
+    [
      "UFK-cgBCFEQ",
      4,
      1,
@@ -4930,11 +5100,11 @@
      0
     ],
     [
-     "h8iB1F82SZs",
+     "JGRNmUpxYT4",
      4,
      3,
-     34.67,
-     14,
+     18.09,
+     11,
      0,
      0,
      0
@@ -4945,16 +5115,6 @@
      0,
      0,
      0,
-     0,
-     0,
-     0
-    ],
-    [
-     "JGRNmUpxYT4",
-     4,
-     3,
-     18.09,
-     11,
      0,
      0,
      0
@@ -4976,6 +5136,16 @@
      7.86,
      4,
      2,
+     0,
+     0
+    ],
+    [
+     "beu4NTlPZF4",
+     3,
+     3,
+     27.82,
+     26,
+     0,
      0,
      0
     ],
@@ -5020,6 +5190,26 @@
      0
     ],
     [
+     "h8iB1F82SZs",
+     3,
+     2,
+     45.36,
+     18,
+     0,
+     0,
+     0
+    ],
+    [
+     "7nfp1PCXmiE",
+     3,
+     2,
+     12.67,
+     6,
+     0,
+     0,
+     0
+    ],
+    [
      "Hs0z7dsoK9Q",
      2,
      1,
@@ -5040,31 +5230,11 @@
      0
     ],
     [
-     "beu4NTlPZF4",
-     2,
-     2,
-     31.05,
-     29,
-     0,
-     0,
-     0
-    ],
-    [
-     "KCK3c_CcCas",
-     2,
-     2,
-     10,
-     5,
-     0,
-     0,
-     0
-    ],
-    [
-     "bRaEa9noxyA",
+     "SC0H7DmaKo8",
      1,
      1,
-     32.61,
-     32,
+     97.97,
+     106,
      0,
      0,
      0
@@ -5075,6 +5245,26 @@
      0,
      0,
      0,
+     0,
+     0,
+     0
+    ],
+    [
+     "EzLT74f-OIY",
+     1,
+     1,
+     96.96,
+     102,
+     0,
+     0,
+     0
+    ],
+    [
+     "wpgepLMeyXw",
+     1,
+     1,
+     14.000000000000002,
+     8,
      0,
      0,
      0
@@ -5115,12 +5305,80 @@
  },
  "ig": {
   "account": {
-   "followers_count": 16191,
+   "followers_count": 16153,
    "media_count": 82,
    "username": "sanjeev_gulia",
    "id": "39082874041358640"
   },
   "media": [
+   {
+    "id": "18134265622698749",
+    "caption": "Sensex 60.9 percent gira, phir bhi SIP chalane wale jeet gaye. 📈\n2008 mein darr ke maare bahut logon ne SIP rok di. Jo r",
+    "media_product_type": "REELS",
+    "timestamp": "2026-11-17T16:21:23+0000",
+    "like_count": 0,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/Df2WLC-EUH6/",
+    "insights": {
+     "reach": 98,
+     "views": 110,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 3169,
+     "reels_skip_rate": 81.9
+    }
+   },
+   {
+    "id": "17989019219892069",
+    "caption": "Valmiki ki Ramayan kholo, Surpanakha ke pati ko Ravan ne maara.\nUttara Kanda mein naam hai Vidyutjihva.\nAranya Kanda mei",
+    "media_product_type": "REELS",
+    "timestamp": "2026-11-17T16:09:43+0000",
+    "like_count": 5,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/Df2U2-6HJ8b/",
+    "insights": {
+     "reach": 357,
+     "views": 408,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 20276,
+     "reels_skip_rate": 37.1
+    }
+   },
+   {
+    "id": "17977480941172655",
+    "caption": "Jis share ko sab khareed rahe hon, wahi sabse khatarnak kyun? 📉\nKetan Parekh ke chune share udhaar ke paise par chadh ra",
+    "media_product_type": "REELS",
+    "timestamp": "2026-11-16T16:18:18+0000",
+    "like_count": 0,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/DfzxBq0HEy4/",
+    "insights": {
+     "reach": 126,
+     "views": 135,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 4986,
+     "reels_skip_rate": 76
+    }
+   },
+   {
+    "id": "17966985162211022",
+    "caption": "Socho, Hanuman ji ki likhi Ramayan samundar ki tah mein ho.\nKahani kehti hai unhone patthar samundar mein daal diye.\nRaj",
+    "media_product_type": "REELS",
+    "timestamp": "2026-11-16T16:08:16+0000",
+    "like_count": 2,
+    "comments_count": 0,
+    "permalink": "https://www.instagram.com/reel/Dfzv4SqE49J/",
+    "insights": {
+     "reach": 303,
+     "views": 330,
+     "saved": 0,
+     "shares": 0,
+     "ig_reels_avg_watch_time": 15190,
+     "reels_skip_rate": 41.4
+    }
+   },
    {
     "id": "17960786280018257",
     "caption": "Karna roz Surya ko arghya dekar kya deta tha?\nMahabharata mein Indra aaye, aur Karna ne apna kavach kaatkar de diya.\nBih",
@@ -5130,12 +5388,12 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/DfxLCAxE-fi/",
     "insights": {
-     "reach": 104,
-     "views": 120,
+     "reach": 105,
+     "views": 121,
      "saved": 0,
      "shares": 0,
-     "ig_reels_avg_watch_time": 12197,
-     "reels_skip_rate": 57.8
+     "ig_reels_avg_watch_time": 12316,
+     "reels_skip_rate": 57.3
     }
    },
    {
@@ -5164,12 +5422,12 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/DfumMkykS_g/",
     "insights": {
-     "reach": 260,
-     "views": 288,
+     "reach": 261,
+     "views": 289,
      "saved": 0,
      "shares": 0,
-     "ig_reels_avg_watch_time": 17456,
-     "reels_skip_rate": 38.1
+     "ig_reels_avg_watch_time": 17397,
+     "reels_skip_rate": 38.4
     }
    },
    {
@@ -5232,12 +5490,12 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/DfpcsWqlWnT/",
     "insights": {
-     "reach": 120,
-     "views": 140,
+     "reach": 121,
+     "views": 141,
      "saved": 0,
      "shares": 0,
-     "ig_reels_avg_watch_time": 21553,
-     "reels_skip_rate": 52
+     "ig_reels_avg_watch_time": 21415,
+     "reels_skip_rate": 51.6
     }
    },
    {
@@ -5300,11 +5558,11 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/Dfm3wZ9CoLe/",
     "insights": {
-     "reach": 471,
-     "views": 565,
+     "reach": 476,
+     "views": 573,
      "saved": 0,
      "shares": 2,
-     "ig_reels_avg_watch_time": 16626,
+     "ig_reels_avg_watch_time": 16537,
      "reels_skip_rate": 44.4
     }
    },
@@ -5334,12 +5592,12 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/DfkTJLRCpfP/",
     "insights": {
-     "reach": 125,
-     "views": 135,
+     "reach": 126,
+     "views": 136,
      "saved": 0,
      "shares": 1,
-     "ig_reels_avg_watch_time": 10015,
-     "reels_skip_rate": 59.2
+     "ig_reels_avg_watch_time": 9955,
+     "reels_skip_rate": 59.5
     }
    },
    {
@@ -5402,11 +5660,11 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/Dfhk-BSDxZw/",
     "insights": {
-     "reach": 1,
-     "views": 1,
+     "reach": 2,
+     "views": 2,
      "saved": 0,
      "shares": 0,
-     "ig_reels_avg_watch_time": 840,
+     "ig_reels_avg_watch_time": 729,
      "reels_skip_rate": 100
     }
    },
@@ -5487,11 +5745,11 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/DfckqxUGfHM/",
     "insights": {
-     "reach": 1438,
-     "views": 1655,
+     "reach": 1444,
+     "views": 1659,
      "saved": 10,
      "shares": 2,
-     "ig_reels_avg_watch_time": 24246,
+     "ig_reels_avg_watch_time": 24204,
      "reels_skip_rate": 35
     }
    },
@@ -5606,12 +5864,12 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/DfXbb0sIDsi/",
     "insights": {
-     "reach": 1628,
-     "views": 1867,
+     "reach": 1632,
+     "views": 1871,
      "saved": 5,
      "shares": 4,
-     "ig_reels_avg_watch_time": 29002,
-     "reels_skip_rate": 37.9
+     "ig_reels_avg_watch_time": 28938,
+     "reels_skip_rate": 38
     }
    },
    {
@@ -5640,7 +5898,7 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/DfU2QoMErYu/",
     "insights": {
-     "reach": 1324,
+     "reach": 1326,
      "views": 1454,
      "saved": 8,
      "shares": 2,
@@ -5725,12 +5983,12 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/DfSRoxzCMeC/",
     "insights": {
-     "reach": 26,
-     "views": 27,
+     "reach": 31,
+     "views": 35,
      "saved": 0,
      "shares": 0,
-     "ig_reels_avg_watch_time": 16546,
-     "reels_skip_rate": 38.5
+     "ig_reels_avg_watch_time": 19016,
+     "reels_skip_rate": 41.9
     }
    },
    {
@@ -5810,11 +6068,11 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/DfPsuySkxdZ/",
     "insights": {
-     "reach": 1774,
-     "views": 1959,
+     "reach": 1775,
+     "views": 1960,
      "saved": 7,
      "shares": 3,
-     "ig_reels_avg_watch_time": 35380,
+     "ig_reels_avg_watch_time": 35360,
      "reels_skip_rate": 26.5
     }
    },
@@ -5912,7 +6170,7 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/DfNOcX_jY0k/",
     "insights": {
-     "reach": 669,
+     "reach": 671,
      "views": 758,
      "saved": 0,
      "shares": 0,
@@ -5929,11 +6187,11 @@
     "comments_count": 1,
     "permalink": "https://www.instagram.com/reel/DfNH8wLDaEy/",
     "insights": {
-     "reach": 1552,
-     "views": 1801,
+     "reach": 1554,
+     "views": 1802,
      "saved": 2,
      "shares": 1,
-     "ig_reels_avg_watch_time": 35321,
+     "ig_reels_avg_watch_time": 35300,
      "reels_skip_rate": 31.2
     }
    },
@@ -6031,7 +6289,7 @@
     "comments_count": 0,
     "permalink": "https://www.instagram.com/reel/DfKjDgjGslC/",
     "insights": {
-     "reach": 1751,
+     "reach": 1753,
      "views": 2033,
      "saved": 11,
      "shares": 8,
@@ -6071,74 +6329,6 @@
      "shares": 0,
      "ig_reels_avg_watch_time": 10111,
      "reels_skip_rate": 55.8
-    }
-   },
-   {
-    "id": "17977817931070107",
-    "caption": "Jio ne ek quarter mein 8,387 crore kamaye, profit 14% upar.\nEk average user ab mahine ka 218.8 rupaye deta hai.\nIPO shar",
-    "media_product_type": "REELS",
-    "timestamp": "2026-10-31T10:17:32+0000",
-    "like_count": 0,
-    "comments_count": 0,
-    "permalink": "https://www.instagram.com/reel/DfJ7BfCjURK/",
-    "insights": {
-     "reach": 10,
-     "views": 11,
-     "saved": 0,
-     "shares": 0,
-     "ig_reels_avg_watch_time": 19175,
-     "reels_skip_rate": 40
-    }
-   },
-   {
-    "id": "18120162751967556",
-    "caption": "Tech shares ke 95 lakh crore ek din mein saaf 📉\nIntel, Nasdaq, Binance chori, Microsoft offer, sona, rupaya aur tel — 10",
-    "media_product_type": "REELS",
-    "timestamp": "2026-10-31T07:41:33+0000",
-    "like_count": 2,
-    "comments_count": 0,
-    "permalink": "https://www.instagram.com/reel/DfJpKzoFFkx/",
-    "insights": {
-     "reach": 213,
-     "views": 230,
-     "saved": 1,
-     "shares": 4,
-     "ig_reels_avg_watch_time": 11236,
-     "reels_skip_rate": 52.7
-    }
-   },
-   {
-    "id": "18128054269895624",
-    "caption": "Naya loan 8.51 percent, aapka purana loan abhi bhi 8.96? 🤔\nRBI data: naye loan saste, naye FD pe byaaj sirf 5.61 percent",
-    "media_product_type": "REELS",
-    "timestamp": "2026-10-31T07:37:15+0000",
-    "like_count": 1,
-    "comments_count": 0,
-    "permalink": "https://www.instagram.com/reel/DfJordmk0Qs/",
-    "insights": {
-     "reach": 128,
-     "views": 144,
-     "saved": 0,
-     "shares": 0,
-     "ig_reels_avg_watch_time": 4622,
-     "reels_skip_rate": 71.4
-    }
-   },
-   {
-    "id": "18154387006552323",
-    "caption": "Patthar ke khambe se sa re ga ma? 🤯\nLok kahani kehti hai Hampi ke khambe bajte hain.\nAngrezon ne kaate? ASI ke records k",
-    "media_product_type": "REELS",
-    "timestamp": "2026-10-30T16:07:52+0000",
-    "like_count": 2,
-    "comments_count": 0,
-    "permalink": "https://www.instagram.com/reel/DfH-R-CjW6s/",
-    "insights": {
-     "reach": 154,
-     "views": 167,
-     "saved": 0,
-     "shares": 0,
-     "ig_reels_avg_watch_time": 9050,
-     "reels_skip_rate": 50
     }
    }
   ]
