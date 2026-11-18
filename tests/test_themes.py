@@ -34,3 +34,22 @@ def test_bank_skips_blocked_themes_and_every_topic_has_a_theme():
     t = topics.next_money_history(CONTENT_DIR, set(), date(2026, 11, 20), avoid={"market", "scam"})
     assert t["theme"] not in {"market", "scam"}
     assert topics.next_money_history(CONTENT_DIR, set(), date(2026, 11, 20), avoid={x["theme"] for x in bank}) is None
+
+
+def test_learning_shorts_never_take_share_market_or_rbi_topics(tmp_path):
+    """Founder, 18 Nov 2026: 'Yes drop stock market and RBI headlines from Learning Shorts'. Longs and SG-MYTH are untouched."""
+    from datetime import date, datetime, timezone
+    from types import SimpleNamespace as NS
+    from engine import themes, topics
+    assert themes.theme_of({"title": "RBI releases data on ECB for September"}) == "rbi"
+    assert themes.theme_of({"title": "Repo rate cut: what happens to your EMI"}) == "rbi"
+    assert themes.theme_of({"title": "Bank FD ya post office"}) == "bank"
+    short = NS(id="2026-11-27-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 11, 27))
+    assert {"market", "rbi"} <= themes.blocked(tmp_path, short)
+    assert themes.never(NS(id="2026-11-27-sglearning-long", channel="sglearning", kind="long")) == ()
+    assert themes.never(NS(id="2026-11-27-arthvan-short", channel="arthvan", kind="short")) == ()
+    now = datetime(2026, 11, 26, 12, tzinfo=timezone.utc)
+    only = [{"title": "Sensex falls 800 points, what happens to your SIP savings", "link": "u1", "published": now, "summary": ""}]
+    got = topics.pick_finance(only, set(), now, news=True, never=themes.NEVER_SHORT)
+    assert got is None or themes.theme_of(got) not in themes.NEVER_SHORT          # nothing else left: still not taken
+
