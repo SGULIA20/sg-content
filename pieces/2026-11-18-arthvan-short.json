@@ -155,7 +155,9 @@
    "voice": 13
   },
   "drafts": 1,
+  "ig_reel_id": "18068452754519548",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-18-arthvan-short.mp4",
    "clip_seconds": 1,
@@ -166,6 +168,8 @@
   "intro_sent": "2026-11-12T07:32:01+00:00",
   "out_sha": "0de6b39416402b5d0cf44d660c091f71bdf1daeb",
   "out_sha_intro": true,
+  "threads_id": "18110356697341734",
+  "threads_poll_id": "18152967442536113",
   "yt_id": "lhCU1nXQWDU"
  },
  "kind": "short",
@@ -386,7 +390,7 @@
   },
   "title": "Apna hi sharir kha gaya *Kirtimukha*? 😱"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   4.593,
@@ -439,6 +443,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-12T10:31:39+00:00",
+ "updated": "2026-11-18T16:10:54+00:00",
  "writer": "claude"
 }
