@@ -106,3 +106,12 @@ def test_the_ai_tag_is_drawn_only_when_switched_on(tmp_path, monkeypatch):
     made = []
     render = lambda kind, data, out, size: made.append(data) or out
     assert "tag" not in opening.render_pills(_piece(), tmp_path / "p", (1080, 1920), render)
+
+
+def test_long_videos_are_spoken_faster_only_from_the_day_the_founder_set(tmp_path):
+    """Founder, 18 Nov 2026: longs at 1.2x on both channels; a long made before that day keeps its pace when rebuilt."""
+    root = _cfg(tmp_path, '{"channels": {"arthvan": "2026-11-16"}, "longs": {"arthvan": "2026-11-22"}, "speed": 1.2, "speed_longs_from": "2026-11-26"}')
+    assert opening.speed(_piece("2026-11-26", kind="long"), root) == 1.2
+    assert opening.speed(_piece("2026-11-25", kind="long"), root) == 1.0
+    assert opening.speed(_piece("2026-11-17"), root) == 1.2
+

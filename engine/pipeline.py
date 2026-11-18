@@ -559,7 +559,7 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
     spoken = [(wav, d / rate) for wav, d in lines]
     for (wav, d), start, sc in zip(spoken, piece.timings, script["scenes"]):
         cues += _captions.offset(_captions.split(sc["vo"], d), start)
-    target = (piece.topic.get("target_minutes") or 0) * 60 or None
+    target = (piece.topic.get("target_minutes") or 0) * 60 / rate or None      # a long spoken faster is that much shorter (18 Nov 2026)
     speech_end = (piece.timings[-1] + spoken[-1][1]) if piece.timings and spoken else None       # where the last narrated word should end
     problems = deps.qa(video, piece.kind, sum(d for _w, d in spoken), cues, target_seconds=target, story=is_story(piece),
                        check_freeze=not is_story(piece), speech_end=speech_end)                 # a story panel's slow push-in is calm by design, not a frozen frame

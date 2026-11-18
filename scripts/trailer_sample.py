@@ -17,6 +17,28 @@ from engine.config import ROOT  # noqa: E402
 PICTURES = 5
 
 
+def kept_pictures(piece, out: Path) -> list:
+    """The long's own pictures from the commit named in TRAILER_PICTURES_FROM (the studio run that built it), or [] to paint afresh."""
+    import os
+    import subprocess
+    sha = os.environ.get("TRAILER_PICTURES_FROM", "").strip()
+    if not sha:
+        return []
+    try:
+        subprocess.run(["git", "fetch", "-q", "--depth", "1", "origin", sha], check=True, cwd=ROOT)
+        names = subprocess.run(["git", "ls-tree", "-r", "--name-only", sha, f"out/{piece.id}/"], check=True, cwd=ROOT,
+                               capture_output=True, text=True).stdout.split()
+        got = []
+        for name in sorted(n for n in names if Path(n).name.startswith("visual") and n.endswith(".png")):
+            dest = out / Path(name).name
+            dest.write_bytes(subprocess.run(["git", "show", f"{sha}:{name}"], check=True, cwd=ROOT, capture_output=True).stdout)
+            got.append(dest)
+        return got if len(got) >= 3 else []
+    except Exception as e:
+        print(f"kept pictures not available ({type(e).__name__}); painting afresh", flush=True)
+        return []
+
+
 def main(argv=None) -> int:
     args = argv or sys.argv[1:]
     piece = pieces.load(args[0], ROOT)
@@ -24,8 +46,8 @@ def main(argv=None) -> int:
     out.mkdir(parents=True, exist_ok=True)
     scenes = [sc for sc in piece.script["scenes"] if (sc.get("visual") or {}).get("prompt")]
     picks = [scenes[int(len(scenes) * k / (PICTURES + 1))] for k in range(1, PICTURES + 1)]      # spread over the whole video
-    panels = []
-    for i, sc in enumerate(picks):
+    panels = kept_pictures(piece, out)                              # the long's own pictures cost nothing (founder, 18 Nov 2026)
+    for i, sc in enumerate(picks if not panels else []):
         full, aspect = pipeline.panel_request(piece, sc["visual"]["prompt"], opening.is_trial(piece))
         panels.append(art.paint(full, out / f"visual{i:02d}.png", aspect=aspect))
     lines = []

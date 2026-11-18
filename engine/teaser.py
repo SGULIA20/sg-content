@@ -103,6 +103,7 @@ def trailer(piece, long_video: Path, out_dir: Path, render=cards.render, seconds
 
 SUSPENSE_S = 20               # founder, 16 Nov 2026: "short scripts of suspense thriller questions ... max 20 seconds"
 SUSPENSE_LINES = (3, 4)
+TRAILER_SPEED = 1.2
 LINE_WORDS = 9
 
 
@@ -117,16 +118,22 @@ def suspense_lines(piece, ask) -> list:
     tongue = "plain Indian English, no Hindi words" if lang.english(piece) else "Hinglish in Latin script, the way the script speaks"
     prompt = (f"A long video titled \"{script.get('title', '')}\" opens with: \"{script.get('hook', '')}\"\nIts script begins: {body}\n\n"
               f"Write the voice-over of a 15-second suspense TRAILER for it, like a thriller teaser: {SUSPENSE_LINES[0]} or {SUSPENSE_LINES[1]} "
-              f"lines, each a question or a cliff-hanger of at most {LINE_WORDS} words, each raising the stakes over the one before. Reveal NO "
+              f"lines. EVERY line is a question that ends with a question mark (founder, 18 Nov 2026: no statements), at most {LINE_WORDS} "
+              f"words each, each raising the stakes over the one before. Reveal NO "
               f"answer and no conclusion. Use only names, places and numbers that are in the script. No greeting, no 'in this video'. "
               f"Language: {tongue}. Reply with a JSON array of strings only.")
-    try:
-        raw = ask(prompt)
-        lines = _json.loads(_re.search(r"\[.*\]", raw, _re.S).group(0))
-    except Exception as e:
-        print(f"{piece.id}: no suspense lines ({type(e).__name__}: {secrets.scrub(str(e))[:120]})", flush=True)
-        return []
-    lines = [str(x).strip() for x in lines if str(x).strip()][:SUSPENSE_LINES[1]]
+    for attempt in (1, 2):                                          # a statement among them: asked once more, then the opening trailer
+        try:
+            raw = ask(prompt)
+            lines = _json.loads(_re.search(r"\[.*\]", raw, _re.S).group(0))
+        except Exception as e:
+            print(f"{piece.id}: no suspense lines ({type(e).__name__}: {secrets.scrub(str(e))[:120]})", flush=True)
+            return []
+        lines = [str(x).strip() for x in lines if str(x).strip()]
+        lines = [x for x in lines if x.endswith("?")][:SUSPENSE_LINES[1]]       # founder, 18 Nov 2026: every trailer line is a question
+        if len(lines) >= SUSPENSE_LINES[0]:
+            break
+        prompt += "\n\nYour last reply had lines that were not questions. Every line must end with a question mark."
     if len(lines) < SUSPENSE_LINES[0] or any(len(x.split()) > LINE_WORDS + 3 for x in lines):
         return []
     return lines
@@ -180,8 +187,10 @@ def suspense_trailer(piece, panels: list, out_dir: Path, ask=None, say=None, ren
         spoken.append((wav, say(text, wav)))
     pad = 0.25
     total = sum(d for _w, d in spoken) + pad * len(spoken)
-    if total > limit - 0.6:                                              # speak a little faster before anything is cut
-        spoken = assemble.faster(spoken, min(1.3, total / (limit - 0.6)), work / "fast")
+    # founder, 18 Nov 2026: the trailer is spoken at 1.2x like the videos; a little faster still (1.3x at most) before anything is cut
+    factor = min(1.3, max(TRAILER_SPEED, total / (limit - 0.6)))
+    if factor > 1.001:
+        spoken = assemble.faster(spoken, factor, work / "fast")
         total = sum(d for _w, d in spoken) + pad * len(spoken)
     while total > limit - 0.3 and len(spoken) > 3:                       # still too long: the weakest middle line goes, never the closing
         spoken.pop(-2); lines.pop(-2)
