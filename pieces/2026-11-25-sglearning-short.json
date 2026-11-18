@@ -1,0 +1,353 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 8000.0,
+   "quote": "It has a factory in Chennai employing about 8000 persons. During the period 2005-06 to 2011-12, it had cumulative turnover/sales of Rs. 150700.44 crores.",
+   "source_date": "2013-12-12",
+   "source_name": "High Court of Delhi",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEOpp1ZB4LFEGhMg03PU3sdXCYVuapnXs-RaX0Dxml2r5Lx3LkjDReJoraZZEatZQdOn668XFeiENRRcrEoGYkLzUGR9qkX2EryDdG_kV6eHJszU2QeC_SxzViURGI=",
+   "text": "Nokia India's manufacturing plant in Chennai directly employed about 8,000 persons before tax claims stalled operations.",
+   "unit": "persons"
+  },
+  {
+   "label": "official",
+   "number": 150700.44,
+   "quote": "During the period 2005-06 to 2011-12, it had cumulative turnover/sales of Rs. 150700.44 crores.",
+   "source_date": "2013-12-12",
+   "source_name": "High Court of Delhi",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEOpp1ZB4LFEGhMg03PU3sdXCYVuapnXs-RaX0Dxml2r5Lx3LkjDReJoraZZEatZQdOn668XFeiENRRcrEoGYkLzUGR9qkX2EryDdG_kV6eHJszU2QeC_SxzViURGI=",
+   "text": "Nokia India recorded a cumulative turnover of Rs 150,700.44 crore across the seven financial years from 2005-06 to 2011-12.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "official",
+   "number": 50.0,
+   "quote": "In fact about 50% of Nokia hand-sets were manufactured in India and 40%/50% of the production was exported.",
+   "source_date": "2013-12-12",
+   "source_name": "High Court of Delhi",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEOpp1ZB4LFEGhMg03PU3sdXCYVuapnXs-RaX0Dxml2r5Lx3LkjDReJoraZZEatZQdOn668XFeiENRRcrEoGYkLzUGR9qkX2EryDdG_kV6eHJszU2QeC_SxzViURGI=",
+   "text": "The Chennai factory accounted for about 50 percent of Nokia's global handset production, with up to half of that volume exported.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 20299.0,
+   "quote": "Total 12183 8116 20299. (i)+(ii)+(iii) CIT-V.",
+   "source_date": "2013-12-12",
+   "source_name": "High Court of Delhi",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEOpp1ZB4LFEGhMg03PU3sdXCYVuapnXs-RaX0Dxml2r5Lx3LkjDReJoraZZEatZQdOn668XFeiENRRcrEoGYkLzUGR9qkX2EryDdG_kV6eHJszU2QeC_SxzViURGI=",
+   "text": "The Income Tax Department raised a total projected liability of Rs 20,299 crore against Nokia India and Nokia Corporation, encompassing tax, interest, and penalties.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "official",
+   "number": 586.3,
+   "quote": "Learned WPC 6150/2013 Page 8 of 36 Counsel for the applicant had pointed out that Nokia India has huge investments in India and total value of fixed assets was Rs. 586.30 crores.",
+   "source_date": "2013-12-12",
+   "source_name": "High Court of Delhi",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEOpp1ZB4LFEGhMg03PU3sdXCYVuapnXs-RaX0Dxml2r5Lx3LkjDReJoraZZEatZQdOn668XFeiENRRcrEoGYkLzUGR9qkX2EryDdG_kV6eHJszU2QeC_SxzViURGI=",
+   "text": "The tax authorities' provisional attachment order froze Nokia India's fixed assets valued at Rs 586.30 crore alongside 15 bank accounts, blocking the plant's transfer to Microsoft.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "reported",
+   "number": 2.0,
+   "quote": "By 2008, Sriperumbudur had become a special economic zone with over US$2 billion invested by companies primarily in the automotive and electronics sectors.",
+   "source_date": "2023-01-01",
+   "source_name": "Wikipedia",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH63mo17SL5SfkPlBMXKlvud5xwjaa4PublEQRP-59nMkHQOVgiHoWkFaGiWEFM204WG0Q9DwFY_2b8lA7I2yE1WmWy1oS8mReqPAWpcb0MKiSczp9nHEIOyG6cjERfnQqL",
+   "text": "The industrial corridor of Sriperumbudur drew over 2 billion USD in corporate investments across the automotive and electronics sectors by 2008.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "official",
+   "number": 15.0,
+   "quote": "In case of any retrenchment of a worker by an employer, the employer will need to contribute equivalent to 15 days' last drawn wages of the retrenched worker, within 45 days of retrenchment.",
+   "source_date": "2025-11-23",
+   "source_name": "Press Information Bureau",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCGC2jl6j4NAnfMGtwLy4diiJMMrPGlfCu58bAit3ZNXB_cmOMfzH8p4yeCHNjDgq0DQWTxPmSO8seJ0btgffiR7AWEKo53esXJ61EnuHiAQHkjziCJeL1f9YPk9ACPJntMBwJN-BYhDVBgpXPF98=",
+   "text": "Under the Industrial Relations Code 2020, retrenched workers are entitled to an employer contribution of 15 days' last drawn wages to a worker re-skilling fund.",
+   "unit": "days' wages"
+  },
+  {
+   "label": "official",
+   "number": 300.0,
+   "quote": "The code establishes that the industrial establishment, employing 300 or more workers, shall require prior permission from the appropriate Government, for lay-off, retrenchment, or closing down its industrial establishment.",
+   "source_date": "2025-11-23",
+   "source_name": "Press Information Bureau",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCGC2jl6j4NAnfMGtwLy4diiJMMrPGlfCu58bAit3ZNXB_cmOMfzH8p4yeCHNjDgq0DQWTxPmSO8seJ0btgffiR7AWEKo53esXJ61EnuHiAQHkjziCJeL1f9YPk9ACPJntMBwJN-BYhDVBgpXPF98=",
+   "text": "The Industrial Relations Code 2020 mandates that establishments employing 300 or more workers must obtain prior government permission before undertaking retrenchment, lay-off, or closure.",
+   "unit": "workers"
+  },
+  {
+   "label": "official",
+   "number": 2.0,
+   "quote": "On termination or resignation; wages must be paid within two working days.",
+   "source_date": "2025-11-23",
+   "source_name": "Press Information Bureau",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIqvwGrzIg8mi5X4I8ZbF9Ry-T5xljOGIfcvN7YNXutwKo9djlJhHl5Kcklm-W_CoR94LB4fJe7nn4_eAwU2cl4dfMuXVDnBu037P2wlcaWuda376UvmJe4Wl9ys7_375SZVjwuTP2U2GSMVkZel99yiYeXwl8GknAtBltJhMZP-mLBF7FymwcStiRRb-KZpuPDrGj",
+   "text": "The Code on Wages 2019 requires employers to disburse unpaid wages within two working days of termination, retrenchment, or resignation to shield families from sudden liquidity shocks.",
+   "unit": "working days"
+  },
+  {
+   "label": "official",
+   "number": 1.0,
+   "quote": "Under Section 53 of the code, the Government has redcued the eligibility requirement for gratuity for Fixed Term Employees (FTEs) from five years to one year.",
+   "source_date": "2025-11-22",
+   "source_name": "Press Information Bureau",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2ky8Ch3Pu6m-MmRS5KHhwgT7kimTbBtTtZTa_NlgkQjywZYg--SgrfBXpLTMoXHXLphAXEyQ5K5y3pSzfaasgMkZDoD52FqW7P97jx2kC12A0F5RHOghMnZQCDFR95TmBRUAY_Zt2qB24l78=",
+   "text": "Under Section 53 of the Code on Social Security 2020, fixed-term employees become eligible for terminal gratuity after completing one year of continuous service instead of five years.",
+   "unit": "years"
+  }
+ ],
+ "id": "2026-11-25-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-18",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 13.5,
+   "usd": 0.08753,
+   "voice": 8
+  },
+  "drafts": 1,
+  "intro_sent": "2026-11-18T22:30:09+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-25",
+ "reasons": [
+  "waiting for the founder's intro clip until 25 Nov 11:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "How did a giant phone factory lose 8,000 jobs to one tax notice?\nNokia's Chennai plant made about half of all Nokia phones. A tax freeze kept it out of the Microsoft deal, and it shut.\nToday, by law, final wages must come within 2 working days.\nWould you take a big EMI on a factory salary?\nThis is not investment advice.\nSend this to your friend who thinks a big company job is forever.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#PersonalFinanceIndia",
+     "#EMI",
+     "#IncomeTax",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "A giant Nokia factory near Chennai, about half of all Nokia phones, 8,000 jobs. One tax freeze kept it out of the Microsoft deal, and it shut. Would you take a big EMI on a salary you think is forever? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "How did a giant phone factory lose 8,000 jobs to one tax notice? Nokia's Chennai plant made about half of all Nokia phones, yet a tax freeze kept it out of the Microsoft deal and it shut. Your job can end over a fight you never saw, so know your rights: final wages must come within 2 working days. Send this to your friend who thinks a big company job is forever.",
+    "tags": [
+     "Nokia",
+     "Nokia Chennai",
+     "Sriperumbudur",
+     "factory closure",
+     "layoffs",
+     "tax notice",
+     "Microsoft Nokia deal",
+     "jobs",
+     "labour code",
+     "final wages",
+     "EMI"
+    ],
+    "title": "Nokia Chennai plant: shut by one tax notice?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Send this to your friend who thinks a big company job is forever.",
+  "hook": "How did a giant phone factory lose 8,000 jobs to one tax notice?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of a huge Indian electronics factory floor, long assembly lines stretching into the distance, hundreds of young Indian workers in blue uniforms and caps bent over workbenches, bright white industrial light, busy daytime shift",
+     "type": "art"
+    },
+    "vo": "How did a giant phone factory lose 8,000 jobs to one tax notice?"
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic evening scene in a small Tamil Nadu town near an industrial belt, a young couple sitting on the steps of a half-built concrete house, the husband still in his factory uniform, warm sunset light, hopeful mood",
+     "type": "art"
+    },
+    "vo": "Nokia's plant near Chennai made about half of all Nokia phones. Families planned home loans around that salary."
+   },
+   {
+    "facts_used": [],
+    "label": "the choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a young Indian factory worker proudly standing beside a new motorcycle outside a small two-wheeler showroom, the salesman shaking his hand, bright afternoon sun, confident mood",
+     "type": "art"
+    },
+    "vo": "Workers believed a global giant never shuts. So EMIs felt safe."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "the deal",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic shot of workers in uniforms gathered at a factory canteen during a break, talking excitedly over steel plates and glasses of tea, relieved smiles, fluorescent light, midday",
+     "type": "art"
+    },
+    "vo": "Then Microsoft agreed to buy Nokia's phone business. But here is the twist."
+   },
+   {
+    "facts_used": [
+     3,
+     4
+    ],
+    "label": "what really happened",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of a heavy iron chain and padlock being fastened on tall factory gates by a hand in a formal shirt sleeve, grey overcast morning, tense mood",
+     "type": "art"
+    },
+    "vo": "The tax department froze the plant over a demand bigger than the factory's worth."
+   },
+   {
+    "facts_used": [
+     0,
+     4
+    ],
+    "label": "the cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an empty tea stall and shuttered small shops outside a silent industrial area, plastic chairs stacked, a lone stray dog on the dusty road, dull afternoon light, abandoned mood",
+     "type": "art"
+    },
+    "vo": "So Microsoft left the plant out. It shut, and 8,000 jobs were gone."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "the twist",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of an Indian man's hands holding a printed salary slip and a passbook at a wooden table at home, a cup of tea beside them, soft window light, thoughtful mood",
+     "type": "art"
+    },
+    "vo": "Your job can end over a fight you never saw. By law, final wages must come within 2 working days. This is not investment advice."
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic shot of two young Indian men in office clothes walking out of a large company campus gate at dusk, one with a backpack, streetlights coming on, calm reflective mood",
+     "type": "art"
+    },
+    "vo": "Send this to your friend who thinks a big company job is forever."
+   }
+  ],
+  "thumbnail": {
+   "name": "NOKIA",
+   "name_hi": "NOKIA",
+   "scene": "LEFT: a giant bright factory floor near Chennai packed with workers in blue uniforms on long assembly lines; RIGHT: the same factory gates chained shut with a rusted padlock, an empty dusty road and shuttered shops outside",
+   "words": [
+    "8,000 JOBS",
+    "WIPED"
+   ],
+   "words_hi": [
+    "8,000 JOBS",
+    "WIPED"
+   ]
+  },
+  "title": "One tax notice killed 8,000 *jobs* 🏭"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  4.937,
+  10.965,
+  15.729,
+  20.492,
+  24.993,
+  29.411,
+  36.703
+ ],
+ "topic": {
+  "category": "sensation",
+  "from_bank": true,
+  "history": true,
+  "hooks": [
+   "Duniya ki sabse badi phone factory band kaise hui?",
+   "8,000 logon ki naukri ek notice se kaise gayi?"
+  ],
+  "id": "mh-nokia-chennai",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "",
+   "options": [
+    {
+     "closing": "",
+     "question": "Your EMI feels safe because your employer is huge. But eight thousand Nokia workers learned a lesson from a fight they never saw.",
+     "text": "Your EMI feels safe because your employer is huge. But eight thousand Nokia workers learned a lesson from a fight they never saw.",
+     "words": 23
+    },
+    {
+     "closing": "",
+     "question": "Eight thousand families planned home loans around one salary, believing a global giant never shuts. Then one deal changed everything.",
+     "text": "Eight thousand families planned home loans around one salary, believing a global giant never shuts. Then one deal changed everything.",
+     "words": 20
+    },
+    {
+     "closing": "",
+     "question": "Nokia's plant near Chennai made about half of all Nokia phones. So why did one tax notice leave thousands without salary?",
+     "text": "Nokia's plant near Chennai made about half of all Nokia phones. So why did one tax notice leave thousands without salary?",
+     "words": 21
+    },
+    {
+     "closing": "",
+     "question": "Microsoft was buying Nokia's phone business, yet the factory making half those phones was left out. What went wrong behind closed doors?",
+     "text": "Microsoft was buying Nokia's phone business, yet the factory making half those phones was left out. What went wrong behind closed doors?",
+     "words": 22
+    },
+    {
+     "closing": "",
+     "question": "A demand bigger than the factory's own worth landed on Nokia's plant near Chennai. What happened next took eight thousand jobs with it.",
+     "text": "A demand bigger than the factory's own worth landed on Nokia's plant near Chennai. What happened next took eight thousand jobs with it.",
+     "words": 23
+    }
+   ],
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: wide view of a huge Indian electronics factory floor, long assembly lines stretching into the distance, hundreds of young Indian workers in blue uniforms and caps bent over workbenches, bright white industrial light, busy daytime shift. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a light grey blazer over a navy polo. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "Your EMI feels safe because your employer is huge. But eight thousand Nokia workers learned a lesson from a fight they never saw.",
+   "text": "Your EMI feels safe because your employer is huge. But eight thousand Nokia workers learned a lesson from a fight they never saw.",
+   "words": 23
+  },
+  "summary": "The Nokia plant near Chennai, once among the largest phone factories in the world, shut in 2014 after a tax dispute kept it out of the sale to Microsoft. What a factory town loses when a plant closes. Court and company records.",
+  "target_minutes": null,
+  "theme": "business",
+  "title": "Chennai ki Nokia factory: 8,000 naukriyan ek tax notice par",
+  "topic_score": 9,
+  "topic_score_why": [
+   "+3 touches the viewer's own money",
+   "+3 a scare or a crash",
+   "+1 a choice the viewer faces",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "voice": "voice_g8azc8xcwhlu",
+  "weekly": true
+ },
+ "updated": "2026-11-18T22:30:21+00:00",
+ "writer": "claude"
+}

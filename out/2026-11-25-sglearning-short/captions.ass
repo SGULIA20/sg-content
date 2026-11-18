@@ -1,0 +1,41 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.02,Default,,0,0,0,,How did a giant phone factory
+Dialogue: 0,0:00:02.02,0:00:03.81,Default,,0,0,0,,lose 8,000 jobs to one tax
+Dialogue: 0,0:00:03.81,0:00:04.49,Default,,0,0,0,,notice?
+Dialogue: 0,0:00:04.94,0:00:06.74,Default,,0,0,0,,Nokia's plant near Chennai made about
+Dialogue: 0,0:00:06.74,0:00:08.00,Default,,0,0,0,,half of all Nokia phones.
+Dialogue: 0,0:00:08.00,0:00:09.97,Default,,0,0,0,,Families planned home loans around that
+Dialogue: 0,0:00:09.97,0:00:10.52,Default,,0,0,0,,salary.
+Dialogue: 0,0:00:10.96,0:00:13.60,Default,,0,0,0,,Workers believed a global giant never
+Dialogue: 0,0:00:13.60,0:00:13.84,Default,,0,0,0,,shuts.
+Dialogue: 0,0:00:13.84,0:00:15.28,Default,,0,0,0,,So EMIs felt safe.
+Dialogue: 0,0:00:15.73,0:00:17.78,Default,,0,0,0,,Then Microsoft agreed to buy Nokia's
+Dialogue: 0,0:00:17.78,0:00:18.81,Default,,0,0,0,,phone business.
+Dialogue: 0,0:00:18.81,0:00:20.04,Default,,0,0,0,,But here is the twist.
+Dialogue: 0,0:00:20.49,0:00:22.15,Default,,0,0,0,,The tax department froze the plant
+Dialogue: 0,0:00:22.15,0:00:23.81,Default,,0,0,0,,over a demand bigger than the
+Dialogue: 0,0:00:23.81,0:00:24.54,Default,,0,0,0,,factory's worth.
+Dialogue: 0,0:00:24.99,0:00:26.86,Default,,0,0,0,,So Microsoft left the plant out.
+Dialogue: 0,0:00:26.86,0:00:27.33,Default,,0,0,0,,It shut,
+Dialogue: 0,0:00:27.33,0:00:28.96,Default,,0,0,0,,and 8,000 jobs were gone.
+Dialogue: 0,0:00:29.41,0:00:30.74,Default,,0,0,0,,Your job can end over a
+Dialogue: 0,0:00:30.74,0:00:31.69,Default,,0,0,0,,fight you never saw.
+Dialogue: 0,0:00:31.69,0:00:32.07,Default,,0,0,0,,By law,
+Dialogue: 0,0:00:32.07,0:00:33.97,Default,,0,0,0,,final wages must come within 2
+Dialogue: 0,0:00:33.97,0:00:34.54,Default,,0,0,0,,working days.
+Dialogue: 0,0:00:34.54,0:00:36.25,Default,,0,0,0,,This is not investment advice.
+Dialogue: 0,0:00:36.70,0:00:37.78,Default,,0,0,0,,Send this to your friend who
+Dialogue: 0,0:00:37.78,0:00:39.21,Default,,0,0,0,,thinks a big company job is
+Dialogue: 0,0:00:39.21,0:00:39.74,Default,,0,0,0,,forever.
