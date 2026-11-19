@@ -48,7 +48,12 @@ def _extract(text: str) -> list:
                 unit = "pct"
             flush(); continue
         if low[0].isdigit():
-            flush(); cur, active = float(low.replace(",", "")), True; continue
+            flush()
+            try:
+                cur, active = float(low.replace(",", "")), True
+            except ValueError:               # 18 Nov 2026: "¹⁴C" (carbon-14) counts as digits but is no number; the 25 Nov SG-MYTH Short crashed on it
+                pass
+            continue
         if low in UNITS:
             if active and cur:
                 flush()                      # two unit words in a row ("ek do teen") are separate numbers

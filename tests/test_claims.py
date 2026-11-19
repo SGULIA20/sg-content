@@ -83,3 +83,11 @@ def test_numbers_inside_the_sourced_sentence_count_and_year_ranges_pass():
 def test_cr_on_a_card_means_crore():
     from engine import claims
     assert claims.numbers_in("₹95 lakh cr") == claims.numbers_in("95 lakh crore") == [9.5e13]
+
+
+def test_a_superscript_isotope_is_not_a_number():
+    """18 Nov 2026: '¹⁴C' crashed the 25 Nov SG-MYTH Short (ValueError in float)."""
+    from engine import claims
+    got = claims._extract("Sinauli ki ¹⁴C dating 2000 BCE batati hai")
+    assert (2000.0, None) in got and claims.numbers_in("¹⁴C dating") is not None
+
