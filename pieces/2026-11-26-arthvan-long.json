@@ -109,13 +109,28 @@
    "drafts": 1,
    "research": 1
   },
+  "captions": {
+   "en": "AUieDab_NPT-eKeH1tkIjzu3D6TwQxRT0y5u7gbebVs4__xjTfn6S_f3",
+   "gu": "AUieDaYbarWxto_BJh4gB_wozigpDG2dcgeKnvSNi1X-zzRgxJ2oC9mlso9zBrWuDMqVw-9sM1Y",
+   "hi": "AUieDabUAzz30XJXp1Uzc7kr_ea2lI3Bhtx2gBf9Lzcf7FGfNSx-ve1ZP-lHhBZ5fcBos7U",
+   "mr": "AUieDabXKdPhMoxqZRrs5nSyyE17A_pzco4gJszhCA4jbZosjojc8EEdfxGR4y9bRqg",
+   "ta": "AUieDaaibEhtYcqpN0p50w-_6ZJUWJZpVaeDWKj0w0_sdeSfPwjY6fwzNIp3PRDtG58"
+  },
   "cost": {
    "inr": 115.5,
-   "usd": 0.374034,
-   "voice": 76
+   "usd": 0.827672,
+   "voice": 81
   },
   "drafts": 1,
-  "intro_sent": "2026-11-19T14:15:39+00:00"
+  "intro": {
+   "clip": "2026-11-26-arthvan-long.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-19T16:24:01+00:00",
+   "seconds": 8.38
+  },
+  "intro_checked": "c7bcb3813876ff30",
+  "intro_sent": "2026-11-19T14:15:39+00:00",
+  "yt_id": "WZSzkc3ESGU"
  },
  "kind": "long",
  "publish_day": "2026-11-26",
@@ -1135,7 +1150,7 @@
   },
   "title": "*Kedarnath* ko ek patthar ne bachaya? 😱"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   11.919,
@@ -1265,10 +1280,11 @@
     }
    ],
    "prompt": "16:9 landscape, 1920x1080, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: dramatic wide view of an ancient grey stone Himalayan temple half buried in a towering wall of blue-white glacial ice under a stormy sky, snow peaks behind, wind-blown snow, the lower fifth smooth untouched snow. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. If the scene shows the past, it is ancient India: Indian people in dhotis, sarees and angavastram, warriors with bows, spears and bronze or leather armour, carved stone pillars, oil lamps; never European knights, plate armour, castles or anything medieval European. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a rust-orange kurta with a cream stole. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGMythWorld watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1920x1080.",
-   "question": "2013 mein poori ghaati beh gayi, lekin Kedarnath mandir ke peeche ek vishaal patthar ruka aur paani do hisson mein bant gaya. Kaise?",
-   "text": "2013 mein poori ghaati beh gayi, lekin Kedarnath mandir ke peeche ek vishaal patthar ruka aur paani do hisson mein bant gaya. Kaise?",
-   "words": 23
+   "question": "Shiv Pandavon se milna hi nahi chahte the, isliye bail ban kar chhup gaye. Phir Bhim ne unhe pehchaan liya... aur?",
+   "text": "Shiv Pandavon se milna hi nahi chahte the, isliye bail ban kar chhup gaye. Phir Bhim ne unhe pehchaan liya... aur?",
+   "words": 21
   },
+  "look": "indian-comic",
   "notes": "Wadia Institute study on glacial burial (1300-1900 CE); the 'Bhim Shila' boulder; label legend for the Pandava story.",
   "place": "Kedarnath, Uttarakhand",
   "proven_short": "2026-11-04-arthvan-short",
@@ -1277,6 +1293,6 @@
   "title_hi": "Kedarnath 2013, mandir kaise bacha",
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-11-19T14:15:53+00:00",
+ "updated": "2026-11-19T16:24:09+00:00",
  "writer": "claude"
 }
