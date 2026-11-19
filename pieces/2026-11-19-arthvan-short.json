@@ -135,7 +135,9 @@
    "voice": 13
   },
   "drafts": 1,
+  "ig_reel_id": "17883200805631482",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-19-arthvan-short.mp4",
    "clip_seconds": 1,
@@ -146,6 +148,8 @@
   "intro_sent": "2026-11-12T21:23:38+00:00",
   "out_sha": "ff0610adecea9645f03d7283a83a9b379aef771b",
   "out_sha_intro": true,
+  "threads_id": "18181306153451403",
+  "threads_poll_id": "17932651140426013",
   "yt_id": "beu4NTlPZF4"
  },
  "kind": "short",
@@ -365,7 +369,7 @@
   },
   "title": "Tulsi ka vivah *Shaligram* se hi kyun? 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   3.521,
@@ -418,6 +422,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-13T08:58:07+00:00",
+ "updated": "2026-11-19T16:10:28+00:00",
  "writer": "claude"
 }
