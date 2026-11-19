@@ -285,31 +285,6 @@
    "weekly": true,
    "from_bank": true
   },
-  "2026-11-26-arthvan-long": {
-   "id": "wk-2026-11-26-arthvan-long",
-   "title": "Sita Haran: Valmiki Ramayan mein sach mein kya likha hai, aur Lakshman Rekha kahan se aayi?",
-   "summary": "Aranya Kanda mein Maricha, swarn mrig, Sita aur Lakshman ka samvad, aur haran ka varnan. Check: Valmiki mein Lakshman Rekha ka zikr hai ya nahi, Ramcharitmanas aur doosre paath se tulna. Shraddha ka samman rakhte hue paath aur parampara alag batao.",
-   "hooks": [
-    "Jis Lakshman Rekha ko hum sab jaante hain, kya Valmiki ne use likha?",
-    "Sita ne Lakshman se aisa kya kaha ki wo kutiya chhod kar chale gaye?"
-   ],
-   "weekly": true,
-   "topic_score": 9,
-   "topic_score_why": [
-    "+4 one of the most-watched names",
-    "+3 a shock question or a mystery",
-    "+1 an untold angle (in the summary)",
-    "+1 asks a question"
-   ],
-   "follows": "Sita Haran 'what does Valmiki actually say' got 4.3M views in 75s, and Sita topics got 2-4M more. A long video lets us give the full text-based telling. Open at",
-   "allowed_sources": [
-    "asi.nic.in",
-    "en.wikipedia.org",
-    "nio.res.in",
-    "britannica.com",
-    "the scripture or text named in the story"
-   ]
-  },
   "2026-11-26-arthvan-short": {
    "id": "wk-2026-11-26-arthvan-short",
    "title": "Vishnu ko ghode ka sir kyun lagana pada?",
