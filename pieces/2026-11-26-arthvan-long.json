@@ -1,0 +1,1282 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "Legend has it that the Pandavas originally constructed the Kedarnath shrine to atone for sins committed during the Mahabharata war.",
+   "source_date": "2013",
+   "source_name": "Garhwal Oral Tradition",
+   "source_url": "https://en.wikipedia.org/wiki/Kedarnath_Temple",
+   "text": "According to Garhwal folklore, the Pandava brothers erected the earliest Kedarnath shrine to expiate the guilt of Gotra Hatya incurred during the Kurukshetra battle before making their journey toward Swargarohini.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 400.0,
+   "quote": "Using the size of the lichen and some statistical refinements... Kedarnath temple survived being buried under the snow for almost 400 years.",
+   "source_date": "2013-06-27",
+   "source_name": "Current Science / Down To Earth",
+   "source_url": "https://www.downtoearth.org.in/environment/kedarnath-temple-in-uttarakhand-survives-glacier-floods-41480",
+   "text": "A lichenometric moraine study published in Current Science by Dr. R. K. Chaujar indicated that the Chorabari glacier advanced during the Little Ice Age, keeping the Kedarnath temple buried under snow and ice for nearly 400 years between 1300 and 1900 CE.",
+   "unit": "years"
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "According to scientists of Wadia Institute of Himalayan Geology, Dehradun, Kedarnath temple survived being buried under the snow for almost 400 years... the temple structure has several yellow lines, which were formed as the glacier slowly moved over the stones.",
+   "source_date": "2013-06-28",
+   "source_name": "Wadia Institute of Himalayan Geology",
+   "source_url": "https://www.wihg.res.in",
+   "text": "Scientists from the Wadia Institute of Himalayan Geology identified yellowish striation marks and polish tracks across the temple's outer granite surfaces, caused by the gradual movement of glacial ice and embedded debris over several centuries.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "Chaujar's own paper lays out three separate possibilities and does not pick one: the temple was built before any glacier reached that spot, the temple was built after the ice had already advanced and then receded, or the temple was somehow constructed through or around an existing glacier.",
+   "source_date": "2009",
+   "source_name": "Current Science",
+   "source_url": "https://www.currentscience.ac.in",
+   "text": "Scientists dispute whether the Kedarnath shrine was literally entombed beneath a moving glacier during the Little Ice Age or if advancing lateral moraines simply flanked the perimeter while snow accumulation enveloped the roofline.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "The interlocked stones with iron clamps without the use of mortar or cement allowed the structure to withstand extreme pressures.",
+   "source_date": "2013-09-06",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://pib.gov.in",
+   "text": "Field documentation by the Archaeological Survey of India verified that Kedarnath temple was erected without mortar using dry ashlar masonry with interlocking stone joints and iron dowels, granting it high resistance to seismic energy and water loads.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 24.0,
+   "quote": "It recorded 210 mm of rain in 12 hours another 115 fell in the next 12 hours that is 325 mm in a single day.",
+   "source_date": "2013-07-25",
+   "source_name": "Wadia Institute of Himalayan Geology",
+   "source_url": "https://www.currentscience.ac.in/Volumes/105/02/0171.pdf",
+   "text": "Meteorological records from the Wadia Institute of Himalayan Geology camp documented that 325 millimetres of rainfall fell over the Chorabari glacial catchment within twenty-four hours immediately preceding the flash flood.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": 2.0,
+   "quote": "The bursting of this lake led to its complete draining within 5–10 min as reported by the watch and ward staff of the Wadia Institute of Himalayan Geology.",
+   "source_date": "2013-07-25",
+   "source_name": "Current Science / Wadia Institute of Himalayan Geology",
+   "source_url": "https://www.currentscience.ac.in/Volumes/105/02/0171.pdf",
+   "text": "The moraine-dammed Chorabari Lake, located approximately two kilometres north of the temple, collapsed its natural terminal wall on the morning of June 17, 2013, draining its entire volume in less than ten minutes.",
+   "unit": "km"
+  },
+  {
+   "label": "archaeology",
+   "number": 9.0,
+   "quote": "A massive boulder got lodged roughly thirty feet behind the rear wall of the temple during the flash flood.",
+   "source_date": "2013-09-06",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://pib.gov.in",
+   "text": "A massive erratic boulder washed down by the Chorabari debris surge came to a halt roughly nine metres behind the north-facing rear wall of the Kedarnath sanctum.",
+   "unit": "metres"
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "The boulder split the water and rubble in two directions and sent it around the structure instead of through it.",
+   "source_date": "2013-09-06",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://pib.gov.in",
+   "text": "Post-flood geotechnical analysis established that the giant boulder acted as an emergency hydro-barrier, bifurcating the incoming torrent and debris flow around both flanks of the monument rather than ramming its rear masonry.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "Devotees began worshipping the protective rock behind the shrine as Bhim Shila, honoring the legend of Bhima guarding the temple.",
+   "source_date": "2014",
+   "source_name": "Kedarnath Temple Priests Oral Tradition",
+   "source_url": "https://en.wikipedia.org/wiki/Kedarnath_Temple",
+   "text": "Local priests and devotees named the protective boulder 'Bhim Shila', in the belief that the Pandava warrior Bhima placed the rock to shield Lord Shiva's holy seat from devastation.",
+   "unit": null
+  }
+ ],
+ "id": "2026-11-26-arthvan-long",
+ "ids": {
+  "budget": {
+   "day": "2026-11-19",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 115.5,
+   "usd": 0.374034,
+   "voice": 76
+  },
+  "drafts": 1,
+  "intro_sent": "2026-11-19T14:15:39+00:00"
+ },
+ "kind": "long",
+ "publish_day": "2026-11-26",
+ "reasons": [
+  "waiting for the founder's intro clip until 26 Nov 10:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Kedarnath ka mandir, 400 saal barf ke neeche daba raha?\nDeewaron par barf ki kharonch, peeche Bhim Shila, aur bina cement ke jude patthar.\nVigyan kya kehta hai, katha kya kehti hai, sab sabut ke saath.\nKya aap kabhi Kedarnath gaye hain?\nUs dost ko bhejo jo Kedarnath jaane ka plan bana raha hai.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#Mahabharat",
+     "#IndianHistory",
+     "#Mythology",
+     "#Archaeology",
+     "#AncientIndia",
+     "#Rahasya",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Kedarnath ka mandir 400 saal barf ke neeche daba raha? Aur 2013 ke sailaab mein ek patthar ne use kaise bachaya? Aap kya maante hain? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Ek patthar, ek mandir",
+     "00:00 Pandavon ki katha",
+     "00:00 400 saal barf ke neeche?",
+     "00:00 Deewaron par barf ke nishaan",
+     "00:00 Woh baarish jo ruki nahi",
+     "00:00 Jheel tooti, 10 minute",
+     "00:00 Bhim Shila ka sabut",
+     "00:00 Bina cement ka mandir",
+     "00:00 Vaigyanik kyun ulajh gaye",
+     "00:00 Jo ab bhi rahasya hai",
+     "00:00 Aaj Kedarnath mein kya dekhein",
+     "00:00 Aapka sawaal"
+    ],
+    "description": "Kedarnath ka mandir 400 saal barf ke neeche, aur 2013 mein ek patthar ne bachaya? Wadia Institute, Current Science aur ASI ke sabut, Garhwal ki lok-katha ke saath. Dekhiye kya pakka hai, aur kya aaj bhi rahasya hai. Us dost ko bhejo jo Kedarnath jaane ka plan bana raha hai.",
+    "tags": [
+     "Kedarnath",
+     "Kedarnath 2013",
+     "Bhim Shila",
+     "Kedarnath temple",
+     "Chorabari glacier",
+     "Little Ice Age",
+     "Wadia Institute",
+     "Pandav",
+     "Mahabharat",
+     "Uttarakhand",
+     "Indian history",
+     "Archaeology",
+     "Mythology"
+    ],
+    "title": "Kedarnath ko kisne bachaya? 2013 ka patthar"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "400 saal",
+    "line": "Chaujar ke andaaze se mandir barf ke neeche",
+    "source": "Current Science / Down To Earth"
+   },
+   {
+    "big_number": "325 mm",
+    "line": "24 ghante mein Chorabari par baarish",
+    "source": "Wadia Institute of Himalayan Geology"
+   },
+   {
+    "big_number": "10 min",
+    "line": "Se kam mein Chorabari jheel khaali",
+    "source": "Current Science / Wadia Institute of Himalayan Geology"
+   },
+   {
+    "big_number": "9 metre",
+    "line": "Mandir ke peeche ruka Bhim Shila patthar",
+    "source": "Archaeological Survey of India"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Kya aap kabhi Kedarnath gaye hain, aur Bhim Shila dekhi hai?",
+  "hook": "Kedarnath ka mandir, 400 saal barf ke neeche daba raha?",
+  "scenes": [
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic dramatic wide view of an ancient grey stone Himalayan temple half buried in a towering wall of blue-white glacial ice under a stormy sky, snow peaks behind, wind-blown snow, the lower fifth smooth untouched snow, no text",
+     "type": "art"
+    },
+    "vo": "Kedarnath ka mandir, 400 saal barf ke neeche daba raha? Kuch vaigyanik yahi kehte hain. Aur phir bhi mandir khada raha, seedha aur majboot."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view of a narrow Himalayan valley during a violent flood, brown water and boulders rushing past ruined tin-roofed buildings, heavy rain clouds overhead, the lower fifth an even sheet of muddy water, no text",
+     "type": "art"
+    },
+    "vo": "Lekin kahani yahin khatam nahi hoti. 2013 mein pahad se paani aur pattharon ka sailaab utra. Poori ghaati mein tabahi machi, ghar aur dukaanein beh gayi."
+   },
+   {
+    "facts_used": [
+     7,
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view from behind a huge grey boulder resting just behind an ancient stone temple, muddy floodwater streaming past both sides of the temple, grey overcast light, the lower fifth flat wet ground, no text",
+     "type": "art"
+    },
+    "vo": "Par mandir? Mandir ke peeche ek vishaal patthar aakar ruk gaya. Aur paani do hisson mein bant gaya, mandir ke dono taraf se nikal gaya."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of Indian devotees in woollen shawls touching a large boulder decorated with marigold garlands and vermilion marks, mountain mist behind, faces turned away, the lower fifth plain stone ground, no text",
+     "type": "art"
+    },
+    "vo": "Log is patthar ko Bhim Shila kehte hain. Unka vishwas hai ki Bhim ne khud ise rakha. Vigyan iske baare mein kya kehta hai?"
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic early morning view of a lone stone temple seen from far down a Himalayan valley, mist rising from the river, snow peaks glowing pink, the lower fifth a calm grassy meadow, no text",
+     "type": "art"
+    },
+    "vo": "Is video mein teen nahi, bas yeh sawaal hain. Mandir kisne banaya? Kya sach mein barf ke neeche daba tha? Aur 2013 mein woh bacha kaise?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an elderly Garhwali man in a woollen cap telling a story to children beside a wood fire inside a stone hut, warm firelight, seen from the side, the lower fifth plain earthen floor, no text",
+     "type": "art"
+    },
+    "vo": "Har jawab ke saath sabut hoga, aur har sabut ke saath uska source. Par shuruaat wahan se, jahan se Kedarnath ki katha shuru hoti hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of an ancient Indian battlefield at dusk after the war, broken wooden chariots, bows and spears lying on the ground, five warriors in dhotis and bronze armour seen from behind, smoke in the air, the lower fifth dusty ground, no text",
+     "type": "art"
+    },
+    "vo": "Mahabharat ka yudh khatam ho chuka tha. Kurukshetra mein Pandav jeete, par apne hi bhaiyon aur gurujanon ka khoon unke haath par tha."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of five ancient Indian warriors in simple dhotis kneeling in sorrow beside a wide river at sunset, seen from behind, weapons laid down beside them, the lower fifth calm river water, no text",
+     "type": "art"
+    },
+    "vo": "Garhwal ki lok-katha kehti hai, ise gotra hatya ka paap maana gaya. Gotra hatya yaani apne hi kul ke logon ko maarna."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of five ancient Indian men in dhotis and a woman in a saree walking up a rocky Himalayan path with bows on their shoulders, seen from behind, snow peaks ahead, the lower fifth a plain rocky trail, no text",
+     "type": "art"
+    },
+    "vo": "Is paap se mukti kaun dila sakta tha? Pandavon ko jawab mila, sirf Shiv. Aur Shiv ki talaash unhe Himalaya ki ore le chali."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a large white bull standing far away in drifting Himalayan mist among boulders, soft silver light, the lower fifth a calm grassy slope, no text",
+     "type": "art"
+    },
+    "vo": "Lekin katha mein twist hai. Shiv Pandavon se milna hi nahi chahte the. Kehte hain, woh ek bail ka roop lekar pahadon mein chhup gaye."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a powerful ancient Indian warrior in a dhoti running across a misty high meadow toward a distant bull sinking into the earth, warrior seen from behind, the lower fifth an even meadow, no text",
+     "type": "art"
+    },
+    "vo": "Bhim ne bail ko pehchaan liya. Woh use pakadne daude. Par bail dharti mein samaane laga, aur sirf uski peeth upar reh gayi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a dark triangular rock shrine inside a dim ancient stone sanctum, lit by small brass oil lamps, offered flowers and leaves around it, no people, the lower fifth plain stone floor, no text",
+     "type": "art"
+    },
+    "vo": "Bhakt maante hain, Kedarnath mein jo trikon jaisa patthar pooja jaata hai, woh wahi peeth hai. Isliye yahan ka shivling baaki jagahon se alag dikhta hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of ancient Indian men in dhotis raising a small stone shrine in a snowy high valley, carrying stones with ropes, distant snow peaks, the lower fifth snow-covered ground, no text",
+     "type": "art"
+    },
+    "vo": "Lok-katha kehti hai, phir Pandavon ne yahan pehla mandir banaya. Uske baad woh Swargarohini ki ore chale, yaani woh pahad jahan se swarg ka raasta maana jaata hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a grey carved stone Himalayan temple at dusk, its stone tower dark against the sky, snow peaks behind, the lower fifth an empty stone courtyard, no text",
+     "type": "art"
+    },
+    "vo": "Yeh katha hai, aur iska koi likhit sabut nahi milta. Par asli sawaal ab shuru hota hai. Jo patthar ka mandir aaj khada hai, uske saath sadiyon tak kya hua?"
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view of a long grey-white glacier covered in rocks flowing down from snow peaks toward a tiny stone temple far below, clear morning light, the lower fifth plain snowfield, no text",
+     "type": "art"
+    },
+    "vo": "Mandir ke theek peeche ek glacier hai, naam hai Chorabari. Glacier yaani barf ki ek badi nadi, jo saal dar saal bahut dheere khisakti hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a geologist in a red jacket standing on a rocky ridge looking at a glacier, seen from behind, wind and cloud, the lower fifth plain rocky ground, no text",
+     "type": "art"
+    },
+    "vo": "Ab socho, kya kabhi yeh glacier aage badh kar mandir tak pahunch gaya tha? Ek vaigyanik ne yahi sawaal poocha, aur jawab dhoondhne nikle."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a field notebook with no readable writing, a rock hammer and a hand lens resting on a large boulder high in the Himalaya, the lower fifth plain rock surface, no text",
+     "type": "art"
+    },
+    "vo": "Dr. R. K. Chaujar ne Kedarnath ke aas-paas ke pattharon ka adhyayan kiya. Unka paper Current Science naam ki science patrika mein chhapa."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic macro view of round green-yellow lichen patches growing on a grey granite rock, soft daylight, the lower fifth plain grey rock, no text",
+     "type": "art"
+    },
+    "vo": "Unka tareeka bada anokha tha. Pattharon par ek patli si parat ugti hai, jise lichen kehte hain. Kai jaisi, hare-peele rang ki."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a gloved hand holding a plain unmarked wooden stick beside a round lichen patch on a boulder, mountain light, the lower fifth plain rock, no text",
+     "type": "art"
+    },
+    "vo": "Lichen bahut dheere badhta hai, saal mein bas thoda sa. Toh uska size naap kar pata chalta hai, patthar kitne samay se khule mein pada hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a melting glacier edge slowly revealing bare grey rocks, meltwater trickling between stones, the lower fifth wet pebbles, no text",
+     "type": "art"
+    },
+    "vo": "Jahan barf thi, wahan lichen nahi ug sakta. Barf hatne ke baad hi uski ghadi chalni shuru hoti hai. Yahi tha Chaujar ka sabut."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view of long curving ridges of rock and earth lying beside a retreating Himalayan glacier, afternoon light, the lower fifth a flat valley floor, no text",
+     "type": "art"
+    },
+    "vo": "Unhone moraine dekhe. Moraine yaani glacier ke saath bahkar aaye patthar aur mitti ke lambe dher, jo barf pighalne par peeche chhoot jaate hain."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a frozen Himalayan valley in a long cold age, heavy snow falling, a thick glacier filling the valley and burying small stone huts, the lower fifth deep snow, no text",
+     "type": "art"
+    },
+    "vo": "Ab aata hai woh daur jise Little Ice Age kehte hain. Yaani kuch sadiyan jab duniya ka mausam thanda ho gaya, aur glacier aage badhe."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of the top of an ancient stone temple spire just visible above thick glacial ice and snow, blue twilight, the lower fifth smooth ice, no text",
+     "type": "art"
+    },
+    "vo": "Chaujar ke andaaze se, isi thande daur mein Kedarnath mandir lagbhag 400 saal barf ke neeche daba raha. Socho, itni lambi thand, aur mandir phir bhi khada!"
+   },
+   {
+    "facts_used": [
+     1,
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a weathered grey stone temple wall in soft side light, every block rough and old, the lower fifth the plain stone base, no text",
+     "type": "art"
+    },
+    "vo": "Lekin ek paper kaafi nahi hota. Agar barf sach mein mandir par se guzri, toh pattharon par uske nishaan bhi hone chahiye. Kya woh mile?"
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of Indian scientists in winter jackets walking toward an ancient stone temple surrounded by flood debris, seen from behind, overcast sky, the lower fifth plain muddy ground, no text",
+     "type": "art"
+    },
+    "vo": "2013 ke baad Dehradun ke Wadia Institute of Himalayan Geology ke vaigyanik Kedarnath pahunche. Yeh sanstha Himalaya ke pahadon ki padhai karti hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of long yellowish streaks running across large granite blocks of an old temple wall, low raking light, the lower fifth plain stone, no text",
+     "type": "art"
+    },
+    "vo": "Unhone mandir ki bahar ki deewaron ko kareeb se dekha. Granite ke bhaari pattharon par unhe peele rang ki lambi lakeerein dikhi."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of fine parallel scratch lines on a rock surface next to a slab of ice with small stones frozen inside it, cold light, the lower fifth plain rock, no text",
+     "type": "art"
+    },
+    "vo": "Inhe striation kehte hain. Yaani kharonch ki lakeerein, jo tab banti hain jab barf aur usme phanse kankad patthar par ghisatte hain."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a smooth glossy polished granite surface reflecting soft daylight, the lower fifth plain stone, no text",
+     "type": "art"
+    },
+    "vo": "Saath mein kuch jagah patthar chikna, polish jaisa ho gaya tha. Jaise kisi ne sadiyon tak regmaal ghisa ho. Yeh kaam khisakti barf karti hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a geologist's gloved hand touching scratched temple stone, the rest of the person out of frame, soft mountain light, the lower fifth plain stone base, no text",
+     "type": "art"
+    },
+    "vo": "Wadia Institute ke vaigyanikon ke mutabik, yeh nishaan kai sadiyon mein bane. Matlab barf ne kisi na kisi roop mein in pattharon ko chhua tha."
+   },
+   {
+    "facts_used": [
+     2,
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of dark storm clouds gathering at night over a Himalayan valley, a stone temple faintly lit by lamps, the lower fifth a dark calm meadow, no text",
+     "type": "art"
+    },
+    "vo": "Toh jo mandir sadiyon ki barf jhel gaya, kya woh ek raat ka paani jhel paata? Yahi imtihaan 2013 mein aaya."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a crowded pilgrim street in a Himalayan town with tin-roofed shops and pilgrims in plastic raincoats under heavy rain, the lower fifth a wet stone path, no text",
+     "type": "art"
+    },
+    "vo": "June ka mahina tha. Kedarnath mein yatra chal rahi thi, ghaati yatriyon aur dukaanon se bhari thi. Tabhi aasmaan khul ke barasne laga."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a small weather station with a metal rain gauge on a rocky slope near a glacier in pouring rain, a tent nearby, the lower fifth wet rocks, no text",
+     "type": "art"
+    },
+    "vo": "Chorabari glacier ke paas Wadia Institute ka ek camp tha. Wahan baarish naapne ki machine lagi thi. Usne jo record kiya, woh daraavna tha."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of torrential rain lashing steep Himalayan slopes, new waterfalls pouring from every cliff, grey light, the lower fifth flooded grass, no text",
+     "type": "art"
+    },
+    "vo": "Sirf 24 ghante ke andar, 325 millimetre baarish ho gayi. Yeh aam barsaat nahi thi. Yeh aasmaan se girti hui nadi thi."
+   },
+   {
+    "facts_used": [
+     5,
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view of swollen muddy streams rushing down mountain slopes into a narrow valley, low clouds, the lower fifth calm grey mist, no text",
+     "type": "art"
+    },
+    "vo": "Itna paani gaya kahan? Pahad ki dhalaan par barf pighal rahi thi, naale ufan rahe the. Aur upar ek jheel chupchaap bhar rahi thi."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a grey glacial lake held back by a loose natural wall of rock and earth, water nearly at the brim, heavy clouds, the lower fifth still lake water, no text",
+     "type": "art"
+    },
+    "vo": "Is jheel ka naam tha Chorabari jheel. Iski deewar kisi insaan ne nahi banayi thi. Woh moraine, yaani patthar-mitti ke dher se bani thi."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of water seeping through cracks in a wall of loose earth and stones, small streams spurting out, the lower fifth dark water, no text",
+     "type": "art"
+    },
+    "vo": "Mitti ki deewar, aur peeche lagaataar badhta paani. Ab sawaal sirf yeh tha, yeh deewar kab tak tikegi? Kisi ko andaaza nahi tha ki jawab kuch hi ghanton mein milega."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view at dawn of a natural rock-and-earth dam bursting, a wall of grey water rushing out of a mountain lake, spray in the air, the lower fifth dark even water, no text",
+     "type": "art"
+    },
+    "vo": "Agli subah. Mandir se lagbhag 2 kilometre upar, Chorabari jheel ki kachchi deewar achanak toot gayi. Jo paani jama hua tha, woh ek saath neeche bhaga."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of two Indian watchmen in raincoats standing on a rocky ridge watching a mountain lake drain away below them, seen from behind, the lower fifth plain rocky ridge, no text",
+     "type": "art"
+    },
+    "vo": "Wadia Institute ke chowkidaron ne baad mein bataya, unhone kya dekha. Poori jheel 10 minute se bhi kam mein khaali ho gayi."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a roaring debris flow of mud, boulders and uprooted trees racing down a narrow gorge, the lower fifth brown churning water in shadow, no text",
+     "type": "art"
+    },
+    "vo": "Socho, ek poori jheel, 10 minute se kam mein. Aur woh paani akela nahi aaya. Saath mein bade bade patthar, mitti aur ped bhi beh rahe the."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of empty ruined guesthouses and shops half buried in mud and boulders in a mountain town, overcast and silent, no people, the lower fifth flat mud, no text",
+     "type": "art"
+    },
+    "vo": "Neeche Kedarnath ka bazaar tha, dharamshalayein thi, yatri the. Paani aur malbe ke saamne kuch nahi tika. Kitne hi parivaar hamesha ke liye bichhad gaye."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of the rear wall of an ancient stone temple with a torrent of muddy water and rocks approaching from the slope above, the lower fifth plain mud, no text",
+     "type": "art"
+    },
+    "vo": "Aur yeh sailaab seedha us raaste par tha jahan mandir khada tha. Mandir ki peeth, yaani uski uttar wali deewar, theek saamne thi."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an ancient stone temple standing intact in the middle of a wide field of boulders and grey mud after a flood, pale light breaking through clouds, the lower fifth flat mud, no text",
+     "type": "art"
+    },
+    "vo": "Toh mandir ko kuch hona chahiye tha, hai na? Par jab paani utra, toh log hairaan reh gaye. Mandir wahi khada tha."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of a giant rounded grey boulder resting on mud just behind a stone temple, mountains behind, the lower fifth plain ground, no text",
+     "type": "art"
+    },
+    "vo": "Mandir ke peeche ek vishaal patthar pada tha. Yeh patthar pehle wahan nahi tha. Ise sailaab khud bahakar laaya tha, upar pahad se."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of Indian survey officials in jackets measuring the gap between a giant boulder and a temple wall with a long plain tape, seen from a distance, the lower fifth plain ground, no text",
+     "type": "art"
+    },
+    "vo": "Archaeological Survey of India, yaani ASI, desh ki purani imaaraton ki dekhbhaal karti hai. Uske mutabik yeh patthar mandir se lagbhag 9 metre peeche ruka."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic low-angle view of the narrow gap between a huge boulder and the back wall of an old stone temple, dramatic sky above, the lower fifth stone and mud, no text",
+     "type": "art"
+    },
+    "vo": "9 metre, yaani lagbhag ek bade kamre jitni doori. Itne bade patthar ka, itne tez paani mein, theek wahan ruk jaana. Kaise?"
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of muddy floodwater slamming into a huge boulder and splashing high into the air, the boulder unmoved, the lower fifth brown water, no text",
+     "type": "art"
+    },
+    "vo": "Ab asli kamaal dekhiye. ASI ke mutabik is patthar ne ek dhaal ka kaam kiya. Paani aur malba seedha mandir se nahi takraya."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view of floodwater splitting into two streams around a boulder and flowing past both sides of an ancient stone temple, the lower fifth plain mud, no text",
+     "type": "art"
+    },
+    "vo": "Patthar ne sailaab ko do hisson mein baant diya. Ek dhaara mandir ke baayein se nikli, doosri daayein se. Beech mein mandir bacha raha."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a clear mountain river splitting around a large rock, white foam on both sides, bright daylight, the lower fifth smooth flowing water, no text",
+     "type": "art"
+    },
+    "vo": "Jaise nadi ke beech pada patthar paani ko kaat deta hai, waise hi. Bas yahan nadi paani ki nahi, pattharon aur malbe ki thi."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a priest in saffron cloth applying vermilion to a large boulder hung with marigold garlands, seen from the side at a distance, the lower fifth plain stone floor, no text",
+     "type": "art"
+    },
+    "vo": "Pujariyon aur bhakton ne is patthar ko naam diya, Bhim Shila. Unka vishwas hai ki Bhim ne Shiv ke dham ki raksha ke liye ise rakha."
+   },
+   {
+    "facts_used": [
+     8,
+     9
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of the boulder and the temple together at golden hour, a few pilgrims small in the distance, the lower fifth an empty stone courtyard, no text",
+     "type": "art"
+    },
+    "vo": "Ek taraf vishwas, ek taraf ASI ki report. Dono ek hi patthar ki baat karte hain. Lekin ek aur sawaal baaki hai. Kya sirf patthar kaafi tha?"
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of thick temple wall stones streaked with dried flood-mud marks, soft overcast light, the lower fifth plain stone, no text",
+     "type": "art"
+    },
+    "vo": "Paani ne mandir ke dono taraf se zor maara hoga. Phir bhi deewarein kyun nahi giri? Jawab mandir ke pattharon ki banawat mein chhupa hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of tight joints between large cut stone blocks with no cement or filler visible, sharp side light, the lower fifth plain stone, no text",
+     "type": "art"
+    },
+    "vo": "ASI ki jaanch mein pata chala, is mandir mein mortar laga hi nahi. Mortar yaani cement ya choone ka woh masala jo pattharon ko jodta hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of ancient Indian stone masons in dhotis fitting large cut granite blocks together with ropes and wooden levers in a mountain valley, the lower fifth plain earth, no text",
+     "type": "art"
+    },
+    "vo": "Yahan bhaari pattharon ko kaat kar, ek ke upar ek, puzzle ki tarah fit kiya gaya. Har patthar doosre mein phansa hua hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of an old rust-coloured iron clamp set across the joint of two granite blocks, the lower fifth plain stone, no text",
+     "type": "art"
+    },
+    "vo": "Aur jodon par lohe ki patti jaisi pakad lagi hai, jise clamp kehte hain. Yeh pattharon ko khisakne nahi deti. Patthar hilte hain, par bikharte nahi."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a full ancient stone temple wall standing firm under heavy slanting rain, the lower fifth wet plain stone, no text",
+     "type": "art"
+    },
+    "vo": "ASI ke mutabik, isi banawat ki wajah se mandir bhookamp ke jhatke aur paani ka bhaari dabaav, dono jhel sakta hai. Dhaanche mein lachila-pan bhi hai, aur taakat bhi."
+   },
+   {
+    "facts_used": [
+     2,
+     4,
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide landscape at dusk showing a glacier high above, a boulder and a small stone temple in one frame, the lower fifth plain snow, no text",
+     "type": "art"
+    },
+    "vo": "Toh barf ke nishaan bhi, Bhim Shila bhi, aur majboot banawat bhi. Sab saaf lagta hai. Par yahan twist hai. Vaigyanik khud ek doosre se sehmat nahi."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a glacier snout ending in jagged ice cliffs just above a valley, cold blue light, the lower fifth plain meltwater pool, no text",
+     "type": "art"
+    },
+    "vo": "Pehla jhagda barf ko lekar hai. Kya mandir sach mein khisakte glacier ke andar dafan tha? Ya barf bas aas-paas jama thi?"
+   },
+   {
+    "facts_used": [
+     2,
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of geologists examining an ancient temple wall with hand lenses, seen from behind, soft daylight, the lower fifth plain stone floor, no text",
+     "type": "art"
+    },
+    "vo": "Ek paksh kehta hai, glacier mandir ke upar se guzra, isliye deewaron par kharonch ke nishaan hain. Yahi baat Wadia Institute ki team ne kahi."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of rock-and-earth ridges flanking a small stone temple whose roof is buried under deep snow in winter, the lower fifth plain snow, no text",
+     "type": "art"
+    },
+    "vo": "Doosra paksh kehta hai, shayad moraine ke dher bas mandir ke charon taraf jama hue. Aur upar se barf girti rahi, chhat tak dhak gayi."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an old science journal lying open on a wooden desk beside labelled-free rock samples, the pages blurred and unreadable, warm lamp light, the lower fifth plain desk, no text",
+     "type": "art"
+    },
+    "vo": "Sabse dilchasp baat? Chaujar ka apna paper bhi koi ek jawab nahi chunta. Woh 3 alag sambhavnayein saamne rakhta hai, aur faisla nahi karta."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an ice-free mountain valley where ancient Indian builders in dhotis raise a stone temple, a distant glacier far up the slope, the lower fifth plain earth, no text",
+     "type": "art"
+    },
+    "vo": "Shayad mandir glacier ke aane se pehle hi ban gaya tha. Ya shayad barf aakar laut gayi, aur mandir uske baad bana."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a stone temple standing at the very edge of a glacier, half against ice and half on rock, drifting mist, the lower fifth plain ice, no text",
+     "type": "art"
+    },
+    "vo": "Ya phir, kisi tarah mandir glacier ke beech ya uske kinare par bana. Paper kehta hai, abhi koi bhi pakke taur par nahi keh sakta."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of old palm-leaf manuscripts and copper plates laid on a red cloth in a quiet library, the writing too faint to read, the lower fifth plain cloth, no text",
+     "type": "art"
+    },
+    "vo": "Doosra jhagda aur bhi bada hai. Aaj ka patthar ka mandir banwaya kisne? Ek paksh kehta hai Adi Shankaracharya ne, doosra kehta hai Raja Bhoj ne."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of worn ancient stone steps leading up to a carved temple doorway, moss in the cracks, the lower fifth plain steps, no text",
+     "type": "art"
+    },
+    "vo": "Dono ke beech sadiyon ka farq hai, aur pakka likhit sabut kisi ke paas nahi. Toh mandir ki asli umar bhi ab tak rahasya hai."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of the side of a giant boulder with dried flood-mud lines across it, mountains blurred behind, the lower fifth plain ground, no text",
+     "type": "art"
+    },
+    "vo": "Aur Bhim Shila? Itne tez sailaab mein woh patthar theek mandir ke peeche hi kyun ruka? Vaigyanik iska poora hisaab abhi tak nahi laga paaye."
+   },
+   {
+    "facts_used": [
+     7,
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of the sloping ground and smaller rocks wedged around the base of a huge boulder, low evening light, the lower fifth plain ground, no text",
+     "type": "art"
+    },
+    "vo": "Kya zameen ki dhalaan ne use roka? Ya kisi aur patthar se takra kar atka? Har jawab ek andaaza hai, pakka sabut nahi."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a pilgrim trail climbing toward a distant stone temple, pilgrims with walking sticks seen from behind, clouds around the peaks, the lower fifth plain trail, no text",
+     "type": "art"
+    },
+    "vo": "Toh jo cheez sabse pakki lagti thi, wahi sabse bada sawaal ban gayi. Lekin yeh sab aap khud apni aankhon se dekh sakte hain."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of a grey stone Himalayan temple today with long queues of pilgrims in warm clothes, snow peaks behind under blue sky, the lower fifth plain courtyard paving, no text",
+     "type": "art"
+    },
+    "vo": "Kedarnath aaj bhi khada hai, Mandakini ghaati ke upar, barf ke pahadon ke beech. Yatra ke mausam mein yahan bhakton ki lambi qatarein lagti hain."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of pilgrims bowing with folded hands before a large flower-decked boulder behind a temple, seen from behind, the lower fifth plain stone floor, no text",
+     "type": "art"
+    },
+    "vo": "Mandir ke peeche jaiye. Wahan Bhim Shila aaj bhi padi hai. Log is par tilak lagate hain, haath jodte hain, aur tasveerein lete hain."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a visitor's hand pointing at faint yellow streaks on a granite temple wall, the lower fifth plain stone, no text",
+     "type": "art"
+    },
+    "vo": "Mandir ki bahar ki deewaron ko dhyaan se dekhiye. Granite ke pattharon par peeli lakeerein dhoondhiye. Inhe hi barf ke purane nishaan maana jaata hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of the tightly fitted stone joints at the base of an old temple, a pilgrim's bare feet passing by, the lower fifth plain stone floor, no text",
+     "type": "art"
+    },
+    "vo": "Pattharon ke jod bhi dekhiye. Kahin cement nahi milega, bas kase hue patthar. Yahi woh banawat hai jo sailaab ke saamne tiki."
+   },
+   {
+    "facts_used": [
+     1,
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view looking up a Himalayan valley from behind a stone temple toward a distant rock-covered glacier, clear afternoon light, the lower fifth plain meadow, no text",
+     "type": "art"
+    },
+    "vo": "Aur upar Chorabari glacier ki taraf dekhiye. Wahi jagah jahan se sab shuru hua, aur jahan ki barf kabhi neeche tak aayi thi."
+   },
+   {
+    "facts_used": [
+     1,
+     3
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a stone temple at blue hour with fresh snow on its spire and steps, a single lamp glowing at the door, the lower fifth plain snowy courtyard, no text",
+     "type": "art"
+    },
+    "vo": "Toh wapas wahi sawaal. Kya Kedarnath mandir 400 saal barf ke neeche daba raha? Kuch sabut haan kehte hain, kuch vaigyanik abhi bhi soch rahe hain."
+   },
+   {
+    "facts_used": [
+     4,
+     8,
+     9
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view at sunrise of a huge boulder, the back wall of an ancient temple and the valley beyond, golden light on the stone, the lower fifth plain ground, no text",
+     "type": "art"
+    },
+    "vo": "Aur 2013 mein woh kaise bacha? Ek patthar, ek majboot banawat, aur bhakton ke liye Bhim ka aashirwad. Har kisi ke paas apna jawab hai."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a calm turquoise sea off the Gujarat coast with dark ancient stone blocks visible underwater near the surface, the lower fifth calm sea, no text",
+     "type": "art"
+    },
+    "vo": "Agle video mein chalenge ek aur rahasya ki ore, samundar ke neeche doobi Dwarka. Wahan bhi sabut aur katha aamne saamne khade hain."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an Indian pilgrim family standing together in front of a stone Himalayan temple at sunset, seen from behind, snow peaks glowing, the lower fifth plain courtyard, no text",
+     "type": "art"
+    },
+    "vo": "Ab aapse sawaal. Kya aap kabhi Kedarnath gaye hain, aur Bhim Shila dekhi hai? Comment mein batayiye, aur us dost ko bhejo jo Kedarnath jaane wala hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "KEDARNATH",
+   "name_hi": "केदारनाथ",
+   "scene": "LEFT: an ancient grey stone Himalayan temple buried up to its spire in blue-white glacial ice centuries ago; RIGHT: the same temple in a brown roaring flood with a giant boulder behind it splitting the water around both sides.",
+   "words": [
+    "400 SAAL",
+    "SECRET"
+   ],
+   "words_hi": [
+    "400 साल",
+    "सीक्रेट"
+   ]
+  },
+  "title": "*Kedarnath* ko ek patthar ne bachaya? 😱"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  11.919,
+  22.352,
+  31.116,
+  39.581,
+  50.248,
+  59.244,
+  67.944,
+  76.235,
+  86.12,
+  94.309,
+  103.542,
+  113.076,
+  123.986,
+  134.885,
+  146.03,
+  154.614,
+  163.083,
+  172.778,
+  182.353,
+  190.761,
+  200.459,
+  209.482,
+  221.8,
+  229.979,
+  239.506,
+  247.161,
+  256.823,
+  265.454,
+  274.882,
+  283.217,
+  293.983,
+  303.579,
+  313.343,
+  322.507,
+  333.602,
+  344.524,
+  355.954,
+  363.25,
+  373.617,
+  384.916,
+  394.636,
+  402.936,
+  412.199,
+  422.064,
+  433.329,
+  443.436,
+  451.463,
+  459.224,
+  468.088,
+  480.464,
+  489.165,
+  497.996,
+  506.007,
+  514.414,
+  525.382,
+  534.335,
+  543.095,
+  553.151,
+  563.836,
+  572.851,
+  580.55,
+  589.977,
+  601.293,
+  609.779,
+  619.566,
+  628.56,
+  638.727,
+  648.363,
+  657.178,
+  666.009,
+  675.198,
+  684.501,
+  695.411,
+  706.702,
+  715.523
+ ],
+ "topic": {
+  "allowed_sources": [
+   "gsi.gov.in",
+   "wihg.res.in",
+   "en.wikipedia.org",
+   "Skanda Purana (Kedara Khanda)",
+   "NDMA reports"
+  ],
+  "hooks": [
+   "2013 ki baadh mein ek patthar ne mandir kaise bachaya?",
+   "Kedarnath 400 saal barf ke neeche tha?",
+   "Kedarnath ka mandir kisne banwaya?"
+  ],
+  "id": "kedarnath-2013#long",
+  "intro": {
+   "aspect": "16:9",
+   "bridge": "",
+   "closing": "",
+   "options": [
+    {
+     "closing": "",
+     "question": "2013 mein poori ghaati beh gayi, lekin Kedarnath mandir ke peeche ek vishaal patthar ruka aur paani do hisson mein bant gaya. Kaise?",
+     "text": "2013 mein poori ghaati beh gayi, lekin Kedarnath mandir ke peeche ek vishaal patthar ruka aur paani do hisson mein bant gaya. Kaise?",
+     "words": 23
+    },
+    {
+     "closing": "",
+     "question": "400 saal barf ke neeche daba mandir seedha khada raha, aur 2013 mein ek patthar ne sailaab roka. Ye sirf sanyog tha?",
+     "text": "400 saal barf ke neeche daba mandir seedha khada raha, aur 2013 mein ek patthar ne sailaab roka. Ye sirf sanyog tha?",
+     "words": 22
+    },
+    {
+     "closing": "",
+     "question": "Shiv Pandavon se milna hi nahi chahte the, isliye bail ban kar chhup gaye. Phir Bhim ne unhe pehchaan liya... aur?",
+     "text": "Shiv Pandavon se milna hi nahi chahte the, isliye bail ban kar chhup gaye. Phir Bhim ne unhe pehchaan liya... aur?",
+     "words": 21
+    },
+    {
+     "closing": "",
+     "question": "Log ise Bhim Shila kehte hain, kehte hain Bhim ne khud rakha. Par vigyan is patthar ke baare mein kya kehta hai?",
+     "text": "Log ise Bhim Shila kehte hain, kehte hain Bhim ne khud rakha. Par vigyan is patthar ke baare mein kya kehta hai?",
+     "words": 22
+    },
+    {
+     "closing": "",
+     "question": "Pandavon ke haath par apno ka khoon tha. Gotra hatya ka paap sirf Shiv mita sakte the, par Shiv unse chhup gaye.",
+     "text": "Pandavon ke haath par apno ka khoon tha. Gotra hatya ka paap sirf Shiv mita sakte the, par Shiv unse chhup gaye.",
+     "words": 22
+    }
+   ],
+   "prompt": "16:9 landscape, 1920x1080, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: dramatic wide view of an ancient grey stone Himalayan temple half buried in a towering wall of blue-white glacial ice under a stormy sky, snow peaks behind, wind-blown snow, the lower fifth smooth untouched snow. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. If the scene shows the past, it is ancient India: Indian people in dhotis, sarees and angavastram, warriors with bows, spears and bronze or leather armour, carved stone pillars, oil lamps; never European knights, plate armour, castles or anything medieval European. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a rust-orange kurta with a cream stole. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGMythWorld watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1920x1080.",
+   "question": "2013 mein poori ghaati beh gayi, lekin Kedarnath mandir ke peeche ek vishaal patthar ruka aur paani do hisson mein bant gaya. Kaise?",
+   "text": "2013 mein poori ghaati beh gayi, lekin Kedarnath mandir ke peeche ek vishaal patthar ruka aur paani do hisson mein bant gaya. Kaise?",
+   "words": 23
+  },
+  "notes": "Wadia Institute study on glacial burial (1300-1900 CE); the 'Bhim Shila' boulder; label legend for the Pandava story.",
+  "place": "Kedarnath, Uttarakhand",
+  "proven_short": "2026-11-04-arthvan-short",
+  "proven_views": 1454,
+  "target_minutes": 14,
+  "title_hi": "Kedarnath 2013, mandir kaise bacha",
+  "voice": "voice_1kn3blc2u13l"
+ },
+ "updated": "2026-11-19T14:15:53+00:00",
+ "writer": "claude"
+}

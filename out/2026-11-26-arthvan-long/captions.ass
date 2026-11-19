@@ -1,0 +1,451 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,86,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.68,Default,,0,0,0,,Kedarnath ka mandir,
+Dialogue: 0,0:00:01.68,0:00:04.48,Default,,0,0,0,,400 saal barf ke neeche daba
+Dialogue: 0,0:00:04.48,0:00:05.04,Default,,0,0,0,,raha?
+Dialogue: 0,0:00:05.04,0:00:07.55,Default,,0,0,0,,Kuch vaigyanik yahi kehte hain.
+Dialogue: 0,0:00:07.55,0:00:10.07,Default,,0,0,0,,Aur phir bhi mandir khada raha,
+Dialogue: 0,0:00:10.07,0:00:11.47,Default,,0,0,0,,seedha aur majboot.
+Dialogue: 0,0:00:11.92,0:00:14.57,Default,,0,0,0,,Lekin kahani yahin khatam nahi hoti.
+Dialogue: 0,0:00:14.57,0:00:16.81,Default,,0,0,0,,2013 mein pahad se paani aur
+Dialogue: 0,0:00:16.81,0:00:18.44,Default,,0,0,0,,pattharon ka sailaab utra.
+Dialogue: 0,0:00:18.44,0:00:20.48,Default,,0,0,0,,Poori ghaati mein tabahi machi,
+Dialogue: 0,0:00:20.48,0:00:21.90,Default,,0,0,0,,ghar aur dukaanein beh gayi.
+Dialogue: 0,0:00:22.35,0:00:23.03,Default,,0,0,0,,Par mandir?
+Dialogue: 0,0:00:23.03,0:00:25.27,Default,,0,0,0,,Mandir ke peeche ek vishaal patthar
+Dialogue: 0,0:00:25.27,0:00:26.17,Default,,0,0,0,,aakar ruk gaya.
+Dialogue: 0,0:00:26.17,0:00:27.97,Default,,0,0,0,,Aur paani do hisson mein bant
+Dialogue: 0,0:00:27.97,0:00:28.19,Default,,0,0,0,,gaya,
+Dialogue: 0,0:00:28.19,0:00:30.44,Default,,0,0,0,,mandir ke dono taraf se nikal
+Dialogue: 0,0:00:30.44,0:00:30.67,Default,,0,0,0,,gaya.
+Dialogue: 0,0:00:31.12,0:00:32.95,Default,,0,0,0,,Log is patthar ko Bhim Shila
+Dialogue: 0,0:00:32.95,0:00:33.63,Default,,0,0,0,,kehte hain.
+Dialogue: 0,0:00:33.63,0:00:35.47,Default,,0,0,0,,Unka vishwas hai ki Bhim ne
+Dialogue: 0,0:00:35.47,0:00:36.61,Default,,0,0,0,,khud ise rakha.
+Dialogue: 0,0:00:36.61,0:00:38.90,Default,,0,0,0,,Vigyan iske baare mein kya kehta
+Dialogue: 0,0:00:38.90,0:00:39.13,Default,,0,0,0,,hai?
+Dialogue: 0,0:00:39.58,0:00:41.41,Default,,0,0,0,,Is video mein teen nahi,
+Dialogue: 0,0:00:41.41,0:00:42.73,Default,,0,0,0,,bas yeh sawaal hain.
+Dialogue: 0,0:00:42.73,0:00:44.30,Default,,0,0,0,,Mandir kisne banaya?
+Dialogue: 0,0:00:44.30,0:00:46.13,Default,,0,0,0,,Kya sach mein barf ke neeche
+Dialogue: 0,0:00:46.13,0:00:46.92,Default,,0,0,0,,daba tha?
+Dialogue: 0,0:00:46.92,0:00:49.80,Default,,0,0,0,,Aur 2013 mein woh bacha kaise?
+Dialogue: 0,0:00:50.25,0:00:52.22,Default,,0,0,0,,Har jawab ke saath sabut hoga,
+Dialogue: 0,0:00:52.22,0:00:53.97,Default,,0,0,0,,aur har sabut ke saath uska
+Dialogue: 0,0:00:53.97,0:00:54.41,Default,,0,0,0,,source.
+Dialogue: 0,0:00:54.41,0:00:55.73,Default,,0,0,0,,Par shuruaat wahan se,
+Dialogue: 0,0:00:55.73,0:00:58.14,Default,,0,0,0,,jahan se Kedarnath ki katha shuru
+Dialogue: 0,0:00:58.14,0:00:58.80,Default,,0,0,0,,hoti hai.
+Dialogue: 0,0:00:59.24,0:01:01.63,Default,,0,0,0,,Mahabharat ka yudh khatam ho chuka
+Dialogue: 0,0:01:01.63,0:01:01.85,Default,,0,0,0,,tha.
+Dialogue: 0,0:01:01.85,0:01:03.80,Default,,0,0,0,,Kurukshetra mein Pandav jeete,
+Dialogue: 0,0:01:03.80,0:01:05.97,Default,,0,0,0,,par apne hi bhaiyon aur gurujanon
+Dialogue: 0,0:01:05.97,0:01:07.49,Default,,0,0,0,,ka khoon unke haath par tha.
+Dialogue: 0,0:01:07.94,0:01:09.90,Default,,0,0,0,,Garhwal ki lok-katha kehti hai,
+Dialogue: 0,0:01:09.90,0:01:12.08,Default,,0,0,0,,ise gotra hatya ka paap maana
+Dialogue: 0,0:01:12.08,0:01:12.30,Default,,0,0,0,,gaya.
+Dialogue: 0,0:01:12.30,0:01:14.48,Default,,0,0,0,,Gotra hatya yaani apne hi kul
+Dialogue: 0,0:01:14.48,0:01:15.78,Default,,0,0,0,,ke logon ko maarna.
+Dialogue: 0,0:01:16.23,0:01:18.28,Default,,0,0,0,,Is paap se mukti kaun dila
+Dialogue: 0,0:01:18.28,0:01:19.04,Default,,0,0,0,,sakta tha?
+Dialogue: 0,0:01:19.04,0:01:21.08,Default,,0,0,0,,Pandavon ko jawab mila,
+Dialogue: 0,0:01:21.08,0:01:21.59,Default,,0,0,0,,sirf Shiv.
+Dialogue: 0,0:01:21.59,0:01:24.14,Default,,0,0,0,,Aur Shiv ki talaash unhe Himalaya
+Dialogue: 0,0:01:24.14,0:01:25.67,Default,,0,0,0,,ki ore le chali.
+Dialogue: 0,0:01:26.12,0:01:27.62,Default,,0,0,0,,Lekin katha mein twist hai.
+Dialogue: 0,0:01:27.62,0:01:29.77,Default,,0,0,0,,Shiv Pandavon se milna hi nahi
+Dialogue: 0,0:01:29.77,0:01:30.42,Default,,0,0,0,,chahte the.
+Dialogue: 0,0:01:30.42,0:01:31.06,Default,,0,0,0,,Kehte hain,
+Dialogue: 0,0:01:31.06,0:01:32.57,Default,,0,0,0,,woh ek bail ka roop lekar
+Dialogue: 0,0:01:32.57,0:01:33.86,Default,,0,0,0,,pahadon mein chhup gaye.
+Dialogue: 0,0:01:34.31,0:01:36.12,Default,,0,0,0,,Bhim ne bail ko pehchaan liya.
+Dialogue: 0,0:01:36.12,0:01:38.18,Default,,0,0,0,,Woh use pakadne daude.
+Dialogue: 0,0:01:38.18,0:01:40.77,Default,,0,0,0,,Par bail dharti mein samaane laga,
+Dialogue: 0,0:01:40.77,0:01:42.83,Default,,0,0,0,,aur sirf uski peeth upar reh
+Dialogue: 0,0:01:42.83,0:01:43.09,Default,,0,0,0,,gayi.
+Dialogue: 0,0:01:43.54,0:01:44.39,Default,,0,0,0,,Bhakt maante hain,
+Dialogue: 0,0:01:44.39,0:01:46.71,Default,,0,0,0,,Kedarnath mein jo trikon jaisa patthar
+Dialogue: 0,0:01:46.71,0:01:47.77,Default,,0,0,0,,pooja jaata hai,
+Dialogue: 0,0:01:47.77,0:01:48.82,Default,,0,0,0,,woh wahi peeth hai.
+Dialogue: 0,0:01:48.82,0:01:51.36,Default,,0,0,0,,Isliye yahan ka shivling baaki jagahon
+Dialogue: 0,0:01:51.36,0:01:52.63,Default,,0,0,0,,se alag dikhta hai.
+Dialogue: 0,0:01:53.08,0:01:54.33,Default,,0,0,0,,Lok-katha kehti hai,
+Dialogue: 0,0:01:54.33,0:01:56.63,Default,,0,0,0,,phir Pandavon ne yahan pehla mandir
+Dialogue: 0,0:01:56.63,0:01:57.05,Default,,0,0,0,,banaya.
+Dialogue: 0,0:01:57.05,0:01:59.56,Default,,0,0,0,,Uske baad woh Swargarohini ki ore
+Dialogue: 0,0:01:59.56,0:01:59.98,Default,,0,0,0,,chale,
+Dialogue: 0,0:01:59.98,0:02:01.86,Default,,0,0,0,,yaani woh pahad jahan se swarg
+Dialogue: 0,0:02:01.86,0:02:03.54,Default,,0,0,0,,ka raasta maana jaata hai.
+Dialogue: 0,0:02:03.99,0:02:04.92,Default,,0,0,0,,Yeh katha hai,
+Dialogue: 0,0:02:04.92,0:02:07.24,Default,,0,0,0,,aur iska koi likhit sabut nahi
+Dialogue: 0,0:02:07.24,0:02:07.70,Default,,0,0,0,,milta.
+Dialogue: 0,0:02:07.70,0:02:10.02,Default,,0,0,0,,Par asli sawaal ab shuru hota
+Dialogue: 0,0:02:10.02,0:02:10.25,Default,,0,0,0,,hai.
+Dialogue: 0,0:02:10.25,0:02:12.34,Default,,0,0,0,,Jo patthar ka mandir aaj khada
+Dialogue: 0,0:02:12.34,0:02:12.58,Default,,0,0,0,,hai,
+Dialogue: 0,0:02:12.58,0:02:14.44,Default,,0,0,0,,uske saath sadiyon tak kya hua?
+Dialogue: 0,0:02:14.88,0:02:17.35,Default,,0,0,0,,Mandir ke theek peeche ek glacier
+Dialogue: 0,0:02:17.35,0:02:17.63,Default,,0,0,0,,hai,
+Dialogue: 0,0:02:17.63,0:02:19.27,Default,,0,0,0,,naam hai Chorabari.
+Dialogue: 0,0:02:19.27,0:02:21.74,Default,,0,0,0,,Glacier yaani barf ki ek badi
+Dialogue: 0,0:02:21.74,0:02:22.29,Default,,0,0,0,,nadi,
+Dialogue: 0,0:02:22.29,0:02:24.48,Default,,0,0,0,,jo saal dar saal bahut dheere
+Dialogue: 0,0:02:24.48,0:02:25.58,Default,,0,0,0,,khisakti hai.
+Dialogue: 0,0:02:26.03,0:02:26.67,Default,,0,0,0,,Ab socho,
+Dialogue: 0,0:02:26.67,0:02:28.60,Default,,0,0,0,,kya kabhi yeh glacier aage badh
+Dialogue: 0,0:02:28.60,0:02:30.31,Default,,0,0,0,,kar mandir tak pahunch gaya tha?
+Dialogue: 0,0:02:30.31,0:02:32.67,Default,,0,0,0,,Ek vaigyanik ne yahi sawaal poocha,
+Dialogue: 0,0:02:32.67,0:02:34.16,Default,,0,0,0,,aur jawab dhoondhne nikle.
+Dialogue: 0,0:02:34.61,0:02:34.82,Default,,0,0,0,,Dr.
+Dialogue: 0,0:02:34.82,0:02:35.04,Default,,0,0,0,,R.
+Dialogue: 0,0:02:35.04,0:02:35.25,Default,,0,0,0,,K.
+Dialogue: 0,0:02:35.25,0:02:37.36,Default,,0,0,0,,Chaujar ne Kedarnath ke aas-paas ke
+Dialogue: 0,0:02:37.36,0:02:38.83,Default,,0,0,0,,pattharon ka adhyayan kiya.
+Dialogue: 0,0:02:38.83,0:02:40.94,Default,,0,0,0,,Unka paper Current Science naam ki
+Dialogue: 0,0:02:40.94,0:02:42.63,Default,,0,0,0,,science patrika mein chhapa.
+Dialogue: 0,0:02:43.08,0:02:45.62,Default,,0,0,0,,Unka tareeka bada anokha tha.
+Dialogue: 0,0:02:45.62,0:02:47.94,Default,,0,0,0,,Pattharon par ek patli si parat
+Dialogue: 0,0:02:47.94,0:02:48.63,Default,,0,0,0,,ugti hai,
+Dialogue: 0,0:02:48.63,0:02:50.25,Default,,0,0,0,,jise lichen kehte hain.
+Dialogue: 0,0:02:50.25,0:02:50.94,Default,,0,0,0,,Kai jaisi,
+Dialogue: 0,0:02:50.94,0:02:52.33,Default,,0,0,0,,hare-peele rang ki.
+Dialogue: 0,0:02:52.78,0:02:54.83,Default,,0,0,0,,Lichen bahut dheere badhta hai,
+Dialogue: 0,0:02:54.83,0:02:56.20,Default,,0,0,0,,saal mein bas thoda sa.
+Dialogue: 0,0:02:56.20,0:02:58.25,Default,,0,0,0,,Toh uska size naap kar pata
+Dialogue: 0,0:02:58.25,0:02:58.94,Default,,0,0,0,,chalta hai,
+Dialogue: 0,0:02:58.94,0:03:01.22,Default,,0,0,0,,patthar kitne samay se khule mein
+Dialogue: 0,0:03:01.22,0:03:01.90,Default,,0,0,0,,pada hai.
+Dialogue: 0,0:03:02.35,0:03:03.19,Default,,0,0,0,,Jahan barf thi,
+Dialogue: 0,0:03:03.19,0:03:05.07,Default,,0,0,0,,wahan lichen nahi ug sakta.
+Dialogue: 0,0:03:05.07,0:03:06.75,Default,,0,0,0,,Barf hatne ke baad hi uski
+Dialogue: 0,0:03:06.75,0:03:08.63,Default,,0,0,0,,ghadi chalni shuru hoti hai.
+Dialogue: 0,0:03:08.63,0:03:10.31,Default,,0,0,0,,Yahi tha Chaujar ka sabut.
+Dialogue: 0,0:03:10.76,0:03:12.56,Default,,0,0,0,,Unhone moraine dekhe.
+Dialogue: 0,0:03:12.56,0:03:15.05,Default,,0,0,0,,Moraine yaani glacier ke saath bahkar
+Dialogue: 0,0:03:15.05,0:03:17.08,Default,,0,0,0,,aaye patthar aur mitti ke lambe
+Dialogue: 0,0:03:17.08,0:03:17.30,Default,,0,0,0,,dher,
+Dialogue: 0,0:03:17.30,0:03:19.33,Default,,0,0,0,,jo barf pighalne par peeche chhoot
+Dialogue: 0,0:03:19.33,0:03:20.01,Default,,0,0,0,,jaate hain.
+Dialogue: 0,0:03:20.46,0:03:22.22,Default,,0,0,0,,Ab aata hai woh daur jise
+Dialogue: 0,0:03:22.22,0:03:24.20,Default,,0,0,0,,Little Ice Age kehte hain.
+Dialogue: 0,0:03:24.20,0:03:26.18,Default,,0,0,0,,Yaani kuch sadiyan jab duniya ka
+Dialogue: 0,0:03:26.18,0:03:27.49,Default,,0,0,0,,mausam thanda ho gaya,
+Dialogue: 0,0:03:27.49,0:03:29.03,Default,,0,0,0,,aur glacier aage badhe.
+Dialogue: 0,0:03:29.48,0:03:31.29,Default,,0,0,0,,Chaujar ke andaaze se,
+Dialogue: 0,0:03:31.29,0:03:34.13,Default,,0,0,0,,isi thande daur mein Kedarnath mandir
+Dialogue: 0,0:03:34.13,0:03:36.71,Default,,0,0,0,,lagbhag 400 saal barf ke neeche
+Dialogue: 0,0:03:36.71,0:03:37.74,Default,,0,0,0,,daba raha.
+Dialogue: 0,0:03:37.74,0:03:38.25,Default,,0,0,0,,Socho,
+Dialogue: 0,0:03:38.25,0:03:39.54,Default,,0,0,0,,itni lambi thand,
+Dialogue: 0,0:03:39.54,0:03:41.35,Default,,0,0,0,,aur mandir phir bhi khada!
+Dialogue: 0,0:03:41.80,0:03:43.93,Default,,0,0,0,,Lekin ek paper kaafi nahi hota.
+Dialogue: 0,0:03:43.93,0:03:45.47,Default,,0,0,0,,Agar barf sach mein mandir par
+Dialogue: 0,0:03:45.47,0:03:46.05,Default,,0,0,0,,se guzri,
+Dialogue: 0,0:03:46.05,0:03:47.98,Default,,0,0,0,,toh pattharon par uske nishaan bhi
+Dialogue: 0,0:03:47.98,0:03:48.76,Default,,0,0,0,,hone chahiye.
+Dialogue: 0,0:03:48.76,0:03:49.53,Default,,0,0,0,,Kya woh mile?
+Dialogue: 0,0:03:49.98,0:03:52.20,Default,,0,0,0,,2013 ke baad Dehradun ke Wadia
+Dialogue: 0,0:03:52.20,0:03:54.98,Default,,0,0,0,,Institute of Himalayan Geology ke vaigyanik
+Dialogue: 0,0:03:54.98,0:03:56.09,Default,,0,0,0,,Kedarnath pahunche.
+Dialogue: 0,0:03:56.09,0:03:58.13,Default,,0,0,0,,Yeh sanstha Himalaya ke pahadon ki
+Dialogue: 0,0:03:58.13,0:03:59.06,Default,,0,0,0,,padhai karti hai.
+Dialogue: 0,0:03:59.51,0:04:01.62,Default,,0,0,0,,Unhone mandir ki bahar ki deewaron
+Dialogue: 0,0:04:01.62,0:04:02.67,Default,,0,0,0,,ko kareeb se dekha.
+Dialogue: 0,0:04:02.67,0:04:04.78,Default,,0,0,0,,Granite ke bhaari pattharon par unhe
+Dialogue: 0,0:04:04.78,0:04:06.71,Default,,0,0,0,,peele rang ki lambi lakeerein dikhi.
+Dialogue: 0,0:04:07.16,0:04:08.95,Default,,0,0,0,,Inhe striation kehte hain.
+Dialogue: 0,0:04:08.95,0:04:11.00,Default,,0,0,0,,Yaani kharonch ki lakeerein,
+Dialogue: 0,0:04:11.00,0:04:12.79,Default,,0,0,0,,jo tab banti hain jab barf
+Dialogue: 0,0:04:12.79,0:04:15.35,Default,,0,0,0,,aur usme phanse kankad patthar par
+Dialogue: 0,0:04:15.35,0:04:16.37,Default,,0,0,0,,ghisatte hain.
+Dialogue: 0,0:04:16.82,0:04:18.76,Default,,0,0,0,,Saath mein kuch jagah patthar chikna,
+Dialogue: 0,0:04:18.76,0:04:20.27,Default,,0,0,0,,polish jaisa ho gaya tha.
+Dialogue: 0,0:04:20.27,0:04:22.42,Default,,0,0,0,,Jaise kisi ne sadiyon tak regmaal
+Dialogue: 0,0:04:22.42,0:04:23.07,Default,,0,0,0,,ghisa ho.
+Dialogue: 0,0:04:23.07,0:04:25.00,Default,,0,0,0,,Yeh kaam khisakti barf karti hai.
+Dialogue: 0,0:04:25.45,0:04:28.66,Default,,0,0,0,,Wadia Institute ke vaigyanikon ke mutabik,
+Dialogue: 0,0:04:28.66,0:04:30.58,Default,,0,0,0,,yeh nishaan kai sadiyon mein bane.
+Dialogue: 0,0:04:30.58,0:04:32.51,Default,,0,0,0,,Matlab barf ne kisi na kisi
+Dialogue: 0,0:04:32.51,0:04:34.22,Default,,0,0,0,,roop mein in pattharon ko chhua
+Dialogue: 0,0:04:34.22,0:04:34.43,Default,,0,0,0,,tha.
+Dialogue: 0,0:04:34.88,0:04:36.92,Default,,0,0,0,,Toh jo mandir sadiyon ki barf
+Dialogue: 0,0:04:36.92,0:04:37.43,Default,,0,0,0,,jhel gaya,
+Dialogue: 0,0:04:37.43,0:04:39.21,Default,,0,0,0,,kya woh ek raat ka paani
+Dialogue: 0,0:04:39.21,0:04:39.97,Default,,0,0,0,,jhel paata?
+Dialogue: 0,0:04:39.97,0:04:42.77,Default,,0,0,0,,Yahi imtihaan 2013 mein aaya.
+Dialogue: 0,0:04:43.22,0:04:45.02,Default,,0,0,0,,June ka mahina tha.
+Dialogue: 0,0:04:45.02,0:04:47.60,Default,,0,0,0,,Kedarnath mein yatra chal rahi thi,
+Dialogue: 0,0:04:47.60,0:04:50.44,Default,,0,0,0,,ghaati yatriyon aur dukaanon se bhari
+Dialogue: 0,0:04:50.44,0:04:50.70,Default,,0,0,0,,thi.
+Dialogue: 0,0:04:50.70,0:04:53.53,Default,,0,0,0,,Tabhi aasmaan khul ke barasne laga.
+Dialogue: 0,0:04:53.98,0:04:57.03,Default,,0,0,0,,Chorabari glacier ke paas Wadia Institute
+Dialogue: 0,0:04:57.03,0:04:57.90,Default,,0,0,0,,ka ek camp tha.
+Dialogue: 0,0:04:57.90,0:05:00.52,Default,,0,0,0,,Wahan baarish naapne ki machine lagi
+Dialogue: 0,0:05:00.52,0:05:00.73,Default,,0,0,0,,thi.
+Dialogue: 0,0:05:00.73,0:05:02.04,Default,,0,0,0,,Usne jo record kiya,
+Dialogue: 0,0:05:02.04,0:05:03.13,Default,,0,0,0,,woh daraavna tha.
+Dialogue: 0,0:05:03.58,0:05:05.65,Default,,0,0,0,,Sirf 24 ghante ke andar,
+Dialogue: 0,0:05:05.65,0:05:08.50,Default,,0,0,0,,325 millimetre baarish ho gayi.
+Dialogue: 0,0:05:08.50,0:05:10.31,Default,,0,0,0,,Yeh aam barsaat nahi thi.
+Dialogue: 0,0:05:10.31,0:05:12.63,Default,,0,0,0,,Yeh aasmaan se girti hui nadi
+Dialogue: 0,0:05:12.63,0:05:12.89,Default,,0,0,0,,thi.
+Dialogue: 0,0:05:13.34,0:05:14.99,Default,,0,0,0,,Itna paani gaya kahan?
+Dialogue: 0,0:05:14.99,0:05:17.11,Default,,0,0,0,,Pahad ki dhalaan par barf pighal
+Dialogue: 0,0:05:17.11,0:05:17.82,Default,,0,0,0,,rahi thi,
+Dialogue: 0,0:05:17.82,0:05:19.47,Default,,0,0,0,,naale ufan rahe the.
+Dialogue: 0,0:05:19.47,0:05:21.35,Default,,0,0,0,,Aur upar ek jheel chupchaap bhar
+Dialogue: 0,0:05:21.35,0:05:22.06,Default,,0,0,0,,rahi thi.
+Dialogue: 0,0:05:22.51,0:05:24.90,Default,,0,0,0,,Is jheel ka naam tha Chorabari
+Dialogue: 0,0:05:24.90,0:05:25.17,Default,,0,0,0,,jheel.
+Dialogue: 0,0:05:25.17,0:05:28.10,Default,,0,0,0,,Iski deewar kisi insaan ne nahi
+Dialogue: 0,0:05:28.10,0:05:28.89,Default,,0,0,0,,banayi thi.
+Dialogue: 0,0:05:28.89,0:05:29.96,Default,,0,0,0,,Woh moraine,
+Dialogue: 0,0:05:29.96,0:05:32.88,Default,,0,0,0,,yaani patthar-mitti ke dher se bani
+Dialogue: 0,0:05:32.88,0:05:33.15,Default,,0,0,0,,thi.
+Dialogue: 0,0:05:33.60,0:05:34.67,Default,,0,0,0,,Mitti ki deewar,
+Dialogue: 0,0:05:34.67,0:05:36.81,Default,,0,0,0,,aur peeche lagaataar badhta paani.
+Dialogue: 0,0:05:36.81,0:05:38.09,Default,,0,0,0,,Ab sawaal sirf yeh tha,
+Dialogue: 0,0:05:38.09,0:05:39.80,Default,,0,0,0,,yeh deewar kab tak tikegi?
+Dialogue: 0,0:05:39.80,0:05:41.94,Default,,0,0,0,,Kisi ko andaaza nahi tha ki
+Dialogue: 0,0:05:41.94,0:05:44.07,Default,,0,0,0,,jawab kuch hi ghanton mein milega.
+Dialogue: 0,0:05:44.52,0:05:45.50,Default,,0,0,0,,Agli subah.
+Dialogue: 0,0:05:45.50,0:05:48.43,Default,,0,0,0,,Mandir se lagbhag 2 kilometre upar,
+Dialogue: 0,0:05:48.43,0:05:51.60,Default,,0,0,0,,Chorabari jheel ki kachchi deewar achanak
+Dialogue: 0,0:05:51.60,0:05:52.09,Default,,0,0,0,,toot gayi.
+Dialogue: 0,0:05:52.09,0:05:53.80,Default,,0,0,0,,Jo paani jama hua tha,
+Dialogue: 0,0:05:53.80,0:05:55.50,Default,,0,0,0,,woh ek saath neeche bhaga.
+Dialogue: 0,0:05:55.95,0:05:58.30,Default,,0,0,0,,Wadia Institute ke chowkidaron ne baad
+Dialogue: 0,0:05:58.30,0:05:58.84,Default,,0,0,0,,mein bataya,
+Dialogue: 0,0:05:58.84,0:05:59.92,Default,,0,0,0,,unhone kya dekha.
+Dialogue: 0,0:05:59.92,0:06:01.72,Default,,0,0,0,,Poori jheel 10 minute se bhi
+Dialogue: 0,0:06:01.72,0:06:02.80,Default,,0,0,0,,kam mein khaali ho gayi.
+Dialogue: 0,0:06:03.25,0:06:03.73,Default,,0,0,0,,Socho,
+Dialogue: 0,0:06:03.73,0:06:04.70,Default,,0,0,0,,ek poori jheel,
+Dialogue: 0,0:06:04.70,0:06:06.64,Default,,0,0,0,,10 minute se kam mein.
+Dialogue: 0,0:06:06.64,0:06:09.06,Default,,0,0,0,,Aur woh paani akela nahi aaya.
+Dialogue: 0,0:06:09.06,0:06:10.99,Default,,0,0,0,,Saath mein bade bade patthar,
+Dialogue: 0,0:06:10.99,0:06:12.92,Default,,0,0,0,,mitti aur ped bhi beh rahe
+Dialogue: 0,0:06:12.92,0:06:13.17,Default,,0,0,0,,the.
+Dialogue: 0,0:06:13.62,0:06:15.84,Default,,0,0,0,,Neeche Kedarnath ka bazaar tha,
+Dialogue: 0,0:06:15.84,0:06:17.07,Default,,0,0,0,,dharamshalayein thi,
+Dialogue: 0,0:06:17.07,0:06:17.81,Default,,0,0,0,,yatri the.
+Dialogue: 0,0:06:17.81,0:06:20.03,Default,,0,0,0,,Paani aur malbe ke saamne kuch
+Dialogue: 0,0:06:20.03,0:06:21.01,Default,,0,0,0,,nahi tika.
+Dialogue: 0,0:06:21.01,0:06:23.73,Default,,0,0,0,,Kitne hi parivaar hamesha ke liye
+Dialogue: 0,0:06:23.73,0:06:24.47,Default,,0,0,0,,bichhad gaye.
+Dialogue: 0,0:06:24.92,0:06:27.23,Default,,0,0,0,,Aur yeh sailaab seedha us raaste
+Dialogue: 0,0:06:27.23,0:06:29.55,Default,,0,0,0,,par tha jahan mandir khada tha.
+Dialogue: 0,0:06:29.55,0:06:30.58,Default,,0,0,0,,Mandir ki peeth,
+Dialogue: 0,0:06:30.58,0:06:33.16,Default,,0,0,0,,yaani uski uttar wali deewar,
+Dialogue: 0,0:06:33.16,0:06:34.19,Default,,0,0,0,,theek saamne thi.
+Dialogue: 0,0:06:34.64,0:06:36.92,Default,,0,0,0,,Toh mandir ko kuch hona chahiye
+Dialogue: 0,0:06:36.92,0:06:37.17,Default,,0,0,0,,tha,
+Dialogue: 0,0:06:37.17,0:06:37.68,Default,,0,0,0,,hai na?
+Dialogue: 0,0:06:37.68,0:06:39.19,Default,,0,0,0,,Par jab paani utra,
+Dialogue: 0,0:06:39.19,0:06:40.71,Default,,0,0,0,,toh log hairaan reh gaye.
+Dialogue: 0,0:06:40.71,0:06:42.49,Default,,0,0,0,,Mandir wahi khada tha.
+Dialogue: 0,0:06:42.94,0:06:45.25,Default,,0,0,0,,Mandir ke peeche ek vishaal patthar
+Dialogue: 0,0:06:45.25,0:06:45.95,Default,,0,0,0,,pada tha.
+Dialogue: 0,0:06:45.95,0:06:48.27,Default,,0,0,0,,Yeh patthar pehle wahan nahi tha.
+Dialogue: 0,0:06:48.27,0:06:50.59,Default,,0,0,0,,Ise sailaab khud bahakar laaya tha,
+Dialogue: 0,0:06:50.59,0:06:51.75,Default,,0,0,0,,upar pahad se.
+Dialogue: 0,0:06:52.20,0:06:54.12,Default,,0,0,0,,Archaeological Survey of India,
+Dialogue: 0,0:06:54.12,0:06:54.89,Default,,0,0,0,,yaani ASI,
+Dialogue: 0,0:06:54.89,0:06:57.19,Default,,0,0,0,,desh ki purani imaaraton ki dekhbhaal
+Dialogue: 0,0:06:57.19,0:06:57.77,Default,,0,0,0,,karti hai.
+Dialogue: 0,0:06:57.77,0:06:59.88,Default,,0,0,0,,Uske mutabik yeh patthar mandir se
+Dialogue: 0,0:06:59.88,0:07:01.61,Default,,0,0,0,,lagbhag 9 metre peeche ruka.
+Dialogue: 0,0:07:02.06,0:07:02.94,Default,,0,0,0,,9 metre,
+Dialogue: 0,0:07:02.94,0:07:06.16,Default,,0,0,0,,yaani lagbhag ek bade kamre jitni
+Dialogue: 0,0:07:06.16,0:07:06.74,Default,,0,0,0,,doori.
+Dialogue: 0,0:07:06.74,0:07:08.79,Default,,0,0,0,,Itne bade patthar ka,
+Dialogue: 0,0:07:08.79,0:07:10.54,Default,,0,0,0,,itne tez paani mein,
+Dialogue: 0,0:07:10.54,0:07:12.29,Default,,0,0,0,,theek wahan ruk jaana.
+Dialogue: 0,0:07:12.29,0:07:12.88,Default,,0,0,0,,Kaise?
+Dialogue: 0,0:07:13.33,0:07:15.21,Default,,0,0,0,,Ab asli kamaal dekhiye.
+Dialogue: 0,0:07:15.21,0:07:17.89,Default,,0,0,0,,ASI ke mutabik is patthar ne
+Dialogue: 0,0:07:17.89,0:07:19.23,Default,,0,0,0,,ek dhaal ka kaam kiya.
+Dialogue: 0,0:07:19.23,0:07:21.91,Default,,0,0,0,,Paani aur malba seedha mandir se
+Dialogue: 0,0:07:21.91,0:07:22.99,Default,,0,0,0,,nahi takraya.
+Dialogue: 0,0:07:23.44,0:07:25.44,Default,,0,0,0,,Patthar ne sailaab ko do hisson
+Dialogue: 0,0:07:25.44,0:07:26.11,Default,,0,0,0,,mein baant diya.
+Dialogue: 0,0:07:26.11,0:07:27.89,Default,,0,0,0,,Ek dhaara mandir ke baayein se
+Dialogue: 0,0:07:27.89,0:07:28.34,Default,,0,0,0,,nikli,
+Dialogue: 0,0:07:28.34,0:07:29.23,Default,,0,0,0,,doosri daayein se.
+Dialogue: 0,0:07:29.23,0:07:31.01,Default,,0,0,0,,Beech mein mandir bacha raha.
+Dialogue: 0,0:07:31.46,0:07:33.39,Default,,0,0,0,,Jaise nadi ke beech pada patthar
+Dialogue: 0,0:07:33.39,0:07:34.73,Default,,0,0,0,,paani ko kaat deta hai,
+Dialogue: 0,0:07:34.73,0:07:35.31,Default,,0,0,0,,waise hi.
+Dialogue: 0,0:07:35.31,0:07:37.24,Default,,0,0,0,,Bas yahan nadi paani ki nahi,
+Dialogue: 0,0:07:37.24,0:07:38.77,Default,,0,0,0,,pattharon aur malbe ki thi.
+Dialogue: 0,0:07:39.22,0:07:41.56,Default,,0,0,0,,Pujariyon aur bhakton ne is patthar
+Dialogue: 0,0:07:41.56,0:07:42.26,Default,,0,0,0,,ko naam diya,
+Dialogue: 0,0:07:42.26,0:07:42.96,Default,,0,0,0,,Bhim Shila.
+Dialogue: 0,0:07:42.96,0:07:44.83,Default,,0,0,0,,Unka vishwas hai ki Bhim ne
+Dialogue: 0,0:07:44.83,0:07:46.47,Default,,0,0,0,,Shiv ke dham ki raksha ke
+Dialogue: 0,0:07:46.47,0:07:47.64,Default,,0,0,0,,liye ise rakha.
+Dialogue: 0,0:07:48.09,0:07:49.58,Default,,0,0,0,,Ek taraf vishwas,
+Dialogue: 0,0:07:49.58,0:07:51.96,Default,,0,0,0,,ek taraf ASI ki report.
+Dialogue: 0,0:07:51.96,0:07:54.35,Default,,0,0,0,,Dono ek hi patthar ki baat
+Dialogue: 0,0:07:54.35,0:07:55.24,Default,,0,0,0,,karte hain.
+Dialogue: 0,0:07:55.24,0:07:57.93,Default,,0,0,0,,Lekin ek aur sawaal baaki hai.
+Dialogue: 0,0:07:57.93,0:08:00.01,Default,,0,0,0,,Kya sirf patthar kaafi tha?
+Dialogue: 0,0:08:00.46,0:08:02.43,Default,,0,0,0,,Paani ne mandir ke dono taraf
+Dialogue: 0,0:08:02.43,0:08:03.61,Default,,0,0,0,,se zor maara hoga.
+Dialogue: 0,0:08:03.61,0:08:05.57,Default,,0,0,0,,Phir bhi deewarein kyun nahi giri?
+Dialogue: 0,0:08:05.57,0:08:07.93,Default,,0,0,0,,Jawab mandir ke pattharon ki banawat
+Dialogue: 0,0:08:07.93,0:08:08.72,Default,,0,0,0,,mein chhupa hai.
+Dialogue: 0,0:08:09.17,0:08:10.96,Default,,0,0,0,,ASI ki jaanch mein pata chala,
+Dialogue: 0,0:08:10.96,0:08:12.76,Default,,0,0,0,,is mandir mein mortar laga hi
+Dialogue: 0,0:08:12.76,0:08:13.16,Default,,0,0,0,,nahi.
+Dialogue: 0,0:08:13.16,0:08:15.15,Default,,0,0,0,,Mortar yaani cement ya choone ka
+Dialogue: 0,0:08:15.15,0:08:17.35,Default,,0,0,0,,woh masala jo pattharon ko jodta
+Dialogue: 0,0:08:17.35,0:08:17.55,Default,,0,0,0,,hai.
+Dialogue: 0,0:08:18.00,0:08:20.29,Default,,0,0,0,,Yahan bhaari pattharon ko kaat kar,
+Dialogue: 0,0:08:20.29,0:08:21.43,Default,,0,0,0,,ek ke upar ek,
+Dialogue: 0,0:08:21.43,0:08:23.27,Default,,0,0,0,,puzzle ki tarah fit kiya gaya.
+Dialogue: 0,0:08:23.27,0:08:25.33,Default,,0,0,0,,Har patthar doosre mein phansa hua
+Dialogue: 0,0:08:25.33,0:08:25.56,Default,,0,0,0,,hai.
+Dialogue: 0,0:08:26.01,0:08:27.60,Default,,0,0,0,,Aur jodon par lohe ki patti
+Dialogue: 0,0:08:27.60,0:08:28.84,Default,,0,0,0,,jaisi pakad lagi hai,
+Dialogue: 0,0:08:28.84,0:08:29.90,Default,,0,0,0,,jise clamp kehte hain.
+Dialogue: 0,0:08:29.90,0:08:32.02,Default,,0,0,0,,Yeh pattharon ko khisakne nahi deti.
+Dialogue: 0,0:08:32.02,0:08:32.90,Default,,0,0,0,,Patthar hilte hain,
+Dialogue: 0,0:08:32.90,0:08:33.96,Default,,0,0,0,,par bikharte nahi.
+Dialogue: 0,0:08:34.41,0:08:35.70,Default,,0,0,0,,ASI ke mutabik,
+Dialogue: 0,0:08:35.70,0:08:38.06,Default,,0,0,0,,isi banawat ki wajah se mandir
+Dialogue: 0,0:08:38.06,0:08:40.00,Default,,0,0,0,,bhookamp ke jhatke aur paani ka
+Dialogue: 0,0:08:40.00,0:08:40.85,Default,,0,0,0,,bhaari dabaav,
+Dialogue: 0,0:08:40.85,0:08:42.14,Default,,0,0,0,,dono jhel sakta hai.
+Dialogue: 0,0:08:42.14,0:08:44.07,Default,,0,0,0,,Dhaanche mein lachila-pan bhi hai,
+Dialogue: 0,0:08:44.07,0:08:44.93,Default,,0,0,0,,aur taakat bhi.
+Dialogue: 0,0:08:45.38,0:08:46.69,Default,,0,0,0,,Toh barf ke nishaan bhi,
+Dialogue: 0,0:08:46.69,0:08:47.56,Default,,0,0,0,,Bhim Shila bhi,
+Dialogue: 0,0:08:47.56,0:08:49.09,Default,,0,0,0,,aur majboot banawat bhi.
+Dialogue: 0,0:08:49.09,0:08:50.18,Default,,0,0,0,,Sab saaf lagta hai.
+Dialogue: 0,0:08:50.18,0:08:51.27,Default,,0,0,0,,Par yahan twist hai.
+Dialogue: 0,0:08:51.27,0:08:53.45,Default,,0,0,0,,Vaigyanik khud ek doosre se sehmat
+Dialogue: 0,0:08:53.45,0:08:53.88,Default,,0,0,0,,nahi.
+Dialogue: 0,0:08:54.34,0:08:56.60,Default,,0,0,0,,Pehla jhagda barf ko lekar hai.
+Dialogue: 0,0:08:56.60,0:08:59.12,Default,,0,0,0,,Kya mandir sach mein khisakte glacier
+Dialogue: 0,0:08:59.12,0:09:00.63,Default,,0,0,0,,ke andar dafan tha?
+Dialogue: 0,0:09:00.63,0:09:02.65,Default,,0,0,0,,Ya barf bas aas-paas jama thi?
+Dialogue: 0,0:09:03.10,0:09:04.27,Default,,0,0,0,,Ek paksh kehta hai,
+Dialogue: 0,0:09:04.27,0:09:06.61,Default,,0,0,0,,glacier mandir ke upar se guzra,
+Dialogue: 0,0:09:06.61,0:09:09.19,Default,,0,0,0,,isliye deewaron par kharonch ke nishaan
+Dialogue: 0,0:09:09.19,0:09:09.42,Default,,0,0,0,,hain.
+Dialogue: 0,0:09:09.42,0:09:12.00,Default,,0,0,0,,Yahi baat Wadia Institute ki team
+Dialogue: 0,0:09:12.00,0:09:12.70,Default,,0,0,0,,ne kahi.
+Dialogue: 0,0:09:13.15,0:09:14.86,Default,,0,0,0,,Doosra paksh kehta hai,
+Dialogue: 0,0:09:14.86,0:09:17.42,Default,,0,0,0,,shayad moraine ke dher bas mandir
+Dialogue: 0,0:09:17.42,0:09:19.69,Default,,0,0,0,,ke charon taraf jama hue.
+Dialogue: 0,0:09:19.69,0:09:22.25,Default,,0,0,0,,Aur upar se barf girti rahi,
+Dialogue: 0,0:09:22.25,0:09:23.39,Default,,0,0,0,,chhat tak dhak gayi.
+Dialogue: 0,0:09:23.84,0:09:24.91,Default,,0,0,0,,Sabse dilchasp baat?
+Dialogue: 0,0:09:24.91,0:09:26.83,Default,,0,0,0,,Chaujar ka apna paper bhi koi
+Dialogue: 0,0:09:26.83,0:09:28.33,Default,,0,0,0,,ek jawab nahi chunta.
+Dialogue: 0,0:09:28.33,0:09:30.69,Default,,0,0,0,,Woh 3 alag sambhavnayein saamne rakhta
+Dialogue: 0,0:09:30.69,0:09:30.90,Default,,0,0,0,,hai,
+Dialogue: 0,0:09:30.90,0:09:32.40,Default,,0,0,0,,aur faisla nahi karta.
+Dialogue: 0,0:09:32.85,0:09:35.03,Default,,0,0,0,,Shayad mandir glacier ke aane se
+Dialogue: 0,0:09:35.03,0:09:36.48,Default,,0,0,0,,pehle hi ban gaya tha.
+Dialogue: 0,0:09:36.48,0:09:38.17,Default,,0,0,0,,Ya shayad barf aakar laut gayi,
+Dialogue: 0,0:09:38.17,0:09:40.10,Default,,0,0,0,,aur mandir uske baad bana.
+Dialogue: 0,0:09:40.55,0:09:41.01,Default,,0,0,0,,Ya phir,
+Dialogue: 0,0:09:41.01,0:09:43.31,Default,,0,0,0,,kisi tarah mandir glacier ke beech
+Dialogue: 0,0:09:43.31,0:09:45.38,Default,,0,0,0,,ya uske kinare par bana.
+Dialogue: 0,0:09:45.38,0:09:46.53,Default,,0,0,0,,Paper kehta hai,
+Dialogue: 0,0:09:46.53,0:09:48.38,Default,,0,0,0,,abhi koi bhi pakke taur par
+Dialogue: 0,0:09:48.38,0:09:49.53,Default,,0,0,0,,nahi keh sakta.
+Dialogue: 0,0:09:49.98,0:09:52.30,Default,,0,0,0,,Doosra jhagda aur bhi bada hai.
+Dialogue: 0,0:09:52.30,0:09:54.63,Default,,0,0,0,,Aaj ka patthar ka mandir banwaya
+Dialogue: 0,0:09:54.63,0:09:55.15,Default,,0,0,0,,kisne?
+Dialogue: 0,0:09:55.15,0:09:58.26,Default,,0,0,0,,Ek paksh kehta hai Adi Shankaracharya
+Dialogue: 0,0:09:58.26,0:09:58.51,Default,,0,0,0,,ne,
+Dialogue: 0,0:09:58.51,0:10:00.84,Default,,0,0,0,,doosra kehta hai Raja Bhoj ne.
+Dialogue: 0,0:10:01.29,0:10:03.03,Default,,0,0,0,,Dono ke beech sadiyon ka farq
+Dialogue: 0,0:10:03.03,0:10:03.25,Default,,0,0,0,,hai,
+Dialogue: 0,0:10:03.25,0:10:05.42,Default,,0,0,0,,aur pakka likhit sabut kisi ke
+Dialogue: 0,0:10:05.42,0:10:06.07,Default,,0,0,0,,paas nahi.
+Dialogue: 0,0:10:06.07,0:10:08.03,Default,,0,0,0,,Toh mandir ki asli umar bhi
+Dialogue: 0,0:10:08.03,0:10:09.33,Default,,0,0,0,,ab tak rahasya hai.
+Dialogue: 0,0:10:09.78,0:10:10.71,Default,,0,0,0,,Aur Bhim Shila?
+Dialogue: 0,0:10:10.71,0:10:12.81,Default,,0,0,0,,Itne tez sailaab mein woh patthar
+Dialogue: 0,0:10:12.81,0:10:14.68,Default,,0,0,0,,theek mandir ke peeche hi kyun
+Dialogue: 0,0:10:14.68,0:10:15.15,Default,,0,0,0,,ruka?
+Dialogue: 0,0:10:15.15,0:10:17.95,Default,,0,0,0,,Vaigyanik iska poora hisaab abhi tak
+Dialogue: 0,0:10:17.95,0:10:19.12,Default,,0,0,0,,nahi laga paaye.
+Dialogue: 0,0:10:19.57,0:10:21.64,Default,,0,0,0,,Kya zameen ki dhalaan ne use
+Dialogue: 0,0:10:21.64,0:10:22.11,Default,,0,0,0,,roka?
+Dialogue: 0,0:10:22.11,0:10:24.18,Default,,0,0,0,,Ya kisi aur patthar se takra
+Dialogue: 0,0:10:24.18,0:10:24.88,Default,,0,0,0,,kar atka?
+Dialogue: 0,0:10:24.88,0:10:26.72,Default,,0,0,0,,Har jawab ek andaaza hai,
+Dialogue: 0,0:10:26.72,0:10:28.11,Default,,0,0,0,,pakka sabut nahi.
+Dialogue: 0,0:10:28.56,0:10:31.06,Default,,0,0,0,,Toh jo cheez sabse pakki lagti
+Dialogue: 0,0:10:31.06,0:10:31.34,Default,,0,0,0,,thi,
+Dialogue: 0,0:10:31.34,0:10:34.11,Default,,0,0,0,,wahi sabse bada sawaal ban gayi.
+Dialogue: 0,0:10:34.11,0:10:36.33,Default,,0,0,0,,Lekin yeh sab aap khud apni
+Dialogue: 0,0:10:36.33,0:10:38.28,Default,,0,0,0,,aankhon se dekh sakte hain.
+Dialogue: 0,0:10:38.73,0:10:40.44,Default,,0,0,0,,Kedarnath aaj bhi khada hai,
+Dialogue: 0,0:10:40.44,0:10:42.36,Default,,0,0,0,,Mandakini ghaati ke upar,
+Dialogue: 0,0:10:42.36,0:10:43.85,Default,,0,0,0,,barf ke pahadon ke beech.
+Dialogue: 0,0:10:43.85,0:10:45.99,Default,,0,0,0,,Yatra ke mausam mein yahan bhakton
+Dialogue: 0,0:10:45.99,0:10:47.91,Default,,0,0,0,,ki lambi qatarein lagti hain.
+Dialogue: 0,0:10:48.36,0:10:49.76,Default,,0,0,0,,Mandir ke peeche jaiye.
+Dialogue: 0,0:10:49.76,0:10:51.85,Default,,0,0,0,,Wahan Bhim Shila aaj bhi padi
+Dialogue: 0,0:10:51.85,0:10:52.08,Default,,0,0,0,,hai.
+Dialogue: 0,0:10:52.08,0:10:54.17,Default,,0,0,0,,Log is par tilak lagate hain,
+Dialogue: 0,0:10:54.17,0:10:55.10,Default,,0,0,0,,haath jodte hain,
+Dialogue: 0,0:10:55.10,0:10:56.73,Default,,0,0,0,,aur tasveerein lete hain.
+Dialogue: 0,0:10:57.18,0:10:59.08,Default,,0,0,0,,Mandir ki bahar ki deewaron ko
+Dialogue: 0,0:10:59.08,0:10:59.85,Default,,0,0,0,,dhyaan se dekhiye.
+Dialogue: 0,0:10:59.85,0:11:02.32,Default,,0,0,0,,Granite ke pattharon par peeli lakeerein
+Dialogue: 0,0:11:02.32,0:11:02.70,Default,,0,0,0,,dhoondhiye.
+Dialogue: 0,0:11:02.70,0:11:04.61,Default,,0,0,0,,Inhe hi barf ke purane nishaan
+Dialogue: 0,0:11:04.61,0:11:05.56,Default,,0,0,0,,maana jaata hai.
+Dialogue: 0,0:11:06.01,0:11:07.85,Default,,0,0,0,,Pattharon ke jod bhi dekhiye.
+Dialogue: 0,0:11:07.85,0:11:09.92,Default,,0,0,0,,Kahin cement nahi milega,
+Dialogue: 0,0:11:09.92,0:11:11.30,Default,,0,0,0,,bas kase hue patthar.
+Dialogue: 0,0:11:11.30,0:11:13.60,Default,,0,0,0,,Yahi woh banawat hai jo sailaab
+Dialogue: 0,0:11:13.60,0:11:14.75,Default,,0,0,0,,ke saamne tiki.
+Dialogue: 0,0:11:15.20,0:11:18.07,Default,,0,0,0,,Aur upar Chorabari glacier ki taraf
+Dialogue: 0,0:11:18.07,0:11:18.55,Default,,0,0,0,,dekhiye.
+Dialogue: 0,0:11:18.55,0:11:20.94,Default,,0,0,0,,Wahi jagah jahan se sab shuru
+Dialogue: 0,0:11:20.94,0:11:21.18,Default,,0,0,0,,hua,
+Dialogue: 0,0:11:21.18,0:11:23.33,Default,,0,0,0,,aur jahan ki barf kabhi neeche
+Dialogue: 0,0:11:23.33,0:11:24.05,Default,,0,0,0,,tak aayi thi.
+Dialogue: 0,0:11:24.50,0:11:26.20,Default,,0,0,0,,Toh wapas wahi sawaal.
+Dialogue: 0,0:11:26.20,0:11:28.88,Default,,0,0,0,,Kya Kedarnath mandir 400 saal barf
+Dialogue: 0,0:11:28.88,0:11:30.58,Default,,0,0,0,,ke neeche daba raha?
+Dialogue: 0,0:11:30.58,0:11:32.29,Default,,0,0,0,,Kuch sabut haan kehte hain,
+Dialogue: 0,0:11:32.29,0:11:34.72,Default,,0,0,0,,kuch vaigyanik abhi bhi soch rahe
+Dialogue: 0,0:11:34.72,0:11:34.96,Default,,0,0,0,,hain.
+Dialogue: 0,0:11:35.41,0:11:38.39,Default,,0,0,0,,Aur 2013 mein woh kaise bacha?
+Dialogue: 0,0:11:38.39,0:11:39.21,Default,,0,0,0,,Ek patthar,
+Dialogue: 0,0:11:39.21,0:11:40.83,Default,,0,0,0,,ek majboot banawat,
+Dialogue: 0,0:11:40.83,0:11:42.73,Default,,0,0,0,,aur bhakton ke liye Bhim ka
+Dialogue: 0,0:11:42.73,0:11:43.54,Default,,0,0,0,,aashirwad.
+Dialogue: 0,0:11:43.54,0:11:45.98,Default,,0,0,0,,Har kisi ke paas apna jawab
+Dialogue: 0,0:11:45.98,0:11:46.25,Default,,0,0,0,,hai.
+Dialogue: 0,0:11:46.70,0:11:48.74,Default,,0,0,0,,Agle video mein chalenge ek aur
+Dialogue: 0,0:11:48.74,0:11:49.97,Default,,0,0,0,,rahasya ki ore,
+Dialogue: 0,0:11:49.97,0:11:52.01,Default,,0,0,0,,samundar ke neeche doobi Dwarka.
+Dialogue: 0,0:11:52.01,0:11:54.05,Default,,0,0,0,,Wahan bhi sabut aur katha aamne
+Dialogue: 0,0:11:54.05,0:11:55.07,Default,,0,0,0,,saamne khade hain.
+Dialogue: 0,0:11:55.52,0:11:56.65,Default,,0,0,0,,Ab aapse sawaal.
+Dialogue: 0,0:11:56.65,0:11:58.67,Default,,0,0,0,,Kya aap kabhi Kedarnath gaye hain,
+Dialogue: 0,0:11:58.67,0:12:00.24,Default,,0,0,0,,aur Bhim Shila dekhi hai?
+Dialogue: 0,0:12:00.24,0:12:01.37,Default,,0,0,0,,Comment mein batayiye,
+Dialogue: 0,0:12:01.37,0:12:02.94,Default,,0,0,0,,aur us dost ko bhejo jo
+Dialogue: 0,0:12:02.94,0:12:04.74,Default,,0,0,0,,Kedarnath jaane wala hai.
