@@ -433,7 +433,10 @@ def test_a_long_request_carries_a_thumbnail_prompt_without_the_founder_and_pendi
     p.script["title"] = "Chausath Yogini Mandir aur *Sansad* ka sach 🤯"; p.script["captions"] = {"youtube": {"description": "Kya Sansad ka gol design Morena ke mandir se aaya?"}}
     pieces.save(p, tmp_path)
     plan = intro.plan(p, ask=lambda _p: "")
-    text = intro.request_text(p, plan)
+    msgs = intro.request_messages(p, plan)
+    assert len(msgs) >= 2 and "Thumbnail" not in msgs[0] and all(len(m) <= 4000 for m in msgs)     # 19 Nov 2026: its own message, never cut
+    assert msgs[0].index("intro 2026-11-19-arthvan-long") < msgs[0].index("Prompt:")                # the caption comes before the prompt
+    text = msgs[-1]
     assert "Thumbnail for 2026-11-19-arthvan-long" in text and "no people" in text and "Chausath" in text and "thumb 2026-11-19-arthvan-long" in text
     assert "SG [locked]" not in intro.thumb_prompt(p)
     s = _piece(pid="2026-11-13-sglearning-short", day=date(2026, 11, 13)); s.status = "intro-wait"; pieces.save(s, tmp_path)
