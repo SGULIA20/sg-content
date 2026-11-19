@@ -3,362 +3,429 @@
  "facts": [
   {
    "label": "archaeology",
-   "number": 2018.0,
-   "quote": "The excavations in Sinauli were conducted by Archaeological Survey of India (ASI) from 2005-2006 and in mid-2018.",
-   "source_date": "2018-06-08",
-   "source_name": "ASI",
-   "source_url": "https://en.wikipedia.org/wiki/Sinauli",
-   "text": "The Archaeological Survey of India carried out excavations at Sinauli in the Baghpat district during 2005–2006 and mid-2018.",
+   "number": 37.19,
+   "quote": "The 37.19 m high 9-storied tower is one of the most remarkable in India.",
+   "source_date": "2013",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Vijaya_Stambha",
+   "text": "The Vijaya Stambha inside Chittorgarh Fort is an imposing nine-storey monument measuring 37.19 metres in height.",
+   "unit": "metres"
+  },
+  {
+   "label": "archaeology",
+   "number": 157.0,
+   "quote": "There are around 157 narrow steps leading to the terrace from where one can have a beautiful view of Chittorgarh town and the fort.",
+   "source_date": "2013",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Vijaya_Stambha",
+   "text": "An internal spiral staircase comprising 157 steps leads through the nine storeys to the upper terrace of the Vijaya Stambha.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": 1448.0,
+   "quote": "The tower was constructed by the Hindu Rajput king Rana Kumbha of Mewar in 1448 CE to commemorate his victory over the army of Sultanate of Malwa led by Mahmud Khilji in the Battle of Sarangpur.",
+   "source_date": "2013",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Vijaya_Stambha",
+   "text": "Maharana Kumbha completed the construction of the Vijaya Stambha around 1448 CE to commemorate his victory over the Malwa Sultanate at the Battle of Sarangpur.",
    "unit": "CE"
   },
   {
    "label": "archaeology",
-   "number": 4000.0,
-   "quote": "According to the ¹⁴C radiocarbon dating and recovered material culture, the site date back to 4000 yr BP (∼2000 BCE) and is thought to belong to Ochre-Coloured Pottery (OCP)/Copper Hoard culture.",
-   "source_date": "2024-09-30",
-   "source_name": "Cambridge University Press & Assessment",
-   "source_url": "https://doi.org/10.1017/RDC.2024.90",
-   "text": "Radiocarbon dating places the Sinauli burials and organic cultural material at approximately 2000 to 1800 BCE, around 4,000 years before present.",
-   "unit": "years"
-  },
-  {
-   "label": "archaeology",
-   "number": 8.0,
-   "quote": "The excavation team reportedly found two cart-like vehicles and eight well-preserved corpses in coffins that appeared to have been mounted on a pedestal.",
-   "source_date": "2018-06-08",
-   "source_name": "ASI",
-   "source_url": "https://thewire.in/history/asi-claims-to-have-found-harappan-era-chariots-at-excavation-site-in-up",
-   "text": "Archaeologists excavated eight burial pits at the site containing wooden coffins mounted on legs with lids featuring anthropomorphic figures.",
+   "number": 5.0,
+   "quote": "The names of the architect, Sutradhar Jaita and his three sons who assisted him, Napa, Puja, and Poma, are carved on the fifth floor of the tower.",
+   "source_date": "2013",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://en.wikipedia.org/wiki/Vijaya_Stambha",
+   "text": "An epigraphic inscription on the fifth storey of the Vijaya Stambha identifies master architect Sutradhar Jaita and his three sons Napa, Puja, and Poma.",
    "unit": "count"
   },
   {
-   "label": "disputed",
-   "number": null,
-   "quote": "In his opinion, several indications suggest that the Sanauli “chariots” are actually carts yoked to bulls, as in the copper sculpture of a bull-cart from the Late Harappan site of Daimabad in Maharashtra.",
-   "source_date": "2020-10-23",
-   "source_name": "Studia Orientalia Electronica",
-   "source_url": "https://journal.fi/store/article/view/98032",
-   "text": "While ASI excavation director Sanjay Manjul identified the vehicles as horse-drawn war chariots, Indologist Asko Parpola argued that their solid wheels indicate ox-drawn carts.",
-   "unit": null
+   "label": "archaeology",
+   "number": 1302.0,
+   "quote": "Ratnasimha is attested by the 1302 CE (1359 VS) Dariba temple inscription, which records a gift of 16 drammas (coins) to the temple during his reign.",
+   "source_date": "1979",
+   "source_name": "Epigraphia Indica",
+   "source_url": "https://en.wikipedia.org/wiki/Ratnasimha",
+   "text": "The historical ruler Rawal Ratnasimha of Mewar is attested by an epigraph dated to 1302 CE at the Dariba temple.",
+   "unit": "CE"
   },
   {
-   "label": "disputed",
-   "number": null,
-   "quote": "Several scholars have noted that solid wheels belong to carts, not chariots.",
-   "source_date": "2020-10-23",
-   "source_name": "Wikipedia",
-   "source_url": "https://en.wikipedia.org/wiki/Sinauli",
-   "text": "Historians dispute whether the vehicles meet the technological criteria of chariots, because classical war chariots require light spoked wheels rather than solid wooden discs.",
-   "unit": null
+   "label": "scripture",
+   "number": 1540.0,
+   "quote": "Padmavat is an epic poem written in 1540 CE by Sufi poet Malik Muhammad Jayasi, who wrote it in the Hindustani language of Awadhi.",
+   "source_date": "1540",
+   "source_name": "Padmavat",
+   "source_url": "https://en.wikipedia.org/wiki/Padmavat",
+   "text": "The Sufi poet Malik Muhammad Jayasi composed the Awadhi romance Padmavat around 1540 CE, introducing the earliest surviving narrative featuring Queen Padmavati.",
+   "unit": "CE"
   },
   {
-   "label": "disputed",
+   "label": "scripture",
    "number": null,
-   "quote": "According to Asko Parpola, these finds were ox-pulled carts, indicating that these burials are related to an early Aryan migration of Proto-Indo-Iranian speaking people into the Indian subcontinent.",
-   "source_date": "2020-10-23",
-   "source_name": "Studia Orientalia Electronica",
-   "source_url": "https://journal.fi/store/article/view/98032",
-   "text": "Researchers disagree on whether Sinauli represents a local development of the Copper Hoard culture or an early wave of Indo-Iranian pastoralists migrating into northern India.",
+   "quote": "Jayasi explains the allegory in the concluding verses: Chittor represents the body, the king the mind, Simhala the heart, and Padmini wisdom.",
+   "source_date": "1540",
+   "source_name": "Padmavat",
+   "source_url": "https://en.wikipedia.org/wiki/Padmavat",
+   "text": "In the concluding verses of Padmavat, Jayasi explains that Chittor allegorically represents the human body, the king denotes the mind, and Padmini represents wisdom.",
    "unit": null
   },
   {
    "label": "scripture",
-   "number": 5.0,
-   "quote": "Give us just five villages, Duryodhana, and we will be content.",
-   "source_date": "1975",
-   "source_name": "Mahabharata, Udyoga Parva",
-   "source_url": "https://en.wikipedia.org/wiki/Udyoga_Parva",
-   "text": "In the Mahabharata's Udyoga Parva, peace emissaries propose that granting five specific villages to the Pandavas would resolve the territorial conflict without war.",
-   "unit": "count"
+   "number": null,
+   "quote": "Ratansen dies in a duel with Devpal, the king of Kumbhalner; subsequently, Padmini and Nagmati commit sati on Ratansen's funeral pyre before Alauddin reaches the fort.",
+   "source_date": "1540",
+   "source_name": "Padmavat",
+   "source_url": "https://en.wikipedia.org/wiki/Padmavat",
+   "text": "In Jayasi's epic poem, King Ratansen is killed in single combat against King Devpal of Kumbhalner rather than by the imperial army besieging the fort.",
+   "unit": null
   },
   {
-   "label": "legend",
+   "label": "disputed",
    "number": null,
-   "quote": "Baghpat was originally known as Vyaghraprastha ('tiger city') and is traditionally regarded as one of the five villages demanded by the Pandavas.",
-   "source_date": "2020",
-   "source_name": "District Administration Baghpat",
-   "source_url": "https://en.wikipedia.org/wiki/Baghpat",
-   "text": "Local traditions in western Uttar Pradesh associate the modern town of Baghpat with Vyaghraprastha, one of the five villages requested by the Pandavas in the epic tradition.",
+   "quote": "Most modern historians have rejected the authenticity of the Padmini legend, viewing her as an allegorical creation, while some traditional scholars argue the poem adapted older Mewari oral lore.",
+   "source_date": "2007",
+   "source_name": "The Many Lives of a Rajput Queen",
+   "source_url": "https://en.wikipedia.org/wiki/Rani_Padmini",
+   "text": "Historians disagree on whether Rani Padmini was an authentic historical figure preserved through Mewari oral traditions or a literary invention first created by Jayasi in 1540 CE.",
    "unit": null
   },
   {
    "label": "legend",
    "number": null,
-   "quote": "Local legends tell that Sinauli is one of the five villages that god Krishna unsuccessfully negotiated with the Kaurava princes to avoid the War at Kurukshetra.",
-   "source_date": "2021-02-13",
-   "source_name": "Discovery Channel / Popular Tradition",
-   "source_url": "https://en.wikipedia.org/wiki/Sinauli",
-   "text": "Popular narratives and local folklore identify the Sinauli warriors and wheeled vehicles directly as physical remains of the Mahabharata conflict.",
+   "quote": "The popular story says that when Khilji attacked Chittor, he fell for Padmini on seeing her reflection in the mirror, a trope absent from the earliest texts.",
+   "source_date": "1829",
+   "source_name": "Rajput Bardic Lore",
+   "source_url": "https://en.wikipedia.org/wiki/Rani_Padmini",
+   "text": "A popular regional folklore claims that the Delhi sultan was granted a glimpse of Rani Padmini's face reflected across a series of mirrors in her water palace.",
    "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": 1301.0,
+   "quote": "Amir Khusrau described the jauhar at Ranthambore in 1301 CE, where Rajput women threw themselves into a fire when defeat was imminent.",
+   "source_date": "1312",
+   "source_name": "Khazain-ul-Futuh",
+   "source_url": "https://en.wikipedia.org/wiki/Jauhar",
+   "text": "The earliest contemporary Sultanate chronicle documenting the rite of Jauhar describes the 1301 CE siege of Ranthambore rather than Chittor.",
+   "unit": "CE"
+  },
+  {
+   "label": "disputed",
+   "number": 1303.0,
+   "quote": "While fourteenth-century Persian sources make no mention of a jauhar at Chittor in 1303, later Rajput traditions and sixteenth-century chronicles assert that the women committed mass self-immolation.",
+   "source_date": "1992",
+   "source_name": "A Comprehensive History of India",
+   "source_url": "https://en.wikipedia.org/wiki/Siege_of_Chittorgarh_(1303)",
+   "text": "Scholars disagree over whether a mass Jauhar took place during the 1303 CE siege of Chittorgarh, as primary fourteenth-century Sultanate sources omit it while sixteenth-century Rajput and Persian chronicles describe it as fact.",
+   "unit": "CE"
   }
  ],
  "id": "2026-11-25-arthvan-short",
  "ids": {
   "budget": {
    "day": "2026-11-18",
-   "drafts": 1,
-   "research": 1
+   "drafts": 2,
+   "research": 2
   },
   "cost": {
-   "inr": 0.0,
-   "usd": 0.097176,
-   "voice": 0
+   "inr": 22.5,
+   "usd": 0.208466,
+   "voice": 12
   },
-  "drafts": 1
+  "drafts": 2,
+  "ig_story_id": "skipped: Reel over 60 s",
+  "intro_sent": "2026-11-19T07:44:33+00:00"
  },
  "kind": "short",
  "publish_day": "2026-11-25",
  "reasons": [
-  "crashed: ValueError: could not convert string to float: '¹⁴c'"
+  "crashed: ValueError: could not convert string to float: '¹⁴c'",
+  "waiting for the founder's intro clip until 25 Nov 11:30 UTC"
  ],
  "script": {
   "captions": {
    "instagram": {
-    "caption": "Sinauli ki kabron mein 4,000 saal purane rath mile?\nASI ki khudai mein asli kabrein aur pahiyon wale vaahan nikle.\nEk vidwan kehte hain yuddh rath, doosre kehte hain bailgaadi.\nAap kya maante ho, rath ya bailgaadi?\nUs dost ko bhejo jo Mahabharat ko sirf kahani maanta hai.",
+    "caption": "Chittor ki Rani Padmini, sach thi ya sirf ek kavita?\nKahani pehli baar Jayasi ki Padmavat mein milti hai.\nAur kavi khud kehte hain, Padmini yaani buddhi.\nAapko kya lagta hai, itihaas ya kavita?\nNani ko bhejo, jinhone Padmini ki kahani sunayi thi.",
     "hashtags": [
      "#SabutKeSaath",
-     "#Mahabharat",
-     "#Archaeology",
-     "#AncientIndia",
      "#IndianHistory",
      "#Itihaas",
-     "#Rahasya"
+     "#Rahasya",
+     "#Archaeology",
+     "#AncientIndia",
+     "#SGMythWorld"
     ]
    },
    "threads": {
-    "text": "Sinauli ki kabron mein 4,000 saal purane rath mile? ASI ki khudai mein pahiyon wale vaahan nikle, par vidwan bante hue hain. Yuddh rath ya bailgaadi, aap kya maante ho? #SabutKeSaath #IndianHistory"
+    "text": "Chittor ki Rani Padmini, sach thi ya sirf ek kavita? Shilalekh raja ko sach batata hai, par rani ki kahani pehli baar 1540 ki kavita mein milti hai. Aap kya maante hain? #SabutKeSaath #IndianHistory"
    },
    "youtube": {
-    "chapters": [
-     "00:00 Sinauli ka sawaal",
-     "00:00 Mahabharat ki katha",
-     "00:00 ASI ki khudai",
-     "00:00 Rath ya bailgaadi",
-     "00:00 Aaj ka Sinauli"
-    ],
-    "description": "Sinauli ki kabron mein 4,000 saal purane rath mile? ASI ki khudai mein asli kabrein, taboot aur pahiyon wale vaahan mile. Par vidwan bante hue hain, yuddh rath ya bailgaadi, aur Mahabharat ka rishta abhi lok-katha hai. Us dost ko bhejo jo Mahabharat ko sirf kahani maanta hai.",
+    "chapters": [],
+    "description": "Chittor ki Rani Padmini, sach thi ya sirf ek kavita? Padmini ki kahani pehli baar 1540 ki ek kavita mein milti hai, aur us daur ki kitabein Chittor ke jauhar par chup hain. Shilalekh, kavita aur lok-katha ko alag alag dekhiye, sabut ke saath. Nani ko bhejo, jinhone Padmini ki kahani sunayi thi.",
     "tags": [
-     "Sinauli",
-     "Sinauli chariot",
-     "Baghpat",
-     "ASI",
-     "Mahabharat",
-     "archaeology",
-     "ancient India",
-     "Copper Hoard",
-     "Asko Parpola",
+     "Rani Padmini",
+     "Chittorgarh",
+     "Vijay Stambh",
+     "Padmavat",
+     "Jayasi",
+     "Jauhar",
+     "Mewar",
+     "Rajasthan history",
      "Indian history",
-     "Vyaghraprastha"
+     "Sabut ke saath"
     ],
-    "title": "Sinauli rath: ghode ke ya bail ke?"
+    "title": "Rani Padmini: sach ya kavita? Chittor 1303"
    }
   },
   "cards": [],
   "carousel": false,
-  "end_question": "Us dost ko bhejo jo Mahabharat ko sirf kahani maanta hai.",
-  "hook": "Sinauli ki kabron mein 4,000 saal purane rath mile?",
+  "end_question": "Nani ko bhejo, jinhone Padmini ki kahani sunayi thi.",
+  "hook": "Chittor ki Rani Padmini, sach thi ya sirf ek kavita?",
   "scenes": [
    {
     "facts_used": [
-     1
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Photorealistic dramatic wide view of a deep archaeological excavation pit in a flat farm field in western Uttar Pradesh at dusk, dark storm clouds rolling overhead, lightning on the horizon, the dark outline of an ancient wooden two-wheeled vehicle with glinting copper fittings half-exposed in the reddish earth, work lamps casting hard light, dust in the air, filling the frame",
-     "type": "art"
-    },
-    "vo": "Sinauli ki kabron mein 4,000 saal purane rath mile? Kya yeh Mahabharat ke yodha the?"
-   },
-   {
-    "facts_used": [
-     6,
      8
     ],
-    "label": "scripture",
-    "visual": {
-     "card": null,
-     "prompt": "Photorealistic cinematic scene in an ancient Indian royal hall lit by oil lamps, carved stone pillars, a messenger in dhoti and angavastram standing before a seated king on a raised stone throne, courtiers in silk dhotis watching tensely, warm flickering light, documentary style",
-     "type": "art"
-    },
-    "vo": "Mahabharat, Udyoga Parva. Pandav kehte hain, bas kuch gaon de do, yuddh nahi hoga. Baat nahi bani."
-   },
-   {
-    "facts_used": [
-     7
-    ],
-    "label": "legend",
-    "visual": {
-     "card": null,
-     "prompt": "Photorealistic view of an elderly Indian grandmother in a cotton saree sitting on a charpai in a village courtyard at evening, children in kurtas listening around her, an oil lamp glowing, mud walls and a neem tree, natural soft light",
-     "type": "art"
-    },
-    "vo": "Lok-katha kehti hai, Baghpat hi Vyaghraprastha tha, yaani baagh ka shehar. Lekin mitti ke neeche kya hai?"
-   },
-   {
-    "facts_used": [
-     0
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Photorealistic aerial drone view of a small village in western Uttar Pradesh surrounded by green sugarcane fields, a rectangular excavation site with neat trenches and blue tarpaulin sheds at its edge, morning haze, natural light",
-     "type": "art"
-    },
-    "vo": "Baghpat ka gaon Sinauli. ASI, yaani Bharat ka puratatva vibhag, yahan khudai karta hai. 2018 mein bada khulasa."
-   },
-   {
-    "facts_used": [
-     2
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Photorealistic close view from above of an excavated burial pit, the decayed remains of a wooden coffin standing on short legs, faint human-like figures in copper on the lid, an archaeologist's gloved hand brushing soil away with a soft brush, earthy tones, natural light",
-     "type": "art"
-    },
-    "vo": "Neeche kabrein milti hain, pairon wale lakdi ke taboot. Dhakkan par insaan jaisi aakritiyan. Yeh aam log nahi the."
-   },
-   {
-    "facts_used": [
-     1
-    ],
-    "label": "archaeology",
-    "visual": {
-     "card": null,
-     "prompt": "Photorealistic laboratory scene, a scientist in a white coat seen from behind holding a tiny sample of ancient charred wood with tweezers under a bright lamp, glass vials and sample trays on a steel bench, cool clean light, no text and no screens",
-     "type": "art"
-    },
-    "vo": "Radiocarbon dating, yaani vigyan se umar ka hisaab. Jawab, lagbhag 4,000 saal. Lekin twist abhi baaki hai."
-   },
-   {
-    "facts_used": [
-     3
-    ],
     "label": "disputed",
     "visual": {
      "card": null,
-     "prompt": "Photorealistic reconstruction of an ancient Indian warrior in leather armour standing on a light two-wheeled war chariot pulled by two horses across a dusty plain at sunrise, holding a bow, dust rising, seen from a low side angle",
+     "prompt": "Photorealistic wide dramatic view of Chittorgarh hill fort at dusk under a violent monsoon storm, lightning striking behind massive stone ramparts on the cliff, orange glow of oil lamps and fires inside the walls, dark clouds rolling low, natural light, documentary photograph feel, no text",
      "type": "art"
     },
-    "vo": "Kabron ke saath pahiyon wale vaahan mile. Khudai ke director Sanjay Manjul bole, yeh ghodon wale yuddh rath hain."
-   },
-   {
-    "facts_used": [
-     3,
-     4
-    ],
-    "label": "disputed",
-    "visual": {
-     "card": null,
-     "prompt": "Photorealistic close view of a heavy solid wooden disc wheel lying in excavated earth, its grain and cracks visible, beside it a rough reconstruction of an ancient Indian bullock cart with two oxen in a field, overcast natural light",
-     "type": "art"
-    },
-    "vo": "Par itihaas ke vidwan Asko Parpola nahi maante. Pahiye thos hain, aur thos pahiye bailgaadi ke hote hain."
+    "vo": "Chittor ki Rani Padmini, sach thi ya sirf ek kavita?"
    },
    {
     "facts_used": [
      5
     ],
-    "label": "disputed",
+    "label": "scripture",
     "visual": {
      "card": null,
-     "prompt": "Photorealistic museum-style view of ancient copper swords, spearheads and a copper shield laid on dark cloth under a single warm spotlight, their green-brown patina glowing, shallow depth of field",
+     "prompt": "Photorealistic close view of an old hand-written Awadhi manuscript on brittle paper beside a burning oil lamp in a dim stone room, an elderly Indian poet in a white angavastram seen from behind, holding a reed pen, warm natural lamplight, no readable text",
      "type": "art"
     },
-    "vo": "Yeh log kaun the? Kuch kehte, tambe ke hathiyaron wali yahin ki sanskriti. Kuch kehte, bahar se aaye charwahe."
+    "vo": "Padmini pehli baar ek kavita mein milti hai. Jayasi ki Padmavat, saal 1540."
    },
    {
     "facts_used": [
-     3,
+     9
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a still water pool beside a carved sandstone Rajput palace pavilion, a large bronze mirror on a stand catching a blurred reflection of a woman in a red saree seen from far away, soft evening light, mysterious mood, no faces in close-up",
+     "type": "art"
+    },
+    "vo": "Phir lok-katha aati hai, Sultan ne aaine mein rani ko dekha. Lekin yeh aaina sabse purani kitabon mein hai hi nahi."
+   },
+   {
+    "facts_used": [
      4
     ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a weathered stone slab with carved ancient script inside a small old Rajasthan temple, an Indian archaeologist's hand with a soft brush cleaning dust from the grooves, slanting morning light through a doorway",
+     "type": "art"
+    },
+    "vo": "Toh kya raja bhi kalpana tha? Nahi. Dariba mandir ka shilalekh, yaani patthar par khuda record, Rawal Ratnasimha ka raaj darj karta hai."
+   },
+   {
+    "facts_used": [
+     11,
+     10
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of Ranthambore fort walls on a rocky hill seen from the forest below, smoke rising from inside the fort into a hazy sky, warriors in leather armour with spears on the ramparts as tiny distant figures, sombre natural light",
+     "type": "art"
+    },
+    "vo": "Chittor ka ghera 1303 mein hua. Jauhar yaani haar se pehle auraton ka aag mein utarna. Amir Khusrau ne jauhar likha, par Ranthambore ka."
+   },
+   {
+    "facts_used": [
+     11
+    ],
     "label": "disputed",
     "visual": {
      "card": null,
-     "prompt": "Photorealistic split view at the same riverbank in ancient north India at dusk: on one side a horse standing in shadow, on the other a white ox with long horns, an empty wooden cart between them, misty golden light",
+     "prompt": "Photorealistic close view of old Persian court manuscripts stacked on a low wooden desk in a dim archive room, one book lying open with blank faded margins, dust in a beam of window light, quiet mysterious mood, no readable text",
      "type": "art"
     },
-    "vo": "Aur gaadi kheenchta kaun tha, ghoda ya bail? Aaj tak koi nahi jaanta."
+    "vo": "Aur Chittor? Us daur ki kitabein Chittor ke jauhar par chup hain. Toh yeh kahani aayi kahan se?"
    },
    {
     "facts_used": [
-     1,
      8
     ],
-    "label": "legend",
+    "label": "disputed",
     "visual": {
      "card": null,
-     "prompt": "Photorealistic wide view of the excavated Sinauli burial trenches at golden hour, a lone archaeologist in a cotton shirt kneeling at the edge looking down at the ancient remains, long shadows across the soil",
+     "prompt": "Photorealistic documentary scene in a Rajasthan village courtyard at night, an old bard in a turban and dhoti singing with a stringed instrument beside a fire, villagers in sarees and dhotis listening, seen from a distance, warm firelight",
      "type": "art"
     },
-    "vo": "Twist yeh hai, kabrein asli, umar bhi asli. Par Mahabharat se rishta, abhi sirf lok-katha hai."
+    "vo": "Zyaadatar itihaaskar kehte hain, Padmini kavi ki rachna hai. Kuch vidwan kehte hain, Jayasi ne Mewar ki purani lok-yaadein likhin."
    },
    {
     "facts_used": [
-     7,
-     8
+     6
     ],
-    "label": "legend",
+    "label": "scripture",
     "visual": {
      "card": null,
-     "prompt": "Photorealistic documentary view of village elders in white dhotis and turbans sitting under a large banyan tree in a western Uttar Pradesh village, one gesturing while telling a story, young men listening, afternoon sunlight through leaves",
+     "prompt": "Photorealistic close view of the last page of an old manuscript lying open on a stone windowsill, a lit oil lamp beside it, and through the window the distant silhouette of a hilltop fort at dawn, soft golden light, no readable text",
      "type": "art"
     },
-    "vo": "Baghpat ke bujurg aaj bhi yahi katha sunate hain. Aap kya maante, rath ya bailgaadi?"
+    "vo": "Par asli twist kavita ke aakhir mein hai. Jayasi khud kehte hain, Chittor shareer hai, raja mann, aur Padmini buddhi."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of two Rajput warriors in bronze and leather armour with swords facing each other on a dusty rocky plain, seen from a distance, dust rising, harsh afternoon sun, Aravalli hills behind",
+     "type": "art"
+    },
+    "vo": "Aur kavita mein raja Sultan se nahi marta. Woh Kumbhalner ke raja Devpal se ladai mein marta hai."
+   },
+   {
+    "facts_used": [
+     11
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an empty ancient stone courtyard inside Chittorgarh fort at twilight, cracked flagstones, a single oil lamp flickering on a ledge, long shadows, silent and unresolved mood",
+     "type": "art"
+    },
+    "vo": "Toh jauhar hua ya nahi? Baad ki Rajput aur Persian kitabein haan kehti hain. Purane sabut chup hain."
+   },
+   {
+    "facts_used": [
+     2,
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic low-angle view of the Vijaya Stambha, a tall carved sandstone tower inside Chittorgarh fort, rising against a bright blue sky, pilgrims and visitors in Indian clothes small at its base, crisp morning sunlight on the intricate carvings",
+     "type": "art"
+    },
+    "vo": "Aaj Chittorgarh qile mein Kumbha ka Vijay Stambh khada hai. Uske patthar par kaarigar Jaita aur beton ke naam khude hain. Patthar ne kaarigar yaad rakhe, Padmini ka sawaal aaj bhi khula hai."
    },
    {
     "facts_used": [],
-    "label": null,
+    "label": "legend",
     "visual": {
      "card": null,
-     "prompt": "Photorealistic view of a quiet field at night above the Sinauli excavation site, a vast starry sky over the dark trenches, a single oil lamp glowing on the edge of the pit, calm and mysterious mood",
+     "prompt": "Photorealistic warm scene of an Indian grandmother in a cotton saree seen from behind, sitting on a charpai in a lamp-lit courtyard telling a story to two children, the distant outline of a hill fort under the night sky",
      "type": "art"
     },
-    "vo": "Us dost ko bhejo jo Mahabharat ko sirf kahani maanta hai."
+    "vo": "Nani ko bhejo, jinhone Padmini ki kahani sunayi thi."
    }
   ],
   "thumbnail": {
-   "name": "SINAULI",
-   "name_hi": "सिनौली",
-   "scene": "A deep excavation pit in a dark farm field under a stormy dusk sky, the remains of an ancient wooden two-wheeled vehicle with glinting copper fittings lying beside a decayed coffin in the red earth, lit by harsh work lamps.",
+   "name": "PADMINI",
+   "name_hi": "पद्मिनी",
+   "scene": "Chittorgarh fort on its cliff at dusk under a storm, a carved palace reflected in a still water pool in the foreground, the tall Vijaya Stambha tower glowing orange against dark clouds.",
    "words": [
-    "4,000 SAAL",
-    "PROOF?"
+    "1540",
+    "SECRET"
    ],
    "words_hi": [
-    "4,000 साल",
-    "सबूत?"
+    "1540",
+    "सीक्रेट"
    ]
   },
-  "title": "Sinauli ki kabron mein *rath*? 🤯"
+  "title": "Rani *Padmini* sach thi ya kavita? 🤯"
  },
- "status": "failed-crash",
- "timings": [],
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  4.055,
+  9.676,
+  16.897,
+  24.223,
+  32.247,
+  38.635,
+  45.825,
+  52.999,
+  58.29,
+  65.257,
+  75.436
+ ],
  "topic": {
   "allowed_sources": [
    "asi.nic.in",
-   "en.wikipedia.org"
+   "en.wikipedia.org",
+   "Padmavat (Jayasi) as literature"
   ],
-  "from_bank": true,
   "hooks": [
-   "4,000 saal purane rath India mein mile?",
-   "Mahabharat ke rath aise the?",
-   "Sinauli ke yodhaon ki kabrein"
+   "9 manzil, 157 seedhiyan, 1448 mein?",
+   "Rani Padmini ki asli kahani kya hai?",
+   "Jauhar ka itihaas, sabut ke saath"
   ],
-  "id": "sinauli-chariots",
-  "notes": "Chariot vs cart debate is disputed; the Mahabharata link is legend unless a source says otherwise.",
-  "place": "Baghpat, Uttar Pradesh",
+  "id": "vijay-stambh",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "",
+   "options": [
+    {
+     "closing": "",
+     "question": "Kavita mein raja Sultan se nahi marta. Woh Devpal ke haathon marta hai. Toh Chittor ke jauhar ki kahani aakhir kisne gadhi?",
+     "text": "Kavita mein raja Sultan se nahi marta. Woh Devpal ke haathon marta hai. Toh Chittor ke jauhar ki kahani aakhir kisne gadhi?",
+     "words": 22
+    },
+    {
+     "closing": "",
+     "question": "Chittor ki Rani Padmini ko hum sabne sach maana, lekin 1303 ke patthar aur purani kitabein is kahani par ajeeb chuppi saadhe hain.",
+     "text": "Chittor ki Rani Padmini ko hum sabne sach maana, lekin 1303 ke patthar aur purani kitabein is kahani par ajeeb chuppi saadhe hain.",
+     "words": 23
+    },
+    {
+     "closing": "",
+     "question": "Raja Ratnasimha ka naam patthar par khuda hai, par Padmini ka koi saboot nahi. Toh Chittor ki sabse mashhoor rani aayi kahan se?",
+     "text": "Raja Ratnasimha ka naam patthar par khuda hai, par Padmini ka koi saboot nahi. Toh Chittor ki sabse mashhoor rani aayi kahan se?",
+     "words": 23
+    },
+    {
+     "closing": "",
+     "question": "Amir Khusrau ne Ranthambore ka jauhar likha, lekin Chittor par chup rahe. Aakhir 1303 mein aisa kya hua jo likha nahi gaya?",
+     "text": "Amir Khusrau ne Ranthambore ka jauhar likha, lekin Chittor par chup rahe. Aakhir 1303 mein aisa kya hua jo likha nahi gaya?",
+     "words": 22
+    },
+    {
+     "closing": "",
+     "question": "Jayasi ne 1540 mein likha: Chittor shareer hai, raja mann, aur Padmini buddhi. Kya ek rani sirf ek sawaal thi, insaan nahi?",
+     "text": "Jayasi ne 1540 mein likha: Chittor shareer hai, raja mann, aur Padmini buddhi. Kya ek rani sirf ek sawaal thi, insaan nahi?",
+     "words": 22
+    }
+   ],
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: wide dramatic view of Chittorgarh hill fort at dusk under a violent monsoon storm, lightning striking behind massive stone ramparts on the cliff, orange glow of oil lamps and fires inside the walls, dark clouds rolling low, natural light, documentary photograph feel. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. If the scene shows the past, it is ancient India: Indian people in dhotis, sarees and angavastram, warriors with bows, spears and bronze or leather armour, carved stone pillars, oil lamps; never European knights, plate armour, castles or anything medieval European. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a cream silk kurta with a maroon Nehru jacket. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGMythWorld watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "Kavita mein raja Sultan se nahi marta. Woh Devpal ke haathon marta hai. Toh Chittor ke jauhar ki kahani aakhir kisne gadhi?",
+   "text": "Kavita mein raja Sultan se nahi marta. Woh Devpal ke haathon marta hai. Toh Chittor ke jauhar ki kahani aakhir kisne gadhi?",
+   "words": 22
+  },
+  "notes": "Separate chronicle from epic poem; label; no communal framing of sieges.",
+  "place": "Chittorgarh, Rajasthan",
   "target_minutes": null,
-  "title_hi": "Sinauli ke rath",
-  "topic_score": 6,
+  "title_hi": "Chittor ka Vijay Stambh",
+  "topic_score": 5,
   "topic_score_why": [
-   "+4 one of the most-watched names",
+   "-2 no famous name",
+   "+3 a shock question or a mystery",
+   "+2 an untold angle",
    "+1 a concrete number",
    "+1 asks a question"
   ],
-  "weekly": true
+  "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-11-18T22:18:18+00:00",
+ "updated": "2026-11-19T07:44:46+00:00",
  "writer": "claude"
 }

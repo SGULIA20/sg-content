@@ -1,0 +1,67 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.80,Default,,0,0,0,,Chittor ki Rani Padmini,
+Dialogue: 0,0:00:01.80,0:00:03.60,Default,,0,0,0,,sach thi ya sirf ek kavita?
+Dialogue: 0,0:00:04.05,0:00:06.64,Default,,0,0,0,,Padmini pehli baar ek kavita mein
+Dialogue: 0,0:00:06.64,0:00:07.35,Default,,0,0,0,,milti hai.
+Dialogue: 0,0:00:07.35,0:00:08.76,Default,,0,0,0,,Jayasi ki Padmavat,
+Dialogue: 0,0:00:08.76,0:00:09.23,Default,,0,0,0,,saal 1540.
+Dialogue: 0,0:00:09.68,0:00:10.99,Default,,0,0,0,,Phir lok-katha aati hai,
+Dialogue: 0,0:00:10.99,0:00:12.69,Default,,0,0,0,,Sultan ne aaine mein rani ko
+Dialogue: 0,0:00:12.69,0:00:13.06,Default,,0,0,0,,dekha.
+Dialogue: 0,0:00:13.06,0:00:15.51,Default,,0,0,0,,Lekin yeh aaina sabse purani kitabon
+Dialogue: 0,0:00:15.51,0:00:16.45,Default,,0,0,0,,mein hai hi nahi.
+Dialogue: 0,0:00:16.90,0:00:18.41,Default,,0,0,0,,Toh kya raja bhi kalpana tha?
+Dialogue: 0,0:00:18.41,0:00:18.74,Default,,0,0,0,,Nahi.
+Dialogue: 0,0:00:18.74,0:00:20.25,Default,,0,0,0,,Dariba mandir ka shilalekh,
+Dialogue: 0,0:00:20.25,0:00:21.76,Default,,0,0,0,,yaani patthar par khuda record,
+Dialogue: 0,0:00:21.76,0:00:23.61,Default,,0,0,0,,Rawal Ratnasimha ka raaj darj karta
+Dialogue: 0,0:00:23.61,0:00:23.77,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:24.22,0:00:26.16,Default,,0,0,0,,Chittor ka ghera 1303 mein hua.
+Dialogue: 0,0:00:26.16,0:00:28.10,Default,,0,0,0,,Jauhar yaani haar se pehle auraton
+Dialogue: 0,0:00:28.10,0:00:29.16,Default,,0,0,0,,ka aag mein utarna.
+Dialogue: 0,0:00:29.16,0:00:30.74,Default,,0,0,0,,Amir Khusrau ne jauhar likha,
+Dialogue: 0,0:00:30.74,0:00:31.80,Default,,0,0,0,,par Ranthambore ka.
+Dialogue: 0,0:00:32.25,0:00:32.93,Default,,0,0,0,,Aur Chittor?
+Dialogue: 0,0:00:32.93,0:00:34.99,Default,,0,0,0,,Us daur ki kitabein Chittor ke
+Dialogue: 0,0:00:34.99,0:00:36.13,Default,,0,0,0,,jauhar par chup hain.
+Dialogue: 0,0:00:36.13,0:00:38.18,Default,,0,0,0,,Toh yeh kahani aayi kahan se?
+Dialogue: 0,0:00:38.63,0:00:40.36,Default,,0,0,0,,Zyaadatar itihaaskar kehte hain,
+Dialogue: 0,0:00:40.36,0:00:41.92,Default,,0,0,0,,Padmini kavi ki rachna hai.
+Dialogue: 0,0:00:41.92,0:00:42.96,Default,,0,0,0,,Kuch vidwan kehte hain,
+Dialogue: 0,0:00:42.96,0:00:45.03,Default,,0,0,0,,Jayasi ne Mewar ki purani lok-yaadein
+Dialogue: 0,0:00:45.03,0:00:45.38,Default,,0,0,0,,likhin.
+Dialogue: 0,0:00:45.83,0:00:47.93,Default,,0,0,0,,Par asli twist kavita ke aakhir
+Dialogue: 0,0:00:47.93,0:00:48.35,Default,,0,0,0,,mein hai.
+Dialogue: 0,0:00:48.35,0:00:49.61,Default,,0,0,0,,Jayasi khud kehte hain,
+Dialogue: 0,0:00:49.61,0:00:50.66,Default,,0,0,0,,Chittor shareer hai,
+Dialogue: 0,0:00:50.66,0:00:51.29,Default,,0,0,0,,raja mann,
+Dialogue: 0,0:00:51.29,0:00:52.55,Default,,0,0,0,,aur Padmini buddhi.
+Dialogue: 0,0:00:53.00,0:00:54.61,Default,,0,0,0,,Aur kavita mein raja Sultan se
+Dialogue: 0,0:00:54.61,0:00:55.26,Default,,0,0,0,,nahi marta.
+Dialogue: 0,0:00:55.26,0:00:56.87,Default,,0,0,0,,Woh Kumbhalner ke raja Devpal se
+Dialogue: 0,0:00:56.87,0:00:57.84,Default,,0,0,0,,ladai mein marta hai.
+Dialogue: 0,0:00:58.29,0:00:59.92,Default,,0,0,0,,Toh jauhar hua ya nahi?
+Dialogue: 0,0:00:59.92,0:01:02.25,Default,,0,0,0,,Baad ki Rajput aur Persian kitabein
+Dialogue: 0,0:01:02.25,0:01:03.18,Default,,0,0,0,,haan kehti hain.
+Dialogue: 0,0:01:03.18,0:01:04.81,Default,,0,0,0,,Purane sabut chup hain.
+Dialogue: 0,0:01:05.26,0:01:07.06,Default,,0,0,0,,Aaj Chittorgarh qile mein Kumbha ka
+Dialogue: 0,0:01:07.06,0:01:08.14,Default,,0,0,0,,Vijay Stambh khada hai.
+Dialogue: 0,0:01:08.14,0:01:10.12,Default,,0,0,0,,Uske patthar par kaarigar Jaita aur
+Dialogue: 0,0:01:10.12,0:01:11.38,Default,,0,0,0,,beton ke naam khude hain.
+Dialogue: 0,0:01:11.38,0:01:13.00,Default,,0,0,0,,Patthar ne kaarigar yaad rakhe,
+Dialogue: 0,0:01:13.00,0:01:14.81,Default,,0,0,0,,Padmini ka sawaal aaj bhi khula
+Dialogue: 0,0:01:14.81,0:01:14.99,Default,,0,0,0,,hai.
+Dialogue: 0,0:01:15.44,0:01:16.28,Default,,0,0,0,,Nani ko bhejo,
+Dialogue: 0,0:01:16.28,0:01:18.47,Default,,0,0,0,,jinhone Padmini ki kahani sunayi thi.
