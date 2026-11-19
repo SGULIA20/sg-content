@@ -1,0 +1,68 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.70,Default,,0,0,0,,Bhagwan Vishnu ka sir kaise kat
+Dialogue: 0,0:00:01.70,0:00:02.08,Default,,0,0,0,,gaya tha?
+Dialogue: 0,0:00:02.08,0:00:03.40,Default,,0,0,0,,Ghode ka sir kyun laga?
+Dialogue: 0,0:00:03.85,0:00:06.10,Default,,0,0,0,,Devi Bhagavata Purana mein asur tha,
+Dialogue: 0,0:00:06.10,0:00:06.62,Default,,0,0,0,,Hayagriva.
+Dialogue: 0,0:00:06.62,0:00:07.14,Default,,0,0,0,,Vardaan tha,
+Dialogue: 0,0:00:07.14,0:00:08.53,Default,,0,0,0,,sirf ghode ke sir wala hi
+Dialogue: 0,0:00:08.53,0:00:09.39,Default,,0,0,0,,use maar sake.
+Dialogue: 0,0:00:09.84,0:00:11.92,Default,,0,0,0,,Udhar Vishnu bina bole muskuraye.
+Dialogue: 0,0:00:11.92,0:00:13.05,Default,,0,0,0,,Lakshmi ji ko laga,
+Dialogue: 0,0:00:13.05,0:00:14.00,Default,,0,0,0,,woh hans rahe hain.
+Dialogue: 0,0:00:14.00,0:00:14.56,Default,,0,0,0,,Shaap laga,
+Dialogue: 0,0:00:14.56,0:00:15.89,Default,,0,0,0,,dhanush ki dori tooti,
+Dialogue: 0,0:00:15.89,0:00:16.64,Default,,0,0,0,,aur sir kat gaya.
+Dialogue: 0,0:00:17.09,0:00:18.01,Default,,0,0,0,,Tab Vishvakarma,
+Dialogue: 0,0:00:18.01,0:00:19.12,Default,,0,0,0,,devtaon ke karigar,
+Dialogue: 0,0:00:19.12,0:00:20.41,Default,,0,0,0,,ne ghode ka sir dhad par
+Dialogue: 0,0:00:20.41,0:00:20.77,Default,,0,0,0,,joda.
+Dialogue: 0,0:00:20.77,0:00:22.43,Default,,0,0,0,,Lekin kya yeh sirf kahani hai?
+Dialogue: 0,0:00:22.88,0:00:24.41,Default,,0,0,0,,Sabut Khajuraho mein hai.
+Dialogue: 0,0:00:24.41,0:00:25.36,Default,,0,0,0,,Lakshmana mandir,
+Dialogue: 0,0:00:25.36,0:00:26.32,Default,,0,0,0,,saal 954 ka.
+Dialogue: 0,0:00:26.32,0:00:28.03,Default,,0,0,0,,Uttar ki deewar par ghode ke
+Dialogue: 0,0:00:28.03,0:00:29.56,Default,,0,0,0,,sir wale Vishnu khude hain.
+Dialogue: 0,0:00:30.01,0:00:32.15,Default,,0,0,0,,Varanasi ke Bharat Kala Bhavan mein
+Dialogue: 0,0:00:32.15,0:00:33.41,Default,,0,0,0,,laal patthar ka tukda hai.
+Dialogue: 0,0:00:33.41,0:00:35.55,Default,,0,0,0,,Hayagriva ki sabse purani moortiyon mein
+Dialogue: 0,0:00:35.55,0:00:36.45,Default,,0,0,0,,gina jaata hai.
+Dialogue: 0,0:00:36.90,0:00:39.14,Default,,0,0,0,,Assam ke Hajo mein Hayagriva Madhava
+Dialogue: 0,0:00:39.14,0:00:39.70,Default,,0,0,0,,mandir hai.
+Dialogue: 0,0:00:39.70,0:00:41.76,Default,,0,0,0,,Koch raja ne ise 1583 mein,
+Dialogue: 0,0:00:41.76,0:00:43.63,Default,,0,0,0,,purani neev par dobara banwaya.
+Dialogue: 0,0:00:44.08,0:00:44.98,Default,,0,0,0,,Par yahan twist hai.
+Dialogue: 0,0:00:44.98,0:00:46.42,Default,,0,0,0,,Kuch itihaaskar kehte hain,
+Dialogue: 0,0:00:46.42,0:00:47.68,Default,,0,0,0,,Hajo pehle Buddh teerth tha.
+Dialogue: 0,0:00:47.68,0:00:49.47,Default,,0,0,0,,Doosre ise shuru se Vishnu ka
+Dialogue: 0,0:00:49.47,0:00:50.19,Default,,0,0,0,,sthaan maante hain.
+Dialogue: 0,0:00:50.64,0:00:51.67,Default,,0,0,0,,Sawaal aur bhi hai.
+Dialogue: 0,0:00:51.67,0:00:53.32,Default,,0,0,0,,Kuch vidwan yeh roop Vedon ki
+Dialogue: 0,0:00:53.32,0:00:55.17,Default,,0,0,0,,purani kathaon se jodte hain.
+Dialogue: 0,0:00:55.17,0:00:55.79,Default,,0,0,0,,Kab badla,
+Dialogue: 0,0:00:55.79,0:00:56.82,Default,,0,0,0,,koi nahi jaanta.
+Dialogue: 0,0:00:57.27,0:00:58.71,Default,,0,0,0,,Gupta kaal se Vishnu ki aisi
+Dialogue: 0,0:00:58.71,0:00:59.67,Default,,0,0,0,,moortiyan bhi milti hain,
+Dialogue: 0,0:00:59.67,0:01:01.27,Default,,0,0,0,,jinke peeche ki taraf ghode ka
+Dialogue: 0,0:01:01.27,0:01:01.91,Default,,0,0,0,,sir bana hai.
+Dialogue: 0,0:01:02.36,0:01:04.14,Default,,0,0,0,,Aaj Hayagriva gyaan ke devta maane
+Dialogue: 0,0:01:04.14,0:01:04.68,Default,,0,0,0,,jaate hain.
+Dialogue: 0,0:01:04.68,0:01:06.82,Default,,0,0,0,,Mysuru ke Parakala Mutt mein Lakshmi
+Dialogue: 0,0:01:06.82,0:01:07.89,Default,,0,0,0,,Hayagriva poojit hain.
+Dialogue: 0,0:01:07.89,0:01:08.78,Default,,0,0,0,,Shaap se mila sir,
+Dialogue: 0,0:01:08.78,0:01:10.03,Default,,0,0,0,,ab padhai ka ashirwaad.
+Dialogue: 0,0:01:10.48,0:01:11.36,Default,,0,0,0,,Nani ko bhejo,
+Dialogue: 0,0:01:11.36,0:01:13.30,Default,,0,0,0,,jinhone Vishnu ki yeh katha sunayi
+Dialogue: 0,0:01:13.30,0:01:13.48,Default,,0,0,0,,thi.
