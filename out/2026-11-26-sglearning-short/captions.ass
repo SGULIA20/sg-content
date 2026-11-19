@@ -1,0 +1,40 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.45,Default,,0,0,0,,Up to 60 percent of your
+Dialogue: 0,0:00:01.45,0:00:03.27,Default,,0,0,0,,first-year premium can go as commission.
+Dialogue: 0,0:00:03.72,0:00:05.58,Default,,0,0,0,,A couple signs a savings policy
+Dialogue: 0,0:00:05.58,0:00:06.33,Default,,0,0,0,,for their daughter.
+Dialogue: 0,0:00:06.33,0:00:08.01,Default,,0,0,0,,They think every rupee grows for
+Dialogue: 0,0:00:08.01,0:00:08.19,Default,,0,0,0,,her.
+Dialogue: 0,0:00:08.64,0:00:09.88,Default,,0,0,0,,Why does it feel right?
+Dialogue: 0,0:00:09.88,0:00:11.60,Default,,0,0,0,,Insurance and savings,
+Dialogue: 0,0:00:11.60,0:00:12.58,Default,,0,0,0,,in one plan.
+Dialogue: 0,0:00:13.03,0:00:15.02,Default,,0,0,0,,And the agent is a family
+Dialogue: 0,0:00:15.02,0:00:15.24,Default,,0,0,0,,friend.
+Dialogue: 0,0:00:15.24,0:00:16.34,Default,,0,0,0,,Saying no feels rude.
+Dialogue: 0,0:00:16.79,0:00:18.09,Default,,0,0,0,,But here is the catch.
+Dialogue: 0,0:00:18.09,0:00:19.39,Default,,0,0,0,,A big chunk of that first
+Dialogue: 0,0:00:19.39,0:00:20.69,Default,,0,0,0,,premium pays the seller.
+Dialogue: 0,0:00:21.14,0:00:22.12,Default,,0,0,0,,Stop paying early,
+Dialogue: 0,0:00:22.12,0:00:23.58,Default,,0,0,0,,and you get back far less.
+Dialogue: 0,0:00:23.58,0:00:25.54,Default,,0,0,0,,Reports say more than half of
+Dialogue: 0,0:00:25.54,0:00:26.52,Default,,0,0,0,,buyers quit early.
+Dialogue: 0,0:00:26.97,0:00:27.39,Default,,0,0,0,,The twist?
+Dialogue: 0,0:00:27.39,0:00:29.09,Default,,0,0,0,,You get 30 days after buying
+Dialogue: 0,0:00:29.09,0:00:30.58,Default,,0,0,0,,to return the policy.
+Dialogue: 0,0:00:30.58,0:00:31.86,Default,,0,0,0,,Ask what the seller earns.
+Dialogue: 0,0:00:31.86,0:00:33.77,Default,,0,0,0,,This is not investment advice.
+Dialogue: 0,0:00:34.22,0:00:35.33,Default,,0,0,0,,Send this to your father,
+Dialogue: 0,0:00:35.33,0:00:37.35,Default,,0,0,0,,who thinks his insurance policy is
+Dialogue: 0,0:00:37.35,0:00:38.08,Default,,0,0,0,,pure savings.

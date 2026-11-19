@@ -1,0 +1,325 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 60.0,
+   "quote": "How much does your life insurance distributor earn from first-year endowment plan premiums? As much as 60%.",
+   "source_date": "2026-10-05",
+   "source_name": "ET",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOv5rqj2COFS3tWbqD367zP9-8SQvln2G7COX8kFd_-45_WNc83L8z87_SaNKns0_e_QQuf1xl80FXGvWdSWAxdnO4faBJJWJaMyMuVZfz1iwdcbxXOsiDeTcpKlxPS8eXYpQhjSKZYXGLGhxISzyePwYYNRAK4fp-du1VIsHnk9S1EVqUpPSa6xtNHjz90inM-9GBAYZ4ZXnKWBh8y8WM188RCsuD3CZCkKTLDCehDXi9y3anUykObateFJeN4hifzopx7qaifkH35xbPLPue10qhqC2uZ2KIqCdc9l-G",
+   "text": "Life insurance distributors can earn up to 60 percent of a customer's first-year premium in commission on traditional endowment plans.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 48.0,
+   "quote": "In life insurance, the 61st month persistency rate is only 48%, indicating that more than half of policyholders discontinue their policies before completing five years despite heavily front-loaded remuneration.",
+   "source_date": "2026-10-05",
+   "source_name": "ET",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOv5rqj2COFS3tWbqD367zP9-8SQvln2G7COX8kFd_-45_WNc83L8z87_SaNKns0_e_QQuf1xl80FXGvWdSWAxdnO4faBJJWJaMyMuVZfz1iwdcbxXOsiDeTcpKlxPS8eXYpQhjSKZYXGLGhxISzyePwYYNRAK4fp-du1VIsHnk9S1EVqUpPSa6xtNHjz90inM-9GBAYZ4ZXnKWBh8y8WM188RCsuD3CZCkKTLDCehDXi9y3anUykObateFJeN4hifzopx7qaifkH35xbPLPue10qhqC2uZ2KIqCdc9l-G",
+   "text": "The 61st month persistency rate across Indian life insurance stands at only 48 percent, meaning more than half of policyholders forfeit or lapse their policies before completing five years.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 125.0,
+   "quote": "The paper said distributor remuneration in the life insurance corporate agency channel grew 125% between FY23 and FY25, compared with a 28% rise in new business premium.",
+   "source_date": "2026-09-23",
+   "source_name": "The New Indian Express",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGM9Howmq4dMzZh5GDK5jnPsHSyOf7OaH8MtwA9XgjlgJXZvsIn9gt0BuKBnCEUeg6xGM--nJjyF9J0VRO-5_t3i9CinXhwG_BkhLkB0_8NGNOaomKa3MtdcnP5_KOPe8qWaB74HhOZkyiBzgoLmS0kTsw0HVtgOC481UQAPtTmeS0rQkVR0K0Ve5VY2kO6m2Z2URWbd4hvFsE3ivRS5NGT",
+   "text": "Payments made to distributors in the life insurance corporate agency channel jumped 125 percent between FY23 and FY25, far outpacing the 28 percent growth in new business premiums.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 25.0,
+   "quote": "For life insurance policies with a term of 10 years and above, the first-year commission for agents is capped at 25%, followed by 5% in renewal commissions.",
+   "source_date": "2026-09-23",
+   "source_name": "ET",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHff8hSrtWwMYN23TQPPGr-grx7x5mpEtRlRmFS4iF6L_fuAdraf-X6Hq7oeLhuiKDyjUIgdQiB_QebXyxjHHSCJJCLtYiJHlxd_QBAeYWMEAh9OYt7oV-Cn9vyqI7RLrJGrWCuY_K9ONMlldDVsF9Za2qpuxvi5zaGoGlH6aWLz97cLYQnTH3aZff-gaYIa6tBSgA2oBSEaA1jRpm6bheO_pEVPVKD6meWzbnX0ydK8jc7fod3tEh7c9C2sw==",
+   "text": "IRDAI proposed capping the first-year agent commission on life policies with a term of 10 years and above at 25 percent.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 7.0,
+   "quote": "The commission will be 5.5% for renewals in the sixth, seventh and eighth policy years, 6% for the ninth, 10th and 11th years and so on, subject to a maximum renewal commission of 7%.",
+   "source_date": "2026-09-23",
+   "source_name": "ET",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHff8hSrtWwMYN23TQPPGr-grx7x5mpEtRlRmFS4iF6L_fuAdraf-X6Hq7oeLhuiKDyjUIgdQiB_QebXyxjHHSCJJCLtYiJHlxd_QBAeYWMEAh9OYt7oV-Cn9vyqI7RLrJGrWCuY_K9ONMlldDVsF9Za2qpuxvi5zaGoGlH6aWLz97cLYQnTH3aZff-gaYIa6tBSgA2oBSEaA1jRpm6bheO_pEVPVKD6meWzbnX0ydK8jc7fod3tEh7c9C2sw==",
+   "text": "Under the proposed commission overhaul, annual renewal commission paid to agents can gradually increase over the life of the policy up to a maximum cap of 7 percent to incentivize long-term persistency.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 30.0,
+   "quote": "Firstly, IRDAI has extended the 'Free Look Period' in life insurance policies from 15 days to 30 days leading to an increased censure of flexibility to the consumers and policyholders to review and evaluate the terms and conditions of their policies.",
+   "source_date": "2024-07-04",
+   "source_name": "King Stubb & Kasiva",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHnDy96QfIlZDT09SXXx0dPe963Fckjx-8iUuN4PMVXB9FdD3NNkYlrCKe_TkLiik51xX4hYYez06vmYvWN0OVWbGhfnUQxolDKLVt7nPV7SQExdl1kSQZl38x0d4rHZSqoAfSXuB4iepKACfxf2fDLFcTBsQSxNWSfGXA-zRCMVc=",
+   "text": "IRDAI doubled the mandatory free-look cancellation period from 15 days to 30 days, enabling households to review policy terms and obtain a complete refund if mis-sold.",
+   "unit": "days"
+  },
+  {
+   "label": "reported",
+   "number": 1.0,
+   "quote": "The Irdai master circular states: “the special surrender value (SSV) calculated shall become payable after completion of the first policy year provided one full year premium has been received.”",
+   "source_date": "2024-10-07",
+   "source_name": "The New Indian Express",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUXWlUG0eypYougw7emOdyUxmQ_QWS-UwM2AnpyE6bfaDWM_BPnkkvNCvPrjAxS9Oz8UR0p4Cplci4Mtq1hpA3ksYriWJgDfOImYgaJM3kQj-7w7ZcXaUaaMqEYjY4krrRV9hsZEPCKJbY9xDSBdarSMSQ9m1LrfpTUA457sY9Y3tMofYXDTVGcPlAU3e3OQRtRIFRZaVfuzj2RoId1gqn8wDtTLk=",
+   "text": "Under the revised life product guidelines, a special surrender value becomes payable after the completion of just 1 policy year if the full annual premium was paid.",
+   "unit": "year"
+  },
+  {
+   "label": "reported",
+   "number": 30.0,
+   "quote": "If you surrender your policy during the second year of the policy, you will receive a total of 30% of the total premiums paid.",
+   "source_date": "2024-04-01",
+   "source_name": "Unity Bank",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGakaCHrQChsB2NbgtcoEY-uPUij5QvV9rzQd28yLUdodWQzP__GPVdrKACBu_v8Hz4glmn1YXDMv4hO3dGhmEioSH_OBd7Q1mqWU7kR8Y7CF30dfFIMVQreJt85jMWU6q6wCGAvhVYa9RfKahVquf5GkS6diV-SeU23ZRpD_mI4HCiFlLEHDDuQ9xURFXz4Cbr7iSim30YQjDL",
+   "text": "Policyholders who surrender a regular non-single premium endowment plan during the second year are entitled to a guaranteed surrender value floor of 30 percent of total premiums paid.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-26-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-19",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 13.5,
+   "usd": 0.078914,
+   "voice": 8
+  },
+  "drafts": 1,
+  "intro_sent": "2026-11-19T22:32:29+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-26",
+ "reasons": [
+  "waiting for the founder's intro clip until 26 Nov 11:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Up to 60 percent of your first-year premium can go as commission, as reported.\nStop paying early and you can get back far less than you paid.\nYou get 30 days after buying to return a policy.\nDid anyone tell you this before you signed?\nThis is not investment advice.\nSend this to your father, who thinks his insurance policy is pure savings.",
+    "hashtags": [
+     "#PersonalFinanceIndia",
+     "#MoneyTipsHindi",
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#InvestingIndia",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Up to 60 percent of your first-year insurance premium can go as commission, as reported. And you get 30 days after buying to return a policy. Did your agent ever tell you either? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Up to 60 percent of your first-year premium can go as commission on traditional plans, as reported. Stop paying early and you can get back far less than you paid. New rules give you 30 days to return a policy, so use them. Send this to your father, who thinks his insurance policy is pure savings.",
+    "tags": [
+     "insurance",
+     "life insurance",
+     "endowment plan",
+     "agent commission",
+     "first year premium",
+     "surrender value",
+     "free look period",
+     "IRDAI",
+     "personal finance India",
+     "money tips"
+    ],
+    "title": "Insurance policy: who gets your first premium?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Send this to your father, who thinks his insurance policy is pure savings.",
+  "hook": "Up to 60 percent of your first-year premium can go as commission.",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of a thick insurance policy folder and a neat stack of rupee notes being slid across a glass office desk by one hand toward another, denominations not visible, warm afternoon window light, no text or logos",
+     "type": "art"
+    },
+    "vo": "Up to 60 percent of your first-year premium can go as commission."
+   },
+   {
+    "facts_used": [],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene in a modest Indian living room in the evening, a young husband and wife sitting on a sofa signing papers with a pen, their small daughter asleep on a cushion beside them, soft tube light, hopeful mood, no readable text",
+     "type": "art"
+    },
+    "vo": "A couple signs a savings policy for their daughter. They think every rupee grows for her."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an Indian dining table with a steel tiffin, a cup of chai and an open blank paper folder, a woman's hand resting on it thoughtfully, morning daylight from a kitchen window, calm and reassured mood, no text",
+     "type": "art"
+    },
+    "vo": "Why does it feel right? Insurance and savings, in one plan."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic doorway of an Indian apartment, a smiling middle-aged man in a neat shirt with a leather bag being welcomed in by an older couple, slippers at the door, warm evening light, friendly but slightly awkward mood",
+     "type": "art"
+    },
+    "vo": "And the agent is a family friend. Saying no feels rude."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of a man's hand counting rupee notes into a brown envelope at a small office desk, an unrelated stapler and pens nearby, denominations not visible, harsh overhead light, uneasy mood, no text",
+     "type": "art"
+    },
+    "vo": "But here is the catch. A big chunk of that first premium pays the seller."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of a tired Indian man in office clothes standing at a busy insurance branch counter, holding a thin envelope, looking disappointed, a queue of people behind him, late afternoon light",
+     "type": "art"
+    },
+    "vo": "Stop paying early, and you get back far less. Reports say more than half of buyers quit early."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of an Indian woman at a wooden table at home, carefully going through a paper policy document with a pencil, a calendar hanging on the wall behind her blurred, bright daylight, confident and alert mood, no readable text",
+     "type": "art"
+    },
+    "vo": "The twist? You get 30 days after buying to return the policy. Ask what the seller earns. This is not investment advice."
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of an elderly Indian man in a kurta on a balcony chair holding an old cloth file of papers, his grown son sitting beside him, gentle evening golden light, warm family mood",
+     "type": "art"
+    },
+    "vo": "Send this to your father, who thinks his insurance policy is pure savings."
+   }
+  ],
+  "thumbnail": {
+   "name": "INSURANCE",
+   "name_hi": "INSURANCE",
+   "scene": "A thick bundle of rupee notes sliding across an office desk into a stranger's hand while a family's insurance folder lies open beside it, dramatic warm light.",
+   "words": [
+    "60%",
+    "TRAP?"
+   ],
+   "words_hi": [
+    "60%",
+    "TRAP?"
+   ]
+  },
+  "title": "Who really gets your first *premium*? 😳"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  3.719,
+  8.644,
+  13.032,
+  16.794,
+  21.14,
+  26.967,
+  34.223
+ ],
+ "topic": {
+  "category": "sensation",
+  "from_bank": true,
+  "history": true,
+  "hooks": [
+   "Pehle saal ke premium ka kitna hissa commission hai?",
+   "Policy 3 saal baad band ki toh kitna wapas milta hai?"
+  ],
+  "id": "mh-lic-agent-commission",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "",
+   "options": [
+    {
+     "closing": "",
+     "question": "A couple thought every rupee was building their daughter's future. But in year one, someone else walked away with up to 60 percent.",
+     "text": "A couple thought every rupee was building their daughter's future. But in year one, someone else walked away with up to 60 percent.",
+     "words": 23
+    },
+    {
+     "closing": "",
+     "question": "Up to 60 percent of your first-year premium may never reach your child's future. So who is really collecting it, and why?",
+     "text": "Up to 60 percent of your first-year premium may never reach your child's future. So who is really collecting it, and why?",
+     "words": 22
+    },
+    {
+     "closing": "",
+     "question": "The agent was a family friend, so saying no felt rude. That one polite yes may have cost this couple far more.",
+     "text": "The agent was a family friend, so saying no felt rude. That one polite yes may have cost this couple far more.",
+     "words": 22
+    },
+    {
+     "closing": "",
+     "question": "Every rupee grows for our daughter, they believed. But in year one, a huge chunk of their premium went to someone else.",
+     "text": "Every rupee grows for our daughter, they believed. But in year one, a huge chunk of their premium went to someone else.",
+     "words": 22
+    },
+    {
+     "closing": "",
+     "question": "Your family friend smiled, you signed, and nobody mentioned who got paid first. Which part of your premium never went toward savings?",
+     "text": "Your family friend smiled, you signed, and nobody mentioned who got paid first. Which part of your premium never went toward savings?",
+     "words": 22
+    }
+   ],
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: close-up of a thick insurance policy folder and a neat stack of rupee notes being slid across a glass office desk by one hand toward another, denominations not visible, warm afternoon window light. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a royal blue blazer over a white shirt. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "A couple thought every rupee was building their daughter's future. But in year one, someone else walked away with up to 60 percent.",
+   "text": "A couple thought every rupee was building their daughter's future. But in year one, someone else walked away with up to 60 percent.",
+   "words": 23
+  },
+  "summary": "How commission on a traditional life policy is paid across the years, what the surrender value is in the first years, and the 2024 rules that raised it. The regulator's published limits as source.",
+  "target_minutes": null,
+  "theme": "insurance",
+  "title": "Policy ka pehla premium: agent ko kitna jaata hai",
+  "topic_score": 8,
+  "topic_score_why": [
+   "+3 touches the viewer's own money",
+   "+3 a scare or a crash",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "voice": "voice_g8azc8xcwhlu",
+  "weekly": true
+ },
+ "updated": "2026-11-19T22:32:46+00:00",
+ "writer": "claude"
+}
