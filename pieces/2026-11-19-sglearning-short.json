@@ -95,6 +95,9 @@
    "voice": 8
   },
   "drafts": 2,
+  "ig_reel_id": "18110933915353350",
+  "ig_story_id": "18119427329113307",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-19-sglearning-short.mp4",
    "clip_seconds": 1,
@@ -105,6 +108,8 @@
   "intro_sent": "2026-11-12T21:37:36+00:00",
   "out_sha": "ff0610adecea9645f03d7283a83a9b379aef771b",
   "out_sha_intro": true,
+  "threads_id": "18039713921892795",
+  "threads_poll_id": "18120064322002865",
   "yt_id": "TzYGGcFXP-E"
  },
  "kind": "short",
@@ -254,7 +259,7 @@
   },
   "title": "Videsh ka *sasta* udhaar, asli mein kitna sasta? 💵"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   4.358,
@@ -290,6 +295,6 @@
   ],
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-11-13T08:58:57+00:00",
+ "updated": "2026-11-19T16:22:03+00:00",
  "writer": "claude"
 }
