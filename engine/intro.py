@@ -555,12 +555,27 @@ def request_text(piece, p: dict) -> str:
                + "\n".join(f"{k}. {'⭐ ' if k == 1 else ''}\"{o['text']}\"" for k, o in enumerate(opts, 1)))
     else:
         say = f"Say exactly ({p['words']} words, ~10 s):\n\"{p['text']}\""
-    text = (f"🎬 Intro for {piece.id} ({kind}: {title})\n\n{say}\n\nPrompt:\n{p['prompt']}\n\n"
+    # 19 Nov 2026: with five hooks a long video's request ran to 4,750 characters and Telegram cut it at 4,000, so the thumbnail prompt
+    # arrived half-written. The caption and deadline now come before the prompt, and the thumbnail goes as its own message.
+    return (f"🎬 Intro for {piece.id} ({kind}: {title})\n\n{say}\n\n"
             f"Send the clip as a FILE (paperclip → File) with the caption:\nintro {piece.id}\n\nBy {_wat(deadline_utc(piece))}. Nothing goes "
-            f"out without it: a late clip publishes as soon as it is merged.")
+            f"out without it: a late clip publishes as soon as it is merged.\n\nPrompt:\n{p['prompt']}")
+
+
+TELEGRAM_ROOM = 3900                        # Telegram cuts a message at 4,096 characters; engine/telegram.py sends 4,000
+
+
+def request_messages(piece, p: dict) -> list:
+    """What the founder is sent, each item its own Telegram message: the clip request (split before the prompt if it would be cut),
+    and for a long video the thumbnail prompt on its own (founder, 19 Nov 2026: "separate thumbnail ... a separate message")."""
+    text = request_text(piece, p)
+    out = [text]
+    if len(text) > TELEGRAM_ROOM:
+        head, _, prompt = text.partition("\n\nPrompt:\n")
+        out = [head, f"🎬 Prompt for {piece.id}:\n{prompt}"]
     if piece.kind == "long":
-        text += "\n\n" + thumb_prompt(piece)
-    return text
+        out.append(thumb_prompt(piece))
+    return out
 
 
 def pending_lines(root: Path, now: datetime | None = None) -> list:
@@ -879,7 +894,7 @@ def request(piece, root: Path, notify, ask=_ask_claude, now: datetime | None = N
     if not (piece.topic or {}).get("intro"):
         piece.topic["intro"] = plan(piece, ask)
     if not piece.ids.get("intro_sent"):
-        notify(request_text(piece, piece.topic["intro"]))
+        [notify(m) for m in request_messages(piece, piece.topic["intro"])]
         piece.ids["intro_sent"] = (now or datetime.now(timezone.utc)).isoformat(timespec="seconds")
     return piece.topic["intro"]
 
