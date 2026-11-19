@@ -641,6 +641,25 @@ def test_the_founder_gets_hooks_written_to_his_brief_and_any_of_them_is_accepted
     assert len(quiet["options"]) == 1 and quiet["closing"] and "Say exactly" in intro.request_text(p, quiet)
 
 
+def test_the_writer_is_asked_again_until_five_hooks_fit(tmp_path):
+    """Founder, 19 Nov 2026: 'Why only 1 option script for founder, we decided for 5 minimum'."""
+    import json as _json
+    p = _piece("long", "arthvan"); p.script["hook"] = "Valmiki Ramayan mein Lakshman Rekha hai hi nahi?"
+    w = lambda n, tag: " ".join([tag] + ["shabd"] * (n - 1))
+    replies = iter(["not json at all",
+                    _json.dumps({"hooks": [w(21, "a"), w(30, "long"), w(22, "b")], "strongest": 0}),
+                    _json.dumps({"hooks": [w(20, "c"), w(23, "d"), w(22, "e"), w(21, "f")], "strongest": 1})])
+    asked = []
+    def ask(prompt):
+        if "opening hooks" not in prompt:
+            return ""
+        asked.append(prompt)
+        return next(replies)
+    opts = intro.plan(p, ask=ask)["options"]
+    assert len(opts) == 5 and opts[0]["text"].startswith("a ") and all(20 <= o["words"] <= 23 for o in opts)
+    assert len(asked) == 3 and "rejected for their word count" in asked[2] and "(30 words)" in asked[2] and "do not repeat" in asked[2]
+
+
 def test_resend_plans_afresh_and_asks_again_only_while_waiting(tmp_path):
     (tmp_path / "pieces").mkdir()
     p = _piece("short", "arthvan"); p.status = "intro-wait"

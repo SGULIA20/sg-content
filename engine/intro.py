@@ -235,6 +235,7 @@ def plan(piece, ask=_ask_claude) -> dict:
 
 HOOK_WORDS = (20, 23)                       # founder, 17 Nov 2026 ("yes, use this prompt"): every hook is 20-23 words, about 10 seconds
 HOOKS = 5
+HOOK_TRIES = 4
 
 # The founder's own brief for the opening hook (17 Nov 2026), kept in his words; only the language line and the reply format are added.
 HOOK_BRIEF = """Act as an expert YouTube Shorts scriptwriter specialising in {field}.
@@ -281,20 +282,31 @@ def options(piece, first: dict, ask=_ask_claude) -> list:
         else "mythology, Indian history, mysteries and untold stories",
         tongue="plain Indian English (no Hindi words)" if en else "natural spoken Hinglish in Latin script",
         n=HOOKS, lo=lo, hi=hi, summary=_summary(piece))
-    hooks, best = [], 0
-    try:
-        if ask is _ask_claude:                                        # the bridge call's small allowance returns nothing for a list
-            from . import teaser
-            raw = teaser.intro_ask()(brief)
-        else:
-            raw = ask(brief)
-        data = _json.loads(re.search(r"\{.*\}", raw, re.S).group(0))
-        hooks = [spoken(str(x).strip(), en) for x in data.get("hooks", []) if str(x).strip()]
-        best = int(data.get("strongest") or 0)
-    except Exception as e:
-        print(f"intro hooks: none from the writer ({type(e).__name__}: {secrets.scrub(str(e))[:100]}); the planned line is used", flush=True)
-    strongest = hooks[best] if 0 <= best < len(hooks) else None
-    good = [h for h in hooks if lo <= len(h.split()) <= hi]
+    # founder, 19 Nov 2026 ("why only 1 option ... we decided for 5 minimum"): one reply rarely has five hooks of the right length (the
+    # writer miscounts words), and a failed or cut-off reply left the planned line alone. Asked again, with the misses named, until five fit.
+    good, strongest, prompt = [], None, brief
+    for attempt in range(HOOK_TRIES):
+        hooks, best = [], None
+        try:
+            if ask is _ask_claude:                                    # the bridge call's small allowance returns nothing for a list
+                from . import teaser
+                raw = teaser.intro_ask()(prompt)
+            else:
+                raw = ask(prompt)
+            data = _json.loads(re.search(r"\{.*\}", raw, re.S).group(0))
+            hooks = [spoken(str(x).strip(), en) for x in data.get("hooks", []) if str(x).strip()]
+            best = int(data.get("strongest") or 0)
+        except Exception as e:
+            print(f"intro hooks, try {attempt + 1}: none from the writer ({type(e).__name__}: {secrets.scrub(str(e))[:100]})", flush=True)
+        if strongest is None and best is not None and 0 <= best < len(hooks) and lo <= len(hooks[best].split()) <= hi:
+            strongest = hooks[best]
+        good += [h for h in hooks if lo <= len(h.split()) <= hi and h not in good]
+        if len(good) >= HOOKS:
+            break
+        missed = [f'"{h}" ({len(h.split())} words)' for h in hooks if not lo <= len(h.split()) <= hi][:5]
+        prompt = (brief + f"\n\nYou already wrote these and they are kept, do not repeat them: {_json.dumps(good, ensure_ascii=False)}.\n"
+                  + (f"These were rejected for their word count: {'; '.join(missed)}.\n" if missed else "")
+                  + f"Write {HOOKS} MORE new hooks. Count every word of each hook before you answer: {lo} at least, {hi} at most.")
     if strongest in good:
         good.remove(strongest); good.insert(0, strongest)
     out = [{"text": h, "question": h, "closing": "", "words": len(h.split())} for h in dict.fromkeys(good)][:HOOKS]
