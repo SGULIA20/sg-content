@@ -115,7 +115,15 @@
    "voice": 8
   },
   "drafts": 1,
-  "intro_sent": "2026-11-18T22:30:09+00:00"
+  "intro": {
+   "clip": "2026-11-25-sglearning-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-19T10:59:38+00:00",
+   "seconds": 7.95
+  },
+  "intro_checked": "0cab0704ffcdb124",
+  "intro_sent": "2026-11-18T22:30:09+00:00",
+  "yt_id": "qKQHejtZExQ"
  },
  "kind": "short",
  "publish_day": "2026-11-25",
@@ -272,7 +280,7 @@
   },
   "title": "One tax notice killed 8,000 *jobs* 🏭"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   4.937,
@@ -333,6 +341,7 @@
    "text": "Your EMI feels safe because your employer is huge. But eight thousand Nokia workers learned a lesson from a fight they never saw.",
    "words": 23
   },
+  "look": "claymation",
   "summary": "The Nokia plant near Chennai, once among the largest phone factories in the world, shut in 2014 after a tax dispute kept it out of the sale to Microsoft. What a factory town loses when a plant closes. Court and company records.",
   "target_minutes": null,
   "theme": "business",
@@ -348,6 +357,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-18T22:30:21+00:00",
+ "updated": "2026-11-19T10:59:45+00:00",
  "writer": "claude"
 }
