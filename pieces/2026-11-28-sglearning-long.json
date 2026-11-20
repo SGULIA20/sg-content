@@ -1,0 +1,1000 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 3.0,
+   "quote": "GST is payable @ 3% with effect from 01.07.2017.",
+   "source_date": "2017-07-01",
+   "source_name": "GST Council",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaBbgLWqmmNgg-pzKFFCmgRfOZ0mRH4kEdMOtphC6t1bdaKyKelxD1vyuGj3OeTEMUVKsV1FzDpK4C3xMy2U8bgaaqx28UA3V5gDeGHs7mEnJLYKnsdZ2rBA8x3vo-kqEfKk0y0ZazNn59j6F8C1-nFAMoYia8WOstrYsA0AN9XSc3AaHvjx4vup1RR8BI",
+   "text": "The Goods and Services Tax on physical gold purchases, bars, coins, and jewellery metal value is fixed at 3 percent.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 5.0,
+   "quote": "A 3% GST is charged on the value of gold, while gold jewellery also attracts 5% GST on making charges.",
+   "source_date": "2026-06-04",
+   "source_name": "Angel One",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqvKpSrj0nB7C-Kzd9W6f0B-16pt5Z0dmj_1_gqGpVDgsK90L8KndumMnGgFqS8oTpiZfKBZh_4xbTP-8rrGZz2VNLGhFTmIOyv4V42UaZIEN6E6aQSG0qJJOfIbengMvMkCyvKK6PLYcC3nEjNkWTN9cq3-s=",
+   "text": "Making charges on gold jewellery attract a separate Goods and Services Tax rate of 5 percent.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 75.0,
+   "quote": "The hallmarking fee for gold has been increased from 45 to 75 rupees per article, while the charge for silver remains unchanged at 35 rupees per article.",
+   "source_date": "2026-09-16",
+   "source_name": "Akashvani News - Newsonair",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMlfNnlIqvftXmE2R404A_Yygzt2Zk7k0Vg-1KfMT9aZD-4yT_rsORqfRsE4qMaUHn9SbQXJAIphBL1oY5JWhWirwCxtXMd2HzcV7Jeg7-3A0mjISqF-2ACdNoYaOq14RA73gYIB2qFAqVlp7sy4tMSEFHC_cQlQSO2RXXfTjayA==",
+   "text": "The Bureau of Indian Standards revised the mandatory hallmarking fee for gold jewellery items to 75 rupees per article.",
+   "unit": "INR"
+  },
+  {
+   "label": "reported",
+   "number": 6.0,
+   "quote": "6 digit alphanumeric HUID- HALLMARK UNIQUE IDENTIFICATION.",
+   "source_date": "2026-11-18",
+   "source_name": "Wikipedia",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaoNpYTXZFIwv4wvnavJVRyyzqqdIjR-AG2Oj_MOTmlgkwCp7_xGxxQDbBR-mtBRdrYEHQpfmspSOUBo1ZMUAOUc1F23RY6OblB4NAzsqe5HtFHm4VIlf0N1XKDAS_KUk=",
+   "text": "Mandatory gold hallmarking under the Bureau of Indian Standards requires every piece of jewellery to carry a unique 6-digit alphanumeric code.",
+   "unit": "digit alphanumeric code"
+  },
+  {
+   "label": "official",
+   "number": 65.0,
+   "quote": "Since Mandatory gold hallmarking was introduced in 2021, over 65 crore gold ar=cles have received Hallmark Unique Iden=fica=on (HUID) numbers as of 15 October 2026.",
+   "source_date": "2026-11-05",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGhU027EOBdcGtxhB_cEmZ_zk2FKMTW7ChAKZ__9JlVT0-TKIfs2OBZofjfwZfC0JnUG8MbURjeUZ8ahpVAwxowfExfSQLDJDsemnt5xYsO3kbriw5dyqUUs2ZchZ2SNqwChnraJPQl4pXVOZMh5Cu-0wAj7rzgUX73rvzd-K9IpUES2MPKqrSkmV5hCPXxVoleB5dHlpMCzh8lmWHB",
+   "text": "Over 65 crore gold articles have received Hallmark Unique Identification numbers in India since mandatory hallmarking was introduced in 2021.",
+   "unit": "crore articles"
+  },
+  {
+   "label": "reported",
+   "number": 0.0,
+   "quote": "Gold ETFs and Sovereign Gold Bonds remain GST-free.",
+   "source_date": "2026-06-04",
+   "source_name": "Angel One",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqvKpSrj0nB7C-Kzd9W6f0B-16pt5Z0dmj_1_gqGpVDgsK90L8KndumMnGgFqS8oTpiZfKBZh_4xbTP-8rrGZz2VNLGhFTmIOyv4V42UaZIEN6E6aQSG0qJJOfIbengMvMkCyvKK6PLYcC3nEjNkWTN9cq3-s=",
+   "text": "Purchases of gold exchange-traded fund units are entirely exempt from the goods and services tax levied on physical jewellery.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 0.68,
+   "quote": "The expense ratio of the underlying scheme viz. SBI Gold ETF for F.Y. 2024-25 is 0.68%.",
+   "source_date": "2025-10-31",
+   "source_name": "AMFI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZSjub9R2-hOe7lh-98IIdZ5af1HiUoo7RaDuj3LKtBu-XOuDgc11jdCVveis4bln20lMq8KOuMZ9Hl_l3BIfMS1gdILEnlRzfU0QBau4N3rTOnzvarQADnZXrkudi9F3hmQ==",
+   "text": "The annual total expense ratio charged by an exchange-traded gold fund was reported at 0.68 percent for financial year 2024-25.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 12.5,
+   "quote": "Finance Minister proposed that the long term gains on all financial and non-financial assets will attract a tax rate of 12.5 per cent.",
+   "source_date": "2024-07-23",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH02X-nnMzwIMKS-6HTkUZU8PPzjmZB55hm-XHHdvsHpUBh2wtpS_n6dq3xrxONoZ8EEwOH6_rtnd2n-LR5JFOhmEhjzPw_uIQG4MtiDFsKDiYqijUOFIm7xVKWyNGjotlxEItUxCSI-qvtg40hsCi5Qgi2kZQ=",
+   "text": "The long-term capital gains tax rate on physical gold and jewellery profits is established at 12.5 percent without indexation.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 24.0,
+   "quote": "The holding period of gold, unlisted securities (other than unlisted shares) is also reduced from 36 months to 24 months.",
+   "source_date": "2024-07-24",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFeUpyF7vT6014nncPu9hUF6QwsZUoUDIsMZmAZ7hzI0-6QbPdWUQyLGynCFgw2xxypPN_sQYzr4f3LAj_MKL5oJ44gqETbXg8kQvPuGk4GyZNmBG2j2GA82px0AWKf0FIJPFj7-n_tBcbkJtdrhM8741qqOZQ=",
+   "text": "The statutory minimum holding period required for gold to qualify for long-term capital gains tax treatment has been reduced to 24 months.",
+   "unit": "months"
+  }
+ ],
+ "id": "2026-11-28-sglearning-long",
+ "ids": {
+  "budget": {
+   "day": "2026-11-20",
+   "drafts": 2,
+   "research": 1
+  },
+  "cost": {
+   "inr": 100.5,
+   "usd": 0.399166,
+   "voice": 66
+  },
+  "drafts": 2,
+  "intro_sent": "2026-11-20T22:01:19+00:00"
+ },
+ "kind": "long",
+ "publish_day": "2026-11-28",
+ "reasons": [
+  "try 1: numbers without a source: 10",
+  "waiting for the founder's intro clip until 28 Nov 10:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "You paid for gold. How much gold actually came home?\nMaking charges and GST never become metal.\nAt resale, many jewellers pay only for the gold inside.\nIn your family, is gold for wearing or for saving?\nThis is not investment advice.\nSend this to your mother, who is planning the wedding jewellery this season.",
+    "hashtags": [
+     "#LearningWithSG",
+     "#PersonalFinanceIndia",
+     "#GST",
+     "#PaiseKiKhabar",
+     "#InvestingIndia",
+     "#MoneyTipsHindi"
+    ]
+   },
+   "threads": {
+    "text": "You paid for gold jewellery. How much of it was actually gold? Making charges and GST never come back when you sell. In your family, is gold for wearing or for saving? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 The 1 lakh question",
+     "00:00 Where your money goes",
+     "00:00 What comes back when you sell",
+     "00:00 Coin, jewellery or ETF",
+     "00:00 The mistake and what to do"
+    ],
+    "description": "You paid for gold jewellery, but how much of it is real gold? Making charges, GST on the gold and GST on the making charge never become metal, and at resale many jewellers pay only for the gold inside. We break the bill line by line and compare jewellery, gold coins and gold ETFs, plus hallmark checks and the tax rule on selling.\nSend this to your mother, who is planning the wedding jewellery this season.",
+    "tags": [
+     "gold jewellery",
+     "making charges",
+     "gold GST",
+     "gold ETF",
+     "gold coin",
+     "hallmark",
+     "HUID",
+     "gold buyback",
+     "wedding gold",
+     "gold tax",
+     "personal finance India"
+    ],
+    "title": "Gold Jewellery Bill: How Much Is Real Gold?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "In your family, is gold for wearing or for saving?",
+  "hook": "You paid the jeweller for gold. So how much gold actually came home?",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "The 1 lakh question",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a heavy gold bridal necklace resting on deep red velvet inside an Indian jewellery shop, warm showroom light glinting on the metal, a calm polished wooden counter filling the lower part of the frame, no text",
+     "type": "art"
+    },
+    "vo": "You paid the jeweller for gold. So how much gold actually came home? Not the bill, not the box. The real metal you can sell tomorrow."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary view of an Indian family seen from behind at a jewellery shop counter, a smiling salesman across the glass showing trays of gold necklaces, bright evening showroom light, calm marble floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Most families never ask this question. The jeweller smiles, and the bill shows the total. Everyone believes all of it went into gold."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a small brass jeweller's weighing scale holding a gold necklace, a neat stack of folded banknotes seen edge-on beside it, soft side light, plain dark wooden counter in the lower fifth, no readable text",
+     "type": "art"
+    },
+    "vo": "But here is the twist. A real slice of that money never becomes gold. It goes to making charges and GST, on the very first day."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an old Indian jeweller's workbench with a gold necklace being placed into a small clay melting crucible, glowing embers nearby, dim workshop light, calm stone floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "And the day you sell, that part simply disappears. Many jewellers pay you only for the metal. The rest is gone forever, and almost nobody notices."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary photograph of an Indian bride's hands adorned with gold bangles and rings, red saree fabric around them, warm golden evening light, soft blurred background, calm fabric folds in the lower fifth",
+     "type": "art"
+    },
+    "vo": "So is jewellery a bad buy? Not at all. A wedding necklace is love, tradition and pride. But is it also a smart way to save?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of a busy Indian jewellery market street at dusk, strings of marigold and fairy lights over shop fronts, families walking in from a distance, calm paved street in the lower fifth, no signboards readable",
+     "type": "art"
+    },
+    "vo": "Wedding season has just started after Dev Uthani. Families across India are walking into jewellery shops right now. This question touches almost every Indian home."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a quiet Indian living room in the evening, a jewellery box lying open on a low wooden table beside a cup of chai, warm lamp light, calm carpet in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Today, 3 questions. First, where does your money actually go on the bill? Then, what do you really get back when you sell?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic still life of a gold coin, a small gold bar and a gold necklace laid side by side on a dark wooden table, soft window light, calm dark tabletop in the lower fifth, no markings readable",
+     "type": "art"
+    },
+    "vo": "And last, if gold is savings, is there a smarter way? Coin, jewellery or a gold ETF? Stay till the end, the answer surprises most people."
+   },
+   {
+    "facts_used": [],
+    "label": "Where your money goes",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary view of a middle-aged Indian woman in a cotton saree walking through a crowded jewellery bazaar, a cloth purse held close, afternoon light, calm paved lane in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Picture a mother in a busy jewellery market. Her daughter's wedding is coming soon. She has saved slowly, over many months, for a single necklace."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a jeweller's hands placing a gold necklace on a small electronic-free brass balance scale, a paper bill pad and pen beside it out of focus, warm shop light, calm counter in the lower fifth",
+     "type": "art"
+    },
+    "vo": "She picks a design she loves. The jeweller weighs it and checks today's gold rate. Then he starts writing the bill, line by line."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic macro view of raw gold granules and a small gold bar on a velvet tray, glowing under a focused lamp, dark background, calm velvet surface in the lower fifth",
+     "type": "art"
+    },
+    "vo": "The first line is the gold itself. Weight multiplied by today's rate. This is the only part that is real metal, the part you own."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary view of an Indian goldsmith in a small workshop bent over a wooden bench, shaping a delicate gold piece with fine tools, a single lamp lighting his hands, calm wooden floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Next comes the making charge. That is the fee for the craftsman's work: cutting, shaping, polishing and design. Here is the catch. There is no fixed rate."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic side-by-side view on black velvet of a plain thin gold chain and an intricate gold temple-style necklace with fine filigree, soft studio light, calm velvet in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Some jewellers charge it per gram. Others charge a percentage of the gold value. A fine, detailed necklace costs far more to make than a plain chain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a goldsmith's fingers polishing an ornate gold pendant with a soft cloth, fine dust of polish on the bench, warm light, calm wooden bench surface in the lower fifth",
+     "type": "art"
+    },
+    "vo": "And notice this. The making charge buys you beauty, not gold. Not a single gram of metal comes from that money. Remember this line."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a stack of small gold bars and gold coins on a bank-style counter behind thick glass, cool daylight, calm grey counter surface in the lower fifth, no markings readable",
+     "type": "art"
+    },
+    "vo": "Then comes GST. On the value of the gold, GST is 3 percent. The GST Council fixed this rate, and it applies to coins and bars too."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary view of a goldsmith's workshop seen through a doorway, the craftsman working under a lamp while a shop owner stands counting cash nearby, evening light, calm floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "But the making charge has its own GST. As reported, it is 5 percent, charged separately. So you pay tax on the craftsman's fee too."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a woman's hand holding a folded paper bill above a jewellery shop counter, the writing blurred and unreadable, a gold necklace in an open box below, warm light, calm counter in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Add it all up and you get the final bill. Now ask the real question, the one nobody asks. How much of that is actually gold?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic still life of a small heap of pure gold grains on one side of a balance and nothing on the other, dark background, focused light, calm dark surface in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Here is the answer. Only the first line. The gold value. Everything else, the making charge and both GST lines, is cost, not metal."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a heavy Indian bridal jewellery set with necklace, earrings and maang tikka displayed on a velvet bust in a showroom, rich warm light, calm display shelf in the lower fifth",
+     "type": "art"
+    },
+    "vo": "On a plain chain, the cost part stays small. On a heavy, detailed bridal set, it can eat a big slice of your savings."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of two gold necklaces of similar size on a jeweller's tray, one simple and smooth, one richly carved, soft showroom light, calm tray surface in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Necklaces of the same weight can carry very different bills. The gold inside is equal. The craftsmanship is not, and you pay for that difference."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an Indian restaurant table with a thali being served by a waiter, a chef visible in the kitchen behind, warm evening light, calm tablecloth in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Think of it like a restaurant meal. You pay for the food, but also the chef, the service and the tax. Only the food fills your stomach."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary photograph of an Indian wedding courtyard at night, women in silk sarees and gold jewellery laughing together, marigold decorations and lamps, calm courtyard floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Jewellery works the same way. You enjoy the craftsman's work for years, at weddings and festivals. For a family, that has real value."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an old steel almirah in an Indian bedroom with its locker drawer half open, a velvet jewellery pouch inside, dim afternoon light through curtains, calm floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "But money-wise, only the gold travels with you into the future. So what happens when you sell? This is where the real shock begins."
+   },
+   {
+    "facts_used": [],
+    "label": "What comes back when you sell",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary view of a hospital corridor in India with a worried family seated on a bench, seen from a distance, cool morning light, calm tiled floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Fast forward a few years. The family needs money for a hospital bill, or a child's college fees. The necklace goes back to the shop."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a jeweller rubbing a gold necklace on a black touchstone to test purity, a woman's hands resting nervously on the counter, warm shop light, calm counter in the lower fifth",
+     "type": "art"
+    },
+    "vo": "The jeweller weighs it again and tests the purity. Then he checks today's gold rate and makes an offer. The mother waits, hopeful."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a gold necklace being cut apart with small pliers on a jeweller's bench, scraps of gold beside it, harsh work lamp, calm wooden bench in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Usually, the offer is only for the gold inside. The making charge she paid? Gone. The GST on that making charge? Also gone."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a jewellery shop counter at closing time, an empty velvet tray and a closed cash drawer, lights dimming, calm marble floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "And the 3 percent GST on the gold? That does not come back either. Tax paid on a purchase is not refunded to you when you sell."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary view of a woman walking out of a jewellery shop doorway onto a busy street, seen from behind, a small gift bag in hand, late afternoon light, calm pavement in the lower fifth",
+     "type": "art"
+    },
+    "vo": "So the cost part of your bill vanished on the very first day. The moment you walked out of the shop, it was lost."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of molten gold being poured from a glowing crucible into a small mould in a traditional Indian workshop, sparks and heat haze, calm stone floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "There can be another cut too. Some jewellers deduct a small amount for melting or purity loss. Ask about this before you buy, not after."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of a steep winding mountain road in the Indian hills at sunrise, a lone traveller walking uphill, calm valley mist in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Now, the gold price may rise over those years. That rise can cover the loss. But first it must rise just to get you back to where you started."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an empty running track starting line at dawn in an Indian stadium, a steep grassy slope behind it, soft light, calm track surface in the lower fifth",
+     "type": "art"
+    },
+    "vo": "That is the hidden trap. Your jewellery must climb a hill before it even reaches the starting line. A plain coin starts much closer."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a jeweller's eye loupe resting on an old gold bangle, a magnified sheen on the metal, dark background, calm velvet in the lower fifth",
+     "type": "art"
+    },
+    "vo": "But wait, selling has a second risk. What if the gold is not as pure as the bill said? Who decides the purity at the counter?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an elderly Indian woman's wrinkled hands opening an old cloth bundle holding antique gold bangles, soft window light in a village home, calm mud floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "For years, old family jewellery carried no proof of purity. The buyer tested it, and the family simply had to trust his word."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic macro view of the inner side of a gold ring showing tiny stamped marks, too small to read, under a jeweller's lamp, dark background, calm surface in the lower fifth",
+     "type": "art"
+    },
+    "vo": "This is why hallmarking matters. Every hallmarked piece now carries a unique code called HUID. It works like an Aadhaar number for your jewellery."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary view of a clean testing laboratory where a technician in a white coat examines gold jewellery with precision equipment, bright neutral light, calm tiled floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Hallmarking is run by BIS, the Bureau of Indian Standards. An approved centre tests the gold and stamps its purity right on the piece."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of long rows of gold jewellery trays stacked in a large hallmarking centre, workers at benches in the distance, even daylight, calm floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Hallmarking is now mandatory, and the scale is huge. Over 65 crore gold pieces have received this code. That is the government's count, as of this October."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a customer holding a magnifying glass over the clasp of a gold necklace at a shop counter, markings too small to read, warm light, calm counter in the lower fifth",
+     "type": "art"
+    },
+    "vo": "So before you pay, look for these marks on the piece. The BIS logo, the purity grade, and the HUID code. Match the code with your bill."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a young Indian woman at a jewellery counter calmly comparing a gold bangle with a paper receipt, phone face down on the glass, soft showroom light, calm counter in the lower fifth",
+     "type": "art"
+    },
+    "vo": "You can check the HUID yourself on the BIS Care app. It shows the purity and the jeweller who registered that piece."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a gold pendant lying alone on a jeweller's scale pan at a buyback counter, a melting furnace glowing softly in the background, calm counter in the lower fifth",
+     "type": "art"
+    },
+    "vo": "A hallmark protects your purity. But it does not protect your making charge. That money is still lost the day you sell."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a closed bank locker room in India with rows of steel lockers, a single overhead light, calm polished floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "So if you buy gold only to save, is there a smarter way to hold it? Here is where most people get surprised."
+   },
+   {
+    "facts_used": [],
+    "label": "Coin, jewellery or ETF",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary view of a young Indian brother and sister walking together out of an office building at dusk, seen from a distance, city lights coming on, calm pavement in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Picture a brother and a sister. Both get a bonus at work, and both want gold. She wants to wear it. He only wants to save."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a young Indian woman in a festive silk saree fastening gold earrings in front of a mirror, seen from behind, warm Diwali lamp light, calm floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "For the sister, jewellery makes sense. She will wear it at every wedding and festival. The making charge is the price of beauty she enjoys."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of water dripping from a cracked earthen pot onto dry ground in an Indian courtyard, morning light, calm ground in the lower fifth",
+     "type": "art"
+    },
+    "vo": "But for the brother, the making charge is pure leakage. Leakage means money that drips out and never becomes an asset. So what are his choices?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic still life of a single plain gold coin and a small gold bar in a velvet case, no readable markings, soft window light, calm velvet in the lower fifth",
+     "type": "art"
+    },
+    "vo": "First, a gold coin or a small bar. Plain metal, with very little design work. So the making cost is usually much lower than on jewellery."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a gold coin on a jeweller's touchstone being tested, the jeweller's hands in focus, warm light, calm counter in the lower fifth",
+     "type": "art"
+    },
+    "vo": "But a coin still pays the same GST on the gold. And at resale, a buyer may still cut a little. Smaller leak, but still a leak."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a secure bullion vault with neat stacks of gold bars on metal shelves, cool controlled light, calm vault floor in the lower fifth, no markings readable",
+     "type": "art"
+    },
+    "vo": "Then, a gold ETF. ETF means exchange traded fund. It is a fund that buys real gold and splits it into small units."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a young Indian man sitting at a home desk by a window with a cup of tea, a laptop closed in front of him, thinking, morning light, calm wooden floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "You buy these units on the stock market, like a share. You need a demat account, your online locker for shares. Each unit follows the gold price."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of an empty jewellery box lying open beside an unlocked, empty steel locker drawer in a calm Indian home, soft light, calm floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Here is the big difference. There is no making charge at all. And buying gold ETF units attracts no GST, as reported. No locker, no theft worry."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a modern fund office in Mumbai with people working at desks, large windows showing the city skyline, soft daylight, calm floor in the lower fifth, no screens visible",
+     "type": "art"
+    },
+    "vo": "So what does an ETF cost? A small yearly fee called the expense ratio. One large gold ETF reported a fee of 0.68 percent for a recent year."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a slow dripping tap filling a brass lota drop by drop in an Indian kitchen, morning light, calm stone counter in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Expense ratio simply means the fund's yearly running fee, taken quietly from your money. Small, but it adds up over many years."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a quiet empty jewellery buyback counter with an unused weighing scale and touchstone, soft evening light, calm floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "And selling is simple. You sell units on the market near the gold price. No weighing, no testing, no purity argument at the counter."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a small coin dropped into a toll collection box beside a busy Indian highway, the road stretching ahead, afternoon light, calm road surface in the lower fifth",
+     "type": "art"
+    },
+    "vo": "There may be a small brokerage, which is your broker's fee per trade. But it is nothing like losing a whole making charge."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a fork in a village road in India at golden hour, one path leading to a decorated wedding pandal, the other to a quiet bank building, calm dirt road in the lower fifth",
+     "type": "art"
+    },
+    "vo": "So which one wins? It depends on why you buy. For wearing and tradition, jewellery. For pure saving, the leak matters a lot."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an old wall clock in an Indian office corridor, files stacked on a bench beneath it, late afternoon light, calm floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "But even smart savers make one common mistake. It is not about the shop at all. It is about timing and tax. Let us see."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "The mistake and what to do",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a wall calendar-free room with seasons passing through a window, a gold bangle resting on the sill, warm light, calm floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Sell physical gold, jewellery or coins, at a profit, and tax applies. Hold it at least 24 months to count as long term."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an Indian income tax office building exterior in morning light, people walking in from a distance, calm forecourt in the lower fifth, no signboards readable",
+     "type": "art"
+    },
+    "vo": "Long term profit on gold is taxed at 12.5 percent, without indexation. Indexation means raising your cost for rising prices. Here, you do not get that."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary view of a worried Indian couple hurrying into a jewellery shop with a cloth pouch, seen from behind, overcast light, calm pavement in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Now the mistake. A family buys jewellery as savings. Then they sell it in a hurry. They lose the making charge, and any profit is taxed at their income slab."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic still life of a gold necklace on one side of an old brass balance and a clay piggy bank on the other, soft side light, calm wooden table in the lower fifth",
+     "type": "art"
+    },
+    "vo": "The real mistake is mixing beauty and savings in a single purchase. Jewellery is great for wearing. It is a costly way to save."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a jeweller writing on a paper bill with a pen at the counter, a customer's hand pointing at the paper, writing blurred and unreadable, warm light, calm counter in the lower fifth",
+     "type": "art"
+    },
+    "vo": "So what can you do? Before you buy, ask the jeweller to write the making charge as a separate line on the bill."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a customer and a jeweller talking across a glass counter, both seated, a calm and friendly mood, evening showroom light, calm floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Ask for the buyback terms in writing. How much will the shop deduct if you sell later? A good jeweller answers clearly."
+   },
+   {
+    "facts_used": [
+     3,
+     5
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a gold bangle, a plain gold coin and a paper receipt arranged neatly on a home table for comparison, morning window light, calm tablecloth in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Check the hallmark and the HUID on the BIS Care app. If you only want to save, compare coins and ETFs before jewellery."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an Indian woman sitting at a dining table with a folder of household papers and a gold pouch, thinking carefully, soft lamp light, calm floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Before selling physical gold, check if you have crossed 24 months. Rules and rates can change, so check the latest before you act."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a calm Indian home at dusk, a family sitting together on a sofa talking, warm lamp light, calm carpet in the lower fifth",
+     "type": "art"
+    },
+    "vo": "This is not investment advice. It is simply your bill, explained line by line, so you know where every rupee goes. Your choice, your reasons."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of the same gold bridal necklace from the opening, now in an open box on a home table beside a folded bill, soft evening light, calm table surface in the lower fifth",
+     "type": "art"
+    },
+    "vo": "So, you paid for gold. How much gold came home? Only the gold line on your bill. Everything else was the price of beauty."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary view of a mother and daughter walking arm in arm through a lit wedding-season jewellery bazaar, seen from behind, festive lights overhead, calm street in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Send this to your mother, who is planning the wedding jewellery this season. Let her read every line of the bill before paying."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of an Indian city street at night with jewellery shops glowing warmly, people passing, a quiet festive mood, calm wet road reflecting lights in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Now tell me in the comments. In your family, is gold for wearing or for saving? Next time, we decode another bill most of us never read."
+   }
+  ],
+  "thumbnail": {
+   "name": "GOLD",
+   "name_hi": "GOLD",
+   "scene": "LEFT: a heavy gleaming gold bridal necklace on red velvet in a bright Indian jewellery showroom; RIGHT: the same necklace melted down into a small plain gold lump on a jeweller's brass scale beside a glowing crucible.",
+   "words": [
+    "25%",
+    "TRAP"
+   ],
+   "words_hi": [
+    "25%",
+    "TRAP"
+   ]
+  },
+  "title": "You paid for gold. How much was real gold?"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  7.583,
+  15.376,
+  23.098,
+  31.838,
+  39.999,
+  48.32,
+  55.746,
+  64.33,
+  72.699,
+  79.917,
+  86.976,
+  96.635,
+  105.125,
+  112.458,
+  120.51,
+  127.835,
+  135.626,
+  143.649,
+  150.349,
+  157.87,
+  165.262,
+  173.753,
+  180.643,
+  188.133,
+  195.78,
+  203.406,
+  210.765,
+  216.555,
+  224.71,
+  232.903,
+  240.068,
+  248.067,
+  255.223,
+  263.624,
+  271.587,
+  279.685,
+  287.34,
+  293.442,
+  300.777,
+  307.521,
+  314.175,
+  321.59,
+  329.82,
+  337.182,
+  344.543,
+  352.562,
+  360.293,
+  369.06,
+  378.127,
+  385.517,
+  392.638,
+  399.289,
+  407.148,
+  414.978,
+  422.582,
+  431.802,
+  440.571,
+  447.93,
+  453.638,
+  459.374,
+  466.209,
+  472.702,
+  480.392,
+  487.212,
+  493.474
+ ],
+ "topic": {
+  "follows": "Gold and silver price videos dominate the viewer data. The wedding season is starting after Dev Uthani, when gold gets bought. It takes the choice angle, not a ",
+  "hooks": [
+   "1 lakh ka gold lene gaye, to kitne ka gold ghar aaya?",
+   "Gold sasta hua, phir bhi jewellery mehngi kyun padti hai?"
+  ],
+  "id": "wk-2026-11-28-sglearning-long",
+  "intro": {
+   "aspect": "16:9",
+   "bridge": "",
+   "closing": "",
+   "options": [
+    {
+     "closing": "",
+     "question": "A mother saves for months for her daughter's wedding necklace. The jeweller writes the bill, and one line buys no gold at all.",
+     "text": "A mother saves for months for her daughter's wedding necklace. The jeweller writes the bill, and one line buys no gold at all.",
+     "words": 23
+    },
+    {
+     "closing": "",
+     "question": "You pay the jeweller for gold, yet a slice of that money never becomes gold. Where does it quietly go on day one?",
+     "text": "You pay the jeweller for gold, yet a slice of that money never becomes gold. Where does it quietly go on day one?",
+     "words": 23
+    },
+    {
+     "closing": "",
+     "question": "Wedding season has just started after Dev Uthani. Families are walking into jewellery shops, but nobody asks how much real metal comes home.",
+     "text": "Wedding season has just started after Dev Uthani. Families are walking into jewellery shops, but nobody asks how much real metal comes home.",
+     "words": 23
+    },
+    {
+     "closing": "",
+     "question": "The necklace looks like pure gold, and the bill says so too. But the day you sell, one part simply vanishes. Which part?",
+     "text": "The necklace looks like pure gold, and the bill says so too. But the day you sell, one part simply vanishes. Which part?",
+     "words": 23
+    },
+    {
+     "closing": "",
+     "question": "Your jewellery bill has many lines, but only one is real metal you can sell tomorrow. Can you guess which line it is?",
+     "text": "Your jewellery bill has many lines, but only one is real metal you can sell tomorrow. Can you guess which line it is?",
+     "words": 23
+    }
+   ],
+   "prompt": "16:9 landscape, 1920x1080, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: close view of a heavy gold bridal necklace resting on deep red velvet inside an Indian jewellery shop, warm showroom light glinting on the metal, a calm polished wooden counter filling the lower part of the frame. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a royal blue blazer over a white shirt. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1920x1080.",
+   "question": "A mother saves for months for her daughter's wedding necklace. The jeweller writes the bill, and one line buys no gold at all.",
+   "text": "A mother saves for months for her daughter's wedding necklace. The jeweller writes the bill, and one line buys no gold at all.",
+   "words": 23
+  },
+  "patch_tries": 1,
+  "summary": "Takes ₹1 lakh spent on jewellery and shows how making charges, GST (3% on gold, 5% on making charges) and the resale cut shrink the real gold. Compares coin and gold ETF. Check current GST rates, BIS hallmark rules, and a jeweller's making-charge and buyback terms.",
+  "target_minutes": 12,
+  "title": "1 lakh ka gold khareeda, asli mein kitna gold mila?",
+  "topic_score": 6,
+  "topic_score_why": [
+   "+3 touches the viewer's own money",
+   "+1 a choice the viewer faces",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "voice": "voice_g8azc8xcwhlu",
+  "weekly": true
+ },
+ "updated": "2026-11-20T22:01:38+00:00",
+ "writer": "claude"
+}
