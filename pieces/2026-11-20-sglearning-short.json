@@ -55,6 +55,9 @@
    "voice": 16
   },
   "drafts": 1,
+  "ig_reel_id": "17983955640134677",
+  "ig_story_id": "18005429607011173",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-20-sglearning-short.mp4",
    "clip_seconds": 1,
@@ -65,6 +68,8 @@
   "intro_sent": "2026-11-13T21:09:14+00:00",
   "out_sha": "418c7760449c6d63cf28a2ffec34c59481e3c955",
   "out_sha_intro": true,
+  "threads_id": "18135846925706332",
+  "threads_poll_id": "17919345366537771",
   "voice_batch": {
    "lines": 8,
    "name": "batches/aznzfq4q603aol761opbwgx3d382p84fbqgh",
@@ -229,7 +234,7 @@
   },
   "title": "Shaadi ke *shagun* par bhi penalty? 💍"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   3.493,
@@ -270,6 +275,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-13T21:37:39+00:00",
+ "updated": "2026-11-20T16:23:14+00:00",
  "writer": "claude"
 }
