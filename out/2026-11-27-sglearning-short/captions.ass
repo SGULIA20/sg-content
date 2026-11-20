@@ -1,0 +1,45 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.46,Default,,0,0,0,,Forgot a foreign bank account in
+Dialogue: 0,0:00:02.46,0:00:03.55,Default,,0,0,0,,your tax return?
+Dialogue: 0,0:00:03.55,0:00:04.92,Default,,0,0,0,,10 lakh fine?
+Dialogue: 0,0:00:05.37,0:00:06.62,Default,,0,0,0,,You worked abroad,
+Dialogue: 0,0:00:06.62,0:00:07.62,Default,,0,0,0,,came home,
+Dialogue: 0,0:00:07.62,0:00:09.38,Default,,0,0,0,,and that small account is still
+Dialogue: 0,0:00:09.38,0:00:09.88,Default,,0,0,0,,open.
+Dialogue: 0,0:00:10.33,0:00:12.46,Default,,0,0,0,,Now a one-time scheme,
+Dialogue: 0,0:00:12.46,0:00:12.73,Default,,0,0,0,,FAST-DS,
+Dialogue: 0,0:00:12.73,0:00:15.39,Default,,0,0,0,,lets you declare foreign assets and
+Dialogue: 0,0:00:15.39,0:00:15.92,Default,,0,0,0,,pay up.
+Dialogue: 0,0:00:16.37,0:00:19.16,Default,,0,0,0,,So many people rushed to declare
+Dialogue: 0,0:00:19.16,0:00:20.17,Default,,0,0,0,,tiny accounts.
+Dialogue: 0,0:00:20.17,0:00:21.94,Default,,0,0,0,,A fee felt safer than a
+Dialogue: 0,0:00:21.94,0:00:22.70,Default,,0,0,0,,penalty.
+Dialogue: 0,0:00:22.70,0:00:24.22,Default,,0,0,0,,But here is the twist.
+Dialogue: 0,0:00:24.67,0:00:26.46,Default,,0,0,0,,The tax department now says:
+Dialogue: 0,0:00:26.46,0:00:28.52,Default,,0,0,0,,up to 20 lakh across all
+Dialogue: 0,0:00:28.52,0:00:29.54,Default,,0,0,0,,foreign accounts,
+Dialogue: 0,0:00:29.54,0:00:30.82,Default,,0,0,0,,no declaration.
+Dialogue: 0,0:00:31.27,0:00:31.96,Default,,0,0,0,,Condition:
+Dialogue: 0,0:00:31.96,0:00:34.23,Default,,0,0,0,,the money came from income you
+Dialogue: 0,0:00:34.23,0:00:35.37,Default,,0,0,0,,already showed,
+Dialogue: 0,0:00:35.37,0:00:37.19,Default,,0,0,0,,like your salary abroad.
+Dialogue: 0,0:00:37.19,0:00:39.24,Default,,0,0,0,,Then the 10 lakh penalty does
+Dialogue: 0,0:00:39.24,0:00:39.92,Default,,0,0,0,,not apply.
+Dialogue: 0,0:00:40.37,0:00:40.89,Default,,0,0,0,,The catch:
+Dialogue: 0,0:00:40.89,0:00:43.23,Default,,0,0,0,,count your highest balance last year,
+Dialogue: 0,0:00:43.23,0:00:44.01,Default,,0,0,0,,not today's.
+Dialogue: 0,0:00:44.01,0:00:46.35,Default,,0,0,0,,This is not investment advice.
+Dialogue: 0,0:00:46.80,0:00:48.16,Default,,0,0,0,,Send this to your friend who
+Dialogue: 0,0:00:48.16,0:00:49.98,Default,,0,0,0,,still has a bank account abroad.

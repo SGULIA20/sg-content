@@ -1,0 +1,320 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 20.0,
+   "quote": "The Income Tax Department on Friday clarified that individuals holding foreign bank accounts with an aggregate balance of up to Rs 20 lakh at any point during the previous year will not be required to file a declaration under the Foreign Assets of Small Taxpayers Disclosure Scheme (FAST-DS), provided the funds in those accounts come from disclosed sources.",
+   "source_date": "2026-11-20",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/policy/income-tax-department-no-fast-ds-declaration-required-for-foreign-bank-accounts-under-rs-20-lakh-with-disclosed-funds/articleshow/136028599.cms",
+   "text": "Individuals holding foreign bank accounts with an aggregate balance of up to Rs 20 lakh funded by disclosed sources are exempt from filing declarations under FAST-DS.",
+   "unit": "lakh INR"
+  },
+  {
+   "label": "reported",
+   "number": 10.0,
+   "quote": "Under the Black Money (Undisclosed Foreign Income and Assets) and Imposition of Tax Act, 2015, taxpayers holding one or more foreign bank accounts with an aggregate balance of up to Rs 20 lakh at any point during the previous year are exempt from the Rs 10 lakh penalty for non-disclosure in Schedule FA of the ITR.",
+   "source_date": "2026-11-20",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/policy/income-tax-department-no-fast-ds-declaration-required-for-foreign-bank-accounts-under-rs-20-lakh-with-disclosed-funds/articleshow/136028599.cms",
+   "text": "Taxpayers with qualifying foreign bank accounts of up to Rs 20 lakh are protected from a penalty of Rs 10 lakh under the Black Money Act for non-disclosure in Schedule FA.",
+   "unit": "lakh INR"
+  },
+  {
+   "label": "reported",
+   "number": 30.0,
+   "quote": "Under the scheme, taxpayers are required to pay 30% tax on the value of the undisclosed foreign asset or income, along with an additional amount equivalent to the tax, taking the effective levy to 60%.",
+   "source_date": "2026-11-20",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/policy/income-tax-department-no-fast-ds-declaration-required-for-foreign-bank-accounts-under-rs-20-lakh-with-disclosed-funds/articleshow/136028599.cms",
+   "text": "Taxpayers regularising undisclosed foreign assets or income must pay a baseline tax of 30 percent.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 60.0,
+   "quote": "Under the scheme, taxpayers are required to pay 30% tax on the value of the undisclosed foreign asset or income, along with an additional amount equivalent to the tax, taking the effective levy to 60%.",
+   "source_date": "2026-11-20",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/policy/income-tax-department-no-fast-ds-declaration-required-for-foreign-bank-accounts-under-rs-20-lakh-with-disclosed-funds/articleshow/136028599.cms",
+   "text": "The combined levy on undisclosed overseas assets under Category A amounts to an effective rate of 60 percent.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 1.0,
+   "quote": "Category A covers undisclosed assets located outside India or foreign income that was not offered to tax, subject to an aggregate asset value of up to Rs 1 crore.",
+   "source_date": "2026-11-20",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/policy/income-tax-department-no-fast-ds-declaration-required-for-foreign-bank-accounts-under-rs-20-lakh-with-disclosed-funds/articleshow/136028599.cms",
+   "text": "Category A declarations for undisclosed offshore assets or untaxed overseas earnings are capped at an aggregate value of Rs 1 crore.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "reported",
+   "number": 5.0,
+   "quote": "The monetary threshold for declarations under this category is Rs 5 crore, with a flat fee of Rs 1 lakh.",
+   "source_date": "2026-11-20",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/policy/income-tax-department-no-fast-ds-declaration-required-for-foreign-bank-accounts-under-rs-20-lakh-with-disclosed-funds/articleshow/136028599.cms",
+   "text": "Category B allows individuals to regularise previously taxed foreign assets not reported in Schedule FA up to an aggregate ceiling of Rs 5 crore.",
+   "unit": "crore INR"
+  },
+  {
+   "label": "reported",
+   "number": 1.0,
+   "quote": "The monetary threshold for declarations under this category is Rs 5 crore, with a flat fee of Rs 1 lakh.",
+   "source_date": "2026-11-20",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/policy/income-tax-department-no-fast-ds-declaration-required-for-foreign-bank-accounts-under-rs-20-lakh-with-disclosed-funds/articleshow/136028599.cms",
+   "text": "Eligible individuals declaring accounted overseas assets under Category B must pay a flat regularisation fee of Rs 1 lakh.",
+   "unit": "lakh INR"
+  },
+  {
+   "label": "reported",
+   "number": 94.6543,
+   "quote": "In its supplementary FAQs, the department also clarified that an exchange rate of Rs 94.6543 per US dollar, applicable as of March 30, 2026, will be used to calculate the fair market value of foreign assets.",
+   "source_date": "2026-11-20",
+   "source_name": "ET",
+   "source_url": "https://economictimes.indiatimes.com/news/economy/policy/income-tax-department-no-fast-ds-declaration-required-for-foreign-bank-accounts-under-rs-20-lakh-with-disclosed-funds/articleshow/136028599.cms",
+   "text": "The Income Tax Department set the reference conversion rate at Rs 94.6543 per US dollar for determining the fair market value of foreign assets.",
+   "unit": "INR/USD"
+  }
+ ],
+ "id": "2026-11-27-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-20",
+   "drafts": 1,
+   "research": 2
+  },
+  "cost": {
+   "inr": 13.5,
+   "usd": 0.086308,
+   "voice": 8
+  },
+  "drafts": 1,
+  "intro_sent": "2026-11-20T22:30:39+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-27",
+ "reasons": [
+  "try 1: empty reply from the research model",
+  "waiting for the founder's intro clip until 27 Nov 11:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Forgot a foreign bank account in your tax return? 10 lakh fine?\nThe tax department now says: up to 20 lakh across all foreign accounts, from income you already showed, needs no FAST-DS declaration.\nThe catch: it is your highest balance last year that counts, not today's.\nDid you have an account abroad you never listed?\nThis is not investment advice.\nSend this to your cousin who came back from the US and never closed his account.",
+    "hashtags": [
+     "#IncomeTax",
+     "#PersonalFinanceIndia",
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#LearningWithSG",
+     "#Rupee"
+    ]
+   },
+   "threads": {
+    "text": "Forgot a foreign bank account in your tax return? The tax department says up to 20 lakh in total, from income you already showed, needs no FAST-DS declaration. Do you still have an old account abroad? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Forgot a foreign bank account in your tax return? Read this before you pay any fee. The Income Tax Department says accounts up to 20 lakh in total, funded by income you already showed, need no FAST-DS declaration. Check your highest balance last year, not today's. Send this to your friend who still has a bank account abroad from college.",
+    "tags": [
+     "income tax",
+     "foreign bank account",
+     "FAST-DS",
+     "schedule FA",
+     "black money act",
+     "ITR",
+     "NRI returning",
+     "tax penalty",
+     "personal finance india"
+    ],
+    "title": "Foreign Bank Account in ITR: Penalty or Relief?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Send this to your friend who still has a bank account abroad.",
+  "hook": "Forgot a foreign bank account in your tax return? 10 lakh fine?",
+  "scenes": [
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "Hook",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of a plain foreign bank debit card resting on a thick stack of Indian income tax papers on a wooden desk, warm evening lamp light, sharp shadows, no readable text or logos.",
+     "type": "art"
+    },
+    "vo": "Forgot a foreign bank account in your tax return? 10 lakh fine?"
+   },
+   {
+    "facts_used": [],
+    "label": "Setup",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of a young Indian man in his late twenties unpacking a suitcase in a modest Indian apartment bedroom, an old foreign coin pouch and envelope on the bed, soft afternoon light, thoughtful mood.",
+     "type": "art"
+    },
+    "vo": "You worked abroad, came home, and that small account is still open."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a busy Indian income tax office corridor, people in office wear holding files, waiting on steel benches, daylight through tall windows.",
+     "type": "art"
+    },
+    "vo": "Now a one-time scheme, FAST-DS, lets you declare foreign assets and pay up."
+   },
+   {
+    "facts_used": [],
+    "label": "Choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of a worried Indian couple at a dining table at night, papers spread out, the wife pointing at a document, the husband rubbing his forehead, warm tube light.",
+     "type": "art"
+    },
+    "vo": "So many people rushed to declare tiny accounts. A fee felt safer than a penalty. But here is the twist."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic shot of an Indian man exhaling in relief on a balcony at sunset, holding a closed file against his chest, city buildings behind him.",
+     "type": "art"
+    },
+    "vo": "The tax department now says: up to 20 lakh across all foreign accounts, no declaration."
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "Cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of Indian hands sorting old printed salary slips and bank statements into two neat piles on a desk, morning light from a window, no readable text.",
+     "type": "art"
+    },
+    "vo": "Condition: the money came from income you already showed, like your salary abroad. Then the 10 lakh penalty does not apply."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Twist",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of an Indian chartered accountant in a small office handing back a folder to a young woman client across a cluttered desk, both serious, afternoon light.",
+     "type": "art"
+    },
+    "vo": "The catch: count your highest balance last year, not today's. This is not investment advice."
+   },
+   {
+    "facts_used": [],
+    "label": "Send",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of two Indian friends laughing over cutting chai at a roadside tea stall in the evening, steam rising from glasses, warm street lights.",
+     "type": "art"
+    },
+    "vo": "Send this to your friend who still has a bank account abroad."
+   }
+  ],
+  "thumbnail": {
+   "name": "FAST-DS",
+   "name_hi": "FAST-DS",
+   "scene": "A small foreign bank debit card lying on top of thick Indian income tax files on a dark desk, lit by a single lamp, with dramatic shadows falling across the papers.",
+   "words": [
+    "20 LAKH",
+    "SAFE?"
+   ],
+   "words_hi": [
+    "20 LAKH",
+    "SAFE?"
+   ]
+  },
+  "title": "Foreign bank account? No *penalty* below 20 lakh 🏦"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  5.366,
+  10.331,
+  16.37,
+  24.668,
+  31.275,
+  40.374,
+  46.797
+ ],
+ "topic": {
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "",
+   "options": [
+    {
+     "closing": "",
+     "question": "You worked abroad, came home, and forgot one bank account. A 10 lakh penalty looms, but one hidden number could make it vanish.",
+     "text": "You worked abroad, came home, and forgot one bank account. A 10 lakh penalty looms, but one hidden number could make it vanish.",
+     "words": 23
+    },
+    {
+     "closing": "",
+     "question": "So many people rushed to declare tiny foreign accounts, because a fee felt safer than a penalty. Were they all wrong?",
+     "text": "So many people rushed to declare tiny foreign accounts, because a fee felt safer than a penalty. Were they all wrong?",
+     "words": 21
+    },
+    {
+     "closing": "",
+     "question": "Your old salary abroad left behind one quiet bank account. Now the tax department has a number, 20 lakh, that changes everything.",
+     "text": "Your old salary abroad left behind one quiet bank account. Now the tax department has a number, 20 lakh, that changes everything.",
+     "words": 22
+    },
+    {
+     "closing": "",
+     "question": "A 10 lakh penalty scared people into paying for foreign accounts. But one condition about where your money came from flips the story.",
+     "text": "A 10 lakh penalty scared people into paying for foreign accounts. But one condition about where your money came from flips the story.",
+     "words": 23
+    },
+    {
+     "closing": "",
+     "question": "Count the wrong balance on your foreign bank account, and the 10 lakh penalty could come back. Are you checking today's balance?",
+     "text": "Count the wrong balance on your foreign bank account, and the 10 lakh penalty could come back. Are you checking today's balance?",
+     "words": 22
+    }
+   ],
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: close-up of a plain foreign bank debit card resting on a thick stack of Indian income tax papers on a wooden desk, warm evening lamp light, sharp shadows, no readable text or logos. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a beige linen blazer over a white tee. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "You worked abroad, came home, and forgot one bank account. A 10 lakh penalty looms, but one hidden number could make it vanish.",
+   "text": "You worked abroad, came home, and forgot one bank account. A 10 lakh penalty looms, but one hidden number could make it vanish.",
+   "words": 23
+  },
+  "link": "https://economictimes.indiatimes.com/news/economy/policy/income-tax-department-no-fast-ds-declaration-required-for-foreign-bank-accounts-under-rs-20-lakh-with-disclosed-funds/articleshow/136028599.cms",
+  "published": "2026-11-20T14:34:17+00:00",
+  "rank": 3,
+  "source": "ET Economy",
+  "summary": "The Income Tax Department has announced exemptions for individuals with foreign bank accounts under FAST-DS. Individuals with balances up to Rs 20 lakh from disclosed sources do not need to file declarations. This exemption applies as long as the accounts contain no undisclosed income or unaccounted deposits. The scheme provides a one-time opportunity to disclose foreign assets and income by December 31.",
+  "target_minutes": null,
+  "title": "No FAST-DS declaration needed for foreign bank a/c up to Rs 20 lakh with disclosed funds: I-T dept",
+  "topic_score": 4,
+  "topic_score_why": [
+   "+3 touches the viewer's own money",
+   "+1 a concrete number"
+  ],
+  "voice": "voice_1kn3blc2u13l"
+ },
+ "updated": "2026-11-20T22:30:51+00:00",
+ "writer": "claude"
+}
