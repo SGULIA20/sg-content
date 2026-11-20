@@ -135,7 +135,9 @@
    "voice": 12
   },
   "drafts": 1,
+  "ig_reel_id": "17878487502586467",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-20-arthvan-short.mp4",
    "clip_seconds": 1,
@@ -146,6 +148,8 @@
   "intro_sent": "2026-11-13T20:56:33+00:00",
   "out_sha": "c0e29264962fbe053cd1c29264f5caf478a517e8",
   "out_sha_intro": true,
+  "threads_id": "18095095769282789",
+  "threads_poll_id": "18155703844550873",
   "yt_id": "SC0H7DmaKo8"
  },
  "kind": "short",
@@ -359,7 +363,7 @@
   },
   "title": "Vishnu 4 mahine kyun sote hain? *Dev Uthani* 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   2.997,
@@ -411,6 +415,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-14T09:24:32+00:00",
+ "updated": "2026-11-20T16:12:40+00:00",
  "writer": "claude"
 }
