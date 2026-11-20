@@ -1,0 +1,70 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.02,Default,,0,0,0,,Bharat chita mein kyun kudne wale
+Dialogue: 0,0:00:02.02,0:00:02.22,Default,,0,0,0,,the,
+Dialogue: 0,0:00:02.22,0:00:03.84,Default,,0,0,0,,Hanuman ne kaise roka?
+Dialogue: 0,0:00:04.29,0:00:06.08,Default,,0,0,0,,Kamba Ramayanam kehti hai,
+Dialogue: 0,0:00:06.08,0:00:07.65,Default,,0,0,0,,vanvas ka aakhri din tha.
+Dialogue: 0,0:00:07.65,0:00:09.21,Default,,0,0,0,,Ram ka koi sandesh nahi.
+Dialogue: 0,0:00:09.21,0:00:11.67,Default,,0,0,0,,Bharat ne Nandigram mein chita jala
+Dialogue: 0,0:00:11.67,0:00:11.90,Default,,0,0,0,,di.
+Dialogue: 0,0:00:12.35,0:00:15.46,Default,,0,0,0,,Bharat jalti chita ki parikrama kar
+Dialogue: 0,0:00:15.46,0:00:16.23,Default,,0,0,0,,rahe the.
+Dialogue: 0,0:00:16.23,0:00:18.31,Default,,0,0,0,,Tabhi Hanuman pahunche,
+Dialogue: 0,0:00:18.31,0:00:19.09,Default,,0,0,0,,aag bujhayi,
+Dialogue: 0,0:00:19.09,0:00:19.86,Default,,0,0,0,,aur bole,
+Dialogue: 0,0:00:19.86,0:00:21.16,Default,,0,0,0,,Ram laut rahe hain!
+Dialogue: 0,0:00:21.61,0:00:22.59,Default,,0,0,0,,Lekin twist hai.
+Dialogue: 0,0:00:22.59,0:00:25.77,Default,,0,0,0,,Tulsidas ke Ramcharitmanas mein chita hai
+Dialogue: 0,0:00:25.77,0:00:26.51,Default,,0,0,0,,hi nahi.
+Dialogue: 0,0:00:26.51,0:00:28.22,Default,,0,0,0,,Bharat kush ke aasan par,
+Dialogue: 0,0:00:28.22,0:00:29.45,Default,,0,0,0,,aansu bahate,
+Dialogue: 0,0:00:29.45,0:00:30.67,Default,,0,0,0,,Ram naam japte hain.
+Dialogue: 0,0:00:30.67,0:00:33.12,Default,,0,0,0,,Hanuman Brahmin ban kar aate hain.
+Dialogue: 0,0:00:33.57,0:00:35.42,Default,,0,0,0,,To kya Nandigram sach mein tha?
+Dialogue: 0,0:00:35.42,0:00:37.04,Default,,0,0,0,,1975 mein ASI,
+Dialogue: 0,0:00:37.04,0:00:39.58,Default,,0,0,0,,yaani sarkari puratatva vibhag,
+Dialogue: 0,0:00:39.58,0:00:42.13,Default,,0,0,0,,ne Ramayan wali jagahon ki khudai
+Dialogue: 0,0:00:42.13,0:00:42.82,Default,,0,0,0,,shuru ki.
+Dialogue: 0,0:00:43.27,0:00:44.55,Default,,0,0,0,,Mukhiya the B.B.
+Dialogue: 0,0:00:44.55,0:00:44.88,Default,,0,0,0,,Lal.
+Dialogue: 0,0:00:44.88,0:00:46.16,Default,,0,0,0,,List mein Ayodhya,
+Dialogue: 0,0:00:46.16,0:00:49.05,Default,,0,0,0,,Chitrakoot aur Nandigram bhi the.
+Dialogue: 0,0:00:49.50,0:00:52.33,Default,,0,0,0,,Nandigram aaj Bharat Kund kehlata hai,
+Dialogue: 0,0:00:52.33,0:00:55.41,Default,,0,0,0,,Ayodhya se lagbhag 15 kilometre door.
+Dialogue: 0,0:00:55.41,0:00:56.95,Default,,0,0,0,,Mitti se kya nikla?
+Dialogue: 0,0:00:57.40,0:00:59.82,Default,,0,0,0,,Chamakdar kaale bartan ke tukde,
+Dialogue: 0,0:00:59.82,0:01:02.71,Default,,0,0,0,,jinhe Northern Black Polished Ware kehte
+Dialogue: 0,0:01:02.71,0:01:02.96,Default,,0,0,0,,hain.
+Dialogue: 0,0:01:02.96,0:01:05.61,Default,,0,0,0,,Matlab yahan bahut pehle basti thi.
+Dialogue: 0,0:01:06.06,0:01:06.28,Default,,0,0,0,,B.B.
+Dialogue: 0,0:01:06.28,0:01:07.15,Default,,0,0,0,,Lal kehte hain,
+Dialogue: 0,0:01:07.15,0:01:09.10,Default,,0,0,0,,mitti ki yeh parten Ramayan ke
+Dialogue: 0,0:01:09.10,0:01:11.70,Default,,0,0,0,,peeche asli itihaas ka ishara hain.
+Dialogue: 0,0:01:12.15,0:01:12.60,Default,,0,0,0,,Par D.
+Dialogue: 0,0:01:12.60,0:01:15.27,Default,,0,0,0,,Mandal aur Shereen Ratnagar asehmat hain.
+Dialogue: 0,0:01:15.27,0:01:17.72,Default,,0,0,0,,Aise bartan poore Ganga maidan mein
+Dialogue: 0,0:01:17.72,0:01:18.39,Default,,0,0,0,,milte hain,
+Dialogue: 0,0:01:18.39,0:01:19.95,Default,,0,0,0,,katha ka sabut nahi.
+Dialogue: 0,0:01:20.40,0:01:22.82,Default,,0,0,0,,Kya koi rajkumar sach mein yahan
+Dialogue: 0,0:01:22.82,0:01:23.36,Default,,0,0,0,,raha?
+Dialogue: 0,0:01:23.36,0:01:24.71,Default,,0,0,0,,Koi nahi jaanta.
+Dialogue: 0,0:01:25.16,0:01:26.95,Default,,0,0,0,,Bharat Kund ke log kehte hain,
+Dialogue: 0,0:01:26.95,0:01:28.29,Default,,0,0,0,,chita jal chuki thi.
+Dialogue: 0,0:01:28.29,0:01:30.53,Default,,0,0,0,,Hanuman ne aasman se pukara.
+Dialogue: 0,0:01:30.53,0:01:32.10,Default,,0,0,0,,Woh jagah aaj bhi aap dekh
+Dialogue: 0,0:01:32.10,0:01:32.77,Default,,0,0,0,,sakte hain.
+Dialogue: 0,0:01:33.22,0:01:34.31,Default,,0,0,0,,Nani ko bhejo,
+Dialogue: 0,0:01:34.31,0:01:36.71,Default,,0,0,0,,jinhone Bharat aur Hanuman ki yeh
+Dialogue: 0,0:01:36.71,0:01:37.80,Default,,0,0,0,,katha sunayi thi.
