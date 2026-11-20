@@ -95,7 +95,15 @@
    "voice": 8
   },
   "drafts": 1,
-  "intro_sent": "2026-11-19T22:32:29+00:00"
+  "intro": {
+   "clip": "2026-11-26-sglearning-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-20T15:15:34+00:00",
+   "seconds": 8.38
+  },
+  "intro_checked": "0e6b43732e94caa8",
+  "intro_sent": "2026-11-19T22:32:29+00:00",
+  "yt_id": "PJe3oIldJ5c"
  },
  "kind": "short",
  "publish_day": "2026-11-26",
@@ -245,7 +253,7 @@
   },
   "title": "Who really gets your first *premium*? 😳"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   3.719,
@@ -306,6 +314,7 @@
    "text": "A couple thought every rupee was building their daughter's future. But in year one, someone else walked away with up to 60 percent.",
    "words": 23
   },
+  "look": "claymation",
   "summary": "How commission on a traditional life policy is paid across the years, what the surrender value is in the first years, and the 2024 rules that raised it. The regulator's published limits as source.",
   "target_minutes": null,
   "theme": "insurance",
@@ -320,6 +329,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-19T22:32:46+00:00",
+ "updated": "2026-11-20T15:15:39+00:00",
  "writer": "claude"
 }
