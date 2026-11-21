@@ -1,0 +1,329 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 50.0,
+   "quote": "Repealed from 1 January 2004, it had a defined-benefit (DB) pension of half the Last Pay Drawn (LPD) at the time of retirement along with components like Dearness Allowances (DA) etc.",
+   "source_date": "2024-01-01",
+   "source_name": "Wikipedia",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEUWa7COh3UGLJ9E3nOa6bIEArVVgDzw-5qhOcs0sadgjZKVXN3gOO92E2M4O2BFDF3kcK3BgZ3n6wfgwVj91xJpvsoBI6WVIM3iEVUSRy7MRMXh6iQ9JiE_PcWbniutqqrXDjwJs=",
+   "text": "The Old Pension Scheme, which guaranteed a defined-benefit pension equal to 50 percent of the last pay drawn, was abolished for new central government entrants starting 1 January 2004.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 10.0,
+   "quote": "The employee contribution shall remain un-altered at 10% of (basic pay + DA).",
+   "source_date": "2024-09-25",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHK2OWKLlVV-ZThivNVv5yFeC48YqYWBVe2AHtzy8AODZ_dG4du1sx0l6qQPDywH704_vJfoctZ3t47YeULc5DfHj55rwgjuPvrBUzB1AXt7IX2lhqiOVCGnmTx2kxF4kaB1XvR__mj6wcAEuegRFCh_nd7YiYwSEfXP0JZUC_xoC5bzwxSkUU=",
+   "text": "Under the National Pension System and the Unified Pension Scheme, employees contribute a mandatory deduction of 10 percent of basic pay and dearness allowance from their monthly salary.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 14.0,
+   "quote": "Enhancement of the mandatory contribution by the Central Government for its employees covered under NPS Tier-I from the existing 10% to 14%.",
+   "source_date": "2018-12-10",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqF9nBQQq-Tkqf9R2Dhaa1IfniHEzgEvXcxJm3iVok9ssbXxPmAAbQxIJSZnxXbru_gL7FyovK6E6s0DbjytCMzeQJ3yL2EfeIr0fbSI83rbIE20p9j5geZEXp4TPsRZJBorLeblIR8LfdP_ygxJU=",
+   "text": "The central government raised its mandatory employer contribution under NPS Tier-I from 10 percent to 14 percent of basic pay plus dearness allowance.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 18.5,
+   "quote": "The Government contribution will increase from the present 14% to 18.5%.",
+   "source_date": "2024-09-25",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHK2OWKLlVV-ZThivNVv5yFeC48YqYWBVe2AHtzy8AODZ_dG4du1sx0l6qQPDywH704_vJfoctZ3t47YeULc5DfHj55rwgjuPvrBUzB1AXt7IX2lhqiOVCGnmTx2kxF4kaB1XvR__mj6wcAEuegRFCh_nd7YiYwSEfXP0JZUC_xoC5bzwxSkUU=",
+   "text": "Under the Unified Pension Scheme, the government contribution increases from 14 percent to 18.5 percent of basic pay and dearness allowance.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 50.0,
+   "quote": "Assured pension: 50% of the average basic pay drawn over the last 12 months prior to superannuation for a minimum qualifying service of 25 years.",
+   "source_date": "2024-08-24",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4xk6i3XcV0d1fs2kw3S98-Es3bZC7TxLHNUotTR-iGaLZLTCU6ZPghOWgb4gGXB7qbSrn02fi6LAUXriJbwakMbph1glUhkmi1TyABC46kndxw41F3Q0XY-EE659e0NYafZTClljchto-18S4TVpWfc93yLNH_R5V8E_ZEA==",
+   "text": "The Unified Pension Scheme guarantees an assured pension payout of 50 percent of average basic pay drawn over the last 12 months prior to superannuation for at least 25 years of service.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 10000.0,
+   "quote": "Assured minimum pension: @10,000 per month on superannuation after minimum 10 years of service.",
+   "source_date": "2024-08-24",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4xk6i3XcV0d1fs2kw3S98-Es3bZC7TxLHNUotTR-iGaLZLTCU6ZPghOWgb4gGXB7qbSrn02fi6LAUXriJbwakMbph1glUhkmi1TyABC46kndxw41F3Q0XY-EE659e0NYafZTClljchto-18S4TVpWfc93yLNH_R5V8E_ZEA==",
+   "text": "A minimum assured pension of 10,000 rupees per month is guaranteed under the Unified Pension Scheme upon superannuation after at least 10 years of service.",
+   "unit": "INR/month"
+  },
+  {
+   "label": "official",
+   "number": 50000.0,
+   "quote": "Contributions made towards NPS are eligible for an additional tax deduction under section 80CCD(1B) upto Rs. 50,000 which is over and above the Rs 1,50,000 limit of deduction available under sec 80CCD(1).",
+   "source_date": "2019-10-30",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGU2Qjn7jMW-f-gBCAxcC9EksrwQfB56_E3Oe9hKhdViitB2ph_0mRto8DhnhBw_hh7Kmuq869OaspQp_l_TiHacVbEgd3MubBRZTkZCEAYMDQmYB2Q21_OJ6eNTJ0VKtA3CeQVzVff7qZ8zEgp0w==",
+   "text": "Salaried taxpayers contributing to the National Pension System can claim an additional income tax deduction of up to 50,000 rupees under Section 80CCD(1B).",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 60.0,
+   "quote": "In the Union Budget 2019, the tax exemption limit for lumpsum withdrawal on exit/maturity from NPS has been increased from the present 40% to 60% under section 10(12A) of the IT Act and the remaining 40% of the corpus is already tax-exempt as it is mandatorily utilized for annuity purchase.",
+   "source_date": "2019-10-30",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGU2Qjn7jMW-f-gBCAxcC9EksrwQfB56_E3Oe9hKhdViitB2ph_0mRto8DhnhBw_hh7Kmuq869OaspQp_l_TiHacVbEgd3MubBRZTkZCEAYMDQmYB2Q21_OJ6eNTJ0VKtA3CeQVzVff7qZ8zEgp0w==",
+   "text": "Subscribers exiting the National Pension System at retirement are eligible to withdraw up to 60 percent of their accumulated corpus completely tax-free.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-28-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-21",
+   "drafts": 1,
+   "research": 3
+  },
+  "cost": {
+   "inr": 13.5,
+   "usd": 0.082528,
+   "voice": 8
+  },
+  "drafts": 1,
+  "intro_sent": "2026-11-21T21:13:25+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-28",
+ "reasons": [
+  "try 1: empty reply from the research model",
+  "try 2: empty reply from the research model",
+  "waiting for the founder's intro clip until 28 Nov 11:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Government pension once paid 50 percent of last salary. Why did it stop?\nIn 2004 new central staff moved to NPS, where the pot decides your pension. Then the Unified Pension Scheme brought back an assured payout.\nDid you know NPS is open to private employees too?\nThis is not investment advice.\nSend this to your friend in a private job with no pension plan.",
+    "hashtags": [
+     "#PersonalFinanceIndia",
+     "#IncomeTax",
+     "#InvestingIndia",
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Government pension once paid 50 percent of last salary, for life. In 2004 that changed to NPS, where your pension depends on how your savings grow. Would you choose a fixed pension or a growing pot? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Government pension once paid half the last salary, for life. In 2004 new central government staff moved to NPS, where your pension depends on how your savings grow. Then the Unified Pension Scheme brought back an assured payout, and NPS is open to private employees too. Send this to your friend in a private job with no pension plan.",
+    "tags": [
+     "pension",
+     "old pension scheme",
+     "NPS",
+     "unified pension scheme",
+     "UPS",
+     "retirement",
+     "government job",
+     "private job",
+     "tax deduction",
+     "personal finance India"
+    ],
+    "title": "Pension 50% of salary: why did it end?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Send this to your friend in a private job with no pension plan.",
+  "hook": "Government pension once paid 50 percent of last salary. Why did it stop?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of an elderly Indian man's wrinkled hands receiving a thick bundle of rupee notes across an old government bank counter, warm morning light through a barred window, quiet dignity",
+     "type": "art"
+    },
+    "vo": "Government pension once paid 50 percent of last salary. Why did it stop?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of a retired Indian man in a white kurta sitting relaxed on a verandah chair with a cup of tea, his wife beside him, soft late-afternoon light in a small town home",
+     "type": "art"
+    },
+    "vo": "A retired clerk gets it every month, for life. He saved nothing for it."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a busy Indian government office corridor lined with tall stacks of tied paper files, clerks walking past, dusty midday light from high windows",
+     "type": "art"
+    },
+    "vo": "The government paid, straight from each year's budget. Nothing was put aside."
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic shot of a young Indian man in a formal shirt on his first day at a government office, signing joining papers at a wooden desk while a senior officer watches, bright morning light",
+     "type": "art"
+    },
+    "vo": "So from 2004, new central government staff got NPS. A slice of salary is saved monthly."
+   },
+   {
+    "facts_used": [],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic image of a middle-aged Indian couple at a dining table at night, papers spread out, the husband rubbing his forehead in worry, a single warm lamp overhead",
+     "type": "art"
+    },
+    "vo": "The catch? Your pension now depends on how that pot grows. No fixed promise."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of a group of grey-haired Indian government employees smiling with relief outside an office building, one shaking hands with a colleague, clear evening light",
+     "type": "art"
+    },
+    "vo": "Then the Unified Pension Scheme brought back an assured 50 percent, for long service."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a young Indian woman in office wear at a busy private company workspace, looking thoughtfully out of a glass window over a city skyline, late afternoon light",
+     "type": "art"
+    },
+    "vo": "Here's the twist. NPS is open to private employees too, with an extra tax deduction. This is not investment advice."
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of two young Indian friends sharing cutting chai at a roadside tea stall after work, one explaining something to the other, golden dusk light and busy street behind",
+     "type": "art"
+    },
+    "vo": "Send this to your friend in a private job with no pension plan."
+   }
+  ],
+  "thumbnail": {
+   "name": "PENSION",
+   "name_hi": "PENSION",
+   "scene": "LEFT: a long calm queue of elderly retirees collecting pension cash at an old government bank counter; RIGHT: a young office worker alone at a desk late at night, surrounded by savings papers, the chair beside him empty.",
+   "words": [
+    "2004",
+    "GONE?"
+   ],
+   "words_hi": [
+    "2004",
+    "GONE?"
+   ]
+  },
+  "title": "Why did *pension* stop paying half salary? 🤔"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  5.729,
+  11.887,
+  16.752,
+  24.749,
+  31.011,
+  37.047,
+  44.377
+ ],
+ "topic": {
+  "category": "policy",
+  "history": true,
+  "hooks": [
+   "Purani pension mein salary ka aadha milta tha, nayi mein kya?",
+   "NPS ka paisa retire hone par poora milta hai?"
+  ],
+  "id": "mh-old-vs-new-pension",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "",
+   "options": [
+    {
+     "closing": "",
+     "question": "The government never saved a single rupee for that clerk's pension. So what happened in 2004 that made it stop paying new employees?",
+     "text": "The government never saved a single rupee for that clerk's pension. So what happened in 2004 that made it stop paying new employees?",
+     "words": 23
+    },
+    {
+     "closing": "",
+     "question": "Nothing was saved for his pension, yet he gets paid every single month. So who is actually paying, and why did that end?",
+     "text": "Nothing was saved for his pension, yet he gets paid every single month. So who is actually paying, and why did that end?",
+     "words": 23
+    },
+    {
+     "closing": "",
+     "question": "In 2004, a promise of half salary for life vanished for new government staff. The reason hides inside one strange budget habit.",
+     "text": "In 2004, a promise of half salary for life vanished for new government staff. The reason hides inside one strange budget habit.",
+     "words": 22
+    },
+    {
+     "closing": "",
+     "question": "Half your salary, every month, until you die, with zero savings from you. Why would any government end a deal that generous?",
+     "text": "Half your salary, every month, until you die, with zero savings from you. Why would any government end a deal that generous?",
+     "words": 22
+    },
+    {
+     "closing": "",
+     "question": "One government job came with half your last salary for life. Then in 2004, the rule changed, and new staff got something riskier.",
+     "text": "One government job came with half your last salary for life. Then in 2004, the rule changed, and new staff got something riskier.",
+     "words": 23
+    }
+   ],
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: close-up of an elderly Indian man's wrinkled hands receiving a thick bundle of rupee notes across an old government bank counter, warm morning light through a barred window, quiet dignity. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a maroon blazer over a black tee. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "The government never saved a single rupee for that clerk's pension. So what happened in 2004 that made it stop paying new employees?",
+   "text": "The government never saved a single rupee for that clerk's pension. So what happened in 2004 that made it stop paying new employees?",
+   "words": 23
+  },
+  "summary": "The 2004 switch from the old defined pension to the contribution-based NPS for government staff, and the later unified scheme: who pays, what is guaranteed, and what a private employee can take from it. Government notifications only; no party politics.",
+  "target_minutes": null,
+  "theme": "jobs",
+  "title": "2004 mein pension badli: purani aur nayi mein fark kya hai",
+  "topic_score": 7,
+  "topic_score_why": [
+   "+3 touches the viewer's own money",
+   "+1 a scare or a crash (in the summary)",
+   "+1 a choice the viewer faces",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "voice": "voice_1kn3blc2u13l"
+ },
+ "updated": "2026-11-21T21:13:39+00:00",
+ "writer": "claude"
+}
