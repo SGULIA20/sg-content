@@ -60,6 +60,11 @@ jobs:
           YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
           YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
         run: python -m engine.studio
+      - name: Collect clips saved by the Arthvan bot
+        if: github.event.inputs.uploads == '' && github.event.inputs.tidy == ''
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python -m engine.handover
       - name: List a piece's scheduled uploads on YouTube
         if: github.event.inputs.uploads != ''
         env:
