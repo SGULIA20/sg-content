@@ -96,7 +96,15 @@
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
-  "intro_sent": "2026-11-20T22:16:46+00:00"
+  "intro": {
+   "clip": "2026-11-27-arthvan-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-21T16:17:51+00:00",
+   "seconds": 8.38
+  },
+  "intro_checked": "ed3de5786224e048",
+  "intro_sent": "2026-11-20T22:16:46+00:00",
+  "yt_id": "JlVZlsHQaw8"
  },
  "kind": "short",
  "publish_day": "2026-11-27",
@@ -316,7 +324,7 @@
   },
   "title": "Bharat ki *chita*, Hanuman ne kaise roka? 😱"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   4.289,
@@ -387,6 +395,7 @@
    "text": "Vanvas ka aakhri din tha, Ram ka koi sandesh nahi aaya, aur Bharat ne chita jala di. Phir aasman se kya pukara gaya?",
    "words": 23
   },
+  "look": "indian-comic",
   "summary": "Yuddha Kanda mein 14 varsh poore hone par Bharat ka agni pravesh ka sankalp aur Hanuman ka Nandigram pahunchna. Check: sarga sankhya, tithi ka sandarbh, aur Tulsidas ke paath se antar.",
   "target_minutes": null,
   "title": "Bharat chita mein kudne wale the, Hanuman ne kaise roka?",
@@ -400,6 +409,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-20T22:17:00+00:00",
+ "updated": "2026-11-21T16:18:00+00:00",
  "writer": "claude"
 }

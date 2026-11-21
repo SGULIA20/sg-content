@@ -11,401 +11,401 @@ Style: Default,Noto Sans Devanagari,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H800000
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.00,0:00:01.63,Default,,0,0,0,,You paid the jeweller for gold.
-Dialogue: 0,0:00:01.63,0:00:03.46,Default,,0,0,0,,So how much gold actually came
-Dialogue: 0,0:00:03.46,0:00:03.87,Default,,0,0,0,,home?
-Dialogue: 0,0:00:03.87,0:00:04.48,Default,,0,0,0,,Not the bill,
-Dialogue: 0,0:00:04.48,0:00:05.09,Default,,0,0,0,,not the box.
-Dialogue: 0,0:00:05.09,0:00:06.52,Default,,0,0,0,,The real metal you can sell
-Dialogue: 0,0:00:06.52,0:00:07.13,Default,,0,0,0,,tomorrow.
-Dialogue: 0,0:00:07.58,0:00:09.57,Default,,0,0,0,,Most families never ask this question.
-Dialogue: 0,0:00:09.57,0:00:10.76,Default,,0,0,0,,The jeweller smiles,
-Dialogue: 0,0:00:10.76,0:00:12.15,Default,,0,0,0,,and the bill shows the total.
-Dialogue: 0,0:00:12.15,0:00:14.33,Default,,0,0,0,,Everyone believes all of it went
-Dialogue: 0,0:00:14.33,0:00:14.93,Default,,0,0,0,,into gold.
-Dialogue: 0,0:00:15.38,0:00:16.62,Default,,0,0,0,,But here is the twist.
-Dialogue: 0,0:00:16.62,0:00:18.29,Default,,0,0,0,,A real slice of that money
-Dialogue: 0,0:00:18.29,0:00:19.53,Default,,0,0,0,,never becomes gold.
-Dialogue: 0,0:00:19.53,0:00:21.19,Default,,0,0,0,,It goes to making charges and
-Dialogue: 0,0:00:21.19,0:00:21.40,Default,,0,0,0,,GST,
-Dialogue: 0,0:00:21.40,0:00:22.65,Default,,0,0,0,,on the very first day.
-Dialogue: 0,0:00:23.10,0:00:24.09,Default,,0,0,0,,And the day you sell,
-Dialogue: 0,0:00:24.09,0:00:25.47,Default,,0,0,0,,that part simply disappears.
-Dialogue: 0,0:00:25.47,0:00:27.44,Default,,0,0,0,,Many jewellers pay you only for
-Dialogue: 0,0:00:27.44,0:00:28.03,Default,,0,0,0,,the metal.
-Dialogue: 0,0:00:28.03,0:00:29.61,Default,,0,0,0,,The rest is gone forever,
-Dialogue: 0,0:00:29.61,0:00:31.39,Default,,0,0,0,,and almost nobody notices.
-Dialogue: 0,0:00:31.84,0:00:33.66,Default,,0,0,0,,So is jewellery a bad buy?
-Dialogue: 0,0:00:33.66,0:00:34.27,Default,,0,0,0,,Not at all.
-Dialogue: 0,0:00:34.27,0:00:36.10,Default,,0,0,0,,A wedding necklace is love,
-Dialogue: 0,0:00:36.10,0:00:37.32,Default,,0,0,0,,tradition and pride.
-Dialogue: 0,0:00:37.32,0:00:38.74,Default,,0,0,0,,But is it also a smart
-Dialogue: 0,0:00:38.74,0:00:39.55,Default,,0,0,0,,way to save?
-Dialogue: 0,0:00:40.00,0:00:41.64,Default,,0,0,0,,Wedding season has just started after
-Dialogue: 0,0:00:41.64,0:00:42.30,Default,,0,0,0,,Dev Uthani.
-Dialogue: 0,0:00:42.30,0:00:44.43,Default,,0,0,0,,Families across India are walking into
-Dialogue: 0,0:00:44.43,0:00:45.58,Default,,0,0,0,,jewellery shops right now.
-Dialogue: 0,0:00:45.58,0:00:47.54,Default,,0,0,0,,This question touches almost every Indian
-Dialogue: 0,0:00:47.54,0:00:47.87,Default,,0,0,0,,home.
-Dialogue: 0,0:00:48.32,0:00:48.78,Default,,0,0,0,,Today,
-Dialogue: 0,0:00:48.78,0:00:49.48,Default,,0,0,0,,3 questions.
-Dialogue: 0,0:00:49.48,0:00:49.72,Default,,0,0,0,,First,
-Dialogue: 0,0:00:49.72,0:00:52.04,Default,,0,0,0,,where does your money actually go
-Dialogue: 0,0:00:52.04,0:00:52.74,Default,,0,0,0,,on the bill?
-Dialogue: 0,0:00:52.74,0:00:52.97,Default,,0,0,0,,Then,
-Dialogue: 0,0:00:52.97,0:00:54.60,Default,,0,0,0,,what do you really get back
-Dialogue: 0,0:00:54.60,0:00:55.30,Default,,0,0,0,,when you sell?
-Dialogue: 0,0:00:55.75,0:00:56.20,Default,,0,0,0,,And last,
-Dialogue: 0,0:00:56.20,0:00:57.33,Default,,0,0,0,,if gold is savings,
-Dialogue: 0,0:00:57.33,0:00:58.91,Default,,0,0,0,,is there a smarter way?
-Dialogue: 0,0:00:58.91,0:00:59.13,Default,,0,0,0,,Coin,
-Dialogue: 0,0:00:59.13,0:01:00.94,Default,,0,0,0,,jewellery or a gold ETF?
-Dialogue: 0,0:01:00.94,0:01:01.85,Default,,0,0,0,,Stay till the end,
-Dialogue: 0,0:01:01.85,0:01:03.88,Default,,0,0,0,,the answer surprises most people.
-Dialogue: 0,0:01:04.33,0:01:06.17,Default,,0,0,0,,Picture a mother in a busy
-Dialogue: 0,0:01:06.17,0:01:07.28,Default,,0,0,0,,jewellery market.
-Dialogue: 0,0:01:07.28,0:01:08.93,Default,,0,0,0,,Her daughter's wedding is coming soon.
-Dialogue: 0,0:01:08.93,0:01:10.04,Default,,0,0,0,,She has saved slowly,
-Dialogue: 0,0:01:10.04,0:01:10.96,Default,,0,0,0,,over many months,
-Dialogue: 0,0:01:10.96,0:01:12.25,Default,,0,0,0,,for a single necklace.
-Dialogue: 0,0:01:12.70,0:01:14.34,Default,,0,0,0,,She picks a design she loves.
-Dialogue: 0,0:01:14.34,0:01:15.98,Default,,0,0,0,,The jeweller weighs it and checks
-Dialogue: 0,0:01:15.98,0:01:17.01,Default,,0,0,0,,today's gold rate.
-Dialogue: 0,0:01:17.01,0:01:18.44,Default,,0,0,0,,Then he starts writing the bill,
-Dialogue: 0,0:01:18.44,0:01:19.47,Default,,0,0,0,,line by line.
-Dialogue: 0,0:01:19.92,0:01:21.32,Default,,0,0,0,,The first line is the gold
-Dialogue: 0,0:01:21.32,0:01:21.72,Default,,0,0,0,,itself.
-Dialogue: 0,0:01:21.72,0:01:23.52,Default,,0,0,0,,Weight multiplied by today's rate.
-Dialogue: 0,0:01:23.52,0:01:24.92,Default,,0,0,0,,This is the only part that
-Dialogue: 0,0:01:24.92,0:01:25.72,Default,,0,0,0,,is real metal,
-Dialogue: 0,0:01:25.72,0:01:26.53,Default,,0,0,0,,the part you own.
-Dialogue: 0,0:01:26.98,0:01:28.82,Default,,0,0,0,,Next comes the making charge.
-Dialogue: 0,0:01:28.82,0:01:30.20,Default,,0,0,0,,That is the fee for the
-Dialogue: 0,0:01:30.20,0:01:30.89,Default,,0,0,0,,craftsman's work:
-Dialogue: 0,0:01:30.89,0:01:31.35,Default,,0,0,0,,cutting,
-Dialogue: 0,0:01:31.35,0:01:31.81,Default,,0,0,0,,shaping,
-Dialogue: 0,0:01:31.81,0:01:33.19,Default,,0,0,0,,polishing and design.
-Dialogue: 0,0:01:33.19,0:01:34.34,Default,,0,0,0,,Here is the catch.
-Dialogue: 0,0:01:34.34,0:01:36.19,Default,,0,0,0,,There is no fixed rate.
-Dialogue: 0,0:01:36.64,0:01:38.46,Default,,0,0,0,,Some jewellers charge it per gram.
-Dialogue: 0,0:01:38.46,0:01:40.47,Default,,0,0,0,,Others charge a percentage of the
-Dialogue: 0,0:01:40.47,0:01:41.02,Default,,0,0,0,,gold value.
-Dialogue: 0,0:01:41.02,0:01:41.57,Default,,0,0,0,,A fine,
-Dialogue: 0,0:01:41.57,0:01:43.58,Default,,0,0,0,,detailed necklace costs far more to
-Dialogue: 0,0:01:43.58,0:01:44.68,Default,,0,0,0,,make than a plain chain.
-Dialogue: 0,0:01:45.12,0:01:46.08,Default,,0,0,0,,And notice this.
-Dialogue: 0,0:01:46.08,0:01:47.80,Default,,0,0,0,,The making charge buys you beauty,
-Dialogue: 0,0:01:47.80,0:01:48.18,Default,,0,0,0,,not gold.
-Dialogue: 0,0:01:48.18,0:01:49.71,Default,,0,0,0,,Not a single gram of metal
-Dialogue: 0,0:01:49.71,0:01:50.86,Default,,0,0,0,,comes from that money.
-Dialogue: 0,0:01:50.86,0:01:52.01,Default,,0,0,0,,Remember this line.
-Dialogue: 0,0:01:52.46,0:01:53.35,Default,,0,0,0,,Then comes GST.
-Dialogue: 0,0:01:53.35,0:01:54.92,Default,,0,0,0,,On the value of the gold,
-Dialogue: 0,0:01:54.92,0:01:56.03,Default,,0,0,0,,GST is 3 percent.
-Dialogue: 0,0:01:56.03,0:01:58.05,Default,,0,0,0,,The GST Council fixed this rate,
-Dialogue: 0,0:01:58.05,0:01:59.61,Default,,0,0,0,,and it applies to coins and
-Dialogue: 0,0:01:59.61,0:02:00.06,Default,,0,0,0,,bars too.
-Dialogue: 0,0:02:00.51,0:02:02.04,Default,,0,0,0,,But the making charge has its
-Dialogue: 0,0:02:02.04,0:02:02.42,Default,,0,0,0,,own GST.
-Dialogue: 0,0:02:02.42,0:02:03.18,Default,,0,0,0,,As reported,
-Dialogue: 0,0:02:03.18,0:02:04.14,Default,,0,0,0,,it is 5 percent,
-Dialogue: 0,0:02:04.14,0:02:05.48,Default,,0,0,0,,charged separately.
-Dialogue: 0,0:02:05.48,0:02:06.62,Default,,0,0,0,,So you pay tax on the
-Dialogue: 0,0:02:06.62,0:02:07.39,Default,,0,0,0,,craftsman's fee too.
-Dialogue: 0,0:02:07.83,0:02:09.17,Default,,0,0,0,,Add it all up and you
-Dialogue: 0,0:02:09.17,0:02:10.28,Default,,0,0,0,,get the final bill.
-Dialogue: 0,0:02:10.28,0:02:11.62,Default,,0,0,0,,Now ask the real question,
-Dialogue: 0,0:02:11.62,0:02:13.17,Default,,0,0,0,,the one nobody asks.
-Dialogue: 0,0:02:13.17,0:02:14.95,Default,,0,0,0,,How much of that is actually
-Dialogue: 0,0:02:14.95,0:02:15.18,Default,,0,0,0,,gold?
-Dialogue: 0,0:02:15.63,0:02:16.85,Default,,0,0,0,,Here is the answer.
-Dialogue: 0,0:02:16.85,0:02:18.08,Default,,0,0,0,,Only the first line.
-Dialogue: 0,0:02:18.08,0:02:18.90,Default,,0,0,0,,The gold value.
-Dialogue: 0,0:02:18.90,0:02:20.13,Default,,0,0,0,,Everything else,
-Dialogue: 0,0:02:20.13,0:02:21.77,Default,,0,0,0,,the making charge and both GST
-Dialogue: 0,0:02:21.77,0:02:22.18,Default,,0,0,0,,lines,
-Dialogue: 0,0:02:22.18,0:02:22.59,Default,,0,0,0,,is cost,
-Dialogue: 0,0:02:22.59,0:02:23.20,Default,,0,0,0,,not metal.
-Dialogue: 0,0:02:23.65,0:02:24.48,Default,,0,0,0,,On a plain chain,
-Dialogue: 0,0:02:24.48,0:02:25.52,Default,,0,0,0,,the cost part stays small.
-Dialogue: 0,0:02:25.52,0:02:26.36,Default,,0,0,0,,On a heavy,
-Dialogue: 0,0:02:26.36,0:02:27.61,Default,,0,0,0,,detailed bridal set,
-Dialogue: 0,0:02:27.61,0:02:29.06,Default,,0,0,0,,it can eat a big slice
-Dialogue: 0,0:02:29.06,0:02:29.90,Default,,0,0,0,,of your savings.
-Dialogue: 0,0:02:30.35,0:02:31.94,Default,,0,0,0,,Necklaces of the same weight can
-Dialogue: 0,0:02:31.94,0:02:33.35,Default,,0,0,0,,carry very different bills.
-Dialogue: 0,0:02:33.35,0:02:34.77,Default,,0,0,0,,The gold inside is equal.
-Dialogue: 0,0:02:34.77,0:02:35.83,Default,,0,0,0,,The craftsmanship is not,
-Dialogue: 0,0:02:35.83,0:02:37.42,Default,,0,0,0,,and you pay for that difference.
-Dialogue: 0,0:02:37.87,0:02:39.66,Default,,0,0,0,,Think of it like a restaurant
-Dialogue: 0,0:02:39.66,0:02:39.85,Default,,0,0,0,,meal.
-Dialogue: 0,0:02:39.85,0:02:40.84,Default,,0,0,0,,You pay for the food,
-Dialogue: 0,0:02:40.84,0:02:41.84,Default,,0,0,0,,but also the chef,
-Dialogue: 0,0:02:41.84,0:02:43.22,Default,,0,0,0,,the service and the tax.
-Dialogue: 0,0:02:43.22,0:02:44.81,Default,,0,0,0,,Only the food fills your stomach.
-Dialogue: 0,0:02:45.26,0:02:47.33,Default,,0,0,0,,Jewellery works the same way.
-Dialogue: 0,0:02:47.33,0:02:49.17,Default,,0,0,0,,You enjoy the craftsman's work for
-Dialogue: 0,0:02:49.17,0:02:49.40,Default,,0,0,0,,years,
-Dialogue: 0,0:02:49.40,0:02:51.01,Default,,0,0,0,,at weddings and festivals.
-Dialogue: 0,0:02:51.01,0:02:52.16,Default,,0,0,0,,For a family,
-Dialogue: 0,0:02:52.16,0:02:53.30,Default,,0,0,0,,that has real value.
-Dialogue: 0,0:02:53.75,0:02:54.67,Default,,0,0,0,,But money-wise,
-Dialogue: 0,0:02:54.67,0:02:56.15,Default,,0,0,0,,only the gold travels with you
-Dialogue: 0,0:02:56.15,0:02:57.25,Default,,0,0,0,,into the future.
-Dialogue: 0,0:02:57.25,0:02:58.54,Default,,0,0,0,,So what happens when you sell?
-Dialogue: 0,0:02:58.54,0:02:59.82,Default,,0,0,0,,This is where the real shock
-Dialogue: 0,0:02:59.82,0:03:00.19,Default,,0,0,0,,begins.
-Dialogue: 0,0:03:00.64,0:03:01.85,Default,,0,0,0,,Fast forward a few years.
-Dialogue: 0,0:03:01.85,0:03:03.66,Default,,0,0,0,,The family needs money for a
-Dialogue: 0,0:03:03.66,0:03:04.46,Default,,0,0,0,,hospital bill,
-Dialogue: 0,0:03:04.46,0:03:05.87,Default,,0,0,0,,or a child's college fees.
-Dialogue: 0,0:03:05.87,0:03:07.48,Default,,0,0,0,,The necklace goes back to the
-Dialogue: 0,0:03:07.48,0:03:07.68,Default,,0,0,0,,shop.
-Dialogue: 0,0:03:08.13,0:03:09.98,Default,,0,0,0,,The jeweller weighs it again and
-Dialogue: 0,0:03:09.98,0:03:11.01,Default,,0,0,0,,tests the purity.
-Dialogue: 0,0:03:11.01,0:03:12.66,Default,,0,0,0,,Then he checks today's gold rate
-Dialogue: 0,0:03:12.66,0:03:13.89,Default,,0,0,0,,and makes an offer.
-Dialogue: 0,0:03:13.89,0:03:14.71,Default,,0,0,0,,The mother waits,
-Dialogue: 0,0:03:14.71,0:03:15.33,Default,,0,0,0,,hopeful.
-Dialogue: 0,0:03:15.78,0:03:16.38,Default,,0,0,0,,Usually,
-Dialogue: 0,0:03:16.38,0:03:17.97,Default,,0,0,0,,the offer is only for the
-Dialogue: 0,0:03:17.97,0:03:18.77,Default,,0,0,0,,gold inside.
-Dialogue: 0,0:03:18.77,0:03:20.17,Default,,0,0,0,,The making charge she paid?
-Dialogue: 0,0:03:20.17,0:03:20.56,Default,,0,0,0,,Gone.
-Dialogue: 0,0:03:20.56,0:03:22.16,Default,,0,0,0,,The GST on that making charge?
-Dialogue: 0,0:03:22.16,0:03:22.96,Default,,0,0,0,,Also gone.
-Dialogue: 0,0:03:23.41,0:03:24.83,Default,,0,0,0,,And the 3 percent GST on
-Dialogue: 0,0:03:24.83,0:03:25.24,Default,,0,0,0,,the gold?
-Dialogue: 0,0:03:25.24,0:03:26.86,Default,,0,0,0,,That does not come back either.
-Dialogue: 0,0:03:26.86,0:03:28.49,Default,,0,0,0,,Tax paid on a purchase is
-Dialogue: 0,0:03:28.49,0:03:30.11,Default,,0,0,0,,not refunded to you when you
-Dialogue: 0,0:03:30.11,0:03:30.31,Default,,0,0,0,,sell.
-Dialogue: 0,0:03:30.76,0:03:31.87,Default,,0,0,0,,So the cost part of your
-Dialogue: 0,0:03:31.87,0:03:33.53,Default,,0,0,0,,bill vanished on the very first
-Dialogue: 0,0:03:33.53,0:03:33.71,Default,,0,0,0,,day.
-Dialogue: 0,0:03:33.71,0:03:35.18,Default,,0,0,0,,The moment you walked out of
-Dialogue: 0,0:03:35.18,0:03:35.55,Default,,0,0,0,,the shop,
-Dialogue: 0,0:03:35.55,0:03:36.10,Default,,0,0,0,,it was lost.
-Dialogue: 0,0:03:36.56,0:03:38.29,Default,,0,0,0,,There can be another cut too.
-Dialogue: 0,0:03:38.29,0:03:40.41,Default,,0,0,0,,Some jewellers deduct a small amount
-Dialogue: 0,0:03:40.41,0:03:41.95,Default,,0,0,0,,for melting or purity loss.
-Dialogue: 0,0:03:41.95,0:03:43.68,Default,,0,0,0,,Ask about this before you buy,
-Dialogue: 0,0:03:43.68,0:03:44.26,Default,,0,0,0,,not after.
-Dialogue: 0,0:03:44.71,0:03:44.91,Default,,0,0,0,,Now,
-Dialogue: 0,0:03:44.91,0:03:46.75,Default,,0,0,0,,the gold price may rise over
-Dialogue: 0,0:03:46.75,0:03:47.36,Default,,0,0,0,,those years.
-Dialogue: 0,0:03:47.36,0:03:48.99,Default,,0,0,0,,That rise can cover the loss.
-Dialogue: 0,0:03:48.99,0:03:50.41,Default,,0,0,0,,But first it must rise just
-Dialogue: 0,0:03:50.41,0:03:51.84,Default,,0,0,0,,to get you back to where
-Dialogue: 0,0:03:51.84,0:03:52.45,Default,,0,0,0,,you started.
-Dialogue: 0,0:03:52.90,0:03:54.05,Default,,0,0,0,,That is the hidden trap.
-Dialogue: 0,0:03:54.05,0:03:55.78,Default,,0,0,0,,Your jewellery must climb a hill
-Dialogue: 0,0:03:55.78,0:03:57.89,Default,,0,0,0,,before it even reaches the starting
-Dialogue: 0,0:03:57.89,0:03:58.28,Default,,0,0,0,,line.
-Dialogue: 0,0:03:58.28,0:03:59.62,Default,,0,0,0,,A plain coin starts much closer.
-Dialogue: 0,0:04:00.07,0:04:00.51,Default,,0,0,0,,But wait,
-Dialogue: 0,0:04:00.51,0:04:02.07,Default,,0,0,0,,selling has a second risk.
-Dialogue: 0,0:04:02.07,0:04:03.40,Default,,0,0,0,,What if the gold is not
-Dialogue: 0,0:04:03.40,0:04:04.95,Default,,0,0,0,,as pure as the bill said?
-Dialogue: 0,0:04:04.95,0:04:07.17,Default,,0,0,0,,Who decides the purity at the
-Dialogue: 0,0:04:07.17,0:04:07.62,Default,,0,0,0,,counter?
-Dialogue: 0,0:04:08.07,0:04:08.45,Default,,0,0,0,,For years,
-Dialogue: 0,0:04:08.45,0:04:10.75,Default,,0,0,0,,old family jewellery carried no proof
-Dialogue: 0,0:04:10.75,0:04:11.52,Default,,0,0,0,,of purity.
-Dialogue: 0,0:04:11.52,0:04:12.47,Default,,0,0,0,,The buyer tested it,
-Dialogue: 0,0:04:12.47,0:04:14.20,Default,,0,0,0,,and the family simply had to
-Dialogue: 0,0:04:14.20,0:04:14.77,Default,,0,0,0,,trust his word.
-Dialogue: 0,0:04:15.22,0:04:16.70,Default,,0,0,0,,This is why hallmarking matters.
-Dialogue: 0,0:04:16.70,0:04:18.92,Default,,0,0,0,,Every hallmarked piece now carries a
-Dialogue: 0,0:04:18.92,0:04:20.40,Default,,0,0,0,,unique code called HUID.
-Dialogue: 0,0:04:20.40,0:04:22.06,Default,,0,0,0,,It works like an Aadhaar number
-Dialogue: 0,0:04:22.06,0:04:23.17,Default,,0,0,0,,for your jewellery.
-Dialogue: 0,0:04:23.62,0:04:25.13,Default,,0,0,0,,Hallmarking is run by BIS,
-Dialogue: 0,0:04:25.13,0:04:26.84,Default,,0,0,0,,the Bureau of Indian Standards.
-Dialogue: 0,0:04:26.84,0:04:28.78,Default,,0,0,0,,An approved centre tests the gold
-Dialogue: 0,0:04:28.78,0:04:30.49,Default,,0,0,0,,and stamps its purity right on
-Dialogue: 0,0:04:30.49,0:04:31.14,Default,,0,0,0,,the piece.
-Dialogue: 0,0:04:31.59,0:04:33.08,Default,,0,0,0,,Hallmarking is now mandatory,
-Dialogue: 0,0:04:33.08,0:04:34.25,Default,,0,0,0,,and the scale is huge.
-Dialogue: 0,0:04:34.25,0:04:36.08,Default,,0,0,0,,Over 65 crore gold pieces have
-Dialogue: 0,0:04:36.08,0:04:37.07,Default,,0,0,0,,received this code.
-Dialogue: 0,0:04:37.07,0:04:38.24,Default,,0,0,0,,That is the government's count,
-Dialogue: 0,0:04:38.24,0:04:39.24,Default,,0,0,0,,as of this October.
-Dialogue: 0,0:04:39.69,0:04:40.85,Default,,0,0,0,,So before you pay,
-Dialogue: 0,0:04:40.85,0:04:42.22,Default,,0,0,0,,look for these marks on the
-Dialogue: 0,0:04:42.22,0:04:42.61,Default,,0,0,0,,piece.
-Dialogue: 0,0:04:42.61,0:04:43.38,Default,,0,0,0,,The BIS logo,
-Dialogue: 0,0:04:43.38,0:04:44.55,Default,,0,0,0,,the purity grade,
-Dialogue: 0,0:04:44.55,0:04:45.53,Default,,0,0,0,,and the HUID code.
-Dialogue: 0,0:04:45.53,0:04:46.89,Default,,0,0,0,,Match the code with your bill.
-Dialogue: 0,0:04:47.34,0:04:48.58,Default,,0,0,0,,You can check the HUID yourself
-Dialogue: 0,0:04:48.58,0:04:49.64,Default,,0,0,0,,on the BIS Care app.
-Dialogue: 0,0:04:49.64,0:04:51.05,Default,,0,0,0,,It shows the purity and the
-Dialogue: 0,0:04:51.05,0:04:52.99,Default,,0,0,0,,jeweller who registered that piece.
-Dialogue: 0,0:04:53.44,0:04:55.51,Default,,0,0,0,,A hallmark protects your purity.
-Dialogue: 0,0:04:55.51,0:04:57.11,Default,,0,0,0,,But it does not protect your
-Dialogue: 0,0:04:57.11,0:04:58.03,Default,,0,0,0,,making charge.
-Dialogue: 0,0:04:58.03,0:04:59.64,Default,,0,0,0,,That money is still lost the
-Dialogue: 0,0:04:59.64,0:05:00.33,Default,,0,0,0,,day you sell.
-Dialogue: 0,0:05:00.78,0:05:02.15,Default,,0,0,0,,So if you buy gold only
-Dialogue: 0,0:05:02.15,0:05:02.74,Default,,0,0,0,,to save,
-Dialogue: 0,0:05:02.74,0:05:04.32,Default,,0,0,0,,is there a smarter way to
-Dialogue: 0,0:05:04.32,0:05:04.71,Default,,0,0,0,,hold it?
-Dialogue: 0,0:05:04.71,0:05:06.48,Default,,0,0,0,,Here is where most people get
-Dialogue: 0,0:05:06.48,0:05:07.07,Default,,0,0,0,,surprised.
-Dialogue: 0,0:05:07.52,0:05:09.40,Default,,0,0,0,,Picture a brother and a sister.
-Dialogue: 0,0:05:09.40,0:05:10.72,Default,,0,0,0,,Both get a bonus at work,
-Dialogue: 0,0:05:10.72,0:05:11.47,Default,,0,0,0,,and both want gold.
-Dialogue: 0,0:05:11.47,0:05:12.41,Default,,0,0,0,,She wants to wear it.
-Dialogue: 0,0:05:12.41,0:05:13.73,Default,,0,0,0,,He only wants to save.
-Dialogue: 0,0:05:14.18,0:05:14.86,Default,,0,0,0,,For the sister,
-Dialogue: 0,0:05:14.86,0:05:16.21,Default,,0,0,0,,jewellery makes sense.
-Dialogue: 0,0:05:16.21,0:05:17.57,Default,,0,0,0,,She will wear it at every
-Dialogue: 0,0:05:17.57,0:05:18.59,Default,,0,0,0,,wedding and festival.
-Dialogue: 0,0:05:18.59,0:05:20.12,Default,,0,0,0,,The making charge is the price
-Dialogue: 0,0:05:20.12,0:05:21.14,Default,,0,0,0,,of beauty she enjoys.
-Dialogue: 0,0:05:21.59,0:05:22.54,Default,,0,0,0,,But for the brother,
-Dialogue: 0,0:05:22.54,0:05:24.63,Default,,0,0,0,,the making charge is pure leakage.
-Dialogue: 0,0:05:24.63,0:05:26.33,Default,,0,0,0,,Leakage means money that drips out
-Dialogue: 0,0:05:26.33,0:05:28.04,Default,,0,0,0,,and never becomes an asset.
-Dialogue: 0,0:05:28.04,0:05:29.37,Default,,0,0,0,,So what are his choices?
-Dialogue: 0,0:05:29.82,0:05:30.01,Default,,0,0,0,,First,
-Dialogue: 0,0:05:30.01,0:05:31.13,Default,,0,0,0,,a gold coin or a small
-Dialogue: 0,0:05:31.13,0:05:31.31,Default,,0,0,0,,bar.
-Dialogue: 0,0:05:31.31,0:05:31.88,Default,,0,0,0,,Plain metal,
-Dialogue: 0,0:05:31.88,0:05:33.37,Default,,0,0,0,,with very little design work.
-Dialogue: 0,0:05:33.37,0:05:35.05,Default,,0,0,0,,So the making cost is usually
-Dialogue: 0,0:05:35.05,0:05:36.73,Default,,0,0,0,,much lower than on jewellery.
-Dialogue: 0,0:05:37.18,0:05:38.48,Default,,0,0,0,,But a coin still pays the
-Dialogue: 0,0:05:38.48,0:05:39.77,Default,,0,0,0,,same GST on the gold.
-Dialogue: 0,0:05:39.77,0:05:40.85,Default,,0,0,0,,And at resale,
-Dialogue: 0,0:05:40.85,0:05:42.15,Default,,0,0,0,,a buyer may still cut a
-Dialogue: 0,0:05:42.15,0:05:42.58,Default,,0,0,0,,little.
-Dialogue: 0,0:05:42.58,0:05:43.23,Default,,0,0,0,,Smaller leak,
-Dialogue: 0,0:05:43.23,0:05:44.09,Default,,0,0,0,,but still a leak.
-Dialogue: 0,0:05:44.54,0:05:44.81,Default,,0,0,0,,Then,
-Dialogue: 0,0:05:44.81,0:05:45.62,Default,,0,0,0,,a gold ETF.
-Dialogue: 0,0:05:45.62,0:05:47.79,Default,,0,0,0,,ETF means exchange traded fund.
-Dialogue: 0,0:05:47.79,0:05:49.41,Default,,0,0,0,,It is a fund that buys
-Dialogue: 0,0:05:49.41,0:05:51.30,Default,,0,0,0,,real gold and splits it into
-Dialogue: 0,0:05:51.30,0:05:52.11,Default,,0,0,0,,small units.
-Dialogue: 0,0:05:52.56,0:05:53.98,Default,,0,0,0,,You buy these units on the
-Dialogue: 0,0:05:53.98,0:05:54.51,Default,,0,0,0,,stock market,
-Dialogue: 0,0:05:54.51,0:05:55.40,Default,,0,0,0,,like a share.
-Dialogue: 0,0:05:55.40,0:05:56.65,Default,,0,0,0,,You need a demat account,
-Dialogue: 0,0:05:56.65,0:05:58.24,Default,,0,0,0,,your online locker for shares.
-Dialogue: 0,0:05:58.24,0:05:59.84,Default,,0,0,0,,Each unit follows the gold price.
-Dialogue: 0,0:06:00.29,0:06:02.16,Default,,0,0,0,,Here is the big difference.
-Dialogue: 0,0:06:02.16,0:06:04.04,Default,,0,0,0,,There is no making charge at
-Dialogue: 0,0:06:04.04,0:06:04.24,Default,,0,0,0,,all.
-Dialogue: 0,0:06:04.24,0:06:05.91,Default,,0,0,0,,And buying gold ETF units attracts
-Dialogue: 0,0:06:05.91,0:06:06.32,Default,,0,0,0,,no GST,
-Dialogue: 0,0:06:06.32,0:06:07.15,Default,,0,0,0,,as reported.
-Dialogue: 0,0:06:07.15,0:06:07.78,Default,,0,0,0,,No locker,
-Dialogue: 0,0:06:07.78,0:06:08.61,Default,,0,0,0,,no theft worry.
-Dialogue: 0,0:06:09.06,0:06:10.39,Default,,0,0,0,,So what does an ETF cost?
-Dialogue: 0,0:06:10.39,0:06:12.15,Default,,0,0,0,,A small yearly fee called the
-Dialogue: 0,0:06:12.15,0:06:13.26,Default,,0,0,0,,expense ratio.
-Dialogue: 0,0:06:13.26,0:06:15.47,Default,,0,0,0,,One large gold ETF reported a
-Dialogue: 0,0:06:15.47,0:06:17.01,Default,,0,0,0,,fee of 0.68 percent for a
-Dialogue: 0,0:06:17.01,0:06:17.68,Default,,0,0,0,,recent year.
-Dialogue: 0,0:06:18.13,0:06:20.23,Default,,0,0,0,,Expense ratio simply means the fund's
-Dialogue: 0,0:06:20.23,0:06:21.28,Default,,0,0,0,,yearly running fee,
-Dialogue: 0,0:06:21.28,0:06:22.96,Default,,0,0,0,,taken quietly from your money.
-Dialogue: 0,0:06:22.96,0:06:23.17,Default,,0,0,0,,Small,
-Dialogue: 0,0:06:23.17,0:06:24.86,Default,,0,0,0,,but it adds up over many
-Dialogue: 0,0:06:24.86,0:06:25.07,Default,,0,0,0,,years.
-Dialogue: 0,0:06:25.52,0:06:26.63,Default,,0,0,0,,And selling is simple.
-Dialogue: 0,0:06:26.63,0:06:28.11,Default,,0,0,0,,You sell units on the market
-Dialogue: 0,0:06:28.11,0:06:29.04,Default,,0,0,0,,near the gold price.
-Dialogue: 0,0:06:29.04,0:06:29.59,Default,,0,0,0,,No weighing,
-Dialogue: 0,0:06:29.59,0:06:30.15,Default,,0,0,0,,no testing,
-Dialogue: 0,0:06:30.15,0:06:32.19,Default,,0,0,0,,no purity argument at the counter.
-Dialogue: 0,0:06:32.64,0:06:34.41,Default,,0,0,0,,There may be a small brokerage,
-Dialogue: 0,0:06:34.41,0:06:35.65,Default,,0,0,0,,which is your broker's fee per
-Dialogue: 0,0:06:35.65,0:06:36.00,Default,,0,0,0,,trade.
-Dialogue: 0,0:06:36.00,0:06:37.60,Default,,0,0,0,,But it is nothing like losing
-Dialogue: 0,0:06:37.60,0:06:38.84,Default,,0,0,0,,a whole making charge.
-Dialogue: 0,0:06:39.29,0:06:40.38,Default,,0,0,0,,So which one wins?
-Dialogue: 0,0:06:40.38,0:06:41.90,Default,,0,0,0,,It depends on why you buy.
-Dialogue: 0,0:06:41.90,0:06:43.43,Default,,0,0,0,,For wearing and tradition,
-Dialogue: 0,0:06:43.43,0:06:44.30,Default,,0,0,0,,jewellery.
-Dialogue: 0,0:06:44.30,0:06:45.39,Default,,0,0,0,,For pure saving,
-Dialogue: 0,0:06:45.39,0:06:46.70,Default,,0,0,0,,the leak matters a lot.
-Dialogue: 0,0:06:47.15,0:06:49.26,Default,,0,0,0,,But even smart savers make one
-Dialogue: 0,0:06:49.26,0:06:50.31,Default,,0,0,0,,common mistake.
-Dialogue: 0,0:06:50.31,0:06:51.79,Default,,0,0,0,,It is not about the shop
-Dialogue: 0,0:06:51.79,0:06:52.21,Default,,0,0,0,,at all.
-Dialogue: 0,0:06:52.21,0:06:53.89,Default,,0,0,0,,It is about timing and tax.
-Dialogue: 0,0:06:53.89,0:06:54.53,Default,,0,0,0,,Let us see.
-Dialogue: 0,0:06:54.98,0:06:56.13,Default,,0,0,0,,Sell physical gold,
-Dialogue: 0,0:06:56.13,0:06:57.52,Default,,0,0,0,,jewellery or coins,
-Dialogue: 0,0:06:57.52,0:06:58.44,Default,,0,0,0,,at a profit,
-Dialogue: 0,0:06:58.44,0:06:59.36,Default,,0,0,0,,and tax applies.
-Dialogue: 0,0:06:59.36,0:07:00.98,Default,,0,0,0,,Hold it at least 24 months
-Dialogue: 0,0:07:00.98,0:07:02.13,Default,,0,0,0,,to count as long term.
-Dialogue: 0,0:07:02.58,0:07:04.12,Default,,0,0,0,,Long term profit on gold is
-Dialogue: 0,0:07:04.12,0:07:05.43,Default,,0,0,0,,taxed at 12.5 percent,
-Dialogue: 0,0:07:05.43,0:07:06.75,Default,,0,0,0,,without indexation.
-Dialogue: 0,0:07:06.75,0:07:08.94,Default,,0,0,0,,Indexation means raising your cost for
-Dialogue: 0,0:07:08.94,0:07:09.82,Default,,0,0,0,,rising prices.
-Dialogue: 0,0:07:09.82,0:07:10.26,Default,,0,0,0,,Here,
-Dialogue: 0,0:07:10.26,0:07:11.35,Default,,0,0,0,,you do not get that.
-Dialogue: 0,0:07:11.80,0:07:12.69,Default,,0,0,0,,Now the mistake.
-Dialogue: 0,0:07:12.69,0:07:14.81,Default,,0,0,0,,A family buys jewellery as savings.
-Dialogue: 0,0:07:14.81,0:07:15.87,Default,,0,0,0,,Then they sell it in a
-Dialogue: 0,0:07:15.87,0:07:16.23,Default,,0,0,0,,hurry.
-Dialogue: 0,0:07:16.23,0:07:17.64,Default,,0,0,0,,They lose the making charge,
-Dialogue: 0,0:07:17.64,0:07:19.24,Default,,0,0,0,,and any profit is taxed at
-Dialogue: 0,0:07:19.24,0:07:20.12,Default,,0,0,0,,their income slab.
-Dialogue: 0,0:07:20.57,0:07:22.39,Default,,0,0,0,,The real mistake is mixing beauty
-Dialogue: 0,0:07:22.39,0:07:24.21,Default,,0,0,0,,and savings in a single purchase.
-Dialogue: 0,0:07:24.21,0:07:25.84,Default,,0,0,0,,Jewellery is great for wearing.
-Dialogue: 0,0:07:25.84,0:07:27.12,Default,,0,0,0,,It is a costly way to
-Dialogue: 0,0:07:27.12,0:07:27.48,Default,,0,0,0,,save.
-Dialogue: 0,0:07:27.93,0:07:28.70,Default,,0,0,0,,So what can you do?
-Dialogue: 0,0:07:28.70,0:07:29.48,Default,,0,0,0,,Before you buy,
-Dialogue: 0,0:07:29.48,0:07:30.87,Default,,0,0,0,,ask the jeweller to write the
-Dialogue: 0,0:07:30.87,0:07:32.72,Default,,0,0,0,,making charge as a separate line
-Dialogue: 0,0:07:32.72,0:07:33.19,Default,,0,0,0,,on the bill.
-Dialogue: 0,0:07:33.64,0:07:34.87,Default,,0,0,0,,Ask for the buyback terms in
-Dialogue: 0,0:07:34.87,0:07:35.22,Default,,0,0,0,,writing.
-Dialogue: 0,0:07:35.22,0:07:36.46,Default,,0,0,0,,How much will the shop deduct
-Dialogue: 0,0:07:36.46,0:07:37.34,Default,,0,0,0,,if you sell later?
-Dialogue: 0,0:07:37.34,0:07:38.92,Default,,0,0,0,,A good jeweller answers clearly.
-Dialogue: 0,0:07:39.37,0:07:40.69,Default,,0,0,0,,Check the hallmark and the HUID
-Dialogue: 0,0:07:40.69,0:07:41.81,Default,,0,0,0,,on the BIS Care app.
-Dialogue: 0,0:07:41.81,0:07:43.32,Default,,0,0,0,,If you only want to save,
-Dialogue: 0,0:07:43.32,0:07:45.76,Default,,0,0,0,,compare coins and ETFs before jewellery.
-Dialogue: 0,0:07:46.21,0:07:47.68,Default,,0,0,0,,Before selling physical gold,
-Dialogue: 0,0:07:47.68,0:07:49.15,Default,,0,0,0,,check if you have crossed 24
-Dialogue: 0,0:07:49.15,0:07:49.31,Default,,0,0,0,,months.
-Dialogue: 0,0:07:49.31,0:07:50.62,Default,,0,0,0,,Rules and rates can change,
-Dialogue: 0,0:07:50.62,0:07:52.09,Default,,0,0,0,,so check the latest before you
-Dialogue: 0,0:07:52.09,0:07:52.25,Default,,0,0,0,,act.
-Dialogue: 0,0:07:52.70,0:07:54.33,Default,,0,0,0,,This is not investment advice.
-Dialogue: 0,0:07:54.33,0:07:55.42,Default,,0,0,0,,It is simply your bill,
-Dialogue: 0,0:07:55.42,0:07:56.87,Default,,0,0,0,,explained line by line,
-Dialogue: 0,0:07:56.87,0:07:58.68,Default,,0,0,0,,so you know where every rupee
-Dialogue: 0,0:07:58.68,0:07:58.86,Default,,0,0,0,,goes.
-Dialogue: 0,0:07:58.86,0:07:59.40,Default,,0,0,0,,Your choice,
-Dialogue: 0,0:07:59.40,0:07:59.94,Default,,0,0,0,,your reasons.
-Dialogue: 0,0:08:00.39,0:08:00.58,Default,,0,0,0,,So,
-Dialogue: 0,0:08:00.58,0:08:01.33,Default,,0,0,0,,you paid for gold.
-Dialogue: 0,0:08:01.33,0:08:02.64,Default,,0,0,0,,How much gold came home?
-Dialogue: 0,0:08:02.64,0:08:04.14,Default,,0,0,0,,Only the gold line on your
-Dialogue: 0,0:08:04.14,0:08:04.33,Default,,0,0,0,,bill.
-Dialogue: 0,0:08:04.33,0:08:06.39,Default,,0,0,0,,Everything else was the price of
-Dialogue: 0,0:08:06.39,0:08:06.76,Default,,0,0,0,,beauty.
-Dialogue: 0,0:08:07.21,0:08:08.21,Default,,0,0,0,,Send this to your mother,
-Dialogue: 0,0:08:08.21,0:08:10.04,Default,,0,0,0,,who is planning the wedding jewellery
-Dialogue: 0,0:08:10.04,0:08:10.53,Default,,0,0,0,,this season.
-Dialogue: 0,0:08:10.53,0:08:12.03,Default,,0,0,0,,Let her read every line of
-Dialogue: 0,0:08:12.03,0:08:13.02,Default,,0,0,0,,the bill before paying.
-Dialogue: 0,0:08:13.47,0:08:14.71,Default,,0,0,0,,Now tell me in the comments.
-Dialogue: 0,0:08:14.71,0:08:15.60,Default,,0,0,0,,In your family,
-Dialogue: 0,0:08:15.60,0:08:16.83,Default,,0,0,0,,is gold for wearing or for
-Dialogue: 0,0:08:16.83,0:08:17.19,Default,,0,0,0,,saving?
-Dialogue: 0,0:08:17.19,0:08:17.72,Default,,0,0,0,,Next time,
-Dialogue: 0,0:08:17.72,0:08:19.49,Default,,0,0,0,,we decode another bill most of
-Dialogue: 0,0:08:19.49,0:08:20.19,Default,,0,0,0,,us never read.
+Dialogue: 0,0:00:00.00,0:00:01.51,Default,,0,0,0,,You paid the jeweller for gold.
+Dialogue: 0,0:00:01.51,0:00:03.21,Default,,0,0,0,,So how much gold actually came
+Dialogue: 0,0:00:03.21,0:00:03.58,Default,,0,0,0,,home?
+Dialogue: 0,0:00:03.58,0:00:04.15,Default,,0,0,0,,Not the bill,
+Dialogue: 0,0:00:04.15,0:00:04.72,Default,,0,0,0,,not the box.
+Dialogue: 0,0:00:04.72,0:00:06.04,Default,,0,0,0,,The real metal you can sell
+Dialogue: 0,0:00:06.04,0:00:06.60,Default,,0,0,0,,tomorrow.
+Dialogue: 0,0:00:07.05,0:00:08.83,Default,,0,0,0,,Most families never ask this question.
+Dialogue: 0,0:00:08.83,0:00:09.90,Default,,0,0,0,,The jeweller smiles,
+Dialogue: 0,0:00:09.90,0:00:11.15,Default,,0,0,0,,and the bill shows the total.
+Dialogue: 0,0:00:11.15,0:00:13.10,Default,,0,0,0,,Everyone believes all of it went
+Dialogue: 0,0:00:13.10,0:00:13.64,Default,,0,0,0,,into gold.
+Dialogue: 0,0:00:14.09,0:00:15.23,Default,,0,0,0,,But here is the twist.
+Dialogue: 0,0:00:15.23,0:00:16.75,Default,,0,0,0,,A real slice of that money
+Dialogue: 0,0:00:16.75,0:00:17.89,Default,,0,0,0,,never becomes gold.
+Dialogue: 0,0:00:17.89,0:00:19.40,Default,,0,0,0,,It goes to making charges and
+Dialogue: 0,0:00:19.40,0:00:19.59,Default,,0,0,0,,GST,
+Dialogue: 0,0:00:19.59,0:00:20.73,Default,,0,0,0,,on the very first day.
+Dialogue: 0,0:00:21.18,0:00:22.09,Default,,0,0,0,,And the day you sell,
+Dialogue: 0,0:00:22.09,0:00:23.35,Default,,0,0,0,,that part simply disappears.
+Dialogue: 0,0:00:23.35,0:00:25.16,Default,,0,0,0,,Many jewellers pay you only for
+Dialogue: 0,0:00:25.16,0:00:25.71,Default,,0,0,0,,the metal.
+Dialogue: 0,0:00:25.71,0:00:27.15,Default,,0,0,0,,The rest is gone forever,
+Dialogue: 0,0:00:27.15,0:00:28.78,Default,,0,0,0,,and almost nobody notices.
+Dialogue: 0,0:00:29.23,0:00:31.20,Default,,0,0,0,,So is jewellery a bad buy?
+Dialogue: 0,0:00:31.20,0:00:31.86,Default,,0,0,0,,Not at all.
+Dialogue: 0,0:00:31.86,0:00:33.83,Default,,0,0,0,,A wedding necklace is love,
+Dialogue: 0,0:00:33.83,0:00:35.14,Default,,0,0,0,,tradition and pride.
+Dialogue: 0,0:00:35.14,0:00:36.67,Default,,0,0,0,,But is it also a smart
+Dialogue: 0,0:00:36.67,0:00:37.55,Default,,0,0,0,,way to save?
+Dialogue: 0,0:00:38.00,0:00:39.73,Default,,0,0,0,,Wedding season has just started after
+Dialogue: 0,0:00:39.73,0:00:40.42,Default,,0,0,0,,Dev Uthani.
+Dialogue: 0,0:00:40.42,0:00:42.68,Default,,0,0,0,,Families across India are walking into
+Dialogue: 0,0:00:42.68,0:00:43.89,Default,,0,0,0,,jewellery shops right now.
+Dialogue: 0,0:00:43.89,0:00:45.97,Default,,0,0,0,,This question touches almost every Indian
+Dialogue: 0,0:00:45.97,0:00:46.31,Default,,0,0,0,,home.
+Dialogue: 0,0:00:46.76,0:00:47.25,Default,,0,0,0,,Today,
+Dialogue: 0,0:00:47.25,0:00:47.98,Default,,0,0,0,,3 questions.
+Dialogue: 0,0:00:47.98,0:00:48.23,Default,,0,0,0,,First,
+Dialogue: 0,0:00:48.23,0:00:50.66,Default,,0,0,0,,where does your money actually go
+Dialogue: 0,0:00:50.66,0:00:51.40,Default,,0,0,0,,on the bill?
+Dialogue: 0,0:00:51.40,0:00:51.64,Default,,0,0,0,,Then,
+Dialogue: 0,0:00:51.64,0:00:53.35,Default,,0,0,0,,what do you really get back
+Dialogue: 0,0:00:53.35,0:00:54.08,Default,,0,0,0,,when you sell?
+Dialogue: 0,0:00:54.53,0:00:55.02,Default,,0,0,0,,And last,
+Dialogue: 0,0:00:55.02,0:00:56.25,Default,,0,0,0,,if gold is savings,
+Dialogue: 0,0:00:56.25,0:00:57.98,Default,,0,0,0,,is there a smarter way?
+Dialogue: 0,0:00:57.98,0:00:58.23,Default,,0,0,0,,Coin,
+Dialogue: 0,0:00:58.23,0:01:00.20,Default,,0,0,0,,jewellery or a gold ETF?
+Dialogue: 0,0:01:00.20,0:01:01.18,Default,,0,0,0,,Stay till the end,
+Dialogue: 0,0:01:01.18,0:01:03.40,Default,,0,0,0,,the answer surprises most people.
+Dialogue: 0,0:01:03.85,0:01:05.56,Default,,0,0,0,,Picture a mother in a busy
+Dialogue: 0,0:01:05.56,0:01:06.59,Default,,0,0,0,,jewellery market.
+Dialogue: 0,0:01:06.59,0:01:08.14,Default,,0,0,0,,Her daughter's wedding is coming soon.
+Dialogue: 0,0:01:08.14,0:01:09.16,Default,,0,0,0,,She has saved slowly,
+Dialogue: 0,0:01:09.16,0:01:10.02,Default,,0,0,0,,over many months,
+Dialogue: 0,0:01:10.02,0:01:11.22,Default,,0,0,0,,for a single necklace.
+Dialogue: 0,0:01:11.67,0:01:13.19,Default,,0,0,0,,She picks a design she loves.
+Dialogue: 0,0:01:13.19,0:01:14.70,Default,,0,0,0,,The jeweller weighs it and checks
+Dialogue: 0,0:01:14.70,0:01:15.65,Default,,0,0,0,,today's gold rate.
+Dialogue: 0,0:01:15.65,0:01:16.97,Default,,0,0,0,,Then he starts writing the bill,
+Dialogue: 0,0:01:16.97,0:01:17.92,Default,,0,0,0,,line by line.
+Dialogue: 0,0:01:18.37,0:01:19.89,Default,,0,0,0,,The first line is the gold
+Dialogue: 0,0:01:19.89,0:01:20.33,Default,,0,0,0,,itself.
+Dialogue: 0,0:01:20.33,0:01:22.29,Default,,0,0,0,,Weight multiplied by today's rate.
+Dialogue: 0,0:01:22.29,0:01:23.81,Default,,0,0,0,,This is the only part that
+Dialogue: 0,0:01:23.81,0:01:24.68,Default,,0,0,0,,is real metal,
+Dialogue: 0,0:01:24.68,0:01:25.55,Default,,0,0,0,,the part you own.
+Dialogue: 0,0:01:26.00,0:01:27.74,Default,,0,0,0,,Next comes the making charge.
+Dialogue: 0,0:01:27.74,0:01:29.05,Default,,0,0,0,,That is the fee for the
+Dialogue: 0,0:01:29.05,0:01:29.71,Default,,0,0,0,,craftsman's work:
+Dialogue: 0,0:01:29.71,0:01:30.14,Default,,0,0,0,,cutting,
+Dialogue: 0,0:01:30.14,0:01:30.58,Default,,0,0,0,,shaping,
+Dialogue: 0,0:01:30.58,0:01:31.89,Default,,0,0,0,,polishing and design.
+Dialogue: 0,0:01:31.89,0:01:32.97,Default,,0,0,0,,Here is the catch.
+Dialogue: 0,0:01:32.97,0:01:34.72,Default,,0,0,0,,There is no fixed rate.
+Dialogue: 0,0:01:35.17,0:01:36.99,Default,,0,0,0,,Some jewellers charge it per gram.
+Dialogue: 0,0:01:36.99,0:01:38.99,Default,,0,0,0,,Others charge a percentage of the
+Dialogue: 0,0:01:38.99,0:01:39.53,Default,,0,0,0,,gold value.
+Dialogue: 0,0:01:39.53,0:01:40.08,Default,,0,0,0,,A fine,
+Dialogue: 0,0:01:40.08,0:01:42.08,Default,,0,0,0,,detailed necklace costs far more to
+Dialogue: 0,0:01:42.08,0:01:43.17,Default,,0,0,0,,make than a plain chain.
+Dialogue: 0,0:01:43.62,0:01:44.56,Default,,0,0,0,,And notice this.
+Dialogue: 0,0:01:44.56,0:01:46.25,Default,,0,0,0,,The making charge buys you beauty,
+Dialogue: 0,0:01:46.25,0:01:46.62,Default,,0,0,0,,not gold.
+Dialogue: 0,0:01:46.62,0:01:48.12,Default,,0,0,0,,Not a single gram of metal
+Dialogue: 0,0:01:48.12,0:01:49.24,Default,,0,0,0,,comes from that money.
+Dialogue: 0,0:01:49.24,0:01:50.37,Default,,0,0,0,,Remember this line.
+Dialogue: 0,0:01:50.82,0:01:51.68,Default,,0,0,0,,Then comes GST.
+Dialogue: 0,0:01:51.68,0:01:53.20,Default,,0,0,0,,On the value of the gold,
+Dialogue: 0,0:01:53.20,0:01:54.28,Default,,0,0,0,,GST is 3 percent.
+Dialogue: 0,0:01:54.28,0:01:56.22,Default,,0,0,0,,The GST Council fixed this rate,
+Dialogue: 0,0:01:56.22,0:01:57.74,Default,,0,0,0,,and it applies to coins and
+Dialogue: 0,0:01:57.74,0:01:58.17,Default,,0,0,0,,bars too.
+Dialogue: 0,0:01:58.62,0:02:00.19,Default,,0,0,0,,But the making charge has its
+Dialogue: 0,0:02:00.19,0:02:00.58,Default,,0,0,0,,own GST.
+Dialogue: 0,0:02:00.58,0:02:01.37,Default,,0,0,0,,As reported,
+Dialogue: 0,0:02:01.37,0:02:02.35,Default,,0,0,0,,it is 5 percent,
+Dialogue: 0,0:02:02.35,0:02:03.73,Default,,0,0,0,,charged separately.
+Dialogue: 0,0:02:03.73,0:02:04.91,Default,,0,0,0,,So you pay tax on the
+Dialogue: 0,0:02:04.91,0:02:05.69,Default,,0,0,0,,craftsman's fee too.
+Dialogue: 0,0:02:06.14,0:02:07.49,Default,,0,0,0,,Add it all up and you
+Dialogue: 0,0:02:07.49,0:02:08.62,Default,,0,0,0,,get the final bill.
+Dialogue: 0,0:02:08.62,0:02:09.96,Default,,0,0,0,,Now ask the real question,
+Dialogue: 0,0:02:09.96,0:02:11.54,Default,,0,0,0,,the one nobody asks.
+Dialogue: 0,0:02:11.54,0:02:13.34,Default,,0,0,0,,How much of that is actually
+Dialogue: 0,0:02:13.34,0:02:13.56,Default,,0,0,0,,gold?
+Dialogue: 0,0:02:14.01,0:02:15.30,Default,,0,0,0,,Here is the answer.
+Dialogue: 0,0:02:15.30,0:02:16.60,Default,,0,0,0,,Only the first line.
+Dialogue: 0,0:02:16.60,0:02:17.46,Default,,0,0,0,,The gold value.
+Dialogue: 0,0:02:17.46,0:02:18.75,Default,,0,0,0,,Everything else,
+Dialogue: 0,0:02:18.75,0:02:20.48,Default,,0,0,0,,the making charge and both GST
+Dialogue: 0,0:02:20.48,0:02:20.91,Default,,0,0,0,,lines,
+Dialogue: 0,0:02:20.91,0:02:21.34,Default,,0,0,0,,is cost,
+Dialogue: 0,0:02:21.34,0:02:21.99,Default,,0,0,0,,not metal.
+Dialogue: 0,0:02:22.44,0:02:23.35,Default,,0,0,0,,On a plain chain,
+Dialogue: 0,0:02:23.35,0:02:24.48,Default,,0,0,0,,the cost part stays small.
+Dialogue: 0,0:02:24.48,0:02:25.39,Default,,0,0,0,,On a heavy,
+Dialogue: 0,0:02:25.39,0:02:26.76,Default,,0,0,0,,detailed bridal set,
+Dialogue: 0,0:02:26.76,0:02:28.35,Default,,0,0,0,,it can eat a big slice
+Dialogue: 0,0:02:28.35,0:02:29.26,Default,,0,0,0,,of your savings.
+Dialogue: 0,0:02:29.71,0:02:31.40,Default,,0,0,0,,Necklaces of the same weight can
+Dialogue: 0,0:02:31.40,0:02:32.90,Default,,0,0,0,,carry very different bills.
+Dialogue: 0,0:02:32.90,0:02:34.40,Default,,0,0,0,,The gold inside is equal.
+Dialogue: 0,0:02:34.40,0:02:35.52,Default,,0,0,0,,The craftsmanship is not,
+Dialogue: 0,0:02:35.52,0:02:37.21,Default,,0,0,0,,and you pay for that difference.
+Dialogue: 0,0:02:37.66,0:02:39.41,Default,,0,0,0,,Think of it like a restaurant
+Dialogue: 0,0:02:39.41,0:02:39.61,Default,,0,0,0,,meal.
+Dialogue: 0,0:02:39.61,0:02:40.59,Default,,0,0,0,,You pay for the food,
+Dialogue: 0,0:02:40.59,0:02:41.56,Default,,0,0,0,,but also the chef,
+Dialogue: 0,0:02:41.56,0:02:42.93,Default,,0,0,0,,the service and the tax.
+Dialogue: 0,0:02:42.93,0:02:44.49,Default,,0,0,0,,Only the food fills your stomach.
+Dialogue: 0,0:02:44.94,0:02:47.00,Default,,0,0,0,,Jewellery works the same way.
+Dialogue: 0,0:02:47.00,0:02:48.84,Default,,0,0,0,,You enjoy the craftsman's work for
+Dialogue: 0,0:02:48.84,0:02:49.07,Default,,0,0,0,,years,
+Dialogue: 0,0:02:49.07,0:02:50.68,Default,,0,0,0,,at weddings and festivals.
+Dialogue: 0,0:02:50.68,0:02:51.83,Default,,0,0,0,,For a family,
+Dialogue: 0,0:02:51.83,0:02:52.98,Default,,0,0,0,,that has real value.
+Dialogue: 0,0:02:53.43,0:02:54.41,Default,,0,0,0,,But money-wise,
+Dialogue: 0,0:02:54.41,0:02:55.97,Default,,0,0,0,,only the gold travels with you
+Dialogue: 0,0:02:55.97,0:02:57.15,Default,,0,0,0,,into the future.
+Dialogue: 0,0:02:57.15,0:02:58.52,Default,,0,0,0,,So what happens when you sell?
+Dialogue: 0,0:02:58.52,0:02:59.89,Default,,0,0,0,,This is where the real shock
+Dialogue: 0,0:02:59.89,0:03:00.28,Default,,0,0,0,,begins.
+Dialogue: 0,0:03:00.73,0:03:01.90,Default,,0,0,0,,Fast forward a few years.
+Dialogue: 0,0:03:01.90,0:03:03.67,Default,,0,0,0,,The family needs money for a
+Dialogue: 0,0:03:03.67,0:03:04.46,Default,,0,0,0,,hospital bill,
+Dialogue: 0,0:03:04.46,0:03:05.83,Default,,0,0,0,,or a child's college fees.
+Dialogue: 0,0:03:05.83,0:03:07.40,Default,,0,0,0,,The necklace goes back to the
+Dialogue: 0,0:03:07.40,0:03:07.60,Default,,0,0,0,,shop.
+Dialogue: 0,0:03:08.05,0:03:09.99,Default,,0,0,0,,The jeweller weighs it again and
+Dialogue: 0,0:03:09.99,0:03:11.07,Default,,0,0,0,,tests the purity.
+Dialogue: 0,0:03:11.07,0:03:12.80,Default,,0,0,0,,Then he checks today's gold rate
+Dialogue: 0,0:03:12.80,0:03:14.10,Default,,0,0,0,,and makes an offer.
+Dialogue: 0,0:03:14.10,0:03:14.97,Default,,0,0,0,,The mother waits,
+Dialogue: 0,0:03:14.97,0:03:15.62,Default,,0,0,0,,hopeful.
+Dialogue: 0,0:03:16.06,0:03:16.66,Default,,0,0,0,,Usually,
+Dialogue: 0,0:03:16.66,0:03:18.24,Default,,0,0,0,,the offer is only for the
+Dialogue: 0,0:03:18.24,0:03:19.04,Default,,0,0,0,,gold inside.
+Dialogue: 0,0:03:19.04,0:03:20.42,Default,,0,0,0,,The making charge she paid?
+Dialogue: 0,0:03:20.42,0:03:20.82,Default,,0,0,0,,Gone.
+Dialogue: 0,0:03:20.82,0:03:22.40,Default,,0,0,0,,The GST on that making charge?
+Dialogue: 0,0:03:22.40,0:03:23.19,Default,,0,0,0,,Also gone.
+Dialogue: 0,0:03:23.65,0:03:24.94,Default,,0,0,0,,And the 3 percent GST on
+Dialogue: 0,0:03:24.94,0:03:25.31,Default,,0,0,0,,the gold?
+Dialogue: 0,0:03:25.31,0:03:26.78,Default,,0,0,0,,That does not come back either.
+Dialogue: 0,0:03:26.78,0:03:28.26,Default,,0,0,0,,Tax paid on a purchase is
+Dialogue: 0,0:03:28.26,0:03:29.74,Default,,0,0,0,,not refunded to you when you
+Dialogue: 0,0:03:29.74,0:03:29.92,Default,,0,0,0,,sell.
+Dialogue: 0,0:03:30.37,0:03:31.63,Default,,0,0,0,,So the cost part of your
+Dialogue: 0,0:03:31.63,0:03:33.51,Default,,0,0,0,,bill vanished on the very first
+Dialogue: 0,0:03:33.51,0:03:33.72,Default,,0,0,0,,day.
+Dialogue: 0,0:03:33.72,0:03:35.40,Default,,0,0,0,,The moment you walked out of
+Dialogue: 0,0:03:35.40,0:03:35.81,Default,,0,0,0,,the shop,
+Dialogue: 0,0:03:35.81,0:03:36.44,Default,,0,0,0,,it was lost.
+Dialogue: 0,0:03:36.89,0:03:38.60,Default,,0,0,0,,There can be another cut too.
+Dialogue: 0,0:03:38.60,0:03:40.69,Default,,0,0,0,,Some jewellers deduct a small amount
+Dialogue: 0,0:03:40.69,0:03:42.21,Default,,0,0,0,,for melting or purity loss.
+Dialogue: 0,0:03:42.21,0:03:43.92,Default,,0,0,0,,Ask about this before you buy,
+Dialogue: 0,0:03:43.92,0:03:44.49,Default,,0,0,0,,not after.
+Dialogue: 0,0:03:44.94,0:03:45.12,Default,,0,0,0,,Now,
+Dialogue: 0,0:03:45.12,0:03:46.73,Default,,0,0,0,,the gold price may rise over
+Dialogue: 0,0:03:46.73,0:03:47.26,Default,,0,0,0,,those years.
+Dialogue: 0,0:03:47.26,0:03:48.69,Default,,0,0,0,,That rise can cover the loss.
+Dialogue: 0,0:03:48.69,0:03:49.94,Default,,0,0,0,,But first it must rise just
+Dialogue: 0,0:03:49.94,0:03:51.19,Default,,0,0,0,,to get you back to where
+Dialogue: 0,0:03:51.19,0:03:51.72,Default,,0,0,0,,you started.
+Dialogue: 0,0:03:52.17,0:03:53.45,Default,,0,0,0,,That is the hidden trap.
+Dialogue: 0,0:03:53.45,0:03:55.36,Default,,0,0,0,,Your jewellery must climb a hill
+Dialogue: 0,0:03:55.36,0:03:57.70,Default,,0,0,0,,before it even reaches the starting
+Dialogue: 0,0:03:57.70,0:03:58.13,Default,,0,0,0,,line.
+Dialogue: 0,0:03:58.13,0:03:59.62,Default,,0,0,0,,A plain coin starts much closer.
+Dialogue: 0,0:04:00.07,0:04:00.45,Default,,0,0,0,,But wait,
+Dialogue: 0,0:04:00.45,0:04:01.80,Default,,0,0,0,,selling has a second risk.
+Dialogue: 0,0:04:01.80,0:04:02.95,Default,,0,0,0,,What if the gold is not
+Dialogue: 0,0:04:02.95,0:04:04.29,Default,,0,0,0,,as pure as the bill said?
+Dialogue: 0,0:04:04.29,0:04:06.22,Default,,0,0,0,,Who decides the purity at the
+Dialogue: 0,0:04:06.22,0:04:06.60,Default,,0,0,0,,counter?
+Dialogue: 0,0:04:07.05,0:04:07.40,Default,,0,0,0,,For years,
+Dialogue: 0,0:04:07.40,0:04:09.49,Default,,0,0,0,,old family jewellery carried no proof
+Dialogue: 0,0:04:09.49,0:04:10.18,Default,,0,0,0,,of purity.
+Dialogue: 0,0:04:10.18,0:04:11.05,Default,,0,0,0,,The buyer tested it,
+Dialogue: 0,0:04:11.05,0:04:12.61,Default,,0,0,0,,and the family simply had to
+Dialogue: 0,0:04:12.61,0:04:13.13,Default,,0,0,0,,trust his word.
+Dialogue: 0,0:04:13.59,0:04:14.96,Default,,0,0,0,,This is why hallmarking matters.
+Dialogue: 0,0:04:14.96,0:04:17.03,Default,,0,0,0,,Every hallmarked piece now carries a
+Dialogue: 0,0:04:17.03,0:04:18.41,Default,,0,0,0,,unique code called HUID.
+Dialogue: 0,0:04:18.41,0:04:19.96,Default,,0,0,0,,It works like an Aadhaar number
+Dialogue: 0,0:04:19.96,0:04:21.00,Default,,0,0,0,,for your jewellery.
+Dialogue: 0,0:04:21.45,0:04:22.93,Default,,0,0,0,,Hallmarking is run by BIS,
+Dialogue: 0,0:04:22.93,0:04:24.62,Default,,0,0,0,,the Bureau of Indian Standards.
+Dialogue: 0,0:04:24.62,0:04:26.53,Default,,0,0,0,,An approved centre tests the gold
+Dialogue: 0,0:04:26.53,0:04:28.23,Default,,0,0,0,,and stamps its purity right on
+Dialogue: 0,0:04:28.23,0:04:28.86,Default,,0,0,0,,the piece.
+Dialogue: 0,0:04:29.31,0:04:31.00,Default,,0,0,0,,Hallmarking is now mandatory,
+Dialogue: 0,0:04:31.00,0:04:32.31,Default,,0,0,0,,and the scale is huge.
+Dialogue: 0,0:04:32.31,0:04:34.37,Default,,0,0,0,,Over 65 crore gold pieces have
+Dialogue: 0,0:04:34.37,0:04:35.49,Default,,0,0,0,,received this code.
+Dialogue: 0,0:04:35.49,0:04:36.80,Default,,0,0,0,,That is the government's count,
+Dialogue: 0,0:04:36.80,0:04:37.93,Default,,0,0,0,,as of this October.
+Dialogue: 0,0:04:38.38,0:04:39.52,Default,,0,0,0,,So before you pay,
+Dialogue: 0,0:04:39.52,0:04:40.86,Default,,0,0,0,,look for these marks on the
+Dialogue: 0,0:04:40.86,0:04:41.24,Default,,0,0,0,,piece.
+Dialogue: 0,0:04:41.24,0:04:42.00,Default,,0,0,0,,The BIS logo,
+Dialogue: 0,0:04:42.00,0:04:43.15,Default,,0,0,0,,the purity grade,
+Dialogue: 0,0:04:43.15,0:04:44.10,Default,,0,0,0,,and the HUID code.
+Dialogue: 0,0:04:44.10,0:04:45.44,Default,,0,0,0,,Match the code with your bill.
+Dialogue: 0,0:04:45.89,0:04:47.10,Default,,0,0,0,,You can check the HUID yourself
+Dialogue: 0,0:04:47.10,0:04:48.13,Default,,0,0,0,,on the BIS Care app.
+Dialogue: 0,0:04:48.13,0:04:49.52,Default,,0,0,0,,It shows the purity and the
+Dialogue: 0,0:04:49.52,0:04:51.42,Default,,0,0,0,,jeweller who registered that piece.
+Dialogue: 0,0:04:51.87,0:04:53.70,Default,,0,0,0,,A hallmark protects your purity.
+Dialogue: 0,0:04:53.70,0:04:55.13,Default,,0,0,0,,But it does not protect your
+Dialogue: 0,0:04:55.13,0:04:55.94,Default,,0,0,0,,making charge.
+Dialogue: 0,0:04:55.94,0:04:57.37,Default,,0,0,0,,That money is still lost the
+Dialogue: 0,0:04:57.37,0:04:57.98,Default,,0,0,0,,day you sell.
+Dialogue: 0,0:04:58.43,0:04:59.70,Default,,0,0,0,,So if you buy gold only
+Dialogue: 0,0:04:59.70,0:05:00.25,Default,,0,0,0,,to save,
+Dialogue: 0,0:05:00.25,0:05:01.70,Default,,0,0,0,,is there a smarter way to
+Dialogue: 0,0:05:01.70,0:05:02.06,Default,,0,0,0,,hold it?
+Dialogue: 0,0:05:02.06,0:05:03.70,Default,,0,0,0,,Here is where most people get
+Dialogue: 0,0:05:03.70,0:05:04.24,Default,,0,0,0,,surprised.
+Dialogue: 0,0:05:04.69,0:05:06.83,Default,,0,0,0,,Picture a brother and a sister.
+Dialogue: 0,0:05:06.83,0:05:08.32,Default,,0,0,0,,Both get a bonus at work,
+Dialogue: 0,0:05:08.32,0:05:09.18,Default,,0,0,0,,and both want gold.
+Dialogue: 0,0:05:09.18,0:05:10.24,Default,,0,0,0,,She wants to wear it.
+Dialogue: 0,0:05:10.24,0:05:11.74,Default,,0,0,0,,He only wants to save.
+Dialogue: 0,0:05:12.19,0:05:12.83,Default,,0,0,0,,For the sister,
+Dialogue: 0,0:05:12.83,0:05:14.12,Default,,0,0,0,,jewellery makes sense.
+Dialogue: 0,0:05:14.12,0:05:15.40,Default,,0,0,0,,She will wear it at every
+Dialogue: 0,0:05:15.40,0:05:16.37,Default,,0,0,0,,wedding and festival.
+Dialogue: 0,0:05:16.37,0:05:17.81,Default,,0,0,0,,The making charge is the price
+Dialogue: 0,0:05:17.81,0:05:18.77,Default,,0,0,0,,of beauty she enjoys.
+Dialogue: 0,0:05:19.23,0:05:20.16,Default,,0,0,0,,But for the brother,
+Dialogue: 0,0:05:20.16,0:05:22.22,Default,,0,0,0,,the making charge is pure leakage.
+Dialogue: 0,0:05:22.22,0:05:23.91,Default,,0,0,0,,Leakage means money that drips out
+Dialogue: 0,0:05:23.91,0:05:25.59,Default,,0,0,0,,and never becomes an asset.
+Dialogue: 0,0:05:25.59,0:05:26.90,Default,,0,0,0,,So what are his choices?
+Dialogue: 0,0:05:27.35,0:05:27.54,Default,,0,0,0,,First,
+Dialogue: 0,0:05:27.54,0:05:28.64,Default,,0,0,0,,a gold coin or a small
+Dialogue: 0,0:05:28.64,0:05:28.82,Default,,0,0,0,,bar.
+Dialogue: 0,0:05:28.82,0:05:29.37,Default,,0,0,0,,Plain metal,
+Dialogue: 0,0:05:29.37,0:05:30.83,Default,,0,0,0,,with very little design work.
+Dialogue: 0,0:05:30.83,0:05:32.48,Default,,0,0,0,,So the making cost is usually
+Dialogue: 0,0:05:32.48,0:05:34.13,Default,,0,0,0,,much lower than on jewellery.
+Dialogue: 0,0:05:34.58,0:05:35.96,Default,,0,0,0,,But a coin still pays the
+Dialogue: 0,0:05:35.96,0:05:37.35,Default,,0,0,0,,same GST on the gold.
+Dialogue: 0,0:05:37.35,0:05:38.50,Default,,0,0,0,,And at resale,
+Dialogue: 0,0:05:38.50,0:05:39.89,Default,,0,0,0,,a buyer may still cut a
+Dialogue: 0,0:05:39.89,0:05:40.35,Default,,0,0,0,,little.
+Dialogue: 0,0:05:40.35,0:05:41.04,Default,,0,0,0,,Smaller leak,
+Dialogue: 0,0:05:41.04,0:05:41.97,Default,,0,0,0,,but still a leak.
+Dialogue: 0,0:05:42.42,0:05:42.67,Default,,0,0,0,,Then,
+Dialogue: 0,0:05:42.67,0:05:43.44,Default,,0,0,0,,a gold ETF.
+Dialogue: 0,0:05:43.44,0:05:45.48,Default,,0,0,0,,ETF means exchange traded fund.
+Dialogue: 0,0:05:45.48,0:05:47.01,Default,,0,0,0,,It is a fund that buys
+Dialogue: 0,0:05:47.01,0:05:48.80,Default,,0,0,0,,real gold and splits it into
+Dialogue: 0,0:05:48.80,0:05:49.56,Default,,0,0,0,,small units.
+Dialogue: 0,0:05:50.01,0:05:51.45,Default,,0,0,0,,You buy these units on the
+Dialogue: 0,0:05:51.45,0:05:51.99,Default,,0,0,0,,stock market,
+Dialogue: 0,0:05:51.99,0:05:52.89,Default,,0,0,0,,like a share.
+Dialogue: 0,0:05:52.89,0:05:54.14,Default,,0,0,0,,You need a demat account,
+Dialogue: 0,0:05:54.14,0:05:55.76,Default,,0,0,0,,your online locker for shares.
+Dialogue: 0,0:05:55.76,0:05:57.38,Default,,0,0,0,,Each unit follows the gold price.
+Dialogue: 0,0:05:57.83,0:05:59.70,Default,,0,0,0,,Here is the big difference.
+Dialogue: 0,0:05:59.70,0:06:01.58,Default,,0,0,0,,There is no making charge at
+Dialogue: 0,0:06:01.58,0:06:01.79,Default,,0,0,0,,all.
+Dialogue: 0,0:06:01.79,0:06:03.45,Default,,0,0,0,,And buying gold ETF units attracts
+Dialogue: 0,0:06:03.45,0:06:03.87,Default,,0,0,0,,no GST,
+Dialogue: 0,0:06:03.87,0:06:04.70,Default,,0,0,0,,as reported.
+Dialogue: 0,0:06:04.70,0:06:05.33,Default,,0,0,0,,No locker,
+Dialogue: 0,0:06:05.33,0:06:06.16,Default,,0,0,0,,no theft worry.
+Dialogue: 0,0:06:06.61,0:06:07.88,Default,,0,0,0,,So what does an ETF cost?
+Dialogue: 0,0:06:07.88,0:06:09.58,Default,,0,0,0,,A small yearly fee called the
+Dialogue: 0,0:06:09.58,0:06:10.64,Default,,0,0,0,,expense ratio.
+Dialogue: 0,0:06:10.64,0:06:12.75,Default,,0,0,0,,One large gold ETF reported a
+Dialogue: 0,0:06:12.75,0:06:14.24,Default,,0,0,0,,fee of 0.68 percent for a
+Dialogue: 0,0:06:14.24,0:06:14.87,Default,,0,0,0,,recent year.
+Dialogue: 0,0:06:15.32,0:06:17.42,Default,,0,0,0,,Expense ratio simply means the fund's
+Dialogue: 0,0:06:17.42,0:06:18.46,Default,,0,0,0,,yearly running fee,
+Dialogue: 0,0:06:18.46,0:06:20.14,Default,,0,0,0,,taken quietly from your money.
+Dialogue: 0,0:06:20.14,0:06:20.35,Default,,0,0,0,,Small,
+Dialogue: 0,0:06:20.35,0:06:22.02,Default,,0,0,0,,but it adds up over many
+Dialogue: 0,0:06:22.02,0:06:22.24,Default,,0,0,0,,years.
+Dialogue: 0,0:06:22.69,0:06:23.72,Default,,0,0,0,,And selling is simple.
+Dialogue: 0,0:06:23.72,0:06:25.10,Default,,0,0,0,,You sell units on the market
+Dialogue: 0,0:06:25.10,0:06:25.97,Default,,0,0,0,,near the gold price.
+Dialogue: 0,0:06:25.97,0:06:26.49,Default,,0,0,0,,No weighing,
+Dialogue: 0,0:06:26.49,0:06:27.00,Default,,0,0,0,,no testing,
+Dialogue: 0,0:06:27.00,0:06:28.90,Default,,0,0,0,,no purity argument at the counter.
+Dialogue: 0,0:06:29.36,0:06:31.17,Default,,0,0,0,,There may be a small brokerage,
+Dialogue: 0,0:06:31.17,0:06:32.44,Default,,0,0,0,,which is your broker's fee per
+Dialogue: 0,0:06:32.44,0:06:32.80,Default,,0,0,0,,trade.
+Dialogue: 0,0:06:32.80,0:06:34.44,Default,,0,0,0,,But it is nothing like losing
+Dialogue: 0,0:06:34.44,0:06:35.71,Default,,0,0,0,,a whole making charge.
+Dialogue: 0,0:06:36.16,0:06:37.22,Default,,0,0,0,,So which one wins?
+Dialogue: 0,0:06:37.22,0:06:38.70,Default,,0,0,0,,It depends on why you buy.
+Dialogue: 0,0:06:38.70,0:06:40.19,Default,,0,0,0,,For wearing and tradition,
+Dialogue: 0,0:06:40.19,0:06:41.04,Default,,0,0,0,,jewellery.
+Dialogue: 0,0:06:41.04,0:06:42.10,Default,,0,0,0,,For pure saving,
+Dialogue: 0,0:06:42.10,0:06:43.37,Default,,0,0,0,,the leak matters a lot.
+Dialogue: 0,0:06:43.82,0:06:45.87,Default,,0,0,0,,But even smart savers make one
+Dialogue: 0,0:06:45.87,0:06:46.90,Default,,0,0,0,,common mistake.
+Dialogue: 0,0:06:46.90,0:06:48.33,Default,,0,0,0,,It is not about the shop
+Dialogue: 0,0:06:48.33,0:06:48.75,Default,,0,0,0,,at all.
+Dialogue: 0,0:06:48.75,0:06:50.39,Default,,0,0,0,,It is about timing and tax.
+Dialogue: 0,0:06:50.39,0:06:51.00,Default,,0,0,0,,Let us see.
+Dialogue: 0,0:06:51.45,0:06:52.40,Default,,0,0,0,,Sell physical gold,
+Dialogue: 0,0:06:52.40,0:06:53.54,Default,,0,0,0,,jewellery or coins,
+Dialogue: 0,0:06:53.54,0:06:54.30,Default,,0,0,0,,at a profit,
+Dialogue: 0,0:06:54.30,0:06:55.06,Default,,0,0,0,,and tax applies.
+Dialogue: 0,0:06:55.06,0:06:56.39,Default,,0,0,0,,Hold it at least 24 months
+Dialogue: 0,0:06:56.39,0:06:57.34,Default,,0,0,0,,to count as long term.
+Dialogue: 0,0:06:57.79,0:06:59.27,Default,,0,0,0,,Long term profit on gold is
+Dialogue: 0,0:06:59.27,0:07:00.54,Default,,0,0,0,,taxed at 12.5 percent,
+Dialogue: 0,0:07:00.54,0:07:01.80,Default,,0,0,0,,without indexation.
+Dialogue: 0,0:07:01.80,0:07:03.92,Default,,0,0,0,,Indexation means raising your cost for
+Dialogue: 0,0:07:03.92,0:07:04.76,Default,,0,0,0,,rising prices.
+Dialogue: 0,0:07:04.76,0:07:05.18,Default,,0,0,0,,Here,
+Dialogue: 0,0:07:05.18,0:07:06.24,Default,,0,0,0,,you do not get that.
+Dialogue: 0,0:07:06.69,0:07:07.53,Default,,0,0,0,,Now the mistake.
+Dialogue: 0,0:07:07.53,0:07:09.55,Default,,0,0,0,,A family buys jewellery as savings.
+Dialogue: 0,0:07:09.55,0:07:10.56,Default,,0,0,0,,Then they sell it in a
+Dialogue: 0,0:07:10.56,0:07:10.89,Default,,0,0,0,,hurry.
+Dialogue: 0,0:07:10.89,0:07:12.24,Default,,0,0,0,,They lose the making charge,
+Dialogue: 0,0:07:12.24,0:07:13.75,Default,,0,0,0,,and any profit is taxed at
+Dialogue: 0,0:07:13.75,0:07:14.59,Default,,0,0,0,,their income slab.
+Dialogue: 0,0:07:15.04,0:07:17.10,Default,,0,0,0,,The real mistake is mixing beauty
+Dialogue: 0,0:07:17.10,0:07:19.17,Default,,0,0,0,,and savings in a single purchase.
+Dialogue: 0,0:07:19.17,0:07:21.02,Default,,0,0,0,,Jewellery is great for wearing.
+Dialogue: 0,0:07:21.02,0:07:22.47,Default,,0,0,0,,It is a costly way to
+Dialogue: 0,0:07:22.47,0:07:22.88,Default,,0,0,0,,save.
+Dialogue: 0,0:07:23.33,0:07:24.21,Default,,0,0,0,,So what can you do?
+Dialogue: 0,0:07:24.21,0:07:25.10,Default,,0,0,0,,Before you buy,
+Dialogue: 0,0:07:25.10,0:07:26.69,Default,,0,0,0,,ask the jeweller to write the
+Dialogue: 0,0:07:26.69,0:07:28.81,Default,,0,0,0,,making charge as a separate line
+Dialogue: 0,0:07:28.81,0:07:29.34,Default,,0,0,0,,on the bill.
+Dialogue: 0,0:07:29.79,0:07:31.21,Default,,0,0,0,,Ask for the buyback terms in
+Dialogue: 0,0:07:31.21,0:07:31.62,Default,,0,0,0,,writing.
+Dialogue: 0,0:07:31.62,0:07:33.03,Default,,0,0,0,,How much will the shop deduct
+Dialogue: 0,0:07:33.03,0:07:34.04,Default,,0,0,0,,if you sell later?
+Dialogue: 0,0:07:34.04,0:07:35.87,Default,,0,0,0,,A good jeweller answers clearly.
+Dialogue: 0,0:07:36.31,0:07:37.83,Default,,0,0,0,,Check the hallmark and the HUID
+Dialogue: 0,0:07:37.83,0:07:39.12,Default,,0,0,0,,on the BIS Care app.
+Dialogue: 0,0:07:39.12,0:07:40.85,Default,,0,0,0,,If you only want to save,
+Dialogue: 0,0:07:40.85,0:07:43.65,Default,,0,0,0,,compare coins and ETFs before jewellery.
+Dialogue: 0,0:07:44.11,0:07:45.77,Default,,0,0,0,,Before selling physical gold,
+Dialogue: 0,0:07:45.77,0:07:47.44,Default,,0,0,0,,check if you have crossed 24
+Dialogue: 0,0:07:47.44,0:07:47.62,Default,,0,0,0,,months.
+Dialogue: 0,0:07:47.62,0:07:49.10,Default,,0,0,0,,Rules and rates can change,
+Dialogue: 0,0:07:49.10,0:07:50.77,Default,,0,0,0,,so check the latest before you
+Dialogue: 0,0:07:50.77,0:07:50.95,Default,,0,0,0,,act.
+Dialogue: 0,0:07:51.40,0:07:53.17,Default,,0,0,0,,This is not investment advice.
+Dialogue: 0,0:07:53.17,0:07:54.36,Default,,0,0,0,,It is simply your bill,
+Dialogue: 0,0:07:54.36,0:07:55.93,Default,,0,0,0,,explained line by line,
+Dialogue: 0,0:07:55.93,0:07:57.90,Default,,0,0,0,,so you know where every rupee
+Dialogue: 0,0:07:57.90,0:07:58.10,Default,,0,0,0,,goes.
+Dialogue: 0,0:07:58.10,0:07:58.69,Default,,0,0,0,,Your choice,
+Dialogue: 0,0:07:58.69,0:07:59.28,Default,,0,0,0,,your reasons.
+Dialogue: 0,0:07:59.73,0:07:59.92,Default,,0,0,0,,So,
+Dialogue: 0,0:07:59.92,0:08:00.69,Default,,0,0,0,,you paid for gold.
+Dialogue: 0,0:08:00.69,0:08:02.03,Default,,0,0,0,,How much gold came home?
+Dialogue: 0,0:08:02.03,0:08:03.56,Default,,0,0,0,,Only the gold line on your
+Dialogue: 0,0:08:03.56,0:08:03.75,Default,,0,0,0,,bill.
+Dialogue: 0,0:08:03.75,0:08:05.85,Default,,0,0,0,,Everything else was the price of
+Dialogue: 0,0:08:05.85,0:08:06.24,Default,,0,0,0,,beauty.
+Dialogue: 0,0:08:06.69,0:08:07.70,Default,,0,0,0,,Send this to your mother,
+Dialogue: 0,0:08:07.70,0:08:09.58,Default,,0,0,0,,who is planning the wedding jewellery
+Dialogue: 0,0:08:09.58,0:08:10.09,Default,,0,0,0,,this season.
+Dialogue: 0,0:08:10.09,0:08:11.62,Default,,0,0,0,,Let her read every line of
+Dialogue: 0,0:08:11.62,0:08:12.64,Default,,0,0,0,,the bill before paying.
+Dialogue: 0,0:08:13.09,0:08:14.49,Default,,0,0,0,,Now tell me in the comments.
+Dialogue: 0,0:08:14.49,0:08:15.50,Default,,0,0,0,,In your family,
+Dialogue: 0,0:08:15.50,0:08:16.91,Default,,0,0,0,,is gold for wearing or for
+Dialogue: 0,0:08:16.91,0:08:17.31,Default,,0,0,0,,saving?
+Dialogue: 0,0:08:17.31,0:08:17.91,Default,,0,0,0,,Next time,
+Dialogue: 0,0:08:17.91,0:08:19.92,Default,,0,0,0,,we decode another bill most of
+Dialogue: 0,0:08:19.92,0:08:20.73,Default,,0,0,0,,us never read.
