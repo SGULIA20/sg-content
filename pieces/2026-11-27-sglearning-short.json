@@ -95,8 +95,15 @@
    "voice": 8
   },
   "drafts": 1,
+  "intro": {
+   "clip": "2026-11-27-sglearning-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-21T17:37:11+00:00",
+   "seconds": 8.38
+  },
   "intro_checked": "81a37b566bd9da5d",
-  "intro_sent": "2026-11-20T22:30:39+00:00"
+  "intro_sent": "2026-11-20T22:30:39+00:00",
+  "yt_id": "dhseHz-Mz94"
  },
  "kind": "short",
  "publish_day": "2026-11-27",
@@ -249,7 +256,7 @@
   },
   "title": "Foreign bank account? No *penalty* below 20 lakh 🏦"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   5.366,
@@ -309,6 +316,7 @@
    "words": 22
   },
   "link": "https://economictimes.indiatimes.com/news/economy/policy/income-tax-department-no-fast-ds-declaration-required-for-foreign-bank-accounts-under-rs-20-lakh-with-disclosed-funds/articleshow/136028599.cms",
+  "look": "claymation",
   "published": "2026-11-20T14:34:17+00:00",
   "rank": 3,
   "source": "ET Economy",
@@ -322,6 +330,6 @@
   ],
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-11-20T22:30:51+00:00",
+ "updated": "2026-11-21T17:37:15+00:00",
  "writer": "claude"
 }
