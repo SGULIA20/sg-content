@@ -125,7 +125,9 @@
    "voice": 13
   },
   "drafts": 2,
+  "ig_reel_id": "17867163762694533",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-21-arthvan-short.mp4",
    "clip_seconds": 1,
@@ -136,6 +138,8 @@
   "intro_sent": "2026-11-15T11:52:46+00:00",
   "out_sha": "ddc2f1b1244ea0fdeb97205c54f329df040ef61a",
   "out_sha_intro": true,
+  "threads_id": "18113001523898287",
+  "threads_poll_id": "17911277838332950",
   "yt_id": "EzLT74f-OIY"
  },
  "kind": "short",
@@ -359,7 +363,7 @@
   },
   "title": "Prayagraj ke lete hue *Hanuman* kyun? 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   7.764,
@@ -413,6 +417,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-15T13:28:58+00:00",
+ "updated": "2026-11-21T16:09:52+00:00",
  "writer": "claude"
 }
