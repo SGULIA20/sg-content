@@ -1,0 +1,65 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.31,Default,,0,0,0,,Kya Parashuram ne Kerala samundar se
+Dialogue: 0,0:00:02.31,0:00:03.03,Default,,0,0,0,,nikala tha?
+Dialogue: 0,0:00:03.03,0:00:03.92,Default,,0,0,0,,Granth haan kehte hain,
+Dialogue: 0,0:00:03.92,0:00:04.98,Default,,0,0,0,,mitti kya kehti hai?
+Dialogue: 0,0:00:05.43,0:00:06.70,Default,,0,0,0,,Kerala Mahatmya:
+Dialogue: 0,0:00:06.70,0:00:08.59,Default,,0,0,0,,Parashuram ne pharsa phenka,
+Dialogue: 0,0:00:08.59,0:00:11.75,Default,,0,0,0,,Gokarna se Kanyakumari tak samundar peeche
+Dialogue: 0,0:00:11.75,0:00:12.17,Default,,0,0,0,,hata.
+Dialogue: 0,0:00:12.62,0:00:14.86,Default,,0,0,0,,Skanda Purana mein Sahyadri se teer
+Dialogue: 0,0:00:14.86,0:00:15.27,Default,,0,0,0,,chala,
+Dialogue: 0,0:00:15.27,0:00:16.70,Default,,0,0,0,,aur Konkan ka tat ubhra.
+Dialogue: 0,0:00:17.15,0:00:19.03,Default,,0,0,0,,Geological Survey of India ne paya,
+Dialogue: 0,0:00:19.03,0:00:20.91,Default,,0,0,0,,Kerala ka tat samundari ret se
+Dialogue: 0,0:00:20.91,0:00:21.43,Default,,0,0,0,,bana hai.
+Dialogue: 0,0:00:21.43,0:00:22.29,Default,,0,0,0,,Ret aayi kahan se?
+Dialogue: 0,0:00:22.74,0:00:25.63,Default,,0,0,0,,PRL aur Mangalore University ne seepiyon
+Dialogue: 0,0:00:25.63,0:00:26.86,Default,,0,0,0,,ki carbon dating ki,
+Dialogue: 0,0:00:26.86,0:00:28.31,Default,,0,0,0,,yaani umar ka hisaab.
+Dialogue: 0,0:00:28.31,0:00:30.58,Default,,0,0,0,,Lagbhag 6,400 saal pehle samundar andar
+Dialogue: 0,0:00:30.58,0:00:30.79,Default,,0,0,0,,tha,
+Dialogue: 0,0:00:30.79,0:00:31.41,Default,,0,0,0,,phir hata.
+Dialogue: 0,0:00:31.86,0:00:32.61,Default,,0,0,0,,Lekin twist!
+Dialogue: 0,0:00:32.61,0:00:35.11,Default,,0,0,0,,GSI ne samundar mein 23 metre
+Dialogue: 0,0:00:35.11,0:00:36.11,Default,,0,0,0,,neeche khoda.
+Dialogue: 0,0:00:36.11,0:00:36.86,Default,,0,0,0,,Mila peat,
+Dialogue: 0,0:00:36.86,0:00:39.36,Default,,0,0,0,,yaani daldal ke paudhon ki parat.
+Dialogue: 0,0:00:39.36,0:00:41.62,Default,,0,0,0,,Yahan kabhi sookhi zameen thi!
+Dialogue: 0,0:00:42.06,0:00:43.29,Default,,0,0,0,,Zameen bani kaise?
+Dialogue: 0,0:00:43.29,0:00:44.71,Default,,0,0,0,,Kuch geologist kehte hain,
+Dialogue: 0,0:00:44.71,0:00:46.34,Default,,0,0,0,,tat neeche se upar utha.
+Dialogue: 0,0:00:46.34,0:00:47.36,Default,,0,0,0,,Doosre kehte hain,
+Dialogue: 0,0:00:47.36,0:00:49.59,Default,,0,0,0,,samundar utra aur nadiyon ne mitti
+Dialogue: 0,0:00:49.59,0:00:50.00,Default,,0,0,0,,bichhayi.
+Dialogue: 0,0:00:50.45,0:00:52.66,Default,,0,0,0,,Angrez afsar William Logan ne kaha,
+Dialogue: 0,0:00:52.66,0:00:54.48,Default,,0,0,0,,yeh kahani baad mein gadhi gayi.
+Dialogue: 0,0:00:54.48,0:00:56.29,Default,,0,0,0,,Zameen par haq jataane ke liye.
+Dialogue: 0,0:00:56.74,0:00:58.00,Default,,0,0,0,,Naye jaankar kehte hain,
+Dialogue: 0,0:00:58.00,0:01:00.32,Default,,0,0,0,,shayad yeh samundar hatne ki purani
+Dialogue: 0,0:01:00.32,0:01:00.74,Default,,0,0,0,,yaad hai.
+Dialogue: 0,0:01:00.74,0:01:01.79,Default,,0,0,0,,Par dekha kisne?
+Dialogue: 0,0:01:01.79,0:01:02.85,Default,,0,0,0,,Koi nahi jaanta.
+Dialogue: 0,0:01:03.30,0:01:04.20,Default,,0,0,0,,Lok katha mein,
+Dialogue: 0,0:01:04.20,0:01:06.67,Default,,0,0,0,,namkeen zameen par Nagraj Vasuki ne
+Dialogue: 0,0:01:06.67,0:01:07.35,Default,,0,0,0,,vish chhidka.
+Dialogue: 0,0:01:07.35,0:01:08.70,Default,,0,0,0,,Mitti upjaau ho gayi.
+Dialogue: 0,0:01:09.15,0:01:10.50,Default,,0,0,0,,Aaj Vembanad jheel dekhiye,
+Dialogue: 0,0:01:10.50,0:01:12.62,Default,,0,0,0,,samundar ke aane-jaane se bani.
+Dialogue: 0,0:01:12.62,0:01:13.78,Default,,0,0,0,,Pharsa ya samundar,
+Dialogue: 0,0:01:13.78,0:01:14.75,Default,,0,0,0,,aap kya maante ho?
+Dialogue: 0,0:01:15.20,0:01:16.00,Default,,0,0,0,,Nani ko bhejo,
+Dialogue: 0,0:01:16.00,0:01:18.11,Default,,0,0,0,,jinhone Parashuram ke pharse ki katha
+Dialogue: 0,0:01:18.11,0:01:18.59,Default,,0,0,0,,sunayi thi.
