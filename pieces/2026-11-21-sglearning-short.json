@@ -85,6 +85,9 @@
    "voice": 9
   },
   "drafts": 1,
+  "ig_reel_id": "18083155217377507",
+  "ig_story_id": "18143613052616364",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-21-sglearning-short.mp4",
    "clip_seconds": 1,
@@ -95,6 +98,8 @@
   "intro_sent": "2026-11-14T19:58:15+00:00",
   "out_sha": "eeeab1d6e17d0947c6c7d5bfff79b025ce685365",
   "out_sha_intro": true,
+  "threads_id": "18643598959030514",
+  "threads_poll_id": "18136757669500738",
   "yt_id": "wo-K57dOlQo",
   "yt_long_link": "UgyRMAHd4sqtEJllCLp4AaABAg"
  },
@@ -259,7 +264,7 @@
   },
   "title": "License radd, *shareholder* ka paisa kahan? 🏭"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   4.465,
@@ -303,6 +308,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-15T10:42:26+00:00",
+ "updated": "2026-11-21T16:19:22+00:00",
  "writer": "claude"
 }
