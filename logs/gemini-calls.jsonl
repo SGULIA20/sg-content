@@ -658,3 +658,4 @@
 {"at": "2026-11-21T16:16:24+00:00", "model": "gemini-3.8-flash", "caller": "inbox.transcribe", "status": 200, "attempt": 0, "in": 272, "out": 32, "thought": 190, "search": false, "search_queries": 0, "modalities": []}
 {"at": "2026-11-21T16:40:06+00:00", "model": "gemini-3.8-flash", "caller": "inbox.transcribe", "status": 200, "attempt": 0, "in": 272, "out": 28, "thought": 112, "search": false, "search_queries": 0, "modalities": []}
 {"at": "2026-11-21T17:16:26+00:00", "model": "gemini-3.8-flash", "caller": "inbox.transcribe", "status": 200, "attempt": 0, "in": 272, "out": 24, "thought": 123, "search": false, "search_queries": 0, "modalities": []}
+{"at": "2026-11-21T20:20:18+00:00", "model": "gemini-3.8-flash", "caller": "research.fact_sheet", "status": 200, "attempt": 0, "in": 2195, "out": 2634, "thought": 6926, "search": true, "search_queries": 5, "modalities": []}
