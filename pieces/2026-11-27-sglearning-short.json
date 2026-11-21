@@ -95,8 +95,7 @@
    "voice": 8
   },
   "drafts": 1,
-  "intro_rejected": "81a37b566bd9da5d",
-  "intro_rejected_why": "missing words (only 36% of the script heard): \"Many of us come home from jobs abroad and leave one small bank account behind. One number now decides whether that matte\"",
+  "intro_checked": "81a37b566bd9da5d",
   "intro_sent": "2026-11-20T22:30:39+00:00"
  },
  "kind": "short",
@@ -269,6 +268,12 @@
    "options": [
     {
      "closing": "",
+     "question": "Many of us come home from jobs abroad and leave one small bank account behind. One number now decides whether that matters.",
+     "text": "Many of us come home from jobs abroad and leave one small bank account behind. One number now decides whether that matters.",
+     "words": 22
+    },
+    {
+     "closing": "",
      "question": "You worked abroad, came home, and forgot one bank account. A 10 lakh penalty looms, but one hidden number could make it vanish.",
      "text": "You worked abroad, came home, and forgot one bank account. A 10 lakh penalty looms, but one hidden number could make it vanish.",
      "words": 23
@@ -299,8 +304,8 @@
     }
    ],
    "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: close-up of a plain foreign bank debit card resting on a thick stack of Indian income tax papers on a wooden desk, warm evening lamp light, sharp shadows, no readable text or logos. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a beige linen blazer over a white tee. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
-   "question": "Your old salary abroad left behind one quiet bank account. Now the tax department has a number, 20 lakh, that changes everything.",
-   "text": "Your old salary abroad left behind one quiet bank account. Now the tax department has a number, 20 lakh, that changes everything.",
+   "question": "Many of us come home from jobs abroad and leave one small bank account behind. One number now decides whether that matters.",
+   "text": "Many of us come home from jobs abroad and leave one small bank account behind. One number now decides whether that matters.",
    "words": 22
   },
   "link": "https://economictimes.indiatimes.com/news/economy/policy/income-tax-department-no-fast-ds-declaration-required-for-foreign-bank-accounts-under-rs-20-lakh-with-disclosed-funds/articleshow/136028599.cms",
