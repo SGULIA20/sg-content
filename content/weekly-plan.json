@@ -1,8 +1,8 @@
 {
- "week_of": "2026-11-15",
- "generated": "2026-11-15T21:09:05+00:00",
+ "week_of": "2026-11-22",
+ "generated": "2026-11-22T21:55:58+00:00",
  "entries": {
-  "2026-11-23-sglearning-short": {
+  "2026-11-30-sglearning-short": {
    "id": "mh-2018-pnb-nirav",
    "theme": "scam",
    "category": "scam",
@@ -24,46 +24,15 @@
    "weekly": true,
    "from_bank": true
   },
-  "2026-11-24-sglearning-short": {
-   "id": "wk-2026-11-24-sglearning-short",
-   "title": "Kartik Purnima par 10,000 ka daan, tax mein kitna bachega?",
-   "summary": "Explains Section 80G in simple words: which donations qualify, the 50% or 100% rule, no cash deduction above ₹2,000, and that the new tax regime gives no deduction. Check the Income Tax Act text and the Income Tax Department's list of approved trusts.",
-   "hooks": [
-    "Mandir ko 10,000 diye, to kya tax mein 10,000 kam hoga?",
-    "Daan karne se tax bachta hai, par har daan par nahi. Kyun?"
-   ],
-   "weekly": true,
-   "topic_score": 6,
-   "topic_score_why": [
-    "+3 touches the viewer's own money",
-    "+1 a choice the viewer faces",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "follows": "Kartik Purnima (24 Nov) is a day of daan, so a donation-tax question fits it honestly. It is a choice with a number."
-  },
-  "2026-11-25-sglearning-long": {
-   "id": "car-loan-vs-cash",
-   "theme": "loan",
-   "title": "10 lakh ki gaadi: loan par lein ya cash, aur 5 saal mein asli kharcha kya",
-   "summary": "Total cost of car ownership: loan interest, depreciation, insurance, fuel, service; the loan-vs-cash decision with opportunity cost, why a used car can be the smarter maths for many families.",
-   "hooks": [
-    "Gaadi 5 saal mein kitni sasti ho jaati hai?",
-    "Car loan ka byaaj kitna dete hain?",
-    "Cash hai toh bhi loan lena sahi hai?"
-   ],
-   "weekly": true,
-   "from_bank": true
-  },
-  "2026-11-25-sglearning-short": {
-   "id": "mh-nokia-chennai",
+  "2026-12-01-sglearning-short": {
+   "id": "mh-jet-airways",
    "theme": "business",
    "category": "sensation",
-   "title": "Chennai ki Nokia factory: 8,000 naukriyan ek tax notice par",
-   "summary": "The Nokia plant near Chennai, once among the largest phone factories in the world, shut in 2014 after a tax dispute kept it out of the sale to Microsoft. What a factory town loses when a plant closes. Court and company records.",
+   "title": "Jet Airways: ticket book tha, airline band ho gayi",
+   "summary": "April 2019: Jet Airways stops flying; what happened to passengers' refunds, staff salaries and lenders, and what a ticket holder can claim when an airline fails. Insolvency filings and DGCA notices.",
    "hooks": [
-    "Duniya ki sabse badi phone factory band kaise hui?",
-    "8,000 logon ki naukri ek notice se kaise gayi?"
+    "Airline band hui toh ticket ka paisa kise mila?",
+    "22,000 employees ki salary ka kya hua?"
    ],
    "history": true,
    "topic_score": 9,
@@ -77,28 +46,25 @@
    "weekly": true,
    "from_bank": true
   },
-  "2026-11-26-sglearning-short": {
-   "id": "mh-lic-agent-commission",
-   "theme": "insurance",
-   "category": "sensation",
-   "title": "Policy ka pehla premium: agent ko kitna jaata hai",
-   "summary": "How commission on a traditional life policy is paid across the years, what the surrender value is in the first years, and the 2024 rules that raised it. The regulator's published limits as source.",
+  "2026-12-02-sglearning-long": {
+   "id": "wk-2026-12-02-sglearning-long",
+   "title": "RBI Retail Direct: FD chhodkar sarkari bond lena chahiye?",
+   "summary": "Explains Retail Direct, G-Secs and T-Bills against bank FDs for ordinary savers: how to open an account, the yield, taxes, and the price risk if you sell early. Check the current G-Sec yield, FD rates, RBI Retail Direct rules and the tax treatment.",
    "hooks": [
-    "Pehle saal ke premium ka kitna hissa commission hai?",
-    "Policy 3 saal baad band ki toh kitna wapas milta hai?"
+    "Kya aap RBI ke paas seedha account khol kar sarkar ko paisa udhaar de sakte hain?",
+    "1 lakh FD mein rakhein ya sarkari bond mein, 5 saal baad kitna farak?"
    ],
-   "history": true,
-   "topic_score": 8,
+   "weekly": true,
+   "topic_score": 6,
    "topic_score_why": [
     "+3 touches the viewer's own money",
-    "+3 a scare or a crash",
+    "+1 a choice the viewer faces",
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "weekly": true,
-   "from_bank": true
+   "follows": "StudyIQ's RBI FD vs Government Bonds video had 1.56M views. It is a choice with a number and a deeper explainer, and FD safety has not been covered from this an"
   },
-  "2026-11-27-sglearning-short": {
+  "2026-12-02-sglearning-short": {
    "id": "mh-deposit-insurance-5lakh",
    "theme": "bank",
    "category": "policy",
@@ -119,60 +85,20 @@
    "weekly": true,
    "from_bank": true
   },
-  "2026-11-28-sglearning-long": {
-   "id": "wk-2026-11-28-sglearning-long",
-   "title": "1 lakh ka gold khareeda, asli mein kitna gold mila?",
-   "summary": "Takes ₹1 lakh spent on jewellery and shows how making charges, GST (3% on gold, 5% on making charges) and the resale cut shrink the real gold. Compares coin and gold ETF. Check current GST rates, BIS hallmark rules, and a jeweller's making-charge and buyback terms.",
+  "2026-12-03-sglearning-short": {
+   "id": "mh-2023-2000-note",
+   "theme": "payments",
+   "category": "policy",
+   "title": "2,000 ka note phir se bahar: is baar kya alag tha",
+   "summary": "May 2023: the 2,000 rupee note withdrawn from circulation, how it differed from 2016, how much came back, and the small-shop confusion. What 'legal tender' means and why RBI prints a note at all.",
    "hooks": [
-    "1 lakh ka gold lene gaye, to kitne ka gold ghar aaya?",
-    "Gold sasta hua, phir bhi jewellery mehngi kyun padti hai?"
-   ],
-   "weekly": true,
-   "topic_score": 6,
-   "topic_score_why": [
-    "+3 touches the viewer's own money",
-    "+1 a choice the viewer faces",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "follows": "Gold and silver price videos dominate the viewer data. The wedding season is starting after Dev Uthani, when gold gets bought. It takes the choice angle, not a "
-  },
-  "2026-11-28-sglearning-short": {
-   "id": "mh-1992-harshad-mehta",
-   "theme": "market",
-   "category": "scam",
-   "title": "1992: ek broker ne poora market hila diya",
-   "summary": "The 1992 securities scam: bank receipts, money moved from banks into shares, the Sensex run-up and the crash when it broke; what changed after (SEBI's teeth, depositories, settlement). The lesson for anyone chasing a 'sure' stock today.",
-   "hooks": [
-    "1992 mein Sensex pehle kyun uda, phir kyun gira?",
-    "Bank ka paisa share market tak kaise pahuncha?"
+    "2,000 ka note band hua, par 2016 jaisa kyun nahi laga?",
+    "Note wapas lene par RBI ko fayda ya nuksaan?"
    ],
    "history": true,
    "topic_score": 7,
    "topic_score_why": [
-    "+3 touches the viewer's own money",
-    "+1 a scare or a crash (in the summary)",
-    "+1 a choice the viewer faces",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "weekly": true,
-   "from_bank": true
-  },
-  "2026-11-29-sglearning-short": {
-   "id": "mh-education-loan-abroad",
-   "theme": "loan",
-   "category": "sensation",
-   "title": "Videsh padhai ka 40 lakh ka loan: wapas kaise hota hai",
-   "summary": "An education loan for study abroad: the moratorium, interest that keeps adding during the course, the rupee's fall raising the bill, and what the EMI looks like against a starting salary. Bank loan documents and RBI data.",
-   "hooks": [
-    "Padhai ke dauraan byaaj rukta hai ya judta rehta hai?",
-    "Rupaya gira toh fees kitni badh gayi?"
-   ],
-   "history": true,
-   "topic_score": 9,
-   "topic_score_why": [
-    "+3 touches the viewer's own money",
+    "+1 touches the viewer's own money (in the summary)",
     "+3 a scare or a crash",
     "+1 a choice the viewer faces",
     "+1 a concrete number",
@@ -181,7 +107,28 @@
    "weekly": true,
    "from_bank": true
   },
-  "2026-12-02-sglearning-long": {
+  "2026-12-04-sglearning-short": {
+   "id": "mh-gold-1980-today",
+   "theme": "gold",
+   "category": "price-history",
+   "title": "Dadi ne 1980 mein 10 gram sona 1,300 mein liya",
+   "summary": "Gold's rupee price per 10 grams from 1980 to today against inflation and the Sensex: which saved a family more, and in which decades. Not a tip: a comparison with published prices.",
+   "hooks": [
+    "1980 ka sona ya 1980 ka Sensex, kaun jeeta?",
+    "Dadi ka sona mehngai se jeeta ya haara?"
+   ],
+   "history": true,
+   "topic_score": 6,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
+    "+1 a choice the viewer faces",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-12-05-sglearning-long": {
    "id": "rent-vs-buy",
    "theme": "prices",
    "title": "Kiraye par rahein ya ghar khareedein: 20 saal ka poora hisaab",
@@ -194,13 +141,55 @@
    "weekly": true,
    "from_bank": true
   },
-  "2026-12-05-sglearning-long": {
-   "id": "wk-2026-12-05-sglearning-long",
-   "title": "Naye labour code se salary 60,000 thi, in-hand kitna badal sakta hai?",
-   "summary": "Takes a ₹60,000 monthly CTC and shows how the 50% wages rule can raise PF and gratuity and change take-home pay. Also covers gratuity after 1 year for fixed-term staff. Check the notified Labour Codes, effective date, state rules and EPFO notices.",
+  "2026-12-05-sglearning-short": {
+   "id": "mh-kingfisher-mallya",
+   "theme": "business",
+   "category": "sensation",
+   "title": "Kingfisher: airline doobi, banks ka 9,000 crore",
+   "summary": "The Kingfisher Airlines collapse: the losses, the bank consortium, the brand pledged as collateral, employees unpaid, and the owner's exit. What a loan default by a big borrower does to a bank and its depositors.",
    "hooks": [
-    "Salary wahi rahi, phir in-hand kam kyun dikh sakta hai?",
-    "PF aur gratuity badhe, to fayda aapka hai ya company ka?"
+    "Airline doobi toh bank ka paisa kahan gaya?",
+    "Brand ko girvi rakh kar loan kaise milta hai?"
+   ],
+   "history": true,
+   "topic_score": 8,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
+    "+3 a scare or a crash",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-12-06-sglearning-short": {
+   "id": "mh-credit-card-minimum-due",
+   "theme": "loan",
+   "category": "sensation",
+   "title": "Minimum due bharte rahe: 50,000 ka bill kitne saal chala",
+   "summary": "How paying only the minimum due on a card works: the monthly rate, interest on new purchases, and how long a 50,000 bill takes to clear. The bank's own schedule of charges as source.",
+   "hooks": [
+    "Sirf minimum due bharne par 50,000 kitne ka padta hai?",
+    "Card ka byaaj saal ka 40% kaise ban jaata hai?"
+   ],
+   "history": true,
+   "topic_score": 6,
+   "topic_score_why": [
+    "+1 touches the viewer's own money (in the summary)",
+    "+3 a scare or a crash",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-12-09-sglearning-long": {
+   "id": "wk-2026-12-09-sglearning-long",
+   "title": "Retirement ke liye 1 crore kaafi hai, ya inflation kha jayega?",
+   "summary": "Shows what ₹1 crore is worth after 20 years at 6% inflation, and what monthly income it can safely give. Compare annuity, FD and SWP choices. Check RBI and MOSPI inflation data, current annuity rates and the tax on each option.",
+   "hooks": [
+    "Aaj ke 50,000 mahine ka kharcha 25 saal baad kitna hoga?",
+    "1 crore bank mein rakhein to har mahine kitna milega, aur kitna kam hota jayega?"
    ],
    "weekly": true,
    "topic_score": 6,
@@ -210,25 +199,92 @@
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "It is a job question with a number. Salary and take-home pay concern most viewers. Not covered before; the video must say clearly where state rules or the statu"
+   "follows": "Viewers are interested in income from savings (Canara annuity video, 324K views) and in long money-rules videos (Warikoo, 979K). The theme is retirement, new th"
   },
-  "2026-11-23-arthvan-short": {
-   "id": "wk-2026-11-23-arthvan-short",
-   "title": "Jatayu ne Ravan ka rath sach mein toda?",
-   "summary": "Aranya Kanda mein Jatayu aur Ravan ki ladai kya likhi hai. Check: sarga ka kram, rath, gadhe aur sarathi ka tootna, Jatayu ki umar ka daava (60,000 saal), aur lokkatha ke jode hue hisse alag.",
+  "2026-12-12-sglearning-long": {
+   "id": "wk-2026-12-12-sglearning-long",
+   "title": "CIBIL 700 aur 780 mein loan par kitna byaaj ka farak?",
+   "summary": "Explains how credit score changes the interest rate on a ₹20 lakh loan, and shows how to read a credit report, spot errors and raise the score. Check the CIBIL score ranges, lender rate cards by score and the RBI credit-report dispute rules.",
    "hooks": [
-    "Ek boodha gidh Ravan ke rath ko kaise tod sakta hai?",
-    "Valmiki ne Jatayu ki ladai mein sach mein kya likha?"
+    "20 lakh ka loan, score 700 ho ya 780, 15 saal mein kitna extra jata hai?",
+    "Credit report mein ek galti aapko mehnga loan kyun dila sakti hai?"
+   ],
+   "weekly": true,
+   "topic_score": 6,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
+    "+1 a choice the viewer faces",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "A direct own-money question with a number. It keeps the loan theme to two uses in the week, separated by a full week, and is not a repeat of the EMI or home-loa"
+  },
+  "2026-11-30-arthvan-short": {
+   "id": "dholavira-water",
+   "title_hi": "Dholavira, 4,500 saal purana paani ka system",
+   "place": "Dholavira, Gujarat",
+   "hooks": [
+    "Registan mein 16 reservoir, 4,500 saal pehle?",
+    "Duniya ka sabse purana signboard?",
+    "Dholavira ko UNESCO ne kyon chuna?"
+   ],
+   "allowed_sources": [
+    "asi.nic.in",
+    "UNESCO whc.unesco.org",
+    "en.wikipedia.org"
+   ],
+   "notes": "Pure archaeology lane.",
+   "topic_score": 3,
+   "topic_score_why": [
+    "-2 no famous name",
+    "+3 a shock question or a mystery",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-12-01-arthvan-short": {
+   "id": "shani-shingnapur",
+   "title_hi": "Shani Shingnapur, bina darwaze ka gaon",
+   "place": "Shani Shingnapur, Maharashtra",
+   "hooks": [
+    "Is gaon mein ghar ke darwaze kyon nahi?",
+    "Bank ki shakha bhi bina lock ke?",
+    "Chori hui to kya hua?"
+   ],
+   "allowed_sources": [
+    "en.wikipedia.org",
+    "maharashtratourism.gov.in",
+    "news reports with dates"
+   ],
+   "notes": "Legend lane plus documented modern facts (UCO Bank branch 2011); report thefts honestly.",
+   "topic_score": 2,
+   "topic_score_why": [
+    "-2 no famous name",
+    "+3 a shock question or a mystery",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-12-02-arthvan-short": {
+   "id": "wk-2026-12-02-arthvan-short",
+   "title": "Marte waqt Ravan ne Lakshman ko 3 seekh di, kis granth mein?",
+   "summary": "Traces the popular deathbed-lessons story to its sources. Checks Valmiki's Yuddha Kanda, where it does not appear, against later regional retellings. Verify which text first tells it before calling it scripture.",
+   "hooks": [
+    "Kya Ravan ne sach mein Lakshman ko neeti sikhayi thi?",
+    "Valmiki Ramayana mein yeh seekh kyun nahi milti?"
    ],
    "weekly": true,
    "topic_score": 9,
    "topic_score_why": [
     "+4 one of the most-watched names",
     "+3 a shock question or a mystery",
-    "+1 an untold angle (in the summary)",
+    "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Jatayu short got 3.8M views in 56s. Famous name plus shock question, using the Valmiki text as evidence. It is not a repeat of the Ravan Kaushalya or Hanuman Ra",
+   "follows": "The Ravana lessons video reached 4.34M views and the Ramayana theme is strong. This is a different angle from the covered Jatayu, Manthara, Surpanakha and Kaush",
    "allowed_sources": [
     "asi.nic.in",
     "en.wikipedia.org",
@@ -237,32 +293,7 @@
     "the scripture or text named in the story"
    ]
   },
-  "2026-11-24-arthvan-short": {
-   "id": "hanuman-garhi-and-anjaneri",
-   "title_hi": "Hanuman ka janm sthan, kaun sa sach?",
-   "place": "Anjaneri / Hampi / Tirumala",
-   "hooks": [
-    "Hanuman ka janm kahan hua: 3 dawe, 1 sach?",
-    "Kishkindha Hampi hi hai?",
-    "Tirumala ka dawa kya hai?"
-   ],
-   "allowed_sources": [
-    "en.wikipedia.org",
-    "Valmiki Ramayana (Kishkindha Kanda)",
-    "TTD statement 2021"
-   ],
-   "notes": "Present all three claims as disputed; scripture for the birth story.",
-   "topic_score": 9,
-   "topic_score_why": [
-    "+4 one of the most-watched names",
-    "+3 a shock question or a mystery",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "weekly": true,
-   "from_bank": true
-  },
-  "2026-11-25-arthvan-short": {
+  "2026-12-03-arthvan-long": {
    "id": "sinauli-chariots",
    "title_hi": "Sinauli ke rath",
    "place": "Baghpat, Uttar Pradesh",
@@ -285,13 +316,13 @@
    "weekly": true,
    "from_bank": true
   },
-  "2026-11-26-arthvan-short": {
-   "id": "wk-2026-11-26-arthvan-short",
-   "title": "Vishnu ko ghode ka sir kyun lagana pada?",
-   "summary": "Hayagriva ki do kathayen: Devi Bhagavata mein dhanush ki pratyancha se sir kata, aur Hayagriva avatar jo vedon ko bachata hai. Check: kaun si katha kis Purana mein hai, aur dono mein antar.",
+  "2026-12-03-arthvan-short": {
+   "id": "wk-2026-12-03-arthvan-short",
+   "title": "Nandi ke kaan mein mannat: shastra mein hai ya parampara?",
+   "summary": "Explains Nandi as Shiva's vahana and dwarpal in the Puranas. Separates the ear-whisper custom, a living tradition, from textual sources. Verify the Shiva Purana references and regional temple practice. The custom is not mocked.",
    "hooks": [
-    "Bhagwan Vishnu ka sir kaise kat gaya tha?",
-    "Ghode ke sir wale Vishnu ki pooja aaj bhi kahan hoti hai?"
+    "Shiv mandir mein Nandi ke kaan mein kya kehna chahiye?",
+    "Nandi hamesha Shivling ki taraf kyun dekhte hain?"
    ],
    "weekly": true,
    "topic_score": 8,
@@ -300,7 +331,7 @@
     "+3 a shock question or a mystery",
     "+1 asks a question"
    ],
-   "follows": "The Vishnu horse-head topic got 6.6M views at 148s, one of the top three. It is a famous name with a shock question, with the different Purana versions as the u",
+   "follows": "The Nandi video got 1.95M views at 171 s. Shiva is a strong theme and this is a short, sharp question. Shiva day 1 of 2.",
    "allowed_sources": [
     "asi.nic.in",
     "en.wikipedia.org",
@@ -309,99 +340,121 @@
     "the scripture or text named in the story"
    ]
   },
-  "2026-11-27-arthvan-short": {
-   "id": "wk-2026-11-27-arthvan-short",
-   "title": "Bharat chita mein kudne wale the, Hanuman ne kaise roka?",
-   "summary": "Yuddha Kanda mein 14 varsh poore hone par Bharat ka agni pravesh ka sankalp aur Hanuman ka Nandigram pahunchna. Check: sarga sankhya, tithi ka sandarbh, aur Tulsidas ke paath se antar.",
+  "2026-12-04-arthvan-short": {
+   "id": "bateshwar-temples",
+   "title_hi": "Bateshwar, 200 mandir jo dakuon ne bachaye",
+   "place": "Morena, Madhya Pradesh",
    "hooks": [
-    "14 saal ka intezaar khatam hua, to Bharat chita kyun taiyaar kar rahe the?",
-    "Hanuman ek pal bhi der karte to kya hota?"
-   ],
-   "weekly": true,
-   "topic_score": 9,
-   "topic_score_why": [
-    "+4 one of the most-watched names",
-    "+3 a shock question or a mystery",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "follows": "The Bharat funeral pyre topic got 1.5M views at 173s, and Ramayan side-stories do well. Angle: the last-minute rescue as Valmiki tells it, shorter and sharper t",
-   "allowed_sources": [
-    "asi.nic.in",
-    "en.wikipedia.org",
-    "nio.res.in",
-    "britannica.com",
-    "the scripture or text named in the story"
-   ]
-  },
-  "2026-11-28-arthvan-short": {
-   "id": "vijay-stambh",
-   "title_hi": "Chittor ka Vijay Stambh",
-   "place": "Chittorgarh, Rajasthan",
-   "hooks": [
-    "9 manzil, 157 seedhiyan, 1448 mein?",
-    "Rani Padmini ki asli kahani kya hai?",
-    "Jauhar ka itihaas, sabut ke saath"
+    "ASI ne dakuon ki madad se mandir kaise jode?",
+    "1,300 saal purane 200 mandir ek pahadi par?",
+    "Nirbhay Gujjar aur ASI ka samjhauta"
    ],
    "allowed_sources": [
     "asi.nic.in",
     "en.wikipedia.org",
-    "Padmavat (Jayasi) as literature"
+    "news reports with dates (K. K. Muhammed)"
    ],
-   "notes": "Separate chronicle from epic poem; label; no communal framing of sieges.",
-   "topic_score": 5,
+   "notes": "Documented modern story; good evidence lane.",
+   "topic_score": 3,
    "topic_score_why": [
     "-2 no famous name",
     "+3 a shock question or a mystery",
-    "+2 an untold angle",
     "+1 a concrete number",
     "+1 asks a question"
    ],
    "weekly": true,
    "from_bank": true
   },
-  "2026-11-29-arthvan-long": {
-   "id": "wk-2026-11-29-arthvan-long",
-   "title": "Shakuni sach mein khalnayak tha, ya badle ki kahani ka hissa?",
-   "summary": "Gandhar ke rajkumar Shakuni ki bhumika Mahabharat ke Sabha Parva ke pasey ke khel mein, aur Gandhari ke parivaar ki qaid wali lokkatha. Check: critical edition mein kya hai aur kya baad ki parampara; Gandhar ka bhugol. Lokkatha ko alag label karo.",
+  "2026-12-05-arthvan-short": {
+   "id": "mehandipur-balaji",
+   "title_hi": "Mehandipur Balaji ka sach",
+   "place": "Dausa, Rajasthan",
    "hooks": [
-    "Pasey ka khel jeetne wala Shakuni kya sach mein apni behen ke liye ladh raha tha?",
-    "Mahabharat ke text mein Shakuni ke badle ka koi saboot hai?"
+    "Yahan prasad ghar kyon nahi le jaate?",
+    "Bhoot utaarne ka mandir?",
+    "Doctors is mandir ke baare mein kya kehte hain?"
+   ],
+   "allowed_sources": [
+    "en.wikipedia.org",
+    "Indian Journal of Psychiatry studies on temple healing"
+   ],
+   "notes": "Respect faith; mention mental-health research neutrally; no mocking.",
+   "topic_score": -10,
+   "topic_score_why": [
+    "-10 party politics"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-12-06-arthvan-long": {
+   "id": "bhimbetka",
+   "title_hi": "Bhimbetka, 30,000 saal purani painting",
+   "place": "Raisen, Madhya Pradesh",
+   "hooks": [
+    "30,000 saal purani painting aaj bhi rangin?",
+    "Bhim yahan baithe the? Naam ka raaz",
+    "Duniya ki sabse purani jaanwar ki tasveer?"
+   ],
+   "allowed_sources": [
+    "asi.nic.in",
+    "UNESCO whc.unesco.org",
+    "en.wikipedia.org"
+   ],
+   "notes": "Archaeology lane; the Bhima name is legend.",
+   "topic_score": 3,
+   "topic_score_why": [
+    "-2 no famous name",
+    "+3 a shock question or a mystery",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "weekly": true,
+   "from_bank": true
+  },
+  "2026-12-06-arthvan-short": {
+   "id": "wk-2026-12-06-arthvan-short",
+   "title": "Krishna ki 16108 raniyan: Bhagavat Purana mein asli kahani kya hai?",
+   "summary": "Explains the Narakasura episode in the Bhagavata Purana (10.59), the 16,100 freed princesses and the 8 chief queens. Compares the Vishnu Purana count and the regional readings. Verify the verses and the numbers.",
+   "hooks": [
+    "16108 ka number kahan se aaya?",
+    "Narakasura ke baad un rajkumariyon ke saath kya hua?"
+   ],
+   "weekly": true,
+   "topic_score": 11,
+   "topic_score_why": [
+    "+4 one of the most-watched names",
+    "+3 a shock question or a mystery",
+    "+2 an untold angle",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "Krishna stories are popular in the list (Sakshi Gopal 2.76M). A number paired with a shock question. Krishna day. The other Sunday video is Ramayana, so there i",
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story"
+   ]
+  },
+  "2026-12-10-arthvan-long": {
+   "id": "wk-2026-12-10-arthvan-long",
+   "title": "Samudra manthan se 14 ratna nikle ya granth alag-alag list dete hain?",
+   "summary": "Compares the churning story in the Mahabharata Adi Parva, Vishnu Purana, Bhagavata and Ramayana. Checks the ratna lists, the Kurma avatar and the Mohini episode. Verify which text names which ratnas.",
+   "hooks": [
+    "Samudra manthan mein sach mein 14 ratna the?",
+    "Amrit ke saath halahal kyun nikla?"
    ],
    "weekly": true,
    "topic_score": 9,
    "topic_score_why": [
-    "+4 one of the most-watched names",
-    "+3 a shock question or a mystery",
-    "+1 an untold angle (in the summary)",
-    "+1 asks a question"
-   ],
-   "follows": "Katha Anante's Shakuni video reached 2.3M views and is a signal for villain-reframing. The untold angle is separating text from legend. It suits a long deep tel",
-   "allowed_sources": [
-    "asi.nic.in",
-    "en.wikipedia.org",
-    "nio.res.in",
-    "britannica.com",
-    "the scripture or text named in the story"
-   ]
-  },
-  "2026-11-29-arthvan-short": {
-   "id": "wk-2026-11-29-arthvan-short",
-   "title": "Sakshi Gopal: Bhagwan 1500 km chal kar gawahi dene aaye?",
-   "summary": "Puri ke Sakshi Gopal mandir ki lokkatha: do brahmanon, vachan aur Krishna ki gawahi. Check: katha ke srot (Odia parampara), moorti ka Vrindavan se Odisha tak ka safar, Satyabadi mandir ki tithi. Katha ko legend label karo.",
-   "hooks": [
-    "Kya Bhagwan ek bhakt ke liye gawahi dene khud chal kar aaye?",
-    "Is moorti ko Sakshi Gopal naam kyun mila?"
-   ],
-   "weekly": true,
-   "topic_score": 7,
-   "topic_score_why": [
     "+2 a famous name",
     "+3 a shock question or a mystery",
+    "+2 an untold angle",
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "The Sakshi Gopal video got 1.8M views at 174s. A short keeps the one-question format and labels the legend clearly. It is different from the covered Jagannath f",
+   "follows": "A big Puranic story that has not been covered. It has a built-in contradiction between texts and a fresh angle. Three days after the Krishna Short, with a diffe",
    "allowed_sources": [
     "asi.nic.in",
     "en.wikipedia.org",
@@ -410,50 +463,25 @@
     "the scripture or text named in the story"
    ]
   },
-  "2026-12-03-arthvan-long": {
-   "id": "wk-2026-12-03-arthvan-long",
-   "title": "Mehrangarh ke 7 darwaze: hathiyon se bachav ya itihas ki aisi kahani jo kam suni gayi?",
-   "summary": "Jodhpur ke Mehrangarh ka itihas: Rao Jodha 1459, darwaze (Jai Pol, Fateh Pol, Loha Pol), sati ke haath ke nishan, aur neev mein Raja Ram Meghwal ki lokkatha. Check: ASI aur museum ke record, tithi. Katha ko legend label karo.",
+  "2026-12-13-arthvan-long": {
+   "id": "keeladi",
+   "title_hi": "Keeladi, Tamil sabhyata 2,600 saal purani",
+   "place": "Keeladi, Tamil Nadu",
    "hooks": [
-    "Hathiyon ko rokne wale darwaze kaise bane the?",
-    "Kya Mehrangarh ki neev ki kahani sach hai ya sirf lokkatha?"
+    "Vaigai ke kinare 2,600 saal purana sheher?",
+    "Keeladi ke bartan par likhe akshar",
+    "Keeladi ki khudai par vivaad kyon?"
    ],
-   "weekly": true,
-   "topic_score": 7,
+   "allowed_sources": [
+    "tnarch.gov.in",
+    "asi.nic.in",
+    "en.wikipedia.org"
+   ],
+   "notes": "Dates and interpretations are disputed between agencies; label carefully, no regional politics.",
+   "topic_score": 3,
    "topic_score_why": [
-    "+2 a famous name",
+    "-2 no famous name",
     "+3 a shock question or a mystery",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "follows": "Mehrangarh Fort got 4.0M views in 89s. History with an untold human angle, as the channel notes advise for saturated forts and monuments. Sensitive caste elemen",
-   "allowed_sources": [
-    "asi.nic.in",
-    "en.wikipedia.org",
-    "nio.res.in",
-    "britannica.com",
-    "the scripture or text named in the story"
-   ]
-  },
-  "2026-12-06-arthvan-long": {
-   "id": "parashurama-kerala",
-   "title_hi": "Parashuram ne Kerala samundar se nikala?",
-   "place": "Konkan-Kerala coast",
-   "hooks": [
-    "Ek pharse se 600 km zameen?",
-    "Geology Kerala ke tat ke baare mein kya kehti hai?",
-    "Konkan se Kanyakumari tak ek hi kahani"
-   ],
-   "allowed_sources": [
-    "gsi.gov.in",
-    "en.wikipedia.org",
-    "Skanda Purana",
-    "Kerala Mahatmya"
-   ],
-   "notes": "Scripture/legend vs coastal geology (sea-level change); both told, both labelled.",
-   "topic_score": 4,
-   "topic_score_why": [
-    "+2 a famous name",
     "+1 a concrete number",
     "+1 asks a question"
    ],
@@ -462,33 +490,36 @@
   }
  },
  "notes": [
-  "2026-11-23-sglearning-short: proposal 'No-Cost EMI par 30,000 ka phone, asli mein kitna e' dropped (same theme within days: loan)",
-  "2026-11-25-sglearning-long: proposal '5 lakh ka hospital bill, insurance ne sirf 3 lakh ' dropped (6 points, repeat)",
-  "2026-11-25-sglearning-short: proposal 'Shaadi ka card WhatsApp par aaya, kholte hi accoun' dropped (same theme within days: scam)",
-  "2026-11-26-sglearning-short: proposal 'FD ka byaaj 50,000 se upar gaya, TDS kyun kat gaya' dropped (same theme within days: tax)",
-  "2026-11-27-sglearning-short: proposal 'Bank account mein nominee nahi hai, to paisa kise ' dropped (5 points, repeat)",
-  "2026-11-28-sglearning-short: proposal '5,000 ki SIP mein har saal 10% badhao, 20 saal mei' dropped (same theme within days: market)",
-  "2026-11-29-sglearning-short: proposal 'Papa ka purana bank account, usme lawaris paisa ka' dropped (same theme within days: bank)",
-  "2026-12-02-sglearning-long: proposal 'Index 12% bhaga, mera mutual fund 10% par kyun atk' dropped (5 points)",
-  "2026-11-24-arthvan-short: proposal 'Brahma ka mandir Pushkar mein hi kyun?' dropped (3 points)",
-  "2026-11-25-arthvan-short: proposal 'Credit card ka minimum due bharna kitna mehenga pa' dropped (2 points)",
-  "2026-11-28-arthvan-short: proposal 'Nominee na ho to bank ka paisa kiska hota hai?' dropped (2 points)",
-  "2026-12-06-arthvan-long: proposal 'Unakoti ki moortiyan kisne banayi: ek crore minus ' dropped (8 points, repeat)"
+  "2026-11-30-sglearning-short: proposal '5 lakh ka claim, bima company ne 2 lakh kaat liye ' dropped (4 points)",
+  "2026-12-01-sglearning-short: proposal 'No-Cost EMI mein sach mein koi cost nahi hota?' dropped (same theme within days: loan)",
+  "2026-12-02-sglearning-short: proposal 'Lakshman Rekha Valmiki Ramayana mein hai ya nahi?' dropped (2 points)",
+  "2026-12-03-sglearning-short: proposal '12 lakh kamane par income tax zero, kaise?' dropped (5 points)",
+  "2026-12-04-sglearning-short: proposal 'Purana sona bechne par jeweller kitna kaat leta ha' dropped (5 points)",
+  "2026-12-05-sglearning-long: proposal 'Index fund 12% de raha hai, mera fund 9% kyun?' dropped (3 points)",
+  "2026-12-05-sglearning-short: proposal 'WhatsApp par 'guaranteed' 30% return, SEBI se kais' dropped (4 points)",
+  "2026-12-06-sglearning-short: proposal 'Eklavya ka angootha, kya Dronacharya ne sach mein ' dropped (same theme within days: payments)",
+  "2026-11-30-arthvan-short: proposal 'Abhimanyu ne chakravyuh garbh mein seekha, text me' dropped (same theme within days: mahabharat)",
+  "2026-12-01-arthvan-short: proposal 'Konark mandir ke chumbak ki kahani sach hai ya leg' dropped (same theme within days: history)",
+  "2026-12-03-arthvan-long: proposal 'Dholavira: 4500 saal purane shehar ne paani ko kai' dropped (7 points, repeat)",
+  "2026-12-04-arthvan-short: proposal 'Duryodhan ka zehar Bhim ki taakat kaise bana?' dropped (same theme within days: mahabharat)",
+  "2026-12-05-arthvan-short: proposal 'Shakti Peeth 51 hain, 52 hain ya 108?' dropped (5 points)",
+  "2026-12-06-arthvan-long: proposal 'Japan ne Ramayana banayi, aur India mein 30 saal b' dropped (9 points, repeat)",
+  "2026-12-13-arthvan-long: proposal 'Rajendra Chola ne samundar paar Srivijaya par haml' dropped (3 points)"
  ],
  "signals": {
   "sglearning": [
-   "14,035,622 Shaadi, Promotion Ya SIP? Iss Diwali, Kya Hai Aarush Ka Plan? Watch to",
-   "10,910,597 Shagun ke lifafe mein SIP | #NayaRiwaaz | Invesco Mutual Fund",
-   "3,344,339 Elon Musk की Wealth Crash! सिर्फ 2 दिन में ₹10 लाख करोड़ का झटका | SAG",
-   "2,384,134 Gold Silver Rate: Gold-Silver खरीदने का यही सही मौका? | Syed Suhail",
-   "2,073,690 How Your SIP Keeps Adding Units | SIP Se Units Jodo, Badhte Raho | Tat"
+   "5,700,499 Gold-Silver Crash: अब और सस्ता होगा सोना, अमेरिका की महंगाई से क्या कन",
+   "3,947,736 Vo Bachpan Ke Din | Kal Ki Taiyaari | Happy Children's Day",
+   "3,552,865 Decode: इतनी तेजी से क्यों गिर रहे सोने के दाम? | Sudhir Chaudhary | G",
+   "2,008,507 Gold CRASH - Dont Do Anything Until You Know These 5 Points - Rahul Ja",
+   "1,558,162 RBI Fixed Deposits vs Government Bonds | Retail Direct Explained | Stu"
   ],
   "arthvan": [
-   "7,712,487 दीपालवी कथा। दिवाली की रात माता लक्ष्मी और दरिद्रता की परीक्षा! mata l",
-   "7,214,491 जिन्हें भारत ने सच में मान लिया भगवान #Shorts",
-   "6,673,089 Ravana Kidnapped Lord Rama's Mother Kaushalya Before His Birth! | Unto",
-   "6,592,252 भगवान विष्णु को क्यों लगाना पड़ा घोड़े का सिर? 😱 #facts",
-   "4,328,302 Sita Haran: What Does Valmiki Actually Say? #SitaHaran #ValmikiRamayan"
+   "11,321,352 जिन्हें भारत ने सच में मान लिया भगवान #Shorts",
+   "9,435,483 Japan Made Ramayana Before Bollywood! 😳",
+   "8,915,082 This Ramayana Theory Will Surprise You! 🚩 | Jai Shree Ram 🙏 | Part 1 |",
+   "7,576,297 जटायु से भी 10 गुना शक्तिशाली था उसका बड़ा भाई संपाती! 😱  #facts",
+   "6,584,817 MEHRANGARH FORT MYSTERY 😱 | 7 दरवाजे, हाथियों से बचाव और किले की अनोखी"
   ]
  }
 }
