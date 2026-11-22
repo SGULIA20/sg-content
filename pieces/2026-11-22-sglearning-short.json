@@ -75,6 +75,9 @@
    "voice": 9
   },
   "drafts": 1,
+  "ig_reel_id": "18110716082344260",
+  "ig_story_id": "18142260184729788",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-22-sglearning-short.mp4",
    "clip_seconds": 1,
@@ -85,6 +88,8 @@
   "intro_sent": "2026-11-15T19:55:39+00:00",
   "out_sha": "1a6d9526509fff015c905ab25f22931c9dc33466",
   "out_sha_intro": true,
+  "threads_id": "18420674809094317",
+  "threads_poll_id": "18133856221704087",
   "yt_id": "Y6Rwjy7VVPI",
   "yt_long_link": "Ugx76bQSXW6XiUd2KQh4AaABAg"
  },
@@ -243,7 +248,7 @@
   },
   "title": "Galat *UPI* par paisa gaya, ab kya? 😱"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   3.932,
@@ -285,6 +290,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-16T07:47:29+00:00",
+ "updated": "2026-11-22T16:21:15+00:00",
  "writer": "claude"
 }
