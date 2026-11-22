@@ -601,8 +601,17 @@
   "summary": "How a monthly SIP in a mutual fund works, rupee cost averaging, the difference between returns in a good decade and a flat one, expense ratio, why stopping in a crash hurts; honest ranges, no promises.",
   "target_minutes": 12,
   "thumb_test": {
-   "phase": "B",
-   "switched": "2026-11-16T21:15+00:00"
+   "a": [
+    0,
+    null
+   ],
+   "b": [
+    0,
+    null
+   ],
+   "phase": "done",
+   "switched": "2026-11-16T21:15+00:00",
+   "winner": "A"
   },
   "title": "500 rupaye mahine ki SIP: 20 saal mein kya bana, aur kya nahi bana",
   "voice": "voice_7o0kddoq6q2z"
