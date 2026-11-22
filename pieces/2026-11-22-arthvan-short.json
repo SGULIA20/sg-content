@@ -125,7 +125,9 @@
    "voice": 13
   },
   "drafts": 1,
+  "ig_reel_id": "17888807325505163",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-22-arthvan-short.mp4",
    "clip_seconds": 1,
@@ -136,6 +138,8 @@
   "intro_sent": "2026-11-15T19:45:44+00:00",
   "out_sha": "5067993a4f1644a277585a07746537ebab5fe8db",
   "out_sha_intro": true,
+  "threads_id": "18117557981023849",
+  "threads_poll_id": "18067473257535309",
   "yt_id": "Uga8ET7utt4"
  },
  "kind": "short",
@@ -359,7 +363,7 @@
   },
   "title": "Manthara ki zubaan *devtaon* ne palti? 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   7.426,
@@ -411,6 +415,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-16T14:44:05+00:00",
+ "updated": "2026-11-22T16:10:14+00:00",
  "writer": "claude"
 }
