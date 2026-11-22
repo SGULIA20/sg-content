@@ -68,6 +68,50 @@ def collect(root: Path = ROOT, token: str = "", get=_get) -> list:
     return taken
 
 
+THUMB_DIR = "inbox/thumb"
+SEEN = "logs/handover.json"                 # {piece id: the id of the bot's thumbnail last taken}
+
+
+def collect_thumbs(root: Path = ROOT, token: str = "", get=_get, today=None) -> list:
+    """Thumbnails the founder sent to the Arthvan bot (22 Nov 2026: one sat there untaken). A bot thumbnail is taken once per upload
+    to the bot: the id of the last one taken is remembered, so a thumbnail saved later from the Claude chat is not put back to the
+    bot's older one. Only long pieces not yet past their day are looked at; the studio sweep sets the picture on YouTube."""
+    from .config import today_ist
+    today = today or today_ist()
+    longs = {p.id: p for p in pieces.list_all(root) if p.kind == "long" and p.publish_day >= today}
+    if not longs:
+        return []
+    try:
+        listing = json.loads(get(API.format(repo=SOURCE, path=THUMB_DIR), token))
+    except urllib.error.HTTPError as e:
+        if e.code == 404:                                           # the bot has saved no thumbnail yet
+            return []
+        raise
+    seen_file = Path(root) / SEEN
+    try:
+        seen = json.loads(seen_file.read_text())
+    except (FileNotFoundError, ValueError):
+        seen = {}
+    taken = []
+    for entry in listing:
+        name = str(entry.get("name", ""))
+        pid = name[:-4] if name.endswith(".jpg") else ""
+        if pid not in longs or seen.get(pid) == entry.get("sha") or not 0 < int(entry.get("size") or 0) <= 4_000_000:
+            continue
+        data = get(API.format(repo=SOURCE, path=urllib.parse.quote(f"{THUMB_DIR}/{name}")), token, raw=True)
+        if hashlib.sha1(b"blob %d\0" % len(data) + data).hexdigest() != entry.get("sha"):
+            continue
+        local = intro.thumb_path(root, longs[pid])
+        local.parent.mkdir(parents=True, exist_ok=True)
+        local.write_bytes(data)
+        seen[pid] = entry["sha"]
+        taken.append(pid)
+    if taken:
+        seen_file.parent.mkdir(parents=True, exist_ok=True)
+        seen_file.write_text(json.dumps(seen, indent=1, sort_keys=True) + "\n")
+    return taken
+
+
 def main(argv=None) -> int:
     import os
     try:
@@ -78,6 +122,14 @@ def main(argv=None) -> int:
     if taken:
         print(f"collected from the Arthvan bot: {', '.join(taken)}", flush=True)
         gitsync.commit(ROOT, f"handover: clip(s) from the Arthvan bot for {', '.join(taken)}", paths=[f"{intro.INBOX}/{t}.mp4" for t in taken])
+    try:
+        thumbs = collect_thumbs(ROOT, os.environ.get("GITHUB_TOKEN", ""))
+    except (urllib.error.URLError, OSError, ValueError, KeyError) as e:
+        print(f"thumbnail hand-over skipped: {type(e).__name__}: {secrets.scrub(str(e))[:160]}", flush=True)
+        return 0
+    if thumbs:
+        print(f"thumbnails from the Arthvan bot: {', '.join(thumbs)}", flush=True)
+        gitsync.commit(ROOT, f"handover: thumbnail(s) from the Arthvan bot for {', '.join(thumbs)}", paths=[THUMB_DIR, SEEN])
     return 0
 
 

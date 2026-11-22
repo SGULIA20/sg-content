@@ -47,3 +47,24 @@ def test_nothing_waiting_means_no_request_and_a_bad_download_is_left_alone(tmp_p
     listing = [{"name": "2026-11-27-arthvan-long.mp4", "sha": _sha(b"what was listed"), "size": 15}]
     got = handover.collect(tmp_path, "", lambda url, token="", raw=False: b"something else" if raw else json.dumps(listing).encode())
     assert got == [] and not (tmp_path / "inbox" / "intro" / "2026-11-27-arthvan-long.mp4").exists()
+
+
+def test_a_thumbnail_sent_to_the_bot_is_taken_once_and_a_later_chat_one_is_not_put_back(tmp_path):
+    """22 Nov 2026: the founder sent 'thumb 2026-11-29-arthvan-long' to the Arthvan bot."""
+    _piece(tmp_path, "2026-11-27-arthvan-long", "uploaded")
+    _piece(tmp_path, "2026-11-27-arthvan-short", "intro-wait")
+    bot = b"the bot's thumbnail" * 500
+    listing = [{"name": "2026-11-27-arthvan-long.jpg", "sha": _sha(bot), "size": len(bot)}, {"name": "2026-11-27-arthvan-short.jpg", "sha": "s", "size": 9}]
+    def get(url, token="", raw=False):
+        return bot if raw else json.dumps(listing).encode()
+    day = date(2026, 11, 22)
+    assert handover.collect_thumbs(tmp_path, "", get, today=day) == ["2026-11-27-arthvan-long"]
+    local = tmp_path / "inbox" / "thumb" / "2026-11-27-arthvan-long.jpg"
+    assert local.read_bytes() == bot
+    local.write_bytes(b"a newer one saved from the chat")
+    assert handover.collect_thumbs(tmp_path, "", get, today=day) == [] and local.read_bytes() == b"a newer one saved from the chat"
+    newer = b"he sent the bot another" * 500
+    listing[0] = {"name": "2026-11-27-arthvan-long.jpg", "sha": _sha(newer), "size": len(newer)}
+    assert handover.collect_thumbs(tmp_path, "", lambda url, token="", raw=False: newer if raw else json.dumps(listing).encode(), today=day) == ["2026-11-27-arthvan-long"]
+    assert handover.collect_thumbs(tmp_path, "", get, today=date(2026, 11, 28)) == []          # past its day: left alone
+
