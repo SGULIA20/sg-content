@@ -1,0 +1,70 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.87,Default,,0,0,0,,Sakshi Gopal:
+Dialogue: 0,0:00:00.87,0:00:02.82,Default,,0,0,0,,kya Bhagwan khud chal kar gawahi
+Dialogue: 0,0:00:02.82,0:00:03.47,Default,,0,0,0,,dene aaye?
+Dialogue: 0,0:00:03.47,0:00:05.21,Default,,0,0,0,,Puri ke paas khadi moorti,
+Dialogue: 0,0:00:05.21,0:00:06.51,Default,,0,0,0,,aur toota hua vachan.
+Dialogue: 0,0:00:06.96,0:00:08.89,Default,,0,0,0,,Chaitanya Charitamrita kehta hai,
+Dialogue: 0,0:00:08.89,0:00:11.17,Default,,0,0,0,,boodhe aur jawan brahman Vrindavan pahunche.
+Dialogue: 0,0:00:11.17,0:00:12.92,Default,,0,0,0,,Gopal ke saamne boodhe ne kaha,
+Dialogue: 0,0:00:12.92,0:00:14.15,Default,,0,0,0,,meri beti tumhari.
+Dialogue: 0,0:00:14.60,0:00:16.35,Default,,0,0,0,,Ghar lautkar boodha mukar gaya.
+Dialogue: 0,0:00:16.35,0:00:17.23,Default,,0,0,0,,Jawan bola,
+Dialogue: 0,0:00:17.23,0:00:18.76,Default,,0,0,0,,mere gawah Gopal hain.
+Dialogue: 0,0:00:18.76,0:00:20.95,Default,,0,0,0,,Par moorti gawahi kaise degi?
+Dialogue: 0,0:00:21.40,0:00:22.21,Default,,0,0,0,,Granth kehta hai,
+Dialogue: 0,0:00:22.21,0:00:24.45,Default,,0,0,0,,Gopal 100 din apne pairon par
+Dialogue: 0,0:00:24.45,0:00:24.86,Default,,0,0,0,,chale.
+Dialogue: 0,0:00:24.86,0:00:25.27,Default,,0,0,0,,Shart thi,
+Dialogue: 0,0:00:25.27,0:00:26.49,Default,,0,0,0,,payal ki chhan-chhan suno,
+Dialogue: 0,0:00:26.49,0:00:27.50,Default,,0,0,0,,peeche mat dekho.
+Dialogue: 0,0:00:27.95,0:00:30.45,Default,,0,0,0,,Lekin jawan ne peeche dekh liya.
+Dialogue: 0,0:00:30.45,0:00:32.12,Default,,0,0,0,,Moorti wahin ruk gayi.
+Dialogue: 0,0:00:32.12,0:00:34.61,Default,,0,0,0,,Isliye naam pada Sakshi Gopal,
+Dialogue: 0,0:00:34.61,0:00:36.27,Default,,0,0,0,,yaani gawah Gopal.
+Dialogue: 0,0:00:36.72,0:00:37.54,Default,,0,0,0,,Ab sabut dekhiye.
+Dialogue: 0,0:00:37.54,0:00:38.69,Default,,0,0,0,,Epigraphia Indica,
+Dialogue: 0,0:00:38.69,0:00:41.15,Default,,0,0,0,,yaani purane shilalekhon ka sarkari sangrah,
+Dialogue: 0,0:00:41.15,0:00:42.29,Default,,0,0,0,,raja ka naam deta hai.
+Dialogue: 0,0:00:42.74,0:00:44.56,Default,,0,0,0,,Gajapati Purushottama Deva,
+Dialogue: 0,0:00:44.56,0:00:46.38,Default,,0,0,0,,1467 se Odisha ke raja.
+Dialogue: 0,0:00:46.38,0:00:48.03,Default,,0,0,0,,Unhone dakshin mein Kanchi tak yuddh
+Dialogue: 0,0:00:48.03,0:00:48.69,Default,,0,0,0,,abhiyan chalaya.
+Dialogue: 0,0:00:49.14,0:00:50.23,Default,,0,0,0,,Itihaaskar K.C.
+Dialogue: 0,0:00:50.23,0:00:51.74,Default,,0,0,0,,Panigrahi kehte hain,
+Dialogue: 0,0:00:51.74,0:00:53.47,Default,,0,0,0,,raja moorti ko yuddh jeet kar
+Dialogue: 0,0:00:53.47,0:00:53.68,Default,,0,0,0,,laaye.
+Dialogue: 0,0:00:53.68,0:00:54.55,Default,,0,0,0,,Bhakt kehte hain,
+Dialogue: 0,0:00:54.55,0:00:55.85,Default,,0,0,0,,Gopal khud chal kar aaye.
+Dialogue: 0,0:00:56.30,0:00:57.97,Default,,0,0,0,,Aur Vidyanagara tha kahan?
+Dialogue: 0,0:00:57.97,0:00:59.45,Default,,0,0,0,,Koi kehta Vijayanagara,
+Dialogue: 0,0:00:59.45,0:01:00.38,Default,,0,0,0,,koi Rajahmundry,
+Dialogue: 0,0:01:00.38,0:01:01.31,Default,,0,0,0,,koi Chandragiri.
+Dialogue: 0,0:01:01.31,0:01:02.61,Default,,0,0,0,,Jawab aaj tak tay nahi.
+Dialogue: 0,0:01:03.06,0:01:04.63,Default,,0,0,0,,Moorti kab aur kisne gadhi,
+Dialogue: 0,0:01:04.63,0:01:05.81,Default,,0,0,0,,yeh bhi pata nahi.
+Dialogue: 0,0:01:05.81,0:01:06.99,Default,,0,0,0,,Lokkatha kehti hai,
+Dialogue: 0,0:01:06.99,0:01:08.76,Default,,0,0,0,,Krishna ke parpote Vajra ne.
+Dialogue: 0,0:01:09.21,0:01:10.31,Default,,0,0,0,,Par yahan twist hai.
+Dialogue: 0,0:01:10.31,0:01:13.18,Default,,0,0,0,,Wahi Chaitanya Charitamrita likhta hai,
+Dialogue: 0,0:01:13.18,0:01:15.39,Default,,0,0,0,,raja Gopal ko Kataka le gaye.
+Dialogue: 0,0:01:15.39,0:01:16.05,Default,,0,0,0,,Toh chale,
+Dialogue: 0,0:01:16.05,0:01:16.71,Default,,0,0,0,,ya laaye gaye?
+Dialogue: 0,0:01:17.16,0:01:18.79,Default,,0,0,0,,Aaj Gopal Satyabadi mein hain,
+Dialogue: 0,0:01:18.79,0:01:19.52,Default,,0,0,0,,Puri ke paas.
+Dialogue: 0,0:01:19.52,0:01:20.96,Default,,0,0,0,,Yahan bhog chawal ka nahi,
+Dialogue: 0,0:01:20.96,0:01:22.05,Default,,0,0,0,,gehun ka banta hai.
+Dialogue: 0,0:01:22.50,0:01:23.89,Default,,0,0,0,,Us dost ko bhejo jo vachan
+Dialogue: 0,0:01:23.89,0:01:25.11,Default,,0,0,0,,dekar mukar jaata hai.

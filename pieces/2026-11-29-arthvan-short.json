@@ -1,0 +1,437 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "scripture",
+   "number": 100.0,
+   "quote": "For one hundred days He traveled through the country, walking on His own legs.",
+   "source_date": "1615",
+   "source_name": "Chaitanya Charitamrita, Madhya-lila 5.4",
+   "source_url": "https://vedabase.io/en/library/cc/madhya/5/4/",
+   "text": "The Chaitanya Charitamrita records that the deity of Gopal walked on His own legs across the country for 100 days to bear witness for a devotee.",
+   "unit": "count"
+  },
+  {
+   "label": "scripture",
+   "number": 2.0,
+   "quote": "Two brahmanas, one elderly and the other young, left Vidyanagara and traveled to visit holy places... In the temple of Gopala, the elderly brahmana promised to give his daughter in marriage to the young brahmana.",
+   "source_date": "1615",
+   "source_name": "Chaitanya Charitamrita, Madhya-lila Chapter 5",
+   "source_url": "https://vedabase.io/en/library/cc/madhya/5/",
+   "text": "The scripture narrates that 2 brahmanas from Vidyanagara undertook a pilgrimage to Vrindavan, where an elder brahmana promised his daughter in marriage before the Gopal deity.",
+   "unit": "count"
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "You will hear the jingling of the bells on My feet, but if you look back to see Me, I shall immediately stop and remain stationary.",
+   "source_date": "1615",
+   "source_name": "Chaitanya Charitamrita, Madhya-lila Chapter 5",
+   "source_url": "https://vedabase.io/en/library/cc/madhya/5/",
+   "text": "The deity agreed to follow the devotee on the condition that the devotee would hear the jingling of ankle bells but must never look back during the march.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": 16.0,
+   "quote": "According to mythology the deity of Sakhi Gopal was one of the sixteen idols of the Lord carved by King Vajra, who was the great grandson of Lord Shri Krishna.",
+   "source_date": "1977",
+   "source_name": "Puri District Gazetteer / Local Temple Lore",
+   "source_url": "https://en.wikipedia.org/wiki/Sakhigopal_Temple",
+   "text": "Local devotional lore claims that the idol was one of 16 images carved out of imperishable bajra stone by King Vajra, the great-grandson of Krishna.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": 1467.0,
+   "quote": "Purushottama Deva was the second ruler from the Suryavamsa Gajapati dynasty, reigning from 1467 to 1497 CE.",
+   "source_date": "1982",
+   "source_name": "Archaeological Survey of India / Epigraphia Indica",
+   "source_url": "https://en.wikipedia.org/wiki/Purushottama_Deva",
+   "text": "Historical and epigraphic records establish that Gajapati Emperor Purushottama Deva ruled Odisha from 1467 CE to 1497 CE and led the Kanchi-Kaveri military campaign.",
+   "unit": "CE"
+  },
+  {
+   "label": "disputed",
+   "number": 1000.0,
+   "quote": "While devotional texts state the deity walked from Vrindavan, historical analysis shows Gajapati Purushottama Deva brought the deity of Sakhi Gopala from Vidyanagar to Kataka as trophy of war.",
+   "source_date": "1981",
+   "source_name": "History of Orissa (K.C. Panigrahi) / Chaitanya Charitamrita",
+   "source_url": "https://en.wikipedia.org/wiki/Purushottama_Deva",
+   "text": "Scholars dispute whether the stone idol walked more than 1000 km as claimed in devotional accounts or was brought to Odisha as military spoils by King Purushottama Deva.",
+   "unit": "km"
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "Historians contest the geographic identity of Vidyanagara in the Gajapati chronicles, identifying it variously with Rajahmundry, Chandragiri, or the Vijayanagara metropolis.",
+   "source_date": "1964",
+   "source_name": "Epigraphia Indica / Gajapati Chronicles",
+   "source_url": "https://en.wikipedia.org/wiki/Purushottama_Deva",
+   "text": "Historians dispute whether the medieval site named Vidyanagara corresponded to the imperial capital of Vijayanagara, the Godavari outpost of Rajahmundry, or the fortress of Chandragiri.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "When the King begged Him to come to his kingdom, Gopala, who was already obliged to the king for his devotional service, accepted his prayer. Thus the King took the Gopala Deity and went back to Kataka.",
+   "source_date": "1615",
+   "source_name": "Chaitanya Charitamrita, Madhya-lila 5.123",
+   "source_url": "https://vedabase.io/en/library/cc/madhya/5/123/",
+   "text": "The Chaitanya Charitamrita states that King Purushottama Deva defeated the ruler of Vidyanagara and transported the Sakshi-gopala idol directly to Cuttack.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 20.0,
+   "quote": "Sakshi Gopal is a small town located 20 km to the west of Puri, is named after Lord Sri Krishna who presides over the temple as Sakshi Gopal.",
+   "source_date": "2020",
+   "source_name": "Archaeological Survey of India / Odisha Tourism",
+   "source_url": "https://en.wikipedia.org/wiki/Sakhigopal_Temple",
+   "text": "The Sakshigopal Temple is located in Satyabadi, situated 20 km north of the town of Puri on the Bhubaneswar-Puri highway.",
+   "unit": "km"
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "The food offerings at Sakhigopala temple are made up of wheat instead of rice. This is one of the exceptional offerings among the worshiping processes of Vishnu temples.",
+   "source_date": "2021",
+   "source_name": "Odisha State Tourism / Local Temple Custodians",
+   "source_url": "https://en.wikipedia.org/wiki/Sakhigopal_Temple",
+   "text": "Local temple tradition maintains that the deity refused rice offerings upon arriving in Odisha, leading priests to prepare daily bhoga exclusively from wheat flour.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "The statue of Radha was added later with the statue of Gopala.",
+   "source_date": "2018",
+   "source_name": "Lord Jagannath Temple Administration Records",
+   "source_url": "https://en.wikipedia.org/wiki/Sakhigopal_Temple",
+   "text": "Temple accounts state that a separate brass statue of Radha was installed alongside the central stone deity by a later king to accommodate paired worship.",
+   "unit": null
+  }
+ ],
+ "id": "2026-11-29-arthvan-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-22",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 21.0,
+   "usd": 0.11724,
+   "voice": 13
+  },
+  "drafts": 1,
+  "ig_story_id": "skipped: Reel over 60 s",
+  "intro_sent": "2026-11-22T20:44:56+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-29",
+ "reasons": [
+  "waiting for the founder's intro clip until 29 Nov 11:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Sakshi Gopal: kya Bhagwan khud chal kar gawahi dene aaye?\nGranth kehta hai Gopal 100 din apne pairon par chale.\nItihaaskar kehte hain, raja moorti ko yuddh jeet kar laaye.\nAapko kya lagta hai, chale ya laaye gaye?\nUs dost ko bhejo jo vachan dekar mukar jaata hai.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#HinduMythology",
+     "#IndianHistory",
+     "#Mythology",
+     "#Itihaas",
+     "#Rahasya",
+     "#AncientIndia",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Sakshi Gopal: kya Bhagwan khud chal kar gawahi dene aaye? Granth kehta hai 100 din paidal chale, itihaaskar kehte hain raja yuddh jeet kar laaye. Aap kya maante ho, chale ya laaye gaye? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Sakshi Gopal: kya Bhagwan khud chal kar gawahi dene aaye? Chaitanya Charitamrita kehta hai Gopal apne pairon par chale, aur peeche dekhte hi ruk gaye. Itihaaskar kehte hain raja Purushottama Deva moorti ko yuddh jeet kar laaye, aur sach aaj bhi khula sawaal hai. Us dost ko bhejo jo vachan dekar mukar jaata hai.",
+    "tags": [
+     "Sakshi Gopal",
+     "Satyabadi",
+     "Puri",
+     "Odisha temple",
+     "Chaitanya Charitamrita",
+     "Purushottama Deva",
+     "Krishna",
+     "Indian mythology",
+     "Indian history",
+     "Gajapati",
+     "Vidyanagara",
+     "SabutKeSaath"
+    ],
+    "title": "Sakshi Gopal: 100 din chal kar aaye Bhagwan?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo vachan dekar mukar jaata hai.",
+  "hook": "Sakshi Gopal: kya Bhagwan khud chal kar gawahi dene aaye?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic dramatic view at stormy dusk: a dark stone statue of Krishna seen from behind, standing alone on an ancient dusty road through Indian countryside, lightning over the horizon, a young pilgrim in a white dhoti far ahead holding an oil lamp, wind whipping the dust, documentary photograph, natural light, no text",
+     "type": "art"
+    },
+    "vo": "Sakshi Gopal: kya Bhagwan khud chal kar gawahi dene aaye? Puri ke paas khadi moorti, aur toota hua vachan."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic interior of an ancient Vrindavan stone temple lit by oil lamps, an elderly brahmin in dhoti and angavastram with raised palm making a promise to a young brahmin, a dark stone Krishna statue at a distance in the shrine, warm smoky light, no text",
+     "type": "art"
+    },
+    "vo": "Chaitanya Charitamrita kehta hai, boodhe aur jawan brahman Vrindavan pahunche. Gopal ke saamne boodhe ne kaha, meri beti tumhari."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene in an ancient South Indian village courtyard with thatched huts, villagers in dhotis and sarees gathered under a banyan tree, a young brahmin pleading while an elderly man turns away, tense afternoon light, documentary style, no text",
+     "type": "art"
+    },
+    "vo": "Ghar lautkar boodha mukar gaya. Jawan bola, mere gawah Gopal hain. Par moorti gawahi kaise degi?"
+   },
+   {
+    "facts_used": [
+     0,
+     2
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view at ground level of a dusty forest path at dawn, a young pilgrim's bare feet walking forward, behind him at a distance the base of a dark stone statue with small bronze ankle bells catching the light, mist between trees, no text",
+     "type": "art"
+    },
+    "vo": "Granth kehta hai, Gopal 100 din apne pairon par chale. Shart thi, payal ki chhan-chhan suno, peeche mat dekho."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide shot of an open sandy plain near the eastern Indian coast, a young man in dhoti turning his head over his shoulder in shock, a dark stone Krishna statue standing still far behind him, golden evening light, palm trees, no text",
+     "type": "art"
+    },
+    "vo": "Lekin jawan ne peeche dekh liya. Moorti wahin ruk gayi. Isliye naam pada Sakshi Gopal, yaani gawah Gopal."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of weathered stone inscription carved in old Odia script on a temple wall, side light revealing deep grooves, a researcher's hand with a brush cleaning dust, documentary photograph, no readable text",
+     "type": "art"
+    },
+    "vo": "Ab sabut dekhiye. Epigraphia Indica, yaani purane shilalekhon ka sarkari sangrah, raja ka naam deta hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of an ancient Odia army marching south along a river at dawn, warriors with bows, spears and leather armour, war elephants with cloth canopies, dust rising, Indian landscape, natural light, no text",
+     "type": "art"
+    },
+    "vo": "Gajapati Purushottama Deva, 1467 se Odisha ke raja. Unhone dakshin mein Kanchi tak yuddh abhiyan chalaya."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of a dark stone statue wrapped in cloth being carried on a wooden palanquin by soldiers in leather armour through a captured fort gate, smoke in the background, late afternoon light, ancient India, no text",
+     "type": "art"
+    },
+    "vo": "Itihaaskar K.C. Panigrahi kehte hain, raja moorti ko yuddh jeet kar laaye. Bhakt kehte hain, Gopal khud chal kar aaye."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view of ancient boulder-strewn ruins and a hilltop fortress in South India, the Godavari-like river glinting in the distance, scattered stone gateways, hazy morning light, no text",
+     "type": "art"
+    },
+    "vo": "Aur Vidyanagara tha kahan? Koi kehta Vijayanagara, koi Rajahmundry, koi Chandragiri. Jawab aaj tak tay nahi."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic ancient Indian stone workshop lit by oil lamps, a sculptor in dhoti chiselling a tall block of dark stone, chips of stone on the floor, the figure still rough and unfinished, seen from behind, no text",
+     "type": "art"
+    },
+    "vo": "Moorti kab aur kisne gadhi, yeh bhi pata nahi. Lokkatha kehti hai, Krishna ke parpote Vajra ne."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of an old palm-leaf manuscript bundle opened on a wooden stand, beside an oil lamp, warm light on the inked leaves, a royal procession with parasols blurred far behind through a window, no readable text",
+     "type": "art"
+    },
+    "vo": "Par yahan twist hai. Wahi Chaitanya Charitamrita likhta hai, raja Gopal ko Kataka le gaye. Toh chale, ya laaye gaye?"
+   },
+   {
+    "facts_used": [
+     8,
+     9
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of the Kalinga-style Sakshigopal temple spire at Satyabadi in Odisha at sunrise, pilgrims in sarees and dhotis at the gate, a priest carrying a brass plate of wheat offerings, natural light, no text",
+     "type": "art"
+    },
+    "vo": "Aaj Gopal Satyabadi mein hain, Puri ke paas. Yahan bhog chawal ka nahi, gehun ka banta hai."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic evening view of the Sakshigopal temple courtyard with rows of glowing oil lamps, two friends in kurta seen from behind sitting on stone steps looking at the lit spire, calm warm light, no text",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo vachan dekar mukar jaata hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "SAKSHI GOPAL",
+   "name_hi": "साक्षी गोपाल",
+   "scene": "A dark stone Krishna statue seen from behind on an endless dusty road across ancient Indian countryside at stormy dusk, a lone pilgrim with an oil lamp far ahead, lightning splitting the sky.",
+   "words": [
+    "1,000 KM",
+    "SACH?"
+   ],
+   "words_hi": [
+    "1,000 किमी",
+    "सच?"
+   ]
+  },
+  "title": "Sakshi Gopal, *gawahi* dene khud chale? 😱"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  6.963,
+  14.598,
+  21.4,
+  27.955,
+  36.724,
+  42.742,
+  49.144,
+  56.296,
+  63.057,
+  69.211,
+  77.163,
+  82.498
+ ],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "en.wikipedia.org",
+   "nio.res.in",
+   "britannica.com",
+   "the scripture or text named in the story"
+  ],
+  "follows": "The Sakshi Gopal video got 1.8M views at 174s. A short keeps the one-question format and labels the legend clearly. It is different from the covered Jagannath f",
+  "hooks": [
+   "Kya Bhagwan ek bhakt ke liye gawahi dene khud chal kar aaye?",
+   "Is moorti ko Sakshi Gopal naam kyun mila?"
+  ],
+  "id": "wk-2026-11-29-arthvan-short",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "",
+   "options": [
+    {
+     "closing": "",
+     "question": "Boodhe ne Bhagwan ke saamne vachan diya, ghar lautkar mukar gaya, aur phir Bhagwan ko khud gawahi dene chalna pada. Kaise?",
+     "text": "Boodhe ne Bhagwan ke saamne vachan diya, ghar lautkar mukar gaya, aur phir Bhagwan ko khud gawahi dene chalna pada. Kaise?",
+     "words": 21
+    },
+    {
+     "closing": "",
+     "question": "Ek moorti 100 din tak apne pairon par chali, aur phir ek insaan ki ek galti ne use hamesha ke liye rok diya.",
+     "text": "Ek moorti 100 din tak apne pairon par chali, aur phir ek insaan ki ek galti ne use hamesha ke liye rok diya.",
+     "words": 23
+    },
+    {
+     "closing": "",
+     "question": "Payal ki chhan-chhan sunte rehna, peeche mat dekhna. Bas itna sa niyam tha, aur ek jawan ne use tod diya. Phir kya hua?",
+     "text": "Payal ki chhan-chhan sunte rehna, peeche mat dekhna. Bas itna sa niyam tha, aur ek jawan ne use tod diya. Phir kya hua?",
+     "words": 23
+    },
+    {
+     "closing": "",
+     "question": "Bhakt kehte hain Gopal khud chal kar aaye, itihaaskar kehte hain raja unhe yuddh jeet kar laaye. Aakhir sach kiske paas hai?",
+     "text": "Bhakt kehte hain Gopal khud chal kar aaye, itihaaskar kehte hain raja unhe yuddh jeet kar laaye. Aakhir sach kiske paas hai?",
+     "words": 22
+    },
+    {
+     "closing": "",
+     "question": "Vidyanagara kahan tha, aaj tak koi nahi jaanta. Aur jis moorti ne gawahi di, use kisne gadha, yeh bhi ek rahasya hai.",
+     "text": "Vidyanagara kahan tha, aaj tak koi nahi jaanta. Aur jis moorti ne gawahi di, use kisne gadha, yeh bhi ek rahasya hai.",
+     "words": 22
+    }
+   ],
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: dramatic view at stormy dusk: a dark stone statue of Krishna seen from behind, standing alone on an ancient dusty road through Indian countryside, lightning over the horizon, a young pilgrim in a white dhoti far ahead holding an oil lamp, wind whipping the dust, documentary photograph, natural light. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. If the scene shows the past, it is ancient India: Indian people in dhotis, sarees and angavastram, warriors with bows, spears and bronze or leather armour, carved stone pillars, oil lamps; never European knights, plate armour, castles or anything medieval European. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a deep blue kurta with a beige Nehru jacket. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, an alert, intense, wide-awake face with a hint of a smile. On the question his voice rises with excitement as he strides closer. On the last line a firm, energetic nod with bright, eager eyes. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGMythWorld watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "Boodhe ne Bhagwan ke saamne vachan diya, ghar lautkar mukar gaya, aur phir Bhagwan ko khud gawahi dene chalna pada. Kaise?",
+   "text": "Boodhe ne Bhagwan ke saamne vachan diya, ghar lautkar mukar gaya, aur phir Bhagwan ko khud gawahi dene chalna pada. Kaise?",
+   "words": 21
+  },
+  "summary": "Puri ke Sakshi Gopal mandir ki lokkatha: do brahmanon, vachan aur Krishna ki gawahi. Check: katha ke srot (Odia parampara), moorti ka Vrindavan se Odisha tak ka safar, Satyabadi mandir ki tithi. Katha ko legend label karo.",
+  "target_minutes": null,
+  "title": "Sakshi Gopal: Bhagwan 1500 km chal kar gawahi dene aaye?",
+  "topic_score": 7,
+  "topic_score_why": [
+   "+2 a famous name",
+   "+3 a shock question or a mystery",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "voice": "voice_7o0kddoq6q2z",
+  "weekly": true
+ },
+ "updated": "2026-11-22T20:45:10+00:00",
+ "writer": "claude"
+}
