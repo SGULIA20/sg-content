@@ -95,7 +95,15 @@
    "voice": 8
   },
   "drafts": 1,
-  "intro_sent": "2026-11-21T21:13:25+00:00"
+  "intro": {
+   "clip": "2026-11-28-sglearning-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-22T11:48:24+00:00",
+   "seconds": 8.1
+  },
+  "intro_checked": "161ee9352e61e514",
+  "intro_sent": "2026-11-21T21:13:25+00:00",
+  "yt_id": "fb8stVqNaus"
  },
  "kind": "short",
  "publish_day": "2026-11-28",
@@ -250,7 +258,7 @@
   },
   "title": "Why did *pension* stop paying half salary? 🤔"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   5.729,
@@ -310,6 +318,7 @@
    "text": "The government never saved a single rupee for that clerk's pension. So what happened in 2004 that made it stop paying new employees?",
    "words": 23
   },
+  "look": "claymation",
   "summary": "The 2004 switch from the old defined pension to the contribution-based NPS for government staff, and the later unified scheme: who pays, what is guaranteed, and what a private employee can take from it. Government notifications only; no party politics.",
   "target_minutes": null,
   "theme": "jobs",
@@ -324,6 +333,6 @@
   ],
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-11-21T21:13:39+00:00",
+ "updated": "2026-11-22T11:48:28+00:00",
  "writer": "claude"
 }

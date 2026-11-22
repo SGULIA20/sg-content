@@ -136,7 +136,15 @@
   },
   "drafts": 2,
   "ig_story_id": "skipped: Reel over 60 s",
-  "intro_sent": "2026-11-21T20:58:55+00:00"
+  "intro": {
+   "clip": "2026-11-28-arthvan-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-22T11:47:32+00:00",
+   "seconds": 8.38
+  },
+  "intro_checked": "41869065d3081971",
+  "intro_sent": "2026-11-21T20:58:55+00:00",
+  "yt_id": "rD828y74mZg"
  },
  "kind": "short",
  "publish_day": "2026-11-28",
@@ -346,7 +354,7 @@
   },
   "title": "Parashuram ne *Kerala* samundar se nikala? 🤯"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   5.434,
@@ -415,6 +423,7 @@
    "text": "Kerala ki zameen kya sach mein samundar se nikli thi? Granth haan kehte hain, par 23 metre neeche khodne par kuch aur mila.",
    "words": 23
   },
+  "look": "indian-comic",
   "notes": "Scripture/legend vs coastal geology (sea-level change); both told, both labelled.",
   "place": "Konkan-Kerala coast",
   "target_minutes": null,
@@ -427,6 +436,6 @@
   ],
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-11-21T20:59:23+00:00",
+ "updated": "2026-11-22T11:47:38+00:00",
  "writer": "claude"
 }

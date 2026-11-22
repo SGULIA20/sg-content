@@ -59,13 +59,28 @@
    "drafts": 1,
    "research": 1
   },
+  "captions": {
+   "en": "AUieDaZLYncbPSLQQQ9g4y_gWdpR5YO-8HPsb-QFmkhqCDUCDo9zy_fC",
+   "gu": "AUieDaY7DGyf_m_FNLPGrlaCXNvHwbR1nsh_Q9KpsxVi7n0GS8-HLMaRjvq7FbAj-WDsm3AcGfY",
+   "hi": "AUieDaZ1_mSdcOiL9xKUPmPUWP8oYo8ofKAs6fJpqrd_z2WDU5fCA-QAdUIv7i579OQPFpg",
+   "mr": "AUieDaa-BSNU3TuFi4FO0ubgXY9sYwTs1MigatZOKpXA5w0nk7w1Je1--2PtjWjumOY",
+   "ta": "AUieDabd1PqCkB3b6u7HFb4oFH8um-LpRdFMMpM1JBwuz2RdwPbLBAjJ1QrihnGWl2Q"
+  },
   "cost": {
    "inr": 106.5,
-   "usd": 0.305194,
-   "voice": 70
+   "usd": 0.762356,
+   "voice": 74
   },
   "drafts": 1,
-  "intro_sent": "2026-11-21T20:43:17+00:00"
+  "intro": {
+   "clip": "2026-11-29-arthvan-long.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-22T12:09:10+00:00",
+   "seconds": 8.35
+  },
+  "intro_checked": "f3afba1f983501d3",
+  "intro_sent": "2026-11-21T20:43:17+00:00",
+  "yt_id": "PoCunCVWTcY"
  },
  "kind": "long",
  "publish_day": "2026-11-29",
@@ -942,7 +957,7 @@
   },
   "title": "Shakuni ka *badla*, text mein hai ya nahi? 🤯"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   10.455,
@@ -1070,6 +1085,7 @@
    "text": "Shakuni ne pita ki haddiyon se pasey banaye, aur kasam khayi... par kya yeh kahani Mahabharat ke asli text mein kabhi thi hi?",
    "words": 23
   },
+  "look": "indian-comic",
   "summary": "Gandhar ke rajkumar Shakuni ki bhumika Mahabharat ke Sabha Parva ke pasey ke khel mein, aur Gandhari ke parivaar ki qaid wali lokkatha. Check: critical edition mein kya hai aur kya baad ki parampara; Gandhar ka bhugol. Lokkatha ko alag label karo.",
   "target_minutes": 14,
   "title": "Shakuni sach mein khalnayak tha, ya badle ki kahani ka hissa?",
@@ -1083,6 +1099,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-21T20:43:32+00:00",
+ "updated": "2026-11-22T12:09:17+00:00",
  "writer": "claude"
 }
