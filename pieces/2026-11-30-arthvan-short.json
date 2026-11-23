@@ -1,0 +1,431 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "scripture",
+   "number": null,
+   "quote": "The critical edition prepared by the Oriental Institute of Baroda establishes the authentic verses of Valmiki's text, omitting later regional interpolations.",
+   "source_date": "1975",
+   "source_name": "Oriental Institute, Baroda (Critical Edition of Valmiki Ramayana)",
+   "source_url": "https://en.wikipedia.org/wiki/Ramayana",
+   "text": "The critical edition of the Sanskrit Valmiki Ramayana contains no mention of Ravana capturing Shani or using him as a staircase to mount his throne.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": 9.0,
+   "quote": "According to popular legend, Ravana captured the Navagrahas and made them lie down as steps to his throne.",
+   "source_date": "2020",
+   "source_name": "Regional Ramayana Folklore",
+   "source_url": "https://en.wikipedia.org/wiki/Shani",
+   "text": "Popular Indian folklore recounts that Ravana subdued all nine planetary deities and forced them to lie face down at the foot of his throne to serve as living stairs.",
+   "unit": "count"
+  },
+  {
+   "label": "legend",
+   "number": 12.0,
+   "quote": "Enraged that Shani moved a leg into the twelfth house to prevent Meghanada's absolute immortality, Ravana struck his leg, causing Shani's limp.",
+   "source_date": "2018",
+   "source_name": "Shani Mahatmya and Oral Traditions",
+   "source_url": "https://en.wikipedia.org/wiki/Shani",
+   "text": "A prevalent mythological tale claims Ravana fractured Shani's leg after the deity shifted into the twelfth house to prevent Meghanada from gaining absolute immortality.",
+   "unit": "count"
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "Narada suggested that stepping on their chests would show greater supremacy, prompting Ravana to flip them and receive Shani's ill-omened gaze.",
+   "source_date": "2015",
+   "source_name": "North Indian Folk Traditions",
+   "source_url": "https://en.wikipedia.org/wiki/Shani",
+   "text": "Folk narrations state that sage Narada tricked Ravana into turning the imprisoned planets face up, thereby exposing the king to Shani's devastating direct glance.",
+   "unit": null
+  },
+  {
+   "label": "scripture",
+   "number": 1500.0,
+   "quote": "Ananda Ramayana is a 15th-century Sanskrit text that narrates traditions including the captivity of planetary deities in Lanka.",
+   "source_date": "1926",
+   "source_name": "Ananda Ramayana",
+   "source_url": "https://en.wikipedia.org/wiki/Ananda_Ramayana",
+   "text": "The Ananda Ramayana, a Sanskrit text composed around the 15th century CE, incorporates post-Valmiki traditions featuring Ravana's imprisonment of the planetary deities beneath his throne.",
+   "unit": "CE"
+  },
+  {
+   "label": "scripture",
+   "number": 1576.0,
+   "quote": "Graha digpal bibas narahi — all planets and directional guardians were subjugated by Ravana's prowess.",
+   "source_date": "1576",
+   "source_name": "Ramcharitmanas, Aranya Kanda",
+   "source_url": "https://en.wikipedia.org/wiki/Ramcharitmanas",
+   "text": "In the 16th-century epic Ramcharitmanas, Tulsidas metaphorically notes that all planetary gods and guardians bowed to Ravana's might, but makes no mention of Shani being used as a physical staircase.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1975.0,
+   "quote": "On the lines of the investigations carried out in the Mahabharata sites, Lal commenced on another project in 1975 titled, Archaeology of the Ramayana sites.",
+   "source_date": "1975-03-31",
+   "source_name": "Archaeological Survey of India (ASI)",
+   "source_url": "https://asi.nic.in/",
+   "text": "The Archaeological Survey of India initiated the major excavation project titled 'Archaeology of the Ramayana Sites' in 1975 under Director General B. B. Lal.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 250.0,
+   "quote": "The excavations at Sringaverapura exposed a massive burnt-brick tank measuring more than 250 metres in length, datable to the turn of the Christian era.",
+   "source_date": "1993",
+   "source_name": "Archaeological Survey of India (ASI)",
+   "source_url": "https://asi.nic.in/",
+   "text": "Excavations by the Archaeological Survey of India at the Ramayana-related site of Sringaverapura revealed a large burnt-brick tank system measuring more than 250 metres in length.",
+   "unit": "metres"
+  },
+  {
+   "label": "archaeology",
+   "number": 700.0,
+   "quote": "Excavations at Bharadvaja Asrama revealed stratified deposits extending from the Northern Black Polished Ware period.",
+   "source_date": "2011",
+   "source_name": "Archaeological Survey of India (ASI Memoir No. 103)",
+   "source_url": "https://asi.nic.in/",
+   "text": "Excavations at the Bharadvaja Ashrama site in Prayagraj by the Archaeological Survey of India uncovered stratified occupation layers dating back to the Northern Black Polished Ware period around 700 BCE.",
+   "unit": "BCE"
+  },
+  {
+   "label": "archaeology",
+   "number": 500.0,
+   "quote": "The lintels and sculptural panels of the Gupta period at Deogarh illustrate the architectural integration of the planetary deities.",
+   "source_date": "1958",
+   "source_name": "Archaeological Survey of India (Memoirs No. 70)",
+   "source_url": "https://asi.nic.in/",
+   "text": "Surveys by the Archaeological Survey of India of the 5th-century CE Gupta-period Dashavatara Temple in Deogarh confirmed early architectural relief carvings featuring standardized planetary deities in Hindu temple art.",
+   "unit": "CE"
+  },
+  {
+   "label": "disputed",
+   "number": 1973.0,
+   "quote": "Sankalia argued on archaeological and geographical grounds that Ravana's Lanka lay in eastern Madhya Pradesh rather than the island of Sri Lanka.",
+   "source_date": "1973",
+   "source_name": "H. D. Sankalia, 'Ramayana: Myth or Reality?'",
+   "source_url": "https://en.wikipedia.org/wiki/H._D._Sankalia",
+   "text": "Archaeologist H. D. Sankalia argued that geographical descriptions in the earliest layers of the Ramayana place Ravana's Lanka in central India near the Vindhyas, while mainstream traditions and other researchers locate it on the island of Sri Lanka.",
+   "unit": "CE"
+  }
+ ],
+ "id": "2026-11-30-arthvan-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-23",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 21.0,
+   "usd": 0.126272,
+   "voice": 13
+  },
+  "drafts": 1,
+  "ig_story_id": "skipped: Reel over 60 s",
+  "intro_sent": "2026-11-23T19:30:48+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-30",
+ "reasons": [
+  "waiting for the founder's intro clip until 30 Nov 11:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Kya Shani sach mein Ravan ki seedhi bane the?\nValmiki ke critical edition mein yeh katha nahi milti.\nTulsidas grahon ko Ravan ke vash mein batate hain, par seedhi nahi.\nAapne yeh katha pehli baar kisse suni thi?\nNani ko bhejo, jinhone Shani-Ravan ki yeh katha sunayi thi.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#Ramayan",
+     "#HinduMythology",
+     "#Mythology",
+     "#IndianHistory",
+     "#AncientIndia",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Kya Shani sach mein Ravan ki seedhi bane the? Valmiki ke critical edition mein is katha ka zikr nahi. Aapne yeh katha pehli baar kisse suni thi? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Kya Shani sach mein Ravan ki seedhi bane the? Valmiki Ramayana ke critical edition mein is katha ka zikr hi nahi milta. Yeh katha baad ke granthon aur lok parampara mein milti hai, aur pehli baar kahan suni gayi, koi nahi jaanta. Nani ko bhejo, jinhone yeh katha sunayi thi.",
+    "tags": [
+     "Shani",
+     "Ravan",
+     "Valmiki Ramayana",
+     "Ramcharitmanas",
+     "Ananda Ramayana",
+     "Navagraha",
+     "Tulsidas",
+     "Hindu mythology",
+     "Ramayan",
+     "Sabut ke saath",
+     "Indian history"
+    ],
+    "title": "Shani Ravan katha, Valmiki mein hai ya nahi?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Nani ko bhejo, jinhone Shani-Ravan ki yeh katha sunayi thi.",
+  "hook": "Kya Shani sach mein Ravan ki seedhi bane the?",
+  "scenes": [
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of a vast ancient Indian stone throne hall at night during a storm, lightning flashing through tall carved windows, oil lamps flickering, a towering king in bronze and gold armour seen from behind climbing toward a huge carved throne, robed figures lying face down in shadow forming the steps, dramatic cinematic light",
+     "type": "art"
+    },
+    "vo": "Kya Shani sach mein Ravan ki seedhi bane the?"
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic low-angle view along the steps of an ornate stone throne in an ancient Indian palace, figures in silk dhotis and angavastram lying face down in a row as stairs, seen from a distance, oil lamps and incense smoke, a king's bare foot in a gold anklet stepping down, documentary style",
+     "type": "art"
+    },
+    "vo": "Katha kehti hai, Ravan ne 9 grah jeet liye. Unhe sinhasan ke neeche ulta litakar seedhi bana diya."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene in an ancient Indian royal court, a sage in saffron robes holding a veena seen from behind whispering to a crowned king, in the background a dark-robed figure turning over on the throne steps, a cold blue light falling across the hall, tense mood",
+     "type": "art"
+    },
+    "vo": "Phir Narad muni bole, chhaati par pair rakho. Grah palte, aur Shani ki nazar Ravan par padi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of ancient palm-leaf Sanskrit manuscripts spread on a wooden table in a quiet research library, a scholar's hands in a white kurta turning a fragile leaf under a desk lamp, dust in the light, no readable text",
+     "type": "art"
+    },
+    "vo": "Lekin likha kahan hai? Valmiki ka critical edition, Oriental Institute Baroda ka. Yaani purani pothiyon se nikala asli paath. Usme yeh katha hai hi nahi."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a ghat on the Ganga at dawn in old Varanasi, an elderly poet in a white dhoti and shawl seen from behind writing on handmade paper by an oil lamp, boats and mist on the river, warm golden light",
+     "type": "art"
+    },
+    "vo": "Tulsidas ki Ramcharitmanas, lagbhag 1576. Likha hai, sab grah Ravan ke vash mein the. Par seedhi? Koi zikr nahi."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a bound old Sanskrit manuscript with faded red cloth covers resting on a carved wooden stand inside a temple library, brass lamp beside it, soft window light, no readable text",
+     "type": "art"
+    },
+    "vo": "Toh katha mili kahan? Ananda Ramayana mein, jo Valmiki se bahut baad ka granth hai."
+   },
+   {
+    "facts_used": [
+     6,
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view of an archaeological excavation beside the Ganga, a long exposed burnt-brick tank in red earth, Indian archaeologists in hats with trowels and measuring poles, bright afternoon sun, documentary photograph",
+     "type": "art"
+    },
+    "vo": "Aur khudai? ASI ne B. B. Lal ke saath Ramayan ke sthal khode. Sringaverapura mein bada talaab mila, seedhi ka nishaan nahi."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a weathered sandstone lintel at an ancient Gupta-period temple in central India, a row of small carved planetary deity figures seen at a distance in relief, moss in the cracks, low evening sunlight",
+     "type": "art"
+    },
+    "vo": "Deogarh ke Gupta-kaal mandir mein grah devta pathar par khude hain. Pooja purani hai, par Ravan wali katha wahan bhi nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a long table in an old university hall, Indian scholars in kurtas and shawls leaning over stacks of manuscripts in heated discussion, seen from the side, papers and spectacles, warm lamp light",
+     "type": "art"
+    },
+    "vo": "Vidwan bhi bante hain. Uttara Kanda, yaani Ramayan ka aakhri hissa, kuch kehte baad mein joda gaya. Doosre kehte shuru se tha."
+   },
+   {
+    "facts_used": [
+     10
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic split landscape: on one side the forested Vindhya hills of central India under monsoon clouds, on the other side the green coast of an island across a blue sea, seen from high above, natural light",
+     "type": "art"
+    },
+    "vo": "H. D. Sankalia ne Lanka ko Vindhya ke paas bataya. Baaki ise Sri Lanka maante hain."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic night scene in an Indian village courtyard, a grandmother in a cotton saree telling a story by an oil lamp to children sitting on a mat, thatched hut behind, faces softly lit and seen from the side, starry sky",
+     "type": "art"
+    },
+    "vo": "Seedhi wali katha pehli baar kahan suni gayi? Koi nahi jaanta. Phir bhi har ghar mein zinda hai."
+   },
+   {
+    "facts_used": [
+     9,
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of the ancient stone Dashavatara temple at Deogarh on a green plinth, a few visitors in Indian clothes walking around it, clear morning sky, long shadows on the grass",
+     "type": "art"
+    },
+    "vo": "Deogarh mein woh grah aap aaj dekh sakte hain. Jawab: yeh lok katha hai, Valmiki ki nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an elderly Indian woman in a white saree seen from behind on a veranda at dusk, a small brass oil lamp glowing beside her, a grandchild sitting close, warm golden light",
+     "type": "art"
+    },
+    "vo": "Nani ko bhejo, jinhone Shani-Ravan ki yeh katha sunayi thi."
+   }
+  ],
+  "thumbnail": {
+   "name": "SHANI",
+   "name_hi": "शनि",
+   "scene": "A colossal ancient Indian stone throne in a storm-lit palace hall, robed figures lying face down as its steps, a crowned king seen from behind climbing up as lightning flashes through carved windows.",
+   "words": [
+    "9 GRAH",
+    "SACH?"
+   ],
+   "words_hi": [
+    "9 ग्रह",
+    "सच?"
+   ]
+  },
+  "title": "Ravan ki seedhi bane *Shani*? 😱"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  2.717,
+  9.041,
+  14.473,
+  23.805,
+  31.477,
+  36.726,
+  43.524,
+  49.98,
+  56.774,
+  61.509,
+  67.267,
+  73.147
+ ],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "en.wikipedia.org",
+   "nio.res.in",
+   "britannica.com",
+   "the scripture or text named in the story"
+  ],
+  "follows": "Ravana and Shani Short drew 475K in 7 days.",
+  "hooks": [
+   "Kya Shani sach mein Ravan ki seedhi bane the?",
+   "Valmiki mein is katha ka koi zikr hai?"
+  ],
+  "id": "wk-2026-11-30-arthvan-short",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "",
+   "options": [
+    {
+     "closing": "",
+     "question": "Nau grah. Ulte latke hue. Ravan ki seedhi bane. Par Valmiki ke asli paath mein yeh katha hai hi nahi. Kyun?",
+     "text": "Nau grah. Ulte latke hue. Ravan ki seedhi bane. Par Valmiki ke asli paath mein yeh katha hai hi nahi. Kyun?",
+     "words": 21
+    },
+    {
+     "closing": "",
+     "question": "Shani Ravan ke paas the. Seedhi ki tarah. Narad ne bola. Grah palte. Phir bhi khudai mein nishaan nahi. Kaise?",
+     "text": "Shani Ravan ke paas the. Seedhi ki tarah. Narad ne bola. Grah palte. Phir bhi khudai mein nishaan nahi. Kaise?",
+     "words": 20
+    },
+    {
+     "closing": "",
+     "question": "Ravan ke sinhasan neeche. Nau grah litke the. Shani bhi. Ek katha, har ghar mein zinda. Par likhi kahan hai? Kaun jaanta?",
+     "text": "Ravan ke sinhasan neeche. Nau grah litke the. Shani bhi. Ek katha, har ghar mein zinda. Par likhi kahan hai? Kaun jaanta?",
+     "words": 22
+    },
+    {
+     "closing": "",
+     "question": "Ravan ne grah jeete. Seedhi bana di. Par Tulsidas ne zikr nahi kiya. Valmiki bhi chup. Toh katha aayi kahan se?",
+     "text": "Ravan ne grah jeete. Seedhi bana di. Par Tulsidas ne zikr nahi kiya. Valmiki bhi chup. Toh katha aayi kahan se?",
+     "words": 21
+    },
+    {
+     "closing": "",
+     "question": "Shani ulta latka tha. Ravan ke sinhasan neeche. Sirf ek seedhi ban kar. Par khudai mein Sringaverapura ka talaab mila. Seedhi kahan?",
+     "text": "Shani ulta latka tha. Ravan ke sinhasan neeche. Sirf ek seedhi ban kar. Par khudai mein Sringaverapura ka talaab mila. Seedhi kahan?",
+     "words": 22
+    }
+   ],
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: wide view of a vast ancient Indian stone throne hall at night during a storm, lightning flashing through tall carved windows, oil lamps flickering, a towering king in bronze and gold armour seen from behind climbing toward a huge carved throne, robed figures lying face down in shadow forming the steps, dramatic cinematic light. Time of day and light, overriding anything darker in the setting above: bright golden-hour sunlight or clear daylight, a blue or golden sky, warm saturated colours, his face and clothes fully lit; never night, dusk, storm clouds, lightning, fog, grey overcast, a dark or desaturated look. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. If the scene shows the past, it is ancient India: Indian people in dhotis, sarees and angavastram, warriors with bows, spears and bronze or leather armour, carved stone pillars, oil lamps; never European knights, plate armour, castles or anything medieval European. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing an olive green kurta. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGMythWorld watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "Nau grah. Ulte latke hue. Ravan ki seedhi bane. Par Valmiki ke asli paath mein yeh katha hai hi nahi. Kyun?",
+   "text": "Nau grah. Ulte latke hue. Ravan ki seedhi bane. Par Valmiki ke asli paath mein yeh katha hai hi nahi. Kyun?",
+   "words": 21
+  },
+  "spare": true,
+  "summary": "Popular tale of Ravana placing Shani under his steps. Check Valmiki Ramayana, Tulsidas and regional sources for any such account and mark which parts are later folk tradition.",
+  "target_minutes": null,
+  "title": "Ravan ne Shani ko seedhi banaya, ye katha Valmiki mein hai?",
+  "topic_score": 8,
+  "topic_score_why": [
+   "+4 one of the most-watched names",
+   "+3 a shock question or a mystery",
+   "+1 asks a question"
+  ],
+  "voice": "voice_7o0kddoq6q2z",
+  "weekly": true
+ },
+ "updated": "2026-11-23T19:31:12+00:00",
+ "writer": "claude"
+}
