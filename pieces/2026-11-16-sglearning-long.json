@@ -1018,8 +1018,17 @@
   "target_minutes": 12,
   "theme": "loan",
   "thumb_test": {
-   "phase": "B",
-   "switched": "2026-11-18T19:35+00:00"
+   "a": [
+    0,
+    null
+   ],
+   "b": [
+    0,
+    null
+   ],
+   "phase": "done",
+   "switched": "2026-11-18T19:35+00:00",
+   "winner": "A"
   },
   "title": "50 lakh ka ghar, 1 crore ka bill: 20 saal ki EMI mein bank kitna kamata hai",
   "voice": "voice_1kn3blc2u13l"
