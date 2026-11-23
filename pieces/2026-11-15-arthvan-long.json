@@ -858,8 +858,17 @@
   "priority": 1,
   "target_minutes": 14,
   "thumb_test": {
-   "phase": "B",
-   "switched": "2026-11-17T20:01+00:00"
+   "a": [
+    0,
+    null
+   ],
+   "b": [
+    0,
+    null
+   ],
+   "phase": "done",
+   "switched": "2026-11-17T20:01+00:00",
+   "winner": "A"
   },
   "title_hi": "Nalanda ki library 3 mahine tak jali",
   "voice": "voice_g8azc8xcwhlu"
