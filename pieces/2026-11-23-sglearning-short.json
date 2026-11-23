@@ -75,6 +75,9 @@
    "voice": 8
   },
   "drafts": 1,
+  "ig_reel_id": "18120968410824950",
+  "ig_story_id": "18650145169008783",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-23-sglearning-short.mp4",
    "clip_seconds": 1,
@@ -85,6 +88,8 @@
   "intro_sent": "2026-11-16T19:06:47+00:00",
   "out_sha": "00bd8eb9921527f78c671cc4219245f44a39e6c8",
   "out_sha_intro": true,
+  "threads_id": "17946645711370321",
+  "threads_poll_id": "17944235031388106",
   "yt_id": "ZuTbAhyEE0A"
  },
  "kind": "short",
@@ -243,7 +248,7 @@
   },
   "title": "India's dollars went to *America*? 💵"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   4.992,
@@ -279,6 +284,6 @@
   ],
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-11-16T21:28:23+00:00",
+ "updated": "2026-11-23T16:20:25+00:00",
  "writer": "claude"
 }
