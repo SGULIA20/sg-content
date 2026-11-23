@@ -1,0 +1,320 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 1000.0,
+   "quote": "The PAN can be made operative again in 30 days, upon intimation of Aadhaar to the prescribed authority after payment of fee of Rs.1,000.",
+   "source_date": "2023-03-28",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRMLEFxiKk2d4pNYcpoczx9pZPv6xV1ZLmfJGbkauYOm8tYVuHF0ZsYZbrDYpSCd4pVrU61sgBR9SsqZrBL7WIGv8kq5GaFRxlOYVfEy8yA1UGFR3M70EgtYxK3nCJcxr6soc7JUcIKMxXB3zOezw=",
+   "text": "Taxpayers whose PAN cards become inoperative due to failure to link with Aadhaar must pay a prescribed fee of 1,000 INR to restore operative status.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 30.0,
+   "quote": "The PAN can be made operative again in 30 days, upon intimation of Aadhaar to the prescribed authority after payment of fee of Rs.1,000.",
+   "source_date": "2023-03-28",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRMLEFxiKk2d4pNYcpoczx9pZPv6xV1ZLmfJGbkauYOm8tYVuHF0ZsYZbrDYpSCd4pVrU61sgBR9SsqZrBL7WIGv8kq5GaFRxlOYVfEy8yA1UGFR3M70EgtYxK3nCJcxr6soc7JUcIKMxXB3zOezw=",
+   "text": "An inoperative PAN card can be made operative again within a period of 30 days after the taxpayer intimates Aadhaar and completes fee payment.",
+   "unit": "days"
+  },
+  {
+   "label": "official",
+   "number": 51.0,
+   "quote": "It is stated that more than 51 crore PANs have already been linked with Aadhaar till date.",
+   "source_date": "2023-03-28",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRMLEFxiKk2d4pNYcpoczx9pZPv6xV1ZLmfJGbkauYOm8tYVuHF0ZsYZbrDYpSCd4pVrU61sgBR9SsqZrBL7WIGv8kq5GaFRxlOYVfEy8yA1UGFR3M70EgtYxK3nCJcxr6soc7JUcIKMxXB3zOezw=",
+   "text": "More than 51 crore PANs were linked with Aadhaar prior to the end of March 2023.",
+   "unit": "crore"
+  },
+  {
+   "label": "official",
+   "number": 80.0,
+   "quote": "Aadhaar-PAN linkage requirement does not apply to any individual who is: Residing in the States of Assam, Jammu and Kashmir, and Meghalaya;; a non-resident as per the Income-tax Act, 1961;; of the age of eighty years or more at any time during the previous year; or; not a citizen of India.",
+   "source_date": "2026-11-22",
+   "source_name": "Income Tax Department",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErLVPEWuR53VKI0FFAK3_Eu0zMM-_ZlQYhbKh_Zo4pVHtoiMyo2VYw-A1QCTqK5uGE9cXnNVRivoSxzUeejn2V1dMAgSTnWwVfM0qUXEL4vYkMBlnCWXic_pv22iMrl460mcxc8O609q2OjkJQ9vkFYvy3mRCc0-61jCjIcmFtM06rU4WkG0Tp5bmiCUnX",
+   "text": "Individuals aged 80 years or older at any time during the previous financial year are legally exempt from mandatory PAN-Aadhaar linking.",
+   "unit": "years"
+  },
+  {
+   "label": "official",
+   "number": 20.0,
+   "quote": "TDS rate may be charged according to the provisions of the Income-tax Act, 1961 [20% TDS rate in case of 'PANNOTAVBL'].",
+   "source_date": "2026-11-22",
+   "source_name": "Income Tax Department",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZYJlFKtzyI_3qJBhWQBbiphUpozPkUcX9KTIyt63zzyX40edagXuvBRtnCTkarwFWdr9UXZlcGjL78ks8mLsTS7AuCM0do5HsrUHW1GLPEJLcTCEmXEXs-SRYmhRdi5QO__zxLsJH2203R0L983dM7Jkr8cPj1hFhuTFytpPiNdHZrhCTLYc=",
+   "text": "TDS can be deducted at an elevated rate of 20 percent under Section 206AA when PAN status is treated as inoperative or unavailable.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 500.0,
+   "quote": "As a result, taxpayers will be required to pay a fee of Rs. 500 up to three months from 1st April, 2022 and a fee of Rs.1000 after that, while intimating their Aadhaar.",
+   "source_date": "2022-03-30",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFf61MMKwz3ONoUtTdGn3nJMjv7Jyhv2xeLRneXzSJ6O68WBiCCxUOBBsBBk0tqzZZjxl3LukLqLYtZEP67tDKVu0itN1324Sz13xlYh0VP1FbFlxvD2I0jcTgnmu6QYphO6IKaQpWHKnx6wCs_nD0=",
+   "text": "When the Section 234H penalty framework was introduced, taxpayers were initially assessed a lower penalty fee of 500 INR before the late fee rose.",
+   "unit": "INR"
+  },
+  {
+   "label": "reported",
+   "number": 10.0,
+   "quote": "A permanent account number (PAN) is a ten-character alphanumeric identifier",
+   "source_date": "2026-11-20",
+   "source_name": "Wikipedia",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEywe7iQAsA1b7YGLaYim4EgjnbhvIxzSBd0poLOz70KJ_FCKYHMPWT87lEKQqCRMefKhek5pEmCm4f2AT3lhjnVjEPJyF-QI7zYMypSWkO_ACpaFRqsa6A3uNjoORIVewb7dx9NqznvSSkun8=",
+   "text": "A Permanent Account Number consists of a 10-character alphanumeric code assigned by the Indian tax administration.",
+   "unit": "characters"
+  },
+  {
+   "label": "reported",
+   "number": 12.0,
+   "quote": "UIDAI's Aadhaar card project gives each eligible Indian resident a unique 12 digit identification number, along with recording their biometrics such as iris scan and fingerprints on a UIDAI database and the card is being rolled out to all such residents.",
+   "source_date": "2026-11-20",
+   "source_name": "Wikipedia",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErlQC6YgEDnEWa_nSsYL8O_-9DDvZAZ_qXXV3UiIG44QNoCCtTJTGsLKEuYHXhUHnQ80B9x84gWCeI1rhVnnJeJ4ScD9m6p2R_JhEm6dPovThahWRUgJPp8-emysRocC7u0AQ7VU-EYtvN2t6oi0_ovIU=",
+   "text": "The Aadhaar system assigns an individual 12-digit identification number to eligible residents using biometric verification.",
+   "unit": "digits"
+  }
+ ],
+ "id": "2026-11-30-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-23",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 13.5,
+   "usd": 0.09259,
+   "voice": 8
+  },
+  "drafts": 1,
+  "intro_sent": "2026-11-23T19:43:05+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-30",
+ "reasons": [
+  "waiting for the founder's intro clip until 30 Nov 11:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Your PAN card can go dead, and nobody will call you.\nNot linked to Aadhaar? PAN becomes inoperative. TDS can jump to 20 percent, refunds get stuck, and a 1,000 rupee fee to switch it back on.\nHave you checked your link status on the e-filing portal?\nThis is not investment advice.\nSend this to your father, whose FD interest runs on that old PAN.",
+    "hashtags": [
+     "#IncomeTax",
+     "#PersonalFinanceIndia",
+     "#PaiseKiKhabar",
+     "#MoneyTipsHindi",
+     "#SeedhiBaat",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Your PAN can go dead if it is not linked to Aadhaar. TDS can jump to 20 percent and refunds get stuck. Have you checked your link status yet? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Your PAN card can go dead, and nobody will call you. If PAN is not linked to Aadhaar, it becomes inoperative: TDS can jump to 20 percent and your tax refund gets stuck. Switching it back on costs a 1,000 rupee fee, so check your link status on the income tax e-filing portal today. Send this to your father, whose FD interest runs on that old PAN.",
+    "tags": [
+     "PAN Aadhaar link",
+     "inoperative PAN",
+     "PAN card",
+     "Aadhaar",
+     "TDS",
+     "income tax",
+     "tax refund",
+     "FD interest",
+     "personal finance India",
+     "income tax portal"
+    ],
+    "title": "PAN Aadhaar link missed? Is your PAN dead?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Send this to your father, whose FD interest runs on that old PAN.",
+  "hook": "Your PAN card can go dead, and nobody will call you.",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of a plain laminated identity card lying face down on a dark wooden table beside a worn bank passbook and a pair of reading glasses, soft grey morning light from a window, quiet and slightly ominous mood, no text visible",
+     "type": "art"
+    },
+    "vo": "Your PAN card can go dead, and nobody will call you."
+   },
+   {
+    "facts_used": [],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a middle-class Indian dining table in the evening, a salaried man in his thirties sorting a file of salary slips and bank papers under a warm tube light, his wife pouring tea beside him, relaxed and confident mood, no readable text",
+     "type": "art"
+    },
+    "vo": "Most of us think PAN works forever. But salary, FD interest and refunds run through it."
+   },
+   {
+    "facts_used": [],
+    "label": "rule",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic shot of a light switch on a plain Indian home wall being turned off by a hand, the room behind dimming, late evening, symbolic and calm, no text",
+     "type": "art"
+    },
+    "vo": "Not linked to Aadhaar? Your PAN becomes inoperative, switched off, not cancelled."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of a young Indian man's hands tucking a card into a brown leather wallet at a busy roadside tea stall, afternoon sunlight, carefree shrug in his posture, no text",
+     "type": "art"
+    },
+    "vo": "Many skipped the link. The card is still in the wallet, so why bother?"
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene at an Indian bank branch counter, a clerk handing a thinner stack of rupee notes to a surprised middle-aged woman in a salwar suit, fluorescent office light, her expression shocked, no text or screens",
+     "type": "art"
+    },
+    "vo": "But here is the cost. TDS, tax cut before money reaches you, can jump to 20 percent."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of an elderly Indian man in a kurta at home, holding an empty envelope and looking worried, a cup of chai going cold beside him, dim afternoon light through curtains, no text",
+     "type": "art"
+    },
+    "vo": "Your tax refund gets stuck. Switching PAN back on costs a 1,000 rupee fee."
+   },
+   {
+    "facts_used": [],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view from behind of a young Indian woman in office wear at a small cyber cafe desk, hand on the mouse, laptop screen turned away from the camera, focused and relieved expression reflected in a window, evening light",
+     "type": "art"
+    },
+    "vo": "The twist: checking is quick. Open the income tax e-filing portal and see the link status. This is not investment advice."
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic warm scene of an Indian son sitting beside his father on a living room sofa, both looking at a bank passbook together, golden evening light, caring mood, no text",
+     "type": "art"
+    },
+    "vo": "Send this to your father, whose FD interest runs on that old PAN."
+   }
+  ],
+  "thumbnail": {
+   "name": "PAN CARD",
+   "name_hi": "PAN CARD",
+   "scene": "A plain laminated identity card wrapped in a heavy iron chain and padlock on a bank counter, while a hand pulls away a stack of rupee notes beside it, dramatic side light.",
+   "words": [
+    "20% TDS",
+    "TRAP"
+   ],
+   "words_hi": [
+    "20% TDS",
+    "TRAP"
+   ]
+  },
+  "title": "Your *PAN* Might Already Be Switched Off ⚠️"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  3.917,
+  9.767,
+  15.165,
+  19.254,
+  24.803,
+  29.602,
+  36.388
+ ],
+ "topic": {
+  "follows": "A direct consumer risk, which suits Shorts. Starts with a personal loss rather than a vague premise.",
+  "hooks": [
+   "PAN kaam karna band kar de to kya-kya rukta hai?",
+   "Link status 1 minute mein kaise dekhein?"
+  ],
+  "id": "wk-2026-11-30-sglearning-short",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "",
+   "options": [
+    {
+     "closing": "",
+     "question": "Your PAN is switched off. Nobody will call you. Salary and refunds depend on it. The card still sits in wallet. Why?",
+     "text": "Your PAN is switched off. Nobody will call you. Salary and refunds depend on it. The card still sits in wallet. Why?",
+     "words": 22
+    },
+    {
+     "closing": "",
+     "question": "Your PAN can die. Nobody will call. Card still in wallet. TDS may jump to 20 percent. Refund stuck. Why?",
+     "text": "Your PAN can die. Nobody will call. Card still in wallet. TDS may jump to 20 percent. Refund stuck. Why?",
+     "words": 20
+    },
+    {
+     "closing": "",
+     "question": "Your father's old PAN may be dead. FD interest still runs on it. Tax cut jumps to 20 percent. Why?",
+     "text": "Your father's old PAN may be dead. FD interest still runs on it. Tax cut jumps to 20 percent. Why?",
+     "words": 20
+    },
+    {
+     "closing": "",
+     "question": "Tax cut jumps to 20 percent. Your salary. Your FD interest. Only because of one missing Aadhaar link. Who caused this?",
+     "text": "Tax cut jumps to 20 percent. Your salary. Your FD interest. Only because of one missing Aadhaar link. Who caused this?",
+     "words": 21
+    },
+    {
+     "closing": "",
+     "question": "Your PAN is switched off. Not cancelled. Still looks normal in your wallet. Nobody will warn you either. Since when?",
+     "text": "Your PAN is switched off. Not cancelled. Still looks normal in your wallet. Nobody will warn you either. Since when?",
+     "words": 20
+    }
+   ],
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: close-up of a plain laminated identity card lying face down on a dark wooden table beside a worn bank passbook and a pair of reading glasses, soft grey morning light from a window, quiet and slightly ominous mood. Time of day and light, overriding anything darker in the setting above: bright golden-hour sunlight or clear daylight, a blue or golden sky, warm saturated colours, his face and clothes fully lit; never night, dusk, storm clouds, lightning, fog, grey overcast, a dark or desaturated look. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a charcoal grey blazer over a light blue shirt. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "Your PAN is switched off. Nobody will call you. Salary and refunds depend on it. The card still sits in wallet. Why?",
+   "text": "Your PAN is switched off. Nobody will call you. Salary and refunds depend on it. The card still sits in wallet. Why?",
+   "words": 22
+  },
+  "spare": true,
+  "summary": "Explains what happens to an unlinked PAN, the fee, higher TDS and how to check status on the income tax portal. Check the current deadline rules and the fee.",
+  "target_minutes": null,
+  "title": "PAN-Aadhaar link nahi kiya to PAN band ho jaata hai?",
+  "topic_score": 7,
+  "topic_score_why": [
+   "+1 touches the viewer's own money (in the summary)",
+   "+3 a scare or a crash",
+   "+1 a choice the viewer faces",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "voice": "voice_g8azc8xcwhlu",
+  "weekly": true
+ },
+ "updated": "2026-11-23T19:43:31+00:00",
+ "writer": "claude"
+}
