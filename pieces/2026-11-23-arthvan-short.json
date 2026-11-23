@@ -119,7 +119,9 @@
    "voice": 13
   },
   "drafts": 1,
+  "ig_reel_id": "18120624857077891",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-23-arthvan-short.mp4",
    "clip_seconds": 1,
@@ -130,6 +132,8 @@
   "intro_sent": "2026-11-16T18:51:04+00:00",
   "out_sha": "00bd8eb9921527f78c671cc4219245f44a39e6c8",
   "out_sha_intro": true,
+  "threads_id": "18154435804556495",
+  "threads_poll_id": "18116223416523446",
   "yt_id": "_lxN2R78Yvg"
  },
  "kind": "short",
@@ -354,7 +358,7 @@
   },
   "title": "*Jatayu* ne Ravan ka rath toda? 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   3.394,
@@ -407,6 +411,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-16T21:27:29+00:00",
+ "updated": "2026-11-23T16:10:55+00:00",
  "writer": "claude"
 }
