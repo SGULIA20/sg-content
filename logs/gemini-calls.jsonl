@@ -673,3 +673,5 @@
 {"at": "2026-11-22T20:34:20+00:00", "model": "gemini-3.8-flash", "caller": "research.fact_sheet", "status": 200, "attempt": 0, "in": 2567, "out": 2471, "thought": 5512, "search": true, "search_queries": 6, "modalities": []}
 {"at": "2026-11-22T20:46:35+00:00", "model": "gemini-3.8-flash", "caller": "research.fact_sheet", "status": 200, "attempt": 0, "in": 1938, "out": 2529, "thought": 5727, "search": true, "search_queries": 0, "modalities": []}
 {"at": "2026-11-22T20:54:55+00:00", "model": "gemini-3.1-flash-lite-image", "caller": "art.paint", "status": 200, "attempt": 0, "in": 241, "out": 1623, "thought": 0, "search": false, "search_queries": 0, "modalities": ["IMAGE"]}
+{"at": "2026-11-23T12:31:54+00:00", "model": "gemini-3.8-flash", "caller": "inbox.transcribe", "status": 200, "attempt": 0, "in": 272, "out": 33, "thought": 229, "search": false, "search_queries": 0, "modalities": []}
+{"at": "2026-11-23T12:31:58+00:00", "model": "gemini-3.8-flash", "caller": "inbox.transcribe", "status": 200, "attempt": 0, "in": 272, "out": 23, "thought": 142, "search": false, "search_queries": 0, "modalities": []}

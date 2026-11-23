@@ -85,7 +85,15 @@
    "voice": 8
   },
   "drafts": 1,
-  "intro_sent": "2026-11-22T20:57:09+00:00"
+  "intro": {
+   "clip": "2026-11-29-sglearning-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-23T12:32:46+00:00",
+   "seconds": 8.37
+  },
+  "intro_checked": "dc88d107c394657e",
+  "intro_sent": "2026-11-22T20:57:09+00:00",
+  "yt_id": "GxDjwUie0e4"
  },
  "kind": "short",
  "publish_day": "2026-11-29",
@@ -232,7 +240,7 @@
   },
   "title": "Your education loan grows while you *study* 📚"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   4.223,
@@ -289,10 +297,11 @@
     }
    ],
    "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: wide view of a busy Indian international airport departure hall at night, a young Indian student pushing a trolley stacked with two big suitcases, parents waving behind the barrier, warm overhead light, proud and nervous mood, no readable text or signs. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a tan blazer over a pale pink shirt. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
-   "question": "A family borrows a huge sum for a degree abroad and pays nothing for years. So why is the loan quietly getting bigger?",
-   "text": "A family borrows a huge sum for a degree abroad and pays nothing for years. So why is the loan quietly getting bigger?",
+   "question": "Nothing is due until the job, the bank said. Yet one silent number keeps growing while the student studies abroad. What is it?",
+   "text": "Nothing is due until the job, the bank said. Yet one silent number keeps growing while the student studies abroad. What is it?",
    "words": 23
   },
+  "look": "claymation",
   "summary": "An education loan for study abroad: the moratorium, interest that keeps adding during the course, the rupee's fall raising the bill, and what the EMI looks like against a starting salary. Bank loan documents and RBI data.",
   "target_minutes": null,
   "theme": "loan",
@@ -308,6 +317,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-22T20:57:26+00:00",
+ "updated": "2026-11-23T12:32:51+00:00",
  "writer": "claude"
 }
