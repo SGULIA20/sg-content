@@ -45,7 +45,13 @@ RULES = {
 def _ask_claude(prompt: str) -> str:
     import anthropic
     client = anthropic.Anthropic(api_key=secrets.get("ANTHROPIC_API_KEY"))
-    r = client.messages.create(model="claude-sonnet-5-5", max_tokens=14000, messages=[{"role": "user", "content": prompt}])
+    # 23 Nov 2026: with spares the plan no longer fitted in 14,000 tokens (the model's thinking counts too): one channel came back cut off
+    # after 6 of 12 slots and the other empty. Streamed, so a long reply cannot time out.
+    with client.messages.stream(model="claude-sonnet-5-5", max_tokens=64000, output_config={"effort": "medium"},
+                                messages=[{"role": "user", "content": prompt}]) as stream:
+        r = stream.get_final_message()
+    if r.stop_reason != "end_turn":
+        print(f"weekly plan reply stopped early: {r.stop_reason}", flush=True)
     try:
         from . import writer
         writer.record_spend(r.usage, writer.SPEND_FILE, None, factor=writer.SONNET_VS_OPUS)
