@@ -27,9 +27,12 @@ def _seconds(iso: str) -> int:
     return h * 3600 + mi * 60 + s
 
 
-def search(token: str, q: str, since: datetime, call=youtube.call, n: int = 12) -> list:
+def search(token: str, q: str, since: datetime, call=youtube.call, n: int = 12, duration: str = "") -> list:
+    """duration "short" keeps videos under four minutes (YouTube's own bucket): the Shorts and near-Shorts."""
     params = {"part": "snippet", "type": "video", "order": "viewCount", "regionCode": "IN", "relevanceLanguage": "hi", "maxResults": n,
               "publishedAfter": since.strftime("%Y-%m-%dT%H:%M:%SZ"), "q": q}
+    if duration:
+        params["videoDuration"] = duration
     status, _h, body = call("GET", f"{API}/search?" + urllib.parse.urlencode(params), token)
     if status != 200:
         return [{"error": status, "q": q, "why": str(body)[:160]}]

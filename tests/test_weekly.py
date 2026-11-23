@@ -97,3 +97,21 @@ def test_the_planner_sees_the_founders_pasted_analyses_as_hints_only(tmp_path):
     weekly.build(tmp_path, TODAY, {}, ask=lambda p: seen.append(p) or "[]", calendar=[])
     arth = next(p for p in seen if "SG-MYTH-WORLD" in p)
     assert "hints only, unchecked" in arth                                   # the shipped content/intel notes are in the prompt
+
+
+def test_a_dropped_slot_takes_a_spare_trend_topic_before_any_bank_topic(tmp_path):
+    """Founder, 23 Nov 2026: 'pick the trending topics without my approval'. The 22 Nov plan filled 15 of 22 slots from the banks."""
+    def ask(prompt):
+        assert "spare-short-1" in prompt
+        if "Learning with SG" not in prompt:
+            return "[]"
+        return _reply([
+            {"slot": "2026-11-15-sglearning-short", "title": "Reliance net profit rises 7% in Q2 results", "summary": "Results.", "hooks": [], "why": "x"},
+            {"slot": "spare-short-1", "title": "Gold silver crash: abhi khareedein ya rukein, ₹33,710 sasta?", "summary": "Why gold and silver fell and what a buyer should check.",
+             "hooks": ["Sona 33,710 sasta hua, ab kya karein?"], "why": "gold crash videos at 2M views"}])
+    e = weekly.build(tmp_path, TODAY, {"sglearning": [{"id": "a", "title": "Gold crash", "channel": "X", "views": 9, "seconds": 40, "short": True}]}, ask=ask, calendar=[])["entries"]
+    took = e["2026-11-15-sglearning-short"]
+    assert took.get("spare") and not took.get("from_bank") and "Gold" in took["title"]
+    assert sum(1 for t in e.values() if t.get("spare")) == 1                        # a spare is used once
+    assert "took off in the last 7 days" in weekly._prompt("sglearning", [("2026-11-15-sglearning-short", "sglearning", "short", date(2026, 11, 15))],
+                                                           [{"title": "Gold crash", "channel": "X", "views": 9, "seconds": 40, "short": True}], TODAY, [], [])

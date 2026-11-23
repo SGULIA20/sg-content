@@ -2,11 +2,12 @@ name: weekly
 
 # Weekly YouTube research and the topic plan for the coming days (founder, 7 Nov 2026: "we must do this deep research every week and decide
 # topics for the next week"). Sunday 17:17 WAT: reads what viewers watch on YouTube, has Claude propose a topic for every open slot, scores
-# them (engine/topicscore.py), writes content/weekly-plan.json and sends the plan to Telegram. engine/weekly.py. Uses about 1,600 YouTube
-# quota units (16 searches) and one Sonnet call per channel.
+# them (engine/topicscore.py), writes content/weekly-plan.json and sends the plan to Telegram. engine/weekly.py. Uses about 3,200 YouTube
+# quota units a run (32 searches: all videos of 14 days, and short videos of 7 days) and one Sonnet call per channel.
 on:
   schedule:
     - cron: '17 16 * * 0'
+    - cron: '17 16 * * 3'   # Wednesday too (founder, 23 Nov 2026): slots not started yet are re-planned from the newest signal
   workflow_dispatch:
 
 permissions:

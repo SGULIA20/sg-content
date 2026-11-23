@@ -245,8 +245,10 @@ Based on the video summary I provide, write {n} alternative opening hooks in {to
 Strict requirements:
 
 1. Each hook must contain exactly {lo}-{hi} words.
-2. Start with an irresistible curiosity gap, shocking question, mystery or dramatic contrast.
-3. Build suspense, emotion and intrigue immediately.
+2. Write each hook as three to five SHORT beats, not one long sentence: each beat is a sentence of two to seven words with its own full stop. Never one sentence joined by commas, "aur", "and" or "phir".
+3. The shock comes in the first three words: the strangest fact, act or contrast of the story, stated flat. No setup, no "imagine", no scene-setting before it.
+3a. The last beat is a short question of one to four words ("Kyun?", "Kaise?", "Kaun galat?", "Why?", "So who paid?").
+3b. Model of the rhythm (do not copy the words): "Ek moorti chali. Poore 100 din. Apne pairon par. Sirf ek gawahi dene ke liye. Aur phir achanak ruk gayi. Kyun?"
 4. Use powerful, cinematic and natural spoken language.
 5. Make viewers feel they MUST watch till the end.
 6. Avoid generic phrases like "Poora sach yahan", "Aap hairaan reh jayenge", "Video dekhiye", "the full truth is here", "you will be shocked", "watch this video".
@@ -414,11 +416,11 @@ FACE = ("Face and delivery: an excited, high-energy presenter breaking a big sto
 # founder's clips, 10 Nov 2026: the automatic prompt put "a warm, assured smile" on a line about 50,000 people losing their savings and on
 # a line about a killing. The tone follows the words now.
 GRAVE = re.compile(r"\b(maar\w*|mara|mare|maut|hatya|khoon|qatl|katl|yudh|jung|shraap|shrap|qaid|kaid|jail|doob\w*|dooba|loot\w*|fraud|scam|ghotala|"
-                   r"dhokha|thagi|crash|barbaad|tabah|bankrupt|diwaliya|nuksaan|nuksan|gawa\w*|kho diya|jal\w*|bhasm|dead|death|kill\w*|died|lost)\b", re.I)
+                   r"dhokha|thagi|crash|barbaad|tabah|bankrupt|diwaliya|nuksaan|nuksan|gawa(?!h)\w*|kho diya|jal\w*|bhasm|dead|death|kill\w*|died|lost)\b", re.I)
 # founder, 11 Nov 2026: "founder sad face still coming": he is never sad, gloomy or worried on camera. A grim line gets a calm, composed,
 # friendly face (no grin on it), every other line a warm smile.
 TONE = {"warm": ("a big, bright, genuine smile", "a big confident smile, a quick nod and a point at the viewer"),
-        "grave": ("an alert, intense, wide-awake face with a hint of a smile", "a firm, energetic nod with bright, eager eyes")}
+        "grave": ("an alert, bright, wide-awake face with a light, friendly smile", "a firm, energetic nod with bright, eager eyes")}
 
 
 def tone_for(text: str) -> str:
@@ -428,6 +430,11 @@ def tone_for(text: str) -> str:
 # an SG-MYTH-WORLD scene set in the past: the avatar tool once filled a Ramayan battle with European knights in plate armour (17 Nov clip)
 ERA = ("If the scene shows the past, it is ancient India: Indian people in dhotis, sarees and angavastram, warriors with bows, spears and "
        "bronze or leather armour, carved stone pillars, oil lamps; never European knights, plate armour, castles or anything medieval European")
+# founder, 23 Nov 2026 (Sakshi Gopal clip, shot under a storm sky at dusk): "why founder is looking dull". The story's first picture can
+# be dark; the clip he stands in never is, whatever the scene says.
+BRIGHT = ("Time of day and light, overriding anything darker in the setting above: bright golden-hour sunlight or clear daylight, a blue or "
+          "golden sky, warm saturated colours, his face and clothes fully lit; never night, dusk, storm clouds, lightning, fog, grey overcast, "
+          "a dark or desaturated look")
 MOTION = ("The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, "
           "light shifting); never a still, flat or heavily blurred backdrop")
 
@@ -494,7 +501,7 @@ def story_prompt(piece, p: dict) -> str:
     face = FACE.format(base=base, close=close)
     era = f" {ERA}." if piece.channel == "arthvan" else ""
     return (f"{size}, about 8 seconds, photorealistic and cinematic, bright vivid colour. "
-            f"Setting: {setting}. {MOTION}.{era} "
+            f"Setting: {setting}. {BRIGHT}. {MOTION}.{era} "
             "Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four "
             "steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up "
             "for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and "
