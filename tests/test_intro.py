@@ -586,7 +586,7 @@ def test_the_face_follows_the_words_and_a_myth_scene_is_ancient_india():
     assert intro.tone_for("Kumbhalgarh ki deewar, China ke baad duniya mein sabse lambi? Poora sach yahan!") == "warm"
     grim = _piece("short", "arthvan"); grim.script["hook"] = "Surpanakha ke pati ko Ravan ne maara."
     prompt = intro.plan(grim, ask=lambda _p: "")["prompt"]
-    assert "alert, intense, wide-awake face" in prompt and "Never sad, gloomy" in prompt and "never European knights" in prompt   # never a sad face; 17 Nov 2026: energetic
+    assert "alert, bright, wide-awake face" in prompt and "Never sad, gloomy" in prompt and "never European knights" in prompt   # never a sad face; 17 Nov 2026: energetic
     light = _piece("short", "sglearning"); light.script["hook"] = "Ek chai ke daam mein SIP shuru ho sakti hai?"
     prompt = intro.plan(light, ask=lambda _p: "")["prompt"]
     assert "big, bright, genuine smile" in prompt and "big confident smile" in prompt and "European knights" not in prompt
@@ -674,3 +674,11 @@ def test_resend_plans_afresh_and_asks_again_only_while_waiting(tmp_path):
     assert len(sent) == 1 and q.topic["intro"]["text"] != "old line" and q.ids.get("intro_sent") and "intro_rejected" not in q.ids
     q.status = "uploaded"; pieces.save(q, tmp_path)
     assert "nothing sent" in intro.resend(p.id, tmp_path, sent.append, ask=lambda prompt: "") and len(sent) == 1
+
+
+def test_the_clip_is_never_shot_dark_and_gawahi_is_not_a_loss_and_hooks_come_in_short_beats():
+    """Founder, 23 Nov 2026, on the Sakshi Gopal clip: "not attractive again boring script", "why founder is looking dull"."""
+    assert "never night, dusk, storm clouds" in intro.BRIGHT
+    assert intro.tone_for("Bhagwan ko khud gawahi dene chalna pada") == "warm"      # testimony, read as 'gawaya' (lost) before
+    assert intro.tone_for("Usne sab kuch gawaya") == "grave"
+    assert "three to five SHORT beats" in intro.HOOK_BRIEF and "first three words" in intro.HOOK_BRIEF
