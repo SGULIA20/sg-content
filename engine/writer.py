@@ -146,6 +146,15 @@ def hook_lessons(channel: str, path: Path | None = None) -> dict:
                     "Learn from what made people stay; never copy a line.", **got} if got else {}
 
 
+def week_lessons(channel: str) -> dict:
+    """What last week's own videos taught (engine/postmortem.py, every Monday): read from the retention of our real viewers. Follow
+    them where they fit this story; they never outrank the fact sheet or the rules above. Empty until a post-mortem has run."""
+    from . import postmortem
+    got = postmortem.lessons(channel)
+    return {"note": "Lessons from how last week's videos on this channel held or lost viewers. Apply them to the opening and the pacing; "
+                    "they are guidance, never facts.", "lessons": got} if got else {}
+
+
 def _user_message(piece: Piece, sheet: dict, library: list, hashtags: dict) -> str:
     return json.dumps({
         "piece": {"id": piece.id, "channel": piece.channel, "kind": piece.kind, "publish_day": piece.publish_day.isoformat(),
@@ -154,6 +163,7 @@ def _user_message(piece: Piece, sheet: dict, library: list, hashtags: dict) -> s
         "CLAIMS_LIBRARY": [{"text": e.get("text"), "number": e.get("number"), "unit": e.get("unit"), "source": e.get("source_url")} for e in library],
         "ALLOWED_HASHTAGS": hashtags.get(piece.channel, {}),
         "OPENINGS_THAT_WORKED": hook_lessons(piece.channel),
+        "LAST_WEEK_LESSONS": week_lessons(piece.channel),
         "REVISION": (f"Your previous draft was rejected: {piece.topic['revise']}. Rewrite the same piece, same facts, trimmed to the middle of the allowed range "
                      f"(count the words in `vo` yourself before answering).") if piece.topic.get("revise") else "",
     }, ensure_ascii=False, indent=1, default=lambda o: o.isoformat() if hasattr(o, "isoformat") else str(o))

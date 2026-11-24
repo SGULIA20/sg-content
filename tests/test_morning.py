@@ -38,7 +38,7 @@ def test_the_evidence_holds_the_failures_that_did_not_heal_the_stuck_videos_and_
     runs = {(r["workflow"], r["later_success"]) for r in ev["failed_runs"]}
     assert runs == {("produce", False), ("studio", True)}
     produce = next(r for r in ev["failed_runs"] if r["workflow"] == "produce")
-    assert "failed step: Make the day's pieces" in produce["log_end"] and "KeyError" in produce["log_end"] and len(produce["log_end"]) < 2700
+    assert "failed step: Make the day's pieces" in produce["log_end"] and "KeyError" in produce["log_end"] and len(produce["log_end"]) < 4200
     videos = {v["video"]: v for v in ev["videos"]}
     assert len(videos) == 2 and "missing words" in videos["03 Dec SG-MYTH-WORLD Short"]["clip_turned_down"]
     assert videos["02 Dec Learning with SG Short"]["review"]["verdict"] == "fix"

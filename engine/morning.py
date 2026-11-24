@@ -54,7 +54,30 @@ def _get(url: str, token: str = "", accept: str = "application/vnd.github+json")
         return r.read()
 
 
-def failed_runs(repo: str, since: datetime, token: str = "", get=_get) -> list:
+class _NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, *a, **k):
+        return None
+
+
+def _get_log(url: str, token: str = "") -> bytes:
+    """A job's log. GitHub answers with a redirect to a storage address that refuses the request when the GitHub token is sent along
+    (24 Nov 2026: the first report said "the log could not be read from here" for every failure). The address is asked for with the
+    token, then fetched without it."""
+    req = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json",
+                                               "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "sg-content-morning"})
+    opener = urllib.request.build_opener(_NoRedirect, urllib.request.HTTPSHandler(context=secrets.ssl_context()))
+    try:
+        with opener.open(req, timeout=60) as r:
+            return r.read()
+    except urllib.error.HTTPError as e:
+        where = e.headers.get("Location") if e.code in (301, 302, 303, 307, 308) else None
+        if not where:
+            raise
+    with urllib.request.urlopen(urllib.request.Request(where, headers={"User-Agent": "sg-content-morning"}), timeout=90, context=secrets.ssl_context()) as r:
+        return r.read()
+
+
+def failed_runs(repo: str, since: datetime, token: str = "", get=_get, get_log=None) -> list:
     """Workflow runs that failed since `since` and were not followed by a later success of the same workflow, each with the end of its
     failed job's log where the token may read it (this repository's own runs)."""
     try:
@@ -76,13 +99,13 @@ def failed_runs(repo: str, since: datetime, token: str = "", get=_get) -> list:
         row = {"repo": repo.split("/")[1], "workflow": r["name"], "at": r.get("created_at"), "result": r["conclusion"], "times": 1,
                "later_success": healed.get(r["name"], "") > r.get("created_at", "")}
         if not row["later_success"] and len(out) < MAX_FAILED:
-            row["log_end"] = _log_end(repo, r["id"], token, get)
+            row["log_end"] = _log_end(repo, r["id"], token, get, get_log)
         seen[r["name"]] = row
         out.append(row)
     return out
 
 
-def _log_end(repo: str, run_id: int, token: str, get) -> str:
+def _log_end(repo: str, run_id: int, token: str, get, get_log=None) -> str:
     try:
         jobs = json.loads(get(API.format(repo=repo) + f"/actions/runs/{run_id}/jobs", token)).get("jobs") or []
         bad = next((j for j in jobs if j.get("conclusion") == "failure"), None)
@@ -90,10 +113,12 @@ def _log_end(repo: str, run_id: int, token: str, get) -> str:
             return ""
         step = next((s["name"] for s in bad.get("steps") or [] if s.get("conclusion") == "failure"), "")
         try:
-            text = get(API.format(repo=repo) + f"/actions/jobs/{bad['id']}/logs", token).decode(errors="replace")
+            url = API.format(repo=repo) + f"/actions/jobs/{bad['id']}/logs"
+            text = (get_log(url, token) if get_log else _get_log(url, token) if get is _get else get(url, token)).decode(errors="replace")
         except Exception:
             return f"failed step: {step} (log not readable from here)"
-        return f"failed step: {step}\n" + secrets.scrub(text[-LOG_TAIL:])
+        marks = [l[29:] if len(l) > 29 and l[4] == "-" else l for l in text.splitlines() if "FAILED " in l or "Error" in l or "Traceback" in l][-12:]
+        return f"failed step: {step}\n" + secrets.scrub("\n".join(marks)[:1200] + "\n...\n" + text[-LOG_TAIL:])
     except Exception as e:
         return f"(log not readable: {type(e).__name__})"
 

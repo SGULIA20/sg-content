@@ -330,7 +330,9 @@ def build(root: Path, today: date, rows: dict, ask=_ask_claude, calendar: list |
                 used_here.append(str(topic.get("title") or topic.get("title_hi") or ""))
                 plan[pid] = topic
     return {"week_of": today.isoformat(), "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"), "entries": plan, "notes": notes,
-            "signals": {ch: [f"{r['views']:,} {r['title'][:70]}" for r in rows.get(ch, [])[:5]] for ch in rows}}
+            "signals": {ch: [f"{r['views']:,} {r['title'][:70]}" for r in rows.get(ch, [])[:5]] for ch in rows},
+            # 24 Nov 2026: the week's most-viewed videos with their ids, so the weekly post-mortem can look at their thumbnails
+            "viral": {ch: [{"id": r["id"], "title": r["title"][:120], "views": r["views"]} for r in rows.get(ch, [])[:8] if r.get("id")] for ch in rows}}
 
 
 def save(plan: dict, path: Path = PLAN) -> None:

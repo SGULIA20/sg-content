@@ -326,6 +326,11 @@ def options(piece, first: dict, ask=_ask_claude, panel=None) -> list:
     pool = HOOK_POOL if panel else HOOKS
     brief = HOOK_BRIEF.format(field=field, tongue="plain Indian English (no Hindi words)" if en else "natural spoken Hinglish in Latin script",
                               n=pool, lo=lo, hi=hi, summary=_summary(piece))
+    if live:                                                          # 24 Nov 2026: what last week's own videos taught (engine/postmortem.py)
+        from . import postmortem
+        learned = postmortem.lessons(piece.channel)
+        if learned:
+            brief += "\n\nWHAT LAST WEEK'S VIDEOS ON THIS CHANNEL TAUGHT (follow where it fits; never add a fact):\n" + "\n".join(f"- {x}" for x in learned)
     # founder, 19 Nov 2026 ("why only 1 option ... we decided for 5 minimum"): one reply rarely has five hooks of the right length (the
     # writer miscounts words), and a failed or cut-off reply left the planned line alone. Asked again, with the misses named, until five fit.
     good, strongest, prompt = [], None, brief
@@ -595,10 +600,13 @@ def thumb_prompt(piece) -> str:
     scene = (f"the real place, {place}, photoreal, at golden hour, with the one object or detail the video is about in sharp focus" if place
              else "the one everyday object or scene the video is about (a bill, a passbook, a phone screen, a shop, a home), photoreal, "
                   "dramatic side light")
+    from . import postmortem
+    look = postmortem.thumbnail_look(piece.channel)                    # 24 Nov 2026: what this week's viral thumbnails have in common
+    look = f" Follow the look of this week's most-viewed thumbnails in this subject: {look} (Still no presenter and no other creator's picture.)" if look else ""
     return (f"🖼 Thumbnail for {piece.id} (16:9, 1280x720, no presenter)\nVideo summary: {summary[:300]}\n\nPrompt:\n"
             f"1280x720 YouTube thumbnail, photoreal, no people. Main image: {scene}. One small inset that shows the proof or the twist. "
             f"Bold {'English' if lang.english(piece) else 'Hindi-English'} text on the left in large white letters with a black outline, two short lines taken from: \"{title}\", "
-            f"the key word in red or yellow. High contrast, clean composition. No other text, no watermark.\n\n"
+            f"the key word in red or yellow. High contrast, clean composition. No other text, no watermark.{look}\n\n"
             f"Send it as a PHOTO with the caption:\nthumb {piece.id}")
 
 
