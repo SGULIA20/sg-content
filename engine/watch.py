@@ -4,8 +4,8 @@ pictures. The 21 Nov trailer gap, a banner emoji drawn as a box and an app scree
 
 Claude sees one frame of every scene (the opening scenes always, then an even spread) beside the line spoken over it, and answers:
 does the first second stop the thumb, does each picture show what its line says, is any frame dark, dull, garbled or a repeat. The
-answer is stored on the piece (ids.watch) and sent to the founder only when something is wrong. REPORT ONLY in this first version:
-nothing is re-made and no upload is held back; a week of reports decides which findings are worth an automatic redo.
+answer is stored on the piece (ids.watch) and sent to the founder only when something is wrong. It ACTS on what it finds (24 Nov 2026):
+the pictures a viewer would trip over are redrawn once, with the reviewer's fix, before the video goes up; a second review is not made.
 
 python -m engine.watch <piece id>      # look at a made piece again (out/<id>/reel.mp4 or long.mp4)
 """
@@ -101,7 +101,42 @@ def review(piece, video: Path, work: Path, ask=_ask, grab=frame, duration: float
     data = json.loads(m.group(0))
     issues = [i for i in (data.get("issues") or []) if isinstance(i, dict) and i.get("problem")][:8]
     return {"opening": int(data.get("opening") or 0), "opening_why": str(data.get("opening_why") or "")[:200], "issues": issues,
-            "best_change": str(data.get("best_change") or "")[:240], "verdict": "fix" if str(data.get("verdict")) == "fix" else "good", "frames": len(picks)}
+            "best_change": str(data.get("best_change") or "")[:240], "verdict": "fix" if str(data.get("verdict")) == "fix" else "good", "frames": len(picks),
+            "scene_of_frame": {n: i for n, (i, _s) in enumerate(picks, start=1)}}
+
+
+REDRAW_MAX = 4               # pictures redrawn after one review; more than this and the script, not the pictures, is the problem
+STRONGER = ("Make this opening picture the most dramatic, close and high-contrast view of the subject, filling the frame: a viewer "
+            "scrolling past must stop on it.")
+
+
+def redraw(piece, r: dict) -> list:
+    """Acts on the review (founder, 24 Nov 2026: "your purpose is just not sending message or report ... on analysation you need to
+    action on next reels"): the pictures a viewer would trip over are redrawn ONCE before the video goes up. Each flagged scene's
+    picture prompt gets the reviewer's fix; a weak opening gets a stronger first picture. Returns the scene numbers changed (the caller
+    sends the piece back to the drawing step); [] when there is nothing to redraw or it was already done once."""
+    if piece.ids.get("watch_redo") is not None:
+        return []
+    scenes = (piece.script or {}).get("scenes") or []
+    fixes = {}
+    for issue in r.get("issues") or []:
+        try:
+            i = r["scene_of_frame"][int(issue.get("frame"))]
+        except (KeyError, TypeError, ValueError):
+            continue
+        if i < len(scenes) and str(issue.get("fix") or "").strip() and len(fixes) < REDRAW_MAX:
+            fixes.setdefault(i, str(issue["fix"]).strip()[:200])
+    if r.get("opening", 10) < PASS_MARK and scenes and 0 not in fixes and len(fixes) < REDRAW_MAX:
+        fixes[0] = STRONGER
+    changed = []
+    for i, fix in sorted(fixes.items()):
+        v = scenes[i].setdefault("visual", {})
+        if (v.get("type") or "art") != "art" or not v.get("prompt"):      # a card or a photo is not a painted picture
+            continue
+        v["prompt"] = f"{str(v['prompt']).rstrip('. ')}. Correction after review: {fix}"
+        changed.append(i)
+    piece.ids["watch_redo"] = changed
+    return changed
 
 
 def message(piece, r: dict) -> str:
@@ -113,7 +148,9 @@ def message(piece, r: dict) -> str:
         lines.append(f"• second {i.get('second', '?')}: {str(i['problem'])[:140]} → {str(i.get('fix', ''))[:120]}")
     if r["best_change"]:
         lines.append(f"Best single change: {r['best_change']}")
-    lines.append("Report only: the video goes up as made. Tell Claude if you want it re-made.")
+    redo = piece.ids.get("watch_redo")
+    lines.append(f"Acting on it: {len(redo)} picture(s) are being redrawn before this video goes up." if redo
+                 else "Nothing here can be fixed by redrawing a picture; it goes up as made and the lesson goes to next week's writers.")
     return "\n".join(lines)
 
 
@@ -137,6 +174,7 @@ def look(piece, video: Path, out_dir: Path, notify=None, ask=_ask, grab=frame) -
         print(f"watch: {piece.id} not reviewed ({type(e).__name__}: {secrets.scrub(str(e))[:160]})", flush=True)
         return None
     piece.ids["watch"] = {k: r[k] for k in ("opening", "verdict", "best_change")} | {"issues": len(r["issues"])}
+    r["redrawn"] = redraw(piece, r)
     text = message(piece, r)
     print(f"watch: {piece.id} opening {r['opening']}/10, {len(r['issues'])} issue(s), {r['verdict']}", flush=True)
     if text and notify:

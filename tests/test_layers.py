@@ -12,6 +12,7 @@ def _piece(kind="short", channel="sglearning", topic=None, day=date(2026, 11, 5)
 def test_layers_alternate_days_from_the_test_start_and_none_before():
     assert layers.on_for(date(2026, 11, 4)) is False
     assert [layers.on_for(date(2026, 11, d)) for d in range(5, 11)] == [True, False, True, False, True, False]
+    assert layers.on_for(date(2026, 11, 29)) is True and layers.on_for(date(2026, 11, 30)) is False and layers.on_for(date(2026, 12, 3)) is False   # 24 Nov 2026: the test's result is acted on
 
 
 def test_apply_records_the_arm_only_for_painted_daily_shorts():

@@ -670,3 +670,21 @@ def test_a_new_style_long_asks_for_a_realistic_16_by_9_picture():
     assert aspect == "16:9" and "Photorealistic" in full and "lower fifth" in full
     _full, old = pipeline.panel_request(NS(id="2026-11-19-arthvan-long", kind="long", channel="arthvan"), "A fort at dawn")
     assert old == pipeline.LONG_PANEL_ASPECT
+
+
+def test_a_review_that_redraws_sends_the_piece_back_to_drawing_once_and_then_it_uploads(tmp_path, monkeypatch):
+    """Founder, 24 Nov 2026: the analysis acts. The finished-video review may redraw pictures once before upload."""
+    from engine import config
+    monkeypatch.setattr(config, "STORY_FORMAT", {("sglearning", "short"), ("arthvan", "short")})
+    seen = []
+    def review(piece, video, out_dir):
+        if piece.ids.get("watch"):                                 # the rebuilt video: not reviewed again
+            return None
+        piece.ids["watch"] = {"opening": 4}; piece.ids["watch_redo"] = [0]; seen.append(piece.id)
+        return {"redrawn": [0]}
+    d, calls = deps(tmp_path)
+    d.watch = review
+    p = pipeline.make(_piece("long"), d, tmp_path)
+    assert p.status == "voiced" and calls["upload"] == 0 and "redrawing 1 picture" in p.reasons[-1]
+    p = pipeline.make(pieces.load(p.id, tmp_path), d, tmp_path)   # the next run picks it up, draws, builds and uploads
+    assert p.status == "uploaded" and calls["upload"] == 1 and seen == [p.id]

@@ -583,7 +583,10 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
         return piece
     if deps.watch is not None:                                           # 24 Nov 2026: the pictures are looked at, not only the file
         try:
-            deps.watch(piece, video, out_dir)
+            r = deps.watch(piece, video, out_dir)
+            if r and r.get("redrawn"):                                   # the review acts: back to the drawing step, once, with the fixes in the prompts
+                pieces.save(pieces.transition(piece, "voiced", f"review: redrawing {len(r['redrawn'])} picture(s) before upload"), root)
+                return piece
         except Exception as e:                                           # a bonus check: it never stops a video
             print(f"watch skipped for {piece.id}: {secrets.scrub(str(e))[:200]}", flush=True)
     # 10: the founder's intro first (engine/intro.py: his clip composed in, or ask and wait, or plain at the deadline), then the upload
