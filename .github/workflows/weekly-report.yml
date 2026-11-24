@@ -48,7 +48,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python -m engine.whatworks --send
-      - name: Weekly post-mortem (founder, 24 Nov 2026): lessons from last week's retention for the writers, a thumbnail look, a short report
+      - name: Weekly post-mortem (lessons from last week's retention for the writers, a thumbnail look, a short report)
         continue-on-error: true            # an extra report never fails the weekly one
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
