@@ -28,3 +28,16 @@ def test_the_designed_mix_ducks_the_music_under_the_voice_and_can_be_switched_of
     assert "sidechaincompress" not in storyframe.plain_mix(58.0)
     (tmp_path / "content").mkdir(); (tmp_path / "content" / "sound.json").write_text('{"design": false}')
     assert sfx.on(tmp_path) is False and sfx.on(tmp_path / "nowhere") is True
+
+
+def test_sg_myth_alternates_the_two_sounds_he_chose_and_learning_takes_the_driving_beat(tmp_path):
+    """Founder, 24 Nov 2026: 'Goahead with 5A and 5B'."""
+    from datetime import date
+    from types import SimpleNamespace as P
+    names = [sfx.style_for(P(channel="arthvan", publish_day=date(2026, 12, d)))["name"] for d in (1, 2, 3, 4)]
+    assert set(names) == {"5A", "5B"} and names[0] != names[1] and names[0] == names[2]
+    assert sfx.style_for(P(channel="sglearning", publish_day=date(2026, 12, 1)))["groove"] == "drive"
+    for style in sfx.STYLES["arthvan"] + sfx.STYLES["sglearning"]:
+        assert sfx.make_groove(style, 6.0, tmp_path / f"{style['name']}.wav").stat().st_size > 1000
+        assert sfx.track([0, 2, 4, 5], 6.0, tmp_path / "fx.wav", style=style).exists()
+    assert "I=-15" in storyframe.designed_mix(58.0) and "I=-19" in storyframe.designed_mix(600.0, long=True)
