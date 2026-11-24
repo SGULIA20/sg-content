@@ -140,7 +140,10 @@ def run(root: Path = ROOT, channel: str = "sglearning", now_utc: datetime | None
         text += f"\n  ! {pr}"
     for a in digest.alerts(root, slots.ist(now_utc).date()):
         text += f"\n  ! {a}"
-    if posted or problems:
+    # 24 Nov 2026: a problem that stays open was reported again on every one of the day's five to nine runs, for three days. Something
+    # posted is always told; the same list of problems is told once a day.
+    from . import once
+    if posted or (problems and once.fresh(f"publish-problems:{channel}", sorted(str(x) for x in problems), root=root)):
         notify(text)
     print(text, flush=True)
     return 0

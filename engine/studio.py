@@ -81,6 +81,12 @@ def thumb_reply(cfg: dict, message: dict, pid: str, root: Path, env=None, *, cal
     piece = pieces.load(pid, root)
     if piece and piece.ids.get("yt_id"):
         ok = set_thumb(token_for(piece.channel, env), piece.ids["yt_id"], out)
+        if ok:                                                  # 24 Nov 2026: the sweep set it again and the other bot announced it too
+            try:
+                from . import intro as _intro
+                piece.ids["thumb_sha"] = _intro._sha(out); pieces.save(piece, root); commit(root, f"thumbnail set for {pid}", paths=["pieces"])
+            except Exception:
+                pass
         return f"🖼 Thumbnail for {pid} saved and {'set on YouTube' if ok else 'saved, but YouTube refused it (JPG under 2 MB?)'}."
     return f"🖼 Thumbnail for {pid} saved; it is set on YouTube once the piece is uploaded."
 

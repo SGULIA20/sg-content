@@ -129,6 +129,8 @@ def look(piece, video: Path, out_dir: Path, notify=None, ask=_ask, grab=frame) -
     """Called by the pipeline after the file checks pass. Never stops a video: a failed review is printed and forgotten."""
     if not on():
         return None
+    if piece.ids.get("watch"):                                        # 24 Nov 2026: a piece built again (its intro, a retry) was reviewed and reported again
+        return None
     try:
         r = review(piece, video, Path(out_dir) / "watch", ask=ask, grab=grab)
     except Exception as e:
