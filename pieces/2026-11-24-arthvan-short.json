@@ -95,7 +95,9 @@
    "voice": 13
   },
   "drafts": 1,
+  "ig_reel_id": "18140441581650014",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-24-arthvan-short.mp4",
    "clip_seconds": 1,
@@ -106,6 +108,8 @@
   "intro_sent": "2026-11-17T19:26:17+00:00",
   "out_sha": "9636b4549d35be7c6b6a3960810e7768e0718b3c",
   "out_sha_intro": true,
+  "threads_id": "17920526040541707",
+  "threads_poll_id": "18110559878201504",
   "yt_id": "3x48ZyzoJXI"
  },
  "kind": "short",
@@ -322,7 +326,7 @@
   },
   "title": "Hanuman ji ka *janm* kahan hua? 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   3.437,
@@ -407,6 +411,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-18T08:09:13+00:00",
+ "updated": "2026-11-24T16:10:12+00:00",
  "writer": "claude"
 }
