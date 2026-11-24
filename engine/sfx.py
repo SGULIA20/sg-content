@@ -130,6 +130,52 @@ def groove(mood: str, seconds: float, out: Path) -> Path:
     return _write(buf, out, peak=0.6)
 
 
+def impact(seconds: float = 1.6) -> np.ndarray:
+    """A bigger, film-trailer hit: a sub drop, a metallic ring and a long tail."""
+    n = int(seconds * RATE); t = np.arange(n) / RATE
+    sub = np.sin(2 * np.pi * np.cumsum(38 + 110 * np.exp(-t * 6)) / RATE) * np.exp(-t * 2.2)
+    ring = sum(np.sin(2 * np.pi * f * t) * np.exp(-t * d) for f, d in ((311, 5), (466, 6), (622, 8))) * 0.12
+    crack = _noise(n, 5) * np.exp(-t * 40) * 0.7
+    tail = _smooth(_noise(n, 6), 40) * np.exp(-t * 2.5) * 1.5
+    return sub + ring + crack + tail
+
+
+def drums(seconds: float, out: Path, bpm: int = 90) -> Path:
+    """War drums: big low hits in a galloping pattern, for a myth or history story."""
+    n = int(seconds * RATE); buf = np.zeros(n); beat = 60.0 / bpm
+    k = np.arange(int(0.5 * RATE)) / RATE
+    tom = np.sin(2 * np.pi * np.cumsum(55 + 60 * np.exp(-k * 14)) / RATE) * np.exp(-k * 7) + _smooth(_noise(len(k), 7), 30) * np.exp(-k * 25) * 0.8
+    pattern = [(0, 1.0), (0.75, 0.5), (1.0, 0.8), (1.5, 0.45), (2.0, 1.0), (2.5, 0.5), (3.0, 0.8), (3.5, 0.6), (3.75, 0.45)]
+    for bar in range(int(seconds / (beat * 4)) + 1):
+        for pos, gain in pattern:
+            _place(buf, tom, (bar * 4 + pos) * beat, gain)
+    fade = int(1.0 * RATE); buf[:fade] *= np.linspace(0, 1, fade); buf[-fade:] *= np.linspace(1, 0, fade)
+    return _write(buf, out, peak=0.7)
+
+
+def drive(seconds: float, out: Path, bpm: int = 110) -> Path:
+    """A driving beat: kick on every beat, a clap on two and four, fast ticks and a moving bass line, for an energetic explainer."""
+    n = int(seconds * RATE); buf = np.zeros(n); beat = 60.0 / bpm
+    k = np.arange(int(0.22 * RATE)) / RATE
+    kick = np.sin(2 * np.pi * np.cumsum(48 + 90 * np.exp(-k * 32)) / RATE) * np.exp(-k * 15)
+    c = np.arange(int(0.16 * RATE)) / RATE
+    clap = (_noise(len(c), 8) - _smooth(_noise(len(c), 8), 10)) * np.exp(-c * 28)
+    tk = np.arange(int(0.04 * RATE)) / RATE
+    tick = (_noise(len(tk), 9) - _smooth(_noise(len(tk), 9), 6)) * np.exp(-tk * 90)
+    notes = [55.0, 55.0, 65.4, 49.0]                                   # one bass note a bar: A, A, C, G
+    for i in range(int(seconds / beat) + 1):
+        at = i * beat
+        _place(buf, kick, at, 0.8)
+        if i % 2 == 1:
+            _place(buf, clap, at, 0.5)
+        for j in range(4):
+            _place(buf, tick, at + j * beat / 4, 0.18 if j else 0.28)
+        b = np.arange(int(beat * 0.9 * RATE)) / RATE
+        _place(buf, np.sin(2 * np.pi * notes[(i // 4) % 4] * b) * np.exp(-b * 4), at, 0.4)
+    fade = int(1.0 * RATE); buf[:fade] *= np.linspace(0, 1, fade); buf[-fade:] *= np.linspace(1, 0, fade)
+    return _write(buf, out, peak=0.7)
+
+
 def _write(mono: np.ndarray, out: Path, peak: float) -> Path:
     top = float(np.max(np.abs(mono))) or 1.0
     mono = mono / top * peak
