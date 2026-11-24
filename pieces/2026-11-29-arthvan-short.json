@@ -126,8 +126,7 @@
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
-  "intro_rejected": "e14edeaea93c2e38",
-  "intro_rejected_why": "missing words (only 26% of the script heard): \"Peeche mat dekhna bas ek shart thi usne dekh liya aur bhagwan wahi hamesha ke liye ruk gaye sach hai ya kahani\"",
+  "intro_checked": "e14edeaea93c2e38",
   "intro_sent": "2026-11-22T20:44:56+00:00"
  },
  "kind": "short",
@@ -387,6 +386,12 @@
    "options": [
     {
      "closing": "",
+     "question": "Peeche mat dekhna. Bas ek shart thi. Usne dekh liya. Aur Bhagwan wahin hamesha ke liye ruk gaye. Sach hai ya kahani?",
+     "text": "Peeche mat dekhna. Bas ek shart thi. Usne dekh liya. Aur Bhagwan wahin hamesha ke liye ruk gaye. Sach hai ya kahani?",
+     "words": 22
+    },
+    {
+     "closing": "",
      "question": "Boodhe ne Bhagwan ke saamne vachan diya, ghar lautkar mukar gaya, aur phir Bhagwan ko khud gawahi dene chalna pada. Kaise?",
      "text": "Boodhe ne Bhagwan ke saamne vachan diya, ghar lautkar mukar gaya, aur phir Bhagwan ko khud gawahi dene chalna pada. Kaise?",
      "words": 21
@@ -417,9 +422,9 @@
     }
    ],
    "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: dramatic view at stormy dusk: a dark stone statue of Krishna seen from behind, standing alone on an ancient dusty road through Indian countryside, lightning over the horizon, a young pilgrim in a white dhoti far ahead holding an oil lamp, wind whipping the dust, documentary photograph, natural light. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. If the scene shows the past, it is ancient India: Indian people in dhotis, sarees and angavastram, warriors with bows, spears and bronze or leather armour, carved stone pillars, oil lamps; never European knights, plate armour, castles or anything medieval European. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a deep blue kurta with a beige Nehru jacket. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, an alert, intense, wide-awake face with a hint of a smile. On the question his voice rises with excitement as he strides closer. On the last line a firm, energetic nod with bright, eager eyes. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGMythWorld watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
-   "question": "Payal ki chhan-chhan sunte rehna, peeche mat dekhna. Bas itna sa niyam tha, aur ek jawan ne use tod diya. Phir kya hua?",
-   "text": "Payal ki chhan-chhan sunte rehna, peeche mat dekhna. Bas itna sa niyam tha, aur ek jawan ne use tod diya. Phir kya hua?",
-   "words": 23
+   "question": "Peeche mat dekhna. Bas ek shart thi. Usne dekh liya. Aur Bhagwan wahin hamesha ke liye ruk gaye. Sach hai ya kahani?",
+   "text": "Peeche mat dekhna. Bas ek shart thi. Usne dekh liya. Aur Bhagwan wahin hamesha ke liye ruk gaye. Sach hai ya kahani?",
+   "words": 22
   },
   "summary": "Puri ke Sakshi Gopal mandir ki lokkatha: do brahmanon, vachan aur Krishna ki gawahi. Check: katha ke srot (Odia parampara), moorti ka Vrindavan se Odisha tak ka safar, Satyabadi mandir ki tithi. Katha ko legend label karo.",
   "target_minutes": null,
