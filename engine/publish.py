@@ -61,7 +61,15 @@ def _slot_opens(channel: str, day, slot_ist: str | None = None) -> datetime:
 
 
 def threads_text(piece) -> str:
-    return threads.text_for((piece.script or {}).get("captions", {}).get("threads", {}), config.YOUTUBE_URLS.get(piece.channel, ""))
+    from . import tracks
+    text = threads.text_for((piece.script or {}).get("captions", {}).get("threads", {}), config.YOUTUBE_URLS.get(piece.channel, ""))
+    credit = tracks.credit(piece.ids.get("music"), short=True)            # the licence's credit; the 500-character post is kept whole
+    if not credit:
+        return text
+    if len(text) + len(credit) + 2 <= 500:
+        return f"{text}\n\n{credit}"
+    base = threads.text_for((piece.script or {}).get("captions", {}).get("threads", {}), "")      # the link gives way to the credit
+    return f"{base}\n\n{credit}" if len(base) + len(credit) + 2 <= 500 else f"{base[:500 - len(credit) - 3].rstrip()}…\n\n{credit}"
 
 
 def run(root: Path = ROOT, channel: str = "sglearning", now_utc: datetime | None = None, env=None,

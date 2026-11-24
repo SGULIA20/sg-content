@@ -312,17 +312,25 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     extra, graph = [], plain_mix(total)
     if sfx.on():                                                     # founder, 24 Nov 2026: "yes, upgrade the sound"
         try:
+            from . import tracks
             style = sfx.style_for(piece)
-            groove = sfx.make_groove(style, total + 1, out_dir / "groove.wav")
             fx = sfx.track(starts, total, out_dir / "sfx.wav", long=not short, style=style)
-            extra, graph = ["-i", str(groove), "-i", str(fx)], designed_mix(total, long=not short)
-            piece.ids["sound"] = style["name"]
+            chosen = tracks.pick(piece)                              # 24 Nov 2026: real music, fetched by the engine; his hits and risers stay on top
+            song = tracks.fetch(chosen, out_dir / "track.mp3") if chosen else None
+            if song:
+                extra, graph = ["-stream_loop", "-1", "-i", str(song), "-i", str(fx)], designed_mix(total, long=not short, track=True)
+                piece.ids["music"] = {"title": chosen["title"], "by": "Kevin MacLeod (incompetech.com)", "licence": "CC BY 4.0"}
+                piece.ids["sound"] = "track"
+            else:
+                groove = sfx.make_groove(style, total + 1, out_dir / "groove.wav")
+                extra, graph = ["-i", str(groove), "-i", str(fx)], designed_mix(total, long=not short)
+                piece.ids["sound"] = style["name"]; piece.ids.pop("music", None)
         except Exception as e:                                       # the plain pad still makes a video
             print(f"sound design skipped for {piece.id}: {type(e).__name__}: {str(e)[:120]}", flush=True)
     _run(["-f", "concat", "-safe", "0", "-i", str(concat), "-i", str(voice_wav), "-stream_loop", "-1", "-i", str(bed), *extra,
           "-filter_complex", graph,
           "-map", "0:v", "-map", "[aout]", "-t", f"{total:.3f}", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", str(out)])
-    for f in ("groove.wav", "sfx.wav"):
+    for f in ("groove.wav", "sfx.wav", "track.mp3"):                  # the raw track is never kept: the licence covers its use in the video only
         (out_dir / f).unlink(missing_ok=True)
     return out
 
@@ -340,13 +348,16 @@ def plain_mix(total: float) -> str:
 DESIGN_MUSIC_LUFS, DESIGN_MUSIC_LUFS_LONG = -15, -19
 
 
-def designed_mix(total: float, long: bool = False) -> str:
+def designed_mix(total: float, long: bool = False, track: bool = False) -> str:
     """Inputs: 1 voice, 2 pad (looped), 3 groove, 4 effects. The pad and the groove make the music; the voice pushes it down while it
     speaks (sidechain) and it comes back up in the gaps; the effects sit on top at a fixed level."""
     return (f"[1:a]aresample=48000,apad=whole_dur={total:.3f},loudnorm=I={assemble.VOICE_LUFS}:TP=-1.5:LRA=11,asplit=2[v][key];"
             f"[2:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS[pad];"
-            f"[3:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS[gr];"
-            f"[pad][gr]amix=inputs=2:duration=longest:normalize=0,afade=t=out:st={max(0.0, total - 2):.2f}:d=2,"
+            + (f"[3:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.4[gr];[pad]anullsink;[gr]anull,afade=t=out"
+               if track else                                         # a real track stands alone: the code-made pad is dropped
+               f"[3:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS[gr];"
+               f"[pad][gr]amix=inputs=2:duration=longest:normalize=0,afade=t=out") +
+            f":st={max(0.0, total - 2):.2f}:d=2,"
             f"loudnorm=I={DESIGN_MUSIC_LUFS_LONG if long else DESIGN_MUSIC_LUFS}:TP=-3:LRA=7[m0];"
             f"[m0][key]sidechaincompress=threshold=0.05:ratio=2.5:attack=15:release=350[m];"
             f"[4:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS,volume={0.9 if long else 1.3}[fx];"

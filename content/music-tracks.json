@@ -1,0 +1,373 @@
+{
+ "_note": "Tracks from incompetech.com (Kevin MacLeod), free under Creative Commons Attribution 4.0: every video that uses one carries the credit. Chosen from the site's own catalogue by its feel tags on 24 Nov 2026; the engine downloads a track when it builds a video and keeps no copy in this repo. Remove a line to stop using that track.",
+ "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/",
+ "sglearning": [
+  {
+   "title": "Got Funk",
+   "filename": "Got Funk.mp3",
+   "feel": [
+    "Bouncy",
+    "Bright",
+    "Driving",
+    "Grooving"
+   ],
+   "bpm": 98,
+   "seconds": 281
+  },
+  {
+   "title": "Lagoa v2",
+   "filename": "Lagoa v2.mp3",
+   "feel": [
+    "Bouncy",
+    "Bright",
+    "Driving",
+    "Grooving",
+    "Intense"
+   ],
+   "bpm": 130,
+   "seconds": 194
+  },
+  {
+   "title": "Motivator",
+   "filename": "Motivator.mp3",
+   "feel": [
+    "Bouncy",
+    "Bright",
+    "Driving",
+    "Uplifting"
+   ],
+   "bpm": 126,
+   "seconds": 238
+  },
+  {
+   "title": "New Friendly",
+   "filename": "New Friendly.mp3",
+   "feel": [
+    "Bouncy",
+    "Bright",
+    "Grooving",
+    "Uplifting"
+   ],
+   "bpm": 114,
+   "seconds": 169
+  },
+  {
+   "title": "Aces High",
+   "filename": "Aces High.mp3",
+   "feel": [
+    "Bouncy",
+    "Driving",
+    "Grooving"
+   ],
+   "bpm": 102,
+   "seconds": 193
+  },
+  {
+   "title": "Allada",
+   "filename": "Allada.mp3",
+   "feel": [
+    "Bouncy",
+    "Bright",
+    "Grooving"
+   ],
+   "bpm": 100,
+   "seconds": 223
+  },
+  {
+   "title": "Aurea Carmina",
+   "filename": "Aurea Carmina.mp3",
+   "feel": [
+    "Bouncy",
+    "Bright",
+    "Grooving"
+   ],
+   "bpm": 115,
+   "seconds": 211
+  },
+  {
+   "title": "Bit Shift",
+   "filename": "Bit Shift.mp3",
+   "feel": [
+    "Bouncy",
+    "Bright",
+    "Grooving"
+   ],
+   "bpm": 130,
+   "seconds": 192
+  },
+  {
+   "title": "Blip Stream",
+   "filename": "Blip Stream.mp3",
+   "feel": [
+    "Bouncy",
+    "Bright",
+    "Uplifting"
+   ],
+   "bpm": 150,
+   "seconds": 285
+  },
+  {
+   "title": "Brightly Fancy",
+   "filename": "Brightly Fancy.mp3",
+   "feel": [
+    "Bouncy",
+    "Bright",
+    "Uplifting"
+   ],
+   "bpm": 131,
+   "seconds": 135
+  },
+  {
+   "title": "Carpe Diem",
+   "filename": "Carpe Diem.mp3",
+   "feel": [
+    "Bouncy",
+    "Bright",
+    "Uplifting"
+   ],
+   "bpm": 96,
+   "seconds": 295
+  },
+  {
+   "title": "Cipher",
+   "filename": "Cipher2.mp3",
+   "feel": [
+    "Bright",
+    "Grooving",
+    "Uplifting"
+   ],
+   "bpm": 150,
+   "seconds": 231
+  },
+  {
+   "title": "Delightful D",
+   "filename": "Delightful D.mp3",
+   "feel": [
+    "Bright",
+    "Driving",
+    "Grooving"
+   ],
+   "bpm": 120,
+   "seconds": 184
+  },
+  {
+   "title": "Fantasia Fantasia",
+   "filename": "Fantasia Fantasia.mp3",
+   "feel": [
+    "Bright",
+    "Driving",
+    "Grooving"
+   ],
+   "bpm": 118,
+   "seconds": 152
+  }
+ ],
+ "arthvan": [
+  {
+   "title": "Constance",
+   "filename": "Constance.mp3",
+   "feel": [
+    "Action",
+    "Dark",
+    "Epic",
+    "Intense",
+    "Mysterious",
+    "Suspenseful"
+   ],
+   "bpm": 83,
+   "seconds": 140
+  },
+  {
+   "title": "Nerves",
+   "filename": "Nerves.mp3",
+   "feel": [
+    "Action",
+    "Dark",
+    "Eerie",
+    "Epic",
+    "Intense",
+    "Suspenseful"
+   ],
+   "bpm": 135,
+   "seconds": 172
+  },
+  {
+   "title": "Colossus",
+   "filename": "Colossus.mp3",
+   "feel": [
+    "Action",
+    "Dark",
+    "Epic",
+    "Intense"
+   ],
+   "bpm": 86,
+   "seconds": 271
+  },
+  {
+   "title": "Devastation and Revenge",
+   "filename": "Devastation and Revenge.mp3",
+   "feel": [
+    "Eerie",
+    "Epic",
+    "Intense",
+    "Mystical",
+    "Somber",
+    "Suspenseful"
+   ],
+   "bpm": 114,
+   "seconds": 185
+  },
+  {
+   "title": "Firesong",
+   "filename": "Firesong.mp3",
+   "feel": [
+    "Dark",
+    "Driving",
+    "Epic",
+    "Mysterious",
+    "Mystical"
+   ],
+   "bpm": 93,
+   "seconds": 213
+  },
+  {
+   "title": "Gloom Horizon",
+   "filename": "Gloom Horizon.mp3",
+   "feel": [
+    "Dark",
+    "Intense",
+    "Mysterious",
+    "Suspenseful"
+   ],
+   "bpm": 100,
+   "seconds": 128
+  },
+  {
+   "title": "Hitman",
+   "filename": "Hitman.mp3",
+   "feel": [
+    "Action",
+    "Dark",
+    "Driving",
+    "Epic",
+    "Intense"
+   ],
+   "bpm": 76,
+   "seconds": 201
+  },
+  {
+   "title": "Impending Boom",
+   "filename": "Impending Boom.mp3",
+   "feel": [
+    "Driving",
+    "Epic",
+    "Intense",
+    "Mysterious",
+    "Suspenseful"
+   ],
+   "bpm": 60,
+   "seconds": 157
+  },
+  {
+   "title": "Ossuary 4 - Animate",
+   "filename": "Ossuary 4 - Animate.mp3",
+   "feel": [
+    "Action",
+    "Dark",
+    "Intense",
+    "Mysterious"
+   ],
+   "bpm": 102,
+   "seconds": 197
+  },
+  {
+   "title": "Rising Game",
+   "filename": "Rising Game.mp3",
+   "feel": [
+    "Dark",
+    "Driving",
+    "Epic",
+    "Grooving",
+    "Intense",
+    "Mysterious"
+   ],
+   "bpm": 112,
+   "seconds": 112
+  },
+  {
+   "title": "Rynos Theme",
+   "filename": "Rynos Theme.mp3",
+   "feel": [
+    "Action",
+    "Epic",
+    "Intense",
+    "Suspenseful"
+   ],
+   "bpm": 128,
+   "seconds": 186
+  },
+  {
+   "title": "Serpentine Trek",
+   "filename": "Serpentine Trek.mp3",
+   "feel": [
+    "Dark",
+    "Eerie",
+    "Epic",
+    "Intense",
+    "Suspenseful"
+   ],
+   "bpm": 75,
+   "seconds": 107
+  },
+  {
+   "title": "The Descent",
+   "filename": "The Descent.mp3",
+   "feel": [
+    "Action",
+    "Dark",
+    "Driving",
+    "Epic",
+    "Intense"
+   ],
+   "bpm": 103,
+   "seconds": 192
+  },
+  {
+   "title": "Truth of the Legend",
+   "filename": "Truth of the Legend.mp3",
+   "feel": [
+    "Action",
+    "Dark",
+    "Driving",
+    "Epic",
+    "Intense"
+   ],
+   "bpm": 132,
+   "seconds": 93
+  },
+  {
+   "title": "Crusade",
+   "filename": "Crusade.mp3",
+   "feel": [
+    "Dark",
+    "Epic",
+    "Somber",
+    "Suspenseful"
+   ],
+   "bpm": 89,
+   "seconds": 199
+  },
+  {
+   "title": "Darkness is Coming",
+   "filename": "Darkness is Coming.mp3",
+   "feel": [
+    "Dark",
+    "Eerie",
+    "Epic",
+    "Intense"
+   ],
+   "bpm": 73,
+   "seconds": 171
+  }
+ ]
+}
