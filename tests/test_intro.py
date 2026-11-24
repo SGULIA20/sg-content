@@ -682,3 +682,26 @@ def test_the_clip_is_never_shot_dark_and_gawahi_is_not_a_loss_and_hooks_come_in_
     assert intro.tone_for("Bhagwan ko khud gawahi dene chalna pada") == "warm"      # testimony, read as 'gawaya' (lost) before
     assert intro.tone_for("Usne sab kuch gawaya") == "grave"
     assert "three to five SHORT beats" in intro.HOOK_BRIEF and "first three words" in intro.HOOK_BRIEF
+
+
+def test_the_five_hooks_sent_are_the_panels_best_of_the_pool(tmp_path):
+    """Founder, 24 Nov 2026: 'Build the hook tournament next'."""
+    import json
+    words = lambda i: " ".join([f"hook{i}"] + ["w"] * 20) + " Kyun?"                       # 22 words each
+    pool = [words(i) for i in range(12)]
+    asked = []
+    def writer(prompt):
+        asked.append(prompt)
+        return json.dumps({"hooks": pool, "strongest": 0, "why": "x"})
+    def panel(prompt):
+        assert "Three people are scrolling" in prompt and "12. hook11" in prompt
+        return json.dumps({"scores": [{"line": i + 1, "a": i % 10 + 1, "b": i % 10 + 1, "c": i % 10 + 1} for i in range(12)]})
+    p = pieces.Piece(id="2026-12-05-arthvan-short", channel="arthvan", kind="short", publish_day=date(2026, 12, 5))
+    p.script = {"title": "Trojan Horse sach tha?", "scenes": [{"vo": "Ek ghoda."}]}
+    first = {"text": "x", "question": "x", "closing": "", "words": 1}
+    out = intro.options(p, first, ask=writer, panel=panel)
+    assert len(out) == 5 and len(asked) == 1 and "write 12 alternative" in asked[0]
+    assert [o["text"].split()[0] for o in out] == ["hook9", "hook8", "hook7", "hook6", "hook5"]     # the highest scores, best first
+    assert out[0]["score"] == 10.0 and "[10.0]" in intro.request_text(p, {**first, "options": out, "prompt": "P"}) and "panel of three" in intro.request_text(p, {**first, "options": out, "prompt": "P"})
+    plain = intro.options(p, first, ask=writer, panel=lambda prompt: "sorry")                    # an unreadable panel: the writer's order stands
+    assert len(plain) == 5 and plain[0]["text"].startswith("hook0") and "score" not in plain[0]
