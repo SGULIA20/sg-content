@@ -104,6 +104,7 @@ def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFA
     _log_run(root, {"day": today.isoformat(), "at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "ok": ok,
                     "dry_run": dry_run, "made": made, "stopped": stopped})
     text = digest.run_summary(root, today)
+    pend = []
     try:
         from . import intro as _intro
         if (pend := _intro.pending_lines(root, now_utc)):
@@ -120,7 +121,16 @@ def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFA
     if not ok:
         text += "\nCRASHED (the other pieces carried on): " + "; ".join(f"{a} {b}" for a, b in made if str(b).startswith("crashed"))
     if not dry_run or os.environ.get("NOTIFY_DRY_RUN") == "1":
-        notify(text)
+        # 24 Nov 2026: this summary went out on every one of the day's five to ten runs, even when a run made nothing. It is sent when
+        # something happened in this run or the day's picture changed; a run with nothing new is silent.
+        from . import once
+        what = [sorted(str(x) for x in made), stopped, alerts]
+        if made or stopped or not ok:                                # this run did something: told, unless an earlier run today said exactly this
+            send = once.fresh(f"produce:{today.isoformat()}", what, root=root)
+        else:                                                        # an idle run: only a new alert or a newly waiting clip is worth a message
+            send = bool(alerts or pend) and once.fresh(f"produce-idle:{today.isoformat()}", [alerts, pend], root=root)
+        if send:
+            notify(text)
     print(text, flush=True)
     return 0 if ok else 1
 
