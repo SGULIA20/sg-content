@@ -17,6 +17,26 @@ RATE = 48000
 REVEAL_AT = 0.66            # the twist of a story sits about two thirds in: the riser leads into the scene that starts nearest this point
 WHOOSH_MIN_GAP = 2.5        # a long video changes picture every few seconds; a whoosh on every one would be noise
 MOODS = {"sglearning": "upbeat", "arthvan": "suspense"}
+# founder, 24 Nov 2026, after hearing the audition files: "Goahead with 5A and 5B". 5A = war drums, the big film impact and the long riser;
+# 5B = the heartbeat, the low boom and the short riser; both at the loud level of those two files. SG-MYTH-WORLD alternates them day by
+# day. He chose nothing for Learning with SG, which takes the driving beat at the same level until he says otherwise.
+STYLES = {"arthvan": [{"name": "5A", "groove": "drums", "hit": "impact", "riser": 3.0}, {"name": "5B", "groove": "suspense", "hit": "boom", "riser": 1.8}],
+          "sglearning": [{"name": "drive", "groove": "drive", "hit": "boom", "riser": 1.8}]}
+
+
+def style_for(piece) -> dict:
+    options = STYLES.get(getattr(piece, "channel", ""), STYLES["sglearning"])
+    day = getattr(piece, "publish_day", None)
+    return options[(day.toordinal() if day else 0) % len(options)]
+
+
+def make_groove(style: dict, seconds: float, out: Path) -> Path:
+    kind = style.get("groove")
+    if kind == "drums":
+        return drums(seconds, out)
+    if kind == "drive":
+        return drive(seconds, out)
+    return groove(kind or "suspense", seconds, out)
 
 
 def on(root: Path = ROOT) -> bool:
@@ -85,19 +105,21 @@ def cue_points(starts: list, total: float) -> dict:
     return {"hit": [starts[0] if starts else 0.0], "whoosh": whooshes, "riser": [reveal] if reveal else []}
 
 
-def track(starts: list, total: float, out: Path, long: bool = False) -> Path:
-    """The effects of one video as a stereo WAV `total` seconds long."""
+def track(starts: list, total: float, out: Path, long: bool = False, style: dict | None = None) -> Path:
+    """The effects of one video as a stereo WAV `total` seconds long, at the level of the audition files he approved."""
+    style = style or {}
     buf = np.zeros(int((total + 0.5) * RATE))
     cues = cue_points(starts, total)
+    first = impact() if style.get("hit") == "impact" else hit()
     for t in cues["hit"]:
-        _place(buf, hit(), t, 0.9)
+        _place(buf, first, t, 1.0)
     w = whoosh()
     for t in cues["whoosh"]:
-        _place(buf, w, t - 0.30, 0.35 if long else 0.5)               # it peaks as the picture changes
-    r = riser()
+        _place(buf, w, t - 0.30, 0.5 if long else 0.8)                # it peaks as the picture changes; gentler across a long video
+    r = riser(float(style.get("riser") or 1.8))
     for t in cues["riser"]:
-        _place(buf, r, t - len(r) / RATE, 0.45)
-    return _write(buf, out, peak=0.7)
+        _place(buf, r, t - len(r) / RATE, 0.8)
+    return _write(buf, out, peak=0.9)
 
 
 def groove(mood: str, seconds: float, out: Path) -> Path:
