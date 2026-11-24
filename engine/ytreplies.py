@@ -31,7 +31,7 @@ Only if the comment is spam, an advertisement or abuse, reply exactly SKIP.
 
 Video title: {title}
 Comment by {author}: {text}"""
-ABOUT = {"sglearning": "money stories for Indian families", "arthvan": "Indian history and mythology, with the evidence"}
+ABOUT = {"sglearning": "anything worth knowing, explained plainly", "arthvan": "the myths of the world and the reason behind each"}
 
 
 def _when(ts: str) -> datetime:

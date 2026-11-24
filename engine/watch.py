@@ -40,7 +40,7 @@ Reply with JSON only:
   "issues": [{{"frame": <number>, "second": <number>, "problem": "<what a viewer sees>", "fix": "<what to change>"}}],
   "best_change": "<one sentence>", "verdict": "<good | fix>"}}
 An empty issues list is a fine answer; do not invent problems."""
-ABOUT = {"sglearning": "money explained for Indian families", "arthvan": "Indian mythology and history, with the evidence"}
+ABOUT = {"sglearning": "anything worth knowing, explained plainly", "arthvan": "the myths of the world and the reason behind each"}
 
 
 def moments(timings: list, duration: float, kind: str) -> list:

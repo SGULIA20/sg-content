@@ -280,8 +280,9 @@ def options(piece, first: dict, ask=_ask_claude) -> list:
     en = lang.english(piece)
     lo, hi = HOOK_WORDS
     brief = HOOK_BRIEF.format(
-        field="money, personal finance and business stories for Indian households" if piece.channel == "sglearning"
-        else "mythology, Indian history, mysteries and untold stories",
+        field="the stories India is talking about this week" if (piece.topic or {}).get("trend")
+        else "money, personal finance and business stories for Indian households" if piece.channel == "sglearning"
+        else "myths of the world and the reason behind them: mythology, history, mysteries and untold stories",
         tongue="plain Indian English (no Hindi words)" if en else "natural spoken Hinglish in Latin script",
         n=HOOKS, lo=lo, hi=hi, summary=_summary(piece))
     # founder, 19 Nov 2026 ("why only 1 option ... we decided for 5 minimum"): one reply rarely has five hooks of the right length (the
@@ -428,7 +429,7 @@ def tone_for(text: str) -> str:
 
 
 # an SG-MYTH-WORLD scene set in the past: the avatar tool once filled a Ramayan battle with European knights in plate armour (17 Nov clip)
-ERA = ("If the scene shows the past, it is ancient India: Indian people in dhotis, sarees and angavastram, warriors with bows, spears and "
+ERA = ("If the scene shows the past of an Indian story, it is ancient India (a story from another country keeps that country's own dress and buildings): Indian people in dhotis, sarees and angavastram, warriors with bows, spears and "
        "bronze or leather armour, carved stone pillars, oil lamps; never European knights, plate armour, castles or anything medieval European")
 # founder, 23 Nov 2026 (Sakshi Gopal clip, shot under a storm sky at dusk): "why founder is looking dull". The story's first picture can
 # be dark; the clip he stands in never is, whatever the scene says.

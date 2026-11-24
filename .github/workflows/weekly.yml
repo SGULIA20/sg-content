@@ -6,8 +6,7 @@ name: weekly
 # quota units a run (32 searches: all videos of 14 days, and short videos of 7 days) and one Sonnet call per channel.
 on:
   schedule:
-    - cron: '17 16 * * 0'
-    - cron: '17 16 * * 3'   # Wednesday too (founder, 23 Nov 2026): slots not started yet are re-planned from the newest signal
+    - cron: '17 16 * * 0,2,4'   # Sunday, Tuesday, Thursday (founder, 24 Nov 2026: trending topics reach Learning viewers within days)
   workflow_dispatch:
 
 permissions:

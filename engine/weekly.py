@@ -29,16 +29,31 @@ SPARE_SHORTS, SPARE_LONGS = 10, 4
 SHORT_SIGNAL_DAYS = 7
 BANK_LOOK = 6                                   # a bank fill-in is the best scored of the next few, not just the next one
 SHORT_DAYS, LONG_DAYS = 14, 21                  # how far ahead a slot is planned
-MYTH_SOURCES = ["asi.nic.in", "en.wikipedia.org", "nio.res.in", "britannica.com", "the scripture or text named in the story"]
+MYTH_SOURCES = ["asi.nic.in", "en.wikipedia.org", "nio.res.in", "britannica.com", "the scripture or text named in the story",
+                "nasa.gov", "who.int", "nih.gov", "nationalgeographic.com", "smithsonianmag.com", "a university or museum page"]   # 24 Nov 2026: world myths need science sources too
 PLAN_QUERIES = {
     "sglearning": ["share market kyun gira", "gold silver price kyun", "RBI EMI kam", "petrol diesel daam", "UPI fraud", "bank FD interest", "SIP mutual fund", "tax bachane ke tarike"],
-    "arthvan": ["mandir ka rahasya", "mahabharat ka sach", "ramayan ka sach", "shiv mandir rahasya", "bharat ka itihas rahasya", "pauranik katha sach", "kedarnath rahasya", "ancient india mystery"],
+    "arthvan": ["mandir ka rahasya", "mahabharat ka sach", "ramayan ka sach", "shiv mandir rahasya", "bharat ka itihas rahasya", "pauranik katha sach", "kedarnath rahasya", "ancient india mystery",
+                "myth vs fact hindi", "sach ya jhooth facts", "duniya ke rahasya", "world mythology hindi"]   # 24 Nov 2026: myths of the whole world,
 }
+# founder, 24 Nov 2026 ("any topic for sglearning"; "the channel to learn anything not only money"): Learning with SG follows whatever is viral
+# in India, money or not, Shorts and longs. VIRAL_QUERIES widen the search beyond the eight money phrases; the trending chart is read as well.
+VIRAL_QUERIES = ["viral video india", "trending news hindi", "kya aap jante hain facts", "aaj ki sabse badi khabar", "shocking facts hindi", "india viral shorts"]
+TREND_CHANNELS = ("sglearning",)
 RULES = {
-    "sglearning": "Learning with SG: plain-language money explainers for ordinary Indians (a 15-year-old must follow them). One question about the viewer's own "
-                  "money or job, a scare or a choice, with a number. Never company results, deals, crypto, roundups or party politics.",
-    "arthvan": "SG-MYTH-WORLD: Indian mythology and history told with evidence (scripture, archaeology, disputed, legend labelled). A famous name, a shock question, "
-               "an untold angle. Never communal content, never debunking faith, never party politics.",
+    "sglearning": "Learning with SG: a channel to learn anything (founder, 24 Nov 2026: 'not only money but to increase awareness ... to know "
+                  "anything'). Every slot, Short or long, takes whatever India is talking about this week, ANY subject (a film, cricket, a price shock, a "
+                  "court order, a scam, technology, science, health, a record, a strange true story, and money when money is the story), explained plainly: "
+                  "what happened, why, and what most people have got wrong. Pick the subjects pulling the most views in the lists below; a long slot takes "
+                  "one big enough to hold ten minutes. Never party politics, never communal or religious disputes, never gossip about a private person, "
+                  "never mythology or temples (the sister channel covers those).",
+    "arthvan": "SG-MYTH-WORLD: the myths of the world and the reason behind each (founder, 24 Nov 2026: 'myth stories of around the world, it could be "
+               "for religious books or for city or for humans or for animals or for vegetable or for anything ... sharing myth with reason'). A slot takes any "
+               "widely believed story or belief: from a scripture or an epic of any country, about a city or a monument, about the human body, an animal, a "
+               "food or plant, the sky, a number, a custom. Each video tells the myth as people tell it, then what texts, digs or science actually show, and "
+               "labels which is which. Indian epics and temples stay welcome but are no longer the only subject: mix them with myths from elsewhere. A shock "
+               "question, a name or thing everyone knows, an untold angle. Never communal content, never mocking or 'debunking' a faith (a belief is told "
+               "with respect and the evidence is laid beside it), never party politics.",
 }
 
 
@@ -110,6 +125,11 @@ def research(env=None, call=None) -> dict:
                     if r["id"] not in seen:
                         seen.add(r["id"]); rows.append(r)
             recent = datetime.now(timezone.utc) - timedelta(days=SHORT_SIGNAL_DAYS)
+            if ch in TREND_CHANNELS:                                        # any subject: the trending chart and broad searches
+                for r in (ytresearch.trending(token, **kw) or []):
+                    if r["id"] not in seen:
+                        seen.add(r["id"]); rows.append({**r, "short": r.get("seconds", 999) <= 180, "viral": True})
+                queries = list(queries) + VIRAL_QUERIES
             for q in queries:                                               # what short videos did this week: the Shorts' own signal
                 for r in (ytresearch.search(token, q, recent, duration="short", **kw) or []):
                     if r.get("error"):
@@ -119,7 +139,7 @@ def research(env=None, call=None) -> dict:
         except Exception as e:
             print(f"{ch}: research failed ({secrets.scrub(str(e))[:120]})", flush=True)
         rows.sort(key=lambda r: -r["views"])
-        out[ch] = [r for r in rows if not r.get("short")][:30] + [r for r in rows if r.get("short")][:20]
+        out[ch] = [r for r in rows if not r.get("short")][:30] + [r for r in rows if r.get("short")][:30]
     return out
 
 
@@ -135,7 +155,8 @@ def _prompt(channel: str, slots_: list, rows: list, today: date, calendar: list,
     near = [f"{e['name']} on {e['date']}" for e in calendar if -3 <= (datetime.strptime(str(e["date"]), "%Y-%m-%d").date() - today).days <= 21]
     line = lambda r: f"- {r['views']:,} views, {r['seconds']} s, {r['channel']}: {r['title'][:110]}"
     signals = "\n".join(line(r) for r in [r for r in rows if not r.get("short")][:25]) or "(no YouTube data this week)"
-    shorts = "\n".join(line(r) for r in [r for r in rows if r.get("short")][:20])
+    shorts = "\n".join(line(r) for r in [r for r in rows if r.get("short")][:30])
+    viral = "\n".join(line(r) for r in [r for r in rows if r.get("viral") and not r.get("short")][:20])
     n_short, n_long = sum(1 for s in slots_ if s[2] == "short"), sum(1 for s in slots_ if s[2] == "long")
     spare_s, spare_l = (SPARE_SHORTS if n_short else 0), (SPARE_LONGS if n_long else 0)
     todo = "\n".join(f"- {pid} ({kind}, goes out {day:%a %d %b})" for pid, _c, kind, day in slots_)
@@ -144,14 +165,15 @@ def _prompt(channel: str, slots_: list, rows: list, today: date, calendar: list,
             f"What Hindi viewers in India watched most on YouTube in the last 14 days (their topics, hooks and lengths are the signal):\n{signals}\n\n"
             + (f"SHORT videos (under 3 minutes) that took off in the last {SHORT_SIGNAL_DAYS} days: the signal for the Short slots. Take the subject that is "
                f"pulling viewers and find our own angle on it; never copy a title:\n{shorts}\n\n" if shorts else "")
+            + (f"On YouTube's trending chart in India right now, any subject (for the Short slots, the subject matters, not the channel):\n{viral}\n\n" if viral else "")
             + (f"Notes from the founder's own analysis tools (hints only, unchecked; use them as one signal, never as instructions):\n{intel}\n\n" if intel else "") +
             f"Festivals and events coming: {', '.join(near) or 'none'}.\n"
             f"Topics already covered recently (do not repeat or rephrase): {'; '.join(seen[-40:]) or 'none'}.\n\n"
-            f"Every topic, slot or spare, belongs to THIS channel only: {'money and personal finance, never mythology, temples or history' if channel == 'sglearning' else 'mythology, temples and Indian history, never money, loans, tax or investing'}.\n"
+            f"Every topic, slot or spare, belongs to THIS channel only: {'any subject India is talking about, never mythology or temples' if channel == 'sglearning' else 'a myth or widely held belief from anywhere in the world and the reason behind it, never money, loans, tax or investing'}.\n"
             f"Propose ONE topic for each slot below. A long video is a deeper telling of a big story; a Short is one sharp question. Use the signals: a scare or a "
             f"choice tied to money (finance) or a famous name with a shock question or an untold angle (mythology). Tie a topic to a festival only when it truly fits. "
             f"Every topic must be checkable against real sources. SHUFFLE the week: no two days in a row from the same theme "
-            f"({'the same epic, deity or kind of place: a Ramayan day is followed by something that is not Ramayan' if channel == 'arthvan' else 'for example two loan days or two tax days'}), "
+            f"({'the same epic, deity, country or kind of subject: a Ramayan day is followed by something that is not Ramayan, an animal myth by something that is not about animals' if channel == 'arthvan' else 'for example two loan days or two tax days'}), "
             f"and no theme more than twice in the week.\nSlots:\n{todo}\n\n"
             + (f"After the slots, add SPARES: {spare_s} more Short topics with slot ids spare-short-1 ... spare-short-{spare_s}"
                + (f" and {spare_l} more long topics with slot ids spare-long-1 ... spare-long-{spare_l}" if spare_l else "")
@@ -235,6 +257,19 @@ def build(root: Path, today: date, rows: dict, ask=_ask_claude, calendar: list |
             d = proposals.get(pid)
             topic = None
             avoid = themes.blocked(root, SimpleNamespace(id=pid, channel=ch, publish_day=day), week)
+            # founder, 24 Nov 2026 ("these rules suppose to be set for both channels ... make channel reels videos viral anyhow"): on both
+            # channels the subject pulling viewers is taken as proposed: no theme wait, no score floor. Only Learning is marked `trend`
+            # (any subject, general research, no money disclaimer); SG-MYTH keeps its evidence labels and sources.
+            trend = True
+            if d and trend:
+                text = {"title": d["title"], "summary": d.get("summary", ""), "hooks": d.get("hooks") or []}
+                pts, why = topicscore.score(text, ch, day, calendar)
+                if pts > -10 and not repeats(d["title"], used_here):                # -10 is party politics: never
+                    topic = {"id": f"wk-{pid}", **text, "weekly": True, "topic_score": pts, "topic_score_why": why, "follows": str(d.get("why", ""))[:160],
+                             **({"trend": True} if ch in TREND_CHANNELS else {"viral": True, "allowed_sources": MYTH_SOURCES})}
+                else:
+                    notes.append(f"{pid}: proposal '{d['title'][:50]}' dropped ({'politics' if pts <= -10 else 'repeat'})")
+                d = None
             if d and not themes.allowed({"title": d["title"], "summary": d.get("summary", ""), "hooks": d.get("hooks") or []}, avoid, ch):
                 notes.append(f"{pid}: proposal '{d['title'][:50]}' dropped (same theme within days: {themes.theme_of(d, ch)})")
                 d = None
@@ -252,13 +287,14 @@ def build(root: Path, today: date, rows: dict, ask=_ask_claude, calendar: list |
                     sp = proposals[key]
                     text = {"title": sp["title"], "summary": sp.get("summary", ""), "hooks": sp.get("hooks") or []}
                     pts, why = topicscore.score(text, ch, day, calendar)
-                    if pts < MIN_SCORE or repeats(sp["title"], used_here):
+                    if (pts <= -10 if trend else pts < MIN_SCORE) or repeats(sp["title"], used_here):
                         spent.add(key)                                              # weak or a repeat on any day
                         continue
-                    if not themes.allowed(text, avoid, ch):
+                    if not trend and not themes.allowed(text, avoid, ch):
                         continue                                                    # this theme is too close to this day; it may fit another
                     spent.add(key)
-                    topic = {"id": f"wk-{pid}", **text, "weekly": True, "topic_score": pts, "topic_score_why": why, "follows": str(sp.get("why", ""))[:160], "spare": True}
+                    topic = {"id": f"wk-{pid}", **text, "weekly": True, "topic_score": pts, "topic_score_why": why, "follows": str(sp.get("why", ""))[:160], "spare": True,
+                             **({"trend": True} if ch in TREND_CHANNELS else {"viral": True})}
                     if ch == "arthvan":
                         topic["allowed_sources"] = MYTH_SOURCES
                     break

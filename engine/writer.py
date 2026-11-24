@@ -212,6 +212,8 @@ def claude_params(piece, sheet, library, hashtags, formula=None) -> dict:
         system += lang.english_rules()
     if opening.is_trial(piece):
         system += opening.addendum(piece.channel, kind=piece.kind)
+    if (piece.topic or {}).get("trend"):                      # founder, 24 Nov 2026: any viral subject on Learning with SG Shorts
+        system += (CONTENT_DIR / "prompts" / f"trend-{piece.channel}.txt").read_text()
     return {"model": model_for(piece), "max_tokens": MAX_TOKENS,
             "output_config": {"effort": "high", "format": {"type": "json_schema", "schema": schema.api_schema(schema.PIECE_SCHEMA)}},
             "system": [{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],

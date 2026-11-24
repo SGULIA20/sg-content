@@ -35,12 +35,14 @@ class ResearchError(Exception):
 
 def _prompt(channel: str, topic: dict, today: date, root: Path = CONTENT_DIR) -> str:
     name = "research-finance.txt" if channel == "sglearning" else "research-myth.txt"
+    if topic.get("trend"):                                       # 24 Nov 2026: a viral subject of any kind, not a money item
+        name = "research-trend.txt"
     tpl = (Path(root) / "prompts" / name).read_text()
     fields = {"today": today.isoformat(), "title": topic.get("title") or topic.get("title_hi", ""), "link": topic.get("link", ""),
               "summary": topic.get("summary", ""), "place": topic.get("place", ""), "hooks": "; ".join(topic.get("hooks", [])),
               "notes": topic.get("notes", ""), "allowed_sources": ", ".join(str(s) for s in topic.get("allowed_sources", []))}
     text = tpl.format(**fields)
-    if channel == "sglearning" and not topic.get("link"):
+    if channel == "sglearning" and not topic.get("link") and not topic.get("trend"):
         text += STABLE_SOURCES                                   # a history or evergreen topic: no article to open, so name pages that exist
     return text
 

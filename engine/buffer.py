@@ -7,6 +7,10 @@ from . import config
 from .config import CHANNELS, ROOT
 
 DONE = {"uploaded", "posted"}
+# founder, 24 Nov 2026: "no need to reserve 7 days ... lets make it for 2 days so that trending topics can be presented immediately to users
+# for SG learning channel". Days counted from today: 3 = today, tomorrow and the day after. A long needs his clip and thumbnail and most of
+# a day's voice quota, so it is made four days ahead. Channels not named keep the seven-day buffer.
+HORIZON = {"sglearning": {"short": 3, "long": 5}}
 
 
 def long_for_short(channel: str, day: date) -> str:
@@ -27,10 +31,11 @@ def needed(root: Path = ROOT, today_ist: date | None = None, horizon_short: int 
     done = {p.id for p in pieces.list_all(root) if p.status in DONE}
     longs, shorts = [], []
     for ch in CHANNELS:
-        for day in slots.publish_dates(ch, "long", today_ist, horizon_short + horizon_long):
+        own = HORIZON.get(ch, {})
+        for day in slots.publish_dates(ch, "long", today_ist, own.get("long", horizon_short + horizon_long)):
             if slots.piece_id(day, ch, "long") not in done:
                 longs.append((day, ch, "long"))
-        for day in slots.publish_dates(ch, "short", today_ist, horizon_short):
+        for day in slots.publish_dates(ch, "short", today_ist, own.get("short", horizon_short)):
             if slots.piece_id(day, ch, "short") not in done:
                 shorts.append((day, ch, "short"))
     longs, shorts = sorted(longs), sorted(shorts)
