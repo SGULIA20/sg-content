@@ -37,8 +37,30 @@ def test_the_credit_goes_wherever_the_video_goes():
     assert "Creative Commons: By Attribution 4.0" in full and "creativecommons.org/licenses/by/4.0" in full
     p.script["captions"]["threads"]["text"] = "x" * 480
     assert publish.threads_text(p).endswith("CC BY 4.0") and len(publish.threads_text(p)) <= 500                   # a long post is trimmed, the credit stays
-    mix = storyframe.track_mix(58.0)
-    assert "[4:a]" not in mix and "I=-22" in mix and "sidechaincompress" in mix                                   # music only, well under the voice
+    mix = storyframe.track_mix(58.0, speech_end=55.0)
+    assert "[4:a]" not in mix and "I=-22" in mix and "sidechaincompress" in mix and "gt(t,55.000)" in mix          # music only, well under the voice
+
+
+def test_the_engines_own_sound_check_still_passes_with_a_track_under_the_voice(tmp_path, monkeypatch):
+    """24 Nov 2026: the first music mix kept the track at full level under the end card, and qa.narration_intact, which tells a lost last
+    word from a kept one by the drop after the narration, turned the video down. A real mix is built here and put through that check."""
+    import subprocess
+    from engine import music, qa
+    total, speech_end = 12.0, 9.0
+    voice, song = tmp_path / "voice.wav", tmp_path / "song.wav"
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "sine=frequency=300:duration=9", "-af",
+                    "volume='if(lt(mod(t,3),2.4),1,0)':eval=frame", str(voice)], check=True)                       # speech-like bursts, the last ending at 8.4 s
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "anoisesrc=d=30:c=pink:a=0.5", str(song)], check=True)   # a dense, loud "track"
+    bed = music.bed("light", total + 5, tmp_path)
+    out = tmp_path / "mix.mp4"
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", f"color=c=black:s=320x240:d={total}", "-i", str(voice), "-stream_loop", "-1", "-i", str(bed),
+                    "-stream_loop", "-1", "-i", str(song), "-filter_complex", storyframe.track_mix(total, speech_end=speech_end),
+                    "-map", "0:v", "-map", "[aout]", "-t", str(total), "-c:a", "aac", str(out)], check=True, timeout=120)
+    assert qa.narration_intact(out, speech_end=8.4)
+    monkeypatch.delenv("SG_MUSIC", raising=False)
+    assert tracks.on() is True
+    monkeypatch.setenv("SG_MUSIC", "0")
+    assert tracks.on() is False
 
 
 def test_a_video_about_a_disaster_gets_a_quiet_track_and_learning_has_no_dance_music():
