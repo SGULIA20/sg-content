@@ -1182,6 +1182,7 @@ def pending_thumbs(root: Path) -> list:
 def set_thumbs(root: Path, env=None, notify=None, set_thumb=None, token_for=None) -> list:
     """Puts each pending founder thumbnail on its YouTube video; records the file's hash so it is done once per file."""
     from . import youtube
+    from . import once
     notify = notify or (lambda t: None)
     out = []
     for p in pending_thumbs(root):
@@ -1194,8 +1195,8 @@ def set_thumbs(root: Path, env=None, notify=None, set_thumb=None, token_for=None
                 shutil.copy2(jpg, Path(root) / "out" / p.id / "thumb.jpg")
             pieces.save(p, root)
             notify(f"🖼 {p.id}: your thumbnail is set on YouTube ({p.ids['yt_id']}).")
-        else:
-            notify(f"🖼 {p.id}: YouTube refused the thumbnail (JPG under 2 MB, 1280x720?).")
+        elif once.fresh(f"thumb-refused:{p.id}", _sha(jpg), hours=72, root=root):       # 24 Nov 2026: this was sent every five minutes
+            notify(f"🖼 {p.id}: YouTube refused the thumbnail (JPG under 2 MB, 1280x720?). Send another and I try again.")
         out.append((p.id, "thumb-set" if ok else "thumb-refused"))
     return out
 
@@ -1251,18 +1252,21 @@ def needed(root: Path, now: datetime | None = None) -> bool:
 def sweep(root: Path, deps, now: datetime | None = None, notify=None, transcribe=None, compose_fn=None, env=None, delete=None, find=None,
           set_thumb=None, token_for=None) -> list:
     """Waiting pieces are collected; scheduled pieces whose clip has come are re-uploaded with it; founder thumbnails are set. Never raises."""
+    from . import once
     now = now or datetime.now(timezone.utc)
     out = []
     try:
         out += set_thumbs(root, env, notify, set_thumb, token_for)
     except Exception as e:
-        (notify or print)(f"🖼 thumbnails: {type(e).__name__}: {secrets.scrub(str(e))[:160]}")
+        if once.fresh("thumbs-error", type(e).__name__, root=root):                       # 24 Nov 2026: once a day, not every five minutes
+            (notify or print)(f"🖼 thumbnails: {type(e).__name__}: {secrets.scrub(str(e))[:160]}")
     for p in waiting(root):
         try:
             action, p = collect(p, deps, root, now, notify, transcribe, compose_fn)
         except Exception as e:
             action = f"failed: {type(e).__name__}: {secrets.scrub(str(e))[:160]}"
-            (notify or print)(f"🎬 {p.id}: intro step failed ({action}); it stays waiting.")
+            if once.fresh(f"intro-failed:{p.id}", action[:60], root=root):
+                (notify or print)(f"🎬 {p.id}: intro step failed ({action}); it stays waiting.")
         out.append((p.id, action))
     for p in scheduled(root, now):
         if not _usable_clip(root, p):
@@ -1271,7 +1275,8 @@ def sweep(root: Path, deps, now: datetime | None = None, notify=None, transcribe
             action = redo_piece(p, deps, root, env, notify, transcribe, compose_fn, delete, find)
         except Exception as e:
             action = f"failed: {type(e).__name__}: {secrets.scrub(str(e))[:160]}"
-            (notify or print)(f"🎬 {p.id}: re-upload with the intro failed ({action}); the scheduled version stays.")
+            if once.fresh(f"redo-failed:{p.id}", action[:60], root=root):
+                (notify or print)(f"🎬 {p.id}: re-upload with the intro failed ({action}); the scheduled version stays.")
         out.append((p.id, action))
     return out
 

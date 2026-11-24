@@ -172,8 +172,10 @@ def run(root: Path = ROOT, now_utc: datetime | None = None, env=None, notify=tel
         rows = search(cid, "SELECT campaign.id, campaign.status FROM campaign WHERE campaign.status = 'ENABLED'", tok, cfg, call)
         if rows:                                                # no limits for this currency: never let anything run unwatched
             pause(cid, [str(r["campaign"]["id"]) for r in rows], tok, cfg, call)
-        notify(f"⏸ Ads watch: the account is in {cur or 'an unknown currency'}, which has no limits in content/ads.json; "
-               f"paused {len(rows)} campaign(s).")
+        from . import once
+        if rows or once.fresh("ads-no-limits", cur):                # 24 Nov 2026: four times a day; now when it pauses something, else once a day
+            notify(f"⏸ Ads watch: the account is in {cur or 'an unknown currency'}, which has no limits in content/ads.json; "
+                   f"paused {len(rows)} campaign(s).")
         return 1
     rows_test = campaigns(cid, start, today, tok, cfg, call)
     rows_month = campaigns(cid, today.replace(day=1), today, tok, cfg, call)
@@ -297,7 +299,9 @@ def main(argv=None) -> int:
             return status()
         return run(report="--report" in argv)
     except Exception as e:
-        telegram.send(f"📣 Ads watch failed: {secrets.scrub(str(e))[:200]}")
+        from . import once
+        if once.fresh("ads-failed", type(e).__name__):              # once a day, not on each of the four runs
+            telegram.send(f"📣 Ads watch failed: {secrets.scrub(str(e))[:200]}")
         return 1
 
 
