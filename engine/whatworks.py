@@ -169,7 +169,9 @@ def main(argv=None) -> int:
         LESSONS.write_text(json.dumps({"end": end.isoformat(), **learnt}, indent=1, ensure_ascii=False))
     print(out)
     if "--send" in argv:
-        telegram.send(out)
+        from . import monday
+        if not monday.hold("whatworks", out):                         # 24 Nov 2026: on Monday the three reports go out as one message
+            telegram.send(out)
     return 0
 
 

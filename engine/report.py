@@ -102,7 +102,9 @@ def main(argv=None) -> int:
     out = text(data)
     (ROOT / "logs").mkdir(parents=True, exist_ok=True)
     (ROOT / "logs" / "weekly.json").write_text(json.dumps({"start": start.isoformat(), "end": end.isoformat(), "data": data}, indent=1, ensure_ascii=False))
-    telegram.send(out)
+    from . import monday
+    if not monday.hold("report", out):                                # 24 Nov 2026: on Monday the three reports go out as one message
+        telegram.send(out)
     print(out)
     return 0
 

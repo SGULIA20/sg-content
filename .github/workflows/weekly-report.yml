@@ -11,6 +11,8 @@ permissions:
 jobs:
   report:
     runs-on: ubuntu-latest
+    env:
+      SG_REPORT_DIR: /tmp/monday-report      # the three reports write here and stay silent; the last step sends one message
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
@@ -59,6 +61,13 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python -m engine.postmortem
+      - name: One Monday report (founder, 24 Nov 2026 - the three reports above are merged into a single Telegram message)
+        if: always()
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m engine.monday
       - run: |
           git add -A logs || true
           git diff --cached --quiet || (git commit -m "weekly report [skip ci]" && git push)
