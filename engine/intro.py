@@ -435,6 +435,8 @@ ERA = ("If the scene shows the past, it is ancient India: Indian people in dhoti
 BRIGHT = ("Time of day and light, overriding anything darker in the setting above: bright golden-hour sunlight or clear daylight, a blue or "
           "golden sky, warm saturated colours, his face and clothes fully lit; never night, dusk, storm clouds, lightning, fog, grey overcast, "
           "a dark or desaturated look")
+# founder, 24 Nov 2026: "founder should be without tilak on face in prompt", then "No tilak only for sg learning only" (SG-MYTH keeps it)
+FOREHEAD = "His forehead is clean and bare: no tilak, no bindi, no vermilion or sandal-paste mark, no dot or line of any colour on his face"
 MOTION = ("The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, "
           "light shifting); never a still, flat or heavily blurred backdrop")
 
@@ -500,6 +502,7 @@ def story_prompt(piece, p: dict) -> str:
     base, close = TONE[tone_for(p.get("text") or p.get("question") or "")]
     face = FACE.format(base=base, close=close)
     era = f" {ERA}." if piece.channel == "arthvan" else ""
+    forehead = f" {FOREHEAD}." if piece.channel == "sglearning" else ""     # founder, 24 Nov 2026: "No tilak only for sg learning only"
     return (f"{size}, about 8 seconds, photorealistic and cinematic, bright vivid colour. "
             f"Setting: {setting}. {BRIGHT}. {MOTION}.{era} "
             "Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four "
@@ -507,7 +510,7 @@ def story_prompt(piece, p: dict) -> str:
             "for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and "
             "on both sides; do not crop the top of his head. "
             "Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. "
-            f"SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing {outfit_for(piece)}. Speaks from the first frame, mouth matched "
+            f"SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing {outfit_for(piece)}.{forehead} Speaks from the first frame, mouth matched "
             f"to the words, steady eye contact with the lens. {face}. "
             "Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm "
             "toward the viewer on the last line; never limp, never hanging still by his sides. "
