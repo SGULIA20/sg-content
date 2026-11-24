@@ -236,6 +236,43 @@ def plan(piece, ask=_ask_claude) -> dict:
 HOOK_WORDS = (20, 23)                       # founder, 17 Nov 2026 ("yes, use this prompt"): every hook is 20-23 words, about 10 seconds
 HOOKS = 5
 HOOK_TRIES = 4
+# The hook tournament (founder, 24 Nov 2026: "Build the hook tournament next"; part of the December test). The writer used to give five
+# hooks and name its own favourite. It now writes a pool of HOOK_POOL, three simulated viewers score every one, and the five he is sent
+# are the five the panel rated highest, best first.
+HOOK_POOL = 12
+PANEL = """Three people are scrolling short videos on their phones in India. Each sees the opening line below spoken by a presenter in the first
+ten seconds of a video on a channel about {field}.
+
+- A: 22, scrolls fast, bored easily, stops only for something strange or shocking.
+- B: 41, a parent with little time, stops when a line touches their own life, family or money.
+- C: 33, sceptical, has heard every clickbait line, stops only when a line is specific and sounds true.
+
+For EACH line give each person's score from 1 to 10 for one question: "Do I stop scrolling AND want to hear the next sentence?"
+Judge only the line itself. A vague or generic line scores low with everyone; a line whose first three words carry the surprise scores high.
+Do not reward length or fancy words.
+
+Lines:
+{lines}
+
+Reply with JSON only: {{"scores": [{{"line": <number>, "a": <1-10>, "b": <1-10>, "c": <1-10>}}]}}"""
+
+
+def panel_scores(hooks: list, field: str, ask) -> dict:
+    """{hook: mean score of the three viewers}; {} when the panel cannot be read (the writer's own order is then kept)."""
+    import json as _json
+    try:
+        raw = ask(PANEL.format(field=field, lines="\n".join(f"{i}. {h}" for i, h in enumerate(hooks, 1))))
+        data = _json.loads(re.search(r"\{.*\}", raw, re.S).group(0))
+        out = {}
+        for row in data.get("scores") or []:
+            i = int(row.get("line") or 0) - 1
+            marks = [float(row[k]) for k in ("a", "b", "c") if isinstance(row.get(k), (int, float))]
+            if 0 <= i < len(hooks) and len(marks) == 3:
+                out[hooks[i]] = round(sum(marks) / 3, 1)
+        return out if len(out) >= max(2, len(hooks) // 2) else {}
+    except Exception as e:
+        print(f"hook panel: no scores ({type(e).__name__}: {secrets.scrub(str(e))[:100]})", flush=True)
+        return {}
 
 # The founder's own brief for the opening hook (17 Nov 2026), kept in his words; only the language line and the reply format are added.
 HOOK_BRIEF = """Act as an expert YouTube Shorts scriptwriter specialising in {field}.
@@ -271,7 +308,7 @@ def _summary(piece) -> str:
     return f"Title: {script.get('title', '')}\n{body[:2200]}"
 
 
-def options(piece, first: dict, ask=_ask_claude) -> list:
+def options(piece, first: dict, ask=_ask_claude, panel=None) -> list:
     """[{"text", "question", "closing", "words"}], the strongest first: the opening hooks written to the founder's brief, each a whole
     line of 20-23 words with no fixed closing. He says whichever he likes; check() accepts any of them and the captions follow the one
     he said. When the writer gives fewer than two usable hooks, the planned line (the script's hook and a closing) is the only option."""
@@ -279,12 +316,16 @@ def options(piece, first: dict, ask=_ask_claude) -> list:
     from . import lang
     en = lang.english(piece)
     lo, hi = HOOK_WORDS
-    brief = HOOK_BRIEF.format(
-        field="the stories India is talking about this week" if (piece.topic or {}).get("trend")
-        else "money, personal finance and business stories for Indian households" if piece.channel == "sglearning"
-        else "myths of the world and the reason behind them: mythology, history, mysteries and untold stories",
-        tongue="plain Indian English (no Hindi words)" if en else "natural spoken Hinglish in Latin script",
-        n=HOOKS, lo=lo, hi=hi, summary=_summary(piece))
+    field = ("the stories the world is talking about this week" if (piece.topic or {}).get("trend")
+             else "money, personal finance and business stories for Indian households" if piece.channel == "sglearning"
+             else "myths of the world and the reason behind them: mythology, history, mysteries and untold stories")
+    live = ask is _ask_claude
+    if panel is None and live:                                        # production: the panel is a second short request; tests pass their own or none
+        from . import teaser
+        panel = teaser.intro_ask()
+    pool = HOOK_POOL if panel else HOOKS
+    brief = HOOK_BRIEF.format(field=field, tongue="plain Indian English (no Hindi words)" if en else "natural spoken Hinglish in Latin script",
+                              n=pool, lo=lo, hi=hi, summary=_summary(piece))
     # founder, 19 Nov 2026 ("why only 1 option ... we decided for 5 minimum"): one reply rarely has five hooks of the right length (the
     # writer miscounts words), and a failed or cut-off reply left the planned line alone. Asked again, with the misses named, until five fit.
     good, strongest, prompt = [], None, brief
@@ -304,15 +345,19 @@ def options(piece, first: dict, ask=_ask_claude) -> list:
         if strongest is None and best is not None and 0 <= best < len(hooks) and lo <= len(hooks[best].split()) <= hi:
             strongest = hooks[best]
         good += [h for h in hooks if lo <= len(h.split()) <= hi and h not in good]
-        if len(good) >= HOOKS:
+        if len(good) >= pool or (attempt >= 1 and len(good) >= HOOKS):   # a full pool, or enough to send after a second request
             break
         missed = [f'"{h}" ({len(h.split())} words)' for h in hooks if not lo <= len(h.split()) <= hi][:5]
         prompt = (brief + f"\n\nYou already wrote these and they are kept, do not repeat them: {_json.dumps(good, ensure_ascii=False)}.\n"
                   + (f"These were rejected for their word count: {'; '.join(missed)}.\n" if missed else "")
-                  + f"Write {HOOKS} MORE new hooks. Count every word of each hook before you answer: {lo} at least, {hi} at most.")
+                  + f"Write {max(HOOKS, pool - len(good))} MORE new hooks. Count every word of each hook before you answer: {lo} at least, {hi} at most.")
     if strongest in good:
         good.remove(strongest); good.insert(0, strongest)
-    out = [{"text": h, "question": h, "closing": "", "words": len(h.split())} for h in dict.fromkeys(good)][:HOOKS]
+    good = list(dict.fromkeys(good))
+    scores = panel_scores(good, field, panel) if panel and len(good) > HOOKS else {}
+    if scores:                                                        # the panel's five, best first; an unscored line goes last
+        good.sort(key=lambda h: -scores.get(h, 0.0))
+    out = [{"text": h, "question": h, "closing": "", "words": len(h.split()), **({"score": scores[h]} if h in scores else {})} for h in good][:HOOKS]
     if len(out) < 2:
         return [{"text": first["text"], "question": first["question"], "closing": first["closing"], "words": first["words"]}]
     return out
@@ -562,8 +607,10 @@ def request_text(piece, p: dict) -> str:
     kind = "Short" if piece.kind == "short" else "long video"
     opts = p.get("options") or [p]
     if len(opts) > 1:                                                 # founder, 17 Nov 2026: 2-3 lines to choose from
-        say = ("Say ONE of these, whichever you like (each 20-23 words, ~10 s; ⭐ = the writer's pick):\n"
-               + "\n".join(f"{k}. {'⭐ ' if k == 1 else ''}\"{o['text']}\"" for k, o in enumerate(opts, 1)))
+        scored = any(o.get("score") for o in opts)                    # 24 Nov 2026: the five are the best of twelve, rated by three simulated viewers
+        say = ("Say ONE of these, whichever you like (each 20-23 words, ~10 s; "
+               + ("the best five of twelve, scored out of 10 by a panel of three simulated viewers; ⭐ = their top pick):\n" if scored else "⭐ = the writer's pick):\n")
+               + "\n".join(f"{k}. {'⭐ ' if k == 1 else ''}\"{o['text']}\"" + (f" [{o['score']}]" if o.get("score") else "") for k, o in enumerate(opts, 1)))
     else:
         say = f"Say exactly ({p['words']} words, ~10 s):\n\"{p['text']}\""
     # 19 Nov 2026: with five hooks a long video's request ran to 4,750 characters and Telegram cut it at 4,000, so the thumbnail prompt
