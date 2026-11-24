@@ -141,6 +141,8 @@ def metadata(piece: Piece, publish_at_utc: datetime, env=None) -> dict:
     credits = sorted({sc["credit"] for sc in (piece.script or {}).get("scenes", []) if sc.get("credit")})
     if credits:
         parts.append("Photos:\n" + "\n".join(credits))
+    from . import tracks
+    parts.append(tracks.credit(piece.ids.get("music")))                  # 24 Nov 2026: the music's licence asks for this credit
     parts.append(SUBSCRIBE.get(piece.channel, ""))
     from .config import YOUTUBE_URLS
     parts.append("Learning with SG (paise ki kahaniyan): " + YOUTUBE_URLS["sglearning"] + "\nSG-MYTH-WORLD (itihaas aur mythology, sabut ke saath): " + YOUTUBE_URLS["arthvan"])

@@ -1,0 +1,428 @@
+{
+ "_note": "Tracks from incompetech.com (Kevin MacLeod), free under Creative Commons Attribution 4.0: every video that uses one carries the credit. Chosen from the site's own catalogue by its feel tags on 24 Nov 2026; the engine downloads a track when it builds a video and keeps no copy in this repo. Remove a line to stop using that track. 24 Nov 2026, after he heard the samples ('Motivator music looks like dancing music'): Learning with SG uses calm, bright explainer tracks only (no dance or party feel), picked by the site's own descriptions. 'sober' tracks go under a video about a disaster, an accident or a death, on either channel.",
+ "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/",
+ "sglearning": [
+  {
+   "title": "Inspired",
+   "filename": "Inspired.mp3",
+   "feel": [
+    "Bright",
+    "Calming",
+    "Relaxed",
+    "Uplifting"
+   ],
+   "bpm": 120
+  },
+  {
+   "title": "Easy Lemon",
+   "filename": "Easy Lemon.mp3",
+   "feel": [
+    "Bright",
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 82
+  },
+  {
+   "title": "Fretless",
+   "filename": "Fretless.mp3",
+   "feel": [
+    "Bright",
+    "Relaxed",
+    "Uplifting"
+   ],
+   "bpm": 100
+  },
+  {
+   "title": "Life of Riley",
+   "filename": "Life of Riley.mp3",
+   "feel": [
+    "Bright",
+    "Relaxed",
+    "Uplifting"
+   ],
+   "bpm": 102
+  },
+  {
+   "title": "Sunshine",
+   "filename": "Sunshine A.mp3",
+   "feel": [
+    "Bright",
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 88
+  },
+  {
+   "title": "Sunshine (version 2)",
+   "filename": "Sunshine ver 2.mp3",
+   "feel": [
+    "Bright",
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 79
+  },
+  {
+   "title": "Somewhere Sunny (ver 2)",
+   "filename": "Somewhere Sunny (ver 2).mp3",
+   "feel": [
+    "Bright",
+    "Calming",
+    "Relaxed",
+    "Uplifting"
+   ],
+   "bpm": 106
+  },
+  {
+   "title": "Almost Bliss",
+   "filename": "Almost Bliss.mp3",
+   "feel": [
+    "Bright",
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 90
+  },
+  {
+   "title": "Dream Culture",
+   "filename": "Dream Culture.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed",
+    "Uplifting"
+   ],
+   "bpm": 70
+  },
+  {
+   "title": "Dreamer",
+   "filename": "Dreamer.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 100
+  },
+  {
+   "title": "Cherry Blossom",
+   "filename": "Cherry Blossom.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 100
+  },
+  {
+   "title": "Jellyfish in Space",
+   "filename": "Jellyfish in Space.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 100
+  },
+  {
+   "title": "Thinking of You",
+   "filename": "Thinking of You.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 72
+  },
+  {
+   "title": "Clear Air",
+   "filename": "Clear Air.mp3",
+   "feel": [
+    "Bright",
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 68
+  },
+  {
+   "title": "Numinous Shine",
+   "filename": "Numinous Shine.mp3",
+   "feel": [
+    "Bright",
+    "Relaxed",
+    "Uplifting"
+   ],
+   "bpm": 68
+  },
+  {
+   "title": "Deliberate Thought",
+   "filename": "Deliberate Thought.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 69
+  }
+ ],
+ "arthvan": [
+  {
+   "title": "Constance",
+   "filename": "Constance.mp3",
+   "feel": [
+    "Action",
+    "Dark",
+    "Epic",
+    "Intense",
+    "Mysterious",
+    "Suspenseful"
+   ],
+   "bpm": 83,
+   "seconds": 140
+  },
+  {
+   "title": "Nerves",
+   "filename": "Nerves.mp3",
+   "feel": [
+    "Action",
+    "Dark",
+    "Eerie",
+    "Epic",
+    "Intense",
+    "Suspenseful"
+   ],
+   "bpm": 135,
+   "seconds": 172
+  },
+  {
+   "title": "Colossus",
+   "filename": "Colossus.mp3",
+   "feel": [
+    "Action",
+    "Dark",
+    "Epic",
+    "Intense"
+   ],
+   "bpm": 86,
+   "seconds": 271
+  },
+  {
+   "title": "Devastation and Revenge",
+   "filename": "Devastation and Revenge.mp3",
+   "feel": [
+    "Eerie",
+    "Epic",
+    "Intense",
+    "Mystical",
+    "Somber",
+    "Suspenseful"
+   ],
+   "bpm": 114,
+   "seconds": 185
+  },
+  {
+   "title": "Firesong",
+   "filename": "Firesong.mp3",
+   "feel": [
+    "Dark",
+    "Driving",
+    "Epic",
+    "Mysterious",
+    "Mystical"
+   ],
+   "bpm": 93,
+   "seconds": 213
+  },
+  {
+   "title": "Gloom Horizon",
+   "filename": "Gloom Horizon.mp3",
+   "feel": [
+    "Dark",
+    "Intense",
+    "Mysterious",
+    "Suspenseful"
+   ],
+   "bpm": 100,
+   "seconds": 128
+  },
+  {
+   "title": "Hitman",
+   "filename": "Hitman.mp3",
+   "feel": [
+    "Action",
+    "Dark",
+    "Driving",
+    "Epic",
+    "Intense"
+   ],
+   "bpm": 76,
+   "seconds": 201
+  },
+  {
+   "title": "Impending Boom",
+   "filename": "Impending Boom.mp3",
+   "feel": [
+    "Driving",
+    "Epic",
+    "Intense",
+    "Mysterious",
+    "Suspenseful"
+   ],
+   "bpm": 60,
+   "seconds": 157
+  },
+  {
+   "title": "Ossuary 4 - Animate",
+   "filename": "Ossuary 4 - Animate.mp3",
+   "feel": [
+    "Action",
+    "Dark",
+    "Intense",
+    "Mysterious"
+   ],
+   "bpm": 102,
+   "seconds": 197
+  },
+  {
+   "title": "Rising Game",
+   "filename": "Rising Game.mp3",
+   "feel": [
+    "Dark",
+    "Driving",
+    "Epic",
+    "Grooving",
+    "Intense",
+    "Mysterious"
+   ],
+   "bpm": 112,
+   "seconds": 112
+  },
+  {
+   "title": "Rynos Theme",
+   "filename": "Rynos Theme.mp3",
+   "feel": [
+    "Action",
+    "Epic",
+    "Intense",
+    "Suspenseful"
+   ],
+   "bpm": 128,
+   "seconds": 186
+  },
+  {
+   "title": "Serpentine Trek",
+   "filename": "Serpentine Trek.mp3",
+   "feel": [
+    "Dark",
+    "Eerie",
+    "Epic",
+    "Intense",
+    "Suspenseful"
+   ],
+   "bpm": 75,
+   "seconds": 107
+  },
+  {
+   "title": "The Descent",
+   "filename": "The Descent.mp3",
+   "feel": [
+    "Action",
+    "Dark",
+    "Driving",
+    "Epic",
+    "Intense"
+   ],
+   "bpm": 103,
+   "seconds": 192
+  },
+  {
+   "title": "Truth of the Legend",
+   "filename": "Truth of the Legend.mp3",
+   "feel": [
+    "Action",
+    "Dark",
+    "Driving",
+    "Epic",
+    "Intense"
+   ],
+   "bpm": 132,
+   "seconds": 93
+  },
+  {
+   "title": "Crusade",
+   "filename": "Crusade.mp3",
+   "feel": [
+    "Dark",
+    "Epic",
+    "Somber",
+    "Suspenseful"
+   ],
+   "bpm": 89,
+   "seconds": 199
+  },
+  {
+   "title": "Darkness is Coming",
+   "filename": "Darkness is Coming.mp3",
+   "feel": [
+    "Dark",
+    "Eerie",
+    "Epic",
+    "Intense"
+   ],
+   "bpm": 73,
+   "seconds": 171
+  }
+ ],
+ "sober": [
+  {
+   "title": "Thinking of You",
+   "filename": "Thinking of You.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 72
+  },
+  {
+   "title": "Clear Air",
+   "filename": "Clear Air.mp3",
+   "feel": [
+    "Bright",
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 68
+  },
+  {
+   "title": "Windswept",
+   "filename": "Windswept.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 79
+  },
+  {
+   "title": "Water Lily",
+   "filename": "Water Lily.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 62
+  },
+  {
+   "title": "Avec Soin",
+   "filename": "Avec Soin.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 64
+  },
+  {
+   "title": "Clear Waters",
+   "filename": "Clear Waters.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 96
+  }
+ ]
+}

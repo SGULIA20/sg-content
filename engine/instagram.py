@@ -122,6 +122,11 @@ def cover_url(piece: Piece, repo: str, head=None) -> str:
     return latest if _serves(latest, head) else resolved_media_url(piece, "cover.jpg", repo, head)
 
 
+def _music_credit(piece) -> str:
+    from . import tracks
+    return tracks.credit(piece.ids.get("music"), short=True)             # 24 Nov 2026: the music's licence asks for the credit wherever the video goes
+
+
 def caption_text(piece: Piece) -> str:
     from .config import VOICE_CREDIT, YOUTUBE_URLS
     ig = (piece.script or {}).get("captions", {}).get("instagram", {})
@@ -130,6 +135,7 @@ def caption_text(piece: Piece) -> str:
     photos = sorted({sc["credit"] for sc in (piece.script or {}).get("scenes", []) if sc.get("credit")})     # licence: the photographer is named
     parts = ([ig.get("caption", "").strip()] + ([f"▶ Poori videos YouTube par: {link}"] if link else []) + ([ask] if ask else [])
              + ([("Photo: " + "; ".join(photos))] if photos else []) + ([VOICE_CREDIT[piece.channel]] if VOICE_CREDIT.get(piece.channel) else [])
+             + [_music_credit(piece)]
              + [" ".join(ig.get("hashtags", []))])
     return "\n\n".join(p for p in parts if p).strip()
 
