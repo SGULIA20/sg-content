@@ -1,271 +1,227 @@
 {
- "week_of": "2026-11-23",
- "generated": "2026-11-23T13:28:26+00:00",
+ "week_of": "2026-11-24",
+ "generated": "2026-11-24T16:01:34+00:00",
  "entries": {
-  "2026-11-30-sglearning-short": {
-   "id": "wk-2026-11-30-sglearning-short",
-   "title": "PAN-Aadhaar link nahi kiya to PAN band ho jaata hai?",
-   "summary": "Explains what happens to an unlinked PAN, the fee, higher TDS and how to check status on the income tax portal. Check the current deadline rules and the fee.",
-   "hooks": [
-    "PAN kaam karna band kar de to kya-kya rukta hai?",
-    "Link status 1 minute mein kaise dekhein?"
-   ],
-   "weekly": true,
-   "topic_score": 7,
-   "topic_score_why": [
-    "+1 touches the viewer's own money (in the summary)",
-    "+3 a scare or a crash",
-    "+1 a choice the viewer faces",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "follows": "A direct consumer risk, which suits Shorts. Starts with a personal loss rather than a vague premise.",
-   "spare": true
-  },
   "2026-12-01-sglearning-short": {
    "id": "wk-2026-12-01-sglearning-short",
-   "title": "Car insurance mein zero depreciation lena zaroori hai kya?",
-   "summary": "Shows how depreciation on parts reduces a claim, with a Rs 80,000 repair example for a 4-year-old car. Compares the add-on premium with the possible loss. Check the IRDAI depreciation schedule and real quotes.",
+   "title": "Sona sasta hua, to kya ab kharidna sahi hai?",
+   "summary": "Explains why gold and silver fell sharply in 2026, how US inflation and interest-rate expectations move gold, and why a fall does not guarantee a bottom. Check: recent price levels, the US CPI release, Fed rate expectations.",
    "hooks": [
-    "Claim 80,000 ka tha, company ne kitna diya?",
-    "Zero dep ke liye extra premium sahi hai?"
+    "Sona gira, to kya aapko jaldi karni chahiye?",
+    "US ki mehngai ka aapke gold se kya connection hai?"
    ],
    "weekly": true,
-   "topic_score": 6,
+   "topic_score": 5,
    "topic_score_why": [
     "+3 touches the viewer's own money",
     "+1 a choice the viewer faces",
-    "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Car cost videos pull Shorts viewers (Creta and Ace on-road price Shorts), and the question is about the viewer's own money.",
-   "spare": true
+   "follows": "Gold-crash videos dominate the 14-day Hindi list (6M, 5M, 4.5M views). The hook is a direct consumer choice.",
+   "trend": true
   },
   "2026-12-02-sglearning-long": {
    "id": "wk-2026-12-02-sglearning-long",
-   "title": "2,000 rupaye ki SIP se 50,000 ki pension, sach ya jhooth?",
-   "summary": "Tests the claim with real return assumptions, inflation and an SWP, showing the corpus needed for Rs 50,000 a month. Check the math, the tax on withdrawals and the realistic return ranges.",
+   "title": "Bhopal gas kaand: us raat asal mein kya hua tha?",
+   "summary": "A ten-minute retelling of 2-3 December 1984. Covers the MIC leak at the Union Carbide plant, the safety systems that failed, what the investigations found, and the common myths. Check: the death toll range, the cause findings, court outcomes.",
    "hooks": [
-    "2,000 ki SIP se 50,000 mahina milna kitna realistic hai?",
-    "Inflation ke baad 25 saal baad 50,000 ki keemat kitni hogi?"
+    "Ek tank se zehreeli gas kaise poore sheher mein phail gayi?",
+    "Kya yeh sirf ek haadsa tha, ya chetavani pehle hi mil chuki thi?"
    ],
    "weekly": true,
-   "topic_score": 6,
+   "topic_score": 2,
    "topic_score_why": [
-    "+3 touches the viewer's own money",
     "+1 a choice the viewer faces",
-    "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "A short on this claim drew 43K views, and viewers also watch SIP-calculation videos.",
-   "spare": true
+   "follows": "The anniversary falls on 2-3 December. It is a true story, not politics, with a strong untold angle.",
+   "trend": true
   },
   "2026-12-02-sglearning-short": {
-   "id": "mh-2018-pnb-nirav",
-   "theme": "scam",
-   "category": "scam",
-   "title": "PNB ka 13,000 crore: ek letter se bank kaise loota",
-   "summary": "The 2018 PNB fraud: letters of undertaking issued without entries in the core banking system, foreign branches lending against them, the jeweller who left the country. How a public bank's controls failed and what it meant for the bank's depositors and shareholders.",
+   "id": "wk-2026-12-02-sglearning-short",
+   "title": "No-cost EMI mein cost kahan chhupi hai?",
+   "summary": "Shows how a no-cost EMI hides its cost through a processing fee, GST on the interest, and a lost cash discount. Check: RBI's guidance on no-cost EMI, how the bank's interest is split out, and a sample calculation.",
    "hooks": [
-    "Ek bank branch se 13,000 crore bahar kaise gaye?",
-    "LoU kya hota hai, aur usne bank ko kaise dubaya?"
-   ],
-   "history": true,
-   "topic_score": 9,
-   "topic_score_why": [
-    "+3 touches the viewer's own money",
-    "+3 a scare or a crash",
-    "+1 a choice the viewer faces",
-    "+1 a concrete number",
-    "+1 asks a question"
+    "Zero interest likha hai, phir bhi aap zyada kyun de rahe hain?",
+    "Cash discount aur EMI mein se asli sasta kaun sa hai?"
    ],
    "weekly": true,
-   "from_bank": true
+   "topic_score": 5,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
+    "+1 a choice the viewer faces",
+    "+1 asks a question"
+   ],
+   "follows": "The founder's analysis tool suggested it. Shorts that open on a direct consumer saving held viewers best (68% stayed).",
+   "trend": true
   },
   "2026-12-03-sglearning-short": {
-   "id": "mh-jet-airways",
-   "theme": "business",
-   "category": "sensation",
-   "title": "Jet Airways: ticket book tha, airline band ho gayi",
-   "summary": "April 2019: Jet Airways stops flying; what happened to passengers' refunds, staff salaries and lenders, and what a ticket holder can claim when an airline fails. Insolvency filings and DGCA notices.",
+   "id": "wk-2026-12-03-sglearning-short",
+   "title": "Haldi mein lead kahan se aa jata hai?",
+   "summary": "Explains how adulterants such as lead chromate have been found in some turmeric, why they are dangerous, and how to buy safely. Check: the cited studies, FSSAI's rules and limits, and simple home tests, which are limited in what they can show.",
    "hooks": [
-    "Airline band hui toh ticket ka paisa kise mila?",
-    "22,000 employees ki salary ka kya hua?"
-   ],
-   "history": true,
-   "topic_score": 9,
-   "topic_score_why": [
-    "+3 touches the viewer's own money",
-    "+3 a scare or a crash",
-    "+1 a choice the viewer faces",
-    "+1 a concrete number",
-    "+1 asks a question"
+    "Jo haldi aap roz khate hain, kya woh sach mein safe hai?",
+    "Peela rang chamkane ke liye kya milaya jata hai?"
    ],
    "weekly": true,
-   "from_bank": true
+   "topic_score": 2,
+   "topic_score_why": [
+    "+1 a choice the viewer faces",
+    "+1 asks a question"
+   ],
+   "follows": "Dr Himmat's lead-in-everyday-products Short drew 3.4M views. This is a health and food-safety angle.",
+   "trend": true
   },
   "2026-12-04-sglearning-short": {
-   "id": "mh-deposit-insurance-5lakh",
-   "theme": "bank",
-   "category": "policy",
-   "title": "Bank dooba toh sirf 5 lakh: yeh niyam kab aur kyun bana",
-   "summary": "Deposit insurance in India: one lakh for decades, five lakh from 2020, the 90-day payout rule of 2021, and how a family can spread deposits. DICGC publications only.",
+   "id": "wk-2026-12-04-sglearning-short",
+   "title": "Navy Day 4 December ko hi kyun manaya jata hai?",
+   "summary": "Explains the 1971 Operation Trident attack on Karachi harbour and why the date was chosen. Check: the date, the ships involved, the outcomes.",
    "hooks": [
-    "Ek bank mein 5 lakh se zyada rakhna safe hai?",
-    "Bank band hone par paisa kitne din mein milta hai?"
+    "Navy Day ke liye 4 December hi kyun chuna gaya?",
+    "1971 ki us raat Karachi mein kya hua tha?"
    ],
-   "history": true,
-   "topic_score": 8,
+   "weekly": true,
+   "topic_score": 3,
    "topic_score_why": [
-    "+3 touches the viewer's own money",
-    "+3 a scare or a crash",
+    "+1 a choice the viewer faces",
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "weekly": true,
-   "from_bank": true
+   "follows": "Navy Day is on 4 December. A trending, checkable history angle.",
+   "trend": true
   },
   "2026-12-05-sglearning-long": {
-   "id": "credit-score-explained",
-   "theme": "loan",
-   "title": "CIBIL score 650 se 780: ek number jo aapke loan ka byaaj tay karta hai",
-   "summary": "How a credit score is built: payment history, card usage, loan mix, enquiries; what a late EMI does and for how long; how to read the free yearly report and dispute an error; what the score changes on a home loan's rate in rupees.",
+   "id": "wk-2026-12-05-sglearning-long",
+   "title": "GTA 6 ke naam par jo gameplay chal raha hai, kya woh asli hai?",
+   "summary": "Explains the official GTA 6 release status, what Hindi gaming channels are actually showing (GTA 5 mods, fan-made or older footage), why a game costs this much to make, and how to spot fake gameplay. Check: Rockstar's announced date, official trailers, the budget reports.",
    "hooks": [
-    "Ek EMI late hui, score kitna girta hai?",
-    "Credit card band karne se score badhta hai ya girta hai?",
-    "Score ka fark home loan par kitne lakh ka hai?"
+    "Itne YouTubers GTA 6 khel rahe hain, to game aaya kab?",
+    "Gameplay asli hai ya mod? Fark kaise pakdein?"
    ],
    "weekly": true,
-   "from_bank": true
+   "topic_score": 3,
+   "topic_score_why": [
+    "+1 a choice the viewer faces",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "GTA 6 and GTA 5 videos fill the Hindi top lists (9.9M, 9M and others). The misconception angle suits a long video.",
+   "trend": true
   },
   "2026-12-05-sglearning-short": {
-   "id": "mh-2023-2000-note",
-   "theme": "payments",
-   "category": "policy",
-   "title": "2,000 ka note phir se bahar: is baar kya alag tha",
-   "summary": "May 2023: the 2,000 rupee note withdrawn from circulation, how it differed from 2016, how much came back, and the small-shop confusion. What 'legal tender' means and why RBI prints a note at all.",
+   "id": "wk-2026-12-05-sglearning-short",
+   "title": "300 rupaye ke movie ticket mein theatre ko kitna milta hai?",
+   "summary": "Breaks down who gets what from a ticket: taxes, the theatre, the distributor and the producer. It uses the Avengers Doomsday release on 18 December as the example. Check: GST on tickets, the revenue-share norms, the multiplex split.",
    "hooks": [
-    "2,000 ka note band hua, par 2016 jaisa kyun nahi laga?",
-    "Note wapas lene par RBI ko fayda ya nuksaan?"
+    "Aapke ticket ka paisa kis-kis mein bantta hai?",
+    "Hollywood film India se kitna kamati hai?"
    ],
-   "history": true,
-   "topic_score": 7,
+   "weekly": true,
+   "topic_score": 1,
    "topic_score_why": [
     "+1 touches the viewer's own money (in the summary)",
-    "+3 a scare or a crash",
-    "+1 a choice the viewer faces",
+    "-2 company results or deals (in the summary)",
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "weekly": true,
-   "from_bank": true
+   "follows": "The Avengers Doomsday trailer has 40M views and is the top trending item.",
+   "trend": true
   },
   "2026-12-06-sglearning-short": {
-   "id": "mh-gold-1980-today",
-   "theme": "gold",
-   "category": "price-history",
-   "title": "Dadi ne 1980 mein 10 gram sona 1,300 mein liya",
-   "summary": "Gold's rupee price per 10 grams from 1980 to today against inflation and the Sensex: which saved a family more, and in which decades. Not a tip: a comparison with published prices.",
+   "id": "wk-2026-12-06-sglearning-short",
+   "title": "Shaadi ka kharch kitna hota hai, aur kya yeh sach mein economy chalata hai?",
+   "summary": "Looks at the wedding-season spending claims, who produces the estimates (trade bodies such as CAIT), and how reliable they are. Check: the latest estimate, the average wedding cost surveys, and GST on wedding services.",
    "hooks": [
-    "1980 ka sona ya 1980 ka Sensex, kaun jeeta?",
-    "Dadi ka sona mehngai se jeeta ya haara?"
+    "Ek season mein lakhon shaadiyan, par kitna paisa asal mein ghoomta hai?",
+    "Shaadi ke kharch ke aankde kaun banata hai?"
    ],
-   "history": true,
-   "topic_score": 6,
+   "weekly": true,
+   "topic_score": 4,
    "topic_score_why": [
-    "+3 touches the viewer's own money",
+    "+1 touches the viewer's own money (in the summary)",
     "+1 a choice the viewer faces",
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "weekly": true,
-   "from_bank": true
+   "follows": "Wedding Shorts drew 26M and 2.5M views. December is wedding season.",
+   "trend": true
   },
   "2026-12-07-sglearning-short": {
-   "id": "mh-kingfisher-mallya",
-   "theme": "business",
-   "category": "sensation",
-   "title": "Kingfisher: airline doobi, banks ka 9,000 crore",
-   "summary": "The Kingfisher Airlines collapse: the losses, the bank consortium, the brand pledged as collateral, employees unpaid, and the owner's exit. What a loan default by a big borrower does to a bank and its depositors.",
+   "id": "wk-2026-12-07-sglearning-short",
+   "title": "Khade-khade long jump ka world record kitna hai?",
+   "summary": "Explains the standing long jump, why it was dropped from the Olympics, the record holder and the Indian desi-udan viral clips. Check: the record distance, the Olympic history, how it is measured.",
    "hooks": [
-    "Airline doobi toh bank ka paisa kahan gaya?",
-    "Brand ko girvi rakh kar loan kaise milta hai?"
+    "Bina daude kitna door kooda ja sakta hai insaan?",
+    "Viral desi udan clip asli mein kitni door ki thi?"
    ],
-   "history": true,
-   "topic_score": 8,
+   "weekly": true,
+   "topic_score": 1,
+   "topic_score_why": [
+    "+1 asks a question"
+   ],
+   "follows": "A long-jump Short drew 10M views.",
+   "trend": true
+  },
+  "2026-12-08-sglearning-short": {
+   "id": "wk-2026-12-08-sglearning-short",
+   "title": "Mutual fund ka return index se kam kyun aata hai?",
+   "summary": "Explains the expense ratio, cash drag and tracking error that open a gap between a fund and its index. Check: a real index fund's expense ratio against the Nifty 50 TRI return.",
+   "hooks": [
+    "Index 12% badha, to aapka fund 11% par kyun atka?",
+    "Kaun si chhoti cheez aapka return khati hai?"
+   ],
+   "weekly": true,
+   "topic_score": 5,
    "topic_score_why": [
     "+3 touches the viewer's own money",
-    "+3 a scare or a crash",
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "weekly": true,
-   "from_bank": true
+   "follows": "The founder's tool suggested it. Counterintuitive-question hooks are advised.",
+   "trend": true
   },
   "2026-12-09-sglearning-long": {
-   "id": "rent-vs-buy",
-   "theme": "prices",
-   "title": "Kiraye par rahein ya ghar khareedein: 20 saal ka poora hisaab",
-   "summary": "Renting against buying the same flat over 20 years: rent rises, EMI, down payment, maintenance, property tax, and what the saved difference becomes if it is kept aside. When buying wins, when renting wins, and the questions a family should ask before deciding.",
+   "id": "wk-2026-12-09-sglearning-long",
+   "title": "Gaon ki panchayat ko paisa kahan se milta hai, aur kaun kharch tay karta hai?",
+   "summary": "A deeper explanation of how a gram panchayat works: the Finance Commission grants, the gram sabha, the sarpanch and the secretary's role, audits and public records. Check: the 73rd Amendment, how grants flow, the actual rules.",
    "hooks": [
-    "30,000 kiraya ya 60,000 EMI: 20 saal baad kaun aage?",
-    "Down payment ka paisa ghar mein lagana sahi hai?",
-    "Kiraya dena paisa barbaad karna hai?"
+    "Panchayat web series mein jo dikhta hai, asli system kitna alag hai?",
+    "Gaon ke vikas ka paisa kis rule se kharch hota hai?"
    ],
    "weekly": true,
-   "from_bank": true
+   "topic_score": 1,
+   "topic_score_why": [
+    "+1 asks a question"
+   ],
+   "follows": "The Panchayat Season 5 trailer drew 12.6M views. This is a civic explainer with no party politics.",
+   "trend": true
   },
   "2026-12-12-sglearning-long": {
    "id": "wk-2026-12-12-sglearning-long",
-   "title": "Bachche ke liye 15 saal ka plan: PPF, Sukanya ya mutual fund?",
-   "summary": "Compares PPF, Sukanya Samriddhi and an equity mutual fund for a child's future on a Rs 5,000 monthly saving. Check the current rates, lock-in, tax rules and the Sukanya eligibility conditions.",
+   "title": "Digital arrest scam: ek phone call se log lakhon kaise gawa dete hain?",
+   "summary": "Walks through how the digital-arrest fraud works, the scripts and fake officials, the amounts lost, the courts' and the government's response, and what to do. Check: I4C and cybercrime.gov.in figures, the Supreme Court's remarks, the 1930 helpline.",
    "hooks": [
-    "Beti ke liye 5,000 mahina, 15 saal mein kitna banega?",
-    "Kaun sa option safe hai aur kaun sa tez?"
+    "Koi bole 'aap digital arrest mein hain', to sach kya hai?",
+    "Padhe-likhe log bhi is jaal mein kyun phans jaate hain?"
    ],
    "weekly": true,
    "topic_score": 6,
    "topic_score_why": [
-    "+3 touches the viewer's own money",
+    "+3 a scare or a crash",
     "+1 a choice the viewer faces",
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Tata Mutual Fund's Children's Day content drew 3.9M views, showing strong interest in planning for children.",
-   "spare": true
-  },
-  "2026-11-30-arthvan-short": {
-   "id": "wk-2026-11-30-arthvan-short",
-   "title": "Ravan ne Shani ko seedhi banaya, ye katha Valmiki mein hai?",
-   "summary": "Popular tale of Ravana placing Shani under his steps. Check Valmiki Ramayana, Tulsidas and regional sources for any such account and mark which parts are later folk tradition.",
-   "hooks": [
-    "Kya Shani sach mein Ravan ki seedhi bane the?",
-    "Valmiki mein is katha ka koi zikr hai?"
-   ],
-   "weekly": true,
-   "topic_score": 8,
-   "topic_score_why": [
-    "+4 one of the most-watched names",
-    "+3 a shock question or a mystery",
-    "+1 asks a question"
-   ],
-   "follows": "Ravana and Shani Short drew 475K in 7 days.",
-   "spare": true,
-   "allowed_sources": [
-    "asi.nic.in",
-    "en.wikipedia.org",
-    "nio.res.in",
-    "britannica.com",
-    "the scripture or text named in the story"
-   ]
+   "follows": "Scam stories are a core subject, and the topic suits a long video's depth.",
+   "trend": true
   },
   "2026-12-01-arthvan-short": {
    "id": "wk-2026-12-01-arthvan-short",
-   "title": "Shiv mandir ke bahar Nandi kyun baithe hote hain, text kya kehta hai?",
-   "summary": "Nandi in Shiva Purana and Agamas, why he faces the sanctum, and the practice of whispering wishes in his ear. Check Puranic mentions and mark the ear custom as tradition.",
+   "title": "Parikrama hamesha seedhe haath se hi kyun, aur Shivling ki aadhi parikrama kyun?",
+   "summary": "Tells the temple belief about clockwise circling and the half circuit round a Shivling. Check the Agama and Puranic references, the Gomukhi drain explanation, and Pradakshina in other traditions such as Buddhist stupas.",
    "hooks": [
-    "Nandi ki nazar hamesha Shivling par kyun hoti hai?",
-    "Kaan mein mannat ka rivaaj kahan se aaya?"
+    "Shivling ki poori parikrama karna galti kyun mani jaati hai?",
+    "Mandir mein ulta ghoomne par kya hota hai?"
    ],
    "weekly": true,
    "topic_score": 8,
@@ -274,146 +230,122 @@
     "+3 a shock question or a mystery",
     "+1 asks a question"
    ],
-   "follows": "Nandi video drew 2.05M views.",
-   "spare": true,
+   "follows": "Parikrama Short got 726K views in 7 days; an untold-facts angle on a custom.",
+   "viral": true,
    "allowed_sources": [
     "asi.nic.in",
     "en.wikipedia.org",
     "nio.res.in",
     "britannica.com",
-    "the scripture or text named in the story"
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
    ]
   },
   "2026-12-02-arthvan-short": {
    "id": "wk-2026-12-02-arthvan-short",
-   "title": "Jayadratha ko Shiv ka vardaan kya tha, Mahabharat mein kahan likha hai?",
-   "summary": "Vana and Drona Parva: Jayadratha's boon to hold the Pandavas back for a day, the Subhadra and Abhimanyu link, and his father Vriddhakshatra's curse. Check verses and mark later embellishments.",
+   "title": "Sampati ke par kisne jalaye, aur kya Jatayu se bhi bada tha?",
+   "summary": "The Sampati story as told: Surya's heat, burnt wings, the vanars. Check Valmiki Ramayana Kishkindha Kanda verses for the wording, and how regional tellings differ on his wings and his age.",
    "hooks": [
-    "Ek vardaan ne Abhimanyu ki jaan kaise li?",
-    "Jayadratha ke sar ki shart kya thi?"
+    "Jatayu ka bhai uddne ke bajay kyun baitha tha?",
+    "Sampati ne vanaron ko Lanka ka rasta kaise bataya?"
    ],
    "weekly": true,
-   "topic_score": 8,
+   "topic_score": 6,
    "topic_score_why": [
-    "+4 one of the most-watched names",
+    "+2 a famous name",
     "+3 a shock question or a mystery",
     "+1 asks a question"
    ],
-   "follows": "Abhimanyu-Jayadratha Short drew 3.1M views.",
-   "spare": true,
+   "follows": "Sampati videos pulled 7.6M and 634K views; Jatayu is already covered, so this is a fresh angle.",
+   "viral": true,
    "allowed_sources": [
     "asi.nic.in",
     "en.wikipedia.org",
     "nio.res.in",
     "britannica.com",
-    "the scripture or text named in the story"
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
    ]
   },
   "2026-12-03-arthvan-long": {
    "id": "wk-2026-12-03-arthvan-long",
-   "title": "Ellora ka Kailasa mandir ek hi pahad kaatkar kaise bana?",
-   "summary": "The Rashtrakuta-era Kailasa temple, cave 16, carved top-down from one basalt rock. Check the Krishna I attribution, the dating debate, the rock volume estimates, the Dashavatara panel inscription and the Ravana lifting Kailasa relief.",
+   "title": "Troy ka Lakdi ka Ghoda sach mein tha ya sirf Homer ki kahani?",
+   "summary": "Tells the Trojan Horse as the Aeneid and Odyssey tell it. Then lays out Hisarlik excavations, the Troy VIIa burn layer, Homer's silence in the Iliad, and the Greek ancient commentators' theories, such as a siege engine or an earthquake.",
    "hooks": [
-    "Ek mandir jise neeche se nahi, upar se neeche ki taraf tarasha gaya, kaise?",
-    "Kaun tha raja jiska naam is chamatkar se jura, aur kya sach mein ek hi shilpi tha?"
+    "Jis ghode ne shahar jeeta, uska zikr Iliad mein hai hi nahi, kyun?",
+    "Troy shahar mila, to ghoda kahan gaya?"
    ],
    "weekly": true,
-   "topic_score": 6,
+   "topic_score": 7,
    "topic_score_why": [
-    "+2 a famous name",
+    "+3 a widely held belief and its reason",
     "+3 a shock question or a mystery",
     "+1 asks a question"
    ],
-   "follows": "Temple mystery signal (Saptashrungi, Kedarnath); the angle is the carving method and the disputed dating, not a plain who-built-it.",
+   "follows": "Name everyone knows plus an untold angle; mixes world myth into the week, as the brief asks.",
+   "viral": true,
    "allowed_sources": [
     "asi.nic.in",
     "en.wikipedia.org",
     "nio.res.in",
     "britannica.com",
-    "the scripture or text named in the story"
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
    ]
   },
   "2026-12-03-arthvan-short": {
    "id": "wk-2026-12-03-arthvan-short",
-   "title": "Krishna ki 16,108 raniyan Bhagavata Purana mein kaise aati hain?",
-   "summary": "Bhagavata Purana canto 10: Narakasura's captives freed and married by Krishna. Check the number in the text, the eight principal queens, and how scholars read the episode symbolically.",
+   "title": "Kya Misr ke Pyramid gulaamon ne banaye the?",
+   "summary": "The popular belief of slave labour versus Giza workers' village finds: bakeries, medical care, tombs, labour gang graffiti. Check Mark Lehner and Zahi Hawass excavations and Herodotus' account.",
    "hooks": [
-    "16,108 ka aankda kahan se aaya?",
-    "Narakasura ki qaid se in kanyaon ko kisne bachaya?"
+    "Pyramid banane walon ko roti aur ilaaj kaun deta tha?",
+    "Gulaam ki kabr Pyramid ke paas kaise?"
    ],
    "weekly": true,
-   "topic_score": 9,
+   "topic_score": 7,
    "topic_score_why": [
-    "+4 one of the most-watched names",
+    "+3 a widely held belief and its reason",
     "+3 a shock question or a mystery",
-    "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Famous-name shock question with a verifiable text source.",
-   "spare": true,
+   "follows": "Famous-thing shock question; brings Egypt into the mix.",
+   "viral": true,
    "allowed_sources": [
     "asi.nic.in",
     "en.wikipedia.org",
     "nio.res.in",
     "britannica.com",
-    "the scripture or text named in the story"
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
    ]
   },
   "2026-12-04-arthvan-short": {
-   "id": "sinauli-chariots",
-   "title_hi": "Sinauli ke rath",
-   "place": "Baghpat, Uttar Pradesh",
+   "id": "wk-2026-12-04-arthvan-short",
+   "title": "Kya Ashwatthama ne Mahabharat ke niyam pehle tode the?",
+   "summary": "Examines the claim that Drona's son broke the war rules first. Compare the Critical Edition's Drona Parva and Sauptika Parva on the Narayanastra, the night raid and the Brahmashira weapon, and note which retellings add details.",
    "hooks": [
-    "4,000 saal purane rath India mein mile?",
-    "Mahabharat ke rath aise the?",
-    "Sinauli ke yodhaon ki kabrein"
-   ],
-   "allowed_sources": [
-    "asi.nic.in",
-    "en.wikipedia.org"
-   ],
-   "notes": "Chariot vs cart debate is disputed; the Mahabharata link is legend unless a source says otherwise.",
-   "topic_score": 6,
-   "topic_score_why": [
-    "+4 one of the most-watched names",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "weekly": true,
-   "from_bank": true
-  },
-  "2026-12-05-arthvan-short": {
-   "id": "dholavira-water",
-   "title_hi": "Dholavira, 4,500 saal purana paani ka system",
-   "place": "Dholavira, Gujarat",
-   "hooks": [
-    "Registan mein 16 reservoir, 4,500 saal pehle?",
-    "Duniya ka sabse purana signboard?",
-    "Dholavira ko UNESCO ne kyon chuna?"
-   ],
-   "allowed_sources": [
-    "asi.nic.in",
-    "UNESCO whc.unesco.org",
-    "en.wikipedia.org"
-   ],
-   "notes": "Pure archaeology lane.",
-   "topic_score": 3,
-   "topic_score_why": [
-    "-2 no famous name",
-    "+3 a shock question or a mystery",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "weekly": true,
-   "from_bank": true
-  },
-  "2026-12-06-arthvan-long": {
-   "id": "wk-2026-12-06-arthvan-long",
-   "title": "Japan ne Bollywood se pehle Ramayana kaise banayi?",
-   "summary": "The 1993 Indo-Japanese animated film Ramayana: The Legend of Prince Rama by Yugo Sako, Ram Mohan, Koichi Sasaki. Check production timeline, release history in India, and Ramayan traditions across Thailand, Indonesia, Cambodia.",
-   "hooks": [
-    "Ek Japani director ne Ramayan banane ke liye India ka safar kyun kiya?",
-    "Ye film Bharat mein itni der se kyun aayi?"
+    "Niyam todne ka ilzaam Ashwatthama par hi kyun?",
+    "Kya Sauptika Parva mein sab kuch likha hai?"
    ],
    "weekly": true,
    "topic_score": 8,
@@ -422,99 +354,216 @@
     "+3 a shock question or a mystery",
     "+1 asks a question"
    ],
-   "follows": "Japan Ramayana Short drew 9.5M views, the biggest mythology signal.",
-   "spare": true,
+   "follows": "Ashwatthama Short pulled 489K views; Mahabharata is only used once this week.",
+   "viral": true,
    "allowed_sources": [
     "asi.nic.in",
     "en.wikipedia.org",
     "nio.res.in",
     "britannica.com",
-    "the scripture or text named in the story"
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
    ]
   },
-  "2026-12-06-arthvan-short": {
-   "id": "bhimbetka",
-   "title_hi": "Bhimbetka, 30,000 saal purani painting",
-   "place": "Raisen, Madhya Pradesh",
+  "2026-12-05-arthvan-short": {
+   "id": "wk-2026-12-05-arthvan-short",
+   "title": "Kya hum sach mein dimaag ka sirf 10 percent use karte hain?",
+   "summary": "The belief that we use only 10 percent of the brain. Check fMRI and PET studies showing the whole brain is active, how damage to small areas hurts function, and the origin in early 20th-century self-help writing.",
    "hooks": [
-    "30,000 saal purani painting aaj bhi rangin?",
-    "Bhim yahan baithe the? Naam ka raaz",
-    "Duniya ki sabse purani jaanwar ki tasveer?"
+    "Bacha hua 90 percent dimaag kahan hai?",
+    "Yeh baat sabse pehle kisne kahi?"
    ],
-   "allowed_sources": [
-    "asi.nic.in",
-    "UNESCO whc.unesco.org",
-    "en.wikipedia.org"
-   ],
-   "notes": "Archaeology lane; the Bhima name is legend.",
-   "topic_score": 3,
+   "weekly": true,
+   "topic_score": 8,
    "topic_score_why": [
-    "-2 no famous name",
+    "+3 a widely held belief and its reason",
     "+3 a shock question or a mystery",
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "weekly": true,
-   "from_bank": true
+   "follows": "Human-body myth, from the founder's list of subjects.",
+   "viral": true,
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
+   ]
   },
-  "2026-12-07-arthvan-short": {
-   "id": "wk-2026-12-07-arthvan-short",
-   "title": "Samudra manthan ka amrit Kumbh ki 4 jagahon se kaise juda hai?",
-   "summary": "Puranic accounts (Vishnu and Bhagavata Purana) of the nectar pot and the four sites Haridwar, Prayagraj, Ujjain, Nashik. Check which Purana says what, the earliest textual link to the Kumbh mela, and mark the astronomical timing as tradition.",
+  "2026-12-06-arthvan-long": {
+   "id": "wk-2026-12-06-arthvan-long",
+   "title": "Japan, Thailand aur Indonesia ne apni Ramayan kaise banayi?",
+   "summary": "Covers Ramakien in Thailand, Kakawin Ramayana in Java, Japan's Ramayana film from 1993 and the Hikayat Seri Rama. Check the dates of the manuscripts, the temple reliefs at Prambanan, and how Sita and Ravana's roles differ.",
    "hooks": [
-    "Amrit ki 4 boondein kahan girin, kis Purana mein likha hai?",
-    "Kumbh ka sabse purana likha hua zikr kab ka hai?"
+    "Thailand ke raja khud ko Ram kyun kehte hain?",
+    "Japan ne Bollywood se pehle Ramayan kaise banayi?"
+   ],
+   "weekly": true,
+   "topic_score": 8,
+   "topic_score_why": [
+    "+4 one of the most-watched names",
+    "+3 a shock question or a mystery",
+    "+1 asks a question"
+   ],
+   "follows": "Japan Ramayana Short got 9.7M views; this is a deeper, source-based long telling.",
+   "viral": true,
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
+   ]
+  },
+  "2026-12-06-arthvan-short": {
+   "id": "wk-2026-12-06-arthvan-short",
+   "title": "Fortune cookie China ki dein hai ya Japan ya America ki?",
+   "summary": "The belief that fortune cookies are Chinese. Check the Japanese tsujiura senbei, Kyoto bakery records, and the early California bakeries and the 1983 court case that recorded the origin.",
+   "hooks": [
+    "Chinese khane ki sabse mashhoor cheez China mein kyun nahi milti?",
+    "Fortune cookie ka asli ghar kaunsa hai?"
    ],
    "weekly": true,
    "topic_score": 7,
    "topic_score_why": [
-    "+2 a famous name",
+    "+3 a widely held belief and its reason",
     "+3 a shock question or a mystery",
-    "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Puranic story that attracts curiosity in Dev Uthani and Kartik season viewing; different theme from the previous days.",
+   "follows": "A food myth with a shock question; mixes in world myths.",
+   "viral": true,
    "allowed_sources": [
     "asi.nic.in",
     "en.wikipedia.org",
     "nio.res.in",
     "britannica.com",
-    "the scripture or text named in the story"
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
+   ]
+  },
+  "2026-12-07-arthvan-short": {
+   "id": "wk-2026-12-07-arthvan-short",
+   "title": "Kya Lemming chuhe sach mein samundar mein kood kar jaan dete hain?",
+   "summary": "The lemming suicide belief versus the facts: mass migration, population cycles, and the 1958 Disney film White Wilderness, which staged the cliff scene. Check Alaska Fish and Game's reports.",
+   "hooks": [
+    "Kya Disney ne ek jhoothi kahani dikhayi?",
+    "Lemming aakhir kood kyun rahe the?"
+   ],
+   "weekly": true,
+   "topic_score": 7,
+   "topic_score_why": [
+    "+3 a widely held belief and its reason",
+    "+3 a shock question or a mystery",
+    "+1 asks a question"
+   ],
+   "follows": "Animal myth; Karni Mata rats were covered, so this is a different angle.",
+   "viral": true,
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
+   ]
+  },
+  "2026-12-08-arthvan-short": {
+   "id": "wk-2026-12-08-arthvan-short",
+   "title": "13 number ko ashubh kyun mana jaata hai?",
+   "summary": "Examines the fear of 13 across cultures. Check the Norse Loki dinner story, the Last Supper link, hotels skipping the 13th floor and the 1907 novel linked to Friday the 13th, then compare numbers such as 4 in East Asia.",
+   "hooks": [
+    "Hotels mein 13vi manzil kyun nahi hoti?",
+    "Kya 13 sach mein kisi ke liye shubh bhi hai?"
+   ],
+   "weekly": true,
+   "topic_score": 8,
+   "topic_score_why": [
+    "+3 a widely held belief and its reason",
+    "+3 a shock question or a mystery",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "Number myth from the founder's list; Tuesday is not the same theme as Monday.",
+   "viral": true,
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
    ]
   },
   "2026-12-10-arthvan-long": {
    "id": "wk-2026-12-10-arthvan-long",
-   "title": "Kurukshetra ke yuddh mein 18 akshauhini sena ka hisaab kitna sach hai?",
-   "summary": "Mahabharata's army tallies: akshauhini definition, 18 days, casualty counts. Check the Adi Parva definition, the arithmetic, archaeological work at Kurukshetra and the Painted Grey Ware debate. Text versus evidence.",
+   "title": "Ragnarok ka ant Vikings ne likha ya Christian lekhak ne?",
+   "summary": "Tells the Norse end-of-world myth from the Poetic Edda and the Prose Edda. Check Snorri Sturluson's 13th-century writing, possible Christian influence, the Vikings' oral tradition and what runestones and Viking graves show.",
    "hooks": [
-    "Kya itni badi sena ek maidan mein sama sakti thi?",
-    "Kurukshetra ki khudai mein kya mila?"
+    "Jis Ragnarok ko hum Viking maante hain, use likhne wale Christian the?",
+    "Odin ka akhri yuddh kitna purana hai?"
    ],
    "weekly": true,
-   "topic_score": 7,
+   "topic_score": 4,
    "topic_score_why": [
-    "+2 a famous name",
-    "+3 a shock question or a mystery",
-    "+1 a concrete number",
+    "+3 a widely held belief and its reason",
     "+1 asks a question"
    ],
-   "follows": "Mahabharat interest plus a checkable fresh contradiction.",
-   "spare": true,
+   "follows": "Famous Norse name with an untold angle; gives the week a non-Indian long video.",
+   "viral": true,
    "allowed_sources": [
     "asi.nic.in",
     "en.wikipedia.org",
     "nio.res.in",
     "britannica.com",
-    "the scripture or text named in the story"
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
    ]
   },
   "2026-12-13-arthvan-long": {
    "id": "wk-2026-12-13-arthvan-long",
-   "title": "Girnar ko siddhon ka parvat kyun kehte hain?",
-   "summary": "Girnar in Gujarat: Ashoka's Major Rock Edicts, Rudradaman's inscription, Jain Neminath temples, Dattatreya shrine, Bhavnath fair. Check dates, the inscriptions' content and which claims are tradition.",
+   "title": "Konark ke Surya mandir ka chumbak sach mein jahaz kheenchta tha?",
+   "summary": "The belief that magnets in the tower pulled ships or held the idol in the air. Check the Sun Temple's 13th-century construction under Narasimhadeva I, travellers' accounts, Archaeological Survey of India notes, the collapsed Aruna tower and the iron beams.",
    "hooks": [
-    "Ek hi pahad par teen dharmon ki nishaniyan kaise?",
-    "Ashoka aur Rudradaman ke lekh ek hi patthar par kyun?"
+    "Konark ka chumbak aakhir kahan gaya?",
+    "Jahaz kheenchne wali kahani kisne shuru ki?"
    ],
    "weekly": true,
    "topic_score": 6,
@@ -523,55 +572,38 @@
     "+3 a shock question or a mystery",
     "+1 asks a question"
    ],
-   "follows": "Girnar mystery drew 1.4M views; the long format allows evidence from inscriptions.",
-   "spare": true,
+   "follows": "Temple and monument myth, loved by Indian viewers; Dec 13 follows a Norse long so the themes differ.",
+   "viral": true,
    "allowed_sources": [
     "asi.nic.in",
     "en.wikipedia.org",
     "nio.res.in",
     "britannica.com",
-    "the scripture or text named in the story"
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
    ]
   }
  },
- "notes": [
-  "2026-11-30-sglearning-short: proposal 'Health insurance claim 40% kat gaya, kyun?' dropped (6 points, repeat)",
-  "2026-12-01-sglearning-short: proposal 'Sona sasta hua, shaadi ke liye ab kharidein ya ruk' dropped (same theme within days: gold)",
-  "2026-12-02-sglearning-long: proposal '10 lakh FD mein rakhein ya sarkari bond mein?' dropped (same theme within days: tax)",
-  "2026-12-02-sglearning-short: proposal 'No-Cost EMI sach mein free hoti hai kya?' dropped (same theme within days: loan)",
-  "2026-12-03-sglearning-short: proposal 'Karna ke kavach-kundal asli mein kya the?' dropped (2 points)",
-  "2026-12-04-sglearning-short: proposal 'Telegram tip se paisa double, fraud kaise pehchane' dropped (same theme within days: scam)",
-  "2026-12-05-sglearning-long: proposal '12 lakh ki salary par tax zero hai, par kaise?' dropped (5 points, repeat)",
-  "2026-12-05-sglearning-short: proposal 'Credit card ka 3.5% mahina, saal ka kitna byaaj?' dropped (same theme within days: loan)",
-  "2026-12-06-sglearning-short: proposal 'Lakshman Rekha Valmiki Ramayan mein hai bhi?' dropped (2 points)",
-  "2026-12-07-sglearning-short: proposal 'NPS ka poora paisa 60 ke baad kyun nahi milta?' dropped (same theme within days: market)",
-  "2026-12-09-sglearning-long: proposal 'Sona kitna gira aur ghar ke gehnon ka kya hoga?' dropped (same theme within days: gold)",
-  "2026-12-12-sglearning-long: proposal 'Mutual fund ka return index se kam kyun aata hai?' dropped (5 points)",
-  "2026-11-30-arthvan-short: proposal 'Ekalavya ka angutha kaatne ki baat Mahabharat ke t' dropped (same theme within days: mahabharat)",
-  "2026-12-01-arthvan-short: proposal 'Credit card ka minimum due bharne par asli byaj ki' dropped (3 points)",
-  "2026-12-02-arthvan-short: proposal 'Sampati ne 100 yojan door se Sita ko kaise dekha, ' dropped (same theme within days: ramayan)",
-  "2026-12-03-arthvan-short: proposal '6 percent mahangai mein aaj ke 1 crore ki 20 saal ' dropped (0 points)",
-  "2026-12-04-arthvan-short: proposal 'Karna ke kavach-kundal: text mein kya hai aur kya ' dropped (same theme within days: mahabharat)",
-  "2026-12-05-arthvan-short: proposal 'Jagannath ki murti Nabakalebara mein badal kyun ja' dropped (same theme within days: krishna)",
-  "2026-12-06-arthvan-long: proposal 'Kya Shri Ram ki sagi badi behan Shanta thi?' dropped (5 points)",
-  "2026-12-06-arthvan-short: proposal 'Ashoka ke Kalinga yuddh mein 1 lakh log mare, shil' dropped (same theme within days: history)",
-  "2026-12-10-arthvan-long: proposal 'Dholavira ke 5000 saal purane paani ke tank kaise ' dropped (7 points, repeat)",
-  "2026-12-13-arthvan-long: proposal 'Shakti Peeth 51 hain ya 108, kaun sa granth kya ke' dropped (-10 points)"
- ],
+ "notes": [],
  "signals": {
   "sglearning": [
-   "5,834,862 Gold-Silver Crash: अब और सस्ता होगा सोना, अमेरिका की महंगाई से क्या कन",
-   "4,100,958 Decode: इतनी तेजी से क्यों गिर रहे सोने के दाम? | Sudhir Chaudhary | G",
-   "3,947,769 Vo Bachpan Ke Din | Kal Ki Taiyaari | Happy Children's Day",
-   "1,569,535 RBI Fixed Deposits vs Government Bonds | Retail Direct Explained | Stu",
-   "1,337,896 Kishore Ajwani : 2026 में क्यों हो गए सोने-चांदी के दाम क्रैश? | Lates"
+   "40,793,528 Avengers: Doomsday | Final Trailer | In Theaters December 18",
+   "20,076,785 Diviki Diviki - January 12 Vidudala| Venkatesh,Kalyan Ram,Keerthy, Kri",
+   "9,933,710 Finally Playing GTA 6 😍 First Time ",
+   "9,066,482 TREASURE HUNTING IN THE OCEAN GONE WRONG! | GTA 6 GAMEPLAY #4",
+   "6,079,917 Gold-Silver Crash: अब और सस्ता होगा सोना, अमेरिका की महंगाई से क्या कन"
   ],
   "arthvan": [
-   "11,492,158 जिन्हें भारत ने सच में मान लिया भगवान #Shorts",
-   "9,542,696 Japan Made Ramayana Before Bollywood! 😳",
-   "8,933,333 This Ramayana Theory Will Surprise You! 🚩 | Jai Shree Ram 🙏 | Part 1 |",
-   "7,611,638 जटायु से भी 10 गुना शक्तिशाली था उसका बड़ा भाई संपाती! 😱  #facts",
-   "6,306,150 केदारनाथ का वो रहस्य, जो कम लोग जानते हैं!#Kedarnath #KedarnathDham #M"
+   "11,864,249 जिन्हें भारत ने सच में मान लिया भगवान #Shorts",
+   "9,781,580 Japan Made Ramayana Before Bollywood! 😳",
+   "8,757,928 इस दुनिया में रुकने का मतलब था मौत! 😱🌊 लेकिन जब एक लड़के ने पीछे मुड़क",
+   "7,673,786 जटायु से भी 10 गुना शक्तिशाली था उसका बड़ा भाई संपाती! 😱  #facts",
+   "6,735,881 केदारनाथ का वो रहस्य, जो कम लोग जानते हैं!#Kedarnath #KedarnathDham #M"
   ]
  }
 }
