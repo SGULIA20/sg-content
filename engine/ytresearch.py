@@ -47,16 +47,16 @@ def search(token: str, q: str, since: datetime, call=youtube.call, n: int = 12, 
     return sorted(out, key=lambda r: -r["views"])
 
 
-def trending(token: str, call=youtube.call, n: int = 50) -> list:
+def trending(token: str, call=youtube.call, n: int = 50, region: str = "IN") -> list:
     """What is on YouTube's own trending chart in India right now, any subject (founder, 24 Nov 2026: "search viral reels ... irrespective of
     chosen topic"). One quota unit. Same row shape as search(); [] when the chart cannot be read."""
-    status, _h, body = call("GET", f"{API}/videos?part=statistics,contentDetails,snippet&chart=mostPopular&regionCode=IN&maxResults={n}", token)
+    status, _h, body = call("GET", f"{API}/videos?part=statistics,contentDetails,snippet&chart=mostPopular&regionCode={region}&maxResults={n}", token)
     if status != 200:
         return []
     out = []
     for v in body.get("items") or []:
         out.append({"id": v["id"], "title": v["snippet"]["title"], "channel": v["snippet"]["channelTitle"], "views": int(v["statistics"].get("viewCount", 0)),
-                    "seconds": _seconds(v["contentDetails"].get("duration", "")), "published": v["snippet"]["publishedAt"][:10], "q": "trending in India"})
+                    "seconds": _seconds(v["contentDetails"].get("duration", "")), "published": v["snippet"]["publishedAt"][:10], "q": f"trending in {region}", "region": region})
     return sorted(out, key=lambda r: -r["views"])
 
 

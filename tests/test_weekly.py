@@ -123,7 +123,7 @@ def test_learning_takes_any_viral_subject_without_the_theme_wait_or_the_money_sc
     def ask(prompt):
         if "Learning with SG" not in prompt:
             return "[]"
-        assert "ANY subject" in prompt and "trending chart in India" in prompt
+        assert "ANY subject" in prompt and "trending charts right now" in prompt and "WORLD is talking about" in prompt
         return _reply([{"slot": "2026-11-14-sglearning-short", "title": "IPL auction mein 27 crore: yeh paisa aata kahan se hai?", "summary": "The record bid.", "hooks": [], "why": "trending"},
                        {"slot": "2026-11-15-sglearning-short", "title": "Chandrayaan ne chaand par kya dhoondha, jo kisi ne nahi socha?", "summary": "The find.", "hooks": [], "why": "trending"},
                        {"slot": "2026-11-18-sglearning-long", "title": "Dilli ki hawa itni zehreeli kyun, aur 5 cheezein jo sach mein kaam karti hain", "summary": "Air.", "hooks": [], "why": "trending"}])
