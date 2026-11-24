@@ -356,7 +356,7 @@ def track_mix(total: float) -> str:
     it's loud and narrator voice lost many places". The track sits well under the voice, comes up gently in the pauses and takes a
     while to return, so it does not surge between words."""
     return (f"[1:a]aresample=48000,apad=whole_dur={total:.3f},loudnorm=I={assemble.VOICE_LUFS}:TP=-1.5:LRA=11,asplit=2[v][key];"
-            f"[2:a]anullsink;"
+            f"[2:a]atrim=0:1,anullsink;"                              # the looped pad must end, or ffmpeg reads it for ever
             f"[3:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.6,afade=t=out:st={max(0.0, total - 2):.2f}:d=2,"
             f"loudnorm=I={TRACK_LUFS}:TP=-6:LRA=7[m0];"
             f"[m0][key]sidechaincompress=threshold=0.04:ratio=4:attack=10:release=600[m];"
