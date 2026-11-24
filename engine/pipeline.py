@@ -54,6 +54,7 @@ class Deps:
     animate_card: Callable = None  # (data, index, total, roundup, seconds, size, out) -> mp4: the moving news card (2 Nov 2026)
     slot_holders: Callable = None  # (piece) -> [video ids]: videos already scheduled for this piece's slot (6 Nov 2026: one day, one video)
     intro_notify: Callable = None  # (text) -> None: set, the founder's 10-second avatar intro is asked for before every upload (engine/intro.py, 4 Nov 2026)
+    watch: Callable = None         # (piece, video, out_dir) -> None: Claude looks at the finished video before upload, report only (engine/watch.py, 24 Nov 2026)
 
 
 def _jsonable(d: dict) -> dict:
@@ -580,6 +581,11 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
     if dry_run:
         pieces.save(piece, root)
         return piece
+    if deps.watch is not None:                                           # 24 Nov 2026: the pictures are looked at, not only the file
+        try:
+            deps.watch(piece, video, out_dir)
+        except Exception as e:                                           # a bonus check: it never stops a video
+            print(f"watch skipped for {piece.id}: {secrets.scrub(str(e))[:200]}", flush=True)
     # 10: the founder's intro first (engine/intro.py: his clip composed in, or ask and wait, or plain at the deadline), then the upload
     if deps.intro_notify is not None and intro.enabled(piece):
         action = intro.before_upload(piece, root, out_dir, deps.intro_notify)
@@ -688,6 +694,7 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
                 cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for, subtitles=subtitles_fn,
                 voice_batch=lambda piece, texts, vid: voicebatch.voice_piece(piece, texts, vid),
                 art_batch=lambda piece, jobs: artbatch.paint_piece(piece, jobs), voice_check=voice.transcribe,
-                animate_card=newscard.animate, intro_notify=telegram.send, slot_holders=slot_holders_fn)
+                animate_card=newscard.animate, intro_notify=telegram.send, slot_holders=slot_holders_fn,
+                watch=lambda piece, video, out_dir: __import__("engine.watch", fromlist=["look"]).look(piece, video, out_dir, notify=telegram.send))
     # voice.batched (several scenes per TTS request) stays unwired: on 22 Oct 2026 the model's paragraph pauses were not distinct enough
     # to cut on, and the transcript check sent every group back to line-by-line. Wire it in once the cut is reliable.
