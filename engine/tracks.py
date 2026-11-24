@@ -5,8 +5,7 @@ publishes his catalogue free under Creative Commons Attribution 4.0 with a plain
 content/music-tracks.json lists the tracks chosen for each channel (by the site's own feel tags). A piece takes one by its id, so the
 same video always gets the same track and the days differ. The file is downloaded when the video is built and never kept in this repo
 (the licence lets us use a track in a video, not hand the file out). Every video that uses one carries the credit the site asks for:
-in the YouTube description, the Instagram caption and, when it fits, the Threads post. A failed download falls back to the sound made
-in code (engine/sfx.py).
+in the YouTube description, the Instagram caption and, when it fits, the Threads post. A failed download falls back to the plain pad.
 """
 import hashlib
 import json
@@ -20,6 +19,17 @@ from .config import CONTENT_DIR
 LIST = CONTENT_DIR / "music-tracks.json"
 LICENCE = "Licensed under Creative Commons: By Attribution 4.0\nhttp://creativecommons.org/licenses/by/4.0/"
 MIN_BYTES = 200_000                    # a real MP3 of a minute and a half is well over this; an error page is not
+
+
+def on(root: Path | None = None) -> bool:
+    """content/sound.json {"music": false} goes back to the plain pad; SG_MUSIC=0 does the same for a run (the tests never download)."""
+    import os
+    if os.environ.get("SG_MUSIC") == "0":
+        return False
+    try:
+        return bool(json.loads(((Path(root) / "content" if root else CONTENT_DIR) / "sound.json").read_text()).get("music", True))
+    except (OSError, ValueError):
+        return True
 
 
 def load(path: Path = LIST) -> dict:

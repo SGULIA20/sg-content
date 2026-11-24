@@ -41,3 +41,10 @@ def _hinglish_unless_the_test_is_about_language(monkeypatch, request):
         return
     from engine import lang
     monkeypatch.setattr(lang, "_config", lambda root=None: {})
+
+
+@pytest.fixture(autouse=True)
+def _no_music_downloads(monkeypatch):
+    """Tests never fetch a real track from the internet (24 Nov 2026: a video build in the tests downloaded one)."""
+    monkeypatch.setenv("SG_MUSIC", "0")
+

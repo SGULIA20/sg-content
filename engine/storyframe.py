@@ -308,29 +308,24 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     total = sum(durations) + END_S
     bed = music.bed("light", total + 5)
     out = out_dir / ("reel.mp4" if piece.kind == "short" else "long.mp4")
-    from . import sfx
+    from . import tracks
     extra, graph = [], plain_mix(total)
-    if sfx.on():                                                     # founder, 24 Nov 2026: "yes, upgrade the sound"
+    if tracks.on():                                                  # founder, 24 Nov 2026: real music, fetched by the engine; music only
         try:
-            from . import tracks
-            style = sfx.style_for(piece)
-            chosen = tracks.pick(piece)                              # 24 Nov 2026: real music, fetched by the engine
+            chosen = tracks.pick(piece)
             song = tracks.fetch(chosen, out_dir / "track.mp3") if chosen else None
-            if song:                                                 # "Music only": no hit, whoosh or riser over a real track
-                extra, graph = ["-stream_loop", "-1", "-i", str(song)], track_mix(total)
+            if song:
+                extra, graph = ["-stream_loop", "-1", "-i", str(song)], track_mix(total, speech_end=total - END_S)
                 piece.ids["music"] = {"title": chosen["title"], "by": "Kevin MacLeod (incompetech.com)", "licence": "CC BY 4.0"}
                 piece.ids["sound"] = "track"
             else:
-                fx = sfx.track(starts, total, out_dir / "sfx.wav", long=not short, style=style)
-                groove = sfx.make_groove(style, total + 1, out_dir / "groove.wav")
-                extra, graph = ["-i", str(groove), "-i", str(fx)], designed_mix(total, long=not short)
-                piece.ids["sound"] = style["name"]; piece.ids.pop("music", None)
+                piece.ids["sound"] = "pad"; piece.ids.pop("music", None)   # no track to be had: the plain pad, as before
         except Exception as e:                                       # the plain pad still makes a video
-            print(f"sound design skipped for {piece.id}: {type(e).__name__}: {str(e)[:120]}", flush=True)
+            print(f"music skipped for {piece.id}: {type(e).__name__}: {str(e)[:120]}", flush=True)
     _run(["-f", "concat", "-safe", "0", "-i", str(concat), "-i", str(voice_wav), "-stream_loop", "-1", "-i", str(bed), *extra,
           "-filter_complex", graph,
           "-map", "0:v", "-map", "[aout]", "-t", f"{total:.3f}", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", str(out)])
-    for f in ("groove.wav", "sfx.wav", "track.mp3"):                  # the raw track is never kept: the licence covers its use in the video only
+    for f in ("track.mp3",):                                         # the raw track is never kept: the licence covers its use in the video only
         (out_dir / f).unlink(missing_ok=True)
     return out
 
@@ -343,39 +338,20 @@ def plain_mix(total: float) -> str:
             f"apad=whole_dur={total:.3f},loudnorm=I={assemble.MIX_LUFS}:TP=-1.5:LRA=11[aout]")
 
 
-# the level of audition files 5A and 5B, which he approved (the first sample at -23 was "too low and not attractive"); a long video keeps
-# the same sound a little lower, since ten minutes of drums at that level would tire the ear
-DESIGN_MUSIC_LUFS, DESIGN_MUSIC_LUFS_LONG = -19, -22          # 24 Nov 2026: lowered from -15/-19 after "narrator voice lost many places"
-
-
 TRACK_LUFS = -22             # a real track in the pauses; under the voice the ducking takes it to about -31, where the old pad sat
+END_DROP = 0.4               # under the end card the track falls to 40% (-8 dB): the engine's own check (qa.narration_intact) tells a lost
+                             # last word from a kept one by the drop in level after the narration, and music at full level hid that drop
 
 
-def track_mix(total: float) -> str:
+def track_mix(total: float, speech_end: float | None = None) -> str:
     """Inputs: 1 voice, 2 pad (not used), 3 the track (looped). Founder, 24 Nov 2026, on the first track samples at -15: "Music only but
     it's loud and narrator voice lost many places". The track sits well under the voice, comes up gently in the pauses and takes a
-    while to return, so it does not surge between words."""
+    while to return, so it does not surge between words. No sound cues: he had them removed on 2 Nov 2026 ("its irritating")."""
+    end = total if speech_end is None else max(0.0, speech_end)
     return (f"[1:a]aresample=48000,apad=whole_dur={total:.3f},loudnorm=I={assemble.VOICE_LUFS}:TP=-1.5:LRA=11,asplit=2[v][key];"
             f"[2:a]atrim=0:1,anullsink;"                              # the looped pad must end, or ffmpeg reads it for ever
             f"[3:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.6,afade=t=out:st={max(0.0, total - 2):.2f}:d=2,"
-            f"loudnorm=I={TRACK_LUFS}:TP=-6:LRA=7[m0];"
+            f"loudnorm=I={TRACK_LUFS}:TP=-6:LRA=7,volume='if(gt(t,{end:.3f}),{END_DROP},1)':eval=frame[m0];"
             f"[m0][key]sidechaincompress=threshold=0.04:ratio=4:attack=10:release=600[m];"
             f"[v][m]amix=inputs=2:duration=longest:normalize=0,"
-            f"apad=whole_dur={total:.3f},loudnorm=I={assemble.MIX_LUFS}:TP=-1.5:LRA=11[aout]")
-
-
-def designed_mix(total: float, long: bool = False, track: bool = False) -> str:
-    """Inputs: 1 voice, 2 pad (looped), 3 groove, 4 effects. The pad and the groove make the music; the voice pushes it down while it
-    speaks (sidechain) and it comes back up in the gaps; the effects sit on top at a fixed level."""
-    return (f"[1:a]aresample=48000,apad=whole_dur={total:.3f},loudnorm=I={assemble.VOICE_LUFS}:TP=-1.5:LRA=11,asplit=2[v][key];"
-            f"[2:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS[pad];"
-            + (f"[3:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.4[gr];[pad]anullsink;[gr]anull,afade=t=out"
-               if track else                                         # a real track stands alone: the code-made pad is dropped
-               f"[3:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS[gr];"
-               f"[pad][gr]amix=inputs=2:duration=longest:normalize=0,afade=t=out") +
-            f":st={max(0.0, total - 2):.2f}:d=2,"
-            f"loudnorm=I={DESIGN_MUSIC_LUFS_LONG if long else DESIGN_MUSIC_LUFS}:TP=-3:LRA=7[m0];"
-            f"[m0][key]sidechaincompress=threshold=0.05:ratio=2.5:attack=15:release=350[m];"
-            f"[4:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS,volume={0.9 if long else 1.3}[fx];"
-            f"[v][m][fx]amix=inputs=3:duration=longest:normalize=0,"
             f"apad=whole_dur={total:.3f},loudnorm=I={assemble.MIX_LUFS}:TP=-1.5:LRA=11[aout]")
