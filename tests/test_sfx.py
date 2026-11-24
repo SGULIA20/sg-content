@@ -40,4 +40,4 @@ def test_sg_myth_alternates_the_two_sounds_he_chose_and_learning_takes_the_drivi
     for style in sfx.STYLES["arthvan"] + sfx.STYLES["sglearning"]:
         assert sfx.make_groove(style, 6.0, tmp_path / f"{style['name']}.wav").stat().st_size > 1000
         assert sfx.track([0, 2, 4, 5], 6.0, tmp_path / "fx.wav", style=style).exists()
-    assert "I=-15" in storyframe.designed_mix(58.0) and "I=-19" in storyframe.designed_mix(600.0, long=True)
+    assert "I=-19" in storyframe.designed_mix(58.0) and "I=-22" in storyframe.designed_mix(600.0, long=True)

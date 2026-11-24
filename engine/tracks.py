@@ -10,6 +10,7 @@ in code (engine/sfx.py).
 """
 import hashlib
 import json
+import re
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -28,10 +29,24 @@ def load(path: Path = LIST) -> dict:
         return {}
 
 
+SOBER = re.compile(r"\b(tragedy|disaster|crash|accident|gas leak|bhopal|haadsa|hadsa|trasadi|maut|mare gaye|mrityu|died|death|dead|killed|"
+                   r"hatya|blast|earthquake|bhukamp|flood|baadh|tsunami|riot|massacre|war|yudh|famine|akaal)\b", re.I)
+
+
+def sober(piece) -> bool:
+    """A video about a disaster, an accident or a death: its music is quiet and plain, never cheerful. Learning with SG only: on
+    SG-MYTH-WORLD a war or a death is part of an old epic, and its tracks are already dark."""
+    if getattr(piece, "channel", "") != "sglearning":
+        return False
+    t = getattr(piece, "topic", None) or {}
+    s = getattr(piece, "script", None) or {}
+    return bool(SOBER.search(" ".join(str(x or "") for x in (t.get("title"), t.get("summary"), s.get("title")))))
+
+
 def pick(piece, tracks: dict | None = None) -> dict | None:
     """The track for this piece, or None when the channel has none listed."""
     tracks = load() if tracks is None else tracks
-    mine = tracks.get(getattr(piece, "channel", "")) or []
+    mine = (tracks.get("sober") if sober(piece) else None) or tracks.get(getattr(piece, "channel", "")) or []
     if not mine:
         return None
     n = int(hashlib.sha256(str(piece.id).encode()).hexdigest(), 16)

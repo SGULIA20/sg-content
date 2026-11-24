@@ -1,165 +1,163 @@
 {
- "_note": "Tracks from incompetech.com (Kevin MacLeod), free under Creative Commons Attribution 4.0: every video that uses one carries the credit. Chosen from the site's own catalogue by its feel tags on 24 Nov 2026; the engine downloads a track when it builds a video and keeps no copy in this repo. Remove a line to stop using that track.",
+ "_note": "Tracks from incompetech.com (Kevin MacLeod), free under Creative Commons Attribution 4.0: every video that uses one carries the credit. Chosen from the site's own catalogue by its feel tags on 24 Nov 2026; the engine downloads a track when it builds a video and keeps no copy in this repo. Remove a line to stop using that track. 24 Nov 2026, after he heard the samples ('Motivator music looks like dancing music'): Learning with SG uses calm, bright explainer tracks only (no dance or party feel), picked by the site's own descriptions. 'sober' tracks go under a video about a disaster, an accident or a death, on either channel.",
  "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/",
  "sglearning": [
   {
-   "title": "Got Funk",
-   "filename": "Got Funk.mp3",
+   "title": "Inspired",
+   "filename": "Inspired.mp3",
    "feel": [
-    "Bouncy",
     "Bright",
-    "Driving",
-    "Grooving"
-   ],
-   "bpm": 98,
-   "seconds": 281
-  },
-  {
-   "title": "Lagoa v2",
-   "filename": "Lagoa v2.mp3",
-   "feel": [
-    "Bouncy",
-    "Bright",
-    "Driving",
-    "Grooving",
-    "Intense"
-   ],
-   "bpm": 130,
-   "seconds": 194
-  },
-  {
-   "title": "Motivator",
-   "filename": "Motivator.mp3",
-   "feel": [
-    "Bouncy",
-    "Bright",
-    "Driving",
+    "Calming",
+    "Relaxed",
     "Uplifting"
    ],
-   "bpm": 126,
-   "seconds": 238
+   "bpm": 120
   },
   {
-   "title": "New Friendly",
-   "filename": "New Friendly.mp3",
+   "title": "Easy Lemon",
+   "filename": "Easy Lemon.mp3",
    "feel": [
-    "Bouncy",
     "Bright",
-    "Grooving",
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 82
+  },
+  {
+   "title": "Fretless",
+   "filename": "Fretless.mp3",
+   "feel": [
+    "Bright",
+    "Relaxed",
     "Uplifting"
    ],
-   "bpm": 114,
-   "seconds": 169
+   "bpm": 100
   },
   {
-   "title": "Aces High",
-   "filename": "Aces High.mp3",
+   "title": "Life of Riley",
+   "filename": "Life of Riley.mp3",
    "feel": [
-    "Bouncy",
-    "Driving",
-    "Grooving"
-   ],
-   "bpm": 102,
-   "seconds": 193
-  },
-  {
-   "title": "Allada",
-   "filename": "Allada.mp3",
-   "feel": [
-    "Bouncy",
     "Bright",
-    "Grooving"
-   ],
-   "bpm": 100,
-   "seconds": 223
-  },
-  {
-   "title": "Aurea Carmina",
-   "filename": "Aurea Carmina.mp3",
-   "feel": [
-    "Bouncy",
-    "Bright",
-    "Grooving"
-   ],
-   "bpm": 115,
-   "seconds": 211
-  },
-  {
-   "title": "Bit Shift",
-   "filename": "Bit Shift.mp3",
-   "feel": [
-    "Bouncy",
-    "Bright",
-    "Grooving"
-   ],
-   "bpm": 130,
-   "seconds": 192
-  },
-  {
-   "title": "Blip Stream",
-   "filename": "Blip Stream.mp3",
-   "feel": [
-    "Bouncy",
-    "Bright",
+    "Relaxed",
     "Uplifting"
    ],
-   "bpm": 150,
-   "seconds": 285
+   "bpm": 102
   },
   {
-   "title": "Brightly Fancy",
-   "filename": "Brightly Fancy.mp3",
+   "title": "Sunshine",
+   "filename": "Sunshine A.mp3",
    "feel": [
-    "Bouncy",
     "Bright",
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 88
+  },
+  {
+   "title": "Sunshine (version 2)",
+   "filename": "Sunshine ver 2.mp3",
+   "feel": [
+    "Bright",
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 79
+  },
+  {
+   "title": "Somewhere Sunny (ver 2)",
+   "filename": "Somewhere Sunny (ver 2).mp3",
+   "feel": [
+    "Bright",
+    "Calming",
+    "Relaxed",
     "Uplifting"
    ],
-   "bpm": 131,
-   "seconds": 135
+   "bpm": 106
   },
   {
-   "title": "Carpe Diem",
-   "filename": "Carpe Diem.mp3",
+   "title": "Almost Bliss",
+   "filename": "Almost Bliss.mp3",
    "feel": [
-    "Bouncy",
     "Bright",
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 90
+  },
+  {
+   "title": "Dream Culture",
+   "filename": "Dream Culture.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed",
     "Uplifting"
    ],
-   "bpm": 96,
-   "seconds": 295
+   "bpm": 70
   },
   {
-   "title": "Cipher",
-   "filename": "Cipher2.mp3",
+   "title": "Dreamer",
+   "filename": "Dreamer.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 100
+  },
+  {
+   "title": "Cherry Blossom",
+   "filename": "Cherry Blossom.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 100
+  },
+  {
+   "title": "Jellyfish in Space",
+   "filename": "Jellyfish in Space.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 100
+  },
+  {
+   "title": "Thinking of You",
+   "filename": "Thinking of You.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 72
+  },
+  {
+   "title": "Clear Air",
+   "filename": "Clear Air.mp3",
    "feel": [
     "Bright",
-    "Grooving",
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 68
+  },
+  {
+   "title": "Numinous Shine",
+   "filename": "Numinous Shine.mp3",
+   "feel": [
+    "Bright",
+    "Relaxed",
     "Uplifting"
    ],
-   "bpm": 150,
-   "seconds": 231
+   "bpm": 68
   },
   {
-   "title": "Delightful D",
-   "filename": "Delightful D.mp3",
+   "title": "Deliberate Thought",
+   "filename": "Deliberate Thought.mp3",
    "feel": [
-    "Bright",
-    "Driving",
-    "Grooving"
+    "Calming",
+    "Relaxed"
    ],
-   "bpm": 120,
-   "seconds": 184
-  },
-  {
-   "title": "Fantasia Fantasia",
-   "filename": "Fantasia Fantasia.mp3",
-   "feel": [
-    "Bright",
-    "Driving",
-    "Grooving"
-   ],
-   "bpm": 118,
-   "seconds": 152
+   "bpm": 69
   }
  ],
  "arthvan": [
@@ -368,6 +366,63 @@
    ],
    "bpm": 73,
    "seconds": 171
+  }
+ ],
+ "sober": [
+  {
+   "title": "Thinking of You",
+   "filename": "Thinking of You.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 72
+  },
+  {
+   "title": "Clear Air",
+   "filename": "Clear Air.mp3",
+   "feel": [
+    "Bright",
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 68
+  },
+  {
+   "title": "Windswept",
+   "filename": "Windswept.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 79
+  },
+  {
+   "title": "Water Lily",
+   "filename": "Water Lily.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 62
+  },
+  {
+   "title": "Avec Soin",
+   "filename": "Avec Soin.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 64
+  },
+  {
+   "title": "Clear Waters",
+   "filename": "Clear Waters.mp3",
+   "feel": [
+    "Calming",
+    "Relaxed"
+   ],
+   "bpm": 96
   }
  ]
 }

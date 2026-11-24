@@ -37,4 +37,17 @@ def test_the_credit_goes_wherever_the_video_goes():
     assert "Creative Commons: By Attribution 4.0" in full and "creativecommons.org/licenses/by/4.0" in full
     p.script["captions"]["threads"]["text"] = "x" * 480
     assert publish.threads_text(p).endswith("CC BY 4.0") and len(publish.threads_text(p)) <= 500                   # a long post is trimmed, the credit stays
-    assert "anullsink" in storyframe.designed_mix(58.0, track=True) and "anullsink" not in storyframe.designed_mix(58.0)
+    mix = storyframe.track_mix(58.0)
+    assert "[4:a]" not in mix and "I=-22" in mix and "sidechaincompress" in mix                                   # music only, well under the voice
+
+
+def test_a_video_about_a_disaster_gets_a_quiet_track_and_learning_has_no_dance_music():
+    """Founder, 24 Nov 2026: 'Motivator music looks like dancing music'; Bhopal 1984 is in the plan."""
+    real = tracks.load()
+    sad = pieces.Piece(id="2026-12-03-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 12, 3))
+    sad.topic = {"title": "Bhopal mein 3 December 1984 ki raat kya hua tha?", "summary": "The gas leak disaster."}
+    assert tracks.sober(sad) and tracks.pick(sad, real)["title"] in {t["title"] for t in real["sober"]}
+    ok = pieces.Piece(id="2026-12-04-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 12, 4))
+    ok.topic = {"title": "Film ke trailer mein poori kahani kyun dikha dete hain?"}
+    assert not tracks.sober(ok)
+    assert not any({"Grooving", "Bouncy"} & set(t["feel"]) for t in real["sglearning"]) and "Motivator" not in {t["title"] for t in real["sglearning"]}
