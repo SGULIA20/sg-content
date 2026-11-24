@@ -1,0 +1,299 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 1000.0,
+   "quote": "As a result, taxpayers will be required to pay a fee of Rs. 500 up to three months from 1st April, 2022 and a fee of Rs.1000 after that, while intimating their Aadhaar.",
+   "source_date": "2022-03-30",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5QGXj_qagcbpqybD6cS-kUfymzTUm9-A43qJwuPYSGHkm24n7jvv2uH4yedmmeKpK1nnPcv38GmBXxfdQiHt60YW2ZUkrlU6dnN9bEMzy7b42TySKHnF7-bc3YVs1g3ZKo39gJiK4AnzIPgI9Zkw=",
+   "text": "Taxpayers who missed the deadline to link their PAN with Aadhaar must pay a late fee of 1,000 INR to complete the linking.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 30.0,
+   "quote": "permanent account number shall become operative within thirty days from the date of intimation of Aadhaar number.",
+   "source_date": "2023-03-28",
+   "source_name": "Income Tax Department",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG8nA3eKQwMGaq3yuKRz1lxrCAs4VwLWc-ECtzu3QeuRfwiiTkMSWrNz8Z6CMRNHg874u5iZn1T9A9gXnqegMkddfNvO1PX-u7Sh1lUbWhq79M_QzMYgl-JESb3pQOQUuoFjcMPmFw6pOaIUWBWzKhGIWXPrE9oVtu5UGnTX9W4m69Aduzurh2G1D39Fw==",
+   "text": "An inoperative PAN is restored to operative status within 30 days after the taxpayer intimates their Aadhaar and pays the fee.",
+   "unit": "days"
+  },
+  {
+   "label": "official",
+   "number": 51.0,
+   "quote": "It is stated that more than 51 crore PANs have already been linked with Aadhaar till date.",
+   "source_date": "2023-03-28",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFFoaUwdYjkqcYGUTK3q7tu4dG2pbq7nLpHhwml4rU0_9-H9ewiWBjoSSnjYGURy8tlwTvkheIKRXAYbUI9IAeq3hUO4b8kW52t_S8r8DW1LhXDo61PNz6esqBaJd4zNWxy7wsHZWKQUvcdSoL9T9k=",
+   "text": "Over 51 crore PAN cards had been successfully linked with Aadhaar before the statutory inoperative deadline took effect.",
+   "unit": "crore"
+  },
+  {
+   "label": "official",
+   "number": 2017.0,
+   "quote": "Section 139AA of the Income Tax Act provides that every individual who has been allotted a permanent account number (PAN) as on the 1st day of July, 2017, and who is eligible to obtain an Aadhaar number, shall intimate his Aadhaar number in the prescribed form and manner.",
+   "source_date": "2026-11-22",
+   "source_name": "Income Tax Department",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPpMPzPQgskAChi4JXG-lMksKKi8piseupaDoq2GUYkp9XvuG9nhrGOXRX5GbL-DacDgAZHpdV8EL5uPy0VDD7_MpriFdpR2h5oVK0KYWM-aoO2rLPj3dSBjR9ymMbqWOdtyTTndVItoj32bthHKoCJDLQbc6bWPDR3d5BPQ==",
+   "text": "Mandatory PAN-Aadhaar linkage applies to all eligible individuals who received their PAN on or before 1 July 2017.",
+   "unit": "calendar year"
+  },
+  {
+   "label": "official",
+   "number": 80.0,
+   "quote": "Aadhaar-PAN linkage requirement does not apply to any individual who is: Residing in the States of Assam, Jammu and Kashmir, and Meghalaya;; a non-resident as per the Income-tax Act, 1961;; of the age of eighty years or more at any time during the previous year; or; not a citizen of India.",
+   "source_date": "2026-11-22",
+   "source_name": "Income Tax Department",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPpMPzPQgskAChi4JXG-lMksKKi8piseupaDoq2GUYkp9XvuG9nhrGOXRX5GbL-DacDgAZHpdV8EL5uPy0VDD7_MpriFdpR2h5oVK0KYWM-aoO2rLPj3dSBjR9ymMbqWOdtyTTndVItoj32bthHKoCJDLQbc6bWPDR3d5BPQ==",
+   "text": "Individuals aged 80 years or older are explicitly exempt from the mandatory PAN-Aadhaar linking requirement.",
+   "unit": "years"
+  },
+  {
+   "label": "reported",
+   "number": 10000.0,
+   "quote": "Apart from this, if the person furnishes the PAN Card, which is no more valid, then under Section 272B of the Income Tax Act 1961, the Assessing Officer may direct that such person shall pay, by way of penalty, a sum of ₹10,000.",
+   "source_date": "2022-07-01",
+   "source_name": "Mint",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7UzOkpeIF8tsP16-vnBGyb1qP8h35SNDyX7l3TmkXXvmUam8njps31ZRBq0-yrhCauIDvjnoOVpHiJKQ_AoS12C13yBPKHV5Pd4m6RwwShhNqHIPiNCfESGTywKDqkf2z0agmGDRPUjzN_Zuok1nr5iMnKbSdxKKnf3VSo5cvtmxXEesmw8MeXA6MeeYtsuX318zOLRJTYBbbEmkkgcfJpNwwHOFzNfHoy_YlfcdCMlEUI8tXfQ9lbdI=",
+   "text": "Furnishing an invalid or inoperative PAN card can attract a penalty of 10,000 INR under Section 272B of the Income Tax Act.",
+   "unit": "INR"
+  }
+ ],
+ "id": "2026-11-30-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-23",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 13.5,
+   "usd": 0.091326,
+   "voice": 8
+  },
+  "drafts": 1,
+  "intro_sent": "2026-11-24T07:47:23+00:00"
+ },
+ "kind": "short",
+ "publish_day": "2026-11-30",
+ "reasons": [
+  "waiting for the founder's intro clip until 30 Nov 11:30 UTC"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "PAN-Aadhaar link nahi kiya, to refund atak sakta hai? 😱\nPAN band nahi hota, inoperative ho jaata hai: refund ruka, byaaj gaya, FD par zyada TDS.\n1,000 rupaye fee, link karo, lagbhag 30 din mein PAN phir chalu.\nAapne apna link status kab check kiya tha?\nYeh investment advice nahi hai.\nUs dost ko bhejo jiska refund abhi tak nahi aaya.",
+    "hashtags": [
+     "#IncomeTax",
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#MoneyTipsHindi",
+     "#PersonalFinanceIndia",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "PAN-Aadhaar link nahi kiya, to refund atak sakta hai? PAN inoperative ho jaata hai: refund ruka, byaaj gaya, FD par zyada TDS. Fix: 1,000 rupaye fee, lagbhag 30 din. Aapne status check kiya? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "PAN-Aadhaar link nahi kiya, to refund atak sakta hai? PAN band nahi hota, inoperative ho jaata hai, aur refund, uska byaaj sab ruk jaata hai. 1,000 rupaye fee aur Aadhaar link ke baad lagbhag 30 din mein PAN phir chalu hota hai. Us dost ko bhejo jiska refund abhi tak nahi aaya.",
+    "tags": [
+     "PAN Aadhaar link",
+     "PAN inoperative",
+     "income tax refund",
+     "TDS",
+     "PAN card",
+     "Aadhaar",
+     "income tax",
+     "personal finance hindi",
+     "hinglish finance",
+     "Learning with SG"
+    ],
+    "title": "PAN Aadhaar link nahi kiya to refund rukega?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jiska refund abhi tak nahi aaya.",
+  "hook": "PAN-Aadhaar link nahi kiya, to refund atak sakta hai?",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of an Indian man's hand holding a laminated identity card above a wooden desk, card face turned away and blurred, an empty opened envelope beside it, warm morning window light, tense mood, no readable text",
+     "type": "art"
+    },
+    "vo": "PAN-Aadhaar link nahi kiya, to refund atak sakta hai?"
+   },
+   {
+    "facts_used": [],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian middle-class dining table in the evening, a mother and father sitting with school fee receipts and a calculator, worried faces, a tubelight glow, school bags on a chair in the background, no readable text",
+     "type": "art"
+    },
+    "vo": "Salary wale ghar ka refund, bachchon ki fees ka plan tha. Paisa aaya hi nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian bank branch counter at midday, a relaxed young man handing a folded form to a smiling clerk, natural daylight, busy but calm, no readable text or logos",
+     "type": "art"
+    },
+    "vo": "Socha tha, PAN card to chal raha hai. Link ki kya jaldi?"
+   },
+   {
+    "facts_used": [],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic shot of a locked steel cupboard in an Indian home with a small key left on top, an ID card lying in front of it, dim afternoon light, a sense of something blocked, no text",
+     "type": "art"
+    },
+    "vo": "Lekin twist yeh hai. PAN inoperative ho jaata hai, yaani card hai par tax ke kaam ka nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of an elderly Indian woman's hand holding a bank passbook at a post office style counter, a frown on her face, cash notes fewer than expected on the counter, soft fluorescent light, no readable text",
+     "type": "art"
+    },
+    "vo": "Refund ruk jaata hai, uska byaaj bhi gaya. Upar se FD ke byaaj par zyada TDS, yaani pehle hi kata tax."
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "fix",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian cyber cafe in a small town, a young woman paying cash to the operator at the desk, monitors turned away from camera, late afternoon light through the shutter, relieved expression, no readable text",
+     "type": "art"
+    },
+    "vo": "Theek kaise ho? 1,000 rupaye fee bharo, Aadhaar link karo. Lagbhag 30 din mein PAN phir chalu."
+   },
+   {
+    "facts_used": [],
+    "label": "what to do",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic side view of an Indian man in a vest typing on a laptop at night on a home sofa, the screen facing away from camera, a cup of chai beside him, determined face lit by a table lamp",
+     "type": "art"
+    },
+    "vo": "Asli nuksaan fee nahi, ruka hua paisa hai. Aaj hi income tax website par status dekho. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian chai stall at dusk, two friends standing with glasses of tea, one pointing the other towards home with a knowing smile, warm street lights, crowded lane behind them",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jiska refund abhi tak nahi aaya."
+   }
+  ],
+  "thumbnail": {
+   "name": "PAN AADHAAR",
+   "name_hi": "पैन आधार",
+   "scene": "A laminated ID card snapped in half on a desk next to an empty opened refund envelope and a few scattered rupee coins, under a harsh desk lamp.",
+   "words": [
+    "₹1,000",
+    "TRAP"
+   ],
+   "words_hi": [
+    "₹1,000",
+    "ट्रैप"
+   ]
+  },
+  "title": "PAN link nahi, to *refund* gaya? 😱"
+ },
+ "status": "intro-wait",
+ "timings": [
+  0.0,
+  3.462,
+  8.194,
+  11.486,
+  17.004,
+  23.832,
+  29.554,
+  36.746
+ ],
+ "topic": {
+  "follows": "A direct consumer risk, which suits Shorts. Starts with a personal loss rather than a vague premise.",
+  "hooks": [
+   "PAN kaam karna band kar de to kya-kya rukta hai?",
+   "Link status 1 minute mein kaise dekhein?"
+  ],
+  "id": "wk-2026-11-30-sglearning-short",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "",
+   "options": [
+    {
+     "closing": "",
+     "question": "PAN hai. Par tax ke kaam ka nahi. Bachchon ki fees ka plan tha. Refund ka paisa aaya hi nahi. Kyun?",
+     "text": "PAN hai. Par tax ke kaam ka nahi. Bachchon ki fees ka plan tha. Refund ka paisa aaya hi nahi. Kyun?",
+     "words": 21
+    },
+    {
+     "closing": "",
+     "question": "PAN card chal raha tha. Phir bhi refund ruka. Bachchon ki fees ka plan atak gaya. Byaaj bhi gaya. Kaise?",
+     "text": "PAN card chal raha tha. Phir bhi refund ruka. Bachchon ki fees ka plan atak gaya. Byaaj bhi gaya. Kaise?",
+     "words": 20
+    },
+    {
+     "closing": "",
+     "question": "ek hazaar rupaye ki fee bhari nahi. Refund ruka. Byaaj bhi gaya. Bachchon ki fees ka plan atak gaya. Kaun galat?",
+     "text": "ek hazaar rupaye ki fee bhari nahi. Refund ruka. Byaaj bhi gaya. Bachchon ki fees ka plan atak gaya. Kaun galat?",
+     "words": 21
+    },
+    {
+     "closing": "",
+     "question": "FD par zyada TDS kata. Refund bhi ruka. Wajah ek chhota sa Aadhaar link. Jo kisi ne nahi kiya. Kaise?",
+     "text": "FD par zyada TDS kata. Refund bhi ruka. Wajah ek chhota sa Aadhaar link. Jo kisi ne nahi kiya. Kaise?",
+     "words": 20
+    },
+    {
+     "closing": "",
+     "question": "Refund gaya. Byaaj bhi gaya. Bas ek soch: link ki kya jaldi? Is salary wale ghar ka refund atka. Kaise?",
+     "text": "Refund gaya. Byaaj bhi gaya. Bas ek soch: link ki kya jaldi? Is salary wale ghar ka refund atka. Kaise?",
+     "words": 20
+    }
+   ],
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: close-up of an Indian man's hand holding a laminated identity card above a wooden desk, card face turned away and blurred, an empty opened envelope beside it, warm morning window light, tense mood, no readable text. Time of day and light, overriding anything darker in the setting above: bright golden-hour sunlight or clear daylight, a blue or golden sky, warm saturated colours, his face and clothes fully lit; never night, dusk, storm clouds, lightning, fog, grey overcast, a dark or desaturated look. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a charcoal grey blazer over a light blue shirt. His forehead is clean and bare: no tilak, no bindi, no vermilion or sandal-paste mark, no dot or line of any colour on his face. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "PAN hai. Par tax ke kaam ka nahi. Bachchon ki fees ka plan tha. Refund ka paisa aaya hi nahi. Kyun?",
+   "text": "PAN hai. Par tax ke kaam ka nahi. Bachchon ki fees ka plan tha. Refund ka paisa aaya hi nahi. Kyun?",
+   "words": 21
+  },
+  "spare": true,
+  "summary": "Explains what happens to an unlinked PAN, the fee, higher TDS and how to check status on the income tax portal. Check the current deadline rules and the fee.",
+  "target_minutes": null,
+  "title": "PAN-Aadhaar link nahi kiya to PAN band ho jaata hai?",
+  "topic_score": 7,
+  "topic_score_why": [
+   "+1 touches the viewer's own money (in the summary)",
+   "+3 a scare or a crash",
+   "+1 a choice the viewer faces",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "voice": "voice_g8azc8xcwhlu",
+  "weekly": true
+ },
+ "updated": "2026-11-24T07:47:46+00:00",
+ "writer": "claude"
+}
