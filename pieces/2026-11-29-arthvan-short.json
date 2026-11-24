@@ -126,8 +126,15 @@
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
+  "intro": {
+   "clip": "2026-11-29-arthvan-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-24T08:03:42+00:00",
+   "seconds": 8.38
+  },
   "intro_checked": "e14edeaea93c2e38",
-  "intro_sent": "2026-11-22T20:44:56+00:00"
+  "intro_sent": "2026-11-22T20:44:56+00:00",
+  "yt_id": "Rn94SCiG3-4"
  },
  "kind": "short",
  "publish_day": "2026-11-29",
@@ -349,7 +356,7 @@
   },
   "title": "Sakshi Gopal, *gawahi* dene khud chale? 😱"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   6.963,
@@ -426,6 +433,7 @@
    "text": "Peeche mat dekhna. Bas ek shart thi. Usne dekh liya. Aur Bhagwan wahin hamesha ke liye ruk gaye. Sach hai ya kahani?",
    "words": 22
   },
+  "look": "indian-comic",
   "summary": "Puri ke Sakshi Gopal mandir ki lokkatha: do brahmanon, vachan aur Krishna ki gawahi. Check: katha ke srot (Odia parampara), moorti ka Vrindavan se Odisha tak ka safar, Satyabadi mandir ki tithi. Katha ko legend label karo.",
   "target_minutes": null,
   "title": "Sakshi Gopal: Bhagwan 1500 km chal kar gawahi dene aaye?",
@@ -439,6 +447,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-22T20:45:10+00:00",
+ "updated": "2026-11-24T08:03:50+00:00",
  "writer": "claude"
 }
