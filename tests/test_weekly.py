@@ -141,3 +141,13 @@ def test_learning_is_made_two_days_ahead_and_the_other_channel_keeps_its_week():
     days = lambda ch, kind: [(d - date(2026, 12, 1)).days for d, c, k in need if c == ch and k == kind]
     assert max(days("sglearning", "short")) == 2 and max(days("sglearning", "long")) <= 4
     assert max(days("arthvan", "short")) == 6
+
+
+def test_a_subject_made_weeks_ago_is_still_remembered_and_a_market_rally_is_not_politics(tmp_path):
+    from engine import topicscore
+    p = pieces.Piece(id="2026-09-01-arthvan-short", channel="arthvan", kind="short", publish_day=date(2026, 9, 1)); p.status = "posted"
+    p.script = {"title": "Konark mandir ka *chumbak* sach tha?", "scenes": []}; p.topic = {"title": "Konark ka chumbak"}; pieces.save(p, tmp_path)
+    seen = weekly.recent_titles(tmp_path, today=TODAY)
+    assert "Konark ka chumbak" in seen and weekly.repeats("Konark ke Sun Temple ka chumbak jahaz kheenchta tha?", seen)
+    assert weekly.recent_titles(tmp_path, days=30, today=TODAY) == []                       # older than the window
+    assert topicscore.score({"title": "Sona-chandi ki rally achanak kyun ruki?", "summary": "", "hooks": []}, "sglearning", TODAY, [])[0] > -10

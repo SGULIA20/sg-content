@@ -31,7 +31,8 @@ NUMBER = re.compile(r"\d|lakh|crore|%|\$|₹")
 CORPORATE = ["quarterly", "q1 ", "q2 ", "q3 ", "q4 ", "net profit", "profit rises", "profit jumps", "profit falls", "results", "earnings", "revenue",
              "ebitda", "stake", "acquisition", "merger", "takeover", "ipo", "funding", "valuation", "ceo", "chairman", "board meeting"]
 ROUNDUP = ["top 10", "10 badi khabrein", "khabrein", "roundup", "round-up", "news today", "market wrap", "today's"]
-BANNED = ["modi", "rahul gandhi", "bjp", "congress", "election", "rally", "pakistan", "minister", "parliament"]
+# 24 Nov 2026: "rally" also means a market rally and had a gold-price topic dropped as party politics; it is banned only as a political rally
+BANNED = ["modi", "rahul gandhi", "bjp", "congress", "election", "political rally", "chunavi rally", "pakistan", "minister", "parliament"]
 TOP_FAMOUS = ["mahabharat", "ramayan", "shiv", "mahadev", "vishnu", "krishna", "hanuman", "ram setu", "ravan", "kedarnath", "kailash", "jagannath",
               "dwarka", "lakshmi", "ganesh", "diwali"]
 FAMOUS = ["mahabharat", "ramayan", "shiv", "mahadev", "vishnu", "krishna", "hanuman", "ram setu", "ram ", "ravan", "dwarka", "kedarnath", "kailash",
