@@ -308,10 +308,43 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
     total = sum(durations) + END_S
     bed = music.bed("light", total + 5)
     out = out_dir / ("reel.mp4" if piece.kind == "short" else "long.mp4")
-    _run(["-f", "concat", "-safe", "0", "-i", str(concat), "-i", str(voice_wav), "-stream_loop", "-1", "-i", str(bed),
-          "-filter_complex", (f"[1:a]aresample=48000,apad=whole_dur={total:.3f},loudnorm=I={assemble.VOICE_LUFS}:TP=-1.5:LRA=11[v];"
-                              f"[2:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS,afade=t=out:st={max(0.0, total - 2):.2f}:d=2,"
-                              f"loudnorm=I={assemble.MUSIC_LUFS}:TP=-6:LRA=7[m];[v][m]amix=inputs=2:duration=longest:normalize=0,"
-                              f"apad=whole_dur={total:.3f},loudnorm=I={assemble.MIX_LUFS}:TP=-1.5:LRA=11[aout]"),
+    from . import sfx
+    extra, graph = [], plain_mix(total)
+    if sfx.on():                                                     # founder, 24 Nov 2026: "yes, upgrade the sound"
+        try:
+            groove = sfx.groove(sfx.MOODS.get(piece.channel, "upbeat"), total + 1, out_dir / "groove.wav")
+            fx = sfx.track(starts, total, out_dir / "sfx.wav", long=not short)
+            extra, graph = ["-i", str(groove), "-i", str(fx)], designed_mix(total)
+        except Exception as e:                                       # the plain pad still makes a video
+            print(f"sound design skipped for {piece.id}: {type(e).__name__}: {str(e)[:120]}", flush=True)
+    _run(["-f", "concat", "-safe", "0", "-i", str(concat), "-i", str(voice_wav), "-stream_loop", "-1", "-i", str(bed), *extra,
+          "-filter_complex", graph,
           "-map", "0:v", "-map", "[aout]", "-t", f"{total:.3f}", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", str(out)])
+    for f in ("groove.wav", "sfx.wav"):
+        (out_dir / f).unlink(missing_ok=True)
     return out
+
+
+def plain_mix(total: float) -> str:
+    """Voice over the pad at one steady level (the mix until 24 Nov 2026, and the fallback)."""
+    return (f"[1:a]aresample=48000,apad=whole_dur={total:.3f},loudnorm=I={assemble.VOICE_LUFS}:TP=-1.5:LRA=11[v];"
+            f"[2:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS,afade=t=out:st={max(0.0, total - 2):.2f}:d=2,"
+            f"loudnorm=I={assemble.MUSIC_LUFS}:TP=-6:LRA=7[m];[v][m]amix=inputs=2:duration=longest:normalize=0,"
+            f"apad=whole_dur={total:.3f},loudnorm=I={assemble.MIX_LUFS}:TP=-1.5:LRA=11[aout]")
+
+
+DESIGN_MUSIC_LUFS = -23      # the music in the gaps; under the voice the ducking takes it down to about where the plain pad sat
+
+
+def designed_mix(total: float) -> str:
+    """Inputs: 1 voice, 2 pad (looped), 3 groove, 4 effects. The pad and the groove make the music; the voice pushes it down while it
+    speaks (sidechain) and it comes back up in the gaps; the effects sit on top at a fixed level."""
+    return (f"[1:a]aresample=48000,apad=whole_dur={total:.3f},loudnorm=I={assemble.VOICE_LUFS}:TP=-1.5:LRA=11,asplit=2[v][key];"
+            f"[2:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS[pad];"
+            f"[3:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS[gr];"
+            f"[pad][gr]amix=inputs=2:duration=longest:normalize=0,afade=t=out:st={max(0.0, total - 2):.2f}:d=2,"
+            f"loudnorm=I={DESIGN_MUSIC_LUFS}:TP=-6:LRA=7[m0];"
+            f"[m0][key]sidechaincompress=threshold=0.05:ratio=4:attack=15:release=450[m];"
+            f"[4:a]aresample=48000,atrim=0:{total:.3f},asetpts=PTS-STARTPTS,volume=0.55[fx];"
+            f"[v][m][fx]amix=inputs=3:duration=longest:normalize=0,"
+            f"apad=whole_dur={total:.3f},loudnorm=I={assemble.MIX_LUFS}:TP=-1.5:LRA=11[aout]")
