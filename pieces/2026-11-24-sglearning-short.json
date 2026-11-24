@@ -85,6 +85,9 @@
    "voice": 9
   },
   "drafts": 1,
+  "ig_reel_id": "18109653941342629",
+  "ig_story_id": "18580155994072660",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-24-sglearning-short.mp4",
    "clip_seconds": 1,
@@ -95,6 +98,8 @@
   "intro_sent": "2026-11-17T19:39:23+00:00",
   "out_sha": "be250287d9365572ef56e14d24f1bbcd2c7bf45b",
   "out_sha_intro": true,
+  "threads_id": "18127022851917335",
+  "threads_poll_id": "18043191326845120",
   "yt_id": "XxnIlAa7Jys",
   "yt_long_link": "UgyzNYQxRxgzG7i0r-94AaABAg"
  },
@@ -255,7 +260,7 @@
   },
   "title": "Does your donation really *cut* your tax? 🪔"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   4.509,
@@ -311,6 +316,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-18T07:28:16+00:00",
+ "updated": "2026-11-24T16:20:40+00:00",
  "writer": "claude"
 }
