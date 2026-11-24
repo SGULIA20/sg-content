@@ -35,6 +35,8 @@ jobs:
           YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
           YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
           SG_COMMAND_KEY: ${{ secrets.SG_COMMAND_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}     # 24 Nov 2026: he is told what was replied
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python -m engine.ytreplies
       - name: Remember which comments were drafted
         if: always()

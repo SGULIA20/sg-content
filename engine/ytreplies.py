@@ -17,7 +17,8 @@ from .config import CHANNELS, ROOT
 API = "https://www.googleapis.com/youtube/v3"
 STATE = ROOT / "logs" / "yt-replies.json"
 MODEL = "claude-haiku-5-5"
-WINDOW = timedelta(days=3)
+WINDOW = timedelta(days=10)          # 24 Nov 2026: was 3 days; comments from 18-21 Nov sat unanswered and are picked up once more
+AUTO_FILE = ROOT / "content" / "replies.json"   # {"auto": true}: friendly replies are posted at once (founder, 24 Nov 2026)
 MAX_DRAFTS = 12
 PROMPT = """You reply as SG, the creator of the YouTube channel "{channel}" ({about}), to one viewer comment.
 Write ONE short reply (at most 2 sentences) in the same language and script the viewer used (Hinglish stays Hinglish).
@@ -49,6 +50,8 @@ def new_comments(token: str, now: datetime, seen: dict, call=youtube.call) -> li
         s = top["snippet"]
         if top["id"] in seen or (s.get("authorChannelId") or {}).get("value") == own or now - _when(s["publishedAt"]) > WINDOW:
             continue
+        if int(item["snippet"].get("totalReplyCount") or 0) > 0:        # already answered (by him in the app, or an earlier run)
+            continue
         out.append({"comment_id": top["id"], "video_id": s.get("videoId", ""), "author": s.get("authorDisplayName", ""),
                     "text": (s.get("textOriginal") or "")[:1000]})
     return out
@@ -76,9 +79,24 @@ def post_reply(token: str, parent_id: str, text: str, call=youtube.call) -> str:
     return body.get("id", "")
 
 
+def auto_on(path: Path = AUTO_FILE) -> bool:
+    try:
+        return bool(json.loads(Path(path).read_text()).get("auto"))
+    except (OSError, ValueError):
+        return False
+
+
 def run(env=None, now: datetime | None = None, root: Path = ROOT, state_path: Path = STATE, call=youtube.call, client=None,
-        sync=command_center.replies_sync, token_for=youtube.access_token) -> dict:
+        sync=command_center.replies_sync, token_for=youtube.access_token, auto: bool | None = None, notify=None) -> dict:
+    """auto (founder, 24 Nov 2026: "why automated reply on reels and videos not on ... 4-5 comments so far but no revert"): each drafted
+    reply is posted at once and he is told what was said; a reply YouTube refuses stays a draft for his tap. The drafts had been going to
+    the control room, which answers nothing when it is not live, so no reply had ever been posted."""
     now = now or datetime.now(timezone.utc)
+    auto = auto_on() if auto is None else auto
+    if notify is None:
+        from . import telegram
+        notify = telegram.send
+    sent = []
     try:
         state = json.loads(Path(state_path).read_text())
     except (FileNotFoundError, ValueError):
@@ -117,15 +135,24 @@ def run(env=None, now: datetime | None = None, root: Path = ROOT, state_path: Pa
                 print(f"draft failed: {str(e)[:160]}", flush=True)
                 del seen[c["comment_id"]]                              # try again next run
                 continue
+            if text and auto:
+                try:
+                    post_reply(token(ch), c["comment_id"], text, call)
+                    sent.append(f"{CHANNELS[ch].display_name}, {c['author']}: \"{c['text'][:80]}\"\n   ↳ {text}")
+                    continue
+                except Exception as e:
+                    print(f"auto reply not posted: {str(e)[:160]}", flush=True)
             if text:
                 drafts.append({**c, "channel": ch, "draft": text})
     if drafts or posted or failed:
         sync(drafts, posted, failed, root=root, env=env)
+    if sent:
+        notify("💬 Replied on YouTube for you:\n\n" + "\n\n".join(sent[:10]))
     cutoff = (now - timedelta(days=14)).isoformat()
     state["seen"] = {k: v for k, v in seen.items() if v >= cutoff}
     Path(state_path).parent.mkdir(parents=True, exist_ok=True)
     Path(state_path).write_text(json.dumps(state, indent=1))
-    return {"posted": len(posted), "failed": len(failed), "drafts": len(drafts)}
+    return {"posted": len(posted), "failed": len(failed), "drafts": len(drafts), "auto": len(sent)}
 
 
 def main(argv=None) -> int:

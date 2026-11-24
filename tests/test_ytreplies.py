@@ -46,14 +46,34 @@ def test_new_comments_get_drafts_spam_and_own_and_old_ones_do_not_and_approved_o
         return [{"id": 7, "channel": "sglearning", "comment_id": "c0", "draft": "Shukriya!"}] if len(syncs) == 1 else []
     claude = FakeClaude(["Ravi ji, video mein FD aur gold dono ka asar dikhaya hai; apne adviser se zaroor poochhiye.", "SKIP"] * 2)
     out = ytreplies.run({}, NOW, tmp_path, tmp_path / "s.json", call=_call_factory(posted), client=claude, sync=sync,
-                        token_for=lambda ch, env=None: "tok")
+                        token_for=lambda ch, env=None: "tok", auto=False, notify=lambda t: None)
     assert posted == [{"parentId": "c0", "textOriginal": "Shukriya!"}]                       # approved reply went out
     new, done, failed = syncs[-1]
     assert done == [7] and failed == []
     assert [d["comment_id"] for d in new] == ["c1"]                                             # c2 is spam (SKIP); c3 is our own; c4 is old
     assert new[0]["draft"].startswith("Ravi ji") and "Papa ki FD" in claude.prompts[0]
-    assert out == {"posted": 1, "failed": 0, "drafts": 1}
+    assert out == {"posted": 1, "failed": 0, "drafts": 1, "auto": 0}
     syncs.clear(); posted.clear()
     ytreplies.run({}, NOW, tmp_path, tmp_path / "s.json", call=_call_factory(posted), client=FakeClaude([]), sync=sync,
-                  token_for=lambda ch, env=None: "tok")
+                  token_for=lambda ch, env=None: "tok", auto=False, notify=lambda t: None)
     assert len(syncs) == 2 and syncs[-1][0] == []                                             # nothing is drafted twice
+
+
+def test_auto_mode_posts_each_reply_at_once_tells_the_founder_and_skips_answered_threads(tmp_path):
+    """Founder, 24 Nov 2026: 'why automated reply on reels and videos not on ... 4-5 comments so far but no revert'."""
+    posted, told, syncs = [], [], []
+    claude = FakeClaude(["Ravi ji, video mein dono ka asar dikhaya hai.", "SKIP"])
+    out = ytreplies.run({}, NOW, tmp_path, tmp_path / "s.json", call=_call_factory(posted), client=claude,
+                        sync=lambda new, done, failed=None, **kw: syncs.append(new) or [], token_for=lambda ch, env=None: "tok", auto=True, notify=told.append)
+    assert posted == [{"parentId": "c1", "textOriginal": "Ravi ji, video mein dono ka asar dikhaya hai."}]      # posted without a tap; the spam got nothing
+    assert out["auto"] == 1 and out["drafts"] == 0 and len(told) == 1 and "Ravi" in told[0]
+    def answered(method, url, token, json_body=None, **k):
+        status, h, body = _call_factory(posted)(method, url, token, json_body=json_body, **k)
+        if "commentThreads" in url:
+            for it in body["items"]:
+                it["snippet"]["totalReplyCount"] = 1
+        return status, h, body
+    posted.clear()
+    out = ytreplies.run({}, NOW, tmp_path, tmp_path / "s2.json", call=answered, client=FakeClaude([]), sync=lambda *a, **k: [],
+                        token_for=lambda ch, env=None: "tok", auto=True, notify=told.append)
+    assert posted == [] and out["auto"] == 0                                                   # a thread that already has a reply is left alone
