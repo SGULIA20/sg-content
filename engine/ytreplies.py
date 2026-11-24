@@ -21,7 +21,9 @@ WINDOW = timedelta(days=10)          # 24 Nov 2026: was 3 days; comments from 18
 AUTO_FILE = ROOT / "content" / "replies.json"   # {"auto": true}: friendly replies are posted at once (founder, 24 Nov 2026)
 MAX_DRAFTS = 12
 PROMPT = """You reply as SG, the creator of the YouTube channel "{channel}" ({about}), to one viewer comment.
-Write ONE short reply (at most 2 sentences) in the same language and script the viewer used (Hinglish stays Hinglish).
+Write ONE short reply (at most 2 sentences) in HINGLISH: everyday Hindi written in Latin letters with the usual English words mixed in
+("Shukriya! Aapne sahi pakda, agle video mein isi par baat karenge."). Always Hinglish, whatever language or script the viewer used
+(founder, 24 Nov 2026: "it should be in hinglish"); never Devanagari, never full English.
 Warm, specific to what they said, never salesy. Never give personal financial advice or promise returns; for a money question,
 point them to the video's idea and suggest checking with an adviser. Never mention any app. No hashtags.
 A short praise, a greeting, a devotional line ("Jai Shri Ram") or only an emoji still gets a brief warm thank-you in the viewer's script.
