@@ -77,6 +77,8 @@ def videos(root: Path, channel: str, today: date, stats: dict, curve) -> list:
                 pass
         if (p.ids.get("watch") or {}).get("opening") is not None:
             row["review_opening_score"] = p.ids["watch"]["opening"]
+            if p.ids["watch"].get("best_change"):                     # what the finished-video review said would have helped most
+                row["review_said"] = str(p.ids["watch"]["best_change"])[:200]
         out.append(row)
     return sorted(out, key=lambda r: -r["views"])[:MAX_VIDEOS]
 

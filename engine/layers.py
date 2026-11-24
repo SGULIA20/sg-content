@@ -19,9 +19,15 @@ FIG = re.compile(r"(₹|rs\.?\s?|\$)?\s?(\d[\d,]*(?:\.\d+)?)\s?(%|percent|lakh|c
 YEAR = re.compile(r"^(19|20)\d\d$")
 
 
+TEST_END = date(2026, 11, 30)
+# The result is acted on, not only reported (founder, 24 Nov 2026: "on analysation you need to action on next reels next scripts"). On
+# Instagram the Shorts WITH layers were skipped more on both channels: Learning 67.7% against 52.0%, SG-MYTH 64.0% against 46.6%, and
+# watched for less (four and five Shorts in each arm). Layers are off from the pieces of 30 Nov on.
+
+
 def on_for(day: date) -> bool:
-    """Alternate days from the test start: the start day has layers, the next day none, and so on. Before the test: none."""
-    if day < TEST_START:
+    """Alternate days during the test (5 to 29 Nov 2026): the start day has layers, the next none, and so on. None before or after."""
+    if day < TEST_START or day >= TEST_END:
         return False
     return (day - TEST_START).days % 2 == 0
 

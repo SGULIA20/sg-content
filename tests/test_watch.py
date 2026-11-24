@@ -36,7 +36,7 @@ def test_a_good_video_sends_nothing_and_a_weak_one_tells_the_founder_what_a_view
                                            "issues": [{"frame": 6, "second": 27, "problem": "the app form is shown while the line says a result line", "fix": "show the result screen"}]})
     r = watch.review(p, tmp_path / "v.mp4", tmp_path / "w", ask=lambda c: weak, grab=_grab, duration=50.0)
     text = watch.message(p, r)
-    assert "Opening 4/10" in text and "second 27" in text and "Report only" in text
+    assert "Opening 4/10" in text and "second 27" in text and "goes up as made" in text
 
 
 def test_a_review_that_fails_is_forgotten_and_the_piece_keeps_the_score_of_one_that_works(tmp_path, monkeypatch):
@@ -47,3 +47,21 @@ def test_a_review_that_fails_is_forgotten_and_the_piece_keeps_the_score_of_one_t
     r = watch.look(p, tmp_path / "v.mp4", tmp_path, notify=told.append, ask=lambda c: ok, grab=_grab)
     assert r["opening"] == 5 and p.ids["watch"] == {"opening": 5, "verdict": "good", "best_change": "start on the question", "issues": 0}
     assert len(told) == 1 and "Opening 5/10" in told[0]                                       # a skippable opening is worth telling him
+
+
+def test_the_review_acts_the_flagged_pictures_are_redrawn_once_and_a_weak_opening_gets_a_stronger_first_picture(tmp_path, monkeypatch):
+    """Founder, 24 Nov 2026: 'your purpose is just not sending message or report ... on analysation you need to action on next reels'."""
+    monkeypatch.setattr(__import__("engine.qa", fromlist=["probe"]), "probe", lambda v: {"duration": 50.0})
+    p, told = _piece(), []
+    for i, sc in enumerate(p.script["scenes"]):
+        sc["visual"] = {"type": "art", "prompt": f"photorealistic view {i}"}
+    weak = json.dumps({"opening": 4, "opening_why": "a calm temple", "verdict": "fix", "best_change": "open on the dice",
+                       "issues": [{"frame": 6, "second": 27, "problem": "the picture shows a form, the line says a result", "fix": "show the result line on the screen"},
+                                  {"frame": 99, "second": 1, "problem": "x", "fix": "y"}]})
+    r = watch.look(p, tmp_path / "v.mp4", tmp_path, notify=told.append, ask=lambda c: weak, grab=_grab)
+    assert r["redrawn"] == [0, 5] and p.ids["watch_redo"] == [0, 5]
+    assert p.script["scenes"][5]["visual"]["prompt"] == "photorealistic view 5. Correction after review: show the result line on the screen"
+    assert "most dramatic" in p.script["scenes"][0]["visual"]["prompt"] and p.script["scenes"][1]["visual"]["prompt"] == "photorealistic view 1"
+    assert "2 picture(s) are being redrawn" in told[0]
+    assert watch.look(p, tmp_path / "v.mp4", tmp_path, notify=told.append, ask=lambda c: weak, grab=_grab) is None and len(told) == 1    # the rebuilt video is not reviewed again
+    assert watch.redraw(p, {"issues": [], "opening": 2, "scene_of_frame": {}}) == []                                                   # once only
