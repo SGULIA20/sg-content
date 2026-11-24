@@ -24,7 +24,8 @@ PROMPT = """You reply as SG, the creator of the YouTube channel "{channel}" ({ab
 Write ONE short reply (at most 2 sentences) in the same language and script the viewer used (Hinglish stays Hinglish).
 Warm, specific to what they said, never salesy. Never give personal financial advice or promise returns; for a money question,
 point them to the video's idea and suggest checking with an adviser. Never mention any app. No hashtags.
-If the comment is spam, abuse, only an emoji, or needs no answer, reply exactly SKIP.
+A short praise, a greeting, a devotional line ("Jai Shri Ram") or only an emoji still gets a brief warm thank-you in the viewer's script.
+Only if the comment is spam, an advertisement or abuse, reply exactly SKIP.
 
 Video title: {title}
 Comment by {author}: {text}"""
@@ -66,10 +67,16 @@ def video_title(token: str, video_id: str, call=youtube.call) -> str:
 def draft(channel: str, comment: dict, title: str, client=None) -> str | None:
     import anthropic
     client = client or anthropic.Anthropic(api_key=secrets.get("ANTHROPIC_API_KEY"))
-    msg = client.messages.create(model=MODEL, max_tokens=300, messages=[{"role": "user", "content": PROMPT.format(
+    # 24 Nov 2026: the first automatic run read four comments and wrote no reply to any. 300 tokens leaves no room once the model thinks
+    # first, and an empty answer was taken for SKIP. An empty answer is now an error (the comment is tried again next run).
+    msg = client.messages.create(model=MODEL, max_tokens=2000, messages=[{"role": "user", "content": PROMPT.format(
         channel=CHANNELS[channel].display_name, about=ABOUT[channel], title=title, author=comment["author"], text=comment["text"])}])
     text = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text").strip()
-    return None if not text or text.upper().startswith("SKIP") else text[:500]
+    if not text:
+        raise RuntimeError(f"no reply text (stop: {getattr(msg, 'stop_reason', '?')})")
+    skip = text.upper().startswith("SKIP")
+    print(f"comment by {comment['author'][:20]}: \"{comment['text'][:60]}\" -> {'SKIP' if skip else 'reply'}", flush=True)
+    return None if skip else text[:500]
 
 
 def post_reply(token: str, parent_id: str, text: str, call=youtube.call) -> str:
