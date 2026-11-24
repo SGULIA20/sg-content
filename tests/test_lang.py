@@ -53,3 +53,12 @@ def test_learning_goes_back_to_hinglish_from_the_until_day_and_the_english_week_
     assert lang.english(P(id="2026-11-29-sglearning-short", channel="sglearning", publish_day="2026-11-29"))
     assert not lang.english(P(id="2026-11-30-sglearning-short", channel="sglearning", publish_day="2026-11-30"))
     assert not lang.english(P(id="2026-11-30-arthvan-short", channel="arthvan", publish_day="2026-11-30"))
+
+
+def test_only_the_learning_clip_prompt_asks_for_a_bare_forehead():
+    from engine import intro, pieces
+    from datetime import date
+    for ch, want in (("sglearning", True), ("arthvan", False)):
+        p = pieces.Piece(id=f"2026-11-30-{ch}-short", channel=ch, kind="short", publish_day=date(2026, 11, 30))
+        p.topic = {"title": "x"}; p.script = {"scenes": [{"visual": {"prompt": "a street"}}]}
+        assert ("no tilak" in intro.story_prompt(p, {"text": "Kyun?"})) is want
