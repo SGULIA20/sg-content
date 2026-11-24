@@ -1,0 +1,382 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "scripture",
+   "number": 1754.0,
+   "quote": "Chinese wall, which makes a considerable figure upon the terrestrial globe, and may be discerned at the moon.",
+   "source_date": "1887",
+   "source_name": "The Family Memoirs of the Rev. William Stukeley",
+   "source_url": "https://en.wikipedia.org/wiki/Artificial_structures_visible_from_space",
+   "text": "English antiquarian William Stukeley wrote in a 1754 letter that Hadrian's Wall was surpassed only by the Great Wall of China, which may be discerned at the moon.",
+   "unit": "CE"
+  },
+  {
+   "label": "scripture",
+   "number": 1895.0,
+   "quote": "Besides its age it enjoys the reputation of being the only work of human hands on the globe visible from the moon.",
+   "source_date": "1895",
+   "source_name": "The Peoples and Politics of the Far East",
+   "source_url": "https://en.wikipedia.org/wiki/Artificial_structures_visible_from_space",
+   "text": "English writer Henry Norman noted in 1895 that the Great Wall held the reputation of being the only human-made work on the globe visible from the Moon.",
+   "unit": "CE"
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "The Great Wall of China, frequently billed as the only man-made object visible from space, generally isn't, at least to the unaided eye in low Earth orbit. It certainly isn't visible from the Moon.",
+   "source_date": "2005-05-09",
+   "source_name": "NASA",
+   "source_url": "https://www.nasa.gov/vision/space/workinginspace/great_wall.html",
+   "text": "A pervasive modern folklore claimed that the Great Wall of China is the only artificial monument on Earth visible to the naked human eye from the Moon.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 384400.0,
+   "quote": "It certainly isn't visible from the Moon.",
+   "source_date": "2005-05-09",
+   "source_name": "NASA",
+   "source_url": "https://www.nasa.gov/vision/space/workinginspace/great_wall.html",
+   "text": "NASA confirmed that the Great Wall of China is impossible to see with the naked eye from the Moon at an average distance of 384,400 kilometres.",
+   "unit": "km"
+  },
+  {
+   "label": "archaeology",
+   "number": 1969.0,
+   "quote": "No man-made object is visible at this scale.",
+   "source_date": "2005-05-09",
+   "source_name": "NASA",
+   "source_url": "https://www.nasa.gov/vision/space/workinginspace/great_wall.html",
+   "text": "Apollo 12 astronaut Alan Bean stated that no man-made object on Earth is visible at lunar distances, where only continents, clouds, oceans, and vegetation appear.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 17000.0,
+   "quote": "Not even the best of human eyes at a simple glace could see the Great Wall of China from space.",
+   "source_date": "2008-07-01",
+   "source_name": "Journal of Optometry",
+   "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3972694/",
+   "text": "An optical study determined that resolving the Great Wall from the Moon with unaided human eyesight would require visual acuity 17,000 times sharper than normal.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": 2004.0,
+   "quote": "Now education officials have ordered school textbooks rewritten to remove the decades-old claim that the wall is the only man-made structure that an orbiting astronaut can view with the naked eye.",
+   "source_date": "2004-03-12",
+   "source_name": "CBC News",
+   "source_url": "https://www.cbc.ca/news/science/great-wall-invisible-from-space-chinese-astronaut-1.467364",
+   "text": "Chinese education officials ordered elementary school textbooks rewritten in 2004 to remove the long-standing claim that the Great Wall can be seen from space.",
+   "unit": "CE"
+  },
+  {
+   "label": "disputed",
+   "number": 320.0,
+   "quote": "In Earth's orbit at a height of 160 to 320 kilometers, the Great Wall of China is indeed visible to the naked eye.",
+   "source_date": "2008-07-01",
+   "source_name": "Journal of Optometry",
+   "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3972694/",
+   "text": "Astronaut Eugene Cernan maintained that the Great Wall is visible to the naked eye from low Earth orbit up to 320 kilometres under ideal sunlight, whereas optical scientists and other astronauts dispute this claim by pointing to the limits of human ocular resolution and low contrast against surrounding terrain.",
+   "unit": "km"
+  },
+  {
+   "label": "archaeology",
+   "number": 2004.0,
+   "quote": "Chiao himself said he didn't see the wall, and wasn't sure if the picture showed it.",
+   "source_date": "2005-05-09",
+   "source_name": "NASA",
+   "source_url": "https://www.nasa.gov/vision/space/workinginspace/great_wall.html",
+   "text": "Astronaut Leroy Chiao captured an orbital photograph of the Great Wall from the International Space Station in 2004 using a 180-millimetre camera lens, confirming that he could not detect the wall with his naked eyes.",
+   "unit": "CE"
+  }
+ ],
+ "id": "2026-12-01-arthvan-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-24",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 19.5,
+   "usd": 0.16768,
+   "voice": 12
+  },
+  "drafts": 1,
+  "ig_story_id": "skipped: Reel over 60 s",
+  "music": {
+   "by": "Kevin MacLeod (incompetech.com)",
+   "licence": "CC BY 4.0",
+   "title": "Constance"
+  },
+  "sound": "track",
+  "watch": {
+   "best_change": "Put the Great Wall, seen tiny or invisible from space, into the first frame and make the first line a direct challenge like 'Great Wall chand se dikhti hai? Jo dekhne gaya, use bhi nahi dikhi', so the opening pays off the title instantly.",
+   "issues": 6,
+   "opening": 7,
+   "verdict": "fix"
+  },
+  "watch_redo": [
+   0,
+   1,
+   2,
+   4
+  ]
+ },
+ "kind": "short",
+ "publish_day": "2026-12-01",
+ "reasons": [
+  "review: redrawing 4 picture(s) before upload"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "China ka pehla astronaut apni hi Great Wall dhoondh nahi paya.\nYeh daava 1754 ki ek chitthi se shuru hua, tab koi space gaya hi nahi tha.\nChand se aankh ko 17,000 guna tez hona padega.\nAapne bachpan mein kya padha tha?\nUs dost ko bhejo jo kehta hai Wall chand se dikhti hai.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#Mythology",
+     "#Archaeology",
+     "#Rahasya",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "China ka pehla astronaut apni hi Great Wall dhoondh nahi paya. Daava 1754 ki chitthi se shuru hua, jab koi space gaya hi nahi tha. Aapne school mein kya padha tha, Wall chand se dikhti hai? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Astronaut ki khoj",
+     "00:00 Daava kahan se aaya",
+     "00:00 Chand se sach",
+     "00:00 Bahas aur twist"
+    ],
+    "description": "China ka pehla astronaut Great Wall dhoondhta raha, par deewar nahi dikhi. Yeh daava 1754 ki ek chitthi se shuru hua, jab koi insaan space gaya hi nahi tha. Chand se kya dikhta hai, aur paas ke orbit par bahas aaj bhi kyun jaari hai, sab ek Reel mein. Us dost ko bhejo jo kehta hai Wall chand se dikhti hai.",
+    "tags": [
+     "Great Wall",
+     "Great Wall of China",
+     "chand",
+     "moon",
+     "space",
+     "astronaut",
+     "myth",
+     "Hinglish",
+     "China",
+     "sabut ke saath",
+     "space myth"
+    ],
+    "title": "Great Wall chand se dikhti hai? 1754 ki kahani"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo kehta hai Wall chand se dikhti hai.",
+  "hook": "China ka pehla astronaut, khidki se apni Great Wall dhoondh raha hai.",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view from inside a small spacecraft capsule, an astronaut in a white spacesuit seen from behind pressing close to a round window, below him the vast curved Earth over northern China with brown mountains, winding rivers and desert under harsh sunlight, black space above, dramatic and tense mood. Correction after review: Retag it as something like 'SPACE' or 'MYTH', or drop the tag from the opening frame.",
+     "type": "art"
+    },
+    "vo": "China ka pehla astronaut, khidki se apni Great Wall dhoondh raha hai. Neeche pahad, nadiyaan, registan. Deewar? Kahin nahi. Kyun?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic candlelit study in 18th century England, an elderly English gentleman in a powdered wig and long coat seen from the side writing a letter with a quill on parchment, a brass telescope by the window and a full moon outside, warm natural candle light. Correction after review: Shorten the source text so it fits, or let the pill widen and show the full name.",
+     "type": "art"
+    },
+    "vo": "1754, England. Ek angrez chitthi mein likhta hai. China ki deewar chand se dikh sakti hai. Par tab koi space gaya hi nahi tha."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of an old printed book from the 1890s lying open on a wooden desk, yellowed pages, a magnifying glass and a pocket watch beside it, soft afternoon window light, no readable text. Correction after review: Show the full label, and use an image of a person writing or a printed page with the quote visible.",
+     "type": "art"
+    },
+    "vo": "Ek aur angrez likhta hai. Insaan ki akeli cheez, jo chand se dikhe."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic classroom scene, children at wooden desks seen from behind looking at a large printed picture of the Great Wall on mountain ridges pinned to the wall, a globe on the teacher's table, natural daylight, documentary photograph style, no text",
+     "type": "art"
+    },
+    "vo": "Phir yeh line kitabon mein, har zubaan par. Kisi ne check kiya?"
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of a space capsule landing on the grassy steppe at dawn, a parachute spread on the ground, recovery crew running toward it from a distance, golden low sunlight and dust in the air. Correction after review: Open this line on a launch shot and cut to the landing on 'laut kar'. Retag it to fit the topic.",
+     "type": "art"
+    },
+    "vo": "Phir China ka astronaut upar jaata hai. Laut kar seedha bolta hai, mujhe Wall nahi dikhi."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a stack of new school textbooks being unpacked from a cardboard box in a Chinese school storeroom, hands seen from above, older worn books set aside, soft fluorescent and window light, no readable text",
+     "type": "art"
+    },
+    "vo": "China mein school ki kitaabein badli jaati hain. Purani line hata di jaati hai. Par chand ka kya?"
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view from the grey dusty lunar surface, an astronaut in a white spacesuit seen from behind standing on the Moon, the small blue and white Earth hanging in the black sky showing only clouds, oceans and land, stark sunlight",
+     "type": "art"
+    },
+    "vo": "Apollo ka ek astronaut chand se Dharti dekhta hai. Bolta hai, sirf zameen, baadal, samundar dikhe. Insaan ki banayi kuch nahi."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic extreme close-up of a human eye with the reflection of a distant Earth in the iris, laboratory optical lenses blurred in the background, cool clinical light, scientific and wondrous mood",
+     "type": "art"
+    },
+    "vo": "Aankh ke vigyaaniyon ne hisaab lagaya. Chand se Wall dekhni ho, toh aankh 17,000 guna tez chahiye. Deewar lambi hai, par patli."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view from high altitude of the Great Wall winding along brown mountain ridges, the stone wall almost the same colour as the surrounding rock and earth, long shadows in low evening sunlight making it barely distinguishable",
+     "type": "art"
+    },
+    "vo": "Lekin twist hai. Ek astronaut kehta tha, Wall dikhti hai. Dharti ke kareeb, tez dhoop mein. Baaki vigyaani kehte hain, nahi. Deewar pahad ke rang mein kho jaati hai."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic interior of a space station module, an astronaut floating seen from behind holding a large camera with a long zoom lens against a window, the Earth's surface far below with mountains and haze, cool natural light",
+     "type": "art"
+    },
+    "vo": "Ek astronaut ne space station se zoom lens se photo khinchi. Par khud bola, aankh se nahi dikhi."
+   },
+   {
+    "facts_used": [
+     3,
+     7
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic satellite-style view of northern Chinese terrain, a thin winding river and a faint ridge line running side by side across mountains, hard to tell which is the wall, hazy atmosphere and soft sunlight, mysterious mood",
+     "type": "art"
+    },
+    "vo": "Toh sach kya hai? Chand se, bilkul nahi. Paas se, bahas abhi baaki hai. Kisi ne deewar dekhi, ya nadi ko deewar samjha?"
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view at dusk of the Great Wall stretching over misty mountain ridges, a lone traveller seen from behind standing on the wall looking up at a large full moon rising, calm and wondrous mood",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo kehta hai Wall chand se dikhti hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "GREAT WALL",
+   "name_hi": "ग्रेट वॉल",
+   "scene": "The Great Wall snaking across misty mountain ridges seen from high above, shrinking into an invisible thread on the curved Earth, with the grey Moon looming huge in the black sky.",
+   "words": [
+    "17,000X",
+    "GAYAB?"
+   ],
+   "words_hi": [
+    "17,000X",
+    "गायब?"
+   ]
+  },
+  "title": "Great Wall, kya *chand* se dikhti hai? 🤯"
+ },
+ "status": "voiced",
+ "timings": [
+  0.0,
+  8.642,
+  16.576,
+  21.149,
+  25.076,
+  29.845,
+  35.965,
+  43.624,
+  52.577,
+  62.162,
+  67.293,
+  76.541
+ ],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "en.wikipedia.org",
+   "nio.res.in",
+   "britannica.com",
+   "the scripture or text named in the story",
+   "nasa.gov",
+   "who.int",
+   "nih.gov",
+   "nationalgeographic.com",
+   "smithsonianmag.com",
+   "a university or museum page"
+  ],
+  "follows": "Monument myth with a shock question; non-India slot with a fresh angle after the Kumbhalgarh wall Short.",
+  "hooks": [
+   "Kya sach mein ek deewar chand se dikh sakti hai?",
+   "China ke pehle astronaut ne Wall dhoondhi, phir kya bola?"
+  ],
+  "id": "wk-2026-12-01-arthvan-short",
+  "summary": "Tells the popular claim that the Wall is visible from space, then checks it against astronaut accounts (Yang Liwei 2003, ISS crews) and the Wall's width. Check where the claim first appeared, in print before 1932.",
+  "target_minutes": null,
+  "title": "Kya Great Wall of China chand se dikhti hai?",
+  "topic_score": 7,
+  "topic_score_why": [
+   "+3 a widely held belief and its reason",
+   "+3 a shock question or a mystery",
+   "+1 asks a question"
+  ],
+  "viral": true,
+  "voice": "voice_7o0kddoq6q2z",
+  "weekly": true
+ },
+ "updated": "2026-11-24T19:08:09+00:00",
+ "writer": "claude"
+}

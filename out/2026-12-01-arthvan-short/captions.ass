@@ -1,0 +1,77 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.87,Default,,0,0,0,,China ka pehla astronaut,
+Dialogue: 0,0:00:01.87,0:00:03.75,Default,,0,0,0,,khidki se apni Great Wall dhoondh
+Dialogue: 0,0:00:03.75,0:00:04.45,Default,,0,0,0,,raha hai.
+Dialogue: 0,0:00:04.45,0:00:05.38,Default,,0,0,0,,Neeche pahad,
+Dialogue: 0,0:00:05.38,0:00:05.85,Default,,0,0,0,,nadiyaan,
+Dialogue: 0,0:00:05.85,0:00:06.55,Default,,0,0,0,,registan.
+Dialogue: 0,0:00:06.55,0:00:07.02,Default,,0,0,0,,Deewar?
+Dialogue: 0,0:00:07.02,0:00:07.96,Default,,0,0,0,,Kahin nahi.
+Dialogue: 0,0:00:07.96,0:00:08.19,Default,,0,0,0,,Kyun?
+Dialogue: 0,0:00:08.64,0:00:08.87,Default,,0,0,0,,1754,
+Dialogue: 0,0:00:08.87,0:00:09.32,Default,,0,0,0,,England.
+Dialogue: 0,0:00:09.32,0:00:11.36,Default,,0,0,0,,Ek angrez chitthi mein likhta hai.
+Dialogue: 0,0:00:11.36,0:00:13.18,Default,,0,0,0,,China ki deewar chand se dikh
+Dialogue: 0,0:00:13.18,0:00:13.86,Default,,0,0,0,,sakti hai.
+Dialogue: 0,0:00:13.86,0:00:15.45,Default,,0,0,0,,Par tab koi space gaya hi
+Dialogue: 0,0:00:15.45,0:00:16.13,Default,,0,0,0,,nahi tha.
+Dialogue: 0,0:00:16.58,0:00:18.09,Default,,0,0,0,,Ek aur angrez likhta hai.
+Dialogue: 0,0:00:18.09,0:00:19.61,Default,,0,0,0,,Insaan ki akeli cheez,
+Dialogue: 0,0:00:19.61,0:00:20.70,Default,,0,0,0,,jo chand se dikhe.
+Dialogue: 0,0:00:21.15,0:00:22.79,Default,,0,0,0,,Phir yeh line kitabon mein,
+Dialogue: 0,0:00:22.79,0:00:23.60,Default,,0,0,0,,har zubaan par.
+Dialogue: 0,0:00:23.60,0:00:24.63,Default,,0,0,0,,Kisi ne check kiya?
+Dialogue: 0,0:00:25.08,0:00:26.90,Default,,0,0,0,,Phir China ka astronaut upar jaata
+Dialogue: 0,0:00:26.90,0:00:27.07,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:27.07,0:00:28.23,Default,,0,0,0,,Laut kar seedha bolta hai,
+Dialogue: 0,0:00:28.23,0:00:29.39,Default,,0,0,0,,mujhe Wall nahi dikhi.
+Dialogue: 0,0:00:29.84,0:00:31.87,Default,,0,0,0,,China mein school ki kitaabein badli
+Dialogue: 0,0:00:31.87,0:00:32.48,Default,,0,0,0,,jaati hain.
+Dialogue: 0,0:00:32.48,0:00:34.70,Default,,0,0,0,,Purani line hata di jaati hai.
+Dialogue: 0,0:00:34.70,0:00:35.51,Default,,0,0,0,,Par chand ka kya?
+Dialogue: 0,0:00:35.97,0:00:37.97,Default,,0,0,0,,Apollo ka ek astronaut chand se
+Dialogue: 0,0:00:37.97,0:00:38.97,Default,,0,0,0,,Dharti dekhta hai.
+Dialogue: 0,0:00:38.97,0:00:39.57,Default,,0,0,0,,Bolta hai,
+Dialogue: 0,0:00:39.57,0:00:40.17,Default,,0,0,0,,sirf zameen,
+Dialogue: 0,0:00:40.17,0:00:40.57,Default,,0,0,0,,baadal,
+Dialogue: 0,0:00:40.57,0:00:41.57,Default,,0,0,0,,samundar dikhe.
+Dialogue: 0,0:00:41.57,0:00:43.17,Default,,0,0,0,,Insaan ki banayi kuch nahi.
+Dialogue: 0,0:00:43.62,0:00:46.28,Default,,0,0,0,,Aankh ke vigyaaniyon ne hisaab lagaya.
+Dialogue: 0,0:00:46.28,0:00:47.88,Default,,0,0,0,,Chand se Wall dekhni ho,
+Dialogue: 0,0:00:47.88,0:00:50.00,Default,,0,0,0,,toh aankh 17,000 guna tez chahiye.
+Dialogue: 0,0:00:50.00,0:00:51.33,Default,,0,0,0,,Deewar lambi hai,
+Dialogue: 0,0:00:51.33,0:00:52.13,Default,,0,0,0,,par patli.
+Dialogue: 0,0:00:52.58,0:00:53.41,Default,,0,0,0,,Lekin twist hai.
+Dialogue: 0,0:00:53.41,0:00:54.86,Default,,0,0,0,,Ek astronaut kehta tha,
+Dialogue: 0,0:00:54.86,0:00:55.69,Default,,0,0,0,,Wall dikhti hai.
+Dialogue: 0,0:00:55.69,0:00:56.73,Default,,0,0,0,,Dharti ke kareeb,
+Dialogue: 0,0:00:56.73,0:00:57.35,Default,,0,0,0,,tez dhoop mein.
+Dialogue: 0,0:00:57.35,0:00:59.01,Default,,0,0,0,,Baaki vigyaani kehte hain,
+Dialogue: 0,0:00:59.01,0:00:59.43,Default,,0,0,0,,nahi.
+Dialogue: 0,0:00:59.43,0:01:01.09,Default,,0,0,0,,Deewar pahad ke rang mein kho
+Dialogue: 0,0:01:01.09,0:01:01.71,Default,,0,0,0,,jaati hai.
+Dialogue: 0,0:01:02.16,0:01:03.90,Default,,0,0,0,,Ek astronaut ne space station se
+Dialogue: 0,0:01:03.90,0:01:05.11,Default,,0,0,0,,zoom lens se photo khinchi.
+Dialogue: 0,0:01:05.11,0:01:05.80,Default,,0,0,0,,Par khud bola,
+Dialogue: 0,0:01:05.80,0:01:06.84,Default,,0,0,0,,aankh se nahi dikhi.
+Dialogue: 0,0:01:07.29,0:01:08.33,Default,,0,0,0,,Toh sach kya hai?
+Dialogue: 0,0:01:08.33,0:01:08.85,Default,,0,0,0,,Chand se,
+Dialogue: 0,0:01:08.85,0:01:09.88,Default,,0,0,0,,bilkul nahi.
+Dialogue: 0,0:01:09.88,0:01:10.40,Default,,0,0,0,,Paas se,
+Dialogue: 0,0:01:10.40,0:01:12.21,Default,,0,0,0,,bahas abhi baaki hai.
+Dialogue: 0,0:01:12.21,0:01:14.02,Default,,0,0,0,,Kisi ne deewar dekhi,
+Dialogue: 0,0:01:14.02,0:01:16.09,Default,,0,0,0,,ya nadi ko deewar samjha?
+Dialogue: 0,0:01:16.54,0:01:18.13,Default,,0,0,0,,Us dost ko bhejo jo kehta
+Dialogue: 0,0:01:18.13,0:01:19.53,Default,,0,0,0,,hai Wall chand se dikhti hai.
