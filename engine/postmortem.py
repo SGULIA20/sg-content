@@ -176,6 +176,9 @@ def run(root: Path = ROOT, today: date | None = None, env=None, ask=_ask, notify
         if len(result) > 1:                                           # an empty week leaves last week's lessons in place until they go stale
             Path(out or OUT).parent.mkdir(parents=True, exist_ok=True)
             Path(out or OUT).write_text(json.dumps(result, indent=1, ensure_ascii=False))
+        from . import monday
+        if notify is None and monday.hold("postmortem", "\n".join(report)):      # on Monday the three reports go out as one message
+            return result
         if notify is None:
             from . import telegram
             notify = telegram.send
