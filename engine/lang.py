@@ -28,8 +28,12 @@ def _config(root: Path = None) -> dict:
 
 
 def english(piece, root: Path = None) -> bool:
-    start = (_config(root).get(getattr(piece, "channel", "")) or {}).get("english_from")
-    return bool(start) and str(getattr(piece, "publish_day", "") or str(piece.id)[:10])[:10] >= start
+    """English from `english_from` up to, not including, `english_until` (founder, 24 Nov 2026: "SG learning is not working in English,
+    let's make it in Hinglish"): the pieces already made in English for 23-29 Nov keep their English lines and checks."""
+    cfg = _config(root).get(getattr(piece, "channel", "")) or {}
+    start, until = cfg.get("english_from"), cfg.get("english_until")
+    day = str(getattr(piece, "publish_day", "") or str(piece.id)[:10])[:10]
+    return bool(start) and day >= start and not (until and day >= until)
 
 
 def disclaimer(piece, root: Path = None) -> str:
