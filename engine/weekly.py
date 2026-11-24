@@ -92,15 +92,20 @@ def open_slots(root: Path, today: date) -> list:
     return sorted(out, key=lambda s: (s[3], s[1], s[2]))
 
 
-def recent_titles(root: Path, days: int = 45, channel: str = "") -> list:
+def recent_titles(root: Path, days: int = 120, channel: str = "", today: date | None = None) -> list:
+    """Titles of the pieces of the last `days` days. 24 Nov 2026: this kept the last 90 titles by count, so a Konark Short of 29 Oct had
+    dropped out of sight and the same subject was planned again as a long; both the script's title and the topic's are remembered."""
+    cutoff = (today or date.today()) - timedelta(days=days)
     out = []
     for p in pieces.list_all(root):
         if channel and p.channel != channel:
             continue
-        t = (p.script or {}).get("title") or (p.topic or {}).get("title") or (p.topic or {}).get("title_hi")
-        if t:
-            out.append(str(t))
-    return out[-days * 2:]
+        if p.publish_day and p.publish_day < cutoff:
+            continue
+        for t in ((p.script or {}).get("title"), (p.topic or {}).get("title") or (p.topic or {}).get("title_hi")):
+            if t and str(t) not in out:
+                out.append(str(t))
+    return out
 
 
 def _words(s: str) -> set:

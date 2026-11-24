@@ -379,11 +379,11 @@
   },
   "2026-12-05-arthvan-short": {
    "id": "wk-2026-12-05-arthvan-short",
-   "title": "Lemming khudkushi karne samundar mein kyun kudte hain?",
+   "title": "Lemming samundar mein kyun kudte hain, sach ya jhooth?",
    "summary": "Examines the lemming mass-suicide belief: the 1958 Disney film White Wilderness staged the scene, while Alaska Fish and Game research shows migration and population cycles. Check the film's filming location and the biology.",
    "hooks": [
     "Kya ek film ne ek jaanwar ko badnaam kar diya?",
-    "Lemming ki khudkushi ka video kahan shoot hua tha?"
+    "Lemming ki chhalaang ka video kahan shoot hua tha?"
    ],
    "weekly": true,
    "topic_score": 7,
@@ -410,11 +410,11 @@
   },
   "2026-12-06-arthvan-long": {
    "id": "wk-2026-12-06-arthvan-long",
-   "title": "Konark ke Sun Temple ka chumbak jahaz kheenchta tha?",
-   "summary": "Tells the legend of a giant magnet at the top pulling ships off course, then checks it against the Narasimhadeva I construction history, Abul Fazl's account, the tower's collapse and the temple's astronomical design. Verify each claim.",
+   "title": "Asli insaan, jinhe log Bhagwan maan kar poojte hain: kaun the woh?",
+   "summary": "Real, historical people who came to be worshipped in India, and how each became a deity in people's eyes: who they were, what records say about their lives, when the worship began and where their shrines stand today. Told with respect; check every name, date and place against records and reliable histories; legend and record labelled apart.",
    "hooks": [
-    "Kya ek mandir ka chumbak jahaz doobata tha?",
-    "Konark ka asli raaz patthar nahi, uski kahani hai"
+    "Woh sach mein zinda the. Aur aaj unke mandir hain. Kaise?",
+    "Insaan se Bhagwan banne ka safar: kisne shuru kiya?"
    ],
    "weekly": true,
    "topic_score": 6,
@@ -423,7 +423,7 @@
     "+3 a shock question or a mystery",
     "+1 asks a question"
    ],
-   "follows": "Temple mystery in a deeper telling; Jagannath-style temple mysteries pull views (2.2M), and this avoids the saturated Sanchi and Iron Pillar.",
+   "follows": "Follows the most-viewed video in this week's SG-MYTH list: the Short 'Jinhe Bharat ne sach mein maan liya Bhagwan' (11.8M views). Replaces the Konark magnet long, already a Short on 29 Oct.",
    "viral": true,
    "allowed_sources": [
     "asi.nic.in",
