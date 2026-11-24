@@ -1,0 +1,49 @@
+name: daily-review
+
+# Every video is reviewed the morning after it goes out (founder, 24 Nov 2026: "review each reel or long video you are posting and
+# take necessary actions for next reel or video"). 06:17 WAT, Tuesday to Sunday (Monday's review is part of the weekly report): reads
+# each recent video's Instagram and YouTube numbers, renews the lessons the writers and the planner read, and tells the founder only
+# what changed. engine/postmortem.py --daily. Two Opus requests a day.
+on:
+  schedule:
+    - cron: '17 5 * * 0,2-6'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-review
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Review yesterday's videos and renew the lessons
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_SGLEARNING_REFRESH_TOKEN: ${{ secrets.YT_SGLEARNING_REFRESH_TOKEN }}
+          YT_ARTHVAN_REFRESH_TOKEN: ${{ secrets.YT_ARTHVAN_REFRESH_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m engine.postmortem --daily
+      - name: Keep the lessons
+        if: always()
+        run: |
+          git config user.name "sg-content-bot"
+          git config user.email "sg-content-bot@users.noreply.github.com"
+          git add -f logs/postmortem.json logs/told.json logs/claude-spend.json || true
+          git diff --cached --quiet || (git commit -m "daily review [skip ci]" && git pull --rebase origin main && git push origin HEAD:main)
