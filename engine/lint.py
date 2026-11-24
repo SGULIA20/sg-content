@@ -236,7 +236,8 @@ def check_script(piece: Piece, banned: dict, prior_scripts: list) -> list:
             if sc.get("label") not in MYTH_LABELS and sc.get("facts_used"):      # a scene that states a fact must say what kind of evidence it is
                 reasons.append(f"label: scene {i} has no evidence label")
     from . import lang
-    if piece.channel == "sglearning" and piece.kind == "short" and lang.disclaimer(piece).lower() not in text.lower():
+    trend = bool((piece.topic or {}).get("trend"))                      # 24 Nov 2026: a viral subject is not a money video, so no investment disclaimer
+    if piece.channel == "sglearning" and piece.kind == "short" and not trend and lang.disclaimer(piece).lower() not in text.lower():
         reasons.append("disclaimer: finance script must speak the disclaimer line")
     words = len(re.findall(r"[\wऀ-ॿ]+", " ".join(sc.get("vo", "") for sc in scenes)))
     if piece.kind == "short":
@@ -272,7 +273,7 @@ def check_captions(piece: Piece, hashtags: dict) -> list:
     if len(ig.get("caption", "")) > IG_CAPTION_MAX:
         reasons.append("instagram: caption too long")
     from . import lang
-    if piece.channel == "sglearning" and lang.disclaimer(piece).lower() not in ig.get("caption", "").lower():
+    if piece.channel == "sglearning" and not (piece.topic or {}).get("trend") and lang.disclaimer(piece).lower() not in ig.get("caption", "").lower():
         reasons.append("disclaimer: Instagram caption must carry the disclaimer")
     if not SHARE.search(ig.get("caption", "")):
         reasons.append("share: Instagram caption needs one share line (share karo / bhejo) naming who to send it to")

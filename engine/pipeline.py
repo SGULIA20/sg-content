@@ -160,7 +160,7 @@ def _pick_topic(piece: Piece, deps: Deps, root: Path, used: set) -> dict | None:
     planned = weekly.topic_for(root, piece, used)                    # 8 Nov 2026: the weekly YouTube research plan outranks a remake of our own weak Reel
     from . import themes
     # 19 Nov 2026: this early return skipped the day-to-day theme rule, so the 26 Nov SG-MYTH long was a Ramayan story two days after one
-    if planned and themes.allowed(planned, themes.blocked(root, piece), piece.channel):
+    if planned and (planned.get("trend") or planned.get("viral") or themes.allowed(planned, themes.blocked(root, piece), piece.channel)):   # a viral subject does not wait its turn
         return planned
     # founder, 10 Nov 2026 ("why again America, SIP, share market?"): a planned topic that failed is followed by the next fresh topic, never
     # by a second chance of a weak old Reel; the weak ones were all US-stocks, SIP and market stories, so the same subjects kept returning

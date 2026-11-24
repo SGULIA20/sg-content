@@ -39,6 +39,8 @@ FAMOUS = ["mahabharat", "ramayan", "shiv", "mahadev", "vishnu", "krishna", "hanu
           "kali", "sita", "arjun", "karna", "draupadi", "ashoka", "ashwatthama", "chakravyuh", "harappa", "nalanda", "sanchi", "ajanta", "ellora"]
 SHOCK = ["kaise", "kyun", "kyon", "kisne", "rahasya", "raaz", "sach", "untold", "mystery", "secret", "chamatkar", "shraap", "curse", "gayab",
          "zinda", "ajeeb", "hairan", "pehli baar", "kabhi nahi", "asli", "sabut", "hidden", "lost"]
+WORLD_MYTH = ["myth", "mithak", "sach ya", "jhooth", "kya sach mein", "sach mein", "maana jaata", "log maante", "kehte hain", "andhvishwas", "galatfehmi",
+              "belief", "legend", "kahaani ya", "kahani ya"]
 UNTOLD = ["untold", "galatfehmi", "misconception", "jo kisi ne", "kam log", "nahi bataya", "alag", "asli kahani", "sabse badi"]
 
 
@@ -103,6 +105,8 @@ def score(topic, channel: str, today: date | None = None, calendar: list | None 
             add(4, "one of the most-watched names")
         elif any(w in both for w in FAMOUS):
             add(2, "a famous name")
+        elif any(w in both for w in WORLD_MYTH):
+            add(3, "a widely held belief and its reason")                # 24 Nov 2026: myths of the whole world, not only the Indian epics
         else:
             add(-2, "no famous name")
         feature(SHOCK, 3, "a shock question or a mystery")
