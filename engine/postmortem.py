@@ -30,7 +30,8 @@ THUMB = "https://i.ytimg.com/vi/{id}/hqdefault.jpg"
 PROMPT = """You are reviewing last week's videos of the YouTube channel "{channel}" ({about}) to make next week's hold more viewers.
 The channel is small; its problem is that people leave in the first seconds and little is watched to the end.
 
-OUR VIDEOS (numbers from YouTube's own analytics; "still_watching" is the share of viewers left at that point of the video):
+OUR VIDEOS (numbers from YouTube's own analytics; "still_watching" is the share of viewers left at that point of the video; the ig_ numbers are the same video as an Instagram Reel, where
+"ig_skipped_early_pct" is the share who swiped away in the first three seconds, the fastest sign of a weak opening):
 {videos}
 
 {viral}
@@ -58,7 +59,22 @@ def per_video(token: str, start: date, end: date, call=None) -> dict:
     return {r[0]: {"views": int(r[1]), "watched_pct": round(float(r[2]), 1), "avg_seconds": int(r[3])} for r in rows if r and r[0] != "error"}
 
 
-def videos(root: Path, channel: str, today: date, stats: dict, curve) -> list:
+def instagram(root: Path, today: date, env=None, collect=None) -> dict:
+    """{piece id: {"ig_views", "ig_skipped_early_pct", "ig_watched_seconds"}} for the Shorts of the window. Instagram's numbers arrive
+    within a day, YouTube's two or three days late, so these let a Reel be judged the morning after it goes out. {} when unreadable."""
+    try:
+        if collect is None:
+            from . import whatworks
+            collect = whatworks.collect
+        rows = collect(today - timedelta(days=DAYS), today, env, root)
+    except Exception as e:
+        print(f"post-mortem: Instagram numbers not read ({type(e).__name__}: {secrets.scrub(str(e))[:120]})", flush=True)
+        return {}
+    return {r["id"]: {"ig_views": r.get("ig_views"), "ig_skipped_early_pct": r.get("ig_skip_rate"), "ig_watched_seconds": r.get("ig_watch_s")}
+            for r in rows if r.get("ig_views")}
+
+
+def videos(root: Path, channel: str, today: date, stats: dict, curve, ig: dict | None = None) -> list:
     """Last week's published videos of the channel with what the review needs; most viewed first."""
     out = []
     for p in pieces.list_all(root):
@@ -70,6 +86,7 @@ def videos(root: Path, channel: str, today: date, stats: dict, curve) -> list:
                "spoken_opening": str(((p.topic or {}).get("intro") or {}).get("text") or (p.script or {}).get("hook") or "")[:200],
                "first_lines": [str(sc.get("vo", ""))[:140] for sc in scenes[:3]], "scenes": len(scenes),
                "views": s.get("views", 0), "watched_pct": s.get("watched_pct"), "avg_seconds": s.get("avg_seconds")}
+        row.update((ig or {}).get(p.id, {}))
         if s.get("views", 0) >= 20:                                   # a curve from a handful of views says nothing
             try:
                 row["still_watching"] = dict(curve(p.ids["yt_id"]))
@@ -153,34 +170,45 @@ def thumbnail_look(channel: str, today: date | None = None, path: Path | None = 
     return "" if ((today or date.today()) - made).days > FRESH_DAYS else str((data.get(channel) or {}).get("thumbnail_look") or "")
 
 
-def run(root: Path = ROOT, today: date | None = None, env=None, ask=_ask, notify=None, token_for=None, call=None, out: Path | None = None, dry: bool = False) -> dict:
+def run(root: Path = ROOT, today: date | None = None, env=None, ask=_ask, notify=None, token_for=None, call=None, out: Path | None = None, dry: bool = False,
+        daily: bool = False, ig_collect=None) -> dict:
+    """daily (founder, 24 Nov 2026: "I want you to review each reel or long video you are posting and take necessary actions for next
+    reel or video"): the same review every morning over the rolling window, so each video that went out yesterday is judged (Instagram's
+    numbers are in by then) and the lessons the writers, the hook writer and the planner read are renewed before the next video is made.
+    He is told only what changed, in a few lines; the long report stays for Monday."""
     from . import youtube
     today = today or datetime.now(timezone.utc).date()
-    result, report = {"date": today.isoformat()}, [f"🔎 Weekly post-mortem ({today:%d %b})"]
+    result, report = {"date": today.isoformat()}, [f"🔎 {'Yesterday\'s videos reviewed' if daily else 'Weekly post-mortem'} ({today:%d %b})"]
+    ig = instagram(root, today, env, ig_collect)
     for ch in CHANNELS:
         try:
             token = (token_for or youtube.access_token)(ch, env)
             start = today - timedelta(days=DAYS + 2)
             stats = per_video(token, start, today, call)
             kw = {"call": call} if call else {}
-            vids = videos(root, ch, today, stats, lambda vid: ytwatch.retention(token, vid, start, today, **kw))
+            vids = videos(root, ch, today, stats, lambda vid: ytwatch.retention(token, vid, start, today, **kw), ig)
             if not vids:
                 report.append(f"\n{CHANNELS[ch].display_name}: no published videos in the last {DAYS} days to review.")
                 continue
             r = review(ch, vids, viral(root, ch), ask)
             result[ch] = {**r, "videos": len(vids)}
-            report.append(f"\n{CHANNELS[ch].display_name} ({len(vids)} videos)\n{r['report']}")
+            if daily:
+                report.append(f"\n{CHANNELS[ch].display_name}: next videos will\n" + "\n".join(f"• {x}" for x in r["lessons"][:3]))
+            else:
+                report.append(f"\n{CHANNELS[ch].display_name} ({len(vids)} videos)\n{r['report']}")
         except Exception as e:
             print(f"post-mortem: {ch} skipped ({type(e).__name__}: {secrets.scrub(str(e))[:160]})", flush=True)
             report.append(f"\n{CHANNELS[ch].display_name}: the review could not be made this week ({type(e).__name__}).")
-    report.append("\nThe lessons are now given to the script and hook writers for the coming week.")
+    report.append("\nThese now apply to every video written from today." if daily else "\nThe lessons are now given to the script and hook writers for the coming week.")
     if not dry:
         if len(result) > 1:                                           # an empty week leaves last week's lessons in place until they go stale
             Path(out or OUT).parent.mkdir(parents=True, exist_ok=True)
             Path(out or OUT).write_text(json.dumps(result, indent=1, ensure_ascii=False))
-        from . import monday
+        from . import monday, once
         if notify is None and monday.hold("postmortem", "\n".join(report)):      # on Monday the three reports go out as one message
             return result
+        if daily and not once.fresh("daily-lessons", {ch: (result.get(ch) or {}).get("lessons") for ch in CHANNELS}, hours=72, root=root):
+            return result                                             # the same lessons as before: nothing new to tell him
         if notify is None:
             from . import telegram
             notify = telegram.send
@@ -190,7 +218,7 @@ def run(root: Path = ROOT, today: date | None = None, env=None, ask=_ask, notify
 
 def main(argv=None) -> int:
     args = argv if argv is not None else sys.argv[1:]
-    print(json.dumps(run(dry="--dry" in args), indent=1, ensure_ascii=False))
+    print(json.dumps(run(dry="--dry" in args, daily="--daily" in args), indent=1, ensure_ascii=False))
     return 0
 
 

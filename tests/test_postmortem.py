@@ -34,7 +34,7 @@ def test_last_weeks_videos_are_reviewed_with_their_retention_and_the_viral_thumb
         return "```json\n" + json.dumps({"lessons": ["Name the thing in the first three words."], "thumbnail_look": "One big object, three yellow words.",
                                           "best": "Trojan Horse", "worst": "Lemming", "report": "Trojan Horse held 55% at the 10% mark."}) + "\n```"
     out = tmp_path / "pm.json"
-    got = postmortem.run(tmp_path, TODAY, {}, ask=ask, notify=sent.append, token_for=lambda ch, env=None: "t", call=_call, out=out)
+    got = postmortem.run(tmp_path, TODAY, {}, ask=ask, notify=sent.append, token_for=lambda ch, env=None: "t", call=_call, out=out, ig_collect=lambda *a: [])
     arth = next(c for c in asked if "SG-MYTH-WORLD" in c[0]["text"])
     assert "Trojan Horse sach tha?" in arth[0]["text"] and '"10%": 55' in arth[0]["text"] and "purana" not in arth[0]["text"]
     assert '"still_watching"' not in arth[0]["text"].split("Lemming")[1].split("}")[0]                # nine views: no curve is drawn from them
@@ -56,3 +56,19 @@ def test_the_writers_and_the_thumbnail_prompt_read_the_lessons(tmp_path, monkeyp
     assert "A face-sized object, two words." in intro.thumb_prompt(p) and "no presenter" in intro.thumb_prompt(p)
     a = pieces.Piece(id="2026-12-10-arthvan-long", channel="arthvan", kind="long", publish_day=date(2026, 12, 10)); a.script = {"title": "Giza", "scenes": []}
     assert "most-viewed thumbnails" not in intro.thumb_prompt(a)
+
+
+def test_every_morning_yesterdays_videos_are_reviewed_with_instagram_numbers_and_he_hears_only_what_changed(tmp_path):
+    """Founder, 24 Nov 2026: 'I want you to review each reel or long video you are posting and take necessary actions for next reel'."""
+    _piece(tmp_path, "2026-12-06-arthvan-short", "A1", "Marco Polo aur pasta", "Pasta China se aaya? Jhooth.")
+    asked, sent = [], []
+    reply = json.dumps({"lessons": ["Open on the name everyone knows.", "Cut the second scene's list."], "thumbnail_look": "", "best": "b", "worst": "w", "report": "r"})
+    ig = lambda start, end, env, root: [{"id": "2026-12-06-arthvan-short", "ig_views": 410, "ig_skip_rate": 38.0, "ig_watch_s": 14.2}]
+    kw = dict(ask=lambda c: asked.append(c) or reply, notify=sent.append, token_for=lambda ch, env=None: "t", call=_call, out=tmp_path / "pm.json", daily=True, ig_collect=ig)
+    postmortem.run(tmp_path, TODAY, {}, **kw)
+    arth = next(c for c in asked if "SG-MYTH-WORLD" in c[0]["text"])[0]["text"]
+    assert '"ig_skipped_early_pct": 38.0' in arth and '"ig_views": 410' in arth and "swiped away in the first three seconds" in arth
+    assert len(sent) == 1 and "Yesterday's videos reviewed" in sent[0] and "• Open on the name everyone knows." in sent[0] and "every video written from today" in sent[0]
+    postmortem.run(tmp_path, TODAY, {}, **kw)
+    assert len(sent) == 1                                                                              # the same lessons the next morning: nothing is sent
+    assert postmortem.lessons("arthvan", TODAY, tmp_path / "pm.json")[0] == "Open on the name everyone knows."
