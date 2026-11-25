@@ -115,6 +115,9 @@
    "voice": 8
   },
   "drafts": 1,
+  "ig_reel_id": "18117827960468580",
+  "ig_story_id": "18119635787601707",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-25-sglearning-short.mp4",
    "clip_seconds": 1,
@@ -125,6 +128,8 @@
   "intro_sent": "2026-11-18T22:30:09+00:00",
   "out_sha": "3285eb9d0c8b2cf2d017f53793e49342c377c981",
   "out_sha_intro": true,
+  "threads_id": "18112051202250253",
+  "threads_poll_id": "18131346973922689",
   "yt_id": "qKQHejtZExQ"
  },
  "kind": "short",
@@ -282,7 +287,7 @@
   },
   "title": "One tax notice killed 8,000 *jobs* 🏭"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   4.937,
@@ -359,6 +364,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-19T10:59:45+00:00",
+ "updated": "2026-11-25T16:21:35+00:00",
  "writer": "claude"
 }
