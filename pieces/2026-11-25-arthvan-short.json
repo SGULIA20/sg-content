@@ -135,7 +135,9 @@
    "voice": 12
   },
   "drafts": 2,
+  "ig_reel_id": "18101084027111866",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-25-arthvan-short.mp4",
    "clip_seconds": 1,
@@ -146,6 +148,8 @@
   "intro_sent": "2026-11-19T07:44:33+00:00",
   "out_sha": "3285eb9d0c8b2cf2d017f53793e49342c377c981",
   "out_sha_intro": true,
+  "threads_id": "18041741681853391",
+  "threads_poll_id": "18091404857298684",
   "yt_id": "HrWD13kftUo"
  },
  "kind": "short",
@@ -354,7 +358,7 @@
   },
   "title": "Rani *Padmini* sach thi ya kavita? 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   4.055,
@@ -437,6 +441,6 @@
   ],
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-11-19T10:58:53+00:00",
+ "updated": "2026-11-25T16:10:28+00:00",
  "writer": "claude"
 }
