@@ -106,12 +106,20 @@
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
+  "intro": {
+   "clip": "2026-12-01-arthvan-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-25T08:53:51+00:00",
+   "seconds": 8.38
+  },
+  "intro_checked": "4864758e86690c1b",
   "intro_sent": "2026-11-24T19:23:36+00:00",
   "music": {
    "by": "Kevin MacLeod (incompetech.com)",
    "licence": "CC BY 4.0",
    "title": "Constance"
   },
+  "open_test": "picture",
   "sound": "track",
   "watch": {
    "best_change": "Put the Great Wall, seen tiny or invisible from space, into the first frame and make the first line a direct challenge like 'Great Wall chand se dikhti hai? Jo dekhne gaya, use bhi nahi dikhi', so the opening pays off the title instantly.",
@@ -125,7 +133,7 @@
    2,
    4
   ],
-  "intro_checked": "4864758e86690c1b"
+  "yt_id": "_YzcSuYJh9Y"
  },
  "kind": "short",
  "publish_day": "2026-12-01",
@@ -332,7 +340,7 @@
   },
   "title": "Great Wall, kya *chand* se dikhti hai? 🤯"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   8.642,
@@ -413,6 +421,7 @@
    "text": "Kya China ki deewar chand se dikhti hai? China ne school ki kitaabein kyun badal di? Actual mein deewar dikhti hai ya nahin?",
    "words": 23
   },
+  "look": "indian-comic",
   "summary": "Tells the popular claim that the Wall is visible from space, then checks it against astronaut accounts (Yang Liwei 2003, ISS crews) and the Wall's width. Check where the claim first appeared, in print before 1932.",
   "target_minutes": null,
   "title": "Kya Great Wall of China chand se dikhti hai?",
@@ -426,6 +435,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-24T19:24:13+00:00",
+ "updated": "2026-11-25T08:54:00+00:00",
  "writer": "claude"
 }
