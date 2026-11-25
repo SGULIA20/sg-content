@@ -908,6 +908,11 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
         video = storyframe.scene(clip, secs, size, out_dir / "intro-video.mp4", storyframe.blank_png(out_dir / "blank.png", w), overlays,
                                  logo_png=storyframe.logo(piece.channel), punch=False, shade_png=shade, full=True,
                                  shade_y=geo["shade_y"], top=geo["top"], side=geo["side"])
+        arm = opening.picture_first(piece)
+        if arm is not None:
+            piece.ids["open_test"] = "picture" if arm and short and background.exists() else "founder"
+        if piece.ids.get("open_test") == "picture":
+            video = picture_open(video, background, overlays, size, out_dir / "intro-video-pic.mp4", opening.PICTURE_S)
     else:
         if short:                                                   # the first 10 seconds carry graphics too (founder, 4 Nov 2026)
             n = len((piece.script or {}).get("scenes") or []) + 1
@@ -952,6 +957,21 @@ def compose(piece, clip: Path, out_dir: Path, size: tuple | None = None) -> Path
     piece.ids["intro"] = {"clip": str(Path(source_clip).name), "seconds": round(secs, 2), "clip_seconds": round(full, 2),
                           "composed": datetime.now(timezone.utc).isoformat(timespec="seconds")}
     return plain
+
+
+def picture_open(video: Path, background: Path, overlays: list, size: tuple, out: Path, seconds: float) -> Path:
+    """The same opening with the story's first picture over its first `seconds`: the picture (moving, with its badge) carries the
+    hook line and the captions that were on him, his voice runs underneath untouched, then the cut to him. Same length, no silence."""
+    w, h = size
+    early = [o for o in overlays if o[3] < seconds]
+    inputs = ["-i", str(video), "-i", str(background)]
+    chain = f"[1:v]trim=0:{seconds:.3f},setpts=PTS-STARTPTS,scale={w}:{h},setsar=1,fps={VIDEO['fps']}[b0]"
+    for k, (png, x, y, s, e) in enumerate(early):
+        inputs += ["-loop", "1", "-t", f"{seconds:.3f}", "-i", str(png)]
+        chain += f";[b{k}][{k + 2}:v]overlay={x}:{y}:enable='between(t,{s:.3f},{e:.3f})'[b{k + 1}]"
+    chain += f";[0:v][b{len(early)}]overlay=0:0:eof_action=pass[v]"
+    _run([*inputs, "-filter_complex", chain, "-map", "[v]", "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", str(out)])
+    return out
 
 
 # ---------- the wait, the collection, the sweep ----------

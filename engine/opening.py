@@ -70,6 +70,23 @@ def speed(piece, root: Path = None) -> float:
         return 1.0
 
 
+PICTURE_S = 1.5
+
+
+def picture_first(piece, root: Path = None):
+    """The opening-picture test (founder, 25 Nov 2026: "yes test", after trial Reels of 88-278 views that all open on the same frame
+    of him). For one week half the Shorts open on 1.5 seconds of the story's first picture, with the hook text, while his voice is
+    already speaking; then the cut to him. The other half open on him as before. True = picture first, False = him first (in the
+    test, the comparison half), None = not in the test. The halves alternate by day and are opposite on the two channels, so each
+    channel gets both and each day has one of each."""
+    t = _config(root).get("picture_first") or {}
+    day = str(piece.id)[:10]
+    if piece.kind != "short" or not t.get("from") or not t["from"] <= day <= t.get("to", "9999-12-31"):
+        return None
+    from datetime import date
+    return (date.fromisoformat(day).toordinal() + (piece.channel == "arthvan")) % 2 == 0
+
+
 def cutout_on(root: Path = None) -> bool:
     """Whether the founder is cut out and placed over the story's pictures (off: his clip full-screen, its own background set in the prompt)."""
     return bool(_config(root).get("cutout", False))
