@@ -733,8 +733,17 @@
   "summary": "Why six months of expenses in a liquid place matters, where to keep it (savings, sweep FD, liquid fund), how a family builds it in a year, what not to touch it for.",
   "target_minutes": 12,
   "thumb_test": {
-   "phase": "B",
-   "switched": "2026-11-20T19:17+00:00"
+   "a": [
+    0,
+    null
+   ],
+   "b": [
+    0,
+    null
+   ],
+   "phase": "done",
+   "switched": "2026-11-20T19:17+00:00",
+   "winner": "A"
   },
   "title": "Naukri gayi, EMI nahi ruki: 6 mahine ka emergency fund kaise banta hai",
   "voice": "voice_g8azc8xcwhlu"
