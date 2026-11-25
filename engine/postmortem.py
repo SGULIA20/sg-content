@@ -31,7 +31,8 @@ PROMPT = """You are reviewing last week's videos of the YouTube channel "{channe
 The channel is small; its problem is that people leave in the first seconds and little is watched to the end.
 
 OUR VIDEOS (numbers from YouTube's own analytics; "still_watching" is the share of viewers left at that point of the video; the ig_ numbers are the same video as an Instagram Reel, where
-"ig_skipped_early_pct" is the share who swiped away in the first three seconds, the fastest sign of a weak opening):
+"ig_skipped_early_pct" is the share who swiped away in the first three seconds, the fastest sign of a weak opening; "opened_on", where given, is a test:
+some Shorts open on the story's picture and some on the presenter, so compare the early swipes of the two groups and say which is ahead and by how much, or that it is too early to tell):
 {videos}
 
 {viral}
@@ -92,6 +93,8 @@ def videos(root: Path, channel: str, today: date, stats: dict, curve, ig: dict |
                 row["still_watching"] = dict(curve(p.ids["yt_id"]))
             except Exception:
                 pass
+        if p.ids.get("open_test"):                                     # the opening-picture test: which half this Short was in
+            row["opened_on"] = "the story's picture for 1.5 s, then the presenter" if p.ids["open_test"] == "picture" else "the presenter"
         if (p.ids.get("watch") or {}).get("opening") is not None:
             row["review_opening_score"] = p.ids["watch"]["opening"]
             if p.ids["watch"].get("best_change"):                     # what the finished-video review said would have helped most

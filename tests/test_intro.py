@@ -705,3 +705,29 @@ def test_the_five_hooks_sent_are_the_panels_best_of_the_pool(tmp_path):
     assert out[0]["score"] == 10.0 and "[10.0]" in intro.request_text(p, {**first, "options": out, "prompt": "P"}) and "panel of three" in intro.request_text(p, {**first, "options": out, "prompt": "P"})
     plain = intro.options(p, first, ask=writer, panel=lambda prompt: "sorry")                    # an unreadable panel: the writer's order stands
     assert len(plain) == 5 and plain[0]["text"].startswith("hook0") and "score" not in plain[0]
+
+
+def test_the_opening_picture_test_alternates_halves_and_the_picture_covers_only_the_first_moments(tmp_path):
+    """Founder, 25 Nov 2026: 'yes test'. Half the Shorts of the week open on the story's picture, his voice already speaking."""
+    import json, subprocess
+    from types import SimpleNamespace as P
+    from engine import intro, opening
+    (tmp_path / "hero-test.json").write_text(json.dumps({"picture_first": {"from": "2026-12-01", "to": "2026-12-07"}}))
+    arm = lambda day, ch, kind="short": opening.picture_first(P(id=f"{day}-{ch}-{kind}", kind=kind, channel=ch), tmp_path)
+    assert arm("2026-11-30", "arthvan") is None and arm("2026-12-08", "sglearning") is None and arm("2026-12-02", "arthvan", "long") is None
+    days = [f"2026-12-0{d}" for d in range(1, 8)]
+    for ch in ("arthvan", "sglearning"):
+        halves = [arm(d, ch) for d in days]
+        assert halves == [not halves[0] if i % 2 else halves[0] for i in range(7)]            # each channel alternates
+    assert all(arm(d, "arthvan") != arm(d, "sglearning") for d in days)                       # each day has one of each
+    def clip(path, colour, secs):
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", f"color={colour}:s=108x192:r=30:d={secs}", "-pix_fmt", "yuv420p", str(path)], check=True)
+        return path
+    him, bg = clip(tmp_path / "him.mp4", "red", 4), clip(tmp_path / "bg.mp4", "blue", 6)
+    out = intro.picture_open(him, bg, [], (108, 192), tmp_path / "out.mp4", 1.5)
+    assert abs(intro.duration(out) - 4) < 0.15                                                # same length: nothing added, nothing lost
+    def blue_red(t):
+        raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-ss", str(t), "-i", str(out), "-frames:v", "1", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"],
+                             capture_output=True, check=True).stdout
+        return raw[2] > raw[0]
+    assert blue_red(0.5) and blue_red(1.3) and not blue_red(1.8) and not blue_red(3.5)        # the picture, then him
