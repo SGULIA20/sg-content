@@ -819,8 +819,17 @@
   "priority": 1,
   "target_minutes": 14,
   "thumb_test": {
-   "phase": "B",
-   "switched": "2026-11-21T18:13+00:00"
+   "a": [
+    0,
+    null
+   ],
+   "b": [
+    0,
+    null
+   ],
+   "phase": "done",
+   "switched": "2026-11-21T18:13+00:00",
+   "winner": "A"
   },
   "title_hi": "Chausath Yogini aur Sansad ka design",
   "voice": "voice_1kn3blc2u13l"
