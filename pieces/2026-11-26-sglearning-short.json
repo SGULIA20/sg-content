@@ -95,6 +95,9 @@
    "voice": 8
   },
   "drafts": 1,
+  "ig_reel_id": "18124160024319140",
+  "ig_story_id": "17924576433461628",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-26-sglearning-short.mp4",
    "clip_seconds": 1,
@@ -105,6 +108,8 @@
   "intro_sent": "2026-11-19T22:32:29+00:00",
   "out_sha": "d1020800df23967cf7e5153aac8b29667ee5a98b",
   "out_sha_intro": true,
+  "threads_id": "18112014377287628",
+  "threads_poll_id": "17996911869062778",
   "yt_id": "PJe3oIldJ5c"
  },
  "kind": "short",
@@ -255,7 +260,7 @@
   },
   "title": "Who really gets your first *premium*? 😳"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   3.719,
@@ -331,6 +336,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-20T15:15:39+00:00",
+ "updated": "2026-11-26T16:20:28+00:00",
  "writer": "claude"
 }
