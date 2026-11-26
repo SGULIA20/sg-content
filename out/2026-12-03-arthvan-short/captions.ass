@@ -1,0 +1,68 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.67,Default,,0,0,0,,Giza ke pyramid gulamon ne banaye?
+Dialogue: 0,0:00:02.67,0:00:04.22,Default,,0,0,0,,Kabron par likha kuch aur.
+Dialogue: 0,0:00:04.67,0:00:05.47,Default,,0,0,0,,Filmon mein:
+Dialogue: 0,0:00:05.47,0:00:06.26,Default,,0,0,0,,tapti ret,
+Dialogue: 0,0:00:06.26,0:00:06.79,Default,,0,0,0,,kode,
+Dialogue: 0,0:00:06.79,0:00:07.86,Default,,0,0,0,,zanjeer mein log.
+Dialogue: 0,0:00:07.86,0:00:11.31,Default,,0,0,0,,Yeh tasveer Yunani lekhak Herodotus se
+Dialogue: 0,0:00:11.31,0:00:11.84,Default,,0,0,0,,chali.
+Dialogue: 0,0:00:11.84,0:00:14.23,Default,,0,0,0,,Par ek ghoda sab badal deta
+Dialogue: 0,0:00:14.23,0:00:14.50,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:14.95,0:00:15.59,Default,,0,0,0,,Saal 1990,
+Dialogue: 0,0:00:15.59,0:00:16.23,Default,,0,0,0,,Giza.
+Dialogue: 0,0:00:16.23,0:00:19.76,Default,,0,0,0,,Ek tourist ka ghoda ladkhadata hai.
+Dialogue: 0,0:00:19.76,0:00:22.64,Default,,0,0,0,,Pair dabi hui deewar se takraya.
+Dialogue: 0,0:00:23.09,0:00:24.07,Default,,0,0,0,,Khudai hoti hai.
+Dialogue: 0,0:00:24.07,0:00:25.84,Default,,0,0,0,,Neeche kabristan nikalta hai.
+Dialogue: 0,0:00:25.84,0:00:27.62,Default,,0,0,0,,Pyramid banane walon ka.
+Dialogue: 0,0:00:28.07,0:00:30.10,Default,,0,0,0,,Kabron par garv se ohde likhe
+Dialogue: 0,0:00:30.10,0:00:30.33,Default,,0,0,0,,hain.
+Dialogue: 0,0:00:30.33,0:00:32.13,Default,,0,0,0,,Kapdon ka nigraani wala.
+Dialogue: 0,0:00:32.13,0:00:33.26,Default,,0,0,0,,Master karigar.
+Dialogue: 0,0:00:33.26,0:00:35.52,Default,,0,0,0,,Gulam apni kabr par aisa likhte?
+Dialogue: 0,0:00:35.97,0:00:37.75,Default,,0,0,0,,Pyramid ke andar,
+Dialogue: 0,0:00:37.75,0:00:40.12,Default,,0,0,0,,pathar par laal rang se likha.
+Dialogue: 0,0:00:40.12,0:00:41.31,Default,,0,0,0,,Toli ka naam:
+Dialogue: 0,0:00:41.31,0:00:42.50,Default,,0,0,0,,Khufu ke dost.
+Dialogue: 0,0:00:42.50,0:00:43.09,Default,,0,0,0,,Khufu,
+Dialogue: 0,0:00:43.09,0:00:45.17,Default,,0,0,0,,yaani yahan ka raja.
+Dialogue: 0,0:00:45.62,0:00:48.52,Default,,0,0,0,,Paas mein mazdooron ka shahar mila.
+Dialogue: 0,0:00:48.52,0:00:49.98,Default,,0,0,0,,Roti ki bhattiyan,
+Dialogue: 0,0:00:49.98,0:00:51.14,Default,,0,0,0,,beer ki jagah.
+Dialogue: 0,0:00:51.14,0:00:53.76,Default,,0,0,0,,Aur jaanwaron ki 175,000 haddiyon ke
+Dialogue: 0,0:00:53.76,0:00:54.34,Default,,0,0,0,,tukde.
+Dialogue: 0,0:00:54.79,0:00:56.25,Default,,0,0,0,,Matlab khaana bhi,
+Dialogue: 0,0:00:56.25,0:00:56.83,Default,,0,0,0,,maans bhi.
+Dialogue: 0,0:00:56.83,0:00:58.00,Default,,0,0,0,,Kankaal dekho,
+Dialogue: 0,0:00:58.00,0:01:00.33,Default,,0,0,0,,tooti haddiyan theek judi thi.
+Dialogue: 0,0:01:00.33,0:01:01.21,Default,,0,0,0,,Chot lagi,
+Dialogue: 0,0:01:01.21,0:01:02.96,Default,,0,0,0,,toh ilaaj bhi mila.
+Dialogue: 0,0:01:03.41,0:01:05.29,Default,,0,0,0,,Par vidwan yahan bante hain.
+Dialogue: 0,0:01:05.29,0:01:05.99,Default,,0,0,0,,Kuch kehte,
+Dialogue: 0,0:01:05.99,0:01:08.11,Default,,0,0,0,,gaay ka gosht afsaron ko milta.
+Dialogue: 0,0:01:08.11,0:01:09.99,Default,,0,0,0,,Aam mazdoor bhed-bakri khaate.
+Dialogue: 0,0:01:10.44,0:01:11.88,Default,,0,0,0,,Aur kaam marzi se tha,
+Dialogue: 0,0:01:11.88,0:01:13.32,Default,,0,0,0,,ya raja ka hukum?
+Dialogue: 0,0:01:13.32,0:01:15.00,Default,,0,0,0,,Is par aaj bhi bahas hai.
+Dialogue: 0,0:01:15.45,0:01:16.36,Default,,0,0,0,,Seedha jawab:
+Dialogue: 0,0:01:16.36,0:01:18.41,Default,,0,0,0,,zanjeer wali tasveer legend hai.
+Dialogue: 0,0:01:18.41,0:01:20.91,Default,,0,0,0,,Sabut izzatdar mazdoor dikhate hain.
+Dialogue: 0,0:01:20.91,0:01:22.95,Default,,0,0,0,,Aap Giza mein unki kabrein dekh
+Dialogue: 0,0:01:22.95,0:01:23.63,Default,,0,0,0,,sakte hain.
+Dialogue: 0,0:01:23.63,0:01:26.14,Default,,0,0,0,,Par hazaaron logon tak khana kaise
+Dialogue: 0,0:01:26.14,0:01:26.82,Default,,0,0,0,,pahunchta?
+Dialogue: 0,0:01:27.27,0:01:28.40,Default,,0,0,0,,Us dost ko bhejo jo kehta
+Dialogue: 0,0:01:28.40,0:01:29.82,Default,,0,0,0,,hai pyramid gulamon ne banaye.

@@ -1,0 +1,358 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "archaeology",
+   "number": 1990.0,
+   "quote": "In April of 1990, I was sitting in my office at Giza when a guard came to tell me that an American tourist had been thrown from her horse when the animal stumbled over the remains of a mud-brick wall.",
+   "source_date": "1997-01-01",
+   "source_name": "Archaeology Magazine",
+   "source_url": "https://archive.archaeology.org/9701/abstracts/pyramids.html",
+   "text": "In 1990, Egyptian archaeologists led by Zahi Hawass discovered the Cemetery of the Pyramid Builders after an American tourist's horse tripped over a buried mudbrick wall at Giza.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "Among these is the beautifully decorated tomb of the overseer of linen, the overseer of the royal house of purification, Nefertheith.",
+   "source_date": "2020-01-01",
+   "source_name": "Ministry of Tourism and Antiquities, Egypt",
+   "source_url": "https://egymonuments.gov.eg/en/monuments/workers-town-and-cemetery",
+   "text": "Inscriptions on the tombs of the builders at Giza revealed proud official titles including overseer of linen, royal purifier, master craftsmen, and directors of the pyramid side.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "graffiti was found above the king's chamber in the Great Pyramid that, among other names, included 'Friends of Khufu Gang.'",
+   "source_date": "1997-02-04",
+   "source_name": "PBS NOVA",
+   "source_url": "https://www.pbs.org/wgbh/nova/pyramid/explore/builders.html",
+   "text": "Quarry marks painted in red ochre inside the relieving chambers of the Great Pyramid preserve the names of proud work gangs, such as the Friends of Khufu Gang.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 175000.0,
+   "quote": "We have examined and identified over 175,000 bones and bone fragments from the excavations at the Giza pyramid settlement... prime beef for pyramid builders.",
+   "source_date": "2009-09-01",
+   "source_name": "Ancient Egypt Research Associates",
+   "source_url": "https://aeraweb.org/pyramids-and-protein/",
+   "text": "Archaeozoologist Richard Redding identified over 175,000 animal bone fragments at the Giza settlement, calculating that the workforce received more than 1,800 kilograms of meat daily from cattle, sheep, and goats.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "The majority of the bodies discovered show evidence of hard physical labor, many even featuring broken bones. Most of these had healed correctly, however, indicating that, in addition to being well-fed, the workers also received very good medical care.",
+   "source_date": "2020-01-01",
+   "source_name": "Ministry of Tourism and Antiquities, Egypt",
+   "source_url": "https://egymonuments.gov.eg/en/monuments/workers-town-and-cemetery",
+   "text": "Skeletal remains from the workers' cemetery showed evidence of skilled medical interventions, including professionally set bone fractures and trepanations that completely healed before death.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 2013.0,
+   "quote": "In 2013 archaeologists uncovered what has since been called 'the greatest discovery in Egypt in the 21st century': hundreds of papyrus fragments dating to the last years of King Khufu's reign at the oldest harbour in Egypt, a site on the Red Sea coast called Wadi al-Jarf.",
+   "source_date": "2015-10-15",
+   "source_name": "Smithsonian Magazine",
+   "source_url": "https://www.smithsonianmag.com/history/ancient-egypt-shipping-mining-wadi-el-jarf-180956619/",
+   "text": "In 2013, archaeologists directed by Pierre Tallet unearthed the Diary of Merer at Wadi al-Jarf, the world's oldest written papyrus detailing how an elite boat crew transported limestone blocks for the Great Pyramid.",
+   "unit": "CE"
+  },
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "archaeological evidence points to a beef-rich diet for the overseers, while the general workers ate much more sheep and goat meat, in addition to the grain and beer consumed by most citizens.",
+   "source_date": "2013-04-26",
+   "source_name": "Biblical Archaeology Society",
+   "source_url": "https://www.biblicalarchaeology.org/daily/ancient-cultures/ancient-near-eastern-world/feeding-the-pyramid-builders/",
+   "text": "Specialists debate whether high-quality cattle meat was shared widely among all rotating stone haulers or reserved primarily for administrative supervisors and permanent artisans.",
+   "unit": null
+  }
+ ],
+ "id": "2026-12-03-arthvan-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-26",
+   "drafts": 2,
+   "research": 1
+  },
+  "cost": {
+   "inr": 19.5,
+   "usd": 0.272758,
+   "voice": 12
+  },
+  "drafts": 2,
+  "ig_story_id": "skipped: Reel over 60 s",
+  "music": {
+   "by": "Kevin MacLeod (incompetech.com)",
+   "licence": "CC BY 4.0",
+   "title": "Darkness is Coming"
+  },
+  "sound": "track",
+  "watch": {
+   "best_change": "Open on a striking image of chained slaves under a whip with the caption 'Jhooth?', so the myth being busted is visible in the first second instead of a generic pyramid.",
+   "issues": 6,
+   "opening": 7,
+   "verdict": "fix"
+  },
+  "watch_redo": [
+   0,
+   1,
+   2,
+   8
+  ]
+ },
+ "kind": "short",
+ "publish_day": "2026-12-03",
+ "reasons": [
+  "try 1: hook: needs a question, a number or a name",
+  "review: redrawing 4 picture(s) before upload"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Giza ke pyramid gulamon ne banaye? Kabron par likha kuch aur.\nEk ghoda ladkhadaya, aur pyramid banane walon ka kabristan nikal aaya.\nGarv wale ohde, roti, beer, maans, aur judi hui haddiyan.\nAapko kya lagta hai, kaam marzi se tha ya hukum se?\nUs dost ko bhejo jo kehta hai pyramid gulamon ne banaye.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#Archaeology",
+     "#Mythology",
+     "#Itihaas",
+     "#Rahasya",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Giza ke pyramid gulamon ne banaye? Kabron par garv wale ohde likhe hain, paas mein roti aur beer ka shahar mila. Aapko kya lagta hai, kaam marzi se tha ya raja ke hukum se? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Giza ke pyramid gulamon ne banaye? Kabron par likha kuch aur. Ek ghode ki thokar se pyramid banane walon ka kabristan mila, jahan garv wale ohde, roti, beer aur ilaaj ke sabut hain. Lekin kaam marzi se tha ya hukum se, is par vidwan aaj bhi bante hain. Us dost ko bhejo jo kehta hai pyramid gulamon ne banaye.",
+    "tags": [
+     "pyramid",
+     "giza",
+     "egypt",
+     "pyramid builders",
+     "misr",
+     "gulam",
+     "archaeology",
+     "khufu",
+     "itihaas",
+     "sabut ke saath",
+     "ancient egypt",
+     "mythology"
+    ],
+    "title": "Pyramid gulamon ne banaye? 1990 ki khoj"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo kehta hai pyramid gulamon ne banaye.",
+  "hook": "Giza ke pyramid gulamon ne banaye? Kabron par likha kuch aur.",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic dramatic view of the Great Pyramid of Giza under a towering desert dust storm at sunset, orange sky, sand whipping across the plateau, a row of small mudbrick tombs half buried in the foreground, natural light, documentary photograph, no text. Correction after review: Remove the centre watermark or make it much fainter; the corner SG logo is enough.",
+     "type": "art"
+    },
+    "vo": "Giza ke pyramid gulamon ne banaye? Kabron par likha kuch aur."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic cinematic scene of ancient Egyptian workers in linen kilts hauling a huge limestone block on a wooden sledge under harsh midday sun, an overseer seen from behind holding a whip, dust and heat haze, the way old epic films imagined it, no text. Correction after review: Use an image that shows the movie myth clearly, with chained workers and an overseer with a whip, so the reveal later has something to overturn.",
+     "type": "art"
+    },
+    "vo": "Filmon mein: tapti ret, kode, zanjeer mein log. Yeh tasveer Yunani lekhak Herodotus se chali. Par ek ghoda sab badal deta hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic moment on the Giza sand plateau, a horse stumbling as its hoof catches the edge of a buried mudbrick wall poking out of the sand, the rider seen from behind losing balance, pyramids in the hazy background, morning light, no text. Correction after review: Shorten the source names so they fit, such as 'KHOJ • Egypt Antiquities', or widen the pill.",
+     "type": "art"
+    },
+    "vo": "Saal 1990, Giza. Ek tourist ka ghoda ladkhadata hai. Pair dabi hui deewar se takraya."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view of an excavation at the foot of the Giza plateau, rows of small mudbrick tombs and narrow lanes exposed in the sand, Egyptian excavators in work clothes with brushes and baskets seen from above, the pyramids at the edge of the frame, no text",
+     "type": "art"
+    },
+    "vo": "Khudai hoti hai. Neeche kabristan nikalta hai. Pyramid banane walon ka."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a carved limestone false door in an ancient Egyptian tomb, painted hieroglyphs and a relief of a seated official in a linen kilt, soft torchlight raking across the stone, dust in the air, no readable text",
+     "type": "art"
+    },
+    "vo": "Kabron par garv se ohde likhe hain. Kapdon ka nigraani wala. Master karigar. Gulam apni kabr par aisa likhte?"
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view inside a narrow granite chamber of the Great Pyramid, rough stone blocks with faded red ochre painted marks, a beam of torchlight cutting through darkness, cramped and ancient atmosphere, no readable text",
+     "type": "art"
+    },
+    "vo": "Pyramid ke andar, pathar par laal rang se likha. Toli ka naam: Khufu ke dost. Khufu, yaani yahan ka raja."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic reconstruction of an ancient Egyptian workers' town beside the pyramids at dawn, mudbrick bakeries with smoke rising, clay bread moulds and large beer jars, men in linen kilts carrying grain baskets, cattle and goats in a pen, warm natural light, no text",
+     "type": "art"
+    },
+    "vo": "Paas mein mazdooron ka shahar mila. Roti ki bhattiyan, beer ki jagah. Aur jaanwaron ki 175,000 haddiyon ke tukde."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of an ancient human arm bone resting on a museum lab table, a clearly healed fracture visible, a gloved hand of a researcher holding a magnifying lens, soft white lab light, respectful and clinical, no text",
+     "type": "art"
+    },
+    "vo": "Matlab khaana bhi, maans bhi. Kankaal dekho, tooti haddiyan theek judi thi. Chot lagi, toh ilaaj bhi mila."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic split-feel scene in an ancient Egyptian camp, on one side an overseer in fine white linen eating beef at a low wooden table, on the other side stone haulers sitting on the sand sharing goat meat and bread, evening light, no text. Correction after review: Show a scribe or overseer in plain linen at the table instead of a pharaoh figure.",
+     "type": "art"
+    },
+    "vo": "Par vidwan yahan bante hain. Kuch kehte, gaay ka gosht afsaron ko milta. Aam mazdoor bhed-bakri khaate."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of hundreds of ancient Egyptian workers in linen kilts walking in long columns along the Nile toward the rising pyramid, boats on the river carrying stone, some singing, some weary, golden morning haze, no text",
+     "type": "art"
+    },
+    "vo": "Aur kaam marzi se tha, ya raja ka hukum? Is par aaj bhi bahas hai."
+   },
+   {
+    "facts_used": [
+     1,
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic present-day view of the workers' cemetery at Giza, small mudbrick and stone tombs in the sand, a lone visitor seen from behind looking up at the Great Pyramid, late afternoon light, quiet and respectful mood, no text",
+     "type": "art"
+    },
+    "vo": "Seedha jawab: zanjeer wali tasveer legend hai. Sabut izzatdar mazdoor dikhate hain. Aap Giza mein unki kabrein dekh sakte hain. Par hazaaron logon tak khana kaise pahunchta?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide shot of the three pyramids of Giza at blue hour, the first stars appearing, the workers' town ruins faintly visible in the foreground sand, calm and awe-filled mood, no text",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo kehta hai pyramid gulamon ne banaye."
+   }
+  ],
+  "thumbnail": {
+   "name": "GIZA",
+   "name_hi": "गीज़ा",
+   "scene": "LEFT: whipped workers in chains dragging a giant stone block toward a half-built pyramid as old films imagined; RIGHT: the real excavated workers' town beside the Great Pyramid, mudbrick bakeries, bread moulds and piles of animal bones in the sand at sunset.",
+   "words": [
+    "175,000",
+    "PROOF"
+   ],
+   "words_hi": [
+    "175,000",
+    "प्रूफ"
+   ]
+  },
+  "title": "Pyramid *gulamon* ne banaye the? 🤯"
+ },
+ "status": "voiced",
+ "timings": [
+  0.0,
+  4.669,
+  14.949,
+  23.09,
+  28.066,
+  35.973,
+  45.618,
+  54.79,
+  63.409,
+  70.437,
+  75.45,
+  87.267
+ ],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "en.wikipedia.org",
+   "nio.res.in",
+   "britannica.com",
+   "the scripture or text named in the story",
+   "nasa.gov",
+   "who.int",
+   "nih.gov",
+   "nationalgeographic.com",
+   "smithsonianmag.com",
+   "a university or museum page"
+  ],
+  "follows": "Saturated monument myths need an untold human story. Works as a worldwide monument slot.",
+  "hooks": [
+   "Pyramid ke paas ek mazdooron ka shahar mila, jahan roz taza bread aur beer banti thi. Gulam aisa khana khate?",
+   "Giza ke mazdooron ki kabron par kya likha hai?"
+  ],
+  "id": "wk-2026-12-03-arthvan-short",
+  "summary": "The popular image is of whipped slaves. Excavations at Giza by Lehner and Hawass found a workers' town with bakeries, breweries and tombs beside the pyramids, plus healed bone injuries. Check Herodotus's account, the dates and the digs.",
+  "target_minutes": null,
+  "title": "Misr ke pyramid gulamon ne banaye the, ye kisne kaha?",
+  "topic_score": 2,
+  "topic_score_why": [
+   "-2 no famous name",
+   "+3 a shock question or a mystery",
+   "+1 asks a question"
+  ],
+  "viral": true,
+  "voice": "voice_1kn3blc2u13l",
+  "weekly": true
+ },
+ "updated": "2026-11-26T18:45:43+00:00",
+ "writer": "claude"
+}
