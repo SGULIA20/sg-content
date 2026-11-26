@@ -35,10 +35,11 @@ def test_horizons_seven_days_shorts_and_long_within_window(tmp_path, monkeypatch
     monkeypatch.setattr(config, "ENABLED_KINDS", {"short", "long"})
     need = buffer.needed(tmp_path, date(2026, 10, 19), horizon_short=7, horizon_long=10)
     days = sorted({d for d, _c, k in need if k == "short"})
-    assert days[0] == date(2026, 10, 19) and days[-1] == date(2026, 10, 25)
+    assert days[0] == date(2026, 10, 19) and days[-1] == date(2026, 10, 21)       # 26 Nov 2026: both channels are made two days ahead
     assert (date(2026, 10, 22), "arthvan", "long") in need and (date(2026, 10, 21), "sglearning", "long") in need
     assert (date(2026, 10, 24), "sglearning", "long") not in need                 # 24 Nov 2026: Learning is made days ahead, not weeks, so it can follow the trend
     assert max(d for d, c, k in need if c == "sglearning" and k == "short") == date(2026, 10, 21)
+    assert max(d for d, c, k in need if c == "arthvan" and k == "short") == date(2026, 10, 21)
 
 
 def test_myth_short_needs_its_long(tmp_path):
