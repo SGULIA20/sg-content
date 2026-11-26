@@ -105,7 +105,9 @@
    "voice": 12
   },
   "drafts": 1,
+  "ig_reel_id": "18140344489675336",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-26-arthvan-short.mp4",
    "clip_seconds": 1,
@@ -116,6 +118,8 @@
   "intro_sent": "2026-11-19T22:21:59+00:00",
   "out_sha": "d1020800df23967cf7e5153aac8b29667ee5a98b",
   "out_sha_intro": true,
+  "threads_id": "18132124852846969",
+  "threads_poll_id": "18009910598791931",
   "yt_id": "WaB-MhAqTQc"
  },
  "kind": "short",
@@ -321,7 +325,7 @@
   },
   "title": "Vishnu ko *ghode* ka sir kyun? 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   3.854,
@@ -404,6 +408,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-20T15:14:42+00:00",
+ "updated": "2026-11-26T16:11:07+00:00",
  "writer": "claude"
 }
