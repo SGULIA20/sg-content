@@ -240,6 +240,7 @@ HOOK_TRIES = 4
 # hooks and name its own favourite. It now writes a pool of HOOK_POOL, three simulated viewers score every one, and the five he is sent
 # are the five the panel rated highest, best first.
 HOOK_POOL = 12
+HOOK_TOKENS = 16000
 PANEL = """Three people are scrolling short videos on their phones in India. Each sees the opening line below spoken by a presenter in the first
 ten seconds of a video on a channel about {field}.
 
@@ -255,6 +256,23 @@ Lines:
 {lines}
 
 Reply with JSON only: {{"scores": [{{"line": <number>, "a": <1-10>, "b": <1-10>, "c": <1-10>}}]}}"""
+
+
+def _ask_hooks(prompt: str) -> str:
+    """The hook writer and its panel. 26 Nov 2026: with a pool of twelve hooks and last week's lessons added to the brief, the trailer
+    request's 4,000 tokens ran out before any hook was written (the model thinks first), four tries in a row, and the founder was sent
+    one old-style line ("why only 1 hook"). Room for the thinking and the list."""
+    import anthropic
+    client = anthropic.Anthropic(api_key=secrets.get("ANTHROPIC_API_KEY"))
+    r = client.messages.create(model=SONNET, max_tokens=HOOK_TOKENS, output_config={"effort": "low"}, messages=[{"role": "user", "content": prompt}])
+    if r.stop_reason != "end_turn":
+        print(f"intro hooks: the writer stopped with {r.stop_reason}", flush=True)
+    try:
+        from . import writer
+        writer.record_spend(r.usage, writer.SPEND_FILE, None, factor=writer.SONNET_VS_OPUS)
+    except Exception:
+        pass
+    return "".join(getattr(b, "text", "") for b in r.content).strip()
 
 
 def panel_scores(hooks: list, field: str, ask) -> dict:
@@ -321,8 +339,7 @@ def options(piece, first: dict, ask=_ask_claude, panel=None) -> list:
              else "myths of the world and the reason behind them: mythology, history, mysteries and untold stories")
     live = ask is _ask_claude
     if panel is None and live:                                        # production: the panel is a second short request; tests pass their own or none
-        from . import teaser
-        panel = teaser.intro_ask()
+        panel = _ask_hooks
     pool = HOOK_POOL if panel else HOOKS
     brief = HOOK_BRIEF.format(field=field, tongue="plain Indian English (no Hindi words)" if en else "natural spoken Hinglish in Latin script",
                               n=pool, lo=lo, hi=hi, summary=_summary(piece))
@@ -338,8 +355,7 @@ def options(piece, first: dict, ask=_ask_claude, panel=None) -> list:
         hooks, best = [], None
         try:
             if ask is _ask_claude:                                    # the bridge call's small allowance returns nothing for a list
-                from . import teaser
-                raw = teaser.intro_ask()(prompt)
+                raw = _ask_hooks(prompt)
             else:
                 raw = ask(prompt)
             data = _json.loads(re.search(r"\{.*\}", raw, re.S).group(0))
@@ -498,7 +514,8 @@ def _scene_setting(piece) -> str:
     if not opening.is_trial(piece):
         return ""
     scenes = (piece.script or {}).get("scenes") or [{}]
-    scene = re.sub(r"(?i)\bphoto-?realistic\b[, ]*", "", str((scenes[0].get("visual") or {}).get("prompt") or "")).strip().rstrip(".")
+    first = str((scenes[0].get("visual") or {}).get("prompt") or "").split("Correction after review:")[0]   # 26 Nov 2026: the review's note for the painter had leaked into his clip prompt
+    scene = re.sub(r"(?i)\bphoto-?realistic\b[, ]*", "", first).strip().rstrip(".")
     return re.sub(r"(?i),?\s*no (text|people|logos?)\b[^,.]*", "", scene)
 
 

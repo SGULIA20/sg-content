@@ -731,3 +731,20 @@ def test_the_opening_picture_test_alternates_halves_and_the_picture_covers_only_
                              capture_output=True, check=True).stdout
         return raw[2] > raw[0]
     assert blue_red(0.5) and blue_red(1.3) and not blue_red(1.8) and not blue_red(3.5)        # the picture, then him
+
+
+def test_the_hook_writer_has_room_to_answer_and_the_reviews_note_stays_out_of_his_clip_prompt(monkeypatch):
+    """26 Nov 2026: he was sent ONE old-style hook for 3 Dec because the writer ran out of tokens four times, and the clip prompt
+    carried 'Correction after review: Remove the centre watermark'."""
+    from types import SimpleNamespace as P
+    from engine import intro, opening, watch
+    assert intro.HOOK_TOKENS >= 16000
+    monkeypatch.setattr(opening, "is_trial", lambda piece, root=None: True)
+    piece = P(script={"scenes": [{"visual": {"prompt": "Photorealistic view of the Great Pyramid at sunset. Correction after review: Remove the centre watermark"}}]})
+    setting = intro._scene_setting(piece)
+    assert "Great Pyramid" in setting and "Correction" not in setting and "watermark" not in setting
+    scenes = [{"visual": {"type": "art", "prompt": "a pyramid"}}, {"visual": {"type": "art", "prompt": "a tomb"}}]
+    r = {"opening": 9, "scene_of_frame": {0: 0, 1: 1}, "issues": [{"frame": 0, "fix": "Remove the centre watermark or make it fainter"},
+                                                                   {"frame": 1, "fix": "Show the workers' names carved on the tomb wall"}]}
+    p2 = P(script={"scenes": scenes}, ids={})
+    assert watch.redraw(p2, r) == [1] and "Correction" not in scenes[0]["visual"]["prompt"]      # the painter cannot fix a watermark

@@ -110,6 +110,9 @@ STRONGER = ("Make this opening picture the most dramatic, close and high-contras
             "scrolling past must stop on it.")
 
 
+OVERLAY = re.compile(r"(?i)\b(watermark|logo|caption|subtitle|on-screen text|badge|handle)\b")
+
+
 def redraw(piece, r: dict) -> list:
     """Acts on the review (founder, 24 Nov 2026: "your purpose is just not sending message or report ... on analysation you need to
     action on next reels"): the pictures a viewer would trip over are redrawn ONCE before the video goes up. Each flagged scene's
@@ -123,6 +126,8 @@ def redraw(piece, r: dict) -> list:
         try:
             i = r["scene_of_frame"][int(issue.get("frame"))]
         except (KeyError, TypeError, ValueError):
+            continue
+        if OVERLAY.search(str(issue.get("fix") or "")):                # the logo, watermark and captions are laid on afterwards: the painter cannot fix them
             continue
         if i < len(scenes) and str(issue.get("fix") or "").strip() and len(fixes) < REDRAW_MAX:
             fixes.setdefault(i, str(issue["fix"]).strip()[:200])
