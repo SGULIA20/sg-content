@@ -110,7 +110,11 @@ STRONGER = ("Make this opening picture the most dramatic, close and high-contras
             "scrolling past must stop on it.")
 
 
-OVERLAY = re.compile(r"(?i)\b(watermark|logo|caption|subtitle|on-screen text|badge|handle)\b")
+NOTE = "Correction after review:"
+# What the painter cannot do: anything laid on afterwards (logo, captions, chips, credits) and anything written or charted. 27 Nov 2026:
+# four of four notes on one Short asked for words, a credit or a bar chart "on screen", and one of them made the painter refuse.
+OVERLAY = re.compile(r"(?i)\b(watermark|logo|caption|subtitle|on[- ]screen|text|phrase|words?|badge|handle|chip|pill|credit|source|label|title|"
+                     r"chart|graph|bar|number|figure|font|spelling)s?\b")
 
 
 def redraw(piece, r: dict) -> list:
@@ -138,7 +142,7 @@ def redraw(piece, r: dict) -> list:
         v = scenes[i].setdefault("visual", {})
         if (v.get("type") or "art") != "art" or not v.get("prompt"):      # a card or a photo is not a painted picture
             continue
-        v["prompt"] = f"{str(v['prompt']).rstrip('. ')}. Correction after review: {fix}"
+        v["prompt"] = f"{str(v['prompt']).rstrip('. ')}. {NOTE} {fix}"
         changed.append(i)
     piece.ids["watch_redo"] = changed
     return changed

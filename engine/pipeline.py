@@ -7,7 +7,7 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Callable
 
-from . import art, artbatch, assemble, buffer, cards, cartoon, cast, claims, costs, gemini, intro, lint, newscard, opening, pieces, qa, research, secrets, slots, storyframe, telegram, topics, voice, voicebatch, writer, youtube
+from . import art, artbatch, assemble, buffer, cards, cartoon, cast, claims, costs, gemini, intro, lint, newscard, opening, pieces, qa, research, secrets, slots, storyframe, telegram, topics, voice, voicebatch, watch, writer, youtube
 from .config import CHANNELS, INSTAGRAM_CAROUSEL, ROOT, VIDEO, story_words
 from .pieces import Piece
 
@@ -269,7 +269,18 @@ def _visual_for(piece: Piece, i: int, scene: dict, deps: Deps, out_dir: Path, si
         refs = deps.cast_refs(prompt, channel=piece.channel) if deps.cast_refs else []
         hero = is_hero(piece, i)
         full, aspect = panel_request(piece, prompt, hero)
-        got = deps.paint(full, out, aspect=aspect, refs=[] if hero else refs)
+        try:
+            got = deps.paint(full, out, aspect=aspect, refs=[] if hero else refs)
+        except art.ImageError:
+            # 27 Nov 2026: the video review's note for one picture ("... a bar showing Endgame clearing 2.5x") made the painter refuse
+            # it as prohibited content, and the 28 Nov Learning Short failed on every run. The picture as first written is painted
+            # instead, and the note is dropped from the script so the next run does not trip on it again.
+            if watch.NOTE not in prompt:
+                raise
+            prompt = prompt.split(watch.NOTE)[0].rstrip(". ") + "."
+            v["prompt"] = prompt
+            full, aspect = panel_request(piece, prompt, hero)
+            got = deps.paint(full, out, aspect=aspect, refs=[] if hero else refs)
         if piece.kind == "short" and Path(got).exists() and art.blank_share(got) > art.BLANK_MAX:   # framed, with an empty box below: redraw once
             got = deps.paint(art.style_prompt(piece.channel, prompt + SHORT_PANEL_NOTE + " Paint the scene all the way down to the bottom edge."),
                              out, aspect="2:3", refs=refs)
