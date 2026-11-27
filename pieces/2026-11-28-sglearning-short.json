@@ -110,6 +110,7 @@
   "review: redrawing 4 picture(s) before upload",
   "no picture in the reply: {\"candidates\": [{\"content\": {}, \"finishReason\": \"PROHIBITED_CONTENT\", \"index\": 0, \"safetyRatings\": [{\"category\": \"HARM_CATEGORY_HATE_SPEECH\", \"probability\": \"NEGLIGIBLE\"}]}], \"usageMetadata\": {\"prompt",
   "no picture in the reply: {\"candidates\": [{\"content\": {}, \"finishReason\": \"PROHIBITED_CONTENT\", \"index\": 0, \"safetyRatings\": [{\"category\": \"HARM_CATEGORY_HATE_SPEECH\", \"probability\": \"NEGLIGIBLE\"}]}], \"usageMetadata\": {\"prompt",
+  "narration: the last line is cut or inaudible before 53.4s",
   "narration: the last line is cut or inaudible before 53.4s"
  ],
  "script": {
@@ -290,6 +291,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-27T19:05:54+00:00",
+ "updated": "2026-11-27T22:28:19+00:00",
  "writer": "claude"
 }
