@@ -32,7 +32,9 @@ def unschedule(channel: str, vid: str, call=None, token_for=None) -> str:
     token = (token_for or youtube.access_token)(channel)
     status, _h, body = call("PUT", f"{DATA}/videos?part=status", token,
                             {"id": vid, "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": False}})
-    return "off the schedule" if status == 200 and not ((body or {}).get("status") or {}).get("publishAt") else f"FAILED ({status})"
+    # 27 Nov 2026: YouTube's reply to the change still carried the old publish time for 14 of 20 videos that were in fact off the
+    # schedule (a fresh listing showed none left), so the reply's publishAt is not a test of anything. 200 is the answer.
+    return "off the schedule" if status == 200 else f"FAILED ({status})"
 
 
 def plan(root: Path, rows: dict, now: datetime) -> tuple:
