@@ -74,7 +74,9 @@ def main(argv=None) -> int:
     if clip.exists():
         video = intro.compose(piece, clip, out, (w, h))
     print(f"made {video} ({intro.duration(video):.1f} s)", flush=True)
-    if os.environ.get("TELEGRAM_BOT_TOKEN"):
+    from engine import audit
+    audit.run(video, piece, ROOT / "logs" / "audit" / piece.id, notify=telegram.send if os.environ.get("TELEGRAM_BOT_TOKEN") and "--quiet" not in args else None)
+    if os.environ.get("TELEGRAM_BOT_TOKEN") and "--quiet" not in args:
         print(telegram.send_file(video, f"TRIAL {piece.id}: the whole body is your moving film, slowed to {speed:.2f}x to fit the narration. "
                                         "Not uploaded. The script is a trial text, not yet fact-checked."))
     return 0

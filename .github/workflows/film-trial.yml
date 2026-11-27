@@ -10,7 +10,7 @@ on:
         required: true
 
 permissions:
-  contents: read
+  contents: write      # only the audit's report and contact sheet are saved (logs/audit/)
 
 jobs:
   trial:
@@ -18,6 +18,8 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
@@ -32,6 +34,15 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SG_MUSIC: '1'
         run: python scripts/film_trial.py "${{ inputs.piece }}" out/film-trial
+      - name: Save the audit
+        if: always()
+        run: |
+          git config user.name "sg-content-bot"; git config user.email "sg-content-bot@users.noreply.github.com"
+          git add -f logs/audit || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "audit: ${{ inputs.piece }} [skip ci]"
+          for n in 1 2 3 4; do git pull --rebase --autostash origin main && git push origin HEAD:main && exit 0; sleep $((n * 20)); done
+          exit 1
       - name: Keep the trial as a download
         if: always()
         uses: actions/upload-artifact@v4
