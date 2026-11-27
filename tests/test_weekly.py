@@ -60,7 +60,7 @@ def test_run_saves_the_plan_and_tells_the_founder_and_dry_run_does_neither(tmp_p
     (tmp_path / "content").mkdir()
     sent = []
     plan = weekly.run(tmp_path, TODAY, ask=_ask, notify=sent.append, rows={"sglearning": [{"views": 2081757, "title": "Gold-Silver Crash!", "seconds": 146, "channel": "x"}], "arthvan": []})
-    assert (tmp_path / "content" / "weekly-plan.json").exists() and sent and "Topic plan" in sent[0] and "Learning with SG" in sent[0] and "SG-MYTH-WORLD" in sent[0]
+    assert (tmp_path / "content" / "weekly-plan.json").exists() and sent and "Today's topics" in sent[0]
     sent.clear()
     (tmp_path / "content" / "weekly-plan.json").unlink()
     weekly.run(tmp_path, TODAY, ask=_ask, notify=sent.append, rows={}, dry=True)
@@ -150,3 +150,11 @@ def test_a_subject_made_weeks_ago_is_still_remembered_and_a_market_rally_is_not_
     assert "Konark ka chumbak" in seen and weekly.repeats("Konark ke Sun Temple ka chumbak jahaz kheenchta tha?", seen)
     assert weekly.recent_titles(tmp_path, days=30, today=TODAY) == []                       # older than the window
     assert topicscore.score({"title": "Sona-chandi ki rally achanak kyun ruki?", "summary": "", "hooks": []}, "sglearning", TODAY, [])[0] > -10
+
+
+def test_the_daily_plan_message_names_only_the_videos_being_made_now():
+    plan = {"week_of": "2026-11-28", "entries": {"2026-11-28-sglearning-long": {"title": "Sona kyun gira"}, "2026-11-29-arthvan-short": {"title": "Dimaag ka 10 percent"},
+                                                  "2026-12-05-arthvan-short": {"title": "Baad ka topic"}}, "notes": ["x dropped (repeat)"], "signals": {}}
+    text = weekly.message(plan)
+    assert "Sat 28 long: Sona kyun gira" in text and "Sun 29 Short: Dimaag" in text and "Baad ka topic" not in text and "dropped" not in text
+    assert "Nothing new to make today" in weekly.message({"week_of": "2026-11-28", "entries": {"2026-12-05-arthvan-short": {"title": "x"}}})

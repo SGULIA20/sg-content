@@ -60,7 +60,7 @@ def test_posted_when_all_ids_present(tmp_path):
     code = publish.run(tmp_path, "sglearning", NOW, ENV, ig_publish=ig_publish, threads_post=lambda uid, tok, url, text, **k: "th1", notify=lambda t: sent.append(t) or True)
     q = pieces.load(p.id, tmp_path)
     assert code == 0 and q.status == "posted" and q.ids["threads_id"] == "th1"
-    assert sent and "posted 1" in sent[0]
+    assert sent == []                                    # 27 Nov 2026: a clean post is not announced; the evening card reports it
 
 
 def test_threads_failure_leaves_piece_uploaded_with_reason(tmp_path):

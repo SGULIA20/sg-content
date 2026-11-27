@@ -369,23 +369,27 @@ def topic_for(root: Path, piece, used: set, path: Path | None = None) -> dict | 
     return entry
 
 
+MESSAGE_DAYS = 2                 # today and tomorrow: what is being made now (the search runs every morning, 27 Nov 2026)
+
+
 def message(plan: dict) -> str:
-    lines = [f"📅 Topic plan from this week's YouTube research (week of {plan['week_of']})"]
+    """What the founder is told after the morning search: only the videos being made today (today's long, tomorrow's Shorts), each
+    with its topic. Until 27 Nov 2026 this listed up to 32 slots three weeks ahead with scores; sent daily that is noise, and the
+    later days are searched again before they are made."""
+    start = date.fromisoformat(plan["week_of"])
+    last = (start + timedelta(days=MESSAGE_DAYS - 1)).isoformat()
+    lines = [f"📅 Today's topics, from this morning's search ({start:%a %d %b})"]
     for ch, label in (("sglearning", "Learning with SG"), ("arthvan", "SG-MYTH-WORLD")):
-        rows = sorted(((pid, t) for pid, t in plan["entries"].items() if f"-{ch}-" in pid), key=lambda r: r[0])
-        lines.append(f"\n{label} ({len(rows)} slots)")
-        for pid, t in rows[:16]:
-            day = pid[:10]
+        rows = sorted(((pid, t) for pid, t in plan["entries"].items() if f"-{ch}-" in pid and pid[:10] <= last), key=lambda r: r[0])
+        if not rows:
+            continue
+        lines.append(f"\n{label}")
+        for pid, t in rows:
             kind = "long" if pid.endswith("long") else "Short"
-            title = str(t.get("title") or t.get("title_hi") or "")[:70]
-            src = "bank" if t.get("from_bank") else "YouTube signal, spare" if t.get("spare") else "YouTube signal"
-            lines.append(f"{day[5:]} {kind}: {title} [{t.get('topic_score', '-')}, {src}]")
-        sig = plan.get("signals", {}).get(ch) or []
-        if sig:
-            lines.append("Most-viewed now: " + " | ".join(sig[:3]))
-    for n in plan.get("notes", [])[:4]:
-        lines.append(f"• {n}")
-    lines.append("\nTo change a topic, tell Claude which day; the pipeline uses this plan first.")
+            lines.append(f"{date.fromisoformat(pid[:10]):%a %d} {kind}: {str(t.get('title') or t.get('title_hi') or '')[:80]}")
+    if len(lines) == 1:
+        lines.append("Nothing new to make today: the videos due are already made.")
+    lines.append("\nYour clip requests for these follow as each video is built. To change a topic, tell Claude.")
     return "\n".join(lines)
 
 
