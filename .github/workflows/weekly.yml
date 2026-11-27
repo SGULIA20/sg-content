@@ -8,6 +8,11 @@ on:
   schedule:
     - cron: '17 16 * * 0,2,4'   # Sunday, Tuesday, Thursday (founder, 24 Nov 2026: trending topics reach Learning viewers within days)
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'yes = plan again even if today is already planned'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -28,12 +33,18 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
+      - name: Already planned today?
+        id: done
+        run: |
+          if [ "${{ github.event.inputs.force }}" != "yes" ] && grep -q "\"generated\": \"$(date -u +%F)" content/weekly-plan.json 2>/dev/null; then echo "yes=1" >> "$GITHUB_OUTPUT"; echo "today's plan is already saved"; fi
       - run: pip install -q -r requirements.txt
+        if: steps.done.outputs.yes != '1'
       - name: Git identity
         run: |
           git config user.name "sg-content-bot"
           git config user.email "sg-content-bot@users.noreply.github.com"
       - name: Research and plan the week
+        if: steps.done.outputs.yes != '1'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
@@ -48,4 +59,5 @@ jobs:
         run: |
           git add -f content/weekly-plan.json logs/claude-spend.json || true
           git diff --cached --quiet || git commit -m "weekly plan: topics for the coming days [skip ci]"
-          git pull --rebase --autostash origin main && git push origin HEAD:main
+          for n in 1 2 3 4; do git pull --rebase --autostash origin main && git push origin HEAD:main && exit 0; sleep $((n * 20)); done
+          exit 1

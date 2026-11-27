@@ -23,3 +23,21 @@ def test_only_pieces_due_within_the_horizon_are_researched(tmp_path):
     scripted.script = {"scenes": []}
     pieces.save(scripted, tmp_path)
     assert not produce._waits_for_its_turn(tmp_path, date(2026, 11, 11), "sglearning", "short", today)    # already has its script
+
+
+def test_no_new_video_starts_on_yesterdays_plan_and_a_video_due_soon_skips_the_slow_lanes(tmp_path):
+    """founder, 27 Nov 2026: 'max 1 days advance and long videos no advance ... deep search before making reels'."""
+    import json
+    from datetime import date, datetime, timezone
+    from types import SimpleNamespace as P
+    from engine import pipeline, produce
+    assert produce._waits_for_todays_plan(tmp_path, datetime(2026, 11, 28, 6, 0, tzinfo=timezone.utc)) is False       # no plan file: nothing to wait for
+    (tmp_path / "content").mkdir()
+    (tmp_path / "content" / "weekly-plan.json").write_text(json.dumps({"generated": "2026-11-27T05:40:00+00:00"}))
+    assert produce._waits_for_todays_plan(tmp_path, datetime(2026, 11, 27, 7, 5, tzinfo=timezone.utc)) is False       # planned this morning
+    assert produce._waits_for_todays_plan(tmp_path, datetime(2026, 11, 27, 19, 5, tzinfo=timezone.utc)) is True       # past midnight in India: tomorrow's plan is not here yet
+    assert produce._waits_for_todays_plan(tmp_path, datetime(2026, 11, 28, 4, 0, tzinfo=timezone.utc)) is True
+    assert produce._waits_for_todays_plan(tmp_path, datetime(2026, 11, 28, 10, 45, tzinfo=timezone.utc)) is False      # 16:15 India, still no plan: go on with the old one
+    now = datetime(2026, 11, 27, 6, 0, tzinfo=timezone.utc)
+    assert pipeline.due_soon(P(channel="sglearning", kind="short", publish_day=date(2026, 11, 28)), now) is True
+    assert pipeline.due_soon(P(channel="sglearning", kind="short", publish_day=date(2026, 12, 5)), now) is False

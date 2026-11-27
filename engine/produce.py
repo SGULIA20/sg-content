@@ -27,6 +27,21 @@ def _waits_for_its_turn(root: Path, day, channel: str, kind: str, today: date) -
     return not (piece and piece.script)
 
 
+PLAN_WAIT_UNTIL_IST = (16, 0)    # 11:30 Lagos: if the day's plan has still not come by then, yesterday's is better than no video
+
+
+def _waits_for_todays_plan(root: Path, now_utc: datetime) -> bool:
+    """founder, 27 Nov 2026: topics are searched for the same day ("deep search before making reels", "max 1 days advance"), and the
+    morning review's lessons must reach the next video. So no NEW video is started on yesterday's plan: the run waits for today's
+    (the studio job starts the planner each morning after the review). A started video keeps moving."""
+    try:
+        made = datetime.fromisoformat(json.loads((Path(root) / "content" / "weekly-plan.json").read_text())["generated"])
+    except (OSError, ValueError, KeyError):
+        return False                                                  # no plan at all: nothing to wait for
+    local = slots.ist(now_utc)
+    return slots.ist(made).date() != local.date() and (local.hour, local.minute) < PLAN_WAIT_UNTIL_IST
+
+
 def _log_run(root: Path, record: dict) -> None:
     path = Path(root) / "logs" / "runs.jsonl"
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -56,11 +71,15 @@ def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFA
         # the intro sweep runs only in the Studio poll (studio.yml): a produce run sweeping at the same time uploaded pieces twice (5 Nov 2026)
         for pid in intro.ask_scheduled(root, notify, now_utc):            # already-scheduled pieces get asked, 3 days ahead (4 Nov 2026)
             made.append((pid, "intro asked"))
+        plan_stale = _waits_for_todays_plan(root, now_utc)
         plan = [(d, c, k) for d, c, k in plan if not _waits_for_its_turn(root, d, c, k, today)]    # before the slice: far longs come first in the plan
         for day, channel, kind in plan[:max_pieces]:
             pid = slots.piece_id(day, channel, kind)
             piece = pieces.load(pid, root) or pieces.Piece(id=pid, channel=channel, kind=kind, publish_day=day)
             if piece.status in buffer.DONE or piece.status == "intro-wait":      # a waiting piece was swept above
+                continue
+            if not piece.script and plan_stale:
+                print(f"{pid}: waits for today's topic plan", flush=True)
                 continue
             if piece.status in PACK_STATUSES:
                 deadline = slots.publish_at(channel, kind, day) - timedelta(hours=FALLBACK_HOURS)
