@@ -1,0 +1,292 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": null,
+   "quote": "Avengers: Doomsday arrives in theaters everywhere December 18.",
+   "source_date": "2026-11-24",
+   "source_name": "Hypebeast",
+   "source_url": "https://hypebeast.com/2026/11/marvel-avengers-doomsday-robert-downey-jr-doctor-doom-official-final-trailer-release-info",
+   "text": "Marvel Studios confirmed that 'Avengers: Doomsday' is scheduled to arrive in theaters worldwide on December 18, 2026.",
+   "unit": null
+  },
+  {
+   "label": "reported",
+   "number": 356.0,
+   "quote": "After a reported production budget of $356M and a comparable marketing budget to boot, the House of Mouse ended up netting $890M — or, if we do really crude math, enough to cover the production budgets of two or three more movies from Marvel Studios.",
+   "source_date": "2020-04-25",
+   "source_name": "ComicBook.com",
+   "source_url": "https://comicbook.com/marvel/news/avengers-endgame-box-office-profit-disney-900-million/",
+   "text": "Marvel Studios spent a reported production budget of $356 million to make 'Avengers: Endgame'.",
+   "unit": "USD million"
+  },
+  {
+   "label": "analyst-view",
+   "number": 50.0,
+   "quote": "Another rule of thumb is that theaters keep roughly 50% of the money from ticket sales before the studio gets its cut.",
+   "source_date": "2024-07-23",
+   "source_name": "SlashFilm",
+   "source_url": "https://www.slashfilm.com/1628189/how-movie-box-office-actually-works-and-how-everyone-gets-paid/",
+   "text": "Movie theaters retain approximately 50 percent of ticket revenue from ticket sales before a film studio receives its theatrical rental share.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 1.0,
+   "quote": "By the time the studio started seeing money, the box office had already taken about $1 billion of the earnings, giving Disney around $1.789B to pay the bills.",
+   "source_date": "2020-04-25",
+   "source_name": "ComicBook.com",
+   "source_url": "https://comicbook.com/marvel/news/avengers-endgame-box-office-profit-disney-900-million/",
+   "text": "Theaters kept approximately $1 billion directly out of the gross box office of Avengers: Endgame before Disney collected its film rentals.",
+   "unit": "USD billion"
+  },
+  {
+   "label": "analyst-view",
+   "number": 2.5,
+   "quote": "The shorthand you'll hear from people who actually run these numbers is that a wide theatrical release needs to gross roughly 2.5 times its production budget to get to break-even.",
+   "source_date": "2026-09-12",
+   "source_name": "DFI Rentals",
+   "source_url": "https://dfirentals.com/blog/how-much-does-a-movie-have-to-make-to-break-even/",
+   "text": "Modern box office analysis requires a wide theatrical release to gross roughly 2.5 times its production budget to reach its break-even point.",
+   "unit": "x"
+  },
+  {
+   "label": "reported",
+   "number": 25.0,
+   "quote": "China: under the long-standing revenue-sharing import arrangement, foreign rights holders claim roughly 25% of box office — a figure that was raised from the 13–17.5% range under the 2012 US–China film agreement.",
+   "source_date": "2026-09-12",
+   "source_name": "DFI Rentals",
+   "source_url": "https://dfirentals.com/blog/how-much-does-a-movie-have-to-make-to-break-even/",
+   "text": "Foreign studios receive only approximately 25 percent of the ticket sales generated at the theatrical box office in China.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 890.0,
+   "quote": "In fact, the site says Endgame ended up nearly netting Disney a whopping $900 million profit.",
+   "source_date": "2020-04-25",
+   "source_name": "ComicBook.com",
+   "source_url": "https://comicbook.com/marvel/news/avengers-endgame-box-office-profit-disney-900-million/",
+   "text": "Avengers: Endgame yielded an estimated net profit of $890 million for Disney after accounting for production, global marketing, and talent participations.",
+   "unit": "USD million"
+  }
+ ],
+ "id": "2026-11-28-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-27",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 30.0,
+   "usd": 0.17406,
+   "voice": 8
+  },
+  "drafts": 1,
+  "music": {
+   "by": "Kevin MacLeod (incompetech.com)",
+   "licence": "CC BY 4.0",
+   "title": "Numinous Shine"
+  },
+  "sound": "track",
+  "watch": {
+   "best_change": "Open on the payoff, e.g. 'Endgame cost $356M, so it needed nearly $900M just to break even', with that number big on screen in the first second.",
+   "issues": 6,
+   "opening": 5,
+   "verdict": "fix"
+  },
+  "watch_redo": [
+   1,
+   2,
+   5,
+   6
+  ]
+ },
+ "kind": "short",
+ "publish_day": "2026-11-28",
+ "reasons": [
+  "review: redrawing 4 picture(s) before upload"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Avengers: Endgame reportedly cost 356 million dollars. What did it need back?\nTheatres keep roughly half of every ticket. Marketing reportedly cost about the same as the film.\nAnalysts say a big film must earn 2.5 times its budget just to break even.\nWhen Doomsday's numbers arrive this December, will you check its budget first?\nSend this to the friend who thinks box office means profit.",
+    "hashtags": [
+     "#LearningWithSG",
+     "#SeedhiBaat",
+     "#PaiseKiKhabar",
+     "#PersonalFinanceIndia",
+     "#MoneyTipsHindi"
+    ]
+   },
+   "threads": {
+    "text": "Avengers: Endgame reportedly cost 356 million dollars. Theatres keep roughly half of every ticket, so a big film must earn about 2.5 times its budget just to break even. When Doomsday arrives, will you check its budget first? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Avengers: Endgame reportedly cost 356 million dollars, so what did it really need back? Theatres keep roughly half of every ticket, and marketing reportedly cost about as much as the film. That is why analysts say a big film must earn about 2.5 times its budget just to break even. Send this to the friend who thinks box office means profit.",
+    "tags": [
+     "avengers doomsday",
+     "avengers endgame",
+     "box office",
+     "break even",
+     "movie budget",
+     "marvel",
+     "film business",
+     "box office explained",
+     "hollywood",
+     "learning with sg"
+    ],
+    "title": "Avengers Endgame: 356M Budget, How Much Profit?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Send this to the friend who thinks box office means profit.",
+  "hook": "Avengers: Endgame reportedly cost 356 million dollars. What did it need back?",
+  "scenes": [
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide shot of an enormous film studio set at night, towering lights, cranes and hundreds of crew members working, dramatic sense of scale and expense, cinematic natural haze",
+     "type": "art"
+    },
+    "vo": "Avengers: Endgame reportedly cost 356 million dollars. What did it need back?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a long queue of excited young Indians outside a multiplex at dusk, holding popcorn, warm evening light, festive buzz. Correction after review: Replace it with a real, relevant source credit or remove the chip.",
+     "type": "art"
+    },
+    "vo": "Avengers: Doomsday hits theatres this December. Every record will trend. Records are not profit."
+   },
+   {
+    "facts_used": [],
+    "label": "belief",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of an Indian hand passing cash across a cinema ticket counter to a cashier, soft indoor light, the moment of payment. Correction after review: Keep the photoreal style for this box-office shot and show the full phrase 'ticket money goes to the studio' on screen.",
+     "type": "art"
+    },
+    "vo": "Most fans think ticket money goes to the studio. It made the film, right?"
+   },
+   {
+    "facts_used": [
+     2,
+     5
+    ],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic shot of a cinema manager in an office counting stacks of rupee notes into two equal piles on a wooden desk, lamp light, serious expression",
+     "type": "art"
+    },
+    "vo": "Wrong. Theatres keep roughly half of every ticket. In China, foreign studios reportedly get only a quarter."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a busy Mumbai street at night with huge blank movie billboards and posters lining a flyover, crowds and traffic below, no readable text",
+     "type": "art"
+    },
+    "vo": "And that budget only made the film. Marketing reportedly cost about the same again."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "rule",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic shot of two film analysts in an Indian office leaning over paper ledgers and a calculator at a table, focused, afternoon window light, no visible numbers. Correction after review: Correct the credit and put '2.5× budget = break even' large on screen.",
+     "type": "art"
+    },
+    "vo": "Analysts' rule: a big film must earn 2.5 times its budget, just to break even."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "payoff",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view from the back of a packed dark cinema hall, rows of silhouetted Indian viewers lit by the glow of the big screen, a sense of a massive hit. Correction after review: Use a superhero-style screen or a revenue-vs-budget bar showing Endgame clearing 2.5×.",
+     "type": "art"
+    },
+    "vo": "Endgame crossed that easily, reportedly making Disney a huge profit. For Doomsday, ask one thing: how many times its budget?"
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic shot of two young Indian friends from behind walking out of a multiplex at night, popcorn tubs in hand, chatting, city lights ahead",
+     "type": "art"
+    },
+    "vo": "Send this to the friend who thinks box office means profit."
+   }
+  ],
+  "thumbnail": {
+   "name": "AVENGERS",
+   "name_hi": "AVENGERS",
+   "scene": "A packed, dark multiplex hall glowing from a giant screen, while at the ticket counter a huge pile of cash is being split into two equal halves.",
+   "words": [
+    "2.5X",
+    "SECRET"
+   ],
+   "words_hi": [
+    "2.5X",
+    "SECRET"
+   ]
+  },
+  "title": "Avengers must earn its budget *2.5 times* 🎬"
+ },
+ "status": "voiced",
+ "timings": [
+  0.0,
+  5.802,
+  13.464,
+  18.527,
+  25.893,
+  31.449,
+  37.499,
+  45.773
+ ],
+ "topic": {
+  "follows": "Avengers: Doomsday trailer at 64M views, top of the chart.",
+  "hooks": [
+   "Endgame ka budget kitna tha, aur kamaya kitna?",
+   "Film 2 billion dollar kamaye to bhi flop ho sakti hai?"
+  ],
+  "id": "wk-2026-11-28-sglearning-short",
+  "summary": "Uses the Avengers: Doomsday trailer buzz to explain a blockbuster's budget versus break-even. Check Endgame's reported budget and gross (Box Office Mojo) and why studios need roughly twice the budget back from theatres. Release date 18 Dec.",
+  "target_minutes": null,
+  "title": "Avengers jaisi film ko kamane ke liye kitna chahiye?",
+  "topic_score": 3,
+  "topic_score_why": [
+   "+1 a choice the viewer faces",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "trend": true,
+  "voice": "voice_1kn3blc2u13l",
+  "weekly": true
+ },
+ "updated": "2026-11-27T17:48:14+00:00",
+ "writer": "claude"
+}
