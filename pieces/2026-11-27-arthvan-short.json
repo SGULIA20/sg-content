@@ -95,7 +95,9 @@
    "voice": 13
   },
   "drafts": 1,
+  "ig_reel_id": "18119165426600055",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-27-arthvan-short.mp4",
    "clip_seconds": 1,
@@ -106,6 +108,8 @@
   "intro_sent": "2026-11-20T22:16:46+00:00",
   "out_sha": "1c67c6abae8bb51e3cc9e98d3464f4d598736402",
   "out_sha_intro": true,
+  "threads_id": "17926683966445671",
+  "threads_poll_id": "17982189645155835",
   "yt_id": "JlVZlsHQaw8"
  },
  "kind": "short",
@@ -326,7 +330,7 @@
   },
   "title": "Bharat ki *chita*, Hanuman ne kaise roka? 😱"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   4.289,
@@ -411,6 +415,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-21T16:18:00+00:00",
+ "updated": "2026-11-27T16:11:02+00:00",
  "writer": "claude"
 }
