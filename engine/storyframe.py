@@ -265,7 +265,29 @@ def intro_background(piece, panels: list, size: tuple, out_dir: Path, title_png:
     return out
 
 
+SCENE_CLIPS = Path(__file__).resolve().parent.parent / "inbox" / "scenes"
+
+
+def scene_clips(piece, panels: list, root: Path = SCENE_CLIPS) -> list:
+    """The founder's own moving clips in place of the painted stills (founder, 27 Nov 2026: "Moving clips I can provide ... let us
+    make try now", after the study found no viral video relying on still pictures). A file inbox/scenes/<piece id>/<scene number>.mp4
+    is that scene's picture: silent, already cut into shots by him, cropped to the frame, played from its start for as long as the
+    scene's narration lasts. Scenes without a file keep their painting. Returns the panels and records which scenes were replaced."""
+    out, used = list(panels), []
+    for i in range(len(out)):
+        clip = Path(root) / str(piece.id) / f"{i:02d}.mp4"
+        if clip.exists() and clip.stat().st_size > 50_000:
+            out[i] = clip
+            used.append(i)
+    if used:
+        piece.ids["scene_clips"] = used
+    else:
+        piece.ids.pop("scene_clips", None)
+    return out
+
+
 def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
+    panels = scene_clips(piece, panels)
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     w, h = size
@@ -328,7 +350,7 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
         clips.append(scene(panel, dur, size, out_dir / f"scene{i:02d}.mp4", title_png, overlays, chip=chip, logo_png=badge,
                            watermark_png=big_badge, punch=(i == 0 and short), shade_png=shade, full=full, camera=cam,
                            shade_y=geo["shade_y"] if shade else None, top=geo["top"], side=geo["side"],
-                           cuts=i if opening.cuts_on(piece) else None))
+                           cuts=i if opening.cuts_on(piece) and i not in (piece.ids.get("scene_clips") or []) else None))   # his clips carry their own cuts
     if full and short:                                               # the pictures that move behind the founder in his intro (engine/intro.py)
         intro_background(piece, panels, size, out_dir, title_png, shade, badge, pills, depths)
         for f in out_dir.glob("move*.mp4"):
