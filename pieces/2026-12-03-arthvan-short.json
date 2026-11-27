@@ -86,12 +86,20 @@
   },
   "drafts": 2,
   "ig_story_id": "skipped: Reel over 60 s",
+  "intro": {
+   "clip": "2026-12-03-arthvan-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-27T17:06:42+00:00",
+   "seconds": 8.38
+  },
+  "intro_checked": "e4583e58497c62d8",
   "intro_sent": "2026-11-26T23:00:03+00:00",
   "music": {
    "by": "Kevin MacLeod (incompetech.com)",
    "licence": "CC BY 4.0",
    "title": "Darkness is Coming"
   },
+  "open_test": "picture",
   "sound": "track",
   "watch": {
    "best_change": "Open on a striking image of chained slaves under a whip with the caption 'Jhooth?', so the myth being busted is visible in the first second instead of a generic pyramid.",
@@ -104,7 +112,8 @@
    1,
    2,
    8
-  ]
+  ],
+  "yt_id": "0id2GZ2yd4Y"
  },
  "kind": "short",
  "publish_day": "2026-12-03",
@@ -307,7 +316,7 @@
   },
   "title": "Pyramid *gulamon* ne banaye the? 🤯"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   4.669,
@@ -388,6 +397,7 @@
    "text": "Ek tourist ka ghoda ladkhadaya. Pair deewar se takraya. Neeche nikla pyramid banane walon ka kabristan. Saal 1990, Giza. Kaise?",
    "words": 20
   },
+  "look": "indian-comic",
   "summary": "The popular image is of whipped slaves. Excavations at Giza by Lehner and Hawass found a workers' town with bakeries, breweries and tombs beside the pyramids, plus healed bone injuries. Check Herodotus's account, the dates and the digs.",
   "target_minutes": null,
   "title": "Misr ke pyramid gulamon ne banaye the, ye kisne kaha?",
@@ -401,6 +411,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-26T19:11:31+00:00",
+ "updated": "2026-11-27T17:06:48+00:00",
  "writer": "claude"
 }
