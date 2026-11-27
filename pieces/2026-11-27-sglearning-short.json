@@ -95,6 +95,9 @@
    "voice": 8
   },
   "drafts": 1,
+  "ig_reel_id": "17923869312467394",
+  "ig_story_id": "18118777646013674",
+  "ig_trial": "SS_PERFORMANCE",
   "intro": {
    "clip": "2026-11-27-sglearning-short.mp4",
    "clip_seconds": 1,
@@ -105,6 +108,8 @@
   "intro_sent": "2026-11-20T22:30:39+00:00",
   "out_sha": "dc1f002f736e94ed41e6e1cbe84382fe6965175d",
   "out_sha_intro": true,
+  "threads_id": "18139289530638772",
+  "threads_poll_id": "17913632403581279",
   "yt_id": "dhseHz-Mz94"
  },
  "kind": "short",
@@ -258,7 +263,7 @@
   },
   "title": "Foreign bank account? No *penalty* below 20 lakh 🏦"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   5.366,
@@ -332,6 +337,6 @@
   ],
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-11-21T17:37:15+00:00",
+ "updated": "2026-11-27T16:19:50+00:00",
  "writer": "claude"
 }
