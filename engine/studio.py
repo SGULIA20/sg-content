@@ -22,6 +22,7 @@ THUMB_RE = re.compile(r"^\s*thumb\s+(\d{4}-\d{2}-\d{2}-(?:sglearning|arthvan)-(?
 HELP = ("🎬 SG Studio. Send me:\n"
         "• your 10-second intro as a FILE (paperclip → File, so Telegram keeps 1080p) with the caption: intro <piece id>\n"
         "• a thumbnail image with the caption: thumb <piece id>\n"
+        "• your moving clips for a video's body, one file each, caption: clip <piece id> <number> (e.g. clip 2026-11-28-arthvan-short 1)\n"
         "• any other Reel's video (under 20 MB): a Reel X-ray, why it works and what to copy\n"
         "Piece ids look like 2026-11-07-sglearning-short. Answers can take 5-10 minutes: I check every few minutes.")
 
@@ -67,6 +68,25 @@ def intro_reply(cfg: dict, message: dict, pid: str, root: Path, *, call=_call, f
     known = pieces.load(pid, root)
     state = f" The piece is {known.status}." if known else " (No piece with that id yet: it will be used when the piece is made.)"
     return f"🎬 Intro for {pid} saved ({out.stat().st_size / 1e6:.1f} MB{f', {secs} s' if secs else ''}).{state} It is merged on the next sweep."
+
+
+# founder, 28 Nov 2026: "will share all 5 clips on telegram bot in file mode". His own moving clips for a video's body, one file each:
+# caption "clip <piece id> <number>". Saved as inbox/scenes/<piece id>/clip<number>.mp4; Claude cuts them to the script's lines.
+CLIP_RE = re.compile(r"^\s*clip\s+(\d{4}-\d{2}-\d{2}-(?:sglearning|arthvan)-(?:short|long))\s+(\d{1,2})\s*$", re.I)
+
+
+def clip_reply(cfg: dict, message: dict, pid: str, number: int, root: Path, *, call=_call, fetch=download, commit=gitsync.commit) -> str:
+    v = xray.video_of(message)
+    if (v.get("file_size") or 0) > xray.MAX_BYTES:
+        return "🎞 That clip is over 20 MB, the most a bot can download. Send it as a normal video, or at a lower bitrate."
+    out = Path(root) / "inbox" / "scenes" / pid / f"clip{number}.mp4"
+    fetch(cfg, v["file_id"], out, call)
+    try:
+        commit(root, f"moving clip {number} for {pid}", paths=["inbox/scenes"])
+    except Exception as e:
+        return f"🎞 Clip {number} for {pid} downloaded but could not be saved: {secrets.scrub(str(e))[:160]}. Send it again in a few minutes."
+    have = sorted(int(f.stem[4:]) for f in out.parent.glob("clip*.mp4") if f.stem[4:].isdigit())
+    return f"🎞 Clip {number} for {pid} saved ({out.stat().st_size / 1e6:.1f} MB). Clips in so far: {', '.join(str(n) for n in have)}."
 
 
 def thumb_reply(cfg: dict, message: dict, pid: str, root: Path, env=None, *, call=_call, fetch=download, commit=gitsync.commit,
@@ -123,8 +143,10 @@ def poll(cfg: dict, root: Path = ROOT, env=None, *, call=_call, send_fn=None, in
             continue
         caption = m.get("caption") or ""
         text = (m.get("text") or "").strip()
-        mi, mt = INTRO_RE.match(caption), THUMB_RE.match(caption)
-        if xray.video_of(m) and mi:
+        mi, mt, mc = INTRO_RE.match(caption), THUMB_RE.match(caption), CLIP_RE.match(caption)
+        if xray.video_of(m) and mc:
+            say(clip_reply(cfg, m, mc.group(1).lower(), int(mc.group(2)), root, call=call)); done.append(("clip", mc.group(1).lower()))
+        elif xray.video_of(m) and mi:
             say(intro_fn(cfg, m, mi.group(1).lower(), root, call=call)); done.append(("intro", mi.group(1).lower()))
         elif xray.image_of(m) and mt:
             say(thumb_fn(cfg, m, mt.group(1).lower(), root, env, call=call)); done.append(("thumb", mt.group(1).lower()))
