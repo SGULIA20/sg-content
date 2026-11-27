@@ -50,7 +50,8 @@ def test_the_founders_line_and_the_end_card_are_english():
 def test_learning_goes_back_to_hinglish_from_the_until_day_and_the_english_week_stays_english():
     """Founder, 24 Nov 2026: 'SG learning is not working in English, let's make it in Hinglish'."""
     from types import SimpleNamespace as P
-    assert lang.english(P(id="2026-11-29-sglearning-short", channel="sglearning", publish_day="2026-11-29"))
+    assert lang.english(P(id="2026-11-27-sglearning-short", channel="sglearning", publish_day="2026-11-27"))
+    assert not lang.english(P(id="2026-11-28-sglearning-short", channel="sglearning", publish_day="2026-11-28"))      # 27 Nov 2026: the restart brought it forward
     assert not lang.english(P(id="2026-11-30-sglearning-short", channel="sglearning", publish_day="2026-11-30"))
     assert not lang.english(P(id="2026-11-30-arthvan-short", channel="arthvan", publish_day="2026-11-30"))
 

@@ -393,7 +393,7 @@ def plain_mix(total: float) -> str:
 
 
 TRACK_LUFS = -22             # a real track in the pauses; under the voice the ducking takes it to about -31, where the old pad sat
-END_DROP = 0.4               # under the end card the track falls to 40% (-8 dB): the engine's own check (qa.narration_intact) tells a lost
+END_DROP = 0.25              # under the end card the track falls to 25% (-12 dB; 40% until 27 Nov 2026, when a loud passage of one track still failed the check): the engine's own check (qa.narration_intact) tells a lost
                              # last word from a kept one by the drop in level after the narration, and music at full level hid that drop
 
 

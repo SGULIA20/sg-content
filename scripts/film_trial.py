@@ -37,6 +37,31 @@ def stretches(durations: list, film_seconds: float) -> tuple:
     return speed, out
 
 
+SLOWEST_MAPPED = 0.4   # a mapped scene may be slowed this far: its own shots are few and each is short
+
+
+def mapped(src: Path, scene_shots: list, durations: list, out_dir: Path, size: tuple) -> list:
+    """One film per scene, made of exactly the shots that show what that line says (inbox/scenes/<id>/map.json), slowed with
+    motion-smoothed slow motion so the shots last the line. Returns the per-scene files and prints each scene's speed."""
+    w, h = size
+    fw, fh = w * 2 // 3, h * 2 // 3
+    out = []
+    for i, (shots, need) in enumerate(zip(scene_shots, durations)):
+        have = sum(b - a for _c, a, b in shots)
+        speed = max(SLOWEST_MAPPED, min(1.0, have / need)) if need else 1.0
+        inputs, parts = [], ""
+        for k, (clip, a, b) in enumerate(shots):
+            inputs += ["-ss", f"{a:.3f}", "-t", f"{b - a:.3f}", "-i", str(src / f"{clip}.mp4")]
+            parts += f"[{k}:v]scale={fw}:{fh}:force_original_aspect_ratio=increase:flags=lanczos,crop={fw}:{fh},fps=30,setsar=1,setpts=PTS-STARTPTS[v{k}];"
+        slow = (f"setpts=PTS/{speed:.4f},minterpolate=fps=30:mi_mode=mci:mc_mode=aobmc:vsbmc=1:scd=fdiff," if speed < 0.97 else "")
+        graph = parts + "".join(f"[v{k}]" for k in range(len(shots))) + f"concat=n={len(shots)}:v=1:a=0,{slow}scale={w}:{h}:flags=lanczos,fps=30,format=yuv420p[v]"
+        seg = out_dir / f"{i:02d}.mp4"
+        _run([*inputs, "-filter_complex", graph, "-map", "[v]", "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", str(seg)])
+        print(f"scene {i + 1}: {have:.1f} s of film for {need:.1f} s of narration, played at {speed:.2f}x", flush=True)
+        out.append(seg)
+    return out
+
+
 def main(argv=None) -> int:
     args = argv or sys.argv[1:]
     piece = copy.deepcopy(pieces.load(args[0], ROOT))
@@ -60,6 +85,15 @@ def main(argv=None) -> int:
         lines.append((wav, voice.say(sc["vo"], voice_id, wav, plain=True)))
     rate = opening.speed(piece)
     durations = [d / rate for _w, d in lines]
+    plan_file = src / "map.json"
+    if plan_file.exists():                                        # each line gets its own shots: the picture shows what is being said
+        import json
+        scene_shots = json.loads(plan_file.read_text())["scenes"]
+        if len(scene_shots) != len(durations):
+            print(f"map.json has {len(scene_shots)} scenes, the script {len(durations)}"); return 2
+        panels = mapped(src, scene_shots, durations, src, (w, h))
+        video = storyframe.build(piece, lines, panels, (w, h), out)
+        return finish(piece, video, out, (w, h), "each line with its own shots, slowed to fit", args)
     speed, parts = stretches(durations, intro.duration(film))
     print(f"film {intro.duration(film):.1f} s, narration {sum(durations):.1f} s, played at {speed:.2f}x", flush=True)
     panels = []
@@ -70,14 +104,19 @@ def main(argv=None) -> int:
               "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", str(seg)])
         panels.append(seg)
     video = storyframe.build(piece, lines, panels, (w, h), out)
+    return finish(piece, video, out, (w, h), f"the whole film slowed to {speed:.2f}x to fit the narration", args)
+
+
+def finish(piece, video: Path, out: Path, size: tuple, how: str, args: list) -> int:
     clip = ROOT / "inbox" / "intro" / f"{piece.id}.mp4"
     if clip.exists():
-        video = intro.compose(piece, clip, out, (w, h))
+        video = intro.compose(piece, clip, out, size)
     print(f"made {video} ({intro.duration(video):.1f} s)", flush=True)
     from engine import audit
-    audit.run(video, piece, ROOT / "logs" / "audit" / piece.id, notify=telegram.send if os.environ.get("TELEGRAM_BOT_TOKEN") and "--quiet" not in args else None)
-    if os.environ.get("TELEGRAM_BOT_TOKEN") and "--quiet" not in args:
-        print(telegram.send_file(video, f"TRIAL {piece.id}: the whole body is your moving film, slowed to {speed:.2f}x to fit the narration. "
+    tell = telegram.send if os.environ.get("TELEGRAM_BOT_TOKEN") and "--quiet" not in args else None
+    audit.run(video, piece, ROOT / "logs" / "audit" / piece.id, notify=tell)
+    if tell:
+        print(telegram.send_file(video, f"TRIAL {piece.id}: the whole body is your moving film, {how}. "
                                         "Not uploaded. The script is a trial text, not yet fact-checked."))
     return 0
 
