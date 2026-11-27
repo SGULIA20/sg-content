@@ -553,8 +553,38 @@ TRADITIONAL = ["a mustard kurta", "a cream silk kurta with a maroon Nehru jacket
                "a rust-orange kurta with a cream stole", "a navy bandhgala jacket with a white pocket square"]
 
 
+# founder, 27 Nov 2026: "can founder wear cloths as per background in SGMYTH world". SG-MYTH-WORLD now tells myths from every
+# country, and a silk kurta in a space station or at an Egyptian dig looked out of place. He wears what a presenter would wear THERE:
+# a traveller's or reporter's clothes for that place, never the dress of a god, priest, king or the people of the story (that would be
+# a costume). An Indian temple, epic or festival keeps the traditional wear of 11 Nov 2026. First match wins.
+PLACE_OUTFITS = [
+    (r"space|astronaut|orbit|station|rocket|moon|chand\b|planet|galaxy", "a dark navy flight jacket over a plain white tee, like a science reporter at a space centre"),
+    (r"egypt|pyramid|giza|pharaoh|sphinx|nile|misr|desert|registan|sahara|excavat|archaeolog|khudai",
+     "a light khaki field shirt with the sleeves rolled, a sand-coloured cotton scarf and beige trousers, like a reporter at a desert dig"),
+    (r"snow|himalaya|glacier|kedarnath|kailash|mountain|pahad|barf|arctic|viking|norse|iceland",
+     "a dark quilted winter jacket with a woollen muffler, like a reporter in the cold mountains"),
+    (r"sea\b|ocean|samundar|samudra|ship|jahaz|coast|island|beach|harbour|port|underwater|triangle",
+     "a white linen shirt with the sleeves rolled and navy trousers, like a reporter on a harbour"),
+    (r"forest|jungle|rainforest|amazon|safari|savanna|wildlife|animal|jaanwar|bird|ostrich|shuturmurg",
+     "an olive green field jacket over a cream tee, like a wildlife reporter"),
+    (r"china|great wall|japan|tokyo|kyoto|korea|samurai|pagoda|beijing", "a charcoal grey mandarin-collar jacket over a white shirt"),
+    (r"greek|greece|rome|roman|athens|medusa|zeus|europe|england|london|paris|napoleon|france|castle|medieval",
+     "a tan trench-style jacket over a white shirt, like a reporter on a European street"),
+    (r"museum|library|laboratory|\blab\b|skeleton|fossil|brain|dimaag|hospital|science|vigyan|telescope",
+     "a black blazer over a black round-neck tee, like a science presenter"),
+]
+
+
 def outfit_for(piece) -> str:
-    return _pick(piece, BLAZERS if piece.channel == "sglearning" else TRADITIONAL, 1)
+    if piece.channel == "sglearning":
+        return _pick(piece, BLAZERS, 1)
+    script = piece.script or {}
+    scenes = script.get("scenes") or [{}]
+    where = " ".join([str(script.get("title", "")), str((piece.topic or {}).get("title", "")), str((scenes[0].get("visual") or {}).get("prompt", ""))]).lower()
+    for pattern, clothes in PLACE_OUTFITS:
+        if re.search(pattern, where):
+            return clothes
+    return _pick(piece, TRADITIONAL, 1)
 
 
 def story_prompt(piece, p: dict) -> str:

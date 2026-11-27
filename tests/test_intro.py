@@ -748,3 +748,19 @@ def test_the_hook_writer_has_room_to_answer_and_the_reviews_note_stays_out_of_hi
                                                                    {"frame": 1, "fix": "Show the workers' names carved on the tomb wall"}]}
     p2 = P(script={"scenes": scenes}, ids={})
     assert watch.redraw(p2, r) == [1] and "Correction" not in scenes[0]["visual"]["prompt"]      # the painter cannot fix a watermark
+
+
+def test_sg_myth_presenter_dresses_for_the_place_and_keeps_traditional_wear_for_indian_stories():
+    """Founder, 27 Nov 2026: 'can founder wear cloths as per background in SGMYTH world'."""
+    from datetime import date
+    from types import SimpleNamespace as P
+    from engine import intro
+    def myth(title, picture=""):
+        return P(id="2026-12-03-arthvan-short", channel="arthvan", kind="short", publish_day=date(2026, 12, 3), topic={"title": title}, script={"title": title, "scenes": [{"visual": {"prompt": picture}}]})
+    assert "khaki field shirt" in intro.outfit_for(myth("Pyramid *gulamon* ne banaye the?", "view of the Great Pyramid of Giza"))
+    assert "flight jacket" in intro.outfit_for(myth("Great Wall, kya *chand* se dikhti hai?", "an astronaut at a space station window"))
+    assert "winter jacket" in intro.outfit_for(myth("Vikings ke sing wale helmet?"))
+    assert intro.outfit_for(myth("Jagannath ka *jhanda*, roz kaun chadhta hai?", "the temple spire at Puri")) in intro.TRADITIONAL
+    learn = P(id="2026-12-03-sglearning-short", channel="sglearning", kind="short", publish_day=date(2026, 12, 3), topic={"title": "Pyramid scheme kya hai?"}, script={"title": "Pyramid scheme", "scenes": [{}]})
+    assert intro.outfit_for(learn) in intro.BLAZERS                                           # Learning keeps its blazers whatever the subject
+    assert not any("pharaoh" in c or "robe" in c or "toga" in c for _p, c in intro.PLACE_OUTFITS)   # a reporter's clothes, never a costume
