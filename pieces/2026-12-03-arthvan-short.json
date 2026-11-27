@@ -111,7 +111,8 @@
  "reasons": [
   "try 1: hook: needs a question, a number or a name",
   "review: redrawing 4 picture(s) before upload",
-  "waiting for the founder's intro clip until 03 Dec 11:30 UTC"
+  "waiting for the founder's intro clip until 03 Dec 11:30 UTC",
+  "trial: the founder's moving clips replace the pictures of scenes 2-4; rebuilt"
  ],
  "script": {
   "captions": {
@@ -307,7 +308,7 @@
   },
   "title": "Pyramid *gulamon* ne banaye the? 🤯"
  },
- "status": "intro-wait",
+ "status": "voiced",
  "timings": [
   0.0,
   4.669,
@@ -401,6 +402,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-26T19:11:31+00:00",
+ "updated": "2026-11-27T16:44:16+00:00",
  "writer": "claude"
 }
