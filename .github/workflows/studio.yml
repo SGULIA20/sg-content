@@ -57,6 +57,18 @@ jobs:
           if [ "$dow" = 1 ] || [ "$now" -lt 0615 ] || [ "$now" -ge 1400 ]; then exit 0; fi
           if grep -q "\"date\": \"$today\"" logs/postmortem.json 2>/dev/null; then exit 0; fi
           gh workflow run daily-review.yml --ref main && echo "started the review for $today" || true
+      # founder, 27 Nov 2026: the topics are searched for afresh every morning, after the review, so yesterday's lessons and today's
+      # trends reach the videos made today (a long the same day, a Short for tomorrow). No new video starts on an older plan.
+      - name: Start the day's topic search
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          now=$(TZ=Africa/Lagos date +%H%M); dow=$(TZ=Africa/Lagos date +%u); today=$(date -u +%F)
+          if [ "$now" -lt 0620 ] || [ "$now" -ge 1300 ]; then exit 0; fi
+          if grep -q "\"generated\": \"$today" content/weekly-plan.json 2>/dev/null; then exit 0; fi
+          # the review first (not on Monday, when it is part of the weekly report); after 07:15 the search no longer waits for it
+          if [ "$dow" != 1 ] && [ "$now" -lt 0715 ] && ! grep -q "\"date\": \"$today\"" logs/postmortem.json 2>/dev/null; then exit 0; fi
+          gh workflow run weekly.yml --ref main && echo "started the topic search for $today" || true
       - name: Git identity
         run: |
           git config user.name "sg-content-bot"

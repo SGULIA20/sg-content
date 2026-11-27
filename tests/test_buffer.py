@@ -10,10 +10,11 @@ def _ready(root, pid, ch, kind, day, status="uploaded"):
 def test_needed_orders_todays_shorts_then_one_long(tmp_path, monkeypatch):
     from engine import config
     monkeypatch.setattr(config, "ENABLED_KINDS", {"short", "long"})
-    need = buffer.needed(tmp_path, date(2026, 10, 19))             # Monday: no long due today or tomorrow? arthvan long is Tue 20
-    assert need[0] == (date(2026, 10, 19), "arthvan", "short") and need[1] == (date(2026, 10, 19), "sglearning", "short")
-    assert need[2] == (date(2026, 10, 21), "sglearning", "long")       # then the earliest long (Wed), then tomorrow's Shorts
+    need = buffer.needed(tmp_path, date(2026, 10, 21))             # Wednesday: Learning's long goes out today
+    assert need[0] == (date(2026, 10, 21), "arthvan", "short") and need[1] == (date(2026, 10, 21), "sglearning", "short")
+    assert need[2] == (date(2026, 10, 21), "sglearning", "long")       # then today's long, then tomorrow's Shorts
     assert {k for _d, _c, k in need} == {"short", "long"}
+    assert not [x for x in buffer.needed(tmp_path, date(2026, 10, 19)) if x[2] == "long"]      # Monday: no long today, and none is made ahead
 
 
 def test_needed_skips_uploaded_and_posted(tmp_path):
@@ -30,16 +31,14 @@ def test_needed_retries_rejected_and_failed(tmp_path):
     assert (date(2026, 10, 19), "sglearning", "short") in need and (date(2026, 10, 20), "sglearning", "short") in need
 
 
-def test_horizons_seven_days_shorts_and_long_within_window(tmp_path, monkeypatch):
+def test_a_short_is_made_the_day_before_and_a_long_the_same_day(tmp_path, monkeypatch):
+    """founder, 27 Nov 2026: 'Planner and videos should be only max 1 days advance and long videos no advance'."""
     from engine import config
     monkeypatch.setattr(config, "ENABLED_KINDS", {"short", "long"})
-    need = buffer.needed(tmp_path, date(2026, 10, 19), horizon_short=7, horizon_long=10)
-    days = sorted({d for d, _c, k in need if k == "short"})
-    assert days[0] == date(2026, 10, 19) and days[-1] == date(2026, 10, 21)       # 26 Nov 2026: both channels are made two days ahead
-    assert (date(2026, 10, 22), "arthvan", "long") in need and (date(2026, 10, 21), "sglearning", "long") in need
-    assert (date(2026, 10, 24), "sglearning", "long") not in need                 # 24 Nov 2026: Learning is made days ahead, not weeks, so it can follow the trend
-    assert max(d for d, c, k in need if c == "sglearning" and k == "short") == date(2026, 10, 21)
-    assert max(d for d, c, k in need if c == "arthvan" and k == "short") == date(2026, 10, 21)
+    need = buffer.needed(tmp_path, date(2026, 10, 21), horizon_short=7, horizon_long=10)
+    for ch in ("sglearning", "arthvan"):
+        assert sorted(d for d, c, k in need if c == ch and k == "short") == [date(2026, 10, 21), date(2026, 10, 22)]
+    assert [(d, c) for d, c, k in need if k == "long"] == [(date(2026, 10, 21), "sglearning")]     # Thursday's SG-MYTH long waits for Thursday
 
 
 def test_myth_short_needs_its_long(tmp_path):

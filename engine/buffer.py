@@ -10,9 +10,9 @@ DONE = {"uploaded", "posted"}
 # founder, 24 Nov 2026: "no need to reserve 7 days ... lets make it for 2 days so that trending topics can be presented immediately to users
 # for SG learning channel". Days counted from today: 3 = today, tomorrow and the day after. A long needs his clip and thumbnail and most of
 # a day's voice quota, so it is made four days ahead. Channels not named keep the seven-day buffer.
-# founder, 26 Nov 2026, on a 3 Dec SG-MYTH Short asked for on 26 Nov ("we decided to reduce 7 days advance already then why 3rd dec"):
-# both channels.
-HORIZON = {"sglearning": {"short": 3, "long": 5}, "arthvan": {"short": 3, "long": 5}}
+# founder, 27 Nov 2026: "Planner and videos should be only max 1 days advance and long videos no advance". Days counted from today:
+# 2 = today and tomorrow (a Short is made the day before it goes out), 1 = today (a long is made the morning it goes out).
+HORIZON = {"sglearning": {"short": 2, "long": 1}, "arthvan": {"short": 2, "long": 1}}
 
 
 def long_for_short(channel: str, day: date) -> str:

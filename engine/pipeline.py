@@ -356,6 +356,22 @@ def make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pac
     return result
 
 
+SOON_HOURS = 48
+
+
+def due_soon(piece, now: datetime | None = None) -> bool:
+    """founder, 27 Nov 2026: a Short is made the day before it goes out and a long the same morning. The half-price batch lanes
+    (script, voice, pictures) answer in anything from minutes to a day, which such a video does not have: within SOON_HOURS of its
+    slot each step is done at once, at full price."""
+    if not piece.publish_day:
+        return False
+    try:
+        when = slots.publish_at(piece.channel, piece.kind, piece.publish_day)
+    except Exception:
+        return False
+    return (when - (now or datetime.now(timezone.utc))).total_seconds() < SOON_HOURS * 3600
+
+
 def adopt_slot_holder(piece: Piece, deps: Deps, root: Path, dry_run: bool = False) -> bool:
     """One day, one video (founder, 6 Nov 2026: "how come 5-6 additional videos can be allocated for the same day"). Before anything is
     spent on a piece that has no video yet, YouTube is asked whether a video is already scheduled for its slot. If so, that video
@@ -687,7 +703,7 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
 
     from . import writebatch
     return Deps(topic=topic_fn, research=lambda topic, ch: research.verify_urls(research.fact_sheet(topic, ch)),
-                write=lambda piece, sheet, lib, tags: writer.write(piece, sheet, lib, tags, batch_fn=writebatch.write_piece), say=lambda *a, **k: voice.say(*a, plain=True, **k), paint=art.paint, avatar=art.avatar,
+                write=lambda piece, sheet, lib, tags: writer.write(piece, sheet, lib, tags, batch_fn=None if due_soon(piece) else writebatch.write_piece), say=lambda *a, **k: voice.say(*a, plain=True, **k), paint=art.paint, avatar=art.avatar,
                 render_card=cards.render, build=assemble.build, qa=qa.report, upload=upload_fn,
                 lint=lambda piece, prior: (lint.check_script(piece, banned, prior) + lint.check_captions(piece, hashtags)
                                            + lint.check_opener(piece, recent_openers(root, piece)) + lint.check_send(piece)),
@@ -695,8 +711,8 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
                                                         context=(piece.topic.get("title"), piece.topic.get("title_hi"))),
                 commons=art.commons_photo, library=library, hashtags=hashtags, voice_id=default_voice,
                 cartoon=cartoon.talking_head_clip, story_build=storyframe.build, cast_refs=cast.refs_for, subtitles=subtitles_fn,
-                voice_batch=lambda piece, texts, vid: voicebatch.voice_piece(piece, texts, vid),
-                art_batch=lambda piece, jobs: artbatch.paint_piece(piece, jobs), voice_check=voice.transcribe,
+                voice_batch=lambda piece, texts, vid: "now" if due_soon(piece) else voicebatch.voice_piece(piece, texts, vid),
+                art_batch=lambda piece, jobs: "now" if due_soon(piece) else artbatch.paint_piece(piece, jobs), voice_check=voice.transcribe,
                 animate_card=newscard.animate, intro_notify=telegram.send, slot_holders=slot_holders_fn,
                 watch=lambda piece, video, out_dir: __import__("engine.watch", fromlist=["look"]).look(piece, video, out_dir, notify=telegram.send))
     # voice.batched (several scenes per TTS request) stays unwired: on 22 Oct 2026 the model's paragraph pauses were not distinct enough

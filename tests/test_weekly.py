@@ -135,12 +135,11 @@ def test_learning_takes_any_viral_subject_without_the_theme_wait_or_the_money_sc
     assert len(longs) <= 1                                                           # a long slot may take a viral subject too
 
 
-def test_both_channels_are_made_two_days_ahead():
+def test_both_channels_are_made_one_day_ahead_and_longs_the_same_day():
     from engine import buffer
-    need = buffer.needed(Path("/nonexistent"), date(2026, 12, 1))
-    days = lambda ch, kind: [(d - date(2026, 12, 1)).days for d, c, k in need if c == ch and k == kind]
-    assert max(days("sglearning", "short")) == 2 and max(days("sglearning", "long")) <= 4
-    assert max(days("arthvan", "short")) == 2 and max(days("arthvan", "long")) <= 4      # founder, 26 Nov 2026: "why 3rd dec"
+    need = buffer.needed(Path("/nonexistent"), date(2026, 12, 2))                # a Wednesday: Learning's long day
+    days = lambda ch, kind: [(d - date(2026, 12, 2)).days for d, c, k in need if c == ch and k == kind]
+    assert max(days("sglearning", "short")) == 1 and max(days("arthvan", "short")) == 1 and days("sglearning", "long") == [0] and days("arthvan", "long") == []
 
 
 def test_a_subject_made_weeks_ago_is_still_remembered_and_a_market_rally_is_not_politics(tmp_path):
