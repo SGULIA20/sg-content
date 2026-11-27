@@ -63,3 +63,18 @@ def test_other_videos_get_the_xray_strangers_are_cleared_and_text_gets_help(tmp_
 def test_an_intro_over_20_mb_is_refused(tmp_path):
     m = _upd(5, caption="intro 2026-11-07-sglearning-short", video=True)["message"]; m["video"]["file_size"] = 25_000_000
     assert studio.intro_reply(CFG, m, "2026-11-07-sglearning-short", tmp_path, fetch=lambda *a: None, commit=lambda *a, **k: None).startswith("🎬 That intro is over 20 MB")
+
+
+def test_a_video_captioned_clip_is_saved_as_that_videos_moving_clip_not_x_rayed(tmp_path):
+    """Founder, 28 Nov 2026: 'will share all 5 clips on telegram bot in file mode'."""
+    from engine import studio
+    assert studio.CLIP_RE.match("clip 2026-11-28-arthvan-short 3") and studio.CLIP_RE.match(" Clip 2026-12-02-sglearning-long 12 ")
+    assert not studio.CLIP_RE.match("clip 3") and not studio.CLIP_RE.match("intro 2026-11-28-arthvan-short")
+    saved = []
+    def fetch(cfg, file_id, out, call):
+        out.parent.mkdir(parents=True, exist_ok=True); out.write_bytes(b"x" * 2000)
+    msg = {"video": {"file_id": "f", "file_size": 5_000_000}, "caption": "clip 2026-11-28-arthvan-short 2"}
+    reply = studio.clip_reply({}, msg, "2026-11-28-arthvan-short", 2, tmp_path, fetch=fetch, commit=lambda root, why, paths: saved.append(paths))
+    assert (tmp_path / "inbox" / "scenes" / "2026-11-28-arthvan-short" / "clip2.mp4").exists() and "Clips in so far: 2" in reply and saved == [["inbox/scenes"]]
+    big = {"video": {"file_id": "f", "file_size": 30_000_000}}
+    assert "over 20 MB" in studio.clip_reply({}, big, "2026-11-28-arthvan-short", 1, tmp_path, fetch=fetch, commit=lambda *a, **k: None)
