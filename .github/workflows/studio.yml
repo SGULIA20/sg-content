@@ -23,6 +23,7 @@ on:
 
 permissions:
   contents: write
+  actions: write            # starts the daily review (first step)
 
 concurrency:
   group: studio
@@ -46,6 +47,16 @@ jobs:
           path: cache
           key: sg-cache-${{ github.run_id }}
           restore-keys: sg-cache-
+      # 27 Nov 2026: GitHub's own schedule started the daily review ten hours late on two days running. This job is started on time
+      # by the outside clock, so it starts the review: Tuesday to Sunday from 06:15 Lagos until today's is saved.
+      - name: Start the daily review
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          now=$(TZ=Africa/Lagos date +%H%M); dow=$(TZ=Africa/Lagos date +%u); today=$(date -u +%F)
+          if [ "$dow" = 1 ] || [ "$now" -lt 0615 ] || [ "$now" -ge 1400 ]; then exit 0; fi
+          if grep -q "\"date\": \"$today\"" logs/postmortem.json 2>/dev/null; then exit 0; fi
+          gh workflow run daily-review.yml --ref main && echo "started the review for $today" || true
       - name: Git identity
         run: |
           git config user.name "sg-content-bot"

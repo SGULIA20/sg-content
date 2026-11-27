@@ -13,6 +13,11 @@ on:
     - cron: '17 9 * * 0,2-6'
     - cron: '17 12 * * 0,2-6'
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'yes = review again even if today is already saved'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -36,7 +41,7 @@ jobs:
       - name: Already reviewed today?
         id: done
         run: |
-          if [ "${{ github.event_name }}" = "schedule" ] && grep -q "\"date\": \"$(date -u +%F)\"" logs/postmortem.json 2>/dev/null; then echo "yes=1" >> "$GITHUB_OUTPUT"; echo "today's review is already saved"; fi
+          if [ "${{ github.event.inputs.force }}" != "yes" ] && grep -q "\"date\": \"$(date -u +%F)\"" logs/postmortem.json 2>/dev/null; then echo "yes=1" >> "$GITHUB_OUTPUT"; echo "today's review is already saved"; fi
       - run: pip install -r requirements.txt
         if: steps.done.outputs.yes != '1'
       - name: Review yesterday's videos and renew the lessons
