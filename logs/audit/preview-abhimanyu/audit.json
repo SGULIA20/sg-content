@@ -1,0 +1,33 @@
+{
+ "score": 6,
+ "verdict": "fix first",
+ "faults": [
+  {
+   "at": 37,
+   "kind": "picture-words",
+   "what": "Narration tells the story of Arjun explaining the vyuh to Subhadra who falls asleep, but the visuals show Abhimanyu lifting and fighting with the chariot wheel until 0:46.",
+   "fix": "Move the chariot wheel battle footage earlier to match lines 5 and 6 (0:27-0:36), and place the scene of Arjun and pregnant Subhadra here at 0:37-0:46."
+  },
+  {
+   "at": 47,
+   "kind": "picture-words",
+   "what": "Visual shows Arjun talking to a sleeping Subhadra while narration discusses Mahabharata's Drona Parva and Abhimanyu's quote about his father teaching him to enter but not exit.",
+   "fix": "Realign the Arjun/Subhadra visual to play during line 7 (0:37-0:46) and show scriptural/textual reference or Abhimanyu reflecting during line 8."
+  },
+  {
+   "at": 27,
+   "kind": "picture-words",
+   "what": "Narration says 'Tab usne rath ka pahiya hi utha liya' while on screen Abhimanyu is still riding an intact chariot with bow and arrow.",
+   "fix": "Cut directly to the broken chariot and wheel pickup when this line is spoken."
+  },
+  {
+   "at": 40,
+   "kind": "quality",
+   "what": "AI warping on the chariot wheel spokes and Abhimanyu's fingers clipping through the wooden rim as he holds it.",
+   "fix": "Regenerate or clean up the wheel grip frame to prevent shifting spokes and clipping hands."
+  }
+ ],
+ "strongest": "The opening visual and narration hook establishing the massive Chakravyuh formation against a lone warrior immediately commands attention.",
+ "weakest": "The complete narrative desync from 0:37 to 0:54 where the Subhadra story visuals are delayed by an entire scene while battle footage continues under unrelated narration.",
+ "lines_heard": 9
+}
