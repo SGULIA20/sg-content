@@ -1,0 +1,120 @@
+{
+ "channel": "arthvan",
+ "facts": [],
+ "id": "preview-abhimanyu",
+ "ids": {},
+ "kind": "short",
+ "publish_day": "2026-12-02",
+ "reasons": [
+  "trial script written by hand for the moving-clips trial of 27 Nov 2026; NOT fact-checked by the research step, never to be published as it is"
+ ],
+ "script": {
+  "captions": {},
+  "cards": [],
+  "carousel": [],
+  "end_question": "Us dost ko bhejo jo sirf garbh wali kahani jaanta hai.",
+  "hook": "Solah saal ka ladka. Akela. Saamne poori Kaurav sena ka chakravyuh.",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Cinematic live-action view of the Kurukshetra battlefield, ancient India, warm dust-filled light",
+     "type": "art"
+    },
+    "vo": "Solah saal ka ladka. Akela. Saamne poori Kaurav sena ka chakravyuh."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Cinematic live-action view of the Kurukshetra battlefield, ancient India, warm dust-filled light",
+     "type": "art"
+    },
+    "vo": "Yudh ka terahvan din. Dronacharya ne aisa ghera racha, jise todna gine-chune yoddha hi jaante the."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Cinematic live-action view of the Kurukshetra battlefield, ancient India, warm dust-filled light",
+     "type": "art"
+    },
+    "vo": "Arjun door lad rahe the. Tab Abhimanyu aage aaya, aur pehli deewar tod di."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Cinematic live-action view of the Kurukshetra battlefield, ancient India, warm dust-filled light",
+     "type": "art"
+    },
+    "vo": "Woh andar ghusta gaya. Par peeche raasta band ho gaya. Jayadrath ne Pandavon ko wahin rok diya."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Cinematic live-action view of the Kurukshetra battlefield, ancient India, warm dust-filled light",
+     "type": "art"
+    },
+    "vo": "Dhanush kata. Rath toota. Tab usne rath ka pahiya hi utha liya."
+   },
+   {
+    "facts_used": [],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Cinematic live-action view of the Kurukshetra battlefield, ancient India, warm dust-filled light",
+     "type": "art"
+    },
+    "vo": "Kai maharathi ek saath. Aur beech mein akela ladka, haath mein sirf ek pahiya."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Cinematic live-action view of the Kurukshetra battlefield, ancient India, warm dust-filled light",
+     "type": "art"
+    },
+    "vo": "Ab woh kahani jo sab sunate hain. Arjun, Subhadra ko vyuh ka raaz bata rahe the. Subhadra so gayi. Baat adhoori reh gayi."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Cinematic live-action view of the Kurukshetra battlefield, ancient India, warm dust-filled light",
+     "type": "art"
+    },
+    "vo": "Par Mahabharat ke Drona Parva mein Abhimanyu khud kehta hai: pita ne ghusna sikhaya, nikalna nahi. Garbh wali baat ko kai vidwan baad ki lok-katha maante hain."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Cinematic live-action view of the Kurukshetra battlefield, ancient India, warm dust-filled light",
+     "type": "art"
+    },
+    "vo": "Toh asli sawaal yeh hai: nikalne ka raasta use kisi ne sikhaya hi kyun nahi?"
+   }
+  ],
+  "thumbnail": {},
+  "title": "Abhimanyu ne *chakravyuh* garbh mein seekha? 🤯"
+ },
+ "status": "assembled",
+ "timings": [],
+ "topic": {
+  "id": "preview-abhimanyu",
+  "title": "Abhimanyu ne chakravyuh garbh mein seekha tha?",
+  "voice": "voice_1kn3blc2u13l"
+ },
+ "writer": "claude"
+}
