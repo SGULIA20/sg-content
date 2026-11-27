@@ -1,0 +1,67 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.53,Default,,0,0,0,,Napoleon chhote nahi the,
+Dialogue: 0,0:00:01.53,0:00:03.25,Default,,0,0,0,,toh duniya ne baauna kyun maana?
+Dialogue: 0,0:00:03.25,0:00:04.78,Default,,0,0,0,,Ek cartoon ne yeh jhooth phailaya.
+Dialogue: 0,0:00:05.23,0:00:06.70,Default,,0,0,0,,Kahani sab jaante hain.
+Dialogue: 0,0:00:06.70,0:00:07.75,Default,,0,0,0,,France ka samraat,
+Dialogue: 0,0:00:07.75,0:00:08.59,Default,,0,0,0,,kad mein thingna.
+Dialogue: 0,0:00:08.59,0:00:10.48,Default,,0,0,0,,Phir bhi aadhe Europe par raaj.
+Dialogue: 0,0:00:10.93,0:00:11.52,Default,,0,0,0,,Kehte hain,
+Dialogue: 0,0:00:11.52,0:00:12.88,Default,,0,0,0,,kad ki chidh ne jung karwayi.
+Dialogue: 0,0:00:12.88,0:00:13.46,Default,,0,0,0,,Naam pada,
+Dialogue: 0,0:00:13.46,0:00:14.44,Default,,0,0,0,,Napoleon complex.
+Dialogue: 0,0:00:14.44,0:00:16.00,Default,,0,0,0,,Par yeh tasveer bani kahan?
+Dialogue: 0,0:00:16.45,0:00:16.83,Default,,0,0,0,,London.
+Dialogue: 0,0:00:16.83,0:00:18.72,Default,,0,0,0,,Ek cartoonist kalam uthata hai,
+Dialogue: 0,0:00:18.72,0:00:19.47,Default,,0,0,0,,James Gillray.
+Dialogue: 0,0:00:19.47,0:00:20.98,Default,,0,0,0,,Napoleon ko banata hai,
+Dialogue: 0,0:00:20.98,0:00:22.49,Default,,0,0,0,,gusse wala nanha baccha.
+Dialogue: 0,0:00:22.49,0:00:23.25,Default,,0,0,0,,Naam deta hai,
+Dialogue: 0,0:00:23.25,0:00:24.00,Default,,0,0,0,,Little Boney.
+Dialogue: 0,0:00:24.45,0:00:26.21,Default,,0,0,0,,Yeh cartoon ghar ghar pahunchte hain.
+Dialogue: 0,0:00:26.21,0:00:27.77,Default,,0,0,0,,Aur Napoleon ke apne guards?
+Dialogue: 0,0:00:27.77,0:00:28.74,Default,,0,0,0,,Sab bahut lambe.
+Dialogue: 0,0:00:29.19,0:00:30.84,Default,,0,0,0,,Lambe guards ke beech samraat aur
+Dialogue: 0,0:00:30.84,0:00:31.87,Default,,0,0,0,,chhota dikhta hai.
+Dialogue: 0,0:00:31.87,0:00:33.52,Default,,0,0,0,,Par asli naap kisne likha?
+Dialogue: 0,0:00:33.97,0:00:34.43,Default,,0,0,0,,Saal 1815.
+Dialogue: 0,0:00:34.43,0:00:36.75,Default,,0,0,0,,Napoleon haar kar British jahaz par
+Dialogue: 0,0:00:36.75,0:00:37.44,Default,,0,0,0,,aate hain.
+Dialogue: 0,0:00:37.44,0:00:39.07,Default,,0,0,0,,Captain Maitland likhta hai,
+Dialogue: 0,0:00:39.07,0:00:39.53,Default,,0,0,0,,mazboot,
+Dialogue: 0,0:00:39.53,0:00:40.69,Default,,0,0,0,,gathila aadmi.
+Dialogue: 0,0:00:40.69,0:00:42.31,Default,,0,0,0,,Chhote ka zikr tak nahi.
+Dialogue: 0,0:00:42.76,0:00:44.38,Default,,0,0,0,,Maut ke baad unka kad naapa
+Dialogue: 0,0:00:44.38,0:00:44.59,Default,,0,0,0,,gaya.
+Dialogue: 0,0:00:44.59,0:00:46.41,Default,,0,0,0,,Nateeja chaunkane wala tha.
+Dialogue: 0,0:00:46.41,0:00:47.62,Default,,0,0,0,,Aam French aadmi jitna,
+Dialogue: 0,0:00:47.62,0:00:48.64,Default,,0,0,0,,ya thoda zyada.
+Dialogue: 0,0:00:49.09,0:00:50.15,Default,,0,0,0,,Toh baauna kaise?
+Dialogue: 0,0:00:50.15,0:00:51.85,Default,,0,0,0,,French aur British inch alag the.
+Dialogue: 0,0:00:51.85,0:00:53.99,Default,,0,0,0,,Historians aaj bhi bahas karte hain,
+Dialogue: 0,0:00:53.99,0:00:55.05,Default,,0,0,0,,naap kis inch mein tha.
+Dialogue: 0,0:00:55.50,0:00:56.70,Default,,0,0,0,,Aur Napoleon complex?
+Dialogue: 0,0:00:56.70,0:00:58.10,Default,,0,0,0,,Kuch researchers kehte hain,
+Dialogue: 0,0:00:58.10,0:00:59.89,Default,,0,0,0,,chhote mard zyada chaal chalte hain.
+Dialogue: 0,0:00:59.89,0:01:01.29,Default,,0,0,0,,Doosri studies kehti hain,
+Dialogue: 0,0:01:01.29,0:01:03.29,Default,,0,0,0,,lambe mard zyada maar-peet karte hain.
+Dialogue: 0,0:01:03.73,0:01:04.17,Default,,0,0,0,,Sach yeh:
+Dialogue: 0,0:01:04.17,0:01:04.84,Default,,0,0,0,,kad aam tha,
+Dialogue: 0,0:01:04.84,0:01:06.16,Default,,0,0,0,,baauna sirf cartoon tha.
+Dialogue: 0,0:01:06.16,0:01:07.92,Default,,0,0,0,,Par kya Napoleon khud kad se
+Dialogue: 0,0:01:07.92,0:01:08.58,Default,,0,0,0,,chidhte the?
+Dialogue: 0,0:01:08.58,0:01:10.56,Default,,0,0,0,,Koi kaagaz yeh nahi batata.
+Dialogue: 0,0:01:11.01,0:01:12.08,Default,,0,0,0,,Us dost ko bhejo jo har
+Dialogue: 0,0:01:12.08,0:01:13.45,Default,,0,0,0,,chhote ko Napoleon kehta hai.

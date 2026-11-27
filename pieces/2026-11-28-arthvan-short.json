@@ -1,0 +1,293 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "disputed",
+   "number": null,
+   "quote": "As predicted by the Napoleon complex, we conclude that (relatively) shorter men show greater behavioral flexibility in securing resources when presented with cues that they are physically less competitive.",
+   "source_date": "2018-07-15",
+   "source_name": "Psychological Science",
+   "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6247438/",
+   "text": "Psychologists remain divided over the validity of the Napoleon complex, with evolutionary researchers arguing short men display indirect resource competition while other behavioral studies demonstrate tall men are more physically aggressive.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 1815.0,
+   "quote": "In 1815 an English captain described him as 'a remarkably strong, well-built man, about five feet seven inches high'.",
+   "source_date": "2024-03-17",
+   "source_url": "https://aspectsofhistory.com/little-boney-and-the-satirist/",
+   "text": "British Royal Navy Captain Frederick Lewis Maitland documented in 1815 that Napoleon was a well-built man standing roughly five feet seven inches tall upon surrendering aboard HMS Bellerophon.",
+   "unit": "CE"
+  }
+ ],
+ "id": "2026-11-28-arthvan-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-27",
+   "drafts": 3,
+   "research": 1
+  },
+  "cost": {
+   "inr": 39.0,
+   "usd": 0.603128,
+   "voice": 12
+  },
+  "drafts": 3,
+  "ig_story_id": "skipped: Reel over 60 s",
+  "music": {
+   "by": "Kevin MacLeod (incompetech.com)",
+   "licence": "CC BY 4.0",
+   "title": "Colossus"
+  },
+  "sound": "track",
+  "watch": {
+   "best_change": "Open on the 'Little Boney' cartoon of a tiny, angry Napoleon next to a bold on-screen height like '5'7\"', so the myth and its debunking are visible in the very first second.",
+   "issues": 3,
+   "opening": 6,
+   "verdict": "fix"
+  },
+  "watch_redo": [
+   0,
+   3,
+   8,
+   9
+  ]
+ },
+ "kind": "short",
+ "publish_day": "2026-11-28",
+ "reasons": [
+  "try 1: hook: needs a question, a number or a name",
+  "try 2: numbers without a source: 1.68, 1.68",
+  "review: redrawing 4 picture(s) before upload"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Napoleon chhote nahi the, toh duniya ne baauna kyun maana? 🤔\nEk British cartoonist ne unhe 'Little Boney' bana diya.\nMaut ke baad naap: us zamane ke aam French aadmi jitna kad.\nAapko pehle kya lagta tha, Napoleon kitne lambe the?\nUs dost ko bhejo jo har chhote ko Napoleon kehta hai.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#Mythology",
+     "#Itihaas",
+     "#Rahasya",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Napoleon chhote nahi the, toh duniya ne baauna kyun maana? Ek British cartoon aur lambe guards ki kahani. Aapko kya lagta tha, Napoleon kitne lambe the? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Napoleon chhote nahi the, toh duniya ne baauna kyun maana? Ek British cartoonist ki kalam aur lambe guards ne ek aam kad ke aadmi ko 'Little Boney' bana diya. 1815 ki gawahi aur maut ke baad ka naap kuch aur hi kehta hai. Us dost ko bhejo jo har chhote ko Napoleon kehta hai.",
+    "tags": [
+     "Napoleon",
+     "Napoleon height",
+     "Napoleon complex",
+     "James Gillray",
+     "Little Boney",
+     "history myth",
+     "itihaas",
+     "sabut ke saath",
+     "world history hindi",
+     "myth vs fact"
+    ],
+    "title": "Napoleon chhote the? Ek cartoon ka jhooth"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo har chhote ko Napoleon kehta hai.",
+  "hook": "Napoleon chhote nahi the, toh duniya ne baauna kyun maana?",
+  "scenes": [
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic dramatic scene, early 1800s battlefield at dusk, a French emperor in a dark bicorne hat and grey coat seen from behind on a white horse on a hilltop, cannon smoke and red sky, thousands of soldiers in blue uniforms below, his long shadow stretching across the grass, no faces, no text. Correction after review: Make this opening picture the most dramatic, close and high-contrast view of the subject, filling the frame: a viewer scrolling past must stop on it.",
+     "type": "art"
+    },
+    "vo": "Napoleon chhote nahi the, toh duniya ne baauna kyun maana? Ek cartoon ne yeh jhooth phailaya."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of a grand early 19th century French palace hall with gilded columns, a small figure in a bicorne hat seen from far behind walking toward a huge throne, courtiers in period dress bowing, warm candle light, no text",
+     "type": "art"
+    },
+    "vo": "Kahani sab jaante hain. France ka samraat, kad mein thingna. Phir bhi aadhe Europe par raaj."
+   },
+   {
+    "facts_used": [],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of an early 1800s campaign tent at night, a bicorne hat and a sword lying on a wooden table covered with a map of Europe, an oil lamp flickering, a clenched hand at the edge of the frame, no faces, no text",
+     "type": "art"
+    },
+    "vo": "Kehte hain, kad ki chidh ne jung karwayi. Naam pada, Napoleon complex. Par yeh tasveer bani kahan?"
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic interior of a cramped London print workshop around 1800, an artist in a waistcoat seen from behind bent over a copper etching plate with quill and inks, grey window light, stacks of printed sheets, no readable text. Correction after review: Show a Gillray-style 'Little Boney' caricature of a tiny, tantrum-throwing Napoleon on screen here.",
+     "type": "art"
+    },
+    "vo": "London. Ek cartoonist kalam uthata hai, James Gillray. Napoleon ko banata hai, gusse wala nanha baccha. Naam deta hai, Little Boney."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic early 1800s London street, a crowd in top hats and bonnets gathered laughing at prints hung in a shop window, cobblestones wet with rain, people seen from behind, no readable text",
+     "type": "art"
+    },
+    "vo": "Yeh cartoon ghar ghar pahunchte hain. Aur Napoleon ke apne guards? Sab bahut lambe."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic parade ground in early 19th century France, a row of very tall grenadier guards in towering bearskin caps, a shorter-looking man in a plain bicorne hat walking past them seen from behind, morning mist, no text",
+     "type": "art"
+    },
+    "vo": "Lambe guards ke beech samraat aur chhota dikhta hai. Par asli naap kisne likha?"
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic deck of a large wooden British warship in 1815, grey sea and overcast sky, a British naval captain in a dark blue coat writing in a leather logbook, a man in a bicorne hat standing at the rail seen from behind, sailors watching, no text",
+     "type": "art"
+    },
+    "vo": "Saal 1815. Napoleon haar kar British jahaz par aate hain. Captain Maitland likhta hai, mazboot, gathila aadmi. Chhote ka zikr tak nahi."
+   },
+   {
+    "facts_used": [],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of an old brass measuring rod and a handwritten 19th century paper on a dark wooden table, candle light, on a remote island room with a window showing a rocky Atlantic coast, no readable text or numbers",
+     "type": "art"
+    },
+    "vo": "Maut ke baad unka kad naapa gaya. Nateeja chaunkane wala tha. Aam French aadmi jitna, ya thoda zyada."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of two antique wooden rulers of slightly different lengths lying side by side on yellowed paper under a magnifying glass, soft museum light, no readable markings. Correction after review: Show the two inch standards side by side with the numbers on screen (e.g., 5'2\" French inches vs. about 5'7\" English inches) instead of another ruler still life.",
+     "type": "art"
+    },
+    "vo": "Toh baauna kaise? French aur British inch alag the. Historians aaj bhi bahas karte hain, naap kis inch mein tha."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic modern psychology lab, two men of different heights seen from behind sitting at a table playing a simple game with tokens, a researcher in a white coat watching, soft daylight, no screens, no text. Correction after review: Shorten the tag to 'BAHAS' or 'PSYCHOLOGY' so it fits fully.",
+     "type": "art"
+    },
+    "vo": "Aur Napoleon complex? Kuch researchers kehte hain, chhote mard zyada chaal chalte hain. Doosri studies kehti hain, lambe mard zyada maar-peet karte hain."
+   },
+   {
+    "facts_used": [],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic museum gallery, a grey bicorne hat and a worn military coat inside a glass case, visitors seen from behind looking at it, quiet warm light, no text or labels visible",
+     "type": "art"
+    },
+    "vo": "Sach yeh: kad aam tha, baauna sirf cartoon tha. Par kya Napoleon khud kad se chidhte the? Koi kaagaz yeh nahi batata."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic golden hour view of a tall stone monument column in a Paris square, pigeons taking flight, people walking seen from behind, warm evening light, no text",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo har chhote ko Napoleon kehta hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "NAPOLEON",
+   "name_hi": "नेपोलियन",
+   "scene": "A French emperor in a dark bicorne hat seen from behind, standing between a row of towering grenadier guards in tall bearskin caps on a misty parade ground, making him look tiny.",
+   "words": [
+    "1.68 METRE",
+    "SACH?"
+   ],
+   "words_hi": [
+    "1.68 मीटर",
+    "सच?"
+   ]
+  },
+  "title": "Napoleon ko *baauna* kisne banaya? 🤯"
+ },
+ "status": "voiced",
+ "timings": [
+  0.0,
+  5.231,
+  10.93,
+  16.449,
+  24.455,
+  29.193,
+  33.965,
+  42.764,
+  49.085,
+  55.502,
+  63.735,
+  71.009
+ ],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "en.wikipedia.org",
+   "nio.res.in",
+   "britannica.com",
+   "the scripture or text named in the story",
+   "nasa.gov",
+   "who.int",
+   "nih.gov",
+   "nationalgeographic.com",
+   "smithsonianmag.com",
+   "a university or museum page"
+  ],
+  "follows": "Famous name plus shock fact, opened as a stated fact. Non-India myth, new theme for the week.",
+  "hooks": [
+   "Napoleon Bonaparte ki height us zamane ke aam French aadmi jitni thi, chhoti nahi.",
+   "Ek British cartoonist ne Napoleon ko duniya bhar mein baauna bana diya, kaise?"
+  ],
+  "id": "wk-2026-11-28-arthvan-short",
+  "patch_tries": 1,
+  "summary": "Napoleon ki height ka kissa. Check karein: autopsy mein 5 foot 2 French inches, jo lagbhag 5'6-5'7 modern inches hai, aur British cartoons (Gillray) ne 'Little Boney' image kaise banayi.",
+  "target_minutes": null,
+  "title": "Napoleon sach mein chhote kad ke the?",
+  "topic_score": 7,
+  "topic_score_why": [
+   "+3 a widely held belief and its reason",
+   "+3 a shock question or a mystery",
+   "+1 asks a question"
+  ],
+  "viral": true,
+  "voice": "voice_g8azc8xcwhlu",
+  "weekly": true
+ },
+ "updated": "2026-11-27T17:41:49+00:00",
+ "writer": "claude"
+}
