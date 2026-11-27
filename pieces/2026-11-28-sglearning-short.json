@@ -80,7 +80,7 @@
    "research": 1
   },
   "cost": {
-   "inr": 48.0,
+   "inr": 69.0,
    "usd": 0.17406,
    "voice": 16
   },
@@ -109,7 +109,8 @@
  "reasons": [
   "review: redrawing 4 picture(s) before upload",
   "no picture in the reply: {\"candidates\": [{\"content\": {}, \"finishReason\": \"PROHIBITED_CONTENT\", \"index\": 0, \"safetyRatings\": [{\"category\": \"HARM_CATEGORY_HATE_SPEECH\", \"probability\": \"NEGLIGIBLE\"}]}], \"usageMetadata\": {\"prompt",
-  "no picture in the reply: {\"candidates\": [{\"content\": {}, \"finishReason\": \"PROHIBITED_CONTENT\", \"index\": 0, \"safetyRatings\": [{\"category\": \"HARM_CATEGORY_HATE_SPEECH\", \"probability\": \"NEGLIGIBLE\"}]}], \"usageMetadata\": {\"prompt"
+  "no picture in the reply: {\"candidates\": [{\"content\": {}, \"finishReason\": \"PROHIBITED_CONTENT\", \"index\": 0, \"safetyRatings\": [{\"category\": \"HARM_CATEGORY_HATE_SPEECH\", \"probability\": \"NEGLIGIBLE\"}]}], \"usageMetadata\": {\"prompt",
+  "narration: the last line is cut or inaudible before 53.4s"
  ],
  "script": {
   "captions": {
@@ -258,16 +259,16 @@
   },
   "title": "Avengers must earn its budget *2.5 times* 🎬"
  },
- "status": "failed-art",
+ "status": "qa_failed",
  "timings": [
   0.0,
-  5.802,
-  13.464,
-  18.527,
-  25.893,
-  31.449,
-  37.499,
-  45.773
+  6.253,
+  13.843,
+  19.378,
+  27.5,
+  33.654,
+  40.436,
+  50.157
  ],
  "topic": {
   "follows": "Avengers: Doomsday trailer at 64M views, top of the chart.",
@@ -289,6 +290,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-27T18:16:29+00:00",
+ "updated": "2026-11-27T19:05:54+00:00",
  "writer": "claude"
 }
