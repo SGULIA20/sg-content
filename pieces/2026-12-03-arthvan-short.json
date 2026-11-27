@@ -86,12 +86,6 @@
   },
   "drafts": 2,
   "ig_story_id": "skipped: Reel over 60 s",
-  "intro": {
-   "clip": "2026-12-03-arthvan-short.mp4",
-   "clip_seconds": 1,
-   "composed": "2026-11-27T17:06:42+00:00",
-   "seconds": 8.38
-  },
   "intro_checked": "e4583e58497c62d8",
   "intro_sent": "2026-11-26T23:00:03+00:00",
   "music": {
@@ -115,14 +109,15 @@
    2,
    8
   ],
-  "yt_id": "0id2GZ2yd4Y"
+  "yt_deleted_by_founder": "0id2GZ2yd4Y"
  },
  "kind": "short",
  "publish_day": "2026-12-03",
  "reasons": [
   "try 1: hook: needs a question, a number or a name",
   "review: redrawing 4 picture(s) before upload",
-  "waiting for the founder's intro clip until 03 Dec 11:30 UTC"
+  "waiting for the founder's intro clip until 03 Dec 11:30 UTC",
+  "the founder deleted the scheduled upload (27 Nov 2026) and asked for the version with his moving clips; put together again"
  ],
  "script": {
   "captions": {
@@ -318,7 +313,7 @@
   },
   "title": "Pyramid *gulamon* ne banaye the? 🤯"
  },
- "status": "uploaded",
+ "status": "voiced",
  "timings": [
   0.0,
   4.669,
@@ -413,6 +408,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-27T17:06:48+00:00",
+ "updated": "2026-11-27T18:40:23+00:00",
  "writer": "claude"
 }

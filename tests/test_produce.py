@@ -41,3 +41,28 @@ def test_no_new_video_starts_on_yesterdays_plan_and_a_video_due_soon_skips_the_s
     now = datetime(2026, 11, 27, 6, 0, tzinfo=timezone.utc)
     assert pipeline.due_soon(P(channel="sglearning", kind="short", publish_day=date(2026, 11, 28)), now) is True
     assert pipeline.due_soon(P(channel="sglearning", kind="short", publish_day=date(2026, 12, 5)), now) is False
+
+
+def test_a_started_video_beyond_the_one_day_lead_keeps_moving(tmp_path):
+    """27 Nov 2026: the 3 Dec Short, sent back to be put together with the founder's moving clips, must not wait until 2 Dec."""
+    from datetime import date, datetime, timezone
+    from engine import pieces, produce
+    p = pieces.Piece(id="2026-12-03-arthvan-short", channel="arthvan", kind="short", publish_day=date(2026, 12, 3))
+    p.status, p.script, p.topic = "voiced", {"title": "t", "scenes": [{"vo": "x"}]}, {"title": "t"}
+    pieces.save(p, tmp_path)
+    q = pieces.Piece(id="2026-12-04-arthvan-short", channel="arthvan", kind="short", publish_day=date(2026, 12, 4))
+    q.status, q.script, q.topic = "intro-wait", {"title": "t", "scenes": [{"vo": "x"}]}, {"title": "t"}
+    pieces.save(q, tmp_path)
+    seen = []
+    class Stop(Exception): pass
+    def make(piece, deps, root, dry_run=False, pack_mode=False):
+        seen.append(piece.id); return piece
+    orig = produce.pipeline.make
+    produce.pipeline.make = make
+    try:
+        from types import SimpleNamespace
+        produce.run(tmp_path, date(2026, 11, 28), deps=SimpleNamespace(), notify=lambda t: True, only={"arthvan:short"},
+                    now_utc=datetime(2026, 11, 28, 12, 0, tzinfo=timezone.utc))
+    finally:
+        produce.pipeline.make = orig
+    assert "2026-12-03-arthvan-short" in seen and "2026-12-04-arthvan-short" not in seen
