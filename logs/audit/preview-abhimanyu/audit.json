@@ -1,33 +1,33 @@
 {
- "score": 6,
- "verdict": "fix first",
+ "score": 8,
+ "verdict": "publish",
  "faults": [
   {
-   "at": 37,
+   "at": 13,
    "kind": "picture-words",
-   "what": "Narration tells the story of Arjun explaining the vyuh to Subhadra who falls asleep, but the visuals show Abhimanyu lifting and fighting with the chariot wheel until 0:46.",
-   "fix": "Move the chariot wheel battle footage earlier to match lines 5 and 6 (0:27-0:36), and place the scene of Arjun and pregnant Subhadra here at 0:37-0:46."
+   "what": "The depiction of Arjun closely resembles the model used for Abhimanyu, causing character confusion.",
+   "fix": "Differentiate Arjun visually with distinct armor, age markers, or Gandiva bow iconography."
   },
   {
-   "at": 47,
-   "kind": "picture-words",
-   "what": "Visual shows Arjun talking to a sleeping Subhadra while narration discusses Mahabharata's Drona Parva and Abhimanyu's quote about his father teaching him to enter but not exit.",
-   "fix": "Realign the Arjun/Subhadra visual to play during line 7 (0:37-0:46) and show scriptural/textual reference or Abhimanyu reflecting during line 8."
-  },
-  {
-   "at": 27,
-   "kind": "picture-words",
-   "what": "Narration says 'Tab usne rath ka pahiya hi utha liya' while on screen Abhimanyu is still riding an intact chariot with bow and arrow.",
-   "fix": "Cut directly to the broken chariot and wheel pickup when this line is spoken."
-  },
-  {
-   "at": 40,
+   "at": 31,
    "kind": "quality",
-   "what": "AI warping on the chariot wheel spokes and Abhimanyu's fingers clipping through the wooden rim as he holds it.",
-   "fix": "Regenerate or clean up the wheel grip frame to prevent shifting spokes and clipping hands."
+   "what": "Noticeable AI morphing and clipping around hands and spokes when Abhimanyu lifts the broken chariot wheel.",
+   "fix": "Regenerate or clean up the wheel-lifting keyframe to maintain rigid geometry of the spokes."
+  },
+  {
+   "at": 36,
+   "kind": "quality",
+   "what": "Arrows hitting the chariot wheel lack natural momentum and appear artificially glued to the rim.",
+   "fix": "Add dynamic impact dust/sparks or vary penetration angles for realism."
+  },
+  {
+   "at": 50,
+   "kind": "picture-words",
+   "what": "Visual returns to a generic chariot-riding shot instead of illustrating Drona Parva or a tactical debate.",
+   "fix": "Use visuals suggesting historical texts, tactical deliberations, or close-up dramatic dialogue."
   }
  ],
- "strongest": "The opening visual and narration hook establishing the massive Chakravyuh formation against a lone warrior immediately commands attention.",
- "weakest": "The complete narrative desync from 0:37 to 0:54 where the Subhadra story visuals are delayed by an entire scene while battle footage continues under unrelated narration.",
+ "strongest": "The thematic pivot from the popular folklore of the womb to the scriptural question in Drona Parva delivers a compelling and thought-provoking narrative hook.",
+ "weakest": "The awkward AI morphing during the chariot wheel pickup at 0:31 disrupts visual continuity during a climactic battle moment.",
  "lines_heard": 9
 }
