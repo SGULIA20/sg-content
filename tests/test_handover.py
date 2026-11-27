@@ -68,3 +68,22 @@ def test_a_thumbnail_sent_to_the_bot_is_taken_once_and_a_later_chat_one_is_not_p
     assert handover.collect_thumbs(tmp_path, "", lambda url, token="", raw=False: newer if raw else json.dumps(listing).encode(), today=day) == ["2026-11-27-arthvan-long"]
     assert handover.collect_thumbs(tmp_path, "", get, today=date(2026, 11, 28)) == []          # past its day: left alone
 
+
+
+def test_moving_clips_sent_to_the_arthvan_bot_are_collected_once(tmp_path):
+    """28 Nov 2026: the founder sends his clips to whichever bot is open; both paths must end in inbox/scenes/."""
+    import hashlib, json
+    from engine import handover
+    data = b"clip-bytes"
+    sha = hashlib.sha1(b"blob %d\0" % len(data) + data).hexdigest()
+    asked = []
+    def get(url, token="", raw=False):
+        asked.append(url)
+        if raw:
+            return data
+        if url.split("?")[0].endswith("inbox/scenes"):
+            return json.dumps([{"name": "2026-11-28-arthvan-short", "type": "dir"}, {"name": "README", "type": "file"}]).encode()
+        return json.dumps([{"name": "clip1.mp4", "size": len(data), "sha": sha}, {"name": "map.json", "size": 5, "sha": "x"}]).encode()
+    assert handover.collect_scenes(tmp_path, get=get) == ["2026-11-28-arthvan-short/clip1.mp4"]
+    assert (tmp_path / "inbox" / "scenes" / "2026-11-28-arthvan-short" / "clip1.mp4").read_bytes() == data
+    assert handover.collect_scenes(tmp_path, get=get) == []                                 # the same clip is not fetched twice
