@@ -80,9 +80,9 @@
    "research": 1
   },
   "cost": {
-   "inr": 30.0,
+   "inr": 48.0,
    "usd": 0.17406,
-   "voice": 8
+   "voice": 16
   },
   "drafts": 1,
   "music": {
@@ -107,7 +107,8 @@
  "kind": "short",
  "publish_day": "2026-11-28",
  "reasons": [
-  "review: redrawing 4 picture(s) before upload"
+  "review: redrawing 4 picture(s) before upload",
+  "no picture in the reply: {\"candidates\": [{\"content\": {}, \"finishReason\": \"PROHIBITED_CONTENT\", \"index\": 0, \"safetyRatings\": [{\"category\": \"HARM_CATEGORY_HATE_SPEECH\", \"probability\": \"NEGLIGIBLE\"}]}], \"usageMetadata\": {\"prompt"
  ],
  "script": {
   "captions": {
@@ -256,7 +257,7 @@
   },
   "title": "Avengers must earn its budget *2.5 times* 🎬"
  },
- "status": "voiced",
+ "status": "failed-art",
  "timings": [
   0.0,
   5.802,
@@ -287,6 +288,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-27T17:48:14+00:00",
+ "updated": "2026-11-27T18:06:13+00:00",
  "writer": "claude"
 }
