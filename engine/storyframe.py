@@ -34,7 +34,9 @@ def logo(channel: str, px: int = LOGO_PX, out_dir: Path | None = None) -> Path:
     top, bottom = LOGO_TEXT[channel]
     out = Path(out_dir or LOGO_DIR) / f"{channel}-{px}.png"
     if not out.exists():
-        cards.render("logo", {"top": top, "bottom": bottom, "ring": max(3, px // 30), "shadow": max(2, px // 50),
+        # founder, 27 Nov 2026 ("change the logos of SGMYTH WORLD, it's quite similar to SGlearning", option A): its own mark, a temple
+        # spire against a saffron sunrise; Learning keeps the black disc with the monogram
+        cards.render("logomyth" if channel == "arthvan" else "logo", {"top": top, "bottom": bottom, "ring": max(3, px // 30), "shadow": max(2, px // 50),
                               "top_px": int(px * 0.40), "bottom_px": int(px * 0.11)}, out, (px, px))
     return out
 
