@@ -65,3 +65,20 @@ def test_the_review_acts_the_flagged_pictures_are_redrawn_once_and_a_weak_openin
     assert "2 picture(s) are being redrawn" in told[0]
     assert watch.look(p, tmp_path / "v.mp4", tmp_path, notify=told.append, ask=lambda c: weak, grab=_grab) is None and len(told) == 1    # the rebuilt video is not reviewed again
     assert watch.redraw(p, {"issues": [], "opening": 2, "scene_of_frame": {}}) == []                                                   # once only
+
+
+def test_review_notes_about_words_credits_and_charts_never_reach_the_painter():
+    """27 Nov 2026: four notes on the 28 Nov Learning Short asked for words, a credit or a bar chart on screen; one made the painter
+    refuse the picture as prohibited content and the Short failed on every run."""
+    from types import SimpleNamespace as P
+    from engine import watch
+    notes = ["Replace it with a real, relevant source credit or remove the chip.",
+             "Keep the photoreal style and show the full phrase 'ticket money goes to the studio' on screen.",
+             "Correct the credit and put '2.5x budget = break even' large on screen.",
+             "Use a superhero-style screen or a revenue-vs-budget bar showing Endgame clearing 2.5x."]
+    assert all(watch.OVERLAY.search(n) for n in notes)
+    assert not watch.OVERLAY.search("Show the horse stumbling closer to the camera with dust flying")
+    scenes = [{"visual": {"type": "art", "prompt": "a cinema hall"}} for _ in range(4)]
+    piece = P(script={"scenes": scenes}, ids={})
+    r = {"opening": 9, "scene_of_frame": {i: i for i in range(4)}, "issues": [{"frame": i, "fix": n} for i, n in enumerate(notes)]}
+    assert watch.redraw(piece, r) == [] and all(watch.NOTE not in s["visual"]["prompt"] for s in scenes)
