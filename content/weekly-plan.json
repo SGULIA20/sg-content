@@ -1,14 +1,32 @@
 {
  "week_of": "2026-11-27",
- "generated": "2026-11-27T00:43:33+00:00",
+ "generated": "2026-11-27T15:46:06+00:00",
  "entries": {
-  "2026-12-01-sglearning-short": {
-   "id": "wk-2026-12-01-sglearning-short",
-   "title": "Gukesh sabse kam umar ka world chess champion kaise bana?",
-   "summary": "How D Gukesh beat Ding Liren in Singapore in Dec 2024 at age 18, the youngest undisputed champion. Check the final game 14 result, the 7.5-6.5 score and Kasparov's earlier record. Mention the 2026 title match only if confirmed.",
+  "2026-11-28-sglearning-long": {
+   "id": "wk-2026-11-28-sglearning-long",
+   "title": "Sona aur chandi achanak kyun gire, aur asli galti kahan hoti hai?",
+   "summary": "Explains the recent gold and silver fall: dollar, interest-rate expectations, profit-booking, margin changes and the earlier rally. Check peak and current prices (LBMA, MCX, COMEX) and past falls such as 2013. Covers what most buyers get wrong.",
    "hooks": [
-    "Gukesh 18 saal ka tha jab world champion bana, phir bhi record kiska toota?",
-    "12 December 2024, game 14: ek galti ne Ding Liren se title kaise cheen liya?"
+    "Sona kitne din mein kitna gira, aur kisne becha?",
+    "Kya sona sach mein hamesha surakshit hota hai?"
+   ],
+   "weekly": true,
+   "topic_score": 5,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
+    "+1 a choice the viewer faces",
+    "+1 asks a question"
+   ],
+   "follows": "Gold crash videos took 5.6M, 5.1M, 2M and 1.6M views in the Hindi list; long slot with real depth; global commodity story.",
+   "trend": true
+  },
+  "2026-11-28-sglearning-short": {
+   "id": "wk-2026-11-28-sglearning-short",
+   "title": "Avengers jaisi film ko kamane ke liye kitna chahiye?",
+   "summary": "Uses the Avengers: Doomsday trailer buzz to explain a blockbuster's budget versus break-even. Check Endgame's reported budget and gross (Box Office Mojo) and why studios need roughly twice the budget back from theatres. Release date 18 Dec.",
+   "hooks": [
+    "Endgame ka budget kitna tha, aur kamaya kitna?",
+    "Film 2 billion dollar kamaye to bhi flop ho sakti hai?"
    ],
    "weekly": true,
    "topic_score": 3,
@@ -17,16 +35,68 @@
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Chess world championship (Gukesh vs Sindarov) is on the India trending chart with 2.1M views. Opens on a famous name plus a contradiction.",
+   "follows": "Avengers: Doomsday trailer at 64M views, top of the chart.",
+   "trend": true
+  },
+  "2026-11-29-sglearning-short": {
+   "id": "wk-2026-11-29-sglearning-short",
+   "title": "Chess world championship mein itne draw kyun hote hain?",
+   "summary": "Explains draws in classical chess using the Gukesh vs Sindarov match. Check the match format, the games so far and the draw rate in recent title matches (FIDE site). Shows why a draw is not boring.",
+   "hooks": [
+    "14 games mein sirf ek jeet bhi kaafi ho sakti hai?",
+    "Grandmaster jaanbujhkar draw kyun khelte hain?"
+   ],
+   "weekly": true,
+   "topic_score": 2,
+   "topic_score_why": [
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "Gukesh vs Sindarov Game 3 had 2.2M views on the India chart.",
+   "trend": true
+  },
+  "2026-11-30-sglearning-short": {
+   "id": "wk-2026-11-30-sglearning-short",
+   "title": "10,000 kadam ka number aaya kahan se?",
+   "summary": "The 10,000-step goal traces to a 1965 Japanese pedometer, the Manpo-kei, sold ahead of the 1964 Tokyo Olympics. Check the origin story and recent studies showing benefits at roughly 7,000 steps (Lancet Public Health 2025).",
+   "hooks": [
+    "1965 mein ek Japanese pedometer ne 10,000 ka number kaise banaya?",
+    "Kya 7,000 kadam bhi kaafi hain?"
+   ],
+   "weekly": true,
+   "topic_score": 3,
+   "topic_score_why": [
+    "+1 a choice the viewer faces",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "Counterintuitive health-myth hook with a dated fact; broad worldwide appeal.",
+   "trend": true
+  },
+  "2026-12-01-sglearning-short": {
+   "id": "wk-2026-12-01-sglearning-short",
+   "title": "AI chatbot confidently galat jawab kyun deta hai?",
+   "summary": "Explains hallucination: language models predict likely words and do not look facts up. Check a documented case such as the 2023 lawyers sanctioned in New York for fake case citations (Mata v. Avianca).",
+   "hooks": [
+    "2023 mein ek vakil ko AI ke jhoothe cases par saza kyun mili?",
+    "Chatbot ko 'pata nahi' kehna kyun nahi aata?"
+   ],
+   "weekly": true,
+   "topic_score": 2,
+   "topic_score_why": [
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "'ChatGPT gone wrong' Short took 20M views this week.",
    "trend": true
   },
   "2026-12-02-sglearning-long": {
    "id": "wk-2026-12-02-sglearning-long",
-   "title": "GTA 6 ka budget itna bada kyun, aur ek game kaise paisa banata hai?",
-   "summary": "Explains why AAA games cost hundreds of millions and how GTA V earned about $1 billion in 3 days in 2013. Check GTA V's reported cost of about $265M, the delay history and the GTA 6 release date. Label all GTA 6 budget figures as estimates, not confirmed.",
+   "title": "GTA jaisa game Hollywood se mehnga kyun banta hai?",
+   "summary": "Tells how big games reached budgets above blockbuster films: GTA 5 development and sales, marketing costs, and what is publicly known about GTA 6 cost and release date. Check Rockstar and Take-Two statements; avoid unverified figures.",
    "hooks": [
-    "GTA V ne 2013 mein 3 din mein 1 billion dollar kamaye, to GTA 6 ko kitna chahiye?",
-    "Ek game ka budget Hollywood film se bada kyun ho gaya?"
+    "GTA 5 ne kitne dollar kamaye, aur kitne din mein?",
+    "Ek game ka budget film se zyada kaise ho jaata hai?"
    ],
    "weekly": true,
    "topic_score": 2,
@@ -34,145 +104,69 @@
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "GTA 6 videos fill the India and US charts (Techno Gamerz 12.1M, CoryxKenshin 4.9M, dunkey 2.9M, Asmongold 2.3M). FactTechz Short on the game's cost has 8.8M.",
+   "follows": "GTA content filled the India chart (5M, 4.3M views) and a GTA 6 Short had 8.8M.",
    "trend": true
   },
   "2026-12-02-sglearning-short": {
    "id": "wk-2026-12-02-sglearning-short",
-   "title": "Iron Man wala actor Avengers mein villain Doom kyun bana?",
-   "summary": "Robert Downey Jr. was announced as Doctor Doom at Comic-Con in July 2024, with the Russo brothers directing. Check the Doomsday release date of 18 Dec 2026 and that Downey played Tony Stark in 2008-2019. No spoilers or rumours.",
+   "title": "Coffee ke daam record par kyun pahunche?",
+   "summary": "Explains the coffee price spike: Brazil and Vietnam weather, low stocks, tariffs. Check arabica futures history on ICE and ICO reports. Shows how a farm shock reaches a cup price.",
    "hooks": [
-    "Tony Stark ka chehra ab Doctor Doom kyun hai?",
-    "18 December ko Avengers: Doomsday aa rahi hai, to Downey ki wapasi ka matlab kya hai?"
+    "Arabica coffee ka daam kab sabse upar gaya?",
+    "Brazil ke mausam se aapki coffee mehngi kaise?"
    ],
    "weekly": true,
-   "topic_score": 3,
+   "topic_score": 2,
    "topic_score_why": [
-    "+1 a choice the viewer faces",
-    "+1 a concrete number",
+    "+1 a scare or a crash (in the summary)",
     "+1 asks a question"
    ],
-   "follows": "Avengers: Doomsday Final Trailer has 60.8M views, the top item on the India chart, plus several related videos.",
+   "follows": "Price-shock subject that matters worldwide; a scare tied to everyday spending.",
    "trend": true
   },
   "2026-12-03-sglearning-short": {
    "id": "wk-2026-12-03-sglearning-short",
-   "title": "ChatGPT ne jhooth bola aur vakeel ko jurmana kyun laga?",
-   "summary": "In Mata v. Avianca (New York, 2023), lawyers filed fake cases invented by ChatGPT and were fined $5,000. Explains why AI hallucinates: it predicts words and does not look up facts. Check the court order and the fine.",
+   "title": "Australia ki fauj emu se kaise haar gayi?",
+   "summary": "The Great Emu War: Western Australia, Nov-Dec 1932, soldiers with Lewis guns under Major Meredith, and a withdrawal. Check the dates, ammunition and the number of birds killed in the records. Most people think the birds simply won; the truth is more mixed.",
    "hooks": [
-    "ChatGPT ne 6 farzi court case bana diye, aur vakeel ne court mein pesh kar diye?",
-    "2023 mein New York ke judge ne AI ke jhooth par kitna jurmana lagaya?"
+    "1932 mein Australia ne emu par fauj kyun bheji?",
+    "Kya emu ne sach mein jang jeeti?"
    ],
    "weekly": true,
    "topic_score": 3,
    "topic_score_why": [
-    "+1 a scare or a crash (in the summary)",
+    "+1 a choice the viewer faces",
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "ChatGPT gone wrong Short has 17.7M views. Opens with a famous name plus a contradiction.",
+   "follows": "Strange true story, with a dated fact in line 2; an Australia item was also trending.",
    "trend": true
   },
   "2026-12-04-sglearning-short": {
    "id": "wk-2026-12-04-sglearning-short",
-   "title": "No-cost EMI mein cost kahan chhupi hoti hai?",
-   "summary": "Explains how the interest is built into the price or discount, and how processing fees and GST on interest apply. Check the RBI's 2013 guidance on zero-interest EMI and a real bill example.",
+   "title": "Gram panchayat ko paisa kahan se milta hai?",
+   "summary": "Explains how village councils are funded: Finance Commission grants, state shares and own revenue. Check the 73rd Amendment (1992) and 15th Finance Commission grants for rural local bodies. Civic explainer with no party angle.",
    "hooks": [
-    "No-cost EMI mein kitna extra jaata hai, bill dekha kabhi?",
-    "Discount gayab hua to 'zero interest' ka matlab kya raha?"
+    "Ek gaon ke vikas ka paisa kis rakam se aata hai?",
+    "1992 ke kaunse badlav ne panchayat ko takat di?"
    ],
    "weekly": true,
-   "topic_score": 5,
+   "topic_score": 0,
    "topic_score_why": [
-    "+3 touches the viewer's own money",
-    "+1 a choice the viewer faces",
+    "-2 company results or deals (in the summary)",
+    "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Founder's Gemini tool suggestion and a direct consumer saving hook, which held viewers best.",
-   "spare": true,
+   "follows": "Panchayat Season 5 trailer had 34M views in Shorts.",
    "trend": true
   },
   "2026-12-05-sglearning-long": {
    "id": "wk-2026-12-05-sglearning-long",
-   "title": "San Jose galleon ka dooba hua sona aaj kiska hai?",
-   "summary": "The Spanish galleon San Jose sank in 1708 after a British attack and was found off Colombia in 2015. Explains the treasure's estimated value and the claims of Colombia, Spain, a salvage firm and Bolivian Indigenous groups. Check the court rulings and the 2025 robot dives.",
+   "title": "Voyager 1 ko 48 saal baad bhi signal kaise bhejna padta hai?",
+   "summary": "Voyager 1: launched 5 Sep 1977, interstellar space since 2012, about one light-day from Earth around now. Check NASA JPL distance counters, the 2023 memory glitch fix and the power left. Explains why it still works.",
    "hooks": [
-    "1708 mein dooba jahaz, aur aaj Colombia, Spain aur ek company teeno us par haq kyun jata rahe hain?",
-    "Samundar ke neeche sone ka khazana mil jaye, to kanoon ke hisaab se kiska hota hai?"
-   ],
-   "weekly": true,
-   "topic_score": 8,
-   "topic_score_why": [
-    "+3 touches the viewer's own money",
-    "+3 a scare or a crash",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "follows": "Treasure Hunting in the Ocean (Techno Gamerz, 12.1M) shows that treasure stories pull viewers, and the gold story is live this week.",
-   "trend": true
-  },
-  "2026-12-05-sglearning-short": {
-   "id": "wk-2026-12-05-sglearning-short",
-   "title": "Roz 10,000 kadam chalna zaroori kyun nahi hai?",
-   "summary": "The 10,000-steps target began with a 1965 Japanese pedometer marketing campaign called Manpo-kei. Recent large studies, including a 2025 Lancet Public Health analysis, show benefits flatten around 7,000 steps. Check these sources.",
-   "hooks": [
-    "10,000 kadam ka number doctor ne nahi, ek Japanese pedometer company ne diya tha?",
-    "7,000 kadam par bhi fayda poora ho jata hai, to 10,000 ka chakkar kyun?"
-   ],
-   "weekly": true,
-   "topic_score": 3,
-   "topic_score_why": [
-    "+1 a choice the viewer faces",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "follows": "Health and fact-check angle on a belief most people hold. Weekly mix needs a health slot, and we do the 'what people got wrong' framing.",
-   "trend": true
-  },
-  "2026-12-06-sglearning-short": {
-   "id": "wk-2026-12-06-sglearning-short",
-   "title": "Panchayat ka Phulera gaon asli mein kahan hai?",
-   "summary": "Panchayat is shot in Mahodia village, Sehore district, Madhya Pradesh, while Phulera is fictional. Check the shooting location, the season 5 trailer release and the cast. No gossip about anyone's private life.",
-   "hooks": [
-    "Panchayat ka Phulera gaon filmi hai, to shooting asli mein kahan hoti hai?",
-    "Ek chhote gaon ki web series ka trailer 29 million views kaise le gaya?"
-   ],
-   "weekly": true,
-   "topic_score": 4,
-   "topic_score_why": [
-    "+1 touches the viewer's own money (in the summary)",
-    "+1 a choice the viewer faces (in the summary)",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "follows": "Panchayat Season 5 trailer has 29.1M views, the top Short this week.",
-   "trend": true
-  },
-  "2026-12-07-sglearning-short": {
-   "id": "wk-2026-12-07-sglearning-short",
-   "title": "Voyager 1 ka signal ek din door se aane mein 24 ghante kyun lega?",
-   "summary": "Voyager 1, launched 1977, is nearing one light-day from Earth, so a radio signal takes about 24 hours one way. Check NASA's current distance figures and the date it crosses that mark, expected around late 2026.",
-   "hooks": [
-    "1977 ka ek chhota yaan ab itni door hai ki uska signal aane mein 24 ghante lagte hain?",
-    "Voyager 1 ne Earth se 'ek light-day' ka nishaan kab paar kiya?"
-   ],
-   "weekly": true,
-   "topic_score": 3,
-   "topic_score_why": [
-    "+1 touches the viewer's own money (in the summary)",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "follows": "Science/space slot with a clean number and a dated fact. Adds worldwide breadth to the week.",
-   "trend": true
-  },
-  "2026-12-08-sglearning-short": {
-   "id": "wk-2026-12-08-sglearning-short",
-   "title": "Barish mein cricket match mein target kaise badalta hai?",
-   "summary": "Explains the Duckworth-Lewis-Stern method: it values a team's remaining overs and wickets as resources and does not use run rate. Check the history from 1997 and 2014 and a real match example. Keep neutral.",
-   "hooks": [
-    "Barish aayi aur target 20 run badal gaya, ye number kaun nikalta hai?",
-    "Duckworth-Lewis-Stern run rate se nahi, 'resources' se kaise chalta hai?"
+    "Voyager 1 ka signal Earth tak kitne ghante mein aata hai?",
+    "Ek 1977 ka computer aaj bhi kaise chal raha hai?"
    ],
    "weekly": true,
    "topic_score": 2,
@@ -180,109 +174,144 @@
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Cricket is a global subject. Sport and sports-event videos run high on the Hindi charts (ChessBase 2.1M, PMGC 4.5M).",
+   "follows": "Science and record story with worldwide reach; weeks around the one-light-day milestone.",
    "trend": true
   },
-  "2026-12-09-sglearning-long": {
-   "id": "wk-2026-12-09-sglearning-long",
-   "title": "Ozone ki parat kaise theek hui, aur duniya ne ye kaise kiya?",
-   "summary": "The 1987 Montreal Protocol phased out CFCs, and the ozone layer is on track to recover around 2066 over Antarctica per the UN 2022 assessment. Check the 1985 hole discovery, the CFC ban and the 2025 UN update.",
+  "2026-12-05-sglearning-short": {
+   "id": "wk-2026-12-05-sglearning-short",
+   "title": "Digital arrest mein log video call par kyun maan jaate hain?",
+   "summary": "Explains the digital arrest scam: fake officials, fear and isolation on video call. Check the Supreme Court's October 2025 action and the I4C figures on losses. Says what no agency ever does by video call.",
    "hooks": [
-    "1985 mein ozone mein chhed mila, aur aaj wo bhar raha hai, duniya ne kaise kiya?",
-    "Duniya ka sabse safal environment samjhauta kaun sa hai, aur kyun?"
+    "Kitne crore ki thagi 2025 mein digital arrest se hui?",
+    "Asli police video call par arrest kyun nahi karti?"
    ],
    "weekly": true,
-   "topic_score": 4,
+   "topic_score": 3,
    "topic_score_why": [
+    "+1 a scare or a crash (in the summary)",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "Scam subject with a consumer-protection takeaway; the scam angle matches viewer fear.",
+   "trend": true
+  },
+  "2026-12-06-sglearning-short": {
+   "id": "wk-2026-12-06-sglearning-short",
+   "title": "Insaan kitna tez daud sakta hai?",
+   "summary": "Usain Bolt's 9.58 s over 100 m in Berlin on 16 Aug 2009 and what limits human speed: stride, ground force, muscle fibres. Check the World Athletics record and peak speed of about 44.7 km/h.",
+   "hooks": [
+    "2009 Berlin mein Bolt ki top speed kitni thi?",
+    "Kya insaan 9.4 second tak pahunch sakta hai?"
+   ],
+   "weekly": true,
+   "topic_score": 3,
+   "topic_score_why": [
+    "+1 a choice the viewer faces",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "Record subject that follows the world-record hooks on the trending lists.",
+   "trend": true
+  },
+  "2026-12-07-sglearning-short": {
+   "id": "wk-2026-12-07-sglearning-short",
+   "title": "Ek gaana sunne par singer ko kitna milta hai?",
+   "summary": "Explains streaming payouts: per-stream rates, label and publisher splits, royalty pools. Check Spotify's Loud and Clear report and typical rates, which vary by country. Songs from India and the Gulf were on the chart.",
+   "hooks": [
+    "Spotify ek million streams par kitna deta hai?",
+    "Singer se pehle gaane ka paisa kis kis ko jaata hai?"
+   ],
+   "weekly": true,
+   "topic_score": 1,
+   "topic_score_why": [
+    "+1 asks a question"
+   ],
+   "follows": "Music videos filled the charts (Aachi Aachi 6.6M views, Babydoll 2.2M); the money angle is our own.",
+   "trend": true
+  },
+  "2026-12-08-sglearning-short": {
+   "id": "wk-2026-12-08-sglearning-short",
+   "title": "Cheque bounce hua to kya sach mein jail ho sakti hai?",
+   "summary": "Section 138, Negotiable Instruments Act: notice within 30 days, 15 days to pay, up to 2 years' jail or fine up to twice the amount. Check the current text and Supreme Court guidance on timelines.",
+   "hooks": [
+    "Cheque bounce ke baad pehle 30 din mein kya karna padta hai?",
+    "Bounce hone par seedha jail kyun nahi hoti?"
+   ],
+   "weekly": true,
+   "topic_score": 5,
+   "topic_score_why": [
+    "+1 touches the viewer's own money (in the summary)",
     "+1 a scare or a crash (in the summary)",
     "+1 a choice the viewer faces",
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Gives the week a positive science story. We pick a subject viewers rarely get plain-language explanations of.",
+   "follows": "A consumer scare tied to a court rule; a direct consumer fact opens strongest.",
    "trend": true
   },
-  "2026-12-09-sglearning-short": {
-   "id": "wk-2026-12-09-sglearning-short",
-   "title": "Nigerian prince wala email aaj bhi kyun chalta hai?",
-   "summary": "Advance-fee fraud has run since the 1990s and still works. The FBI IC3 report put total US cybercrime losses at about $16.6 billion in 2024. Explains why scammers keep the story obviously silly. Check the FBI figure.",
+  "2026-12-09-sglearning-long": {
+   "id": "wk-2026-12-09-sglearning-long",
+   "title": "Mutual fund ka return index se kam kyun aata hai?",
+   "summary": "Explains expense ratio, cash drag and tracking error with an actual index fund against its index. Check the fund factsheet and SEBI's expense limits. Offers a practical comparison, no stock tips.",
    "hooks": [
-    "Itna purana email scam, phir bhi 2024 mein 16.6 billion dollar ka nuksan kaise hua?",
-    "Scammer jaanbujhkar bewakoofi bhari kahani kyun likhte hain?"
+    "Nifty 12% de to aapka fund 11.2% kyun deta hai?",
+    "Expense ratio ka 0.2% bhi 20 saal mein kitna hota hai?"
    ],
    "weekly": true,
    "topic_score": 5,
    "topic_score_why": [
-    "+3 a scare or a crash",
+    "+3 touches the viewer's own money",
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Scam subject from the brief, worldwide. Opens with a dated fact with a number.",
+   "follows": "Founder's tool suggested it; follows our best-held finance angle.",
+   "spare": true,
+   "trend": true
+  },
+  "2026-12-09-sglearning-short": {
+   "id": "wk-2026-12-09-sglearning-short",
+   "title": "Starlink bina tower ke internet kaise deta hai?",
+   "summary": "Explains low-earth-orbit satellites around 550 km, ground stations and user dishes. Check altitude, satellite count (SpaceX) and latency against geostationary satellites at about 35,786 km.",
+   "hooks": [
+    "550 km upar ke satellite se internet kitni der mein aata hai?",
+    "Purane satellite internet se ye alag kyun hai?"
+   ],
+   "weekly": true,
+   "topic_score": 2,
+   "topic_score_why": [
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "Technology subject with worldwide interest; counterintuitive-question hook.",
    "trend": true
   },
   "2026-12-10-sglearning-short": {
    "id": "wk-2026-12-10-sglearning-short",
-   "title": "Antibiotic ka course aadhe mein chhodna sach mein galat hai?",
-   "summary": "The 'always finish the course' rule is now questioned. A 2017 BMJ article argued that shorter courses can work, and WHO links resistance to overuse. Check the BMJ source, and say clearly to follow the doctor's advice.",
+   "title": "Tulip bubble mein log sach mein barbaad hue the?",
+   "summary": "Dutch tulip mania, peak in Feb 1637. Modern historians such as Anne Goldgar argue the ruin was exaggerated. Check her research and the contract-price records. Corrects what most people believe about the first bubble.",
    "hooks": [
-    "Doctor kehte hain course poora karo, par BMJ ne 2017 mein kya sawal uthaya?",
-    "Antibiotic resistance se kitne log marte hain, aur galti kiski hai?"
+    "Feb 1637 mein ek tulip ka daam kitna tha?",
+    "Kya tulip bubble ki kahani adhi jhooth hai?"
    ],
    "weekly": true,
-   "topic_score": 3,
+   "topic_score": 7,
    "topic_score_why": [
-    "+1 a choice the viewer faces",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "follows": "Health slot, with a consumer-benefit hook and a common belief to correct. Held viewers best in similar formats.",
-   "trend": true
-  },
-  "2026-12-11-sglearning-short": {
-   "id": "wk-2026-12-11-sglearning-short",
-   "title": "Australia ne 16 se kam umar ke liye social media band kiya, ek saal baad kya hua?",
-   "summary": "Australia's under-16 social media minimum age law began on 10 Dec 2025. Check the eSafety Commissioner's account removal numbers, the fines of up to A$49.5 million and the review. Neutral on politics.",
-   "hooks": [
-    "Australia ne 10 December 2025 ko bacchon ka social media band kiya, aur kitne account hate?",
-    "Jis kanoon ki duniya nakal kar rahi hai, wo ek saal mein kitna chala?"
-   ],
-   "weekly": true,
-   "topic_score": 6,
-   "topic_score_why": [
+    "+1 touches the viewer's own money (in the summary)",
     "+3 a scare or a crash",
     "+1 a choice the viewer faces",
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Court order and law subject from the brief, with a worldwide audience. Anniversary falls on 10 Dec.",
+   "follows": "A history story with a dated opening fact; the 'what people got wrong' angle; links to the crash stories viewers watch.",
    "trend": true
   },
-  "2026-12-12-sglearning-long": {
-   "id": "wk-2026-12-12-sglearning-long",
-   "title": "Chocolate itni mehengi kyun hui, cocoa ke daam ko kya hua?",
-   "summary": "Cocoa futures passed $12,000 a tonne in Dec 2024 after poor West African harvests in Ivory Coast and Ghana. Explains disease, weather, farmer prices and how chocolate makers respond. Check current prices and the ICCO data.",
+  "2026-12-11-sglearning-short": {
+   "id": "wk-2026-12-11-sglearning-short",
+   "title": "8 ghante ki neend ka niyam kahan se aaya?",
+   "summary": "Sleep need varies by age; adults are advised about 7 or more hours by the AASM and Sleep Research Society. Check the guidelines and the 'two sleeps' history claim by Roger Ekirch. Corrects the 8-hour myth.",
    "hooks": [
-    "Cocoa ka bhav 2024 mein 12,000 dollar per tonne paar kar gaya, aisa pehle kabhi nahi hua tha?",
-    "Chocolate ka daam kyun badha, aur kisan ko kitna mila?"
-   ],
-   "weekly": true,
-   "topic_score": 4,
-   "topic_score_why": [
-    "+1 touches the viewer's own money (in the summary)",
-    "+1 a choice the viewer faces",
-    "+1 a concrete number",
-    "+1 asks a question"
-   ],
-   "follows": "Price shock is a listed subject and a global consumer story. Connects with this week's commodity theme (gold) without repeating it.",
-   "trend": true
-  },
-  "2026-12-16-sglearning-long": {
-   "id": "wk-2026-12-16-sglearning-long",
-   "title": "Y2K bug: kya sach mein duniya khatre mein thi?",
-   "summary": "Explains the 1999-2000 date bug where two-digit years could break computers. Global spending is estimated at $300-600 billion. Check the estimate, the real failures and the argument that the fixing effort is why little went wrong.",
-   "hooks": [
-    "Duniya ne Y2K par 300 se 600 billion dollar kharch kiye, to kya wo sab bekaar tha?",
-    "31 December 1999 ki raat kuch toota kyun nahi?"
+    "Adults ko asli mein kitne ghante neend chahiye?",
+    "Kya pehle log do hisson mein sote the?"
    ],
    "weekly": true,
    "topic_score": 3,
@@ -291,16 +320,242 @@
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "A strange true tech story with a clear counter-intuitive question, suited to ten minutes. Links to this week's AI and tech theme.",
+   "follows": "Health myth with a broad worldwide audience.",
+   "spare": true,
    "trend": true
+  },
+  "2026-12-12-sglearning-long": {
+   "id": "wk-2026-12-12-sglearning-long",
+   "title": "Gukesh ne 18 saal mein world champion banke kya badla?",
+   "summary": "Tells the road to the World Championship: Gukesh's Dec 2024 win in Singapore over Ding Liren at 18, how a match is played and what happens in the 2026 title match. Check the current score and results on FIDE.",
+   "hooks": [
+    "12 Dec 2024 ko Singapore mein kya hua tha?",
+    "Sabse kam umar ka champion banne ka matlab kya hai?"
+   ],
+   "weekly": true,
+   "topic_score": 4,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
+    "+1 a choice the viewer faces",
+    "-2 company results or deals (in the summary)",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "Chess World Championship drew 2.2M views; a long slot gives it context.",
+   "trend": true
+  },
+  "2026-12-16-sglearning-long": {
+   "id": "wk-2026-12-16-sglearning-long",
+   "title": "Ek film ka box office aur asli munafa ek kyun nahi?",
+   "summary": "Explains gross versus net: the theatre share, marketing, distributor cuts and streaming windows, using Avengers films as the case. Check Endgame's gross, budget and the typical theatre split (Box Office Mojo, The Numbers). Release 18 Dec.",
+   "hooks": [
+    "Gross 2.8 billion dollar mein studio ke haath kitna aata hai?",
+    "Film ke 100 rupaye mein theatre kitna rakhta hai?"
+   ],
+   "weekly": true,
+   "topic_score": 2,
+   "topic_score_why": [
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "Placed two days before the 18 Dec release of Avengers: Doomsday, the biggest trailer on the chart.",
+   "trend": true
+  },
+  "2026-11-28-arthvan-short": {
+   "id": "wk-2026-11-28-arthvan-short",
+   "title": "Napoleon sach mein chhote kad ke the?",
+   "summary": "Napoleon ki height ka kissa. Check karein: autopsy mein 5 foot 2 French inches, jo lagbhag 5'6-5'7 modern inches hai, aur British cartoons (Gillray) ne 'Little Boney' image kaise banayi.",
+   "hooks": [
+    "Napoleon Bonaparte ki height us zamane ke aam French aadmi jitni thi, chhoti nahi.",
+    "Ek British cartoonist ne Napoleon ko duniya bhar mein baauna bana diya, kaise?"
+   ],
+   "weekly": true,
+   "topic_score": 7,
+   "topic_score_why": [
+    "+3 a widely held belief and its reason",
+    "+3 a shock question or a mystery",
+    "+1 asks a question"
+   ],
+   "follows": "Famous name plus shock fact, opened as a stated fact. Non-India myth, new theme for the week.",
+   "viral": true,
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
+   ]
+  },
+  "2026-11-29-arthvan-long": {
+   "id": "wk-2026-11-29-arthvan-long",
+   "title": "Japan mein Saraswati aur Lakshmi kaise pahunchi: Benzaiten aur Kichijoten ki kahani?",
+   "summary": "Japan ke Benzaiten (Saraswati), Kichijoten (Lakshmi), Daikokuten (Mahakala) ki yatra. Check: Buddhist sutras, Silk Road, Enoshima shrine, Nara-period records. Saath mein 1993 ki Japani Ramayana film (Yugo Sako) ka sach.",
+   "hooks": [
+    "Japan ke Enoshima mein aaj bhi Saraswati ki puja hoti hai, par naam alag hai.",
+    "Japan ne Ramayana par film 1993 mein banayi thi, aur Bharat ke saath milkar."
+   ],
+   "weekly": true,
+   "topic_score": 11,
+   "topic_score_why": [
+    "+4 one of the most-watched names",
+    "+3 a shock question or a mystery",
+    "+2 an untold angle",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "Japan-Ramayana hook is pulling about 10M views. Gives an untold India-Japan angle, outside India.",
+   "viral": true,
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
+   ]
+  },
+  "2026-11-29-arthvan-short": {
+   "id": "wk-2026-11-29-arthvan-short",
+   "title": "Hum apne dimaag ka sirf 10 percent use karte hain?",
+   "summary": "10 percent brain myth. Check: fMRI/PET scans dikhate hain din bhar poore dimaag mein activity; nuksan ka asar kisi bhi hisse mein; myth ka source 1900s self-help books.",
+   "hooks": [
+    "Aapka poora dimaag aaj raat sote hue bhi kaam kar raha hai.",
+    "Film Lucy ne jo 10 percent kaha, woh vigyan mein kabhi sabit nahi hua."
+   ],
+   "weekly": true,
+   "topic_score": 5,
+   "topic_score_why": [
+    "+3 a widely held belief and its reason",
+    "+1 a concrete number",
+    "+1 asks a question"
+   ],
+   "follows": "Human body slot, widely believed, short and checkable. Myth-vs-fact food/health shorts get strong views.",
+   "viral": true,
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
+   ]
+  },
+  "2026-11-30-arthvan-short": {
+   "id": "wk-2026-11-30-arthvan-short",
+   "title": "Tutankhamun ka shraap Lord Carnarvon ki jaan le gaya?",
+   "summary": "Carnarvon ki maut April 1923 mein blood poisoning se hui, ek mosquito bite kati hone ke baad. Check: Howard Carter 1939 tak jiye, tomb mein koi curse inscription nahi mila, press stories ne kahani banayi.",
+   "hooks": [
+    "Lord Carnarvon ki maut ek kati hui mosquito bite se hui thi, shraap se nahi.",
+    "Tutankhamun ke maqbare par koi curse likha hi nahi mila."
+   ],
+   "weekly": true,
+   "topic_score": 2,
+   "topic_score_why": [
+    "-2 no famous name",
+    "+3 a shock question or a mystery",
+    "+1 asks a question"
+   ],
+   "follows": "Egypt myth with a famous name; follows the haunted-story pull (Annabelle). Outside India.",
+   "viral": true,
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
+   ]
+  },
+  "2026-12-02-arthvan-short": {
+   "id": "wk-2026-12-02-arthvan-short",
+   "title": "Abhimanyu ne chakravyuh maa ke garbh mein seekha tha?",
+   "summary": "Mahabharata ki kahani. Check: Drona Parva mein Abhimanyu ko vyuh todna aata tha par nikalna nahi; garbh mein sunne wali katha kis text ya lok-parampara mein aati hai, ye alag batayein.",
+   "hooks": [
+    "Abhimanyu chakravyuh mein ghus gaya par nikalna nahi jaanta tha, ye Mahabharata likhti hai.",
+    "Garbh mein seekhne wali baat Vyasa ke text mein kitni purani hai?"
+   ],
+   "weekly": true,
+   "topic_score": 6,
+   "topic_score_why": [
+    "+4 one of the most-watched names",
+    "+1 an untold angle (in the summary)",
+    "+1 asks a question"
+   ],
+   "follows": "Epic hook with named hero, stated as fact; Mahabharata variety after Ramayana-heavy weeks.",
+   "viral": true,
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
+   ]
+  },
+  "2026-12-03-arthvan-long": {
+   "id": "wk-2026-12-03-arthvan-long",
+   "title": "Vikings ke sar par seeng wale helmet kyun dikhaye jaate hain?",
+   "summary": "Viking myths: horned helmets (1876 Wagner opera costumes), Valhalla, berserkers, Ragnarok. Check: Gjermundbu helmet (no horns), sagas by Snorri Sturluson (13th c.), Oseberg ship burial, Ibn Fadlan account.",
+   "hooks": [
+    "Kisi Viking ke helmet par seeng kabhi nahi mile, ek opera ne ye image banayi.",
+    "Vikings ka swarg Valhalla sirf yoddhaon ke liye tha, aur uska source ek Iceland ka writer hai."
+   ],
+   "weekly": true,
+   "topic_score": 7,
+   "topic_score_why": [
+    "+3 a widely held belief and its reason",
+    "+3 a shock question or a mystery",
+    "+1 asks a question"
+   ],
+   "follows": "Worldwide mix: Norse myth with a shock fact. Long video with climax in first 15 seconds as advised.",
+   "viral": true,
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
+   ]
   },
   "2026-12-04-arthvan-short": {
    "id": "wk-2026-12-04-arthvan-short",
-   "title": "Vikings ke helmet par sing sach mein hote the?",
-   "summary": "Popular image: horned Viking helmets. Check: Gjermundbu helmet (Norway, c. 970) has no horns; the image comes from Carl Emil Doepler's 1876 Wagner opera costumes. Show finds beside the stage designs.",
+   "title": "Ostrich khatre mein ret mein sir kyun chhupata hai?",
+   "summary": "Animal myth: ostrich sir nahi chhupata. Check: wo ret mein ande palatne ke liye sir neeche karta hai, door se sir ret mein dabta dikhta hai, 70 km/h tak daud sakta hai; Pliny the Elder ka ullekh.",
    "hooks": [
-    "Viking helmet ke sing 1876 ke ek opera ne lagaye the, kya aapko pata tha?",
-    "Norway mein mila asli Viking helmet dekha hai, usme sing kahan hain?"
+    "Ostrich kabhi ret mein sir nahi chhupata, Pliny ne 2000 saal pehle galat likha.",
+    "Khatre mein ostrich 70 km/h bhagta hai."
    ],
    "weekly": true,
    "topic_score": 8,
@@ -310,7 +565,7 @@
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Worldwide myth with a famous name; fact-with-source opening and a ~60 s single reveal, as in the Surpanakha short.",
+   "follows": "Animal myth, stated as fact. Follows pet-animal hooks pulling millions.",
    "viral": true,
    "allowed_sources": [
     "asi.nic.in",
@@ -328,20 +583,20 @@
   },
   "2026-12-05-arthvan-short": {
    "id": "wk-2026-12-05-arthvan-short",
-   "title": "Drona ne Ekalavya ka angootha kyun maanga?",
-   "summary": "Adi Parva tells that Drona asked Ekalavya's right thumb as guru-dakshina. Check the Critical Edition text, what reason the text gives (Arjuna's promise), and later retellings and views. Told with respect.",
+   "title": "Marco Polo China se pasta Italy laya tha?",
+   "summary": "Pasta ki kahani. Check: Sicily mein 12th century al-Idrisi ka itriyya zikr, Genoa 1279 ki list mein macaroni, Marco Polo 1295 mein laute. Myth 1920s ki American trade magazine se.",
    "hooks": [
-    "Mahabharat ka Adi Parva kholo, Drona ne Ekalavya se seedha angootha maanga.",
-    "Ekalavya ne bina soche angootha de diya, par text mein Drona ka karan kya likha hai?"
+    "Italy mein pasta Marco Polo ke lautne se pehle ka likha hua mil jata hai.",
+    "Genoa ke ek dastavez mein 1279 mein hi macaroni ka naam hai."
    ],
    "weekly": true,
-   "topic_score": 8,
+   "topic_score": 5,
    "topic_score_why": [
-    "+4 one of the most-watched names",
-    "+3 a shock question or a mystery",
+    "+3 a widely held belief and its reason",
+    "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Famous name plus shock stated as a fact with source; Indian epic, not Ramayan, so it breaks the Ramayan run.",
+   "follows": "Food myth, outside India; food hooks perform well in the lists.",
    "viral": true,
    "allowed_sources": [
     "asi.nic.in",
@@ -359,20 +614,21 @@
   },
   "2026-12-06-arthvan-long": {
    "id": "wk-2026-12-06-arthvan-long",
-   "title": "Tutankhamun ka shraap: Lord Carnarvon ki maut ka asli sach kya tha?",
-   "summary": "1922 Carter opens the tomb; Carnarvon dies in April 1923. Check: death from an infected mosquito bite and pneumonia, the press frenzy, the 'curse' inscription not found, and how long others on the dig lived. Egyptian beliefs about tombs told respectfully.",
+   "title": "Jagannath ji ki murti har 12-19 saal mein kyun badli jaati hai?",
+   "summary": "Nabakalebara ki rasm, daru brahma neem log ki khoj, Indradyumna katha. Check: Puri temple records, 1996 aur 2015 ke Nabakalebara dates, adhik ashadha ka hisaab, aur kitni rasm gupt hai, kitni documented.",
    "hooks": [
-    "Tomb kholne ke chaar mahine baad Lord Carnarvon mar gaye, kya yeh shraap tha?",
-    "Tutankhamun ke mazaar par shraap likha tha, kya yeh sach hai?"
+    "Puri mein Jagannath ji ka sharir har 12 se 19 saal mein naya ban jata hai.",
+    "Is rasm ki date kaise tay hoti hai? Ye hisaab Hindu calendar se aata hai."
    ],
    "weekly": true,
-   "topic_score": 7,
+   "topic_score": 9,
    "topic_score_why": [
-    "+3 a widely held belief and its reason",
+    "+4 one of the most-watched names",
     "+3 a shock question or a mystery",
+    "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Name everyone knows, an untold angle (newspaper-made curse); ~11-minute long opening at the paradox; outside India.",
+   "follows": "Jagannath murti change pulled 309k views in a Short last week. Respectful deep telling for the long slot.",
    "viral": true,
    "allowed_sources": [
     "asi.nic.in",
@@ -390,20 +646,21 @@
   },
   "2026-12-06-arthvan-short": {
    "id": "wk-2026-12-06-arthvan-short",
-   "title": "Gajar khane se raat mein aankhein tez hoti hain, yeh kisne phailaya?",
-   "summary": "Belief: carrots give night vision. Check: Vitamin A matters only for deficiency; RAF in WWII spread the story to hide radar use (ace John Cunningham). Cite 1940s British Ministry of Food posters.",
+   "title": "Chand mein khargosh kyun dikhta hai, Bharat se Mexico tak?",
+   "summary": "Moon rabbit: Jataka katha, China ka Jade Rabbit, Aztec Mayahuel kahani. Check: dark basalt maria ka pattern, pareidolia, kahaniyan alag-alag sanskritiyon mein.",
    "hooks": [
-    "Britain ne gajar ka jhooth radar chhupane ke liye phailaya tha.",
-    "Pilot John Cunningham ko 'gajar wale' kyun kaha gaya?"
+    "Bharat, China aur Aztec, teen alag desh chand mein khargosh dekhte the.",
+    "Chand ka daag basalt ka bana hai, aur kahani Jataka mein hai."
    ],
    "weekly": true,
-   "topic_score": 7,
+   "topic_score": 4,
    "topic_score_why": [
-    "+3 a widely held belief and its reason",
+    "-2 no famous name",
     "+3 a shock question or a mystery",
+    "+2 an untold angle",
     "+1 asks a question"
    ],
-   "follows": "Food myth from outside India with a surprising untold angle (wartime propaganda); fits food and body slot types.",
+   "follows": "Sky myth that connects India with the world, simple stated fact.",
    "viral": true,
    "allowed_sources": [
     "asi.nic.in",
@@ -421,11 +678,11 @@
   },
   "2026-12-07-arthvan-short": {
    "id": "wk-2026-12-07-arthvan-short",
-   "title": "Jagannath ji ki murti badalte waqt sach mein aankhon par patti baandhte hain?",
-   "summary": "Nabakalebara in Puri: idols replaced in years with an extra Ashadha month (gaps of 8, 12 or 19 years; last in 2015). Check Odisha temple records, the daitapati rites, and what is publicly documented versus kept secret.",
+   "title": "Ram Setu ke patthar paani par kaise tairte the?",
+   "summary": "Ram Setu. Check: Valmiki Yuddha Kanda mein Nala ka setu banana, pumice stone ka tairna, NASA 2002 images mein limestone shoals ki chain, Adam's Bridge ka geology, Archaeological Survey ki sthiti.",
    "hooks": [
-    "Puri mein Jagannath ji ka sharir har 12 se 19 saal mein badal diya jaata hai.",
-    "Nabakalebara 2015 mein hua tha, agla kab hoga aur kyun itna lamba gap?"
+    "Ramayana kehti hai Nala ne 5 din mein samundar par setu banaya.",
+    "Pumice patthar sach mein paani par tairta hai, par Ram Setu ke patthar kaunse hain?"
    ],
    "weekly": true,
    "topic_score": 9,
@@ -435,7 +692,7 @@
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Jagannath idols short took off this week (288k views); we add the dated calendar rule instead of a vague mystery.",
+   "follows": "Ram Setu pulled 228k views as a Short; the angle is the rock evidence.",
    "viral": true,
    "allowed_sources": [
     "asi.nic.in",
@@ -453,21 +710,22 @@
   },
   "2026-12-08-arthvan-short": {
    "id": "wk-2026-12-08-arthvan-short",
-   "title": "Shuturmurg khatre mein sach mein ret mein sir chhupata hai?",
-   "summary": "Belief: ostrich buries its head in sand. Check: Pliny the Elder's writing, what ostriches really do (lie flat, turn eggs in nest holes), and zoologists' observations. Source the origin of the saying.",
+   "title": "Chinese zodiac mein billi kyun nahi hai?",
+   "summary": "Jade Emperor ki race katha: Rat ne billi ko dhokha diya. Check: 12 jaanwar ki list Han dynasty tak likhit, Vietnam ke zodiac mein billi hai, kahani ke alag versions.",
    "hooks": [
-    "Shuturmurg ka ret mein sir chhupana, Pliny the Elder ne 2000 saal pehle likha tha.",
-    "Shuturmurg asal mein ret mein kya karta hai?"
+    "Chinese calendar mein 12 jaanwar hain aur billi ko Rat ne dhokha diya.",
+    "Vietnam ke zodiac mein billi hai, China mein nahi."
    ],
    "weekly": true,
-   "topic_score": 8,
+   "topic_score": 4,
    "topic_score_why": [
-    "+3 a widely held belief and its reason",
+    "-2 no famous name",
     "+3 a shock question or a mystery",
+    "+1 an untold angle (in the summary)",
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Animal myth from outside India; one sharp question for a Short, placed after a temple day.",
+   "follows": "China custom myth, a name everyone knows (the zodiac). Different theme from sky and animals earlier.",
    "viral": true,
    "allowed_sources": [
     "asi.nic.in",
@@ -485,21 +743,21 @@
   },
   "2026-12-09-arthvan-short": {
    "id": "wk-2026-12-09-arthvan-short",
-   "title": "Friday 13 ko ashubh kyun maana jaata hai?",
-   "summary": "Fear of 13 (triskaidekaphobia). Check: Last Supper story, Knights Templar arrests on Friday 13 Oct 1307 (a popular claim, weakly sourced), and when the two ideas actually merged in the 19th-20th century.",
+   "title": "13 number manhus kyun mana jata hai?",
+   "summary": "Friday the 13th aur 13th floor. Check: Knights Templar 13 Oct 1307 ki theory ka koi pakka link nahi, Last Supper ke 13 log, Norse Loki ki katha, 1907 ka novel Thirteen at table, hotels mein 13th floor nahi.",
    "hooks": [
-    "Friday 13 ka darr Templar knights se joda jaata hai, par kya yeh sach hai?",
-    "Kuch building mein 13th floor hota hi nahi, kyun?"
+    "Duniya ki bahut si buildings mein 13th floor hota hi nahi.",
+    "Friday the 13th ka darr Templars se jodna ek andaza hai, sabut nahi."
    ],
    "weekly": true,
-   "topic_score": 8,
+   "topic_score": 3,
    "topic_score_why": [
-    "+3 a widely held belief and its reason",
+    "-2 no famous name",
     "+3 a shock question or a mystery",
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Number myth known worldwide; shock question with checkable origins; Nov 2026 had a Friday 13 so it is familiar.",
+   "follows": "Number myth, as the brief allows; global superstition.",
    "viral": true,
    "allowed_sources": [
     "asi.nic.in",
@@ -517,21 +775,20 @@
   },
   "2026-12-10-arthvan-long": {
    "id": "wk-2026-12-10-arthvan-long",
-   "title": "Kumbh Mela amrit ki boondon se shuru hua, par itihaas kya kehta hai?",
-   "summary": "Samudra manthan in Puranas, the four sites, earliest historical Kumbh references (Xuanzang 7th century, Akhara records). Separate textual story from documented mela history.",
+   "title": "Troy ka Trojan Horse sach mein tha?",
+   "summary": "Homer ki Iliad mein ghoda nahi hai, Odyssey aur Virgil ki Aeneid mein hai. Check: Schliemann ki khudai Hisarlik mein, Troy VIIa ki jali parat, Hittite records mein Wilusa.",
    "hooks": [
-    "Kumbh ka amrit kalash katha aur Kumbh ka likhit itihaas, dono alag kahaniyan hain.",
-    "Xuanzang ne Prayag mein kya dekha tha?"
+    "Iliad mein Trojan Horse ka zikr hi nahi hai.",
+    "Turkey mein aaj bhi Troy ke khandhar hain, par ghode ka koi nishan nahi."
    ],
    "weekly": true,
-   "topic_score": 1,
+   "topic_score": 7,
    "topic_score_why": [
-    "-2 no famous name",
-    "+2 an untold angle",
+    "+3 a widely held belief and its reason",
+    "+3 a shock question or a mystery",
     "+1 asks a question"
    ],
-   "follows": "Large India topic, deep telling for a long video with evidence laid beside belief.",
-   "spare": true,
+   "follows": "Epic myth from outside India, a name everyone knows; untold angle of what the epic omits.",
    "viral": true,
    "allowed_sources": [
     "asi.nic.in",
@@ -549,21 +806,20 @@
   },
   "2026-12-10-arthvan-short": {
    "id": "wk-2026-12-10-arthvan-short",
-   "title": "Medusa pehle sundar thi aur Athena ne shraap diya, yeh kahan likha hai?",
-   "summary": "Check Ovid's Metamorphoses (c. 8 CE) versus Hesiod's earlier Gorgon Medusa as a born monster. Compare how the beautiful-victim version appears only in later Latin retelling.",
+   "title": "Mumbai ka naam Mumba Devi se aaya ya Portuguese se?",
+   "summary": "Mumbadevi mandir aur Koli samuday. Check: mandir 1737 mein Bori Bunder se Bhuleshwar shift hua, Portuguese Bombaim, 1995 mein naam badla, Mumba Devi ki katha mein rakshas ka ullekh.",
    "hooks": [
-    "Hesiod ki Theogony kholo, Medusa janm se Gorgon thi.",
-    "Medusa ko sundar ladki Ovid ne banaya, 700 saal baad."
+    "Mumbai ka naam Koli logon ki devi Mumba Devi se juda hai.",
+    "Mumba Devi ka mandir 1737 mein apni jagah se hataya gaya tha."
    ],
    "weekly": true,
-   "topic_score": 3,
+   "topic_score": 0,
    "topic_score_why": [
     "-2 no famous name",
-    "+3 a shock question or a mystery",
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Greek myth with famous name and source-stated shock; outside India; different theme from the temple long on the same day.",
+   "follows": "Mumba Devi Short pulled 116k views; city myth with records.",
    "viral": true,
    "allowed_sources": [
     "asi.nic.in",
@@ -581,11 +837,11 @@
   },
   "2026-12-11-arthvan-short": {
    "id": "wk-2026-12-11-arthvan-short",
-   "title": "Hum dimaag ka sirf 10 percent use karte hain, yeh kisne kaha?",
-   "summary": "Check: brain imaging shows activity across the whole brain; origins in early 1900s self-help quotes (William James) and misreadings. Explain what 10 percent actually misread (glial cells or active neurons).",
+   "title": "Great Zimbabwe ko afrikiyon ne nahi banaya tha, ye kisne kaha?",
+   "summary": "Great Zimbabwe ke khandhar. Check: 19th century ke yatri ne Queen of Sheba se joda, 1905 mein Randall-MacIver aur 1929 mein Gertrude Caton-Thompson ne dikhaya ki Shona logon ne banaya, 11th-15th century.",
    "hooks": [
-    "Imaging scan mein dimaag ka koi hissa hamesha band nahi milta.",
-    "10 percent wali baat ek self-help quote se shuru hui."
+    "Great Zimbabwe ko 19th century mein Queen of Sheba ka mahal bataya gaya tha.",
+    "Khudai ne 1900s mein hi sabit kiya ki Africa ke logon ne ise banaya."
    ],
    "weekly": true,
    "topic_score": 3,
@@ -595,7 +851,7 @@
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Body myth, worldwide, short question; keeps the week mixed.",
+   "follows": "Africa monument myth, an untold angle on a monument; stays factual and respectful.",
    "viral": true,
    "allowed_sources": [
     "asi.nic.in",
@@ -613,20 +869,21 @@
   },
   "2026-12-13-arthvan-long": {
    "id": "wk-2026-12-13-arthvan-long",
-   "title": "Japan mein Ramayana: Hanuman aur Sita ki kahani wahan kaise pahunchi?",
-   "summary": "Trace the story from Buddhist Jataka-type tales to Hobutsushu (c. 1177) by Taira no Yasuyori, and the 1993 anime. Check manuscripts and what changed. Treat both traditions respectfully.",
+   "title": "Maya calendar ne 2012 mein duniya ka ant kyun bataya tha?",
+   "summary": "2012 prophecy. Check: Long Count ka 13th b'ak'tun 21 Dec 2012 ko poora hua, Tortuguero Monument 6, Maya log naya chakra maante the, Dresden Codex, NASA ki safai.",
    "hooks": [
-    "Bollywood se pehle Japan ne Ramayana ki kahani sunayi thi.",
-    "Japan ki Hobutsushu mein Ram ki kahani kaise badal gayi?"
+    "Maya calendar 2012 mein khatam nahi hua, naya chakra shuru hua.",
+    "Duniya ke ant ka darr ek tootay hue patthar ki line se bana."
    ],
    "weekly": true,
-   "topic_score": 8,
+   "topic_score": 3,
    "topic_score_why": [
-    "+4 one of the most-watched names",
+    "-2 no famous name",
     "+3 a shock question or a mystery",
+    "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Japan-Ramayana short pulled about 10M views; our long goes deeper with texts and dates, mixing India and Japan.",
+   "follows": "Americas myth, scare plus a name everyone knows, strong for a long with a paradox open.",
    "viral": true,
    "allowed_sources": [
     "asi.nic.in",
@@ -644,11 +901,11 @@
   },
   "2026-12-17-arthvan-long": {
    "id": "wk-2026-12-17-arthvan-long",
-   "title": "Bermuda Triangle mein jahaz sach mein gayab hote hain?",
-   "summary": "Vincent Gaddis 1964 article, Flight 19 (1945), Cyclops (1918). Check Lloyd's and Coast Guard loss records, weather logs, Larry Kusche's 1975 research showing the area is not unusually deadly.",
+   "title": "Atlantis sach mein tha ya Plato ki kahani?",
+   "summary": "Plato ke Timaeus aur Critias (360 BCE) mein Atlantis. Check: Santorini ka Minoan vishfot, Ignatius Donnelly 1882, koi khudai ka sabut nahi, Plato ne kahani ka maksad.",
    "hooks": [
-    "Bermuda Triangle ka naam 1964 ke ek magazine article se aaya.",
-    "Lloyd's ke records mein is ilake mein hadse baaki samundron se zyada nahi hain."
+    "Atlantis ka zikr sirf Plato ke do likhe hue dialogues mein milta hai.",
+    "Santorini ka vishfot 1600 BCE mein hua, par Atlantis ka naam usme nahi."
    ],
    "weekly": true,
    "topic_score": 8,
@@ -658,7 +915,8 @@
     "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Famous name with a fresh contradiction; long opening at the paradox; outside India.",
+   "follows": "Lost-city mystery everyone knows; fresh angle on who first wrote it.",
+   "spare": true,
    "viral": true,
    "allowed_sources": [
     "asi.nic.in",
@@ -676,23 +934,24 @@
   }
  },
  "notes": [
-  "2026-12-04-sglearning-short: proposal 'Sone ke daam gire, phir bhi central bank sona kyun' dropped (repeat)",
-  "2026-12-10-arthvan-long: proposal 'Konark ke Sun Temple ke upar chumbak tha jisse jah' dropped (repeat)"
+  "2026-12-09-sglearning-long: proposal 'No-Cost EMI sach mein free hota hai?' dropped (repeat)",
+  "2026-12-11-sglearning-short: proposal 'Sugar-free cheezein sach mein safe hain?' dropped (repeat)",
+  "2026-12-17-arthvan-long: proposal 'Kya Mahabharata sach mein hua tha? Kurukshetra aur' dropped (repeat)"
  ],
  "signals": {
   "sglearning": [
-   "60,834,489 Avengers: Doomsday | Final Trailer | In Theaters December 18",
-   "12,143,583 TREASURE HUNTING IN THE OCEAN GONE WRONG! | GTA 6 GAMEPLAY #4",
-   "5,817,163 Aachi Aachi Lyric | Inji Vellam | Mani Ratnam| A.R.Rahman| Vijay Sethu",
-   "5,517,921 Decode : सोने की गिरावट पर सबसे बड़ा विश्लेषण | Sudhir Chaudhary | Why",
-   "5,223,882 Don't Do That"
+   "64,094,488 Avengers: Doomsday | Final Trailer | In Theaters December 18",
+   "6,598,136 Aachi Aachi Lyric | Inji Vellam | Mani Ratnam| A.R.Rahman| Vijay Sethu",
+   "5,579,518 Decode : सोने की गिरावट पर सबसे बड़ा विश्लेषण | Sudhir Chaudhary | Why",
+   "5,186,176 O Saathi Re | Official Trailer | Aditi R. Hydari, Arjun Rampal & Avina",
+   "5,118,614 Decode: इतनी तेजी से क्यों गिर रहे सोने के दाम? | Sudhir Chaudhary | G"
   ],
   "arthvan": [
-   "16,397,277 इस दुनिया में होमवर्क की ड्राइंग आधी रात को सच बन जाती थी! 😱 लेकिन एक ",
-   "13,081,092 World’s Most HAUNTED Doll | Real Story of Annabelle | Dhruv Rathee",
-   "9,998,679 Japan Made Ramayana Before Bollywood! 😳",
-   "7,373,180 केदारनाथ का वो रहस्य, जो कम लोग जानते हैं!#Kedarnath #KedarnathDham #M",
-   "6,080,592 छठी मैया की कोई मूर्ति क्यों नहीं होती? 😱 | Why Chhathi Maiya Has No I"
+   "16,468,241 इस दुनिया में होमवर्क की ड्राइंग आधी रात को सच बन जाती थी! 😱 लेकिन एक ",
+   "13,417,404 World’s Most HAUNTED Doll | Real Story of Annabelle | Dhruv Rathee",
+   "10,094,470 Japan Made Ramayana Before Bollywood! 😳",
+   "6,083,120 छठी मैया की कोई मूर्ति क्यों नहीं होती? 😱 | Why Chhathi Maiya Has No I",
+   "5,091,984 दुनिया में पालतू जानवर खरीदने नहीं, चुराने पड़ते थे! 🥚😱 लेकिन इस बार अ"
   ]
  },
  "viral": {
@@ -700,84 +959,84 @@
    {
     "id": "Wb8Tq_HD4E8",
     "title": "Avengers: Doomsday | Final Trailer | In Theaters December 18",
-    "views": 60834489
-   },
-   {
-    "id": "Dz0naoD1QWo",
-    "title": "TREASURE HUNTING IN THE OCEAN GONE WRONG! | GTA 6 GAMEPLAY #4",
-    "views": 12143583
+    "views": 64094488
    },
    {
     "id": "hsrO7UK6b3E",
     "title": "Aachi Aachi Lyric | Inji Vellam | Mani Ratnam| A.R.Rahman| Vijay Sethupathi| Sai Pallavi| Subaskaran",
-    "views": 5817163
+    "views": 6598136
    },
    {
     "id": "Hlk24KkU8TQ",
     "title": "Decode : सोने की गिरावट पर सबसे बड़ा विश्लेषण | Sudhir Chaudhary | Why Gold Silver Crashing? | Rate",
-    "views": 5517921
+    "views": 5579518
    },
    {
-    "id": "9B1ljU7lv-E",
-    "title": "Don't Do That",
-    "views": 5223882
-   },
-   {
-    "id": "HNgA42FbG4w",
-    "title": "GTA 5 LIVE #gta5 #gtav #gaming #pajiislive",
-    "views": 5002919
+    "id": "ONcwarkfq90",
+    "title": "O Saathi Re | Official Trailer | Aditi R. Hydari, Arjun Rampal & Avinash Tiwary | Netflix India",
+    "views": 5186176
    },
    {
     "id": "bMgpJQryce8",
     "title": "Decode: इतनी तेजी से क्यों गिर रहे सोने के दाम? | Sudhir Chaudhary | Gold Silver Price Crash Today",
-    "views": 4990258
+    "views": 5118614
    },
    {
-    "id": "umDq3LY7sFA",
-    "title": "GTA 6 #2",
-    "views": 4878529
+    "id": "HNgA42FbG4w",
+    "title": "GTA 5 LIVE #gta5 #gtav #gaming #pajiislive",
+    "views": 5004394
+   },
+   {
+    "id": "xEtC_FwraNc",
+    "title": "PMGC 2026 | The Gauntlet Day 1 - WATCHPARTY WITH SNAX",
+    "views": 4727130
+   },
+   {
+    "id": "TlQNohBQBnU",
+    "title": "MY FIRST MISSION WITH LUCIA | GTA 6 GAMEPLAY #5",
+    "views": 4318743
    }
   ],
   "arthvan": [
    {
     "id": "lqjBjFLGGJ0",
     "title": "इस दुनिया में होमवर्क की ड्राइंग आधी रात को सच बन जाती थी! 😱 लेकिन एक लड़के की गलती ने पूरे शहर को",
-    "views": 16397277
+    "views": 16468241
    },
    {
     "id": "X7utxgBSWS4",
     "title": "World’s Most HAUNTED Doll | Real Story of Annabelle | Dhruv Rathee",
-    "views": 13081092
+    "views": 13417404
    },
    {
     "id": "Vom8cEs3v78",
     "title": "Japan Made Ramayana Before Bollywood! 😳",
-    "views": 9998679
-   },
-   {
-    "id": "4zfzYeYc50U",
-    "title": "केदारनाथ का वो रहस्य, जो कम लोग जानते हैं!#Kedarnath #KedarnathDham #Mahadev #SanatanDharma",
-    "views": 7373180
+    "views": 10094470
    },
    {
     "id": "iTVM-tT4a30",
     "title": "छठी मैया की कोई मूर्ति क्यों नहीं होती? 😱 | Why Chhathi Maiya Has No Idol? #shorts",
-    "views": 6080592
+    "views": 6083120
    },
    {
     "id": "B3OnnVC7on0",
     "title": "दुनिया में पालतू जानवर खरीदने नहीं, चुराने पड़ते थे! 🥚😱 लेकिन इस बार अंडे से निकला एक भयानक रहस्य! 👀",
-    "views": 5079697
+    "views": 5091984
    },
    {
     "id": "t7PObl9PSg8",
     "title": "1920 की सर्दी में लोग रजाई के बिना कैसे सोते थे? 100 साल पहले की सर्दी |",
-    "views": 4790349
+    "views": 4974556
    },
    {
     "id": "B8S5IMrAvrQ",
     "title": "This Ramayana Theory Will make You Speechless!🚩 | Jai Shree Ram 🙏| Part 2 | #ramayan #jaishreeram",
-    "views": 4558977
+    "views": 4592909
+   },
+   {
+    "id": "2l9KMoxMP30",
+    "title": "हमें आसमान से भगवान शेषनाग दिखाई क्यों नहीं देते? 😱 #facts",
+    "views": 3746692
    }
   ]
  }
