@@ -74,6 +74,11 @@
  ],
  "id": "2026-12-03-arthvan-short",
  "ids": {
+  "audit": {
+   "faults": 3,
+   "score": 8,
+   "verdict": "fix first"
+  },
   "budget": {
    "day": "2026-11-26",
    "drafts": 2,
@@ -86,6 +91,12 @@
   },
   "drafts": 2,
   "ig_story_id": "skipped: Reel over 60 s",
+  "intro": {
+   "clip": "2026-12-03-arthvan-short.mp4",
+   "clip_seconds": 1,
+   "composed": "2026-11-27T18:53:40+00:00",
+   "seconds": 8.38
+  },
   "intro_checked": "e4583e58497c62d8",
   "intro_sent": "2026-11-26T23:00:03+00:00",
   "music": {
@@ -96,6 +107,11 @@
   "open_test": "picture",
   "out_sha": "e95790057940dc1a0d11c3685a2baa6fd3de1348",
   "out_sha_intro": true,
+  "scene_clips": [
+   1,
+   2,
+   3
+  ],
   "sound": "track",
   "watch": {
    "best_change": "Open on a striking image of chained slaves under a whip with the caption 'Jhooth?', so the myth being busted is visible in the first second instead of a generic pyramid.",
@@ -109,7 +125,8 @@
    2,
    8
   ],
-  "yt_deleted_by_founder": "0id2GZ2yd4Y"
+  "yt_deleted_by_founder": "0id2GZ2yd4Y",
+  "yt_id": "J1GwFvqzH2o"
  },
  "kind": "short",
  "publish_day": "2026-12-03",
@@ -313,7 +330,7 @@
   },
   "title": "Pyramid *gulamon* ne banaye the? 🤯"
  },
- "status": "voiced",
+ "status": "uploaded",
  "timings": [
   0.0,
   4.669,
@@ -408,6 +425,6 @@
   "voice": "voice_1kn3blc2u13l",
   "weekly": true
  },
- "updated": "2026-11-27T18:40:23+00:00",
+ "updated": "2026-11-27T18:54:23+00:00",
  "writer": "claude"
 }

@@ -1,0 +1,27 @@
+{
+ "score": 8,
+ "verdict": "fix first",
+ "faults": [
+  {
+   "at": 0,
+   "kind": "narration",
+   "what": "Script Line 1 ('Giza ke pyramid gulamon ne banaye? Kabron par likha kuch aur.') is not spoken; instead, an unscripted on-camera hook is delivered.",
+   "fix": "Record and include the intended opening script line or update the script to match the presenter hook."
+  },
+  {
+   "at": 67,
+   "kind": "captions",
+   "what": "Caption displays 'Par vidwan yahan bante hain' while the narrator says 'bat'te hain' (divided).",
+   "fix": "Correct the subtitle text from 'bante' to 'bat'te'."
+  },
+  {
+   "at": 8,
+   "kind": "sound",
+   "what": "Abrupt voice shift from the live presenter to a different deep documentary narrator without an acoustic bridge.",
+   "fix": "Smooth the audio transition between the host intro and the main narrator."
+  }
+ ],
+ "strongest": "The archaeological evidence sequence from 0:49 to 1:06 matching animal bone analysis and healed skeletal trauma to the script is exceptionally well synced and visually compelling.",
+ "weakest": "The opening skips the established script line entirely and shifts abruptly from an energetic host to a completely different voiceover at 0:08.",
+ "lines_heard": 11
+}
