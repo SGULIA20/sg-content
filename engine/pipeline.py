@@ -53,6 +53,7 @@ class Deps:
     voice_check: Callable = None # (wav) -> transcript: every voiced line is read back and re-made if spoken twice or cut short
     animate_card: Callable = None  # (data, index, total, roundup, seconds, size, out) -> mp4: the moving news card (2 Nov 2026)
     slot_holders: Callable = None  # (piece) -> [video ids]: videos already scheduled for this piece's slot (6 Nov 2026: one day, one video)
+    audit: Callable = None       # (piece, video) -> the full audit of the finished file, with its sound (engine/audit.py); report only
     intro_notify: Callable = None  # (text) -> None: set, the founder's 10-second avatar intro is asked for before every upload (engine/intro.py, 4 Nov 2026)
     watch: Callable = None         # (piece, video, out_dir) -> None: Claude looks at the finished video before upload, report only (engine/watch.py, 24 Nov 2026)
 
@@ -629,6 +630,13 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
 
 def finish_upload(piece: Piece, deps: Deps, root: Path, video: Path, thumb: Path, out_dir: Path) -> Piece:
     """The scheduled upload and the long's caption tracks; shared by the plain path and the intro path."""
+    if getattr(deps, "audit", None) is not None and not piece.ids.get("audit"):          # founder, 27 Nov 2026: "Before uploading we need to do audit"
+        try:
+            r = deps.audit(piece, video)                               # the finished file is watched with its sound, against the script
+            if r:
+                piece.ids["audit"] = {"score": r.get("score"), "verdict": r.get("verdict"), "faults": len(r.get("faults") or [])}
+        except Exception as e:                                         # report only: it never stops a video
+            print(f"audit skipped for {piece.id}: {secrets.scrub(str(e))[:200]}", flush=True)
     piece.ids["yt_id"] = deps.upload(piece, video, thumb)
     piece.topic["look"] = art.look(piece.channel)                     # which picture style this piece was drawn in (weekly report)
     pieces.save(pieces.transition(piece, "uploaded"), root)
@@ -725,6 +733,7 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
                 voice_batch=lambda piece, texts, vid: "now" if due_soon(piece) else voicebatch.voice_piece(piece, texts, vid),
                 art_batch=lambda piece, jobs: "now" if due_soon(piece) else artbatch.paint_piece(piece, jobs), voice_check=voice.transcribe,
                 animate_card=newscard.animate, intro_notify=telegram.send, slot_holders=slot_holders_fn,
-                watch=lambda piece, video, out_dir: __import__("engine.watch", fromlist=["look"]).look(piece, video, out_dir, notify=telegram.send))
+                watch=lambda piece, video, out_dir: __import__("engine.watch", fromlist=["look"]).look(piece, video, out_dir, notify=telegram.send),
+                audit=lambda piece, video: __import__("engine.audit", fromlist=["run"]).run(video, piece, Path(root) / "logs" / "audit" / piece.id, notify=telegram.send))
     # voice.batched (several scenes per TTS request) stays unwired: on 22 Oct 2026 the model's paragraph pauses were not distinct enough
     # to cut on, and the transcript check sent every group back to line-by-line. Wire it in once the cut is reliable.
