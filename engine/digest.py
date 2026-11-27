@@ -62,7 +62,6 @@ def run_summary(root: Path, day: date, qday: date | None = None) -> str:
         lines.append(f"  + {p.id} ({p.writer or 'claude'})")
     for p in rejected + failed:
         lines.append(f"  - {p.id}: {p.status}: {p.reasons[-1] if p.reasons else ''}")
-    lines.append("buffer: " + ", ".join(f"{ch} {n} day{'s' if n != 1 else ''}" for ch, n in buf.items()))
     batch_lines = 0
     ledger = Path(root) / "logs" / "voice-batch.jsonl"
     if ledger.exists():
@@ -87,12 +86,8 @@ def longs_ready(root: Path, today: date, horizon: int = 35) -> dict:
 
 def alerts(root: Path, day: date) -> list:
     out = []
-    for ch, n in buffer_days(root, day).items():
-        if n < BUFFER_ALERT_DAYS:
-            out.append(f"{ch}: Shorts buffer is {n} day(s), target {BUFFER_ALERT_DAYS}")
-    for ch, n in longs_ready(root, day).items():
-        if n < LONG_ALERT_COUNT:
-            out.append(f"{ch}: {n} long video(s) ready, target {LONG_ALERT_COUNT}")
+    # 27 Nov 2026: no "Shorts buffer is 1 day, target 7" or "0 long videos ready, target 4" any more. The founder ended the buffer the
+    # same day (a Short is made the day before, a long the same morning), so those two lines were wrong on every message.
     runs_path = Path(root) / "logs" / "runs.jsonl"
     if runs_path.exists():
         runs = [json.loads(l) for l in runs_path.read_text().splitlines() if l.strip()]

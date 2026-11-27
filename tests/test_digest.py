@@ -36,14 +36,12 @@ def test_buffer_days_per_channel(tmp_path):
     assert b["sglearning"] == 2 and b["arthvan"] == 0            # arthvan Shorts are daily now: Tue 20 Oct is not ready, so the run of ready days is 0
 
 
-def test_alert_when_buffer_under_four_days(tmp_path, monkeypatch):
+def test_no_buffer_alerts_now_that_videos_are_made_a_day_ahead(tmp_path):
+    """27 Nov 2026: 'Shorts buffer is 1 day(s), target 7' was on every message after the founder ended the buffer."""
     _seed(tmp_path)
     alerts = digest.alerts(tmp_path, date(2026, 10, 20))
-    assert any("arthvan" in a and "buffer" in a for a in alerts) and any("sglearning" in a and "buffer" in a for a in alerts)   # 0 and 2 days < 7
-    assert any("long video" in a for a in alerts)                                                                                # fewer than 4 longs ready
-    monkeypatch.setattr(digest, "BUFFER_ALERT_DAYS", 2)
-    alerts = digest.alerts(tmp_path, date(2026, 10, 20))
-    assert not any("sglearning" in a and "buffer" in a for a in alerts)
+    assert not any("buffer" in a or "long video" in a for a in alerts)
+    assert "buffer:" not in digest.run_summary(tmp_path, date(2026, 10, 20))
 
 
 def test_alert_on_two_failed_runs_and_token_expiry(tmp_path):

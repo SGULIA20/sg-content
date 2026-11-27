@@ -133,17 +133,18 @@ def run(root: Path = ROOT, channel: str = "sglearning", now_utc: datetime | None
         problems += long_links(root, channel, now_utc, env)                  # each public Short points to the long video (founder, 23 Oct 2026)
     if teaser is not None:
         problems += teaser(root, channel, now_utc, env)                      # an Instagram Story for each new long video (founder, 30 Oct 2026)
-    text = f"SG Content publish {channel} {slots.ist(now_utc).strftime('%Y-%m-%d %H:%M')} IST: posted {len(posted)}"
+    # 27 Nov 2026 (founder: "check all messages what I am getting on telegram, are they relevant now?"): a successful post is no longer
+    # announced here. The evening status card already says what went out on each platform, and this message was a line of file names
+    # in India time. It is sent only when something needs him, in Lagos time, once a day per problem.
+    alerts = digest.alerts(root, slots.ist(now_utc).date())
+    wat = now_utc.astimezone(timezone(timedelta(hours=1)))
+    text = f"⚠️ {config.CHANNELS[channel].display_name}, posting at {wat:%H:%M} WAT on {wat:%d %b}: {len(posted)} posted, {len(problems) + len(alerts)} problem(s)"
     for pid in posted:
-        text += f"\n  + {pid}"
-    for pr in problems:
-        text += f"\n  ! {pr}"
-    for a in digest.alerts(root, slots.ist(now_utc).date()):
-        text += f"\n  ! {a}"
-    # 24 Nov 2026: a problem that stays open was reported again on every one of the day's five to nine runs, for three days. Something
-    # posted is always told; the same list of problems is told once a day.
+        text += f"\n  posted: {pid}"
+    for pr in problems + alerts:
+        text += f"\n  problem: {pr}"
     from . import once
-    if posted or (problems and once.fresh(f"publish-problems:{channel}", sorted(str(x) for x in problems), root=root)):
+    if (problems or alerts) and once.fresh(f"publish-problems:{channel}", sorted(str(x) for x in problems + alerts), root=root):
         notify(text)
     print(text, flush=True)
     return 0
