@@ -70,6 +70,13 @@ def speed(piece, root: Path = None) -> float:
         return 1.0
 
 
+def cuts_on(piece, root: Path = None) -> bool:
+    """Whether a piece's scenes are cut into several framings (engine/storyframe.py cut_filter): pieces dated from `cuts_from` in
+    content/hero-test.json. A piece made before that day keeps its look if it is ever re-made."""
+    start = _config(root).get("cuts_from")
+    return bool(start) and str(piece.id)[:10] >= str(start)
+
+
 PICTURE_S = 1.5
 
 

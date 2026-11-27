@@ -116,3 +116,29 @@ def test_a_full_screen_long_puts_captions_on_a_shade_and_moves_the_camera_a_diff
     z, x, y = sf.camera_expr("push", 300)
     assert "1.40" in z and "on" in z
     assert sf.camera_expr("glide", 300, 1)[1] != sf.camera_expr("glide", 300, -1)[1]
+
+
+def test_a_scene_is_cut_into_several_framings_and_short_scenes_are_left_whole(tmp_path):
+    """Founder, 27 Nov 2026: 'Do all 3'. The watched viral videos changed the picture at least 3 times in 10 seconds; ours 1 to 2."""
+    import json, subprocess
+    from types import SimpleNamespace as P
+    from engine import opening, storyframe as sf
+    assert sf.cut_filter(3.0, 0, 108, 192) == "" and sf.cut_filter(1.2, 3, 108, 192) == ""            # too short to cut
+    seven = sf.cut_filter(7.4, 0, 108, 192)
+    assert seven.count("if(lt(on,") == 6 and "1.0+" in seven and seven.endswith(",")                    # three framings: two cuts in zoom, x and y
+    assert sf.cut_filter(7.4, 0, 108, 192) != sf.cut_filter(7.4, 1, 108, 192)                           # the next scene frames differently
+    (tmp_path / "hero-test.json").write_text(json.dumps({"cuts_from": "2026-11-28"}))
+    assert opening.cuts_on(P(id="2026-11-28-arthvan-short"), tmp_path) and not opening.cuts_on(P(id="2026-11-27-arthvan-short"), tmp_path)
+    pic = tmp_path / "pic.png"                                                                           # left half red, right half blue
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "color=red:s=200x400", "-f", "lavfi", "-i", "color=blue:s=200x400",
+                    "-filter_complex", "hstack", "-frames:v", "1", str(pic)], check=True)
+    blank = tmp_path / "blank.png"
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "color=black@0.0:s=108x10,format=rgba", "-frames:v", "1", str(blank)], check=True)
+    out = sf.scene(pic, 5.0, (108, 192), tmp_path / "s.mp4", blank, [], full=True, cuts=0)
+    def red_share(t):
+        raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", str(t), "-i", str(out), "-frames:v", "1", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"],
+                             capture_output=True, check=True).stdout
+        px = [raw[i:i + 3] for i in range(0, len(raw), 3)]
+        return sum(1 for p in px if p[0] > p[2]) / len(px)
+    dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(out)], capture_output=True, text=True).stdout)
+    assert abs(dur - 5.0) < 0.1 and abs(red_share(1.0) - 0.5) < 0.06 and red_share(3.5) - red_share(1.0) > 0.05          # the whole picture, then a close-up of its left side

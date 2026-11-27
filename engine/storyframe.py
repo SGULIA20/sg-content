@@ -97,9 +97,37 @@ def caption_html(text: str, keyword: str = "") -> str:
     return "".join(out)
 
 
+CUT_S = 2.5                                                  # a new framing about this often (the watched viral videos: 3 to 14 changes every 10 s)
+# (zoom, where the frame looks across, where it looks down): the whole picture first, then a close-up, then another part of it
+SHOTS = [(1.0, 0.5, 0.5), (1.3, 0.28, 0.36), (1.14, 0.78, 0.5), (1.32, 0.6, 0.26), (1.06, 0.4, 0.6), (1.28, 0.7, 0.4), (1.18, 0.22, 0.55)]
+CUT_DRIFT = 0.0006                                           # each shot keeps creeping in, so no frame stands still
+
+
+def cut_filter(seconds: float, index: int, w: int, ph: int) -> str:
+    """Hard cuts inside one scene (founder, 27 Nov 2026: "Do all 3", after the study of the week's most-viewed short videos: every
+    one changed the picture at least 3 times in 10 seconds, ours 1 to 2). The scene's picture is shown as two or more framings, each
+    about CUT_S long: the whole picture, then a close-up of one part, then another. The captions and badges are laid on afterwards
+    and do not jump. '' for a scene too short to cut."""
+    n = int(round(seconds / CUT_S))
+    if n < 2:
+        return ""
+    per = int(round(seconds * FPS / n))
+    shots = [SHOTS[0]] + [SHOTS[1 + (index * 2 + k) % (len(SHOTS) - 1)] for k in range(n - 1)]
+    def piecewise(vals) -> str:
+        expr = vals[-1]
+        for k in range(n - 2, -1, -1):
+            expr = f"if(lt(on,{(k + 1) * per}),{vals[k]},{expr})"
+        return expr
+    z = piecewise([f"{zb}+{CUT_DRIFT}*(on-{k * per})" for k, (zb, _x, _y) in enumerate(shots)])
+    fx = piecewise([f"{x}" for _z, x, _y in shots])
+    fy = piecewise([f"{y}" for _z, _x, y in shots])
+    return f"zoompan=z='{z}':x='(iw-iw/zoom)*({fx})':y='(ih-ih/zoom)*({fy})':d=1:s={w}x{ph}:fps={FPS},"
+
+
 def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, cue_overlays: list, chip: Path | None = None,
           logo_png: Path | None = None, watermark_png: Path | None = None, punch: bool = False, shade_png: Path | None = None,
-          full: bool = False, camera: tuple | None = None, shade_y: int | None = None, top: int | None = None, side: int | None = None) -> Path:
+          full: bool = False, camera: tuple | None = None, shade_y: int | None = None, top: int | None = None, side: int | None = None,
+          cuts: int | None = None) -> Path:
     """Panel with push-in below the title band; long videos keep a black caption band below, Shorts (shade_png given) run the
     picture to the bottom with a shadow under the captions. Optional evidence chip, caption cues overlaid."""
     w, h = size
@@ -110,14 +138,15 @@ def scene(panel: Path, seconds: float, size: tuple, out: Path, title_png: Path, 
     top = top if top is not None else (FULL_TOP if full else py + 30)       # where the chip and the badge sit
     side = side if side is not None else SAFE_SIDE
     frames = max(1, int(round(seconds * FPS)))
+    cuts = cut_filter(seconds, cuts, w, ph) if cuts is not None else ""       # the scene's number: which framings it uses
     if Path(panel).suffix == ".mp4":                          # a moving news card (2 Nov 2026): already animated, no push-in
-        chain = (f"[0:v]scale={w}:{ph}:force_original_aspect_ratio=increase,crop={w}:{ph},fps={FPS},setsar=1,"
+        chain = (f"[0:v]scale={w}:{ph}:force_original_aspect_ratio=increase,crop={w}:{ph},fps={FPS},setsar=1,{cuts}"
                  f"pad={w}:{h}:0:{py}:black[base];[base][1:v]overlay=0:0:shortest=1[t]")
         inputs = ["-stream_loop", "-1", "-i", str(panel), "-loop", "1", "-i", str(title_png)]
     else:
         zx, xx, yx = camera if camera else (zoom_expr(seconds, punch), "iw/2-(iw/zoom/2)", "ih/2-(ih/zoom/2)")
         chain = (f"[0:v]scale={w * 2}:{ph * 2}:force_original_aspect_ratio=increase,crop={w * 2}:{ph * 2},"
-                 f"zoompan=z='{zx}':d={frames}:x='{xx}':y='{yx}':s={w}x{ph}:fps={FPS},"
+                 f"zoompan=z='{zx}':d={frames}:x='{xx}':y='{yx}':s={w}x{ph}:fps={FPS},{cuts}"
                  f"pad={w}:{h}:0:{py}:black[base];[base][1:v]overlay=0:0:shortest=1[t]")
         inputs = ["-loop", "1", "-i", str(panel), "-loop", "1", "-i", str(title_png)]
     last, k0 = "[t]", 2
@@ -298,7 +327,8 @@ def build(piece, lines: list, panels: list, size: tuple, out_dir: Path) -> Path:
             cam = camera_expr(CAMERA_PATHS[i % len(CAMERA_PATHS)], max(1, int(round(dur * FPS))), 1 if (i // len(CAMERA_PATHS)) % 2 == 0 else -1)
         clips.append(scene(panel, dur, size, out_dir / f"scene{i:02d}.mp4", title_png, overlays, chip=chip, logo_png=badge,
                            watermark_png=big_badge, punch=(i == 0 and short), shade_png=shade, full=full, camera=cam,
-                           shade_y=geo["shade_y"] if shade else None, top=geo["top"], side=geo["side"]))
+                           shade_y=geo["shade_y"] if shade else None, top=geo["top"], side=geo["side"],
+                           cuts=i if opening.cuts_on(piece) else None))
     if full and short:                                               # the pictures that move behind the founder in his intro (engine/intro.py)
         intro_background(piece, panels, size, out_dir, title_png, shade, badge, pills, depths)
         for f in out_dir.glob("move*.mp4"):
