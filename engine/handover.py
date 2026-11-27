@@ -68,6 +68,39 @@ def collect(root: Path = ROOT, token: str = "", get=_get) -> list:
     return taken
 
 
+SCENES_DIR = "inbox/scenes"
+
+
+def collect_scenes(root: Path = ROOT, token: str = "", get=_get) -> list:
+    """The founder's moving clips for a video's body, sent to the Arthvan bot as "clip <piece id> <number>" (28 Nov 2026): every
+    inbox/scenes/<piece id>/clip<number>.mp4 there that is not here yet, or has changed, is fetched. Returns ["<piece id>/clipN.mp4"]."""
+    try:
+        folders = json.loads(get(API.format(repo=SOURCE, path=SCENES_DIR), token))
+    except urllib.error.HTTPError as e:
+        if e.code == 404:                                          # no clip has ever been sent there
+            return []
+        raise
+    taken = []
+    for folder in folders:
+        pid = str(folder.get("name", ""))
+        if folder.get("type") != "dir" or not pid:
+            continue
+        for entry in json.loads(get(API.format(repo=SOURCE, path=urllib.parse.quote(f"{SCENES_DIR}/{pid}")), token)):
+            name = str(entry.get("name", ""))
+            if not (name.startswith("clip") and name.endswith(".mp4")) or not 0 < int(entry.get("size") or 0) <= MAX_BYTES:
+                continue
+            local = Path(root) / SCENES_DIR / pid / name
+            if local.exists() and blob_sha(local) == entry.get("sha"):
+                continue
+            data = get(API.format(repo=SOURCE, path=urllib.parse.quote(f"{SCENES_DIR}/{pid}/{name}")), token, raw=True)
+            if hashlib.sha1(b"blob %d\0" % len(data) + data).hexdigest() != entry.get("sha"):
+                continue
+            local.parent.mkdir(parents=True, exist_ok=True)
+            local.write_bytes(data)
+            taken.append(f"{pid}/{name}")
+    return taken
+
+
 THUMB_DIR = "inbox/thumb"
 SEEN = "logs/handover.json"                 # {piece id: the id of the bot's thumbnail last taken}
 
@@ -122,6 +155,13 @@ def main(argv=None) -> int:
     if taken:
         print(f"collected from the Arthvan bot: {', '.join(taken)}", flush=True)
         gitsync.commit(ROOT, f"handover: clip(s) from the Arthvan bot for {', '.join(taken)}", paths=[f"{intro.INBOX}/{t}.mp4" for t in taken])
+    try:
+        clips = collect_scenes(ROOT, os.environ.get("GITHUB_TOKEN", ""))
+        if clips:
+            print(f"moving clips from the Arthvan bot: {', '.join(clips)}", flush=True)
+            gitsync.commit(ROOT, f"handover: moving clip(s) from the Arthvan bot: {', '.join(clips)}"[:200], paths=[SCENES_DIR])
+    except (urllib.error.URLError, OSError, ValueError, KeyError) as e:
+        print(f"moving-clip hand-over skipped: {type(e).__name__}: {secrets.scrub(str(e))[:160]}", flush=True)
     try:
         thumbs = collect_thumbs(ROOT, os.environ.get("GITHUB_TOKEN", ""))
     except (urllib.error.URLError, OSError, ValueError, KeyError) as e:
