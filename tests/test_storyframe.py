@@ -142,3 +142,16 @@ def test_a_scene_is_cut_into_several_framings_and_short_scenes_are_left_whole(tm
         return sum(1 for p in px if p[0] > p[2]) / len(px)
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(out)], capture_output=True, text=True).stdout)
     assert abs(dur - 5.0) < 0.1 and abs(red_share(1.0) - 0.5) < 0.06 and red_share(3.5) - red_share(1.0) > 0.05          # the whole picture, then a close-up of its left side
+
+
+def test_the_founders_moving_clip_takes_the_place_of_a_scenes_painting(tmp_path):
+    """Founder, 27 Nov 2026: 'Moving clips I can provide ... let us make try now'."""
+    from types import SimpleNamespace as P
+    from engine import storyframe as sf
+    piece = P(id="2026-12-03-arthvan-short", ids={})
+    panels = [tmp_path / "a.png", tmp_path / "b.png", tmp_path / "c.png"]
+    assert sf.scene_clips(piece, panels, tmp_path / "scenes") == panels and "scene_clips" not in piece.ids
+    d = tmp_path / "scenes" / piece.id; d.mkdir(parents=True)
+    (d / "01.mp4").write_bytes(b"x" * 60_000); (d / "02.mp4").write_bytes(b"tiny")              # a broken upload is not used
+    out = sf.scene_clips(piece, panels, tmp_path / "scenes")
+    assert out == [panels[0], d / "01.mp4", panels[2]] and piece.ids["scene_clips"] == [1]
