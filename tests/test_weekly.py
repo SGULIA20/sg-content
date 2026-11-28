@@ -23,24 +23,25 @@ def _ask(prompt):
                     "hooks": ["Vishnu ka sir kaise kata?"], "why": "6.2M views on the same story"}])
 
 
-def test_build_plans_the_open_slots_keeps_strong_proposals_and_fills_weak_ones_from_the_banks(tmp_path):
+def test_build_plans_the_open_slots_keeps_strong_proposals_and_never_fills_a_gap_from_the_banks(tmp_path):
     plan = weekly.build(tmp_path, TODAY, {"sglearning": [], "arthvan": []}, ask=_ask, calendar=[])
     e = plan["entries"]
     assert e[FINANCE_SLOT]["id"] == f"wk-{FINANCE_SLOT}" and e[FINANCE_SLOT]["weekly"] and not e[FINANCE_SLOT].get("from_bank") and e[FINANCE_SLOT]["topic_score"] >= weekly.MIN_SCORE
     assert e[MYTH_SLOT]["allowed_sources"] and e[MYTH_SLOT]["topic_score"] >= weekly.MIN_SCORE
-    dropped = e["2026-11-15-sglearning-short"]
-    assert dropped.get("from_bank") and "rally" not in str(dropped.get("title"))
+    assert not any(x.get("from_bank") for x in e.values())                       # founder, 28 Nov 2026: "do only and only trending topics"
+    assert "2026-11-15-sglearning-short" not in e or "rally" not in str(e["2026-11-15-sglearning-short"].get("title"))
+    assert any("never filled from the old banks" in n for n in plan["notes"])
     assert any("dropped" in n for n in plan["notes"])
     titles = [str(t.get("title") or t.get("title_hi")) for t in e.values()]
     assert len(titles) == len(set(titles))                                          # no topic twice in the week
 
 
-def test_already_made_pieces_are_not_planned_and_a_claude_failure_falls_back_to_the_banks(tmp_path):
+def test_already_made_pieces_are_not_planned_and_a_claude_failure_plans_nothing_from_the_banks(tmp_path):
     p = pieces.Piece(id=FINANCE_SLOT, channel="sglearning", kind="short", publish_day=date(2026, 11, 14)); p.status = "uploaded"; pieces.save(p, tmp_path)
     def boom(prompt):
         raise RuntimeError("no key")
     plan = weekly.build(tmp_path, TODAY, {}, ask=boom, calendar=[])
-    assert FINANCE_SLOT not in plan["entries"] and len(plan["entries"]) > 10 and all(t.get("from_bank") for t in plan["entries"].values())
+    assert FINANCE_SLOT not in plan["entries"] and plan["entries"] == {}
     assert sum("could not propose" in n for n in plan["notes"]) == 2
 
 
