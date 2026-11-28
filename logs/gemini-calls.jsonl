@@ -1000,3 +1000,4 @@
 {"at": "2026-11-28T08:39:58+00:00", "model": "gemini-3.8-flash", "caller": "inbox.transcribe", "status": 402, "attempt": 0, "in": 0, "out": 0, "thought": 0, "search": false, "search_queries": 0, "modalities": []}
 {"at": "2026-11-28T08:45:23+00:00", "model": "gemini-3.8-flash", "caller": "inbox.transcribe", "status": 402, "attempt": 0, "in": 0, "out": 0, "thought": 0, "search": false, "search_queries": 0, "modalities": []}
 {"at": "2026-11-28T08:49:19+00:00", "model": "gemini-3.8-flash", "caller": "inbox.transcribe", "status": 402, "attempt": 0, "in": 0, "out": 0, "thought": 0, "search": false, "search_queries": 0, "modalities": []}
+{"at": "2026-11-28T09:00:53+00:00", "model": "gemini-3.8-flash", "caller": "inbox.transcribe", "status": 200, "attempt": 0, "in": 272, "out": 40, "thought": 240, "search": false, "search_queries": 0, "modalities": []}

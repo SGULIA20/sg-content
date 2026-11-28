@@ -1,0 +1,39 @@
+{
+ "score": 6,
+ "verdict": "fix first",
+ "faults": [
+  {
+   "at": 0,
+   "kind": "narration",
+   "what": "Spoken dialogue does not match script line 1; presenter adds extra phrases ('Kya aapko pata hai? 2,000 ka note gayab ho gaya...').",
+   "fix": "Re-record or edit line 1 to match the scripted dialogue verbatim."
+  },
+  {
+   "at": 8,
+   "kind": "sound",
+   "what": "Abrupt audio transition from on-camera presenter acoustic room audio to studio voiceover narrator.",
+   "fix": "Equalize room tone and acoustics or use the same narrator voice throughout the video."
+  },
+  {
+   "at": 48,
+   "kind": "captions",
+   "what": "Subtitle for the final line remains stuck on screen over the end card after narration has finished.",
+   "fix": "Cut caption display when narration ends at 0:47."
+  },
+  {
+   "at": 19,
+   "kind": "quality",
+   "what": "AI-generated pigeons in front of the building glide and flap with unnatural physics.",
+   "fix": "Replace with real B-roll of the RBI building or cleaner stock footage."
+  },
+  {
+   "at": 25,
+   "kind": "quality",
+   "what": "Hand applying stamp over banknote exhibits noticeable AI warping and morphing around the fingers.",
+   "fix": "Use authentic stock footage of official stamping."
+  }
+ ],
+ "strongest": "The pacing and visual storytelling clearly explain the legal tender transition and cash deposit rules.",
+ "weakest": "The jarring shift in narrator voice and audio profile between scene 1 and scene 2 breaks production consistency.",
+ "lines_heard": 8
+}
