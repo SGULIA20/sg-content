@@ -1,0 +1,301 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 3.56,
+   "quote": "The total value of ₹2000 banknotes in circulation, which amounted to ₹3.62 lakh crore on March 31, 2023 had declined to ₹3.56 lakh crore as at the close of business on May 19, 2023.",
+   "source_date": "2023-09-01",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTszO2JVFn4HhOE_3MT4AKotMU47q5Ab6G8ZJh86kHdP-5Rt19cPpTQc-XzaBWq-gt93egaVnftrtqEDvQ2s8cWdqkBAZXj1RVP21wAMzYoinAXNEIxBqbR9f5vPNOkO0UsBFMTRyNkszTSv_3g1HCCOmlQb3P52XU2A==",
+   "text": "The total value of ₹2,000 denomination banknotes in circulation stood at ₹3.56 lakh crore as of May 19, 2023, when the withdrawal from circulation was announced.",
+   "unit": "lakh crore INR"
+  },
+  {
+   "label": "official",
+   "number": 87.0,
+   "quote": "Data collected from major banks indicates that out of the total banknotes in ₹2000 denomination received back from circulation, about 87% is in the form of deposits and the remaining around 13% has been exchanged into other denomination banknotes.",
+   "source_date": "2023-09-01",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTszO2JVFn4HhOE_3MT4AKotMU47q5Ab6G8ZJh86kHdP-5Rt19cPpTQc-XzaBWq-gt93egaVnftrtqEDvQ2s8cWdqkBAZXj1RVP21wAMzYoinAXNEIxBqbR9f5vPNOkO0UsBFMTRyNkszTSv_3g1HCCOmlQb3P52XU2A==",
+   "text": "Approximately 87% of the total ₹2,000 banknotes returned to banks after the withdrawal announcement came in the form of bank deposits rather than over-the-counter exchanges.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 97.26,
+   "quote": "Thus, 97.26% of the ₹2000 banknotes in circulation as on May 19, 2023, has since been returned.",
+   "source_date": "2023-12-01",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLAsN0n49iobY6t57xIurcBw9ouav9KcWfXiHcx184MI16YdsS9GK9dQFlSXOBOY-JfnLwkex342L6maAkrD7cveYwyQ3q3i_MYuo-B5_ZBnqhR9vlrtELQXdzTzsERxhr7XM_kMDUkiZNw9rqEPS8_Srxu-cdaQ==",
+   "text": "By November 30, 2023, 97.26% of the ₹2,000 denomination notes circulating on May 19, 2023, had been returned to the banking system.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 20000.0,
+   "quote": "With a view to minimise inconvenience to the public, to ensure operational convenience and avoid disruption of the regular activities of bank branches, all banks may exchange ₹2000 banknotes upto a limit of ₹20,000/- at a time.",
+   "source_date": "2023-05-19",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlfn-9qJyKSyrjXngIuJiGdQUHlOl4WPnHzWDl2gvtosoMjGZP7h-34JGcIHDM64E-FHZl3tcpSZzROlBe4dCdccaVMBK9YhjrUXodbm4btCt6tKAN5NiIOewqUfuV2X0f6TLXSSLnCJUQ_WbVCTb_NRX1Mglj0SFq6g==",
+   "text": "To prevent disruption at bank counters, the central bank allowed members of the public to exchange ₹2,000 notes up to ₹20,000 at a time.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 89.0,
+   "quote": "RBI has conveyed that 89% of ₹2000 denomination notes were issued prior to March 2017 and are close to the end of their useful life which spans from 4-5 years.",
+   "source_date": "2023-07-25",
+   "source_name": "PIB",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu_dzxTqCkILOFQWYytIw-OHJlEBCcU31EGeQILge05OwkIJb5Fhur09bLsLEiQRJ7lrHR0FEPz7OynpRJDw2K9Eu6_32Oh0TigtyR5QXjuPq8OGKuREWEsyn2GhPFSdj6JTcHCI6NuiahnFJ6dD1ZHA==",
+   "text": "Roughly 89% of all ₹2,000 notes were issued before March 2017 and were approaching the end of their four-to-five-year expected lifespan.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 2018.0,
+   "quote": "With fulfilment of the objective of introduction of ₹2000 denomination and availability of banknotes in other denominations in adequate quantity, printing of ₹2000 banknotes was stopped in 2018-19.",
+   "source_date": "2023-05-19",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGT52G6nNxmHJ1-mrRn0EsQ3EeV3MNv1AxF6GhP_ipQI28u3OYDP_iMxQAMhx8R5wsFRRE4etDWfuYwU2EJOaYjT7ujn116Q3Tjt_d5XWQghoJJZ0k62JofjlWPE7MNttXbRbUu1oUZqjGTL-Sn9u7DUNYOkkwnR9fQllrD7Q==",
+   "text": "Printing of the ₹2,000 denomination note was halted in financial year 2018-19 once currency demand was adequately met by other denominations.",
+   "unit": "financial year start"
+  },
+  {
+   "label": "official",
+   "number": 1000.0,
+   "quote": "Coin of any denomination not lower than one rupee shall be legal tender for any sum not exceeding one thousand rupee in any single transaction.",
+   "source_date": "2021-04-19",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5BIIyKubCEVoijkdc__Gf707nXNooBSkwT1T3b40NtoM7RKTYNW0pLVcJ24wnYPoFiAZFqvHSla_i2J0-63xesMVEok10oPQVA97vef_WgCvxvgyKCiuISiUMF_Q3yHmh-kWpkNvx20c7RijbdIvnwzvovqiKXfo=",
+   "text": "Under Indian coinage law, coins of ₹1 denomination or higher serve as legal tender for payments up to ₹1,000 in a single transaction.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 50000.0,
+   "quote": "For deposits in a banking company or a co-operative bank to which the Banking Regulation Act, 1949 (10 of. 1949), applies (including any bank or banking institution referred to in section 51 of that Act) it is obligatory to quote PAN for payment in cash for an amount exceeding fifty thousand rupees during any one day (refer Rule 114B).",
+   "source_date": "2017-01-17",
+   "source_name": "Income Tax Department",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhpr6MXW0lxDaReIoNoUw9LhZSTK6dKkcNb2X2kC1qLUUv9hl0gzGCq09yziAe-dujkDEHJ4T9H2lfHFTzIOjCOgOzXuZ5u80Q6SF4Aa5ImJRXhwljPGNJqeb0FgXGryjbXVxNpVMRMAjbTguossE6JcYX79vfL3koVzfkEbUO44qU0mNcazKlJWEZY9ei22pyWYgrISto2wy14bhI",
+   "text": "Under Income Tax Rule 114B, quoting a PAN is compulsory for cash deposits exceeding ₹50,000 in a bank during any single day.",
+   "unit": "INR"
+  }
+ ],
+ "id": "2026-11-28-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-27",
+   "drafts": 2,
+   "research": 2
+  },
+  "cost": {
+   "inr": 30.0,
+   "usd": 0.38384,
+   "voice": 8
+  },
+  "drafts": 2,
+  "music": {
+   "by": "Kevin MacLeod (incompetech.com)",
+   "licence": "CC BY 4.0",
+   "title": "Numinous Shine"
+  },
+  "sound": "track",
+  "watch": {
+   "best_change": "Open on the shopkeeper refusing the pink note from frame 2 instead of the static cash stack, so the first second shows a human conflict that matches the question.",
+   "issues": 2,
+   "opening": 7,
+   "verdict": "fix"
+  },
+  "watch_redo": [
+   4
+  ]
+ },
+ "kind": "short",
+ "publish_day": "2026-11-28",
+ "reasons": [
+  "try 1: advice: guarantee; advice: guarantee",
+  "review: redrawing 1 picture(s) before upload"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "2,000 ka note band hua, par notebandi jaisi line kyun nahi lagi?\nIs baar note legal tender bana raha, yaani kanoon ki nazar mein chalu paisa.\nPar ek din mein 50,000 se zyada cash jama kiya, toh PAN dena zaroori hai.\nAapke ghar mein abhi bhi koi gulabi note pada hai? Yeh investment advice nahi hai.\nYeh Papa ko bhejo, jo almari mein cash chhupa kar rakhte hain.",
+    "hashtags": [
+     "#RBI",
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#IncomeTax",
+     "#MoneyTipsHindi",
+     "#PersonalFinanceIndia",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "2,000 ka note band hua, par notebandi jaisi line kyun nahi lagi? Note legal tender bana raha, log seedha account mein jama karte gaye. Par ek din mein 50,000 se zyada cash jama karne par PAN zaroori hai. Aapke ghar mein cash ka hisaab hai? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "2,000 ka note band hua, par notebandi jaisi line kyun nahi lagi? Is baar note legal tender bana raha, isliye log ghabraaye nahi aur seedha account mein jama kar diya. Par ek din mein 50,000 se zyada cash jama karne par PAN dena zaroori hai, isliye cash ka hisaab rakhna samajhdaari hai. Yeh Papa ko bhejo, jo almari mein cash chhupa kar rakhte hain.",
+    "tags": [
+     "2000 note",
+     "2000 rupee note",
+     "RBI",
+     "notebandi",
+     "legal tender",
+     "cash deposit",
+     "PAN",
+     "income tax",
+     "bank",
+     "paise ki khabar",
+     "Learning with SG"
+    ],
+    "title": "2000 note band, phir bhi panic kyun nahi?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Yeh Papa ko bhejo, jo almari mein cash chhupa kar rakhte hain.",
+  "hook": "2,000 ka note band hua, par notebandi jaisi line kyun nahi lagi?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "Hook",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of a thick bundle of pink Indian banknotes tied with a rubber band, lying on a worn wooden bank counter, soft morning light from a window, print details softly blurred, no readable text, shallow depth of field",
+     "type": "art"
+    },
+    "vo": "2,000 ka note band hua, par notebandi jaisi line kyun nahi lagi?"
+   },
+   {
+    "facts_used": [],
+    "label": "Setup",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene at a small Indian kirana shop counter in the afternoon, a middle-aged shopkeeper raising his palm to refuse a pink banknote held out by a worried woman in a salwar suit, shelves of packets behind, natural daylight, no text",
+     "type": "art"
+    },
+    "vo": "Dukaan wale ne gulabi note lene se mana kar diya. Ghar mein rakhe note ka ab kya hoga?"
+   },
+   {
+    "facts_used": [],
+    "label": "Choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an Indian family at a dining table at night, an elderly man in a kurta counting pink banknotes from a steel box, his wife watching anxiously with a cup of tea, warm tubelight glow, no text",
+     "type": "art"
+    },
+    "vo": "Log samjhe, note raaton-raat kaagaz ban jayega. Lekin RBI ne is baar ek cheez alag rakhi."
+   },
+   {
+    "facts_used": [],
+    "label": "Legal tender",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic shot of a calm Indian bank branch in daytime, a short orderly line of customers, a cashier behind a glass counter accepting pink banknotes with a relaxed expression, natural light through windows, no text or signs",
+     "type": "art"
+    },
+    "vo": "Note legal tender bana raha, yaani kanoon ki nazar mein chalu paisa."
+   },
+   {
+    "facts_used": [
+     4,
+     5
+    ],
+    "label": "Why",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic macro of a hand holding a faded, creased, soft-edged old pink banknote beside a crisp new one, on a cloth-covered table, warm side light showing the wear, details blurred, no readable text. Correction after review: Replace with a close-up of worn, faded pink ₹2,000 notes.",
+     "type": "art"
+    },
+    "vo": "Kyun? Zyada tar note purane ho chuke the. Chhapai pehle hi band thi."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "What happened",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a young Indian man in office wear filling a bank deposit slip at a wooden desk inside a busy branch, pink notes in his other hand, focused expression, midday light, slip blank with no readable text",
+     "type": "art"
+    },
+    "vo": "Toh log badalne nahi gaye, seedha account mein jama kiya. Par cash jama karne ka ek niyam hai."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "Twist",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of an Indian woman's hands placing a plastic folder of receipts and a laminated identity card beside a stack of cash on a home table, evening lamp light, serious mood, no readable text",
+     "type": "art"
+    },
+    "vo": "Ek din mein 50,000 se zyada cash jama, toh PAN dena zaroori. Cash ka hisaab rakhiye. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "Send",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an old steel almirah in an Indian bedroom, its locker door half open revealing bundled cash wrapped in a cloth, soft afternoon light through a curtain, no people, no text",
+     "type": "art"
+    },
+    "vo": "Yeh Papa ko bhejo, jo almari mein cash chhupa kar rakhte hain."
+   }
+  ],
+  "thumbnail": {
+   "name": "2,000 NOTE",
+   "name_hi": "2,000 नोट",
+   "scene": "LEFT: a huge crowded queue snaking outside an Indian bank in the past with anxious people clutching cash; RIGHT: the same bank today, calm and nearly empty, a single hand sliding a bundle of pink notes across the counter",
+   "words": [
+    "50,000",
+    "TRAP?"
+   ],
+   "words_hi": [
+    "50,000",
+    "ट्रैप?"
+   ]
+  },
+  "title": "2,000 ka note *gayab*, panic kyun nahi? 💸"
+ },
+ "status": "voiced",
+ "timings": [
+  0.0,
+  4.082,
+  9.119,
+  15.792,
+  20.682,
+  26.049,
+  31.336,
+  38.849
+ ],
+ "topic": {
+  "category": "policy",
+  "history": true,
+  "hooks": [
+   "2,000 ka note band hua, par 2016 jaisa kyun nahi laga?",
+   "Note wapas lene par RBI ko fayda ya nuksaan?"
+  ],
+  "id": "mh-2023-2000-note",
+  "summary": "May 2023: the 2,000 rupee note withdrawn from circulation, how it differed from 2016, how much came back, and the small-shop confusion. What 'legal tender' means and why RBI prints a note at all.",
+  "target_minutes": null,
+  "theme": "payments",
+  "title": "2,000 ka note phir se bahar: is baar kya alag tha",
+  "topic_score": 7,
+  "topic_score_why": [
+   "+1 touches the viewer's own money (in the summary)",
+   "+3 a scare or a crash",
+   "+1 a choice the viewer faces",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "voice": "voice_1kn3blc2u13l"
+ },
+ "updated": "2026-11-28T07:27:01+00:00",
+ "writer": "claude"
+}
