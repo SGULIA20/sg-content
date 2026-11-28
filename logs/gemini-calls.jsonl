@@ -1034,3 +1034,6 @@
 {"at": "2026-11-28T09:23:00+00:00", "model": "gemini-3.1-flash-lite-image", "caller": "art.paint", "status": 200, "attempt": 0, "in": 150, "out": 1541, "thought": 0, "search": false, "search_queries": 0, "modalities": ["IMAGE"]}
 {"at": "2026-11-28T09:31:54+00:00", "model": "gemini-3.8-flash", "caller": "research.fact_sheet", "status": 200, "attempt": 0, "in": 12053, "out": 2410, "thought": 15069, "search": true, "search_queries": 0, "modalities": []}
 {"at": "2026-11-28T09:32:57+00:00", "model": "gemini-3.8-flash", "caller": "voice.transcribe", "status": 200, "attempt": 0, "in": 131, "out": 19, "thought": 172, "search": false, "search_queries": 0, "modalities": []}
+{"at": "2026-11-28T09:45:20+00:00", "model": "gemini-3.8-flash", "caller": "research.fact_sheet", "status": 200, "attempt": 0, "in": 1781, "out": 3133, "thought": 5339, "search": true, "search_queries": 3, "modalities": []}
+{"at": "2026-11-28T09:52:53+00:00", "model": "gemini-3.8-flash", "caller": "research.fact_sheet", "status": 200, "attempt": 0, "in": 4758, "out": 2652, "thought": 7719, "search": true, "search_queries": 4, "modalities": []}
+{"at": "2026-11-28T09:54:29+00:00", "model": "gemini-3.8-flash", "caller": "research.fact_sheet", "status": 200, "attempt": 0, "in": 2432, "out": 2654, "thought": 7734, "search": true, "search_queries": 0, "modalities": []}
