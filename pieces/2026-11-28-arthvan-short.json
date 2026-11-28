@@ -73,7 +73,8 @@
   "review: redrawing 4 picture(s) before upload",
   "waiting for the founder's intro clip until 28 Nov 11:30 UTC",
   "the founder's moving clips are placed on lines 2 to 9; put together again",
-  "waiting for the founder's intro clip until 28 Nov 11:30 UTC"
+  "waiting for the founder's intro clip until 28 Nov 11:30 UTC",
+  "the founder's fifth moving clip is placed on lines 10 and 11; put together again"
  ],
  "script": {
   "captions": {
@@ -253,7 +254,7 @@
   },
   "title": "Napoleon ko *baauna* kisne banaya? 🤯"
  },
- "status": "intro-wait",
+ "status": "voiced",
  "timings": [
   0.0,
   5.499,
@@ -348,6 +349,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-28T07:17:32+00:00",
+ "updated": "2026-11-28T07:21:40+00:00",
  "writer": "claude"
 }
