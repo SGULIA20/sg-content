@@ -54,11 +54,11 @@ def test_request_shape_uses_interactions_api(tmp_path):
 def test_budget_hit_mid_piece_keeps_cache(tmp_path):
     fp = FakePost()
     budget = tmp_path / "b.json"
-    budget.write_text(json.dumps({"2026-10-20": 79}))
+    budget.write_text(json.dumps({"2026-10-20": 159}))
     kw = dict(key="k", cache_dir=tmp_path / "cache", budget=budget, post=fp, today=date(2026, 10, 20))
-    voice.say("line one", "voice_v", tmp_path / "1.wav", **kw)                       # request 80: allowed
+    voice.say("line one", "voice_v", tmp_path / "1.wav", **kw)                       # request 160: allowed
     with pytest.raises(voice.VoiceBudget):
-        voice.say("line two", "voice_v", tmp_path / "2.wav", **kw)                   # request 81: refused before calling
+        voice.say("line two", "voice_v", tmp_path / "2.wav", **kw)                   # request 161: refused before calling
     assert len(fp.calls) == 1 and len(list((tmp_path / "cache").glob("*.wav"))) == 1
     budget.write_text(json.dumps({"2026-10-20": 0}))
     voice.say("line one", "voice_v", tmp_path / "1.wav", **kw)
