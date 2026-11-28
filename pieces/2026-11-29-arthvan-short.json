@@ -120,12 +120,13 @@
    "research": 1
   },
   "cost": {
-   "inr": 66.0,
-   "usd": 0.375556,
+   "inr": 84.0,
+   "usd": 0.43593,
    "voice": 13
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
+  "intro_sent": "2026-11-28T11:40:27+00:00",
   "music": {
    "by": "Kevin MacLeod (incompetech.com)",
    "licence": "CC BY 4.0",
@@ -150,7 +151,8 @@
  "reasons": [
   "review: redrawing 4 picture(s) before upload",
   "crashed: CalledProcessError: Command '['ffmpeg', '-v', 'error', '-y', '-stream_loop', '-1', '-i', '/home/runner/work/sg-content/sg-content/out/2026-11-29-arthvan-short/move11.mp4', '-loop', '1', '-i', '/home/runner/work/sg-conten",
-  "the build was stopped while assembling it (28 Nov); resumed from drawn so the script, voice and pictures are not made again"
+  "the build was stopped while assembling it (28 Nov); resumed from drawn so the script, voice and pictures are not made again",
+  "waiting for the founder's intro clip until 29 Nov 11:30 UTC"
  ],
  "script": {
   "captions": {
@@ -364,7 +366,7 @@
   },
   "title": "*Annabelle* gudiya khud kamra badalti thi? 😱"
  },
- "status": "drawn",
+ "status": "intro-wait",
  "timings": [
   0.0,
   5.272,
@@ -400,6 +402,52 @@
    "Asli Annabelle doll film wali jaisi dikhti hi nahi?"
   ],
   "id": "wk-2026-11-29-arthvan-short",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "",
+   "options": [
+    {
+     "closing": "",
+     "question": "Museum mein kisi ne mazaak udaya. Kuch ghanton baad, maut. Motorcycle accident mein. Gudiya sheeshe ke andar thi. Itefaq ya shraap?",
+     "score": 6.0,
+     "text": "Museum mein kisi ne mazaak udaya. Kuch ghanton baad, maut. Motorcycle accident mein. Gudiya sheeshe ke andar thi. Itefaq ya shraap?",
+     "words": 21
+    },
+    {
+     "closing": "",
+     "question": "Asli gudiya Raggedy Ann nikli. Bilkul aam, factory wali. Film wali darawni nahi. Smithsonian ke mutabik. Toh darr kahan se?",
+     "score": 5.7,
+     "text": "Asli gudiya Raggedy Ann nikli. Bilkul aam, factory wali. Film wali darawni nahi. Smithsonian ke mutabik. Toh darr kahan se?",
+     "words": 20
+    },
+    {
+     "closing": "",
+     "question": "Annabelle Higgins ka koi record nahi. Connecticut ke maut ke records khangale gaye. Sirf ek gudiya bachi. Toh bachchi kaun?",
+     "score": 5.3,
+     "text": "Annabelle Higgins ka koi record nahi. Connecticut ke maut ke records khangale gaye. Sirf ek gudiya bachi. Toh bachchi kaun?",
+     "words": 20
+    },
+    {
+     "closing": "",
+     "question": "Andar 7 saal ki bachchi thi. Medium ne kaha. Par record? Ek bhi nahi. Connecticut ke records khangale gaye. Kyun?",
+     "score": 5.3,
+     "text": "Andar 7 saal ki bachchi thi. Medium ne kaha. Par record? Ek bhi nahi. Connecticut ke records khangale gaye. Kyun?",
+     "words": 20
+    },
+    {
+     "closing": "",
+     "question": "Gudiya raat mein kamra badalti thi. Bistar se sofe tak. Khud-ba-khud. Warren ne use shaitaan kaha. Par asli Annabelle kaun thi?",
+     "score": 5.0,
+     "text": "Gudiya raat mein kamra badalti thi. Bistar se sofe tak. Khud-ba-khud. Warren ne use shaitaan kaha. Par asli Annabelle kaun thi?",
+     "words": 21
+    }
+   ],
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: a dark 1970s American apartment hallway at night, a red-yarn-haired cloth rag doll sitting alone on the wooden floor at the end of the corridor, harsh streak of streetlight through a half-open door, deep shadows, tense and eerie mood. Time of day and light, overriding anything darker in the setting above: bright golden-hour sunlight or clear daylight, a blue or golden sky, warm saturated colours, his face and clothes fully lit; never night, dusk, storm clouds, lightning, fog, grey overcast, a dark or desaturated look. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. If the scene shows the past of an Indian story, it is ancient India (a story from another country keeps that country's own dress and buildings): Indian people in dhotis, sarees and angavastram, warriors with bows, spears and bronze or leather armour, carved stone pillars, oil lamps; never European knights, plate armour, castles or anything medieval European. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a deep blue kurta with a beige Nehru jacket. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, an alert, bright, wide-awake face with a light, friendly smile. On the question his voice rises with excitement as he strides closer. On the last line a firm, energetic nod with bright, eager eyes. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGMythWorld watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "Museum mein kisi ne mazaak udaya. Kuch ghanton baad, maut. Motorcycle accident mein. Gudiya sheeshe ke andar thi. Itefaq ya shraap?",
+   "text": "Museum mein kisi ne mazaak udaya. Kuch ghanton baad, maut. Motorcycle accident mein. Gudiya sheeshe ke andar thi. Itefaq ya shraap?",
+   "words": 21
+  },
   "summary": "Popular story: a haunted doll killed people. Compare the Warrens' claims with the real doll, a Raggedy Ann at the Occult Museum, the film's different porcelain doll, and what the museum records show.",
   "target_minutes": null,
   "title": "Annabelle gudiya sach mein bhootiya thi?",
@@ -413,6 +461,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-28T11:19:30+00:00",
+ "updated": "2026-11-28T11:41:08+00:00",
  "writer": "claude"
 }
