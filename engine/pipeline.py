@@ -628,6 +628,25 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
     return finish_upload(piece, deps, root, video, thumb, out_dir)
 
 
+SAMPLE_MAX_BYTES = 48_000_000        # Telegram takes a file of up to 50 MB from a bot: every Short fits, a long does not
+
+
+def audit_and_share(piece: Piece, video: Path, root: Path) -> dict | None:
+    """The audit, then the finished file itself to the founder (28 Nov 2026: "do audit before sharing sample and posting"): he sees
+    the score and the very video that is about to be scheduled, before its slot, and can have it stopped."""
+    from . import audit
+    r = audit.run(video, piece, Path(root) / "logs" / "audit" / piece.id, notify=telegram.send)
+    try:
+        if Path(video).stat().st_size <= SAMPLE_MAX_BYTES:
+            when = slots.publish_at(piece.channel, piece.kind, piece.publish_day)
+            score = f"audit {r.get('score')}/10, {r.get('verdict')}" if r else "the audit could not run"
+            telegram.send_file(Path(video), f"SAMPLE {piece.id}: {score}. This exact video is scheduled for {intro._wat(when)}. "
+                                            "Tell Claude before then if it should be stopped or changed.")
+    except Exception as e:                                         # a sample that cannot be sent never stops the video
+        print(f"sample not sent for {piece.id}: {secrets.scrub(str(e))[:160]}", flush=True)
+    return r
+
+
 def finish_upload(piece: Piece, deps: Deps, root: Path, video: Path, thumb: Path, out_dir: Path) -> Piece:
     """The scheduled upload and the long's caption tracks; shared by the plain path and the intro path."""
     if getattr(deps, "audit", None) is not None and not piece.ids.get("audit"):          # founder, 27 Nov 2026: "Before uploading we need to do audit"
@@ -734,6 +753,6 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
                 art_batch=lambda piece, jobs: "now" if due_soon(piece) else artbatch.paint_piece(piece, jobs), voice_check=voice.transcribe,
                 animate_card=newscard.animate, intro_notify=telegram.send, slot_holders=slot_holders_fn,
                 watch=lambda piece, video, out_dir: __import__("engine.watch", fromlist=["look"]).look(piece, video, out_dir, notify=telegram.send),
-                audit=lambda piece, video: __import__("engine.audit", fromlist=["run"]).run(video, piece, Path(root) / "logs" / "audit" / piece.id, notify=telegram.send))
+                audit=lambda piece, video: audit_and_share(piece, video, root))
     # voice.batched (several scenes per TTS request) stays unwired: on 22 Oct 2026 the model's paragraph pauses were not distinct enough
     # to cut on, and the transcript check sent every group back to line-by-line. Wire it in once the cut is reliable.

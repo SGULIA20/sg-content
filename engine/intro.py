@@ -120,7 +120,8 @@ MYTH_PROP = "a printed photograph or old map of the place, held up to the camera
 def enabled(piece) -> bool:
     """Every Short and every long of both channels, the news and extra Reels included (founder, 5 Nov 2026: compulsory, nothing is
     scheduled without the 10-second intro)."""
-    return piece.kind in ("short", "long") and piece.channel in CHANNELS and not (piece.topic or {}).get("adopted")
+    topic = piece.topic or {}
+    return piece.kind in ("short", "long") and piece.channel in CHANNELS and not topic.get("adopted") and not topic.get("no_intro")   # no_intro: the founder said not to wait for his clip for this one (28 Nov 2026, Napoleon)
 
 
 # ---------- the script and the prompt ----------
