@@ -70,12 +70,13 @@
    "research": 1
   },
   "cost": {
-   "inr": 42.0,
-   "usd": 0.2771,
+   "inr": 51.0,
+   "usd": 0.37217,
    "voice": 11
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
+  "intro_sent": "2026-11-28T16:44:54+00:00",
   "music": {
    "by": "Kevin MacLeod (incompetech.com)",
    "licence": "CC BY 4.0",
@@ -97,7 +98,8 @@
  "kind": "short",
  "publish_day": "2026-11-30",
  "reasons": [
-  "review: redrawing 3 picture(s) before upload"
+  "review: redrawing 3 picture(s) before upload",
+  "waiting for the founder's intro clip until 30 Nov 11:30 UTC"
  ],
  "script": {
   "captions": {
@@ -287,7 +289,7 @@
   },
   "title": "Chhathi Maiya ki *murti* kyun nahi? 🤯"
  },
- "status": "voiced",
+ "status": "intro-wait",
  "timings": [
   0.0,
   5.845,
@@ -321,6 +323,52 @@
    "Chhath mein Surya ko arghya, par Maiya ki tasveer kyun nahi?"
   ],
   "id": "wk-2026-11-30-arthvan-short",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "",
+   "options": [
+    {
+     "closing": "",
+     "question": "Ek maa kamar tak paani mein. Bhor ka andhera. Na pandit na mandir. Saamne koi bhi murti nahi. Arghya kisko?",
+     "score": 6.0,
+     "text": "Ek maa kamar tak paani mein. Bhor ka andhera. Na pandit na mandir. Saamne koi bhi murti nahi. Arghya kisko?",
+     "words": 20
+    },
+    {
+     "closing": "",
+     "question": "Devi ki murti nahi. Sirf ek soop. Kamar tak paani mein khadi maa. Bhor ke andhere mein lakhon log. Kiske liye?",
+     "score": 6.0,
+     "text": "Devi ki murti nahi. Sirf ek soop. Kamar tak paani mein khadi maa. Bhor ke andhere mein lakhon log. Kiske liye?",
+     "words": 21
+    },
+    {
+     "closing": "",
+     "question": "Chhathi Maiya ki murti nahi. Ghat par lakhon log. Haath mein soop. Mathura mein patthar ki murti thi. Phir yahan kyun nahi?",
+     "score": 5.7,
+     "text": "Chhathi Maiya ki murti nahi. Ghat par lakhon log. Haath mein soop. Mathura mein patthar ki murti thi. Phir yahan kyun nahi?",
+     "words": 22
+    },
+    {
+     "closing": "",
+     "question": "Maiya ka chehra kisne dekha? Na Rigveda mein. Na Deo Surya Mandir mein. Na kisi ghat par. Toh Maiya hain kaun?",
+     "score": 5.7,
+     "text": "Maiya ka chehra kisne dekha? Na Rigveda mein. Na Deo Surya Mandir mein. Na kisi ghat par. Toh Maiya hain kaun?",
+     "words": 21
+    },
+    {
+     "closing": "",
+     "question": "Kirnon ko patthar mein kaise bandhoge? Daadi yahi kehti hain. Maiya nadi mein hain. Kirnon mein hain. Toh murti kyun?",
+     "score": 5.3,
+     "text": "Kirnon ko patthar mein kaise bandhoge? Daadi yahi kehti hain. Maiya nadi mein hain. Kirnon mein hain. Toh murti kyun?",
+     "words": 20
+    }
+   ],
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: wide aerial view at dawn of a vast river ghat in Bihar, thousands of women in bright sarees standing waist-deep in the river holding bamboo baskets of fruit toward a huge blood-red rising sun, mist on the water, oil lamps floating, no idol or shrine anywhere, dramatic golden light filling the frame. Time of day and light, overriding anything darker in the setting above: bright golden-hour sunlight or clear daylight, a blue or golden sky, warm saturated colours, his face and clothes fully lit; never night, dusk, storm clouds, lightning, fog, grey overcast, a dark or desaturated look. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. If the scene shows the past of an Indian story, it is ancient India (a story from another country keeps that country's own dress and buildings): Indian people in dhotis, sarees and angavastram, warriors with bows, spears and bronze or leather armour, carved stone pillars, oil lamps; never European knights, plate armour, castles or anything medieval European. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing an olive green kurta. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGMythWorld watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "Ek maa kamar tak paani mein. Bhor ka andhera. Na pandit na mandir. Saamne koi bhi murti nahi. Arghya kisko?",
+   "text": "Ek maa kamar tak paani mein. Bhor ka andhera. Na pandit na mandir. Saamne koi bhi murti nahi. Arghya kisko?",
+   "words": 20
+  },
   "summary": "Tell the belief of Chhathi Maiya as Shashthi and Surya worship with respect. Lay beside it the texts: Brahmavaivarta Purana on Shashthi, Surya worship in the Rigveda, and the tradition of worship without idols. Verify sources.",
   "target_minutes": null,
   "title": "Chhathi Maiya ki koi murti kyun nahi hoti?",
@@ -334,6 +382,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-28T16:35:58+00:00",
+ "updated": "2026-11-28T16:45:55+00:00",
  "writer": "claude"
 }
