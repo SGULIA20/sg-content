@@ -186,15 +186,13 @@ def test_a_slot_whose_planned_topic_is_dead_borrows_the_next_trending_topic_and_
     assert len(told) == 1 and "Next trending" in told[0] and "Dead one" in told[0]
 
 
-def test_an_empty_slot_is_reported_once_and_the_bank_is_not_taken(tmp_path):
+def test_an_empty_slot_is_silent_and_the_bank_is_not_taken(tmp_path):
     _plan(tmp_path, {})
     told = []
     d, calls = deps(tmp_path)
     d.topic = lambda piece, used: None
     d.intro_notify = told.append
-    p = _piece()
-    assert pipeline._pick_topic(p, d, tmp_path, set()) is None and pipeline._pick_topic(p, d, tmp_path, set()) is None
-    assert len(told) == 1 and "no trending topic" in told[0]
+    assert pipeline._pick_topic(_piece(), d, tmp_path, set()) is None and told == []
 
 
 def test_the_production_picker_never_takes_a_bank_topic_for_a_daily_slot(tmp_path, monkeypatch):

@@ -227,10 +227,7 @@ def _pick_topic(piece: Piece, deps: Deps, root: Path, used: set) -> dict | None:
         return {"from_long": long_id, "id": f"{long_p.topic.get('id', long_id)}#short{len(siblings) + 1}", "hook": hook,
                 "title": long_p.topic.get("title_hi", long_id), "long_scenes": long_p.script["scenes"], "long_facts": long_p.facts}
     topic = deps.topic(piece, used)
-    if slot and not topic and not piece.ids.get("no_trend_told"):
-        piece.ids["no_trend_told"] = True                       # once per video, not on every run
-        tell(f"⏳ {piece.id}: no trending topic is available for this slot yet. Nothing from the old bank is made; the next search fills it.")
-    return topic
+    return topic            # an empty daily slot is silent (founder, 28 Nov 2026: "I dont want to see any message that no trending topics"); the next search fills it
 
 
 def place_key(piece: Piece) -> str:
