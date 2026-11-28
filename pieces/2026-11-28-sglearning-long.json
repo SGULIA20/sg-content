@@ -50,7 +50,7 @@
    "research": 1
   },
   "cost": {
-   "inr": 207.0,
+   "inr": 213.0,
    "usd": 1.035566,
    "voice": 66
   },
@@ -62,6 +62,13 @@
    "licence": "CC BY 4.0",
    "title": "Life of Riley"
   },
+  "scene_clips": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
   "sound": "track",
   "watch": {
    "best_change": "Open on a picture of the crash itself, such as a red falling gold price chart with a bold '-24.6%', instead of a calm jewellery display, so the first second shows the shock the line promises.",
@@ -80,7 +87,8 @@
   "try 1: advice: guarantee",
   "review: redrawing 2 picture(s) before upload",
   "waiting for the founder's intro clip until 28 Nov 10:30 UTC",
-  "the founder's three moving clips were cut after it was assembled; put together again with them (28 Nov 2026)"
+  "the founder's three moving clips were cut after it was assembled; put together again with them (28 Nov 2026)",
+  "waiting for the founder's intro clip until 28 Nov 10:30 UTC"
  ],
  "script": {
   "captions": {
@@ -853,7 +861,7 @@
   },
   "title": "Sona 60 din mein 24.6% kyun gira?"
  },
- "status": "voiced",
+ "status": "intro-wait",
  "timings": [
   0.0,
   5.577,
@@ -989,6 +997,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-28T11:15:19+00:00",
+ "updated": "2026-11-28T11:35:51+00:00",
  "writer": "claude"
 }
