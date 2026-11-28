@@ -22,6 +22,13 @@ def long_for_short(channel: str, day: date) -> str:
     return slots.piece_id(day - timedelta(days=back), channel, "long")
 
 
+def long_before(channel: str, day: date):
+    """The long that went out the day before this Short, or None (founder, 28 Nov 2026: one Short is made from each long, the day
+    after it: Learning with SG on Thursday and Sunday, SG-MYTH-WORLD on Friday and Monday)."""
+    prev = day - timedelta(days=1)
+    return slots.piece_id(prev, channel, "long") if prev.weekday() in CHANNELS[channel].long_days else None
+
+
 def next_long_for_short(channel: str, day: date) -> str:
     """The long published after the Short's day (used as a teaser source when the previous long does not exist yet, e.g. launch week)."""
     ahead = min(((ld - day.weekday()) % 7 or 7) for ld in CHANNELS[channel].long_days)

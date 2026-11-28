@@ -21,6 +21,8 @@ PIECE_SCHEMA = {
         "hook": {"type": "string"},
         "scenes": {"type": "array", "items": SCENE},
         "end_question": {"type": "string"},
+        # a long only (founder, 28 Nov 2026): the first and last scene NUMBER (1-based) of the run of scenes that stands alone as a Short
+        "short_section": {"type": "array", "items": {"type": "integer"}},
         "cards": {"type": "array", "items": CARD},
         "captions": {"type": "object", "additionalProperties": False, "required": ["youtube", "instagram", "threads"],
                      "properties": {

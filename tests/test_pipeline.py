@@ -112,6 +112,50 @@ def test_make_is_idempotent_for_uploaded_piece(tmp_path):
     assert calls["write"] == 0
 
 
+def _long_with_section(tmp_path, channel="sglearning", day=date(2026, 10, 21), section=(5, 9)):
+    long_p = _piece("long", channel, day)                                    # a Wednesday: a Learning with SG long day
+    s = good_script(); s["scenes"] = [dict(sc, vo=f"line {i + 1}") for i, sc in enumerate(s["scenes"] * 4)]
+    if section:
+        s["short_section"] = list(section)
+    long_p.script = s; long_p.facts = FACTS; long_p.status = "uploaded"; long_p.topic = {"id": "gold-fall", "title": "Sona kyun gira", "hooks": ["h1"]}
+    pieces.save(long_p, tmp_path)
+    return long_p
+
+
+def test_the_short_of_the_day_after_a_long_is_made_from_its_marked_section(tmp_path):
+    _long_with_section(tmp_path)
+    seen = {}
+    def write_fn(piece, sheet, library, hashtags):
+        seen.update(sheet=sheet)
+        return {"script": good_script(), "writer": "claude"}
+    d, calls = deps(tmp_path, write=write_fn)
+    p = pipeline.make(_piece("short", "sglearning", date(2026, 10, 22)), d, tmp_path)
+    assert calls["research"] == 0 and calls["topics"] == 0 and p.status == "uploaded"        # no research, no other topic
+    assert p.topic["from_long"] == "2026-10-21-sglearning-long" and p.topic["id"] == "gold-fall#short"
+    assert [sc["vo"] for sc in seen["sheet"]["long_scenes"]] == ["line 5", "line 6", "line 7", "line 8", "line 9"]
+    assert "whole by itself" in seen["sheet"]["summary"] and seen["sheet"]["facts"] == FACTS
+
+
+def test_a_short_two_days_after_a_long_keeps_its_own_topic(tmp_path):
+    _long_with_section(tmp_path)
+    d, calls = deps(tmp_path)
+    p = pipeline.make(_piece("short", "sglearning", date(2026, 10, 23)), d, tmp_path)
+    assert "from_long" not in p.topic and calls["topics"] == 1 and calls["research"] == 1
+
+
+def test_short_from_long_gives_way_when_the_long_is_not_ready_or_already_used(tmp_path):
+    short = _piece("short", "sglearning", date(2026, 10, 22))
+    assert pipeline.short_from_long(short, tmp_path) is None                              # no long yet
+    _long_with_section(tmp_path, section=None)
+    got = pipeline.short_from_long(short, tmp_path)
+    assert got and len(got["long_scenes"]) == 12                                          # no marked run: the writer gets the whole long
+    assert pipeline.short_from_long(short, tmp_path, {"gold-fall#short"}) is None         # tried and turned down: the planned topic follows
+    other = _piece("short", "sglearning", date(2026, 10, 22)); other.id = "2026-10-22-sglearning-short-b"; other.topic = {"from_long": "2026-10-21-sglearning-long"}
+    pieces.save(other, tmp_path)
+    assert pipeline.short_from_long(short, tmp_path) is None                              # one Short per long
+    assert pipeline.short_from_long(_piece("long", "sglearning", date(2026, 10, 22)), tmp_path) is None
+
+
 def test_myth_short_reuses_long_scenes(tmp_path, monkeypatch):
     from engine import config
     monkeypatch.setattr(config, "STORY_FORMAT", {("sglearning", "short")})

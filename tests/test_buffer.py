@@ -61,3 +61,10 @@ def test_needed_puts_imminent_shorts_before_longs_and_one_long_per_batch(tmp_pat
     assert need[0] == (date(2026, 10, 21), "arthvan", "short") and need[1] == (date(2026, 10, 21), "sglearning", "short")
     assert need[2] == (date(2026, 10, 21), "sglearning", "long")
     assert need[3][2] == "short"                                      # the next long waits behind the next day's Shorts
+
+
+def test_long_before_is_only_the_day_after_a_long():
+    assert buffer.long_before("sglearning", date(2026, 11, 29)) == "2026-11-28-sglearning-long"      # Sunday, after Saturday's long
+    assert buffer.long_before("sglearning", date(2026, 11, 30)) is None
+    assert buffer.long_before("arthvan", date(2026, 11, 30)) == "2026-11-29-arthvan-long"            # Monday, after Sunday's long
+    assert buffer.long_before("arthvan", date(2026, 11, 28)) is None

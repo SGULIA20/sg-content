@@ -388,6 +388,10 @@ def message(plan: dict) -> str:
         lines.append(f"\n{label}")
         for pid, t in rows:
             kind = "long" if pid.endswith("long") else "Short"
+            if kind == "Short" and buffer.long_before(ch, date.fromisoformat(pid[:10])):       # 28 Nov 2026: the day after a long, its Short
+                lines.append(f"{date.fromisoformat(pid[:10]):%a %d} Short: made from the long of the day before (this topic only if that long is not ready: "
+                             f"{str(t.get('title') or t.get('title_hi') or '')[:60]})")
+                continue
             lines.append(f"{date.fromisoformat(pid[:10]):%a %d} {kind}: {str(t.get('title') or t.get('title_hi') or '')[:80]}")
     if len(lines) == 1:
         lines.append("Nothing new to make today: the videos due are already made.")
