@@ -416,7 +416,7 @@ def test_an_advice_word_is_reworded_on_the_same_topic(tmp_path):
     n = {"lint": 0}
     def lint_fn(piece, prior):
         n["lint"] += 1
-        return ["advice: becho"] if n["lint"] == 1 else []
+        return ["advice: becho", "politics: modi"] if n["lint"] == 1 else []
     d, calls = deps(tmp_path, lint=lint_fn)
     p = pipeline.make(_piece(), d, tmp_path)
     assert p.status == "uploaded" and calls["topics"] == 1 and calls["write"] == 2
