@@ -227,10 +227,7 @@ def _pick_topic(piece: Piece, deps: Deps, root: Path, used: set) -> dict | None:
         return {"from_long": long_id, "id": f"{long_p.topic.get('id', long_id)}#short{len(siblings) + 1}", "hook": hook,
                 "title": long_p.topic.get("title_hi", long_id), "long_scenes": long_p.script["scenes"], "long_facts": long_p.facts}
     topic = deps.topic(piece, used)
-    if slot and topic and not topic.get("weekly"):
-        tell(f"⚠️ {piece.id}: no trending topic was left for this slot, so an older bank topic was taken: "
-             f"{str(topic.get('title') or topic.get('title_hi') or topic.get('id') or '')[:80]}. It has no view evidence. Tell Claude to change it.")
-    return topic
+    return topic            # an empty daily slot is silent (founder, 28 Nov 2026: "I dont want to see any message that no trending topics"); the next search fills it
 
 
 def place_key(piece: Piece) -> str:
@@ -749,6 +746,8 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
         planned = weekly.topic_for(root, piece, used)                  # 7 Nov 2026: the weekly YouTube research plan comes first
         if planned and themes.allowed(planned, avoid, piece.channel):
             return planned
+        if piece.id == slots.piece_id(piece.publish_day, piece.channel, piece.kind):
+            return None            # founder, 28 Nov 2026: "do only and only trending topics": a daily slot never takes an old bank topic
         if piece.channel == "sglearning":
             if piece.kind == "long":                                   # 4 Nov 2026: a proven Short's question first, then the bank
                 # 10 Nov 2026: once one proven-Short news topic has failed research for this piece, go to the evergreen bank; the

@@ -186,13 +186,19 @@ def test_a_slot_whose_planned_topic_is_dead_borrows_the_next_trending_topic_and_
     assert len(told) == 1 and "Next trending" in told[0] and "Dead one" in told[0]
 
 
-def test_the_bank_is_never_taken_quietly(tmp_path):
+def test_an_empty_slot_is_silent_and_the_bank_is_not_taken(tmp_path):
     _plan(tmp_path, {})
     told = []
     d, calls = deps(tmp_path)
+    d.topic = lambda piece, used: None
     d.intro_notify = told.append
-    got = pipeline._pick_topic(_piece(), d, tmp_path, set())
-    assert calls["topics"] == 1 and got and len(told) == 1 and "bank topic" in told[0]
+    assert pipeline._pick_topic(_piece(), d, tmp_path, set()) is None and told == []
+
+
+def test_the_production_picker_never_takes_a_bank_topic_for_a_daily_slot(tmp_path, monkeypatch):
+    _plan(tmp_path, {})
+    d = pipeline.real_deps(tmp_path)
+    assert d.topic(_piece(day=date(2026, 12, 2)), set()) is None
 
 
 def test_myth_short_reuses_long_scenes(tmp_path, monkeypatch):

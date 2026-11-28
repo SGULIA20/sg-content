@@ -325,23 +325,8 @@ def build(root: Path, today: date, rows: dict, ask=_ask_claude, calendar: list |
                     if ch == "arthvan":
                         topic["allowed_sources"] = MYTH_SOURCES
                     break
-            if topic is None:                                                       # a gap: the best scored of the next few unused bank topics
-                def nxt(skip):
-                    return (topics.next_money_history(content, skip, day, avoid) if ch == "sglearning" else topics.next_myth(content, skip, day, avoid)) \
-                        if not (ch == "sglearning" and kind == "long") else topics.next_long_finance(content, skip, avoid=avoid)
-                looked, cands = set(used_ids), []
-                for _ in range(BANK_LOOK):
-                    b = nxt(looked)
-                    if not b or b.get("id") in looked:
-                        break
-                    looked.add(b.get("id"))
-                    if str(b.get("title") or b.get("title_hi") or "") not in used_here:
-                        cands.append(b)
-                bank = max(cands, key=lambda b: topicscore.score(b, ch, day, calendar)[0]) if cands else None   # max keeps the first of equals: bank order
-                title = str(bank.get("title") or bank.get("title_hi") or "") if bank else ""
-                if bank and title not in used_here:                               # a bank that has run round once repeats itself: leave the slot to the usual flow
-                    topic = {**bank, "weekly": True, "from_bank": True}
-                    used_ids.add(bank.get("id"))
+            if topic is None:                                                       # a gap stays empty (founder, 28 Nov 2026: "do only and only trending topics")
+                notes.append(f"{pid}: no trending topic found; the slot is left empty, never filled from the old banks")
             if topic:
                 week.append((day, themes.theme_of(topic, ch)))
                 used_here.append(str(topic.get("title") or topic.get("title_hi") or ""))
