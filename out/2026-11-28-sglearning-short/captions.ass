@@ -11,33 +11,33 @@ Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H800000
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.00,0:00:01.09,Default,,0,0,0,,2,000 ka note band hua,
-Dialogue: 0,0:00:01.09,0:00:03.27,Default,,0,0,0,,par notebandi jaisi line kyun nahi
-Dialogue: 0,0:00:03.27,0:00:03.63,Default,,0,0,0,,lagi?
-Dialogue: 0,0:00:04.08,0:00:06.05,Default,,0,0,0,,Dukaan wale ne gulabi note lene
-Dialogue: 0,0:00:06.05,0:00:06.87,Default,,0,0,0,,se mana kar diya.
-Dialogue: 0,0:00:06.87,0:00:08.18,Default,,0,0,0,,Ghar mein rakhe note ka ab
-Dialogue: 0,0:00:08.18,0:00:08.67,Default,,0,0,0,,kya hoga?
-Dialogue: 0,0:00:09.12,0:00:09.87,Default,,0,0,0,,Log samjhe,
-Dialogue: 0,0:00:09.87,0:00:12.36,Default,,0,0,0,,note raaton-raat kaagaz ban jayega.
-Dialogue: 0,0:00:12.36,0:00:14.10,Default,,0,0,0,,Lekin RBI ne is baar ek
-Dialogue: 0,0:00:14.10,0:00:15.34,Default,,0,0,0,,cheez alag rakhi.
-Dialogue: 0,0:00:15.79,0:00:17.81,Default,,0,0,0,,Note legal tender bana raha,
-Dialogue: 0,0:00:17.81,0:00:19.83,Default,,0,0,0,,yaani kanoon ki nazar mein chalu
-Dialogue: 0,0:00:19.83,0:00:20.23,Default,,0,0,0,,paisa.
-Dialogue: 0,0:00:20.68,0:00:20.93,Default,,0,0,0,,Kyun?
-Dialogue: 0,0:00:20.93,0:00:23.63,Default,,0,0,0,,Zyada tar note purane ho chuke
-Dialogue: 0,0:00:23.63,0:00:23.88,Default,,0,0,0,,the.
-Dialogue: 0,0:00:23.88,0:00:25.60,Default,,0,0,0,,Chhapai pehle hi band thi.
-Dialogue: 0,0:00:26.05,0:00:27.54,Default,,0,0,0,,Toh log badalne nahi gaye,
-Dialogue: 0,0:00:27.54,0:00:29.03,Default,,0,0,0,,seedha account mein jama kiya.
-Dialogue: 0,0:00:29.03,0:00:30.51,Default,,0,0,0,,Par cash jama karne ka ek
-Dialogue: 0,0:00:30.51,0:00:30.89,Default,,0,0,0,,niyam hai.
-Dialogue: 0,0:00:31.34,0:00:32.83,Default,,0,0,0,,Ek din mein 50,000 se zyada
-Dialogue: 0,0:00:32.83,0:00:33.48,Default,,0,0,0,,cash jama,
-Dialogue: 0,0:00:33.48,0:00:34.97,Default,,0,0,0,,toh PAN dena zaroori.
-Dialogue: 0,0:00:34.97,0:00:36.26,Default,,0,0,0,,Cash ka hisaab rakhiye.
-Dialogue: 0,0:00:36.26,0:00:38.40,Default,,0,0,0,,Yeh investment advice nahi hai.
-Dialogue: 0,0:00:38.85,0:00:39.90,Default,,0,0,0,,Yeh Papa ko bhejo,
-Dialogue: 0,0:00:39.90,0:00:41.47,Default,,0,0,0,,jo almari mein cash chhupa kar
-Dialogue: 0,0:00:41.47,0:00:42.00,Default,,0,0,0,,rakhte hain.
+Dialogue: 0,0:00:00.00,0:00:01.34,Default,,0,0,0,,2,000 ka note band hua,
+Dialogue: 0,0:00:01.34,0:00:04.02,Default,,0,0,0,,par notebandi jaisi line kyun nahi
+Dialogue: 0,0:00:04.02,0:00:04.46,Default,,0,0,0,,lagi?
+Dialogue: 0,0:00:04.92,0:00:07.25,Default,,0,0,0,,Dukaan wale ne gulabi note lene
+Dialogue: 0,0:00:07.25,0:00:08.22,Default,,0,0,0,,se mana kar diya.
+Dialogue: 0,0:00:08.22,0:00:09.78,Default,,0,0,0,,Ghar mein rakhe note ka ab
+Dialogue: 0,0:00:09.78,0:00:10.36,Default,,0,0,0,,kya hoga?
+Dialogue: 0,0:00:10.81,0:00:11.71,Default,,0,0,0,,Log samjhe,
+Dialogue: 0,0:00:11.71,0:00:14.71,Default,,0,0,0,,note raaton-raat kaagaz ban jayega.
+Dialogue: 0,0:00:14.71,0:00:16.81,Default,,0,0,0,,Lekin RBI ne is baar ek
+Dialogue: 0,0:00:16.81,0:00:18.31,Default,,0,0,0,,cheez alag rakhi.
+Dialogue: 0,0:00:18.76,0:00:20.88,Default,,0,0,0,,Note legal tender bana raha,
+Dialogue: 0,0:00:20.88,0:00:23.01,Default,,0,0,0,,yaani kanoon ki nazar mein chalu
+Dialogue: 0,0:00:23.01,0:00:23.43,Default,,0,0,0,,paisa.
+Dialogue: 0,0:00:23.88,0:00:24.11,Default,,0,0,0,,Kyun?
+Dialogue: 0,0:00:24.11,0:00:26.60,Default,,0,0,0,,Zyada tar note purane ho chuke
+Dialogue: 0,0:00:26.60,0:00:26.83,Default,,0,0,0,,the.
+Dialogue: 0,0:00:26.83,0:00:28.42,Default,,0,0,0,,Chhapai pehle hi band thi.
+Dialogue: 0,0:00:28.87,0:00:30.36,Default,,0,0,0,,Toh log badalne nahi gaye,
+Dialogue: 0,0:00:30.36,0:00:31.85,Default,,0,0,0,,seedha account mein jama kiya.
+Dialogue: 0,0:00:31.85,0:00:33.34,Default,,0,0,0,,Par cash jama karne ka ek
+Dialogue: 0,0:00:33.34,0:00:33.72,Default,,0,0,0,,niyam hai.
+Dialogue: 0,0:00:34.17,0:00:35.60,Default,,0,0,0,,Ek din mein 50,000 se zyada
+Dialogue: 0,0:00:35.60,0:00:36.22,Default,,0,0,0,,cash jama,
+Dialogue: 0,0:00:36.22,0:00:37.66,Default,,0,0,0,,toh PAN dena zaroori.
+Dialogue: 0,0:00:37.66,0:00:38.90,Default,,0,0,0,,Cash ka hisaab rakhiye.
+Dialogue: 0,0:00:38.90,0:00:40.95,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:41.40,0:00:42.36,Default,,0,0,0,,Yeh Papa ko bhejo,
+Dialogue: 0,0:00:42.36,0:00:43.80,Default,,0,0,0,,jo almari mein cash chhupa kar
+Dialogue: 0,0:00:43.80,0:00:44.28,Default,,0,0,0,,rakhte hain.
