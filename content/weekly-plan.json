@@ -56,24 +56,6 @@
    "follows": "Counterintuitive-question hook, a worldwide health myth, and it breaks the finance run.",
    "trend": true
   },
-  "2026-12-02-sglearning-long": {
-   "id": "wk-2026-12-02-sglearning-long",
-   "title": "Sona aur chandi achanak kyun gire, aur logon ne kya galat samjha?",
-   "summary": "A ten-minute telling of the recent gold and silver price fall: the timeline, drivers such as dollar, interest rates and profit-taking, what a fall means for jewellery buyers, ETFs and savers. Check the price levels and dates against LBMA, MCX or Reuters data.",
-   "hooks": [
-    "Sona itni tezi se kyun gira?",
-    "Kya sona sasta hua to ab khareedna sahi hai?"
-   ],
-   "weekly": true,
-   "topic_score": 5,
-   "topic_score_why": [
-    "+3 touches the viewer's own money",
-    "+1 a choice the viewer faces",
-    "+1 asks a question"
-   ],
-   "follows": "At least six gold-crash videos in the Hindi top list, 1.4M to 5.6M views each.",
-   "trend": true
-  },
   "2026-12-02-sglearning-short": {
    "id": "wk-2026-12-02-sglearning-short",
    "title": "GTA 6 par hazaaron crore kharch hue to paisa kaise wapas aayega?",
@@ -926,6 +908,24 @@
     "smithsonianmag.com",
     "a university or museum page"
    ]
+  },
+  "2026-11-28-sglearning-long": {
+   "id": "wk-2026-11-28-sglearning-long",
+   "title": "Sona aur chandi achanak kyun gire, aur asli galti kahan hoti hai?",
+   "summary": "A detailed study of the recent gold and silver fall (founder, 28 Nov 2026: 'Do on sona aur chandi achanak se kyun gire. Detailed study'). The timeline day by day with peak and current prices (LBMA, MCX, COMEX; check every level and date); the drivers one by one: the dollar, interest-rate expectations, profit-booking after the rally, margin changes on the exchanges, central-bank buying; how silver fell further and why; what earlier falls such as 2011 and 2013 looked like and how long recovery took; what it means for a jewellery buyer, a gold-loan holder, an ETF or SGB saver; and the mistakes most buyers make at the top and at the bottom. Explanation only, no advice to buy or sell.",
+   "hooks": [
+    "Sona kitne din mein kitna gira, aur kisne becha?",
+    "Kya sona sach mein hamesha surakshit hota hai?"
+   ],
+   "weekly": true,
+   "topic_score": 5,
+   "topic_score_why": [
+    "+3 touches the viewer's own money",
+    "+1 a choice the viewer faces",
+    "+1 asks a question"
+   ],
+   "follows": "Gold crash videos took 5.6M, 5.1M, 2M and 1.6M views in the Hindi list; the founder chose it for today's long.",
+   "trend": true
   }
  },
  "notes": [
