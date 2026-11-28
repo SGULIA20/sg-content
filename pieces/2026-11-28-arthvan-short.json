@@ -39,7 +39,9 @@
    "voice": 24
   },
   "drafts": 3,
+  "ig_reel_id": "17918892198550180",
   "ig_story_id": "skipped: Reel over 60 s",
+  "ig_trial": "SS_PERFORMANCE",
   "intro_sent": "2026-11-27T18:03:58+00:00",
   "music": {
    "by": "Kevin MacLeod (incompetech.com)",
@@ -60,6 +62,8 @@
    10
   ],
   "sound": "track",
+  "threads_id": "18101845925460074",
+  "threads_poll_id": "18127695556790757",
   "watch": {
    "best_change": "Open on the 'Little Boney' cartoon of a tiny, angry Napoleon next to a bold on-screen height like '5'7\"', so the myth and its debunking are visible in the very first second.",
    "issues": 3,
@@ -72,7 +76,8 @@
    8,
    9
   ],
-  "yt_id": "K0zLX1g9oyw"
+  "yt_id": "K0zLX1g9oyw",
+  "yt_long_link": "UgxBtvPMNBEwcu-9std4AaABAg"
  },
  "kind": "short",
  "publish_day": "2026-11-28",
@@ -263,7 +268,7 @@
   },
   "title": "Napoleon ko *baauna* kisne banaya? 🤯"
  },
- "status": "uploaded",
+ "status": "posted",
  "timings": [
   0.0,
   5.499,
@@ -360,6 +365,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-28T07:49:04+00:00",
+ "updated": "2026-11-28T16:10:31+00:00",
  "writer": "claude"
 }

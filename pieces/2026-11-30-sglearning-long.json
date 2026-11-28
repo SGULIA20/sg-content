@@ -100,11 +100,12 @@
    "research": 1
   },
   "cost": {
-   "inr": 189.0,
-   "usd": 0.956528,
+   "inr": 198.0,
+   "usd": 1.02167,
    "voice": 62
   },
   "drafts": 2,
+  "intro_sent": "2026-11-28T16:26:09+00:00",
   "music": {
    "by": "Kevin MacLeod (incompetech.com)",
    "licence": "CC BY 4.0",
@@ -127,7 +128,8 @@
  "publish_day": "2026-11-30",
  "reasons": [
   "try 1: numbers without a source: 1e+07",
-  "review: redrawing 3 picture(s) before upload"
+  "review: redrawing 3 picture(s) before upload",
+  "waiting for the founder's intro clip until 30 Nov 10:30 UTC"
  ],
  "script": {
   "captions": {
@@ -894,7 +896,7 @@
   },
   "title": "Avengers jaisi film kitna kamati hai? Blockbuster ka poora hisaab"
  },
- "status": "voiced",
+ "status": "intro-wait",
  "timings": [
   0.0,
   6.526,
@@ -967,6 +969,52 @@
    "Itna bada budget wapas kaise aata hai?"
   ],
   "id": "wk-2026-11-30-sglearning-long",
+  "intro": {
+   "aspect": "16:9",
+   "bridge": "",
+   "closing": "",
+   "options": [
+    {
+     "closing": "",
+     "question": "Ticket ka lagbhag aadha paisa gayab. Aap poora dete ho. Film banane walon tak pahunchta hi nahi. Toh kiske paas?",
+     "score": 6.7,
+     "text": "Ticket ka lagbhag aadha paisa gayab. Aap poora dete ho. Film banane walon tak pahunchta hi nahi. Toh kiske paas?",
+     "words": 20
+    },
+    {
+     "closing": "",
+     "question": "563 million views. Sirf 24 ghante mein. Phir bhi film flop ho sakti hai. Views se bill nahi bharta. Lekin kaise?",
+     "score": 6.0,
+     "text": "563 million views. Sirf 24 ghante mein. Phir bhi film flop ho sakti hai. Views se bill nahi bharta. Lekin kaise?",
+     "words": 21
+    },
+    {
+     "closing": "",
+     "question": "Aapke ticket ka aadha paisa. Film banane walon tak nahi pahunchta. Aap theatre mein paise dete ho. Phir woh kiske paas?",
+     "score": 6.0,
+     "text": "Aapke ticket ka aadha paisa. Film banane walon tak nahi pahunchta. Aap theatre mein paise dete ho. Phir woh kiske paas?",
+     "words": 21
+    },
+    {
+     "closing": "",
+     "question": "Film abhi theatre mein bhi nahi aayi. Phir bhi 563 million views mile. Sirf 24 ghante mein. Toh film hit hai? Pakka?",
+     "score": 5.3,
+     "text": "Film abhi theatre mein bhi nahi aayi. Phir bhi 563 million views mile. Sirf 24 ghante mein. Toh film hit hai? Pakka?",
+     "words": 22
+    },
+    {
+     "closing": "",
+     "question": "Beta bola, film record todegi. Papa ne poocha. Views ka, ya kamai ka? Dono mein bada farq hai. Kaisa farq?",
+     "score": 5.3,
+     "text": "Beta bola, film record todegi. Papa ne poocha. Views ka, ya kamai ka? Dono mein bada farq hai. Kaisa farq?",
+     "words": 20
+    }
+   ],
+   "prompt": "16:9 landscape, 1920x1080, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: night view of a crowded street outside a large Indian multiplex, young people in jackets gathered under warm lobby lights, excitement in the air, no signboards or text; the lower fifth is calm wet pavement reflecting the lights. Time of day and light, overriding anything darker in the setting above: bright golden-hour sunlight or clear daylight, a blue or golden sky, warm saturated colours, his face and clothes fully lit; never night, dusk, storm clouds, lightning, fog, grey overcast, a dark or desaturated look. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a maroon blazer over a black tee. His forehead is clean and bare: no tilak, no bindi, no vermilion or sandal-paste mark, no dot or line of any colour on his face. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1920x1080.",
+   "question": "Ticket ka lagbhag aadha paisa gayab. Aap poora dete ho. Film banane walon tak pahunchta hi nahi. Toh kiske paas?",
+   "text": "Ticket ka lagbhag aadha paisa gayab. Aap poora dete ho. Film banane walon tak pahunchta hi nahi. Toh kiske paas?",
+   "words": 20
+  },
   "patch_tries": 1,
   "summary": "How a big film's money works, with Avengers: Doomsday as the example (founder-chosen trending subject): the budget and what it pays for, the marketing spend, why theatres keep a share of every ticket, OTT and satellite rights, and the break-even point that decides hit or flop. Check: the trailer's reported views and release date, the film's reported budget, and ticket-revenue sharing between producers and theatres in India. Explanation only; no advice to invest.",
   "target_minutes": 12,
@@ -982,6 +1030,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-28T15:54:25+00:00",
+ "updated": "2026-11-28T16:26:57+00:00",
  "writer": "claude"
 }
