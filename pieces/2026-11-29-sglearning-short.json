@@ -60,11 +60,12 @@
    "research": 1
   },
   "cost": {
-   "inr": 33.0,
-   "usd": 0.185148,
+   "inr": 36.0,
+   "usd": 0.252326,
    "voice": 9
   },
   "drafts": 1,
+  "intro_sent": "2026-11-28T16:13:57+00:00",
   "music": {
    "by": "Kevin MacLeod (incompetech.com)",
    "licence": "CC BY 4.0",
@@ -89,7 +90,8 @@
   "voice budget of 160 requests reached for 2026-11-28",
   "voice budget of 160 requests reached for 2026-11-28",
   "voice budget of 160 requests reached for 2026-11-28",
-  "review: redrawing 1 picture(s) before upload"
+  "review: redrawing 1 picture(s) before upload",
+  "waiting for the founder's intro clip until 29 Nov 11:30 UTC"
  ],
  "script": {
   "captions": {
@@ -251,7 +253,7 @@
   },
   "title": "Sona chandi *achanak* kyun gire? 📉"
  },
- "status": "voiced",
+ "status": "intro-wait",
  "timings": [
   0.0,
   3.204,
@@ -270,6 +272,52 @@
    "Chandi sone se zyada kyun giri?"
   ],
   "id": "wk-2026-11-29-sglearning-short",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "",
+   "options": [
+    {
+     "closing": "",
+     "question": "Chandi 20 percent giri. Sona 13 percent gira. Sirf November mein. Saal bhar ki chadhai poori dab gayi. Yeh kisne kiya?",
+     "score": 6.3,
+     "text": "Chandi 20 percent giri. Sona 13 percent gira. Sirf November mein. Saal bhar ki chadhai poori dab gayi. Yeh kisne kiya?",
+     "words": 21
+    },
+    {
+     "closing": "",
+     "question": "Sona ek mahine mein 13 percent gira. Saal bhar chadha tha. Chandi lagbhag 20 percent toot gayi. Itna kisne becha?",
+     "score": 6.0,
+     "text": "Sona ek mahine mein 13 percent gira. Saal bhar chadha tha. Chandi lagbhag 20 percent toot gayi. Itna kisne becha?",
+     "words": 20
+    },
+    {
+     "closing": "",
+     "question": "Mummy sona khareedne wali hain. Shaadi ke liye. November mein sona 13 percent gira. Chandi lagbhag 20 percent giri. Ab kya?",
+     "score": 6.0,
+     "text": "Mummy sona khareedne wali hain. Shaadi ke liye. November mein sona 13 percent gira. Chandi lagbhag 20 percent giri. Ab kya?",
+     "words": 21
+    },
+    {
+     "closing": "",
+     "question": "Bade funds ne sona becha. Sirf November mein. Reportedly kisi aur jagah ghaata hua tha. Unhe paisa chahiye tha. Kahan ka ghaata?",
+     "score": 5.3,
+     "text": "Bade funds ne sona becha. Sirf November mein. Reportedly kisi aur jagah ghaata hua tha. Unhe paisa chahiye tha. Kahan ka ghaata?",
+     "words": 22
+    },
+    {
+     "closing": "",
+     "question": "Udhaar lekar girta daam pakda. Sona 13 percent gira. Chandi lagbhag 20 percent. Saal bhar ki chadhai ke baad. Kaun phansa?",
+     "score": 5.3,
+     "text": "Udhaar lekar girta daam pakda. Sona 13 percent gira. Chandi lagbhag 20 percent. Saal bhar ki chadhai ke baad. Kaun phansa?",
+     "words": 21
+    }
+   ],
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: close view of an Indian jewellery showroom glass counter, rows of heavy gold bangles and necklaces glowing under warm spotlights, the counter empty of customers, evening, natural shop light. Time of day and light, overriding anything darker in the setting above: bright golden-hour sunlight or clear daylight, a blue or golden sky, warm saturated colours, his face and clothes fully lit; never night, dusk, storm clouds, lightning, fog, grey overcast, a dark or desaturated look. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing a tan blazer over a pale pink shirt. His forehead is clean and bare: no tilak, no bindi, no vermilion or sandal-paste mark, no dot or line of any colour on his face. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGLearning watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "Chandi 20 percent giri. Sona 13 percent gira. Sirf November mein. Saal bhar ki chadhai poori dab gayi. Yeh kisne kiya?",
+   "text": "Chandi 20 percent giri. Sona 13 percent gira. Sirf November mein. Saal bhar ki chadhai poori dab gayi. Yeh kisne kiya?",
+   "words": 21
+  },
   "summary": "The Short of the 28 Nov long on the same subject (founder, 28 Nov 2026: 'on same topic you make short of that sona chandi ke rates kyun gire'). One clear answer in under a minute: how far gold and silver fell and in how many days (check peak and current prices against LBMA, MCX, COMEX), the two or three causes that mattered most (the dollar and interest-rate expectations, profit-booking after the rally, exchange margin changes), why silver fell further, and the one mistake buyers make. Explanation only, no advice to buy or sell. Point to the long video for the full study.",
   "target_minutes": null,
   "title": "Sona aur chandi ke rate achanak kyun gire?",
@@ -283,6 +331,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-28T15:21:48+00:00",
+ "updated": "2026-11-28T16:14:48+00:00",
  "writer": "claude"
 }
