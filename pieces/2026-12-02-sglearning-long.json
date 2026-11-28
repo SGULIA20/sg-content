@@ -92,13 +92,8 @@
    "unit": "pct"
   }
  ],
- "id": "2026-11-28-sglearning-long",
+ "id": "2026-12-02-sglearning-long",
  "ids": {
-  "budget": {
-   "day": "2026-11-28",
-   "drafts": 1,
-   "research": 2
-  },
   "cost": {
    "inr": 204.0,
    "usd": 1.465008,
@@ -108,32 +103,20 @@
    "https://www.livemint.com/market/stock-market-news/gold-price-crashes-over-rs-38-600-from-record-high-whatll-happen-amid-diwali-2026-fervour-right-time-to-buy-decoded-11792910366849.html",
    "proven-2026-10-30-sglearning-short"
   ],
-  "drafts": 2,
-  "music": {
-   "by": "Kevin MacLeod (incompetech.com)",
-   "licence": "CC BY 4.0",
-   "title": "Life of Riley"
-  },
-  "sound": "track",
   "watch": {
    "best_change": "Open on the contrast itself, with big on-screen numbers: 'Ghar: 3.6% · PPF: 7.1% — toh kiraya barbaadi kaise?' in the very first second, instead of a plain skyline and 'Ghar ki keemat.'",
    "issues": 6,
    "opening": 5,
    "verdict": "fix"
-  },
-  "watch_redo": [
-   3,
-   19,
-   23,
-   35
-  ]
+  }
  },
  "kind": "long",
- "publish_day": "2026-11-28",
+ "publish_day": "2026-12-02",
  "reasons": [
   "try 1: advice: guarantee",
   "try 2: no sourced facts survived the checks",
-  "review: redrawing 4 picture(s) before upload"
+  "review: redrawing 4 picture(s) before upload",
+  "kept as stock: made on 28 Nov for that day's slot by an older build; the founder chose the gold and silver fall for 28 Nov, so this goes out on 2 Dec"
  ],
  "script": {
   "captions": {
@@ -221,7 +204,7 @@
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "Photorealistic interior of an Indian bank branch after hours, empty loan desk with a closed file and a pen, soft tube light, polished floor in the lower fifth. Correction after review: Use a brighter, tense image: a split screen of a rent receipt and an EMI statement, or a person weighing both.",
+     "prompt": "Photorealistic interior of an Indian bank branch after hours, empty loan desk with a closed file and a pen, soft tube light, polished floor in the lower fifth.",
      "type": "art"
     },
     "vo": "Toh kaun jeetta hai? Kiraya ya EMI? Aur aakhir mein? Woh sawaal, jo bank kabhi nahi poochta."
@@ -385,7 +368,7 @@
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "Photorealistic view of a fork in a rural Indian road at sunset, one path leading to a village of houses, the other to a distant town, dusty road in the lower fifth. Correction after review: Show money going one way while a growing investment shows the other path, e.g. a down-payment cheque next to a growing fund.",
+     "prompt": "Photorealistic view of a fork in a rural Indian road at sunset, one path leading to a village of houses, the other to a distant town, dusty road in the lower fifth.",
      "type": "art"
     },
     "vo": "Isse kehte hain opportunity cost. Yaani jo paisa ek jagah laga, woh doosri jagah kya kama sakta tha. Ghar khareedne ka sabse bhoola hua kharcha yahi hai."
@@ -427,7 +410,7 @@
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "Photorealistic still life of a house key and a small pile of coins placed side by side on a polished wooden desk, soft side light, desk surface in the lower fifth. Correction after review: Replace them with Indian rupee coins or notes.",
+     "prompt": "Photorealistic still life of a house key and a small pile of coins placed side by side on a polished wooden desk, soft side light, desk surface in the lower fifth.",
      "type": "art"
     },
     "vo": "Isliye sahi muqabla yeh hai. Ghar ki keemat ka badhna, plus bacha hua kiraya. Saamne, down payment ka paisa kahin aur lagta toh kitna badhta."
@@ -559,7 +542,7 @@
     "label": null,
     "visual": {
      "card": null,
-     "prompt": "Photorealistic view of a porter carrying a heavy sack on his head through a crowded Indian railway platform, seen from behind, afternoon light, platform floor in the lower fifth. Correction after review: Show a tax form, ITR screen or salary slip with a deduction highlighted.",
+     "prompt": "Photorealistic view of a porter carrying a heavy sack on his head through a crowded Indian railway platform, seen from behind, afternoon light, platform floor in the lower fifth.",
      "type": "art"
     },
     "vo": "Aur purane regime mein bhi, chhoot ka matlab poora paisa wapas nahi. Sirf us hisse par tax bachta hai. Byaaj ka asli bojh phir bhi aap uthate ho."
@@ -897,7 +880,7 @@
   },
   "title": "Kiraya ya ghar khareedein: 20 saal ka poora hisaab"
  },
- "status": "voiced",
+ "status": "written",
  "timings": [
   0.0,
   6.335,
@@ -980,6 +963,6 @@
   "title": "Kiraye par rahein ya ghar khareedein: 20 saal ka poora hisaab",
   "voice": "voice_g8azc8xcwhlu"
  },
- "updated": "2026-11-28T08:35:50+00:00",
+ "updated": "2026-11-28T08:52:52+00:00",
  "writer": "claude"
 }
