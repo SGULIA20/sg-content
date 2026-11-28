@@ -71,7 +71,8 @@ def run(root: Path = ROOT, today: date | None = None, max_pieces: int = MAX_DEFA
         if (p.publish_day and p.publish_day > today and p.script and p.status in pipeline.RESUMABLE and p.status != "intro-wait"
                 and p.id == slots.piece_id(*slot) and slot not in plan):
             started.append(slot)
-    plan = started + plan                                       # first: they only need finishing, and a run makes a few pieces at most
+    # after what is due today and tomorrow, before the rest: they only need finishing, but never ahead of today's own videos
+    plan = [x for x in plan if (x[0] - today).days <= 1] + started + [x for x in plan if (x[0] - today).days > 1]
     if only:
         plan = [(d, c, k) for d, c, k in plan if f"{c}:{k}" in only]
     made, stopped, ok = [], "", True
