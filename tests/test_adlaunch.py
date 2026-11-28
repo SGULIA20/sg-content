@@ -161,3 +161,21 @@ def test_no_cost_per_subscriber_pause_with_the_new_limits():
     cfg = {"limits": {"USD": {"monthly_cap": 330, "budget_per_channel": 70}}}
     assert ads.decide(cfg, 200, 150, 0, False, "USD") == ""
     assert "cap" in ads.decide(cfg, 400, 330, 0, False, "USD")
+
+
+def test_conversion_is_created_once_and_its_public_ids_are_printed():
+    calls, sent, exists = [], [], {"v": False}
+    snippet = [{"type": "WEBPAGE", "globalSiteTag": "gtag('config', 'AW-123456789');", "eventSnippet": "gtag('event', 'conversion', {'send_to': 'AW-123456789/abcDEF-ghi'});"}]
+    def call(method, url, tok, json_body=None, headers=None):
+        if url.endswith(":search"):
+            return 200, {}, {"results": [{"conversionAction": {"status": "ENABLED", "tagSnippets": snippet}}] if exists["v"] else []}
+        calls.append(json_body); exists["v"] = bool(json_body and not json_body["validateOnly"]); return 200, {}, {}
+    assert adlaunch.conversion(CFG, {}, notify=sent.append, call=call, token="t") == 0              # check only
+    assert calls[0]["validateOnly"] is True and "check passed" in sent[0]
+    assert adlaunch.conversion(CFG, {}, notify=sent.append, call=call, token="t", live=True) == 0
+    op = calls[1]["mutateOperations"][0]["conversionActionOperation"]["create"]
+    assert calls[1]["validateOnly"] is False and op["type"] == "WEBPAGE" and op["name"] == adlaunch.CONVERSION_NAME
+    assert "AW-123456789" in sent[-1] and "AW-123456789/abcDEF-ghi" in sent[-1]
+    n = len(calls)
+    assert adlaunch.conversion(CFG, {}, notify=sent.append, call=call, token="t", live=True) == 0   # already there: nothing created twice
+    assert len(calls) == n
