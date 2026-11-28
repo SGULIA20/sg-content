@@ -1,0 +1,33 @@
+{
+ "score": 6,
+ "verdict": "fix first",
+ "faults": [
+  {
+   "at": 4,
+   "kind": "quality",
+   "what": "Noticeable generative AI distortion in faces and hands of background store customers.",
+   "fix": "Replace background footage with cleaner stock video or touch up distorted faces."
+  },
+  {
+   "at": 25,
+   "kind": "quality",
+   "what": "Trading floor shot features visible AI artifacts in trader hands and monitors.",
+   "fix": "Use authentic financial news footage or higher-fidelity stock imagery."
+  },
+  {
+   "at": 78,
+   "kind": "quality",
+   "what": "Crowded jewelry showroom shows morphed facial features among background shoppers.",
+   "fix": "Swap out with realistic b-roll clip."
+  },
+  {
+   "at": 427,
+   "kind": "quality",
+   "what": "Silver plate craft shot displays minor unnatural finger anatomy on artisan.",
+   "fix": "Substitute with real craft b-roll."
+  }
+ ],
+ "strongest": "The balance scale and seesaw visual metaphors clearly communicate complex macroeconomic mechanisms alongside the voiceover.",
+ "weakest": "Frequent AI-generated crowd shots contain warped facial artifacts that lower production polish.",
+ "lines_heard": 66
+}

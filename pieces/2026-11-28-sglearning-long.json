@@ -44,19 +44,32 @@
  ],
  "id": "2026-11-28-sglearning-long",
  "ids": {
+  "audit": {
+   "faults": 4,
+   "score": 6,
+   "verdict": "fix first"
+  },
   "budget": {
    "day": "2026-11-28",
    "drafts": 2,
    "research": 1
   },
+  "captions": {
+   "en": "AUieDaZOaAYd_aAwN1aqRPxwRSs52XcNxrf6PY5-sSXZYChU6D3X_8IL",
+   "gu": "AUieDaaT05CMONuUPFr_fwbM6N6PGFrhLnrzNJXIdMdMWj9nyxP8m_H454j_rLBBF_h2dwtZ-Mk",
+   "hi": "AUieDaZykPH8Upv4U4wfvgKAbijSh3BRJSWUfnjNE91U_m64XpSVmYBeNYeCIFGCwoudkM0",
+   "mr": "AUieDaY9vKfuHQFBAGlrb1HX27blBjPOfr3a8pUyXhzdvv8rSbMRSnJDdoktbJOnC-o",
+   "ta": "AUieDab5GDXqXrD629ssPLR5fHpBaVAq_-L35MR__IKBL5b2dWlwUqj8OWdIjcOYUKs"
+  },
   "cost": {
    "inr": 213.0,
-   "usd": 1.035566,
+   "usd": 1.460076,
    "voice": 66
   },
   "drafts": 2,
   "intro_overdue": "2026-11-28T11:14:21+00:00",
   "intro_sent": "2026-11-28T11:14:21+00:00",
+  "intro_skipped": "2026-11-28T12:44:33+00:00",
   "music": {
    "by": "Kevin MacLeod (incompetech.com)",
    "licence": "CC BY 4.0",
@@ -79,7 +92,8 @@
   "watch_redo": [
    0,
    3
-  ]
+  ],
+  "yt_id": "wP2sURY-kLM"
  },
  "kind": "long",
  "publish_day": "2026-11-28",
@@ -861,7 +875,7 @@
   },
   "title": "Sona 60 din mein 24.6% kyun gira?"
  },
- "status": "intro-wait",
+ "status": "uploaded",
  "timings": [
   0.0,
   5.577,
@@ -983,6 +997,7 @@
    "text": "Sona 24.6 percent gira. Sirf 60 din mein. 1982 ke baad sabse bura. Lekin sona toh safe tha. Phir kyun?",
    "words": 20
   },
+  "look": "claymation",
   "patch_tries": 1,
   "summary": "A detailed study of the recent gold and silver fall (founder, 28 Nov 2026: 'Do on sona aur chandi achanak se kyun gire. Detailed study'). The timeline day by day with peak and current prices (LBMA, MCX, COMEX; check every level and date); the drivers one by one: the dollar, interest-rate expectations, profit-booking after the rally, margin changes on the exchanges, central-bank buying; how silver fell further and why; what earlier falls such as 2011 and 2013 looked like and how long recovery took; what it means for a jewellery buyer, a gold-loan holder, an ETF or SGB saver; and the mistakes most buyers make at the top and at the bottom. Explanation only, no advice to buy or sell.",
   "target_minutes": 12,
@@ -997,6 +1012,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-28T11:35:51+00:00",
+ "updated": "2026-11-28T12:46:25+00:00",
  "writer": "claude"
 }
