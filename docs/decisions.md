@@ -363,3 +363,4 @@ line here (who, date) in the same change. Newest first.
 
 - A draft that uses a buy-or-sell word is reworded on the same topic, not dropped for another topic (28 Nov 2026: the founder's gold-and-silver long said 'becho' while explaining who sold, the advice rule turned it down and the slot went to a bank topic). The word still never ships; the founder's topic is kept.
 - The daily voice cap is 160 requests, up from 80 (28 Nov 2026: with two days of stock to fill, the first 80 were used by 10:35 WAT on a long that was then set aside, and the founder's gold-and-silver long could not be voiced the same day). The monthly money ceilings are unchanged.
+- The 28 Nov 2,000 note Short stays as scheduled with two moving clips (founder, 28 Nov 2026: 'no replacing of the scheduled 2000 note short'); his third clip arrived after the upload and is not used.
