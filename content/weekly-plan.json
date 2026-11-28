@@ -346,37 +346,6 @@
    "spare": true,
    "trend": true
   },
-  "2026-11-29-arthvan-long": {
-   "id": "wk-2026-11-29-arthvan-long",
-   "title": "Japan ne Ramayan Bollywood se pehle kaise banayi?",
-   "summary": "Told as people tell it: Japan made Ramayan first. Check the 1993 Japan-India anime Ramayana: The Legend of Prince Rama (Yugo Sako, Ram Mohan), the older Japanese Rama tales in Konjaku Monogatari, and how Rama travelled via Buddhist texts.",
-   "hooks": [
-    "Japan ne Bollywood se pehle Ramayan banayi thi, sach mein?",
-    "Japani Ram aur Sita kaise bane, kisne banaya?"
-   ],
-   "weekly": true,
-   "topic_score": 8,
-   "topic_score_why": [
-    "+4 one of the most-watched names",
-    "+3 a shock question or a mystery",
-    "+1 asks a question"
-   ],
-   "follows": "Japan Ramayana Short has 10M views; Ramayan stays popular, but this one is non-India framed and checkable.",
-   "viral": true,
-   "allowed_sources": [
-    "asi.nic.in",
-    "en.wikipedia.org",
-    "nio.res.in",
-    "britannica.com",
-    "the scripture or text named in the story",
-    "nasa.gov",
-    "who.int",
-    "nih.gov",
-    "nationalgeographic.com",
-    "smithsonianmag.com",
-    "a university or museum page"
-   ]
-  },
   "2026-11-29-arthvan-short": {
    "id": "wk-2026-11-29-arthvan-short",
    "title": "Annabelle gudiya sach mein bhootiya thi?",
@@ -926,6 +895,37 @@
    ],
    "follows": "Gold crash videos took 5.6M, 5.1M, 2M and 1.6M views in the Hindi list; the founder chose it for today's long.",
    "trend": true
+  },
+  "2026-12-01-arthvan-long": {
+   "id": "wk-2026-11-29-arthvan-long",
+   "title": "Japan ne Ramayan Bollywood se pehle kaise banayi?",
+   "summary": "Told as people tell it: Japan made Ramayan first. Check the 1993 Japan-India anime Ramayana: The Legend of Prince Rama (Yugo Sako, Ram Mohan), the older Japanese Rama tales in Konjaku Monogatari, and how Rama travelled via Buddhist texts.",
+   "hooks": [
+    "Japan ne Bollywood se pehle Ramayan banayi thi, sach mein?",
+    "Japani Ram aur Sita kaise bane, kisne banaya?"
+   ],
+   "weekly": true,
+   "topic_score": 8,
+   "topic_score_why": [
+    "+4 one of the most-watched names",
+    "+3 a shock question or a mystery",
+    "+1 asks a question"
+   ],
+   "follows": "Japan Ramayana Short has 10M views; Ramayan stays popular, but this one is non-India framed and checkable.",
+   "viral": true,
+   "allowed_sources": [
+    "asi.nic.in",
+    "en.wikipedia.org",
+    "nio.res.in",
+    "britannica.com",
+    "the scripture or text named in the story",
+    "nasa.gov",
+    "who.int",
+    "nih.gov",
+    "nationalgeographic.com",
+    "smithsonianmag.com",
+    "a university or museum page"
+   ]
   }
  },
  "notes": [

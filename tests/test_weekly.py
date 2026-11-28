@@ -140,7 +140,7 @@ def test_both_channels_keep_two_days_of_stock():
     need = buffer.needed(Path("/nonexistent"), date(2026, 12, 2))                # a Wednesday
     days = lambda ch, kind: [(d - date(2026, 12, 2)).days for d, c, k in need if c == ch and k == kind]
     assert max(days("sglearning", "short")) == 2 and max(days("arthvan", "short")) == 2
-    assert days("sglearning", "long") == [0] and days("arthvan", "long") == [1]        # Thursday's SG-MYTH long is made a day ahead
+    assert days("sglearning", "long") == [0, 2] and days("arthvan", "long") == [1, 3]   # a long every other day: today's and the next one, 5 days in view
 
 
 def test_a_subject_made_weeks_ago_is_still_remembered_and_a_market_rally_is_not_politics(tmp_path):

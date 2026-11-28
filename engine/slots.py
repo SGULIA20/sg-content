@@ -11,6 +11,18 @@ IST = timezone(timedelta(hours=5, minutes=30), name="IST")
 EXTRA_LONG_DAYS = {"sglearning": (date(2026, 11, 9), date(2026, 11, 16)), "arthvan": (date(2026, 11, 10), date(2026, 11, 17))}
 
 
+# Long videos every other day (founder, 28 Nov 2026: "long videos suppose to go every alternate day mon, wed, fri - SG learning and tue, thur,
+# sat SG myth"): three a week on each channel from Sunday 29 Nov. Before that date the old table (Learning Wed + Sat, SG-MYTH Thu + Sun) holds,
+# so every video already made, scheduled or measured keeps its day.
+LONG_DAYS_FROM = date(2026, 11, 29)
+OLD_LONG_DAYS = {"sglearning": frozenset({2, 5}), "arthvan": frozenset({3, 6})}
+
+
+def is_long_day(channel: str, d: date) -> bool:
+    days = config.CHANNELS[channel].long_days if d >= LONG_DAYS_FROM else OLD_LONG_DAYS[channel]
+    return d.weekday() in days or d in EXTRA_LONG_DAYS.get(channel, ())
+
+
 def ist(dt_utc: datetime) -> datetime:
     if dt_utc.tzinfo is None:
         dt_utc = dt_utc.replace(tzinfo=timezone.utc)
@@ -29,7 +41,7 @@ def publish_dates(channel: str, kind: str, start: date, days: int) -> list:
         d = start + timedelta(days=i)
         if kind == "short" and d.weekday() in ch.short_days:
             out.append(d)
-        elif kind == "long" and (d.weekday() in ch.long_days or d in EXTRA_LONG_DAYS.get(channel, ())):
+        elif kind == "long" and is_long_day(channel, d):
             out.append(d)
     return out
 

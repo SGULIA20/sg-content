@@ -37,7 +37,8 @@ def test_two_days_of_stock_for_shorts_and_longs_on_both_channels(tmp_path, monke
     need = buffer.needed(tmp_path, date(2026, 10, 21), horizon_short=7, horizon_long=10)
     for ch in ("sglearning", "arthvan"):
         assert sorted(d for d, c, k in need if c == ch and k == "short") == [date(2026, 10, 21), date(2026, 10, 22), date(2026, 10, 23)]
-    assert sorted((d, c) for d, c, k in need if k == "long") == [(date(2026, 10, 21), "sglearning"), (date(2026, 10, 22), "arthvan")]   # Saturday's waits for Thursday
+    assert sorted((d, c) for d, c, k in need if k == "long") == [(date(2026, 10, 21), "sglearning"), (date(2026, 10, 22), "arthvan"), (date(2026, 10, 24), "sglearning"),
+                                                                   (date(2026, 10, 25), "arthvan")]   # five days hold today's long and the next one (old table, before 29 Nov)
 
 
 def test_myth_short_needs_its_long(tmp_path):
@@ -64,7 +65,9 @@ def test_needed_puts_imminent_shorts_before_longs_and_one_long_per_batch(tmp_pat
 
 
 def test_long_before_is_only_the_day_after_a_long():
-    assert buffer.long_before("sglearning", date(2026, 11, 29)) == "2026-11-28-sglearning-long"      # Sunday, after Saturday's long
-    assert buffer.long_before("sglearning", date(2026, 11, 30)) is None
-    assert buffer.long_before("arthvan", date(2026, 11, 30)) == "2026-11-29-arthvan-long"            # Monday, after Sunday's long
-    assert buffer.long_before("arthvan", date(2026, 11, 28)) is None
+    assert buffer.long_before("sglearning", date(2026, 11, 29)) == "2026-11-28-sglearning-long"      # Sunday, after Saturday's last old-table long
+    assert buffer.long_before("sglearning", date(2026, 12, 1)) == "2026-11-30-sglearning-long"       # Tuesday, after Monday's
+    assert buffer.long_before("sglearning", date(2026, 12, 3)) == "2026-12-02-sglearning-long"
+    assert buffer.long_before("sglearning", date(2026, 12, 2)) is None
+    assert buffer.long_before("arthvan", date(2026, 12, 2)) == "2026-12-01-arthvan-long"            # Wednesday, after Tuesday's
+    assert buffer.long_before("arthvan", date(2026, 12, 1)) is None

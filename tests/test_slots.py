@@ -56,5 +56,14 @@ def test_the_two_week_third_long_day_and_nothing_after(tmp_path):
     assert slots.publish_dates("arthvan", "long", date(2026, 11, 9), 7) == [date(2026, 11, 10), date(2026, 11, 12), date(2026, 11, 15)]
     assert date(2026, 11, 16) in slots.publish_dates("sglearning", "long", date(2026, 11, 16), 1)
     assert date(2026, 11, 17) in slots.publish_dates("arthvan", "long", date(2026, 11, 17), 1)
-    assert slots.publish_dates("sglearning", "long", date(2026, 11, 23), 14) == [date(2026, 11, 25), date(2026, 11, 28), date(2026, 12, 2), date(2026, 12, 5)]
-    assert slots.publish_dates("arthvan", "long", date(2026, 11, 23), 7) == [date(2026, 11, 26), date(2026, 11, 29)]
+    assert slots.publish_dates("sglearning", "long", date(2026, 11, 23), 6) == [date(2026, 11, 25), date(2026, 11, 28)]     # the old Wed + Sat until 28 Nov
+    assert slots.publish_dates("arthvan", "long", date(2026, 11, 23), 6) == [date(2026, 11, 26)]
+
+
+def test_long_videos_every_other_day_from_29_nov():
+    """founder, 28 Nov 2026: Learning with SG Mon, Wed, Fri; SG-MYTH-WORLD Tue, Thu, Sat; the old tables hold before 29 Nov."""
+    assert slots.publish_dates("sglearning", "long", date(2026, 11, 28), 14) == [date(2026, 11, 28), date(2026, 11, 30), date(2026, 12, 2), date(2026, 12, 4),
+                                                                              date(2026, 12, 7), date(2026, 12, 9), date(2026, 12, 11)]
+    assert slots.publish_dates("arthvan", "long", date(2026, 11, 28), 14) == [date(2026, 12, 1), date(2026, 12, 3), date(2026, 12, 5), date(2026, 12, 8),
+                                                                           date(2026, 12, 10)]
+    assert slots.publish_dates("arthvan", "long", date(2026, 11, 26), 1) == [date(2026, 11, 26)]      # last Thursday of the old table
