@@ -1,0 +1,258 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 13.0,
+   "quote": "MCX gold has fallen around 13% so far this month, while silver has plunged nearly 20%, extending losses after a strong rally over the past year.",
+   "source_date": "2026-11-25",
+   "source_name": "Mint",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgt4c9yDadwHguUrX-2XyAtyvlJQaxTqlvvsvTbCEG-tKNOiZeKiW_Hs37NoDVkp5q24pD9GLnjVB3SC4sT54iWqZu23HSjZJsgrM02yZQvZjjhB6VcZoSR6CPemyz8Oy30FlHt5e9zBrEi3qza-Juz5dy-s_mECNjOaLPqU99j_C91hA1cXFgUmoAAi0HJhwYR32JAzD6_Y9NnZQz3nwsJ9dZPipouhOnhDFy3uk_BWiEzEesUEnSxJQ_gJ5K6cFPXIylM0Hy-r1dJL0fMcgcuoznt-cxggqBI6zBpRqj6ykBSzw",
+   "text": "Gold prices on India's Multi Commodity Exchange (MCX) fell by around 13 percent in November 2026, while silver dropped by nearly 20 percent.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 136712.0,
+   "quote": "Silver futures on the MCX crashed another ₹8,800 per kg to ₹1,36,712, their lowest level since September 2025.",
+   "source_date": "2026-11-25",
+   "source_name": "Mint",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAleVWrTlalEq8aLg4k6IPDZh3HWC_Q6oNUZ_3uFD-xYbIud1fc9dsxEGOhwHOOT3dNE2XO1axICdybn0EnJGDCC2GCahUprZLELxsbIZ1kVNk2VXHIZUyZbaCXyjtgTte9pywdfKYrZHlWUYzEIOJrC66hl-V1AwESRAWJS5gUi9f4SO8Mqnmp7-GGrBVZG6-iIdhBX4H_1nfny9rmW3aUNNuCrN0S-pl6f2KzAiuI1d-klyPaCiPsW4LYXg6ThWB3MYbPpquRuC3ZrCKXa9ReZsIJjARyUYU2LTvvPUEQ_Z8aw==",
+   "text": "MCX silver futures sank to 1,36,712 rupees per kilogram, marking their lowest price level since September 2025.",
+   "unit": "INR"
+  },
+  {
+   "label": "analyst-view",
+   "number": 90.0,
+   "quote": "“The pullback reflects a firmer US dollar and rising bond yields after US consumer prices rose 0.4% in October, lifting market expectations of a December Federal Reserve rate hike to nearly 90%,” explained Rajeev Sharan, Head of Research, Brickwork Ratings.",
+   "source_date": "2026-11-19",
+   "source_name": "Mint",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSSvBVMhnHa5tjlRhvVskzdKNHxTVUvm-aGvh8VuHJVETzooOMjmNESGpsej9Riwk4-x658ZEhNByDZYP5iVZ1NfMxvftdjPEfi_-fHuxi2IijbZYcdK0yH99ay8Mv6ZWr8IPdxdyrENNA_R3-fux7oYbuPog2GLBLrlUAuqRu789PX3bLDzm4HpzGk9R_R4_BPNAgVc5D-6haeGItaBnvhjBrZN03J5eYylaQQmjEAsduf-Ufbp5Nm2QJShmklEwVQsghSuLeQFM_p2ridvkg8xIHUQlf-cwwriCtKcVbcZF3w3aqi_E=",
+   "text": "Market expectations for a US Federal Reserve interest rate hike reached nearly 90 percent after October inflation figures came in higher than anticipated.",
+   "unit": "pct"
+  },
+  {
+   "label": "analyst-view",
+   "number": 20.0,
+   "quote": "He said managed-money positions in Comex metals had declined by around $20 billion since October, partly as investors raised funds to cover losses in other asset classes, including AI-related investments.",
+   "source_date": "2026-11-25",
+   "source_name": "Mint",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgt4c9yDadwHguUrX-2XyAtyvlJQaxTqlvvsvTbCEG-tKNOiZeKiW_Hs37NoDVkp5q24pD9GLnjVB3SC4sT54iWqZu23HSjZJsgrM02yZQvZjjhB6VcZoSR6CPemyz8Oy30FlHt5e9zBrEi3qza-Juz5dy-s_mECNjOaLPqU99j_C91hA1cXFgUmoAAi0HJhwYR32JAzD6_Y9NnZQz3nwsJ9dZPipouhOnhDFy3uk_BWiEzEesUEnSxJQ_gJ5K6cFPXIylM0Hy-r1dJL0fMcgcuoznt-cxggqBI6zBpRqj6ykBSzw",
+   "text": "Institutional money managers liquidated roughly 20 billion US dollars in Comex metals positions after October to cover liquidity demands in equity and tech holdings.",
+   "unit": "billion USD"
+  },
+  {
+   "label": "analyst-view",
+   "number": null,
+   "quote": "Silver also tends to fall harder than gold on the same news, because its market is smaller.",
+   "source_date": "2026-11-20",
+   "source_name": "LiteFinance",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsA7s2-ZG0jFUm-yh_EtZlxkSzPwEtu1cE0zd7sbklwC04SDJh3-WNtFGS4DJWlgSLa8xqxzT7w8p55VA4LU2RsSbNXE82GfKvkobirK0iFEU9QsTozMyiJ6WSRdTZ7gL8E_F9aF9YmCSOCuiFJK4yVpcJ59HTVQNLrSg2pQ8O9gXw24tJrxgOPKLzpcGknnEZUC4d4LQ=",
+   "text": "Silver prices experience significantly steeper drops than gold during market pullbacks because the silver market has smaller liquidity and lower overall size.",
+   "unit": null
+  }
+ ],
+ "id": "2026-11-29-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-28",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 0.0,
+   "usd": 0.142112,
+   "voice": 0
+  },
+  "drafts": 1
+ },
+ "kind": "short",
+ "publish_day": "2026-11-29",
+ "reasons": [
+  "voice budget of 80 requests reached for 2026-11-28"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Sona ek mahine mein lagbhag 13 percent, chandi lagbhag 20 percent neeche. 📉\nAmerica mein byaaj badhne ki umeed, mazboot dollar, aur funds ki majboori wali bikri.\nChandi ka bazaar chhota hai, isliye jhatka bada.\nAap ne upar khareeda tha ya intezaar kar rahe ho?\nYeh investment advice nahi hai.\nShare karo Mummy ko, jo shaadi ke liye sona khareedne wali hain.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#HinglishFinance",
+     "#PersonalFinanceIndia",
+     "#InvestingIndia",
+     "#MoneyTipsHindi",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Sona November mein lagbhag 13 percent gira, chandi lagbhag 20 percent. Kaaran: America mein byaaj badhne ki umeed, mazboot dollar, aur funds ki bikri. Aapne upar khareeda tha ya ab soch rahe ho? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Sona November mein lagbhag 13 percent gira, chandi lagbhag 20 percent. America mein byaaj badhne ki umeed, mazboot dollar aur bade funds ki majboori mein bikri ne daam dabaye. Chandi ka bazaar chhota hai, isliye woh zyada giri. Share karo Mummy ko, jo shaadi ke liye sona khareedne wali hain.",
+    "tags": [
+     "sona",
+     "chandi",
+     "gold price",
+     "silver price",
+     "gold crash",
+     "MCX gold",
+     "sona kyun gira",
+     "chandi kyun giri",
+     "gold news hindi",
+     "Learning with SG"
+    ],
+    "title": "Sona Chandi Kyun Gire? 13% Ek Mahine Mein"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Yeh Mummy ko bhejo, jo shaadi ke liye sona khareedne wali hain.",
+  "hook": "Sona sirf November mein lagbhag 13 percent kyun gira?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of an Indian jewellery showroom glass counter, rows of heavy gold bangles and necklaces glowing under warm spotlights, the counter empty of customers, evening, natural shop light, no text",
+     "type": "art"
+    },
+    "vo": "Sona sirf November mein lagbhag 13 percent kyun gira?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of an Indian middle-aged couple at a jewellery shop counter, the woman holding a small gold chain in her palm, both looking uneasy, shopkeeper behind the counter, afternoon light, no text",
+     "type": "art"
+    },
+    "vo": "Saal bhar sona chandi lagatar chadhe. Jisne upar khareeda, uska paisa ab phansa."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "stakes",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of a silversmith's wooden tray in an old Indian bazaar shop, silver anklets, coins and plates piled loosely, dull morning light falling through a half-open shutter, no text",
+     "type": "art"
+    },
+    "vo": "Aur chandi lagbhag 20 percent giri. Itna kisne becha?"
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "cause 1",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a busy American supermarket aisle, shoppers pushing carts past shelves of groceries, a woman frowning at items in her hand, bright indoor light, no readable text or price tags",
+     "type": "art"
+    },
+    "vo": "Pehla kaaran: America mein mehngai umeed se zyada nikli. Wahan byaaj badhne ki baat chal padi."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "cause 2",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of a neat stack of US dollar notes beside a single small gold bar on a dark wooden desk, cold office light from a window, no readable text",
+     "type": "art"
+    },
+    "vo": "Dollar mazboot hua, sona dab gaya. Phir bade funds bhi bechne utre."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "cause 3",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic glass-walled office in a financial district at night, a few tired fund managers in suits standing around a meeting table with papers, city lights outside, tense mood, no screens or text visible",
+     "type": "art"
+    },
+    "vo": "Reportedly, unhe AI wale shares mein ghaata hua. Paisa chahiye tha, toh sona chandi bech diya."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "why silver",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic side-by-side on a vault shelf: a large tall stack of gold bars next to a much smaller stack of silver bars, cool metallic light, dramatic shadows, no text",
+     "type": "art"
+    },
+    "vo": "Chandi zyada kyun giri? Uska bazaar chhota hai, thoda bechna bhi bada jhatka."
+   },
+   {
+    "facts_used": [],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of a young Indian man's hands at a dining table at night, a loan document and a small gold coin side by side under a single lamp, the mood hesitant, no readable text",
+     "type": "art"
+    },
+    "vo": "Sabse badi galti? Udhaar lekar girta daam pakadna. Yeh investment advice nahi hai. Poori kahani kal wali lambi video mein."
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian home in the evening, a mother in a saree seen from behind opening a steel almirah where a red jewellery box sits, warm tube-light glow, no text",
+     "type": "art"
+    },
+    "vo": "Yeh Mummy ko bhejo, jo shaadi ke liye sona khareedne wali hain."
+   }
+  ],
+  "thumbnail": {
+   "name": "SONA CHANDI",
+   "name_hi": "सोना चांदी",
+   "scene": "LEFT: a tall glowing stack of gold and silver bars under bright showroom lights; RIGHT: the same stack cut down to half, silver bars scattered and dull on a dark counter",
+   "words": [
+    "20%",
+    "DOOBA"
+   ],
+   "words_hi": [
+    "20%",
+    "डूबा"
+   ]
+  },
+  "title": "Sona chandi *achanak* kyun gire? 📉"
+ },
+ "status": "failed-voice",
+ "timings": [],
+ "topic": {
+  "follows": "Gold crash videos took 5.6M, 5.1M, 2M and 1.6M views in the Hindi list; the founder asked for the Short of today's long.",
+  "hooks": [
+   "Sona kitne din mein kitna gira, aur kisne becha?",
+   "Chandi sone se zyada kyun giri?"
+  ],
+  "id": "wk-2026-11-29-sglearning-short",
+  "summary": "The Short of the 28 Nov long on the same subject (founder, 28 Nov 2026: 'on same topic you make short of that sona chandi ke rates kyun gire'). One clear answer in under a minute: how far gold and silver fell and in how many days (check peak and current prices against LBMA, MCX, COMEX), the two or three causes that mattered most (the dollar and interest-rate expectations, profit-booking after the rally, exchange margin changes), why silver fell further, and the one mistake buyers make. Explanation only, no advice to buy or sell. Point to the long video for the full study.",
+  "target_minutes": null,
+  "title": "Sona aur chandi ke rate achanak kyun gire?",
+  "topic_score": 5,
+  "topic_score_why": [
+   "+3 touches the viewer's own money",
+   "+1 a choice the viewer faces",
+   "+1 asks a question"
+  ],
+  "trend": true,
+  "voice": "voice_7o0kddoq6q2z",
+  "weekly": true
+ },
+ "updated": "2026-11-28T10:07:29+00:00",
+ "writer": "claude"
+}
