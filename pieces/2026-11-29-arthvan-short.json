@@ -150,12 +150,13 @@
    "research": 2
   },
   "cost": {
-   "inr": 42.0,
-   "usd": 0.27036,
+   "inr": 45.0,
+   "usd": 0.369992,
    "voice": 12
   },
   "drafts": 1,
   "ig_story_id": "skipped: Reel over 60 s",
+  "intro_sent": "2026-11-28T10:03:52+00:00",
   "music": {
    "by": "Kevin MacLeod (incompetech.com)",
    "licence": "CC BY 4.0",
@@ -176,7 +177,8 @@
  "publish_day": "2026-11-29",
  "reasons": [
   "try 1, stopped: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
-  "review: redrawing 1 picture(s) before upload"
+  "review: redrawing 1 picture(s) before upload",
+  "waiting for the founder's intro clip until 29 Nov 11:30 UTC"
  ],
  "script": {
   "captions": {
@@ -394,7 +396,7 @@
   },
   "title": "*Bhimbetka* ki painting, 30,000 saal purani? 🤯"
  },
- "status": "voiced",
+ "status": "intro-wait",
  "timings": [
   0.0,
   6.433,
@@ -421,6 +423,52 @@
    "Duniya ki sabse purani jaanwar ki tasveer?"
   ],
   "id": "bhimbetka",
+  "intro": {
+   "aspect": "9:16",
+   "bridge": "",
+   "closing": "",
+   "options": [
+    {
+     "closing": "",
+     "question": "Tees hazaar saal purana rang. Aaj bhi chamakta hai. Bhimbetka ki chattan par. Barish ne ise chhua tak nahi. Kaise?",
+     "score": 5.7,
+     "text": "Tees hazaar saal purana rang. Aaj bhi chamakta hai. Bhimbetka ki chattan par. Barish ne ise chhua tak nahi. Kaise?",
+     "words": 20
+    },
+    {
+     "closing": "",
+     "question": "Bada daava aaya. Chhat par India ka sabse purana fossil. Jaanch hui. Phir nateeja bilkul ulta nikla. Kaisa tha woh nateeja?",
+     "score": 5.3,
+     "text": "Bada daava aaya. Chhat par India ka sabse purana fossil. Jaanch hui. Phir nateeja bilkul ulta nikla. Kaisa tha woh nateeja?",
+     "words": 21
+    },
+    {
+     "closing": "",
+     "question": "Ek insaan bhaag raha hai. Seeng wale bade sooar ke aage. Deewar par aaj bhi dikhta hai. Yeh kisne banaya?",
+     "score": 5.3,
+     "text": "Ek insaan bhaag raha hai. Seeng wale bade sooar ke aage. Deewar par aaj bhi dikhta hai. Yeh kisne banaya?",
+     "words": 20
+    },
+    {
+     "closing": "",
+     "question": "1957 ka ek din. Jungle se ek train guzri. Khidki par archaeologist Wakankar baithe the. Unki nazar ruk gayi. Kyun?",
+     "score": 5.3,
+     "text": "1957 ka ek din. Jungle se ek train guzri. Khidki par archaeologist Wakankar baithe the. Unki nazar ruk gayi. Kyun?",
+     "words": 20
+    },
+    {
+     "closing": "",
+     "question": "Ek jhuki chattan ke neeche poora zoo. Haathi bison barasingha hiran. Sab deewar par bane hain. Par kisne banaye aakhir?",
+     "score": 5.0,
+     "text": "Ek jhuki chattan ke neeche poora zoo. Haathi bison barasingha hiran. Sab deewar par bane hain. Par kisne banaye aakhir?",
+     "words": 20
+    }
+   ],
+   "prompt": "9:16 vertical, 1080x1920, about 8 seconds, photorealistic and cinematic, bright vivid colour. Setting: close view inside a massive sandstone rock overhang at dusk, a burning torch held by an unseen hand lighting up ancient red ochre hunters and green dancing human figures on the rough rock wall, storm clouds gathering over the forest outside, dramatic warm and blue light. Time of day and light, overriding anything darker in the setting above: bright golden-hour sunlight or clear daylight, a blue or golden sky, warm saturated colours, his face and clothes fully lit; never night, dusk, storm clouds, lightning, fog, grey overcast, a dark or desaturated look. The background is real and in motion behind him (as fits the place: waves, mist, leaves, flags, lamps flickering, people walking, traffic, light shifting); never a still, flat or heavily blurred backdrop. If the scene shows the past of an Indian story, it is ancient India (a story from another country keeps that country's own dress and buildings): Indian people in dhotis, sarees and angavastram, warriors with bows, spears and bronze or leather armour, carved stone pillars, oil lamps; never European knights, plate armour, castles or anything medieval European. Movement and framing: like a TV news reporter on location, he walks toward the camera while he speaks: he starts three or four steps back, seen from the knees up, walks steadily and confidently toward the lens, and stops at a medium shot from the waist up for the last words. His whole head and both shoulders stay inside the frame the whole time, with clear space above his hair and on both sides; do not crop the top of his head. Lighting: warm key light on the face, a soft rim light on the hair, matched to the scene; flattering, no harsh shadows, no dull or flat grey look. SG [locked] walking tall and lively, shoulders open, energetic and confident, wearing an olive green field jacket over a cream tee, like a wildlife reporter. Speaks from the first frame, mouth matched to the words, steady eye contact with the lens. Face and delivery: an excited, high-energy presenter breaking a big story, full of life, as if he cannot wait to tell you. Bright, wide-awake eyes, lively eyebrows that lift on the question, a big, bright, genuine smile. On the question his voice rises with excitement as he strides closer. On the last line a big confident smile, a quick nod and a point at the viewer. Natural blinking, lively head movement. Never sad, gloomy, worried, tired, sleepy, flat or bored; never a frown, never a blank face. Voice: energetic, upbeat, punchy and clear, a brisk pace, rising on the question, with a quick beat before the last line. Hands: energetic, natural gestures at chest height: a quick point toward the scene behind him on the question and an open palm toward the viewer on the last line; never limp, never hanging still by his sides. Camera: eye level, steady, holding its place as he walks up to it (a very slight slow push-in at most), slight handheld feel. Empty hands, no prop. @SGMythWorld watermark in the top right corner, white, bold, 80% opacity. No captions, no subtitles, no other on-screen text. No hologram, no floating screen, no graph, no chart, no laptop, tablet, monitor, TV or glowing blue panel anywhere in the frame. Export at 1080x1920.",
+   "question": "Tees hazaar saal purana rang. Aaj bhi chamakta hai. Bhimbetka ki chattan par. Barish ne ise chhua tak nahi. Kaise?",
+   "text": "Tees hazaar saal purana rang. Aaj bhi chamakta hai. Bhimbetka ki chattan par. Barish ne ise chhua tak nahi. Kaise?",
+   "words": 20
+  },
   "notes": "Archaeology lane; the Bhima name is legend.",
   "place": "Raisen, Madhya Pradesh",
   "target_minutes": null,
@@ -434,6 +482,6 @@
   ],
   "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-11-28T09:28:30+00:00",
+ "updated": "2026-11-28T10:04:59+00:00",
  "writer": "claude"
 }
