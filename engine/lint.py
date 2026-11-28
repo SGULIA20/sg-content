@@ -237,6 +237,29 @@ def fact_hits(piece: Piece) -> list:
     return out
 
 
+def pack_hits(piece: Piece) -> list:
+    """Every figure on the information-rich thumbnail must be one the video says or its fact sheet holds: the picture is a promise."""
+    pack = ((piece.script or {}).get("thumbnail") or {}).get("pack")
+    if not pack:
+        return []
+    norm = lambda t: {m.replace(",", "").rstrip(".") for m in re.findall(r"\d[\d,]*\.?\d*", str(t))}
+    allowed = set()
+    for sc in (piece.script or {}).get("scenes", []):
+        allowed |= norm(sc.get("vo", ""))
+    for f in piece.facts or []:
+        allowed |= norm(f.get("text", "")) | norm(f.get("number", ""))
+    for c in (piece.script or {}).get("cards", []):
+        allowed |= norm(c.get("big_number", "")) | norm(c.get("line", ""))
+    shown = []
+    for k in ("l1", "l2", "l3"):
+        shown.append(pack.get(k, ""))
+    shown += [i.get("label", "") for i in pack.get("inset") or []] + [c for c in pack.get("chips") or []]
+    doc = pack.get("doc") or {}
+    shown += [x for r in doc.get("rows") or [] for x in r] + list(doc.get("total") or [])
+    bad = sorted({n for t in shown for n in norm(t)} - allowed - {"0", "1", "2", "3", "5", "10", "100"})
+    return [f"thumbnail: the figure(s) {', '.join(bad[:6])} on the thumbnail are not said in the video or on its fact sheet; use only the video's own figures"] if bad else []
+
+
 def jargon_hits(piece: Piece) -> list:
     """Money and tech jargon in the spoken lines of a Learning with SG Short; each must be said in plain words instead."""
     if piece.channel != "sglearning" or piece.kind != "short":
@@ -254,7 +277,7 @@ def check_script(piece: Piece, banned: dict, prior_scripts: list) -> list:
     text = script_text(piece)
     reasons += _banned_hits(text, banned, ["politics", "communal", "advice"])
     reasons += jargon_hits(piece)
-    reasons += card_hits(piece) + figure_hits(piece) + fact_hits(piece)
+    reasons += card_hits(piece) + figure_hits(piece) + fact_hits(piece) + pack_hits(piece)
     if piece.channel == "arthvan":
         reasons += _banned_hits(text, banned, ["myth_forbidden"])
         for i, sc in enumerate(scenes):
