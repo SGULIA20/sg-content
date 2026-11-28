@@ -273,9 +273,55 @@ def extend(cfg: dict | None = None, env=None, notify=telegram.send, call=ads.cal
     return 0
 
 
+CONVERSION_NAME = "ScoreMyBiz free score completed"
+
+
+def conversion(cfg: dict | None = None, env=None, notify=telegram.send, call=ads.call_full, token=None, live: bool = False) -> int:
+    """The website conversion the founder's $200 Google Ads credit asks for (founder, 28 Nov 2026: 'yes create the conversion action'):
+    one WEBPAGE conversion, 'free score completed' on the ScoreMyBiz home page. Check-only unless live; when it exists, prints the tag ID
+    and the event snippet's send_to (public identifiers that go into the site's page, not secrets). Touches no campaign."""
+    import re
+    sent = notify
+
+    def notify(text):                                         # also in the run log
+        print(text, flush=True)
+        sent(text)
+    cfg = ads.settings() if cfg is None else cfg
+    cid = str(cfg.get("customer_id", "")).replace("-", "")
+    tok = token or ads.access_token(env)
+    q = ("SELECT conversion_action.resource_name, conversion_action.id, conversion_action.status, conversion_action.tag_snippets "
+         f"FROM conversion_action WHERE conversion_action.name = '{CONVERSION_NAME}' AND conversion_action.status != 'REMOVED'")
+    rows = ads.search(cid, q, tok, cfg, call)
+    if not rows:
+        create = {"name": CONVERSION_NAME, "type": "WEBPAGE", "category": "SUBMIT_LEAD_FORM", "status": "ENABLED",
+                  "countingType": "ONE_PER_CLICK", "primaryForGoal": True}
+        status, _h, body = call("POST", f"{ads.API}/customers/{cid}/googleAds:mutate", tok,
+                                json_body={"mutateOperations": [{"conversionActionOperation": {"create": create}}], "validateOnly": not live},
+                                headers=ads._headers(cfg))
+        if status != 200:
+            notify(f"📣 Conversion action {'FAILED' if live else 'check found problems'} ({status}):\n{secrets.scrub(ads.errors_text(body))[:2000]}")
+            return 1
+        if not live:
+            notify(f"📣 Conversion action check passed: '{CONVERSION_NAME}' (website, lead form, one per click) can be created.")
+            return 0
+        rows = ads.search(cid, q, tok, cfg, call)
+    if not rows:
+        notify("📣 Conversion action: not found after creating it; look in Google Ads → Goals → Conversions.")
+        return 1
+    ca = rows[0].get("conversionAction", {})
+    text = json.dumps(ca.get("tagSnippets") or [])
+    tag = sorted(set(re.findall(r"AW-\d+", text)))
+    send_to = sorted(set(re.findall(r"AW-\d+/[\w-]+", text)))
+    notify(f"📣 Conversion action '{CONVERSION_NAME}' ({ca.get('status', '?')}): tag ID {', '.join(tag) or '(not shown yet)'}; "
+           f"send_to {', '.join(send_to) or '(not shown yet)'}.")
+    return 0 if tag and send_to else 1
+
+
 def main(argv=None) -> int:
     argv = sys.argv[1:] if argv is None else argv
     try:
+        if "--conversion" in argv:
+            return conversion(live="--live" in argv)
         if "--extend" in argv:
             return extend(live="--live" in argv)
         if "--youtube-only" in argv:
