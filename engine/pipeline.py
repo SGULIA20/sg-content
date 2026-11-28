@@ -449,6 +449,10 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
     if adopt_slot_holder(piece, deps, root, dry_run):                  # the day already has its video: nothing is researched, voiced or painted
         return piece
     used, prior = _used(root)
+    if piece.status == "failed-research" and "stopped" in (piece.reasons[-1] if piece.reasons else ""):
+        # 28 Nov 2026: the Gemini credit ran out mid-research; the piece kept its planned topic, the next run counted that topic as
+        # used by this very piece, and both of 29 Nov's Shorts fell from their trending topics (gold rates, Annabelle) to bank ones
+        used -= {piece.topic.get("id"), piece.topic.get("link")}
     used |= set(piece.ids.get("dead_topics", []))                    # topics whose research found nothing on an earlier run: never tried again for this piece
     size = VIDEO[piece.kind]
     out_dir = Path(root) / "out" / piece.id

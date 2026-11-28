@@ -156,6 +156,17 @@ def test_short_from_long_gives_way_when_the_long_is_not_ready_or_already_used(tm
     assert pipeline.short_from_long(_piece("long", "sglearning", date(2026, 10, 22)), tmp_path) is None
 
 
+def test_a_topic_whose_research_was_cut_off_is_tried_again_by_the_same_piece(tmp_path):
+    seen = []
+    d, calls = deps(tmp_path)
+    d.topic = lambda piece, used: (seen.append("planned-1" in used), dict(TOPIC, id="planned-1", link="https://e/p"))[1]
+    p = _piece(); p.topic = {"id": "planned-1", "link": "https://e/p"}; p.status = "failed-research"
+    p.reasons = ["try 1, stopped: gemini failed (402): credits are depleted"]
+    pieces.save(p, tmp_path)
+    out = pipeline.make(p, d, tmp_path)
+    assert seen[0] is False and out.status == "uploaded" and out.topic["id"] == "planned-1"
+
+
 def test_myth_short_reuses_long_scenes(tmp_path, monkeypatch):
     from engine import config
     monkeypatch.setattr(config, "STORY_FORMAT", {("sglearning", "short")})
