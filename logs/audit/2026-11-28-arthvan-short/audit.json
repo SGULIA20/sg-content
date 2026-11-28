@@ -1,0 +1,45 @@
+{
+ "score": 7,
+ "verdict": "fix first",
+ "faults": [
+  {
+   "at": 20,
+   "kind": "captions",
+   "what": "Caption displays 'Jones Gillray' instead of the historical British caricaturist 'James Gillray'.",
+   "fix": "Correct caption spelling to 'James Gillray'."
+  },
+  {
+   "at": 20,
+   "kind": "narration",
+   "what": "The narrator pronounces the cartoonist's first name as 'Jones' or 'Jomes' instead of 'James'.",
+   "fix": "Re-record or correct audio pronunciation to 'James Gillray'."
+  },
+  {
+   "at": 28,
+   "kind": "picture-words",
+   "what": "Narration mentions Napoleon's own guards ('Napoleon ke apne guards'), but the visual displays British redcoat guards in bearskin caps marching through London streets.",
+   "fix": "Replace imagery with historically accurate French Imperial Guards (Garde Impériale) in dark blue uniforms."
+  },
+  {
+   "at": 31,
+   "kind": "picture-words",
+   "what": "Napoleon is shown standing flanked by guards dressed in British redcoat uniforms rather than French guards.",
+   "fix": "Use artwork or imagery showing Napoleon flanked by tall French Grenadiers of the Imperial Guard."
+  },
+  {
+   "at": 1,
+   "kind": "quality",
+   "what": "The horse and rider show noticeable AI generation ghosting and transparent artifacting around the horse's flank and legs.",
+   "fix": "Replace or clean up the AI generation artifact on the horse in the opening shot."
+  },
+  {
+   "at": 116,
+   "kind": "captions",
+   "what": "The subtitle 'Us dost ko bhejo...' lingers over the final channel subscription end card.",
+   "fix": "Clear the subtitle text when transitioning to the channel outro screen."
+  }
+ ],
+ "strongest": "The opening 3 seconds immediately shatter a universal historical misconception with a punchy hook and dramatic visual.",
+ "weakest": "Depicting Napoleon's personal guard as British redcoats undermines the historical credibility of the video.",
+ "lines_heard": 12
+}

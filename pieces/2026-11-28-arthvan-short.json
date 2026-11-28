@@ -23,6 +23,11 @@
  ],
  "id": "2026-11-28-arthvan-short",
  "ids": {
+  "audit": {
+   "faults": 6,
+   "score": 7,
+   "verdict": "fix first"
+  },
   "budget": {
    "day": "2026-11-27",
    "drafts": 3,
@@ -49,7 +54,9 @@
    5,
    6,
    7,
-   8
+   8,
+   9,
+   10
   ],
   "sound": "track",
   "watch": {
@@ -63,7 +70,8 @@
    3,
    8,
    9
-  ]
+  ],
+  "yt_id": "K0zLX1g9oyw"
  },
  "kind": "short",
  "publish_day": "2026-11-28",
@@ -254,7 +262,7 @@
   },
   "title": "Napoleon ko *baauna* kisne banaya? 🤯"
  },
- "status": "voiced",
+ "status": "uploaded",
  "timings": [
   0.0,
   5.499,
@@ -335,6 +343,7 @@
    "text": "Napoleon baauna nahi tha. Uska kad aam French aadmi jitna tha. Phir bhi duniya ne chhota maana. London ke ek cartoon ne. Kaise?",
    "words": 23
   },
+  "look": "indian-comic",
   "no_intro": true,
   "patch_tries": 1,
   "summary": "Napoleon ki height ka kissa. Check karein: autopsy mein 5 foot 2 French inches, jo lagbhag 5'6-5'7 modern inches hai, aur British cartoons (Gillray) ne 'Little Boney' image kaise banayi.",
@@ -350,6 +359,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-28T07:21:40+00:00",
+ "updated": "2026-11-28T07:49:04+00:00",
  "writer": "claude"
 }
