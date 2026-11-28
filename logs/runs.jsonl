@@ -286,3 +286,4 @@
 {"day": "2026-11-28", "at": "2026-11-27T18:55:00+00:00", "ok": true, "dry_run": false, "made": [["2026-12-03-arthvan-short", "uploaded"]], "stopped": ""}
 {"day": "2026-11-28", "at": "2026-11-27T19:05:59+00:00", "ok": true, "dry_run": false, "made": [["2026-11-28-sglearning-short", "qa_failed"]], "stopped": ""}
 {"day": "2026-11-28", "at": "2026-11-27T22:28:26+00:00", "ok": true, "dry_run": false, "made": [["2026-11-28-sglearning-short", "qa_failed"]], "stopped": ""}
+{"day": "2026-11-28", "at": "2026-11-28T08:36:34+00:00", "ok": true, "dry_run": false, "made": [["2026-11-28-arthvan-short", "uploaded"], ["2026-11-28-sglearning-short", "intro-wait"], ["2026-11-28-sglearning-long", "voiced"], ["2026-11-29-arthvan-short", "failed-research"], ["2026-11-29-sglearning-short", "failed-research"]], "stopped": ""}
