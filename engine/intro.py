@@ -631,6 +631,16 @@ def deadline_utc(piece) -> datetime:
     return earliest_slot_utc(piece) - timedelta(hours=DEADLINE_HOURS)
 
 
+PLAIN_MINUTES = 60                          # this long before its first slot a video goes out without his opening
+
+
+def plain_utc(piece) -> datetime:
+    """When a video stops waiting for the founder's opening clip (founder, 28 Nov 2026: "If founder video not received then post
+    videos without it"). With videos made a day ahead and longs the same morning, a missing clip would otherwise leave the day empty.
+    This replaces "never the plain version" of 5 Nov 2026."""
+    return earliest_slot_utc(piece) - timedelta(minutes=PLAIN_MINUTES)
+
+
 def _wat(dt: datetime) -> str:
     return (dt + timedelta(hours=1)).strftime("%a %d %b %H:%M WAT")
 
@@ -671,8 +681,8 @@ def request_text(piece, p: dict) -> str:
     # 19 Nov 2026: with five hooks a long video's request ran to 4,750 characters and Telegram cut it at 4,000, so the thumbnail prompt
     # arrived half-written. The caption and deadline now come before the prompt, and the thumbnail goes as its own message.
     return (f"🎬 Intro for {piece.id} ({kind}: {title})\n\n{say}\n\n"
-            f"Send the clip as a FILE (paperclip → File) with the caption:\nintro {piece.id}\n\nBy {_wat(deadline_utc(piece))}. Nothing goes "
-            f"out without it: a late clip publishes as soon as it is merged.\n\nPrompt:\n{p['prompt']}")
+            f"Send the clip as a FILE (paperclip → File) with the caption:\nintro {piece.id}\n\nBy {_wat(deadline_utc(piece))}. If it has "
+            f"not come by {_wat(plain_utc(piece))}, the video goes out without your opening.\n\nPrompt:\n{p['prompt']}")
 
 
 TELEGRAM_ROOM = 3900                        # Telegram cuts a message at 4,096 characters; engine/telegram.py sends 4,000
@@ -1074,10 +1084,13 @@ def before_upload(piece, root: Path, out_dir: Path, notify=None, now: datetime |
         piece.ids["intro_rejected"] = _sha(clip)
         piece.ids["intro_rejected_why"] = "; ".join(problems)
         notify(f"🎬 {piece.id}: the intro clip was not used: " + "; ".join(problems) + f". Send a new one with the caption intro {piece.id}.")
-    if now >= deadline_utc(piece) and not piece.ids.get("intro_overdue"):      # founder, 5 Nov 2026: never the plain version
+    if now >= plain_utc(piece):                                              # founder, 28 Nov 2026: it goes out without his opening
+        piece.ids["intro_skipped"] = now.isoformat(timespec="seconds")
+        return "plain"
+    if now >= deadline_utc(piece) and not piece.ids.get("intro_overdue"):
         piece.ids["intro_overdue"] = now.isoformat(timespec="seconds")
-        notify(f"🚨 {piece.id}: no intro clip and the slot is {_wat(slots.publish_at(piece.channel, piece.kind, piece.publish_day))}. "
-               f"Nothing goes out without it: send the clip with the caption intro {piece.id} and it publishes as soon as it is merged.")
+        notify(f"🚨 {piece.id}: no opening clip yet and the slot is {_wat(slots.publish_at(piece.channel, piece.kind, piece.publish_day))}. "
+               f"Send it with the caption intro {piece.id} by {_wat(plain_utc(piece))}; after that the video goes out without your opening.")
     request(piece, root, notify, ask, now)
     return "wait"
 
@@ -1097,7 +1110,7 @@ def collect(piece, deps, root: Path, now: datetime | None = None, notify=None, t
     out_dir = Path(root) / "out" / piece.id
     video = out_dir / ("reel.mp4" if piece.kind == "short" else "long.mp4")
     thumb = out_dir / "thumb.jpg"
-    if not _usable_clip(root, piece):
+    if not _usable_clip(root, piece) and now < plain_utc(piece):
         if now >= deadline_utc(piece) and not piece.ids.get("intro_overdue"):
             before_upload(piece, root, out_dir, notify, now, transcribe, compose_fn)      # the one overdue reminder
             pieces.save(piece, root)
@@ -1149,7 +1162,7 @@ def collect(piece, deps, root: Path, now: datetime | None = None, notify=None, t
     pipeline.finish_upload(piece, deps, root, video, thumb, out_dir)
     _drop_other_copies(piece, root, notify)
     notify(f"🎬 {piece.id}: " + ("your intro is merged and the piece is scheduled for its slot." if action == "compose"
-                               else "the plain version is scheduled for its slot."))
+                               else "no opening clip came in time, so it is scheduled for its slot without your opening."))
     return ("uploaded-intro" if action == "compose" else "uploaded-plain"), piece
 
 
@@ -1311,7 +1324,7 @@ def needed(root: Path, now: datetime | None = None) -> bool:
     """Cheap: does a waiting piece have a fresh clip, or has one passed its deadline?"""
     now = now or datetime.now(timezone.utc)
     for p in waiting(root):
-        if _usable_clip(root, p) or (now >= deadline_utc(p) and not p.ids.get("intro_overdue")):
+        if _usable_clip(root, p) or (now >= deadline_utc(p) and not p.ids.get("intro_overdue")) or now >= plain_utc(p):
             return True
     return any(_usable_clip(root, p) for p in scheduled(root, now)) or bool(pending_thumbs(root))
 
