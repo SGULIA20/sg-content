@@ -73,10 +73,10 @@ def test_make_runs_all_steps_and_uploads(tmp_path, monkeypatch):
 
 
 def test_make_rejected_script_tries_next_topic_up_to_three(tmp_path):
-    d, calls = deps(tmp_path, lint=lambda piece, prior: ["advice: kharid lo"])
+    d, calls = deps(tmp_path, lint=lambda piece, prior: ["originality: too close to an earlier script"])
     p = pipeline.make(_piece(), d, tmp_path)
     assert p.status == "rejected" and calls["topics"] == 3 and calls["say"] == 0
-    assert any("advice" in r for r in p.reasons)
+    assert any("originality" in r for r in p.reasons)
 
 
 def test_make_number_without_source_rejects(tmp_path):
@@ -352,6 +352,16 @@ def test_fixable_rejects_revise_same_topic(tmp_path):
     def lint_fn(piece, prior):
         n["lint"] += 1
         return ["label: scene 11 has no evidence label", "length: 238 words, allowed 150-230"] if n["lint"] == 1 else []
+    d, calls = deps(tmp_path, lint=lint_fn)
+    p = pipeline.make(_piece(), d, tmp_path)
+    assert p.status == "uploaded" and calls["topics"] == 1 and calls["write"] == 2
+
+
+def test_an_advice_word_is_reworded_on_the_same_topic(tmp_path):
+    n = {"lint": 0}
+    def lint_fn(piece, prior):
+        n["lint"] += 1
+        return ["advice: becho"] if n["lint"] == 1 else []
     d, calls = deps(tmp_path, lint=lint_fn)
     p = pipeline.make(_piece(), d, tmp_path)
     assert p.status == "uploaded" and calls["topics"] == 1 and calls["write"] == 2
