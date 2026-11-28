@@ -62,3 +62,42 @@ def test_long_videos_test_the_other_script_with_the_same_picture(tmp_path):
     assert renders == [("thumb.jpg", "FD", ["7%", "KAHAN GAYA"]), ("thumb_b.jpg", "एफडी", ["7%", "कहाँ गया"])]
     p.script["thumbnail"].pop("name_hi"); renders.clear()
     assert "thumb_b" not in thumbs.make(p, tmp_path, paint=paint, render=render)     # an old script without both names: no test
+
+
+PACK = {"l1": "सोना **24.6%** गिरा", "l2": "1982 के बाद **सबसे बुरा**?", "l3": "असली गलती **कहाँ?**",
+        "inset": [{"label": "चांदी 15% गिरी", "value": 15}, {"label": "सोना 24.6% गिरा", "value": 24.6}],
+        "doc": {"title": "GOLD", "rows": [["Fall", "-24.6%"], ["Worst since", "1982"]], "total": ["Silver week", "15%"]},
+        "chips": ["गहने का क्या होगा?", "गोल्ड लोन पर असर", "ETF / SGB?", "चौथा chip जो नहीं दिखेगा"]}
+
+
+def _long_with_pack(pack=PACK):
+    p = _piece("long")
+    p.script["thumbnail"]["pack"] = pack
+    p.script["scenes"][0]["vo"] = "Sona 60 din mein 24.6 percent gira, 1982 ke baad sabse bura, aur chandi 15 percent."
+    return p
+
+
+def test_a_learning_long_with_a_pack_gets_the_rich_thumbnail_first_and_the_topic_name_one_as_its_click_test(tmp_path):
+    """founder, 28 Nov 2026: 'Can you make thumbnail like I made'."""
+    rendered = []
+    def render(kind, data, out, size):
+        rendered.append((kind, Path(out).name, data)); Path(out).write_bytes(b"j"); return Path(out)
+    out = thumbs.make(_long_with_pack(), tmp_path, paint=lambda prompt, out, **kw: Path(out).write_bytes(b"p") or Path(out), render=render, cast_refs=lambda p, **kw: [])
+    assert [(k, n) for k, n, _d in rendered] == [("thumb3", "thumb.jpg"), ("thumb2", "thumb_b.jpg")] and set(out) == {"thumb", "thumb_b"}
+    import json
+    sent = json.loads(rendered[0][2]["data_json"])
+    assert len(sent["chips"]) == 3 and sent["doc"]["rows"][0] == ["Fall", "-24.6%"] and sent["inset"][1]["value"] == 24.6
+
+
+def test_no_pack_means_the_old_thumbnail_and_a_short_never_uses_it(tmp_path):
+    assert thumbs.pack_for(_piece("long")) is None
+    s = _long_with_pack(); s.kind = "short"
+    assert thumbs.pack_for(s) is None
+
+
+def test_a_figure_on_the_thumbnail_must_be_a_figure_of_the_video():
+    from engine import lint
+    p = _long_with_pack()
+    assert lint.pack_hits(p) == []
+    p.script["thumbnail"]["pack"] = {**PACK, "l1": "सोना **99.9%** गिरा"}
+    assert any("99.9" in r for r in lint.pack_hits(p))

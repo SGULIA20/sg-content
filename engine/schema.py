@@ -39,7 +39,18 @@ PIECE_SCHEMA = {
                       "properties": {"name": {"type": "string"}, "name_hi": {"type": "string"},
                                      "words": {"type": "array", "items": {"type": "string"}, "minItems": 1, "maxItems": 3},
                                      "words_hi": {"type": "array", "items": {"type": "string"}, "minItems": 1, "maxItems": 3},
-                                     "scene": {"type": "string"}}},
+                                     "scene": {"type": "string"},
+                                     # a Learning with SG long's information-rich thumbnail (templates/thumb3.html; founder, 28 Nov 2026)
+                                     "pack": {"type": "object", "additionalProperties": False,
+                                              "properties": {"l1": {"type": "string"}, "l2": {"type": "string"}, "l3": {"type": "string"},
+                                                             "inset": {"type": "array", "items": {"type": "object", "additionalProperties": False,
+                                                                                                  "required": ["label", "value"],
+                                                                                                  "properties": {"label": {"type": "string"}, "value": {"type": "number"}}}},
+                                                             "doc": {"type": "object", "additionalProperties": False,
+                                                                     "properties": {"title": {"type": "string"},
+                                                                                    "rows": {"type": "array", "items": {"type": "array", "items": {"type": "string"}}},
+                                                                                    "total": {"type": "array", "items": {"type": "string"}}}},
+                                                             "chips": {"type": "array", "items": {"type": "string"}}}}}},
     },
 }
 
