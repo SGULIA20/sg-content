@@ -1,0 +1,40 @@
+{
+ "channel": "sglearning",
+ "facts": [],
+ "id": "2026-11-29-sglearning-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-28",
+   "research": 1
+  }
+ },
+ "kind": "short",
+ "publish_day": "2026-11-29",
+ "reasons": [
+  "try 1, stopped: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+ ],
+ "script": null,
+ "status": "failed-research",
+ "timings": [],
+ "topic": {
+  "follows": "Gold crash videos took 5.6M, 5.1M, 2M and 1.6M views in the Hindi list; the founder asked for the Short of today's long.",
+  "hooks": [
+   "Sona kitne din mein kitna gira, aur kisne becha?",
+   "Chandi sone se zyada kyun giri?"
+  ],
+  "id": "wk-2026-11-29-sglearning-short",
+  "summary": "The Short of the 28 Nov long on the same subject (founder, 28 Nov 2026: 'on same topic you make short of that sona chandi ke rates kyun gire'). One clear answer in under a minute: how far gold and silver fell and in how many days (check peak and current prices against LBMA, MCX, COMEX), the two or three causes that mattered most (the dollar and interest-rate expectations, profit-booking after the rally, exchange margin changes), why silver fell further, and the one mistake buyers make. Explanation only, no advice to buy or sell. Point to the long video for the full study.",
+  "target_minutes": null,
+  "title": "Sona aur chandi ke rate achanak kyun gire?",
+  "topic_score": 5,
+  "topic_score_why": [
+   "+3 touches the viewer's own money",
+   "+1 a choice the viewer faces",
+   "+1 asks a question"
+  ],
+  "trend": true,
+  "weekly": true
+ },
+ "updated": "2026-11-28T08:36:32+00:00",
+ "writer": ""
+}
