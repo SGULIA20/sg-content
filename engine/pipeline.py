@@ -154,9 +154,43 @@ def weak_remake_topic(piece: Piece, root: Path, today: date | None = None) -> di
 WEAK_REMAKES = False
 
 
+FROM_LONG_NOTE = ("This Short is made from our own long video on the same subject, which went out the day before. LONG_SCENES is the part of "
+                  "that script marked to stand alone as a Short; the facts are the long's checked facts. Write a new, complete Short from "
+                  "them in this channel's Short format: one question, its answer, one surprising fact. It must be whole by itself: never "
+                  "'watch the full video to find out', never a reference to 'earlier' or 'as we saw'. Use no fact that is not on the sheet. "
+                  "Do not copy the long's sentences; say the same things in the Short's own brisk beats.")
+
+
+def short_from_long(piece: Piece, root: Path, used: set = frozenset()) -> dict | None:
+    """The Short of the day after a long is made from that long (founder, 28 Nov 2026: "can we make shorts from long videos ... will
+    reduce headache of credit, limits" and "one long script should be written in a way that at least 1 short can be made out of it").
+    No new research and the week's strongest topic twice. None when there is no long the day before, it has no script yet, another
+    Short already used it, or this piece already tried it and was turned down (the planned topic follows)."""
+    if piece.kind != "short" or piece.id.endswith("-news") or re.search(r"-x\d+$", piece.id):
+        return None
+    long_id = buffer.long_before(piece.channel, piece.publish_day)
+    long_p = pieces.load(long_id, root) if long_id else None
+    if not long_p or not long_p.script or not long_p.facts or long_p.status == "rejected":
+        return None
+    tid = f"{long_p.topic.get('id', long_id)}#short"
+    if tid in used or any(p.topic.get("from_long") == long_id and p.id != piece.id for p in pieces.list_all(root) if p.kind == "short"):
+        return None
+    scenes = long_p.script.get("scenes") or []
+    sec = long_p.script.get("short_section") or []
+    if len(sec) == 2 and 1 <= sec[0] <= sec[1] <= len(scenes) and 3 <= sec[1] - sec[0] + 1 <= 12:
+        scenes = scenes[sec[0] - 1:sec[1]]                              # the run the long's writer marked
+    hooks = long_p.topic.get("hooks") or []
+    return {"from_long": long_id, "id": tid, "hook": hooks[0] if hooks else long_p.script.get("hook", ""),
+            "title": long_p.script.get("title") or long_p.topic.get("title") or long_p.topic.get("title_hi") or long_id,
+            "long_scenes": [{k: sc.get(k) for k in ("vo", "label") if sc.get(k)} for sc in scenes], "long_facts": long_p.facts}
+
+
 def _pick_topic(piece: Piece, deps: Deps, root: Path, used: set) -> dict | None:
     if piece.topic.get("preset"):                                     # a topic chosen up front (the news Short, an extra Reel)
         return piece.topic["preset"]
+    own_long = short_from_long(piece, root, used)                     # 28 Nov 2026: the day after a long, its Short; it outranks the plan
+    if own_long:
+        return own_long
     from . import weekly
     planned = weekly.topic_for(root, piece, used)                    # 8 Nov 2026: the weekly YouTube research plan outranks a remake of our own weak Reel
     from . import themes
@@ -415,6 +449,10 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
     if adopt_slot_holder(piece, deps, root, dry_run):                  # the day already has its video: nothing is researched, voiced or painted
         return piece
     used, prior = _used(root)
+    if piece.status == "failed-research" and "stopped" in (piece.reasons[-1] if piece.reasons else ""):
+        # 28 Nov 2026: the Gemini credit ran out mid-research; the piece kept its planned topic, the next run counted that topic as
+        # used by this very piece, and both of 29 Nov's Shorts fell from their trending topics (gold rates, Annabelle) to bank ones
+        used -= {piece.topic.get("id"), piece.topic.get("link")}
     used |= set(piece.ids.get("dead_topics", []))                    # topics whose research found nothing on an earlier run: never tried again for this piece
     size = VIDEO[piece.kind]
     out_dir = Path(root) / "out" / piece.id
@@ -430,7 +468,7 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
     if carried and (piece.topic.get("title") or piece.topic.get("long_scenes")):
         sheet = {"facts": piece.facts, "summary": ""}             # a video that came out too long: same topic, shorter script
         if piece.topic.get("long_scenes"):
-            sheet.update(long_scenes=piece.topic["long_scenes"], hook=piece.topic.get("hook"))
+            sheet.update(summary=FROM_LONG_NOTE, long_scenes=piece.topic["long_scenes"], hook=piece.topic.get("hook"))
         revise = carried
     for attempt in range(TOPIC_TRIES if script is None else 0):
         if resume_write and attempt == 0:
@@ -444,7 +482,7 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
             used.update(k for k in (topic.get("link"), topic.get("id")) if k)      # both: the long pickers look for the id, the news pickers for the link
             if topic.get("long_scenes"):
                 piece.facts = topic["long_facts"]
-                sheet = {"facts": piece.facts, "summary": "", "long_scenes": topic["long_scenes"], "hook": topic["hook"]}
+                sheet = {"facts": piece.facts, "summary": FROM_LONG_NOTE, "long_scenes": topic["long_scenes"], "hook": topic["hook"]}
             elif topic.get("remake_of"):                               # a past winner: its own sourced facts, no new research
                 piece.facts = topic["remake_facts"]
                 piece.topic.pop("remake_facts", None)
