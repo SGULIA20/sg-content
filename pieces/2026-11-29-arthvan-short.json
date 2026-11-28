@@ -1,0 +1,53 @@
+{
+ "channel": "arthvan",
+ "facts": [],
+ "id": "2026-11-29-arthvan-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-28",
+   "research": 1
+  }
+ },
+ "kind": "short",
+ "publish_day": "2026-11-29",
+ "reasons": [
+  "try 1, stopped: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+ ],
+ "script": null,
+ "status": "failed-research",
+ "timings": [],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "en.wikipedia.org",
+   "nio.res.in",
+   "britannica.com",
+   "the scripture or text named in the story",
+   "nasa.gov",
+   "who.int",
+   "nih.gov",
+   "nationalgeographic.com",
+   "smithsonianmag.com",
+   "a university or museum page"
+  ],
+  "follows": "Annabelle video has 13.6M views; haunted-object curiosity, non-India.",
+  "hooks": [
+   "Annabelle gudiya sach mein bhootiya thi ya sirf kahani?",
+   "Asli Annabelle doll film wali jaisi dikhti hi nahi?"
+  ],
+  "id": "wk-2026-11-29-arthvan-short",
+  "summary": "Popular story: a haunted doll killed people. Compare the Warrens' claims with the real doll, a Raggedy Ann at the Occult Museum, the film's different porcelain doll, and what the museum records show.",
+  "target_minutes": null,
+  "title": "Annabelle gudiya sach mein bhootiya thi?",
+  "topic_score": 7,
+  "topic_score_why": [
+   "+3 a widely held belief and its reason",
+   "+3 a shock question or a mystery",
+   "+1 asks a question"
+  ],
+  "viral": true,
+  "weekly": true
+ },
+ "updated": "2026-11-28T08:36:28+00:00",
+ "writer": ""
+}
