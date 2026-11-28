@@ -1,0 +1,944 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 3445.89,
+   "quote": "Wednesday low: spot fell 3 percent to $3,445.89 by 16:13 GMT, the lowest since August 2025, and dropped below $3,500 for the first time since September 2025 (Reuters via The Korea Times).",
+   "source_date": "2026-11-24",
+   "source_name": "FinanceFeeds",
+   "source_url": "https://financefeeds.com/gold-price-today-3565-holiday-bounce-from-a-15-month-low/",
+   "text": "Spot gold dropped to an intraday low of 3,445.89 US dollars per ounce, breaching the key 3,500 dollar threshold to hit a 15-month low.",
+   "unit": "USD"
+  },
+  {
+   "label": "reported",
+   "number": 15.0,
+   "quote": "Silver fell more than 15% last week, its worst week since the start of the year, Kitco News reported on Friday, November 20.",
+   "source_date": "2026-11-25",
+   "source_name": "Canadian Mining Report",
+   "source_url": "https://www.canadianminingreport.com/news/silvers-15-percent-week-then-a-3-percent-bounce",
+   "text": "Silver prices dropped more than 15 percent over a single week, recording the metal's steepest weekly slump of the year.",
+   "unit": "pct"
+  },
+  {
+   "label": "analyst-view",
+   "number": 24.6,
+   "quote": "According to commodity analyst Lukas Kuemmerle, gold prices tumbled 24.6% over the 60 days through Nov. 23, marking the precious metal's worst performance over such a period since 1982.",
+   "source_date": "2026-11-27",
+   "source_name": "The Motley Fool",
+   "source_url": "https://financefeeds.com/gold-price-today-3565-holiday-bounce-from-a-15-month-low/",
+   "text": "Gold bullion tumbled 24.6 percent across a 60-day window ending late November, marking its worst two-month loss since 1982.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 30.0,
+   "quote": "Because priced in the Dollar, gold sank 30% across 2013.",
+   "source_date": "2023-07-07",
+   "source_name": "BullionVault",
+   "source_url": "https://www.bullionvault.com/gold-news/gold-crash-070720232",
+   "text": "During the historical 2013 crash, gold prices fell 30 percent over the year, demonstrating that safe havens can experience prolonged bear markets when monetary policy pivots.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-28-sglearning-long",
+ "ids": {
+  "budget": {
+   "day": "2026-11-28",
+   "drafts": 2,
+   "research": 1
+  },
+  "cost": {
+   "inr": 201.0,
+   "usd": 0.9409,
+   "voice": 66
+  },
+  "drafts": 2,
+  "music": {
+   "by": "Kevin MacLeod (incompetech.com)",
+   "licence": "CC BY 4.0",
+   "title": "Life of Riley"
+  },
+  "sound": "track",
+  "watch": {
+   "best_change": "Open on a picture of the crash itself, such as a red falling gold price chart with a bold '-24.6%', instead of a calm jewellery display, so the first second shows the shock the line promises.",
+   "issues": 5,
+   "opening": 6,
+   "verdict": "fix"
+  },
+  "watch_redo": [
+   0,
+   3
+  ]
+ },
+ "kind": "long",
+ "publish_day": "2026-11-28",
+ "reasons": [
+  "try 1: advice: guarantee",
+  "review: redrawing 2 picture(s) before upload"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Sona 60 din mein 24.6% gira. 1982 ke baad sabse bura daur.\nChandi hafte bhar mein 15% se zyada saaf.\nSabse safe cheez sabse pehle kyun bikti hai? Jawab video mein.\nYeh investment advice nahi hai.\nUs dost ko bhejo jo kehta hai sona kabhi nahi girta.",
+    "hashtags": [
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#HinglishFinance",
+     "#MoneyTipsHindi",
+     "#PersonalFinanceIndia",
+     "#InvestingIndia",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Sona 60 din mein 24.6% gira, 1982 ke baad sabse bura daur. Chandi hafte bhar mein 15% se zyada. Sabse safe cheez sabse pehle kyun bikti hai? Aapke ghar mein sona kis liye hai: shaadi, mushkil waqt ya munafa? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Sona 15 mahine ke neeche",
+     "00:00 Dollar, byaaj aur mehngai ka dhakka",
+     "00:00 Chandi aur 2013 ka sabak",
+     "00:00 Sabse safe cheez pehle kyun bikti hai",
+     "00:00 Aapke gehne, gold loan, ETF aur SGB"
+    ],
+    "description": "Sona 60 din mein 24.6% gira, 1982 ke baad sabse bura daur, aur chandi hafte bhar mein 15% se zyada giri. Dollar, oonche byaaj ki umeed aur bade fundon ki majboori ki bikri ne yeh kaise kiya, seedhi bhasha mein. Aapke gehne, gold loan, gold ETF aur SGB par kya asar hai, aur log top aur bottom par kaunsi galti karte hain. Us dost ko bhejo jo kehta hai sona kabhi nahi girta.",
+    "tags": [
+     "sona",
+     "chandi",
+     "gold price",
+     "silver price",
+     "gold crash",
+     "sone ka bhaav",
+     "gold loan",
+     "gold ETF",
+     "SGB",
+     "dollar",
+     "gold rate hindi",
+     "Learning with SG"
+    ],
+    "title": "Sona Chandi kyun gire? 1982 ke baad sabse bura"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "24.6%",
+    "line": "Sona 60 din mein gira",
+    "source": "The Motley Fool"
+   },
+   {
+    "big_number": "15%+",
+    "line": "Chandi hafte bhar mein giri",
+    "source": "Canadian Mining Report"
+   },
+   {
+    "big_number": "$3,500",
+    "line": "Sona is star ke neeche",
+    "source": "FinanceFeeds"
+   },
+   {
+    "big_number": "30%",
+    "line": "2013 mein sona gira",
+    "source": "BullionVault"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Aapke ghar mein sona kis liye hai: shaadi, mushkil waqt, ya munafa?",
+  "hook": "Sona 60 din mein 24.6 percent gira. 1982 ke baad sabse bura daur.",
+  "scenes": [
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "analyst-view",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a velvet tray of gold bangles and chains on a jeweller's counter in an Indian shop, cold dim evening light, the shop lamp switched off behind, the lower fifth a plain dark wooden counter top. Correction after review: Make this opening picture the most dramatic, close and high-contrast view of the subject, filling the frame: a viewer scrolling past must stop on it.",
+     "type": "art"
+    },
+    "vo": "Sona 60 din mein 24.6 percent gira. 1982 ke baad sabse bura daur."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic still life of silver anklets, silver coins and a small silver bowl on a white cotton cloth on a steel almirah shelf in an Indian home, harsh flat daylight, the lower fifth plain cloth.",
+     "type": "art"
+    },
+    "vo": "Lekin sona toh safe tha? Chandi aur buri giri. Hafte bhar mein 15 percent se zyada."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian bank branch, a loan officer weighing a gold chain on a small brass scale behind a counter, a customer seen from behind, soft tube light, the lower fifth a plain tiled floor.",
+     "type": "art"
+    },
+    "vo": "Aapke gehne. Aapka gold loan. Aapka gold fund. Sab ki keemat hili. Galti kahan hoti hai, aaj samjhiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view at night of a big international financial district, glass office towers lit up, a dark river running below in the lower fifth. Correction after review: Use a shot of gold being sold or a falling price board.",
+     "type": "art"
+    },
+    "vo": "Sabse safe cheez pehle kyun bikti? Jawab aakhir mein. Aur woh wajah, jo koi nahi batata."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic busy jewellery market street in an Indian city at dusk, shop fronts glowing warm, shoppers walking past, the lower fifth a wet road reflecting the lights.",
+     "type": "art"
+    },
+    "vo": "Aaj 3 sawaal. Pehla, sona aur chandi kitna gire? Doosra, achanak kyun gire? Teesra, aapke gehne, gold loan aur gold fund ka ab kya hoga?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of gold bars stacked on steel shelves inside a bank vault, cool white light glinting on the metal, the lower fifth a plain grey vault floor.",
+     "type": "art"
+    },
+    "vo": "Pehle bhaav ki baat. Duniya mein sone ka bhaav dollar mein lagta hai, har ounce ke hisaab se. Ounce yaani sona tolne ka international paimana, hamare tole jaisa."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic heavy old stone wall with a fresh deep crack running through it, golden late afternoon light, dust in the air, the lower fifth plain packed earth.",
+     "type": "art"
+    },
+    "vo": "Mahinon tak yeh bhaav 3,500 dollar ke upar tika raha. Log ise mazboot deewar maante the. Socha, ab isse neeche kya jaayega. Phir isi November woh deewar toot gayi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic empty street in the City of London at dawn, old stone bank buildings with tall columns, grey sky, the lower fifth wet cobblestones.",
+     "type": "art"
+    },
+    "vo": "Ek din ke andar sona tezi se phisla. Itna neeche, jitna pichhle 15 mahine mein kabhi nahi gaya tha. Bazaar bechain ho gaya. Lekin yeh girawat achanak nahi thi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic narrow lane of Zaveri Bazaar in Mumbai in the early morning, jewellery shop shutters half raised, a porter walking away, the lower fifth a quiet stone street.",
+     "type": "art"
+    },
+    "vo": "India mein bhi jhatka pahuncha. Hamare yahan sone ka daam isi duniya ke bhaav se judta hai. Wahan bhaav gira, to Zaveri Bazaar ki dukaanon tak asar aata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian middle-class family seen from behind at a jewellery counter, the mother holding an open red necklace box, warm shop light, the lower fifth a plain glass counter edge.",
+     "type": "art"
+    },
+    "vo": "Ab ek parivaar socho. Beti ki shaadi ke liye kuch hafte pehle gehne khareede. Unchi keemat par. Aaj wahi gehne tole jaayein, to unka mol pehle se kam niklega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of a crowded jewellery showroom in festival season, warm chandeliers, women in sarees browsing glass cases, the lower fifth a polished marble floor.",
+     "type": "art"
+    },
+    "vo": "Par unhone kuch anokha nahi kiya. Mahinon se sona lagaataar chadh raha tha. Ek lambi, zordaar tezi chal rahi thi. Har taraf yahi baat thi, sona aur upar jaayega."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic old steel almirah standing open in an Indian bedroom, a small inner locker visible, soft evening window light, the lower fifth a plain tiled floor.",
+     "type": "art"
+    },
+    "vo": "Yahin sabse badi galatfehmi chhupi hai. Log 'safe' ka matlab samajhte hain, 'kabhi nahi girega'. Par bazaar ne dikhaya, safe cheez bhi tezi se gir sakti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic loading dock of a secure bullion warehouse in the early morning, uniformed guards moving sealed metal crates into an armoured van, the lower fifth plain concrete.",
+     "type": "art"
+    },
+    "vo": "Toh itni bikri aayi kahan se? Gali ke chhote khareedar se nahi. Duniya ke bade bazaaron se, jahan ek din mein bahut bada maal bikta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of the marble Federal Reserve building in Washington at sunrise, empty plaza, long shadows, the lower fifth a calm stretch of lawn.",
+     "type": "art"
+    },
+    "vo": "Aur asli sawaal yeh hai. Itni lambi tezi ko achanak brake kisne lagaya? Jawab samundar paar, America ke kuch aankdon mein chhupa hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic quiet wooden study desk by a window in an Indian home, an old brass weighing scale perfectly balanced on it, soft morning light, the lower fifth plain desk wood.",
+     "type": "art"
+    },
+    "vo": "Doosra sawaal: sona achanak kyun gira? Is baar 3 dhakke ek saath lage. Mehngai, byaaj aur dollar. Ek ek karke samjhiye, kyunki yeh aapas mein jude hain."
+   },
+   {
+    "facts_used": [],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic American supermarket aisle, a shopper seen from behind pushing a half-empty cart, bright fluorescent light, the lower fifth a plain shiny floor.",
+     "type": "art"
+    },
+    "vo": "Pehla dhakka, mehngai. America mein mehngai ke naye aankde umeed se garam aaye. Matlab wahan roz ki cheezein andaaze se zyada tezi se mehngi ho rahi thi."
+   },
+   {
+    "facts_used": [],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic grey morning in Washington, the stone facade of the central bank building seen at an angle, a few people in coats walking past, the lower fifth a plain pavement.",
+     "type": "art"
+    },
+    "vo": "Ab America ka central bank, jo wahan byaaj tay karta hai, mehngai se ladta hai. Kaise? Byaaj ooncha rakh kar. Bazaar ko laga, byaaj ab jaldi kam nahi hoga."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic single gold coin resting on dark velvet inside an open metal safe deposit box, low side light, the lower fifth plain dark velvet.",
+     "type": "art"
+    },
+    "vo": "Doosra dhakka, byaaj. Yahan ek seedhi baat samjho. Sona koi byaaj nahi deta. Woh tijori mein chupchaap pada rehta hai. Na kiraya, na munafa, bas bhaav ka khel."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian market lane in the afternoon, a busy small shop with a shopkeeper beside an identical shop with its shutter down, the lower fifth a plain dusty road.",
+     "type": "art"
+    },
+    "vo": "Ek misaal lijiye. Ek dukaan har mahine kiraya deti hai. Doosri khaali padi hai, koi kiraya nahi. Byaaj badhe, to log kiraye wali dukaan pasand karte hain. Sona woh khaali dukaan hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic interior of a busy Indian bank branch in daylight, customers at counters, ceiling fans turning, the lower fifth a plain stone floor.",
+     "type": "art"
+    },
+    "vo": "Jab bank ki FD aur sarkari bond achha byaaj dene lagte hain, tab sona rakhna mehnga lagta hai. Bade fund sona bech kar byaaj wali cheezon mein paisa daalte hain."
+   },
+   {
+    "facts_used": [],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic currency exchange counter at an international airport, a traveller seen from behind at the glass partition, cool morning light, the lower fifth a plain polished floor.",
+     "type": "art"
+    },
+    "vo": "Teesra dhakka, dollar. Mehngai aur oonche byaaj ki umeed ne dollar ko phir mazboot kiya. Aur yaad rakhiye, sone ka bhaav dollar mein hi lagta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic quiet jewellery boutique on a Tokyo shopping street at night, few passers-by, soft window glow, the lower fifth a plain dark pavement.",
+     "type": "art"
+    },
+    "vo": "Dollar mehnga hua, to baaki deshon ke liye sona mehnga ho gaya. Europe, Japan, India ka khareedar thoda ruk gaya. Maang dheeli padi, aur bhaav neeche aaya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic old metal seesaw in an empty Indian park at sunset, one end high and one end low, long shadows, the lower fifth plain grass.",
+     "type": "art"
+    },
+    "vo": "Ise jhoole ki tarah samjho. Ek taraf dollar baitha hai, doosri taraf sona. Dollar upar jaata hai, to sona aksar neeche aata hai. Is baar bhi yahi hua."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a man's hands closing a small bank locker in a vault, rows of steel lockers behind, warm light, the lower fifth a plain steel ledge.",
+     "type": "art"
+    },
+    "vo": "Aur ek aakhri kaaran, sabse insaani. Mahinon ki tezi mein jinhone pehle khareeda tha, unke paas bada munafa jama tha. Kaagaz par. Abhi jeb mein nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic farmer in Punjab harvesting golden wheat at dusk, seen from behind with a sickle, wide field, the lower fifth plain cut stubble.",
+     "type": "art"
+    },
+    "vo": "Jaise hi hawa badli, unhone munafa jeb mein daalne ke liye becha. Ise profit-booking kehte hain. Yaani kamaai bachaane ke liye, tezi ke baad bech dena."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic low-angle close view of a long row of dominoes falling on a wooden floor, motion in the front pieces, soft window light, the lower fifth plain floorboards.",
+     "type": "art"
+    },
+    "vo": "Phir domino chala. Ek ne becha, bhaav gira. Bhaav gira, to doosre ghabraaye. Unhone bhi becha. Bikri se aur bikri paida hui, aur girawat tez ho gayi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic old college library in India, tall wooden shelves of books, two students seen from behind at a long table, afternoon light, the lower fifth a plain floor.",
+     "type": "art"
+    },
+    "vo": "Par ek baat ajeeb lagti hai. Kitaab kehti hai, mehngai badhe to sona chadhta hai. Phir is baar mehngai badhi, aur sona gira. Yeh ulta kyun hua?"
+   },
+   {
+    "facts_used": [],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic dark storm clouds rolling over a modern city skyline in late afternoon, a shaft of light on the towers, the lower fifth a calm grey river.",
+     "type": "art"
+    },
+    "vo": "Kyunki is baar bazaar mehngai se kam, byaaj se zyada dara. Garam mehngai matlab ooncha byaaj. Aur ooncha byaaj sone ke liye bhaari. Wahi asli khel tha."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic stack of silver bars in a vault under cool blue light, reflections on the metal, the lower fifth a plain grey shelf.",
+     "type": "art"
+    },
+    "vo": "Ab chandi. Kitco News ke mutabik, chandi hafte bhar mein 15 percent se zyada giri. Yeh is saal ka uska sabse bura hafta tha. Sone se kaafi tez."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic small village pond at noon, a stone just dropped creating wide ripples, reeds at the edge, the lower fifth calm water.",
+     "type": "art"
+    },
+    "vo": "Kyun? Pehli wajah, chandi ka bazaar sone se kaafi chhota hai. Chhote talaab mein ek pathar bhi badi lehar uthata hai. Thodi bikri, aur bada jhatka."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic endless rows of solar panels in the Rajasthan desert at midday, a worker seen from far away, the lower fifth plain sand.",
+     "type": "art"
+    },
+    "vo": "Doosri wajah, chandi sirf gehna nahi. Solar panel, electronics aur factory ke kaam mein bhi lagti hai. Isliye uska bhaav kai taraf se hilta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic silversmith's small workshop in Old Delhi, a craftsman seen from behind polishing a silver plate under a lamp, the lower fifth a plain wooden workbench.",
+     "type": "art"
+    },
+    "vo": "Matlab chandi sone ki chhoti behen jaisi hai. Saath chalti hai, par zyada chanchal. Tezi mein sone se tez bhaagti hai. Aur girawat mein, usse bhi tez girti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic silver plates, bowls and coins neatly arranged on a red cloth in an Indian home, warm lamp light, the lower fifth plain red fabric.",
+     "type": "art"
+    },
+    "vo": "Kai gharon mein chandi ke sikke, payal aur bartan jama karne ka riwaaz hai. Jinhone tezi ke top par 'sasta sona' samajh kar chandi li, unhe sabse tez jhatka laga."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic dusty archive room with stacked bound ledgers on old wooden racks, a beam of light from a high window, the lower fifth a plain dusty floor.",
+     "type": "art"
+    },
+    "vo": "Ab bada sawaal. Kya aisi girawat pehle bhi aayi hai? Ya yeh pehli baar hai? Itihaas ka jawab seedha hai. Haan, aayi hai. Aur lambi bhi chali."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian jewellery market street around the early 2010s, cars and scooters of that period, overcast day, the lower fifth a plain road.",
+     "type": "art"
+    },
+    "vo": "2013 ko yaad kijiye. BullionVault ke mutabik, us poore saal mein sona dollar mein 30 percent gira. Yaani lagbhag ek tihaai keemat, saal bhar mein saaf."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic marble columns of a government building in Washington in heavy rain, umbrellas passing, the lower fifth wet stone steps.",
+     "type": "art"
+    },
+    "vo": "Tab bhi kahani milti-julti thi. America ke central bank ne paise ki neeti modne ke sanket diye. Sasta paisa band hone ki baat aayi, aur sona bikne laga."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic long empty highway through a desert stretching to the horizon under a pale sky, the lower fifth plain asphalt.",
+     "type": "art"
+    },
+    "vo": "2013 ka sabak saaf tha. Jise duniya 'safe' kehti hai, woh bhi lambi girawat dekh sakta hai. Hafton nahi, mahinon tak. Jab paise ki neeti mudti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic elderly man seen from behind sitting alone on a bench at an empty Indian railway platform at dawn, mist over the tracks, the lower fifth plain platform stone.",
+     "type": "art"
+    },
+    "vo": "Us waqt jinhone ghabra kar neeche becha, unhone kaagazi nuksaan ko asli bana diya. Jo ruke, unhe intezaar karna pada. Aur woh intezaar chhota nahi tha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic jewellery shop at night with its shutter half down, a single bulb glowing inside, empty street, the lower fifth a plain dark pavement.",
+     "type": "art"
+    },
+    "vo": "Yaani sona tootta nahi, par kabhi kabhi lambi neend so jaata hai. Yeh baat jewellery ki dukaan par koi nahi batata. Wahan sirf tezi ki kahaniyan sunaai jaati hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic stock exchange tower on Dalal Street in Mumbai at night in the rain, lights reflecting, the lower fifth a wet empty road.",
+     "type": "art"
+    },
+    "vo": "Par ek paheli ab bhi baaki hai. Dar ke waqt sona chadhna chahiye. Phir bade jhatke ke pehle din, sabse pehle sona hi kyun bikta hai? Jawab chaunkaane wala hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "analyst-view",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of gold bangles on a woman's wrist as she sits by a bedroom window in the morning, face not shown, the lower fifth a plain bedsheet.",
+     "type": "art"
+    },
+    "vo": "Sona 'safe' kaha jaata hai. Phir sona sirf 60 din mein 24.6 percent kyun gira? Yeh sawaal aaj sona rakhne wale har parivaar ke mann mein hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "analyst-view",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian living room in the early 1980s, a wooden radio on a shelf, a young man in a shirt seen from behind at the window, afternoon light, the lower fifth a plain mosaic floor.",
+     "type": "art"
+    },
+    "vo": "Commodity analyst Lukas Kuemmerle ke mutabik, 60 din mein itni badi girawat 1982 ke baad nahi aayi thi. Matlab aapke Papa ki jawani ke baad, aisa daur nahi dekha gaya."
+   },
+   {
+    "facts_used": [],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic lobby of a glass office tower in a global financial city, people in suits seen from behind crossing, morning light, the lower fifth a plain marble floor.",
+     "type": "art"
+    },
+    "vo": "Toh asli wajah kya hai? Ek kadwi sachchai. Duniya ke bade fund aksar udhaar ka paisa lekar shares aur doosri cheezon par bahut bada daav lagaate hain."
+   },
+   {
+    "facts_used": [],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic man in a suit standing alone at a dark office window at night, seen from behind, city lights below, the lower fifth a plain dark carpet.",
+     "type": "art"
+    },
+    "vo": "Jab bazaar mein achanak jhatka lagta hai, to udhaar dene wala turant paisa maangta hai. Ise margin call kehte hain. Yaani 'abhi paisa jama karo, warna saude band'."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic busy wholesale market at dawn, traders quickly handing over sacks and crates, motion and haste, the lower fifth a plain dusty ground.",
+     "type": "art"
+    },
+    "vo": "Ab fund kya beche? Gire hue share beche, to bada nuksaan. Kuch cheezein turant bikti hi nahi. Toh woh woh cheez bechta hai jo foran, achhe daam par bik jaaye."
+   },
+   {
+    "facts_used": [],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic gold bars being wheeled out of a vault on a steel trolley by a guard seen from behind, harsh white light, the lower fifth a plain concrete floor.",
+     "type": "art"
+    },
+    "vo": "Woh cheez hai sona. Duniya ka sabse aasaani se bikne wala maal. Isliye bade dar ke pehle jhatke mein, sona aksar sabse pehle bikta hai. Majboori mein."
+   },
+   {
+    "facts_used": [],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic single gold bar under a spotlight on black stone, everything else dark, the lower fifth plain black stone.",
+     "type": "art"
+    },
+    "vo": "Matlab sona is liye nahi gira ki woh bekaar ho gaya. Woh is liye bika kyunki woh sabse kaam ka tha. Sabse bharosemand, aur sabse jaldi paisa dene wala."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic calm sunrise over a wide river, empty stone steps leading to the water, mist, the lower fifth still water.",
+     "type": "art"
+    },
+    "vo": "Toh agli baar sona achanak gire, to yeh yaad rakhna. Har girawat kamzori ka sabut nahi. Kabhi kabhi yeh bas kisi aur ka nuksaan bharne ki bikri hoti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic row of bank lockers with one door open, warm light inside the vault, the lower fifth a plain steel floor.",
+     "type": "art"
+    },
+    "vo": "Teesra sawaal, aur sabse zaroori. Aapke paise ka ab kya? Har tarah ke sone wale par asar alag hai. Gehne, gold loan, gold fund aur sarkari gold bond."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a bride's hennaed hands wearing gold bangles at an Indian wedding, face not shown, warm lights, the lower fifth plain silk fabric.",
+     "type": "art"
+    },
+    "vo": "Pehle gehne wale. Agar tezi ke waqt gehne liye, to aaj unka mol kam dikhega. Par gehne aksar bechne ke liye nahi, pehenne aur sambhaalne ke liye hote hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic goldsmith's hands hammering a small gold ring on an anvil in a workshop, sparks of light, the lower fifth a plain worn workbench.",
+     "type": "art"
+    },
+    "vo": "Ek baat yaad rakhiye. Gehne par making charge lagta hai, yaani banwaai ka kharcha. Bechte waqt yeh aksar wapas nahi milta. Isliye gehna investment kam, shauk zyada hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic small-town gold loan office, a customer seen from behind handing a cloth pouch across the counter, afternoon light, the lower fifth a plain floor.",
+     "type": "art"
+    },
+    "vo": "Doosre, gold loan wale. Aapne sona girvi rakh kar bank se loan liya. Girvi yaani loan ke badle sona bank ke paas jama rakhna. Bank sone ke bhaav ke hisaab se hi loan deta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic bank officer examining a gold chain through a jeweller's loupe at a desk, side light, face partly turned away, the lower fifth a plain desk surface.",
+     "type": "art"
+    },
+    "vo": "Ab bhaav gira, to bank ki nazar mein aapka girvi sona kam keemat ka ho gaya. Aise mein bank thoda paisa lautane ya aur sona rakhne ko keh sakta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic man sitting on a bench outside an Indian bank, seen from the side reading a folded letter with no visible writing, morning light, the lower fifth plain pavement.",
+     "type": "art"
+    },
+    "vo": "Isliye gold loan wale apne bank ke message aur shartein dhyaan se padhein. Ghabraahat mein nahi, poori baat samajh kar kadam uthayein. Yahi sabse sasta bachaav hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic young professional woman sitting by a window with a cup of tea, a closed notebook beside her, thoughtful, evening light, the lower fifth a plain wooden table.",
+     "type": "art"
+    },
+    "vo": "Teesre, gold ETF wale. ETF yaani share bazaar ke raaste khareeda gaya sona, bina tijori aur bina chori ke darr ke. Iska bhaav roz sone ke saath chalta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic long shadow of a person walking on an empty street at sunset, the person out of frame, the lower fifth plain road.",
+     "type": "art"
+    },
+    "vo": "Toh sona gira, to aapka ETF bhi gira. Yeh fund ki galti nahi hai. Fund wahi kar raha hai jo usse karna tha. Sone ki parchhai ki tarah chalna."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic stone facade of the Reserve Bank of India building in Mumbai in the morning, no lettering visible, a few pedestrians, the lower fifth a plain footpath.",
+     "type": "art"
+    },
+    "vo": "Chauthe, SGB wale. SGB yaani Sovereign Gold Bond, sarkar ka gold bond. Iski keemat bhi sone ke saath upar neeche hoti hai. Lekin isme ek fark hai."
+   },
+   {
+    "facts_used": [],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic retired Indian couple seen from behind on a sunny verandah drinking tea, plants around, the lower fifth a plain tiled floor.",
+     "type": "art"
+    },
+    "vo": "SGB sone ke bhaav ke upar har saal 2.5 percent byaaj bhi deta hai. Bhaav gire, tab bhi yeh chhota byaaj aata rehta hai. Girawat mein yeh thoda sahara hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic crowd outside a brightly lit jewellery showroom on a festival evening, people seen from behind pushing in, the lower fifth a plain road.",
+     "type": "art"
+    },
+    "vo": "Ab sabse badi galti, top par. Jab har jagah 'sona record par' ki baat ho, tabhi zyadatar log daudte hain. Bheed ke saath, sabse unchi keemat par."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic empty jewellery shop counter on a slow afternoon, the owner seen from behind looking out at a quiet street, the lower fifth a plain floor.",
+     "type": "art"
+    },
+    "vo": "Aur neeche ki galti. Jab bhaav gire aur khabrein daraayein, wahi log ghabra kar bech dete hain. Unche mein liya, neeche mein becha. Kaagazi nuksaan asli ban gaya."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic huge old banyan tree in a village standing firm in a strong wind, branches swaying, grey sky, the lower fifth plain earth.",
+     "type": "art"
+    },
+    "vo": "Teesri galti, 'safe' ka galat matlab. Safe ka matlab hai lambe waqt ka sahara. Iska matlab yeh nahi ki bhaav kabhi nahi girega. 2013 ne yahi sikhaya tha."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian couple seen from behind at a kitchen table at night, a small closed jewellery box between them, warm lamp, the lower fifth a plain table top.",
+     "type": "art"
+    },
+    "vo": "Toh samajhdaari kya hai? Pehle khud se poochhiye, sona kyun rakha hai? Shaadi ke liye, mushkil waqt ke liye, ya jaldi munafe ke liye? Jawab se hi soch badalti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic small gold coins placed in a neat row on a wooden shelf, soft morning light, the lower fifth plain wood.",
+     "type": "art"
+    },
+    "vo": "Jo log sona thoda thoda, alag alag waqt par lete hain, unhe top ka dar kam rehta hai. Aur khabar ki garmi mein jaldbaazi bhaari padti hai. Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic cargo plane on a misty airport tarmac at dawn, guards loading sealed metal crates, the lower fifth plain tarmac.",
+     "type": "art"
+    },
+    "vo": "Ab shuru ka sawaal. Sabse safe cheez sabse pehle kyun biki? Kyunki dar ke waqt duniya ko turant paisa chahiye tha. Aur sona sabse turant bikta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic roadside tea stall in the evening, a group of friends seen from behind chatting with glasses of chai, string lights, the lower fifth a plain dirt ground.",
+     "type": "art"
+    },
+    "vo": "Agle video mein, gold loan ki shartein, aasaan bhasha mein. Aur yeh video us dost ko bhejo, jo kehta hai sona kabhi nahi girta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian home at night, warm lamp light on a dressing table with a closed wooden jewellery box, the lower fifth a plain wooden surface.",
+     "type": "art"
+    },
+    "vo": "Ab aapse ek aasaan sawaal. Aapke ghar mein sona kis liye hai: shaadi, mushkil waqt, ya munafa? Comment mein bas ek shabd likhiye."
+   }
+  ],
+  "short_section": [
+   41,
+   48
+  ],
+  "thumbnail": {
+   "name": "SONA CHANDI",
+   "name_hi": "सोना चांदी",
+   "scene": "LEFT: a gleaming stack of gold and silver bars under bright vault lights; RIGHT: the same vault in dim cold light, the stack toppled and the bars scattered across the floor.",
+   "words": [
+    "24.6%",
+    "CRASH"
+   ],
+   "words_hi": [
+    "24.6%",
+    "क्रैश"
+   ]
+  },
+  "title": "Sona 60 din mein 24.6% kyun gira?"
+ },
+ "status": "voiced",
+ "timings": [
+  0.0,
+  5.577,
+  10.387,
+  17.844,
+  23.746,
+  33.434,
+  41.846,
+  50.87,
+  59.98,
+  67.198,
+  76.277,
+  84.256,
+  92.258,
+  100.23,
+  107.229,
+  116.732,
+  125.616,
+  134.655,
+  144.597,
+  154.967,
+  162.592,
+  170.783,
+  179.444,
+  186.86,
+  196.374,
+  204.351,
+  213.207,
+  222.18,
+  231.398,
+  239.866,
+  248.334,
+  256.397,
+  265.226,
+  274.142,
+  282.404,
+  291.534,
+  300.207,
+  309.228,
+  317.387,
+  325.708,
+  334.071,
+  342.021,
+  351.218,
+  359.576,
+  368.518,
+  377.223,
+  386.388,
+  394.017,
+  401.858,
+  411.628,
+  420.318,
+  429.606,
+  439.236,
+  447.278,
+  455.832,
+  464.645,
+  472.288,
+  481.206,
+  489.435,
+  499.37,
+  508.141,
+  516.906,
+  525.394,
+  534.559,
+  543.712,
+  550.069
+ ],
+ "topic": {
+  "follows": "Gold crash videos took 5.6M, 5.1M, 2M and 1.6M views in the Hindi list; the founder chose it for today's long.",
+  "hooks": [
+   "Sona kitne din mein kitna gira, aur kisne becha?",
+   "Kya sona sach mein hamesha surakshit hota hai?"
+  ],
+  "id": "wk-2026-11-28-sglearning-long",
+  "patch_tries": 1,
+  "summary": "A detailed study of the recent gold and silver fall (founder, 28 Nov 2026: 'Do on sona aur chandi achanak se kyun gire. Detailed study'). The timeline day by day with peak and current prices (LBMA, MCX, COMEX; check every level and date); the drivers one by one: the dollar, interest-rate expectations, profit-booking after the rally, margin changes on the exchanges, central-bank buying; how silver fell further and why; what earlier falls such as 2011 and 2013 looked like and how long recovery took; what it means for a jewellery buyer, a gold-loan holder, an ETF or SGB saver; and the mistakes most buyers make at the top and at the bottom. Explanation only, no advice to buy or sell.",
+  "target_minutes": 12,
+  "title": "Sona aur chandi achanak kyun gire, aur asli galti kahan hoti hai?",
+  "topic_score": 5,
+  "topic_score_why": [
+   "+3 touches the viewer's own money",
+   "+1 a choice the viewer faces",
+   "+1 asks a question"
+  ],
+  "trend": true,
+  "voice": "voice_g8azc8xcwhlu",
+  "weekly": true
+ },
+ "updated": "2026-11-28T10:45:44+00:00",
+ "writer": "claude"
+}
