@@ -1,0 +1,339 @@
+{
+ "channel": "arthvan",
+ "facts": [
+  {
+   "label": "scripture",
+   "number": 1.115,
+   "quote": "The soul of all that moveth not or moveth, the Sun hath filled the air and earth and heaven.",
+   "source_date": "1896",
+   "source_name": "Rigveda, Mandala 1",
+   "source_url": "https://en.wikisource.org/wiki/The_Hymns_of_the_Rigveda/Book_1/Hymn_115",
+   "text": "In the Rigveda, solar hymns celebrate the Sun and the dawn goddess Ushas as self-evident cosmic forces sustained in nature without the use of anthropomorphic idols.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "There is no murti and no priest mediating the worship. The offering goes directly to Surya and Chhathi Maiya, made by the family itself.",
+   "source_date": "2019-10-31",
+   "source_name": "Sahapedia",
+   "source_url": "https://www.sahapedia.org/chhath-puja-origin-of-the-festival-and-the-story-of-devasena",
+   "text": "Folk tradition in Bihar asserts that Chhathi Maiya has no idol because she embodies formless nature and cosmic solar rays that cannot be confined within a stone statue.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "Many in Bihar trace the practice of standing in the river directly to him — and to Anga, his kingdom, present-day Bhagalpur.",
+   "source_date": "2014-10-28",
+   "source_name": "The Times of India",
+   "source_url": "https://timesofindia.indiatimes.com/city/patna/sun-god-being-worshipped-since-vedic-period/articleshow/44952671.cms",
+   "text": "Local lore traces the custom of standing waist-deep in river water to offer arghya directly to the Mahabharata warrior Karna in the ancient region of Anga.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": 200.0,
+   "quote": "The figurative manifestations of the Sun were found for the first time in 200BC Bodh Gaya railings.",
+   "source_date": "2014-10-28",
+   "source_name": "Patna University Department of Ancient Indian History and Archaeology",
+   "source_url": "https://timesofindia.indiatimes.com/city/patna/sun-god-being-worshipped-since-vedic-period/articleshow/44952671.cms",
+   "text": "Archaeological analysis of the Bodh Gaya sandstone railing dating to 200 BCE revealed the earliest known visual relief of the Sun god in Bihar riding a horse-drawn chariot, confirming ancient regional solar iconography.",
+   "unit": "BCE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1969.0,
+   "quote": "Archaeological and art-historical scholarship has documented representations of the goddess in the Mathura sculptural tradition during the Kushan period.",
+   "source_date": "1969-12-01",
+   "source_name": "Journal of the Indian Society of Oriental Art",
+   "source_url": "https://www.jstor.org/stable/44474706",
+   "text": "An art-historical survey published in 1969 established that while Shashthi acquired anthropomorphic sculpted images in Mathura during the 1st to 3rd centuries CE, eastern riverine solar rituals intentionally maintained aniconic worship using natural produce.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 1437.0,
+   "quote": "Built during the 8th century by Chandravanshi King Bhairavendra Singh, with an inscription from 1437 documenting the dedication of the temple.",
+   "source_date": "2016-05-25",
+   "source_name": "Archaeological Survey of India",
+   "source_url": "https://asi.nic.in/",
+   "text": "Surveys by the Archaeological Survey of India document that the historic Deo Sun Temple in Bihar features solar iconography dating between the 8th and 15th centuries CE but contains no sanctum idol of Chhathi Maiya, serving instead as an open gathering site for river and pond offerings.",
+   "unit": "CE"
+  }
+ ],
+ "id": "2026-11-30-arthvan-short",
+ "ids": {
+  "budget": {
+   "day": "2026-11-28",
+   "drafts": 1,
+   "research": 1
+  },
+  "cost": {
+   "inr": 42.0,
+   "usd": 0.2771,
+   "voice": 11
+  },
+  "drafts": 1,
+  "ig_story_id": "skipped: Reel over 60 s",
+  "music": {
+   "by": "Kevin MacLeod (incompetech.com)",
+   "licence": "CC BY 4.0",
+   "title": "Truth of the Legend"
+  },
+  "sound": "track",
+  "watch": {
+   "best_change": "Open on the twist instead of saving it for 43 seconds, e.g. 'Mathura mein Chhathi Maiya ki patthar ki murti mili hai, phir ghat par kyun nahi?' over the Shashthi statue, so the first second carries a real surprise.",
+   "issues": 7,
+   "opening": 7,
+   "verdict": "fix"
+  },
+  "watch_redo": [
+   2,
+   7,
+   8
+  ]
+ },
+ "kind": "short",
+ "publish_day": "2026-11-30",
+ "reasons": [
+  "review: redrawing 3 picture(s) before upload"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Chhathi Maiya ki murti kyun nahi hoti?\nNa pandit, na mandir, seedha Surya ko arghya.\nRigveda, Mathura ki murtiyan aur Deo Surya Mandir, sab saath rakhkar dekhiye.\nAap kya maante hain, Maiya Usha hain ya gaon ki maa-devi?\nMaa ko bhejo jo har saal ghat par arghya deti hain.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#HinduMythology",
+     "#Mythology",
+     "#IndianHistory",
+     "#Sanatan",
+     "#Rahasya",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Chhathi Maiya ki murti kyun nahi hoti? Mathura mein Shashthi devi ki murtiyan bani thi, par purab ke ghaton par aaj bhi puja sirf nadi aur suraj se. Aapke ghar mein iski kya kahani sunayi jaati hai? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Chhathi Maiya ki murti kyun nahi hoti? Lok-parampara kehti hai, Maiya nadi aur suraj ki kirnon mein hain. Par Mathura mein Shashthi devi ki murtiyan bani thi, phir purab ke ghaton ne murti kyun nahi apnayi? Maa ko bhejo jo har saal ghat par arghya deti hain.",
+    "tags": [
+     "Chhath Puja",
+     "Chhathi Maiya",
+     "Shashthi devi",
+     "Surya puja",
+     "Rigveda",
+     "Usha",
+     "Karna",
+     "Deo Surya Mandir",
+     "Bihar",
+     "mythology",
+     "Sabut ke saath"
+    ],
+    "title": "Chhathi Maiya ki murti kyun nahi hoti?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Maa ko bhejo, jo har saal ghat par arghya deti hain.",
+  "hook": "Chhathi Maiya ki murti kyun nahi hoti?",
+  "scenes": [
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide aerial view at dawn of a vast river ghat in Bihar, thousands of women in bright sarees standing waist-deep in the river holding bamboo baskets of fruit toward a huge blood-red rising sun, mist on the water, oil lamps floating, no idol or shrine anywhere, dramatic golden light filling the frame, no text",
+     "type": "art"
+    },
+    "vo": "Chhathi Maiya ki murti kyun nahi hoti? Ghat par lakhon log. Haath mein soop. Saamne koi murti nahi."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary-style view from behind of a single Indian mother in a yellow saree standing waist-deep in a dark river before dawn, pouring water from a brass lota toward a faint glow on the horizon, no priest or temple nearby, cool blue light, ripples on the water, no text",
+     "type": "art"
+    },
+    "vo": "Bhor ka andhera. Ek maa kamar tak paani mein hai. Na pandit, na mandir. Seedha Surya ko arghya, yaani jal. Par yeh riwaaz kisne shuru kiya?"
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene in ancient India at sunrise, a tall warrior king seen from behind in a white dhoti and angavastram with gold armlets and bronze armour laid on the riverbank, standing waist-deep in the Ganga with cupped hands raising water toward the rising sun, thatched huts and a carved stone ghat in the distance, soft orange light, no text. Correction after review: Shorten the tag to fit (e.g. 'KAHANI • TOI') and remove the warp effect, or re-render the frame cleanly.",
+     "type": "art"
+    },
+    "vo": "Bihar kehta hai, Karna ne. Ang ka raja, aaj ka Bhagalpur. Roz nadi mein khade hokar Surya ko jal. Par Maiya ka chehra? Wahan bhi nahi."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic evening scene in a Bihar village courtyard, an old grandmother in a cotton saree seen in profile beside a clay oil lamp, pointing toward the last rays of the setting sun over a pond while small children listen, mud walls and a bamboo basket nearby, warm natural light, no text",
+     "type": "art"
+    },
+    "vo": "Daadi samjhati hain. Maiya nadi mein hain, kirnon mein hain. Kirnon ko patthar mein kaise bandhoge?"
+   },
+   {
+    "facts_used": [
+     1,
+     4
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a family's offering on a riverbank, a woven bamboo soop basket filled with bananas, sugarcane, coconut and clay lamps, hands of family members arranging it, river water glinting behind, no idol, no priest, morning light, no text",
+     "type": "art"
+    },
+    "vo": "Isliye parivaar khud puja karta hai. Soop, phal, nadi ka paani. Lekin yeh soch kitni purani hai?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "scripture",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of an ancient palm-leaf manuscript bundle tied with cord, resting on a wooden stand beside a brass oil lamp, first dawn light falling across the leaves through a window, script too small and blurred to read, quiet reverent mood, no text visible",
+     "type": "art"
+    },
+    "vo": "Rigveda kholiye. Surya ki stuti hai, bhor ki devi Usha ki bhi. Murti ka koi zikr nahi."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic museum-style view of an ancient weathered red sandstone sculpture of a mother goddess holding a child, shown at a respectful distance on a stone pedestal under soft spotlight, chisel marks and cracks visible, dark background, no labels, no text",
+     "type": "art"
+    },
+    "vo": "Ab twist. Mathura mein Shashthi devi ki patthar ki murtiyan bani thi. Shashthi, yaani Chhathi Maiya ka hi naam. Par purab ke ghaton ne murti nahi apnayi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic split-mood landscape in ancient India, on one side a pink dawn sky over open plains, on the other a village shrine of clay and terracotta mother figures under a banyan tree with women in sarees offering flowers, natural soft light, no text. Correction after review: Replace it with a single full image of a simple village mother-goddess shrine (a stone or mound, not a carved idol), or of a dawn sky for Usha, and fix the tag.",
+     "type": "art"
+    },
+    "vo": "Toh Maiya hain kaun? Kuch historians kehte hain, Vedic Usha. Kuch kehte hain, gaon ki purani maa-devi, jo Surya puja se judi."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view at sunset of the tall carved stone Deo Sun Temple in Bihar, its weathered shikhara glowing orange, a large pond in front crowded with devotees in sarees offering water toward the sun, reflections on the water, no text. Correction after review: Shorten it to something like 'KHOJ • ASI'.",
+     "type": "art"
+    },
+    "vo": "Aaj Bihar ka Deo Surya Mandir dekhiye. Surya ki purani moortiyan wahan hain. Par Chhathi Maiya ki murti nahi. Log talaab par arghya dete hain."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view from behind of a lone woman in a red saree standing in a calm river at dusk, holding an empty bamboo basket, the setting sun's rays spreading across the water and sky, a sense of open mystery, no text",
+     "type": "art"
+    },
+    "vo": "Jawab: murti na hona lok-vishwas hai. Maiya nadi aur roshni hain. Par yeh puja kab shuru hui? Koi nahi jaanta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view from behind of an Indian mother and her grown son walking down stone ghat steps toward the river at dawn, she carries a bamboo basket of fruit, lamps glowing on the steps, warm hopeful light, no text",
+     "type": "art"
+    },
+    "vo": "Maa ko bhejo, jo har saal ghat par arghya deti hain."
+   }
+  ],
+  "thumbnail": {
+   "name": "CHHATH PUJA",
+   "name_hi": "छठ पूजा",
+   "scene": "Thousands of women in bright sarees standing waist-deep in a misty river at dawn, raising bamboo baskets toward a giant red rising sun, with no idol or shrine anywhere in sight.",
+   "words": [
+    "0 IDOL",
+    "SECRET"
+   ],
+   "words_hi": [
+    "0 मूर्ति",
+    "रहस्य"
+   ]
+  },
+  "title": "Chhathi Maiya ki *murti* kyun nahi? 🤯"
+ },
+ "status": "voiced",
+ "timings": [
+  0.0,
+  5.845,
+  15.762,
+  23.837,
+  29.525,
+  35.994,
+  41.631,
+  49.151,
+  57.23,
+  64.647,
+  71.726
+ ],
+ "topic": {
+  "allowed_sources": [
+   "asi.nic.in",
+   "en.wikipedia.org",
+   "nio.res.in",
+   "britannica.com",
+   "the scripture or text named in the story",
+   "nasa.gov",
+   "who.int",
+   "nih.gov",
+   "nationalgeographic.com",
+   "smithsonianmag.com",
+   "a university or museum page"
+  ],
+  "follows": "Chhathi Maiya idol Short has 6M views and Chhath explainers are rising.",
+  "hooks": [
+   "Chhathi Maiya ki murti kyun nahi hoti?",
+   "Chhath mein Surya ko arghya, par Maiya ki tasveer kyun nahi?"
+  ],
+  "id": "wk-2026-11-30-arthvan-short",
+  "summary": "Tell the belief of Chhathi Maiya as Shashthi and Surya worship with respect. Lay beside it the texts: Brahmavaivarta Purana on Shashthi, Surya worship in the Rigveda, and the tradition of worship without idols. Verify sources.",
+  "target_minutes": null,
+  "title": "Chhathi Maiya ki koi murti kyun nahi hoti?",
+  "topic_score": 7,
+  "topic_score_why": [
+   "+3 a widely held belief and its reason",
+   "+3 a shock question or a mystery",
+   "+1 asks a question"
+  ],
+  "viral": true,
+  "voice": "voice_7o0kddoq6q2z",
+  "weekly": true
+ },
+ "updated": "2026-11-28T16:35:58+00:00",
+ "writer": "claude"
+}

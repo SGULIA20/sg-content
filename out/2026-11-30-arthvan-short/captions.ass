@@ -1,0 +1,73 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.87,Default,,0,0,0,,Chhathi Maiya ki murti kyun nahi
+Dialogue: 0,0:00:01.87,0:00:02.28,Default,,0,0,0,,hoti?
+Dialogue: 0,0:00:02.28,0:00:03.32,Default,,0,0,0,,Ghat par lakhon log.
+Dialogue: 0,0:00:03.32,0:00:03.94,Default,,0,0,0,,Haath mein soop.
+Dialogue: 0,0:00:03.94,0:00:05.39,Default,,0,0,0,,Saamne koi murti nahi.
+Dialogue: 0,0:00:05.84,0:00:07.06,Default,,0,0,0,,Bhor ka andhera.
+Dialogue: 0,0:00:07.06,0:00:09.00,Default,,0,0,0,,Ek maa kamar tak paani mein
+Dialogue: 0,0:00:09.00,0:00:09.24,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:09.24,0:00:09.97,Default,,0,0,0,,Na pandit,
+Dialogue: 0,0:00:09.97,0:00:10.70,Default,,0,0,0,,na mandir.
+Dialogue: 0,0:00:10.70,0:00:12.40,Default,,0,0,0,,Seedha Surya ko arghya,
+Dialogue: 0,0:00:12.40,0:00:13.13,Default,,0,0,0,,yaani jal.
+Dialogue: 0,0:00:13.13,0:00:15.31,Default,,0,0,0,,Par yeh riwaaz kisne shuru kiya?
+Dialogue: 0,0:00:15.76,0:00:16.74,Default,,0,0,0,,Bihar kehta hai,
+Dialogue: 0,0:00:16.74,0:00:17.33,Default,,0,0,0,,Karna ne.
+Dialogue: 0,0:00:17.33,0:00:18.11,Default,,0,0,0,,Ang ka raja,
+Dialogue: 0,0:00:18.11,0:00:19.09,Default,,0,0,0,,aaj ka Bhagalpur.
+Dialogue: 0,0:00:19.09,0:00:21.04,Default,,0,0,0,,Roz nadi mein khade hokar Surya
+Dialogue: 0,0:00:21.04,0:00:21.43,Default,,0,0,0,,ko jal.
+Dialogue: 0,0:00:21.43,0:00:22.41,Default,,0,0,0,,Par Maiya ka chehra?
+Dialogue: 0,0:00:22.41,0:00:23.39,Default,,0,0,0,,Wahan bhi nahi.
+Dialogue: 0,0:00:23.84,0:00:25.05,Default,,0,0,0,,Daadi samjhati hain.
+Dialogue: 0,0:00:25.05,0:00:26.05,Default,,0,0,0,,Maiya nadi mein hain,
+Dialogue: 0,0:00:26.05,0:00:26.86,Default,,0,0,0,,kirnon mein hain.
+Dialogue: 0,0:00:26.86,0:00:29.07,Default,,0,0,0,,Kirnon ko patthar mein kaise bandhoge?
+Dialogue: 0,0:00:29.52,0:00:31.89,Default,,0,0,0,,Isliye parivaar khud puja karta hai.
+Dialogue: 0,0:00:31.89,0:00:32.10,Default,,0,0,0,,Soop,
+Dialogue: 0,0:00:32.10,0:00:32.32,Default,,0,0,0,,phal,
+Dialogue: 0,0:00:32.32,0:00:33.39,Default,,0,0,0,,nadi ka paani.
+Dialogue: 0,0:00:33.39,0:00:35.54,Default,,0,0,0,,Lekin yeh soch kitni purani hai?
+Dialogue: 0,0:00:35.99,0:00:36.99,Default,,0,0,0,,Rigveda kholiye.
+Dialogue: 0,0:00:36.99,0:00:38.19,Default,,0,0,0,,Surya ki stuti hai,
+Dialogue: 0,0:00:38.19,0:00:39.78,Default,,0,0,0,,bhor ki devi Usha ki bhi.
+Dialogue: 0,0:00:39.78,0:00:41.18,Default,,0,0,0,,Murti ka koi zikr nahi.
+Dialogue: 0,0:00:41.63,0:00:41.97,Default,,0,0,0,,Ab twist.
+Dialogue: 0,0:00:41.97,0:00:43.82,Default,,0,0,0,,Mathura mein Shashthi devi ki patthar
+Dialogue: 0,0:00:43.82,0:00:44.83,Default,,0,0,0,,ki murtiyan bani thi.
+Dialogue: 0,0:00:44.83,0:00:45.17,Default,,0,0,0,,Shashthi,
+Dialogue: 0,0:00:45.17,0:00:46.51,Default,,0,0,0,,yaani Chhathi Maiya ka hi naam.
+Dialogue: 0,0:00:46.51,0:00:48.03,Default,,0,0,0,,Par purab ke ghaton ne murti
+Dialogue: 0,0:00:48.03,0:00:48.70,Default,,0,0,0,,nahi apnayi.
+Dialogue: 0,0:00:49.15,0:00:50.02,Default,,0,0,0,,Toh Maiya hain kaun?
+Dialogue: 0,0:00:50.02,0:00:51.55,Default,,0,0,0,,Kuch historians kehte hain,
+Dialogue: 0,0:00:51.55,0:00:52.42,Default,,0,0,0,,Vedic Usha.
+Dialogue: 0,0:00:52.42,0:00:53.29,Default,,0,0,0,,Kuch kehte hain,
+Dialogue: 0,0:00:53.29,0:00:55.04,Default,,0,0,0,,gaon ki purani maa-devi,
+Dialogue: 0,0:00:55.04,0:00:56.78,Default,,0,0,0,,jo Surya puja se judi.
+Dialogue: 0,0:00:57.23,0:00:58.80,Default,,0,0,0,,Aaj Bihar ka Deo Surya Mandir
+Dialogue: 0,0:00:58.80,0:00:59.15,Default,,0,0,0,,dekhiye.
+Dialogue: 0,0:00:59.15,0:01:01.06,Default,,0,0,0,,Surya ki purani moortiyan wahan hain.
+Dialogue: 0,0:01:01.06,0:01:02.63,Default,,0,0,0,,Par Chhathi Maiya ki murti nahi.
+Dialogue: 0,0:01:02.63,0:01:04.20,Default,,0,0,0,,Log talaab par arghya dete hain.
+Dialogue: 0,0:01:04.65,0:01:05.08,Default,,0,0,0,,Jawab:
+Dialogue: 0,0:01:05.08,0:01:07.00,Default,,0,0,0,,murti na hona lok-vishwas hai.
+Dialogue: 0,0:01:07.00,0:01:08.50,Default,,0,0,0,,Maiya nadi aur roshni hain.
+Dialogue: 0,0:01:08.50,0:01:10.21,Default,,0,0,0,,Par yeh puja kab shuru hui?
+Dialogue: 0,0:01:10.21,0:01:11.28,Default,,0,0,0,,Koi nahi jaanta.
+Dialogue: 0,0:01:11.73,0:01:12.51,Default,,0,0,0,,Maa ko bhejo,
+Dialogue: 0,0:01:12.51,0:01:13.89,Default,,0,0,0,,jo har saal ghat par arghya
+Dialogue: 0,0:01:13.89,0:01:14.48,Default,,0,0,0,,deti hain.
