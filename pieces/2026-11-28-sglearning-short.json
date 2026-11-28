@@ -118,7 +118,8 @@
  "reasons": [
   "try 1: advice: guarantee; advice: guarantee",
   "review: redrawing 1 picture(s) before upload",
-  "waiting for the founder's intro clip until 28 Nov 11:30 UTC"
+  "waiting for the founder's intro clip until 28 Nov 11:30 UTC",
+  "the founder's moving clips are placed on lines 2 to 5; put together again"
  ],
  "script": {
   "captions": {
@@ -266,7 +267,7 @@
   },
   "title": "2,000 ka note *gayab*, panic kyun nahi? 💸"
  },
- "status": "intro-wait",
+ "status": "voiced",
  "timings": [
   0.0,
   4.915,
@@ -345,6 +346,6 @@
   ],
   "voice": "voice_1kn3blc2u13l"
  },
- "updated": "2026-11-28T07:54:22+00:00",
+ "updated": "2026-11-28T08:36:15+00:00",
  "writer": "claude"
 }
