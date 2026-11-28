@@ -60,11 +60,26 @@
    "research": 1
   },
   "cost": {
-   "inr": 0.0,
-   "usd": 0.142112,
-   "voice": 1
+   "inr": 33.0,
+   "usd": 0.185148,
+   "voice": 9
   },
-  "drafts": 1
+  "drafts": 1,
+  "music": {
+   "by": "Kevin MacLeod (incompetech.com)",
+   "licence": "CC BY 4.0",
+   "title": "Easy Lemon"
+  },
+  "sound": "track",
+  "watch": {
+   "best_change": "Make the first frame show the fall itself, a big '13% ↓' over gold with the complete question on screen, so a scroller instantly sees the drama the title promises.",
+   "issues": 2,
+   "opening": 6,
+   "verdict": "fix"
+  },
+  "watch_redo": [
+   0
+  ]
  },
  "kind": "short",
  "publish_day": "2026-11-29",
@@ -73,7 +88,8 @@
   "voice budget of 160 requests reached for 2026-11-28",
   "voice budget of 160 requests reached for 2026-11-28",
   "voice budget of 160 requests reached for 2026-11-28",
-  "voice budget of 160 requests reached for 2026-11-28"
+  "voice budget of 160 requests reached for 2026-11-28",
+  "review: redrawing 1 picture(s) before upload"
  ],
  "script": {
   "captions": {
@@ -122,7 +138,7 @@
     "label": "hook",
     "visual": {
      "card": null,
-     "prompt": "Photorealistic close view of an Indian jewellery showroom glass counter, rows of heavy gold bangles and necklaces glowing under warm spotlights, the counter empty of customers, evening, natural shop light, no text",
+     "prompt": "Photorealistic close view of an Indian jewellery showroom glass counter, rows of heavy gold bangles and necklaces glowing under warm spotlights, the counter empty of customers, evening, natural shop light, no text. Correction after review: Make this opening picture the most dramatic, close and high-contrast view of the subject, filling the frame: a viewer scrolling past must stop on it.",
      "type": "art"
     },
     "vo": "Sona sirf November mein lagbhag 13 percent kyun gira?"
@@ -235,8 +251,18 @@
   },
   "title": "Sona chandi *achanak* kyun gire? 📉"
  },
- "status": "failed-voice",
- "timings": [],
+ "status": "voiced",
+ "timings": [
+  0.0,
+  3.204,
+  8.058,
+  11.85,
+  17.334,
+  21.269,
+  26.199,
+  30.491,
+  36.524
+ ],
  "topic": {
   "follows": "Gold crash videos took 5.6M, 5.1M, 2M and 1.6M views in the Hindi list; the founder asked for the Short of today's long.",
   "hooks": [
@@ -257,6 +283,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-28T13:50:19+00:00",
+ "updated": "2026-11-28T15:21:48+00:00",
  "writer": "claude"
 }

@@ -1,0 +1,44 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.89,Default,,0,0,0,,Sona sirf November mein lagbhag 13
+Dialogue: 0,0:00:01.89,0:00:02.75,Default,,0,0,0,,percent kyun gira?
+Dialogue: 0,0:00:03.20,0:00:05.14,Default,,0,0,0,,Saal bhar sona chandi lagatar chadhe.
+Dialogue: 0,0:00:05.14,0:00:06.38,Default,,0,0,0,,Jisne upar khareeda,
+Dialogue: 0,0:00:06.38,0:00:07.61,Default,,0,0,0,,uska paisa ab phansa.
+Dialogue: 0,0:00:08.06,0:00:10.22,Default,,0,0,0,,Aur chandi lagbhag 20 percent giri.
+Dialogue: 0,0:00:10.22,0:00:11.40,Default,,0,0,0,,Itna kisne becha?
+Dialogue: 0,0:00:11.85,0:00:12.57,Default,,0,0,0,,Pehla kaaran:
+Dialogue: 0,0:00:12.57,0:00:14.73,Default,,0,0,0,,America mein mehngai umeed se zyada
+Dialogue: 0,0:00:14.73,0:00:15.09,Default,,0,0,0,,nikli.
+Dialogue: 0,0:00:15.09,0:00:16.52,Default,,0,0,0,,Wahan byaaj badhne ki baat chal
+Dialogue: 0,0:00:16.52,0:00:16.89,Default,,0,0,0,,padi.
+Dialogue: 0,0:00:17.33,0:00:18.30,Default,,0,0,0,,Dollar mazboot hua,
+Dialogue: 0,0:00:18.30,0:00:19.08,Default,,0,0,0,,sona dab gaya.
+Dialogue: 0,0:00:19.08,0:00:20.82,Default,,0,0,0,,Phir bade funds bhi bechne utre.
+Dialogue: 0,0:00:21.27,0:00:21.93,Default,,0,0,0,,Reportedly,
+Dialogue: 0,0:00:21.93,0:00:23.59,Default,,0,0,0,,unhe AI wale shares mein ghaata
+Dialogue: 0,0:00:23.59,0:00:23.76,Default,,0,0,0,,hua.
+Dialogue: 0,0:00:23.76,0:00:24.59,Default,,0,0,0,,Paisa chahiye tha,
+Dialogue: 0,0:00:24.59,0:00:25.75,Default,,0,0,0,,toh sona chandi bech diya.
+Dialogue: 0,0:00:26.20,0:00:27.37,Default,,0,0,0,,Chandi zyada kyun giri?
+Dialogue: 0,0:00:27.37,0:00:28.54,Default,,0,0,0,,Uska bazaar chhota hai,
+Dialogue: 0,0:00:28.54,0:00:30.04,Default,,0,0,0,,thoda bechna bhi bada jhatka.
+Dialogue: 0,0:00:30.49,0:00:31.35,Default,,0,0,0,,Sabse badi galti?
+Dialogue: 0,0:00:31.35,0:00:32.78,Default,,0,0,0,,Udhaar lekar girta daam pakadna.
+Dialogue: 0,0:00:32.78,0:00:34.21,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:00:34.21,0:00:35.93,Default,,0,0,0,,Poori kahani kal wali lambi video
+Dialogue: 0,0:00:35.93,0:00:36.07,Default,,0,0,0,,mein.
+Dialogue: 0,0:00:36.52,0:00:37.46,Default,,0,0,0,,Yeh Mummy ko bhejo,
+Dialogue: 0,0:00:37.46,0:00:39.02,Default,,0,0,0,,jo shaadi ke liye sona khareedne
+Dialogue: 0,0:00:39.02,0:00:39.49,Default,,0,0,0,,wali hain.
