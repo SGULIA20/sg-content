@@ -70,6 +70,7 @@
  "publish_day": "2026-11-29",
  "reasons": [
   "voice budget of 80 requests reached for 2026-11-28",
+  "voice budget of 160 requests reached for 2026-11-28",
   "voice budget of 160 requests reached for 2026-11-28"
  ],
  "script": {
@@ -254,6 +255,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-28T10:56:55+00:00",
+ "updated": "2026-11-28T11:19:32+00:00",
  "writer": "claude"
 }
