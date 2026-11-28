@@ -9,8 +9,9 @@ from . import gemini
 from .config import CONTENT_DIR
 
 MODEL = "gemini-3.8-flash"
-MYTH_LABELS = {"scripture", "archaeology", "disputed", "legend"}
+MYTH_LABELS = {"scripture", "archaeology", "disputed", "legend", "documented"}
 FINANCE_LABELS = {"reported", "official", "analyst-view"}
+DOCUMENTED_ALIASES = {"official", "reported", "historical", "scientific", "record", "documented", "history", "science", "analyst-view"}
 NEWS_MAX_AGE_DAYS = 7
 MAX_OUTPUT_TOKENS = 20000
 FENCE = re.compile(r"^```(?:json)?\s*|\s*```$", re.MULTILINE)
@@ -61,9 +62,15 @@ def _parse(raw: str) -> dict:
     return {"facts": list(data.get("facts") or []), "summary": str(data.get("summary") or "")}
 
 
-def fact_sheet(topic: dict, channel: str, *, key: str | None = None, ask=gemini.generate, today: date | None = None, root: Path = CONTENT_DIR) -> dict:
+def fact_sheet(topic: dict, channel: str, *, key: str | None = None, ask=gemini.generate, today: date | None = None, root: Path = CONTENT_DIR,
+               angle: str = "") -> dict:
     today = today or date.today()
-    body = {"contents": [{"parts": [{"text": _prompt(channel, topic, today, root)}]}],
+    text = _prompt(channel, topic, today, root)
+    if angle:
+        text += (f"\n\nFOCUS FOR THIS PASS (it overrides the fact and source counts above): {angle}. Open the pages that cover this angle (up to six "
+                 f"sources). Return 8 to 14 facts about this angle only and skip the general overview. Every fact keeps its number, its source URL and "
+                 f"the date of the source.")
+    body = {"contents": [{"parts": [{"text": text}]}],
             "tools": [{"google_search": {}}],
             "generationConfig": {"temperature": 0, "maxOutputTokens": MAX_OUTPUT_TOKENS}}   # no JSON mode: with google_search it returns an empty candidate
     raw = ""
@@ -139,6 +146,8 @@ def clean(sheet: dict, channel: str, today: date, news: bool = False) -> dict:
             continue
         label = str(f.get("label") or "").strip().lower()
         if channel == "arthvan":
+            if label in DOCUMENTED_ALIASES:
+                label = "documented"                       # 28 Nov 2026: the Napoleon sheet kept 2 of its facts, the rest were dated records labelled "reported"
             if label not in MYTH_LABELS:
                 continue
         else:
@@ -155,3 +164,52 @@ def clean(sheet: dict, channel: str, today: date, news: bool = False) -> dict:
             number = None
         kept.append({**f, "label": label, "number": number, "source_url": url})
     return {"facts": kept, "summary": sheet.get("summary", "")}
+
+
+# 28 Nov 2026 (founder, on the 2,000 note Short: "where were the facts"; a check of 36 videos found Learning longs made on 4 to 8 facts, today's
+# gold "detailed study" on 4, Napoleon on 2): one search call returned 6 to 12 facts, so a 9-minute script was explanation and analogy. A long now
+# gets one general pass plus five angled passes, a Short one general pass plus a pass for every figure and date; the facts are merged.
+ANGLES = {
+    ("sglearning", "long"): [
+        "THE TIMELINE: every key date in order with the exact figure on that date (the level, the peak, the low, the size of each move, who announced what)",
+        "THE CAUSES: what regulators, officials, companies or named experts said caused it, each with their figure and the date they said it",
+        "HISTORY AND COMPARISONS: at least two earlier comparable episodes, with dates, sizes and how long the aftermath or recovery took",
+        "ORDINARY PEOPLE: who is affected and by how much, the official rules, limits, rates, fees and deadlines, and what the regulator advises",
+        "SURPRISES AND MISUNDERSTANDINGS: little-known facts and common wrong beliefs, each with a figure and a source that corrects it",
+    ],
+    ("arthvan", "long"): [
+        "THE TEXTS: which named text or chapter says what, with the exact wording or version; where the versions differ",
+        "THE FINDINGS: digs, surveys, records or measurements, each with the institution, the place and the year",
+        "THE EXPLANATIONS: what historians or scientists say happened, who says it, and where they disagree",
+        "COMPARISONS: parallel stories or events elsewhere in the world, with dates",
+        "TODAY: how the belief is told or practised now, and what is still unknown",
+    ],
+    ("sglearning", "short"): ["EVERY FIGURE AND DATE: each amount, percentage, count and date a viewer could be told, in order"],
+    ("arthvan", "short"): ["EVERY DATE AND RECORD: each date, measurement and documented source a viewer could be told, in order"],
+}
+MAX_FACTS = {"long": 40, "short": 16}
+
+
+def _fact_key(f: dict) -> tuple:
+    return (f.get("number"), re.sub(r"[^a-z0-9]", "", str(f.get("text", "")).lower())[:60])
+
+
+def deep_sheet(topic: dict, channel: str, *, key: str | None = None, ask=gemini.generate, today: date | None = None, root: Path = CONTENT_DIR) -> dict:
+    """The general fact sheet plus the angled passes for this kind of video, merged without repeats. The first pass decides success; a later
+    pass that fails (an outage, a spent credit) only costs its own facts."""
+    kind = "long" if topic.get("kind") == "long" else "short"
+    sheet = fact_sheet(topic, channel, key=key, ask=ask, today=today, root=root)
+    facts, seen = list(sheet["facts"]), {_fact_key(f) for f in sheet["facts"]}
+    for angle in ANGLES.get((channel, kind), []):
+        try:
+            extra = fact_sheet(topic, channel, key=key, ask=ask, today=today, root=root, angle=angle)
+        except Exception as e:                                   # noqa: BLE001
+            print(f"research pass '{angle[:30]}' skipped: {str(e)[:120]}", flush=True)
+            if "402" in str(e):                                  # the prepaid credit is gone: the rest would fail the same way
+                break
+            continue
+        for f in extra["facts"]:
+            if _fact_key(f) not in seen:
+                seen.add(_fact_key(f))
+                facts.append(f)
+    return {"facts": facts[:MAX_FACTS[kind]], "summary": sheet.get("summary", "")}

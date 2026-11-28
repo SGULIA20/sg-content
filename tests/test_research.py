@@ -145,3 +145,40 @@ def test_a_history_topic_is_told_to_cite_pages_that_stay_online_not_old_articles
     assert "en.wikipedia.org" in history and "Never write a URL from memory" in history
     assert "THIS TOPIC HAS NO NEWS ARTICLE" not in news
     assert "THIS TOPIC HAS NO NEWS ARTICLE" not in research._prompt("arthvan", {"title_hi": "t", "place": "p"}, date(2026, 11, 10))
+
+
+def test_a_dated_historical_record_is_kept_for_sg_myth_as_documented():
+    """28 Nov 2026: the Napoleon sheet kept 2 facts because dated records came back labelled reported or official."""
+    sheet = {"facts": [fact(label="reported"), fact(label="official", text="b"), fact(label="historical", text="c"), fact(label="maybe", text="d")], "summary": "x"}
+    kept = research.clean(sheet, "arthvan", TODAY)["facts"]
+    assert [f["label"] for f in kept] == ["documented", "documented", "documented"]
+
+
+def _asker(per_call):
+    calls = []
+    def ask(model, body, key):
+        i = len(calls)
+        calls.append(body["contents"][0]["parts"][0]["text"])
+        facts = per_call[i] if i < len(per_call) else []
+        if isinstance(facts, Exception):
+            raise facts
+        return {"candidates": [{"content": {"parts": [{"text": json.dumps({"facts": facts, "summary": "s"})}]}}]}
+    return ask, calls
+
+
+def test_a_long_gets_a_general_pass_and_five_angled_passes_merged_without_repeats():
+    shared = fact(text="same fact", number=1.0)
+    per = [[fact(text="one", number=1.0), shared]] + [[shared, fact(text=f"angle {i}", number=float(i + 10), source_url=f"https://e/{i}")] for i in range(5)]
+    ask, calls = _asker(per)
+    sheet = research.deep_sheet({"title": "Gold fall", "kind": "long"}, "sglearning", ask=ask, today=TODAY)
+    assert len(calls) == 6 and "FOCUS FOR THIS PASS" not in calls[0] and "THE TIMELINE" in calls[1]
+    assert len(sheet["facts"]) == 7 and [f["text"] for f in sheet["facts"]].count("same fact") == 1
+
+
+def test_a_short_gets_one_extra_pass_and_a_failed_later_pass_costs_only_its_own_facts():
+    ask, calls = _asker([[fact(text="core")], gemini.GeminiError("gemini failed (500)")])
+    sheet = research.deep_sheet({"title": "Note", "kind": "short"}, "sglearning", ask=ask, today=TODAY)
+    assert len(calls) == 2 and [f["text"] for f in sheet["facts"]] == ["core"]
+    ask2, calls2 = _asker([[fact(text="core")]] + [gemini.GeminiError("gemini failed (402): credits are depleted")])
+    research.deep_sheet({"title": "Gold", "kind": "long"}, "sglearning", ask=ask2, today=TODAY)
+    assert len(calls2) == 2                                                        # a spent credit stops the remaining passes

@@ -504,7 +504,7 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
                     pieces.save(pieces.transition(piece, "rejected", f"research budget used for today ({DAILY_RESEARCH} calls); the next quota day retries"), root)
                     return piece
                 try:
-                    sheet = deps.research(topic, piece.channel)
+                    sheet = deps.research({**topic, "kind": piece.kind}, piece.channel)
                 except research.ResearchError as e:
                     pieces.save(pieces.transition(piece, "failed-research", f"try {attempt + 1}: {secrets.scrub(str(e))[:200]}"), root)
                     continue
@@ -794,7 +794,7 @@ def real_deps(root: Path = ROOT, env=None) -> Deps:
         subtitles.upload_all(youtube.access_token(piece.channel, env or os.environ), piece, paths)
 
     from . import writebatch
-    return Deps(topic=topic_fn, research=lambda topic, ch: research.verify_urls(research.fact_sheet(topic, ch)),
+    return Deps(topic=topic_fn, research=lambda topic, ch: research.verify_urls(research.deep_sheet(topic, ch)),
                 write=lambda piece, sheet, lib, tags: writer.write(piece, sheet, lib, tags, batch_fn=None if due_soon(piece) else writebatch.write_piece), say=lambda *a, **k: voice.say(*a, plain=True, **k), paint=art.paint, avatar=art.avatar,
                 render_card=cards.render, build=assemble.build, qa=qa.report, upload=upload_fn,
                 lint=lambda piece, prior: (lint.check_script(piece, banned, prior) + lint.check_captions(piece, hashtags)
