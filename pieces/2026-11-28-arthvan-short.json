@@ -61,7 +61,8 @@
   "try 1: hook: needs a question, a number or a name",
   "try 2: numbers without a source: 1.68, 1.68",
   "review: redrawing 4 picture(s) before upload",
-  "waiting for the founder's intro clip until 28 Nov 11:30 UTC"
+  "waiting for the founder's intro clip until 28 Nov 11:30 UTC",
+  "the founder's moving clips are placed on lines 2 to 9; put together again"
  ],
  "script": {
   "captions": {
@@ -241,7 +242,7 @@
   },
   "title": "Napoleon ko *baauna* kisne banaya? 🤯"
  },
- "status": "intro-wait",
+ "status": "voiced",
  "timings": [
   0.0,
   5.499,
@@ -336,6 +337,6 @@
   "voice": "voice_g8azc8xcwhlu",
   "weekly": true
  },
- "updated": "2026-11-27T18:04:46+00:00",
+ "updated": "2026-11-28T06:10:01+00:00",
  "writer": "claude"
 }

@@ -154,10 +154,14 @@ def test_collect_rejects_a_wrong_clip_once_and_waits_then_plain_at_the_deadline(
     late = datetime(2026, 11, 7, 10, 0, tzinfo=timezone.utc)
     assert intro.needed(tmp_path, late) is True                          # the one overdue reminder is due
     action, p = intro.collect(p, deps, tmp_path, now=late, notify=sent.append, transcribe=lambda c: "kuch aur", compose_fn=lambda *a: None)
-    assert action == "waiting" and deps.uploaded == [] and p.ids.get("intro_overdue") and "Nothing goes out without it" in sent[-1]
-    assert intro.needed(tmp_path, late) is False                         # founder, 5 Nov 2026: never the plain version, reminded once
+    assert action == "waiting" and deps.uploaded == [] and p.ids.get("intro_overdue") and "goes out without your opening" in sent[-1]
+    assert intro.needed(tmp_path, late) is False                         # reminded once
     action, p = intro.collect(p, deps, tmp_path, now=late, notify=sent.append, transcribe=lambda c: "kuch aur", compose_fn=lambda *a: None)
     assert action == "waiting" and len(sent) == 2
+    last = datetime(2026, 11, 7, 12, 5, tzinfo=timezone.utc)             # under an hour to the slot (founder, 28 Nov 2026: "post videos without it")
+    assert intro.needed(tmp_path, last) is True
+    action, p = intro.collect(p, deps, tmp_path, now=last, notify=sent.append, transcribe=lambda c: "kuch aur", compose_fn=lambda *a: None)
+    assert action == "uploaded-plain" and deps.uploaded == [p.id] and "without your opening" in sent[-1] and p.ids.get("intro_skipped")
 
 
 def test_sweep_never_raises_and_reports_each_piece(tmp_path, monkeypatch):
