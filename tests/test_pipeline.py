@@ -1,4 +1,5 @@
 import json
+import json
 from datetime import date
 from pathlib import Path
 
@@ -165,6 +166,33 @@ def test_a_topic_whose_research_was_cut_off_is_tried_again_by_the_same_piece(tmp
     pieces.save(p, tmp_path)
     out = pipeline.make(p, d, tmp_path)
     assert seen[0] is False and out.status == "uploaded" and out.topic["id"] == "planned-1"
+
+
+def _plan(tmp_path, entries):
+    (tmp_path / "content").mkdir(exist_ok=True)
+    (tmp_path / "content" / "weekly-plan.json").write_text(json.dumps({"week_of": "2026-10-20", "entries": entries}))
+
+
+def test_a_slot_whose_planned_topic_is_dead_borrows_the_next_trending_topic_and_says_so(tmp_path):
+    _plan(tmp_path, {"2026-10-20-sglearning-short": {"id": "wk-a", "title": "Dead one", "weekly": True, "trend": True},
+                     "2026-10-21-arthvan-short": {"id": "wk-x", "title": "Other channel", "weekly": True},
+                     "2026-10-21-sglearning-short": {"id": "wk-b", "title": "Next trending", "weekly": True, "trend": True}})
+    told = []
+    d, calls = deps(tmp_path)
+    d.intro_notify = told.append
+    p = _piece(); p.ids["dead_topics"] = ["wk-a"]
+    got = pipeline._pick_topic(p, d, tmp_path, {"wk-a"})
+    assert got["id"] == "wk-b" and got["borrowed_from"] == "2026-10-21-sglearning-short" and calls["topics"] == 0
+    assert len(told) == 1 and "Next trending" in told[0] and "Dead one" in told[0]
+
+
+def test_the_bank_is_never_taken_quietly(tmp_path):
+    _plan(tmp_path, {})
+    told = []
+    d, calls = deps(tmp_path)
+    d.intro_notify = told.append
+    got = pipeline._pick_topic(_piece(), d, tmp_path, set())
+    assert calls["topics"] == 1 and got and len(told) == 1 and "bank topic" in told[0]
 
 
 def test_myth_short_reuses_long_scenes(tmp_path, monkeypatch):
@@ -644,6 +672,7 @@ def test_a_finished_piece_waits_for_the_founders_intro_then_uploads_when_the_cli
     monkeypatch.setattr(intro, "_ask_claude", lambda prompt: "Aapka paisa doobta hai, unki fees pakki rehti hai")
     p = pipeline.make(_piece(day=date(2027, 1, 10)), d, tmp_path)                       # a slot well ahead: the deadline has not passed
     assert p.status == "intro-wait" and calls["upload"] == 0 and p.topic["intro"]["text"].endswith(p.topic["intro"]["closing"]) and p.topic["intro"]["closing"] in intro.CLOSINGS
+    sent[:] = [m for m in sent if "bank topic" not in m]            # the fake topic is a bank one: its own warning is tested elsewhere
     assert len(sent) == 1 and "Intro for" in sent[0] and p.ids["intro_sent"]
     p2 = pipeline.make(pieces.load(p.id, tmp_path), d, tmp_path)                       # no clip yet, before the deadline: still waiting
     assert p2.status == "intro-wait" and calls["upload"] == 0 and len(sent) == 1

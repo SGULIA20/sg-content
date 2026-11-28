@@ -197,6 +197,17 @@ def _pick_topic(piece: Piece, deps: Deps, root: Path, used: set) -> dict | None:
     # 19 Nov 2026: this early return skipped the day-to-day theme rule, so the 26 Nov SG-MYTH long was a Ramayan story two days after one
     if planned and (planned.get("trend") or planned.get("viral") or themes.allowed(planned, themes.blocked(root, piece), piece.channel)):   # a viral subject does not wait its turn
         return planned
+    slot = piece.id == slots.piece_id(piece.publish_day, piece.channel, piece.kind)      # a daily slot, not an extra or a news Reel
+    tell = deps.intro_notify or (lambda text: None)
+    if slot:
+        # founder, 28 Nov 2026 ("why are we still doing non trending topics??"): the old bank never fills a slot quietly. The next
+        # topic of the same morning's trending search comes first, and he is told either way.
+        spare = weekly.reserve_for(root, piece, used)
+        if spare and themes.allowed(spare, themes.blocked(root, piece), piece.channel):
+            was = (weekly.load(Path(root) / "content" / "weekly-plan.json").get("entries") or {}).get(piece.id) or {}
+            tell(f"🔁 {piece.id}: its planned topic could not be made ({str(was.get('title') or 'none planned')[:70]}). "
+                 f"It takes the next trending topic from this morning's search: {str(spare.get('title') or '')[:80]}.")
+            return spare
     # founder, 10 Nov 2026 ("why again America, SIP, share market?"): a planned topic that failed is followed by the next fresh topic, never
     # by a second chance of a weak old Reel; the weak ones were all US-stocks, SIP and market stories, so the same subjects kept returning
     remake = None if (not WEAK_REMAKES or piece.id.endswith("-news") or re.search(r"-x\d+$", piece.id)) else weak_remake_topic(piece, root)
@@ -215,7 +226,11 @@ def _pick_topic(piece: Piece, deps: Deps, root: Path, used: set) -> dict | None:
         hook = hooks[len(siblings) % len(hooks)] if hooks else long_p.script.get("hook", "")
         return {"from_long": long_id, "id": f"{long_p.topic.get('id', long_id)}#short{len(siblings) + 1}", "hook": hook,
                 "title": long_p.topic.get("title_hi", long_id), "long_scenes": long_p.script["scenes"], "long_facts": long_p.facts}
-    return deps.topic(piece, used)
+    topic = deps.topic(piece, used)
+    if slot and topic and not topic.get("weekly"):
+        tell(f"⚠️ {piece.id}: no trending topic was left for this slot, so an older bank topic was taken: "
+             f"{str(topic.get('title') or topic.get('title_hi') or topic.get('id') or '')[:80]}. It has no view evidence. Tell Claude to change it.")
+    return topic
 
 
 def place_key(piece: Piece) -> str:

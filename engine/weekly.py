@@ -371,6 +371,20 @@ def topic_for(root: Path, piece, used: set, path: Path | None = None) -> dict | 
     return entry
 
 
+def reserve_for(root: Path, piece, used: set, path: Path | None = None) -> dict | None:
+    """The next topic of the same morning's trending search, when this slot's own planned topic cannot be made (founder, 28 Nov
+    2026: "why are we still doing non trending topics??", after the old bank quietly filled three slots in one day). The nearest
+    later slot of the same channel and kind whose video is not started lends its topic; that slot is planned afresh next morning."""
+    entries = load(path or (Path(root) / "content" / "weekly-plan.json")).get("entries") or {}
+    started = {p.id for p in pieces.list_all(root)}
+    tail = f"-{piece.channel}-{piece.kind}"
+    for pid in sorted(entries):
+        e = entries[pid]
+        if pid > piece.id and pid.endswith(tail) and pid not in started and e.get("id") and e["id"] not in used:
+            return {**e, "borrowed_from": pid}
+    return None
+
+
 MESSAGE_DAYS = 2                 # today and tomorrow: what is being made now (the search runs every morning, 27 Nov 2026)
 
 
