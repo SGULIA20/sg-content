@@ -1,0 +1,985 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "official",
+   "number": 200000.0,
+   "quote": "In case of self- occupied property, the upper limit for deduction of interest paid on housing loan is ₹ 2 lakh.",
+   "source_date": "2026-05-29",
+   "source_name": "Income Tax Department",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5loM5SZtZEJWI5jFKdHH3aQ6VErF38MBpfxh9zdYn825pL-MUCk8C253vBqeaBi6IhD58fLaFTOetQSMMN5i7gMgTX9vYo_A189tjB8ckXzQtTg7HFlZ5vMf4jlndtSvAl9c9ToO8sCb3XdEZFq08nCUODGqXVDtHpbPQpktNUgkxsw==",
+   "text": "Under Section 24(b) of the Income Tax Act, salaried individuals opting for the old tax regime can claim a deduction of up to Rs 2,00,000 per financial year on home loan interest paid for a self-occupied property.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 150000.0,
+   "quote": "The deduction claimed under this section cannot exceed ₹1,50,000/-.",
+   "source_date": "2026-11-27",
+   "source_name": "Income Tax Department",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNbO9rVQHUhkzmHo3DrfBuZGBLGXl0_uVB2bXT6WlsAkiSMA97YBLDTrqv6ULaXukau5TlN1xhuF3noP9LKeuD53xg2pOJ1nyhTv6WnZkm3aprSEC5FRj-VwOVI6FCBBbbax3mzU8ewNrFaBizc9Xn613UHPHwhXVP_qnLB2hsEctpP4Ofz85KmpEsVzOfUy8zyIa8o5pE-jcvhmZWaXPR2JE7ATcLa5aKXQ==",
+   "text": "Salaried taxpayers can claim an aggregate deduction of up to Rs 1,50,000 under Section 80C of the Income Tax Act for eligible payments, which include principal repayment of a residential housing loan.",
+   "unit": "INR"
+  },
+  {
+   "label": "official",
+   "number": 75.0,
+   "quote": "Above Rs.75 lakh, < 75, 50.",
+   "source_date": "2017-06-07",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvn6sfwCddWsj9soaBOXA8bjQ2T8s9YcdNlO5cJy_4R9a1hj3RHPDewcERnKdZiZ-f1hgMKjv5Zm3c8A4C49JxzSWAImGbq-aG7hpbKkdAjZR6-GFoyrRvcIczKxYt4pj_JEyahyDjMS0CmAIVLmuCAsHf",
+   "text": "For individual housing loans above Rs 75 lakh, the Reserve Bank of India mandates that the Loan to Value ratio cannot exceed 75 percent, requiring homebuyers to fund at least 25 percent as down payment.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 90.0,
+   "quote": "> 80 and < 90, 50.",
+   "source_date": "2017-06-07",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvn6sfwCddWsj9soaBOXA8bjQ2T8s9YcdNlO5cJy_4R9a1hj3RHPDewcERnKdZiZ-f1hgMKjv5Zm3c8A4C49JxzSWAImGbq-aG7hpbKkdAjZR6-GFoyrRvcIczKxYt4pj_JEyahyDjMS0CmAIVLmuCAsHf",
+   "text": "Under Reserve Bank of India prudential norms, banks are permitted to extend individual housing loans up to Rs 30 lakh with a Loan to Value ratio reaching up to 90 percent.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 50.0,
+   "quote": "Allowance to meet expenditure incurred on house rent cannot be more than minimum of : a) 50% of Basic + DA as per drop downs of Salary as per section. 17(1) or b) HRA as per drop down of salary as per section 17(1).",
+   "source_date": "2020-05-20",
+   "source_name": "Income Tax Department",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCwMIxEMeFTSPhFwYE02o5ltJAXEsRxri6S3u-zoRgwVWgEHDAk5RL2ErkP-BNW3YezQmm5CRXRKGqkKQBNba72ZIUQHVHvR9Lj6d5H__Vasm-Y8R4MbWJGpPN3XEvtjH3cJdfF0kl1_KhXmaSOxe9G0YjS81Fl6EnWvovadN6rhLIDN5BZM7Q-g3XQ_Kuv_w3UHbIwYsKGFYzG3_W1Owv",
+   "text": "Under Section 10(13A) rules of the Income Tax Act, House Rent Allowance exemption for employees residing in metro cities is capped at a maximum of 50 percent of basic salary and dearness allowance.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 69.6,
+   "quote": "The median LTV ratio moved from 67.7 per cent to 69.6 per cent between March 2015 and March 2019 showing that banks have become increasingly risk tolerant (Chart 1, Table 1).",
+   "source_date": "2019-07-11",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9JWjI2qFmoOmUQmbJNuCYj4_uMIW_Bcu7_TwM_uL6gzzfctPp95hsjmAZVllv_MXe37CMFcm5ZeTf2PZrcxp0iCNqe4dm53uaIn0EQIhao1cnPIxLZFqWjn5zlQP31Nu0WbzeIFOEwz0fFQze2yducjcKp88XT8wJSXA=",
+   "text": "The Reserve Bank of India's Residential Asset Price Monitoring Survey showed that the median Loan to Value ratio for housing loans across 13 major Indian cities stood at 69.6 percent in March 2019.",
+   "unit": "pct"
+  },
+  {
+   "label": "official",
+   "number": 61.5,
+   "quote": "Housing affordability worsened over the past 4 years as the house price to income (HPTI) ratio increased from 56.1 in March 2015 to 61.5 in March 2019 (Chart 1).",
+   "source_date": "2019-07-11",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9JWjI2qFmoOmUQmbJNuCYj4_uMIW_Bcu7_TwM_uL6gzzfctPp95hsjmAZVllv_MXe37CMFcm5ZeTf2PZrcxp0iCNqe4dm53uaIn0EQIhao1cnPIxLZFqWjn5zlQP31Nu0WbzeIFOEwz0fFQze2yducjcKp88XT8wJSXA=",
+   "text": "The RBI asset price monitoring survey reported that housing affordability deteriorated across major cities as the median house price to income ratio reached 61.5 in March 2019.",
+   "unit": "ratio"
+  },
+  {
+   "label": "official",
+   "number": 115.9,
+   "quote": "The House Price Index rose to 115.9 in Q4:2025-26, from 115.6 in the previous quarter, driven by rise in housing prices across cities viz – Jaipur, Lucknow and Pune, reflecting a quarter-on-quarter growth of 0.2 per cent (Chart 1).",
+   "source_date": "2026-05-29",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkZlsKfL-DglzI7tQGKoEUSO_rty-doPFbxH2KTU97_jAEquJ8T7riu6HIfa7cbb1_GUEQZkbfiv5pfxfdfbbAw0wxoDhPItvpG7QNJrm6WKu0m5f3ujJpnuqPiHQrwMXuSxefFw-C3SvE_qYeDsrRru00P7LFiQ==",
+   "text": "The Reserve Bank of India's All-India House Price Index rose to 115.9 points in the fourth quarter of financial year 2025-26 under the 2022-23 base year series.",
+   "unit": "index points"
+  },
+  {
+   "label": "official",
+   "number": 3.6,
+   "quote": "The HPI registered an annual growth of 3.6 per cent in Q1:2026-27, same as in Q1 of previous year, mainly contributed by the cities such as Chandigarh, Jaipur, Kanpur, Lucknow and Thiruvananthapuram (Chart 1).",
+   "source_date": "2026-08-24",
+   "source_name": "RBI",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuLN8PXlBYL2cMO3fmNkGtPHdBbsTPgmP_bSi2YolaolDeXH6vWiLxt0S1xVgTac0PjSB5cfdlH-_vdKjFIbcq72g061kTAetmfzS4xz9NsHMSiCyajdQl8DdaIvZ5kzEgDDfkopGGAwyz6CjyXs87B_tjKNT04DFrig4=",
+   "text": "The Reserve Bank of India reported an annual year-on-year growth rate of 3.6 percent in the All-India House Price Index during the first quarter of financial year 2026-27.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-28-sglearning-long",
+ "ids": {
+  "budget": {
+   "day": "2026-11-28",
+   "drafts": 1,
+   "research": 2
+  },
+  "cost": {
+   "inr": 204.0,
+   "usd": 1.465008,
+   "voice": 67
+  },
+  "dead_topics": [
+   "https://www.livemint.com/market/stock-market-news/gold-price-crashes-over-rs-38-600-from-record-high-whatll-happen-amid-diwali-2026-fervour-right-time-to-buy-decoded-11792910366849.html",
+   "proven-2026-10-30-sglearning-short"
+  ],
+  "drafts": 2,
+  "music": {
+   "by": "Kevin MacLeod (incompetech.com)",
+   "licence": "CC BY 4.0",
+   "title": "Life of Riley"
+  },
+  "sound": "track",
+  "watch": {
+   "best_change": "Open on the contrast itself, with big on-screen numbers: 'Ghar: 3.6% · PPF: 7.1% — toh kiraya barbaadi kaise?' in the very first second, instead of a plain skyline and 'Ghar ki keemat.'",
+   "issues": 6,
+   "opening": 5,
+   "verdict": "fix"
+  },
+  "watch_redo": [
+   3,
+   19,
+   23,
+   35
+  ]
+ },
+ "kind": "long",
+ "publish_day": "2026-11-28",
+ "reasons": [
+  "try 1: advice: guarantee",
+  "try 2: no sourced facts survived the checks",
+  "review: redrawing 4 picture(s) before upload"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Ghar ek saal mein sirf 3.6 percent mehnga hua, PPF 7.1 percent deta hai. Toh kiraya barbaadi kaise?\nAsli muqabla kiraya banam EMI nahi, kiraya banam byaaj, maintenance, tax aur down payment ki khoyi kamaai hai.\nAur home loan ka 2 lakh wala tax fayda sirf purane regime mein milta hai.\nAap kiraye par ho ya apne ghar mein? Yeh investment advice nahi hai.\nShare karo us dost ko jo is saal ghar khareedne ka soch raha hai.",
+    "hashtags": [
+     "#EMI",
+     "#PersonalFinanceIndia",
+     "#MoneyTipsHindi",
+     "#IncomeTax",
+     "#SIP",
+     "#SeedhiBaat",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Ghar ek saal mein sirf 3.6 percent mehnga hua, PPF 7.1 percent deta hai. Phir bhi sab kehte hain kiraya barbaadi hai. Asli muqabla kiraya banam EMI nahi, kiraya banam woh kharcha jo kabhi wapas nahi aata. Aap kiraye par ho ya apne ghar mein? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Kiraya barbaadi hai?",
+     "00:00 Down payment ka chhupa kharcha",
+     "00:00 Tax ka fayda: aadha sach",
+     "00:00 20 saal ka tarazu",
+     "00:00 Galti aur woh sawaal"
+    ],
+    "description": "RBI ke data mein ghar ek saal mein sirf 3.6 percent mehnga hua, jabki PPF 7.1 percent deta hai. Phir bhi kiraya barbaadi kyun lagta hai? Is video mein down payment ka chhupa kharcha, home loan ka tax fayda kis regime mein milta hai, aur kab ghar jeetta hai aur kab kiraya. Share karo us dost ko jo is saal ghar khareedne ka soch raha hai.",
+    "tags": [
+     "rent vs buy",
+     "kiraya ya ghar",
+     "home loan",
+     "EMI",
+     "down payment",
+     "ghar khareedna",
+     "income tax",
+     "HRA",
+     "PPF",
+     "Section 80C",
+     "old vs new regime",
+     "personal finance hindi",
+     "Learning with SG"
+    ],
+    "title": "Kiraya ya Ghar: 20 saal mein kaun aage?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Aap abhi kiraye par ho ya apne ghar mein, aur kyun? Comments mein bas ek line likhiye.",
+  "hook": "Ghar ki keemat. Ek saal mein. Sirf 3.6 percent badhi. Yeh RBI ka hisaab hai.",
+  "scenes": [
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "official",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view of a sprawling Indian city at dusk, rows of residential apartment towers with lit windows, haze over the skyline, a calm open ground strip in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Ghar ki keemat. Ek saal mein. Sirf 3.6 percent badhi. Yeh RBI ka hisaab hai."
+   },
+   {
+    "facts_used": [],
+    "label": "official",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of an old Indian post office savings counter with a wooden ledger and a brass bell, warm morning light through a barred window, plain stone floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Lekin PPF 7.1 percent deta hai. Phir bhi sab kehte hain. Kiraya barbaadi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a quiet Indian residential street at dawn, one side old rented houses, the other a new gated apartment complex, an empty road in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Yeh aapke 20 saal ka faisla hai. Galat chuna, toh lakhon ka farak."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic interior of an Indian bank branch after hours, empty loan desk with a closed file and a pen, soft tube light, polished floor in the lower fifth. Correction after review: Use a brighter, tense image: a split screen of a rent receipt and an EMI statement, or a person weighing both.",
+     "type": "art"
+    },
+    "vo": "Toh kaun jeetta hai? Kiraya ya EMI? Aur aakhir mein? Woh sawaal, jo bank kabhi nahi poochta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a middle-aged Indian man seen from behind standing at a balcony railing, looking over a city of apartment blocks at sunset, tiled balcony floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Is video mein sawaal saaf hain. Pehla, kya kiraya sach mein barbaadi hai? Doosra, down payment ka asli kharcha kya hai? Teesra, 20 saal baad kaun aage?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary shot of an Indian family of four seen from behind walking out of a glossy show flat in a new tower, evening light, marble lobby floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Sunday ki shaam. Ek parivaar builder ka sample flat dekh kar lauta hai. Papa kehte hain, apna ghar apna hota hai. Kiraya toh malik ki jeb mein jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a hand counting rupee notes into an envelope on a wooden table in a modest rented room, tube light, plain floor visible below",
+     "type": "art"
+    },
+    "vo": "Baat dil ko lagti hai. Kiraya gaya, wapas kuch nahi. EMI kam se kam ghar toh banati hai. Lekin EMI ka bada hissa bhi kisi aur ki jeb mein jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic exterior of a large Indian bank building with stone columns in afternoon sun, people walking past seen from a distance, wide pavement in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Kiski jeb mein? Bank ki. EMI yaani har mahine ki kisht. Is kisht mein byaaj bhi hai, aur asal loan ka paisa bhi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a thick stack of home loan papers tied with a string on an office desk, a brass paperweight on top, soft window light, desk surface in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Lambe loan ke shuru ke saalon mein, kisht ka bada hissa byaaj mein jaata hai. Ghar aapka utna hi banta hai, jitna asal chukta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an elderly Indian landlord seen from behind at a doorway of an old house, receiving an envelope from a tenant, warm evening light, stone steps in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Toh byaaj kya hai? Bank ko diya gaya kiraya. Paisa udhaar lene ka kiraya. Yeh bhi wapas nahi aata. Bilkul makaan-malik ke kiraye ki tarah."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a plumber kneeling under a kitchen sink in an Indian apartment, tools spread out, a bucket nearby, morning light, tiled floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Aur kharche yahin nahi rukte. Society ki maintenance har mahine. Property tax har saal. Marammat, painting, toota nal. Kiraye wala yeh sab malik par chhodta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic still life of an old brass weighing balance on a wooden counter in an Indian shop, one pan with a house key, the other with rupee notes, warm light, counter surface below",
+     "type": "art"
+    },
+    "vo": "Toh asli muqabla kiraya banam EMI nahi hai. Asli muqabla hai kiraya banam woh kharcha jo ghar-maalik ko kabhi wapas nahi milta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a new set of flat keys with a red ribbon lying on a bare concrete floor of an unfinished apartment, dusty sunlight through an empty window frame",
+     "type": "art"
+    },
+    "vo": "Byaaj, maintenance, property tax, aur ek chhupa kharcha. Woh chhupa kharcha sabse bada ho sakta hai. Aur woh shuru hota hai, chaabi milne se pehle hi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a family seen from behind sitting across a bank officer's desk in an Indian bank, folders on the table, afternoon light, carpeted floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Woh kharcha hai down payment ka. Woh paisa jo aap bank se pehle, apni jeb se dete hain. Kitna? RBI ka niyam saaf hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "official",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic exterior of a grand old central bank style stone building in Mumbai with tall columns, overcast sky, wide empty forecourt in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Bank poora ghar finance nahi karta. RBI ne seema baandhi hai. Ghar ki keemat ka kitna hissa loan ban sakta hai, yeh bank nahi, niyam tay karta hai."
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "official",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view of a premium high-rise housing project under construction in an Indian suburb, cranes against a clear sky, a flat open plot in the lower fifth",
+     "type": "art"
+    },
+    "vo": "75 lakh se bade loan par, kam se kam 25 percent paisa aapko khud dena hoga. Yeh RBI ka niyam hai. Bank chahe bhi, toh zyada nahi de sakta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of gold bangles and a small velvet jewellery box placed on a jeweller's counter in an Indian market, warm lamp light, glass counter top in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Yeh chhoti rakam nahi. Saalon ki bachat ek din mein nikal jaati hai. FD tootti hai, gehne girvi jaate hain, kabhi PF bhi nikalta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of workers carrying a sofa and cardboard boxes into a new Indian apartment, cement dust in the air, midday light, bare floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Aur sirf down payment nahi. Registration aur stamp duty ka paisa alag. Interior, furniture, parde, modular kitchen. Yeh sab aksar loan mein nahi aata."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a small sapling growing out of a clay pot filled with old coins on a sunny windowsill in an Indian home, soft morning light",
+     "type": "art"
+    },
+    "vo": "Ab sawaal yeh hai. Agar yeh saara paisa ghar mein na lagta, toh kya karta? Woh chupchaap baitha nahi rehta. Woh kahin badhta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a fork in a rural Indian road at sunset, one path leading to a village of houses, the other to a distant town, dusty road in the lower fifth. Correction after review: Show money going one way while a growing investment shows the other path, e.g. a down-payment cheque next to a growing fund.",
+     "type": "art"
+    },
+    "vo": "Isse kehte hain opportunity cost. Yaani jo paisa ek jagah laga, woh doosri jagah kya kama sakta tha. Ghar khareedne ka sabse bhoola hua kharcha yahi hai."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "official",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of a newly built residential colony in a North Indian city, identical rooftops and water tanks under afternoon sun, an empty lane in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Wahi shuru wala hisaab yaad karo. RBI ke data mein ghar ek saal mein 3.6 percent mehnga hua. PPF jaisi surakshit jagah 7.1 percent deti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic interior of a lived-in Indian living room in the evening, a family seen from behind watching rain from a window, warm lamps, rug on the floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Toh kya ghar ghaate ka sauda hai? Itni jaldi nahi. Kyunki ghar sirf keemat se nahi kamaata. Ghar aapko rehne ki jagah bhi deta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an Indian dining table with steel plates and a pressure cooker, a family's hands serving food, warm kitchen light, wooden floor below",
+     "type": "art"
+    },
+    "vo": "Jo parivaar apne ghar mein rehta hai, woh kiraya nahi deta. Woh bacha hua kiraya bhi ghar ki kamaai hai. Bas woh kabhi bank statement mein nahi dikhti."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic still life of a house key and a small pile of coins placed side by side on a polished wooden desk, soft side light, desk surface in the lower fifth. Correction after review: Replace them with Indian rupee coins or notes.",
+     "type": "art"
+    },
+    "vo": "Isliye sahi muqabla yeh hai. Ghar ki keemat ka badhna, plus bacha hua kiraya. Saamne, down payment ka paisa kahin aur lagta toh kitna badhta."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "official",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view of Jaipur's old city with pink walls blending into new apartment blocks on the edge, golden hour light, open ground in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Aur 3.6 percent ek all-India average hai. Har shehar alag chalta hai. RBI ke mutabik Chandigarh, Jaipur, Kanpur aur Lucknow jaise shehron ne yeh badhat chalayi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic street view of a quiet Indian neighbourhood with half-occupied new buildings and some unfinished ones, late afternoon, empty road in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Matlab aapke shehar, aapke mohalle ka hisaab alag ho sakta hai. Kahin keemat bhaagti hai, kahin saalon tak ruki rehti hai. Average dekh kar ghar mat khareedo."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a hand turning a key in the wooden door of a new Indian apartment, a marigold garland on the door frame, morning light, doormat in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Down payment ho gaya. Chaabi haath mein. Ab saamne 20 saal ki kisht hai. Aur us kisht ke saath aata hai tax bachane ka ek bada laalach."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a real estate sales office in India with a scale model of towers on a table, a salesman seen from behind gesturing to a couple, cool office light, tiled floor below",
+     "type": "art"
+    },
+    "vo": "Builder ka salesman yeh line zaroor bolega. Sir, ghar lo, tax bachega. Aur yeh baat sirf aadhi sach hai. Baaki aadhi woh nahi batata."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "official",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic exterior of an Indian government income tax office building with a long corridor and wooden benches, morning light, paved courtyard in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Income Tax ke niyam se, apne rehne wale ghar ke loan ke byaaj par, saal mein 2 lakh tak ki chhoot milti hai. Yeh sach hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "official",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a neatly arranged stack of paper files and receipts with a steel stapler on a home desk, evening table lamp, desk surface below",
+     "type": "art"
+    },
+    "vo": "Aur jo asal loan chukaya? Woh Section 80C mein ginti hota hai. Wahan poore saal ki seema 1.5 lakh hai. Bas itni, usse zyada nahi."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "official",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of school children in uniform seen from behind walking through an Indian school gate in the morning, parents waving, dusty ground in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Par dhyaan do. 1.5 lakh ki yeh seema akeli nahi hai. PF, PPF, bacchon ki school fees, insurance, sab isi ek seema mein ghuste hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic still life of a glass jar filled to the brim with coins, a few coins spilling onto a wooden table, soft daylight, table top in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Matlab agar aapka PF pehle se yeh seema bhar raha hai, toh ghar ka asal paisa extra kuch nahi bachata. Seema toh pehle hi bhar chuki hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "official",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a dimly lit records room with tall steel shelves of old files in an Indian government office, a single window beam of light, concrete floor below",
+     "type": "art"
+    },
+    "vo": "Ab woh aadhi baat jo salesman nahi batata. Yeh 2 lakh wali byaaj ki chhoot sirf purane tax regime mein milti hai."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "official",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary view of office workers seen from behind leaving a glass office tower in an Indian city in the evening, bags on shoulders, wide pavement in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Naye regime mein yeh chhoot nahi milti. Aur aaj bahut se naukri-pesha log naya regime chunte hain, kyunki wahan tax ki dar kam hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a man's hands holding a folded paper envelope at a kitchen table with a cup of chai beside it, morning light, table surface in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Toh pehle apni salary slip dekho. Aap kaunse regime mein ho? Agar naye mein ho, toh ghar ka tax fayda apne hisaab se hata do."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a porter carrying a heavy sack on his head through a crowded Indian railway platform, seen from behind, afternoon light, platform floor in the lower fifth. Correction after review: Show a tax form, ITR screen or salary slip with a deduction highlighted.",
+     "type": "art"
+    },
+    "vo": "Aur purane regime mein bhi, chhoot ka matlab poora paisa wapas nahi. Sirf us hisse par tax bachta hai. Byaaj ka asli bojh phir bhi aap uthate ho."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a small wooden boat rising and falling on choppy river waves near an Indian ghat at dawn, mist over water, calm water in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Ab EMI ka doosra sach. Bahut se home loan floating rate par hote hain. Yaani byaaj bazaar ke saath upar neeche hota hai. Kisht badh sakti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a long straight highway stretching to the horizon through dry Indian countryside, heat haze, empty road surface in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Jab byaaj badhta hai, bank aksar kisht nahi badhata. Woh loan ke saal badha deta hai. 20 saal ka loan chupchaap aur lamba ho jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an ageing Indian apartment block with stained walls, scaffolding and workers repairing the facade, overcast light, courtyard ground in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Aur ghar ke chhupe kharche umar ke saath badhte hain. Building purani hoti hai, lift badalni padti hai, society ek din bada bill bhej deti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a small tempo loaded with furniture and steel trunks outside an Indian apartment gate, movers seen from behind, morning light, road in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Kiraye wale ke liye yeh sab malik ki sirdardi hai. Woh bas saamaan bandhta hai, aur nayi building mein chala jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a rent agreement on stamp paper lying on a table beside a fountain pen and reading glasses, warm evening lamp, table surface in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Toh kya kiraya hi behtar hai? Ruko. Kiraye wale ka bhi apna dard hai. Aur woh har saal agreement renew hote waqt yaad aata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of two men seen from behind sitting on plastic chairs on a rooftop terrace in an Indian city, papers between them, late afternoon, terrace floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Kiraya har saal badhta hai. Malik naya agreement laata hai, nayi rakam ke saath. Aur aapki EMI? Woh lagbhag wahi rehti hai, agar byaaj na badle."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a calendar-free wall with a row of framed family photos showing a couple growing older in the same home, soft daylight, wooden floor below",
+     "type": "art"
+    },
+    "vo": "Yahi ghar khareedne ka sabse bada fayda hai. Aaj ki kisht, kai saal baad chhoti lagti hai. Kyunki tab tak salary badh chuki hoti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an older Indian couple seen from behind sitting on the balcony of their own flat at sunset, potted plants around, tiled floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Aur 20 saal baad? Ghar-maalik ki kisht khatam. Ghar poori tarah uska. Kiraye wala tab bhi kiraya de raha hai, aur woh kiraya kaafi bada ho chuka hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a young Indian man seen from behind walking into a bank branch with a folder under his arm, bright morning, pavement in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Toh ghar jeet gaya? Yahan kahani palat-ti hai. Kiraye wale ne 20 saal mein kuch aur bhi kiya ho sakta hai. Usne bacha hua paisa lagaya."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of two piggy banks of different sizes on a wooden shelf in an Indian home, the smaller one beside a few notes, soft window light",
+     "type": "art"
+    },
+    "vo": "Shuru ke saalon mein kiraya aksar EMI se kam hota hai. Woh farak har mahine bachta hai. Aur down payment ka poora paisa bhi uske paas hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a young banyan tree growing broad over many years beside an Indian village well, aerial roots touching the ground, golden light, earth in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Agar woh yeh paisa har mahine, bina chooke, kahin lagata raha, toh 20 saal mein yeh badi rakam ban sakti hai. Compounding yaani byaaj par byaaj."
+   },
+   {
+    "facts_used": [],
+    "label": "official",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic interior of a busy Indian post office with customers seen from behind at counters, ceiling fans turning, afternoon light, stone floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Misaal ke liye, PPF aaj 7.1 percent saalana deta hai. Kuch log SIP chunte hain, yaani har mahine mutual fund mein ek fixed rakam."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an office accounts department in India with desks, files and an employee seen from behind sorting papers, fluorescent light, floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Aur kiraye wale ko bhi tax fayda mil sakta hai. Purane regime mein HRA par chhoot, yaani salary ka woh hissa jo kiraye ke liye milta hai."
+   },
+   {
+    "facts_used": [
+     4
+    ],
+    "label": "official",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view of Mumbai's dense skyline with older chawls and new towers side by side along the sea, hazy afternoon, calm sea in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Metro shehar mein yeh chhoot basic salary aur DA ke 50 percent tak ja sakti hai. DA yaani mehngai bhatta. Yeh bhi hisaab mein jodo."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a traditional brass balance scale in an old Indian spice market, one pan holding a small clay house model, warm light, wooden counter below",
+     "type": "art"
+    },
+    "vo": "Ab poora tarazu dekho. Ek palde mein: ghar ki badhti keemat, bacha hua kiraya, aur 20 saal baad apna ghar."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a young couple seen from behind with suitcases on a railway platform in India, a long-distance train waiting, dawn light, platform floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Doosre palde mein: down payment aur har mahine ka farak, jo saalon tak badhta raha. Plus kiraye wale ki azaadi, shehar badalne ki."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an established Indian neighbourhood with old trees, children's bicycles and long-time residents seen from behind chatting at a gate, evening light, lane in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Ghar tab jeetta hai jab aap ek hi shehar mein lambe samay tak tikte ho, aur aapke ilaake mein keemat aur kiraya tezi se badhte hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an airport departure hall in an Indian city with travellers seen from behind pushing luggage trolleys, bright morning light, polished floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Kiraya tab jeetta hai jab kiraya EMI se kaafi kam ho, naukri shehar badalti ho, aur aap bacha hua paisa sach mein har mahine lagate ho."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a crowded Indian shopping mall atrium with people carrying shopping bags seen from behind, bright artificial light, glossy floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Aur yahi woh 'agar' hai jahan bahut se kiraye wale haar jaate hain. Farak bachta hai, par lagta nahi. Woh trip, gadget aur shopping mein ud jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a sealed bank envelope placed on a family's dining table next to a cup of tea, evening light, table surface in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Lekin ghar khareedne wale bhi ek galti karte hain. Aur woh galti bank khud unke haath mein rakh deta hai, loan approval ke saath."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of a luxury apartment show home with tall ceilings and a chandelier in an Indian city, a couple seen from behind looking up, marble floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Bank aapki salary dekh kar batata hai, aap kitna loan le sakte ho. Log usi rakam ka sabse bada ghar dhoondh lete hain. Yahi galti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a modest Indian kitchen at night with nearly empty steel containers on a shelf, a woman seen from behind checking them, dim light, floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Bank yeh dekhta hai ki aap kisht bhar sakte ho ya nahi. Woh yeh nahi dekhta ki kisht ke baad aapki zindagi kaisi chalegi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a hospital pharmacy counter in an Indian town with a man seen from behind waiting with a prescription, evening fluorescent light, floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Bacchon ki fees, Papa ki dawai, achanak naukri ka jaana. Kisht ke baad kuch na bache, toh ek jhatka poora ghar hila deta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a notebook, a pencil and a simple calculator on a wooden table by a window in an Indian home, morning light, no visible writing, table surface below",
+     "type": "art"
+    },
+    "vo": "Toh faisle se pehle yeh karo. Kiraye ko EMI se mat milao. Kiraye ko milao byaaj, maintenance, property tax aur down payment ki khoyi kamaai se."
+   },
+   {
+    "facts_used": [
+     0,
+     1
+    ],
+    "label": "official",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a tax consultant's small office in an Indian market with files on shelves and a client seen from behind, afternoon light, floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Phir apna regime check karo. Naye mein ho, toh ghar ka tax fayda hisaab se nikaal do. Purane mein ho, toh 2 lakh aur 1.5 lakh ki seema yaad rakho."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a young woman seen from behind at a bank counter in India handing over a form, morning light through glass doors, polished floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Agar kiraye par rehna chuno, toh farak ka paisa salary aate hi automatic kahin lagwa do. Haath mein aaya paisa, kharch hone mein der nahi lagti."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a man seen from behind standing on a pedestrian bridge over a busy Indian city road at dusk, lights of traffic below, bridge deck in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Aur ab woh sawaal jo bank kabhi nahi poochta. Kya aap isi shehar mein, isi tarah ki naukri mein, agle 20 saal tikne wale ho?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an open road leading out of an Indian city toward green hills at sunrise, a lone car in the distance, empty road surface in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Agar jawab haan hai, aur kisht ke baad bhi bachat bachti hai, toh ghar samajh mein aata hai. Agar shak hai, toh kiraya aapko azaadi deta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a quiet Indian residential lane at twilight with rented and owned homes side by side, lamps glowing in windows, empty lane in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Kiraya barbaadi nahi hai. Ghar bhi jaadu nahi hai. Dono hisaab hain. Yeh investment advice nahi hai, apne ghar ka hisaab khud lagaiye."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "official",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view of the same Indian city skyline at night with countless lit apartment windows, a river reflecting lights, calm water in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Shuru ka sawaal yaad hai? 3.6 percent ka ghar, 7.1 percent ka PPF. Jawab hai, aapka shehar aur aapki aadat. Agli video: home loan jaldi chukaayein ya SIP karein?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an Indian family seen from behind sitting together on a terrace at night under string lights, chai cups on a low table, terrace floor in the lower fifth",
+     "type": "art"
+    },
+    "vo": "Aur ab aapki baari. Aap abhi kiraye par ho ya apne ghar mein, aur kyun? Comments mein bas ek line likhiye."
+   }
+  ],
+  "thumbnail": {
+   "name": "HOME LOAN",
+   "name_hi": "होम लोन",
+   "scene": "LEFT: a bunch of new flat keys with a red ribbon on a bare concrete floor of an empty new apartment; RIGHT: rupee notes beside a rent agreement on a table in a lived-in rented room, both in warm evening light",
+   "words": [
+    "3.6%",
+    "TRAP?"
+   ],
+   "words_hi": [
+    "3.6%",
+    "ट्रैप?"
+   ]
+  },
+  "title": "Kiraya ya ghar khareedein: 20 saal ka poora hisaab"
+ },
+ "status": "voiced",
+ "timings": [
+  0.0,
+  6.335,
+  11.518,
+  16.065,
+  22.208,
+  31.993,
+  40.553,
+  49.525,
+  57.226,
+  64.182,
+  71.927,
+  80.962,
+  88.088,
+  96.92,
+  104.036,
+  112.532,
+  120.448,
+  128.875,
+  137.408,
+  145.451,
+  153.787,
+  162.156,
+  168.73,
+  176.067,
+  184.517,
+  194.043,
+  202.485,
+  211.664,
+  219.474,
+  225.879,
+  233.26,
+  241.282,
+  248.653,
+  254.881,
+  261.381,
+  268.399,
+  275.82,
+  283.092,
+  290.992,
+  297.573,
+  302.63,
+  309.691,
+  317.679,
+  325.125,
+  333.743,
+  340.969,
+  347.809,
+  356.404,
+  364.874,
+  371.856,
+  379.579,
+  386.637,
+  393.462,
+  400.103,
+  407.716,
+  416.506,
+  423.074,
+  429.761,
+  435.293,
+  443.015,
+  451.138,
+  458.683,
+  466.188,
+  473.313,
+  480.312,
+  488.06,
+  498.681
+ ],
+ "topic": {
+  "hooks": [
+   "30,000 kiraya ya 60,000 EMI: 20 saal baad kaun aage?",
+   "Down payment ka paisa ghar mein lagana sahi hai?",
+   "Kiraya dena paisa barbaad karna hai?"
+  ],
+  "id": "rent-vs-buy",
+  "summary": "Renting against buying the same flat over 20 years: rent rises, EMI, down payment, maintenance, property tax, and what the saved difference becomes if it is kept aside. When buying wins, when renting wins, and the questions a family should ask before deciding.",
+  "target_minutes": 12,
+  "theme": "prices",
+  "title": "Kiraye par rahein ya ghar khareedein: 20 saal ka poora hisaab",
+  "voice": "voice_g8azc8xcwhlu"
+ },
+ "updated": "2026-11-28T08:35:50+00:00",
+ "writer": "claude"
+}
