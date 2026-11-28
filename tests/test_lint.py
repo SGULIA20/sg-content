@@ -39,8 +39,21 @@ def piece_with(vo: str, channel="sglearning", kind="short", scenes=None, label="
 
 
 def test_clean_finance_script_passes():
-    p = piece_with(_words(100) + " " + DISCLAIMER)                            # money Shorts are 35-45 s (founder, 30 Oct 2026)
+    p = piece_with("2,000 ka note 97 percent wapas aaya 2023 mein. " + _words(100) + " " + DISCLAIMER)       # money Shorts are 35-45 s (founder, 30 Oct 2026)
     assert lint.check_script(p, BANNED, []) == []
+
+
+def test_a_short_without_hard_facts_is_sent_back():
+    """founder, 28 Nov 2026, on the 2,000 note Short: 'where were the facts, worst script we uploaded ever'."""
+    p = piece_with(_words(100) + " " + DISCLAIMER)                            # no number or year in the spoken lines
+    assert any(r.startswith("facts: only 0") for r in lint.check_script(p, BANNED, []))
+    scenes = [{"vo": "Pehli baat 2,000 ka note.", "visual": {"type": "art", "prompt": "a"}, "facts_used": [0], "label": "reported"}] + \
+             [{"vo": _words(25), "visual": {"type": "art", "prompt": "a"}, "facts_used": [], "label": "reported"} for _ in range(4)]
+    q = piece_with("", scenes=scenes)
+    q.script["scenes"][-1]["vo"] += " " + DISCLAIMER
+    reasons = lint.check_script(q, BANNED, [])
+    assert any("scenes state a fact" in r for r in reasons) and any(r.startswith("facts: only 1") for r in reasons)
+    assert lint.fact_hits(piece_with(_words(100), channel="arthvan")) == []   # SG-MYTH-WORLD keeps its own evidence labels
 
 
 def test_blocks_buy_call():

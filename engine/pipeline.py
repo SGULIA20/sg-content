@@ -558,7 +558,7 @@ def _make(piece: Piece, deps: Deps, root: Path = ROOT, dry_run: bool = False, pa
         pieces.transition(piece, "rejected", f"try {attempt + 1}: " + "; ".join(reasons))
         pieces.save(piece, root)
         fixable = ("length", "label", "card", "hashtags", "disclaimer", "title", "threads", "instagram",
-                   "numbers without a source", "hook", "opener", "send", "jargon", "figures",   # same topic: drop those numbers, rewrite the opening or the ending
+                   "numbers without a source", "hook", "opener", "send", "jargon", "figures", "facts",   # same topic: drop those numbers, rewrite the opening or the ending
                    "politics", "communal", "myth_forbidden",   # 28 Nov 2026: the same long was next dropped for naming a politician; a banned word is reworded, never a reason to lose the topic
                    "advice")    # 28 Nov 2026: the founder's gold-fall long said "becho" while explaining who sold; the topic was dropped for a bank one. The word is reworded, the topic kept
         revise = "; ".join(reasons) if all(r.startswith(fixable) for r in reasons) else None      # formatting misses: same topic, trimmed draft

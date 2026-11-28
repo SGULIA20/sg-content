@@ -212,6 +212,29 @@ def figure_hits(piece: Piece) -> list:
     return []
 
 
+FACT_FIGURES_MIN = 3        # distinct numbers or years a Learning with SG Short must speak
+FACT_SCENES_SHARE = 0.5     # share of the scenes that must state a fact from the sheet (facts_used)
+
+
+def fact_hits(piece: Piece) -> list:
+    """A Learning with SG Short must carry the story's hard facts (founder, 28 Nov 2026, on the 2,000 note Short: 'where were the facts, worst
+    script we uploaded ever'): its fact sheet held the 3.56 lakh crore in circulation, 97.26% returned and the 2016/2017 dates, and the script
+    spoke none of them. At least FACT_FIGURES_MIN different numbers or years in the spoken lines, and at least half the scenes citing a fact."""
+    if piece.channel != "sglearning" or piece.kind != "short" or not (piece.script or {}).get("scenes"):
+        return []
+    scenes = piece.script["scenes"]
+    figures = {v for sc in scenes for v in _numbers(sc.get("vo", ""))}
+    cited = sum(1 for sc in scenes if sc.get("facts_used"))
+    out = []
+    if len(figures) < FACT_FIGURES_MIN:
+        out.append(f"facts: only {len(figures)} different numbers or years spoken, need at least {FACT_FIGURES_MIN}; put the strongest figures and dates of the "
+                   f"fact sheet in the hook and the middle lines, in digits")
+    if cited < len(scenes) * FACT_SCENES_SHARE:
+        out.append(f"facts: only {cited} of {len(scenes)} scenes state a fact from the sheet (facts_used); a scene with no fact must be a question, "
+                   f"the send line or the disclaimer, never an invented event")
+    return out
+
+
 def jargon_hits(piece: Piece) -> list:
     """Money and tech jargon in the spoken lines of a Learning with SG Short; each must be said in plain words instead."""
     if piece.channel != "sglearning" or piece.kind != "short":
@@ -229,7 +252,7 @@ def check_script(piece: Piece, banned: dict, prior_scripts: list) -> list:
     text = script_text(piece)
     reasons += _banned_hits(text, banned, ["politics", "communal", "advice"])
     reasons += jargon_hits(piece)
-    reasons += card_hits(piece) + figure_hits(piece)
+    reasons += card_hits(piece) + figure_hits(piece) + fact_hits(piece)
     if piece.channel == "arthvan":
         reasons += _banned_hits(text, banned, ["myth_forbidden"])
         for i, sc in enumerate(scenes):
