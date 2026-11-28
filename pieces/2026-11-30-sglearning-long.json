@@ -1,0 +1,987 @@
+{
+ "channel": "sglearning",
+ "facts": [
+  {
+   "label": "reported",
+   "number": 563.0,
+   "quote": "On Tuesday, Marvel released the final trailer for the upcoming Avengers movie, and it generated 563 million views in the first 24 hours.",
+   "source_date": "2026-11-25",
+   "source_name": "CBC News",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHb_sdczN5gNJFPaiN7TNLqPv6KxV7jvDU2MF8gZA2kqQRm-jTh8LOlcPWhclQJLaKooU2L7f86yaXFuBg9ub2BDwe46fPHLySG5VLmeduJ0zj3g0Bf5g5ctw8x8BWGlvPbyssP8Pcsy27uAddYQh4J2BMcDpnIrKR9_VKuXNp4",
+   "text": "The final trailer for Avengers: Doomsday accumulated 563 million views across platforms in its first 24 hours.",
+   "unit": "million views"
+  },
+  {
+   "label": "reported",
+   "number": null,
+   "quote": "Marvel will release the film on Dec. 18, 2026, and these moments give audiences their clearest look at it until then.",
+   "source_date": "2026-11-24",
+   "source_name": "Quartz",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlF-SFWF0lgmIf7UbTUyZiBHk-BN1wY18FyCAd1onbBdKuH900SwVztw2BBDi6FRLDrDBKRzmON8oSqN9qSXIlg2dQEBQVlT3AQl-32wSGxQ46Oym2U250XMk1IgfGaf2g-7Ikpn15lF9CDakYs13GvVjl",
+   "text": "Marvel Studios has scheduled the theatrical release of Avengers: Doomsday for December 18, 2026.",
+   "unit": null
+  },
+  {
+   "label": "reported",
+   "number": 600.0,
+   "quote": "The report also says Chris Evans and Chris Hemsworth could each earn around $40 million for their roles in the upcoming Avengers films, while the two films' combined production budgets are reportedly around $600 million.",
+   "source_date": "2026-11-23",
+   "source_name": "The Economic Times",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQES6DDzqLbb9Q2VKp6xDG7rhlVeZU8XCTCSKhPicgyh4wjjpCyGeEPk9O3qhRcVSeCrg2pfV6-IooHHCG6538BBsMrtCydPlu_qEAsrA8c71hCLzai5y9zO14ew-XL01Si4x4zbH0glCafUNr4gQ6qO27sroINWcBrOVWaUIRMiEFBl7diF4t8g8eP5xyUeHoR6h-L5yV5P2lpyxQ5_Debkcv4BZnrqs8qggsGhGn5IRyfySBvutY30_Jkgzd1Dv9vx0HUIX7plB0Ok4mW076aFuRMjsXKjMu9z1y4V76g-8_78frzkMMZ-SmFAsIBXOfa11gqov7Sp85M=",
+   "text": "The combined production budget for the two upcoming Avengers films is reported to be around $600 million.",
+   "unit": "million USD"
+  },
+  {
+   "label": "reported",
+   "number": 80.0,
+   "quote": "In July 2024, Variety reported that the Russo brothers would receive $80 million to direct the two Avengers films, with additional performance-based bonuses.",
+   "source_date": "2026-11-23",
+   "source_name": "The Economic Times",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQES6DDzqLbb9Q2VKp6xDG7rhlVeZU8XCTCSKhPicgyh4wjjpCyGeEPk9O3qhRcVSeCrg2pfV6-IooHHCG6538BBsMrtCydPlu_qEAsrA8c71hCLzai5y9zO14ew-XL01Si4x4zbH0glCafUNr4gQ6qO27sroINWcBrOVWaUIRMiEFBl7diF4t8g8eP5xyUeHoR6h-L5yV5P2lpyxQ5_Debkcv4BZnrqs8qggsGhGn5IRyfySBvutY30_Jkgzd1Dv9vx0HUIX7plB0Ok4mW076aFuRMjsXKjMu9z1y4V76g-8_78frzkMMZ-SmFAsIBXOfa11gqov7Sp85M=",
+   "text": "Directors Anthony and Joe Russo are reportedly receiving $80 million to direct the two back-to-back Avengers films.",
+   "unit": "million USD"
+  },
+  {
+   "label": "reported",
+   "number": 500.0,
+   "quote": "According to Variety's 2024 report, the actor had earned an estimated $500 million to $600 million from his MCU appearances, including four Avengers movies, the Iron Man trilogy and supporting appearances in other Marvel films.",
+   "source_date": "2026-11-23",
+   "source_name": "The Economic Times",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQES6DDzqLbb9Q2VKp6xDG7rhlVeZU8XCTCSKhPicgyh4wjjpCyGeEPk9O3qhRcVSeCrg2pfV6-IooHHCG6538BBsMrtCydPlu_qEAsrA8c71hCLzai5y9zO14ew-XL01Si4x4zbH0glCafUNr4gQ6qO27sroINWcBrOVWaUIRMiEFBl7diF4t8g8eP5xyUeHoR6h-L5yV5P2lpyxQ5_Debkcv4BZnrqs8qggsGhGn5IRyfySBvutY30_Jkgzd1Dv9vx0HUIX7plB0Ok4mW076aFuRMjsXKjMu9z1y4V76g-8_78frzkMMZ-SmFAsIBXOfa11gqov7Sp85M=",
+   "text": "Robert Downey Jr. earned between $500 million and $600 million from his previous appearances across the Marvel Cinematic Universe.",
+   "unit": "million USD"
+  },
+  {
+   "label": "analyst-view",
+   "number": 50.0,
+   "quote": "International ticket sales and home entertainment help, but theaters typically keep around half of every ticket sold, and production budgets don't include marketing costs.",
+   "source_date": "2026-11-01",
+   "source_name": "Fortune",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmOFihVjfRx_AN083ZPoAx3fLtZBUjSmJNSVluHdNMCzr2hgKRyeDEolH9x6uWZpny84wUG1KyEpbknhbTx5U2OW81fItc6a_hhvKGAV7y5M_2Ano9tT4-RDBPZ9n7gapxPV1vUV-5j20sQEhZ7Nnk2upINLILowr5lGKSsPx5SUizFjEHa2tQ",
+   "text": "Movie theatres typically keep roughly half of every ticket sold at the box office, while production budgets exclude marketing expenses entirely.",
+   "unit": "pct"
+  },
+  {
+   "label": "analyst-view",
+   "number": 2.5,
+   "quote": "By the common industry rule of thumb that a film needs to gross about 2.5 times its production budget to break even in theaters, it's quite possible that only Coraline, buoyed by a blockbuster 2024 rerelease, has cleared that bar.",
+   "source_date": "2026-11-01",
+   "source_name": "Fortune",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmOFihVjfRx_AN083ZPoAx3fLtZBUjSmJNSVluHdNMCzr2hgKRyeDEolH9x6uWZpny84wUG1KyEpbknhbTx5U2OW81fItc6a_hhvKGAV7y5M_2Ano9tT4-RDBPZ9n7gapxPV1vUV-5j20sQEhZ7Nnk2upINLILowr5lGKSsPx5SUizFjEHa2tQ",
+   "text": "A standard film industry rule of thumb requires a movie to gross around 2.5 times its production budget globally to achieve theatrical break-even.",
+   "unit": "multiple"
+  },
+  {
+   "label": "reported",
+   "number": 50.0,
+   "quote": "According to the final settlement, 50, 42, 35 and 30 percent of collections in the first, second, third and fourth weeks respectively will be shared between the two parties.",
+   "source_date": "2009-06-06",
+   "source_name": "Hindustan Times",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyafnJRB8R4QcUemhAal8ExRletFHiTu7eNt3noZqDjXwsGhO_aKpY3ZV-918jzLzid8ixbmV7U_gT1tzug5iHO039p3yW5uUg5oBzOjqyJ8eR9aoOZ35lIy-yL34Y_sGZdwWvweL_C79Hz6lq4Wr5_tAdvBGIdFMD7l5J5mTVrTtp_r7FTFgIOuiIQf17T5C4cjEA-l3QWFHy9ib5KR0NDB7nGhBfj8yacFICGxUzI7IZ2IEUFbIwTYI=",
+   "text": "In Indian multiplex agreements, ticket collections in the first week are divided evenly at 50 percent between producers and theatre operators.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 42.5,
+   "quote": "The base revenue limit that exhibitors are seeking implies that any film collecting between ₹ 30 crore and ₹ 35 crore at the box office would earn the producer/distributor 50% of the revenue in week one, falling to 42.5%, 37.5% and 30% in the subsequent three weeks.",
+   "source_date": "2013-02-11",
+   "source_name": "Mint",
+   "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8udxwFqkewyM5ChOdceku-WtuYLdjoDoR-N0kKgjVoBmMUftV-wqCykh2o2SbxerZZGEKHCIdmyAKAEQytXjHlp7xyF0jO0nRAAtRKVVEbwOfJEq6r4y9ixcZGo6GFo2iQp5mkM6svtpuD6WKRHVG2Em7rkyR_F8LhxAqi52jBHlw3sS-yYEzXI6BiY2-S2jTfcqExO3sqnHm-8RNbCUGYDtAMasoMFUGDyDx7XNmDg==",
+   "text": "In the standard sliding revenue scale used by Indian multiplexes, the producer's share falls to 42.5 percent during the second week of screening.",
+   "unit": "pct"
+  }
+ ],
+ "id": "2026-11-30-sglearning-long",
+ "ids": {
+  "budget": {
+   "day": "2026-11-28",
+   "drafts": 2,
+   "research": 1
+  },
+  "cost": {
+   "inr": 189.0,
+   "usd": 0.956528,
+   "voice": 62
+  },
+  "drafts": 2,
+  "music": {
+   "by": "Kevin MacLeod (incompetech.com)",
+   "licence": "CC BY 4.0",
+   "title": "Sunshine"
+  },
+  "sound": "track",
+  "watch": {
+   "best_change": "Make the first frame show the hook itself, a superhero trailer with a huge '563M views in 24 hrs' on screen, so the number grabs the scroller before the line finishes.",
+   "issues": 4,
+   "opening": 5,
+   "verdict": "fix"
+  },
+  "watch_redo": [
+   0,
+   3,
+   43
+  ]
+ },
+ "kind": "long",
+ "publish_day": "2026-11-30",
+ "reasons": [
+  "try 1: numbers without a source: 1e+07",
+  "review: redrawing 3 picture(s) before upload"
+ ],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Avengers: Doomsday ke trailer ko reportedly 24 ghante mein 563 million views mile.\nPar aapke ticket ka lagbhag aadha theatre rakh leta hai.\nAur film ko budget ka 2.5 guna kamana padta hai, tab jaakar break-even.\nHit ya flop asal mein kaun tay karta hai?\nYeh investment advice nahi hai.\nUs dost ko bhejo jo collection sunte hi film ko hit bol deta hai.",
+    "hashtags": [
+     "#LearningWithSG",
+     "#SeedhiBaat",
+     "#PaiseKiKhabar",
+     "#HinglishFinance",
+     "#MoneyTipsHindi"
+    ]
+   },
+   "threads": {
+    "text": "563 million views, phir bhi film ka hisaab adhoora? Theatre har ticket ka lagbhag aadha rakhta hai, aur film ko budget ka 2.5 guna kamana padta hai. Aap Avengers: Doomsday theatre mein dekhoge ya OTT ka intezaar karoge? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [
+     "00:00 Trailer ka record",
+     "00:00 Budget kahan jaata hai",
+     "00:00 Ticket ka aadha paisa",
+     "00:00 Hit ya flop ka hisaab",
+     "00:00 Theatre ke baad ki kamai"
+    ],
+    "description": "Avengers: Doomsday ke trailer ko reportedly 24 ghante mein 563 million views mile, par views se film ka bill nahi bharta. Theatre aam taur par har ticket ka lagbhag aadha rakhta hai, aur industry ke thumb rule ke hisaab se film ko budget ka 2.5 guna kamana padta hai. Is video mein budget, ticket ka bantwara, OTT aur hit ya flop ka poora hisaab, seedhi bhasha mein. Yeh investment advice nahi hai. Us dost ko bhejo jo collection sunte hi film ko hit bol deta hai.",
+    "tags": [
+     "Avengers Doomsday",
+     "box office",
+     "film budget",
+     "Marvel",
+     "break even",
+     "multiplex",
+     "movie business",
+     "Hollywood",
+     "OTT rights",
+     "ticket share",
+     "hit ya flop",
+     "Learning with SG"
+    ],
+    "title": "Avengers Doomsday: ticket ka aadha paisa kiska?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Avengers: Doomsday aap theatre mein dekhoge, ya OTT par aane ka intezaar karoge?",
+  "hook": "Avengers: Doomsday ka final trailer. Sirf 24 ghante. 563 million views. Toh film hit hi hogi?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic night view of a crowded street outside a large Indian multiplex, young people in jackets gathered under warm lobby lights, excitement in the air, no signboards or text; the lower fifth is calm wet pavement reflecting the lights. Correction after review: Make this opening picture the most dramatic, close and high-contrast view of the subject, filling the frame: a viewer scrolling past must stop on it.",
+     "type": "art"
+    },
+    "vo": "Avengers: Doomsday ka final trailer. Sirf 24 ghante. 563 million views. Toh film hit hi hogi?"
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "analyst-view",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a wooden desk in a dim film studio accounts office, a thick stack of paper invoices and a closed leather ledger under a desk lamp, late evening; calm dark floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Lekin views se bill nahi bharta. Film ko budget ka 2.5 guna kamana padta hai."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "analyst-view",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view from behind of a young Indian couple at a multiplex ticket counter handing over cash, a staff member's hands taking it, bright lobby; plain polished floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Aap ticket khareedte ho. Par uska lagbhag aadha, film banane walon tak pahunchta hi nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of a deserted multiplex corridor in India at night after the last show, rows of closed hall doors, a single cleaner with a broom far away; calm empty floor in the lower fifth. Correction after review: Brighten it, or use a split image of a hit headline against a flop headline to show 'hit ya flop'.",
+     "type": "art"
+    },
+    "vo": "Hit ya flop, faisla kaun karta hai? Aur aakhir mein, har box office headline ka chhupa sach."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial view at dusk of a large film studio lot in California, rows of huge white sound stage buildings and palm trees, no signs; calm empty parking ground in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Aaj teen sawaal. Ek: itna bada budget jaata kahan hai? Do: aapke ticket ka paisa kiske paas jaata hai? Teen: film apna kharcha wapas kab nikaalti hai?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a vast American film studio lot in Los Angeles at golden hour, giant sound stage buildings, crew carts parked in a row, no logos; calm asphalt in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Pehle us record ko dekho. Marvel Studios, yaani America ki superhero filmein banane wali company. Uske trailer ko 24 ghante mein 563 million views mile."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view inside a busy Mumbai local train compartment in the morning, commuters chatting animatedly, seen from a seat, sunlight through the windows; calm floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Yeh sirf ek din ka hisaab hai. Film abhi theatre mein aayi bhi nahi. Phir bhi duniya bhar mein log isi trailer ki baat kar rahe hain."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a multiplex staff member in uniform rolling out a red carpet across an empty grand lobby in India, preparing for a premiere, soft morning light; polished floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Taareekh bhi tay hai. Report ke mutabik, Marvel yeh film 18 December 2026 ko theatre mein laayegi. Yaani trailer aur ticket ke beech bas kuch hafte."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an Indian middle-class family at a dinner table at night, a 10-year-old boy talking excitedly to his father, the mother serving rotis, warm tube light; plain tiled floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Ab ek ghar ka scene socho. Dinner par beta kehta hai, papa, yeh film toh record todegi. Papa poochte hain, record views ka, ya kamai ka?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a roadside chai stall in an Indian town at evening, a group of young men in a lively debate holding glass tumblers of tea, a kettle steaming; dusty ground in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Chai ki tapri par bhi yahi bahas hai. Koi kehta hai, itne views, toh paisa vasool. Doosra poochta hai, pehle yeh batao, banane mein laga kitna?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a quiet suburban Indian living room at night, a teenager on a sofa seen from behind, lit by a soft blue glow from out of frame; calm carpet in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Yahi asli sawaal hai. Views free hain. Trailer dekhne ke aap kuch nahi dete. Lekin trailer ko aap tak pahunchana, studio ke liye free nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a large printing press in an Indian print shop, colourful printed sheets with no readable text flying through the rollers, workers watching; concrete floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Is kharche ko marketing kehte hain. Marketing yaani film ka prachaar. Poster, ads, trailer, stars ke interview, sab. Aur yahin pehla jhatka chhupa hai."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "analyst-view",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a glass-walled boardroom in a Los Angeles office tower, executives around a long table seen from behind, city skyline at sunset; calm dark carpet in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Jo budget aap khabron mein padhte ho, usme prachaar shaamil hi nahi hota. Fortune magazine ki report kehti hai, production budget mein marketing ka kharcha nahi judta."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a busy Hollywood film set, a crane camera over a constructed city street set, crew in caps setting up lights in daylight; dusty studio floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Production budget yaani sirf film banane ka kharcha. Shooting, sets, actors, computer wale effects. Prachaar ka bill uske upar, alag se aata hai."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of workers installing a huge blank billboard frame beside a highway in an Indian city at dawn; calm empty road in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Matlab film ka asli kharcha, khabar wale budget se bada hota hai. Kitna bada, woh har film ka alag hai. Isliye sirf budget dekhkar hisaab adhoora rehta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a film studio warehouse at night, rows of stored props, costumes on racks and big set pieces under dim work lights; calm concrete floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Toh trailer ka yeh shor muft mein nahi aata. Ab agla sawaal: film banane mein khud kitna laga? Aur woh saara paisa gaya kahan?"
+   },
+   {
+    "facts_used": [
+     2
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an American bank vault with neat stacks of dollar banknotes on steel shelves, cool light; calm steel floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "The Economic Times ki report ke mutabik, agli dono Avengers filmon ka milaakar budget lagbhag 600 million dollar hai. Dollar, yaani America ki currency."
+   },
+   {
+    "facts_used": [
+     2,
+     5
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a wooden desk in a studio office with paper receipts, a fountain pen and a brass paperweight, afternoon light through blinds; plain floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Aur dhyaan dijiye. Yeh 600 million sirf banane ka kharcha hai. Prachaar ka bill isme nahi. Toh itna paisa jaata kahan hai?"
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a large film crew at work at dawn on an outdoor location in America, lighting technicians, carpenters and makeup artists seen from behind; open grassy field in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Pehla bada hissa jaata hai logon par. Director, actors, writers, aur woh technicians jo parde ke peeche kaam karte hain. Har naam ki ek fees hai."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of two empty director's chairs side by side beside a cinema camera on a film set, soft studio lights, nobody seated, no names on the chairs; calm dark floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Ek misaal suniye. Directors Anthony aur Joe Russo, jinhe Russo brothers kehte hain. Report ke mutabik, dono filmein direct karne ke unhe 80 million dollar mil rahe hain."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a thick signed contract and a fountain pen on a mahogany desk in a Hollywood agent's office, warm lamp light, no readable text; calm desk surface in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Aur kahani yahin khatam nahi. Report kehti hai, film achchi chali toh unhe performance ke hisaab se bonus alag milega. Yaani kharcha release ke baad bhi badh sakta hai."
+   },
+   {
+    "facts_used": [
+     4,
+     3
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a gleaming red and gold armoured costume on a mannequin in a dim studio archive under a single spotlight, no logos; calm dark floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Ab stars ki baat. Robert Downey Jr., jo Iron Man bane the. Report kehti hai, Marvel filmon se unki kamai Russo brothers ki is fees se kai guna zyada rahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a huge crowd of fans outside a film premiere in Los Angeles at night, seen from behind, camera flashes in the distance, red carpet; calm street in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Studio itna kyun dete hain? Kyunki unhe lagta hai, bade naam bheed laate hain. Star ka chehra poster par, aur log ticket khidki par. Yahi daav hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a visual effects studio at night, rows of artists at desks seen from behind, the room bathed in blue light, bare walls; calm floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Doosra bada hissa: computer wale effects. Aasmaan mein ladaai, tootte shehar, udte jahaz. Superhero film ki har jhalak, kai mahinon ki mehnat se banti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a massive outdoor film set in an American desert at sunrise, a crew of dozens around a camera crane, costumed extras waiting; sandy ground in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Teesra hissa: shooting. Bade sets, alag alag jagah locations, costume, aur poori team ka rehna khaana. Har din camera chalta hai, har din bill banta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an empty cinema ticket counter in an Indian multiplex before opening, shutters half raised, clean lobby, early morning; polished floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Ab ek baat dhyaan se suniye. Yeh poora kharcha release se pehle ho chuka hota hai. Ticket ka ek bhi paisa abhi tak aaya nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an Indian farmer sowing seeds by hand in a freshly ploughed field at dawn, seen from the side, a bullock in the distance; brown soil in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Jaise kisaan pehle beej, khaad aur paani par paisa lagata hai. Fasal ka bhaav baad mein pata chalta hai. Studio bhi wahi kisaan hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a ripe golden wheat field at harvest in Punjab, evening light, a single harvester far away; calm stubble in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Aur fasal kategi tab, jab film theatre mein aayegi. Par jo kamai aayegi, kya woh poori studio ki hogi? Nahi. Beech mein ek hissedaar baitha hai: theatre."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a hand holding a blank paper cinema ticket inside a bustling Indian multiplex lobby, the popcorn counter blurred behind; polished floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Film ka ticket aap khareedte ho. Par uska paisa jaata kiske paas hai? Avengers: Doomsday jaisi badi film mein bhi, jawab chaunkaane wala hai."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "analyst-view",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view from the back row of a packed Indian multiplex hall, audience silhouettes lit by light from ahead; dark carpeted steps in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Pehla hissedaar: theatre. Fortune magazine ki report kehti hai, theatre aam taur par har ticket ka lagbhag aadha apne paas rakhta hai. Aadha, yaani 50 percent."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view inside a cinema projection room, a large projector sending a beam of light through a small window, a technician seen from behind; dark floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Kyun? Kyunki hall theatre ka hai. Kiraya, bijli, AC, staff, safai, projector, sab uska kharcha. Film dikhane ki dukaan wahi chalata hai."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a meeting table in a Mumbai office, a film producer and a multiplex manager shaking hands over papers, seen from the side, afternoon light; calm floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "India mein yeh hisaab hafte ke saath badalta hai. Multiplex ke samjhauton mein, pehle hafte ka collection producer aur theatre mein aadha aadha batta hai. Producer yaani film par paisa lagane wala."
+   },
+   {
+    "facts_used": [
+     8,
+     7
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a half-empty Indian cinema hall on a weekday afternoon, scattered viewers among rows of red seats, seen from the side; carpeted aisle in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Par doosre hafte se producer ka hissa girne lagta hai. Mint akhbaar ki report ke mutabik, chauthe hafte tak producer ka hissa sirf 30 percent reh jaata hai."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a multiplex usher sweeping spilled popcorn between empty seats after a show, seen from behind, soft house lights; carpet in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Seedhi baat: film jitna lamba chalti hai, theatre ka hissa utna badhta hai. Isliye producer chahta hai, zyada kamai pehle hafte mein hi ho jaaye."
+   },
+   {
+    "facts_used": [
+     7,
+     5
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a clerk's hands counting neat bundles of rupee notes in a cinema box office cash drawer, evening light; wooden counter in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Ab apne ticket ko dekho. Pehle hafte bhi uska aadha theatre ke paas gaya. Aur producer ko bache hisse se hi budget aur prachaar, dono nikaalne hain."
+   },
+   {
+    "facts_used": [
+     5,
+     7
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an old single-screen cinema facade in an Indian city at night, a crowd streaming out after a show, no signboards; calm street in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Yahi sabse bada sach hai. Box office collection, yaani bike hue sab ticket ka total, studio ki kamai nahi hai. Studio ke haath uska sirf ek hissa aata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a film producer's office in Mumbai at night, a man seen from behind at the window looking at the city lights, files on his desk; calm floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Toh teesra sawaal. Itna kuch katne ke baad, film apna kharcha wapas kab nikaalti hai? Iske liye film industry ke paas ek purana thumb rule hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a traditional brass weighing balance perfectly level on a shop counter, two equal piles of coins on its pans, soft light; wooden counter in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Pehle ek shabd: break-even. Break-even yaani woh point, jahan kamai ne kharcha barabar kar diya. Na fayda, na nuksaan. Bas lagaya hua paisa wapas."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "analyst-view",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic aerial night view of a huge city with glowing highways and lit buildings seen from high above; calm dark river in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Fortune ke mutabik, industry ka thumb rule kehta hai: film ko duniya bhar mein apne production budget ka lagbhag 2.5 guna kamana chahiye. Tab theatre se break-even hota hai."
+   },
+   {
+    "facts_used": [
+     6,
+     5
+    ],
+    "label": "analyst-view",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of two neat stacks of coins of different heights on a dark table, one twice as tall as the other, soft side light; calm table surface in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "2.5 guna kyun? Pehla kaaran aap jaan chuke ho. Ticket ka lagbhag aadha theatre le jaata hai. Toh budget wapas laane ko, collection double toh chahiye hi."
+   },
+   {
+    "facts_used": [
+     5,
+     6
+    ],
+    "label": "analyst-view",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a marketing team pinning blank poster proofs on a large wall in a creative agency office, seen from behind; plain floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Doosra kaaran: prachaar. Production budget mein marketing shaamil nahi hoti. Woh alag bill bhi isi kamai se bharna hai. Isliye double kaafi nahi, 2.5 guna chahiye."
+   },
+   {
+    "facts_used": [
+     2,
+     6
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a gigantic sound stage in Los Angeles with a partly built city set, a single worker on a tall ladder, dramatic shafts of light; concrete floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Ab yeh rule Avengers par lagao. Dono filmon ka milaakar budget reportedly 600 million dollar. Thumb rule ke hisaab se, kamai isse kahin aage jaani chahiye."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a long queue of young people at a multiplex ticket window in India on a Friday evening, seen from the side; calm pavement in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Toh trailer ke record views ka matlab kya? Utna hi, jitne log sach mein ticket khareedenge. Trailer dekhna free hai. Ticket khareedna ek faisla hai."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a packed Indian cinema hall on opening night, the audience cheering with raised arms, seen from behind; dark carpeted steps in the lower fifth. Correction after review: Shorten it to 'HT' or widen the tag so 'Hindustan Times' fits.",
+     "type": "art"
+    },
+    "vo": "Isliye hit ya flop ka faisla trailer nahi karta. Faisla karta hai pehla hafta. Wahi hafta jab theatre aur producer, aadha aadha baant rahe hote hain."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "analyst-view",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of folded newspapers stacked at a roadside news stall in Delhi at dawn, the vendor seen from behind, no readable headlines; calm pavement in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Ab socho, ek film ka collection bahut bada aaya. Headline chillati hai, record toot gaya. Par agar collection budget ke 2.5 guna tak nahi pahuncha, toh theatre se kharcha poora nahi nikla."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of cinema staff locking the hall doors from outside at night, one worker carrying a metal film reel can under his arm; calm floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Lekin yahan twist hai. Theatre film ki akeli dukaan nahi. Theatre se utarne ke baad bhi film kamaati hai. Aur yahi kamai kai filmon ko sahara deti hai."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": "analyst-view",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an Indian family on a sofa at home in the evening watching a film together, seen from behind, lit by a soft glow from out of frame, snacks on the table; calm carpet in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Fortune ki report bhi yahi kehti hai. Ghar par dekhi jaane wali film, aur doosre deshon ke ticket, dono se madad milti hai. Film ki doosri zindagi shuru hoti hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a long modern data centre corridor with rows of server racks and small blinking lights, cool blue tone; reflective floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Pehla rasta: OTT. OTT yaani internet wale streaming apps, jahan aap ghar baithe film dekhte ho. Platform film dikhane ka haq khareedta hai, aur studio ko paisa deta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of satellite dishes on the rooftop of an Indian apartment building at sunset, washing lines fluttering nearby; calm rooftop floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Doosra rasta: satellite rights. Yaani TV channel film ko TV par dikhane ka haq khareedta hai. Isliye purani hit filmein baar baar TV par lautti hain."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of moviegoers in winter coats queuing outside a classic cinema in a European city at night, warm lights, seen from behind, no signage; snowy pavement in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Teesra rasta: doosre desh. America ke bahar ke theatre bhi ginti mein aate hain. India, Europe, Asia, har jagah ka ticket studio ke hisaab mein judta hai."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a long corridor in a grand old building with a row of doors, the first door open with light spilling out, the others closed; calm marble floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Toh kamai ke kai darwaze hain. Par sabse pehle khulta hai theatre. Aur wahan ka hisaab, har hafte producer ke liye thoda chhota hota jaata hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a man reading a newspaper at a bus stop in Mumbai in the morning, seen from the side, no readable headlines; calm road in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Ab woh vaada, jo shuru mein kiya tha. Har box office headline ka chhupa sach. Jab aap padhte ho, film ne record kamai ki, toh zara ruko."
+   },
+   {
+    "facts_used": [
+     5,
+     7
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a cinema box office clerk handing a sealed cash bag to a man in a suit across the counter, seen from the side, evening; counter and floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Woh number theatre mein bike sab ticket ka total hai. Usme theatre ka hissa bhi shaamil hai. Producer tak uska sirf ek hissa pahunchta hai."
+   },
+   {
+    "facts_used": [
+     5
+    ],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a tall staircase in a Mumbai office building, a single person at the bottom step looking up toward light at the top; calm floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Aur us hisse se abhi budget nikalna hai, prachaar nikalna hai. Matlab headline ka number, film banane walon ka munafa nahi hai. Yeh pehli seedhi hai, aakhri nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a group of college friends walking out of a multiplex in India at night, arguing cheerfully, seen from behind; calm pavement in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Yahi galti hum sab karte hain. Collection ko kamai samajh lete hain. Aur phir bolte hain, itna kamaya, toh film hit. Asli hisaab is se kahin lamba hai."
+   },
+   {
+    "facts_used": [
+     6
+    ],
+    "label": "analyst-view",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a young woman with a notebook at a cafe table in Bengaluru, pen in hand, thinking, afternoon light; calm floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Toh agli baar koi kahe, film ne record tod diya, toh teen sawaal poochna. Budget kitna tha? Prachaar alag kitna laga? Aur collection budget ka 2.5 guna hua?"
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a big South Indian film shoot on an outdoor location, a crowd of extras and a crane camera, hot daylight; dusty ground in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Yeh sawaal sirf Hollywood ke nahi. Bollywood aur South ki filmon par bhi lagte hain. India mein bhi theatre aur producer, ticket ka paisa baantte hain."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of an empty grand cinema hall with spotlights on a closed red velvet curtain, a sense of anticipation; dark carpeted floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Aur ek baat yaad rakhna. Bade stars, bade effects, bada trailer, sab ek daav hai. Studio pehle paisa lagata hai. Nateeja aap jaise darshak tay karte ho."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a calm Indian living room at dusk, a cup of chai on a side table beside a closed notebook, soft window light; calm floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Yeh investment advice nahi hai. Bas ek koshish hai, yeh dikhane ki ki parde ke peeche paisa kaise ghoomta hai. Aur kaun kab kamaata hai."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "reported",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of workers on ladders hanging strings of warm lights in a grand multiplex lobby in India on a winter evening; polished floor in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Avengers: Doomsday 18 December 2026 ko aa rahi hai. Tab pata chalega, trailer ke record views ticket ki khidki tak pahunche ya nahi."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of two friends sitting on a scooter at night outside a cinema in an Indian city, chatting and laughing, seen from the side; calm road in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Agli video mein, ek aur roz ki cheez ke peeche ka paisa kholenge. Yeh video us dost ko bhejo, jo collection sunte hi film hit bol deta hai."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a near-empty modern cinema hall with a single bucket of popcorn resting on a red seat, soft light from ahead; carpeted steps in the lower fifth.",
+     "type": "art"
+    },
+    "vo": "Ab aapse ek aasaan sawaal. Avengers: Doomsday aap theatre mein dekhoge, ya OTT par aane ka intezaar karoge? Comment mein bas theatre ya OTT likho."
+   }
+  ],
+  "short_section": [
+   29,
+   36
+  ],
+  "thumbnail": {
+   "name": "AVENGERS",
+   "name_hi": "एवेंजर्स",
+   "scene": "LEFT: a packed Indian multiplex hall on opening night, the cheering audience seen from behind in the glow from ahead; RIGHT: the same hall weeks later, rows of empty red seats with a single spilled popcorn bucket.",
+   "words": [
+    "600 MILLION",
+    "FLOP?"
+   ],
+   "words_hi": [
+    "600 मिलियन",
+    "फ्लॉप?"
+   ]
+  },
+  "title": "Avengers jaisi film kitna kamati hai? Blockbuster ka poora hisaab"
+ },
+ "status": "voiced",
+ "timings": [
+  0.0,
+  6.526,
+  11.167,
+  15.884,
+  21.466,
+  31.528,
+  41.192,
+  47.536,
+  56.371,
+  63.897,
+  72.047,
+  79.601,
+  87.926,
+  95.629,
+  103.394,
+  112.231,
+  119.788,
+  128.13,
+  135.495,
+  143.483,
+  152.385,
+  160.773,
+  168.975,
+  176.323,
+  185.474,
+  194.898,
+  201.364,
+  208.18,
+  216.968,
+  224.82,
+  233.97,
+  243.081,
+  252.098,
+  259.809,
+  267.835,
+  276.513,
+  285.251,
+  292.529,
+  301.501,
+  310.682,
+  318.525,
+  327.543,
+  335.777,
+  344.2,
+  352.561,
+  363.343,
+  372.085,
+  379.846,
+  389.085,
+  396.645,
+  404.96,
+  413.003,
+  420.397,
+  427.224,
+  435.952,
+  444.503,
+  453.081,
+  460.028,
+  468.61,
+  475.952,
+  483.689,
+  490.378
+ ],
+ "topic": {
+  "follows": "Avengers: Doomsday final trailer is #1 on the India chart with 68.8M views, the biggest signal of the week.",
+  "hooks": [
+   "Hit ya flop: kaun tay karta hai, aur kab?",
+   "Ticket ke 100 rupaye mein se producer ko kitne milte hain?",
+   "Itna bada budget wapas kaise aata hai?"
+  ],
+  "id": "wk-2026-11-30-sglearning-long",
+  "patch_tries": 1,
+  "summary": "How a big film's money works, with Avengers: Doomsday as the example (founder-chosen trending subject): the budget and what it pays for, the marketing spend, why theatres keep a share of every ticket, OTT and satellite rights, and the break-even point that decides hit or flop. Check: the trailer's reported views and release date, the film's reported budget, and ticket-revenue sharing between producers and theatres in India. Explanation only; no advice to invest.",
+  "target_minutes": 12,
+  "title": "Avengers jaisi film kitna kamati hai? Blockbuster ka poora hisaab",
+  "topic_score": 1,
+  "topic_score_why": [
+   "+1 a choice the viewer faces",
+   "-2 company results or deals (in the summary)",
+   "+1 a concrete number",
+   "+1 asks a question"
+  ],
+  "trend": true,
+  "voice": "voice_g8azc8xcwhlu",
+  "weekly": true
+ },
+ "updated": "2026-11-28T15:54:25+00:00",
+ "writer": "claude"
+}

@@ -1,0 +1,419 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,86,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.68,Default,,0,0,0,,Avengers:
+Dialogue: 0,0:00:00.68,0:00:02.25,Default,,0,0,0,,Doomsday ka final trailer.
+Dialogue: 0,0:00:02.25,0:00:03.38,Default,,0,0,0,,Sirf 24 ghante.
+Dialogue: 0,0:00:03.38,0:00:04.73,Default,,0,0,0,,563 million views.
+Dialogue: 0,0:00:04.73,0:00:06.08,Default,,0,0,0,,Toh film hit hi hogi?
+Dialogue: 0,0:00:06.53,0:00:08.17,Default,,0,0,0,,Lekin views se bill nahi bharta.
+Dialogue: 0,0:00:08.17,0:00:09.62,Default,,0,0,0,,Film ko budget ka 2.5 guna
+Dialogue: 0,0:00:09.62,0:00:10.72,Default,,0,0,0,,kamana padta hai.
+Dialogue: 0,0:00:11.17,0:00:12.27,Default,,0,0,0,,Aap ticket khareedte ho.
+Dialogue: 0,0:00:12.27,0:00:13.38,Default,,0,0,0,,Par uska lagbhag aadha,
+Dialogue: 0,0:00:13.38,0:00:15.12,Default,,0,0,0,,film banane walon tak pahunchta hi
+Dialogue: 0,0:00:15.12,0:00:15.43,Default,,0,0,0,,nahi.
+Dialogue: 0,0:00:15.88,0:00:16.50,Default,,0,0,0,,Hit ya flop,
+Dialogue: 0,0:00:16.50,0:00:17.73,Default,,0,0,0,,faisla kaun karta hai?
+Dialogue: 0,0:00:17.73,0:00:18.55,Default,,0,0,0,,Aur aakhir mein,
+Dialogue: 0,0:00:18.55,0:00:20.81,Default,,0,0,0,,har box office headline ka chhupa
+Dialogue: 0,0:00:20.81,0:00:21.02,Default,,0,0,0,,sach.
+Dialogue: 0,0:00:21.47,0:00:22.36,Default,,0,0,0,,Aaj teen sawaal.
+Dialogue: 0,0:00:22.36,0:00:22.58,Default,,0,0,0,,Ek:
+Dialogue: 0,0:00:22.58,0:00:25.04,Default,,0,0,0,,itna bada budget jaata kahan hai?
+Dialogue: 0,0:00:25.04,0:00:25.27,Default,,0,0,0,,Do:
+Dialogue: 0,0:00:25.27,0:00:27.50,Default,,0,0,0,,aapke ticket ka paisa kiske paas
+Dialogue: 0,0:00:27.50,0:00:28.17,Default,,0,0,0,,jaata hai?
+Dialogue: 0,0:00:28.17,0:00:28.40,Default,,0,0,0,,Teen:
+Dialogue: 0,0:00:28.40,0:00:30.86,Default,,0,0,0,,film apna kharcha wapas kab nikaalti
+Dialogue: 0,0:00:30.86,0:00:31.08,Default,,0,0,0,,hai?
+Dialogue: 0,0:00:31.53,0:00:32.97,Default,,0,0,0,,Pehle us record ko dekho.
+Dialogue: 0,0:00:32.97,0:00:33.70,Default,,0,0,0,,Marvel Studios,
+Dialogue: 0,0:00:33.70,0:00:36.59,Default,,0,0,0,,yaani America ki superhero filmein banane
+Dialogue: 0,0:00:36.59,0:00:37.49,Default,,0,0,0,,wali company.
+Dialogue: 0,0:00:37.49,0:00:39.30,Default,,0,0,0,,Uske trailer ko 24 ghante mein
+Dialogue: 0,0:00:39.30,0:00:40.74,Default,,0,0,0,,563 million views mile.
+Dialogue: 0,0:00:41.19,0:00:42.37,Default,,0,0,0,,Yeh sirf ek din ka hisaab
+Dialogue: 0,0:00:42.37,0:00:42.54,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:42.54,0:00:43.89,Default,,0,0,0,,Film abhi theatre mein aayi bhi
+Dialogue: 0,0:00:43.89,0:00:44.22,Default,,0,0,0,,nahi.
+Dialogue: 0,0:00:44.22,0:00:45.40,Default,,0,0,0,,Phir bhi duniya bhar mein log
+Dialogue: 0,0:00:45.40,0:00:46.92,Default,,0,0,0,,isi trailer ki baat kar rahe
+Dialogue: 0,0:00:46.92,0:00:47.09,Default,,0,0,0,,hain.
+Dialogue: 0,0:00:47.54,0:00:48.51,Default,,0,0,0,,Taareekh bhi tay hai.
+Dialogue: 0,0:00:48.51,0:00:49.68,Default,,0,0,0,,Report ke mutabik,
+Dialogue: 0,0:00:49.68,0:00:52.22,Default,,0,0,0,,Marvel yeh film 18 December 2026
+Dialogue: 0,0:00:52.22,0:00:53.39,Default,,0,0,0,,ko theatre mein laayegi.
+Dialogue: 0,0:00:53.39,0:00:55.14,Default,,0,0,0,,Yaani trailer aur ticket ke beech
+Dialogue: 0,0:00:55.14,0:00:55.92,Default,,0,0,0,,bas kuch hafte.
+Dialogue: 0,0:00:56.37,0:00:57.82,Default,,0,0,0,,Ab ek ghar ka scene socho.
+Dialogue: 0,0:00:57.82,0:00:59.27,Default,,0,0,0,,Dinner par beta kehta hai,
+Dialogue: 0,0:00:59.27,0:00:59.64,Default,,0,0,0,,papa,
+Dialogue: 0,0:00:59.64,0:01:01.09,Default,,0,0,0,,yeh film toh record todegi.
+Dialogue: 0,0:01:01.09,0:01:01.99,Default,,0,0,0,,Papa poochte hain,
+Dialogue: 0,0:01:01.99,0:01:02.72,Default,,0,0,0,,record views ka,
+Dialogue: 0,0:01:02.72,0:01:03.45,Default,,0,0,0,,ya kamai ka?
+Dialogue: 0,0:01:03.90,0:01:05.40,Default,,0,0,0,,Chai ki tapri par bhi yahi
+Dialogue: 0,0:01:05.40,0:01:05.96,Default,,0,0,0,,bahas hai.
+Dialogue: 0,0:01:05.96,0:01:06.71,Default,,0,0,0,,Koi kehta hai,
+Dialogue: 0,0:01:06.71,0:01:07.28,Default,,0,0,0,,itne views,
+Dialogue: 0,0:01:07.28,0:01:08.22,Default,,0,0,0,,toh paisa vasool.
+Dialogue: 0,0:01:08.22,0:01:09.16,Default,,0,0,0,,Doosra poochta hai,
+Dialogue: 0,0:01:09.16,0:01:10.09,Default,,0,0,0,,pehle yeh batao,
+Dialogue: 0,0:01:10.09,0:01:11.60,Default,,0,0,0,,banane mein laga kitna?
+Dialogue: 0,0:01:12.05,0:01:13.29,Default,,0,0,0,,Yahi asli sawaal hai.
+Dialogue: 0,0:01:13.29,0:01:13.82,Default,,0,0,0,,Views free hain.
+Dialogue: 0,0:01:13.82,0:01:15.42,Default,,0,0,0,,Trailer dekhne ke aap kuch nahi
+Dialogue: 0,0:01:15.42,0:01:15.78,Default,,0,0,0,,dete.
+Dialogue: 0,0:01:15.78,0:01:17.73,Default,,0,0,0,,Lekin trailer ko aap tak pahunchana,
+Dialogue: 0,0:01:17.73,0:01:19.15,Default,,0,0,0,,studio ke liye free nahi hai.
+Dialogue: 0,0:01:19.60,0:01:21.57,Default,,0,0,0,,Is kharche ko marketing kehte hain.
+Dialogue: 0,0:01:21.57,0:01:23.34,Default,,0,0,0,,Marketing yaani film ka prachaar.
+Dialogue: 0,0:01:23.34,0:01:23.73,Default,,0,0,0,,Poster,
+Dialogue: 0,0:01:23.73,0:01:23.93,Default,,0,0,0,,ads,
+Dialogue: 0,0:01:23.93,0:01:24.33,Default,,0,0,0,,trailer,
+Dialogue: 0,0:01:24.33,0:01:25.31,Default,,0,0,0,,stars ke interview,
+Dialogue: 0,0:01:25.31,0:01:25.51,Default,,0,0,0,,sab.
+Dialogue: 0,0:01:25.51,0:01:27.48,Default,,0,0,0,,Aur yahin pehla jhatka chhupa hai.
+Dialogue: 0,0:01:27.93,0:01:29.23,Default,,0,0,0,,Jo budget aap khabron mein padhte
+Dialogue: 0,0:01:29.23,0:01:29.38,Default,,0,0,0,,ho,
+Dialogue: 0,0:01:29.38,0:01:30.97,Default,,0,0,0,,usme prachaar shaamil hi nahi hota.
+Dialogue: 0,0:01:30.97,0:01:32.86,Default,,0,0,0,,Fortune magazine ki report kehti hai,
+Dialogue: 0,0:01:32.86,0:01:34.60,Default,,0,0,0,,production budget mein marketing ka kharcha
+Dialogue: 0,0:01:34.60,0:01:35.18,Default,,0,0,0,,nahi judta.
+Dialogue: 0,0:01:35.63,0:01:37.77,Default,,0,0,0,,Production budget yaani sirf film banane
+Dialogue: 0,0:01:37.77,0:01:38.31,Default,,0,0,0,,ka kharcha.
+Dialogue: 0,0:01:38.31,0:01:38.66,Default,,0,0,0,,Shooting,
+Dialogue: 0,0:01:38.66,0:01:38.84,Default,,0,0,0,,sets,
+Dialogue: 0,0:01:38.84,0:01:39.20,Default,,0,0,0,,actors,
+Dialogue: 0,0:01:39.20,0:01:40.45,Default,,0,0,0,,computer wale effects.
+Dialogue: 0,0:01:40.45,0:01:41.87,Default,,0,0,0,,Prachaar ka bill uske upar,
+Dialogue: 0,0:01:41.87,0:01:42.94,Default,,0,0,0,,alag se aata hai.
+Dialogue: 0,0:01:43.39,0:01:44.85,Default,,0,0,0,,Matlab film ka asli kharcha,
+Dialogue: 0,0:01:44.85,0:01:46.86,Default,,0,0,0,,khabar wale budget se bada hota
+Dialogue: 0,0:01:46.86,0:01:47.04,Default,,0,0,0,,hai.
+Dialogue: 0,0:01:47.04,0:01:47.77,Default,,0,0,0,,Kitna bada,
+Dialogue: 0,0:01:47.77,0:01:49.05,Default,,0,0,0,,woh har film ka alag hai.
+Dialogue: 0,0:01:49.05,0:01:51.23,Default,,0,0,0,,Isliye sirf budget dekhkar hisaab adhoora
+Dialogue: 0,0:01:51.23,0:01:51.78,Default,,0,0,0,,rehta hai.
+Dialogue: 0,0:01:52.23,0:01:53.61,Default,,0,0,0,,Toh trailer ka yeh shor muft
+Dialogue: 0,0:01:53.61,0:01:54.60,Default,,0,0,0,,mein nahi aata.
+Dialogue: 0,0:01:54.60,0:01:55.59,Default,,0,0,0,,Ab agla sawaal:
+Dialogue: 0,0:01:55.59,0:01:57.56,Default,,0,0,0,,film banane mein khud kitna laga?
+Dialogue: 0,0:01:57.56,0:01:59.34,Default,,0,0,0,,Aur woh saara paisa gaya kahan?
+Dialogue: 0,0:01:59.79,0:02:01.49,Default,,0,0,0,,The Economic Times ki report ke
+Dialogue: 0,0:02:01.49,0:02:01.95,Default,,0,0,0,,mutabik,
+Dialogue: 0,0:02:01.95,0:02:03.97,Default,,0,0,0,,agli dono Avengers filmon ka milaakar
+Dialogue: 0,0:02:03.97,0:02:05.82,Default,,0,0,0,,budget lagbhag 600 million dollar hai.
+Dialogue: 0,0:02:05.82,0:02:06.13,Default,,0,0,0,,Dollar,
+Dialogue: 0,0:02:06.13,0:02:07.68,Default,,0,0,0,,yaani America ki currency.
+Dialogue: 0,0:02:08.13,0:02:08.90,Default,,0,0,0,,Aur dhyaan dijiye.
+Dialogue: 0,0:02:08.90,0:02:11.01,Default,,0,0,0,,Yeh 600 million sirf banane ka
+Dialogue: 0,0:02:11.01,0:02:11.59,Default,,0,0,0,,kharcha hai.
+Dialogue: 0,0:02:11.59,0:02:13.12,Default,,0,0,0,,Prachaar ka bill isme nahi.
+Dialogue: 0,0:02:13.12,0:02:15.04,Default,,0,0,0,,Toh itna paisa jaata kahan hai?
+Dialogue: 0,0:02:15.50,0:02:17.57,Default,,0,0,0,,Pehla bada hissa jaata hai logon
+Dialogue: 0,0:02:17.57,0:02:17.76,Default,,0,0,0,,par.
+Dialogue: 0,0:02:17.76,0:02:18.32,Default,,0,0,0,,Director,
+Dialogue: 0,0:02:18.32,0:02:18.70,Default,,0,0,0,,actors,
+Dialogue: 0,0:02:18.70,0:02:19.08,Default,,0,0,0,,writers,
+Dialogue: 0,0:02:19.08,0:02:20.77,Default,,0,0,0,,aur woh technicians jo parde ke
+Dialogue: 0,0:02:20.77,0:02:21.90,Default,,0,0,0,,peeche kaam karte hain.
+Dialogue: 0,0:02:21.90,0:02:23.03,Default,,0,0,0,,Har naam ki ek fees hai.
+Dialogue: 0,0:02:23.48,0:02:24.31,Default,,0,0,0,,Ek misaal suniye.
+Dialogue: 0,0:02:24.31,0:02:25.97,Default,,0,0,0,,Directors Anthony aur Joe Russo,
+Dialogue: 0,0:02:25.97,0:02:27.46,Default,,0,0,0,,jinhe Russo brothers kehte hain.
+Dialogue: 0,0:02:27.46,0:02:28.46,Default,,0,0,0,,Report ke mutabik,
+Dialogue: 0,0:02:28.46,0:02:30.28,Default,,0,0,0,,dono filmein direct karne ke unhe
+Dialogue: 0,0:02:30.28,0:02:31.94,Default,,0,0,0,,80 million dollar mil rahe hain.
+Dialogue: 0,0:02:32.38,0:02:33.91,Default,,0,0,0,,Aur kahani yahin khatam nahi.
+Dialogue: 0,0:02:33.91,0:02:34.68,Default,,0,0,0,,Report kehti hai,
+Dialogue: 0,0:02:34.68,0:02:36.51,Default,,0,0,0,,film achchi chali toh unhe performance
+Dialogue: 0,0:02:36.51,0:02:38.19,Default,,0,0,0,,ke hisaab se bonus alag milega.
+Dialogue: 0,0:02:38.19,0:02:39.71,Default,,0,0,0,,Yaani kharcha release ke baad bhi
+Dialogue: 0,0:02:39.71,0:02:40.32,Default,,0,0,0,,badh sakta hai.
+Dialogue: 0,0:02:40.77,0:02:41.46,Default,,0,0,0,,Ab stars ki baat.
+Dialogue: 0,0:02:41.46,0:02:42.32,Default,,0,0,0,,Robert Downey Jr.,
+Dialogue: 0,0:02:42.32,0:02:43.53,Default,,0,0,0,,jo Iron Man bane the.
+Dialogue: 0,0:02:43.53,0:02:44.39,Default,,0,0,0,,Report kehti hai,
+Dialogue: 0,0:02:44.39,0:02:46.29,Default,,0,0,0,,Marvel filmon se unki kamai Russo
+Dialogue: 0,0:02:46.29,0:02:47.49,Default,,0,0,0,,brothers ki is fees se kai
+Dialogue: 0,0:02:47.49,0:02:48.53,Default,,0,0,0,,guna zyada rahi.
+Dialogue: 0,0:02:48.97,0:02:50.35,Default,,0,0,0,,Studio itna kyun dete hain?
+Dialogue: 0,0:02:50.35,0:02:51.56,Default,,0,0,0,,Kyunki unhe lagta hai,
+Dialogue: 0,0:02:51.56,0:02:52.77,Default,,0,0,0,,bade naam bheed laate hain.
+Dialogue: 0,0:02:52.77,0:02:53.98,Default,,0,0,0,,Star ka chehra poster par,
+Dialogue: 0,0:02:53.98,0:02:55.18,Default,,0,0,0,,aur log ticket khidki par.
+Dialogue: 0,0:02:55.18,0:02:55.87,Default,,0,0,0,,Yahi daav hai.
+Dialogue: 0,0:02:56.32,0:02:57.46,Default,,0,0,0,,Doosra bada hissa:
+Dialogue: 0,0:02:57.46,0:02:58.78,Default,,0,0,0,,computer wale effects.
+Dialogue: 0,0:02:58.78,0:02:59.73,Default,,0,0,0,,Aasmaan mein ladaai,
+Dialogue: 0,0:02:59.73,0:03:00.48,Default,,0,0,0,,tootte shehar,
+Dialogue: 0,0:03:00.48,0:03:01.24,Default,,0,0,0,,udte jahaz.
+Dialogue: 0,0:03:01.24,0:03:02.94,Default,,0,0,0,,Superhero film ki har jhalak,
+Dialogue: 0,0:03:02.94,0:03:04.83,Default,,0,0,0,,kai mahinon ki mehnat se banti
+Dialogue: 0,0:03:04.83,0:03:05.02,Default,,0,0,0,,hai.
+Dialogue: 0,0:03:05.47,0:03:06.29,Default,,0,0,0,,Teesra hissa:
+Dialogue: 0,0:03:06.29,0:03:06.70,Default,,0,0,0,,shooting.
+Dialogue: 0,0:03:06.70,0:03:07.31,Default,,0,0,0,,Bade sets,
+Dialogue: 0,0:03:07.31,0:03:09.15,Default,,0,0,0,,alag alag jagah locations,
+Dialogue: 0,0:03:09.15,0:03:09.76,Default,,0,0,0,,costume,
+Dialogue: 0,0:03:09.76,0:03:11.59,Default,,0,0,0,,aur poori team ka rehna khaana.
+Dialogue: 0,0:03:11.59,0:03:13.22,Default,,0,0,0,,Har din camera chalta hai,
+Dialogue: 0,0:03:13.22,0:03:14.45,Default,,0,0,0,,har din bill banta hai.
+Dialogue: 0,0:03:14.90,0:03:16.01,Default,,0,0,0,,Ab ek baat dhyaan se suniye.
+Dialogue: 0,0:03:16.01,0:03:17.75,Default,,0,0,0,,Yeh poora kharcha release se pehle
+Dialogue: 0,0:03:17.75,0:03:18.70,Default,,0,0,0,,ho chuka hota hai.
+Dialogue: 0,0:03:18.70,0:03:20.12,Default,,0,0,0,,Ticket ka ek bhi paisa abhi
+Dialogue: 0,0:03:20.12,0:03:20.91,Default,,0,0,0,,tak aaya nahi hai.
+Dialogue: 0,0:03:21.36,0:03:22.57,Default,,0,0,0,,Jaise kisaan pehle beej,
+Dialogue: 0,0:03:22.57,0:03:24.29,Default,,0,0,0,,khaad aur paani par paisa lagata
+Dialogue: 0,0:03:24.29,0:03:24.46,Default,,0,0,0,,hai.
+Dialogue: 0,0:03:24.46,0:03:25.84,Default,,0,0,0,,Fasal ka bhaav baad mein pata
+Dialogue: 0,0:03:25.84,0:03:26.35,Default,,0,0,0,,chalta hai.
+Dialogue: 0,0:03:26.35,0:03:27.73,Default,,0,0,0,,Studio bhi wahi kisaan hai.
+Dialogue: 0,0:03:28.18,0:03:29.57,Default,,0,0,0,,Aur fasal kategi tab,
+Dialogue: 0,0:03:29.57,0:03:30.96,Default,,0,0,0,,jab film theatre mein aayegi.
+Dialogue: 0,0:03:30.96,0:03:32.15,Default,,0,0,0,,Par jo kamai aayegi,
+Dialogue: 0,0:03:32.15,0:03:33.94,Default,,0,0,0,,kya woh poori studio ki hogi?
+Dialogue: 0,0:03:33.94,0:03:34.33,Default,,0,0,0,,Nahi.
+Dialogue: 0,0:03:34.33,0:03:36.12,Default,,0,0,0,,Beech mein ek hissedaar baitha hai:
+Dialogue: 0,0:03:36.12,0:03:36.52,Default,,0,0,0,,theatre.
+Dialogue: 0,0:03:36.97,0:03:38.63,Default,,0,0,0,,Film ka ticket aap khareedte ho.
+Dialogue: 0,0:03:38.63,0:03:40.48,Default,,0,0,0,,Par uska paisa jaata kiske paas
+Dialogue: 0,0:03:40.48,0:03:40.67,Default,,0,0,0,,hai?
+Dialogue: 0,0:03:40.67,0:03:41.22,Default,,0,0,0,,Avengers:
+Dialogue: 0,0:03:41.22,0:03:42.89,Default,,0,0,0,,Doomsday jaisi badi film mein bhi,
+Dialogue: 0,0:03:42.89,0:03:44.37,Default,,0,0,0,,jawab chaunkaane wala hai.
+Dialogue: 0,0:03:44.82,0:03:45.75,Default,,0,0,0,,Pehla hissedaar:
+Dialogue: 0,0:03:45.75,0:03:46.12,Default,,0,0,0,,theatre.
+Dialogue: 0,0:03:46.12,0:03:48.52,Default,,0,0,0,,Fortune magazine ki report kehti hai,
+Dialogue: 0,0:03:48.52,0:03:50.00,Default,,0,0,0,,theatre aam taur par har ticket
+Dialogue: 0,0:03:50.00,0:03:51.85,Default,,0,0,0,,ka lagbhag aadha apne paas rakhta
+Dialogue: 0,0:03:51.85,0:03:52.04,Default,,0,0,0,,hai.
+Dialogue: 0,0:03:52.04,0:03:52.41,Default,,0,0,0,,Aadha,
+Dialogue: 0,0:03:52.41,0:03:53.52,Default,,0,0,0,,yaani 50 percent.
+Dialogue: 0,0:03:53.97,0:03:54.20,Default,,0,0,0,,Kyun?
+Dialogue: 0,0:03:54.20,0:03:55.84,Default,,0,0,0,,Kyunki hall theatre ka hai.
+Dialogue: 0,0:03:55.84,0:03:56.31,Default,,0,0,0,,Kiraya,
+Dialogue: 0,0:03:56.31,0:03:56.78,Default,,0,0,0,,bijli,
+Dialogue: 0,0:03:56.78,0:03:57.01,Default,,0,0,0,,AC,
+Dialogue: 0,0:03:57.01,0:03:57.25,Default,,0,0,0,,staff,
+Dialogue: 0,0:03:57.25,0:03:57.72,Default,,0,0,0,,safai,
+Dialogue: 0,0:03:57.72,0:03:58.42,Default,,0,0,0,,projector,
+Dialogue: 0,0:03:58.42,0:03:59.59,Default,,0,0,0,,sab uska kharcha.
+Dialogue: 0,0:03:59.59,0:04:02.40,Default,,0,0,0,,Film dikhane ki dukaan wahi chalata
+Dialogue: 0,0:04:02.40,0:04:02.63,Default,,0,0,0,,hai.
+Dialogue: 0,0:04:03.08,0:04:04.41,Default,,0,0,0,,India mein yeh hisaab hafte ke
+Dialogue: 0,0:04:04.41,0:04:05.15,Default,,0,0,0,,saath badalta hai.
+Dialogue: 0,0:04:05.15,0:04:06.33,Default,,0,0,0,,Multiplex ke samjhauton mein,
+Dialogue: 0,0:04:06.33,0:04:08.10,Default,,0,0,0,,pehle hafte ka collection producer aur
+Dialogue: 0,0:04:08.10,0:04:09.58,Default,,0,0,0,,theatre mein aadha aadha batta hai.
+Dialogue: 0,0:04:09.58,0:04:11.35,Default,,0,0,0,,Producer yaani film par paisa lagane
+Dialogue: 0,0:04:11.35,0:04:11.65,Default,,0,0,0,,wala.
+Dialogue: 0,0:04:12.10,0:04:13.64,Default,,0,0,0,,Par doosre hafte se producer ka
+Dialogue: 0,0:04:13.64,0:04:14.72,Default,,0,0,0,,hissa girne lagta hai.
+Dialogue: 0,0:04:14.72,0:04:16.27,Default,,0,0,0,,Mint akhbaar ki report ke mutabik,
+Dialogue: 0,0:04:16.27,0:04:17.97,Default,,0,0,0,,chauthe hafte tak producer ka hissa
+Dialogue: 0,0:04:17.97,0:04:19.36,Default,,0,0,0,,sirf 30 percent reh jaata hai.
+Dialogue: 0,0:04:19.81,0:04:20.36,Default,,0,0,0,,Seedhi baat:
+Dialogue: 0,0:04:20.36,0:04:21.84,Default,,0,0,0,,film jitna lamba chalti hai,
+Dialogue: 0,0:04:21.84,0:04:23.69,Default,,0,0,0,,theatre ka hissa utna badhta hai.
+Dialogue: 0,0:04:23.69,0:04:25.17,Default,,0,0,0,,Isliye producer chahta hai,
+Dialogue: 0,0:04:25.17,0:04:27.02,Default,,0,0,0,,zyada kamai pehle hafte mein hi
+Dialogue: 0,0:04:27.02,0:04:27.38,Default,,0,0,0,,ho jaaye.
+Dialogue: 0,0:04:27.83,0:04:29.33,Default,,0,0,0,,Ab apne ticket ko dekho.
+Dialogue: 0,0:04:29.33,0:04:31.39,Default,,0,0,0,,Pehle hafte bhi uska aadha theatre
+Dialogue: 0,0:04:31.39,0:04:31.95,Default,,0,0,0,,ke paas gaya.
+Dialogue: 0,0:04:31.95,0:04:33.82,Default,,0,0,0,,Aur producer ko bache hisse se
+Dialogue: 0,0:04:33.82,0:04:34.94,Default,,0,0,0,,hi budget aur prachaar,
+Dialogue: 0,0:04:34.94,0:04:36.06,Default,,0,0,0,,dono nikaalne hain.
+Dialogue: 0,0:04:36.51,0:04:37.92,Default,,0,0,0,,Yahi sabse bada sach hai.
+Dialogue: 0,0:04:37.92,0:04:39.16,Default,,0,0,0,,Box office collection,
+Dialogue: 0,0:04:39.16,0:04:40.75,Default,,0,0,0,,yaani bike hue sab ticket ka
+Dialogue: 0,0:04:40.75,0:04:41.10,Default,,0,0,0,,total,
+Dialogue: 0,0:04:41.10,0:04:42.51,Default,,0,0,0,,studio ki kamai nahi hai.
+Dialogue: 0,0:04:42.51,0:04:43.92,Default,,0,0,0,,Studio ke haath uska sirf ek
+Dialogue: 0,0:04:43.92,0:04:44.80,Default,,0,0,0,,hissa aata hai.
+Dialogue: 0,0:04:45.25,0:04:46.08,Default,,0,0,0,,Toh teesra sawaal.
+Dialogue: 0,0:04:46.08,0:04:47.25,Default,,0,0,0,,Itna kuch katne ke baad,
+Dialogue: 0,0:04:47.25,0:04:49.08,Default,,0,0,0,,film apna kharcha wapas kab nikaalti
+Dialogue: 0,0:04:49.08,0:04:49.25,Default,,0,0,0,,hai?
+Dialogue: 0,0:04:49.25,0:04:50.75,Default,,0,0,0,,Iske liye film industry ke paas
+Dialogue: 0,0:04:50.75,0:04:52.08,Default,,0,0,0,,ek purana thumb rule hai.
+Dialogue: 0,0:04:52.53,0:04:53.38,Default,,0,0,0,,Pehle ek shabd:
+Dialogue: 0,0:04:53.38,0:04:54.02,Default,,0,0,0,,break-even.
+Dialogue: 0,0:04:54.02,0:04:55.51,Default,,0,0,0,,Break-even yaani woh point,
+Dialogue: 0,0:04:55.51,0:04:57.86,Default,,0,0,0,,jahan kamai ne kharcha barabar kar
+Dialogue: 0,0:04:57.86,0:04:58.07,Default,,0,0,0,,diya.
+Dialogue: 0,0:04:58.07,0:04:58.71,Default,,0,0,0,,Na fayda,
+Dialogue: 0,0:04:58.71,0:04:59.35,Default,,0,0,0,,na nuksaan.
+Dialogue: 0,0:04:59.35,0:05:01.05,Default,,0,0,0,,Bas lagaya hua paisa wapas.
+Dialogue: 0,0:05:01.50,0:05:02.70,Default,,0,0,0,,Fortune ke mutabik,
+Dialogue: 0,0:05:02.70,0:05:04.41,Default,,0,0,0,,industry ka thumb rule kehta hai:
+Dialogue: 0,0:05:04.41,0:05:05.78,Default,,0,0,0,,film ko duniya bhar mein apne
+Dialogue: 0,0:05:05.78,0:05:07.66,Default,,0,0,0,,production budget ka lagbhag 2.5 guna
+Dialogue: 0,0:05:07.66,0:05:08.52,Default,,0,0,0,,kamana chahiye.
+Dialogue: 0,0:05:08.52,0:05:10.23,Default,,0,0,0,,Tab theatre se break-even hota hai.
+Dialogue: 0,0:05:10.68,0:05:11.37,Default,,0,0,0,,2.5 guna kyun?
+Dialogue: 0,0:05:11.37,0:05:12.92,Default,,0,0,0,,Pehla kaaran aap jaan chuke ho.
+Dialogue: 0,0:05:12.92,0:05:14.64,Default,,0,0,0,,Ticket ka lagbhag aadha theatre le
+Dialogue: 0,0:05:14.64,0:05:15.15,Default,,0,0,0,,jaata hai.
+Dialogue: 0,0:05:15.15,0:05:16.53,Default,,0,0,0,,Toh budget wapas laane ko,
+Dialogue: 0,0:05:16.53,0:05:18.07,Default,,0,0,0,,collection double toh chahiye hi.
+Dialogue: 0,0:05:18.52,0:05:19.25,Default,,0,0,0,,Doosra kaaran:
+Dialogue: 0,0:05:19.25,0:05:19.62,Default,,0,0,0,,prachaar.
+Dialogue: 0,0:05:19.62,0:05:21.99,Default,,0,0,0,,Production budget mein marketing shaamil nahi
+Dialogue: 0,0:05:21.99,0:05:22.35,Default,,0,0,0,,hoti.
+Dialogue: 0,0:05:22.35,0:05:23.99,Default,,0,0,0,,Woh alag bill bhi isi kamai
+Dialogue: 0,0:05:23.99,0:05:24.72,Default,,0,0,0,,se bharna hai.
+Dialogue: 0,0:05:24.72,0:05:26.18,Default,,0,0,0,,Isliye double kaafi nahi,
+Dialogue: 0,0:05:26.18,0:05:27.09,Default,,0,0,0,,2.5 guna chahiye.
+Dialogue: 0,0:05:27.54,0:05:29.10,Default,,0,0,0,,Ab yeh rule Avengers par lagao.
+Dialogue: 0,0:05:29.10,0:05:31.28,Default,,0,0,0,,Dono filmon ka milaakar budget reportedly
+Dialogue: 0,0:05:31.28,0:05:32.37,Default,,0,0,0,,600 million dollar.
+Dialogue: 0,0:05:32.37,0:05:33.46,Default,,0,0,0,,Thumb rule ke hisaab se,
+Dialogue: 0,0:05:33.46,0:05:35.33,Default,,0,0,0,,kamai isse kahin aage jaani chahiye.
+Dialogue: 0,0:05:35.78,0:05:37.37,Default,,0,0,0,,Toh trailer ke record views ka
+Dialogue: 0,0:05:37.37,0:05:37.97,Default,,0,0,0,,matlab kya?
+Dialogue: 0,0:05:37.97,0:05:38.57,Default,,0,0,0,,Utna hi,
+Dialogue: 0,0:05:38.57,0:05:40.76,Default,,0,0,0,,jitne log sach mein ticket khareedenge.
+Dialogue: 0,0:05:40.76,0:05:41.95,Default,,0,0,0,,Trailer dekhna free hai.
+Dialogue: 0,0:05:41.95,0:05:43.75,Default,,0,0,0,,Ticket khareedna ek faisla hai.
+Dialogue: 0,0:05:44.20,0:05:45.64,Default,,0,0,0,,Isliye hit ya flop ka faisla
+Dialogue: 0,0:05:45.64,0:05:46.72,Default,,0,0,0,,trailer nahi karta.
+Dialogue: 0,0:05:46.72,0:05:48.34,Default,,0,0,0,,Faisla karta hai pehla hafta.
+Dialogue: 0,0:05:48.34,0:05:50.31,Default,,0,0,0,,Wahi hafta jab theatre aur producer,
+Dialogue: 0,0:05:50.31,0:05:52.11,Default,,0,0,0,,aadha aadha baant rahe hote hain.
+Dialogue: 0,0:05:52.56,0:05:53.12,Default,,0,0,0,,Ab socho,
+Dialogue: 0,0:05:53.12,0:05:55.00,Default,,0,0,0,,ek film ka collection bahut bada
+Dialogue: 0,0:05:55.00,0:05:55.19,Default,,0,0,0,,aaya.
+Dialogue: 0,0:05:55.19,0:05:56.51,Default,,0,0,0,,Headline chillati hai,
+Dialogue: 0,0:05:56.51,0:05:57.26,Default,,0,0,0,,record toot gaya.
+Dialogue: 0,0:05:57.26,0:05:59.13,Default,,0,0,0,,Par agar collection budget ke 2.5
+Dialogue: 0,0:05:59.13,0:06:00.64,Default,,0,0,0,,guna tak nahi pahuncha,
+Dialogue: 0,0:06:00.64,0:06:02.52,Default,,0,0,0,,toh theatre se kharcha poora nahi
+Dialogue: 0,0:06:02.52,0:06:02.89,Default,,0,0,0,,nikla.
+Dialogue: 0,0:06:03.34,0:06:04.43,Default,,0,0,0,,Lekin yahan twist hai.
+Dialogue: 0,0:06:04.43,0:06:06.41,Default,,0,0,0,,Theatre film ki akeli dukaan nahi.
+Dialogue: 0,0:06:06.41,0:06:08.03,Default,,0,0,0,,Theatre se utarne ke baad bhi
+Dialogue: 0,0:06:08.03,0:06:08.93,Default,,0,0,0,,film kamaati hai.
+Dialogue: 0,0:06:08.93,0:06:10.55,Default,,0,0,0,,Aur yahi kamai kai filmon ko
+Dialogue: 0,0:06:10.55,0:06:11.63,Default,,0,0,0,,sahara deti hai.
+Dialogue: 0,0:06:12.08,0:06:13.73,Default,,0,0,0,,Fortune ki report bhi yahi kehti
+Dialogue: 0,0:06:13.73,0:06:13.88,Default,,0,0,0,,hai.
+Dialogue: 0,0:06:13.88,0:06:15.22,Default,,0,0,0,,Ghar par dekhi jaane wali film,
+Dialogue: 0,0:06:15.22,0:06:16.41,Default,,0,0,0,,aur doosre deshon ke ticket,
+Dialogue: 0,0:06:16.41,0:06:17.61,Default,,0,0,0,,dono se madad milti hai.
+Dialogue: 0,0:06:17.61,0:06:19.25,Default,,0,0,0,,Film ki doosri zindagi shuru hoti
+Dialogue: 0,0:06:19.25,0:06:19.40,Default,,0,0,0,,hai.
+Dialogue: 0,0:06:19.85,0:06:20.59,Default,,0,0,0,,Pehla rasta:
+Dialogue: 0,0:06:20.59,0:06:20.78,Default,,0,0,0,,OTT.
+Dialogue: 0,0:06:20.78,0:06:22.84,Default,,0,0,0,,OTT yaani internet wale streaming apps,
+Dialogue: 0,0:06:22.84,0:06:24.52,Default,,0,0,0,,jahan aap ghar baithe film dekhte
+Dialogue: 0,0:06:24.52,0:06:24.71,Default,,0,0,0,,ho.
+Dialogue: 0,0:06:24.71,0:06:26.76,Default,,0,0,0,,Platform film dikhane ka haq khareedta
+Dialogue: 0,0:06:26.76,0:06:26.95,Default,,0,0,0,,hai,
+Dialogue: 0,0:06:26.95,0:06:28.63,Default,,0,0,0,,aur studio ko paisa deta hai.
+Dialogue: 0,0:06:29.08,0:06:29.76,Default,,0,0,0,,Doosra rasta:
+Dialogue: 0,0:06:29.76,0:06:30.61,Default,,0,0,0,,satellite rights.
+Dialogue: 0,0:06:30.61,0:06:31.96,Default,,0,0,0,,Yaani TV channel film ko TV
+Dialogue: 0,0:06:31.96,0:06:33.66,Default,,0,0,0,,par dikhane ka haq khareedta hai.
+Dialogue: 0,0:06:33.66,0:06:35.35,Default,,0,0,0,,Isliye purani hit filmein baar baar
+Dialogue: 0,0:06:35.35,0:06:36.19,Default,,0,0,0,,TV par lautti hain.
+Dialogue: 0,0:06:36.64,0:06:37.33,Default,,0,0,0,,Teesra rasta:
+Dialogue: 0,0:06:37.33,0:06:37.84,Default,,0,0,0,,doosre desh.
+Dialogue: 0,0:06:37.84,0:06:39.72,Default,,0,0,0,,America ke bahar ke theatre bhi
+Dialogue: 0,0:06:39.72,0:06:40.75,Default,,0,0,0,,ginti mein aate hain.
+Dialogue: 0,0:06:40.75,0:06:41.09,Default,,0,0,0,,India,
+Dialogue: 0,0:06:41.09,0:06:41.60,Default,,0,0,0,,Europe,
+Dialogue: 0,0:06:41.60,0:06:41.95,Default,,0,0,0,,Asia,
+Dialogue: 0,0:06:41.95,0:06:43.49,Default,,0,0,0,,har jagah ka ticket studio ke
+Dialogue: 0,0:06:43.49,0:06:44.51,Default,,0,0,0,,hisaab mein judta hai.
+Dialogue: 0,0:06:44.96,0:06:46.59,Default,,0,0,0,,Toh kamai ke kai darwaze hain.
+Dialogue: 0,0:06:46.59,0:06:48.39,Default,,0,0,0,,Par sabse pehle khulta hai theatre.
+Dialogue: 0,0:06:48.39,0:06:49.48,Default,,0,0,0,,Aur wahan ka hisaab,
+Dialogue: 0,0:06:49.48,0:06:51.29,Default,,0,0,0,,har hafte producer ke liye thoda
+Dialogue: 0,0:06:51.29,0:06:52.55,Default,,0,0,0,,chhota hota jaata hai.
+Dialogue: 0,0:06:53.00,0:06:53.71,Default,,0,0,0,,Ab woh vaada,
+Dialogue: 0,0:06:53.71,0:06:54.78,Default,,0,0,0,,jo shuru mein kiya tha.
+Dialogue: 0,0:06:54.78,0:06:56.74,Default,,0,0,0,,Har box office headline ka chhupa
+Dialogue: 0,0:06:56.74,0:06:56.92,Default,,0,0,0,,sach.
+Dialogue: 0,0:06:56.92,0:06:57.81,Default,,0,0,0,,Jab aap padhte ho,
+Dialogue: 0,0:06:57.81,0:06:59.06,Default,,0,0,0,,film ne record kamai ki,
+Dialogue: 0,0:06:59.06,0:06:59.95,Default,,0,0,0,,toh zara ruko.
+Dialogue: 0,0:07:00.40,0:07:01.83,Default,,0,0,0,,Woh number theatre mein bike sab
+Dialogue: 0,0:07:01.83,0:07:02.79,Default,,0,0,0,,ticket ka total hai.
+Dialogue: 0,0:07:02.79,0:07:04.38,Default,,0,0,0,,Usme theatre ka hissa bhi shaamil
+Dialogue: 0,0:07:04.38,0:07:04.54,Default,,0,0,0,,hai.
+Dialogue: 0,0:07:04.54,0:07:06.14,Default,,0,0,0,,Producer tak uska sirf ek hissa
+Dialogue: 0,0:07:06.14,0:07:06.77,Default,,0,0,0,,pahunchta hai.
+Dialogue: 0,0:07:07.22,0:07:08.71,Default,,0,0,0,,Aur us hisse se abhi budget
+Dialogue: 0,0:07:08.71,0:07:09.38,Default,,0,0,0,,nikalna hai,
+Dialogue: 0,0:07:09.38,0:07:10.37,Default,,0,0,0,,prachaar nikalna hai.
+Dialogue: 0,0:07:10.37,0:07:11.69,Default,,0,0,0,,Matlab headline ka number,
+Dialogue: 0,0:07:11.69,0:07:13.68,Default,,0,0,0,,film banane walon ka munafa nahi
+Dialogue: 0,0:07:13.68,0:07:13.85,Default,,0,0,0,,hai.
+Dialogue: 0,0:07:13.85,0:07:14.84,Default,,0,0,0,,Yeh pehli seedhi hai,
+Dialogue: 0,0:07:14.84,0:07:15.50,Default,,0,0,0,,aakhri nahi.
+Dialogue: 0,0:07:15.95,0:07:17.65,Default,,0,0,0,,Yahi galti hum sab karte hain.
+Dialogue: 0,0:07:17.65,0:07:19.72,Default,,0,0,0,,Collection ko kamai samajh lete hain.
+Dialogue: 0,0:07:19.72,0:07:20.66,Default,,0,0,0,,Aur phir bolte hain,
+Dialogue: 0,0:07:20.66,0:07:21.42,Default,,0,0,0,,itna kamaya,
+Dialogue: 0,0:07:21.42,0:07:21.98,Default,,0,0,0,,toh film hit.
+Dialogue: 0,0:07:21.98,0:07:23.87,Default,,0,0,0,,Asli hisaab is se kahin lamba
+Dialogue: 0,0:07:23.87,0:07:24.05,Default,,0,0,0,,hai.
+Dialogue: 0,0:07:24.50,0:07:25.83,Default,,0,0,0,,Toh agli baar koi kahe,
+Dialogue: 0,0:07:25.83,0:07:26.96,Default,,0,0,0,,film ne record tod diya,
+Dialogue: 0,0:07:26.96,0:07:28.10,Default,,0,0,0,,toh teen sawaal poochna.
+Dialogue: 0,0:07:28.10,0:07:29.04,Default,,0,0,0,,Budget kitna tha?
+Dialogue: 0,0:07:29.04,0:07:30.55,Default,,0,0,0,,Prachaar alag kitna laga?
+Dialogue: 0,0:07:30.55,0:07:32.44,Default,,0,0,0,,Aur collection budget ka 2.5 guna
+Dialogue: 0,0:07:32.44,0:07:32.63,Default,,0,0,0,,hua?
+Dialogue: 0,0:07:33.08,0:07:34.67,Default,,0,0,0,,Yeh sawaal sirf Hollywood ke nahi.
+Dialogue: 0,0:07:34.67,0:07:36.09,Default,,0,0,0,,Bollywood aur South ki filmon par
+Dialogue: 0,0:07:36.09,0:07:36.73,Default,,0,0,0,,bhi lagte hain.
+Dialogue: 0,0:07:36.73,0:07:38.31,Default,,0,0,0,,India mein bhi theatre aur producer,
+Dialogue: 0,0:07:38.31,0:07:39.58,Default,,0,0,0,,ticket ka paisa baantte hain.
+Dialogue: 0,0:07:40.03,0:07:41.16,Default,,0,0,0,,Aur ek baat yaad rakhna.
+Dialogue: 0,0:07:41.16,0:07:41.73,Default,,0,0,0,,Bade stars,
+Dialogue: 0,0:07:41.73,0:07:42.49,Default,,0,0,0,,bade effects,
+Dialogue: 0,0:07:42.49,0:07:43.24,Default,,0,0,0,,bada trailer,
+Dialogue: 0,0:07:43.24,0:07:44.00,Default,,0,0,0,,sab ek daav hai.
+Dialogue: 0,0:07:44.00,0:07:45.89,Default,,0,0,0,,Studio pehle paisa lagata hai.
+Dialogue: 0,0:07:45.89,0:07:47.97,Default,,0,0,0,,Nateeja aap jaise darshak tay karte
+Dialogue: 0,0:07:47.97,0:07:48.16,Default,,0,0,0,,ho.
+Dialogue: 0,0:07:48.61,0:07:50.33,Default,,0,0,0,,Yeh investment advice nahi hai.
+Dialogue: 0,0:07:50.33,0:07:51.19,Default,,0,0,0,,Bas ek koshish hai,
+Dialogue: 0,0:07:51.19,0:07:52.75,Default,,0,0,0,,yeh dikhane ki ki parde ke
+Dialogue: 0,0:07:52.75,0:07:54.30,Default,,0,0,0,,peeche paisa kaise ghoomta hai.
+Dialogue: 0,0:07:54.30,0:07:55.50,Default,,0,0,0,,Aur kaun kab kamaata hai.
+Dialogue: 0,0:07:55.95,0:07:56.46,Default,,0,0,0,,Avengers:
+Dialogue: 0,0:07:56.46,0:07:58.66,Default,,0,0,0,,Doomsday 18 December 2026 ko aa
+Dialogue: 0,0:07:58.66,0:07:59.17,Default,,0,0,0,,rahi hai.
+Dialogue: 0,0:07:59.17,0:08:00.19,Default,,0,0,0,,Tab pata chalega,
+Dialogue: 0,0:08:00.19,0:08:01.71,Default,,0,0,0,,trailer ke record views ticket ki
+Dialogue: 0,0:08:01.71,0:08:03.24,Default,,0,0,0,,khidki tak pahunche ya nahi.
+Dialogue: 0,0:08:03.69,0:08:04.47,Default,,0,0,0,,Agli video mein,
+Dialogue: 0,0:08:04.47,0:08:05.40,Default,,0,0,0,,ek aur roz ki cheez ke
+Dialogue: 0,0:08:05.40,0:08:06.65,Default,,0,0,0,,peeche ka paisa kholenge.
+Dialogue: 0,0:08:06.65,0:08:07.90,Default,,0,0,0,,Yeh video us dost ko bhejo,
+Dialogue: 0,0:08:07.90,0:08:09.30,Default,,0,0,0,,jo collection sunte hi film hit
+Dialogue: 0,0:08:09.30,0:08:09.93,Default,,0,0,0,,bol deta hai.
+Dialogue: 0,0:08:10.38,0:08:11.85,Default,,0,0,0,,Ab aapse ek aasaan sawaal.
+Dialogue: 0,0:08:11.85,0:08:12.40,Default,,0,0,0,,Avengers:
+Dialogue: 0,0:08:12.40,0:08:14.06,Default,,0,0,0,,Doomsday aap theatre mein dekhoge,
+Dialogue: 0,0:08:14.06,0:08:15.72,Default,,0,0,0,,ya OTT par aane ka intezaar
+Dialogue: 0,0:08:15.72,0:08:16.27,Default,,0,0,0,,karoge?
+Dialogue: 0,0:08:16.27,0:08:17.75,Default,,0,0,0,,Comment mein bas theatre ya OTT
+Dialogue: 0,0:08:17.75,0:08:18.12,Default,,0,0,0,,likho.
