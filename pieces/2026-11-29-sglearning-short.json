@@ -71,6 +71,17 @@
    "licence": "CC BY 4.0",
    "title": "Easy Lemon"
   },
+  "scene_clips": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
   "sound": "track",
   "watch": {
    "best_change": "Make the first frame show the fall itself, a big '13% ↓' over gold with the complete question on screen, so a scroller instantly sees the drama the title promises.",
@@ -92,7 +103,8 @@
   "voice budget of 160 requests reached for 2026-11-28",
   "review: redrawing 1 picture(s) before upload",
   "waiting for the founder's intro clip until 29 Nov 11:30 UTC",
-  "the founder's three tall clips reached the repository after it was assembled; put together again with them (28 Nov 2026)"
+  "the founder's three tall clips reached the repository after it was assembled; put together again with them (28 Nov 2026)",
+  "waiting for the founder's intro clip until 29 Nov 11:30 UTC"
  ],
  "script": {
   "captions": {
@@ -254,7 +266,7 @@
   },
   "title": "Sona chandi *achanak* kyun gire? 📉"
  },
- "status": "voiced",
+ "status": "intro-wait",
  "timings": [
   0.0,
   3.204,
@@ -332,6 +344,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-28T16:14:48+00:00",
+ "updated": "2026-11-28T17:41:03+00:00",
  "writer": "claude"
 }
