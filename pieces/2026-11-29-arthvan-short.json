@@ -120,7 +120,7 @@
    "research": 1
   },
   "cost": {
-   "inr": 48.0,
+   "inr": 66.0,
    "usd": 0.375556,
    "voice": 13
   },
@@ -148,7 +148,8 @@
  "kind": "short",
  "publish_day": "2026-11-29",
  "reasons": [
-  "review: redrawing 4 picture(s) before upload"
+  "review: redrawing 4 picture(s) before upload",
+  "crashed: CalledProcessError: Command '['ffmpeg', '-v', 'error', '-y', '-stream_loop', '-1', '-i', '/home/runner/work/sg-content/sg-content/out/2026-11-29-arthvan-short/move11.mp4', '-loop', '1', '-i', '/home/runner/work/sg-conten"
  ],
  "script": {
   "captions": {
@@ -362,7 +363,7 @@
   },
   "title": "*Annabelle* gudiya khud kamra badalti thi? 😱"
  },
- "status": "voiced",
+ "status": "failed-crash",
  "timings": [
   0.0,
   5.272,
@@ -411,6 +412,6 @@
   "voice": "voice_7o0kddoq6q2z",
   "weekly": true
  },
- "updated": "2026-11-28T10:56:21+00:00",
+ "updated": "2026-11-28T11:19:30+00:00",
  "writer": "claude"
 }
