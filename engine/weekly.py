@@ -80,12 +80,14 @@ def _ask_claude(prompt: str) -> str:
 
 
 def open_slots(root: Path, today: date) -> list:
-    """[(piece_id, channel, kind, day)] not made and not started: the Shorts of the next 14 days and the longs of the next 21."""
+    """[(piece_id, channel, kind, day)] not made and not started, today included: the Shorts of 14 days and the longs of 21."""
     started = {p.id for p in pieces.list_all(root) if p.status in buffer.DONE or p.script or p.status in ("intro-wait", "writing", "researched")}
     out = []
     for ch in CHANNELS:
         for kind, span in (("short", SHORT_DAYS), ("long", LONG_DAYS)):
-            for day in slots.publish_dates(ch, kind, today + timedelta(days=1), span):
+            # 28 Nov 2026: from TODAY, not tomorrow. A long is now made the morning it goes out; planned from tomorrow on, today's
+            # long had no topic from the morning's search and would have fallen to the old bank.
+            for day in slots.publish_dates(ch, kind, today, span):
                 pid = slots.piece_id(day, ch, kind)
                 if pid not in started:
                     out.append((pid, ch, kind, day))

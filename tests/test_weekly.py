@@ -158,3 +158,9 @@ def test_the_daily_plan_message_names_only_the_videos_being_made_now():
     text = weekly.message(plan)
     assert "Sat 28 long: Sona kyun gira" in text and "Sun 29 Short: Dimaag" in text and "Baad ka topic" not in text and "dropped" not in text
     assert "Nothing new to make today" in weekly.message({"week_of": "2026-11-28", "entries": {"2026-12-05-arthvan-short": {"title": "x"}}})
+
+
+def test_todays_own_slots_are_planned_too(tmp_path):
+    """28 Nov 2026: a long is made the morning it goes out, so the morning's search must give today's long a topic."""
+    slots_today = [s for s in weekly.open_slots(tmp_path, date(2026, 11, 28)) if s[3] == date(2026, 11, 28)]
+    assert ("2026-11-28-sglearning-long", "sglearning", "long", date(2026, 11, 28)) in slots_today
