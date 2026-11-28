@@ -22,20 +22,22 @@
   },
   "2026-11-30-sglearning-long": {
    "id": "wk-2026-11-30-sglearning-long",
-   "title": "Antibiotic kaam karna band kyun kar dete hain?",
-   "summary": "How bacteria become resistant, why overuse of antibiotics in people and farms matters, and what doctors do about it. Check: WHO antimicrobial resistance fact sheets and the Lancet 2024 estimate of deaths linked to resistance.",
+   "title": "Avengers jaisi film kitna kamati hai? Blockbuster ka poora hisaab",
+   "summary": "How a big film's money works, with Avengers: Doomsday as the example (founder-chosen trending subject): the budget and what it pays for, the marketing spend, why theatres keep a share of every ticket, OTT and satellite rights, and the break-even point that decides hit or flop. Check: the trailer's reported views and release date, the film's reported budget, and ticket-revenue sharing between producers and theatres in India. Explanation only; no advice to invest.",
    "hooks": [
-    "Jo dawa kal bachati thi, wo aaj bekaar kyun ho rahi hai?",
-    "Aadhi dawa khatam karke chhod dene se kya hota hai?"
+    "Hit ya flop: kaun tay karta hai, aur kab?",
+    "Ticket ke 100 rupaye mein se producer ko kitne milte hain?",
+    "Itna bada budget wapas kaise aata hai?"
    ],
    "weekly": true,
-   "topic_score": 5,
+   "topic_score": 1,
    "topic_score_why": [
-    "+3 a scare or a crash",
     "+1 a choice the viewer faces",
+    "-2 company results or deals (in the summary)",
+    "+1 a concrete number",
     "+1 asks a question"
    ],
-   "follows": "Health is a worldwide topic and gives the week a non-money long slot. Blackhead-cream and doctor-advice Shorts show health content pulls views.",
+   "follows": "Avengers: Doomsday final trailer is #1 on the India chart with 68.8M views, the biggest signal of the week.",
    "trend": true
   },
   "2026-11-30-sglearning-short": {
@@ -980,6 +982,25 @@
     "+1 asks a question"
    ],
    "follows": "Gold crash videos took 5.6M, 5.1M, 2M and 1.6M views in the Hindi list; the founder asked for the Short of today's long.",
+   "trend": true
+  },
+  "2026-12-02-sglearning-long": {
+   "id": "wk-2026-12-02-sglearning-long",
+   "title": "Esports ka paisa kahan se aata hai? Prize pool, sponsor aur khiladi ki kamai",
+   "summary": "Where the money in esports comes from, with the PMGC and Free Fire world finals as the examples: how a prize pool is built (publisher funding, sponsors, ticket and viewer revenue), how a prize is split between team, players and organisers, what a pro player earns beyond the prize, and what happens to the teams that do not win. Check: the reported prize pools of PMGC 2026 and FFWS Global Finals, and how Indian tournaments pay tax on winnings. Explanation only; no advice to invest or play for money.",
+   "hooks": [
+    "Prize pool kaun deta hai, aur kyun?",
+    "Jeetne wale ko kitna milta hai, haarne wale ko kitna?",
+    "Khiladi ki asli kamai kahan se aati hai?"
+   ],
+   "weekly": true,
+   "topic_score": 0,
+   "topic_score_why": [
+    "+1 touches the viewer's own money (in the summary)",
+    "-2 company results or deals (in the summary)",
+    "+1 asks a question"
+   ],
+   "follows": "PMGC 2026 (5.1M views) and FFWS Global Finals (2.9M) are both on the India chart this week.",
    "trend": true
   }
  },
