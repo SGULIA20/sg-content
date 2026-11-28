@@ -13,26 +13,30 @@ DONE = {"uploaded", "posted"}
 # founder, 28 Nov 2026 (the morning the same-day long was still unwritten at 09:40 WAT): "keep at least 2 day stock for everything
 # short/long so in case of any problem uploading will not stop for both channels". Days counted from today: 3 = today and the next
 # two days, for Shorts and longs alike. Replaces "max 1 days advance and long videos no advance" of 27 Nov.
-HORIZON = {"sglearning": {"short": 3, "long": 3}, "arthvan": {"short": 3, "long": 3}}
+HORIZON = {"sglearning": {"short": 3, "long": 5}, "arthvan": {"short": 3, "long": 5}}   # 28 Nov 2026: with a long every other day, 5 days hold today's long and the next two
 
 
 def long_for_short(channel: str, day: date) -> str:
-    """The long whose scenes a mythology Short is cut from: the most recent long publish day at or before the Short's day."""
-    back = min(((day.weekday() - ld) % 7 or 7) for ld in CHANNELS[channel].long_days)   # most recent long strictly before the Short's day
-    return slots.piece_id(day - timedelta(days=back), channel, "long")
+    """The long whose scenes a mythology Short is cut from: the most recent long publish day strictly before the Short's day."""
+    for back in range(1, 15):
+        if slots.is_long_day(channel, day - timedelta(days=back)):
+            return slots.piece_id(day - timedelta(days=back), channel, "long")
+    raise ValueError(f"no long in the 14 days before {day}")
 
 
 def long_before(channel: str, day: date):
     """The long that went out the day before this Short, or None (founder, 28 Nov 2026: one Short is made from each long, the day
-    after it: Learning with SG on Thursday and Sunday, SG-MYTH-WORLD on Friday and Monday)."""
+    after it: Learning with SG on Tuesday, Thursday and Saturday, SG-MYTH-WORLD on Wednesday, Friday and Sunday)."""
     prev = day - timedelta(days=1)
-    return slots.piece_id(prev, channel, "long") if prev.weekday() in CHANNELS[channel].long_days else None
+    return slots.piece_id(prev, channel, "long") if slots.is_long_day(channel, prev) else None
 
 
 def next_long_for_short(channel: str, day: date) -> str:
     """The long published after the Short's day (used as a teaser source when the previous long does not exist yet, e.g. launch week)."""
-    ahead = min(((ld - day.weekday()) % 7 or 7) for ld in CHANNELS[channel].long_days)
-    return slots.piece_id(day + timedelta(days=ahead), channel, "long")
+    for ahead in range(1, 15):
+        if slots.is_long_day(channel, day + timedelta(days=ahead)):
+            return slots.piece_id(day + timedelta(days=ahead), channel, "long")
+    raise ValueError(f"no long in the 14 days after {day}")
 
 
 def needed(root: Path = ROOT, today_ist: date | None = None, horizon_short: int = 7, horizon_long: int = 14) -> list:   # 7 Shorts and ~4 longs per channel ahead (founder, 22 Oct 2026)

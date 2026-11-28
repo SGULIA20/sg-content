@@ -30,12 +30,12 @@ YOUTUBE_URLS = {"sglearning": "https://www.youtube.com/@sanjeev_gulia?sub_confir
 CHANNELS = {
     "sglearning": Channel(
         key="sglearning", youtube_env_token="YT_SGLEARNING_REFRESH_TOKEN", display_name="Learning with SG",
-        niche="Paise ki khabar, seedhi baat", short_days=frozenset({MON, TUE, WED, THU, FRI, SAT, SUN}), long_days=frozenset({WED, SAT}),   # founder's table, 21 Oct 2026
+        niche="Paise ki khabar, seedhi baat", short_days=frozenset({MON, TUE, WED, THU, FRI, SAT, SUN}), long_days=frozenset({MON, WED, FRI}),   # founder, 28 Nov 2026: Mon, Wed, Fri from 29 Nov (engine/slots.py keeps the old Wed/Sat for earlier dates); table of 21 Oct 2026 before
         short_publish_ist="20:00", long_publish_ist="19:00", ig_slot_ist="21:40", hashtags_key="sglearning",   # 21:40 India from 16 Nov 2026 (founder: "same time as SG-MYTH, 5-10 minutes apart"); was 18:30 from 30 Oct, 14:00 before
         youtube_category="22"),
     "arthvan": Channel(
         key="arthvan", youtube_env_token="YT_ARTHVAN_REFRESH_TOKEN", display_name="SG-MYTH-WORLD",
-        niche="Sabut ke saath", short_days=frozenset({MON, TUE, WED, THU, FRI, SAT, SUN}), long_days=frozenset({THU, SUN}),   # founder's table, 21 Oct 2026: daily Shorts
+        niche="Sabut ke saath", short_days=frozenset({MON, TUE, WED, THU, FRI, SAT, SUN}), long_days=frozenset({TUE, THU, SAT}),   # founder, 28 Nov 2026: Tue, Thu, Sat from 29 Nov (the old Thu/Sun for earlier dates); table of 21 Oct 2026 before: daily Shorts
         short_publish_ist="20:00", long_publish_ist="19:00", ig_slot_ist="21:30", hashtags_key="arthvan",
         youtube_category="27"),
 }

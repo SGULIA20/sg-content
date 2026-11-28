@@ -5,15 +5,15 @@ def test_channels_have_two_keys():
     assert set(config.CHANNELS) == {"sglearning", "arthvan"}
 
 
-def test_arthvan_shorts_every_day_and_longs_thu_sun():
+def test_arthvan_shorts_every_day_and_longs_tue_thu_sat():
     assert config.CHANNELS["arthvan"].short_days == {0, 1, 2, 3, 4, 5, 6}
-    assert config.CHANNELS["arthvan"].long_days == {3, 6}
+    assert config.CHANNELS["arthvan"].long_days == {1, 3, 5}                    # from 29 Nov 2026 (founder: every other day)
 
 
-def test_sglearning_shorts_every_day_and_longs_wed_sat():
+def test_sglearning_shorts_every_day_and_longs_mon_wed_fri():
     ch = config.CHANNELS["sglearning"]
     assert ch.short_days == {0, 1, 2, 3, 4, 5, 6}
-    assert ch.long_days == {2, 5}
+    assert ch.long_days == {0, 2, 4}                                           # from 29 Nov 2026 (founder: every other day)
 
 
 def test_budgets_match_spec():
