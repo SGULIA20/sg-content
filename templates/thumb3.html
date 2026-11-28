@@ -1,0 +1,60 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+/* 28 Nov 2026 (founder: "Can you make thumbnail like I made"): the information-rich layout of his own thumbnails (SIP, 50 lakh home loan,
+   emergency fund): a three-band Hindi headline with the number highlighted, a small comparison inset, a document or screen drawn in code
+   with the video's real figures, and three tick-box chips. Every word and number is drawn here from the script's fields, so none can be
+   misspelt by a picture model; only the dark background picture is painted. Landscape 1280x720; bottom-right is kept clear for YouTube's
+   time stamp. The data comes as JSON in data-json (see engine/thumbs.py: pack). */
+@font-face{font-family:Dev;src:url({{FONTS}}/NotoSansDevanagari.ttf)}
+@font-face{font-family:Inter;src:url({{FONTS}}/Inter.ttf)}
+html,body{margin:0;padding:0;background:#0B0F1A}
+#root{position:relative;width:{{W}}px;height:{{H}}px;overflow:hidden;background:#1a1410;font-family:Dev,Inter,sans-serif;color:#fff}
+.panel{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(1.1) brightness(.55) blur(1px)}
+.glow{position:absolute;inset:0;background:radial-gradient(60% 70% at 25% 85%,rgba(255,200,120,.35),rgba(0,0,0,0) 70%),linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.55))}
+.bands{position:absolute;left:2.5%;top:3%;width:63%;display:flex;flex-direction:column;gap:10px}
+.band{font-weight:900;line-height:1.08;padding:.04em .32em .1em .24em;white-space:nowrap;align-self:flex-start;box-shadow:6px 6px 0 rgba(0,0,0,.55)}
+.b1{background:#C4101C;color:#fff;transform:rotate(-1.2deg);font-size:96px;clip-path:polygon(0 8%,3% 0,97% 4%,100% 0,99% 96%,96% 100%,2% 94%,0 100%)}
+.b2{background:#FFE14D;color:#111;transform:rotate(.6deg);font-size:92px}
+.b3{background:#0E1B3D;color:#fff;font-size:72px;border-radius:14px}
+.hl{color:#FFE14D}.b2 .hl{color:#C4101C}.b1 .hl{color:#FFE14D}
+.ul{display:inline-block;border-bottom:7px solid #E8202B;line-height:1.0;padding-bottom:2px}
+.inset{position:absolute;right:2.2%;top:3%;width:25%;height:30%;background:rgba(255,255,255,.96);border:5px solid #fff;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.5);display:flex;gap:6%;padding:8px 10px;box-sizing:border-box;align-items:flex-end;justify-content:space-around}
+.bar{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
+.bar .lab{background:#B3111B;color:#fff;font-weight:800;font-size:20px;line-height:1.15;text-align:center;padding:3px 8px;border-radius:8px;margin-bottom:6px;white-space:pre-line}
+.bar .col{width:62%;border-radius:8px 8px 0 0;box-shadow:inset -6px 0 0 rgba(0,0,0,.18)}
+.bar.a .col{background:linear-gradient(#41c36a,#1f8a45)}.bar.b .col{background:linear-gradient(#ff5560,#b3111b)}
+.doc{position:absolute;left:3%;bottom:4%;width:49%;background:#fbf8f1;color:#222;border-radius:10px;padding:16px 22px 14px;box-shadow:0 14px 30px rgba(0,0,0,.55);transform:rotate(-2deg);font-family:Inter,Dev,sans-serif}
+.doc .t{font-weight:800;font-size:26px;letter-spacing:.5px;margin-bottom:8px;border-bottom:2px solid #d9d2c3;padding-bottom:6px}
+.doc .r{display:flex;justify-content:space-between;align-items:baseline;font-size:24px;line-height:1.5;font-weight:600}
+.doc .tot{margin-top:8px;font-family:Dev,Inter,sans-serif;background:#ffe3e6;border-radius:6px;padding:6px 10px;display:flex;justify-content:space-between;font-weight:800;font-size:26px;align-items:center}
+.doc .tot span:last-child{border:5px solid #D01020;border-radius:40px;padding:2px 16px;color:#111;background:#fff}
+.chips{position:absolute;right:2.2%;top:36%;width:25.5%;display:flex;flex-direction:column;gap:12px}
+.chip{background:#fbf3df;color:#161616;border-radius:14px;padding:10px 14px 10px 54px;position:relative;font-weight:800;font-size:25px;line-height:1.2;box-shadow:0 6px 16px rgba(0,0,0,.5)}
+.chip:before{content:"";position:absolute;left:12px;top:50%;width:30px;height:30px;margin-top:-15px;background:#2fb457;border-radius:6px}
+.chip:after{content:"";position:absolute;left:21px;top:50%;width:9px;height:17px;margin-top:-13px;border:solid #fff;border-width:0 5px 5px 0;transform:rotate(40deg)}
+.chip em{font-style:normal;color:#C4101C}.chip .hl{color:#C4101C}
+</style></head><body><div id="root" data-json="{{data_json}}">
+<img class="panel" src="{{panel_path}}">
+<div class="glow"></div>
+<div class="bands" id="bands"></div>
+<div class="inset" id="inset"></div>
+<div class="chips" id="chips"></div>
+<div class="doc" id="doc"></div>
+</div>
+<script>
+const d=JSON.parse(document.getElementById("root").dataset.json||"{}");
+const esc=s=>String(s==null?"":s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+// **word** marks the highlighted part of a line
+const mark=s=>esc(s).replace(/\*\*(.+?)\*\*/g,'<span class="hl">$1</span>');
+const $=id=>document.getElementById(id);
+$("bands").innerHTML=[["b1",d.l1],["b2",d.l2],["b3",d.l3]].filter(x=>x[1]).map(x=>`<div class="band ${x[0]}">${x[0]=="b3"?'<span class="ul">'+mark(x[1])+'</span>':mark(x[1])}</div>`).join("");
+const ins=d.inset||[];
+const mx=Math.max(1,...ins.map(i=>Number(i.value)||0));
+$("inset").innerHTML=ins.map((i,k)=>`<div class="bar ${k?'b':'a'}"><div class="lab">${esc(i.label)}</div><div class="col" style="height:${Math.max(18,Math.round(100*(Number(i.value)||0)/mx*0.62))}%"></div></div>`).join("");
+if(!ins.length)$("inset").style.display="none";
+$("chips").innerHTML=(d.chips||[]).slice(0,3).map(c=>`<div class="chip">${mark(c)}</div>`).join("");
+const doc=d.doc;
+if(doc){$("doc").innerHTML=`<div class="t">${esc(doc.title)}</div>`+(doc.rows||[]).slice(0,4).map(r=>`<div class="r"><span>${esc(r[0])}</span><span>${esc(r[1])}</span></div>`).join("")+(doc.total?`<div class="tot"><span>${esc(doc.total[0])}</span><span>${esc(doc.total[1])}</span></div>`:"");}else{$("doc").style.display="none";}
+// shrink a band until it fits the left 63% of the picture
+const maxW={{W}}*0.635;
+document.querySelectorAll(".band").forEach(b=>{let f=parseFloat(getComputedStyle(b).fontSize);while(b.scrollWidth>maxW&&f>30){f-=3;b.style.fontSize=f+"px";}});
+</script></body></html>
