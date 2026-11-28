@@ -14,7 +14,6 @@ def test_needed_orders_todays_shorts_then_one_long(tmp_path, monkeypatch):
     assert need[0] == (date(2026, 10, 21), "arthvan", "short") and need[1] == (date(2026, 10, 21), "sglearning", "short")
     assert need[2] == (date(2026, 10, 21), "sglearning", "long")       # then today's long, then tomorrow's Shorts
     assert {k for _d, _c, k in need} == {"short", "long"}
-    assert not [x for x in buffer.needed(tmp_path, date(2026, 10, 19)) if x[2] == "long"]      # Monday: no long today, and none is made ahead
 
 
 def test_needed_skips_uploaded_and_posted(tmp_path):
@@ -31,14 +30,14 @@ def test_needed_retries_rejected_and_failed(tmp_path):
     assert (date(2026, 10, 19), "sglearning", "short") in need and (date(2026, 10, 20), "sglearning", "short") in need
 
 
-def test_a_short_is_made_the_day_before_and_a_long_the_same_day(tmp_path, monkeypatch):
-    """founder, 27 Nov 2026: 'Planner and videos should be only max 1 days advance and long videos no advance'."""
+def test_two_days_of_stock_for_shorts_and_longs_on_both_channels(tmp_path, monkeypatch):
+    """founder, 28 Nov 2026: 'keep at least 2 day stock for everything short/long so in case of any problem uploading will not stop'."""
     from engine import config
     monkeypatch.setattr(config, "ENABLED_KINDS", {"short", "long"})
     need = buffer.needed(tmp_path, date(2026, 10, 21), horizon_short=7, horizon_long=10)
     for ch in ("sglearning", "arthvan"):
-        assert sorted(d for d, c, k in need if c == ch and k == "short") == [date(2026, 10, 21), date(2026, 10, 22)]
-    assert [(d, c) for d, c, k in need if k == "long"] == [(date(2026, 10, 21), "sglearning")]     # Thursday's SG-MYTH long waits for Thursday
+        assert sorted(d for d, c, k in need if c == ch and k == "short") == [date(2026, 10, 21), date(2026, 10, 22), date(2026, 10, 23)]
+    assert sorted((d, c) for d, c, k in need if k == "long") == [(date(2026, 10, 21), "sglearning"), (date(2026, 10, 22), "arthvan")]   # Saturday's waits for Thursday
 
 
 def test_myth_short_needs_its_long(tmp_path):
