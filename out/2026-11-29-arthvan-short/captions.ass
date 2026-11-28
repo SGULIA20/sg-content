@@ -1,0 +1,77 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans Devanagari,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,60,60,422,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.44,Default,,0,0,0,,Bhimbetka ki painting 30,000 saal purani?
+Dialogue: 0,0:00:02.44,0:00:03.99,Default,,0,0,0,,Rang aaj bhi chamakta kyun?
+Dialogue: 0,0:00:03.99,0:00:04.88,Default,,0,0,0,,Laal shikaari,
+Dialogue: 0,0:00:04.88,0:00:05.98,Default,,0,0,0,,hare naachte log.
+Dialogue: 0,0:00:06.43,0:00:07.64,Default,,0,0,0,,Gaon ke log kehte hain,
+Dialogue: 0,0:00:07.64,0:00:09.46,Default,,0,0,0,,vanvaas mein Pandav yahan ruke.
+Dialogue: 0,0:00:09.46,0:00:11.68,Default,,0,0,0,,Bhim inhi chattanon par aaraam karte
+Dialogue: 0,0:00:11.68,0:00:11.89,Default,,0,0,0,,the.
+Dialogue: 0,0:00:11.89,0:00:12.90,Default,,0,0,0,,Isliye naam pada,
+Dialogue: 0,0:00:12.90,0:00:13.70,Default,,0,0,0,,Bhim ki baithak.
+Dialogue: 0,0:00:13.70,0:00:14.92,Default,,0,0,0,,Par rang kisne bhara?
+Dialogue: 0,0:00:15.37,0:00:15.59,Default,,0,0,0,,1957.
+Dialogue: 0,0:00:15.59,0:00:17.65,Default,,0,0,0,,Ek train jungle se guzarti hai.
+Dialogue: 0,0:00:17.65,0:00:20.39,Default,,0,0,0,,Khidki par archaeologist Vishnu Wakankar,
+Dialogue: 0,0:00:20.39,0:00:23.13,Default,,0,0,0,,yaani zameen se itihaas khodne wala.
+Dialogue: 0,0:00:23.13,0:00:25.42,Default,,0,0,0,,Unhe ajeeb chattanen dikhti hain.
+Dialogue: 0,0:00:25.87,0:00:27.93,Default,,0,0,0,,Wakankar wahan pahunchte hain.
+Dialogue: 0,0:00:27.93,0:00:30.21,Default,,0,0,0,,Jhuki chattan ke neeche ek deewar.
+Dialogue: 0,0:00:30.21,0:00:30.67,Default,,0,0,0,,Haathi,
+Dialogue: 0,0:00:30.67,0:00:31.58,Default,,0,0,0,,barasingha,
+Dialogue: 0,0:00:31.58,0:00:32.04,Default,,0,0,0,,bison,
+Dialogue: 0,0:00:32.04,0:00:32.50,Default,,0,0,0,,hiran.
+Dialogue: 0,0:00:32.50,0:00:34.33,Default,,0,0,0,,Log ise Zoo Rock kehte hain.
+Dialogue: 0,0:00:34.77,0:00:36.79,Default,,0,0,0,,Agli deewar par seeng wala bada
+Dialogue: 0,0:00:36.79,0:00:36.99,Default,,0,0,0,,sooar.
+Dialogue: 0,0:00:36.99,0:00:39.01,Default,,0,0,0,,Ek insaan uske aage bhaag raha
+Dialogue: 0,0:00:39.01,0:00:39.22,Default,,0,0,0,,hai.
+Dialogue: 0,0:00:39.22,0:00:40.43,Default,,0,0,0,,Yeh rang bane kaise?
+Dialogue: 0,0:00:40.88,0:00:42.73,Default,,0,0,0,,Khudai mein rang ke dhele mile.
+Dialogue: 0,0:00:42.73,0:00:44.18,Default,,0,0,0,,Laal ke liye haematite,
+Dialogue: 0,0:00:44.18,0:00:46.04,Default,,0,0,0,,yaani lohe wala laal pathar.
+Dialogue: 0,0:00:46.04,0:00:47.48,Default,,0,0,0,,Kaala manganese se.
+Dialogue: 0,0:00:47.48,0:00:48.93,Default,,0,0,0,,Aur purani parat mein,
+Dialogue: 0,0:00:48.93,0:00:49.55,Default,,0,0,0,,hara rang.
+Dialogue: 0,0:00:50.00,0:00:51.05,Default,,0,0,0,,Raaz pathar mein hai.
+Dialogue: 0,0:00:51.05,0:00:52.74,Default,,0,0,0,,Rang pathar ke andar sokh kar
+Dialogue: 0,0:00:52.74,0:00:53.16,Default,,0,0,0,,jud gaya.
+Dialogue: 0,0:00:53.16,0:00:55.27,Default,,0,0,0,,Upar ki latki chattan ne baarish
+Dialogue: 0,0:00:55.27,0:00:55.69,Default,,0,0,0,,rok li.
+Dialogue: 0,0:00:56.14,0:00:57.75,Default,,0,0,0,,Par umar par jhagda hai.
+Dialogue: 0,0:00:57.75,0:00:59.35,Default,,0,0,0,,Pehle khojiyon ne kaha,
+Dialogue: 0,0:00:59.35,0:01:00.27,Default,,0,0,0,,lagbhag 30,000 saal.
+Dialogue: 0,0:01:00.27,0:01:01.88,Default,,0,0,0,,Baad ke vidwan kehte hain,
+Dialogue: 0,0:01:01.88,0:01:04.18,Default,,0,0,0,,zyadatar tasveerein kaafi baad ki.
+Dialogue: 0,0:01:04.63,0:01:05.90,Default,,0,0,0,,Phir bada daava aaya,
+Dialogue: 0,0:01:05.90,0:01:08.02,Default,,0,0,0,,chhat par India ka sabse purana
+Dialogue: 0,0:01:08.02,0:01:08.86,Default,,0,0,0,,jaanwar-fossil.
+Dialogue: 0,0:01:08.86,0:01:10.77,Default,,0,0,0,,Fossil yaani pathar mein jeev ki
+Dialogue: 0,0:01:10.77,0:01:10.98,Default,,0,0,0,,chhaap.
+Dialogue: 0,0:01:10.98,0:01:11.41,Default,,0,0,0,,Jaanch hui.
+Dialogue: 0,0:01:11.41,0:01:13.74,Default,,0,0,0,,Woh madhumakkhi ke chhatte ka nishaan
+Dialogue: 0,0:01:13.74,0:01:14.16,Default,,0,0,0,,nikla.
+Dialogue: 0,0:01:14.61,0:01:15.28,Default,,0,0,0,,Aaj aap Raisen,
+Dialogue: 0,0:01:15.28,0:01:16.96,Default,,0,0,0,,Madhya Pradesh mein yeh deewarein khud
+Dialogue: 0,0:01:16.96,0:01:17.63,Default,,0,0,0,,dekh sakte hain.
+Dialogue: 0,0:01:18.08,0:01:18.92,Default,,0,0,0,,Bhim ki baithak,
+Dialogue: 0,0:01:18.92,0:01:19.97,Default,,0,0,0,,ek lok-katha hai.
+Dialogue: 0,0:01:19.97,0:01:21.23,Default,,0,0,0,,Tasveerein asli hain,
+Dialogue: 0,0:01:21.23,0:01:22.70,Default,,0,0,0,,umar par bahas jaari.
+Dialogue: 0,0:01:22.70,0:01:24.17,Default,,0,0,0,,Pehla rang kisne lagaya,
+Dialogue: 0,0:01:24.17,0:01:25.23,Default,,0,0,0,,koi nahi jaanta.
+Dialogue: 0,0:01:25.68,0:01:27.13,Default,,0,0,0,,Us dost ko bhejo jo kehta
+Dialogue: 0,0:01:27.13,0:01:28.94,Default,,0,0,0,,hai purane log kuch nahi jaante
+Dialogue: 0,0:01:28.94,0:01:29.12,Default,,0,0,0,,the.

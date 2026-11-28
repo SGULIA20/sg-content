@@ -1,53 +1,439 @@
 {
  "channel": "arthvan",
- "facts": [],
+ "facts": [
+  {
+   "label": "archaeology",
+   "number": 1957.0,
+   "quote": "The site complex was discovered by V S Wakankar in 1957.",
+   "source_date": "2002-01-29",
+   "source_name": "UNESCO",
+   "source_url": "https://whc.unesco.org/en/list/925/",
+   "text": "Archaeologist Vishnu Shridhar Wakankar discovered the Bhimbetka rock shelter complex in 1957 after spotting unusual rock formations from a passenger train.",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 2003.0,
+   "quote": "These shelters were granted UNESCO World Heritage status in 2003, under criteria (iii) and (v).",
+   "source_date": "2003-07-05",
+   "source_name": "UNESCO",
+   "source_url": "https://whc.unesco.org/en/list/925/",
+   "text": "UNESCO inscribed the Rock Shelters of Bhimbetka as a World Heritage Site in 2003 under cultural criteria (iii) and (v).",
+   "unit": "CE"
+  },
+  {
+   "label": "archaeology",
+   "number": 700.0,
+   "quote": "The site spread over 10 km in length and about 3 km in width has more than 700 rock shelters, of which over 400 have paintings.",
+   "source_date": "2023",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/rock-shelters-of-bhimbetka/",
+   "text": "The Bhimbetka archaeological zone spans 10 kilometres and contains more than 700 rock shelters, of which over 400 feature prehistoric paintings.",
+   "unit": "count"
+  },
+  {
+   "label": "legend",
+   "number": null,
+   "quote": "Bhimbetka, meaning 'Bhima's resting place' or 'Bhima's lounge', is a compound word made of Bhima (second brother among the five Pandavas of Mahabharata) and Baithaka (seat or lounge).",
+   "source_date": "2023",
+   "source_name": "en.wikipedia.org",
+   "source_url": "https://en.wikipedia.org/wiki/Bhimbetka_rock_shelters",
+   "text": "Local oral tradition claims that the name Bhimbetka is derived from Bhimbaithaka, meaning the sitting place or seat of Bhima from the Mahabharata.",
+   "unit": null
+  },
+  {
+   "label": "legend",
+   "number": 12.0,
+   "quote": "According to the native belief, Bhima during his exile used to rest here to interact with the locals.",
+   "source_date": "2023",
+   "source_name": "en.wikipedia.org",
+   "source_url": "https://en.wikipedia.org/wiki/Bhimbetka_rock_shelters",
+   "text": "A widely held regional belief narrates that the Pandava brothers inhabited these rock shelters during their twelve years of exile in the wilderness.",
+   "unit": "years"
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "The colors used by the cave dwellers were prepared by combining black manganese oxides, red hematite and charcoal.",
+   "source_date": "2023",
+   "source_name": "en.wikipedia.org",
+   "source_url": "https://en.wikipedia.org/wiki/Bhimbetka_rock_shelters",
+   "text": "The prehistoric cave painters prepared enduring pigments by crushing earth minerals, predominantly red haematite for reddish hues, manganese oxide for black, and kaolin clay for white.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "Wakanker excavated three shelters out of eleven excavated shelters during the years 1971–1975, and pigment nodules of red, yellow ochre and blue-black manganese were found... Also, he found green pigments in the Upper Paleolithic layer.",
+   "source_date": "2023",
+   "source_name": "en.wikipedia.org",
+   "source_url": "https://en.wikipedia.org/wiki/Bhimbetka_rock_shelters",
+   "text": "Excavations in the shelters yielded green pigment nodules from Upper Palaeolithic strata, matching the distinct green S-shaped dancing human figures found on the rock walls.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "The Rock Shelters display persistent traditions of rock painting, spanning periods from the Mesolithic to the Historic.",
+   "source_date": "2002-01-29",
+   "source_name": "UNESCO",
+   "source_url": "https://whc.unesco.org/en/list/925/",
+   "text": "The rock art has retained its vibrant coloration over thousands of years because the mineral pigments soaked into and chemically bonded with the porous quartzose sandstone inside rain-sheltered overhangs.",
+   "unit": null
+  },
+  {
+   "label": "disputed",
+   "number": 30000.0,
+   "quote": "How far back the paintings go is disputed: R.S. Sharma traces them from the Upper Palaeolithic and one account estimates the oldest at about 30,000 years, though most are agreed to be Mesolithic.",
+   "source_date": "2023",
+   "source_name": "en.wikipedia.org",
+   "source_url": "https://en.wikipedia.org/wiki/Bhimbetka_rock_shelters",
+   "text": "While discovery-era archaeologists dated the earliest parietal paintings to roughly 30,000 years ago in the Upper Palaeolithic, subsequent researchers like V. N. Misra and Robert Bednarik disputed this antiquity, arguing that most surviving surface art dates no earlier than the Mesolithic around 10,000 BCE.",
+   "unit": "years"
+  },
+  {
+   "label": "disputed",
+   "number": 550000000.0,
+   "quote": "Dickinsonia tenuis reported by Retallack et al. 2021 is not a fossil, instead an impression of an extant 'fallen beehive'.",
+   "source_date": "2023",
+   "source_name": "en.wikipedia.org",
+   "source_url": "https://en.wikipedia.org/wiki/Bhimbetka_rock_shelters",
+   "text": "A published claim that a 550-million-year-old Dickinsonia fossil discovered on the roof of Bhimbetka's Auditorium Cave represented the oldest animal in India was refuted in 2023 when geologists confirmed the mark was the decayed imprint of a modern giant beehive.",
+   "unit": "years"
+  },
+  {
+   "label": "archaeology",
+   "number": 100000.0,
+   "quote": "The earliest human activities are known from the numerous stone tools including handaxes, cleavers and also the pebble tools. The latter pertinently was found in primary contexts.",
+   "source_date": "2023",
+   "source_name": "ASI",
+   "source_url": "https://asi.nic.in/rock-shelters-of-bhimbetka/",
+   "text": "Excavation trenches in Auditorium Cave revealed petroglyphs and cupules sealed under Acheulian occupation deposits, establishing human symbolic modification of the rocks dating back over 100,000 years.",
+   "unit": "years"
+  },
+  {
+   "label": "archaeology",
+   "number": 252.0,
+   "quote": "One rock, popularly referred to as 'Zoo Rock', depicts elephants, barasingha (swamp deer), bison and deer.",
+   "source_date": "2023",
+   "source_name": "en.wikipedia.org",
+   "source_url": "https://en.wikipedia.org/wiki/Bhimbetka_rock_shelters",
+   "text": "Rock Shelter III C-21, known as Zoo Rock, features a dense panorama depicting 252 individual animals across 16 different wildlife species.",
+   "unit": "count"
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "Large works such as the silhouetted mythical boar in shelter C-19 must have needed a container.",
+   "source_date": "2023",
+   "source_name": "en.wikipedia.org",
+   "source_url": "https://en.wikipedia.org/wiki/Bhimbetka_rock_shelters",
+   "text": "Rock Shelter III C-19 showcases a large prehistoric mural of a giant mythical horned boar charging toward a fleeing human figure.",
+   "unit": null
+  },
+  {
+   "label": "archaeology",
+   "number": null,
+   "quote": "archaeological evidences show an undisturbed continuous sequence of cultures through its layers from the Palaeolithic to the Historical periods.",
+   "source_date": "2003-07-05",
+   "source_name": "UNESCO",
+   "source_url": "https://whc.unesco.org/en/list/925/",
+   "text": "Stratigraphic layers at Bhimbetka demonstrate continuous human occupation from the Lower Palaeolithic through the Middle Palaeolithic, Mesolithic, Chalcolithic, and Early Historic periods.",
+   "unit": null
+  }
+ ],
  "id": "2026-11-29-arthvan-short",
  "ids": {
   "budget": {
    "day": "2026-11-28",
-   "research": 1
-  }
+   "drafts": 1,
+   "research": 2
+  },
+  "cost": {
+   "inr": 42.0,
+   "usd": 0.27036,
+   "voice": 12
+  },
+  "drafts": 1,
+  "ig_story_id": "skipped: Reel over 60 s",
+  "music": {
+   "by": "Kevin MacLeod (incompetech.com)",
+   "licence": "CC BY 4.0",
+   "title": "Darkness is Coming"
+  },
+  "sound": "track",
+  "watch": {
+   "best_change": "Remove the stray translucent logo overlays (frames 7, 9, 12), because these glitches make the video look unfinished and push scrollers away.",
+   "issues": 4,
+   "opening": 8,
+   "verdict": "fix"
+  },
+  "watch_redo": [
+   3
+  ]
  },
  "kind": "short",
  "publish_day": "2026-11-29",
  "reasons": [
-  "try 1, stopped: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+  "try 1, stopped: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "review: redrawing 1 picture(s) before upload"
  ],
- "script": null,
- "status": "failed-research",
- "timings": [],
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Bhimbetka ki painting 30,000 saal purani? Rang aaj bhi chamakta kyun?\nGaon kehta hai, yahan Bhim baithte the.\nKhoj kehti hai, pathar pees kar rang bane, aur pathar ne hi unhe bachaya.\nPehla rang kisne lagaya, aapko kya lagta hai?\nUs dost ko bhejo jo kehta hai purane log kuch nahi jaante the.",
+    "hashtags": [
+     "#SabutKeSaath",
+     "#IndianHistory",
+     "#Archaeology",
+     "#AncientIndia",
+     "#Mahabharat",
+     "#Itihaas",
+     "#Rahasya",
+     "#SGMythWorld"
+    ]
+   },
+   "threads": {
+    "text": "Bhimbetka ki painting 30,000 saal purani? Rang aaj bhi chamakta kyun? Gaon kehta hai Bhim ki baithak, vidwan umar par bante hue. Pehla rang kisne lagaya hoga? #SabutKeSaath #IndianHistory"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Bhimbetka ki painting 30,000 saal purani? Rang aaj bhi chamakta kyun? Gaon kehta hai yeh Bhim ki baithak hai, khoj kehti hai yahan pathar yug ke kalakaar the. Umar par vidwan aaj bhi bante hue hain, aur ek 'fossil' madhumakkhi ka chhatta nikla. Us dost ko bhejo jo kehta hai purane log kuch nahi jaante the.",
+    "tags": [
+     "Bhimbetka",
+     "Bhimbetka rock shelters",
+     "cave painting",
+     "prehistoric art",
+     "Madhya Pradesh",
+     "Raisen",
+     "Bhim",
+     "Mahabharat",
+     "archaeology",
+     "Indian history",
+     "Wakankar",
+     "rock art"
+    ],
+    "title": "Bhimbetka painting 30,000 saal purani? Sach kya"
+   }
+  },
+  "cards": [
+   {
+    "big_number": "30,000 saal",
+    "line": "Pehle khojiyon ka andaza, baad ke vidwan sehmat nahi",
+    "source": "en.wikipedia.org"
+   },
+   {
+    "big_number": "1957",
+    "line": "Vishnu Wakankar ne train se chattanen dekhi, khoj hui",
+    "source": "UNESCO"
+   }
+  ],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo kehta hai purane log kuch nahi jaante the.",
+  "hook": "Bhimbetka ki painting 30,000 saal purani? Rang aaj bhi chamakta kyun?",
+  "scenes": [
+   {
+    "facts_used": [
+     8,
+     6
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view inside a massive sandstone rock overhang at dusk, a burning torch held by an unseen hand lighting up ancient red ochre hunters and green dancing human figures on the rough rock wall, storm clouds gathering over the forest outside, dramatic warm and blue light, no text",
+     "type": "art"
+    },
+    "vo": "Bhimbetka ki painting 30,000 saal purani? Rang aaj bhi chamakta kyun? Laal shikaari, hare naachte log."
+   },
+   {
+    "facts_used": [
+     3,
+     4
+    ],
+    "label": "legend",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide view of giant sandstone rock towers in a dense central Indian forest in ancient times, a broad-shouldered man in a dhoti and angavastram seen from behind sitting on a rock ledge, four other men with bows and spears resting nearby, thatched hut in the distance, golden evening light, no text",
+     "type": "art"
+    },
+    "vo": "Gaon ke log kehte hain, vanvaas mein Pandav yahan ruke. Bhim inhi chattanon par aaraam karte the. Isliye naam pada, Bhim ki baithak. Par rang kisne bhara?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic documentary-style view of a 1950s Indian passenger train with a steam engine passing through a Vindhya hill forest, a man seen from behind leaning at the carriage window, huge mushroom-shaped sandstone rocks rising above the trees, hazy morning light, no text",
+     "type": "art"
+    },
+    "vo": "1957. Ek train jungle se guzarti hai. Khidki par archaeologist Vishnu Wakankar, yaani zameen se itihaas khodne wala. Unhe ajeeb chattanen dikhti hain."
+   },
+   {
+    "facts_used": [
+     11
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a sandstone rock face crowded with prehistoric red and white paintings of elephants, swamp deer, bison and deer, an explorer in 1950s khaki clothes seen from behind holding a lantern, soft daylight from the shelter mouth, no text. Correction after review: Show an Indian man in 1950s clothing before a red-ochre Bhimbetka-style wall of elephants, deer and bison.",
+     "type": "art"
+    },
+    "vo": "Wakankar wahan pahunchte hain. Jhuki chattan ke neeche ek deewar. Haathi, barasingha, bison, hiran. Log ise Zoo Rock kehte hain."
+   },
+   {
+    "facts_used": [
+     12
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic low-angle view of a large prehistoric red rock painting of a giant horned boar charging toward a small fleeing human figure, painted on the ceiling of a sandstone overhang, sunlight raking across the rough stone, no text",
+     "type": "art"
+    },
+    "vo": "Agli deewar par seeng wala bada sooar. Ek insaan uske aage bhaag raha hai. Yeh rang bane kaise?"
+   },
+   {
+    "facts_used": [
+     5,
+     6
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of an excavation trench in a rock shelter floor, small lumps of red, black and green mineral pigment lying on the soil beside a trowel and brushes, hands of an archaeologist in the corner, natural light, no text",
+     "type": "art"
+    },
+    "vo": "Khudai mein rang ke dhele mile. Laal ke liye haematite, yaani lohe wala laal pathar. Kaala manganese se. Aur purani parat mein, hara rang."
+   },
+   {
+    "facts_used": [
+     7
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of heavy monsoon rain pouring off the edge of a huge overhanging sandstone rock, the painted wall beneath it completely dry with bright red figures, water curtain in front, grey stormy light, no text",
+     "type": "art"
+    },
+    "vo": "Raaz pathar mein hai. Rang pathar ke andar sokh kar jud gaya. Upar ki latki chattan ne baarish rok li."
+   },
+   {
+    "facts_used": [
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of two researchers seen from behind in a rock shelter, one pointing to a faded old painting, the other examining a brighter painting with a magnifying lens, long shadows, late afternoon light, no text",
+     "type": "art"
+    },
+    "vo": "Par umar par jhagda hai. Pehle khojiyon ne kaha, lagbhag 30,000 saal. Baad ke vidwan kehte hain, zyadatar tasveerein kaafi baad ki."
+   },
+   {
+    "facts_used": [
+     9
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic upward view of the roof of a tall sandstone cave with a faint oval leaf-like mark on the rock, a geologist on a ladder seen from behind shining a torch on it, a large wild beehive hanging nearby on the same rock, dim light, no text",
+     "type": "art"
+    },
+    "vo": "Phir bada daava aaya, chhat par India ka sabse purana jaanwar-fossil. Fossil yaani pathar mein jeev ki chhaap. Jaanch hui. Woh madhumakkhi ke chhatte ka nishaan nikla."
+   },
+   {
+    "facts_used": [
+     1
+    ],
+    "label": "archaeology",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic wide aerial view of the Bhimbetka sandstone rock towers rising from green forest in Madhya Pradesh, a few visitors seen from behind walking a stone path toward a painted shelter, bright morning sun, no text",
+     "type": "art"
+    },
+    "vo": "Aaj aap Raisen, Madhya Pradesh mein yeh deewarein khud dekh sakte hain."
+   },
+   {
+    "facts_used": [
+     3,
+     8
+    ],
+    "label": "disputed",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close view of a weathered sandstone wall where very faint ancient red marks sit beneath brighter later paintings, a single oil lamp glowing on a ledge below, quiet mysterious dusk light, no text",
+     "type": "art"
+    },
+    "vo": "Bhim ki baithak, ek lok-katha hai. Tasveerein asli hain, umar par bahas jaari. Pehla rang kisne lagaya, koi nahi jaanta."
+   },
+   {
+    "facts_used": [],
+    "label": null,
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of two young friends seen from behind standing before a painted rock shelter wall at sunset, one pointing at the red animal figures, warm golden light over the forest, no text",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo kehta hai purane log kuch nahi jaante the."
+   }
+  ],
+  "thumbnail": {
+   "name": "BHIMBETKA",
+   "name_hi": "भीमबेटका",
+   "scene": "A giant sandstone rock overhang in a dark forest at dusk, torchlight blazing across a wall packed with ancient red elephants, deer and a huge horned boar chasing a tiny human figure.",
+   "words": [
+    "700 GUFA",
+    "SECRET"
+   ],
+   "words_hi": [
+    "700 गुफा",
+    "सीक्रेट?"
+   ]
+  },
+  "title": "*Bhimbetka* ki painting, 30,000 saal purani? 🤯"
+ },
+ "status": "voiced",
+ "timings": [
+  0.0,
+  6.433,
+  15.366,
+  25.869,
+  34.775,
+  40.877,
+  49.996,
+  56.139,
+  64.629,
+  74.61,
+  78.079,
+  85.676
+ ],
  "topic": {
   "allowed_sources": [
    "asi.nic.in",
-   "en.wikipedia.org",
-   "nio.res.in",
-   "britannica.com",
-   "the scripture or text named in the story",
-   "nasa.gov",
-   "who.int",
-   "nih.gov",
-   "nationalgeographic.com",
-   "smithsonianmag.com",
-   "a university or museum page"
+   "UNESCO whc.unesco.org",
+   "en.wikipedia.org"
   ],
-  "follows": "Annabelle video has 13.6M views; haunted-object curiosity, non-India.",
   "hooks": [
-   "Annabelle gudiya sach mein bhootiya thi ya sirf kahani?",
-   "Asli Annabelle doll film wali jaisi dikhti hi nahi?"
+   "30,000 saal purani painting aaj bhi rangin?",
+   "Bhim yahan baithe the? Naam ka raaz",
+   "Duniya ki sabse purani jaanwar ki tasveer?"
   ],
-  "id": "wk-2026-11-29-arthvan-short",
-  "summary": "Popular story: a haunted doll killed people. Compare the Warrens' claims with the real doll, a Raggedy Ann at the Occult Museum, the film's different porcelain doll, and what the museum records show.",
+  "id": "bhimbetka",
+  "notes": "Archaeology lane; the Bhima name is legend.",
+  "place": "Raisen, Madhya Pradesh",
   "target_minutes": null,
-  "title": "Annabelle gudiya sach mein bhootiya thi?",
-  "topic_score": 7,
+  "title_hi": "Bhimbetka, 30,000 saal purani painting",
+  "topic_score": 8,
   "topic_score_why": [
    "+3 a widely held belief and its reason",
    "+3 a shock question or a mystery",
+   "+1 a concrete number",
    "+1 asks a question"
   ],
-  "viral": true,
-  "weekly": true
+  "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-11-28T08:36:28+00:00",
- "writer": ""
+ "updated": "2026-11-28T09:28:30+00:00",
+ "writer": "claude"
 }

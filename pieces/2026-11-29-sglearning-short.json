@@ -1,40 +1,255 @@
 {
  "channel": "sglearning",
- "facts": [],
+ "facts": [
+  {
+   "label": "reported",
+   "number": 48.0,
+   "quote": "With the Kospi falling 48% from its record high of 9,385, the sell-off has not only affected individual investor portfolios but has also coincided with a 202 trillion won ($151.4 billion) decline in the assets of South Korea's National Pension Service (NPS), according to Bloomberg.",
+   "source_date": "2026-11-27",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/south-koreas-kospi-crashes-48-from-record-high-how-the-ai-trade-unwind-is-hitting-investors-and-pension-funds-11795784179412.html",
+   "text": "South Korea's Kospi benchmark plunged 48 percent from its record high as global fund managers unwound artificial intelligence equity positions.",
+   "unit": "pct"
+  },
+  {
+   "label": "reported",
+   "number": 9385.0,
+   "quote": "With the Kospi falling 48% from its record high of 9,385, the sell-off has not only affected individual investor portfolios but has also coincided with a 202 trillion won ($151.4 billion) decline in the assets of South Korea's National Pension Service (NPS), according to Bloomberg.",
+   "source_date": "2026-11-27",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/south-koreas-kospi-crashes-48-from-record-high-how-the-ai-trade-unwind-is-hitting-investors-and-pension-funds-11795784179412.html",
+   "text": "The Kospi touched an all-time record peak of 9,385 points before experiencing a broad market sell-off.",
+   "unit": "points"
+  },
+  {
+   "label": "reported",
+   "number": 202.0,
+   "quote": "With the Kospi falling 48% from its record high of 9,385, the sell-off has not only affected individual investor portfolios but has also coincided with a 202 trillion won ($151.4 billion) decline in the assets of South Korea's National Pension Service (NPS), according to Bloomberg.",
+   "source_date": "2026-11-27",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/south-koreas-kospi-crashes-48-from-record-high-how-the-ai-trade-unwind-is-hitting-investors-and-pension-funds-11795784179412.html",
+   "text": "The equity downturn erased 202 trillion won from the portfolio assets of South Korea's National Pension Service by the end of September.",
+   "unit": "trillion won"
+  },
+  {
+   "label": "official",
+   "number": 1664.0,
+   "quote": "The NPS, one of the world's largest pension funds, had assets worth 1,664 trillion won at the end of September, down about 11% from 1,866 trillion won three months earlier, according to a statement seen by Bloomberg.",
+   "source_date": "2026-11-27",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/south-koreas-kospi-crashes-48-from-record-high-how-the-ai-trade-unwind-is-hitting-investors-and-pension-funds-11795784179412.html",
+   "text": "South Korea's National Pension Service held assets worth 1,664 trillion won at the end of September, contracting approximately 11 percent over the third quarter.",
+   "unit": "trillion won"
+  },
+  {
+   "label": "official",
+   "number": 13.28,
+   "quote": "Its investment return for the first nine months of the year stood at 13.28%, its strongest performance for the period in at least eight years, compared with 27.22% at the end of June.",
+   "source_date": "2026-11-27",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/south-koreas-kospi-crashes-48-from-record-high-how-the-ai-trade-unwind-is-hitting-investors-and-pension-funds-11795784179412.html",
+   "text": "The National Pension Service recorded a 13.28 percent investment return for the first nine months of the year, down from 27.22 percent logged at the end of June.",
+   "unit": "pct"
+  },
+  {
+   "label": "analyst-view",
+   "number": 25.0,
+   "quote": "Goldman Sachs in late October has cut its 12-month target for the Kospi to 9,000 points from 12,000, marking a 25% reduction.",
+   "source_date": "2026-11-27",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/market/stock-market-news/south-koreas-kospi-crashes-48-from-record-high-how-the-ai-trade-unwind-is-hitting-investors-and-pension-funds-11795784179412.html",
+   "text": "Goldman Sachs lowered its 12-month Kospi index target by 25 percent to 9,000 points amid doubts over the sustainability of AI capital expenditures.",
+   "unit": "pct"
+  }
+ ],
  "id": "2026-11-29-sglearning-short",
  "ids": {
   "budget": {
    "day": "2026-11-28",
-   "research": 1
-  }
+   "drafts": 1,
+   "research": 2
+  },
+  "cost": {
+   "inr": 0.0,
+   "usd": 0.131988,
+   "voice": 1
+  },
+  "drafts": 1
  },
  "kind": "short",
  "publish_day": "2026-11-29",
  "reasons": [
-  "try 1, stopped: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini"
+  "try 1, stopped: gemini-3.8-flash failed (402): Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini",
+  "voice budget of 80 requests reached for 2026-11-28"
  ],
- "script": null,
- "status": "failed-research",
+ "script": {
+  "captions": {
+   "instagram": {
+    "caption": "Korea ka bazaar 48 percent gira, aapka AI paisa safe hai? 📉\nSabne AI chip companies kharidi, phir sab ek saath beche.\nKorea ka sarkari pension fund teen mahine mein lagbhag 11 percent ghat gaya.\nAapki SIP mein kitne fund ek hi theme ke hain? Yeh investment advice nahi hai.\nUs dost ko bhejo jo har naye AI fund mein SIP shuru karta hai.",
+    "hashtags": [
+     "#StockMarketIndia",
+     "#SIP",
+     "#MutualFunds",
+     "#InvestingIndia",
+     "#PaiseKiKhabar",
+     "#SeedhiBaat",
+     "#LearningWithSG"
+    ]
+   },
+   "threads": {
+    "text": "Korea ka share bazaar record se 48 percent gira. Pension fund bhi teen mahine mein lagbhag 11 percent ghata. Wajah: saara paisa AI chip theme mein. Aapki SIP mein kitne fund ek hi theme ke hain? #PaiseKiKhabar #MoneyTipsHindi"
+   },
+   "youtube": {
+    "chapters": [],
+    "description": "Korea ka share bazaar record se 48 percent gira, aur sarkari pension fund bhi hil gaya. Sabne AI chip companies par ek saath daav lagaya tha, phir ek saath beche. Sabak: galti AI ki nahi, saara paisa ek hi theme mein rakhne ki thi. Us dost ko bhejo jo har naye AI fund mein SIP shuru karta hai.",
+    "tags": [
+     "Kospi",
+     "Korea stock market crash",
+     "AI stocks",
+     "SIP",
+     "mutual funds",
+     "pension fund",
+     "diversification",
+     "stock market hindi",
+     "AI bubble",
+     "investing India"
+    ],
+    "title": "Korea Stock Market Crash: Aapki AI SIP Safe?"
+   }
+  },
+  "cards": [],
+  "carousel": false,
+  "end_question": "Us dost ko bhejo jo har naye AI fund mein SIP shuru karta hai.",
+  "hook": "Korea ka bazaar 48 percent gira, aapka AI paisa safe hai?",
+  "scenes": [
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "hook",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of a tray of shiny computer chips and circuit boards on a factory workbench, harsh white industrial light, one chip knocked over at the edge, tense mood, no text or logos",
+     "type": "art"
+    },
+    "vo": "Korea ka bazaar 48 percent gira, aapka AI paisa safe hai?"
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "setup",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic scene of a retired Indian couple on a small apartment balcony in the evening, the husband holding a thick folder of papers, the wife beside him with tea, calm but thoughtful, warm natural light, no readable text",
+     "type": "art"
+    },
+    "vo": "Kospi yaani Korea ke bade shares ka scoreboard. Usmein aam logon ki pension bhi lagi thi."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "choice",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Bengaluru office cafeteria at lunchtime, a group of young Indian professionals leaning in excitedly over coffee cups, confident smiles, bright daylight through glass windows, no screens or text",
+     "type": "art"
+    },
+    "vo": "Sabne AI chip companies kharidi. Logic seedha: har company ko AI chahiye, chip wale jeetenge."
+   },
+   {
+    "facts_used": [
+     0
+    ],
+    "label": "turn",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic view of a crowd of office workers in formal clothes hurrying out of a tall glass building on an overcast afternoon, serious faces, motion and urgency, no signs or text",
+     "type": "art"
+    },
+    "vo": "Phir sawaal utha: AI par itna kharcha, kamai kab? Bade fund ek saath bechne lage."
+   },
+   {
+    "facts_used": [
+     0,
+     2
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic quiet government office counter in India, an empty chair behind the counter, a single elderly man waiting with a file under his arm, dim tube light, heavy silence",
+     "type": "art"
+    },
+    "vo": "Bazaar record se lagbhag aadha. Sabse bada jhatka sarkari pension fund ko."
+   },
+   {
+    "facts_used": [
+     3
+    ],
+    "label": "cost",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic close-up of an elderly Indian man's wrinkled hands holding an open envelope at a wooden table, reading glasses beside it, worried posture, soft morning window light, no readable text",
+     "type": "art"
+    },
+    "vo": "Budhape ki bachat, teen mahine mein lagbhag 11 percent kam."
+   },
+   {
+    "facts_used": [],
+    "label": "twist",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic Indian vegetable market floor, a woven basket tipped over with many cracked eggs spilled out, a shopkeeper looking down in dismay, while nearby several separate small baskets stand safe, natural daylight",
+     "type": "art"
+    },
+    "vo": "Twist: galti AI ki nahi, saara paisa ek hi theme mein tha. Apni SIP dekhiye, kitne fund ek hi theme ke hain? Yeh investment advice nahi hai."
+   },
+   {
+    "facts_used": [],
+    "label": "send",
+    "visual": {
+     "card": null,
+     "prompt": "Photorealistic roadside chai stall in the evening, two young Indian friends sharing tea, one gently pointing at the other and laughing, warm golden light, friendly mood",
+     "type": "art"
+    },
+    "vo": "Us dost ko bhejo jo har naye AI fund mein SIP shuru karta hai."
+   }
+  ],
+  "thumbnail": {
+   "name": "KOSPI",
+   "name_hi": "कोस्पी",
+   "scene": "LEFT: a glittering Seoul skyline at night lit up with celebration fireworks at the market's record high; RIGHT: the same skyline dark and rain-soaked under heavy storm clouds.",
+   "words": [
+    "48%",
+    "DOOBA"
+   ],
+   "words_hi": [
+    "48%",
+    "डूबा"
+   ]
+  },
+  "title": "Korea ka bazaar *aadha*, aapki SIP? 📉"
+ },
+ "status": "failed-voice",
  "timings": [],
  "topic": {
-  "follows": "Gold crash videos took 5.6M, 5.1M, 2M and 1.6M views in the Hindi list; the founder asked for the Short of today's long.",
-  "hooks": [
-   "Sona kitne din mein kitna gira, aur kisne becha?",
-   "Chandi sone se zyada kyun giri?"
-  ],
-  "id": "wk-2026-11-29-sglearning-short",
-  "summary": "The Short of the 28 Nov long on the same subject (founder, 28 Nov 2026: 'on same topic you make short of that sona chandi ke rates kyun gire'). One clear answer in under a minute: how far gold and silver fell and in how many days (check peak and current prices against LBMA, MCX, COMEX), the two or three causes that mattered most (the dollar and interest-rate expectations, profit-booking after the rally, exchange margin changes), why silver fell further, and the one mistake buyers make. Explanation only, no advice to buy or sell. Point to the long video for the full study.",
+  "link": "https://www.livemint.com/market/stock-market-news/south-koreas-kospi-crashes-48-from-record-high-how-the-ai-trade-unwind-is-hitting-investors-and-pension-funds-11795784179412.html",
+  "published": "2026-11-27T13:07:17+00:00",
+  "rank": 3,
+  "source": "Mint Markets",
+  "summary": "South Korea’s Kospi has fallen 48% from its record high as investors reassess AI-related investments. The downturn cut the National Pension Service’s assets by 202 trillion won by the end of September, despite strong returns earlier in the year.&amp;nbsp;",
   "target_minutes": null,
-  "title": "Sona aur chandi ke rate achanak kyun gire?",
-  "topic_score": 5,
+  "title": "South Korea's Kospi crashes 48% from record high: How the AI trade unwind is hitting investors and pension funds",
+  "topic_score": 8,
   "topic_score_why": [
    "+3 touches the viewer's own money",
-   "+1 a choice the viewer faces",
+   "+3 a scare or a crash",
+   "+1 a concrete number",
    "+1 asks a question"
   ],
-  "trend": true,
-  "weekly": true
+  "voice": "voice_7o0kddoq6q2z"
  },
- "updated": "2026-11-28T08:36:32+00:00",
- "writer": ""
+ "updated": "2026-11-28T09:32:57+00:00",
+ "writer": "claude"
 }
