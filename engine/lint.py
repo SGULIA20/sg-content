@@ -9,7 +9,7 @@ from .config import CONTENT_DIR, is_story, story_words
 from .pieces import Piece
 
 DISCLAIMER = "Yeh investment advice nahi hai"
-MYTH_LABELS = {"scripture", "archaeology", "disputed", "legend"}
+MYTH_LABELS = {"scripture", "archaeology", "disputed", "legend", "documented"}
 FINANCE_LABELS = {"reported", "official", "analyst-view"}
 SHORT_WORDS = (90, 135)          # measured 20 Oct 2026: the clone speaks Hinglish at ~2.5 words/s; 135 words + pads ≈ 58 s
 LONG_WORDS_PER_MIN = 140
@@ -214,22 +214,24 @@ def figure_hits(piece: Piece) -> list:
 
 FACT_FIGURES_MIN = 3        # distinct numbers or years a Learning with SG Short must speak
 FACT_SCENES_SHARE = 0.5     # share of the scenes that must state a fact from the sheet (facts_used)
+FACT_FIGURES_LONG, FACT_SCENES_SHARE_LONG = 12, 0.4    # a long (28 Nov 2026: today's gold long had 9 figures and 11 cited scenes of 66)
 
 
 def fact_hits(piece: Piece) -> list:
     """A Learning with SG Short must carry the story's hard facts (founder, 28 Nov 2026, on the 2,000 note Short: 'where were the facts, worst
     script we uploaded ever'): its fact sheet held the 3.56 lakh crore in circulation, 97.26% returned and the 2016/2017 dates, and the script
     spoke none of them. At least FACT_FIGURES_MIN different numbers or years in the spoken lines, and at least half the scenes citing a fact."""
-    if piece.channel != "sglearning" or piece.kind != "short" or not (piece.script or {}).get("scenes"):
+    if piece.channel != "sglearning" or piece.kind not in ("short", "long") or not (piece.script or {}).get("scenes"):
         return []
     scenes = piece.script["scenes"]
     figures = {v for sc in scenes for v in _numbers(sc.get("vo", ""))}
     cited = sum(1 for sc in scenes if sc.get("facts_used"))
     out = []
-    if len(figures) < FACT_FIGURES_MIN:
-        out.append(f"facts: only {len(figures)} different numbers or years spoken, need at least {FACT_FIGURES_MIN}; put the strongest figures and dates of the "
+    need, share = (FACT_FIGURES_MIN, FACT_SCENES_SHARE) if piece.kind == "short" else (FACT_FIGURES_LONG, FACT_SCENES_SHARE_LONG)
+    if len(figures) < need:
+        out.append(f"facts: only {len(figures)} different numbers or years spoken, need at least {need}; put the strongest figures and dates of the "
                    f"fact sheet in the hook and the middle lines, in digits")
-    if cited < len(scenes) * FACT_SCENES_SHARE:
+    if cited < len(scenes) * share:
         out.append(f"facts: only {cited} of {len(scenes)} scenes state a fact from the sheet (facts_used); a scene with no fact must be a question, "
                    f"the send line or the disclaimer, never an invented event")
     return out

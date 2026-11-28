@@ -275,3 +275,14 @@ def test_a_new_style_short_keeps_its_channels_full_script_length():
     import inspect
     from engine import lint
     assert "opening.words" not in inspect.getsource(lint)
+
+
+def test_a_learning_long_needs_twelve_figures_and_four_in_ten_scenes_citing_a_fact():
+    """28 Nov 2026: the gold 'detailed study' spoke 9 different numbers and cited a fact in 11 of 66 scenes."""
+    thin = [{"vo": "Sona gira.", "visual": {"type": "art", "prompt": "a"}, "facts_used": [], "label": "reported"} for _ in range(20)]
+    thin[0]["vo"] = "Sona 24.6 percent gira, 1982 ke baad."
+    p = piece_with("", kind="long", scenes=thin)
+    got = lint.fact_hits(p)
+    assert any(r.startswith("facts: only 2") and "need at least 12" in r for r in got) and any("0 of 20 scenes" in r for r in got)
+    rich = [{"vo": f"Din {i + 1} par {100 + i} dollar ka bhaav.", "visual": {"type": "art", "prompt": "a"}, "facts_used": [0], "label": "reported"} for i in range(20)]
+    assert lint.fact_hits(piece_with("", kind="long", scenes=rich)) == []
